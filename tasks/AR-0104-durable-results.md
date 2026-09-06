@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist manifests, event streams, artifact hashes and recoverable execution intentions.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Implement durable run storage and recovery",
-  "updated_at": "2026-09-06T16:36:07+00:00",
+  "updated_at": "2026-09-06T16:36:19+00:00",
   "worktree_key": "agent-systems-benchmark-durable-results"
 }
 ---
@@ -38,3 +38,6 @@ Implementation has not started. Read the linked plan before claiming.
   created a clean state-repository worktree at the declared path. Audit verified its origin is the
   public state repository, head a3635c9, and no dirty files. No product implementation began; remove
   only this mistaken worktree before correct creation.
+
+- 2026-09-06T16:36:19+00:00: Recorded command exit 0; command argv SHA-256
+  90a056368759f79fefa20393bd37a400b908091d996d901c6aa7b60781bd85e6.
