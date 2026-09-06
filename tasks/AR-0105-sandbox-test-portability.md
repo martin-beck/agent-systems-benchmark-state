@@ -12,11 +12,11 @@
   "plan": "../plans/AR-0105.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Repair sandbox test target portability",
-  "updated_at": "2026-09-06T21:15:00+00:00",
+  "updated_at": "2026-09-06T21:12:10+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-test-portability"
 }
 ---
@@ -30,3 +30,7 @@ attempts to create a child without creating its missing parent, producing `ENOEN
 pre-create or retain a repository target directory to mask the failure.
 
 Implementation has not started. Read the linked plan before claiming.
+
+- 2026-09-06T21:12:10+00:00: Promoted after confirming dependency AR-0103 is durably done; P0
+  regression blocks clean external-target full-tree validation and must not be masked by precreating
+  repository target directories.
