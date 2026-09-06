@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0401",
-  "next_action": "Run complete isolated quality/privacy/supply gates, then prepare focused signed candidate without root workspace/lock/schema edits.",
+  "next_action": "Await coordinator serialization for rebase and Cargo workspace/lock integration; then run exact-tree full gates and prepare focused signed candidate.",
   "observed_branch": "feature/engineering-workloads",
   "observed_dirty": 1,
   "observed_head": "68f313fcb4fa5c7293639fc90ec376fa7ccb622f",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Implement original engineering workloads",
-  "updated_at": "2026-09-06T21:14:38+00:00",
+  "updated_at": "2026-09-06T21:14:57+00:00",
   "worktree_key": "agent-systems-benchmark-engineering-workloads"
 }
 ---
@@ -214,3 +214,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T21:14:38+00:00: Recorded command exit 0; command argv SHA-256
   509d2dc7cf41692acac3d67f6e36a1e7e9fb68695550354c50c1ae7595220dec.
+
+- 2026-09-06T21:14:57+00:00: Final path audit closed ancestor-symlink resolution: prepare now
+  requires the existing parent canonical path to equal its lexical absolute path and rejects
+  non-directory/symlink parents; a linked-ancestor negative proves fail-closed behavior. README now
+  precisely says existing destinations, lexically unnormalized roots, and observed symlink
+  ancestors/objects. Affected fmt, Clippy -D warnings, 9 unit plus 2 public lifecycle tests, privacy
+  scan and Gitleaks pass. Updated coverage is 95.03% regions (1280/1347), 99.21% lines (752/758),
+  100% functions. Locked isolated release build, full tests, rustdoc, cargo audit and
+  repository-configured cargo-deny pass. Remaining boundary: product is still crate-only/untracked
+  on base 68f313f; root workspace/lock/schema remain untouched pending coordinator fence transfer
+  and current-main rebase.
