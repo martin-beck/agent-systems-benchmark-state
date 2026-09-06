@@ -10,7 +10,7 @@
   "id": "AR-0304",
   "next_action": "Await AR-0303 shared registration fence transfer; then rebase exact main, register module/test, and run full exact-tree gates.",
   "observed_branch": "feature/agent-codex",
-  "observed_dirty": 4,
+  "observed_dirty": 5,
   "observed_head": "52b8b3b12d1fb2ae7cdda0afbc7f728d5e08f44a",
   "owner": "replay-20260906",
   "plan": "../plans/AR-0304.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use Codex noninteractive structured events or app-server with declared capability boundaries.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Implement Codex client adapter",
-  "updated_at": "2026-09-06T23:56:11+00:00",
+  "updated_at": "2026-09-06T23:56:24+00:00",
   "worktree_key": "agent-systems-benchmark-agent-codex"
 }
 ---
