@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Serve local recorded responses while real agent and tools execute.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Implement strict provider response replay",
-  "updated_at": "2026-09-06T18:48:50+00:00",
+  "updated_at": "2026-09-06T18:49:40+00:00",
   "worktree_key": "agent-systems-benchmark-strict-replay"
 }
 ---
@@ -114,3 +114,6 @@ Dependencies AR-0102 and AR-0502 are done. Read the linked plan and claim after 
   identical-session cursors. Limits remain explicit: syntax-level dialect behavior only, immediate
   semantic SSE rather than transport/pacing fidelity, loopback accept does not prove surrounding
   namespace isolation, no real client/native support claim.
+
+- 2026-09-06T18:49:40+00:00: Recorded command exit 0; command argv SHA-256
+  676c2024eb4406a47cfa7d2d2da4b6834a94e50af38c8e1dce0d56a030038848.
