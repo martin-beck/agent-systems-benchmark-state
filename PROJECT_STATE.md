@@ -10,7 +10,6 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #1 | `feature/coordination-docs@02be24b76239` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Correct handoffctl run syntax |
 | #3 | `feature/extension-contracts@488d6ca1dd67` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Define extension protocol v1 contracts |
 | #4 | `feature/replay-evaluation@1f31fc3c78d4` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Evaluate replay dependency candidates |
 
@@ -18,6 +17,8 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34045464583 | `38ceb33592e3` | push | Rust verification | completed:success |
+| 34045464568 | `38ceb33592e3` | push | Repository quality | in_progress:- |
 | 34045330958 | `488d6ca1dd67` | pull_request | Rust verification | completed:success |
 | 34045330884 | `488d6ca1dd67` | pull_request | Repository quality | completed:success |
 | 34045330594 | `1f31fc3c78d4` | pull_request | Rust verification | completed:success |
@@ -28,5 +29,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34045216021 | `8c498f9185cf` | dynamic | Dependabot Updates | completed:success |
 | 34045212369 | `8c498f9185cf` | push | Repository quality | completed:success |
 | 34045212362 | `8c498f9185cf` | push | Rust verification | completed:success |
-| 34045142668 | `748537c25e3a` | pull_request | Rust verification | completed:success |
-| 34045142656 | `748537c25e3a` | pull_request | Repository quality | completed:success |
