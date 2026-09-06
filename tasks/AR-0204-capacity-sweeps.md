@@ -13,7 +13,7 @@
   "id": "AR-0204",
   "next_action": "Implement scheduler from fixed manifests and monotonic clock abstraction.",
   "observed_branch": "feature/capacity-sweeps",
-  "observed_dirty": 8,
+  "observed_dirty": 9,
   "observed_head": "ac4a2359964910e93a1fd034fd16689a563f973b",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0204.md",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run repeated closed-loop and open-loop experiments with bounded concurrency.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Implement capacity sweeps and arrival scheduling",
-  "updated_at": "2026-09-06T20:34:53+00:00",
+  "updated_at": "2026-09-06T20:35:04+00:00",
   "worktree_key": "agent-systems-benchmark-capacity-sweeps"
 }
 ---
