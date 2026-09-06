@@ -8,7 +8,7 @@
     "AR-0102"
   ],
   "id": "AR-0503",
-  "next_action": "Await independent immutable review of PR #11 exact head cdd76f9 and green CI; repair findings if any. Do not merge or release without coordinator authorization.",
+  "next_action": "Push repaired signed head c20fdcc to PR #11 with exact lease, require fresh exact-head CI, then await independent review; do not merge or release.",
   "observed_branch": "feature/strict-replay",
   "observed_dirty": 0,
   "observed_head": "c20fdccb91abb3644ef933ebfc6754314961682c",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Serve local recorded responses while real agent and tools execute.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Implement strict provider response replay",
-  "updated_at": "2026-09-06T18:57:44+00:00",
+  "updated_at": "2026-09-06T18:59:03+00:00",
   "worktree_key": "agent-systems-benchmark-strict-replay"
 }
 ---
@@ -170,3 +170,20 @@ Dependencies AR-0102 and AR-0502 are done. Read the linked plan and claim after 
 
 - 2026-09-06T18:57:44+00:00: Recorded command exit 0; command argv SHA-256
   2511ee1d1067b8e57b0cc61a0f3119fc219de372f64487634ac123eeff659aa1.
+
+- 2026-09-06T18:59:03+00:00: Post-publication self-review found a documentation/API mismatch: README
+  promised serve_once returns the emitted HTTP status while the implementation returned Result<(),
+  ReplayError>. The first stable repair artifact
+  /srv/data/projects/.asb-local/ar0503-serve-status.patch (SHA-256
+  abfa36b655138de2e8f2b5db19e2c45a4ad31804f6b2108f7db0ede88950b40d) partially applied the service
+  return-type/body changes before a stale test context caused exit 1; those durable product effects
+  were preserved and audited. Test-only artifact ar0503-serve-status-test.patch (SHA-256
+  f580dbbb9371dcf7e5fd97a8b14e720f7294ce5c1edf1e27d65fbc04530443b4) completed the repair and asserts
+  returned status equals the wire status. Amended signed+DCO head
+  c20fdccb91abb3644ef933ebfc6754314961682c, tree 05f900cb5cd0783b28d412fa0367809ffbe28cfd, direct
+  parent c9e3653, retains exact five-path scope and no root Cargo changes. Corrected privacy diff
+  scan, signature/DCO/policy, fmt, workspace Clippy/tests/rustdoc/release, actionlint/zizmor,
+  exact-range Gitleaks, deny/audit, controlled-failure and platform suites all pass; coverage
+  remains 97.11% workspace, 97.15% replay and 96.73% service.rs. Local tree is clean. PR #11 and
+  remote still intentionally point to superseded cdd76f9 until exact-lease repair push; its previous
+  green CI is not evidence for c20fdcc.

@@ -10,7 +10,7 @@ Never edit this file directly.
 | P1 | [AR-0103](tasks/AR-0103-sandbox-runtime.md): Implement isolated execution and resource leases | Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets. | Await coordinator independent immutable-head review of PR #10 exact a2ebac54; all exact-head hosted checks are green. Do not merge or release. | contracts-20260906 |
 | P1 | [AR-0201](tasks/AR-0201-portable-metrics.md): Collect portable system and session metrics | Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling. | Await independent immutable-head review of product PR #12 exact 4f33a142ea117c63a8f41f70569691ce99a0ff64; both exact-head hosted workflows are green. Retain Cargo workspace/lock fence. | quality-20260906 |
 | P1 | [AR-0301](tasks/AR-0301-agent-opencode.md): Implement OpenCode client adapter | Run pinned OpenCode through its structured supported interfaces. | Claim after a fresh reconciliation, then inspect the pinned upstream CLI/server contract and implement the isolated adapter. | root-coordination-20260906 |
-| P1 | [AR-0503](tasks/AR-0503-strict-replay.md): Implement strict provider response replay | Serve local recorded responses while real agent and tools execute. | Await independent immutable review of PR #11 exact head cdd76f9 and green CI; repair findings if any. Do not merge or release without coordinator authorization. | replay-20260906 |
+| P1 | [AR-0503](tasks/AR-0503-strict-replay.md): Implement strict provider response replay | Serve local recorded responses while real agent and tools execute. | Push repaired signed head c20fdcc to PR #11 with exact lease, require fresh exact-head CI, then await independent review; do not merge or release. | replay-20260906 |
 
 ## Planned
 
