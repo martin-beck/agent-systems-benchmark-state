@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**79 ARs tracked** across 4 active status categories.
+**79 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 54 |
 | **Future** | Deferred roadmap work | 0 |
@@ -53,7 +53,7 @@ flowchart LR
         direction TB
         AR_0301["AR-0301 - Done"]:::status_done
         AR_0302["AR-0302 - Done"]:::status_done
-        AR_0303["AR-0303 - Open"]:::status_open
+        AR_0303["AR-0303 - In progress"]:::status_in_progress
         AR_0304["AR-0304 - Planned"]:::status_planned
         AR_0305["AR-0305 - Planned"]:::status_planned
         AR_0306["AR-0306 - Planned"]:::status_planned
@@ -495,19 +495,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0204](tasks/AR-0204-capacity-sweeps.md): Implement capacity sweeps and arrival scheduling | contracts-20260906 | Run repeated closed-loop and open-loop experiments with bounded concurrency. | Await immutable independent review of exact clean candidate b8da93f; do not publish before approval. |
+| P1 | [AR-0303](tasks/AR-0303-agent-aider.md): Implement aider client adapter | root-coordination-20260906 | Support unattended aider editing with bounded input, output and repository changes. | Inspect aider batch invocation and editing lifecycle. |
 | P1 | [AR-0310](tasks/AR-0310-provider-profile-contract.md): Define common provider profiles | quality-20260906 | Normalize one provider configuration for safe translation across heterogeneous agent adapters. | Await AR-0401 fence transfer, then wire provider module, schemas, fixtures, adapter interface, and full gates. |
 | P1 | [AR-0401](tasks/AR-0401-engineering-workloads.md): Implement original engineering workloads | replay-20260906 | Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API. | Await independent immutable review of clean signed grader-repair head 79cb942; publish only after approval and exact-base recheck, then require x86_64/aarch64 exact-head CI. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0303](tasks/AR-0303-agent-aider.md): Implement aider client adapter | Unclaimed | Support unattended aider editing with bounded input, output and repository changes. | Inspect aider batch invocation and editing lifecycle. |
 
 ### Planned (54)
 
