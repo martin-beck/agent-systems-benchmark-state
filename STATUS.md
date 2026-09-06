@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**49 ARs tracked** across 3 active status categories.
+**50 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 4 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 29 |
+| **Planned** | Defined work awaiting promotion or dependencies | 30 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 16 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -32,6 +32,7 @@ flowchart LR
         AR_0002["AR-0002 - Done"]:::status_done
         AR_0003["AR-0003 - Done"]:::status_done
         AR_0004["AR-0004 - Done"]:::status_done
+        AR_0005["AR-0005 - Planned"]:::status_planned
     end
     subgraph series_01["01 - Contracts and runtime"]
         direction TB
@@ -114,8 +115,10 @@ flowchart LR
     AR_0001 --> AR_0501
     AR_0001 --> AR_0701
     AR_0002 --> AR_0004
+    AR_0002 --> AR_0005
     AR_0002 --> AR_0903
     AR_0003 --> AR_0903
+    AR_0004 --> AR_0005
     AR_0101 --> AR_0102
     AR_0101 --> AR_0104
     AR_0101 --> AR_0201
@@ -247,9 +250,10 @@ flowchart LR
 | AR | Prerequisites | Dependents |
 | --- | --- | --- |
 | [AR-0001](tasks/AR-0001-repository-bootstrap.md) | None | [AR-0002](tasks/AR-0002-coordination-assurance.md), [AR-0003](tasks/AR-0003-quality-gates.md), [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0501](tasks/AR-0501-replay-evaluation.md), [AR-0701](tasks/AR-0701-platform-manifests.md) |
-| [AR-0002](tasks/AR-0002-coordination-assurance.md) | [AR-0001](tasks/AR-0001-repository-bootstrap.md) | [AR-0004](tasks/AR-0004-ar-status-document.md), [AR-0903](tasks/AR-0903-release-qualification.md) |
+| [AR-0002](tasks/AR-0002-coordination-assurance.md) | [AR-0001](tasks/AR-0001-repository-bootstrap.md) | [AR-0004](tasks/AR-0004-ar-status-document.md), [AR-0005](tasks/AR-0005-transactional-promotion.md), [AR-0903](tasks/AR-0903-release-qualification.md) |
 | [AR-0003](tasks/AR-0003-quality-gates.md) | [AR-0001](tasks/AR-0001-repository-bootstrap.md) | [AR-0903](tasks/AR-0903-release-qualification.md) |
-| [AR-0004](tasks/AR-0004-ar-status-document.md) | [AR-0002](tasks/AR-0002-coordination-assurance.md) | None |
+| [AR-0004](tasks/AR-0004-ar-status-document.md) | [AR-0002](tasks/AR-0002-coordination-assurance.md) | [AR-0005](tasks/AR-0005-transactional-promotion.md) |
+| [AR-0005](tasks/AR-0005-transactional-promotion.md) | [AR-0002](tasks/AR-0002-coordination-assurance.md), [AR-0004](tasks/AR-0004-ar-status-document.md) | None |
 | [AR-0101](tasks/AR-0101-extension-contracts.md) | [AR-0001](tasks/AR-0001-repository-bootstrap.md) | [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0203](tasks/AR-0203-statistical-analysis.md), [AR-0301](tasks/AR-0301-agent-opencode.md), [AR-0302](tasks/AR-0302-agent-opendesk.md), [AR-0303](tasks/AR-0303-agent-aider.md), [AR-0304](tasks/AR-0304-agent-codex.md), [AR-0305](tasks/AR-0305-agent-gemini.md), [AR-0306](tasks/AR-0306-agent-qwen-code.md), [AR-0307](tasks/AR-0307-agent-goose.md), [AR-0308](tasks/AR-0308-agent-mini-swe.md), [AR-0309](tasks/AR-0309-agent-openhands.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0502](tasks/AR-0502-replay-cassettes.md), [AR-0601](tasks/AR-0601-csb-integration.md), [AR-0801](tasks/AR-0801-terminal-interface.md), [AR-0901](tasks/AR-0901-formal-assurance.md), [AR-0904](tasks/AR-0904-contract-consistency.md), [AR-1001](tasks/AR-1001-experiment-comparability.md), [AR-1003](tasks/AR-1003-execution-budgets.md), [AR-1005](tasks/AR-1005-trace-interoperability.md) |
 | [AR-0102](tasks/AR-0102-process-runtime.md) | [AR-0101](tasks/AR-0101-extension-contracts.md) | [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0301](tasks/AR-0301-agent-opencode.md), [AR-0302](tasks/AR-0302-agent-opendesk.md), [AR-0303](tasks/AR-0303-agent-aider.md), [AR-0304](tasks/AR-0304-agent-codex.md), [AR-0305](tasks/AR-0305-agent-gemini.md), [AR-0306](tasks/AR-0306-agent-qwen-code.md), [AR-0307](tasks/AR-0307-agent-goose.md), [AR-0308](tasks/AR-0308-agent-mini-swe.md), [AR-0309](tasks/AR-0309-agent-openhands.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0601](tasks/AR-0601-csb-integration.md), [AR-0901](tasks/AR-0901-formal-assurance.md), [AR-0905](tasks/AR-0905-recovery-models.md) |
 | [AR-0103](tasks/AR-0103-sandbox-runtime.md) | [AR-0102](tasks/AR-0102-process-runtime.md) | [AR-0202](tasks/AR-0202-kernel-diagnostics.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0305](tasks/AR-0305-agent-gemini.md), [AR-0306](tasks/AR-0306-agent-qwen-code.md), [AR-0307](tasks/AR-0307-agent-goose.md), [AR-0308](tasks/AR-0308-agent-mini-swe.md), [AR-0309](tasks/AR-0309-agent-openhands.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0702](tasks/AR-0702-native-platforms.md), [AR-0902](tasks/AR-0902-fault-assurance.md), [AR-1002](tasks/AR-1002-verifier-integrity.md) |
@@ -307,10 +311,11 @@ flowchart LR
 | P1 | [AR-0401](tasks/AR-0401-engineering-workloads.md): Implement original engineering workloads | replay-20260906 | Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API. | Implement small offline fixtures and common workload lifecycle. |
 | P1 | [AR-1001](tasks/AR-1001-experiment-comparability.md): Define experiment identity and comparability | quality-20260906 | Make every comparison content-addressed and explicit about agent, model, workload and platform confounders. | Rebase once after AR-0301 integration, take transferred Cargo/schema fence, wire modules, generate checked-in schema and matched/confounded fixtures, then run full gates. |
 
-### Planned (29)
+### Planned (30)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P1 | [AR-0005](tasks/AR-0005-transactional-promotion.md): Add transactional AR promotion | Unclaimed | Make planned-to-open promotion a transactional handoffctl operation. | Implement an atomic dependency-aware promote command and concurrency/failure tests. |
 | P1 | [AR-0302](tasks/AR-0302-agent-opendesk.md): Implement OpenDesk client adapter | Unclaimed | Support the bitclub OpenDesk CLI with its own dialect and compatibility record. | Inspect @bitclub.ai/opendesk-cli commands and protocol version. |
 | P1 | [AR-0303](tasks/AR-0303-agent-aider.md): Implement aider client adapter | Unclaimed | Support unattended aider editing with bounded input, output and repository changes. | Inspect aider batch invocation and editing lifecycle. |
 | P1 | [AR-0304](tasks/AR-0304-agent-codex.md): Implement Codex client adapter | Unclaimed | Use Codex noninteractive structured events or app-server with declared capability boundaries. | Inspect installed Codex help/schema and official provider configuration. |
