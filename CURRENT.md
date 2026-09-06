@@ -9,7 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0102](tasks/AR-0102-process-runtime.md): Implement process execution and cancellation | Run real client processes with bounded I/O, monotonic deadlines and process-tree ownership. | Await coordinator Cargo handoff after AR-0104 integration, then add asb-runtime workspace member, resolve locked rustix dependency, compile and repair every real process-boundary test. | contracts-20260906 |
 | P1 | [AR-0104](tasks/AR-0104-durable-results.md): Implement durable run storage and recovery | Persist manifests, event streams, artifact hashes and recoverable execution intentions. | Await exact-head PR 6 CI and independent immutable-head review; repair findings before coordinator integration. | root-coordination-20260906 |
-| P1 | [AR-0701](tasks/AR-0701-platform-manifests.md): Pin distribution and architecture support matrix | Define Ubuntu, Debian, Fedora, enterprise, openSUSE, Arch, Alpine and openEuler target manifests. | Await renewed independent immutable-head review and coordinator integration of fully green PR #5 at a800ca3b9169d9a04912f78f98a6bd78316b6729; then perform post-merge exact-tree, full gates and main-CI verification before release. | quality-20260906 |
+| P1 | [AR-0701](tasks/AR-0701-platform-manifests.md): Pin distribution and architecture support matrix | Define Ubuntu, Debian, Fedora, enterprise, openSUSE, Arch, Alpine and openEuler target manifests. | Coordinator may integrate independently approved green PR #5 at a800ca3b9169d9a04912f78f98a6bd78316b6729; afterward run post-merge exact-tree, full gates and main-CI verification before releasing AR-0701. | quality-20260906 |
 
 ## Planned
 
