@@ -7,7 +7,7 @@
     "AR-0001"
   ],
   "id": "AR-0101",
-  "next_action": "Await quality PR 2 merge, rebase ef9fb488 onto corrected main, rerun exact-head gates and CI, then request extended review.",
+  "next_action": "Monitor PR 3 exact-head quality and native Rust CI at 488d6ca1, then await independent review and integration.",
   "observed_branch": "feature/extension-contracts",
   "observed_dirty": 0,
   "observed_head": "488d6ca1dd6708a68c465bf5432b6870cafcaf18",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Specify typed agent, workload, collector, runtime and result contracts before parallel implementations.",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Freeze versioned extension and result contracts",
-  "updated_at": "2026-09-06T16:24:27+00:00",
+  "updated_at": "2026-09-06T16:24:51+00:00",
   "worktree_key": "agent-systems-benchmark-extension-contracts"
 }
 ---
@@ -358,3 +358,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T16:24:27+00:00: Recorded command exit 0; command argv SHA-256
   b60a47825ad188cad41139a4cc0e1567bfb5a6b08480f82212c44b87c5e13051.
+
+- 2026-09-06T16:24:51+00:00: Rebased without conflicts onto signed quality merge
+  8c498f9185cfa34245fb0e6e47634d0416db373e; new signed/DCO immutable head is
+  488d6ca1dd6708a68c465bf5432b6870cafcaf18 (contract commit 1cf09b4f plus hard-cap fix). Full
+  documented local suite passes: workspace 96.22%, asb-core 100%, asb-protocol 96.15%; format,
+  Clippy, 32 tests including doc tests, docs, release, deny/audit, actionlint/zizmor/Gitleaks,
+  repository policy/signatures/DCO, and every negative fixture. Exact old remote head lease
+  protected the force update. PR runs 34045330884 and 34045330958 are in progress.
