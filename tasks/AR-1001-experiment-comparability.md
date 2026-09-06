@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make every comparison content-addressed and explicit about agent, model, workload and platform confounders.",
-  "task_revision": 96,
+  "task_revision": 97,
   "title": "Define experiment identity and comparability",
-  "updated_at": "2026-09-06T21:10:49+00:00",
+  "updated_at": "2026-09-06T21:12:59+00:00",
   "worktree_key": "agent-systems-benchmark-experiment-comparability"
 }
 ---
@@ -302,3 +302,6 @@ Implementation has not started. Read the linked plan before claiming.
   cargo-audit created user-home caches; each was audited, moved intact to quarantined artifact
   storage under the mandated root, and rerun successfully with explicit local KANI/CARGO/RUSTUP
   homes; those user-home caches are now absent.
+
+- 2026-09-06T21:12:59+00:00: Recorded command exit 128; command argv SHA-256
+  0a36c7b66880a582960a76f40d4ec4c70929dd34c67319123b0b61420976cca6.
