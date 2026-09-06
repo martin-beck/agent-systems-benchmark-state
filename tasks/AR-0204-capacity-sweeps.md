@@ -12,7 +12,7 @@
     "AR-0203"
   ],
   "id": "AR-0204",
-  "next_action": "Await immutable independent review of exact candidate 08a73bf before publication.",
+  "next_action": "Await immutable independent review of exact clean candidate b8da93f; do not publish before approval.",
   "observed_branch": "feature/capacity-sweeps",
   "observed_dirty": 0,
   "observed_head": "b8da93f5b83a2101a1b25b03d9a5047e353ab272",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run repeated closed-loop and open-loop experiments with bounded concurrency.",
-  "task_revision": 115,
+  "task_revision": 116,
   "title": "Implement capacity sweeps and arrival scheduling",
-  "updated_at": "2026-09-06T22:43:15+00:00",
+  "updated_at": "2026-09-06T22:43:32+00:00",
   "worktree_key": "agent-systems-benchmark-capacity-sweeps"
 }
 ---
@@ -333,3 +333,20 @@ Implementation has not started. Read the linked plan before claiming.
   bd7f2d753f636f21f3797f7e553de259d8ba7f13b6e2548ea6913a5c045b8333.
 
 - 2026-09-06T22:43:15+00:00: Heartbeat by contracts-20260906.
+
+- 2026-09-06T22:43:32+00:00: Superseded blocked 08a73bf with clean signed+DCO candidate
+  b8da93f5b83a2101a1b25b03d9a5047e353ab272 on exact base 23035ac. Every planned warmup/measured
+  input is now retained after failure, duration or contamination stop; missed records carry
+  Backpressure or PointStopped(terminal reason), including queued, future and post-warmup measured
+  inputs. Worker Started events capture actual executor-boundary time, so queue delay includes
+  delayed thread start. New native tests cover complete cardinality/stable IDs for
+  backlog/failure/duration/contamination, warmup-stop cross-phase accounting, a controlled 30 ms
+  delayed-start oracle, and deterministic seeded warmup/measured permutations. Scheduler boundary
+  11/11 plus scheduler unit 2/2 passed five precommit and three exact-head repetitions. Exact-head
+  workspace fmt/clippy/tests/docs/release, formal suite, native sandbox/process/metrics tests,
+  audit/deny, actionlint/zizmor, Gitleaks, repository/DCO/signature policy, controlled failure
+  fixtures and platform checks pass from external targets. Coverage scheduler.rs 97.37% lines/100%
+  functions; workspace 96.81% lines. Scope remains exactly four runtime paths, no Cargo/schema
+  changes, tree clean/unpublished; remote main remains 23035ac. One initial heartbeat attempt used
+  unsupported expected-revision ordering, exited 2 without durable mutation; corrected heartbeat
+  succeeded.
