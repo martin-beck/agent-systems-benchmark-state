@@ -7,7 +7,7 @@
     "AR-0103"
   ],
   "id": "AR-0105",
-  "next_action": "Resolve pushed merge 7f308cc DCO/signature identity failure before AR-0105 release; do not repeat merge/fetch or release.",
+  "next_action": "Release AR-0105 done after repaired exact-main local/hosted/state validation.",
   "observed_branch": "fix/sandbox-test-portability",
   "observed_dirty": 0,
   "observed_head": "23035acde688df67aee86b1373b3b1aa87b3b68d",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Repair sandbox test target portability",
-  "updated_at": "2026-09-06T22:21:15+00:00",
+  "updated_at": "2026-09-06T22:23:38+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-test-portability"
 }
 ---
@@ -274,3 +274,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T22:21:15+00:00: Recorded command exit 0; command argv SHA-256
   63decf41da24151df0534576916e24fbfe41287300039395372e2abe8a653da5.
+
+- 2026-09-06T22:23:38+00:00: Authorized narrow history repair replaced only bad GitHub merge 7f308cc
+  with 23035ac using identical tree abdfa181, exact parents b7e9078 then reviewed eea3d20, Martin
+  Beck author/committer, SSH signature and exact DCO. Explicit remote lease required main still
+  equal 7f308cc and force-updated only that ref. Local postmerge fresh external target had already
+  passed 23 runtime unit and 10 sandbox boundary/native tests with zero residue; replacement tree is
+  byte-identical. Forced-push event Rust 34063685524 and quality 34063685602 were non-product
+  failures because discarded 7f308cc was unreachable to checkout range logic. Clean
+  workflow-dispatch exact-main reruns passed: Rust 34063766870 x86_64/aarch64, quality 34063737973;
+  formal push run 34063685531 passed Kani and x86_64/aarch64 Loom/state models. Local/remote/origin
+  main equal 23035ac, signature/DCO pass, worktree clean, live doctor green.
