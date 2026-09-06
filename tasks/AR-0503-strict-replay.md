@@ -8,7 +8,7 @@
     "AR-0102"
   ],
   "id": "AR-0503",
-  "next_action": "Push repaired signed head c20fdcc to PR #11 with exact lease, require fresh exact-head CI, then await independent review; do not merge or release.",
+  "next_action": "Await coordinator independent immutable review of PR #11 exact c20fdcc with green exact-head CI; repair findings if any. Do not merge or release.",
   "observed_branch": "feature/strict-replay",
   "observed_dirty": 0,
   "observed_head": "c20fdccb91abb3644ef933ebfc6754314961682c",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Serve local recorded responses while real agent and tools execute.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Implement strict provider response replay",
-  "updated_at": "2026-09-06T19:00:39+00:00",
+  "updated_at": "2026-09-06T19:02:21+00:00",
   "worktree_key": "agent-systems-benchmark-strict-replay"
 }
 ---
@@ -196,3 +196,15 @@ Dependencies AR-0102 and AR-0502 are done. Read the linked plan and claim after 
 
 - 2026-09-06T19:00:39+00:00: Recorded command exit 0; command argv SHA-256
   b31c2d1a7a9a10828a78910f9fad298b87a053dcd20552e0fad6aee3495f026b.
+
+- 2026-09-06T19:02:21+00:00: Repaired PR #11 now has exact base
+  c9e3653ebd9955f433e65f0c3110421166ac03c7 and exact head c20fdccb91abb3644ef933ebfc6754314961682c,
+  tree 05f900cb5cd0783b28d412fa0367809ffbe28cfd; remote/local refs agree, worktree is clean, and
+  GitHub reports mergeable. The exact-lease update replaced only superseded
+  cdd76f9889998760db0c12fb76e9215fe8b84535. Fresh exact-head hosted CI is fully green:
+  quality/supply run 34053500952 job 101541176367; Rust run 34053500922 x86_64 job 101541176214 and
+  aarch64 job 101541176321. A supplemental CLI/schema command first exited 127 because the wrapper
+  intentionally did not inherit a cargo path; it created no temp directory or product effect.
+  Retried with explicit project-local CARGO_HOME/RUSTUP_HOME/CARGO_TARGET_DIR/PATH and passed
+  release CLI help/version/invalid-exit-2 plus generated schema byte parity on exact c20fdcc.
+  Independent immutable review remains required; no merge or release authorization assumed.
