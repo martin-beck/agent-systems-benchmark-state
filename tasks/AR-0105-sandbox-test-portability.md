@@ -9,7 +9,7 @@
   "id": "AR-0105",
   "next_action": "Promote after confirming AR-0103 remains done, then repair the isolated-target fixture before resuming blocked full-tree gates.",
   "observed_branch": "fix/sandbox-test-portability",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "9543a3297dd9d0ca93c802bb204b099ac1df569b",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0105.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Repair sandbox test target portability",
-  "updated_at": "2026-09-06T21:15:10+00:00",
+  "updated_at": "2026-09-06T21:16:34+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-test-portability"
 }
 ---
