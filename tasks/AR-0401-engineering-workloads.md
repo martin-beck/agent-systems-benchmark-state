@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0401",
-  "next_action": "Await independent immutable review of clean signed grader-repair head 79cb942; publish only after approval and exact-base recheck, then require x86_64/aarch64 exact-head CI.",
+  "next_action": "Await independent immutable review of exact clean head 41ffc6e on main 3cfb871; publish only after approval, then require x86_64/aarch64 exact-head CI.",
   "observed_branch": "feature/engineering-workloads",
   "observed_dirty": 0,
   "observed_head": "41ffc6eb8f1ab8e3d5beb69ff233634a870007ed",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API.",
-  "task_revision": 159,
+  "task_revision": 160,
   "title": "Implement original engineering workloads",
-  "updated_at": "2026-09-06T22:58:38+00:00",
+  "updated_at": "2026-09-06T22:59:30+00:00",
   "worktree_key": "agent-systems-benchmark-engineering-workloads"
 }
 ---
@@ -538,3 +538,22 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T22:58:38+00:00: Recorded command exit 0; command argv SHA-256
   1c987770879d96659e22572545b9c95ba9dfd2641a57705c083897f5bb851df2.
+
+- 2026-09-06T22:59:30+00:00: Review blockers repaired and revalidated. GradeReport outcome,
+  failed-check list, and scorer identity are now private with read-only accessors; two external
+  rustdoc compile-fail cases prove construction and assignment are rejected. The Go reference patch
+  now produces exact gofmt-canonical source and real build/plain/JSON/extra-argument behavior
+  passes. The first full run correctly exposed that merely tab-formatting inserted lines left
+  inherited lines noncanonical; one intermediate fixture revision then omitted fmt.Println and the
+  real build rejected its unused import. Both failures and earlier git-apply option failures are
+  preserved, the complete replacement hunk was repaired, and focused reference/counterexample/public
+  API/doc checks pass. The five-commit series rebased from b7e9078 onto exact signed main 3cfb871
+  with five exact-equal range-diff entries. Exact head 41ffc6eb8f1ab8e3d5beb69ff233634a870007ed,
+  tree b379e1abae8c0c8ae915d15669fdf9868767eb2f is clean; all five commits have valid SSH signatures
+  and matching DCO. Full locked fmt, Clippy, workspace tests including external compile-fail docs,
+  rustdoc, release/CLI negative, repository policy, actionlint, zizmor, introduced-history Gitleaks,
+  cargo-deny/audit, controlled gate failures, platform positives/negatives, coverage,
+  Loom/state/production traces, five Kani proofs and Kani false-assertion negative pass. Overall
+  coverage is 93.15% regions; asb-workloads is 95.27% regions, 99.25% lines, 100% functions. Scope
+  remains Cargo.toml, Cargo.lock and crates/asb-workloads only; Cargo fence retained and nothing
+  published.
