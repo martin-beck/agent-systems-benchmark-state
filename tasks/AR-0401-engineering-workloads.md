@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0401",
-  "next_action": "Await coordinator serialization for rebase and Cargo workspace/lock integration; then run exact-tree full gates and prepare focused signed candidate.",
+  "next_action": "Await coordinator immutable review of signed candidate 3bef7cf; publish only after approval, then require exact-head x86_64/aarch64 CI.",
   "observed_branch": "feature/engineering-workloads",
   "observed_dirty": 0,
   "observed_head": "3bef7cfada4c419daefa2744cb043a75b314541d",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Implement original engineering workloads",
-  "updated_at": "2026-09-06T21:46:48+00:00",
+  "updated_at": "2026-09-06T21:47:09+00:00",
   "worktree_key": "agent-systems-benchmark-engineering-workloads"
 }
 ---
@@ -264,3 +264,19 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T21:46:48+00:00: Recorded command exit 0; command argv SHA-256
   66911dc5348a2aa59076c4da19f17c8324092a22b7506979975c9f4491f4697a.
+
+- 2026-09-06T21:47:09+00:00: Signed+DCO AR-0401 candidate 3bef7cfada4c419daefa2744cb043a75b314541d,
+  tree 4bf07e662264befb7b2d21530d1d45e179e00a89, is one commit on exact signed main b7e9078. Scope
+  is 34 paths: Cargo workspace member, one additive asb-workloads lock entry, and the new
+  crate/fixtures only; worktree is clean. Full committed-tree gates pass: fmt, locked workspace
+  Clippy warnings denied, all workspace tests, rustdoc warnings denied, locked release build,
+  cargo-deny/audit, repository coverage, formal Loom/state/production traces, platform
+  manifests/negatives, actionlint, zizmor, introduced-history Gitleaks, repository
+  signature/DCO/SPDX/link/scope policy, and all controlled failure fixtures. Coverage reports
+  workspace 93.77% regions/97.01% lines and asb-workloads 95.03% regions/99.21% lines/100%
+  functions. Four zero-context patch fixtures were normalized after git diff --check detected
+  required unified-diff context whitespace; first focused rerun correctly failed until test
+  application added explicit --unidiff-zero, then reference/counterexample and all full gates reran
+  green. Two test_failure_paths attempts failed only from incorrect analyzer bin directory then
+  missing Cargo PATH; corrected pinned PATH/bin invocation passed every negative. Native aarch64
+  remains unclaimed until hosted exact-head CI.
