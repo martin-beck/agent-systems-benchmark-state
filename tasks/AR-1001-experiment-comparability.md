@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1001.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Make every comparison content-addressed and explicit about agent, model, workload and platform confounders.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Define experiment identity and comparability",
-  "updated_at": "2026-09-06T15:06:27+00:00",
+  "updated_at": "2026-09-06T20:05:00+00:00",
   "worktree_key": "agent-systems-benchmark-experiment-comparability"
 }
 ---
