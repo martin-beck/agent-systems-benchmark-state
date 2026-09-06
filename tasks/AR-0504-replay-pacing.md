@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support immediate, fixed-latency, original-paced and seeded synthetic scenarios.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Implement pacing and replay overhead assessment",
-  "updated_at": "2026-09-06T19:31:55+00:00",
+  "updated_at": "2026-09-06T19:31:57+00:00",
   "worktree_key": "agent-systems-benchmark-replay-pacing"
 }
 ---
@@ -32,3 +32,6 @@ Dependencies AR-0503 and AR-0201 are done. Read the linked plan and claim after
 a fresh reconciliation.
 
 - 2026-09-06T19:31:25+00:00: Claimed by replay-20260906.
+
+- 2026-09-06T19:31:57+00:00: Recorded command exit 0; command argv SHA-256
+  65631b3828e37a25aa986cfea94aaeab7a01caa728e08c99fcdfc2708a931530.
