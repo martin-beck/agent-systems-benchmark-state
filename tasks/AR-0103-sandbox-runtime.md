@@ -7,7 +7,7 @@
     "AR-0102"
   ],
   "id": "AR-0103",
-  "next_action": "Await independent immutable-head re-review and exact-head CI for PR #10 at 832e72c; rebase only on explicit coordinator handoff. Do not merge or release.",
+  "next_action": "Await independent immutable-head re-review and exact-head CI for PR #10 at 7e764d8; rebase only on explicit coordinator handoff. Do not merge or release.",
   "observed_branch": "feature/sandbox-runtime",
   "observed_dirty": 0,
   "observed_head": "7e764d8e2b33d3b926e944c3a04f081809b3b63e",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 248,
+  "task_revision": 249,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T19:32:18+00:00",
+  "updated_at": "2026-09-06T19:32:51+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
@@ -732,3 +732,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T19:32:18+00:00: Recorded command exit 0; command argv SHA-256
   457f007c86d4ee2a0334e98450e733a8b1c48d3a4f695080f47f295ec1789130.
+
+- 2026-09-06T19:32:51+00:00: Hosted runs for 832e72c failed because the real cleanup-retry test
+  unconditionally pinned Bubblewrap on disposable runners where that native capability is absent.
+  Focused signed+DCO e15e3a1 now gates only that native test on the exact toolchain. Local parallel
+  tests also exposed intermittent ETXTBSY from concurrently executed generated fake scripts;
+  signed+DCO 2987a9f and 7e764d8 atomically publish and serialize fake tools and preserve exact
+  diagnostics. Ten parallel unit repetitions, three instrumented coverage repetitions, full
+  exact-tree gates and native checks passed. Exact PR head 7e764d8 is published; runs 34055198296
+  and 34055198399 are in progress. Remote main is 1621103; branch not rebased or merged.
