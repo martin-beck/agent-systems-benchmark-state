@@ -12,11 +12,11 @@
   "plan": "../plans/AR-0003.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Install pinned analysis, coverage, workflow, documentation and supply-chain gates.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Enforce Rust and repository quality gates",
-  "updated_at": "2026-09-06T15:04:52+00:00",
+  "updated_at": "2026-09-06T15:25:24+00:00",
   "worktree_key": "agent-systems-benchmark-quality-gates"
 }
 ---
@@ -25,3 +25,5 @@
 Install pinned analysis, coverage, workflow, documentation and supply-chain gates.
 
 Implementation has not started. Read the linked plan before claiming.
+
+- 2026-09-06T15:25:24+00:00: Promoted to open after verifying AR-0001 is done; assigned to the initial four-worker pool.

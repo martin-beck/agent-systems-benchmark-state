@@ -12,11 +12,11 @@
   "plan": "../plans/AR-0501.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Compare literature and record/replay implementations using identical synthetic conformance cases.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Evaluate replay literature and reusable tools",
-  "updated_at": "2026-09-06T15:04:54+00:00",
+  "updated_at": "2026-09-06T15:25:24+00:00",
   "worktree_key": "agent-systems-benchmark-replay-evaluation"
 }
 ---
@@ -25,3 +25,5 @@
 Compare literature and record/replay implementations using identical synthetic conformance cases.
 
 Implementation has not started. Read the linked plan before claiming.
+
+- 2026-09-06T15:25:24+00:00: Promoted to open after verifying AR-0001 is done; assigned to the initial four-worker pool.

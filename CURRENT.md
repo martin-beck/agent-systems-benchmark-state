@@ -3,13 +3,19 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Adapt generic coordination tooling for public ASB workers without importing private state. | Audit reused coordinator and add conformance tests for ASB-specific adaptations. | - |
 | P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Implement a locked quality tool manifest and failure-path checks. | - |
 | P1 | [AR-0101](tasks/AR-0101-extension-contracts.md): Freeze versioned extension and result contracts | Specify typed agent, workload, collector, runtime and result contracts before parallel implementations. | Review the extension design and implement protocol schemas plus conformance fixtures. | - |
+| P1 | [AR-0501](tasks/AR-0501-replay-evaluation.md): Evaluate replay literature and reusable tools | Compare literature and record/replay implementations using identical synthetic conformance cases. | Read REPLAY_RESEARCH and run the bounded compatibility spike. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P1 | [AR-0102](tasks/AR-0102-process-runtime.md): Implement process execution and cancellation | Run real client processes with bounded I/O, monotonic deadlines and process-tree ownership. | Implement lifecycle transitions with explicit process handles. | - |
 | P1 | [AR-0103](tasks/AR-0103-sandbox-runtime.md): Implement isolated execution and resource leases | Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets. | Implement rootless container backend and trusted-native policy. | - |
 | P1 | [AR-0104](tasks/AR-0104-durable-results.md): Implement durable run storage and recovery | Persist manifests, event streams, artifact hashes and recoverable execution intentions. | Implement atomic store and versioned run journal. | - |
@@ -21,7 +27,6 @@ Never edit this file directly.
 | P1 | [AR-0303](tasks/AR-0303-agent-aider.md): Implement aider client adapter | Support unattended aider editing with bounded input, output and repository changes. | Inspect aider batch invocation and editing lifecycle. | - |
 | P1 | [AR-0304](tasks/AR-0304-agent-codex.md): Implement Codex client adapter | Use Codex noninteractive structured events or app-server with declared capability boundaries. | Inspect installed Codex help/schema and official provider configuration. | - |
 | P1 | [AR-0401](tasks/AR-0401-engineering-workloads.md): Implement original engineering workloads | Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API. | Implement small offline fixtures and common workload lifecycle. | - |
-| P1 | [AR-0501](tasks/AR-0501-replay-evaluation.md): Evaluate replay literature and reusable tools | Compare literature and record/replay implementations using identical synthetic conformance cases. | Read REPLAY_RESEARCH and run the bounded compatibility spike. | - |
 | P1 | [AR-0502](tasks/AR-0502-replay-cassettes.md): Implement immutable response cassette format | Store versioned provider requests, event streams, causal IDs and integrity metadata. | Specify strict request normalization and cassette integrity schema. | - |
 | P1 | [AR-0503](tasks/AR-0503-strict-replay.md): Implement strict provider response replay | Serve local recorded responses while real agent and tools execute. | Implement matching and streaming with explicit per-dialect capabilities. | - |
 | P1 | [AR-0504](tasks/AR-0504-replay-pacing.md): Implement pacing and replay overhead assessment | Support immediate, fixed-latency, original-paced and seeded synthetic scenarios. | Implement monotonic scheduling and replay service headroom calibration. | - |
