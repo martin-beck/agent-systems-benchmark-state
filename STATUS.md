@@ -5,13 +5,13 @@
 
 ## Portfolio overview
 
-**51 ARs tracked** across 4 active status categories.
+**51 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 4 |
+| **In progress** | Claimed work with a live lease | 3 |
 | **Open** | Dependency-ready and available to claim | 1 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 1 |
 | **Planned** | Defined work awaiting promotion or dependencies | 28 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 18 |
@@ -47,7 +47,7 @@ flowchart LR
         AR_0201["AR-0201 - Done"]:::status_done
         AR_0202["AR-0202 - Planned"]:::status_planned
         AR_0203["AR-0203 - Done"]:::status_done
-        AR_0204["AR-0204 - In progress"]:::status_in_progress
+        AR_0204["AR-0204 - Blocked"]:::status_blocked
     end
     subgraph series_03["03 - Adapters and workloads"]
         direction TB
@@ -305,11 +305,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0204](tasks/AR-0204-capacity-sweeps.md): Implement capacity sweeps and arrival scheduling | contracts-20260906 | Run repeated closed-loop and open-loop experiments with bounded concurrency. | Await isolated-CARGO_TARGET_DIR sandbox fixture repair, then rerun full workspace tests/coverage and submit b0b2ae1 successor for review. |
 | P1 | [AR-0302](tasks/AR-0302-agent-opendesk.md): Implement OpenDesk client adapter | root-coordination-20260906 | Support the bitclub OpenDesk CLI with its own dialect and compatibility record. | Inspect @bitclub.ai/opendesk-cli commands and protocol version. |
 | P1 | [AR-0401](tasks/AR-0401-engineering-workloads.md): Implement original engineering workloads | replay-20260906 | Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API. | Run complete isolated quality/privacy/supply gates, then prepare focused signed candidate without root workspace/lock/schema edits. |
 | P1 | [AR-1001](tasks/AR-1001-experiment-comparability.md): Define experiment identity and comparability | quality-20260906 | Make every comparison content-addressed and explicit about agent, model, workload and platform confounders. | Await coordinator immutable local review of signed candidate d051c5e; repair findings before any publication. Cargo workspace/lock and experiment-schema fence remains held by AR-1001. |
@@ -319,6 +318,12 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0105](tasks/AR-0105-sandbox-test-portability.md): Repair sandbox test target portability | Unclaimed | Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work. | Promote after confirming AR-0103 remains done, then repair the isolated-target fixture before resuming blocked full-tree gates. |
+
+### Blocked (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0204](tasks/AR-0204-capacity-sweeps.md): Implement capacity sweeps and arrival scheduling | Unclaimed | Run repeated closed-loop and open-loop experiments with bounded concurrency. | Await isolated-CARGO_TARGET_DIR sandbox fixture repair, then rerun full workspace tests/coverage and submit b0b2ae1 successor for review. |
 
 ### Planned (28)
 

@@ -2,7 +2,7 @@
 {
   "branch": "feature/capacity-sweeps",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-06T22:35:12+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0102",
     "AR-0103",
@@ -15,15 +15,15 @@
   "observed_branch": "feature/capacity-sweeps",
   "observed_dirty": 0,
   "observed_head": "b0b2ae1a9ad577dde4b481b699a983e2cf04e690",
-  "owner": "contracts-20260906",
+  "owner": "",
   "plan": "../plans/AR-0204.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Run repeated closed-loop and open-loop experiments with bounded concurrency.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "Implement capacity sweeps and arrival scheduling",
-  "updated_at": "2026-09-06T21:12:04+00:00",
+  "updated_at": "2026-09-06T21:12:39+00:00",
   "worktree_key": "agent-systems-benchmark-capacity-sweeps"
 }
 ---
@@ -233,3 +233,12 @@ Implementation has not started. Read the linked plan before claiming.
   residual directory, and coordinator is scheduling a dedicated portability repair. Two initial
   apply_patch argument-delivery attempts and one Sized compile/clippy correction had no unintended
   product effects and are preserved in command evidence.
+
+- 2026-09-06T21:12:39+00:00: Repaired signed+DCO scheduler candidate
+  b0b2ae1a9ad577dde4b481b699a983e2cf04e690 is preserved clean and unpublished. Exact isolated
+  CARGO_TARGET_DIR full-workspace failure remains at crates/asb-runtime/src/sandbox.rs:1329:
+  fs::create_dir(CARGO_MANIFEST_DIR/../../target) returns ENOENT when the repository target parent
+  is absent. This must not be masked by precreating that directory. AR-0105 is the required next
+  dependency; after it is integrated, reclaim AR-0204, rebase without losing b0b2ae1, rerun the
+  complete isolated-target workspace and coverage gates, and obtain immutable review before
+  publication.
