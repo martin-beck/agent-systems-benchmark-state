@@ -5,7 +5,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
 | `agent-systems-benchmark` | `main` | `311c12864961` | 0 | behind 0, ahead 0 |
-| `agent-systems-benchmark-agent-aider` | `feature/agent-aider` | `9a1c4e068eb0` | 0 | behind 2, ahead 1 |
+| `agent-systems-benchmark-agent-aider` | `feature/agent-aider` | `da81ead6932c` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-agent-codex` | `feature/agent-codex` | `52b8b3b12d1f` | 4 | behind 2, ahead 0 |
 | changed files | - | - | - | `crates/asb-agents/CODEX.md`, `crates/asb-agents/src/codex.rs`, `crates/asb-agents/tests/fixtures/`, `crates/asb-agents/tests/real_codex.rs` |
 | `agent-systems-benchmark-agent-gemini` | `feature/agent-gemini` | `311c12864961` | 0 | behind 0, ahead 0 |
