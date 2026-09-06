@@ -9,7 +9,7 @@
   "id": "AR-0701",
   "next_action": "Claim with the designated platform worker, then verify pinned distro images and toolchain and agent package availability.",
   "observed_branch": "feature/platform-manifests",
-  "observed_dirty": 4,
+  "observed_dirty": 7,
   "observed_head": "38ceb33592e32c4e07e2c2f2c1c7d277203712fe",
   "owner": "quality-20260906",
   "plan": "../plans/AR-0701.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define Ubuntu, Debian, Fedora, enterprise, openSUSE, Arch, Alpine and openEuler target manifests.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Pin distribution and architecture support matrix",
-  "updated_at": "2026-09-06T16:43:26+00:00",
+  "updated_at": "2026-09-06T16:43:44+00:00",
   "worktree_key": "agent-systems-benchmark-platform-manifests"
 }
 ---
