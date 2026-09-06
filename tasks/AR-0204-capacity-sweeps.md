@@ -12,7 +12,7 @@
     "AR-0203"
   ],
   "id": "AR-0204",
-  "next_action": "Await immutable independent review of exact clean candidate b8da93f; do not publish before approval.",
+  "next_action": "Await immutable independent review of exact clean candidate cabf0f0; do not publish before approval.",
   "observed_branch": "feature/capacity-sweeps",
   "observed_dirty": 0,
   "observed_head": "cabf0f08a6a69b1a9517ec32e09bc3b21f0988a1",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run repeated closed-loop and open-loop experiments with bounded concurrency.",
-  "task_revision": 163,
+  "task_revision": 164,
   "title": "Implement capacity sweeps and arrival scheduling",
-  "updated_at": "2026-09-06T23:09:54+00:00",
+  "updated_at": "2026-09-06T23:10:25+00:00",
   "worktree_key": "agent-systems-benchmark-capacity-sweeps"
 }
 ---
@@ -476,3 +476,26 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T23:09:54+00:00: Recorded command exit 0; command argv SHA-256
   6285815aca999805c38541ac5890b2d13448ac8327985bb1ed277189a0f13c50.
+
+- 2026-09-06T23:10:25+00:00: Superseded blocked b8da93f with exact signed+DCO candidate
+  cabf0f08a6a69b1a9517ec32e09bc3b21f0988a1 (tree aa4841ffff0e2cd6c5e09d645e163b0e4fb80), one commit
+  on exact signed public main 3cfb8716da8ce15d2cf0df4983f3f4c93e2ff130. Authorized rebase preserved
+  prior candidate provenance: range-diff b8da93f vs signed intermediate 49f0e7b was identical;
+  scoped repair patch-id remained 847154d; amend/re-sign occurred once. Exact four paths only:
+  runtime README/lib plus scheduler source/boundary tests; clean worktree, no repository target, no
+  sentinels/process residuals. Repairs make AttemptRecord/PointResult fields private with accessors
+  and external compile-fail negatives; reject open-loop overflow; preserve immutable admission stop
+  separately from terminal contamination; catch/sanitize hostile clock
+  panic/regression/nonprogress/forward drift with bounded watchdog; account every planned input;
+  document and test shared warmup deadline/failure budget. Focused scheduler boundary 16/16 plus
+  units 2/2 passed three repetitions. Fresh external-target full workspace
+  fmt/clippy/tests/docs/release and formal suite passed; policy, exact DCO, actionlint, zizmor,
+  Gitleaks, audit, deny, documented failure fixtures, platform validation/tests passed. Workspace
+  coverage passed configured 90% line floor at 95.45% lines; critical configured package floors
+  passed. Owned scheduler measured 87.75% lines/85.63% regions (below its earlier accumulated figure
+  but no scheduler-specific floor is configured); preserve for reviewer judgment. Orchestration
+  failures without product effect: check_dco positional form exited 2 because --head is required;
+  stale guessed check_failure_paths.py path exited 2 after preceding gates passed; corrected
+  documented commands passed. Clock implementations must return promptly because Rust cannot
+  forcibly cancel a never-returning trait method; executor cancellation remains caller
+  responsibility.
