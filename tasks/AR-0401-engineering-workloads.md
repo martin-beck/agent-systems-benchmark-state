@@ -13,11 +13,11 @@
   "plan": "../plans/AR-0401.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Implement original engineering workloads",
-  "updated_at": "2026-09-06T15:04:52+00:00",
+  "updated_at": "2026-09-06T20:38:47+00:00",
   "worktree_key": "agent-systems-benchmark-engineering-workloads"
 }
 ---
@@ -26,3 +26,7 @@
 Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API.
 
 Implementation has not started. Read the linked plan before claiming.
+
+- 2026-09-06T20:38:47+00:00: Promoted after independently verifying all dependencies done; paths are
+  disjoint from active AR-0204, AR-0301, and AR-1001, with Cargo/schema integration
+  coordinator-fenced.
