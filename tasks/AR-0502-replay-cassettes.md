@@ -8,7 +8,7 @@
     "AR-0501"
   ],
   "id": "AR-0502",
-  "next_action": "Await final independent immutable-head review of cd88f5703fb300aca18c7d46d7215c1bf6f5b8e5; do not push or open PR until approved.",
+  "next_action": "Monitor PR #8 exact head cd88f5703 through x86_64, aarch64 and quality CI; investigate failures and await coordinator merge authorization.",
   "observed_branch": "feature/replay-cassettes",
   "observed_dirty": 0,
   "observed_head": "cd88f5703fb300aca18c7d46d7215c1bf6f5b8e5",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Store versioned provider requests, event streams, causal IDs and integrity metadata.",
-  "task_revision": 112,
+  "task_revision": 113,
   "title": "Implement immutable response cassette format",
-  "updated_at": "2026-09-06T18:16:03+00:00",
+  "updated_at": "2026-09-06T18:16:23+00:00",
   "worktree_key": "agent-systems-benchmark-replay-cassettes"
 }
 ---
@@ -420,3 +420,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T18:16:03+00:00: Recorded command exit 0; command argv SHA-256
   23bc208cffb463097cf1b7455ff416bac42a1e11706323426b7284ca86e9cc72.
+
+- 2026-09-06T18:16:23+00:00: After final immutable approval, repeated clean exact-base scope/privacy
+  policy and Gitleaks, pushed feature/replay-cassettes without rewrite, and verified remote branch
+  equals cd88f5703fb300aca18c7d46d7215c1bf6f5b8e5. Opened focused product PR #8 against immutable
+  base e6a81e8644c692d5b0aa84a86b385ff4da327292. GitHub reports exact head/base and mergeable. Fresh
+  exact-head CI in progress: Repository quality run 34051162442 job 101534923219; Rust verification
+  run 34051162612 jobs 101534923806 x86_64 and 101534923739 aarch64. No merge authorized or
+  attempted.
