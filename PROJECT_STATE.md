@@ -4,14 +4,14 @@ Generated from local Git and GitHub. Do not edit.
 
 - Product remote main: `c9568e8603e3520fb8462703fbd4ecaa1683992f`
 - Local origin/main: `c9568e8603e3520fb8462703fbd4ecaa1683992f`
-- Primary worktree head: `c9568e8603e3520fb8462703fbd4ecaa1683992f`
+- Primary worktree head: `8c498f9185cfa34245fb0e6e47634d0416db373e`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #1 | `feature/coordination-docs@71618e18f9a3` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE | Correct handoffctl run syntax |
-| #2 | `feature/quality-gates@d09a62ee96bf` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: enforce repository quality gates |
+| #2 | `feature/quality-gates@748537c25e3a` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: enforce repository quality gates |
 | #3 | `feature/extension-contracts@ef9fb488766b` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE | Define extension protocol v1 contracts |
 | #4 | `feature/replay-evaluation@64416f4ac508` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE | Evaluate replay dependency candidates |
 
@@ -19,6 +19,8 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34045142668 | `748537c25e3a` | pull_request | Rust verification | completed:success |
+| 34045142656 | `748537c25e3a` | pull_request | Repository quality | completed:success |
 | 34045009828 | `ef9fb488766b` | pull_request | Rust verification | completed:failure |
 | 34044850943 | `64416f4ac508` | pull_request | Rust verification | completed:failure |
 | 34044682658 | `a40088879e9a` | pull_request | Rust verification | completed:failure |
