@@ -9,7 +9,7 @@
   "id": "AR-0105",
   "next_action": "Await independent immutable-tree review of 250f398 before publication.",
   "observed_branch": "fix/sandbox-test-portability",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "250f398c8b084ca1f13e03c44f73f4492de1a813",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0105.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Repair sandbox test target portability",
-  "updated_at": "2026-09-06T21:56:25+00:00",
+  "updated_at": "2026-09-06T21:57:01+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-test-portability"
 }
 ---
