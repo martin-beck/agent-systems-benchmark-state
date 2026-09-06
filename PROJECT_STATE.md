@@ -10,12 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #6 | `feature/durable-results@eb9bd888999f` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Add crash-consistent durable result storage |
+| #6 | `feature/durable-results@6277512c9fc3` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | Add crash-consistent durable result storage |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34047974952 | `6277512c9fc3` | pull_request | Rust verification | in_progress:- |
+| 34047974913 | `6277512c9fc3` | pull_request | Repository quality | in_progress:- |
 | 34047717807 | `eb9bd888999f` | pull_request | Repository quality | completed:success |
 | 34047717794 | `eb9bd888999f` | pull_request | Rust verification | completed:success |
 | 34047665225 | `10974f60be6f` | push | Rust verification | completed:success |
@@ -26,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34047347454 | `a800ca3b9169` | pull_request | Repository quality | completed:success |
 | 34047020883 | `f6cd02eef6b7` | pull_request | Repository quality | completed:success |
 | 34047020851 | `f6cd02eef6b7` | pull_request | Rust verification | completed:success |
-| 34046717411 | `dff27a9acb4f` | pull_request | Rust verification | completed:success |
-| 34046717386 | `dff27a9acb4f` | pull_request | Repository quality | completed:success |
