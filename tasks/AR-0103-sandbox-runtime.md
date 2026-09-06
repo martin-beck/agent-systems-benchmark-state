@@ -10,16 +10,16 @@
   "next_action": "Await coordinator independent immutable-head review of PR #15 exact db8af71 with all hosted checks green; do not merge or release.",
   "observed_branch": "feature/sandbox-runtime",
   "observed_dirty": 0,
-  "observed_head": "db8af71e7b7d427fd1d051379e8b7e794150a34c",
+  "observed_head": "ac4a2359964910e93a1fd034fd16689a563f973b",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0103.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 317,
+  "task_revision": 318,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T20:09:46+00:00",
+  "updated_at": "2026-09-06T20:09:50+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
