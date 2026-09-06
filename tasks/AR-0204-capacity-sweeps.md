@@ -11,7 +11,7 @@
     "AR-0203"
   ],
   "id": "AR-0204",
-  "next_action": "Implement scheduler from fixed manifests and monotonic clock abstraction.",
+  "next_action": "Await independent immutable-head review before publishing candidate 5fc5616.",
   "observed_branch": "feature/capacity-sweeps",
   "observed_dirty": 0,
   "observed_head": "5fc5616b931b3d7ee7d8f38b56b8cae2933c1773",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run repeated closed-loop and open-loop experiments with bounded concurrency.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Implement capacity sweeps and arrival scheduling",
-  "updated_at": "2026-09-06T20:49:14+00:00",
+  "updated_at": "2026-09-06T20:50:33+00:00",
   "worktree_key": "agent-systems-benchmark-capacity-sweeps"
 }
 ---
@@ -153,3 +153,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T20:49:14+00:00: Recorded command exit 0; command argv SHA-256
   78e0f87733f436183a3278f3061990a3220d810f82a3af63902dc9c37469d90c.
+
+- 2026-09-06T20:50:33+00:00: Exact rebased candidate 5fc5616 on signed main 9543a32 passed final
+  wrapper gate: focused 6-test scheduler boundary repeated 3x; workspace test/clippy/docs/release;
+  formal traces; audit/deny; actionlint/zizmor; policy/failure fixtures; platform validation.
+  Scheduler coverage is 99.22% regions, 100% functions, 99.32% lines. SSH signature, exact DCO,
+  four-path scope, diff check and clean tree verified. Removed exact ignored 85 MiB worktree target
+  directory after confirming it was Cargo build output; external cache remains under
+  /srv/data/projects/.asb-local. Hard per-attempt cancellation remains the executor obligation;
+  scheduler deadline stops admission and drains admitted work.
