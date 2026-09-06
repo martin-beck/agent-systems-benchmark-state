@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 261,
+  "task_revision": 262,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T19:40:56+00:00",
+  "updated_at": "2026-09-06T19:40:59+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
@@ -775,3 +775,6 @@ Implementation has not started. Read the linked plan before claiming.
   34055485257 succeeded; policy, coverage and supply chain run 34055485275 succeeded. Local/remote
   feature head match, tree is clean, signatures and DCO verified, and product main remains 1621103.
   Await independent review.
+
+- 2026-09-06T19:40:59+00:00: Recorded command exit 0; command argv SHA-256
+  7b319a699773bac8fa1a39289cda54ce01f007a9053cfa3f532fe4cab74b8939.
