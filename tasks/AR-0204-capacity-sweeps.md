@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run repeated closed-loop and open-loop experiments with bounded concurrency.",
-  "task_revision": 177,
+  "task_revision": 178,
   "title": "Implement capacity sweeps and arrival scheduling",
-  "updated_at": "2026-09-06T23:33:09+00:00",
+  "updated_at": "2026-09-06T23:36:46+00:00",
   "worktree_key": "agent-systems-benchmark-capacity-sweeps"
 }
 ---
@@ -551,3 +551,6 @@ Implementation has not started. Read the linked plan before claiming.
   coverage limit remain as previously recorded. Do not merge pending coordinator authorization.
 
 - 2026-09-06T23:33:09+00:00: Heartbeat by contracts-20260906.
+
+- 2026-09-06T23:36:46+00:00: Recorded command exit 0; command argv SHA-256
+  fca69a5bea97c02f1f8e18027a2e4f70e5a89a77efd358b21e0112d22f3eae6c.
