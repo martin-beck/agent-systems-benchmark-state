@@ -9,7 +9,7 @@
   "id": "AR-0203",
   "next_action": "Push immutable candidate 4d9643c, open focused PR, await exact-head hosted CI and independent immutable review; repair findings before coordinator merge.",
   "observed_branch": "feature/statistical-analysis",
-  "observed_dirty": 1,
+  "observed_dirty": 5,
   "observed_head": "4d9643cfe39d4cdab0f4f62c7172aef293799873",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0203.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compute latency distributions, quality/throughput intervals and evidence-aware SLO results.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "Implement statistical and SLO assessment",
-  "updated_at": "2026-09-06T18:36:48+00:00",
+  "updated_at": "2026-09-06T18:37:52+00:00",
   "worktree_key": "agent-systems-benchmark-statistical-analysis"
 }
 ---
