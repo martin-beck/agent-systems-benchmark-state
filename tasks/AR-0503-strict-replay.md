@@ -10,7 +10,7 @@
   "id": "AR-0503",
   "next_action": "Await coordinator independent immutable review of PR #11 exact c20fdcc with green exact-head CI; repair findings if any. Do not merge or release.",
   "observed_branch": "feature/strict-replay",
-  "observed_dirty": 0,
+  "observed_dirty": 4,
   "observed_head": "c20fdccb91abb3644ef933ebfc6754314961682c",
   "owner": "replay-20260906",
   "plan": "../plans/AR-0503.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Serve local recorded responses while real agent and tools execute.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Implement strict provider response replay",
-  "updated_at": "2026-09-06T19:02:21+00:00",
+  "updated_at": "2026-09-06T19:14:15+00:00",
   "worktree_key": "agent-systems-benchmark-strict-replay"
 }
 ---
