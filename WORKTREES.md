@@ -7,8 +7,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark` | `main` | `b7e9078d53a4` | 0 | behind 2, ahead 0 |
 | `agent-systems-benchmark-agent-opencode` | `feature/agent-opencode` | `dfb0d548bf75` | 0 | behind 6, ahead 0 |
 | `agent-systems-benchmark-agent-opendesk` | `feature/agent-opendesk` | `8eb99d3c7235` | 0 | behind 0, ahead 1 |
-| `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `08a73bf5e4aa` | 3 | behind 0, ahead 1 |
-| changed files | - | - | - | `crates/asb-runtime/README.md`, `crates/asb-runtime/src/scheduler.rs`, `crates/asb-runtime/tests/scheduler_boundary.rs` |
+| `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `b8da93f5b83a` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 60, ahead 0 |
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 49, ahead 0 |
 | `agent-systems-benchmark-engineering-workloads` | `feature/engineering-workloads` | `79cb9426d1b9` | 0 | behind 2, ahead 3 |
