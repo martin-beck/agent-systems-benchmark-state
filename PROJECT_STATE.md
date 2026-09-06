@@ -2,15 +2,14 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `23035acde688df67aee86b1373b3b1aa87b3b68d`
-- Local origin/main: `23035acde688df67aee86b1373b3b1aa87b3b68d`
+- Product remote main: `3cfb8716da8ce15d2cf0df4983f3f4c93e2ff130`
+- Local origin/main: `3cfb8716da8ce15d2cf0df4983f3f4c93e2ff130`
 - Primary worktree head: `3cfb8716da8ce15d2cf0df4983f3f4c93e2ff130`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #19 | `feature/agent-opendesk@8eb99d3c7235` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | agents: add pinned OpenDesk adapter |
 
 ## Recent workflows
 
