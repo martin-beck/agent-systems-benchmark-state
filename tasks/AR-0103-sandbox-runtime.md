@@ -7,7 +7,7 @@
     "AR-0102"
   ],
   "id": "AR-0103",
-  "next_action": "Await exact-head CI and coordinator independent review of follow-up PR #15 at 28063ae; do not merge or release.",
+  "next_action": "Await exact-head CI and coordinator independent review of PR #15 at db8af71; do not merge or release.",
   "observed_branch": "feature/sandbox-runtime",
   "observed_dirty": 0,
   "observed_head": "db8af71e7b7d427fd1d051379e8b7e794150a34c",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 313,
+  "task_revision": 314,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T20:06:43+00:00",
+  "updated_at": "2026-09-06T20:07:15+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
@@ -938,3 +938,18 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T20:06:43+00:00: Recorded command exit 0; command argv SHA-256
   cd5639a3c1bd47e5adc673410349d6d5a6716043e74138719cc24c96e38396a8.
+
+- 2026-09-06T20:07:15+00:00: PR #15 follow-up rebased once onto exact formal-assurance main
+  bda6bc41760a914ffc1a9305fc88422eaace302b; range-diff marks the single signed+DCO commit equal, new
+  head db8af71e7b7d427fd1d051379e8b7e794150a34c. First post-rebase run found a transient systemd
+  scope still deactivating at the immediate residual check; it disappeared with zero
+  process/lease/sentinel, so the audit was correctly changed to bounded polling. Next run passed
+  product/native/coverage and formal Rust/Loom/state/production-trace tests but cargo kani was not
+  on PATH. A mistaken unwrapped cargo-kani version probe triggered first-time setup in the default
+  user cache; it was stopped, audited as the newly created sole Kani 0.67.0 directory, and removed
+  completely. No source/Git effect and no material remains outside /srv/data/projects. With
+  KANI_HOME and PATH correctly pinned under /srv/data/projects/.asb-local, all five Kani harnesses
+  passed and the retained false-assertion fixture failed as required; analyzers, Gitleaks,
+  policy/failure fixtures and final clean/residual audits passed. Force-with-lease against exact old
+  28063ae succeeded; PR #15 now exact db8af71 on bda6bc4, OPEN/MERGEABLE, all three fresh workflows
+  running.
