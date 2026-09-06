@@ -11,12 +11,14 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #10 | `feature/sandbox-runtime@d8601c22982f` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | runtime: isolate untrusted processes |
-| #13 | `feature/agent-opencode@6545c9dd4f2f` | `main` | UNKNOWN | - | agents: add pinned OpenCode adapter |
+| #13 | `feature/agent-opencode@6545c9dd4f2f` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS: | agents: add pinned OpenCode adapter |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34055848166 | `6545c9dd4f2f` | pull_request | Repository quality | queued:- |
+| 34055848135 | `6545c9dd4f2f` | pull_request | Rust verification | in_progress:- |
 | 34055764091 | `d8601c22982f` | pull_request | Repository quality | completed:success |
 | 34055764006 | `d8601c22982f` | pull_request | Rust verification | completed:success |
 | 34055485275 | `cf43bac877af` | pull_request | Repository quality | completed:success |
@@ -27,5 +29,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34054837848 | `162110386605` | push | Repository quality | completed:success |
 | 34054668620 | `410ecc95b80e` | pull_request | Rust verification | completed:success |
 | 34054668568 | `410ecc95b80e` | pull_request | Repository quality | completed:success |
-| 34054628754 | `832e72c2293c` | pull_request | Repository quality | completed:failure |
-| 34054628751 | `832e72c2293c` | pull_request | Rust verification | completed:failure |
