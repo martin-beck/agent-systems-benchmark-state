@@ -11,16 +11,16 @@
   "next_action": "Await explicit Cargo fence transfer after AR-0102 serialization; then integrate exact current main, add only asb-replay manifest/workspace lock changes, compile, and repair.",
   "observed_branch": "feature/replay-cassettes",
   "observed_dirty": 1,
-  "observed_head": "10974f60be6fc79d0d07f64bfa212197eeee2082",
+  "observed_head": "e6a81e8644c692d5b0aa84a86b385ff4da327292",
   "owner": "replay-20260906",
   "plan": "../plans/AR-0502.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Store versioned provider requests, event streams, causal IDs and integrity metadata.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Implement immutable response cassette format",
-  "updated_at": "2026-09-06T17:41:19+00:00",
+  "updated_at": "2026-09-06T17:41:51+00:00",
   "worktree_key": "agent-systems-benchmark-replay-cassettes"
 }
 ---
