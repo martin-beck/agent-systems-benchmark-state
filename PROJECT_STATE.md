@@ -10,6 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #1 | `feature/coordination-docs@71618e18f9a3` | `main` | CLEAN | - | Correct handoffctl run syntax |
 
 ## Recent workflows
 
