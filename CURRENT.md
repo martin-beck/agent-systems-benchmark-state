@@ -11,13 +11,18 @@ Never edit this file directly.
 | P1 | [AR-0102](tasks/AR-0102-process-runtime.md): Implement process execution and cancellation | Run real client processes with bounded I/O, monotonic deadlines and process-tree ownership. | Await coordinator Cargo handoff after AR-0104 integration, then add asb-runtime workspace member, resolve locked rustix dependency, compile and repair every real process-boundary test. | contracts-20260906 |
 | P1 | [AR-0502](tasks/AR-0502-replay-cassettes.md): Implement immutable response cassette format | Store versioned provider requests, event streams, causal IDs and integrity metadata. | Complete crate-local v1 schema and synthetic fixtures; await serialized Cargo handoff before compilation. | replay-20260906 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0203](tasks/AR-0203-statistical-analysis.md): Implement statistical and SLO assessment | Compute latency distributions, quality/throughput intervals and evidence-aware SLO results. | Define statistical estimators and fixed reference vectors. | - |
+
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0103](tasks/AR-0103-sandbox-runtime.md): Implement isolated execution and resource leases | Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets. | Implement rootless container backend and trusted-native policy. | - |
 | P1 | [AR-0201](tasks/AR-0201-portable-metrics.md): Collect portable system and session metrics | Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling. | Implement metric descriptors and baseline Linux collectors. | - |
-| P1 | [AR-0203](tasks/AR-0203-statistical-analysis.md): Implement statistical and SLO assessment | Compute latency distributions, quality/throughput intervals and evidence-aware SLO results. | Define statistical estimators and fixed reference vectors. | - |
 | P1 | [AR-0204](tasks/AR-0204-capacity-sweeps.md): Implement capacity sweeps and arrival scheduling | Run repeated closed-loop and open-loop experiments with bounded concurrency. | Implement scheduler from fixed manifests and monotonic clock abstraction. | - |
 | P1 | [AR-0301](tasks/AR-0301-agent-opencode.md): Implement OpenCode client adapter | Run pinned OpenCode through its structured supported interfaces. | Inspect pinned upstream CLI/server contract and build adapter. | - |
 | P1 | [AR-0302](tasks/AR-0302-agent-opendesk.md): Implement OpenDesk client adapter | Support the bitclub OpenDesk CLI with its own dialect and compatibility record. | Inspect @bitclub.ai/opendesk-cli commands and protocol version. | - |
