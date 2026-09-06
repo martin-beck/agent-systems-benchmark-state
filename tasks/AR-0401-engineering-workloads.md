@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0401",
-  "next_action": "Await independent immutable review of exact clean head 41ffc6e on main 3cfb871; publish only after approval, then require x86_64/aarch64 exact-head CI.",
+  "next_action": "Monitor exact immutable PR #20 head 41ffc6e quality, formal, x86_64 and aarch64 CI; investigate/repair any failure and await coordinator integration authorization.",
   "observed_branch": "feature/engineering-workloads",
   "observed_dirty": 0,
   "observed_head": "41ffc6eb8f1ab8e3d5beb69ff233634a870007ed",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API.",
-  "task_revision": 164,
+  "task_revision": 165,
   "title": "Implement original engineering workloads",
-  "updated_at": "2026-09-06T23:05:09+00:00",
+  "updated_at": "2026-09-06T23:05:27+00:00",
   "worktree_key": "agent-systems-benchmark-engineering-workloads"
 }
 ---
@@ -572,3 +572,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T23:05:09+00:00: Recorded command exit 0; command argv SHA-256
   e750011674148eceb0876718da21d13fb1193f376b7d31ccea3274674a35299f.
+
+- 2026-09-06T23:05:27+00:00: After independent coordinator and quality approvals, published exact
+  head 41ffc6eb8f1ab8e3d5beb69ff233634a870007ed with an explicit absent-remote lease and verified
+  the remote ref byte-exact. Opened focused product PR #20 against exact base
+  3cfb8716da8ce15d2cf0df4983f3f4c93e2ff130. GitHub reports the PR mergeable with the exact
+  head/base; hosted run 34065861614 covers quality/supply, run 34065861641 covers Kani plus
+  Loom/state on x86_64 and aarch64, and run 34065861661 covers Rust on x86_64 and aarch64. All six
+  jobs are currently in progress; no integration is authorized yet and the Cargo fence remains with
+  AR-0401.
