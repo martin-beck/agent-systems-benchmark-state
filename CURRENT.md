@@ -9,7 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0102](tasks/AR-0102-process-runtime.md): Implement process execution and cancellation | Run real client processes with bounded I/O, monotonic deadlines and process-tree ownership. | Implement crates/asb-runtime internals and real process-boundary tests without root Cargo/lock edits; await coordinator handoff after AR-0104 integration before workspace integration and full gates. | contracts-20260906 |
 | P1 | [AR-0104](tasks/AR-0104-durable-results.md): Implement durable run storage and recovery | Persist manifests, event streams, artifact hashes and recoverable execution intentions. | Implement the atomic store and versioned run journal in the verified product worktree. | root-coordination-20260906 |
-| P1 | [AR-0701](tasks/AR-0701-platform-manifests.md): Pin distribution and architecture support matrix | Define Ubuntu, Debian, Fedora, enterprise, openSUSE, Arch, Alpine and openEuler target manifests. | Claim with the designated platform worker, then verify pinned distro images and toolchain and agent package availability. | quality-20260906 |
+| P1 | [AR-0701](tasks/AR-0701-platform-manifests.md): Pin distribution and architecture support matrix | Define Ubuntu, Debian, Fedora, enterprise, openSUSE, Arch, Alpine and openEuler target manifests. | Review complete diff, fix any remaining policy issues, create a focused signed DCO commit, then run exact-head gates and publish for independent review. | quality-20260906 |
 
 ## Planned
 

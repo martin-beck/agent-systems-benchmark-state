@@ -7,7 +7,7 @@
     "AR-0001"
   ],
   "id": "AR-0701",
-  "next_action": "Claim with the designated platform worker, then verify pinned distro images and toolchain and agent package availability.",
+  "next_action": "Review complete diff, fix any remaining policy issues, create a focused signed DCO commit, then run exact-head gates and publish for independent review.",
   "observed_branch": "feature/platform-manifests",
   "observed_dirty": 7,
   "observed_head": "38ceb33592e32c4e07e2c2f2c1c7d277203712fe",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define Ubuntu, Debian, Fedora, enterprise, openSUSE, Arch, Alpine and openEuler target manifests.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Pin distribution and architecture support matrix",
-  "updated_at": "2026-09-06T16:45:46+00:00",
+  "updated_at": "2026-09-06T16:46:00+00:00",
   "worktree_key": "agent-systems-benchmark-platform-manifests"
 }
 ---
@@ -132,3 +132,13 @@ Implementation has not started. Read the linked plan before claiming.
   fb21556db3f62e030c77f821f10f8025f71509113f0c6403f7e8fb513fd3ee9b.
 
 - 2026-09-06T16:45:46+00:00: Heartbeat by quality-20260906.
+
+- 2026-09-06T16:46:00+00:00: Verified immutable OCI indexes and amd64/arm64 child digests for ten
+  distro targets with Docker buildx 0.36.1; official Arch image is amd64-only. Exported exact amd64
+  child filesystems with crane 0.20.6 under development storage and observed glibc baselines
+  2.34-2.44 and Alpine musl 1.2.6. Inspected pinned npm/PyPI metadata and selected archives for
+  Codex 0.153.4, OpenCode 1.18.29, OpenDesk 0.3.5 and aider 0.86.2. No runtime/native claim made.
+  Initial validator run failed because npm SRI uses sha512- rather than sha512 colon; corrected with
+  regression test. Canonical validation, 3 deliberate failure fixtures, repository policy,
+  actionlint, zizmor, Gitleaks, Rust fmt/clippy/test/doc/release, cargo-deny, cargo-audit, 96.47
+  percent workspace and 100 percent core coverage, and the complete quality negative suite now pass.
