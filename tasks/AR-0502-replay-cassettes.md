@@ -9,15 +9,18 @@
   ],
   "id": "AR-0502",
   "next_action": "Specify strict request normalization and cassette integrity schema.",
+  "observed_branch": "feature/replay-cassettes",
+  "observed_dirty": 0,
+  "observed_head": "10974f60be6fc79d0d07f64bfa212197eeee2082",
   "owner": "replay-20260906",
   "plan": "../plans/AR-0502.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Store versioned provider requests, event streams, causal IDs and integrity metadata.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Implement immutable response cassette format",
-  "updated_at": "2026-09-06T17:12:54+00:00",
+  "updated_at": "2026-09-06T17:13:08+00:00",
   "worktree_key": "agent-systems-benchmark-replay-cassettes"
 }
 ---
