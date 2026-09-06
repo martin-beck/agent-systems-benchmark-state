@@ -20,11 +20,11 @@
   "plan": "../plans/AR-0204.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Run repeated closed-loop and open-loop experiments with bounded concurrency.",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "Implement capacity sweeps and arrival scheduling",
-  "updated_at": "2026-09-06T22:25:30+00:00",
+  "updated_at": "2026-09-06T22:25:42+00:00",
   "worktree_key": "agent-systems-benchmark-capacity-sweeps"
 }
 ---
@@ -247,3 +247,7 @@ Implementation has not started. Read the linked plan before claiming.
   dependency; after it is integrated, reclaim AR-0204, rebase without losing b0b2ae1, rerun the
   complete isolated-target workspace and coverage gates, and obtain immutable review before
   publication.
+
+- 2026-09-06T22:25:42+00:00: All declared dependencies are durably done; preserved four-path
+  candidate is clean, signed/DCO, unpublished, process-free and disjoint from active work. Promote
+  for exact-main rebase and fresh external-target validation.
