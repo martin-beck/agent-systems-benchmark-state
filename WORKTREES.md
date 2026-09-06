@@ -6,8 +6,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | --- | --- | --- | ---: | --- |
 | `agent-systems-benchmark` | `main` | `c9568e8603e3` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `71618e18f9a3` | 0 | behind 0, ahead 1 |
-| `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `a40088879e9a` | 2 | behind 0, ahead 1 |
-| changed files | - | - | - | `crates/asb-protocol/README.md`, `crates/asb-protocol/src/lib.rs` |
+| `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `ef9fb488766b` | 0 | behind 0, ahead 2 |
 | `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `d09a62ee96bf` | 0 | behind 0, ahead 2 |
 | `agent-systems-benchmark-replay-evaluation` | `feature/replay-evaluation` | `64416f4ac508` | 1 | behind 0, ahead 1 |
 | changed files | - | - | - | `tools/replay-spike/__pycache__/` |
