@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling.",
-  "task_revision": 127,
+  "task_revision": 128,
   "title": "Collect portable system and session metrics",
-  "updated_at": "2026-09-06T18:54:06+00:00",
+  "updated_at": "2026-09-06T18:54:25+00:00",
   "worktree_key": "agent-systems-benchmark-portable-metrics"
 }
 ---
@@ -343,3 +343,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T18:54:06+00:00: Recorded command exit 0; command argv SHA-256
   cdf0e9837cbe58a0ec011b09c78b67000890e8db7d6c85f02f82fe223eea1314.
+
+- 2026-09-06T18:54:25+00:00: Recorded command exit 0; command argv SHA-256
+  a5c3f72b607047af590b5687f748a6eb2546d8595618931b107dd72f6872eef5.
