@@ -10,13 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #10 | `feature/sandbox-runtime@d8601c22982f` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | runtime: isolate untrusted processes |
-| #13 | `feature/agent-opencode@6545c9dd4f2f` | `main` | UNKNOWN | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | agents: add pinned OpenCode adapter |
+| #13 | `feature/agent-opencode@6545c9dd4f2f` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS | agents: add pinned OpenCode adapter |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34055890362 | `4d716973f483` | push | Repository quality | in_progress:- |
+| 34055890354 | `4d716973f483` | push | Rust verification | in_progress:- |
 | 34055848166 | `6545c9dd4f2f` | pull_request | Repository quality | in_progress:- |
 | 34055848135 | `6545c9dd4f2f` | pull_request | Rust verification | in_progress:- |
 | 34055764091 | `d8601c22982f` | pull_request | Repository quality | completed:success |
@@ -27,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34055198296 | `7e764d8e2b33` | pull_request | Rust verification | completed:success |
 | 34054837850 | `162110386605` | push | Rust verification | completed:success |
 | 34054837848 | `162110386605` | push | Repository quality | completed:success |
-| 34054668620 | `410ecc95b80e` | pull_request | Rust verification | completed:success |
-| 34054668568 | `410ecc95b80e` | pull_request | Repository quality | completed:success |
