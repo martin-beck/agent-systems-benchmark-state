@@ -10,7 +10,7 @@
     "AR-0203"
   ],
   "id": "AR-0901",
-  "next_action": "Complete production-trace linkage and formal CI integration, rerun all five Kani proofs/Loom/state mutants/pin checks, then full repository gates before a focused signed candidate.",
+  "next_action": "Rerun exact-head root and quality gates with the documented in-worktree target, then publish signed head for immutable review.",
   "observed_branch": "feature/formal-assurance",
   "observed_dirty": 0,
   "observed_head": "2a495a99a6576bcc747e8cf0cf5815866d0f277e",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use bounded proofs and model tests for safety-critical domain logic.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Prove critical state and concurrency invariants",
-  "updated_at": "2026-09-06T19:53:02+00:00",
+  "updated_at": "2026-09-06T19:53:22+00:00",
   "worktree_key": "agent-systems-benchmark-formal-assurance"
 }
 ---
@@ -239,3 +239,12 @@ plan and claim after a fresh reconciliation.
 
 - 2026-09-06T19:53:02+00:00: Recorded command exit 0; command argv SHA-256
   f8c407dc90bcb454866da58582ad9677daad32c8be84eb85db0b3733fcaa910a.
+
+- 2026-09-06T19:53:22+00:00: Exact-head root test attempt failed after earlier suites passed because
+  the worker supplied an external CARGO_TARGET_DIR. AR-0103 sandbox native tests derive workspace
+  from the repository target but the executable was outside it, so helper_program raised
+  StripPrefixError before cleanup. Audited leaked outside-50251: four-byte synthetic sentinel,
+  regular 0664 martin file, no open file or related process; removed exactly that generated file
+  through the wrapper. This is a test-harness portability/cleanup finding for coordinator follow-up,
+  not an AR-0901 product failure. Rerun will use the documented in-worktree target, still under
+  /srv/data/projects.
