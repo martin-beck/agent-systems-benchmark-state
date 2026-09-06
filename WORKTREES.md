@@ -16,7 +16,6 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-replay-evaluation` | `feature/replay-evaluation` | `3d04a2d5a3b3` | 0 | behind 14, ahead 0 |
 | `agent-systems-benchmark-sandbox-runtime` | `feature/sandbox-runtime` | `f4f1875b7e48` | 1 | behind 4, ahead 1 |
 | changed files | - | - | - | `crates/asb-runtime/src/sandbox.rs` |
-| `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `4d9643cfe39d` | 5 | behind 0, ahead 3 |
-| changed files | - | - | - | `crates/asb-analysis/README.md`, `crates/asb-analysis/src/lib.rs`, `crates/asb-analysis/tests/fixtures/dkw-reference-vectors.tsv`, `crates/asb-analysis/tests/reference-requirements.txt`, `crates/asb-analysis/tests/validate_reference_vectors.py` |
+| `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `1c1556dbb147` | 0 | behind 0, ahead 4 |
 | `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `265d811b765e` | 5 | behind 0, ahead 0 |
 | changed files | - | - | - | `crates/asb-replay/README.md`, `crates/asb-replay/src/cassette.rs`, `crates/asb-replay/src/lib.rs`, `crates/asb-replay/src/service.rs`, `crates/asb-replay/tests/strict_replay.rs` |
