@@ -10,6 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #21 | `feature/capacity-sweeps@0717d4acd168` | `main` | UNKNOWN | - | runtime: add bounded capacity scheduler |
 
 ## Recent workflows
 
