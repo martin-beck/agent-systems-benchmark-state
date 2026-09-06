@@ -8,5 +8,6 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 4, ahead 0 |
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `38ceb33592e3` | 0 | behind 3, ahead 0 |
+| `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `3baa4f9d0a74` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `748537c25e3a` | 0 | behind 7, ahead 0 |
 | `agent-systems-benchmark-replay-evaluation` | `feature/replay-evaluation` | `3d04a2d5a3b3` | 0 | behind 0, ahead 1 |

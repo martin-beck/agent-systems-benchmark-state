@@ -8,15 +8,18 @@
   ],
   "id": "AR-0102",
   "next_action": "Claim with the designated runtime worker, then implement lifecycle transitions with explicit process handles.",
+  "observed_branch": "feature/process-runtime",
+  "observed_dirty": 0,
+  "observed_head": "3baa4f9d0a7448e5f2e24633c230a2111c9ead86",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0102.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run real client processes with bounded I/O, monotonic deadlines and process-tree ownership.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Implement process execution and cancellation",
-  "updated_at": "2026-09-06T16:35:39+00:00",
+  "updated_at": "2026-09-06T16:35:53+00:00",
   "worktree_key": "agent-systems-benchmark-process-runtime"
 }
 ---
