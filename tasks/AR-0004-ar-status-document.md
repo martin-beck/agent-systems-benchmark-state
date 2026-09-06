@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Render every AR, status, and dependency as an accessible visual state document.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Generate the visual AR status document",
-  "updated_at": "2026-09-06T17:30:34+00:00",
+  "updated_at": "2026-09-06T17:30:44+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-status-document"
 }
 ---
@@ -55,3 +55,6 @@ easy-to-scan document in the public state repository.
 
 - 2026-09-06T17:30:34+00:00: Recorded command exit 0; command argv SHA-256
   e03d7189be607519bd048747d36d6b29ebcf823a1acf73e0e8f6e9b3e66eaf22.
+
+- 2026-09-06T17:30:44+00:00: Recorded command exit 1; command argv SHA-256
+  e93adfcf3aed4aa37024ce612516d93382784836fe863872a5ce87e6badb409b.
