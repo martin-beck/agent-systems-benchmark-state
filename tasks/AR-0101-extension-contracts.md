@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Specify typed agent, workload, collector, runtime and result contracts before parallel implementations.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Freeze versioned extension and result contracts",
-  "updated_at": "2026-09-06T15:42:50+00:00",
+  "updated_at": "2026-09-06T15:43:20+00:00",
   "worktree_key": "agent-systems-benchmark-extension-contracts"
 }
 ---
@@ -46,3 +46,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T15:42:50+00:00: Recorded command exit 0; command SHA-256
   2547b2d66ffa177a8e48783f7bd6637753e4b0f183594db39025f20383ecf01c.
+
+- 2026-09-06T15:43:20+00:00: Reconciliation found late durable effects from two successful wrapped
+  commands after the earlier clean observation: Cargo workspace now lists asb-protocol and its
+  manifest exists, with no source yet and no live AR-0101 process. Preserving these intended
+  AR-owned changes. Earlier update attempts failed on missing then stale expected revision and
+  caused no product effect. Coordinator notified to serialize Cargo/schema integration.
