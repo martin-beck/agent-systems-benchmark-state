@@ -7,7 +7,7 @@
     "AR-0103"
   ],
   "id": "AR-0105",
-  "next_action": "Await independent immutable-tree review of 250f398 before publication.",
+  "next_action": "Await independent immutable-tree re-review of eea3d20 before publication.",
   "observed_branch": "fix/sandbox-test-portability",
   "observed_dirty": 0,
   "observed_head": "eea3d202b226f7365cc18ac00dda854343c77de0",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Repair sandbox test target portability",
-  "updated_at": "2026-09-06T22:00:43+00:00",
+  "updated_at": "2026-09-06T22:01:07+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-test-portability"
 }
 ---
@@ -202,3 +202,18 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T22:00:43+00:00: Recorded command exit 0; command argv SHA-256
   f96889c02fe189aa2dbcb667913fbde238d7843645344aa3e1cb6198bf12cfa8.
+
+- 2026-09-06T22:01:07+00:00: Second immutable review correctly blocked 250f398: merely making
+  relative CARGO_TARGET_DIR absolute remained vulnerable to lexical foo/../target and symlink
+  aliases that could resolve into the repository target while bypassing prefix classification.
+  Successor eea3d20 lexically removes dot components and canonicalizes the deepest existing prefix
+  so symlinks plus nonexistent suffixes resolve semantically before fixture use/classification.
+  Negative regressions cover an existing relative alias and symlink alias resolving to repository
+  target without creating it; positive regression covers a relative external target. RAII cleanup
+  remains across all roots. Actual relative external run, three distinct fresh absolute targets,
+  reverse ordering, concurrent processes, staging, original ENOENT tests and zero residue passed.
+  Fresh external exact-tree workspace fmt/clippy/tests/docs/release, native sandbox, formal,
+  audit/deny, coverage, workflow analyzers, Gitleaks, repository/DCO policy, failure fixtures and
+  platforms passed. Coverage sandbox.rs 97.39% lines, workspace 96.77%. Candidate is one SSH-signed
+  exact-DCO commit on b7e9078, clean two-file test-only scope, repository target absent; no
+  publication before re-review.
