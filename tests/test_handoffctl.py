@@ -70,6 +70,22 @@ def concurrent_reconcile(root_value: str, start: Any) -> None:
         CORE.reconcile(do_commit=False)
 
 
+def concurrent_promote(root_value: str, start: Any) -> None:
+    """Promote through the real locked mutation path in a child process."""
+    configure_child(root_value)
+    start.wait(5)
+    args = argparse.Namespace(
+        task="AR-0001",
+        expected_revision=1,
+        note="dependencies verified",
+    )
+    with (
+        patch.object(CORE, "commit", return_value=True),
+        patch.object(CORE, "dirty_state_paths", return_value=[]),
+    ):
+        CORE.mutate(args, "promote")
+
+
 class HandoffTest(unittest.TestCase):
     """Exercise transaction safety without accessing the live project."""
 
@@ -292,6 +308,186 @@ class HandoffTest(unittest.TestCase):
                     argparse.Namespace(task="AR-0001", owner="worker-b", lease_minutes=10),
                     "claim",
                 )
+
+    def test_promote_is_dependency_revision_and_state_aware(self) -> None:
+        dependency = self.make_task("AR-0001", status="done")
+        target = self.make_task(
+            "AR-0002",
+            status="planned",
+            depends_on=["AR-0001"],
+        )
+        before = target.read_text()
+        args = argparse.Namespace(
+            task="AR-0002",
+            expected_revision=0,
+            note="dependencies verified",
+        )
+        with (
+            patch.object(CORE, "dirty_state_paths", return_value=[]),
+            self.assertRaisesRegex(RuntimeError, "stale revision"),
+        ):
+            CORE.mutate(args, "promote")
+        self.assertEqual(before, target.read_text())
+
+        dependency_meta, dependency_body = CORE.read_task(dependency)
+        dependency_meta["status"] = "open"
+        CORE.write_task(dependency, dependency_meta, dependency_body)
+        self.refresh_views()
+        args.expected_revision = 1
+        with (
+            patch.object(CORE, "dirty_state_paths", return_value=[]),
+            self.assertRaisesRegex(RuntimeError, "unfinished dependencies"),
+        ):
+            CORE.mutate(args, "promote")
+        dependency_meta["status"] = "done"
+        CORE.write_task(dependency, dependency_meta, dependency_body)
+        self.refresh_views()
+
+        args.note = ""
+        with (
+            patch.object(CORE, "dirty_state_paths", return_value=[]),
+            self.assertRaisesRegex(RuntimeError, "must not be empty"),
+        ):
+            CORE.mutate(args, "promote")
+        args.note = "dependencies verified"
+
+        with (
+            patch.object(CORE, "dirty_state_paths", return_value=[]),
+            patch.object(CORE, "commit", return_value=True),
+        ):
+            CORE.mutate(args, "promote")
+        meta, body = CORE.read_task(target)
+        self.assertEqual("open", meta["status"])
+        self.assertEqual(2, meta["task_revision"])
+        self.assertIn("dependencies verified", body)
+        self.assertIn("AR_0001 --> AR_0002", (self.root / "STATUS.md").read_text())
+        self.assertIn("## Open", (self.root / "CURRENT.md").read_text())
+
+    def test_promote_rejects_dirty_invalid_claimed_and_nonplanned_state(self) -> None:
+        path = self.make_task(status="planned")
+        args = argparse.Namespace(task="AR-0001", expected_revision=1, note="ready")
+        with (
+            patch.object(CORE, "dirty_state_paths", return_value=[" M tasks/other.md"]),
+            self.assertRaisesRegex(RuntimeError, "clean state repository"),
+        ):
+            CORE.mutate(args, "promote")
+        self.assertEqual("planned", CORE.read_task(path)[0]["status"])
+
+        (self.root / "STATUS.md").write_text("stale")
+        with (
+            patch.object(CORE, "dirty_state_paths", return_value=[]),
+            self.assertRaisesRegex(RuntimeError, "promotion preflight failed"),
+        ):
+            CORE.mutate(args, "promote")
+        self.refresh_views()
+
+        meta, body = CORE.read_task(path)
+        meta["owner"] = "worker-a"
+        meta["claim_expires"] = "2099-01-01T00:00:00+00:00"
+        CORE.write_task(path, meta, body)
+        self.refresh_views()
+        with (
+            patch.object(CORE, "dirty_state_paths", return_value=[]),
+            self.assertRaisesRegex(RuntimeError, "promotion preflight failed"),
+        ):
+            CORE.mutate(args, "promote")
+        meta["owner"] = ""
+        meta["claim_expires"] = ""
+        meta["status"] = "future"
+        CORE.write_task(path, meta, body)
+        self.refresh_views()
+        with (
+            patch.object(CORE, "dirty_state_paths", return_value=[]),
+            self.assertRaisesRegex(RuntimeError, "not planned"),
+        ):
+            CORE.mutate(args, "promote")
+
+    def test_promote_failure_restores_task_and_generated_views(self) -> None:
+        path = self.make_task(status="planned")
+        before = {
+            item: item.read_text()
+            for item in (path, self.root / "CURRENT.md", self.root / "STATUS.md")
+        }
+        args = argparse.Namespace(task="AR-0001", expected_revision=1, note="ready")
+        real_atomic = CORE.atomic
+        failed = False
+
+        def fail_status_once(target: Path, text: str) -> None:
+            nonlocal failed
+            if target.name == "STATUS.md" and not failed:
+                failed = True
+                raise OSError("injected status failure")
+            real_atomic(target, text)
+
+        with (
+            patch.object(CORE, "dirty_state_paths", return_value=[]),
+            patch.object(CORE, "atomic", side_effect=fail_status_once),
+            self.assertRaisesRegex(OSError, "injected status failure"),
+        ):
+            CORE.mutate(args, "promote")
+        self.assertTrue(all(item.read_text() == text for item, text in before.items()))
+
+        with (
+            patch.object(CORE, "dirty_state_paths", return_value=[]),
+            patch.object(CORE, "commit", side_effect=RuntimeError("injected commit failure")),
+            self.assertRaisesRegex(RuntimeError, "injected commit failure"),
+        ):
+            CORE.mutate(args, "promote")
+        self.assertTrue(all(item.read_text() == text for item, text in before.items()))
+
+    def test_promote_push_failure_preserves_durable_state(self) -> None:
+        path = self.make_task(status="planned")
+        args = argparse.Namespace(task="AR-0001", expected_revision=1, note="ready")
+        with (
+            patch.object(CORE, "dirty_state_paths", return_value=[]),
+            patch.object(CORE, "commit", return_value=True),
+            patch.object(CORE, "push_replica", side_effect=RuntimeError("push failed")),
+            self.assertRaisesRegex(RuntimeError, "push failed"),
+        ):
+            CORE.mutate(args, "promote")
+        self.assertEqual("open", CORE.read_task(path)[0]["status"])
+        self.assertEqual(
+            CORE.render_status_view(CORE.all_tasks()), (self.root / "STATUS.md").read_text()
+        )
+
+    def test_dirty_state_paths_uses_complete_porcelain(self) -> None:
+        completed = subprocess.CompletedProcess(
+            ["git"],
+            0,
+            stdout=" M tasks/one.md\n?? tasks/two.md\n",
+            stderr="",
+        )
+        with patch.object(CORE, "run", return_value=completed) as invoked:
+            self.assertEqual(
+                [" M tasks/one.md", "?? tasks/two.md"],
+                CORE.dirty_state_paths(),
+            )
+        command = invoked.call_args.args[0]
+        self.assertIn("--porcelain=v1", command)
+        self.assertIn("--untracked-files=all", command)
+
+    def test_concurrent_promote_and_reconcile_keep_source_and_views_atomic(self) -> None:
+        self.make_task(status="planned")
+        start = multiprocessing.Event()
+        promote = multiprocessing.Process(target=concurrent_promote, args=(str(self.root), start))
+        reconcile = multiprocessing.Process(
+            target=concurrent_reconcile, args=(str(self.root), start)
+        )
+        promote.start()
+        reconcile.start()
+        start.set()
+        promote.join(10)
+        reconcile.join(10)
+        self.assertEqual(0, promote.exitcode)
+        self.assertEqual(0, reconcile.exitcode)
+        meta, _ = CORE.read_task(CORE.locate("AR-0001")[0])
+        self.assertEqual("open", meta["status"])
+        self.assertEqual(
+            CORE.render_current(CORE.all_tasks()), (self.root / "CURRENT.md").read_text()
+        )
+        self.assertEqual(
+            CORE.render_status_view(CORE.all_tasks()), (self.root / "STATUS.md").read_text()
+        )
 
     def test_invalid_update_rolls_back_both_files(self) -> None:
         path = self.make_task()
@@ -891,6 +1087,19 @@ class HandoffTest(unittest.TestCase):
             (["handoffctl", "render-status", "--check"], "cmd_render_status", None),
             (["handoffctl", "claim", "AR-0001", "--owner", "worker-a"], "mutate", None),
             (["handoffctl", "heartbeat", "AR-0001", "--owner", "worker-a"], "mutate", None),
+            (
+                [
+                    "handoffctl",
+                    "promote",
+                    "AR-0001",
+                    "--expected-revision",
+                    "1",
+                    "--note",
+                    "ready",
+                ],
+                "mutate",
+                None,
+            ),
             (
                 [
                     "handoffctl",
