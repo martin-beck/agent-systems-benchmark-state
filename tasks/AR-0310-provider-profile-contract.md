@@ -10,7 +10,7 @@
   "id": "AR-0310",
   "next_action": "Define a versioned credential-free provider profile and exact adapter capability negotiation.",
   "observed_branch": "feature/provider-profile-contract",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "b7e9078d53a4a4586beb68bf56233aba206112ac",
   "owner": "quality-20260906",
   "plan": "../plans/AR-0310.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Normalize one provider configuration for safe translation across heterogeneous agent adapters.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Define common provider profiles",
-  "updated_at": "2026-09-06T21:41:17+00:00",
+  "updated_at": "2026-09-06T21:43:29+00:00",
   "worktree_key": "agent-systems-benchmark-provider-profile-contract"
 }
 ---
