@@ -10,12 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #9 | `feature/statistical-analysis@4d9643cfe39d` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Add conservative statistical and SLO analysis |
+| #9 | `feature/statistical-analysis@3bcfd85dedd3` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED: | Add conservative statistical and SLO analysis |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34052528404 | `3bcfd85dedd3` | pull_request | Rust verification | queued:- |
+| 34052528401 | `3bcfd85dedd3` | pull_request | Repository quality | queued:- |
 | 34051996585 | `4d9643cfe39d` | pull_request | Repository quality | completed:success |
 | 34051996558 | `4d9643cfe39d` | pull_request | Rust verification | completed:success |
 | 34051300116 | `265d811b765e` | push | Rust verification | completed:success |
@@ -26,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34049249261 | `e6a81e8644c6` | push | Rust verification | completed:success |
 | 34049105453 | `51daeb8608e5` | pull_request | Repository quality | completed:success |
 | 34049105416 | `51daeb8608e5` | pull_request | Rust verification | completed:success |
-| 34048857678 | `836380c14ab1` | pull_request | Repository quality | completed:success |
-| 34048857675 | `836380c14ab1` | pull_request | Rust verification | completed:success |
