@@ -2,7 +2,7 @@
 {
   "branch": "feature/portable-metrics",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-06T20:50:08+00:00",
+  "claim_expires": "2026-09-06T20:25:37+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0102"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling.",
-  "task_revision": 129,
+  "task_revision": 130,
   "title": "Collect portable system and session metrics",
-  "updated_at": "2026-09-06T18:55:35+00:00",
+  "updated_at": "2026-09-06T18:55:37+00:00",
   "worktree_key": "agent-systems-benchmark-portable-metrics"
 }
 ---
@@ -354,3 +354,5 @@ Implementation has not started. Read the linked plan before claiming.
   asb-metrics lines 95.60%, core 100%, protocol 96.15%, replay 97.11%; native Linux controlled
   proc/cgroup, unavailable/permission, sample-loss/overhead and malformed/security negatives pass.
   Scope is Cargo.toml/Cargo.lock plus four asb-metrics paths only.
+
+- 2026-09-06T18:55:37+00:00: Heartbeat by quality-20260906.
