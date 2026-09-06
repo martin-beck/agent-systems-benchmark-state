@@ -10,13 +10,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #13 | `feature/agent-opencode@fa53386a97ab` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, QUEUED: | agents: add pinned OpenCode adapter |
+| #13 | `feature/agent-opencode@fa53386a97ab` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | agents: add pinned OpenCode adapter |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34056097078 | `fa53386a97ab` | pull_request | Rust verification | queued:- |
+| 34056097078 | `fa53386a97ab` | pull_request | Rust verification | in_progress:- |
 | 34056097009 | `fa53386a97ab` | pull_request | Repository quality | in_progress:- |
 | 34055890362 | `4d716973f483` | push | Repository quality | completed:success |
 | 34055890354 | `4d716973f483` | push | Rust verification | completed:success |
