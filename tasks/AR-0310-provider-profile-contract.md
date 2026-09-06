@@ -8,7 +8,7 @@
     "AR-1001"
   ],
   "id": "AR-0310",
-  "next_action": "Await AR-0401 fence transfer, then wire provider module, schemas, fixtures, adapter interface, and full gates.",
+  "next_action": "Complete pinned Kani proof in same-drive cache, re-review exact candidate, then request immutable coordinator review.",
   "observed_branch": "feature/provider-profile-contract",
   "observed_dirty": 0,
   "observed_head": "b73c920852dad0e42cc7cf8000827c09d8edbf04",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Normalize one provider configuration for safe translation across heterogeneous agent adapters.",
-  "task_revision": 106,
+  "task_revision": 107,
   "title": "Define common provider profiles",
-  "updated_at": "2026-09-06T23:40:27+00:00",
+  "updated_at": "2026-09-06T23:42:12+00:00",
   "worktree_key": "agent-systems-benchmark-provider-profile-contract"
 }
 ---
@@ -296,3 +296,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T23:40:27+00:00: Recorded command exit 0; command argv SHA-256
   3dc1de51b6aab2d48cc5184cc4785ef2cd5f1565c7e49e7e066e9b0b9b85f557.
+
+- 2026-09-06T23:42:12+00:00: Exact candidate b73c920 is clean, SSH-signed and DCO-certified. Focused
+  and full workspace verify gates pass; policy/analyzers/Gitleaks/deny/audit/coverage/failure
+  fixtures/platform checks pass. Aggregate coverage is 93.59% regions/96.67% lines; protocol is
+  95.12% regions/98.44% lines; provider.rs is 97.96% regions/99.52% lines and adapter provider.rs is
+  97.42% regions/100% lines. Formal Loom/state/production-trace tests pass. First Kani invocation
+  was interrupted after it selected a pre-existing default user cache contrary to the required
+  same-drive cache boundary; process audit is clean, product tree remained clean, and retry will
+  explicitly set KANI_HOME, RUSTUP_HOME and CARGO_HOME under the approved storage root.
