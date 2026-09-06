@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**73 ARs tracked** across 5 active status categories.
+**73 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 1 |
 | **Planned** | Defined work awaiting promotion or dependencies | 49 |
 | **Future** | Deferred roadmap work | 0 |
@@ -60,7 +60,7 @@ flowchart LR
         AR_0307["AR-0307 - Planned"]:::status_planned
         AR_0308["AR-0308 - Planned"]:::status_planned
         AR_0309["AR-0309 - Planned"]:::status_planned
-        AR_0310["AR-0310 - Open"]:::status_open
+        AR_0310["AR-0310 - In progress"]:::status_in_progress
         AR_0311["AR-0311 - Planned"]:::status_planned
         AR_0312["AR-0312 - Planned"]:::status_planned
         AR_0313["AR-0313 - Planned"]:::status_planned
@@ -449,19 +449,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0105](tasks/AR-0105-sandbox-test-portability.md): Repair sandbox test target portability | contracts-20260906 | Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work. | Await independent immutable-tree review of d71321c before publication. |
 | P1 | [AR-0302](tasks/AR-0302-agent-opendesk.md): Implement OpenDesk client adapter | root-coordination-20260906 | Support the bitclub OpenDesk CLI with its own dialect and compatibility record. | Inspect @bitclub.ai/opendesk-cli commands and protocol version. |
+| P1 | [AR-0310](tasks/AR-0310-provider-profile-contract.md): Define common provider profiles | quality-20260906 | Normalize one provider configuration for safe translation across heterogeneous agent adapters. | Define a versioned credential-free provider profile and exact adapter capability negotiation. |
 | P1 | [AR-0401](tasks/AR-0401-engineering-workloads.md): Implement original engineering workloads | replay-20260906 | Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API. | Await coordinator serialization for rebase and Cargo workspace/lock integration; then run exact-tree full gates and prepare focused signed candidate. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0310](tasks/AR-0310-provider-profile-contract.md): Define common provider profiles | Unclaimed | Normalize one provider configuration for safe translation across heterogeneous agent adapters. | Define a versioned credential-free provider profile and exact adapter capability negotiation. |
 
 ### Blocked (1)
 

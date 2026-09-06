@@ -2,22 +2,22 @@
 {
   "branch": "feature/provider-profile-contract",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-06T22:18:39+00:00",
   "depends_on": [
     "AR-0101",
     "AR-1001"
   ],
   "id": "AR-0310",
   "next_action": "Define a versioned credential-free provider profile and exact adapter capability negotiation.",
-  "owner": "",
+  "owner": "quality-20260906",
   "plan": "../plans/AR-0310.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Normalize one provider configuration for safe translation across heterogeneous agent adapters.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Define common provider profiles",
-  "updated_at": "2026-09-06T21:33:37+00:00",
+  "updated_at": "2026-09-06T21:33:39+00:00",
   "worktree_key": "agent-systems-benchmark-provider-profile-contract"
 }
 ---
@@ -33,3 +33,5 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-06T21:33:37+00:00: Dependencies AR-0101 and AR-1001 are durably done; promote the
   credential-free provider contract for isolated implementation under the coordinator Cargo/schema
   fence.
+
+- 2026-09-06T21:33:39+00:00: Claimed by quality-20260906.
