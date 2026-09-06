@@ -7,7 +7,7 @@
     "AR-0101"
   ],
   "id": "AR-0203",
-  "next_action": "Define statistical estimators and fixed reference vectors.",
+  "next_action": "Validate conservative missing-evidence and equal-window fixes with explicit pinned tool paths; await AR-0502 Cargo fence before workspace integration.",
   "observed_branch": "feature/statistical-analysis",
   "observed_dirty": 1,
   "observed_head": "5c9b79b2a25ef2a7a485e53728ef0dfdfdd36530",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compute latency distributions, quality/throughput intervals and evidence-aware SLO results.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Implement statistical and SLO assessment",
-  "updated_at": "2026-09-06T17:46:49+00:00",
+  "updated_at": "2026-09-06T17:47:37+00:00",
   "worktree_key": "agent-systems-benchmark-statistical-analysis"
 }
 ---
@@ -88,3 +88,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T17:46:49+00:00: Recorded command exit 0; command argv SHA-256
   d67989f52fe095ab065af594b62e12c050693f4b13e758a698bf63c2d0a74bf4.
+
+- 2026-09-06T17:47:37+00:00: A focused validation invocation failed before spawning rustfmt because
+  the coordinator environment did not expose rustfmt on PATH; no product mutation or test execution
+  occurred. Verified pinned rustfmt and rustc under /srv/data/projects/.asb-local/cargo/bin and will
+  use those exact paths.
