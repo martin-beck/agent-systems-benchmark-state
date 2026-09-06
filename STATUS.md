@@ -280,7 +280,7 @@ flowchart LR
 | P1 | [AR-0103](tasks/AR-0103-sandbox-runtime.md): Implement isolated execution and resource leases | contracts-20260906 | Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets. | Await independent immutable-head re-review and exact-head CI for PR #10 at 7e764d8; rebase only on explicit coordinator handoff. Do not merge or release. |
 | P1 | [AR-0301](tasks/AR-0301-agent-opencode.md): Implement OpenCode client adapter | root-coordination-20260906 | Run pinned OpenCode through its structured supported interfaces. | Claim after a fresh reconciliation, then inspect the pinned upstream CLI/server contract and implement the isolated adapter. |
 | P1 | [AR-0504](tasks/AR-0504-replay-pacing.md): Implement pacing and replay overhead assessment | replay-20260906 | Support immediate, fixed-latency, original-paced and seeded synthetic scenarios. | Claim after a fresh reconciliation, then implement monotonic pacing, cancellation, backpressure, and independent saturation calibration. |
-| P1 | [AR-0901](tasks/AR-0901-formal-assurance.md): Prove critical state and concurrency invariants | quality-20260906 | Use bounded proofs and model tests for safety-critical domain logic. | Claim after a fresh reconciliation, then pin the verifier toolchains and implement the smallest dependency-ready invariant set. |
+| P1 | [AR-0901](tasks/AR-0901-formal-assurance.md): Prove critical state and concurrency invariants | quality-20260906 | Use bounded proofs and model tests for safety-critical domain logic. | Complete production-trace linkage and formal CI integration, rerun all five Kani proofs/Loom/state mutants/pin checks, then full repository gates before a focused signed candidate. |
 
 ### Planned (27)
 

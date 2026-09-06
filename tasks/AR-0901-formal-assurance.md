@@ -10,7 +10,7 @@
     "AR-0203"
   ],
   "id": "AR-0901",
-  "next_action": "Claim after a fresh reconciliation, then pin the verifier toolchains and implement the smallest dependency-ready invariant set.",
+  "next_action": "Complete production-trace linkage and formal CI integration, rerun all five Kani proofs/Loom/state mutants/pin checks, then full repository gates before a focused signed candidate.",
   "observed_branch": "feature/formal-assurance",
   "observed_dirty": 2,
   "observed_head": "ef1a6578600b45f4afb4dd414131f9ffd2ddd01f",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use bounded proofs and model tests for safety-critical domain logic.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Prove critical state and concurrency invariants",
-  "updated_at": "2026-09-06T19:32:53+00:00",
+  "updated_at": "2026-09-06T19:33:26+00:00",
   "worktree_key": "agent-systems-benchmark-formal-assurance"
 }
 ---
@@ -97,3 +97,15 @@ plan and claim after a fresh reconciliation.
 
 - 2026-09-06T19:32:53+00:00: Recorded command exit 0; command argv SHA-256
   04c68c991947a5e6fc8b4d864cca5038025d59003a216a6c2ea287a59efc50df.
+
+- 2026-09-06T19:33:26+00:00: Pinned Kani 0.67.0 and Loom 0.7.2 in an isolated formal workspace
+  without taking the root Cargo fence. Kani bundle/compiler now live under /srv/data/projects; setup
+  initially installed its exact nightly in default rustup home and failed late on rustup-init, so
+  after verifying no consumer and a working /srv copy, restored the prior stable default and removed
+  only that newly created off-drive nightly. Initial all-u64 division proof exceeded a two-minute
+  local budget and was interrupted with no surviving process; narrowed and documented the bound to
+  all u32 counters plus the u64 overflow endpoint. Current five Kani harnesses pass (0/2093 checks
+  failed), including all-u32 range pairs, 27 SLO vectors, every u64 missing-latency bound, units,
+  and cursor separation. Loom ownership model and retained race mutant pass; depth-six
+  double-completion and two-session cursor models plus mutants pass. Exact pin/workflow consistency
+  test passes.
