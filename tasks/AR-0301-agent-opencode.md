@@ -2,7 +2,7 @@
 {
   "branch": "feature/agent-opencode",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-06T22:40:32+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0102"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/agent-opencode",
   "observed_dirty": 0,
   "observed_head": "dfb0d548bf7511ef02d76d9e202bd788c8f58306",
-  "owner": "root-coordination-20260906",
+  "owner": "",
   "plan": "../plans/AR-0301.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Run pinned OpenCode through its structured supported interfaces.",
-  "task_revision": 156,
+  "task_revision": 157,
   "title": "Implement OpenCode client adapter",
-  "updated_at": "2026-09-06T20:48:11+00:00",
+  "updated_at": "2026-09-06T20:48:26+00:00",
   "worktree_key": "agent-systems-benchmark-agent-opencode"
 }
 ---
@@ -445,3 +445,11 @@ Dependencies AR-0101 and AR-0102 are done. Read the linked plan and claim after 
 
 - 2026-09-06T20:48:11+00:00: Recorded command exit 0; command argv SHA-256
   2a8379f075754348c5c9525f6d322ca4276c88f7f8134316152a2064e6d7949e.
+
+- 2026-09-06T20:48:26+00:00: Done: independently approved exact PR #13 head dfb0d54 merged as
+  signed+DCO 9543a32 with identical tree. Exact-main CI succeeded: formal 34058963859, quality
+  34058963855, Rust x86_64/aarch64 34058963865. Complete post-merge local gates passed, including
+  real pinned OpenCode 1.18.29 allowed-write/denied-bash/cancellation journey,
+  privacy/supply-chain/negative/platform gates, Loom and five Kani proofs. Support remains
+  native-tested only on pinned Linux x86_64 OpenCode; aarch64 is build/hosted-test evidence, with
+  cgroup/TOCTOU limits documented.
