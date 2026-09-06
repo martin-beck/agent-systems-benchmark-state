@@ -11,13 +11,17 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #1 | `feature/coordination-docs@02be24b76239` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Correct handoffctl run syntax |
-| #3 | `feature/extension-contracts@ef9fb488766b` | `main` | UNKNOWN | COMPLETED:FAILURE, COMPLETED:FAILURE | Define extension protocol v1 contracts |
-| #4 | `feature/replay-evaluation@64416f4ac508` | `main` | UNKNOWN | COMPLETED:FAILURE, COMPLETED:FAILURE | Evaluate replay dependency candidates |
+| #3 | `feature/extension-contracts@488d6ca1dd67` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, COMPLETED:SUCCESS | Define extension protocol v1 contracts |
+| #4 | `feature/replay-evaluation@1f31fc3c78d4` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, COMPLETED:SUCCESS | Evaluate replay dependency candidates |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34045330958 | `488d6ca1dd67` | pull_request | Rust verification | queued:- |
+| 34045330884 | `488d6ca1dd67` | pull_request | Repository quality | queued:- |
+| 34045330594 | `1f31fc3c78d4` | pull_request | Rust verification | queued:- |
+| 34045330575 | `1f31fc3c78d4` | pull_request | Repository quality | queued:- |
 | 34045292428 | `02be24b76239` | pull_request | Rust verification | completed:success |
 | 34045292407 | `02be24b76239` | pull_request | Repository quality | completed:success |
 | 34045216392 | `8c498f9185cf` | dynamic | Dependabot Updates | completed:success |
@@ -26,7 +30,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34045212362 | `8c498f9185cf` | push | Rust verification | completed:success |
 | 34045142668 | `748537c25e3a` | pull_request | Rust verification | completed:success |
 | 34045142656 | `748537c25e3a` | pull_request | Repository quality | completed:success |
-| 34045009828 | `ef9fb488766b` | pull_request | Rust verification | completed:failure |
-| 34044850943 | `64416f4ac508` | pull_request | Rust verification | completed:failure |
-| 34044682658 | `a40088879e9a` | pull_request | Rust verification | completed:failure |
-| 34044424643 | `d09a62ee96bf` | pull_request | Repository quality | completed:success |
