@@ -9,7 +9,7 @@
   "id": "AR-0102",
   "next_action": "Implement crates/asb-runtime internals and real process-boundary tests without root Cargo/lock edits; await coordinator handoff after AR-0104 integration before workspace integration and full gates.",
   "observed_branch": "feature/process-runtime",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "3baa4f9d0a7448e5f2e24633c230a2111c9ead86",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0102.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run real client processes with bounded I/O, monotonic deadlines and process-tree ownership.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Implement process execution and cancellation",
-  "updated_at": "2026-09-06T16:41:47+00:00",
+  "updated_at": "2026-09-06T16:42:34+00:00",
   "worktree_key": "agent-systems-benchmark-process-runtime"
 }
 ---
