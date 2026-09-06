@@ -10,12 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #7 | `feature/process-runtime@836380c14ab1` | `main` | UNKNOWN | - | feat: add bounded process runtime |
+| #7 | `feature/process-runtime@836380c14ab1` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED: | feat: add bounded process runtime |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34048857678 | `836380c14ab1` | pull_request | Repository quality | queued:- |
+| 34048857675 | `836380c14ab1` | pull_request | Rust verification | queued:- |
 | 34048075282 | `5c9b79b2a25e` | push | Repository quality | completed:success |
 | 34048075266 | `5c9b79b2a25e` | push | Rust verification | completed:success |
 | 34047974952 | `6277512c9fc3` | pull_request | Rust verification | completed:success |
@@ -26,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34047665209 | `10974f60be6f` | push | Repository quality | completed:success |
 | 34047424045 | `08602eca2fd4` | pull_request | Repository quality | completed:success |
 | 34047424009 | `08602eca2fd4` | pull_request | Rust verification | completed:success |
-| 34047347503 | `a800ca3b9169` | pull_request | Rust verification | completed:success |
-| 34047347454 | `a800ca3b9169` | pull_request | Repository quality | completed:success |
