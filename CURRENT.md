@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0001](tasks/AR-0001-repository-bootstrap.md): Bootstrap public repositories | Establish both public MIT repositories, Rust workspace, coordination reuse and evidence-backed plans. | Verify local gates, publish the reviewed initial trees and reconcile hosted CI. | - |
+| P0 | [AR-0001](tasks/AR-0001-repository-bootstrap.md): Bootstrap public repositories | Establish both public MIT repositories, Rust workspace, coordination reuse and evidence-backed plans. | Verify local gates, publish the reviewed initial trees and reconcile hosted CI. | bootstrap-20260906 |
 
 ## Planned
 
