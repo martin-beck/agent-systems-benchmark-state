@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 217,
+  "task_revision": 218,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T19:19:56+00:00",
+  "updated_at": "2026-09-06T19:20:56+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
@@ -654,3 +654,6 @@ Implementation has not started. Read the linked plan before claiming.
   worktree target cache. Root Cargo files remain untouched.
 
 - 2026-09-06T19:19:56+00:00: Heartbeat by contracts-20260906.
+
+- 2026-09-06T19:20:56+00:00: Recorded command exit 0; command argv SHA-256
+  0f0480a44f628265997528f8d97054c497b9b7c505b076c54f5f43bad99be6d0.
