@@ -7,7 +7,7 @@
     "AR-0102"
   ],
   "id": "AR-0103",
-  "next_action": "Await coordinator independent immutable-head review of PR #10 exact cf43bac with green hosted CI; keep PR base unchanged and do not rebase, merge or release.",
+  "next_action": "Await fresh exact-head CI and coordinator re-review of PR #10 at d8601c2; do not merge or release.",
   "observed_branch": "feature/sandbox-runtime",
   "observed_dirty": 0,
   "observed_head": "d8601c22982f634808826da01030e3c09733ee59",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 266,
+  "task_revision": 267,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T19:43:05+00:00",
+  "updated_at": "2026-09-06T19:43:37+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
@@ -784,3 +784,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T19:43:05+00:00: Recorded command exit 0; command argv SHA-256
   344f669c82c2b517cf9b6904d03ee035f98b028fb6e4828e4852e6ef4fddebd1.
+
+- 2026-09-06T19:43:37+00:00: Coordinator-authorized single rebase onto exact product main
+  162110386605a83f963758a07d83e77e2566528a produced signed+DCO head
+  d8601c22982f634808826da01030e3c09733ee59. Range-diff shows all six commits exactly equal to the
+  independently reviewed pre-rebase chain. Full exact-tree local gates passed: fmt, workspace
+  Clippy/tests/docs/release, three real serialized sandbox native repetitions with zero ASB scopes
+  and lease files after each, Cargo Deny/Audit, coverage, actionlint, zizmor, Gitleaks, repository
+  policy and every failure fixture. Scope remains exactly four asb-runtime docs/source/test paths.
+  Force-with-lease against exact cf43bac succeeded; local and remote feature heads now d8601c2.
+  Await fresh hosted CI; no merge/release.
