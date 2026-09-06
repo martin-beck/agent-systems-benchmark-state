@@ -1,0 +1,7 @@
+# Agent Systems Benchmark worktree inventory
+
+Generated from live Git. Paths are privacy-safe worktree keys.
+
+| Worktree | Branch | Head | Dirty | vs origin/main |
+| --- | --- | --- | ---: | --- |
+| `agent-systems-benchmark` | `main` | `c9568e8603e3` | 0 | behind 0, ahead 0 |
