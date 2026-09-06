@@ -22,4 +22,19 @@ raw command output and transcripts stay outside Git. Source is MIT licensed.
 
 Run `tools/handoffctl render-status --check` to verify that `STATUS.md` matches every task. A plain
 `tools/handoffctl render-status` performs an offline deterministic refresh; normal claim, update,
-release, and reconcile transactions refresh it automatically under the coordinator lock.
+promote, release, and reconcile transactions refresh it automatically under the coordinator lock.
+
+## Opening dependency-ready work
+
+After reviewing dependencies and path ownership, the coordinator promotes a planned AR with:
+
+    tools/handoffctl promote AR-NNNN --expected-revision REVISION --note "dependencies verified"
+
+Promotion accepts only an inactive planned task whose dependencies are done. It rejects stale
+revisions, invalid task or generated state, and a dirty state checkout. The task transition and
+automatic CURRENT.md and graphical STATUS.md regeneration share one lock, validation, signed DCO
+commit, and replication transaction.
+
+If promotion is interrupted, inspect the task revision and status, signed local commits, generated
+views, and remote main before retrying. A signed local commit is a durable effect even when
+replication fails: reconcile and retry replication instead of repeating the transition.

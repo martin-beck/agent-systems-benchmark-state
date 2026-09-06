@@ -655,6 +655,52 @@ def apply_claim(args: argparse.Namespace, meta: Meta, tasks: list[Task]) -> str:
     return f"Claimed by {args.owner}."
 
 
+def dirty_state_paths() -> list[str]:
+    """Return public state-repository changes that would make promotion ambiguous."""
+    result = run(
+        [
+            "git",
+            "-C",
+            str(ROOT),
+            "status",
+            "--porcelain=v1",
+            "--untracked-files=all",
+        ]
+    )
+    return result.stdout.splitlines()
+
+
+def apply_promote(args: argparse.Namespace, meta: Meta, tasks: list[Task]) -> str:
+    """Validate the sole planned-to-open transition before changing task state."""
+    if args.expected_revision != meta["task_revision"]:
+        raise RuntimeError(
+            f"stale revision: expected {args.expected_revision}, current {meta['task_revision']}"
+        )
+    if meta.get("status") != "planned":
+        raise RuntimeError(f"{args.task} is not planned")
+    if meta.get("owner") or meta.get("claim_expires"):
+        raise RuntimeError(f"{args.task} has active claim metadata")
+    states = {item["id"]: item["status"] for _, item, _ in tasks}
+    pending = [item for item in meta.get("depends_on", []) if states.get(item) != "done"]
+    if pending:
+        raise RuntimeError("unfinished dependencies: " + ", ".join(pending))
+    if not args.note.strip():
+        raise RuntimeError("promotion note must not be empty")
+    meta["status"] = "open"
+    return str(args.note)
+
+
+def require_promotion_preflight(kind: str) -> None:
+    """Reject a promotion before writes when its source checkout is ambiguous."""
+    if kind != "promote":
+        return
+    errors = validate(live=False)
+    if errors:
+        raise RuntimeError("promotion preflight failed:\n" + "\n".join(errors))
+    if dirty_state_paths():
+        raise RuntimeError("promotion requires a clean state repository")
+
+
 def apply_owned_change(args: argparse.Namespace, kind: str, meta: Meta) -> str:
     if meta.get("owner") != args.owner:
         raise RuntimeError(f"{args.task} is owned by {meta.get('owner') or 'nobody'}")
@@ -688,6 +734,7 @@ def apply_owned_change(args: argparse.Namespace, kind: str, meta: Meta) -> str:
 def mutate(args: argparse.Namespace, kind: str) -> None:
     with locked():
         path, meta, body = locate(args.task)
+        require_promotion_preflight(kind)
         old_task = path.read_text()
         current_path = ROOT / "CURRENT.md"
         old_current = current_path.read_text() if current_path.exists() else ""
@@ -697,7 +744,11 @@ def mutate(args: argparse.Namespace, kind: str) -> None:
         note = (
             apply_claim(args, meta, all_tasks())
             if kind == "claim"
-            else apply_owned_change(args, kind, meta)
+            else (
+                apply_promote(args, meta, all_tasks())
+                if kind == "promote"
+                else apply_owned_change(args, kind, meta)
+            )
         )
         meta["task_revision"] += 1
         meta["updated_at"] = now()
@@ -838,6 +889,10 @@ def main() -> int:
         "--status", required=True, choices=[value for value in STATUSES if value != "in_progress"]
     )
     item.add_argument("--note", required=True)
+    item = commands.add_parser("promote")
+    item.add_argument("task")
+    item.add_argument("--expected-revision", type=int, required=True)
+    item.add_argument("--note", required=True)
     item = commands.add_parser("update")
     item.add_argument("task")
     item.add_argument("--owner", required=True)
@@ -860,7 +915,7 @@ def main() -> int:
         return cmd_doctor(live=args.live)
     elif args.cmd == "render-status":
         cmd_render_status(check=args.check)
-    elif args.cmd in ("claim", "heartbeat", "release", "update"):
+    elif args.cmd in ("claim", "heartbeat", "release", "promote", "update"):
         mutate(args, args.cmd)
     elif args.cmd == "run":
         if args.command and args.command[0] == "--":

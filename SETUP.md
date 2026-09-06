@@ -14,6 +14,14 @@ The product must have an origin/main before live reconciliation.
 Run tools/handoffctl reconcile --commit --push, snapshot, then doctor --live.
 Do not configure another project or its coordination service to use this database.
 
+Planned work is opened only after dependency and path review:
+
+    tools/handoffctl promote AR-NNNN --expected-revision REVISION --note "dependencies and paths verified"
+
+The command requires a clean, valid state checkout and atomically updates the task, CURRENT.md,
+and graphical STATUS.md. After an ambiguous interruption, inspect the signed local commit and
+remote ref before retrying; preserve a durable local transition and reconcile its replication.
+
 ## Validation
 
 ```sh
