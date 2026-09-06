@@ -9,15 +9,18 @@
   ],
   "id": "AR-0504",
   "next_action": "Claim after a fresh reconciliation, then implement monotonic pacing, cancellation, backpressure, and independent saturation calibration.",
+  "observed_branch": "feature/replay-pacing",
+  "observed_dirty": 0,
+  "observed_head": "162110386605a83f963758a07d83e77e2566528a",
   "owner": "replay-20260906",
   "plan": "../plans/AR-0504.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support immediate, fixed-latency, original-paced and seeded synthetic scenarios.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Implement pacing and replay overhead assessment",
-  "updated_at": "2026-09-06T19:31:25+00:00",
+  "updated_at": "2026-09-06T19:31:55+00:00",
   "worktree_key": "agent-systems-benchmark-replay-pacing"
 }
 ---
