@@ -7,7 +7,7 @@
     "AR-0103"
   ],
   "id": "AR-0105",
-  "next_action": "Await independent immutable-tree re-review of eea3d20 before publication.",
+  "next_action": "Publish approved eea3d20, open focused PR, and require exact-head CI.",
   "observed_branch": "fix/sandbox-test-portability",
   "observed_dirty": 0,
   "observed_head": "eea3d202b226f7365cc18ac00dda854343c77de0",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Repair sandbox test target portability",
-  "updated_at": "2026-09-06T22:04:41+00:00",
+  "updated_at": "2026-09-06T22:10:24+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-test-portability"
 }
 ---
@@ -219,3 +219,11 @@ Implementation has not started. Read the linked plan before claiming.
   publication before re-review.
 
 - 2026-09-06T22:04:41+00:00: Heartbeat by contracts-20260906.
+
+- 2026-09-06T22:10:24+00:00: Coordinator independently approved immutable candidate eea3d20 after
+  verifying exact one-commit ancestry on b7e9078, SSH signature, DCO, two-file test-only
+  scope/diff-check, RAII cleanup, relative-dot normalization, deepest-existing-prefix symlink
+  handling, uniqueness and acceptance evidence; no production, Cargo or schema changes.
+  Prepublication recheck confirms clean tree, repository target absent, exact origin/main b7e9078,
+  no existing remote feature ref or PR, valid signature/DCO, Gitleaks clean and repository policy
+  pass.
