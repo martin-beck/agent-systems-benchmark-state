@@ -8,7 +8,7 @@
     "AR-1001"
   ],
   "id": "AR-0310",
-  "next_action": "Await coordinator authorization to integrate independently reviewed green PR 23 exact head 3f9edc3305c13f3fb9b5555c6cdfa7c4e2bbd5ce.",
+  "next_action": "Monitor refreshed exact-head PR 23 CI for 2870b68d0ca0e0b1a665baa979ae8acc282e21d5; investigate failures before integration.",
   "observed_branch": "feature/provider-profile-contract",
   "observed_dirty": 0,
   "observed_head": "2870b68d0ca0e0b1a665baa979ae8acc282e21d5",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Normalize one provider configuration for safe translation across heterogeneous agent adapters.",
-  "task_revision": 127,
+  "task_revision": 128,
   "title": "Define common provider profiles",
-  "updated_at": "2026-09-06T23:58:20+00:00",
+  "updated_at": "2026-09-06T23:58:41+00:00",
   "worktree_key": "agent-systems-benchmark-provider-profile-contract"
 }
 ---
@@ -368,3 +368,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T23:58:20+00:00: Recorded command exit 0; command argv SHA-256
   c7e4fadfb0272698c704b2a4283cbb78481b7eacdaa1d51cfe51927185b58f21.
+
+- 2026-09-06T23:58:41+00:00: Rebased the six-commit AR-0310 series onto signed product main 941ea6f.
+  Five commits are patch-identical; the final commit differs only by additive conflict context
+  retaining both integrated aider documentation/module export and provider documentation/module
+  export. All rewritten commits have valid SSH signatures and exact Martin DCO. Fresh full
+  workspace/schema/privacy/quality/formal gates pass. Updated PR 23 from old reviewed head 3f9edc3
+  to new immutable 2870b68d0ca0e0b1a665baa979ae8acc282e21d5 using an explicit old-head lease. PR
+  reports exact base 941ea6f, open and mergeable; runs 34068344166 Rust, 34068344198 quality and
+  34068344158 formal are in progress.
