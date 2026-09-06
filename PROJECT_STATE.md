@@ -10,12 +10,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #17 | `feature/experiment-comparability@eb5e84933830` | `main` | UNKNOWN | - | protocol: add content-addressed experiment comparisons |
+| #17 | `feature/experiment-comparability@eb5e84933830` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | protocol: add content-addressed experiment comparisons |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34061016186 | `eb5e84933830` | pull_request | Repository quality | in_progress:- |
+| 34061016130 | `eb5e84933830` | pull_request | Rust verification | in_progress:- |
+| 34061016128 | `eb5e84933830` | pull_request | Formal assurance | queued:- |
 | 34058963865 | `9543a3297dd9` | push | Rust verification | completed:success |
 | 34058963859 | `9543a3297dd9` | push | Formal assurance | completed:success |
 | 34058963855 | `9543a3297dd9` | push | Repository quality | completed:success |
@@ -25,6 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34058370706 | `68f313fcb4fa` | push | Formal assurance | completed:success |
 | 34058370670 | `68f313fcb4fa` | push | Repository quality | completed:success |
 | 34058370668 | `68f313fcb4fa` | push | Rust verification | completed:success |
-| 34057789139 | `73d28a431c78` | pull_request | Repository quality | completed:success |
-| 34057788965 | `73d28a431c78` | pull_request | Rust verification | completed:success |
-| 34057788951 | `73d28a431c78` | pull_request | Formal assurance | completed:success |
