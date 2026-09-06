@@ -11,15 +11,15 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #1 | `feature/coordination-docs@02be24b76239` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Correct handoffctl run syntax |
-| #3 | `feature/extension-contracts@488d6ca1dd67` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS | Define extension protocol v1 contracts |
+| #3 | `feature/extension-contracts@488d6ca1dd67` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Define extension protocol v1 contracts |
 | #4 | `feature/replay-evaluation@1f31fc3c78d4` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Evaluate replay dependency candidates |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34045330958 | `488d6ca1dd67` | pull_request | Rust verification | in_progress:- |
-| 34045330884 | `488d6ca1dd67` | pull_request | Repository quality | in_progress:- |
+| 34045330958 | `488d6ca1dd67` | pull_request | Rust verification | completed:success |
+| 34045330884 | `488d6ca1dd67` | pull_request | Repository quality | completed:success |
 | 34045330594 | `1f31fc3c78d4` | pull_request | Rust verification | completed:success |
 | 34045330575 | `1f31fc3c78d4` | pull_request | Repository quality | completed:success |
 | 34045292428 | `02be24b76239` | pull_request | Rust verification | completed:success |
