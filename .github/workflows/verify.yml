@@ -1,0 +1,49 @@
+name: Coordination verification
+"on":
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  verify:
+    name: Strict state consistency
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d
+        with:
+          version: "0.12.8"
+          enable-cache: false
+      - name: Locked quality environment
+        run: uv sync --locked --only-group quality
+      - name: Formatting and typing
+        run: |
+          uv run ruff format --check tools tests
+          uv run ruff check --no-fix tools tests
+          uv run mypy tools/handoffctl.py tests
+      - name: Fault tests and coverage
+        run: |
+          uv run coverage run --branch -m unittest discover -s tests -p 'test_*.py'
+          uv run coverage report --fail-under=95
+      - name: Schema and generated state
+        run: |
+          uv run python tests/validate_schema.py
+          tools/handoffctl doctor
+          git diff --exit-code
+          test ! -e .runtime/config.json
+          test -z "$(git ls-files 'private-archive/**')"
+      - name: DCO certification
+        run: |
+          while IFS= read -r revision; do
+            expected=$(git show -s --format='Signed-off-by: %an <%ae>' "$revision")
+            git show -s --format=%B "$revision" | grep -Fx -- "$expected"
+          done < <(git rev-list HEAD)

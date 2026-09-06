@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/martin-beck/agent-systems-benchmark-state/schema/task-schema.json",
+  "title": "Agent Systems Benchmark coordination task",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "title",
+    "status",
+    "priority",
+    "summary",
+    "next_action",
+    "task_revision",
+    "updated_at",
+    "owner",
+    "claim_expires",
+    "worktree_key",
+    "branch",
+    "checkpoint_commit",
+    "plan",
+    "depends_on"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "id": {"type": "string", "pattern": "^AR-[0-9]{4}$"},
+    "title": {"type": "string", "minLength": 1, "maxLength": 120},
+    "status": {
+      "enum": [
+        "in_progress",
+        "open",
+        "blocked",
+        "planned",
+        "future",
+        "done",
+        "cancelled",
+        "superseded"
+      ]
+    },
+    "priority": {"enum": ["P0", "P1", "P2", "P3", "P4"]},
+    "summary": {"type": "string", "minLength": 1, "maxLength": 300},
+    "next_action": {"type": "string", "minLength": 1, "maxLength": 300},
+    "task_revision": {"type": "integer", "minimum": 1},
+    "updated_at": {"type": "string", "format": "date-time"},
+    "owner": {"type": "string", "maxLength": 80},
+    "claim_expires": {"type": "string", "maxLength": 40},
+    "worktree_key": {
+      "type": "string",
+      "pattern": "^(|agent-systems-benchmark(?:-[a-z0-9-]+)?)$"
+    },
+    "branch": {"type": "string", "maxLength": 160},
+    "checkpoint_commit": {"type": "string", "pattern": "^(|[0-9a-f]{40})$"},
+    "plan": {"type": "string", "pattern": "^(|\\.\\./plans/AR-[0-9]{4}\\.md)$"},
+    "depends_on": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^AR-[0-9]{4}$"}
+    },
+    "observed_branch": {"type": "string", "maxLength": 160},
+    "observed_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "observed_dirty": {"type": "integer", "minimum": 0}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"status": {"const": "in_progress"}}},
+      "then": {
+        "properties": {
+          "owner": {"minLength": 1},
+          "claim_expires": {"minLength": 20}
+        }
+      },
+      "else": {
+        "properties": {
+          "owner": {"maxLength": 0},
+          "claim_expires": {"maxLength": 0}
+        }
+      }
+    }
+  ]
+}

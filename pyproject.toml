@@ -1,0 +1,68 @@
+[project]
+name = "agent-systems-benchmark-state-quality"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+quality = [
+  "coverage==7.13.4",
+  "jsonschema[format]==4.25.1",
+  "lizard==1.24.0",
+  "mypy==2.3.1",
+  "pre-commit==4.6.2",
+  "radon==6.0.1",
+  "ruff==0.16.5",
+  "types-jsonschema==4.26.0.20260518",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = ["private-archive"]
+
+[tool.ruff.lint]
+select = [
+  "A", "ARG", "B", "C4", "C90", "DTZ", "E", "F", "I", "N", "PERF",
+  "PIE", "PTH", "RET", "RSE", "RUF", "S", "SIM", "UP",
+]
+ignore = []
+
+[tool.ruff.lint.mccabe]
+max-complexity = 9
+
+[tool.ruff.lint.pylint]
+max-args = 8
+max-branches = 10
+max-returns = 5
+max-statements = 40
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101"]
+"tools/handoffctl.py" = ["S603", "S607"]
+"tools/handoffctl" = ["S603", "S607"]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_unreachable = true
+show_error_codes = true
+
+[tool.coverage.run]
+branch = true
+source = ["tools"]
+
+[tool.coverage.report]
+fail_under = 95
+show_missing = true
+skip_covered = false
+exclude_also = [
+  "if __name__ == .__main__.:",
+  "raise SystemExit",
+]

@@ -1,0 +1,9 @@
+.runtime/
+private-archive/
+__pycache__/
+*.pyc
+.venv/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
