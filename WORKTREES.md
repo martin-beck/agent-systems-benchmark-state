@@ -12,8 +12,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 44, ahead 0 |
 | `agent-systems-benchmark-engineering-workloads` | `feature/engineering-workloads` | `68f313fcb4fa` | 1 | behind 4, ahead 0 |
 | changed files | - | - | - | `crates/asb-workloads/` |
-| `agent-systems-benchmark-experiment-comparability` | `feature/experiment-comparability` | `d051c5eeff23` | 4 | behind 0, ahead 1 |
-| changed files | - | - | - | `crates/asb-protocol/README.md`, `crates/asb-protocol/schema/v1/experiment-manifest.schema.json`, `crates/asb-protocol/src/experiment.rs`, `crates/asb-protocol/tests/schema_conformance.rs` |
+| `agent-systems-benchmark-experiment-comparability` | `feature/experiment-comparability` | `55ab75091093` | 0 | behind 0, ahead 2 |
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 52, ahead 0 |
 | `agent-systems-benchmark-formal-assurance` | `feature/formal-assurance` | `2a495a99a657` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 48, ahead 0 |
