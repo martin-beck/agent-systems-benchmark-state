@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Normalize one provider configuration for safe translation across heterogeneous agent adapters.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Define common provider profiles",
-  "updated_at": "2026-09-06T21:57:17+00:00",
+  "updated_at": "2026-09-06T21:57:19+00:00",
   "worktree_key": "agent-systems-benchmark-provider-profile-contract"
 }
 ---
@@ -155,3 +155,6 @@ Implementation has not started. Read the linked plan before claiming.
   byte via bytes([0]); Python and Rust now agree on
   3ef77e8fcc34900d8cece0e1bccf3bb3b23cb389669ca6eb857853be93612ae5. Signed DCO checkpoint range
   b3868b4..b8114d1 is clean; credential-source capability gap found in self-review is closed.
+
+- 2026-09-06T21:57:19+00:00: Recorded command exit 0; command argv SHA-256
+  cec080bc7ae8d562c638872d92e21033c67e7458cf7e5d1b2049d76172da7c6e.
