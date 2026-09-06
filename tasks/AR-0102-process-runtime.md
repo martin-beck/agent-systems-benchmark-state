@@ -7,7 +7,7 @@
     "AR-0101"
   ],
   "id": "AR-0102",
-  "next_action": "Implement crates/asb-runtime internals and real process-boundary tests without root Cargo/lock edits; await coordinator handoff after AR-0104 integration before workspace integration and full gates.",
+  "next_action": "Await coordinator Cargo handoff after AR-0104 integration, then add asb-runtime workspace member, resolve locked rustix dependency, compile and repair every real process-boundary test.",
   "observed_branch": "feature/process-runtime",
   "observed_dirty": 1,
   "observed_head": "3baa4f9d0a7448e5f2e24633c230a2111c9ead86",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run real client processes with bounded I/O, monotonic deadlines and process-tree ownership.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Implement process execution and cancellation",
-  "updated_at": "2026-09-06T16:46:46+00:00",
+  "updated_at": "2026-09-06T16:47:11+00:00",
   "worktree_key": "agent-systems-benchmark-process-runtime"
 }
 ---
@@ -66,3 +66,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T16:46:46+00:00: Recorded command exit 0; command argv SHA-256
   2e8a6287f3511e62a735079f6233fcda395e1bd5b7c8ea04ce1da156ad4bdd1c.
+
+- 2026-09-06T16:47:11+00:00: Crate-local asb-runtime implementation, manifest, README, unit and real
+  Linux process-boundary integration tests are present and rustfmt-clean; root Cargo.toml/Cargo.lock
+  remain untouched under the serialization fence. Tests cover startup failure, simultaneous blocked
+  stdout/stderr draining with capped retention, monotonic timeout, double/terminal cancellation,
+  graceful grandchild cleanup, successful-leader background-child cleanup, explicit WNOWAIT PID
+  reuse fencing, and zero/excess limits. Two attempted wrapped apply_patch stdin transports failed
+  with no product effect because this apply_patch requires an argument and handoffctl does not
+  forward stdin; subsequent patches used apply_patch as the wrapped mutation with argument transport
+  and succeeded.
