@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support immediate, fixed-latency, original-paced and seeded synthetic scenarios.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Implement pacing and replay overhead assessment",
-  "updated_at": "2026-09-06T19:38:36+00:00",
+  "updated_at": "2026-09-06T19:41:49+00:00",
   "worktree_key": "agent-systems-benchmark-replay-pacing"
 }
 ---
@@ -64,3 +64,6 @@ a fresh reconciliation.
   transport timeout; production socket integration remains next.
 
 - 2026-09-06T19:38:36+00:00: Heartbeat by replay-20260906.
+
+- 2026-09-06T19:41:49+00:00: Recorded command exit 0; command argv SHA-256
+  9492db663bdf97b2fe62fad5a42ddbbe1f753fcb351305115e4b4781a212df4e.
