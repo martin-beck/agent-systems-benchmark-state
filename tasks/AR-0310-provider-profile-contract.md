@@ -11,16 +11,16 @@
   "next_action": "Await AR-0401 fence transfer, then wire provider module, schemas, fixtures, adapter interface, and full gates.",
   "observed_branch": "feature/provider-profile-contract",
   "observed_dirty": 0,
-  "observed_head": "ef4d3d818054984d81e25ff08cb05413aaaaefb5",
+  "observed_head": "ff2aaa913545763acd036e0f040e13377f8636b9",
   "owner": "quality-20260906",
   "plan": "../plans/AR-0310.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Normalize one provider configuration for safe translation across heterogeneous agent adapters.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Define common provider profiles",
-  "updated_at": "2026-09-06T23:17:33+00:00",
+  "updated_at": "2026-09-06T23:17:43+00:00",
   "worktree_key": "agent-systems-benchmark-provider-profile-contract"
 }
 ---
