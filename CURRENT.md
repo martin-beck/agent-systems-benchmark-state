@@ -11,6 +11,12 @@ Never edit this file directly.
 | P1 | [AR-0301](tasks/AR-0301-agent-opencode.md): Implement OpenCode client adapter | Run pinned OpenCode through its structured supported interfaces. | Create focused signed+DCO candidate, run commit-policy and exact-tree checks, publish PR, then obtain immutable independent review and exact-head CI before integration. | root-coordination-20260906 |
 | P1 | [AR-0504](tasks/AR-0504-replay-pacing.md): Implement pacing and replay overhead assessment | Support immediate, fixed-latency, original-paced and seeded synthetic scenarios. | Integrate paced delivery with the strict socket reservation boundary, expand deterministic negative/concurrency evidence, then run exact-tree full gates. | replay-20260906 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1001](tasks/AR-1001-experiment-comparability.md): Define experiment identity and comparability | Make every comparison content-addressed and explicit about agent, model, workload and platform confounders. | Implement the experiment identity model and comparison compatibility rules. | - |
+
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -29,7 +35,6 @@ Never edit this file directly.
 | P1 | [AR-0902](tasks/AR-0902-fault-assurance.md): Add fuzz mutation and lifecycle fault campaigns | Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection. | Build bounded campaigns and counterexample retention. | - |
 | P1 | [AR-0904](tasks/AR-0904-contract-consistency.md): Machine-check protocol and artifact consistency | Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree. | Define canonical sources and generated/artifact-diff gates before extension implementations fan out. | - |
 | P1 | [AR-0905](tasks/AR-0905-recovery-models.md): Model execution recovery and worker fencing | Apply bounded formal models to run lifecycle, leases, recovery, replay cursors and uncertain external effects. | Translate Agent Relay's TLA+/Alloy/executable-model pattern to ASB run and replay domains. | - |
-| P1 | [AR-1001](tasks/AR-1001-experiment-comparability.md): Define experiment identity and comparability | Make every comparison content-addressed and explicit about agent, model, workload and platform confounders. | Implement the experiment identity model and comparison compatibility rules. | - |
 | P1 | [AR-1002](tasks/AR-1002-verifier-integrity.md): Protect verifiers and support offline rescoring | Separate immutable graders from agent work and version scoring independently of execution. | Design the immutable observation and score-revision contract using Inspect and Harbor concepts. | - |
 | P1 | [AR-1003](tasks/AR-1003-execution-budgets.md): Enforce cost token and action budgets | Bound and report wall time, actions, tokens and monetary cost without treating unavailable telemetry as zero. | Specify budget capabilities and normalize provider usage with explicit uncertainty. | - |
 | P1 | [AR-1004](tasks/AR-1004-reliability-fairness.md): Measure reliability and mixed-workload fairness | Report repeated-attempt reliability and prevent aggregate results from hiding starvation or hard strata. | Add trial/epoch aggregation following tau-bench and Inspect concepts. | - |
