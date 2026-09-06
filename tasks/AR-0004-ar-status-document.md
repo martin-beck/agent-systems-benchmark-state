@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-status-document",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-06T18:50:38+00:00",
+  "claim_expires": "2026-09-06T18:52:28+00:00",
   "depends_on": [
     "AR-0002"
   ],
@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Render every AR, status, and dependency as an accessible visual state document.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Generate the visual AR status document",
-  "updated_at": "2026-09-06T17:20:38+00:00",
+  "updated_at": "2026-09-06T17:22:28+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-status-document"
 }
 ---
@@ -35,3 +35,5 @@ easy-to-scan document in the public state repository.
   0ddad11b9596a2d13adf51291c31aacb0aa99f71997f8ca25382a16ba2cdf0a3.
 
 - 2026-09-06T17:20:38+00:00: Heartbeat by quality-20260906.
+
+- 2026-09-06T17:22:28+00:00: Heartbeat by quality-20260906.
