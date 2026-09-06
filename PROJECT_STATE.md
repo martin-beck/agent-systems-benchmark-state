@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #7 | `feature/process-runtime@836380c14ab1` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED: | feat: add bounded process runtime |
+| #7 | `feature/process-runtime@836380c14ab1` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat: add bounded process runtime |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34048857678 | `836380c14ab1` | pull_request | Repository quality | queued:- |
-| 34048857675 | `836380c14ab1` | pull_request | Rust verification | queued:- |
+| 34048857678 | `836380c14ab1` | pull_request | Repository quality | in_progress:- |
+| 34048857675 | `836380c14ab1` | pull_request | Rust verification | in_progress:- |
 | 34048075282 | `5c9b79b2a25e` | push | Repository quality | completed:success |
 | 34048075266 | `5c9b79b2a25e` | push | Rust verification | completed:success |
 | 34047974952 | `6277512c9fc3` | pull_request | Rust verification | completed:success |
