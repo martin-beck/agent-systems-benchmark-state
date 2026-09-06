@@ -9,7 +9,7 @@
   "id": "AR-0104",
   "next_action": "Implement the atomic store and versioned run journal in the verified product worktree.",
   "observed_branch": "feature/durable-results",
-  "observed_dirty": 3,
+  "observed_dirty": 5,
   "observed_head": "9db4b6d74d4442354f8bf29a46f3ab38f38f36db",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0104.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist manifests, event streams, artifact hashes and recoverable execution intentions.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Implement durable run storage and recovery",
-  "updated_at": "2026-09-06T16:54:40+00:00",
+  "updated_at": "2026-09-06T16:55:00+00:00",
   "worktree_key": "agent-systems-benchmark-durable-results"
 }
 ---
