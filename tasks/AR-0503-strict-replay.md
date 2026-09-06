@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Serve local recorded responses while real agent and tools execute.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Implement strict provider response replay",
-  "updated_at": "2026-09-06T18:51:34+00:00",
+  "updated_at": "2026-09-06T18:51:36+00:00",
   "worktree_key": "agent-systems-benchmark-strict-replay"
 }
 ---
@@ -135,3 +135,6 @@ Dependencies AR-0102 and AR-0502 are done. Read the linked plan and claim after 
   relies on that loop: working-tree and commit Gitleaks passed, and a corrected zero-context diff
   scan is next. Product main concurrently advanced to signed statistical merge c9e3653 with only
   Cargo workspace/lock and asb-analysis changes.
+
+- 2026-09-06T18:51:36+00:00: Recorded command exit 0; command argv SHA-256
+  b79343041ee524c42cda59d5b630c48ef4bc155a7f3def07f48c20c4020fccdd.
