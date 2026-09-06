@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compare literature and record/replay implementations using identical synthetic conformance cases.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Evaluate replay literature and reusable tools",
-  "updated_at": "2026-09-06T16:01:25+00:00",
+  "updated_at": "2026-09-06T16:02:03+00:00",
   "worktree_key": "agent-systems-benchmark-replay-evaluation"
 }
 ---
@@ -77,4 +77,7 @@ Implementation has not started. Read the linked plan before claiming.
   5598f6c391404e1f7184f8e2edd055277c039787585fc66e16aec3c837b79626.
 
 - 2026-09-06T16:01:25+00:00: Recorded command exit 1; command SHA-256
+  5598f6c391404e1f7184f8e2edd055277c039787585fc66e16aec3c837b79626.
+
+- 2026-09-06T16:02:03+00:00: Recorded command exit 0; command SHA-256
   5598f6c391404e1f7184f8e2edd055277c039787585fc66e16aec3c837b79626.
