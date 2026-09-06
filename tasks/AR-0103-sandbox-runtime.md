@@ -10,16 +10,16 @@
   "next_action": "Await exact-head CI and coordinator independent review of follow-up PR #15 at 28063ae; do not merge or release.",
   "observed_branch": "feature/sandbox-runtime",
   "observed_dirty": 0,
-  "observed_head": "28063ae8e7b3dbd9c46a8b071259ed1d8d0a99e5",
+  "observed_head": "db8af71e7b7d427fd1d051379e8b7e794150a34c",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0103.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 304,
+  "task_revision": 305,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T20:01:56+00:00",
+  "updated_at": "2026-09-06T20:02:11+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
