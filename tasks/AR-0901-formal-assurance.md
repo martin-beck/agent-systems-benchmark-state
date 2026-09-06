@@ -13,16 +13,16 @@
   "next_action": "Complete production-trace linkage and formal CI integration, rerun all five Kani proofs/Loom/state mutants/pin checks, then full repository gates before a focused signed candidate.",
   "observed_branch": "feature/formal-assurance",
   "observed_dirty": 2,
-  "observed_head": "162110386605a83f963758a07d83e77e2566528a",
+  "observed_head": "4d716973f483f0d6387798496302180a246140b6",
   "owner": "quality-20260906",
   "plan": "../plans/AR-0901.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use bounded proofs and model tests for safety-critical domain logic.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Prove critical state and concurrency invariants",
-  "updated_at": "2026-09-06T19:46:44+00:00",
+  "updated_at": "2026-09-06T19:47:03+00:00",
   "worktree_key": "agent-systems-benchmark-formal-assurance"
 }
 ---
