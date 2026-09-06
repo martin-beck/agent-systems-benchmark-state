@@ -8,7 +8,7 @@
     "AR-0102"
   ],
   "id": "AR-0503",
-  "next_action": "Apply strict replay service patch through a stable hashed patch artifact, then add focused provider/session/TCP negative tests; root Cargo files remain untouched.",
+  "next_action": "Independently review five-path diff, run complete exact-tree workspace/quality/privacy/supply gates, then create a focused signed+DCO candidate; root Cargo files remain untouched.",
   "observed_branch": "feature/strict-replay",
   "observed_dirty": 5,
   "observed_head": "265d811b765e2300510445bfb7abf59ae5a0604f",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Serve local recorded responses while real agent and tools execute.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Implement strict provider response replay",
-  "updated_at": "2026-09-06T18:48:31+00:00",
+  "updated_at": "2026-09-06T18:48:50+00:00",
   "worktree_key": "agent-systems-benchmark-strict-replay"
 }
 ---
@@ -98,3 +98,19 @@ Dependencies AR-0102 and AR-0502 are done. Read the linked plan and claim after 
 
 - 2026-09-06T18:48:31+00:00: Recorded command exit 0; command argv SHA-256
   a4749c4579d2d353d630308def11e5b57f649b3b1b13cce3abf20d148b9a0481.
+
+- 2026-09-06T18:48:50+00:00: Implemented strict inbound-only replay in five asb-replay paths with no
+  Cargo.toml/Cargo.lock changes. Stable patch artifacts and SHA-256: service ca05c6df..., fix/docs
+  23cb6bbc..., tests/docs c794980d..., syntax 1abeebce..., type 18d1260b..., assertions v2
+  1fae6e09..., hardening 265d2bc8..., hardening tests 49921f28..., integrity test v2 871e4bbb...,
+  never-loop 572be927..., contract negatives 1924517d..., framing hardening 6b63a7b9.... Named
+  failures were heredoc quoting, README context drift with partial code application, two compile
+  type/borrow issues, two assertion-only mismatches, stale revision 14/15, and a Clippy never-loop
+  test construct; each was investigated and repaired. Current focused 14-test strict suite, all
+  replay tests, fmt, and Clippy pass. Coverage: asb-replay 97.15% lines and service.rs 96.73%.
+  Negative evidence includes authenticated cassette/metadata mismatch, duplicate JSON, malformed and
+  chunked HTTP, noncanonical length, header controls/count/bytes, SSE event-type injection,
+  unknown/exhausted/wrong dialect, mismatch non-advancement, and independent parallel
+  identical-session cursors. Limits remain explicit: syntax-level dialect behavior only, immediate
+  semantic SSE rather than transport/pacing fidelity, loopback accept does not prove surrounding
+  namespace isolation, no real client/native support claim.
