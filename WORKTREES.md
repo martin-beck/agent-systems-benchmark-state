@@ -6,8 +6,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | --- | --- | --- | ---: | --- |
 | `agent-systems-benchmark` | `main` | `b7e9078d53a4` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-agent-opencode` | `feature/agent-opencode` | `dfb0d548bf75` | 0 | behind 4, ahead 0 |
-| `agent-systems-benchmark-agent-opendesk` | `feature/agent-opendesk` | `b7e9078d53a4` | 3 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-agents/src/lib.rs`, `crates/asb-agents/src/opendesk.rs`, `crates/asb-agents/tests/real_opendesk.rs` |
+| `agent-systems-benchmark-agent-opendesk` | `feature/agent-opendesk` | `b7e9078d53a4` | 4 | behind 0, ahead 0 |
+| changed files | - | - | - | `README.md`, `crates/asb-agents/src/lib.rs`, `crates/asb-agents/src/opendesk.rs`, `crates/asb-agents/tests/real_opendesk.rs` |
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `b0b2ae1a9ad5` | 0 | behind 3, ahead 1 |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 58, ahead 0 |
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 47, ahead 0 |
