@@ -12,8 +12,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | changed files | - | - | - | `crates/asb-runtime/README.md`, `crates/asb-runtime/src/scheduler.rs`, `crates/asb-runtime/tests/scheduler_boundary.rs` |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 62, ahead 0 |
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 51, ahead 0 |
-| `agent-systems-benchmark-engineering-workloads` | `feature/engineering-workloads` | `64d6b56276e4` | 1 | behind 0, ahead 4 |
-| changed files | - | - | - | `crates/asb-workloads/fixtures/v1/feature-addition/reference.patch` |
+| `agent-systems-benchmark-engineering-workloads` | `feature/engineering-workloads` | `41ffc6eb8f1a` | 0 | behind 0, ahead 5 |
 | `agent-systems-benchmark-experiment-comparability` | `feature/experiment-comparability` | `eb5e84933830` | 0 | behind 5, ahead 0 |
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 59, ahead 0 |
 | `agent-systems-benchmark-formal-assurance` | `feature/formal-assurance` | `2a495a99a657` | 0 | behind 17, ahead 0 |

@@ -10,17 +10,17 @@
   "id": "AR-0401",
   "next_action": "Await independent immutable review of clean signed grader-repair head 79cb942; publish only after approval and exact-base recheck, then require x86_64/aarch64 exact-head CI.",
   "observed_branch": "feature/engineering-workloads",
-  "observed_dirty": 1,
-  "observed_head": "64d6b56276e4a372218312a0b45648550c47d2d0",
+  "observed_dirty": 0,
+  "observed_head": "41ffc6eb8f1ab8e3d5beb69ff233634a870007ed",
   "owner": "replay-20260906",
   "plan": "../plans/AR-0401.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API.",
-  "task_revision": 155,
+  "task_revision": 156,
   "title": "Implement original engineering workloads",
-  "updated_at": "2026-09-06T22:54:30+00:00",
+  "updated_at": "2026-09-06T22:54:46+00:00",
   "worktree_key": "agent-systems-benchmark-engineering-workloads"
 }
 ---
