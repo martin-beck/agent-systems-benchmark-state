@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist manifests, event streams, artifact hashes and recoverable execution intentions.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Implement durable run storage and recovery",
-  "updated_at": "2026-09-06T16:38:10+00:00",
+  "updated_at": "2026-09-06T16:38:12+00:00",
   "worktree_key": "agent-systems-benchmark-durable-results"
 }
 ---
@@ -54,3 +54,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-06T16:37:05+00:00: Removed only the verified-clean mistaken state worktree and its fully
   merged accidental branch, then created the declared product worktree from product main 3baa4f9.
   Verified public product origin, exact head, branch, and clean state before implementation.
+
+- 2026-09-06T16:38:12+00:00: Recorded command exit 0; command argv SHA-256
+  7ff14d892500aad91b8fe42b6ba662a3d27cf0b7a03d2979c86b2934831e6c25.
