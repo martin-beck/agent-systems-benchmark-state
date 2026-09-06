@@ -9,7 +9,7 @@
   "id": "AR-0103",
   "next_action": "Await coordinator independent immutable-head review of PR #10 exact a2ebac54; all exact-head hosted checks are green. Do not merge or release.",
   "observed_branch": "feature/sandbox-runtime",
-  "observed_dirty": 3,
+  "observed_dirty": 4,
   "observed_head": "a2ebac54d8ea8d2337b1a73ac3ac4fccfbd4c581",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0103.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 153,
+  "task_revision": 154,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T18:57:52+00:00",
+  "updated_at": "2026-09-06T18:58:01+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
