@@ -18,7 +18,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 51, ahead 0 |
 | `agent-systems-benchmark-portable-metrics` | `feature/portable-metrics` | `a0f67bea1ffe` | 0 | behind 25, ahead 0 |
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `51daeb8608e5` | 0 | behind 44, ahead 0 |
-| `agent-systems-benchmark-provider-profile-contract` | `feature/provider-profile-contract` | `97f3c26c20b3` | 0 | behind 0, ahead 4 |
+| `agent-systems-benchmark-provider-profile-contract` | `feature/provider-profile-contract` | `97f3c26c20b3` | 1 | behind 0, ahead 4 |
+| changed files | - | - | - | `crates/asb-protocol/src/provider.rs` |
 | `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `748537c25e3a` | 0 | behind 61, ahead 0 |
 | `agent-systems-benchmark-replay-cassettes` | `feature/replay-cassettes` | `cd88f5703fb3` | 0 | behind 40, ahead 0 |
 | `agent-systems-benchmark-replay-evaluation` | `feature/replay-evaluation` | `3d04a2d5a3b3` | 0 | behind 53, ahead 0 |
