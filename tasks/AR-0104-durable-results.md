@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist manifests, event streams, artifact hashes and recoverable execution intentions.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Implement durable run storage and recovery",
-  "updated_at": "2026-09-06T16:55:13+00:00",
+  "updated_at": "2026-09-06T16:55:48+00:00",
   "worktree_key": "agent-systems-benchmark-durable-results"
 }
 ---
@@ -132,3 +132,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T16:55:13+00:00: Recorded command exit 0; command argv SHA-256
   49e94174a97292dfcb0f3b6fce32269120ceba698d4927efe9ee813035defc16.
+
+- 2026-09-06T16:55:48+00:00: Recorded command exit 0; command argv SHA-256
+  832dc3602e8a8358a6b048fd8110076427537257185a839154db12ba97e0ed5c.
