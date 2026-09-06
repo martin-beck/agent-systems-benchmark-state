@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make every comparison content-addressed and explicit about agent, model, workload and platform confounders.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Define experiment identity and comparability",
-  "updated_at": "2026-09-06T20:21:21+00:00",
+  "updated_at": "2026-09-06T20:21:23+00:00",
   "worktree_key": "agent-systems-benchmark-experiment-comparability"
 }
 ---
@@ -81,3 +81,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T20:20:56+00:00: Recorded command exit 0; command argv SHA-256
   acae82902d4c8e17584017569d4c40fc10205ffd8eb2b80c4f71355c170258c8.
+
+- 2026-09-06T20:21:23+00:00: Recorded command exit 0; command argv SHA-256
+  133b32255181471858ea96a1689aef776e0d7bb604a303063023e10717c962a3.
