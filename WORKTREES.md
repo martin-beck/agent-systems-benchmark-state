@@ -8,8 +8,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 6, ahead 0 |
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `f6cd02eef6b7` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 3, ahead 0 |
-| `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `09bc867fad89` | 9 | behind 0, ahead 1 |
-| changed files | - | - | - | `docs/PLATFORMS.md`, `platforms/v1/agents.json`, `platforms/v1/platforms.json`, `tests/platforms/fixtures/duplicate-family.json`, `tests/platforms/fixtures/native-from-container.json`, `tests/platforms/fixtures/tag-index-repository-mismatch.json`, `tests/platforms/fixtures/user-space-native-without-evidence.json`, `tests/platforms/test_validate_manifests.py`, `tools/platforms/validate_manifests.py` |
+| `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `3baa4f9d0a74` | 1 | behind 2, ahead 0 |
 | changed files | - | - | - | `crates/asb-runtime/` |
 | `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `748537c25e3a` | 0 | behind 9, ahead 0 |

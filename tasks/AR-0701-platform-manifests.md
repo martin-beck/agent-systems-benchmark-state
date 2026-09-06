@@ -9,17 +9,17 @@
   "id": "AR-0701",
   "next_action": "Await independent immutable-head review and coordinator integration of green product PR #5 at dff27a9acb4fd4d00c1a823f5ac9770e11902020; then run post-merge exact-tree and main-CI verification before release.",
   "observed_branch": "feature/platform-manifests",
-  "observed_dirty": 9,
-  "observed_head": "09bc867fad8915e5ce2f5b22e73e2a5921e10af1",
+  "observed_dirty": 0,
+  "observed_head": "a800ca3b9169d9a04912f78f98a6bd78316b6729",
   "owner": "quality-20260906",
   "plan": "../plans/AR-0701.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define Ubuntu, Debian, Fedora, enterprise, openSUSE, Arch, Alpine and openEuler target manifests.",
-  "task_revision": 112,
+  "task_revision": 113,
   "title": "Pin distribution and architecture support matrix",
-  "updated_at": "2026-09-06T16:59:51+00:00",
+  "updated_at": "2026-09-06T16:59:55+00:00",
   "worktree_key": "agent-systems-benchmark-platform-manifests"
 }
 ---
