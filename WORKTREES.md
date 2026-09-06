@@ -8,7 +8,6 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `71618e18f9a3` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `c9568e8603e3` | 3 | behind 0, ahead 0 |
 | changed files | - | - | - | `Cargo.lock`, `Cargo.toml`, `crates/asb-protocol/` |
-| `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `953db4c7a62f` | 3 | behind 0, ahead 1 |
-| changed files | - | - | - | `.gitignore`, `deny.toml`, `docs/QUALITY_GATES.md` |
+| `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `d09a62ee96bf` | 0 | behind 0, ahead 2 |
 | `agent-systems-benchmark-replay-evaluation` | `feature/replay-evaluation` | `c9568e8603e3` | 1 | behind 0, ahead 0 |
 | changed files | - | - | - | `tools/` |
