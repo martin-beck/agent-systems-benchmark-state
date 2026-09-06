@@ -7,7 +7,7 @@
     "AR-0001"
   ],
   "id": "AR-0101",
-  "next_action": "Await independent delta review and coordinator integration of exact green head 488d6ca1; then run post-merge verification.",
+  "next_action": "Monitor PR #3 exact-head quality and native x86_64/aarch64 CI for immutable 9e90c6a6; await independent delta review and coordinator integration, then post-merge verify.",
   "observed_branch": "feature/extension-contracts",
   "observed_dirty": 0,
   "observed_head": "9e90c6a62861f2222864865c9fa3e023cff52bdf",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Specify typed agent, workload, collector, runtime and result contracts before parallel implementations.",
-  "task_revision": 120,
+  "task_revision": 121,
   "title": "Freeze versioned extension and result contracts",
-  "updated_at": "2026-09-06T16:29:30+00:00",
+  "updated_at": "2026-09-06T16:30:06+00:00",
   "worktree_key": "agent-systems-benchmark-extension-contracts"
 }
 ---
@@ -385,3 +385,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T16:29:30+00:00: Recorded command exit 0; command argv SHA-256
   44975c91bedfb8fa77b24fd40d008d452db788692d2659f7f4822c2fa90428b9.
+
+- 2026-09-06T16:30:06+00:00: Rebased conflict-free onto current origin/main signed merge 38ceb335,
+  producing SSH-signed exact-DCO commits f29e4c63 and 9e90c6a6. Full exact-tree suite passed clean:
+  fmt, clippy -D warnings, 32 tests plus doc tests, rustdoc, release build, cargo-deny/audit, 96.22%
+  workspace and 96.15% asb-protocol line coverage, actionlint, zizmor, Gitleaks,
+  repository/signature/DCO policy, and all positive/negative fixtures. Tree clean and scope remains
+  Cargo workspace/lockfile plus crates/asb-protocol. Force-with-lease from recorded remote 488d6ca1
+  to 9e90c6a6 succeeded; PR #3 now exactly targets base 38ceb335 and fresh runs
+  34045610457/34045610466 are in progress.
