@@ -7,7 +7,7 @@
     "AR-0101"
   ],
   "id": "AR-0102",
-  "next_action": "Claim with the designated runtime worker, then implement lifecycle transitions with explicit process handles.",
+  "next_action": "Implement crates/asb-runtime internals and real process-boundary tests without root Cargo/lock edits; await coordinator handoff after AR-0104 integration before workspace integration and full gates.",
   "observed_branch": "feature/process-runtime",
   "observed_dirty": 0,
   "observed_head": "3baa4f9d0a7448e5f2e24633c230a2111c9ead86",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run real client processes with bounded I/O, monotonic deadlines and process-tree ownership.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Implement process execution and cancellation",
-  "updated_at": "2026-09-06T16:35:56+00:00",
+  "updated_at": "2026-09-06T16:37:56+00:00",
   "worktree_key": "agent-systems-benchmark-process-runtime"
 }
 ---
@@ -36,3 +36,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T16:35:56+00:00: Recorded command exit 0; command argv SHA-256
   1aa2c37a06c3a89b63124db630a7538864c98d3ac94702b21ae5255b0b4cdf25.
+
+- 2026-09-06T16:37:56+00:00: Coordinator serialized the shared Cargo workspace and lockfile to
+  AR-0104. AR-0102 will restrict current product edits to crates/asb-runtime/**, use its declared
+  branch/worktree, and will not add a temporary nested workspace or duplicate integration
+  workaround. Planned safe OS boundary uses pinned rustix process support, waitid WNOWAIT identity
+  fencing, process-group termination and bounded continuously drained stdout/stderr.
