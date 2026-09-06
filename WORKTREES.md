@@ -10,8 +10,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 13, ahead 0 |
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 21, ahead 0 |
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 17, ahead 0 |
-| `agent-systems-benchmark-portable-metrics` | `feature/portable-metrics` | `4f33a142ea11` | 2 | behind 0, ahead 8 |
-| changed files | - | - | - | `crates/asb-metrics/src/lib.rs`, `crates/asb-metrics/tests/native_linux.rs` |
+| `agent-systems-benchmark-portable-metrics` | `feature/portable-metrics` | `a0f67bea1ffe` | 0 | behind 0, ahead 9 |
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `51daeb8608e5` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `748537c25e3a` | 0 | behind 27, ahead 0 |
 | `agent-systems-benchmark-replay-cassettes` | `feature/replay-cassettes` | `cd88f5703fb3` | 0 | behind 6, ahead 0 |
