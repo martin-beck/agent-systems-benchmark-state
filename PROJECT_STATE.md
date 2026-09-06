@@ -2,16 +2,16 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `162110386605a83f963758a07d83e77e2566528a`
-- Local origin/main: `162110386605a83f963758a07d83e77e2566528a`
-- Primary worktree head: `162110386605a83f963758a07d83e77e2566528a`
+- Product remote main: `4d716973f483f0d6387798496302180a246140b6`
+- Local origin/main: `4d716973f483f0d6387798496302180a246140b6`
+- Primary worktree head: `4d716973f483f0d6387798496302180a246140b6`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #10 | `feature/sandbox-runtime@d8601c22982f` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | runtime: isolate untrusted processes |
-| #13 | `feature/agent-opencode@6545c9dd4f2f` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | agents: add pinned OpenCode adapter |
+| #10 | `feature/sandbox-runtime@d8601c22982f` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | runtime: isolate untrusted processes |
+| #13 | `feature/agent-opencode@6545c9dd4f2f` | `main` | UNKNOWN | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | agents: add pinned OpenCode adapter |
 
 ## Recent workflows
 
