@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API.",
-  "task_revision": 161,
+  "task_revision": 162,
   "title": "Implement original engineering workloads",
-  "updated_at": "2026-09-06T22:59:36+00:00",
+  "updated_at": "2026-09-06T22:59:58+00:00",
   "worktree_key": "agent-systems-benchmark-engineering-workloads"
 }
 ---
@@ -559,3 +559,10 @@ Implementation has not started. Read the linked plan before claiming.
   published.
 
 - 2026-09-06T22:59:36+00:00: Heartbeat by replay-20260906.
+
+- 2026-09-06T22:59:58+00:00: Correction to the immediately preceding evidence note: the rebase
+  range-diff contains four exact-equal entries for the four pre-rebase commits (3bef7cf through
+  d7642fc mapped to cd12b6e through 64d6b56). The fifth current commit 41ffc6e was created after the
+  rebase to complete the Go reference hunk, so it has no pre-rebase counterpart and was not an
+  exact-equal range-diff entry. The candidate head/tree, signatures, DCO, scope, gate results and
+  retained Cargo fence reported there remain unchanged.
