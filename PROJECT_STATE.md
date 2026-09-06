@@ -2,16 +2,16 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `ac4a2359964910e93a1fd034fd16689a563f973b`
-- Local origin/main: `ac4a2359964910e93a1fd034fd16689a563f973b`
+- Product remote main: `68f313fcb4fa5c7293639fc90ec376fa7ccb622f`
+- Local origin/main: `68f313fcb4fa5c7293639fc90ec376fa7ccb622f`
 - Primary worktree head: `68f313fcb4fa5c7293639fc90ec376fa7ccb622f`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #13 | `feature/agent-opencode@5037401b1571` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | agents: add pinned OpenCode adapter |
-| #16 | `feature/replay-pacing@73d28a431c78` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | replay: add bounded response pacing |
+| #13 | `feature/agent-opencode@5037401b1571` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | agents: add pinned OpenCode adapter |
+| #16 | `feature/replay-pacing@73d28a431c78` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | replay: add bounded response pacing |
 
 ## Recent workflows
 
