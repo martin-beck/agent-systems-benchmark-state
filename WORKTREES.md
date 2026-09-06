@@ -6,8 +6,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | --- | --- | --- | ---: | --- |
 | `agent-systems-benchmark` | `main` | `4d716973f483` | 1 | behind 0, ahead 0 |
 | changed files | - | - | - | `outside-4146193` |
-| `agent-systems-benchmark-agent-opencode` | `feature/agent-opencode` | `6545c9dd4f2f` | 1 | behind 7, ahead 1 |
-| changed files | - | - | - | `crates/asb-agents/src/opencode.rs` |
+| `agent-systems-benchmark-agent-opencode` | `feature/agent-opencode` | `fa53386a97ab` | 0 | behind 7, ahead 2 |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 43, ahead 0 |
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 32, ahead 0 |
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 40, ahead 0 |
