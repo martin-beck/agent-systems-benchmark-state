@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #10 | `feature/sandbox-runtime@832e72c2293c` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE | runtime: isolate untrusted processes |
+| #10 | `feature/sandbox-runtime@7e764d8e2b33` | `main` | UNKNOWN | - | runtime: isolate untrusted processes |
 
 ## Recent workflows
 
