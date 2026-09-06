@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support immediate, fixed-latency, original-paced and seeded synthetic scenarios.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Implement pacing and replay overhead assessment",
-  "updated_at": "2026-09-06T20:20:29+00:00",
+  "updated_at": "2026-09-06T20:20:32+00:00",
   "worktree_key": "agent-systems-benchmark-replay-pacing"
 }
 ---
@@ -226,3 +226,6 @@ a fresh reconciliation.
   means local-kernel acceptance, not peer consumption; generic Write callers must provide their own
   interruptible transport deadline; headroom verdict only assesses supplied independent bounded
   observations and does not itself collect them.
+
+- 2026-09-06T20:20:32+00:00: Recorded command exit 0; command argv SHA-256
+  991c7e2e713cbc9541fe87d5c0874664c3797dd6add5625a9c1aa79730fb7355.
