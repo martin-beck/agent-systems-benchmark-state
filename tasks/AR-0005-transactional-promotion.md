@@ -2,22 +2,22 @@
 {
   "branch": "feature/transactional-promotion",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-06T22:49:09+00:00",
   "depends_on": [
     "AR-0002",
     "AR-0004"
   ],
   "id": "AR-0005",
   "next_action": "Implement an atomic dependency-aware promote command and concurrency/failure tests.",
-  "owner": "",
+  "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0005.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make planned-to-open promotion a transactional handoffctl operation.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Add transactional AR promotion",
-  "updated_at": "2026-09-06T20:49:01+00:00",
+  "updated_at": "2026-09-06T20:49:09+00:00",
   "worktree_key": "agent-systems-benchmark-state-promotion"
 }
 ---
@@ -33,3 +33,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T20:49:01+00:00: Promoted after independently verifying AR-0002 and AR-0004 done;
   isolated state-repository paths are available.
+
+- 2026-09-06T20:49:09+00:00: Claimed by root-coordination-20260906.
