@@ -10,6 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #19 | `feature/agent-opendesk@8eb99d3c7235` | `main` | CLEAN | - | agents: add pinned OpenDesk adapter |
 
 ## Recent workflows
 
