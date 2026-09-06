@@ -8,7 +8,7 @@
     "AR-0203"
   ],
   "id": "AR-1001",
-  "next_action": "Await coordinator immutable local review of signed candidate d051c5e; repair findings before any publication. Cargo workspace/lock and experiment-schema fence remains held by AR-1001.",
+  "next_action": "Await independent immutable review of repaired signed head eb5e849; publish only after coordinator approval. Cargo workspace/lock and experiment-schema fence remains held by AR-1001.",
   "observed_branch": "feature/experiment-comparability",
   "observed_dirty": 0,
   "observed_head": "eb5e849338302d9c446093085674df4ef44ae8b4",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make every comparison content-addressed and explicit about agent, model, workload and platform confounders.",
-  "task_revision": 124,
+  "task_revision": 125,
   "title": "Define experiment identity and comparability",
-  "updated_at": "2026-09-06T21:22:58+00:00",
+  "updated_at": "2026-09-06T21:23:20+00:00",
   "worktree_key": "agent-systems-benchmark-experiment-comparability"
 }
 ---
@@ -362,3 +362,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T21:22:58+00:00: Recorded command exit 0; command argv SHA-256
   cd0718b555655ec0467ce83493445c1a86a72ebc565ccb85d74d7175c1d73422.
+
+- 2026-09-06T21:23:20+00:00: Repaired schema/runtime parity at signed+DCO head
+  eb5e849338302d9c446093085674df4ef44ae8b4, tree 4b2ea26e27d670f1e22e5f6af7e3a76d5a0e0a91. Generated
+  schema now enforces nonempty/maximum character counts, temperature/top-p/output-token bounds,
+  optional reasoning/digest bounds, and live-versus-replay cassette condition; negative schema
+  fixtures exercise each. README states the stricter runtime-only UTF-8 byte, trim, and control
+  checks and exact enum byte tags. Deterministic schema regeneration passes. A full exact-tree
+  workspace fmt/clippy/tests/docs/release run from a newly nonexistent external target passed
+  without the tracked AR-0105 sandbox ENOENT. Exact coverage floors,
+  repository/signature/DCO/privacy/workflow/supply-chain/failure/platform gates, formal tests, five
+  Kani proofs and deliberate counterexample all reran green; worktree and external-cache audit are
+  clean.
