@@ -2,15 +2,15 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `68f313fcb4fa5c7293639fc90ec376fa7ccb622f`
-- Local origin/main: `68f313fcb4fa5c7293639fc90ec376fa7ccb622f`
-- Primary worktree head: `68f313fcb4fa5c7293639fc90ec376fa7ccb622f`
+- Product remote main: `9543a3297dd9d0ca93c802bb204b099ac1df569b`
+- Local origin/main: `9543a3297dd9d0ca93c802bb204b099ac1df569b`
+- Primary worktree head: `9543a3297dd9d0ca93c802bb204b099ac1df569b`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #13 | `feature/agent-opencode@dfb0d548bf75` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | agents: add pinned OpenCode adapter |
+| #13 | `feature/agent-opencode@dfb0d548bf75` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | agents: add pinned OpenCode adapter |
 
 ## Recent workflows
 
