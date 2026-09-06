@@ -2,7 +2,7 @@
 {
   "branch": "feature/capacity-sweeps",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-06T22:18:51+00:00",
   "depends_on": [
     "AR-0102",
     "AR-0103",
@@ -12,15 +12,15 @@
   ],
   "id": "AR-0204",
   "next_action": "Implement scheduler from fixed manifests and monotonic clock abstraction.",
-  "owner": "",
+  "owner": "contracts-20260906",
   "plan": "../plans/AR-0204.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Run repeated closed-loop and open-loop experiments with bounded concurrency.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Implement capacity sweeps and arrival scheduling",
-  "updated_at": "2026-09-06T20:17:30+00:00",
+  "updated_at": "2026-09-06T20:18:51+00:00",
   "worktree_key": "agent-systems-benchmark-capacity-sweeps"
 }
 ---
@@ -29,3 +29,5 @@
 Run repeated closed-loop and open-loop experiments with bounded concurrency.
 
 Implementation has not started. Read the linked plan before claiming.
+
+- 2026-09-06T20:18:51+00:00: Claimed by contracts-20260906.
