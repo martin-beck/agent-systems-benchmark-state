@@ -7,7 +7,7 @@
     "AR-0102"
   ],
   "id": "AR-0103",
-  "next_action": "Await independent immutable-head re-review and exact-head CI for PR #10 at cf43bac; keep PR base unchanged and do not rebase, merge or release.",
+  "next_action": "Await coordinator independent immutable-head review of PR #10 exact cf43bac with green hosted CI; keep PR base unchanged and do not rebase, merge or release.",
   "observed_branch": "feature/sandbox-runtime",
   "observed_dirty": 0,
   "observed_head": "cf43bac877af8426792e2d0df8276235bd97e7f8",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 259,
+  "task_revision": 260,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T19:38:04+00:00",
+  "updated_at": "2026-09-06T19:39:35+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
@@ -770,3 +770,8 @@ Implementation has not started. Read the linked plan before claiming.
   consecutive instrumented runtime runs and the complete exact-tree suite passed locally; sandbox.rs
   coverage is 95.15% regions and 97.55% lines. Clean tree, zero residual scopes/leases. Exact-head
   runs 34055485257 and 34055485275 started.
+
+- 2026-09-06T19:39:35+00:00: Exact-head hosted CI is green for cf43bac: Rust x86_64 and aarch64 run
+  34055485257 succeeded; policy, coverage and supply chain run 34055485275 succeeded. Local/remote
+  feature head match, tree is clean, signatures and DCO verified, and product main remains 1621103.
+  Await independent review.
