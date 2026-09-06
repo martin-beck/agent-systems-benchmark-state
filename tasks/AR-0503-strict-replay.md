@@ -2,7 +2,7 @@
 {
   "branch": "feature/strict-replay",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-06T20:28:07+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0502",
     "AR-0102"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/strict-replay",
   "observed_dirty": 0,
   "observed_head": "410ecc95b80e9904bd898e7ffafc84d8f8864847",
-  "owner": "replay-20260906",
+  "owner": "",
   "plan": "../plans/AR-0503.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Serve local recorded responses while real agent and tools execute.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Implement strict provider response replay",
-  "updated_at": "2026-09-06T19:27:13+00:00",
+  "updated_at": "2026-09-06T19:28:37+00:00",
   "worktree_key": "agent-systems-benchmark-strict-replay"
 }
 ---
@@ -299,3 +299,17 @@ Dependencies AR-0102 and AR-0502 are done. Read the linked plan and claim after 
   actionlint/zizmor, Gitleaks, deny/audit, coverage, controlled failures, platform validation, and
   schema parity. Exact-main hosted CI is green: quality run 34054837848 job 101544772049; Rust run
   34054837850 aarch64 job 101544771990 and x86_64 job 101544772179.
+
+- 2026-09-06T19:28:37+00:00: Released after reviewed signed+DCO merge
+  162110386605a83f963758a07d83e77e2566528a (parents ef1a657 and 410ecc9), PR #11 merge identity,
+  complete exact-main local postmerge gates, and exact-main hosted green quality run 34054837848/job
+  101544772049 plus Rust run 34054837850/jobs x86_64 101544772179 and aarch64 101544771990. Full
+  state validation passed: Ruff format/lint, strict mypy, 31 fault tests, 97% branch-aware
+  coordination coverage, schema/generated status, privacy/reference checks, clean synchronized refs,
+  and repeated live doctor. The CI-only assertion that .runtime/config.json be absent initially
+  returned exit 1 in this live environment because the ignored private runtime config is required
+  for live doctor; no other validation failed. Follow-up explicitly proved the live config exists,
+  is ignored and untracked, no private archive/config path is tracked, the state tree is
+  clean/synchronized, and live doctor passes. AR-0503 implements syntax-only strict replay with
+  bounded HTTP, transactional socket reservations, deterministic disconnect retry and same-route
+  concurrency fencing; real-client compatibility and pacing remain AR-0505/AR-0504.
