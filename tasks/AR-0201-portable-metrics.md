@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Collect portable system and session metrics",
-  "updated_at": "2026-09-06T18:18:13+00:00",
+  "updated_at": "2026-09-06T18:18:18+00:00",
   "worktree_key": "agent-systems-benchmark-portable-metrics"
 }
 ---
@@ -43,3 +43,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-06T18:17:42+00:00: Initial wrapped patch exited 2 because handoffctl intentionally
   disconnects stdin; verified no product files were created, then switched to explicit argv patch
   transport without weakening stdin isolation.
+
+- 2026-09-06T18:18:18+00:00: Recorded command exit 0; command argv SHA-256
+  33d4c33358929a002b3e8218722e79098c6091ce11e6c0b679786a577913db34.
