@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #1 | `feature/coordination-docs@71618e18f9a3` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS: | Correct handoffctl run syntax |
+| #1 | `feature/coordination-docs@71618e18f9a3` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:FAILURE | Correct handoffctl run syntax |
 
 ## Recent workflows
 
