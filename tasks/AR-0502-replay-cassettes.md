@@ -8,7 +8,7 @@
     "AR-0501"
   ],
   "id": "AR-0502",
-  "next_action": "Specify strict request normalization and cassette integrity schema.",
+  "next_action": "Complete crate-local v1 schema and synthetic fixtures; await serialized Cargo handoff before compilation.",
   "observed_branch": "feature/replay-cassettes",
   "observed_dirty": 1,
   "observed_head": "10974f60be6fc79d0d07f64bfa212197eeee2082",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Store versioned provider requests, event streams, causal IDs and integrity metadata.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Implement immutable response cassette format",
-  "updated_at": "2026-09-06T17:20:27+00:00",
+  "updated_at": "2026-09-06T17:20:43+00:00",
   "worktree_key": "agent-systems-benchmark-replay-cassettes"
 }
 ---
@@ -59,3 +59,18 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T17:20:27+00:00: Recorded command exit 0; command argv SHA-256
   26365ea75b8e90cfebb4534e619e565f15af05853106a60a591c6046f2abffd4.
+
+- 2026-09-06T17:20:43+00:00: Claimed only after signed promotion and verified dependencies done,
+  exact clean product main 10974f60, and absence of prior replay-cassettes branch/worktree effects.
+  Created the declared feature/replay-cassettes worktree from that exact main. Implemented
+  uncommitted crate-local Rust cassette envelope, hard bounds, canonical SHA-256 sealing/decoding,
+  chunk-split decode, causal/event validation, explicit pre-persistence redaction, migration
+  invariants, focused negative tests, schema generator, and README without touching any Cargo
+  manifest or lockfile. Initial git apply failed closed on patch hunk counts and caused no product
+  effect; the identical retained patch SHA-256
+  8bdb8f56a3f348022cea2849ba8afcd510af3e72d0f308abf2e9849a8c73a1de was then applied with --recount.
+  Further retained patch SHA-256 values:
+  e4f686ae5748a213ba4d0d2714e978a95533de95c853bb1d9d13e4bb95034f79 and
+  9e1890dee2e9b10745ce4ce521d9f32d477dd3dec0e7c785ca9434313a1e1718. rustfmt check identified only
+  formatting differences; wrapped rustfmt applied them. Compilation/full checks remain explicitly
+  unclaimed until the Cargo fence transfers.

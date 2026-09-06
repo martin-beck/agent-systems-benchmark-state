@@ -10,7 +10,7 @@ Never edit this file directly.
 | P1 | [AR-0004](tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Render every AR, status, and dependency as an accessible visual state document. | Implement the deterministic STATUS.md renderer, automatic mutation hooks, and visual dependency graph tests. | quality-20260906 |
 | P1 | [AR-0102](tasks/AR-0102-process-runtime.md): Implement process execution and cancellation | Run real client processes with bounded I/O, monotonic deadlines and process-tree ownership. | Await coordinator Cargo handoff after AR-0104 integration, then add asb-runtime workspace member, resolve locked rustix dependency, compile and repair every real process-boundary test. | contracts-20260906 |
 | P1 | [AR-0104](tasks/AR-0104-durable-results.md): Implement durable run storage and recovery | Persist manifests, event streams, artifact hashes and recoverable execution intentions. | Await exact-head PR 6 CI and independent immutable-head review; repair findings before coordinator integration. | root-coordination-20260906 |
-| P1 | [AR-0502](tasks/AR-0502-replay-cassettes.md): Implement immutable response cassette format | Store versioned provider requests, event streams, causal IDs and integrity metadata. | Specify strict request normalization and cassette integrity schema. | replay-20260906 |
+| P1 | [AR-0502](tasks/AR-0502-replay-cassettes.md): Implement immutable response cassette format | Store versioned provider requests, event streams, causal IDs and integrity metadata. | Complete crate-local v1 schema and synthetic fixtures; await serialized Cargo handoff before compilation. | replay-20260906 |
 
 ## Planned
 
