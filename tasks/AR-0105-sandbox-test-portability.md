@@ -2,7 +2,7 @@
 {
   "branch": "fix/sandbox-test-portability",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-06T23:14:40+00:00",
+  "claim_expires": "2026-09-07T00:04:41+00:00",
   "depends_on": [
     "AR-0103"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Repair sandbox test target portability",
-  "updated_at": "2026-09-06T22:01:07+00:00",
+  "updated_at": "2026-09-06T22:04:41+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-test-portability"
 }
 ---
@@ -217,3 +217,5 @@ Implementation has not started. Read the linked plan before claiming.
   platforms passed. Coverage sandbox.rs 97.39% lines, workspace 96.77%. Candidate is one SSH-signed
   exact-DCO commit on b7e9078, clean two-file test-only scope, repository target absent; no
   publication before re-review.
+
+- 2026-09-06T22:04:41+00:00: Heartbeat by contracts-20260906.
