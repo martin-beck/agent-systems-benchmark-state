@@ -2,22 +2,22 @@
 {
   "branch": "feature/agent-opendesk",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-06T23:04:16+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0102"
   ],
   "id": "AR-0302",
   "next_action": "Inspect @bitclub.ai/opendesk-cli commands and protocol version.",
-  "owner": "",
+  "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0302.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Support the bitclub OpenDesk CLI with its own dialect and compatibility record.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Implement OpenDesk client adapter",
-  "updated_at": "2026-09-06T21:04:14+00:00",
+  "updated_at": "2026-09-06T21:04:16+00:00",
   "worktree_key": "agent-systems-benchmark-agent-opendesk"
 }
 ---
@@ -30,3 +30,5 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-06T21:04:14+00:00: Dependencies AR-0101 and AR-0102 are done; asb-agents OpenDesk paths
   are disjoint from active scheduler, workload, and comparability scopes, with shared Cargo/schema
   integration remaining fenced.
+
+- 2026-09-06T21:04:16+00:00: Claimed by root-coordination-20260906.

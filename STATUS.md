@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**50 ARs tracked** across 4 active status categories.
+**50 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 28 |
 | **Future** | Deferred roadmap work | 0 |
@@ -51,7 +51,7 @@ flowchart LR
     subgraph series_03["03 - Adapters and workloads"]
         direction TB
         AR_0301["AR-0301 - Done"]:::status_done
-        AR_0302["AR-0302 - Open"]:::status_open
+        AR_0302["AR-0302 - In progress"]:::status_in_progress
         AR_0303["AR-0303 - Planned"]:::status_planned
         AR_0304["AR-0304 - Planned"]:::status_planned
         AR_0305["AR-0305 - Planned"]:::status_planned
@@ -302,19 +302,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0204](tasks/AR-0204-capacity-sweeps.md): Implement capacity sweeps and arrival scheduling | contracts-20260906 | Run repeated closed-loop and open-loop experiments with bounded concurrency. | Await independent immutable-head review before publishing candidate 5fc5616. |
+| P1 | [AR-0302](tasks/AR-0302-agent-opendesk.md): Implement OpenDesk client adapter | root-coordination-20260906 | Support the bitclub OpenDesk CLI with its own dialect and compatibility record. | Inspect @bitclub.ai/opendesk-cli commands and protocol version. |
 | P1 | [AR-0401](tasks/AR-0401-engineering-workloads.md): Implement original engineering workloads | replay-20260906 | Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API. | Run isolated coverage and adversarial lifecycle review; prepare focused signed candidate without root workspace/lock/schema edits. |
 | P1 | [AR-1001](tasks/AR-1001-experiment-comparability.md): Define experiment identity and comparability | quality-20260906 | Make every comparison content-addressed and explicit about agent, model, workload and platform confounders. | Create focused signed candidate after final exact-tree privacy, schema-generation, and scope checks; then run committed-tree policy gates for immutable coordinator review. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0302](tasks/AR-0302-agent-opendesk.md): Implement OpenDesk client adapter | Unclaimed | Support the bitclub OpenDesk CLI with its own dialect and compatibility record. | Inspect @bitclub.ai/opendesk-cli commands and protocol version. |
 
 ### Planned (28)
 
