@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned Qwen Code through isolated headless stream-JSON.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Implement Qwen Code client adapter",
-  "updated_at": "2026-09-06T23:56:58+00:00",
+  "updated_at": "2026-09-06T23:57:00+00:00",
   "worktree_key": "agent-systems-benchmark-agent-qwen-code"
 }
 ---
@@ -38,3 +38,6 @@ Implementation has not started. Read the linked plan before claiming.
   AR-0305, and AR-0310.
 
 - 2026-09-06T23:56:44+00:00: Claimed by root-coordination-20260906.
+
+- 2026-09-06T23:57:00+00:00: Recorded command exit 0; command argv SHA-256
+  83717d6a47de766aa79ddf35b741261126d24d64900dc5ff598e793349421d08.
