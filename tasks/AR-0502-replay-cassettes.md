@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-cassettes",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-06T19:27:41+00:00",
+  "claim_expires": "2026-09-06T19:36:15+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0501"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Store versioned provider requests, event streams, causal IDs and integrity metadata.",
-  "task_revision": 90,
+  "task_revision": 91,
   "title": "Implement immutable response cassette format",
-  "updated_at": "2026-09-06T18:06:13+00:00",
+  "updated_at": "2026-09-06T18:06:15+00:00",
   "worktree_key": "agent-systems-benchmark-replay-cassettes"
 }
 ---
@@ -339,3 +339,5 @@ Implementation has not started. Read the linked plan before claiming.
   byte-literal compile and moved-borrow compile failures were repaired; the expected stale-fixture
   integrity failure led to independently recomputed roots. Focused fmt/Clippy/tests and 97.07%
   replay line coverage pass.
+
+- 2026-09-06T18:06:15+00:00: Heartbeat by replay-20260906.
