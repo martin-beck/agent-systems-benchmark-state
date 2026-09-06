@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run repeated closed-loop and open-loop experiments with bounded concurrency.",
-  "task_revision": 155,
+  "task_revision": 156,
   "title": "Implement capacity sweeps and arrival scheduling",
-  "updated_at": "2026-09-06T23:04:34+00:00",
+  "updated_at": "2026-09-06T23:04:36+00:00",
   "worktree_key": "agent-systems-benchmark-capacity-sweeps"
 }
 ---
@@ -455,3 +455,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T23:02:41+00:00: Recorded command exit 0; command argv SHA-256
   bba3ebbc3f38d83b8f40d17a9596143058c1890d6355d36dec7c5b9bd44c7d0b.
+
+- 2026-09-06T23:04:36+00:00: Recorded command exit 0; command argv SHA-256
+  aed7914f0de1f80f55bbe39ae2cbcf2deabc373821c039785077256124487bf8.
