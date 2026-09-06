@@ -7,7 +7,7 @@
     "AR-0101"
   ],
   "id": "AR-0203",
-  "next_action": "Validate conservative missing-evidence and equal-window fixes with explicit pinned tool paths; await AR-0502 Cargo fence before workspace integration.",
+  "next_action": "Commit the reviewed crate-only candidate, then await AR-0502 Cargo fence and exact-main integration before cargo/full quality validation and PR.",
   "observed_branch": "feature/statistical-analysis",
   "observed_dirty": 1,
   "observed_head": "5c9b79b2a25ef2a7a485e53728ef0dfdfdd36530",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compute latency distributions, quality/throughput intervals and evidence-aware SLO results.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Implement statistical and SLO assessment",
-  "updated_at": "2026-09-06T17:52:40+00:00",
+  "updated_at": "2026-09-06T17:54:08+00:00",
   "worktree_key": "agent-systems-benchmark-statistical-analysis"
 }
 ---
@@ -165,3 +165,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T17:52:40+00:00: Recorded command exit 0; command argv SHA-256
   e5c327fb91fc2ddbbd53d3dd78b9f95ff8635ceca1cfb6a1a94bfd8c830712da.
+
+- 2026-09-06T17:54:08+00:00: Independent review fixed three conservative-analysis defects: missing
+  successful latency now prevents both latency pass and fail; unequal throughput-window durations
+  are rejected; df>30 retains the wider t(30) critical value. Added negative/property tests and
+  quantile-order evidence checks. Standalone rustfmt and 13 Rust tests pass. Checked-in vector
+  d24ab8119 was independently validated against pinned scipy 1.16.1 and numpy 2.5.3 using
+  project-local script d9e2348a; this caught and corrected rounded t-critical fixture drift. Failed
+  commands for absent PATH tool shims, missing build directory, pre-fix formatting/test, and absent
+  SciPy/mpmath were preserved by handoffctl before successful repairs.
