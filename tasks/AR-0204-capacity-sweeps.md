@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run repeated closed-loop and open-loop experiments with bounded concurrency.",
-  "task_revision": 117,
+  "task_revision": 118,
   "title": "Implement capacity sweeps and arrival scheduling",
-  "updated_at": "2026-09-06T22:47:57+00:00",
+  "updated_at": "2026-09-06T22:47:59+00:00",
   "worktree_key": "agent-systems-benchmark-capacity-sweeps"
 }
 ---
@@ -350,3 +350,6 @@ Implementation has not started. Read the linked plan before claiming.
   changes, tree clean/unpublished; remote main remains 23035ac. One initial heartbeat attempt used
   unsupported expected-revision ordering, exited 2 without durable mutation; corrected heartbeat
   succeeded.
+
+- 2026-09-06T22:47:59+00:00: Recorded command exit 0; command argv SHA-256
+  06019026fdc63b66f627e1e56d456dc7c3ef22efc76e0fc2af95ea7cf2ea5f1c.
