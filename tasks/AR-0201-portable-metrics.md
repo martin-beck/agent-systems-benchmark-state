@@ -10,7 +10,7 @@
   "id": "AR-0201",
   "next_action": "Await independent immutable-head review of product PR #12 exact 4f33a142ea117c63a8f41f70569691ce99a0ff64; both exact-head hosted workflows are green. Retain Cargo workspace/lock fence.",
   "observed_branch": "feature/portable-metrics",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "4f33a142ea117c63a8f41f70569691ce99a0ff64",
   "owner": "quality-20260906",
   "plan": "../plans/AR-0201.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling.",
-  "task_revision": 133,
+  "task_revision": 134,
   "title": "Collect portable system and session metrics",
-  "updated_at": "2026-09-06T18:57:22+00:00",
+  "updated_at": "2026-09-06T18:59:55+00:00",
   "worktree_key": "agent-systems-benchmark-portable-metrics"
 }
 ---
