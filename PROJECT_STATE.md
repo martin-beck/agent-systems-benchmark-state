@@ -10,14 +10,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #10 | `feature/sandbox-runtime@a2ebac54d8ea` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | runtime: isolate untrusted processes |
-| #11 | `feature/strict-replay@c20fdccb91ab` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | replay: add strict provider response service |
-| #12 | `feature/portable-metrics@a0f67bea1ffe` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | metrics: add portable Linux collectors |
+| #10 | `feature/sandbox-runtime@a2ebac54d8ea` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | runtime: isolate untrusted processes |
+| #11 | `feature/strict-replay@c20fdccb91ab` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | replay: add strict provider response service |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34054018397 | `ef1a6578600b` | push | Rust verification | queued:- |
+| 34054018237 | `ef1a6578600b` | push | Repository quality | in_progress:- |
 | 34053668506 | `a0f67bea1ffe` | pull_request | Repository quality | completed:success |
 | 34053668457 | `a0f67bea1ffe` | pull_request | Rust verification | completed:success |
 | 34053500952 | `c20fdccb91ab` | pull_request | Repository quality | completed:success |
@@ -28,5 +29,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34053142315 | `cdd76f988999` | pull_request | Repository quality | completed:success |
 | 34052743886 | `a2ebac54d8ea` | pull_request | Repository quality | completed:success |
 | 34052743817 | `a2ebac54d8ea` | pull_request | Rust verification | completed:success |
-| 34052635899 | `c9e3653ebd99` | dynamic | Dependency Graph | completed:success |
-| 34052633574 | `c9e3653ebd99` | push | Rust verification | completed:success |
