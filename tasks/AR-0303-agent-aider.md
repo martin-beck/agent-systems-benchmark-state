@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support unattended aider editing with bounded input, output and repository changes.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Implement aider client adapter",
-  "updated_at": "2026-09-06T23:21:41+00:00",
+  "updated_at": "2026-09-06T23:22:07+00:00",
   "worktree_key": "agent-systems-benchmark-agent-aider"
 }
 ---
@@ -147,3 +147,6 @@ Implementation has not started. Read the linked plan before claiming.
   product/build/test operations were wrapped. The deviation and no-mutation wrapper failures are
   durably recorded and will not be repeated. A public diagnostic raw-output directory and connect
   trace remain only under the owned /srv/data/projects build target pending exact cleanup.
+
+- 2026-09-06T23:22:07+00:00: Recorded command exit 0; command argv SHA-256
+  152818b6bc924209ce62c37a7e7d8970928a2aec46889b15a009c1923bc51e79.
