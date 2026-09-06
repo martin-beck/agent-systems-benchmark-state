@@ -11,15 +11,15 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #13 | `feature/agent-opencode@fa53386a97ab` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | agents: add pinned OpenCode adapter |
-| #14 | `feature/formal-assurance@2a495a99a657` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | formal: prove critical state invariants |
+| #14 | `feature/formal-assurance@2a495a99a657` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | formal: prove critical state invariants |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34056417967 | `2a495a99a657` | pull_request | Formal assurance | queued:- |
-| 34056417912 | `2a495a99a657` | pull_request | Rust verification | queued:- |
-| 34056417904 | `2a495a99a657` | pull_request | Repository quality | queued:- |
+| 34056417967 | `2a495a99a657` | pull_request | Formal assurance | completed:success |
+| 34056417912 | `2a495a99a657` | pull_request | Rust verification | completed:success |
+| 34056417904 | `2a495a99a657` | pull_request | Repository quality | completed:success |
 | 34056097078 | `fa53386a97ab` | pull_request | Rust verification | completed:success |
 | 34056097009 | `fa53386a97ab` | pull_request | Repository quality | completed:success |
 | 34055890362 | `4d716973f483` | push | Repository quality | completed:success |
