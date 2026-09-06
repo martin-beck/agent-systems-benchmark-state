@@ -11,14 +11,14 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #22 | `feature/agent-aider@da81ead6932c` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(agents): add bounded Aider adapter |
-| #23 | `feature/provider-profile-contract@3f9edc3305c1` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(protocol): define common provider profiles |
+| #23 | `feature/provider-profile-contract@3f9edc3305c1` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(protocol): define common provider profiles |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 34067997066 | `3f9edc3305c1` | pull_request | Formal assurance | completed:success |
-| 34067997047 | `3f9edc3305c1` | pull_request | Repository quality | in_progress:- |
+| 34067997047 | `3f9edc3305c1` | pull_request | Repository quality | completed:success |
 | 34067997029 | `3f9edc3305c1` | pull_request | Rust verification | completed:success |
 | 34067916415 | `da81ead6932c` | pull_request | Formal assurance | completed:success |
 | 34067916388 | `da81ead6932c` | pull_request | Repository quality | completed:success |
