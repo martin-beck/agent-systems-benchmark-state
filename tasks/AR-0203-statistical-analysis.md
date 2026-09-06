@@ -2,7 +2,7 @@
 {
   "branch": "feature/statistical-analysis",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-06T20:04:07+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/statistical-analysis",
   "observed_dirty": 0,
   "observed_head": "3bcfd85dedd3b0c944d8c3100c031203d5888b10",
-  "owner": "root-coordination-20260906",
+  "owner": "",
   "plan": "../plans/AR-0203.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Compute latency distributions, quality/throughput intervals and evidence-aware SLO results.",
-  "task_revision": 107,
+  "task_revision": 108,
   "title": "Implement statistical and SLO assessment",
-  "updated_at": "2026-09-06T18:44:51+00:00",
+  "updated_at": "2026-09-06T18:46:12+00:00",
   "worktree_key": "agent-systems-benchmark-statistical-analysis"
 }
 ---
@@ -335,3 +335,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T18:44:51+00:00: Recorded command exit 0; command argv SHA-256
   53ad45efa30948d2a3fe82e450901792095cdb2753d978df6c993a9b8d93af15.
+
+- 2026-09-06T18:46:12+00:00: DONE after reviewed integration. Signed+DCO merge
+  c9e3653ebd9955f433e65f0c3110421166ac03c7 has exact parents 265d811 and approved candidate 3bcfd85;
+  PR #9 records that merge. Exact-main full local fmt/Clippy/109 tests/rustdoc/release/reference
+  validation/coverage/supply-chain/privacy/workflow/failure fixtures passed. Exact-main hosted
+  quality 34052633572 and Rust x86_64/aarch64 34052633574 passed; dependency graph 34052635899
+  passed. Final asb-analysis coverage is 98.45% lines/97.00% regions and workspace 97.09% lines.
+  Constructor-controlled evidence and compile-fail tests prevent unsupported interval injection;
+  pinned independent SciPy/NumPy vectors cover Wilson, type-7, Student-t and finite/unbounded DKW.
+  Documented limits: fixed 95% intervals, independent equal-duration throughput windows, floating
+  point, no autocorrelation/sequential correction/bootstrap or interpolation.
