@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #17 | `feature/experiment-comparability@eb5e84933830` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | protocol: add content-addressed experiment comparisons |
+| #17 | `feature/experiment-comparability@eb5e84933830` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | protocol: add content-addressed experiment comparisons |
 
 ## Recent workflows
 
@@ -18,7 +18,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 34061016186 | `eb5e84933830` | pull_request | Repository quality | in_progress:- |
 | 34061016130 | `eb5e84933830` | pull_request | Rust verification | in_progress:- |
-| 34061016128 | `eb5e84933830` | pull_request | Formal assurance | queued:- |
+| 34061016128 | `eb5e84933830` | pull_request | Formal assurance | in_progress:- |
 | 34058963865 | `9543a3297dd9` | push | Rust verification | completed:success |
 | 34058963859 | `9543a3297dd9` | push | Formal assurance | completed:success |
 | 34058963855 | `9543a3297dd9` | push | Repository quality | completed:success |
