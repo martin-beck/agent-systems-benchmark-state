@@ -2,8 +2,8 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `38ceb33592e32c4e07e2c2f2c1c7d277203712fe`
-- Local origin/main: `38ceb33592e32c4e07e2c2f2c1c7d277203712fe`
+- Product remote main: `3baa4f9d0a7448e5f2e24633c230a2111c9ead86`
+- Local origin/main: `3baa4f9d0a7448e5f2e24633c230a2111c9ead86`
 - Primary worktree head: `3baa4f9d0a7448e5f2e24633c230a2111c9ead86`
 
 ## Open pull requests
@@ -11,13 +11,13 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #3 | `feature/extension-contracts@9e90c6a62861` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Define extension protocol v1 contracts |
-| #4 | `feature/replay-evaluation@2114472eb20c` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | Evaluate replay dependency candidates |
+| #4 | `feature/replay-evaluation@2114472eb20c` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Evaluate replay dependency candidates |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34045687393 | `2114472eb20c` | pull_request | Rust verification | in_progress:- |
+| 34045687393 | `2114472eb20c` | pull_request | Rust verification | completed:success |
 | 34045687392 | `2114472eb20c` | pull_request | Repository quality | in_progress:- |
 | 34045610466 | `9e90c6a62861` | pull_request | Rust verification | completed:success |
 | 34045610457 | `9e90c6a62861` | pull_request | Repository quality | completed:success |
