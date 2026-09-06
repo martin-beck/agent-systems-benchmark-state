@@ -11,7 +11,7 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #5 | `feature/platform-manifests@dff27a9acb4f` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: pin initial support manifests |
-| #6 | `feature/durable-results@f6cd02eef6b7` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, QUEUED: | Add crash-consistent durable result storage |
+| #6 | `feature/durable-results@f6cd02eef6b7` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | Add crash-consistent durable result storage |
 
 ## Recent workflows
 
