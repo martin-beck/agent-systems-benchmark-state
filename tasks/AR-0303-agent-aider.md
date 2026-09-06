@@ -2,7 +2,7 @@
 {
   "branch": "feature/agent-aider",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T00:51:24+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0102"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/agent-aider",
   "observed_dirty": 0,
   "observed_head": "da81ead6932c5d5469ca57fc981646fa980c2780",
-  "owner": "root-coordination-20260906",
+  "owner": "",
   "plan": "../plans/AR-0303.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Support unattended aider editing with bounded input, output and repository changes.",
-  "task_revision": 151,
+  "task_revision": 152,
   "title": "Implement aider client adapter",
-  "updated_at": "2026-09-06T23:53:58+00:00",
+  "updated_at": "2026-09-06T23:56:19+00:00",
   "worktree_key": "agent-systems-benchmark-agent-aider"
 }
 ---
@@ -467,3 +467,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T23:53:58+00:00: Recorded command exit 0; command argv SHA-256
   025b9cf10709f9c1d39fcd151555619feece68829224173ba60d26804b075e55.
+
+- 2026-09-06T23:56:19+00:00: Released after independent immutable review, repaired exact candidate
+  da81ead6932c5d5469ca57fc981646fa980c2780, PR #22 exact-head green runs
+  34067916273/34067916388/34067916415, signed DCO no-ff merge
+  941ea6fff5eef30b126d3bcc5cc5d4117146de27, complete local post-merge gates including real pinned
+  Aider edit/retry/cancellation and formal negatives, exact-main green runs
+  34068149693/34068149658/34068149682, clean synchronized product refs, full 37-test state
+  validation at 97% branch-aware coverage, generated status check, and live doctor. Supported
+  evidence is native Linux x86_64 pinned Aider plus hosted Rust/formal portability on
+  x86_64/aarch64; structured retry count/cause is unavailable from Aider diagnostics and full
+  runtime bundling remains required AR-0316.
