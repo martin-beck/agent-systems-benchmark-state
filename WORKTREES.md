@@ -10,7 +10,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 36, ahead 0 |
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 25, ahead 0 |
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 33, ahead 0 |
-| `agent-systems-benchmark-formal-assurance` | `feature/formal-assurance` | `ef1a6578600b` | 2 | behind 2, ahead 0 |
+| `agent-systems-benchmark-formal-assurance` | `feature/formal-assurance` | `162110386605` | 2 | behind 0, ahead 0 |
 | changed files | - | - | - | `.github/workflows/formal.yml`, `formal/` |
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 29, ahead 0 |
 | `agent-systems-benchmark-portable-metrics` | `feature/portable-metrics` | `a0f67bea1ffe` | 0 | behind 3, ahead 0 |
