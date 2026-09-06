@@ -9,5 +9,5 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `c9568e8603e3` | 3 | behind 0, ahead 0 |
 | changed files | - | - | - | `Cargo.lock`, `Cargo.toml`, `crates/asb-protocol/` |
 | `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `d09a62ee96bf` | 0 | behind 0, ahead 2 |
-| `agent-systems-benchmark-replay-evaluation` | `feature/replay-evaluation` | `c9568e8603e3` | 1 | behind 0, ahead 0 |
-| changed files | - | - | - | `tools/` |
+| `agent-systems-benchmark-replay-evaluation` | `feature/replay-evaluation` | `c9568e8603e3` | 3 | behind 0, ahead 0 |
+| changed files | - | - | - | `docs/REPLAY_RESEARCH.md`, `docs/REPLAY_EVALUATION.md`, `tools/` |
