@@ -8,7 +8,7 @@
     "AR-0201"
   ],
   "id": "AR-0504",
-  "next_action": "Claim after a fresh reconciliation, then implement monotonic pacing, cancellation, backpressure, and independent saturation calibration.",
+  "next_action": "Integrate paced delivery with the strict socket reservation boundary, expand deterministic negative/concurrency evidence, then run exact-tree full gates.",
   "observed_branch": "feature/replay-pacing",
   "observed_dirty": 3,
   "observed_head": "162110386605a83f963758a07d83e77e2566528a",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support immediate, fixed-latency, original-paced and seeded synthetic scenarios.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Implement pacing and replay overhead assessment",
-  "updated_at": "2026-09-06T19:38:14+00:00",
+  "updated_at": "2026-09-06T19:38:31+00:00",
   "worktree_key": "agent-systems-benchmark-replay-pacing"
 }
 ---
@@ -53,3 +53,12 @@ a fresh reconciliation.
 
 - 2026-09-06T19:38:14+00:00: Recorded command exit 0; command argv SHA-256
   21e2270f373d18f07b5ad89c7f03e160450cb9b12af8441448744a604d844171.
+
+- 2026-09-06T19:38:31+00:00: Applied reviewed-local replay-only patches
+  00db1bd12ca30ec7fb77b9d0c12409a1fef8089038f19359d90d629cab03058f and
+  b26dc516cb2864f7dff1195aa2e63f8166dc4c37e70b8e3e7cb58bf87ac27. Added
+  immediate/fixed/original/seeded pacing, desired/actual timing reports, cooperative cancellation,
+  slow/failed writer classification, and independent above-client headroom assessment. Focused
+  asb-replay tests passed 61 tests including 6 new pacing tests; focused Clippy with warnings denied
+  passed. Generic Write cannot be preempted by elapsed checking, so README requires caller-enforced
+  transport timeout; production socket integration remains next.
