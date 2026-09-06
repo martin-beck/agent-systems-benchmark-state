@@ -499,7 +499,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0204](tasks/AR-0204-capacity-sweeps.md): Implement capacity sweeps and arrival scheduling | contracts-20260906 | Run repeated closed-loop and open-loop experiments with bounded concurrency. | Await coordinator integration authorization for clean exact-head PR #21; do not merge. |
+| P1 | [AR-0204](tasks/AR-0204-capacity-sweeps.md): Implement capacity sweeps and arrival scheduling | contracts-20260906 | Run repeated closed-loop and open-loop experiments with bounded concurrency. | Await coordinator postmerge local validation/state doctor confirmation before releasing AR-0204. |
 | P1 | [AR-0303](tasks/AR-0303-agent-aider.md): Implement aider client adapter | root-coordination-20260906 | Support unattended aider editing with bounded input, output and repository changes. | Await independent immutable-head review of a0943e94; repair findings before branch publication. |
 | P1 | [AR-0304](tasks/AR-0304-agent-codex.md): Implement Codex client adapter | replay-20260906 | Use Codex noninteractive structured events or app-server with declared capability boundaries. | Inspect installed Codex help/schema and official provider configuration. |
 | P1 | [AR-0310](tasks/AR-0310-provider-profile-contract.md): Define common provider profiles | quality-20260906 | Normalize one provider configuration for safe translation across heterogeneous agent adapters. | Await AR-0401 fence transfer, then wire provider module, schemas, fixtures, adapter interface, and full gates. |

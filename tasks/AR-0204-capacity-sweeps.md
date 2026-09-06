@@ -12,7 +12,7 @@
     "AR-0203"
   ],
   "id": "AR-0204",
-  "next_action": "Await coordinator integration authorization for clean exact-head PR #21; do not merge.",
+  "next_action": "Await coordinator postmerge local validation/state doctor confirmation before releasing AR-0204.",
   "observed_branch": "feature/capacity-sweeps",
   "observed_dirty": 0,
   "observed_head": "0717d4acd16856d8fad593efdfa9007ad32c1c3f",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run repeated closed-loop and open-loop experiments with bounded concurrency.",
-  "task_revision": 185,
+  "task_revision": 186,
   "title": "Implement capacity sweeps and arrival scheduling",
-  "updated_at": "2026-09-06T23:38:24+00:00",
+  "updated_at": "2026-09-06T23:40:13+00:00",
   "worktree_key": "agent-systems-benchmark-capacity-sweeps"
 }
 ---
@@ -575,3 +575,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T23:38:24+00:00: Recorded command exit 0; command argv SHA-256
   eaf2472e4b0ec29bac3303a6d46474c99be3c0ab077feca87b1c3650d4745e53.
+
+- 2026-09-06T23:40:13+00:00: Verified PR #21 merged exact approved head
+  0717d4acd16856d8fad593efdfa9007ad32c1c3f as signed local merge
+  311c128649610df258b2961c9ca623fb8f258307; origin/main is exact 311c128. All exact-main hosted runs
+  completed SUCCESS: Formal assurance 34067451296 (Kani plus Loom/state models x86_64/aarch64),
+  Repository quality 34067451293, Rust verification 34067451294 (x86_64/aarch64). No failures to
+  investigate. Retaining sole AR-0204 in_progress pending coordinator postmerge local checks and
+  live state doctor; do not release or select next work yet.
