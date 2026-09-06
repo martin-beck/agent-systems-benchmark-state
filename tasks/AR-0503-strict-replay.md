@@ -8,7 +8,7 @@
     "AR-0102"
   ],
   "id": "AR-0503",
-  "next_action": "Await coordinator independent immutable review of PR #11 exact c20fdcc with green exact-head CI; repair findings if any. Do not merge or release.",
+  "next_action": "Complete adversarial review of transactional socket cursor repair, run full gates, then amend signed+DCO PR #11 head with exact lease for fresh immutable review/CI; do not merge.",
   "observed_branch": "feature/strict-replay",
   "observed_dirty": 4,
   "observed_head": "c20fdccb91abb3644ef933ebfc6754314961682c",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Serve local recorded responses while real agent and tools execute.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Implement strict provider response replay",
-  "updated_at": "2026-09-06T19:17:01+00:00",
+  "updated_at": "2026-09-06T19:17:30+00:00",
   "worktree_key": "agent-systems-benchmark-strict-replay"
 }
 ---
@@ -226,3 +226,18 @@ Dependencies AR-0102 and AR-0502 are done. Read the linked plan and claim after 
 
 - 2026-09-06T19:17:01+00:00: Recorded command exit 0; command argv SHA-256
   387be7c885b2a4a9ab09bae53fd562b7b8f378ef3ddb4222fcc697de91eebc32.
+
+- 2026-09-06T19:17:30+00:00: Coordinator review blocked c20fdcc because io_timeout lacked a
+  30-second ceiling and serve_once consumed before response write success. Applied stable repair
+  artifacts ar0503-transaction-repair.patch SHA-256
+  ebebc525f219a10e4929c8223df0705786926ae2b2e68b0e11dc7988fdf387d2 and
+  ar0503-transaction-tests.patch SHA-256
+  c0665d130639bbf193afd165a8b7342df8142153cb725a9e4f1c76e68cfaf112. The implementation now validates
+  (0, MAX_IO_TIMEOUT], reserves one exact route cursor during socket writes, rejects same-route
+  concurrent admission, allows unrelated routes, commits only after the full writer succeeds, and
+  rolls back on writer error; direct handle commits before successful return. Deterministic
+  synthetic BrokenPipe proves exact retry, and a blocked writer/channel test proves same-route
+  fencing plus unrelated-route progress. Focused replay tests and Clippy pass. Coverage passes:
+  workspace 97.17% lines; replay 97.30%; service.rs 97.20%. Initial focused command intentionally
+  stopped at fmt --check before compilation and changed no product files; cargo fmt and complete
+  rerun passed.
