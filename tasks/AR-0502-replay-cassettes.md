@@ -10,7 +10,7 @@
   "id": "AR-0502",
   "next_action": "Await independent immutable-head review of candidate 6e7e6d4a813a851c57782cb651165e6a8fef193f; repair findings before any push or PR.",
   "observed_branch": "feature/replay-cassettes",
-  "observed_dirty": 8,
+  "observed_dirty": 10,
   "observed_head": "6e7e6d4a813a851c57782cb651165e6a8fef193f",
   "owner": "replay-20260906",
   "plan": "../plans/AR-0502.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Store versioned provider requests, event streams, causal IDs and integrity metadata.",
-  "task_revision": 86,
+  "task_revision": 87,
   "title": "Implement immutable response cassette format",
-  "updated_at": "2026-09-06T18:04:46+00:00",
+  "updated_at": "2026-09-06T18:05:17+00:00",
   "worktree_key": "agent-systems-benchmark-replay-cassettes"
 }
 ---
