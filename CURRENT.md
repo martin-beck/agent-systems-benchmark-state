@@ -10,11 +10,16 @@ Never edit this file directly.
 | P1 | [AR-0501](tasks/AR-0501-replay-evaluation.md): Evaluate replay literature and reusable tools | Compare literature and record/replay implementations using identical synthetic conformance cases. | Await independent immutable-head review and coordinator integration of product PR #4; then run post-merge verification before release. | replay-20260906 |
 | P1 | [AR-0701](tasks/AR-0701-platform-manifests.md): Pin distribution and architecture support matrix | Define Ubuntu, Debian, Fedora, enterprise, openSUSE, Arch, Alpine and openEuler target manifests. | Claim with the designated platform worker, then verify pinned distro images and toolchain and agent package availability. | quality-20260906 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0102](tasks/AR-0102-process-runtime.md): Implement process execution and cancellation | Run real client processes with bounded I/O, monotonic deadlines and process-tree ownership. | Claim with the designated runtime worker, then implement lifecycle transitions with explicit process handles. | - |
+
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0102](tasks/AR-0102-process-runtime.md): Implement process execution and cancellation | Run real client processes with bounded I/O, monotonic deadlines and process-tree ownership. | Implement lifecycle transitions with explicit process handles. | - |
 | P1 | [AR-0103](tasks/AR-0103-sandbox-runtime.md): Implement isolated execution and resource leases | Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets. | Implement rootless container backend and trusted-native policy. | - |
 | P1 | [AR-0104](tasks/AR-0104-durable-results.md): Implement durable run storage and recovery | Persist manifests, event streams, artifact hashes and recoverable execution intentions. | Implement atomic store and versioned run journal. | - |
 | P1 | [AR-0201](tasks/AR-0201-portable-metrics.md): Collect portable system and session metrics | Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling. | Implement metric descriptors and baseline Linux collectors. | - |
