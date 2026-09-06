@@ -10,7 +10,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `b0b2ae1a9ad5` | 0 | behind 3, ahead 1 |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 58, ahead 0 |
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 47, ahead 0 |
-| `agent-systems-benchmark-engineering-workloads` | `feature/engineering-workloads` | `68f313fcb4fa` | 1 | behind 7, ahead 0 |
+| `agent-systems-benchmark-engineering-workloads` | `feature/engineering-workloads` | `b7e9078d53a4` | 1 | behind 0, ahead 0 |
 | changed files | - | - | - | `crates/asb-workloads/` |
 | `agent-systems-benchmark-experiment-comparability` | `feature/experiment-comparability` | `eb5e84933830` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 55, ahead 0 |
