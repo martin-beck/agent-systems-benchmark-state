@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0401",
-  "next_action": "Implement small offline fixtures and common workload lifecycle.",
+  "next_action": "Run isolated coverage and adversarial lifecycle review; prepare focused signed candidate without root workspace/lock/schema edits.",
   "observed_branch": "feature/engineering-workloads",
   "observed_dirty": 1,
   "observed_head": "68f313fcb4fa5c7293639fc90ec376fa7ccb622f",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Implement original engineering workloads",
-  "updated_at": "2026-09-06T21:01:39+00:00",
+  "updated_at": "2026-09-06T21:01:59+00:00",
   "worktree_key": "agent-systems-benchmark-engineering-workloads"
 }
 ---
@@ -137,3 +137,20 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T21:01:39+00:00: Recorded command exit 0; command argv SHA-256
   0d79fc735c22203f38d2daf8b7819853a2c2ad15742faf226f166f967e0ef10d.
+
+- 2026-09-06T21:01:59+00:00: AR-0401 now has crate-local asb-workloads implementation and seven
+  original offline fixture sets: bug fix, feature addition, refactoring, test generation, dependency
+  migration, build repair, and repository navigation. Each has a strict v1 WorkloadManifest,
+  deterministic SHA-256 content pin and exact fixture byte count, public prompt, passing reference
+  patch, failing counterexample, protected semantic grader, and clean prepare/reset/evaluate/cleanup
+  lifecycle. Bounds cover 32 files, 1 MiB aggregate, 256 KiB per file, strict absolute normalized
+  roots, nonempty destination preservation, symlink/nonregular/non-UTF8 rejection, content-free
+  failure names, retryable cleanup ownership, and zero network destinations. Root
+  Cargo.toml/Cargo.lock/schemas remain untouched; compilation uses disposable
+  /srv/data/projects/.asb-local/ar0401-mirror with only asb-protocol/asb-workloads. Isolated 6 unit
+  + 2 public API tests, Clippy warnings denied, fmt, and rustdoc warnings denied pass. Material
+  failures preserved: initial git patches required --recount due stale generated hunk counts; first
+  build lacked Cargo PATH; direct crate build correctly hit workspace fence; compile exposed unused
+  import/Debug/mut/test map errors; reference tests exposed overescaped CR, newline and Makefile tab
+  fixture patches plus a feature-grader spelling mismatch; hardening test insertion initially nested
+  a test. All were repaired and rerun green; no root integration claim is made.
