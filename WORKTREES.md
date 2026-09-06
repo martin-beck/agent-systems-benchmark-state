@@ -18,6 +18,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `748537c25e3a` | 0 | behind 37, ahead 0 |
 | `agent-systems-benchmark-replay-cassettes` | `feature/replay-cassettes` | `cd88f5703fb3` | 0 | behind 16, ahead 0 |
 | `agent-systems-benchmark-replay-evaluation` | `feature/replay-evaluation` | `3d04a2d5a3b3` | 0 | behind 29, ahead 0 |
-| `agent-systems-benchmark-sandbox-runtime` | `feature/sandbox-runtime` | `832e72c2293c` | 0 | behind 10, ahead 2 |
+| `agent-systems-benchmark-sandbox-runtime` | `feature/sandbox-runtime` | `832e72c2293c` | 1 | behind 10, ahead 2 |
+| changed files | - | - | - | `crates/asb-runtime/tests/sandbox_boundary.rs` |
 | `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `3bcfd85dedd3` | 0 | behind 11, ahead 0 |
 | `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `410ecc95b80e` | 0 | behind 0, ahead 1 |
