@@ -2,22 +2,22 @@
 {
   "branch": "feature/transactional-promotion",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-06T22:49:09+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0002",
     "AR-0004"
   ],
   "id": "AR-0005",
   "next_action": "Await immutable independent review of exact state PR #4 head 4e56e83 and integrate only after verified green CI.",
-  "owner": "root-coordination-20260906",
+  "owner": "",
   "plan": "../plans/AR-0005.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make planned-to-open promotion a transactional handoffctl operation.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Add transactional AR promotion",
-  "updated_at": "2026-09-06T21:03:07+00:00",
+  "updated_at": "2026-09-06T21:03:52+00:00",
   "worktree_key": "agent-systems-benchmark-state-promotion"
 }
 ---
@@ -84,3 +84,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T21:03:07+00:00: Recorded command exit 0; command argv SHA-256
   5eb0a8ecb3210f43e45a5c5c3f353b7f872eb512b3aec50cf8f410fe4c7ec307.
+
+- 2026-09-06T21:03:52+00:00: Done: independent immutable reviews approved state PR #4 exact
+  signed+DCO head 4e56e83; exact CI 34059561972 passed. Integrated as signed+DCO merge 159e6f4,
+  preserving intervening task revisions. Complete post-merge Ruff, mypy, 37 fault/race tests,
+  schema/generated-view/privacy doctor and 97% branch-aware coverage passed. The production promote
+  command now makes dependency-ready planned-to-open transitions atomic and automatically
+  regenerates CURRENT.md and graphical STATUS.md with documented durable retry semantics.
