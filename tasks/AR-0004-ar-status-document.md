@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar-status-document",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-06T18:50:29+00:00",
   "depends_on": [
     "AR-0002"
   ],
   "id": "AR-0004",
   "next_action": "Implement the deterministic STATUS.md renderer, automatic mutation hooks, and visual dependency graph tests.",
-  "owner": "",
+  "owner": "quality-20260906",
   "plan": "../plans/AR-0004.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Render every AR, status, and dependency as an accessible visual state document.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Generate the visual AR status document",
-  "updated_at": "2026-09-06T17:18:22+00:00",
+  "updated_at": "2026-09-06T17:20:29+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-status-document"
 }
 ---
@@ -28,3 +28,5 @@ easy-to-scan document in the public state repository.
 - 2026-09-06T17:18:22+00:00: Added and promoted after the user requested a graphical status
   document. Dependency AR-0002 is done. The work is isolated to a dedicated state-repository
   branch/worktree and must preserve transactional coordination semantics.
+
+- 2026-09-06T17:20:29+00:00: Claimed by quality-20260906.
