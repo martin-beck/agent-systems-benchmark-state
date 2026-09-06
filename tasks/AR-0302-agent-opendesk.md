@@ -8,7 +8,7 @@
     "AR-0102"
   ],
   "id": "AR-0302",
-  "next_action": "Inspect @bitclub.ai/opendesk-cli commands and protocol version.",
+  "next_action": "Implement a fail-closed Linux x86_64 adapter around pinned OpenDesk 0.3.5 export JSON, with telemetry containment and explicit argv privacy limitation.",
   "observed_branch": "feature/agent-opendesk",
   "observed_dirty": 1,
   "observed_head": "b7e9078d53a4a4586beb68bf56233aba206112ac",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support the bitclub OpenDesk CLI with its own dialect and compatibility record.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Implement OpenDesk client adapter",
-  "updated_at": "2026-09-06T21:42:18+00:00",
+  "updated_at": "2026-09-06T21:43:15+00:00",
   "worktree_key": "agent-systems-benchmark-agent-opendesk"
 }
 ---
@@ -155,3 +155,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T21:42:18+00:00: Recorded command exit 0; command argv SHA-256
   ddf931f039374a91054ebaf7e8809d10f47ef11bc709b33f8bb48c7a1c2916e9.
+
+- 2026-09-06T21:43:15+00:00: Pinned source tag v0.3.5 at f303069da72412dc90b3214d89da9c102282465f
+  and npm artifact/executable digests; native loopback OpenAI-compatible smoke completed. Source
+  inspection proves headless requires -c argv, stdout/export contain raw conversation, exit 0 alone
+  is not success, and an unconditional heartbeat targets opendesk.matrix.openharmony.cn. Adapter
+  must discard bounded raw output/export, parse benchmark task_success, isolate config, route all
+  non-loopback traffic to a closed proxy, and claim only exercised Linux x86_64. Prompt argv
+  visibility remains an explicit unsupported privacy boundary.
