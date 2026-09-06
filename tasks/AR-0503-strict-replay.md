@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Serve local recorded responses while real agent and tools execute.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Implement strict provider response replay",
-  "updated_at": "2026-09-06T18:59:03+00:00",
+  "updated_at": "2026-09-06T18:59:38+00:00",
   "worktree_key": "agent-systems-benchmark-strict-replay"
 }
 ---
@@ -187,3 +187,6 @@ Dependencies AR-0102 and AR-0502 are done. Read the linked plan and claim after 
   remains 97.11% workspace, 97.15% replay and 96.73% service.rs. Local tree is clean. PR #11 and
   remote still intentionally point to superseded cdd76f9 until exact-lease repair push; its previous
   green CI is not evidence for c20fdcc.
+
+- 2026-09-06T18:59:38+00:00: Recorded command exit 127; command argv SHA-256
+  bde556632dc3a6a2fc0dddf951bf30a3f731e04b66d4390744c1dc422b6d398d.
