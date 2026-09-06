@@ -3,7 +3,7 @@
 Generated from local Git and GitHub. Do not edit.
 
 - Product remote main: `7f308cca70386413ec0fc047e8836620b4e59bbe`
-- Local origin/main: `b7e9078d53a4a4586beb68bf56233aba206112ac`
+- Local origin/main: `7f308cca70386413ec0fc047e8836620b4e59bbe`
 - Primary worktree head: `b7e9078d53a4a4586beb68bf56233aba206112ac`
 
 ## Open pull requests
@@ -15,6 +15,9 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34063408544 | `7f308cca7038` | push | Rust verification | completed:failure |
+| 34063408539 | `7f308cca7038` | push | Repository quality | completed:failure |
+| 34063408520 | `7f308cca7038` | push | Formal assurance | completed:success |
 | 34063259528 | `eea3d202b226` | pull_request | Repository quality | completed:success |
 | 34063259403 | `eea3d202b226` | pull_request | Formal assurance | completed:success |
 | 34063259371 | `eea3d202b226` | pull_request | Rust verification | completed:success |
@@ -24,6 +27,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34061016186 | `eb5e84933830` | pull_request | Repository quality | completed:success |
 | 34061016130 | `eb5e84933830` | pull_request | Rust verification | completed:success |
 | 34061016128 | `eb5e84933830` | pull_request | Formal assurance | completed:success |
-| 34058963865 | `9543a3297dd9` | push | Rust verification | completed:success |
-| 34058963859 | `9543a3297dd9` | push | Formal assurance | completed:success |
-| 34058963855 | `9543a3297dd9` | push | Repository quality | completed:success |
