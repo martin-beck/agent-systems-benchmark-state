@@ -11,11 +11,16 @@ Never edit this file directly.
 | P1 | [AR-0401](tasks/AR-0401-engineering-workloads.md): Implement original engineering workloads | Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API. | Run isolated coverage and adversarial lifecycle review; prepare focused signed candidate without root workspace/lock/schema edits. | replay-20260906 |
 | P1 | [AR-1001](tasks/AR-1001-experiment-comparability.md): Define experiment identity and comparability | Make every comparison content-addressed and explicit about agent, model, workload and platform confounders. | Create focused signed candidate after final exact-tree privacy, schema-generation, and scope checks; then run committed-tree policy gates for immutable coordinator review. | quality-20260906 |
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0302](tasks/AR-0302-agent-opendesk.md): Implement OpenDesk client adapter | Support the bitclub OpenDesk CLI with its own dialect and compatibility record. | Inspect @bitclub.ai/opendesk-cli commands and protocol version. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P1 | [AR-0303](tasks/AR-0303-agent-aider.md): Implement aider client adapter | Support unattended aider editing with bounded input, output and repository changes. | Inspect aider batch invocation and editing lifecycle. | - |
 | P1 | [AR-0304](tasks/AR-0304-agent-codex.md): Implement Codex client adapter | Use Codex noninteractive structured events or app-server with declared capability boundaries. | Inspect installed Codex help/schema and official provider configuration. | - |
 | P1 | [AR-0305](tasks/AR-0305-agent-gemini.md): Implement Gemini CLI client adapter | Run pinned Gemini CLI through noninteractive JSON events. | Inspect the current official stable release, transition constraints, stream-JSON contract and provider override. | - |
