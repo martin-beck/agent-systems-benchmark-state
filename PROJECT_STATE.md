@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #4 | `feature/replay-evaluation@2114472eb20c` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Evaluate replay dependency candidates |
+| #4 | `feature/replay-evaluation@2114472eb20c` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Evaluate replay dependency candidates |
 
 ## Recent workflows
 
