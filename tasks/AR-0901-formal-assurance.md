@@ -10,7 +10,7 @@
     "AR-0203"
   ],
   "id": "AR-0901",
-  "next_action": "Rerun exact-head root and quality gates with the documented in-worktree target, then publish signed head for immutable review.",
+  "next_action": "Await independent immutable-head review of PR 14 at 2a495a99; repair any findings without merging or releasing.",
   "observed_branch": "feature/formal-assurance",
   "observed_dirty": 0,
   "observed_head": "2a495a99a6576bcc747e8cf0cf5815866d0f277e",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use bounded proofs and model tests for safety-critical domain logic.",
-  "task_revision": 86,
+  "task_revision": 87,
   "title": "Prove critical state and concurrency invariants",
-  "updated_at": "2026-09-06T19:56:15+00:00",
+  "updated_at": "2026-09-06T19:57:56+00:00",
   "worktree_key": "agent-systems-benchmark-formal-assurance"
 }
 ---
@@ -260,3 +260,12 @@ plan and claim after a fresh reconciliation.
 
 - 2026-09-06T19:56:15+00:00: Recorded command exit 0; command argv SHA-256
   a2adf95003d93301340960b9e173f67764a699997fcd625f478f4ef791d9f0a5.
+
+- 2026-09-06T19:57:56+00:00: Published PR 14 at exact signed+DCO head
+  2a495a99a6576bcc747e8cf0cf5815866d0f277e, tree b4915f91be9d3706f6f84b842dbc755c3a0d4b05, base
+  4d716973f483f0d6387798496302180a246140b6. Exact-head hosted runs all passed: Formal assurance
+  34056417967 (Kani plus Loom/state models on x86_64 and aarch64), Rust verification 34056417912
+  (x86_64 and aarch64), Repository quality 34056417904. PR is mergeable/CLEAN and worktree/remote
+  branch are synchronized clean. Local exact-head proof and full gates also passed; bounds and the
+  external-target sandbox test-harness finding remain explicitly documented. No merge or release
+  performed.
