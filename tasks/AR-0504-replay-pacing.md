@@ -8,7 +8,7 @@
     "AR-0201"
   ],
   "id": "AR-0504",
-  "next_action": "Await coordinator immutable review of signed candidate 658221c45c75cc871e766d1959488aa95402fb9e; publish only after review/base serialization, then require exact-head CI.",
+  "next_action": "Monitor PR #16 exact-head formal, quality, and native x86_64/aarch64 Rust CI; await coordinator immutable review and do not merge.",
   "observed_branch": "feature/replay-pacing",
   "observed_dirty": 0,
   "observed_head": "73d28a431c782e14b172d8309b5f76b71a4f1bf6",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support immediate, fixed-latency, original-paced and seeded synthetic scenarios.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Implement pacing and replay overhead assessment",
-  "updated_at": "2026-09-06T20:22:38+00:00",
+  "updated_at": "2026-09-06T20:22:57+00:00",
   "worktree_key": "agent-systems-benchmark-replay-pacing"
 }
 ---
@@ -241,3 +241,14 @@ a fresh reconciliation.
 
 - 2026-09-06T20:22:38+00:00: Recorded command exit 0; command argv SHA-256
   ebee80c5ab08cdf2b2b116242eeeb11634f73b5255693fada12e7eebd457ade9.
+
+- 2026-09-06T20:22:57+00:00: Coordinator documentation blocker was repaired in signed+DCO commit
+  73d28a431c782e14b172d8309b5f76b71a4f1bf6, yielding candidate tree
+  45d17c2e5379fe0403cb61f037f5782b9f317908 on exact base ac4a235. Public docs now state that
+  incomplete failures release/retry, while a completely written final response commits even when
+  over-bound timing returns PacingError to prevent duplicate delivery. Repeated exact-tree full
+  gates and coverage passed unchanged; documentation repair diff SHA-256
+  ef685915dbda5b42e442fa0e9197dd456888061b98126461f77c99a7257e14fd. Remote feature/replay-pacing
+  equals 73d28a4 and PR #16 is open/mergeable against exact ac4a235. Exact-head CI runs started:
+  formal 34057788951, quality 34057789139, Rust x86_64+aarch64 34057788965. Do not merge pending
+  immutable review and green CI.
