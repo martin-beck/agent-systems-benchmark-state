@@ -6,7 +6,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | --- | --- | --- | ---: | --- |
 | `agent-systems-benchmark` | `main` | `9db4b6d74d44` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 6, ahead 0 |
-| `agent-systems-benchmark-durable-results` | `feature/durable-results` | `08602eca2fd4` | 0 | behind 0, ahead 2 |
+| `agent-systems-benchmark-durable-results` | `feature/durable-results` | `08602eca2fd4` | 2 | behind 0, ahead 2 |
+| changed files | - | - | - | `crates/asb-store/README.md`, `crates/asb-store/src/lib.rs` |
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 3, ahead 0 |
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `3baa4f9d0a74` | 1 | behind 2, ahead 0 |

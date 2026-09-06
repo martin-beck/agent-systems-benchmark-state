@@ -9,7 +9,7 @@
   "id": "AR-0104",
   "next_action": "Await exact-head PR 6 CI and independent immutable-head review; repair findings before coordinator integration.",
   "observed_branch": "feature/durable-results",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "08602eca2fd48a8665507e46b26e841ec2a70a54",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0104.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist manifests, event streams, artifact hashes and recoverable execution intentions.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Implement durable run storage and recovery",
-  "updated_at": "2026-09-06T17:04:03+00:00",
+  "updated_at": "2026-09-06T17:06:39+00:00",
   "worktree_key": "agent-systems-benchmark-durable-results"
 }
 ---
