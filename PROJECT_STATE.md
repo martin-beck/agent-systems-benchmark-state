@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #19 | `feature/agent-opendesk@8eb99d3c7235` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | agents: add pinned OpenDesk adapter |
+| #19 | `feature/agent-opendesk@8eb99d3c7235` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | agents: add pinned OpenDesk adapter |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 34064855632 | `8eb99d3c7235` | pull_request | Rust verification | completed:success |
-| 34064855578 | `8eb99d3c7235` | pull_request | Repository quality | in_progress:- |
+| 34064855578 | `8eb99d3c7235` | pull_request | Repository quality | completed:success |
 | 34064855511 | `8eb99d3c7235` | pull_request | Formal assurance | completed:success |
 | 34063766870 | `23035acde688` | workflow_dispatch | Rust verification | completed:success |
 | 34063737973 | `23035acde688` | workflow_dispatch | Repository quality | completed:success |
