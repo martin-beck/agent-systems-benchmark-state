@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Store versioned provider requests, event streams, causal IDs and integrity metadata.",
-  "task_revision": 110,
+  "task_revision": 111,
   "title": "Implement immutable response cassette format",
-  "updated_at": "2026-09-06T18:14:48+00:00",
+  "updated_at": "2026-09-06T18:15:42+00:00",
   "worktree_key": "agent-systems-benchmark-replay-cassettes"
 }
 ---
@@ -414,3 +414,6 @@ Implementation has not started. Read the linked plan before claiming.
   cargo-deny/audit, actionlint/zizmor and Gitleaks all pass. Replay line coverage 97.11% total;
   cassette 95.73%, migration 98.41%, redaction 99.03%; workspace 96.69%. Three signed commits remain
   directly atop exact base e6a81e8; no PR/push performed.
+
+- 2026-09-06T18:15:42+00:00: Recorded command exit 0; command argv SHA-256
+  aabadb023796cba82545aace83ec09a8eb2a051aed6bdbc68895a23b9ae86268.
