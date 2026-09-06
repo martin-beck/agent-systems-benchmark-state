@@ -715,6 +715,23 @@ def cmd_snapshot() -> None:
         print((ROOT / "CURRENT.md").read_text(), end="")
 
 
+def executable_source_from_stdin(command: list[str]) -> bool:
+    """Return whether a known interpreter would execute unhashable stdin source."""
+    program = Path(command[0]).name
+    arguments = command[1:]
+    shells = {"bash", "dash", "ksh", "sh", "zsh"}
+    interpreters = {"node", "perl", "python", "python3", "ruby"}
+    if program in shells:
+        if not arguments:
+            return True
+        return any(
+            argument == "-s"
+            or (argument.startswith("-") and not argument.startswith("--") and "s" in argument[1:])
+            for argument in arguments
+        )
+    return program in interpreters and "-" in arguments
+
+
 def require_active_owner(task_id: str, owner: str) -> None:
     """Fence wrapped commands with a live claim before external effects."""
     with locked(exclusive=False):
@@ -731,6 +748,10 @@ def require_active_owner(task_id: str, owner: str) -> None:
 def cmd_run(args: argparse.Namespace) -> int:
     if not args.command:
         raise RuntimeError("missing command")
+    if executable_source_from_stdin(args.command):
+        raise RuntimeError(
+            "executable source from stdin is forbidden because the argv digest cannot identify it"
+        )
     require_active_owner(args.task, args.owner)
     proc = subprocess.run(args.command, check=False)
     reconcile(do_commit=True, push=True)
@@ -746,7 +767,7 @@ def cmd_run(args: argparse.Namespace) -> int:
         priority=None,
         summary=None,
         next_action=None,
-        note=f"Recorded command exit {proc.returncode}; command SHA-256 {command_hash}.",
+        note=f"Recorded command exit {proc.returncode}; command argv SHA-256 {command_hash}.",
     )
     mutate(update, "update")
     return proc.returncode

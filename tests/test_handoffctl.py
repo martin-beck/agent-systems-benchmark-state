@@ -597,7 +597,7 @@ class HandoffTest(unittest.TestCase):
             patch.object(CORE, "mutate") as mutate,
         ):
             self.assertEqual(0, CORE.cmd_run(args))
-            self.assertIn("command SHA-256", mutate.call_args.args[0].note)
+            self.assertIn("command argv SHA-256", mutate.call_args.args[0].note)
             self.assertIsNone(mutate.call_args.args[0].expected_revision)
         with self.assertRaisesRegex(RuntimeError, "claim"):
             CORE.cmd_run(argparse.Namespace(task="AR-0001", owner="wrong", command=["true"]))
@@ -613,6 +613,18 @@ class HandoffTest(unittest.TestCase):
         ):
             CORE.cmd_run(argparse.Namespace(task="AR-0001", owner="worker-a", command=["true"]))
         command.assert_not_called()
+
+    def test_run_rejects_unhashable_executable_stdin(self) -> None:
+        for command in (["bash", "-s"], ["sh"], ["python3", "-"]):
+            with (
+                self.subTest(command=command),
+                patch.object(CORE.subprocess, "run") as subprocess_run,
+                self.assertRaisesRegex(RuntimeError, "source from stdin is forbidden"),
+            ):
+                CORE.cmd_run(argparse.Namespace(task="AR-0001", owner="worker-a", command=command))
+            subprocess_run.assert_not_called()
+        self.assertFalse(CORE.executable_source_from_stdin(["bash", "-lc", "true"]))
+        self.assertFalse(CORE.executable_source_from_stdin(["python3", "-c", "pass"]))
 
     def test_main_dispatches_every_command(self) -> None:
         cases = [
