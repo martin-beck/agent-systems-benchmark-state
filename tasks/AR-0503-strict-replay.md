@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Serve local recorded responses while real agent and tools execute.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Implement strict provider response replay",
-  "updated_at": "2026-09-06T18:53:01+00:00",
+  "updated_at": "2026-09-06T18:53:33+00:00",
   "worktree_key": "agent-systems-benchmark-strict-replay"
 }
 ---
@@ -150,3 +150,6 @@ Dependencies AR-0102 and AR-0502 are done. Read the linked plan and claim after 
   zero-context privacy diff scan, exact-range Gitleaks, deny/audit, controlled failure suite,
   platform tests, and schema byte parity. Coverage is 97.11% workspace, 97.15% replay crate, 96.73%
   service.rs. Worktree is clean; remote feature branch was absent.
+
+- 2026-09-06T18:53:33+00:00: Recorded command exit 0; command argv SHA-256
+  7d660ad94ac03be905721d6023f893a68cf4b895335fd534da429246bc86c2c9.
