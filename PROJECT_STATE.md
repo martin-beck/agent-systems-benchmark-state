@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #1 | `feature/coordination-docs@71618e18f9a3` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE | Correct handoffctl run syntax |
+| #1 | `feature/coordination-docs@02be24b76239` | `main` | UNKNOWN | - | Correct handoffctl run syntax |
 | #3 | `feature/extension-contracts@ef9fb488766b` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE | Define extension protocol v1 contracts |
 | #4 | `feature/replay-evaluation@64416f4ac508` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE | Evaluate replay dependency candidates |
 
