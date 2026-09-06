@@ -8,16 +8,16 @@
     "AR-0004"
   ],
   "id": "AR-0005",
-  "next_action": "Implement an atomic dependency-aware promote command and concurrency/failure tests.",
+  "next_action": "Await immutable independent review of exact state PR #4 head 4e56e83 and integrate only after verified green CI.",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0005.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make planned-to-open promotion a transactional handoffctl operation.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Add transactional AR promotion",
-  "updated_at": "2026-09-06T20:57:24+00:00",
+  "updated_at": "2026-09-06T21:01:33+00:00",
   "worktree_key": "agent-systems-benchmark-state-promotion"
 }
 ---
@@ -71,3 +71,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T20:57:24+00:00: Recorded command exit 0; command argv SHA-256
   9477854e1f368e0046d6d920c5ef4fc22e90cbba97bcd9a22639948b5cfac410.
+
+- 2026-09-06T21:01:33+00:00: Signed+DCO candidate 4e56e83 implements
+  dependency/revision/status/clean-checkout preflight, atomic task plus CURRENT/STATUS regeneration,
+  rollback before durable commit, durable local state after replication failure, and documented
+  interruption recovery. Exact tests: 37 coordinator fault/race tests, Ruff, strict mypy, schema,
+  generated views, privacy/static doctor, and 97% branch-aware combined coverage. State PR #4
+  opened; exact CI 34059561972 succeeded.
