@@ -7,7 +7,7 @@
     "AR-0102"
   ],
   "id": "AR-0103",
-  "next_action": "Await coordinator independent immutable-head review of PR #10 exact a2ebac54; all exact-head hosted checks are green. Do not merge or release.",
+  "next_action": "Rerun complete exact-tree gates on signed repair 832e72c after one intermittent fake-tool ETXTBSY; then push PR #10 and require fresh immutable-head review/CI. Do not merge or release.",
   "observed_branch": "feature/sandbox-runtime",
   "observed_dirty": 0,
   "observed_head": "832e72c2293c7e95312fd2e9c3454baa6d9611da",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 215,
+  "task_revision": 216,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T19:18:48+00:00",
+  "updated_at": "2026-09-06T19:19:49+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
@@ -639,3 +639,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T19:18:48+00:00: Recorded command exit 101; command argv SHA-256
   0f0480a44f628265997528f8d97054c497b9b7c505b076c54f5f43bad99be6d0.
+
+- 2026-09-06T19:19:49+00:00: Independent review blockers repaired at signed+DCO 832e72c: internal
+  kernel-random scope IDs; reserved nonce proven inside the exact cgroup before returning; live
+  harmless pre-existing-scope collision proves unrelated scope is never stopped; unproven ownership
+  and cleanup uncertainty conservatively retain leases; Drop retries cleanup after terminal leader;
+  deterministic and real descendant tests prove retry and zero residuals. A short-process ownership
+  race and timeout cancellation/reap gap were discovered and fixed. Three serialized full
+  native/unit repetitions passed with zero residual scopes/helpers/leases. Coverage now sandbox.rs
+  95.05% regions and 97.54% lines, workspace runtime coverage 95.15% regions and 97.89% lines. Full
+  workspace gate then hit one intermittent ETXTBSY executing a fresh fake systemctl fixture; focused
+  fixture test subsequently passed 20 repetitions. One focused diagnostic repetition command was
+  mistakenly invoked without handoffctl; it changed no source or Git state, only the existing
+  worktree target cache. Root Cargo files remain untouched.
