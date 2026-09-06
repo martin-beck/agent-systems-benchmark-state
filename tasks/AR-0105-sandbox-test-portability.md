@@ -7,7 +7,7 @@
     "AR-0103"
   ],
   "id": "AR-0105",
-  "next_action": "Promote after confirming AR-0103 remains done, then repair the isolated-target fixture before resuming blocked full-tree gates.",
+  "next_action": "Resolve newly exposed sandbox_boundary.rs target_root ownership, then rerun full isolated-target gates without masking.",
   "observed_branch": "fix/sandbox-test-portability",
   "observed_dirty": 0,
   "observed_head": "2b28fee781afed113d2b468f8480f4eb71d01feb",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Repair sandbox test target portability",
-  "updated_at": "2026-09-06T21:21:27+00:00",
+  "updated_at": "2026-09-06T21:21:47+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-test-portability"
 }
 ---
@@ -84,3 +84,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T21:21:27+00:00: Recorded command exit 0; command argv SHA-256
   25207b320ad4204782e2db1b7cacc6fa99a74d8a745e25d61895e0601ee06505.
+
+- 2026-09-06T21:21:47+00:00: Original main 9543a32 failure reproduced at sandbox.rs:1329 with fresh
+  external CARGO_TARGET_DIR and absent repository target. Signed+DCO fixture-only candidate 2b28fee
+  changes only sandbox.rs tests: external-target/temp scratch base, PID plus atomic uniqueness, RAII
+  fixture cleanup, and panic-path/no-repository-target regression. Original and negative tests pass
+  on three distinct fresh targets with no residuals; one fresh full workspace run passed. A later
+  fresh full run exposed a separate order-dependent ENOENT at tests/sandbox_boundary.rs:187 because
+  target_root at line 44 still hardcodes repository target and the panic sentinel may execute before
+  another test creates it. That path is outside current AR ownership; it was not edited or masked,
+  and the empty residual target directory was removed. Clippy typo attempts and exact outcomes are
+  retained in wrapper evidence.
