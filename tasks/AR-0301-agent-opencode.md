@@ -10,7 +10,7 @@
   "id": "AR-0301",
   "next_action": "Claim after a fresh reconciliation, then inspect the pinned upstream CLI/server contract and implement the isolated adapter.",
   "observed_branch": "feature/agent-opencode",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "c9e3653ebd9955f433e65f0c3110421166ac03c7",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0301.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned OpenCode through its structured supported interfaces.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Implement OpenCode client adapter",
-  "updated_at": "2026-09-06T19:01:43+00:00",
+  "updated_at": "2026-09-06T19:04:05+00:00",
   "worktree_key": "agent-systems-benchmark-agent-opencode"
 }
 ---
