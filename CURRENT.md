@@ -9,13 +9,8 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0103](tasks/AR-0103-sandbox-runtime.md): Implement isolated execution and resource leases | Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets. | Await independent immutable-head re-review and exact-head CI for PR #10 at 832e72c; rebase only on explicit coordinator handoff. Do not merge or release. | contracts-20260906 |
 | P1 | [AR-0301](tasks/AR-0301-agent-opencode.md): Implement OpenCode client adapter | Run pinned OpenCode through its structured supported interfaces. | Claim after a fresh reconciliation, then inspect the pinned upstream CLI/server contract and implement the isolated adapter. | root-coordination-20260906 |
+| P1 | [AR-0504](tasks/AR-0504-replay-pacing.md): Implement pacing and replay overhead assessment | Support immediate, fixed-latency, original-paced and seeded synthetic scenarios. | Claim after a fresh reconciliation, then implement monotonic pacing, cancellation, backpressure, and independent saturation calibration. | replay-20260906 |
 | P1 | [AR-0901](tasks/AR-0901-formal-assurance.md): Prove critical state and concurrency invariants | Use bounded proofs and model tests for safety-critical domain logic. | Claim after a fresh reconciliation, then pin the verifier toolchains and implement the smallest dependency-ready invariant set. | quality-20260906 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0504](tasks/AR-0504-replay-pacing.md): Implement pacing and replay overhead assessment | Support immediate, fixed-latency, original-paced and seeded synthetic scenarios. | Claim after a fresh reconciliation, then implement monotonic pacing, cancellation, backpressure, and independent saturation calibration. | - |
 
 ## Planned
 

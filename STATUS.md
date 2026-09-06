@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**44 ARs tracked** across 4 active status categories.
+**44 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 27 |
 | **Future** | Deferred roadmap work | 0 |
@@ -68,7 +68,7 @@ flowchart LR
         AR_0501["AR-0501 - Done"]:::status_done
         AR_0502["AR-0502 - Done"]:::status_done
         AR_0503["AR-0503 - Done"]:::status_done
-        AR_0504["AR-0504 - Open"]:::status_open
+        AR_0504["AR-0504 - In progress"]:::status_in_progress
         AR_0505["AR-0505 - Planned"]:::status_planned
     end
     subgraph series_06["06 - Metrics"]
@@ -273,19 +273,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0103](tasks/AR-0103-sandbox-runtime.md): Implement isolated execution and resource leases | contracts-20260906 | Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets. | Await independent immutable-head re-review and exact-head CI for PR #10 at 832e72c; rebase only on explicit coordinator handoff. Do not merge or release. |
 | P1 | [AR-0301](tasks/AR-0301-agent-opencode.md): Implement OpenCode client adapter | root-coordination-20260906 | Run pinned OpenCode through its structured supported interfaces. | Claim after a fresh reconciliation, then inspect the pinned upstream CLI/server contract and implement the isolated adapter. |
+| P1 | [AR-0504](tasks/AR-0504-replay-pacing.md): Implement pacing and replay overhead assessment | replay-20260906 | Support immediate, fixed-latency, original-paced and seeded synthetic scenarios. | Claim after a fresh reconciliation, then implement monotonic pacing, cancellation, backpressure, and independent saturation calibration. |
 | P1 | [AR-0901](tasks/AR-0901-formal-assurance.md): Prove critical state and concurrency invariants | quality-20260906 | Use bounded proofs and model tests for safety-critical domain logic. | Claim after a fresh reconciliation, then pin the verifier toolchains and implement the smallest dependency-ready invariant set. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0504](tasks/AR-0504-replay-pacing.md): Implement pacing and replay overhead assessment | Unclaimed | Support immediate, fixed-latency, original-paced and seeded synthetic scenarios. | Claim after a fresh reconciliation, then implement monotonic pacing, cancellation, backpressure, and independent saturation calibration. |
 
 ### Planned (27)
 
