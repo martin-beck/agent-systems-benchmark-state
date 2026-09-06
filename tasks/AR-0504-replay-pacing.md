@@ -8,7 +8,7 @@
     "AR-0201"
   ],
   "id": "AR-0504",
-  "next_action": "Run exact-tree coverage and complete workspace quality, formal, privacy and supply-chain gates; then create focused signed+DCO candidate for immutable review.",
+  "next_action": "Await coordinator immutable review of signed candidate 658221c45c75cc871e766d1959488aa95402fb9e; publish only after review/base serialization, then require exact-head CI.",
   "observed_branch": "feature/replay-pacing",
   "observed_dirty": 0,
   "observed_head": "658221c45c75cc871e766d1959488aa95402fb9e",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support immediate, fixed-latency, original-paced and seeded synthetic scenarios.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Implement pacing and replay overhead assessment",
-  "updated_at": "2026-09-06T20:18:36+00:00",
+  "updated_at": "2026-09-06T20:18:55+00:00",
   "worktree_key": "agent-systems-benchmark-replay-pacing"
 }
 ---
@@ -209,3 +209,20 @@ a fresh reconciliation.
 
 - 2026-09-06T20:18:36+00:00: Recorded command exit 0; command argv SHA-256
   5b48bdf40e8d27a1cf24aec0e7e05a1747eed785fe6c7c3ff7cafc7184d0d9a5.
+
+- 2026-09-06T20:18:55+00:00: Clean AR-0504 candidate is SSH-signed+DCO commit
+  658221c45c75cc871e766d1959488aa95402fb9e, tree 740ad6621393aa8688b8943d00e284ee50df25af, rebased
+  exactly onto signed main ac4a2359964910e93a1fd034fd16689a563f973b; range-diff from pre-rebase
+  caeafdac5b313dd1eb98691fa45792042bdbbdf9 is exact equals. Scope is exactly six asb-replay paths;
+  no Cargo/schema/root changes. Exact-commit gates passed: fmt, workspace Clippy warnings-denied,
+  all workspace tests including native sandbox/process boundaries, rustdoc warnings-denied, release
+  build/CLI success+negative exit, formal Loom/state/production-trace suite, locked formal metadata,
+  cargo-deny, cargo-audit, repository+SSH+DCO policy, actionlint, zizmor, introduced-range Gitleaks,
+  all controlled gate-failure fixtures, platform manifests/tests, and clean tree. Coverage passed:
+  workspace 97.19% lines; asb-replay 97.31% lines; pacing.rs 96.63% lines and 96.46% regions (LLVM
+  branch counters unavailable and reported zero denominator). Pinned Kani binary is unavailable
+  locally; hosted formal CI must run Kani 0.67.0 and its deliberate negative. Remaining limits:
+  timing is monotonic process evidence, not packet/wall-clock determinism; successful socket write
+  means local-kernel acceptance, not peer consumption; generic Write callers must provide their own
+  interruptible transport deadline; headroom verdict only assesses supplied independent bounded
+  observations and does not itself collect them.
