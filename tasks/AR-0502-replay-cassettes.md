@@ -8,7 +8,7 @@
     "AR-0501"
   ],
   "id": "AR-0502",
-  "next_action": "Await independent immutable-head review of candidate 6e7e6d4a813a851c57782cb651165e6a8fef193f; repair findings before any push or PR.",
+  "next_action": "Run full exact-tree quality/supply/privacy gates on review repairs, commit a focused SSH-signed DCO repair, and report the new immutable head for re-review before PR.",
   "observed_branch": "feature/replay-cassettes",
   "observed_dirty": 10,
   "observed_head": "6e7e6d4a813a851c57782cb651165e6a8fef193f",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Store versioned provider requests, event streams, causal IDs and integrity metadata.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "Implement immutable response cassette format",
-  "updated_at": "2026-09-06T18:05:48+00:00",
+  "updated_at": "2026-09-06T18:06:13+00:00",
   "worktree_key": "agent-systems-benchmark-replay-cassettes"
 }
 ---
@@ -317,3 +317,25 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T18:05:48+00:00: Recorded command exit 0; command argv SHA-256
   1974ff30a8b00aaca8ec5adfb60ad0d19402e5f66170060f02fce17e3cc9b296.
+
+- 2026-09-06T18:06:13+00:00: Independent review blockers reproduced and repaired in the dirty tree.
+  Redaction keys are now collision-free typed Text versus canonical Json keys: semantic strings
+  share placeholders across header/query/JSON-string locations while quoted-string and non-string
+  representations remain distinct; cross-location and adversarial collision tests pass. A shared
+  validator now rejects non-canonical origin forms (network-path references, fragments, backslashes,
+  parser rewrites and control characters) and header control bytes at redaction/seal and
+  authenticated decode boundaries; schema and recomputed-root negative vectors cover //host,
+  fragment, backslash, CRLF, NUL and tab. Root/payload digests now use an explicit recursive
+  canonical writer sorting object names by UTF-8 bytes, retaining arrays, omitting whitespace and
+  delegating scalar spelling to pinned serde_json 1.0.143; reordered nested-object byte/digest
+  vectors and updated fixture roots pass. Root fixtures are
+  4122259a3fcc0fd8004eb247ffb6f222ed43a92b3cc779c0bcd26f1b9b159d16 and
+  e0a11e7006bca76c4e4d30ae7567dcebff65d3c0d48d17bdcfc0b234b26974f9. Retained patch hashes:
+  d6b9fa96ad6dffe85069e65328610ed0a47d74567c842180baa696eb0886ae65,
+  bf7cef2ac6a5ae8b035f2d7094e9228ec7004ce6d21e1c7d2b23b877395a5a02,
+  1b3335e68c1c4bf9f467da02546a4a2e6025a896a6575e1a11bc812df9a033f6,
+  660a94113695de7105a901d552ac8b5797d441c68a4c46a88cd876595489d264,
+  1109251ef0cec46c3c6ab1aa9359521d2afa16bba4dae79850afe60146efa894. Intermediate non-ASCII
+  byte-literal compile and moved-borrow compile failures were repaired; the expected stale-fixture
+  integrity failure led to independently recomputed roots. Focused fmt/Clippy/tests and 97.07%
+  replay line coverage pass.
