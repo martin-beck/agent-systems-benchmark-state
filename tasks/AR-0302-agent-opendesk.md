@@ -8,7 +8,7 @@
     "AR-0102"
   ],
   "id": "AR-0302",
-  "next_action": "Await independent immutable review of c331c2b; publish only if approved, then require exact-head CI.",
+  "next_action": "Publish approved 8eb99d3, require exact-head CI and immutable review, integrate only signed+DCO green head, then run post-merge verification.",
   "observed_branch": "feature/agent-opendesk",
   "observed_dirty": 0,
   "observed_head": "8eb99d3c72358ec2666ef2401cb01331a1ac48a9",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support the bitclub OpenDesk CLI with its own dialect and compatibility record.",
-  "task_revision": 147,
+  "task_revision": 148,
   "title": "Implement OpenDesk client adapter",
-  "updated_at": "2026-09-06T22:42:38+00:00",
+  "updated_at": "2026-09-06T22:42:58+00:00",
   "worktree_key": "agent-systems-benchmark-agent-opendesk"
 }
 ---
@@ -440,3 +440,19 @@ Implementation has not started. Read the linked plan before claiming.
   9ecc03df4077b58712bd6a415a8231091ca913d0ec3d27a0f58a82ee37cb87bd.
 
 - 2026-09-06T22:42:38+00:00: Heartbeat by root-coordination-20260906.
+
+- 2026-09-06T22:42:58+00:00: Supersedes c331c2b after independent review found Node 26 environment
+  proxy was not activated and a provider host of openharmony.cn would bypass the proxy for the
+  telemetry subdomain. Signed+DCO successor 8eb99d3 activates --use-env-proxy and
+  NODE_USE_ENV_PROXY, rejects the exact telemetry host and every ancestor NO_PROXY suffix,
+  classifies empty runtime as RuntimeMismatch, and adds negatives. Exact syscall evidence contains
+  46 loopback-only AF_INET connects: 2 to the deliberately closed proxy and 44 to local provider
+  fixture ports, with no non-loopback or AF_INET6 destination; independent immutable review
+  APPROVED. Exact-tree fmt/clippy/workspace tests/docs/release, focused 21 tests, real pinned
+  OpenDesk journey, coverage, deny/audit, actionlint/zizmor/Gitleaks, repository/DCO, failure
+  fixtures, Loom/state models, 5 Kani proofs and Kani counterexample all pass. Direct cargo-llvm-cov
+  was once run outside handoff while diagnosing missed lines; it created only external build/test
+  artifacts under the approved project root and changed no repository state. Bare handoffctl and
+  three bare cargo invocations plus one failure-fixture cargo subprocess failed before intended work
+  because PATH was sanitized; durable exits were recorded and successful absolute/pinned-PATH
+  retries followed.
