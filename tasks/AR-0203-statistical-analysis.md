@@ -9,7 +9,7 @@
   "id": "AR-0203",
   "next_action": "Define statistical estimators and fixed reference vectors.",
   "observed_branch": "feature/statistical-analysis",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "5c9b79b2a25ef2a7a485e53728ef0dfdfdd36530",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0203.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compute latency distributions, quality/throughput intervals and evidence-aware SLO results.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Implement statistical and SLO assessment",
-  "updated_at": "2026-09-06T17:22:36+00:00",
+  "updated_at": "2026-09-06T17:29:05+00:00",
   "worktree_key": "agent-systems-benchmark-statistical-analysis"
 }
 ---

@@ -14,4 +14,5 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-replay-cassettes` | `feature/replay-cassettes` | `10974f60be6f` | 1 | behind 4, ahead 0 |
 | changed files | - | - | - | `crates/asb-replay/` |
 | `agent-systems-benchmark-replay-evaluation` | `feature/replay-evaluation` | `3d04a2d5a3b3` | 0 | behind 7, ahead 0 |
-| `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `5c9b79b2a25e` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `5c9b79b2a25e` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-analysis/` |
