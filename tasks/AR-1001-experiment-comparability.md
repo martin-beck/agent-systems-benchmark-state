@@ -10,7 +10,7 @@
   "id": "AR-1001",
   "next_action": "Rebase once after AR-0301 integration, take transferred Cargo/schema fence, wire modules, generate checked-in schema and matched/confounded fixtures, then run full gates.",
   "observed_branch": "feature/experiment-comparability",
-  "observed_dirty": 15,
+  "observed_dirty": 16,
   "observed_head": "9543a3297dd9d0ca93c802bb204b099ac1df569b",
   "owner": "quality-20260906",
   "plan": "../plans/AR-1001.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make every comparison content-addressed and explicit about agent, model, workload and platform confounders.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Define experiment identity and comparability",
-  "updated_at": "2026-09-06T20:54:19+00:00",
+  "updated_at": "2026-09-06T20:54:35+00:00",
   "worktree_key": "agent-systems-benchmark-experiment-comparability"
 }
 ---
