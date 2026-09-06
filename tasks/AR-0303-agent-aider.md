@@ -10,7 +10,7 @@
   "id": "AR-0303",
   "next_action": "Await independent immutable-head review of a0943e94; repair findings before branch publication.",
   "observed_branch": "feature/agent-aider",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "a0943e94cf2d5156c2aac1178d1bc505301d09b8",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0303.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support unattended aider editing with bounded input, output and repository changes.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Implement aider client adapter",
-  "updated_at": "2026-09-06T23:32:38+00:00",
+  "updated_at": "2026-09-06T23:33:43+00:00",
   "worktree_key": "agent-systems-benchmark-agent-aider"
 }
 ---
