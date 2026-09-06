@@ -9,18 +9,18 @@
   ],
   "id": "AR-0310",
   "next_action": "Await coordinator authorization to integrate independently reviewed green PR 23 exact head 3f9edc3305c13f3fb9b5555c6cdfa7c4e2bbd5ce.",
-  "observed_branch": "DETACHED",
-  "observed_dirty": 17,
-  "observed_head": "110c0e999147dcb20cd9c4b5db2fe987bc3e896c",
+  "observed_branch": "feature/provider-profile-contract",
+  "observed_dirty": 0,
+  "observed_head": "2870b68d0ca0e0b1a665baa979ae8acc282e21d5",
   "owner": "quality-20260906",
   "plan": "../plans/AR-0310.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Normalize one provider configuration for safe translation across heterogeneous agent adapters.",
-  "task_revision": 121,
+  "task_revision": 122,
   "title": "Define common provider profiles",
-  "updated_at": "2026-09-06T23:54:28+00:00",
+  "updated_at": "2026-09-06T23:54:48+00:00",
   "worktree_key": "agent-systems-benchmark-provider-profile-contract"
 }
 ---
