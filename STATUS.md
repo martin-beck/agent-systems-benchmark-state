@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**44 ARs tracked** across 4 active status categories.
+**44 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 29 |
 | **Future** | Deferred roadmap work | 0 |
@@ -49,7 +49,7 @@ flowchart LR
     end
     subgraph series_03["03 - Adapters and workloads"]
         direction TB
-        AR_0301["AR-0301 - Open"]:::status_open
+        AR_0301["AR-0301 - In progress"]:::status_in_progress
         AR_0302["AR-0302 - Planned"]:::status_planned
         AR_0303["AR-0303 - Planned"]:::status_planned
         AR_0304["AR-0304 - Planned"]:::status_planned
@@ -273,19 +273,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0103](tasks/AR-0103-sandbox-runtime.md): Implement isolated execution and resource leases | contracts-20260906 | Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets. | Await coordinator independent immutable-head review of PR #10 exact a2ebac54; all exact-head hosted checks are green. Do not merge or release. |
 | P1 | [AR-0201](tasks/AR-0201-portable-metrics.md): Collect portable system and session metrics | quality-20260906 | Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling. | Await coordinator transfer of serialized Cargo workspace/lock fence; then integrate crate membership on current main, rerun exact-workspace/full quality gates, publish PR, and obtain immutable review. |
+| P1 | [AR-0301](tasks/AR-0301-agent-opencode.md): Implement OpenCode client adapter | root-coordination-20260906 | Run pinned OpenCode through its structured supported interfaces. | Claim after a fresh reconciliation, then inspect the pinned upstream CLI/server contract and implement the isolated adapter. |
 | P1 | [AR-0503](tasks/AR-0503-strict-replay.md): Implement strict provider response replay | replay-20260906 | Serve local recorded responses while real agent and tools execute. | Independently review five-path diff, run complete exact-tree workspace/quality/privacy/supply gates, then create a focused signed+DCO candidate; root Cargo files remain untouched. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0301](tasks/AR-0301-agent-opencode.md): Implement OpenCode client adapter | Unclaimed | Run pinned OpenCode through its structured supported interfaces. | Claim after a fresh reconciliation, then inspect the pinned upstream CLI/server contract and implement the isolated adapter. |
 
 ### Planned (29)
 
