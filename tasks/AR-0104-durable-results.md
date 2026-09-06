@@ -7,7 +7,7 @@
     "AR-0101"
   ],
   "id": "AR-0104",
-  "next_action": "Implement the atomic store and versioned run journal in the verified product worktree.",
+  "next_action": "Await exact-head PR 6 CI and independent immutable-head review; repair findings before coordinator integration.",
   "observed_branch": "feature/durable-results",
   "observed_dirty": 0,
   "observed_head": "f6cd02eef6b72ea84889bf912947e7460bfdccba",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist manifests, event streams, artifact hashes and recoverable execution intentions.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Implement durable run storage and recovery",
-  "updated_at": "2026-09-06T16:56:18+00:00",
+  "updated_at": "2026-09-06T16:56:32+00:00",
   "worktree_key": "agent-systems-benchmark-durable-results"
 }
 ---
@@ -141,3 +141,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T16:56:18+00:00: Recorded command exit 0; command argv SHA-256
   091c866da2911785b41cbdf2ff456972705ff826bfa245e5281fb6cec0a9bc9a.
+
+- 2026-09-06T16:56:32+00:00: Published product PR 6 at signed+DCO head
+  f6cd02eef6b72ea84889bf912947e7460bfdccba. Exact-tree local gates passed: 38 Rust tests plus
+  doctests, fmt, Clippy, rustdoc, release, deny/audit, workspace 96.41 percent lines, asb-protocol
+  96.15 percent, asb-store 95.83 percent, replay fixtures/Ruff, actionlint, zizmor, range Gitleaks,
+  policy/DCO/signatures, all controlled failures, and clean tree. Store tests cover
+  partial/disk-full/rename crash points, truncation/checksum/version corruption, bounded
+  serialization/artifacts, private modes, independent-writer locking, invalid transitions, stale
+  attempts, and conservative running recovery. Limits: local Linux fsync and same-filesystem rename
+  semantics remain environmental assumptions.
