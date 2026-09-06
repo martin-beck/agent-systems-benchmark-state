@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Adapt generic coordination tooling for public ASB workers without importing private state. | Audit reused coordinator and add conformance tests for ASB-specific adaptations. | root-coordination-20260906 |
-| P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Implement a locked quality tool manifest and failure-path checks. | quality-20260906 |
+| P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Create declared branch and worktree with owner-first handoffctl run syntax, then audit current quality surface. | quality-20260906 |
 
 ## Open
 
