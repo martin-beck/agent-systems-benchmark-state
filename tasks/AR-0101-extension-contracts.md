@@ -9,7 +9,7 @@
   "id": "AR-0101",
   "next_action": "Await independent merge of quality PR 2, then rebase PR 3 onto corrected main and require fresh exact-head CI.",
   "observed_branch": "feature/extension-contracts",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "a40088879e9a6a64b9a9d268d7f51baa0cb242d2",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0101.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Specify typed agent, workload, collector, runtime and result contracts before parallel implementations.",
-  "task_revision": 98,
+  "task_revision": 99,
   "title": "Freeze versioned extension and result contracts",
-  "updated_at": "2026-09-06T16:13:59+00:00",
+  "updated_at": "2026-09-06T16:16:31+00:00",
   "worktree_key": "agent-systems-benchmark-extension-contracts"
 }
 ---
