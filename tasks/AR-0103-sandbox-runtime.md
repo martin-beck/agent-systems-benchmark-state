@@ -7,7 +7,7 @@
     "AR-0102"
   ],
   "id": "AR-0103",
-  "next_action": "Await coordinator independent immutable-head approval of PR #10 exact d8601c2; do not merge or release.",
+  "next_action": "Await coordinator post-merge local verification; release AR-0103 only after explicit confirmation.",
   "observed_branch": "feature/sandbox-runtime",
   "observed_dirty": 0,
   "observed_head": "d8601c22982f634808826da01030e3c09733ee59",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 274,
+  "task_revision": 275,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T19:47:11+00:00",
+  "updated_at": "2026-09-06T19:47:29+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
@@ -818,3 +818,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T19:47:11+00:00: Recorded command exit 101; command argv SHA-256
   8ddb54febb35f3cf4263635937b10e96d260e228b20acc61b7d0d29b71d53ec3.
+
+- 2026-09-06T19:47:29+00:00: PR #10 is MERGED with exact merge
+  4d716973f483f0d6387798496302180a246140b6. Remote main resolves exactly to 4d71697; merge parents
+  are exact prior main 1621103 and reviewed feature d8601c2, with Martin Beck author/committer and
+  exact Signed-off-by trailer plus SSH signature payload (GitHub reports unknown_key as expected for
+  the repository-local allowed-signers boundary). Exact-main hosted Rust run 34055890354 passed
+  x86_64 and aarch64; repository quality run 34055890362 passed. Lease renewed. Await coordinator
+  post-merge local checks; do not release yet.
