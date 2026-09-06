@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #5 | `feature/platform-manifests@dff27a9acb4f` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | platforms: pin initial support manifests |
+| #5 | `feature/platform-manifests@dff27a9acb4f` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: pin initial support manifests |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34046717411 | `dff27a9acb4f` | pull_request | Rust verification | in_progress:- |
-| 34046717386 | `dff27a9acb4f` | pull_request | Repository quality | in_progress:- |
+| 34046717411 | `dff27a9acb4f` | pull_request | Rust verification | completed:success |
+| 34046717386 | `dff27a9acb4f` | pull_request | Repository quality | completed:success |
 | 34046060074 | `9db4b6d74d44` | push | Rust verification | completed:success |
 | 34046060062 | `9db4b6d74d44` | push | Repository quality | completed:success |
 | 34045836000 | `3d04a2d5a3b3` | pull_request | Rust verification | completed:success |
