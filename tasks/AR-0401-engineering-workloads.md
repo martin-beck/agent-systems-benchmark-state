@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0401",
-  "next_action": "Repair scratch-root boundary, rerun exact full gates, and submit a signed successor to superseded 3bef7cf for independent review.",
+  "next_action": "Await independent immutable review of clean signed successor 6f80867; publish only after approval and exact-base recheck, then require x86_64/aarch64 exact-head CI.",
   "observed_branch": "feature/engineering-workloads",
   "observed_dirty": 0,
   "observed_head": "6f808671a232bc9d1afb5c39591049ee50f99c21",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API.",
-  "task_revision": 106,
+  "task_revision": 107,
   "title": "Implement original engineering workloads",
-  "updated_at": "2026-09-06T22:16:27+00:00",
+  "updated_at": "2026-09-06T22:17:01+00:00",
   "worktree_key": "agent-systems-benchmark-engineering-workloads"
 }
 ---
@@ -365,3 +365,24 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T22:16:27+00:00: Recorded command exit 0; command argv SHA-256
   f11267dff15054a63af8731f2d3ee9c5516429aa038643fad45d40de6822812d.
+
+- 2026-09-06T22:17:01+00:00: Scratch-root repair successor is signed+DCO commit
+  6f808671a232bc9d1afb5c39591049ee50f99c21, tree 739935881ff24ee715f95c97000b10c790ada7f6, based on
+  exact b7e9078. The two-commit range has 34 paths limited to Cargo.toml, Cargo.lock and
+  crates/asb-workloads; both commits have valid SSH signatures and DCO. Exact-head fmt, workspace
+  all-target Clippy, full workspace tests, rustdoc, release build/CLI negatives, repository policy,
+  actionlint, zizmor, complete-introduced-history Gitleaks, cargo-deny, cargo-audit, controlled
+  quality failure fixtures, platform validation/negatives and diff cleanliness pass. Coverage passes
+  at workspace 93.81% regions/97.02% lines/95.66% functions and asb-workloads 95.27% regions/99.26%
+  lines/100% functions. Formal Loom, exhaustive state, production-trace tests, all five pinned Kani
+  proofs and the deliberate Kani counterexample pass. All commands used TMPDIR, ASB_TEST_SCRATCH,
+  targets and caches under /srv/data/projects/.asb-local. A first exact-head command failed before
+  execution due a mistyped expected hash; a first formal proof command passed Rust formal tests but
+  lacked cargo-kani in PATH. The corrected Kani command initially discovered its bundle default
+  outside the configured development root; it was interrupted before proof execution, no child
+  remained, and that exact newly created cache was removed nonrecoverably because an identical
+  pinned bundle exists under /srv/data/projects. Corrected KANI_HOME under /srv/data/projects then
+  passed. A final audit command verified scope/signatures/DCO/residue but omitted ASB_QUALITY_BIN
+  before Gitleaks; after concurrent AR-0602 atomic state repair, only the unreached Gitleaks/stat
+  portion was rerun and passed. No temporary-directory workload roots, out-of-root Kani cache,
+  configured test-attempt residue or workload process remains. No PR/push is claimed.
