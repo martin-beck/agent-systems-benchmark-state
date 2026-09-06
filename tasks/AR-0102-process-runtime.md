@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run real client processes with bounded I/O, monotonic deadlines and process-tree ownership.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Implement process execution and cancellation",
-  "updated_at": "2026-09-06T17:09:50+00:00",
+  "updated_at": "2026-09-06T17:10:23+00:00",
   "worktree_key": "agent-systems-benchmark-process-runtime"
 }
 ---
@@ -99,3 +99,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T17:09:50+00:00: Recorded command exit 0; command argv SHA-256
   c737631d58603d1cf1a3431b5e9d725f739e471f68ccf4fb65a5b9bb22022aa4.
+
+- 2026-09-06T17:10:23+00:00: Read-only independent re-review approved AR-0104 immutable repair head
+  eb9bd888 pending fresh hosted exact-head CI. The repair closes first-use fsync, root/lock/run and
+  manifest/journal/artifact final symlink issues, handles single-component relative parents, tests
+  each class, and explicitly scopes hostile same-UID ancestor replacement plus simulated ENOSPC
+  evidence. Separately, AR-0102 self-review fixed a terminal error path: drain results are collected
+  while PID remains fenced, the leader is reaped and lifecycle marked terminal before evidence
+  errors propagate, so Drop cannot signal a reused PGID after an output failure.
