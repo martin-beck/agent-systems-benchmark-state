@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling.",
-  "task_revision": 152,
+  "task_revision": 153,
   "title": "Collect portable system and session metrics",
-  "updated_at": "2026-09-06T19:05:05+00:00",
+  "updated_at": "2026-09-06T19:09:42+00:00",
   "worktree_key": "agent-systems-benchmark-portable-metrics"
 }
 ---
@@ -424,3 +424,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-06T19:05:05+00:00: Fresh exact-head hosted checks for repaired a0f67bea passed: quality
   run 34053668506; Rust run 34053668457 on ubuntu-24.04 x86_64 and ubuntu-24.04-arm. Both
   fail-closed review repairs are therefore locally and remotely green.
+
+- 2026-09-06T19:09:42+00:00: Recorded command exit 0; command argv SHA-256
+  50ea5d1d0ab9e88bdc8984dfce486913820bd89a2e051509a5274f6da24687da.
