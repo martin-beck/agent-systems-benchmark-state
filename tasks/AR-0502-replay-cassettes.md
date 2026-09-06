@@ -8,7 +8,7 @@
     "AR-0501"
   ],
   "id": "AR-0502",
-  "next_action": "Complete corrected schema parity, verify exact-main hosted x86_64/aarch64 and quality runs, reconcile/live doctor, then release done.",
+  "next_action": "Run full coordination validation, reconcile/snapshot/live doctor, verify clean synchronized repositories, then release AR-0502 done and return Cargo fence.",
   "observed_branch": "feature/replay-cassettes",
   "observed_dirty": 0,
   "observed_head": "cd88f5703fb300aca18c7d46d7215c1bf6f5b8e5",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Store versioned provider requests, event streams, causal IDs and integrity metadata.",
-  "task_revision": 119,
+  "task_revision": 120,
   "title": "Implement immutable response cassette format",
-  "updated_at": "2026-09-06T18:20:49+00:00",
+  "updated_at": "2026-09-06T18:21:35+00:00",
   "worktree_key": "agent-systems-benchmark-replay-cassettes"
 }
 ---
@@ -455,3 +455,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T18:20:49+00:00: Recorded command exit 0; command argv SHA-256
   ae736ef36f46807f8470b2c15bb19203bffe2e2e4a63d4dd349e5bf5be688e83.
+
+- 2026-09-06T18:21:35+00:00: Corrected exact-main schema export succeeded with declared target and
+  isolated OUTPUT_DIRECTORY; generated cassette.schema.json is byte-identical to
+  crates/asb-replay/schema/v1/cassette.schema.json. Hosted exact-main commit
+  265d811b765e2300510445bfb7abf59ae5a0604f is green: quality/supply run 34051300070 job
+  101535296803; Rust run 34051300116 jobs 101535297065 x86_64 and 101535296933 aarch64. Both
+  repositories and PR refs will be checked again before release.
