@@ -10,15 +10,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #18 | `fix/sandbox-test-portability@eea3d202b226` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS | tests: isolate sandbox scratch fixtures |
+| #18 | `fix/sandbox-test-portability@eea3d202b226` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | tests: isolate sandbox scratch fixtures |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34063259528 | `eea3d202b226` | pull_request | Repository quality | in_progress:- |
-| 34063259403 | `eea3d202b226` | pull_request | Formal assurance | in_progress:- |
-| 34063259371 | `eea3d202b226` | pull_request | Rust verification | in_progress:- |
+| 34063259528 | `eea3d202b226` | pull_request | Repository quality | completed:success |
+| 34063259403 | `eea3d202b226` | pull_request | Formal assurance | completed:success |
+| 34063259371 | `eea3d202b226` | pull_request | Rust verification | completed:success |
 | 34061235156 | `b7e9078d53a4` | push | Formal assurance | completed:success |
 | 34061235152 | `b7e9078d53a4` | push | Repository quality | completed:success |
 | 34061235124 | `b7e9078d53a4` | push | Rust verification | completed:success |
