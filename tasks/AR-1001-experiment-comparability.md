@@ -2,7 +2,7 @@
 {
   "branch": "feature/experiment-comparability",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-06T22:32:57+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0203"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/experiment-comparability",
   "observed_dirty": 0,
   "observed_head": "eb5e849338302d9c446093085674df4ef44ae8b4",
-  "owner": "quality-20260906",
+  "owner": "",
   "plan": "../plans/AR-1001.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make every comparison content-addressed and explicit about agent, model, workload and platform confounders.",
-  "task_revision": 131,
+  "task_revision": 132,
   "title": "Define experiment identity and comparability",
-  "updated_at": "2026-09-06T21:32:09+00:00",
+  "updated_at": "2026-09-06T21:32:27+00:00",
   "worktree_key": "agent-systems-benchmark-experiment-comparability"
 }
 ---
@@ -396,3 +396,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T21:32:09+00:00: Recorded command exit 0; command argv SHA-256
   cb8bd8106ca54c90e20da2d6f159c9d9a63ac82240457e1c5c93226fd6931166.
+
+- 2026-09-06T21:32:27+00:00: Completed after independent immutable review, signed+DCO integration
+  b7e9078d53a4a4586beb68bf56233aba206112ac with candidate-identical tree
+  4b2ea26e27d670f1e22e5f6af7e3a76d5a0e0a91, exact-main local full
+  Rust/coverage/policy/schema/supply-chain checks, and green hosted quality 34061235152, Rust
+  x86_64/aarch64 34061235124, and formal Kani/Loom 34061235156. PR #17 merged; primary and owned
+  worktrees are clean. Cargo/workspace/experiment-schema fence is returned to the coordinator.
