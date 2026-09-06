@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0303](tasks/AR-0303-agent-aider.md): Implement aider client adapter | Support unattended aider editing with bounded input, output and repository changes. | Publish immutable da81ead6932c5d5469ca57fc981646fa980c2780, open focused PR, and require exact-head CI before integration. | root-coordination-20260906 |
-| P1 | [AR-0304](tasks/AR-0304-agent-codex.md): Implement Codex client adapter | Use Codex noninteractive structured events or app-server with declared capability boundaries. | Add self-contained real Codex fixture test, then request shared registration fence. | replay-20260906 |
+| P1 | [AR-0304](tasks/AR-0304-agent-codex.md): Implement Codex client adapter | Use Codex noninteractive structured events or app-server with declared capability boundaries. | Await AR-0303 shared registration fence transfer; then rebase exact main, register module/test, and run full exact-tree gates. | replay-20260906 |
 | P1 | [AR-0305](tasks/AR-0305-agent-gemini.md): Implement Gemini CLI client adapter | Run pinned Gemini CLI through noninteractive JSON events. | Inspect the current official stable release, transition constraints, stream-JSON contract and provider override. | contracts-20260906 |
 | P1 | [AR-0310](tasks/AR-0310-provider-profile-contract.md): Define common provider profiles | Normalize one provider configuration for safe translation across heterogeneous agent adapters. | Await coordinator authorization to integrate independently reviewed green PR 23 exact head 3f9edc3305c13f3fb9b5555c6cdfa7c4e2bbd5ce. | quality-20260906 |
 

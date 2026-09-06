@@ -8,7 +8,7 @@
     "AR-0102"
   ],
   "id": "AR-0304",
-  "next_action": "Add self-contained real Codex fixture test, then request shared registration fence.",
+  "next_action": "Await AR-0303 shared registration fence transfer; then rebase exact main, register module/test, and run full exact-tree gates.",
   "observed_branch": "feature/agent-codex",
   "observed_dirty": 4,
   "observed_head": "52b8b3b12d1fb2ae7cdda0afbc7f728d5e08f44a",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use Codex noninteractive structured events or app-server with declared capability boundaries.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "Implement Codex client adapter",
-  "updated_at": "2026-09-06T23:54:39+00:00",
+  "updated_at": "2026-09-06T23:54:57+00:00",
   "worktree_key": "agent-systems-benchmark-agent-codex"
 }
 ---
@@ -234,3 +234,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T23:54:39+00:00: Recorded command exit 0; command argv SHA-256
   4d0972157a1828ff14d75d23620979f49c0b65a51e3239b134be4694728464c1.
+
+- 2026-09-06T23:54:57+00:00: Added self-contained public credential-free Responses fixture and
+  real_codex native test. Exact pinned Codex 0.153.4 journey passes: custom loopback
+  endpoint/model/fake authorization asserted, exec_command writes only inside isolated workspace,
+  JSONL maps first response/tool/usage/completion, ephemeral state cleans. Cancellation fixture
+  launches a uniquely marked sandbox shell child; host-side /proc discovery proves it live before
+  cancellation and absent/non-live afterward, while fixture server is RAII-cleaned. Initial test
+  wrongly interpreted sandbox namespace PID 2 as host PID and failed twice; replaced with unique
+  host cmdline evidence and documented asb-runtime cgroup/daemon/zombie limitation. Current isolated
+  unit/negative/process suite 9/9, package real_codex nonignored 9/9 with 1 ignored, pinned ignored
+  journey 1/1, Clippy -D warnings green. llvm-cov line report is 90.99% lines, 88.25% regions;
+  stable branch invocation failed because -Z coverage-options requires nightly, so no branch
+  percentage is claimed. Four owned paths only; shared lib.rs/Cargo untouched.
