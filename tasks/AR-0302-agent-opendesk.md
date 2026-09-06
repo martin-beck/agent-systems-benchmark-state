@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support the bitclub OpenDesk CLI with its own dialect and compatibility record.",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "Implement OpenDesk client adapter",
-  "updated_at": "2026-09-06T22:07:26+00:00",
+  "updated_at": "2026-09-06T22:07:28+00:00",
   "worktree_key": "agent-systems-benchmark-agent-opendesk"
 }
 ---
@@ -268,3 +268,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T22:06:27+00:00: Recorded command exit 128; command argv SHA-256
   9d4ab0dc1cf63f0ca3dfa88be24c53525a179198a6131a456d7ae6df5d022cfd.
+
+- 2026-09-06T22:07:28+00:00: Recorded command exit 0; command argv SHA-256
+  7d9c61e3e36820ee3daae929849b570d6644900d89ec46b4e84e88e3fc8f7cac.
