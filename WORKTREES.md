@@ -11,8 +11,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 43, ahead 0 |
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 32, ahead 0 |
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 40, ahead 0 |
-| `agent-systems-benchmark-formal-assurance` | `feature/formal-assurance` | `4d716973f483` | 13 | behind 0, ahead 0 |
-| changed files | - | - | - | `.github/workflows/formal.yml`, `config/quality-tools.json`, `formal/.gitignore`, `formal/Cargo.lock`, `formal/Cargo.toml`, `formal/README.md`, `formal/fixtures/kani_false_assertion.rs`, `formal/src/lib.rs`, `formal/tests/loom_ownership.rs`, `formal/tests/production_trace.rs`, `formal/tests/state_models.rs`, `formal/tests/toolchain_pins.rs`, `formal/toolchains.toml` |
+| `agent-systems-benchmark-formal-assurance` | `feature/formal-assurance` | `cb52136689e9` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 36, ahead 0 |
 | `agent-systems-benchmark-portable-metrics` | `feature/portable-metrics` | `a0f67bea1ffe` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `51daeb8608e5` | 0 | behind 29, ahead 0 |
