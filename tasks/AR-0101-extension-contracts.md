@@ -9,7 +9,7 @@
   "id": "AR-0101",
   "next_action": "Compile strict v1 types, generate canonical schemas/fixtures, and run conformance and negative gates.",
   "observed_branch": "feature/extension-contracts",
-  "observed_dirty": 2,
+  "observed_dirty": 3,
   "observed_head": "c9568e8603e3520fb8462703fbd4ecaa1683992f",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0101.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Specify typed agent, workload, collector, runtime and result contracts before parallel implementations.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Freeze versioned extension and result contracts",
-  "updated_at": "2026-09-06T15:48:48+00:00",
+  "updated_at": "2026-09-06T15:48:52+00:00",
   "worktree_key": "agent-systems-benchmark-extension-contracts"
 }
 ---
