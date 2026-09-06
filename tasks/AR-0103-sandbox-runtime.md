@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 133,
+  "task_revision": 134,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T18:51:25+00:00",
+  "updated_at": "2026-09-06T18:51:27+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
@@ -417,3 +417,6 @@ Implementation has not started. Read the linked plan before claiming.
   34052743817 passed on Ubuntu x86_64 and aarch64, and repository-quality run 34052743886 passed
   policy, coverage and supply-chain checks. Local exact-tree and native evidence remain green and
   tree/residual audits remain clean.
+
+- 2026-09-06T18:51:27+00:00: Recorded command exit 0; command argv SHA-256
+  4759a9bda3b6bc3ef52d24855102cf46904dbcd28689d316cb6e7c7e613e0d1f.
