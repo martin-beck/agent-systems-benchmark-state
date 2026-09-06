@@ -5,11 +5,11 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
 | `agent-systems-benchmark` | `main` | `3cfb8716da8c` | 0 | behind 0, ahead 0 |
-| `agent-systems-benchmark-agent-aider` | `feature/agent-aider` | `3cfb8716da8c` | 2 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-agents/src/lib.rs`, `crates/asb-agents/src/aider.rs` |
+| `agent-systems-benchmark-agent-aider` | `feature/agent-aider` | `3cfb8716da8c` | 3 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-agents/src/lib.rs`, `crates/asb-agents/src/aider.rs`, `crates/asb-agents/tests/real_aider.rs` |
 | `agent-systems-benchmark-agent-opencode` | `feature/agent-opencode` | `dfb0d548bf75` | 0 | behind 8, ahead 0 |
 | `agent-systems-benchmark-agent-opendesk` | `feature/agent-opendesk` | `8eb99d3c7235` | 0 | behind 1, ahead 0 |
-| `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `b8da93f5b83a` | 3 | behind 2, ahead 1 |
+| `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `49f0e7bd0ba7` | 3 | behind 0, ahead 1 |
 | changed files | - | - | - | `crates/asb-runtime/README.md`, `crates/asb-runtime/src/scheduler.rs`, `crates/asb-runtime/tests/scheduler_boundary.rs` |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 62, ahead 0 |
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 51, ahead 0 |
