@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-cassettes",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-06T19:32:35+00:00",
+  "claim_expires": "2026-09-06T19:27:41+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0501"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Store versioned provider requests, event streams, causal IDs and integrity metadata.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Implement immutable response cassette format",
-  "updated_at": "2026-09-06T17:57:36+00:00",
+  "updated_at": "2026-09-06T17:57:41+00:00",
   "worktree_key": "agent-systems-benchmark-replay-cassettes"
 }
 ---
@@ -277,3 +277,5 @@ Implementation has not started. Read the linked plan before claiming.
   4cccbdd213d47c95dfd111c2bbad16ab9b70c30a8bac62ffb17769274ce4c0ea. Intermediate failures were
   formatting drift, test-only compile/expectation errors, and two corrected schema-generator
   invocations; all were fail-closed and left no ambiguous external effect.
+
+- 2026-09-06T17:57:41+00:00: Heartbeat by replay-20260906.
