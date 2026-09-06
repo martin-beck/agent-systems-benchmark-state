@@ -10,14 +10,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #13 | `feature/agent-opencode@fa53386a97ab` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS | agents: add pinned OpenCode adapter |
+| #13 | `feature/agent-opencode@fa53386a97ab` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | agents: add pinned OpenCode adapter |
+| #14 | `feature/formal-assurance@2a495a99a657` | `main` | UNKNOWN | - | formal: prove critical state invariants |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 34056097078 | `fa53386a97ab` | pull_request | Rust verification | completed:success |
-| 34056097009 | `fa53386a97ab` | pull_request | Repository quality | in_progress:- |
+| 34056097009 | `fa53386a97ab` | pull_request | Repository quality | completed:success |
 | 34055890362 | `4d716973f483` | push | Repository quality | completed:success |
 | 34055890354 | `4d716973f483` | push | Rust verification | completed:success |
 | 34055848166 | `6545c9dd4f2f` | pull_request | Repository quality | completed:success |
