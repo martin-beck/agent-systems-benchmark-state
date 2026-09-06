@@ -2,15 +2,15 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `e6a81e8644c692d5b0aa84a86b385ff4da327292`
-- Local origin/main: `e6a81e8644c692d5b0aa84a86b385ff4da327292`
-- Primary worktree head: `e6a81e8644c692d5b0aa84a86b385ff4da327292`
+- Product remote main: `265d811b765e2300510445bfb7abf59ae5a0604f`
+- Local origin/main: `265d811b765e2300510445bfb7abf59ae5a0604f`
+- Primary worktree head: `265d811b765e2300510445bfb7abf59ae5a0604f`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #8 | `feature/replay-cassettes@cd88f5703fb3` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: define immutable replay cassettes |
+| #8 | `feature/replay-cassettes@cd88f5703fb3` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: define immutable replay cassettes |
 
 ## Recent workflows
 
