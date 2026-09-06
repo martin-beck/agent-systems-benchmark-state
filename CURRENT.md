@@ -9,13 +9,8 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0004](tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Render every AR, status, and dependency as an accessible visual state document. | Implement the deterministic STATUS.md renderer, automatic mutation hooks, and visual dependency graph tests. | quality-20260906 |
 | P1 | [AR-0102](tasks/AR-0102-process-runtime.md): Implement process execution and cancellation | Run real client processes with bounded I/O, monotonic deadlines and process-tree ownership. | Await coordinator Cargo handoff after AR-0104 integration, then add asb-runtime workspace member, resolve locked rustix dependency, compile and repair every real process-boundary test. | contracts-20260906 |
+| P1 | [AR-0203](tasks/AR-0203-statistical-analysis.md): Implement statistical and SLO assessment | Compute latency distributions, quality/throughput intervals and evidence-aware SLO results. | Define statistical estimators and fixed reference vectors. | root-coordination-20260906 |
 | P1 | [AR-0502](tasks/AR-0502-replay-cassettes.md): Implement immutable response cassette format | Store versioned provider requests, event streams, causal IDs and integrity metadata. | Complete crate-local v1 schema and synthetic fixtures; await serialized Cargo handoff before compilation. | replay-20260906 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0203](tasks/AR-0203-statistical-analysis.md): Implement statistical and SLO assessment | Compute latency distributions, quality/throughput intervals and evidence-aware SLO results. | Define statistical estimators and fixed reference vectors. | - |
 
 ## Planned
 
