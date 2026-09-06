@@ -8,7 +8,7 @@
     "AR-0203"
   ],
   "id": "AR-1001",
-  "next_action": "Complete comparison fixtures, generated schema, Cargo integration, and full gates after serialized fence transfer.",
+  "next_action": "Rebase once after AR-0301 integration, take transferred Cargo/schema fence, wire modules, generate checked-in schema and matched/confounded fixtures, then run full gates.",
   "observed_branch": "feature/experiment-comparability",
   "observed_dirty": 4,
   "observed_head": "bda6bc41760a914ffc1a9305fc88422eaace302b",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make every comparison content-addressed and explicit about agent, model, workload and platform confounders.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Define experiment identity and comparability",
-  "updated_at": "2026-09-06T20:34:25+00:00",
+  "updated_at": "2026-09-06T20:37:24+00:00",
   "worktree_key": "agent-systems-benchmark-experiment-comparability"
 }
 ---
@@ -144,3 +144,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T20:34:25+00:00: Recorded command exit 0; command argv SHA-256
   dd1a1b00e66979dc8b85358045fcbca90a3cef29baf659f6d2abfced47271dd6.
+
+- 2026-09-06T20:37:24+00:00: Isolated source validation uses scratch manifests under
+  /srv/data/projects/.asb-local/ar1001-source-check that point to, rather than copy, owned product
+  source. Pinned Rust 1.93 offline all-target tests pass 7/7 and clippy -D warnings passes. Stable
+  llvm-cov reports comparison 100% and protocol 98.61% source-line coverage (99.22% combined; 96.68%
+  combined regions). Branch instrumentation was attempted and failed before tests because
+  cargo-llvm-cov requires nightly for --branch; no branch-coverage claim. A newly added
+  replay-negative initially expected Replay+missing-cassette while leaving mode Live, failed
+  correctly, was diagnosed/fixed, and all tests reran green.
