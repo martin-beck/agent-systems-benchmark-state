@@ -212,6 +212,24 @@ class HandoffTest(unittest.TestCase):
         self.assertEqual(before_task, path.read_text())
         self.assertEqual(before_current, (self.root / "CURRENT.md").read_text())
 
+    def test_failed_push_preserves_durable_commit_state(self) -> None:
+        path = self.make_task()
+        with (
+            patch.object(CORE, "commit", return_value=True),
+            patch.object(CORE, "push_replica", side_effect=RuntimeError("push failed")),
+            self.assertRaisesRegex(RuntimeError, "push failed"),
+        ):
+            CORE.mutate(
+                argparse.Namespace(task="AR-0001", owner="worker-a", lease_minutes=10),
+                "claim",
+            )
+        meta, _ = CORE.read_task(path)
+        self.assertEqual("in_progress", meta["status"])
+        self.assertEqual("worker-a", meta["owner"])
+        self.assertEqual(
+            CORE.render_current(CORE.all_tasks()), (self.root / "CURRENT.md").read_text()
+        )
+
     def test_lock_excludes_a_second_process(self) -> None:
         ready = multiprocessing.Event()
         release = multiprocessing.Event()
@@ -489,11 +507,15 @@ class HandoffTest(unittest.TestCase):
         self.assertFalse(any("commit" in args for args in calls))
 
         def changed_run(args: list[str], **_: object) -> object:
+            calls.append(args)
             code = 1 if "diff" in args else 0
             return subprocess.CompletedProcess(args, code, stdout="", stderr="")
 
         with patch.object(CORE, "run", side_effect=changed_run):
             self.assertTrue(CORE.commit("test", [target]))
+        commit_call = next(args for args in calls if "commit" in args)
+        self.assertIn("-S", commit_call)
+        self.assertIn("-s", commit_call)
 
     def test_push_replica_fast_forward_noop_and_divergence(self) -> None:
         CORE.CONFIG.parent.mkdir()
@@ -576,10 +598,21 @@ class HandoffTest(unittest.TestCase):
         ):
             self.assertEqual(0, CORE.cmd_run(args))
             self.assertIn("command SHA-256", mutate.call_args.args[0].note)
+            self.assertIsNone(mutate.call_args.args[0].expected_revision)
         with self.assertRaisesRegex(RuntimeError, "claim"):
             CORE.cmd_run(argparse.Namespace(task="AR-0001", owner="wrong", command=["true"]))
         with self.assertRaisesRegex(RuntimeError, "missing command"):
             CORE.cmd_run(argparse.Namespace(task="AR-0001", owner="worker-a", command=[]))
+        path = CORE.locate("AR-0001")[0]
+        meta, body = CORE.read_task(path)
+        meta["claim_expires"] = "2000-01-01T00:00:00+00:00"
+        CORE.write_task(path, meta, body)
+        with (
+            patch.object(CORE.subprocess, "run") as command,
+            self.assertRaisesRegex(RuntimeError, "expired claim"),
+        ):
+            CORE.cmd_run(argparse.Namespace(task="AR-0001", owner="worker-a", command=["true"]))
+        command.assert_not_called()
 
     def test_main_dispatches_every_command(self) -> None:
         cases = [

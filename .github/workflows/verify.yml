@@ -42,8 +42,15 @@ jobs:
           test ! -e .runtime/config.json
           test -z "$(git ls-files 'private-archive/**')"
       - name: DCO certification
+        env:
+          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
         run: |
+          revision_range=HEAD
+          if test "$GITHUB_EVENT_NAME" = pull_request; then
+            revision_range="$PR_BASE_SHA..$PR_HEAD_SHA"
+          fi
           while IFS= read -r revision; do
             expected=$(git show -s --format='Signed-off-by: %an <%ae>' "$revision")
             git show -s --format=%B "$revision" | grep -Fx -- "$expected"
-          done < <(git rev-list HEAD)
+          done < <(git rev-list "$revision_range")
