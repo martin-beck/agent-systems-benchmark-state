@@ -2,7 +2,7 @@
 {
   "branch": "feature/agent-opencode",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-06T20:49:29+00:00",
+  "claim_expires": "2026-09-06T20:53:53+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0102"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned OpenCode through its structured supported interfaces.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Implement OpenCode client adapter",
-  "updated_at": "2026-09-06T18:51:02+00:00",
+  "updated_at": "2026-09-06T18:53:53+00:00",
   "worktree_key": "agent-systems-benchmark-agent-opencode"
 }
 ---
@@ -40,3 +40,5 @@ Dependencies AR-0101 and AR-0102 are done. Read the linked plan and claim after 
 
 - 2026-09-06T18:51:02+00:00: Recorded command exit 0; command argv SHA-256
   0e6cafbd044685c149aaf029c182d3050a2bc34a9d02f43ff8a9cece7a7357c9.
+
+- 2026-09-06T18:53:53+00:00: Heartbeat by root-coordination-20260906.
