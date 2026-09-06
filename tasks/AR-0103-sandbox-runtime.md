@@ -7,7 +7,7 @@
     "AR-0102"
   ],
   "id": "AR-0103",
-  "next_action": "Await exact-head CI and coordinator independent review of PR #15 at db8af71; do not merge or release.",
+  "next_action": "Await coordinator independent immutable-head review of PR #15 exact db8af71 with all hosted checks green; do not merge or release.",
   "observed_branch": "feature/sandbox-runtime",
   "observed_dirty": 0,
   "observed_head": "db8af71e7b7d427fd1d051379e8b7e794150a34c",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 314,
+  "task_revision": 315,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T20:07:15+00:00",
+  "updated_at": "2026-09-06T20:08:31+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
@@ -953,3 +953,12 @@ Implementation has not started. Read the linked plan before claiming.
   policy/failure fixtures and final clean/residual audits passed. Force-with-lease against exact old
   28063ae succeeded; PR #15 now exact db8af71 on bda6bc4, OPEN/MERGEABLE, all three fresh workflows
   running.
+
+- 2026-09-06T20:08:31+00:00: Fresh exact-head hosted CI is fully green for PR #15 at
+  db8af71e7b7d427fd1d051379e8b7e794150a34c on exact base bda6bc41760a914ffc1a9305fc88422eaace302b.
+  Formal run 34056966221 passed five Kani proofs plus the retained negative and
+  Loom/state/production-trace models on x86_64 and aarch64 where applicable. Rust run 34056966277
+  passed both architectures. Quality run 34056966224 passed policy, coverage, signatures/DCO, supply
+  chain, secret scan, negative fixtures and clean tree. PR remains OPEN/MERGEABLE; local/remote
+  feature head exact and worktrees/residual audits clean. Await independent review; no
+  merge/release.
