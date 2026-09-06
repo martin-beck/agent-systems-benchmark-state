@@ -10,6 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #18 | `fix/sandbox-test-portability@eea3d202b226` | `main` | UNKNOWN | - | tests: isolate sandbox scratch fixtures |
 
 ## Recent workflows
 
