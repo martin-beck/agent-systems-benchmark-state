@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Repair sandbox test target portability",
-  "updated_at": "2026-09-06T22:18:05+00:00",
+  "updated_at": "2026-09-06T22:19:10+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-test-portability"
 }
 ---
@@ -259,3 +259,6 @@ Implementation has not started. Read the linked plan before claiming.
   matching-author DCO fails; local keyring also cannot authenticate GitHub web-flow RSA signature.
   Correcting already-pushed main requires coordinator authorization for a controlled signed+DCO
   history repair or another explicit policy decision. AR remains in_progress and unreleased.
+
+- 2026-09-06T22:19:10+00:00: Recorded command exit 0; command argv SHA-256
+  db38e63e11537c4f9e408a4903247311605359e6e3115aff1b7b0313b69d86dd.
