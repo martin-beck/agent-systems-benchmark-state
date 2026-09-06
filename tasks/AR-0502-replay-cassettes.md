@@ -10,7 +10,7 @@
   "id": "AR-0502",
   "next_action": "Run full exact-tree quality/supply/privacy gates on review repairs, commit a focused SSH-signed DCO repair, and report the new immutable head for re-review before PR.",
   "observed_branch": "feature/replay-cassettes",
-  "observed_dirty": 10,
+  "observed_dirty": 12,
   "observed_head": "6e7e6d4a813a851c57782cb651165e6a8fef193f",
   "owner": "replay-20260906",
   "plan": "../plans/AR-0502.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Store versioned provider requests, event streams, causal IDs and integrity metadata.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Implement immutable response cassette format",
-  "updated_at": "2026-09-06T18:09:01+00:00",
+  "updated_at": "2026-09-06T18:10:08+00:00",
   "worktree_key": "agent-systems-benchmark-replay-cassettes"
 }
 ---
