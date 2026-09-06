@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compute latency distributions, quality/throughput intervals and evidence-aware SLO results.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Implement statistical and SLO assessment",
-  "updated_at": "2026-09-06T17:47:37+00:00",
+  "updated_at": "2026-09-06T17:47:52+00:00",
   "worktree_key": "agent-systems-benchmark-statistical-analysis"
 }
 ---
@@ -93,3 +93,6 @@ Implementation has not started. Read the linked plan before claiming.
   the coordinator environment did not expose rustfmt on PATH; no product mutation or test execution
   occurred. Verified pinned rustfmt and rustc under /srv/data/projects/.asb-local/cargo/bin and will
   use those exact paths.
+
+- 2026-09-06T17:47:52+00:00: Recorded command exit 1; command argv SHA-256
+  11a2c4fa5a47a900c52f26b524f81ea591cd599d3a636fab85d19a45191ab902.
