@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**49 ARs tracked** across 4 active status categories.
+**49 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 31 |
 | **Future** | Deferred roadmap work | 0 |
@@ -100,7 +100,7 @@ flowchart LR
     end
     subgraph series_10["10 - Reliability and release"]
         direction TB
-        AR_1001["AR-1001 - Open"]:::status_open
+        AR_1001["AR-1001 - In progress"]:::status_in_progress
         AR_1002["AR-1002 - Planned"]:::status_planned
         AR_1003["AR-1003 - Planned"]:::status_planned
         AR_1004["AR-1004 - Planned"]:::status_planned
@@ -298,19 +298,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0103](tasks/AR-0103-sandbox-runtime.md): Implement isolated execution and resource leases | contracts-20260906 | Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets. | Await exact-head CI and coordinator independent review of follow-up PR #15 at 28063ae; do not merge or release. |
 | P1 | [AR-0301](tasks/AR-0301-agent-opencode.md): Implement OpenCode client adapter | root-coordination-20260906 | Run pinned OpenCode through its structured supported interfaces. | Create focused signed+DCO candidate, run commit-policy and exact-tree checks, publish PR, then obtain immutable independent review and exact-head CI before integration. |
 | P1 | [AR-0504](tasks/AR-0504-replay-pacing.md): Implement pacing and replay overhead assessment | replay-20260906 | Support immediate, fixed-latency, original-paced and seeded synthetic scenarios. | Integrate paced delivery with the strict socket reservation boundary, expand deterministic negative/concurrency evidence, then run exact-tree full gates. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1001](tasks/AR-1001-experiment-comparability.md): Define experiment identity and comparability | Unclaimed | Make every comparison content-addressed and explicit about agent, model, workload and platform confounders. | Implement the experiment identity model and comparison compatibility rules. |
+| P1 | [AR-1001](tasks/AR-1001-experiment-comparability.md): Define experiment identity and comparability | quality-20260906 | Make every comparison content-addressed and explicit about agent, model, workload and platform confounders. | Implement the experiment identity model and comparison compatibility rules. |
 
 ### Planned (31)
 
