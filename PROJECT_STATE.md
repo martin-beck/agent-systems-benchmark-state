@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #8 | `feature/replay-cassettes@cd88f5703fb3` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS: | feat: define immutable replay cassettes |
+| #8 | `feature/replay-cassettes@cd88f5703fb3` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: define immutable replay cassettes |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 34051162612 | `cd88f5703fb3` | pull_request | Rust verification | completed:success |
-| 34051162442 | `cd88f5703fb3` | pull_request | Repository quality | in_progress:- |
+| 34051162442 | `cd88f5703fb3` | pull_request | Repository quality | completed:success |
 | 34049249342 | `e6a81e8644c6` | push | Repository quality | completed:success |
 | 34049249261 | `e6a81e8644c6` | push | Rust verification | completed:success |
 | 34049105453 | `51daeb8608e5` | pull_request | Repository quality | completed:success |
