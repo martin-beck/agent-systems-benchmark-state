@@ -8,15 +8,18 @@
   ],
   "id": "AR-0104",
   "next_action": "Remove the verified-clean accidental state-repository worktree, create the declared product worktree from product main, then implement atomic storage.",
+  "observed_branch": "feature/durable-results",
+  "observed_dirty": 0,
+  "observed_head": "3baa4f9d0a7448e5f2e24633c230a2111c9ead86",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0104.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist manifests, event streams, artifact hashes and recoverable execution intentions.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Implement durable run storage and recovery",
-  "updated_at": "2026-09-06T16:36:30+00:00",
+  "updated_at": "2026-09-06T16:36:48+00:00",
   "worktree_key": "agent-systems-benchmark-durable-results"
 }
 ---
