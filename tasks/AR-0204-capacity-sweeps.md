@@ -2,7 +2,7 @@
 {
   "branch": "feature/capacity-sweeps",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T00:26:02+00:00",
+  "claim_expires": "2026-09-07T00:30:03+00:00",
   "depends_on": [
     "AR-0102",
     "AR-0103",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run repeated closed-loop and open-loop experiments with bounded concurrency.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Implement capacity sweeps and arrival scheduling",
-  "updated_at": "2026-09-06T22:29:17+00:00",
+  "updated_at": "2026-09-06T22:30:03+00:00",
   "worktree_key": "agent-systems-benchmark-capacity-sweeps"
 }
 ---
@@ -281,3 +281,5 @@ Implementation has not started. Read the linked plan before claiming.
   actionlint/zizmor, Gitleaks, repository/DCO policy, controlled failure fixtures and platform
   validation passed. Coverage scheduler.rs 97.28% regions, 100% functions, 97.01% lines; workspace
   96.78% lines. Local/origin/remote main remains 23035ac, candidate clean and unpublished.
+
+- 2026-09-06T22:30:03+00:00: Heartbeat by contracts-20260906.
