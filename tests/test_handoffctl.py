@@ -592,13 +592,14 @@ class HandoffTest(unittest.TestCase):
             CORE.cmd_snapshot()
         args = argparse.Namespace(task="AR-0001", owner="worker-a", command=["true"])
         with (
-            patch.object(CORE.subprocess, "run", return_value=completed),
+            patch.object(CORE.subprocess, "run", return_value=completed) as subprocess_run,
             patch.object(CORE, "reconcile"),
             patch.object(CORE, "mutate") as mutate,
         ):
             self.assertEqual(0, CORE.cmd_run(args))
-            self.assertIn("command SHA-256", mutate.call_args.args[0].note)
+            self.assertIn("command argv SHA-256", mutate.call_args.args[0].note)
             self.assertIsNone(mutate.call_args.args[0].expected_revision)
+            subprocess_run.assert_called_once_with(["true"], check=False, stdin=subprocess.DEVNULL)
         with self.assertRaisesRegex(RuntimeError, "claim"):
             CORE.cmd_run(argparse.Namespace(task="AR-0001", owner="wrong", command=["true"]))
         with self.assertRaisesRegex(RuntimeError, "missing command"):

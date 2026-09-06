@@ -732,7 +732,9 @@ def cmd_run(args: argparse.Namespace) -> int:
     if not args.command:
         raise RuntimeError("missing command")
     require_active_owner(args.task, args.owner)
-    proc = subprocess.run(args.command, check=False)
+    # Never execute or consume untracked caller input. Scripts and data must be
+    # named by argv or a stable file, whose content digest can be recorded too.
+    proc = subprocess.run(args.command, check=False, stdin=subprocess.DEVNULL)
     reconcile(do_commit=True, push=True)
 
     command_hash = hashlib.sha256("\0".join(args.command).encode()).hexdigest()
@@ -746,7 +748,7 @@ def cmd_run(args: argparse.Namespace) -> int:
         priority=None,
         summary=None,
         next_action=None,
-        note=f"Recorded command exit {proc.returncode}; command SHA-256 {command_hash}.",
+        note=f"Recorded command exit {proc.returncode}; command argv SHA-256 {command_hash}.",
     )
     mutate(update, "update")
     return proc.returncode
