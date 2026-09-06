@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Specify typed agent, workload, collector, runtime and result contracts before parallel implementations.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Freeze versioned extension and result contracts",
-  "updated_at": "2026-09-06T16:07:02+00:00",
+  "updated_at": "2026-09-06T16:07:14+00:00",
   "worktree_key": "agent-systems-benchmark-extension-contracts"
 }
 ---
@@ -242,3 +242,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T16:07:02+00:00: Recorded command exit 0; command SHA-256
   25903f3d67b9b791296fcb54e5f31a2f024f228281181dad25c207bb20ad315f.
+
+- 2026-09-06T16:07:14+00:00: Recorded command exit 0; command SHA-256
+  37cae9d5a5e80cf726bec452a2a72938dd568b1285f052e88f35246dfc857fe0.
