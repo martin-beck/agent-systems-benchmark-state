@@ -2,21 +2,23 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `bda6bc41760a914ffc1a9305fc88422eaace302b`
-- Local origin/main: `bda6bc41760a914ffc1a9305fc88422eaace302b`
-- Primary worktree head: `bda6bc41760a914ffc1a9305fc88422eaace302b`
+- Product remote main: `ac4a2359964910e93a1fd034fd16689a563f973b`
+- Local origin/main: `ac4a2359964910e93a1fd034fd16689a563f973b`
+- Primary worktree head: `ac4a2359964910e93a1fd034fd16689a563f973b`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #13 | `feature/agent-opencode@fa53386a97ab` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | agents: add pinned OpenCode adapter |
-| #15 | `feature/sandbox-runtime@db8af71e7b7d` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(runtime): make sandbox native fixtures target-dir independent |
+| #13 | `feature/agent-opencode@fa53386a97ab` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | agents: add pinned OpenCode adapter |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34057058619 | `ac4a23599649` | push | Rust verification | queued:- |
+| 34057058586 | `ac4a23599649` | push | Repository quality | queued:- |
+| 34057058572 | `ac4a23599649` | push | Formal assurance | queued:- |
 | 34056966277 | `db8af71e7b7d` | pull_request | Rust verification | completed:success |
 | 34056966224 | `db8af71e7b7d` | pull_request | Repository quality | completed:success |
 | 34056966221 | `db8af71e7b7d` | pull_request | Formal assurance | completed:success |
@@ -26,6 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34056623923 | `28063ae8e7b3` | pull_request | Repository quality | completed:success |
 | 34056623872 | `28063ae8e7b3` | pull_request | Rust verification | completed:success |
 | 34056417967 | `2a495a99a657` | pull_request | Formal assurance | completed:success |
-| 34056417912 | `2a495a99a657` | pull_request | Rust verification | completed:success |
-| 34056417904 | `2a495a99a657` | pull_request | Repository quality | completed:success |
-| 34056097078 | `fa53386a97ab` | pull_request | Rust verification | completed:success |
