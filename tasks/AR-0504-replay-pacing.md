@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-pacing",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-06T21:40:44+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0503",
     "AR-0201"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/replay-pacing",
   "observed_dirty": 0,
   "observed_head": "73d28a431c782e14b172d8309b5f76b71a4f1bf6",
-  "owner": "replay-20260906",
+  "owner": "",
   "plan": "../plans/AR-0504.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Support immediate, fixed-latency, original-paced and seeded synthetic scenarios.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Implement pacing and replay overhead assessment",
-  "updated_at": "2026-09-06T20:36:32+00:00",
+  "updated_at": "2026-09-06T20:36:56+00:00",
   "worktree_key": "agent-systems-benchmark-replay-pacing"
 }
 ---
@@ -307,3 +307,10 @@ a fresh reconciliation.
   corrected to exact workflow invocations and all gates passed. Residual documented limits remain:
   local-kernel socket acceptance is not peer consumption, generic Write needs caller bounds,
   monotonic timing is not packet scheduling, and headroom assesses supplied observations only.
+
+- 2026-09-06T20:36:56+00:00: Released after independent immutable review, signed+DCO no-ff
+  integration 68f313fcb4fa5c7293639fc90ec376fa7ccb622f, exact-main local postmerge
+  full/negative/formal/privacy/supply/platform/coverage validation, exact-main hosted GREEN runs
+  Formal 34058370706, Quality 34058370670, Rust x86_64+aarch64 34058370668, clean synchronized
+  product refs, and live coordination doctor success. All AR-0504 criteria are satisfied; stated
+  timing/socket/headroom limits remain documented.
