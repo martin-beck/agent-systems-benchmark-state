@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run real client processes with bounded I/O, monotonic deadlines and process-tree ownership.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Implement process execution and cancellation",
-  "updated_at": "2026-09-06T17:10:23+00:00",
+  "updated_at": "2026-09-06T17:21:55+00:00",
   "worktree_key": "agent-systems-benchmark-process-runtime"
 }
 ---
@@ -107,3 +107,6 @@ Implementation has not started. Read the linked plan before claiming.
   evidence. Separately, AR-0102 self-review fixed a terminal error path: drain results are collected
   while PID remains fenced, the leader is reaped and lifecycle marked terminal before evidence
   errors propagate, so Drop cannot signal a reused PGID after an output failure.
+
+- 2026-09-06T17:21:55+00:00: Recorded command exit 0; command argv SHA-256
+  321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
