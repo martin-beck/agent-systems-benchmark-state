@@ -9,7 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Adapt generic coordination tooling for public ASB workers without importing private state. | Audit reused coordinator and add conformance tests for ASB-specific adaptations. | root-coordination-20260906 |
 | P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Apply corrected quality documentation patch, then stage and run repository policy plus tool integration checks. | quality-20260906 |
-| P1 | [AR-0101](tasks/AR-0101-extension-contracts.md): Freeze versioned extension and result contracts | Specify typed agent, workload, collector, runtime and result contracts before parallel implementations. | Review the extension design and implement protocol schemas plus conformance fixtures. | contracts-20260906 |
+| P1 | [AR-0101](tasks/AR-0101-extension-contracts.md): Freeze versioned extension and result contracts | Specify typed agent, workload, collector, runtime and result contracts before parallel implementations. | Compile strict v1 types, generate canonical schemas/fixtures, and run conformance and negative gates. | contracts-20260906 |
 | P1 | [AR-0501](tasks/AR-0501-replay-evaluation.md): Evaluate replay literature and reusable tools | Compare literature and record/replay implementations using identical synthetic conformance cases. | Read REPLAY_RESEARCH and run the bounded compatibility spike. | replay-20260906 |
 
 ## Planned

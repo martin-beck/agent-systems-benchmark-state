@@ -7,7 +7,7 @@
     "AR-0001"
   ],
   "id": "AR-0101",
-  "next_action": "Review the extension design and implement protocol schemas plus conformance fixtures.",
+  "next_action": "Compile strict v1 types, generate canonical schemas/fixtures, and run conformance and negative gates.",
   "observed_branch": "feature/extension-contracts",
   "observed_dirty": 2,
   "observed_head": "c9568e8603e3520fb8462703fbd4ecaa1683992f",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Specify typed agent, workload, collector, runtime and result contracts before parallel implementations.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Freeze versioned extension and result contracts",
-  "updated_at": "2026-09-06T15:47:52+00:00",
+  "updated_at": "2026-09-06T15:48:04+00:00",
   "worktree_key": "agent-systems-benchmark-extension-contracts"
 }
 ---
@@ -73,3 +73,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T15:47:52+00:00: Recorded command exit 0; command SHA-256
   3e9bfe97dc7cc141f80c66fe598b86e25b03d1532cbef4eda92a6f7f46d79bab.
+
+- 2026-09-06T15:48:04+00:00: Implemented initial strict v1 types, bounded newline framing, sample
+  external stdio plugin, conformance tests, and protocol documentation. Disclosure: the initial
+  source patch was applied directly rather than through handoffctl run due to an orchestration
+  mistake; its complete dirty diff remains preserved and uncommitted for audit. All subsequent
+  mutations use the wrapper. First wrapped cargo invocation failed before execution because cargo
+  was absent from PATH; AR-0003 supplied the shared pinned /srv/data/projects toolchain path.
