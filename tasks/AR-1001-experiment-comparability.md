@@ -8,7 +8,7 @@
     "AR-0203"
   ],
   "id": "AR-1001",
-  "next_action": "Create focused signed candidate after final exact-tree privacy, schema-generation, and scope checks; then run committed-tree policy gates for immutable coordinator review.",
+  "next_action": "Await coordinator immutable local review of signed candidate d051c5e; repair findings before any publication. Cargo workspace/lock and experiment-schema fence remains held by AR-1001.",
   "observed_branch": "feature/experiment-comparability",
   "observed_dirty": 0,
   "observed_head": "d051c5eeff2353d25c9490170f5b81fe527ab6a2",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make every comparison content-addressed and explicit about agent, model, workload and platform confounders.",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "Define experiment identity and comparability",
-  "updated_at": "2026-09-06T21:10:12+00:00",
+  "updated_at": "2026-09-06T21:10:49+00:00",
   "worktree_key": "agent-systems-benchmark-experiment-comparability"
 }
 ---
@@ -286,3 +286,19 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T21:10:12+00:00: Recorded command exit 0; command argv SHA-256
   eff57143119291f9fedad7b721489abc1485e9b7136d3f35c39bcfe818468c61.
+
+- 2026-09-06T21:10:49+00:00: Signed+DCO candidate d051c5eeff2353d25c9490170f5b81fe527ab6a2, tree
+  b66eff8570ff3ce564bbcdde83fbda2a3bc02f39, is one commit atop exact main
+  9543a3297dd9d0ca93c802bb204b099ac1df569b and the owned worktree is clean. It adds the versioned
+  credential-free experiment manifest, language-independent SHA-256 encoding, checked schema,
+  matched/confounded fixtures with independent Python digest validation, and fail-closed private
+  comparison reports covering 22 required mismatch groups. Exact-tree full Rust
+  fmt/clippy/tests/docs/release pass; workspace coverage 96.79%, protocol 97.42%, new comparison
+  100%; cargo-deny/audit, repository policy, actionlint, zizmor, Gitleaks, real failure fixtures,
+  platform validators, deterministic schema regeneration, formal metadata/tests, five Kani bounded
+  proofs and deliberate Kani counterexample all pass. The real OpenCode integration stays
+  environment-gated and was not newly claimed; matched recorded configuration establishes
+  comparability, not causality. Two storage-root tool invocations exposed defaults: Kani and
+  cargo-audit created user-home caches; each was audited, moved intact to quarantined artifact
+  storage under the mandated root, and rerun successfully with explicit local KANI/CARGO/RUSTUP
+  homes; those user-home caches are now absent.
