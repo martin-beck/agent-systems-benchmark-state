@@ -10,16 +10,16 @@
   "next_action": "Await independent delta review and coordinator integration of exact green head 488d6ca1; then run post-merge verification.",
   "observed_branch": "feature/extension-contracts",
   "observed_dirty": 0,
-  "observed_head": "488d6ca1dd6708a68c465bf5432b6870cafcaf18",
+  "observed_head": "9e90c6a62861f2222864865c9fa3e023cff52bdf",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0101.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Specify typed agent, workload, collector, runtime and result contracts before parallel implementations.",
-  "task_revision": 116,
+  "task_revision": 117,
   "title": "Freeze versioned extension and result contracts",
-  "updated_at": "2026-09-06T16:27:31+00:00",
+  "updated_at": "2026-09-06T16:27:52+00:00",
   "worktree_key": "agent-systems-benchmark-extension-contracts"
 }
 ---
