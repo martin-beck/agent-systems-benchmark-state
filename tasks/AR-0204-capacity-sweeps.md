@@ -14,17 +14,17 @@
   "id": "AR-0204",
   "next_action": "Await immutable independent review of exact clean candidate b8da93f; do not publish before approval.",
   "observed_branch": "feature/capacity-sweeps",
-  "observed_dirty": 3,
-  "observed_head": "49f0e7bd0ba70a6f5456bba960e864de8e112217",
+  "observed_dirty": 0,
+  "observed_head": "cabf0f08a6a69b1a9517ec32e09bc3b21f0988a1",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0204.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run repeated closed-loop and open-loop experiments with bounded concurrency.",
-  "task_revision": 156,
+  "task_revision": 157,
   "title": "Implement capacity sweeps and arrival scheduling",
-  "updated_at": "2026-09-06T23:04:36+00:00",
+  "updated_at": "2026-09-06T23:05:00+00:00",
   "worktree_key": "agent-systems-benchmark-capacity-sweeps"
 }
 ---

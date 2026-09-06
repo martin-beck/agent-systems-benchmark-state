@@ -10,6 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #20 | `feature/engineering-workloads@41ffc6eb8f1a` | `main` | UNKNOWN | - | workloads: add original offline engineering tasks |
 
 ## Recent workflows
 
