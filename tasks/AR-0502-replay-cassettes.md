@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Store versioned provider requests, event streams, causal IDs and integrity metadata.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Implement immutable response cassette format",
-  "updated_at": "2026-09-06T17:32:35+00:00",
+  "updated_at": "2026-09-06T17:36:31+00:00",
   "worktree_key": "agent-systems-benchmark-replay-cassettes"
 }
 ---
@@ -140,3 +140,6 @@ Implementation has not started. Read the linked plan before claiming.
   applications were atomic and caused no product effect.
 
 - 2026-09-06T17:32:35+00:00: Heartbeat by replay-20260906.
+
+- 2026-09-06T17:36:31+00:00: Recorded command exit 0; command argv SHA-256
+  6654b90fc6815bbda9fdc904821060df5b975cb218608818cd5b1a70449dc9cb.
