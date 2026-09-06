@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compare literature and record/replay implementations using identical synthetic conformance cases.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Evaluate replay literature and reusable tools",
-  "updated_at": "2026-09-06T16:17:46+00:00",
+  "updated_at": "2026-09-06T16:17:48+00:00",
   "worktree_key": "agent-systems-benchmark-replay-evaluation"
 }
 ---
@@ -164,3 +164,6 @@ Implementation has not started. Read the linked plan before claiming.
   but both jobs failed only the known whole-history DCO workflow owned by AR-0003. Earlier
   bash-stdin command hashes are argv-only and non-unique; named evidence and external synthetic
   artifacts were separately inspected.
+
+- 2026-09-06T16:17:48+00:00: Recorded command exit 0; command argv SHA-256
+  9a1c7c3d4b33f6f7bad4295d7dacae2a0d27a5ca2a0cdbf0f8a0479ba83a0695.
