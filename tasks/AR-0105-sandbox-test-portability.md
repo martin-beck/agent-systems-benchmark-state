@@ -7,7 +7,7 @@
     "AR-0103"
   ],
   "id": "AR-0105",
-  "next_action": "Await coordinator integration of approved exact PR #18 head eea3d20; then run exact-main post-merge checks.",
+  "next_action": "Resolve pushed merge 7f308cc DCO/signature identity failure before AR-0105 release; do not repeat merge/fetch or release.",
   "observed_branch": "fix/sandbox-test-portability",
   "observed_dirty": 0,
   "observed_head": "7f308cca70386413ec0fc047e8836620b4e59bbe",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "Repair sandbox test target portability",
-  "updated_at": "2026-09-06T22:17:06+00:00",
+  "updated_at": "2026-09-06T22:18:05+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-test-portability"
 }
 ---
@@ -249,3 +249,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T22:17:06+00:00: Recorded command exit 0; command argv SHA-256
   6666c5dc9937172206b2b480a2695d3024cc09358b12ac8a1d7578f49e24494a.
+
+- 2026-09-06T22:18:05+00:00: PR #18 durably merged exact reviewed eea3d20 into b7e9078 as 7f308cc.
+  Exact-main fresh external postmerge tests passed 23 runtime unit plus 10 sandbox boundary/native
+  tests with repository target absent and zero residue; live doctor passed. Hosted formal run
+  34063408520 passed. Hosted Rust run 34063408544 failed DCO on x86_64/aarch64 and quality run
+  34063408539 failed repository policy: GitHub-authored merge identity is martin-beck
+  <martin.beck2@gmx.de>, while required trailer is Martin Beck <martin.beck2@gmx.de>, so
+  matching-author DCO fails; local keyring also cannot authenticate GitHub web-flow RSA signature.
+  Correcting already-pushed main requires coordinator authorization for a controlled signed+DCO
+  history repair or another explicit policy decision. AR remains in_progress and unreleased.
