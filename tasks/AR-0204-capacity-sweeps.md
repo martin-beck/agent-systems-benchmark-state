@@ -7,6 +7,7 @@
     "AR-0102",
     "AR-0103",
     "AR-0104",
+    "AR-0105",
     "AR-0201",
     "AR-0203"
   ],
@@ -21,9 +22,9 @@
   "schema_version": 1,
   "status": "blocked",
   "summary": "Run repeated closed-loop and open-loop experiments with bounded concurrency.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Implement capacity sweeps and arrival scheduling",
-  "updated_at": "2026-09-06T21:12:39+00:00",
+  "updated_at": "2026-09-06T21:14:00+00:00",
   "worktree_key": "agent-systems-benchmark-capacity-sweeps"
 }
 ---
