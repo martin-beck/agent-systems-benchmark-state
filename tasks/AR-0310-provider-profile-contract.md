@@ -8,7 +8,7 @@
     "AR-1001"
   ],
   "id": "AR-0310",
-  "next_action": "Complete pinned Kani proof in same-drive cache, re-review exact candidate, then request immutable coordinator review.",
+  "next_action": "Await independent immutable review of exact head 3f9edc3305c13f3fb9b5555c6cdfa7c4e2bbd5ce before publication.",
   "observed_branch": "feature/provider-profile-contract",
   "observed_dirty": 0,
   "observed_head": "3f9edc3305c13f3fb9b5555c6cdfa7c4e2bbd5ce",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Normalize one provider configuration for safe translation across heterogeneous agent adapters.",
-  "task_revision": 114,
+  "task_revision": 115,
   "title": "Define common provider profiles",
-  "updated_at": "2026-09-06T23:48:06+00:00",
+  "updated_at": "2026-09-06T23:48:26+00:00",
   "worktree_key": "agent-systems-benchmark-provider-profile-contract"
 }
 ---
@@ -322,3 +322,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T23:48:06+00:00: Recorded command exit 0; command argv SHA-256
   79029c18a8108882e938bfdb83a9dbeba1a5ab43755caddb3fed1badf588a07d.
+
+- 2026-09-06T23:48:26+00:00: Rebased exact-equal six-commit range onto product main 311c128;
+  immutable head 3f9edc3305c13f3fb9b5555c6cdfa7c4e2bbd5ce, tree
+  6cba4d8db671b4f7755d5b5b703f03cee58cdd17. All six commits have valid SSH signatures and exact
+  Martin DCO. Fresh post-rebase full workspace fmt, clippy, tests, strict docs, release and CLI
+  negatives pass; independent Python profile digest remains
+  3ef77e8fcc34900d8cece0e1bccf3bb3b23cb389669ca6eb857853be93612ae5. Repository policy, actionlint,
+  zizmor, introduced-history Gitleaks, deny, audit, configured coverage, controlled gate failures
+  and platform validators pass. Fresh formal Loom/state/production-trace tests, five pinned Kani
+  proofs and deliberate Kani counterexample pass using only same-drive caches. Worktree is clean; no
+  concrete adapter provider support is claimed.
