@@ -8,7 +8,7 @@
     "AR-0203"
   ],
   "id": "AR-1001",
-  "next_action": "Rebase once after AR-0301 integration, take transferred Cargo/schema fence, wire modules, generate checked-in schema and matched/confounded fixtures, then run full gates.",
+  "next_action": "Create focused signed candidate after final exact-tree privacy, schema-generation, and scope checks; then run committed-tree policy gates for immutable coordinator review.",
   "observed_branch": "feature/experiment-comparability",
   "observed_dirty": 16,
   "observed_head": "9543a3297dd9d0ca93c802bb204b099ac1df569b",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make every comparison content-addressed and explicit about agent, model, workload and platform confounders.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "Define experiment identity and comparability",
-  "updated_at": "2026-09-06T21:03:02+00:00",
+  "updated_at": "2026-09-06T21:03:15+00:00",
   "worktree_key": "agent-systems-benchmark-experiment-comparability"
 }
 ---
@@ -245,3 +245,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T21:03:02+00:00: Recorded command exit 0; command argv SHA-256
   be55d8b849c7bb7a2b3797cdeb001c3f3c72c73ac7173ea931ad4c81cb88e533.
+
+- 2026-09-06T21:03:15+00:00: Compliant Kani rerun completed exit 0 with task-local KANI_HOME and
+  target under the mandated projects storage root: all five bounded proofs and the deliberate
+  negative passed, and the unintended user-home Kani cache is absent. The earlier first-time
+  launcher cache outside the storage root was audited then moved intact to a quarantined directory
+  under the permitted local artifact root. A later direct read-only validator invocation used an
+  incorrect path prefix and failed FileNotFoundError without mutation; the wrapped rerun with
+  fixture basenames passed both independent exact digests.
