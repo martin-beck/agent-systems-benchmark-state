@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling.",
-  "task_revision": 158,
+  "task_revision": 159,
   "title": "Collect portable system and session metrics",
-  "updated_at": "2026-09-06T19:11:55+00:00",
+  "updated_at": "2026-09-06T19:12:47+00:00",
   "worktree_key": "agent-systems-benchmark-portable-metrics"
 }
 ---
@@ -448,3 +448,6 @@ Implementation has not started. Read the linked plan before claiming.
   failures and platform validation all pass. Exact-merge hosted quality 34054018237 and Rust
   x86_64/aarch64 34054018397 are green. Primary main and feature worktrees are clean and
   synchronized.
+
+- 2026-09-06T19:12:47+00:00: Recorded command exit 0; command argv SHA-256
+  11befa5f1961c67a8f40af466f99fbba983ec44a42b1224bcc82a5e6a3bdf460.
