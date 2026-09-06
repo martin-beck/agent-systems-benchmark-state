@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #10 | `feature/sandbox-runtime@7e764d8e2b33` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS: | runtime: isolate untrusted processes |
+| #10 | `feature/sandbox-runtime@7e764d8e2b33` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS | runtime: isolate untrusted processes |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 34055198399 | `7e764d8e2b33` | pull_request | Repository quality | completed:failure |
-| 34055198296 | `7e764d8e2b33` | pull_request | Rust verification | in_progress:- |
+| 34055198296 | `7e764d8e2b33` | pull_request | Rust verification | completed:success |
 | 34054837850 | `162110386605` | push | Rust verification | completed:success |
 | 34054837848 | `162110386605` | push | Repository quality | completed:success |
 | 34054668620 | `410ecc95b80e` | pull_request | Rust verification | completed:success |
