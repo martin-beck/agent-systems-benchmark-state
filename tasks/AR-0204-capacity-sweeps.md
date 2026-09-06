@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run repeated closed-loop and open-loop experiments with bounded concurrency.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Implement capacity sweeps and arrival scheduling",
-  "updated_at": "2026-09-06T20:50:33+00:00",
+  "updated_at": "2026-09-06T21:01:54+00:00",
   "worktree_key": "agent-systems-benchmark-capacity-sweeps"
 }
 ---
@@ -162,3 +162,6 @@ Implementation has not started. Read the linked plan before claiming.
   directory after confirming it was Cargo build output; external cache remains under
   /srv/data/projects/.asb-local. Hard per-attempt cancellation remains the executor obligation;
   scheduler deadline stops admission and drains admitted work.
+
+- 2026-09-06T21:01:54+00:00: Recorded command exit 1; command argv SHA-256
+  4fe5e6df52eee69f9abda47b6896be6dcde0d41f363cfac5b974b99168d876d4.
