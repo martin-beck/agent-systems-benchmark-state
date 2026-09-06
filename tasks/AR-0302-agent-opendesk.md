@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support the bitclub OpenDesk CLI with its own dialect and compatibility record.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Implement OpenDesk client adapter",
-  "updated_at": "2026-09-06T21:43:15+00:00",
+  "updated_at": "2026-09-06T21:44:59+00:00",
   "worktree_key": "agent-systems-benchmark-agent-opendesk"
 }
 ---
@@ -163,3 +163,6 @@ Implementation has not started. Read the linked plan before claiming.
   must discard bounded raw output/export, parse benchmark task_success, isolate config, route all
   non-loopback traffic to a closed proxy, and claim only exercised Linux x86_64. Prompt argv
   visibility remains an explicit unsupported privacy boundary.
+
+- 2026-09-06T21:44:59+00:00: Recorded command exit 0; command argv SHA-256
+  31f662a8c0de0bdcef92075ddaf99fbd6a2befc75e47c3fccf36c521b0f46d24.
