@@ -11,11 +11,14 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #10 | `feature/sandbox-runtime@a2ebac54d8ea` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | runtime: isolate untrusted processes |
+| #11 | `feature/strict-replay@cdd76f988999` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED: | replay: add strict provider response service |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34053142345 | `cdd76f988999` | pull_request | Rust verification | queued:- |
+| 34053142315 | `cdd76f988999` | pull_request | Repository quality | queued:- |
 | 34052743886 | `a2ebac54d8ea` | pull_request | Repository quality | completed:success |
 | 34052743817 | `a2ebac54d8ea` | pull_request | Rust verification | completed:success |
 | 34052635899 | `c9e3653ebd99` | dynamic | Dependency Graph | completed:success |
@@ -26,5 +29,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34051996585 | `4d9643cfe39d` | pull_request | Repository quality | completed:success |
 | 34051996558 | `4d9643cfe39d` | pull_request | Rust verification | completed:success |
 | 34051300116 | `265d811b765e` | push | Rust verification | completed:success |
-| 34051300070 | `265d811b765e` | push | Repository quality | completed:success |
-| 34051162612 | `cd88f5703fb3` | pull_request | Rust verification | completed:success |
