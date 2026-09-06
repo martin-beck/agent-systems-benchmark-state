@@ -2,16 +2,16 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `c9e3653ebd9955f433e65f0c3110421166ac03c7`
-- Local origin/main: `c9e3653ebd9955f433e65f0c3110421166ac03c7`
+- Product remote main: `ef1a6578600b45f4afb4dd414131f9ffd2ddd01f`
+- Local origin/main: `ef1a6578600b45f4afb4dd414131f9ffd2ddd01f`
 - Primary worktree head: `ef1a6578600b45f4afb4dd414131f9ffd2ddd01f`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #10 | `feature/sandbox-runtime@a2ebac54d8ea` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | runtime: isolate untrusted processes |
-| #11 | `feature/strict-replay@c20fdccb91ab` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | replay: add strict provider response service |
+| #10 | `feature/sandbox-runtime@a2ebac54d8ea` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | runtime: isolate untrusted processes |
+| #11 | `feature/strict-replay@c20fdccb91ab` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | replay: add strict provider response service |
 | #12 | `feature/portable-metrics@a0f67bea1ffe` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | metrics: add portable Linux collectors |
 
 ## Recent workflows
