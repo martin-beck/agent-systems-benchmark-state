@@ -9,7 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0204](tasks/AR-0204-capacity-sweeps.md): Implement capacity sweeps and arrival scheduling | Run repeated closed-loop and open-loop experiments with bounded concurrency. | Implement scheduler from fixed manifests and monotonic clock abstraction. | contracts-20260906 |
 | P1 | [AR-0301](tasks/AR-0301-agent-opencode.md): Implement OpenCode client adapter | Run pinned OpenCode through its structured supported interfaces. | Create focused signed+DCO candidate, run commit-policy and exact-tree checks, publish PR, then obtain immutable independent review and exact-head CI before integration. | root-coordination-20260906 |
-| P1 | [AR-0504](tasks/AR-0504-replay-pacing.md): Implement pacing and replay overhead assessment | Support immediate, fixed-latency, original-paced and seeded synthetic scenarios. | Monitor PR #16 exact-head formal, quality, and native x86_64/aarch64 Rust CI; await coordinator immutable review and do not merge. | replay-20260906 |
+| P1 | [AR-0504](tasks/AR-0504-replay-pacing.md): Implement pacing and replay overhead assessment | Support immediate, fixed-latency, original-paced and seeded synthetic scenarios. | Await coordinator immutable approval of exact green PR #16 head 73d28a4; do not merge. | replay-20260906 |
 | P1 | [AR-1001](tasks/AR-1001-experiment-comparability.md): Define experiment identity and comparability | Make every comparison content-addressed and explicit about agent, model, workload and platform confounders. | Complete comparison fixtures, generated schema, Cargo integration, and full gates after serialized fence transfer. | quality-20260906 |
 
 ## Planned

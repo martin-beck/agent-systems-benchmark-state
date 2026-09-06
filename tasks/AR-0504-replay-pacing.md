@@ -8,7 +8,7 @@
     "AR-0201"
   ],
   "id": "AR-0504",
-  "next_action": "Monitor PR #16 exact-head formal, quality, and native x86_64/aarch64 Rust CI; await coordinator immutable review and do not merge.",
+  "next_action": "Await coordinator immutable approval of exact green PR #16 head 73d28a4; do not merge.",
   "observed_branch": "feature/replay-pacing",
   "observed_dirty": 0,
   "observed_head": "73d28a431c782e14b172d8309b5f76b71a4f1bf6",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support immediate, fixed-latency, original-paced and seeded synthetic scenarios.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Implement pacing and replay overhead assessment",
-  "updated_at": "2026-09-06T20:22:57+00:00",
+  "updated_at": "2026-09-06T20:26:03+00:00",
   "worktree_key": "agent-systems-benchmark-replay-pacing"
 }
 ---
@@ -252,3 +252,15 @@ a fresh reconciliation.
   equals 73d28a4 and PR #16 is open/mergeable against exact ac4a235. Exact-head CI runs started:
   formal 34057788951, quality 34057789139, Rust x86_64+aarch64 34057788965. Do not merge pending
   immutable review and green CI.
+
+- 2026-09-06T20:26:03+00:00: PR #16 exact head 73d28a431c782e14b172d8309b5f76b71a4f1bf6 remains
+  mergeable on base ac4a235 and all exact-head CI is GREEN: formal/Kani+Loom x86_64+aarch64 run
+  34057788951, repository quality run 34057789139, Rust x86_64+aarch64 run 34057788965. Separately
+  completed requested read-only review of AR-0301 PR #13 immutable 5037401 on ac4a235 without
+  editing it. Review blocks on three concrete issues: upstream exact 16747470 defaults wildcard
+  permissions to allow and tests bash=allow, while adapter overrides only
+  edit/external/question/plan so README shell/other rejection claim is false; event parser accepts
+  missing/wrong part discriminators and duplicate JSON keys despite malformed fail-closed claim;
+  preparation/spawn error cleanup ignores remove_dir_all failure after prompt creation and returns
+  without retry ownership, potentially orphaning prompt material. Provenance hashes, two SSH
+  signatures+DCO, scope, and exact-head green CI were verified; findings sent to coordinator.
