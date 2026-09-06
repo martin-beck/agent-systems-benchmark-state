@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Specify typed agent, workload, collector, runtime and result contracts before parallel implementations.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Freeze versioned extension and result contracts",
-  "updated_at": "2026-09-06T15:43:20+00:00",
+  "updated_at": "2026-09-06T15:44:59+00:00",
   "worktree_key": "agent-systems-benchmark-extension-contracts"
 }
 ---
@@ -52,3 +52,6 @@ Implementation has not started. Read the linked plan before claiming.
   manifest exists, with no source yet and no live AR-0101 process. Preserving these intended
   AR-owned changes. Earlier update attempts failed on missing then stale expected revision and
   caused no product effect. Coordinator notified to serialize Cargo/schema integration.
+
+- 2026-09-06T15:44:59+00:00: Recorded command exit 0; command SHA-256
+  3df9014127a0bc571040e0895d3af786b112ae25fcabab74c0ee13dbdea7ef88.
