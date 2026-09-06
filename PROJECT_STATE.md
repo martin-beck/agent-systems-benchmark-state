@@ -10,12 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #10 | `feature/sandbox-runtime@a2ebac54d8ea` | `main` | UNKNOWN | - | runtime: isolate untrusted processes |
+| #10 | `feature/sandbox-runtime@a2ebac54d8ea` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, QUEUED: | runtime: isolate untrusted processes |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34052743886 | `a2ebac54d8ea` | pull_request | Repository quality | queued:- |
+| 34052743817 | `a2ebac54d8ea` | pull_request | Rust verification | queued:- |
 | 34052635899 | `c9e3653ebd99` | dynamic | Dependency Graph | completed:success |
 | 34052633574 | `c9e3653ebd99` | push | Rust verification | completed:success |
 | 34052633572 | `c9e3653ebd99` | push | Repository quality | completed:success |
@@ -26,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34051300116 | `265d811b765e` | push | Rust verification | completed:success |
 | 34051300070 | `265d811b765e` | push | Repository quality | completed:success |
 | 34051162612 | `cd88f5703fb3` | pull_request | Rust verification | completed:success |
-| 34051162442 | `cd88f5703fb3` | pull_request | Repository quality | completed:success |
-| 34049249342 | `e6a81e8644c6` | push | Repository quality | completed:success |
