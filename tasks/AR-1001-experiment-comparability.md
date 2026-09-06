@@ -8,7 +8,7 @@
     "AR-0203"
   ],
   "id": "AR-1001",
-  "next_action": "Implement the experiment identity model and comparison compatibility rules.",
+  "next_action": "Complete comparison fixtures, generated schema, Cargo integration, and full gates after serialized fence transfer.",
   "observed_branch": "feature/experiment-comparability",
   "observed_dirty": 2,
   "observed_head": "bda6bc41760a914ffc1a9305fc88422eaace302b",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make every comparison content-addressed and explicit about agent, model, workload and platform confounders.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Define experiment identity and comparability",
-  "updated_at": "2026-09-06T20:18:40+00:00",
+  "updated_at": "2026-09-06T20:19:04+00:00",
   "worktree_key": "agent-systems-benchmark-experiment-comparability"
 }
 ---
@@ -63,3 +63,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T20:18:40+00:00: Recorded command exit 0; command argv SHA-256
   5a334fc9961543439c95cad314f1e481d6c08e3b563fcbe95cf5f6cc3348171a.
+
+- 2026-09-06T20:19:04+00:00: Implemented isolated source modules only: typed credential-free v1
+  experiment identity, deterministic SHA-256 content address excluding its own digest, strict
+  field/replay/bounds validation, and fail-closed comparison that reports deterministic confounder
+  dimensions without raw values. Added protocol negative unit coverage. Did not touch Cargo.toml,
+  Cargo.lock, generated schemas, fixtures, or registries while root AR-0301 holds the shared fence.
+  First wrapped apply_patch attempt failed exit 2 because run stdin is DEVNULL; no product mutation.
+  One later wrapped patch waited safely behind AR-0504 long coverage state lock, then applied after
+  serialization.
