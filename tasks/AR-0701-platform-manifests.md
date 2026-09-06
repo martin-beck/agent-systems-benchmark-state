@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define Ubuntu, Debian, Fedora, enterprise, openSUSE, Arch, Alpine and openEuler target manifests.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Pin distribution and architecture support matrix",
-  "updated_at": "2026-09-06T16:51:04+00:00",
+  "updated_at": "2026-09-06T16:51:23+00:00",
   "worktree_key": "agent-systems-benchmark-platform-manifests"
 }
 ---
@@ -235,3 +235,6 @@ Implementation has not started. Read the linked plan before claiming.
   coverage 96.47 percent workspace and 100 percent core; actionlint, zizmor pedantic, Gitleaks over
   main..HEAD, and full quality failure suite. Hosted runs 34046717386 and 34046717411 are in
   progress. No native runtime, agent session or workload claim is made.
+
+- 2026-09-06T16:51:23+00:00: Recorded command exit 0; command argv SHA-256
+  3854496c6c743ac08cda7ff16a4b128437877cb501e46e618d95bb5285c3ff37.
