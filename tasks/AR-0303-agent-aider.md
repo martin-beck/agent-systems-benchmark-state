@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support unattended aider editing with bounded input, output and repository changes.",
-  "task_revision": 148,
+  "task_revision": 149,
   "title": "Implement aider client adapter",
-  "updated_at": "2026-09-06T23:53:09+00:00",
+  "updated_at": "2026-09-06T23:53:25+00:00",
   "worktree_key": "agent-systems-benchmark-agent-aider"
 }
 ---
@@ -458,3 +458,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T23:53:09+00:00: Recorded command exit 0; command argv SHA-256
   57f66c68dcc366c6df78ffa3c9a1932f8a5b681b4f77bce90e3bab2afea61c66.
+
+- 2026-09-06T23:53:25+00:00: Recorded command exit 0; command argv SHA-256
+  85adb6648cf2346008d185945bb88365b75b127bb862abd40c50b7001ceff6e0.
