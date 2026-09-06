@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Serve local recorded responses while real agent and tools execute.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Implement strict provider response replay",
-  "updated_at": "2026-09-06T18:55:06+00:00",
+  "updated_at": "2026-09-06T18:56:23+00:00",
   "worktree_key": "agent-systems-benchmark-strict-replay"
 }
 ---
@@ -161,3 +161,6 @@ Dependencies AR-0102 and AR-0502 are done. Read the linked plan and claim after 
   run 34053142315 job 101540213345, Rust run 34053142345 x86_64 job 101540213792 and aarch64 job
   101540213848. Local worktree is clean and synchronized. Independent review remains required; no
   merge/release authorization assumed.
+
+- 2026-09-06T18:56:23+00:00: Recorded command exit 1; command argv SHA-256
+  89ca30cd32d6d368e2cb63690c0ac97dc548d39a42498419f541ad7997205256.
