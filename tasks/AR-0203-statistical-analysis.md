@@ -7,7 +7,7 @@
     "AR-0101"
   ],
   "id": "AR-0203",
-  "next_action": "Push immutable candidate 4d9643c, open focused PR, await exact-head hosted CI and independent immutable review; repair findings before coordinator merge.",
+  "next_action": "Await independent immutable-head re-review and exact-head hosted CI at 3bcfd85; repair any finding before merge.",
   "observed_branch": "feature/statistical-analysis",
   "observed_dirty": 0,
   "observed_head": "3bcfd85dedd3b0c944d8c3100c031203d5888b10",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compute latency distributions, quality/throughput intervals and evidence-aware SLO results.",
-  "task_revision": 102,
+  "task_revision": 103,
   "title": "Implement statistical and SLO assessment",
-  "updated_at": "2026-09-06T18:41:35+00:00",
+  "updated_at": "2026-09-06T18:41:55+00:00",
   "worktree_key": "agent-systems-benchmark-statistical-analysis"
 }
 ---
@@ -305,3 +305,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T18:41:35+00:00: Recorded command exit 0; command argv SHA-256
   b62d0f83ae74db68440c0e9cf6ddec88e767d63ac08a51e3c8d92ec621145b81.
+
+- 2026-09-06T18:41:55+00:00: Independent immutable review blocked old PR head 4d9643c because public
+  evidence fields permitted forged well-shaped intervals and DKW lacked independent reference
+  vectors. Repaired at signed+DCO head 3bcfd85: AttemptAnalysis and EstimateInterval are
+  constructor-controlled with read-only accessors; two downstream compile-fail doctests prove forged
+  Wilson/DKW/Student-t evidence cannot be constructed; pinned committed SciPy 1.16.1/NumPy 2.5.3
+  validator reproduces original vectors plus DKW n=100 unbounded-upper and n=1000 finite-upper
+  vectors. Initial new DKW fixture failed because separators were literal backslash-t; corrected to
+  real TSV delimiters before acceptance. Exact final full gates pass: 14 analysis
+  unit/model/negative tests plus 2 compile-fail doctests, 109 workspace unit/integration tests,
+  fmt/Clippy/rustdoc/release, deny/audit, actionlint/zizmor/Gitleaks/policy/all failure fixtures.
+  Final coverage asb-analysis 98.45% lines/97.00% regions, workspace 97.09% lines/93.12% regions.
+  Await new immutable-head review and hosted CI.
