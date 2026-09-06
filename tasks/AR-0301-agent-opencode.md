@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned OpenCode through its structured supported interfaces.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Implement OpenCode client adapter",
-  "updated_at": "2026-09-06T18:53:53+00:00",
+  "updated_at": "2026-09-06T18:54:15+00:00",
   "worktree_key": "agent-systems-benchmark-agent-opencode"
 }
 ---
@@ -42,3 +42,6 @@ Dependencies AR-0101 and AR-0102 are done. Read the linked plan and claim after 
   0e6cafbd044685c149aaf029c182d3050a2bc34a9d02f43ff8a9cece7a7357c9.
 
 - 2026-09-06T18:53:53+00:00: Heartbeat by root-coordination-20260906.
+
+- 2026-09-06T18:54:15+00:00: Recorded command exit 2; command argv SHA-256
+  48458d4adcbc2714c4ae60f17ec39d916357031118af6e75d9a5cd826c73f20e.
