@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compare literature and record/replay implementations using identical synthetic conformance cases.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Evaluate replay literature and reusable tools",
-  "updated_at": "2026-09-06T15:41:12+00:00",
+  "updated_at": "2026-09-06T15:41:14+00:00",
   "worktree_key": "agent-systems-benchmark-replay-evaluation"
 }
 ---
@@ -32,3 +32,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-06T15:25:24+00:00: Promoted to open after verifying AR-0001 is done; assigned to the initial four-worker pool.
 
 - 2026-09-06T15:41:08+00:00: Claimed by replay-20260906.
+
+- 2026-09-06T15:41:14+00:00: Recorded command exit 0; command SHA-256
+  73433299103b0f75b15b0cd48d5a811ca2b2d677493f09836694785f706c7cd8.
