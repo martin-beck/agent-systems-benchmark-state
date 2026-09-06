@@ -12,7 +12,7 @@
     "AR-0203"
   ],
   "id": "AR-0204",
-  "next_action": "Monitor exact-head PR #21 CI at immutable 0717d4a; repair failures, do not merge.",
+  "next_action": "Await coordinator integration authorization for clean exact-head PR #21; do not merge.",
   "observed_branch": "feature/capacity-sweeps",
   "observed_dirty": 0,
   "observed_head": "0717d4acd16856d8fad593efdfa9007ad32c1c3f",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run repeated closed-loop and open-loop experiments with bounded concurrency.",
-  "task_revision": 175,
+  "task_revision": 176,
   "title": "Implement capacity sweeps and arrival scheduling",
-  "updated_at": "2026-09-06T23:31:14+00:00",
+  "updated_at": "2026-09-06T23:33:07+00:00",
   "worktree_key": "agent-systems-benchmark-capacity-sweeps"
 }
 ---
@@ -542,3 +542,10 @@ Implementation has not started. Read the linked plan before claiming.
   Repository quality 34067095259, Formal assurance 34067095323.
 
 - 2026-09-06T23:31:14+00:00: Heartbeat by contracts-20260906.
+
+- 2026-09-06T23:33:07+00:00: PR #21 remains exact base 52b8b3b12d1fb2ae7cdda0afbc7f728d5e08f44a /
+  head 0717d4acd16856d8fad593efdfa9007ad32c1c3f, mergeable CLEAN and worktree clean. All
+  immutable-head hosted CI completed SUCCESS: Rust verification 34067095250 (x86_64 and aarch64),
+  Repository quality 34067095259, Formal assurance 34067095323 (Kani plus Loom/state models on
+  x86_64 and aarch64). No repair or rewrite was needed. Independent approval and retained scheduler
+  coverage limit remain as previously recorded. Do not merge pending coordinator authorization.
