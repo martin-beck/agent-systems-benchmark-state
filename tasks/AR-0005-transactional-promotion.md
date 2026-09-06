@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make planned-to-open promotion a transactional handoffctl operation.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Add transactional AR promotion",
-  "updated_at": "2026-09-06T21:01:33+00:00",
+  "updated_at": "2026-09-06T21:02:46+00:00",
   "worktree_key": "agent-systems-benchmark-state-promotion"
 }
 ---
@@ -78,3 +78,6 @@ Implementation has not started. Read the linked plan before claiming.
   interruption recovery. Exact tests: 37 coordinator fault/race tests, Ruff, strict mypy, schema,
   generated views, privacy/static doctor, and 97% branch-aware combined coverage. State PR #4
   opened; exact CI 34059561972 succeeded.
+
+- 2026-09-06T21:02:46+00:00: Recorded command exit 0; command argv SHA-256
+  0907f9f414de0736ca4c3c10411d5cdcd466a79a4c9f115d8ba5dda2ee6394bc.
