@@ -8,7 +8,7 @@
     "AR-0501"
   ],
   "id": "AR-0502",
-  "next_action": "Run full exact-tree quality/supply/privacy gates on review repairs, commit a focused SSH-signed DCO repair, and report the new immutable head for re-review before PR.",
+  "next_action": "Await independent re-review of exact head 63da219cdae994c6a1abfcdda49f3e2ebb2bdcd5; repair any findings before push or PR.",
   "observed_branch": "feature/replay-cassettes",
   "observed_dirty": 0,
   "observed_head": "63da219cdae994c6a1abfcdda49f3e2ebb2bdcd5",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Store versioned provider requests, event streams, causal IDs and integrity metadata.",
-  "task_revision": 103,
+  "task_revision": 104,
   "title": "Implement immutable response cassette format",
-  "updated_at": "2026-09-06T18:12:49+00:00",
+  "updated_at": "2026-09-06T18:13:14+00:00",
   "worktree_key": "agent-systems-benchmark-replay-cassettes"
 }
 ---
@@ -371,3 +371,24 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T18:12:49+00:00: Recorded command exit 0; command argv SHA-256
   59c582d88067c1442c93622ddfb3fdd47891399db7b2c560842149a6f1f9ffbe.
+
+- 2026-09-06T18:13:14+00:00: All four immutable-review blockers are repaired in focused signed+DCO
+  commit 63da219cdae994c6a1abfcdda49f3e2ebb2bdcd5 (tree 660b6ca4c52074f61dc03f386ed3cc717def8871),
+  directly atop original candidate 6e7e6d4 and exact product main e6a81e8; worktree clean. Added
+  typed redaction identities with cross-location equality/collision negatives; strict shared
+  origin-form and header control validation with recomputed-root adversarial decode and schema
+  tests; explicit recursively sorted canonical bytes with pinned serde scalar semantics and
+  reordered object vectors; full deterministic redaction descriptor (sorted selector sets plus
+  digest) with descriptor mismatch/tamper and migration-change tests. README limits interoperability
+  and states unkeyed hashes neither authenticate nor prove external redaction. Default selector
+  digest is 64412f823f725e6f93337bc3741961006631645abc7680d45c98b887cb0d18c9; fixture roots
+  c99897813a8af0e6c3cc4b83a7f0a7bcff2a660edecf635454bbf6acb801f721 and
+  3d4d71258de60552de425be33ef4f9e3f4617e17bccd82affecc64385afd4fc4. Exact-head
+  signature/DCO/repository policy, fmt, workspace Clippy/tests/rustdoc/release, schema parity,
+  cargo-deny/audit, actionlint/zizmor, and Gitleaks pass. Workspace coverage 96.69%; replay 97.10%
+  lines (cassette 95.72%, migration 98.41%, redaction 99.03%). Retained descriptor patch hashes
+  28d3a5addd1b3f78bc9957d553d4c11cfecf4e9dd05ae2be39b445983645fd8f (partial application explicitly
+  detected), 9b36f7b8ce3640c24b589766562ed044adc88a67c1dce8ca26c35f635084f08f, and
+  3ae929d773c39f6e76105e06bcd238ee8cf6e6f6dda197fa5607aa14575bd151. One precommit scope-count
+  assertion expected 10 instead of observed 12 and failed before commit; corrected exact 12-path
+  scope then committed.
