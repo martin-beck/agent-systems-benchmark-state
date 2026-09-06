@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0001](tasks/AR-0001-repository-bootstrap.md): Bootstrap public repositories | Establish both public MIT repositories, Rust workspace, coordination reuse and evidence-backed plans. | Verify local gates, publish the reviewed initial trees and reconcile hosted CI. | bootstrap-20260906 |
-
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -55,3 +49,9 @@ Never edit this file directly.
 | P3 | [AR-0404](tasks/AR-0404-extended-workloads.md): Expand established benchmark catalogue | Evaluate SWE-bench Pro, BigCodeBench, EvalPlus and LiveCodeBench as optional suites. | Rank suites by additional coverage and maintenance cost. | - |
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Evaluate maintenance, licenses and reproducibility before integration. | - |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. | - |
+
+## Done
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0001](tasks/AR-0001-repository-bootstrap.md): Bootstrap public repositories | Establish both public MIT repositories, Rust workspace, coordination reuse and evidence-backed plans. | Verify local gates, publish the reviewed initial trees and reconcile hosted CI. | - |
