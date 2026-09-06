@@ -598,6 +598,7 @@ class HandoffTest(unittest.TestCase):
         ):
             self.assertEqual(0, CORE.cmd_run(args))
             self.assertIn("command SHA-256", mutate.call_args.args[0].note)
+            self.assertIsNone(mutate.call_args.args[0].expected_revision)
         with self.assertRaisesRegex(RuntimeError, "claim"):
             CORE.cmd_run(argparse.Namespace(task="AR-0001", owner="wrong", command=["true"]))
         with self.assertRaisesRegex(RuntimeError, "missing command"):

@@ -647,7 +647,7 @@ def apply_owned_change(args: argparse.Namespace, kind: str, meta: Meta) -> str:
         meta["owner"] = ""
         meta["claim_expires"] = ""
         return str(args.note)
-    if args.expected_revision != meta["task_revision"]:
+    if args.expected_revision is not None and args.expected_revision != meta["task_revision"]:
         expected = args.expected_revision
         current = meta["task_revision"]
         raise RuntimeError(f"stale revision: expected {expected}, current {current}")
@@ -739,7 +739,9 @@ def cmd_run(args: argparse.Namespace) -> int:
     update = argparse.Namespace(
         task=args.task,
         owner=args.owner,
-        expected_revision=locate(args.task)[1]["task_revision"],
+        # This internal append is serialized by mutate and must attach to the
+        # latest task revision after concurrent observation reconciliation.
+        expected_revision=None,
         status=None,
         priority=None,
         summary=None,
