@@ -10,7 +10,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 13, ahead 0 |
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 21, ahead 0 |
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 17, ahead 0 |
-| `agent-systems-benchmark-portable-metrics` | `feature/portable-metrics` | `5a0a65caaab9` | 0 | behind 0, ahead 7 |
+| `agent-systems-benchmark-portable-metrics` | `feature/portable-metrics` | `5a0a65caaab9` | 1 | behind 0, ahead 7 |
+| changed files | - | - | - | `crates/asb-metrics/Cargo.toml` |
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `51daeb8608e5` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `748537c25e3a` | 0 | behind 27, ahead 0 |
 | `agent-systems-benchmark-replay-cassettes` | `feature/replay-cassettes` | `cd88f5703fb3` | 0 | behind 6, ahead 0 |
