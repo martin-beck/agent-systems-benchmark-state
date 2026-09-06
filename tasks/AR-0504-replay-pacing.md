@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support immediate, fixed-latency, original-paced and seeded synthetic scenarios.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Implement pacing and replay overhead assessment",
-  "updated_at": "2026-09-06T19:35:55+00:00",
+  "updated_at": "2026-09-06T19:36:24+00:00",
   "worktree_key": "agent-systems-benchmark-replay-pacing"
 }
 ---
@@ -37,4 +37,7 @@ a fresh reconciliation.
   65631b3828e37a25aa986cfea94aaeab7a01caa728e08c99fcdfc2708a931530.
 
 - 2026-09-06T19:35:55+00:00: Recorded command exit 128; command argv SHA-256
+  bff455ee5d7443ee201ad470e6a1d51e198ebc6db456169c8b828ac0bb1def72.
+
+- 2026-09-06T19:36:24+00:00: Recorded command exit 1; command argv SHA-256
   bff455ee5d7443ee201ad470e6a1d51e198ebc6db456169c8b828ac0bb1def72.
