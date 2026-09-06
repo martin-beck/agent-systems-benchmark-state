@@ -10,15 +10,18 @@
   ],
   "id": "AR-0306",
   "next_action": "Inspect the current stable release, stream-JSON contract, provider override and ambient context loading.",
+  "observed_branch": "feature/agent-qwen-code",
+  "observed_dirty": 0,
+  "observed_head": "941ea6fff5eef30b126d3bcc5cc5d4117146de27",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0306.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned Qwen Code through isolated headless stream-JSON.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Implement Qwen Code client adapter",
-  "updated_at": "2026-09-06T23:56:44+00:00",
+  "updated_at": "2026-09-06T23:56:58+00:00",
   "worktree_key": "agent-systems-benchmark-agent-qwen-code"
 }
 ---
