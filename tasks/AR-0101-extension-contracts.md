@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Specify typed agent, workload, collector, runtime and result contracts before parallel implementations.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Freeze versioned extension and result contracts",
-  "updated_at": "2026-09-06T15:48:04+00:00",
+  "updated_at": "2026-09-06T15:48:24+00:00",
   "worktree_key": "agent-systems-benchmark-extension-contracts"
 }
 ---
@@ -80,3 +80,6 @@ Implementation has not started. Read the linked plan before claiming.
   mistake; its complete dirty diff remains preserved and uncommitted for audit. All subsequent
   mutations use the wrapper. First wrapped cargo invocation failed before execution because cargo
   was absent from PATH; AR-0003 supplied the shared pinned /srv/data/projects toolchain path.
+
+- 2026-09-06T15:48:24+00:00: Recorded command exit 1; command SHA-256
+  89a92d575f6cae9b2a3414b44274fd147bc3214d551c679290adbc483c7b88a3.
