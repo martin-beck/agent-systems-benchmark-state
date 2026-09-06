@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #13 | `feature/agent-opencode@dfb0d548bf75` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS | agents: add pinned OpenCode adapter |
+| #13 | `feature/agent-opencode@dfb0d548bf75` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS | agents: add pinned OpenCode adapter |
 
 ## Recent workflows
 
@@ -18,7 +18,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 34058711367 | `dfb0d548bf75` | pull_request | Repository quality | in_progress:- |
 | 34058711366 | `dfb0d548bf75` | pull_request | Rust verification | in_progress:- |
-| 34058711349 | `dfb0d548bf75` | pull_request | Formal assurance | in_progress:- |
+| 34058711349 | `dfb0d548bf75` | pull_request | Formal assurance | completed:success |
 | 34058370706 | `68f313fcb4fa` | push | Formal assurance | completed:success |
 | 34058370670 | `68f313fcb4fa` | push | Repository quality | completed:success |
 | 34058370668 | `68f313fcb4fa` | push | Rust verification | completed:success |
