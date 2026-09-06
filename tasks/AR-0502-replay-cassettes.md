@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Store versioned provider requests, event streams, causal IDs and integrity metadata.",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Implement immutable response cassette format",
-  "updated_at": "2026-09-06T18:16:23+00:00",
+  "updated_at": "2026-09-06T18:18:39+00:00",
   "worktree_key": "agent-systems-benchmark-replay-cassettes"
 }
 ---
@@ -428,3 +428,6 @@ Implementation has not started. Read the linked plan before claiming.
   exact-head CI in progress: Repository quality run 34051162442 job 101534923219; Rust verification
   run 34051162612 jobs 101534923806 x86_64 and 101534923739 aarch64. No merge authorized or
   attempted.
+
+- 2026-09-06T18:18:39+00:00: Recorded command exit 0; command argv SHA-256
+  e450f220d4ab5c5b4d3481924d132e537b953632dc9a6ec6e014059e410abf5b.
