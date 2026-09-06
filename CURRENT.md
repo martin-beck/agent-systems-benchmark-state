@@ -11,6 +11,12 @@ Never edit this file directly.
 | P1 | [AR-0301](tasks/AR-0301-agent-opencode.md): Implement OpenCode client adapter | Run pinned OpenCode through its structured supported interfaces. | Claim after a fresh reconciliation, then inspect the pinned upstream CLI/server contract and implement the isolated adapter. | root-coordination-20260906 |
 | P1 | [AR-0503](tasks/AR-0503-strict-replay.md): Implement strict provider response replay | Serve local recorded responses while real agent and tools execute. | Await coordinator independent immutable review of PR #11 exact c20fdcc with green exact-head CI; repair findings if any. Do not merge or release. | replay-20260906 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0901](tasks/AR-0901-formal-assurance.md): Prove critical state and concurrency invariants | Use bounded proofs and model tests for safety-critical domain logic. | Claim after a fresh reconciliation, then pin the verifier toolchains and implement the smallest dependency-ready invariant set. | - |
+
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -24,7 +30,6 @@ Never edit this file directly.
 | P1 | [AR-0505](tasks/AR-0505-agent-replay-conformance.md): Prove real-agent replay conformance | Test each actual client through recording and offline replay of engineering tasks. | Build production-boundary integration matrix using synthetic upstream service. | - |
 | P1 | [AR-0702](tasks/AR-0702-native-platforms.md): Validate native Linux kernels and architectures | Exercise native x86_64 and aarch64 including booted openEuler kernels. | Provision disposable native test environments with isolated benchmark resources. | - |
 | P1 | [AR-0801](tasks/AR-0801-terminal-interface.md): Implement terminal and automation interfaces | Provide doctor, plan, run, sweep, compare and report with stable JSON output. | Build planned commands around public library interfaces. | - |
-| P1 | [AR-0901](tasks/AR-0901-formal-assurance.md): Prove critical state and concurrency invariants | Use bounded proofs and model tests for safety-critical domain logic. | Select small pure invariants and pin compatible verifier toolchains. | - |
 | P1 | [AR-0902](tasks/AR-0902-fault-assurance.md): Add fuzz mutation and lifecycle fault campaigns | Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection. | Build bounded campaigns and counterexample retention. | - |
 | P1 | [AR-0904](tasks/AR-0904-contract-consistency.md): Machine-check protocol and artifact consistency | Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree. | Define canonical sources and generated/artifact-diff gates before extension implementations fan out. | - |
 | P1 | [AR-0905](tasks/AR-0905-recovery-models.md): Model execution recovery and worker fencing | Apply bounded formal models to run lifecycle, leases, recovery, replay cursors and uncertain external effects. | Translate Agent Relay's TLA+/Alloy/executable-model pattern to ASB run and replay domains. | - |
