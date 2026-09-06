@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #13 | `feature/agent-opencode@5037401b1571` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | agents: add pinned OpenCode adapter |
+| #13 | `feature/agent-opencode@dfb0d548bf75` | `main` | UNKNOWN | - | agents: add pinned OpenCode adapter |
 
 ## Recent workflows
 
