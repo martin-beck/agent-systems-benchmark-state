@@ -2,7 +2,7 @@
 {
   "branch": "feature/sandbox-runtime",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-06T20:22:42+00:00",
+  "claim_expires": "2026-09-06T21:19:56+00:00",
   "depends_on": [
     "AR-0102"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 216,
+  "task_revision": 217,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T19:19:49+00:00",
+  "updated_at": "2026-09-06T19:19:56+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
@@ -652,3 +652,5 @@ Implementation has not started. Read the linked plan before claiming.
   fixture test subsequently passed 20 repetitions. One focused diagnostic repetition command was
   mistakenly invoked without handoffctl; it changed no source or Git state, only the existing
   worktree target cache. Root Cargo files remain untouched.
+
+- 2026-09-06T19:19:56+00:00: Heartbeat by contracts-20260906.
