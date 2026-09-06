@@ -5,7 +5,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
 | `agent-systems-benchmark` | `main` | `ac4a23599649` | 0 | behind 0, ahead 0 |
-| `agent-systems-benchmark-agent-opencode` | `feature/agent-opencode` | `fa53386a97ab` | 0 | behind 12, ahead 2 |
+| `agent-systems-benchmark-agent-opencode` | `feature/agent-opencode` | `5037401b1571` | 0 | behind 0, ahead 2 |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 48, ahead 0 |
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 37, ahead 0 |
 | `agent-systems-benchmark-experiment-comparability` | `feature/experiment-comparability` | `bda6bc41760a` | 0 | behind 2, ahead 0 |
