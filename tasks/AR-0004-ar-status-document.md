@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Render every AR, status, and dependency as an accessible visual state document.",
-  "task_revision": 105,
+  "task_revision": 106,
   "title": "Generate the visual AR status document",
-  "updated_at": "2026-09-06T18:03:26+00:00",
+  "updated_at": "2026-09-06T18:04:42+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-status-document"
 }
 ---
@@ -344,3 +344,6 @@ easy-to-scan document in the public state repository.
   known-public Mermaid control, so no claim of successful GitHub iframe rendering is made. The
   workflow now checks the immutable PR head instead of a synthetic merge whose concurrently changing
   state front matter caused run 34049874952 to report a false stale STATUS.
+
+- 2026-09-06T18:04:42+00:00: Recorded command exit 0; command argv SHA-256
+  6f952f6da3c426efaad3ba740c9385454e15f3310917556d78da966e753853a6.
