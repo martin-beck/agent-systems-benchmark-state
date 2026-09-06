@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use Codex noninteractive structured events or app-server with declared capability boundaries.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Implement Codex client adapter",
-  "updated_at": "2026-09-06T23:17:30+00:00",
+  "updated_at": "2026-09-06T23:17:35+00:00",
   "worktree_key": "agent-systems-benchmark-agent-codex"
 }
 ---
@@ -34,3 +34,6 @@ Implementation has not started. Read the linked plan before claiming.
   highest-priority non-overlapping agent adapter after AR-0401 exact-head integration.
 
 - 2026-09-06T23:15:49+00:00: Claimed by replay-20260906.
+
+- 2026-09-06T23:17:35+00:00: Recorded command exit 0; command argv SHA-256
+  1f8497443a221bad65419cfee2c5376e1032bff7ce540c15480c73f8bb45db44.
