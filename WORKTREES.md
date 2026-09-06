@@ -11,8 +11,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 8, ahead 0 |
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `51daeb8608e5` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `748537c25e3a` | 0 | behind 18, ahead 0 |
-| `agent-systems-benchmark-replay-cassettes` | `feature/replay-cassettes` | `e6a81e8644c6` | 17 | behind 0, ahead 0 |
-| changed files | - | - | - | `Cargo.lock`, `Cargo.toml`, `crates/asb-replay/Cargo.toml`, `crates/asb-replay/README.md`, `crates/asb-replay/examples/generate_schema.rs`, `crates/asb-replay/fixtures/v1/buffered.json`, `crates/asb-replay/fixtures/v1/events.json`, `crates/asb-replay/schema/v1/cassette.schema.json`, `crates/asb-replay/src/cassette.rs`, `crates/asb-replay/src/lib.rs`, `crates/asb-replay/src/migration.rs`, `crates/asb-replay/src/redaction.rs`, `crates/asb-replay/tests/cassette_roundtrip.rs`, `crates/asb-replay/tests/migration.rs`, `crates/asb-replay/tests/redaction.rs`, `crates/asb-replay/tests/schema_conformance.rs`, `crates/asb-replay/tests/support/mod.rs` |
+| `agent-systems-benchmark-replay-cassettes` | `feature/replay-cassettes` | `6e7e6d4a813a` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-replay-evaluation` | `feature/replay-evaluation` | `3d04a2d5a3b3` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-sandbox-runtime` | `feature/sandbox-runtime` | `e6a81e8644c6` | 4 | behind 0, ahead 0 |
 | changed files | - | - | - | `crates/asb-runtime/README.md`, `crates/asb-runtime/src/lib.rs`, `crates/asb-runtime/src/sandbox.rs`, `crates/asb-runtime/tests/sandbox_boundary.rs` |

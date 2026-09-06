@@ -10,17 +10,17 @@
   "id": "AR-0502",
   "next_action": "Complete exact-tree provenance and privacy review, create one focused SSH-signed DCO commit, rerun commit-range policy, and report immutable candidate before PR.",
   "observed_branch": "feature/replay-cassettes",
-  "observed_dirty": 17,
-  "observed_head": "e6a81e8644c692d5b0aa84a86b385ff4da327292",
+  "observed_dirty": 0,
+  "observed_head": "6e7e6d4a813a851c57782cb651165e6a8fef193f",
   "owner": "replay-20260906",
   "plan": "../plans/AR-0502.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Store versioned provider requests, event streams, causal IDs and integrity metadata.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Implement immutable response cassette format",
-  "updated_at": "2026-09-06T17:57:41+00:00",
+  "updated_at": "2026-09-06T17:58:00+00:00",
   "worktree_key": "agent-systems-benchmark-replay-cassettes"
 }
 ---
