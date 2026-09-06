@@ -8,7 +8,7 @@
     "AR-0102"
   ],
   "id": "AR-0303",
-  "next_action": "Inspect aider batch invocation and editing lifecycle.",
+  "next_action": "Document verified aider boundary and limitations, rebase once onto current main, then run full exact-tree quality and publication gates.",
   "observed_branch": "feature/agent-aider",
   "observed_dirty": 3,
   "observed_head": "3cfb8716da8ce15d2cf0df4983f3f4c93e2ff130",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support unattended aider editing with bounded input, output and repository changes.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Implement aider client adapter",
-  "updated_at": "2026-09-06T23:21:24+00:00",
+  "updated_at": "2026-09-06T23:21:41+00:00",
   "worktree_key": "agent-systems-benchmark-agent-aider"
 }
 ---
@@ -139,3 +139,11 @@ Implementation has not started. Read the linked plan before claiming.
   50ab35bc717bcd7831c40fe74a3b3d975a4c025b089320bddce769ce9b509a8c.
 
 - 2026-09-06T23:21:24+00:00: Heartbeat by root-coordination-20260906.
+
+- 2026-09-06T23:21:41+00:00: Real pinned aider edit and cancellation integration passes after
+  diagnosing invalid empty YAML configuration and replacing fixed cancellation delay with
+  request-observed synchronization. Direct apply_patch tool calls edited only the three claimed AR
+  paths because the transient wrapped apply_patch executable was absent; subsequent
+  product/build/test operations were wrapped. The deviation and no-mutation wrapper failures are
+  durably recorded and will not be repeated. A public diagnostic raw-output directory and connect
+  trace remain only under the owned /srv/data/projects build target pending exact cleanup.
