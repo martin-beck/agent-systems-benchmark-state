@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 275,
+  "task_revision": 276,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T19:47:29+00:00",
+  "updated_at": "2026-09-06T19:47:52+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
@@ -826,3 +826,6 @@ Implementation has not started. Read the linked plan before claiming.
   the repository-local allowed-signers boundary). Exact-main hosted Rust run 34055890354 passed
   x86_64 and aarch64; repository quality run 34055890362 passed. Lease renewed. Await coordinator
   post-merge local checks; do not release yet.
+
+- 2026-09-06T19:47:52+00:00: Recorded command exit 0; command argv SHA-256
+  321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
