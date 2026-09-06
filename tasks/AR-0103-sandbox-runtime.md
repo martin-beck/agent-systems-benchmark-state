@@ -7,7 +7,7 @@
     "AR-0102"
   ],
   "id": "AR-0103",
-  "next_action": "Implement isolated asb-runtime sandbox/resource modules and real native tests only; keep root Cargo.toml/Cargo.lock untouched until AR-0502 hands off the serialized fence.",
+  "next_action": "Run exact-tree full quality/privacy/supply-chain gates, create focused signed DCO commit and PR, then await immutable-head review and CI; root Cargo/lock remain fenced.",
   "observed_branch": "feature/sandbox-runtime",
   "observed_dirty": 4,
   "observed_head": "e6a81e8644c692d5b0aa84a86b385ff4da327292",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T18:22:42+00:00",
+  "updated_at": "2026-09-06T18:23:30+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
@@ -232,3 +232,15 @@ Implementation has not started. Read the linked plan before claiming.
   0d3cb833525ac74d73edb4d3d67e3f6485f28ea6102d91d04de6a092c828c982.
 
 - 2026-09-06T18:22:42+00:00: Heartbeat by contracts-20260906.
+
+- 2026-09-06T18:23:30+00:00: Implemented rootless exact-version-pinned Bubblewrap plus delegated
+  systemd cgroup scope and taskset CPU enforcement, fail-closed shared benchmark/CI CPU leases,
+  bounded configuration, cancellation/wait/drop cleanup, and real native negative tests. Changed
+  conclusions preserved: MemoryMax alone permitted swap so MemorySwapMax=0 is required; systemd
+  AllowedCPUs can be accepted but ineffective without delegated cpuset so taskset plus procfs
+  verification is required. Ubuntu 24.04.4 x86_64, Linux 7.0.0-28, bubblewrap 0.9.0, systemd
+  255.4-1ubuntu8.17, taskset 2.39.3 native suite passed three serial repetitions; every repetition
+  proved no remaining ASB scope, sandbox helper process or CPU lease. Coverage is sandbox.rs 95.31%
+  regions, 98.66% lines, 100% functions and asb-runtime 95.31% regions, 98.75% lines. Limits:
+  Linux/cgroup-v2/user-systemd/userns only; no VM or kernel boundary; exact untested platform
+  combinations remain unsupported; formal lease/cancellation proofs remain AR-0901/AR-0905.
