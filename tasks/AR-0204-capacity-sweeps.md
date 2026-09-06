@@ -12,7 +12,7 @@
     "AR-0203"
   ],
   "id": "AR-0204",
-  "next_action": "Revalidate dependency closure and promote this repaired dependency-ready task transactionally.",
+  "next_action": "Await immutable independent review of exact candidate 08a73bf before publication.",
   "observed_branch": "feature/capacity-sweeps",
   "observed_dirty": 0,
   "observed_head": "08a73bf5e4aa8ef9b2b6d39281af00726fbab109",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run repeated closed-loop and open-loop experiments with bounded concurrency.",
-  "task_revision": 93,
+  "task_revision": 94,
   "title": "Implement capacity sweeps and arrival scheduling",
-  "updated_at": "2026-09-06T22:28:55+00:00",
+  "updated_at": "2026-09-06T22:29:17+00:00",
   "worktree_key": "agent-systems-benchmark-capacity-sweeps"
 }
 ---
@@ -268,3 +268,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T22:28:55+00:00: Recorded command exit 0; command argv SHA-256
   08e4fd5fc3d9931621487514a8249c865194a89d6bb901233e95a956fc2ba6ce.
+
+- 2026-09-06T22:29:17+00:00: Reclaimed after dependency AR-0105 completion. Preserved b0b2ae1
+  rebased once onto exact signed main 23035ac with re-signing as 08a73bf; range-diff reports exact
+  equality, signature/DCO/diff-check clean, and scope remains only runtime README/lib export plus
+  scheduler.rs and scheduler_boundary.rs with no Cargo/schema edits. Scheduler boundary 8/8 passed
+  three consecutive focused repetitions, covering closed/open loop, known-capacity exhaustive sweep,
+  queue delay/missed arrivals, warmups/randomization, bounds/deadline/failure stops, contamination
+  dominance, fallible spawn drain and sanitized panic stderr. Fresh initially nonexistent external
+  target full workspace fmt/clippy/tests/docs/release and formal suite passed, including sandbox
+  native tests with repository target absent and zero fixture residue. Audit/deny, coverage,
+  actionlint/zizmor, Gitleaks, repository/DCO policy, controlled failure fixtures and platform
+  validation passed. Coverage scheduler.rs 97.28% regions, 100% functions, 97.01% lines; workspace
+  96.78% lines. Local/origin/remote main remains 23035ac, candidate clean and unpublished.
