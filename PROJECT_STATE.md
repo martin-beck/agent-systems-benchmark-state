@@ -10,6 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #9 | `feature/statistical-analysis@4d9643cfe39d` | `main` | UNKNOWN | - | Add conservative statistical and SLO analysis |
 
 ## Recent workflows
 
