@@ -20,9 +20,10 @@ Do not configure another project or its coordination service to use this databas
 uv sync --locked --only-group quality
 uv run ruff format --check tools tests
 uv run ruff check --no-fix tools tests
-uv run mypy tools/handoffctl.py tests
+uv run mypy tools/handoffctl.py tools/status_renderer.py tests
 uv run coverage run --branch -m unittest discover -s tests -p 'test_*.py'
 uv run coverage report --fail-under=95
 uv run python tests/validate_schema.py
+tools/handoffctl render-status --check
 tools/handoffctl doctor
 ```

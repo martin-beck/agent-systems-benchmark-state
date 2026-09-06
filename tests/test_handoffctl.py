@@ -15,6 +15,7 @@ from typing import Any, cast
 from unittest.mock import patch
 
 SOURCE = Path(__file__).resolve().parent.parent / "tools/handoffctl.py"
+sys.path.insert(0, str(SOURCE.parent))
 SPEC = importlib.util.spec_from_file_location("handoffctl_core", SOURCE)
 if SPEC is None or SPEC.loader is None:
     raise RuntimeError("cannot load handoffctl")
@@ -29,6 +30,44 @@ def hold_lock(lock_path: str, ready: Any, release: Any) -> None:
     with CORE.locked():
         ready.set()
         release.wait(5)
+
+
+def configure_child(root_value: str) -> None:
+    """Point the imported coordinator module at a process-shared fixture."""
+    root = Path(root_value)
+    CORE.ROOT = root
+    CORE.TASKS = root / "tasks"
+    CORE.RUNTIME = root / ".runtime"
+    CORE.LOCK = CORE.RUNTIME / "state.lock"
+    CORE.CONFIG = CORE.RUNTIME / "config.json"
+
+
+def concurrent_claim(root_value: str, start: Any) -> None:
+    """Claim through the real locked mutation path in a child process."""
+    configure_child(root_value)
+    start.wait(5)
+    with patch.object(CORE, "commit", return_value=True):
+        CORE.mutate(argparse.Namespace(task="AR-0001", owner="worker-a", lease_minutes=10), "claim")
+
+
+def concurrent_reconcile(root_value: str, start: Any) -> None:
+    """Reconcile through the real locked generation path in a child process."""
+    configure_child(root_value)
+    start.wait(5)
+    state = {
+        "remote_main": "a" * 40,
+        "origin_main": "a" * 40,
+        "primary_head": "b" * 40,
+        "worktrees": [],
+        "prs": [],
+        "runs": [],
+    }
+    completed = subprocess.CompletedProcess(["git"], 0, stdout="b" * 40 + "\n", stderr="")
+    with (
+        patch.object(CORE, "project_scan", return_value=state),
+        patch.object(CORE, "run", return_value=completed),
+    ):
+        CORE.reconcile(do_commit=False)
 
 
 class HandoffTest(unittest.TestCase):
@@ -72,8 +111,14 @@ class HandoffTest(unittest.TestCase):
         meta.update(changes)
         path = CORE.TASKS / f"{task_id}-test.md"
         CORE.write_task(path, meta, "# Test\n")
-        CORE.atomic(self.root / "CURRENT.md", CORE.render_current(CORE.all_tasks()))
+        self.refresh_views()
         return cast(Path, path)
+
+    def refresh_views(self) -> None:
+        """Refresh both deterministic task views in a fixture repository."""
+        tasks = CORE.all_tasks()
+        CORE.atomic(self.root / "CURRENT.md", CORE.render_current(tasks))
+        CORE.atomic(self.root / "STATUS.md", CORE.render_status_view(tasks))
 
     def test_atomic_task_round_trip_and_render(self) -> None:
         path = self.make_task()
@@ -83,6 +128,64 @@ class HandoffTest(unittest.TestCase):
         current = CORE.render_current(CORE.all_tasks())
         self.assertIn("## Open", current)
         self.assertIn("[AR-0001]", current)
+        status = CORE.render_status_view(CORE.all_tasks())
+        self.assertIn("flowchart LR", status)
+        self.assertIn("**1 ARs tracked**", status)
+
+    def test_status_is_deterministic_complete_accessible_and_injection_safe(self) -> None:
+        self.make_task(
+            "AR-0001",
+            title="Hostile ](https://example.invalid) | `code`\n%%{init: bad}%%",
+            summary="<script>alert(1)</script>",
+        )
+        self.make_task("AR-0002", status="done", priority="P0", depends_on=["AR-0001"])
+        tasks = CORE.all_tasks()
+        status = CORE.render_status_view(tasks)
+        self.assertEqual(status, CORE.render_status_view(list(reversed(tasks))))
+        self.assertEqual(2, status.count(":::status_"))
+        self.assertIn('subgraph series_00["00 - Coordination foundation"]', status)
+        self.assertEqual(1, status.count("AR_0001 --> AR_0002"))
+        self.assertIn("Accessible dependency index", status)
+        self.assertIn("&#93;(https://example.invalid)", status)
+        self.assertIn("&lt;script&gt;alert(1)&lt;/script&gt;", status)
+        self.assertNotIn("%%{init: bad}%%", status)
+
+    def test_future_series_is_never_omitted_from_graph_or_text_fallback(self) -> None:
+        self.make_task("AR-1101")
+        status = CORE.render_status_view(CORE.all_tasks())
+        self.assertEqual(1, status.count('AR_1101["AR-1101 - Open"]'))
+        self.assertIn('subgraph series_11["11 - Additional work"]', status)
+        self.assertIn("| [AR-1101](tasks/AR-1101-test.md) | None | None |", status)
+
+    def test_status_rejects_malformed_duplicate_self_missing_and_cycles(self) -> None:
+        first = self.make_task("AR-0001")
+        second = self.make_task("AR-0002")
+        meta, body = CORE.read_task(first)
+        meta["depends_on"] = ["AR-0001", "AR-9999"]
+        CORE.write_task(first, meta, body)
+        other, other_body = CORE.read_task(second)
+        other["depends_on"] = ["AR-0001", "AR-0001"]
+        CORE.write_task(second, other, other_body)
+        errors = "\n".join(CORE.graph_errors(CORE.all_tasks()))
+        self.assertIn("duplicate dependency AR-0001", errors)
+        self.assertIn("self dependency", errors)
+        self.assertIn("missing dependency AR-9999", errors)
+        self.assertIn("dependency cycle", errors)
+        other["depends_on"] = "AR-0001"
+        CORE.write_task(second, other, other_body)
+        self.assertIn("must be a list", "\n".join(CORE.graph_errors(CORE.all_tasks())))
+        duplicate = self.root / "tasks" / "AR-0001-copy.md"
+        CORE.write_task(duplicate, meta, body)
+        self.assertIn("duplicate graph node", "\n".join(CORE.graph_errors(CORE.all_tasks())))
+
+    def test_status_rejects_unsafe_filename_and_unknown_presentation(self) -> None:
+        path = self.make_task()
+        task = CORE.all_tasks()[0]
+        with self.assertRaisesRegex(CORE.StatusRenderError, "unsafe"):
+            CORE.render_status_view([(path.with_name("AR-0001-BAD.md"), task[1], task[2])])
+        task[1]["priority"] = "PX"
+        with self.assertRaisesRegex(CORE.StatusRenderError, "unknown status or priority"):
+            CORE.render_status_view([task])
 
     def test_rejects_bad_front_matter(self) -> None:
         path = CORE.TASKS / "AR-0001-bad.md"
@@ -94,14 +197,19 @@ class HandoffTest(unittest.TestCase):
             CORE.read_task(path)
 
     def test_validation_finds_schema_graph_claim_and_privacy_errors(self) -> None:
-        self.make_task("AR-0001", depends_on=["AR-0002"], extra="bad")
-        self.make_task(
+        first = self.make_task("AR-0001", extra="bad")
+        second = self.make_task(
             "AR-0002",
             status="in_progress",
             owner="worker-a",
             claim_expires="",
-            depends_on=["AR-0001"],
         )
+        first_meta, first_body = CORE.read_task(first)
+        second_meta, second_body = CORE.read_task(second)
+        first_meta["depends_on"] = ["AR-0002"]
+        second_meta["depends_on"] = ["AR-0001"]
+        CORE.write_task(first, first_meta, first_body)
+        CORE.write_task(second, second_meta, second_body)
         (self.root / "leak.md").write_text("/" + "home/example")
         errors = CORE.validate()
         joined = "\n".join(errors)
@@ -194,6 +302,7 @@ class HandoffTest(unittest.TestCase):
             )
             before_task = path.read_text()
             before_current = (self.root / "CURRENT.md").read_text()
+            before_status = (self.root / "STATUS.md").read_text()
             revision = CORE.read_task(path)[0]["task_revision"]
             with self.assertRaisesRegex(RuntimeError, "invalid summary"):
                 CORE.mutate(
@@ -211,6 +320,7 @@ class HandoffTest(unittest.TestCase):
                 )
         self.assertEqual(before_task, path.read_text())
         self.assertEqual(before_current, (self.root / "CURRENT.md").read_text())
+        self.assertEqual(before_status, (self.root / "STATUS.md").read_text())
 
     def test_failed_push_preserves_durable_commit_state(self) -> None:
         path = self.make_task()
@@ -229,6 +339,9 @@ class HandoffTest(unittest.TestCase):
         self.assertEqual(
             CORE.render_current(CORE.all_tasks()), (self.root / "CURRENT.md").read_text()
         )
+        self.assertEqual(
+            CORE.render_status_view(CORE.all_tasks()), (self.root / "STATUS.md").read_text()
+        )
 
     def test_lock_excludes_a_second_process(self) -> None:
         ready = multiprocessing.Event()
@@ -246,6 +359,26 @@ class HandoffTest(unittest.TestCase):
         process.join(5)
         self.assertEqual(0, process.exitcode)
         self.assertGreaterEqual(elapsed, 0)
+
+    def test_concurrent_claim_and_reconcile_keep_status_current(self) -> None:
+        self.make_task()
+        start = multiprocessing.Event()
+        claim = multiprocessing.Process(target=concurrent_claim, args=(str(self.root), start))
+        reconcile = multiprocessing.Process(
+            target=concurrent_reconcile, args=(str(self.root), start)
+        )
+        claim.start()
+        reconcile.start()
+        start.set()
+        claim.join(10)
+        reconcile.join(10)
+        self.assertEqual(0, claim.exitcode)
+        self.assertEqual(0, reconcile.exitcode)
+        meta, _ = CORE.read_task(CORE.locate("AR-0001")[0])
+        self.assertEqual("in_progress", meta["status"])
+        self.assertEqual(
+            CORE.render_status_view(CORE.all_tasks()), (self.root / "STATUS.md").read_text()
+        )
 
     def test_live_document_generation_and_observation_sync(self) -> None:
         path = self.make_task(worktree_key="agent-systems-benchmark-test")
@@ -493,6 +626,116 @@ class HandoffTest(unittest.TestCase):
             errors = CORE.validate(live=True)
             self.assertIn("PROJECT_STATE.md is stale", errors)
 
+    def test_generated_view_validation_reports_stale_and_renderer_errors(self) -> None:
+        self.make_task()
+        (self.root / "CURRENT.md").write_text("stale")
+        (self.root / "STATUS.md").unlink()
+        errors = CORE.generated_view_errors(CORE.all_tasks())
+        self.assertIn("CURRENT.md differs from generated tasks", errors)
+        self.assertIn("STATUS.md differs from generated tasks", errors)
+        with patch.object(
+            CORE,
+            "render_status_view",
+            side_effect=CORE.StatusRenderError("hostile graph"),
+        ):
+            self.assertIn("hostile graph", CORE.generated_view_errors(CORE.all_tasks()))
+        path = CORE.locate("AR-0001")[0]
+        meta, body = CORE.read_task(path)
+        meta["status"] = "invalid"
+        CORE.write_task(path, meta, body)
+        self.assertEqual([], CORE.generated_view_errors(CORE.all_tasks()))
+
+    def test_reconcile_generation_failure_rolls_back_every_view(self) -> None:
+        path = self.make_task(worktree_key="agent-systems-benchmark-test")
+        before_task = path.read_text()
+        before_current = (self.root / "CURRENT.md").read_text()
+        before_status = (self.root / "STATUS.md").read_text()
+        state = self.fake_scan()
+        state["worktrees"] = [
+            {
+                "key": "agent-systems-benchmark-test",
+                "branch": "feature/test",
+                "head": "c" * 40,
+                "dirty": 1,
+                "paths": ["changed"],
+                "behind": 0,
+                "ahead": 1,
+            }
+        ]
+        real_atomic = CORE.atomic
+        failed = False
+
+        def fail_status_once(target: Path, text: str) -> None:
+            nonlocal failed
+            if target.name == "STATUS.md" and not failed:
+                failed = True
+                raise OSError("injected status write failure")
+            real_atomic(target, text)
+
+        with (
+            patch.object(CORE, "project_scan", return_value=state),
+            patch.object(CORE, "atomic", side_effect=fail_status_once),
+            self.assertRaisesRegex(OSError, "injected status write failure"),
+        ):
+            CORE.reconcile(do_commit=False)
+        self.assertEqual(before_task, path.read_text())
+        self.assertEqual(before_current, (self.root / "CURRENT.md").read_text())
+        self.assertEqual(before_status, (self.root / "STATUS.md").read_text())
+        self.assertFalse((self.root / "PROJECT_STATE.md").exists())
+        self.assertFalse((self.root / "WORKTREES.md").exists())
+
+    def test_reconcile_commit_failure_rolls_back_and_push_failure_preserves(self) -> None:
+        path = self.make_task(worktree_key="agent-systems-benchmark-test")
+        before = {
+            item: item.read_text()
+            for item in (path, self.root / "CURRENT.md", self.root / "STATUS.md")
+        }
+        with (
+            patch.object(CORE, "project_scan", return_value=self.fake_scan()),
+            patch.object(CORE, "commit", side_effect=RuntimeError("commit failed")),
+            self.assertRaisesRegex(RuntimeError, "commit failed"),
+        ):
+            CORE.reconcile(do_commit=True)
+        self.assertTrue(all(item.read_text() == text for item, text in before.items()))
+        with (
+            patch.object(CORE, "project_scan", return_value=self.fake_scan()),
+            patch.object(CORE, "commit", return_value=True),
+            patch.object(CORE, "push_replica", side_effect=RuntimeError("push failed")),
+            self.assertRaisesRegex(RuntimeError, "push failed"),
+        ):
+            CORE.reconcile(do_commit=True, push=True)
+        self.assertEqual(
+            CORE.render_status_view(CORE.all_tasks()), (self.root / "STATUS.md").read_text()
+        )
+
+    def test_mutation_render_and_commit_failures_restore_three_files(self) -> None:
+        path = self.make_task()
+        before = {
+            item: item.read_text()
+            for item in (path, self.root / "CURRENT.md", self.root / "STATUS.md")
+        }
+        args = argparse.Namespace(task="AR-0001", owner="worker-a", lease_minutes=10)
+        with (
+            patch.object(CORE, "render_status_view", side_effect=RuntimeError("render failed")),
+            self.assertRaisesRegex(RuntimeError, "render failed"),
+        ):
+            CORE.mutate(args, "claim")
+        self.assertTrue(all(item.read_text() == text for item, text in before.items()))
+        (self.root / "STATUS.md").unlink()
+        with (
+            patch.object(CORE, "render_status_view", side_effect=RuntimeError("render failed")),
+            self.assertRaisesRegex(RuntimeError, "render failed"),
+        ):
+            CORE.mutate(args, "claim")
+        self.assertFalse((self.root / "STATUS.md").exists())
+        CORE.atomic(self.root / "STATUS.md", before[self.root / "STATUS.md"])
+        with (
+            patch.object(CORE, "commit", side_effect=RuntimeError("commit failed")),
+            self.assertRaisesRegex(RuntimeError, "commit failed"),
+        ):
+            CORE.mutate(args, "claim")
+        self.assertTrue(all(item.read_text() == text for item, text in before.items()))
+
     def test_commit_no_change_and_change_paths(self) -> None:
         target = self.root / "CURRENT.md"
         target.write_text("x")
@@ -516,6 +759,21 @@ class HandoffTest(unittest.TestCase):
         commit_call = next(args for args in calls if "commit" in args)
         self.assertIn("-S", commit_call)
         self.assertIn("-s", commit_call)
+
+        def failing_run(args: list[str], **_: object) -> object:
+            calls.append(args)
+            if "diff" in args:
+                return subprocess.CompletedProcess(args, 1, stdout="", stderr="")
+            if "commit" in args:
+                raise RuntimeError("signing failed")
+            return subprocess.CompletedProcess(args, 0, stdout="", stderr="")
+
+        with (
+            patch.object(CORE, "run", side_effect=failing_run),
+            self.assertRaisesRegex(RuntimeError, "signing failed"),
+        ):
+            CORE.commit("test", [target])
+        self.assertTrue(any("reset" in args for args in calls))
 
     def test_push_replica_fast_forward_noop_and_divergence(self) -> None:
         CORE.CONFIG.parent.mkdir()
@@ -615,10 +873,22 @@ class HandoffTest(unittest.TestCase):
             CORE.cmd_run(argparse.Namespace(task="AR-0001", owner="worker-a", command=["true"]))
         command.assert_not_called()
 
+    def test_explicit_status_render_and_stale_check(self) -> None:
+        self.make_task()
+        CORE.cmd_render_status(check=True)
+        (self.root / "STATUS.md").write_text("stale")
+        with self.assertRaisesRegex(RuntimeError, "STATUS.md differs"):
+            CORE.cmd_render_status(check=True)
+        CORE.cmd_render_status(check=False)
+        self.assertEqual(
+            CORE.render_status_view(CORE.all_tasks()), (self.root / "STATUS.md").read_text()
+        )
+
     def test_main_dispatches_every_command(self) -> None:
         cases = [
             (["handoffctl", "reconcile", "--commit"], "reconcile", None),
             (["handoffctl", "snapshot"], "cmd_snapshot", None),
+            (["handoffctl", "render-status", "--check"], "cmd_render_status", None),
             (["handoffctl", "claim", "AR-0001", "--owner", "worker-a"], "mutate", None),
             (["handoffctl", "heartbeat", "AR-0001", "--owner", "worker-a"], "mutate", None),
             (

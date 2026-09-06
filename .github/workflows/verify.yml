@@ -19,6 +19,7 @@ jobs:
         with:
           persist-credentials: false
           fetch-depth: 0
+          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.sha }}
       - uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d
         with:
           version: "0.12.8"
@@ -29,7 +30,7 @@ jobs:
         run: |
           uv run ruff format --check tools tests
           uv run ruff check --no-fix tools tests
-          uv run mypy tools/handoffctl.py tests
+          uv run mypy tools/handoffctl.py tools/status_renderer.py tests
       - name: Fault tests and coverage
         run: |
           uv run coverage run --branch -m unittest discover -s tests -p 'test_*.py'
@@ -37,6 +38,7 @@ jobs:
       - name: Schema and generated state
         run: |
           uv run python tests/validate_schema.py
+          tools/handoffctl render-status --check
           tools/handoffctl doctor
           git diff --exit-code
           test ! -e .runtime/config.json
