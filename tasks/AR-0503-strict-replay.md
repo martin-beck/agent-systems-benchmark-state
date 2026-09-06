@@ -10,17 +10,17 @@
   "id": "AR-0503",
   "next_action": "Complete adversarial review of transactional socket cursor repair, run full gates, then amend signed+DCO PR #11 head with exact lease for fresh immutable review/CI; do not merge.",
   "observed_branch": "feature/strict-replay",
-  "observed_dirty": 4,
-  "observed_head": "c20fdccb91abb3644ef933ebfc6754314961682c",
+  "observed_dirty": 0,
+  "observed_head": "22bb184a76cd15584359a8a4bf73ed2ad371de4b",
   "owner": "replay-20260906",
   "plan": "../plans/AR-0503.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Serve local recorded responses while real agent and tools execute.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Implement strict provider response replay",
-  "updated_at": "2026-09-06T19:19:12+00:00",
+  "updated_at": "2026-09-06T19:19:27+00:00",
   "worktree_key": "agent-systems-benchmark-strict-replay"
 }
 ---
