@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T18:23:30+00:00",
+  "updated_at": "2026-09-06T18:23:40+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
@@ -244,3 +244,6 @@ Implementation has not started. Read the linked plan before claiming.
   regions, 98.66% lines, 100% functions and asb-runtime 95.31% regions, 98.75% lines. Limits:
   Linux/cgroup-v2/user-systemd/userns only; no VM or kernel boundary; exact untested platform
   combinations remain unsupported; formal lease/cancellation proofs remain AR-0901/AR-0905.
+
+- 2026-09-06T18:23:40+00:00: Recorded command exit 0; command argv SHA-256
+  1927b2dfe6ce8273c46cacd8182ed398312092532c2f5dc1361c68a7f1c1a41a.
