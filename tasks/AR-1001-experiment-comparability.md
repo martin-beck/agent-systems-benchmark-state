@@ -10,7 +10,7 @@
   "id": "AR-1001",
   "next_action": "Await coordinator immutable local review of signed candidate d051c5e; repair findings before any publication. Cargo workspace/lock and experiment-schema fence remains held by AR-1001.",
   "observed_branch": "feature/experiment-comparability",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "d051c5eeff2353d25c9490170f5b81fe527ab6a2",
   "owner": "quality-20260906",
   "plan": "../plans/AR-1001.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make every comparison content-addressed and explicit about agent, model, workload and platform confounders.",
-  "task_revision": 98,
+  "task_revision": 99,
   "title": "Define experiment identity and comparability",
-  "updated_at": "2026-09-06T21:13:05+00:00",
+  "updated_at": "2026-09-06T21:13:42+00:00",
   "worktree_key": "agent-systems-benchmark-experiment-comparability"
 }
 ---
