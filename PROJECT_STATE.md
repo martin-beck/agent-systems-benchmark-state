@@ -12,12 +12,14 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- | --- |
 | #10 | `feature/sandbox-runtime@a2ebac54d8ea` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | runtime: isolate untrusted processes |
 | #11 | `feature/strict-replay@cdd76f988999` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | replay: add strict provider response service |
-| #12 | `feature/portable-metrics@4f33a142ea11` | `main` | UNKNOWN | - | metrics: add portable Linux collectors |
+| #12 | `feature/portable-metrics@4f33a142ea11` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED: | metrics: add portable Linux collectors |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34053272115 | `4f33a142ea11` | pull_request | Repository quality | queued:- |
+| 34053272112 | `4f33a142ea11` | pull_request | Rust verification | queued:- |
 | 34053142345 | `cdd76f988999` | pull_request | Rust verification | completed:success |
 | 34053142315 | `cdd76f988999` | pull_request | Repository quality | completed:success |
 | 34052743886 | `a2ebac54d8ea` | pull_request | Repository quality | completed:success |
@@ -28,5 +30,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34052528404 | `3bcfd85dedd3` | pull_request | Rust verification | completed:success |
 | 34052528401 | `3bcfd85dedd3` | pull_request | Repository quality | completed:success |
 | 34051996585 | `4d9643cfe39d` | pull_request | Repository quality | completed:success |
-| 34051996558 | `4d9643cfe39d` | pull_request | Rust verification | completed:success |
-| 34051300116 | `265d811b765e` | push | Rust verification | completed:success |
