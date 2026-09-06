@@ -8,7 +8,7 @@
     "AR-0501"
   ],
   "id": "AR-0502",
-  "next_action": "Await independent re-review of exact head 63da219cdae994c6a1abfcdda49f3e2ebb2bdcd5; repair any findings before push or PR.",
+  "next_action": "Await final independent immutable-head review of cd88f5703fb300aca18c7d46d7215c1bf6f5b8e5; do not push or open PR until approved.",
   "observed_branch": "feature/replay-cassettes",
   "observed_dirty": 0,
   "observed_head": "cd88f5703fb300aca18c7d46d7215c1bf6f5b8e5",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Store versioned provider requests, event streams, causal IDs and integrity metadata.",
-  "task_revision": 109,
+  "task_revision": 110,
   "title": "Implement immutable response cassette format",
-  "updated_at": "2026-09-06T18:14:30+00:00",
+  "updated_at": "2026-09-06T18:14:48+00:00",
   "worktree_key": "agent-systems-benchmark-replay-cassettes"
 }
 ---
@@ -401,3 +401,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T18:14:30+00:00: Recorded command exit 0; command argv SHA-256
   2f5ce8a08641682a2f9a6959d29ac1774c7eb59faefa193169e5806f864919d7.
+
+- 2026-09-06T18:14:48+00:00: Final boundedness review repaired at signed+DCO commit
+  cd88f5703fb300aca18c7d46d7215c1bf6f5b8e5, tree 1557d5cd713052698f5188ff09407a59c7afa7a0.
+  canonical_contents_bounded now streams contents through encode_bounded at the caller cassette
+  ceiling before allocating a serde_json Value/canonical tree; focused aggregate seal limit
+  regression proves a 512-byte limit returns TooLarge(cassette). README now discloses residual
+  accepted-cassette peak allocation: caller-owned structure plus bounded preflight buffer, Value
+  tree and canonical output, so 256 MiB is encoded-size rather than peak-RSS guarantee. Patch
+  artifact SHA-256 78a67f78bbc7cade9274348eb3f2f1637b2da00af5b263fea4ff071ae794e39f. Exact clean
+  head repository signature/DCO policy, fmt, workspace Clippy/tests/rustdoc/release, coverage,
+  cargo-deny/audit, actionlint/zizmor and Gitleaks all pass. Replay line coverage 97.11% total;
+  cassette 95.73%, migration 98.41%, redaction 99.03%; workspace 96.69%. Three signed commits remain
+  directly atop exact base e6a81e8; no PR/push performed.
