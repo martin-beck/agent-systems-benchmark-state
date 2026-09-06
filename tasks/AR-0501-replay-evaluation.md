@@ -2,21 +2,21 @@
 {
   "branch": "feature/replay-evaluation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-06T17:41:08+00:00",
   "depends_on": [
     "AR-0001"
   ],
   "id": "AR-0501",
   "next_action": "Read REPLAY_RESEARCH and run the bounded compatibility spike.",
-  "owner": "",
+  "owner": "replay-20260906",
   "plan": "../plans/AR-0501.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Compare literature and record/replay implementations using identical synthetic conformance cases.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Evaluate replay literature and reusable tools",
-  "updated_at": "2026-09-06T15:25:24+00:00",
+  "updated_at": "2026-09-06T15:41:08+00:00",
   "worktree_key": "agent-systems-benchmark-replay-evaluation"
 }
 ---
@@ -27,3 +27,5 @@ Compare literature and record/replay implementations using identical synthetic c
 Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T15:25:24+00:00: Promoted to open after verifying AR-0001 is done; assigned to the initial four-worker pool.
+
+- 2026-09-06T15:41:08+00:00: Claimed by replay-20260906.
