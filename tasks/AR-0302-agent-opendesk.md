@@ -8,7 +8,7 @@
     "AR-0102"
   ],
   "id": "AR-0302",
-  "next_action": "Implement a fail-closed Linux x86_64 adapter around pinned OpenDesk 0.3.5 export JSON, with telemetry containment and explicit argv privacy limitation.",
+  "next_action": "Await independent immutable review of c331c2b; publish only if approved, then require exact-head CI.",
   "observed_branch": "feature/agent-opendesk",
   "observed_dirty": 0,
   "observed_head": "c331c2b295833f0f5c6e621017ac0a55e28fb288",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support the bitclub OpenDesk CLI with its own dialect and compatibility record.",
-  "task_revision": 112,
+  "task_revision": 113,
   "title": "Implement OpenDesk client adapter",
-  "updated_at": "2026-09-06T22:24:19+00:00",
+  "updated_at": "2026-09-06T22:24:54+00:00",
   "worktree_key": "agent-systems-benchmark-agent-opendesk"
 }
 ---
@@ -331,3 +331,17 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T22:24:19+00:00: Recorded command exit 0; command argv SHA-256
   76c5b592f4f745c968e696a65533f83cb010c8848f466027378679bef7095b7c.
+
+- 2026-09-06T22:24:54+00:00: Signed+DCO candidate c331c2b is one commit on corrected signed main
+  23035ac. Pinned OpenDesk 0.3.5 source f303069, npm tar b55e83d, wrapper e55bd82 and Node 26.3.0
+  5325ac9 were inspected; source declares MulanPSL-2.0 but npm tar omits license text, so ASB does
+  not redistribute it. Real pinned x86_64 journey passed model probes, SSE, successful file-write
+  tool, denied outside shell action, cancellation and cleanup. Unit/fault tests reject
+  malformed/duplicate/oversized export, missing request count, NUL prompt, telemetry endpoint and
+  symlink export; raw content is discarded and argv prompt visibility is explicitly unsupported for
+  secrets. Exact external-tree workspace fmt/clippy/tests/docs/release and formal tests passed with
+  repository target absent;
+  policy/DCO/actionlint/zizmor/Gitleaks/deny/audit/failure/platform/coverage gates passed (workspace
+  96.09% lines). One unwrapped read-only-intended git fetch advanced only origin/main from discarded
+  7f308cc to corrected 23035ac; no source/worktree change occurred, it was not repeated, and the
+  ensuing rebase plus all later Git mutations were wrapped.
