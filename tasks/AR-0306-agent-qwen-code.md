@@ -2,7 +2,7 @@
 {
   "branch": "feature/agent-qwen-code",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-07T00:56:44+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -10,15 +10,15 @@
   ],
   "id": "AR-0306",
   "next_action": "Inspect the current stable release, stream-JSON contract, provider override and ambient context loading.",
-  "owner": "",
+  "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0306.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Run pinned Qwen Code through isolated headless stream-JSON.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Implement Qwen Code client adapter",
-  "updated_at": "2026-09-06T23:56:35+00:00",
+  "updated_at": "2026-09-06T23:56:44+00:00",
   "worktree_key": "agent-systems-benchmark-agent-qwen-code"
 }
 ---
@@ -33,3 +33,5 @@ Implementation has not started. Read the linked plan before claiming.
   synchronized signed product main; Aider integration released its module fence; Qwen Code owns a
   distinct adapter module and fixture worktree. Shared registration remains serialized with AR-0304,
   AR-0305, and AR-0310.
+
+- 2026-09-06T23:56:44+00:00: Claimed by root-coordination-20260906.
