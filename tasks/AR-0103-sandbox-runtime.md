@@ -7,7 +7,7 @@
     "AR-0102"
   ],
   "id": "AR-0103",
-  "next_action": "Run exact-tree full quality/privacy/supply-chain gates, create focused signed DCO commit and PR, then await immutable-head review and CI; root Cargo/lock remain fenced.",
+  "next_action": "Amend the focused signed DCO candidate with bounded force-kill scope cleanup, rerun exact-tree full quality/privacy/supply-chain gates, publish PR, and await immutable-head review/CI.",
   "observed_branch": "feature/sandbox-runtime",
   "observed_dirty": 1,
   "observed_head": "f4f1875b7e48f7a6636d9bf8ef0caabe0d15ff98",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 115,
+  "task_revision": 116,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T18:41:13+00:00",
+  "updated_at": "2026-09-06T18:41:26+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
@@ -361,3 +361,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T18:41:13+00:00: Recorded command exit 0; command argv SHA-256
   bd463739e8f6a75b40567be1d27fa4d69c3ddc7d9200761e525c82ec03ad6dd5.
+
+- 2026-09-06T18:41:26+00:00: Exact-tree parallel testing exposed an intermittent 30-second cleanup
+  delay: systemctl stop entered deactivating/stop-sigterm and waited its long default timeout while
+  the sandbox retained inherited pipes. A synchronous stop variant also timed out and once left a
+  transient deactivating scope, which was reconciled and disappeared; no process or lease remained.
+  Cleanup now verifies unit state, sends cgroup-wide SIGKILL, requests asynchronous collection, and
+  polls exact state under a five-second hard bound. Fault tests cover already-inactive, kill/stop
+  rejection, completion race, deactivating transition, unknown state, and deadline. Three repeated
+  unit suites and three parallel real-native suites then passed in 3-5 seconds each with zero ASB
+  scopes/processes/leases. Updated sandbox coverage: 95.46% regions, 98.74% lines, 100% functions;
+  asb-runtime 95.43% regions and 98.81% lines.
