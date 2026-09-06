@@ -8,7 +8,7 @@
     "AR-1001"
   ],
   "id": "AR-0310",
-  "next_action": "Await independent immutable review of exact head 3f9edc3305c13f3fb9b5555c6cdfa7c4e2bbd5ce before publication.",
+  "next_action": "Monitor exact-head PR 23 CI for 3f9edc3305c13f3fb9b5555c6cdfa7c4e2bbd5ce; investigate failures before requesting integration.",
   "observed_branch": "feature/provider-profile-contract",
   "observed_dirty": 0,
   "observed_head": "3f9edc3305c13f3fb9b5555c6cdfa7c4e2bbd5ce",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Normalize one provider configuration for safe translation across heterogeneous agent adapters.",
-  "task_revision": 117,
+  "task_revision": 118,
   "title": "Define common provider profiles",
-  "updated_at": "2026-09-06T23:50:24+00:00",
+  "updated_at": "2026-09-06T23:50:43+00:00",
   "worktree_key": "agent-systems-benchmark-provider-profile-contract"
 }
 ---
@@ -339,3 +339,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T23:50:24+00:00: Recorded command exit 0; command argv SHA-256
   3ec9fb5c1cf8b1632aea5e906e0ff2b3f8d722159c750db8a526f084188fcbe0.
+
+- 2026-09-06T23:50:43+00:00: After independent approval, published exact reviewed head
+  3f9edc3305c13f3fb9b5555c6cdfa7c4e2bbd5ce with an explicit absent-remote-branch lease and opened
+  focused product PR 23. GitHub reports base 311c128, exact matching head, open and mergeable.
+  Exact-head runs 34067997029 Rust x86_64/aarch64, 34067997047 quality, and 34067997066 formal
+  Kani/Loom are in progress.
