@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Repair sandbox test target portability",
-  "updated_at": "2026-09-06T22:12:46+00:00",
+  "updated_at": "2026-09-06T22:14:01+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-test-portability"
 }
 ---
@@ -240,3 +240,6 @@ Implementation has not started. Read the linked plan before claiming.
   run 34063259403 with Kani plus Loom/state models on x86_64/aarch64; repository quality run
   34063259528. PR URL https://github.com/martin-beck/agent-systems-benchmark/pull/18. No merge or
   release by worker.
+
+- 2026-09-06T22:14:01+00:00: Recorded command exit 0; command argv SHA-256
+  9878ff66f6f1167f0b183658c048fcf00bc8b82458a9d12b8c29b1a743690a11.
