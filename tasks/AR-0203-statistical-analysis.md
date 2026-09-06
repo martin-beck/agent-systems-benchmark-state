@@ -10,16 +10,16 @@
   "next_action": "Await reviewed AR-0502 integration and explicit Cargo fence transfer; then rebase candidate a47cce4, add only asb-analysis workspace/lock entries, and run exact-tree full gates.",
   "observed_branch": "feature/statistical-analysis",
   "observed_dirty": 0,
-  "observed_head": "fa7d67738a3d3a906f15153fbb259c760153d47f",
+  "observed_head": "4d9643cfe39d4cdab0f4f62c7172aef293799873",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0203.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compute latency distributions, quality/throughput intervals and evidence-aware SLO results.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Implement statistical and SLO assessment",
-  "updated_at": "2026-09-06T18:27:44+00:00",
+  "updated_at": "2026-09-06T18:27:59+00:00",
   "worktree_key": "agent-systems-benchmark-statistical-analysis"
 }
 ---

@@ -9,7 +9,7 @@
   "id": "AR-0103",
   "next_action": "Run exact-tree full quality/privacy/supply-chain gates, create focused signed DCO commit and PR, then await immutable-head review and CI; root Cargo/lock remain fenced.",
   "observed_branch": "feature/sandbox-runtime",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "f4f1875b7e48f7a6636d9bf8ef0caabe0d15ff98",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0103.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T18:27:37+00:00",
+  "updated_at": "2026-09-06T18:27:59+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
