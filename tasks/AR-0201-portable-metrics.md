@@ -8,7 +8,7 @@
     "AR-0102"
   ],
   "id": "AR-0201",
-  "next_action": "Await repeat independent review of repaired PR #12 exact a0f67bea1ffe50fd80bc42009761a4388798603a and fresh exact-head hosted CI. Retain Cargo workspace/lock fence.",
+  "next_action": "Await repeat independent immutable-head review of repaired PR #12 exact a0f67bea1ffe50fd80bc42009761a4388798603a; all local and exact-head hosted checks are green. Retain Cargo workspace/lock fence.",
   "observed_branch": "feature/portable-metrics",
   "observed_dirty": 0,
   "observed_head": "a0f67bea1ffe50fd80bc42009761a4388798603a",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling.",
-  "task_revision": 151,
+  "task_revision": 152,
   "title": "Collect portable system and session metrics",
-  "updated_at": "2026-09-06T19:03:55+00:00",
+  "updated_at": "2026-09-06T19:05:05+00:00",
   "worktree_key": "agent-systems-benchmark-portable-metrics"
 }
 ---
@@ -420,3 +420,7 @@ Implementation has not started. Read the linked plan before claiming.
   a0f67bea; branch clean and synchronized. Fresh runs: quality 34053668506; Rust 34053668457.
 
 - 2026-09-06T19:03:55+00:00: Heartbeat by quality-20260906.
+
+- 2026-09-06T19:05:05+00:00: Fresh exact-head hosted checks for repaired a0f67bea passed: quality
+  run 34053668506; Rust run 34053668457 on ubuntu-24.04 x86_64 and ubuntu-24.04-arm. Both
+  fail-closed review repairs are therefore locally and remotely green.
