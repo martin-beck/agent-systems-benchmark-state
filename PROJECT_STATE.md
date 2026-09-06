@@ -2,20 +2,21 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `10974f60be6fc79d0d07f64bfa212197eeee2082`
-- Local origin/main: `10974f60be6fc79d0d07f64bfa212197eeee2082`
+- Product remote main: `5c9b79b2a25ef2a7a485e53728ef0dfdfdd36530`
+- Local origin/main: `5c9b79b2a25ef2a7a485e53728ef0dfdfdd36530`
 - Primary worktree head: `5c9b79b2a25ef2a7a485e53728ef0dfdfdd36530`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #6 | `feature/durable-results@6277512c9fc3` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Add crash-consistent durable result storage |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34048075282 | `5c9b79b2a25e` | push | Repository quality | queued:- |
+| 34048075266 | `5c9b79b2a25e` | push | Rust verification | queued:- |
 | 34047974952 | `6277512c9fc3` | pull_request | Rust verification | completed:success |
 | 34047974913 | `6277512c9fc3` | pull_request | Repository quality | completed:success |
 | 34047717807 | `eb9bd888999f` | pull_request | Repository quality | completed:success |
@@ -26,5 +27,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34047424009 | `08602eca2fd4` | pull_request | Rust verification | completed:success |
 | 34047347503 | `a800ca3b9169` | pull_request | Rust verification | completed:success |
 | 34047347454 | `a800ca3b9169` | pull_request | Repository quality | completed:success |
-| 34047020883 | `f6cd02eef6b7` | pull_request | Repository quality | completed:success |
-| 34047020851 | `f6cd02eef6b7` | pull_request | Rust verification | completed:success |
