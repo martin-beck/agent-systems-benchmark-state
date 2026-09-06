@@ -10,7 +10,7 @@
   "id": "AR-0301",
   "next_action": "Create focused signed+DCO candidate, run commit-policy and exact-tree checks, publish PR, then obtain immutable independent review and exact-head CI before integration.",
   "observed_branch": "feature/agent-opencode",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "c422d7eb05b8228378497ba98783d41d0f3caca1",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0301.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned OpenCode through its structured supported interfaces.",
-  "task_revision": 134,
+  "task_revision": 135,
   "title": "Implement OpenCode client adapter",
-  "updated_at": "2026-09-06T20:27:09+00:00",
+  "updated_at": "2026-09-06T20:28:07+00:00",
   "worktree_key": "agent-systems-benchmark-agent-opencode"
 }
 ---
