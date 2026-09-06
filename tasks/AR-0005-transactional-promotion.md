@@ -13,11 +13,11 @@
   "plan": "../plans/AR-0005.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Make planned-to-open promotion a transactional handoffctl operation.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Add transactional AR promotion",
-  "updated_at": "2026-09-06T20:42:00+00:00",
+  "updated_at": "2026-09-06T20:49:01+00:00",
   "worktree_key": "agent-systems-benchmark-state-promotion"
 }
 ---
@@ -30,3 +30,6 @@ views could briefly commit inconsistent task and generated state. Preserve that 
 promotion must share handoffctl's lock, validation, commit, replication, and recovery boundary.
 
 Implementation has not started. Read the linked plan before claiming.
+
+- 2026-09-06T20:49:01+00:00: Promoted after independently verifying AR-0002 and AR-0004 done;
+  isolated state-repository paths are available.
