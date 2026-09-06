@@ -8,7 +8,7 @@
     "AR-0102"
   ],
   "id": "AR-0503",
-  "next_action": "Complete adversarial review of transactional socket cursor repair, run full gates, then amend signed+DCO PR #11 head with exact lease for fresh immutable review/CI; do not merge.",
+  "next_action": "Await fresh exact-head x86_64/aarch64 quality CI and coordinator immutable review of PR #11 head 410ecc9; repair findings if any. Do not merge or release.",
   "observed_branch": "feature/strict-replay",
   "observed_dirty": 0,
   "observed_head": "410ecc95b80e9904bd898e7ffafc84d8f8864847",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Serve local recorded responses while real agent and tools execute.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Implement strict provider response replay",
-  "updated_at": "2026-09-06T19:22:03+00:00",
+  "updated_at": "2026-09-06T19:22:27+00:00",
   "worktree_key": "agent-systems-benchmark-strict-replay"
 }
 ---
@@ -265,3 +265,14 @@ Dependencies AR-0102 and AR-0502 are done. Read the linked plan and claim after 
 
 - 2026-09-06T19:22:03+00:00: Recorded command exit 0; command argv SHA-256
   6b8ff8b679048628e3743eec9c5a2aa852800da4d2729a7f16707e4f5c423db1.
+
+- 2026-09-06T19:22:27+00:00: Transactional repair is published at signed+DCO head
+  410ecc95b80e9904bd898e7ffafc84d8f8864847, tree 0cde63fd0bb2b8f2d9f043279c32ee4080af072e, rebased
+  once onto exact reviewed main ef1a6578600b45f4afb4dd414131f9ffd2ddd01f. Range-diff equals
+  pre-rebase repair 22bb184. Exact five-path scope and zero root Cargo changes pass. Full exact-tree
+  fmt, workspace Clippy/tests/rustdoc/release/CLI, repository policy, signature/DCO,
+  actionlint/zizmor, exact-range Gitleaks, privacy/scope, deny/audit, coverage, controlled failures,
+  platform tests and schema parity all pass. Coverage: workspace 96.96% lines, replay 97.31%,
+  service.rs 97.23%. PR #11 and remote/local refs equal 410ecc9; base equals ef1a657; mergeable.
+  Fresh CI in progress: quality 34054668568 job 101544261652; Rust 34054668620 x86_64 job
+  101544261909 and aarch64 job 101544261778. Exact force-with-lease replaced only c20fdccb.
