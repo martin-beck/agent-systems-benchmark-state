@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run real client processes with bounded I/O, monotonic deadlines and process-tree ownership.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Implement process execution and cancellation",
-  "updated_at": "2026-09-06T16:47:11+00:00",
+  "updated_at": "2026-09-06T16:47:44+00:00",
   "worktree_key": "agent-systems-benchmark-process-runtime"
 }
 ---
@@ -76,3 +76,6 @@ Implementation has not started. Read the linked plan before claiming.
   with no product effect because this apply_patch requires an argument and handoffctl does not
   forward stdin; subsequent patches used apply_patch as the wrapped mutation with argument transport
   and succeeded.
+
+- 2026-09-06T16:47:44+00:00: Recorded command exit 0; command argv SHA-256
+  c737631d58603d1cf1a3431b5e9d725f739e471f68ccf4fb65a5b9bb22022aa4.
