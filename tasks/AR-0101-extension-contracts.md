@@ -9,17 +9,17 @@
   "id": "AR-0101",
   "next_action": "Run exact-tree full gates, review privacy/scope, then create signed DCO commit and PR.",
   "observed_branch": "feature/extension-contracts",
-  "observed_dirty": 19,
-  "observed_head": "c9568e8603e3520fb8462703fbd4ecaa1683992f",
+  "observed_dirty": 0,
+  "observed_head": "a40088879e9a6a64b9a9d268d7f51baa0cb242d2",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0101.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Specify typed agent, workload, collector, runtime and result contracts before parallel implementations.",
-  "task_revision": 91,
+  "task_revision": 92,
   "title": "Freeze versioned extension and result contracts",
-  "updated_at": "2026-09-06T16:10:43+00:00",
+  "updated_at": "2026-09-06T16:11:10+00:00",
   "worktree_key": "agent-systems-benchmark-extension-contracts"
 }
 ---
