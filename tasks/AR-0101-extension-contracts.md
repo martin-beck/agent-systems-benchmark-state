@@ -7,7 +7,7 @@
     "AR-0001"
   ],
   "id": "AR-0101",
-  "next_action": "Await independent merge of quality PR 2, then rebase PR 3 onto corrected main and require fresh exact-head CI.",
+  "next_action": "Await quality PR 2 merge, rebase ef9fb488 onto corrected main, rerun exact-head gates and CI, then request extended review.",
   "observed_branch": "feature/extension-contracts",
   "observed_dirty": 0,
   "observed_head": "ef9fb488766b9f8545174a21116b11f2cac63f98",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Specify typed agent, workload, collector, runtime and result contracts before parallel implementations.",
-  "task_revision": 108,
+  "task_revision": 109,
   "title": "Freeze versioned extension and result contracts",
-  "updated_at": "2026-09-06T16:18:20+00:00",
+  "updated_at": "2026-09-06T16:18:42+00:00",
   "worktree_key": "agent-systems-benchmark-extension-contracts"
 }
 ---
@@ -342,3 +342,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T16:18:20+00:00: Recorded command exit 0; command argv SHA-256
   3850bd3e44bd3f871afd167153685d6af4af04c2160722d1cca8e3bd64fd0aea.
+
+- 2026-09-06T16:18:42+00:00: Hardened framing in focused signed/DCO follow-up
+  ef9fb488766b9f8545174a21116b11f2cac63f98: both read/write clamp caller limits to 16 MiB and output
+  serialization aborts in a bounded buffer before oversized allocation. Negative buffer test passes;
+  protocol coverage is 96.15%, Clippy/tests/signatures/Gitleaks pass. Pushed PR 3; run 34045009828
+  started automatically on old base and is expected to encounter the already-diagnosed
+  synthetic-merge DCO workflow until PR 2 integrates.
