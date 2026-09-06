@@ -10,12 +10,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #19 | `feature/agent-opendesk@8eb99d3c7235` | `main` | CLEAN | - | agents: add pinned OpenDesk adapter |
+| #19 | `feature/agent-opendesk@8eb99d3c7235` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | agents: add pinned OpenDesk adapter |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34064855632 | `8eb99d3c7235` | pull_request | Rust verification | in_progress:- |
+| 34064855578 | `8eb99d3c7235` | pull_request | Repository quality | in_progress:- |
+| 34064855511 | `8eb99d3c7235` | pull_request | Formal assurance | in_progress:- |
 | 34063766870 | `23035acde688` | workflow_dispatch | Rust verification | completed:success |
 | 34063737973 | `23035acde688` | workflow_dispatch | Repository quality | completed:success |
 | 34063685602 | `23035acde688` | push | Repository quality | completed:failure |
@@ -25,6 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34063408539 | `7f308cca7038` | push | Repository quality | completed:failure |
 | 34063408520 | `7f308cca7038` | push | Formal assurance | completed:success |
 | 34063259528 | `eea3d202b226` | pull_request | Repository quality | completed:success |
-| 34063259403 | `eea3d202b226` | pull_request | Formal assurance | completed:success |
-| 34063259371 | `eea3d202b226` | pull_request | Rust verification | completed:success |
-| 34061235156 | `b7e9078d53a4` | push | Formal assurance | completed:success |
