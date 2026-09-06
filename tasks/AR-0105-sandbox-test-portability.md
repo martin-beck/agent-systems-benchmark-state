@@ -7,7 +7,7 @@
     "AR-0103"
   ],
   "id": "AR-0105",
-  "next_action": "Await independent immutable-tree review of d71321c before publication.",
+  "next_action": "Await independent immutable-tree review of 250f398 before publication.",
   "observed_branch": "fix/sandbox-test-portability",
   "observed_dirty": 0,
   "observed_head": "250f398c8b084ca1f13e03c44f73f4492de1a813",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Repair sandbox test target portability",
-  "updated_at": "2026-09-06T21:44:51+00:00",
+  "updated_at": "2026-09-06T21:45:17+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-test-portability"
 }
 ---
@@ -165,3 +165,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T21:44:51+00:00: Recorded command exit 0; command argv SHA-256
   75e37f33803399650f2f9d78068fab2b781b353b9366e762303722a20dc0811b.
+
+- 2026-09-06T21:45:17+00:00: Independent review correctly blocked d71321c: relative CARGO_TARGET_DIR
+  was classified without resolving against current_dir, and raw/manual fixture cleanup could retain
+  residue after panic. Repaired signed+DCO candidate 250f398 is based exactly on b7e9078 and changes
+  only sandbox.rs cfg(test) fixtures plus sandbox_boundary.rs. Relative target values now normalize
+  against captured current_dir; all unit/integration roots are unique PID+atomic RAII guards;
+  caught-panic regressions prove file and directory removal. Real relative external target, three
+  distinct fresh absolute targets, both execution orders, and concurrent processes passed with
+  repository target absent and zero scratch residue. Exact-tree external-target workspace
+  fmt/clippy/tests/docs/release, native tests, formal suite, audit/deny, coverage,
+  actionlint/zizmor/Gitleaks, repository/DCO policy, failure fixtures and platform validation
+  passed. Coverage is sandbox.rs 97.56% lines and workspace 96.80% lines. Tree, diff-check, SSH
+  signature, DCO, privacy and two-file scope are clean; no publication before immutable re-review.
