@@ -12,7 +12,7 @@
     "AR-0203"
   ],
   "id": "AR-0204",
-  "next_action": "Hold exact clean rebased successor 0717d4a unpublished pending coordinator publication authorization.",
+  "next_action": "Monitor exact-head PR #21 CI at immutable 0717d4a; repair failures, do not merge.",
   "observed_branch": "feature/capacity-sweeps",
   "observed_dirty": 0,
   "observed_head": "0717d4acd16856d8fad593efdfa9007ad32c1c3f",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run repeated closed-loop and open-loop experiments with bounded concurrency.",
-  "task_revision": 173,
+  "task_revision": 174,
   "title": "Implement capacity sweeps and arrival scheduling",
-  "updated_at": "2026-09-06T23:30:51+00:00",
+  "updated_at": "2026-09-06T23:31:12+00:00",
   "worktree_key": "agent-systems-benchmark-capacity-sweeps"
 }
 ---
@@ -530,3 +530,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T23:30:51+00:00: Recorded command exit 0; command argv SHA-256
   f648e84b111a41f4c6888aa6655d9294de809f4bbcf8ff0e7cd8beaf1963282c.
+
+- 2026-09-06T23:31:12+00:00: Publication authorized after independent approval. Reverified exact
+  parent/head, SSH signature, DCO, repository policy, exact four-path scope, privacy scan, Gitleaks,
+  and clean tree. A supplemental git grep attempt incorrectly used unsupported range syntax and
+  exited fatal under inverted status without blocking; no publication had occurred, corrected
+  candidate-blob plus patch privacy scans passed. Verified remote branch and PR absent, then pushed
+  exact 0717d4acd16856d8fad593efdfa9007ad32c1c3f with explicit absent-ref force-with-lease and
+  opened focused PR #21 https://github.com/martin-beck/agent-systems-benchmark/pull/21. Exact base
+  52b8b3b and head 0717d4a; mergeable. Exact-head runs started: Rust verification 34067095250,
+  Repository quality 34067095259, Formal assurance 34067095323.
