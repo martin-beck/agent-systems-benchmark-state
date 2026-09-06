@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 221,
+  "task_revision": 222,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T19:23:03+00:00",
+  "updated_at": "2026-09-06T19:23:05+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
@@ -666,3 +666,6 @@ Implementation has not started. Read the linked plan before claiming.
   zizmor, Gitleaks, repository policy and all failure fixtures. Post-gate tree clean with zero ASB
   scopes, sandbox helpers or lease files. Hosted exact-head runs 34054628751 and 34054628754
   started. Product main advanced independently; branch was not rewritten.
+
+- 2026-09-06T19:23:05+00:00: Recorded command exit 0; command argv SHA-256
+  48d74de6bff5025062d89d34a3bb4d061e3d7abc15f3c0a14131e1272a73dd1a.
