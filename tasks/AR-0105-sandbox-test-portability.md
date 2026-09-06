@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Repair sandbox test target portability",
-  "updated_at": "2026-09-06T21:19:27+00:00",
+  "updated_at": "2026-09-06T21:20:17+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-test-portability"
 }
 ---
@@ -75,3 +75,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T21:19:27+00:00: Recorded command exit 0; command argv SHA-256
   2bfa70e56e0700f1936ea112c39e5f5d79584490104fd381369d35104ecc19ae.
+
+- 2026-09-06T21:20:17+00:00: Recorded command exit 0; command argv SHA-256
+  25207b320ad4204782e2db1b7cacc6fa99a74d8a745e25d61895e0601ee06505.
