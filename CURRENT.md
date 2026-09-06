@@ -54,4 +54,4 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0001](tasks/AR-0001-repository-bootstrap.md): Bootstrap public repositories | Establish both public MIT repositories, Rust workspace, coordination reuse and evidence-backed plans. | Verify local gates, publish the reviewed initial trees and reconcile hosted CI. | - |
+| P0 | [AR-0001](tasks/AR-0001-repository-bootstrap.md): Bootstrap public repositories | Establish both public MIT repositories, Rust workspace, coordination reuse and evidence-backed plans. | No action; foundation verified. Begin AR-0002, AR-0003, AR-0101, AR-0501 or AR-0701 through the coordinator. | - |
