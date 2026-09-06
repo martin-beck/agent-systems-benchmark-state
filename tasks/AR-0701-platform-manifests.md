@@ -7,7 +7,7 @@
     "AR-0001"
   ],
   "id": "AR-0701",
-  "next_action": "Await independent immutable-head review and coordinator integration of green product PR #5 at dff27a9acb4fd4d00c1a823f5ac9770e11902020; then run post-merge exact-tree and main-CI verification before release.",
+  "next_action": "Monitor fresh exact-head PR #5 runs 34047347454 and 34047347503 for a800ca3b9169d9a04912f78f98a6bd78316b6729; repair any failure, then await renewed immutable-head independent review and coordinator integration.",
   "observed_branch": "feature/platform-manifests",
   "observed_dirty": 0,
   "observed_head": "a800ca3b9169d9a04912f78f98a6bd78316b6729",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define Ubuntu, Debian, Fedora, enterprise, openSUSE, Arch, Alpine and openEuler target manifests.",
-  "task_revision": 136,
+  "task_revision": 137,
   "title": "Pin distribution and architecture support matrix",
-  "updated_at": "2026-09-06T17:02:48+00:00",
+  "updated_at": "2026-09-06T17:03:23+00:00",
   "worktree_key": "agent-systems-benchmark-platform-manifests"
 }
 ---
@@ -405,3 +405,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T17:02:48+00:00: Recorded command exit 0; command argv SHA-256
   3854496c6c743ac08cda7ff16a4b128437877cb501e46e618d95bb5285c3ff37.
+
+- 2026-09-06T17:03:23+00:00: Independent review blocked old dff27a9 because it predated integrated
+  protocol/replay, accepted undersized npm SRI, did not bind user-space native-tested evidence, and
+  understated Codex bundled glibc requirements. Rebased onto exact main 9db4b6d and corrected all
+  findings plus tag/index repository equality, exactly one row per family, and Debian 13.6. Verified
+  both Codex archives bundle dynamically linked zsh requiring glibc 2.38; arm64 rg requires 2.18.
+  Amended signed+DCO head a800ca3b9169d9a04912f78f98a6bd78316b6729 has parent 9db4b6d. Integrated
+  local gates pass: 29 Rust tests plus docs/release, protocol schema/stdio, cargo deny/audit, 96.22
+  percent workspace, 100 percent core and 96.15 percent protocol coverage, repository
+  policy/analyzers and expanded platform negatives. Fresh hosted runs are in progress.
