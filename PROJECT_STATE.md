@@ -18,7 +18,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 34057058619 | `ac4a23599649` | push | Rust verification | in_progress:- |
 | 34057058586 | `ac4a23599649` | push | Repository quality | in_progress:- |
-| 34057058572 | `ac4a23599649` | push | Formal assurance | in_progress:- |
+| 34057058572 | `ac4a23599649` | push | Formal assurance | completed:success |
 | 34056966277 | `db8af71e7b7d` | pull_request | Rust verification | completed:success |
 | 34056966224 | `db8af71e7b7d` | pull_request | Repository quality | completed:success |
 | 34056966221 | `db8af71e7b7d` | pull_request | Formal assurance | completed:success |
