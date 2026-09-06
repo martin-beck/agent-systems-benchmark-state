@@ -10,12 +10,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #18 | `fix/sandbox-test-portability@eea3d202b226` | `main` | UNKNOWN | - | tests: isolate sandbox scratch fixtures |
+| #18 | `fix/sandbox-test-portability@eea3d202b226` | `main` | UNSTABLE | QUEUED:, QUEUED:, IN_PROGRESS:, QUEUED:, QUEUED:, QUEUED: | tests: isolate sandbox scratch fixtures |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34063259528 | `eea3d202b226` | pull_request | Repository quality | in_progress:- |
+| 34063259403 | `eea3d202b226` | pull_request | Formal assurance | queued:- |
+| 34063259371 | `eea3d202b226` | pull_request | Rust verification | queued:- |
 | 34061235156 | `b7e9078d53a4` | push | Formal assurance | completed:success |
 | 34061235152 | `b7e9078d53a4` | push | Repository quality | completed:success |
 | 34061235124 | `b7e9078d53a4` | push | Rust verification | completed:success |
@@ -25,6 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34058963865 | `9543a3297dd9` | push | Rust verification | completed:success |
 | 34058963859 | `9543a3297dd9` | push | Formal assurance | completed:success |
 | 34058963855 | `9543a3297dd9` | push | Repository quality | completed:success |
-| 34058711367 | `dfb0d548bf75` | pull_request | Repository quality | completed:success |
-| 34058711366 | `dfb0d548bf75` | pull_request | Rust verification | completed:success |
-| 34058711349 | `dfb0d548bf75` | pull_request | Formal assurance | completed:success |
