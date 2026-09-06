@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Specify typed agent, workload, collector, runtime and result contracts before parallel implementations.",
-  "task_revision": 99,
+  "task_revision": 100,
   "title": "Freeze versioned extension and result contracts",
-  "updated_at": "2026-09-06T16:16:31+00:00",
+  "updated_at": "2026-09-06T16:16:33+00:00",
   "worktree_key": "agent-systems-benchmark-extension-contracts"
 }
 ---
@@ -318,3 +318,6 @@ Implementation has not started. Read the linked plan before claiming.
   Product head a400888 has verified SSH signature and exact author-matching DCO. AR-0003 fixes this
   with PR_BASE..PR_HEAD and a synthetic-merge regression at d09a62e in green PR 2; do not rerun PR 3
   unchanged.
+
+- 2026-09-06T16:16:33+00:00: Recorded command exit 0; command argv SHA-256
+  9cb1f154acbc6a0e14be5274851cf8f93e17cccb5549983a92885e91718631b9.
