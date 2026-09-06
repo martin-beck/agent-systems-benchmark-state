@@ -10,7 +10,7 @@
   "id": "AR-0401",
   "next_action": "Await coordinator immutable review of signed candidate 3bef7cf; publish only after approval, then require exact-head x86_64/aarch64 CI.",
   "observed_branch": "feature/engineering-workloads",
-  "observed_dirty": 0,
+  "observed_dirty": 3,
   "observed_head": "3bef7cfada4c419daefa2744cb043a75b314541d",
   "owner": "replay-20260906",
   "plan": "../plans/AR-0401.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Implement original engineering workloads",
-  "updated_at": "2026-09-06T22:03:21+00:00",
+  "updated_at": "2026-09-06T22:03:46+00:00",
   "worktree_key": "agent-systems-benchmark-engineering-workloads"
 }
 ---

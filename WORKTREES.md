@@ -11,7 +11,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `b0b2ae1a9ad5` | 0 | behind 3, ahead 1 |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 58, ahead 0 |
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 47, ahead 0 |
-| `agent-systems-benchmark-engineering-workloads` | `feature/engineering-workloads` | `3bef7cfada4c` | 0 | behind 0, ahead 1 |
+| `agent-systems-benchmark-engineering-workloads` | `feature/engineering-workloads` | `3bef7cfada4c` | 3 | behind 0, ahead 1 |
+| changed files | - | - | - | `crates/asb-workloads/README.md`, `crates/asb-workloads/src/lib.rs`, `crates/asb-workloads/tests/public_api.rs` |
 | `agent-systems-benchmark-experiment-comparability` | `feature/experiment-comparability` | `eb5e84933830` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 55, ahead 0 |
 | `agent-systems-benchmark-formal-assurance` | `feature/formal-assurance` | `2a495a99a657` | 0 | behind 13, ahead 0 |
