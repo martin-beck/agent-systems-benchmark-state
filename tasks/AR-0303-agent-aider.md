@@ -10,7 +10,7 @@
   "id": "AR-0303",
   "next_action": "Inspect aider batch invocation and editing lifecycle.",
   "observed_branch": "feature/agent-aider",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "3cfb8716da8ce15d2cf0df4983f3f4c93e2ff130",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0303.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support unattended aider editing with bounded input, output and repository changes.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Implement aider client adapter",
-  "updated_at": "2026-09-06T22:54:13+00:00",
+  "updated_at": "2026-09-06T22:58:09+00:00",
   "worktree_key": "agent-systems-benchmark-agent-aider"
 }
 ---
