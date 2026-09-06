@@ -18,4 +18,4 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-sandbox-runtime` | `feature/sandbox-runtime` | `a2ebac54d8ea` | 1 | behind 0, ahead 1 |
 | changed files | - | - | - | `crates/asb-runtime/src/lib.rs` |
 | `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `3bcfd85dedd3` | 0 | behind 1, ahead 0 |
-| `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `955d89612039` | 0 | behind 5, ahead 1 |
+| `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `cdd76f988999` | 0 | behind 0, ahead 1 |

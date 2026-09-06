@@ -11,16 +11,16 @@
   "next_action": "Correct immutable privacy range scan, then update five-path candidate onto exact current main c9e3653 without taking or modifying the Cargo fence; rerun exact-tree gates before review.",
   "observed_branch": "feature/strict-replay",
   "observed_dirty": 0,
-  "observed_head": "955d8961203953c812cf74e9f040c6c668e82975",
+  "observed_head": "cdd76f9889998760db0c12fb76e9215fe8b84535",
   "owner": "replay-20260906",
   "plan": "../plans/AR-0503.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Serve local recorded responses while real agent and tools execute.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Implement strict provider response replay",
-  "updated_at": "2026-09-06T18:51:09+00:00",
+  "updated_at": "2026-09-06T18:51:34+00:00",
   "worktree_key": "agent-systems-benchmark-strict-replay"
 }
 ---
