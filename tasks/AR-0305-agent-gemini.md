@@ -14,11 +14,11 @@
   "plan": "../plans/AR-0305.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Run pinned Gemini CLI through noninteractive JSON events.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Implement Gemini CLI client adapter",
-  "updated_at": "2026-09-06T19:56:54+00:00",
+  "updated_at": "2026-09-06T23:42:21+00:00",
   "worktree_key": "agent-systems-benchmark-agent-gemini"
 }
 ---
@@ -28,3 +28,6 @@ Run pinned Gemini CLI through noninteractive JSON events.
 
 Implementation has not started. Read the linked plan before claiming.
 
+
+- 2026-09-06T23:42:21+00:00: Dependencies AR-0101, AR-0102 and AR-0103 are done; promote
+  highest-priority independent agent adapter after AR-0204 release.

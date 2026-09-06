@@ -11,11 +11,16 @@ Never edit this file directly.
 | P1 | [AR-0304](tasks/AR-0304-agent-codex.md): Implement Codex client adapter | Use Codex noninteractive structured events or app-server with declared capability boundaries. | Add self-contained real Codex fixture test, then request shared registration fence. | replay-20260906 |
 | P1 | [AR-0310](tasks/AR-0310-provider-profile-contract.md): Define common provider profiles | Normalize one provider configuration for safe translation across heterogeneous agent adapters. | Complete pinned Kani proof in same-drive cache, re-review exact candidate, then request immutable coordinator review. | quality-20260906 |
 
-## Planned
+## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0305](tasks/AR-0305-agent-gemini.md): Implement Gemini CLI client adapter | Run pinned Gemini CLI through noninteractive JSON events. | Inspect the current official stable release, transition constraints, stream-JSON contract and provider override. | - |
+
+## Planned
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
 | P1 | [AR-0306](tasks/AR-0306-agent-qwen-code.md): Implement Qwen Code client adapter | Run pinned Qwen Code through isolated headless stream-JSON. | Inspect the current stable release, stream-JSON contract, provider override and ambient context loading. | - |
 | P1 | [AR-0307](tasks/AR-0307-agent-goose.md): Implement goose client adapter | Run pinned AAIF goose in no-session structured mode. | Inspect current release assets, structured run mode, provider configuration and extension failure behavior. | - |
 | P1 | [AR-0311](tasks/AR-0311-provider-openai.md): Support a shared OpenAI provider | Apply one default OpenAI provider profile consistently to all supported agents. | Implement the default OpenAI provider profile for every adapter that proves compatible support. | - |
