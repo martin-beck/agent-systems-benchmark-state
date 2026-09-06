@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use bounded proofs and model tests for safety-critical domain logic.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Prove critical state and concurrency invariants",
-  "updated_at": "2026-09-06T19:53:00+00:00",
+  "updated_at": "2026-09-06T19:53:02+00:00",
   "worktree_key": "agent-systems-benchmark-formal-assurance"
 }
 ---
@@ -236,3 +236,6 @@ plan and claim after a fresh reconciliation.
 
 - 2026-09-06T19:52:13+00:00: Recorded command exit 101; command argv SHA-256
   c17bddb75af49fbbf310c8d93a91d8ddc03a721dff323dc1ecd17874adbac9c0.
+
+- 2026-09-06T19:53:02+00:00: Recorded command exit 0; command argv SHA-256
+  f8c407dc90bcb454866da58582ad9677daad32c8be84eb85db0b3733fcaa910a.
