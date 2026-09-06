@@ -2,7 +2,7 @@
 {
   "branch": "feature/durable-results",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-06T18:05:34+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/durable-results",
   "observed_dirty": 0,
   "observed_head": "6277512c9fc38414573bfb9096534eac0b516217",
-  "owner": "root-coordination-20260906",
+  "owner": "",
   "plan": "../plans/AR-0104.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Persist manifests, event streams, artifact hashes and recoverable execution intentions.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "Implement durable run storage and recovery",
-  "updated_at": "2026-09-06T17:17:34+00:00",
+  "updated_at": "2026-09-06T17:21:08+00:00",
   "worktree_key": "agent-systems-benchmark-durable-results"
 }
 ---
@@ -214,3 +214,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T17:17:34+00:00: Recorded command exit 0; command argv SHA-256
   75dc351db9b9e9f6f8b153ed511481e42cc05fdc2ed37e745df4be1ddd2445f7.
+
+- 2026-09-06T17:21:08+00:00: Released after signed merge 5c9b79b2a25ef2a7a485e53728ef0dfdfdd36530;
+  exact-main quality 34048075282 and native x86_64/aarch64 Rust 34048075266; full local post-merge
+  gates, 96.17 percent asb-store coverage, immutable review, live doctor, schema validation, and
+  synchronized clean refs passed. Residual scope: simulated disk-full is not real ENOSPC, and
+  hostile same-UID ancestor-directory replacement awaits dirfd/openat hardening.
