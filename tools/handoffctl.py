@@ -666,6 +666,7 @@ def mutate(args: argparse.Namespace, kind: str) -> None:
         old_task = path.read_text()
         current_path = ROOT / "CURRENT.md"
         old_current = current_path.read_text() if current_path.exists() else ""
+        committed = False
         note = (
             apply_claim(args, meta, all_tasks())
             if kind == "claim"
@@ -692,12 +693,16 @@ def mutate(args: argparse.Namespace, kind: str) -> None:
             errors = validate(live=False)
             if errors:
                 raise RuntimeError("\n".join(errors))
-            commit(f"chore(state): {kind} {args.task}", [path, current_path])
+            committed = commit(f"chore(state): {kind} {args.task}", [path, current_path])
             push_replica()
         except Exception:
-            atomic(path, old_task)
-            if old_current:
-                atomic(current_path, old_current)
+            # A signed local commit is already durable even when replication fails.
+            # Keep its worktree representation intact so a later reconcile can safely
+            # inspect and retry the push instead of silently rolling state backward.
+            if not committed:
+                atomic(path, old_task)
+                if old_current:
+                    atomic(current_path, old_current)
             raise
 
 
@@ -710,12 +715,23 @@ def cmd_snapshot() -> None:
         print((ROOT / "CURRENT.md").read_text(), end="")
 
 
+def require_active_owner(task_id: str, owner: str) -> None:
+    """Fence wrapped commands with a live claim before external effects."""
+    with locked(exclusive=False):
+        _, meta, _ = locate(task_id)
+        if meta.get("owner") != owner:
+            raise RuntimeError("task claim does not match owner")
+        if meta.get("status") != "in_progress":
+            raise RuntimeError("task claim is not active")
+        errors = active_expiry_errors(task_id, meta.get("claim_expires"))
+        if errors:
+            raise RuntimeError(errors[0])
+
+
 def cmd_run(args: argparse.Namespace) -> int:
-    _, meta, _ = locate(args.task)
-    if meta.get("owner") != args.owner:
-        raise RuntimeError("task claim does not match owner")
     if not args.command:
         raise RuntimeError("missing command")
+    require_active_owner(args.task, args.owner)
     proc = subprocess.run(args.command, check=False)
     reconcile(do_commit=True, push=True)
 
