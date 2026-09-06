@@ -2,7 +2,7 @@
 {
   "branch": "feature/capacity-sweeps",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T02:29:05+00:00",
+  "claim_expires": "2026-09-07T02:31:14+00:00",
   "depends_on": [
     "AR-0102",
     "AR-0103",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run repeated closed-loop and open-loop experiments with bounded concurrency.",
-  "task_revision": 174,
+  "task_revision": 175,
   "title": "Implement capacity sweeps and arrival scheduling",
-  "updated_at": "2026-09-06T23:31:12+00:00",
+  "updated_at": "2026-09-06T23:31:14+00:00",
   "worktree_key": "agent-systems-benchmark-capacity-sweeps"
 }
 ---
@@ -540,3 +540,5 @@ Implementation has not started. Read the linked plan before claiming.
   opened focused PR #21 https://github.com/martin-beck/agent-systems-benchmark/pull/21. Exact base
   52b8b3b and head 0717d4a; mergeable. Exact-head runs started: Rust verification 34067095250,
   Repository quality 34067095259, Formal assurance 34067095323.
+
+- 2026-09-06T23:31:14+00:00: Heartbeat by contracts-20260906.
