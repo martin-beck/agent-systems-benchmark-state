@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Normalize one provider configuration for safe translation across heterogeneous agent adapters.",
-  "task_revision": 124,
+  "task_revision": 125,
   "title": "Define common provider profiles",
-  "updated_at": "2026-09-06T23:55:57+00:00",
+  "updated_at": "2026-09-06T23:57:12+00:00",
   "worktree_key": "agent-systems-benchmark-provider-profile-contract"
 }
 ---
@@ -359,3 +359,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T23:55:57+00:00: Recorded command exit 0; command argv SHA-256
   095ecec3070836d75e7b88615c851fe47ea21c5e42752ee8c78907d06cc1a715.
+
+- 2026-09-06T23:57:12+00:00: Recorded command exit 0; command argv SHA-256
+  958c347d9d11a68b699beabc110837d6a24c7090d1a59c65139aad38b5b7847f.
