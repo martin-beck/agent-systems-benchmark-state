@@ -10,16 +10,16 @@
   "next_action": "Await coordinator integration of approved exact PR #18 head eea3d20; then run exact-main post-merge checks.",
   "observed_branch": "fix/sandbox-test-portability",
   "observed_dirty": 0,
-  "observed_head": "eea3d202b226f7365cc18ac00dda854343c77de0",
+  "observed_head": "7f308cca70386413ec0fc047e8836620b4e59bbe",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0105.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Repair sandbox test target portability",
-  "updated_at": "2026-09-06T22:14:01+00:00",
+  "updated_at": "2026-09-06T22:16:39+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-test-portability"
 }
 ---
