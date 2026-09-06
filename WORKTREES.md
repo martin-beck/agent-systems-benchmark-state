@@ -5,7 +5,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
 | `agent-systems-benchmark` | `main` | `68f313fcb4fa` | 0 | behind 0, ahead 0 |
-| `agent-systems-benchmark-agent-opencode` | `feature/agent-opencode` | `4c140d754e4c` | 0 | behind 3, ahead 3 |
+| `agent-systems-benchmark-agent-opencode` | `feature/agent-opencode` | `dfb0d548bf75` | 0 | behind 0, ahead 3 |
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `ac4a23599649` | 10 | behind 3, ahead 0 |
 | changed files | - | - | - | `crates/asb-runtime/README.md`, `crates/asb-runtime/src/lib.rs`, `crates/asb-runtime/src/scheduler.rs`, `crates/asb-runtime/tests/scheduler_boundary.rs`, `target-cov/`, `target-focus-cov/`, `target-focus-cov2/`, `target-focus-cov3/`, `target-focus-cov4/`, `target-full/` |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 51, ahead 0 |
