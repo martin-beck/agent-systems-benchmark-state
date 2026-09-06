@@ -2,7 +2,7 @@
 {
   "branch": "feature/formal-assurance",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-06T21:16:06+00:00",
+  "claim_expires": "2026-09-06T21:33:28+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use bounded proofs and model tests for safety-critical domain logic.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Prove critical state and concurrency invariants",
-  "updated_at": "2026-09-06T19:33:26+00:00",
+  "updated_at": "2026-09-06T19:33:28+00:00",
   "worktree_key": "agent-systems-benchmark-formal-assurance"
 }
 ---
@@ -109,3 +109,5 @@ plan and claim after a fresh reconciliation.
   and cursor separation. Loom ownership model and retained race mutant pass; depth-six
   double-completion and two-session cursor models plus mutants pass. Exact pin/workflow consistency
   test passes.
+
+- 2026-09-06T19:33:28+00:00: Heartbeat by quality-20260906.
