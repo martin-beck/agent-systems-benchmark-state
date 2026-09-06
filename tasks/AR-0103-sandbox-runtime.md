@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 301,
+  "task_revision": 302,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T19:58:42+00:00",
+  "updated_at": "2026-09-06T20:00:46+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
@@ -900,3 +900,6 @@ Implementation has not started. Read the linked plan before claiming.
   nine-test native runs, Deny/Audit/coverage, analyzers, Gitleaks, policy and all failure fixtures;
   zero residual scopes/leases/sentinels. Local and remote feature head exact and clean. Follow-up PR
   #15 opened on exact base 4d71697; await exact-head CI/review.
+
+- 2026-09-06T20:00:46+00:00: Recorded command exit 0; command argv SHA-256
+  ff653694d1443d02919e7e660a5f56435f0ae48b258889bafaab6e985336f7bc.
