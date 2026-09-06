@@ -10,7 +10,7 @@
   "id": "AR-0302",
   "next_action": "Await independent immutable review of c331c2b; publish only if approved, then require exact-head CI.",
   "observed_branch": "feature/agent-opendesk",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "c331c2b295833f0f5c6e621017ac0a55e28fb288",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0302.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support the bitclub OpenDesk CLI with its own dialect and compatibility record.",
-  "task_revision": 114,
+  "task_revision": 115,
   "title": "Implement OpenDesk client adapter",
-  "updated_at": "2026-09-06T22:30:13+00:00",
+  "updated_at": "2026-09-06T22:31:11+00:00",
   "worktree_key": "agent-systems-benchmark-agent-opendesk"
 }
 ---
