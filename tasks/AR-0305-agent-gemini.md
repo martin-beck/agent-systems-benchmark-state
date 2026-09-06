@@ -11,7 +11,7 @@
   "id": "AR-0305",
   "next_action": "Inspect the current official stable release, transition constraints, stream-JSON contract and provider override.",
   "observed_branch": "feature/agent-gemini",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "311c128649610df258b2961c9ca623fb8f258307",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0305.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned Gemini CLI through noninteractive JSON events.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Implement Gemini CLI client adapter",
-  "updated_at": "2026-09-06T23:45:57+00:00",
+  "updated_at": "2026-09-06T23:52:25+00:00",
   "worktree_key": "agent-systems-benchmark-agent-gemini"
 }
 ---

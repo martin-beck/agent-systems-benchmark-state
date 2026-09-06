@@ -8,7 +8,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-agent-aider` | `feature/agent-aider` | `da81ead6932c` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-agent-codex` | `feature/agent-codex` | `52b8b3b12d1f` | 4 | behind 2, ahead 0 |
 | changed files | - | - | - | `crates/asb-agents/CODEX.md`, `crates/asb-agents/src/codex.rs`, `crates/asb-agents/tests/fixtures/`, `crates/asb-agents/tests/real_codex.rs` |
-| `agent-systems-benchmark-agent-gemini` | `feature/agent-gemini` | `311c12864961` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-agent-gemini` | `feature/agent-gemini` | `311c12864961` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-agents/src/gemini.rs` |
 | `agent-systems-benchmark-agent-opencode` | `feature/agent-opencode` | `dfb0d548bf75` | 0 | behind 16, ahead 0 |
 | `agent-systems-benchmark-agent-opendesk` | `feature/agent-opendesk` | `8eb99d3c7235` | 0 | behind 9, ahead 0 |
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `0717d4acd168` | 0 | behind 1, ahead 0 |
