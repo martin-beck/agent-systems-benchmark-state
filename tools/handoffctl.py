@@ -17,6 +17,8 @@ from collections.abc import Iterator
 from pathlib import Path
 from typing import Any, cast
 
+from status_renderer import StatusRenderError, graph_errors, render_status
+
 ROOT = Path(__file__).resolve().parent.parent
 TASKS = ROOT / "tasks"
 RUNTIME = ROOT / ".runtime"
@@ -476,25 +478,27 @@ def claim_errors(
     return errors
 
 
-def dependency_errors(tasks: list[Task], ids: set[str]) -> list[str]:
+def render_status_view(tasks: list[Task]) -> str:
+    """Render the public task dashboard with coordinator presentation constants."""
+    return render_status(tasks, STATUSES, PRIORITIES)
+
+
+def generated_view_errors(tasks: list[Task]) -> list[str]:
+    """Check both task-derived views without allowing renderer errors to escape."""
     errors: list[str] = []
-    graph = {meta["id"]: meta.get("depends_on", []) for _, meta, _ in tasks}
-    errors.extend(
-        f"{task_id}: missing dependency {dependency}"
-        for task_id, dependencies in graph.items()
-        for dependency in dependencies
-        if dependency not in ids
-    )
-
-    def visit(task_id: str, trail: list[str]) -> None:
-        if task_id in trail:
-            errors.append("dependency cycle: " + " -> ".join([*trail, task_id]))
-            return
-        for dependency in graph.get(task_id, []):
-            visit(dependency, [*trail, task_id])
-
-    for task_id in ids:
-        visit(task_id, [])
+    if not all(meta.get("status") in STATUSES for _, meta, _ in tasks):
+        return errors
+    current = ROOT / "CURRENT.md"
+    if current.exists() and current.read_text() != render_current(tasks):
+        errors.append("CURRENT.md differs from generated tasks")
+    try:
+        expected_status = render_status_view(tasks)
+    except StatusRenderError as error:
+        errors.extend(str(error).splitlines())
+    else:
+        status = ROOT / "STATUS.md"
+        if not status.exists() or status.read_text() != expected_status:
+            errors.append("STATUS.md differs from generated tasks")
     return errors
 
 
@@ -512,12 +516,8 @@ def validate(*, live: bool = False) -> list[str]:
         ids[task_id] = path
         errors.extend(basic_task_errors(path, meta))
         errors.extend(claim_errors(meta, active_owners, active_worktrees, active_branches))
-    errors.extend(dependency_errors(tasks, set(ids)))
-    current = ROOT / "CURRENT.md"
-    if all(meta.get("status") in STATUSES for _, meta, _ in tasks):
-        expected = render_current(tasks)
-        if current.exists() and current.read_text() != expected:
-            errors.append("CURRENT.md differs from generated tasks")
+    errors.extend(graph_errors(tasks))
+    errors.extend(generated_view_errors(tasks))
     errors.extend(privacy_errors())
     if live:
         state = project_scan()
@@ -535,10 +535,17 @@ def validate(*, live: bool = False) -> list[str]:
 def commit(message: str, paths: list[Path]) -> bool:
     relative = [str(path.relative_to(ROOT)) for path in paths]
     run(["git", "-C", str(ROOT), "add", "--", *relative])
-    if run(["git", "-C", str(ROOT), "diff", "--cached", "--quiet"], check=False).returncode == 0:
-        return False
-    run(["git", "-C", str(ROOT), "commit", "-S", "-s", "-m", message], capture=False)
-    return True
+    try:
+        if (
+            run(["git", "-C", str(ROOT), "diff", "--cached", "--quiet"], check=False).returncode
+            == 0
+        ):
+            return False
+        run(["git", "-C", str(ROOT), "commit", "-S", "-s", "-m", message], capture=False)
+        return True
+    except Exception:
+        run(["git", "-C", str(ROOT), "reset", "--", *relative], check=False)
+        raise
 
 
 def push_replica() -> None:
@@ -566,33 +573,51 @@ def push_replica() -> None:
 def reconcile(*, do_commit: bool, push: bool = False) -> bool:
     with locked():
         state = project_scan()
-        before = {path: path.read_text() for path, _, _ in all_tasks()}
-        sync_task_observations(all_tasks(), state)
-        atomic(ROOT / "CURRENT.md", render_current(all_tasks()))
-        project, worktrees = live_docs(state)
-        atomic(ROOT / "PROJECT_STATE.md", project)
-        atomic(ROOT / "WORKTREES.md", worktrees)
-        errors = validate(live=False)
-        if errors:
-            raise RuntimeError("validation failed:\n" + "\n".join(errors))
-        touched = [path for path, old in before.items() if path.read_text() != old]
-        touched += [ROOT / name for name in ("CURRENT.md", "PROJECT_STATE.md", "WORKTREES.md")]
-        changed = (
-            commit("chore(state): reconcile Agent Systems Benchmark", touched)
-            if do_commit
-            else True
-        )
-        head = run(["git", "-C", str(ROOT), "rev-parse", "HEAD"], check=False).stdout.strip()
-        if push:
-            push_replica()
-        atomic(
-            RUNTIME / "last-reconcile.json",
-            json.dumps(
-                {"at": now(), "state_commit": head, "project_main": state["remote_main"]}, indent=2
+        generated = [
+            ROOT / name for name in ("CURRENT.md", "STATUS.md", "PROJECT_STATE.md", "WORKTREES.md")
+        ]
+        before: dict[Path, str | None] = {path: path.read_text() for path, _, _ in all_tasks()}
+        before.update({path: path.read_text() if path.exists() else None for path in generated})
+        committed = False
+        try:
+            sync_task_observations(all_tasks(), state)
+            tasks = all_tasks()
+            atomic(ROOT / "CURRENT.md", render_current(tasks))
+            atomic(ROOT / "STATUS.md", render_status_view(tasks))
+            project, worktrees = live_docs(state)
+            atomic(ROOT / "PROJECT_STATE.md", project)
+            atomic(ROOT / "WORKTREES.md", worktrees)
+            errors = validate(live=False)
+            if errors:
+                raise RuntimeError("validation failed:\n" + "\n".join(errors))
+            touched = [
+                path for path, old in before.items() if path.exists() and path.read_text() != old
+            ]
+            committed = (
+                commit("chore(state): reconcile Agent Systems Benchmark", touched)
+                if do_commit
+                else False
             )
-            + "\n",
-        )
-        return changed
+            head = run(["git", "-C", str(ROOT), "rev-parse", "HEAD"], check=False).stdout.strip()
+            if push:
+                push_replica()
+            atomic(
+                RUNTIME / "last-reconcile.json",
+                json.dumps(
+                    {"at": now(), "state_commit": head, "project_main": state["remote_main"]},
+                    indent=2,
+                )
+                + "\n",
+            )
+            return committed if do_commit else True
+        except Exception:
+            if not committed:
+                for path, old in before.items():
+                    if old is None:
+                        path.unlink(missing_ok=True)
+                    else:
+                        atomic(path, old)
+            raise
 
 
 def locate(task_id: str) -> Task:
@@ -666,6 +691,8 @@ def mutate(args: argparse.Namespace, kind: str) -> None:
         old_task = path.read_text()
         current_path = ROOT / "CURRENT.md"
         old_current = current_path.read_text() if current_path.exists() else ""
+        status_path = ROOT / "STATUS.md"
+        old_status = status_path.read_text() if status_path.exists() else None
         committed = False
         note = (
             apply_claim(args, meta, all_tasks())
@@ -689,11 +716,15 @@ def mutate(args: argparse.Namespace, kind: str) -> None:
             )
         try:
             write_task(path, meta, body)
-            atomic(current_path, render_current(all_tasks()))
+            tasks = all_tasks()
+            atomic(current_path, render_current(tasks))
+            atomic(status_path, render_status_view(tasks))
             errors = validate(live=False)
             if errors:
                 raise RuntimeError("\n".join(errors))
-            committed = commit(f"chore(state): {kind} {args.task}", [path, current_path])
+            committed = commit(
+                f"chore(state): {kind} {args.task}", [path, current_path, status_path]
+            )
             push_replica()
         except Exception:
             # A signed local commit is already durable even when replication fails.
@@ -703,7 +734,37 @@ def mutate(args: argparse.Namespace, kind: str) -> None:
                 atomic(path, old_task)
                 if old_current:
                     atomic(current_path, old_current)
+                if old_status is None:
+                    status_path.unlink(missing_ok=True)
+                else:
+                    atomic(status_path, old_status)
             raise
+
+
+def cmd_render_status(*, check: bool) -> None:
+    """Render STATUS.md or fail if its checked-in form is stale."""
+    with locked(exclusive=not check):
+        expected = render_status_view(all_tasks())
+        path = ROOT / "STATUS.md"
+        if check:
+            if not path.exists() or path.read_text() != expected:
+                raise RuntimeError("STATUS.md differs from generated tasks")
+            return
+        atomic(path, expected)
+
+
+def cmd_doctor(*, live: bool) -> int:
+    """Validate static state and optionally compare the live generated views."""
+    errors = validate(live=live)
+    if errors:
+        print("\n".join("ERROR: " + value for value in errors))
+        return 1
+    print(
+        "OK: structure, references, privacy, generated views"
+        + (" and live state" if live else "")
+        + " are consistent"
+    )
+    return 0
 
 
 def cmd_snapshot() -> None:
@@ -763,6 +824,8 @@ def main() -> int:
     commands.add_parser("snapshot")
     item = commands.add_parser("doctor")
     item.add_argument("--live", action="store_true")
+    item = commands.add_parser("render-status")
+    item.add_argument("--check", action="store_true")
     for name in ("claim", "heartbeat"):
         item = commands.add_parser(name)
         item.add_argument("task")
@@ -794,15 +857,9 @@ def main() -> int:
     elif args.cmd == "snapshot":
         cmd_snapshot()
     elif args.cmd == "doctor":
-        errors = validate(live=args.live)
-        if errors:
-            print("\n".join("ERROR: " + value for value in errors))
-            return 1
-        print(
-            "OK: structure, references, privacy, generated views"
-            + (" and live state" if args.live else "")
-            + " are consistent"
-        )
+        return cmd_doctor(live=args.live)
+    elif args.cmd == "render-status":
+        cmd_render_status(check=args.check)
     elif args.cmd in ("claim", "heartbeat", "release", "update"):
         mutate(args, args.cmd)
     elif args.cmd == "run":
