@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**44 ARs tracked** across 4 active status categories.
+**44 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 30 |
 | **Future** | Deferred roadmap work | 0 |
@@ -67,7 +67,7 @@ flowchart LR
         direction TB
         AR_0501["AR-0501 - Done"]:::status_done
         AR_0502["AR-0502 - Done"]:::status_done
-        AR_0503["AR-0503 - Open"]:::status_open
+        AR_0503["AR-0503 - In progress"]:::status_in_progress
         AR_0504["AR-0504 - Planned"]:::status_planned
         AR_0505["AR-0505 - Planned"]:::status_planned
     end
@@ -273,19 +273,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0103](tasks/AR-0103-sandbox-runtime.md): Implement isolated execution and resource leases | contracts-20260906 | Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets. | Run exact-tree full quality/privacy/supply-chain gates, create focused signed DCO commit and PR, then await immutable-head review and CI; root Cargo/lock remain fenced. |
 | P1 | [AR-0201](tasks/AR-0201-portable-metrics.md): Collect portable system and session metrics | quality-20260906 | Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling. | Claim after a fresh reconciliation, then implement isolated portable collector paths without touching the serialized Cargo workspace fence. |
 | P1 | [AR-0203](tasks/AR-0203-statistical-analysis.md): Implement statistical and SLO assessment | root-coordination-20260906 | Compute latency distributions, quality/throughput intervals and evidence-aware SLO results. | Await reviewed AR-0502 integration and explicit Cargo fence transfer; then rebase candidate a47cce4, add only asb-analysis workspace/lock entries, and run exact-tree full gates. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0503](tasks/AR-0503-strict-replay.md): Implement strict provider response replay | Unclaimed | Serve local recorded responses while real agent and tools execute. | Claim after a fresh reconciliation, then implement strict matching and streaming with explicit per-dialect capabilities. |
+| P1 | [AR-0503](tasks/AR-0503-strict-replay.md): Implement strict provider response replay | replay-20260906 | Serve local recorded responses while real agent and tools execute. | Claim after a fresh reconciliation, then implement strict matching and streaming with explicit per-dialect capabilities. |
 
 ### Planned (30)
 
