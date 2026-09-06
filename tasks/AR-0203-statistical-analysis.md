@@ -9,7 +9,7 @@
   "id": "AR-0203",
   "next_action": "Commit the reviewed crate-only candidate, then await AR-0502 Cargo fence and exact-main integration before cargo/full quality validation and PR.",
   "observed_branch": "feature/statistical-analysis",
-  "observed_dirty": 1,
+  "observed_dirty": 4,
   "observed_head": "5c9b79b2a25ef2a7a485e53728ef0dfdfdd36530",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0203.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compute latency distributions, quality/throughput intervals and evidence-aware SLO results.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Implement statistical and SLO assessment",
-  "updated_at": "2026-09-06T17:54:41+00:00",
+  "updated_at": "2026-09-06T17:54:55+00:00",
   "worktree_key": "agent-systems-benchmark-statistical-analysis"
 }
 ---
