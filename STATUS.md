@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 4 |
+| **In progress** | Claimed work with a live lease | 3 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 1 |
 | **Planned** | Defined work awaiting promotion or dependencies | 55 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 19 |
+| **Done** | Accepted, integrated, and durably verified | 20 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -40,7 +40,7 @@ flowchart LR
         AR_0102["AR-0102 - Done"]:::status_done
         AR_0103["AR-0103 - Done"]:::status_done
         AR_0104["AR-0104 - Done"]:::status_done
-        AR_0105["AR-0105 - In progress"]:::status_in_progress
+        AR_0105["AR-0105 - Done"]:::status_done
     end
     subgraph series_02["02 - Analysis"]
         direction TB
@@ -495,11 +495,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0105](tasks/AR-0105-sandbox-test-portability.md): Repair sandbox test target portability | contracts-20260906 | Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work. | Release AR-0105 done after repaired exact-main local/hosted/state validation. |
 | P1 | [AR-0302](tasks/AR-0302-agent-opendesk.md): Implement OpenDesk client adapter | root-coordination-20260906 | Support the bitclub OpenDesk CLI with its own dialect and compatibility record. | Implement a fail-closed Linux x86_64 adapter around pinned OpenDesk 0.3.5 export JSON, with telemetry containment and explicit argv privacy limitation. |
 | P1 | [AR-0310](tasks/AR-0310-provider-profile-contract.md): Define common provider profiles | quality-20260906 | Normalize one provider configuration for safe translation across heterogeneous agent adapters. | Await AR-0401 fence transfer, then wire provider module, schemas, fixtures, adapter interface, and full gates. |
 | P1 | [AR-0401](tasks/AR-0401-engineering-workloads.md): Implement original engineering workloads | replay-20260906 | Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API. | Await independent immutable review of clean signed successor 6f80867; publish only after approval and exact-base recheck, then require x86_64/aarch64 exact-head CI. |
@@ -570,11 +569,12 @@ flowchart LR
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Evaluate maintenance, licenses and reproducibility before integration. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (19)
+### Done (20)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0001](tasks/AR-0001-repository-bootstrap.md): Bootstrap public repositories | Unclaimed | Establish both public MIT repositories, Rust workspace, coordination reuse and evidence-backed plans. | No action; foundation verified. Begin AR-0002, AR-0003, AR-0101, AR-0501 or AR-0701 through the coordinator. |
+| P0 | [AR-0105](tasks/AR-0105-sandbox-test-portability.md): Repair sandbox test target portability | Unclaimed | Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work. | Release AR-0105 done after repaired exact-main local/hosted/state validation. |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Unclaimed | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. |
 | P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Unclaimed | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. |
 | P1 | [AR-0004](tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Unclaimed | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. |

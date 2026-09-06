@@ -2,7 +2,7 @@
 {
   "branch": "fix/sandbox-test-portability",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T00:04:41+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0103"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "fix/sandbox-test-portability",
   "observed_dirty": 0,
   "observed_head": "23035acde688df67aee86b1373b3b1aa87b3b68d",
-  "owner": "contracts-20260906",
+  "owner": "",
   "plan": "../plans/AR-0105.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Repair sandbox test target portability",
-  "updated_at": "2026-09-06T22:23:38+00:00",
+  "updated_at": "2026-09-06T22:23:49+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-test-portability"
 }
 ---
@@ -285,3 +285,8 @@ Implementation has not started. Read the linked plan before claiming.
   workflow-dispatch exact-main reruns passed: Rust 34063766870 x86_64/aarch64, quality 34063737973;
   formal push run 34063685531 passed Kani and x86_64/aarch64 Loom/state models. Local/remote/origin
   main equal 23035ac, signature/DCO pass, worktree clean, live doctor green.
+
+- 2026-09-06T22:23:49+00:00: Completed after reviewed candidate eea3d20, PR #18, exact-head green
+  CI, signed+DCO merge repair 23035ac with identical reviewed tree, fresh external-target postmerge
+  native regressions, exact-main green Rust/formal/quality runs, synchronized refs, clean worktree
+  and live doctor.
