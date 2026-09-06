@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Specify typed agent, workload, collector, runtime and result contracts before parallel implementations.",
-  "task_revision": 122,
+  "task_revision": 123,
   "title": "Freeze versioned extension and result contracts",
-  "updated_at": "2026-09-06T16:31:01+00:00",
+  "updated_at": "2026-09-06T16:31:03+00:00",
   "worktree_key": "agent-systems-benchmark-extension-contracts"
 }
 ---
@@ -399,3 +399,6 @@ Implementation has not started. Read the linked plan before claiming.
   exact base 38ceb335: Repository quality run 34045610457 and Rust verification run 34045610466,
   including native ubuntu-24.04 x86_64 and ubuntu-24.04-arm aarch64. GitHub reports PR mergeable;
   local branch, origin feature ref and PR head are byte-identical, and worktree is clean.
+
+- 2026-09-06T16:31:03+00:00: Recorded command exit 0; command argv SHA-256
+  0bbaa96c8881366fe9a10b9275ea311f9da1674c716f02690b204a6fb414a423.
