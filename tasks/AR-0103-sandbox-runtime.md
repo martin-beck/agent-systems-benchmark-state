@@ -7,7 +7,7 @@
     "AR-0102"
   ],
   "id": "AR-0103",
-  "next_action": "Await independent immutable-head re-review and exact-head CI for PR #10 at 7e764d8; rebase only on explicit coordinator handoff. Do not merge or release.",
+  "next_action": "Await independent immutable-head re-review and exact-head CI for PR #10 at cf43bac; keep PR base unchanged and do not rebase, merge or release.",
   "observed_branch": "feature/sandbox-runtime",
   "observed_dirty": 0,
   "observed_head": "cf43bac877af8426792e2d0df8276235bd97e7f8",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 258,
+  "task_revision": 259,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T19:37:46+00:00",
+  "updated_at": "2026-09-06T19:38:04+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
@@ -761,3 +761,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T19:37:46+00:00: Recorded command exit 0; command argv SHA-256
   457f007c86d4ee2a0334e98450e733a8b1c48d3a4f695080f47f295ec1789130.
+
+- 2026-09-06T19:38:04+00:00: Failed 7e764d8 policy run 34055198399 confirmed ETXTBSY arose only from
+  direct execution of generated fake systemctl scripts under hosted coverage; both Rust jobs were
+  green. Changed conclusion: serialization and atomic rename alone were insufficient on the hosted
+  filesystem. Signed+DCO cf43bac uses a cfg(test)-only ToolPin interpreter path so fake scripts are
+  read by immutable /bin/sh; production, integration and release pins remain direct. Five
+  consecutive instrumented runtime runs and the complete exact-tree suite passed locally; sandbox.rs
+  coverage is 95.15% regions and 97.55% lines. Clean tree, zero residual scopes/leases. Exact-head
+  runs 34055485257 and 34055485275 started.
