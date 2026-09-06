@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist manifests, event streams, artifact hashes and recoverable execution intentions.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Implement durable run storage and recovery",
-  "updated_at": "2026-09-06T17:00:14+00:00",
+  "updated_at": "2026-09-06T17:00:18+00:00",
   "worktree_key": "agent-systems-benchmark-durable-results"
 }
 ---
@@ -151,3 +151,6 @@ Implementation has not started. Read the linked plan before claiming.
   serialization/artifacts, private modes, independent-writer locking, invalid transitions, stale
   attempts, and conservative running recovery. Limits: local Linux fsync and same-filesystem rename
   semantics remain environmental assumptions.
+
+- 2026-09-06T17:00:18+00:00: Recorded command exit 1; command argv SHA-256
+  cced953ed5d4b28a9a249ea5df47791ca95331473c4a817b2eeda844b0a79c21.
