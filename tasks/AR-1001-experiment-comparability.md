@@ -10,17 +10,17 @@
   "id": "AR-1001",
   "next_action": "Create focused signed candidate after final exact-tree privacy, schema-generation, and scope checks; then run committed-tree policy gates for immutable coordinator review.",
   "observed_branch": "feature/experiment-comparability",
-  "observed_dirty": 16,
-  "observed_head": "9543a3297dd9d0ca93c802bb204b099ac1df569b",
+  "observed_dirty": 0,
+  "observed_head": "d051c5eeff2353d25c9490170f5b81fe527ab6a2",
   "owner": "quality-20260906",
   "plan": "../plans/AR-1001.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make every comparison content-addressed and explicit about agent, model, workload and platform confounders.",
-  "task_revision": 86,
+  "task_revision": 87,
   "title": "Define experiment identity and comparability",
-  "updated_at": "2026-09-06T21:04:39+00:00",
+  "updated_at": "2026-09-06T21:04:58+00:00",
   "worktree_key": "agent-systems-benchmark-experiment-comparability"
 }
 ---
