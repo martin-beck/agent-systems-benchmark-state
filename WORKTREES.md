@@ -11,8 +11,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 8, ahead 0 |
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `51daeb8608e5` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `748537c25e3a` | 0 | behind 18, ahead 0 |
-| `agent-systems-benchmark-replay-cassettes` | `feature/replay-cassettes` | `e6a81e8644c6` | 2 | behind 0, ahead 0 |
-| changed files | - | - | - | `Cargo.toml`, `crates/asb-replay/` |
+| `agent-systems-benchmark-replay-cassettes` | `feature/replay-cassettes` | `e6a81e8644c6` | 3 | behind 0, ahead 0 |
+| changed files | - | - | - | `Cargo.lock`, `Cargo.toml`, `crates/asb-replay/` |
 | `agent-systems-benchmark-replay-evaluation` | `feature/replay-evaluation` | `3d04a2d5a3b3` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `5c9b79b2a25e` | 1 | behind 3, ahead 0 |
 | changed files | - | - | - | `crates/asb-analysis/` |
