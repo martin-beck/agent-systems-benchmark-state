@@ -277,7 +277,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0103](tasks/AR-0103-sandbox-runtime.md): Implement isolated execution and resource leases | contracts-20260906 | Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets. | Amend the focused signed DCO candidate with bounded force-kill scope cleanup, rerun exact-tree full quality/privacy/supply-chain gates, publish PR, and await immutable-head review/CI. |
+| P1 | [AR-0103](tasks/AR-0103-sandbox-runtime.md): Implement isolated execution and resource leases | contracts-20260906 | Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets. | Monitor PR #10 exact head a2ebac54 through x86_64, aarch64 and quality CI; investigate failures and await independent immutable-head review. Do not merge or release. |
 | P1 | [AR-0201](tasks/AR-0201-portable-metrics.md): Collect portable system and session metrics | quality-20260906 | Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling. | Await coordinator transfer of serialized Cargo workspace/lock fence; then integrate crate membership on current main, rerun exact-workspace/full quality gates, publish PR, and obtain immutable review. |
 | P1 | [AR-0503](tasks/AR-0503-strict-replay.md): Implement strict provider response replay | replay-20260906 | Serve local recorded responses while real agent and tools execute. | Apply strict replay service patch through a stable hashed patch artifact, then add focused provider/session/TCP negative tests; root Cargo files remain untouched. |
 

@@ -7,7 +7,7 @@
     "AR-0102"
   ],
   "id": "AR-0103",
-  "next_action": "Amend the focused signed DCO candidate with bounded force-kill scope cleanup, rerun exact-tree full quality/privacy/supply-chain gates, publish PR, and await immutable-head review/CI.",
+  "next_action": "Monitor PR #10 exact head a2ebac54 through x86_64, aarch64 and quality CI; investigate failures and await independent immutable-head review. Do not merge or release.",
   "observed_branch": "feature/sandbox-runtime",
   "observed_dirty": 0,
   "observed_head": "a2ebac54d8ea8d2337b1a73ac3ac4fccfbd4c581",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 130,
+  "task_revision": 131,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T18:45:49+00:00",
+  "updated_at": "2026-09-06T18:46:22+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
@@ -405,3 +405,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T18:45:49+00:00: Recorded command exit 0; command argv SHA-256
   517cb574cd20f2d084c6bff13b82c1dfe9f3b54e3e74bf78bde255aad6780a4d.
+
+- 2026-09-06T18:46:22+00:00: Rebased once after serialized integrations onto exact signed product
+  main c9e3653; range-diff is unchanged from reviewed local candidate, and new exact signed+DCO head
+  is a2ebac54d8ea8d2337b1a73ac3ac4fccfbd4c581. Full exact-tree workspace build/test/doc/coverage,
+  real native sandbox suite, dependency audit/deny, analyzers, Gitleaks, commit/repository policy
+  and every failure fixture passed; tree clean with zero residual scopes/processes/leases. Published
+  PR #10. Hosted exact-head runs 34052743817 and 34052743886 are in progress.
