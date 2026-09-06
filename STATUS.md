@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**49 ARs tracked** across 4 active status categories.
+**49 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 29 |
 | **Future** | Deferred roadmap work | 0 |
@@ -61,7 +61,7 @@ flowchart LR
     end
     subgraph series_04["04 - Live measurement"]
         direction TB
-        AR_0401["AR-0401 - Open"]:::status_open
+        AR_0401["AR-0401 - In progress"]:::status_in_progress
         AR_0402["AR-0402 - Planned"]:::status_planned
         AR_0403["AR-0403 - Planned"]:::status_planned
         AR_0404["AR-0404 - Planned"]:::status_planned
@@ -298,19 +298,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0204](tasks/AR-0204-capacity-sweeps.md): Implement capacity sweeps and arrival scheduling | contracts-20260906 | Run repeated closed-loop and open-loop experiments with bounded concurrency. | Implement scheduler from fixed manifests and monotonic clock abstraction. |
 | P1 | [AR-0301](tasks/AR-0301-agent-opencode.md): Implement OpenCode client adapter | root-coordination-20260906 | Run pinned OpenCode through its structured supported interfaces. | Create focused signed+DCO candidate, run commit-policy and exact-tree checks, publish PR, then obtain immutable independent review and exact-head CI before integration. |
+| P1 | [AR-0401](tasks/AR-0401-engineering-workloads.md): Implement original engineering workloads | replay-20260906 | Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API. | Implement small offline fixtures and common workload lifecycle. |
 | P1 | [AR-1001](tasks/AR-1001-experiment-comparability.md): Define experiment identity and comparability | quality-20260906 | Make every comparison content-addressed and explicit about agent, model, workload and platform confounders. | Rebase once after AR-0301 integration, take transferred Cargo/schema fence, wire modules, generate checked-in schema and matched/confounded fixtures, then run full gates. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0401](tasks/AR-0401-engineering-workloads.md): Implement original engineering workloads | Unclaimed | Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API. | Implement small offline fixtures and common workload lifecycle. |
 
 ### Planned (29)
 
