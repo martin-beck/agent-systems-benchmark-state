@@ -2,7 +2,7 @@
 {
   "branch": "feature/agent-opendesk",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-06T23:12:38+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0102"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/agent-opendesk",
   "observed_dirty": 0,
   "observed_head": "8eb99d3c72358ec2666ef2401cb01331a1ac48a9",
-  "owner": "root-coordination-20260906",
+  "owner": "",
   "plan": "../plans/AR-0302.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Support the bitclub OpenDesk CLI with its own dialect and compatibility record.",
-  "task_revision": 168,
+  "task_revision": 169,
   "title": "Implement OpenDesk client adapter",
-  "updated_at": "2026-09-06T22:50:26+00:00",
+  "updated_at": "2026-09-06T22:50:38+00:00",
   "worktree_key": "agent-systems-benchmark-agent-opendesk"
 }
 ---
@@ -516,3 +516,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T22:50:26+00:00: Recorded command exit 0; command argv SHA-256
   d28e55c98b7df61a56003113dd5aa3b4ca764eaddd5a74a74111ff1c0c2fb434.
+
+- 2026-09-06T22:50:38+00:00: Done after independent immutable approval of 8eb99d3, exact-head PR 19
+  CI, signed+DCO local merge 3cfb871 and synchronized public main. PR workflows 34064855511,
+  34064855578 and 34064855632 all passed; exact merge push workflows 34065066261, 34065066295 and
+  34065066283 all passed. Post-merge fmt/clippy/full workspace tests/repository policy and the real
+  pinned OpenDesk journey passed with external targets. Supported claim remains pinned OpenDesk
+  0.3.5 on native Linux x86_64 with cancellation; secret prompts are unsupported because upstream
+  uses argv, proxy controls are defense in depth, and source MulanPSL-2.0 was inspected but the npm
+  artifact omits license text so ASB does not redistribute it.
