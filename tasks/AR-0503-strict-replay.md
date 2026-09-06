@@ -8,7 +8,7 @@
     "AR-0102"
   ],
   "id": "AR-0503",
-  "next_action": "Claim after a fresh reconciliation, then implement strict matching and streaming with explicit per-dialect capabilities.",
+  "next_action": "Apply strict replay service patch through a stable hashed patch artifact, then add focused provider/session/TCP negative tests; root Cargo files remain untouched.",
   "observed_branch": "feature/strict-replay",
   "observed_dirty": 0,
   "observed_head": "265d811b765e2300510445bfb7abf59ae5a0604f",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Serve local recorded responses while real agent and tools execute.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Implement strict provider response replay",
-  "updated_at": "2026-09-06T18:32:24+00:00",
+  "updated_at": "2026-09-06T18:33:00+00:00",
   "worktree_key": "agent-systems-benchmark-strict-replay"
 }
 ---
@@ -37,3 +37,10 @@ Dependencies AR-0102 and AR-0502 are done. Read the linked plan and claim after 
 
 - 2026-09-06T18:32:24+00:00: Recorded command exit 1; command argv SHA-256
   d9827c44f840f242474eda4bf3a75fe589d49cb2bf433de58bdbef8b9b8c60e0.
+
+- 2026-09-06T18:33:00+00:00: Initial implementation patch command failed before modifying the
+  product: shell quoting terminated the apply_patch heredoc inside bash -lc, apply_patch rejected
+  the incomplete patch, and subsequent patch lines were interpreted as commands. Worktree remains
+  clean at base. To preserve transparent provenance and avoid executable stdin, the retry will use a
+  stable patch artifact under /srv/data/projects/.asb-local with its SHA-256 recorded before
+  application through handoffctl run.
