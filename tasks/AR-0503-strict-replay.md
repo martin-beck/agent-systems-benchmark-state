@@ -10,7 +10,7 @@
   "id": "AR-0503",
   "next_action": "Apply strict replay service patch through a stable hashed patch artifact, then add focused provider/session/TCP negative tests; root Cargo files remain untouched.",
   "observed_branch": "feature/strict-replay",
-  "observed_dirty": 3,
+  "observed_dirty": 5,
   "observed_head": "265d811b765e2300510445bfb7abf59ae5a0604f",
   "owner": "replay-20260906",
   "plan": "../plans/AR-0503.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Serve local recorded responses while real agent and tools execute.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Implement strict provider response replay",
-  "updated_at": "2026-09-06T18:36:28+00:00",
+  "updated_at": "2026-09-06T18:39:04+00:00",
   "worktree_key": "agent-systems-benchmark-strict-replay"
 }
 ---
