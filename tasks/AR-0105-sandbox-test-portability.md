@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Repair sandbox test target portability",
-  "updated_at": "2026-09-06T21:24:56+00:00",
+  "updated_at": "2026-09-06T21:25:00+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-test-portability"
 }
 ---
@@ -95,3 +95,6 @@ Implementation has not started. Read the linked plan before claiming.
   another test creates it. That path is outside current AR ownership; it was not edited or masked,
   and the empty residual target directory was removed. Clippy typo attempts and exact outcomes are
   retained in wrapper evidence.
+
+- 2026-09-06T21:25:00+00:00: Recorded command exit 0; command argv SHA-256
+  b6058f98fd23577b6803e77af4eb661df17e2c37e924329ba58040dfdc78180f.
