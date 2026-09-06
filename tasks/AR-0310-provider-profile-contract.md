@@ -11,16 +11,16 @@
   "next_action": "Complete pinned Kani proof in same-drive cache, re-review exact candidate, then request immutable coordinator review.",
   "observed_branch": "feature/provider-profile-contract",
   "observed_dirty": 0,
-  "observed_head": "b73c920852dad0e42cc7cf8000827c09d8edbf04",
+  "observed_head": "3f9edc3305c13f3fb9b5555c6cdfa7c4e2bbd5ce",
   "owner": "quality-20260906",
   "plan": "../plans/AR-0310.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Normalize one provider configuration for safe translation across heterogeneous agent adapters.",
-  "task_revision": 109,
+  "task_revision": 110,
   "title": "Define common provider profiles",
-  "updated_at": "2026-09-06T23:42:57+00:00",
+  "updated_at": "2026-09-06T23:44:08+00:00",
   "worktree_key": "agent-systems-benchmark-provider-profile-contract"
 }
 ---
