@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use bounded proofs and model tests for safety-critical domain logic.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "Prove critical state and concurrency invariants",
-  "updated_at": "2026-09-06T19:53:22+00:00",
+  "updated_at": "2026-09-06T19:54:36+00:00",
   "worktree_key": "agent-systems-benchmark-formal-assurance"
 }
 ---
@@ -248,3 +248,6 @@ plan and claim after a fresh reconciliation.
   through the wrapper. This is a test-harness portability/cleanup finding for coordinator follow-up,
   not an AR-0901 product failure. Rerun will use the documented in-worktree target, still under
   /srv/data/projects.
+
+- 2026-09-06T19:54:36+00:00: Recorded command exit 0; command argv SHA-256
+  2034eda2aae96674a5cd67f96527dd39775b8ac3109b01b3bf1e13c377b63f07.
