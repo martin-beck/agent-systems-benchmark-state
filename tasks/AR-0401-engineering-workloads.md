@@ -10,7 +10,7 @@
   "id": "AR-0401",
   "next_action": "Repair scratch-root boundary, rerun exact full gates, and submit a signed successor to superseded 3bef7cf for independent review.",
   "observed_branch": "feature/engineering-workloads",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "23976ad3bb00bd10ba7c605ea33d880bf975ffab",
   "owner": "replay-20260906",
   "plan": "../plans/AR-0401.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Implement original engineering workloads",
-  "updated_at": "2026-09-06T22:08:28+00:00",
+  "updated_at": "2026-09-06T22:08:32+00:00",
   "worktree_key": "agent-systems-benchmark-engineering-workloads"
 }
 ---
