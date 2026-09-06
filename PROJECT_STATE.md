@@ -11,6 +11,7 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #10 | `feature/sandbox-runtime@d8601c22982f` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | runtime: isolate untrusted processes |
+| #13 | `feature/agent-opencode@6545c9dd4f2f` | `main` | UNKNOWN | - | agents: add pinned OpenCode adapter |
 
 ## Recent workflows
 
