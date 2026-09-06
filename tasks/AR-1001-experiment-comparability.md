@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make every comparison content-addressed and explicit about agent, model, workload and platform confounders.",
-  "task_revision": 125,
+  "task_revision": 126,
   "title": "Define experiment identity and comparability",
-  "updated_at": "2026-09-06T21:23:20+00:00",
+  "updated_at": "2026-09-06T21:25:02+00:00",
   "worktree_key": "agent-systems-benchmark-experiment-comparability"
 }
 ---
@@ -374,3 +374,6 @@ Implementation has not started. Read the linked plan before claiming.
   repository/signature/DCO/privacy/workflow/supply-chain/failure/platform gates, formal tests, five
   Kani proofs and deliberate counterexample all reran green; worktree and external-cache audit are
   clean.
+
+- 2026-09-06T21:25:02+00:00: Recorded command exit 0; command argv SHA-256
+  371391ca00337c945cec580a0f68f41a8df75c7ecc8775cab2e13d9125bab4e2.
