@@ -6,6 +6,6 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | --- | --- | --- | ---: | --- |
 | `agent-systems-benchmark` | `main` | `c9568e8603e3` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `c9568e8603e3` | 0 | behind 0, ahead 0 |
-| `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `c9568e8603e3` | 4 | behind 0, ahead 0 |
-| changed files | - | - | - | `config/`, `deny.toml`, `tests/`, `tools/` |
+| `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `c9568e8603e3` | 6 | behind 0, ahead 0 |
+| changed files | - | - | - | `.github/actionlint.yaml`, `.github/workflows/quality.yml`, `config/`, `deny.toml`, `tests/`, `tools/` |
 | `agent-systems-benchmark-replay-evaluation` | `feature/replay-evaluation` | `c9568e8603e3` | 0 | behind 0, ahead 0 |
