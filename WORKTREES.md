@@ -6,7 +6,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | --- | --- | --- | ---: | --- |
 | `agent-systems-benchmark` | `main` | `b7e9078d53a4` | 0 | behind 2, ahead 0 |
 | `agent-systems-benchmark-agent-opencode` | `feature/agent-opencode` | `dfb0d548bf75` | 0 | behind 6, ahead 0 |
-| `agent-systems-benchmark-agent-opendesk` | `feature/agent-opendesk` | `011a8f51fcdc` | 1 | behind 0, ahead 1 |
+| `agent-systems-benchmark-agent-opendesk` | `feature/agent-opendesk` | `011a8f51fcdc` | 1 | behind 1, ahead 2 |
 | changed files | - | - | - | `README.md` |
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `b0b2ae1a9ad5` | 0 | behind 5, ahead 1 |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 60, ahead 0 |
@@ -24,6 +24,6 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-replay-evaluation` | `feature/replay-evaluation` | `3d04a2d5a3b3` | 0 | behind 55, ahead 0 |
 | `agent-systems-benchmark-replay-pacing` | `feature/replay-pacing` | `73d28a431c78` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-sandbox-runtime` | `feature/sandbox-runtime` | `ac4a23599649` | 0 | behind 12, ahead 0 |
-| `agent-systems-benchmark-sandbox-test-portability` | `fix/sandbox-test-portability` | `7f308cca7038` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-sandbox-test-portability` | `fix/sandbox-test-portability` | `7f308cca7038` | 0 | behind 1, ahead 1 |
 | `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `3bcfd85dedd3` | 0 | behind 37, ahead 0 |
 | `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `410ecc95b80e` | 0 | behind 25, ahead 0 |
