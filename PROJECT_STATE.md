@@ -2,8 +2,8 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `311c128649610df258b2961c9ca623fb8f258307`
-- Local origin/main: `311c128649610df258b2961c9ca623fb8f258307`
+- Product remote main: `941ea6fff5eef30b126d3bcc5cc5d4117146de27`
+- Local origin/main: `941ea6fff5eef30b126d3bcc5cc5d4117146de27`
 - Primary worktree head: `941ea6fff5eef30b126d3bcc5cc5d4117146de27`
 
 ## Open pull requests
