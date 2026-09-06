@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Store versioned provider requests, event streams, causal IDs and integrity metadata.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Implement immutable response cassette format",
-  "updated_at": "2026-09-06T17:13:08+00:00",
+  "updated_at": "2026-09-06T17:13:10+00:00",
   "worktree_key": "agent-systems-benchmark-replay-cassettes"
 }
 ---
@@ -37,3 +37,6 @@ Implementation has not started. Read the linked plan before claiming.
   integration remains coordinator-serialized behind active AR-0104/AR-0102 ownership.
 
 - 2026-09-06T17:12:54+00:00: Claimed by replay-20260906.
+
+- 2026-09-06T17:13:10+00:00: Recorded command exit 0; command argv SHA-256
+  682c950f11af128051b34c99dae2d85c8955ef9de61f618df74e1ae959c8a5da.
