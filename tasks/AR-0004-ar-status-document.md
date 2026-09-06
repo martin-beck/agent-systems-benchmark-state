@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Render every AR, status, and dependency as an accessible visual state document.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Generate the visual AR status document",
-  "updated_at": "2026-09-06T17:35:49+00:00",
+  "updated_at": "2026-09-06T17:36:15+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-status-document"
 }
 ---
@@ -93,3 +93,6 @@ easy-to-scan document in the public state repository.
   514f8a4c76546aa786420bf28594e3d638adc99c5522ce48996e3ad4531c27a9.
 
 - 2026-09-06T17:35:49+00:00: Heartbeat by quality-20260906.
+
+- 2026-09-06T17:36:15+00:00: Recorded command exit 0; command argv SHA-256
+  e2e8afd98699c2e7757c90dbfae7de9d341a2f66923765d20375c320ed67c6a9.
