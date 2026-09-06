@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 4 |
+| **In progress** | Claimed work with a live lease | 3 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 54 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 22 |
+| **Done** | Accepted, integrated, and durably verified | 23 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -47,7 +47,7 @@ flowchart LR
         AR_0201["AR-0201 - Done"]:::status_done
         AR_0202["AR-0202 - Planned"]:::status_planned
         AR_0203["AR-0203 - Done"]:::status_done
-        AR_0204["AR-0204 - In progress"]:::status_in_progress
+        AR_0204["AR-0204 - Done"]:::status_done
     end
     subgraph series_03["03 - Adapters and workloads"]
         direction TB
@@ -506,11 +506,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0204](tasks/AR-0204-capacity-sweeps.md): Implement capacity sweeps and arrival scheduling | contracts-20260906 | Run repeated closed-loop and open-loop experiments with bounded concurrency. | Await coordinator postmerge local validation/state doctor confirmation before releasing AR-0204. |
 | P1 | [AR-0303](tasks/AR-0303-agent-aider.md): Implement aider client adapter | root-coordination-20260906 | Support unattended aider editing with bounded input, output and repository changes. | Await independent immutable-head review of a0943e94; repair findings before branch publication. |
 | P1 | [AR-0304](tasks/AR-0304-agent-codex.md): Implement Codex client adapter | replay-20260906 | Use Codex noninteractive structured events or app-server with declared capability boundaries. | Add self-contained real Codex fixture test, then request shared registration fence. |
 | P1 | [AR-0310](tasks/AR-0310-provider-profile-contract.md): Define common provider profiles | quality-20260906 | Normalize one provider configuration for safe translation across heterogeneous agent adapters. | Await AR-0401 fence transfer, then wire provider module, schemas, fixtures, adapter interface, and full gates. |
@@ -574,7 +573,7 @@ flowchart LR
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Evaluate maintenance, licenses and reproducibility before integration. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (22)
+### Done (23)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -590,6 +589,7 @@ flowchart LR
 | P1 | [AR-0104](tasks/AR-0104-durable-results.md): Implement durable run storage and recovery | Unclaimed | Persist manifests, event streams, artifact hashes and recoverable execution intentions. | Await exact-head PR 6 CI and independent immutable-head review; repair findings before coordinator integration. |
 | P1 | [AR-0201](tasks/AR-0201-portable-metrics.md): Collect portable system and session metrics | Unclaimed | Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling. | Run final state reconcile/live doctor/full validation, then release AR-0201 done and explicitly return the Cargo workspace/lock fence. |
 | P1 | [AR-0203](tasks/AR-0203-statistical-analysis.md): Implement statistical and SLO assessment | Unclaimed | Compute latency distributions, quality/throughput intervals and evidence-aware SLO results. | Create and push reviewed signed+DCO no-ff merge of exact head 3bcfd85; verify PR merge identity, then run exact-main local and hosted post-merge checks. |
+| P1 | [AR-0204](tasks/AR-0204-capacity-sweeps.md): Implement capacity sweeps and arrival scheduling | Unclaimed | Run repeated closed-loop and open-loop experiments with bounded concurrency. | Await coordinator postmerge local validation/state doctor confirmation before releasing AR-0204. |
 | P1 | [AR-0301](tasks/AR-0301-agent-opencode.md): Implement OpenCode client adapter | Unclaimed | Run pinned OpenCode through its structured supported interfaces. | Await exact PR #13 head dfb0d54 hosted CI and immutable independent review; integrate only if both are green. |
 | P1 | [AR-0302](tasks/AR-0302-agent-opendesk.md): Implement OpenDesk client adapter | Unclaimed | Support the bitclub OpenDesk CLI with its own dialect and compatibility record. | Publish approved 8eb99d3, require exact-head CI and immutable review, integrate only signed+DCO green head, then run post-merge verification. |
 | P1 | [AR-0401](tasks/AR-0401-engineering-workloads.md): Implement original engineering workloads | Unclaimed | Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API. | Await coordinator integration authorization for exact reviewed green PR #20 head 41ffc6e; retain Cargo fence, then signed no-ff merge and complete exact-main post-merge validation. |

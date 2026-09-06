@@ -2,7 +2,7 @@
 {
   "branch": "feature/capacity-sweeps",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T02:40:15+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0102",
     "AR-0103",
@@ -16,15 +16,15 @@
   "observed_branch": "feature/capacity-sweeps",
   "observed_dirty": 0,
   "observed_head": "0717d4acd16856d8fad593efdfa9007ad32c1c3f",
-  "owner": "contracts-20260906",
+  "owner": "",
   "plan": "../plans/AR-0204.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Run repeated closed-loop and open-loop experiments with bounded concurrency.",
-  "task_revision": 187,
+  "task_revision": 188,
   "title": "Implement capacity sweeps and arrival scheduling",
-  "updated_at": "2026-09-06T23:40:15+00:00",
+  "updated_at": "2026-09-06T23:42:06+00:00",
   "worktree_key": "agent-systems-benchmark-capacity-sweeps"
 }
 ---
@@ -585,3 +585,11 @@ Implementation has not started. Read the linked plan before claiming.
   live state doctor; do not release or select next work yet.
 
 - 2026-09-06T23:40:15+00:00: Heartbeat by contracts-20260906.
+
+- 2026-09-06T23:42:06+00:00: Merged reviewed signed+DCO head 0717d4a through PR 21 as signed merge
+  311c128649610df258b2961c9ca623fb8f258307. Exact-main CI 34067451296 formal, 34067451293 quality,
+  34067451294 Rust x86_64/aarch64 all successful; post-merge fmt, clippy, workspace tests, release
+  build, formal tests and repository policy green. State reconcile, generated views, live doctor,
+  schema and 37-test branch coverage validation green at 97 percent. Scheduler-specific coverage
+  remains disclosed at 87.75 percent lines and custom clock methods are contractually required to
+  return promptly.
