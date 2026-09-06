@@ -8,7 +8,7 @@
     "AR-0102"
   ],
   "id": "AR-0201",
-  "next_action": "Await repeat independent immutable-head review of repaired PR #12 exact a0f67bea1ffe50fd80bc42009761a4388798603a; all local and exact-head hosted checks are green. Retain Cargo workspace/lock fence.",
+  "next_action": "Run final state reconcile/live doctor/full validation, then release AR-0201 done and explicitly return the Cargo workspace/lock fence.",
   "observed_branch": "feature/portable-metrics",
   "observed_dirty": 0,
   "observed_head": "a0f67bea1ffe50fd80bc42009761a4388798603a",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling.",
-  "task_revision": 157,
+  "task_revision": 158,
   "title": "Collect portable system and session metrics",
-  "updated_at": "2026-09-06T19:11:24+00:00",
+  "updated_at": "2026-09-06T19:11:55+00:00",
   "worktree_key": "agent-systems-benchmark-portable-metrics"
 }
 ---
@@ -439,3 +439,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T19:11:24+00:00: Recorded command exit 0; command argv SHA-256
   f4560526b918265a3c6f7f0e8afac4641baddf24ac995911368e3ee633965b52.
+
+- 2026-09-06T19:11:55+00:00: Integrated independently approved PR #12 as signed+DCO no-ff merge
+  ef1a6578600b45f4afb4dd414131f9ffd2ddd01f (tree 250a75073776865cd6c8b6168906e624472fdedd; parents
+  exact base c9e3653 and approved head a0f67bea), pushed with exact base lease. PR reports merged at
+  that commit. Postmerge exact-main local full workspace fmt/clippy/tests/docs/release, 96.84%
+  workspace/95.64% metrics coverage, audit/deny, actionlint/zizmor/Gitleaks/policy, deliberate
+  failures and platform validation all pass. Exact-merge hosted quality 34054018237 and Rust
+  x86_64/aarch64 34054018397 are green. Primary main and feature worktrees are clean and
+  synchronized.
