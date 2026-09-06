@@ -14,7 +14,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `748537c25e3a` | 0 | behind 22, ahead 0 |
 | `agent-systems-benchmark-replay-cassettes` | `feature/replay-cassettes` | `cd88f5703fb3` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-replay-evaluation` | `feature/replay-evaluation` | `3d04a2d5a3b3` | 0 | behind 14, ahead 0 |
-| `agent-systems-benchmark-sandbox-runtime` | `feature/sandbox-runtime` | `305d6dfa0f1d` | 0 | behind 4, ahead 1 |
+| `agent-systems-benchmark-sandbox-runtime` | `feature/sandbox-runtime` | `dcafd1114c7c` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `3bcfd85dedd3` | 0 | behind 0, ahead 4 |
 | `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `265d811b765e` | 5 | behind 0, ahead 0 |
 | changed files | - | - | - | `crates/asb-replay/README.md`, `crates/asb-replay/src/cassette.rs`, `crates/asb-replay/src/lib.rs`, `crates/asb-replay/src/service.rs`, `crates/asb-replay/tests/strict_replay.rs` |
