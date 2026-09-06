@@ -2,7 +2,7 @@
 {
   "branch": "feature/formal-assurance",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-06T21:35:13+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/formal-assurance",
   "observed_dirty": 0,
   "observed_head": "2a495a99a6576bcc747e8cf0cf5815866d0f277e",
-  "owner": "quality-20260906",
+  "owner": "",
   "plan": "../plans/AR-0901.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Use bounded proofs and model tests for safety-critical domain logic.",
-  "task_revision": 90,
+  "task_revision": 91,
   "title": "Prove critical state and concurrency invariants",
-  "updated_at": "2026-09-06T20:03:24+00:00",
+  "updated_at": "2026-09-06T20:03:45+00:00",
   "worktree_key": "agent-systems-benchmark-formal-assurance"
 }
 ---
@@ -278,3 +278,15 @@ plan and claim after a fresh reconciliation.
 
 - 2026-09-06T20:03:24+00:00: Recorded command exit 0; command argv SHA-256
   da4ea615c3f1dfa0267fae1dfc4330f78768dfa6f4209d24f2af6bfc0ad03072.
+
+- 2026-09-06T20:03:45+00:00: Independent review approved PR 14 exact head
+  2a495a99a6576bcc747e8cf0cf5815866d0f277e. Coordinator integrated it as signed+DCO no-ff merge
+  bda6bc41760a914ffc1a9305fc88422eaace302b; merge parents and tree match approved head. Post-merge
+  clean-primary local validation passed: root fmt/clippy/tests/rustdoc/release, repository policy,
+  actionlint/zizmor/Gitleaks, deny/audit, 97.18% aggregate line coverage, failure fixtures and
+  platform validators; formal metadata lock, fmt/clippy/tests, 100% model line coverage, Kani 5/5
+  harnesses with 0/2093 failed properties, deliberate 1/1 Kani counterexample, Loom/state/production
+  traces and formal deny/audit. Exact-main hosted runs all succeeded at merge head: Formal
+  34056672065, Rust x86_64/aarch64 34056672041, Quality 34056672038. Primary is clean and
+  synchronized. Recorded limits remain: Kani x86_64 only and bounded to documented finite domains;
+  Loom covers the ownership model rather than the OS; temporal crash recovery belongs to AR-0905.
