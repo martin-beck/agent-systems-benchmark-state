@@ -8,7 +8,7 @@
     "AR-0501"
   ],
   "id": "AR-0502",
-  "next_action": "Complete exact-tree provenance and privacy review, create one focused SSH-signed DCO commit, rerun commit-range policy, and report immutable candidate before PR.",
+  "next_action": "Await independent immutable-head review of candidate 6e7e6d4a813a851c57782cb651165e6a8fef193f; repair findings before any push or PR.",
   "observed_branch": "feature/replay-cassettes",
   "observed_dirty": 0,
   "observed_head": "6e7e6d4a813a851c57782cb651165e6a8fef193f",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Store versioned provider requests, event streams, causal IDs and integrity metadata.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Implement immutable response cassette format",
-  "updated_at": "2026-09-06T17:58:32+00:00",
+  "updated_at": "2026-09-06T17:58:49+00:00",
   "worktree_key": "agent-systems-benchmark-replay-cassettes"
 }
 ---
@@ -285,3 +285,17 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T17:58:32+00:00: Recorded command exit 0; command argv SHA-256
   0d3867732c07a7c633a5b5957cbea5d60dbf0aaeae6dfe5e9339a8357b1ac8f4.
+
+- 2026-09-06T17:58:49+00:00: Focused candidate is exact commit
+  6e7e6d4a813a851c57782cb651165e6a8fef193f, tree b8ce8c87e53c92f6d66eb451833e3bbc2c66c5b0, one
+  commit over exact product main/origin-main e6a81e8644c692d5b0aa84a86b385ff4da327292. Commit has
+  allowed ED25519 SSH signature for martin.beck2@gmx.de and exactly one matching Signed-off-by
+  trailer; worktree is clean and 17-path scope is Cargo workspace/lock plus crates/asb-replay only.
+  Repeated on the immutable commit: repository signature/DCO/workflow/SPDX/doc-link policy; fmt;
+  workspace all-target Clippy; workspace tests; rustdoc warnings denied; release build; coverage
+  policy (workspace 96.75%, asb-replay 97.36% lines); Gitleaks redacted full-history scan of 16
+  commits; cargo-deny and RustSec cargo-audit. All pass. Toolchain rustc/cargo 1.93.0,
+  cargo-llvm-cov 0.9.0, cargo-deny 0.20.2, cargo-audit 0.22.2; normal dependencies are exact pinned
+  manifest versions. Evidence classification: implementation tests and negative/failure fixtures,
+  not formal proof or native platform evidence. No provider/network/server/matching/pacing
+  compatibility is claimed.
