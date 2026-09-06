@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 250,
+  "task_revision": 251,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T19:34:19+00:00",
+  "updated_at": "2026-09-06T19:34:24+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
@@ -741,3 +741,6 @@ Implementation has not started. Read the linked plan before claiming.
   diagnostics. Ten parallel unit repetitions, three instrumented coverage repetitions, full
   exact-tree gates and native checks passed. Exact PR head 7e764d8 is published; runs 34055198296
   and 34055198399 are in progress. Remote main is 1621103; branch not rebased or merged.
+
+- 2026-09-06T19:34:24+00:00: Recorded command exit 0; command argv SHA-256
+  c753019cc3092abed903573f04c9697c90978405426e0acbb6a95c552d8cdb60.
