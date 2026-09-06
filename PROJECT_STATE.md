@@ -10,13 +10,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #4 | `feature/replay-evaluation@3d04a2d5a3b3` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Evaluate replay dependency candidates |
+| #4 | `feature/replay-evaluation@3d04a2d5a3b3` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Evaluate replay dependency candidates |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34045836000 | `3d04a2d5a3b3` | pull_request | Rust verification | in_progress:- |
+| 34045836000 | `3d04a2d5a3b3` | pull_request | Rust verification | completed:success |
 | 34045835936 | `3d04a2d5a3b3` | pull_request | Repository quality | completed:success |
 | 34045704998 | `3baa4f9d0a74` | push | Repository quality | completed:success |
 | 34045704995 | `3baa4f9d0a74` | push | Rust verification | completed:success |
