@@ -8,7 +8,7 @@
     "AR-1001"
   ],
   "id": "AR-0310",
-  "next_action": "Define a versioned credential-free provider profile and exact adapter capability negotiation.",
+  "next_action": "Await AR-0401 fence transfer, then wire provider module, schemas, fixtures, adapter interface, and full gates.",
   "observed_branch": "feature/provider-profile-contract",
   "observed_dirty": 1,
   "observed_head": "b7e9078d53a4a4586beb68bf56233aba206112ac",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Normalize one provider configuration for safe translation across heterogeneous agent adapters.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Define common provider profiles",
-  "updated_at": "2026-09-06T21:49:42+00:00",
+  "updated_at": "2026-09-06T21:50:06+00:00",
   "worktree_key": "agent-systems-benchmark-provider-profile-contract"
 }
 ---
@@ -109,3 +109,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T21:49:42+00:00: Recorded command exit 0; command argv SHA-256
   af548e158e179e12034a268f0a2d46f4fbb82783e4fef9cdaabdd35e8e154c31.
+
+- 2026-09-06T21:50:06+00:00: Isolated provider contract added without touching the AR-0401-fenced
+  Cargo/workspace/schema/fixture/adapter paths. Strict missing-docs compile, 7 unit tests, and
+  clippy -D warnings pass in an external same-drive harness; llvm-cov reports 97.57% regions, 99.59%
+  lines, 100% functions. Stable rustc cannot emit branch coverage because cargo-llvm-cov --branch
+  requires nightly; failure was recorded, and branch-aware full coverage remains an integration
+  gate. Initial fmt and missing scratch lock failures were corrected.
