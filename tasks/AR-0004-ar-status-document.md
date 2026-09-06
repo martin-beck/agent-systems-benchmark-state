@@ -7,16 +7,16 @@
     "AR-0002"
   ],
   "id": "AR-0004",
-  "next_action": "Implement the deterministic STATUS.md renderer, automatic mutation hooks, and visual dependency graph tests.",
+  "next_action": "Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration.",
   "owner": "quality-20260906",
   "plan": "../plans/AR-0004.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Render every AR, status, and dependency as an accessible visual state document.",
-  "task_revision": 104,
+  "task_revision": 105,
   "title": "Generate the visual AR status document",
-  "updated_at": "2026-09-06T18:02:37+00:00",
+  "updated_at": "2026-09-06T18:03:26+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-status-document"
 }
 ---
@@ -333,3 +333,14 @@ easy-to-scan document in the public state repository.
 
 - 2026-09-06T18:02:37+00:00: Recorded command exit 0; command argv SHA-256
   1c146ba57303f80739482bdc96194ade1c15f3d0864189501ebbf490fef2e6cf.
+
+- 2026-09-06T18:03:26+00:00: Published state PR 3 at signed and DCO-certified immutable head
+  eedd3119c08b7a56500f8e99bb8a08e326ccee1b. Exact-head CI run 34050441245 passed. Local Ruff, strict
+  mypy, schema, generated-view doctor, actionlint, offline pedantic zizmor, Gitleaks, signature, DCO
+  and 31 fault/race/negative tests passed with 97 percent branch coverage overall, 96 percent for
+  handoffctl and 100 percent for the renderer. Pinned Mermaid CLI 11.12.0 rendered the complete
+  44-node, 109-edge grouped graph to reviewed SVG and PNG artifacts under the shared project
+  artifacts directory. Headless GitHub viewscreen rejected both this graph and an unrelated
+  known-public Mermaid control, so no claim of successful GitHub iframe rendering is made. The
+  workflow now checks the immutable PR head instead of a synthetic merge whose concurrently changing
+  state front matter caused run 34049874952 to report a false stale STATUS.
