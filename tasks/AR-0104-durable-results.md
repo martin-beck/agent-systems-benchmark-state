@@ -7,7 +7,7 @@
     "AR-0101"
   ],
   "id": "AR-0104",
-  "next_action": "Remove the verified-clean accidental state-repository worktree, create the declared product worktree from product main, then implement atomic storage.",
+  "next_action": "Implement the atomic store and versioned run journal in the verified product worktree.",
   "observed_branch": "feature/durable-results",
   "observed_dirty": 0,
   "observed_head": "3baa4f9d0a7448e5f2e24633c230a2111c9ead86",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Persist manifests, event streams, artifact hashes and recoverable execution intentions.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Implement durable run storage and recovery",
-  "updated_at": "2026-09-06T16:36:50+00:00",
+  "updated_at": "2026-09-06T16:37:05+00:00",
   "worktree_key": "agent-systems-benchmark-durable-results"
 }
 ---
@@ -50,3 +50,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T16:36:50+00:00: Recorded command exit 0; command argv SHA-256
   a5ff9c5bba05e3c8eaf1902c94c534891b3898ae1d4392e8e0f8c2071cb0f1fe.
+
+- 2026-09-06T16:37:05+00:00: Removed only the verified-clean mistaken state worktree and its fully
+  merged accidental branch, then created the declared product worktree from product main 3baa4f9.
+  Verified public product origin, exact head, branch, and clean state before implementation.
