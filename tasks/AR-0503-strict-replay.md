@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Serve local recorded responses while real agent and tools execute.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Implement strict provider response replay",
-  "updated_at": "2026-09-06T19:14:15+00:00",
+  "updated_at": "2026-09-06T19:14:20+00:00",
   "worktree_key": "agent-systems-benchmark-strict-replay"
 }
 ---
@@ -208,3 +208,6 @@ Dependencies AR-0102 and AR-0502 are done. Read the linked plan and claim after 
   Retried with explicit project-local CARGO_HOME/RUSTUP_HOME/CARGO_TARGET_DIR/PATH and passed
   release CLI help/version/invalid-exit-2 plus generated schema byte parity on exact c20fdcc.
   Independent immutable review remains required; no merge or release authorization assumed.
+
+- 2026-09-06T19:14:20+00:00: Recorded command exit 0; command argv SHA-256
+  e23fe913aff66749dd5bd1778719c622cd9f6bb2625a093f9930fc8513a501bf.
