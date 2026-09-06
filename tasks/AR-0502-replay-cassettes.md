@@ -8,7 +8,7 @@
     "AR-0501"
   ],
   "id": "AR-0502",
-  "next_action": "Monitor PR #8 exact head cd88f5703 through x86_64, aarch64 and quality CI; investigate failures and await coordinator merge authorization.",
+  "next_action": "Complete corrected schema parity, verify exact-main hosted x86_64/aarch64 and quality runs, reconcile/live doctor, then release done.",
   "observed_branch": "feature/replay-cassettes",
   "observed_dirty": 0,
   "observed_head": "cd88f5703fb300aca18c7d46d7215c1bf6f5b8e5",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Store versioned provider requests, event streams, causal IDs and integrity metadata.",
-  "task_revision": 115,
+  "task_revision": 116,
   "title": "Implement immutable response cassette format",
-  "updated_at": "2026-09-06T18:19:42+00:00",
+  "updated_at": "2026-09-06T18:20:06+00:00",
   "worktree_key": "agent-systems-benchmark-replay-cassettes"
 }
 ---
@@ -434,3 +434,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T18:19:42+00:00: Recorded command exit 101; command argv SHA-256
   016484f99cb362c1caf39d433dc491f5e1fdd1b320a1393b32ae3a6450a2dbd5.
+
+- 2026-09-06T18:20:06+00:00: Integrated approved PR #8 as signed+DCO no-ff merge
+  265d811b765e2300510445bfb7abf59ae5a0604f and pushed exact main; GitHub reports PR merged at that
+  exact commit. Exact-main local fmt, clippy, workspace tests, rustdoc, release CLI
+  positive/negative, repository policy, actionlint, zizmor, Gitleaks, cargo-deny, cargo-audit,
+  coverage, controlled failure fixtures, and platform manifest/tests all passed; workspace line
+  coverage 96.69%, replay 97.11%. Final schema parity invocation failed because example target was
+  incorrectly named generate_schema; Cargo declared generate-cassette-schema. This is a command
+  invocation error after all substantive gates, and corrected parity is next.
