@@ -7,7 +7,7 @@
     "AR-0001"
   ],
   "id": "AR-0101",
-  "next_action": "Compile strict v1 types, generate canonical schemas/fixtures, and run conformance and negative gates.",
+  "next_action": "Run exact-tree full gates, review privacy/scope, then create signed DCO commit and PR.",
   "observed_branch": "feature/extension-contracts",
   "observed_dirty": 3,
   "observed_head": "c9568e8603e3520fb8462703fbd4ecaa1683992f",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Specify typed agent, workload, collector, runtime and result contracts before parallel implementations.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Freeze versioned extension and result contracts",
-  "updated_at": "2026-09-06T16:09:13+00:00",
+  "updated_at": "2026-09-06T16:09:17+00:00",
   "worktree_key": "agent-systems-benchmark-extension-contracts"
 }
 ---
@@ -269,3 +269,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T16:09:13+00:00: Recorded command exit 1; command SHA-256
   6e161a3bc243edc727b36a04d876fdafc241d49709ee20e4642213a8f88b8c32.
+
+- 2026-09-06T16:09:17+00:00: Reconciled and terminated stale duplicate writer session SID 1395039
+  with coordinator assistance. Preserved its useful bounded max_in_flight/InFlightRequests
+  backpressure work, completed all partial initializers/types/tests, removed a duplicate test and
+  three incompatible unreferenced stale fixtures (including embedded prompt text), and regenerated
+  schemas. Workspace tests now pass with 28 tests including real stdio interoperability and
+  fail-closed cases. Earlier event-schema generation failure was caused by the stale writer's
+  partial CallLimits edit and is resolved.
