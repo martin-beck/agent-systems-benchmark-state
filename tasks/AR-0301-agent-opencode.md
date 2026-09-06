@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned OpenCode through its structured supported interfaces.",
-  "task_revision": 108,
+  "task_revision": 109,
   "title": "Implement OpenCode client adapter",
-  "updated_at": "2026-09-06T19:43:47+00:00",
+  "updated_at": "2026-09-06T19:43:49+00:00",
   "worktree_key": "agent-systems-benchmark-agent-opencode"
 }
 ---
@@ -330,3 +330,6 @@ Dependencies AR-0101 and AR-0102 are done. Read the linked plan and claim after 
   SSE/tool/cancellation fixture. Adapter line coverage is 97.48%; region evidence is 93.24% and is
   not represented as a branch metric by this LLVM build. Negative endpoint expansion exposed and
   repaired bracketed IPv6 loopback handling.
+
+- 2026-09-06T19:43:49+00:00: Recorded command exit 0; command argv SHA-256
+  7d11b956ad42ba46760aadbd1be5b07ae89010a5f8ddc216418a52807ddfe4b6.
