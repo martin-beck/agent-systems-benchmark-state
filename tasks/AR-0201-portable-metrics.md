@@ -10,17 +10,17 @@
   "id": "AR-0201",
   "next_action": "Claim after a fresh reconciliation, then implement isolated portable collector paths without touching the serialized Cargo workspace fence.",
   "observed_branch": "feature/portable-metrics",
-  "observed_dirty": 1,
-  "observed_head": "1cd755c5758ef8f1b62d940f314eeb97d831666c",
+  "observed_dirty": 0,
+  "observed_head": "84e89e9e03903b981c328e2c16aec7b0889ef8e2",
   "owner": "quality-20260906",
   "plan": "../plans/AR-0201.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Collect portable system and session metrics",
-  "updated_at": "2026-09-06T18:30:43+00:00",
+  "updated_at": "2026-09-06T18:30:48+00:00",
   "worktree_key": "agent-systems-benchmark-portable-metrics"
 }
 ---
