@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Serve local recorded responses while real agent and tools execute.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Implement strict provider response replay",
-  "updated_at": "2026-09-06T18:44:58+00:00",
+  "updated_at": "2026-09-06T18:45:37+00:00",
   "worktree_key": "agent-systems-benchmark-strict-replay"
 }
 ---
@@ -86,3 +86,6 @@ Dependencies AR-0102 and AR-0502 are done. Read the linked plan and claim after 
 
 - 2026-09-06T18:44:58+00:00: Recorded command exit 1; command argv SHA-256
   4e4eafa471800bdbc9ca598109be667ff643bd0b5ed8402c6412fca4a9d52228.
+
+- 2026-09-06T18:45:37+00:00: Recorded command exit 101; command argv SHA-256
+  6cd8c17d32ccbb25c19459dbffeba0d58bbf01a3c777f6e315b20e0ad23c170b.
