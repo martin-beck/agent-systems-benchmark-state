@@ -10,6 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #5 | `feature/platform-manifests@dff27a9acb4f` | `main` | UNKNOWN | - | platforms: pin initial support manifests |
 
 ## Recent workflows
 
