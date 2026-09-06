@@ -11,7 +11,7 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #13 | `feature/agent-opencode@fa53386a97ab` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | agents: add pinned OpenCode adapter |
-| #15 | `feature/sandbox-runtime@28063ae8e7b3` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | test(runtime): make sandbox native fixtures target-dir independent |
+| #15 | `feature/sandbox-runtime@28063ae8e7b3` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS | test(runtime): make sandbox native fixtures target-dir independent |
 
 ## Recent workflows
 
