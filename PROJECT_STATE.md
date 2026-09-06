@@ -10,15 +10,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #20 | `feature/engineering-workloads@41ffc6eb8f1a` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS | workloads: add original offline engineering tasks |
+| #20 | `feature/engineering-workloads@41ffc6eb8f1a` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | workloads: add original offline engineering tasks |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34065861661 | `41ffc6eb8f1a` | pull_request | Rust verification | in_progress:- |
-| 34065861641 | `41ffc6eb8f1a` | pull_request | Formal assurance | in_progress:- |
-| 34065861614 | `41ffc6eb8f1a` | pull_request | Repository quality | in_progress:- |
+| 34065861661 | `41ffc6eb8f1a` | pull_request | Rust verification | completed:success |
+| 34065861641 | `41ffc6eb8f1a` | pull_request | Formal assurance | completed:success |
+| 34065861614 | `41ffc6eb8f1a` | pull_request | Repository quality | completed:success |
 | 34065066295 | `3cfb8716da8c` | push | Repository quality | completed:success |
 | 34065066283 | `3cfb8716da8c` | push | Rust verification | completed:success |
 | 34065066261 | `3cfb8716da8c` | push | Formal assurance | completed:success |
