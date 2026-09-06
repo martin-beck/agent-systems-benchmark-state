@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make every comparison content-addressed and explicit about agent, model, workload and platform confounders.",
-  "task_revision": 128,
+  "task_revision": 129,
   "title": "Define experiment identity and comparability",
-  "updated_at": "2026-09-06T21:27:15+00:00",
+  "updated_at": "2026-09-06T21:30:50+00:00",
   "worktree_key": "agent-systems-benchmark-experiment-comparability"
 }
 ---
@@ -387,3 +387,6 @@ Implementation has not started. Read the linked plan before claiming.
   checks succeeded: quality 34061016186; Rust x86_64 and aarch64 34061016130; formal Kani plus
   x86_64/aarch64 Loom 34061016128. Remote branch, local head, signatures, DCO, base, clean tree, and
   privacy scope remain exact.
+
+- 2026-09-06T21:30:50+00:00: Recorded command exit 0; command argv SHA-256
+  9c0eb5fdd9e70fc5883b1bc6f8c6accd339dbba063c78aac0a06999b193a7e5f.
