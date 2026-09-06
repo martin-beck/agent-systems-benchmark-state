@@ -9,7 +9,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `5fc5616b931b` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 55, ahead 0 |
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 44, ahead 0 |
-| `agent-systems-benchmark-engineering-workloads` | `feature/engineering-workloads` | `68f313fcb4fa` | 0 | behind 4, ahead 0 |
+| `agent-systems-benchmark-engineering-workloads` | `feature/engineering-workloads` | `68f313fcb4fa` | 1 | behind 4, ahead 0 |
+| changed files | - | - | - | `crates/asb-workloads/` |
 | `agent-systems-benchmark-experiment-comparability` | `feature/experiment-comparability` | `9543a3297dd9` | 13 | behind 0, ahead 0 |
 | changed files | - | - | - | `Cargo.lock`, `crates/asb-analysis/Cargo.toml`, `crates/asb-analysis/README.md`, `crates/asb-analysis/src/lib.rs`, `crates/asb-protocol/Cargo.toml`, `crates/asb-protocol/README.md`, `crates/asb-protocol/examples/generate_schemas.rs`, `crates/asb-protocol/src/lib.rs`, `crates/asb-protocol/tests/schema_conformance.rs`, `crates/asb-analysis/src/comparison.rs`, `crates/asb-protocol/fixtures/v1/experiment-manifest.json`, `crates/asb-protocol/schema/v1/experiment-manifest.schema.json`, `crates/asb-protocol/src/experiment.rs` |
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 52, ahead 0 |

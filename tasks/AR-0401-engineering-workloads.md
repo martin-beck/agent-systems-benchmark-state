@@ -10,7 +10,7 @@
   "id": "AR-0401",
   "next_action": "Implement small offline fixtures and common workload lifecycle.",
   "observed_branch": "feature/engineering-workloads",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "68f313fcb4fa5c7293639fc90ec376fa7ccb622f",
   "owner": "replay-20260906",
   "plan": "../plans/AR-0401.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Implement original engineering workloads",
-  "updated_at": "2026-09-06T20:47:54+00:00",
+  "updated_at": "2026-09-06T20:48:05+00:00",
   "worktree_key": "agent-systems-benchmark-engineering-workloads"
 }
 ---
