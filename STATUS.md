@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**51 ARs tracked** across 5 active status categories.
+**51 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 1 |
 | **Planned** | Defined work awaiting promotion or dependencies | 28 |
 | **Future** | Deferred roadmap work | 0 |
@@ -40,7 +40,7 @@ flowchart LR
         AR_0102["AR-0102 - Done"]:::status_done
         AR_0103["AR-0103 - Done"]:::status_done
         AR_0104["AR-0104 - Done"]:::status_done
-        AR_0105["AR-0105 - Open"]:::status_open
+        AR_0105["AR-0105 - In progress"]:::status_in_progress
     end
     subgraph series_02["02 - Analysis"]
         direction TB
@@ -306,19 +306,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-0105](tasks/AR-0105-sandbox-test-portability.md): Repair sandbox test target portability | contracts-20260906 | Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work. | Promote after confirming AR-0103 remains done, then repair the isolated-target fixture before resuming blocked full-tree gates. |
 | P1 | [AR-0302](tasks/AR-0302-agent-opendesk.md): Implement OpenDesk client adapter | root-coordination-20260906 | Support the bitclub OpenDesk CLI with its own dialect and compatibility record. | Inspect @bitclub.ai/opendesk-cli commands and protocol version. |
 | P1 | [AR-0401](tasks/AR-0401-engineering-workloads.md): Implement original engineering workloads | replay-20260906 | Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API. | Run complete isolated quality/privacy/supply gates, then prepare focused signed candidate without root workspace/lock/schema edits. |
 | P1 | [AR-1001](tasks/AR-1001-experiment-comparability.md): Define experiment identity and comparability | quality-20260906 | Make every comparison content-addressed and explicit about agent, model, workload and platform confounders. | Await coordinator immutable local review of signed candidate d051c5e; repair findings before any publication. Cargo workspace/lock and experiment-schema fence remains held by AR-1001. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0105](tasks/AR-0105-sandbox-test-portability.md): Repair sandbox test target portability | Unclaimed | Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work. | Promote after confirming AR-0103 remains done, then repair the isolated-target fixture before resuming blocked full-tree gates. |
 
 ### Blocked (1)
 

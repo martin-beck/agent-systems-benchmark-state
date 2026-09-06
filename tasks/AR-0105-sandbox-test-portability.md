@@ -2,21 +2,21 @@
 {
   "branch": "fix/sandbox-test-portability",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-06T23:14:40+00:00",
   "depends_on": [
     "AR-0103"
   ],
   "id": "AR-0105",
   "next_action": "Promote after confirming AR-0103 remains done, then repair the isolated-target fixture before resuming blocked full-tree gates.",
-  "owner": "",
+  "owner": "contracts-20260906",
   "plan": "../plans/AR-0105.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Repair sandbox test target portability",
-  "updated_at": "2026-09-06T21:12:10+00:00",
+  "updated_at": "2026-09-06T21:14:40+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-test-portability"
 }
 ---
@@ -34,3 +34,5 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-06T21:12:10+00:00: Promoted after confirming dependency AR-0103 is durably done; P0
   regression blocks clean external-target full-tree validation and must not be masked by precreating
   repository target directories.
+
+- 2026-09-06T21:14:40+00:00: Claimed by contracts-20260906.
