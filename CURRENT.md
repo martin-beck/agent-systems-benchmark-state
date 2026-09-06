@@ -11,6 +11,12 @@ Never edit this file directly.
 | P1 | [AR-0104](tasks/AR-0104-durable-results.md): Implement durable run storage and recovery | Persist manifests, event streams, artifact hashes and recoverable execution intentions. | Await exact-head PR 6 CI and independent immutable-head review; repair findings before coordinator integration. | root-coordination-20260906 |
 | P1 | [AR-0502](tasks/AR-0502-replay-cassettes.md): Implement immutable response cassette format | Store versioned provider requests, event streams, causal IDs and integrity metadata. | Specify strict request normalization and cassette integrity schema. | replay-20260906 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0004](tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Render every AR, status, and dependency as an accessible visual state document. | Implement the deterministic STATUS.md renderer, automatic mutation hooks, and visual dependency graph tests. | - |
+
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
