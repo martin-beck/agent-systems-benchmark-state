@@ -7,7 +7,7 @@
     "AR-0001"
   ],
   "id": "AR-0501",
-  "next_action": "Await independent immutable-head review and coordinator integration of product PR #4; then run post-merge verification before release.",
+  "next_action": "Await independent immutable-head review and coordinator integration of product PR #4; then run exact-main post-merge verification before release.",
   "observed_branch": "feature/replay-evaluation",
   "observed_dirty": 0,
   "observed_head": "3d04a2d5a3b35c96151507610185c2057c44711f",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compare literature and record/replay implementations using identical synthetic conformance cases.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Evaluate replay literature and reusable tools",
-  "updated_at": "2026-09-06T16:33:33+00:00",
+  "updated_at": "2026-09-06T16:34:58+00:00",
   "worktree_key": "agent-systems-benchmark-replay-evaluation"
 }
 ---
@@ -213,3 +213,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T16:33:33+00:00: Recorded command exit 0; command argv SHA-256
   3b05b14e23b8023159c5ebd330c75ec90203177cca1628e20f4ec3f4027c12f1.
+
+- 2026-09-06T16:34:58+00:00: Updated the unchanged five-path replay diff onto signed contract merge
+  3baa4f9d0a7448e5f2e24633c230a2111c9ead86. Published signed DCO head
+  3d04a2d5a3b35c96151507610185c2057c44711f with exact lease against 2114472. Full local gates passed
+  with new contracts: Rust format/Clippy/tests/schema and stdio conformance/docs/release; six replay
+  fixtures and Ruff; Cargo Deny/Audit; workspace line coverage 97.40%, asb-core 100%, asb-protocol
+  97.63%; actionlint/zizmor/Gitleaks; repository policy and all negative fixtures; clean exact
+  scope/tree. Exact-head CI quality run 34045835936 and Rust run 34045836000 passed, including
+  hosted x86_64 and arm64. PR #4 is clean at exact base 3baa4f9/head 3d04a2d and awaits final
+  independent review; no merge or release performed.
