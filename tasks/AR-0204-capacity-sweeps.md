@@ -15,16 +15,16 @@
   "next_action": "Revalidate dependency closure and promote this repaired dependency-ready task transactionally.",
   "observed_branch": "feature/capacity-sweeps",
   "observed_dirty": 0,
-  "observed_head": "b0b2ae1a9ad577dde4b481b699a983e2cf04e690",
+  "observed_head": "08a73bf5e4aa8ef9b2b6d39281af00726fbab109",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0204.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run repeated closed-loop and open-loop experiments with bounded concurrency.",
-  "task_revision": 87,
+  "task_revision": 88,
   "title": "Implement capacity sweeps and arrival scheduling",
-  "updated_at": "2026-09-06T22:26:02+00:00",
+  "updated_at": "2026-09-06T22:26:37+00:00",
   "worktree_key": "agent-systems-benchmark-capacity-sweeps"
 }
 ---
