@@ -6,7 +6,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | --- | --- | --- | ---: | --- |
 | `agent-systems-benchmark` | `main` | `9db4b6d74d44` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 6, ahead 0 |
-| `agent-systems-benchmark-durable-results` | `feature/durable-results` | `9db4b6d74d44` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-durable-results` | `feature/durable-results` | `9db4b6d74d44` | 2 | behind 0, ahead 0 |
+| changed files | - | - | - | `Cargo.toml`, `crates/asb-store/` |
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 3, ahead 0 |
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `38ceb33592e3` | 3 | behind 5, ahead 0 |
 | changed files | - | - | - | `platforms/`, `tests/platforms/`, `tools/platforms/` |
