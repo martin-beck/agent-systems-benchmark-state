@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #23 | `feature/provider-profile-contract@2870b68d0ca0` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(protocol): define common provider profiles |
+| #23 | `feature/provider-profile-contract@2870b68d0ca0` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(protocol): define common provider profiles |
 
 ## Recent workflows
 
@@ -18,7 +18,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 34068344198 | `2870b68d0ca0` | pull_request | Repository quality | in_progress:- |
 | 34068344166 | `2870b68d0ca0` | pull_request | Rust verification | in_progress:- |
-| 34068344158 | `2870b68d0ca0` | pull_request | Formal assurance | in_progress:- |
+| 34068344158 | `2870b68d0ca0` | pull_request | Formal assurance | completed:success |
 | 34068149693 | `941ea6fff5ee` | push | Rust verification | completed:success |
 | 34068149682 | `941ea6fff5ee` | push | Formal assurance | completed:success |
 | 34068149658 | `941ea6fff5ee` | push | Repository quality | completed:success |
