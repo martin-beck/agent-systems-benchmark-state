@@ -7,7 +7,7 @@
     "AR-0102"
   ],
   "id": "AR-0103",
-  "next_action": "Claim after reconciling current state, then implement rootless container and trusted-native isolation without touching the serialized Cargo workspace fence.",
+  "next_action": "Implement isolated asb-runtime sandbox/resource modules and real native tests only; keep root Cargo.toml/Cargo.lock untouched until AR-0502 hands off the serialized fence.",
   "observed_branch": "feature/sandbox-runtime",
   "observed_dirty": 0,
   "observed_head": "e6a81e8644c692d5b0aa84a86b385ff4da327292",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T17:46:21+00:00",
+  "updated_at": "2026-09-06T17:46:58+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
@@ -39,3 +39,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T17:46:21+00:00: Recorded command exit 1; command argv SHA-256
   1bb9e1171df9c2bff2b89e43f7e63eb1fe501f03f003662952c3f581e4e0ac5b.
+
+- 2026-09-06T17:46:58+00:00: Reconciled signed promotion repair d763c7f and fresh state, then
+  claimed AR-0103 in its declared feature/sandbox-runtime worktree at exact integrated main e6a81e8.
+  The earlier f166248 promotion effect is preserved and its generated-view repair is durable. Native
+  probe found bubblewrap 0.9.0 and a working systemd 255 user scope with cgroup v2 controllers,
+  while direct current-session cgroup writes and plain unshare user/network are unavailable. A real
+  disposable MemoryMax/TasksMax/CPUQuota user scope succeeded. Design will therefore fail closed
+  around exact executable/version probes, bubblewrap namespaces with network denial and minimal
+  mounts, systemd user-scope resource properties, explicit CPU reservation leases disjoint from CI
+  resources, bounded inputs, and documented cgroup/daemonization/platform limits. No root Cargo/lock
+  mutation.
