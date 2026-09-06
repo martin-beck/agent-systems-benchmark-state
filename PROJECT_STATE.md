@@ -13,12 +13,13 @@ Generated from local Git and GitHub. Do not edit.
 | #1 | `feature/coordination-docs@71618e18f9a3` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE | Correct handoffctl run syntax |
 | #2 | `feature/quality-gates@d09a62ee96bf` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: enforce repository quality gates |
 | #3 | `feature/extension-contracts@a40088879e9a` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE | Define extension protocol v1 contracts |
-| #4 | `feature/replay-evaluation@64416f4ac508` | `main` | UNKNOWN | - | Evaluate replay dependency candidates |
+| #4 | `feature/replay-evaluation@64416f4ac508` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS: | Evaluate replay dependency candidates |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34044850943 | `64416f4ac508` | pull_request | Rust verification | in_progress:- |
 | 34044682658 | `a40088879e9a` | pull_request | Rust verification | completed:failure |
 | 34044424643 | `d09a62ee96bf` | pull_request | Repository quality | completed:success |
 | 34044424625 | `d09a62ee96bf` | pull_request | Rust verification | completed:success |
