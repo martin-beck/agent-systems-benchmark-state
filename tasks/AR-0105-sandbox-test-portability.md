@@ -10,16 +10,16 @@
   "next_action": "Await independent immutable-tree review of d71321c before publication.",
   "observed_branch": "fix/sandbox-test-portability",
   "observed_dirty": 0,
-  "observed_head": "d71321c99f2cfab6c3ddd4bd81ea6e4439c0fb18",
+  "observed_head": "f19aed3081310c2de4c9bd820bcc0a15a31f6798",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0105.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Repair sandbox test target portability",
-  "updated_at": "2026-09-06T21:28:43+00:00",
+  "updated_at": "2026-09-06T21:38:32+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-test-portability"
 }
 ---
