@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #3 | `feature/extension-contracts@9e90c6a62861` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | Define extension protocol v1 contracts |
+| #3 | `feature/extension-contracts@9e90c6a62861` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Define extension protocol v1 contracts |
 | #4 | `feature/replay-evaluation@1f31fc3c78d4` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Evaluate replay dependency candidates |
 
 ## Recent workflows
@@ -18,7 +18,7 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 34045610466 | `9e90c6a62861` | pull_request | Rust verification | in_progress:- |
-| 34045610457 | `9e90c6a62861` | pull_request | Repository quality | in_progress:- |
+| 34045610457 | `9e90c6a62861` | pull_request | Repository quality | completed:success |
 | 34045464583 | `38ceb33592e3` | push | Rust verification | completed:success |
 | 34045464568 | `38ceb33592e3` | push | Repository quality | completed:success |
 | 34045330958 | `488d6ca1dd67` | pull_request | Rust verification | completed:success |
