@@ -11,7 +11,7 @@
     "AR-0203"
   ],
   "id": "AR-0204",
-  "next_action": "Await independent immutable-head review before publishing candidate 5fc5616.",
+  "next_action": "Await isolated-CARGO_TARGET_DIR sandbox fixture repair, then rerun full workspace tests/coverage and submit b0b2ae1 successor for review.",
   "observed_branch": "feature/capacity-sweeps",
   "observed_dirty": 0,
   "observed_head": "b0b2ae1a9ad577dde4b481b699a983e2cf04e690",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run repeated closed-loop and open-loop experiments with bounded concurrency.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Implement capacity sweeps and arrival scheduling",
-  "updated_at": "2026-09-06T21:11:29+00:00",
+  "updated_at": "2026-09-06T21:12:04+00:00",
   "worktree_key": "agent-systems-benchmark-capacity-sweeps"
 }
 ---
@@ -219,3 +219,17 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T21:11:29+00:00: Recorded command exit 0; command argv SHA-256
   21950828d063fc1aecacb171eb06860b9fef24d966452e43aa81c60a7260e945.
+
+- 2026-09-06T21:12:04+00:00: Immutable review blockers repaired at signed+DCO head b0b2ae1:
+  Contaminated now dominates FailureLimit for either completion order; fallible injected second
+  spawn failure records InfrastructureFailure without active-count corruption and drains the already
+  admitted worker; a once-installed thread-local panic-hook boundary suppresses arbitrary executor
+  payloads while forwarding non-executor panics. Deterministic ordering, spawn-drain, and subprocess
+  stderr-secret tests pass; scheduler boundary 8/8 repeated three times; focused clippy clean.
+  Focused accumulated coverage is 97.28% regions, 100% functions, 96.76% lines. Docs, release,
+  formal, audit/deny, actionlint/zizmor, Gitleaks, policy/DCO, negative fixtures and platform checks
+  pass. Full isolated-target workspace test remains blocked by pre-existing sandbox.rs:1329
+  create_dir CARGO_MANIFEST_DIR/../../target ENOENT; did not precreate/mask it, removed the empty
+  residual directory, and coordinator is scheduling a dedicated portability repair. Two initial
+  apply_patch argument-delivery attempts and one Sized compile/clippy correction had no unintended
+  product effects and are preserved in command evidence.
