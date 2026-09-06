@@ -9,7 +9,7 @@
   "id": "AR-0701",
   "next_action": "Review complete diff, fix any remaining policy issues, create a focused signed DCO commit, then run exact-head gates and publish for independent review.",
   "observed_branch": "feature/platform-manifests",
-  "observed_dirty": 7,
+  "observed_dirty": 11,
   "observed_head": "38ceb33592e32c4e07e2c2f2c1c7d277203712fe",
   "owner": "quality-20260906",
   "plan": "../plans/AR-0701.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define Ubuntu, Debian, Fedora, enterprise, openSUSE, Arch, Alpine and openEuler target manifests.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Pin distribution and architecture support matrix",
-  "updated_at": "2026-09-06T16:47:02+00:00",
+  "updated_at": "2026-09-06T16:47:20+00:00",
   "worktree_key": "agent-systems-benchmark-platform-manifests"
 }
 ---
