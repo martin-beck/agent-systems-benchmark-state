@@ -10,7 +10,7 @@
   "id": "AR-1001",
   "next_action": "Complete comparison fixtures, generated schema, Cargo integration, and full gates after serialized fence transfer.",
   "observed_branch": "feature/experiment-comparability",
-  "observed_dirty": 2,
+  "observed_dirty": 4,
   "observed_head": "bda6bc41760a914ffc1a9305fc88422eaace302b",
   "owner": "quality-20260906",
   "plan": "../plans/AR-1001.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make every comparison content-addressed and explicit about agent, model, workload and platform confounders.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Define experiment identity and comparability",
-  "updated_at": "2026-09-06T20:20:56+00:00",
+  "updated_at": "2026-09-06T20:21:21+00:00",
   "worktree_key": "agent-systems-benchmark-experiment-comparability"
 }
 ---
