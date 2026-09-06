@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adapt generic coordination tooling for public ASB workers without importing private state.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Harden reusable coordination framework",
-  "updated_at": "2026-09-06T15:48:36+00:00",
+  "updated_at": "2026-09-06T15:49:00+00:00",
   "worktree_key": "agent-systems-benchmark-coordination-assurance"
 }
 ---
@@ -82,3 +82,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T15:48:36+00:00: Recorded command exit 0; command SHA-256
   7d243224ccc45675d3a42520ccfae686449413811e123353dde7446759a30b4f.
+
+- 2026-09-06T15:49:00+00:00: Recorded command exit 0; command SHA-256
+  7521d47a0f71a86d477d56af24fc9a6f02c643c8a3fb23364b77851ca2f43142.
