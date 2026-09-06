@@ -10,12 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #13 | `feature/agent-opencode@6545c9dd4f2f` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | agents: add pinned OpenCode adapter |
+| #13 | `feature/agent-opencode@fa53386a97ab` | `main` | UNSTABLE | QUEUED:, QUEUED: | agents: add pinned OpenCode adapter |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34056097078 | `fa53386a97ab` | pull_request | Rust verification | queued:- |
+| 34056097009 | `fa53386a97ab` | pull_request | Repository quality | queued:- |
 | 34055890362 | `4d716973f483` | push | Repository quality | completed:success |
 | 34055890354 | `4d716973f483` | push | Rust verification | completed:success |
 | 34055848166 | `6545c9dd4f2f` | pull_request | Repository quality | completed:success |
@@ -26,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34055485257 | `cf43bac877af` | pull_request | Rust verification | completed:success |
 | 34055198399 | `7e764d8e2b33` | pull_request | Repository quality | completed:failure |
 | 34055198296 | `7e764d8e2b33` | pull_request | Rust verification | completed:success |
-| 34054837850 | `162110386605` | push | Rust verification | completed:success |
-| 34054837848 | `162110386605` | push | Repository quality | completed:success |
