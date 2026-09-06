@@ -8,7 +8,7 @@
     "AR-0102"
   ],
   "id": "AR-0201",
-  "next_action": "Await coordinator transfer of serialized Cargo workspace/lock fence; then integrate crate membership on current main, rerun exact-workspace/full quality gates, publish PR, and obtain immutable review.",
+  "next_action": "Publish exact signed head 4f33a142 after all local exact-tree gates passed; await immutable review and hosted exact-head CI. Retain Cargo workspace/lock fence through integration or explicit handoff.",
   "observed_branch": "feature/portable-metrics",
   "observed_dirty": 0,
   "observed_head": "4f33a142ea117c63a8f41f70569691ce99a0ff64",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling.",
-  "task_revision": 128,
+  "task_revision": 129,
   "title": "Collect portable system and session metrics",
-  "updated_at": "2026-09-06T18:54:25+00:00",
+  "updated_at": "2026-09-06T18:55:35+00:00",
   "worktree_key": "agent-systems-benchmark-portable-metrics"
 }
 ---
@@ -346,3 +346,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T18:54:25+00:00: Recorded command exit 0; command argv SHA-256
   a5c3f72b607047af590b5687f748a6eb2546d8595618931b107dd72f6872eef5.
+
+- 2026-09-06T18:55:35+00:00: Cargo fence integration complete on current main c9e3653: exact head
+  4f33a142 is clean with eight SSH-signed DCO commits. Full workspace
+  fmt/clippy/tests/rustdoc/release, audit, deny, actionlint, zizmor, Gitleaks, repository policy,
+  platform validator, and real negative fixture suite pass. Coverage: workspace lines 96.84%,
+  asb-metrics lines 95.60%, core 100%, protocol 96.15%, replay 97.11%; native Linux controlled
+  proc/cgroup, unavailable/permission, sample-loss/overhead and malformed/security negatives pass.
+  Scope is Cargo.toml/Cargo.lock plus four asb-metrics paths only.
