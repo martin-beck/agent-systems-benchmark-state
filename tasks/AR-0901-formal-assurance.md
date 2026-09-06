@@ -11,15 +11,18 @@
   ],
   "id": "AR-0901",
   "next_action": "Claim after a fresh reconciliation, then pin the verifier toolchains and implement the smallest dependency-ready invariant set.",
+  "observed_branch": "feature/formal-assurance",
+  "observed_dirty": 0,
+  "observed_head": "ef1a6578600b45f4afb4dd414131f9ffd2ddd01f",
   "owner": "quality-20260906",
   "plan": "../plans/AR-0901.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use bounded proofs and model tests for safety-critical domain logic.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Prove critical state and concurrency invariants",
-  "updated_at": "2026-09-06T19:16:06+00:00",
+  "updated_at": "2026-09-06T19:16:19+00:00",
   "worktree_key": "agent-systems-benchmark-formal-assurance"
 }
 ---
