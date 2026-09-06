@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 302,
+  "task_revision": 303,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T20:00:46+00:00",
+  "updated_at": "2026-09-06T20:01:17+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
@@ -903,3 +903,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T20:00:46+00:00: Recorded command exit 0; command argv SHA-256
   ff653694d1443d02919e7e660a5f56435f0ae48b258889bafaab6e985336f7bc.
+
+- 2026-09-06T20:01:17+00:00: Original isolated-target panic had left a second sentinel in the
+  primary checkout: outside-4146193, regular mode 0664, exact four-byte host content, mtime 21:47
+  local. Audit proved PID absent, no lsof owner and zero ASB scopes. Removed only that exact file
+  through the AR wrapper and confirmed primary product worktree clean. This durable effect is
+  covered by 28063ae RemoveFileOnDrop plus controlled panic-unwind regression. External-target
+  exact-tree full gates and three native repetitions are green; PR #15 exact-head runs 34056623872
+  and 34056623923 are in progress.
