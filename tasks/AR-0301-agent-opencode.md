@@ -2,7 +2,7 @@
 {
   "branch": "feature/agent-opencode",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-06T20:53:53+00:00",
+  "claim_expires": "2026-09-06T22:40:32+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0102"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned OpenCode through its structured supported interfaces.",
-  "task_revision": 153,
+  "task_revision": 154,
   "title": "Implement OpenCode client adapter",
-  "updated_at": "2026-09-06T20:40:30+00:00",
+  "updated_at": "2026-09-06T20:40:32+00:00",
   "worktree_key": "agent-systems-benchmark-agent-opencode"
 }
 ---
@@ -437,3 +437,5 @@ Dependencies AR-0101 and AR-0102 are done. Read the linked plan and claim after 
   failure fixtures, platform validation, Loom/state/production traces, five Kani proofs and
   deliberate Kani counterexample. Published with exact force-with-lease from superseded 5037401;
   remote head verified.
+
+- 2026-09-06T20:40:32+00:00: Heartbeat by root-coordination-20260906.
