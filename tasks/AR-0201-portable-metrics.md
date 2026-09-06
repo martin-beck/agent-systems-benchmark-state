@@ -2,7 +2,7 @@
 {
   "branch": "feature/portable-metrics",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-06T20:33:55+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0102"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/portable-metrics",
   "observed_dirty": 0,
   "observed_head": "a0f67bea1ffe50fd80bc42009761a4388798603a",
-  "owner": "quality-20260906",
+  "owner": "",
   "plan": "../plans/AR-0201.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling.",
-  "task_revision": 160,
+  "task_revision": 161,
   "title": "Collect portable system and session metrics",
-  "updated_at": "2026-09-06T19:12:53+00:00",
+  "updated_at": "2026-09-06T19:13:11+00:00",
   "worktree_key": "agent-systems-benchmark-portable-metrics"
 }
 ---
@@ -454,3 +454,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T19:12:53+00:00: Recorded command exit 0; command argv SHA-256
   fdd8655aa0d3e0c336af68de6a059edc9f2a770463aa840c8225b21e0982d555.
+
+- 2026-09-06T19:13:11+00:00: Completed after independent review and signed+DCO integration as
+  product merge ef1a6578600b45f4afb4dd414131f9ffd2ddd01f. Exact-main local workspace,
+  native/fail-closed metrics, coverage, supply-chain, privacy/policy and deliberate failure gates
+  pass; hosted exact-merge quality 34054018237 and Rust x86_64/aarch64 34054018397 pass. Product
+  refs/worktrees are clean and synchronized. Cargo workspace/lock fence is returned to the
+  coordinator on release.
