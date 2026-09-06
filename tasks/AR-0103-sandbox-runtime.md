@@ -7,7 +7,7 @@
     "AR-0102"
   ],
   "id": "AR-0103",
-  "next_action": "Await coordinator independent immutable-head review of PR #15 exact db8af71 with all hosted checks green; do not merge or release.",
+  "next_action": "Release AR-0103 done after exact-main local and hosted post-merge verification.",
   "observed_branch": "feature/sandbox-runtime",
   "observed_dirty": 0,
   "observed_head": "ac4a2359964910e93a1fd034fd16689a563f973b",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 320,
+  "task_revision": 321,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T20:10:39+00:00",
+  "updated_at": "2026-09-06T20:11:12+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
@@ -974,3 +974,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T20:10:39+00:00: Recorded command exit 0; command argv SHA-256
   ecabc4ccea1fc04919200cf6dd1eee233dcc51dd476bd7f3136006858611ee3f.
+
+- 2026-09-06T20:11:12+00:00: Post-merge verification completed on exact signed+DCO merge/main
+  ac4a2359964910e93a1fd034fd16689a563f973b. With external
+  CARGO_TARGET_DIR=/srv/data/projects/.asb-local/target-postmerge-0103 and
+  ASB_REQUIRE_EXTERNAL_TARGET=1, cargo fmt passed and three serialized real native sandbox_boundary
+  repetitions each passed 9/9 tests. Bounded audits after every repetition and final audit found
+  zero active/activating/deactivating asb scopes, lease files, or outside-* sentinels. Owned feature
+  worktree and primary product worktree are clean. Exact-main hosted quality 34057058586, formal
+  34057058572, and Rust 34057058619 all completed success at ac4a235. Merge SSH signature and exact
+  DCO verified.
