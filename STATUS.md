@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**44 ARs tracked** across 4 active status categories.
+**44 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 31 |
 | **Future** | Deferred roadmap work | 0 |
@@ -42,7 +42,7 @@ flowchart LR
     end
     subgraph series_02["02 - Analysis"]
         direction TB
-        AR_0201["AR-0201 - Open"]:::status_open
+        AR_0201["AR-0201 - In progress"]:::status_in_progress
         AR_0202["AR-0202 - Planned"]:::status_planned
         AR_0203["AR-0203 - In progress"]:::status_in_progress
         AR_0204["AR-0204 - Planned"]:::status_planned
@@ -273,19 +273,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0103](tasks/AR-0103-sandbox-runtime.md): Implement isolated execution and resource leases | contracts-20260906 | Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets. | Implement isolated asb-runtime sandbox/resource modules and real native tests only; keep root Cargo.toml/Cargo.lock untouched until AR-0502 hands off the serialized fence. |
+| P1 | [AR-0201](tasks/AR-0201-portable-metrics.md): Collect portable system and session metrics | quality-20260906 | Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling. | Claim after a fresh reconciliation, then implement isolated portable collector paths without touching the serialized Cargo workspace fence. |
 | P1 | [AR-0203](tasks/AR-0203-statistical-analysis.md): Implement statistical and SLO assessment | root-coordination-20260906 | Compute latency distributions, quality/throughput intervals and evidence-aware SLO results. | Commit the reviewed crate-only candidate, then await AR-0502 Cargo fence and exact-main integration before cargo/full quality validation and PR. |
 | P1 | [AR-0502](tasks/AR-0502-replay-cassettes.md): Implement immutable response cassette format | replay-20260906 | Store versioned provider requests, event streams, causal IDs and integrity metadata. | Run full exact-tree quality/supply/privacy gates on review repairs, commit a focused SSH-signed DCO repair, and report the new immutable head for re-review before PR. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0201](tasks/AR-0201-portable-metrics.md): Collect portable system and session metrics | Unclaimed | Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling. | Claim after a fresh reconciliation, then implement isolated portable collector paths without touching the serialized Cargo workspace fence. |
 
 ### Planned (31)
 
