@@ -10,4 +10,5 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | changed files | - | - | - | `Cargo.lock`, `Cargo.toml`, `crates/asb-protocol/` |
 | `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `c9568e8603e3` | 15 | behind 0, ahead 0 |
 | changed files | - | - | - | `.github/actionlint.yaml`, `.github/dependabot.yml`, `.github/workflows/quality.yml`, `CONTRIBUTING.md`, `config/allowed_signers`, `config/quality-tools.json`, `crates/asb-cli/src/main.rs`, `deny.toml`, `docs/QUALITY.md`, `docs/QUALITY_GATES.md`, `tests/quality/deny-bad.toml`, `tools/quality/check_coverage.py`, `tools/quality/install-external-tools.sh`, `tools/quality/repository_policy.py`, `tools/quality/test_failure_paths.py` |
-| `agent-systems-benchmark-replay-evaluation` | `feature/replay-evaluation` | `c9568e8603e3` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-replay-evaluation` | `feature/replay-evaluation` | `c9568e8603e3` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `tools/` |

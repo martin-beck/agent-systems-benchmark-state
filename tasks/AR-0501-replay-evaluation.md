@@ -9,7 +9,7 @@
   "id": "AR-0501",
   "next_action": "Read REPLAY_RESEARCH and run the bounded compatibility spike.",
   "observed_branch": "feature/replay-evaluation",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "c9568e8603e3520fb8462703fbd4ecaa1683992f",
   "owner": "replay-20260906",
   "plan": "../plans/AR-0501.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compare literature and record/replay implementations using identical synthetic conformance cases.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Evaluate replay literature and reusable tools",
-  "updated_at": "2026-09-06T15:58:24+00:00",
+  "updated_at": "2026-09-06T15:59:19+00:00",
   "worktree_key": "agent-systems-benchmark-replay-evaluation"
 }
 ---
