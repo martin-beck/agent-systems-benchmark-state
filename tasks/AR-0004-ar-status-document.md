@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar-status-document",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-06T19:05:49+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0002"
   ],
   "id": "AR-0004",
   "next_action": "Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration.",
-  "owner": "quality-20260906",
+  "owner": "",
   "plan": "../plans/AR-0004.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Render every AR, status, and dependency as an accessible visual state document.",
-  "task_revision": 109,
+  "task_revision": 110,
   "title": "Generate the visual AR status document",
-  "updated_at": "2026-09-06T18:05:59+00:00",
+  "updated_at": "2026-09-06T18:06:40+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-status-document"
 }
 ---
@@ -356,3 +356,9 @@ easy-to-scan document in the public state repository.
 
 - 2026-09-06T18:05:59+00:00: Recorded command exit 0; command argv SHA-256
   efb1db594497059385568b23eca0c326dad36168756d007d2b9b527265e36679.
+
+- 2026-09-06T18:06:40+00:00: Completed after independent approval of PR 3 head
+  eedd3119c08b7a56500f8e99bb8a08e326ccee1b, signed DCO merge
+  3b5bd61210cf663f5e7ffa8b033bb4484fd36739, exact-merge hosted run 34050636122, full post-merge
+  local gates, and live doctor. The real release transaction regenerated STATUS.md under the
+  coordinator lock before its signed state commit.
