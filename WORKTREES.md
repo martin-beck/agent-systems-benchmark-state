@@ -9,8 +9,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `9db4b6d74d44` | 3 | behind 0, ahead 0 |
 | changed files | - | - | - | `Cargo.lock`, `Cargo.toml`, `crates/asb-store/` |
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 3, ahead 0 |
-| `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `38ceb33592e3` | 11 | behind 5, ahead 0 |
-| changed files | - | - | - | `.github/workflows/quality.yml`, `README.md`, `docs/PLATFORMS.md`, `docs/QUALITY.md`, `platforms/v1/agents.json`, `platforms/v1/platforms.json`, `tests/platforms/fixtures/native-from-container.json`, `tests/platforms/fixtures/unpinned-image.json`, `tests/platforms/fixtures/wrong-architecture.json`, `tests/platforms/test_validate_manifests.py`, `tools/platforms/validate_manifests.py` |
+| `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `dff27a9acb4f` | 0 | behind 5, ahead 1 |
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `3baa4f9d0a74` | 1 | behind 2, ahead 0 |
 | changed files | - | - | - | `crates/asb-runtime/` |
 | `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `748537c25e3a` | 0 | behind 9, ahead 0 |
