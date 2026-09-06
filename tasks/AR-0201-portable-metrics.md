@@ -8,16 +8,16 @@
     "AR-0102"
   ],
   "id": "AR-0201",
-  "next_action": "Implement metric descriptors and baseline Linux collectors.",
+  "next_action": "Claim after a fresh reconciliation, then implement isolated portable collector paths without touching the serialized Cargo workspace fence.",
   "owner": "",
   "plan": "../plans/AR-0201.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Collect portable system and session metrics",
-  "updated_at": "2026-09-06T15:04:52+00:00",
+  "updated_at": "2026-09-06T18:09:18+00:00",
   "worktree_key": "agent-systems-benchmark-portable-metrics"
 }
 ---
