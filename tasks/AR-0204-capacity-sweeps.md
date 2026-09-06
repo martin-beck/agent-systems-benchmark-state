@@ -2,7 +2,7 @@
 {
   "branch": "feature/capacity-sweeps",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-06T22:18:51+00:00",
+  "claim_expires": "2026-09-06T22:35:12+00:00",
   "depends_on": [
     "AR-0102",
     "AR-0103",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run repeated closed-loop and open-loop experiments with bounded concurrency.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Implement capacity sweeps and arrival scheduling",
-  "updated_at": "2026-09-06T20:35:06+00:00",
+  "updated_at": "2026-09-06T20:35:12+00:00",
   "worktree_key": "agent-systems-benchmark-capacity-sweeps"
 }
 ---
@@ -103,3 +103,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T20:35:06+00:00: Recorded command exit 0; command argv SHA-256
   6fc0efcf75efb7c6a711088b23aa5a0f7b23c97629db68a782e2644de2c684af.
+
+- 2026-09-06T20:35:12+00:00: Heartbeat by contracts-20260906.
