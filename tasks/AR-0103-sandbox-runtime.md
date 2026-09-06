@@ -2,7 +2,7 @@
 {
   "branch": "feature/sandbox-runtime",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-06T21:45:53+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0102"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/sandbox-runtime",
   "observed_dirty": 0,
   "observed_head": "ac4a2359964910e93a1fd034fd16689a563f973b",
-  "owner": "contracts-20260906",
+  "owner": "",
   "plan": "../plans/AR-0103.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 321,
+  "task_revision": 322,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T20:11:12+00:00",
+  "updated_at": "2026-09-06T20:11:14+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
@@ -984,3 +984,8 @@ Implementation has not started. Read the linked plan before claiming.
   worktree and primary product worktree are clean. Exact-main hosted quality 34057058586, formal
   34057058572, and Rust 34057058619 all completed success at ac4a235. Merge SSH signature and exact
   DCO verified.
+
+- 2026-09-06T20:11:14+00:00: AR-0103 complete: reviewed sandbox runtime and external-target
+  portability follow-up are integrated at signed+DCO main ac4a2359964910e93a1fd034fd16689a563f973b;
+  three post-merge native repetitions and zero-residual audits passed; exact-main
+  quality/formal/Rust hosted runs are green; primary and owned worktrees are clean.
