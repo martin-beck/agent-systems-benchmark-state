@@ -8,7 +8,7 @@
     "AR-0501"
   ],
   "id": "AR-0502",
-  "next_action": "Await explicit Cargo fence transfer after AR-0102 serialization; then integrate exact current main, add only asb-replay manifest/workspace lock changes, compile, and repair.",
+  "next_action": "Complete exact-tree provenance and privacy review, create one focused SSH-signed DCO commit, rerun commit-range policy, and report immutable candidate before PR.",
   "observed_branch": "feature/replay-cassettes",
   "observed_dirty": 17,
   "observed_head": "e6a81e8644c692d5b0aa84a86b385ff4da327292",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Store versioned provider requests, event streams, causal IDs and integrity metadata.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Implement immutable response cassette format",
-  "updated_at": "2026-09-06T17:56:51+00:00",
+  "updated_at": "2026-09-06T17:57:36+00:00",
   "worktree_key": "agent-systems-benchmark-replay-cassettes"
 }
 ---
@@ -257,3 +257,23 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T17:56:51+00:00: Recorded command exit 0; command argv SHA-256
   5926130770cf461e928938cb211bbdebeffe54b98781ad69b4d0f0076502cac8.
+
+- 2026-09-06T17:57:36+00:00: Cargo fence transferred after signed AR-0102 merge
+  e6a81e8644c692d5b0aa84a86b385ff4da327292; untracked crate was hash-preserved and worktree
+  fast-forwarded to that exact main before root workspace/lock integration. Implemented and staged
+  only Cargo.toml, Cargo.lock, and crates/asb-replay (17 paths). Focused fmt/clippy/tests pass: 1
+  scanner unit plus 15 cassette, 4 migration, 8 redaction, 2 schema tests; line coverage is 97.36%
+  total, cassette 96.03%, migration 98.41%, redaction 99.21%, above critical 95% floor. Full
+  workspace fmt/clippy/test/rustdoc/release-build and tools/quality/check_coverage.py pass.
+  cargo-deny 0.20.2 and cargo-audit 0.22.2 pass; schema exporter output byte-equals checked-in
+  schema. Pinned actionlint 1.7.12, zizmor 1.30.0 offline audit, Gitleaks 8.30.1 full Git scan,
+  repository policy, and every real failure fixture pass. Coverage patch artifact SHA-256
+  66b30f8ec8d8c1090c5ba3487333756f91d168b27b91aa8d62b225cd76e2cb5e; repair artifacts
+  048940509f15069a2838c8faa79f664a7c3e4155710dd157bd9c9cea0d484320,
+  783f7bd274ffd81cdc4a0a65bf88ec58e48530fd68cd3767a6eeae19501e0b84,
+  f39695c3559aa379149b3fd8d8dbb6e67659b22f7fd207945bf3460a5ddf115b,
+  67ef43249b49aa8a4a8566add34a014c7f82a88fe5d934c1a1610c74fbe09284,
+  10a8c48b3a8bc7b693701da0492898c123f5f8b104d3f024833c907a9e6202a4c, and
+  4cccbdd213d47c95dfd111c2bbad16ab9b70c30a8bac62ffb17769274ce4c0ea. Intermediate failures were
+  formatting drift, test-only compile/expectation errors, and two corrected schema-generator
+  invocations; all were fail-closed and left no ambiguous external effect.
