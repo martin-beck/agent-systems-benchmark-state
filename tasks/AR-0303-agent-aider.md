@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support unattended aider editing with bounded input, output and repository changes.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Implement aider client adapter",
-  "updated_at": "2026-09-06T23:30:36+00:00",
+  "updated_at": "2026-09-06T23:32:38+00:00",
   "worktree_key": "agent-systems-benchmark-agent-aider"
 }
 ---
@@ -255,3 +255,6 @@ Implementation has not started. Read the linked plan before claiming.
   lines, below no configured per-adapter floor; transitive Python environment reproducibility and
   non-structured retry observability remain explicit limits. One guessed platform-check script path
   failed without product effect and was corrected.
+
+- 2026-09-06T23:32:38+00:00: Recorded command exit 1; command argv SHA-256
+  c8f861d4da193bbd6deaad24d5e2f3e69096994e7026719e50308d5598e8f120.
