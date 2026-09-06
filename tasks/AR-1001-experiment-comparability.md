@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make every comparison content-addressed and explicit about agent, model, workload and platform confounders.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Define experiment identity and comparability",
-  "updated_at": "2026-09-06T20:19:04+00:00",
+  "updated_at": "2026-09-06T20:20:03+00:00",
   "worktree_key": "agent-systems-benchmark-experiment-comparability"
 }
 ---
@@ -72,3 +72,6 @@ Implementation has not started. Read the linked plan before claiming.
   First wrapped apply_patch attempt failed exit 2 because run stdin is DEVNULL; no product mutation.
   One later wrapped patch waited safely behind AR-0504 long coverage state lock, then applied after
   serialization.
+
+- 2026-09-06T20:20:03+00:00: Recorded command exit 0; command argv SHA-256
+  57975b9d36bf1e516aef1d2e97dca8486d066bc49c3bab18003b80f851da928a.
