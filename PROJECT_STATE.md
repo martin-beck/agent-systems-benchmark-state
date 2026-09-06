@@ -12,7 +12,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- | --- |
 | #13 | `feature/agent-opencode@fa53386a97ab` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | agents: add pinned OpenCode adapter |
 | #14 | `feature/formal-assurance@2a495a99a657` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | formal: prove critical state invariants |
-| #15 | `feature/sandbox-runtime@28063ae8e7b3` | `main` | UNKNOWN | - | test(runtime): make sandbox native fixtures target-dir independent |
+| #15 | `feature/sandbox-runtime@28063ae8e7b3` | `main` | CLEAN | - | test(runtime): make sandbox native fixtures target-dir independent |
 
 ## Recent workflows
 
