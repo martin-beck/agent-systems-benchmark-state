@@ -10,12 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #5 | `feature/platform-manifests@dff27a9acb4f` | `main` | UNKNOWN | - | platforms: pin initial support manifests |
+| #5 | `feature/platform-manifests@dff27a9acb4f` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, QUEUED: | platforms: pin initial support manifests |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34046717411 | `dff27a9acb4f` | pull_request | Rust verification | queued:- |
+| 34046717386 | `dff27a9acb4f` | pull_request | Repository quality | in_progress:- |
 | 34046060074 | `9db4b6d74d44` | push | Rust verification | completed:success |
 | 34046060062 | `9db4b6d74d44` | push | Repository quality | completed:success |
 | 34045836000 | `3d04a2d5a3b3` | pull_request | Rust verification | completed:success |
@@ -26,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34045687392 | `2114472eb20c` | pull_request | Repository quality | completed:success |
 | 34045610466 | `9e90c6a62861` | pull_request | Rust verification | completed:success |
 | 34045610457 | `9e90c6a62861` | pull_request | Repository quality | completed:success |
-| 34045464583 | `38ceb33592e3` | push | Rust verification | completed:success |
-| 34045464568 | `38ceb33592e3` | push | Repository quality | completed:success |
