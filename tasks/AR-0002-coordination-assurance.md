@@ -7,16 +7,16 @@
     "AR-0001"
   ],
   "id": "AR-0002",
-  "next_action": "Audit reused coordinator and add conformance tests for ASB-specific adaptations.",
+  "next_action": "Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release.",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0002.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adapt generic coordination tooling for public ASB workers without importing private state.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Harden reusable coordination framework",
-  "updated_at": "2026-09-06T15:57:49+00:00",
+  "updated_at": "2026-09-06T15:58:30+00:00",
   "worktree_key": "agent-systems-benchmark-coordination-assurance"
 }
 ---
@@ -127,3 +127,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T15:57:49+00:00: Recorded command exit 0; command SHA-256
   b3bcf05e2839993c38626bd650d76280a77ec7d0685e5d5cf9b670576dfce9b1.
+
+- 2026-09-06T15:58:30+00:00: Integrated signed state PR #1 via merge
+  d73018c696cfe69cd146a32c16859a14671632fd after independent immutable-head review and green run
+  34043734332. Post-merge strict gates, 21 fault tests, 95% branch coverage, schema validation, and
+  live doctor passed. Product PR #1 remains blocked only by the product workflow synthetic-merge DCO
+  defect owned by AR-0003; its exact branch-head x86_64/aarch64 run 34043491779 passed.
