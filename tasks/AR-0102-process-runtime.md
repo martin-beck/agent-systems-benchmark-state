@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run real client processes with bounded I/O, monotonic deadlines and process-tree ownership.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Implement process execution and cancellation",
-  "updated_at": "2026-09-06T16:35:53+00:00",
+  "updated_at": "2026-09-06T16:35:56+00:00",
   "worktree_key": "agent-systems-benchmark-process-runtime"
 }
 ---
@@ -33,3 +33,6 @@ Implementation has not started. Read the linked plan before claiming.
   is durably done with exact-main local, hosted x86_64 and aarch64, and live-state evidence.
 
 - 2026-09-06T16:35:39+00:00: Claimed by contracts-20260906.
+
+- 2026-09-06T16:35:56+00:00: Recorded command exit 0; command argv SHA-256
+  1aa2c37a06c3a89b63124db630a7538864c98d3ac94702b21ae5255b0b4cdf25.
