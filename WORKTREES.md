@@ -10,6 +10,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | changed files | - | - | - | `crates/asb-runtime/README.md`, `crates/asb-runtime/src/lib.rs`, `crates/asb-runtime/src/scheduler.rs`, `crates/asb-runtime/tests/scheduler_boundary.rs`, `target-cov/`, `target-focus-cov/`, `target-focus-cov2/`, `target-focus-cov3/`, `target-focus-cov4/`, `target-full/` |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 51, ahead 0 |
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 40, ahead 0 |
+| `agent-systems-benchmark-engineering-workloads` | `feature/engineering-workloads` | `68f313fcb4fa` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-experiment-comparability` | `feature/experiment-comparability` | `bda6bc41760a` | 4 | behind 5, ahead 0 |
 | changed files | - | - | - | `crates/asb-analysis/README.md`, `crates/asb-protocol/README.md`, `crates/asb-analysis/src/comparison.rs`, `crates/asb-protocol/src/experiment.rs` |
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 48, ahead 0 |
