@@ -4,11 +4,11 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
-| `agent-systems-benchmark` | `main` | `ac4a23599649` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark` | `main` | `68f313fcb4fa` | 0 | behind 0, ahead 3 |
 | `agent-systems-benchmark-agent-opencode` | `feature/agent-opencode` | `c80ff7fdd830` | 1 | behind 0, ahead 3 |
 | changed files | - | - | - | `crates/asb-agents/tests/real_opencode.rs` |
-| `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `ac4a23599649` | 5 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-runtime/README.md`, `crates/asb-runtime/src/lib.rs`, `crates/asb-runtime/src/scheduler.rs`, `crates/asb-runtime/tests/scheduler_boundary.rs`, `target-cov/` |
+| `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `ac4a23599649` | 6 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-runtime/README.md`, `crates/asb-runtime/src/lib.rs`, `crates/asb-runtime/src/scheduler.rs`, `crates/asb-runtime/tests/scheduler_boundary.rs`, `target-cov/`, `target-focus-cov/` |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 48, ahead 0 |
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 37, ahead 0 |
 | `agent-systems-benchmark-experiment-comparability` | `feature/experiment-comparability` | `bda6bc41760a` | 4 | behind 2, ahead 0 |
