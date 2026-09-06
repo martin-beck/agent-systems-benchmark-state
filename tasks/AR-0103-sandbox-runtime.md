@@ -10,16 +10,16 @@
   "next_action": "Await coordinator post-merge local verification; release AR-0103 only after explicit confirmation.",
   "observed_branch": "feature/sandbox-runtime",
   "observed_dirty": 0,
-  "observed_head": "d8601c22982f634808826da01030e3c09733ee59",
+  "observed_head": "4d716973f483f0d6387798496302180a246140b6",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0103.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 276,
+  "task_revision": 277,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T19:47:52+00:00",
+  "updated_at": "2026-09-06T19:48:03+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
