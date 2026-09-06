@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**80 ARs tracked** across 4 active status categories.
+**80 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 53 |
 | **Future** | Deferred roadmap work | 0 |
@@ -55,7 +55,7 @@ flowchart LR
         AR_0302["AR-0302 - Done"]:::status_done
         AR_0303["AR-0303 - In progress"]:::status_in_progress
         AR_0304["AR-0304 - In progress"]:::status_in_progress
-        AR_0305["AR-0305 - Open"]:::status_open
+        AR_0305["AR-0305 - In progress"]:::status_in_progress
         AR_0306["AR-0306 - Planned"]:::status_planned
         AR_0307["AR-0307 - Planned"]:::status_planned
         AR_0308["AR-0308 - Planned"]:::status_planned
@@ -506,19 +506,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0303](tasks/AR-0303-agent-aider.md): Implement aider client adapter | root-coordination-20260906 | Support unattended aider editing with bounded input, output and repository changes. | Await independent immutable-head review of a0943e94; repair findings before branch publication. |
 | P1 | [AR-0304](tasks/AR-0304-agent-codex.md): Implement Codex client adapter | replay-20260906 | Use Codex noninteractive structured events or app-server with declared capability boundaries. | Add self-contained real Codex fixture test, then request shared registration fence. |
+| P1 | [AR-0305](tasks/AR-0305-agent-gemini.md): Implement Gemini CLI client adapter | contracts-20260906 | Run pinned Gemini CLI through noninteractive JSON events. | Inspect the current official stable release, transition constraints, stream-JSON contract and provider override. |
 | P1 | [AR-0310](tasks/AR-0310-provider-profile-contract.md): Define common provider profiles | quality-20260906 | Normalize one provider configuration for safe translation across heterogeneous agent adapters. | Complete pinned Kani proof in same-drive cache, re-review exact candidate, then request immutable coordinator review. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0305](tasks/AR-0305-agent-gemini.md): Implement Gemini CLI client adapter | Unclaimed | Run pinned Gemini CLI through noninteractive JSON events. | Inspect the current official stable release, transition constraints, stream-JSON contract and provider override. |
 
 ### Planned (53)
 
