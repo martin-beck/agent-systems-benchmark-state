@@ -10,12 +10,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #20 | `feature/engineering-workloads@41ffc6eb8f1a` | `main` | UNKNOWN | - | workloads: add original offline engineering tasks |
+| #20 | `feature/engineering-workloads@41ffc6eb8f1a` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | workloads: add original offline engineering tasks |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34065861661 | `41ffc6eb8f1a` | pull_request | Rust verification | queued:- |
+| 34065861641 | `41ffc6eb8f1a` | pull_request | Formal assurance | queued:- |
+| 34065861614 | `41ffc6eb8f1a` | pull_request | Repository quality | queued:- |
 | 34065066295 | `3cfb8716da8c` | push | Repository quality | completed:success |
 | 34065066283 | `3cfb8716da8c` | push | Rust verification | completed:success |
 | 34065066261 | `3cfb8716da8c` | push | Formal assurance | completed:success |
@@ -25,6 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34063766870 | `23035acde688` | workflow_dispatch | Rust verification | completed:success |
 | 34063737973 | `23035acde688` | workflow_dispatch | Repository quality | completed:success |
 | 34063685602 | `23035acde688` | push | Repository quality | completed:failure |
-| 34063685531 | `23035acde688` | push | Formal assurance | completed:success |
-| 34063685524 | `23035acde688` | push | Rust verification | completed:failure |
-| 34063408544 | `7f308cca7038` | push | Rust verification | completed:failure |
