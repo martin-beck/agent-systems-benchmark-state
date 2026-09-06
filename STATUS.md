@@ -279,7 +279,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0103](tasks/AR-0103-sandbox-runtime.md): Implement isolated execution and resource leases | contracts-20260906 | Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets. | Await independent immutable-head re-review and exact-head CI for PR #10 at 832e72c; rebase only on explicit coordinator handoff. Do not merge or release. |
 | P1 | [AR-0301](tasks/AR-0301-agent-opencode.md): Implement OpenCode client adapter | root-coordination-20260906 | Run pinned OpenCode through its structured supported interfaces. | Claim after a fresh reconciliation, then inspect the pinned upstream CLI/server contract and implement the isolated adapter. |
-| P1 | [AR-0503](tasks/AR-0503-strict-replay.md): Implement strict provider response replay | replay-20260906 | Serve local recorded responses while real agent and tools execute. | Await coordinator independent immutable review of PR #11 exact 410ecc9 with all exact-head CI green; repair findings if any. Do not merge or release. |
+| P1 | [AR-0503](tasks/AR-0503-strict-replay.md): Implement strict provider response replay | replay-20260906 | Serve local recorded responses while real agent and tools execute. | Run live coordination reconciliation/doctor and complete state validation; release AR-0503 done only if clean synchronized evidence remains exact. |
 | P1 | [AR-0901](tasks/AR-0901-formal-assurance.md): Prove critical state and concurrency invariants | quality-20260906 | Use bounded proofs and model tests for safety-critical domain logic. | Claim after a fresh reconciliation, then pin the verifier toolchains and implement the smallest dependency-ready invariant set. |
 
 ### Planned (28)
