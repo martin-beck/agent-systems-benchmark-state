@@ -10,12 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #4 | `feature/replay-evaluation@2114472eb20c` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Evaluate replay dependency candidates |
+| #4 | `feature/replay-evaluation@3d04a2d5a3b3` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Evaluate replay dependency candidates |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34045836000 | `3d04a2d5a3b3` | pull_request | Rust verification | in_progress:- |
+| 34045835936 | `3d04a2d5a3b3` | pull_request | Repository quality | completed:success |
 | 34045704998 | `3baa4f9d0a74` | push | Repository quality | completed:success |
 | 34045704995 | `3baa4f9d0a74` | push | Rust verification | completed:success |
 | 34045687393 | `2114472eb20c` | pull_request | Rust verification | completed:success |
@@ -26,5 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34045464568 | `38ceb33592e3` | push | Repository quality | completed:success |
 | 34045330958 | `488d6ca1dd67` | pull_request | Rust verification | completed:success |
 | 34045330884 | `488d6ca1dd67` | pull_request | Repository quality | completed:success |
-| 34045330594 | `1f31fc3c78d4` | pull_request | Rust verification | completed:success |
-| 34045330575 | `1f31fc3c78d4` | pull_request | Repository quality | completed:success |
