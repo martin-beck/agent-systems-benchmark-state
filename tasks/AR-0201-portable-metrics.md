@@ -8,7 +8,7 @@
     "AR-0102"
   ],
   "id": "AR-0201",
-  "next_action": "Publish exact signed head 4f33a142 after all local exact-tree gates passed; await immutable review and hosted exact-head CI. Retain Cargo workspace/lock fence through integration or explicit handoff.",
+  "next_action": "Await independent immutable-head review of product PR #12 exact 4f33a142ea117c63a8f41f70569691ce99a0ff64; both exact-head hosted workflows are green. Retain Cargo workspace/lock fence.",
   "observed_branch": "feature/portable-metrics",
   "observed_dirty": 0,
   "observed_head": "4f33a142ea117c63a8f41f70569691ce99a0ff64",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling.",
-  "task_revision": 132,
+  "task_revision": 133,
   "title": "Collect portable system and session metrics",
-  "updated_at": "2026-09-06T18:56:11+00:00",
+  "updated_at": "2026-09-06T18:57:22+00:00",
   "worktree_key": "agent-systems-benchmark-portable-metrics"
 }
 ---
@@ -362,3 +362,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T18:56:11+00:00: Recorded command exit 0; command argv SHA-256
   b73f85ea1c04593ef9f4389a7c90f40562c8f729852c7e9be7207099cfd3c0d7.
+
+- 2026-09-06T18:57:22+00:00: Published product PR #12 at immutable signed+DCO head
+  4f33a142ea117c63a8f41f70569691ce99a0ff64 on exact base c9e3653ebd9955f433e65f0c3110421166ac03c7.
+  Exact-head hosted quality run 34053272115 passed; Rust run 34053272112 passed on ubuntu-24.04
+  x86_64 and ubuntu-24.04-arm. Branch remains clean and synchronized.
