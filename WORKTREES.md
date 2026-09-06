@@ -17,5 +17,5 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-replay-evaluation` | `feature/replay-evaluation` | `3d04a2d5a3b3` | 0 | behind 14, ahead 0 |
 | `agent-systems-benchmark-sandbox-runtime` | `feature/sandbox-runtime` | `e6a81e8644c6` | 4 | behind 4, ahead 0 |
 | changed files | - | - | - | `crates/asb-runtime/README.md`, `crates/asb-runtime/src/lib.rs`, `crates/asb-runtime/src/sandbox.rs`, `crates/asb-runtime/tests/sandbox_boundary.rs` |
-| `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `8a41fa3800e7` | 1 | behind 0, ahead 1 |
-| changed files | - | - | - | `Cargo.toml` |
+| `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `8a41fa3800e7` | 2 | behind 0, ahead 1 |
+| changed files | - | - | - | `Cargo.lock`, `Cargo.toml` |
