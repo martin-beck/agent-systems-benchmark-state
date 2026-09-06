@@ -11,14 +11,14 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #10 | `feature/sandbox-runtime@832e72c2293c` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE | runtime: isolate untrusted processes |
-| #11 | `feature/strict-replay@410ecc95b80e` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS | replay: add strict provider response service |
+| #11 | `feature/strict-replay@410ecc95b80e` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS | replay: add strict provider response service |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 34054668620 | `410ecc95b80e` | pull_request | Rust verification | in_progress:- |
-| 34054668568 | `410ecc95b80e` | pull_request | Repository quality | in_progress:- |
+| 34054668568 | `410ecc95b80e` | pull_request | Repository quality | completed:success |
 | 34054628754 | `832e72c2293c` | pull_request | Repository quality | completed:failure |
 | 34054628751 | `832e72c2293c` | pull_request | Rust verification | completed:failure |
 | 34054018397 | `ef1a6578600b` | push | Rust verification | completed:success |
