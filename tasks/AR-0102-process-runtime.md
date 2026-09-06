@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run real client processes with bounded I/O, monotonic deadlines and process-tree ownership.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Implement process execution and cancellation",
-  "updated_at": "2026-09-06T17:27:29+00:00",
+  "updated_at": "2026-09-06T17:27:56+00:00",
   "worktree_key": "agent-systems-benchmark-process-runtime"
 }
 ---
@@ -161,3 +161,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T17:27:29+00:00: Recorded command exit 1; command argv SHA-256
   61a4fb4828e2709f504708b46c4739c9fbdfba16f5a57b6b9d328d3114f158da.
+
+- 2026-09-06T17:27:56+00:00: Recorded command exit 1; command argv SHA-256
+  2045ff225d9e2cfe271ed6f6ce3d602174d40e29de9023b72e572e8bbbde654e.
