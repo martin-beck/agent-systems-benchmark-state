@@ -7,7 +7,7 @@
     "AR-0103"
   ],
   "id": "AR-0105",
-  "next_action": "Publish approved eea3d20, open focused PR, and require exact-head CI.",
+  "next_action": "Await coordinator integration of approved exact PR #18 head eea3d20; then run exact-main post-merge checks.",
   "observed_branch": "fix/sandbox-test-portability",
   "observed_dirty": 0,
   "observed_head": "eea3d202b226f7365cc18ac00dda854343c77de0",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Repair sandbox test target portability",
-  "updated_at": "2026-09-06T22:11:01+00:00",
+  "updated_at": "2026-09-06T22:12:46+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-test-portability"
 }
 ---
@@ -233,3 +233,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T22:11:01+00:00: Recorded command exit 0; command argv SHA-256
   c257275056c670bf40c7998f4acd0782bfb2fa11d20f4b4d6f8a59e6c97839b2.
+
+- 2026-09-06T22:12:46+00:00: Published immutable reviewed head eea3d20 and opened product PR #18. PR
+  base is exact b7e9078, head exact eea3d20, mergeable, and all exact-head hosted checks passed:
+  Rust verification run 34063259371 on ubuntu-24.04 x86_64 and ubuntu-24.04-arm; formal assurance
+  run 34063259403 with Kani plus Loom/state models on x86_64/aarch64; repository quality run
+  34063259528. PR URL https://github.com/martin-beck/agent-systems-benchmark/pull/18. No merge or
+  release by worker.
