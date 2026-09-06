@@ -8,7 +8,7 @@
     "AR-0203"
   ],
   "id": "AR-1001",
-  "next_action": "Await independent immutable review of repaired signed head eb5e849; publish only after coordinator approval. Cargo workspace/lock and experiment-schema fence remains held by AR-1001.",
+  "next_action": "Await coordinator integration authorization for independently approved exact PR #17 head eb5e849; do not merge or release. Cargo workspace/lock and experiment-schema fence remains held by AR-1001.",
   "observed_branch": "feature/experiment-comparability",
   "observed_dirty": 0,
   "observed_head": "eb5e849338302d9c446093085674df4ef44ae8b4",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make every comparison content-addressed and explicit about agent, model, workload and platform confounders.",
-  "task_revision": 127,
+  "task_revision": 128,
   "title": "Define experiment identity and comparability",
-  "updated_at": "2026-09-06T21:25:17+00:00",
+  "updated_at": "2026-09-06T21:27:15+00:00",
   "worktree_key": "agent-systems-benchmark-experiment-comparability"
 }
 ---
@@ -380,3 +380,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T21:25:17+00:00: Recorded command exit 0; command argv SHA-256
   a39c8d562b8311ccbf455d6cfb3e3c4c185221a984758da012392a99bd8f318f.
+
+- 2026-09-06T21:27:15+00:00: Published exact signed+DCO head
+  eb5e849338302d9c446093085674df4ef44ae8b4 as product PR #17 against exact base
+  9543a3297dd9d0ca93c802bb204b099ac1df569b. PR is cleanly mergeable and all immutable-head hosted
+  checks succeeded: quality 34061016186; Rust x86_64 and aarch64 34061016130; formal Kani plus
+  x86_64/aarch64 Loom 34061016128. Remote branch, local head, signatures, DCO, base, clean tree, and
+  privacy scope remain exact.
