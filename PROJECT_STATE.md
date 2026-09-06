@@ -10,12 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #21 | `feature/capacity-sweeps@0717d4acd168` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | runtime: add bounded capacity scheduler |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34067451296 | `311c12864961` | push | Formal assurance | queued:- |
+| 34067451294 | `311c12864961` | push | Rust verification | in_progress:- |
+| 34067451293 | `311c12864961` | push | Repository quality | in_progress:- |
 | 34067095323 | `0717d4acd168` | pull_request | Formal assurance | completed:success |
 | 34067095259 | `0717d4acd168` | pull_request | Repository quality | completed:success |
 | 34067095250 | `0717d4acd168` | pull_request | Rust verification | completed:success |
@@ -25,6 +27,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34065861661 | `41ffc6eb8f1a` | pull_request | Rust verification | completed:success |
 | 34065861641 | `41ffc6eb8f1a` | pull_request | Formal assurance | completed:success |
 | 34065861614 | `41ffc6eb8f1a` | pull_request | Repository quality | completed:success |
-| 34065066295 | `3cfb8716da8c` | push | Repository quality | completed:success |
-| 34065066283 | `3cfb8716da8c` | push | Rust verification | completed:success |
-| 34065066261 | `3cfb8716da8c` | push | Formal assurance | completed:success |
