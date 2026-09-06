@@ -3,7 +3,7 @@
   "branch": "docs/core-workflow-guides",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-0314", "AR-0401", "AR-0505", "AR-0801", "AR-0802"],
+  "depends_on": ["AR-0314", "AR-0401", "AR-0505", "AR-0801", "AR-0802", "AR-0821", "AR-0822"],
   "id": "AR-0808",
   "next_action": "Write and execute end-to-end workflows for the core CLI and automation interfaces.",
   "owner": "",
@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Publish core program workflow guides",
-  "updated_at": "2026-09-06T21:18:00+00:00",
+  "updated_at": "2026-09-06T21:42:00+00:00",
   "worktree_key": "agent-systems-benchmark-core-workflow-guides"
 }
 ---
