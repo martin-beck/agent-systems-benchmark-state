@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define Ubuntu, Debian, Fedora, enterprise, openSUSE, Arch, Alpine and openEuler target manifests.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Pin distribution and architecture support matrix",
-  "updated_at": "2026-09-06T16:50:17+00:00",
+  "updated_at": "2026-09-06T16:50:35+00:00",
   "worktree_key": "agent-systems-benchmark-platform-manifests"
 }
 ---
@@ -221,3 +221,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T16:50:17+00:00: Recorded command exit 0; command argv SHA-256
   fa1c6498b3ac9ae876c9b302b7f4d9587c19d835200fa17ebca9b7a993a97b69.
+
+- 2026-09-06T16:50:35+00:00: Recorded command exit 0; command argv SHA-256
+  e5aa0db0195a728bd7bafc9c541c8cd0dfec02d96e0e5929f43dfbca992db247.
