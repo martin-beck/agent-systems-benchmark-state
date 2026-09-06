@@ -12,12 +12,14 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- | --- |
 | #13 | `feature/agent-opencode@fa53386a97ab` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | agents: add pinned OpenCode adapter |
 | #14 | `feature/formal-assurance@2a495a99a657` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | formal: prove critical state invariants |
-| #15 | `feature/sandbox-runtime@28063ae8e7b3` | `main` | CLEAN | - | test(runtime): make sandbox native fixtures target-dir independent |
+| #15 | `feature/sandbox-runtime@28063ae8e7b3` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | test(runtime): make sandbox native fixtures target-dir independent |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34056623923 | `28063ae8e7b3` | pull_request | Repository quality | in_progress:- |
+| 34056623872 | `28063ae8e7b3` | pull_request | Rust verification | in_progress:- |
 | 34056417967 | `2a495a99a657` | pull_request | Formal assurance | completed:success |
 | 34056417912 | `2a495a99a657` | pull_request | Rust verification | completed:success |
 | 34056417904 | `2a495a99a657` | pull_request | Repository quality | completed:success |
@@ -28,5 +30,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34055848166 | `6545c9dd4f2f` | pull_request | Repository quality | completed:success |
 | 34055848135 | `6545c9dd4f2f` | pull_request | Rust verification | completed:success |
 | 34055764091 | `d8601c22982f` | pull_request | Repository quality | completed:success |
-| 34055764006 | `d8601c22982f` | pull_request | Rust verification | completed:success |
-| 34055485275 | `cf43bac877af` | pull_request | Repository quality | completed:success |
