@@ -2,7 +2,7 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `b7e9078d53a4a4586beb68bf56233aba206112ac`
+- Product remote main: `7f308cca70386413ec0fc047e8836620b4e59bbe`
 - Local origin/main: `b7e9078d53a4a4586beb68bf56233aba206112ac`
 - Primary worktree head: `b7e9078d53a4a4586beb68bf56233aba206112ac`
 
@@ -10,7 +10,6 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #18 | `fix/sandbox-test-portability@eea3d202b226` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | tests: isolate sandbox scratch fixtures |
 
 ## Recent workflows
 
