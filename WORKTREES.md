@@ -7,6 +7,5 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark` | `main` | `c9568e8603e3` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `71618e18f9a3` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `ef9fb488766b` | 0 | behind 0, ahead 2 |
-| `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `d09a62ee96bf` | 3 | behind 0, ahead 2 |
-| changed files | - | - | - | `docs/QUALITY_GATES.md`, `tools/quality/check_dco.py`, `tools/quality/test_failure_paths.py` |
+| `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `748537c25e3a` | 0 | behind 0, ahead 3 |
 | `agent-systems-benchmark-replay-evaluation` | `feature/replay-evaluation` | `64416f4ac508` | 0 | behind 0, ahead 1 |
