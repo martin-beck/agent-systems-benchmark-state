@@ -11,16 +11,16 @@
   "next_action": "Await coordinator immutable review of signed candidate 658221c45c75cc871e766d1959488aa95402fb9e; publish only after review/base serialization, then require exact-head CI.",
   "observed_branch": "feature/replay-pacing",
   "observed_dirty": 0,
-  "observed_head": "658221c45c75cc871e766d1959488aa95402fb9e",
+  "observed_head": "73d28a431c782e14b172d8309b5f76b71a4f1bf6",
   "owner": "replay-20260906",
   "plan": "../plans/AR-0504.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support immediate, fixed-latency, original-paced and seeded synthetic scenarios.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Implement pacing and replay overhead assessment",
-  "updated_at": "2026-09-06T20:18:55+00:00",
+  "updated_at": "2026-09-06T20:20:29+00:00",
   "worktree_key": "agent-systems-benchmark-replay-pacing"
 }
 ---
