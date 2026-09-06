@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0401",
-  "next_action": "Await coordinator immutable review of signed candidate 3bef7cf; publish only after approval, then require exact-head x86_64/aarch64 CI.",
+  "next_action": "Repair scratch-root boundary, rerun exact full gates, and submit a signed successor to superseded 3bef7cf for independent review.",
   "observed_branch": "feature/engineering-workloads",
   "observed_dirty": 3,
   "observed_head": "3bef7cfada4c419daefa2744cb043a75b314541d",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API.",
-  "task_revision": 86,
+  "task_revision": 87,
   "title": "Implement original engineering workloads",
-  "updated_at": "2026-09-06T22:04:46+00:00",
+  "updated_at": "2026-09-06T22:05:11+00:00",
   "worktree_key": "agent-systems-benchmark-engineering-workloads"
 }
 ---
@@ -303,3 +303,17 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T22:04:46+00:00: Recorded command exit 0; command argv SHA-256
   e26b55cfd93661a30c37cc6dbab5f9afbdb924d9c11c3bee41229267c20fee44.
+
+- 2026-09-06T22:05:11+00:00: Coordinator review found six failed reference-patch attempts leaked
+  under /tmp because workload tests used std::env::temp_dir. Read-only audit verified all six exact
+  mode-700 directories were generated AR-0401 fixture roots with valid public workload owner markers
+  and no live workload process. Removed only those exact generated directories; removal is
+  nonrecoverable but they contained reproducible public test material. Repair now routes test
+  attempts through absolute ASB_TEST_SCRATCH when configured, otherwise an absolute CARGO_TARGET_DIR
+  subdirectory, while retaining an OS-temp fallback for portable external CI; relative configured
+  paths fail closed. All controlled commands set TMPDIR and ASB_TEST_SCRATCH under
+  /srv/data/projects/.asb-local. Focused 9 unit and 2 public API tests pass, no attempt residue
+  remains in configured scratch or /tmp, and a wrapped negative proved relative ASB_TEST_SCRATCH
+  rejection without creating the relative directory. Two initial patch-check commands failed because
+  the hand-written unified diff final hunk count was stale; git apply --recount applied the reviewed
+  patch content.
