@@ -6,6 +6,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | --- | --- | --- | ---: | --- |
 | `agent-systems-benchmark` | `main` | `9543a3297dd9` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-agent-opencode` | `feature/agent-opencode` | `dfb0d548bf75` | 0 | behind 1, ahead 0 |
+| `agent-systems-benchmark-agent-opendesk` | `feature/agent-opendesk` | `9543a3297dd9` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `5fc5616b931b` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 55, ahead 0 |
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 44, ahead 0 |

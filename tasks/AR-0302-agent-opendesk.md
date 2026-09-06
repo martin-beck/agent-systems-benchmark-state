@@ -9,15 +9,18 @@
   ],
   "id": "AR-0302",
   "next_action": "Inspect @bitclub.ai/opendesk-cli commands and protocol version.",
+  "observed_branch": "feature/agent-opendesk",
+  "observed_dirty": 0,
+  "observed_head": "9543a3297dd9d0ca93c802bb204b099ac1df569b",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0302.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support the bitclub OpenDesk CLI with its own dialect and compatibility record.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Implement OpenDesk client adapter",
-  "updated_at": "2026-09-06T21:04:16+00:00",
+  "updated_at": "2026-09-06T21:04:27+00:00",
   "worktree_key": "agent-systems-benchmark-agent-opendesk"
 }
 ---
