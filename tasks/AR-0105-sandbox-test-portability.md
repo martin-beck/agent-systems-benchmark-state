@@ -10,16 +10,16 @@
   "next_action": "Resolve pushed merge 7f308cc DCO/signature identity failure before AR-0105 release; do not repeat merge/fetch or release.",
   "observed_branch": "fix/sandbox-test-portability",
   "observed_dirty": 0,
-  "observed_head": "7f308cca70386413ec0fc047e8836620b4e59bbe",
+  "observed_head": "23035acde688df67aee86b1373b3b1aa87b3b68d",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0105.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Repair sandbox test target portability",
-  "updated_at": "2026-09-06T22:19:40+00:00",
+  "updated_at": "2026-09-06T22:19:58+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-test-portability"
 }
 ---
