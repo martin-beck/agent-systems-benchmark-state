@@ -10,7 +10,7 @@
   "id": "AR-0304",
   "next_action": "Inspect installed Codex help/schema and official provider configuration.",
   "observed_branch": "feature/agent-codex",
-  "observed_dirty": 1,
+  "observed_dirty": 2,
   "observed_head": "52b8b3b12d1fb2ae7cdda0afbc7f728d5e08f44a",
   "owner": "replay-20260906",
   "plan": "../plans/AR-0304.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use Codex noninteractive structured events or app-server with declared capability boundaries.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Implement Codex client adapter",
-  "updated_at": "2026-09-06T23:39:07+00:00",
+  "updated_at": "2026-09-06T23:39:54+00:00",
   "worktree_key": "agent-systems-benchmark-agent-codex"
 }
 ---
