@@ -11,7 +11,7 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #10 | `feature/sandbox-runtime@a2ebac54d8ea` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | runtime: isolate untrusted processes |
-| #11 | `feature/strict-replay@cdd76f988999` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | replay: add strict provider response service |
+| #11 | `feature/strict-replay@cdd76f988999` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS | replay: add strict provider response service |
 
 ## Recent workflows
 
