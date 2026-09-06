@@ -8,7 +8,7 @@
     "AR-0102"
   ],
   "id": "AR-0301",
-  "next_action": "Claim after a fresh reconciliation, then inspect the pinned upstream CLI/server contract and implement the isolated adapter.",
+  "next_action": "Create focused signed+DCO candidate, run commit-policy and exact-tree checks, publish PR, then obtain immutable independent review and exact-head CI before integration.",
   "observed_branch": "feature/agent-opencode",
   "observed_dirty": 3,
   "observed_head": "162110386605a83f963758a07d83e77e2566528a",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned OpenCode through its structured supported interfaces.",
-  "task_revision": 106,
+  "task_revision": 107,
   "title": "Implement OpenCode client adapter",
-  "updated_at": "2026-09-06T19:43:11+00:00",
+  "updated_at": "2026-09-06T19:43:29+00:00",
   "worktree_key": "agent-systems-benchmark-agent-opencode"
 }
 ---
@@ -321,3 +321,12 @@ Dependencies AR-0101 and AR-0102 are done. Read the linked plan and claim after 
 
 - 2026-09-06T19:43:11+00:00: Recorded command exit 0; command argv SHA-256
   c4e2f1dd0f490c3e71a042de93ac3f0052dd2160f7a25ebc86eb8ccc529fb845.
+
+- 2026-09-06T19:43:29+00:00: Pre-commit exact-tree gates passed: fmt, Clippy -D warnings, workspace
+  tests, rustdoc -D warnings, release build and CLI help, cargo-deny, cargo-audit,
+  workspace/critical coverage, actionlint, zizmor, full-tree Gitleaks, controlled failure fixtures,
+  platform manifests/tests, and diff check. Exact pinned OpenCode 1.18.29 Linux x86_64 SHA-256
+  ca6c0e1f42be3120595bf6848937e7586ec862c87fa7aa111e89c7cc6e9a4650 completed the real loopback
+  SSE/tool/cancellation fixture. Adapter line coverage is 97.48%; region evidence is 93.24% and is
+  not represented as a branch metric by this LLVM build. Negative endpoint expansion exposed and
+  repaired bracketed IPv6 loopback handling.
