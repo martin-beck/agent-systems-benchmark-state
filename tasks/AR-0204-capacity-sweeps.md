@@ -16,11 +16,11 @@
   "plan": "../plans/AR-0204.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Run repeated closed-loop and open-loop experiments with bounded concurrency.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Implement capacity sweeps and arrival scheduling",
-  "updated_at": "2026-09-06T15:04:52+00:00",
+  "updated_at": "2026-09-06T20:17:30+00:00",
   "worktree_key": "agent-systems-benchmark-capacity-sweeps"
 }
 ---
