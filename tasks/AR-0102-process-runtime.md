@@ -9,17 +9,17 @@
   "id": "AR-0102",
   "next_action": "Await independent immutable-head review of PR 7 at 836380c; repair any findings without merge/rewrite, then require fresh exact-head CI.",
   "observed_branch": "feature/process-runtime",
-  "observed_dirty": 2,
-  "observed_head": "836380c14ab1d4a15cf92ffac7f3413d56859118",
+  "observed_dirty": 0,
+  "observed_head": "51daeb8608e5e5592aac6ea7b41207fdf50a47c2",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0102.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run real client processes with bounded I/O, monotonic deadlines and process-tree ownership.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Implement process execution and cancellation",
-  "updated_at": "2026-09-06T17:34:30+00:00",
+  "updated_at": "2026-09-06T17:34:55+00:00",
   "worktree_key": "agent-systems-benchmark-process-runtime"
 }
 ---
