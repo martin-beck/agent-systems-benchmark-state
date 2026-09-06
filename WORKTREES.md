@@ -8,5 +8,5 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `71618e18f9a3` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `a40088879e9a` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `d09a62ee96bf` | 0 | behind 0, ahead 2 |
-| `agent-systems-benchmark-replay-evaluation` | `feature/replay-evaluation` | `c9568e8603e3` | 3 | behind 0, ahead 0 |
-| changed files | - | - | - | `docs/REPLAY_RESEARCH.md`, `docs/REPLAY_EVALUATION.md`, `tools/` |
+| `agent-systems-benchmark-replay-evaluation` | `feature/replay-evaluation` | `64416f4ac508` | 1 | behind 0, ahead 1 |
+| changed files | - | - | - | `tools/replay-spike/__pycache__/` |
