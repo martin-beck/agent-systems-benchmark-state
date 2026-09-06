@@ -11,13 +11,13 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #10 | `feature/sandbox-runtime@d8601c22982f` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | runtime: isolate untrusted processes |
-| #13 | `feature/agent-opencode@6545c9dd4f2f` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS: | agents: add pinned OpenCode adapter |
+| #13 | `feature/agent-opencode@6545c9dd4f2f` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | agents: add pinned OpenCode adapter |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34055848166 | `6545c9dd4f2f` | pull_request | Repository quality | queued:- |
+| 34055848166 | `6545c9dd4f2f` | pull_request | Repository quality | in_progress:- |
 | 34055848135 | `6545c9dd4f2f` | pull_request | Rust verification | in_progress:- |
 | 34055764091 | `d8601c22982f` | pull_request | Repository quality | completed:success |
 | 34055764006 | `d8601c22982f` | pull_request | Rust verification | completed:success |
