@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Store versioned provider requests, event streams, causal IDs and integrity metadata.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Implement immutable response cassette format",
-  "updated_at": "2026-09-06T17:31:06+00:00",
+  "updated_at": "2026-09-06T17:31:15+00:00",
   "worktree_key": "agent-systems-benchmark-replay-cassettes"
 }
 ---
@@ -119,3 +119,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T17:31:06+00:00: Recorded command exit 0; command argv SHA-256
   478a975677ac9affd98d41ed8a0f00c450bf0b4c49dec7adfdebcef7a4f0c5f5.
+
+- 2026-09-06T17:31:15+00:00: Recorded command exit 0; command argv SHA-256
+  57246ce1b6d6d693837d8097edeaca98fd56852c8d22b526b878311b3d8c6cae.
