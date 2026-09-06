@@ -7,7 +7,7 @@
     "AR-0102"
   ],
   "id": "AR-0103",
-  "next_action": "Await coordinator post-merge local verification; release AR-0103 only after explicit confirmation.",
+  "next_action": "Await exact-head CI and coordinator independent review of follow-up PR #15 at 28063ae; do not merge or release.",
   "observed_branch": "feature/sandbox-runtime",
   "observed_dirty": 0,
   "observed_head": "28063ae8e7b3dbd9c46a8b071259ed1d8d0a99e5",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 300,
+  "task_revision": 301,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T19:58:25+00:00",
+  "updated_at": "2026-09-06T19:58:42+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
@@ -886,3 +886,17 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T19:58:25+00:00: Recorded command exit 0; command argv SHA-256
   b9fc8fab62de3ca68b0664cc7d2438646b10ef168d6ba6d2cb07d07d62c053ec.
+
+- 2026-09-06T19:58:42+00:00: Post-merge isolated-target portability defect repaired in signed+DCO
+  commit 28063ae8e7b3dbd9c46a8b071259ed1d8d0a99e5 atop exact merge main 4d71697. Native fixture now
+  atomically copies, chmods, fsyncs and renames the current test executable into each unique sandbox
+  work root and uses only its /workspace-relative path; ASB_REQUIRE_EXTERNAL_TARGET proves the
+  source executable is outside the checkout. A RemoveFileOnDrop guard removes host sentinels during
+  panic unwind, with a controlled panic regression. The earlier pre-commit full run passed product
+  gates but repository policy correctly rejected an empty origin/main..HEAD range; another focused
+  run found only the exact stale outside-2837610 sentinel from the original failed post-merge test,
+  which was audited as four-byte host content with dead PID/zero scope then removed. Exact committed
+  full run with external target passed workspace fmt/Clippy/tests/docs/release, three repeated
+  nine-test native runs, Deny/Audit/coverage, analyzers, Gitleaks, policy and all failure fixtures;
+  zero residual scopes/leases/sentinels. Local and remote feature head exact and clean. Follow-up PR
+  #15 opened on exact base 4d71697; await exact-head CI/review.
