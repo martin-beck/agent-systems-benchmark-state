@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #7 | `feature/process-runtime@836380c14ab1` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat: add bounded process runtime |
+| #7 | `feature/process-runtime@836380c14ab1` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS | feat: add bounded process runtime |
 
 ## Recent workflows
 
