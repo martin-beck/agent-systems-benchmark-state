@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-cassettes",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-06T19:36:15+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0501"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/replay-cassettes",
   "observed_dirty": 0,
   "observed_head": "cd88f5703fb300aca18c7d46d7215c1bf6f5b8e5",
-  "owner": "replay-20260906",
+  "owner": "",
   "plan": "../plans/AR-0502.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Store versioned provider requests, event streams, causal IDs and integrity metadata.",
-  "task_revision": 121,
+  "task_revision": 122,
   "title": "Implement immutable response cassette format",
-  "updated_at": "2026-09-06T18:21:54+00:00",
+  "updated_at": "2026-09-06T18:22:27+00:00",
   "worktree_key": "agent-systems-benchmark-replay-cassettes"
 }
 ---
@@ -465,3 +465,18 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T18:21:54+00:00: Recorded command exit 0; command argv SHA-256
   5a2126452bf1a4234fb8732a155186e8cb8c4ef4ce1c03fb60d801c033102609.
+
+- 2026-09-06T18:22:27+00:00: Released after independent immutable review and integration. Product
+  commits 6e7e6d4, 63da219, cd88f570 are SSH-signed and DCO-certified; PR #8 merged via signed+DCO
+  no-ff merge 265d811b765e2300510445bfb7abf59ae5a0604f with exact parents e6a81e8 and cd88f570.
+  Exact-main local fmt, clippy, all workspace tests, rustdoc, release build/CLI positive-negative,
+  repository policy, actionlint, zizmor, Gitleaks, cargo-deny, cargo-audit, controlled failure
+  fixtures, platform validation, clean-tree and byte-identical cassette schema export passed;
+  workspace line coverage 96.69%, replay 97.11%. Exact-main hosted quality/supply run 34051300070
+  job 101535296803 and Rust run 34051300116 x86_64 job 101535297065 plus aarch64 job 101535296933
+  all green. PR and product/state refs are synchronized and clean; full state validation is 97%
+  branch coverage and live doctor passes. Scope limitations remain documented: unkeyed integrity is
+  not authenticity or independent proof of redaction; bounded encoding is not a peak-RSS bound; this
+  AR does not claim replay server, matching/pacing, provider conformance, or native platform proof.
+  Cargo workspace/Cargo.lock serialization fence is explicitly returned to the coordinator;
+  replay-20260906 claims no further AR.
