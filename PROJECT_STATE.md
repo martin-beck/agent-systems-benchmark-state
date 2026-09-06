@@ -10,6 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #8 | `feature/replay-cassettes@cd88f5703fb3` | `main` | UNKNOWN | - | feat: define immutable replay cassettes |
 
 ## Recent workflows
 
