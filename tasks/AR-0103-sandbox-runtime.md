@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 303,
+  "task_revision": 304,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T20:01:17+00:00",
+  "updated_at": "2026-09-06T20:01:56+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
@@ -911,3 +911,6 @@ Implementation has not started. Read the linked plan before claiming.
   covered by 28063ae RemoveFileOnDrop plus controlled panic-unwind regression. External-target
   exact-tree full gates and three native repetitions are green; PR #15 exact-head runs 34056623872
   and 34056623923 are in progress.
+
+- 2026-09-06T20:01:56+00:00: Recorded command exit 0; command argv SHA-256
+  321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
