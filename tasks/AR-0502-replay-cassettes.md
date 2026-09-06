@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Store versioned provider requests, event streams, causal IDs and integrity metadata.",
-  "task_revision": 105,
+  "task_revision": 106,
   "title": "Implement immutable response cassette format",
-  "updated_at": "2026-09-06T18:13:46+00:00",
+  "updated_at": "2026-09-06T18:13:48+00:00",
   "worktree_key": "agent-systems-benchmark-replay-cassettes"
 }
 ---
@@ -392,3 +392,6 @@ Implementation has not started. Read the linked plan before claiming.
   3ae929d773c39f6e76105e06bcd238ee8cf6e6f6dda197fa5607aa14575bd151. One precommit scope-count
   assertion expected 10 instead of observed 12 and failed before commit; corrected exact 12-path
   scope then committed.
+
+- 2026-09-06T18:13:48+00:00: Recorded command exit 0; command argv SHA-256
+  fe08acdf043c6ac5f7899bff5350ac76c64ee8fdcc868260d29fc9dbaf002b2d.
