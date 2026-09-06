@@ -12,7 +12,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-portable-metrics` | `feature/portable-metrics` | `e6a81e8644c6` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `51daeb8608e5` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `748537c25e3a` | 0 | behind 18, ahead 0 |
-| `agent-systems-benchmark-replay-cassettes` | `feature/replay-cassettes` | `63da219cdae9` | 0 | behind 0, ahead 2 |
+| `agent-systems-benchmark-replay-cassettes` | `feature/replay-cassettes` | `63da219cdae9` | 3 | behind 0, ahead 2 |
+| changed files | - | - | - | `crates/asb-replay/README.md`, `crates/asb-replay/src/cassette.rs`, `crates/asb-replay/tests/cassette_roundtrip.rs` |
 | `agent-systems-benchmark-replay-evaluation` | `feature/replay-evaluation` | `3d04a2d5a3b3` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-sandbox-runtime` | `feature/sandbox-runtime` | `e6a81e8644c6` | 4 | behind 0, ahead 0 |
 | changed files | - | - | - | `crates/asb-runtime/README.md`, `crates/asb-runtime/src/lib.rs`, `crates/asb-runtime/src/sandbox.rs`, `crates/asb-runtime/tests/sandbox_boundary.rs` |
