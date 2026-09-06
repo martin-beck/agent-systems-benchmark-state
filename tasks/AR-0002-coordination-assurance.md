@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adapt generic coordination tooling for public ASB workers without importing private state.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Harden reusable coordination framework",
-  "updated_at": "2026-09-06T15:43:18+00:00",
+  "updated_at": "2026-09-06T15:43:24+00:00",
   "worktree_key": "agent-systems-benchmark-coordination-assurance"
 }
 ---
@@ -34,3 +34,6 @@ Implementation has not started. Read the linked plan before claiming.
   93603968961018a5685697e4fdc0d16a9c5a61b1f42200a9b06f9280c3512ebe.
 
 - 2026-09-06T15:43:18+00:00: Heartbeat by root-coordination-20260906.
+
+- 2026-09-06T15:43:24+00:00: Recorded command exit 0; command SHA-256
+  e2b85713773bd4b7221d44e34fba31a3b78616fd9a50f7c8b344a30cd5f8c0b2.
