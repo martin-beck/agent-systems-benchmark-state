@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Repair sandbox test target portability",
-  "updated_at": "2026-09-06T21:38:32+00:00",
+  "updated_at": "2026-09-06T21:38:34+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-test-portability"
 }
 ---
@@ -138,3 +138,6 @@ Implementation has not started. Read the linked plan before claiming.
   functions, 97.61% lines; workspace 93.41% regions, 96.59% lines.
   Candidate/tree/signature/DCO/diff/privacy/scope clean. Earlier second ENOENT and two mechanical
   borrow corrections remain preserved in evidence.
+
+- 2026-09-06T21:38:34+00:00: Recorded command exit 0; command argv SHA-256
+  1e99e8551d531d93db923cc939be3d861761e8275e5ec25889386c7069a2f374.
