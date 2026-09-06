@@ -8,7 +8,7 @@
     "AR-0102"
   ],
   "id": "AR-0304",
-  "next_action": "Inspect installed Codex help/schema and official provider configuration.",
+  "next_action": "Add self-contained real Codex fixture test, then request shared registration fence.",
   "observed_branch": "feature/agent-codex",
   "observed_dirty": 2,
   "observed_head": "52b8b3b12d1fb2ae7cdda0afbc7f728d5e08f44a",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use Codex noninteractive structured events or app-server with declared capability boundaries.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Implement Codex client adapter",
-  "updated_at": "2026-09-06T23:40:40+00:00",
+  "updated_at": "2026-09-06T23:41:01+00:00",
   "worktree_key": "agent-systems-benchmark-agent-codex"
 }
 ---
@@ -150,3 +150,24 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T23:40:40+00:00: Recorded command exit 0; command argv SHA-256
   84a8236cb9a8e73983eafe5263e68aa703b6a8a65a6aa1c4b7091a7a479c7a93.
+
+- 2026-09-06T23:41:01+00:00: Inspected installed Codex CLI 0.153.4 help and generated app-server
+  schemas; pinned exercised x86_64 executable SHA-256
+  56ef98ab4032d317ab26e9b5e5a175650717351edb16ed9cde0cb6d1734d62da without recording its private
+  path. Official Codex exec/config/Responses docs establish --json JSONL, --ephemeral,
+  model_provider/base_url/env_key/requires_openai_auth and responses-only wire API. Implemented
+  isolated codex.rs plus CODEX.md: content pin, env/config isolation, unlinked prompt fd, explicit
+  credential-free Responses provider, process-group cancellation, bounded duplicate-free JSONL
+  decoder, redacted lifecycle/tool/usage results, and explicit unsupported
+  subscription/app-server/WebSocket/replay/account routes. Isolated cargo test 6/6 and clippy -D
+  warnings pass under /srv scratch. Initial cargo commands failed exit 127 because wrapper PATH
+  omitted cargo; explicit /srv toolchain fixed environment. First real fixture attempt exited 124
+  because the server handled a GET model probe then stopped; repaired server lifecycle. Real pinned
+  binary credential-free loopback fixture then completed two Responses requests, executed
+  exec_command write inside the declared /srv workspace, emitted thread/turn/tool/message/usage
+  JSONL, and provider authorization/base route/model assertions passed. Ambient manual invocation
+  exposed configured plugins; repeating with empty environment and isolated HOME removed app/plugin
+  tools, matching adapter boundary. Scratch fixture script digest
+  cdf6663a7b24eb871937f4da9b19533671b5f1ad3d32fa95e2a54b022432a26f before subsequent transparent
+  repairs; scratch is not committed. Shared lib.rs/Cargo registration remains untouched due AR-0303
+  overlap/fence.
