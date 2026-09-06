@@ -10,17 +10,17 @@
   "id": "AR-0201",
   "next_action": "Await coordinator transfer of serialized Cargo workspace/lock fence; then integrate crate membership on current main, rerun exact-workspace/full quality gates, publish PR, and obtain immutable review.",
   "observed_branch": "feature/portable-metrics",
-  "observed_dirty": 1,
-  "observed_head": "2a487aab55c638b5be2cfc11d43b28b4163e905a",
+  "observed_dirty": 0,
+  "observed_head": "87b00453da6f9cd5c31dd5de3f5be9260edd41a6",
   "owner": "quality-20260906",
   "plan": "../plans/AR-0201.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Collect portable system and session metrics",
-  "updated_at": "2026-09-06T18:40:40+00:00",
+  "updated_at": "2026-09-06T18:40:50+00:00",
   "worktree_key": "agent-systems-benchmark-portable-metrics"
 }
 ---
