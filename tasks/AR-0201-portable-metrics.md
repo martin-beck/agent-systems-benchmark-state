@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Collect portable system and session metrics",
-  "updated_at": "2026-09-06T18:36:05+00:00",
+  "updated_at": "2026-09-06T18:36:07+00:00",
   "worktree_key": "agent-systems-benchmark-portable-metrics"
 }
 ---
@@ -168,3 +168,6 @@ Implementation has not started. Read the linked plan before claiming.
   cgroup-v2 evidence observed controlled CPU/RSS/fault/write deltas, 16/18 live cgroup values, and
   64/64 process samples with zero loss; absent and permission-denied sources remained unavailable.
   Root Cargo files remain untouched.
+
+- 2026-09-06T18:36:07+00:00: Recorded command exit 0; command argv SHA-256
+  72cd46f506b27f48e800faca579474e64d6ea681d4814f8f6c9e15987ffef562.
