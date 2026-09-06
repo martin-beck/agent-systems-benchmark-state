@@ -7,7 +7,7 @@
     "AR-0001"
   ],
   "id": "AR-0501",
-  "next_action": "Read REPLAY_RESEARCH and run the bounded compatibility spike.",
+  "next_action": "Wait for AR-0003 PR-range DCO workflow fix, update PR #4 onto it, then require fresh exact-head CI and independent review.",
   "observed_branch": "feature/replay-evaluation",
   "observed_dirty": 1,
   "observed_head": "64416f4ac50853c7364872e11bb66064095e99d9",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Compare literature and record/replay implementations using identical synthetic conformance cases.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Evaluate replay literature and reusable tools",
-  "updated_at": "2026-09-06T16:15:20+00:00",
+  "updated_at": "2026-09-06T16:16:18+00:00",
   "worktree_key": "agent-systems-benchmark-replay-evaluation"
 }
 ---
@@ -153,3 +153,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T16:15:20+00:00: Recorded command exit 0; command SHA-256
   6e5c0bd5e5aa578927f99bb4e80a6196c2e5a67424fa7a5f572a72bb9f63713c.
+
+- 2026-09-06T16:16:18+00:00: Published SSH-signed DCO commit
+  64416f4ac50853c7364872e11bb66064095e99d9 as product PR #4. Six credential-free fixture tests,
+  Ruff, full Rust gates, exact scope/privacy review and Gitleaks passed. Boundary spikes found buffr
+  closest but unsafe for session cursors/bounds/body redaction/truncation; llmtape loses SSE
+  fidelity and strict fields; promptecho buffers and loses pacing/session/causal isolation.
+  Mitmproxy and WireMock require missing ASB semantics; agrepl tests do not compile and its pin
+  lacks a project license. Exact-head CI run 34044850943 passed all Rust steps on x86_64 and arm64
+  but both jobs failed only the known whole-history DCO workflow owned by AR-0003. Earlier
+  bash-stdin command hashes are argv-only and non-unique; named evidence and external synthetic
+  artifacts were separately inspected.
