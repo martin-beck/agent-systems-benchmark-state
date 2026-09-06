@@ -10,17 +10,17 @@
   "id": "AR-0503",
   "next_action": "Independently review five-path diff, run complete exact-tree workspace/quality/privacy/supply gates, then create a focused signed+DCO candidate; root Cargo files remain untouched.",
   "observed_branch": "feature/strict-replay",
-  "observed_dirty": 5,
-  "observed_head": "265d811b765e2300510445bfb7abf59ae5a0604f",
+  "observed_dirty": 0,
+  "observed_head": "955d8961203953c812cf74e9f040c6c668e82975",
   "owner": "replay-20260906",
   "plan": "../plans/AR-0503.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Serve local recorded responses while real agent and tools execute.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Implement strict provider response replay",
-  "updated_at": "2026-09-06T18:49:40+00:00",
+  "updated_at": "2026-09-06T18:49:59+00:00",
   "worktree_key": "agent-systems-benchmark-strict-replay"
 }
 ---
