@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make planned-to-open promotion a transactional handoffctl operation.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Add transactional AR promotion",
-  "updated_at": "2026-09-06T20:56:29+00:00",
+  "updated_at": "2026-09-06T20:56:48+00:00",
   "worktree_key": "agent-systems-benchmark-state-promotion"
 }
 ---
@@ -65,3 +65,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T20:56:29+00:00: Recorded command exit 0; command argv SHA-256
   7dd7b116dd1d7d72f061ba4546090cbd5630fa7017da6663c1dc0849df4f302f.
+
+- 2026-09-06T20:56:48+00:00: Recorded command exit 1; command argv SHA-256
+  f455e90e8e6bb813820a01817232a002c5d8e0f2d792bb20a6efb82c785c1535.
