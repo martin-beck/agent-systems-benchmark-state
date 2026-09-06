@@ -10,12 +10,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #22 | `feature/agent-aider@da81ead6932c` | `main` | UNKNOWN | - | feat(agents): add bounded Aider adapter |
+| #22 | `feature/agent-aider@da81ead6932c` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(agents): add bounded Aider adapter |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34067916415 | `da81ead6932c` | pull_request | Formal assurance | in_progress:- |
+| 34067916388 | `da81ead6932c` | pull_request | Repository quality | in_progress:- |
+| 34067916273 | `da81ead6932c` | pull_request | Rust verification | in_progress:- |
 | 34067451296 | `311c12864961` | push | Formal assurance | completed:success |
 | 34067451294 | `311c12864961` | push | Rust verification | completed:success |
 | 34067451293 | `311c12864961` | push | Repository quality | completed:success |
@@ -25,6 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34066173892 | `52b8b3b12d1f` | push | Rust verification | completed:success |
 | 34066173868 | `52b8b3b12d1f` | push | Repository quality | completed:success |
 | 34066173852 | `52b8b3b12d1f` | push | Formal assurance | completed:success |
-| 34065861661 | `41ffc6eb8f1a` | pull_request | Rust verification | completed:success |
-| 34065861641 | `41ffc6eb8f1a` | pull_request | Formal assurance | completed:success |
-| 34065861614 | `41ffc6eb8f1a` | pull_request | Repository quality | completed:success |
