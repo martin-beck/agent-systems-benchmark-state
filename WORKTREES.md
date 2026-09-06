@@ -4,7 +4,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
-| `agent-systems-benchmark` | `main` | `3cfb8716da8c` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark` | `main` | `52b8b3b12d1f` | 0 | behind 0, ahead 6 |
 | `agent-systems-benchmark-agent-aider` | `feature/agent-aider` | `3cfb8716da8c` | 3 | behind 0, ahead 0 |
 | changed files | - | - | - | `crates/asb-agents/src/lib.rs`, `crates/asb-agents/src/aider.rs`, `crates/asb-agents/tests/real_aider.rs` |
 | `agent-systems-benchmark-agent-opencode` | `feature/agent-opencode` | `dfb0d548bf75` | 0 | behind 8, ahead 0 |
