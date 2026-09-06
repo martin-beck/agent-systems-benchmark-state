@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define Ubuntu, Debian, Fedora, enterprise, openSUSE, Arch, Alpine and openEuler target manifests.",
-  "task_revision": 142,
+  "task_revision": 143,
   "title": "Pin distribution and architecture support matrix",
-  "updated_at": "2026-09-06T17:04:45+00:00",
+  "updated_at": "2026-09-06T17:06:14+00:00",
   "worktree_key": "agent-systems-benchmark-platform-manifests"
 }
 ---
@@ -433,3 +433,6 @@ Implementation has not started. Read the linked plan before claiming.
   fixtures; Rust run 34047347503 passed both native GitHub-hosted x86_64 and arm64 jobs. Head
   a800ca3b9169d9a04912f78f98a6bd78316b6729 remains clean, signed+DCO, and based on main 9db4b6d. PR
   #5 remains open pending renewed independent review.
+
+- 2026-09-06T17:06:14+00:00: Recorded command exit 0; command argv SHA-256
+  61ac4ccd495f320f1ccb802b7636dd308106d949cbf653c16660e11b6886e8aa.
