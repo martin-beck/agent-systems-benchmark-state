@@ -12,6 +12,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- | --- |
 | #1 | `feature/coordination-docs@71618e18f9a3` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE | Correct handoffctl run syntax |
 | #2 | `feature/quality-gates@d09a62ee96bf` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: enforce repository quality gates |
+| #3 | `feature/extension-contracts@a40088879e9a` | `main` | CLEAN | - | Define extension protocol v1 contracts |
 
 ## Recent workflows
 
