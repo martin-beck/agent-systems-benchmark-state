@@ -12,7 +12,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- | --- |
 | #10 | `feature/sandbox-runtime@a2ebac54d8ea` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | runtime: isolate untrusted processes |
 | #11 | `feature/strict-replay@c20fdccb91ab` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | replay: add strict provider response service |
-| #12 | `feature/portable-metrics@a0f67bea1ffe` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | metrics: add portable Linux collectors |
+| #12 | `feature/portable-metrics@a0f67bea1ffe` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS | metrics: add portable Linux collectors |
 
 ## Recent workflows
 
