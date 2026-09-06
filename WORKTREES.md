@@ -11,7 +11,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 55, ahead 0 |
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 44, ahead 0 |
 | `agent-systems-benchmark-engineering-workloads` | `feature/engineering-workloads` | `68f313fcb4fa` | 0 | behind 4, ahead 0 |
-| `agent-systems-benchmark-experiment-comparability` | `feature/experiment-comparability` | `bda6bc41760a` | 4 | behind 9, ahead 0 |
+| `agent-systems-benchmark-experiment-comparability` | `feature/experiment-comparability` | `9543a3297dd9` | 4 | behind 0, ahead 0 |
 | changed files | - | - | - | `crates/asb-analysis/README.md`, `crates/asb-protocol/README.md`, `crates/asb-analysis/src/comparison.rs`, `crates/asb-protocol/src/experiment.rs` |
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 52, ahead 0 |
 | `agent-systems-benchmark-formal-assurance` | `feature/formal-assurance` | `2a495a99a657` | 0 | behind 10, ahead 0 |
