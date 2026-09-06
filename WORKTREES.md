@@ -7,6 +7,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark` | `main` | `52b8b3b12d1f` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-agent-aider` | `feature/agent-aider` | `3cfb8716da8c` | 3 | behind 6, ahead 0 |
 | changed files | - | - | - | `crates/asb-agents/src/lib.rs`, `crates/asb-agents/src/aider.rs`, `crates/asb-agents/tests/real_aider.rs` |
+| `agent-systems-benchmark-agent-codex` | `feature/agent-codex` | `52b8b3b12d1f` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-agent-opencode` | `feature/agent-opencode` | `dfb0d548bf75` | 0 | behind 14, ahead 0 |
 | `agent-systems-benchmark-agent-opendesk` | `feature/agent-opendesk` | `8eb99d3c7235` | 0 | behind 7, ahead 0 |
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `cabf0f08a6a6` | 0 | behind 6, ahead 1 |
