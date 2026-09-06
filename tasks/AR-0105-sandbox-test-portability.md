@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Repair sandbox test target portability",
-  "updated_at": "2026-09-06T22:10:24+00:00",
+  "updated_at": "2026-09-06T22:10:38+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-test-portability"
 }
 ---
@@ -227,3 +227,6 @@ Implementation has not started. Read the linked plan before claiming.
   Prepublication recheck confirms clean tree, repository target absent, exact origin/main b7e9078,
   no existing remote feature ref or PR, valid signature/DCO, Gitleaks clean and repository policy
   pass.
+
+- 2026-09-06T22:10:38+00:00: Recorded command exit 0; command argv SHA-256
+  03cf37fa29f3b008bcf13d35ae6db0de79b500cae9bd62ca5e4f9308b7c87e37.
