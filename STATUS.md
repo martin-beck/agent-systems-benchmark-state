@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**79 ARs tracked** across 3 active status categories.
+**79 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 54 |
+| **Planned** | Defined work awaiting promotion or dependencies | 53 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 22 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -54,7 +54,7 @@ flowchart LR
         AR_0301["AR-0301 - Done"]:::status_done
         AR_0302["AR-0302 - Done"]:::status_done
         AR_0303["AR-0303 - In progress"]:::status_in_progress
-        AR_0304["AR-0304 - Planned"]:::status_planned
+        AR_0304["AR-0304 - Open"]:::status_open
         AR_0305["AR-0305 - Planned"]:::status_planned
         AR_0306["AR-0306 - Planned"]:::status_planned
         AR_0307["AR-0307 - Planned"]:::status_planned
@@ -503,11 +503,16 @@ flowchart LR
 | P1 | [AR-0303](tasks/AR-0303-agent-aider.md): Implement aider client adapter | root-coordination-20260906 | Support unattended aider editing with bounded input, output and repository changes. | Inspect aider batch invocation and editing lifecycle. |
 | P1 | [AR-0310](tasks/AR-0310-provider-profile-contract.md): Define common provider profiles | quality-20260906 | Normalize one provider configuration for safe translation across heterogeneous agent adapters. | Await AR-0401 fence transfer, then wire provider module, schemas, fixtures, adapter interface, and full gates. |
 
-### Planned (54)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0304](tasks/AR-0304-agent-codex.md): Implement Codex client adapter | Unclaimed | Use Codex noninteractive structured events or app-server with declared capability boundaries. | Inspect installed Codex help/schema and official provider configuration. |
+
+### Planned (53)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P1 | [AR-0305](tasks/AR-0305-agent-gemini.md): Implement Gemini CLI client adapter | Unclaimed | Run pinned Gemini CLI through noninteractive JSON events. | Inspect the current official stable release, transition constraints, stream-JSON contract and provider override. |
 | P1 | [AR-0306](tasks/AR-0306-agent-qwen-code.md): Implement Qwen Code client adapter | Unclaimed | Run pinned Qwen Code through isolated headless stream-JSON. | Inspect the current stable release, stream-JSON contract, provider override and ambient context loading. |
 | P1 | [AR-0307](tasks/AR-0307-agent-goose.md): Implement goose client adapter | Unclaimed | Run pinned AAIF goose in no-session structured mode. | Inspect current release assets, structured run mode, provider configuration and extension failure behavior. |
