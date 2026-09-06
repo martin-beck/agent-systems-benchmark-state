@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support unattended aider editing with bounded input, output and repository changes.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Implement aider client adapter",
-  "updated_at": "2026-09-06T22:51:13+00:00",
+  "updated_at": "2026-09-06T22:51:18+00:00",
   "worktree_key": "agent-systems-benchmark-agent-aider"
 }
 ---
@@ -35,3 +35,6 @@ Implementation has not started. Read the linked plan before claiming.
   Cargo/schema edit is authorized.
 
 - 2026-09-06T22:50:59+00:00: Claimed by root-coordination-20260906.
+
+- 2026-09-06T22:51:18+00:00: Recorded command exit 0; command argv SHA-256
+  460eebde321c1878ba0bc62e4b92d7992a61f6dddedba662ec9d9e121702173a.
