@@ -10,6 +10,12 @@ Never edit this file directly.
 | P1 | [AR-0101](tasks/AR-0101-extension-contracts.md): Freeze versioned extension and result contracts | Specify typed agent, workload, collector, runtime and result contracts before parallel implementations. | Await independent delta review and coordinator integration of exact green head 488d6ca1; then run post-merge verification. | contracts-20260906 |
 | P1 | [AR-0501](tasks/AR-0501-replay-evaluation.md): Evaluate replay literature and reusable tools | Compare literature and record/replay implementations using identical synthetic conformance cases. | Await independent immutable-head review and coordinator integration of product PR #4; then run post-merge verification before release. | replay-20260906 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0701](tasks/AR-0701-platform-manifests.md): Pin distribution and architecture support matrix | Define Ubuntu, Debian, Fedora, enterprise, openSUSE, Arch, Alpine and openEuler target manifests. | Claim with the designated platform worker, then verify pinned distro images and toolchain and agent package availability. | - |
+
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -29,7 +35,6 @@ Never edit this file directly.
 | P1 | [AR-0503](tasks/AR-0503-strict-replay.md): Implement strict provider response replay | Serve local recorded responses while real agent and tools execute. | Implement matching and streaming with explicit per-dialect capabilities. | - |
 | P1 | [AR-0504](tasks/AR-0504-replay-pacing.md): Implement pacing and replay overhead assessment | Support immediate, fixed-latency, original-paced and seeded synthetic scenarios. | Implement monotonic scheduling and replay service headroom calibration. | - |
 | P1 | [AR-0505](tasks/AR-0505-agent-replay-conformance.md): Prove real-agent replay conformance | Test each actual client through recording and offline replay of engineering tasks. | Build production-boundary integration matrix using synthetic upstream service. | - |
-| P1 | [AR-0701](tasks/AR-0701-platform-manifests.md): Pin distribution and architecture support matrix | Define Ubuntu, Debian, Fedora, enterprise, openSUSE, Arch, Alpine and openEuler target manifests. | Verify supported distro images and toolchain/agent package availability. | - |
 | P1 | [AR-0702](tasks/AR-0702-native-platforms.md): Validate native Linux kernels and architectures | Exercise native x86_64 and aarch64 including booted openEuler kernels. | Provision disposable native test environments with isolated benchmark resources. | - |
 | P1 | [AR-0801](tasks/AR-0801-terminal-interface.md): Implement terminal and automation interfaces | Provide doctor, plan, run, sweep, compare and report with stable JSON output. | Build planned commands around public library interfaces. | - |
 | P1 | [AR-0901](tasks/AR-0901-formal-assurance.md): Prove critical state and concurrency invariants | Use bounded proofs and model tests for safety-critical domain logic. | Select small pure invariants and pin compatible verifier toolchains. | - |
