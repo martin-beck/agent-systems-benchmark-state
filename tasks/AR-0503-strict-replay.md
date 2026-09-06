@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Serve local recorded responses while real agent and tools execute.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Implement strict provider response replay",
-  "updated_at": "2026-09-06T18:40:05+00:00",
+  "updated_at": "2026-09-06T18:40:27+00:00",
   "worktree_key": "agent-systems-benchmark-strict-replay"
 }
 ---
@@ -62,3 +62,12 @@ Dependencies AR-0102 and AR-0502 are done. Read the linked plan and claim after 
 
 - 2026-09-06T18:40:05+00:00: Recorded command exit 101; command argv SHA-256
   30b33da88ce44dcd457b19040bbad7f9ed195d1267801c4cc43fa936c59bf089.
+
+- 2026-09-06T18:40:27+00:00: Focused strict replay test build now succeeds and 7/9 tests pass. Two
+  assertions failed because they searched wire payloads for response IDs stored only in cassette
+  metadata, and one used the wrong fixed byte-window length; matching, isolation, and HTTP behavior
+  themselves succeeded. Repair assertions to validate independent success/SSE terminators and exact
+  payload bytes, then rerun. Earlier compile failures were limited to a needless Ord derive, a
+  borrow lifetime, raw-byte delimiter, and missing Vec type; all were fixed without root Cargo
+  changes. One evidence update itself first met a concurrent reconcile stale-revision fence at
+  expected 14/current 15 and was safely retried without overwriting state.
