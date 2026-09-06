@@ -8,7 +8,7 @@
     "AR-0201"
   ],
   "id": "AR-0504",
-  "next_action": "Integrate paced delivery with the strict socket reservation boundary, expand deterministic negative/concurrency evidence, then run exact-tree full gates.",
+  "next_action": "Run exact-tree coverage and complete workspace quality, formal, privacy and supply-chain gates; then create focused signed+DCO candidate for immutable review.",
   "observed_branch": "feature/replay-pacing",
   "observed_dirty": 6,
   "observed_head": "162110386605a83f963758a07d83e77e2566528a",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support immediate, fixed-latency, original-paced and seeded synthetic scenarios.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Implement pacing and replay overhead assessment",
-  "updated_at": "2026-09-06T20:10:44+00:00",
+  "updated_at": "2026-09-06T20:10:59+00:00",
   "worktree_key": "agent-systems-benchmark-replay-pacing"
 }
 ---
@@ -165,3 +165,20 @@ a fresh reconciliation.
   4da82d1778995e32974f5746ac0ad5498ab28faaa361e7c2742c4cfe85df4034.
 
 - 2026-09-06T20:10:44+00:00: Heartbeat by replay-20260906.
+
+- 2026-09-06T20:10:59+00:00: Repaired pacing boundedness and cursor semantics after coordinator
+  review. Recorded/original desired offsets and cumulative fixed/seeded schedules now fail closed
+  above five minutes; segment count rejects above cassette MAX_EVENTS before schedule allocation.
+  Production loopback TCP writes now use an absolute deadline across each full HTTP head or semantic
+  segment, including repeated slow partial progress; standalone generic Write remains
+  caller-bounded. Pre-write lateness reports the exact number already completed so a rejected final
+  segment is retryable; a fully written over-bound final segment reports complete and commits to
+  prevent duplicate full delivery. Added deterministic offset/count, slow-progress deadline,
+  final-lateness retry, and final-complete commit negatives. Focused asb-replay all-target tests
+  passed (66 tests), Clippy -D warnings passed, and fmt passed. Successful generated repair diffs
+  SHA-256 c6d0a2d512d185245048d4fdd4c261455c7daa43f7534f4c495c1497b7d66181,
+  a7bd83431aff1be98182ebbe05357c213f15a4327d3e9a0d0f12aeb70cef4b20, and
+  65de4e76cf851abf0c35707e2ab554bbae3abd895e7e8a1db40bf98bbde60e41; stable cfg-test patch SHA-256
+  8c044d0c0900fdb1a639c64681961c1b426eda0e912e7148a53c6ad5f56b5589. Earlier stable patch attempts
+  9b1265b0..., a6de4d37..., and 5bff684d... were rejected as corrupt with no product effect; failed
+  fmt/test/Clippy invocations were recorded separately and then corrected.
