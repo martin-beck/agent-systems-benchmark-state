@@ -8,7 +8,7 @@
     "AR-0501"
   ],
   "id": "AR-0502",
-  "next_action": "Complete crate-local v1 schema and synthetic fixtures; await serialized Cargo handoff before compilation.",
+  "next_action": "Await explicit Cargo fence transfer after AR-0102 serialization; then integrate exact current main, add only asb-replay manifest/workspace lock changes, compile, and repair.",
   "observed_branch": "feature/replay-cassettes",
   "observed_dirty": 1,
   "observed_head": "10974f60be6fc79d0d07f64bfa212197eeee2082",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Store versioned provider requests, event streams, causal IDs and integrity metadata.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Implement immutable response cassette format",
-  "updated_at": "2026-09-06T17:31:15+00:00",
+  "updated_at": "2026-09-06T17:32:31+00:00",
   "worktree_key": "agent-systems-benchmark-replay-cassettes"
 }
 ---
@@ -122,3 +122,19 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T17:31:15+00:00: Recorded command exit 0; command argv SHA-256
   57246ce1b6d6d693837d8097edeaca98fd56852c8d22b526b878311b3d8c6cae.
+
+- 2026-09-06T17:32:31+00:00: Crate-local design pass completed. Two synthetic sealed fixtures have
+  independently recomputed matching SHA-256 content digests; JSON syntax, rustfmt, and diff checks
+  pass without build/cache writes. Strengthened the pre-persistence boundary so seal_cassette
+  accepts only a private RedactedCassetteContents wrapper created by the versioned redactor. Causal
+  response and tool identities and migration graphs are scoped by session/attempt so identical
+  parallel sessions do not collide or cross-reference. Added duplicate-JSON-member rejection before
+  interpretation, bounded chunk accumulation, streamed terminal/order checks, strict per-scope
+  causal negatives, redaction ambiguity/marker/double-encoding/missing-path negatives, and migration
+  mutation tests. Retained final patch hashes include
+  c2b7c34b41b5791f35772d25b20f85267ad6c53062bf2bb63001314ce0a08bde,
+  6016ee8b99bfffb4f4a600d15de907e3cb09e9923bd9a0e7a637476b714c7224,
+  42a0e022097ea6cdff87e428ff068947048c5a4df6634bfca9aed54921fb0b63,
+  b4ec1eaaeabf821c3273c5f83e1b805f8c884c50fcaaa7d49ddf5932045bc519, and
+  102c3d68801e2b877f60f398fe960295252cf9065edfb2a89f20a995336eabbd. Failed intermediate patch
+  applications were atomic and caused no product effect.
