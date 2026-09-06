@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Serve local recorded responses while real agent and tools execute.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Implement strict provider response replay",
-  "updated_at": "2026-09-06T18:35:27+00:00",
+  "updated_at": "2026-09-06T18:35:29+00:00",
   "worktree_key": "agent-systems-benchmark-strict-replay"
 }
 ---
@@ -44,3 +44,6 @@ Dependencies AR-0102 and AR-0502 are done. Read the linked plan and claim after 
   clean at base. To preserve transparent provenance and avoid executable stdin, the retry will use a
   stable patch artifact under /srv/data/projects/.asb-local with its SHA-256 recorded before
   application through handoffctl run.
+
+- 2026-09-06T18:35:29+00:00: Recorded command exit 1; command argv SHA-256
+  d7677fac85e81fd27076757c034b64a2d2bafc79defd5568962ca34a3f562317.
