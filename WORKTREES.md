@@ -4,7 +4,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
-| `agent-systems-benchmark` | `main` | `c9e3653ebd99` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark` | `main` | `ef1a6578600b` | 0 | behind 0, ahead 10 |
 | `agent-systems-benchmark-agent-opencode` | `feature/agent-opencode` | `c9e3653ebd99` | 1 | behind 0, ahead 0 |
 | changed files | - | - | - | `crates/asb-agents/` |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 24, ahead 0 |

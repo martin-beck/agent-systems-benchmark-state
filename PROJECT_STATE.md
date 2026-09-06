@@ -4,7 +4,7 @@ Generated from local Git and GitHub. Do not edit.
 
 - Product remote main: `c9e3653ebd9955f433e65f0c3110421166ac03c7`
 - Local origin/main: `c9e3653ebd9955f433e65f0c3110421166ac03c7`
-- Primary worktree head: `c9e3653ebd9955f433e65f0c3110421166ac03c7`
+- Primary worktree head: `ef1a6578600b45f4afb4dd414131f9ffd2ddd01f`
 
 ## Open pull requests
 
