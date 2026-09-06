@@ -10,16 +10,16 @@
   "next_action": "Amend the focused signed DCO candidate with bounded force-kill scope cleanup, rerun exact-tree full quality/privacy/supply-chain gates, publish PR, and await immutable-head review/CI.",
   "observed_branch": "feature/sandbox-runtime",
   "observed_dirty": 0,
-  "observed_head": "dcafd1114c7cec68f32afdc15def351ec2d8d567",
+  "observed_head": "a2ebac54d8ea8d2337b1a73ac3ac4fccfbd4c581",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0103.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 125,
+  "task_revision": 126,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T18:44:09+00:00",
+  "updated_at": "2026-09-06T18:44:13+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
