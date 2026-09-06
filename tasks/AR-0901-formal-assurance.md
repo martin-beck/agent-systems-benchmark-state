@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use bounded proofs and model tests for safety-critical domain logic.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Prove critical state and concurrency invariants",
-  "updated_at": "2026-09-06T19:16:19+00:00",
+  "updated_at": "2026-09-06T19:16:21+00:00",
   "worktree_key": "agent-systems-benchmark-formal-assurance"
 }
 ---
@@ -34,3 +34,6 @@ Dependencies AR-0101, AR-0102, AR-0502, and AR-0203 are done. Read the linked
 plan and claim after a fresh reconciliation.
 
 - 2026-09-06T19:16:06+00:00: Claimed by quality-20260906.
+
+- 2026-09-06T19:16:21+00:00: Recorded command exit 0; command argv SHA-256
+  7aad11c2503df23d97721d092f9a3a870a0ebf6ab5ce6ac1b5b70a03cab1f532.
