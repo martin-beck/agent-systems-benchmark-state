@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T17:46:58+00:00",
+  "updated_at": "2026-09-06T17:48:05+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
@@ -50,3 +50,6 @@ Implementation has not started. Read the linked plan before claiming.
   mounts, systemd user-scope resource properties, explicit CPU reservation leases disjoint from CI
   resources, bounded inputs, and documented cgroup/daemonization/platform limits. No root Cargo/lock
   mutation.
+
+- 2026-09-06T17:48:05+00:00: Recorded command exit 1; command argv SHA-256
+  db87c36f5743872c9f740f2105268de6e24fec38fa74e935a559fae7d506dbb7.
