@@ -8,7 +8,7 @@
     "AR-0102"
   ],
   "id": "AR-0201",
-  "next_action": "Await independent immutable-head review of product PR #12 exact 4f33a142ea117c63a8f41f70569691ce99a0ff64; both exact-head hosted workflows are green. Retain Cargo workspace/lock fence.",
+  "next_action": "Await repeat independent review of repaired PR #12 exact a0f67bea1ffe50fd80bc42009761a4388798603a and fresh exact-head hosted CI. Retain Cargo workspace/lock fence.",
   "observed_branch": "feature/portable-metrics",
   "observed_dirty": 0,
   "observed_head": "a0f67bea1ffe50fd80bc42009761a4388798603a",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling.",
-  "task_revision": 149,
+  "task_revision": 150,
   "title": "Collect portable system and session metrics",
-  "updated_at": "2026-09-06T19:03:31+00:00",
+  "updated_at": "2026-09-06T19:03:51+00:00",
   "worktree_key": "agent-systems-benchmark-portable-metrics"
 }
 ---
@@ -409,3 +409,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T19:03:31+00:00: Recorded command exit 0; command argv SHA-256
   2daf7e2059343b1d137c170ab6d0688ae6dcbe2cfbab9b4ee42f43b432cec5f8.
+
+- 2026-09-06T19:03:51+00:00: Repaired both immutable-review blockers in focused SSH-signed+DCO
+  commit a0f67bea: Collection samples/evidence are now private with read-only accessors and two
+  external compile-fail forgery tests; self cgroup membership uses the 1 MiB bounded/redacted reader
+  with an oversized-source failure fixture. Focused tests pass (7 unit, 6 native plus privilege-drop
+  child, 2 compile-fail doctests). Full workspace fmt/clippy/tests/docs/release, coverage (workspace
+  96.84%, metrics 95.64%), audit/deny, actionlint/zizmor/Gitleaks/policy, deliberate gate failures
+  and platform validators all pass. Updated PR #12 with exact old-head lease from 4f33a142 to
+  a0f67bea; branch clean and synchronized. Fresh runs: quality 34053668506; Rust 34053668457.
