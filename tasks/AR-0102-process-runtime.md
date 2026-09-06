@@ -9,17 +9,17 @@
   "id": "AR-0102",
   "next_action": "Await coordinator Cargo handoff after AR-0104 integration, then add asb-runtime workspace member, resolve locked rustix dependency, compile and repair every real process-boundary test.",
   "observed_branch": "feature/process-runtime",
-  "observed_dirty": 3,
-  "observed_head": "5c9b79b2a25ef2a7a485e53728ef0dfdfdd36530",
+  "observed_dirty": 0,
+  "observed_head": "836380c14ab1d4a15cf92ffac7f3413d56859118",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0102.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run real client processes with bounded I/O, monotonic deadlines and process-tree ownership.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Implement process execution and cancellation",
-  "updated_at": "2026-09-06T17:28:29+00:00",
+  "updated_at": "2026-09-06T17:28:39+00:00",
   "worktree_key": "agent-systems-benchmark-process-runtime"
 }
 ---
