@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0401",
-  "next_action": "Await independent immutable review of clean signed successor 6f80867; publish only after approval and exact-base recheck, then require x86_64/aarch64 exact-head CI.",
+  "next_action": "Await independent immutable review of clean signed grader-repair head 79cb942; publish only after approval and exact-base recheck, then require x86_64/aarch64 exact-head CI.",
   "observed_branch": "feature/engineering-workloads",
   "observed_dirty": 0,
   "observed_head": "79cb9426d1b9a859682042f9bfb7c64bbe923284",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API.",
-  "task_revision": 135,
+  "task_revision": 136,
   "title": "Implement original engineering workloads",
-  "updated_at": "2026-09-06T22:36:22+00:00",
+  "updated_at": "2026-09-06T22:36:50+00:00",
   "worktree_key": "agent-systems-benchmark-engineering-workloads"
 }
 ---
@@ -461,3 +461,26 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T22:36:22+00:00: Recorded command exit 0; command argv SHA-256
   d39ba25fc1865008e2774155cc06d5f8ff3af564b7a438eef870438421eeb679.
+
+- 2026-09-06T22:36:50+00:00: Immutable review correctly reproduced five false positives in 6f80867:
+  inert Python comments, Go block comments, Rust comments and wrong delegation, a Rust dependency
+  comment with wrong behavior, and a no-op Makefile could satisfy lexical predicates. Quality also
+  proved the Go reference itself invalid because slices cannot be switch cases. Repair commit
+  79cb9426d1b9a859682042f9bfb7c64bbe923284 replaces lexical checks with complete bounded canonical
+  submission checks, protects support/source files that tasks must not change, adds seven applied
+  adversarial fixtures covering all five exploits plus test-source and navigation-source tampering,
+  fixes the Go reference to valid bounded argument handling, documents canonical-only acceptance,
+  and bumps scoring identity to asb-original-oracle-v1. Positive evidence passes for Python CR-only
+  behavior, Go formatting/build/plain/JSON behavior, Rust refactor compilation, and C/Make
+  compile/run. Exact-head full workspace Rust gates, release CLI negative, repository
+  quality/supply/privacy/platform gates, formal tests, five Kani proofs and deliberate Kani negative
+  pass. Repository coverage gate passes; focused asb-workloads coverage is 95.23% regions, 99.24%
+  lines and 100% functions. Three signed+DCO commits have clean 41-path scope limited to Cargo.toml,
+  Cargo.lock and crates/asb-workloads; Gitleaks found no leaks and no workload temp/scratch/process
+  residue remains. Material repair failures: an initial custom patch did not apply against
+  rustfmt-shaped arrays; first two generated adversarial patch header forms were invalid and each
+  focused run failed immediately, leaving one exact generated bug fixture root that was
+  owner-verified and removed; the corrected seven fixtures all apply and fail grading. A first
+  Python behavior command encoded carriage returns incorrectly, and its corrected successor passed
+  before discovering rustc absent from PATH; the final Rust/C command used the pinned Cargo bin path
+  and passed. No push or PR is claimed.
