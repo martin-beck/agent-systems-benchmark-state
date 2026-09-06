@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use bounded proofs and model tests for safety-critical domain logic.",
-  "task_revision": 87,
+  "task_revision": 88,
   "title": "Prove critical state and concurrency invariants",
-  "updated_at": "2026-09-06T19:57:56+00:00",
+  "updated_at": "2026-09-06T19:58:49+00:00",
   "worktree_key": "agent-systems-benchmark-formal-assurance"
 }
 ---
@@ -269,3 +269,6 @@ plan and claim after a fresh reconciliation.
   branch are synchronized clean. Local exact-head proof and full gates also passed; bounds and the
   external-target sandbox test-harness finding remain explicitly documented. No merge or release
   performed.
+
+- 2026-09-06T19:58:49+00:00: Recorded command exit 1; command argv SHA-256
+  b442b936af13b026676bda8af38c69abd42fcbdbf86c0dc49f266dd34098e6bb.
