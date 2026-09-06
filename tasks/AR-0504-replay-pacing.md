@@ -8,7 +8,7 @@
     "AR-0201"
   ],
   "id": "AR-0504",
-  "next_action": "Push reviewed signed merge 68f313f only after current repository policy/DCO check; then exact-main postmerge validation and hosted CI.",
+  "next_action": "Run live coordination doctor/reconciliation, then release AR-0504 done with exact postmerge evidence.",
   "observed_branch": "feature/replay-pacing",
   "observed_dirty": 0,
   "observed_head": "73d28a431c782e14b172d8309b5f76b71a4f1bf6",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support immediate, fixed-latency, original-paced and seeded synthetic scenarios.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Implement pacing and replay overhead assessment",
-  "updated_at": "2026-09-06T20:36:04+00:00",
+  "updated_at": "2026-09-06T20:36:32+00:00",
   "worktree_key": "agent-systems-benchmark-replay-pacing"
 }
 ---
@@ -291,3 +291,19 @@ a fresh reconciliation.
 
 - 2026-09-06T20:36:04+00:00: Recorded command exit 0; command argv SHA-256
   194f78b6d2895c6c971467708bc70e8606759d34d51ae6b8788a605760876069.
+
+- 2026-09-06T20:36:32+00:00: Exact product main and origin/main are signed merge
+  68f313fcb4fa5c7293639fc90ec376fa7ccb622f; PR #16 records this merge from reviewed head 73d28a4.
+  Exact-main hosted push workflows independently queried GREEN: Formal assurance 34058370706,
+  Repository quality 34058370670, Rust verification x86_64+aarch64 34058370668. Exact-main local
+  postmerge passed fmt, locked workspace Clippy/tests including native runtime/process/sandbox and
+  replay negative/concurrency/deadline tests, rustdoc, release CLI, formal Loom/state/production
+  trace, locked formal metadata, cargo-deny/audit, repository/signature/DCO policy,
+  actionlint/zizmor, controlled failure fixtures, platform validation/unittests, Gitleaks
+  introduced-history privacy scan, and clean sync. Coverage is 97.19% workspace lines and 97.31%
+  asb-replay lines; pacing.rs 96.63% lines/96.46% regions; LLVM branch denominator unavailable. Two
+  postmerge composite invocations stopped on command-shape errors only: test_failure_paths initially
+  omitted --bin-dir, then an inapplicable Cargo platform_manifest target was attempted; both were
+  corrected to exact workflow invocations and all gates passed. Residual documented limits remain:
+  local-kernel socket acceptance is not peer consumption, generic Write needs caller bounds,
+  monotonic timing is not packet scheduling, and headroom assesses supplied observations only.

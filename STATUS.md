@@ -304,7 +304,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0204](tasks/AR-0204-capacity-sweeps.md): Implement capacity sweeps and arrival scheduling | contracts-20260906 | Run repeated closed-loop and open-loop experiments with bounded concurrency. | Implement scheduler from fixed manifests and monotonic clock abstraction. |
 | P1 | [AR-0301](tasks/AR-0301-agent-opencode.md): Implement OpenCode client adapter | root-coordination-20260906 | Run pinned OpenCode through its structured supported interfaces. | Create focused signed+DCO candidate, run commit-policy and exact-tree checks, publish PR, then obtain immutable independent review and exact-head CI before integration. |
-| P1 | [AR-0504](tasks/AR-0504-replay-pacing.md): Implement pacing and replay overhead assessment | replay-20260906 | Support immediate, fixed-latency, original-paced and seeded synthetic scenarios. | Push reviewed signed merge 68f313f only after current repository policy/DCO check; then exact-main postmerge validation and hosted CI. |
+| P1 | [AR-0504](tasks/AR-0504-replay-pacing.md): Implement pacing and replay overhead assessment | replay-20260906 | Support immediate, fixed-latency, original-paced and seeded synthetic scenarios. | Run live coordination doctor/reconciliation, then release AR-0504 done with exact postmerge evidence. |
 | P1 | [AR-1001](tasks/AR-1001-experiment-comparability.md): Define experiment identity and comparability | quality-20260906 | Make every comparison content-addressed and explicit about agent, model, workload and platform confounders. | Complete comparison fixtures, generated schema, Cargo integration, and full gates after serialized fence transfer. |
 
 ### Planned (30)
