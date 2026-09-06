@@ -8,18 +8,18 @@
   ],
   "id": "AR-0101",
   "next_action": "Await independent immutable-head delta review and coordinator integration of exact green PR #3 head 9e90c6a6; then run post-merge verification.",
-  "observed_branch": "DETACHED",
+  "observed_branch": "feature/extension-contracts",
   "observed_dirty": 0,
-  "observed_head": "3baa4f9d0a7448e5f2e24633c230a2111c9ead86",
+  "observed_head": "9e90c6a62861f2222864865c9fa3e023cff52bdf",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0101.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Specify typed agent, workload, collector, runtime and result contracts before parallel implementations.",
-  "task_revision": 128,
+  "task_revision": 129,
   "title": "Freeze versioned extension and result contracts",
-  "updated_at": "2026-09-06T16:32:45+00:00",
+  "updated_at": "2026-09-06T16:33:07+00:00",
   "worktree_key": "agent-systems-benchmark-extension-contracts"
 }
 ---
