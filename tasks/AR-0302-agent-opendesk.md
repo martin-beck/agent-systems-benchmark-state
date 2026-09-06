@@ -10,17 +10,17 @@
   "id": "AR-0302",
   "next_action": "Implement a fail-closed Linux x86_64 adapter around pinned OpenDesk 0.3.5 export JSON, with telemetry containment and explicit argv privacy limitation.",
   "observed_branch": "feature/agent-opendesk",
-  "observed_dirty": 1,
-  "observed_head": "011a8f51fcdcaf87e4af48d04a100129380ace72",
+  "observed_dirty": 0,
+  "observed_head": "8da21f86d5f4c90313e4d1a0dc83be555c91a270",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0302.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support the bitclub OpenDesk CLI with its own dialect and compatibility record.",
-  "task_revision": 106,
+  "task_revision": 107,
   "title": "Implement OpenDesk client adapter",
-  "updated_at": "2026-09-06T22:19:54+00:00",
+  "updated_at": "2026-09-06T22:21:06+00:00",
   "worktree_key": "agent-systems-benchmark-agent-opendesk"
 }
 ---

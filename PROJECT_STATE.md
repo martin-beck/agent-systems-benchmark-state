@@ -15,10 +15,10 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34063737973 | `23035acde688` | workflow_dispatch | Repository quality | queued:- |
+| 34063737973 | `23035acde688` | workflow_dispatch | Repository quality | in_progress:- |
 | 34063685602 | `23035acde688` | push | Repository quality | completed:failure |
-| 34063685531 | `23035acde688` | push | Formal assurance | in_progress:- |
-| 34063685524 | `23035acde688` | push | Rust verification | in_progress:- |
+| 34063685531 | `23035acde688` | push | Formal assurance | completed:success |
+| 34063685524 | `23035acde688` | push | Rust verification | completed:failure |
 | 34063408544 | `7f308cca7038` | push | Rust verification | completed:failure |
 | 34063408539 | `7f308cca7038` | push | Repository quality | completed:failure |
 | 34063408520 | `7f308cca7038` | push | Formal assurance | completed:success |
