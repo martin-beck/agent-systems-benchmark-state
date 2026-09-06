@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned OpenCode through its structured supported interfaces.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Implement OpenCode client adapter",
-  "updated_at": "2026-09-06T19:31:18+00:00",
+  "updated_at": "2026-09-06T19:31:35+00:00",
   "worktree_key": "agent-systems-benchmark-agent-opencode"
 }
 ---
@@ -255,3 +255,6 @@ Dependencies AR-0101 and AR-0102 are done. Read the linked plan and claim after 
 
 - 2026-09-06T19:31:18+00:00: Recorded command exit 1; command argv SHA-256
   1a601bfbb5ef62c00290d55a7170e3164a184ba2b82990b0b4de328918d1591c.
+
+- 2026-09-06T19:31:35+00:00: Recorded command exit 0; command argv SHA-256
+  6d2ec13c23c28a71bc33c0f1c78c59f7b41c692bf127206b4b20baffcfcf2918.
