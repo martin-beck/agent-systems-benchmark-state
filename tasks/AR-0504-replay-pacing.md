@@ -10,7 +10,7 @@
   "id": "AR-0504",
   "next_action": "Integrate paced delivery with the strict socket reservation boundary, expand deterministic negative/concurrency evidence, then run exact-tree full gates.",
   "observed_branch": "feature/replay-pacing",
-  "observed_dirty": 5,
+  "observed_dirty": 6,
   "observed_head": "162110386605a83f963758a07d83e77e2566528a",
   "owner": "replay-20260906",
   "plan": "../plans/AR-0504.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support immediate, fixed-latency, original-paced and seeded synthetic scenarios.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Implement pacing and replay overhead assessment",
-  "updated_at": "2026-09-06T19:45:34+00:00",
+  "updated_at": "2026-09-06T19:49:12+00:00",
   "worktree_key": "agent-systems-benchmark-replay-pacing"
 }
 ---
