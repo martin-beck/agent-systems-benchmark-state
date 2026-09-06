@@ -2,7 +2,7 @@
 {
   "branch": "feature/engineering-workloads",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T00:41:15+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0103"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/engineering-workloads",
   "observed_dirty": 0,
   "observed_head": "41ffc6eb8f1ab8e3d5beb69ff233634a870007ed",
-  "owner": "replay-20260906",
+  "owner": "",
   "plan": "../plans/AR-0401.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API.",
-  "task_revision": 180,
+  "task_revision": 181,
   "title": "Implement original engineering workloads",
-  "updated_at": "2026-09-06T23:11:25+00:00",
+  "updated_at": "2026-09-06T23:15:02+00:00",
   "worktree_key": "agent-systems-benchmark-engineering-workloads"
 }
 ---
@@ -630,3 +630,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T23:11:25+00:00: Recorded command exit 0; command argv SHA-256
   eaf2472e4b0ec29bac3303a6d46474c99be3c0ab077feca87b1c3650d4745e53.
+
+- 2026-09-06T23:15:02+00:00: Merged signed+DCO 52b8b3b12d1fb2ae7cdda0afbc7f728d5e08f44a via PR 20;
+  exact merge-head push CI 34066173852 formal, 34066173868 quality, 34066173892 Rust all successful;
+  post-merge fmt, clippy, workspace tests, docs, release build, formal tests, correct
+  formal-workspace Kani 5/5, repository policy, and Gitleaks green. An overbroad workspace Kani
+  attempt reached Loom generator global ASM and was corrected to the documented formal invocation.
