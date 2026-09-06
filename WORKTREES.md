@@ -18,7 +18,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `748537c25e3a` | 0 | behind 39, ahead 0 |
 | `agent-systems-benchmark-replay-cassettes` | `feature/replay-cassettes` | `cd88f5703fb3` | 0 | behind 18, ahead 0 |
 | `agent-systems-benchmark-replay-evaluation` | `feature/replay-evaluation` | `3d04a2d5a3b3` | 0 | behind 31, ahead 0 |
-| `agent-systems-benchmark-replay-pacing` | `feature/replay-pacing` | `162110386605` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-replay-pacing` | `feature/replay-pacing` | `162110386605` | 3 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-replay/src/lib.rs`, `crates/asb-replay/src/pacing.rs`, `crates/asb-replay/tests/pacing.rs` |
 | `agent-systems-benchmark-sandbox-runtime` | `feature/sandbox-runtime` | `cf43bac877af` | 0 | behind 12, ahead 6 |
 | `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `3bcfd85dedd3` | 0 | behind 13, ahead 0 |
 | `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `410ecc95b80e` | 0 | behind 1, ahead 0 |
