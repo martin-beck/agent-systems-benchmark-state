@@ -12,7 +12,7 @@
     "AR-0203"
   ],
   "id": "AR-0204",
-  "next_action": "Await isolated-CARGO_TARGET_DIR sandbox fixture repair, then rerun full workspace tests/coverage and submit b0b2ae1 successor for review.",
+  "next_action": "Revalidate dependency closure and promote this repaired dependency-ready task transactionally.",
   "observed_branch": "feature/capacity-sweeps",
   "observed_dirty": 0,
   "observed_head": "b0b2ae1a9ad577dde4b481b699a983e2cf04e690",
@@ -20,11 +20,11 @@
   "plan": "../plans/AR-0204.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "planned",
   "summary": "Run repeated closed-loop and open-loop experiments with bounded concurrency.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Implement capacity sweeps and arrival scheduling",
-  "updated_at": "2026-09-06T21:14:00+00:00",
+  "updated_at": "2026-09-06T22:25:30+00:00",
   "worktree_key": "agent-systems-benchmark-capacity-sweeps"
 }
 ---
@@ -33,6 +33,10 @@
 Run repeated closed-loop and open-loop experiments with bounded concurrency.
 
 Implementation has not started. Read the linked plan before claiming.
+
+- 2026-09-06T22:25:30+00:00: Coordinator verified all six dependencies, including AR-0105's
+  corrected signed/DCO integration and post-merge checks, are durably done. Cleared the resolved
+  dependency blocker to planned without claiming or repeating preserved product mutations.
 
 - 2026-09-06T20:18:51+00:00: Claimed by contracts-20260906.
 
