@@ -11,12 +11,14 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #5 | `feature/platform-manifests@a800ca3b9169` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: pin initial support manifests |
-| #6 | `feature/durable-results@f6cd02eef6b7` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Add crash-consistent durable result storage |
+| #6 | `feature/durable-results@08602eca2fd4` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED: | Add crash-consistent durable result storage |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34047424045 | `08602eca2fd4` | pull_request | Repository quality | queued:- |
+| 34047424009 | `08602eca2fd4` | pull_request | Rust verification | queued:- |
 | 34047347503 | `a800ca3b9169` | pull_request | Rust verification | completed:success |
 | 34047347454 | `a800ca3b9169` | pull_request | Repository quality | completed:success |
 | 34047020883 | `f6cd02eef6b7` | pull_request | Repository quality | completed:success |
@@ -27,5 +29,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34046060062 | `9db4b6d74d44` | push | Repository quality | completed:success |
 | 34045836000 | `3d04a2d5a3b3` | pull_request | Rust verification | completed:success |
 | 34045835936 | `3d04a2d5a3b3` | pull_request | Repository quality | completed:success |
-| 34045704998 | `3baa4f9d0a74` | push | Repository quality | completed:success |
-| 34045704995 | `3baa4f9d0a74` | push | Rust verification | completed:success |
