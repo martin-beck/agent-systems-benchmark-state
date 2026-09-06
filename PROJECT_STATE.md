@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #6 | `feature/durable-results@eb9bd888999f` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED: | Add crash-consistent durable result storage |
+| #6 | `feature/durable-results@eb9bd888999f` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | Add crash-consistent durable result storage |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34047717807 | `eb9bd888999f` | pull_request | Repository quality | queued:- |
-| 34047717794 | `eb9bd888999f` | pull_request | Rust verification | queued:- |
+| 34047717807 | `eb9bd888999f` | pull_request | Repository quality | in_progress:- |
+| 34047717794 | `eb9bd888999f` | pull_request | Rust verification | in_progress:- |
 | 34047665225 | `10974f60be6f` | push | Rust verification | completed:success |
 | 34047665209 | `10974f60be6f` | push | Repository quality | completed:success |
 | 34047424045 | `08602eca2fd4` | pull_request | Repository quality | completed:success |
