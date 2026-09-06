@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Store versioned provider requests, event streams, causal IDs and integrity metadata.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Implement immutable response cassette format",
-  "updated_at": "2026-09-06T17:20:43+00:00",
+  "updated_at": "2026-09-06T17:22:16+00:00",
   "worktree_key": "agent-systems-benchmark-replay-cassettes"
 }
 ---
@@ -74,3 +74,6 @@ Implementation has not started. Read the linked plan before claiming.
   9e1890dee2e9b10745ce4ce521d9f32d477dd3dec0e7c785ca9434313a1e1718. rustfmt check identified only
   formatting differences; wrapped rustfmt applied them. Compilation/full checks remain explicitly
   unclaimed until the Cargo fence transfers.
+
+- 2026-09-06T17:22:16+00:00: Recorded command exit 0; command argv SHA-256
+  318a39b46294335a6979ce8b688f3e19137f4c19397af16bd28e7b4bf94d932b.
