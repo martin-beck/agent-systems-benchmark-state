@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 87,
+  "task_revision": 88,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T18:30:16+00:00",
+  "updated_at": "2026-09-06T18:30:29+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
@@ -277,3 +277,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T18:30:16+00:00: Recorded command exit 0; command argv SHA-256
   1dde2e9d7eaa577930cd8cf7cb82423b234f0a7b9795b750c474ec1691d296e9.
+
+- 2026-09-06T18:30:29+00:00: Recorded command exit 0; command argv SHA-256
+  3833c9511032c7b80f172c5cf214c3e2a2cac66f1ec3853e177476bcec327a05.
