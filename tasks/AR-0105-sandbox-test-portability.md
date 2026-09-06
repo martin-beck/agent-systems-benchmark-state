@@ -9,7 +9,7 @@
   "id": "AR-0105",
   "next_action": "Resolve newly exposed sandbox_boundary.rs target_root ownership, then rerun full isolated-target gates without masking.",
   "observed_branch": "fix/sandbox-test-portability",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "2b28fee781afed113d2b468f8480f4eb71d01feb",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0105.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Repair sandbox test target portability",
-  "updated_at": "2026-09-06T21:21:47+00:00",
+  "updated_at": "2026-09-06T21:24:56+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-test-portability"
 }
 ---
