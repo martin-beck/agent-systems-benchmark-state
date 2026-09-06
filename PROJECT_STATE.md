@@ -11,6 +11,7 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #1 | `feature/coordination-docs@71618e18f9a3` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE | Correct handoffctl run syntax |
+| #2 | `feature/quality-gates@d09a62ee96bf` | `main` | UNKNOWN | - | ci: enforce repository quality gates |
 
 ## Recent workflows
 
