@@ -9,7 +9,7 @@
   "id": "AR-0003",
   "next_action": "Apply corrected quality documentation patch, then stage and run repository policy plus tool integration checks.",
   "observed_branch": "feature/quality-gates",
-  "observed_dirty": 1,
+  "observed_dirty": 3,
   "observed_head": "953db4c7a62f0998d03f1414f342265b969fac93",
   "owner": "quality-20260906",
   "plan": "../plans/AR-0003.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Install pinned analysis, coverage, workflow, documentation and supply-chain gates.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Enforce Rust and repository quality gates",
-  "updated_at": "2026-09-06T16:04:04+00:00",
+  "updated_at": "2026-09-06T16:04:19+00:00",
   "worktree_key": "agent-systems-benchmark-quality-gates"
 }
 ---
