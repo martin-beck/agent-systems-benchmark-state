@@ -8,7 +8,7 @@
     "AR-0102"
   ],
   "id": "AR-0301",
-  "next_action": "Create focused signed+DCO candidate, run commit-policy and exact-tree checks, publish PR, then obtain immutable independent review and exact-head CI before integration.",
+  "next_action": "Await exact PR #13 head dfb0d54 hosted CI and immutable independent review; integrate only if both are green.",
   "observed_branch": "feature/agent-opencode",
   "observed_dirty": 0,
   "observed_head": "dfb0d548bf7511ef02d76d9e202bd788c8f58306",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned OpenCode through its structured supported interfaces.",
-  "task_revision": 152,
+  "task_revision": 153,
   "title": "Implement OpenCode client adapter",
-  "updated_at": "2026-09-06T20:40:17+00:00",
+  "updated_at": "2026-09-06T20:40:30+00:00",
   "worktree_key": "agent-systems-benchmark-agent-opencode"
 }
 ---
@@ -429,3 +429,11 @@ Dependencies AR-0101 and AR-0102 are done. Read the linked plan and claim after 
 
 - 2026-09-06T20:40:17+00:00: Recorded command exit 0; command argv SHA-256
   6ec06a7122d48a9217ab241229ddad336fb73cb20dc6aafa4623de3715a93985.
+
+- 2026-09-06T20:40:30+00:00: Rebased and re-signed all three DCO commits onto replay-integrated main
+  68f313f. Exact candidate dfb0d54 passed workspace fmt, Clippy, unit/property/native tests, real
+  pinned OpenCode 1.18.29 allow-write/deny-bash/cancellation journey, docs, release CLI negatives,
+  cargo-deny/audit, coverage, actionlint/zizmor/Gitleaks, repository/DCO/privacy policy, controlled
+  failure fixtures, platform validation, Loom/state/production traces, five Kani proofs and
+  deliberate Kani counterexample. Published with exact force-with-lease from superseded 5037401;
+  remote head verified.
