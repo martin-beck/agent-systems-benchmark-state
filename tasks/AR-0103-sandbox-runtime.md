@@ -9,7 +9,7 @@
   "id": "AR-0103",
   "next_action": "Implement isolated asb-runtime sandbox/resource modules and real native tests only; keep root Cargo.toml/Cargo.lock untouched until AR-0502 hands off the serialized fence.",
   "observed_branch": "feature/sandbox-runtime",
-  "observed_dirty": 3,
+  "observed_dirty": 4,
   "observed_head": "e6a81e8644c692d5b0aa84a86b385ff4da327292",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0103.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Implement isolated execution and resource leases",
-  "updated_at": "2026-09-06T17:53:18+00:00",
+  "updated_at": "2026-09-06T17:54:49+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-runtime"
 }
 ---
