@@ -12,7 +12,7 @@
     "AR-0203"
   ],
   "id": "AR-0204",
-  "next_action": "Await immutable independent review of exact clean candidate cabf0f0; do not publish before approval.",
+  "next_action": "Hold exact clean rebased successor 0717d4a unpublished pending coordinator publication authorization.",
   "observed_branch": "feature/capacity-sweeps",
   "observed_dirty": 0,
   "observed_head": "0717d4acd16856d8fad593efdfa9007ad32c1c3f",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run repeated closed-loop and open-loop experiments with bounded concurrency.",
-  "task_revision": 167,
+  "task_revision": 168,
   "title": "Implement capacity sweeps and arrival scheduling",
-  "updated_at": "2026-09-06T23:28:47+00:00",
+  "updated_at": "2026-09-06T23:29:03+00:00",
   "worktree_key": "agent-systems-benchmark-capacity-sweeps"
 }
 ---
@@ -505,3 +505,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T23:28:47+00:00: Recorded command exit 0; command argv SHA-256
   7021fd0549006ba5c41e140485655bc9ebfe133b44f78ad0e14fe50b6ca0a246.
+
+- 2026-09-06T23:29:03+00:00: After proving clean head cabf0f08, merge-base 3cfb871 and origin/main
+  exact 52b8b3b12d1fb2ae7cdda0afbc7f728d5e08f44a, performed the one authorized rebase with
+  --gpg-sign through AR-0204 wrapper. Successor 0717d4acd16856d8fad593efdfa9007ad32c1c3f has exact
+  parent 52b8b3b, valid SSH signature and exact DCO; patch-id
+  aea783d94dd061029f681bf385e8a7a231b3194b is unchanged and range-diff reports equality to
+  independently approved cabf0f08. Scope remains exactly runtime
+  README/lib/scheduler/scheduler_boundary; tree 7d86537832375be487a53b13d77157bb193ecf78 and
+  worktree clean. Fresh external-target focused scheduler boundary 16/16 plus two scheduler units
+  passed three repetitions; two compile-fail docs, fmt, and runtime all-target clippy -D warnings
+  passed. Repository target remained absent. Candidate remains unpublished.
