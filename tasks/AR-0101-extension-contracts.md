@@ -2,7 +2,7 @@
 {
   "branch": "feature/extension-contracts",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-06T17:42:25+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0001"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/extension-contracts",
   "observed_dirty": 0,
   "observed_head": "9e90c6a62861f2222864865c9fa3e023cff52bdf",
-  "owner": "contracts-20260906",
+  "owner": "",
   "plan": "../plans/AR-0101.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Specify typed agent, workload, collector, runtime and result contracts before parallel implementations.",
-  "task_revision": 130,
+  "task_revision": 131,
   "title": "Freeze versioned extension and result contracts",
-  "updated_at": "2026-09-06T16:33:09+00:00",
+  "updated_at": "2026-09-06T16:33:39+00:00",
   "worktree_key": "agent-systems-benchmark-extension-contracts"
 }
 ---
@@ -417,3 +417,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T16:33:09+00:00: Recorded command exit 0; command argv SHA-256
   75d2624aa1d2b67c0caa49d26f3d72829493ebb672f6eeb95724ef5ad3c1fddf.
+
+- 2026-09-06T16:33:39+00:00: AR-0101 accepted after independent immutable-head review and signed+DCO
+  integration as merge 3baa4f9d0a7448e5f2e24633c230a2111c9ead86 (PR #3). Post-merge validation ran
+  in the declared worktree at exact origin/main 3baa4f9d: fmt, clippy -D warnings, 32 tests plus doc
+  tests, rustdoc, release CLI behavior, cargo-deny/audit, 96.22% workspace and 96.15% protocol line
+  coverage, actionlint, zizmor, Gitleaks over introduced history, repository/signature/DCO policy,
+  all controlled failure fixtures, and clean-tree checks passed. Exact-main hosted quality run
+  34045704998 and Rust native x86_64/aarch64 run 34045704995 passed. Merge and both focused commits
+  verify SSH signatures and exact DCO; feature branch restored clean and synchronized. Delivered
+  strict versioned JSON-RPC stdio contracts/schemas/fixtures/minimum Rust types with bounded framing
+  and explicit fail-closed behavior; actual runtime deadline/process-tree cancellation remains
+  correctly assigned to AR-0102/AR-0103.
