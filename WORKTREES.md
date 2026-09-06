@@ -5,8 +5,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
 | `agent-systems-benchmark` | `main` | `ac4a23599649` | 0 | behind 0, ahead 0 |
-| `agent-systems-benchmark-agent-opencode` | `feature/agent-opencode` | `5037401b1571` | 3 | behind 0, ahead 2 |
-| changed files | - | - | - | `crates/asb-agents/Cargo.toml`, `crates/asb-agents/README.md`, `crates/asb-agents/src/opencode.rs` |
+| `agent-systems-benchmark-agent-opencode` | `feature/agent-opencode` | `5037401b1571` | 4 | behind 0, ahead 2 |
+| changed files | - | - | - | `Cargo.lock`, `crates/asb-agents/Cargo.toml`, `crates/asb-agents/README.md`, `crates/asb-agents/src/opencode.rs` |
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `ac4a23599649` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 48, ahead 0 |
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 37, ahead 0 |
