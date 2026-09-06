@@ -7,7 +7,7 @@
     "AR-0103"
   ],
   "id": "AR-0105",
-  "next_action": "Resolve newly exposed sandbox_boundary.rs target_root ownership, then rerun full isolated-target gates without masking.",
+  "next_action": "Await independent immutable-tree review of d71321c before publication.",
   "observed_branch": "fix/sandbox-test-portability",
   "observed_dirty": 0,
   "observed_head": "d71321c99f2cfab6c3ddd4bd81ea6e4439c0fb18",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Repair sandbox test target portability",
-  "updated_at": "2026-09-06T21:28:27+00:00",
+  "updated_at": "2026-09-06T21:28:43+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-test-portability"
 }
 ---
@@ -122,3 +122,19 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T21:28:27+00:00: Recorded command exit 0; command argv SHA-256
   10def708b1bb5dfb44cb63a9e1ad314aeed901242bc935a797a894bb7f98bbb2.
+
+- 2026-09-06T21:28:43+00:00: Expanded two-fixture candidate d71321c is signed+DCO on exact product
+  main 9543a32 and changes only sandbox unit/integration test fixtures. Both original ENOENT paths
+  now derive collision-resistant PID/atomic scratch names from external CARGO_TARGET_DIR or temp
+  fallback; unit overlap uses RAII directory cleanup, integration panic sentinel creates and cleans
+  its own root, and host isolation sentinel remains outside the sandbox workspace without
+  repository-target assumptions. Unit originals/negative passed three distinct fresh targets;
+  integration sentinel/staging passed three distinct fresh targets in alternating order; two
+  separate cargo test processes passed concurrently against one fresh target; full exact-tree gate
+  on another initially nonexistent external target passed with repository target absent before/after
+  and zero scratch/sentinel residue. Workspace fmt/clippy/tests/docs/release, formal suite,
+  audit/deny, coverage, workflow analyzers, Gitleaks, repository/DCO policy, controlled failure
+  fixtures and platform validation all passed. Coverage: sandbox.rs 95.30% regions, 98.92%
+  functions, 97.61% lines; workspace 93.41% regions, 96.59% lines.
+  Candidate/tree/signature/DCO/diff/privacy/scope clean. Earlier second ENOENT and two mechanical
+  borrow corrections remain preserved in evidence.
