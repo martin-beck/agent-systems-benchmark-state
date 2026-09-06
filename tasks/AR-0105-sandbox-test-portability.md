@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remove repository-target assumptions from sandbox lease tests so clean external Cargo targets work.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Repair sandbox test target portability",
-  "updated_at": "2026-09-06T21:45:17+00:00",
+  "updated_at": "2026-09-06T21:56:25+00:00",
   "worktree_key": "agent-systems-benchmark-sandbox-test-portability"
 }
 ---
@@ -178,3 +178,6 @@ Implementation has not started. Read the linked plan before claiming.
   actionlint/zizmor/Gitleaks, repository/DCO policy, failure fixtures and platform validation
   passed. Coverage is sandbox.rs 97.56% lines and workspace 96.80% lines. Tree, diff-check, SSH
   signature, DCO, privacy and two-file scope are clean; no publication before immutable re-review.
+
+- 2026-09-06T21:56:25+00:00: Recorded command exit 2; command argv SHA-256
+  48458d4adcbc2714c4ae60f17ec39d916357031118af6e75d9a5cd826c73f20e.
