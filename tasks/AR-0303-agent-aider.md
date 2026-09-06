@@ -13,11 +13,11 @@
   "plan": "../plans/AR-0303.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Support unattended aider editing with bounded input, output and repository changes.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Implement aider client adapter",
-  "updated_at": "2026-09-06T15:04:52+00:00",
+  "updated_at": "2026-09-06T22:50:57+00:00",
   "worktree_key": "agent-systems-benchmark-agent-aider"
 }
 ---
@@ -26,3 +26,7 @@
 Support unattended aider editing with bounded input, output and repository changes.
 
 Implementation has not started. Read the linked plan before claiming.
+
+- 2026-09-06T22:50:57+00:00: Verified AR-0101 and AR-0102 are done on synchronized signed product
+  main; aider module is disjoint from active scheduler/workload/provider-profile paths and no shared
+  Cargo/schema edit is authorized.
