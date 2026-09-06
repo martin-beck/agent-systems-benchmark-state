@@ -4,14 +4,14 @@ Generated from local Git and GitHub. Do not edit.
 
 - Product remote main: `311c128649610df258b2961c9ca623fb8f258307`
 - Local origin/main: `311c128649610df258b2961c9ca623fb8f258307`
-- Primary worktree head: `311c128649610df258b2961c9ca623fb8f258307`
+- Primary worktree head: `941ea6fff5eef30b126d3bcc5cc5d4117146de27`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #22 | `feature/agent-aider@da81ead6932c` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(agents): add bounded Aider adapter |
-| #23 | `feature/provider-profile-contract@3f9edc3305c1` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(protocol): define common provider profiles |
+| #23 | `feature/provider-profile-contract@3f9edc3305c1` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS | feat(protocol): define common provider profiles |
 
 ## Recent workflows
 
