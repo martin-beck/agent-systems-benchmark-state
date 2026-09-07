@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Gemini.",
-  "task_revision": 129,
+  "task_revision": 130,
   "title": "Qualify Gemini replay",
-  "updated_at": "2026-09-07T18:37:10+00:00",
+  "updated_at": "2026-09-07T18:40:39+00:00",
   "worktree_key": "agent-systems-benchmark-replay-gemini"
 }
 ---
@@ -416,3 +416,6 @@ Qualify Gemini record/replay, network denial, parity, retries, tool calls, cance
 
 - 2026-09-07T18:37:10+00:00: Recorded command exit 0; command argv SHA-256
   a4f748384e6f1657b0435e1e1fb7a80ddd3ac8e6c1972cd7b095bd46529de983.
+
+- 2026-09-07T18:40:39+00:00: Recorded command exit 0; command argv SHA-256
+  3598b463b5d1d19020c74bbe4a9fa2c4bceb8601362306602a8b58fa5678fbff.
