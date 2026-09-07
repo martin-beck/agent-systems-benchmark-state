@@ -9,7 +9,7 @@
     "AR-0204"
   ],
   "id": "AR-0801",
-  "next_action": "Hold immutable signed+DCO candidate 7c2d19ca for fresh independent review; publish exact head only after approval, then require exact-head CI before integration.",
+  "next_action": "Hold immutable signed+DCO candidate 203074e8054f733a216bf4ec577a4f4479c8f639 for fresh independent review and exact-tree gates; publish only after approval, then require exact-head CI.",
   "observed_branch": "feature/terminal-interface",
   "observed_dirty": 0,
   "observed_head": "203074e8054f733a216bf4ec577a4f4479c8f639",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide doctor, plan, run, sweep, compare and report with stable JSON output.",
-  "task_revision": 159,
+  "task_revision": 160,
   "title": "Implement terminal and automation interfaces",
-  "updated_at": "2026-09-07T02:37:34+00:00",
+  "updated_at": "2026-09-07T02:38:30+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-interface"
 }
 ---
@@ -490,3 +490,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T02:37:34+00:00: Recorded command exit 0; command argv SHA-256
   d87eb7386a1194d006e3cf71da90e9a2dc1f0436ef60e8b2facf059cf2a8d2ff.
+
+- 2026-09-07T02:38:30+00:00: Superseded d7194ab after independent review found cross-field terminal
+  evidence was not recomputed. Candidate 203074e (tree 31c7c357) enforces complete unique
+  warmup/measured identities, missed/admitted scheduler timing and outcome invariants, one-to-one
+  normal attempt versus infrastructure-failure evidence, measured aggregate accounting, and
+  recomputed decision consistency. Added valid maximum-bound persistence/report positive plus
+  contradictory aggregate, duplicate identity, missed-with-outcome, attempt-outcome mismatch, and
+  wrong execution negatives. Focused clippy and all 10 asb-cli unit plus 3 e2e tests are green;
+  clean signed DCO head.
