@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0308",
-  "next_action": "Independently review unpublished exact candidate 1605693dbb7aade01dd47cb074e35bca02df873b tree 7d99a7f69d97335cad802699dbf9a7ac7bac2e1b; do not publish or merge without coordinator authorization.",
+  "next_action": "Publish exact rebased head 3cf9a53 after remote/main recheck; require exact-head hosted Rust, quality, and formal CI before signed integration.",
   "observed_branch": "feature/agent-mini-swe",
   "observed_dirty": 0,
   "observed_head": "3cf9a53fce709562119ec2ae2f55c304be0840e9",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned mini-SWE-agent as a bounded batch engineering agent.",
-  "task_revision": 273,
+  "task_revision": 274,
   "title": "Implement mini-SWE-agent client adapter",
-  "updated_at": "2026-09-07T12:33:11+00:00",
+  "updated_at": "2026-09-07T12:34:08+00:00",
   "worktree_key": "agent-systems-benchmark-agent-mini-swe"
 }
 ---
@@ -926,3 +926,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T12:33:11+00:00: Recorded command exit 0; command argv SHA-256
   5894ff04ffc153ddb931fa2e386add780935b76c5432c094f7a6e0975627e7ef.
+
+- 2026-09-07T12:34:08+00:00: Rebased the complete four-commit AR-0308 series from 814397f onto exact
+  origin/main ad0cdfc through the wrapper. git range-diff reports all four commits exactly equal;
+  new head 3cf9a53fce709562119ec2ae2f55c304be0840e9/tree 35dc5e8335f2b6c719db328733e44dbefed1ff79 is
+  clean, four-path scoped, diff-check clean, and every commit has an allowed SSH signature plus
+  matching Martin Beck DCO. A fresh cargo fmt wrapper attempt could not start because cargo is
+  absent from the current execution environment; no product effect occurred. Per coordinator
+  authorization, publication may rely on the durable exact-tree
+  focused/full/formal/privacy/supply/coverage evidence recorded for the byte-identical range, while
+  fresh hosted exact-head CI is mandatory before integration.
