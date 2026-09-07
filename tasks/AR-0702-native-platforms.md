@@ -12,17 +12,17 @@
   "id": "AR-0702",
   "next_action": "Run exact-tree full gates and immutable review for the fail-closed harness; publish public native aarch64 evidence through disposable CI. Retain AR-0702 in progress until AR-0703 provides genuine booted Debian/openEuler x86_64+aarch64 capacity.",
   "observed_branch": "feature/native-platforms",
-  "observed_dirty": 2,
-  "observed_head": "026d19f6eb2119f8eb2d60fb76a709a2bd1538b2",
+  "observed_dirty": 0,
+  "observed_head": "b1748a3077a71fe56b437b86ef509cadefad2583",
   "owner": "quality-20260906",
   "plan": "../plans/AR-0702.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Exercise native x86_64 and aarch64 including booted openEuler kernels.",
-  "task_revision": 160,
+  "task_revision": 161,
   "title": "Validate native Linux kernels and architectures",
-  "updated_at": "2026-09-07T04:25:42+00:00",
+  "updated_at": "2026-09-07T04:25:53+00:00",
   "worktree_key": "agent-systems-benchmark-native-platforms"
 }
 ---
