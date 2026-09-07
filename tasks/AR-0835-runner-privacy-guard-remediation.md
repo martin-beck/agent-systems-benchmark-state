@@ -2,7 +2,7 @@
 {
   "branch": "fix/runner-canary-privacy-guards",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T10:48:09+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0830",
     "AR-0831"
@@ -12,15 +12,15 @@
   "observed_branch": "fix/runner-canary-privacy-guards",
   "observed_dirty": 0,
   "observed_head": "c25e3d20d0ddf494d3a222aaf18f44e3de4c4b73",
-  "owner": "contracts-20260906",
+  "owner": "",
   "plan": "../plans/AR-0835.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Remediate runner privacy leakage and protected-workflow guard gaps found during independent audit.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Remediate runner privacy and workflow guards",
-  "updated_at": "2026-09-07T08:12:59+00:00",
+  "updated_at": "2026-09-07T08:13:33+00:00",
   "worktree_key": "agent-systems-benchmark-runner-privacy-guard-remediation"
 }
 ---
@@ -133,3 +133,15 @@ Acceptance criteria:
 
 - 2026-09-07T08:12:59+00:00: Recorded command exit 0; command argv SHA-256
   a7dcf9715b06384285228722e3a004770ba8622ba39f32094c07258dfbb52b49.
+
+- 2026-09-07T08:13:33+00:00: AR-0835 completed at independently approved signed+DCO product commit
+  c25e3d20d0ddf494d3a222aaf18f44e3de4c4b73 and signed+DCO no-ff merge
+  dc224fcfddea8f5dbfae2da5c795535486f2c45b via PR #34. Exact-head runs 34098797821 quality,
+  34098797898 Rust x86_64/aarch64, 34098797868 formal and 34098797872 fault passed; exact-main runs
+  34099107761 quality, 34099107816 Rust x86_64/aarch64, 34099107729 formal and 34099107750 fault
+  passed. Executable canary fixtures prove fixed success/failure output, fail-closed preconditions
+  and cleanup; alternate-ref, fork, identity-output, unsanitized-output and permission-widening
+  negatives pass. Full locked workspace and postmerge privacy/policy/Gitleaks checks passed; full
+  state suite has 38 tests and 96 percent branch-aware coverage, and live doctor is green.
+  GitHub-generated pseudonymous runner and machine metadata remains an explicit platform limitation.
+  Neither persistent workflow was dispatched.
