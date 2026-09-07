@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0507](tasks/AR-0507-replay-opendesk.md): Qualify OpenDesk replay | Qualify replay conformance for OpenDesk. | Await serialized shared replay repairs for span_id admission, absent-stream SSE, and bounded model-catalog GET routes; then remove diagnostic normalization and complete exact native replay gates. | replay_20260906 |
-| P0 | [AR-0508](tasks/AR-0508-replay-aider.md): Qualify aider replay | Qualify replay conformance for aider. | Hold isolated signed Aider replay test a8ea226; after AR-0506 review/integration/release, rebase onto exact main, take shared Cargo/README/lock fence, compile and run malformed plus real loopback-only capture/replay/cancel gates. | quality_20260906 |
+| P0 | [AR-0508](tasks/AR-0508-replay-aider.md): Qualify aider replay | Qualify replay conformance for aider. | Await independent immutable review of exact ec0a2930690c108987b4a867632316651282cc97; if approved, publish with an exact absent-ref lease, open focused PR, and require exact-head CI before integration. | quality_20260906 |
 | P0 | [AR-0509](tasks/AR-0509-replay-codex.md): Qualify Codex replay | Qualify replay conformance for Codex. | Prove credential-free record/replay conformance for Codex with network denial and malformed/tool/cancel negatives. | contracts_20260906 |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. | root-coordination-20260906 |
 

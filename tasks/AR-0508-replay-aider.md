@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0508",
-  "next_action": "Hold isolated signed Aider replay test a8ea226; after AR-0506 review/integration/release, rebase onto exact main, take shared Cargo/README/lock fence, compile and run malformed plus real loopback-only capture/replay/cancel gates.",
+  "next_action": "Await independent immutable review of exact ec0a2930690c108987b4a867632316651282cc97; if approved, publish with an exact absent-ref lease, open focused PR, and require exact-head CI before integration.",
   "observed_branch": "feature/replay-aider",
   "observed_dirty": 0,
   "observed_head": "ec0a2930690c108987b4a867632316651282cc97",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for aider.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Qualify aider replay",
-  "updated_at": "2026-09-07T13:37:03+00:00",
+  "updated_at": "2026-09-07T13:38:04+00:00",
   "worktree_key": "agent-systems-benchmark-replay-aider"
 }
 ---
@@ -105,3 +105,18 @@ Qualify aider record/replay, network denial, parity, retries, tool calls, cancel
 
 - 2026-09-07T13:37:03+00:00: Recorded command exit 0; command argv SHA-256
   80f1c21131a42f4ecec04e036a1572c1c6fc15303492aa3dc646716d94f0ea54.
+
+- 2026-09-07T13:38:04+00:00: Unpublished signed+DCO candidate
+  ec0a2930690c108987b4a867632316651282cc97 (tree 4d24d23ed51027213cb531afe6633bd3a737e305) on exact
+  base 612a5a7e3d471f9f2481d7943b06e6914c893dd2 is ready for immutable review. Two-path scope adds
+  the Aider replay journey and honest limits. Focused malformed/tool inconsistency gate and pinned
+  Aider 0.86.2 plus CPython 3.12 Linux x86_64 real journey pass in an unprivileged user/network
+  namespace whose /proc/net/dev contains only lo: buffered 500 then success capture, default
+  authorization redaction, sealed strict replay after workload reset, terminal/grader parity, typed
+  unavailable retry evidence, no tool/usage claims, paced cancellation, process/replay cleanup, and
+  no raw cassette on disk. An initial --mount-proc attempt failed before test start because the host
+  denied procfs remount; the distinct namespace run without remount passed the in-test loopback
+  assertion. Full exact-head workspace fmt/clippy/test/doc/release, configured coverage, repository
+  policy, actionlint, zizmor, introduced-history Gitleaks, cargo-deny, cargo-audit, deliberate
+  quality failure fixtures, artifact/platform validators, Kani 5/5 plus expected failing
+  counterexample, Loom and production/state models all pass. Worktree and owned scratch are clean.
