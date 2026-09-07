@@ -2,7 +2,7 @@
 {
   "branch": "feature/gemini-thinking-config-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T20:23:35+00:00",
+  "claim_expires": "2026-09-07T19:30:49+00:00",
   "depends_on": [
     "AR-0518"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Correct Gemini thinkingConfig strict-replay contract from pinned capture evidence.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Gemini thinkingConfig contract repair",
-  "updated_at": "2026-09-07T17:30:46+00:00",
+  "updated_at": "2026-09-07T17:30:49+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-thinking-config-contract"
 }
 ---
@@ -61,3 +61,5 @@ Repair the merged Gemini dialect using privacy-safe pinned evidence: `thinkingCo
   cargo attempt outside the wrapper was an operator boundary failure and exited 127 before build
   because cargo was not on PATH; no artifact/effect resulted. All further product/build commands use
   the wrapper and /srv toolchain/cache paths.
+
+- 2026-09-07T17:30:49+00:00: Heartbeat by replay_20260906.
