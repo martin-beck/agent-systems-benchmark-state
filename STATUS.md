@@ -532,7 +532,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0702](tasks/AR-0702-native-platforms.md): Validate native Linux kernels and architectures | quality-20260906 | Exercise native x86_64 and aarch64 including booted openEuler kernels. | Await focused independent review of unpublished CI-repair head 933b55159e3685ca636b0138b1627303b3ba82ec, then update PR 31 from exact remote e7f08ed only with explicit lease and require fresh exact-head native/quality/Rust/formal/fault CI. AR-0703 remains the completion blocker. |
 | P1 | [AR-0803](tasks/AR-0803-frontend-control-api.md): Define the frontend control API | root-coordination-20260906 | Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary. | Await fresh independent immutable review of repaired exact cbb764c; publish only if all prior blockers and new concurrency/privacy semantics are approved. |
-| P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | replay-20260906 | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Await independent immutable review of exact replacement candidate 0030358074c1acb92aad10d683208b243d9a6ad7/tree f3cc91544d7472c7ded1cfcd83a3d4c04d84012a; do not publish without coordinator authorization. |
+| P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | replay-20260906 | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Complete exact-tree privacy/signature/scope verification, create one focused signed DCO successor, and request immutable review without publication. |
 
 ### Planned (48)
 

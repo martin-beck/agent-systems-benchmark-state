@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0308",
-  "next_action": "Await independent immutable review of exact replacement candidate 0030358074c1acb92aad10d683208b243d9a6ad7/tree f3cc91544d7472c7ded1cfcd83a3d4c04d84012a; do not publish without coordinator authorization.",
+  "next_action": "Complete exact-tree privacy/signature/scope verification, create one focused signed DCO successor, and request immutable review without publication.",
   "observed_branch": "feature/agent-mini-swe",
   "observed_dirty": 2,
   "observed_head": "0030358074c1acb92aad10d683208b243d9a6ad7",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned mini-SWE-agent as a bounded batch engineering agent.",
-  "task_revision": 256,
+  "task_revision": 257,
   "title": "Implement mini-SWE-agent client adapter",
-  "updated_at": "2026-09-07T05:21:20+00:00",
+  "updated_at": "2026-09-07T05:21:50+00:00",
   "worktree_key": "agent-systems-benchmark-agent-mini-swe"
 }
 ---
@@ -858,3 +858,19 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T05:21:20+00:00: Recorded command exit 0; command argv SHA-256
   dc5c5237c20ef1ee98160e28d98d8ce58dac6a391c8b023db1e40e015752b73f.
+
+- 2026-09-07T05:21:50+00:00: Independent review identified four remaining blockers on 0030358:
+  Python automatic site initialization was not disabled, the manifest omitted its emitted Usage
+  capability, arbitrary non-Submitted terminal strings were accepted as failure, and public IDs
+  allowed non-transport-neutral characters. Repair now invokes Python with -P -S and proves a
+  hostile staged sitecustomize cannot execute; declares Usage; accepts only Submitted,
+  LimitsExceeded, TimeExceeded, and RepeatedFormatError; and validates public IDs before effects
+  against the ASCII letter/digit/dot/underscore/hyphen allowlist through 4 KiB. Focused 20/20 tests,
+  the exact pinned 2.4.6 loopback edit+cancellation journey, full workspace
+  fmt/clippy/tests/docs/release, coverage, formal model tests, five Kani proofs, deliberate Kani
+  failure, Cargo Deny/audit, workflow analyzers, repository policy, Gitleaks directory scan, and
+  controlled failure fixtures pass. Coverage is 94.49% workspace lines, 96.01% mini_swe.rs, 98.44%
+  protocol, 97.60% replay, and 100% core; LLVM exposes no branch denominator. Two initial
+  apply_patch wrapper commands failed while matching/quoting patch context; the first partially
+  applied four source hunks and briefly mangled byte-literal quotes, then the successor wrapper
+  patch repaired the exact dirty tree before any build/test. No candidate publication.
