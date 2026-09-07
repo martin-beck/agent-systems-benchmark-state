@@ -19,7 +19,7 @@ Generated from local Git and GitHub. Do not edit.
 | 34086102616 | `e7f08ed683f4` | pull_request | Fault assurance | completed:success |
 | 34086102606 | `e7f08ed683f4` | pull_request | Formal assurance | completed:success |
 | 34086102602 | `e7f08ed683f4` | pull_request | Native platform evidence | completed:failure |
-| 34086102505 | `e7f08ed683f4` | pull_request | Repository quality | in_progress:- |
+| 34086102505 | `e7f08ed683f4` | pull_request | Repository quality | completed:success |
 | 34086102386 | `e7f08ed683f4` | pull_request | Rust verification | in_progress:- |
 | 34082158999 | `814397f8f749` | push | Rust verification | completed:success |
 | 34082158982 | `814397f8f749` | push | Formal assurance | completed:success |
