@@ -2,7 +2,7 @@
 {
   "branch": "feature/fault-assurance",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T04:38:31+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0103",
     "AR-0104",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/fault-assurance",
   "observed_dirty": 0,
   "observed_head": "e6c623113c15c99950889b26cd70b29c6966b1d4",
-  "owner": "contracts-20260906",
+  "owner": "",
   "plan": "../plans/AR-0902.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection.",
-  "task_revision": 111,
+  "task_revision": 112,
   "title": "Add fuzz mutation and lifecycle fault campaigns",
-  "updated_at": "2026-09-07T03:23:15+00:00",
+  "updated_at": "2026-09-07T03:24:26+00:00",
   "worktree_key": "agent-systems-benchmark-fault-assurance"
 }
 ---
@@ -407,3 +407,13 @@ Implementation has not started. Read the linked plan before claiming.
   hosted runs all green at 4a59593c: fault 34078911371, quality 34078911370, Rust x86_64+aarch64
   34078911365, formal Kani+Loom both arches 34078911385. Product primary/origin/remote exact and
   clean.
+
+- 2026-09-07T03:24:26+00:00: Released after signed+DCO merge
+  4a59593c0c55e0ad72656363473a404d8be1054b was pushed as exact product main and PR #28 recorded that
+  merge; complete local postmerge native fault, full workspace, bounded fuzz, mutation, coverage,
+  supply-chain, privacy/policy, platform and formal/Kani positive+negative gates passed with clean
+  external targets and no source residue; exact-main hosted fault 34078911371, quality 34078911370,
+  Rust x86_64+aarch64 34078911365 and formal 34078911385 are green; final state quality suite
+  reports 97% branch-aware coverage and reconcile/snapshot/live doctor passed. Retained limits
+  remain explicit: bounded campaigns are not exhaustive, hosted counterexamples are not persisted
+  automatically, and physical ENOSPC/power loss is unsupported.
