@@ -11,7 +11,7 @@
   "id": "AR-0902",
   "next_action": "Await coordinator instruction for one controlled rebase onto current signed product main, then rerun affected exact-tree gates and independent immutable review before publication.",
   "observed_branch": "feature/fault-assurance",
-  "observed_dirty": 0,
+  "observed_dirty": 3,
   "observed_head": "68ecb4e97d848ff59f51aaf64030271f72a200aa",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0902.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Add fuzz mutation and lifecycle fault campaigns",
-  "updated_at": "2026-09-07T02:32:08+00:00",
+  "updated_at": "2026-09-07T02:33:07+00:00",
   "worktree_key": "agent-systems-benchmark-fault-assurance"
 }
 ---
