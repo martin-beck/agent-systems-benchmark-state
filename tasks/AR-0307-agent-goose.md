@@ -11,17 +11,17 @@
   "id": "AR-0307",
   "next_action": "Create focused signed+DCO immutable Goose candidate from exact e85548d base; rerun commit-sensitive scope/privacy/signature gates and await independent review before publication.",
   "observed_branch": "feature/agent-goose",
-  "observed_dirty": 6,
-  "observed_head": "e85548d00cffcc3a014bfbc04b8fc79c5fe35da0",
+  "observed_dirty": 0,
+  "observed_head": "c151450f4ef4b15cc0efafffc708afd7b5d9aa28",
   "owner": "quality-20260906",
   "plan": "../plans/AR-0307.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned AAIF goose in no-session structured mode.",
-  "task_revision": 138,
+  "task_revision": 139,
   "title": "Implement goose client adapter",
-  "updated_at": "2026-09-07T02:02:35+00:00",
+  "updated_at": "2026-09-07T02:02:38+00:00",
   "worktree_key": "agent-systems-benchmark-agent-goose"
 }
 ---
