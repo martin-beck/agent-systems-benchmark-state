@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-miniswe",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T21:39:26+00:00",
+  "claim_expires": "2026-09-07T22:44:15+00:00",
   "depends_on": [
     "AR-0308",
     "AR-0503",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for mini-SWE-agent.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Qualify mini-SWE replay",
-  "updated_at": "2026-09-07T19:42:57+00:00",
+  "updated_at": "2026-09-07T19:44:15+00:00",
   "worktree_key": "agent-systems-benchmark-replay-miniswe"
 }
 ---
@@ -68,3 +68,5 @@ Qualify mini-SWE-agent record/replay, network denial, parity, retries, tool call
 
 - 2026-09-07T19:42:57+00:00: Recorded command exit 101; command argv SHA-256
   11244ed40ef37a01be0caa04ed9bb047d10678a0eaf7b0f8549f23e67bba1dbd.
+
+- 2026-09-07T19:44:15+00:00: Heartbeat by replay_20260906.
