@@ -10,7 +10,7 @@
   "id": "AR-0836",
   "next_action": "Separate job execution from operator-owned installation, credentials, control state, and diagnostics with a verified immutable boundary.",
   "observed_branch": "fix/runner-isolation-hardening",
-  "observed_dirty": 1,
+  "observed_dirty": 2,
   "observed_head": "a4782cdc467d38996473168cc5d2ccedfae75a25",
   "owner": "quality-20260906",
   "plan": "../plans/AR-0836.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Harden development-host runner isolation against same-UID job tampering and diagnostic leakage.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Harden runner isolation and credential boundaries",
-  "updated_at": "2026-09-07T07:57:52+00:00",
+  "updated_at": "2026-09-07T07:58:28+00:00",
   "worktree_key": "agent-systems-benchmark-runner-isolation-hardening"
 }
 ---
