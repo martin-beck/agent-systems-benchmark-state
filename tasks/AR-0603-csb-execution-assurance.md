@@ -10,7 +10,7 @@
     "AR-0104"
   ],
   "id": "AR-0603",
-  "next_action": "Repair only the truncated asb-csb-runner test tail from the preserved intended delta, then run isolated crate checks without touching root Cargo.toml/Cargo.lock/schema.",
+  "next_action": "Compile the preserved isolated crate in the disposable mirror using the explicit pinned Cargo path, then repair substantive contract/test failures without root Cargo/schema edits.",
   "observed_branch": "feature/csb-execution-assurance",
   "observed_dirty": 1,
   "observed_head": "939c35c5ee64c9f9685cec471efc03cb620643c2",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T08:49:07+00:00",
+  "updated_at": "2026-09-07T08:49:22+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
@@ -142,3 +142,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T08:49:07+00:00: Recorded command exit 127; command argv SHA-256
   e6e82f56418c7ecc3f13fae8ecad5435beeb90d722c3b75c8284e74d4b5aee7a.
+
+- 2026-09-07T08:49:22+00:00: Isolated mirror test command exited 127 before compilation because
+  cargo was absent from the wrapped PATH. Product worktree content did not change; disposable mirror
+  remains under /srv/data/projects/.asb-local. Retry once with explicit
+  /srv/data/projects/.asb-local/cargo/bin/cargo and pinned CARGO_HOME/RUSTUP_HOME.
