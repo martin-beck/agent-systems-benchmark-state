@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Add fuzz mutation and lifecycle fault campaigns",
-  "updated_at": "2026-09-07T02:45:36+00:00",
+  "updated_at": "2026-09-07T02:45:38+00:00",
   "worktree_key": "agent-systems-benchmark-fault-assurance"
 }
 ---
@@ -293,3 +293,6 @@ Implementation has not started. Read the linked plan before claiming.
   were classified as wildcard, and libfuzzer-sys 0.4.13 requires NCSA in addition to MIT/Apache-2.0.
   This is deterministic policy configuration, not a fuzz finding or platform-specific failure.
   Retained faults passed both architectures; formal run is green.
+
+- 2026-09-07T02:45:38+00:00: Recorded command exit 0; command argv SHA-256
+  d3c3d131027537036820bee6afd0d4f8ba976ccdd9c367bdce36af701ead29b0.
