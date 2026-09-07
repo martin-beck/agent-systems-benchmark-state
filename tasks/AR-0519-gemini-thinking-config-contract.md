@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Correct Gemini thinkingConfig strict-replay contract from pinned capture evidence.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Gemini thinkingConfig contract repair",
-  "updated_at": "2026-09-07T17:49:26+00:00",
+  "updated_at": "2026-09-07T17:50:42+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-thinking-config-contract"
 }
 ---
@@ -147,3 +147,6 @@ Repair the merged Gemini dialect using privacy-safe pinned evidence: `thinkingCo
 
 - 2026-09-07T17:49:26+00:00: Recorded command exit 0; command argv SHA-256
   7166559eb12f75bb1fefc97cfc284d3fdba8cbbbaae6f04d1c89dab6b01835ff.
+
+- 2026-09-07T17:50:42+00:00: Recorded command exit 0; command argv SHA-256
+  bc3b5a0add5b660373b2ca670ee624797d5d9a80d1196e33cd1a9611d5a1af2a.
