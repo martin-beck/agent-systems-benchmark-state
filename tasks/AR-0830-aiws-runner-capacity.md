@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T05:57:46+00:00",
+  "updated_at": "2026-09-07T05:58:00+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
@@ -146,3 +146,6 @@ Implementation has not started. Read the linked plan before claiming.
   runners deregister after one job, requiring external lifecycle automation, and recommends external
   diagnostic log retention; this host has no authorized registration token/admin boundary in scope,
   so live provisioning must remain blocked rather than handling secrets unsafely.
+
+- 2026-09-07T05:58:00+00:00: Recorded command exit 0; command argv SHA-256
+  169c0474f8fa47f461cddd7801e492fec1df6fd6855f4881346a41cf4a757c24.
