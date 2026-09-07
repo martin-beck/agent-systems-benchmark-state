@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0830",
-  "next_action": "Harden reset against concurrent path substitution, add service registration and lifecycle controls, and extend lease/isolation/fault negatives before immutable review.",
+  "next_action": "Independently review the two signed runner-control commits, then implement or provision the dedicated service identity and protected manual prequalification canary without enabling ordinary workflow routing.",
   "observed_branch": "feature/development-host-runner-capacity",
   "observed_dirty": 0,
   "observed_head": "40d54709e923172d6953d212190c95c0b103df84",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T05:56:00+00:00",
+  "updated_at": "2026-09-07T05:56:14+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
@@ -125,3 +125,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T05:56:00+00:00: Recorded command exit 0; command argv SHA-256
   49b393ff70b691b048563f264a0d8aeb9b013a77dc60eb6b9cfefac7b8f76bf9.
+
+- 2026-09-07T05:56:14+00:00: Signed+DCO successor 40d54709e923172d6953d212190c95c0b103df84 hardens
+  reset with a nonblocking 0600 lock, atomic same-filesystem quarantine before replacement, repeated
+  symlink/type validation, and bounded quarantine deletion. Health now rejects permissive
+  lease/manifest modes. Added malformed, expired, permissive and concurrently locked lease negatives
+  plus lifecycle documentation requiring pinned ephemeral registration, no default labels,
+  secret-out-of-band registration, dedicated identity, stop confirmation, and AR-0832 qualification
+  before activation. Wrapper-run sh -n, focused positive/negative tests, diff check, privacy grep
+  and core-residue audit passed; worktree is clean.
