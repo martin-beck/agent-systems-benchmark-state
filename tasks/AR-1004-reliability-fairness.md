@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Report repeated-attempt reliability and prevent aggregate results from hiding starvation or hard strata.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Measure reliability and mixed-workload fairness",
-  "updated_at": "2026-09-07T03:42:59+00:00",
+  "updated_at": "2026-09-07T03:43:30+00:00",
   "worktree_key": "agent-systems-benchmark-reliability-fairness"
 }
 ---
@@ -110,3 +110,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T03:42:59+00:00: Recorded command exit 0; command argv SHA-256
   da94b863c52c03ce16a564728480120f4f87002a1c1238f341492c34839e0260.
+
+- 2026-09-07T03:43:30+00:00: Recorded command exit 0; command argv SHA-256
+  777d2010520dd994e7ed5c084772589aeaf46ca02e615b0add0e46feb3a10dbe.
