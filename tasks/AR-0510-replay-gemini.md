@@ -13,16 +13,16 @@
   "next_action": "Await focused shared Gemini dialect repair for exact thinkingConfig shape {includeThoughts:boolean}; then rerun pinned capture-to-strict-replay and remaining gates without weakening exact matching.",
   "observed_branch": "feature/replay-gemini",
   "observed_dirty": 1,
-  "observed_head": "2d498df307bce5a813229c9f6d0cf8bb45efe0b1",
+  "observed_head": "24ad8d22a6cca66827cc94205ae3474c12f8fd7a",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0510.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Gemini.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Qualify Gemini replay",
-  "updated_at": "2026-09-07T17:40:33+00:00",
+  "updated_at": "2026-09-07T17:54:47+00:00",
   "worktree_key": "agent-systems-benchmark-replay-gemini"
 }
 ---
