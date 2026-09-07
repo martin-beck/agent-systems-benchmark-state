@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-aider",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T16:38:18+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0303",
     "AR-0503",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/replay-aider",
   "observed_dirty": 0,
   "observed_head": "ec0a2930690c108987b4a867632316651282cc97",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0508.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Qualify replay conformance for aider.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Qualify aider replay",
-  "updated_at": "2026-09-07T13:50:45+00:00",
+  "updated_at": "2026-09-07T13:51:13+00:00",
   "worktree_key": "agent-systems-benchmark-replay-aider"
 }
 ---
@@ -143,3 +143,15 @@ Qualify aider record/replay, network denial, parity, retries, tool calls, cancel
 
 - 2026-09-07T13:50:45+00:00: Recorded command exit 0; command argv SHA-256
   4d1934c8b36b5e85fbd2674994c25d54e1b20e6495cc76ef6c1c2cb2f7793817.
+
+- 2026-09-07T13:51:13+00:00: Completed through independently approved PR #41. Signed+DCO no-ff
+  product merge 40cfa75ca195aaf13be1d5bc8025f96e5f4d3e7c has parents
+  612a5a7e3d471f9f2481d7943b06e6914c893dd2 and ec0a2930690c108987b4a867632316651282cc97, with tree
+  4d24d23ed51027213cb531afe6633bd3a737e305 identical to the reviewed feature. Exact-main hosted Rust
+  34129192829 (x86_64 and aarch64), quality 34129193026, fault 34129192846, and formal 34129192775
+  all completed success. Postmerge local workspace fmt/clippy/tests/docs/release and the real pinned
+  Aider 0.86.2 CPython 3.12 loopback-only capture/replay/cancellation journey pass. Final state
+  reconcile, 38 branch-aware tests at 96% coverage, Ruff, mypy, schema, generated status, live
+  doctor, clean worktrees, and synchronized product/state refs pass. Proven support remains pinned
+  Linux x86_64 fixture replay only; live providers, non-loopback transport, other versions, native
+  aarch64, structured tool/usage/retry counts, and OS timing determinism remain unsupported.
