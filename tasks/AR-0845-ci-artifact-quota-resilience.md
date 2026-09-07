@@ -2,7 +2,7 @@
 {
   "branch": "feature/ci-artifact-quota-resilience",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T13:04:47+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003",
     "AR-0831"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ci-artifact-quota-resilience",
   "observed_dirty": 0,
   "observed_head": "7d98653e7e7f219cced6abfb5c611d2614c72bd7",
-  "owner": "quality-20260906",
+  "owner": "",
   "plan": "../plans/AR-0845.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Prevent exhausted GitHub artifact quota from obscuring authoritative ASB results.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Harden CI artifact quota behavior",
-  "updated_at": "2026-09-07T12:20:20+00:00",
+  "updated_at": "2026-09-07T12:25:52+00:00",
   "worktree_key": "agent-systems-benchmark-ci-artifact-quota-resilience"
 }
 ---
@@ -184,3 +184,14 @@ operator guidance.
 
 - 2026-09-07T12:20:20+00:00: Recorded command exit 0; command argv SHA-256
   8e346bd342c58b1a584cdfb4c01dab799565326ae99e1b76a6f7df162056cbb6.
+
+- 2026-09-07T12:25:52+00:00: Released after independently reviewed PR #38 head
+  7d98653e7e7f219cced6abfb5c611d2614c72bd7 and signed+DCO merge
+  ad0cdfc35d141fe63221843c38e9580630c1d1b5. Full post-merge Rust,
+  quality/supply-chain/coverage/failure/platform, Kani 5/5 plus deliberate negative, Loom and
+  production-trace checks passed locally. Exact-main push runs all succeeded: Rust x86_64+aarch64
+  34121326929, repository quality 34121326944, formal x86_64+aarch64+Kani 34121326883, and fault
+  assurance 34121326875. Product main is clean and synchronized. Optional provider upload failure
+  remains a generic unavailable classification because GitHub exposes no typed quota cause; required
+  checks and preparation remain fail closed, with no automatic retry. AR-0846 remains
+  dependency-gated.
