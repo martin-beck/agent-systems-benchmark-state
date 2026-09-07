@@ -9,7 +9,7 @@
     "AR-0204"
   ],
   "id": "AR-0801",
-  "next_action": "Add failure-path and PTY/resize-adjacent terminal tests, run workspace/full quality/formal gates, then create a focused signed DCO candidate for independent immutable review.",
+  "next_action": "Hold immutable signed candidate 3374572 for independent review; repair any blocker, otherwise publish exact head and require exact-head CI before integration.",
   "observed_branch": "feature/terminal-interface",
   "observed_dirty": 0,
   "observed_head": "3374572d09476bc45ceeac84776d73f52cee8211",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide doctor, plan, run, sweep, compare and report with stable JSON output.",
-  "task_revision": 107,
+  "task_revision": 108,
   "title": "Implement terminal and automation interfaces",
-  "updated_at": "2026-09-07T01:57:36+00:00",
+  "updated_at": "2026-09-07T01:58:14+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-interface"
 }
 ---
@@ -338,3 +338,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T01:57:36+00:00: Recorded command exit 0; command argv SHA-256
   fb4b7c79e631cdc4b519524b87a1204c2e497adaf325f6ee3cf4f214c1fe43c4.
+
+- 2026-09-07T01:58:14+00:00: Immutable candidate 3374572d09476bc45ceeac84776d73f52cee8211, tree
+  c10b1c673e97c48534a057ee0b75dccb10b9b0d2, exact parent e85548d00cffcc3a014bfbc04b8fc79c5fe35da0;
+  SSH signature good and exact Martin Beck DCO trailer present. Clean five-path diff. Exact-tree
+  gates green: fmt; workspace all-target Clippy warnings denied; workspace all-target tests; rustdoc
+  with warnings denied; release build; cargo-deny; live RustSec audit of 138 dependencies; aggregate
+  coverage 91.64% regions/94.56% lines and focused CLI 90.14% regions/91.01% lines (installed LLVM
+  no branch denominator); actionlint; zizmor; Gitleaks; repository policy; controlled failure
+  fixtures; Loom/state models; Kani 0.67.0 five harnesses with 0 failures. Native CLI: 8 unit and 3
+  executable e2e including pipe, pseudo-terminal, SIGINT, descendant reap, timeout and durable
+  lifecycle. Failed local commands recorded separately: cargo-audit plugin invoked without cargo
+  subcommand, failure-path runner without sanitized Cargo PATH, and Kani without project-local
+  KANI_HOME; corrected reruns green.
