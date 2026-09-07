@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for mini-SWE-agent.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Qualify mini-SWE replay",
-  "updated_at": "2026-09-07T19:56:47+00:00",
+  "updated_at": "2026-09-07T19:58:35+00:00",
   "worktree_key": "agent-systems-benchmark-replay-miniswe"
 }
 ---
@@ -125,3 +125,6 @@ Qualify mini-SWE-agent record/replay, network denial, parity, retries, tool call
 
 - 2026-09-07T19:56:47+00:00: Recorded command exit 0; command argv SHA-256
   1ad645ac3af5015622122bb4923d0510695dbbdfed036cd693b52babe2d46478.
+
+- 2026-09-07T19:58:35+00:00: Recorded command exit 0; command argv SHA-256
+  c3d91e56c33316aba83a81e683139303897bcc9c79b7b38c848e5a0067b7d193.
