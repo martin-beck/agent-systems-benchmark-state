@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0509",
-  "next_action": "Preserve isolated Codex test; await serialized child AR fixing privacy-safe request-body pointer replay, then finish native parity/retry/cancel gates.",
+  "next_action": "After AR-0517 integrates, update AR-0509 onto exact main, add bounded Codex retry evidence, then run full exact-tree gates and candidate review.",
   "observed_branch": "feature/replay-codex",
   "observed_dirty": 1,
   "observed_head": "612a5a7e3d471f9f2481d7943b06e6914c893dd2",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Codex.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Qualify Codex replay",
-  "updated_at": "2026-09-07T15:36:39+00:00",
+  "updated_at": "2026-09-07T15:37:05+00:00",
   "worktree_key": "agent-systems-benchmark-replay-codex"
 }
 ---
@@ -153,3 +153,14 @@ Qualify Codex record/replay, network denial, parity, retries, tool calls, cancel
 
 - 2026-09-07T15:36:39+00:00: Recorded command exit 0; command argv SHA-256
   6d3ff62091ba4e6e0d90fedc1b6eec8c0aceb40bafda9b51ccc5a1303a640142.
+
+- 2026-09-07T15:37:05+00:00: Validated AR-0517 exact d7492ef5e9ad5a3989cead2b42154bae3fc735d5 with
+  test source SHA-256 49b01c3c34455309d19f07d41b1168e69fba5884e40f6a153b65a51b987d1acd. In a
+  disposable detached /srv/data/projects worktree, nonignored malformed/truncated cassette rejection
+  passed and pinned Codex 0.153.4 real acceptance passed in 33.65s: exact executable SHA,
+  loopback-only network namespace, two-request Responses tool-call/result causality, original
+  bug-fix grading, strict replay trajectory/grade parity, paced cancellation, empty private state
+  roots, exact request-pointer matching, and decoded [ASB_REDACTED:*] markers at every configured
+  prompt/metadata pointer. Earlier exit 1 results were only a mistaken full-SHA preflight and
+  rustfmt layout; no test ran in either and both were corrected before the green run. No shared
+  replay source changed.
