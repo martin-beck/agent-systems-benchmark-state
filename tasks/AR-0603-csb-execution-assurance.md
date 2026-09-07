@@ -13,16 +13,16 @@
   "next_action": "Run remaining quality failure fixtures with the verified analyzer path, platform and formal checks, then commit focused signed DCO integration and run immutable-tree privacy/scope review.",
   "observed_branch": "feature/csb-execution-assurance",
   "observed_dirty": 0,
-  "observed_head": "d7741ba878ae59ff30528f4cc5648a0a67dede95",
+  "observed_head": "39e306124b567dece6f335662a11906869f91ba7",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0603.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 105,
+  "task_revision": 106,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T09:58:37+00:00",
+  "updated_at": "2026-09-07T09:59:18+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
