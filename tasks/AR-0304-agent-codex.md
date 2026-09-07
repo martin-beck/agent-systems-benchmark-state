@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use Codex noninteractive structured events or app-server with declared capability boundaries.",
-  "task_revision": 125,
+  "task_revision": 126,
   "title": "Implement Codex client adapter",
-  "updated_at": "2026-09-07T00:33:57+00:00",
+  "updated_at": "2026-09-07T00:36:32+00:00",
   "worktree_key": "agent-systems-benchmark-agent-codex"
 }
 ---
@@ -399,3 +399,6 @@ Implementation has not started. Read the linked plan before claiming.
   strict gates, DCO/signatures/privacy/Gitleaks passed; complete five-path diff contains no /srv or
   /home string. Pushed with exact lease from 37a63aaf. PR remains mergeable on exact base d384c4c.
   Fresh exact-head runs queued: Rust 34070192794, quality 34070192793, formal 34070192798.
+
+- 2026-09-07T00:36:32+00:00: Recorded command exit 0; command argv SHA-256
+  edde108ab0db20bf686f26427e00ee030da4706cebec990eb65658e53575a124.
