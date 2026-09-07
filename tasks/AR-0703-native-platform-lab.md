@@ -11,15 +11,18 @@
   ],
   "id": "AR-0703",
   "next_action": "Provision credential-isolated disposable booted Debian and openEuler x86_64/aarch64 qualification capacity with bounded cost and availability.",
+  "observed_branch": "feature/native-platform-lab",
+  "observed_dirty": 0,
+  "observed_head": "b1669203308db5a75fee1e78a45c6fc8e71f17ce",
   "owner": "quality-20260906",
   "plan": "../plans/AR-0703.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide genuine disposable native hosts for required Debian and openEuler platform qualification.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Provision native platform qualification capacity",
-  "updated_at": "2026-09-07T10:34:33+00:00",
+  "updated_at": "2026-09-07T10:34:46+00:00",
   "worktree_key": "agent-systems-benchmark-native-platform-lab"
 }
 ---
