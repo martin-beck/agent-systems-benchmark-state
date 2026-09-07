@@ -2,7 +2,7 @@
 {
   "branch": "feature/development-host-runner-capacity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T09:13:54+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0002",
     "AR-0003",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/development-host-runner-capacity",
   "observed_dirty": 0,
   "observed_head": "0f260296432748bf58437de8590449f2de1877cd",
-  "owner": "contracts-20260906",
+  "owner": "",
   "plan": "../plans/AR-0830.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 86,
+  "task_revision": 87,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T06:22:46+00:00",
+  "updated_at": "2026-09-07T06:23:11+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
@@ -273,3 +273,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T06:22:46+00:00: Recorded command exit 1; command argv SHA-256
   c1a260ad7cb863b8a145bba08124cbf25a53d77e7d8f477e132f7fdd4c66ba59.
+
+- 2026-09-07T06:23:11+00:00: Three consecutive wrapped commands failed (argv hashes
+  cc967c46750ac7b3170e697b72a0d3c90869a5727e4009a0fedf49e6d184d563,
+  3149d44e378bb31f3a67464128b6b283cdc68242cb42e15150948b004e90f187,
+  c1a260ad7cb863b8a145bba08124cbf25a53d77e7d8f477e132f7fdd4c66ba59); worker did not provide
+  diagnostics; preserve 76ad12d and investigate before retry.
