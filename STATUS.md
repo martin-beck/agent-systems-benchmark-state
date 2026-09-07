@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**80 ARs tracked** across 4 active status categories.
+**80 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 50 |
 | **Future** | Deferred roadmap work | 0 |
@@ -58,7 +58,7 @@ flowchart LR
         AR_0305["AR-0305 - In progress"]:::status_in_progress
         AR_0306["AR-0306 - In progress"]:::status_in_progress
         AR_0307["AR-0307 - In progress"]:::status_in_progress
-        AR_0308["AR-0308 - Open"]:::status_open
+        AR_0308["AR-0308 - In progress"]:::status_in_progress
         AR_0309["AR-0309 - Planned"]:::status_planned
         AR_0310["AR-0310 - Done"]:::status_done
         AR_0311["AR-0311 - Planned"]:::status_planned
@@ -506,19 +506,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0305](tasks/AR-0305-agent-gemini.md): Implement Gemini CLI client adapter | contracts-20260906 | Run pinned Gemini CLI through noninteractive JSON events. | Await serialized lib.rs registration handoff, then rebase once onto stabilized exact main and rerun registered-module full gates. |
 | P1 | [AR-0306](tasks/AR-0306-agent-qwen-code.md): Implement Qwen Code client adapter | root-coordination-20260906 | Run pinned Qwen Code through isolated headless stream-JSON. | Finish isolated Qwen tests, then acquire the serialized module-registration fence after earlier adapter integration. |
 | P1 | [AR-0307](tasks/AR-0307-agent-goose.md): Implement goose client adapter | quality-20260906 | Run pinned AAIF goose in no-session structured mode. | Complete isolated compilation/tests after AR-0304 transfers the additive asb-agents lib.rs export fence; then run pinned x86_64/aarch64 native journeys and full gates. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Unclaimed | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Inspect the current package, trajectory contract, LiteLLM override and environment isolation. |
+| P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | replay-20260906 | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Inspect the current package, trajectory contract, LiteLLM override and environment isolation. |
 
 ### Planned (50)
 
