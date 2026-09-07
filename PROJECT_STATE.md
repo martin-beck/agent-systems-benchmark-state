@@ -16,7 +16,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34092791959 | `14ac5ce3bcc2` | workflow_dispatch | Development host runner canary | queued:- |
+| 34092791959 | `14ac5ce3bcc2` | workflow_dispatch | Development host runner canary | completed:success |
 | 34092764541 | `14ac5ce3bcc2` | push | Formal assurance | in_progress:- |
 | 34092764480 | `14ac5ce3bcc2` | push | Rust verification | in_progress:- |
 | 34092764475 | `14ac5ce3bcc2` | push | Fault assurance | in_progress:- |
