@@ -9,7 +9,7 @@
     "AR-0401"
   ],
   "id": "AR-1004",
-  "next_action": "Hold immutable eb28ca7 for fresh independent review; publish only after approval.",
+  "next_action": "Monitor PR #30 exact eb28ca7 hosted fault/formal/quality/Rust checks; investigate failures and do not merge.",
   "observed_branch": "feature/reliability-fairness",
   "observed_dirty": 0,
   "observed_head": "eb28ca7aeae59b2340af7856e40f0ea31b792e66",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Report repeated-attempt reliability and prevent aggregate results from hiding starvation or hard strata.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Measure reliability and mixed-workload fairness",
-  "updated_at": "2026-09-07T04:07:00+00:00",
+  "updated_at": "2026-09-07T04:07:17+00:00",
   "worktree_key": "agent-systems-benchmark-reliability-fairness"
 }
 ---
@@ -227,3 +227,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T04:07:00+00:00: Recorded command exit 0; command argv SHA-256
   64aa125edacaa73d3a8e8b27fed40ad10d382d092f365948506fc81360c7de94.
+
+- 2026-09-07T04:07:17+00:00: Independent review approved immutable eb28ca7. Re-fetched exact refs,
+  verified public main/base remains 4a59593c, feature ref was absent, tree clean,
+  signature/DCO/privacy/policy/Gitleaks/four-path scope green, then pushed exact head with
+  absent-ref lease and opened focused PR #30
+  https://github.com/martin-beck/agent-systems-benchmark/pull/30. PR base/head are exactly
+  4a59593c/eb28ca7 and mergeable. Exact-head hosted runs started: Fault assurance 34081912485,
+  Formal assurance 34081912577, Repository quality 34081912503, Rust verification 34081912453. Await
+  all exact-head jobs; do not merge before coordinator authorization.
