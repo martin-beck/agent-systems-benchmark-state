@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0702",
-  "next_action": "Implement a fail-closed native evidence harness and immutable report binding; qualify the available bare-metal Ubuntu 24.04 x86_64 cell, then use disposable native aarch64 CI without inferring openEuler or other booted kernels from containers/emulation. Escalate unavailable required booted platform cells as explicit follow-up infrastructure work.",
+  "next_action": "Implement and verify the fail-closed native evidence harness; publish genuine Ubuntu x86_64 and public native-arm evidence. AR-0703 supplies the required booted Debian/openEuler x86_64+aarch64 capacity; retain AR-0702 in progress until that external prerequisite completes.",
   "observed_branch": "feature/native-platforms",
   "observed_dirty": 0,
   "observed_head": "4a59593c0c55e0ad72656363473a404d8be1054b",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Exercise native x86_64 and aarch64 including booted openEuler kernels.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Validate native Linux kernels and architectures",
-  "updated_at": "2026-09-07T03:17:32+00:00",
+  "updated_at": "2026-09-07T03:21:00+00:00",
   "worktree_key": "agent-systems-benchmark-native-platforms"
 }
 ---
@@ -67,3 +67,11 @@ Implementation has not started. Read the linked plan before claiming.
   43e54f2b94ae29af1f75239fb196ac826f213088db45a558b4a69c38d2817e03, sandbox
   41961a83465951fcf3a566b4abbc02d2d11223dc5f923d83352432b6c61ec82c, metrics
   99e20427f1d8275236e3b277b1d7a534e34d5c3a017191fbe2cc7fb7b0012b0a.
+
+- 2026-09-07T03:21:00+00:00: Added required planned AR-0703 in focused signed+DCO commit
+  e227c196257922f294a5d5044d4981514c8cae25, with exact booted Debian/openEuler x86_64+aarch64,
+  no-emulation, isolation, credential/privacy, teardown/recovery, availability and cost-control
+  criteria. State validation, generated status, live doctor and synchronized refs pass after
+  concurrent worker updates. The transition CLI cannot alter depends_on for an already claimed task,
+  so AR-0702 records AR-0703 as a formal completion blocker/link rather than mutating claimed-task
+  dependency metadata.
