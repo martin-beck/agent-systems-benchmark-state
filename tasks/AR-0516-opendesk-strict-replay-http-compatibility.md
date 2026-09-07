@@ -10,7 +10,7 @@
     "AR-0302"
   ],
   "id": "AR-0516",
-  "next_action": "Implement fail-closed OpenDesk HTTP compatibility for span_id, absent-stream SSE, and recorded model catalog probes.",
+  "next_action": "Await immutable independent review of signed candidate cf64758a; publish only after approval, then require exact-head CI and AR-0507 real pinned OpenDesk rerun after integration.",
   "observed_branch": "feature/opendesk-strict-replay-http-compatibility",
   "observed_dirty": 0,
   "observed_head": "cf64758a6e9ed49d3eca1607fa1ea8135be700f9",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add narrowly scoped strict-replay compatibility for pinned OpenDesk traffic.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "OpenDesk strict-replay HTTP compatibility",
-  "updated_at": "2026-09-07T14:26:22+00:00",
+  "updated_at": "2026-09-07T14:26:58+00:00",
   "worktree_key": "agent-systems-benchmark-opendesk-strict-replay-http-compatibility"
 }
 ---
@@ -173,3 +173,15 @@ Acceptance requires schema/runtime parity, adversarial positives and negatives, 
 
 - 2026-09-07T14:26:22+00:00: Recorded command exit 0; command argv SHA-256
   0f5954ac120518c4c67bfe9df3f52a917c29e7d5611404ea00b8e24260f8f39c.
+
+- 2026-09-07T14:26:58+00:00: Signed candidate cf64758a6e9ed49d3eca1607fa1ea8135be700f9 (tree
+  917cd02e824932e512daf170e0e54608ac2ee661, base 40cfa75ca195aaf13be1d5bc8025f96e5f4d3e7c) is clean,
+  SSH-signature verified, DCO certified, and repository policy/Gitleaks introduced-history clean.
+  Eight-path replay-only scope implements underscore header schema/runtime/redaction parity,
+  Chat-only absent-stream exact SSE, and strict ordered catalog GET syntax with bounded fail-closed
+  negatives. Focused/package/workspace fmt-clippy-test-doc-release, configured coverage (asb-replay
+  97.66% lines), supply chain, workflow policy, failure fixtures, platforms, privacy, Loom/state
+  models, Kani 5/5, and deliberate Kani negative passed. Durable AR-0507 evidence proves span_id,
+  absent stream plus SSE, and at least one pre-completion catalog GET but did not retain exact GET
+  headers; candidate invents no live header claim. Required real pinned OpenDesk rerun remains an
+  explicit post-merge AR-0507 acceptance boundary.
