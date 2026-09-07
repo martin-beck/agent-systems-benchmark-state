@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make privacy-safe redacted request bodies strictly replayable.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Replay redacted request pointers",
-  "updated_at": "2026-09-07T15:15:57+00:00",
+  "updated_at": "2026-09-07T15:16:50+00:00",
   "worktree_key": "agent-systems-benchmark-redacted-request-pointer-replay"
 }
 ---
@@ -104,3 +104,6 @@ Require privacy/Gitleaks, schema and formal checks, adversarial pointer negative
 
 - 2026-09-07T15:15:57+00:00: Recorded command exit 0; command argv SHA-256
   9ab2e28300ff6ea8fe8499a38b50f4773aa18ba6b3c3b136756533624a7a4b54.
+
+- 2026-09-07T15:16:50+00:00: Recorded command exit 0; command argv SHA-256
+  10c7f29bc24136073dd59267d7fd1c4dcb550f6e13cbe4be5761b7745a35815a.
