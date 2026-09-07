@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 108,
+  "task_revision": 109,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T06:38:25+00:00",
+  "updated_at": "2026-09-07T06:38:38+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
@@ -344,3 +344,6 @@ Implementation has not started. Read the linked plan before claiming.
   can execute the path; no listener or duplicate registration occurred. Next retry must invoke
   systemd-run through sudo while retaining User=asb-ci-runner, exact WorkingDirectory and restricted
   writable root.
+
+- 2026-09-07T06:38:38+00:00: Recorded command exit 0; command argv SHA-256
+  db9b1ede4f398ec2c2bc9cf0523701925b73c45fc9a9543a8608a8c99d3e3d2c.
