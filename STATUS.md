@@ -684,7 +684,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0506](tasks/AR-0506-replay-opencode.md): Qualify OpenCode replay | contracts-20260906 | Qualify replay conformance for OpenCode. | Prove credential-free record/replay conformance for the OpenCode adapter with network denial and malformed/tool/cancel negatives. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
-| P1 | [AR-0845](tasks/AR-0845-ci-artifact-quota-resilience.md): Harden CI artifact quota behavior | quality-20260906 | Prevent exhausted GitHub artifact quota from obscuring authoritative ASB results. | Make optional CI evidence quota-aware while preserving required-check semantics and provenance. |
+| P1 | [AR-0845](tasks/AR-0845-ci-artifact-quota-resilience.md): Harden CI artifact quota behavior | quality-20260906 | Prevent exhausted GitHub artifact quota from obscuring authoritative ASB results. | Independently review immutable candidate 7d98653e7e7f219cced6abfb5c611d2614c72bd7 tree 2b02deda39ae1e4a4b40e9c3e960f1f0336f19b3; do not publish before approval. |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | replay-20260906 | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Independently review unpublished exact candidate 1605693dbb7aade01dd47cb074e35bca02df873b tree 7d99a7f69d97335cad802699dbf9a7ac7bac2e1b; do not publish or merge without coordinator authorization. |
 
 ### Blocked (4)

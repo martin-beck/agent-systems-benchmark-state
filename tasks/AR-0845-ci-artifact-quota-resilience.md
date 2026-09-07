@@ -8,7 +8,7 @@
     "AR-0831"
   ],
   "id": "AR-0845",
-  "next_action": "Make optional CI evidence quota-aware while preserving required-check semantics and provenance.",
+  "next_action": "Independently review immutable candidate 7d98653e7e7f219cced6abfb5c611d2614c72bd7 tree 2b02deda39ae1e4a4b40e9c3e960f1f0336f19b3; do not publish before approval.",
   "observed_branch": "feature/ci-artifact-quota-resilience",
   "observed_dirty": 0,
   "observed_head": "7d98653e7e7f219cced6abfb5c611d2614c72bd7",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent exhausted GitHub artifact quota from obscuring authoritative ASB results.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Harden CI artifact quota behavior",
-  "updated_at": "2026-09-07T12:07:26+00:00",
+  "updated_at": "2026-09-07T12:08:21+00:00",
   "worktree_key": "agent-systems-benchmark-ci-artifact-quota-resilience"
 }
 ---
@@ -156,3 +156,19 @@ operator guidance.
 
 - 2026-09-07T12:07:26+00:00: Recorded command exit 0; command argv SHA-256
   bc57eeadddff0d9e18d31e41ed4598b1d5fdfcc43dcc6f37550abe77759ae0ba.
+
+- 2026-09-07T12:08:21+00:00: Immutable two-commit candidate is clean and SSH-signed with exact DCO
+  on base b1669203308db5a75fee1e78a45c6fc8e71f17ce. Full exact-head quality gates passed: repository
+  policy, actionlint, zizmor, introduced-range Gitleaks, cargo-deny, cargo-audit, configured Rust
+  coverage, complete failure fixtures, artifact tests, and platform validation. Artifact module
+  coverage is 100% statements and branches. Full Rust fmt/clippy/workspace tests/rustdoc/release
+  build passed. Exact-head Kani verified 5/5 harnesses, deliberate false assertion failed as
+  required, and formal/Loom/production-trace tests passed. Audit found and repaired
+  workflow_dispatch feature-ref regression with bounded branch validation and
+  malformed/tag/traversal/oversized negatives. The first composite formal negative used cargo-kani
+  with the wrong subcommand and failed before formal unit tests; corrected distinct kani invocation
+  passed. The later full quality bundle substantively passed but its final guard intentionally
+  failed due an incorrectly expanded expected hash; a corrected exact head/tree/clean guard passed
+  with the exact formal rerun. GitHub exposes no typed upload quota cause, so optional provider
+  upload failures are classified generically and never overclaimed; required checks and preparation
+  remain fail closed. AR-0846 remains dependency-gated.
