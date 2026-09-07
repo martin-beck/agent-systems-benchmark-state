@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0308",
-  "next_action": "Await immutable independent review of exact clean candidate 40b9970; do not publish or merge until coordinator authorization.",
+  "next_action": "Repair immutable-review blockers: verified immutable Python and wheel launch copies, bounded pre-mutation correlation IDs, complete pinned Python graph/product verification, and dotenv isolation; then full gates and replacement signed DCO commit.",
   "observed_branch": "feature/agent-mini-swe",
   "observed_dirty": 0,
   "observed_head": "40b997064b6ee9069e8c5ce8348bf5295ff95720",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned mini-SWE-agent as a bounded batch engineering agent.",
-  "task_revision": 149,
+  "task_revision": 150,
   "title": "Implement mini-SWE-agent client adapter",
-  "updated_at": "2026-09-07T03:40:15+00:00",
+  "updated_at": "2026-09-07T03:49:53+00:00",
   "worktree_key": "agent-systems-benchmark-agent-mini-swe"
 }
 ---
@@ -505,3 +505,14 @@ Implementation has not started. Read the linked plan before claiming.
   process. Limits remain honest: unsigned upstream tag, no locked/attested transitive Python
   environment, wheel extraction required for package data, native journey x86_64 only, aarch64
   build/test only, no live streaming/subscription/replay route claim.
+
+- 2026-09-07T03:49:53+00:00: Independent immutable review BLOCKS candidate
+  40b997064b6ee9069e8c5ce8348bf5295ff95720: configured Python and wheel are digest-checked but
+  remain replaceable before process use; public session_id and attempt_id lack pre-mutation
+  nonempty/4KiB/control validation; AR plan explicitly requires a pinned Python dependency graph and
+  package integrity, so the prior no-transitive-lock limitation is not acceptance-complete;
+  PYTHON_DOTENV_DISABLED is not forced and hostile dotenv behavior lacks proof. Candidate stays
+  unpublished. Repair will stage verified private immutable launch artifacts or descriptors, add
+  same-UID replacement adversarials, validate correlation IDs before filesystem/process effects,
+  bind exact complete Python product graph with product-bound verification, force dotenv disabled,
+  and test hostile workspace/ambient dotenv cannot alter endpoint/auth.
