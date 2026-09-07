@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T05:52:00+00:00",
+  "updated_at": "2026-09-07T05:52:02+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
@@ -97,3 +97,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T05:51:55+00:00: Recorded command exit 0; command argv SHA-256
   725cdae2a71404cec2cac380b0140eb027970a6a63a9782293d8960c31bf4f18.
+
+- 2026-09-07T05:52:02+00:00: Recorded command exit 0; command argv SHA-256
+  67f37f4e768534fc9bda5727eaaf625b4edc85bbbc059dcb20575b589da091db.
