@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0304](tasks/AR-0304-agent-codex.md): Implement Codex client adapter | Use Codex noninteractive structured events or app-server with declared capability boundaries. | Await AR-0303 shared registration fence transfer; then rebase exact main, register module/test, and run full exact-tree gates. | replay-20260906 |
+| P1 | [AR-0304](tasks/AR-0304-agent-codex.md): Implement Codex client adapter | Use Codex noninteractive structured events or app-server with declared capability boundaries. | Await independent immutable review of c16e4864 before any push or PR; repair findings, then publish only authorized exact head and require x86_64/aarch64 CI. | replay-20260906 |
 | P1 | [AR-0305](tasks/AR-0305-agent-gemini.md): Implement Gemini CLI client adapter | Run pinned Gemini CLI through noninteractive JSON events. | Inspect the current official stable release, transition constraints, stream-JSON contract and provider override. | contracts-20260906 |
 | P1 | [AR-0306](tasks/AR-0306-agent-qwen-code.md): Implement Qwen Code client adapter | Run pinned Qwen Code through isolated headless stream-JSON. | Inspect the current stable release, stream-JSON contract, provider override and ambient context loading. | root-coordination-20260906 |
 

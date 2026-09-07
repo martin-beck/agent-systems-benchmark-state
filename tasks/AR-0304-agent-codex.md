@@ -8,7 +8,7 @@
     "AR-0102"
   ],
   "id": "AR-0304",
-  "next_action": "Await AR-0303 shared registration fence transfer; then rebase exact main, register module/test, and run full exact-tree gates.",
+  "next_action": "Await independent immutable review of c16e4864 before any push or PR; repair findings, then publish only authorized exact head and require x86_64/aarch64 CI.",
   "observed_branch": "feature/agent-codex",
   "observed_dirty": 0,
   "observed_head": "c16e4864d16751ad00dc004f92a558d324bbd068",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use Codex noninteractive structured events or app-server with declared capability boundaries.",
-  "task_revision": 98,
+  "task_revision": 99,
   "title": "Implement Codex client adapter",
-  "updated_at": "2026-09-07T00:17:51+00:00",
+  "updated_at": "2026-09-07T00:18:08+00:00",
   "worktree_key": "agent-systems-benchmark-agent-codex"
 }
 ---
@@ -314,3 +314,19 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T00:17:51+00:00: Recorded command exit 0; command argv SHA-256
   3c74d68b33c3d6fbcef1c834f2172d671be10d87c8e1387d5839afdf41e587ad.
+
+- 2026-09-07T00:18:08+00:00: After AR-0310 release/fence transfer, preserved five owned paths,
+  rebased exactly once from 941ea6f onto signed clean main d384c4c, and restored the Codex diff
+  without conflict. Created focused SSH-signed+DCO commit c16e4864d16751ad00dc004f92a558d324bbd068,
+  tree aa49ea34a112239936cd9398128bd39de3a85e38, parent d384c4c54a4576dadaae3a542cfc09a5e339a4fe.
+  Exact scope is CODEX.md, codex.rs, additive lib.rs registration, credential-free fixture, and
+  real_codex.rs; no Cargo, lock, schema, provider-profile, aider, transcript, private config/path,
+  or credential changes. Exact-base focused 38 tests plus provider compile-fail doctests and real
+  pinned Codex 0.153.4 Linux x86_64 Responses completion/tool/cancellation journey passed. Full fmt,
+  workspace Clippy -D warnings/tests/docs/release build, formal crate Loom/trace/state/toolchain
+  tests and repository policy passed. Aggregate coverage gate passed: 95.10% workspace lines; Codex
+  90.99% lines, 90.91% functions, 88.25% regions; branch coverage unavailable on pinned stable and
+  not claimed. Failure fixtures, cargo-deny, cargo-audit, Python py_compile/Ruff/mypy strict,
+  privacy scan and Gitleaks passed. Exact commit SSH signature, matching author/trailer DCO, clean
+  status, scope, repository policy, Gitleaks, focused Clippy/tests, native journey and Python gates
+  reverified. Candidate is unpushed and no PR exists pending independent review.
