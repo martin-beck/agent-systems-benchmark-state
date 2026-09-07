@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0308",
-  "next_action": "Commit the independently blocked repair as a focused SSH-signed DCO successor, run commit-scoped privacy/signature/scope checks, and request immutable review; do not publish.",
+  "next_action": "Await independent immutable review of exact candidate d6bd4bca9798d662b84263bc8c9d6639ed8b1f44/tree 5ac142ac33a01b3bb210f5a2cb5fe146898df1af; repair findings and do not publish without explicit authorization.",
   "observed_branch": "feature/agent-mini-swe",
   "observed_dirty": 0,
   "observed_head": "d6bd4bca9798d662b84263bc8c9d6639ed8b1f44",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned mini-SWE-agent as a bounded batch engineering agent.",
-  "task_revision": 192,
+  "task_revision": 193,
   "title": "Implement mini-SWE-agent client adapter",
-  "updated_at": "2026-09-07T04:23:49+00:00",
+  "updated_at": "2026-09-07T04:24:06+00:00",
   "worktree_key": "agent-systems-benchmark-agent-mini-swe"
 }
 ---
@@ -659,3 +659,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T04:23:49+00:00: Recorded command exit 0; command argv SHA-256
   4f4146b90888977fd288770caef18afc364a466d2b290926bbdb24d140266e83.
+
+- 2026-09-07T04:24:06+00:00: Replacement candidate is exact SSH-signed+DCO head
+  d6bd4bca9798d662b84263bc8c9d6639ed8b1f44, tree 5ac142ac33a01b3bb210f5a2cb5fe146898df1af, on signed
+  first commit 43683ff13baa7343e0edb5333a4fc6c4304a3bcd and exact base/main
+  814397f8f74971589aa02b13da12485169db3e2e. Range-diff of the first commit from blocked 40b9970 is
+  exact equals; repair commit changes only MINI_SWE.md, mini_swe.rs and real_mini_swe.rs; complete
+  range adds only those plus lib.rs registration. Both commits verify with the allowed SSH key and
+  matching DCO; worktree is clean; repository policy, exact-range Gitleaks, explicit
+  private-path/key scan and four-path scope check pass. Exact candidate native pinned mini-SWE-agent
+  2.4.6 CPython 3.12 credential-free loopback edit and cancellation journey passed in 32.88 seconds
+  after private dependency staging. Exact-tree full Rust, coverage, supply, workflow,
+  failure-fixture, platform and formal evidence is green as previously recorded. Candidate is not
+  pushed and no PR/CI is claimed pending independent immutable review.
