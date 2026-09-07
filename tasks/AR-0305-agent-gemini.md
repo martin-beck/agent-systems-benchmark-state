@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned Gemini CLI through noninteractive JSON events.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Implement Gemini CLI client adapter",
-  "updated_at": "2026-09-07T00:29:47+00:00",
+  "updated_at": "2026-09-07T00:29:50+00:00",
   "worktree_key": "agent-systems-benchmark-agent-gemini"
 }
 ---
@@ -230,3 +230,6 @@ Implementation has not started. Read the linked plan before claiming.
   SessionStart+BeforeTool hook/policy boundary is proven live, atomically reserves actions, emits
   private exhaustion marker, blocks max+1 before side effect, maps exhaustion to explicit Failed
   evidence, and its real pinned regression passes.
+
+- 2026-09-07T00:29:50+00:00: Recorded command exit 0; command argv SHA-256
+  b0246da5f4c209a59b04336cfb2f6a93f2ec7532c7fae06a4cded5e1e69b80b1.
