@@ -9,7 +9,7 @@
     "AR-0503"
   ],
   "id": "AR-0902",
-  "next_action": "Design bounded fuzz/fault targets in new owned paths; coordinate dedicated workflow path with AR-0307 before any workflow edit.",
+  "next_action": "Design bounded fuzz/fault targets in new owned paths and dedicated workflow; keep shared Cargo/schema and active agent paths untouched.",
   "observed_branch": "feature/fault-assurance",
   "observed_dirty": 0,
   "observed_head": "e85548d00cffcc3a014bfbc04b8fc79c5fe35da0",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Add fuzz mutation and lifecycle fault campaigns",
-  "updated_at": "2026-09-07T01:50:27+00:00",
+  "updated_at": "2026-09-07T01:51:28+00:00",
   "worktree_key": "agent-systems-benchmark-fault-assurance"
 }
 ---
@@ -47,3 +47,8 @@ Implementation has not started. Read the linked plan before claiming.
   mutation: new fuzz targets, fault tests and a dedicated scheduled workflow only. No asb-cli paths,
   asb-agents/lib.rs, Goose or mini-SWE files; shared Cargo/workspace/schema remains
   coordinator-serialized. Workflow overlap must be acknowledged by AR-0307 before editing.
+
+- 2026-09-07T01:51:28+00:00: AR-0307 owner confirmed no workflow overlap: AR-0902 exclusively owns
+  new .github/workflows/fault-assurance.yml; verify.yml, quality.yml, formal.yml and all Goose paths
+  remain excluded. Existing repository-policy/actionlint/zizmor expectations will be validated
+  rather than changed without coordination.
