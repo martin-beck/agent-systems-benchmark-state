@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0830",
-  "next_action": "Start the existing registration once with sudo systemd-run under User=asb-ci-runner and the exact private WorkingDirectory; then poll service state, owned listener count, and GitHub exact online label.",
+  "next_action": "Run only a protected manually dispatched canary on the complete composite label, then verify ephemeral deregistration, stop/reset cleanup and Relay listener invariance. Do not create or route an ordinary/public-PR workflow; coordinate the AR-0831 workflow fence first.",
   "observed_branch": "feature/development-host-runner-capacity",
   "observed_dirty": 0,
   "observed_head": "c67d572c227021e96f43abe62e430fc9acdb5f93",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 110,
+  "task_revision": 111,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T06:39:00+00:00",
+  "updated_at": "2026-09-07T06:39:38+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
@@ -350,3 +350,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T06:39:00+00:00: Recorded command exit 0; command argv SHA-256
   47ee17a899d6e0f1ef2b06a5ab1f006b1a9c214cf4d8167291bb84723bd44d30.
+
+- 2026-09-07T06:39:38+00:00: Existing ephemeral registration started successfully without
+  re-registration under transient unit asb-ci-runner-e24284d3bbb7.service. Exact private
+  WorkingDirectory, dedicated UID, UMask 0077, control-group kill, NoNewPrivileges, PrivateTmp,
+  ProtectHome, read-only system and one exact writable runner root are enforced. Verification: unit
+  active; exactly one Runner.Listener owned by the dedicated identity; GitHub reports the
+  pseudonymous runner online, idle, and exactly one label asb-development-v1-x86_64-ubuntu2404.
+  Existing Relay listeners/services were not mutated. No reboot persistence or canary result is
+  claimed.
