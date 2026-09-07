@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Report repeated-attempt reliability and prevent aggregate results from hiding starvation or hard strata.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Measure reliability and mixed-workload fairness",
-  "updated_at": "2026-09-07T04:03:49+00:00",
+  "updated_at": "2026-09-07T04:06:31+00:00",
   "worktree_key": "agent-systems-benchmark-reliability-fairness"
 }
 ---
@@ -221,3 +221,6 @@ Implementation has not started. Read the linked plan before claiming.
   and clean-tree checks pass. A first final-validation wrapper asserted an incorrectly transcribed
   prospective full hash and exited 1 before any product mutation; fresh rev-parse established
   eb28ca7 and unchanged rerun passed.
+
+- 2026-09-07T04:06:31+00:00: Recorded command exit 0; command argv SHA-256
+  f869c988b47c2547360b31b45b490dff64197285c210daf33dfea3ff9caf71d8.
