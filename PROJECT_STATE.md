@@ -10,6 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #27 | `feature/agent-goose@08feca551df7` | `main` | UNKNOWN | - | feat(agents): add bounded Goose adapter |
 
 ## Recent workflows
 
