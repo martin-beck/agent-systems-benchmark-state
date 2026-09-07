@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0307",
-  "next_action": "Await explicit AR-0305 release transfer of the additive lib.rs/CI fence; then rebase onto exact current main, register once, run pinned x86_64/aarch64 native journeys and all exact-tree gates.",
+  "next_action": "Create focused signed+DCO immutable Goose candidate from exact e85548d base; rerun commit-sensitive scope/privacy/signature gates and await independent review before publication.",
   "observed_branch": "feature/agent-goose",
   "observed_dirty": 6,
   "observed_head": "e85548d00cffcc3a014bfbc04b8fc79c5fe35da0",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned AAIF goose in no-session structured mode.",
-  "task_revision": 132,
+  "task_revision": 133,
   "title": "Implement goose client adapter",
-  "updated_at": "2026-09-07T01:59:44+00:00",
+  "updated_at": "2026-09-07T02:01:19+00:00",
   "worktree_key": "agent-systems-benchmark-agent-goose"
 }
 ---
@@ -426,3 +426,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T01:59:44+00:00: Recorded command exit 0; command argv SHA-256
   86d9888b7f6cb4dfa7598ad960412ac481af5002958f5a0931927d74d3d09ab2.
+
+- 2026-09-07T02:01:19+00:00: AR-0305 released and the additive lib.rs plus minimal verify workflow
+  fence transferred exclusively to AR-0307. Rebased the six-path Goose tree onto exact e85548d,
+  added registration and a pinned native x86_64/aarch64 real-Goose matrix step. Focused crate tests,
+  native x86_64 journey, full workspace fmt/clippy/test/docs/release, supply-chain, privacy, policy,
+  failure fixtures, platform, Loom/state-model, coverage, five Kani proofs, and deliberate Kani
+  counterexample are green. Workspace coverage is 91.46%; Goose module measured 92.79% lines, 89.13%
+  functions, 87.78% regions. The first direct Kani diagnostic was an owner-wrapper process deviation
+  with no repository mutation; corrected project-local KANI_HOME/RUSTUP_HOME invocation passed.
+  Native aarch64 execution remains to exact-head hosted CI.
