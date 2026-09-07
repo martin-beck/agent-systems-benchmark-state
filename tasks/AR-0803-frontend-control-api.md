@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Define the frontend control API",
-  "updated_at": "2026-09-07T03:12:43+00:00",
+  "updated_at": "2026-09-07T03:12:45+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api"
 }
 ---
@@ -39,3 +39,6 @@ Implementation has not started. Read the linked plan before claiming.
   compatible frontend control boundary after releasing its Cargo/scheduler fences.
 
 - 2026-09-07T02:56:28+00:00: Claimed by root-coordination-20260906.
+
+- 2026-09-07T03:12:45+00:00: Recorded command exit 0; command argv SHA-256
+  2112362c51cef85781237610d9b9e060605ef818fbc3842b7637243011b6072d.
