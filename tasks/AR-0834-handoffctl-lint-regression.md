@@ -2,22 +2,22 @@
 {
   "branch": "fix/handoffctl-apply-resume-lint",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-07T09:09:10+00:00",
   "depends_on": [
     "AR-0002",
     "AR-0830"
   ],
   "id": "AR-0834",
   "next_action": "Repair the unused apply_resume tasks parameter and prove handoffctl focused/full quality checks remain green.",
-  "owner": "",
+  "owner": "contracts-20260906",
   "plan": "../plans/AR-0834.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair the coordination-tool Ruff regression discovered during AR-0830 reconciliation.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Repair handoffctl lint regression",
-  "updated_at": "2026-09-07T07:09:08+00:00",
+  "updated_at": "2026-09-07T07:09:10+00:00",
   "worktree_key": "agent-systems-benchmark-coordination-lint-regression"
 }
 ---
@@ -36,3 +36,5 @@ Acceptance criteria:
 - 2026-09-07T07:09:08+00:00: AR-0002 and AR-0830 are done; the lint defect is reproduced at
   handoffctl.py:693, paths are isolated to coordination tooling/tests, and no active worker owns
   them.
+
+- 2026-09-07T07:09:10+00:00: Claimed by contracts-20260906.
