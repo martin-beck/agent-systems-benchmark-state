@@ -4,20 +4,24 @@ Generated from local Git and GitHub. Do not edit.
 
 - Product remote main: `e85548d00cffcc3a014bfbc04b8fc79c5fe35da0`
 - Local origin/main: `e85548d00cffcc3a014bfbc04b8fc79c5fe35da0`
-- Primary worktree head: `e85548d00cffcc3a014bfbc04b8fc79c5fe35da0`
+- Primary worktree head: `b2833ab801d15aeb8e27d2aa2fb3adf248704314`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #27 | `feature/agent-goose@95b3ef8c7830` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(agents): add bounded Goose adapter |
-| #28 | `feature/fault-assurance@e6c623113c15` | `main` | UNKNOWN | - | test: add bounded fault assurance campaigns |
+| #27 | `feature/agent-goose@95b3ef8c7830` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(agents): add bounded Goose adapter |
+| #28 | `feature/fault-assurance@e6c623113c15` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | test: add bounded fault assurance campaigns |
 | #29 | `feature/terminal-interface@d2e7b66ff6af` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: add bounded benchmark CLI |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34077596437 | `e6c623113c15` | pull_request | Repository quality | in_progress:- |
+| 34077596425 | `e6c623113c15` | pull_request | Formal assurance | queued:- |
+| 34077596424 | `e6c623113c15` | pull_request | Fault assurance | in_progress:- |
+| 34077596423 | `e6c623113c15` | pull_request | Rust verification | in_progress:- |
 | 34077573749 | `95b3ef8c7830` | pull_request | Rust verification | in_progress:- |
 | 34077573746 | `95b3ef8c7830` | pull_request | Repository quality | in_progress:- |
 | 34077573739 | `95b3ef8c7830` | pull_request | Formal assurance | in_progress:- |
@@ -26,7 +30,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34077451932 | `d2e7b66ff6af` | pull_request | Formal assurance | completed:success |
 | 34077199689 | `ad00e8b1ea16` | pull_request | Fault assurance | completed:failure |
 | 34077199652 | `ad00e8b1ea16` | pull_request | Formal assurance | completed:success |
-| 34077199617 | `ad00e8b1ea16` | pull_request | Repository quality | completed:success |
-| 34077199611 | `ad00e8b1ea16` | pull_request | Rust verification | completed:success |
-| 34076974034 | `08feca551df7` | pull_request | Rust verification | completed:failure |
-| 34076974032 | `08feca551df7` | pull_request | Formal assurance | completed:success |
