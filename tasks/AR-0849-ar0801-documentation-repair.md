@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair stale AR-0801 implementation and CLI documentation claims.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Repair AR-0801 documentation consistency",
-  "updated_at": "2026-09-07T22:41:12+00:00",
+  "updated_at": "2026-09-07T22:41:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar0801-documentation-repair"
 }
 ---
@@ -37,3 +37,6 @@ the examples against the merged binary and tests. Do not reopen or rewrite AR-08
   replay, frontend protocol and formal recovery work.
 
 - 2026-09-07T22:40:59+00:00: Claimed by quality_20260906.
+
+- 2026-09-07T22:41:14+00:00: Recorded command exit 0; command argv SHA-256
+  5c7049e077fbd7cc28e93e5e08252ff85ae380156ae18475a823ce41e6183f3f.
