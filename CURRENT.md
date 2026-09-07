@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0511](tasks/AR-0511-replay-qwen.md): Qualify Qwen Code replay | Qualify replay conformance for Qwen Code. | Prove credential-free record/replay conformance for Qwen Code with network denial and malformed/tool/cancel negatives. | quality_20260906 |
-| P0 | [AR-0512](tasks/AR-0512-replay-goose.md): Qualify goose replay | Qualify replay conformance for goose. | Prove credential-free record/replay conformance for goose with network denial and malformed/tool/cancel negatives. | contracts_20260906 |
+| P0 | [AR-0512](tasks/AR-0512-replay-goose.md): Qualify goose replay | Qualify replay conformance for goose. | Serialize a shared replay follow-up that makes request-body redaction selectors interaction/method-aware; then rerun the preserved Goose fixture without bypassing private messages. | contracts_20260906 |
 | P0 | [AR-0513](tasks/AR-0513-replay-miniswe.md): Qualify mini-SWE replay | Qualify replay conformance for mini-SWE-agent. | Replace the compile-clean replay scaffold's Aider response assumptions with mini-SWE 2.4.6 exact buffered tool-call/submission exchanges from the pinned real fixture; then run credential-free loopback record/replay, retry classification, cancellation, network denial, parity, and malformed/tool negatives. | replay_20260906 |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. | root-coordination-20260906 |
 

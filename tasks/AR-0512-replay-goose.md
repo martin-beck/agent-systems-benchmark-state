@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0512",
-  "next_action": "Prove credential-free record/replay conformance for goose with network denial and malformed/tool/cancel negatives.",
+  "next_action": "Serialize a shared replay follow-up that makes request-body redaction selectors interaction/method-aware; then rerun the preserved Goose fixture without bypassing private messages.",
   "observed_branch": "feature/replay-goose",
   "observed_dirty": 2,
   "observed_head": "076e9c44810903fb42669642b5820df2f1672136",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for goose.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Qualify goose replay",
-  "updated_at": "2026-09-07T18:59:03+00:00",
+  "updated_at": "2026-09-07T18:59:47+00:00",
   "worktree_key": "agent-systems-benchmark-replay-goose"
 }
 ---
@@ -70,3 +70,13 @@ Qualify goose record/replay, network denial, parity, retries, tool calls, cancel
 
 - 2026-09-07T18:59:03+00:00: Recorded command exit 101; command argv SHA-256
   d3a3b5a663d4f2f5c8d6cc6a2cd0c15144f8bed231d66bd4f52e5dce601d3e01.
+
+- 2026-09-07T18:59:47+00:00: Changed conclusion from the first green unredacted native discovery:
+  privacy-safe sealing is blocked by cassette-global request_body_pointers. Goose 1.49.0 requires
+  GET /v1/models with a null body plus POST /v1/chat/completions containing private messages.
+  Selecting /messages makes Redactor::redact_contents apply it to GET and fail MissingSensitiveField
+  at replay_goose.rs:548; omitting it would seal prompts/tool results and strict replay cannot match
+  a manually redacted marker. Shared evidence: redaction.rs applies every configured pointer to
+  every interaction, while service.rs requires GET body null. Preserve current two-path isolated
+  fixture; do not mutate shared asb-replay behind its fence. Before this blocker, pinned loopback
+  native discovery passed in 16.42s with one 429 retry, edit/grade/replay/cancel path.
