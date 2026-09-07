@@ -2,7 +2,7 @@
 {
   "branch": "fix/runner-isolation-hardening",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T10:52:38+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0830",
     "AR-0831"
@@ -12,15 +12,15 @@
   "observed_branch": "fix/runner-isolation-hardening",
   "observed_dirty": 0,
   "observed_head": "9b4e7084e02cdb3a1ff56dc55bbdce413ed6b1d3",
-  "owner": "quality-20260906",
+  "owner": "",
   "plan": "../plans/AR-0836.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Harden development-host runner isolation against same-UID job tampering and diagnostic leakage.",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Harden runner isolation and credential boundaries",
-  "updated_at": "2026-09-07T09:32:10+00:00",
+  "updated_at": "2026-09-07T09:36:15+00:00",
   "worktree_key": "agent-systems-benchmark-runner-isolation-hardening"
 }
 ---
@@ -353,3 +353,11 @@ Acceptance criteria:
 
 - 2026-09-07T09:32:10+00:00: Recorded command exit 0; command argv SHA-256
   be17779b5e2d6fb32a4195a327390c00ce6501e09c58fcb48939c45738688039.
+
+- 2026-09-07T09:36:15+00:00: Reviewed safe runner-control hardening is integrated at signed+DCO main
+  merge 0cdccfb899b8bfaf366ca3b74855483b107015a7. Exact-main Rust x86_64+aarch64 34106562693,
+  quality 34106562688, formal 34106562629, and fault x86_64+aarch64/fuzz/mutation 34106562660 all
+  succeeded; complete local post-merge
+  runner/native/real-archive/Rust/quality/supply-chain/privacy/formal gates succeeded. Completion
+  and trusted workflow dispatch remain blocked until AR-0837 qualifies a digest-pinned no-host-mount
+  job container that separates the untrusted job principal from the listener service.
