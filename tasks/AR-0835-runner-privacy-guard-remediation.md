@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remediate runner privacy leakage and protected-workflow guard gaps found during independent audit.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Remediate runner privacy and workflow guards",
-  "updated_at": "2026-09-07T07:59:17+00:00",
+  "updated_at": "2026-09-07T07:59:22+00:00",
   "worktree_key": "agent-systems-benchmark-runner-privacy-guard-remediation"
 }
 ---
@@ -77,3 +77,6 @@ Acceptance criteria:
 
 - 2026-09-07T07:59:17+00:00: Recorded command exit 0; command argv SHA-256
   8362f6137c56995c6571a497edae11307cf054fc863a4a9491db8c110b5af6dd.
+
+- 2026-09-07T07:59:22+00:00: Recorded command exit 0; command argv SHA-256
+  ee436c9f78c9ed6e6111252dd479e72031aee59583d6a8166fc0c41d95882734.
