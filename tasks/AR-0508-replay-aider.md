@@ -13,16 +13,16 @@
   "next_action": "Hold isolated signed Aider replay test a8ea226; after AR-0506 review/integration/release, rebase onto exact main, take shared Cargo/README/lock fence, compile and run malformed plus real loopback-only capture/replay/cancel gates.",
   "observed_branch": "feature/replay-aider",
   "observed_dirty": 0,
-  "observed_head": "a8ea226f7767ac36e8b209eb85ac5d1bef40d33e",
+  "observed_head": "663664e7dc3dad1d31c5734060aaef50cf9b4108",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0508.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for aider.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Qualify aider replay",
-  "updated_at": "2026-09-07T12:59:47+00:00",
+  "updated_at": "2026-09-07T13:26:15+00:00",
   "worktree_key": "agent-systems-benchmark-replay-aider"
 }
 ---
