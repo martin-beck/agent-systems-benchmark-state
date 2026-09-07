@@ -7,7 +7,7 @@
     "AR-0518"
   ],
   "id": "AR-0519",
-  "next_action": "Repair the Gemini thinkingConfig contract to admit exactly includeThoughts:boolean and reject all other shapes.",
+  "next_action": "Run focused Gemini/schema/strict replay tests for exact includeThoughts boolean shape and value parity; repair any fixture digest or compile failure, then full gates.",
   "observed_branch": "feature/gemini-thinking-config-contract",
   "observed_dirty": 4,
   "observed_head": "74d311ca7a4ae86809424f9ff5edfe2c16127891",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Correct Gemini thinkingConfig strict-replay contract from pinned capture evidence.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Gemini thinkingConfig contract repair",
-  "updated_at": "2026-09-07T17:30:24+00:00",
+  "updated_at": "2026-09-07T17:30:46+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-thinking-config-contract"
 }
 ---
@@ -52,3 +52,12 @@ Repair the merged Gemini dialect using privacy-safe pinned evidence: `thinkingCo
 
 - 2026-09-07T17:30:24+00:00: Recorded command exit 0; command argv SHA-256
   1364884c286183a4525ca9ba1a4af40d0d6f680fceecf8121c9ca31d3ae7ff3b.
+
+- 2026-09-07T17:30:46+00:00: Focused four-path implementation applied: runtime admits only
+  thinkingConfig with sole includeThoughts boolean; public fixture uses a synthetic boolean and
+  recomputed canonical request/content digests; README states exact recorded-value matching; tests
+  add empty, wrong-key, extra-key, string, null, and altered-value/no-cursor-advance negatives. Two
+  earlier apply_patch invocation-shape failures made no product change and are ledgered. A direct
+  cargo attempt outside the wrapper was an operator boundary failure and exited 127 before build
+  because cargo was not on PATH; no artifact/effect resulted. All further product/build commands use
+  the wrapper and /srv toolchain/cache paths.
