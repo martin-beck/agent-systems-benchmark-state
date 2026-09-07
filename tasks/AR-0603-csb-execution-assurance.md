@@ -10,7 +10,7 @@
     "AR-0104"
   ],
   "id": "AR-0603",
-  "next_action": "Acquire and verify an exact public CSB source graph, then specify its bounded subprocess and containment contract.",
+  "next_action": "Implement and negative-test the bounded version-negotiated CSB subprocess boundary in an isolated owned crate; request coordinator Cargo fence before any root workspace/lock integration.",
   "observed_branch": "feature/csb-execution-assurance",
   "observed_dirty": 0,
   "observed_head": "939c35c5ee64c9f9685cec471efc03cb620643c2",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T06:25:35+00:00",
+  "updated_at": "2026-09-07T06:25:51+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
@@ -92,3 +92,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T06:25:35+00:00: Recorded command exit 0; command argv SHA-256
   1c179dfa6d247d855d7a5c8ff781ca6f74ebe65dc5de89ff6a30b94a58c198df.
+
+- 2026-09-07T06:25:51+00:00: Signed+DCO product checkpoint 939c35c5ee64c9f9685cec471efc03cb620643c2
+  records official CSB d577c524/tree 97d08b39 and the complete initialized submodule commit/tree
+  graph, license boundaries, floating Python dependency limitation, unsupported
+  generator/syzkaller/monitor/platform claims, and four bounded JSON-RPC fixture envelopes.
+  Wrapper-run jq parsing, 64 KiB fixture cap, diff/privacy checks passed; worktree is clean. No
+  offline reproducible upstream Python environment or executable digest is claimed yet.
