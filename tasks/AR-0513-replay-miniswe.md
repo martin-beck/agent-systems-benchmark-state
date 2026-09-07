@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for mini-SWE-agent.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Qualify mini-SWE replay",
-  "updated_at": "2026-09-07T20:08:56+00:00",
+  "updated_at": "2026-09-07T20:12:25+00:00",
   "worktree_key": "agent-systems-benchmark-replay-miniswe"
 }
 ---
@@ -188,3 +188,6 @@ Qualify mini-SWE-agent record/replay, network denial, parity, retries, tool call
   1963364e75eec8cfcde0cfd0eaca672df12a2968. PR head/base OIDs are exact and mergeable. Exact-head
   workflows are running: quality 34158252963, formal 34158252964, Rust x86_64+aarch64 34158252970,
   fault/fuzz/mutation x86_64+aarch64 34158252973.
+
+- 2026-09-07T20:12:25+00:00: Recorded command exit 0; command argv SHA-256
+  860c54e698148ea18d343bfa73f0b3bc542b0e39e95c078effdfd4ccaa02bead.
