@@ -22,7 +22,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 98, ahead 0 |
 | `agent-systems-benchmark-fault-assurance` | `feature/fault-assurance` | `e6c623113c15` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-formal-assurance` | `feature/formal-assurance` | `2a495a99a657` | 0 | behind 56, ahead 0 |
-| `agent-systems-benchmark-frontend-control-api` | `feature/frontend-control-api` | `cbb764c45c61` | 0 | behind 2, ahead 1 |
+| `agent-systems-benchmark-frontend-control-api` | `feature/frontend-control-api` | `cbb764c45c61` | 2 | behind 2, ahead 1 |
+| changed files | - | - | - | `crates/asb-control/src/protocol.rs`, `crates/asb-control/src/state.rs` |
 | `agent-systems-benchmark-native-platforms` | `feature/native-platforms` | `2a05626be1bd` | 6 | behind 2, ahead 6 |
 | changed files | - | - | - | `docs/PLATFORMS.md`, `platforms/v1/platforms.json`, `tests/platforms/test_native_evidence.py`, `tools/platforms/native_evidence.py`, `tools/platforms/validate_manifests.py`, `platforms/v1/native-evidence/ubuntu-24.04-x86_64-native-2a05626.json` |
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 94, ahead 0 |
