@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add narrowly scoped strict-replay compatibility for pinned OpenDesk traffic.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "OpenDesk strict-replay HTTP compatibility",
-  "updated_at": "2026-09-07T14:26:58+00:00",
+  "updated_at": "2026-09-07T14:27:37+00:00",
   "worktree_key": "agent-systems-benchmark-opendesk-strict-replay-http-compatibility"
 }
 ---
@@ -185,3 +185,6 @@ Acceptance requires schema/runtime parity, adversarial positives and negatives, 
   absent stream plus SSE, and at least one pre-completion catalog GET but did not retain exact GET
   headers; candidate invents no live header claim. Required real pinned OpenDesk rerun remains an
   explicit post-merge AR-0507 acceptance boundary.
+
+- 2026-09-07T14:27:37+00:00: Recorded command exit 0; command argv SHA-256
+  570dabf9edffd4125d21ef78768dd7a405e00bd4b62eb797a5ad1737825b024f.
