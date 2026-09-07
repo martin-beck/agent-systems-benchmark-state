@@ -12,7 +12,7 @@
   "id": "AR-0507",
   "next_action": "Prove credential-free record/replay conformance for OpenDesk with network denial and malformed/tool/cancel negatives.",
   "observed_branch": "feature/replay-opendesk",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "a0d80e48deb8750543606c2b577e1a52df26fc4c",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0507.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenDesk.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Qualify OpenDesk replay",
-  "updated_at": "2026-09-07T12:46:48+00:00",
+  "updated_at": "2026-09-07T12:49:40+00:00",
   "worktree_key": "agent-systems-benchmark-replay-opendesk"
 }
 ---
