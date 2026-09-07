@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned Gemini CLI through noninteractive JSON events.",
-  "task_revision": 114,
+  "task_revision": 115,
   "title": "Implement Gemini CLI client adapter",
-  "updated_at": "2026-09-07T00:59:55+00:00",
+  "updated_at": "2026-09-07T01:00:06+00:00",
   "worktree_key": "agent-systems-benchmark-agent-gemini"
 }
 ---
@@ -377,3 +377,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T00:59:55+00:00: Recorded command exit 0; command argv SHA-256
   cbf3d5b36bf4106e4988938fd5b2347cabc4d03a807c24a7083ab746ede5fe14.
+
+- 2026-09-07T01:00:06+00:00: Exact dirty-tree Gemini boundary coverage refreshed after hook/bundle
+  negatives: 8 tests pass; gemini.rs 91.81% lines (1110/1209), 88.91% regions and 88.10% functions.
+  Agent module is not a manifest critical package; registered-module workspace floor remains gated
+  on serialized lib.rs integration.
