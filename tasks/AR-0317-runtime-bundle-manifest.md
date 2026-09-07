@@ -11,17 +11,17 @@
   "id": "AR-0317",
   "next_action": "Define signed runtime-bundle manifests and an offline verifier for content, architecture, libc, license, and SBOM identity.",
   "observed_branch": "feature/runtime-bundle-manifest",
-  "observed_dirty": 6,
-  "observed_head": "125b1bccdc405839abc26efe002a851584677ae6",
+  "observed_dirty": 0,
+  "observed_head": "3d0bc9ccf1c5d4c524cf7689e8d598897bf9c700",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0317.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define common signed runtime bundle manifests and offline verification.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Define runtime bundle manifest and verifier",
-  "updated_at": "2026-09-07T11:31:17+00:00",
+  "updated_at": "2026-09-07T11:31:43+00:00",
   "worktree_key": "agent-systems-benchmark-runtime-bundle-manifest"
 }
 ---
