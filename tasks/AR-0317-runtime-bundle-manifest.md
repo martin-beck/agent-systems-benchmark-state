@@ -2,7 +2,7 @@
 {
   "branch": "feature/runtime-bundle-manifest",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T13:35:27+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/runtime-bundle-manifest",
   "observed_dirty": 0,
   "observed_head": "4b2805d870dfe9024d29580d5f973ff63d0a9073",
-  "owner": "contracts-20260906",
+  "owner": "",
   "plan": "../plans/AR-0317.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Define common signed runtime bundle manifests and offline verification.",
-  "task_revision": 102,
+  "task_revision": 103,
   "title": "Define runtime bundle manifest and verifier",
-  "updated_at": "2026-09-07T11:53:23+00:00",
+  "updated_at": "2026-09-07T11:53:37+00:00",
   "worktree_key": "agent-systems-benchmark-runtime-bundle-manifest"
 }
 ---
@@ -297,3 +297,10 @@ parity, license evidence, tamper detection, and offline operation.
 
 - 2026-09-07T11:53:23+00:00: Recorded command exit 0; command argv SHA-256
   c168fc63407897b297d58999f4144d942f47b796fa795957e99600972a5483c4.
+
+- 2026-09-07T11:53:37+00:00: Integrated reviewed PR #37 exact head 4b2805d via signed+DCO no-ff
+  merge a2def53344a011880ad2dbe5edcfabc87b2c64af. Exact-main quality 34118538562, Rust
+  x86_64/aarch64 34118538495, formal 34118538500, and fault 34118538532 are green; full post-merge
+  workspace/native/security/coverage/Loom/Kani and locked state suite/live doctor passed. Support
+  remains Linux/Unix with exact libc identity, operator-owned quiescent trust/staging inputs;
+  broader ABI/native package qualification and acquisition remain separate work.
