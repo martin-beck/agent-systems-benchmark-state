@@ -699,7 +699,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0510](tasks/AR-0510-replay-gemini.md): Qualify Gemini replay | quality_20260906 | Qualify replay conformance for Gemini. | Complete isolated retry/cancel/malformed/tool conformance while AR-0518 implements the exact captured Gemini replay dialect; rebase and run real strict replay only after AR-0518 integration. |
+| P0 | [AR-0510](tasks/AR-0510-replay-gemini.md): Qualify Gemini replay | quality_20260906 | Qualify replay conformance for Gemini. | Await AR-0518 strict Gemini dialect integration; then rebase isolated signed adapter series and run pinned capture-to-strict-replay, retry, tool/grade, cancellation, malformed, full/formal/privacy gates. |
 | P0 | [AR-0518](tasks/AR-0518-gemini-generate-content-replay.md): Gemini GenerateContent strict-replay dialect | replay_20260906 | Add strict replay support for Gemini GenerateContent SSE traffic. | Implement bounded Gemini GenerateContent dialect and focused schema/runtime/SSE/redaction adversarials after binding exact AR-0510 capture shape. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
 

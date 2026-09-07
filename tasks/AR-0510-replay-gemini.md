@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0510",
-  "next_action": "Complete isolated retry/cancel/malformed/tool conformance while AR-0518 implements the exact captured Gemini replay dialect; rebase and run real strict replay only after AR-0518 integration.",
+  "next_action": "Await AR-0518 strict Gemini dialect integration; then rebase isolated signed adapter series and run pinned capture-to-strict-replay, retry, tool/grade, cancellation, malformed, full/formal/privacy gates.",
   "observed_branch": "feature/replay-gemini",
   "observed_dirty": 1,
   "observed_head": "d99d79c049d4526ba50b6184c800ab3a3e3bc835",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Gemini.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Qualify Gemini replay",
-  "updated_at": "2026-09-07T16:30:29+00:00",
+  "updated_at": "2026-09-07T16:35:29+00:00",
   "worktree_key": "agent-systems-benchmark-replay-gemini"
 }
 ---
@@ -187,3 +187,13 @@ Qualify Gemini record/replay, network denial, parity, retries, tool calls, cance
 
 - 2026-09-07T16:30:29+00:00: Recorded command exit 0; command argv SHA-256
   0b8f6771bd617e0fc99da74f0d6bc7d7ceaa256598d9da4a5a32ca546375771d.
+
+- 2026-09-07T16:35:29+00:00: Changed conclusion after controlled native reruns: deterministic hashed
+  run roots plus explicit synthetic function-call identity make both Gemini request bodies,
+  normalized headers, and routes exact across repeated same-ID captures, so the safe request-body
+  selector set is empty; whole prompt/system text and second-turn IDs must remain exact. Pinned
+  loopback retry (HTTP 500 then identical request, tool/result, independent grade) and idempotent
+  cancellation with reaping/empty state are green. Signed adapter commits ac989f9 and d99d79c add
+  exclusive stable route ownership and bounded public correlation IDs before filesystem effects.
+  Test failure diagnostics were hardened not to Debug-print captured bodies. Shared replay paths
+  remain owned by AR-0518.
