@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track dataset provenance, contamination risk, grader validity and native portability per workload revision.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Maintain benchmark validity and portability registry",
-  "updated_at": "2026-09-07T23:27:49+00:00",
+  "updated_at": "2026-09-07T23:27:52+00:00",
   "worktree_key": "agent-systems-benchmark-benchmark-validity"
 }
 ---
@@ -37,3 +37,6 @@ Implementation has not started. Read the linked plan before claiming.
   branch, worktree, and remote ref are absent.
 
 - 2026-09-07T23:27:10+00:00: Claimed by replay_20260906.
+
+- 2026-09-07T23:27:52+00:00: Recorded command exit 0; command argv SHA-256
+  f8e83446a4a364c5e265648164c1fcc18c0b30e0b72c156dcc3049075b0574af.
