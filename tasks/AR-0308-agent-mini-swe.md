@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0308",
-  "next_action": "Inspect the current package, trajectory contract, LiteLLM override and environment isolation.",
+  "next_action": "Replace the copied isolation scaffold with mini-SWE-agent 2.4.6 invocation and bounded trajectory mapper; then add credential-free native fixture before requesting shared registration fence.",
   "observed_branch": "feature/agent-mini-swe",
   "observed_dirty": 1,
   "observed_head": "2579362d6936b25e6008583f7bd485e5498a4e3f",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned mini-SWE-agent as a bounded batch engineering agent.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Implement mini-SWE-agent client adapter",
-  "updated_at": "2026-09-07T00:54:25+00:00",
+  "updated_at": "2026-09-07T00:54:46+00:00",
   "worktree_key": "agent-systems-benchmark-agent-mini-swe"
 }
 ---
@@ -70,3 +70,15 @@ Implementation has not started. Read the linked plan before claiming.
   b61b5d826e918b7766412adef4ec6fcb5a9dff74e1153a79a77bf2219784bff5.
 
 - 2026-09-07T00:54:25+00:00: Heartbeat by replay-20260906.
+
+- 2026-09-07T00:54:46+00:00: Inspected official v2.4.6 tag
+  a83fcae82d2a08f0ee0c688f9d137b3566c097f8/tree 665df42f5761252b83d9a30e1b82f76f1f17f828 and PyPI
+  artifacts: wheel SHA-256 a35463c553ac825c7773b03cfa69cd44958e3af20155dcc5711fdf9e4c67cd54, sdist
+  SHA-256 0532c8193a763409fa52bb2b5a5d7ac9052dcb1c2cae43945b14b1b7f6ba869a; MIT license exists in
+  source and wheel metadata. Tag/commit are unsigned. Upstream dependency ranges exclude compromised
+  LiteLLM 1.82.7/1.82.8 but no lock is shipped, so no reproducible transitive environment claim.
+  External checkout/artifacts remain under /srv/data/projects/.asb-local/ar0308. Patch artifact
+  top.patch SHA-256 fccf80b424be8430a1c5fc344aaefc9fe8a0025037596c187dfa178c5c49c17f. Two quoted
+  heredoc apply_patch attempts failed before product mutation and are retained as durable exit-1
+  command evidence; current mini_swe.rs is an unregistered dirty scaffold copied from the audited
+  aider isolation boundary and is not a candidate or tested implementation.
