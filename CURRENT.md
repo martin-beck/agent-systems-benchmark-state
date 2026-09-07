@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0603](tasks/AR-0603-csb-execution-assurance.md): Establish pinned CSB execution and conformance boundary | Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary. | Run exact-head rebase-affected focused/native/policy/supply-chain/privacy/scope gates at 39e306124b567dece6f335662a11906869f91ba7, then request immutable independent review. | contracts-20260906 |
+| P1 | [AR-0603](tasks/AR-0603-csb-execution-assurance.md): Establish pinned CSB execution and conformance boundary | Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary. | Independent immutable review of exact 39e306124b567dece6f335662a11906869f91ba7; publish only after approval and fresh exact-head CI. Retain exclusive Cargo/schema/release fence until coordinator handoff. | contracts-20260906 |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. | root-coordination-20260906 |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Independently review unpublished exact candidate 1605693dbb7aade01dd47cb074e35bca02df873b tree 7d99a7f69d97335cad802699dbf9a7ac7bac2e1b; do not publish or merge without coordinator authorization. | replay-20260906 |
 

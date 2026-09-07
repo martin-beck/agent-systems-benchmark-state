@@ -10,7 +10,7 @@
     "AR-0104"
   ],
   "id": "AR-0603",
-  "next_action": "Run exact-head rebase-affected focused/native/policy/supply-chain/privacy/scope gates at 39e306124b567dece6f335662a11906869f91ba7, then request immutable independent review.",
+  "next_action": "Independent immutable review of exact 39e306124b567dece6f335662a11906869f91ba7; publish only after approval and fresh exact-head CI. Retain exclusive Cargo/schema/release fence until coordinator handoff.",
   "observed_branch": "feature/csb-execution-assurance",
   "observed_dirty": 0,
   "observed_head": "39e306124b567dece6f335662a11906869f91ba7",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 110,
+  "task_revision": 111,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T10:01:49+00:00",
+  "updated_at": "2026-09-07T10:02:16+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
@@ -358,3 +358,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T10:01:49+00:00: Recorded command exit 0; command argv SHA-256
   02c2c2cef6cbca9903951c6d4fb03e4e51b39ee8281fc68a32eb71ef0fbff1fb.
+
+- 2026-09-07T10:02:16+00:00: Immutable candidate 39e306124b567dece6f335662a11906869f91ba7, tree
+  a16cf14564852e3a42eec24ee34a8050542071ac, is clean on exact signed main 0cdccfb. Four commits are
+  range-diff identical to pre-rebase and all SSH-signed/exact-DCO. Evidence: 25 unit, 3 strict
+  protocol fixture, and real native success 3x/cancel/timeout tests green; verified inherited FD
+  closes executable pathname replacement; Python 3.12.3 bytes pinned; branch-aware lib coverage
+  lines 99.16%, regions 96.76%, functions 98.57%, branches 96.15%. Full workspace
+  fmt/clippy/tests/docs/release+CLI, locked metadata, deny/audit, actionlint/zizmor/failure
+  fixtures, platform, formal Loom/state/production traces, Gitleaks, scope and clean-tree gates
+  green. Support remains Ubuntu 24.04 glibc x86_64 exact tools only; full floating CSB Python
+  graph/generators/monitors/syzkaller and hostile same-UID ancestor replacement are unsupported.
