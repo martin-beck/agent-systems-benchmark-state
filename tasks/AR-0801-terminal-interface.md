@@ -9,7 +9,7 @@
     "AR-0204"
   ],
   "id": "AR-0801",
-  "next_action": "Await PR #29 exact-head quality run 34077451955; Rust/native run 34077451953 and formal run 34077451932 are green on both x86_64 and aarch64. Integrate only if remaining quality gate is green and immutable head remains d2e7b66.",
+  "next_action": "Await exact-main quality 34077635208 and remaining x86_64 Rust cell in 34077635164 at signed merge b2833ab; formal 34077635181 and Rust aarch64 are green. Then reconcile/live doctor and release AR-0801 only if all remain clean.",
   "observed_branch": "feature/terminal-interface",
   "observed_dirty": 0,
   "observed_head": "d2e7b66ff6af1f9f5924ab40c2a6cff74a6ba7f4",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide doctor, plan, run, sweep, compare and report with stable JSON output.",
-  "task_revision": 182,
+  "task_revision": 183,
   "title": "Implement terminal and automation interfaces",
-  "updated_at": "2026-09-07T02:52:18+00:00",
+  "updated_at": "2026-09-07T02:52:44+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-interface"
 }
 ---
@@ -577,3 +577,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T02:52:18+00:00: Recorded command exit 0; command argv SHA-256
   faea96bae4ee948c5c29bf17df52a461aaf3d4716c0d89a9fa891fb6d651d7ce.
+
+- 2026-09-07T02:52:44+00:00: Integrated PR #29 as signed+DCO no-ff merge b2833ab with exact parents
+  e85548d and d2e7b66 and candidate-identical tree daad1290; remote main and GitHub merge identity
+  agree. Strict local post-merge fmt, workspace clippy/all-target tests, release build, CLI
+  help/version and invalid-command exit 2 all passed at exact clean synchronized b2833ab. An earlier
+  post-merge wrapper accidentally ended in `|| true`; although its visible fmt/clippy/tests passed,
+  it was not accepted as exit evidence and the strict replacement command above was run
+  successfully. Exact-main formal 34077635181 is green; Rust aarch64 green while x86_64 and quality
+  remain in progress.
