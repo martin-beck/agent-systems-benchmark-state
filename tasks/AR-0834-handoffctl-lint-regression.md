@@ -8,16 +8,16 @@
     "AR-0830"
   ],
   "id": "AR-0834",
-  "next_action": "Repair the unused apply_resume tasks parameter and prove handoffctl focused/full quality checks remain green.",
+  "next_action": "After coordinator shortens or clears AR-0830 done-task next_action, rebase e7cf1f2f once onto exact state main with re-signing, rerun schema/render/live doctor and complete quality gates, then request immutable review.",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0834.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the coordination-tool Ruff regression discovered during AR-0830 reconciliation.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Repair handoffctl lint regression",
-  "updated_at": "2026-09-07T07:12:45+00:00",
+  "updated_at": "2026-09-07T07:13:09+00:00",
   "worktree_key": "agent-systems-benchmark-coordination-lint-regression"
 }
 ---
@@ -59,3 +59,10 @@ Acceptance criteria:
 
 - 2026-09-07T07:12:45+00:00: Recorded command exit 0; command argv SHA-256
   f2634b3813bdcbbc4afe7ab2a91abeb0e2566168bc2e35ec30ec19343f66793b.
+
+- 2026-09-07T07:13:09+00:00: Signed+DCO candidate e7cf1f2f changes only tools/handoffctl.py and
+  tests/test_handoffctl.py: rename the intentionally unused resume task collection to _tasks and add
+  stale-revision, empty-note, successful blocked-to-open, repeated-resume rejection, and CLI
+  dispatch coverage. Ruff, focused tests, mypy, all 38 unit tests, and 96% branch-aware coverage
+  pass. Full schema validation then correctly failed on unrelated done AR-0830 next_action metadata
+  exceeding the schema length; no AR-0834 code failure is indicated.
