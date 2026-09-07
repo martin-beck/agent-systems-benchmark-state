@@ -11,7 +11,7 @@
   "id": "AR-0317",
   "next_action": "Await independent immutable review of exact 3d0bc9ccf1c5d4c524cf7689e8d598897bf9c700; keep branch unpublished and retain serialized Cargo/schema/release fence.",
   "observed_branch": "feature/runtime-bundle-manifest",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "3d0bc9ccf1c5d4c524cf7689e8d598897bf9c700",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0317.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define common signed runtime bundle manifests and offline verification.",
-  "task_revision": 93,
+  "task_revision": 94,
   "title": "Define runtime bundle manifest and verifier",
-  "updated_at": "2026-09-07T11:38:26+00:00",
+  "updated_at": "2026-09-07T11:43:10+00:00",
   "worktree_key": "agent-systems-benchmark-runtime-bundle-manifest"
 }
 ---
