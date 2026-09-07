@@ -2,7 +2,7 @@
 {
   "branch": "feature/frontend-control-api",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T06:17:37+00:00",
+  "claim_expires": "2026-09-07T08:18:16+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0104",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary.",
-  "task_revision": 292,
+  "task_revision": 293,
   "title": "Define the frontend control API",
-  "updated_at": "2026-09-07T06:04:17+00:00",
+  "updated_at": "2026-09-07T06:18:16+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api"
 }
 ---
@@ -833,3 +833,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T06:04:17+00:00: Recorded command exit 0; command argv SHA-256
   8c3de4fb198c6929d0013603bbfa10e6c71d486a4015ae1d75e22776de8280e3.
+
+- 2026-09-07T06:18:16+00:00: Heartbeat by root-coordination-20260906.
