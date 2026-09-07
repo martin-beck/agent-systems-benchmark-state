@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Gemini.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Qualify Gemini replay",
-  "updated_at": "2026-09-07T17:23:28+00:00",
+  "updated_at": "2026-09-07T17:23:47+00:00",
   "worktree_key": "agent-systems-benchmark-replay-gemini"
 }
 ---
@@ -251,3 +251,6 @@ Qualify Gemini record/replay, network denial, parity, retries, tool calls, cance
   body. Capture and retry remain deterministic, so the integrated AR-0518 empty-object contract is
   incompatible; shared files were not mutated. Proposed focused P0 repair with
   empty/extra/nonboolean/null/value-mismatch negatives before AR-0510 can continue.
+
+- 2026-09-07T17:23:47+00:00: Recorded command exit 0; command argv SHA-256
+  7e2e650629823b7a452675a76ad84771445ac39d2a70cdcd94a75d0e623bbdbf.
