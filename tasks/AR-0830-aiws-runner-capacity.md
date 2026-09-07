@@ -11,7 +11,7 @@
   "id": "AR-0830",
   "next_action": "Run only a protected manually dispatched canary on the complete composite label, then verify ephemeral deregistration, stop/reset cleanup and Relay listener invariance. Do not create or route an ordinary/public-PR workflow; coordinate the AR-0831 workflow fence first.",
   "observed_branch": "feature/development-host-runner-capacity",
-  "observed_dirty": 2,
+  "observed_dirty": 4,
   "observed_head": "c67d572c227021e96f43abe62e430fc9acdb5f93",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0830.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 119,
+  "task_revision": 120,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T06:42:18+00:00",
+  "updated_at": "2026-09-07T06:43:36+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
