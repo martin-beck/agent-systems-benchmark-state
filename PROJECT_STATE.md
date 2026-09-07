@@ -2,16 +2,15 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `0cdccfb899b8bfaf366ca3b74855483b107015a7`
-- Local origin/main: `0cdccfb899b8bfaf366ca3b74855483b107015a7`
-- Primary worktree head: `0cdccfb899b8bfaf366ca3b74855483b107015a7`
+- Product remote main: `b1669203308db5a75fee1e78a45c6fc8e71f17ce`
+- Local origin/main: `b1669203308db5a75fee1e78a45c6fc8e71f17ce`
+- Primary worktree head: `b1669203308db5a75fee1e78a45c6fc8e71f17ce`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #31 | `feature/native-platforms@bdaf9c108226` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #36 | `feature/csb-execution-assurance@39e306124b56` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(csb): add pinned contained execution boundary |
+| #31 | `feature/native-platforms@bdaf9c108226` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
 
 ## Recent workflows
 
