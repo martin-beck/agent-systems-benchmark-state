@@ -9,7 +9,7 @@
     "AR-0204"
   ],
   "id": "AR-0801",
-  "next_action": "Hold immutable signed+DCO candidate 203074e8054f733a216bf4ec577a4f4479c8f639 for fresh independent review and exact-tree gates; publish only after approval, then require exact-head CI.",
+  "next_action": "Hold immutable signed+DCO candidate d2e7b66ff6af1f9f5924ab40c2a6cff74a6ba7f4 for fresh independent review and exact-tree gates; publish only after approval, then require exact-head CI.",
   "observed_branch": "feature/terminal-interface",
   "observed_dirty": 0,
   "observed_head": "d2e7b66ff6af1f9f5924ab40c2a6cff74a6ba7f4",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide doctor, plan, run, sweep, compare and report with stable JSON output.",
-  "task_revision": 168,
+  "task_revision": 169,
   "title": "Implement terminal and automation interfaces",
-  "updated_at": "2026-09-07T02:42:45+00:00",
+  "updated_at": "2026-09-07T02:43:10+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-interface"
 }
 ---
@@ -517,3 +517,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T02:42:45+00:00: Recorded command exit 0; command argv SHA-256
   3b75942e8a7c8407279e5b84dfb04553b0173ae8f56bac9331778628b4fdf950.
+
+- 2026-09-07T02:43:10+00:00: Superseded 203074e after review found out-of-plan attempt/failure and
+  impossible timestamp forgeries. Candidate d2e7b66 requires attempt/failure identities to belong to
+  the complete scheduler set; requires scheduled <= started <= finished with exact queue delay or
+  paired absent timestamps for infrastructure failure; normalizes partial raw infrastructure
+  timestamps before persistence; and adds adversarial out-of-plan attempt, out-of-plan failure,
+  reversed timestamp, and half-timestamp negatives. Focused asb-cli clippy and 10 unit + 3 e2e tests
+  green at the exact clean signed+DCO tree. The earlier workspace gate completed green but is not
+  exact-tree evidence because this repair began while it was running, so a fresh full gate remains
+  required.
