@@ -11,17 +11,17 @@
   "id": "AR-0801",
   "next_action": "Add failure-path and PTY/resize-adjacent terminal tests, run workspace/full quality/formal gates, then create a focused signed DCO candidate for independent immutable review.",
   "observed_branch": "feature/terminal-interface",
-  "observed_dirty": 5,
-  "observed_head": "b79534b627e28792a46e1a0074be762bb425d2a6",
+  "observed_dirty": 0,
+  "observed_head": "1dfcf1eec8c0fd7e058f977568a4704c4a5cd8bd",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0801.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide doctor, plan, run, sweep, compare and report with stable JSON output.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "Implement terminal and automation interfaces",
-  "updated_at": "2026-09-07T01:50:20+00:00",
+  "updated_at": "2026-09-07T01:50:31+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-interface"
 }
 ---
