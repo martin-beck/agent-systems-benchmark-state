@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**80 ARs tracked** across 4 active status categories.
+**80 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 46 |
 | **Future** | Deferred roadmap work | 0 |
@@ -93,7 +93,7 @@ flowchart LR
     subgraph series_07["07 - Platforms"]
         direction TB
         AR_0701["AR-0701 - Done"]:::status_done
-        AR_0702["AR-0702 - Open"]:::status_open
+        AR_0702["AR-0702 - In progress"]:::status_in_progress
     end
     subgraph series_08["08 - Interfaces"]
         direction TB
@@ -506,19 +506,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P1 | [AR-0702](tasks/AR-0702-native-platforms.md): Validate native Linux kernels and architectures | quality-20260906 | Exercise native x86_64 and aarch64 including booted openEuler kernels. | Provision disposable native test environments with isolated benchmark resources. |
 | P1 | [AR-0803](tasks/AR-0803-frontend-control-api.md): Define the frontend control API | root-coordination-20260906 | Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary. | Define a bounded versioned control/status API between the runner and independent frontends. |
 | P1 | [AR-0902](tasks/AR-0902-fault-assurance.md): Add fuzz mutation and lifecycle fault campaigns | contracts-20260906 | Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection. | Integrate approved exact e6c6231 onto exact main 61b5dd3 via signed DCO no-ff merge; push only with immutable lease, then postmerge validation and exact-main CI. |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | replay-20260906 | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Await serialized additive registration fence; then rebase the three owned mini-SWE paths onto exact current main, add only module/test registration, rerun exact-tree full gates, and produce a signed DCO candidate for immutable review. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0702](tasks/AR-0702-native-platforms.md): Validate native Linux kernels and architectures | Unclaimed | Exercise native x86_64 and aarch64 including booted openEuler kernels. | Provision disposable native test environments with isolated benchmark resources. |
 
 ### Planned (46)
 
