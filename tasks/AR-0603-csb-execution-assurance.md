@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 109,
+  "task_revision": 110,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T10:00:24+00:00",
+  "updated_at": "2026-09-07T10:01:49+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
@@ -355,3 +355,6 @@ Implementation has not started. Read the linked plan before claiming.
   because the abbreviated rebase output was transcribed to the wrong full SHA; actual immutable head
   is 39e306124b567dece6f335662a11906869f91ba7. No build or source mutation occurred. Retry once with
   the resolved exact head.
+
+- 2026-09-07T10:01:49+00:00: Recorded command exit 0; command argv SHA-256
+  02c2c2cef6cbca9903951c6d4fb03e4e51b39ee8281fc68a32eb71ef0fbff1fb.
