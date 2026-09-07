@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenDesk.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Qualify OpenDesk replay",
-  "updated_at": "2026-09-07T12:54:51+00:00",
+  "updated_at": "2026-09-07T12:55:18+00:00",
   "worktree_key": "agent-systems-benchmark-replay-opendesk"
 }
 ---
@@ -67,3 +67,6 @@ Qualify OpenDesk record/replay, network denial, parity, retries, tool calls, can
 
 - 2026-09-07T12:54:51+00:00: Recorded command exit 1; command argv SHA-256
   97e2c1b70adc08da6dae289679009f17e22a3f624ace3a3a49bdecf4c9593011.
+
+- 2026-09-07T12:55:18+00:00: Recorded command exit 101; command argv SHA-256
+  3211cbb17659455b743594d7b488023c32bf8ad124e43fb5b7a2d3f51490bd3d.
