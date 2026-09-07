@@ -9,13 +9,8 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0512](tasks/AR-0512-replay-goose.md): Qualify goose replay | Qualify replay conformance for goose. | Serialize a shared replay follow-up that makes request-body redaction selectors interaction/method-aware; then rerun the preserved Goose fixture without bypassing private messages. | contracts_20260906 |
 | P0 | [AR-0520](tasks/AR-0520-interaction-aware-redaction.md): Interaction-aware request redaction | Support per-interaction request redaction policies for mixed catalog and private requests. | Independent immutable review of exact 867861c95c192659102d07f0093a69b58d281513; publish only after approval, then require exact-head x86_64/aarch64 CI. | quality_20260906 |
+| P0 | [AR-0847](tasks/AR-0847-frontend-control-api-repair.md): Frontend control API repair | Repair and independently qualify the blocked frontend control API candidate. | Repair the AR-0803 frontend control candidate's five immutable-review findings, then qualify the repaired API and transfer the reviewed result back to AR-0803. | replay_20260906 |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. | root-coordination-20260906 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0847](tasks/AR-0847-frontend-control-api-repair.md): Frontend control API repair | Repair and independently qualify the blocked frontend control API candidate. | Repair the AR-0803 frontend control candidate's five immutable-review findings, then qualify the repaired API and transfer the reviewed result back to AR-0803. | - |
 
 ## Blocked
 

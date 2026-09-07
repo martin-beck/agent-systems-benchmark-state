@@ -2,7 +2,7 @@
 {
   "branch": "feature/frontend-control-api-repair",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-08T00:11:04+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0104",
@@ -11,15 +11,15 @@
   ],
   "id": "AR-0847",
   "next_action": "Repair the AR-0803 frontend control candidate's five immutable-review findings, then qualify the repaired API and transfer the reviewed result back to AR-0803.",
-  "owner": "",
+  "owner": "replay_20260906",
   "plan": "../plans/AR-0847.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair and independently qualify the blocked frontend control API candidate.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Frontend control API repair",
-  "updated_at": "2026-09-07T21:11:02+00:00",
+  "updated_at": "2026-09-07T21:11:04+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api-repair"
 }
 ---
@@ -29,3 +29,5 @@ Repair the blocked AR-0803 candidate without mutating its dirty worktree in plac
 
 - 2026-09-07T21:11:02+00:00: Promote focused repair for AR-0803 immutable-review findings;
   dependencies are complete and isolated worktree is available.
+
+- 2026-09-07T21:11:04+00:00: Claimed by replay_20260906.

@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**119 ARs tracked** across 5 active status categories.
+**119 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 60 |
 | **Future** | Deferred roadmap work | 0 |
@@ -158,7 +158,7 @@ flowchart LR
         AR_0844["AR-0844 - Planned"]:::status_planned
         AR_0845["AR-0845 - Done"]:::status_done
         AR_0846["AR-0846 - Planned"]:::status_planned
-        AR_0847["AR-0847 - Open"]:::status_open
+        AR_0847["AR-0847 - In progress"]:::status_in_progress
     end
     subgraph series_09["09 - Assurance"]
         direction TB
@@ -709,19 +709,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0512](tasks/AR-0512-replay-goose.md): Qualify goose replay | contracts_20260906 | Qualify replay conformance for goose. | Serialize a shared replay follow-up that makes request-body redaction selectors interaction/method-aware; then rerun the preserved Goose fixture without bypassing private messages. |
 | P0 | [AR-0520](tasks/AR-0520-interaction-aware-redaction.md): Interaction-aware request redaction | quality_20260906 | Support per-interaction request redaction policies for mixed catalog and private requests. | Independent immutable review of exact 867861c95c192659102d07f0093a69b58d281513; publish only after approval, then require exact-head x86_64/aarch64 CI. |
+| P0 | [AR-0847](tasks/AR-0847-frontend-control-api-repair.md): Frontend control API repair | replay_20260906 | Repair and independently qualify the blocked frontend control API candidate. | Repair the AR-0803 frontend control candidate&#x27;s five immutable-review findings, then qualify the repaired API and transfer the reviewed result back to AR-0803. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0847](tasks/AR-0847-frontend-control-api-repair.md): Frontend control API repair | Unclaimed | Repair and independently qualify the blocked frontend control API candidate. | Repair the AR-0803 frontend control candidate&#x27;s five immutable-review findings, then qualify the repaired API and transfer the reviewed result back to AR-0803. |
 
 ### Blocked (4)
 
