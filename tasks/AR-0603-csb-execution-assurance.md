@@ -10,7 +10,7 @@
     "AR-0104"
   ],
   "id": "AR-0603",
-  "next_action": "Run remaining quality failure fixtures with the verified analyzer path, platform and formal checks, then commit focused signed DCO integration and run immutable-tree privacy/scope review.",
+  "next_action": "Run exact-head rebase-affected focused/native/policy/supply-chain/privacy/scope gates at 39e306124b567dece6f335662a11906869f91ba7, then request immutable independent review.",
   "observed_branch": "feature/csb-execution-assurance",
   "observed_dirty": 0,
   "observed_head": "39e306124b567dece6f335662a11906869f91ba7",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 108,
+  "task_revision": 109,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T10:00:01+00:00",
+  "updated_at": "2026-09-07T10:00:24+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
@@ -350,3 +350,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T10:00:01+00:00: Recorded command exit 1; command argv SHA-256
   b285520e3151584d98e7f98ab8ea85d2132bd77692c340fa91a372bcfc0c3323.
+
+- 2026-09-07T10:00:24+00:00: Exact-head validation command failed at its first no-effect guard
+  because the abbreviated rebase output was transcribed to the wrong full SHA; actual immutable head
+  is 39e306124b567dece6f335662a11906869f91ba7. No build or source mutation occurred. Retry once with
+  the resolved exact head.
