@@ -2,7 +2,7 @@
 {
   "branch": "feature/opendesk-strict-replay-http-compatibility",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T16:52:10+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0502",
     "AR-0503",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/opendesk-strict-replay-http-compatibility",
   "observed_dirty": 0,
   "observed_head": "f26216bde1257aaa5706ac59d05ade697329670d",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0516.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Add narrowly scoped strict-replay compatibility for pinned OpenDesk traffic.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "OpenDesk strict-replay HTTP compatibility",
-  "updated_at": "2026-09-07T14:44:33+00:00",
+  "updated_at": "2026-09-07T14:57:14+00:00",
   "worktree_key": "agent-systems-benchmark-opendesk-strict-replay-http-compatibility"
 }
 ---
@@ -253,3 +253,17 @@ Acceptance requires schema/runtime parity, adversarial positives and negatives, 
   equals reviewed feature tree and second parent is exact f26216b. Pushed main with lease against
   exact 40cfa75; GitHub records PR merged. Exact-main runs started: Rust 34134561207, quality
   34134561162, formal 34134561172, fault 34134561141.
+
+- 2026-09-07T14:57:14+00:00: AR-0516 complete. Reviewed signed+DCO commits cf64758a and f26216b
+  merged via signed+DCO no-ff 8eff6f95d8c5598fc89259013dfdd019149885e3; tree matches reviewed
+  4f485194343b1f1844712316d581fe6cc89f3769. PR #42 exact-head and exact-main Rust x86_64/aarch64,
+  quality/coverage/supply, formal Kani/Loom, and fault/fuzz/mutation runs all succeeded (main Rust
+  34134561207, quality 34134561162, formal 34134561172, fault 34134561141). Local
+  focused/full/release/privacy/supply/formal/negative/postmerge gates pass. Pinned OpenDesk 0.3.5
+  real loopback-only capture plus strict replay passed 1/1 in 19.61s against exact main 8eff6f95 and
+  adapter head 8c249ba, including retry, tool, graded trajectory and cancel. Durable capture
+  observed 18 ordered GET probes using only exact /v1/models and /v1/models/fixture-model; every GET
+  omitted Content-Length, had zero body/canonical null, cassette headers authorization+content-type,
+  no span_id, and exact application/json response. POST retained real redacted span_id and
+  absent-stream exact text/event-stream SSE. State/live doctor and refs are clean; OpenDesk support
+  claim remains owned by AR-0507.

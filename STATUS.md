@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 4 |
+| **In progress** | Claimed work with a live lease | 3 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 65 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 42 |
+| **Done** | Accepted, integrated, and durably verified | 43 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -95,7 +95,7 @@ flowchart LR
         AR_0513["AR-0513 - Planned"]:::status_planned
         AR_0514["AR-0514 - Planned"]:::status_planned
         AR_0515["AR-0515 - Planned"]:::status_planned
-        AR_0516["AR-0516 - In progress"]:::status_in_progress
+        AR_0516["AR-0516 - Done"]:::status_done
         AR_0517["AR-0517 - Planned"]:::status_planned
     end
     subgraph series_06["06 - Metrics"]
@@ -690,13 +690,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0507](tasks/AR-0507-replay-opendesk.md): Qualify OpenDesk replay | replay_20260906 | Qualify replay conformance for OpenDesk. | Await reviewed AR-0516 shared replay compatibility merge; then rebase, remove diagnostic span_id normalization, record exact model GETs, and complete pinned offline replay/cancel/malformed/full gates. |
 | P0 | [AR-0509](tasks/AR-0509-replay-codex.md): Qualify Codex replay | contracts_20260906 | Qualify replay conformance for Codex. | Preserve isolated Codex test; await serialized child AR fixing privacy-safe request-body pointer replay, then finish native parity/retry/cancel gates. |
-| P0 | [AR-0516](tasks/AR-0516-opendesk-strict-replay-http-compatibility.md): OpenDesk strict-replay HTTP compatibility | quality_20260906 | Add narrowly scoped strict-replay compatibility for pinned OpenDesk traffic. | Monitor exact-main 8eff6f95 CI; release only after every run is green and final synchronized state/live validation passes. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
 
 ### Blocked (4)
@@ -778,7 +777,7 @@ flowchart LR
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Evaluate maintenance, licenses and reproducibility before integration. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (42)
+### Done (43)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -787,6 +786,7 @@ flowchart LR
 | P0 | [AR-0317](tasks/AR-0317-runtime-bundle-manifest.md): Define runtime bundle manifest and verifier | Unclaimed | Define common signed runtime bundle manifests and offline verification. | Completed; retain Linux/operator-owned acquisition limits. |
 | P0 | [AR-0506](tasks/AR-0506-replay-opencode.md): Qualify OpenCode replay | Unclaimed | Qualify replay conformance for OpenCode. | Monitor rerun of exact-head x86 Rust job after investigated bounded ETXTBSY fixture flake; merge only after every workflow is green. |
 | P0 | [AR-0508](tasks/AR-0508-replay-aider.md): Qualify aider replay | Unclaimed | Qualify replay conformance for aider. | Await independent immutable review of exact ec0a2930690c108987b4a867632316651282cc97; if approved, publish with an exact absent-ref lease, open focused PR, and require exact-head CI before integration. |
+| P0 | [AR-0516](tasks/AR-0516-opendesk-strict-replay-http-compatibility.md): OpenDesk strict-replay HTTP compatibility | Unclaimed | Add narrowly scoped strict-replay compatibility for pinned OpenDesk traffic. | Monitor exact-main 8eff6f95 CI; release only after every run is green and final synchronized state/live validation passes. |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Unclaimed | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. |
 | P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Unclaimed | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. |
 | P1 | [AR-0004](tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Unclaimed | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. |
