@@ -11,17 +11,17 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #31 | `feature/native-platforms@bdaf9c108226` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #57 | `feature/recovery-models@a288bb3485aa` | `main` | CLEAN | - | formal: model recovery and replay fencing |
+| #57 | `feature/recovery-models@a288bb3485aa` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS | formal: model recovery and replay fencing |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34169250678 | `a288bb3485aa` | pull_request | Formal assurance | queued:- |
-| 34169250641 | `a288bb3485aa` | pull_request | Fault assurance | queued:- |
-| 34169250637 | `a288bb3485aa` | pull_request | Rust verification | queued:- |
-| 34169250636 | `a288bb3485aa` | pull_request | Repository quality | queued:- |
-| 34169250633 | `a288bb3485aa` | pull_request | Emulated aarch64 portability | queued:- |
+| 34169250678 | `a288bb3485aa` | pull_request | Formal assurance | completed:success |
+| 34169250641 | `a288bb3485aa` | pull_request | Fault assurance | in_progress:- |
+| 34169250637 | `a288bb3485aa` | pull_request | Rust verification | in_progress:- |
+| 34169250636 | `a288bb3485aa` | pull_request | Repository quality | in_progress:- |
+| 34169250633 | `a288bb3485aa` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 34168679478 | `72dd78f72dd7` | push | Rust verification | completed:success |
 | 34168679459 | `72dd78f72dd7` | push | Emulated aarch64 portability | completed:success |
 | 34168679395 | `72dd78f72dd7` | push | Fault assurance | completed:success |
