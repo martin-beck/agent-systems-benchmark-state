@@ -37,8 +37,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-replay-cassettes` | `feature/replay-cassettes` | `cd88f5703fb3` | 0 | behind 96, ahead 0 |
 | `agent-systems-benchmark-replay-evaluation` | `feature/replay-evaluation` | `3d04a2d5a3b3` | 0 | behind 109, ahead 0 |
 | `agent-systems-benchmark-replay-pacing` | `feature/replay-pacing` | `73d28a431c78` | 0 | behind 64, ahead 0 |
-| `agent-systems-benchmark-runner-isolation-hardening` | `fix/runner-isolation-hardening` | `a4782cdc467d` | 9 | behind 2, ahead 0 |
-| changed files | - | - | - | `tests/runners/test_runner_scripts.sh`, `tools/runners/README.md`, `tools/runners/common.sh`, `tools/runners/health.sh`, `tools/runners/register.sh`, `tools/runners/reset.sh`, `tools/runners/setup.sh`, `tools/runners/collect-diagnostics.sh`, `tools/runners/launch.sh` |
+| `agent-systems-benchmark-runner-isolation-hardening` | `fix/runner-isolation-hardening` | `a4782cdc467d` | 10 | behind 2, ahead 0 |
+| changed files | - | - | - | `tests/runners/test_runner_scripts.sh`, `tools/runners/README.md`, `tools/runners/common.sh`, `tools/runners/health.sh`, `tools/runners/register.sh`, `tools/runners/reset.sh`, `tools/runners/setup.sh`, `tools/runners/collect-diagnostics.sh`, `tools/runners/inventory.py`, `tools/runners/launch.sh` |
 | `agent-systems-benchmark-runner-privacy-guard-remediation` | `fix/runner-canary-privacy-guards` | `c25e3d20d0dd` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-sandbox-runtime` | `feature/sandbox-runtime` | `ac4a23599649` | 0 | behind 66, ahead 0 |
 | `agent-systems-benchmark-sandbox-test-portability` | `fix/sandbox-test-portability` | `23035acde688` | 0 | behind 54, ahead 0 |
