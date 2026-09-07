@@ -10,17 +10,17 @@
   "id": "AR-0845",
   "next_action": "Make optional CI evidence quota-aware while preserving required-check semantics and provenance.",
   "observed_branch": "feature/ci-artifact-quota-resilience",
-  "observed_dirty": 2,
-  "observed_head": "216980d412d31fdc6c47439f9f954b91c2c6a420",
+  "observed_dirty": 0,
+  "observed_head": "7d98653e7e7f219cced6abfb5c611d2614c72bd7",
   "owner": "quality-20260906",
   "plan": "../plans/AR-0845.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent exhausted GitHub artifact quota from obscuring authoritative ASB results.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Harden CI artifact quota behavior",
-  "updated_at": "2026-09-07T12:04:29+00:00",
+  "updated_at": "2026-09-07T12:04:44+00:00",
   "worktree_key": "agent-systems-benchmark-ci-artifact-quota-resilience"
 }
 ---
