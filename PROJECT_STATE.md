@@ -11,14 +11,14 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #31 | `feature/native-platforms@bdaf9c108226` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #39 | `feature/agent-mini-swe@3cf9a53fce70` | `main` | UNSTABLE | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(agents): add bounded mini-SWE adapter |
+| #39 | `feature/agent-mini-swe@3cf9a53fce70` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(agents): add bounded mini-SWE adapter |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 34122642598 | `3cf9a53fce70` | pull_request | Formal assurance | completed:success |
-| 34122642569 | `3cf9a53fce70` | pull_request | Rust verification | in_progress:- |
+| 34122642569 | `3cf9a53fce70` | pull_request | Rust verification | completed:success |
 | 34122642558 | `3cf9a53fce70` | pull_request | Repository quality | completed:success |
 | 34122642542 | `3cf9a53fce70` | pull_request | Fault assurance | completed:success |
 | 34121326944 | `ad0cdfc35d14` | push | Repository quality | completed:success |
