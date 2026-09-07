@@ -11,17 +11,17 @@
   "id": "AR-0830",
   "next_action": "Inventory development-host capacity read-only, then implement a no-default-label, pseudonymous, prequalification-only runner entirely beneath the configured /srv/data/projects storage root without modifying Relay services.",
   "observed_branch": "feature/development-host-runner-capacity",
-  "observed_dirty": 5,
-  "observed_head": "814397f8f74971589aa02b13da12485169db3e2e",
+  "observed_dirty": 0,
+  "observed_head": "7c7f1e0f711398907c2094d92357f7196154d03f",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0830.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T05:51:55+00:00",
+  "updated_at": "2026-09-07T05:52:00+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
