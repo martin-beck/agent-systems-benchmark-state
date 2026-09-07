@@ -1,5 +1,25 @@
 ---
-{"branch":"feature/emulated-aarch64-portability","checkpoint_commit":"","claim_expires":"","depends_on":["AR-0701","AR-0103"],"id":"AR-0707","next_action":"Provide a reproducible x86_64-hosted aarch64 VM/emulation lane for userspace portability and negative qualification only.","owner":"","plan":"../plans/AR-0707.md","priority":"P1","schema_version":1,"status":"planned","summary":"Add explicit emulated-aarch64 portability qualification without claiming native support.","task_revision":1,"title":"Qualify emulated aarch64 portability","updated_at":"2026-09-07T00:00:00+00:00","worktree_key":"agent-systems-benchmark-emulated-aarch64-portability"}
+{
+  "branch": "feature/emulated-aarch64-portability",
+  "checkpoint_commit": "",
+  "claim_expires": "",
+  "depends_on": [
+    "AR-0701",
+    "AR-0103"
+  ],
+  "id": "AR-0707",
+  "next_action": "Provide a reproducible x86_64-hosted aarch64 VM/emulation lane for userspace portability and negative qualification only.",
+  "owner": "",
+  "plan": "../plans/AR-0707.md",
+  "priority": "P1",
+  "schema_version": 1,
+  "status": "open",
+  "summary": "Add explicit emulated-aarch64 portability qualification without claiming native support.",
+  "task_revision": 2,
+  "title": "Qualify emulated aarch64 portability",
+  "updated_at": "2026-09-07T21:17:43+00:00",
+  "worktree_key": "agent-systems-benchmark-emulated-aarch64-portability"
+}
 ---
 ## AR-0707
 
@@ -15,3 +35,7 @@ Acceptance criteria:
 - Run bounded offline smoke, protocol, replay, packaging, and negative tests with deterministic cleanup.
 - Prove host/guest distinction and fail closed when a native claim is requested.
 - Publish a support matrix that separates emulated from native evidence and cost/latency limits.
+
+- 2026-09-07T21:17:43+00:00: Dependencies AR-0701 and AR-0103 are done; declared branch/worktree are
+  absent; emulated-aarch64 portability is path-compatible with active replay and frontend work.
+  Preserve AR-0703 as the independent native-capacity gate and never infer native support.

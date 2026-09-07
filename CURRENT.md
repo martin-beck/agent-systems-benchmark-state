@@ -11,6 +11,12 @@ Never edit this file directly.
 | P0 | [AR-0847](tasks/AR-0847-frontend-control-api-repair.md): Frontend control API repair | Repair and independently qualify the blocked frontend control API candidate. | Repair the AR-0803 frontend control candidate's five immutable-review findings, then qualify the repaired API and transfer the reviewed result back to AR-0803. | replay_20260906 |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. | root-coordination-20260906 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0707](tasks/AR-0707-emulated-aarch64-portability.md): Qualify emulated aarch64 portability | Add explicit emulated-aarch64 portability qualification without claiming native support. | Provide a reproducible x86_64-hosted aarch64 VM/emulation lane for userspace portability and negative qualification only. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -38,7 +44,6 @@ Never edit this file directly.
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | Define authorized reservation, provisioning, teardown, privacy, cost, and evidence control for genuine native cells. | - |
 | P1 | [AR-0705](tasks/AR-0705-native-debian-capacity.md): Provide native Debian capacity | Provide genuine Debian native qualification cells. | Provision and qualify genuine booted Debian x86_64 and aarch64 cells with cleanup and provenance. | - |
 | P1 | [AR-0706](tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Provide genuine openEuler native qualification cells. | Provision and qualify genuine booted openEuler x86_64 and aarch64 cells with cleanup and provenance. | - |
-| P1 | [AR-0707](tasks/AR-0707-emulated-aarch64-portability.md): Qualify emulated aarch64 portability | Add explicit emulated-aarch64 portability qualification without claiming native support. | Provide a reproducible x86_64-hosted aarch64 VM/emulation lane for userspace portability and negative qualification only. | - |
 | P1 | [AR-0804](tasks/AR-0804-tui-settings-wizard.md): Build the terminal settings wizard | Guide users through agents, providers, workloads, resources, replay, metrics, and output settings. | Build the independent terminal frontend shell and guided configuration workflow. | - |
 | P1 | [AR-0805](tasks/AR-0805-tui-run-control.md): Add terminal run control and status | Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI. | Implement transactional run launch and reconnectable live status views in the terminal frontend. | - |
 | P1 | [AR-0806](tasks/AR-0806-tui-history-analysis.md): Add terminal history and analysis | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. | Add recent-run browsing, exact repeat, comparison, and result analysis views. | - |
