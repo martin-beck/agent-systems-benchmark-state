@@ -11,7 +11,7 @@
   "id": "AR-0308",
   "next_action": "Await independent immutable review of exact replacement candidate 0030358074c1acb92aad10d683208b243d9a6ad7/tree f3cc91544d7472c7ded1cfcd83a3d4c04d84012a; do not publish without coordinator authorization.",
   "observed_branch": "feature/agent-mini-swe",
-  "observed_dirty": 1,
+  "observed_dirty": 2,
   "observed_head": "0030358074c1acb92aad10d683208b243d9a6ad7",
   "owner": "replay-20260906",
   "plan": "../plans/AR-0308.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned mini-SWE-agent as a bounded batch engineering agent.",
-  "task_revision": 247,
+  "task_revision": 248,
   "title": "Implement mini-SWE-agent client adapter",
-  "updated_at": "2026-09-07T05:14:24+00:00",
+  "updated_at": "2026-09-07T05:15:11+00:00",
   "worktree_key": "agent-systems-benchmark-agent-mini-swe"
 }
 ---
