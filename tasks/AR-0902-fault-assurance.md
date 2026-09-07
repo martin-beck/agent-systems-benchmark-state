@@ -9,7 +9,7 @@
     "AR-0503"
   ],
   "id": "AR-0902",
-  "next_action": "Integrate approved exact e6c6231 onto exact main 61b5dd3 via signed DCO no-ff merge; push only with immutable lease, then postmerge validation and exact-main CI.",
+  "next_action": "Complete postmerge validation of signed merge 4a59593c, require exact-main fault/quality/Rust/formal CI green, reconcile/live doctor/full state validation, then release done.",
   "observed_branch": "feature/fault-assurance",
   "observed_dirty": 0,
   "observed_head": "e6c623113c15c99950889b26cd70b29c6966b1d4",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection.",
-  "task_revision": 103,
+  "task_revision": 104,
   "title": "Add fuzz mutation and lifecycle fault campaigns",
-  "updated_at": "2026-09-07T03:17:47+00:00",
+  "updated_at": "2026-09-07T03:18:10+00:00",
   "worktree_key": "agent-systems-benchmark-fault-assurance"
 }
 ---
@@ -360,3 +360,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T03:17:47+00:00: Recorded command exit 1; command argv SHA-256
   a21215f72a23fd3b9171302fb3f49e6e72ac95dcac907b886425de38dc77df43.
+
+- 2026-09-07T03:18:10+00:00: Postmerge bounded fuzz command ran all four targets for 32 iterations
+  without crashes and fuzz deny/audit/lock checks passed, but wrapper correctly exited 1 at hygiene
+  because cargo-fuzz creates an empty repository fuzz/artifacts directory even with external
+  artifact_prefix. External scratch is empty, Cargo.lock unchanged, and no corpus/artifact files
+  entered source; exact empty directory plus external run root must be removed through wrapper, then
+  workflow-exact cleanup assertions rerun. This is a local harness omission, not a product fuzz
+  failure; do not claim the failed wrapper as passing.
