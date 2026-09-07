@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-opendesk",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T17:53:42+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0302",
     "AR-0503",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/replay-opendesk",
   "observed_dirty": 0,
   "observed_head": "24a5519ef006c063f3a8d6e81d0928f2e9e986f9",
-  "owner": "replay_20260906",
+  "owner": "",
   "plan": "../plans/AR-0507.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Qualify replay conformance for OpenDesk.",
-  "task_revision": 137,
+  "task_revision": 138,
   "title": "Qualify OpenDesk replay",
-  "updated_at": "2026-09-07T15:23:31+00:00",
+  "updated_at": "2026-09-07T15:26:49+00:00",
   "worktree_key": "agent-systems-benchmark-replay-opendesk"
 }
 ---
@@ -492,3 +492,12 @@ Qualify OpenDesk record/replay, network denial, parity, retries, tool calls, can
 
 - 2026-09-07T15:23:31+00:00: Recorded command exit 0; command argv SHA-256
   641c26e34a6c1dfdfba0eab4c25b35356b345a43162ea5921bdc5e6792e1edac.
+
+- 2026-09-07T15:26:49+00:00: Integrated reviewed PR #43 as signed+DCO merge
+  e8966b2a54531a8c39621a21e76af36b91435cfd (parents 8eff6f95+24a5519, tree 96f01bd); PR head exact
+  CI green: formal 34137064707, quality 34137064719, Rust x86_64+aarch64 34137064770, fault
+  34137064881. Exact-main local real pinned OpenDesk 0.3.5 loopback replay, fmt, clippy, locked
+  workspace tests, docs, release and formal gates passed; exact-main CI green: formal 34137786251,
+  fault 34137786261, Rust x86_64+aarch64 34137786310, quality 34137786389. State reconcile,
+  schema/privacy/render validation, 38 unit tests at 96% branch coverage, offline and live doctor
+  passed.
