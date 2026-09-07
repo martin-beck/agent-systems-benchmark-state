@@ -10,15 +10,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #25 | `feature/agent-qwen-code@0be96c9ec50e` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | feat(agents): add bounded Qwen Code adapter |
+| #25 | `feature/agent-qwen-code@0be96c9ec50e` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(agents): add bounded Qwen Code adapter |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34071496677 | `0be96c9ec50e` | pull_request | Formal assurance | queued:- |
-| 34071496622 | `0be96c9ec50e` | pull_request | Rust verification | queued:- |
-| 34071496615 | `0be96c9ec50e` | pull_request | Repository quality | queued:- |
+| 34071496677 | `0be96c9ec50e` | pull_request | Formal assurance | in_progress:- |
+| 34071496622 | `0be96c9ec50e` | pull_request | Rust verification | in_progress:- |
+| 34071496615 | `0be96c9ec50e` | pull_request | Repository quality | in_progress:- |
 | 34070523641 | `2579362d6936` | push | Formal assurance | completed:success |
 | 34070523631 | `2579362d6936` | push | Rust verification | completed:success |
 | 34070523622 | `2579362d6936` | push | Repository quality | completed:success |
