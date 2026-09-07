@@ -9,7 +9,7 @@
     "AR-0204"
   ],
   "id": "AR-0801",
-  "next_action": "Hold immutable signed+DCO candidate d2e7b66ff6af1f9f5924ab40c2a6cff74a6ba7f4 for fresh independent review and exact-tree gates; publish only after approval, then require exact-head CI.",
+  "next_action": "Publish independently approved exact candidate d2e7b66ff6af1f9f5924ab40c2a6cff74a6ba7f4 with an absent-ref lease, open focused PR, and require exact-head hosted quality/Rust/formal CI before integration.",
   "observed_branch": "feature/terminal-interface",
   "observed_dirty": 0,
   "observed_head": "d2e7b66ff6af1f9f5924ab40c2a6cff74a6ba7f4",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide doctor, plan, run, sweep, compare and report with stable JSON output.",
-  "task_revision": 173,
+  "task_revision": 174,
   "title": "Implement terminal and automation interfaces",
-  "updated_at": "2026-09-07T02:46:35+00:00",
+  "updated_at": "2026-09-07T02:46:51+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-interface"
 }
 ---
@@ -539,3 +539,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T02:46:35+00:00: Recorded command exit 0; command argv SHA-256
   523919ee3eb41fedb0e0c78a2f2e333b191667461164ef4f340238a921a3254d.
+
+- 2026-09-07T02:46:51+00:00: Independent immutable review APPROVED d2e7b66 tree daad1290 and
+  verified both prior evidence exploits closed, signatures/DCO and six-path scope clean. Fresh
+  exact-tree gates green: fmt; workspace all-target clippy/tests; warning-denied docs; release
+  build; cargo-deny; live cargo-audit over 138 dependencies; configured coverage (workspace 91.50%
+  regions/94.25% lines; asb-cli 89.41% regions/89.72% lines; critical core/protocol/replay floors
+  green); repository policy; actionlint; offline zizmor; Gitleaks across both commits; every
+  controlled negative gate; platform validation and four tests; Loom/state/production models; all
+  five Kani 0.67.0 proofs and deliberate counterexample rejection. Head/tree stayed exact and
+  worktree clean throughout each final gate.
