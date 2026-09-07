@@ -11,16 +11,16 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #31 | `feature/native-platforms@bdaf9c108226` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #43 | `feature/replay-opendesk@24a5519ef006` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | test(replay): qualify pinned OpenDesk replay |
+| #43 | `feature/replay-opendesk@24a5519ef006` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | test(replay): qualify pinned OpenDesk replay |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34137064881 | `24a5519ef006` | pull_request | Fault assurance | queued:- |
-| 34137064770 | `24a5519ef006` | pull_request | Rust verification | queued:- |
-| 34137064719 | `24a5519ef006` | pull_request | Repository quality | queued:- |
-| 34137064707 | `24a5519ef006` | pull_request | Formal assurance | queued:- |
+| 34137064881 | `24a5519ef006` | pull_request | Fault assurance | in_progress:- |
+| 34137064770 | `24a5519ef006` | pull_request | Rust verification | in_progress:- |
+| 34137064719 | `24a5519ef006` | pull_request | Repository quality | in_progress:- |
+| 34137064707 | `24a5519ef006` | pull_request | Formal assurance | in_progress:- |
 | 34134561207 | `8eff6f95d8c5` | push | Rust verification | completed:success |
 | 34134561172 | `8eff6f95d8c5` | push | Formal assurance | completed:success |
 | 34134561162 | `8eff6f95d8c5` | push | Repository quality | completed:success |
