@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenCode.",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "Qualify OpenCode replay",
-  "updated_at": "2026-09-07T13:16:50+00:00",
+  "updated_at": "2026-09-07T13:17:06+00:00",
   "worktree_key": "agent-systems-benchmark-replay-opencode"
 }
 ---
@@ -302,3 +302,6 @@ retries, tool calls, cancellation, and malformed-record negatives.
   point. Same exact head passed arm64, local full suite, and prior main x86 CI; change touches no
   CLI/runtime production path. Formal 34126097779, fault 34126097792, and quality 34126097885 are
   green. Rerun only the failed exact-head job after investigation.
+
+- 2026-09-07T13:17:06+00:00: Recorded command exit 0; command argv SHA-256
+  9b7eefb6d65f587aa9c92dc7fdb9ddc35990c62fe1949aa25731481be99f2e80.
