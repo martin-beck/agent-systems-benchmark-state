@@ -9,16 +9,16 @@
     "AR-0103"
   ],
   "id": "AR-0830",
-  "next_action": "Inventory development host capacity and define an isolated ASB runner root, service account, labels, leases, and reset contract.",
+  "next_action": "Inventory development-host capacity read-only, then implement a no-default-label, pseudonymous, prequalification-only runner entirely beneath the configured /srv/data/projects storage root without modifying Relay services.",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0830.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T05:44:14+00:00",
+  "updated_at": "2026-09-07T05:44:26+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
@@ -42,3 +42,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T05:44:14+00:00: Recorded command exit 0; command argv SHA-256
   3f870e1e32d1fa23108b3be93a49526ba99abd621e6d435ac2983c2dcc55ca4d.
+
+- 2026-09-07T05:44:26+00:00: Repaired the runner plan after audit: all runner state is constrained
+  beneath the configured /srv/data/projects root; default labels are forbidden; only a protected
+  manual qualification canary is permitted before independent qualification and separate activation;
+  public-PR caches are trust-separated; names/logs are privacy-safe; disk/network/service fault
+  injection is bounded and no host reboot is claimed without separate authorization. The initial
+  wrapped apply_patch invocation exited 2 because wrapper stdin was not forwarded; the
+  explicit-argument retry applied the exact diff, then signed+DCO state commit 4cf79b71 committed it
+  and wrapper evidence commit cf5aa8e7 recorded success. AR-0703 is not an AR-0830 dependency;
+  removal from AR-0832 requires coordinator-owned metadata serialization.
