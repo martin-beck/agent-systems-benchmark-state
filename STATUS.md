@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**117 ARs tracked** across 5 active status categories.
+**117 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 3 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 63 |
 | **Future** | Deferred roadmap work | 0 |
@@ -98,7 +98,7 @@ flowchart LR
         AR_0516["AR-0516 - Done"]:::status_done
         AR_0517["AR-0517 - Done"]:::status_done
         AR_0518["AR-0518 - Done"]:::status_done
-        AR_0519["AR-0519 - Open"]:::status_open
+        AR_0519["AR-0519 - In progress"]:::status_in_progress
     end
     subgraph series_06["06 - Metrics"]
         direction TB
@@ -698,18 +698,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0510](tasks/AR-0510-replay-gemini.md): Qualify Gemini replay | quality_20260906 | Qualify replay conformance for Gemini. | Await focused shared Gemini dialect repair for exact thinkingConfig shape {includeThoughts:boolean}; then rerun pinned capture-to-strict-replay and remaining gates without weakening exact matching. |
+| P0 | [AR-0519](tasks/AR-0519-gemini-thinking-config-contract.md): Gemini thinkingConfig contract repair | replay_20260906 | Correct Gemini thinkingConfig strict-replay contract from pinned capture evidence. | Repair the Gemini thinkingConfig contract to admit exactly includeThoughts:boolean and reject all other shapes. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0519](tasks/AR-0519-gemini-thinking-config-contract.md): Gemini thinkingConfig contract repair | Unclaimed | Correct Gemini thinkingConfig strict-replay contract from pinned capture evidence. | Repair the Gemini thinkingConfig contract to admit exactly includeThoughts:boolean and reject all other shapes. |
 
 ### Blocked (4)
 

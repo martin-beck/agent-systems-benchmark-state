@@ -8,13 +8,8 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0510](tasks/AR-0510-replay-gemini.md): Qualify Gemini replay | Qualify replay conformance for Gemini. | Await focused shared Gemini dialect repair for exact thinkingConfig shape {includeThoughts:boolean}; then rerun pinned capture-to-strict-replay and remaining gates without weakening exact matching. | quality_20260906 |
+| P0 | [AR-0519](tasks/AR-0519-gemini-thinking-config-contract.md): Gemini thinkingConfig contract repair | Correct Gemini thinkingConfig strict-replay contract from pinned capture evidence. | Repair the Gemini thinkingConfig contract to admit exactly includeThoughts:boolean and reject all other shapes. | replay_20260906 |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. | root-coordination-20260906 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0519](tasks/AR-0519-gemini-thinking-config-contract.md): Gemini thinkingConfig contract repair | Correct Gemini thinkingConfig strict-replay contract from pinned capture evidence. | Repair the Gemini thinkingConfig contract to admit exactly includeThoughts:boolean and reject all other shapes. | - |
 
 ## Blocked
 
