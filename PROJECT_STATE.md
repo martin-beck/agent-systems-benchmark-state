@@ -10,16 +10,16 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #31 | `feature/native-platforms@bdaf9c108226` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
+| #31 | `feature/native-platforms@bdaf9c108226` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34118538562 | `a2def53344a0` | push | Repository quality | queued:- |
-| 34118538532 | `a2def53344a0` | push | Fault assurance | queued:- |
-| 34118538500 | `a2def53344a0` | push | Formal assurance | queued:- |
-| 34118538495 | `a2def53344a0` | push | Rust verification | queued:- |
+| 34118538562 | `a2def53344a0` | push | Repository quality | in_progress:- |
+| 34118538532 | `a2def53344a0` | push | Fault assurance | in_progress:- |
+| 34118538500 | `a2def53344a0` | push | Formal assurance | in_progress:- |
+| 34118538495 | `a2def53344a0` | push | Rust verification | in_progress:- |
 | 34118162606 | `4b2805d870df` | pull_request | Rust verification | completed:success |
 | 34118162533 | `4b2805d870df` | pull_request | Fault assurance | completed:success |
 | 34118162453 | `4b2805d870df` | pull_request | Formal assurance | completed:success |
