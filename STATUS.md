@@ -513,7 +513,7 @@ flowchart LR
 | P1 | [AR-0304](tasks/AR-0304-agent-codex.md): Implement Codex client adapter | replay-20260906 | Use Codex noninteractive structured events or app-server with declared capability boundaries. | Await AR-0303 shared registration fence transfer; then rebase exact main, register module/test, and run full exact-tree gates. |
 | P1 | [AR-0305](tasks/AR-0305-agent-gemini.md): Implement Gemini CLI client adapter | contracts-20260906 | Run pinned Gemini CLI through noninteractive JSON events. | Inspect the current official stable release, transition constraints, stream-JSON contract and provider override. |
 | P1 | [AR-0306](tasks/AR-0306-agent-qwen-code.md): Implement Qwen Code client adapter | root-coordination-20260906 | Run pinned Qwen Code through isolated headless stream-JSON. | Inspect the current stable release, stream-JSON contract, provider override and ambient context loading. |
-| P1 | [AR-0310](tasks/AR-0310-provider-profile-contract.md): Define common provider profiles | quality-20260906 | Normalize one provider configuration for safe translation across heterogeneous agent adapters. | Monitor refreshed exact-head PR 23 CI for 2870b68d0ca0e0b1a665baa979ae8acc282e21d5; investigate failures before integration. |
+| P1 | [AR-0310](tasks/AR-0310-provider-profile-contract.md): Define common provider profiles | quality-20260906 | Normalize one provider configuration for safe translation across heterogeneous agent adapters. | Await coordinator authorization to integrate independently approved green PR 23 exact head 2870b68d0ca0e0b1a665baa979ae8acc282e21d5. |
 
 ### Planned (52)
 
