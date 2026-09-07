@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0511",
-  "next_action": "Prove credential-free record/replay conformance for Qwen Code with network denial and malformed/tool/cancel negatives.",
+  "next_action": "Await independent immutable review of exact dd657dddaf897f080ac5e00b2a01e9cac5911154; if approved, publish with an exact absent-ref lease and require exact-head CI.",
   "observed_branch": "feature/replay-qwen",
   "observed_dirty": 0,
   "observed_head": "dd657dddaf897f080ac5e00b2a01e9cac5911154",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Qwen Code.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Qualify Qwen Code replay",
-  "updated_at": "2026-09-07T19:27:12+00:00",
+  "updated_at": "2026-09-07T19:27:50+00:00",
   "worktree_key": "agent-systems-benchmark-replay-qwen"
 }
 ---
@@ -208,3 +208,20 @@ Qualify Qwen Code record/replay, network denial, parity, retries, tool calls, ca
 
 - 2026-09-07T19:27:12+00:00: Recorded command exit 0; command argv SHA-256
   30b0e6937fe78f81e4211e3f032ca2bc5c500c0610c6f36db8e389555879fecf.
+
+- 2026-09-07T19:27:50+00:00: Unpublished signed+DCO candidate
+  dd657dddaf897f080ac5e00b2a01e9cac5911154 (tree 66d2cc3e70182c8ec60a9da1c0fc1cd0aad69550) on exact
+  base 076e9c44810903fb42669642b5820df2f1672136 adds only crates/asb-agents/tests/replay_qwen.rs.
+  Pinned Qwen Code 0.23.0 Linux x86_64 archive da20f722... runs in a loopback-only user/network
+  namespace: capture proves one 429 retry followed by read_file and write_file success, original
+  workload grade, deterministic comparison, sealed authorization-redacted strict replay with
+  event/grade parity, paced cancellation, private-state cleanup, and
+  malformed/truncated/tool-inconsistent fail-closed cases. Blind write initially failed because the
+  pinned tool enforces prior-read; the final fixture exercises that contract. Exact candidate native
+  journey passes in 18.68s. Workspace fmt/clippy/all-features tests/docs/release, coverage floors,
+  cargo-deny/audit, actionlint/zizmor/Gitleaks/repository policy/failure fixtures, Kani 5/5 plus
+  deliberate failing counterexample, Loom/state/production models, bounded fuzz 256x4, and mutation
+  sentinels 7/7 pass. An initial full build failed only from drive ENOSPC; deleting this worker's
+  disposable prior targets and rebuilding jobs=1/incremental=0 passed. Support remains exact pinned
+  Linux x86_64 loopback fixture only; no live provider, non-loopback, other version, or aarch64
+  claim.
