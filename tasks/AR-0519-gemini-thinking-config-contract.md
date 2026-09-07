@@ -9,17 +9,17 @@
   "id": "AR-0519",
   "next_action": "Commit the clean four-path exact-tree repair with SSH signature/DCO after final privacy/scope verification; request immutable review before publication.",
   "observed_branch": "feature/gemini-thinking-config-contract",
-  "observed_dirty": 4,
-  "observed_head": "74d311ca7a4ae86809424f9ff5edfe2c16127891",
+  "observed_dirty": 0,
+  "observed_head": "0aff7023cacf5ccf9e85cb3460f121b8370b9313",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0519.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Correct Gemini thinkingConfig strict-replay contract from pinned capture evidence.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Gemini thinkingConfig contract repair",
-  "updated_at": "2026-09-07T17:42:49+00:00",
+  "updated_at": "2026-09-07T17:43:55+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-thinking-config-contract"
 }
 ---
