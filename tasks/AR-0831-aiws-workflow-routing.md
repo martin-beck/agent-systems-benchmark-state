@@ -2,7 +2,7 @@
 {
   "branch": "feature/development-host-workflow-routing",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T10:26:51+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003",
     "AR-0830"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/development-host-workflow-routing",
   "observed_dirty": 0,
   "observed_head": "f55f98cc79b75226a537600258dde5e57333bdeb",
-  "owner": "contracts-20260906",
+  "owner": "",
   "plan": "../plans/AR-0831.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Route explicitly trusted ASB CI jobs to qualified development host runners while preserving disposable public-PR isolation.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Integrate development host ASB runners with GitHub workflows",
-  "updated_at": "2026-09-07T07:46:38+00:00",
+  "updated_at": "2026-09-07T07:47:18+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-workflow-routing"
 }
 ---
@@ -90,3 +90,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T07:46:38+00:00: Recorded command exit 0; command argv SHA-256
   c179dda23fdb341195606062a5634507f2c89aeeca83f27965a074c9eb888983.
+
+- 2026-09-07T07:47:18+00:00: AR-0831 completed at independently approved product commit
+  f55f98cc79b75226a537600258dde5e57333bdeb and signed+DCO no-ff merge
+  a4782cdc467d38996473168cc5d2ccedfae75a25 via PR #33. Exact-head runs 34096407364 quality,
+  34096407412 Rust x86_64/aarch64, 34096407339 formal, and 34096407407 fault all passed; exact-main
+  runs 34096697490 quality, 34096697440 Rust x86_64/aarch64, 34096697517 formal, and 34096697415
+  fault all passed. Postmerge actionlint, zizmor, policy/DCO/signatures, complete negative fixtures,
+  runner scripts, Gitleaks and clean-tree checks passed; full state lint/type/schema/render/38 tests
+  with 96 percent branch-aware coverage and live doctor passed. Public PR workflows remain
+  disposable. The new trusted workflow was not dispatched; repeated runner qualification remains
+  AR-0832 and tokenless reboot lifecycle AR-0833.
