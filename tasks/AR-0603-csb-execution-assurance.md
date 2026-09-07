@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 111,
+  "task_revision": 112,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T10:02:16+00:00",
+  "updated_at": "2026-09-07T10:21:55+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
@@ -369,3 +369,6 @@ Implementation has not started. Read the linked plan before claiming.
   fixtures, platform, formal Loom/state/production traces, Gitleaks, scope and clean-tree gates
   green. Support remains Ubuntu 24.04 glibc x86_64 exact tools only; full floating CSB Python
   graph/generators/monitors/syzkaller and hostile same-UID ancestor replacement are unsupported.
+
+- 2026-09-07T10:21:55+00:00: Recorded command exit 0; command argv SHA-256
+  4d50dfdfad0f16ae90fba2b5adeebaf079eeb4c57a75aa40fe9d6a9e646e8310.
