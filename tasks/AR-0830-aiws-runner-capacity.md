@@ -11,7 +11,7 @@
   "id": "AR-0830",
   "next_action": "Obtain independent review of exact cdf18c6; live service identity, one-job ephemeral re-registration, protected canary and GitHub-side label proof remain gated on an authorized secret/admin boundary.",
   "observed_branch": "feature/development-host-runner-capacity",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "cdf18c6bf11b4f9cf36f3d5d20396b935001e176",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0830.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T05:59:55+00:00",
+  "updated_at": "2026-09-07T06:01:01+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
