@@ -16,9 +16,9 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34146252705 | `74d311ca7a4a` | push | Repository quality | in_progress:- |
-| 34146252697 | `74d311ca7a4a` | push | Rust verification | in_progress:- |
-| 34146252695 | `74d311ca7a4a` | push | Fault assurance | in_progress:- |
+| 34146252705 | `74d311ca7a4a` | push | Repository quality | completed:success |
+| 34146252697 | `74d311ca7a4a` | push | Rust verification | completed:success |
+| 34146252695 | `74d311ca7a4a` | push | Fault assurance | completed:success |
 | 34146252691 | `74d311ca7a4a` | push | Formal assurance | completed:success |
 | 34145938051 | `93c19625f910` | pull_request | Fault assurance | completed:success |
 | 34145937946 | `93c19625f910` | pull_request | Formal assurance | completed:success |
