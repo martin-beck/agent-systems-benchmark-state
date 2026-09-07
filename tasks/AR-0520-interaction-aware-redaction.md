@@ -12,16 +12,16 @@
   "next_action": "Make request-body redaction selectors interaction/method-aware so GET catalog entries can remain selector-free while POST bodies remain private and replayable.",
   "observed_branch": "feature/interaction-aware-redaction",
   "observed_dirty": 0,
-  "observed_head": "b61aaf58d9dc1355d3193fcbe5c6465342c19426",
+  "observed_head": "867861c95c192659102d07f0093a69b58d281513",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0520.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support per-interaction request redaction policies for mixed catalog and private requests.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "Interaction-aware request redaction",
-  "updated_at": "2026-09-07T20:51:37+00:00",
+  "updated_at": "2026-09-07T20:52:04+00:00",
   "worktree_key": "agent-systems-benchmark-interaction-aware-redaction"
 }
 ---
