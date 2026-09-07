@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remediate runner privacy leakage and protected-workflow guard gaps found during independent audit.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Remediate runner privacy and workflow guards",
-  "updated_at": "2026-09-07T08:05:14+00:00",
+  "updated_at": "2026-09-07T08:06:11+00:00",
   "worktree_key": "agent-systems-benchmark-runner-privacy-guard-remediation"
 }
 ---
@@ -121,3 +121,6 @@ Acceptance criteria:
   zizmor, policy, exact-range signature/DCO/Gitleaks/scope checks pass. Documentation explicitly
   states GitHub platform metadata may expose pseudonymous registration and machine names. Trusted
   workflow was not dispatched.
+
+- 2026-09-07T08:06:11+00:00: Recorded command exit 0; command argv SHA-256
+  2e7488baa26831949464f8c77e44b989fd4b42545c3615ad4c47b04144e7e723.
