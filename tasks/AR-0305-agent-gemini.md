@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned Gemini CLI through noninteractive JSON events.",
-  "task_revision": 111,
+  "task_revision": 112,
   "title": "Implement Gemini CLI client adapter",
-  "updated_at": "2026-09-07T00:54:27+00:00",
+  "updated_at": "2026-09-07T00:54:51+00:00",
   "worktree_key": "agent-systems-benchmark-agent-gemini"
 }
 ---
@@ -366,3 +366,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T00:54:27+00:00: Recorded command exit 0; command argv SHA-256
   9b42ec42a448773f5bfb541e6ece4f499440be476beb56bfff35cb2ba33b3fb6.
+
+- 2026-09-07T00:54:51+00:00: Latest strict focused rerun after unsupported-shell fixture
+  optimization passed: fmt check, clippy -D warnings, 8 boundary tests and 4 real pinned Gemini CLI
+  tests all green in 8.05 seconds. Unsupported run_shell_command produced no host side effect;
+  action max+1 remained proactively blocked before execution. No test processes or residual worktree
+  paths observed.
