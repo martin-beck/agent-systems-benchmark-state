@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**113 ARs tracked** across 4 active status categories.
+**113 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
-| **Planned** | Defined work awaiting promotion or dependencies | 65 |
+| **Planned** | Defined work awaiting promotion or dependencies | 64 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 41 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -88,7 +88,7 @@ flowchart LR
         AR_0506["AR-0506 - Done"]:::status_done
         AR_0507["AR-0507 - In progress"]:::status_in_progress
         AR_0508["AR-0508 - In progress"]:::status_in_progress
-        AR_0509["AR-0509 - Planned"]:::status_planned
+        AR_0509["AR-0509 - Open"]:::status_open
         AR_0510["AR-0510 - Planned"]:::status_planned
         AR_0511["AR-0511 - Planned"]:::status_planned
         AR_0512["AR-0512 - Planned"]:::status_planned
@@ -686,6 +686,12 @@ flowchart LR
 | P0 | [AR-0508](tasks/AR-0508-replay-aider.md): Qualify aider replay | quality_20260906 | Qualify replay conformance for aider. | Hold isolated signed Aider replay test a8ea226; after AR-0506 review/integration/release, rebase onto exact main, take shared Cargo/README/lock fence, compile and run malformed plus real loopback-only capture/replay/cancel gates. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0509](tasks/AR-0509-replay-codex.md): Qualify Codex replay | Unclaimed | Qualify replay conformance for Codex. | Prove credential-free record/replay conformance for Codex with network denial and malformed/tool/cancel negatives. |
+
 ### Blocked (4)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -695,11 +701,10 @@ flowchart LR
 | P1 | [AR-0703](tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Provide genuine disposable native hosts for required Debian and openEuler platform qualification. | Obtain explicit provider/account and cost authorization, least-privilege external credentials, quotas, and four genuine disposable Debian 13.6/openEuler 24.03 LTS-SP2 x86_64/aarch64 hosts; then implement reservation/provision/collect/destroy evidence without emulation. |
 | P1 | [AR-0803](tasks/AR-0803-frontend-control-api.md): Define the frontend control API | Unclaimed | Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary. | Await fresh independent immutable review of repaired exact cbb764c; publish only if all prior blockers and new concurrency/privacy semantics are approved. |
 
-### Planned (65)
+### Planned (64)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0509](tasks/AR-0509-replay-codex.md): Qualify Codex replay | Unclaimed | Qualify replay conformance for Codex. | Prove credential-free record/replay conformance for Codex with network denial and malformed/tool/cancel negatives. |
 | P0 | [AR-0510](tasks/AR-0510-replay-gemini.md): Qualify Gemini replay | Unclaimed | Qualify replay conformance for Gemini. | Prove credential-free record/replay conformance for Gemini with network denial and malformed/tool/cancel negatives. |
 | P0 | [AR-0511](tasks/AR-0511-replay-qwen.md): Qualify Qwen Code replay | Unclaimed | Qualify replay conformance for Qwen Code. | Prove credential-free record/replay conformance for Qwen Code with network denial and malformed/tool/cancel negatives. |
 | P0 | [AR-0512](tasks/AR-0512-replay-goose.md): Qualify goose replay | Unclaimed | Qualify replay conformance for goose. | Prove credential-free record/replay conformance for goose with network denial and malformed/tool/cancel negatives. |
