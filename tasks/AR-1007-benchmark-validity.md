@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track dataset provenance, contamination risk, grader validity and native portability per workload revision.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Maintain benchmark validity and portability registry",
-  "updated_at": "2026-09-07T23:37:16+00:00",
+  "updated_at": "2026-09-07T23:37:36+00:00",
   "worktree_key": "agent-systems-benchmark-benchmark-validity"
 }
 ---
@@ -43,3 +43,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T23:28:47+00:00: Recorded command exit 0; command argv SHA-256
   b3e29f2cbb6733a2838ea852d7ac6731d92ff49a5716b40ba590735d6a73ebae.
+
+- 2026-09-07T23:37:36+00:00: Changed conclusion: the initial isolated source patch was applied by
+  the workspace edit tool before the handoffctl wrapper instead of through the required wrapper.
+  Exact affected paths are crates/asb-workloads/Cargo.toml, src/lib.rs, src/validity.rs, and
+  examples/generate_validity_schema.rs; no build, Git, publication, network, or external effect
+  occurred. Preserve and audit these effects; all subsequent product/build/test/Git mutations use
+  handoffctl run.
