@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0307",
-  "next_action": "Complete isolated compilation/tests after AR-0304 transfers the additive asb-agents lib.rs export fence; then run pinned x86_64/aarch64 native journeys and full gates.",
+  "next_action": "Await explicit AR-0304 release transfer of the additive lib.rs/CI fence; then rebase onto exact current main, compile, run pinned x86_64/aarch64 native success/failure/cancellation journeys, and full gates.",
   "observed_branch": "feature/agent-goose",
   "observed_dirty": 4,
   "observed_head": "d384c4c54a4576dadaae3a542cfc09a5e339a4fe",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned AAIF goose in no-session structured mode.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Implement goose client adapter",
-  "updated_at": "2026-09-07T00:51:48+00:00",
+  "updated_at": "2026-09-07T00:52:34+00:00",
   "worktree_key": "agent-systems-benchmark-agent-goose"
 }
 ---
@@ -170,3 +170,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T00:51:48+00:00: Recorded command exit 0; command argv SHA-256
   754cd1fbc354cdc0635cb06b8c42af14814d882f199c07cf6b4515ad17c79ab9.
+
+- 2026-09-07T00:52:34+00:00: Changed conclusion from pinned native/source evidence: Goose v1.49.0
+  converts a real OpenAI HTTP 400 into a non-inference assistant diagnostic plus zero-token
+  complete, exits zero, and leaves stderr empty. Repaired isolated parser to recognize non-inference
+  assistant diagnostics as privacy-filtered Failed outcomes while preserving native exit evidence;
+  added unit and real HTTP 400 negatives and documentation. No shared lib.rs/Cargo/schema/workflow
+  path changed; compilation/native regression awaits the serialized fence.
