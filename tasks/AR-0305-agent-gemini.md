@@ -11,7 +11,7 @@
   "id": "AR-0305",
   "next_action": "Await independent immutable review of exact 662603b; publish only after approval, then require exact-head hosted CI.",
   "observed_branch": "feature/agent-gemini",
-  "observed_dirty": 3,
+  "observed_dirty": 4,
   "observed_head": "662603b38eeb595cf16414a2da76c5c78ca0b49f",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0305.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned Gemini CLI through noninteractive JSON events.",
-  "task_revision": 145,
+  "task_revision": 146,
   "title": "Implement Gemini CLI client adapter",
-  "updated_at": "2026-09-07T01:34:54+00:00",
+  "updated_at": "2026-09-07T01:35:16+00:00",
   "worktree_key": "agent-systems-benchmark-agent-gemini"
 }
 ---
