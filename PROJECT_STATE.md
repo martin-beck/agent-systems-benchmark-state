@@ -10,15 +10,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #30 | `feature/reliability-fairness@eb28ca7aeae5` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS: | Report repeated-attempt reliability and fairness |
+| #30 | `feature/reliability-fairness@eb28ca7aeae5` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Report repeated-attempt reliability and fairness |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 34081912577 | `eb28ca7aeae5` | pull_request | Formal assurance | completed:success |
-| 34081912503 | `eb28ca7aeae5` | pull_request | Repository quality | in_progress:- |
-| 34081912485 | `eb28ca7aeae5` | pull_request | Fault assurance | in_progress:- |
+| 34081912503 | `eb28ca7aeae5` | pull_request | Repository quality | completed:success |
+| 34081912485 | `eb28ca7aeae5` | pull_request | Fault assurance | completed:success |
 | 34081912453 | `eb28ca7aeae5` | pull_request | Rust verification | in_progress:- |
 | 34078911385 | `4a59593c0c55` | push | Formal assurance | completed:success |
 | 34078911371 | `4a59593c0c55` | push | Fault assurance | completed:success |
