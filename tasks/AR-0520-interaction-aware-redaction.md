@@ -2,7 +2,7 @@
 {
   "branch": "feature/interaction-aware-redaction",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T23:07:49+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0502",
     "AR-0503",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/interaction-aware-redaction",
   "observed_dirty": 0,
   "observed_head": "867861c95c192659102d07f0093a69b58d281513",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0520.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Support per-interaction request redaction policies for mixed catalog and private requests.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Interaction-aware request redaction",
-  "updated_at": "2026-09-07T21:13:17+00:00",
+  "updated_at": "2026-09-07T21:13:34+00:00",
   "worktree_key": "agent-systems-benchmark-interaction-aware-redaction"
 }
 ---
@@ -244,3 +244,12 @@ Repair the cassette-global request-body redaction limitation exposed by Goose: c
 
 - 2026-09-07T21:13:17+00:00: Recorded command exit 0; command argv SHA-256
   782b8c78526618a85bf4a58d952433986c8158d592bd71a40137df8fe1355d83.
+
+- 2026-09-07T21:13:34+00:00: Released after independent approval and integration of exact signed+DCO
+  no-ff merge 5a819633552f5d59885bc23c5e5127b1f131c102 (reviewed feature
+  867861c95c192659102d07f0093a69b58d281513; tree ea068837cd8dbcf763f0f00a911fd44d0b987015) via PR
+  #52. Exact-main hosted CI completed success: quality 34162048411, Rust x86_64/aarch64 34162048440,
+  fault 34162048426, formal 34162048511. Local postmerge focused replay and formal tests,
+  signature/DCO/tree checks passed. Full state validation passed 38 tests with 96% branch coverage,
+  schema/render checks, and live doctor. AR-0512 may now rerun preserved Goose mixed GET/POST
+  acceptance.
