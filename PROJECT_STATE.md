@@ -11,12 +11,16 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #31 | `feature/native-platforms@bdaf9c108226` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #45 | `feature/replay-codex@d086fec11f59` | `main` | CLEAN | - | test(replay): qualify Codex conformance |
+| #45 | `feature/replay-codex@d086fec11f59` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | test(replay): qualify Codex conformance |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34142644831 | `d086fec11f59` | pull_request | Repository quality | in_progress:- |
+| 34142644656 | `d086fec11f59` | pull_request | Formal assurance | queued:- |
+| 34142644602 | `d086fec11f59` | pull_request | Fault assurance | in_progress:- |
+| 34142644584 | `d086fec11f59` | pull_request | Rust verification | in_progress:- |
 | 34139759452 | `ab5d6c91c99d` | push | Repository quality | completed:success |
 | 34139759342 | `ab5d6c91c99d` | push | Formal assurance | completed:success |
 | 34139759238 | `ab5d6c91c99d` | push | Fault assurance | completed:success |
@@ -25,7 +29,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34138388551 | `d7492ef5e9ad` | pull_request | Rust verification | completed:success |
 | 34138388548 | `d7492ef5e9ad` | pull_request | Repository quality | completed:success |
 | 34138388433 | `d7492ef5e9ad` | pull_request | Fault assurance | completed:success |
-| 34137786389 | `e8966b2a5453` | push | Repository quality | completed:success |
-| 34137786310 | `e8966b2a5453` | push | Rust verification | completed:success |
-| 34137786261 | `e8966b2a5453` | push | Fault assurance | completed:success |
-| 34137786251 | `e8966b2a5453` | push | Formal assurance | completed:success |
