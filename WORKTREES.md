@@ -35,7 +35,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `51daeb8608e5` | 0 | behind 131, ahead 0 |
 | `agent-systems-benchmark-provider-profile-contract` | `feature/provider-profile-contract` | `2870b68d0ca0` | 0 | behind 67, ahead 0 |
 | `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `748537c25e3a` | 0 | behind 148, ahead 0 |
-| `agent-systems-benchmark-redacted-request-pointer-replay` | `feature/redacted-request-pointer-replay` | `52e2e71efa5a` | 0 | behind 3, ahead 1 |
+| `agent-systems-benchmark-redacted-request-pointer-replay` | `DETACHED` | `d7492ef5e9ad` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-reliability-fairness` | `feature/reliability-fairness` | `eb28ca7aeae5` | 0 | behind 45, ahead 0 |
 | `agent-systems-benchmark-replay-aider` | `feature/replay-aider` | `ec0a2930690c` | 0 | behind 7, ahead 0 |
 | `agent-systems-benchmark-replay-cassettes` | `feature/replay-cassettes` | `cd88f5703fb3` | 0 | behind 127, ahead 0 |
