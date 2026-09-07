@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0305",
-  "next_action": "Complete negative matrix, provenance fixture documentation and isolated full gates; await shared registration fence.",
+  "next_action": "Await serialized lib.rs registration handoff, then rebase once onto stabilized exact main and rerun registered-module full gates.",
   "observed_branch": "feature/agent-gemini",
   "observed_dirty": 4,
   "observed_head": "311c128649610df258b2961c9ca623fb8f258307",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned Gemini CLI through noninteractive JSON events.",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "Implement Gemini CLI client adapter",
-  "updated_at": "2026-09-07T00:43:45+00:00",
+  "updated_at": "2026-09-07T00:44:26+00:00",
   "worktree_key": "agent-systems-benchmark-agent-gemini"
 }
 ---
@@ -308,3 +308,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T00:43:45+00:00: Recorded command exit 0; command argv SHA-256
   e30e49f599cc58202ab5bdc68a8e30ad6ac5b24452a17bab96b71e6fbb8cc92a.
+
+- 2026-09-07T00:44:26+00:00: Focused state now has 7 boundary tests and 3 real pinned CLI tests
+  green; native suite passed three consecutive repetitions with zero /tmp/worktree residuals or
+  processes. Boundary+real coverage was 91.79% lines before the latest bundle-tree negative. Full
+  fmt/clippy/workspace tests/rustdoc/release passed; deny/audit/actionlint/zizmor/failure
+  fixtures/platform validation passed (cargo-deny emitted only pre-existing unmatched allow-list
+  warnings). One earlier combined focused command lacked set -e: boundary compilation failed on a
+  real-only cfg(test) dead-code warning while the later real suite passed, causing misleading
+  overall exit 0; the accessor is now narrowly annotated and both suites subsequently pass under set
+  -e. Complete 446-file npm bundle tree digest is now verified before spawn with no-follow file
+  opens; additions and symlinks fail before execution. Exact artifact directory remains an immutable
+  coordinator-owned environmental assumption because same-user post-verification replacement is not
+  fenced. Local origin/main is 2579362 while candidate base remains 311c128; no rebase performed.

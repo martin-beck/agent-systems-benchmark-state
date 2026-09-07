@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0305](tasks/AR-0305-agent-gemini.md): Implement Gemini CLI client adapter | Run pinned Gemini CLI through noninteractive JSON events. | Complete negative matrix, provenance fixture documentation and isolated full gates; await shared registration fence. | contracts-20260906 |
+| P1 | [AR-0305](tasks/AR-0305-agent-gemini.md): Implement Gemini CLI client adapter | Run pinned Gemini CLI through noninteractive JSON events. | Await serialized lib.rs registration handoff, then rebase once onto stabilized exact main and rerun registered-module full gates. | contracts-20260906 |
 | P1 | [AR-0306](tasks/AR-0306-agent-qwen-code.md): Implement Qwen Code client adapter | Run pinned Qwen Code through isolated headless stream-JSON. | Finish isolated Qwen tests, then acquire the serialized module-registration fence after earlier adapter integration. | root-coordination-20260906 |
 | P1 | [AR-0307](tasks/AR-0307-agent-goose.md): Implement goose client adapter | Run pinned AAIF goose in no-session structured mode. | Complete isolated compilation/tests after AR-0304 transfers the additive asb-agents lib.rs export fence; then run pinned x86_64/aarch64 native journeys and full gates. | quality-20260906 |
 
