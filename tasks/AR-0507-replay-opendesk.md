@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0507",
-  "next_action": "Implement and test the authorized deterministic SHA-256 route run root in OpenDesk-owned paths; shared replay header-token and SSE-without-stream repairs remain serialized blockers.",
+  "next_action": "Await serialized shared replay compatibility repair for legal underscore headers and absent-stream SSE; retain cleanly tested adapter route-root fix and isolated real conformance test.",
   "observed_branch": "feature/replay-opendesk",
   "observed_dirty": 2,
   "observed_head": "a0d80e48deb8750543606c2b577e1a52df26fc4c",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenDesk.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Qualify OpenDesk replay",
-  "updated_at": "2026-09-07T13:14:31+00:00",
+  "updated_at": "2026-09-07T13:14:59+00:00",
   "worktree_key": "agent-systems-benchmark-replay-opendesk"
 }
 ---
@@ -200,3 +200,18 @@ Qualify OpenDesk record/replay, network denial, parity, retries, tool calls, can
 
 - 2026-09-07T13:14:31+00:00: Recorded command exit 101; command argv SHA-256
   3211cbb17659455b743594d7b488023c32bf8ad124e43fb5b7a2d3f51490bd3d.
+
+- 2026-09-07T13:14:59+00:00: Authorized OpenDesk adapter repair now derives its private run
+  directory as attempt- plus a domain-separated SHA-256 over fixed-size SHA-256 hashes of session
+  and attempt IDs. It leaks neither public ID, is platform-independent, stable for the same route,
+  distinct for different attempts, and uses exclusive DirBuilder creation so stale or concurrently
+  duplicated route ownership fails with AlreadyExists; successful cancellation cleanup permits later
+  reuse. Focused 10/10 OpenDesk unit tests pass, including stable/opaque/distinct roots, stale
+  rejection, concurrent duplicate fencing, cancellation cleanup, and reuse. A first combined
+  patch-plus-format wrapper applied the intended patch but then failed because cargo was not on that
+  bash PATH; explicit pinned cargo formatting then passed. The corrected real 0.3.5 loopback-only
+  capture now proves successive attempts have byte-identical request bodies and stable nonvolatile
+  headers after only the temporary diagnostic span_id spelling normalization;
+  StrictReplayService::new then fails exactly InvalidCassette because the request omits stream while
+  the recorded wire response is SSE events. No shared runtime/schema was changed and no support
+  claim is made.
