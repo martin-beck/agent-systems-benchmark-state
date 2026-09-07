@@ -2,7 +2,7 @@
 {
   "branch": "feature/gemini-thinking-config-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T19:30:49+00:00",
+  "claim_expires": "2026-09-07T19:42:49+00:00",
   "depends_on": [
     "AR-0518"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Correct Gemini thinkingConfig strict-replay contract from pinned capture evidence.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Gemini thinkingConfig contract repair",
-  "updated_at": "2026-09-07T17:42:47+00:00",
+  "updated_at": "2026-09-07T17:42:49+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-thinking-config-contract"
 }
 ---
@@ -122,3 +122,5 @@ Repair the merged Gemini dialect using privacy-safe pinned evidence: `thinkingCo
   asb-replay artifacts and rebuilding made Gemini/schema/strict tests green. A direct diagnostic
   rerun outside the wrapper observed the same stale binary but produced no source effect; all
   corrective build actions used the wrapper.
+
+- 2026-09-07T17:42:49+00:00: Heartbeat by replay_20260906.
