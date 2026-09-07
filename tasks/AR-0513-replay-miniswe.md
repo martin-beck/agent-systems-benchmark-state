@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0513",
-  "next_action": "Replace the compile-clean replay scaffold's Aider response assumptions with mini-SWE 2.4.6 exact buffered tool-call/submission exchanges from the pinned real fixture; then run credential-free loopback record/replay, retry classification, cancellation, network denial, parity, and malformed/tool negatives.",
+  "next_action": "Rerun the pinned 2.4.6 loopback record/replay fixture after aligning the evidence-backed Usage capability; continue through strict replay parity, cleanup, cancellation, and malformed/tool negatives without shared edits.",
   "observed_branch": "feature/replay-miniswe",
   "observed_dirty": 1,
   "observed_head": "076e9c44810903fb42669642b5820df2f1672136",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for mini-SWE-agent.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Qualify mini-SWE replay",
-  "updated_at": "2026-09-07T19:47:53+00:00",
+  "updated_at": "2026-09-07T19:48:14+00:00",
   "worktree_key": "agent-systems-benchmark-replay-miniswe"
 }
 ---
@@ -82,3 +82,11 @@ Qualify mini-SWE-agent record/replay, network denial, parity, retries, tool call
 
 - 2026-09-07T19:47:53+00:00: Recorded command exit 0; command argv SHA-256
   4e5c4927dabd1cdfcbd2c35aaac9644f4d66643fe23cf22b94ea98ce65a03cb9.
+
+- 2026-09-07T19:48:14+00:00: Pinned mini-SWE-agent 2.4.6 credential-free loopback capture reached a
+  completed two-request buffered tool-call and submit trajectory, with original.bug-fix workspace
+  grading passing before the next assertion. Exact observed adapter manifest capabilities are
+  Cancellation plus Usage, not the scaffold's inherited Cancellation-only assumption. Retry
+  observation is explicitly Unavailable(UnstructuredBatchDiagnostics); this run did not claim
+  automatic retry evidence. Corrected only the isolated fixture expectation; next action is rerun
+  the unchanged native capture/replay through parity, cleanup, and cancellation.
