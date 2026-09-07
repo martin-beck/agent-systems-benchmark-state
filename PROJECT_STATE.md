@@ -10,16 +10,16 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #31 | `feature/native-platforms@bdaf9c108226` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
+| #31 | `feature/native-platforms@bdaf9c108226` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34139759452 | `ab5d6c91c99d` | push | Repository quality | queued:- |
-| 34139759342 | `ab5d6c91c99d` | push | Formal assurance | queued:- |
-| 34139759238 | `ab5d6c91c99d` | push | Fault assurance | queued:- |
-| 34139759198 | `ab5d6c91c99d` | push | Rust verification | queued:- |
+| 34139759452 | `ab5d6c91c99d` | push | Repository quality | completed:success |
+| 34139759342 | `ab5d6c91c99d` | push | Formal assurance | completed:success |
+| 34139759238 | `ab5d6c91c99d` | push | Fault assurance | completed:success |
+| 34139759198 | `ab5d6c91c99d` | push | Rust verification | completed:success |
 | 34138388614 | `d7492ef5e9ad` | pull_request | Formal assurance | completed:success |
 | 34138388551 | `d7492ef5e9ad` | pull_request | Rust verification | completed:success |
 | 34138388548 | `d7492ef5e9ad` | pull_request | Repository quality | completed:success |
