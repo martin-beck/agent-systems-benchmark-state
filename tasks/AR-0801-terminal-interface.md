@@ -9,7 +9,7 @@
     "AR-0204"
   ],
   "id": "AR-0801",
-  "next_action": "Finish exact-tree validation of the repaired successor, create a new signed DCO immutable candidate, and request fresh independent review.",
+  "next_action": "Hold immutable signed+DCO candidate 7c2d19ca for fresh independent review; publish exact head only after approval, then require exact-head CI before integration.",
   "observed_branch": "feature/terminal-interface",
   "observed_dirty": 0,
   "observed_head": "7c2d19ca9d925789041fc8262135075de61b76df",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide doctor, plan, run, sweep, compare and report with stable JSON output.",
-  "task_revision": 140,
+  "task_revision": 141,
   "title": "Implement terminal and automation interfaces",
-  "updated_at": "2026-09-07T02:23:38+00:00",
+  "updated_at": "2026-09-07T02:23:40+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-interface"
 }
 ---
@@ -436,3 +436,16 @@ Implementation has not started. Read the linked plan before claiming.
   f51a37e07ef0525e98600dfd76d787d17248768cabcfcfc09d374dc49acc9e30.
 
 - 2026-09-07T02:23:38+00:00: Heartbeat by root-coordination-20260906.
+
+- 2026-09-07T02:23:40+00:00: Repaired immutable candidate 7c2d19ca9d925789041fc8262135075de61b76df
+  (tree d8bd454a3cb0e3d72d0051584b25e06728fc871c), exact parent e85548d, is clean, SSH-signed and
+  DCO-correct. Six-path scope adds CLI library/e2e plus minimal scheduler context API. Exact-tree
+  full fmt/clippy/workspace tests/docs/release, cargo-deny, live cargo-audit (138 dependencies),
+  repository policy/DCO/signature, actionlint, zizmor, Gitleaks (82 commits), all negative gate
+  fixtures, coverage floors, Loom/finite state/production trace tests, all five Kani harnesses, and
+  deliberate Kani counterexample rejection pass. Workspace coverage exceeds the 90% floor and
+  core/protocol/replay meet critical floors; CLI line coverage is 88.92% and is not a declared
+  critical crate. A 50-iteration concurrent mixed-phase stress loop passes. One first coverage
+  attempt failed solely from an incorrect local llvm-profdata path; corrected pinned-path run
+  passed. Independent review of superseded 3374572 blockers drove all repairs; fresh review of
+  7c2d19ca is required.
