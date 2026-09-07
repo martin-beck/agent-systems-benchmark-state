@@ -10,13 +10,16 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #31 | `feature/native-platforms@bdaf9c108226` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #45 | `feature/replay-codex@d086fec11f59` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(replay): qualify Codex conformance |
+| #31 | `feature/native-platforms@bdaf9c108226` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34142961362 | `b56768a550fb` | push | Formal assurance | in_progress:- |
+| 34142961325 | `b56768a550fb` | push | Rust verification | in_progress:- |
+| 34142961288 | `b56768a550fb` | push | Fault assurance | in_progress:- |
+| 34142961259 | `b56768a550fb` | push | Repository quality | in_progress:- |
 | 34142644831 | `d086fec11f59` | pull_request | Repository quality | completed:success |
 | 34142644656 | `d086fec11f59` | pull_request | Formal assurance | completed:success |
 | 34142644602 | `d086fec11f59` | pull_request | Fault assurance | completed:success |
@@ -25,7 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34139759342 | `ab5d6c91c99d` | push | Formal assurance | completed:success |
 | 34139759238 | `ab5d6c91c99d` | push | Fault assurance | completed:success |
 | 34139759198 | `ab5d6c91c99d` | push | Rust verification | completed:success |
-| 34138388614 | `d7492ef5e9ad` | pull_request | Formal assurance | completed:success |
-| 34138388551 | `d7492ef5e9ad` | pull_request | Rust verification | completed:success |
-| 34138388548 | `d7492ef5e9ad` | pull_request | Repository quality | completed:success |
-| 34138388433 | `d7492ef5e9ad` | pull_request | Fault assurance | completed:success |
