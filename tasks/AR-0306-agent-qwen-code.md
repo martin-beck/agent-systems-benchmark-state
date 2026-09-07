@@ -11,7 +11,7 @@
   "id": "AR-0306",
   "next_action": "Finish isolated Qwen tests, then acquire the serialized module-registration fence after earlier adapter integration.",
   "observed_branch": "feature/agent-qwen-code",
-  "observed_dirty": 4,
+  "observed_dirty": 5,
   "observed_head": "2579362d6936b25e6008583f7bd485e5498a4e3f",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0306.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned Qwen Code through isolated headless stream-JSON.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Implement Qwen Code client adapter",
-  "updated_at": "2026-09-07T00:44:45+00:00",
+  "updated_at": "2026-09-07T00:44:56+00:00",
   "worktree_key": "agent-systems-benchmark-agent-qwen-code"
 }
 ---
