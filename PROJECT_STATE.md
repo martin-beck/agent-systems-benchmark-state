@@ -18,8 +18,8 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 34121326944 | `ad0cdfc35d14` | push | Repository quality | in_progress:- |
 | 34121326929 | `ad0cdfc35d14` | push | Rust verification | in_progress:- |
-| 34121326883 | `ad0cdfc35d14` | push | Formal assurance | in_progress:- |
-| 34121326875 | `ad0cdfc35d14` | push | Fault assurance | in_progress:- |
+| 34121326883 | `ad0cdfc35d14` | push | Formal assurance | completed:success |
+| 34121326875 | `ad0cdfc35d14` | push | Fault assurance | completed:success |
 | 34120354529 | `7d98653e7e7f` | pull_request | Fault assurance | completed:success |
 | 34120354506 | `7d98653e7e7f` | pull_request | Repository quality | completed:success |
 | 34120354465 | `7d98653e7e7f` | pull_request | Formal assurance | completed:success |
