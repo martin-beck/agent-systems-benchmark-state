@@ -11,6 +11,12 @@ Never edit this file directly.
 | P1 | [AR-0707](tasks/AR-0707-emulated-aarch64-portability.md): Qualify emulated aarch64 portability | Add explicit emulated-aarch64 portability qualification without claiming native support. | Provide a reproducible x86_64-hosted aarch64 VM/emulation lane for userspace portability and negative qualification only. | quality_20260906 |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. | root-coordination-20260906 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0905](tasks/AR-0905-recovery-models.md): Model execution recovery and worker fencing | Apply bounded formal models to run lifecycle, leases, recovery, replay cursors and uncertain external effects. | Translate Agent Relay's TLA+/Alloy/executable-model pattern to ASB run and replay domains. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -66,7 +72,6 @@ Never edit this file directly.
 | P1 | [AR-0846](tasks/AR-0846-artifact-retention-cleanup.md): Add linked artifact retention and cleanup | Manage ASB GitHub artifact retention and cleanup without deleting required evidence. | Implement dry-run inventory and explicitly authorized bounded cleanup for linked GitHub artifacts. | - |
 | P1 | [AR-0848](tasks/AR-0848-native-x86-capacity.md): Qualify native x86 capacity | Qualify authorized disposable native x86_64 capacity on a development host. | Use the authorized development-host native x86_64 host as a disposable qualification cell; prove identity, isolation, cleanup, provenance, cost bounds, and evidence integrity without making aarch64 claims. | - |
 | P1 | [AR-0904](tasks/AR-0904-contract-consistency.md): Machine-check protocol and artifact consistency | Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree. | Define canonical sources and generated/artifact-diff gates before extension implementations fan out. | - |
-| P1 | [AR-0905](tasks/AR-0905-recovery-models.md): Model execution recovery and worker fencing | Apply bounded formal models to run lifecycle, leases, recovery, replay cursors and uncertain external effects. | Translate Agent Relay's TLA+/Alloy/executable-model pattern to ASB run and replay domains. | - |
 | P1 | [AR-1002](tasks/AR-1002-verifier-integrity.md): Protect verifiers and support offline rescoring | Separate immutable graders from agent work and version scoring independently of execution. | Design the immutable observation and score-revision contract using Inspect and Harbor concepts. | - |
 | P1 | [AR-1003](tasks/AR-1003-execution-budgets.md): Enforce cost token and action budgets | Bound and report wall time, actions, tokens and monetary cost without treating unavailable telemetry as zero. | Specify budget capabilities and normalize provider usage with explicit uncertainty. | - |
 | P1 | [AR-1007](tasks/AR-1007-benchmark-validity.md): Maintain benchmark validity and portability registry | Track dataset provenance, contamination risk, grader validity and native portability per workload revision. | Implement registry schema and validation for built-in and imported workloads. | - |

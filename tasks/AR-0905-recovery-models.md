@@ -15,11 +15,11 @@
   "plan": "../plans/AR-0905.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Apply bounded formal models to run lifecycle, leases, recovery, replay cursors and uncertain external effects.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Model execution recovery and worker fencing",
-  "updated_at": "2026-09-06T15:09:13+00:00",
+  "updated_at": "2026-09-07T22:14:48+00:00",
   "worktree_key": "agent-systems-benchmark-recovery-models"
 }
 ---
@@ -28,3 +28,9 @@
 Apply bounded formal models to run lifecycle, leases, recovery, replay cursors and uncertain external effects.
 
 Implementation has not started. Read the linked plan before claiming.
+
+- 2026-09-07T22:14:48+00:00: Dependencies AR-0102, AR-0104, AR-0204 and AR-0503 are durably done.
+  Selected highest-priority ready compatible task after excluding native-capacity work overlapping
+  active AR-0707, AR-0832 with its plan-level blocked AR-0703 dependency, and schema/contract work
+  overlapping active AR-0840. Declared recovery-model branch/worktree and remote ref are absent;
+  docs/formal verifier/trace scope is disjoint from active AR-0505 replay integration.
