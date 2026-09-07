@@ -8,16 +8,16 @@
     "AR-0830"
   ],
   "id": "AR-0834",
-  "next_action": "After coordinator shortens or clears AR-0830 done-task next_action, rebase e7cf1f2f once onto exact state main with re-signing, rerun schema/render/live doctor and complete quality gates, then request immutable review.",
+  "next_action": "No further action; repair is integrated and verified.",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0834.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the coordination-tool Ruff regression discovered during AR-0830 reconciliation.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Repair handoffctl lint regression",
-  "updated_at": "2026-09-07T07:24:18+00:00",
+  "updated_at": "2026-09-07T07:25:52+00:00",
   "worktree_key": "agent-systems-benchmark-coordination-lint-regression"
 }
 ---
@@ -84,3 +84,8 @@ Acceptance criteria:
 
 - 2026-09-07T07:24:18+00:00: Recorded command exit 0; command argv SHA-256
   86f3a2e223de601d1b2312e591e2304759668abf60b33d82c5668d1a4fc5f470.
+
+- 2026-09-07T07:25:52+00:00: Post-merge exact state main fe375e667c7644c8347d2cb464803d23423930a2
+  passed Ruff format/check, mypy, 38 tests, 96% branch-aware coverage, schema/render validation and
+  live doctor. Exact-main hosted coordination run 34095303503 passed. PR #5 merged reviewed
+  candidate 746042a0 through signed+DCO no-ff merge ba0bbad5.
