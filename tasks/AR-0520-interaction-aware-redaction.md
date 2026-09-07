@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support per-interaction request redaction policies for mixed catalog and private requests.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Interaction-aware request redaction",
-  "updated_at": "2026-09-07T20:57:02+00:00",
+  "updated_at": "2026-09-07T21:03:49+00:00",
   "worktree_key": "agent-systems-benchmark-interaction-aware-redaction"
 }
 ---
@@ -229,3 +229,6 @@ Repair the cassette-global request-body redaction limitation exposed by Goose: c
   coverage is 94.74 percent and asb-replay 97.63 percent. Initial exact-policy command used
   positional DCO arguments and stopped at argparse; corrected owner-wrapped invocation passed
   without product mutation.
+
+- 2026-09-07T21:03:49+00:00: Recorded command exit 0; command argv SHA-256
+  9d16ae9898536a7ba2761a4876a1581c16f771fe929f3f968ed16a5665105050.
