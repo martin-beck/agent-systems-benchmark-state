@@ -9,7 +9,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-agent-codex` | `feature/agent-codex` | `eb03bd9d9ed5` | 0 | behind 12, ahead 0 |
 | `agent-systems-benchmark-agent-gemini` | `feature/agent-gemini` | `d381d340163e` | 0 | behind 8, ahead 0 |
 | `agent-systems-benchmark-agent-goose` | `feature/agent-goose` | `95b3ef8c7830` | 0 | behind 4, ahead 0 |
-| `agent-systems-benchmark-agent-mini-swe` | `feature/agent-mini-swe` | `2579362d6936` | 3 | behind 11, ahead 0 |
+| `agent-systems-benchmark-agent-mini-swe` | `feature/agent-mini-swe` | `61b5dd33ba04` | 3 | behind 0, ahead 0 |
 | changed files | - | - | - | `crates/asb-agents/MINI_SWE.md`, `crates/asb-agents/src/mini_swe.rs`, `crates/asb-agents/tests/real_mini_swe.rs` |
 | `agent-systems-benchmark-agent-opencode` | `feature/agent-opencode` | `dfb0d548bf75` | 0 | behind 41, ahead 0 |
 | `agent-systems-benchmark-agent-opendesk` | `feature/agent-opendesk` | `8eb99d3c7235` | 0 | behind 34, ahead 0 |

@@ -12,16 +12,16 @@
   "next_action": "Await serialized additive registration fence; then rebase the three owned mini-SWE paths onto exact current main, add only module/test registration, rerun exact-tree full gates, and produce a signed DCO candidate for immutable review.",
   "observed_branch": "feature/agent-mini-swe",
   "observed_dirty": 3,
-  "observed_head": "2579362d6936b25e6008583f7bd485e5498a4e3f",
+  "observed_head": "61b5dd33ba04295a476e444d8bfd338ab972507a",
   "owner": "replay-20260906",
   "plan": "../plans/AR-0308.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned mini-SWE-agent as a bounded batch engineering agent.",
-  "task_revision": 87,
+  "task_revision": 88,
   "title": "Implement mini-SWE-agent client adapter",
-  "updated_at": "2026-09-07T03:12:20+00:00",
+  "updated_at": "2026-09-07T03:12:34+00:00",
   "worktree_key": "agent-systems-benchmark-agent-mini-swe"
 }
 ---
