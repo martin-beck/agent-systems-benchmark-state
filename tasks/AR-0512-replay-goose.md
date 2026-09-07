@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for goose.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Qualify goose replay",
-  "updated_at": "2026-09-07T21:15:08+00:00",
+  "updated_at": "2026-09-07T21:15:10+00:00",
   "worktree_key": "agent-systems-benchmark-replay-goose"
 }
 ---
@@ -82,3 +82,6 @@ Qualify goose record/replay, network denial, parity, retries, tool calls, cancel
   native discovery passed in 16.42s with one 429 retry, edit/grade/replay/cancel path.
 
 - 2026-09-07T19:39:29+00:00: Heartbeat by contracts_20260906.
+
+- 2026-09-07T21:15:10+00:00: Recorded command exit 0; command argv SHA-256
+  b319998e7aebbea521a738b1b1ac12ca60518b3437e4f3c8c48933062a7c5c55.
