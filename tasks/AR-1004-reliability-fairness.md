@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Report repeated-attempt reliability and prevent aggregate results from hiding starvation or hard strata.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Measure reliability and mixed-workload fairness",
-  "updated_at": "2026-09-07T04:10:08+00:00",
+  "updated_at": "2026-09-07T04:11:17+00:00",
   "worktree_key": "agent-systems-benchmark-reliability-fairness"
 }
 ---
@@ -242,3 +242,6 @@ Implementation has not started. Read the linked plan before claiming.
   mutation sentinels green. Run 34081912577: Kani and Loom/state models x86_64/aarch64 green. Run
   34081912503: policy/coverage/supply-chain green. Run 34081912453: Rust verification x86_64/aarch64
   green. Worktree remains clean; hold for coordinator-serialized integration.
+
+- 2026-09-07T04:11:17+00:00: Recorded command exit 1; command argv SHA-256
+  7b9a354a762217536de90f9be55aa2a450569f6a63f5b9ecfaee64c79dc8589c.
