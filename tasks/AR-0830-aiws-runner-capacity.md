@@ -2,7 +2,7 @@
 {
   "branch": "feature/development-host-runner-capacity",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-07T07:48:39+00:00",
   "depends_on": [
     "AR-0002",
     "AR-0003",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/development-host-runner-capacity",
   "observed_dirty": 2,
   "observed_head": "814397f8f74971589aa02b13da12485169db3e2e",
-  "owner": "",
+  "owner": "contracts-20260906",
   "plan": "../plans/AR-0830.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T05:48:12+00:00",
+  "updated_at": "2026-09-07T05:48:39+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
@@ -71,3 +71,5 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-07T05:48:12+00:00: Lease expired at 06:11Z; coordinator verified no active implementation
   process, no dirty worktree, no product checkpoint, and preserved inventory/plan state before
   reopening.
+
+- 2026-09-07T05:48:39+00:00: Claimed by contracts-20260906.
