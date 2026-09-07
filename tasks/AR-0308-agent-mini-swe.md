@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0308",
-  "next_action": "Publish exact rebased head 3cf9a53 after remote/main recheck; require exact-head hosted Rust, quality, and formal CI before signed integration.",
+  "next_action": "Run final state validation/live doctor and release done after confirming clean synchronized product/state refs at signed merge a0d80e4.",
   "observed_branch": "feature/agent-mini-swe",
   "observed_dirty": 0,
   "observed_head": "3cf9a53fce709562119ec2ae2f55c304be0840e9",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned mini-SWE-agent as a bounded batch engineering agent.",
-  "task_revision": 278,
+  "task_revision": 279,
   "title": "Implement mini-SWE-agent client adapter",
-  "updated_at": "2026-09-07T12:38:58+00:00",
+  "updated_at": "2026-09-07T12:42:48+00:00",
   "worktree_key": "agent-systems-benchmark-agent-mini-swe"
 }
 ---
@@ -948,3 +948,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T12:38:58+00:00: Recorded command exit 0; command argv SHA-256
   43f5779f7e1dae2d686179e9d608df839352852b309cedac75b638ae98442677.
+
+- 2026-09-07T12:42:48+00:00: PR #39 exact head 3cf9a53fce709562119ec2ae2f55c304be0840e9 was
+  mergeable on exact base ad0cdfc and all exact-head CI succeeded: Rust x86_64+aarch64 34122642569,
+  repository quality/supply 34122642558, formal/Kani/Loom 34122642598, and retained
+  fault/fuzz/mutation 34122642542. Authorized integration created SSH-signed matching-DCO no-ff
+  merge a0d80e48deb8750543606c2b577e1a52df26fc4c with exact parents ad0cdfc and 3cf9a53 and
+  identical candidate tree 35dc5e8; origin/main and PR #39 merge identity match. Fresh exact-main CI
+  all succeeded: Rust x86_64+aarch64 34123003973, quality/supply 34123003969, formal 34123004119,
+  and fault assurance 34123004066.

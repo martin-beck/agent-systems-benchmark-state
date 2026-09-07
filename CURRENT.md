@@ -9,7 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0506](tasks/AR-0506-replay-opencode.md): Qualify OpenCode replay | Qualify replay conformance for OpenCode. | Prove credential-free record/replay conformance for the OpenCode adapter with network denial and malformed/tool/cancel negatives. | contracts-20260906 |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. | root-coordination-20260906 |
-| P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Publish exact rebased head 3cf9a53 after remote/main recheck; require exact-head hosted Rust, quality, and formal CI before signed integration. | replay-20260906 |
+| P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Run final state validation/live doctor and release done after confirming clean synchronized product/state refs at signed merge a0d80e4. | replay-20260906 |
 
 ## Blocked
 
