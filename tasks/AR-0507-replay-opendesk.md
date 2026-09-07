@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenDesk.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Qualify OpenDesk replay",
-  "updated_at": "2026-09-07T12:59:39+00:00",
+  "updated_at": "2026-09-07T13:00:00+00:00",
   "worktree_key": "agent-systems-benchmark-replay-opendesk"
 }
 ---
@@ -101,3 +101,6 @@ Qualify OpenDesk record/replay, network denial, parity, retries, tool calls, can
   remain untouched pending coordinator authorization. Initial unshare --mount-proc attempt failed
   with EPERM before test execution; corrected user+network namespace enabled only loopback and
   exposed the contract failure.
+
+- 2026-09-07T13:00:00+00:00: Recorded command exit 0; command argv SHA-256
+  06fce4d7dd4c1e35cb1fabe7c80d5d63299415cde979422e6592d9a0e72cc6ba.
