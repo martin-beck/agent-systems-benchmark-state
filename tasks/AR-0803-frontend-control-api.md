@@ -12,7 +12,7 @@
   "id": "AR-0803",
   "next_action": "Await fresh independent immutable review of repaired exact cbb764c; publish only if all prior blockers and new concurrency/privacy semantics are approved.",
   "observed_branch": "feature/frontend-control-api",
-  "observed_dirty": 19,
+  "observed_dirty": 20,
   "observed_head": "cbb764c45c6128d75f42fb78a3a2a15a0874528a",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0803.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary.",
-  "task_revision": 270,
+  "task_revision": 271,
   "title": "Define the frontend control API",
-  "updated_at": "2026-09-07T05:33:22+00:00",
+  "updated_at": "2026-09-07T05:33:43+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api"
 }
 ---
