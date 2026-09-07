@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-miniswe",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T21:46:27+00:00",
+  "claim_expires": "2026-09-07T20:50:16+00:00",
   "depends_on": [
     "AR-0308",
     "AR-0503",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for mini-SWE-agent.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Qualify mini-SWE replay",
-  "updated_at": "2026-09-07T18:50:14+00:00",
+  "updated_at": "2026-09-07T18:50:16+00:00",
   "worktree_key": "agent-systems-benchmark-replay-miniswe"
 }
 ---
@@ -52,3 +52,5 @@ Qualify mini-SWE-agent record/replay, network denial, parity, retries, tool call
   ignore text, retry-first sequence, empty-tools assertions, and patch response are semantically
   wrong for mini-SWE 2.4.6 and must be replaced with exact mini-SWE tool-call plus submission
   traffic before any test/support claim.
+
+- 2026-09-07T18:50:16+00:00: Heartbeat by replay_20260906.
