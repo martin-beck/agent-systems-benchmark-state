@@ -2,16 +2,15 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `612a5a7e3d471f9f2481d7943b06e6914c893dd2`
-- Local origin/main: `612a5a7e3d471f9f2481d7943b06e6914c893dd2`
+- Product remote main: `40cfa75ca195aaf13be1d5bc8025f96e5f4d3e7c`
+- Local origin/main: `40cfa75ca195aaf13be1d5bc8025f96e5f4d3e7c`
 - Primary worktree head: `40cfa75ca195aaf13be1d5bc8025f96e5f4d3e7c`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #31 | `feature/native-platforms@bdaf9c108226` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #41 | `feature/replay-aider@ec0a2930690c` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(replay): qualify aider record and replay |
+| #31 | `feature/native-platforms@bdaf9c108226` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
 
 ## Recent workflows
 
