@@ -9,7 +9,7 @@
     "AR-0204"
   ],
   "id": "AR-0801",
-  "next_action": "Audit public library seams and implement honest doctor/plan/run/sweep/compare/report boundaries with stable JSON, meaningful exits, cancellation and PTY tests.",
+  "next_action": "Add failure-path and PTY/resize-adjacent terminal tests, run workspace/full quality/formal gates, then create a focused signed DCO candidate for independent immutable review.",
   "observed_branch": "feature/terminal-interface",
   "observed_dirty": 5,
   "observed_head": "b79534b627e28792a46e1a0074be762bb425d2a6",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide doctor, plan, run, sweep, compare and report with stable JSON output.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Implement terminal and automation interfaces",
-  "updated_at": "2026-09-07T01:43:40+00:00",
+  "updated_at": "2026-09-07T01:44:29+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-interface"
 }
 ---
@@ -215,3 +215,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T01:43:40+00:00: Recorded command exit 0; command argv SHA-256
   6507c5870a79ad471fc7024721449b38c8a34b1bd3bb29f0da9f1cf0e36b149e.
+
+- 2026-09-07T01:44:29+00:00: Implemented compiling doctor/plan/run/sweep/compare/report boundary in
+  declared worktree. Strict TOML and exact executable digest validate before launch; nonempty
+  unpinned argv is rejected in favor of a pinned wrapper. Real scheduler/workload/store/metrics
+  integration, protected grading, JSON-only result stream, stderr progress, timeout and SIGINT
+  process-group cancellation are green. Focused evidence: 8 unit plus 2 native executable e2e tests
+  green; warmup/measured accounting, failed run, two-point sweep, report/comparison, invalid-plan
+  no-side-effect, timeout cleanup and descendant cleanup covered. cargo-llvm-cov focused
+  denominator: 1,796 regions / 1,190 lines, 90.14% regions and 91.01% lines; installed LLVM exposes
+  no branch denominator. Earlier failures recorded: bare cargo unavailable under sanitized handoff
+  PATH; store lifecycle omitted Planned; fixture printf interpreted CR; each was investigated and
+  repaired.
