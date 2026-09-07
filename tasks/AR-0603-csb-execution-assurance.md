@@ -10,7 +10,7 @@
     "AR-0104"
   ],
   "id": "AR-0603",
-  "next_action": "Compile the preserved isolated crate in the disposable mirror using the explicit pinned Cargo path, then repair substantive contract/test failures without root Cargo/schema edits.",
+  "next_action": "Generate a disposable mirror-only Cargo.lock offline and run locked asb-csb-runner tests; keep product root Cargo and schemas unchanged.",
   "observed_branch": "feature/csb-execution-assurance",
   "observed_dirty": 1,
   "observed_head": "939c35c5ee64c9f9685cec471efc03cb620643c2",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T08:49:39+00:00",
+  "updated_at": "2026-09-07T08:49:54+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
@@ -150,3 +150,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T08:49:39+00:00: Recorded command exit 101; command argv SHA-256
   5119c32d316a7bda8d1d4c1f81377e487e3b29b09545a943bf2ddd7c33043957.
+
+- 2026-09-07T08:49:54+00:00: Pinned Cargo invocation reached dependency resolution but --locked
+  correctly refused because the disposable mirror's copied lock does not yet include the new
+  workspace member. It attempted only the public crates.io index and did not compile or mutate the
+  product worktree. Generate the mirror-only lock offline from the pinned cache, then run locked
+  tests; root Cargo.toml/Cargo.lock remain fenced.
