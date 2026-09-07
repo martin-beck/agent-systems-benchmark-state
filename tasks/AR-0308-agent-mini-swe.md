@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned mini-SWE-agent as a bounded batch engineering agent.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Implement mini-SWE-agent client adapter",
-  "updated_at": "2026-09-07T01:09:26+00:00",
+  "updated_at": "2026-09-07T01:09:58+00:00",
   "worktree_key": "agent-systems-benchmark-agent-mini-swe"
 }
 ---
@@ -158,3 +158,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T01:09:26+00:00: Recorded command exit 101; command argv SHA-256
   9db9264a6b0e4cf13cf0284b43352e238cc61d19e08c16787c2e3dfbfa185a9c.
+
+- 2026-09-07T01:09:58+00:00: Recorded command exit 1; command argv SHA-256
+  c2e5e9399afbce3636fe4e8b5a7069ab19ac8fc13244a328bd86db7a702bda82.
