@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add strict replay support for Gemini GenerateContent SSE traffic.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Gemini GenerateContent strict-replay dialect",
-  "updated_at": "2026-09-07T17:02:51+00:00",
+  "updated_at": "2026-09-07T17:02:53+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-generate-content-replay"
 }
 ---
@@ -213,3 +213,6 @@ Require schema/runtime parity, focused and adversarial tests, fuzz/mutation/form
 
 - 2026-09-07T17:02:20+00:00: Recorded command exit 0; command argv SHA-256
   2046bdaca45b57168195cd76dd0f9f95c1a4d5be941226b7396f49b3945df56e.
+
+- 2026-09-07T17:02:53+00:00: Recorded command exit 1; command argv SHA-256
+  54c5aa9f8635bb323a8200fcdc8e30da7e7cdd8e670b9d77aa71e00631bb29e3.
