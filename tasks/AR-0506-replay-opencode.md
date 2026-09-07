@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenCode.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "Qualify OpenCode replay",
-  "updated_at": "2026-09-07T12:57:21+00:00",
+  "updated_at": "2026-09-07T12:57:24+00:00",
   "worktree_key": "agent-systems-benchmark-replay-opencode"
 }
 ---
@@ -272,3 +272,6 @@ retries, tool calls, cancellation, and malformed-record negatives.
 
 - 2026-09-07T12:57:01+00:00: Recorded command exit 0; command argv SHA-256
   b25182b5a17f18d82acda4e6461742aac9864bfad7d8311fb795b0e4deb0a3e1.
+
+- 2026-09-07T12:57:24+00:00: Recorded command exit 0; command argv SHA-256
+  e976d7d8a64ea012d2b3e8372b7dc74aa85511834ee8dd2cdf3406647a324819.
