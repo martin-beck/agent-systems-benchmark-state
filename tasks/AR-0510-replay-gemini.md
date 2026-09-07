@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Gemini.",
-  "task_revision": 107,
+  "task_revision": 108,
   "title": "Qualify Gemini replay",
-  "updated_at": "2026-09-07T18:17:10+00:00",
+  "updated_at": "2026-09-07T18:17:12+00:00",
   "worktree_key": "agent-systems-benchmark-replay-gemini"
 }
 ---
@@ -341,3 +341,6 @@ Qualify Gemini record/replay, network denial, parity, retries, tool calls, cance
   digest, then obsolete env variable names); no Gemini process ran before correction. Fuzz exited
   after successful targets solely because its generated fuzz/artifacts directory existed; the
   documented cleanup removed only that generated directory and lock/tree checks passed.
+
+- 2026-09-07T18:17:12+00:00: Recorded command exit 0; command argv SHA-256
+  30f06790c97f107fcae2c10ebb8bbbea793d7b4d9e5ccb6d8a555053307ab4c5.
