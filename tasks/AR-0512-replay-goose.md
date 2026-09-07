@@ -12,17 +12,17 @@
   "id": "AR-0512",
   "next_action": "Serialize a shared replay follow-up that makes request-body redaction selectors interaction/method-aware; then rerun the preserved Goose fixture without bypassing private messages.",
   "observed_branch": "feature/replay-goose",
-  "observed_dirty": 2,
-  "observed_head": "5a819633552f5d59885bc23c5e5127b1f131c102",
+  "observed_dirty": 0,
+  "observed_head": "6dfa688ddf9f238b8a0058dbca2c12a858d13bdb",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0512.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for goose.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Qualify goose replay",
-  "updated_at": "2026-09-07T21:23:56+00:00",
+  "updated_at": "2026-09-07T21:24:11+00:00",
   "worktree_key": "agent-systems-benchmark-replay-goose"
 }
 ---
