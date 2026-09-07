@@ -35,8 +35,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-provider-profile-contract` | `feature/provider-profile-contract` | `2870b68d0ca0` | 0 | behind 58, ahead 0 |
 | `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `748537c25e3a` | 0 | behind 139, ahead 0 |
 | `agent-systems-benchmark-reliability-fairness` | `feature/reliability-fairness` | `eb28ca7aeae5` | 0 | behind 36, ahead 0 |
-| `agent-systems-benchmark-replay-aider` | `feature/replay-aider` | `663664e7dc3d` | 2 | behind 0, ahead 1 |
-| changed files | - | - | - | `crates/asb-agents/README.md`, `crates/asb-agents/tests/replay_aider.rs` |
+| `agent-systems-benchmark-replay-aider` | `feature/replay-aider` | `ec0a2930690c` | 0 | behind 0, ahead 2 |
 | `agent-systems-benchmark-replay-cassettes` | `feature/replay-cassettes` | `cd88f5703fb3` | 0 | behind 118, ahead 0 |
 | `agent-systems-benchmark-replay-codex` | `feature/replay-codex` | `612a5a7e3d47` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-replay-evaluation` | `feature/replay-evaluation` | `3d04a2d5a3b3` | 0 | behind 131, ahead 0 |
