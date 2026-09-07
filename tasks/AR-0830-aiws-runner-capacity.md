@@ -11,7 +11,7 @@
   "id": "AR-0830",
   "next_action": "Repair fail-closed storage prefix/filesystem validation, replace multiple routable labels with one composite capability label, and make setup idempotent; then add lifecycle automation only after an authorized secret-safe registration boundary is available.",
   "observed_branch": "feature/development-host-runner-capacity",
-  "observed_dirty": 0,
+  "observed_dirty": 4,
   "observed_head": "40d54709e923172d6953d212190c95c0b103df84",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0830.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T05:58:05+00:00",
+  "updated_at": "2026-09-07T05:58:40+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
