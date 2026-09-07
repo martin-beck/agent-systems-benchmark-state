@@ -2,7 +2,7 @@
 {
   "branch": "feature/agent-qwen-code",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T02:17:53+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/agent-qwen-code",
   "observed_dirty": 0,
   "observed_head": "0be96c9ec50e76bde613b21867deb9808359f630",
-  "owner": "root-coordination-20260906",
+  "owner": "",
   "plan": "../plans/AR-0306.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Run pinned Qwen Code through isolated headless stream-JSON.",
-  "task_revision": 99,
+  "task_revision": 100,
   "title": "Implement Qwen Code client adapter",
-  "updated_at": "2026-09-07T01:02:31+00:00",
+  "updated_at": "2026-09-07T01:06:08+00:00",
   "worktree_key": "agent-systems-benchmark-agent-qwen-code"
 }
 ---
@@ -311,3 +311,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T01:02:31+00:00: Recorded command exit 0; command argv SHA-256
   eaf2472e4b0ec29bac3303a6d46474c99be3c0ab077feca87b1c3650d4745e53.
+
+- 2026-09-07T01:06:08+00:00: Integrated reviewed Qwen Code adapter: signed candidate
+  0be96c9ec50e76bde613b21867deb9808359f630, merged by signed DCO commit
+  b79534b627e28792a46e1a0074be762bb425d2a6, PR #25 merged. Local post-merge full workspace and real
+  pinned Qwen edit/cancellation/HTTP-400 negative passed. Fresh exact-main Rust run 34071704284,
+  quality run 34071704192, and formal run 34071704176 all completed successfully on b79534b,
+  including x86_64/aarch64 jobs. Native support remains Linux glibc x86_64 only; aarch64 archive is
+  inspected but unsupported, buffered mode and full transitive runtime manifest remain explicitly
+  unclaimed.
