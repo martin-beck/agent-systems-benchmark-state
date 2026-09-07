@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 63 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 46 |
+| **Done** | Accepted, integrated, and durably verified | 47 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -97,7 +97,7 @@ flowchart LR
         AR_0515["AR-0515 - Planned"]:::status_planned
         AR_0516["AR-0516 - Done"]:::status_done
         AR_0517["AR-0517 - Done"]:::status_done
-        AR_0518["AR-0518 - In progress"]:::status_in_progress
+        AR_0518["AR-0518 - Done"]:::status_done
     end
     subgraph series_06["06 - Metrics"]
         direction TB
@@ -695,12 +695,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0510](tasks/AR-0510-replay-gemini.md): Qualify Gemini replay | quality_20260906 | Qualify replay conformance for Gemini. | Await AR-0518 strict Gemini dialect integration; then rebase isolated signed adapter series and run pinned capture-to-strict-replay, retry, tool/grade, cancellation, malformed, full/formal/privacy gates. |
-| P0 | [AR-0518](tasks/AR-0518-gemini-generate-content-replay.md): Gemini GenerateContent strict-replay dialect | replay_20260906 | Add strict replay support for Gemini GenerateContent SSE traffic. | Await exact-main quality/Rust x86_64+aarch64/fault CI for signed merge 74d311ca; then reconcile, live doctor, and release AR-0518. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
 
 ### Blocked (4)
@@ -780,7 +779,7 @@ flowchart LR
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Evaluate maintenance, licenses and reproducibility before integration. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (46)
+### Done (47)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -793,6 +792,7 @@ flowchart LR
 | P0 | [AR-0509](tasks/AR-0509-replay-codex.md): Qualify Codex replay | Unclaimed | Qualify replay conformance for Codex. | Monitor PR #45 exact d086fec checks; investigate any failure, then integrate only after every required workflow is green. |
 | P0 | [AR-0516](tasks/AR-0516-opendesk-strict-replay-http-compatibility.md): OpenDesk strict-replay HTTP compatibility | Unclaimed | Add narrowly scoped strict-replay compatibility for pinned OpenDesk traffic. | Monitor exact-main 8eff6f95 CI; release only after every run is green and final synchronized state/live validation passes. |
 | P0 | [AR-0517](tasks/AR-0517-redacted-request-pointer-replay.md): Replay redacted request pointers | Unclaimed | Make privacy-safe redacted request bodies strictly replayable. | Apply bounded cassette request redaction pointers during strict incoming JSON comparison and align dialect option invariants. |
+| P0 | [AR-0518](tasks/AR-0518-gemini-generate-content-replay.md): Gemini GenerateContent strict-replay dialect | Unclaimed | Add strict replay support for Gemini GenerateContent SSE traffic. | Await exact-main quality/Rust x86_64+aarch64/fault CI for signed merge 74d311ca; then reconcile, live doctor, and release AR-0518. |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Unclaimed | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. |
 | P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Unclaimed | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. |
 | P1 | [AR-0004](tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Unclaimed | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. |

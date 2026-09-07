@@ -2,7 +2,7 @@
 {
   "branch": "feature/gemini-generate-content-replay",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T18:19:03+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0502",
     "AR-0503",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/gemini-generate-content-replay",
   "observed_dirty": 0,
   "observed_head": "93c19625f91065d0bcd7acb2f9a240bc71a21f3f",
-  "owner": "replay_20260906",
+  "owner": "",
   "plan": "../plans/AR-0518.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Add strict replay support for Gemini GenerateContent SSE traffic.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Gemini GenerateContent strict-replay dialect",
-  "updated_at": "2026-09-07T17:08:59+00:00",
+  "updated_at": "2026-09-07T17:13:37+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-generate-content-replay"
 }
 ---
@@ -241,3 +241,14 @@ Require schema/runtime parity, focused and adversarial tests, fuzz/mutation/form
   identity verified. Exact-main local postmerge green: fmt, workspace clippy, all tests, docs,
   release build, formal/Loom/state models, and pinned mutation 7/7. Hosted exact-main formal
   34146252691 green; quality 34146252705, Rust 34146252697, fault 34146252695 in progress.
+
+- 2026-09-07T17:13:37+00:00: Released after independently verifying reviewed PR #46 merged as
+  SSH-signed+DCO no-ff commit 74d311ca7a4ae86809424f9ff5edfe2c16127891 (parents b56768a+93c19625,
+  reviewed tree f7a0d14a), clean synchronized product main, and complete exact-main postmerge
+  evidence. Local exact-main fmt, workspace clippy/tests/docs/release, formal/Loom/state models, and
+  pinned mutation sentinel 7/7 were green. Hosted push runs all completed success at exact 74d311ca:
+  formal 34146252691, quality 34146252705, fault 34146252695, Rust x86_64+aarch64 34146252697. State
+  reconcile 4167894b, snapshot, schema validation, 38 coordination tests, rendered-status check, and
+  live doctor were green before release. Strict shared Gemini dialect is complete; real-client
+  compatibility remains downstream AR-0510 acceptance. Shared replay registration/runtime fence
+  returned to coordinator for AR-0510.
