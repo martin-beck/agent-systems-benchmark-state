@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define common signed runtime bundle manifests and offline verification.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Define runtime bundle manifest and verifier",
-  "updated_at": "2026-09-07T11:07:03+00:00",
+  "updated_at": "2026-09-07T11:07:22+00:00",
   "worktree_key": "agent-systems-benchmark-runtime-bundle-manifest"
 }
 ---
@@ -132,3 +132,6 @@ parity, license evidence, tamper detection, and offline operation.
 
 - 2026-09-07T11:07:03+00:00: Recorded command exit 0; command argv SHA-256
   63db1f3f036af83ee45eb1824b0b8d6e094ff620a755e1951335a1bf2f8da3f5.
+
+- 2026-09-07T11:07:22+00:00: Recorded command exit 101; command argv SHA-256
+  38fdb90e680894c0c059b0d4785af4c8e65733e0bc87f2989f220853fd14a082.
