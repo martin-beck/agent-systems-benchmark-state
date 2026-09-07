@@ -12,6 +12,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- | --- |
 | #27 | `feature/agent-goose@08feca551df7` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(agents): add bounded Goose adapter |
 | #28 | `feature/fault-assurance@ad00e8b1ea16` | `main` | UNSTABLE | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test: add bounded fault assurance campaigns |
+| #29 | `feature/terminal-interface@d2e7b66ff6af` | `main` | CLEAN | - | feat: add bounded benchmark CLI |
 
 ## Recent workflows
 
