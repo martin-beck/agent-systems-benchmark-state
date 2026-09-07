@@ -10,7 +10,7 @@
     "AR-0801"
   ],
   "id": "AR-0847",
-  "next_action": "Fresh independent immutable review of rebased candidate 0d2534f614cdc3ec43199bcb6da25083ef680f24; publish only after approval.",
+  "next_action": "Monitor PR #54 exact head 0d2534f614cdc3ec43199bcb6da25083ef680f24; merge only after all required exact-head checks are terminal green and coordinator authorization.",
   "observed_branch": "feature/frontend-control-api-repair",
   "observed_dirty": 0,
   "observed_head": "0d2534f614cdc3ec43199bcb6da25083ef680f24",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and independently qualify the blocked frontend control API candidate.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Frontend control API repair",
-  "updated_at": "2026-09-07T22:01:09+00:00",
+  "updated_at": "2026-09-07T22:01:56+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api-repair"
 }
 ---
@@ -254,3 +254,10 @@ Repair the blocked AR-0803 candidate without mutating its dirty worktree in plac
 
 - 2026-09-07T22:01:09+00:00: Recorded command exit 0; command argv SHA-256
   711daa7247d2b15e017565267e3999b1edd5654bfce0568d4f4bc8d4a1de47af.
+
+- 2026-09-07T22:01:56+00:00: Published immutable successor 0d2534f614cdc3ec43199bcb6da25083ef680f24
+  with an exact absent-branch lease after verifying origin/main remained
+  111be970534fbf72332a80c2291fe1fe21acb694. Opened focused PR #54 with exact base/head identity.
+  Exact-head runs started: repository quality 34165176857; Rust x86_64+aarch64 34165176859;
+  formal/Kani x86_64+aarch64 34165176880; fault/fuzz/mutation x86_64+aarch64 34165176887. All were
+  in progress at recording; merge is held.
