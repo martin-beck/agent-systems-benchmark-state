@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0308",
-  "next_action": "Await serialized additive registration fence; then rebase the three owned mini-SWE paths onto exact current main, add only module/test registration, rerun exact-tree full gates, and produce a signed DCO candidate for immutable review.",
+  "next_action": "Await immutable independent review of exact clean candidate 40b9970; do not publish or merge until coordinator authorization.",
   "observed_branch": "feature/agent-mini-swe",
   "observed_dirty": 0,
   "observed_head": "40b997064b6ee9069e8c5ce8348bf5295ff95720",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned mini-SWE-agent as a bounded batch engineering agent.",
-  "task_revision": 148,
+  "task_revision": 149,
   "title": "Implement mini-SWE-agent client adapter",
-  "updated_at": "2026-09-07T03:39:47+00:00",
+  "updated_at": "2026-09-07T03:40:15+00:00",
   "worktree_key": "agent-systems-benchmark-agent-mini-swe"
 }
 ---
@@ -486,3 +486,22 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T03:39:47+00:00: Recorded command exit 0; command argv SHA-256
   47f6895f7b71f01aa6a30f3928532fbab062c8a9a6dc4af9b145d6dddd3ebae3.
+
+- 2026-09-07T03:40:15+00:00: Exact candidate 40b997064b6ee9069e8c5ce8348bf5295ff95720/tree
+  0378ff6f3081b4a8d4d50cc08d011bc866613866 is one SSH-signed matching-DCO commit on exact signed
+  main 4a59593c0c55e0ad72656363473a404d8be1054b; range-diff from pre-main-advance candidate 5e347f5
+  is exact equals and scope is exactly MINI_SWE.md, mini_swe.rs, real_mini_swe.rs, and additive
+  lib.rs registration. Exact-tree green: fmt; workspace clippy/tests/docs/release; pinned mini-SWE
+  2.4.6 CPython 3.12 credential-free loopback edit+cancellation journey; configured coverage via
+  hash c07facbfc7a2a64e94c54d099b0e9eca0967f55027a50c063b73929b3c33f99d project-local cargo wrapper
+  excluding external Rust std source (workspace 94.28% lines, mini_swe 95.17% lines/91.80% regions;
+  LLVM reports no branch denominator); cargo deny/audit; actionlint/zizmor; controlled failure
+  fixtures; formal Loom/state/production tests; five Kani proofs; deliberate Kani counterexample
+  rejected with log SHA256 74b10ba832fa6e0b691d54acc80df7ca67eef80216f7bd91950c9d9b9443ade6;
+  repository policy and exact-range Gitleaks. Recorded investigated setup/path failures: wrong wheel
+  parent, incomplete Kani home, local coverage std-source denominator, and incomplete wrapper tool
+  env; corrected reruns passed, no product change, no surviving/out-of-root material from failed
+  ambient component attempt. Current remote main remains exact 4a59593, worktree clean, no mini-SWE
+  process. Limits remain honest: unsigned upstream tag, no locked/attested transitive Python
+  environment, wheel extraction required for package data, native journey x86_64 only, aarch64
+  build/test only, no live streaming/subscription/replay route claim.
