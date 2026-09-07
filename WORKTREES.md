@@ -42,8 +42,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `51daeb8608e5` | 0 | behind 158, ahead 0 |
 | `agent-systems-benchmark-provider-profile-contract` | `feature/provider-profile-contract` | `2870b68d0ca0` | 0 | behind 94, ahead 0 |
 | `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `748537c25e3a` | 0 | behind 175, ahead 0 |
-| `agent-systems-benchmark-recovery-models` | `feature/recovery-models` | `9d17563f39c1` | 16 | behind 0, ahead 0 |
-| changed files | - | - | - | `.github/workflows/formal.yml`, `docs/FORMAL_ASSURANCE.md`, `docs/formal/README.md`, `formal/Cargo.lock`, `formal/Cargo.toml`, `formal/README.md`, `formal/src/lib.rs`, `formal/tests/toolchain_pins.rs`, `formal/toolchains.toml`, `formal/fixtures/recovery_hostile_traces.json`, `formal/models/`, `formal/run_temporal_models.sh`, `formal/src/recovery.rs`, `formal/tests/recovery_models.rs`, `formal/tests/recovery_production.rs`, `formal/verify_alloy_receipt.py` |
+| `agent-systems-benchmark-recovery-models` | `feature/recovery-models` | `9d17563f39c1` | 17 | behind 0, ahead 0 |
+| changed files | - | - | - | `.github/workflows/formal.yml`, `config/quality-tools.json`, `docs/FORMAL_ASSURANCE.md`, `docs/formal/README.md`, `formal/Cargo.lock`, `formal/Cargo.toml`, `formal/README.md`, `formal/src/lib.rs`, `formal/tests/toolchain_pins.rs`, `formal/toolchains.toml`, `formal/fixtures/recovery_hostile_traces.json`, `formal/models/`, `formal/run_temporal_models.sh`, `formal/src/recovery.rs`, `formal/tests/recovery_models.rs`, `formal/tests/recovery_production.rs`, `formal/verify_alloy_receipt.py` |
 | `agent-systems-benchmark-redacted-request-pointer-replay` | `feature/redacted-request-pointer-replay` | `d7492ef5e9ad` | 0 | behind 26, ahead 0 |
 | `agent-systems-benchmark-reliability-fairness` | `feature/reliability-fairness` | `eb28ca7aeae5` | 0 | behind 72, ahead 0 |
 | `agent-systems-benchmark-replay-aider` | `feature/replay-aider` | `ec0a2930690c` | 0 | behind 34, ahead 0 |
