@@ -9,7 +9,7 @@
     "AR-0401"
   ],
   "id": "AR-1004",
-  "next_action": "Monitor PR #30 exact eb28ca7 hosted fault/formal/quality/Rust checks; investigate failures and do not merge.",
+  "next_action": "Hold fully green PR #30 exact eb28ca7 for coordinator-serialized signed integration; do not merge independently.",
   "observed_branch": "feature/reliability-fairness",
   "observed_dirty": 0,
   "observed_head": "eb28ca7aeae59b2340af7856e40f0ea31b792e66",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Report repeated-attempt reliability and prevent aggregate results from hiding starvation or hard strata.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Measure reliability and mixed-workload fairness",
-  "updated_at": "2026-09-07T04:07:17+00:00",
+  "updated_at": "2026-09-07T04:10:08+00:00",
   "worktree_key": "agent-systems-benchmark-reliability-fairness"
 }
 ---
@@ -236,3 +236,9 @@ Implementation has not started. Read the linked plan before claiming.
   4a59593c/eb28ca7 and mergeable. Exact-head hosted runs started: Fault assurance 34081912485,
   Formal assurance 34081912577, Repository quality 34081912503, Rust verification 34081912453. Await
   all exact-head jobs; do not merge before coordinator authorization.
+
+- 2026-09-07T04:10:08+00:00: PR #30 exact immutable head eb28ca7/base 4a59593c remains mergeable and
+  all ten exact-head jobs are green. Run 34081912485: retained faults x86_64/aarch64, bounded fuzz,
+  mutation sentinels green. Run 34081912577: Kani and Loom/state models x86_64/aarch64 green. Run
+  34081912503: policy/coverage/supply-chain green. Run 34081912453: Rust verification x86_64/aarch64
+  green. Worktree remains clean; hold for coordinator-serialized integration.
