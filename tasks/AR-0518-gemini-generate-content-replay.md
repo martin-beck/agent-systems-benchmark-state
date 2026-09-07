@@ -11,7 +11,7 @@
   "id": "AR-0518",
   "next_action": "Implement bounded Gemini GenerateContent dialect and focused schema/runtime/SSE/redaction adversarials after binding exact AR-0510 capture shape.",
   "observed_branch": "feature/gemini-generate-content-replay",
-  "observed_dirty": 6,
+  "observed_dirty": 7,
   "observed_head": "ab5d6c91c99d48883ed58eb1df6803c2711ecbd3",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0518.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add strict replay support for Gemini GenerateContent SSE traffic.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Gemini GenerateContent strict-replay dialect",
-  "updated_at": "2026-09-07T16:26:56+00:00",
+  "updated_at": "2026-09-07T16:27:26+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-generate-content-replay"
 }
 ---
