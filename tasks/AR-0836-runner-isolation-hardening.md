@@ -3,18 +3,21 @@
   "branch": "fix/runner-isolation-hardening",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-0830", "AR-0831"],
+  "depends_on": [
+    "AR-0830",
+    "AR-0831"
+  ],
   "id": "AR-0836",
   "next_action": "Separate job execution from operator-owned installation, credentials, control state, and diagnostics with a verified immutable boundary.",
   "owner": "",
   "plan": "../plans/AR-0836.md",
   "priority": "P0",
   "schema_version": 1,
-  "task_revision": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Harden development-host runner isolation against same-UID job tampering and diagnostic leakage.",
+  "task_revision": 2,
   "title": "Harden runner isolation and credential boundaries",
-  "updated_at": "2026-09-07T00:00:00+00:00",
+  "updated_at": "2026-09-07T07:49:35+00:00",
   "worktree_key": "agent-systems-benchmark-runner-isolation-hardening"
 }
 ---
@@ -31,3 +34,8 @@ Acceptance criteria:
 - Ensure jobs cannot read registration credentials or poison future registrations.
 - Bound and redact diagnostics before storage/upload; add leakage and tamper negative tests.
 - Qualify interrupted jobs, reset/recovery, and repeated runs with independent security review.
+
+- 2026-09-07T07:49:35+00:00: Dependencies AR-0830 and AR-0831 are durably done; prioritize P0
+  remediation of runner identity separation, credential isolation, immutable control state, bounded
+  redacted diagnostics, tamper negatives, and interrupted-run recovery before any further trusted
+  dispatch.
