@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned Qwen Code through isolated headless stream-JSON.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Implement Qwen Code client adapter",
-  "updated_at": "2026-09-07T00:44:41+00:00",
+  "updated_at": "2026-09-07T00:44:45+00:00",
   "worktree_key": "agent-systems-benchmark-agent-qwen-code"
 }
 ---
@@ -195,3 +195,6 @@ Implementation has not started. Read the linked plan before claiming.
   is lib/cli.js, not the launcher-imported lib/cli-entry.js. The archive member and extracted
   cli-entry.js both hash to 68cb29eb; adapter now pins archive, launcher, Node, cli-entry, and
   primary cli.js separately. No runtime mutation occurred.
+
+- 2026-09-07T00:44:45+00:00: Recorded command exit 0; command argv SHA-256
+  4285d7794822f343a3cca1ddf43fecbf5cec6540144f33b763baf102619b2c24.
