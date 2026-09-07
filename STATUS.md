@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**80 ARs tracked** across 4 active status categories.
+**80 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 49 |
 | **Future** | Deferred roadmap work | 0 |
@@ -97,7 +97,7 @@ flowchart LR
     end
     subgraph series_08["08 - Interfaces"]
         direction TB
-        AR_0801["AR-0801 - Open"]:::status_open
+        AR_0801["AR-0801 - In progress"]:::status_in_progress
         AR_0802["AR-0802 - Planned"]:::status_planned
         AR_0803["AR-0803 - Planned"]:::status_planned
         AR_0804["AR-0804 - Planned"]:::status_planned
@@ -506,19 +506,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0305](tasks/AR-0305-agent-gemini.md): Implement Gemini CLI client adapter | contracts-20260906 | Run pinned Gemini CLI through noninteractive JSON events. | Await serialized lib.rs registration handoff, then rebase once onto stabilized exact main and rerun registered-module full gates. |
 | P1 | [AR-0307](tasks/AR-0307-agent-goose.md): Implement goose client adapter | quality-20260906 | Run pinned AAIF goose in no-session structured mode. | Await explicit AR-0304 release transfer of the additive lib.rs/CI fence; then rebase onto exact current main, compile, run pinned x86_64/aarch64 native success/failure/cancellation journeys, and full gates. |
+| P1 | [AR-0801](tasks/AR-0801-terminal-interface.md): Implement terminal and automation interfaces | root-coordination-20260906 | Provide doctor, plan, run, sweep, compare and report with stable JSON output. | Build planned commands around public library interfaces. |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | replay-20260906 | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Add focused parser/config/cancellation tests and a credential-free loopback real-package fixture; repair any native findings before requesting the shared module-registration fence. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0801](tasks/AR-0801-terminal-interface.md): Implement terminal and automation interfaces | Unclaimed | Provide doctor, plan, run, sweep, compare and report with stable JSON output. | Build planned commands around public library interfaces. |
 
 ### Planned (49)
 
