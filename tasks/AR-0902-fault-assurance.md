@@ -2,7 +2,7 @@
 {
   "branch": "feature/fault-assurance",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T03:52:33+00:00",
+  "claim_expires": "2026-09-07T04:01:33+00:00",
   "depends_on": [
     "AR-0103",
     "AR-0104",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Add fuzz mutation and lifecycle fault campaigns",
-  "updated_at": "2026-09-07T02:23:52+00:00",
+  "updated_at": "2026-09-07T02:31:33+00:00",
   "worktree_key": "agent-systems-benchmark-fault-assurance"
 }
 ---
@@ -207,3 +207,5 @@ Implementation has not started. Read the linked plan before claiming.
   boundary, removed that upload step and now retain reviewed corpus seeds only. New failures are
   disposable-runner-only until reproduced/minimized/privacy-reviewed and committed; this limitation
   is explicit.
+
+- 2026-09-07T02:31:33+00:00: Heartbeat by contracts-20260906.
