@@ -2,7 +2,7 @@
 {
   "branch": "fix/ar0801-documentation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T01:40:59+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0801",
     "AR-0004"
@@ -12,15 +12,15 @@
   "observed_branch": "fix/ar0801-documentation",
   "observed_dirty": 0,
   "observed_head": "c0b9e0baf5f45221f159c8a06cd058b09c012a77",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0849.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair stale AR-0801 implementation and CLI documentation claims.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Repair AR-0801 documentation consistency",
-  "updated_at": "2026-09-07T23:02:32+00:00",
+  "updated_at": "2026-09-07T23:08:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar0801-documentation-repair"
 }
 ---
@@ -93,3 +93,11 @@ the examples against the merged binary and tests. Do not reopen or rewrite AR-08
 
 - 2026-09-07T23:02:32+00:00: Recorded command exit 0; command argv SHA-256
   424196874f31aaf6641ae99adba1ef62048e8e14b95953d86feda0dc11c51197.
+
+- 2026-09-07T23:08:43+00:00: Integrated signed+DCO no-ff product merge
+  72dd78f72dd74d20654232923dfe2fcff7771dff (reviewed one-path README tree
+  6766ab7602c4f26150289e081eb3c09f9808441e) after full local post-merge workspace, policy, privacy,
+  supply-chain, failure and platform validation. Exact-main CI completed success: Rust 34168679478,
+  quality 34168679335, formal 34168679390, fault 34168679395, emulated-aarch64 34168679459. AR-0801
+  state repair remains signed at 2a0114f1; final state schema/render/live doctor, 38 tests and 96%
+  branch-aware coverage passed.
