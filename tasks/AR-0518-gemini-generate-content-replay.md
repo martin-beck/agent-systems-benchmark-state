@@ -9,7 +9,7 @@
     "AR-0517"
   ],
   "id": "AR-0518",
-  "next_action": "Complete full/formal/coverage/privacy gates and produce an unpublished signed DCO candidate for immutable review.",
+  "next_action": "Await immutable independent review of unpublished exact candidate 7a6bf02e01b7f6f5ba93cc69078de84ee118fc2b; publish only after approval.",
   "observed_branch": "feature/gemini-generate-content-replay",
   "observed_dirty": 0,
   "observed_head": "7a6bf02e01b7f6f5ba93cc69078de84ee118fc2b",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add strict replay support for Gemini GenerateContent SSE traffic.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Gemini GenerateContent strict-replay dialect",
-  "updated_at": "2026-09-07T16:55:54+00:00",
+  "updated_at": "2026-09-07T16:56:24+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-generate-content-replay"
 }
 ---
@@ -187,3 +187,17 @@ Require schema/runtime parity, focused and adversarial tests, fuzz/mutation/form
 
 - 2026-09-07T16:55:54+00:00: Recorded command exit 1; command argv SHA-256
   52aa5697c9d6a974f670652e6c26097a554418e35d5011984c9bd83eeb822a2d.
+
+- 2026-09-07T16:56:24+00:00: Unpublished exact candidate 7a6bf02e01b7f6f5ba93cc69078de84ee118fc2b,
+  tree aaaf32cb1901c45098cdab4a339e4b5014e1234e, exact parent
+  b56768a550fb293650dd29ab793460e0277ffb8d after non-overlapping Codex replay main advance. One
+  SSH-signed Martin Beck commit with exact DCO; clean eight-path crates/asb-replay scope. Exact-tree
+  green: fmt, workspace clippy -D warnings, all workspace tests, rustdoc -D warnings, release build,
+  formal Loom/state/production models; coverage 94.66% workspace lines and 97.64% replay lines
+  (replay 95.03% regions); repository policy, actionlint, zizmor, cargo-deny, cargo-audit,
+  exact-range Gitleaks, private-host-path grep, diff-check, scope/signature/DCO. Focused Gemini
+  8/schema 3/strict replay 19 cover exact empty thinkingConfig, empty selectors, closed one-record
+  SSE payload, exact retry adjacency, causal functionCall/functionResponse ID+name,
+  marker/route/query/model/config negatives. Real pinned Gemini capture/retry/cancel evidence is
+  supplied by AR-0510 and must run against this shared commit after integration; therefore no
+  real-client compatibility claim and no publication before independent review.
