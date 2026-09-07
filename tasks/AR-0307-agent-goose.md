@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0307",
-  "next_action": "Await explicit AR-0304 release transfer of the additive lib.rs/CI fence; then rebase onto exact current main, compile, run pinned x86_64/aarch64 native success/failure/cancellation journeys, and full gates.",
+  "next_action": "Await explicit AR-0305 release transfer of the additive lib.rs/CI fence; then rebase onto exact current main, register once, run pinned x86_64/aarch64 native journeys and all exact-tree gates.",
   "observed_branch": "feature/agent-goose",
   "observed_dirty": 4,
   "observed_head": "d384c4c54a4576dadaae3a542cfc09a5e339a4fe",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned AAIF goose in no-session structured mode.",
-  "task_revision": 106,
+  "task_revision": 107,
   "title": "Implement goose client adapter",
-  "updated_at": "2026-09-07T01:18:56+00:00",
+  "updated_at": "2026-09-07T01:19:10+00:00",
   "worktree_key": "agent-systems-benchmark-agent-goose"
 }
 ---
@@ -352,3 +352,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T01:18:56+00:00: Recorded command exit 0; command argv SHA-256
   5caec5c25137c3b59152f058bae86ae6cb92789d9733ee23f6ddcc823ea64575.
+
+- 2026-09-07T01:19:10+00:00: Further isolated hardening is green: real pinned x86_64 journey reran
+  in 13.94s with all HTTP 400 retries served by the fixture, proving failure mapping is not a later
+  connection-refusal artifact; model discovery and completion/cancellation requests enforce the
+  credential-free authorization and exact paths. Added artifact-architecture, stable typed-error,
+  executable-digest/empty-file, workspace/state non-directory and symlink negatives. Isolated 13
+  unit tests, 2 compile-fail doctests, strict clippy and 92.79% Goose line coverage pass; region
+  coverage is 87.78% and no module-specific region floor is configured. Gitleaks found no leaks.
+  Shared fence is now AR-0305; no shared path touched.
