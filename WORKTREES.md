@@ -39,8 +39,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-replay-pacing` | `feature/replay-pacing` | `73d28a431c78` | 0 | behind 71, ahead 0 |
 | `agent-systems-benchmark-runner-isolation-hardening` | `fix/runner-isolation-hardening` | `9b4e7084e02c` | 0 | behind 6, ahead 0 |
 | `agent-systems-benchmark-runner-privacy-guard-remediation` | `fix/runner-canary-privacy-guards` | `c25e3d20d0dd` | 0 | behind 8, ahead 0 |
-| `agent-systems-benchmark-runtime-bundle-manifest` | `feature/runtime-bundle-manifest` | `125b1bccdc40` | 2 | behind 0, ahead 2 |
-| changed files | - | - | - | `crates/asb-bundle/Cargo.toml`, `crates/asb-bundle/src/lib.rs` |
+| `agent-systems-benchmark-runtime-bundle-manifest` | `feature/runtime-bundle-manifest` | `125b1bccdc40` | 6 | behind 0, ahead 2 |
+| changed files | - | - | - | `Cargo.lock`, `crates/asb-bundle/Cargo.toml`, `crates/asb-bundle/README.md`, `crates/asb-bundle/src/lib.rs`, `crates/asb-bundle/tests/offline_verifier.rs`, `docs/RUNTIME_BUNDLES.md` |
 | `agent-systems-benchmark-sandbox-runtime` | `feature/sandbox-runtime` | `ac4a23599649` | 0 | behind 73, ahead 0 |
 | `agent-systems-benchmark-sandbox-test-portability` | `fix/sandbox-test-portability` | `23035acde688` | 0 | behind 61, ahead 0 |
 | `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `3bcfd85dedd3` | 0 | behind 98, ahead 0 |
