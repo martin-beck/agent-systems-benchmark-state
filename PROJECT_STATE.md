@@ -10,6 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #26 | `feature/agent-gemini@d381d340163e` | `main` | UNKNOWN | - | feat: add bounded Gemini CLI adapter |
 
 ## Recent workflows
 
