@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0512",
-  "next_action": "Serialize a shared replay follow-up that makes request-body redaction selectors interaction/method-aware; then rerun the preserved Goose fixture without bypassing private messages.",
+  "next_action": "Hold immutable 6dfa688 for independent review; publish only after approval.",
   "observed_branch": "feature/replay-goose",
   "observed_dirty": 0,
   "observed_head": "6dfa688ddf9f238b8a0058dbca2c12a858d13bdb",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for goose.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Qualify goose replay",
-  "updated_at": "2026-09-07T21:24:40+00:00",
+  "updated_at": "2026-09-07T21:25:07+00:00",
   "worktree_key": "agent-systems-benchmark-replay-goose"
 }
 ---
@@ -121,3 +121,12 @@ Qualify goose record/replay, network denial, parity, retries, tool calls, cancel
 
 - 2026-09-07T21:24:40+00:00: Recorded command exit 0; command argv SHA-256
   d4e9985448f5d92e30e7b1724378a0a8ed1b965dfb4fbfdd71fb245fcf64c93f.
+
+- 2026-09-07T21:25:07+00:00: Prepared immutable signed+DCO candidate
+  6dfa688ddf9f238b8a0058dbca2c12a858d13bdb (tree b1726ff) on exact main 5a819633. Two-path agents
+  README/replay_goose scope. Pinned Goose 1.49.0 SHA-256 c055ef50 native loopback acceptance passed
+  on final tree in 18.16s: mixed GET model catalog and POST chat capture, interaction-scoped
+  auth/messages redaction, strict replay parity, bounded 429 retry, tool edit and independent grade,
+  cancellation, malformed/truncated rejection, and zero residual state. Full fmt/clippy/workspace
+  tests/docs/release/CLI, deny/audit, workflow/privacy/Gitleaks, failure/platform fixtures, 94.74%
+  workspace line coverage, critical floors, and Loom/state models passed. Kani remains hosted-only.
