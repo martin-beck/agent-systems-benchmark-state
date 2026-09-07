@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Gemini.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Qualify Gemini replay",
-  "updated_at": "2026-09-07T16:41:01+00:00",
+  "updated_at": "2026-09-07T16:41:04+00:00",
   "worktree_key": "agent-systems-benchmark-replay-gemini"
 }
 ---
@@ -197,3 +197,6 @@ Qualify Gemini record/replay, network denial, parity, retries, tool calls, cance
   exclusive stable route ownership and bounded public correlation IDs before filesystem effects.
   Test failure diagnostics were hardened not to Debug-print captured bodies. Shared replay paths
   remain owned by AR-0518.
+
+- 2026-09-07T16:41:04+00:00: Recorded command exit 0; command argv SHA-256
+  1c19cfc90fc8d1279312dfe52e3504a5f2936120db53f6abc4e838a9feb0d890.
