@@ -2,7 +2,7 @@
 {
   "branch": "feature/development-host-runner-capacity",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-07T08:29:18+00:00",
   "depends_on": [
     "AR-0002",
     "AR-0003",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/development-host-runner-capacity",
   "observed_dirty": 0,
   "observed_head": "c67d572c227021e96f43abe62e430fc9acdb5f93",
-  "owner": "",
+  "owner": "contracts-20260906",
   "plan": "../plans/AR-0830.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 99,
+  "task_revision": 100,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T06:29:15+00:00",
+  "updated_at": "2026-09-07T06:29:18+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
@@ -311,3 +311,5 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-07T06:29:15+00:00: Coordinator reconciles raced external registration
   asr-runner-e24284d3bbb7; do not repeat registration. Reclaim to start listener, verify exact
   label/health, canary, and lifecycle.
+
+- 2026-09-07T06:29:18+00:00: Claimed by contracts-20260906.
