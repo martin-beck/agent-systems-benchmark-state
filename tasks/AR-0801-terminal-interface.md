@@ -9,7 +9,7 @@
     "AR-0204"
   ],
   "id": "AR-0801",
-  "next_action": "Hold immutable signed candidate 3374572 for independent review; repair any blocker, otherwise publish exact head and require exact-head CI before integration.",
+  "next_action": "Finish exact-tree validation of the repaired successor, create a new signed DCO immutable candidate, and request fresh independent review.",
   "observed_branch": "feature/terminal-interface",
   "observed_dirty": 5,
   "observed_head": "3374572d09476bc45ceeac84776d73f52cee8211",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide doctor, plan, run, sweep, compare and report with stable JSON output.",
-  "task_revision": 121,
+  "task_revision": 122,
   "title": "Implement terminal and automation interfaces",
-  "updated_at": "2026-09-07T02:10:27+00:00",
+  "updated_at": "2026-09-07T02:10:37+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-interface"
 }
 ---
@@ -374,3 +374,15 @@ Implementation has not started. Read the linked plan before claiming.
   e7409d27df28877a25f6021220da2d1eccd3b22b625bafa58f3d1ac1af7eb8c4.
 
 - 2026-09-07T02:10:27+00:00: Heartbeat by root-coordination-20260906.
+
+- 2026-09-07T02:10:37+00:00: Independent immutable review blocked candidate 3374572: post-signal
+  admissions could create effects, warmup/measured summaries lacked phase identity, sweep execution
+  settings were not durably reconstructable, prompt unlink ordering left a crash window, executable
+  validation had a pathname TOCTOU, and result exit statuses were not meaningful. Candidate is
+  superseded. Authorized a temporary serialized crates/asb-runtime/src/scheduler.rs API/test fence
+  (confirmed disjoint from AR-0902) solely to expose immutable warmup context. Repairs now return
+  5/6/130 for fail/inconclusive/cancel, reject post-cancel effects, persist phase-tagged attempts
+  plus full point and execution digest, unlink prompt before writing, launch a digest-verified
+  private executable snapshot, and cover multi-admission cancellation and adversarial replacement.
+  Focused fmt, clippy, and runtime/CLI tests pass: 9 CLI unit, 3 real e2e, 26 runtime unit, 8
+  process-boundary, 10 sandbox-boundary, and 16 scheduler-boundary tests.
