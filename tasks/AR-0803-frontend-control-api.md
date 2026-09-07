@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary.",
-  "task_revision": 293,
+  "task_revision": 294,
   "title": "Define the frontend control API",
-  "updated_at": "2026-09-07T06:18:16+00:00",
+  "updated_at": "2026-09-07T06:58:45+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api"
 }
 ---
@@ -835,3 +835,6 @@ Implementation has not started. Read the linked plan before claiming.
   8c3de4fb198c6929d0013603bbfa10e6c71d486a4015ae1d75e22776de8280e3.
 
 - 2026-09-07T06:18:16+00:00: Heartbeat by root-coordination-20260906.
+
+- 2026-09-07T06:58:45+00:00: Recorded command exit 129; command argv SHA-256
+  963415c5e9ad34dd83c6b9838d73c018b35a67a321783e7a9d94d4f4ad331ac5.
