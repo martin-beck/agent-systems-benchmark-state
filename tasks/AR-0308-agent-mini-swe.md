@@ -11,17 +11,17 @@
   "id": "AR-0308",
   "next_action": "Commit the independently blocked repair as a focused SSH-signed DCO successor, run commit-scoped privacy/signature/scope checks, and request immutable review; do not publish.",
   "observed_branch": "feature/agent-mini-swe",
-  "observed_dirty": 3,
-  "observed_head": "43683ff13baa7343e0edb5333a4fc6c4304a3bcd",
+  "observed_dirty": 0,
+  "observed_head": "d6bd4bca9798d662b84263bc8c9d6639ed8b1f44",
   "owner": "replay-20260906",
   "plan": "../plans/AR-0308.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned mini-SWE-agent as a bounded batch engineering agent.",
-  "task_revision": 188,
+  "task_revision": 189,
   "title": "Implement mini-SWE-agent client adapter",
-  "updated_at": "2026-09-07T04:22:20+00:00",
+  "updated_at": "2026-09-07T04:22:32+00:00",
   "worktree_key": "agent-systems-benchmark-agent-mini-swe"
 }
 ---
