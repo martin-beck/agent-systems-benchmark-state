@@ -10,15 +10,18 @@
   ],
   "id": "AR-0308",
   "next_action": "Inspect the current package, trajectory contract, LiteLLM override and environment isolation.",
+  "observed_branch": "feature/agent-mini-swe",
+  "observed_dirty": 0,
+  "observed_head": "2579362d6936b25e6008583f7bd485e5498a4e3f",
   "owner": "replay-20260906",
   "plan": "../plans/AR-0308.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned mini-SWE-agent as a bounded batch engineering agent.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Implement mini-SWE-agent client adapter",
-  "updated_at": "2026-09-07T00:45:34+00:00",
+  "updated_at": "2026-09-07T00:45:53+00:00",
   "worktree_key": "agent-systems-benchmark-agent-mini-swe"
 }
 ---
