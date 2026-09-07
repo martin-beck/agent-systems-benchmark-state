@@ -8,7 +8,7 @@
     "AR-0830"
   ],
   "id": "AR-0831",
-  "next_action": "Define trusted-job labels and update ASB workflows without routing public pull-request code to persistent development host capacity.",
+  "next_action": "Hold exact unpublished f55f98cc79b75226a537600258dde5e57333bdeb for independent immutable security review; publish only after approval.",
   "observed_branch": "feature/development-host-workflow-routing",
   "observed_dirty": 0,
   "observed_head": "f55f98cc79b75226a537600258dde5e57333bdeb",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Route explicitly trusted ASB CI jobs to qualified development host runners while preserving disposable public-PR isolation.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Integrate development host ASB runners with GitHub workflows",
-  "updated_at": "2026-09-07T07:36:39+00:00",
+  "updated_at": "2026-09-07T07:36:58+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-workflow-routing"
 }
 ---
@@ -72,3 +72,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T07:36:39+00:00: Recorded command exit 0; command argv SHA-256
   3f10886351d474b24a289d1890d0360cde73b3cbe7adf4b485e8bb310107079f.
+
+- 2026-09-07T07:36:58+00:00: Focused signed+DCO candidate f55f98cc79b75226a537600258dde5e57333bdeb
+  is clean and limited to four routing workflow, documentation, policy, and negative-test paths.
+  Full locked workspace fmt/clippy/test/doc/release build passed; actionlint, zizmor, repository
+  policy, complete failure fixtures, runner scripts, exact-range Gitleaks,
+  privacy/scope/DCO/signature checks passed. One initial full-gate wrapper failed before build
+  because dash rejected pipefail; the corrected explicit Bash run passed. No public PR workflow
+  changed, no persistent runner dispatch occurred, and AR-0832/AR-0833 qualification limits remain
+  explicit.
