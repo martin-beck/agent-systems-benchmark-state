@@ -10,12 +10,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #24 | `feature/agent-codex@eb03bd9d9ed5` | `main` | UNKNOWN | - | feat(agents): add bounded Codex adapter |
+| #24 | `feature/agent-codex@eb03bd9d9ed5` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, IN_PROGRESS:, IN_PROGRESS: | feat(agents): add bounded Codex adapter |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34070192798 | `eb03bd9d9ed5` | pull_request | Formal assurance | in_progress:- |
+| 34070192794 | `eb03bd9d9ed5` | pull_request | Rust verification | in_progress:- |
+| 34070192793 | `eb03bd9d9ed5` | pull_request | Repository quality | in_progress:- |
 | 34069803385 | `37a63aaf4a8e` | pull_request | Formal assurance | completed:success |
 | 34069803372 | `37a63aaf4a8e` | pull_request | Repository quality | completed:failure |
 | 34069803358 | `37a63aaf4a8e` | pull_request | Rust verification | completed:failure |
@@ -25,6 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34068344198 | `2870b68d0ca0` | pull_request | Repository quality | completed:success |
 | 34068344166 | `2870b68d0ca0` | pull_request | Rust verification | completed:success |
 | 34068344158 | `2870b68d0ca0` | pull_request | Formal assurance | completed:success |
-| 34068149693 | `941ea6fff5ee` | push | Rust verification | completed:success |
-| 34068149682 | `941ea6fff5ee` | push | Formal assurance | completed:success |
-| 34068149658 | `941ea6fff5ee` | push | Repository quality | completed:success |
