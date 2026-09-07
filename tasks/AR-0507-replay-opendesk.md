@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0507",
-  "next_action": "Prove credential-free record/replay conformance for OpenDesk with network denial and malformed/tool/cancel negatives.",
+  "next_action": "Authorize and serialize the narrow replay header-token repair in cassette validator, service admission, schema, and negatives; meanwhile continue isolated OpenDesk capture/parity evidence without shared-path mutation.",
   "observed_branch": "feature/replay-opendesk",
   "observed_dirty": 1,
   "observed_head": "a0d80e48deb8750543606c2b577e1a52df26fc4c",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenDesk.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Qualify OpenDesk replay",
-  "updated_at": "2026-09-07T12:57:53+00:00",
+  "updated_at": "2026-09-07T12:59:39+00:00",
   "worktree_key": "agent-systems-benchmark-replay-opendesk"
 }
 ---
@@ -85,3 +85,19 @@ Qualify OpenDesk record/replay, network denial, parity, retries, tool calls, can
 
 - 2026-09-07T12:57:53+00:00: Recorded command exit 101; command argv SHA-256
   3211cbb17659455b743594d7b488023c32bf8ad124e43fb5b7a2d3f51490bd3d.
+
+- 2026-09-07T12:59:39+00:00: Pinned OpenDesk 0.3.5 real credential-free loopback capture reached
+  cassette sealing and failed deterministically with CassetteError::NotNormalized because the client
+  emits legal HTTP header name span_id. A focused assertion identified the exact name without
+  retaining its random value. The same underscore is rejected independently by StrictReplayService
+  validate_http_request, so value redaction alone cannot make the real client replayable. Narrow
+  proposed fix: consistently admit underscore in the bounded header-name grammar, redact span_id as
+  an exact volatile selector for this qualification, retain lowercase/unique/sorted/control-free
+  constraints, and add cassette/schema/service negatives for spaces, colons, controls, duplicates,
+  and unselected value mismatch. Precise shared paths: crates/asb-replay/src/cassette.rs,
+  crates/asb-replay/src/service.rs, crates/asb-replay/schema/v1/cassette.schema.json,
+  crates/asb-replay/tests/cassette_roundtrip.rs, crates/asb-replay/tests/schema_conformance.rs,
+  crates/asb-replay/tests/strict_replay.rs; generated schema only if generator changes. Shared paths
+  remain untouched pending coordinator authorization. Initial unshare --mount-proc attempt failed
+  with EPERM before test execution; corrected user+network namespace enabled only loopback and
+  exposed the contract failure.
