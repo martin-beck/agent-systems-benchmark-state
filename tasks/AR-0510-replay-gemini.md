@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0510",
-  "next_action": "Prove credential-free record/replay conformance for Gemini with network denial and malformed/tool/cancel negatives.",
+  "next_action": "Complete isolated retry/cancel/malformed/tool conformance while AR-0518 implements the exact captured Gemini replay dialect; rebase and run real strict replay only after AR-0518 integration.",
   "observed_branch": "feature/replay-gemini",
   "observed_dirty": 1,
   "observed_head": "ab5d6c91c99d48883ed58eb1df6803c2711ecbd3",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Gemini.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Qualify Gemini replay",
-  "updated_at": "2026-09-07T16:09:16+00:00",
+  "updated_at": "2026-09-07T16:09:38+00:00",
   "worktree_key": "agent-systems-benchmark-replay-gemini"
 }
 ---
@@ -97,3 +97,18 @@ Qualify Gemini record/replay, network denial, parity, retries, tool calls, cance
 
 - 2026-09-07T16:09:16+00:00: Recorded command exit 0; command argv SHA-256
   1b7c6420f89b6d69404bafbdb84fc2a259dba8d048a1c451f0ab11284a73b2fb.
+
+- 2026-09-07T16:09:38+00:00: Pinned Gemini CLI 0.58.0 plus Node 26.3.0 native x86_64 capture is
+  green twice in a user+network namespace exposing only loopback. Exact route is POST
+  /v1beta/models/fixture-model:streamGenerateContent?alt=sse; model is URL-only. Exact body keys are
+  contents, generationConfig, systemInstruction, tools; exact wire header names and bounded nested
+  key shapes are asserted without retaining values. Data-only lowercase text/event-stream responses
+  contain one JSON data line plus a blank line, with no event field or done marker. Original bug-fix
+  tool execution, structural event parity, independent grading, and empty state cleanup pass.
+  Cross-run volatility is limited exactly to request-one /contents/0/parts/0/text and
+  /systemInstruction/parts/0/text; request-two additionally changes paired functionCall/id and
+  functionResponse/id. These are the proposed redaction pointers supplied to AR-0518. First
+  mount-proc namespace attempt failed EPERM before test; corrected user+network namespace ran. A
+  first parity assertion exposed generated tool IDs and was correctly narrowed to
+  causal/name/success parity. Removed one empty shell-quoting artifact named null, after audit; no
+  private content existed. Shared replay files remain untouched.
