@@ -12,7 +12,7 @@
   "id": "AR-0603",
   "next_action": "Acquire and verify an exact public CSB source graph, then specify its bounded subprocess and containment contract.",
   "observed_branch": "feature/csb-execution-assurance",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "814397f8f74971589aa02b13da12485169db3e2e",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0603.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T06:23:46+00:00",
+  "updated_at": "2026-09-07T06:24:53+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
