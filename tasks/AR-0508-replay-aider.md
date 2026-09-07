@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for aider.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Qualify aider replay",
-  "updated_at": "2026-09-07T13:26:15+00:00",
+  "updated_at": "2026-09-07T13:26:17+00:00",
   "worktree_key": "agent-systems-benchmark-replay-aider"
 }
 ---
@@ -66,3 +66,6 @@ Qualify aider record/replay, network denial, parity, retries, tool calls, cancel
   one-path scope, and privacy search pass. Compile/native execution intentionally not attempted
   because AR-0506 still owns unpublished shared asb-agents Cargo.toml/README/Cargo.lock integration;
   no shared path was touched.
+
+- 2026-09-07T13:26:17+00:00: Recorded command exit 0; command argv SHA-256
+  f0345622224365fb1824a33e5211ede0a65aa4c63c16a5aec49334a38e33a6a4.
