@@ -11,7 +11,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | changed files | - | - | - | `crates/asb-agents/fixtures/`, `crates/asb-agents/src/gemini.rs`, `crates/asb-agents/tests/gemini_boundary.rs`, `crates/asb-agents/tests/real_gemini.rs` |
 | `agent-systems-benchmark-agent-goose` | `feature/agent-goose` | `d384c4c54a45` | 4 | behind 5, ahead 0 |
 | changed files | - | - | - | `crates/asb-agents/README.md`, `crates/asb-agents/fixtures/`, `crates/asb-agents/src/goose.rs`, `crates/asb-agents/tests/real_goose.rs` |
-| `agent-systems-benchmark-agent-mini-swe` | `feature/agent-mini-swe` | `2579362d6936` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-agent-mini-swe` | `feature/agent-mini-swe` | `2579362d6936` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-agents/src/mini_swe.rs` |
 | `agent-systems-benchmark-agent-opencode` | `feature/agent-opencode` | `dfb0d548bf75` | 0 | behind 30, ahead 0 |
 | `agent-systems-benchmark-agent-opendesk` | `feature/agent-opendesk` | `8eb99d3c7235` | 0 | behind 23, ahead 0 |
 | `agent-systems-benchmark-agent-qwen-code` | `feature/agent-qwen-code` | `2579362d6936` | 5 | behind 0, ahead 0 |
