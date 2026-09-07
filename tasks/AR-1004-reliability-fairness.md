@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Report repeated-attempt reliability and prevent aggregate results from hiding starvation or hard strata.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Measure reliability and mixed-workload fairness",
-  "updated_at": "2026-09-07T03:56:31+00:00",
+  "updated_at": "2026-09-07T03:56:33+00:00",
   "worktree_key": "agent-systems-benchmark-reliability-fairness"
 }
 ---
@@ -158,3 +158,6 @@ Implementation has not started. Read the linked plan before claiming.
   four declared asb-analysis paths. DCO checker, repository policy, redacted exact-range Gitleaks,
   diff check, privacy keyword audit, and clean-tree check pass. No feature remote ref or PR exists.
   Candidate requires independent immutable review before publication.
+
+- 2026-09-07T03:56:33+00:00: Recorded command exit 0; command argv SHA-256
+  20eb12877bad56fc6d928b334de47ffe701ee810b22f628f234a9f1108ac6068.
