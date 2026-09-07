@@ -2,22 +2,22 @@
 {
   "branch": "fix/runner-canary-privacy-guards",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-07T10:48:09+00:00",
   "depends_on": [
     "AR-0830",
     "AR-0831"
   ],
   "id": "AR-0835",
   "next_action": "Remove or narrow runner identity leakage in canary output and enforce repository/main-ref guards for every persistent-runner workflow.",
-  "owner": "",
+  "owner": "contracts-20260906",
   "plan": "../plans/AR-0835.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Remediate runner privacy leakage and protected-workflow guard gaps found during independent audit.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Remediate runner privacy and workflow guards",
-  "updated_at": "2026-09-07T07:48:07+00:00",
+  "updated_at": "2026-09-07T07:48:09+00:00",
   "worktree_key": "agent-systems-benchmark-runner-privacy-guard-remediation"
 }
 ---
@@ -36,3 +36,5 @@ Acceptance criteria:
 
 - 2026-09-07T07:48:07+00:00: AR-0830 and AR-0831 are durably done; persistent-runner workflow
   privacy and guard remediation paths are dependency-ready and no active AR owns them.
+
+- 2026-09-07T07:48:09+00:00: Claimed by contracts-20260906.
