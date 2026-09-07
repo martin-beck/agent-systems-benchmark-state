@@ -11,7 +11,7 @@
   "id": "AR-0307",
   "next_action": "Hold immutable signed+DCO candidate c151450f4ef4b15cc0efafffc708afd7b5d9aa28 for independent review; publish only after approval, then require exact-head native x86_64/aarch64 CI.",
   "observed_branch": "feature/agent-goose",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "c151450f4ef4b15cc0efafffc708afd7b5d9aa28",
   "owner": "quality-20260906",
   "plan": "../plans/AR-0307.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned AAIF goose in no-session structured mode.",
-  "task_revision": 151,
+  "task_revision": 152,
   "title": "Implement goose client adapter",
-  "updated_at": "2026-09-07T02:23:10+00:00",
+  "updated_at": "2026-09-07T02:24:38+00:00",
   "worktree_key": "agent-systems-benchmark-agent-goose"
 }
 ---
