@@ -11,17 +11,17 @@
   "id": "AR-0308",
   "next_action": "Complete exact-tree privacy/signature/scope verification, create one focused signed DCO successor, and request immutable review without publication.",
   "observed_branch": "feature/agent-mini-swe",
-  "observed_dirty": 2,
-  "observed_head": "0030358074c1acb92aad10d683208b243d9a6ad7",
+  "observed_dirty": 0,
+  "observed_head": "1605693dbb7aade01dd47cb074e35bca02df873b",
   "owner": "replay-20260906",
   "plan": "../plans/AR-0308.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned mini-SWE-agent as a bounded batch engineering agent.",
-  "task_revision": 258,
+  "task_revision": 259,
   "title": "Implement mini-SWE-agent client adapter",
-  "updated_at": "2026-09-07T05:22:14+00:00",
+  "updated_at": "2026-09-07T05:22:31+00:00",
   "worktree_key": "agent-systems-benchmark-agent-mini-swe"
 }
 ---
