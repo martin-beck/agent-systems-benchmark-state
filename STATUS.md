@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**116 ARs tracked** across 4 active status categories.
+**117 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
-| **Planned** | Defined work awaiting promotion or dependencies | 63 |
+| **Planned** | Defined work awaiting promotion or dependencies | 64 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 47 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -98,6 +98,7 @@ flowchart LR
         AR_0516["AR-0516 - Done"]:::status_done
         AR_0517["AR-0517 - Done"]:::status_done
         AR_0518["AR-0518 - Done"]:::status_done
+        AR_0519["AR-0519 - Planned"]:::status_planned
     end
     subgraph series_06["06 - Metrics"]
         direction TB
@@ -437,6 +438,7 @@ flowchart LR
     AR_0513 --> AR_0515
     AR_0514 --> AR_0515
     AR_0517 --> AR_0518
+    AR_0518 --> AR_0519
     AR_0601 --> AR_0405
     AR_0601 --> AR_0602
     AR_0601 --> AR_0604
@@ -630,7 +632,8 @@ flowchart LR
 | [AR-0515](tasks/AR-0515-replay-matrix.md) | [AR-0506](tasks/AR-0506-replay-opencode.md), [AR-0507](tasks/AR-0507-replay-opendesk.md), [AR-0508](tasks/AR-0508-replay-aider.md), [AR-0509](tasks/AR-0509-replay-codex.md), [AR-0510](tasks/AR-0510-replay-gemini.md), [AR-0511](tasks/AR-0511-replay-qwen.md), [AR-0512](tasks/AR-0512-replay-goose.md), [AR-0513](tasks/AR-0513-replay-miniswe.md), [AR-0514](tasks/AR-0514-replay-openhands.md) | None |
 | [AR-0516](tasks/AR-0516-opendesk-strict-replay-http-compatibility.md) | [AR-0302](tasks/AR-0302-agent-opendesk.md), [AR-0502](tasks/AR-0502-replay-cassettes.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0504](tasks/AR-0504-replay-pacing.md) | None |
 | [AR-0517](tasks/AR-0517-redacted-request-pointer-replay.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0502](tasks/AR-0502-replay-cassettes.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0504](tasks/AR-0504-replay-pacing.md) | [AR-0518](tasks/AR-0518-gemini-generate-content-replay.md) |
-| [AR-0518](tasks/AR-0518-gemini-generate-content-replay.md) | [AR-0502](tasks/AR-0502-replay-cassettes.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0517](tasks/AR-0517-redacted-request-pointer-replay.md) | None |
+| [AR-0518](tasks/AR-0518-gemini-generate-content-replay.md) | [AR-0502](tasks/AR-0502-replay-cassettes.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0517](tasks/AR-0517-redacted-request-pointer-replay.md) | [AR-0519](tasks/AR-0519-gemini-thinking-config-contract.md) |
+| [AR-0519](tasks/AR-0519-gemini-thinking-config-contract.md) | [AR-0518](tasks/AR-0518-gemini-generate-content-replay.md) | None |
 | [AR-0601](tasks/AR-0601-csb-integration.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0603](tasks/AR-0603-csb-execution-assurance.md) | [AR-0405](tasks/AR-0405-performance-workloads.md), [AR-0602](tasks/AR-0602-csb-monitoring-contention.md), [AR-0604](tasks/AR-0604-csb-native-qualification.md) |
 | [AR-0602](tasks/AR-0602-csb-monitoring-contention.md) | [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0202](tasks/AR-0202-kernel-diagnostics.md), [AR-0601](tasks/AR-0601-csb-integration.md), [AR-0604](tasks/AR-0604-csb-native-qualification.md) | None |
 | [AR-0603](tasks/AR-0603-csb-execution-assurance.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0104](tasks/AR-0104-durable-results.md) | [AR-0601](tasks/AR-0601-csb-integration.md) |
@@ -711,7 +714,7 @@ flowchart LR
 | P1 | [AR-0703](tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Provide genuine disposable native hosts for required Debian and openEuler platform qualification. | Obtain explicit provider/account and cost authorization, least-privilege external credentials, quotas, and four genuine disposable Debian 13.6/openEuler 24.03 LTS-SP2 x86_64/aarch64 hosts; then implement reservation/provision/collect/destroy evidence without emulation. |
 | P1 | [AR-0803](tasks/AR-0803-frontend-control-api.md): Define the frontend control API | Unclaimed | Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary. | Await fresh independent immutable review of repaired exact cbb764c; publish only if all prior blockers and new concurrency/privacy semantics are approved. |
 
-### Planned (63)
+### Planned (64)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -720,6 +723,7 @@ flowchart LR
 | P0 | [AR-0513](tasks/AR-0513-replay-miniswe.md): Qualify mini-SWE replay | Unclaimed | Qualify replay conformance for mini-SWE-agent. | Prove credential-free record/replay conformance for mini-SWE-agent with network denial and malformed/tool/cancel negatives. |
 | P0 | [AR-0514](tasks/AR-0514-replay-openhands.md): Qualify OpenHands replay | Unclaimed | Qualify replay conformance for OpenHands. | Prove credential-free record/replay conformance for OpenHands with network denial and malformed/tool/cancel negatives. |
 | P0 | [AR-0515](tasks/AR-0515-replay-matrix.md): Aggregate replay conformance matrix | Unclaimed | Aggregate complete per-agent replay conformance. | Aggregate per-agent replay evidence into the complete supported-agent conformance matrix. |
+| P0 | [AR-0519](tasks/AR-0519-gemini-thinking-config-contract.md): Gemini thinkingConfig contract repair | Unclaimed | Correct Gemini thinkingConfig strict-replay contract from pinned capture evidence. | Repair the Gemini thinkingConfig contract to admit exactly includeThoughts:boolean and reject all other shapes. |
 | P0 | [AR-0837](tasks/AR-0837-containerized-runner-boundary.md): Qualify containerized runner boundary | Unclaimed | Provide the containerized workflow boundary required for safe trusted runner claims. | Define and qualify a digest-pinned workflow container boundary separating operator, listener, and job principals without host mounts. |
 | P1 | [AR-0311](tasks/AR-0311-provider-openai.md): Support a shared OpenAI provider | Unclaimed | Apply one default OpenAI provider profile consistently to all supported agents. | Implement the default OpenAI provider profile for every adapter that proves compatible support. |
 | P1 | [AR-0312](tasks/AR-0312-provider-ollama.md): Support a shared local Ollama provider | Unclaimed | Apply one pinned local Ollama provider and model configuration to all supported agents. | Implement a loopback-only local Ollama profile and prove every compatible adapter translation. |
