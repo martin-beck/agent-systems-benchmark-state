@@ -4,27 +4,27 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
-| `agent-systems-benchmark` | `main` | `e8966b2a5453` | 0 | behind 0, ahead 3 |
-| `agent-systems-benchmark-agent-aider` | `feature/agent-aider` | `da81ead6932c` | 0 | behind 71, ahead 0 |
-| `agent-systems-benchmark-agent-codex` | `feature/agent-codex` | `eb03bd9d9ed5` | 0 | behind 59, ahead 0 |
-| `agent-systems-benchmark-agent-gemini` | `feature/agent-gemini` | `d381d340163e` | 0 | behind 55, ahead 0 |
-| `agent-systems-benchmark-agent-goose` | `feature/agent-goose` | `95b3ef8c7830` | 0 | behind 51, ahead 0 |
-| `agent-systems-benchmark-agent-mini-swe` | `feature/agent-mini-swe` | `3cf9a53fce70` | 0 | behind 9, ahead 0 |
-| `agent-systems-benchmark-agent-opencode` | `feature/agent-opencode` | `dfb0d548bf75` | 0 | behind 88, ahead 0 |
-| `agent-systems-benchmark-agent-opendesk` | `feature/agent-opendesk` | `8eb99d3c7235` | 0 | behind 81, ahead 0 |
-| `agent-systems-benchmark-agent-qwen-code` | `feature/agent-qwen-code` | `0be96c9ec50e` | 0 | behind 57, ahead 0 |
-| `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `0717d4acd168` | 0 | behind 73, ahead 0 |
-| `agent-systems-benchmark-ci-artifact-quota-resilience` | `feature/ci-artifact-quota-resilience` | `7d98653e7e7f` | 0 | behind 19, ahead 0 |
-| `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 142, ahead 0 |
-| `agent-systems-benchmark-csb-execution-assurance` | `feature/csb-execution-assurance` | `39e306124b56` | 0 | behind 22, ahead 0 |
-| `agent-systems-benchmark-development-host-runner-capacity` | `feature/development-host-runner-capacity` | `0d9b363538d2` | 0 | behind 33, ahead 0 |
-| `agent-systems-benchmark-development-host-workflow-routing` | `feature/development-host-workflow-routing` | `f55f98cc79b7` | 0 | behind 31, ahead 0 |
-| `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 131, ahead 0 |
-| `agent-systems-benchmark-engineering-workloads` | `feature/engineering-workloads` | `41ffc6eb8f1a` | 0 | behind 75, ahead 0 |
-| `agent-systems-benchmark-experiment-comparability` | `feature/experiment-comparability` | `eb5e84933830` | 0 | behind 85, ahead 0 |
-| `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 139, ahead 0 |
-| `agent-systems-benchmark-fault-assurance` | `feature/fault-assurance` | `e6c623113c15` | 0 | behind 51, ahead 0 |
-| `agent-systems-benchmark-formal-assurance` | `feature/formal-assurance` | `2a495a99a657` | 0 | behind 97, ahead 0 |
+| `agent-systems-benchmark` | `main` | `e8966b2a5453` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-agent-aider` | `feature/agent-aider` | `da81ead6932c` | 0 | behind 74, ahead 0 |
+| `agent-systems-benchmark-agent-codex` | `feature/agent-codex` | `eb03bd9d9ed5` | 0 | behind 62, ahead 0 |
+| `agent-systems-benchmark-agent-gemini` | `feature/agent-gemini` | `d381d340163e` | 0 | behind 58, ahead 0 |
+| `agent-systems-benchmark-agent-goose` | `feature/agent-goose` | `95b3ef8c7830` | 0 | behind 54, ahead 0 |
+| `agent-systems-benchmark-agent-mini-swe` | `feature/agent-mini-swe` | `3cf9a53fce70` | 0 | behind 12, ahead 0 |
+| `agent-systems-benchmark-agent-opencode` | `feature/agent-opencode` | `dfb0d548bf75` | 0 | behind 91, ahead 0 |
+| `agent-systems-benchmark-agent-opendesk` | `feature/agent-opendesk` | `8eb99d3c7235` | 0 | behind 84, ahead 0 |
+| `agent-systems-benchmark-agent-qwen-code` | `feature/agent-qwen-code` | `0be96c9ec50e` | 0 | behind 60, ahead 0 |
+| `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `0717d4acd168` | 0 | behind 76, ahead 0 |
+| `agent-systems-benchmark-ci-artifact-quota-resilience` | `feature/ci-artifact-quota-resilience` | `7d98653e7e7f` | 0 | behind 22, ahead 0 |
+| `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 145, ahead 0 |
+| `agent-systems-benchmark-csb-execution-assurance` | `feature/csb-execution-assurance` | `39e306124b56` | 0 | behind 25, ahead 0 |
+| `agent-systems-benchmark-development-host-runner-capacity` | `feature/development-host-runner-capacity` | `0d9b363538d2` | 0 | behind 36, ahead 0 |
+| `agent-systems-benchmark-development-host-workflow-routing` | `feature/development-host-workflow-routing` | `f55f98cc79b7` | 0 | behind 34, ahead 0 |
+| `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 134, ahead 0 |
+| `agent-systems-benchmark-engineering-workloads` | `feature/engineering-workloads` | `41ffc6eb8f1a` | 0 | behind 78, ahead 0 |
+| `agent-systems-benchmark-experiment-comparability` | `feature/experiment-comparability` | `eb5e84933830` | 0 | behind 88, ahead 0 |
+| `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 142, ahead 0 |
+| `agent-systems-benchmark-fault-assurance` | `feature/fault-assurance` | `e6c623113c15` | 0 | behind 54, ahead 0 |
+| `agent-systems-benchmark-formal-assurance` | `feature/formal-assurance` | `2a495a99a657` | 0 | behind 100, ahead 0 |
 | `agent-systems-benchmark-frontend-control-api` | `feature/frontend-control-api` | `cbb764c45c61` | 20 | behind 46, ahead 1 |
 | changed files | - | - | - | `Cargo.lock`, `crates/asb-cli/Cargo.toml`, `crates/asb-cli/src/lib.rs`, `crates/asb-control/Cargo.toml`, `crates/asb-control/README.md`, `crates/asb-control/examples/generate_schema.rs`, `crates/asb-control/fixtures/v1/success-response.json`, `crates/asb-control/schema/v1/event.schema.json`, `crates/asb-control/schema/v1/request.schema.json`, `crates/asb-control/schema/v1/response.schema.json`, `crates/asb-control/src/endpoint.rs`, `crates/asb-control/src/lib.rs`, `crates/asb-control/src/protocol.rs`, `crates/asb-control/src/state.rs`, `crates/asb-control/tests/control.rs`, `crates/asb-control/tests/endpoint.rs`, `crates/asb-control/tests/schema_conformance.rs`, `docs/FRONTEND_CONTROL_API.md`, `crates/asb-cli/src/control.rs`, `crates/asb-control/src/schema.rs` |
 | `agent-systems-benchmark-native-platform-lab` | `feature/native-platform-lab` | `b1669203308d` | 0 | behind 24, ahead 0 |
