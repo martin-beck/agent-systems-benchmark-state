@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define common signed runtime bundle manifests and offline verification.",
-  "task_revision": 91,
+  "task_revision": 92,
   "title": "Define runtime bundle manifest and verifier",
-  "updated_at": "2026-09-07T11:36:32+00:00",
+  "updated_at": "2026-09-07T11:38:04+00:00",
   "worktree_key": "agent-systems-benchmark-runtime-bundle-manifest"
 }
 ---
@@ -270,3 +270,6 @@ parity, license evidence, tamper detection, and offline operation.
   missing cargo PATH; corrected invocation passed without tree change. Limits: Linux/Unix verifier,
   exact libc string equality, operator-owned quiescent signer/trust/staging paths; no broader
   ABI/native package or acquisition claim.
+
+- 2026-09-07T11:38:04+00:00: Recorded command exit 0; command argv SHA-256
+  1622948e65e7e477e7488b0664b5d77a1fba1bf832da50fafef5059f900496de.
