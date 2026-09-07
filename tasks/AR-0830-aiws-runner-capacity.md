@@ -17,11 +17,11 @@
   "plan": "../plans/AR-0830.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T06:04:08+00:00",
+  "updated_at": "2026-09-07T06:13:19+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
@@ -210,3 +210,7 @@ Implementation has not started. Read the linked plan before claiming.
   GitHub-side label proof remain blocked by absent authorized registration token/admin boundary
   after repeated audits; preserve exact evidence and resume only when that external boundary is
   supplied.
+
+- 2026-09-07T06:13:19+00:00: Coordinator reopens after authorized GitHub repository registration
+  boundary became available; local safety findings remain required repair criteria before online
+  canary.
