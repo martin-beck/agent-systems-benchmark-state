@@ -11,11 +11,17 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #31 | `feature/native-platforms@bdaf9c108226` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
+| #57 | `feature/recovery-models@a288bb3485aa` | `main` | CLEAN | - | formal: model recovery and replay fencing |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34169250678 | `a288bb3485aa` | pull_request | Formal assurance | queued:- |
+| 34169250641 | `a288bb3485aa` | pull_request | Fault assurance | queued:- |
+| 34169250637 | `a288bb3485aa` | pull_request | Rust verification | queued:- |
+| 34169250636 | `a288bb3485aa` | pull_request | Repository quality | queued:- |
+| 34169250633 | `a288bb3485aa` | pull_request | Emulated aarch64 portability | queued:- |
 | 34168679478 | `72dd78f72dd7` | push | Rust verification | completed:success |
 | 34168679459 | `72dd78f72dd7` | push | Emulated aarch64 portability | completed:success |
 | 34168679395 | `72dd78f72dd7` | push | Fault assurance | completed:success |
@@ -23,8 +29,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34168679335 | `72dd78f72dd7` | push | Repository quality | completed:success |
 | 34168111552 | `c0b9e0baf5f4` | pull_request | Emulated aarch64 portability | completed:success |
 | 34168111534 | `c0b9e0baf5f4` | pull_request | Formal assurance | completed:success |
-| 34168111508 | `c0b9e0baf5f4` | pull_request | Repository quality | completed:success |
-| 34168111507 | `c0b9e0baf5f4` | pull_request | Fault assurance | completed:success |
-| 34168111493 | `c0b9e0baf5f4` | pull_request | Rust verification | completed:success |
-| 34167050101 | `9d17563f39c1` | push | Fault assurance | completed:success |
-| 34167050075 | `9d17563f39c1` | push | Rust verification | completed:success |
