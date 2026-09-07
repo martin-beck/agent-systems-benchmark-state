@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0702",
-  "next_action": "Provision disposable native test environments with isolated benchmark resources.",
+  "next_action": "Implement a fail-closed native evidence harness and immutable report binding; qualify the available bare-metal Ubuntu 24.04 x86_64 cell, then use disposable native aarch64 CI without inferring openEuler or other booted kernels from containers/emulation. Escalate unavailable required booted platform cells as explicit follow-up infrastructure work.",
   "observed_branch": "feature/native-platforms",
   "observed_dirty": 0,
   "observed_head": "4a59593c0c55e0ad72656363473a404d8be1054b",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Exercise native x86_64 and aarch64 including booted openEuler kernels.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Validate native Linux kernels and architectures",
-  "updated_at": "2026-09-07T03:17:10+00:00",
+  "updated_at": "2026-09-07T03:17:32+00:00",
   "worktree_key": "agent-systems-benchmark-native-platforms"
 }
 ---
@@ -52,3 +52,18 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T03:17:10+00:00: Recorded command exit 0; command argv SHA-256
   bd6600b76f07ecf53eba39e5bbf05d2047015ccfde60db4da3f3e8583254bd2e.
+
+- 2026-09-07T03:17:32+00:00: Preclaim snapshot initially refused stale WORKTREES, and a reconcile
+  raced a coordinator state transition and then refused stale PROJECT_STATE; both were
+  no-claim/no-product-mutation failures. After coordinator commits 445d985/8239c92, fresh
+  snapshot/live doctor passed; AR-0702 was claimed and its declared clean worktree created from
+  synchronized signed main 4a59593c0c55e0ad72656363473a404d8be1054b. Read-only audit found a
+  bare-metal x86_64 Ubuntu 24.04.4 kernel with cgroup v2, PSI, user systemd, AppArmor and pinned
+  sandbox tools; no native aarch64 or booted openEuler environment is exposed, so no such claim is
+  made. Real x86_64 production-boundary checks pass: process cancellation/tree cleanup 8/8;
+  delegated cgroup/bubblewrap limits, isolation, cancellation, lease/scope cleanup and permission
+  negatives 10/10; native metrics controlled CPU/memory/fault/I/O, cgroup/PSI, overhead/sample-loss
+  and permission/absence negatives 6 passed/1 helper ignored. Sanitized external log SHA256: process
+  43e54f2b94ae29af1f75239fb196ac826f213088db45a558b4a69c38d2817e03, sandbox
+  41961a83465951fcf3a566b4abbc02d2d11223dc5f923d83352432b6c61ec82c, metrics
+  99e20427f1d8275236e3b277b1d7a534e34d5c3a017191fbe2cc7fb7b0012b0a.
