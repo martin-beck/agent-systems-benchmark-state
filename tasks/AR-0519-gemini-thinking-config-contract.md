@@ -9,7 +9,7 @@
   "id": "AR-0519",
   "next_action": "Run focused Gemini/schema/strict replay tests for exact includeThoughts boolean shape and value parity; repair any fixture digest or compile failure, then full gates.",
   "observed_branch": "feature/gemini-thinking-config-contract",
-  "observed_dirty": 5,
+  "observed_dirty": 4,
   "observed_head": "74d311ca7a4ae86809424f9ff5edfe2c16127891",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0519.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Correct Gemini thinkingConfig strict-replay contract from pinned capture evidence.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Gemini thinkingConfig contract repair",
-  "updated_at": "2026-09-07T17:33:12+00:00",
+  "updated_at": "2026-09-07T17:33:33+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-thinking-config-contract"
 }
 ---
