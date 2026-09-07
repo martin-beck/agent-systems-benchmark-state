@@ -10,13 +10,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #26 | `feature/agent-gemini@d381d340163e` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: add bounded Gemini CLI adapter |
+| #26 | `feature/agent-gemini@d381d340163e` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: add bounded Gemini CLI adapter |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34073857782 | `d381d340163e` | pull_request | Formal assurance | in_progress:- |
+| 34073857782 | `d381d340163e` | pull_request | Formal assurance | completed:success |
 | 34073857745 | `d381d340163e` | pull_request | Rust verification | in_progress:- |
 | 34073857740 | `d381d340163e` | pull_request | Repository quality | in_progress:- |
 | 34071704284 | `b79534b627e2` | push | Rust verification | completed:success |
