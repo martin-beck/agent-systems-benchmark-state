@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**80 ARs tracked** across 4 active status categories.
+**80 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 48 |
 | **Future** | Deferred roadmap work | 0 |
@@ -124,7 +124,7 @@ flowchart LR
     subgraph series_09["09 - Assurance"]
         direction TB
         AR_0901["AR-0901 - Done"]:::status_done
-        AR_0902["AR-0902 - Open"]:::status_open
+        AR_0902["AR-0902 - In progress"]:::status_in_progress
         AR_0903["AR-0903 - Planned"]:::status_planned
         AR_0904["AR-0904 - Planned"]:::status_planned
         AR_0905["AR-0905 - Planned"]:::status_planned
@@ -506,19 +506,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0307](tasks/AR-0307-agent-goose.md): Implement goose client adapter | quality-20260906 | Run pinned AAIF goose in no-session structured mode. | Await explicit AR-0305 release transfer of the additive lib.rs/CI fence; then rebase onto exact current main, register once, run pinned x86_64/aarch64 native journeys and all exact-tree gates. |
 | P1 | [AR-0801](tasks/AR-0801-terminal-interface.md): Implement terminal and automation interfaces | root-coordination-20260906 | Provide doctor, plan, run, sweep, compare and report with stable JSON output. | Add failure-path and PTY/resize-adjacent terminal tests, run workspace/full quality/formal gates, then create a focused signed DCO candidate for independent immutable review. |
+| P1 | [AR-0902](tasks/AR-0902-fault-assurance.md): Add fuzz mutation and lifecycle fault campaigns | contracts-20260906 | Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection. | Build bounded campaigns and counterexample retention. |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | replay-20260906 | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Await serialized additive registration fence; then rebase the three owned mini-SWE paths onto exact current main, add only module/test registration, rerun exact-tree full gates, and produce a signed DCO candidate for immutable review. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0902](tasks/AR-0902-fault-assurance.md): Add fuzz mutation and lifecycle fault campaigns | Unclaimed | Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection. | Build bounded campaigns and counterexample retention. |
 
 ### Planned (48)
 
