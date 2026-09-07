@@ -14,7 +14,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-agent-opendesk` | `feature/agent-opendesk` | `8eb99d3c7235` | 0 | behind 111, ahead 0 |
 | `agent-systems-benchmark-agent-qwen-code` | `feature/agent-qwen-code` | `0be96c9ec50e` | 0 | behind 87, ahead 0 |
 | `agent-systems-benchmark-agent-replay-conformance` | `feature/agent-replay-conformance` | `111be970534f` | 0 | behind 4, ahead 0 |
-| `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `9d17563f39c1` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `9d17563f39c1` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `README.md` |
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `0717d4acd168` | 0 | behind 103, ahead 0 |
 | `agent-systems-benchmark-ci-artifact-quota-resilience` | `feature/ci-artifact-quota-resilience` | `7d98653e7e7f` | 0 | behind 49, ahead 0 |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 172, ahead 0 |
