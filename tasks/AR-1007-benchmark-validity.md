@@ -11,7 +11,7 @@
   "id": "AR-1007",
   "next_action": "Implement registry schema and validation for built-in and imported workloads.",
   "observed_branch": "feature/benchmark-validity",
-  "observed_dirty": 4,
+  "observed_dirty": 5,
   "observed_head": "20ac1e507e678aff463ec5f6c7b37cfcd67a5ad0",
   "owner": "replay_20260906",
   "plan": "../plans/AR-1007.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track dataset provenance, contamination risk, grader validity and native portability per workload revision.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Maintain benchmark validity and portability registry",
-  "updated_at": "2026-09-07T23:37:36+00:00",
+  "updated_at": "2026-09-07T23:39:55+00:00",
   "worktree_key": "agent-systems-benchmark-benchmark-validity"
 }
 ---
