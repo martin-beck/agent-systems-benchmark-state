@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 101,
+  "task_revision": 102,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T09:56:49+00:00",
+  "updated_at": "2026-09-07T09:57:42+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
@@ -335,3 +335,6 @@ Implementation has not started. Read the linked plan before claiming.
   analyzer directory is /srv/data/projects/.asb-local/quality-tools/bin. Resume only remaining
   failure fixtures/platform/formal and source checks; do not repeat the already-green Cargo gates
   absent tree changes.
+
+- 2026-09-07T09:57:42+00:00: Recorded command exit 0; command argv SHA-256
+  13cde293093936aae7162491b07b3fbec0069e35b14d2d6d56a9ddea23714a65.
