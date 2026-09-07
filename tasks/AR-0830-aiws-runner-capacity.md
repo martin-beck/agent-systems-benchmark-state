@@ -2,7 +2,7 @@
 {
   "branch": "feature/development-host-runner-capacity",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-07T09:13:54+00:00",
   "depends_on": [
     "AR-0002",
     "AR-0003",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/development-host-runner-capacity",
   "observed_dirty": 0,
   "observed_head": "6518802f1728370e0553986285925eedffc70f36",
-  "owner": "",
+  "owner": "contracts-20260906",
   "plan": "../plans/AR-0830.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T06:13:19+00:00",
+  "updated_at": "2026-09-07T06:13:54+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
@@ -214,3 +214,5 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-07T06:13:19+00:00: Coordinator reopens after authorized GitHub repository registration
   boundary became available; local safety findings remain required repair criteria before online
   canary.
+
+- 2026-09-07T06:13:54+00:00: Claimed by contracts-20260906.
