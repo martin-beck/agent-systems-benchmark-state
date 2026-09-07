@@ -11,12 +11,16 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #31 | `feature/native-platforms@bdaf9c108226` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #40 | `feature/replay-opencode@eec93a240b58` | `main` | CLEAN | - | test(replay): qualify OpenCode offline replay |
+| #40 | `feature/replay-opencode@eec93a240b58` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | test(replay): qualify OpenCode offline replay |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34126097885 | `eec93a240b58` | pull_request | Repository quality | in_progress:- |
+| 34126097792 | `eec93a240b58` | pull_request | Fault assurance | in_progress:- |
+| 34126097790 | `eec93a240b58` | pull_request | Rust verification | in_progress:- |
+| 34126097779 | `eec93a240b58` | pull_request | Formal assurance | in_progress:- |
 | 34123004119 | `a0d80e48deb8` | push | Formal assurance | completed:success |
 | 34123004066 | `a0d80e48deb8` | push | Fault assurance | completed:success |
 | 34123003973 | `a0d80e48deb8` | push | Rust verification | completed:success |
@@ -25,7 +29,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34122642569 | `3cf9a53fce70` | pull_request | Rust verification | completed:success |
 | 34122642558 | `3cf9a53fce70` | pull_request | Repository quality | completed:success |
 | 34122642542 | `3cf9a53fce70` | pull_request | Fault assurance | completed:success |
-| 34121326944 | `ad0cdfc35d14` | push | Repository quality | completed:success |
-| 34121326929 | `ad0cdfc35d14` | push | Rust verification | completed:success |
-| 34121326883 | `ad0cdfc35d14` | push | Formal assurance | completed:success |
-| 34121326875 | `ad0cdfc35d14` | push | Fault assurance | completed:success |
