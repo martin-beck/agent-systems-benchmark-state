@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0830",
-  "next_action": "Await exact-main fault/quality/Rust completion on 14ac5ce; after all green, independently verify service configuration/restart semantics and decide whether AR-0830 can release done with reboot explicitly unclaimed or needs a persistent service follow-up.",
+  "next_action": "Resolve the state-tool Ruff regression under coordination ownership, then decide the unmet AR-0830 reboot-persistence criterion: ephemeral registration is necessarily consumed after one job, so an enabled boot service needs a separate tokenless supervisor/orchestration design rather than a false restart claim.",
   "observed_branch": "feature/development-host-runner-capacity",
   "observed_dirty": 0,
   "observed_head": "0d9b363538d27074c284616f195a537f56480b00",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 135,
+  "task_revision": 136,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T06:54:05+00:00",
+  "updated_at": "2026-09-07T06:57:22+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
@@ -426,3 +426,10 @@ Implementation has not started. Read the linked plan before claiming.
   became inactive, owned listener count is zero, reset completed with four mutable roots empty, and
   exact non-ASB Runner.Listener count remained four. No reboot persistence, public-PR routing, or
   AR-0832 qualification is claimed.
+
+- 2026-09-07T06:57:22+00:00: Exact-main post-merge workflows are all green on signed+DCO merge
+  14ac5ce: fault 34092764475, repository quality 34092764447, formal 34092764541, and Rust
+  x86_64/aarch64 34092764480. State schema, 37 unit tests, 95% branch-aware coverage, mypy,
+  render-status and live doctor pass. Ruff alone exposes a pre-existing state-tool regression at
+  handoffctl.py:693: apply_resume has an unused tasks parameter; this is unrelated to AR-0830 and
+  must not be hidden. PROJECT_STATE refresh captures all completed CI.
