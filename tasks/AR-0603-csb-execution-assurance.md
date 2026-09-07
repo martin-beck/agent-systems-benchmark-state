@@ -10,7 +10,7 @@
     "AR-0104"
   ],
   "id": "AR-0603",
-  "next_action": "Implement and negative-test the bounded version-negotiated CSB subprocess boundary in an isolated owned crate; request coordinator Cargo fence before any root workspace/lock integration.",
+  "next_action": "Validate the corrected scratch diff with git apply --check, apply it once through handoffctl run, then run crate-focused checks after the serialized Cargo fence is granted.",
   "observed_branch": "feature/csb-execution-assurance",
   "observed_dirty": 0,
   "observed_head": "939c35c5ee64c9f9685cec471efc03cb620643c2",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T06:34:17+00:00",
+  "updated_at": "2026-09-07T06:34:54+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
@@ -107,3 +107,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T06:34:17+00:00: Recorded command exit 128; command argv SHA-256
   afa18a275766dd40e288b86f30721db3d0f8ea218fa55df6a198f9080403a6d8.
+
+- 2026-09-07T06:34:54+00:00: First isolated crate patch application failed before product mutation
+  because its generated unified-diff hunk counts were incorrect (git apply reported a corrupt
+  patch). Product worktree remains clean at 939c35c. The scratch patch was inspected and corrected
+  to exact 17/18/296-line hunk counts; next action is git apply --check followed by one wrapped
+  apply, not a blind replay.
