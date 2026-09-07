@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-goose",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T22:39:29+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0307",
     "AR-0503",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/replay-goose",
   "observed_dirty": 0,
   "observed_head": "6dfa688ddf9f238b8a0058dbca2c12a858d13bdb",
-  "owner": "contracts_20260906",
+  "owner": "",
   "plan": "../plans/AR-0512.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Qualify replay conformance for goose.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Qualify goose replay",
-  "updated_at": "2026-09-07T21:44:05+00:00",
+  "updated_at": "2026-09-07T21:46:55+00:00",
   "worktree_key": "agent-systems-benchmark-replay-goose"
 }
 ---
@@ -148,3 +148,12 @@ Qualify goose record/replay, network denial, parity, retries, tool calls, cancel
 
 - 2026-09-07T21:44:05+00:00: Recorded command exit 0; command argv SHA-256
   8ad6a98014e58d05faa6327b5b12ce41c407b78dc8b4478cc5323756c262cf5e.
+
+- 2026-09-07T21:46:55+00:00: Released AR-0512 after independent approval and exact immutable
+  integration. PR #53 merged as signed+DCO no-ff 111be970534fbf72332a80c2291fe1fe21acb694 with exact
+  candidate parent 6dfa688; exact-main quality 34164102103, Rust x86_64/aarch64 34164102145, formal
+  34164102181, and fault 34164102144 are green. Postmerge pinned Goose native loopback replay passed
+  in 16.37s with zero residual state; corrected malformed-cassette selector then ran one exact
+  negative successfully. State schema, 38 tests, render check, snapshot and live doctor pass.
+  Support remains the committed pinned Linux Goose artifact/platform route; no live provider
+  credentials, arbitrary upstream versions, or non-Linux claim.
