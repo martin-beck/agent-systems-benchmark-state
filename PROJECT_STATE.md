@@ -11,16 +11,16 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #31 | `feature/native-platforms@bdaf9c108226` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #46 | `feature/gemini-generate-content-replay@7a6bf02e01b7` | `main` | CLEAN | - | replay: add strict Gemini GenerateContent dialect |
+| #46 | `feature/gemini-generate-content-replay@7a6bf02e01b7` | `main` | UNSTABLE | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE | replay: add strict Gemini GenerateContent dialect |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34145528304 | `7a6bf02e01b7` | pull_request | Fault assurance | queued:- |
-| 34145528238 | `7a6bf02e01b7` | pull_request | Rust verification | queued:- |
-| 34145528213 | `7a6bf02e01b7` | pull_request | Formal assurance | queued:- |
-| 34145528212 | `7a6bf02e01b7` | pull_request | Repository quality | queued:- |
+| 34145528304 | `7a6bf02e01b7` | pull_request | Fault assurance | completed:failure |
+| 34145528238 | `7a6bf02e01b7` | pull_request | Rust verification | completed:success |
+| 34145528213 | `7a6bf02e01b7` | pull_request | Formal assurance | completed:success |
+| 34145528212 | `7a6bf02e01b7` | pull_request | Repository quality | completed:success |
 | 34142961362 | `b56768a550fb` | push | Formal assurance | completed:success |
 | 34142961325 | `b56768a550fb` | push | Rust verification | completed:success |
 | 34142961288 | `b56768a550fb` | push | Fault assurance | completed:success |

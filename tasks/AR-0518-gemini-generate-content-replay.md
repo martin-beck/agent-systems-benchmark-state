@@ -11,7 +11,7 @@
   "id": "AR-0518",
   "next_action": "Monitor PR #46 exact-head quality/Rust x86_64+aarch64/formal/fault CI; merge only after terminal green and coordinator authorization.",
   "observed_branch": "feature/gemini-generate-content-replay",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "7a6bf02e01b7f6f5ba93cc69078de84ee118fc2b",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0518.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add strict replay support for Gemini GenerateContent SSE traffic.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Gemini GenerateContent strict-replay dialect",
-  "updated_at": "2026-09-07T16:57:41+00:00",
+  "updated_at": "2026-09-07T17:02:17+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-generate-content-replay"
 }
 ---
