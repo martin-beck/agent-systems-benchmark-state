@@ -12,7 +12,7 @@
   "id": "AR-0516",
   "next_action": "Implement fail-closed OpenDesk HTTP compatibility for span_id, absent-stream SSE, and recorded model catalog probes.",
   "observed_branch": "feature/opendesk-strict-replay-http-compatibility",
-  "observed_dirty": 0,
+  "observed_dirty": 6,
   "observed_head": "40cfa75ca195aaf13be1d5bc8025f96e5f4d3e7c",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0516.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add narrowly scoped strict-replay compatibility for pinned OpenDesk traffic.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "OpenDesk strict-replay HTTP compatibility",
-  "updated_at": "2026-09-07T13:52:58+00:00",
+  "updated_at": "2026-09-07T13:57:29+00:00",
   "worktree_key": "agent-systems-benchmark-opendesk-strict-replay-http-compatibility"
 }
 ---
