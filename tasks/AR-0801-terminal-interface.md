@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide doctor, plan, run, sweep, compare and report with stable JSON output.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Implement terminal and automation interfaces",
-  "updated_at": "2026-09-07T01:08:21+00:00",
+  "updated_at": "2026-09-07T01:10:52+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-interface"
 }
 ---
@@ -44,3 +44,6 @@ Implementation has not started. Read the linked plan before claiming.
   plus only its required Cargo dependency/lock integration and dedicated CLI fixtures; no asb-agents
   registration, schemas, or active adapter paths. Root holds the serialized Cargo.lock fence for
   AR-0801; Gemini separately holds only the additive asb-agents lib.rs fence.
+
+- 2026-09-07T01:10:52+00:00: Recorded command exit 0; command argv SHA-256
+  ad10ed9ff5eac4e58674b8db7e75e27da84a50f5ed14019df1f28374c7acefd0.
