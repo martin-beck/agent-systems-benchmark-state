@@ -11,12 +11,16 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #31 | `feature/native-platforms@bdaf9c108226` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #36 | `feature/csb-execution-assurance@39e306124b56` | `main` | CLEAN | - | feat(csb): add pinned contained execution boundary |
+| #36 | `feature/csb-execution-assurance@39e306124b56` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(csb): add pinned contained execution boundary |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34111085145 | `39e306124b56` | pull_request | Repository quality | in_progress:- |
+| 34111085133 | `39e306124b56` | pull_request | Fault assurance | in_progress:- |
+| 34111085132 | `39e306124b56` | pull_request | Formal assurance | in_progress:- |
+| 34111085096 | `39e306124b56` | pull_request | Rust verification | in_progress:- |
 | 34106562693 | `0cdccfb899b8` | push | Rust verification | completed:success |
 | 34106562688 | `0cdccfb899b8` | push | Repository quality | completed:success |
 | 34106562660 | `0cdccfb899b8` | push | Fault assurance | completed:success |
@@ -25,7 +29,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34105826662 | `9b4e7084e02c` | pull_request | Repository quality | completed:success |
 | 34105826653 | `9b4e7084e02c` | pull_request | Formal assurance | completed:success |
 | 34105826645 | `9b4e7084e02c` | pull_request | Fault assurance | completed:success |
-| 34099107816 | `dc224fcfddea` | push | Rust verification | completed:success |
-| 34099107761 | `dc224fcfddea` | push | Repository quality | completed:success |
-| 34099107750 | `dc224fcfddea` | push | Fault assurance | completed:success |
-| 34099107729 | `dc224fcfddea` | push | Formal assurance | completed:success |
