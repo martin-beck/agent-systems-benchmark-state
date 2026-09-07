@@ -9,7 +9,7 @@
     "AR-0701"
   ],
   "id": "AR-0317",
-  "next_action": "Await independent immutable review of exact 3d0bc9ccf1c5d4c524cf7689e8d598897bf9c700; keep branch unpublished and retain serialized Cargo/schema/release fence.",
+  "next_action": "Completed; retain Linux/operator-owned acquisition limits.",
   "observed_branch": "feature/runtime-bundle-manifest",
   "observed_dirty": 0,
   "observed_head": "4b2805d870dfe9024d29580d5f973ff63d0a9073",
