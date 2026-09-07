@@ -13,16 +13,16 @@
   "next_action": "Independent immutable review of bcb4f8643b309f46f0b93eeb3a66ef98e4d30586; publish only after approval.",
   "observed_branch": "feature/frontend-control-api-repair",
   "observed_dirty": 0,
-  "observed_head": "bcb4f8643b309f46f0b93eeb3a66ef98e4d30586",
+  "observed_head": "0d2534f614cdc3ec43199bcb6da25083ef680f24",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0847.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and independently qualify the blocked frontend control API candidate.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Frontend control API repair",
-  "updated_at": "2026-09-07T21:51:06+00:00",
+  "updated_at": "2026-09-07T21:52:09+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api-repair"
 }
 ---
