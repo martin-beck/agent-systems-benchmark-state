@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**115 ARs tracked** across 5 active status categories.
+**115 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 3 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 63 |
 | **Future** | Deferred roadmap work | 0 |
@@ -89,7 +89,7 @@ flowchart LR
         AR_0507["AR-0507 - Done"]:::status_done
         AR_0508["AR-0508 - Done"]:::status_done
         AR_0509["AR-0509 - In progress"]:::status_in_progress
-        AR_0510["AR-0510 - Open"]:::status_open
+        AR_0510["AR-0510 - In progress"]:::status_in_progress
         AR_0511["AR-0511 - Planned"]:::status_planned
         AR_0512["AR-0512 - Planned"]:::status_planned
         AR_0513["AR-0513 - Planned"]:::status_planned
@@ -690,18 +690,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0509](tasks/AR-0509-replay-codex.md): Qualify Codex replay | contracts_20260906 | Qualify replay conformance for Codex. | After AR-0517 integrates, update AR-0509 onto exact main, add bounded Codex retry evidence, then run full exact-tree gates and candidate review. |
+| P0 | [AR-0510](tasks/AR-0510-replay-gemini.md): Qualify Gemini replay | quality_20260906 | Qualify replay conformance for Gemini. | Prove credential-free record/replay conformance for Gemini with network denial and malformed/tool/cancel negatives. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0510](tasks/AR-0510-replay-gemini.md): Qualify Gemini replay | Unclaimed | Qualify replay conformance for Gemini. | Prove credential-free record/replay conformance for Gemini with network denial and malformed/tool/cancel negatives. |
 
 ### Blocked (4)
 

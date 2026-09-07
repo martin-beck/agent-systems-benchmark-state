@@ -8,13 +8,8 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0509](tasks/AR-0509-replay-codex.md): Qualify Codex replay | Qualify replay conformance for Codex. | After AR-0517 integrates, update AR-0509 onto exact main, add bounded Codex retry evidence, then run full exact-tree gates and candidate review. | contracts_20260906 |
+| P0 | [AR-0510](tasks/AR-0510-replay-gemini.md): Qualify Gemini replay | Qualify replay conformance for Gemini. | Prove credential-free record/replay conformance for Gemini with network denial and malformed/tool/cancel negatives. | quality_20260906 |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. | root-coordination-20260906 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0510](tasks/AR-0510-replay-gemini.md): Qualify Gemini replay | Qualify replay conformance for Gemini. | Prove credential-free record/replay conformance for Gemini with network denial and malformed/tool/cancel negatives. | - |
 
 ## Blocked
 
