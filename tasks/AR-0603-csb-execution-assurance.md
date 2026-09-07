@@ -2,7 +2,7 @@
 {
   "branch": "feature/csb-execution-assurance",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T09:31:31+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/csb-execution-assurance",
   "observed_dirty": 1,
   "observed_head": "939c35c5ee64c9f9685cec471efc03cb620643c2",
-  "owner": "contracts-20260906",
+  "owner": "",
   "plan": "../plans/AR-0603.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T06:35:36+00:00",
+  "updated_at": "2026-09-07T06:35:42+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
@@ -122,3 +122,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T06:35:36+00:00: Recorded command exit 1; command argv SHA-256
   391271fde14b43153d72996ebb6e7762ebae2d15fe3d3b7ad84115b055bb4ea1.
+
+- 2026-09-07T06:35:42+00:00: Coordinator elevates authorized AR-0830 runner startup repair and
+  online canary; preserve CSB checkpoint and return to it after runner evidence.
