@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0305",
-  "next_action": "Await coordinator publication authorization for independently approved exact d381d34; then push with exact lease and require exact-head hosted CI.",
+  "next_action": "Monitor and repair exact-head PR #26 CI at immutable d381d34; do not merge before coordinator authorization.",
   "observed_branch": "feature/agent-gemini",
   "observed_dirty": 0,
   "observed_head": "d381d340163eec8c2051949f9f0c2e31789f25a4",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned Gemini CLI through noninteractive JSON events.",
-  "task_revision": 160,
+  "task_revision": 161,
   "title": "Implement Gemini CLI client adapter",
-  "updated_at": "2026-09-07T01:42:04+00:00",
+  "updated_at": "2026-09-07T01:42:27+00:00",
   "worktree_key": "agent-systems-benchmark-agent-gemini"
 }
 ---
@@ -510,3 +510,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T01:42:04+00:00: Recorded command exit 0; command argv SHA-256
   06c545d003dbc383d99ec9f64c89d319fbcee87d4c31fa00590af676c7768393.
+
+- 2026-09-07T01:42:27+00:00: Published independently approved exact
+  d381d340163eec8c2051949f9f0c2e31789f25a4 to new feature/agent-gemini using absent-ref
+  force-with-lease and opened focused PR #26
+  https://github.com/martin-beck/agent-systems-benchmark/pull/26. PR base exact b79534b, head exact
+  d381d34, MERGEABLE. Exact-head runs started: quality 34073857740, Rust x86_64/aarch64 34073857745,
+  formal Kani/Loom x86_64/aarch64 34073857782; all initially in progress.
