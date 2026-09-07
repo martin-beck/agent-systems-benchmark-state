@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-platform-lab",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T12:04:33+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0701",
     "AR-0103",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/native-platform-lab",
   "observed_dirty": 0,
   "observed_head": "b1669203308db5a75fee1e78a45c6fc8e71f17ce",
-  "owner": "quality-20260906",
+  "owner": "",
   "plan": "../plans/AR-0703.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide genuine disposable native hosts for required Debian and openEuler platform qualification.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Provision native platform qualification capacity",
-  "updated_at": "2026-09-07T10:36:59+00:00",
+  "updated_at": "2026-09-07T10:37:02+00:00",
   "worktree_key": "agent-systems-benchmark-native-platform-lab"
 }
 ---
@@ -54,3 +54,9 @@ openEuler or Debian kernel evidence. Containers, cross-builds and emulation cann
   billing boundary, or credential-injection/revocation path is available, so all four required
   native provision-run-destroy cycles are blocked fail-closed. One initial read-only audit shell had
   a syntax failure after the runner query and made no mutation; a corrected audit completed.
+
+- 2026-09-07T10:37:02+00:00: Released blocked without product changes or capacity claims. Exact
+  blocker: no authorized credential-isolated provider/account, cost ceiling, quota/billing
+  visibility, or genuine disposable Debian 13.6 and openEuler 24.03 LTS-SP2 x86_64/aarch64 hosts.
+  Resume only after coordinator supplies explicit spend authorization and least-privilege capacity;
+  containers, cross-builds, QEMU/TCG, and current Ubuntu hosted runners remain non-evidence.
