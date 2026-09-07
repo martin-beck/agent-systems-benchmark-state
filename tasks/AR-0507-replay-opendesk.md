@@ -12,17 +12,17 @@
   "id": "AR-0507",
   "next_action": "Await serialized shared replay compatibility repair for legal underscore headers and absent-stream SSE; retain cleanly tested adapter route-root fix and isolated real conformance test.",
   "observed_branch": "feature/replay-opendesk",
-  "observed_dirty": 2,
-  "observed_head": "a0d80e48deb8750543606c2b577e1a52df26fc4c",
+  "observed_dirty": 1,
+  "observed_head": "68345a631a2c865a9e339ade574c0b53ec73367a",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0507.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenDesk.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Qualify OpenDesk replay",
-  "updated_at": "2026-09-07T13:15:15+00:00",
+  "updated_at": "2026-09-07T13:15:20+00:00",
   "worktree_key": "agent-systems-benchmark-replay-opendesk"
 }
 ---
