@@ -16,10 +16,10 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34152581898 | `076e9c448109` | push | Repository quality | in_progress:- |
-| 34152581849 | `076e9c448109` | push | Fault assurance | in_progress:- |
-| 34152581812 | `076e9c448109` | push | Rust verification | in_progress:- |
-| 34152581801 | `076e9c448109` | push | Formal assurance | in_progress:- |
+| 34152581898 | `076e9c448109` | push | Repository quality | completed:success |
+| 34152581849 | `076e9c448109` | push | Fault assurance | completed:success |
+| 34152581812 | `076e9c448109` | push | Rust verification | completed:success |
+| 34152581801 | `076e9c448109` | push | Formal assurance | completed:success |
 | 34152355356 | `1366ad3bd03f` | pull_request | Repository quality | completed:success |
 | 34152355313 | `1366ad3bd03f` | pull_request | Rust verification | completed:success |
 | 34152355307 | `1366ad3bd03f` | pull_request | Formal assurance | completed:success |
