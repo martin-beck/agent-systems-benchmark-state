@@ -11,15 +11,15 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #31 | `feature/native-platforms@bdaf9c108226` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #37 | `feature/runtime-bundle-manifest@4b2805d870df` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, IN_PROGRESS:, QUEUED:, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, IN_PROGRESS: | feat: verify signed runtime bundles offline |
+| #37 | `feature/runtime-bundle-manifest@4b2805d870df` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat: verify signed runtime bundles offline |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 34118162606 | `4b2805d870df` | pull_request | Rust verification | queued:- |
-| 34118162533 | `4b2805d870df` | pull_request | Fault assurance | queued:- |
-| 34118162453 | `4b2805d870df` | pull_request | Formal assurance | queued:- |
+| 34118162533 | `4b2805d870df` | pull_request | Fault assurance | in_progress:- |
+| 34118162453 | `4b2805d870df` | pull_request | Formal assurance | in_progress:- |
 | 34118162347 | `4b2805d870df` | pull_request | Repository quality | in_progress:- |
 | 34117651622 | `3d0bc9ccf1c5` | pull_request | Rust verification | completed:failure |
 | 34117651563 | `3d0bc9ccf1c5` | pull_request | Fault assurance | completed:success |
