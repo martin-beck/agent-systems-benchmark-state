@@ -10,7 +10,7 @@
     "AR-0104"
   ],
   "id": "AR-0603",
-  "next_action": "After explicit Cargo fence handoff, rebase the two signed commits onto exact main, add only asb-csb-runner membership/runtime/store dependencies and implement durable sandboxed process/artifact/cancellation/recovery tests including a real pinned offline x86_64 fixture.",
+  "next_action": "Run nightly branch coverage through handoffctl, close remaining branch scenarios and executable replacement-race design, then complete exact-tree full gates.",
   "observed_branch": "feature/csb-execution-assurance",
   "observed_dirty": 10,
   "observed_head": "ec4a1d28baca4426b17bc20cffee036d1d3eff23",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 88,
+  "task_revision": 89,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T09:42:05+00:00",
+  "updated_at": "2026-09-07T09:43:09+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
@@ -290,3 +290,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T09:42:05+00:00: Recorded command exit 0; command argv SHA-256
   41dba6f8ae514acc6402d761652be781122872b989f7064088b367e229421912.
+
+- 2026-09-07T09:43:09+00:00: Coverage attempt was invoked directly rather than through the required
+  AR wrapper and failed before tests because stable rustc rejects cargo-llvm-cov branch
+  instrumentation. It created only external build artifacts under
+  /srv/data/projects/.asb-local/target-ar0603-cov and no source change. Changed conclusion: branch
+  coverage requires the already-installed pinned nightly-2025-11-21 toolchain; rerun once through
+  handoffctl, not unchanged on stable.
