@@ -9,7 +9,7 @@
     "AR-0517"
   ],
   "id": "AR-0518",
-  "next_action": "Monitor PR #46 replacement head 93c19625f91065d0bcd7acb2f9a240bc71a21f3f exact quality/Rust/formal/fault CI; merge only after terminal green and authorization.",
+  "next_action": "Await exact-main quality/Rust x86_64+aarch64/fault CI for signed merge 74d311ca; then reconcile, live doctor, and release AR-0518.",
   "observed_branch": "feature/gemini-generate-content-replay",
   "observed_dirty": 0,
   "observed_head": "93c19625f91065d0bcd7acb2f9a240bc71a21f3f",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add strict replay support for Gemini GenerateContent SSE traffic.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "Gemini GenerateContent strict-replay dialect",
-  "updated_at": "2026-09-07T17:08:29+00:00",
+  "updated_at": "2026-09-07T17:08:59+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-generate-content-replay"
 }
 ---
@@ -233,3 +233,11 @@ Require schema/runtime parity, focused and adversarial tests, fuzz/mutation/form
 
 - 2026-09-07T17:08:29+00:00: Recorded command exit 0; command argv SHA-256
   00bf597aff04ac6833d170a8c89cbda3f0d8c744c94600026a1e0ac4e806c6cd.
+
+- 2026-09-07T17:08:59+00:00: Integrated reviewed green PR #46 as SSH-signed+DCO no-ff merge
+  74d311ca7a4ae86809424f9ff5edfe2c16127891 with exact parents
+  b56768a550fb293650dd29ab793460e0277ffb8d and 93c19625f91065d0bcd7acb2f9a240bc71a21f3f; merge tree
+  equals reviewed tree f7a0d14ad66ff9908e9fbbc907362b8fa1bc84cf. Remote main and GitHub PR merge
+  identity verified. Exact-main local postmerge green: fmt, workspace clippy, all tests, docs,
+  release build, formal/Loom/state models, and pinned mutation 7/7. Hosted exact-main formal
+  34146252691 green; quality 34146252705, Rust 34146252697, fault 34146252695 in progress.
