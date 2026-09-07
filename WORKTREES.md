@@ -20,8 +20,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-engineering-workloads` | `feature/engineering-workloads` | `41ffc6eb8f1a` | 0 | behind 21, ahead 0 |
 | `agent-systems-benchmark-experiment-comparability` | `feature/experiment-comparability` | `eb5e84933830` | 0 | behind 31, ahead 0 |
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 85, ahead 0 |
-| `agent-systems-benchmark-fault-assurance` | `feature/fault-assurance` | `e85548d00cff` | 1 | behind 0, ahead 0 |
-| changed files | - | - | - | `fuzz/` |
+| `agent-systems-benchmark-fault-assurance` | `feature/fault-assurance` | `e85548d00cff` | 3 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-replay/tests/fault_assurance.rs`, `crates/asb-store/tests/`, `fuzz/` |
 | `agent-systems-benchmark-formal-assurance` | `feature/formal-assurance` | `2a495a99a657` | 0 | behind 43, ahead 0 |
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 81, ahead 0 |
 | `agent-systems-benchmark-portable-metrics` | `feature/portable-metrics` | `a0f67bea1ffe` | 0 | behind 55, ahead 0 |
