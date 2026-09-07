@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Codex.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Qualify Codex replay",
-  "updated_at": "2026-09-07T16:07:04+00:00",
+  "updated_at": "2026-09-07T16:07:29+00:00",
   "worktree_key": "agent-systems-benchmark-replay-codex"
 }
 ---
@@ -211,3 +211,6 @@ Qualify Codex record/replay, network denial, parity, retries, tool calls, cancel
   b3f5054179b726de5cb128e98bbf3738a88d53cc0fed5ef07b4a7fe7fdd2297a.
 
 - 2026-09-07T16:07:04+00:00: Heartbeat by contracts_20260906.
+
+- 2026-09-07T16:07:29+00:00: Recorded command exit 127; command argv SHA-256
+  da298acaf163e949c38e3a171e6a44bdfbd850539f75972a00d866ea48e37384.
