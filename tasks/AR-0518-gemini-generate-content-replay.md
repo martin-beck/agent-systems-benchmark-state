@@ -9,7 +9,7 @@
     "AR-0517"
   ],
   "id": "AR-0518",
-  "next_action": "Implement bounded Gemini GenerateContent dialect and focused schema/runtime/SSE/redaction adversarials after binding exact AR-0510 capture shape.",
+  "next_action": "Complete full/formal/coverage/privacy gates and produce an unpublished signed DCO candidate for immutable review.",
   "observed_branch": "feature/gemini-generate-content-replay",
   "observed_dirty": 8,
   "observed_head": "ab5d6c91c99d48883ed58eb1df6803c2711ecbd3",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add strict replay support for Gemini GenerateContent SSE traffic.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Gemini GenerateContent strict-replay dialect",
-  "updated_at": "2026-09-07T16:46:49+00:00",
+  "updated_at": "2026-09-07T16:49:00+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-generate-content-replay"
 }
 ---
@@ -148,3 +148,13 @@ Require schema/runtime parity, focused and adversarial tests, fuzz/mutation/form
 
 - 2026-09-07T16:46:49+00:00: Recorded command exit 0; command argv SHA-256
   76c6864d584a42b50af5640e45ba7f5a539a348b76248d03ef7a58808f90ef95.
+
+- 2026-09-07T16:49:00+00:00: Bound exact Gemini 0.58.0 evidence after downstream capture correction:
+  request-body selector set is empty; thinkingConfig is exactly empty; transient HTTP 500 INTERNAL
+  retries require an immediately identical request; functionCall response ID and name must match the
+  next request functionCall/functionResponse pair; successful data-only SSE admits exactly one
+  closed candidate/usage event. Added adversarial mismatch, malformed payload, retry adjacency,
+  selector, route/query/model, marker, and public-fixture runtime negatives. Focused results green:
+  gemini_generate_content 8, schema_conformance 3, strict_replay 19; git diff --check green. Earlier
+  patch/hash/context/cargo-path failures occurred before or were followed by the intended product
+  effect and remain named in command ledger. Full/formal/coverage/privacy gates remain.
