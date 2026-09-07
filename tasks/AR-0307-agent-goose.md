@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0307",
-  "next_action": "Hold immutable signed+DCO candidate c151450f4ef4b15cc0efafffc708afd7b5d9aa28 for independent review; publish only after approval, then require exact-head native x86_64/aarch64 CI.",
+  "next_action": "Hold repaired immutable signed+DCO head 08feca551df73dbca9e4be23d82d64018fe95d1e for independent re-review; publish only after approval and require exact-head native x86_64/aarch64 CI.",
   "observed_branch": "feature/agent-goose",
   "observed_dirty": 0,
   "observed_head": "08feca551df73dbca9e4be23d82d64018fe95d1e",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned AAIF goose in no-session structured mode.",
-  "task_revision": 194,
+  "task_revision": 195,
   "title": "Implement goose client adapter",
-  "updated_at": "2026-09-07T02:34:27+00:00",
+  "updated_at": "2026-09-07T02:34:49+00:00",
   "worktree_key": "agent-systems-benchmark-agent-goose"
 }
 ---
@@ -610,3 +610,19 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T02:34:27+00:00: Recorded command exit 0; command argv SHA-256
   00ab58f73e4aba97e70be1c2958cd95ace664719fe9c13a0f81fbc95384a3c25.
+
+- 2026-09-07T02:34:49+00:00: Repaired all independent-review blockers in signed+DCO follow-up
+  08feca551df73dbca9e4be23d82d64018fe95d1e, tree 4cefd99eeb8fec33a582af17b67bfa003bb11496, retaining
+  exact e85548d base and six-path net scope. Session/attempt IDs are nonempty and <=4096 bytes
+  before mutation; mapped ASB events and per-message content items have independent 65536/4096
+  ceilings with amplification negatives. NO_PROXY rejects suffix overlap with inspected
+  us.i.posthog.com egress using adversarial com/posthog/i.posthog/exact cases and accepts
+  notposthog.com. Start now copies and hashes the same O_NOFOLLOW-opened executable bytes into a
+  private mode-0500 attempt artifact and launches only that copy; a configured-path replacement
+  before spawn cannot execute. Native fixture now places both AGENTS.md and .goosehints sentinels
+  and proves neither reaches provider requests. Focused/native/full workspace, docs/release, supply
+  chain, coverage (workspace green; Goose 93.35% lines), exact-range
+  policy/Gitleaks/workflow/failure fixtures/platform, Loom/state models, all Kani proofs and
+  deliberate negative are green. Negative log SHA-256
+  06e41ef2578c03ad4d66e3d08157526b31f94d82bac490b0fce767acd35d47a1. Branch clean; origin/main
+  remains e85548d.
