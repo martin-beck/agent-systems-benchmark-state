@@ -39,8 +39,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | changed files | - | - | - | `crates/asb-agents/tests/replay_aider.rs` |
 | `agent-systems-benchmark-replay-cassettes` | `feature/replay-cassettes` | `cd88f5703fb3` | 0 | behind 116, ahead 0 |
 | `agent-systems-benchmark-replay-evaluation` | `feature/replay-evaluation` | `3d04a2d5a3b3` | 0 | behind 129, ahead 0 |
-| `agent-systems-benchmark-replay-opencode` | `feature/replay-opencode` | `a0d80e48deb8` | 4 | behind 0, ahead 0 |
-| changed files | - | - | - | `Cargo.lock`, `crates/asb-agents/Cargo.toml`, `crates/asb-agents/README.md`, `crates/asb-agents/tests/replay_opencode.rs` |
+| `agent-systems-benchmark-replay-opencode` | `feature/replay-opencode` | `eec93a240b58` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-replay-opendesk` | `feature/replay-opendesk` | `a0d80e48deb8` | 1 | behind 0, ahead 0 |
 | changed files | - | - | - | `crates/asb-agents/tests/replay_opendesk.rs` |
 | `agent-systems-benchmark-replay-pacing` | `feature/replay-pacing` | `73d28a431c78` | 0 | behind 84, ahead 0 |
