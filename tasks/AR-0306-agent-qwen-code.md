@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned Qwen Code through isolated headless stream-JSON.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Implement Qwen Code client adapter",
-  "updated_at": "2026-09-07T00:53:31+00:00",
+  "updated_at": "2026-09-07T00:54:00+00:00",
   "worktree_key": "agent-systems-benchmark-agent-qwen-code"
 }
 ---
@@ -246,3 +246,6 @@ Implementation has not started. Read the linked plan before claiming.
   zero-token result and exit 0. The adapter now requires positive input and output token evidence
   before accepting Completed; unit and real pinned HTTP 400 negatives prove fail-closed behavior
   without retaining diagnostic content.
+
+- 2026-09-07T00:54:00+00:00: Recorded command exit 0; command argv SHA-256
+  b41ce09c483cc8253c30f1acf761106b1d4213ce0a6247922ce0a7599730f9ce.
