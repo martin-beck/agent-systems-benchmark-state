@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0509",
-  "next_action": "Await independent immutable review of exact d086fec11f5959c1ad873efaa5380e290973d273; publish only after approval and exact-head CI.",
+  "next_action": "Monitor PR #45 exact d086fec checks; investigate any failure, then integrate only after every required workflow is green.",
   "observed_branch": "feature/replay-codex",
   "observed_dirty": 0,
   "observed_head": "d086fec11f5959c1ad873efaa5380e290973d273",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Codex.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Qualify Codex replay",
-  "updated_at": "2026-09-07T16:18:33+00:00",
+  "updated_at": "2026-09-07T16:19:02+00:00",
   "worktree_key": "agent-systems-benchmark-replay-codex"
 }
 ---
@@ -246,3 +246,8 @@ Qualify Codex record/replay, network denial, parity, retries, tool calls, cancel
 
 - 2026-09-07T16:18:33+00:00: Recorded command exit 0; command argv SHA-256
   0f9b3def4697edf060fdc61deaca49c23508a504b93d4f1e4ac65b40ec665a38.
+
+- 2026-09-07T16:19:02+00:00: Independent immutable review approved d086fec. Published exact branch
+  with absent-ref force-with-lease and opened PR #45, base ab5d6c91/head d086fec, mergeable.
+  Exact-head runs started: Rust 34142644584, Fault 34142644602, Formal 34142644656, Quality
+  34142644831.
