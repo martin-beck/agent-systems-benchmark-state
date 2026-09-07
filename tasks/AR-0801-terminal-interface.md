@@ -2,7 +2,7 @@
 {
   "branch": "feature/terminal-interface",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T04:01:09+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0104",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/terminal-interface",
   "observed_dirty": 0,
   "observed_head": "d2e7b66ff6af1f9f5924ab40c2a6cff74a6ba7f4",
-  "owner": "root-coordination-20260906",
+  "owner": "",
   "plan": "../plans/AR-0801.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Provide doctor, plan, run, sweep, compare and report with stable JSON output.",
-  "task_revision": 183,
+  "task_revision": 184,
   "title": "Implement terminal and automation interfaces",
-  "updated_at": "2026-09-07T02:52:44+00:00",
+  "updated_at": "2026-09-07T02:55:36+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-interface"
 }
 ---
@@ -586,3 +586,12 @@ Implementation has not started. Read the linked plan before claiming.
   it was not accepted as exit evidence and the strict replacement command above was run
   successfully. Exact-main formal 34077635181 is green; Rust aarch64 green while x86_64 and quality
   remain in progress.
+
+- 2026-09-07T02:55:36+00:00: AR-0801 complete. Independently approved candidate d2e7b66 merged by
+  signed+DCO no-ff b2833ab via PR #29; remote/local main and merge identity exact. PR-head formal
+  34077451932, quality 34077451955, Rust x86_64+aarch64 34077451953 all green. Exact-main formal
+  34077635181, quality 34077635208, Rust x86_64+aarch64 34077635164 all green. Strict local
+  post-merge fmt, clippy, all-target workspace tests, release build and CLI exit-contract smoke
+  green. Full locked coordination validation: Ruff, mypy, 37 tests, 97% branch coverage,
+  schema/privacy/generated views, reconcile/snapshot/render check and live doctor green. Worktrees
+  and synchronized public refs clean; release Cargo workspace/lock and scheduler integration fences.
