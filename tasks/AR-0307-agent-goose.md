@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned AAIF goose in no-session structured mode.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Implement goose client adapter",
-  "updated_at": "2026-09-07T01:05:18+00:00",
+  "updated_at": "2026-09-07T01:05:36+00:00",
   "worktree_key": "agent-systems-benchmark-agent-goose"
 }
 ---
@@ -264,3 +264,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T01:05:18+00:00: Recorded command exit 0; command argv SHA-256
   002bb1ae65cd8e1f3a63e28fc70319604edde487253b4b64d0c9f45ca8082d22.
+
+- 2026-09-07T01:05:36+00:00: Disposable in-place compile harness under /srv/data/projects/.asb-local
+  compiled the isolated Goose module and real fixture without touching shared registration: 12 unit
+  tests and 2 external compile-fail doctests passed. First native run exposed and recorded two
+  fixture-only failures (uncompiled temporary borrow; unhandled preliminary GET /v1/models);
+  repaired bounded model-discovery fixture. Exact pinned x86_64 musl executable then passed one
+  native 15.18s journey covering model discovery, two completion requests, real write,
+  lifecycle/usage, HTTP 400 exit-zero fail-closed privacy mapping, idempotent process-group
+  cancellation, and cleanup. Aarch64 native journey and full workspace gates still await
+  fence/rebase.
