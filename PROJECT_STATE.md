@@ -11,12 +11,16 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #31 | `feature/native-platforms@bdaf9c108226` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #54 | `feature/frontend-control-api-repair@0d2534f614cd` | `main` | CLEAN | - | feat: repair frontend control API |
+| #54 | `feature/frontend-control-api-repair@0d2534f614cd` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat: repair frontend control API |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34165176887 | `0d2534f614cd` | pull_request | Fault assurance | queued:- |
+| 34165176880 | `0d2534f614cd` | pull_request | Formal assurance | in_progress:- |
+| 34165176859 | `0d2534f614cd` | pull_request | Rust verification | in_progress:- |
+| 34165176857 | `0d2534f614cd` | pull_request | Repository quality | in_progress:- |
 | 34164102181 | `111be970534f` | push | Formal assurance | completed:success |
 | 34164102145 | `111be970534f` | push | Rust verification | completed:success |
 | 34164102144 | `111be970534f` | push | Fault assurance | completed:success |
@@ -25,7 +29,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34163875397 | `6dfa688ddf9f` | pull_request | Repository quality | completed:success |
 | 34163875385 | `6dfa688ddf9f` | pull_request | Rust verification | completed:success |
 | 34163875368 | `6dfa688ddf9f` | pull_request | Formal assurance | completed:success |
-| 34162048511 | `5a819633552f` | push | Formal assurance | completed:success |
-| 34162048440 | `5a819633552f` | push | Rust verification | completed:success |
-| 34162048426 | `5a819633552f` | push | Fault assurance | completed:success |
-| 34162048411 | `5a819633552f` | push | Repository quality | completed:success |
