@@ -1,0 +1,9 @@
+---
+{"branch":"feature/native-x86-capacity","checkpoint_commit":"","claim_expires":"","depends_on":["AR-0701","AR-0103","AR-0201","AR-0401"],"id":"AR-0848","next_action":"Use the authorized development-host native x86_64 host as a disposable qualification cell; prove identity, isolation, cleanup, provenance, cost bounds, and evidence integrity without making aarch64 claims.","owner":"","plan":"../plans/AR-0848.md","priority":"P1","schema_version":1,"status":"planned","summary":"Qualify authorized disposable native x86_64 capacity on a development host.","task_revision":1,"title":"Qualify native x86 capacity","updated_at":"2026-09-07T00:00:00+00:00","worktree_key":"agent-systems-benchmark-native-x86-capacity"}
+---
+## AR-0848
+
+Qualify the explicitly authorized development-host native x86_64 cell for ASB workloads. Record
+host/distribution/kernel identity, disposable isolation and cleanup, runner provenance,
+privacy-safe evidence, and bounded cost/availability. This AR is x86_64-only and must not
+claim native aarch64 support; native aarch64 remains future work requiring separate capacity.
