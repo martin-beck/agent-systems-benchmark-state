@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0308",
-  "next_action": "Raise applicable mini-SWE branch/line coverage with focused public-boundary negatives, rerun native fixture after prompt-unlink/order hardening, then request serialized shared registration fence.",
+  "next_action": "Await serialized additive registration fence; then rebase the three owned mini-SWE paths onto exact current main, add only module/test registration, rerun exact-tree full gates, and produce a signed DCO candidate for immutable review.",
   "observed_branch": "feature/agent-mini-swe",
   "observed_dirty": 3,
   "observed_head": "2579362d6936b25e6008583f7bd485e5498a4e3f",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned mini-SWE-agent as a bounded batch engineering agent.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "Implement mini-SWE-agent client adapter",
-  "updated_at": "2026-09-07T01:27:41+00:00",
+  "updated_at": "2026-09-07T01:28:07+00:00",
   "worktree_key": "agent-systems-benchmark-agent-mini-swe"
 }
 ---
@@ -291,3 +291,18 @@ Implementation has not started. Read the linked plan before claiming.
   1c6603843763aae3a281aa9d09f8d38b76377692638ae5674cd9f18f3ee1f2ce.
 
 - 2026-09-07T01:27:41+00:00: Heartbeat by replay-20260906.
+
+- 2026-09-07T01:28:07+00:00: Focused boundary expansion reached 95.17% line, 91.80% region, 92.77%
+  function, and 93.10% instantiation coverage for mini_swe.rs; the installed LLVM report exposes no
+  branch denominator, so branch coverage is not claimed. Final isolated disposable-mirror gates
+  passed: fmt, Clippy with warnings denied, 52 asb-agents unit tests, two compile-fail doctests,
+  package docs, and exact pinned mini-SWE-agent 2.4.6 credential-free loopback edit/cancellation
+  journey. The native journey additionally observed the blocked provider process command line and
+  confirmed prompt text absent; workspace edit, causal tool completion, cancellation, unchanged
+  cancellation workspace, and private attempt-state cleanup passed. Gitleaks scanned the agent crate
+  with no leak, diff check passed, owned files contain no private host path, and product shared
+  lib/Cargo/lock/schema paths remain unchanged. Wheel extraction is required because direct zip
+  import does not expose upstream package-data mini.yaml; extracted bytes are the already
+  digest-verified wheel, while dependencies remain caller-provided and unpinned upstream, so no
+  reproducible transitive-environment claim. Ready to request the serialized registration fence; no
+  candidate commit or publication exists yet.
