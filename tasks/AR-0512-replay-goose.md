@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-goose",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T21:46:22+00:00",
+  "claim_expires": "2026-09-07T22:39:29+00:00",
   "depends_on": [
     "AR-0307",
     "AR-0503",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for goose.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Qualify goose replay",
-  "updated_at": "2026-09-07T18:59:47+00:00",
+  "updated_at": "2026-09-07T19:39:29+00:00",
   "worktree_key": "agent-systems-benchmark-replay-goose"
 }
 ---
@@ -80,3 +80,5 @@ Qualify goose record/replay, network denial, parity, retries, tool calls, cancel
   every interaction, while service.rs requires GET body null. Preserve current two-path isolated
   fixture; do not mutate shared asb-replay behind its fence. Before this blocker, pinned loopback
   native discovery passed in 16.42s with one 429 retry, edit/grade/replay/cancel path.
+
+- 2026-09-07T19:39:29+00:00: Heartbeat by contracts_20260906.
