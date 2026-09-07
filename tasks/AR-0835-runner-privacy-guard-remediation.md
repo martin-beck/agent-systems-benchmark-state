@@ -3,18 +3,21 @@
   "branch": "fix/runner-canary-privacy-guards",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-0830", "AR-0831"],
+  "depends_on": [
+    "AR-0830",
+    "AR-0831"
+  ],
   "id": "AR-0835",
   "next_action": "Remove or narrow runner identity leakage in canary output and enforce repository/main-ref guards for every persistent-runner workflow.",
   "owner": "",
   "plan": "../plans/AR-0835.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Remediate runner privacy leakage and protected-workflow guard gaps found during independent audit.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Remediate runner privacy and workflow guards",
-  "updated_at": "2026-09-07T00:00:00+00:00",
+  "updated_at": "2026-09-07T07:48:07+00:00",
   "worktree_key": "agent-systems-benchmark-runner-privacy-guard-remediation"
 }
 ---
@@ -30,3 +33,6 @@ Acceptance criteria:
 - Add negative fixtures for alternate refs, forks, identity leakage, and widened permissions.
 - Re-run privacy, policy, actionlint/zizmor, exact-head CI, and post-merge audit checks.
 - Update documentation to state evidence limits accurately.
+
+- 2026-09-07T07:48:07+00:00: AR-0830 and AR-0831 are durably done; persistent-runner workflow
+  privacy and guard remediation paths are dependency-ready and no active AR owns them.
