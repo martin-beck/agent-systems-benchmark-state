@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify authorized disposable native x86_64 capacity on a development host.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Qualify native x86 capacity",
-  "updated_at": "2026-09-07T23:12:06+00:00",
+  "updated_at": "2026-09-07T23:12:08+00:00",
   "worktree_key": "agent-systems-benchmark-native-x86-capacity"
 }
 ---
@@ -39,3 +39,6 @@ claim native aarch64 support; native aarch64 remains future work requiring separ
   active replay conformance, frontend protocol, and recovery-model work.
 
 - 2026-09-07T23:11:06+00:00: Claimed by quality_20260906.
+
+- 2026-09-07T23:12:08+00:00: Recorded command exit 0; command argv SHA-256
+  9889eb589d2dd928e231a4723c2bf37164066fcf7d45793c8ad8a8e3c731a626.
