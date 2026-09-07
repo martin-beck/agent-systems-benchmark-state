@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-opencode",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T14:55:28+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0301",
     "AR-0503",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/replay-opencode",
   "observed_dirty": 0,
   "observed_head": "eec93a240b5895410603c83b748e7195b2eb89f7",
-  "owner": "contracts-20260906",
+  "owner": "",
   "plan": "../plans/AR-0506.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Qualify replay conformance for OpenCode.",
-  "task_revision": 103,
+  "task_revision": 104,
   "title": "Qualify OpenCode replay",
-  "updated_at": "2026-09-07T13:25:19+00:00",
+  "updated_at": "2026-09-07T13:25:34+00:00",
   "worktree_key": "agent-systems-benchmark-replay-opencode"
 }
 ---
@@ -326,3 +326,13 @@ retries, tool calls, cancellation, and malformed-record negatives.
 
 - 2026-09-07T13:25:19+00:00: Recorded command exit 0; command argv SHA-256
   638d94960b861c3ab69577c4fa100ff8476d041b6b6d3f26686ad344779173af.
+
+- 2026-09-07T13:25:34+00:00: Integrated reviewed OpenCode replay qualification in signed+DCO merge
+  612a5a7e3d471f9f2481d7943b06e6914c893dd2 via PR #40. Exact-head fault 34126097792, formal
+  34126097779, quality 34126097885 and Rust rerun 34126097790 are green; exact-main formal
+  34126876102, fault 34126876343, quality 34126876165 and Rust 34126876180 are green. Postmerge
+  exact-tree workspace fmt/clippy/tests/docs/release/deny/audit plus real loopback-only pinned
+  OpenCode journey passed with clean Git trees and zero owned scratch entries. Support remains
+  pinned OpenCode 1.18.29 Linux x86_64, OpenAI-compatible Chat Completions, credential-free loopback
+  and fixture only; no live provider, native aarch64, non-loopback, other versions/providers, or
+  timing-determinism claim.
