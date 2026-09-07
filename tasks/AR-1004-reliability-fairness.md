@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Report repeated-attempt reliability and prevent aggregate results from hiding starvation or hard strata.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Measure reliability and mixed-workload fairness",
-  "updated_at": "2026-09-07T04:12:40+00:00",
+  "updated_at": "2026-09-07T04:13:04+00:00",
   "worktree_key": "agent-systems-benchmark-reliability-fairness"
 }
 ---
@@ -256,3 +256,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T04:12:40+00:00: Recorded command exit 0; command argv SHA-256
   595d6c56ea29d772313ebf5ceb82661c4ef476f3187f221246de75b550701319.
+
+- 2026-09-07T04:13:04+00:00: Exact-main 814397f post-merge local validation is green from isolated
+  target /srv/data/projects/.asb-local/target-postmerge-ar1004: fmt, workspace all-target Clippy,
+  complete workspace tests including native boundaries, rustdoc -D warnings, release build, formal
+  Loom/state/production/toolchain suite, merge-range DCO/repository policy/diff, and clean
+  primary/feature worktrees. Exact-main hosted runs started: quality 34082158978, fault 34082158961,
+  Rust 34082158999 in progress; formal 34082158982 already green. Await remaining exact-main
+  workflows before release.
