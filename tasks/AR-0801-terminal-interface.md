@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide doctor, plan, run, sweep, compare and report with stable JSON output.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Implement terminal and automation interfaces",
-  "updated_at": "2026-09-07T01:49:07+00:00",
+  "updated_at": "2026-09-07T01:50:20+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-interface"
 }
 ---
@@ -266,3 +266,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T01:49:07+00:00: Recorded command exit 0; command argv SHA-256
   886a0e69cbcf7cc15a53550bcc31b3c0568e6376342429d095bd894f3ef9abee.
+
+- 2026-09-07T01:50:20+00:00: Recorded command exit 0; command argv SHA-256
+  21f93064b6f4f946ae23c62e2c77b9bd3ec2462b60860e6d69094016f168292d.
