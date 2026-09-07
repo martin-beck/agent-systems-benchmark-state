@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support per-interaction request redaction policies for mixed catalog and private requests.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Interaction-aware request redaction",
-  "updated_at": "2026-09-07T20:49:25+00:00",
+  "updated_at": "2026-09-07T20:49:50+00:00",
   "worktree_key": "agent-systems-benchmark-interaction-aware-redaction"
 }
 ---
@@ -189,3 +189,6 @@ Repair the cassette-global request-body redaction limitation exposed by Goose: c
   /srv/data/projects/.asb-local/artifacts/ar0520-mutants-QmNb9o. Earlier ENOSPC and
   missing-toolchain-path attempts were environmental/preflight failures and were not repeated
   unchanged.
+
+- 2026-09-07T20:49:50+00:00: Recorded command exit 1; command argv SHA-256
+  80dd344be6238c3276ab60e22ca79959ce329af8bc7ff06250efeb5dc68f4892.
