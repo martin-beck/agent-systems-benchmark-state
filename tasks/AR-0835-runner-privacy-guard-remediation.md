@@ -1,0 +1,32 @@
+---
+{
+  "branch": "fix/runner-canary-privacy-guards",
+  "checkpoint_commit": "",
+  "claim_expires": "",
+  "depends_on": ["AR-0830", "AR-0831"],
+  "id": "AR-0835",
+  "next_action": "Remove or narrow runner identity leakage in canary output and enforce repository/main-ref guards for every persistent-runner workflow.",
+  "owner": "",
+  "plan": "../plans/AR-0835.md",
+  "priority": "P1",
+  "schema_version": 1,
+  "status": "planned",
+  "summary": "Remediate runner privacy leakage and protected-workflow guard gaps found during independent audit.",
+  "task_revision": 1,
+  "title": "Remediate runner privacy and workflow guards",
+  "updated_at": "2026-09-07T00:00:00+00:00",
+  "worktree_key": "agent-systems-benchmark-runner-privacy-guard-remediation"
+}
+---
+## AR-0835
+
+Remediate the independent audit finding that GitHub runner logs expose runner and machine identity,
+and that the original canary lacks the repository/main-ref guard required by the routing contract.
+
+Acceptance criteria:
+
+- Remove or formally narrow public output claims; prove sanitized logs do not expose private identity.
+- Add repository and protected-main guard to every persistent-runner workflow, including canary.
+- Add negative fixtures for alternate refs, forks, identity leakage, and widened permissions.
+- Re-run privacy, policy, actionlint/zizmor, exact-head CI, and post-merge audit checks.
+- Update documentation to state evidence limits accurately.
