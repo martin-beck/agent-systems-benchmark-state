@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 3 |
 | **Planned** | Defined work awaiting promotion or dependencies | 65 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 36 |
+| **Done** | Accepted, integrated, and durably verified | 37 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -100,7 +100,7 @@ flowchart LR
         direction TB
         AR_0601["AR-0601 - Planned"]:::status_planned
         AR_0602["AR-0602 - Planned"]:::status_planned
-        AR_0603["AR-0603 - In progress"]:::status_in_progress
+        AR_0603["AR-0603 - Done"]:::status_done
         AR_0604["AR-0604 - Planned"]:::status_planned
     end
     subgraph series_07["07 - Platforms"]
@@ -652,11 +652,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0603](tasks/AR-0603-csb-execution-assurance.md): Establish pinned CSB execution and conformance boundary | contracts-20260906 | Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary. | Retry the authorized immutable merge once with git merge --no-ff -S --signoff, verify parents/tree/signature/DCO, and push only with exact main lease. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | replay-20260906 | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Independently review unpublished exact candidate 1605693dbb7aade01dd47cb074e35bca02df873b tree 7d99a7f69d97335cad802699dbf9a7ac7bac2e1b; do not publish or merge without coordinator authorization. |
 
@@ -738,7 +737,7 @@ flowchart LR
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Evaluate maintenance, licenses and reproducibility before integration. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (36)
+### Done (37)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -768,6 +767,7 @@ flowchart LR
 | P1 | [AR-0502](tasks/AR-0502-replay-cassettes.md): Implement immutable response cassette format | Unclaimed | Store versioned provider requests, event streams, causal IDs and integrity metadata. | Run full coordination validation, reconcile/snapshot/live doctor, verify clean synchronized repositories, then release AR-0502 done and return Cargo fence. |
 | P1 | [AR-0503](tasks/AR-0503-strict-replay.md): Implement strict provider response replay | Unclaimed | Serve local recorded responses while real agent and tools execute. | Run live coordination reconciliation/doctor and complete state validation; release AR-0503 done only if clean synchronized evidence remains exact. |
 | P1 | [AR-0504](tasks/AR-0504-replay-pacing.md): Implement pacing and replay overhead assessment | Unclaimed | Support immediate, fixed-latency, original-paced and seeded synthetic scenarios. | Run live coordination doctor/reconciliation, then release AR-0504 done with exact postmerge evidence. |
+| P1 | [AR-0603](tasks/AR-0603-csb-execution-assurance.md): Establish pinned CSB execution and conformance boundary | Unclaimed | Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary. | Retry the authorized immutable merge once with git merge --no-ff -S --signoff, verify parents/tree/signature/DCO, and push only with exact main lease. |
 | P1 | [AR-0701](tasks/AR-0701-platform-manifests.md): Pin distribution and architecture support matrix | Unclaimed | Define Ubuntu, Debian, Fedora, enterprise, openSUSE, Arch, Alpine and openEuler target manifests. | Run final coordination repository validation and live doctor, then release AR-0701 done if state and all product worktrees remain consistent. |
 | P1 | [AR-0801](tasks/AR-0801-terminal-interface.md): Implement terminal and automation interfaces | Unclaimed | Provide doctor, plan, run, sweep, compare and report with stable JSON output. | Await exact-main quality 34077635208 and remaining x86_64 Rust cell in 34077635164 at signed merge b2833ab; formal 34077635181 and Rust aarch64 are green. Then reconcile/live doctor and release AR-0801 only if all remain clean. |
 | P1 | [AR-0830](tasks/AR-0830-aiws-runner-capacity.md): Provision hardened development host ASB runner capacity | Unclaimed | Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners. | Reboot persistence is deferred to AR-0833; AR-0830 proven scope is complete. |

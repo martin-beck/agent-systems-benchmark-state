@@ -2,7 +2,7 @@
 {
   "branch": "feature/csb-execution-assurance",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T11:44:22+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/csb-execution-assurance",
   "observed_dirty": 0,
   "observed_head": "39e306124b567dece6f335662a11906869f91ba7",
-  "owner": "contracts-20260906",
+  "owner": "",
   "plan": "../plans/AR-0603.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 118,
+  "task_revision": 119,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T10:28:11+00:00",
+  "updated_at": "2026-09-07T10:30:35+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
@@ -392,3 +392,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T10:28:11+00:00: Recorded command exit 0; command argv SHA-256
   8d323db15839470a2d568402720e81b80ee8ac6bd68a3bd51081fe74d963128e.
+
+- 2026-09-07T10:30:35+00:00: Integrated exact reviewed head 39e306124b567dece6f335662a11906869f91ba7
+  through signed+DCO merge b1669203308db5a75fee1e78a45c6fc8e71f17ce in PR #36. Exact-head runs
+  quality 34111085145, Rust 34111085096, formal 34111085132, fault 34111085133 green; exact-main
+  quality 34111508673, Rust 34111508441, formal 34111508613, fault 34111508476 green. Postmerge
+  local signature/DCO/policy, 25 unit, 3 protocol fixture, native success 3x/cancel/timeout,
+  clippy/docs/release/metadata/deny/audit/cleanliness pass. Qualified only Ubuntu 24.04 glibc x86_64
+  with pinned Python 3.12.3, bwrap 0.9.0, systemd 255, util-linux 2.39.3. Full floating CSB Python
+  graph, generators, monitors, syzkaller, aarch64, musl, non-Linux, other tool versions, and hostile
+  same-UID ancestor replacement remain unsupported.
