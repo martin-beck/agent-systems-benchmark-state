@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Codex.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Qualify Codex replay",
-  "updated_at": "2026-09-07T15:37:05+00:00",
+  "updated_at": "2026-09-07T15:38:04+00:00",
   "worktree_key": "agent-systems-benchmark-replay-codex"
 }
 ---
@@ -164,3 +164,6 @@ Qualify Codex record/replay, network denial, parity, retries, tool calls, cancel
   prompt/metadata pointer. Earlier exit 1 results were only a mistaken full-SHA preflight and
   rustfmt layout; no test ran in either and both were corrected before the green run. No shared
   replay source changed.
+
+- 2026-09-07T15:38:04+00:00: Recorded command exit 0; command argv SHA-256
+  92d78bd9e863fcafb23b8ceb7acb36a82d0f41d87e8af39374bba47560b1fb02.
