@@ -11,6 +11,12 @@ Never edit this file directly.
 | P0 | [AR-0507](tasks/AR-0507-replay-opendesk.md): Qualify OpenDesk replay | Qualify replay conformance for OpenDesk. | Prove credential-free record/replay conformance for OpenDesk with network denial and malformed/tool/cancel negatives. | replay_20260906 |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. | root-coordination-20260906 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0508](tasks/AR-0508-replay-aider.md): Qualify aider replay | Qualify replay conformance for aider. | Prove credential-free record/replay conformance for aider with network denial and malformed/tool/cancel negatives. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -24,7 +30,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0508](tasks/AR-0508-replay-aider.md): Qualify aider replay | Qualify replay conformance for aider. | Prove credential-free record/replay conformance for aider with network denial and malformed/tool/cancel negatives. | - |
 | P0 | [AR-0509](tasks/AR-0509-replay-codex.md): Qualify Codex replay | Qualify replay conformance for Codex. | Prove credential-free record/replay conformance for Codex with network denial and malformed/tool/cancel negatives. | - |
 | P0 | [AR-0510](tasks/AR-0510-replay-gemini.md): Qualify Gemini replay | Qualify replay conformance for Gemini. | Prove credential-free record/replay conformance for Gemini with network denial and malformed/tool/cancel negatives. | - |
 | P0 | [AR-0511](tasks/AR-0511-replay-qwen.md): Qualify Qwen Code replay | Qualify replay conformance for Qwen Code. | Prove credential-free record/replay conformance for Qwen Code with network denial and malformed/tool/cancel negatives. | - |
