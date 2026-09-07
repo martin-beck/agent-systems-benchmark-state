@@ -14,11 +14,11 @@
   "plan": "../plans/AR-0307.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Run pinned AAIF goose in no-session structured mode.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Implement goose client adapter",
-  "updated_at": "2026-09-06T19:56:54+00:00",
+  "updated_at": "2026-09-07T00:19:28+00:00",
   "worktree_key": "agent-systems-benchmark-agent-goose"
 }
 ---
@@ -28,3 +28,8 @@ Run pinned AAIF goose in no-session structured mode.
 
 Implementation has not started. Read the linked plan before claiming.
 
+
+- 2026-09-07T00:19:28+00:00: Dependencies AR-0101, AR-0102, and AR-0103 are durably done on
+  synchronized signed product main; AR-0307 owns isolated Goose adapter paths and is ready for
+  quality-20260906 in its declared distinct worktree while shared registration remains
+  coordinator-serialized.

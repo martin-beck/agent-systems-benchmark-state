@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**80 ARs tracked** across 3 active status categories.
+**80 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 52 |
+| **Planned** | Defined work awaiting promotion or dependencies | 51 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 25 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -57,7 +57,7 @@ flowchart LR
         AR_0304["AR-0304 - In progress"]:::status_in_progress
         AR_0305["AR-0305 - In progress"]:::status_in_progress
         AR_0306["AR-0306 - In progress"]:::status_in_progress
-        AR_0307["AR-0307 - Planned"]:::status_planned
+        AR_0307["AR-0307 - Open"]:::status_open
         AR_0308["AR-0308 - Planned"]:::status_planned
         AR_0309["AR-0309 - Planned"]:::status_planned
         AR_0310["AR-0310 - Done"]:::status_done
@@ -514,11 +514,16 @@ flowchart LR
 | P1 | [AR-0305](tasks/AR-0305-agent-gemini.md): Implement Gemini CLI client adapter | contracts-20260906 | Run pinned Gemini CLI through noninteractive JSON events. | Inspect the current official stable release, transition constraints, stream-JSON contract and provider override. |
 | P1 | [AR-0306](tasks/AR-0306-agent-qwen-code.md): Implement Qwen Code client adapter | root-coordination-20260906 | Run pinned Qwen Code through isolated headless stream-JSON. | Inspect the current stable release, stream-JSON contract, provider override and ambient context loading. |
 
-### Planned (52)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0307](tasks/AR-0307-agent-goose.md): Implement goose client adapter | Unclaimed | Run pinned AAIF goose in no-session structured mode. | Inspect current release assets, structured run mode, provider configuration and extension failure behavior. |
+
+### Planned (51)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P1 | [AR-0311](tasks/AR-0311-provider-openai.md): Support a shared OpenAI provider | Unclaimed | Apply one default OpenAI provider profile consistently to all supported agents. | Implement the default OpenAI provider profile for every adapter that proves compatible support. |
 | P1 | [AR-0312](tasks/AR-0312-provider-ollama.md): Support a shared local Ollama provider | Unclaimed | Apply one pinned local Ollama provider and model configuration to all supported agents. | Implement a loopback-only local Ollama profile and prove every compatible adapter translation. |
 | P1 | [AR-0313](tasks/AR-0313-all-agents-provider.md): Configure one provider for all agents | Unclaimed | Let test plans select one provider profile for every chosen supported agent atomically. | Add atomic all-agent provider selection with complete preflight capability reporting. |
