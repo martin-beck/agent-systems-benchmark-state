@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0509",
-  "next_action": "After AR-0517 integrates, update AR-0509 onto exact main, add bounded Codex retry evidence, then run full exact-tree gates and candidate review.",
+  "next_action": "Await independent immutable review of exact d086fec11f5959c1ad873efaa5380e290973d273; publish only after approval and exact-head CI.",
   "observed_branch": "feature/replay-codex",
   "observed_dirty": 0,
   "observed_head": "d086fec11f5959c1ad873efaa5380e290973d273",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Codex.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Qualify Codex replay",
-  "updated_at": "2026-09-07T16:09:09+00:00",
+  "updated_at": "2026-09-07T16:12:07+00:00",
   "worktree_key": "agent-systems-benchmark-replay-codex"
 }
 ---
@@ -226,3 +226,17 @@ Qualify Codex record/replay, network denial, parity, retries, tool calls, cancel
 
 - 2026-09-07T16:09:09+00:00: Recorded command exit 1; command argv SHA-256
   ad242cd4d56d59743a9052dcfa86d2d15532f511eba86be1c68a3074a21e44e9.
+
+- 2026-09-07T16:12:07+00:00: Candidate d086fec11f5959c1ad873efaa5380e290973d273 (tree
+  29178f57343bb0ef1b7637b1bf01a33f68b5fb69) is clean, exact-base ab5d6c91, three-path scoped,
+  SSH-signed and exact-DCO. Pinned Codex 0.153.4 changed conclusion: HTTP 429 is intentionally not
+  retried, so the native fixture uses one supported pre-stream HTTP 500 retry; exact native loopback
+  capture/replay passed with three statuses [500,200,200], tool/result causality, deterministic
+  request comparison, grading parity, paced cancellation, strict malformed/truncated rejection,
+  decoded redaction markers, loopback-only network and empty private state. Full workspace
+  fmt/clippy/test/docs/release/CLI, deny/audit/coverage/quality/platform/actionlint/zizmor/formal
+  model suites previously passed on the same production delta; final assertion-only test delta
+  passed the exact native run. Exact commit policy/DCO/Gitleaks/privacy/scope checks passed. A later
+  unchanged full rerun was interrupted environmentally: ld SIGBUS then ENOSPC during state
+  reconcile; audited completed-AR caches were removed, 42G restored, and reconcile/snapshot/live
+  doctor plus synchronized clean state passed. Per coordinator, no unchanged rerun.
