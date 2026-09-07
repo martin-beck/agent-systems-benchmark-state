@@ -14,11 +14,11 @@
   "plan": "../plans/AR-0902.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Add fuzz mutation and lifecycle fault campaigns",
-  "updated_at": "2026-09-06T15:04:54+00:00",
+  "updated_at": "2026-09-07T01:49:31+00:00",
   "worktree_key": "agent-systems-benchmark-fault-assurance"
 }
 ---
@@ -27,3 +27,9 @@
 Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection.
 
 Implementation has not started. Read the linked plan before claiming.
+
+- 2026-09-07T01:49:31+00:00: Coordinator verified AR-0103, AR-0104, and AR-0503 are durably done;
+  AR-0902 fuzz/fault/scheduled-workflow paths are dependency-ready and disjoint from active AR-0801
+  CLI, AR-0307 Goose registration/native workflow serialization, and AR-0308 mini-SWE isolated
+  adapter work. Promotion authorizes only its declared bounded campaigns; shared workspace/schema
+  changes remain coordinator-serialized.
