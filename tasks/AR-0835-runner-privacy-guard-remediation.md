@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remediate runner privacy leakage and protected-workflow guard gaps found during independent audit.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Remediate runner privacy and workflow guards",
-  "updated_at": "2026-09-07T07:49:30+00:00",
+  "updated_at": "2026-09-07T07:49:32+00:00",
   "worktree_key": "agent-systems-benchmark-runner-privacy-guard-remediation"
 }
 ---
@@ -41,3 +41,6 @@ Acceptance criteria:
   privacy and guard remediation paths are dependency-ready and no active AR owns them.
 
 - 2026-09-07T07:48:09+00:00: Claimed by contracts-20260906.
+
+- 2026-09-07T07:49:32+00:00: Recorded command exit 0; command argv SHA-256
+  dd22db57eacab65928b3e7fba885f8d91a2a45e9db16a71b008db23c69a0962b.
