@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Codex.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Qualify Codex replay",
-  "updated_at": "2026-09-07T13:50:58+00:00",
+  "updated_at": "2026-09-07T15:31:16+00:00",
   "worktree_key": "agent-systems-benchmark-replay-codex"
 }
 ---
@@ -129,3 +129,6 @@ Qualify Codex record/replay, network denial, parity, retries, tool calls, cancel
   unredacted options/tools fail. Run replay unit/integration, privacy/Gitleaks, branch-aware
   coverage and applicable formal/fuzz gates. No shared replay mutation made under AR-0509 pending
   coordinator serialization.
+
+- 2026-09-07T15:31:16+00:00: Recorded command exit 0; command argv SHA-256
+  b668137ce80e9f0d4f8e7f8941028223d83300da89758e0a6232872973813bae.
