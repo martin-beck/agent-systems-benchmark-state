@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 50 |
+| **Planned** | Defined work awaiting promotion or dependencies | 49 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 34 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -124,7 +124,7 @@ flowchart LR
         AR_0822["AR-0822 - Planned"]:::status_planned
         AR_0823["AR-0823 - Planned"]:::status_planned
         AR_0830["AR-0830 - Done"]:::status_done
-        AR_0831["AR-0831 - Planned"]:::status_planned
+        AR_0831["AR-0831 - Open"]:::status_open
         AR_0832["AR-0832 - Planned"]:::status_planned
         AR_0833["AR-0833 - Planned"]:::status_planned
         AR_0834["AR-0834 - Done"]:::status_done
@@ -555,13 +555,14 @@ flowchart LR
 | P1 | [AR-0803](tasks/AR-0803-frontend-control-api.md): Define the frontend control API | root-coordination-20260906 | Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary. | Await fresh independent immutable review of repaired exact cbb764c; publish only if all prior blockers and new concurrency/privacy semantics are approved. |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | replay-20260906 | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Independently review unpublished exact candidate 1605693dbb7aade01dd47cb074e35bca02df873b tree 7d99a7f69d97335cad802699dbf9a7ac7bac2e1b; do not publish or merge without coordinator authorization. |
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0603](tasks/AR-0603-csb-execution-assurance.md): Establish pinned CSB execution and conformance boundary | Unclaimed | Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary. | Validate the corrected scratch diff with git apply --check, apply it once through handoffctl run, then run crate-focused checks after the serialized Cargo fence is granted. |
+| P1 | [AR-0831](tasks/AR-0831-aiws-workflow-routing.md): Integrate development host ASB runners with GitHub workflows | Unclaimed | Route explicitly trusted ASB CI jobs to qualified development host runners while preserving disposable public-PR isolation. | Define trusted-job labels and update ASB workflows without routing public pull-request code to persistent development host capacity. |
 
-### Planned (50)
+### Planned (49)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -594,7 +595,6 @@ flowchart LR
 | P1 | [AR-0821](tasks/AR-0821-one-line-local-install.md): Add guided one-line local installation | Unclaimed | Turn a single documented command into a safe guided local ASB and TUI first run. | Implement an idempotent one-line bootstrap that verifies, installs, configures, starts the local runner, and opens asb-tui. |
 | P1 | [AR-0822](tasks/AR-0822-install-upgrade-rollback.md): Add safe installation lifecycle management | Unclaimed | Manage the complete installed lifecycle without losing configuration, history, runs, or trust state. | Implement verified upgrades, migrations, rollback, repair, and non-destructive uninstall. |
 | P1 | [AR-0823](tasks/AR-0823-installation-qualification.md): Audit installation and first-run experience | Unclaimed | Qualify the one-line experience and complete install lifecycle across the supported native matrix. | Independently attack and usability-test first install, onboarding, upgrade, rollback, repair, and uninstall. |
-| P1 | [AR-0831](tasks/AR-0831-aiws-workflow-routing.md): Integrate development host ASB runners with GitHub workflows | Unclaimed | Route explicitly trusted ASB CI jobs to qualified development host runners while preserving disposable public-PR isolation. | Define trusted-job labels and update ASB workflows without routing public pull-request code to persistent development host capacity. |
 | P1 | [AR-0832](tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Unclaimed | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. |
 | P1 | [AR-0833](tasks/AR-0833-aiws-runner-reboot-lifecycle.md): Qualify tokenless runner reboot lifecycle | Unclaimed | Qualify safe reboot and restart lifecycle for disposable development-host ASB runners. | Design and qualify a tokenless supervisor/orchestration path that can provision fresh ephemeral registrations after boot without storing reusable GitHub credentials. |
 | P1 | [AR-0904](tasks/AR-0904-contract-consistency.md): Machine-check protocol and artifact consistency | Unclaimed | Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree. | Define canonical sources and generated/artifact-diff gates before extension implementations fan out. |
