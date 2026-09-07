@@ -12,7 +12,7 @@
   "id": "AR-0905",
   "next_action": "Translate Agent Relay's TLA+/Alloy/executable-model pattern to ASB run and replay domains.",
   "observed_branch": "feature/recovery-models",
-  "observed_dirty": 1,
+  "observed_dirty": 5,
   "observed_head": "462bd04a349dfbea1797c8a358e390544d51471e",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0905.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply bounded formal models to run lifecycle, leases, recovery, replay cursors and uncertain external effects.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Model execution recovery and worker fencing",
-  "updated_at": "2026-09-07T22:34:25+00:00",
+  "updated_at": "2026-09-07T22:36:55+00:00",
   "worktree_key": "agent-systems-benchmark-recovery-models"
 }
 ---
