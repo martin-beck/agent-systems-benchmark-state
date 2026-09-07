@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0306",
-  "next_action": "Complete full quality, privacy, supply-chain and coverage gates on the repaired exact tree, then commit and publish for immutable review.",
+  "next_action": "Monitor PR #25 exact-head workflows at 0be96c9, independently review immutable diff and CI logs, then merge only if all jobs remain green.",
   "observed_branch": "feature/agent-qwen-code",
   "observed_dirty": 0,
   "observed_head": "0be96c9ec50e76bde613b21867deb9808359f630",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned Qwen Code through isolated headless stream-JSON.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Implement Qwen Code client adapter",
-  "updated_at": "2026-09-07T00:58:48+00:00",
+  "updated_at": "2026-09-07T00:59:08+00:00",
   "worktree_key": "agent-systems-benchmark-agent-qwen-code"
 }
 ---
@@ -290,3 +290,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T00:58:48+00:00: Recorded command exit 0; command argv SHA-256
   7e9aa67bda9254229287af74858f92055844bcfcca9b7e3d17544665dc79c2c3.
+
+- 2026-09-07T00:59:08+00:00: Published exact signed candidate
+  0be96c9ec50e76bde613b21867deb9808359f630 as PR #25 on exact base
+  2579362d6936b25e6008583f7bd485e5498a4e3f. GitHub reports OPEN and MERGEABLE; Rust x86_64/aarch64,
+  quality, Kani and Loom x86_64/aarch64 jobs are running.
