@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**120 ARs tracked** across 4 active status categories.
+**121 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 4 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
-| **Planned** | Defined work awaiting promotion or dependencies | 58 |
+| **Planned** | Defined work awaiting promotion or dependencies | 59 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 54 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -160,6 +160,7 @@ flowchart LR
         AR_0846["AR-0846 - Planned"]:::status_planned
         AR_0847["AR-0847 - Done"]:::status_done
         AR_0848["AR-0848 - Planned"]:::status_planned
+        AR_0849["AR-0849 - Planned"]:::status_planned
     end
     subgraph series_09["09 - Assurance"]
         direction TB
@@ -194,6 +195,7 @@ flowchart LR
     AR_0003 --> AR_0845
     AR_0003 --> AR_0903
     AR_0004 --> AR_0005
+    AR_0004 --> AR_0849
     AR_0101 --> AR_0102
     AR_0101 --> AR_0104
     AR_0101 --> AR_0201
@@ -478,6 +480,7 @@ flowchart LR
     AR_0801 --> AR_0840
     AR_0801 --> AR_0842
     AR_0801 --> AR_0847
+    AR_0801 --> AR_0849
     AR_0802 --> AR_0808
     AR_0802 --> AR_0809
     AR_0802 --> AR_0903
@@ -595,7 +598,7 @@ flowchart LR
 | [AR-0001](tasks/AR-0001-repository-bootstrap.md) | None | [AR-0002](tasks/AR-0002-coordination-assurance.md), [AR-0003](tasks/AR-0003-quality-gates.md), [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0501](tasks/AR-0501-replay-evaluation.md), [AR-0701](tasks/AR-0701-platform-manifests.md) |
 | [AR-0002](tasks/AR-0002-coordination-assurance.md) | [AR-0001](tasks/AR-0001-repository-bootstrap.md) | [AR-0004](tasks/AR-0004-ar-status-document.md), [AR-0005](tasks/AR-0005-transactional-promotion.md), [AR-0830](tasks/AR-0830-aiws-runner-capacity.md), [AR-0834](tasks/AR-0834-handoffctl-lint-regression.md), [AR-0903](tasks/AR-0903-release-qualification.md) |
 | [AR-0003](tasks/AR-0003-quality-gates.md) | [AR-0001](tasks/AR-0001-repository-bootstrap.md) | [AR-0830](tasks/AR-0830-aiws-runner-capacity.md), [AR-0831](tasks/AR-0831-aiws-workflow-routing.md), [AR-0845](tasks/AR-0845-ci-artifact-quota-resilience.md), [AR-0903](tasks/AR-0903-release-qualification.md) |
-| [AR-0004](tasks/AR-0004-ar-status-document.md) | [AR-0002](tasks/AR-0002-coordination-assurance.md) | [AR-0005](tasks/AR-0005-transactional-promotion.md) |
+| [AR-0004](tasks/AR-0004-ar-status-document.md) | [AR-0002](tasks/AR-0002-coordination-assurance.md) | [AR-0005](tasks/AR-0005-transactional-promotion.md), [AR-0849](tasks/AR-0849-ar0801-documentation-repair.md) |
 | [AR-0005](tasks/AR-0005-transactional-promotion.md) | [AR-0002](tasks/AR-0002-coordination-assurance.md), [AR-0004](tasks/AR-0004-ar-status-document.md) | None |
 | [AR-0101](tasks/AR-0101-extension-contracts.md) | [AR-0001](tasks/AR-0001-repository-bootstrap.md) | [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0203](tasks/AR-0203-statistical-analysis.md), [AR-0301](tasks/AR-0301-agent-opencode.md), [AR-0302](tasks/AR-0302-agent-opendesk.md), [AR-0303](tasks/AR-0303-agent-aider.md), [AR-0304](tasks/AR-0304-agent-codex.md), [AR-0305](tasks/AR-0305-agent-gemini.md), [AR-0306](tasks/AR-0306-agent-qwen-code.md), [AR-0307](tasks/AR-0307-agent-goose.md), [AR-0308](tasks/AR-0308-agent-mini-swe.md), [AR-0309](tasks/AR-0309-agent-openhands.md), [AR-0310](tasks/AR-0310-provider-profile-contract.md), [AR-0317](tasks/AR-0317-runtime-bundle-manifest.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0502](tasks/AR-0502-replay-cassettes.md), [AR-0517](tasks/AR-0517-redacted-request-pointer-replay.md), [AR-0601](tasks/AR-0601-csb-integration.md), [AR-0603](tasks/AR-0603-csb-execution-assurance.md), [AR-0801](tasks/AR-0801-terminal-interface.md), [AR-0803](tasks/AR-0803-frontend-control-api.md), [AR-0840](tasks/AR-0840-frontend-protocol-contract.md), [AR-0847](tasks/AR-0847-frontend-control-api-repair.md), [AR-0901](tasks/AR-0901-formal-assurance.md), [AR-0904](tasks/AR-0904-contract-consistency.md), [AR-1001](tasks/AR-1001-experiment-comparability.md), [AR-1003](tasks/AR-1003-execution-budgets.md), [AR-1005](tasks/AR-1005-trace-interoperability.md) |
 | [AR-0102](tasks/AR-0102-process-runtime.md) | [AR-0101](tasks/AR-0101-extension-contracts.md) | [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0301](tasks/AR-0301-agent-opencode.md), [AR-0302](tasks/AR-0302-agent-opendesk.md), [AR-0303](tasks/AR-0303-agent-aider.md), [AR-0304](tasks/AR-0304-agent-codex.md), [AR-0305](tasks/AR-0305-agent-gemini.md), [AR-0306](tasks/AR-0306-agent-qwen-code.md), [AR-0307](tasks/AR-0307-agent-goose.md), [AR-0308](tasks/AR-0308-agent-mini-swe.md), [AR-0309](tasks/AR-0309-agent-openhands.md), [AR-0317](tasks/AR-0317-runtime-bundle-manifest.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0601](tasks/AR-0601-csb-integration.md), [AR-0603](tasks/AR-0603-csb-execution-assurance.md), [AR-0901](tasks/AR-0901-formal-assurance.md), [AR-0905](tasks/AR-0905-recovery-models.md) |
@@ -660,7 +663,7 @@ flowchart LR
 | [AR-0705](tasks/AR-0705-native-debian-capacity.md) | [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0704](tasks/AR-0704-native-capacity-controller.md) | None |
 | [AR-0706](tasks/AR-0706-native-openeuler-capacity.md) | [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0704](tasks/AR-0704-native-capacity-controller.md) | None |
 | [AR-0707](tasks/AR-0707-emulated-aarch64-portability.md) | [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0701](tasks/AR-0701-platform-manifests.md) | None |
-| [AR-0801](tasks/AR-0801-terminal-interface.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md) | [AR-0802](tasks/AR-0802-executable-guides.md), [AR-0803](tasks/AR-0803-frontend-control-api.md), [AR-0808](tasks/AR-0808-core-workflow-guides.md), [AR-0820](tasks/AR-0820-verifiable-install-artifacts.md), [AR-0840](tasks/AR-0840-frontend-protocol-contract.md), [AR-0842](tasks/AR-0842-frontend-run-lifecycle.md), [AR-0847](tasks/AR-0847-frontend-control-api-repair.md) |
+| [AR-0801](tasks/AR-0801-terminal-interface.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md) | [AR-0802](tasks/AR-0802-executable-guides.md), [AR-0803](tasks/AR-0803-frontend-control-api.md), [AR-0808](tasks/AR-0808-core-workflow-guides.md), [AR-0820](tasks/AR-0820-verifiable-install-artifacts.md), [AR-0840](tasks/AR-0840-frontend-protocol-contract.md), [AR-0842](tasks/AR-0842-frontend-run-lifecycle.md), [AR-0847](tasks/AR-0847-frontend-control-api-repair.md), [AR-0849](tasks/AR-0849-ar0801-documentation-repair.md) |
 | [AR-0802](tasks/AR-0802-executable-guides.md) | [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0505](tasks/AR-0505-agent-replay-conformance.md), [AR-0801](tasks/AR-0801-terminal-interface.md) | [AR-0808](tasks/AR-0808-core-workflow-guides.md), [AR-0809](tasks/AR-0809-frontend-workflow-guides.md), [AR-0903](tasks/AR-0903-release-qualification.md) |
 | [AR-0803](tasks/AR-0803-frontend-control-api.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0801](tasks/AR-0801-terminal-interface.md) | [AR-0804](tasks/AR-0804-tui-settings-wizard.md), [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-0813](tasks/AR-0813-remote-control-transport.md), [AR-0819](tasks/AR-0819-ssh-remote-bootstrap.md), [AR-0821](tasks/AR-0821-one-line-local-install.md) |
 | [AR-0804](tasks/AR-0804-tui-settings-wizard.md) | [AR-0313](tasks/AR-0313-all-agents-provider.md), [AR-0314](tasks/AR-0314-recording-source-choice.md), [AR-0803](tasks/AR-0803-frontend-control-api.md) | [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0809](tasks/AR-0809-frontend-workflow-guides.md), [AR-0812](tasks/AR-0812-modern-terminal-rendering.md), [AR-0817](tasks/AR-0817-remote-tui-workflows.md), [AR-0819](tasks/AR-0819-ssh-remote-bootstrap.md), [AR-0820](tasks/AR-0820-verifiable-install-artifacts.md), [AR-0821](tasks/AR-0821-one-line-local-install.md) |
@@ -700,6 +703,7 @@ flowchart LR
 | [AR-0846](tasks/AR-0846-artifact-retention-cleanup.md) | [AR-0845](tasks/AR-0845-ci-artifact-quota-resilience.md), [AR-0903](tasks/AR-0903-release-qualification.md) | None |
 | [AR-0847](tasks/AR-0847-frontend-control-api-repair.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0801](tasks/AR-0801-terminal-interface.md) | None |
 | [AR-0848](tasks/AR-0848-native-x86-capacity.md) | [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0701](tasks/AR-0701-platform-manifests.md) | None |
+| [AR-0849](tasks/AR-0849-ar0801-documentation-repair.md) | [AR-0004](tasks/AR-0004-ar-status-document.md), [AR-0801](tasks/AR-0801-terminal-interface.md) | None |
 | [AR-0901](tasks/AR-0901-formal-assurance.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0203](tasks/AR-0203-statistical-analysis.md), [AR-0502](tasks/AR-0502-replay-cassettes.md) | [AR-0903](tasks/AR-0903-release-qualification.md) |
 | [AR-0902](tasks/AR-0902-fault-assurance.md) | [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0503](tasks/AR-0503-strict-replay.md) | [AR-0813](tasks/AR-0813-remote-control-transport.md), [AR-0903](tasks/AR-0903-release-qualification.md) |
 | [AR-0903](tasks/AR-0903-release-qualification.md) | [AR-0002](tasks/AR-0002-coordination-assurance.md), [AR-0003](tasks/AR-0003-quality-gates.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0315](tasks/AR-0315-provider-parity-conformance.md), [AR-0505](tasks/AR-0505-agent-replay-conformance.md), [AR-0702](tasks/AR-0702-native-platforms.md), [AR-0802](tasks/AR-0802-executable-guides.md), [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0811](tasks/AR-0811-documentation-qualification.md), [AR-0818](tasks/AR-0818-remote-control-security-audit.md), [AR-0823](tasks/AR-0823-installation-qualification.md), [AR-0901](tasks/AR-0901-formal-assurance.md), [AR-0902](tasks/AR-0902-fault-assurance.md) | [AR-0846](tasks/AR-0846-artifact-retention-cleanup.md) |
@@ -733,7 +737,7 @@ flowchart LR
 | P1 | [AR-0703](tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Provide genuine disposable native hosts for required Debian and openEuler platform qualification. | Obtain explicit provider/account and cost authorization, least-privilege external credentials, quotas, and four genuine disposable Debian 13.6/openEuler 24.03 LTS-SP2 x86_64/aarch64 hosts; then implement reservation/provision/collect/destroy evidence without emulation. |
 | P1 | [AR-0803](tasks/AR-0803-frontend-control-api.md): Define the frontend control API | Unclaimed | Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary. | Await fresh independent immutable review of repaired exact cbb764c; publish only if all prior blockers and new concurrency/privacy semantics are approved. |
 
-### Planned (58)
+### Planned (59)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -778,6 +782,7 @@ flowchart LR
 | P1 | [AR-0844](tasks/AR-0844-frontend-api-integration.md): Integrate frontend control API | Unclaimed | Integrate and qualify the frontend control API as an independent boundary. | Integrate independently reviewed frontend API components and qualify standalone runner operation. |
 | P1 | [AR-0846](tasks/AR-0846-artifact-retention-cleanup.md): Add linked artifact retention and cleanup | Unclaimed | Manage ASB GitHub artifact retention and cleanup without deleting required evidence. | Implement dry-run inventory and explicitly authorized bounded cleanup for linked GitHub artifacts. |
 | P1 | [AR-0848](tasks/AR-0848-native-x86-capacity.md): Qualify native x86 capacity | Unclaimed | Qualify authorized disposable native x86_64 capacity on a development host. | Use the authorized development-host native x86_64 host as a disposable qualification cell; prove identity, isolation, cleanup, provenance, cost bounds, and evidence integrity without making aarch64 claims. |
+| P1 | [AR-0849](tasks/AR-0849-ar0801-documentation-repair.md): Repair AR-0801 documentation consistency | Unclaimed | Repair stale AR-0801 implementation and CLI documentation claims. | Align AR-0801 task text, generated status next_action, and product README with the implemented and merged CLI command surface; verify links and exact command examples. |
 | P1 | [AR-0904](tasks/AR-0904-contract-consistency.md): Machine-check protocol and artifact consistency | Unclaimed | Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree. | Define canonical sources and generated/artifact-diff gates before extension implementations fan out. |
 | P1 | [AR-1002](tasks/AR-1002-verifier-integrity.md): Protect verifiers and support offline rescoring | Unclaimed | Separate immutable graders from agent work and version scoring independently of execution. | Design the immutable observation and score-revision contract using Inspect and Harbor concepts. |
 | P1 | [AR-1003](tasks/AR-1003-execution-budgets.md): Enforce cost token and action budgets | Unclaimed | Bound and report wall time, actions, tokens and monetary cost without treating unavailable telemetry as zero. | Specify budget capabilities and normalize provider usage with explicit uncertainty. |
