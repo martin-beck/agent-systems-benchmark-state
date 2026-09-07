@@ -12,7 +12,7 @@
   "id": "AR-0847",
   "next_action": "Repair the AR-0803 frontend control candidate's five immutable-review findings, then qualify the repaired API and transfer the reviewed result back to AR-0803.",
   "observed_branch": "feature/frontend-control-api-repair",
-  "observed_dirty": 20,
+  "observed_dirty": 21,
   "observed_head": "b7e7f5b8864343fe4079ee84bd7131456ad6f26c",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0847.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and independently qualify the blocked frontend control API candidate.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Frontend control API repair",
-  "updated_at": "2026-09-07T21:36:21+00:00",
+  "updated_at": "2026-09-07T21:36:33+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api-repair"
 }
 ---
