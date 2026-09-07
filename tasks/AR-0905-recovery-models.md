@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply bounded formal models to run lifecycle, leases, recovery, replay cursors and uncertain external effects.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Model execution recovery and worker fencing",
-  "updated_at": "2026-09-07T23:13:10+00:00",
+  "updated_at": "2026-09-07T23:17:54+00:00",
   "worktree_key": "agent-systems-benchmark-recovery-models"
 }
 ---
@@ -241,3 +241,6 @@ Implementation has not started. Read the linked plan before claiming.
   34169250678, quality 34169250636, Rust x86_64/aarch64 34169250637, fault 34169250641,
   emulated-aarch64 34169250633; all were in progress at first query. PR head/base identities and
   mergeability were exact.
+
+- 2026-09-07T23:17:54+00:00: Recorded command exit 0; command argv SHA-256
+  bb5713b8423bb3868f9fc5cbf333a9f6dfcbf0ab88e5cfc3362732241405ec37.
