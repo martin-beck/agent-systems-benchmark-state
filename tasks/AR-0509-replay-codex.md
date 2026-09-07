@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Codex.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Qualify Codex replay",
-  "updated_at": "2026-09-07T16:22:37+00:00",
+  "updated_at": "2026-09-07T16:23:20+00:00",
   "worktree_key": "agent-systems-benchmark-replay-codex"
 }
 ---
@@ -254,3 +254,6 @@ Qualify Codex record/replay, network denial, parity, retries, tool calls, cancel
 
 - 2026-09-07T16:22:37+00:00: Recorded command exit 0; command argv SHA-256
   677567e2d01aead006f5d95175f2290945940f8bb76214868c9a23bc3a15c0f8.
+
+- 2026-09-07T16:23:20+00:00: Recorded command exit 101; command argv SHA-256
+  e53d07720030828e90f76186515af19bf0a15907a95b91ca3a66a1891e7457a6.
