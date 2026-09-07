@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply bounded formal models to run lifecycle, leases, recovery, replay cursors and uncertain external effects.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Model execution recovery and worker fencing",
-  "updated_at": "2026-09-07T23:11:16+00:00",
+  "updated_at": "2026-09-07T23:12:39+00:00",
   "worktree_key": "agent-systems-benchmark-recovery-models"
 }
 ---
@@ -231,3 +231,6 @@ Implementation has not started. Read the linked plan before claiming.
   source-tree trace residue; final runner is canonical-path, size/hash bounded, mutation-sensitive,
   and leaves the source tree unchanged. Finite safety proof excludes liveness, timing, native
   support, and real crash/filesystem guarantees.
+
+- 2026-09-07T23:12:39+00:00: Recorded command exit 0; command argv SHA-256
+  7c7ac5f1a45f8b9ec75d6a0cb2c1e583f7e10281f8684e331e6f091dbf36cfec.
