@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-codex",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T16:26:25+00:00",
+  "claim_expires": "2026-09-07T19:07:04+00:00",
   "depends_on": [
     "AR-0304",
     "AR-0503",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Codex.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Qualify Codex replay",
-  "updated_at": "2026-09-07T16:05:11+00:00",
+  "updated_at": "2026-09-07T16:07:04+00:00",
   "worktree_key": "agent-systems-benchmark-replay-codex"
 }
 ---
@@ -209,3 +209,5 @@ Qualify Codex record/replay, network denial, parity, retries, tool calls, cancel
 
 - 2026-09-07T16:05:11+00:00: Recorded command exit 0; command argv SHA-256
   b3f5054179b726de5cb128e98bbf3738a88d53cc0fed5ef07b4a7fe7fdd2297a.
+
+- 2026-09-07T16:07:04+00:00: Heartbeat by contracts_20260906.
