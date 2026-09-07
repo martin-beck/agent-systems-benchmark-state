@@ -10,7 +10,7 @@
     "AR-0302"
   ],
   "id": "AR-0516",
-  "next_action": "Monitor PR #42 exact f26216b CI; investigate any failure before integration.",
+  "next_action": "Monitor exact-main 8eff6f95 CI; release only after every run is green and final synchronized state/live validation passes.",
   "observed_branch": "feature/opendesk-strict-replay-http-compatibility",
   "observed_dirty": 0,
   "observed_head": "f26216bde1257aaa5706ac59d05ade697329670d",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add narrowly scoped strict-replay compatibility for pinned OpenDesk traffic.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "OpenDesk strict-replay HTTP compatibility",
-  "updated_at": "2026-09-07T14:44:02+00:00",
+  "updated_at": "2026-09-07T14:44:33+00:00",
   "worktree_key": "agent-systems-benchmark-opendesk-strict-replay-http-compatibility"
 }
 ---
@@ -246,3 +246,10 @@ Acceptance requires schema/runtime parity, adversarial positives and negatives, 
 
 - 2026-09-07T14:44:02+00:00: Recorded command exit 0; command argv SHA-256
   e76835c0888895c21cfb46df25a6387bec70e74cf2bf474fcc5e43f763eb254c.
+
+- 2026-09-07T14:44:33+00:00: After exact-head CI all green and local postmerge
+  standard/policy/supply/failure/platform checks green, integrated PR #42 via signed+DCO no-ff merge
+  8eff6f95d8c5598fc89259013dfdd019149885e3. Merge tree 4f485194343b1f1844712316d581fe6cc89f3769
+  equals reviewed feature tree and second parent is exact f26216b. Pushed main with lease against
+  exact 40cfa75; GitHub records PR merged. Exact-main runs started: Rust 34134561207, quality
+  34134561162, formal 34134561172, fault 34134561141.
