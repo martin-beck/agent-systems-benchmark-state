@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T09:43:09+00:00",
+  "updated_at": "2026-09-07T09:43:36+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
@@ -297,3 +297,6 @@ Implementation has not started. Read the linked plan before claiming.
   /srv/data/projects/.asb-local/target-ar0603-cov and no source change. Changed conclusion: branch
   coverage requires the already-installed pinned nightly-2025-11-21 toolchain; rerun once through
   handoffctl, not unchanged on stable.
+
+- 2026-09-07T09:43:36+00:00: Recorded command exit 0; command argv SHA-256
+  1b9bc84bacb6a1afd2ca4fabe8c7c4e284e6f95bc982b79a07d7a1773a006cc8.
