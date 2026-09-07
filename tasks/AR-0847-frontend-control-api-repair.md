@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and independently qualify the blocked frontend control API candidate.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Frontend control API repair",
-  "updated_at": "2026-09-07T21:39:25+00:00",
+  "updated_at": "2026-09-07T21:39:47+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api-repair"
 }
 ---
@@ -163,3 +163,6 @@ Repair the blocked AR-0803 candidate without mutating its dirty worktree in plac
 
 - 2026-09-07T21:39:25+00:00: Recorded command exit 0; command argv SHA-256
   40aee6b77ec1bbd2d28e733694b0f3bf63019db5eaeddd1f95e43744fcbd626a.
+
+- 2026-09-07T21:39:47+00:00: Recorded command exit 0; command argv SHA-256
+  b6450fb33bd18bdb348b5e3e1dad74c5db4965302693cc1da65835a21886c7ef.
