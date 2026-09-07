@@ -2,7 +2,7 @@
 {
   "branch": "feature/recovery-models",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T01:14:58+00:00",
+  "claim_expires": "2026-09-08T01:28:29+00:00",
   "depends_on": [
     "AR-0102",
     "AR-0104",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply bounded formal models to run lifecycle, leases, recovery, replay cursors and uncertain external effects.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Model execution recovery and worker fencing",
-  "updated_at": "2026-09-07T22:17:45+00:00",
+  "updated_at": "2026-09-07T22:28:29+00:00",
   "worktree_key": "agent-systems-benchmark-recovery-models"
 }
 ---
@@ -45,3 +45,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T22:17:45+00:00: Recorded command exit 1; command argv SHA-256
   22ff8758a1a185c5a55cf2cf09eaba75a48facd2ca96d86d1fb9607238352604.
+
+- 2026-09-07T22:28:29+00:00: Heartbeat by replay_20260906.
