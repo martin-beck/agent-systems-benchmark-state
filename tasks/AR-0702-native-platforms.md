@@ -12,7 +12,7 @@
   "id": "AR-0702",
   "next_action": "Implement and verify the fail-closed native evidence harness; publish genuine Ubuntu x86_64 and public native-arm evidence. AR-0703 supplies the required booted Debian/openEuler x86_64+aarch64 capacity; retain AR-0702 in progress until that external prerequisite completes.",
   "observed_branch": "feature/native-platforms",
-  "observed_dirty": 2,
+  "observed_dirty": 3,
   "observed_head": "4a59593c0c55e0ad72656363473a404d8be1054b",
   "owner": "quality-20260906",
   "plan": "../plans/AR-0702.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Exercise native x86_64 and aarch64 including booted openEuler kernels.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Validate native Linux kernels and architectures",
-  "updated_at": "2026-09-07T03:28:01+00:00",
+  "updated_at": "2026-09-07T03:28:32+00:00",
   "worktree_key": "agent-systems-benchmark-native-platforms"
 }
 ---

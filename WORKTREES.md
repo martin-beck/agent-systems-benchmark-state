@@ -23,8 +23,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-formal-assurance` | `feature/formal-assurance` | `2a495a99a657` | 0 | behind 54, ahead 0 |
 | `agent-systems-benchmark-frontend-control-api` | `feature/frontend-control-api` | `61b5dd33ba04` | 3 | behind 4, ahead 0 |
 | changed files | - | - | - | `Cargo.lock`, `Cargo.toml`, `crates/asb-control/` |
-| `agent-systems-benchmark-native-platforms` | `feature/native-platforms` | `4a59593c0c55` | 2 | behind 0, ahead 0 |
-| changed files | - | - | - | `tests/platforms/test_native_evidence.py`, `tools/platforms/native_evidence.py` |
+| `agent-systems-benchmark-native-platforms` | `feature/native-platforms` | `4a59593c0c55` | 3 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-runtime/tests/sandbox_boundary.rs`, `tests/platforms/test_native_evidence.py`, `tools/platforms/native_evidence.py` |
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 92, ahead 0 |
 | `agent-systems-benchmark-portable-metrics` | `feature/portable-metrics` | `a0f67bea1ffe` | 0 | behind 66, ahead 0 |
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `51daeb8608e5` | 0 | behind 85, ahead 0 |
