@@ -10,12 +10,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #27 | `feature/agent-goose@08feca551df7` | `main` | UNKNOWN | - | feat(agents): add bounded Goose adapter |
+| #27 | `feature/agent-goose@08feca551df7` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(agents): add bounded Goose adapter |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34076974034 | `08feca551df7` | pull_request | Rust verification | in_progress:- |
+| 34076974032 | `08feca551df7` | pull_request | Formal assurance | in_progress:- |
+| 34076974004 | `08feca551df7` | pull_request | Repository quality | in_progress:- |
 | 34073998420 | `e85548d00cff` | push | Formal assurance | completed:success |
 | 34073998391 | `e85548d00cff` | push | Repository quality | completed:success |
 | 34073998349 | `e85548d00cff` | push | Rust verification | completed:success |
@@ -25,6 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34071704284 | `b79534b627e2` | push | Rust verification | completed:success |
 | 34071704192 | `b79534b627e2` | push | Repository quality | completed:success |
 | 34071704176 | `b79534b627e2` | push | Formal assurance | completed:success |
-| 34071496677 | `0be96c9ec50e` | pull_request | Formal assurance | completed:success |
-| 34071496622 | `0be96c9ec50e` | pull_request | Rust verification | completed:success |
-| 34071496615 | `0be96c9ec50e` | pull_request | Repository quality | completed:success |
