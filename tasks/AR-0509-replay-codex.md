@@ -12,7 +12,7 @@
   "id": "AR-0509",
   "next_action": "Prove credential-free record/replay conformance for Codex with network denial and malformed/tool/cancel negatives.",
   "observed_branch": "feature/replay-codex",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "612a5a7e3d471f9f2481d7943b06e6914c893dd2",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0509.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Codex.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Qualify Codex replay",
-  "updated_at": "2026-09-07T13:33:17+00:00",
+  "updated_at": "2026-09-07T13:34:03+00:00",
   "worktree_key": "agent-systems-benchmark-replay-codex"
 }
 ---
