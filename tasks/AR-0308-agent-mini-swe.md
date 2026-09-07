@@ -2,7 +2,7 @@
 {
   "branch": "feature/agent-mini-swe",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T02:57:41+00:00",
+  "claim_expires": "2026-09-07T03:31:29+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned mini-SWE-agent as a bounded batch engineering agent.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Implement mini-SWE-agent client adapter",
-  "updated_at": "2026-09-07T01:28:07+00:00",
+  "updated_at": "2026-09-07T02:01:29+00:00",
   "worktree_key": "agent-systems-benchmark-agent-mini-swe"
 }
 ---
@@ -306,3 +306,5 @@ Implementation has not started. Read the linked plan before claiming.
   digest-verified wheel, while dependencies remain caller-provided and unpinned upstream, so no
   reproducible transitive-environment claim. Ready to request the serialized registration fence; no
   candidate commit or publication exists yet.
+
+- 2026-09-07T02:01:29+00:00: Heartbeat by replay-20260906.
