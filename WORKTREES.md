@@ -17,8 +17,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 101, ahead 0 |
 | `agent-systems-benchmark-csb-execution-assurance` | `feature/csb-execution-assurance` | `939c35c5ee64` | 1 | behind 0, ahead 1 |
 | changed files | - | - | - | `crates/asb-csb-runner/` |
-| `agent-systems-benchmark-development-host-runner-capacity` | `feature/development-host-runner-capacity` | `c67d572c2270` | 1 | behind 0, ahead 7 |
-| changed files | - | - | - | `.github/workflows/development-host-canary.yml` |
+| `agent-systems-benchmark-development-host-runner-capacity` | `feature/development-host-runner-capacity` | `c67d572c2270` | 2 | behind 0, ahead 7 |
+| changed files | - | - | - | `.github/actionlint.yaml`, `.github/workflows/development-host-canary.yml` |
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 90, ahead 0 |
 | `agent-systems-benchmark-engineering-workloads` | `feature/engineering-workloads` | `41ffc6eb8f1a` | 0 | behind 34, ahead 0 |
 | `agent-systems-benchmark-experiment-comparability` | `feature/experiment-comparability` | `eb5e84933830` | 0 | behind 44, ahead 0 |
