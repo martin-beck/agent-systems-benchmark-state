@@ -11,7 +11,7 @@
   "id": "AR-0305",
   "next_action": "Complete negative matrix, provenance fixture documentation and isolated full gates; await shared registration fence.",
   "observed_branch": "feature/agent-gemini",
-  "observed_dirty": 3,
+  "observed_dirty": 4,
   "observed_head": "311c128649610df258b2961c9ca623fb8f258307",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0305.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned Gemini CLI through noninteractive JSON events.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "Implement Gemini CLI client adapter",
-  "updated_at": "2026-09-07T00:29:20+00:00",
+  "updated_at": "2026-09-07T00:29:47+00:00",
   "worktree_key": "agent-systems-benchmark-agent-gemini"
 }
 ---
