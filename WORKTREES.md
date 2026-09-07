@@ -21,8 +21,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 96, ahead 0 |
 | `agent-systems-benchmark-fault-assurance` | `feature/fault-assurance` | `e6c623113c15` | 0 | behind 8, ahead 0 |
 | `agent-systems-benchmark-formal-assurance` | `feature/formal-assurance` | `2a495a99a657` | 0 | behind 54, ahead 0 |
-| `agent-systems-benchmark-frontend-control-api` | `feature/frontend-control-api` | `61b5dd33ba04` | 3 | behind 4, ahead 0 |
-| changed files | - | - | - | `Cargo.lock`, `Cargo.toml`, `crates/asb-control/` |
+| `agent-systems-benchmark-frontend-control-api` | `feature/frontend-control-api` | `61b5dd33ba04` | 5 | behind 4, ahead 0 |
+| changed files | - | - | - | `Cargo.lock`, `Cargo.toml`, `formal/Cargo.toml`, `crates/asb-control/`, `formal/tests/control_models.rs` |
 | `agent-systems-benchmark-native-platforms` | `feature/native-platforms` | `4a59593c0c55` | 5 | behind 0, ahead 0 |
 | changed files | - | - | - | `crates/asb-runtime/tests/sandbox_boundary.rs`, `tests/platforms/test_validate_manifests.py`, `tools/platforms/validate_manifests.py`, `tests/platforms/test_native_evidence.py`, `tools/platforms/native_evidence.py` |
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 92, ahead 0 |

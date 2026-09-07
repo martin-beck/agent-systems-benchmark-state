@@ -12,7 +12,7 @@
   "id": "AR-0803",
   "next_action": "Define a bounded versioned control/status API between the runner and independent frontends.",
   "observed_branch": "feature/frontend-control-api",
-  "observed_dirty": 3,
+  "observed_dirty": 5,
   "observed_head": "61b5dd33ba04295a476e444d8bfd338ab972507a",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0803.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Define the frontend control API",
-  "updated_at": "2026-09-07T03:29:53+00:00",
+  "updated_at": "2026-09-07T03:30:32+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api"
 }
 ---
