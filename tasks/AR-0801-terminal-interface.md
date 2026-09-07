@@ -11,17 +11,17 @@
   "id": "AR-0801",
   "next_action": "Hold immutable signed+DCO candidate 7c2d19ca for fresh independent review; publish exact head only after approval, then require exact-head CI before integration.",
   "observed_branch": "feature/terminal-interface",
-  "observed_dirty": 1,
-  "observed_head": "7c2d19ca9d925789041fc8262135075de61b76df",
+  "observed_dirty": 0,
+  "observed_head": "d7194abcf7e3c2f31c497512f3d7ce3550fa575d",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0801.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide doctor, plan, run, sweep, compare and report with stable JSON output.",
-  "task_revision": 144,
+  "task_revision": 145,
   "title": "Implement terminal and automation interfaces",
-  "updated_at": "2026-09-07T02:28:40+00:00",
+  "updated_at": "2026-09-07T02:28:56+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-interface"
 }
 ---
