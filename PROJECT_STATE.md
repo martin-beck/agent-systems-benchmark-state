@@ -10,15 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #23 | `feature/provider-profile-contract@2870b68d0ca0` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(protocol): define common provider profiles |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34068641632 | `d384c4c54a45` | push | Repository quality | queued:- |
+| 34068641632 | `d384c4c54a45` | push | Repository quality | in_progress:- |
 | 34068641618 | `d384c4c54a45` | push | Rust verification | queued:- |
-| 34068641612 | `d384c4c54a45` | push | Formal assurance | queued:- |
+| 34068641612 | `d384c4c54a45` | push | Formal assurance | in_progress:- |
 | 34068344198 | `2870b68d0ca0` | pull_request | Repository quality | completed:success |
 | 34068344166 | `2870b68d0ca0` | pull_request | Rust verification | completed:success |
 | 34068344158 | `2870b68d0ca0` | pull_request | Formal assurance | completed:success |
