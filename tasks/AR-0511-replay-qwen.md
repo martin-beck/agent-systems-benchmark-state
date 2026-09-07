@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0511",
-  "next_action": "Await independent immutable review of exact dd657dddaf897f080ac5e00b2a01e9cac5911154; if approved, publish with an exact absent-ref lease and require exact-head CI.",
+  "next_action": "Release done after exact-main merge 1963364e75eec8cfcde0cfd0eaca672df12a2968 passed local post-merge gates and hosted runs 34156966254 quality, 34156966248 formal, 34156966219 Rust, and 34156966214 fault.",
   "observed_branch": "feature/replay-qwen",
   "observed_dirty": 0,
   "observed_head": "dd657dddaf897f080ac5e00b2a01e9cac5911154",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Qwen Code.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Qualify Qwen Code replay",
-  "updated_at": "2026-09-07T19:48:16+00:00",
+  "updated_at": "2026-09-07T20:05:29+00:00",
   "worktree_key": "agent-systems-benchmark-replay-qwen"
 }
 ---
@@ -252,3 +252,8 @@ Qualify Qwen Code record/replay, network denial, parity, retries, tool calls, ca
 
 - 2026-09-07T19:48:16+00:00: Recorded command exit 0; command argv SHA-256
   8a9f796a8d8994fb18e1c5743cdf0d9887a50ee82dce2720a7c86b4598d277ea.
+
+- 2026-09-07T20:05:29+00:00: Exact-main evidence final: signed+DCO merge
+  1963364e75eec8cfcde0cfd0eaca672df12a2968; local repository policy, fmt, full clippy, locked
+  workspace tests, and pinned Qwen replay 1/1 in 18.77s passed. Hosted exact-head quality
+  34156966254, formal 34156966248, Rust 34156966219, and fault 34156966214 all completed success.
