@@ -12,17 +12,17 @@
   "id": "AR-0513",
   "next_action": "Audit the isolated mini-SWE replay fixture for exact request/privacy and malformed-tool bounds, run focused and applicable full/formal/coverage/supply gates, then produce an SSH-signed DCO candidate for independent review.",
   "observed_branch": "feature/replay-miniswe",
-  "observed_dirty": 1,
-  "observed_head": "1963364e75eec8cfcde0cfd0eaca672df12a2968",
+  "observed_dirty": 0,
+  "observed_head": "516f7b6b1373a6d744e3005ae573b56df2962153",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0513.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for mini-SWE-agent.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Qualify mini-SWE replay",
-  "updated_at": "2026-09-07T20:01:15+00:00",
+  "updated_at": "2026-09-07T20:01:49+00:00",
   "worktree_key": "agent-systems-benchmark-replay-miniswe"
 }
 ---
