@@ -2,7 +2,7 @@
 {
   "branch": "feature/development-host-runner-capacity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T08:51:21+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0002",
     "AR-0003",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/development-host-runner-capacity",
   "observed_dirty": 0,
   "observed_head": "7c7f1e0f711398907c2094d92357f7196154d03f",
-  "owner": "contracts-20260906",
+  "owner": "",
   "plan": "../plans/AR-0830.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T05:52:31+00:00",
+  "updated_at": "2026-09-07T05:53:56+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
@@ -107,3 +107,7 @@ Implementation has not started. Read the linked plan before claiming.
   generic-label rejection, source privacy grep, and repository core-residue check passed. Worktree
   is clean; ShellCheck and shfmt remain unavailable on the host and must be addressed by pinned CI
   or explicit tooling provision.
+
+- 2026-09-07T05:53:56+00:00: Coordinator audit at 07:53Z found no active ASB runner
+  implementation/test process and no successor since 7c7f1e0; preserve exact clean product
+  checkpoint and reopen for immediate reassignment.
