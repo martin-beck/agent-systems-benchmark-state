@@ -10,7 +10,7 @@
     "AR-0104"
   ],
   "id": "AR-0603",
-  "next_action": "Generate a disposable mirror-only Cargo.lock offline and run locked asb-csb-runner tests; keep product root Cargo and schemas unchanged.",
+  "next_action": "Apply the exact two missing closing delimiters through handoffctl, refresh the disposable mirror from the audited product tree, and rerun locked offline tests.",
   "observed_branch": "feature/csb-execution-assurance",
   "observed_dirty": 1,
   "observed_head": "939c35c5ee64c9f9685cec471efc03cb620643c2",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T08:50:20+00:00",
+  "updated_at": "2026-09-07T08:51:13+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
@@ -159,3 +159,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T08:50:20+00:00: Recorded command exit 101; command argv SHA-256
   02b40a9de082559413ce0a1c92ea6e157f10b4abf8cfb1981cbbbdc476bdcfaf.
+
+- 2026-09-07T08:51:13+00:00: Mirror compilation exposed an unclosed delimiter at src/lib.rs:325.
+  Audit showed the preserved completion patch header declared 34 new lines although the hunk
+  contains 36; git apply had accepted only through the final assertion and omitted the
+  function/module closing braces. Product worktree remains an uncommitted scaffold. Apply only a
+  two-line closing-delimiter patch, refresh the mirror, and rerun locked offline tests.
