@@ -12,7 +12,7 @@
   "id": "AR-0603",
   "next_action": "Validate the corrected scratch diff with git apply --check, apply it once through handoffctl run, then run crate-focused checks after the serialized Cargo fence is granted.",
   "observed_branch": "feature/csb-execution-assurance",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "939c35c5ee64c9f9685cec471efc03cb620643c2",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0603.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T06:34:54+00:00",
+  "updated_at": "2026-09-07T06:35:07+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
