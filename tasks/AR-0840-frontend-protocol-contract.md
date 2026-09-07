@@ -2,7 +2,7 @@
 {
   "branch": "feature/frontend-protocol-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T17:43:09+00:00",
+  "claim_expires": "2026-09-07T20:43:34+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0801"
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the stable frontend control protocol contract.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Define frontend protocol contract",
-  "updated_at": "2026-09-07T17:23:30+00:00",
+  "updated_at": "2026-09-07T17:43:34+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-protocol-contract"
 }
 ---
@@ -80,3 +80,5 @@ compatibility rules, bounded errors, and generated consistency checks.
 
 - 2026-09-07T17:23:30+00:00: Recorded command exit 1; command argv SHA-256
   e49ece748a7b06c61a1c65c591ba0e2eaa2bed63d71e64a74bc09cd64c141c1e.
+
+- 2026-09-07T17:43:34+00:00: Heartbeat by root-coordination-20260906.
