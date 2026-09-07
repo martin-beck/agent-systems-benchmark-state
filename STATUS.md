@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**106 ARs tracked** across 4 active status categories.
+**107 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 4 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
-| **Planned** | Defined work awaiting promotion or dependencies | 64 |
+| **Planned** | Defined work awaiting promotion or dependencies | 65 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 36 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -141,6 +141,7 @@ flowchart LR
         AR_0834["AR-0834 - Done"]:::status_done
         AR_0835["AR-0835 - Done"]:::status_done
         AR_0836["AR-0836 - In progress"]:::status_in_progress
+        AR_0837["AR-0837 - Planned"]:::status_planned
         AR_0840["AR-0840 - In progress"]:::status_in_progress
         AR_0841["AR-0841 - Planned"]:::status_planned
         AR_0842["AR-0842 - Planned"]:::status_planned
@@ -505,6 +506,8 @@ flowchart LR
     AR_0831 --> AR_0835
     AR_0831 --> AR_0836
     AR_0832 --> AR_0833
+    AR_0835 --> AR_0837
+    AR_0836 --> AR_0837
     AR_0840 --> AR_0841
     AR_0840 --> AR_0842
     AR_0840 --> AR_0843
@@ -626,8 +629,9 @@ flowchart LR
 | [AR-0832](tasks/AR-0832-aiws-runner-qualification.md) | [AR-0830](tasks/AR-0830-aiws-runner-capacity.md), [AR-0831](tasks/AR-0831-aiws-workflow-routing.md) | [AR-0833](tasks/AR-0833-aiws-runner-reboot-lifecycle.md) |
 | [AR-0833](tasks/AR-0833-aiws-runner-reboot-lifecycle.md) | [AR-0830](tasks/AR-0830-aiws-runner-capacity.md), [AR-0832](tasks/AR-0832-aiws-runner-qualification.md) | None |
 | [AR-0834](tasks/AR-0834-handoffctl-lint-regression.md) | [AR-0002](tasks/AR-0002-coordination-assurance.md), [AR-0830](tasks/AR-0830-aiws-runner-capacity.md) | None |
-| [AR-0835](tasks/AR-0835-runner-privacy-guard-remediation.md) | [AR-0830](tasks/AR-0830-aiws-runner-capacity.md), [AR-0831](tasks/AR-0831-aiws-workflow-routing.md) | None |
-| [AR-0836](tasks/AR-0836-runner-isolation-hardening.md) | [AR-0830](tasks/AR-0830-aiws-runner-capacity.md), [AR-0831](tasks/AR-0831-aiws-workflow-routing.md) | None |
+| [AR-0835](tasks/AR-0835-runner-privacy-guard-remediation.md) | [AR-0830](tasks/AR-0830-aiws-runner-capacity.md), [AR-0831](tasks/AR-0831-aiws-workflow-routing.md) | [AR-0837](tasks/AR-0837-containerized-runner-boundary.md) |
+| [AR-0836](tasks/AR-0836-runner-isolation-hardening.md) | [AR-0830](tasks/AR-0830-aiws-runner-capacity.md), [AR-0831](tasks/AR-0831-aiws-workflow-routing.md) | [AR-0837](tasks/AR-0837-containerized-runner-boundary.md) |
+| [AR-0837](tasks/AR-0837-containerized-runner-boundary.md) | [AR-0835](tasks/AR-0835-runner-privacy-guard-remediation.md), [AR-0836](tasks/AR-0836-runner-isolation-hardening.md) | None |
 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0801](tasks/AR-0801-terminal-interface.md) | [AR-0841](tasks/AR-0841-frontend-local-transport.md), [AR-0842](tasks/AR-0842-frontend-run-lifecycle.md), [AR-0843](tasks/AR-0843-frontend-privacy-assurance.md), [AR-0844](tasks/AR-0844-frontend-api-integration.md) |
 | [AR-0841](tasks/AR-0841-frontend-local-transport.md) | [AR-0104](tasks/AR-0104-durable-results.md), [AR-0840](tasks/AR-0840-frontend-protocol-contract.md) | [AR-0842](tasks/AR-0842-frontend-run-lifecycle.md), [AR-0843](tasks/AR-0843-frontend-privacy-assurance.md), [AR-0844](tasks/AR-0844-frontend-api-integration.md) |
 | [AR-0842](tasks/AR-0842-frontend-run-lifecycle.md) | [AR-0801](tasks/AR-0801-terminal-interface.md), [AR-0840](tasks/AR-0840-frontend-protocol-contract.md), [AR-0841](tasks/AR-0841-frontend-local-transport.md) | [AR-0844](tasks/AR-0844-frontend-api-integration.md) |
@@ -664,7 +668,7 @@ flowchart LR
 | P1 | [AR-0702](tasks/AR-0702-native-platforms.md): Validate native Linux kernels and architectures | Unclaimed | Exercise native x86_64 and aarch64 including booted openEuler kernels. | Keep reviewed PR #31 head bdaf9c108226f34ec6098f75b51fd601da9e9571 immutable and green; await AR-0703 genuine Debian/openEuler x86_64/aarch64 lab capacity before completing remaining native qualification and AR-0702. |
 | P1 | [AR-0803](tasks/AR-0803-frontend-control-api.md): Define the frontend control API | Unclaimed | Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary. | Await fresh independent immutable review of repaired exact cbb764c; publish only if all prior blockers and new concurrency/privacy semantics are approved. |
 
-### Planned (64)
+### Planned (65)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -679,6 +683,7 @@ flowchart LR
 | P0 | [AR-0513](tasks/AR-0513-replay-miniswe.md): Qualify mini-SWE replay | Unclaimed | Qualify replay conformance for mini-SWE-agent. | Prove credential-free record/replay conformance for mini-SWE-agent with network denial and malformed/tool/cancel negatives. |
 | P0 | [AR-0514](tasks/AR-0514-replay-openhands.md): Qualify OpenHands replay | Unclaimed | Qualify replay conformance for OpenHands. | Prove credential-free record/replay conformance for OpenHands with network denial and malformed/tool/cancel negatives. |
 | P0 | [AR-0515](tasks/AR-0515-replay-matrix.md): Aggregate replay conformance matrix | Unclaimed | Aggregate complete per-agent replay conformance. | Aggregate per-agent replay evidence into the complete supported-agent conformance matrix. |
+| P0 | [AR-0837](tasks/AR-0837-containerized-runner-boundary.md): Qualify containerized runner boundary | Unclaimed | Provide the containerized workflow boundary required for safe trusted runner claims. | Define and qualify a digest-pinned workflow container boundary separating operator, listener, and job principals without host mounts. |
 | P1 | [AR-0311](tasks/AR-0311-provider-openai.md): Support a shared OpenAI provider | Unclaimed | Apply one default OpenAI provider profile consistently to all supported agents. | Implement the default OpenAI provider profile for every adapter that proves compatible support. |
 | P1 | [AR-0312](tasks/AR-0312-provider-ollama.md): Support a shared local Ollama provider | Unclaimed | Apply one pinned local Ollama provider and model configuration to all supported agents. | Implement a loopback-only local Ollama profile and prove every compatible adapter translation. |
 | P1 | [AR-0313](tasks/AR-0313-all-agents-provider.md): Configure one provider for all agents | Unclaimed | Let test plans select one provider profile for every chosen supported agent atomically. | Add atomic all-agent provider selection with complete preflight capability reporting. |
