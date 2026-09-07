@@ -15,11 +15,11 @@
   "plan": "../plans/AR-0516.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Add narrowly scoped strict-replay compatibility for pinned OpenDesk traffic.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "OpenDesk strict-replay HTTP compatibility",
-  "updated_at": "2026-09-07T13:28:51+00:00",
+  "updated_at": "2026-09-07T13:52:07+00:00",
   "worktree_key": "agent-systems-benchmark-opendesk-strict-replay-http-compatibility"
 }
 ---
@@ -36,3 +36,6 @@ Acceptance requires schema/runtime parity, adversarial positives and negatives, 
 
 - 2026-09-07T13:28:51+00:00: Coordinator created and promoted AR-0516; release claim because all
   four stable workers are occupied. Keep planned for next safe serialized slot.
+
+- 2026-09-07T13:52:07+00:00: Promote shared OpenDesk replay compatibility repair now that AR-0508
+  released and a worker slot is free.
