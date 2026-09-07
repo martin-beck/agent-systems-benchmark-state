@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Define the frontend control API",
-  "updated_at": "2026-09-07T03:24:36+00:00",
+  "updated_at": "2026-09-07T03:26:19+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api"
 }
 ---
@@ -93,3 +93,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T03:24:36+00:00: Recorded command exit 0; command argv SHA-256
   2e6dfab732f35b46234b742feec5518510ffc86f94b906320fd5c9fc89615cd1.
+
+- 2026-09-07T03:26:19+00:00: Recorded command exit 0; command argv SHA-256
+  15e56d1742b7c1e7eee38be4775fa32b045b47a090a5118651205bb9b5958a38.
