@@ -9,7 +9,7 @@
     "AR-0503"
   ],
   "id": "AR-0902",
-  "next_action": "Design bounded fuzz/fault targets in new owned paths and dedicated workflow; keep shared Cargo/schema and active agent paths untouched.",
+  "next_action": "Finish pinned nightly fuzz execution, validate workflow policy and full exact-tree gates, then produce a clean focused signed DCO candidate for independent review.",
   "observed_branch": "feature/fault-assurance",
   "observed_dirty": 5,
   "observed_head": "e85548d00cffcc3a014bfbc04b8fc79c5fe35da0",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Add fuzz mutation and lifecycle fault campaigns",
-  "updated_at": "2026-09-07T02:13:51+00:00",
+  "updated_at": "2026-09-07T02:14:04+00:00",
   "worktree_key": "agent-systems-benchmark-fault-assurance"
 }
 ---
@@ -119,3 +119,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T02:13:51+00:00: Recorded command exit 0; command argv SHA-256
   6ca34b96570d3f6d0d09a8ba9fcf234a7220bea9ca9c49ef5c5ed394b5207c1e.
+
+- 2026-09-07T02:14:04+00:00: Focused native fault evidence passed: store integration 3/3 including
+  real child SIGABRT recovery and storage-reader failure cleanup; existing atomic disk-full/crash
+  boundary 1/1; replay real loopback disconnect 1/1 with retry-safe cursor. Initial cargo-mutants
+  selectors were invalid assurance: return-value mutants were unviable, and a 2-job shared-target
+  run cross-contaminated fingerprints; a serial rerun exposed one genuinely surviving SLO guard.
+  Changed campaign to four viable matcher comparisons, one viable SLO minimum-bound comparison, and
+  one accounting-field mutant; fresh isolated run caught all 6/6 with zero missed/timeout/unviable.
+  Do not claim the superseded all-caught parallel result.
