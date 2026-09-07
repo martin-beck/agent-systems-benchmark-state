@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0847](tasks/AR-0847-frontend-control-api-repair.md): Frontend control API repair | Repair and independently qualify the blocked frontend control API candidate. | Independent immutable review of bcb4f8643b309f46f0b93eeb3a66ef98e4d30586; publish only after approval. | replay_20260906 |
+| P0 | [AR-0847](tasks/AR-0847-frontend-control-api-repair.md): Frontend control API repair | Repair and independently qualify the blocked frontend control API candidate. | Fresh independent immutable review of rebased candidate 0d2534f614cdc3ec43199bcb6da25083ef680f24; publish only after approval. | replay_20260906 |
 | P1 | [AR-0505](tasks/AR-0505-agent-replay-conformance.md): Prove real-agent replay conformance | Test each actual client through recording and offline replay of engineering tasks. | Build production-boundary integration matrix using synthetic upstream service. | contracts_20260906 |
 | P1 | [AR-0707](tasks/AR-0707-emulated-aarch64-portability.md): Qualify emulated aarch64 portability | Add explicit emulated-aarch64 portability qualification without claiming native support. | Provide a reproducible x86_64-hosted aarch64 VM/emulation lane for userspace portability and negative qualification only. | quality_20260906 |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. | root-coordination-20260906 |

@@ -10,7 +10,7 @@
     "AR-0801"
   ],
   "id": "AR-0847",
-  "next_action": "Independent immutable review of bcb4f8643b309f46f0b93eeb3a66ef98e4d30586; publish only after approval.",
+  "next_action": "Fresh independent immutable review of rebased candidate 0d2534f614cdc3ec43199bcb6da25083ef680f24; publish only after approval.",
   "observed_branch": "feature/frontend-control-api-repair",
   "observed_dirty": 0,
   "observed_head": "0d2534f614cdc3ec43199bcb6da25083ef680f24",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and independently qualify the blocked frontend control API candidate.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Frontend control API repair",
-  "updated_at": "2026-09-07T21:59:31+00:00",
+  "updated_at": "2026-09-07T21:59:59+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api-repair"
 }
 ---
@@ -238,3 +238,16 @@ Repair the blocked AR-0803 candidate without mutating its dirty worktree in plac
   81f058e2e8f8fdbe96c8b436af6f2a5968928e1e6173638b51e34efb6805bfff.
 
 - 2026-09-07T21:59:31+00:00: Heartbeat by replay_20260906.
+
+- 2026-09-07T21:59:59+00:00: Publication preflight found origin/main advanced to
+  111be970534fbf72332a80c2291fe1fe21acb694 before any push or PR. Coordinator authorized serialized
+  rebase. The intervening Goose-only two-path change had no overlap; rebase was conflict-free and
+  exact range-diff equals the prior reviewed bcb4f864 candidate. Successor
+  0d2534f614cdc3ec43199bcb6da25083ef680f24 (tree ed743519089568f809076c425b6d3d7aed90fb42, parent
+  111be970534fbf72332a80c2291fe1fe21acb694) is a clean one-commit SSH-signed Martin DCO candidate.
+  Post-rebase focused and parallel control tests, full workspace fmt/clippy/tests/docs/release,
+  formal tests, Kani 6/6 plus negative, repository/failure/workflow/platform policy, dependency
+  audit, coverage floors, bounded four-target fuzz 256 each, mutation 7/7, Gitleaks,
+  diff/scope/private-path checks all pass. One quality rerun first omitted the required
+  failure-fixture bin-dir argument; corrected invocation passed without product changes. Original
+  AR-0803 dirty worktree remains exact and unchanged. No remote feature branch or PR exists.
