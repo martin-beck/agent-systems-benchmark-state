@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Report repeated-attempt reliability and prevent aggregate results from hiding starvation or hard strata.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Measure reliability and mixed-workload fairness",
-  "updated_at": "2026-09-07T03:51:12+00:00",
+  "updated_at": "2026-09-07T03:51:31+00:00",
   "worktree_key": "agent-systems-benchmark-reliability-fairness"
 }
 ---
@@ -125,3 +125,22 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T03:50:44+00:00: Recorded command exit 0; command argv SHA-256
   ddf42d7c27dd5ef1f70dc9a2e4e7203621b7f0ecfdd0c3c08728b2b08ecf8301.
+
+- 2026-09-07T03:51:31+00:00: Completed the four-path asb-analysis reliability/fairness boundary and
+  exact-tree self-audit. Exact empirical first-attempt, at-least-one pass@k, and all-k pass^k
+  reports retain failed/timed-out/cancelled/not-started attempts; enforce complete k-wide
+  epoch/class/trial cardinality; expose stable aggregate, class, and epoch queue/SLO/starvation
+  evidence; and keep evidence outputs constructor-private. Seven integration tests include
+  hand-calculated mixed strata, all 25 two-attempt outcome pairs, deterministic repeated seeds and
+  input permutations, hard/degrading epoch visibility, malformed lifecycle/cardinality, threshold
+  inclusion, and u64::MAX queue arithmetic. Full workspace fmt/clippy/tests/docs/release/formal,
+  deny/audit/actionlint/zizmor/Gitleaks/failure fixtures/platform, and configured coverage passed;
+  reliability.rs is 100% regions/functions/lines and asb-analysis 98.33% regions/99.28%
+  functions/99.20% lines. The final quality wrapper encountered concurrent stale generated
+  WORKTREES/private-host validation after all product gates passed; state was reconciled
+  independently at fb4a9c8, snapshot/live doctor became green, and no product rerun was needed.
+  Added pinned public provenance: tau-bench 59a200c (MIT, arXiv:2406.12045) and Inspect AI 0.3.258
+  e72c73f (MIT), with no copied code/runtime dependency; focused fmt, 24 tests, 4 doctests including
+  compile-fail, and clippy passed afterward using Rust/Cargo 1.93.0. Wrapper mistakes remain
+  visible: an unset patch environment caused exit 2 before product mutation; durable effects were
+  checked before applying once.
