@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0307",
-  "next_action": "Publish independently approved successor 95b3ef8c78301d36af30694571e8a1c9a8965e89 to PR #27 with exact old-head lease, then inspect fresh exact-head quality, Rust/native x86_64+aarch64, and formal CI before any integration.",
+  "next_action": "Inspect fresh PR #27 exact-head successor runs 34077573746 quality, 34077573749 Rust/native x86_64+aarch64, and 34077573739 formal; repair before integration if any fails.",
   "observed_branch": "feature/agent-goose",
   "observed_dirty": 0,
   "observed_head": "95b3ef8c78301d36af30694571e8a1c9a8965e89",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned AAIF goose in no-session structured mode.",
-  "task_revision": 227,
+  "task_revision": 228,
   "title": "Implement goose client adapter",
-  "updated_at": "2026-09-07T02:49:47+00:00",
+  "updated_at": "2026-09-07T02:50:11+00:00",
   "worktree_key": "agent-systems-benchmark-agent-goose"
 }
 ---
@@ -736,3 +736,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T02:49:47+00:00: Recorded command exit 0; command argv SHA-256
   2a59b81e7b3659f8f7435240958d72a406049a265cd2bd7b7606ba9df6172f01.
+
+- 2026-09-07T02:50:11+00:00: After immutable approval and fresh clean/ref verification, safely
+  advanced PR #27 from exact 08feca551df73dbca9e4be23d82d64018fe95d1e to exact
+  95b3ef8c78301d36af30694571e8a1c9a8965e89 using an explicit remote lease through handoffctl run. PR
+  base remains e85548d00cffcc3a014bfbc04b8fc79c5fe35da0 and GitHub reports mergeable. Fresh
+  exact-head hosted runs started: quality 34077573746, Rust/native x86_64+aarch64 34077573749,
+  formal 34077573739.
