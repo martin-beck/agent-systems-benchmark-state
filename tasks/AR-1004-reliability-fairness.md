@@ -11,17 +11,17 @@
   "id": "AR-1004",
   "next_action": "Hold immutable c6c7d37 for independent review; publish only after approval and exact-main recheck.",
   "observed_branch": "feature/reliability-fairness",
-  "observed_dirty": 3,
-  "observed_head": "c6c7d37e27a33c3d5e4e0165a04585403260d317",
+  "observed_dirty": 0,
+  "observed_head": "eb28ca7aeae59b2340af7856e40f0ea31b792e66",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-1004.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Report repeated-attempt reliability and prevent aggregate results from hiding starvation or hard strata.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Measure reliability and mixed-workload fairness",
-  "updated_at": "2026-09-07T04:02:38+00:00",
+  "updated_at": "2026-09-07T04:02:53+00:00",
   "worktree_key": "agent-systems-benchmark-reliability-fairness"
 }
 ---
