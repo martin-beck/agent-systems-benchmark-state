@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and independently qualify the blocked frontend control API candidate.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Frontend control API repair",
-  "updated_at": "2026-09-07T22:01:56+00:00",
+  "updated_at": "2026-09-07T22:06:10+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api-repair"
 }
 ---
@@ -261,3 +261,6 @@ Repair the blocked AR-0803 candidate without mutating its dirty worktree in plac
   Exact-head runs started: repository quality 34165176857; Rust x86_64+aarch64 34165176859;
   formal/Kani x86_64+aarch64 34165176880; fault/fuzz/mutation x86_64+aarch64 34165176887. All were
   in progress at recording; merge is held.
+
+- 2026-09-07T22:06:10+00:00: Recorded command exit 0; command argv SHA-256
+  9b96c35a19c3189de3b3c867b1177707d5c56247b7b22993bc9af49aa4979df1.
