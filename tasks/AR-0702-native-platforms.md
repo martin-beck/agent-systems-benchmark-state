@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Exercise native x86_64 and aarch64 including booted openEuler kernels.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "Validate native Linux kernels and architectures",
-  "updated_at": "2026-09-07T03:50:09+00:00",
+  "updated_at": "2026-09-07T03:50:12+00:00",
   "worktree_key": "agent-systems-benchmark-native-platforms"
 }
 ---
@@ -261,3 +261,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T03:48:52+00:00: Recorded command exit 0; command argv SHA-256
   da20543850f416eb010c318049efbadb00d0ae46349aee8dbb3b32ce50cea407.
+
+- 2026-09-07T03:50:12+00:00: Recorded command exit 0; command argv SHA-256
+  9e3c8735be0927d2c4587c2429bd8d2ce3b3bbccb9928c6ffc6a523c7c5c925a.
