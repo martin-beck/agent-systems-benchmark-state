@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-qwen",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T21:46:18+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0306",
     "AR-0503",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/replay-qwen",
   "observed_dirty": 0,
   "observed_head": "dd657dddaf897f080ac5e00b2a01e9cac5911154",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0511.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Qualify replay conformance for Qwen Code.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Qualify Qwen Code replay",
-  "updated_at": "2026-09-07T20:05:29+00:00",
+  "updated_at": "2026-09-07T20:05:40+00:00",
   "worktree_key": "agent-systems-benchmark-replay-qwen"
 }
 ---
@@ -257,3 +257,8 @@ Qualify Qwen Code record/replay, network denial, parity, retries, tool calls, ca
   1963364e75eec8cfcde0cfd0eaca672df12a2968; local repository policy, fmt, full clippy, locked
   workspace tests, and pinned Qwen replay 1/1 in 18.77s passed. Hosted exact-head quality
   34156966254, formal 34156966248, Rust 34156966219, and fault 34156966214 all completed success.
+
+- 2026-09-07T20:05:40+00:00: Released after independent immutable review, signed+DCO merge
+  1963364e75eec8cfcde0cfd0eaca672df12a2968, clean exact-tree local post-merge validation, genuine
+  pinned Qwen replay, and successful exact-main hosted runs 34156966254, 34156966248, 34156966219,
+  and 34156966214.
