@@ -2,15 +2,14 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `b79534b627e28792a46e1a0074be762bb425d2a6`
-- Local origin/main: `b79534b627e28792a46e1a0074be762bb425d2a6`
-- Primary worktree head: `b79534b627e28792a46e1a0074be762bb425d2a6`
+- Product remote main: `e85548d00cffcc3a014bfbc04b8fc79c5fe35da0`
+- Local origin/main: `e85548d00cffcc3a014bfbc04b8fc79c5fe35da0`
+- Primary worktree head: `e85548d00cffcc3a014bfbc04b8fc79c5fe35da0`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #26 | `feature/agent-gemini@d381d340163e` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: add bounded Gemini CLI adapter |
 
 ## Recent workflows
 
@@ -18,7 +17,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 34073857782 | `d381d340163e` | pull_request | Formal assurance | completed:success |
 | 34073857745 | `d381d340163e` | pull_request | Rust verification | completed:success |
-| 34073857740 | `d381d340163e` | pull_request | Repository quality | in_progress:- |
+| 34073857740 | `d381d340163e` | pull_request | Repository quality | completed:success |
 | 34071704284 | `b79534b627e2` | push | Rust verification | completed:success |
 | 34071704192 | `b79534b627e2` | push | Repository quality | completed:success |
 | 34071704176 | `b79534b627e2` | push | Formal assurance | completed:success |
