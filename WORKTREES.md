@@ -23,8 +23,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-fault-assurance` | `feature/fault-assurance` | `e6c623113c15` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-formal-assurance` | `feature/formal-assurance` | `2a495a99a657` | 0 | behind 56, ahead 0 |
 | `agent-systems-benchmark-frontend-control-api` | `feature/frontend-control-api` | `cbb764c45c61` | 0 | behind 2, ahead 1 |
-| `agent-systems-benchmark-native-platforms` | `feature/native-platforms` | `2a05626be1bd` | 1 | behind 2, ahead 6 |
-| changed files | - | - | - | `platforms/v1/native-evidence/ubuntu-24.04-x86_64-native-2a05626.json` |
+| `agent-systems-benchmark-native-platforms` | `feature/native-platforms` | `2a05626be1bd` | 3 | behind 2, ahead 6 |
+| changed files | - | - | - | `docs/PLATFORMS.md`, `platforms/v1/platforms.json`, `platforms/v1/native-evidence/ubuntu-24.04-x86_64-native-2a05626.json` |
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 94, ahead 0 |
 | `agent-systems-benchmark-portable-metrics` | `feature/portable-metrics` | `a0f67bea1ffe` | 0 | behind 68, ahead 0 |
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `51daeb8608e5` | 0 | behind 87, ahead 0 |
