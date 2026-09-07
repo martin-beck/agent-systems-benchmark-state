@@ -41,7 +41,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `51daeb8608e5` | 0 | behind 156, ahead 0 |
 | `agent-systems-benchmark-provider-profile-contract` | `feature/provider-profile-contract` | `2870b68d0ca0` | 0 | behind 92, ahead 0 |
 | `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `748537c25e3a` | 0 | behind 173, ahead 0 |
-| `agent-systems-benchmark-recovery-models` | `feature/recovery-models` | `462bd04a349d` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-recovery-models` | `feature/recovery-models` | `462bd04a349d` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `formal/models/` |
 | `agent-systems-benchmark-redacted-request-pointer-replay` | `feature/redacted-request-pointer-replay` | `d7492ef5e9ad` | 0 | behind 24, ahead 0 |
 | `agent-systems-benchmark-reliability-fairness` | `feature/reliability-fairness` | `eb28ca7aeae5` | 0 | behind 70, ahead 0 |
 | `agent-systems-benchmark-replay-aider` | `feature/replay-aider` | `ec0a2930690c` | 0 | behind 32, ahead 0 |
