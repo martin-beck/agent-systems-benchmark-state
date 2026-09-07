@@ -6,7 +6,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | --- | --- | --- | ---: | --- |
 | `agent-systems-benchmark` | `main` | `d384c4c54a45` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-agent-aider` | `feature/agent-aider` | `da81ead6932c` | 0 | behind 8, ahead 0 |
-| `agent-systems-benchmark-agent-codex` | `feature/agent-codex` | `c16e4864d167` | 0 | behind 0, ahead 1 |
+| `agent-systems-benchmark-agent-codex` | `feature/agent-codex` | `c16e4864d167` | 1 | behind 0, ahead 1 |
+| changed files | - | - | - | `crates/asb-agents/src/codex.rs` |
 | `agent-systems-benchmark-agent-gemini` | `feature/agent-gemini` | `311c12864961` | 3 | behind 9, ahead 0 |
 | changed files | - | - | - | `crates/asb-agents/src/gemini.rs`, `crates/asb-agents/tests/gemini_boundary.rs`, `crates/asb-agents/tests/real_gemini.rs` |
 | `agent-systems-benchmark-agent-opencode` | `feature/agent-opencode` | `dfb0d548bf75` | 0 | behind 25, ahead 0 |
