@@ -9,8 +9,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-agent-codex` | `feature/agent-codex` | `eb03bd9d9ed5` | 0 | behind 0, ahead 4 |
 | `agent-systems-benchmark-agent-gemini` | `feature/agent-gemini` | `311c12864961` | 4 | behind 9, ahead 0 |
 | changed files | - | - | - | `crates/asb-agents/fixtures/`, `crates/asb-agents/src/gemini.rs`, `crates/asb-agents/tests/gemini_boundary.rs`, `crates/asb-agents/tests/real_gemini.rs` |
-| `agent-systems-benchmark-agent-goose` | `feature/agent-goose` | `d384c4c54a45` | 2 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-agents/src/goose.rs`, `crates/asb-agents/tests/real_goose.rs` |
+| `agent-systems-benchmark-agent-goose` | `feature/agent-goose` | `d384c4c54a45` | 4 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-agents/README.md`, `crates/asb-agents/fixtures/`, `crates/asb-agents/src/goose.rs`, `crates/asb-agents/tests/real_goose.rs` |
 | `agent-systems-benchmark-agent-opencode` | `feature/agent-opencode` | `dfb0d548bf75` | 0 | behind 25, ahead 0 |
 | `agent-systems-benchmark-agent-opendesk` | `feature/agent-opendesk` | `8eb99d3c7235` | 0 | behind 18, ahead 0 |
 | `agent-systems-benchmark-agent-qwen-code` | `feature/agent-qwen-code` | `941ea6fff5ee` | 4 | behind 7, ahead 0 |
