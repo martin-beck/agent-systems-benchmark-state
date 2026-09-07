@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0702",
-  "next_action": "Independently review unpublished exact b56a3238d252842d931755a56e618a06103b7131/tree 3d96fc1d84c7752a71a3c8216b77ca0ff6b11855; do not publish or release. AR-0703 genuine Debian/openEuler x86_64/aarch64 capacity remains the completion blocker.",
+  "next_action": "Await focused independent review of unpublished CI-repair head 933b55159e3685ca636b0138b1627303b3ba82ec, then update PR 31 from exact remote e7f08ed only with explicit lease and require fresh exact-head native/quality/Rust/formal/fault CI. AR-0703 remains the completion blocker.",
   "observed_branch": "feature/native-platforms",
   "observed_dirty": 0,
   "observed_head": "933b55159e3685ca636b0138b1627303b3ba82ec",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Exercise native x86_64 and aarch64 including booted openEuler kernels.",
-  "task_revision": 265,
+  "task_revision": 266,
   "title": "Validate native Linux kernels and architectures",
-  "updated_at": "2026-09-07T05:17:11+00:00",
+  "updated_at": "2026-09-07T05:18:10+00:00",
   "worktree_key": "agent-systems-benchmark-native-platforms"
 }
 ---
@@ -704,3 +704,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T05:17:11+00:00: Recorded command exit 0; command argv SHA-256
   87fdcbff1d63270b74b6ddaed11c51577de0616a869158f10e2c465aedfd86f1.
+
+- 2026-09-07T05:18:10+00:00: Published reviewed rebased candidate as PR 31 at e7f08ed after exact
+  semantic range-diff, regenerated native evidence and complete local gates. Exact-head native run
+  34086102602 failed on both architectures before checks because the disposable images lacked
+  /usr/bin/bwrap; the collector failed closed with no artifact. Formal run 34086102606 and fault run
+  34086102616 are green; Rust 34086102386 and quality 34086102505 remain in progress. Added only an
+  exact bubblewrap 0.9.0-1ubuntu0.1 no-recommends install in signed+DCO local head 933b551; apt
+  policy, repository policy, actionlint, zizmor, Gitleaks, manifest validation, 27 platform tests,
+  privacy, signature and DCO checks pass. The repair is unpublished pending focused independent
+  review.
