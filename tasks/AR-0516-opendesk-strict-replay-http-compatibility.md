@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add narrowly scoped strict-replay compatibility for pinned OpenDesk traffic.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "OpenDesk strict-replay HTTP compatibility",
-  "updated_at": "2026-09-07T14:37:17+00:00",
+  "updated_at": "2026-09-07T14:40:40+00:00",
   "worktree_key": "agent-systems-benchmark-opendesk-strict-replay-http-compatibility"
 }
 ---
@@ -237,3 +237,6 @@ Acceptance requires schema/runtime parity, adversarial positives and negatives, 
   40cfa75 and GitHub reports mergeable. Fresh exact-head runs: quality 34133907025, Rust
   x86_64+aarch64 34133907031, formal 34133907059, fault assurance 34133907029; all started in
   progress. Prior aarch64 Goose HTTP 504 remains environmental evidence only.
+
+- 2026-09-07T14:40:40+00:00: Recorded command exit 0; command argv SHA-256
+  58bd9c0cee04bc25bdd6cb352033344e5445760213fc8c769c3c0b9276ffb0f0.
