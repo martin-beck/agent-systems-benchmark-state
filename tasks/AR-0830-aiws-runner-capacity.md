@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 112,
+  "task_revision": 113,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T06:40:50+00:00",
+  "updated_at": "2026-09-07T06:40:52+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
@@ -359,3 +359,6 @@ Implementation has not started. Read the linked plan before claiming.
   pseudonymous runner online, idle, and exactly one label asb-development-v1-x86_64-ubuntu2404.
   Existing Relay listeners/services were not mutated. No reboot persistence or canary result is
   claimed.
+
+- 2026-09-07T06:40:52+00:00: Recorded command exit 0; command argv SHA-256
+  7179f19d9ba1965feab2153220570335b5b0b52cc9f4143ee3fa9aaeb36a4353.
