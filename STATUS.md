@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**80 ARs tracked** across 3 active status categories.
+**80 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 51 |
+| **Planned** | Defined work awaiting promotion or dependencies | 50 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 26 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -58,7 +58,7 @@ flowchart LR
         AR_0305["AR-0305 - In progress"]:::status_in_progress
         AR_0306["AR-0306 - In progress"]:::status_in_progress
         AR_0307["AR-0307 - In progress"]:::status_in_progress
-        AR_0308["AR-0308 - Planned"]:::status_planned
+        AR_0308["AR-0308 - Open"]:::status_open
         AR_0309["AR-0309 - Planned"]:::status_planned
         AR_0310["AR-0310 - Done"]:::status_done
         AR_0311["AR-0311 - Planned"]:::status_planned
@@ -514,7 +514,13 @@ flowchart LR
 | P1 | [AR-0306](tasks/AR-0306-agent-qwen-code.md): Implement Qwen Code client adapter | root-coordination-20260906 | Run pinned Qwen Code through isolated headless stream-JSON. | Finish isolated Qwen tests, then acquire the serialized module-registration fence after earlier adapter integration. |
 | P1 | [AR-0307](tasks/AR-0307-agent-goose.md): Implement goose client adapter | quality-20260906 | Run pinned AAIF goose in no-session structured mode. | Complete isolated compilation/tests after AR-0304 transfers the additive asb-agents lib.rs export fence; then run pinned x86_64/aarch64 native journeys and full gates. |
 
-### Planned (51)
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Unclaimed | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Inspect the current package, trajectory contract, LiteLLM override and environment isolation. |
+
+### Planned (50)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -556,7 +562,6 @@ flowchart LR
 | P1 | [AR-1004](tasks/AR-1004-reliability-fairness.md): Measure reliability and mixed-workload fairness | Unclaimed | Report repeated-attempt reliability and prevent aggregate results from hiding starvation or hard strata. | Add trial/epoch aggregation following tau-bench and Inspect concepts. |
 | P1 | [AR-1007](tasks/AR-1007-benchmark-validity.md): Maintain benchmark validity and portability registry | Unclaimed | Track dataset provenance, contamination risk, grader validity and native portability per workload revision. | Implement registry schema and validation for built-in and imported workloads. |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Design capability probes and bounded diagnostics profiles. |
-| P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Unclaimed | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Inspect the current package, trajectory contract, LiteLLM override and environment isolation. |
 | P2 | [AR-0309](tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | Unclaimed | Run a maintained MIT OpenHands SDK or canonical headless client. | Resolve the maintained SDK/client boundary and exclude retired or enterprise-licensed components. |
 | P2 | [AR-0402](tasks/AR-0402-external-code-workloads.md): Integrate SWE-bench and Aider Polyglot | Unclaimed | Add versioned external workload adapters without vendoring datasets. | Pin datasets/evaluators and evaluate image architecture parity. |
 | P2 | [AR-0403](tasks/AR-0403-terminal-workloads.md): Integrate Terminal-Bench workloads | Unclaimed | Import terminal tasks through an adapter to the published harness or task format. | Assess Harbor/Terminal-Bench integration contract before implementing. |

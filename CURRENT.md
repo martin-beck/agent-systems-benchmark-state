@@ -11,6 +11,12 @@ Never edit this file directly.
 | P1 | [AR-0306](tasks/AR-0306-agent-qwen-code.md): Implement Qwen Code client adapter | Run pinned Qwen Code through isolated headless stream-JSON. | Finish isolated Qwen tests, then acquire the serialized module-registration fence after earlier adapter integration. | root-coordination-20260906 |
 | P1 | [AR-0307](tasks/AR-0307-agent-goose.md): Implement goose client adapter | Run pinned AAIF goose in no-session structured mode. | Complete isolated compilation/tests after AR-0304 transfers the additive asb-agents lib.rs export fence; then run pinned x86_64/aarch64 native journeys and full gates. | quality-20260906 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Inspect the current package, trajectory contract, LiteLLM override and environment isolation. | - |
+
 ## Planned
 
 | Priority | Task | Summary | Next action | Owner |
@@ -53,7 +59,6 @@ Never edit this file directly.
 | P1 | [AR-1004](tasks/AR-1004-reliability-fairness.md): Measure reliability and mixed-workload fairness | Report repeated-attempt reliability and prevent aggregate results from hiding starvation or hard strata. | Add trial/epoch aggregation following tau-bench and Inspect concepts. | - |
 | P1 | [AR-1007](tasks/AR-1007-benchmark-validity.md): Maintain benchmark validity and portability registry | Track dataset provenance, contamination risk, grader validity and native portability per workload revision. | Implement registry schema and validation for built-in and imported workloads. | - |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Design capability probes and bounded diagnostics profiles. | - |
-| P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Inspect the current package, trajectory contract, LiteLLM override and environment isolation. | - |
 | P2 | [AR-0309](tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | Run a maintained MIT OpenHands SDK or canonical headless client. | Resolve the maintained SDK/client boundary and exclude retired or enterprise-licensed components. | - |
 | P2 | [AR-0402](tasks/AR-0402-external-code-workloads.md): Integrate SWE-bench and Aider Polyglot | Add versioned external workload adapters without vendoring datasets. | Pin datasets/evaluators and evaluate image architecture parity. | - |
 | P2 | [AR-0403](tasks/AR-0403-terminal-workloads.md): Integrate Terminal-Bench workloads | Import terminal tasks through an adapter to the published harness or task format. | Assess Harbor/Terminal-Bench integration contract before implementing. | - |
