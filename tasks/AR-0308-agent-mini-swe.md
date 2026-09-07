@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned mini-SWE-agent as a bounded batch engineering agent.",
-  "task_revision": 257,
+  "task_revision": 258,
   "title": "Implement mini-SWE-agent client adapter",
-  "updated_at": "2026-09-07T05:21:50+00:00",
+  "updated_at": "2026-09-07T05:22:14+00:00",
   "worktree_key": "agent-systems-benchmark-agent-mini-swe"
 }
 ---
@@ -874,3 +874,6 @@ Implementation has not started. Read the linked plan before claiming.
   apply_patch wrapper commands failed while matching/quoting patch context; the first partially
   applied four source hunks and briefly mangled byte-literal quotes, then the successor wrapper
   patch repaired the exact dirty tree before any build/test. No candidate publication.
+
+- 2026-09-07T05:22:14+00:00: Recorded command exit 0; command argv SHA-256
+  97143995ba974f796f7e8023e4e6e5d7dd0c45e532a2e7fc97abb9a01ed0ad24.
