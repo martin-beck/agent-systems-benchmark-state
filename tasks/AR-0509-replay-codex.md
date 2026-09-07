@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Codex.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Qualify Codex replay",
-  "updated_at": "2026-09-07T16:12:07+00:00",
+  "updated_at": "2026-09-07T16:18:09+00:00",
   "worktree_key": "agent-systems-benchmark-replay-codex"
 }
 ---
@@ -240,3 +240,6 @@ Qualify Codex record/replay, network denial, parity, retries, tool calls, cancel
   unchanged full rerun was interrupted environmentally: ld SIGBUS then ENOSPC during state
   reconcile; audited completed-AR caches were removed, 42G restored, and reconcile/snapshot/live
   doctor plus synchronized clean state passed. Per coordinator, no unchanged rerun.
+
+- 2026-09-07T16:18:09+00:00: Recorded command exit 0; command argv SHA-256
+  fb25a003fff59a6e890a5a35302bb2d50eb16520da790e0d4326f4e3bdfa346b.
