@@ -10,7 +10,7 @@
     "AR-0104"
   ],
   "id": "AR-0603",
-  "next_action": "Validate the corrected scratch diff with git apply --check, apply it once through handoffctl run, then run crate-focused checks after the serialized Cargo fence is granted.",
+  "next_action": "Repair only the truncated asb-csb-runner test tail from the preserved intended delta, then run isolated crate checks without touching root Cargo.toml/Cargo.lock/schema.",
   "observed_branch": "feature/csb-execution-assurance",
   "observed_dirty": 1,
   "observed_head": "939c35c5ee64c9f9685cec471efc03cb620643c2",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T08:44:22+00:00",
+  "updated_at": "2026-09-07T08:45:51+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
@@ -127,3 +127,12 @@ Implementation has not started. Read the linked plan before claiming.
   online canary; preserve CSB checkpoint and return to it after runner evidence.
 
 - 2026-09-07T08:44:22+00:00: Claimed by contracts-20260906.
+
+- 2026-09-07T08:45:51+00:00: Fresh audit at claimed revision 31 found exact head 939c35c with three
+  untracked asb-csb-runner files and no live CSB process. The already-applied boundary patch has
+  SHA-256 2c9214895a70c1c4ca399a71d705dd1aa44c02dfcc7e783044ddb3b285fdb182; git apply --check
+  rejects it because all target files already exist, so it must not be replayed. The saved
+  completion patch SHA-256 6b2778635ea8200b7cdc5b1de3ec9ecf0103bf9c31e449063a90611a01091b is still
+  corrupt at line 42, and src/lib.rs is truncated at line 296 inside the environment negative.
+  Preserve the existing effect and reconstruct only the intended missing test tail before isolated
+  validation. Root Cargo/lock/schema remain fenced.
