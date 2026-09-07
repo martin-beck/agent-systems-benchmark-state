@@ -8,15 +8,18 @@
   ],
   "id": "AR-0519",
   "next_action": "Repair the Gemini thinkingConfig contract to admit exactly includeThoughts:boolean and reject all other shapes.",
+  "observed_branch": "feature/gemini-thinking-config-contract",
+  "observed_dirty": 0,
+  "observed_head": "74d311ca7a4ae86809424f9ff5edfe2c16127891",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0519.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Correct Gemini thinkingConfig strict-replay contract from pinned capture evidence.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Gemini thinkingConfig contract repair",
-  "updated_at": "2026-09-07T17:23:35+00:00",
+  "updated_at": "2026-09-07T17:24:43+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-thinking-config-contract"
 }
 ---
