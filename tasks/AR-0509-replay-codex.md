@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Codex.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Qualify Codex replay",
-  "updated_at": "2026-09-07T16:19:02+00:00",
+  "updated_at": "2026-09-07T16:22:37+00:00",
   "worktree_key": "agent-systems-benchmark-replay-codex"
 }
 ---
@@ -251,3 +251,6 @@ Qualify Codex record/replay, network denial, parity, retries, tool calls, cancel
   with absent-ref force-with-lease and opened PR #45, base ab5d6c91/head d086fec, mergeable.
   Exact-head runs started: Rust 34142644584, Fault 34142644602, Formal 34142644656, Quality
   34142644831.
+
+- 2026-09-07T16:22:37+00:00: Recorded command exit 0; command argv SHA-256
+  677567e2d01aead006f5d95175f2290945940f8bb76214868c9a23bc3a15c0f8.
