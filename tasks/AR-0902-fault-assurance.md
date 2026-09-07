@@ -9,7 +9,7 @@
     "AR-0503"
   ],
   "id": "AR-0902",
-  "next_action": "Create focused signed DCO candidate from the clean staged scope, then run exact-commit policy/privacy/signature checks and await coordinator rebase/publication guidance.",
+  "next_action": "Await coordinator instruction for one controlled rebase onto current signed product main, then rerun affected exact-tree gates and independent immutable review before publication.",
   "observed_branch": "feature/fault-assurance",
   "observed_dirty": 0,
   "observed_head": "68ecb4e97d848ff59f51aaf64030271f72a200aa",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Add fuzz mutation and lifecycle fault campaigns",
-  "updated_at": "2026-09-07T02:23:34+00:00",
+  "updated_at": "2026-09-07T02:23:52+00:00",
   "worktree_key": "agent-systems-benchmark-fault-assurance"
 }
 ---
@@ -198,3 +198,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T02:23:34+00:00: Recorded command exit 0; command argv SHA-256
   99e4d74e450072bcc9980db09cea19ddcdfba6fb8901906908895f92e7bd976e.
+
+- 2026-09-07T02:23:52+00:00: Created clean focused SSH-signed exact-DCO candidate
+  68ecb4e97d848ff59f51aaf64030271f72a200aa, tree 1de9afa8013c51a614e42a682dd877a57b533758, base
+  e85548d00cffcc3a014bfbc04b8fc79c5fe35da0. Exact-commit DCO, repository policy, Gitleaks,
+  diff-check, actionlint and offline zizmor pass. First candidate a13a2a8 failed repository policy
+  because a new upload-artifact pin was absent from shared policy; honoring the no-platform-policy
+  boundary, removed that upload step and now retain reviewed corpus seeds only. New failures are
+  disposable-runner-only until reproduced/minimized/privacy-reviewed and committed; this limitation
+  is explicit.
