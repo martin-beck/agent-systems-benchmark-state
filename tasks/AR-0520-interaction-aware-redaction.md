@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support per-interaction request redaction policies for mixed catalog and private requests.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Interaction-aware request redaction",
-  "updated_at": "2026-09-07T20:52:04+00:00",
+  "updated_at": "2026-09-07T20:52:07+00:00",
   "worktree_key": "agent-systems-benchmark-interaction-aware-redaction"
 }
 ---
@@ -201,3 +201,6 @@ Repair the cassette-global request-body redaction limitation exposed by Goose: c
 
 - 2026-09-07T20:51:37+00:00: Recorded command exit 1; command argv SHA-256
   78eaa4de134f6734fde7828920e906c509c3f4d7b5a1120e36945b5109d0ed10.
+
+- 2026-09-07T20:52:07+00:00: Recorded command exit 0; command argv SHA-256
+  2eb5a0472aa322e4bfc1836ffa11d2bc18737a3d22b096aab1bb4d4656dbb3d2.
