@@ -690,7 +690,7 @@ def apply_promote(args: argparse.Namespace, meta: Meta, tasks: list[Task]) -> st
     return str(args.note)
 
 
-def apply_resume(args: argparse.Namespace, meta: Meta, tasks: list[Task]) -> str:
+def apply_resume(args: argparse.Namespace, meta: Meta, _tasks: list[Task]) -> str:
     """Reopen a blocked task after an explicit coordinator review."""
     if args.expected_revision != meta["task_revision"]:
         raise RuntimeError(
