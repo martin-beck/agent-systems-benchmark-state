@@ -17,11 +17,11 @@
   "plan": "../plans/AR-0830.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 98,
+  "task_revision": 99,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T06:28:24+00:00",
+  "updated_at": "2026-09-07T06:29:15+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
@@ -307,3 +307,7 @@ Implementation has not started. Read the linked plan before claiming.
   06:28:07 but produced no registration, listener, focused-test checkpoint, or prerequisite
   diagnosis; preserve product checkpoint 0f260296 and require explicit registration procedure before
   retry.
+
+- 2026-09-07T06:29:15+00:00: Coordinator reconciles raced external registration
+  asr-runner-e24284d3bbb7; do not repeat registration. Reclaim to start listener, verify exact
+  label/health, canary, and lifecycle.
