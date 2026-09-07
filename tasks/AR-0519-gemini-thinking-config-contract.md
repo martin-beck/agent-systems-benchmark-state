@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Correct Gemini thinkingConfig strict-replay contract from pinned capture evidence.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Gemini thinkingConfig contract repair",
-  "updated_at": "2026-09-07T17:45:48+00:00",
+  "updated_at": "2026-09-07T17:49:26+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-thinking-config-contract"
 }
 ---
@@ -144,3 +144,6 @@ Repair the merged Gemini dialect using privacy-safe pinned evidence: `thinkingCo
   exact base 74d311ca. Remote branch and PR head are exact 0aff702, PR is mergeable, and fresh
   hosted runs started: formal 34148895887, fault 34148895944, quality 34148896016, Rust
   x86_64+aarch64 34148896021. No merge authorization yet.
+
+- 2026-09-07T17:49:26+00:00: Recorded command exit 0; command argv SHA-256
+  7166559eb12f75bb1fefc97cfc284d3fdba8cbbbaae6f04d1c89dab6b01835ff.
