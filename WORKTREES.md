@@ -23,8 +23,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-formal-assurance` | `feature/formal-assurance` | `2a495a99a657` | 0 | behind 56, ahead 0 |
 | `agent-systems-benchmark-frontend-control-api` | `feature/frontend-control-api` | `cbb764c45c61` | 14 | behind 2, ahead 1 |
 | changed files | - | - | - | `Cargo.lock`, `crates/asb-cli/Cargo.toml`, `crates/asb-cli/src/lib.rs`, `crates/asb-control/Cargo.toml`, `crates/asb-control/README.md`, `crates/asb-control/fixtures/v1/success-response.json`, `crates/asb-control/schema/v1/response.schema.json`, `crates/asb-control/src/endpoint.rs`, `crates/asb-control/src/protocol.rs`, `crates/asb-control/src/state.rs`, `crates/asb-control/tests/control.rs`, `crates/asb-control/tests/endpoint.rs`, `docs/FRONTEND_CONTROL_API.md`, `crates/asb-cli/src/control.rs` |
-| `agent-systems-benchmark-native-platforms` | `feature/native-platforms` | `8b38a70a5618` | 1 | behind 2, ahead 11 |
-| changed files | - | - | - | `tests/platforms/test_native_evidence.py` |
+| `agent-systems-benchmark-native-platforms` | `feature/native-platforms` | `b89a087c3447` | 0 | behind 2, ahead 12 |
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 94, ahead 0 |
 | `agent-systems-benchmark-portable-metrics` | `feature/portable-metrics` | `a0f67bea1ffe` | 0 | behind 68, ahead 0 |
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `51daeb8608e5` | 0 | behind 87, ahead 0 |
