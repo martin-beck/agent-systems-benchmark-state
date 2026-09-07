@@ -22,8 +22,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 98, ahead 0 |
 | `agent-systems-benchmark-fault-assurance` | `feature/fault-assurance` | `e6c623113c15` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-formal-assurance` | `feature/formal-assurance` | `2a495a99a657` | 0 | behind 56, ahead 0 |
-| `agent-systems-benchmark-frontend-control-api` | `feature/frontend-control-api` | `cbb764c45c61` | 11 | behind 2, ahead 1 |
-| changed files | - | - | - | `Cargo.lock`, `crates/asb-control/Cargo.toml`, `crates/asb-control/README.md`, `crates/asb-control/fixtures/v1/success-response.json`, `crates/asb-control/schema/v1/response.schema.json`, `crates/asb-control/src/endpoint.rs`, `crates/asb-control/src/protocol.rs`, `crates/asb-control/src/state.rs`, `crates/asb-control/tests/control.rs`, `crates/asb-control/tests/endpoint.rs`, `docs/FRONTEND_CONTROL_API.md` |
+| `agent-systems-benchmark-frontend-control-api` | `feature/frontend-control-api` | `cbb764c45c61` | 14 | behind 2, ahead 1 |
+| changed files | - | - | - | `Cargo.lock`, `crates/asb-cli/Cargo.toml`, `crates/asb-cli/src/lib.rs`, `crates/asb-control/Cargo.toml`, `crates/asb-control/README.md`, `crates/asb-control/fixtures/v1/success-response.json`, `crates/asb-control/schema/v1/response.schema.json`, `crates/asb-control/src/endpoint.rs`, `crates/asb-control/src/protocol.rs`, `crates/asb-control/src/state.rs`, `crates/asb-control/tests/control.rs`, `crates/asb-control/tests/endpoint.rs`, `docs/FRONTEND_CONTROL_API.md`, `crates/asb-cli/src/control.rs` |
 | `agent-systems-benchmark-native-platforms` | `feature/native-platforms` | `d2fc49244037` | 1 | behind 2, ahead 9 |
 | changed files | - | - | - | `tools/platforms/native_evidence.py` |
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 94, ahead 0 |
