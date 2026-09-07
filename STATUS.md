@@ -709,7 +709,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0511](tasks/AR-0511-replay-qwen.md): Qualify Qwen Code replay | quality_20260906 | Qualify replay conformance for Qwen Code. | Await independent immutable review of exact dd657dddaf897f080ac5e00b2a01e9cac5911154; if approved, publish with an exact absent-ref lease and require exact-head CI. |
 | P0 | [AR-0512](tasks/AR-0512-replay-goose.md): Qualify goose replay | contracts_20260906 | Qualify replay conformance for goose. | Serialize a shared replay follow-up that makes request-body redaction selectors interaction/method-aware; then rerun the preserved Goose fixture without bypassing private messages. |
-| P0 | [AR-0513](tasks/AR-0513-replay-miniswe.md): Qualify mini-SWE replay | replay_20260906 | Qualify replay conformance for mini-SWE-agent. | Rerun the pinned 2.4.6 loopback record/replay fixture after aligning the evidence-backed Usage capability; continue through strict replay parity, cleanup, cancellation, and malformed/tool negatives without shared edits. |
+| P0 | [AR-0513](tasks/AR-0513-replay-miniswe.md): Qualify mini-SWE replay | replay_20260906 | Qualify replay conformance for mini-SWE-agent. | Audit the isolated mini-SWE replay fixture for exact request/privacy and malformed-tool bounds, run focused and applicable full/formal/coverage/supply gates, then produce an SSH-signed DCO candidate for independent review. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
 
 ### Blocked (4)

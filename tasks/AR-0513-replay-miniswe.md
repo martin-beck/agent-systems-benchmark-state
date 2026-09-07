@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0513",
-  "next_action": "Rerun the pinned 2.4.6 loopback record/replay fixture after aligning the evidence-backed Usage capability; continue through strict replay parity, cleanup, cancellation, and malformed/tool negatives without shared edits.",
+  "next_action": "Audit the isolated mini-SWE replay fixture for exact request/privacy and malformed-tool bounds, run focused and applicable full/formal/coverage/supply gates, then produce an SSH-signed DCO candidate for independent review.",
   "observed_branch": "feature/replay-miniswe",
   "observed_dirty": 1,
   "observed_head": "076e9c44810903fb42669642b5820df2f1672136",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for mini-SWE-agent.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Qualify mini-SWE replay",
-  "updated_at": "2026-09-07T19:53:58+00:00",
+  "updated_at": "2026-09-07T19:54:30+00:00",
   "worktree_key": "agent-systems-benchmark-replay-miniswe"
 }
 ---
@@ -105,3 +105,14 @@ Qualify mini-SWE-agent record/replay, network denial, parity, retries, tool call
 
 - 2026-09-07T19:53:58+00:00: Recorded command exit 0; command argv SHA-256
   259d76adc3e426c9dbc46fce0294bed9433a1d17dd0c386145c2e6c6bcf98e63.
+
+- 2026-09-07T19:54:30+00:00: Pinned mini-SWE-agent 2.4.6 native x86_64 loopback-only journey passed
+  in 57.12s using the verified wheel digest
+  a35463c553ac825c7773b03cfa69cd44958e3af20155dcc5711fdf9e4c67cd54 and CPython 3.12 environment
+  under /srv/data/projects. It captured two credential-free buffered OpenAI Chat Completions
+  requests with nonempty bash tool definitions, executed the exact bug-fix edit then submission
+  command, graded original.bug-fix pass, replayed both immutable interactions offline with statuses
+  [200,200], matched terminal/retry/event trajectory and grade, left record/replay state empty, and
+  proved paced cancellation returns Cancelled with process/state cleanup. Network namespace asserted
+  loopback-only. Automatic retry remains unsupported evidence: RetryObservation is
+  Unavailable(UnstructuredBatchDiagnostics).
