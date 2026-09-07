@@ -9,7 +9,7 @@
     "AR-0401"
   ],
   "id": "AR-1004",
-  "next_action": "Hold fully green PR #30 exact eb28ca7 for coordinator-serialized signed integration; do not merge independently.",
+  "next_action": "Verify exact main 814397f with post-merge local gates and all fresh exact-main hosted CI; release only after green reconciliation.",
   "observed_branch": "feature/reliability-fairness",
   "observed_dirty": 0,
   "observed_head": "eb28ca7aeae59b2340af7856e40f0ea31b792e66",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Report repeated-attempt reliability and prevent aggregate results from hiding starvation or hard strata.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Measure reliability and mixed-workload fairness",
-  "updated_at": "2026-09-07T04:11:17+00:00",
+  "updated_at": "2026-09-07T04:11:46+00:00",
   "worktree_key": "agent-systems-benchmark-reliability-fairness"
 }
 ---
@@ -245,3 +245,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T04:11:17+00:00: Recorded command exit 1; command argv SHA-256
   7b9a354a762217536de90f9be55aa2a450569f6a63f5b9ecfaee64c79dc8589c.
+
+- 2026-09-07T04:11:46+00:00: Coordinator-authorized signed+DCO no-ff integration was created and
+  exact-lease pushed. Durable main is 814397f8f74971589aa02b13da12485169db3e2e with exact parents
+  4a59593c and eb28ca7; SSH signature and single matching DCO trailer are valid, primary tree clean,
+  and origin/main matches. GitHub PR #30 is MERGED at the same 814397f identity. The integration
+  wrapper exited 1 only because its immediate PR-state assertion raced GitHub convergence after the
+  successful push; read-only reconciliation confirmed the PR transition seconds later. Do not repeat
+  merge/fetch/push. Proceed with exact-main post-merge local and hosted verification.
