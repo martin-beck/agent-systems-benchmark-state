@@ -9,7 +9,7 @@
     "AR-0401"
   ],
   "id": "AR-1004",
-  "next_action": "Add trial/epoch aggregation following tau-bench and Inspect concepts.",
+  "next_action": "Audit AR-1004 reliability/fairness semantics, add any missing negative/formal evidence, then run full exact-tree gates and prepare focused signed DCO candidate without shared Cargo/schema edits.",
   "observed_branch": "feature/reliability-fairness",
   "observed_dirty": 4,
   "observed_head": "4a59593c0c55e0ad72656363473a404d8be1054b",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Report repeated-attempt reliability and prevent aggregate results from hiding starvation or hard strata.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Measure reliability and mixed-workload fairness",
-  "updated_at": "2026-09-07T03:36:54+00:00",
+  "updated_at": "2026-09-07T03:37:15+00:00",
   "worktree_key": "agent-systems-benchmark-reliability-fairness"
 }
 ---
@@ -67,3 +67,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T03:36:54+00:00: Recorded command exit 0; command argv SHA-256
   2e8a9dc7938940a8cb62ccb50f0c8f51bb82a11b32d560fbab75da32f0e345c3.
+
+- 2026-09-07T03:37:15+00:00: Implemented initial four-path asb-analysis-only boundary:
+  constructor-validated workload/language/difficulty strata; complete k-wide trials with
+  duplicate/gap rejection; non-forgeable first-attempt, empirical pass@k and empirical all-k pass^k
+  rates; exact passed/failed/timed-out/cancelled/unstarted counts; stable per-class queue,
+  starvation and SLO reports; explicit empirical-evidence limits. Hand-calculated mixed-strata,
+  censoring, hard-class, extreme queue, malformed lifecycle/cardinality, accessor/error, and
+  deterministic repeated-seed/input-permutation tests pass. Focused asb-analysis tests/clippy/doc
+  compile-fail pass. Owned reliability.rs coverage is 100% lines/regions/functions; full
+  asb-analysis is 99.15% lines. First patch wrapper invocation supplied heredoc to handoffctl rather
+  than nested shell and failed before product mutation; corrected nested apply_patch. First compile
+  then correctly failed missing integration-test crate docs; added the required public-boundary
+  module docs and unchanged rerun passed.
