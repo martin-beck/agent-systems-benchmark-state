@@ -5,8 +5,6 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
 | `agent-systems-benchmark` | `main` | `e8966b2a5453` | 0 | behind 0, ahead 0 |
-| `ar0517-codex-validation` | `DETACHED` | `d7492ef5e9ad` | 1 | behind 0, ahead 1 |
-| changed files | - | - | - | `crates/asb-agents/tests/replay_codex.rs` |
 | `agent-systems-benchmark-agent-aider` | `feature/agent-aider` | `da81ead6932c` | 0 | behind 74, ahead 0 |
 | `agent-systems-benchmark-agent-codex` | `feature/agent-codex` | `eb03bd9d9ed5` | 0 | behind 62, ahead 0 |
 | `agent-systems-benchmark-agent-gemini` | `feature/agent-gemini` | `d381d340163e` | 0 | behind 58, ahead 0 |
