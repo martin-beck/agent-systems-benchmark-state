@@ -10,7 +10,7 @@
     "AR-0104"
   ],
   "id": "AR-0603",
-  "next_action": "Retry the authorized immutable merge once with git merge --no-ff -S --signoff, verify parents/tree/signature/DCO, and push only with exact main lease.",
+  "next_action": "Completed; retain explicit Ubuntu 24.04 x86_64 support limits.",
   "observed_branch": "feature/csb-execution-assurance",
   "observed_dirty": 0,
   "observed_head": "39e306124b567dece6f335662a11906869f91ba7",
