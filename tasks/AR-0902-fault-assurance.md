@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Add fuzz mutation and lifecycle fault campaigns",
-  "updated_at": "2026-09-07T02:15:46+00:00",
+  "updated_at": "2026-09-07T02:16:12+00:00",
   "worktree_key": "agent-systems-benchmark-fault-assurance"
 }
 ---
@@ -134,3 +134,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T02:15:46+00:00: Recorded command exit 0; command argv SHA-256
   683d93022d881f5f64dc74a0586cafa6940b98b6677120f2d06f485a7227c358.
+
+- 2026-09-07T02:16:12+00:00: Recorded command exit 0; command argv SHA-256
+  c7a2ff947116955fa0e72592d07ffe6d9bcbc7e884e131f62ccf5223b2db5583.
