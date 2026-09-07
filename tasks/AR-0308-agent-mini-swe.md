@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned mini-SWE-agent as a bounded batch engineering agent.",
-  "task_revision": 151,
+  "task_revision": 152,
   "title": "Implement mini-SWE-agent client adapter",
-  "updated_at": "2026-09-07T03:49:56+00:00",
+  "updated_at": "2026-09-07T03:52:19+00:00",
   "worktree_key": "agent-systems-benchmark-agent-mini-swe"
 }
 ---
@@ -518,3 +518,6 @@ Implementation has not started. Read the linked plan before claiming.
   and test hostile workspace/ambient dotenv cannot alter endpoint/auth.
 
 - 2026-09-07T03:49:56+00:00: Heartbeat by replay-20260906.
+
+- 2026-09-07T03:52:19+00:00: Recorded command exit 0; command argv SHA-256
+  1e7529494199d0d021dbdadd0757cdf4221153393b8567d4a2838eab833ae10a.
