@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenCode.",
-  "task_revision": 92,
+  "task_revision": 93,
   "title": "Qualify OpenCode replay",
-  "updated_at": "2026-09-07T12:58:37+00:00",
+  "updated_at": "2026-09-07T13:12:17+00:00",
   "worktree_key": "agent-systems-benchmark-replay-opencode"
 }
 ---
@@ -289,3 +289,6 @@ retries, tool calls, cancellation, and malformed-record negatives.
   metadata and cleanliness passed. Limits: Linux x86_64 and pinned OpenAI-compatible route/fixture
   only; network denial requires the surrounding user/network namespace; no live provider, aarch64
   native, other client/provider, non-loopback, or timing-determinism claim.
+
+- 2026-09-07T13:12:17+00:00: Recorded command exit 0; command argv SHA-256
+  3969c00b4655ab1aca0d5c7d2e1b735aa49687f631f12694637e290f50784dd0.
