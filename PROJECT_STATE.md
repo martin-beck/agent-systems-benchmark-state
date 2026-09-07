@@ -10,6 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
+| #25 | `feature/agent-qwen-code@0be96c9ec50e` | `main` | UNKNOWN | - | feat(agents): add bounded Qwen Code adapter |
 
 ## Recent workflows
 
