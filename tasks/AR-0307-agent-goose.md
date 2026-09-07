@@ -11,17 +11,17 @@
   "id": "AR-0307",
   "next_action": "Monitor and inspect exact-head PR #27 runs 34076974004 quality, 34076974034 Rust/native x86_64+aarch64, and 34076974032 formal; repair failures before any integration.",
   "observed_branch": "feature/agent-goose",
-  "observed_dirty": 2,
-  "observed_head": "08feca551df73dbca9e4be23d82d64018fe95d1e",
+  "observed_dirty": 0,
+  "observed_head": "95b3ef8c78301d36af30694571e8a1c9a8965e89",
   "owner": "quality-20260906",
   "plan": "../plans/AR-0307.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned AAIF goose in no-session structured mode.",
-  "task_revision": 210,
+  "task_revision": 211,
   "title": "Implement goose client adapter",
-  "updated_at": "2026-09-07T02:44:15+00:00",
+  "updated_at": "2026-09-07T02:44:20+00:00",
   "worktree_key": "agent-systems-benchmark-agent-goose"
 }
 ---

@@ -8,8 +8,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-agent-aider` | `feature/agent-aider` | `da81ead6932c` | 0 | behind 17, ahead 0 |
 | `agent-systems-benchmark-agent-codex` | `feature/agent-codex` | `eb03bd9d9ed5` | 0 | behind 5, ahead 0 |
 | `agent-systems-benchmark-agent-gemini` | `feature/agent-gemini` | `d381d340163e` | 0 | behind 1, ahead 0 |
-| `agent-systems-benchmark-agent-goose` | `feature/agent-goose` | `08feca551df7` | 2 | behind 0, ahead 2 |
-| changed files | - | - | - | `crates/asb-agents/src/goose.rs`, `crates/asb-agents/tests/real_goose.rs` |
+| `agent-systems-benchmark-agent-goose` | `feature/agent-goose` | `95b3ef8c7830` | 0 | behind 0, ahead 3 |
 | `agent-systems-benchmark-agent-mini-swe` | `feature/agent-mini-swe` | `2579362d6936` | 3 | behind 4, ahead 0 |
 | changed files | - | - | - | `crates/asb-agents/MINI_SWE.md`, `crates/asb-agents/src/mini_swe.rs`, `crates/asb-agents/tests/real_mini_swe.rs` |
 | `agent-systems-benchmark-agent-opencode` | `feature/agent-opencode` | `dfb0d548bf75` | 0 | behind 34, ahead 0 |
