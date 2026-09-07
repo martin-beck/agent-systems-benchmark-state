@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0510",
-  "next_action": "Complete final privacy/scope/diff audit, create focused signed+DCO candidate, verify exact commit, and request immutable review before publication.",
+  "next_action": "Independent immutable review of exact candidate 6a35edf615303f6d80b333533deca0e784994b16; publish only after explicit approval.",
   "observed_branch": "feature/replay-gemini",
   "observed_dirty": 0,
   "observed_head": "6a35edf615303f6d80b333533deca0e784994b16",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Gemini.",
-  "task_revision": 109,
+  "task_revision": 110,
   "title": "Qualify Gemini replay",
-  "updated_at": "2026-09-07T18:17:34+00:00",
+  "updated_at": "2026-09-07T18:17:58+00:00",
   "worktree_key": "agent-systems-benchmark-replay-gemini"
 }
 ---
@@ -347,3 +347,13 @@ Qualify Gemini record/replay, network denial, parity, retries, tool calls, cance
 
 - 2026-09-07T18:17:34+00:00: Recorded command exit 0; command argv SHA-256
   184c59e7a1a1040f6be95c694ae522a4725086b658373f8a6d397a78be30245d.
+
+- 2026-09-07T18:17:58+00:00: Immutable unpublished AR-0510 candidate is
+  6a35edf615303f6d80b333533deca0e784994b16, tree c9f2e163a36b6f993e09b238fe222a448d8e283c, exact
+  base 6a5b9b5181d4dffa639996c07e69a28eb84887a0. Four-commit range is limited to three Gemini
+  adapter/test/documentation paths; every commit has a valid SSH signature and exact author DCO
+  trailer. Final diff-check, clean-tree, repository policy, directory and range Gitleaks, privacy
+  regex audit, and scope audit pass. Bounded fuzz completed four targets x256 without crashes; its
+  first wrapper exit occurred only after all targets when cargo-fuzz left the documented generated
+  fuzz/artifacts directory, which was removed and lock/tree integrity then passed. Candidate is held
+  unpublished pending independent immutable review.
