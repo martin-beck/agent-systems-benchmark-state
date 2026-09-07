@@ -11,7 +11,7 @@
   "id": "AR-0830",
   "next_action": "Harden reset against concurrent path substitution, add service registration and lifecycle controls, and extend lease/isolation/fault negatives before immutable review.",
   "observed_branch": "feature/development-host-runner-capacity",
-  "observed_dirty": 0,
+  "observed_dirty": 5,
   "observed_head": "7c7f1e0f711398907c2094d92357f7196154d03f",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0830.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T05:54:45+00:00",
+  "updated_at": "2026-09-07T05:55:18+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
