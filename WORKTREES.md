@@ -35,7 +35,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `51daeb8608e5` | 0 | behind 128, ahead 0 |
 | `agent-systems-benchmark-provider-profile-contract` | `feature/provider-profile-contract` | `2870b68d0ca0` | 0 | behind 64, ahead 0 |
 | `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `748537c25e3a` | 0 | behind 145, ahead 0 |
-| `agent-systems-benchmark-redacted-request-pointer-replay` | `feature/redacted-request-pointer-replay` | `8eff6f95d8c5` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-redacted-request-pointer-replay` | `feature/redacted-request-pointer-replay` | `8eff6f95d8c5` | 2 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-replay/src/redaction.rs`, `crates/asb-replay/src/service.rs` |
 | `agent-systems-benchmark-reliability-fairness` | `feature/reliability-fairness` | `eb28ca7aeae5` | 0 | behind 42, ahead 0 |
 | `agent-systems-benchmark-replay-aider` | `feature/replay-aider` | `ec0a2930690c` | 0 | behind 4, ahead 0 |
 | `agent-systems-benchmark-replay-cassettes` | `feature/replay-cassettes` | `cd88f5703fb3` | 0 | behind 124, ahead 0 |
