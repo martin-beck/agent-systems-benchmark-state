@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned AAIF goose in no-session structured mode.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Implement goose client adapter",
-  "updated_at": "2026-09-07T00:42:22+00:00",
+  "updated_at": "2026-09-07T00:43:38+00:00",
   "worktree_key": "agent-systems-benchmark-agent-goose"
 }
 ---
@@ -134,3 +134,6 @@ Implementation has not started. Read the linked plan before claiming.
   extension exits zero with stderr and continues, so isolated adapter fails closed on successful-run
   diagnostics. Added only Goose source, real fixture, provenance fixture and scoped README; shared
   lib.rs/Cargo/schema remain untouched pending fence.
+
+- 2026-09-07T00:43:38+00:00: Recorded command exit 0; command argv SHA-256
+  84a4cd04015ecd2ee47b9d4fa82761dbc54b031f75299e8b8d99a5a529a364f7.
