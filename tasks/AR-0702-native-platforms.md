@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0702",
-  "next_action": "Await focused independent review of unpublished CI-repair head 933b55159e3685ca636b0138b1627303b3ba82ec, then update PR 31 from exact remote e7f08ed only with explicit lease and require fresh exact-head native/quality/Rust/formal/fault CI. AR-0703 remains the completion blocker.",
+  "next_action": "Keep reviewed PR #31 head bdaf9c108226f34ec6098f75b51fd601da9e9571 immutable and green; await AR-0703 genuine Debian/openEuler x86_64/aarch64 lab capacity before completing remaining native qualification and AR-0702.",
   "observed_branch": "feature/native-platforms",
   "observed_dirty": 0,
   "observed_head": "bdaf9c108226f34ec6098f75b51fd601da9e9571",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Exercise native x86_64 and aarch64 including booted openEuler kernels.",
-  "task_revision": 288,
+  "task_revision": 289,
   "title": "Validate native Linux kernels and architectures",
-  "updated_at": "2026-09-07T05:34:39+00:00",
+  "updated_at": "2026-09-07T05:38:08+00:00",
   "worktree_key": "agent-systems-benchmark-native-platforms"
 }
 ---
@@ -767,3 +767,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T05:34:39+00:00: Recorded command exit 0; command argv SHA-256
   49014f06dc1b8223beb14973b475320866c5957a572c88122443d015ee6bc45d.
+
+- 2026-09-07T05:38:08+00:00: Independent review approved CI repair
+  bdaf9c108226f34ec6098f75b51fd601da9e9571 (tree 3025dfd880fafaf3388193d7f611d8c85f3c60cb), which
+  replaces the false-positive trivial systemd scope preflight with the constrained systemd-run plus
+  bubblewrap namespace launch used by production. Published to PR #31 with exact lease from f919b78.
+  Exact-head hosted CI is all green: native run 34087336758 passed Ubuntu 24.04 x86_64 and native
+  aarch64 collection plus sanitized artifact retention; quality 34087336778, Rust x86_64/aarch64
+  34087336775, formal 34087336801, and fault assurance 34087336787 succeeded. Local focused
+  evidence: 21 collector tests, 27 platform tests, 95% branch-aware native_evidence coverage,
+  manifest validation, repository policy, actionlint, zizmor, Gitleaks, and full deliberate-failure
+  bundle passed. AR-0703 remains the genuine Debian/openEuler x86_64/aarch64 capacity blocker; no
+  unsupported platform claim is made.
