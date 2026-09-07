@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add strict replay support for Gemini GenerateContent SSE traffic.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Gemini GenerateContent strict-replay dialect",
-  "updated_at": "2026-09-07T16:56:24+00:00",
+  "updated_at": "2026-09-07T16:57:03+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-generate-content-replay"
 }
 ---
@@ -201,3 +201,6 @@ Require schema/runtime parity, focused and adversarial tests, fuzz/mutation/form
   marker/route/query/model/config negatives. Real pinned Gemini capture/retry/cancel evidence is
   supplied by AR-0510 and must run against this shared commit after integration; therefore no
   real-client compatibility claim and no publication before independent review.
+
+- 2026-09-07T16:57:03+00:00: Recorded command exit 0; command argv SHA-256
+  6dd53b1e2ff49352f90835058098b83a24f0478b275864623960e1b23c93d77f.
