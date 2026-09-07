@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0305",
-  "next_action": "Monitor and repair exact-head PR #26 CI at immutable d381d34; do not merge before coordinator authorization.",
+  "next_action": "Await exact-main quality and Rust CI at signed merge e85548d; then reconcile/live doctor and release only if all green and clean.",
   "observed_branch": "feature/agent-gemini",
   "observed_dirty": 0,
   "observed_head": "d381d340163eec8c2051949f9f0c2e31789f25a4",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned Gemini CLI through noninteractive JSON events.",
-  "task_revision": 163,
+  "task_revision": 164,
   "title": "Implement Gemini CLI client adapter",
-  "updated_at": "2026-09-07T01:45:43+00:00",
+  "updated_at": "2026-09-07T01:46:03+00:00",
   "worktree_key": "agent-systems-benchmark-agent-gemini"
 }
 ---
@@ -523,3 +523,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T01:45:43+00:00: Recorded command exit 0; command argv SHA-256
   9b8d549ba1589d4f379f0685d33eacf02a3aec8635090f01d73a65f460ca04a2.
+
+- 2026-09-07T01:46:03+00:00: Integrated exact reviewed d381d34 through local signed+DCO no-ff merge
+  e85548d00cffcc3a014bfbc04b8fc79c5fe35da0 (tree identical 26358fa, exact parents b79534b/d381d34),
+  pushed main with exact b79534b lease. PR #26 reports MERGED with exact merge identity. Postmerge
+  exact-main local fmt, workspace all-targets, clippy, formal models and all 4 real pinned Gemini
+  tests passed; primary clean and no Gemini processes remain. Exact-main formal run 34073998420 is
+  green; quality 34073998391 and Rust 34073998349 remain in progress.
