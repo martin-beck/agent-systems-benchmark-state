@@ -10,13 +10,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #31 | `feature/native-platforms@f919b78da998` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS: | platforms: add fail-closed native qualification evidence |
+| #31 | `feature/native-platforms@f919b78da998` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS: | platforms: add fail-closed native qualification evidence |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34086710775 | `f919b78da998` | pull_request | Formal assurance | in_progress:- |
+| 34086710775 | `f919b78da998` | pull_request | Formal assurance | completed:success |
 | 34086710768 | `f919b78da998` | pull_request | Rust verification | in_progress:- |
 | 34086710743 | `f919b78da998` | pull_request | Native platform evidence | completed:failure |
 | 34086710650 | `f919b78da998` | pull_request | Fault assurance | in_progress:- |
