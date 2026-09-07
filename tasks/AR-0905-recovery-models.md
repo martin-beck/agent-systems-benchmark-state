@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply bounded formal models to run lifecycle, leases, recovery, replay cursors and uncertain external effects.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Model execution recovery and worker fencing",
-  "updated_at": "2026-09-07T22:33:01+00:00",
+  "updated_at": "2026-09-07T22:33:03+00:00",
   "worktree_key": "agent-systems-benchmark-recovery-models"
 }
 ---
@@ -47,3 +47,6 @@ Implementation has not started. Read the linked plan before claiming.
   22ff8758a1a185c5a55cf2cf09eaba75a48facd2ca96d86d1fb9607238352604.
 
 - 2026-09-07T22:28:29+00:00: Heartbeat by replay_20260906.
+
+- 2026-09-07T22:33:03+00:00: Recorded command exit 0; command argv SHA-256
+  4b9c02191e39deea93bb2bf1b82d95036ccf7daeee565282b629333974ee25fd.
