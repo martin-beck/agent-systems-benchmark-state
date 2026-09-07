@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0506",
-  "next_action": "Prove credential-free record/replay conformance for the OpenCode adapter with network denial and malformed/tool/cancel negatives.",
+  "next_action": "Await independent immutable review of signed candidate eec93a240b5895410603c83b748e7195b2eb89f7; publish only after approval.",
   "observed_branch": "feature/replay-opencode",
   "observed_dirty": 0,
   "observed_head": "eec93a240b5895410603c83b748e7195b2eb89f7",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenCode.",
-  "task_revision": 91,
+  "task_revision": 92,
   "title": "Qualify OpenCode replay",
-  "updated_at": "2026-09-07T12:58:05+00:00",
+  "updated_at": "2026-09-07T12:58:37+00:00",
   "worktree_key": "agent-systems-benchmark-replay-opencode"
 }
 ---
@@ -278,3 +278,14 @@ retries, tool calls, cancellation, and malformed-record negatives.
 
 - 2026-09-07T12:58:05+00:00: Recorded command exit 0; command argv SHA-256
   05c3ad7f05f331f9f3a7da9e1c59ec7e396116f0d6e9d7221035efb965e4b9a4.
+
+- 2026-09-07T12:58:37+00:00: Checkpoint eec93a240b5895410603c83b748e7195b2eb89f7 is clean,
+  SSH-signed, exact DCO, and four-path scoped. Pinned OpenCode 1.18.29 x86_64 credential-free
+  namespace journey passed four total executions including three consecutive repetitions: one exact
+  429 retry, tool edit, usage/terminal and independent grade parity, paced cancellation,
+  malformed/truncated rejection, redaction and zero child residue. Workspace
+  fmt/clippy/tests/docs/release, deny/audit, overall and replay coverage (97.60% replay lines),
+  formal, platform, analyzers, failure fixtures, repository policy, exact-range Gitleaks, lock
+  metadata and cleanliness passed. Limits: Linux x86_64 and pinned OpenAI-compatible route/fixture
+  only; network denial requires the surrounding user/network namespace; no live provider, aarch64
+  native, other client/provider, non-loopback, or timing-determinism claim.
