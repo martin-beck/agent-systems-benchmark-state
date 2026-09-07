@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**115 ARs tracked** across 5 active status categories.
+**115 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 64 |
 | **Future** | Deferred roadmap work | 0 |
@@ -96,7 +96,7 @@ flowchart LR
         AR_0514["AR-0514 - Planned"]:::status_planned
         AR_0515["AR-0515 - Planned"]:::status_planned
         AR_0516["AR-0516 - Done"]:::status_done
-        AR_0517["AR-0517 - Open"]:::status_open
+        AR_0517["AR-0517 - In progress"]:::status_in_progress
     end
     subgraph series_06["06 - Metrics"]
         direction TB
@@ -690,19 +690,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0507](tasks/AR-0507-replay-opendesk.md): Qualify OpenDesk replay | replay_20260906 | Qualify replay conformance for OpenDesk. | Await reviewed AR-0516 shared replay compatibility merge; then rebase, remove diagnostic span_id normalization, record exact model GETs, and complete pinned offline replay/cancel/malformed/full gates. |
 | P0 | [AR-0509](tasks/AR-0509-replay-codex.md): Qualify Codex replay | contracts_20260906 | Qualify replay conformance for Codex. | Preserve isolated Codex test; await serialized child AR fixing privacy-safe request-body pointer replay, then finish native parity/retry/cancel gates. |
+| P0 | [AR-0517](tasks/AR-0517-redacted-request-pointer-replay.md): Replay redacted request pointers | quality_20260906 | Make privacy-safe redacted request bodies strictly replayable. | Apply bounded cassette request redaction pointers during strict incoming JSON comparison and align dialect option invariants. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0517](tasks/AR-0517-redacted-request-pointer-replay.md): Replay redacted request pointers | Unclaimed | Make privacy-safe redacted request bodies strictly replayable. | Apply bounded cassette request redaction pointers during strict incoming JSON comparison and align dialect option invariants. |
 
 ### Blocked (4)
 

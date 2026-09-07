@@ -2,7 +2,7 @@
 {
   "branch": "feature/redacted-request-pointer-replay",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-07T17:59:57+00:00",
   "depends_on": [
     "AR-0502",
     "AR-0503",
@@ -11,15 +11,15 @@
   ],
   "id": "AR-0517",
   "next_action": "Apply bounded cassette request redaction pointers during strict incoming JSON comparison and align dialect option invariants.",
-  "owner": "",
+  "owner": "quality_20260906",
   "plan": "../plans/AR-0517.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make privacy-safe redacted request bodies strictly replayable.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Replay redacted request pointers",
-  "updated_at": "2026-09-07T14:59:50+00:00",
+  "updated_at": "2026-09-07T14:59:57+00:00",
   "worktree_key": "agent-systems-benchmark-redacted-request-pointer-replay"
 }
 ---
@@ -31,3 +31,5 @@ Require privacy/Gitleaks, schema and formal checks, adversarial pointer negative
 
 - 2026-09-07T14:59:50+00:00: Promote Codex privacy-safe replay pointer repair after AR-0516 release;
   shared replay fence is now available.
+
+- 2026-09-07T14:59:57+00:00: Claimed by quality_20260906.
