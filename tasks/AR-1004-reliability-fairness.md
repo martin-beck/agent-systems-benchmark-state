@@ -11,17 +11,17 @@
   "id": "AR-1004",
   "next_action": "Run final exact-tree scope/privacy/signature/DCO checks, create one focused signed DCO candidate, and request independent immutable review before publication.",
   "observed_branch": "feature/reliability-fairness",
-  "observed_dirty": 4,
-  "observed_head": "4a59593c0c55e0ad72656363473a404d8be1054b",
+  "observed_dirty": 0,
+  "observed_head": "c6c7d37e27a33c3d5e4e0165a04585403260d317",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-1004.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Report repeated-attempt reliability and prevent aggregate results from hiding starvation or hard strata.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Measure reliability and mixed-workload fairness",
-  "updated_at": "2026-09-07T03:51:31+00:00",
+  "updated_at": "2026-09-07T03:52:00+00:00",
   "worktree_key": "agent-systems-benchmark-reliability-fairness"
 }
 ---

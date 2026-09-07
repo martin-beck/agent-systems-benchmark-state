@@ -29,8 +29,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `51daeb8608e5` | 0 | behind 85, ahead 0 |
 | `agent-systems-benchmark-provider-profile-contract` | `feature/provider-profile-contract` | `2870b68d0ca0` | 0 | behind 21, ahead 0 |
 | `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `748537c25e3a` | 0 | behind 102, ahead 0 |
-| `agent-systems-benchmark-reliability-fairness` | `feature/reliability-fairness` | `4a59593c0c55` | 4 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-analysis/README.md`, `crates/asb-analysis/src/lib.rs`, `crates/asb-analysis/src/reliability.rs`, `crates/asb-analysis/tests/reliability_boundary.rs` |
+| `agent-systems-benchmark-reliability-fairness` | `feature/reliability-fairness` | `c6c7d37e27a3` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-replay-cassettes` | `feature/replay-cassettes` | `cd88f5703fb3` | 0 | behind 81, ahead 0 |
 | `agent-systems-benchmark-replay-evaluation` | `feature/replay-evaluation` | `3d04a2d5a3b3` | 0 | behind 94, ahead 0 |
 | `agent-systems-benchmark-replay-pacing` | `feature/replay-pacing` | `73d28a431c78` | 0 | behind 49, ahead 0 |
