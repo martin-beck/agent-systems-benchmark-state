@@ -2,7 +2,7 @@
 {
   "branch": "feature/reliability-fairness",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-07T05:27:20+00:00",
   "depends_on": [
     "AR-0203",
     "AR-0204",
@@ -10,15 +10,15 @@
   ],
   "id": "AR-1004",
   "next_action": "Add trial/epoch aggregation following tau-bench and Inspect concepts.",
-  "owner": "",
+  "owner": "contracts-20260906",
   "plan": "../plans/AR-1004.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Report repeated-attempt reliability and prevent aggregate results from hiding starvation or hard strata.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Measure reliability and mixed-workload fairness",
-  "updated_at": "2026-09-07T03:26:36+00:00",
+  "updated_at": "2026-09-07T03:27:20+00:00",
   "worktree_key": "agent-systems-benchmark-reliability-fairness"
 }
 ---
@@ -32,3 +32,5 @@ Implementation has not started. Read the linked plan before claiming.
   this P1 analysis task for contracts-20260906 after AR-0902 release; its asb-analysis
   reliability/report scope is independent of active frontend-control, mini-SWE, and native-platform
   paths.
+
+- 2026-09-07T03:27:20+00:00: Claimed by contracts-20260906.

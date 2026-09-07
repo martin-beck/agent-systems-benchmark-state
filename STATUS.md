@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**81 ARs tracked** across 4 active status categories.
+**81 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 46 |
 | **Future** | Deferred roadmap work | 0 |
@@ -135,7 +135,7 @@ flowchart LR
         AR_1001["AR-1001 - Done"]:::status_done
         AR_1002["AR-1002 - Planned"]:::status_planned
         AR_1003["AR-1003 - Planned"]:::status_planned
-        AR_1004["AR-1004 - Open"]:::status_open
+        AR_1004["AR-1004 - In progress"]:::status_in_progress
         AR_1005["AR-1005 - Planned"]:::status_planned
         AR_1006["AR-1006 - Planned"]:::status_planned
         AR_1007["AR-1007 - Planned"]:::status_planned
@@ -512,19 +512,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0702](tasks/AR-0702-native-platforms.md): Validate native Linux kernels and architectures | quality-20260906 | Exercise native x86_64 and aarch64 including booted openEuler kernels. | Implement and verify the fail-closed native evidence harness; publish genuine Ubuntu x86_64 and public native-arm evidence. AR-0703 supplies the required booted Debian/openEuler x86_64+aarch64 capacity; retain AR-0702 in progress until that external prerequisite completes. |
 | P1 | [AR-0803](tasks/AR-0803-frontend-control-api.md): Define the frontend control API | root-coordination-20260906 | Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary. | Define a bounded versioned control/status API between the runner and independent frontends. |
+| P1 | [AR-1004](tasks/AR-1004-reliability-fairness.md): Measure reliability and mixed-workload fairness | contracts-20260906 | Report repeated-attempt reliability and prevent aggregate results from hiding starvation or hard strata. | Add trial/epoch aggregation following tau-bench and Inspect concepts. |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | replay-20260906 | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Await serialized additive registration fence; then rebase the three owned mini-SWE paths onto exact current main, add only module/test registration, rerun exact-tree full gates, and produce a signed DCO candidate for immutable review. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1004](tasks/AR-1004-reliability-fairness.md): Measure reliability and mixed-workload fairness | Unclaimed | Report repeated-attempt reliability and prevent aggregate results from hiding starvation or hard strata. | Add trial/epoch aggregation following tau-bench and Inspect concepts. |
 
 ### Planned (46)
 
