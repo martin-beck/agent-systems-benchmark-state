@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0830",
-  "next_action": "Independently review exact 6518802. If locally approved, provision the dedicated service and protected manual canary only after an authorized secret/admin registration boundary is supplied.",
+  "next_action": "Start the existing registration once with sudo systemd-run under User=asb-ci-runner and the exact private WorkingDirectory; then poll service state, owned listener count, and GitHub exact online label.",
   "observed_branch": "feature/development-host-runner-capacity",
   "observed_dirty": 0,
   "observed_head": "c67d572c227021e96f43abe62e430fc9acdb5f93",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 107,
+  "task_revision": 108,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T06:37:55+00:00",
+  "updated_at": "2026-09-07T06:38:25+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
@@ -335,3 +335,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T06:37:55+00:00: Recorded command exit 1; command argv SHA-256
   f641613eb6ac8f18d61bf755625ab8b8e257df876d363463b665132bc26abfac.
+
+- 2026-09-07T06:38:25+00:00: Sanitized startup diagnosis: registration and exact pinned listener are
+  present; initial health failed because setup/config had not materialized runner/_work. Created
+  only that private 0700 directory as asb-ci-runner and health then passed. First systemd transient
+  start failed before unit creation because systemd-run was invoked as the unprivileged operator and
+  could not traverse the service-owned 0700 storage root to resolve run.sh. Service identity itself
+  can execute the path; no listener or duplicate registration occurred. Next retry must invoke
+  systemd-run through sudo while retaining User=asb-ci-runner, exact WorkingDirectory and restricted
+  writable root.
