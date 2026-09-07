@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for mini-SWE-agent.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Qualify mini-SWE replay",
-  "updated_at": "2026-09-07T19:48:14+00:00",
+  "updated_at": "2026-09-07T19:48:58+00:00",
   "worktree_key": "agent-systems-benchmark-replay-miniswe"
 }
 ---
@@ -90,3 +90,6 @@ Qualify mini-SWE-agent record/replay, network denial, parity, retries, tool call
   observation is explicitly Unavailable(UnstructuredBatchDiagnostics); this run did not claim
   automatic retry evidence. Corrected only the isolated fixture expectation; next action is rerun
   the unchanged native capture/replay through parity, cleanup, and cancellation.
+
+- 2026-09-07T19:48:58+00:00: Recorded command exit 101; command argv SHA-256
+  259d76adc3e426c9dbc46fce0294bed9433a1d17dd0c386145c2e6c6bcf98e63.
