@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #25 | `feature/agent-qwen-code@0be96c9ec50e` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS: | feat(agents): add bounded Qwen Code adapter |
+| #25 | `feature/agent-qwen-code@0be96c9ec50e` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS: | feat(agents): add bounded Qwen Code adapter |
 
 ## Recent workflows
 
