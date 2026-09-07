@@ -9,7 +9,7 @@
     "AR-0517"
   ],
   "id": "AR-0518",
-  "next_action": "Await immutable independent review of unpublished exact candidate 7a6bf02e01b7f6f5ba93cc69078de84ee118fc2b; publish only after approval.",
+  "next_action": "Monitor PR #46 exact-head quality/Rust x86_64+aarch64/formal/fault CI; merge only after terminal green and coordinator authorization.",
   "observed_branch": "feature/gemini-generate-content-replay",
   "observed_dirty": 0,
   "observed_head": "7a6bf02e01b7f6f5ba93cc69078de84ee118fc2b",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add strict replay support for Gemini GenerateContent SSE traffic.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Gemini GenerateContent strict-replay dialect",
-  "updated_at": "2026-09-07T16:57:03+00:00",
+  "updated_at": "2026-09-07T16:57:41+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-generate-content-replay"
 }
 ---
@@ -204,3 +204,9 @@ Require schema/runtime parity, focused and adversarial tests, fuzz/mutation/form
 
 - 2026-09-07T16:57:03+00:00: Recorded command exit 0; command argv SHA-256
   6dd53b1e2ff49352f90835058098b83a24f0478b275864623960e1b23c93d77f.
+
+- 2026-09-07T16:57:41+00:00: After independent approval, published exact candidate
+  7a6bf02e01b7f6f5ba93cc69078de84ee118fc2b as PR #46 against exact base
+  b56768a550fb293650dd29ab793460e0277ffb8d. Remote branch and PR head verified exact. Initial
+  exact-head runs: quality 34145528212, Rust x86_64+aarch64 34145528238, formal 34145528213, fault
+  34145528304; all pending/in progress at observation. Product worktree remains clean.
