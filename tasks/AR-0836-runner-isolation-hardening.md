@@ -2,22 +2,22 @@
 {
   "branch": "fix/runner-isolation-hardening",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-07T09:19:37+00:00",
   "depends_on": [
     "AR-0830",
     "AR-0831"
   ],
   "id": "AR-0836",
   "next_action": "Separate job execution from operator-owned installation, credentials, control state, and diagnostics with a verified immutable boundary.",
-  "owner": "",
+  "owner": "quality-20260906",
   "plan": "../plans/AR-0836.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Harden development-host runner isolation against same-UID job tampering and diagnostic leakage.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Harden runner isolation and credential boundaries",
-  "updated_at": "2026-09-07T07:49:35+00:00",
+  "updated_at": "2026-09-07T07:49:37+00:00",
   "worktree_key": "agent-systems-benchmark-runner-isolation-hardening"
 }
 ---
@@ -39,3 +39,5 @@ Acceptance criteria:
   remediation of runner identity separation, credential isolation, immutable control state, bounded
   redacted diagnostics, tamper negatives, and interrupted-run recovery before any further trusted
   dispatch.
+
+- 2026-09-07T07:49:37+00:00: Claimed by quality-20260906.
