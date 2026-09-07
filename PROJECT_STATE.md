@@ -11,14 +11,14 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #31 | `feature/native-platforms@bdaf9c108226` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #56 | `fix/ar0801-documentation@c0b9e0baf5f4` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS: | docs: describe implemented CLI commands |
+| #56 | `fix/ar0801-documentation@c0b9e0baf5f4` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS: | docs: describe implemented CLI commands |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 34168111552 | `c0b9e0baf5f4` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 34168111534 | `c0b9e0baf5f4` | pull_request | Formal assurance | in_progress:- |
+| 34168111534 | `c0b9e0baf5f4` | pull_request | Formal assurance | completed:success |
 | 34168111508 | `c0b9e0baf5f4` | pull_request | Repository quality | in_progress:- |
 | 34168111507 | `c0b9e0baf5f4` | pull_request | Fault assurance | in_progress:- |
 | 34168111493 | `c0b9e0baf5f4` | pull_request | Rust verification | in_progress:- |
