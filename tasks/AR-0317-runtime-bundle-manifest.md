@@ -9,7 +9,7 @@
     "AR-0701"
   ],
   "id": "AR-0317",
-  "next_action": "Define signed runtime-bundle manifests and an offline verifier for content, architecture, libc, license, and SBOM identity.",
+  "next_action": "Await independent immutable review of exact 3d0bc9ccf1c5d4c524cf7689e8d598897bf9c700; keep branch unpublished and retain serialized Cargo/schema/release fence.",
   "observed_branch": "feature/runtime-bundle-manifest",
   "observed_dirty": 0,
   "observed_head": "3d0bc9ccf1c5d4c524cf7689e8d598897bf9c700",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define common signed runtime bundle manifests and offline verification.",
-  "task_revision": 90,
+  "task_revision": 91,
   "title": "Define runtime bundle manifest and verifier",
-  "updated_at": "2026-09-07T11:35:59+00:00",
+  "updated_at": "2026-09-07T11:36:32+00:00",
   "worktree_key": "agent-systems-benchmark-runtime-bundle-manifest"
 }
 ---
@@ -258,3 +258,15 @@ parity, license evidence, tamper detection, and offline operation.
 
 - 2026-09-07T11:35:59+00:00: Recorded command exit 0; command argv SHA-256
   b6f437aff3923799867607d5290af33696141f7825a1612fa252e87cb8fef7f3.
+
+- 2026-09-07T11:36:32+00:00: Exact-tree candidate 3d0bc9c/tree 29d1e4a on unchanged base b166920 is
+  clean, three focused SSH-signed exact-DCO commits. Full workspace fmt/clippy/test/docs/release and
+  native boundaries passed; bundle 17 verifier plus 2 schema tests passed including real SSHSIG,
+  wrong namespace, tamper/topology/SBOM/license/mode/target and two-second hanging-signer
+  process-group cleanup. cargo deny/audit, repository policy, all failure fixtures, platform
+  validation, actionlint/zizmor, exact-range Gitleaks, Loom/state models, Kani 5/5 plus deliberate
+  negative passed. Coverage workspace 94.48% lines; asb-bundle lib 98.02% lines/93.17% regions and
+  CLI 96.55% lines. Two first remaining-gate invocations failed only from stale analyzer PATH then
+  missing cargo PATH; corrected invocation passed without tree change. Limits: Linux/Unix verifier,
+  exact libc string equality, operator-owned quiescent signer/trust/staging paths; no broader
+  ABI/native package or acquisition claim.
