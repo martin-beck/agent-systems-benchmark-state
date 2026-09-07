@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Gemini.",
-  "task_revision": 128,
+  "task_revision": 129,
   "title": "Qualify Gemini replay",
-  "updated_at": "2026-09-07T18:36:16+00:00",
+  "updated_at": "2026-09-07T18:37:10+00:00",
   "worktree_key": "agent-systems-benchmark-replay-gemini"
 }
 ---
@@ -413,3 +413,6 @@ Qualify Gemini record/replay, network denial, parity, retries, tool calls, cance
   Focused clippy/readiness tests and full workspace fmt/clippy/tests/docs/release pass. A pre-commit
   repository-policy invocation correctly rejected the empty b9eca..HEAD range after all product
   gates; exact-commit policy, SSH signature, DCO, Gitleaks, diff, scope and clean tree pass.
+
+- 2026-09-07T18:37:10+00:00: Recorded command exit 0; command argv SHA-256
+  a4f748384e6f1657b0435e1e1fb7a80ddd3ac8e6c1972cd7b095bd46529de983.
