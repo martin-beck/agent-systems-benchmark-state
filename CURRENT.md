@@ -11,6 +11,12 @@ Never edit this file directly.
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. | root-coordination-20260906 |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Independently review unpublished exact candidate 1605693dbb7aade01dd47cb074e35bca02df873b tree 7d99a7f69d97335cad802699dbf9a7ac7bac2e1b; do not publish or merge without coordinator authorization. | replay-20260906 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0317](tasks/AR-0317-runtime-bundle-manifest.md): Define runtime bundle manifest and verifier | Define common signed runtime bundle manifests and offline verification. | Define signed runtime-bundle manifests and an offline verifier for content, architecture, libc, license, and SBOM identity. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -23,7 +29,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0317](tasks/AR-0317-runtime-bundle-manifest.md): Define runtime bundle manifest and verifier | Define common signed runtime bundle manifests and offline verification. | Define signed runtime-bundle manifests and an offline verifier for content, architecture, libc, license, and SBOM identity. | - |
 | P0 | [AR-0506](tasks/AR-0506-replay-opencode.md): Qualify OpenCode replay | Qualify replay conformance for OpenCode. | Prove credential-free record/replay conformance for the OpenCode adapter with network denial and malformed/tool/cancel negatives. | - |
 | P0 | [AR-0507](tasks/AR-0507-replay-opendesk.md): Qualify OpenDesk replay | Qualify replay conformance for OpenDesk. | Prove credential-free record/replay conformance for OpenDesk with network denial and malformed/tool/cancel negatives. | - |
 | P0 | [AR-0508](tasks/AR-0508-replay-aider.md): Qualify aider replay | Qualify replay conformance for aider. | Prove credential-free record/replay conformance for aider with network denial and malformed/tool/cancel negatives. | - |
