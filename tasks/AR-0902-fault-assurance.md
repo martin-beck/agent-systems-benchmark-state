@@ -9,7 +9,7 @@
     "AR-0503"
   ],
   "id": "AR-0902",
-  "next_action": "Repair PR #28 bounded-fuzz dependency-policy failure with an explicit independent fuzz-workspace license/policy; validate and publish a focused signed DCO successor, then require fresh exact-head CI.",
+  "next_action": "Hold clean unpublished successor e6c623113c15c99950889b26cd70b29c6966b1d4 for independent immutable review; after approval update PR #28 only with exact force-with-lease against ad00e8b and require fresh CI.",
   "observed_branch": "feature/fault-assurance",
   "observed_dirty": 0,
   "observed_head": "e6c623113c15c99950889b26cd70b29c6966b1d4",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection.",
-  "task_revision": 90,
+  "task_revision": 91,
   "title": "Add fuzz mutation and lifecycle fault campaigns",
-  "updated_at": "2026-09-07T02:47:31+00:00",
+  "updated_at": "2026-09-07T02:47:48+00:00",
   "worktree_key": "agent-systems-benchmark-fault-assurance"
 }
 ---
@@ -308,3 +308,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T02:47:31+00:00: Recorded command exit 0; command argv SHA-256
   5b402021788fe3dd83b03dab560251d0f9bafe95bd6747fb8e25201dc50b627d.
+
+- 2026-09-07T02:47:48+00:00: Focused successor e6c6231 adds MIT package metadata, exact =0.1.0 local
+  path dependency versions, and fuzz/deny.toml retaining root bans/sources while narrowly allowing
+  audited NCSA required by pinned libfuzzer-sys 0.4.13. Root deny.toml is unchanged. Offline
+  Linux-target cargo-deny now reports advisories/bans/licenses/sources all ok; all four fuzz bins
+  compile locked/offline; TOML, actionlint, offline zizmor, repository policy, exact-range Gitleaks,
+  signature/DCO, diff/scope and clean-tree checks pass. PR #28 remains at prior ad00e8b pending
+  review; no rerun or push performed.
