@@ -2,7 +2,7 @@
 {
   "branch": "feature/benchmark-validity",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-08T02:27:10+00:00",
   "depends_on": [
     "AR-0401",
     "AR-0701",
@@ -10,15 +10,15 @@
   ],
   "id": "AR-1007",
   "next_action": "Implement registry schema and validation for built-in and imported workloads.",
-  "owner": "",
+  "owner": "replay_20260906",
   "plan": "../plans/AR-1007.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Track dataset provenance, contamination risk, grader validity and native portability per workload revision.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Maintain benchmark validity and portability registry",
-  "updated_at": "2026-09-07T23:27:08+00:00",
+  "updated_at": "2026-09-07T23:27:10+00:00",
   "worktree_key": "agent-systems-benchmark-benchmark-validity"
 }
 ---
@@ -32,3 +32,5 @@ Implementation has not started. Read the linked plan before claiming.
   highest-priority dependency-ready leaf; workload registry/provenance scope is disjoint from active
   AR-0505 replay integration, AR-0840 frontend protocol, and AR-0848 native capacity. Declared
   branch, worktree, and remote ref are absent.
+
+- 2026-09-07T23:27:10+00:00: Claimed by replay_20260906.
