@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0507",
-  "next_action": "Await serialized shared replay repairs for span_id admission, absent-stream SSE, and bounded model-catalog GET routes; then remove diagnostic normalization and complete exact native replay gates.",
+  "next_action": "Await reviewed AR-0516 shared replay compatibility merge; then rebase, remove diagnostic span_id normalization, record exact model GETs, and complete pinned offline replay/cancel/malformed/full gates.",
   "observed_branch": "feature/replay-opendesk",
   "observed_dirty": 1,
   "observed_head": "68345a631a2c865a9e339ade574c0b53ec73367a",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenDesk.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Qualify OpenDesk replay",
-  "updated_at": "2026-09-07T13:25:23+00:00",
+  "updated_at": "2026-09-07T13:38:53+00:00",
   "worktree_key": "agent-systems-benchmark-replay-opendesk"
 }
 ---
@@ -265,3 +265,14 @@ Qualify OpenDesk record/replay, network denial, parity, retries, tool calls, can
   changed and support remains blocked.
 
 - 2026-09-07T13:25:23+00:00: Heartbeat by replay_20260906.
+
+- 2026-09-07T13:38:53+00:00: Fresh reconcile/snapshot at state 9316970d verified AR-0507 remains the
+  sole replay_20260906 claim, head 68345a631a2c865a9e339ade574c0b53ec73367a with only isolated
+  replay_opendesk.rs untracked, valid lease through 16:25Z, and no OpenDesk/cargo test process.
+  AR-0516 now durably contains the three shared compatibility requirements and is planned/unclaimed
+  for serialized implementation. No further sound isolated execution can cross the
+  StrictReplayService constructor boundary without duplicating or weakening that shared repair;
+  preserve the exact fixture and avoid repeated expected-failure runs. After AR-0516 merges: rebase
+  exact main, remove temporary span_id spelling normalization, capture model-catalog GET
+  interactions rather than side-serving them, prove strict ordering and byte-exact SSE, then run
+  native cancel/malformed/network-denial plus all full gates.
