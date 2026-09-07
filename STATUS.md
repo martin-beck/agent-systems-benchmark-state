@@ -701,7 +701,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0509](tasks/AR-0509-replay-codex.md): Qualify Codex replay | contracts_20260906 | Qualify replay conformance for Codex. | After AR-0517 integrates, update AR-0509 onto exact main, add bounded Codex retry evidence, then run full exact-tree gates and candidate review. |
 | P0 | [AR-0510](tasks/AR-0510-replay-gemini.md): Qualify Gemini replay | quality_20260906 | Qualify replay conformance for Gemini. | Prove credential-free record/replay conformance for Gemini with network denial and malformed/tool/cancel negatives. |
-| P0 | [AR-0518](tasks/AR-0518-gemini-generate-content-replay.md): Gemini GenerateContent strict-replay dialect | replay_20260906 | Add strict replay support for Gemini GenerateContent SSE traffic. | Define and qualify the bounded Gemini GenerateContent strict-replay dialect from exact pinned capture evidence. |
+| P0 | [AR-0518](tasks/AR-0518-gemini-generate-content-replay.md): Gemini GenerateContent strict-replay dialect | replay_20260906 | Add strict replay support for Gemini GenerateContent SSE traffic. | Implement bounded Gemini GenerateContent dialect and focused schema/runtime/SSE/redaction adversarials after binding exact AR-0510 capture shape. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
 
 ### Blocked (4)
