@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T06:31:31+00:00",
+  "updated_at": "2026-09-07T06:34:17+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
@@ -104,3 +104,6 @@ Implementation has not started. Read the linked plan before claiming.
   worker to authorized AR-0830 repair and online canary.
 
 - 2026-09-07T06:31:31+00:00: Claimed by contracts-20260906.
+
+- 2026-09-07T06:34:17+00:00: Recorded command exit 128; command argv SHA-256
+  afa18a275766dd40e288b86f30721db3d0f8ea218fa55df6a198f9080403a6d8.
