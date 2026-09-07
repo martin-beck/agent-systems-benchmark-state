@@ -10,15 +10,18 @@
   ],
   "id": "AR-0801",
   "next_action": "Build planned commands around public library interfaces.",
+  "observed_branch": "feature/terminal-interface",
+  "observed_dirty": 0,
+  "observed_head": "b79534b627e28792a46e1a0074be762bb425d2a6",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0801.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide doctor, plan, run, sweep, compare and report with stable JSON output.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Implement terminal and automation interfaces",
-  "updated_at": "2026-09-07T01:07:14+00:00",
+  "updated_at": "2026-09-07T01:07:31+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-interface"
 }
 ---
