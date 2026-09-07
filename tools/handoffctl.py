@@ -690,9 +690,25 @@ def apply_promote(args: argparse.Namespace, meta: Meta, tasks: list[Task]) -> st
     return str(args.note)
 
 
+def apply_resume(args: argparse.Namespace, meta: Meta, tasks: list[Task]) -> str:
+    """Reopen a blocked task after an explicit coordinator review."""
+    if args.expected_revision != meta["task_revision"]:
+        raise RuntimeError(
+            f"stale revision: expected {args.expected_revision}, current {meta['task_revision']}"
+        )
+    if meta.get("status") != "blocked":
+        raise RuntimeError(f"{args.task} is not blocked")
+    if meta.get("owner") or meta.get("claim_expires"):
+        raise RuntimeError(f"{args.task} has active claim metadata")
+    if not args.note.strip():
+        raise RuntimeError("resume note must not be empty")
+    meta["status"] = "open"
+    return str(args.note)
+
+
 def require_promotion_preflight(kind: str) -> None:
     """Reject a promotion before writes when its source checkout is ambiguous."""
-    if kind != "promote":
+    if kind not in ("promote", "resume"):
         return
     errors = validate(live=False)
     if errors:
@@ -747,6 +763,8 @@ def mutate(args: argparse.Namespace, kind: str) -> None:
             else (
                 apply_promote(args, meta, all_tasks())
                 if kind == "promote"
+                else apply_resume(args, meta, all_tasks())
+                if kind == "resume"
                 else apply_owned_change(args, kind, meta)
             )
         )
@@ -893,6 +911,10 @@ def main() -> int:
     item.add_argument("task")
     item.add_argument("--expected-revision", type=int, required=True)
     item.add_argument("--note", required=True)
+    item = commands.add_parser("resume")
+    item.add_argument("task")
+    item.add_argument("--expected-revision", type=int, required=True)
+    item.add_argument("--note", required=True)
     item = commands.add_parser("update")
     item.add_argument("task")
     item.add_argument("--owner", required=True)
@@ -915,7 +937,7 @@ def main() -> int:
         return cmd_doctor(live=args.live)
     elif args.cmd == "render-status":
         cmd_render_status(check=args.check)
-    elif args.cmd in ("claim", "heartbeat", "release", "promote", "update"):
+    elif args.cmd in ("claim", "heartbeat", "release", "promote", "resume", "update"):
         mutate(args, args.cmd)
     elif args.cmd == "run":
         if args.command and args.command[0] == "--":
