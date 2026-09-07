@@ -9,7 +9,7 @@
     "AR-0517"
   ],
   "id": "AR-0518",
-  "next_action": "Monitor PR #46 exact-head quality/Rust x86_64+aarch64/formal/fault CI; merge only after terminal green and coordinator authorization.",
+  "next_action": "Monitor PR #46 replacement head 93c19625f91065d0bcd7acb2f9a240bc71a21f3f exact quality/Rust/formal/fault CI; merge only after terminal green and authorization.",
   "observed_branch": "feature/gemini-generate-content-replay",
   "observed_dirty": 0,
   "observed_head": "93c19625f91065d0bcd7acb2f9a240bc71a21f3f",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add strict replay support for Gemini GenerateContent SSE traffic.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Gemini GenerateContent strict-replay dialect",
-  "updated_at": "2026-09-07T17:02:53+00:00",
+  "updated_at": "2026-09-07T17:03:27+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-generate-content-replay"
 }
 ---
@@ -216,3 +216,14 @@ Require schema/runtime parity, focused and adversarial tests, fuzz/mutation/form
 
 - 2026-09-07T17:02:53+00:00: Recorded command exit 1; command argv SHA-256
   54c5aa9f8635bb323a8200fcdc8e30da7e7cdd8e670b9d77aa71e00631bb29e3.
+
+- 2026-09-07T17:03:27+00:00: Classified prior fault run 34145528304 failure: AR-0518 moved the
+  second dialect endpoint != comparison out of request_matches, so the pinned regex discovered six
+  rather than seven mutants; baseline was green and all discovered 6/6 were caught. Did not lower
+  oracle. Restored meaningful explicit comparison against a validated dialect-derived expected route
+  inside request_matches while retaining recorded-request equality. Local focused Gemini 8 and
+  strict replay 19 green; pinned cargo-mutants 27.1.0 sentinel found exactly 7 and caught 7/7.
+  Amended signed+DCO successor 93c19625f91065d0bcd7acb2f9a240bc71a21f3f, tree
+  f7a0d14ad66ff9908e9fbbc907362b8fa1bc84cf, exact parent b56768a; pushed with exact lease from
+  7a6bf02. Remote branch and PR #46 exact head verified. Fresh runs: quality 34145937914, Rust
+  x86_64+aarch64 34145937932, formal 34145937946, fault 34145938051.
