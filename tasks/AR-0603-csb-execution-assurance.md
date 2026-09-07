@@ -12,7 +12,7 @@
   "id": "AR-0603",
   "next_action": "Run nightly branch coverage through handoffctl, close remaining branch scenarios and executable replacement-race design, then complete exact-tree full gates.",
   "observed_branch": "feature/csb-execution-assurance",
-  "observed_dirty": 10,
+  "observed_dirty": 11,
   "observed_head": "ec4a1d28baca4426b17bc20cffee036d1d3eff23",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0603.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 96,
+  "task_revision": 97,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T09:51:10+00:00",
+  "updated_at": "2026-09-07T09:53:56+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
