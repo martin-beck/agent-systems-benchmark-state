@@ -12,7 +12,7 @@
   "id": "AR-0510",
   "next_action": "Prove credential-free record/replay conformance for Gemini with network denial and malformed/tool/cancel negatives.",
   "observed_branch": "feature/replay-gemini",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "ab5d6c91c99d48883ed58eb1df6803c2711ecbd3",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0510.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Gemini.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Qualify Gemini replay",
-  "updated_at": "2026-09-07T15:56:09+00:00",
+  "updated_at": "2026-09-07T15:58:41+00:00",
   "worktree_key": "agent-systems-benchmark-replay-gemini"
 }
 ---
