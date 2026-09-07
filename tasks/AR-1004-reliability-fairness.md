@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Report repeated-attempt reliability and prevent aggregate results from hiding starvation or hard strata.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Measure reliability and mixed-workload fairness",
-  "updated_at": "2026-09-07T04:13:04+00:00",
+  "updated_at": "2026-09-07T04:14:52+00:00",
   "worktree_key": "agent-systems-benchmark-reliability-fairness"
 }
 ---
@@ -264,3 +264,9 @@ Implementation has not started. Read the linked plan before claiming.
   primary/feature worktrees. Exact-main hosted runs started: quality 34082158978, fault 34082158961,
   Rust 34082158999 in progress; formal 34082158982 already green. Await remaining exact-main
   workflows before release.
+
+- 2026-09-07T04:14:52+00:00: All fresh hosted exact-main workflows at 814397f are green: Formal
+  assurance 34082158982, Repository quality 34082158978, Fault assurance 34082158961, and Rust
+  verification 34082158999 with both x86_64 and aarch64 jobs. Local post-merge full gates are green
+  and primary/feature worktrees remain clean. Proceed to documented coordination reconciliation/full
+  validation and release done.
