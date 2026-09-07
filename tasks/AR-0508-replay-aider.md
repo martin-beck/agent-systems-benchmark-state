@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for aider.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Qualify aider replay",
-  "updated_at": "2026-09-07T13:34:12+00:00",
+  "updated_at": "2026-09-07T13:35:09+00:00",
   "worktree_key": "agent-systems-benchmark-replay-aider"
 }
 ---
@@ -96,3 +96,6 @@ Qualify aider record/replay, network denial, parity, retries, tool calls, cancel
 
 - 2026-09-07T13:34:12+00:00: Recorded command exit 0; command argv SHA-256
   50161d4258485eb073c8c9a7eaaa6e49bcf44d2473a23c5436562f9d628fcdb5.
+
+- 2026-09-07T13:35:09+00:00: Recorded command exit 0; command argv SHA-256
+  7ab49df68b3616714ebe300c2a6d9ddd9644bb7cfa89c9d46efecf8d875b6c5a.
