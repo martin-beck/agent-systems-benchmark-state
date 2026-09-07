@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0306",
-  "next_action": "Finish isolated Qwen tests, then acquire the serialized module-registration fence after earlier adapter integration.",
+  "next_action": "Complete full quality, privacy, supply-chain and coverage gates on the repaired exact tree, then commit and publish for immutable review.",
   "observed_branch": "feature/agent-qwen-code",
   "observed_dirty": 5,
   "observed_head": "2579362d6936b25e6008583f7bd485e5498a4e3f",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned Qwen Code through isolated headless stream-JSON.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Implement Qwen Code client adapter",
-  "updated_at": "2026-09-07T00:53:16+00:00",
+  "updated_at": "2026-09-07T00:53:31+00:00",
   "worktree_key": "agent-systems-benchmark-agent-qwen-code"
 }
 ---
@@ -240,3 +240,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T00:53:16+00:00: Recorded command exit 0; command argv SHA-256
   c8cd8798a3f0f2911bf4e61b058a1dddf89af5fa4ad3fa3d8083d744328ccc10.
+
+- 2026-09-07T00:53:31+00:00: Changed conclusion after native loopback negative: pinned Qwen Code
+  v0.23.0 encodes an HTTP 400 provider rejection as assistant text plus a nominal successful
+  zero-token result and exit 0. The adapter now requires positive input and output token evidence
+  before accepting Completed; unit and real pinned HTTP 400 negatives prove fail-closed behavior
+  without retaining diagnostic content.
