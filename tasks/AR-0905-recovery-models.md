@@ -2,7 +2,7 @@
 {
   "branch": "feature/recovery-models",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T02:03:00+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0102",
     "AR-0104",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/recovery-models",
   "observed_dirty": 0,
   "observed_head": "a288bb3485aa2a65ffa79626c3352c6522791138",
-  "owner": "replay_20260906",
+  "owner": "",
   "plan": "../plans/AR-0905.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Apply bounded formal models to run lifecycle, leases, recovery, replay cursors and uncertain external effects.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Model execution recovery and worker fencing",
-  "updated_at": "2026-09-07T23:19:47+00:00",
+  "updated_at": "2026-09-07T23:23:10+00:00",
   "worktree_key": "agent-systems-benchmark-recovery-models"
 }
 ---
@@ -250,3 +250,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T23:19:47+00:00: Recorded command exit 0; command argv SHA-256
   9c928c3547f8a5a5f6a37996985dc5905999a331ba922862e18dcab78849145f.
+
+- 2026-09-07T23:23:10+00:00: Released after independently reviewed PR #57 exact head
+  a288bb3485aa2a65ffa79626c3352c6522791138 merged by signed+DCO no-ff commit
+  20ac1e507e678aff463ec5f6c7b37cfcd67a5ad0 with exact parents
+  72dd78f72dd74d20654232923dfe2fcff7771dff and a288bb3485aa2a65ffa79626c3352c6522791138. Exact-main
+  hosted runs all succeeded: formal 34169558987, quality 34169558969, Rust x86_64/aarch64
+  34169558933, fault 34169558934, emulated-aarch64 34169558929. Complete exact-main local postmerge
+  fmt, Clippy, workspace tests, docs, release build, repository policy, actionlint, cargo-deny,
+  Gitleaks, TLC/Alloy positive and mutation checks, Kani 6/6 and deliberate negative passed; product
+  main and feature worktrees were clean and refs synchronized; live doctor passed. Finite evidence
+  retains the documented liveness, timing, native, filesystem and 87.5% nightly branch-coverage
+  limitations.
