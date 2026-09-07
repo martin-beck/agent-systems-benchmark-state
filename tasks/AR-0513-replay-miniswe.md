@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for mini-SWE-agent.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Qualify mini-SWE replay",
-  "updated_at": "2026-09-07T19:54:30+00:00",
+  "updated_at": "2026-09-07T19:55:03+00:00",
   "worktree_key": "agent-systems-benchmark-replay-miniswe"
 }
 ---
@@ -116,3 +116,6 @@ Qualify mini-SWE-agent record/replay, network denial, parity, retries, tool call
   proved paced cancellation returns Cancelled with process/state cleanup. Network namespace asserted
   loopback-only. Automatic retry remains unsupported evidence: RetryObservation is
   Unavailable(UnstructuredBatchDiagnostics).
+
+- 2026-09-07T19:55:03+00:00: Recorded command exit 0; command argv SHA-256
+  dd91ec01188f1a9a82e748d9c8ab9803a1ae63b92f5a3ec937b22cecb4561d4a.
