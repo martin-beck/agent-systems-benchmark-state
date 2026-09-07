@@ -2,7 +2,7 @@
 {
   "branch": "feature/frontend-control-api",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-07T04:26:28+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0104",
@@ -11,15 +11,15 @@
   ],
   "id": "AR-0803",
   "next_action": "Define a bounded versioned control/status API between the runner and independent frontends.",
-  "owner": "",
+  "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0803.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Define the frontend control API",
-  "updated_at": "2026-09-07T02:56:13+00:00",
+  "updated_at": "2026-09-07T02:56:28+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api"
 }
 ---
@@ -34,3 +34,5 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-07T02:56:13+00:00: Dependencies AR-0101, AR-0104, AR-0204 and AR-0801 are durably done;
   AR-0801 exact-main b2833ab CI and post-merge verification are green. Promote the highest-priority
   compatible frontend control boundary after releasing its Cargo/scheduler fences.
+
+- 2026-09-07T02:56:28+00:00: Claimed by root-coordination-20260906.
