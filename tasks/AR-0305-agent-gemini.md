@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0305",
-  "next_action": "Inspect the current official stable release, transition constraints, stream-JSON contract and provider override.",
+  "next_action": "Complete negative matrix, provenance fixture documentation and isolated full gates; await shared registration fence.",
   "observed_branch": "feature/agent-gemini",
   "observed_dirty": 3,
   "observed_head": "311c128649610df258b2961c9ca623fb8f258307",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned Gemini CLI through noninteractive JSON events.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Implement Gemini CLI client adapter",
-  "updated_at": "2026-09-07T00:28:54+00:00",
+  "updated_at": "2026-09-07T00:29:20+00:00",
   "worktree_key": "agent-systems-benchmark-agent-gemini"
 }
 ---
@@ -215,3 +215,18 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T00:28:54+00:00: Recorded command exit 0; command argv SHA-256
   e001ca034f397245c61ee13761de916bc9d8b89f81d9e1c4d9173d11ae800ff1.
+
+- 2026-09-07T00:29:20+00:00: Preserved three owned untracked paths on base 311c128. Initial large
+  gemini.rs apply_patch was mistakenly invoked outside handoffctl; it affected only the declared
+  clean worktree/scope, was audited once, and was not repeated. Subsequent product/build/test
+  mutations are wrapped. Official v0.58.0 source/package/Node pins are verified. Changed conclusion:
+  GOOGLE_GEMINI_BASE_URL alone selects unsupported GATEWAY auth and exits 41 before connecting;
+  isolated gemini-api-key selection plus public credential-free sentinel is required. Early real
+  runs timed out and left one exact /tmp fixture, which was removed through the wrapper after
+  process audit. Focused 6-test boundary suite and real edit/cancellation fixtures passed. Initial
+  proactive-budget attempts failed due omitted explicit hooks enable/home binding, then a test
+  parameter-order defect accidentally left max_actions=4, then replace calls did not reach
+  BeforeTool validation; all failures were preserved/investigated. Current official
+  SessionStart+BeforeTool hook/policy boundary is proven live, atomically reserves actions, emits
+  private exhaustion marker, blocks max+1 before side effect, maps exhaustion to explicit Failed
+  evidence, and its real pinned regression passes.
