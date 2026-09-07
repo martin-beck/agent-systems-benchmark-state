@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #24 | `feature/agent-codex@37a63aaf4a8e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(agents): add bounded Codex adapter |
+| #24 | `feature/agent-codex@eb03bd9d9ed5` | `main` | UNKNOWN | - | feat(agents): add bounded Codex adapter |
 
 ## Recent workflows
 
