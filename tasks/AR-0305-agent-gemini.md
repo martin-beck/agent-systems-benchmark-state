@@ -12,16 +12,16 @@
   "next_action": "Await serialized lib.rs registration handoff, then rebase once onto stabilized exact main and rerun registered-module full gates.",
   "observed_branch": "feature/agent-gemini",
   "observed_dirty": 4,
-  "observed_head": "311c128649610df258b2961c9ca623fb8f258307",
+  "observed_head": "b79534b627e28792a46e1a0074be762bb425d2a6",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0305.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned Gemini CLI through noninteractive JSON events.",
-  "task_revision": 115,
+  "task_revision": 116,
   "title": "Implement Gemini CLI client adapter",
-  "updated_at": "2026-09-07T01:00:06+00:00",
+  "updated_at": "2026-09-07T01:06:50+00:00",
   "worktree_key": "agent-systems-benchmark-agent-gemini"
 }
 ---
