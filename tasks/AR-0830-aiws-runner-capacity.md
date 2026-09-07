@@ -2,7 +2,7 @@
 {
   "branch": "feature/development-host-runner-capacity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T08:29:18+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0002",
     "AR-0003",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/development-host-runner-capacity",
   "observed_dirty": 0,
   "observed_head": "c67d572c227021e96f43abe62e430fc9acdb5f93",
-  "owner": "contracts-20260906",
+  "owner": "",
   "plan": "../plans/AR-0830.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 101,
+  "task_revision": 102,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T06:29:59+00:00",
+  "updated_at": "2026-09-07T06:30:57+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
@@ -316,3 +316,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T06:29:59+00:00: Recorded command exit 1; command argv SHA-256
   e9b947f25dbcc663f6bfb5048bbbbee7e5479c42c0442dfeea3b8e23bbc93bea.
+
+- 2026-09-07T06:30:57+00:00: Listener start failed at 06:29:59 (argv hash
+  e9b947f25dbcc663f6bfb5048bbbbee7e5479c42c0442dfeea3b8e23bbc93bea); no sanitized diagnostics were
+  recorded. GitHub registration asb-runner-e24284d3bbb7 is preserved offline with exact label;
+  diagnose service identity/environment before retry and never re-register.
