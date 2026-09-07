@@ -2,7 +2,7 @@
 {
   "branch": "feature/development-host-runner-capacity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T08:54:45+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0002",
     "AR-0003",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/development-host-runner-capacity",
   "observed_dirty": 0,
   "observed_head": "6518802f1728370e0553986285925eedffc70f36",
-  "owner": "contracts-20260906",
+  "owner": "",
   "plan": "../plans/AR-0830.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T06:02:24+00:00",
+  "updated_at": "2026-09-07T06:04:08+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
@@ -204,3 +204,9 @@ Implementation has not started. Read the linked plan before claiming.
   verifying it was a non-symlink empty directory. Wrapper-run syntax, focused suite, before/after
   fixture residue equality, diff/privacy checks and forbidden old-parent absence all passed; clean
   worktree.
+
+- 2026-09-07T06:04:08+00:00: Local controls and tests are complete through signed product head
+  6518802/state 58836251. Live service identity, ephemeral registration, protected canary, and
+  GitHub-side label proof remain blocked by absent authorized registration token/admin boundary
+  after repeated audits; preserve exact evidence and resume only when that external boundary is
+  supplied.
