@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use Codex noninteractive structured events or app-server with declared capability boundaries.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Implement Codex client adapter",
-  "updated_at": "2026-09-06T23:59:12+00:00",
+  "updated_at": "2026-09-07T00:00:17+00:00",
   "worktree_key": "agent-systems-benchmark-agent-codex"
 }
 ---
@@ -279,3 +279,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-06T23:59:12+00:00: Recorded command exit 0; command argv SHA-256
   e9fc216314850c058e8e85538abdbbe95e16c1fcab983cbfd25f13fa155045ae.
+
+- 2026-09-07T00:00:17+00:00: Recorded command exit 2; command argv SHA-256
+  6d2bf495077cfbf20fe7c3f892403437d6cb17661d72ca76fe75a7b4b9342552.
