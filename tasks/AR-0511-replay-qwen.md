@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Qwen Code.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Qualify Qwen Code replay",
-  "updated_at": "2026-09-07T19:46:20+00:00",
+  "updated_at": "2026-09-07T19:47:45+00:00",
   "worktree_key": "agent-systems-benchmark-replay-qwen"
 }
 ---
@@ -246,3 +246,6 @@ Qualify Qwen Code record/replay, network denial, parity, retries, tool calls, ca
 
 - 2026-09-07T19:46:20+00:00: Recorded command exit 0; command argv SHA-256
   f9a7d7cda8980588defd54d6dc80f2923feaf3819c0405adad9e4f5e87d3c9d8.
+
+- 2026-09-07T19:47:45+00:00: Recorded command exit 0; command argv SHA-256
+  4acb21cab60c64d5d1a592ee377cf99538922422b6d9cb03e75e2870bb7303b8.
