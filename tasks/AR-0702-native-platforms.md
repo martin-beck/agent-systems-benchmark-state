@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0702",
-  "next_action": "Run exact-tree full gates and immutable review for the fail-closed harness; publish public native aarch64 evidence through disposable CI. Retain AR-0702 in progress until AR-0703 provides genuine booted Debian/openEuler x86_64+aarch64 capacity.",
+  "next_action": "Independent immutable review of d2fc492; if approved, publish and collect exact-head native x86_64/aarch64 CI. Keep in progress until AR-0703 supplies genuine Debian/openEuler native capacity.",
   "observed_branch": "feature/native-platforms",
   "observed_dirty": 0,
   "observed_head": "d2fc492440379325b16e6232289f30d878fd7a33",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Exercise native x86_64 and aarch64 including booted openEuler kernels.",
-  "task_revision": 170,
+  "task_revision": 171,
   "title": "Validate native Linux kernels and architectures",
-  "updated_at": "2026-09-07T04:29:57+00:00",
+  "updated_at": "2026-09-07T04:30:36+00:00",
   "worktree_key": "agent-systems-benchmark-native-platforms"
 }
 ---
@@ -471,3 +471,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T04:29:57+00:00: Recorded command exit 0; command argv SHA-256
   6a10a651ece26db89d76e125186c4a027b23d3e778665168656146d64e55fcb3.
+
+- 2026-09-07T04:30:36+00:00: Repaired all four residual blockers at signed+DCO clean head d2fc492
+  (tree b9440ec): platform-specific Ubuntu/Debian/openEuler tool pins and official provenance; exact
+  report-to-manifest distro/release binding including Debian 13.6 negatives; dirfd/O_NOFOLLOW
+  nearest-ancestor output creation with no-outside-mkdir adversaries; explicit bounded
+  SELinux/AppArmor state and unavailable-privilege partial semantics. Genuine neutral Ubuntu 24.04.4
+  x86_64 report SHA256 8bb9e9aa remains the only promoted native claim. Full fmt/clippy/workspace
+  tests/docs/release, 20 platform negatives, exact manifest validation, native branch-aware 95%,
+  repository policy/actionlint/zizmor/Gitleaks/deny/audit/configured coverage/failure fixtures/DCO/9
+  SSH signatures/privacy/clean tree, Kani 5/5 and deliberate Kani negative all pass. AR-0703 remains
+  the external Debian/openEuler and native capacity blocker; no unsupported claim made.
