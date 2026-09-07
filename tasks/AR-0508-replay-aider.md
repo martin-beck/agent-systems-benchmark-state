@@ -11,15 +11,18 @@
   ],
   "id": "AR-0508",
   "next_action": "Prove credential-free record/replay conformance for aider with network denial and malformed/tool/cancel negatives.",
+  "observed_branch": "feature/replay-aider",
+  "observed_dirty": 0,
+  "observed_head": "a0d80e48deb8750543606c2b577e1a52df26fc4c",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0508.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for aider.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Qualify aider replay",
-  "updated_at": "2026-09-07T12:47:51+00:00",
+  "updated_at": "2026-09-07T12:48:49+00:00",
   "worktree_key": "agent-systems-benchmark-replay-aider"
 }
 ---
