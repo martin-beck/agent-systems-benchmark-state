@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**113 ARs tracked** across 5 active status categories.
+**113 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 67 |
 | **Future** | Deferred roadmap work | 0 |
@@ -85,7 +85,7 @@ flowchart LR
         AR_0503["AR-0503 - Done"]:::status_done
         AR_0504["AR-0504 - Done"]:::status_done
         AR_0505["AR-0505 - Planned"]:::status_planned
-        AR_0506["AR-0506 - Open"]:::status_open
+        AR_0506["AR-0506 - In progress"]:::status_in_progress
         AR_0507["AR-0507 - Planned"]:::status_planned
         AR_0508["AR-0508 - Planned"]:::status_planned
         AR_0509["AR-0509 - Planned"]:::status_planned
@@ -678,19 +678,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-0506](tasks/AR-0506-replay-opencode.md): Qualify OpenCode replay | contracts-20260906 | Qualify replay conformance for OpenCode. | Prove credential-free record/replay conformance for the OpenCode adapter with network denial and malformed/tool/cancel negatives. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
 | P1 | [AR-0845](tasks/AR-0845-ci-artifact-quota-resilience.md): Harden CI artifact quota behavior | quality-20260906 | Prevent exhausted GitHub artifact quota from obscuring authoritative ASB results. | Make optional CI evidence quota-aware while preserving required-check semantics and provenance. |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | replay-20260906 | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Independently review unpublished exact candidate 1605693dbb7aade01dd47cb074e35bca02df873b tree 7d99a7f69d97335cad802699dbf9a7ac7bac2e1b; do not publish or merge without coordinator authorization. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0506](tasks/AR-0506-replay-opencode.md): Qualify OpenCode replay | Unclaimed | Qualify replay conformance for OpenCode. | Prove credential-free record/replay conformance for the OpenCode adapter with network denial and malformed/tool/cancel negatives. |
 
 ### Blocked (4)
 

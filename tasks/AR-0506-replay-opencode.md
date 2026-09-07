@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-opencode",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-07T14:55:28+00:00",
   "depends_on": [
     "AR-0301",
     "AR-0503",
@@ -11,15 +11,15 @@
   ],
   "id": "AR-0506",
   "next_action": "Prove credential-free record/replay conformance for the OpenCode adapter with network denial and malformed/tool/cancel negatives.",
-  "owner": "",
+  "owner": "contracts-20260906",
   "plan": "../plans/AR-0506.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify replay conformance for OpenCode.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Qualify OpenCode replay",
-  "updated_at": "2026-09-07T11:55:26+00:00",
+  "updated_at": "2026-09-07T11:55:28+00:00",
   "worktree_key": "agent-systems-benchmark-replay-opencode"
 }
 ---
@@ -30,3 +30,5 @@ retries, tool calls, cancellation, and malformed-record negatives.
 
 - 2026-09-07T11:55:26+00:00: Dependencies AR-0301, AR-0503, AR-0504, and AR-0401 verified done;
   declared replay-opencode paths are compatible with current active work.
+
+- 2026-09-07T11:55:28+00:00: Claimed by contracts-20260906.
