@@ -9,7 +9,7 @@
     "AR-0401"
   ],
   "id": "AR-1004",
-  "next_action": "Audit AR-1004 reliability/fairness semantics, add any missing negative/formal evidence, then run full exact-tree gates and prepare focused signed DCO candidate without shared Cargo/schema edits.",
+  "next_action": "Run final exact-tree scope/privacy/signature/DCO checks, create one focused signed DCO candidate, and request independent immutable review before publication.",
   "observed_branch": "feature/reliability-fairness",
   "observed_dirty": 4,
   "observed_head": "4a59593c0c55e0ad72656363473a404d8be1054b",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Report repeated-attempt reliability and prevent aggregate results from hiding starvation or hard strata.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Measure reliability and mixed-workload fairness",
-  "updated_at": "2026-09-07T03:50:44+00:00",
+  "updated_at": "2026-09-07T03:51:12+00:00",
   "worktree_key": "agent-systems-benchmark-reliability-fairness"
 }
 ---
