@@ -2,21 +2,24 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `111be970534fbf72332a80c2291fe1fe21acb694`
-- Local origin/main: `111be970534fbf72332a80c2291fe1fe21acb694`
-- Primary worktree head: `111be970534fbf72332a80c2291fe1fe21acb694`
+- Product remote main: `462bd04a349dfbea1797c8a358e390544d51471e`
+- Local origin/main: `462bd04a349dfbea1797c8a358e390544d51471e`
+- Primary worktree head: `462bd04a349dfbea1797c8a358e390544d51471e`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #31 | `feature/native-platforms@bdaf9c108226` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #54 | `feature/frontend-control-api-repair@0d2534f614cd` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: repair frontend control API |
+| #31 | `feature/native-platforms@bdaf9c108226` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34165481191 | `462bd04a349d` | push | Repository quality | queued:- |
+| 34165481188 | `462bd04a349d` | push | Formal assurance | queued:- |
+| 34165481170 | `462bd04a349d` | push | Rust verification | queued:- |
+| 34165481161 | `462bd04a349d` | push | Fault assurance | queued:- |
 | 34165176887 | `0d2534f614cd` | pull_request | Fault assurance | completed:success |
 | 34165176880 | `0d2534f614cd` | pull_request | Formal assurance | completed:success |
 | 34165176859 | `0d2534f614cd` | pull_request | Rust verification | completed:success |
@@ -25,7 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34164102145 | `111be970534f` | push | Rust verification | completed:success |
 | 34164102144 | `111be970534f` | push | Fault assurance | completed:success |
 | 34164102103 | `111be970534f` | push | Repository quality | completed:success |
-| 34163875432 | `6dfa688ddf9f` | pull_request | Fault assurance | completed:success |
-| 34163875397 | `6dfa688ddf9f` | pull_request | Repository quality | completed:success |
-| 34163875385 | `6dfa688ddf9f` | pull_request | Rust verification | completed:success |
-| 34163875368 | `6dfa688ddf9f` | pull_request | Formal assurance | completed:success |
