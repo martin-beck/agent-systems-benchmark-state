@@ -22,7 +22,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-development-host-workflow-routing` | `feature/development-host-workflow-routing` | `f55f98cc79b7` | 0 | behind 57, ahead 0 |
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 157, ahead 0 |
 | `agent-systems-benchmark-emulated-aarch64-portability` | `feature/emulated-aarch64-portability` | `5a819633552f` | 5 | behind 2, ahead 0 |
-| changed files | - | - | - | `docs/PLATFORMS.md`, `.github/workflows/emulated-aarch64.yml`, `platforms/v1/emulated-aarch64.json`, `tests/platforms/test_emulated_aarch64.py`, `tools/platforms/emulated_aarch64.py` |
+| changed files | - | - | - | `.github/workflows/emulated-aarch64.yml`, `docs/PLATFORMS.md`, `platforms/v1/emulated-aarch64.json`, `tests/platforms/test_emulated_aarch64.py`, `tools/platforms/emulated_aarch64.py` |
 | `agent-systems-benchmark-engineering-workloads` | `feature/engineering-workloads` | `41ffc6eb8f1a` | 0 | behind 101, ahead 0 |
 | `agent-systems-benchmark-experiment-comparability` | `feature/experiment-comparability` | `eb5e84933830` | 0 | behind 111, ahead 0 |
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 165, ahead 0 |
