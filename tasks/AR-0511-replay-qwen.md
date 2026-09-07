@@ -12,7 +12,7 @@
   "id": "AR-0511",
   "next_action": "Prove credential-free record/replay conformance for Qwen Code with network denial and malformed/tool/cancel negatives.",
   "observed_branch": "feature/replay-qwen",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "076e9c44810903fb42669642b5820df2f1672136",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0511.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Qwen Code.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Qualify Qwen Code replay",
-  "updated_at": "2026-09-07T18:50:05+00:00",
+  "updated_at": "2026-09-07T18:50:33+00:00",
   "worktree_key": "agent-systems-benchmark-replay-qwen"
 }
 ---

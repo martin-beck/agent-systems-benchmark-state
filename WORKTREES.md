@@ -51,7 +51,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-replay-opencode` | `feature/replay-opencode` | `eec93a240b58` | 0 | behind 25, ahead 0 |
 | `agent-systems-benchmark-replay-opendesk` | `feature/replay-opendesk` | `24a5519ef006` | 0 | behind 16, ahead 0 |
 | `agent-systems-benchmark-replay-pacing` | `feature/replay-pacing` | `73d28a431c78` | 0 | behind 110, ahead 0 |
-| `agent-systems-benchmark-replay-qwen` | `feature/replay-qwen` | `076e9c448109` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-replay-qwen` | `feature/replay-qwen` | `076e9c448109` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-agents/tests/replay_qwen.rs` |
 | `agent-systems-benchmark-runner-isolation-hardening` | `fix/runner-isolation-hardening` | `9b4e7084e02c` | 0 | behind 45, ahead 0 |
 | `agent-systems-benchmark-runner-privacy-guard-remediation` | `fix/runner-canary-privacy-guards` | `c25e3d20d0dd` | 0 | behind 47, ahead 0 |
 | `agent-systems-benchmark-runtime-bundle-manifest` | `feature/runtime-bundle-manifest` | `4b2805d870df` | 0 | behind 35, ahead 0 |
