@@ -15,6 +15,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-agent-qwen-code` | `feature/agent-qwen-code` | `0be96c9ec50e` | 0 | behind 91, ahead 0 |
 | `agent-systems-benchmark-agent-replay-conformance` | `feature/agent-replay-conformance` | `111be970534f` | 0 | behind 8, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 3, ahead 0 |
+| `agent-systems-benchmark-benchmark-validity` | `feature/benchmark-validity` | `20ac1e507e67` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `0717d4acd168` | 0 | behind 107, ahead 0 |
 | `agent-systems-benchmark-ci-artifact-quota-resilience` | `feature/ci-artifact-quota-resilience` | `7d98653e7e7f` | 0 | behind 53, ahead 0 |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 176, ahead 0 |
