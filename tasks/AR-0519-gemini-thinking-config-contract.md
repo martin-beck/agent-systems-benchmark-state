@@ -7,7 +7,7 @@
     "AR-0518"
   ],
   "id": "AR-0519",
-  "next_action": "Run focused Gemini/schema/strict replay tests for exact includeThoughts boolean shape and value parity; repair any fixture digest or compile failure, then full gates.",
+  "next_action": "Commit the clean four-path exact-tree repair with SSH signature/DCO after final privacy/scope verification; request immutable review before publication.",
   "observed_branch": "feature/gemini-thinking-config-contract",
   "observed_dirty": 4,
   "observed_head": "74d311ca7a4ae86809424f9ff5edfe2c16127891",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Correct Gemini thinkingConfig strict-replay contract from pinned capture evidence.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Gemini thinkingConfig contract repair",
-  "updated_at": "2026-09-07T17:42:22+00:00",
+  "updated_at": "2026-09-07T17:42:47+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-thinking-config-contract"
 }
 ---
@@ -108,3 +108,17 @@ Repair the merged Gemini dialect using privacy-safe pinned evidence: `thinkingCo
 
 - 2026-09-07T17:42:22+00:00: Recorded command exit 0; command argv SHA-256
   34a6e58eef36a98d98c084e647b102ea0cef00cde2cb9bbbbf12749d02fd11d9.
+
+- 2026-09-07T17:42:47+00:00: All required local gates are green. Focused Gemini 9/schema 3/strict
+  replay 19; full workspace fmt, Clippy -D warnings, tests, docs, release; formal
+  Loom/state/production and corrected pinned Kani 0.67.0 five proofs plus deliberate counterexample
+  rejection; coverage workspace 94.65% lines and asb-replay 97.65% lines/95.01% regions; deny/audit,
+  actionlint/zizmor, retained store/replay faults, mutation sentinel 7/7, and all four 256-run
+  bounded fuzz targets with lock unchanged/no source residue. Privacy Gitleaks directory scan,
+  private-path/secret grep, four-path scope and diff-check are green. The first Kani invocation
+  failed before proof due incomplete KANI_HOME/cargo discovery and the corrected pinned invocation
+  passed. After mutation, cargo-mutants had restored source without invalidating its newer compiled
+  mutant in the shared task target, causing four false follow-up failures; cleaning only task-owned
+  asb-replay artifacts and rebuilding made Gemini/schema/strict tests green. A direct diagnostic
+  rerun outside the wrapper observed the same stale binary but produced no source effect; all
+  corrective build actions used the wrapper.

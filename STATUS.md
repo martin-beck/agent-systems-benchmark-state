@@ -703,7 +703,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0510](tasks/AR-0510-replay-gemini.md): Qualify Gemini replay | quality_20260906 | Qualify replay conformance for Gemini. | Await focused shared Gemini dialect repair for exact thinkingConfig shape {includeThoughts:boolean}; then rerun pinned capture-to-strict-replay and remaining gates without weakening exact matching. |
-| P0 | [AR-0519](tasks/AR-0519-gemini-thinking-config-contract.md): Gemini thinkingConfig contract repair | replay_20260906 | Correct Gemini thinkingConfig strict-replay contract from pinned capture evidence. | Run focused Gemini/schema/strict replay tests for exact includeThoughts boolean shape and value parity; repair any fixture digest or compile failure, then full gates. |
+| P0 | [AR-0519](tasks/AR-0519-gemini-thinking-config-contract.md): Gemini thinkingConfig contract repair | replay_20260906 | Correct Gemini thinkingConfig strict-replay contract from pinned capture evidence. | Commit the clean four-path exact-tree repair with SSH signature/DCO after final privacy/scope verification; request immutable review before publication. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
 
 ### Blocked (4)
