@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-platforms",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T09:11:58+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0701",
     "AR-0103",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/native-platforms",
   "observed_dirty": 0,
   "observed_head": "bdaf9c108226f34ec6098f75b51fd601da9e9571",
-  "owner": "quality-20260906",
+  "owner": "",
   "plan": "../plans/AR-0702.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Exercise native x86_64 and aarch64 including booted openEuler kernels.",
-  "task_revision": 292,
+  "task_revision": 293,
   "title": "Validate native Linux kernels and architectures",
-  "updated_at": "2026-09-07T07:41:58+00:00",
+  "updated_at": "2026-09-07T07:45:14+00:00",
   "worktree_key": "agent-systems-benchmark-native-platforms"
 }
 ---
@@ -785,3 +785,13 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-07T06:10:22+00:00: Heartbeat by quality-20260906.
 
 - 2026-09-07T07:41:58+00:00: Heartbeat by quality-20260906.
+
+- 2026-09-07T07:45:14+00:00: Released without completion after preserving exact reviewed PR #31 head
+  bdaf9c108226f34ec6098f75b51fd601da9e9571 (tree 3025dfd880fafaf3388193d7f611d8c85f3c60cb).
+  Exact-head hosted runs remain green: native Ubuntu 24.04 x86_64/aarch64 34087336758, quality
+  34087336778, Rust x86_64/aarch64 34087336775, formal 34087336801, and fault assurance 34087336787.
+  Completion remains blocked on AR-0703 provisioning genuine disposable booted Debian and openEuler
+  x86_64/aarch64 capacity; no emulated or unsupported claim substitutes. Read-only AR-0830 audit
+  separately proved exact composite runner label and one ephemeral-compatible canary, but found
+  public job log runner/machine identity exposure and a canary missing a main-ref guard; coordinator
+  added AR-0835 for remediation.
