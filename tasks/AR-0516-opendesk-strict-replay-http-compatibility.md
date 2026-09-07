@@ -2,7 +2,7 @@
 {
   "branch": "feature/opendesk-strict-replay-http-compatibility",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-07T16:52:10+00:00",
   "depends_on": [
     "AR-0502",
     "AR-0503",
@@ -11,15 +11,15 @@
   ],
   "id": "AR-0516",
   "next_action": "Implement fail-closed OpenDesk HTTP compatibility for span_id, absent-stream SSE, and recorded model catalog probes.",
-  "owner": "",
+  "owner": "quality_20260906",
   "plan": "../plans/AR-0516.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add narrowly scoped strict-replay compatibility for pinned OpenDesk traffic.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "OpenDesk strict-replay HTTP compatibility",
-  "updated_at": "2026-09-07T13:52:07+00:00",
+  "updated_at": "2026-09-07T13:52:10+00:00",
   "worktree_key": "agent-systems-benchmark-opendesk-strict-replay-http-compatibility"
 }
 ---
@@ -39,3 +39,5 @@ Acceptance requires schema/runtime parity, adversarial positives and negatives, 
 
 - 2026-09-07T13:52:07+00:00: Promote shared OpenDesk replay compatibility repair now that AR-0508
   released and a worker slot is free.
+
+- 2026-09-07T13:52:10+00:00: Claimed by quality_20260906.

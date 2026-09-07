@@ -9,13 +9,8 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0507](tasks/AR-0507-replay-opendesk.md): Qualify OpenDesk replay | Qualify replay conformance for OpenDesk. | Await reviewed AR-0516 shared replay compatibility merge; then rebase, remove diagnostic span_id normalization, record exact model GETs, and complete pinned offline replay/cancel/malformed/full gates. | replay_20260906 |
 | P0 | [AR-0509](tasks/AR-0509-replay-codex.md): Qualify Codex replay | Qualify replay conformance for Codex. | Preserve isolated Codex test; await serialized child AR fixing privacy-safe request-body pointer replay, then finish native parity/retry/cancel gates. | contracts_20260906 |
+| P0 | [AR-0516](tasks/AR-0516-opendesk-strict-replay-http-compatibility.md): OpenDesk strict-replay HTTP compatibility | Add narrowly scoped strict-replay compatibility for pinned OpenDesk traffic. | Implement fail-closed OpenDesk HTTP compatibility for span_id, absent-stream SSE, and recorded model catalog probes. | quality_20260906 |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. | root-coordination-20260906 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0516](tasks/AR-0516-opendesk-strict-replay-http-compatibility.md): OpenDesk strict-replay HTTP compatibility | Add narrowly scoped strict-replay compatibility for pinned OpenDesk traffic. | Implement fail-closed OpenDesk HTTP compatibility for span_id, absent-stream SSE, and recorded model catalog probes. | - |
 
 ## Blocked
 
