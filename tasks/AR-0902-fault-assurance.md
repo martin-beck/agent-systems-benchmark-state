@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection.",
-  "task_revision": 92,
+  "task_revision": 93,
   "title": "Add fuzz mutation and lifecycle fault campaigns",
-  "updated_at": "2026-09-07T02:49:49+00:00",
+  "updated_at": "2026-09-07T02:50:09+00:00",
   "worktree_key": "agent-systems-benchmark-fault-assurance"
 }
 ---
@@ -320,3 +320,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-07T02:49:49+00:00: Independent immutable review approved exact successor
   e6c623113c15c99950889b26cd70b29c6966b1d4. Before the authorized update, local tree was clean, SSH
   signature and exact DCO were valid, and both remote branch and PR #28 remained exact ad00e8b.
+
+- 2026-09-07T02:50:09+00:00: Recorded command exit 0; command argv SHA-256
+  601796a68f81f1c98c74af6be59c0a1a52611e5c680a9ceae7fccc8dfee3c094.
