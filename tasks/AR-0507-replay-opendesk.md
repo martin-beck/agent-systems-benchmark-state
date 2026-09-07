@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0507",
-  "next_action": "Await reviewed AR-0516 shared replay compatibility merge; then rebase, remove diagnostic span_id normalization, record exact model GETs, and complete pinned offline replay/cancel/malformed/full gates.",
+  "next_action": "Independently review immutable head 24a5519ef006c063f3a8d6e81d0928f2e9e986f9/tree 96f01bd39cd5e75a70d3618cec55e603b9643d38; publish only after approval, then require exact-head x86_64/aarch64 quality/formal/fault CI.",
   "observed_branch": "feature/replay-opendesk",
   "observed_dirty": 0,
   "observed_head": "24a5519ef006c063f3a8d6e81d0928f2e9e986f9",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenDesk.",
-  "task_revision": 111,
+  "task_revision": 112,
   "title": "Qualify OpenDesk replay",
-  "updated_at": "2026-09-07T15:09:49+00:00",
+  "updated_at": "2026-09-07T15:10:39+00:00",
   "worktree_key": "agent-systems-benchmark-replay-opendesk"
 }
 ---
@@ -398,3 +398,22 @@ Qualify OpenDesk record/replay, network denial, parity, retries, tool calls, can
 
 - 2026-09-07T15:09:49+00:00: Recorded command exit 0; command argv SHA-256
   5de25e30de59651dc01ee0cd61d31d252b41a0b2aaf2bdfd99c943e40f2d53f0.
+
+- 2026-09-07T15:10:39+00:00: AR-0507 exact-tree candidate is
+  24a5519ef006c063f3a8d6e81d0928f2e9e986f9, tree 96f01bd39cd5e75a70d3618cec55e603b9643d38, two-path
+  scope over exact signed main 8eff6f95: adapter route-root repair plus replay_opendesk integration.
+  Both commits verify with the allowed SSH signer and exact Martin Beck DCO; diff-check, clean
+  worktree, scope and privacy scans pass; exact-range Gitleaks scanned 2 commits/~38 KB with no
+  leaks. Pinned OpenDesk 0.3.5 and Node 26.3.0 ran in a user+network namespace exposing only
+  loopback: record plus strict offline replay, exact 18 catalog GET sequence/framing, real span_id
+  redaction, absent-stream SSE bytes, one 429 exact retry, tool-call causality, graded trajectory
+  parity, cancellation and state cleanup all passed in 18.43s after final assertions. Focused
+  adapter units 10/10 and malformed cassette integration 1/1 pass. Exact-tree fmt, workspace
+  all-target Clippy -D warnings, full locked workspace tests, rustdoc -D warnings, release build,
+  formal workspace tests, cargo-deny, refreshed cargo-audit, actionlint, zizmor, repository policy,
+  and negative quality fixtures pass. Coverage passes at 91.82% workspace lines, 98.44% asb-protocol
+  lines and 97.66% asb-replay lines. Initial negative-fixture invocation passed through
+  documentation checks then failed only because cargo was absent from PATH; corrected pinned PATH
+  rerun passed every positive/negative fixture. No cassette/raw prompt/response/private
+  path/transcript is committed. Real execution is proven only on Linux x86_64; aarch64 remains
+  build/test CI, not a native OpenDesk runtime claim.
