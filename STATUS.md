@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**121 ARs tracked** across 5 active status categories.
+**121 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 57 |
 | **Future** | Deferred roadmap work | 0 |
@@ -159,7 +159,7 @@ flowchart LR
         AR_0845["AR-0845 - Done"]:::status_done
         AR_0846["AR-0846 - Planned"]:::status_planned
         AR_0847["AR-0847 - Done"]:::status_done
-        AR_0848["AR-0848 - Open"]:::status_open
+        AR_0848["AR-0848 - In progress"]:::status_in_progress
         AR_0849["AR-0849 - Done"]:::status_done
     end
     subgraph series_09["09 - Assurance"]
@@ -719,19 +719,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0505](tasks/AR-0505-agent-replay-conformance.md): Prove real-agent replay conformance | contracts_20260906 | Test each actual client through recording and offline replay of engineering tasks. | Build production-boundary integration matrix using synthetic upstream service. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
+| P1 | [AR-0848](tasks/AR-0848-native-x86-capacity.md): Qualify native x86 capacity | quality_20260906 | Qualify authorized disposable native x86_64 capacity on a development host. | Use the authorized development-host native x86_64 host as a disposable qualification cell; prove identity, isolation, cleanup, provenance, cost bounds, and evidence integrity without making aarch64 claims. |
 | P1 | [AR-0905](tasks/AR-0905-recovery-models.md): Model execution recovery and worker fencing | replay_20260906 | Apply bounded formal models to run lifecycle, leases, recovery, replay cursors and uncertain external effects. | Translate Agent Relay&#x27;s TLA+/Alloy/executable-model pattern to ASB run and replay domains. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0848](tasks/AR-0848-native-x86-capacity.md): Qualify native x86 capacity | Unclaimed | Qualify authorized disposable native x86_64 capacity on a development host. | Use the authorized development-host native x86_64 host as a disposable qualification cell; prove identity, isolation, cleanup, provenance, cost bounds, and evidence integrity without making aarch64 claims. |
 
 ### Blocked (4)
 

@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-x86-capacity",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-08T02:11:06+00:00",
   "depends_on": [
     "AR-0701",
     "AR-0103",
@@ -11,15 +11,15 @@
   ],
   "id": "AR-0848",
   "next_action": "Use the authorized development-host native x86_64 host as a disposable qualification cell; prove identity, isolation, cleanup, provenance, cost bounds, and evidence integrity without making aarch64 claims.",
-  "owner": "",
+  "owner": "quality_20260906",
   "plan": "../plans/AR-0848.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify authorized disposable native x86_64 capacity on a development host.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Qualify native x86 capacity",
-  "updated_at": "2026-09-07T23:11:04+00:00",
+  "updated_at": "2026-09-07T23:11:06+00:00",
   "worktree_key": "agent-systems-benchmark-native-x86-capacity"
 }
 ---
@@ -34,3 +34,5 @@ claim native aarch64 support; native aarch64 remains future work requiring separ
   User explicitly authorized existing development-host native x86_64 capacity while deferring native
   aarch64. Declared branch/worktree are absent; native capacity evidence scope is disjoint from
   active replay conformance, frontend protocol, and recovery-model work.
+
+- 2026-09-07T23:11:06+00:00: Claimed by quality_20260906.
