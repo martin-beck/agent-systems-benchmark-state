@@ -12,7 +12,7 @@
   "id": "AR-0513",
   "next_action": "Prove credential-free record/replay conformance for mini-SWE-agent with network denial and malformed/tool/cancel negatives.",
   "observed_branch": "feature/replay-miniswe",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "076e9c44810903fb42669642b5820df2f1672136",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0513.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for mini-SWE-agent.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Qualify mini-SWE replay",
-  "updated_at": "2026-09-07T18:48:20+00:00",
+  "updated_at": "2026-09-07T18:49:07+00:00",
   "worktree_key": "agent-systems-benchmark-replay-miniswe"
 }
 ---
