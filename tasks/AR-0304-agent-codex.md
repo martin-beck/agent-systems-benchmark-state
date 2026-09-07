@@ -8,7 +8,7 @@
     "AR-0102"
   ],
   "id": "AR-0304",
-  "next_action": "Await independent immutable review of c16e4864 before any push or PR; repair findings, then publish only authorized exact head and require x86_64/aarch64 CI.",
+  "next_action": "Monitor PR 24 exact head eb03bd9 x86_64/aarch64 Rust, quality/coverage/supply, and formal CI; investigate any failure and do not merge without coordinator authorization.",
   "observed_branch": "feature/agent-codex",
   "observed_dirty": 0,
   "observed_head": "eb03bd9d9ed5785458ea1bb3b990e84489a42d20",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use Codex noninteractive structured events or app-server with declared capability boundaries.",
-  "task_revision": 124,
+  "task_revision": 125,
   "title": "Implement Codex client adapter",
-  "updated_at": "2026-09-07T00:33:34+00:00",
+  "updated_at": "2026-09-07T00:33:57+00:00",
   "worktree_key": "agent-systems-benchmark-agent-codex"
 }
 ---
@@ -384,3 +384,18 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T00:33:34+00:00: Recorded command exit 0; command argv SHA-256
   e82a738174530c2e52347de54ef037aea9f7c992692270662b28fa4eeaf7839d.
+
+- 2026-09-07T00:33:57+00:00: PR 24 first published reviewed head 37a63aaf. Hosted Formal 34069803385
+  passed, but Rust 34069803358 and Repository quality 34069803372 failed because four Codex unit
+  tests used a committed hard-coded /srv test root that was unwritable on both hosted runners; same
+  EACCES caused coverage failure. Replaced the private-host test path with unique PID+nanos RAII
+  scratch. After coordinator clarified portability semantics, scratch selects canonical absolute
+  CARGO_TARGET_DIR when set and otherwise canonical std::env::temp_dir; local parallel crate tests
+  run with explicit /srv target and leave no scratch residue. Added signed+DCO commits 6a6f7cd and
+  eb03bd9; current immutable head eb03bd9d9ed5785458ea1bb3b990e84489a42d20, tree
+  91ce2586a0fe7f686cb786895b5d41c09d4394b7. Exact full workspace fmt/clippy/tests/docs/release,
+  formal tests, repository policy, aggregate coverage (95.37% workspace lines; Codex 91.53%
+  lines/91.78% functions/88.49% regions), failure fixtures, deny/audit, real pinned fixture, Python
+  strict gates, DCO/signatures/privacy/Gitleaks passed; complete five-path diff contains no /srv or
+  /home string. Pushed with exact lease from 37a63aaf. PR remains mergeable on exact base d384c4c.
+  Fresh exact-head runs queued: Rust 34070192794, quality 34070192793, formal 34070192798.
