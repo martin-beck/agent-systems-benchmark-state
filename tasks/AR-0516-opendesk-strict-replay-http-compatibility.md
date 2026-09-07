@@ -10,7 +10,7 @@
     "AR-0302"
   ],
   "id": "AR-0516",
-  "next_action": "Monitor PR #42 exact cf64758a CI; investigate any failure before repair, then serialize integration only after every exact-head job is green.",
+  "next_action": "Repair exact mutation-count oracle for the additional caught request_matches branch, rerun focused mutation fixture, sign successor, and request immutable review before lease-safe PR update.",
   "observed_branch": "feature/opendesk-strict-replay-http-compatibility",
   "observed_dirty": 0,
   "observed_head": "cf64758a6e9ed49d3eca1607fa1ea8135be700f9",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add narrowly scoped strict-replay compatibility for pinned OpenDesk traffic.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "OpenDesk strict-replay HTTP compatibility",
-  "updated_at": "2026-09-07T14:28:58+00:00",
+  "updated_at": "2026-09-07T14:32:54+00:00",
   "worktree_key": "agent-systems-benchmark-opendesk-strict-replay-http-compatibility"
 }
 ---
@@ -201,3 +201,11 @@ Acceptance requires schema/runtime parity, adversarial positives and negatives, 
   40cfa75ca195aaf13be1d5bc8025f96e5f4d3e7c, exact head cf64758a, clean mergeable PR. Exact-head runs
   started: quality 34133139622, Rust x86_64+aarch64 34133139626, formal 34133139642, fault assurance
   34133139627; all currently in progress.
+
+- 2026-09-07T14:32:54+00:00: PR #42 exact cf64758a CI investigation: Rust aarch64 job 101777820780
+  passed fmt/clippy/tests then failed before native Goose execution because the official pinned
+  archive download returned HTTP 504; x86 Rust passed. Fault job 101777820409 ran all mutants and
+  caught 7/7, then failed because run-mutation-sentinels.sh and README hard-code the prior exact
+  count 6. The added fail-closed GET dialect inequality inside request_matches creates the seventh
+  viable caught mutant. This is a narrow owned test-oracle update, not a gate weakening; record both
+  failures before mutation.
