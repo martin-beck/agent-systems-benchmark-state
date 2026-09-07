@@ -20,8 +20,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-engineering-workloads` | `feature/engineering-workloads` | `41ffc6eb8f1a` | 0 | behind 21, ahead 0 |
 | `agent-systems-benchmark-experiment-comparability` | `feature/experiment-comparability` | `eb5e84933830` | 0 | behind 31, ahead 0 |
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 85, ahead 0 |
-| `agent-systems-benchmark-fault-assurance` | `feature/fault-assurance` | `e85548d00cff` | 19 | behind 0, ahead 0 |
-| changed files | - | - | - | `.github/workflows/fault-assurance.yml`, `crates/asb-replay/tests/fault_assurance.rs`, `crates/asb-store/tests/fault_assurance.rs`, `fault-assurance/README.md`, `fault-assurance/run-mutation-sentinels.sh`, `fuzz/Cargo.lock`, `fuzz/Cargo.toml`, `fuzz/fuzz_targets/cassette_decode.rs`, `fuzz/fuzz_targets/protocol_jsonrpc.rs`, `fuzz/fuzz_targets/replay_sse.rs`, `fuzz/fuzz_targets/store_paths.rs`, `fuzz/seeds/cassette_decode/events.json`, `fuzz/seeds/cassette_decode/truncated`, `fuzz/seeds/protocol_jsonrpc/duplicate-key`, `fuzz/seeds/protocol_jsonrpc/valid-request`, `fuzz/seeds/replay_sse/event-type`, `fuzz/seeds/store_paths/absolute`, `fuzz/seeds/store_paths/parent`, `fuzz/seeds/store_paths/valid` |
+| `agent-systems-benchmark-fault-assurance` | `feature/fault-assurance` | `a13a2a805f67` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-formal-assurance` | `feature/formal-assurance` | `2a495a99a657` | 0 | behind 43, ahead 0 |
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 81, ahead 0 |
 | `agent-systems-benchmark-portable-metrics` | `feature/portable-metrics` | `a0f67bea1ffe` | 0 | behind 55, ahead 0 |

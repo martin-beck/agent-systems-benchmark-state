@@ -11,17 +11,17 @@
   "id": "AR-0902",
   "next_action": "Create focused signed DCO candidate from the clean staged scope, then run exact-commit policy/privacy/signature checks and await coordinator rebase/publication guidance.",
   "observed_branch": "feature/fault-assurance",
-  "observed_dirty": 19,
-  "observed_head": "e85548d00cffcc3a014bfbc04b8fc79c5fe35da0",
+  "observed_dirty": 0,
+  "observed_head": "a13a2a805f67772b44eb47931e9b9db175329b5d",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0902.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Add fuzz mutation and lifecycle fault campaigns",
-  "updated_at": "2026-09-07T02:22:11+00:00",
+  "updated_at": "2026-09-07T02:22:36+00:00",
   "worktree_key": "agent-systems-benchmark-fault-assurance"
 }
 ---
