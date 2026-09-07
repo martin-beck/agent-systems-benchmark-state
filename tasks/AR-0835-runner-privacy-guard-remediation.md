@@ -8,7 +8,7 @@
     "AR-0831"
   ],
   "id": "AR-0835",
-  "next_action": "Remove or narrow runner identity leakage in canary output and enforce repository/main-ref guards for every persistent-runner workflow.",
+  "next_action": "Hold exact unpublished c25e3d20d0ddf494d3a222aaf18f44e3de4c4b73 for independent immutable privacy/security review; do not dispatch either persistent-runner workflow.",
   "observed_branch": "fix/runner-canary-privacy-guards",
   "observed_dirty": 0,
   "observed_head": "c25e3d20d0ddf494d3a222aaf18f44e3de4c4b73",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remediate runner privacy leakage and protected-workflow guard gaps found during independent audit.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Remediate runner privacy and workflow guards",
-  "updated_at": "2026-09-07T08:04:43+00:00",
+  "updated_at": "2026-09-07T08:05:14+00:00",
   "worktree_key": "agent-systems-benchmark-runner-privacy-guard-remediation"
 }
 ---
@@ -110,3 +110,14 @@ Acceptance criteria:
 
 - 2026-09-07T08:04:43+00:00: Recorded command exit 0; command argv SHA-256
   aed471bc8baf74e84042e7904d4856de557c3368847a140143d0606b1be325b0.
+
+- 2026-09-07T08:05:14+00:00: Signed+DCO candidate c25e3d20d0ddf494d3a222aaf18f44e3de4c4b73 tree
+  7d35b4a9261a3f08e5f88864032c7b7e65709613 is clean and limited to five persistent-workflow,
+  routing-doc, policy, and negative-fixture paths. Both workflows now require exact repository and
+  main-ref; canary path-bearing commands execute in a fail-closed child shell with suppressed output
+  and fixed pass/fail messages. Executable success/failure fixture proves exact output and cleanup;
+  alternate-ref, fork, explicit identity, unsanitized output, widened top-level/job permissions and
+  existing routing negatives pass. Full locked workspace fmt/clippy/test/doc/release, actionlint,
+  zizmor, policy, exact-range signature/DCO/Gitleaks/scope checks pass. Documentation explicitly
+  states GitHub platform metadata may expose pseudonymous registration and machine names. Trusted
+  workflow was not dispatched.
