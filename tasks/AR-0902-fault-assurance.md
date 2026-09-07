@@ -9,7 +9,7 @@
     "AR-0503"
   ],
   "id": "AR-0902",
-  "next_action": "Await coordinator instruction for one controlled rebase onto current signed product main, then rerun affected exact-tree gates and independent immutable review before publication.",
+  "next_action": "Hold unpublished signed+DCO candidate ad00e8b1ea1607043eea9bfe6d86d8d4828abe92 for independent immutable review; publish only after approval and exact-head hosted fault/full CI.",
   "observed_branch": "feature/fault-assurance",
   "observed_dirty": 0,
   "observed_head": "ad00e8b1ea1607043eea9bfe6d86d8d4828abe92",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Add fuzz mutation and lifecycle fault campaigns",
-  "updated_at": "2026-09-07T02:39:02+00:00",
+  "updated_at": "2026-09-07T02:39:24+00:00",
   "worktree_key": "agent-systems-benchmark-fault-assurance"
 }
 ---
@@ -254,3 +254,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T02:39:02+00:00: Recorded command exit 0; command argv SHA-256
   3f445927c05aac0b6b33a340fa938f3f1e1f6338cda442c6877a701f023554a9.
+
+- 2026-09-07T02:39:24+00:00: Superseded 68ecb4e with focused signed+DCO hygiene repair ad00e8b:
+  crash child now runs inside its owned scratch root and writes an asserted cwd proof; cargo-fuzz
+  0.13.2 help was inspected and has no --locked option, so bounded fuzz performs cargo metadata
+  --locked preflight plus lock checksum verification, external target placement, git diff and status
+  cleanliness; README now says all six mutation sentinels. Focused store fault 3/3, workspace
+  fmt/clippy/test/docs/release, coverage 91.81% regions and 94.87% lines with configured critical
+  floors, deny/audit, formal tests, failure fixtures, platform validator/tests, actionlint, offline
+  zizmor, repository policy, signatures/DCO, exact-range Gitleaks, scope and clean tree passed.
+  Initial focused compile failed only because the new external TMPDIR was absent and passed after
+  wrapped creation. Local offline fuzz metadata remains unable to fetch uncached target-specific
+  getrandom 0.4.3; no network was used and hosted online locked preflight is the publication proof
+  gate.
