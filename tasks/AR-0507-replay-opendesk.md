@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-opendesk",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T16:25:23+00:00",
+  "claim_expires": "2026-09-07T17:53:42+00:00",
   "depends_on": [
     "AR-0302",
     "AR-0503",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenDesk.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Qualify OpenDesk replay",
-  "updated_at": "2026-09-07T14:53:35+00:00",
+  "updated_at": "2026-09-07T14:53:42+00:00",
   "worktree_key": "agent-systems-benchmark-replay-opendesk"
 }
 ---
@@ -291,3 +291,5 @@ Qualify OpenDesk record/replay, network denial, parity, retries, tool calls, can
 
 - 2026-09-07T14:53:35+00:00: Recorded command exit 1; command argv SHA-256
   136b3c022223f6141b59f5ac77158c58e8f8d7a9f9d3ddc7f5478f06903040de.
+
+- 2026-09-07T14:53:42+00:00: Heartbeat by replay_20260906.
