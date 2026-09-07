@@ -2,7 +2,7 @@
 {
   "branch": "feature/gemini-generate-content-replay",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T18:58:09+00:00",
+  "claim_expires": "2026-09-07T18:19:03+00:00",
   "depends_on": [
     "AR-0502",
     "AR-0503",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add strict replay support for Gemini GenerateContent SSE traffic.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Gemini GenerateContent strict-replay dialect",
-  "updated_at": "2026-09-07T16:49:00+00:00",
+  "updated_at": "2026-09-07T16:49:03+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-generate-content-replay"
 }
 ---
@@ -158,3 +158,5 @@ Require schema/runtime parity, focused and adversarial tests, fuzz/mutation/form
   gemini_generate_content 8, schema_conformance 3, strict_replay 19; git diff --check green. Earlier
   patch/hash/context/cargo-path failures occurred before or were followed by the intended product
   effect and remain named in command ledger. Full/formal/coverage/privacy gates remain.
+
+- 2026-09-07T16:49:03+00:00: Heartbeat by replay_20260906.
