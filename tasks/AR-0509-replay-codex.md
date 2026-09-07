@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-codex",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T19:07:04+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0304",
     "AR-0503",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/replay-codex",
   "observed_dirty": 0,
   "observed_head": "d086fec11f5959c1ad873efaa5380e290973d273",
-  "owner": "contracts_20260906",
+  "owner": "",
   "plan": "../plans/AR-0509.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Qualify replay conformance for Codex.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "Qualify Codex replay",
-  "updated_at": "2026-09-07T16:25:14+00:00",
+  "updated_at": "2026-09-07T16:26:59+00:00",
   "worktree_key": "agent-systems-benchmark-replay-codex"
 }
 ---
@@ -260,3 +260,13 @@ Qualify Codex record/replay, network denial, parity, retries, tool calls, cancel
 
 - 2026-09-07T16:25:14+00:00: Recorded command exit 0; command argv SHA-256
   6c45992e03f756f750f1b345eaf172cfc7685c5ea463b4bbb631ccabbd0f9578.
+
+- 2026-09-07T16:26:59+00:00: AR-0509 complete: independently approved exact candidate d086fec merged
+  by SSH-signed+DCO no-ff commit b56768a550fb293650dd29ab793460e0277ffb8d in PR #45. Exact-head runs
+  green: Rust 34142644584 x86_64/aarch64, Fault 34142644602, Formal 34142644656, Quality
+  34142644831. Exact-main runs green: Quality 34142961259, Rust 34142961325 x86_64/aarch64, Formal
+  34142961362, Fault 34142961288. Postmerge malformed cassette negative and real pinned Codex
+  0.153.4 loopback capture/replay passed with bounded one-500 retry, tool/result causality, grade
+  parity, paced cancellation, privacy redaction markers, network denial and zero state residuals.
+  Pinned Codex intentionally does not retry 429; stream retry remains disabled. Linux x86_64
+  pinned-artifact native qualification only; no live provider credentials/private recordings.
