@@ -512,7 +512,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0305](tasks/AR-0305-agent-gemini.md): Implement Gemini CLI client adapter | contracts-20260906 | Run pinned Gemini CLI through noninteractive JSON events. | Await serialized lib.rs registration handoff, then rebase once onto stabilized exact main and rerun registered-module full gates. |
 | P1 | [AR-0307](tasks/AR-0307-agent-goose.md): Implement goose client adapter | quality-20260906 | Run pinned AAIF goose in no-session structured mode. | Await explicit AR-0304 release transfer of the additive lib.rs/CI fence; then rebase onto exact current main, compile, run pinned x86_64/aarch64 native success/failure/cancellation journeys, and full gates. |
-| P1 | [AR-0801](tasks/AR-0801-terminal-interface.md): Implement terminal and automation interfaces | root-coordination-20260906 | Provide doctor, plan, run, sweep, compare and report with stable JSON output. | Build planned commands around public library interfaces. |
+| P1 | [AR-0801](tasks/AR-0801-terminal-interface.md): Implement terminal and automation interfaces | root-coordination-20260906 | Provide doctor, plan, run, sweep, compare and report with stable JSON output. | Audit public library seams and implement honest doctor/plan/run/sweep/compare/report boundaries with stable JSON, meaningful exits, cancellation and PTY tests. |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | replay-20260906 | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Add focused parser/config/cancellation tests and a credential-free loopback real-package fixture; repair any native findings before requesting the shared module-registration fence. |
 
 ### Planned (49)
