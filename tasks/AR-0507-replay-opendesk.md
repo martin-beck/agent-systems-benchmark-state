@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-opendesk",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T15:45:14+00:00",
+  "claim_expires": "2026-09-07T16:25:23+00:00",
   "depends_on": [
     "AR-0302",
     "AR-0503",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenDesk.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Qualify OpenDesk replay",
-  "updated_at": "2026-09-07T13:24:50+00:00",
+  "updated_at": "2026-09-07T13:25:23+00:00",
   "worktree_key": "agent-systems-benchmark-replay-opendesk"
 }
 ---
@@ -263,3 +263,5 @@ Qualify OpenDesk record/replay, network denial, parity, retries, tool calls, can
   schema_conformance.rs, strict_replay.rs. The isolated test scratch no longer contains a committed
   host path and unrelated OpenCode redaction selectors were removed. No shared runtime/schema was
   changed and support remains blocked.
+
+- 2026-09-07T13:25:23+00:00: Heartbeat by replay_20260906.
