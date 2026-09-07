@@ -18,11 +18,11 @@
   "plan": "../plans/AR-0505.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Test each actual client through recording and offline replay of engineering tasks.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Prove real-agent replay conformance",
-  "updated_at": "2026-09-06T15:04:54+00:00",
+  "updated_at": "2026-09-07T21:48:29+00:00",
   "worktree_key": "agent-systems-benchmark-agent-replay-conformance"
 }
 ---
@@ -31,3 +31,7 @@
 Test each actual client through recording and offline replay of engineering tasks.
 
 Implementation has not started. Read the linked plan before claiming.
+
+- 2026-09-07T21:48:29+00:00: Verified all seven dependencies are durably done; selected
+  highest-priority ready task. Owned replay integration tests are disjoint from active AR-0847
+  frontend-control, AR-0707 platform-emulation, and AR-0840 protocol-contract fences.

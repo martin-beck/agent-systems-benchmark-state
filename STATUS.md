@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**120 ARs tracked** across 4 active status categories.
+**120 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
-| **Planned** | Defined work awaiting promotion or dependencies | 60 |
+| **Planned** | Defined work awaiting promotion or dependencies | 59 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 53 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -84,7 +84,7 @@ flowchart LR
         AR_0502["AR-0502 - Done"]:::status_done
         AR_0503["AR-0503 - Done"]:::status_done
         AR_0504["AR-0504 - Done"]:::status_done
-        AR_0505["AR-0505 - Planned"]:::status_planned
+        AR_0505["AR-0505 - Open"]:::status_open
         AR_0506["AR-0506 - Done"]:::status_done
         AR_0507["AR-0507 - Done"]:::status_done
         AR_0508["AR-0508 - Done"]:::status_done
@@ -723,6 +723,12 @@ flowchart LR
 | P1 | [AR-0707](tasks/AR-0707-emulated-aarch64-portability.md): Qualify emulated aarch64 portability | quality_20260906 | Add explicit emulated-aarch64 portability qualification without claiming native support. | Provide a reproducible x86_64-hosted aarch64 VM/emulation lane for userspace portability and negative qualification only. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0505](tasks/AR-0505-agent-replay-conformance.md): Prove real-agent replay conformance | Unclaimed | Test each actual client through recording and offline replay of engineering tasks. | Build production-boundary integration matrix using synthetic upstream service. |
+
 ### Blocked (4)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -732,7 +738,7 @@ flowchart LR
 | P1 | [AR-0703](tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Provide genuine disposable native hosts for required Debian and openEuler platform qualification. | Obtain explicit provider/account and cost authorization, least-privilege external credentials, quotas, and four genuine disposable Debian 13.6/openEuler 24.03 LTS-SP2 x86_64/aarch64 hosts; then implement reservation/provision/collect/destroy evidence without emulation. |
 | P1 | [AR-0803](tasks/AR-0803-frontend-control-api.md): Define the frontend control API | Unclaimed | Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary. | Await fresh independent immutable review of repaired exact cbb764c; publish only if all prior blockers and new concurrency/privacy semantics are approved. |
 
-### Planned (60)
+### Planned (59)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -745,7 +751,6 @@ flowchart LR
 | P1 | [AR-0314](tasks/AR-0314-recording-source-choice.md): Choose matching replay or live provider execution | Unclaimed | Offer matching prior recordings or an actual provider connection without silently choosing either. | Index compatible recordings and require an explicit replay-versus-live source choice. |
 | P1 | [AR-0315](tasks/AR-0315-provider-parity-conformance.md): Verify cross-agent provider parity | Unclaimed | Conformance-test identical OpenAI and Ollama profiles across the complete supported-agent matrix. | Prove provider-setting parity and replay/live selection across every supported agent. |
 | P1 | [AR-0316](tasks/AR-0316-agent-runtime-bundles.md): Publish reproducible agent runtime bundles | Unclaimed | Make supported agent installations reproducible, license-audited, SBOM-backed, and independently verifiable. | Define content-addressed offline runtime manifests for every supported agent and its complete transitive environment. |
-| P1 | [AR-0505](tasks/AR-0505-agent-replay-conformance.md): Prove real-agent replay conformance | Unclaimed | Test each actual client through recording and offline replay of engineering tasks. | Build production-boundary integration matrix using synthetic upstream service. |
 | P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native CSB monitoring, kernel-contention evidence, collector overhead, loss semantics, and platform support before integration. | Build the exact CSB-to-ASB signal inventory and causal native A/B qualification matrix. |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | Define authorized reservation, provisioning, teardown, privacy, cost, and evidence control for genuine native cells. |
 | P1 | [AR-0705](tasks/AR-0705-native-debian-capacity.md): Provide native Debian capacity | Unclaimed | Provide genuine Debian native qualification cells. | Provision and qualify genuine booted Debian x86_64 and aarch64 cells with cleanup and provenance. |
