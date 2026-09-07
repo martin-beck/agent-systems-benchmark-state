@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0830",
-  "next_action": "Obtain independent review of exact cdf18c6; live service identity, one-job ephemeral re-registration, protected canary and GitHub-side label proof remain gated on an authorized secret/admin boundary.",
+  "next_action": "Independently review exact 6518802. If locally approved, provision the dedicated service and protected manual canary only after an authorized secret/admin registration boundary is supplied.",
   "observed_branch": "feature/development-host-runner-capacity",
   "observed_dirty": 0,
   "observed_head": "6518802f1728370e0553986285925eedffc70f36",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T06:02:07+00:00",
+  "updated_at": "2026-09-07T06:02:24+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
@@ -195,3 +195,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T06:02:07+00:00: Recorded command exit 0; command argv SHA-256
   3ce463cf84aea83aff863c3f9101497a259296258ed37afe0216b6daa63ca688.
+
+- 2026-09-07T06:02:24+00:00: Signed+DCO successor 6518802f1728370e0553986285925eedffc70f36 closes
+  the namespace-permission finding: runner parent and existing root must be owned by the executing
+  service identity and mode 0700. Focused tests now use a unique RAII-cleaned storage root below
+  /srv/data/projects/.asb-local, with a fixed validated cleanup target even after environment
+  changes. Removed only the previously test-created /srv/data/projects/asb-ci-runners after
+  verifying it was a non-symlink empty directory. Wrapper-run syntax, focused suite, before/after
+  fixture residue equality, diff/privacy checks and forbidden old-parent absence all passed; clean
+  worktree.
