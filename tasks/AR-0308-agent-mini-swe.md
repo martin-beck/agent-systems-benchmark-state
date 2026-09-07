@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0308",
-  "next_action": "Repair immutable-review blockers: verified immutable Python and wheel launch copies, bounded pre-mutation correlation IDs, complete pinned Python graph/product verification, and dotenv isolation; then full gates and replacement signed DCO commit.",
+  "next_action": "Commit the independently blocked repair as a focused SSH-signed DCO successor, run commit-scoped privacy/signature/scope checks, and request immutable review; do not publish.",
   "observed_branch": "feature/agent-mini-swe",
   "observed_dirty": 3,
   "observed_head": "43683ff13baa7343e0edb5333a4fc6c4304a3bcd",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned mini-SWE-agent as a bounded batch engineering agent.",
-  "task_revision": 187,
+  "task_revision": 188,
   "title": "Implement mini-SWE-agent client adapter",
-  "updated_at": "2026-09-07T04:22:00+00:00",
+  "updated_at": "2026-09-07T04:22:20+00:00",
   "worktree_key": "agent-systems-benchmark-agent-mini-swe"
 }
 ---
@@ -619,3 +619,34 @@ Implementation has not started. Read the linked plan before claiming.
   2df3286e13ca12dad4173068a0f7421078b74c412b4ac02d7ad1b9985a017e30.
 
 - 2026-09-07T04:22:00+00:00: Heartbeat by replay-20260906.
+
+- 2026-09-07T04:22:20+00:00: AR-0308 immutable-review repair is implemented in the three owned paths
+  and rebased onto exact current product main 814397f; the original signed+DCO commit replayed as
+  43683ff with exact-equals range-diff. The adapter now validates nonempty control-free correlation
+  IDs through 4 KiB before effects; verifies an exact 78-distribution, 22,252-regular-file,
+  566,258,972-byte product-tested Python environment with path/length-framed SHA-256
+  e67bf3c72123ab751ddf632d62321189b4b62191289d443e6ff02cbeed2d6aa5; privately stages and re-verifies
+  Python, wheel and bounded dependency files before launch; sets PYTHON_DOTENV_DISABLED=1 with
+  cleared private config; and tests hostile dotenv plus post-start replacement of configured
+  Python/wheel. Meaningful negatives cover dependency content/version/symlink/file-size changes,
+  metadata normalization/duplicates/malformed names/duplicate normalized distributions/metadata
+  size, and public identity pre-effect rejection. Investigated failures: per-file fsync made the
+  first native preparation exceed the fixture acceptance window before provider contact, so
+  ephemeral dependency copies retain whole-tree re-verification but not per-file fsync; making the
+  launch directory read-only prevented owned cleanup and was reverted while copied files remain mode
+  0500/0400 under mode-0700 state; two focused compiler runs failed only from incomplete
+  project-local PATH scoping and passed after corrected export; an inspection import omitted config
+  isolation and revealed only that ambient discovery was possible, with no contents retained, so
+  product tests now prove isolation is established before import. Final focused mini-SWE tests 18/18
+  and Clippy pass; pinned 2.4.6 credential-free native loopback edit+cancellation with hostile
+  workspace dotenv passes; mini_swe.rs coverage is 95.14% lines and 91.46% regions with no LLVM
+  branch denominator; workspace coverage is 94.43% lines and critical floors pass. Exact-tree fmt,
+  workspace Clippy/tests/docs/release, cargo-deny/audit, actionlint/zizmor, controlled failure
+  fixtures, platform validation, formal Loom/state/production tests and five Kani proofs pass;
+  deliberate Kani counterexample fails as required, log SHA-256
+  7bfb799b89dd77e88b42552927b8cc9e83b09d6ae45965716bfd5e3225155493. First Kani proof invocation
+  lacked KANI_HOME/cargo discovery after formal Rust tests passed; corrected project-local KANI_HOME
+  proof passed. Residual limits remain explicit: unsigned upstream tag, ASB product-bound graph
+  rather than upstream reproducible lock, wheel extraction/package-data dependency, 566 MB staging
+  cost per attempt, native x86_64 only, no streaming/subscription/resume/replay, and network/process
+  hard containment delegated to sandbox/cgroup.
