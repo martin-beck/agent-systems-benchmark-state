@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Exercise native x86_64 and aarch64 including booted openEuler kernels.",
-  "task_revision": 111,
+  "task_revision": 112,
   "title": "Validate native Linux kernels and architectures",
-  "updated_at": "2026-09-07T03:55:39+00:00",
+  "updated_at": "2026-09-07T03:56:03+00:00",
   "worktree_key": "agent-systems-benchmark-native-platforms"
 }
 ---
@@ -336,3 +336,6 @@ Implementation has not started. Read the linked plan before claiming.
   it was renamed/rehashed before commit, then snapshot/live doctor passed. Ubuntu x86 native_kernel
   alone is promoted; user-space and aarch64 remain planned. AR-0703 remains the formal external
   capacity blocker for booted Debian/openEuler four-cell qualification.
+
+- 2026-09-07T03:56:03+00:00: Recorded command exit 0; command argv SHA-256
+  cb929cf5d395b2218455ff0e8db11b3686dfaf2379366381348f1d43c245f988.
