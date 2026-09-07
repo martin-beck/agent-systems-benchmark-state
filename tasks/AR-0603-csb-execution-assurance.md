@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T08:49:22+00:00",
+  "updated_at": "2026-09-07T08:49:39+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
@@ -147,3 +147,6 @@ Implementation has not started. Read the linked plan before claiming.
   cargo was absent from the wrapped PATH. Product worktree content did not change; disposable mirror
   remains under /srv/data/projects/.asb-local. Retry once with explicit
   /srv/data/projects/.asb-local/cargo/bin/cargo and pinned CARGO_HOME/RUSTUP_HOME.
+
+- 2026-09-07T08:49:39+00:00: Recorded command exit 101; command argv SHA-256
+  5119c32d316a7bda8d1d4c1f81377e487e3b29b09545a943bf2ddd7c33043957.
