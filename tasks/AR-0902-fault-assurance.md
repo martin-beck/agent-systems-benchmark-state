@@ -9,7 +9,7 @@
     "AR-0503"
   ],
   "id": "AR-0902",
-  "next_action": "Build bounded campaigns and counterexample retention.",
+  "next_action": "Design bounded fuzz/fault targets in new owned paths; coordinate dedicated workflow path with AR-0307 before any workflow edit.",
   "observed_branch": "feature/fault-assurance",
   "observed_dirty": 0,
   "observed_head": "e85548d00cffcc3a014bfbc04b8fc79c5fe35da0",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Add fuzz mutation and lifecycle fault campaigns",
-  "updated_at": "2026-09-07T01:50:14+00:00",
+  "updated_at": "2026-09-07T01:50:27+00:00",
   "worktree_key": "agent-systems-benchmark-fault-assurance"
 }
 ---
@@ -41,3 +41,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T01:50:14+00:00: Recorded command exit 0; command argv SHA-256
   9e6176fef0338084555f6e038c7a58f8f9d802b950b675780d3496a1eee59ccc.
+
+- 2026-09-07T01:50:27+00:00: Claimed AR-0902 after signed+DCO promotion e04bdbb and created clean
+  declared feature/fault-assurance worktree at exact product main e85548d. Exclusive fence before
+  mutation: new fuzz targets, fault tests and a dedicated scheduled workflow only. No asb-cli paths,
+  asb-agents/lib.rs, Goose or mini-SWE files; shared Cargo/workspace/schema remains
+  coordinator-serialized. Workflow overlap must be acknowledged by AR-0307 before editing.
