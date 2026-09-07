@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0305",
-  "next_action": "Await independent immutable review of exact 662603b; publish only after approval, then require exact-head hosted CI.",
+  "next_action": "Await independent immutable review of repaired exact d381d34; publish only after approval, then require exact-head hosted CI.",
   "observed_branch": "feature/agent-gemini",
   "observed_dirty": 0,
   "observed_head": "d381d340163eec8c2051949f9f0c2e31789f25a4",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned Gemini CLI through noninteractive JSON events.",
-  "task_revision": 155,
+  "task_revision": 156,
   "title": "Implement Gemini CLI client adapter",
-  "updated_at": "2026-09-07T01:39:37+00:00",
+  "updated_at": "2026-09-07T01:39:55+00:00",
   "worktree_key": "agent-systems-benchmark-agent-gemini"
 }
 ---
@@ -484,3 +484,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T01:39:37+00:00: Recorded command exit 0; command argv SHA-256
   93d0fc0d719670fdb98fc5acee4d238fdbd05db8deee94ee7b79a8ebe98ffaad.
+
+- 2026-09-07T01:39:55+00:00: Superseded blocked 662603b with clean signed+DCO
+  d381d340163eec8c2051949f9f0c2e31789f25a4 tree 26358fa12b09cb60efb14d02e454769c08e42aba on
+  unchanged exact b79534b. Repairs: checked per-model aggregate usage and positive completed tokens;
+  fail-before-mutation no-symlink canonical root topology and disjoint workspace/state; private
+  redirected system settings/defaults plus fail-closed fixed /etc policy/config preflight; exact
+  public sentinel/no Authorization/cookie assertions at every native request; removed false
+  StreamingEvents capability. Exact gates green: 10 module, 1 public boundary, 4 real pinned tests,
+  workspace/clippy/docs/release/formal, aggregate 94.83% and Gemini 92.63% line coverage,
+  deny/audit/analyzers/negative fixtures/platform, policy/Gitleaks/privacy/signature/DCO/clean
+  scope. Recorded two procedural failures: first focused coverage invocation misplaced the test
+  filter; first exact validation used an incorrectly expanded abbreviated candidate hash. Neither
+  mutated product; corrected commands passed.
