@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0308",
-  "next_action": "Repair immutable-config selection, root overlap, submission proof, causal-ID privacy and loopback auth blockers; rerun focused/full gates before replacement candidate.",
+  "next_action": "Await independent immutable review of exact replacement candidate 0030358074c1acb92aad10d683208b243d9a6ad7/tree f3cc91544d7472c7ded1cfcd83a3d4c04d84012a; do not publish without coordinator authorization.",
   "observed_branch": "feature/agent-mini-swe",
   "observed_dirty": 0,
   "observed_head": "0030358074c1acb92aad10d683208b243d9a6ad7",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned mini-SWE-agent as a bounded batch engineering agent.",
-  "task_revision": 239,
+  "task_revision": 240,
   "title": "Implement mini-SWE-agent client adapter",
-  "updated_at": "2026-09-07T04:51:33+00:00",
+  "updated_at": "2026-09-07T04:51:55+00:00",
   "worktree_key": "agent-systems-benchmark-agent-mini-swe"
 }
 ---
@@ -804,3 +804,17 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T04:51:33+00:00: Recorded command exit 0; command argv SHA-256
   4e69af0e41aae2def31d87afd0bf68493ec63a149ba2e5dae290fca4896db0fa.
+
+- 2026-09-07T04:51:55+00:00: Replacement repair is signed+DCO commit
+  0030358074c1acb92aad10d683208b243d9a6ad7, tree f3cc91544d7472c7ded1cfcd83a3d4c04d84012a, parent
+  d6bd4bca. It loads the exact private extracted builtin config, rejects normalized workspace/state
+  overlap before mutation, requires the exact pending submission command, remaps bounded raw tool
+  IDs to opaque causal IDs, and asserts the exact public loopback Bearer sentinel against hostile
+  workspace dotenv/config. Docs now disclose ambient /usr stdlib and native ABI/libs. Focused 19
+  tests, 91-test agent suite, real pinned 2.4.6 edit+cancellation journey, full fmt/clippy/workspace
+  tests/docs/release, formal tests, five Kani proofs plus deliberate failure, Cargo Deny/audit,
+  actionlint/zizmor/failure fixtures, repository policy, DCO/signatures and range Gitleaks pass.
+  mini_swe.rs line coverage is 95.90%; workspace 94.48%, protocol 98.44%, replay 97.60%, core 100%.
+  Initial formal and negative-suite invocations failed because sanitized PATH/Kani home selected
+  missing or ambient tools; reruns with explicit pinned /srv Cargo/Rustup/Kani homes passed.
+  Worktree is clean and unpublished.
