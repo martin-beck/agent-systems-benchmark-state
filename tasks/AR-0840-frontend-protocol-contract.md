@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the stable frontend control protocol contract.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Define frontend protocol contract",
-  "updated_at": "2026-09-07T21:27:57+00:00",
+  "updated_at": "2026-09-07T22:37:44+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-protocol-contract"
 }
 ---
@@ -98,4 +98,7 @@ compatibility rules, bounded errors, and generated consistency checks.
   3bdd1788a518fa934174d0d0bca8e7fa9320780caa4767f0fe4a03d45ed6fdf3.
 
 - 2026-09-07T21:27:57+00:00: Recorded command exit 0; command argv SHA-256
+  eaf2472e4b0ec29bac3303a6d46474c99be3c0ab077feca87b1c3650d4745e53.
+
+- 2026-09-07T22:37:44+00:00: Recorded command exit 0; command argv SHA-256
   eaf2472e4b0ec29bac3303a6d46474c99be3c0ab077feca87b1c3650d4745e53.
