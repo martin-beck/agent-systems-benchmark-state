@@ -9,7 +9,7 @@
     "AR-0204"
   ],
   "id": "AR-0801",
-  "next_action": "Monitor PR #29 exact head d2e7b66 across quality run 34077451955, Rust/native run 34077451953, and formal run 34077451932; investigate any failure and integrate only immutable reviewed green head.",
+  "next_action": "Await PR #29 exact-head quality run 34077451955; Rust/native run 34077451953 and formal run 34077451932 are green on both x86_64 and aarch64. Integrate only if remaining quality gate is green and immutable head remains d2e7b66.",
   "observed_branch": "feature/terminal-interface",
   "observed_dirty": 0,
   "observed_head": "d2e7b66ff6af1f9f5924ab40c2a6cff74a6ba7f4",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide doctor, plan, run, sweep, compare and report with stable JSON output.",
-  "task_revision": 177,
+  "task_revision": 178,
   "title": "Implement terminal and automation interfaces",
-  "updated_at": "2026-09-07T02:48:03+00:00",
+  "updated_at": "2026-09-07T02:49:45+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-interface"
 }
 ---
@@ -560,3 +560,8 @@ Implementation has not started. Read the linked plan before claiming.
   product PR #29 against exact base e85548d. Remote feature ref and PR head equal d2e7b66; GitHub
   reports MERGEABLE. Exact-head quality 34077451955, Rust x86_64/aarch64 34077451953, and formal
   Kani plus Loom x86_64/aarch64 34077451932 are in progress.
+
+- 2026-09-07T02:49:45+00:00: PR #29 transition at exact d2e7b66: Rust verification 34077451953
+  succeeded on ubuntu-24.04 x86_64 and ubuntu-24.04-arm; formal 34077451932 succeeded for Kani and
+  Loom/state-model jobs on both architectures. Repository quality 34077451955 remains in progress;
+  PR is mergeable but correctly UNSTABLE until it finishes.
