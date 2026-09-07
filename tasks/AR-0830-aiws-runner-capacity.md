@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T06:01:01+00:00",
+  "updated_at": "2026-09-07T06:01:03+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
@@ -177,3 +177,6 @@ Implementation has not started. Read the linked plan before claiming.
   check, privacy scan, worktree residue and forbidden /srv/data/asb-ci-runners absence checks
   passed. Live registration remains unattempted because no authorized registration token/admin
   boundary is available.
+
+- 2026-09-07T06:01:03+00:00: Recorded command exit 0; command argv SHA-256
+  a508f868166d6884c4fe9f1613affbc839a82243e714b8e4615f5ade482e6437.
