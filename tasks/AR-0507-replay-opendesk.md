@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenDesk.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Qualify OpenDesk replay",
-  "updated_at": "2026-09-07T12:46:44+00:00",
+  "updated_at": "2026-09-07T12:46:48+00:00",
   "worktree_key": "agent-systems-benchmark-replay-opendesk"
 }
 ---
@@ -34,3 +34,6 @@ Qualify OpenDesk record/replay, network denial, parity, retries, tool calls, can
   AR-0504, and AR-0401 are complete; AR-0308 has been released.
 
 - 2026-09-07T12:45:14+00:00: Claimed by replay_20260906.
+
+- 2026-09-07T12:46:48+00:00: Recorded command exit 0; command argv SHA-256
+  160eb49af6458ee7e4fc8c9b2fabdfc43fd3816ebd6c2dfdf1825e1b2189df2f.
