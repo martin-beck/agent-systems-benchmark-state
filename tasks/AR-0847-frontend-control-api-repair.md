@@ -10,7 +10,7 @@
     "AR-0801"
   ],
   "id": "AR-0847",
-  "next_action": "Repair the AR-0803 frontend control candidate's five immutable-review findings, then qualify the repaired API and transfer the reviewed result back to AR-0803.",
+  "next_action": "Independent immutable review of bcb4f8643b309f46f0b93eeb3a66ef98e4d30586; publish only after approval.",
   "observed_branch": "feature/frontend-control-api-repair",
   "observed_dirty": 0,
   "observed_head": "bcb4f8643b309f46f0b93eeb3a66ef98e4d30586",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and independently qualify the blocked frontend control API candidate.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Frontend control API repair",
-  "updated_at": "2026-09-07T21:49:23+00:00",
+  "updated_at": "2026-09-07T21:50:01+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api-repair"
 }
 ---
@@ -196,3 +196,19 @@ Repair the blocked AR-0803 candidate without mutating its dirty worktree in plac
 
 - 2026-09-07T21:49:23+00:00: Recorded command exit 0; command argv SHA-256
   9d2c5026833cc968e9a37fd7e93f7b10bc881bc5999cfeef116f33c235fa93c2.
+
+- 2026-09-07T21:50:01+00:00: Candidate bcb4f8643b309f46f0b93eeb3a66ef98e4d30586 (tree
+  bf4945643e78d1b11f926b1eaf419839c1b4d3ad, exact base 5a819633552f5d59885bc23c5e5127b1f131c102) is
+  one focused 30-path SSH-signed Martin DCO commit. Repairs bind durable plan/run/attempt/event
+  evidence, gate runner start until durable Running commit, enforce absolute mutation
+  deadlines/no-late-effect checks, and make SettingsValidation schema/runtime parity explicit.
+  Focused control/CLI tests, parallel lifecycle tests, full workspace test/clippy/fmt/docs/release,
+  formal model tests, Kani 6/6 plus failing negative, coverage floors, cargo-deny/audit, repository
+  policy, failure fixtures, actionlint/zizmor, Gitleaks, bounded four-target fuzz 256 each, and
+  mutation 7/7 are green. Recorded failures were environmental/tooling or assertion corrections:
+  cargo was initially absent from PATH; formal lock required offline regeneration; Kani needed
+  declared tool homes; fuzz created its documented disposable artifacts directory then all 4 targets
+  passed and the exact directory was removed; two immutable scope commands used incorrect local
+  script/regex names and were corrected without product changes. Exact diff-check, signature/DCO,
+  30-path scope, no private-host paths, clean worktree, and preservation hash of the original
+  AR-0803 dirty worktree are verified. No publication yet.
