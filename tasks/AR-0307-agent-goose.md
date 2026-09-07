@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0307",
-  "next_action": "Monitor and inspect exact-head PR #27 runs 34076974004 quality, 34076974034 Rust/native x86_64+aarch64, and 34076974032 formal; repair failures before any integration.",
+  "next_action": "Await independent immutable review of signed successor 95b3ef8c78301d36af30694571e8a1c9a8965e89, then update PR #27 only with exact old-head lease and require fresh exact-head quality, Rust/native x86_64+aarch64, and formal CI.",
   "observed_branch": "feature/agent-goose",
   "observed_dirty": 0,
   "observed_head": "95b3ef8c78301d36af30694571e8a1c9a8965e89",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned AAIF goose in no-session structured mode.",
-  "task_revision": 223,
+  "task_revision": 224,
   "title": "Implement goose client adapter",
-  "updated_at": "2026-09-07T02:47:50+00:00",
+  "updated_at": "2026-09-07T02:48:06+00:00",
   "worktree_key": "agent-systems-benchmark-agent-goose"
 }
 ---
@@ -711,3 +711,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T02:47:50+00:00: Recorded command exit 0; command argv SHA-256
   034ad12ecaaa638e22d70534c6fec192ec8f5af3eebf81eaf38ad328b05dc3ee.
+
+- 2026-09-07T02:48:06+00:00: Investigated PR #27 exact-head failures before mutation: quality
+  34076974004 and both Rust/native cells 34076974034 shared one root, six Goose tests panicked
+  because hosted jobs omit CARGO_TARGET_DIR; formal 34076974032 was green. Repaired only Goose test
+  infrastructure at signed+DCO 95b3ef8c78301d36af30694571e8a1c9a8965e89 tree
+  84d74336d738d58edb6cd8179795a51763c2b70f: configured external targets remain honored; absent env
+  uses canonical TMPDIR with PID+nanosecond+atomic nonce and RAII cleanup. Proved env-absent focused
+  Goose 17/17, pinned native x86 journey, and full coverage (asb-agents 72/72; configured
+  workspace/critical floors), plus exact fmt, workspace clippy, actionlint, zizmor, repository
+  policy, Gitleaks and all deliberate failure fixtures. One validation command guessed an incorrect
+  full commit suffix and failed at revision parsing with no mutation; corrected against git
+  rev-parse. Branch is clean; origin feature remains 08feca551df73dbca9e4be23d82d64018fe95d1e
+  pending review.
