@@ -36,4 +36,4 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `3bcfd85dedd3` | 0 | behind 65, ahead 0 |
 | `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `410ecc95b80e` | 0 | behind 53, ahead 0 |
 | `agent-systems-benchmark-terminal-interface` | `feature/terminal-interface` | `b79534b627e2` | 5 | behind 2, ahead 0 |
-| changed files | - | - | - | `Cargo.lock`, `crates/asb-cli/Cargo.toml`, `crates/asb-cli/src/main.rs`, `crates/asb-cli/src/lib.rs`, `crates/asb-cli/tests/` |
+| changed files | - | - | - | `Cargo.lock`, `crates/asb-cli/Cargo.toml`, `crates/asb-cli/src/lib.rs`, `crates/asb-cli/src/main.rs`, `crates/asb-cli/tests/cli_e2e.rs` |
