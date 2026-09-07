@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0830",
-  "next_action": "Inventory development-host capacity read-only, then implement a no-default-label, pseudonymous, prequalification-only runner entirely beneath the configured /srv/data/projects storage root without modifying Relay services.",
+  "next_action": "Harden reset against concurrent path substitution, add service registration and lifecycle controls, and extend lease/isolation/fault negatives before immutable review.",
   "observed_branch": "feature/development-host-runner-capacity",
   "observed_dirty": 0,
   "observed_head": "7c7f1e0f711398907c2094d92357f7196154d03f",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T05:52:02+00:00",
+  "updated_at": "2026-09-07T05:52:31+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
@@ -100,3 +100,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T05:52:02+00:00: Recorded command exit 0; command argv SHA-256
   67f37f4e768534fc9bda5727eaaf625b4edc85bbbc059dcb20575b589da091db.
+
+- 2026-09-07T05:52:31+00:00: Focused signed+DCO product checkpoint
+  7c7f1e0f711398907c2094d92357f7196154d03f adds isolated setup, health, reset and runner-script
+  tests. Wrapper-run sh -n, positive health/reset, symlink rejection, expired-lease rejection,
+  generic-label rejection, source privacy grep, and repository core-residue check passed. Worktree
+  is clean; ShellCheck and shfmt remain unavailable on the host and must be addressed by pinned CI
+  or explicit tooling provision.
