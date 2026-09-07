@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0306",
-  "next_action": "Monitor PR #25 exact-head workflows at 0be96c9, independently review immutable diff and CI logs, then merge only if all jobs remain green.",
+  "next_action": "Merge reviewed exact candidate 0be96c9 with a signed DCO merge commit, push exact main, run post-merge gates and require fresh exact-main CI.",
   "observed_branch": "feature/agent-qwen-code",
   "observed_dirty": 0,
   "observed_head": "0be96c9ec50e76bde613b21867deb9808359f630",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned Qwen Code through isolated headless stream-JSON.",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "Implement Qwen Code client adapter",
-  "updated_at": "2026-09-07T00:59:08+00:00",
+  "updated_at": "2026-09-07T01:00:45+00:00",
   "worktree_key": "agent-systems-benchmark-agent-qwen-code"
 }
 ---
@@ -295,3 +295,10 @@ Implementation has not started. Read the linked plan before claiming.
   0be96c9ec50e76bde613b21867deb9808359f630 as PR #25 on exact base
   2579362d6936b25e6008583f7bd485e5498a4e3f. GitHub reports OPEN and MERGEABLE; Rust x86_64/aarch64,
   quality, Kani and Loom x86_64/aarch64 jobs are running.
+
+- 2026-09-07T01:00:45+00:00: Fresh PR #25 exact-head CI is fully green at immutable
+  0be96c9ec50e76bde613b21867deb9808359f630 on exact base 2579362d6936b25e6008583f7bd485e5498a4e3f:
+  Rust run 34071496622 passed x86_64 and aarch64; quality run 34071496615 passed; formal run
+  34071496677 passed Kani and Loom/state models on x86_64 and aarch64. Independent diff, provenance,
+  privacy, scope, signature, DCO, native negative and evidence-limit review found no release
+  blocker.
