@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Route explicitly trusted ASB CI jobs to qualified development host runners while preserving disposable public-PR isolation.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Integrate development host ASB runners with GitHub workflows",
-  "updated_at": "2026-09-07T07:29:20+00:00",
+  "updated_at": "2026-09-07T07:29:32+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-workflow-routing"
 }
 ---
@@ -42,3 +42,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T07:29:20+00:00: Recorded command exit 0; command argv SHA-256
   3724c9d7e41c9dff9e46c2388af57eb2c8952b0701c4f275f76d588eef7d2292.
+
+- 2026-09-07T07:29:32+00:00: Recorded command exit 0; command argv SHA-256
+  ed60df3b901474f580fc7b404c8de2cdd185b8f37b32885a24fcd35323367f95.
