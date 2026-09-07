@@ -10,15 +10,18 @@
   ],
   "id": "AR-1004",
   "next_action": "Add trial/epoch aggregation following tau-bench and Inspect concepts.",
+  "observed_branch": "feature/reliability-fairness",
+  "observed_dirty": 0,
+  "observed_head": "4a59593c0c55e0ad72656363473a404d8be1054b",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-1004.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Report repeated-attempt reliability and prevent aggregate results from hiding starvation or hard strata.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Measure reliability and mixed-workload fairness",
-  "updated_at": "2026-09-07T03:27:20+00:00",
+  "updated_at": "2026-09-07T03:27:44+00:00",
   "worktree_key": "agent-systems-benchmark-reliability-fairness"
 }
 ---
