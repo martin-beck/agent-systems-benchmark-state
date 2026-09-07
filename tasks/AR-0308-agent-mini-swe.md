@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned mini-SWE-agent as a bounded batch engineering agent.",
-  "task_revision": 279,
+  "task_revision": 280,
   "title": "Implement mini-SWE-agent client adapter",
-  "updated_at": "2026-09-07T12:42:48+00:00",
+  "updated_at": "2026-09-07T12:43:12+00:00",
   "worktree_key": "agent-systems-benchmark-agent-mini-swe"
 }
 ---
@@ -957,3 +957,6 @@ Implementation has not started. Read the linked plan before claiming.
   identical candidate tree 35dc5e8; origin/main and PR #39 merge identity match. Fresh exact-main CI
   all succeeded: Rust x86_64+aarch64 34123003973, quality/supply 34123003969, formal 34123004119,
   and fault assurance 34123004066.
+
+- 2026-09-07T12:43:12+00:00: Recorded command exit 0; command argv SHA-256
+  678fa5f032faab57c10737f945987e85a3759a993eaafd3f82f1061299dcf408.
