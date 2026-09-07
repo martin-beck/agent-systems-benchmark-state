@@ -9,7 +9,7 @@
     "AR-0204"
   ],
   "id": "AR-0801",
-  "next_action": "Await exact-main quality 34077635208 and remaining x86_64 Rust cell in 34077635164 at signed merge b2833ab; formal 34077635181 and Rust aarch64 are green. Then reconcile/live doctor and release AR-0801 only if all remain clean.",
+  "next_action": "No further AR-0801 action; preserve the verified doctor, plan, run, sweep, compare, report, and serve surface, with record and replay explicitly unsupported.",
   "observed_branch": "feature/terminal-interface",
   "observed_dirty": 0,
   "observed_head": "d2e7b66ff6af1f9f5924ab40c2a6cff74a6ba7f4",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "done",
   "summary": "Provide doctor, plan, run, sweep, compare and report with stable JSON output.",
-  "task_revision": 184,
+  "task_revision": 185,
   "title": "Implement terminal and automation interfaces",
-  "updated_at": "2026-09-07T02:55:36+00:00",
+  "updated_at": "2026-09-07T22:46:55+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-interface"
 }
 ---
@@ -29,7 +29,7 @@
 
 Provide doctor, plan, run, sweep, compare and report with stable JSON output.
 
-Implementation has not started. Read the linked plan before claiming.
+Implemented, independently reviewed, merged, and released with exact-head and exact-main evidence. The supported command surface is doctor, plan, run, sweep, compare, report, and serve; record and replay remain unsupported CLI commands.
 
 - 2026-09-07T01:07:00+00:00: Dependencies AR-0101, AR-0104, and AR-0204 are durably done on
   synchronized signed product main b79534b; asb-cli ownership is disjoint from active Gemini, Goose,
@@ -595,3 +595,8 @@ Implementation has not started. Read the linked plan before claiming.
   green. Full locked coordination validation: Ruff, mypy, 37 tests, 97% branch coverage,
   schema/privacy/generated views, reconcile/snapshot/render check and live doctor green. Worktrees
   and synchronized public refs clean; release Cargo workspace/lock and scheduler integration fences.
+
+- 2026-09-07T22:46:55+00:00: Documentation consistency repair: removed the stale pre-implementation
+  statement and stale pending-CI next action. AR-0801 remains done; signed merge b2833ab and
+  exact-main runs 34077635208, 34077635164, and 34077635181 remain its authoritative evidence. No
+  task status, ownership, dependency, implementation, or historical evidence was rewritten.
