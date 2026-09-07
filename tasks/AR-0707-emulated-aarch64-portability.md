@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add explicit emulated-aarch64 portability qualification without claiming native support.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Qualify emulated aarch64 portability",
-  "updated_at": "2026-09-07T21:18:46+00:00",
+  "updated_at": "2026-09-07T21:18:48+00:00",
   "worktree_key": "agent-systems-benchmark-emulated-aarch64-portability"
 }
 ---
@@ -44,3 +44,6 @@ Acceptance criteria:
   Preserve AR-0703 as the independent native-capacity gate and never infer native support.
 
 - 2026-09-07T21:17:58+00:00: Claimed by quality_20260906.
+
+- 2026-09-07T21:18:48+00:00: Recorded command exit 0; command argv SHA-256
+  81954c9ee9bd9cb3f6013ce9944d75ad314c2e8bc4b7ddea60d5b3516773b636.
