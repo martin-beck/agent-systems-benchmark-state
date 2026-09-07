@@ -35,5 +35,4 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-sandbox-test-portability` | `fix/sandbox-test-portability` | `23035acde688` | 0 | behind 28, ahead 0 |
 | `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `3bcfd85dedd3` | 0 | behind 65, ahead 0 |
 | `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `410ecc95b80e` | 0 | behind 53, ahead 0 |
-| `agent-systems-benchmark-terminal-interface` | `feature/terminal-interface` | `3374572d0947` | 5 | behind 0, ahead 1 |
-| changed files | - | - | - | `Cargo.lock`, `crates/asb-cli/Cargo.toml`, `crates/asb-cli/src/lib.rs`, `crates/asb-cli/tests/cli_e2e.rs`, `crates/asb-runtime/src/scheduler.rs` |
+| `agent-systems-benchmark-terminal-interface` | `feature/terminal-interface` | `7c2d19ca9d92` | 0 | behind 0, ahead 1 |

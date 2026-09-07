@@ -11,17 +11,17 @@
   "id": "AR-0801",
   "next_action": "Finish exact-tree validation of the repaired successor, create a new signed DCO immutable candidate, and request fresh independent review.",
   "observed_branch": "feature/terminal-interface",
-  "observed_dirty": 5,
-  "observed_head": "3374572d09476bc45ceeac84776d73f52cee8211",
+  "observed_dirty": 0,
+  "observed_head": "7c2d19ca9d925789041fc8262135075de61b76df",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0801.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide doctor, plan, run, sweep, compare and report with stable JSON output.",
-  "task_revision": 132,
+  "task_revision": 133,
   "title": "Implement terminal and automation interfaces",
-  "updated_at": "2026-09-07T02:19:09+00:00",
+  "updated_at": "2026-09-07T02:20:07+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-interface"
 }
 ---
