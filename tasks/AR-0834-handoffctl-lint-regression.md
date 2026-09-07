@@ -2,22 +2,22 @@
 {
   "branch": "fix/handoffctl-apply-resume-lint",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T09:09:10+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0002",
     "AR-0830"
   ],
   "id": "AR-0834",
   "next_action": "No further action; repair is integrated and verified.",
-  "owner": "contracts-20260906",
+  "owner": "",
   "plan": "../plans/AR-0834.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair the coordination-tool Ruff regression discovered during AR-0830 reconciliation.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Repair handoffctl lint regression",
-  "updated_at": "2026-09-07T07:25:52+00:00",
+  "updated_at": "2026-09-07T07:25:54+00:00",
   "worktree_key": "agent-systems-benchmark-coordination-lint-regression"
 }
 ---
@@ -89,3 +89,7 @@ Acceptance criteria:
   passed Ruff format/check, mypy, 38 tests, 96% branch-aware coverage, schema/render validation and
   live doctor. Exact-main hosted coordination run 34095303503 passed. PR #5 merged reviewed
   candidate 746042a0 through signed+DCO no-ff merge ba0bbad5.
+
+- 2026-09-07T07:25:54+00:00: Completed: immutable reviewed repair 746042a0 integrated by signed+DCO
+  merge ba0bbad5 via PR #5; local post-merge full validation and exact-main hosted run 34095303503
+  are green, state is clean and live doctor passed.
