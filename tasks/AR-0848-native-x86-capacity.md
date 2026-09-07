@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify authorized disposable native x86_64 capacity on a development host.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Qualify native x86 capacity",
-  "updated_at": "2026-09-07T23:17:15+00:00",
+  "updated_at": "2026-09-07T23:18:03+00:00",
   "worktree_key": "agent-systems-benchmark-native-x86-capacity"
 }
 ---
@@ -53,3 +53,6 @@ claim native aarch64 support; native aarch64 remains future work requiring separ
   outside this AR because its three-principal container boundary is separately blocked; AR-0848 will
   use a local expiring lease and disposable root and will publish no host identity, credentials, raw
   logs, or performance claim.
+
+- 2026-09-07T23:18:03+00:00: Recorded command exit 0; command argv SHA-256
+  0dce05c69bca61592080b15cbf2b6b201b5f9115a295ccb98ee7fdcf8022f24b.
