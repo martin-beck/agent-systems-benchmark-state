@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for aider.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Qualify aider replay",
-  "updated_at": "2026-09-07T12:48:49+00:00",
+  "updated_at": "2026-09-07T12:48:51+00:00",
   "worktree_key": "agent-systems-benchmark-replay-aider"
 }
 ---
@@ -34,3 +34,6 @@ Qualify aider record/replay, network denial, parity, retries, tool calls, cancel
   shared Cargo/Cargo.lock/README integration remains fenced behind AR-0506.
 
 - 2026-09-07T12:47:51+00:00: Claimed by quality_20260906.
+
+- 2026-09-07T12:48:51+00:00: Recorded command exit 0; command argv SHA-256
+  49da8497c76a15904afbfac0771865d56b681953914d4ae71b2b4fb2a0ff8cb8.
