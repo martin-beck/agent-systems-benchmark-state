@@ -22,7 +22,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-fault-assurance` | `feature/fault-assurance` | `e6c623113c15` | 0 | behind 8, ahead 0 |
 | `agent-systems-benchmark-formal-assurance` | `feature/formal-assurance` | `2a495a99a657` | 0 | behind 54, ahead 0 |
 | `agent-systems-benchmark-frontend-control-api` | `feature/frontend-control-api` | `0184ec3290ad` | 0 | behind 0, ahead 1 |
-| `agent-systems-benchmark-native-platforms` | `feature/native-platforms` | `0beddb7a491a` | 0 | behind 0, ahead 1 |
+| `agent-systems-benchmark-native-platforms` | `feature/native-platforms` | `0beddb7a491a` | 1 | behind 0, ahead 1 |
+| changed files | - | - | - | `.github/workflows/native-platforms.yml` |
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 92, ahead 0 |
 | `agent-systems-benchmark-portable-metrics` | `feature/portable-metrics` | `a0f67bea1ffe` | 0 | behind 66, ahead 0 |
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `51daeb8608e5` | 0 | behind 85, ahead 0 |
