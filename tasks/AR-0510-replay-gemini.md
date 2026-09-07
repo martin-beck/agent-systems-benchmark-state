@@ -12,17 +12,17 @@
   "id": "AR-0510",
   "next_action": "Independent immutable review of exact candidate 6a35edf615303f6d80b333533deca0e784994b16; publish only after explicit approval.",
   "observed_branch": "feature/replay-gemini",
-  "observed_dirty": 1,
-  "observed_head": "b9eca15875a58bed76a7190c2488bbac05edd05b",
+  "observed_dirty": 0,
+  "observed_head": "1366ad3bd03fe8806e80223a55989e34fd72245a",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0510.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Gemini.",
-  "task_revision": 124,
+  "task_revision": 125,
   "title": "Qualify Gemini replay",
-  "updated_at": "2026-09-07T18:34:56+00:00",
+  "updated_at": "2026-09-07T18:35:32+00:00",
   "worktree_key": "agent-systems-benchmark-replay-gemini"
 }
 ---
