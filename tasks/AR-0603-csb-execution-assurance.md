@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T08:51:13+00:00",
+  "updated_at": "2026-09-07T08:51:39+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
@@ -165,3 +165,6 @@ Implementation has not started. Read the linked plan before claiming.
   contains 36; git apply had accepted only through the final assertion and omitted the
   function/module closing braces. Product worktree remains an uncommitted scaffold. Apply only a
   two-line closing-delimiter patch, refresh the mirror, and rerun locked offline tests.
+
+- 2026-09-07T08:51:39+00:00: Recorded command exit 0; command argv SHA-256
+  7e9cc4e0071bcb150caa86da3ec3872a92a4af4ebf7b0518baf3bd3ca6e9b2ed.
