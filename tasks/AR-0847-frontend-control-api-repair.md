@@ -2,7 +2,7 @@
 {
   "branch": "feature/frontend-control-api-repair",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T23:29:31+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0104",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/frontend-control-api-repair",
   "observed_dirty": 0,
   "observed_head": "0d2534f614cdc3ec43199bcb6da25083ef680f24",
-  "owner": "replay_20260906",
+  "owner": "",
   "plan": "../plans/AR-0847.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair and independently qualify the blocked frontend control API candidate.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Frontend control API repair",
-  "updated_at": "2026-09-07T22:08:31+00:00",
+  "updated_at": "2026-09-07T22:11:13+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api-repair"
 }
 ---
@@ -267,3 +267,14 @@ Repair the blocked AR-0803 candidate without mutating its dirty worktree in plac
 
 - 2026-09-07T22:08:31+00:00: Recorded command exit 0; command argv SHA-256
   8233ce6b4c1f8e6f55e6a29f68e2de3114f1b4c0306ce859c1070c5adae4c4d8.
+
+- 2026-09-07T22:11:13+00:00: Integrated reviewed PR #54 as SSH-signed DCO no-ff merge
+  462bd04a349dfbea1797c8a358e390544d51471e with exact parents
+  111be970534fbf72332a80c2291fe1fe21acb694 and 0d2534f614cdc3ec43199bcb6da25083ef680f24. Exact-main
+  hosted runs all succeeded: quality 34165481191, Rust x86_64+aarch64 34165481170,
+  fault/fuzz/mutation x86_64+aarch64 34165481161, formal/Kani x86_64+aarch64 34165481188. Complete
+  local exact-main fmt, Clippy, workspace tests, docs, release build, formal models,
+  repository/failure/platform validation passed. State reconcile/snapshot/full branch-aware
+  validation and live doctor passed with clean synchronized public refs. Original AR-0803 dirty
+  evidence remains preserved; AR-0847 repair is now the authoritative integrated implementation for
+  coordinator reconciliation of AR-0803.

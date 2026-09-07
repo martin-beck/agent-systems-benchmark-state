@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 4 |
+| **In progress** | Claimed work with a live lease | 3 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 59 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 53 |
+| **Done** | Accepted, integrated, and durably verified | 54 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -158,7 +158,7 @@ flowchart LR
         AR_0844["AR-0844 - Planned"]:::status_planned
         AR_0845["AR-0845 - Done"]:::status_done
         AR_0846["AR-0846 - Planned"]:::status_planned
-        AR_0847["AR-0847 - In progress"]:::status_in_progress
+        AR_0847["AR-0847 - Done"]:::status_done
         AR_0848["AR-0848 - Planned"]:::status_planned
     end
     subgraph series_09["09 - Assurance"]
@@ -715,11 +715,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0847](tasks/AR-0847-frontend-control-api-repair.md): Frontend control API repair | replay_20260906 | Repair and independently qualify the blocked frontend control API candidate. | Monitor PR #54 exact head 0d2534f614cdc3ec43199bcb6da25083ef680f24; merge only after all required exact-head checks are terminal green and coordinator authorization. |
 | P1 | [AR-0505](tasks/AR-0505-agent-replay-conformance.md): Prove real-agent replay conformance | contracts_20260906 | Test each actual client through recording and offline replay of engineering tasks. | Build production-boundary integration matrix using synthetic upstream service. |
 | P1 | [AR-0707](tasks/AR-0707-emulated-aarch64-portability.md): Qualify emulated aarch64 portability | quality_20260906 | Add explicit emulated-aarch64 portability qualification without claiming native support. | Provide a reproducible x86_64-hosted aarch64 VM/emulation lane for userspace portability and negative qualification only. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
@@ -797,7 +796,7 @@ flowchart LR
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Evaluate maintenance, licenses and reproducibility before integration. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (53)
+### Done (54)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -817,6 +816,7 @@ flowchart LR
 | P0 | [AR-0518](tasks/AR-0518-gemini-generate-content-replay.md): Gemini GenerateContent strict-replay dialect | Unclaimed | Add strict replay support for Gemini GenerateContent SSE traffic. | Await exact-main quality/Rust x86_64+aarch64/fault CI for signed merge 74d311ca; then reconcile, live doctor, and release AR-0518. |
 | P0 | [AR-0519](tasks/AR-0519-gemini-thinking-config-contract.md): Gemini thinkingConfig contract repair | Unclaimed | Correct Gemini thinkingConfig strict-replay contract from pinned capture evidence. | Monitor PR #47 exact immutable head 0aff702 CI; integrate only after every x86_64/aarch64 quality/formal/fault check is green and coordinator authorizes. |
 | P0 | [AR-0520](tasks/AR-0520-interaction-aware-redaction.md): Interaction-aware request redaction | Unclaimed | Support per-interaction request redaction policies for mixed catalog and private requests. | Independent immutable review of exact 867861c95c192659102d07f0093a69b58d281513; publish only after approval, then require exact-head x86_64/aarch64 CI. |
+| P0 | [AR-0847](tasks/AR-0847-frontend-control-api-repair.md): Frontend control API repair | Unclaimed | Repair and independently qualify the blocked frontend control API candidate. | Monitor PR #54 exact head 0d2534f614cdc3ec43199bcb6da25083ef680f24; merge only after all required exact-head checks are terminal green and coordinator authorization. |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Unclaimed | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. |
 | P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Unclaimed | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. |
 | P1 | [AR-0004](tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Unclaimed | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. |
