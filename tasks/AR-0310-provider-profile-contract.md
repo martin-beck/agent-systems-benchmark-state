@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Normalize one provider configuration for safe translation across heterogeneous agent adapters.",
-  "task_revision": 129,
+  "task_revision": 130,
   "title": "Define common provider profiles",
-  "updated_at": "2026-09-07T00:00:11+00:00",
+  "updated_at": "2026-09-07T00:01:21+00:00",
   "worktree_key": "agent-systems-benchmark-provider-profile-contract"
 }
 ---
@@ -383,3 +383,6 @@ Implementation has not started. Read the linked plan before claiming.
   completed successfully: Rust x86_64/aarch64 run 34068344166, repository quality run 34068344198,
   and formal Kani plus Loom x86_64/aarch64 run 34068344158. PR 23 remains synchronized to the
   immutable head; no merge was performed.
+
+- 2026-09-07T00:01:21+00:00: Recorded command exit 0; command argv SHA-256
+  8fcecc857fce71a82acb01e3823bf6b8956bcf4cb471959f38b8d8c6f9966cd5.
