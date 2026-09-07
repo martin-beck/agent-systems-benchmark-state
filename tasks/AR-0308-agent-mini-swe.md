@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned mini-SWE-agent as a bounded batch engineering agent.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Implement mini-SWE-agent client adapter",
-  "updated_at": "2026-09-07T01:01:34+00:00",
+  "updated_at": "2026-09-07T01:03:11+00:00",
   "worktree_key": "agent-systems-benchmark-agent-mini-swe"
 }
 ---
@@ -128,3 +128,6 @@ Implementation has not started. Read the linked plan before claiming.
   changed privacy conclusion is recorded and future runs must set isolation before import.
   invoke.patch SHA-256 127588676e1af0789cfd5e486c1e450c09b2f0606234ae1f17bdf292064329da;
   trajectory.patch SHA-256 017f4629755650203c7f5ba407a03bc98246b7526282dee7b26f8b7cf5207418.
+
+- 2026-09-07T01:03:11+00:00: Recorded command exit 101; command argv SHA-256
+  6500bfc03b4a0f99623efd4b74b455b682d561b093149678c2aac201b500ca20.
