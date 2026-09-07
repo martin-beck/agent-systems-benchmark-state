@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0507",
-  "next_action": "Await serialized shared replay compatibility repair for legal underscore headers and absent-stream SSE; retain cleanly tested adapter route-root fix and isolated real conformance test.",
+  "next_action": "Await serialized shared replay repairs for span_id admission, absent-stream SSE, and bounded model-catalog GET routes; then remove diagnostic normalization and complete exact native replay gates.",
   "observed_branch": "feature/replay-opendesk",
   "observed_dirty": 1,
   "observed_head": "68345a631a2c865a9e339ade574c0b53ec73367a",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenDesk.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Qualify OpenDesk replay",
-  "updated_at": "2026-09-07T13:24:06+00:00",
+  "updated_at": "2026-09-07T13:24:50+00:00",
   "worktree_key": "agent-systems-benchmark-replay-opendesk"
 }
 ---
@@ -245,3 +245,21 @@ Qualify OpenDesk record/replay, network denial, parity, retries, tool calls, can
 
 - 2026-09-07T13:24:06+00:00: Recorded command exit 101; command argv SHA-256
   127ecc29cb139c32c0f45c73a7e5eefd03be18290ec2aca32c08ecbd8a42feb6.
+
+- 2026-09-07T13:24:50+00:00: Changed isolated evidence after the authorized deterministic route fix:
+  the first instrumented real rerun failed earlier because the test compared the initial
+  title-generation request with the later retried tool request. The focused oracle now locates the
+  unique 429 interaction and requires its immediately following request body to be byte-identical;
+  that correction is fixture-only and the rerun then again reached StrictReplayService::new and
+  failed exactly InvalidCassette for absent stream plus event response. The same run proves pinned
+  OpenDesk 0.3.5 performs at least one GET model-catalog probe before completion; successive
+  captures require the same nonzero probe count. This is a third shared compatibility boundary
+  because StrictReplayService currently admits only POST /v1/chat/completions. Proposed shared path
+  is crates/asb-replay/src/service.rs with tests in crates/asb-replay/tests/strict_replay.rs: bound
+  and serve exact GET /v1/models and /v1/models/{validated-model} fixtures only when explicitly
+  recorded/versioned, reject arbitrary paths/query/control/oversize/unrecorded models, and ensure
+  catalog traffic neither consumes nor reorders completion interactions. Existing span_id
+  paths/tests remain cassette.rs, service.rs, cassette.schema.json, cassette_roundtrip.rs,
+  schema_conformance.rs, strict_replay.rs. The isolated test scratch no longer contains a committed
+  host path and unrelated OpenCode redaction selectors were removed. No shared runtime/schema was
+  changed and support remains blocked.
