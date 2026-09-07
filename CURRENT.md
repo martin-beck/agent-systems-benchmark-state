@@ -12,6 +12,12 @@ Never edit this file directly.
 | P0 | [AR-0509](tasks/AR-0509-replay-codex.md): Qualify Codex replay | Qualify replay conformance for Codex. | Prove credential-free record/replay conformance for Codex with network denial and malformed/tool/cancel negatives. | contracts_20260906 |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. | root-coordination-20260906 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0516](tasks/AR-0516-opendesk-strict-replay-http-compatibility.md): OpenDesk strict-replay HTTP compatibility | Add narrowly scoped strict-replay compatibility for pinned OpenDesk traffic. | Implement fail-closed OpenDesk HTTP compatibility for span_id, absent-stream SSE, and recorded model catalog probes. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -31,7 +37,6 @@ Never edit this file directly.
 | P0 | [AR-0513](tasks/AR-0513-replay-miniswe.md): Qualify mini-SWE replay | Qualify replay conformance for mini-SWE-agent. | Prove credential-free record/replay conformance for mini-SWE-agent with network denial and malformed/tool/cancel negatives. | - |
 | P0 | [AR-0514](tasks/AR-0514-replay-openhands.md): Qualify OpenHands replay | Qualify replay conformance for OpenHands. | Prove credential-free record/replay conformance for OpenHands with network denial and malformed/tool/cancel negatives. | - |
 | P0 | [AR-0515](tasks/AR-0515-replay-matrix.md): Aggregate replay conformance matrix | Aggregate complete per-agent replay conformance. | Aggregate per-agent replay evidence into the complete supported-agent conformance matrix. | - |
-| P0 | [AR-0516](tasks/AR-0516-opendesk-strict-replay-http-compatibility.md): OpenDesk strict-replay HTTP compatibility | Add narrowly scoped strict-replay compatibility for pinned OpenDesk traffic. | Implement fail-closed OpenDesk HTTP compatibility for span_id, absent-stream SSE, and recorded model catalog probes. | - |
 | P0 | [AR-0837](tasks/AR-0837-containerized-runner-boundary.md): Qualify containerized runner boundary | Provide the containerized workflow boundary required for safe trusted runner claims. | Define and qualify a digest-pinned workflow container boundary separating operator, listener, and job principals without host mounts. | - |
 | P1 | [AR-0311](tasks/AR-0311-provider-openai.md): Support a shared OpenAI provider | Apply one default OpenAI provider profile consistently to all supported agents. | Implement the default OpenAI provider profile for every adapter that proves compatible support. | - |
 | P1 | [AR-0312](tasks/AR-0312-provider-ollama.md): Support a shared local Ollama provider | Apply one pinned local Ollama provider and model configuration to all supported agents. | Implement a loopback-only local Ollama profile and prove every compatible adapter translation. | - |
