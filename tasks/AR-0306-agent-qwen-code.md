@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0306",
-  "next_action": "Inspect the current stable release, stream-JSON contract, provider override and ambient context loading.",
+  "next_action": "Finish isolated Qwen tests, then acquire the serialized module-registration fence after earlier adapter integration.",
   "observed_branch": "feature/agent-qwen-code",
   "observed_dirty": 4,
   "observed_head": "941ea6fff5eef30b126d3bcc5cc5d4117146de27",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned Qwen Code through isolated headless stream-JSON.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Implement Qwen Code client adapter",
-  "updated_at": "2026-09-07T00:39:39+00:00",
+  "updated_at": "2026-09-07T00:39:57+00:00",
   "worktree_key": "agent-systems-benchmark-agent-qwen-code"
 }
 ---
@@ -190,3 +190,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T00:39:39+00:00: Recorded command exit 0; command argv SHA-256
   97079c002900f98f96981ea7cb1ce04cca00687254f3f8ed5b33954e79033fd4.
+
+- 2026-09-07T00:39:57+00:00: Changed provenance conclusion after immutable-archive recheck: c8517676
+  is lib/cli.js, not the launcher-imported lib/cli-entry.js. The archive member and extracted
+  cli-entry.js both hash to 68cb29eb; adapter now pins archive, launcher, Node, cli-entry, and
+  primary cli.js separately. No runtime mutation occurred.

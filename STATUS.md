@@ -512,7 +512,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0304](tasks/AR-0304-agent-codex.md): Implement Codex client adapter | replay-20260906 | Use Codex noninteractive structured events or app-server with declared capability boundaries. | Monitor PR 24 exact head eb03bd9 x86_64/aarch64 Rust, quality/coverage/supply, and formal CI; investigate any failure and do not merge without coordinator authorization. |
 | P1 | [AR-0305](tasks/AR-0305-agent-gemini.md): Implement Gemini CLI client adapter | contracts-20260906 | Run pinned Gemini CLI through noninteractive JSON events. | Complete negative matrix, provenance fixture documentation and isolated full gates; await shared registration fence. |
-| P1 | [AR-0306](tasks/AR-0306-agent-qwen-code.md): Implement Qwen Code client adapter | root-coordination-20260906 | Run pinned Qwen Code through isolated headless stream-JSON. | Inspect the current stable release, stream-JSON contract, provider override and ambient context loading. |
+| P1 | [AR-0306](tasks/AR-0306-agent-qwen-code.md): Implement Qwen Code client adapter | root-coordination-20260906 | Run pinned Qwen Code through isolated headless stream-JSON. | Finish isolated Qwen tests, then acquire the serialized module-registration fence after earlier adapter integration. |
 | P1 | [AR-0307](tasks/AR-0307-agent-goose.md): Implement goose client adapter | quality-20260906 | Run pinned AAIF goose in no-session structured mode. | Inspect current release assets, structured run mode, provider configuration and extension failure behavior. |
 
 ### Planned (51)
