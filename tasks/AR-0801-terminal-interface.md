@@ -11,7 +11,7 @@
   "id": "AR-0801",
   "next_action": "Hold immutable signed candidate 3374572 for independent review; repair any blocker, otherwise publish exact head and require exact-head CI before integration.",
   "observed_branch": "feature/terminal-interface",
-  "observed_dirty": 4,
+  "observed_dirty": 5,
   "observed_head": "3374572d09476bc45ceeac84776d73f52cee8211",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0801.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide doctor, plan, run, sweep, compare and report with stable JSON output.",
-  "task_revision": 116,
+  "task_revision": 117,
   "title": "Implement terminal and automation interfaces",
-  "updated_at": "2026-09-07T02:07:31+00:00",
+  "updated_at": "2026-09-07T02:07:50+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-interface"
 }
 ---
