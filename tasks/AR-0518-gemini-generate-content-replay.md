@@ -11,17 +11,17 @@
   "id": "AR-0518",
   "next_action": "Complete full/formal/coverage/privacy gates and produce an unpublished signed DCO candidate for immutable review.",
   "observed_branch": "feature/gemini-generate-content-replay",
-  "observed_dirty": 8,
-  "observed_head": "b56768a550fb293650dd29ab793460e0277ffb8d",
+  "observed_dirty": 0,
+  "observed_head": "7a6bf02e01b7f6f5ba93cc69078de84ee118fc2b",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0518.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add strict replay support for Gemini GenerateContent SSE traffic.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Gemini GenerateContent strict-replay dialect",
-  "updated_at": "2026-09-07T16:53:19+00:00",
+  "updated_at": "2026-09-07T16:53:42+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-generate-content-replay"
 }
 ---
