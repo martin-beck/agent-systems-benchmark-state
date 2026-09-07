@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add narrowly scoped strict-replay compatibility for pinned OpenDesk traffic.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "OpenDesk strict-replay HTTP compatibility",
-  "updated_at": "2026-09-07T14:35:23+00:00",
+  "updated_at": "2026-09-07T14:35:26+00:00",
   "worktree_key": "agent-systems-benchmark-opendesk-strict-replay-http-compatibility"
 }
 ---
@@ -218,3 +218,6 @@ Acceptance requires schema/runtime parity, adversarial positives and negatives, 
 
 - 2026-09-07T14:34:51+00:00: Recorded command exit 0; command argv SHA-256
   514197ace864f915a0f9d022925ea62898a437762fd5f22e9db6da38aaebc207.
+
+- 2026-09-07T14:35:26+00:00: Recorded command exit 0; command argv SHA-256
+  bee7f211b96a2a85b2d61150130ae8df12875a5e71d932292dc01c67968c4c04.
