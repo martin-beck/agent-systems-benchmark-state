@@ -2,7 +2,7 @@
 {
   "branch": "feature/development-host-runner-capacity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T07:48:39+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0002",
     "AR-0003",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/development-host-runner-capacity",
   "observed_dirty": 2,
   "observed_head": "814397f8f74971589aa02b13da12485169db3e2e",
-  "owner": "contracts-20260906",
+  "owner": "",
   "plan": "../plans/AR-0830.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T05:49:34+00:00",
+  "updated_at": "2026-09-07T05:50:20+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
@@ -85,3 +85,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T05:49:34+00:00: Recorded command exit 0; command argv SHA-256
   169c0474f8fa47f461cddd7801e492fec1df6fd6855f4881346a41cf4a757c24.
+
+- 2026-09-07T05:50:20+00:00: Lease expired with no active runner implementation process; product
+  worktree still has only untracked files and no checkpoint. Preserved untracked work for worker
+  reinspection before any reclaim.
