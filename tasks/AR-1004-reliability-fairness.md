@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Report repeated-attempt reliability and prevent aggregate results from hiding starvation or hard strata.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Measure reliability and mixed-workload fairness",
-  "updated_at": "2026-09-07T03:52:00+00:00",
+  "updated_at": "2026-09-07T03:52:03+00:00",
   "worktree_key": "agent-systems-benchmark-reliability-fairness"
 }
 ---
@@ -144,3 +144,6 @@ Implementation has not started. Read the linked plan before claiming.
   compile-fail, and clippy passed afterward using Rust/Cargo 1.93.0. Wrapper mistakes remain
   visible: an unset patch environment caused exit 2 before product mutation; durable effects were
   checked before applying once.
+
+- 2026-09-07T03:52:03+00:00: Recorded command exit 0; command argv SHA-256
+  79ccce9605d96a967da7319bf8ff3cf9212668563433ddda7fbc33fe333e35a8.
