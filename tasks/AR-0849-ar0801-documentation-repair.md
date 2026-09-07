@@ -10,17 +10,17 @@
   "id": "AR-0849",
   "next_action": "Align AR-0801 task text, generated status next_action, and product README with the implemented and merged CLI command surface; verify links and exact command examples.",
   "observed_branch": "fix/ar0801-documentation",
-  "observed_dirty": 1,
-  "observed_head": "9d17563f39c1eb51f17309578430a13a4d87b1f1",
+  "observed_dirty": 0,
+  "observed_head": "c0b9e0baf5f45221f159c8a06cd058b09c012a77",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0849.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair stale AR-0801 implementation and CLI documentation claims.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Repair AR-0801 documentation consistency",
-  "updated_at": "2026-09-07T22:47:01+00:00",
+  "updated_at": "2026-09-07T22:47:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar0801-documentation-repair"
 }
 ---
