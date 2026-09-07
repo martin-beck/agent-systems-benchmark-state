@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned Qwen Code through isolated headless stream-JSON.",
-  "task_revision": 96,
+  "task_revision": 97,
   "title": "Implement Qwen Code client adapter",
-  "updated_at": "2026-09-07T01:00:45+00:00",
+  "updated_at": "2026-09-07T01:01:03+00:00",
   "worktree_key": "agent-systems-benchmark-agent-qwen-code"
 }
 ---
@@ -302,3 +302,6 @@ Implementation has not started. Read the linked plan before claiming.
   34071496677 passed Kani and Loom/state models on x86_64 and aarch64. Independent diff, provenance,
   privacy, scope, signature, DCO, native negative and evidence-limit review found no release
   blocker.
+
+- 2026-09-07T01:01:03+00:00: Recorded command exit 0; command argv SHA-256
+  a291691da5a3b86573898e7b1c7d987abdc6cbb69d72c8982e2a5b7679e9224b.
