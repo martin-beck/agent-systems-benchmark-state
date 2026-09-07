@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0830",
-  "next_action": "Repair fail-closed storage prefix/filesystem validation, replace multiple routable labels with one composite capability label, and make setup idempotent; then add lifecycle automation only after an authorized secret-safe registration boundary is available.",
+  "next_action": "Obtain independent review of exact cdf18c6; live service identity, one-job ephemeral re-registration, protected canary and GitHub-side label proof remain gated on an authorized secret/admin boundary.",
   "observed_branch": "feature/development-host-runner-capacity",
   "observed_dirty": 0,
   "observed_head": "cdf18c6bf11b4f9cf36f3d5d20396b935001e176",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T05:59:40+00:00",
+  "updated_at": "2026-09-07T05:59:55+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
@@ -167,3 +167,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T05:59:40+00:00: Recorded command exit 0; command argv SHA-256
   0189f002b3e4d8e3fdc8477fc1f5f3c6808bca60510fbae12ddfa2347fda1ed7.
+
+- 2026-09-07T05:59:55+00:00: Signed+DCO successor cdf18c6bf11b4f9cf36f3d5d20396b935001e176 closes
+  the locally repairable review blockers: storage roots must resolve beneath /srv/data/projects,
+  runner parent/root devices must equal the configured storage device, one indivisible versioned
+  capability label prevents partial-label routing, and repeated setup succeeds only for an exact
+  private manifest and required entry points. Added idempotence and outside-storage negatives
+  without creating any material outside /srv/data/projects. Wrapper-run sh -n, focused suite, diff
+  check, privacy scan, worktree residue and forbidden /srv/data/asb-ci-runners absence checks
+  passed. Live registration remains unattempted because no authorized registration token/admin
+  boundary is available.
