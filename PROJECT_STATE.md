@@ -10,15 +10,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #27 | `feature/agent-goose@08feca551df7` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(agents): add bounded Goose adapter |
+| #27 | `feature/agent-goose@08feca551df7` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(agents): add bounded Goose adapter |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34076974034 | `08feca551df7` | pull_request | Rust verification | in_progress:- |
-| 34076974032 | `08feca551df7` | pull_request | Formal assurance | in_progress:- |
-| 34076974004 | `08feca551df7` | pull_request | Repository quality | in_progress:- |
+| 34076974034 | `08feca551df7` | pull_request | Rust verification | completed:failure |
+| 34076974032 | `08feca551df7` | pull_request | Formal assurance | completed:success |
+| 34076974004 | `08feca551df7` | pull_request | Repository quality | completed:failure |
 | 34073998420 | `e85548d00cff` | push | Formal assurance | completed:success |
 | 34073998391 | `e85548d00cff` | push | Repository quality | completed:success |
 | 34073998349 | `e85548d00cff` | push | Rust verification | completed:success |
