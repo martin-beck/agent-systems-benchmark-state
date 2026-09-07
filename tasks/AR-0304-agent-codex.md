@@ -10,17 +10,17 @@
   "id": "AR-0304",
   "next_action": "Await independent immutable review of c16e4864 before any push or PR; repair findings, then publish only authorized exact head and require x86_64/aarch64 CI.",
   "observed_branch": "feature/agent-codex",
-  "observed_dirty": 1,
-  "observed_head": "6a6f7cdd85eeec866c17117487a948f11618e033",
+  "observed_dirty": 0,
+  "observed_head": "eb03bd9d9ed5785458ea1bb3b990e84489a42d20",
   "owner": "replay-20260906",
   "plan": "../plans/AR-0304.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use Codex noninteractive structured events or app-server with declared capability boundaries.",
-  "task_revision": 120,
+  "task_revision": 121,
   "title": "Implement Codex client adapter",
-  "updated_at": "2026-09-07T00:31:14+00:00",
+  "updated_at": "2026-09-07T00:31:32+00:00",
   "worktree_key": "agent-systems-benchmark-agent-codex"
 }
 ---
