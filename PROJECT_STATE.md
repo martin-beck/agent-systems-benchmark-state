@@ -10,12 +10,17 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #31 | `feature/native-platforms@f919b78da998` | `main` | UNKNOWN | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
+| #31 | `feature/native-platforms@bdaf9c108226` | `main` | UNSTABLE | QUEUED:, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, QUEUED: | platforms: add fail-closed native qualification evidence |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34087336801 | `bdaf9c108226` | pull_request | Formal assurance | queued:- |
+| 34087336787 | `bdaf9c108226` | pull_request | Fault assurance | queued:- |
+| 34087336778 | `bdaf9c108226` | pull_request | Repository quality | in_progress:- |
+| 34087336775 | `bdaf9c108226` | pull_request | Rust verification | in_progress:- |
+| 34087336758 | `bdaf9c108226` | pull_request | Native platform evidence | in_progress:- |
 | 34086710775 | `f919b78da998` | pull_request | Formal assurance | completed:success |
 | 34086710768 | `f919b78da998` | pull_request | Rust verification | completed:success |
 | 34086710743 | `f919b78da998` | pull_request | Native platform evidence | completed:failure |
@@ -23,8 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34086710643 | `f919b78da998` | pull_request | Repository quality | completed:success |
 | 34086397563 | `933b55159e36` | pull_request | Native platform evidence | completed:failure |
 | 34086397551 | `933b55159e36` | pull_request | Fault assurance | completed:success |
-| 34086397532 | `933b55159e36` | pull_request | Repository quality | completed:success |
-| 34086397529 | `933b55159e36` | pull_request | Formal assurance | completed:success |
-| 34086397524 | `933b55159e36` | pull_request | Rust verification | completed:success |
-| 34086102616 | `e7f08ed683f4` | pull_request | Fault assurance | completed:success |
-| 34086102606 | `e7f08ed683f4` | pull_request | Formal assurance | completed:success |
