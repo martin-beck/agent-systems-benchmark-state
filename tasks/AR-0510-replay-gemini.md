@@ -12,17 +12,17 @@
   "id": "AR-0510",
   "next_action": "Await AR-0518 strict Gemini dialect integration; then rebase isolated signed adapter series and run pinned capture-to-strict-replay, retry, tool/grade, cancellation, malformed, full/formal/privacy gates.",
   "observed_branch": "feature/replay-gemini",
-  "observed_dirty": 1,
-  "observed_head": "d99d79c049d4526ba50b6184c800ab3a3e3bc835",
+  "observed_dirty": 0,
+  "observed_head": "603792c876b630a35653f3b25d292249e1633f8a",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0510.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Gemini.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Qualify Gemini replay",
-  "updated_at": "2026-09-07T16:35:29+00:00",
+  "updated_at": "2026-09-07T16:41:01+00:00",
   "worktree_key": "agent-systems-benchmark-replay-gemini"
 }
 ---
