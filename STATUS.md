@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 51 |
+| **Planned** | Defined work awaiting promotion or dependencies | 50 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 33 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -127,7 +127,7 @@ flowchart LR
         AR_0831["AR-0831 - Planned"]:::status_planned
         AR_0832["AR-0832 - Planned"]:::status_planned
         AR_0833["AR-0833 - Planned"]:::status_planned
-        AR_0834["AR-0834 - Planned"]:::status_planned
+        AR_0834["AR-0834 - Open"]:::status_open
     end
     subgraph series_09["09 - Assurance"]
         direction TB
@@ -555,13 +555,14 @@ flowchart LR
 | P1 | [AR-0803](tasks/AR-0803-frontend-control-api.md): Define the frontend control API | root-coordination-20260906 | Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary. | Await fresh independent immutable review of repaired exact cbb764c; publish only if all prior blockers and new concurrency/privacy semantics are approved. |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | replay-20260906 | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Independently review unpublished exact candidate 1605693dbb7aade01dd47cb074e35bca02df873b tree 7d99a7f69d97335cad802699dbf9a7ac7bac2e1b; do not publish or merge without coordinator authorization. |
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0603](tasks/AR-0603-csb-execution-assurance.md): Establish pinned CSB execution and conformance boundary | Unclaimed | Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary. | Validate the corrected scratch diff with git apply --check, apply it once through handoffctl run, then run crate-focused checks after the serialized Cargo fence is granted. |
+| P1 | [AR-0834](tasks/AR-0834-handoffctl-lint-regression.md): Repair handoffctl lint regression | Unclaimed | Repair the coordination-tool Ruff regression discovered during AR-0830 reconciliation. | Repair the unused apply_resume tasks parameter and prove handoffctl focused/full quality checks remain green. |
 
-### Planned (51)
+### Planned (50)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -597,7 +598,6 @@ flowchart LR
 | P1 | [AR-0831](tasks/AR-0831-aiws-workflow-routing.md): Integrate development host ASB runners with GitHub workflows | Unclaimed | Route explicitly trusted ASB CI jobs to qualified development host runners while preserving disposable public-PR isolation. | Define trusted-job labels and update ASB workflows without routing public pull-request code to persistent development host capacity. |
 | P1 | [AR-0832](tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Unclaimed | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. |
 | P1 | [AR-0833](tasks/AR-0833-aiws-runner-reboot-lifecycle.md): Qualify tokenless runner reboot lifecycle | Unclaimed | Qualify safe reboot and restart lifecycle for disposable development-host ASB runners. | Design and qualify a tokenless supervisor/orchestration path that can provision fresh ephemeral registrations after boot without storing reusable GitHub credentials. |
-| P1 | [AR-0834](tasks/AR-0834-handoffctl-lint-regression.md): Repair handoffctl lint regression | Unclaimed | Repair the coordination-tool Ruff regression discovered during AR-0830 reconciliation. | Repair the unused apply_resume tasks parameter and prove handoffctl focused/full quality checks remain green. |
 | P1 | [AR-0904](tasks/AR-0904-contract-consistency.md): Machine-check protocol and artifact consistency | Unclaimed | Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree. | Define canonical sources and generated/artifact-diff gates before extension implementations fan out. |
 | P1 | [AR-0905](tasks/AR-0905-recovery-models.md): Model execution recovery and worker fencing | Unclaimed | Apply bounded formal models to run lifecycle, leases, recovery, replay cursors and uncertain external effects. | Translate Agent Relay&#x27;s TLA+/Alloy/executable-model pattern to ASB run and replay domains. |
 | P1 | [AR-1002](tasks/AR-1002-verifier-integrity.md): Protect verifiers and support offline rescoring | Unclaimed | Separate immutable graders from agent work and version scoring independently of execution. | Design the immutable observation and score-revision contract using Inspect and Harbor concepts. |
