@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 4 |
+| **In progress** | Claimed work with a live lease | 3 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
 | **Planned** | Defined work awaiting promotion or dependencies | 47 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 29 |
+| **Done** | Accepted, integrated, and durably verified | 30 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -57,7 +57,7 @@ flowchart LR
         AR_0304["AR-0304 - Done"]:::status_done
         AR_0305["AR-0305 - Done"]:::status_done
         AR_0306["AR-0306 - Done"]:::status_done
-        AR_0307["AR-0307 - In progress"]:::status_in_progress
+        AR_0307["AR-0307 - Done"]:::status_done
         AR_0308["AR-0308 - In progress"]:::status_in_progress
         AR_0309["AR-0309 - Planned"]:::status_planned
         AR_0310["AR-0310 - Done"]:::status_done
@@ -506,11 +506,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0307](tasks/AR-0307-agent-goose.md): Implement goose client adapter | quality-20260906 | Run pinned AAIF goose in no-session structured mode. | Inspect exact-main merge 61b5dd33ba04295a476e444d8bfd338ab972507a runs 34078486469 Rust/native x86_64+aarch64, 34078486478 quality, and 34078486470 formal; release only after all green and residual/state/live audit. |
 | P1 | [AR-0803](tasks/AR-0803-frontend-control-api.md): Define the frontend control API | root-coordination-20260906 | Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary. | Define a bounded versioned control/status API between the runner and independent frontends. |
 | P1 | [AR-0902](tasks/AR-0902-fault-assurance.md): Add fuzz mutation and lifecycle fault campaigns | contracts-20260906 | Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection. | Hold PR #28 exact independently approved green head e6c6231 for coordinator integration authorization; do not merge or release before reviewed signed-DCO integration and post-merge checks. |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | replay-20260906 | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Await serialized additive registration fence; then rebase the three owned mini-SWE paths onto exact current main, add only module/test registration, rerun exact-tree full gates, and produce a signed DCO candidate for immutable review. |
@@ -567,7 +566,7 @@ flowchart LR
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Evaluate maintenance, licenses and reproducibility before integration. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (29)
+### Done (30)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -590,6 +589,7 @@ flowchart LR
 | P1 | [AR-0304](tasks/AR-0304-agent-codex.md): Implement Codex client adapter | Unclaimed | Use Codex noninteractive structured events or app-server with declared capability boundaries. | Monitor PR 24 exact head eb03bd9 x86_64/aarch64 Rust, quality/coverage/supply, and formal CI; investigate any failure and do not merge without coordinator authorization. |
 | P1 | [AR-0305](tasks/AR-0305-agent-gemini.md): Implement Gemini CLI client adapter | Unclaimed | Run pinned Gemini CLI through noninteractive JSON events. | Await exact-main quality and Rust CI at signed merge e85548d; then reconcile/live doctor and release only if all green and clean. |
 | P1 | [AR-0306](tasks/AR-0306-agent-qwen-code.md): Implement Qwen Code client adapter | Unclaimed | Run pinned Qwen Code through isolated headless stream-JSON. | Merge reviewed exact candidate 0be96c9 with a signed DCO merge commit, push exact main, run post-merge gates and require fresh exact-main CI. |
+| P1 | [AR-0307](tasks/AR-0307-agent-goose.md): Implement goose client adapter | Unclaimed | Run pinned AAIF goose in no-session structured mode. | Inspect exact-main merge 61b5dd33ba04295a476e444d8bfd338ab972507a runs 34078486469 Rust/native x86_64+aarch64, 34078486478 quality, and 34078486470 formal; release only after all green and residual/state/live audit. |
 | P1 | [AR-0310](tasks/AR-0310-provider-profile-contract.md): Define common provider profiles | Unclaimed | Normalize one provider configuration for safe translation across heterogeneous agent adapters. | Monitor exact-main hosted runs for signed merge d384c4c54a4576dadaae3a542cfc09a5e339a4fe, then run live state validation and await release authorization. |
 | P1 | [AR-0401](tasks/AR-0401-engineering-workloads.md): Implement original engineering workloads | Unclaimed | Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API. | Await coordinator integration authorization for exact reviewed green PR #20 head 41ffc6e; retain Cargo fence, then signed no-ff merge and complete exact-main post-merge validation. |
 | P1 | [AR-0501](tasks/AR-0501-replay-evaluation.md): Evaluate replay literature and reusable tools | Unclaimed | Compare literature and record/replay implementations using identical synthetic conformance cases. | Await independent immutable-head review and coordinator integration of product PR #4; then run exact-main post-merge verification before release. |

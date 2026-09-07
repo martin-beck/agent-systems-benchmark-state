@@ -2,7 +2,7 @@
 {
   "branch": "feature/agent-goose",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T04:18:40+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/agent-goose",
   "observed_dirty": 0,
   "observed_head": "95b3ef8c78301d36af30694571e8a1c9a8965e89",
-  "owner": "quality-20260906",
+  "owner": "",
   "plan": "../plans/AR-0307.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Run pinned AAIF goose in no-session structured mode.",
-  "task_revision": 259,
+  "task_revision": 260,
   "title": "Implement goose client adapter",
-  "updated_at": "2026-09-07T03:06:45+00:00",
+  "updated_at": "2026-09-07T03:10:50+00:00",
   "worktree_key": "agent-systems-benchmark-agent-goose"
 }
 ---
@@ -851,3 +851,15 @@ Implementation has not started. Read the linked plan before claiming.
   to product main using explicit lease against exact b2833ab801d15aeb8e27d2aa2fb3adf248704314 after
   the full local postmerge suite passed. Primary and origin main now synchronize at the merge. Fresh
   exact-main hosted runs started: Rust/native 34078486469, quality 34078486478, formal 34078486470.
+
+- 2026-09-07T03:10:50+00:00: Released after independently approved PR #27 head
+  95b3ef8c78301d36af30694571e8a1c9a8965e89, signed+DCO no-ff integration
+  61b5dd33ba04295a476e444d8bfd338ab972507a, complete clean local postmerge verification, and
+  exact-main hosted SUCCESS: Rust/native x86_64+aarch64 34078486469, quality 34078486478, formal
+  Kani/Loom 34078486470. Final reconciled snapshot at state
+  08345b03e30473facae5813819c9414edc3248d6, live doctor, render check, schema, Ruff, mypy, 37 state
+  tests and 97% branch-aware coverage passed; product/state refs, signatures, DCO and worktrees were
+  clean/synchronized. Goose supports the proven pinned v1.49.0 static-musl x86_64/aarch64 native
+  matrix with bounded no-session structured lifecycle/tool/usage evidence; untested platforms,
+  GPU/Vulkan, subscription and unsupported asset combinations remain unsupported. Returned exclusive
+  additive lib.rs and verify workflow fences to coordinator.
