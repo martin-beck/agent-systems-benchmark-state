@@ -402,6 +402,44 @@ class HandoffTest(unittest.TestCase):
         ):
             CORE.mutate(args, "promote")
 
+    def test_resume_reopens_only_exact_blocked_revision(self) -> None:
+        target = self.make_task("AR-0001", status="blocked")
+        args = argparse.Namespace(task="AR-0001", expected_revision=0, note="blocker cleared")
+        with (
+            patch.object(CORE, "dirty_state_paths", return_value=[]),
+            self.assertRaisesRegex(RuntimeError, "stale revision"),
+        ):
+            CORE.mutate(args, "resume")
+
+        args.expected_revision = 1
+        args.note = ""
+        with (
+            patch.object(CORE, "dirty_state_paths", return_value=[]),
+            self.assertRaisesRegex(RuntimeError, "must not be empty"),
+        ):
+            CORE.mutate(args, "resume")
+
+        args.note = "blocker cleared"
+        with (
+            patch.object(CORE, "dirty_state_paths", return_value=[]),
+            patch.object(CORE, "commit", return_value=True),
+        ):
+            CORE.mutate(args, "resume")
+        meta, body = CORE.read_task(target)
+        self.assertEqual("open", meta["status"])
+        self.assertEqual("", meta["owner"])
+        self.assertEqual(2, meta["task_revision"])
+        self.assertIn("blocker cleared", body)
+
+        with (
+            patch.object(CORE, "dirty_state_paths", return_value=[]),
+            self.assertRaisesRegex(RuntimeError, "not blocked"),
+        ):
+            CORE.mutate(
+                argparse.Namespace(task="AR-0001", expected_revision=2, note="again"),
+                "resume",
+            )
+
     def test_promote_failure_restores_task_and_generated_views(self) -> None:
         path = self.make_task(status="planned")
         before = {
@@ -1091,6 +1129,19 @@ class HandoffTest(unittest.TestCase):
                 [
                     "handoffctl",
                     "promote",
+                    "AR-0001",
+                    "--expected-revision",
+                    "1",
+                    "--note",
+                    "ready",
+                ],
+                "mutate",
+                None,
+            ),
+            (
+                [
+                    "handoffctl",
+                    "resume",
                     "AR-0001",
                     "--expected-revision",
                     "1",
