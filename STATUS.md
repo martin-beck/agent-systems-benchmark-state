@@ -708,7 +708,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0512](tasks/AR-0512-replay-goose.md): Qualify goose replay | contracts_20260906 | Qualify replay conformance for goose. | Serialize a shared replay follow-up that makes request-body redaction selectors interaction/method-aware; then rerun the preserved Goose fixture without bypassing private messages. |
-| P0 | [AR-0513](tasks/AR-0513-replay-miniswe.md): Qualify mini-SWE replay | replay_20260906 | Qualify replay conformance for mini-SWE-agent. | Await independent immutable review of exact candidate 516f7b6b1373a6d744e3005ae573b56df2962153; publish only after approval and then require exact-head x86_64/aarch64 quality/formal/fault CI. |
+| P0 | [AR-0513](tasks/AR-0513-replay-miniswe.md): Qualify mini-SWE replay | replay_20260906 | Qualify replay conformance for mini-SWE-agent. | Monitor PR #51 exact immutable head 516f7b6 across quality 34158252963, formal 34158252964, Rust 34158252970 and fault 34158252973; investigate failures and merge only after every required cell is green. |
 | P0 | [AR-0520](tasks/AR-0520-interaction-aware-redaction.md): Interaction-aware request redaction | quality_20260906 | Support per-interaction request redaction policies for mixed catalog and private requests. | Make request-body redaction selectors interaction/method-aware so GET catalog entries can remain selector-free while POST bodies remain private and replayable. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
 

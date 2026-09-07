@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0513",
-  "next_action": "Await independent immutable review of exact candidate 516f7b6b1373a6d744e3005ae573b56df2962153; publish only after approval and then require exact-head x86_64/aarch64 quality/formal/fault CI.",
+  "next_action": "Monitor PR #51 exact immutable head 516f7b6 across quality 34158252963, formal 34158252964, Rust 34158252970 and fault 34158252973; investigate failures and merge only after every required cell is green.",
   "observed_branch": "feature/replay-miniswe",
   "observed_dirty": 0,
   "observed_head": "516f7b6b1373a6d744e3005ae573b56df2962153",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for mini-SWE-agent.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Qualify mini-SWE replay",
-  "updated_at": "2026-09-07T20:08:27+00:00",
+  "updated_at": "2026-09-07T20:08:56+00:00",
   "worktree_key": "agent-systems-benchmark-replay-miniswe"
 }
 ---
@@ -181,3 +181,10 @@ Qualify mini-SWE-agent record/replay, network denial, parity, retries, tool call
 
 - 2026-09-07T20:08:27+00:00: Recorded command exit 0; command argv SHA-256
   f58f7b1866a3c388f6456a25796772ebdb3f87a8f0976f9337082f6b00d57c5c.
+
+- 2026-09-07T20:08:56+00:00: Independent immutable review approved exact
+  516f7b6b1373a6d744e3005ae573b56df2962153. Published feature/replay-miniswe with an absent-ref
+  lease and verified remote exact head; opened focused PR #51 against exact base
+  1963364e75eec8cfcde0cfd0eaca672df12a2968. PR head/base OIDs are exact and mergeable. Exact-head
+  workflows are running: quality 34158252963, formal 34158252964, Rust x86_64+aarch64 34158252970,
+  fault/fuzz/mutation x86_64+aarch64 34158252973.
