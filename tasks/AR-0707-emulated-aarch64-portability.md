@@ -2,7 +2,7 @@
 {
   "branch": "feature/emulated-aarch64-portability",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T00:17:58+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0701",
     "AR-0103"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/emulated-aarch64-portability",
   "observed_dirty": 0,
   "observed_head": "0e6d74d2cf9f72f0ab0aef799672e3cb97e01138",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0707.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Add explicit emulated-aarch64 portability qualification without claiming native support.",
-  "task_revision": 121,
+  "task_revision": 122,
   "title": "Qualify emulated aarch64 portability",
-  "updated_at": "2026-09-07T22:38:20+00:00",
+  "updated_at": "2026-09-07T22:39:26+00:00",
   "worktree_key": "agent-systems-benchmark-emulated-aarch64-portability"
 }
 ---
@@ -364,3 +364,10 @@ Acceptance criteria:
   hosted runs all completed success: Rust 34167050075, quality 34167050030, formal 34167050032,
   fault 34167050101, emulated-aarch64 34167050028. Scope remains x86_64-hosted aarch64 userspace
   emulation only; no native kernel, timing, performance, Debian, openEuler or native hardware claim.
+
+- 2026-09-07T22:39:26+00:00: Released after independently reviewed signed merge
+  9d17563f39c1eb51f17309578430a13a4d87b1f1, exact-main local post-merge validation, exact-main Rust
+  34167050075, quality 34167050030, formal 34167050032, fault 34167050101 and emulated-aarch64
+  34167050028 success, plus full state validation at 96 percent branch-aware coverage and live
+  doctor. Support is strictly x86_64-hosted aarch64 userspace emulation; native capacity remains
+  separate.
