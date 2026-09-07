@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Route explicitly trusted ASB CI jobs to qualified development host runners while preserving disposable public-PR isolation.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Integrate development host ASB runners with GitHub workflows",
-  "updated_at": "2026-09-07T07:27:11+00:00",
+  "updated_at": "2026-09-07T07:27:13+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-workflow-routing"
 }
 ---
@@ -36,3 +36,6 @@ Implementation has not started. Read the linked plan before claiming.
   events with disposable PR equivalents.
 
 - 2026-09-07T07:26:51+00:00: Claimed by contracts-20260906.
+
+- 2026-09-07T07:27:13+00:00: Recorded command exit 0; command argv SHA-256
+  789d951d350d0a21c46d5e5b54369bbca81c249264d811442011fa43887d16ea.
