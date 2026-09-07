@@ -2,7 +2,7 @@
 {
   "branch": "feature/development-host-runner-capacity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T09:35:52+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0002",
     "AR-0003",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/development-host-runner-capacity",
   "observed_dirty": 0,
   "observed_head": "0d9b363538d27074c284616f195a537f56480b00",
-  "owner": "contracts-20260906",
+  "owner": "",
   "plan": "../plans/AR-0830.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 136,
+  "task_revision": 137,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T06:57:22+00:00",
+  "updated_at": "2026-09-07T07:08:47+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
@@ -433,3 +433,13 @@ Implementation has not started. Read the linked plan before claiming.
   render-status and live doctor pass. Ruff alone exposes a pre-existing state-tool regression at
   handoffctl.py:693: apply_resume has an unused tasks parameter; this is unrelated to AR-0830 and
   must not be hidden. PROJECT_STATE refresh captures all completed CI.
+
+- 2026-09-07T07:08:47+00:00: Completed the proven AR-0830 provisioning scope at signed+DCO product
+  merge 14ac5ce3bcc272fc81e764a87b5b82128133f00d and PR #32. Exact-head and exact-main fault,
+  quality, formal, and Rust x86_64/aarch64 CI passed. Protected workflow_dispatch canary 34092791959
+  ran exactly once on the exact composite label without checkout/actions and passed; ephemeral
+  deregistration, local registration removal, zero owned listeners, clean reset roots, and unchanged
+  four unrelated listeners were verified. Reboot persistence is NOT claimed or satisfied here:
+  ephemeral registration is consumed after one job, and no reboot/boot-state mutation was
+  authorized. AR-0833 owns the required tokenless post-boot supervisor/re-registration qualification
+  before any reboot-persistence support claim.
