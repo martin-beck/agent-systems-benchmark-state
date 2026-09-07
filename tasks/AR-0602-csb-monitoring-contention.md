@@ -6,7 +6,8 @@
   "depends_on": [
     "AR-0201",
     "AR-0202",
-    "AR-0601"
+    "AR-0601",
+    "AR-0604"
   ],
   "id": "AR-0602",
   "next_action": "Audit the pinned CSB MonitorFactory and benchmark outputs against ASB metric contracts and controlled contention oracles.",
@@ -16,9 +17,9 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Validate CSB monitoring and contention diagnostics",
-  "updated_at": "2026-09-06T22:13:34+00:00",
+  "updated_at": "2026-09-07T04:45:45+00:00",
   "worktree_key": "agent-systems-benchmark-csb-monitoring-contention"
 }
 ---
@@ -27,3 +28,6 @@
 Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support.
 
 Implementation has not started. Read the linked plan before claiming.
+
+- 2026-09-07T04:45:45+00:00: Added required AR-0604 native qualification dependency. AR-0602
+  integrates only signals and platform combinations that AR-0604 independently qualifies.

@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**81 ARs tracked** across 3 active status categories.
+**83 ARs tracked** across 3 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 3 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 0 |
-| **Planned** | Defined work awaiting promotion or dependencies | 46 |
+| **Planned** | Defined work awaiting promotion or dependencies | 48 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 32 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -89,6 +89,8 @@ flowchart LR
         direction TB
         AR_0601["AR-0601 - Planned"]:::status_planned
         AR_0602["AR-0602 - Planned"]:::status_planned
+        AR_0603["AR-0603 - Planned"]:::status_planned
+        AR_0604["AR-0604 - Planned"]:::status_planned
     end
     subgraph series_07["07 - Platforms"]
         direction TB
@@ -167,6 +169,7 @@ flowchart LR
     AR_0101 --> AR_0401
     AR_0101 --> AR_0502
     AR_0101 --> AR_0601
+    AR_0101 --> AR_0603
     AR_0101 --> AR_0801
     AR_0101 --> AR_0803
     AR_0101 --> AR_0901
@@ -188,6 +191,7 @@ flowchart LR
     AR_0102 --> AR_0309
     AR_0102 --> AR_0503
     AR_0102 --> AR_0601
+    AR_0102 --> AR_0603
     AR_0102 --> AR_0901
     AR_0102 --> AR_0905
     AR_0103 --> AR_0105
@@ -199,6 +203,8 @@ flowchart LR
     AR_0103 --> AR_0308
     AR_0103 --> AR_0309
     AR_0103 --> AR_0401
+    AR_0103 --> AR_0601
+    AR_0103 --> AR_0603
     AR_0103 --> AR_0702
     AR_0103 --> AR_0703
     AR_0103 --> AR_0902
@@ -206,6 +212,7 @@ flowchart LR
     AR_0104 --> AR_0204
     AR_0104 --> AR_0314
     AR_0104 --> AR_0601
+    AR_0104 --> AR_0603
     AR_0104 --> AR_0801
     AR_0104 --> AR_0803
     AR_0104 --> AR_0805
@@ -221,9 +228,11 @@ flowchart LR
     AR_0201 --> AR_0504
     AR_0201 --> AR_0601
     AR_0201 --> AR_0602
+    AR_0201 --> AR_0604
     AR_0201 --> AR_0702
     AR_0201 --> AR_0703
     AR_0202 --> AR_0602
+    AR_0202 --> AR_0604
     AR_0203 --> AR_0204
     AR_0203 --> AR_0806
     AR_0203 --> AR_0901
@@ -325,6 +334,9 @@ flowchart LR
     AR_0505 --> AR_0903
     AR_0601 --> AR_0405
     AR_0601 --> AR_0602
+    AR_0601 --> AR_0604
+    AR_0603 --> AR_0601
+    AR_0604 --> AR_0602
     AR_0701 --> AR_0702
     AR_0701 --> AR_0703
     AR_0701 --> AR_0820
@@ -433,13 +445,13 @@ flowchart LR
 | [AR-0003](tasks/AR-0003-quality-gates.md) | [AR-0001](tasks/AR-0001-repository-bootstrap.md) | [AR-0903](tasks/AR-0903-release-qualification.md) |
 | [AR-0004](tasks/AR-0004-ar-status-document.md) | [AR-0002](tasks/AR-0002-coordination-assurance.md) | [AR-0005](tasks/AR-0005-transactional-promotion.md) |
 | [AR-0005](tasks/AR-0005-transactional-promotion.md) | [AR-0002](tasks/AR-0002-coordination-assurance.md), [AR-0004](tasks/AR-0004-ar-status-document.md) | None |
-| [AR-0101](tasks/AR-0101-extension-contracts.md) | [AR-0001](tasks/AR-0001-repository-bootstrap.md) | [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0203](tasks/AR-0203-statistical-analysis.md), [AR-0301](tasks/AR-0301-agent-opencode.md), [AR-0302](tasks/AR-0302-agent-opendesk.md), [AR-0303](tasks/AR-0303-agent-aider.md), [AR-0304](tasks/AR-0304-agent-codex.md), [AR-0305](tasks/AR-0305-agent-gemini.md), [AR-0306](tasks/AR-0306-agent-qwen-code.md), [AR-0307](tasks/AR-0307-agent-goose.md), [AR-0308](tasks/AR-0308-agent-mini-swe.md), [AR-0309](tasks/AR-0309-agent-openhands.md), [AR-0310](tasks/AR-0310-provider-profile-contract.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0502](tasks/AR-0502-replay-cassettes.md), [AR-0601](tasks/AR-0601-csb-integration.md), [AR-0801](tasks/AR-0801-terminal-interface.md), [AR-0803](tasks/AR-0803-frontend-control-api.md), [AR-0901](tasks/AR-0901-formal-assurance.md), [AR-0904](tasks/AR-0904-contract-consistency.md), [AR-1001](tasks/AR-1001-experiment-comparability.md), [AR-1003](tasks/AR-1003-execution-budgets.md), [AR-1005](tasks/AR-1005-trace-interoperability.md) |
-| [AR-0102](tasks/AR-0102-process-runtime.md) | [AR-0101](tasks/AR-0101-extension-contracts.md) | [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0301](tasks/AR-0301-agent-opencode.md), [AR-0302](tasks/AR-0302-agent-opendesk.md), [AR-0303](tasks/AR-0303-agent-aider.md), [AR-0304](tasks/AR-0304-agent-codex.md), [AR-0305](tasks/AR-0305-agent-gemini.md), [AR-0306](tasks/AR-0306-agent-qwen-code.md), [AR-0307](tasks/AR-0307-agent-goose.md), [AR-0308](tasks/AR-0308-agent-mini-swe.md), [AR-0309](tasks/AR-0309-agent-openhands.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0601](tasks/AR-0601-csb-integration.md), [AR-0901](tasks/AR-0901-formal-assurance.md), [AR-0905](tasks/AR-0905-recovery-models.md) |
-| [AR-0103](tasks/AR-0103-sandbox-runtime.md) | [AR-0102](tasks/AR-0102-process-runtime.md) | [AR-0105](tasks/AR-0105-sandbox-test-portability.md), [AR-0202](tasks/AR-0202-kernel-diagnostics.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0305](tasks/AR-0305-agent-gemini.md), [AR-0306](tasks/AR-0306-agent-qwen-code.md), [AR-0307](tasks/AR-0307-agent-goose.md), [AR-0308](tasks/AR-0308-agent-mini-swe.md), [AR-0309](tasks/AR-0309-agent-openhands.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0702](tasks/AR-0702-native-platforms.md), [AR-0703](tasks/AR-0703-native-platform-lab.md), [AR-0902](tasks/AR-0902-fault-assurance.md), [AR-1002](tasks/AR-1002-verifier-integrity.md) |
-| [AR-0104](tasks/AR-0104-durable-results.md) | [AR-0101](tasks/AR-0101-extension-contracts.md) | [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0314](tasks/AR-0314-recording-source-choice.md), [AR-0601](tasks/AR-0601-csb-integration.md), [AR-0801](tasks/AR-0801-terminal-interface.md), [AR-0803](tasks/AR-0803-frontend-control-api.md), [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-0806](tasks/AR-0806-tui-history-analysis.md), [AR-0822](tasks/AR-0822-install-upgrade-rollback.md), [AR-0902](tasks/AR-0902-fault-assurance.md), [AR-0905](tasks/AR-0905-recovery-models.md), [AR-1002](tasks/AR-1002-verifier-integrity.md), [AR-1005](tasks/AR-1005-trace-interoperability.md) |
+| [AR-0101](tasks/AR-0101-extension-contracts.md) | [AR-0001](tasks/AR-0001-repository-bootstrap.md) | [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0203](tasks/AR-0203-statistical-analysis.md), [AR-0301](tasks/AR-0301-agent-opencode.md), [AR-0302](tasks/AR-0302-agent-opendesk.md), [AR-0303](tasks/AR-0303-agent-aider.md), [AR-0304](tasks/AR-0304-agent-codex.md), [AR-0305](tasks/AR-0305-agent-gemini.md), [AR-0306](tasks/AR-0306-agent-qwen-code.md), [AR-0307](tasks/AR-0307-agent-goose.md), [AR-0308](tasks/AR-0308-agent-mini-swe.md), [AR-0309](tasks/AR-0309-agent-openhands.md), [AR-0310](tasks/AR-0310-provider-profile-contract.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0502](tasks/AR-0502-replay-cassettes.md), [AR-0601](tasks/AR-0601-csb-integration.md), [AR-0603](tasks/AR-0603-csb-execution-assurance.md), [AR-0801](tasks/AR-0801-terminal-interface.md), [AR-0803](tasks/AR-0803-frontend-control-api.md), [AR-0901](tasks/AR-0901-formal-assurance.md), [AR-0904](tasks/AR-0904-contract-consistency.md), [AR-1001](tasks/AR-1001-experiment-comparability.md), [AR-1003](tasks/AR-1003-execution-budgets.md), [AR-1005](tasks/AR-1005-trace-interoperability.md) |
+| [AR-0102](tasks/AR-0102-process-runtime.md) | [AR-0101](tasks/AR-0101-extension-contracts.md) | [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0301](tasks/AR-0301-agent-opencode.md), [AR-0302](tasks/AR-0302-agent-opendesk.md), [AR-0303](tasks/AR-0303-agent-aider.md), [AR-0304](tasks/AR-0304-agent-codex.md), [AR-0305](tasks/AR-0305-agent-gemini.md), [AR-0306](tasks/AR-0306-agent-qwen-code.md), [AR-0307](tasks/AR-0307-agent-goose.md), [AR-0308](tasks/AR-0308-agent-mini-swe.md), [AR-0309](tasks/AR-0309-agent-openhands.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0601](tasks/AR-0601-csb-integration.md), [AR-0603](tasks/AR-0603-csb-execution-assurance.md), [AR-0901](tasks/AR-0901-formal-assurance.md), [AR-0905](tasks/AR-0905-recovery-models.md) |
+| [AR-0103](tasks/AR-0103-sandbox-runtime.md) | [AR-0102](tasks/AR-0102-process-runtime.md) | [AR-0105](tasks/AR-0105-sandbox-test-portability.md), [AR-0202](tasks/AR-0202-kernel-diagnostics.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0305](tasks/AR-0305-agent-gemini.md), [AR-0306](tasks/AR-0306-agent-qwen-code.md), [AR-0307](tasks/AR-0307-agent-goose.md), [AR-0308](tasks/AR-0308-agent-mini-swe.md), [AR-0309](tasks/AR-0309-agent-openhands.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0601](tasks/AR-0601-csb-integration.md), [AR-0603](tasks/AR-0603-csb-execution-assurance.md), [AR-0702](tasks/AR-0702-native-platforms.md), [AR-0703](tasks/AR-0703-native-platform-lab.md), [AR-0902](tasks/AR-0902-fault-assurance.md), [AR-1002](tasks/AR-1002-verifier-integrity.md) |
+| [AR-0104](tasks/AR-0104-durable-results.md) | [AR-0101](tasks/AR-0101-extension-contracts.md) | [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0314](tasks/AR-0314-recording-source-choice.md), [AR-0601](tasks/AR-0601-csb-integration.md), [AR-0603](tasks/AR-0603-csb-execution-assurance.md), [AR-0801](tasks/AR-0801-terminal-interface.md), [AR-0803](tasks/AR-0803-frontend-control-api.md), [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-0806](tasks/AR-0806-tui-history-analysis.md), [AR-0822](tasks/AR-0822-install-upgrade-rollback.md), [AR-0902](tasks/AR-0902-fault-assurance.md), [AR-0905](tasks/AR-0905-recovery-models.md), [AR-1002](tasks/AR-1002-verifier-integrity.md), [AR-1005](tasks/AR-1005-trace-interoperability.md) |
 | [AR-0105](tasks/AR-0105-sandbox-test-portability.md) | [AR-0103](tasks/AR-0103-sandbox-runtime.md) | [AR-0204](tasks/AR-0204-capacity-sweeps.md) |
-| [AR-0201](tasks/AR-0201-portable-metrics.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0102](tasks/AR-0102-process-runtime.md) | [AR-0202](tasks/AR-0202-kernel-diagnostics.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0504](tasks/AR-0504-replay-pacing.md), [AR-0601](tasks/AR-0601-csb-integration.md), [AR-0602](tasks/AR-0602-csb-monitoring-contention.md), [AR-0702](tasks/AR-0702-native-platforms.md), [AR-0703](tasks/AR-0703-native-platform-lab.md) |
-| [AR-0202](tasks/AR-0202-kernel-diagnostics.md) | [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0201](tasks/AR-0201-portable-metrics.md) | [AR-0602](tasks/AR-0602-csb-monitoring-contention.md) |
+| [AR-0201](tasks/AR-0201-portable-metrics.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0102](tasks/AR-0102-process-runtime.md) | [AR-0202](tasks/AR-0202-kernel-diagnostics.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0504](tasks/AR-0504-replay-pacing.md), [AR-0601](tasks/AR-0601-csb-integration.md), [AR-0602](tasks/AR-0602-csb-monitoring-contention.md), [AR-0604](tasks/AR-0604-csb-native-qualification.md), [AR-0702](tasks/AR-0702-native-platforms.md), [AR-0703](tasks/AR-0703-native-platform-lab.md) |
+| [AR-0202](tasks/AR-0202-kernel-diagnostics.md) | [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0201](tasks/AR-0201-portable-metrics.md) | [AR-0602](tasks/AR-0602-csb-monitoring-contention.md), [AR-0604](tasks/AR-0604-csb-native-qualification.md) |
 | [AR-0203](tasks/AR-0203-statistical-analysis.md) | [AR-0101](tasks/AR-0101-extension-contracts.md) | [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0806](tasks/AR-0806-tui-history-analysis.md), [AR-0901](tasks/AR-0901-formal-assurance.md), [AR-1001](tasks/AR-1001-experiment-comparability.md), [AR-1004](tasks/AR-1004-reliability-fairness.md) |
 | [AR-0204](tasks/AR-0204-capacity-sweeps.md) | [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0105](tasks/AR-0105-sandbox-test-portability.md), [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0203](tasks/AR-0203-statistical-analysis.md) | [AR-0801](tasks/AR-0801-terminal-interface.md), [AR-0803](tasks/AR-0803-frontend-control-api.md), [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-0903](tasks/AR-0903-release-qualification.md), [AR-0905](tasks/AR-0905-recovery-models.md), [AR-1004](tasks/AR-1004-reliability-fairness.md), [AR-1006](tasks/AR-1006-distributed-workers.md) |
 | [AR-0301](tasks/AR-0301-agent-opencode.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0102](tasks/AR-0102-process-runtime.md) | [AR-0311](tasks/AR-0311-provider-openai.md), [AR-0312](tasks/AR-0312-provider-ollama.md), [AR-0315](tasks/AR-0315-provider-parity-conformance.md), [AR-0316](tasks/AR-0316-agent-runtime-bundles.md), [AR-0505](tasks/AR-0505-agent-replay-conformance.md), [AR-1003](tasks/AR-1003-execution-budgets.md) |
@@ -469,8 +481,10 @@ flowchart LR
 | [AR-0503](tasks/AR-0503-strict-replay.md) | [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0502](tasks/AR-0502-replay-cassettes.md) | [AR-0314](tasks/AR-0314-recording-source-choice.md), [AR-0504](tasks/AR-0504-replay-pacing.md), [AR-0505](tasks/AR-0505-agent-replay-conformance.md), [AR-0902](tasks/AR-0902-fault-assurance.md), [AR-0905](tasks/AR-0905-recovery-models.md) |
 | [AR-0504](tasks/AR-0504-replay-pacing.md) | [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0503](tasks/AR-0503-strict-replay.md) | [AR-0314](tasks/AR-0314-recording-source-choice.md), [AR-0505](tasks/AR-0505-agent-replay-conformance.md) |
 | [AR-0505](tasks/AR-0505-agent-replay-conformance.md) | [AR-0301](tasks/AR-0301-agent-opencode.md), [AR-0302](tasks/AR-0302-agent-opendesk.md), [AR-0303](tasks/AR-0303-agent-aider.md), [AR-0304](tasks/AR-0304-agent-codex.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0504](tasks/AR-0504-replay-pacing.md) | [AR-0315](tasks/AR-0315-provider-parity-conformance.md), [AR-0802](tasks/AR-0802-executable-guides.md), [AR-0808](tasks/AR-0808-core-workflow-guides.md), [AR-0903](tasks/AR-0903-release-qualification.md) |
-| [AR-0601](tasks/AR-0601-csb-integration.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0201](tasks/AR-0201-portable-metrics.md) | [AR-0405](tasks/AR-0405-performance-workloads.md), [AR-0602](tasks/AR-0602-csb-monitoring-contention.md) |
-| [AR-0602](tasks/AR-0602-csb-monitoring-contention.md) | [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0202](tasks/AR-0202-kernel-diagnostics.md), [AR-0601](tasks/AR-0601-csb-integration.md) | None |
+| [AR-0601](tasks/AR-0601-csb-integration.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0603](tasks/AR-0603-csb-execution-assurance.md) | [AR-0405](tasks/AR-0405-performance-workloads.md), [AR-0602](tasks/AR-0602-csb-monitoring-contention.md), [AR-0604](tasks/AR-0604-csb-native-qualification.md) |
+| [AR-0602](tasks/AR-0602-csb-monitoring-contention.md) | [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0202](tasks/AR-0202-kernel-diagnostics.md), [AR-0601](tasks/AR-0601-csb-integration.md), [AR-0604](tasks/AR-0604-csb-native-qualification.md) | None |
+| [AR-0603](tasks/AR-0603-csb-execution-assurance.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0104](tasks/AR-0104-durable-results.md) | [AR-0601](tasks/AR-0601-csb-integration.md) |
+| [AR-0604](tasks/AR-0604-csb-native-qualification.md) | [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0202](tasks/AR-0202-kernel-diagnostics.md), [AR-0601](tasks/AR-0601-csb-integration.md) | [AR-0602](tasks/AR-0602-csb-monitoring-contention.md) |
 | [AR-0701](tasks/AR-0701-platform-manifests.md) | [AR-0001](tasks/AR-0001-repository-bootstrap.md) | [AR-0702](tasks/AR-0702-native-platforms.md), [AR-0703](tasks/AR-0703-native-platform-lab.md), [AR-0820](tasks/AR-0820-verifiable-install-artifacts.md), [AR-1007](tasks/AR-1007-benchmark-validity.md) |
 | [AR-0702](tasks/AR-0702-native-platforms.md) | [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0701](tasks/AR-0701-platform-manifests.md) | [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0813](tasks/AR-0813-remote-control-transport.md), [AR-0816](tasks/AR-0816-cross-platform-remote-interoperability.md), [AR-0903](tasks/AR-0903-release-qualification.md), [AR-1006](tasks/AR-1006-distributed-workers.md) |
 | [AR-0703](tasks/AR-0703-native-platform-lab.md) | [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0701](tasks/AR-0701-platform-manifests.md) | None |
@@ -520,7 +534,7 @@ flowchart LR
 | P1 | [AR-0803](tasks/AR-0803-frontend-control-api.md): Define the frontend control API | root-coordination-20260906 | Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary. | Await fresh independent immutable review of repaired exact cbb764c; publish only if all prior blockers and new concurrency/privacy semantics are approved. |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | replay-20260906 | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Repair immutable-config selection, root overlap, submission proof, causal-ID privacy and loopback auth blockers; rerun focused/full gates before replacement candidate. |
 
-### Planned (46)
+### Planned (48)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -531,6 +545,8 @@ flowchart LR
 | P1 | [AR-0315](tasks/AR-0315-provider-parity-conformance.md): Verify cross-agent provider parity | Unclaimed | Conformance-test identical OpenAI and Ollama profiles across the complete supported-agent matrix. | Prove provider-setting parity and replay/live selection across every supported agent. |
 | P1 | [AR-0316](tasks/AR-0316-agent-runtime-bundles.md): Publish reproducible agent runtime bundles | Unclaimed | Make supported agent installations reproducible, license-audited, SBOM-backed, and independently verifiable. | Define content-addressed offline runtime manifests for every supported agent and its complete transitive environment. |
 | P1 | [AR-0505](tasks/AR-0505-agent-replay-conformance.md): Prove real-agent replay conformance | Unclaimed | Test each actual client through recording and offline replay of engineering tasks. | Build production-boundary integration matrix using synthetic upstream service. |
+| P1 | [AR-0603](tasks/AR-0603-csb-execution-assurance.md): Establish pinned CSB execution and conformance boundary | Unclaimed | Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary. | Acquire and verify an exact public CSB source graph, then specify its bounded subprocess and containment contract. |
+| P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native CSB monitoring, kernel-contention evidence, collector overhead, loss semantics, and platform support before integration. | Build the exact CSB-to-ASB signal inventory and causal native A/B qualification matrix. |
 | P1 | [AR-0703](tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Provide genuine disposable native hosts for required Debian and openEuler platform qualification. | Provision credential-isolated disposable booted Debian and openEuler x86_64/aarch64 qualification capacity with bounded cost and availability. |
 | P1 | [AR-0804](tasks/AR-0804-tui-settings-wizard.md): Build the terminal settings wizard | Unclaimed | Guide users through agents, providers, workloads, resources, replay, metrics, and output settings. | Build the independent terminal frontend shell and guided configuration workflow. |
 | P1 | [AR-0805](tasks/AR-0805-tui-run-control.md): Add terminal run control and status | Unclaimed | Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI. | Implement transactional run launch and reconnectable live status views in the terminal frontend. |
