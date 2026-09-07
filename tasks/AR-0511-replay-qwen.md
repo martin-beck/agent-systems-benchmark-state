@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Qwen Code.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Qualify Qwen Code replay",
-  "updated_at": "2026-09-07T19:27:50+00:00",
+  "updated_at": "2026-09-07T19:39:21+00:00",
   "worktree_key": "agent-systems-benchmark-replay-qwen"
 }
 ---
@@ -225,3 +225,6 @@ Qualify Qwen Code record/replay, network denial, parity, retries, tool calls, ca
   disposable prior targets and rebuilding jobs=1/incremental=0 passed. Support remains exact pinned
   Linux x86_64 loopback fixture only; no live provider, non-loopback, other version, or aarch64
   claim.
+
+- 2026-09-07T19:39:21+00:00: Recorded command exit 0; command argv SHA-256
+  fb2cc684f1a9112f84be50279837e1b2e28ab702fb537ac7df52bf5f83755d0c.
