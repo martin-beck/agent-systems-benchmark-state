@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**110 ARs tracked** across 5 active status categories.
+**110 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 65 |
 | **Future** | Deferred roadmap work | 0 |
@@ -148,7 +148,7 @@ flowchart LR
         AR_0842["AR-0842 - Planned"]:::status_planned
         AR_0843["AR-0843 - Planned"]:::status_planned
         AR_0844["AR-0844 - Planned"]:::status_planned
-        AR_0845["AR-0845 - Open"]:::status_open
+        AR_0845["AR-0845 - In progress"]:::status_in_progress
         AR_0846["AR-0846 - Planned"]:::status_planned
     end
     subgraph series_09["09 - Assurance"]
@@ -664,19 +664,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0317](tasks/AR-0317-runtime-bundle-manifest.md): Define runtime bundle manifest and verifier | contracts-20260906 | Define common signed runtime bundle manifests and offline verification. | Define signed runtime-bundle manifests and an offline verifier for content, architecture, libc, license, and SBOM identity. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
+| P1 | [AR-0845](tasks/AR-0845-ci-artifact-quota-resilience.md): Harden CI artifact quota behavior | quality-20260906 | Prevent exhausted GitHub artifact quota from obscuring authoritative ASB results. | Make optional CI evidence quota-aware while preserving required-check semantics and provenance. |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | replay-20260906 | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Independently review unpublished exact candidate 1605693dbb7aade01dd47cb074e35bca02df873b tree 7d99a7f69d97335cad802699dbf9a7ac7bac2e1b; do not publish or merge without coordinator authorization. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0845](tasks/AR-0845-ci-artifact-quota-resilience.md): Harden CI artifact quota behavior | Unclaimed | Prevent exhausted GitHub artifact quota from obscuring authoritative ASB results. | Make optional CI evidence quota-aware while preserving required-check semantics and provenance. |
 
 ### Blocked (4)
 
