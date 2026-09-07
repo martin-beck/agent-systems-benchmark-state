@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenDesk.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Qualify OpenDesk replay",
-  "updated_at": "2026-09-07T14:49:16+00:00",
+  "updated_at": "2026-09-07T14:49:19+00:00",
   "worktree_key": "agent-systems-benchmark-replay-opendesk"
 }
 ---
@@ -276,3 +276,6 @@ Qualify OpenDesk record/replay, network denial, parity, retries, tool calls, can
   exact main, remove temporary span_id spelling normalization, capture model-catalog GET
   interactions rather than side-serving them, prove strict ordering and byte-exact SSE, then run
   native cancel/malformed/network-denial plus all full gates.
+
+- 2026-09-07T14:49:19+00:00: Recorded command exit 0; command argv SHA-256
+  d55314f2408b36a09f3dec1c1d6183e5b0e2c532da213ea1a30265a06f4bee14.
