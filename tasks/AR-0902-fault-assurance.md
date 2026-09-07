@@ -11,7 +11,7 @@
   "id": "AR-0902",
   "next_action": "Design bounded fuzz/fault targets in new owned paths and dedicated workflow; keep shared Cargo/schema and active agent paths untouched.",
   "observed_branch": "feature/fault-assurance",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "e85548d00cffcc3a014bfbc04b8fc79c5fe35da0",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0902.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Add fuzz mutation and lifecycle fault campaigns",
-  "updated_at": "2026-09-07T01:55:07+00:00",
+  "updated_at": "2026-09-07T02:03:45+00:00",
   "worktree_key": "agent-systems-benchmark-fault-assurance"
 }
 ---
