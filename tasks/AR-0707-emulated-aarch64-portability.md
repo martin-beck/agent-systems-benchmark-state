@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add explicit emulated-aarch64 portability qualification without claiming native support.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Qualify emulated aarch64 portability",
-  "updated_at": "2026-09-07T21:36:42+00:00",
+  "updated_at": "2026-09-07T21:36:48+00:00",
   "worktree_key": "agent-systems-benchmark-emulated-aarch64-portability"
 }
 ---
@@ -83,3 +83,6 @@ Acceptance criteria:
 
 - 2026-09-07T21:36:42+00:00: Recorded command exit 0; command argv SHA-256
   270c98633fb7108d87d6d9086561d37e9c451a9a7eae0133ff7fcb1ca949d4a8.
+
+- 2026-09-07T21:36:48+00:00: Recorded command exit 127; command argv SHA-256
+  c48643b4b1231afe5f3e3864df2542729ab7118f7c1ab4c532a6d6c16cf11507.
