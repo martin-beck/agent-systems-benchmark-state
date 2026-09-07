@@ -10,7 +10,7 @@
     "AR-0801"
   ],
   "id": "AR-0803",
-  "next_action": "Repair independently identified endpoint, total-deadline, exact-negotiation, initial-envelope, and privacy-enforcement gaps; revalidate immutable replacement.",
+  "next_action": "Await fresh independent immutable review of repaired exact cbb764c; publish only if all prior blockers and new concurrency/privacy semantics are approved.",
   "observed_branch": "feature/frontend-control-api",
   "observed_dirty": 0,
   "observed_head": "cbb764c45c6128d75f42fb78a3a2a15a0874528a",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary.",
-  "task_revision": 108,
+  "task_revision": 109,
   "title": "Define the frontend control API",
-  "updated_at": "2026-09-07T04:14:19+00:00",
+  "updated_at": "2026-09-07T04:14:45+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api"
 }
 ---
@@ -312,3 +312,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T04:14:19+00:00: Recorded command exit 0; command argv SHA-256
   333876de2adcec47087e252fdd10fa9468dff65657e37d11cbcedd61829c2e90.
+
+- 2026-09-07T04:14:45+00:00: Replacement cbb764c tree 53c565b is one signed+DCO commit on 4a59593
+  and clean. It adds ControlServer/ControlClient, complete negotiation-envelope validation with
+  exact version intersection, diminishing absolute monotonic ingress/backend/write deadlines,
+  fail-closed recursive public-output privacy enforcement, and lifecycle tests for disconnect
+  completion, restart/idempotent retry, malformed first request, sensitive backend output, trickle
+  traffic and a noncooperative backend. Pinned 1.93 full fmt/clippy/workspace tests/docs/release
+  build, 95.86% package lines, configured workspace coverage,
+  deny/audit/actionlint/zizmor/Gitleaks/repository policy/failure fixtures, formal executable/Loom
+  tests, 5/5 Kani proofs and Kani negative are green. A stable-toolchain exploratory full Clippy
+  failed only on a newer Clippy lint in unchanged replay code; the documented pinned 1.93 run
+  passed.
