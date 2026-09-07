@@ -2,7 +2,7 @@
 {
   "branch": "feature/csb-execution-assurance",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T09:23:46+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/csb-execution-assurance",
   "observed_dirty": 0,
   "observed_head": "939c35c5ee64c9f9685cec471efc03cb620643c2",
-  "owner": "contracts-20260906",
+  "owner": "",
   "plan": "../plans/AR-0603.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T06:25:51+00:00",
+  "updated_at": "2026-09-07T06:26:10+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
@@ -99,3 +99,6 @@ Implementation has not started. Read the linked plan before claiming.
   generator/syzkaller/monitor/platform claims, and four bounded JSON-RPC fixture envelopes.
   Wrapper-run jq parsing, 64 KiB fixture cap, diff/privacy checks passed; worktree is clean. No
   offline reproducible upstream Python environment or executable digest is claimed yet.
+
+- 2026-09-07T06:26:10+00:00: Release after signed+DCO CSB provenance checkpoint 939c35c; switch
+  worker to authorized AR-0830 repair and online canary.
