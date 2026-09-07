@@ -15,8 +15,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-agent-qwen-code` | `feature/agent-qwen-code` | `0be96c9ec50e` | 0 | behind 16, ahead 0 |
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `0717d4acd168` | 0 | behind 32, ahead 0 |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 101, ahead 0 |
-| `agent-systems-benchmark-development-host-runner-capacity` | `feature/development-host-runner-capacity` | `40d54709e923` | 4 | behind 0, ahead 2 |
-| changed files | - | - | - | `tests/runners/test_runner_scripts.sh`, `tools/runners/README.md`, `tools/runners/common.sh`, `tools/runners/setup.sh` |
+| `agent-systems-benchmark-development-host-runner-capacity` | `feature/development-host-runner-capacity` | `cdf18c6bf11b` | 0 | behind 0, ahead 3 |
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 90, ahead 0 |
 | `agent-systems-benchmark-engineering-workloads` | `feature/engineering-workloads` | `41ffc6eb8f1a` | 0 | behind 34, ahead 0 |
 | `agent-systems-benchmark-experiment-comparability` | `feature/experiment-comparability` | `eb5e84933830` | 0 | behind 44, ahead 0 |
