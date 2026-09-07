@@ -2,7 +2,7 @@
 {
   "branch": "feature/gemini-thinking-config-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T19:42:49+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0518"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/gemini-thinking-config-contract",
   "observed_dirty": 0,
   "observed_head": "0aff7023cacf5ccf9e85cb3460f121b8370b9313",
-  "owner": "replay_20260906",
+  "owner": "",
   "plan": "../plans/AR-0519.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Correct Gemini thinkingConfig strict-replay contract from pinned capture evidence.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Gemini thinkingConfig contract repair",
-  "updated_at": "2026-09-07T17:50:42+00:00",
+  "updated_at": "2026-09-07T17:53:46+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-thinking-config-contract"
 }
 ---
@@ -150,3 +150,15 @@ Repair the merged Gemini dialect using privacy-safe pinned evidence: `thinkingCo
 
 - 2026-09-07T17:50:42+00:00: Recorded command exit 0; command argv SHA-256
   bc3b5a0add5b660373b2ca670ee624797d5d9a80d1196e33cd1a9611d5a1af2a.
+
+- 2026-09-07T17:53:46+00:00: Released focused Gemini thinkingConfig contract repair after
+  independent review and exact-tree verification. PR #47 candidate
+  0aff7023cacf5ccf9e85cb3460f121b8370b9313 was integrated as SSH-signed+DCO no-ff merge
+  6a5b9b5181d4dffa639996c07e69a28eb84887a0 with exact parents 74d311ca+0aff702 and reviewed tree
+  d309c2d6; product main/remote and PR merge identity are exact. Local exact-main fmt, workspace
+  Clippy/tests/docs/release, and formal Loom/state/production passed clean. Exact-main push runs all
+  completed success: formal 34149163925, fault 34149164040, quality 34149164023, Rust x86_64+aarch64
+  34149164072. Pre-release reconcile b88f33cf, snapshot, live doctor, render check, schema
+  validation, and all 38 state tests passed. Runtime now requires exactly one includeThoughts
+  boolean and exact recorded-value parity; the public fixture uses only a synthetic value. Shared
+  replay fence returned for AR-0510 real pinned acceptance.
