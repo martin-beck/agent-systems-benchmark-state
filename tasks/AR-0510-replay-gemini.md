@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Gemini.",
-  "task_revision": 110,
+  "task_revision": 111,
   "title": "Qualify Gemini replay",
-  "updated_at": "2026-09-07T18:17:58+00:00",
+  "updated_at": "2026-09-07T18:19:01+00:00",
   "worktree_key": "agent-systems-benchmark-replay-gemini"
 }
 ---
@@ -357,3 +357,6 @@ Qualify Gemini record/replay, network denial, parity, retries, tool calls, cance
   first wrapper exit occurred only after all targets when cargo-fuzz left the documented generated
   fuzz/artifacts directory, which was removed and lock/tree integrity then passed. Candidate is held
   unpublished pending independent immutable review.
+
+- 2026-09-07T18:19:01+00:00: Recorded command exit 0; command argv SHA-256
+  3b338b97d6a71f4fdf684b9f06964c1a2935523f1f934a4e5128683a31687ed5.
