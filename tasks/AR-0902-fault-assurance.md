@@ -9,7 +9,7 @@
     "AR-0503"
   ],
   "id": "AR-0902",
-  "next_action": "Monitor PR #28 exact head ad00e8b: fault assurance 34077199689, quality 34077199617, Rust 34077199611 and formal 34077199652; investigate and repair any failure without merge.",
+  "next_action": "Repair PR #28 bounded-fuzz dependency-policy failure with an explicit independent fuzz-workspace license/policy; validate and publish a focused signed DCO successor, then require fresh exact-head CI.",
   "observed_branch": "feature/fault-assurance",
   "observed_dirty": 0,
   "observed_head": "ad00e8b1ea1607043eea9bfe6d86d8d4828abe92",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "Add fuzz mutation and lifecycle fault campaigns",
-  "updated_at": "2026-09-07T02:43:22+00:00",
+  "updated_at": "2026-09-07T02:45:16+00:00",
   "worktree_key": "agent-systems-benchmark-fault-assurance"
 }
 ---
@@ -287,3 +287,9 @@ Implementation has not started. Read the linked plan before claiming.
   force-with-lease and verified remote equality. Opened focused product PR #28
   https://github.com/martin-beck/agent-systems-benchmark/pull/28 at exact base e85548d and head
   ad00e8b. All four exact-head workflow runs started.
+
+- 2026-09-07T02:45:16+00:00: Exact-head fault run 34077199689 bounded-fuzz job 101605557698 failed
+  before fuzz execution in cargo deny: asb-fuzz lacked a license, its three local path dependencies
+  were classified as wildcard, and libfuzzer-sys 0.4.13 requires NCSA in addition to MIT/Apache-2.0.
+  This is deterministic policy configuration, not a fuzz finding or platform-specific failure.
+  Retained faults passed both architectures; formal run is green.
