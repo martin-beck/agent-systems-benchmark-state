@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0509",
-  "next_action": "Prove credential-free record/replay conformance for Codex with network denial and malformed/tool/cancel negatives.",
+  "next_action": "Preserve isolated Codex test; await serialized child AR fixing privacy-safe request-body pointer replay, then finish native parity/retry/cancel gates.",
   "observed_branch": "feature/replay-codex",
   "observed_dirty": 1,
   "observed_head": "612a5a7e3d471f9f2481d7943b06e6914c893dd2",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Codex.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Qualify Codex replay",
-  "updated_at": "2026-09-07T13:49:00+00:00",
+  "updated_at": "2026-09-07T13:50:58+00:00",
   "worktree_key": "agent-systems-benchmark-replay-codex"
 }
 ---
@@ -115,3 +115,17 @@ Qualify Codex record/replay, network denial, parity, retries, tool calls, cancel
 
 - 2026-09-07T13:49:00+00:00: Recorded command exit 101; command argv SHA-256
   38bc9e0094d8e661f2860e8aac5de157cd53e1f9cd19d429b7e95a50bd715600.
+
+- 2026-09-07T13:50:58+00:00: Native Codex 0.153.4 capture/tool/grading succeeds in loopback-only
+  namespace, but privacy-safe replay is blocked: Redactor persists configured request-body pointers
+  while StrictReplayService compares incoming JSON without applying descriptor pointers; redacting
+  volatile Codex option fields also leaves RecordedRequest.options stale, so
+  StrictReplayService::new rejects InvalidCassette. Required child AR paths:
+  crates/asb-replay/src/redaction.rs, src/service.rs, focused tests/docs. Criteria: synchronize
+  denormalized request fields after redaction; bounded exact-pointer normalization of incoming JSON
+  only to validated expected redaction markers; preserve strict matching of every unselected
+  field/tools/causal IDs; reject absent/duplicate/invalid pointers and marker injection; prove
+  prompt/metadata absent from sealed bytes and a real Codex cassette matches while changed
+  unredacted options/tools fail. Run replay unit/integration, privacy/Gitleaks, branch-aware
+  coverage and applicable formal/fuzz gates. No shared replay mutation made under AR-0509 pending
+  coordinator serialization.
