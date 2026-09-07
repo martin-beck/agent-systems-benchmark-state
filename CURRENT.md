@@ -11,6 +11,12 @@ Never edit this file directly.
 | P0 | [AR-0513](tasks/AR-0513-replay-miniswe.md): Qualify mini-SWE replay | Qualify replay conformance for mini-SWE-agent. | Await independent immutable review of exact candidate 516f7b6b1373a6d744e3005ae573b56df2962153; publish only after approval and then require exact-head x86_64/aarch64 quality/formal/fault CI. | replay_20260906 |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. | root-coordination-20260906 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0520](tasks/AR-0520-interaction-aware-redaction.md): Interaction-aware request redaction | Support per-interaction request redaction policies for mixed catalog and private requests. | Make request-body redaction selectors interaction/method-aware so GET catalog entries can remain selector-free while POST bodies remain private and replayable. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -26,7 +32,6 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0514](tasks/AR-0514-replay-openhands.md): Qualify OpenHands replay | Qualify replay conformance for OpenHands. | Prove credential-free record/replay conformance for OpenHands with network denial and malformed/tool/cancel negatives. | - |
 | P0 | [AR-0515](tasks/AR-0515-replay-matrix.md): Aggregate replay conformance matrix | Aggregate complete per-agent replay conformance. | Aggregate per-agent replay evidence into the complete supported-agent conformance matrix. | - |
-| P0 | [AR-0520](tasks/AR-0520-interaction-aware-redaction.md): Interaction-aware request redaction | Support per-interaction request redaction policies for mixed catalog and private requests. | Make request-body redaction selectors interaction/method-aware so GET catalog entries can remain selector-free while POST bodies remain private and replayable. | - |
 | P0 | [AR-0837](tasks/AR-0837-containerized-runner-boundary.md): Qualify containerized runner boundary | Provide the containerized workflow boundary required for safe trusted runner claims. | Define and qualify a digest-pinned workflow container boundary separating operator, listener, and job principals without host mounts. | - |
 | P1 | [AR-0311](tasks/AR-0311-provider-openai.md): Support a shared OpenAI provider | Apply one default OpenAI provider profile consistently to all supported agents. | Implement the default OpenAI provider profile for every adapter that proves compatible support. | - |
 | P1 | [AR-0312](tasks/AR-0312-provider-ollama.md): Support a shared local Ollama provider | Apply one pinned local Ollama provider and model configuration to all supported agents. | Implement a loopback-only local Ollama profile and prove every compatible adapter translation. | - |
