@@ -530,7 +530,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0702](tasks/AR-0702-native-platforms.md): Validate native Linux kernels and architectures | quality-20260906 | Exercise native x86_64 and aarch64 including booted openEuler kernels. | Independent immutable review of d2fc492; if approved, publish and collect exact-head native x86_64/aarch64 CI. Keep in progress until AR-0703 supplies genuine Debian/openEuler native capacity. |
+| P1 | [AR-0702](tasks/AR-0702-native-platforms.md): Validate native Linux kernels and architectures | quality-20260906 | Exercise native x86_64 and aarch64 including booted openEuler kernels. | Independently review unpublished exact b56a3238d252842d931755a56e618a06103b7131/tree 3d96fc1d84c7752a71a3c8216b77ca0ff6b11855; do not publish or release. AR-0703 genuine Debian/openEuler x86_64/aarch64 capacity remains the completion blocker. |
 | P1 | [AR-0803](tasks/AR-0803-frontend-control-api.md): Define the frontend control API | root-coordination-20260906 | Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary. | Await fresh independent immutable review of repaired exact cbb764c; publish only if all prior blockers and new concurrency/privacy semantics are approved. |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | replay-20260906 | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Await independent immutable review of exact replacement candidate 0030358074c1acb92aad10d683208b243d9a6ad7/tree f3cc91544d7472c7ded1cfcd83a3d4c04d84012a; do not publish without coordinator authorization. |
 

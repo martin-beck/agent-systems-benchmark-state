@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0702",
-  "next_action": "Independent immutable review of d2fc492; if approved, publish and collect exact-head native x86_64/aarch64 CI. Keep in progress until AR-0703 supplies genuine Debian/openEuler native capacity.",
+  "next_action": "Independently review unpublished exact b56a3238d252842d931755a56e618a06103b7131/tree 3d96fc1d84c7752a71a3c8216b77ca0ff6b11855; do not publish or release. AR-0703 genuine Debian/openEuler x86_64/aarch64 capacity remains the completion blocker.",
   "observed_branch": "feature/native-platforms",
   "observed_dirty": 0,
   "observed_head": "b56a3238d252842d931755a56e618a06103b7131",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Exercise native x86_64 and aarch64 including booted openEuler kernels.",
-  "task_revision": 241,
+  "task_revision": 242,
   "title": "Validate native Linux kernels and architectures",
-  "updated_at": "2026-09-07T05:07:49+00:00",
+  "updated_at": "2026-09-07T05:08:10+00:00",
   "worktree_key": "agent-systems-benchmark-native-platforms"
 }
 ---
@@ -640,3 +640,20 @@ Implementation has not started. Read the linked plan before claiming.
   1fc7db177816257e40c3988806f8af6ceafd8997d3db0d6c680b26f140dad203.
 
 - 2026-09-07T05:07:49+00:00: Heartbeat by quality-20260906.
+
+- 2026-09-07T05:08:10+00:00: Repaired all four immutable-review blocker groups in signed+DCO commits
+  386c2e9, 8b38a70, b89a087, and b56a323. Exact release matching now rejects substring drift;
+  trusted output traversal is component-wise dirfd O_NOFOLLOW with deterministic intermediate and
+  destination race negatives; sandbox tools and booted kernel bind observed package
+  ownership/version/architecture, package integrity, binary/live-kernel digests, exact source
+  commit/tree/base ancestry, closed canonical schema/check/output/privacy/virtualization fields, and
+  post-check clean identity. AppArmor is honestly registered-unproven absent a denial oracle.
+  Genuine Ubuntu 24.04.4 x86_64 kernel 7.0.0-28 report native-386c2e9 is canonical/full with all
+  process, metrics, and sandbox checks passed and no private identifiers. Collector adversarial
+  suite 21/21 and full platform suite 27/27 pass; collector branch-aware coverage is 95% (426
+  statements, 146 branches). Full fmt/clippy/workspace tests/docs/release, cargo deny/audit,
+  workspace/critical coverage, repository policy, actionlint/zizmor, Gitleaks, failure fixtures,
+  manifest validation, JSON Schema positive+nested/limit negatives, privacy/signature/DCO, Kani 5/5
+  and deliberate negative all pass. Workflow template-injection finding was repaired before the
+  final candidate. Exact tree is clean. AR-0703 still blocks genuine Debian/openEuler and remaining
+  native architecture cells; none are emulated or claimed.
