@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0830",
-  "next_action": "Resolve the state-tool Ruff regression under coordination ownership, then decide the unmet AR-0830 reboot-persistence criterion: ephemeral registration is necessarily consumed after one job, so an enabled boot service needs a separate tokenless supervisor/orchestration design rather than a false restart claim.",
+  "next_action": "Reboot persistence is deferred to AR-0833; AR-0830 proven scope is complete.",
   "observed_branch": "feature/development-host-runner-capacity",
   "observed_dirty": 0,
   "observed_head": "0d9b363538d27074c284616f195a537f56480b00",
