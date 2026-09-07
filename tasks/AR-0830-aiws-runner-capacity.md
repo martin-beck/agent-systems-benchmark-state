@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0830",
-  "next_action": "Run only a protected manually dispatched canary on the complete composite label, then verify ephemeral deregistration, stop/reset cleanup and Relay listener invariance. Do not create or route an ordinary/public-PR workflow; coordinate the AR-0831 workflow fence first.",
+  "next_action": "Await exact-main fault/quality/Rust completion on 14ac5ce; after all green, independently verify service configuration/restart semantics and decide whether AR-0830 can release done with reboot explicitly unclaimed or needs a persistent service follow-up.",
   "observed_branch": "feature/development-host-runner-capacity",
   "observed_dirty": 0,
   "observed_head": "0d9b363538d27074c284616f195a537f56480b00",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 134,
+  "task_revision": 135,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T06:53:34+00:00",
+  "updated_at": "2026-09-07T06:54:05+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
@@ -416,3 +416,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T06:53:34+00:00: Recorded command exit 0; command argv SHA-256
   5fa1be3f50c4020f65a9b99769b57e266a0131ae8776c57d2ece7bb01070d7fa.
+
+- 2026-09-07T06:54:05+00:00: Independent review approved exact 0d9b363/tree ab7c902. PR #32
+  exact-head runs 34092510475 fault, 34092510505 quality, 34092510504 Rust x86_64/aarch64, and
+  34092510576 formal all passed. Signed+DCO no-ff merge 14ac5ce3bcc272fc81e764a87b5b82128133f00d
+  with exact parents 814397f and 0d9b363 was pushed under an exact main lease. Protected canary was
+  dispatched exactly once as run 34092791959/job 101649674601 on exact merge head and passed. The
+  ephemeral runner deregistered server-side and removed local registration state, transient service
+  became inactive, owned listener count is zero, reset completed with four mutable roots empty, and
+  exact non-ASB Runner.Listener count remained four. No reboot persistence, public-PR routing, or
+  AR-0832 qualification is claimed.
