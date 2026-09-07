@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for mini-SWE-agent.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Qualify mini-SWE replay",
-  "updated_at": "2026-09-07T19:44:15+00:00",
+  "updated_at": "2026-09-07T19:45:36+00:00",
   "worktree_key": "agent-systems-benchmark-replay-miniswe"
 }
 ---
@@ -70,3 +70,6 @@ Qualify mini-SWE-agent record/replay, network denial, parity, retries, tool call
   11244ed40ef37a01be0caa04ed9bb047d10678a0eaf7b0f8549f23e67bba1dbd.
 
 - 2026-09-07T19:44:15+00:00: Heartbeat by replay_20260906.
+
+- 2026-09-07T19:45:36+00:00: Recorded command exit 0; command argv SHA-256
+  4c2eb0504205ee1f910bea8fe4ae983b578f7255251f24b90f42ea9ce8807bd0.
