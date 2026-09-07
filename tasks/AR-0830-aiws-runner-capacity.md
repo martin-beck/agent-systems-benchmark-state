@@ -17,11 +17,11 @@
   "plan": "../plans/AR-0830.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 102,
+  "task_revision": 103,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T06:30:57+00:00",
+  "updated_at": "2026-09-07T06:35:50+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
@@ -321,3 +321,6 @@ Implementation has not started. Read the linked plan before claiming.
   e9b947f25dbcc663f6bfb5048bbbbee7e5479c42c0442dfeea3b8e23bbc93bea); no sanitized diagnostics were
   recorded. GitHub registration asb-runner-e24284d3bbb7 is preserved offline with exact label;
   diagnose service identity/environment before retry and never re-register.
+
+- 2026-09-07T06:35:50+00:00: High-priority runner repair: diagnose listener startup under registered
+  identity, start without re-registration, verify online exact label, canary and lifecycle.
