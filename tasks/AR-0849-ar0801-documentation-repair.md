@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair stale AR-0801 implementation and CLI documentation claims.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Repair AR-0801 documentation consistency",
-  "updated_at": "2026-09-07T22:51:21+00:00",
+  "updated_at": "2026-09-07T22:51:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar0801-documentation-repair"
 }
 ---
@@ -75,3 +75,6 @@ the examples against the merged binary and tests. Do not reopen or rewrite AR-08
   failure/platform gates all pass. State Ruff/mypy/schema/render/live doctor, 38 tests, and 96
   percent branch coverage pass. Initial custom transaction import failed before mutation because its
   module path was absent; corrected invocation then committed atomically.
+
+- 2026-09-07T22:51:46+00:00: Recorded command exit 0; command argv SHA-256
+  0865e3c3dc48135c71e2b9d5306a6899260561f0bc9f021d0b009d1046350852.
