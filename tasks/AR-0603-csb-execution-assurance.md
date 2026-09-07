@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 116,
+  "task_revision": 117,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T10:26:43+00:00",
+  "updated_at": "2026-09-07T10:27:09+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
@@ -386,3 +386,6 @@ Implementation has not started. Read the linked plan before claiming.
   short -s selected a merge strategy rather than adding a DCO trailer; primary main remains clean
   and exact 0cdccfb and remote is unchanged. Changed conclusion: use explicit --signoff with -S on
   the single retry.
+
+- 2026-09-07T10:27:09+00:00: Recorded command exit 0; command argv SHA-256
+  aa104e24b0be898390e6d78179186ccb0611a0e5dd699a781a6f65b996de2984.
