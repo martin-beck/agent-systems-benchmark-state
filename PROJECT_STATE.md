@@ -2,15 +2,14 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `d384c4c54a4576dadaae3a542cfc09a5e339a4fe`
-- Local origin/main: `d384c4c54a4576dadaae3a542cfc09a5e339a4fe`
+- Product remote main: `2579362d6936b25e6008583f7bd485e5498a4e3f`
+- Local origin/main: `2579362d6936b25e6008583f7bd485e5498a4e3f`
 - Primary worktree head: `2579362d6936b25e6008583f7bd485e5498a4e3f`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #24 | `feature/agent-codex@eb03bd9d9ed5` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(agents): add bounded Codex adapter |
 
 ## Recent workflows
 
