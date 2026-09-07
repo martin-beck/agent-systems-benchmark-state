@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 2 |
-| **Planned** | Defined work awaiting promotion or dependencies | 54 |
+| **Planned** | Defined work awaiting promotion or dependencies | 53 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 36 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -130,7 +130,7 @@ flowchart LR
         AR_0834["AR-0834 - Done"]:::status_done
         AR_0835["AR-0835 - Done"]:::status_done
         AR_0836["AR-0836 - In progress"]:::status_in_progress
-        AR_0840["AR-0840 - Planned"]:::status_planned
+        AR_0840["AR-0840 - Open"]:::status_open
         AR_0841["AR-0841 - Planned"]:::status_planned
         AR_0842["AR-0842 - Planned"]:::status_planned
         AR_0843["AR-0843 - Planned"]:::status_planned
@@ -585,11 +585,12 @@ flowchart LR
 | P0 | [AR-0836](tasks/AR-0836-runner-isolation-hardening.md): Harden runner isolation and credential boundaries | quality-20260906 | Harden development-host runner isolation against same-UID job tampering and diagnostic leakage. | Separate job execution from operator-owned installation, credentials, control state, and diagnostics with a verified immutable boundary. |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | replay-20260906 | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Independently review unpublished exact candidate 1605693dbb7aade01dd47cb074e35bca02df873b tree 7d99a7f69d97335cad802699dbf9a7ac7bac2e1b; do not publish or merge without coordinator authorization. |
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0603](tasks/AR-0603-csb-execution-assurance.md): Establish pinned CSB execution and conformance boundary | Unclaimed | Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary. | Validate the corrected scratch diff with git apply --check, apply it once through handoffctl run, then run crate-focused checks after the serialized Cargo fence is granted. |
+| P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | Unclaimed | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
 
 ### Blocked (2)
 
@@ -598,7 +599,7 @@ flowchart LR
 | P1 | [AR-0702](tasks/AR-0702-native-platforms.md): Validate native Linux kernels and architectures | Unclaimed | Exercise native x86_64 and aarch64 including booted openEuler kernels. | Keep reviewed PR #31 head bdaf9c108226f34ec6098f75b51fd601da9e9571 immutable and green; await AR-0703 genuine Debian/openEuler x86_64/aarch64 lab capacity before completing remaining native qualification and AR-0702. |
 | P1 | [AR-0803](tasks/AR-0803-frontend-control-api.md): Define the frontend control API | Unclaimed | Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary. | Await fresh independent immutable review of repaired exact cbb764c; publish only if all prior blockers and new concurrency/privacy semantics are approved. |
 
-### Planned (54)
+### Planned (53)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -633,7 +634,6 @@ flowchart LR
 | P1 | [AR-0823](tasks/AR-0823-installation-qualification.md): Audit installation and first-run experience | Unclaimed | Qualify the one-line experience and complete install lifecycle across the supported native matrix. | Independently attack and usability-test first install, onboarding, upgrade, rollback, repair, and uninstall. |
 | P1 | [AR-0832](tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Unclaimed | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. |
 | P1 | [AR-0833](tasks/AR-0833-aiws-runner-reboot-lifecycle.md): Qualify tokenless runner reboot lifecycle | Unclaimed | Qualify safe reboot and restart lifecycle for disposable development-host ASB runners. | Design and qualify a tokenless supervisor/orchestration path that can provision fresh ephemeral registrations after boot without storing reusable GitHub credentials. |
-| P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | Unclaimed | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
 | P1 | [AR-0841](tasks/AR-0841-frontend-local-transport.md): Implement frontend local transport | Unclaimed | Implement the local frontend control transport and authorization boundary. | Implement bounded owner-only Unix-socket transport with peer checks and fail-closed framing. |
 | P1 | [AR-0842](tasks/AR-0842-frontend-run-lifecycle.md): Implement frontend run lifecycle | Unclaimed | Define and implement frontend-independent run lifecycle semantics. | Implement idempotent launch, cancellation, status reconnect, history, and recovery semantics. |
 | P1 | [AR-0843](tasks/AR-0843-frontend-privacy-assurance.md): Assure frontend privacy and faults | Unclaimed | Qualify frontend privacy, artifact access, and fault behavior. | Enforce public-summary and sensitive-artifact boundaries with privacy and fault tests. |
