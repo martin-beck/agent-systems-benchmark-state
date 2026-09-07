@@ -2,7 +2,7 @@
 {
   "branch": "feature/agent-mini-swe",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T14:02:34+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/agent-mini-swe",
   "observed_dirty": 0,
   "observed_head": "3cf9a53fce709562119ec2ae2f55c304be0840e9",
-  "owner": "replay-20260906",
+  "owner": "",
   "plan": "../plans/AR-0308.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Run pinned mini-SWE-agent as a bounded batch engineering agent.",
-  "task_revision": 280,
+  "task_revision": 281,
   "title": "Implement mini-SWE-agent client adapter",
-  "updated_at": "2026-09-07T12:43:12+00:00",
+  "updated_at": "2026-09-07T12:44:07+00:00",
   "worktree_key": "agent-systems-benchmark-agent-mini-swe"
 }
 ---
@@ -960,3 +960,18 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T12:43:12+00:00: Recorded command exit 0; command argv SHA-256
   678fa5f032faab57c10737f945987e85a3759a993eaafd3f82f1061299dcf408.
+
+- 2026-09-07T12:44:07+00:00: AR-0308 completed at SSH-signed matching-DCO merge
+  a0d80e48deb8750543606c2b577e1a52df26fc4c (parents ad0cdfc35d141fe63221843c38e9580630c1d1b5 and
+  independently reviewed exact PR #39 head 3cf9a53fce709562119ec2ae2f55c304be0840e9; tree
+  35dc5e8335f2b6c719db328733e44dbefed1ff79). PR exact-head CI succeeded: Rust 34122642569, quality
+  34122642558, formal 34122642598, fault assurance 34122642542. Exact-main CI succeeded: Rust
+  x86_64+aarch64 34123003973, quality/supply 34123003969, formal/Kani/Loom 34123004119,
+  fault/fuzz/mutation 34123004066. Durable prepublication
+  focused/full/formal/privacy/supply/coverage evidence remains recorded; local post-rebase cargo
+  could not start because cargo was absent, while byte-identical range and hosted exact-head/main
+  gates closed that environmental gap. Final state Ruff, mypy, 38 tests, 96% branch coverage,
+  schema, rendered status, offline/live doctor, reconcile/snapshot passed. Product main, feature
+  ref, and state main are clean and synchronized. Preserve explicit unsigned-upstream-tag,
+  product-bound environment, ambient CPython stdlib/native ABI, native-x86-only journey, no
+  streaming/subscription/replay, and delegated hard-containment limits.
