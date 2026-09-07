@@ -511,7 +511,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0803](tasks/AR-0803-frontend-control-api.md): Define the frontend control API | root-coordination-20260906 | Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary. | Define a bounded versioned control/status API between the runner and independent frontends. |
-| P1 | [AR-0902](tasks/AR-0902-fault-assurance.md): Add fuzz mutation and lifecycle fault campaigns | contracts-20260906 | Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection. | Hold PR #28 exact independently approved green head e6c6231 for coordinator integration authorization; do not merge or release before reviewed signed-DCO integration and post-merge checks. |
+| P1 | [AR-0902](tasks/AR-0902-fault-assurance.md): Add fuzz mutation and lifecycle fault campaigns | contracts-20260906 | Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection. | Integrate approved exact e6c6231 onto exact main 61b5dd3 via signed DCO no-ff merge; push only with immutable lease, then postmerge validation and exact-main CI. |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | replay-20260906 | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Await serialized additive registration fence; then rebase the three owned mini-SWE paths onto exact current main, add only module/test registration, rerun exact-tree full gates, and produce a signed DCO candidate for immutable review. |
 
 ### Open (1)

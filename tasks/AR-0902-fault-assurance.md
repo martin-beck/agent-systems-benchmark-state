@@ -9,7 +9,7 @@
     "AR-0503"
   ],
   "id": "AR-0902",
-  "next_action": "Hold PR #28 exact independently approved green head e6c6231 for coordinator integration authorization; do not merge or release before reviewed signed-DCO integration and post-merge checks.",
+  "next_action": "Integrate approved exact e6c6231 onto exact main 61b5dd3 via signed DCO no-ff merge; push only with immutable lease, then postmerge validation and exact-main CI.",
   "observed_branch": "feature/fault-assurance",
   "observed_dirty": 0,
   "observed_head": "e6c623113c15c99950889b26cd70b29c6966b1d4",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection.",
-  "task_revision": 96,
+  "task_revision": 97,
   "title": "Add fuzz mutation and lifecycle fault campaigns",
-  "updated_at": "2026-09-07T03:08:31+00:00",
+  "updated_at": "2026-09-07T03:12:47+00:00",
   "worktree_key": "agent-systems-benchmark-fault-assurance"
 }
 ---
@@ -334,3 +334,11 @@ Implementation has not started. Read the linked plan before claiming.
   architectures, and formal 34077596425 Kani plus Loom on both architectures passed.
 
 - 2026-09-07T03:08:31+00:00: Heartbeat by contracts-20260906.
+
+- 2026-09-07T03:12:47+00:00: Integration preflight passed at 2026-09-07T03:12Z: product primary/main
+  and origin/main/remote main exact clean 61b5dd33ba04295a476e444d8bfd338ab972507a; feature
+  worktree/remote/PR #28 exact clean independently approved e6c623113c15c99950889b26cd70b29c6966b1d4
+  tree d42305b; all three introduced commits valid SSH signatures, exact Martin Beck identity and
+  single exact DCO; PR OPEN/CLEAN/MERGEABLE with ten exact-head checks green; git diff-check and
+  merge-tree clean; additive 20-path fault/fuzz/new-workflow scope has no overlap with active
+  AR-0803 or AR-0308 paths.
