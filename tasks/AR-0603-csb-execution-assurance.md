@@ -10,7 +10,7 @@
     "AR-0104"
   ],
   "id": "AR-0603",
-  "next_action": "Independent immutable review of exact 39e306124b567dece6f335662a11906869f91ba7; publish only after approval and fresh exact-head CI. Retain exclusive Cargo/schema/release fence until coordinator handoff.",
+  "next_action": "Retry the authorized immutable merge once with git merge --no-ff -S --signoff, verify parents/tree/signature/DCO, and push only with exact main lease.",
   "observed_branch": "feature/csb-execution-assurance",
   "observed_dirty": 0,
   "observed_head": "39e306124b567dece6f335662a11906869f91ba7",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 115,
+  "task_revision": 116,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T10:26:24+00:00",
+  "updated_at": "2026-09-07T10:26:43+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
@@ -381,3 +381,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T10:26:24+00:00: Recorded command exit 1; command argv SHA-256
   ad3f07de2a8c9d93b97d2c2fc8065f02cae3e660744ab949714feb9c77adb298.
+
+- 2026-09-07T10:26:43+00:00: Authorized local merge attempt failed before product mutation because
+  short -s selected a merge strategy rather than adding a DCO trailer; primary main remains clean
+  and exact 0cdccfb and remote is unchanged. Changed conclusion: use explicit --signoff with -S on
+  the single retry.
