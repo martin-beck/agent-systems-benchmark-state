@@ -11,7 +11,7 @@
   "id": "AR-0307",
   "next_action": "Await explicit AR-0305 release transfer of the additive lib.rs/CI fence; then rebase onto exact current main, register once, run pinned x86_64/aarch64 native journeys and all exact-tree gates.",
   "observed_branch": "feature/agent-goose",
-  "observed_dirty": 4,
+  "observed_dirty": 5,
   "observed_head": "e85548d00cffcc3a014bfbc04b8fc79c5fe35da0",
   "owner": "quality-20260906",
   "plan": "../plans/AR-0307.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned AAIF goose in no-session structured mode.",
-  "task_revision": 110,
+  "task_revision": 111,
   "title": "Implement goose client adapter",
-  "updated_at": "2026-09-07T01:48:26+00:00",
+  "updated_at": "2026-09-07T01:48:59+00:00",
   "worktree_key": "agent-systems-benchmark-agent-goose"
 }
 ---

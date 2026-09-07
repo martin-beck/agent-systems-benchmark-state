@@ -8,8 +8,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-agent-aider` | `feature/agent-aider` | `da81ead6932c` | 0 | behind 17, ahead 0 |
 | `agent-systems-benchmark-agent-codex` | `feature/agent-codex` | `eb03bd9d9ed5` | 0 | behind 5, ahead 0 |
 | `agent-systems-benchmark-agent-gemini` | `feature/agent-gemini` | `d381d340163e` | 0 | behind 1, ahead 0 |
-| `agent-systems-benchmark-agent-goose` | `feature/agent-goose` | `e85548d00cff` | 4 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-agents/README.md`, `crates/asb-agents/fixtures/goose-v1.49.0-provenance.json`, `crates/asb-agents/src/goose.rs`, `crates/asb-agents/tests/real_goose.rs` |
+| `agent-systems-benchmark-agent-goose` | `feature/agent-goose` | `e85548d00cff` | 5 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-agents/README.md`, `crates/asb-agents/src/lib.rs`, `crates/asb-agents/fixtures/goose-v1.49.0-provenance.json`, `crates/asb-agents/src/goose.rs`, `crates/asb-agents/tests/real_goose.rs` |
 | `agent-systems-benchmark-agent-mini-swe` | `feature/agent-mini-swe` | `2579362d6936` | 3 | behind 4, ahead 0 |
 | changed files | - | - | - | `crates/asb-agents/MINI_SWE.md`, `crates/asb-agents/src/mini_swe.rs`, `crates/asb-agents/tests/real_mini_swe.rs` |
 | `agent-systems-benchmark-agent-opencode` | `feature/agent-opencode` | `dfb0d548bf75` | 0 | behind 34, ahead 0 |
