@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-miniswe",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T22:44:15+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0308",
     "AR-0503",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/replay-miniswe",
   "observed_dirty": 0,
   "observed_head": "516f7b6b1373a6d744e3005ae573b56df2962153",
-  "owner": "replay_20260906",
+  "owner": "",
   "plan": "../plans/AR-0513.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Qualify replay conformance for mini-SWE-agent.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Qualify mini-SWE replay",
-  "updated_at": "2026-09-07T20:16:08+00:00",
+  "updated_at": "2026-09-07T20:17:57+00:00",
   "worktree_key": "agent-systems-benchmark-replay-miniswe"
 }
 ---
@@ -208,3 +208,11 @@ Qualify mini-SWE-agent record/replay, network denial, parity, retries, tool call
   deliberate negative, cargo-deny/audit, repository policy, exact-range Gitleaks and clean tree
   passed. Exact-main hosted runs are all success: quality 34158499915, formal 34158499923, Rust
   x86_64+aarch64 34158499927, fault/fuzz/mutation 34158499931.
+
+- 2026-09-07T20:17:57+00:00: Done at signed product merge d62add5f815ceb32a920eaa5fc46248b82c2525c
+  and merged PR #51. Exact-main hosted quality 34158499915, formal 34158499923, Rust x86_64+aarch64
+  34158499927, and fault/fuzz/mutation 34158499931 are all success. Exact-main local pinned mini-SWE
+  2.4.6 loopback capture/replay, grade/event parity, cancellation/cleanup, malformed negatives, full
+  Rust/formal/Kani/supply/privacy gates passed. Final locked state validation: Ruff, mypy, 38 unit
+  tests, 96% branch coverage, schema, render-status and live doctor all green. Limits remain
+  explicit: native client evidence x86_64 only and batch retry diagnostics unavailable.

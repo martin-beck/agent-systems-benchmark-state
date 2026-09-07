@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 4 |
+| **In progress** | Claimed work with a live lease | 3 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 60 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 50 |
+| **Done** | Accepted, integrated, and durably verified | 51 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -92,7 +92,7 @@ flowchart LR
         AR_0510["AR-0510 - Done"]:::status_done
         AR_0511["AR-0511 - Done"]:::status_done
         AR_0512["AR-0512 - In progress"]:::status_in_progress
-        AR_0513["AR-0513 - In progress"]:::status_in_progress
+        AR_0513["AR-0513 - Done"]:::status_done
         AR_0514["AR-0514 - Planned"]:::status_planned
         AR_0515["AR-0515 - Planned"]:::status_planned
         AR_0516["AR-0516 - Done"]:::status_done
@@ -703,12 +703,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0512](tasks/AR-0512-replay-goose.md): Qualify goose replay | contracts_20260906 | Qualify replay conformance for goose. | Serialize a shared replay follow-up that makes request-body redaction selectors interaction/method-aware; then rerun the preserved Goose fixture without bypassing private messages. |
-| P0 | [AR-0513](tasks/AR-0513-replay-miniswe.md): Qualify mini-SWE replay | replay_20260906 | Qualify replay conformance for mini-SWE-agent. | Run final coordination reconcile, snapshot, full state validation and live doctor; release AR-0513 done only if product/state refs and worktrees remain clean and synchronized. |
 | P0 | [AR-0520](tasks/AR-0520-interaction-aware-redaction.md): Interaction-aware request redaction | quality_20260906 | Support per-interaction request redaction policies for mixed catalog and private requests. | Make request-body redaction selectors interaction/method-aware so GET catalog entries can remain selector-free while POST bodies remain private and replayable. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
 
@@ -786,7 +785,7 @@ flowchart LR
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Evaluate maintenance, licenses and reproducibility before integration. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (50)
+### Done (51)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -799,6 +798,7 @@ flowchart LR
 | P0 | [AR-0509](tasks/AR-0509-replay-codex.md): Qualify Codex replay | Unclaimed | Qualify replay conformance for Codex. | Monitor PR #45 exact d086fec checks; investigate any failure, then integrate only after every required workflow is green. |
 | P0 | [AR-0510](tasks/AR-0510-replay-gemini.md): Qualify Gemini replay | Unclaimed | Qualify replay conformance for Gemini. | Independent immutable review of one-path timing repair 1366ad3bd03fe8806e80223a55989e34fd72245a before publication. |
 | P0 | [AR-0511](tasks/AR-0511-replay-qwen.md): Qualify Qwen Code replay | Unclaimed | Qualify replay conformance for Qwen Code. | Release done after exact-main merge 1963364e75eec8cfcde0cfd0eaca672df12a2968 passed local post-merge gates and hosted runs 34156966254 quality, 34156966248 formal, 34156966219 Rust, and 34156966214 fault. |
+| P0 | [AR-0513](tasks/AR-0513-replay-miniswe.md): Qualify mini-SWE replay | Unclaimed | Qualify replay conformance for mini-SWE-agent. | Run final coordination reconcile, snapshot, full state validation and live doctor; release AR-0513 done only if product/state refs and worktrees remain clean and synchronized. |
 | P0 | [AR-0516](tasks/AR-0516-opendesk-strict-replay-http-compatibility.md): OpenDesk strict-replay HTTP compatibility | Unclaimed | Add narrowly scoped strict-replay compatibility for pinned OpenDesk traffic. | Monitor exact-main 8eff6f95 CI; release only after every run is green and final synchronized state/live validation passes. |
 | P0 | [AR-0517](tasks/AR-0517-redacted-request-pointer-replay.md): Replay redacted request pointers | Unclaimed | Make privacy-safe redacted request bodies strictly replayable. | Apply bounded cassette request redaction pointers during strict incoming JSON comparison and align dialect option invariants. |
 | P0 | [AR-0518](tasks/AR-0518-gemini-generate-content-replay.md): Gemini GenerateContent strict-replay dialect | Unclaimed | Add strict replay support for Gemini GenerateContent SSE traffic. | Await exact-main quality/Rust x86_64+aarch64/fault CI for signed merge 74d311ca; then reconcile, live doctor, and release AR-0518. |
