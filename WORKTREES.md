@@ -37,8 +37,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-reliability-fairness` | `feature/reliability-fairness` | `eb28ca7aeae5` | 0 | behind 26, ahead 0 |
 | `agent-systems-benchmark-replay-cassettes` | `feature/replay-cassettes` | `cd88f5703fb3` | 0 | behind 108, ahead 0 |
 | `agent-systems-benchmark-replay-evaluation` | `feature/replay-evaluation` | `3d04a2d5a3b3` | 0 | behind 121, ahead 0 |
-| `agent-systems-benchmark-replay-opencode` | `feature/replay-opencode` | `a2def53344a0` | 2 | behind 0, ahead 0 |
-| changed files | - | - | - | `Cargo.lock`, `crates/asb-agents/Cargo.toml` |
+| `agent-systems-benchmark-replay-opencode` | `feature/replay-opencode` | `a2def53344a0` | 3 | behind 0, ahead 0 |
+| changed files | - | - | - | `Cargo.lock`, `crates/asb-agents/Cargo.toml`, `crates/asb-agents/tests/replay_opencode.rs` |
 | `agent-systems-benchmark-replay-pacing` | `feature/replay-pacing` | `73d28a431c78` | 0 | behind 76, ahead 0 |
 | `agent-systems-benchmark-runner-isolation-hardening` | `fix/runner-isolation-hardening` | `9b4e7084e02c` | 0 | behind 11, ahead 0 |
 | `agent-systems-benchmark-runner-privacy-guard-remediation` | `fix/runner-canary-privacy-guards` | `c25e3d20d0dd` | 0 | behind 13, ahead 0 |
