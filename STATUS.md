@@ -9,10 +9,10 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 5 |
+| **In progress** | Claimed work with a live lease | 4 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
-| **Planned** | Defined work awaiting promotion or dependencies | 64 |
+| **Planned** | Defined work awaiting promotion or dependencies | 65 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 41 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -95,7 +95,7 @@ flowchart LR
         AR_0513["AR-0513 - Planned"]:::status_planned
         AR_0514["AR-0514 - Planned"]:::status_planned
         AR_0515["AR-0515 - Planned"]:::status_planned
-        AR_0516["AR-0516 - In progress"]:::status_in_progress
+        AR_0516["AR-0516 - Planned"]:::status_planned
     end
     subgraph series_06["06 - Metrics"]
         direction TB
@@ -684,14 +684,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (5)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0507](tasks/AR-0507-replay-opendesk.md): Qualify OpenDesk replay | replay_20260906 | Qualify replay conformance for OpenDesk. | Await serialized shared replay repairs for span_id admission, absent-stream SSE, and bounded model-catalog GET routes; then remove diagnostic normalization and complete exact native replay gates. |
 | P0 | [AR-0508](tasks/AR-0508-replay-aider.md): Qualify aider replay | quality_20260906 | Qualify replay conformance for aider. | Hold isolated signed Aider replay test a8ea226; after AR-0506 review/integration/release, rebase onto exact main, take shared Cargo/README/lock fence, compile and run malformed plus real loopback-only capture/replay/cancel gates. |
 | P0 | [AR-0509](tasks/AR-0509-replay-codex.md): Qualify Codex replay | contracts_20260906 | Qualify replay conformance for Codex. | Prove credential-free record/replay conformance for Codex with network denial and malformed/tool/cancel negatives. |
-| P0 | [AR-0516](tasks/AR-0516-opendesk-strict-replay-http-compatibility.md): OpenDesk strict-replay HTTP compatibility | root | Add narrowly scoped strict-replay compatibility for pinned OpenDesk traffic. | Implement fail-closed OpenDesk HTTP compatibility for span_id, absent-stream SSE, and recorded model catalog probes. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
 
 ### Blocked (4)
@@ -703,7 +702,7 @@ flowchart LR
 | P1 | [AR-0703](tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Provide genuine disposable native hosts for required Debian and openEuler platform qualification. | Obtain explicit provider/account and cost authorization, least-privilege external credentials, quotas, and four genuine disposable Debian 13.6/openEuler 24.03 LTS-SP2 x86_64/aarch64 hosts; then implement reservation/provision/collect/destroy evidence without emulation. |
 | P1 | [AR-0803](tasks/AR-0803-frontend-control-api.md): Define the frontend control API | Unclaimed | Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary. | Await fresh independent immutable review of repaired exact cbb764c; publish only if all prior blockers and new concurrency/privacy semantics are approved. |
 
-### Planned (64)
+### Planned (65)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -713,6 +712,7 @@ flowchart LR
 | P0 | [AR-0513](tasks/AR-0513-replay-miniswe.md): Qualify mini-SWE replay | Unclaimed | Qualify replay conformance for mini-SWE-agent. | Prove credential-free record/replay conformance for mini-SWE-agent with network denial and malformed/tool/cancel negatives. |
 | P0 | [AR-0514](tasks/AR-0514-replay-openhands.md): Qualify OpenHands replay | Unclaimed | Qualify replay conformance for OpenHands. | Prove credential-free record/replay conformance for OpenHands with network denial and malformed/tool/cancel negatives. |
 | P0 | [AR-0515](tasks/AR-0515-replay-matrix.md): Aggregate replay conformance matrix | Unclaimed | Aggregate complete per-agent replay conformance. | Aggregate per-agent replay evidence into the complete supported-agent conformance matrix. |
+| P0 | [AR-0516](tasks/AR-0516-opendesk-strict-replay-http-compatibility.md): OpenDesk strict-replay HTTP compatibility | Unclaimed | Add narrowly scoped strict-replay compatibility for pinned OpenDesk traffic. | Implement fail-closed OpenDesk HTTP compatibility for span_id, absent-stream SSE, and recorded model catalog probes. |
 | P0 | [AR-0837](tasks/AR-0837-containerized-runner-boundary.md): Qualify containerized runner boundary | Unclaimed | Provide the containerized workflow boundary required for safe trusted runner claims. | Define and qualify a digest-pinned workflow container boundary separating operator, listener, and job principals without host mounts. |
 | P1 | [AR-0311](tasks/AR-0311-provider-openai.md): Support a shared OpenAI provider | Unclaimed | Apply one default OpenAI provider profile consistently to all supported agents. | Implement the default OpenAI provider profile for every adapter that proves compatible support. |
 | P1 | [AR-0312](tasks/AR-0312-provider-ollama.md): Support a shared local Ollama provider | Unclaimed | Apply one pinned local Ollama provider and model configuration to all supported agents. | Implement a loopback-only local Ollama profile and prove every compatible adapter translation. |
