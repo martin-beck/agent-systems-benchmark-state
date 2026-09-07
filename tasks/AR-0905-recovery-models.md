@@ -10,7 +10,7 @@
     "AR-0503"
   ],
   "id": "AR-0905",
-  "next_action": "Translate Agent Relay's TLA+/Alloy/executable-model pattern to ASB run and replay domains.",
+  "next_action": "Independent immutable review of signed candidate a288bb3485aa2a65ffa79626c3352c6522791138 before publication.",
   "observed_branch": "feature/recovery-models",
   "observed_dirty": 0,
   "observed_head": "a288bb3485aa2a65ffa79626c3352c6522791138",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply bounded formal models to run lifecycle, leases, recovery, replay cursors and uncertain external effects.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Model execution recovery and worker fencing",
-  "updated_at": "2026-09-07T23:10:36+00:00",
+  "updated_at": "2026-09-07T23:11:16+00:00",
   "worktree_key": "agent-systems-benchmark-recovery-models"
 }
 ---
@@ -217,3 +217,17 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T23:10:36+00:00: Recorded command exit 0; command argv SHA-256
   4933efb928cde21ed7d1131564ff379018d7501794259ae431e8dfe03703d5c7.
+
+- 2026-09-07T23:11:16+00:00: Candidate a288bb3485aa2a65ffa79626c3352c6522791138, tree
+  dd66c8248986b1d17245e7a4f898db307be5abd7, exact parent 72dd78f72dd74d20654232923dfe2fcff7771dff.
+  TLC 1.8.0 checked 3,709 distinct states at depth 17; Alloy 6.2.0 produced one SAT witness and six
+  UNSAT assertions; deliberate stale-state TLC and all six weakened Alloy assertions produced
+  counterexamples. Rust formal suite, production AtomicStore traces, full workspace
+  fmt/Clippy/tests/docs/release, Kani 6/6 plus negative, repository policy, actionlint, cargo-deny,
+  Gitleaks, signature and DCO passed. Focused recovery coverage is 97.75% lines, 97.18% regions,
+  100% functions; unstable nightly branch instrumentation is 87.5% and is not claimed as 95%.
+  Investigated and repaired initial wrong archive filename, Alloy temp/output collision, production
+  transition setup, incomplete Kani environment, absent Gitleaks config invocation, and TLC
+  source-tree trace residue; final runner is canonical-path, size/hash bounded, mutation-sensitive,
+  and leaves the source tree unchanged. Finite safety proof excludes liveness, timing, native
+  support, and real crash/filesystem guarantees.
