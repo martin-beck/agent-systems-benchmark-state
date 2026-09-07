@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the coordination-tool Ruff regression discovered during AR-0830 reconciliation.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Repair handoffctl lint regression",
-  "updated_at": "2026-09-07T07:23:41+00:00",
+  "updated_at": "2026-09-07T07:24:18+00:00",
   "worktree_key": "agent-systems-benchmark-coordination-lint-regression"
 }
 ---
@@ -81,3 +81,6 @@ Acceptance criteria:
 
 - 2026-09-07T07:23:41+00:00: Recorded command exit 0; command argv SHA-256
   2651be8ce05d717b547e9208f9121014d4f04396ab0faf387e3306103163254f.
+
+- 2026-09-07T07:24:18+00:00: Recorded command exit 0; command argv SHA-256
+  86f3a2e223de601d1b2312e591e2304759668abf60b33d82c5668d1a4fc5f470.
