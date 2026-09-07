@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0702",
-  "next_action": "Implement and verify the fail-closed native evidence harness; publish genuine Ubuntu x86_64 and public native-arm evidence. AR-0703 supplies the required booted Debian/openEuler x86_64+aarch64 capacity; retain AR-0702 in progress until that external prerequisite completes.",
+  "next_action": "Run exact-tree full gates and immutable review for the fail-closed harness; publish public native aarch64 evidence through disposable CI. Retain AR-0702 in progress until AR-0703 provides genuine booted Debian/openEuler x86_64+aarch64 capacity.",
   "observed_branch": "feature/native-platforms",
   "observed_dirty": 0,
   "observed_head": "f6a7c58f49a6e987e8403983f347d736da60d51d",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Exercise native x86_64 and aarch64 including booted openEuler kernels.",
-  "task_revision": 110,
+  "task_revision": 111,
   "title": "Validate native Linux kernels and architectures",
-  "updated_at": "2026-09-07T03:54:12+00:00",
+  "updated_at": "2026-09-07T03:55:39+00:00",
   "worktree_key": "agent-systems-benchmark-native-platforms"
 }
 ---
@@ -321,3 +321,18 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T03:54:12+00:00: Recorded command exit 0; command argv SHA-256
   1d18e203bb4e717ccf74a60bd2a6ec84f3fe43b54befec99e06a3b3d9a0d30d9.
+
+- 2026-09-07T03:55:39+00:00: Implemented signed/DCO native evidence series through f6a7c58 on clean
+  feature/native-platforms. Harness rejects distro/arch/kernel mismatch, containers and
+  QEMU/UML/Bochs emulation, dirty/unpinned sources, missing cgroup v2/PSI, unsafe output paths,
+  unbounded output and failing required checks; only an independently proven pinned-tool/user-scope
+  absence can make sandbox evidence partial. Native module branch-aware coverage is 96%; 19 platform
+  tests pass. Genuine bare-metal Ubuntu 24.04.4 x86_64 kernel 7.0.0-28 passed process, controlled
+  metrics and required delegated sandbox suites; sanitized neutral report SHA256
+  8808f2707b89dd9402b5da670d02b5c69616863f10ff6d4bce8693771f8e0a00 is bound in f9dc944, with no
+  hostname/private paths and performance_baseline false. A first metrics harness run correctly
+  failed because --ignored selected only a helper; corrected signed commit 21a65d8 reran the real
+  suite. An initial evidence identifier exposed a private host alias and made state validation fail;
+  it was renamed/rehashed before commit, then snapshot/live doctor passed. Ubuntu x86 native_kernel
+  alone is promoted; user-space and aarch64 remain planned. AR-0703 remains the formal external
+  capacity blocker for booted Debian/openEuler four-cell qualification.
