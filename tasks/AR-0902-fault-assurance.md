@@ -9,7 +9,7 @@
     "AR-0503"
   ],
   "id": "AR-0902",
-  "next_action": "Publish approved exact ad00e8b with absent-ref lease, open focused PR, and require exact-head fault assurance, quality, Rust and formal CI before any integration.",
+  "next_action": "Monitor PR #28 exact head ad00e8b: fault assurance 34077199689, quality 34077199617, Rust 34077199611 and formal 34077199652; investigate and repair any failure without merge.",
   "observed_branch": "feature/fault-assurance",
   "observed_dirty": 0,
   "observed_head": "ad00e8b1ea1607043eea9bfe6d86d8d4828abe92",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Add fuzz mutation and lifecycle fault campaigns",
-  "updated_at": "2026-09-07T02:43:00+00:00",
+  "updated_at": "2026-09-07T02:43:22+00:00",
   "worktree_key": "agent-systems-benchmark-fault-assurance"
 }
 ---
@@ -282,3 +282,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T02:43:00+00:00: Recorded command exit 0; command argv SHA-256
   a1576363288ea0ea0fa55f8af23fce1d85e0dae99e47b16cea2cf649f29736a5.
+
+- 2026-09-07T02:43:22+00:00: Published immutable approved head ad00e8b with explicit absent-ref
+  force-with-lease and verified remote equality. Opened focused product PR #28
+  https://github.com/martin-beck/agent-systems-benchmark/pull/28 at exact base e85548d and head
+  ad00e8b. All four exact-head workflow runs started.
