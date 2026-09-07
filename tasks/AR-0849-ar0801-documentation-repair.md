@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair stale AR-0801 implementation and CLI documentation claims.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Repair AR-0801 documentation consistency",
-  "updated_at": "2026-09-07T22:44:13+00:00",
+  "updated_at": "2026-09-07T22:44:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar0801-documentation-repair"
 }
 ---
@@ -43,3 +43,6 @@ the examples against the merged binary and tests. Do not reopen or rewrite AR-08
 
 - 2026-09-07T22:43:41+00:00: Recorded command exit 1; command argv SHA-256
   2e086b8b83af13e1d3333985e8b55b5d4bfbb90b0d89cbe5701ad393a564251a.
+
+- 2026-09-07T22:44:15+00:00: Recorded command exit 0; command argv SHA-256
+  469e8827afba7db600d1bca08f533c7e23298c7ce02c64542828e421301b2f8b.
