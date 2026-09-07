@@ -2,7 +2,7 @@
 {
   "branch": "feature/gemini-generate-content-replay",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-07T18:58:09+00:00",
   "depends_on": [
     "AR-0502",
     "AR-0503",
@@ -10,15 +10,15 @@
   ],
   "id": "AR-0518",
   "next_action": "Define and qualify the bounded Gemini GenerateContent strict-replay dialect from exact pinned capture evidence.",
-  "owner": "",
+  "owner": "replay_20260906",
   "plan": "../plans/AR-0518.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add strict replay support for Gemini GenerateContent SSE traffic.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Gemini GenerateContent strict-replay dialect",
-  "updated_at": "2026-09-07T15:58:07+00:00",
+  "updated_at": "2026-09-07T15:58:09+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-generate-content-replay"
 }
 ---
@@ -30,3 +30,5 @@ Require schema/runtime parity, focused and adversarial tests, fuzz/mutation/form
 
 - 2026-09-07T15:58:07+00:00: Promote Gemini shared dialect repair after isolated AR-0510 capture
   identified the missing GenerateContent route; serialize before AR-0510 integration.
+
+- 2026-09-07T15:58:09+00:00: Claimed by replay_20260906.

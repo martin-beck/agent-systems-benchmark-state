@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**116 ARs tracked** across 5 active status categories.
+**116 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 63 |
 | **Future** | Deferred roadmap work | 0 |
@@ -97,7 +97,7 @@ flowchart LR
         AR_0515["AR-0515 - Planned"]:::status_planned
         AR_0516["AR-0516 - Done"]:::status_done
         AR_0517["AR-0517 - Done"]:::status_done
-        AR_0518["AR-0518 - Open"]:::status_open
+        AR_0518["AR-0518 - In progress"]:::status_in_progress
     end
     subgraph series_06["06 - Metrics"]
         direction TB
@@ -695,19 +695,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0509](tasks/AR-0509-replay-codex.md): Qualify Codex replay | contracts_20260906 | Qualify replay conformance for Codex. | After AR-0517 integrates, update AR-0509 onto exact main, add bounded Codex retry evidence, then run full exact-tree gates and candidate review. |
 | P0 | [AR-0510](tasks/AR-0510-replay-gemini.md): Qualify Gemini replay | quality_20260906 | Qualify replay conformance for Gemini. | Prove credential-free record/replay conformance for Gemini with network denial and malformed/tool/cancel negatives. |
+| P0 | [AR-0518](tasks/AR-0518-gemini-generate-content-replay.md): Gemini GenerateContent strict-replay dialect | replay_20260906 | Add strict replay support for Gemini GenerateContent SSE traffic. | Define and qualify the bounded Gemini GenerateContent strict-replay dialect from exact pinned capture evidence. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0518](tasks/AR-0518-gemini-generate-content-replay.md): Gemini GenerateContent strict-replay dialect | Unclaimed | Add strict replay support for Gemini GenerateContent SSE traffic. | Define and qualify the bounded Gemini GenerateContent strict-replay dialect from exact pinned capture evidence. |
 
 ### Blocked (4)
 
