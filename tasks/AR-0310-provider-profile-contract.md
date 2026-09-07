@@ -2,7 +2,7 @@
 {
   "branch": "feature/provider-profile-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T01:12:16+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-1001"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/provider-profile-contract",
   "observed_dirty": 0,
   "observed_head": "2870b68d0ca0e0b1a665baa979ae8acc282e21d5",
-  "owner": "quality-20260906",
+  "owner": "",
   "plan": "../plans/AR-0310.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Normalize one provider configuration for safe translation across heterogeneous agent adapters.",
-  "task_revision": 140,
+  "task_revision": 141,
   "title": "Define common provider profiles",
-  "updated_at": "2026-09-07T00:11:49+00:00",
+  "updated_at": "2026-09-07T00:11:58+00:00",
   "worktree_key": "agent-systems-benchmark-provider-profile-contract"
 }
 ---
@@ -421,3 +421,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T00:11:49+00:00: Recorded command exit 0; command argv SHA-256
   6afbfbe18a8296edef75781cc749c117fc8abe6f7f660d5fca1021348604b37f.
+
+- 2026-09-07T00:11:58+00:00: Released after independent approval and signed no-ff product merge
+  d384c4c54a4576dadaae3a542cfc09a5e339a4fe (tree identical to reviewed
+  2870b68d0ca0e0b1a665baa979ae8acc282e21d5). Complete exact-merge local workspace, schema,
+  cross-language vector, privacy, quality, supply-chain, platform, formal and negative gates passed.
+  Exact-main hosted runs completed successfully: Rust 34068641618, repository quality 34068641632,
+  formal assurance 34068641612. Focused signed state commit cce35117fab8a3fc82e1471320ae719835fd46da
+  recorded the two final CI transitions; render-status check, live doctor, snapshot and all 37 state
+  tests passed immediately before release. Product and state refs were synchronized and clean; no
+  concrete adapter provider support beyond the versioned common contract is claimed.
