@@ -11,7 +11,7 @@
   "id": "AR-0830",
   "next_action": "Independently review exact 6518802. If locally approved, provision the dedicated service and protected manual canary only after an authorized secret/admin registration boundary is supplied.",
   "observed_branch": "feature/development-host-runner-capacity",
-  "observed_dirty": 1,
+  "observed_dirty": 2,
   "observed_head": "76ad12ddc330a0b2a8909a6ef6d58790a7ea8a4a",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0830.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T06:20:30+00:00",
+  "updated_at": "2026-09-07T06:20:44+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
