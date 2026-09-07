@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0830",
-  "next_action": "Independently review the two signed runner-control commits, then implement or provision the dedicated service identity and protected manual prequalification canary without enabling ordinary workflow routing.",
+  "next_action": "Repair fail-closed storage prefix/filesystem validation, replace multiple routable labels with one composite capability label, and make setup idempotent; then add lifecycle automation only after an authorized secret-safe registration boundary is available.",
   "observed_branch": "feature/development-host-runner-capacity",
   "observed_dirty": 0,
   "observed_head": "40d54709e923172d6953d212190c95c0b103df84",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T05:56:14+00:00",
+  "updated_at": "2026-09-07T05:57:46+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
@@ -134,3 +134,15 @@ Implementation has not started. Read the linked plan before claiming.
   secret-out-of-band registration, dedicated identity, stop confirmation, and AR-0832 qualification
   before activation. Wrapper-run sh -n, focused positive/negative tests, diff check, privacy grep
   and core-residue audit passed; worktree is clean.
+
+- 2026-09-07T05:57:46+00:00: Independent review BLOCKS 40d5470 as a final candidate. common.sh
+  accepts any canonical absolute ASB_STORAGE_ROOT rather than proving it resolves beneath
+  /srv/data/projects and does not enforce same-filesystem placement. Three separate custom labels
+  cannot enforce complete-set-only routing: GitHub matches every label requested by a job, so a job
+  requesting any subset can still select this runner; use one composite versioned label with
+  --no-default-labels. setup.sh rejects an existing verified installation, contrary to idempotence
+  acceptance. No dedicated service identity, restart/reconnect, orphan/uninstall, protected canary,
+  or GitHub-side exact-label evidence exists yet. Official GitHub documentation confirms ephemeral
+  runners deregister after one job, requiring external lifecycle automation, and recommends external
+  diagnostic log retention; this host has no authorized registration token/admin boundary in scope,
+  so live provisioning must remain blocked rather than handling secrets unsafely.
