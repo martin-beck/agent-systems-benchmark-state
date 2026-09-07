@@ -10,7 +10,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #31 | `feature/native-platforms@bdaf9c108226` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | platforms: add fail-closed native qualification evidence |
+| #31 | `feature/native-platforms@bdaf9c108226` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS: | platforms: add fail-closed native qualification evidence |
 
 ## Recent workflows
 
@@ -20,7 +20,7 @@ Generated from local Git and GitHub. Do not edit.
 | 34087336787 | `bdaf9c108226` | pull_request | Fault assurance | in_progress:- |
 | 34087336778 | `bdaf9c108226` | pull_request | Repository quality | in_progress:- |
 | 34087336775 | `bdaf9c108226` | pull_request | Rust verification | in_progress:- |
-| 34087336758 | `bdaf9c108226` | pull_request | Native platform evidence | in_progress:- |
+| 34087336758 | `bdaf9c108226` | pull_request | Native platform evidence | completed:success |
 | 34086710775 | `f919b78da998` | pull_request | Formal assurance | completed:success |
 | 34086710768 | `f919b78da998` | pull_request | Rust verification | completed:success |
 | 34086710743 | `f919b78da998` | pull_request | Native platform evidence | completed:failure |
