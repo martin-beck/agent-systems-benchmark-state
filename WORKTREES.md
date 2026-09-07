@@ -39,8 +39,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-replay-pacing` | `feature/replay-pacing` | `73d28a431c78` | 0 | behind 62, ahead 0 |
 | `agent-systems-benchmark-runner-isolation-hardening` | `fix/runner-isolation-hardening` | `a4782cdc467d` | 8 | behind 0, ahead 0 |
 | changed files | - | - | - | `tests/runners/test_runner_scripts.sh`, `tools/runners/common.sh`, `tools/runners/health.sh`, `tools/runners/register.sh`, `tools/runners/reset.sh`, `tools/runners/setup.sh`, `tools/runners/collect-diagnostics.sh`, `tools/runners/launch.sh` |
-| `agent-systems-benchmark-runner-privacy-guard-remediation` | `fix/runner-canary-privacy-guards` | `a4782cdc467d` | 5 | behind 0, ahead 0 |
-| changed files | - | - | - | `.github/workflows/development-host-canary.yml`, `.github/workflows/development-host-trusted.yml`, `docs/RUNNER_ROUTING.md`, `tools/quality/repository_policy.py`, `tools/quality/test_failure_paths.py` |
+| `agent-systems-benchmark-runner-privacy-guard-remediation` | `fix/runner-canary-privacy-guards` | `c25e3d20d0dd` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-sandbox-runtime` | `feature/sandbox-runtime` | `ac4a23599649` | 0 | behind 64, ahead 0 |
 | `agent-systems-benchmark-sandbox-test-portability` | `fix/sandbox-test-portability` | `23035acde688` | 0 | behind 52, ahead 0 |
 | `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `3bcfd85dedd3` | 0 | behind 89, ahead 0 |
