@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Exercise native x86_64 and aarch64 including booted openEuler kernels.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Validate native Linux kernels and architectures",
-  "updated_at": "2026-09-07T03:21:00+00:00",
+  "updated_at": "2026-09-07T03:24:46+00:00",
   "worktree_key": "agent-systems-benchmark-native-platforms"
 }
 ---
@@ -75,3 +75,6 @@ Implementation has not started. Read the linked plan before claiming.
   concurrent worker updates. The transition CLI cannot alter depends_on for an already claimed task,
   so AR-0702 records AR-0703 as a formal completion blocker/link rather than mutating claimed-task
   dependency metadata.
+
+- 2026-09-07T03:24:46+00:00: Recorded command exit 0; command argv SHA-256
+  b5e6f77be438be2102aff91bb048414f26e4ed0c05b6986e84f0c35806afc018.
