@@ -10,17 +10,17 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #31 | `feature/native-platforms@bdaf9c108226` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #32 | `feature/development-host-runner-capacity@0d9b363538d2` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: provision isolated development-host runner canary |
+| #31 | `feature/native-platforms@bdaf9c108226` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34092764541 | `14ac5ce3bcc2` | push | Formal assurance | queued:- |
-| 34092764480 | `14ac5ce3bcc2` | push | Rust verification | queued:- |
-| 34092764475 | `14ac5ce3bcc2` | push | Fault assurance | queued:- |
-| 34092764447 | `14ac5ce3bcc2` | push | Repository quality | queued:- |
+| 34092791959 | `14ac5ce3bcc2` | workflow_dispatch | Development host runner canary | queued:- |
+| 34092764541 | `14ac5ce3bcc2` | push | Formal assurance | in_progress:- |
+| 34092764480 | `14ac5ce3bcc2` | push | Rust verification | in_progress:- |
+| 34092764475 | `14ac5ce3bcc2` | push | Fault assurance | in_progress:- |
+| 34092764447 | `14ac5ce3bcc2` | push | Repository quality | in_progress:- |
 | 34092510576 | `0d9b363538d2` | pull_request | Formal assurance | completed:success |
 | 34092510505 | `0d9b363538d2` | pull_request | Repository quality | completed:success |
 | 34092510504 | `0d9b363538d2` | pull_request | Rust verification | completed:success |
@@ -28,4 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34087336801 | `bdaf9c108226` | pull_request | Formal assurance | completed:success |
 | 34087336787 | `bdaf9c108226` | pull_request | Fault assurance | completed:success |
 | 34087336778 | `bdaf9c108226` | pull_request | Repository quality | completed:success |
-| 34087336775 | `bdaf9c108226` | pull_request | Rust verification | completed:success |
