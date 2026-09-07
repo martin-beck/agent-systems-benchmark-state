@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned mini-SWE-agent as a bounded batch engineering agent.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Implement mini-SWE-agent client adapter",
-  "updated_at": "2026-09-07T00:54:46+00:00",
+  "updated_at": "2026-09-07T00:55:42+00:00",
   "worktree_key": "agent-systems-benchmark-agent-mini-swe"
 }
 ---
@@ -82,3 +82,6 @@ Implementation has not started. Read the linked plan before claiming.
   heredoc apply_patch attempts failed before product mutation and are retained as durable exit-1
   command evidence; current mini_swe.rs is an unregistered dirty scaffold copied from the audited
   aider isolation boundary and is not a candidate or tested implementation.
+
+- 2026-09-07T00:55:42+00:00: Recorded command exit 0; command argv SHA-256
+  ee43141471b5617c5593452f76c32f6b1430b0e2c9923d0765e08ad1d5ea4f65.
