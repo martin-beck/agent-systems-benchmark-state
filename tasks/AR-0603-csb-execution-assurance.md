@@ -13,16 +13,16 @@
   "next_action": "After explicit Cargo fence handoff, rebase the two signed commits onto exact main, add only asb-csb-runner membership/runtime/store dependencies and implement durable sandboxed process/artifact/cancellation/recovery tests including a real pinned offline x86_64 fixture.",
   "observed_branch": "feature/csb-execution-assurance",
   "observed_dirty": 0,
-  "observed_head": "c660872ee308ab5c9a65552bfa5300588cf80b6e",
+  "observed_head": "ec4a1d28baca4426b17bc20cffee036d1d3eff23",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0603.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T09:08:18+00:00",
+  "updated_at": "2026-09-07T09:08:56+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
