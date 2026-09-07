@@ -12,16 +12,16 @@
   "next_action": "Repair immutable-review blockers: verified immutable Python and wheel launch copies, bounded pre-mutation correlation IDs, complete pinned Python graph/product verification, and dotenv isolation; then full gates and replacement signed DCO commit.",
   "observed_branch": "feature/agent-mini-swe",
   "observed_dirty": 3,
-  "observed_head": "40b997064b6ee9069e8c5ce8348bf5295ff95720",
+  "observed_head": "43683ff13baa7343e0edb5333a4fc6c4304a3bcd",
   "owner": "replay-20260906",
   "plan": "../plans/AR-0308.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned mini-SWE-agent as a bounded batch engineering agent.",
-  "task_revision": 178,
+  "task_revision": 179,
   "title": "Implement mini-SWE-agent client adapter",
-  "updated_at": "2026-09-07T04:16:51+00:00",
+  "updated_at": "2026-09-07T04:17:25+00:00",
   "worktree_key": "agent-systems-benchmark-agent-mini-swe"
 }
 ---
