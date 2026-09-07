@@ -14,8 +14,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-agent-opendesk` | `feature/agent-opendesk` | `8eb99d3c7235` | 0 | behind 65, ahead 0 |
 | `agent-systems-benchmark-agent-qwen-code` | `feature/agent-qwen-code` | `0be96c9ec50e` | 0 | behind 41, ahead 0 |
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `0717d4acd168` | 0 | behind 57, ahead 0 |
-| `agent-systems-benchmark-ci-artifact-quota-resilience` | `feature/ci-artifact-quota-resilience` | `b1669203308d` | 7 | behind 5, ahead 0 |
-| changed files | - | - | - | `.github/workflows/quality.yml`, `config/quality-tools.json`, `docs/QUALITY_GATES.md`, `tools/quality/repository_policy.py`, `tools/quality/test_failure_paths.py`, `tests/quality/test_artifact_outcome.py`, `tools/quality/artifact_outcome.py` |
+| `agent-systems-benchmark-ci-artifact-quota-resilience` | `feature/ci-artifact-quota-resilience` | `b1669203308d` | 6 | behind 5, ahead 0 |
+| changed files | - | - | - | `.github/workflows/quality.yml`, `config/quality-tools.json`, `docs/QUALITY_GATES.md`, `tools/quality/repository_policy.py`, `tests/quality/test_artifact_outcome.py`, `tools/quality/artifact_outcome.py` |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 126, ahead 0 |
 | `agent-systems-benchmark-csb-execution-assurance` | `feature/csb-execution-assurance` | `39e306124b56` | 0 | behind 6, ahead 0 |
 | `agent-systems-benchmark-development-host-runner-capacity` | `feature/development-host-runner-capacity` | `0d9b363538d2` | 0 | behind 17, ahead 0 |
