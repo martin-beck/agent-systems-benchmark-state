@@ -704,7 +704,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0511](tasks/AR-0511-replay-qwen.md): Qualify Qwen Code replay | quality_20260906 | Qualify replay conformance for Qwen Code. | Prove credential-free record/replay conformance for Qwen Code with network denial and malformed/tool/cancel negatives. |
 | P0 | [AR-0512](tasks/AR-0512-replay-goose.md): Qualify goose replay | contracts_20260906 | Qualify replay conformance for goose. | Prove credential-free record/replay conformance for goose with network denial and malformed/tool/cancel negatives. |
-| P0 | [AR-0513](tasks/AR-0513-replay-miniswe.md): Qualify mini-SWE replay | replay_20260906 | Qualify replay conformance for mini-SWE-agent. | Prove credential-free record/replay conformance for mini-SWE-agent with network denial and malformed/tool/cancel negatives. |
+| P0 | [AR-0513](tasks/AR-0513-replay-miniswe.md): Qualify mini-SWE replay | replay_20260906 | Qualify replay conformance for mini-SWE-agent. | Replace the compile-clean replay scaffold&#x27;s Aider response assumptions with mini-SWE 2.4.6 exact buffered tool-call/submission exchanges from the pinned real fixture; then run credential-free loopback record/replay, retry classification, cancellation, network denial, parity, and malformed/tool negatives. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
 
 ### Blocked (4)
