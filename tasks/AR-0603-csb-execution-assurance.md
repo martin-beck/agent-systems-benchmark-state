@@ -12,17 +12,17 @@
   "id": "AR-0603",
   "next_action": "Apply the exact two missing closing delimiters through handoffctl, refresh the disposable mirror from the audited product tree, and rerun locked offline tests.",
   "observed_branch": "feature/csb-execution-assurance",
-  "observed_dirty": 3,
-  "observed_head": "939c35c5ee64c9f9685cec471efc03cb620643c2",
+  "observed_dirty": 0,
+  "observed_head": "efa8f9636741d65786293067d82d7454c86bd2ef",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0603.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T09:01:27+00:00",
+  "updated_at": "2026-09-07T09:02:01+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
