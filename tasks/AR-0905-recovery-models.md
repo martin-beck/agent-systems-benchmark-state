@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply bounded formal models to run lifecycle, leases, recovery, replay cursors and uncertain external effects.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Model execution recovery and worker fencing",
-  "updated_at": "2026-09-07T22:16:18+00:00",
+  "updated_at": "2026-09-07T22:16:20+00:00",
   "worktree_key": "agent-systems-benchmark-recovery-models"
 }
 ---
@@ -39,3 +39,6 @@ Implementation has not started. Read the linked plan before claiming.
   docs/formal verifier/trace scope is disjoint from active AR-0505 replay integration.
 
 - 2026-09-07T22:14:58+00:00: Claimed by replay_20260906.
+
+- 2026-09-07T22:16:20+00:00: Recorded command exit 0; command argv SHA-256
+  0c45238c27b38f287d8c104a676b9c8d75deee6985f9f757151d54374b7753fb.
