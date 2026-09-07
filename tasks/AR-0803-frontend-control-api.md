@@ -2,7 +2,7 @@
 {
   "branch": "feature/frontend-control-api",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T08:18:16+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0104",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/frontend-control-api",
   "observed_dirty": 20,
   "observed_head": "cbb764c45c6128d75f42fb78a3a2a15a0874528a",
-  "owner": "root-coordination-20260906",
+  "owner": "",
   "plan": "../plans/AR-0803.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary.",
-  "task_revision": 300,
+  "task_revision": 301,
   "title": "Define the frontend control API",
-  "updated_at": "2026-09-07T07:48:42+00:00",
+  "updated_at": "2026-09-07T08:19:23+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api"
 }
 ---
@@ -856,3 +856,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T07:48:42+00:00: Recorded command exit 0; command argv SHA-256
   16f1d53ce464f8b3913798cdb527dd0db19c9e776b90162bbdf31f9f997f9e85.
+
+- 2026-09-07T08:19:23+00:00: Lease expired; exact candidate cbb764c remains dirty with 20 paths and
+  awaits independent immutable review plus concurrency/privacy repairs. Preserve worktree and resume
+  only after fresh reconciliation.
