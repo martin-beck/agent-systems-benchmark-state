@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify authorized disposable native x86_64 capacity on a development host.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Qualify native x86 capacity",
-  "updated_at": "2026-09-07T23:28:52+00:00",
+  "updated_at": "2026-09-07T23:29:11+00:00",
   "worktree_key": "agent-systems-benchmark-native-x86-capacity"
 }
 ---
@@ -89,3 +89,6 @@ claim native aarch64 support; native aarch64 remains future work requiring separ
 
 - 2026-09-07T23:28:52+00:00: Recorded command exit 1; command argv SHA-256
   75a10970d346b359d5e7cd404a28ca32d37bb47107f5299807c3441f3423bc53.
+
+- 2026-09-07T23:29:11+00:00: Recorded command exit 0; command argv SHA-256
+  487a550ccd445037a87ed1799d27a99392fbbf8ae444cda1b8a74d6bb51ac92a.
