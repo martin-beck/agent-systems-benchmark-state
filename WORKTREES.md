@@ -15,8 +15,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-agent-qwen-code` | `feature/agent-qwen-code` | `0be96c9ec50e` | 0 | behind 29, ahead 0 |
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `0717d4acd168` | 0 | behind 45, ahead 0 |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 114, ahead 0 |
-| `agent-systems-benchmark-csb-execution-assurance` | `feature/csb-execution-assurance` | `efa8f9636741` | 1 | behind 13, ahead 2 |
-| changed files | - | - | - | `docs/CSB_PROVENANCE.md` |
+| `agent-systems-benchmark-csb-execution-assurance` | `feature/csb-execution-assurance` | `c660872ee308` | 0 | behind 13, ahead 3 |
 | `agent-systems-benchmark-development-host-runner-capacity` | `feature/development-host-runner-capacity` | `0d9b363538d2` | 0 | behind 5, ahead 0 |
 | `agent-systems-benchmark-development-host-workflow-routing` | `feature/development-host-workflow-routing` | `f55f98cc79b7` | 0 | behind 3, ahead 0 |
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 103, ahead 0 |
