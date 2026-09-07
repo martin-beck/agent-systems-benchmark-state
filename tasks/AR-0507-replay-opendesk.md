@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0507",
-  "next_action": "Authorize and serialize the narrow replay header-token repair in cassette validator, service admission, schema, and negatives; meanwhile continue isolated OpenDesk capture/parity evidence without shared-path mutation.",
+  "next_action": "Implement and test the authorized deterministic SHA-256 route run root in OpenDesk-owned paths; shared replay header-token and SSE-without-stream repairs remain serialized blockers.",
   "observed_branch": "feature/replay-opendesk",
   "observed_dirty": 1,
   "observed_head": "a0d80e48deb8750543606c2b577e1a52df26fc4c",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenDesk.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Qualify OpenDesk replay",
-  "updated_at": "2026-09-07T13:08:02+00:00",
+  "updated_at": "2026-09-07T13:09:12+00:00",
   "worktree_key": "agent-systems-benchmark-replay-opendesk"
 }
 ---
@@ -149,3 +149,18 @@ Qualify OpenDesk record/replay, network denial, parity, retries, tool calls, can
 
 - 2026-09-07T13:08:02+00:00: Recorded command exit 101; command argv SHA-256
   3211cbb17659455b743594d7b488023c32bf8ad124e43fb5b7a2d3f51490bd3d.
+
+- 2026-09-07T13:09:12+00:00: A second credential-free loopback capture using the same workspace and
+  state root proved all normalized headers and request JSON stable except /messages/0/content: the
+  only changed 174-175 byte slice in the 21,763-byte system content contains the generated
+  attempt-<pid>-<nonce> private run path. Coordinator authorized an adapter-owned deterministic
+  SHA-256 route-derived run directory with fail-closed exclusive creation, cleanup, and same-route
+  concurrency fencing. Proposed owned paths/tests: crates/asb-agents/src/opendesk.rs unit tests for
+  stable opaque route path, distinct routes, concurrent duplicate rejection, stale-directory
+  rejection, no public-ID/path leakage, cleanup/reuse; crates/asb-agents/tests/replay_opendesk.rs
+  real successive-attempt request parity. A third shared replay blocker is now exact: OpenDesk 0.3.5
+  receives SSE while omitting request member stream; StrictReplayService rejects
+  ResponseBody::Events as InvalidCassette. Proposed shared tests: cassette/service accepts exact
+  text/event-stream response for an absent stream flag only under the documented compatibility rule,
+  rejects wrong/missing content type and contradictory buffered/event cases, and reproduces exact
+  socket bytes. Shared cassette.rs/service.rs/schema/strict/schema-test paths remain untouched.
