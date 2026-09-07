@@ -10,15 +10,18 @@
   ],
   "id": "AR-0902",
   "next_action": "Build bounded campaigns and counterexample retention.",
+  "observed_branch": "feature/fault-assurance",
+  "observed_dirty": 0,
+  "observed_head": "e85548d00cffcc3a014bfbc04b8fc79c5fe35da0",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0902.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Add fuzz mutation and lifecycle fault campaigns",
-  "updated_at": "2026-09-07T01:49:58+00:00",
+  "updated_at": "2026-09-07T01:50:12+00:00",
   "worktree_key": "agent-systems-benchmark-fault-assurance"
 }
 ---
