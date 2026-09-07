@@ -2,7 +2,7 @@
 {
   "branch": "feature/csb-execution-assurance",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-07T09:23:46+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/csb-execution-assurance",
   "observed_dirty": 0,
   "observed_head": "814397f8f74971589aa02b13da12485169db3e2e",
-  "owner": "",
+  "owner": "contracts-20260906",
   "plan": "../plans/AR-0603.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T06:13:40+00:00",
+  "updated_at": "2026-09-07T06:23:46+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
@@ -78,3 +78,5 @@ Implementation has not started. Read the linked plan before claiming.
   command completed, while its evidence push reported a stale expected ref although remote already
   contained the exact commit; reconcile reached a8a440c5. Declared product worktree remains clean at
   814397f. Next action: license/dependency inventory and bounded subprocess contract after reclaim.
+
+- 2026-09-07T06:23:46+00:00: Claimed by contracts-20260906.
