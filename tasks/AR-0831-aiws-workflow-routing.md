@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Route explicitly trusted ASB CI jobs to qualified development host runners while preserving disposable public-PR isolation.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Integrate development host ASB runners with GitHub workflows",
-  "updated_at": "2026-09-07T07:36:58+00:00",
+  "updated_at": "2026-09-07T07:37:51+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-workflow-routing"
 }
 ---
@@ -81,3 +81,6 @@ Implementation has not started. Read the linked plan before claiming.
   because dash rejected pipefail; the corrected explicit Bash run passed. No public PR workflow
   changed, no persistent runner dispatch occurred, and AR-0832/AR-0833 qualification limits remain
   explicit.
+
+- 2026-09-07T07:37:51+00:00: Recorded command exit 0; command argv SHA-256
+  f74d24a6d01f4417d03b18e437718bdb6a5a4c71e851ef05c41466e822d43033.
