@@ -12,17 +12,17 @@
   "id": "AR-0848",
   "next_action": "Implement a fail-closed local native x86_64 capacity lease, bounded resource/isolation checks, sanitized evidence schema and lifecycle negatives; qualify only the authorized existing Ubuntu host and do not activate persistent GitHub runners or claim aarch64/performance support.",
   "observed_branch": "feature/native-x86-capacity",
-  "observed_dirty": 3,
-  "observed_head": "4658d0e1b600a8c8a792d9f2bd1f2f3c353ce740",
+  "observed_dirty": 0,
+  "observed_head": "5d2cd78a924b2e2cb76e0bf48e01dca3e9249e74",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0848.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify authorized disposable native x86_64 capacity on a development host.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Qualify native x86 capacity",
-  "updated_at": "2026-09-07T23:58:51+00:00",
+  "updated_at": "2026-09-07T23:59:22+00:00",
   "worktree_key": "agent-systems-benchmark-native-x86-capacity"
 }
 ---
