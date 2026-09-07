@@ -2,7 +2,7 @@
 {
   "branch": "feature/reliability-fairness",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T05:27:20+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0203",
     "AR-0204",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/reliability-fairness",
   "observed_dirty": 0,
   "observed_head": "eb28ca7aeae59b2340af7856e40f0ea31b792e66",
-  "owner": "contracts-20260906",
+  "owner": "",
   "plan": "../plans/AR-1004.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Report repeated-attempt reliability and prevent aggregate results from hiding starvation or hard strata.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Measure reliability and mixed-workload fairness",
-  "updated_at": "2026-09-07T04:15:07+00:00",
+  "updated_at": "2026-09-07T04:15:41+00:00",
   "worktree_key": "agent-systems-benchmark-reliability-fairness"
 }
 ---
@@ -273,3 +273,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T04:15:07+00:00: Recorded command exit 0; command argv SHA-256
   157ad2182bb0bc3580c319eb496d961f09b98f748940383d67d3930d9cda275b.
+
+- 2026-09-07T04:15:41+00:00: AR-1004 complete. Product candidate eb28ca7, reviewed exact-head PR
+  #30, and signed+DCO no-ff merge 814397f are durably on origin/main. PR runs fault 34081912485,
+  formal 34081912577, quality 34081912503, Rust 34081912453 were green; post-merge exact-main runs
+  fault 34082158961, formal 34082158982, quality 34082158978, Rust 34082158999 were green including
+  both Rust architectures. Exact-main isolated local fmt/clippy/workspace
+  tests/docs/release/formal/DCO/policy/diff and clean-tree checks passed. Reliability reports
+  enforce a bounded exact planned roster, preserve every failure/censoring and starvation threshold,
+  stratify stable class/epoch evidence, and have hand-calculated/repeated-seed/omission/extreme
+  negatives. reliability.rs coverage is 100% regions/functions/lines; limits explicitly remain
+  empirical fixed-roster evidence without independence, stationarity, or population-inference
+  claims. Final state uv/ruff/mypy/37 tests/97% branch coverage/schema/render/doctor and live
+  reconcile/snapshot/doctor passed; state/product repos are clean and synchronized.
