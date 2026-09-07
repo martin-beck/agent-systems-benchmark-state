@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Harden development-host runner isolation against same-UID job tampering and diagnostic leakage.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Harden runner isolation and credential boundaries",
-  "updated_at": "2026-09-07T09:02:25+00:00",
+  "updated_at": "2026-09-07T09:02:57+00:00",
   "worktree_key": "agent-systems-benchmark-runner-isolation-hardening"
 }
 ---
@@ -250,3 +250,6 @@ Acceptance criteria:
 
 - 2026-09-07T09:02:25+00:00: Recorded command exit 0; command argv SHA-256
   c3ffd96328f1b348eeb5d3a7ebfa822e11b9272f787c67c1c779d89f71614104.
+
+- 2026-09-07T09:02:57+00:00: Recorded command exit 2; command argv SHA-256
+  2deab4116e303e3c36b1bdbb19efe75e0119aa8f70c540e41a417ccb3f668ce5.
