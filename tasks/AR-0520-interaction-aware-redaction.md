@@ -9,7 +9,7 @@
     "AR-0517"
   ],
   "id": "AR-0520",
-  "next_action": "Make request-body redaction selectors interaction/method-aware so GET catalog entries can remain selector-free while POST bodies remain private and replayable.",
+  "next_action": "Independent immutable review of exact 867861c95c192659102d07f0093a69b58d281513; publish only after approval, then require exact-head x86_64/aarch64 CI.",
   "observed_branch": "feature/interaction-aware-redaction",
   "observed_dirty": 0,
   "observed_head": "867861c95c192659102d07f0093a69b58d281513",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support per-interaction request redaction policies for mixed catalog and private requests.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Interaction-aware request redaction",
-  "updated_at": "2026-09-07T20:56:33+00:00",
+  "updated_at": "2026-09-07T20:57:02+00:00",
   "worktree_key": "agent-systems-benchmark-interaction-aware-redaction"
 }
 ---
@@ -219,3 +219,13 @@ Repair the cassette-global request-body redaction limitation exposed by Goose: c
 
 - 2026-09-07T20:56:33+00:00: Recorded command exit 0; command argv SHA-256
   efa9def34af7032b0dfcd20334c52e2fdfaca084961a8af0a86405f3a7f1662e.
+
+- 2026-09-07T20:57:02+00:00: Immutable candidate ready for independent review: signed+DCO head
+  867861c95c192659102d07f0093a69b58d281513, tree ea068837cd8dbcf763f0f00a911fd44d0b987015, exact
+  base d62add5f815ceb32a920eaa5fc46248b82c2525c. Range-diff from pre-rebase b61aaf58 is equal;
+  intervening main delta is the disjoint mini-SWE replay test only. Exact-tree replay/full
+  workspace/clippy/formal/Kani 6-of-6 plus deliberate
+  negative/coverage/platform/policy/DCO/signature/Gitleaks/privacy/scope gates pass. Workspace line
+  coverage is 94.74 percent and asb-replay 97.63 percent. Initial exact-policy command used
+  positional DCO arguments and stopped at argparse; corrected owner-wrapped invocation passed
+  without product mutation.
