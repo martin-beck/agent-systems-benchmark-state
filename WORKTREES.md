@@ -38,8 +38,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-interaction-aware-redaction` | `feature/interaction-aware-redaction` | `867861c95c19` | 0 | behind 11, ahead 0 |
 | `agent-systems-benchmark-native-platform-lab` | `feature/native-platform-lab` | `b1669203308d` | 0 | behind 55, ahead 0 |
 | `agent-systems-benchmark-native-platforms` | `feature/native-platforms` | `bdaf9c108226` | 0 | behind 75, ahead 17 |
-| `agent-systems-benchmark-native-x86-capacity` | `feature/native-x86-capacity` | `4658d0e1b600` | 1 | behind 2, ahead 2 |
-| changed files | - | - | - | `platforms/v1/native-x86-evidence/` |
+| `agent-systems-benchmark-native-x86-capacity` | `feature/native-x86-capacity` | `4658d0e1b600` | 3 | behind 2, ahead 2 |
+| changed files | - | - | - | `docs/NATIVE_X86_CAPACITY.md`, `tests/platforms/test_native_x86_capacity.py`, `platforms/v1/native-x86-evidence/` |
 | `agent-systems-benchmark-opendesk-strict-replay-http-compatibility` | `feature/opendesk-strict-replay-http-compatibility` | `f26216bde125` | 0 | behind 35, ahead 0 |
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 169, ahead 0 |
 | `agent-systems-benchmark-portable-metrics` | `feature/portable-metrics` | `a0f67bea1ffe` | 0 | behind 143, ahead 0 |
