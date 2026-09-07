@@ -10,7 +10,7 @@
     "AR-0503"
   ],
   "id": "AR-0905",
-  "next_action": "Independent immutable review of signed candidate a288bb3485aa2a65ffa79626c3352c6522791138 before publication.",
+  "next_action": "Monitor PR #57 exact head a288bb3485aa2a65ffa79626c3352c6522791138; investigate failures and merge only after every required exact-head check is green and coordinator authorizes.",
   "observed_branch": "feature/recovery-models",
   "observed_dirty": 0,
   "observed_head": "a288bb3485aa2a65ffa79626c3352c6522791138",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply bounded formal models to run lifecycle, leases, recovery, replay cursors and uncertain external effects.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Model execution recovery and worker fencing",
-  "updated_at": "2026-09-07T23:12:39+00:00",
+  "updated_at": "2026-09-07T23:13:10+00:00",
   "worktree_key": "agent-systems-benchmark-recovery-models"
 }
 ---
@@ -234,3 +234,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T23:12:39+00:00: Recorded command exit 0; command argv SHA-256
   7c7ac5f1a45f8b9ec75d6a0cb2c1e583f7e10281f8684e331e6f091dbf36cfec.
+
+- 2026-09-07T23:13:10+00:00: Published immutable reviewed head
+  a288bb3485aa2a65ffa79626c3352c6522791138 with exact absent-ref lease and opened focused PR #57
+  against base 72dd78f72dd74d20654232923dfe2fcff7771dff. Initial exact-head runs: formal
+  34169250678, quality 34169250636, Rust x86_64/aarch64 34169250637, fault 34169250641,
+  emulated-aarch64 34169250633; all were in progress at first query. PR head/base identities and
+  mergeability were exact.
