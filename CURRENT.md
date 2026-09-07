@@ -9,6 +9,12 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. | root-coordination-20260906 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-0511](tasks/AR-0511-replay-qwen.md): Qualify Qwen Code replay | Qualify replay conformance for Qwen Code. | Prove credential-free record/replay conformance for Qwen Code with network denial and malformed/tool/cancel negatives. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -22,7 +28,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0511](tasks/AR-0511-replay-qwen.md): Qualify Qwen Code replay | Qualify replay conformance for Qwen Code. | Prove credential-free record/replay conformance for Qwen Code with network denial and malformed/tool/cancel negatives. | - |
 | P0 | [AR-0512](tasks/AR-0512-replay-goose.md): Qualify goose replay | Qualify replay conformance for goose. | Prove credential-free record/replay conformance for goose with network denial and malformed/tool/cancel negatives. | - |
 | P0 | [AR-0513](tasks/AR-0513-replay-miniswe.md): Qualify mini-SWE replay | Qualify replay conformance for mini-SWE-agent. | Prove credential-free record/replay conformance for mini-SWE-agent with network denial and malformed/tool/cancel negatives. | - |
 | P0 | [AR-0514](tasks/AR-0514-replay-openhands.md): Qualify OpenHands replay | Qualify replay conformance for OpenHands. | Prove credential-free record/replay conformance for OpenHands with network denial and malformed/tool/cancel negatives. | - |
