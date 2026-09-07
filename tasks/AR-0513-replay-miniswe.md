@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for mini-SWE-agent.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Qualify mini-SWE replay",
-  "updated_at": "2026-09-07T20:06:48+00:00",
+  "updated_at": "2026-09-07T20:08:04+00:00",
   "worktree_key": "agent-systems-benchmark-replay-miniswe"
 }
 ---
@@ -175,3 +175,6 @@ Qualify mini-SWE-agent record/replay, network denial, parity, retries, tool call
   evidence is x86_64 only; automatic retry is not structurally observable and is explicitly
   Unavailable(UnstructuredBatchDiagnostics); upstream wheel extraction/CPython environment
   provenance remains inherited from completed AR-0308, not newly reproduced here.
+
+- 2026-09-07T20:08:04+00:00: Recorded command exit 0; command argv SHA-256
+  55907d384fbbd5b439544fc167d4dd8f234230648b95439782f522c1a47765f8.
