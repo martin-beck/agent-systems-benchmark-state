@@ -11,7 +11,7 @@
   "id": "AR-0308",
   "next_action": "Add focused parser/config/cancellation tests and a credential-free loopback real-package fixture; repair any native findings before requesting the shared module-registration fence.",
   "observed_branch": "feature/agent-mini-swe",
-  "observed_dirty": 1,
+  "observed_dirty": 2,
   "observed_head": "2579362d6936b25e6008583f7bd485e5498a4e3f",
   "owner": "replay-20260906",
   "plan": "../plans/AR-0308.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned mini-SWE-agent as a bounded batch engineering agent.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Implement mini-SWE-agent client adapter",
-  "updated_at": "2026-09-07T01:07:20+00:00",
+  "updated_at": "2026-09-07T01:07:42+00:00",
   "worktree_key": "agent-systems-benchmark-agent-mini-swe"
 }
 ---
