@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-miniswe",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T20:50:16+00:00",
+  "claim_expires": "2026-09-07T21:39:26+00:00",
   "depends_on": [
     "AR-0308",
     "AR-0503",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for mini-SWE-agent.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Qualify mini-SWE replay",
-  "updated_at": "2026-09-07T18:50:16+00:00",
+  "updated_at": "2026-09-07T19:39:26+00:00",
   "worktree_key": "agent-systems-benchmark-replay-miniswe"
 }
 ---
@@ -54,3 +54,5 @@ Qualify mini-SWE-agent record/replay, network denial, parity, retries, tool call
   traffic before any test/support claim.
 
 - 2026-09-07T18:50:16+00:00: Heartbeat by replay_20260906.
+
+- 2026-09-07T19:39:26+00:00: Heartbeat by replay_20260906.
