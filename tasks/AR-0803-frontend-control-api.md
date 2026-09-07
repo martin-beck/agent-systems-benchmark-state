@@ -12,17 +12,17 @@
   "id": "AR-0803",
   "next_action": "Repair independently identified endpoint, total-deadline, exact-negotiation, initial-envelope, and privacy-enforcement gaps; revalidate immutable replacement.",
   "observed_branch": "feature/frontend-control-api",
-  "observed_dirty": 9,
-  "observed_head": "0184ec3290ad1a5c182e1d01d523eb11510f7604",
+  "observed_dirty": 0,
+  "observed_head": "cbb764c45c6128d75f42fb78a3a2a15a0874528a",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0803.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary.",
-  "task_revision": 98,
+  "task_revision": 99,
   "title": "Define the frontend control API",
-  "updated_at": "2026-09-07T04:08:02+00:00",
+  "updated_at": "2026-09-07T04:08:12+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api"
 }
 ---
