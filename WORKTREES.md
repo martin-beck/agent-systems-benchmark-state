@@ -23,8 +23,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-fault-assurance` | `feature/fault-assurance` | `e6c623113c15` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-formal-assurance` | `feature/formal-assurance` | `2a495a99a657` | 0 | behind 56, ahead 0 |
 | `agent-systems-benchmark-frontend-control-api` | `feature/frontend-control-api` | `cbb764c45c61` | 0 | behind 2, ahead 1 |
-| `agent-systems-benchmark-native-platforms` | `feature/native-platforms` | `f6a7c58f49a6` | 3 | behind 2, ahead 5 |
-| changed files | - | - | - | `tests/platforms/test_native_evidence.py`, `tools/platforms/native_evidence.py`, `tools/platforms/validate_manifests.py` |
+| `agent-systems-benchmark-native-platforms` | `feature/native-platforms` | `f6a7c58f49a6` | 4 | behind 2, ahead 5 |
+| changed files | - | - | - | `tests/platforms/test_native_evidence.py`, `tests/platforms/test_validate_manifests.py`, `tools/platforms/native_evidence.py`, `tools/platforms/validate_manifests.py` |
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 94, ahead 0 |
 | `agent-systems-benchmark-portable-metrics` | `feature/portable-metrics` | `a0f67bea1ffe` | 0 | behind 68, ahead 0 |
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `51daeb8608e5` | 0 | behind 87, ahead 0 |
