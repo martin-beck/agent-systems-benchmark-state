@@ -11,7 +11,7 @@
   "id": "AR-0902",
   "next_action": "Repair PR #28 bounded-fuzz dependency-policy failure with an explicit independent fuzz-workspace license/policy; validate and publish a focused signed DCO successor, then require fresh exact-head CI.",
   "observed_branch": "feature/fault-assurance",
-  "observed_dirty": 0,
+  "observed_dirty": 3,
   "observed_head": "ad00e8b1ea1607043eea9bfe6d86d8d4828abe92",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0902.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Add fuzz mutation and lifecycle fault campaigns",
-  "updated_at": "2026-09-07T02:45:16+00:00",
+  "updated_at": "2026-09-07T02:45:36+00:00",
   "worktree_key": "agent-systems-benchmark-fault-assurance"
 }
 ---
