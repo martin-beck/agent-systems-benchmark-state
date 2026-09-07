@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0307",
-  "next_action": "Inspect current release assets, structured run mode, provider configuration and extension failure behavior.",
+  "next_action": "Complete isolated compilation/tests after AR-0304 transfers the additive asb-agents lib.rs export fence; then run pinned x86_64/aarch64 native journeys and full gates.",
   "observed_branch": "feature/agent-goose",
   "observed_dirty": 4,
   "observed_head": "d384c4c54a4576dadaae3a542cfc09a5e339a4fe",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned AAIF goose in no-session structured mode.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Implement goose client adapter",
-  "updated_at": "2026-09-07T00:42:01+00:00",
+  "updated_at": "2026-09-07T00:42:22+00:00",
   "worktree_key": "agent-systems-benchmark-agent-goose"
 }
 ---
@@ -125,3 +125,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T00:42:01+00:00: Recorded command exit 0; command argv SHA-256
   902aa4b1eca05cd8263d107470aa806b258153951983ebea7fce32a48ac7c7e3.
+
+- 2026-09-07T00:42:22+00:00: Inspected official stable v1.49.0 lightweight tag 71fc4be/tree 448f24c
+  and Apache-2.0 license hash; tag/commit unsigned. Verified official x86_64/aarch64 musl archive
+  digests and extracted executable hashes. Native x86_64 static-musl credential-free loopback probes
+  prove quiet no-session/no-profile stream-JSON, explicit OPENAI_BASE_URL/model, developer tool
+  write, causal tool IDs, token usage, and only loopback connect syscalls. Deliberate missing
+  extension exits zero with stderr and continues, so isolated adapter fails closed on successful-run
+  diagnostics. Added only Goose source, real fixture, provenance fixture and scoped README; shared
+  lib.rs/Cargo/schema remain untouched pending fence.
