@@ -29,8 +29,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | changed files | - | - | - | `Cargo.lock`, `crates/asb-cli/Cargo.toml`, `crates/asb-cli/src/lib.rs`, `crates/asb-control/Cargo.toml`, `crates/asb-control/README.md`, `crates/asb-control/examples/generate_schema.rs`, `crates/asb-control/fixtures/v1/success-response.json`, `crates/asb-control/schema/v1/event.schema.json`, `crates/asb-control/schema/v1/request.schema.json`, `crates/asb-control/schema/v1/response.schema.json`, `crates/asb-control/src/endpoint.rs`, `crates/asb-control/src/lib.rs`, `crates/asb-control/src/protocol.rs`, `crates/asb-control/src/state.rs`, `crates/asb-control/tests/control.rs`, `crates/asb-control/tests/endpoint.rs`, `crates/asb-control/tests/schema_conformance.rs`, `docs/FRONTEND_CONTROL_API.md`, `crates/asb-cli/src/control.rs`, `crates/asb-control/src/schema.rs` |
 | `agent-systems-benchmark-native-platform-lab` | `feature/native-platform-lab` | `b1669203308d` | 0 | behind 18, ahead 0 |
 | `agent-systems-benchmark-native-platforms` | `feature/native-platforms` | `bdaf9c108226` | 0 | behind 38, ahead 17 |
-| `agent-systems-benchmark-opendesk-strict-replay-http-compatibility` | `feature/opendesk-strict-replay-http-compatibility` | `cf64758a6e9e` | 2 | behind 0, ahead 1 |
-| changed files | - | - | - | `fault-assurance/README.md`, `fault-assurance/run-mutation-sentinels.sh` |
+| `agent-systems-benchmark-opendesk-strict-replay-http-compatibility` | `feature/opendesk-strict-replay-http-compatibility` | `f26216bde125` | 0 | behind 0, ahead 2 |
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 132, ahead 0 |
 | `agent-systems-benchmark-portable-metrics` | `feature/portable-metrics` | `a0f67bea1ffe` | 0 | behind 106, ahead 0 |
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `51daeb8608e5` | 0 | behind 125, ahead 0 |

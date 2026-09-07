@@ -12,17 +12,17 @@
   "id": "AR-0516",
   "next_action": "Repair exact mutation-count oracle for the additional caught request_matches branch, rerun focused mutation fixture, sign successor, and request immutable review before lease-safe PR update.",
   "observed_branch": "feature/opendesk-strict-replay-http-compatibility",
-  "observed_dirty": 2,
-  "observed_head": "cf64758a6e9ed49d3eca1607fa1ea8135be700f9",
+  "observed_dirty": 0,
+  "observed_head": "f26216bde1257aaa5706ac59d05ade697329670d",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0516.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add narrowly scoped strict-replay compatibility for pinned OpenDesk traffic.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "OpenDesk strict-replay HTTP compatibility",
-  "updated_at": "2026-09-07T14:34:51+00:00",
+  "updated_at": "2026-09-07T14:35:23+00:00",
   "worktree_key": "agent-systems-benchmark-opendesk-strict-replay-http-compatibility"
 }
 ---
