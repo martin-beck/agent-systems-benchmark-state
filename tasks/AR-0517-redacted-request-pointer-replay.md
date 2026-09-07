@@ -2,7 +2,7 @@
 {
   "branch": "feature/redacted-request-pointer-replay",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T18:04:23+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0502",
     "AR-0503",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/redacted-request-pointer-replay",
   "observed_dirty": 0,
   "observed_head": "d7492ef5e9ad5a3989cead2b42154bae3fc735d5",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0517.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make privacy-safe redacted request bodies strictly replayable.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Replay redacted request pointers",
-  "updated_at": "2026-09-07T15:47:53+00:00",
+  "updated_at": "2026-09-07T15:48:28+00:00",
   "worktree_key": "agent-systems-benchmark-redacted-request-pointer-replay"
 }
 ---
@@ -176,3 +176,19 @@ Require privacy/Gitleaks, schema and formal checks, adversarial pointer negative
 
 - 2026-09-07T15:47:53+00:00: Recorded command exit 0; command argv SHA-256
   480208176be26e7d45c84fc006b8f914db26335775f9575ca17a277b67c0d106.
+
+- 2026-09-07T15:48:28+00:00: Integrated reviewed signed+DCO PR #44 as exact merge
+  ab5d6c91c99d48883ed58eb1df6803c2711ecbd3 (approved feature
+  d7492ef5e9ad5a3989cead2b42154bae3fc735d5; tree f2df9ea4ef0bc19fbc76a82f723f052cc4b9e927).
+  Exact-main CI succeeded: Rust x86_64+aarch64 34139759198, quality 34139759452, formal 34139759342,
+  fault/fuzz/mutation 34139759238. Postmerge local workspace fmt/clippy/tests/docs/release,
+  policy/DCO/signatures/privacy/Gitleaks, actionlint/zizmor, deny/audit, platform/failure fixtures,
+  Loom/state models, Kani 5/5 plus deliberate failing counterexample, and corrected pinned
+  cargo-mutants 7/7 succeeded. Initial mutation attempt was preflight-only due omitted pinned
+  cargo-mutants path, then corrected without product mutation. Durable AR-0509 revision 42/state
+  f4be0622 proves pinned Codex 0.153.4 real loopback strict replay in 33.65s with all selected
+  pointers decoding only as redaction markers, trajectory/tool/grade parity, pacing cancellation,
+  empty private roots, and malformed/truncated negative; two earlier strengthened-run exits were
+  harness SHA/rustfmt preflight only and ran no product test. Final coordination Ruff/mypy/38
+  tests/96% branch coverage/render check/live doctor succeeded; product and state refs were clean
+  and synchronized before release.
