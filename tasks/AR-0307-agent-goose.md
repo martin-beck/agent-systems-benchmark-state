@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned AAIF goose in no-session structured mode.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Implement goose client adapter",
-  "updated_at": "2026-09-07T01:07:25+00:00",
+  "updated_at": "2026-09-07T01:07:50+00:00",
   "worktree_key": "agent-systems-benchmark-agent-goose"
 }
 ---
@@ -286,3 +286,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T01:07:25+00:00: Recorded command exit 1; command argv SHA-256
   4a4220d81146d7e5b2d0fde45fdedb2c6db1280d68b2025eb63af2480527ec0e.
+
+- 2026-09-07T01:07:50+00:00: Recorded command exit 0; command argv SHA-256
+  aea885da022d63785f8fb8b2f3e7ebc092ff89ee8ebcbb811635c7e475f0b101.
