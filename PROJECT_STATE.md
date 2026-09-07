@@ -10,17 +10,17 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #31 | `feature/native-platforms@bdaf9c108226` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
+| #31 | `feature/native-platforms@bdaf9c108226` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34168679478 | `72dd78f72dd7` | push | Rust verification | queued:- |
-| 34168679459 | `72dd78f72dd7` | push | Emulated aarch64 portability | queued:- |
-| 34168679395 | `72dd78f72dd7` | push | Fault assurance | queued:- |
-| 34168679390 | `72dd78f72dd7` | push | Formal assurance | queued:- |
-| 34168679335 | `72dd78f72dd7` | push | Repository quality | queued:- |
+| 34168679478 | `72dd78f72dd7` | push | Rust verification | in_progress:- |
+| 34168679459 | `72dd78f72dd7` | push | Emulated aarch64 portability | in_progress:- |
+| 34168679395 | `72dd78f72dd7` | push | Fault assurance | in_progress:- |
+| 34168679390 | `72dd78f72dd7` | push | Formal assurance | in_progress:- |
+| 34168679335 | `72dd78f72dd7` | push | Repository quality | in_progress:- |
 | 34168111552 | `c0b9e0baf5f4` | pull_request | Emulated aarch64 portability | completed:success |
 | 34168111534 | `c0b9e0baf5f4` | pull_request | Formal assurance | completed:success |
 | 34168111508 | `c0b9e0baf5f4` | pull_request | Repository quality | completed:success |
