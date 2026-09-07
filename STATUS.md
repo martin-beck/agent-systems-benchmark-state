@@ -513,7 +513,7 @@ flowchart LR
 | P1 | [AR-0305](tasks/AR-0305-agent-gemini.md): Implement Gemini CLI client adapter | contracts-20260906 | Run pinned Gemini CLI through noninteractive JSON events. | Await serialized lib.rs registration handoff, then rebase once onto stabilized exact main and rerun registered-module full gates. |
 | P1 | [AR-0306](tasks/AR-0306-agent-qwen-code.md): Implement Qwen Code client adapter | root-coordination-20260906 | Run pinned Qwen Code through isolated headless stream-JSON. | Merge reviewed exact candidate 0be96c9 with a signed DCO merge commit, push exact main, run post-merge gates and require fresh exact-main CI. |
 | P1 | [AR-0307](tasks/AR-0307-agent-goose.md): Implement goose client adapter | quality-20260906 | Run pinned AAIF goose in no-session structured mode. | Await explicit AR-0304 release transfer of the additive lib.rs/CI fence; then rebase onto exact current main, compile, run pinned x86_64/aarch64 native success/failure/cancellation journeys, and full gates. |
-| P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | replay-20260906 | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Replace the copied isolation scaffold with mini-SWE-agent 2.4.6 invocation and bounded trajectory mapper; then add credential-free native fixture before requesting shared registration fence. |
+| P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | replay-20260906 | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Add focused parser/config/cancellation tests and a credential-free loopback real-package fixture; repair any native findings before requesting the shared module-registration fence. |
 
 ### Planned (50)
 

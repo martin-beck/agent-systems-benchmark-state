@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0308",
-  "next_action": "Replace the copied isolation scaffold with mini-SWE-agent 2.4.6 invocation and bounded trajectory mapper; then add credential-free native fixture before requesting shared registration fence.",
+  "next_action": "Add focused parser/config/cancellation tests and a credential-free loopback real-package fixture; repair any native findings before requesting the shared module-registration fence.",
   "observed_branch": "feature/agent-mini-swe",
   "observed_dirty": 1,
   "observed_head": "2579362d6936b25e6008583f7bd485e5498a4e3f",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned mini-SWE-agent as a bounded batch engineering agent.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Implement mini-SWE-agent client adapter",
-  "updated_at": "2026-09-07T01:00:39+00:00",
+  "updated_at": "2026-09-07T01:01:34+00:00",
   "worktree_key": "agent-systems-benchmark-agent-mini-swe"
 }
 ---
@@ -115,3 +115,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T01:00:39+00:00: Recorded command exit 0; command argv SHA-256
   0b6be444a04d23c4f257f4dd0fc5d7376034232a1b69e9384329230adb36e17b.
+
+- 2026-09-07T01:01:34+00:00: Isolated mini_swe.rs implementation now compiles in a disposable mirror
+  with temporary registration; product shared lib/Cargo/schema remain unchanged. Added unlinked
+  prompt descriptor, cleared isolated HOME/XDG/config, explicit endpoint/model, closed auxiliary
+  proxy, canonical bounded workspace/state checks, process-group cancellation, bounded trajectory
+  parsing, causal bash tool pairs and privacy-filtered lifecycle/usage evidence. Native dependency
+  resolution under /srv selected LiteLLM 1.100.0 and a large unpinned transitive set, confirming no
+  reproducible environment claim. One provenance inspection import was mistakenly performed before
+  setting isolated MSWEA_GLOBAL_CONFIG_DIR and printed the ambient config path only; no config
+  contents or credentials were read, retained in product files, or included in state notes. This
+  changed privacy conclusion is recorded and future runs must set isolation before import.
+  invoke.patch SHA-256 127588676e1af0789cfd5e486c1e450c09b2f0606234ae1f17bdf292064329da;
+  trajectory.patch SHA-256 017f4629755650203c7f5ba407a03bc98246b7526282dee7b26f8b7cf5207418.
