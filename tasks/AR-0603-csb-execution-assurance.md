@@ -10,7 +10,7 @@
     "AR-0104"
   ],
   "id": "AR-0603",
-  "next_action": "Apply the exact two missing closing delimiters through handoffctl, refresh the disposable mirror from the audited product tree, and rerun locked offline tests.",
+  "next_action": "After explicit Cargo fence handoff, rebase the two signed commits onto exact main, add only asb-csb-runner membership/runtime/store dependencies and implement durable sandboxed process/artifact/cancellation/recovery tests including a real pinned offline x86_64 fixture.",
   "observed_branch": "feature/csb-execution-assurance",
   "observed_dirty": 0,
   "observed_head": "efa8f9636741d65786293067d82d7454c86bd2ef",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T09:02:03+00:00",
+  "updated_at": "2026-09-07T09:02:44+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
@@ -207,3 +207,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T09:02:03+00:00: Recorded command exit 0; command argv SHA-256
   feae5cb7320d53e83333613e5b155b0e997c6d9b3c0d6ac9818e86dac87c8443.
+
+- 2026-09-07T09:02:44+00:00: Signed+DCO product checkpoint efa8f9636741d65786293067d82d7454c86bd2ef
+  adds only crates/asb-csb-runner/{Cargo.toml,README.md,src/lib.rs} atop provenance checkpoint
+  939c35c. It enforces v1 negotiation-first admission, strict peer-limit intersection, non-forgeable
+  validated requests, bounded arguments/environment/artifact paths/frame size,
+  duplicate/stale/unknown causal fencing, negotiated in-flight capacity, and a 4096-operation
+  lifetime ceiling. Disposable offline mirror under /srv/data/projects passed stable fmt, Clippy -D
+  warnings, 15 unit tests, doctests, rustdoc -D warnings; pinned nightly branch coverage is 98.48%
+  (99.75% lines). Worktree is clean; root Cargo/lock/schema unchanged. This is a partial checkpoint
+  only: no subprocess, durable intent, sandbox, artifact, cancellation, recovery, or native platform
+  claim yet.
