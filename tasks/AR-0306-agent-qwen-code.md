@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned Qwen Code through isolated headless stream-JSON.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Implement Qwen Code client adapter",
-  "updated_at": "2026-09-07T00:33:54+00:00",
+  "updated_at": "2026-09-07T00:37:00+00:00",
   "worktree_key": "agent-systems-benchmark-agent-qwen-code"
 }
 ---
@@ -178,3 +178,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T00:33:54+00:00: Recorded command exit 0; command argv SHA-256
   97079c002900f98f96981ea7cb1ce04cca00687254f3f8ed5b33954e79033fd4.
+
+- 2026-09-07T00:37:00+00:00: Recorded command exit 0; command argv SHA-256
+  e5dc4b26351d35ac41f096dede55ff2c9dc21af7b3aa92f8dd59f01fd0e4ee96.
