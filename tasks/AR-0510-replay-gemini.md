@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0510",
-  "next_action": "Await focused shared Gemini dialect repair for exact thinkingConfig shape {includeThoughts:boolean}; then rerun pinned capture-to-strict-replay and remaining gates without weakening exact matching.",
+  "next_action": "Complete final privacy/scope/diff audit, create focused signed+DCO candidate, verify exact commit, and request immutable review before publication.",
   "observed_branch": "feature/replay-gemini",
   "observed_dirty": 2,
   "observed_head": "24ad8d22a6cca66827cc94205ae3474c12f8fd7a",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Gemini.",
-  "task_revision": 105,
+  "task_revision": 106,
   "title": "Qualify Gemini replay",
-  "updated_at": "2026-09-07T18:15:42+00:00",
+  "updated_at": "2026-09-07T18:16:36+00:00",
   "worktree_key": "agent-systems-benchmark-replay-gemini"
 }
 ---
@@ -325,3 +325,19 @@ Qualify Gemini record/replay, network denial, parity, retries, tool calls, cance
 
 - 2026-09-07T18:15:42+00:00: Recorded command exit 0; command argv SHA-256
   050dc9e7352ba42f8b2d8d145e9caf815c7244a1c7fcbcbeae6deadfa9c554e0.
+
+- 2026-09-07T18:16:36+00:00: AR-0519 shared contract is integrated on exact product main
+  6a5b9b5181d4dffa639996c07e69a28eb84887a0. Genuine pinned Gemini 0.58.0 loopback-only capture and
+  strict replay are green: HTTP 500 then byte-semantic identical retry, causal tool response,
+  completion, sealed cassette with public sentinel redacted, strict statuses [500,200,200],
+  Completed terminal, structural trajectory and independent original.bug-fix grade parity,
+  cancellation/reaping, and empty private state. The earlier HTTP 409 is retained as a valid
+  fail-closed diagnostic proving that a different state-root parent changes genuine request
+  semantics; the final oracle reuses the same cleaned deterministic attempt route. Final native
+  suite passed 3/3 in 16.60s. Full workspace fmt/clippy/tests/docs/release, formal 11 tests plus
+  Kani 5/5 and deliberate counterexample, configured coverage (asb-replay 97.65% lines),
+  repository/actionlint/zizmor/deny/audit/failure/platform/fault gates, mutation 7/7, and four fuzz
+  targets x256 passed. Two native command failures were harness preflight only (omitted pinned
+  digest, then obsolete env variable names); no Gemini process ran before correction. Fuzz exited
+  after successful targets solely because its generated fuzz/artifacts directory existed; the
+  documented cleanup removed only that generated directory and lock/tree checks passed.
