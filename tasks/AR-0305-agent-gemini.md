@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0305",
-  "next_action": "Await serialized lib.rs registration handoff, then rebase once onto stabilized exact main and rerun registered-module full gates.",
+  "next_action": "Await independent immutable review of exact 662603b; publish only after approval, then require exact-head hosted CI.",
   "observed_branch": "feature/agent-gemini",
   "observed_dirty": 0,
   "observed_head": "662603b38eeb595cf16414a2da76c5c78ca0b49f",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned Gemini CLI through noninteractive JSON events.",
-  "task_revision": 130,
+  "task_revision": 131,
   "title": "Implement Gemini CLI client adapter",
-  "updated_at": "2026-09-07T01:13:46+00:00",
+  "updated_at": "2026-09-07T01:14:01+00:00",
   "worktree_key": "agent-systems-benchmark-agent-gemini"
 }
 ---
@@ -418,3 +418,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T01:13:46+00:00: Recorded command exit 0; command argv SHA-256
   4b7a9218d083f6c36b17d6062fdba3732c2db699cd5c70c11c230a06cc162828.
+
+- 2026-09-07T01:14:01+00:00: Rebased once from 311c128 onto authorized exact main b79534b,
+  registered only pub mod gemini, and converted real/boundary tests to the public crate interface.
+  Candidate 662603b38eeb595cf16414a2da76c5c78ca0b49f tree c2435994989797976d5cf45b29a6eeb1a2cb2c29
+  is a clean single signed+DCO commit with five-path scope. Exact registered-tree gates green: 8
+  module tests, 1 public boundary, 4 real pinned CLI tests; workspace all-targets, clippy, docs,
+  release, formal models; aggregate coverage 94.84%, Gemini 92.35%, protocol 98.44%, replay 97.31%;
+  deny/audit/actionlint/zizmor/failure fixtures/platform; exact-range policy/Gitleaks/privacy.
+  Initial registered focused run exposed only fmt and cfg(test)-visibility integration defects; both
+  repaired before candidate.
