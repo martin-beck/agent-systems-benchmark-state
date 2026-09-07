@@ -42,7 +42,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-replay-cassettes` | `feature/replay-cassettes` | `cd88f5703fb3` | 0 | behind 133, ahead 0 |
 | `agent-systems-benchmark-replay-codex` | `feature/replay-codex` | `d086fec11f59` | 0 | behind 3, ahead 0 |
 | `agent-systems-benchmark-replay-evaluation` | `feature/replay-evaluation` | `3d04a2d5a3b3` | 0 | behind 146, ahead 0 |
-| `agent-systems-benchmark-replay-gemini` | `feature/replay-gemini` | `2d498df307bc` | 0 | behind 0, ahead 3 |
+| `agent-systems-benchmark-replay-gemini` | `feature/replay-gemini` | `2d498df307bc` | 1 | behind 0, ahead 3 |
+| changed files | - | - | - | `crates/asb-agents/tests/replay_gemini.rs` |
 | `agent-systems-benchmark-replay-opencode` | `feature/replay-opencode` | `eec93a240b58` | 0 | behind 16, ahead 0 |
 | `agent-systems-benchmark-replay-opendesk` | `feature/replay-opendesk` | `24a5519ef006` | 0 | behind 7, ahead 0 |
 | `agent-systems-benchmark-replay-pacing` | `feature/replay-pacing` | `73d28a431c78` | 0 | behind 101, ahead 0 |
