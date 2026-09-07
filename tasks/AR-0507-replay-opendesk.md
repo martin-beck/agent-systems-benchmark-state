@@ -12,17 +12,17 @@
   "id": "AR-0507",
   "next_action": "Await reviewed AR-0516 shared replay compatibility merge; then rebase, remove diagnostic span_id normalization, record exact model GETs, and complete pinned offline replay/cancel/malformed/full gates.",
   "observed_branch": "feature/replay-opendesk",
-  "observed_dirty": 1,
-  "observed_head": "8c249ba075ca4ba1e3e7c5b12170fb2963b1414c",
+  "observed_dirty": 0,
+  "observed_head": "24a5519ef006c063f3a8d6e81d0928f2e9e986f9",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0507.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenDesk.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Qualify OpenDesk replay",
-  "updated_at": "2026-09-07T15:03:45+00:00",
+  "updated_at": "2026-09-07T15:03:50+00:00",
   "worktree_key": "agent-systems-benchmark-replay-opendesk"
 }
 ---

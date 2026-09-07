@@ -43,8 +43,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | changed files | - | - | - | `crates/asb-agents/tests/replay_codex.rs` |
 | `agent-systems-benchmark-replay-evaluation` | `feature/replay-evaluation` | `3d04a2d5a3b3` | 0 | behind 137, ahead 0 |
 | `agent-systems-benchmark-replay-opencode` | `feature/replay-opencode` | `eec93a240b58` | 0 | behind 7, ahead 0 |
-| `agent-systems-benchmark-replay-opendesk` | `feature/replay-opendesk` | `8c249ba075ca` | 1 | behind 0, ahead 1 |
-| changed files | - | - | - | `crates/asb-agents/tests/replay_opendesk.rs` |
+| `agent-systems-benchmark-replay-opendesk` | `feature/replay-opendesk` | `24a5519ef006` | 0 | behind 0, ahead 2 |
 | `agent-systems-benchmark-replay-pacing` | `feature/replay-pacing` | `73d28a431c78` | 0 | behind 92, ahead 0 |
 | `agent-systems-benchmark-runner-isolation-hardening` | `fix/runner-isolation-hardening` | `9b4e7084e02c` | 0 | behind 27, ahead 0 |
 | `agent-systems-benchmark-runner-privacy-guard-remediation` | `fix/runner-canary-privacy-guards` | `c25e3d20d0dd` | 0 | behind 29, ahead 0 |
