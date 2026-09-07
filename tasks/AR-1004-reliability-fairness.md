@@ -9,7 +9,7 @@
     "AR-0401"
   ],
   "id": "AR-1004",
-  "next_action": "Run final exact-tree scope/privacy/signature/DCO checks, create one focused signed DCO candidate, and request independent immutable review before publication.",
+  "next_action": "Hold immutable c6c7d37 for independent review; publish only after approval and exact-main recheck.",
   "observed_branch": "feature/reliability-fairness",
   "observed_dirty": 0,
   "observed_head": "c6c7d37e27a33c3d5e4e0165a04585403260d317",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Report repeated-attempt reliability and prevent aggregate results from hiding starvation or hard strata.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Measure reliability and mixed-workload fairness",
-  "updated_at": "2026-09-07T03:52:39+00:00",
+  "updated_at": "2026-09-07T03:52:53+00:00",
   "worktree_key": "agent-systems-benchmark-reliability-fairness"
 }
 ---
@@ -150,3 +150,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T03:52:39+00:00: Recorded command exit 0; command argv SHA-256
   a247798cc078537107028704e1b6579ebf974ff7d61d9d184f93ad326d7c0e97.
+
+- 2026-09-07T03:52:53+00:00: Prepared clean unpublished immutable candidate
+  c6c7d37e27a33c3d5e4e0165a04585403260d317, tree 9604b8e2e3dee2872ee0536c88864cf3efed638a, exactly
+  one commit on public main 4a59593c0c55e0ad72656363473a404d8be1054b. The commit has a valid Martin
+  Beck SSH signature and exactly one matching Signed-off-by trailer. Exact range contains only the
+  four declared asb-analysis paths. DCO checker, repository policy, redacted exact-range Gitleaks,
+  diff check, privacy keyword audit, and clean-tree check pass. No feature remote ref or PR exists.
+  Candidate requires independent immutable review before publication.
