@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for aider.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Qualify aider replay",
-  "updated_at": "2026-09-07T13:38:18+00:00",
+  "updated_at": "2026-09-07T13:39:14+00:00",
   "worktree_key": "agent-systems-benchmark-replay-aider"
 }
 ---
@@ -122,3 +122,6 @@ Qualify aider record/replay, network denial, parity, retries, tool calls, cancel
   counterexample, Loom and production/state models all pass. Worktree and owned scratch are clean.
 
 - 2026-09-07T13:38:18+00:00: Heartbeat by quality_20260906.
+
+- 2026-09-07T13:39:14+00:00: Recorded command exit 0; command argv SHA-256
+  0f441af062d2a9ef7fe02dd1b874d3eae3c6654aea09de825d48600fa1875844.
