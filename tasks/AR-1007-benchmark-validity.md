@@ -14,11 +14,11 @@
   "plan": "../plans/AR-1007.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Track dataset provenance, contamination risk, grader validity and native portability per workload revision.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Maintain benchmark validity and portability registry",
-  "updated_at": "2026-09-06T15:06:27+00:00",
+  "updated_at": "2026-09-07T23:27:08+00:00",
   "worktree_key": "agent-systems-benchmark-benchmark-validity"
 }
 ---
@@ -27,3 +27,8 @@
 Track dataset provenance, contamination risk, grader validity and native portability per workload revision.
 
 Implementation has not started. Read the linked plan before claiming.
+
+- 2026-09-07T23:27:08+00:00: Dependencies AR-0401, AR-0701, and AR-1001 are durably done. Selected
+  highest-priority dependency-ready leaf; workload registry/provenance scope is disjoint from active
+  AR-0505 replay integration, AR-0840 frontend protocol, and AR-0848 native capacity. Declared
+  branch, worktree, and remote ref are absent.
