@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Add fuzz mutation and lifecycle fault campaigns",
-  "updated_at": "2026-09-07T01:54:46+00:00",
+  "updated_at": "2026-09-07T01:55:07+00:00",
   "worktree_key": "agent-systems-benchmark-fault-assurance"
 }
 ---
@@ -57,3 +57,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T01:54:46+00:00: Recorded command exit 0; command argv SHA-256
   458bab1b2166e0c145e1674942cae2bdd6cf91d78845fb9d62e3590af76f5681.
+
+- 2026-09-07T01:55:07+00:00: Pinned cargo-fuzz 0.13.2 and cargo-mutants 27.1.0 installed
+  successfully under /srv/data/projects/.asb-local/fault-tools through the AR wrapper without
+  product-tree changes. A first evidence update invocation failed before mutation because update
+  requires --expected-revision; corrected against fresh revision 9.
