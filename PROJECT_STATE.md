@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #31 | `feature/native-platforms@e7f08ed683f4` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS: | platforms: add fail-closed native qualification evidence |
+| #31 | `feature/native-platforms@e7f08ed683f4` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS: | platforms: add fail-closed native qualification evidence |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 34086102616 | `e7f08ed683f4` | pull_request | Fault assurance | in_progress:- |
-| 34086102606 | `e7f08ed683f4` | pull_request | Formal assurance | in_progress:- |
+| 34086102606 | `e7f08ed683f4` | pull_request | Formal assurance | completed:success |
 | 34086102602 | `e7f08ed683f4` | pull_request | Native platform evidence | completed:failure |
 | 34086102505 | `e7f08ed683f4` | pull_request | Repository quality | in_progress:- |
 | 34086102386 | `e7f08ed683f4` | pull_request | Rust verification | in_progress:- |
