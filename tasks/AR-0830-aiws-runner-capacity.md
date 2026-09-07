@@ -2,7 +2,7 @@
 {
   "branch": "feature/development-host-runner-capacity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T09:26:19+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0002",
     "AR-0003",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/development-host-runner-capacity",
   "observed_dirty": 0,
   "observed_head": "c67d572c227021e96f43abe62e430fc9acdb5f93",
-  "owner": "contracts-20260906",
+  "owner": "",
   "plan": "../plans/AR-0830.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners.",
-  "task_revision": 97,
+  "task_revision": 98,
   "title": "Provision hardened development host ASB runner capacity",
-  "updated_at": "2026-09-07T06:28:07+00:00",
+  "updated_at": "2026-09-07T06:28:24+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-capacity"
 }
 ---
@@ -302,3 +302,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T06:28:07+00:00: Recorded command exit 0; command argv SHA-256
   4876c01c299283ecc67bf08037baf6e348d11b70f4c761f5eed4dfe68697623d.
+
+- 2026-09-07T06:28:24+00:00: Resumed repair repeated successful health-only commands through
+  06:28:07 but produced no registration, listener, focused-test checkpoint, or prerequisite
+  diagnosis; preserve product checkpoint 0f260296 and require explicit registration procedure before
+  retry.
