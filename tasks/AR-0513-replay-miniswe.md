@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0513",
-  "next_action": "Monitor PR #51 exact immutable head 516f7b6 across quality 34158252963, formal 34158252964, Rust 34158252970 and fault 34158252973; investigate failures and merge only after every required cell is green.",
+  "next_action": "Run final coordination reconcile, snapshot, full state validation and live doctor; release AR-0513 done only if product/state refs and worktrees remain clean and synchronized.",
   "observed_branch": "feature/replay-miniswe",
   "observed_dirty": 0,
   "observed_head": "516f7b6b1373a6d744e3005ae573b56df2962153",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for mini-SWE-agent.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Qualify mini-SWE replay",
-  "updated_at": "2026-09-07T20:15:36+00:00",
+  "updated_at": "2026-09-07T20:16:08+00:00",
   "worktree_key": "agent-systems-benchmark-replay-miniswe"
 }
 ---
@@ -197,3 +197,14 @@ Qualify mini-SWE-agent record/replay, network denial, parity, retries, tool call
 
 - 2026-09-07T20:15:36+00:00: Recorded command exit 0; command argv SHA-256
   162361fbc1f8894b836c1e9dc3d9b66d5386e9578c65de976ef85b3dbe1ca6e1.
+
+- 2026-09-07T20:16:08+00:00: PR #51 exact head 516f7b6b1373a6d744e3005ae573b56df2962153 completed
+  all hosted gates green: quality 34158252963, formal 34158252964, Rust x86_64+aarch64 34158252970,
+  fault/fuzz/mutation x86_64+aarch64 34158252973. Integrated as signed+DCO no-ff merge
+  d62add5f815ceb32a920eaa5fc46248b82c2525c with exact parents
+  1963364e75eec8cfcde0cfd0eaca672df12a2968 and 516f7b6b1373a6d744e3005ae573b56df2962153; PR merge
+  identity and remote main exact head verified. Exact-main postmerge local pinned native journey
+  passed in 56.85s; fmt, workspace Clippy/tests/docs/release, formal Rust, Kani five proofs plus
+  deliberate negative, cargo-deny/audit, repository policy, exact-range Gitleaks and clean tree
+  passed. Exact-main hosted runs are all success: quality 34158499915, formal 34158499923, Rust
+  x86_64+aarch64 34158499927, fault/fuzz/mutation 34158499931.
