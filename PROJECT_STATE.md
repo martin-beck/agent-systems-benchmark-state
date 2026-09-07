@@ -11,12 +11,17 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #31 | `feature/native-platforms@bdaf9c108226` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #56 | `fix/ar0801-documentation@c0b9e0baf5f4` | `main` | UNKNOWN | - | docs: describe implemented CLI commands |
+| #56 | `fix/ar0801-documentation@c0b9e0baf5f4` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | docs: describe implemented CLI commands |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34168111552 | `c0b9e0baf5f4` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 34168111534 | `c0b9e0baf5f4` | pull_request | Formal assurance | in_progress:- |
+| 34168111508 | `c0b9e0baf5f4` | pull_request | Repository quality | in_progress:- |
+| 34168111507 | `c0b9e0baf5f4` | pull_request | Fault assurance | queued:- |
+| 34168111493 | `c0b9e0baf5f4` | pull_request | Rust verification | in_progress:- |
 | 34167050101 | `9d17563f39c1` | push | Fault assurance | completed:success |
 | 34167050075 | `9d17563f39c1` | push | Rust verification | completed:success |
 | 34167050032 | `9d17563f39c1` | push | Formal assurance | completed:success |
@@ -24,8 +29,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34167050028 | `9d17563f39c1` | push | Emulated aarch64 portability | completed:success |
 | 34166629684 | `0e6d74d2cf9f` | pull_request | Emulated aarch64 portability | completed:success |
 | 34166629661 | `0e6d74d2cf9f` | pull_request | Fault assurance | completed:success |
-| 34166629644 | `0e6d74d2cf9f` | pull_request | Repository quality | completed:success |
-| 34166629639 | `0e6d74d2cf9f` | pull_request | Formal assurance | completed:success |
-| 34166629618 | `0e6d74d2cf9f` | pull_request | Rust verification | completed:success |
-| 34165481191 | `462bd04a349d` | push | Repository quality | completed:success |
-| 34165481188 | `462bd04a349d` | push | Formal assurance | completed:success |
