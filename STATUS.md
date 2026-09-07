@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**107 ARs tracked** across 5 active status categories.
+**107 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 3 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 3 |
 | **Planned** | Defined work awaiting promotion or dependencies | 64 |
 | **Future** | Deferred roadmap work | 0 |
@@ -107,7 +107,7 @@ flowchart LR
         direction TB
         AR_0701["AR-0701 - Done"]:::status_done
         AR_0702["AR-0702 - Blocked"]:::status_blocked
-        AR_0703["AR-0703 - Open"]:::status_open
+        AR_0703["AR-0703 - In progress"]:::status_in_progress
     end
     subgraph series_08["08 - Interfaces"]
         direction TB
@@ -652,18 +652,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P1 | [AR-0703](tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | quality-20260906 | Provide genuine disposable native hosts for required Debian and openEuler platform qualification. | Provision credential-isolated disposable booted Debian and openEuler x86_64/aarch64 qualification capacity with bounded cost and availability. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | replay-20260906 | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Independently review unpublished exact candidate 1605693dbb7aade01dd47cb074e35bca02df873b tree 7d99a7f69d97335cad802699dbf9a7ac7bac2e1b; do not publish or merge without coordinator authorization. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0703](tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Provide genuine disposable native hosts for required Debian and openEuler platform qualification. | Provision credential-isolated disposable booted Debian and openEuler x86_64/aarch64 qualification capacity with bounded cost and availability. |
 
 ### Blocked (3)
 

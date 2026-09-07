@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-platform-lab",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-07T12:04:33+00:00",
   "depends_on": [
     "AR-0701",
     "AR-0103",
@@ -11,15 +11,15 @@
   ],
   "id": "AR-0703",
   "next_action": "Provision credential-isolated disposable booted Debian and openEuler x86_64/aarch64 qualification capacity with bounded cost and availability.",
-  "owner": "",
+  "owner": "quality-20260906",
   "plan": "../plans/AR-0703.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide genuine disposable native hosts for required Debian and openEuler platform qualification.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Provision native platform qualification capacity",
-  "updated_at": "2026-09-07T10:34:30+00:00",
+  "updated_at": "2026-09-07T10:34:33+00:00",
   "worktree_key": "agent-systems-benchmark-native-platform-lab"
 }
 ---
@@ -34,3 +34,5 @@ openEuler or Debian kernel evidence. Containers, cross-builds and emulation cann
 - 2026-09-07T10:34:30+00:00: Dependencies AR-0701, AR-0103, AR-0201, and AR-0401 are durably done;
   branch, remote ref, and declared worktree are absent. Promote for fail-closed native capacity
   feasibility and provider availability audit without spend or emulation.
+
+- 2026-09-07T10:34:33+00:00: Claimed by quality-20260906.
