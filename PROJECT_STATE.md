@@ -10,12 +10,16 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #31 | `feature/native-platforms@bdaf9c108226` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
+| #31 | `feature/native-platforms@bdaf9c108226` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34111508673 | `b1669203308d` | push | Repository quality | in_progress:- |
+| 34111508613 | `b1669203308d` | push | Formal assurance | in_progress:- |
+| 34111508476 | `b1669203308d` | push | Fault assurance | in_progress:- |
+| 34111508441 | `b1669203308d` | push | Rust verification | in_progress:- |
 | 34111085145 | `39e306124b56` | pull_request | Repository quality | completed:success |
 | 34111085133 | `39e306124b56` | pull_request | Fault assurance | completed:success |
 | 34111085132 | `39e306124b56` | pull_request | Formal assurance | completed:success |
@@ -24,7 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34106562688 | `0cdccfb899b8` | push | Repository quality | completed:success |
 | 34106562660 | `0cdccfb899b8` | push | Fault assurance | completed:success |
 | 34106562629 | `0cdccfb899b8` | push | Formal assurance | completed:success |
-| 34105826671 | `9b4e7084e02c` | pull_request | Rust verification | completed:success |
-| 34105826662 | `9b4e7084e02c` | pull_request | Repository quality | completed:success |
-| 34105826653 | `9b4e7084e02c` | pull_request | Formal assurance | completed:success |
-| 34105826645 | `9b4e7084e02c` | pull_request | Fault assurance | completed:success |
