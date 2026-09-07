@@ -12,7 +12,7 @@
   "id": "AR-0702",
   "next_action": "Independent immutable review of d2fc492; if approved, publish and collect exact-head native x86_64/aarch64 CI. Keep in progress until AR-0703 supplies genuine Debian/openEuler native capacity.",
   "observed_branch": "feature/native-platforms",
-  "observed_dirty": 1,
+  "observed_dirty": 2,
   "observed_head": "386c2e94257b6b289c6adc27c7d23d07b18eb9cf",
   "owner": "quality-20260906",
   "plan": "../plans/AR-0702.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Exercise native x86_64 and aarch64 including booted openEuler kernels.",
-  "task_revision": 213,
+  "task_revision": 214,
   "title": "Validate native Linux kernels and architectures",
-  "updated_at": "2026-09-07T04:58:52+00:00",
+  "updated_at": "2026-09-07T04:59:17+00:00",
   "worktree_key": "agent-systems-benchmark-native-platforms"
 }
 ---
