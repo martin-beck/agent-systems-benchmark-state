@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenDesk.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Qualify OpenDesk replay",
-  "updated_at": "2026-09-07T13:10:01+00:00",
+  "updated_at": "2026-09-07T13:10:04+00:00",
   "worktree_key": "agent-systems-benchmark-replay-opendesk"
 }
 ---
@@ -164,3 +164,6 @@ Qualify OpenDesk record/replay, network denial, parity, retries, tool calls, can
   text/event-stream response for an absent stream flag only under the documented compatibility rule,
   rejects wrong/missing content type and contradictory buffered/event cases, and reproduces exact
   socket bytes. Shared cassette.rs/service.rs/schema/strict/schema-test paths remain untouched.
+
+- 2026-09-07T13:10:04+00:00: Recorded command exit 0; command argv SHA-256
+  86f6426fdf3e0c8340c752b2d6937c4c1c1da6fc0ba2b136c5913b326fed531e.
