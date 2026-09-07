@@ -2,7 +2,7 @@
 {
   "branch": "feature/fault-assurance",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T04:01:33+00:00",
+  "claim_expires": "2026-09-07T04:38:31+00:00",
   "depends_on": [
     "AR-0103",
     "AR-0104",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection.",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "Add fuzz mutation and lifecycle fault campaigns",
-  "updated_at": "2026-09-07T02:52:38+00:00",
+  "updated_at": "2026-09-07T03:08:31+00:00",
   "worktree_key": "agent-systems-benchmark-fault-assurance"
 }
 ---
@@ -332,3 +332,5 @@ Implementation has not started. Read the linked plan before claiming.
   assurance run 34077596424 passed retained faults on x86_64/aarch64, bounded fuzz with locked
   dependency policy, and all six mutation sentinels. Quality 34077596437, Rust 34077596423 on both
   architectures, and formal 34077596425 Kani plus Loom on both architectures passed.
+
+- 2026-09-07T03:08:31+00:00: Heartbeat by contracts-20260906.
