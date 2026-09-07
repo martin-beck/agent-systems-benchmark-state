@@ -12,7 +12,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | changed files | - | - | - | `crates/asb-agents/src/gemini.rs`, `crates/asb-agents/tests/gemini_boundary.rs`, `crates/asb-agents/tests/real_gemini.rs` |
 | `agent-systems-benchmark-agent-opencode` | `feature/agent-opencode` | `dfb0d548bf75` | 0 | behind 25, ahead 0 |
 | `agent-systems-benchmark-agent-opendesk` | `feature/agent-opendesk` | `8eb99d3c7235` | 0 | behind 18, ahead 0 |
-| `agent-systems-benchmark-agent-qwen-code` | `feature/agent-qwen-code` | `941ea6fff5ee` | 0 | behind 7, ahead 0 |
+| `agent-systems-benchmark-agent-qwen-code` | `feature/agent-qwen-code` | `941ea6fff5ee` | 1 | behind 7, ahead 0 |
+| changed files | - | - | - | `crates/asb-agents/src/qwen_code.rs` |
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `0717d4acd168` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 79, ahead 0 |
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 68, ahead 0 |
