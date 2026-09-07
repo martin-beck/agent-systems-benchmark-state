@@ -8,7 +8,7 @@
     "AR-0831"
   ],
   "id": "AR-0836",
-  "next_action": "Separate job execution from operator-owned installation, credentials, control state, and diagnostics with a verified immutable boundary.",
+  "next_action": "Independently review immutable signed candidate 9b4e7084e02cdb3a1ff56dc55bbdce413ed6b1d3; keep trusted workflows blocked and AR-0836 in progress until required AR-0837 proves the digest-pinned no-host-mount job-container boundary.",
   "observed_branch": "fix/runner-isolation-hardening",
   "observed_dirty": 0,
   "observed_head": "9b4e7084e02cdb3a1ff56dc55bbdce413ed6b1d3",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Harden development-host runner isolation against same-UID job tampering and diagnostic leakage.",
-  "task_revision": 105,
+  "task_revision": 106,
   "title": "Harden runner isolation and credential boundaries",
-  "updated_at": "2026-09-07T09:22:38+00:00",
+  "updated_at": "2026-09-07T09:23:10+00:00",
   "worktree_key": "agent-systems-benchmark-runner-isolation-hardening"
 }
 ---
@@ -321,3 +321,14 @@ Acceptance criteria:
   db4cc6484533e1a01df3c274e9fce6fb702de4444d23184af3ce4a05113e7708.
 
 - 2026-09-07T09:22:38+00:00: Heartbeat by quality-20260906.
+
+- 2026-09-07T09:23:10+00:00: Exact immutable candidate 9b4e7084e02cdb3a1ff56dc55bbdce413ed6b1d3 tree
+  a92927d96a0a261108be8f368ca1edcc88b06d5e on base dc224fcfddea8f5dbfae2da5c795535486f2c45b is clean
+  and SSH-signed+DCO. Exact-head fmt/clippy/workspace tests/docs/release build, runner security
+  fixture, native systemd interruption/reset fixture, real pinned 2.337.0 archive
+  setup/idempotence/listener boundary, Ruff, repository policy, actionlint, zizmor, introduced-range
+  Gitleaks, cargo-deny/audit, platform validation, configured coverage, deliberate failure fixtures,
+  Kani 5/5 plus rejected false assertion, Loom/production/state model tests all pass. External
+  fixture SHA-256: native fc153618185174b43231dea34e4e03ea886eef76caad9464951bbc11f41bb8cc; real
+  archive test f65039a124d81efce48fdc725caf04247f6d943e87476afdb6badcae3ebf3765. Completion remains
+  blocked on AR-0837 containerized job-principal boundary.
