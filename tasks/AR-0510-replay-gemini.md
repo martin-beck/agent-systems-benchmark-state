@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0510",
-  "next_action": "Independent immutable review of exact candidate 6a35edf615303f6d80b333533deca0e784994b16; publish only after explicit approval.",
+  "next_action": "Independent immutable review of one-path timing repair 1366ad3bd03fe8806e80223a55989e34fd72245a before publication.",
   "observed_branch": "feature/replay-gemini",
   "observed_dirty": 0,
   "observed_head": "1366ad3bd03fe8806e80223a55989e34fd72245a",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Gemini.",
-  "task_revision": 127,
+  "task_revision": 128,
   "title": "Qualify Gemini replay",
-  "updated_at": "2026-09-07T18:35:53+00:00",
+  "updated_at": "2026-09-07T18:36:16+00:00",
   "worktree_key": "agent-systems-benchmark-replay-gemini"
 }
 ---
@@ -399,3 +399,17 @@ Qualify Gemini record/replay, network denial, parity, retries, tool calls, cance
 
 - 2026-09-07T18:35:53+00:00: Recorded command exit 0; command argv SHA-256
   1a358ef4497a4a34c3d566a231d7040e29b48d65978452483bbb717cfecd7dee.
+
+- 2026-09-07T18:36:16+00:00: Exact-main Rust run 34151601051 failed only ubuntu-24.04-arm in
+  gemini::tests::ambient_config_prompt_limits_and_cancellation_fail_closed: the fake node readiness
+  marker was not observed before the prior 5-second hook ceiling and start returned HookUnavailable;
+  x86 and the same arm PR tree had passed, establishing a timing-sensitive bounded startup failure.
+  No native Gemini step ran in that failed job. Focused successor
+  1366ad3bd03fe8806e80223a55989e34fd72245a, tree 9dd9d35e9d0eabb831c785b201104447635b3d55, is
+  one-path and makes readiness wait min(caller attempt timeout, explicit 10-second maximum); test
+  process budget is 15 seconds. Explicit negatives prove a 250ms caller budget remains 250ms and a
+  30-second budget is capped at 10 seconds. The exact failing test passed 10/10 with its fully
+  qualified name; an earlier unqualified --exact stress loop ran zero tests and is not counted.
+  Focused clippy/readiness tests and full workspace fmt/clippy/tests/docs/release pass. A pre-commit
+  repository-policy invocation correctly rejected the empty b9eca..HEAD range after all product
+  gates; exact-commit policy, SSH signature, DCO, Gitleaks, diff, scope and clean tree pass.
