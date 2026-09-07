@@ -2,7 +2,7 @@
 {
   "branch": "feature/agent-codex",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T01:32:09+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0102"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/agent-codex",
   "observed_dirty": 0,
   "observed_head": "eb03bd9d9ed5785458ea1bb3b990e84489a42d20",
-  "owner": "replay-20260906",
+  "owner": "",
   "plan": "../plans/AR-0304.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Use Codex noninteractive structured events or app-server with declared capability boundaries.",
-  "task_revision": 131,
+  "task_revision": 132,
   "title": "Implement Codex client adapter",
-  "updated_at": "2026-09-07T00:42:44+00:00",
+  "updated_at": "2026-09-07T00:43:11+00:00",
   "worktree_key": "agent-systems-benchmark-agent-codex"
 }
 ---
@@ -417,3 +417,22 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T00:42:44+00:00: Recorded command exit 0; command argv SHA-256
   5c8cb2b0a5798342b2b57dc242e53547cfc98a345739e3ba0ff12959e430ef37.
+
+- 2026-09-07T00:43:11+00:00: AR-0304 accepted, integrated, and post-merge verified. PR 24 exact
+  approved head eb03bd9d9ed5785458ea1bb3b990e84489a42d20 merged through SSH-signed+DCO no-ff commit
+  2579362d6936b25e6008583f7bd485e5498a4e3f, tree 91ce2586a0fe7f686cb786895b5d41c09d4394b7, with
+  exact parents d384c4c and eb03bd9; public main and origin/main synchronized clean. Exact-main
+  hosted quality 34070523622, formal 34070523641, and Rust x86_64+aarch64 34070523631 all succeeded.
+  Complete local postmerge fmt, workspace Clippy/tests/docs/release, repository policy, aggregate
+  coverage, fault fixtures, dependency deny/audit, Python strict gates, privacy/Gitleaks, real
+  pinned Codex 0.153.4 x86_64 Responses completion/tool/cancellation fixture, formal
+  Loom/trace/state tests, five Kani proofs, and deliberate Kani-failure negative passed. State
+  locked environment, formatting/lint/type, 37 coordinator tests, 97% branch-aware coverage,
+  schema/privacy/generated-status validation, reconcile, snapshot and live doctor passed. Supported
+  claim remains content-pinned Codex noninteractive JSONL over explicit Responses provider with
+  cancellation and bounded content-free events. Unsupported: subscription/account routes,
+  app/exec-server subscriptions, WebSocket Responses, persisted resume, native replay, MCP/plugin
+  config, web-search correctness, other artifacts/platforms, and race-free containment against
+  concurrent external workspace mutation. SHA-256 proves byte identity only, not
+  authorship/authenticity/license/vulnerability absence. Shared agent module-registration fence is
+  explicitly returned to coordinator.
