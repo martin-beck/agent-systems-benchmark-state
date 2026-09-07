@@ -11,15 +11,18 @@
   ],
   "id": "AR-0848",
   "next_action": "Use the authorized development-host native x86_64 host as a disposable qualification cell; prove identity, isolation, cleanup, provenance, cost bounds, and evidence integrity without making aarch64 claims.",
+  "observed_branch": "feature/native-x86-capacity",
+  "observed_dirty": 0,
+  "observed_head": "72dd78f72dd74d20654232923dfe2fcff7771dff",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0848.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify authorized disposable native x86_64 capacity on a development host.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Qualify native x86 capacity",
-  "updated_at": "2026-09-07T23:11:06+00:00",
+  "updated_at": "2026-09-07T23:12:06+00:00",
   "worktree_key": "agent-systems-benchmark-native-x86-capacity"
 }
 ---
