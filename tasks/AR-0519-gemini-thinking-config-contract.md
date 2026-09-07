@@ -7,7 +7,7 @@
     "AR-0518"
   ],
   "id": "AR-0519",
-  "next_action": "Commit the clean four-path exact-tree repair with SSH signature/DCO after final privacy/scope verification; request immutable review before publication.",
+  "next_action": "Publish independently approved exact candidate 0aff702 as a focused PR against exact main 74d311ca; require fresh exact-head x86_64/aarch64 quality/formal/fault CI.",
   "observed_branch": "feature/gemini-thinking-config-contract",
   "observed_dirty": 0,
   "observed_head": "0aff7023cacf5ccf9e85cb3460f121b8370b9313",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Correct Gemini thinkingConfig strict-replay contract from pinned capture evidence.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Gemini thinkingConfig contract repair",
-  "updated_at": "2026-09-07T17:43:55+00:00",
+  "updated_at": "2026-09-07T17:44:30+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-thinking-config-contract"
 }
 ---
@@ -124,3 +124,12 @@ Repair the merged Gemini dialect using privacy-safe pinned evidence: `thinkingCo
   corrective build actions used the wrapper.
 
 - 2026-09-07T17:42:49+00:00: Heartbeat by replay_20260906.
+
+- 2026-09-07T17:44:30+00:00: Immutable candidate 0aff7023cacf5ccf9e85cb3460f121b8370b9313, tree
+  d309c2d64fa0fc9f91309ac1b81eefee795c5890, exact parent 74d311ca7a4ae86809424f9ff5edfe2c16127891.
+  Four-path crates/asb-replay scope, clean worktree, good SSH signature by Martin Beck, exact
+  Signed-off-by trailer, diff-check and exact-range Gitleaks green. Independent coordinator review
+  approved implementation and all recorded focused/full/formal/Kani/fuzz/privacy/mutation evidence
+  for publication. Earlier commit wrapper product effect succeeded before unrelated expired AR-0840
+  caused state append failure; commit was preserved and not repeated; state is now
+  reconciled/live-doctor green.
