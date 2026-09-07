@@ -12,7 +12,7 @@
   "id": "AR-0510",
   "next_action": "Complete isolated retry/cancel/malformed/tool conformance while AR-0518 implements the exact captured Gemini replay dialect; rebase and run real strict replay only after AR-0518 integration.",
   "observed_branch": "feature/replay-gemini",
-  "observed_dirty": 1,
+  "observed_dirty": 2,
   "observed_head": "ab5d6c91c99d48883ed58eb1df6803c2711ecbd3",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0510.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Gemini.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Qualify Gemini replay",
-  "updated_at": "2026-09-07T16:11:30+00:00",
+  "updated_at": "2026-09-07T16:15:00+00:00",
   "worktree_key": "agent-systems-benchmark-replay-gemini"
 }
 ---
