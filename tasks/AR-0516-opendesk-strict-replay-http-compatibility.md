@@ -10,7 +10,7 @@
     "AR-0302"
   ],
   "id": "AR-0516",
-  "next_action": "Await immutable independent review of signed candidate cf64758a; publish only after approval, then require exact-head CI and AR-0507 real pinned OpenDesk rerun after integration.",
+  "next_action": "Monitor PR #42 exact cf64758a CI; investigate any failure before repair, then serialize integration only after every exact-head job is green.",
   "observed_branch": "feature/opendesk-strict-replay-http-compatibility",
   "observed_dirty": 0,
   "observed_head": "cf64758a6e9ed49d3eca1607fa1ea8135be700f9",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add narrowly scoped strict-replay compatibility for pinned OpenDesk traffic.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "OpenDesk strict-replay HTTP compatibility",
-  "updated_at": "2026-09-07T14:28:31+00:00",
+  "updated_at": "2026-09-07T14:28:58+00:00",
   "worktree_key": "agent-systems-benchmark-opendesk-strict-replay-http-compatibility"
 }
 ---
@@ -194,3 +194,10 @@ Acceptance requires schema/runtime parity, adversarial positives and negatives, 
 
 - 2026-09-07T14:28:31+00:00: Recorded command exit 0; command argv SHA-256
   598732ce29b5cd1b60758e8f92098604555ae4d72925a2865e8f2278127c0ede.
+
+- 2026-09-07T14:28:58+00:00: Independent immutable review approved
+  cf64758a6e9ed49d3eca1607fa1ea8135be700f9. Published exact branch under absent-ref lease and opened
+  product PR #42 https://github.com/martin-beck/agent-systems-benchmark/pull/42. GitHub reports base
+  40cfa75ca195aaf13be1d5bc8025f96e5f4d3e7c, exact head cf64758a, clean mergeable PR. Exact-head runs
+  started: quality 34133139622, Rust x86_64+aarch64 34133139626, formal 34133139642, fault assurance
+  34133139627; all currently in progress.
