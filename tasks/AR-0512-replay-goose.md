@@ -1,0 +1,6 @@
+---
+{"branch":"feature/replay-goose","checkpoint_commit":"","claim_expires":"","depends_on":["AR-0307","AR-0503","AR-0504","AR-0401"],"id":"AR-0512","next_action":"Prove credential-free record/replay conformance for goose with network denial and malformed/tool/cancel negatives.","owner":"","plan":"../plans/AR-0512.md","priority":"P0","schema_version":1,"status":"planned","summary":"Qualify replay conformance for goose.","task_revision":1,"title":"Qualify goose replay","updated_at":"2026-09-07T00:00:00+00:00","worktree_key":"agent-systems-benchmark-replay-goose"}
+---
+## AR-0512
+
+Qualify goose record/replay, network denial, parity, retries, tool calls, cancellation, and malformed-record failures.
