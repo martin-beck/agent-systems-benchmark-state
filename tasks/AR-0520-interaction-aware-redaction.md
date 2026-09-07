@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support per-interaction request redaction policies for mixed catalog and private requests.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Interaction-aware request redaction",
-  "updated_at": "2026-09-07T20:12:05+00:00",
+  "updated_at": "2026-09-07T20:12:22+00:00",
   "worktree_key": "agent-systems-benchmark-interaction-aware-redaction"
 }
 ---
@@ -39,3 +39,8 @@ Repair the cassette-global request-body redaction limitation exposed by Goose: c
 
 - 2026-09-07T20:12:05+00:00: Recorded command exit 0; command argv SHA-256
   b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b.
+
+- 2026-09-07T20:12:22+00:00: Process deviation recorded: the initial two-file struct patch was
+  applied by the workspace patch tool before entering handoffctl run. No mutation was repeated or
+  reverted; a subsequent wrapped no-op reconciled the exact dirty effect (cassette.rs and lib.rs) at
+  observed head 1963364e. All further product/build/test/Git mutations use the AR wrapper.
