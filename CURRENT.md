@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0506](tasks/AR-0506-replay-opencode.md): Qualify OpenCode replay | Qualify replay conformance for OpenCode. | Await independent immutable review of signed candidate eec93a240b5895410603c83b748e7195b2eb89f7; publish only after approval. | contracts-20260906 |
+| P0 | [AR-0506](tasks/AR-0506-replay-opencode.md): Qualify OpenCode replay | Qualify replay conformance for OpenCode. | Monitor rerun of exact-head x86 Rust job after investigated bounded ETXTBSY fixture flake; merge only after every workflow is green. | contracts-20260906 |
 | P0 | [AR-0507](tasks/AR-0507-replay-opendesk.md): Qualify OpenDesk replay | Qualify replay conformance for OpenDesk. | Await serialized shared replay compatibility repair for legal underscore headers and absent-stream SSE; retain cleanly tested adapter route-root fix and isolated real conformance test. | replay_20260906 |
 | P0 | [AR-0508](tasks/AR-0508-replay-aider.md): Qualify aider replay | Qualify replay conformance for aider. | Hold isolated signed Aider replay test a8ea226; after AR-0506 review/integration/release, rebase onto exact main, take shared Cargo/README/lock fence, compile and run malformed plus real loopback-only capture/replay/cancel gates. | quality_20260906 |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. | root-coordination-20260906 |

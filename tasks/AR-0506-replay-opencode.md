@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0506",
-  "next_action": "Await independent immutable review of signed candidate eec93a240b5895410603c83b748e7195b2eb89f7; publish only after approval.",
+  "next_action": "Monitor rerun of exact-head x86 Rust job after investigated bounded ETXTBSY fixture flake; merge only after every workflow is green.",
   "observed_branch": "feature/replay-opencode",
   "observed_dirty": 0,
   "observed_head": "eec93a240b5895410603c83b748e7195b2eb89f7",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenCode.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Qualify OpenCode replay",
-  "updated_at": "2026-09-07T13:12:37+00:00",
+  "updated_at": "2026-09-07T13:16:50+00:00",
   "worktree_key": "agent-systems-benchmark-replay-opencode"
 }
 ---
@@ -295,3 +295,10 @@ retries, tool calls, cancellation, and malformed-record negatives.
 
 - 2026-09-07T13:12:37+00:00: Recorded command exit 0; command argv SHA-256
   ef124154fc185f9dfba4ac110ced143c5725447d0960858820508cf1188fea17.
+
+- 2026-09-07T13:16:50+00:00: PR #40 exact-head Rust run 34126097790 failed only x86 test
+  tests::real_run_persists_reports_and_comparison_without_raw_content: one concurrent warmup
+  exhausted the existing three bounded ETXTBSY snapshot spawn retries and correctly contaminated the
+  point. Same exact head passed arm64, local full suite, and prior main x86 CI; change touches no
+  CLI/runtime production path. Formal 34126097779, fault 34126097792, and quality 34126097885 are
+  green. Rerun only the failed exact-head job after investigation.
