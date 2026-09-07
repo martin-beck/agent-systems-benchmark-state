@@ -35,4 +35,5 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-sandbox-test-portability` | `fix/sandbox-test-portability` | `23035acde688` | 0 | behind 28, ahead 0 |
 | `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `3bcfd85dedd3` | 0 | behind 65, ahead 0 |
 | `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `410ecc95b80e` | 0 | behind 53, ahead 0 |
-| `agent-systems-benchmark-terminal-interface` | `feature/terminal-interface` | `d7194abcf7e3` | 0 | behind 0, ahead 1 |
+| `agent-systems-benchmark-terminal-interface` | `feature/terminal-interface` | `d7194abcf7e3` | 1 | behind 0, ahead 1 |
+| changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
