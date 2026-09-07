@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for goose.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Qualify goose replay",
-  "updated_at": "2026-09-07T18:54:17+00:00",
+  "updated_at": "2026-09-07T18:54:40+00:00",
   "worktree_key": "agent-systems-benchmark-replay-goose"
 }
 ---
@@ -46,3 +46,6 @@ Qualify goose record/replay, network denial, parity, retries, tool calls, cancel
 
 - 2026-09-07T18:54:17+00:00: Recorded command exit 0; command argv SHA-256
   59024a4a1059e0175d1d60dcb0964dc5bba087afde2bf97cc3e199cea4e1a7e5.
+
+- 2026-09-07T18:54:40+00:00: Recorded command exit 101; command argv SHA-256
+  a0b1afa6f518c0264de34881b009655c543bccf66b9125651b875a73b51351ac.
