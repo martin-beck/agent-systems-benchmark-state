@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0308",
-  "next_action": "Await independent immutable review of exact candidate d6bd4bca9798d662b84263bc8c9d6639ed8b1f44/tree 5ac142ac33a01b3bb210f5a2cb5fe146898df1af; repair findings and do not publish without explicit authorization.",
+  "next_action": "Repair immutable-config selection, root overlap, submission proof, causal-ID privacy and loopback auth blockers; rerun focused/full gates before replacement candidate.",
   "observed_branch": "feature/agent-mini-swe",
   "observed_dirty": 0,
   "observed_head": "d6bd4bca9798d662b84263bc8c9d6639ed8b1f44",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned mini-SWE-agent as a bounded batch engineering agent.",
-  "task_revision": 193,
+  "task_revision": 194,
   "title": "Implement mini-SWE-agent client adapter",
-  "updated_at": "2026-09-07T04:24:06+00:00",
+  "updated_at": "2026-09-07T04:31:25+00:00",
   "worktree_key": "agent-systems-benchmark-agent-mini-swe"
 }
 ---
@@ -672,3 +672,10 @@ Implementation has not started. Read the linked plan before claiming.
   after private dependency staging. Exact-tree full Rust, coverage, supply, workflow,
   failure-fixture, platform and formal evidence is green as previously recorded. Candidate is not
   pushed and no PR/CI is claimed pending independent immutable review.
+
+- 2026-09-07T04:31:25+00:00: Independent review blocked d6bd4bc: workspace mini.yaml can override
+  the builtin; normalized workspace/state overlap is not rejected; Submitted can synthesize success
+  for an arbitrary pending command; raw upstream tool IDs are emitted and can disclose path-like
+  content; native fixture does not assert exact public loopback Authorization or reject alternate
+  auth. Documentation also overstated runtime binding: pinned site-packages and executable do not
+  bind ambient /usr stdlib or native ABI libraries. No publication; repair on sole AR-0308.
