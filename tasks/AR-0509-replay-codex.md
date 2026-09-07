@@ -13,16 +13,16 @@
   "next_action": "After AR-0517 integrates, update AR-0509 onto exact main, add bounded Codex retry evidence, then run full exact-tree gates and candidate review.",
   "observed_branch": "feature/replay-codex",
   "observed_dirty": 1,
-  "observed_head": "612a5a7e3d471f9f2481d7943b06e6914c893dd2",
+  "observed_head": "ab5d6c91c99d48883ed58eb1df6803c2711ecbd3",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0509.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Codex.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Qualify Codex replay",
-  "updated_at": "2026-09-07T15:38:04+00:00",
+  "updated_at": "2026-09-07T15:50:30+00:00",
   "worktree_key": "agent-systems-benchmark-replay-codex"
 }
 ---

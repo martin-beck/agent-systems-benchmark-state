@@ -39,7 +39,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-reliability-fairness` | `feature/reliability-fairness` | `eb28ca7aeae5` | 0 | behind 47, ahead 0 |
 | `agent-systems-benchmark-replay-aider` | `feature/replay-aider` | `ec0a2930690c` | 0 | behind 9, ahead 0 |
 | `agent-systems-benchmark-replay-cassettes` | `feature/replay-cassettes` | `cd88f5703fb3` | 0 | behind 129, ahead 0 |
-| `agent-systems-benchmark-replay-codex` | `feature/replay-codex` | `612a5a7e3d47` | 1 | behind 11, ahead 0 |
+| `agent-systems-benchmark-replay-codex` | `feature/replay-codex` | `ab5d6c91c99d` | 1 | behind 0, ahead 0 |
 | changed files | - | - | - | `crates/asb-agents/tests/replay_codex.rs` |
 | `agent-systems-benchmark-replay-evaluation` | `feature/replay-evaluation` | `3d04a2d5a3b3` | 0 | behind 142, ahead 0 |
 | `agent-systems-benchmark-replay-opencode` | `feature/replay-opencode` | `eec93a240b58` | 0 | behind 12, ahead 0 |
