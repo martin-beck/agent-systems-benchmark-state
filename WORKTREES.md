@@ -15,8 +15,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-agent-qwen-code` | `feature/agent-qwen-code` | `0be96c9ec50e` | 0 | behind 31, ahead 0 |
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `0717d4acd168` | 0 | behind 47, ahead 0 |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 116, ahead 0 |
-| `agent-systems-benchmark-csb-execution-assurance` | `feature/csb-execution-assurance` | `ec4a1d28baca` | 5 | behind 2, ahead 3 |
-| changed files | - | - | - | `Cargo.lock`, `Cargo.toml`, `crates/asb-csb-runner/Cargo.toml`, `crates/asb-csb-runner/src/lib.rs`, `crates/asb-csb-runner/tests/` |
+| `agent-systems-benchmark-csb-execution-assurance` | `feature/csb-execution-assurance` | `ec4a1d28baca` | 6 | behind 2, ahead 3 |
+| changed files | - | - | - | `Cargo.lock`, `Cargo.toml`, `crates/asb-csb-runner/Cargo.toml`, `crates/asb-csb-runner/README.md`, `crates/asb-csb-runner/src/lib.rs`, `crates/asb-csb-runner/tests/` |
 | `agent-systems-benchmark-development-host-runner-capacity` | `feature/development-host-runner-capacity` | `0d9b363538d2` | 0 | behind 7, ahead 0 |
 | `agent-systems-benchmark-development-host-workflow-routing` | `feature/development-host-workflow-routing` | `f55f98cc79b7` | 0 | behind 5, ahead 0 |
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 105, ahead 0 |
