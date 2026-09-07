@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0513",
-  "next_action": "Audit the isolated mini-SWE replay fixture for exact request/privacy and malformed-tool bounds, run focused and applicable full/formal/coverage/supply gates, then produce an SSH-signed DCO candidate for independent review.",
+  "next_action": "Await independent immutable review of exact candidate 516f7b6b1373a6d744e3005ae573b56df2962153; publish only after approval and then require exact-head x86_64/aarch64 quality/formal/fault CI.",
   "observed_branch": "feature/replay-miniswe",
   "observed_dirty": 0,
   "observed_head": "516f7b6b1373a6d744e3005ae573b56df2962153",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for mini-SWE-agent.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Qualify mini-SWE replay",
-  "updated_at": "2026-09-07T20:06:14+00:00",
+  "updated_at": "2026-09-07T20:06:48+00:00",
   "worktree_key": "agent-systems-benchmark-replay-miniswe"
 }
 ---
@@ -155,3 +155,23 @@ Qualify mini-SWE-agent record/replay, network denial, parity, retries, tool call
 
 - 2026-09-07T20:06:14+00:00: Recorded command exit 0; command argv SHA-256
   548ee7a53d02fb25d021e86589fc33f24e15b104cf2c74867df4e303df2f39a7.
+
+- 2026-09-07T20:06:48+00:00: Immutable AR-0513 candidate is
+  516f7b6b1373a6d744e3005ae573b56df2962153, tree 30a121a7c640932031a0678f9ed0ce6709e78447, exact
+  parent/main 1963364e75eec8cfcde0cfd0eaca672df12a2968. One focused path
+  crates/asb-agents/tests/replay_mini_swe.rs; clean worktree; SSH signature by Martin Beck and
+  matching Signed-off-by trailer; repository policy, diff-check, exact-range Gitleaks, explicit
+  private-path/secret grep, and scope check pass. Exact-candidate pinned mini-SWE-agent 2.4.6 native
+  x86_64 loopback-only record/replay passed in 65.85s: two buffered bash tool requests, exact
+  bug-fix edit/submission, nonempty tool schemas, status [200,200], strict offline replay
+  event/retry/grade parity, credential redaction, empty private state, and paced
+  cancellation/process cleanup. Malformed/truncated/private-raw/tool-inconsistent cassettes fail
+  before service start. Full fmt, workspace Clippy/tests/docs/release, formal Loom/state/production
+  traces, Kani 0.67.0 five proofs, deliberate Kani counterexample rejection (log SHA-256
+  28df4f3807b99e12761abea4450ebd23e5650c15a3babf22f98a79431625678b), coverage floors (asb-replay
+  97.65% lines/95.01% regions; mini_swe.rs 96.01% lines), cargo-deny/audit, controlled failure
+  fixtures, and platform validation pass. Two initial Kani invocations failed before proof from
+  missing cargo discovery/KANI_HOME; corrected project-local invocation passed. Limits: native
+  evidence is x86_64 only; automatic retry is not structurally observable and is explicitly
+  Unavailable(UnstructuredBatchDiagnostics); upstream wheel extraction/CPython environment
+  provenance remains inherited from completed AR-0308, not newly reproduced here.
