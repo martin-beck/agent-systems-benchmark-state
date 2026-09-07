@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Report repeated-attempt reliability and prevent aggregate results from hiding starvation or hard strata.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Measure reliability and mixed-workload fairness",
-  "updated_at": "2026-09-07T04:11:46+00:00",
+  "updated_at": "2026-09-07T04:12:40+00:00",
   "worktree_key": "agent-systems-benchmark-reliability-fairness"
 }
 ---
@@ -253,3 +253,6 @@ Implementation has not started. Read the linked plan before claiming.
   wrapper exited 1 only because its immediate PR-state assertion raced GitHub convergence after the
   successful push; read-only reconciliation confirmed the PR transition seconds later. Do not repeat
   merge/fetch/push. Proceed with exact-main post-merge local and hosted verification.
+
+- 2026-09-07T04:12:40+00:00: Recorded command exit 0; command argv SHA-256
+  595d6c56ea29d772313ebf5ceb82661c4ef476f3187f221246de75b550701319.
