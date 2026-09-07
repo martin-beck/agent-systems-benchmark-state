@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Normalize one provider configuration for safe translation across heterogeneous agent adapters.",
-  "task_revision": 135,
+  "task_revision": 136,
   "title": "Define common provider profiles",
-  "updated_at": "2026-09-07T00:04:57+00:00",
+  "updated_at": "2026-09-07T00:09:11+00:00",
   "worktree_key": "agent-systems-benchmark-provider-profile-contract"
 }
 ---
@@ -406,3 +406,6 @@ Implementation has not started. Read the linked plan before claiming.
   passed before push. Pushed main with explicit 941ea6f lease; PR 23 is merged at exact merge
   commit. Exact-main runs 34068641618 Rust, 34068641632 quality and 34068641612 formal are in
   progress.
+
+- 2026-09-07T00:09:11+00:00: Recorded command exit 1; command argv SHA-256
+  945b3d5ea5955649ebdbba0f1d22e2931ebfd09e1634f2e9269b818cd27ba9d9.
