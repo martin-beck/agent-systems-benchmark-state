@@ -11,7 +11,7 @@
   "id": "AR-0801",
   "next_action": "Audit public library seams and implement honest doctor/plan/run/sweep/compare/report boundaries with stable JSON, meaningful exits, cancellation and PTY tests.",
   "observed_branch": "feature/terminal-interface",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "b79534b627e28792a46e1a0074be762bb425d2a6",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0801.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide doctor, plan, run, sweep, compare and report with stable JSON output.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Implement terminal and automation interfaces",
-  "updated_at": "2026-09-07T01:10:52+00:00",
+  "updated_at": "2026-09-07T01:11:08+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-interface"
 }
 ---
