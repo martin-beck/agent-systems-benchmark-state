@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and independently qualify the blocked frontend control API candidate.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Frontend control API repair",
-  "updated_at": "2026-09-07T21:59:59+00:00",
+  "updated_at": "2026-09-07T22:01:09+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api-repair"
 }
 ---
@@ -251,3 +251,6 @@ Repair the blocked AR-0803 candidate without mutating its dirty worktree in plac
   diff/scope/private-path checks all pass. One quality rerun first omitted the required
   failure-fixture bin-dir argument; corrected invocation passed without product changes. Original
   AR-0803 dirty worktree remains exact and unchanged. No remote feature branch or PR exists.
+
+- 2026-09-07T22:01:09+00:00: Recorded command exit 0; command argv SHA-256
+  711daa7247d2b15e017565267e3999b1edd5654bfce0568d4f4bc8d4a1de47af.
