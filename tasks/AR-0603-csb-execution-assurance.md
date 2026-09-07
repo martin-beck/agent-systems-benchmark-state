@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T08:45:51+00:00",
+  "updated_at": "2026-09-07T08:46:36+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
@@ -136,3 +136,6 @@ Implementation has not started. Read the linked plan before claiming.
   corrupt at line 42, and src/lib.rs is truncated at line 296 inside the environment negative.
   Preserve the existing effect and reconstruct only the intended missing test tail before isolated
   validation. Root Cargo/lock/schema remain fenced.
+
+- 2026-09-07T08:46:36+00:00: Recorded command exit 0; command argv SHA-256
+  1788d9ca4ddaaa55f5f304aeb782043fd81db97061a782ec721ee81b7d2d48f2.
