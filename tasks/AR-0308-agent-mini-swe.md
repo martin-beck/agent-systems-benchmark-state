@@ -11,7 +11,7 @@
   "id": "AR-0308",
   "next_action": "Repair immutable-config selection, root overlap, submission proof, causal-ID privacy and loopback auth blockers; rerun focused/full gates before replacement candidate.",
   "observed_branch": "feature/agent-mini-swe",
-  "observed_dirty": 1,
+  "observed_dirty": 3,
   "observed_head": "d6bd4bca9798d662b84263bc8c9d6639ed8b1f44",
   "owner": "replay-20260906",
   "plan": "../plans/AR-0308.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned mini-SWE-agent as a bounded batch engineering agent.",
-  "task_revision": 197,
+  "task_revision": 198,
   "title": "Implement mini-SWE-agent client adapter",
-  "updated_at": "2026-09-07T04:31:58+00:00",
+  "updated_at": "2026-09-07T04:33:36+00:00",
   "worktree_key": "agent-systems-benchmark-agent-mini-swe"
 }
 ---
