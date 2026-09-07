@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0307",
-  "next_action": "Create focused signed+DCO immutable Goose candidate from exact e85548d base; rerun commit-sensitive scope/privacy/signature gates and await independent review before publication.",
+  "next_action": "Hold immutable signed+DCO candidate c151450f4ef4b15cc0efafffc708afd7b5d9aa28 for independent review; publish only after approval, then require exact-head native x86_64/aarch64 CI.",
   "observed_branch": "feature/agent-goose",
   "observed_dirty": 0,
   "observed_head": "c151450f4ef4b15cc0efafffc708afd7b5d9aa28",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned AAIF goose in no-session structured mode.",
-  "task_revision": 148,
+  "task_revision": 149,
   "title": "Implement goose client adapter",
-  "updated_at": "2026-09-07T02:04:52+00:00",
+  "updated_at": "2026-09-07T02:05:14+00:00",
   "worktree_key": "agent-systems-benchmark-agent-goose"
 }
 ---
@@ -477,3 +477,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T02:04:52+00:00: Recorded command exit 0; command argv SHA-256
   c8b64fe302ce430f8d8de7b125401e42c87342fbee8341541d25606689cf9ac5.
+
+- 2026-09-07T02:05:14+00:00: Immutable candidate c151450f4ef4b15cc0efafffc708afd7b5d9aa28 tree
+  b77fbc42051b9fc169adab60b65ddd8a523ca194 is one commit on exact synchronized base
+  e85548d00cffcc3a014bfbc04b8fc79c5fe35da0. Six-path scope is verify workflow, agents README/lib
+  registration, Goose source, native real test, and provenance fixture. SSH signature and exact
+  Martin Beck DCO trailer verify; exact-range repository policy, Gitleaks, actionlint, zizmor, fmt,
+  focused clippy/unit/doctest compile-fail, and pinned x86_64 native journey all pass after commit.
+  Precommit full workspace and formal evidence is tree-identical; Kani negative log SHA-256
+  aa162b73fa013fc1f130c34620bd1abb3eb2d12c0ede869c7e942271f08af019. Worktree and base/remote refs
+  are clean/synchronized; aarch64 native execution remains hosted exact-head evidence.
