@@ -2,21 +2,24 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `5a819633552f5d59885bc23c5e5127b1f131c102`
-- Local origin/main: `5a819633552f5d59885bc23c5e5127b1f131c102`
-- Primary worktree head: `5a819633552f5d59885bc23c5e5127b1f131c102`
+- Product remote main: `111be970534fbf72332a80c2291fe1fe21acb694`
+- Local origin/main: `111be970534fbf72332a80c2291fe1fe21acb694`
+- Primary worktree head: `111be970534fbf72332a80c2291fe1fe21acb694`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #31 | `feature/native-platforms@bdaf9c108226` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #53 | `feature/replay-goose@6dfa688ddf9f` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(replay): qualify Goose conformance |
+| #31 | `feature/native-platforms@bdaf9c108226` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34164102181 | `111be970534f` | push | Formal assurance | queued:- |
+| 34164102145 | `111be970534f` | push | Rust verification | queued:- |
+| 34164102144 | `111be970534f` | push | Fault assurance | queued:- |
+| 34164102103 | `111be970534f` | push | Repository quality | queued:- |
 | 34163875432 | `6dfa688ddf9f` | pull_request | Fault assurance | completed:success |
 | 34163875397 | `6dfa688ddf9f` | pull_request | Repository quality | completed:success |
 | 34163875385 | `6dfa688ddf9f` | pull_request | Rust verification | completed:success |
@@ -25,7 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34162048440 | `5a819633552f` | push | Rust verification | completed:success |
 | 34162048426 | `5a819633552f` | push | Fault assurance | completed:success |
 | 34162048411 | `5a819633552f` | push | Repository quality | completed:success |
-| 34161726329 | `867861c95c19` | pull_request | Repository quality | completed:success |
-| 34161726237 | `867861c95c19` | pull_request | Fault assurance | completed:success |
-| 34161726221 | `867861c95c19` | pull_request | Formal assurance | completed:success |
-| 34161726210 | `867861c95c19` | pull_request | Rust verification | completed:success |
