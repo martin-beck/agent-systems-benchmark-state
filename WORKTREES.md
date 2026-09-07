@@ -41,8 +41,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `51daeb8608e5` | 0 | behind 158, ahead 0 |
 | `agent-systems-benchmark-provider-profile-contract` | `feature/provider-profile-contract` | `2870b68d0ca0` | 0 | behind 94, ahead 0 |
 | `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `748537c25e3a` | 0 | behind 175, ahead 0 |
-| `agent-systems-benchmark-recovery-models` | `feature/recovery-models` | `462bd04a349d` | 5 | behind 2, ahead 0 |
-| changed files | - | - | - | `formal/src/lib.rs`, `formal/fixtures/recovery_hostile_traces.json`, `formal/models/`, `formal/src/recovery.rs`, `formal/tests/recovery_models.rs` |
+| `agent-systems-benchmark-recovery-models` | `feature/recovery-models` | `462bd04a349d` | 7 | behind 2, ahead 0 |
+| changed files | - | - | - | `formal/Cargo.toml`, `formal/src/lib.rs`, `formal/fixtures/recovery_hostile_traces.json`, `formal/models/`, `formal/src/recovery.rs`, `formal/tests/recovery_models.rs`, `formal/tests/recovery_production.rs` |
 | `agent-systems-benchmark-redacted-request-pointer-replay` | `feature/redacted-request-pointer-replay` | `d7492ef5e9ad` | 0 | behind 26, ahead 0 |
 | `agent-systems-benchmark-reliability-fairness` | `feature/reliability-fairness` | `eb28ca7aeae5` | 0 | behind 72, ahead 0 |
 | `agent-systems-benchmark-replay-aider` | `feature/replay-aider` | `ec0a2930690c` | 0 | behind 34, ahead 0 |
