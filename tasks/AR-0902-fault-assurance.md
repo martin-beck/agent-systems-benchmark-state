@@ -9,7 +9,7 @@
     "AR-0503"
   ],
   "id": "AR-0902",
-  "next_action": "Hold clean unpublished successor e6c623113c15c99950889b26cd70b29c6966b1d4 for independent immutable review; after approval update PR #28 only with exact force-with-lease against ad00e8b and require fresh CI.",
+  "next_action": "Update PR #28 from ad00e8b to independently approved exact e6c6231 using exact force-with-lease, then require fresh fault, quality, Rust and formal CI.",
   "observed_branch": "feature/fault-assurance",
   "observed_dirty": 0,
   "observed_head": "e6c623113c15c99950889b26cd70b29c6966b1d4",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection.",
-  "task_revision": 91,
+  "task_revision": 92,
   "title": "Add fuzz mutation and lifecycle fault campaigns",
-  "updated_at": "2026-09-07T02:47:48+00:00",
+  "updated_at": "2026-09-07T02:49:49+00:00",
   "worktree_key": "agent-systems-benchmark-fault-assurance"
 }
 ---
@@ -316,3 +316,7 @@ Implementation has not started. Read the linked plan before claiming.
   compile locked/offline; TOML, actionlint, offline zizmor, repository policy, exact-range Gitleaks,
   signature/DCO, diff/scope and clean-tree checks pass. PR #28 remains at prior ad00e8b pending
   review; no rerun or push performed.
+
+- 2026-09-07T02:49:49+00:00: Independent immutable review approved exact successor
+  e6c623113c15c99950889b26cd70b29c6966b1d4. Before the authorized update, local tree was clean, SSH
+  signature and exact DCO were valid, and both remote branch and PR #28 remained exact ad00e8b.
