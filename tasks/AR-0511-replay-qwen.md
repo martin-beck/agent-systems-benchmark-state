@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-qwen",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-07T21:46:18+00:00",
   "depends_on": [
     "AR-0306",
     "AR-0503",
@@ -11,15 +11,15 @@
   ],
   "id": "AR-0511",
   "next_action": "Prove credential-free record/replay conformance for Qwen Code with network denial and malformed/tool/cancel negatives.",
-  "owner": "",
+  "owner": "quality_20260906",
   "plan": "../plans/AR-0511.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify replay conformance for Qwen Code.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Qualify Qwen Code replay",
-  "updated_at": "2026-09-07T18:46:15+00:00",
+  "updated_at": "2026-09-07T18:46:18+00:00",
   "worktree_key": "agent-systems-benchmark-replay-qwen"
 }
 ---
@@ -29,3 +29,5 @@ Qualify Qwen Code record/replay, network denial, parity, retries, tool calls, ca
 
 - 2026-09-07T18:46:15+00:00: Promote Gemini-independent Qwen? replay leaf after AR-0510 release;
   dependencies are complete.
+
+- 2026-09-07T18:46:18+00:00: Claimed by quality_20260906.
