@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide doctor, plan, run, sweep, compare and report with stable JSON output.",
-  "task_revision": 122,
+  "task_revision": 123,
   "title": "Implement terminal and automation interfaces",
-  "updated_at": "2026-09-07T02:10:37+00:00",
+  "updated_at": "2026-09-07T02:11:55+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-interface"
 }
 ---
@@ -386,3 +386,6 @@ Implementation has not started. Read the linked plan before claiming.
   private executable snapshot, and cover multi-admission cancellation and adversarial replacement.
   Focused fmt, clippy, and runtime/CLI tests pass: 9 CLI unit, 3 real e2e, 26 runtime unit, 8
   process-boundary, 10 sandbox-boundary, and 16 scheduler-boundary tests.
+
+- 2026-09-07T02:11:55+00:00: Recorded command exit 101; command argv SHA-256
+  e7409d27df28877a25f6021220da2d1eccd3b22b625bafa58f3d1ac1af7eb8c4.
