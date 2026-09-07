@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the stable frontend control protocol contract.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Define frontend protocol contract",
-  "updated_at": "2026-09-07T14:43:09+00:00",
+  "updated_at": "2026-09-07T15:53:40+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-protocol-contract"
 }
 ---
@@ -68,3 +68,6 @@ compatibility rules, bounded errors, and generated consistency checks.
   497c891a107cc2fe60d591450cf484ced560d5634250dbd5ad163f5426b76597.
 
 - 2026-09-07T14:43:09+00:00: Heartbeat by root-coordination-20260906.
+
+- 2026-09-07T15:53:40+00:00: Recorded command exit 0; command argv SHA-256
+  6e4b7642313346b0b67f7d47eb521ca4ef218a971019ef8ae9a2bbacbbde8efd.
