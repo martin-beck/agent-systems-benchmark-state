@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0308",
-  "next_action": "Add focused parser/config/cancellation tests and a credential-free loopback real-package fixture; repair any native findings before requesting the shared module-registration fence.",
+  "next_action": "Raise applicable mini-SWE branch/line coverage with focused public-boundary negatives, rerun native fixture after prompt-unlink/order hardening, then request serialized shared registration fence.",
   "observed_branch": "feature/agent-mini-swe",
   "observed_dirty": 3,
   "observed_head": "2579362d6936b25e6008583f7bd485e5498a4e3f",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned mini-SWE-agent as a bounded batch engineering agent.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Implement mini-SWE-agent client adapter",
-  "updated_at": "2026-09-07T01:17:08+00:00",
+  "updated_at": "2026-09-07T01:17:29+00:00",
   "worktree_key": "agent-systems-benchmark-agent-mini-swe"
 }
 ---
@@ -208,3 +208,18 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T01:17:08+00:00: Recorded command exit 0; command argv SHA-256
   e6289ae523601853a3efe6df21bced8888df7621a078fe16dc6b6cce0971e4b1.
+
+- 2026-09-07T01:17:29+00:00: Parser adversarials now reject duplicate JSON members,
+  duplicate/unmatched tool IDs, unknown roles, unfinished non-submission actions, zero/excess calls,
+  invalid cost, version/shape errors; 5 initial and then 11 expanded focused tests passed in
+  disposable registration mirror. First native run failed before provider because zipimport cannot
+  resolve wheel package-data config; changed boundary to extract the already hash-verified wheel
+  into private attempt state before import. Second native run reached provider but failed trajectory
+  validation because successful Submitted exits omit the final tool observation; mapper now closes
+  exactly one pending final tool only for pinned Submitted terminal state, and non-submission
+  remains failed. Exact pinned wheel/CPython credential-free edit plus cancellation journey then
+  passed (2 loopback requests, workspace edit, causal tool evidence, state cleanup). Descendant
+  process-group cancellation negative passed. Full mirror fmt/clippy/test/doc and real fixture
+  passed. Current llvm-cov mini_swe result is 86.21% lines/84.55% regions after expanded boundary
+  tests, below desired focused coverage, so no candidate or fence request yet. Prompt file is now
+  unlinked before any prompt bytes and unsafe state-root preflight occurs before workspace creation.
