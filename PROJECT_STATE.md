@@ -17,10 +17,10 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 34092791959 | `14ac5ce3bcc2` | workflow_dispatch | Development host runner canary | completed:success |
-| 34092764541 | `14ac5ce3bcc2` | push | Formal assurance | in_progress:- |
-| 34092764480 | `14ac5ce3bcc2` | push | Rust verification | in_progress:- |
-| 34092764475 | `14ac5ce3bcc2` | push | Fault assurance | in_progress:- |
-| 34092764447 | `14ac5ce3bcc2` | push | Repository quality | in_progress:- |
+| 34092764541 | `14ac5ce3bcc2` | push | Formal assurance | completed:success |
+| 34092764480 | `14ac5ce3bcc2` | push | Rust verification | completed:success |
+| 34092764475 | `14ac5ce3bcc2` | push | Fault assurance | completed:success |
+| 34092764447 | `14ac5ce3bcc2` | push | Repository quality | completed:success |
 | 34092510576 | `0d9b363538d2` | pull_request | Formal assurance | completed:success |
 | 34092510505 | `0d9b363538d2` | pull_request | Repository quality | completed:success |
 | 34092510504 | `0d9b363538d2` | pull_request | Rust verification | completed:success |
