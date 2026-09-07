@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**119 ARs tracked** across 5 active status categories.
+**119 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 59 |
 | **Future** | Deferred roadmap work | 0 |
@@ -116,7 +116,7 @@ flowchart LR
         AR_0704["AR-0704 - Planned"]:::status_planned
         AR_0705["AR-0705 - Planned"]:::status_planned
         AR_0706["AR-0706 - Planned"]:::status_planned
-        AR_0707["AR-0707 - Open"]:::status_open
+        AR_0707["AR-0707 - In progress"]:::status_in_progress
     end
     subgraph series_08["08 - Interfaces"]
         direction TB
@@ -709,19 +709,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0512](tasks/AR-0512-replay-goose.md): Qualify goose replay | contracts_20260906 | Qualify replay conformance for goose. | Serialize a shared replay follow-up that makes request-body redaction selectors interaction/method-aware; then rerun the preserved Goose fixture without bypassing private messages. |
 | P0 | [AR-0847](tasks/AR-0847-frontend-control-api-repair.md): Frontend control API repair | replay_20260906 | Repair and independently qualify the blocked frontend control API candidate. | Repair the AR-0803 frontend control candidate&#x27;s five immutable-review findings, then qualify the repaired API and transfer the reviewed result back to AR-0803. |
+| P1 | [AR-0707](tasks/AR-0707-emulated-aarch64-portability.md): Qualify emulated aarch64 portability | quality_20260906 | Add explicit emulated-aarch64 portability qualification without claiming native support. | Provide a reproducible x86_64-hosted aarch64 VM/emulation lane for userspace portability and negative qualification only. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0707](tasks/AR-0707-emulated-aarch64-portability.md): Qualify emulated aarch64 portability | Unclaimed | Add explicit emulated-aarch64 portability qualification without claiming native support. | Provide a reproducible x86_64-hosted aarch64 VM/emulation lane for userspace portability and negative qualification only. |
 
 ### Blocked (4)
 

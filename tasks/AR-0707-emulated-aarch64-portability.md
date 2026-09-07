@@ -2,22 +2,22 @@
 {
   "branch": "feature/emulated-aarch64-portability",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-08T00:17:58+00:00",
   "depends_on": [
     "AR-0701",
     "AR-0103"
   ],
   "id": "AR-0707",
   "next_action": "Provide a reproducible x86_64-hosted aarch64 VM/emulation lane for userspace portability and negative qualification only.",
-  "owner": "",
+  "owner": "quality_20260906",
   "plan": "../plans/AR-0707.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add explicit emulated-aarch64 portability qualification without claiming native support.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Qualify emulated aarch64 portability",
-  "updated_at": "2026-09-07T21:17:43+00:00",
+  "updated_at": "2026-09-07T21:17:58+00:00",
   "worktree_key": "agent-systems-benchmark-emulated-aarch64-portability"
 }
 ---
@@ -39,3 +39,5 @@ Acceptance criteria:
 - 2026-09-07T21:17:43+00:00: Dependencies AR-0701 and AR-0103 are done; declared branch/worktree are
   absent; emulated-aarch64 portability is path-compatible with active replay and frontend work.
   Preserve AR-0703 as the independent native-capacity gate and never infer native support.
+
+- 2026-09-07T21:17:58+00:00: Claimed by quality_20260906.
