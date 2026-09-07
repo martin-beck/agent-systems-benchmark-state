@@ -9,7 +9,7 @@
     "AR-0401"
   ],
   "id": "AR-1004",
-  "next_action": "Hold immutable c6c7d37 for independent review; publish only after approval and exact-main recheck.",
+  "next_action": "Hold immutable eb28ca7 for fresh independent review; publish only after approval.",
   "observed_branch": "feature/reliability-fairness",
   "observed_dirty": 0,
   "observed_head": "eb28ca7aeae59b2340af7856e40f0ea31b792e66",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Report repeated-attempt reliability and prevent aggregate results from hiding starvation or hard strata.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Measure reliability and mixed-workload fairness",
-  "updated_at": "2026-09-07T04:03:31+00:00",
+  "updated_at": "2026-09-07T04:03:49+00:00",
   "worktree_key": "agent-systems-benchmark-reliability-fairness"
 }
 ---
@@ -206,3 +206,18 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T04:03:31+00:00: Recorded command exit 0; command argv SHA-256
   93ef2785f78e05d3a6af4b721933a8f9c2d284c2ed996c8493e4d5d147d05c33.
+
+- 2026-09-07T04:03:49+00:00: Superseded blocked c6c7d37 with clean unpublished
+  eb28ca7aeae59b2340af7856e40f0ea31b792e66, tree fb2c3f118a3a8e4f58f5eab4d87082311364950e, one
+  signed+DCO commit on exact public main 4a59593c. Review blockers are closed: analyze_reliability
+  now requires a bounded pre-execution PlannedAttempt roster with exact class/epoch/trial/index/seed
+  equality, rejects duplicate slots even under different seeds, and fails a wholly omitted hard
+  stratum or wrong seed; ReliabilityReport and every aggregate/class/epoch FairnessSummary expose
+  the exact starvation threshold. Eight boundary tests cover those regressions plus prior formulas.
+  Full workspace fmt/clippy/tests/docs/release/formal passed after repair; final workspace
+  clippy/tests and focused doctests passed after dead-branch cleanup. New reliability module
+  coverage returned to 100% regions/functions/lines; asb-analysis totals 98.38% regions, 99.30%
+  functions, 99.23% lines. Exact DCO, repository policy, redacted Gitleaks, four-path scope, diff
+  and clean-tree checks pass. A first final-validation wrapper asserted an incorrectly transcribed
+  prospective full hash and exited 1 before any product mutation; fresh rev-parse established
+  eb28ca7 and unchanged rerun passed.
