@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide genuine disposable native hosts for required Debian and openEuler platform qualification.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Provision native platform qualification capacity",
-  "updated_at": "2026-09-07T10:34:46+00:00",
+  "updated_at": "2026-09-07T10:34:48+00:00",
   "worktree_key": "agent-systems-benchmark-native-platform-lab"
 }
 ---
@@ -39,3 +39,6 @@ openEuler or Debian kernel evidence. Containers, cross-builds and emulation cann
   feasibility and provider availability audit without spend or emulation.
 
 - 2026-09-07T10:34:33+00:00: Claimed by quality-20260906.
+
+- 2026-09-07T10:34:48+00:00: Recorded command exit 0; command argv SHA-256
+  5cf8f13c336b7864586e3daa48e5aa4818767fb7d2ea53803b4e5bd5b1131d08.
