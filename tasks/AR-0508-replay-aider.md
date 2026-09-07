@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0508",
-  "next_action": "Prove credential-free record/replay conformance for aider with network denial and malformed/tool/cancel negatives.",
+  "next_action": "Hold isolated signed Aider replay test a8ea226; after AR-0506 review/integration/release, rebase onto exact main, take shared Cargo/README/lock fence, compile and run malformed plus real loopback-only capture/replay/cancel gates.",
   "observed_branch": "feature/replay-aider",
   "observed_dirty": 0,
   "observed_head": "a8ea226f7767ac36e8b209eb85ac5d1bef40d33e",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for aider.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Qualify aider replay",
-  "updated_at": "2026-09-07T12:59:24+00:00",
+  "updated_at": "2026-09-07T12:59:47+00:00",
   "worktree_key": "agent-systems-benchmark-replay-aider"
 }
 ---
@@ -55,3 +55,14 @@ Qualify aider record/replay, network denial, parity, retries, tool calls, cancel
 
 - 2026-09-07T12:59:24+00:00: Recorded command exit 0; command argv SHA-256
   027ed4b054d5583133eaadf1fdcde9a322fc1ab86ca50c16313452ce3de47f98.
+
+- 2026-09-07T12:59:47+00:00: Committed isolated one-path signed+DCO checkpoint
+  a8ea226f7767ac36e8b209eb85ac5d1bef40d33e on base a0d80e48deb8750543606c2b577e1a52df26fc4c. The
+  unique Aider replay test captures a real buffered 500-to-success retry, seals
+  authorization-redacted cassette contents, resets and strictly replays the same workload, requires
+  terminal/grader parity, proves structured retry/tool/usage evidence remains unavailable, exercises
+  paced cancellation and state cleanup, requires a loopback-only namespace, and rejects
+  unknown/truncated/tool-inconsistent cassettes before service start. Cargo format, diff check,
+  one-path scope, and privacy search pass. Compile/native execution intentionally not attempted
+  because AR-0506 still owns unpublished shared asb-agents Cargo.toml/README/Cargo.lock integration;
+  no shared path was touched.
