@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Support per-interaction request redaction policies for mixed catalog and private requests.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Interaction-aware request redaction",
-  "updated_at": "2026-09-07T20:47:26+00:00",
+  "updated_at": "2026-09-07T20:49:25+00:00",
   "worktree_key": "agent-systems-benchmark-interaction-aware-redaction"
 }
 ---
@@ -179,3 +179,13 @@ Repair the cassette-global request-body redaction limitation exposed by Goose: c
 
 - 2026-09-07T20:47:26+00:00: Recorded command exit 0; command argv SHA-256
   f3f039d98149e1648c3a2c1ba6f51149ff443f881ddb6bcd2151367a9f24641e.
+
+- 2026-09-07T20:49:25+00:00: Assurance completion: bounded pinned cargo-fuzz completed
+  protocol_jsonrpc, cassette_decode, replay_sse, and store_paths at 256 runs each after coordinated
+  completed-AR cache reclamation. The fuzz command returned 1 only on its final cleanliness
+  assertion because cargo-fuzz created four empty workspace artifact directories despite an external
+  artifact prefix; exact empty directories were audited and removed with rmdir through the wrapper,
+  with no source-diff change. Mutation sentinels caught 7/7 at
+  /srv/data/projects/.asb-local/artifacts/ar0520-mutants-QmNb9o. Earlier ENOSPC and
+  missing-toolchain-path attempts were environmental/preflight failures and were not repeated
+  unchanged.
