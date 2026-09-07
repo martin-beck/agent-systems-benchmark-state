@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair stale AR-0801 implementation and CLI documentation claims.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Repair AR-0801 documentation consistency",
-  "updated_at": "2026-09-07T22:50:21+00:00",
+  "updated_at": "2026-09-07T22:51:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar0801-documentation-repair"
 }
 ---
@@ -64,3 +64,14 @@ the examples against the merged binary and tests. Do not reopen or rewrite AR-08
 
 - 2026-09-07T22:50:21+00:00: Recorded command exit 0; command argv SHA-256
   0fc83ffb04dea4b19d8e6f3436929cd7ebb6827639fb7fc7bfc94906d989349f.
+
+- 2026-09-07T22:51:21+00:00: Documentation repair candidate is ready. Product exact signed DCO head
+  c0b9e0baf5f45221f159c8a06cd058b09c012a77, tree 6766ab7602c4f26150289e081eb3c09f9808441e, parent
+  9d17563f39c1eb51f17309578430a13a4d87b1f1, has a clean one-path README diff. State signed DCO
+  commit 2a0114f1 transactionally updates only AR-0801 text plus generated CURRENT and STATUS
+  without changing its done status, evidence history, dependencies, or ownership. CLI 16 unit and 3
+  native e2e tests, exact help/doctor, unsupported record/replay exit-2 negatives, full workspace
+  format/clippy/tests/docs/release, policy/link checks, actionlint, zizmor, Gitleaks, deny/audit,
+  failure/platform gates all pass. State Ruff/mypy/schema/render/live doctor, 38 tests, and 96
+  percent branch coverage pass. Initial custom transaction import failed before mutation because its
+  module path was absent; corrected invocation then committed atomically.
