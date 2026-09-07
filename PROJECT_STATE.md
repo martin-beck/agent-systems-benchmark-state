@@ -11,7 +11,7 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #27 | `feature/agent-goose@08feca551df7` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(agents): add bounded Goose adapter |
-| #28 | `feature/fault-assurance@ad00e8b1ea16` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test: add bounded fault assurance campaigns |
+| #28 | `feature/fault-assurance@ad00e8b1ea16` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test: add bounded fault assurance campaigns |
 
 ## Recent workflows
 
@@ -20,7 +20,7 @@ Generated from local Git and GitHub. Do not edit.
 | 34077199689 | `ad00e8b1ea16` | pull_request | Fault assurance | completed:failure |
 | 34077199652 | `ad00e8b1ea16` | pull_request | Formal assurance | completed:success |
 | 34077199617 | `ad00e8b1ea16` | pull_request | Repository quality | in_progress:- |
-| 34077199611 | `ad00e8b1ea16` | pull_request | Rust verification | in_progress:- |
+| 34077199611 | `ad00e8b1ea16` | pull_request | Rust verification | completed:success |
 | 34076974034 | `08feca551df7` | pull_request | Rust verification | completed:failure |
 | 34076974032 | `08feca551df7` | pull_request | Formal assurance | completed:success |
 | 34076974004 | `08feca551df7` | pull_request | Repository quality | completed:failure |
