@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection.",
-  "task_revision": 97,
+  "task_revision": 98,
   "title": "Add fuzz mutation and lifecycle fault campaigns",
-  "updated_at": "2026-09-07T03:12:47+00:00",
+  "updated_at": "2026-09-07T03:13:01+00:00",
   "worktree_key": "agent-systems-benchmark-fault-assurance"
 }
 ---
@@ -342,3 +342,6 @@ Implementation has not started. Read the linked plan before claiming.
   single exact DCO; PR OPEN/CLEAN/MERGEABLE with ten exact-head checks green; git diff-check and
   merge-tree clean; additive 20-path fault/fuzz/new-workflow scope has no overlap with active
   AR-0803 or AR-0308 paths.
+
+- 2026-09-07T03:13:01+00:00: Recorded command exit 0; command argv SHA-256
+  b4a9f24899c52a3cb0b0abcbc9c8ebd357f2c52523640ffae8639f355512f89d.
