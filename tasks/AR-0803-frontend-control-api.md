@@ -10,7 +10,7 @@
     "AR-0801"
   ],
   "id": "AR-0803",
-  "next_action": "Define a bounded versioned control/status API between the runner and independent frontends.",
+  "next_action": "Repair independently identified endpoint, total-deadline, exact-negotiation, initial-envelope, and privacy-enforcement gaps; revalidate immutable replacement.",
   "observed_branch": "feature/frontend-control-api",
   "observed_dirty": 0,
   "observed_head": "0184ec3290ad1a5c182e1d01d523eb11510f7604",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Define the frontend control API",
-  "updated_at": "2026-09-07T03:44:19+00:00",
+  "updated_at": "2026-09-07T03:49:51+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api"
 }
 ---
@@ -198,3 +198,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T03:44:19+00:00: Recorded command exit 0; command argv SHA-256
   abb89d34bfd7abf38d11bc07dc6a1e150fcbc5cbdbf6b4b9b9710b8d82188437.
+
+- 2026-09-07T03:49:51+00:00: Independent immutable review BLOCKED 0184ec3: primitives were not wired
+  into a runner endpoint/client or lifecycle recovery tests; timeouts were per-I/O rather than
+  absolute; negotiation could select an unoffered minor; the initial negotiation envelope bypassed
+  common validation; and arbitrary backend response/error values lacked an enforced privacy
+  boundary. Candidate remains unpublished while all five findings are repaired.
