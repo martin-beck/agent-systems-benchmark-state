@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0308",
-  "next_action": "Complete exact-tree privacy/signature/scope verification, create one focused signed DCO successor, and request immutable review without publication.",
+  "next_action": "Independently review unpublished exact candidate 1605693dbb7aade01dd47cb074e35bca02df873b tree 7d99a7f69d97335cad802699dbf9a7ac7bac2e1b; do not publish or merge without coordinator authorization.",
   "observed_branch": "feature/agent-mini-swe",
   "observed_dirty": 0,
   "observed_head": "1605693dbb7aade01dd47cb074e35bca02df873b",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned mini-SWE-agent as a bounded batch engineering agent.",
-  "task_revision": 261,
+  "task_revision": 262,
   "title": "Implement mini-SWE-agent client adapter",
-  "updated_at": "2026-09-07T05:23:07+00:00",
+  "updated_at": "2026-09-07T05:23:33+00:00",
   "worktree_key": "agent-systems-benchmark-agent-mini-swe"
 }
 ---
@@ -883,3 +883,24 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T05:23:07+00:00: Recorded command exit 0; command argv SHA-256
   bb2a78b15b18a40cd18a4a2862bf8d5117a090b5bca8e6795032b52c2dfe6778.
+
+- 2026-09-07T05:23:33+00:00: Unpublished successor 1605693dbb7aade01dd47cb074e35bca02df873b/tree
+  7d99a7f69d97335cad802699dbf9a7ac7bac2e1b is one focused SSH-signed matching-DCO commit atop
+  0030358 and changes only MINI_SWE.md plus mini_swe.rs. It invokes the privately staged interpreter
+  with -P -S; a real /usr/bin/python3 hostile staged sitecustomize regression proves automatic site
+  imports cannot create a workspace sentinel. Manifest now declares Cancellation and Usage
+  consistently with emitted cost evidence. Parser accepts exactly Submitted, LimitsExceeded,
+  TimeExceeded, and RepeatedFormatError; unknown, empty, case-confused, generic Failed, and
+  UserInterruption values fail closed. Session/attempt IDs accept only ASCII letters, digits, dot,
+  underscore, and hyphen through 4 KiB before effects, with
+  whitespace/path/colon/punctuation/Unicode negatives. Focused 20/20 and agent 92/92 tests, pinned
+  2.4.6 credential-free loopback edit+cancellation, fmt/clippy/workspace tests/docs/release,
+  coverage, formal model tests, five Kani proofs and deliberate failing counterexample, Cargo
+  Deny/audit, actionlint/zizmor, controlled failure fixtures, repository policy, four-path
+  full-range scope, exact-range Gitleaks, and privacy scan pass. Coverage: workspace 94.49% lines,
+  mini_swe.rs 96.01%, protocol 98.44%, replay 97.60%, core 100%; LLVM reports no branch denominator.
+  Kani negative log SHA-256 d1b3f55c4bf888f85628791c0df5b4dce1bb3d787744b6ee0c3db246230b6a84.
+  Worktree is clean and candidate remains unpublished. Existing limitations remain: unsigned
+  upstream tag, product-bound rather than upstream lock, ambient stdlib/native ABI, native x86_64
+  journey only, no live streaming/subscription/resume/replay, and hard containment delegated to
+  sandbox/cgroup.
