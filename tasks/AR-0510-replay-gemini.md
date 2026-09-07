@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0510",
-  "next_action": "Await AR-0518 strict Gemini dialect integration; then rebase isolated signed adapter series and run pinned capture-to-strict-replay, retry, tool/grade, cancellation, malformed, full/formal/privacy gates.",
+  "next_action": "Await focused shared Gemini dialect repair for exact thinkingConfig shape {includeThoughts:boolean}; then rerun pinned capture-to-strict-replay and remaining gates without weakening exact matching.",
   "observed_branch": "feature/replay-gemini",
   "observed_dirty": 1,
   "observed_head": "2d498df307bce5a813229c9f6d0cf8bb45efe0b1",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Gemini.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Qualify Gemini replay",
-  "updated_at": "2026-09-07T17:22:43+00:00",
+  "updated_at": "2026-09-07T17:23:28+00:00",
   "worktree_key": "agent-systems-benchmark-replay-gemini"
 }
 ---
@@ -242,3 +242,12 @@ Qualify Gemini record/replay, network denial, parity, retries, tool calls, cance
 
 - 2026-09-07T17:22:43+00:00: Recorded command exit 101; command argv SHA-256
   43b3a3851a36e43d9454c2de8eb1498e913c7d04fbaef1510429b396f687217c.
+
+- 2026-09-07T17:23:28+00:00: Post-AR-0518 real acceptance changed the prior conclusion: pinned
+  Gemini 0.58.0 produced all three requests with the identical thinkingConfig key/type shape exactly
+  includeThoughts:boolean, not an empty object. The first strict attempt captured
+  retry/tool/completion but StrictReplayService rejected the cassette before replay; a second
+  key/type-only diagnostic proved the exact shape without logging any value, prompt, header, or
+  body. Capture and retry remain deterministic, so the integrated AR-0518 empty-object contract is
+  incompatible; shared files were not mutated. Proposed focused P0 repair with
+  empty/extra/nonboolean/null/value-mismatch negatives before AR-0510 can continue.
