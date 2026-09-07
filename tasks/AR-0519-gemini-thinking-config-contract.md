@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Correct Gemini thinkingConfig strict-replay contract from pinned capture evidence.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Gemini thinkingConfig contract repair",
-  "updated_at": "2026-09-07T17:44:30+00:00",
+  "updated_at": "2026-09-07T17:45:03+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-thinking-config-contract"
 }
 ---
@@ -133,3 +133,6 @@ Repair the merged Gemini dialect using privacy-safe pinned evidence: `thinkingCo
   for publication. Earlier commit wrapper product effect succeeded before unrelated expired AR-0840
   caused state append failure; commit was preserved and not repeated; state is now
   reconciled/live-doctor green.
+
+- 2026-09-07T17:45:03+00:00: Recorded command exit 0; command argv SHA-256
+  7368c3ffb2d05199c10c5dd3af956e842346130efe72867ea3ed295025b978de.
