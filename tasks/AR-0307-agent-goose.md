@@ -11,7 +11,7 @@
   "id": "AR-0307",
   "next_action": "Inspect current release assets, structured run mode, provider configuration and extension failure behavior.",
   "observed_branch": "feature/agent-goose",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "d384c4c54a4576dadaae3a542cfc09a5e339a4fe",
   "owner": "quality-20260906",
   "plan": "../plans/AR-0307.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned AAIF goose in no-session structured mode.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Implement goose client adapter",
-  "updated_at": "2026-09-07T00:30:45+00:00",
+  "updated_at": "2026-09-07T00:32:27+00:00",
   "worktree_key": "agent-systems-benchmark-agent-goose"
 }
 ---
