@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #31 | `feature/native-platforms@bdaf9c108226` | `main` | UNSTABLE | QUEUED:, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, QUEUED: | platforms: add fail-closed native qualification evidence |
+| #31 | `feature/native-platforms@bdaf9c108226` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | platforms: add fail-closed native qualification evidence |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34087336801 | `bdaf9c108226` | pull_request | Formal assurance | queued:- |
-| 34087336787 | `bdaf9c108226` | pull_request | Fault assurance | queued:- |
+| 34087336801 | `bdaf9c108226` | pull_request | Formal assurance | in_progress:- |
+| 34087336787 | `bdaf9c108226` | pull_request | Fault assurance | in_progress:- |
 | 34087336778 | `bdaf9c108226` | pull_request | Repository quality | in_progress:- |
 | 34087336775 | `bdaf9c108226` | pull_request | Rust verification | in_progress:- |
 | 34087336758 | `bdaf9c108226` | pull_request | Native platform evidence | in_progress:- |
