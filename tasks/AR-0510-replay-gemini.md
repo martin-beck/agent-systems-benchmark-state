@@ -12,17 +12,17 @@
   "id": "AR-0510",
   "next_action": "Complete final privacy/scope/diff audit, create focused signed+DCO candidate, verify exact commit, and request immutable review before publication.",
   "observed_branch": "feature/replay-gemini",
-  "observed_dirty": 2,
-  "observed_head": "24ad8d22a6cca66827cc94205ae3474c12f8fd7a",
+  "observed_dirty": 0,
+  "observed_head": "6a35edf615303f6d80b333533deca0e784994b16",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0510.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for Gemini.",
-  "task_revision": 106,
+  "task_revision": 107,
   "title": "Qualify Gemini replay",
-  "updated_at": "2026-09-07T18:16:36+00:00",
+  "updated_at": "2026-09-07T18:17:10+00:00",
   "worktree_key": "agent-systems-benchmark-replay-gemini"
 }
 ---
