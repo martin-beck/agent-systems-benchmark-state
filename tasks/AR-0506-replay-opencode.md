@@ -12,7 +12,7 @@
   "id": "AR-0506",
   "next_action": "Prove credential-free record/replay conformance for the OpenCode adapter with network denial and malformed/tool/cancel negatives.",
   "observed_branch": "feature/replay-opencode",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "a2def53344a011880ad2dbe5edcfabc87b2c64af",
   "owner": "contracts-20260906",
   "plan": "../plans/AR-0506.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenCode.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Qualify OpenCode replay",
-  "updated_at": "2026-09-07T12:03:23+00:00",
+  "updated_at": "2026-09-07T12:03:48+00:00",
   "worktree_key": "agent-systems-benchmark-replay-opencode"
 }
 ---
