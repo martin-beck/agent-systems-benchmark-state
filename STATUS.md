@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**113 ARs tracked** across 5 active status categories.
+**113 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 64 |
 | **Future** | Deferred roadmap work | 0 |
@@ -88,7 +88,7 @@ flowchart LR
         AR_0506["AR-0506 - Done"]:::status_done
         AR_0507["AR-0507 - In progress"]:::status_in_progress
         AR_0508["AR-0508 - In progress"]:::status_in_progress
-        AR_0509["AR-0509 - Open"]:::status_open
+        AR_0509["AR-0509 - In progress"]:::status_in_progress
         AR_0510["AR-0510 - Planned"]:::status_planned
         AR_0511["AR-0511 - Planned"]:::status_planned
         AR_0512["AR-0512 - Planned"]:::status_planned
@@ -678,19 +678,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0507](tasks/AR-0507-replay-opendesk.md): Qualify OpenDesk replay | replay_20260906 | Qualify replay conformance for OpenDesk. | Await serialized shared replay repairs for span_id admission, absent-stream SSE, and bounded model-catalog GET routes; then remove diagnostic normalization and complete exact native replay gates. |
 | P0 | [AR-0508](tasks/AR-0508-replay-aider.md): Qualify aider replay | quality_20260906 | Qualify replay conformance for aider. | Hold isolated signed Aider replay test a8ea226; after AR-0506 review/integration/release, rebase onto exact main, take shared Cargo/README/lock fence, compile and run malformed plus real loopback-only capture/replay/cancel gates. |
+| P0 | [AR-0509](tasks/AR-0509-replay-codex.md): Qualify Codex replay | contracts_20260906 | Qualify replay conformance for Codex. | Prove credential-free record/replay conformance for Codex with network denial and malformed/tool/cancel negatives. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0509](tasks/AR-0509-replay-codex.md): Qualify Codex replay | Unclaimed | Qualify replay conformance for Codex. | Prove credential-free record/replay conformance for Codex with network denial and malformed/tool/cancel negatives. |
 
 ### Blocked (4)
 
