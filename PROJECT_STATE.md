@@ -10,12 +10,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #25 | `feature/agent-qwen-code@0be96c9ec50e` | `main` | UNKNOWN | - | feat(agents): add bounded Qwen Code adapter |
+| #25 | `feature/agent-qwen-code@0be96c9ec50e` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | feat(agents): add bounded Qwen Code adapter |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34071496677 | `0be96c9ec50e` | pull_request | Formal assurance | queued:- |
+| 34071496622 | `0be96c9ec50e` | pull_request | Rust verification | queued:- |
+| 34071496615 | `0be96c9ec50e` | pull_request | Repository quality | queued:- |
 | 34070523641 | `2579362d6936` | push | Formal assurance | completed:success |
 | 34070523631 | `2579362d6936` | push | Rust verification | completed:success |
 | 34070523622 | `2579362d6936` | push | Repository quality | completed:success |
@@ -25,6 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34069803385 | `37a63aaf4a8e` | pull_request | Formal assurance | completed:success |
 | 34069803372 | `37a63aaf4a8e` | pull_request | Repository quality | completed:failure |
 | 34069803358 | `37a63aaf4a8e` | pull_request | Rust verification | completed:failure |
-| 34068641632 | `d384c4c54a45` | push | Repository quality | completed:success |
-| 34068641618 | `d384c4c54a45` | push | Rust verification | completed:success |
-| 34068641612 | `d384c4c54a45` | push | Formal assurance | completed:success |
