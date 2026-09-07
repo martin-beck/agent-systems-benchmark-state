@@ -10,14 +10,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #31 | `feature/native-platforms@bdaf9c108226` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
+| #31 | `feature/native-platforms@bdaf9c108226` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34121326944 | `ad0cdfc35d14` | push | Repository quality | queued:- |
-| 34121326929 | `ad0cdfc35d14` | push | Rust verification | queued:- |
+| 34121326944 | `ad0cdfc35d14` | push | Repository quality | in_progress:- |
+| 34121326929 | `ad0cdfc35d14` | push | Rust verification | in_progress:- |
 | 34121326883 | `ad0cdfc35d14` | push | Formal assurance | queued:- |
 | 34121326875 | `ad0cdfc35d14` | push | Fault assurance | queued:- |
 | 34120354529 | `7d98653e7e7f` | pull_request | Fault assurance | completed:success |
