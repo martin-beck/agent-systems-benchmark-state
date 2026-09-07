@@ -3,7 +3,7 @@
   "branch": "feature/development-host-runner-qualification",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-0830", "AR-0831", "AR-0703"],
+  "depends_on": ["AR-0830", "AR-0831"],
   "id": "AR-0832",
   "next_action": "Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance.",
   "owner": "",
