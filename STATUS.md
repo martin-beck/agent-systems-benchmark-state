@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**117 ARs tracked** across 5 active status categories.
+**117 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 60 |
 | **Future** | Deferred roadmap work | 0 |
@@ -92,7 +92,7 @@ flowchart LR
         AR_0510["AR-0510 - Done"]:::status_done
         AR_0511["AR-0511 - In progress"]:::status_in_progress
         AR_0512["AR-0512 - In progress"]:::status_in_progress
-        AR_0513["AR-0513 - Open"]:::status_open
+        AR_0513["AR-0513 - In progress"]:::status_in_progress
         AR_0514["AR-0514 - Planned"]:::status_planned
         AR_0515["AR-0515 - Planned"]:::status_planned
         AR_0516["AR-0516 - Done"]:::status_done
@@ -698,19 +698,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0511](tasks/AR-0511-replay-qwen.md): Qualify Qwen Code replay | quality_20260906 | Qualify replay conformance for Qwen Code. | Prove credential-free record/replay conformance for Qwen Code with network denial and malformed/tool/cancel negatives. |
 | P0 | [AR-0512](tasks/AR-0512-replay-goose.md): Qualify goose replay | contracts_20260906 | Qualify replay conformance for goose. | Prove credential-free record/replay conformance for goose with network denial and malformed/tool/cancel negatives. |
+| P0 | [AR-0513](tasks/AR-0513-replay-miniswe.md): Qualify mini-SWE replay | replay_20260906 | Qualify replay conformance for mini-SWE-agent. | Prove credential-free record/replay conformance for mini-SWE-agent with network denial and malformed/tool/cancel negatives. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0513](tasks/AR-0513-replay-miniswe.md): Qualify mini-SWE replay | Unclaimed | Qualify replay conformance for mini-SWE-agent. | Prove credential-free record/replay conformance for mini-SWE-agent with network denial and malformed/tool/cancel negatives. |
 
 ### Blocked (4)
 
