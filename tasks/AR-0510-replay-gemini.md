@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-gemini",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-07T20:40:33+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0305",
     "AR-0503",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/replay-gemini",
   "observed_dirty": 0,
   "observed_head": "1366ad3bd03fe8806e80223a55989e34fd72245a",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0510.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Qualify replay conformance for Gemini.",
-  "task_revision": 132,
+  "task_revision": 133,
   "title": "Qualify Gemini replay",
-  "updated_at": "2026-09-07T18:45:05+00:00",
+  "updated_at": "2026-09-07T18:45:28+00:00",
   "worktree_key": "agent-systems-benchmark-replay-gemini"
 }
 ---
@@ -425,3 +425,16 @@ Qualify Gemini record/replay, network denial, parity, retries, tool calls, cance
 
 - 2026-09-07T18:45:05+00:00: Recorded command exit 0; command argv SHA-256
   4df0d75fdb9853cff5a2c0a1270c3c2f44f0b387e6525b0cc4cdaae74826fdca.
+
+- 2026-09-07T18:45:28+00:00: AR-0510 complete at exact product main
+  076e9c44810903fb42669642b5820df2f1672136. PR #48 merged Gemini replay qualification at
+  b9eca15875a58bed76a7190c2488bbac05edd05b; exact-main arm then exposed bounded readiness timing
+  failure in run 34151601051. Independently reviewed one-path repair PR #49 merged at 076e9c4,
+  capping readiness at min(caller deadline, 10 seconds), with explicit 250ms/10s bounds and 10/10
+  regression evidence. Exact-main runs all succeed: Rust x86_64/aarch64 34152581812, quality
+  34152581898, formal 34152581801, fault 34152581849. Postmerge full workspace
+  fmt/clippy/tests/docs/release, formal models, repository policy, clean tree, and earlier native
+  Gemini strict replay acceptance are green. The pinned genuine loopback journey covers capture,
+  transient retry, causal tool call, redacted sealed strict replay, trajectory/grade parity,
+  cancellation/reaping, malformed records, and empty private state; non-loopback/live hosted Gemini
+  and non-x86 native Gemini remain unsupported as documented.
