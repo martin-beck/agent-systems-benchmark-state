@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run pinned Gemini CLI through noninteractive JSON events.",
-  "task_revision": 120,
+  "task_revision": 121,
   "title": "Implement Gemini CLI client adapter",
-  "updated_at": "2026-09-07T01:08:17+00:00",
+  "updated_at": "2026-09-07T01:08:49+00:00",
   "worktree_key": "agent-systems-benchmark-agent-gemini"
 }
 ---
@@ -391,3 +391,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T01:08:17+00:00: Recorded command exit 1; command argv SHA-256
   9e6d2fe91a85dc9638a5c48cfc755ec1150ea564be41065daab8aa5020cc550b.
+
+- 2026-09-07T01:08:49+00:00: Recorded command exit 101; command argv SHA-256
+  74933ba955aacb105928a5a13fbaf3a91a433fc745a962786d844500ed9735b8.
