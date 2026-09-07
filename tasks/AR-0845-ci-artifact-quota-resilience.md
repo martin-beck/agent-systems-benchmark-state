@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent exhausted GitHub artifact quota from obscuring authoritative ASB results.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Harden CI artifact quota behavior",
-  "updated_at": "2026-09-07T11:46:47+00:00",
+  "updated_at": "2026-09-07T11:47:38+00:00",
   "worktree_key": "agent-systems-benchmark-ci-artifact-quota-resilience"
 }
 ---
@@ -72,3 +72,6 @@ operator guidance.
 
 - 2026-09-07T11:46:47+00:00: Recorded command exit 0; command argv SHA-256
   fe49674361a69e15b429ca7d7e9758b73fcd5dca60c286b286af80c1769d2f6b.
+
+- 2026-09-07T11:47:38+00:00: Recorded command exit 0; command argv SHA-256
+  1985dd7ee61c2e53877735dd49fa79e0b0de93df05f495ce5aee07b714d460a3.
