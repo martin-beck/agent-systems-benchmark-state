@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection.",
-  "task_revision": 108,
+  "task_revision": 109,
   "title": "Add fuzz mutation and lifecycle fault campaigns",
-  "updated_at": "2026-09-07T03:21:17+00:00",
+  "updated_at": "2026-09-07T03:22:02+00:00",
   "worktree_key": "agent-systems-benchmark-fault-assurance"
 }
 ---
@@ -380,3 +380,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T03:21:17+00:00: Recorded command exit 1; command argv SHA-256
   32aaa1331cb268600f2c8ccc71bf9549db87941b7f0196c02ab8ca4e28a1fe22.
+
+- 2026-09-07T03:22:02+00:00: Postmerge formal Rust/Loom/production/state model suite passed, but the
+  first local cargo-kani 0.67.0 invocation failed before proof while launching internal cargo
+  metadata with ENOENT because the pinned project-local KANI_HOME/runtime invocation was incomplete.
+  No product change or proof conclusion. Retry must set
+  KANI_HOME=/srv/data/projects/.asb-local/kani-home, absolute product/formal cwd, and precreate the
+  external target; hosted exact-main Kani remains authoritative pending.
