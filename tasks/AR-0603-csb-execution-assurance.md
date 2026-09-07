@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary.",
-  "task_revision": 114,
+  "task_revision": 115,
   "title": "Establish pinned CSB execution and conformance boundary",
-  "updated_at": "2026-09-07T10:22:44+00:00",
+  "updated_at": "2026-09-07T10:26:24+00:00",
   "worktree_key": "agent-systems-benchmark-csb-execution-assurance"
 }
 ---
@@ -378,3 +378,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T10:22:44+00:00: Recorded command exit 0; command argv SHA-256
   07c4950ee0c0dba51c890246ac1b82e1b78c2a3c6e62d77edefa51232643ecec.
+
+- 2026-09-07T10:26:24+00:00: Recorded command exit 1; command argv SHA-256
+  ad3f07de2a8c9d93b97d2c2fc8065f02cae3e660744ab949714feb9c77adb298.
