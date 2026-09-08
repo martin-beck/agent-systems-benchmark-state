@@ -7,7 +7,7 @@
     "AR-0401"
   ],
   "id": "AR-0403",
-  "next_action": "Add a provenance-only Terminal-Bench v4 adapter record and fail-closed negatives; do not qualify or execute until selected Harbor package bytes, OCI image digest, reset behavior, and native oracle evidence are available.",
+  "next_action": "Independent review the signed adapter checkpoint e0da4efd; run exact-tree quality gates and retain explicit unqualified Terminal-Bench limitations.",
   "observed_branch": "feature/terminal-workloads",
   "observed_dirty": 0,
   "observed_head": "e0da4efd375080c774cff91a8eef694d93e14132",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Import terminal tasks through an adapter to the published harness or task format.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Integrate Terminal-Bench workloads",
-  "updated_at": "2026-09-08T14:00:55+00:00",
+  "updated_at": "2026-09-08T14:01:06+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-workloads"
 }
 ---
@@ -98,3 +98,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T14:00:55+00:00: Recorded command exit 0; command argv SHA-256
   461737c8f8df917e34527895d7b95becab88852dbf4ae5c68bf721452e72be07.
+
+- 2026-09-08T14:01:06+00:00: Signed checkpoint e0da4efd has clean exact scope, SSH signature and
+  DCO. It pins Terminal-Bench v4/Harbor provenance, adds fail-closed registry validation and
+  negative fixtures; no execution/native qualification claim is made.
