@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate immutable graders from agent work and version scoring independently of execution.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Protect verifiers and support offline rescoring",
-  "updated_at": "2026-09-08T04:25:42+00:00",
+  "updated_at": "2026-09-08T04:28:07+00:00",
   "worktree_key": "agent-systems-benchmark-verifier-integrity"
 }
 ---
@@ -161,3 +161,6 @@ Implementation has not started. Read the linked plan before claiming.
   advisory cache whose mtime did not change, so it is excluded from candidate evidence. Formal
   locked test is blocked solely because formal/Cargo.lock requires the new asb-analysis path
   closure; no formal lock mutation made while AR-0202 holds the fence.
+
+- 2026-09-08T04:28:07+00:00: Recorded command exit 0; command argv SHA-256
+  de0e0b28d5d67bfd0befbefbc716761a3e4ed15fa547a9194d278d265a47bf70.
