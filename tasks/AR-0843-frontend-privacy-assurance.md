@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify frontend privacy, artifact access, and fault behavior.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Assure frontend privacy and faults",
-  "updated_at": "2026-09-08T08:27:41+00:00",
+  "updated_at": "2026-09-08T08:28:03+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-privacy-assurance"
 }
 ---
@@ -48,3 +48,6 @@ redaction failures; prove no credentials, prompts, transcripts, or private paths
 
 - 2026-09-08T08:27:41+00:00: Recorded command exit 0; command argv SHA-256
   7c6ec2aa750ca2f19a393a93d47d022d53e309470b37ae84a4aff8d2884745af.
+
+- 2026-09-08T08:28:03+00:00: Recorded command exit 0; command argv SHA-256
+  22bae6d640a283a13ea67682daa3610a66fd16b7bdb4c5901a4f509342485fb9.
