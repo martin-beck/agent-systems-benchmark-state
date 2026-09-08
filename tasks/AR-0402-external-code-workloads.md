@@ -7,7 +7,7 @@
     "AR-0401"
   ],
   "id": "AR-0402",
-  "next_action": "Wait for PR #79 exact-head CI; independently review and merge only after all required checks pass.",
+  "next_action": "Implement production external workload adapter execution boundary and independent oracle fixtures; do not claim qualified evaluator support without immutable image/SBOM evidence.",
   "observed_branch": "feature/external-code-workloads",
   "observed_dirty": 0,
   "observed_head": "bfdc7748fe29a2838451f437d6e0bacc9ec79f4b",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 104,
+  "task_revision": 105,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:41:31+00:00",
+  "updated_at": "2026-09-08T12:46:18+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -292,3 +292,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T12:41:31+00:00: Recorded command exit 0; command argv SHA-256
   e676b6db31b361ddcdd5487c14fb582ff8b2ba78b700e3d7a5626d37fc847166.
+
+- 2026-09-08T12:46:18+00:00: AR-0402 PR #79 merged as signed+DCO
+  1b4dd64993a08ab9af573316474a9c91b78e3231. Exact-main post-merge all green: Rust 34227508517,
+  quality 34227508562, formal 34227508524, fault 34227508525, emulated aarch64 34227508507.
+  Provenance/materialization/planning boundary is integrated and verified; AR remains in progress
+  because production adapter execution and qualified evaluator/oracle evidence are not complete.
