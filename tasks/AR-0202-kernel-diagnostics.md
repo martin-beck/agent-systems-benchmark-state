@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate perf and optional eBPF diagnostics without making privileged tools mandatory.",
-  "task_revision": 195,
+  "task_revision": 196,
   "title": "Add optional kernel diagnostics",
-  "updated_at": "2026-09-08T23:28:03+00:00",
+  "updated_at": "2026-09-08T23:28:59+00:00",
   "worktree_key": "agent-systems-benchmark-kernel-diagnostics"
 }
 ---
@@ -572,3 +572,6 @@ Implementation has not started. Read the linked plan before claiming.
   2219839812d9255288b8b4e0afc52396915e85a6, exact parents 3514089 and d11f818, matching
   Signed-off-by trailer. Push-triggered post-merge checks now run at exact main 2219839. AR remains
   in progress pending genuine native aarch64 evidence.
+
+- 2026-09-08T23:28:59+00:00: Recorded command exit 0; command argv SHA-256
+  4030d95ca1391b6455914d8a0d5803bc9da67a52cade7cd3e2d2a6eca35a130d.
