@@ -12,16 +12,16 @@
   "next_action": "Design the immutable observation and score-revision contract using Inspect and Harbor concepts.",
   "observed_branch": "feature/verifier-integrity",
   "observed_dirty": 0,
-  "observed_head": "f42645dd05f17eca5635ca2e82057b703a03a1c3",
+  "observed_head": "3a07b57b8265d98eeebbcd4fd21339d72fac0663",
   "owner": "replay_20260906",
   "plan": "../plans/AR-1002.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate immutable graders from agent work and version scoring independently of execution.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Protect verifiers and support offline rescoring",
-  "updated_at": "2026-09-08T03:46:18+00:00",
+  "updated_at": "2026-09-08T03:47:04+00:00",
   "worktree_key": "agent-systems-benchmark-verifier-integrity"
 }
 ---
