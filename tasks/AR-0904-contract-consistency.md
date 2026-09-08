@@ -8,7 +8,7 @@
     "AR-1001"
   ],
   "id": "AR-0904",
-  "next_action": "Independent immutable review of rebased candidate 6349b753e2d403212c63fa8a97bd04a0f2c61a61; do not publish until approved.",
+  "next_action": "Obtain fresh exact-main CI for signed+DCO main 92569367347b49c497780fa40195971ff655b0f4 using a resolvable base, then rerun final clean synchronized state validation and release only if all workflows pass.",
   "observed_branch": "feature/contract-consistency",
   "observed_dirty": 0,
   "observed_head": "39d09374680fada3d02e286efcf726d114b24ee3",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Machine-check protocol and artifact consistency",
-  "updated_at": "2026-09-08T10:06:13+00:00",
+  "updated_at": "2026-09-08T10:07:18+00:00",
   "worktree_key": "agent-systems-benchmark-contract-consistency"
 }
 ---
@@ -236,3 +236,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T10:06:13+00:00: Recorded command exit 1; command argv SHA-256
   d80343549785a1efbe3d0f007884940fc1c245fe3c1cb3e84f740a607b0ded6f.
+
+- 2026-09-08T10:07:18+00:00: Postmerge local validation on exact signed merge
+  39d09374680fada3d02e286efcf726d114b24ee3 passed fmt, Clippy, full workspace tests, rustdoc,
+  release build, four checker negatives, and 36 registered contract tests, then repository policy
+  correctly failed because the merge lacked a matching Signed-off-by trailer. Hosted quality run
+  34213486200 failed on the same DCO defect. Remote main was then replaced by signed+DCO commit
+  92569367347b49c497780fa40195971ff655b0f4 with identical tree and parents. Fresh quality run
+  34213577174 failed because its push base 39d0937 is now unreachable after replacement, so range
+  39d0937..9256936 cannot be resolved; this is CI provenance state, not an AR-0904 product
+  regression. Other exact-925 workflows remain in progress. AR-0904 remains claimed and cannot
+  release without a fresh all-green exact-main workflow set.
