@@ -10,7 +10,7 @@
     "AR-0804"
   ],
   "id": "AR-0805",
-  "next_action": "Hold PR #86. Investigate exact-head Formal assurance run 34263658065 TLC/Alloy job failure caused by curl exit 63 Maximum file size exceeded while downloading pinned formal tooling; all other checks still settling. Do not merge until a fresh exact-head formal check and complete matrix are green.",
+  "next_action": "Coordinator independent review/merge authorization for PR #86 exact head da0d21b9c403c960e1eaac979ad22cb34932febe. All exact-head checks are terminal success; do not merge until the signed pin-repair successor is accepted.",
   "observed_branch": "feature/tui-run-control",
   "observed_dirty": 0,
   "observed_head": "da0d21b9c403c960e1eaac979ad22cb34932febe",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 99,
+  "task_revision": 100,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T18:38:14+00:00",
+  "updated_at": "2026-09-08T18:43:43+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -386,3 +386,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T18:38:14+00:00: Recorded command exit 0; command argv SHA-256
   3d6063a0240ce2940c7f6ff25d45ac916887e7d0c286c5cf8ad29a2d6a12f996.
+
+- 2026-09-08T18:43:43+00:00: Formal pin repair complete. Root cause: the official TLA+ v1.8.0 GitHub
+  release was published 2026-09-08T17:58:50Z with tla2tools.jar asset id 551007111, size 4487756,
+  GitHub digest sha256:4c7bb1f6b050d56c197ee9ddd6e57fe521eae175f5043c9fb98b169f7b2d5407; the prior
+  pre-release pin expected 4487737 bytes and curl correctly failed closed with exit 63. Signed+DCO
+  successor da0d21b9c403c960e1eaac979ad22cb34932febe updates only the TLA size/digest in
+  formal/run_temporal_models.sh. Fresh disposable local TLC/Alloy positive+mutation suite passed. PR
+  #86 exact base b2707c482876dcfb42c756c39165f6ecdb5c7c10/head
+  da0d21b9c403c960e1eaac979ad22cb34932febe is CLEAN; exact-head runs 34264222837, 34264222901,
+  34264222958, 34264222994, 34264222925, and 34264222885 and all 13 rolled-up checks are terminal
+  SUCCESS. Candidate remains unmerged pending independent acceptance of the two-line supply-pin
+  repair.
