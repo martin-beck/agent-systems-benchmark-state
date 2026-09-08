@@ -26,9 +26,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply one default OpenAI provider profile consistently to all supported agents.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Support a shared OpenAI provider",
-  "updated_at": "2026-09-08T10:16:21+00:00",
+  "updated_at": "2026-09-08T10:18:21+00:00",
   "worktree_key": "agent-systems-benchmark-provider-openai"
 }
 ---
@@ -95,3 +95,6 @@ Implementation has not started. Read the linked plan before claiming.
   mismatch and was fixed with a closure; exit-2 apply_patch invocations were wrapper-argument misuse
   and caused no product mutation. Evidence validates bounded synthetic effective-request translation
   and negatives; it does not claim a live credentialed account journey.
+
+- 2026-09-08T10:18:21+00:00: Recorded command exit 0; command argv SHA-256
+  d71815e2039aeaf0e0ddaca9ce75e813a3b48b5a3da7fb5cfdee3c85ed20f507.
