@@ -15,11 +15,11 @@
   "plan": "../plans/AR-0855.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Enforce Huawei MIT source headers",
-  "updated_at": "2026-09-08T15:40:43+00:00",
+  "updated_at": "2026-09-08T15:41:50+00:00",
   "worktree_key": "agent-systems-benchmark-huawei-mit-headers"
 }
 ---
@@ -206,3 +206,5 @@ and fresh coordinator snapshot before claiming. Do not modify vendored coordinat
   headers/checker and repository_policy.py duplicates EXTENSIONLESS_SOURCES. GitHub review is
   COMMENTED because the authenticated author account cannot formally request changes on its own PR.
   Repair and re-review before merge; preserve state-vendor release blocker.
+
+- 2026-09-08T15:41:50+00:00: Independent review found omitted T reminders
