@@ -25,9 +25,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make supported agent installations reproducible, license-audited, SBOM-backed, and independently verifiable.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Publish reproducible agent runtime bundles",
-  "updated_at": "2026-09-08T11:39:55+00:00",
+  "updated_at": "2026-09-08T11:40:18+00:00",
   "worktree_key": "agent-systems-benchmark-agent-runtime-bundles"
 }
 ---
@@ -119,3 +119,6 @@ Implementation has not started. Read the linked plan before claiming.
   mergeable status. Exact-head runs: Rust 34221835110, aarch64 34221835129, fault 34221835166,
   quality 34221835167, AWQ shadow 34221835172, formal 34221835631. AWQ shadow is green; all other
   workflows are in progress or queued at observation. No merge performed.
+
+- 2026-09-08T11:40:18+00:00: Recorded command exit 0; command argv SHA-256
+  d71815e2039aeaf0e0ddaca9ce75e813a3b48b5a3da7fb5cfdee3c85ed20f507.
