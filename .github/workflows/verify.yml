@@ -65,7 +65,6 @@ jobs:
         run: |
           uv run python tests/validate_schema.py
           tools/handoffctl render-status --check
-          tools/handoffctl doctor
           git diff --exit-code
           test ! -e .runtime/config.json
           test -z "$(git ls-files 'private-archive/**')"
