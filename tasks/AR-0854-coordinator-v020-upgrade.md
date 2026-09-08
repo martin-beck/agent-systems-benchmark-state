@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt coordinator v0.2.0 concurrency, recovery, durable-run, replica, and vendor hardening.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Upgrade shared workflow coordinator to v0.2.0",
-  "updated_at": "2026-09-08T10:30:38+00:00",
+  "updated_at": "2026-09-08T10:31:07+00:00",
   "worktree_key": "agent-systems-benchmark-coordinator-v020"
 }
 ---
@@ -25,3 +25,6 @@ verification and documentation.
 - 2026-09-08T10:30:36+00:00: Signed v0.2.0 release and both upstream green CI runs verified.
 
 - 2026-09-08T10:30:38+00:00: Claimed by codex-coordinator-v020-20260908.
+
+- 2026-09-08T10:31:07+00:00: Recorded command exit 0; command argv SHA-256
+  620eb891b904b4e7a6c94cc5211d797e375d4128444efb562a6fc9d8043a3975.
