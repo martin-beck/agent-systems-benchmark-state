@@ -21,3 +21,9 @@ trailer. The published merge has the correct parents and content, but its GitHub
 signature is not locally attributable to Martin Beck and its message has no Signed-off-by trailer.
 This record preserves that limitation rather than rewriting public history or claiming retroactive
 compliance.
+
+Fresh pull-request checkouts are not required to contain the GitHub-created merge object because
+it is outside the pull-request head's ancestry. Automated checks therefore validate this exact,
+closed representation and the installed manifest. The signed attestation binds the recorded
+identities, but it is not an independent cryptographic proof of an unavailable historical object;
+reviewers must compare the merge facts with the durable GitHub PR and main-ref evidence.
