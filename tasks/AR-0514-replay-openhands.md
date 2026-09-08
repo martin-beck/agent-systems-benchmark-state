@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-openhands",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T09:00:09+00:00",
+  "claim_expires": "2026-09-08T09:20:17+00:00",
   "depends_on": [
     "AR-0309",
     "AR-0503",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenHands.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Qualify OpenHands replay",
-  "updated_at": "2026-09-08T07:44:47+00:00",
+  "updated_at": "2026-09-08T08:50:17+00:00",
   "worktree_key": "agent-systems-benchmark-replay-openhands"
 }
 ---
@@ -95,3 +95,5 @@ Qualify OpenHands record/replay, network denial, parity, retries, tool calls, ca
   earlier cb50d5ad; direct target bca74255). All dependency checks pass and proprietary
   openhands_aci is absent, but none equals production multi-file digest 63727569. No digest override
   or native run performed; all roots retained for comparison.
+
+- 2026-09-08T08:50:17+00:00: Heartbeat by contracts_20260906.
