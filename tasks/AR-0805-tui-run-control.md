@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 108,
+  "task_revision": 109,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T19:37:45+00:00",
+  "updated_at": "2026-09-08T19:39:28+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -441,3 +441,6 @@ Implementation has not started. Read the linked plan before claiming.
   diff/clean-tree, and disposable TLC/Alloy positive+mutation suite. One wrapper post-command
   LOCK_TIMEOUT occurred only after the first full Rust batch completed successfully; later wrapped
   batches reconciled normally. No publication mutation yet.
+
+- 2026-09-08T19:39:28+00:00: Recorded command exit 0; command argv SHA-256
+  6438e68de5daaec7f70645f4035bbf442fccf03e5e010f57cf7b514443f2cdba.
