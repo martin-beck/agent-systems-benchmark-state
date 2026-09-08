@@ -2,31 +2,30 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `d8e9d0af21a0f5f29d2b1076f33ce8153e1d26fc`
-- Local origin/main: `d8e9d0af21a0f5f29d2b1076f33ce8153e1d26fc`
-- Primary worktree head: `d8e9d0af21a0f5f29d2b1076f33ce8153e1d26fc`
+- Product remote main: `1b4dd64993a08ab9af573316474a9c91b78e3231`
+- Local origin/main: `1b4dd64993a08ab9af573316474a9c91b78e3231`
+- Primary worktree head: `1b4dd64993a08ab9af573316474a9c91b78e3231`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #31 | `feature/native-platforms@bdaf9c108226` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #61 | `feature/kernel-diagnostics@1d24993771a4` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | metrics: add fail-closed optional kernel probes |
-| #79 | `feature/external-code-workloads@bfdc7748fe29` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | feat(workloads): add pinned external workload provenance boundary |
+| #31 | `feature/native-platforms@bdaf9c108226` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
+| #61 | `feature/kernel-diagnostics@1d24993771a4` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | metrics: add fail-closed optional kernel probes |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34226825626 | `bfdc7748fe29` | pull_request | Fault assurance | queued:- |
-| 34226825584 | `bfdc7748fe29` | pull_request | Emulated aarch64 portability | pending:- |
-| 34226825572 | `bfdc7748fe29` | pull_request | Repository quality | queued:- |
-| 34226825560 | `bfdc7748fe29` | pull_request | Formal assurance | queued:- |
-| 34226825550 | `bfdc7748fe29` | pull_request | Agent Workflow Quality shadow | queued:- |
-| 34226825546 | `bfdc7748fe29` | pull_request | Rust verification | pending:- |
+| 34227508562 | `1b4dd64993a0` | push | Repository quality | queued:- |
+| 34227508525 | `1b4dd64993a0` | push | Fault assurance | queued:- |
+| 34227508524 | `1b4dd64993a0` | push | Formal assurance | queued:- |
+| 34227508517 | `1b4dd64993a0` | push | Rust verification | queued:- |
+| 34227508507 | `1b4dd64993a0` | push | Emulated aarch64 portability | queued:- |
+| 34226825626 | `bfdc7748fe29` | pull_request | Fault assurance | completed:success |
+| 34226825584 | `bfdc7748fe29` | pull_request | Emulated aarch64 portability | completed:success |
+| 34226825572 | `bfdc7748fe29` | pull_request | Repository quality | completed:success |
+| 34226825560 | `bfdc7748fe29` | pull_request | Formal assurance | completed:success |
+| 34226825550 | `bfdc7748fe29` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 34226825546 | `bfdc7748fe29` | pull_request | Rust verification | completed:success |
 | 34226487261 | `2590dc3eb770` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 34226487239 | `2590dc3eb770` | pull_request | Formal assurance | completed:success |
-| 34226487238 | `2590dc3eb770` | pull_request | Fault assurance | completed:success |
-| 34226487206 | `2590dc3eb770` | pull_request | Repository quality | completed:failure |
-| 34226487185 | `2590dc3eb770` | pull_request | Rust verification | in_progress:- |
-| 34226487179 | `2590dc3eb770` | pull_request | Emulated aarch64 portability | in_progress:- |
