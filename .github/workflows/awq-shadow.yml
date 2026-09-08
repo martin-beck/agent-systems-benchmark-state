@@ -7,8 +7,13 @@ name: Agent Workflow Quality shadow
 permissions:
   contents: read
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 jobs:
   awq-shadow:
+    name: AWQ v0.1.0 shadow evidence
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
