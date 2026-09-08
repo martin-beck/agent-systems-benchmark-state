@@ -16,7 +16,7 @@
     "AR-0310"
   ],
   "id": "AR-0311",
-  "next_action": "Extend the three-path OpenAI profile patch with bounded synthetic effective-request observations and negative credential/settings/redaction evidence before candidate gates.",
+  "next_action": "Hold exact 05262805acc538a31c8f12ed152a71026294706e unpublished for independent immutable review; live credentialed provider/account journeys remain opt-in and were not run.",
   "observed_branch": "feature/provider-openai",
   "observed_dirty": 0,
   "observed_head": "05262805acc538a31c8f12ed152a71026294706e",
@@ -26,9 +26,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply one default OpenAI provider profile consistently to all supported agents.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Support a shared OpenAI provider",
-  "updated_at": "2026-09-08T10:13:22+00:00",
+  "updated_at": "2026-09-08T10:16:21+00:00",
   "worktree_key": "agent-systems-benchmark-provider-openai"
 }
 ---
@@ -85,3 +85,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T10:13:22+00:00: Recorded command exit 0; command argv SHA-256
   c46c0b6397f3e414393c037de8dbbe09e5cbdec8d68e6b0a3dd6a23afb073691.
+
+- 2026-09-08T10:16:21+00:00: Candidate 05262805acc538a31c8f12ed152a71026294706e tree
+  4be6a6f17df4943dde94cf82bde9473bc3959e55 parent e5cdf97dd2954e5d097b1a6c872beafd724aa12f is clean,
+  SSH-signed, exact DCO, and limited to crates/asb-agents/{OPENAI.md,src/lib.rs,src/openai.rs}.
+  Exact-tree affected fmt, 5 OpenAI tests, clippy, policy, Gitleaks, and diff-check pass; preceding
+  full workspace test/clippy/docs/release/deny/audit gates pass, with coverage 92.93% workspace and
+  93.94% lines for openai.rs. Earlier exit 101 was compiler E0631 from a method-reference signature
+  mismatch and was fixed with a closure; exit-2 apply_patch invocations were wrapper-argument misuse
+  and caused no product mutation. Evidence validates bounded synthetic effective-request translation
+  and negatives; it does not claim a live credentialed account journey.
