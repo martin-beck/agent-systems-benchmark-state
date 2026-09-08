@@ -11,16 +11,16 @@
   "next_action": "Rebase the clean signed AR-0202 branch and PR #61 onto current main 4cad746, rerun focused/full gates and exact-head CI; preserve the fail-closed boundary and explicitly retain the privileged native x86/aarch64 evidence blocker.",
   "observed_branch": "feature/kernel-diagnostics",
   "observed_dirty": 0,
-  "observed_head": "1d24993771a468867c39bba4931d839f9068afd8",
+  "observed_head": "bf82f96bdd233c447e1002030606189610131145",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0202.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate perf and optional eBPF diagnostics without making privileged tools mandatory.",
-  "task_revision": 142,
+  "task_revision": 143,
   "title": "Add optional kernel diagnostics",
-  "updated_at": "2026-09-08T22:55:47+00:00",
+  "updated_at": "2026-09-08T22:55:52+00:00",
   "worktree_key": "agent-systems-benchmark-kernel-diagnostics"
 }
 ---
