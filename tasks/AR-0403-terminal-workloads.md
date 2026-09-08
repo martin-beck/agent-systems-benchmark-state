@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Import terminal tasks through an adapter to the published harness or task format.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Integrate Terminal-Bench workloads",
-  "updated_at": "2026-09-08T14:00:32+00:00",
+  "updated_at": "2026-09-08T14:00:55+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-workloads"
 }
 ---
@@ -95,3 +95,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T14:00:23+00:00: Recorded command exit 0; command argv SHA-256
   fd5be908a7e19b92ee220abbbc548558b7ba308846b0fe348012a25533657ce2.
+
+- 2026-09-08T14:00:55+00:00: Recorded command exit 0; command argv SHA-256
+  461737c8f8df917e34527895d7b95becab88852dbf4ae5c68bf721452e72be07.
