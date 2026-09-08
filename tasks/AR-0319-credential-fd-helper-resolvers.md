@@ -2,7 +2,7 @@
 {
   "branch": "feature/credential-fd-helper-resolvers",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-08T18:01:34+00:00",
   "depends_on": [
     "AR-0318"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/credential-fd-helper-resolvers",
   "observed_dirty": 0,
   "observed_head": "5d62546b5d5637574da4209bed96c52430fb0ff1",
-  "owner": "",
+  "owner": "quality_20260906",
   "plan": "../plans/AR-0319.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add explicit file-descriptor and helper credential references without ambient-secret fallback.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Implement credential FD and helper resolvers",
-  "updated_at": "2026-09-08T14:08:30+00:00",
+  "updated_at": "2026-09-08T15:01:34+00:00",
   "worktree_key": "agent-systems-benchmark-credential-fd-helper-resolvers"
 }
 ---
@@ -43,3 +43,5 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-08T14:08:30+00:00: No worktree, heartbeat, command, or implementation appeared after
   repeated follow-ups; release the idle claim without losing any durable work. Reclaim when a worker
   can begin the declared FD/helper contract.
+
+- 2026-09-08T15:01:34+00:00: Claimed by quality_20260906.
