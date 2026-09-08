@@ -10,7 +10,7 @@
     "AR-0804"
   ],
   "id": "AR-0805",
-  "next_action": "Fresh independent immutable review of unpublished candidate d0b7ed92f253a67f7d540f50690673a2760e8257 against exact parent b2707c482876dcfb42c756c39165f6ecdb5c7c10. Verify transitive snapshot convergence, strict event association validation, negotiated page limits, and preserved earlier repairs before publication.",
+  "next_action": "Amend and SSH-resign the unpublished candidate with the post-terminal recovery repair, then run commit-range signature/DCO/policy/Gitleaks/focused checks and request fresh immutable review.",
   "observed_branch": "feature/tui-run-control",
   "observed_dirty": 1,
   "observed_head": "d0b7ed92f253a67f7d540f50690673a2760e8257",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T18:01:14+00:00",
+  "updated_at": "2026-09-08T18:03:41+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -297,3 +297,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T18:01:14+00:00: Recorded command exit 0; command argv SHA-256
   0bae271a114ea2af73b478100724a29660bbea86c35e03cf2f1c955c0a3e3579.
+
+- 2026-09-08T18:03:41+00:00: Final repair exact-tree gate batch completed all product and quality
+  commands successfully: fmt, workspace clippy, workspace tests, rustdoc, release build, contract
+  consistency with exact baseline, coverage, failure fixtures, platform validation, actionlint,
+  zizmor, cargo-deny, cargo-audit, one-file Gitleaks, and diff-check all passed. The handoff wrapper
+  alone returned LOCK_TIMEOUT while attempting its post-command coordinator reconciliation; this is
+  a state-lock condition after the complete green command batch, not a product/test failure. Dirty
+  scope remains only crates/asb-tui/src/lib.rs. Focused suite is 13/13 green with post-terminal
+  status/event recovery and same-revision rejection.
