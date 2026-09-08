@@ -8,10 +8,11 @@
     "AR-0310",
     "AR-0313",
     "AR-0503",
-    "AR-0504"
+    "AR-0504",
+    "AR-0318"
   ],
   "id": "AR-0314",
-  "next_action": "Index compatible recordings and require an explicit replay-versus-live source choice.",
+  "next_action": "Paused by coordinator pending dependency update for missing credential-reference resolver. Preserve exact dirty two-path replay-only catalog/source-choice skeleton; after confirmation, correct only the PolicyVersion test fixture and continue bounded boundedBut do not implement live credential resolution.",
   "observed_branch": "feature/provider-recording-choice",
   "observed_dirty": 2,
   "observed_head": "9feeba6524357df38e3ad118d4c3740306d3ec8e",
@@ -21,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Offer matching prior recordings or an actual provider connection without silently choosing either.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Choose matching replay or live provider execution",
-  "updated_at": "2026-09-08T13:42:34+00:00",
+  "updated_at": "2026-09-08T13:43:53+00:00",
   "worktree_key": "agent-systems-benchmark-provider-recording-choice"
 }
 ---
@@ -44,8 +45,22 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-08T13:39:07+00:00: Recorded command exit 0; command argv SHA-256
   d60eb14ae9128e35a0b23dbc6d74e92e0a232a68a2318aed870d56226eb6f4be.
 
+- 2026-09-08T00:00:00+00:00: Independent provider/TUI audit found no implementation for resolving
+  credential references, verifying their digest, or injecting them at a bounded process boundary.
+  Added dependency AR-0318; recording catalog work may proceed, but live credential preflight remains
+  fenced until AR-0318 proves the fail-closed resolver and privacy boundary.
+
 - 2026-09-08T13:39:27+00:00: Recorded command exit 0; command argv SHA-256
   a12133e023147b1cbdb6246af3266c39f570839f1079a40b8d37d93d1dfdc0a5.
 
 - 2026-09-08T13:42:28+00:00: Recorded command exit 101; command argv SHA-256
   c73a16ca22deceac2bf5e7129b39a604808a95cd3c2917f4524e0ec324f9bbf1.
+
+- 2026-09-08T13:43:53+00:00: Paused checkpoint on exact base
+  9feeba6524357df38e3ad118d4c3740306d3ec8e. Dirty paths: crates/asb-replay/src/lib.rs plus untracked
+  crates/asb-replay/src/selection.rs. Delta authenticates cassette roots, indexes explicit
+  profile-digest+agent compatibility metadata, offers deterministic recording identities, and
+  requires explicit replay or live choice with no fallback. No live connection or credential
+  resolver mutation. Focused cargo test exited 101 at compile time because the new test fixture
+  incorrectly supplied nonexistent PolicyVersion.name; product code did not run. Preserve unchanged
+  until dependency update.
