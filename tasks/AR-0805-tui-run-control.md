@@ -2,7 +2,7 @@
 {
   "branch": "feature/tui-run-control",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T19:22:57+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0104",
     "AR-0204",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/tui-run-control",
   "observed_dirty": 0,
   "observed_head": "da0d21b9c403c960e1eaac979ad22cb34932febe",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0805.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 101,
+  "task_revision": 102,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T19:07:05+00:00",
+  "updated_at": "2026-09-08T19:25:21+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -407,3 +407,14 @@ Implementation has not started. Read the linked plan before claiming.
   GitHub asset API URL, superseding candidate commit da0d21b. PR #86 still reports old base
   b2707c48, so no merge was executed. Exact safe next step is controlled rebase/resign and fresh
   review/CI; candidate and green run IDs remain preserved.
+
+- 2026-09-08T19:25:21+00:00: Expired ownership safely reconciled at 2026-09-08T19:25Z: declared
+  worktree /srv/data/projects/agent-systems-benchmark-tui-run-control is clean at
+  da0d21b9c403c960e1eaac979ad22cb34932febe (tree c45759db98468fed62522514b3f91edee0846d1e), no
+  AR-0805/feature-tui-run-control process is active, and PR #86 remains OPEN at exact head da0d21b
+  with all 13 checks successful. PR base b2707c482876dcfb42c756c39165f6ecdb5c7c10 is stale versus
+  current origin/main 32f79101da348896fdf0fd94c07356889a05b693. Preserve the controlled plan: fetch
+  current main, signed rebase/resign while retaining fe24e48 semantics and Huawei MIT header, drop
+  superseded da0d21b TLA pin repair already present on main, verify range-diff/scope/signature/DCO,
+  rerun exact-tree gates, obtain immutable review, and update PR only with exact force-with-lease
+  followed by fresh exact-head CI. Do not merge the stale head.
