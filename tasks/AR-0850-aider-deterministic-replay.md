@@ -9,15 +9,18 @@
   ],
   "id": "AR-0850",
   "next_action": "Make pinned aider multi-file capture ordering deterministic across separately spawned processes, then prove strict replay parity and rerun the native journey.",
+  "observed_branch": "fix/aider-deterministic-replay",
+  "observed_dirty": 0,
+  "observed_head": "678ba7c8593a52beb8f3279ddd452245294131e7",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0850.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair aider replay nondeterminism caused by process-dependent file ordering.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Repair deterministic aider replay",
-  "updated_at": "2026-09-08T02:14:52+00:00",
+  "updated_at": "2026-09-08T02:15:06+00:00",
   "worktree_key": "agent-systems-benchmark-aider-deterministic-replay"
 }
 ---
