@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0202",
-  "next_action": "Add the required adjacent Huawei 2026 and SPDX MIT header to kernel.rs, run focused policy/header tests and Rust gates, then inspect/classify ARM Rust result before publishing a signed repair.",
+  "next_action": "Monitor exact-head CI at fb2adac; if the ARM fixture failure reproduces, debug and repair before merge. Continue preserving native privileged evidence boundary.",
   "observed_branch": "feature/kernel-diagnostics",
   "observed_dirty": 0,
   "observed_head": "fb2adac65f10aa4b228a0bdf3643285161ceea10",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate perf and optional eBPF diagnostics without making privileged tools mandatory.",
-  "task_revision": 158,
+  "task_revision": 159,
   "title": "Add optional kernel diagnostics",
-  "updated_at": "2026-09-08T23:02:09+00:00",
+  "updated_at": "2026-09-08T23:03:40+00:00",
   "worktree_key": "agent-systems-benchmark-kernel-diagnostics"
 }
 ---
@@ -448,3 +448,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T23:02:09+00:00: Recorded command exit 0; command argv SHA-256
   4faa9850a7ee845efd5464c9863d4bea2148d68262348a5431d49aa10d511b84.
+
+- 2026-09-08T23:03:40+00:00: Focused header/policy tests pass after adding required adjacent Huawei
+  2026 headers to kernel.rs and tests/kernel_native.rs; signed repair fb2adac was pushed with
+  force-with-lease. Exact-head ARM Rust had one existing subprocess fixture assertion failure
+  (expected MalformedEvidence, observed ProbeRejected); prior ARM run of same test passed, so treat
+  as potentially flaky/emulator-sensitive and require rerun. Local Rust execution was unavailable
+  because cargo/rustup is absent from the active PATH.
