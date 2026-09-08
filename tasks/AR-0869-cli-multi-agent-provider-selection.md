@@ -10,7 +10,7 @@
     "AR-0801"
   ],
   "id": "AR-0869",
-  "next_action": "Extend the green provider-plan slice into exact manifest export/import and run/sweep consumption without per-agent overrides; keep Ollama fail-closed until verified daemon evidence is available, then add compare/report/help fixtures and full gates.",
+  "next_action": "Create one SSH-signed DCO candidate from the exact five-path tree, rerun exact-commit policy/signature/privacy/scope checks, and request independent immutable review before publication.",
   "observed_branch": "feature/cli-multi-agent-provider-selection",
   "observed_dirty": 5,
   "observed_head": "559fbcc825234bb98a64ba554a53f38b004d24f6",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Select several agents and apply one preconfigured provider profile through inspectable command-line options.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Add CLI multi-agent provider selection",
-  "updated_at": "2026-09-08T22:26:42+00:00",
+  "updated_at": "2026-09-08T22:27:21+00:00",
   "worktree_key": "agent-systems-benchmark-cli-multi-agent-provider-selection"
 }
 ---
@@ -233,3 +233,23 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T22:26:42+00:00: Recorded command exit 0; command argv SHA-256
   d43b688715d4edc15c4e3459fac20e29885653d052946aa594b660359a5fb10f.
+
+- 2026-09-08T22:27:21+00:00: Completed AR-0869 implementation on exact base
+  559fbcc825234bb98a64ba554a53f38b004d24f6. Exact dirty scope is Cargo.lock,
+  crates/asb-cli/Cargo.toml, crates/asb-cli/src/lib.rs, docs/QUICKSTART.md, and
+  docs/examples/guide-contract.json. The CLI exports a closed content-addressed provider selection,
+  reconstructs the exact OpenAI profile from its credential-free logical-reference digest, and binds
+  plan/run/sweep before effects to the selected agent plus experiment
+  provider/model/additional-settings identity. Stored execution binds the selection digest; compare
+  detects selection drift; report exposes only selection/profile identities; help, doctor inventory,
+  guide contract, and Bash completion are synchronized. Ollama remains advertised but unavailable
+  without verified daemon evidence and there is no fallback. Focused CLI 29 unit plus 3 e2e plus 3
+  guide tests pass; workspace tests, workspace Clippy, rustdoc, release build, formal tests,
+  mutation 7/7, coverage 93.42 percent workspace and all critical floors, cargo-deny, offline
+  cargo-audit, repository policy, actionlint, zizmor, diff-check, and dirty-diff Gitleaks all pass.
+  A broad directory Gitleaks attempt found one generated target-tree artifact; the source diff stdin
+  scan was clean, so this is classified as generated-build output and exact-commit Gitleaks remains
+  required. Earlier checkpoint statement that the logical-reference digest was omitted is
+  superseded: exact manifest import requires it to reconstruct and validate the profile, and the
+  asb-agents contract explicitly classifies this digest as credential-free; no credential value is
+  accepted, retained, or rendered.
