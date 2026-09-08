@@ -12,16 +12,16 @@
   "next_action": "Await coordinator disposition for main advancement to 123c58f after approval of e73767d; do not publish or perform another rebase without explicit authorization.",
   "observed_branch": "feature/agent-openhands",
   "observed_dirty": 0,
-  "observed_head": "e73767d959a0c640685deaf84335be84649df7c0",
+  "observed_head": "fec0487e4fd8a78b86ce5caba023e30fe40a0cd8",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0309.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run a maintained MIT OpenHands SDK or canonical headless client.",
-  "task_revision": 115,
+  "task_revision": 116,
   "title": "Implement maintained OpenHands SDK client adapter",
-  "updated_at": "2026-09-08T06:43:38+00:00",
+  "updated_at": "2026-09-08T06:44:12+00:00",
   "worktree_key": "agent-systems-benchmark-agent-openhands"
 }
 ---
