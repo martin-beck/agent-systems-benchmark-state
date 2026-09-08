@@ -2,7 +2,7 @@
 {
   "branch": "feature/credential-reference-boundary",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T16:55:27+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0102",
     "AR-0310"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/credential-reference-boundary",
   "observed_dirty": 0,
   "observed_head": "5d62546b5d5637574da4209bed96c52430fb0ff1",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0318.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Resolve provider credential references without exposing secrets or accepting ambient credentials.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Implement the credential-reference boundary",
-  "updated_at": "2026-09-08T14:03:37+00:00",
+  "updated_at": "2026-09-08T14:04:21+00:00",
   "worktree_key": "agent-systems-benchmark-credential-reference-boundary"
 }
 ---
@@ -107,3 +107,8 @@ Implementation has not started. Read the linked plan before claiming.
   not currently exist and must not be invented implicitly. Therefore AR-0318 remains in progress and
   cannot be released done absent a coordinator plan amendment or separately reviewed resolver
   contract.
+
+- 2026-09-08T14:04:21+00:00: Acceptance amended and independently verified: environment reference
+  resolution only, with canonical non-secret locator digest, bounded isolated child injection,
+  zeroization, privacy and negative tests. FD/helper sources fail closed and are explicitly
+  transferred to AR-0319; no unsupported live claim remains.
