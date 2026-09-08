@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-08T08:56:54+00:00",
   "depends_on": [],
   "id": "AR-0851",
-  "next_action": "After the canonical public release is verified, vendor its pinned artifact and run ASB-specific conformance, fault, race, renderer, schema, and live checks.",
+  "next_action": "Rebase the immutable v0.1.3 integration tree onto current state main under coordinator serialization, rerun exact-tree gates, and present a signed review candidate; do not publish or merge before review.",
   "owner": "codex-agent-workflow-coordinator-asb-20260908",
   "plan": "../plans/AR-0851.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt the canonical coordinator as a pinned offline-capable vendor artifact while preserving ASB extensions.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Adopt shared workflow coordinator",
-  "updated_at": "2026-09-08T06:55:03+00:00",
+  "updated_at": "2026-09-08T06:56:05+00:00",
   "worktree_key": "agent-systems-benchmark-shared-coordinator"
 }
 ---
@@ -124,3 +124,13 @@ ASB integration, compatibility evidence, and version pin.
 
 - 2026-09-08T06:55:03+00:00: Recorded command exit 0; command argv SHA-256
   6c1707dd5c736825b472fb4ebdb8b836a9fd403f8f8fa4243c526644c6e33782.
+
+- 2026-09-08T06:56:05+00:00: Provenance audit: clean remote-equal signed+DCO commit
+  8df6895cbbaea568df95553665bf55bd3754158f pins signed tag v0.1.3 and signed+DCO upstream commit
+  72465e6febe987491203564c8e7251ef8f882955. All 17 manifest artifacts match exact upstream-tag bytes
+  and SHA-256; offline vendor verification passed. The same focused commit includes downstream
+  vendor negative tests, coverage inclusion, and path-filtered workflow triggers. Exact-tree
+  evidence at 8df6895c: 6 vendor tests plus 6 subtests pass; format, Ruff, mypy, 53-test fault/race
+  suite, schema validation and formal models pass; branch coverage 97 percent overall and 100
+  percent vendor tool. One cwd-only operator invocation failed before tests and was corrected.
+  Candidate is 80 state-main commits behind and awaits serialized rebase.
