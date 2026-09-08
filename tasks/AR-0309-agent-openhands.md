@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run a maintained MIT OpenHands SDK or canonical headless client.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Implement maintained OpenHands SDK client adapter",
-  "updated_at": "2026-09-08T04:26:12+00:00",
+  "updated_at": "2026-09-08T04:27:20+00:00",
   "worktree_key": "agent-systems-benchmark-agent-openhands"
 }
 ---
@@ -174,3 +174,6 @@ Implementation has not started. Read the linked plan before claiming.
   the 136-package exact freeze fixture. Focused rustfmt, 3 unit/contract tests and Clippy -D
   warnings pass; the real SDK fixture passed separately. Shared crates/asb-agents/src/lib.rs is
   intentionally untouched pending coordinator fence.
+
+- 2026-09-08T04:27:20+00:00: Recorded command exit 1; command argv SHA-256
+  96d8523cda3fe97b86a5b045170925c8f207b9f288878c9baf92757324b14493.
