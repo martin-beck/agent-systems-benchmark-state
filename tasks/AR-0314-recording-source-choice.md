@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Offer matching prior recordings or an actual provider connection without silently choosing either.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Choose matching replay or live provider execution",
-  "updated_at": "2026-09-08T14:42:03+00:00",
+  "updated_at": "2026-09-08T14:42:18+00:00",
   "worktree_key": "agent-systems-benchmark-provider-recording-choice"
 }
 ---
@@ -155,3 +155,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T14:42:03+00:00: Recorded command exit 0; command argv SHA-256
   9fd74b467579068b070ad3aa26ba36ff5a812841a7deb24dfcbf6bb6d20f6577.
+
+- 2026-09-08T14:42:18+00:00: Recorded command exit 0; command argv SHA-256
+  a84711d4adba925bc749e7a734d54c56aa9b592ebe204fa9d99b417bc18a4df2.
