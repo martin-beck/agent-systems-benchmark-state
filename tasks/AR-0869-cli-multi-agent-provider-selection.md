@@ -2,7 +2,7 @@
 {
   "branch": "feature/cli-multi-agent-provider-selection",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-09T00:05:57+00:00",
   "depends_on": [
     "AR-0313",
     "AR-0318",
@@ -11,15 +11,15 @@
   ],
   "id": "AR-0869",
   "next_action": "Implement and qualify explicit CLI selection of several agents and one advertised provider profile.",
-  "owner": "",
+  "owner": "replay_20260906",
   "plan": "../plans/AR-0869.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Select several agents and apply one preconfigured provider profile through inspectable command-line options.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Add CLI multi-agent provider selection",
-  "updated_at": "2026-09-08T21:05:54+00:00",
+  "updated_at": "2026-09-08T21:05:57+00:00",
   "worktree_key": "agent-systems-benchmark-cli-multi-agent-provider-selection"
 }
 ---
@@ -37,3 +37,5 @@ Implementation has not started. Read the linked plan before claiming.
   TUI/frontend paths, and AR-0832 is blocked by AR-0703 in its complete plan. Declared worktree and
   branch do not exist locally or remotely. Promote AR-0869 as the highest-priority compatible ready
   leaf.
+
+- 2026-09-08T21:05:57+00:00: Claimed by replay_20260906.
