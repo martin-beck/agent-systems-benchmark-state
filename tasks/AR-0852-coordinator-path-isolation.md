@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt the path-exclusive coordinator commit fix discovered during live integration.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Adopt coordinator path isolation fix",
-  "updated_at": "2026-09-08T07:21:38+00:00",
+  "updated_at": "2026-09-08T07:22:22+00:00",
   "worktree_key": "agent-systems-benchmark-shared-coordinator"
 }
 ---
@@ -25,3 +25,6 @@ v0.1.3 to v0.1.4 after AR-0851 was completed.
 - 2026-09-08T07:21:36+00:00: The exact v0.1.4 PR head passed implementation and formal CI.
 
 - 2026-09-08T07:21:38+00:00: Claimed by codex-agent-workflow-coordinator-asb-v014-20260908.
+
+- 2026-09-08T07:22:22+00:00: Recorded command exit 0; command argv SHA-256
+  ad5cd7d7a908eac0a5fce51389fcd4f9e88ba985812ac8ec1ae7b75ba36c1dd9.
