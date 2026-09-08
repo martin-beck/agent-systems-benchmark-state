@@ -10,7 +10,7 @@
   "id": "AR-0843",
   "next_action": "Retry the no-mutation adversarial test insertion once using the verified single-argument apply_patch wrapper form, then run only that test to capture the expected pre-repair failure.",
   "observed_branch": "feature/frontend-privacy-assurance",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "ba97a20f60f39b4c5ef601a7dade148276a631d6",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0843.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify frontend privacy, artifact access, and fault behavior.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Assure frontend privacy and faults",
-  "updated_at": "2026-09-08T08:34:36+00:00",
+  "updated_at": "2026-09-08T08:36:14+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-privacy-assurance"
 }
 ---
