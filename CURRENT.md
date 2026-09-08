@@ -15,6 +15,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary. | - |
+| P2 | [AR-0403](tasks/AR-0403-terminal-workloads.md): Integrate Terminal-Bench workloads | Import terminal tasks through an adapter to the published harness or task format. | Assess Harbor/Terminal-Bench integration contract before implementing. | - |
 
 ## Blocked
 
@@ -60,7 +61,6 @@ Never edit this file directly.
 | P1 | [AR-0832](tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. | - |
 | P1 | [AR-0833](tasks/AR-0833-aiws-runner-reboot-lifecycle.md): Qualify tokenless runner reboot lifecycle | Qualify safe reboot and restart lifecycle for disposable development-host ASB runners. | Design and qualify a tokenless supervisor/orchestration path that can provision fresh ephemeral registrations after boot without storing reusable GitHub credentials. | - |
 | P1 | [AR-0846](tasks/AR-0846-artifact-retention-cleanup.md): Add linked artifact retention and cleanup | Manage ASB GitHub artifact retention and cleanup without deleting required evidence. | Implement dry-run inventory and explicitly authorized bounded cleanup for linked GitHub artifacts. | - |
-| P2 | [AR-0403](tasks/AR-0403-terminal-workloads.md): Integrate Terminal-Bench workloads | Import terminal tasks through an adapter to the published harness or task format. | Assess Harbor/Terminal-Bench integration contract before implementing. | - |
 | P2 | [AR-0405](tasks/AR-0405-performance-workloads.md): Add performance and reproducibility workloads | Assess SWE-Perf, SWE-fficiency and CORE-Bench for correctness-preserving optimization and reproducibility. | Run compatibility spikes and accept only workload subsets with stable independent oracles. | - |
 | P2 | [AR-0602](tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit the pinned CSB MonitorFactory and benchmark outputs against ASB metric contracts and controlled contention oracles. | - |
 | P2 | [AR-0903](tasks/AR-0903-release-qualification.md): Package and qualify the first release | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. | - |

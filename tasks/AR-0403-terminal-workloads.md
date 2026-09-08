@@ -12,11 +12,11 @@
   "plan": "../plans/AR-0403.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Import terminal tasks through an adapter to the published harness or task format.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Integrate Terminal-Bench workloads",
-  "updated_at": "2026-09-06T15:04:54+00:00",
+  "updated_at": "2026-09-08T13:37:54+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-workloads"
 }
 ---
@@ -25,3 +25,6 @@
 Import terminal tasks through an adapter to the published harness or task format.
 
 Implementation has not started. Read the linked plan before claiming.
+
+- 2026-09-08T13:37:54+00:00: Dependency AR-0401 is durably done; paths are disjoint from active
+  AR-0314 and AR-0855. Promote for contract assessment.

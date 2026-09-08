@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
-| **Planned** | Defined work awaiting promotion or dependencies | 38 |
+| **Planned** | Defined work awaiting promotion or dependencies | 37 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 84 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -73,7 +73,7 @@ flowchart LR
         direction TB
         AR_0401["AR-0401 - Done"]:::status_done
         AR_0402["AR-0402 - Done"]:::status_done
-        AR_0403["AR-0403 - Planned"]:::status_planned
+        AR_0403["AR-0403 - Open"]:::status_open
         AR_0404["AR-0404 - Planned"]:::status_planned
         AR_0405["AR-0405 - Planned"]:::status_planned
         AR_0406["AR-0406 - Planned"]:::status_planned
@@ -747,11 +747,12 @@ flowchart LR
 | P1 | [AR-0314](tasks/AR-0314-recording-source-choice.md): Choose matching replay or live provider execution | quality_20260906 | Offer matching prior recordings or an actual provider connection without silently choosing either. | Index compatible recordings and require an explicit replay-versus-live source choice. |
 | P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | asb-license-20260908 | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Claim, create the declared worktree, enforce exact first-party Huawei MIT source headers, test, and publish unmerged PRs. |
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary. |
+| P2 | [AR-0403](tasks/AR-0403-terminal-workloads.md): Integrate Terminal-Bench workloads | Unclaimed | Import terminal tasks through an adapter to the published harness or task format. | Assess Harbor/Terminal-Bench integration contract before implementing. |
 
 ### Blocked (4)
 
@@ -762,7 +763,7 @@ flowchart LR
 | P1 | [AR-0702](tasks/AR-0702-native-platforms.md): Validate native Linux kernels and architectures | Unclaimed | Exercise native x86_64 and aarch64 including booted openEuler kernels. | Keep reviewed PR #31 head bdaf9c108226f34ec6098f75b51fd601da9e9571 immutable and green; await AR-0703 genuine Debian/openEuler x86_64/aarch64 lab capacity before completing remaining native qualification and AR-0702. |
 | P1 | [AR-0703](tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Provide genuine disposable native hosts for required Debian and openEuler platform qualification. | Obtain explicit provider/account and cost authorization, least-privilege external credentials, quotas, and four genuine disposable Debian 13.6/openEuler 24.03 LTS-SP2 x86_64/aarch64 hosts; then implement reservation/provision/collect/destroy evidence without emulation. |
 
-### Planned (38)
+### Planned (37)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -797,7 +798,6 @@ flowchart LR
 | P1 | [AR-0832](tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Unclaimed | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. |
 | P1 | [AR-0833](tasks/AR-0833-aiws-runner-reboot-lifecycle.md): Qualify tokenless runner reboot lifecycle | Unclaimed | Qualify safe reboot and restart lifecycle for disposable development-host ASB runners. | Design and qualify a tokenless supervisor/orchestration path that can provision fresh ephemeral registrations after boot without storing reusable GitHub credentials. |
 | P1 | [AR-0846](tasks/AR-0846-artifact-retention-cleanup.md): Add linked artifact retention and cleanup | Unclaimed | Manage ASB GitHub artifact retention and cleanup without deleting required evidence. | Implement dry-run inventory and explicitly authorized bounded cleanup for linked GitHub artifacts. |
-| P2 | [AR-0403](tasks/AR-0403-terminal-workloads.md): Integrate Terminal-Bench workloads | Unclaimed | Import terminal tasks through an adapter to the published harness or task format. | Assess Harbor/Terminal-Bench integration contract before implementing. |
 | P2 | [AR-0405](tasks/AR-0405-performance-workloads.md): Add performance and reproducibility workloads | Unclaimed | Assess SWE-Perf, SWE-fficiency and CORE-Bench for correctness-preserving optimization and reproducibility. | Run compatibility spikes and accept only workload subsets with stable independent oracles. |
 | P2 | [AR-0602](tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Unclaimed | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit the pinned CSB MonitorFactory and benchmark outputs against ASB metric contracts and controlled contention oracles. |
 | P2 | [AR-0903](tasks/AR-0903-release-qualification.md): Package and qualify the first release | Unclaimed | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. |
