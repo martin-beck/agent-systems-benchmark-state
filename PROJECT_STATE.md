@@ -18,7 +18,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34203202949 | `e86fe799a33c` | schedule | Fault assurance | queued:- |
+| 34203202949 | `e86fe799a33c` | schedule | Fault assurance | in_progress:- |
 | 34202741379 | `b3b3b8907f6d` | pull_request | Emulated aarch64 portability | completed:success |
 | 34202741334 | `b3b3b8907f6d` | pull_request | Repository quality | completed:success |
 | 34202741286 | `b3b3b8907f6d` | pull_request | Rust verification | completed:success |
