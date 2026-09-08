@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 103,
+  "task_revision": 104,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:34:38+00:00",
+  "updated_at": "2026-09-08T12:41:31+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -289,3 +289,6 @@ Implementation has not started. Read the linked plan before claiming.
   when its SPDX header was added; corrected manifest/test digest and added SPDX headers to all new
   Python files in signed commit bfdc7748fe29a2838451f437d6e0bacc9ec79f4b. Local workload suite now
   passes 9/9; PR exact-head CI restarted.
+
+- 2026-09-08T12:41:31+00:00: Recorded command exit 0; command argv SHA-256
+  e676b6db31b361ddcdd5487c14fb582ff8b2ba78b700e3d7a5626d37fc847166.
