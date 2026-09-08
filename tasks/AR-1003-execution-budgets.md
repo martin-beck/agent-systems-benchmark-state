@@ -13,17 +13,17 @@
   "id": "AR-1003",
   "next_action": "Run bounded mutation, coverage, privacy, dependency-integrity and supply gates; prepare candidate with explicit local Kani installation limitation.",
   "observed_branch": "feature/execution-budgets",
-  "observed_dirty": 12,
-  "observed_head": "d56052d64b1e13b42a36e557b6a772381576a5bd",
+  "observed_dirty": 0,
+  "observed_head": "0149f991ba7e7ef5c71bf4f2118bb1aecd48e3c1",
   "owner": "replay_20260906",
   "plan": "../plans/AR-1003.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bound and report wall time, actions, tokens and monetary cost without treating unavailable telemetry as zero.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Enforce cost token and action budgets",
-  "updated_at": "2026-09-08T10:25:13+00:00",
+  "updated_at": "2026-09-08T10:25:43+00:00",
   "worktree_key": "agent-systems-benchmark-execution-budgets"
 }
 ---
