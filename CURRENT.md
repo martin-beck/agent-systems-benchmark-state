@@ -7,10 +7,15 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0505](tasks/AR-0505-agent-replay-conformance.md): Prove real-agent replay conformance | Test each actual client through recording and offline replay of engineering tasks. | Build production-boundary integration matrix using synthetic upstream service. | contracts_20260906 |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. | root-coordination-20260906 |
 | P1 | [AR-0848](tasks/AR-0848-native-x86-capacity.md): Qualify native x86 capacity | Qualify authorized disposable native x86_64 capacity on a development host. | Await independent immutable review of exact signed head 5d2cd78a924b2e2cb76e0bf48e01dca3e9249e74; publish only after approval, then exact-head CI and serialized integration. Native aarch64 and performance support remain explicitly unsupported. | quality_20260906 |
 | P1 | [AR-1002](tasks/AR-1002-verifier-integrity.md): Protect verifiers and support offline rescoring | Separate immutable graders from agent work and version scoring independently of execution. | Design the immutable observation and score-revision contract using Inspect and Harbor concepts. | replay_20260906 |
+
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0505](tasks/AR-0505-agent-replay-conformance.md): Prove real-agent replay conformance | Test each actual client through recording and offline replay of engineering tasks. | Build production-boundary integration matrix using synthetic upstream service. | - |
 
 ## Blocked
 

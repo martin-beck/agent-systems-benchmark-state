@@ -2,7 +2,7 @@
 {
   "branch": "feature/agent-replay-conformance",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T00:48:36+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0503",
     "AR-0504",
@@ -17,15 +17,15 @@
   "observed_branch": "feature/agent-replay-conformance",
   "observed_dirty": 0,
   "observed_head": "111be970534fbf72332a80c2291fe1fe21acb694",
-  "owner": "contracts_20260906",
+  "owner": "",
   "plan": "../plans/AR-0505.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Test each actual client through recording and offline replay of engineering tasks.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Prove real-agent replay conformance",
-  "updated_at": "2026-09-07T21:49:18+00:00",
+  "updated_at": "2026-09-08T01:05:36+00:00",
   "worktree_key": "agent-systems-benchmark-agent-replay-conformance"
 }
 ---
@@ -43,3 +43,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-07T21:49:18+00:00: Recorded command exit 0; command argv SHA-256
   c53cfae1997a722b5fbc90abbf06ecb0bc39cac0721cdde5d8df5f5b016df18c.
+
+- 2026-09-08T01:05:36+00:00: Expired claim reconciled without pretending completion: declared
+  worktree feature/agent-replay-conformance is clean at unchanged base
+  111be970534fbf72332a80c2291fe1fe21acb694, checkpoint_commit is empty, no AR-0505 process is
+  active, and no implementation/product effect exists. Release to open so unrelated validation can
+  proceed. Next claimant must reread the complete task/plan and build the production-boundary
+  synthetic-upstream matrix in the distinct preserved worktree before claiming acceptance evidence.

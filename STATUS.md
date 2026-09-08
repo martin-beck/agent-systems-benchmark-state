@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**121 ARs tracked** across 4 active status categories.
+**121 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 4 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **In progress** | Claimed work with a live lease | 3 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 55 |
 | **Future** | Deferred roadmap work | 0 |
@@ -84,7 +84,7 @@ flowchart LR
         AR_0502["AR-0502 - Done"]:::status_done
         AR_0503["AR-0503 - Done"]:::status_done
         AR_0504["AR-0504 - Done"]:::status_done
-        AR_0505["AR-0505 - In progress"]:::status_in_progress
+        AR_0505["AR-0505 - Open"]:::status_open
         AR_0506["AR-0506 - Done"]:::status_done
         AR_0507["AR-0507 - Done"]:::status_done
         AR_0508["AR-0508 - Done"]:::status_done
@@ -719,14 +719,19 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0505](tasks/AR-0505-agent-replay-conformance.md): Prove real-agent replay conformance | contracts_20260906 | Test each actual client through recording and offline replay of engineering tasks. | Build production-boundary integration matrix using synthetic upstream service. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
 | P1 | [AR-0848](tasks/AR-0848-native-x86-capacity.md): Qualify native x86 capacity | quality_20260906 | Qualify authorized disposable native x86_64 capacity on a development host. | Await independent immutable review of exact signed head 5d2cd78a924b2e2cb76e0bf48e01dca3e9249e74; publish only after approval, then exact-head CI and serialized integration. Native aarch64 and performance support remain explicitly unsupported. |
 | P1 | [AR-1002](tasks/AR-1002-verifier-integrity.md): Protect verifiers and support offline rescoring | replay_20260906 | Separate immutable graders from agent work and version scoring independently of execution. | Design the immutable observation and score-revision contract using Inspect and Harbor concepts. |
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0505](tasks/AR-0505-agent-replay-conformance.md): Prove real-agent replay conformance | Unclaimed | Test each actual client through recording and offline replay of engineering tasks. | Build production-boundary integration matrix using synthetic upstream service. |
 
 ### Blocked (4)
 
