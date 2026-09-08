@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track dataset provenance, contamination risk, grader validity and native portability per workload revision.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Maintain benchmark validity and portability registry",
-  "updated_at": "2026-09-08T00:12:50+00:00",
+  "updated_at": "2026-09-08T00:14:11+00:00",
   "worktree_key": "agent-systems-benchmark-benchmark-validity"
 }
 ---
@@ -182,3 +182,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T00:12:50+00:00: Recorded command exit 0; command argv SHA-256
   321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
+
+- 2026-09-08T00:14:11+00:00: Provenance correction: an initial direct Kani setup probe created only
+  a disposable tool cache on the configured development volume and failed before proof execution
+  because its toolchain was unavailable on PATH. It changed no product, coordination, repository, or
+  external state; subsequent cache repair and all Kani proof mutations ran through the AR wrapper.
+  The corrected Kani run proved all six harnesses and the deliberate false assertion failed closed.
