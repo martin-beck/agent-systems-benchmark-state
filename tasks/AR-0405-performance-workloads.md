@@ -10,7 +10,7 @@
     "AR-1007"
   ],
   "id": "AR-0405",
-  "next_action": "Run compatibility spikes and accept only workload subsets with stable independent oracles.",
+  "next_action": "Audit the six-path fail-closed provenance checkpoint, run the complete applicable quality/privacy gates, and determine whether any suite can advance beyond planned without missing license and native paired-oracle evidence.",
   "observed_branch": "feature/performance-workloads",
   "observed_dirty": 0,
   "observed_head": "5294c471425d75ef10759d766a296c0c3d841eab",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Assess SWE-Perf, SWE-fficiency and CORE-Bench for correctness-preserving optimization and reproducibility.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Add performance and reproducibility workloads",
-  "updated_at": "2026-09-08T21:48:40+00:00",
+  "updated_at": "2026-09-08T21:49:14+00:00",
   "worktree_key": "agent-systems-benchmark-performance-workloads"
 }
 ---
@@ -67,3 +67,17 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T21:48:33+00:00: Recorded command exit 0; command argv SHA-256
   aedca27882b56568314a8f22652fde8eb8637ec4f5a3cb387cc9299bfe23c70c.
+
+- 2026-09-08T21:49:14+00:00: Substantive signed+DCO checkpoint
+  5294c471425d75ef10759d766a296c0c3d841eab (tree fbeb6e45bcb2576203947c55e959d42c3ad10bd9, parent
+  exact main 559fbcc825234bb98a64ba554a53f38b004d24f6) adds provenance-only SWE-Perf, SWE-fficiency,
+  and CORE-Bench records plus exact validation and planner negatives in six owned workload paths.
+  Source archives are pinned by commit/SHA-256; dataset revisions are pinned separately.
+  Compatibility remains fail-closed: SWE-Perf source has no license file, SWE-fficiency dataset
+  declares no license, and the recommended archived HAL evaluator for CORE-Bench has no license; no
+  suite has evaluator image/SBOM, paired native trials, uncertainty, controlled hardware, or
+  oracle-parity evidence. The planner rejects all three as unqualified. Focused JSON validation,
+  registry digest, Ruff check/format, pytest 12/12, three planner negatives, and diff-check pass.
+  Initial 5-test failure was test-order coupling to Terminal-Bench as the final array item;
+  corrected to stable ID lookup and rerun green. No dataset was downloaded or executed and no
+  support/native claim is made.
