@@ -10,15 +10,18 @@
   ],
   "id": "AR-0309",
   "next_action": "Resolve the maintained SDK/client boundary and exclude retired or enterprise-licensed components.",
+  "observed_branch": "feature/agent-openhands",
+  "observed_dirty": 0,
+  "observed_head": "3a07b57b8265d98eeebbcd4fd21339d72fac0663",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0309.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run a maintained MIT OpenHands SDK or canonical headless client.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Implement maintained OpenHands SDK client adapter",
-  "updated_at": "2026-09-08T03:49:55+00:00",
+  "updated_at": "2026-09-08T03:50:38+00:00",
   "worktree_key": "agent-systems-benchmark-agent-openhands"
 }
 ---
