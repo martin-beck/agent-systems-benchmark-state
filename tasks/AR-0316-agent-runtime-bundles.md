@@ -15,7 +15,7 @@
     "AR-0309"
   ],
   "id": "AR-0316",
-  "next_action": "Monitor PR #77 exact head 1249fd87d46d54556bca835fcc3e6570df15cc2c; investigate any exact-head failure and do not merge without coordinator authorization.",
+  "next_action": "No further action for the released fail-closed catalog; complete runtime closures remain future work and must not be inferred.",
   "observed_branch": "feature/agent-runtime-bundles",
   "observed_dirty": 0,
   "observed_head": "1249fd87d46d54556bca835fcc3e6570df15cc2c",
@@ -25,9 +25,9 @@
   "schema_version": 1,
   "status": "done",
   "summary": "Make supported agent installations reproducible, license-audited, SBOM-backed, and independently verifiable.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Publish reproducible agent runtime bundles",
-  "updated_at": "2026-09-08T12:00:21+00:00",
+  "updated_at": "2026-09-08T12:01:27+00:00",
   "worktree_key": "agent-systems-benchmark-agent-runtime-bundles"
 }
 ---
@@ -138,3 +138,8 @@ Implementation has not started. Read the linked plan before claiming.
   and closure-gap catalog: every current transitive closure and redistribution decision remains
   explicitly incomplete/unverified, so no complete runtime bundle, offline materialization,
   redistribution, or native platform support is claimed by this release.
+
+- 2026-09-08T12:01:27+00:00: Final exact-main CI IDs for fcbf71ae8c08d817bad27acf1fa38e29296b9547
+  are all terminal success: Rust 34222580637, quality 34222580643, emulated aarch64 34222580664,
+  formal 34222580707, and fault 34222580859. This supplements the release record with every
+  requested run identifier.
