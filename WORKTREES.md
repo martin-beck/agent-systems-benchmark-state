@@ -4,7 +4,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
-| `agent-systems-benchmark` | `main` | `39d09374680f` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark` | `main` | `92569367347b` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-agent-aider` | `feature/agent-aider` | `da81ead6932c` | 0 | behind 141, ahead 0 |
 | `agent-systems-benchmark-agent-codex` | `feature/agent-codex` | `eb03bd9d9ed5` | 0 | behind 129, ahead 0 |
 | `agent-systems-benchmark-agent-gemini` | `feature/agent-gemini` | `d381d340163e` | 0 | behind 125, ahead 0 |
@@ -20,7 +20,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-benchmark-validity` | `feature/benchmark-validity` | `60a6c730457b` | 0 | behind 35, ahead 0 |
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `0717d4acd168` | 0 | behind 143, ahead 0 |
 | `agent-systems-benchmark-ci-artifact-quota-resilience` | `feature/ci-artifact-quota-resilience` | `7d98653e7e7f` | 0 | behind 89, ahead 0 |
-| `agent-systems-benchmark-contract-consistency` | `feature/contract-consistency` | `39d09374680f` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-contract-consistency` | `feature/contract-consistency` | `39d09374680f` | 0 | behind 1, ahead 1 |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 212, ahead 0 |
 | `agent-systems-benchmark-csb-execution-assurance` | `feature/csb-execution-assurance` | `39e306124b56` | 0 | behind 92, ahead 0 |
 | `agent-systems-benchmark-csb-integration` | `feature/csb-integration` | `524db90c8933` | 0 | behind 5, ahead 0 |
