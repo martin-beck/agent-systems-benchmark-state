@@ -9,7 +9,7 @@
   "id": "AR-0855",
   "next_action": "Repair product checker duplicate detection to count canonical adjacent header pairs while allowing standalone embedded SPDX/copyright literals; add both regression cases, rerun full gates and exact-head CI, then obtain independent re-review. Preserve the state-vendor release blocker.",
   "observed_branch": "fix/huawei-mit-license-headers",
-  "observed_dirty": 0,
+  "observed_dirty": 3,
   "observed_head": "c90a1137df58d4989124e824410d7aaab7b56e45",
   "owner": "codex-asb-adjacent-pair-repair",
   "plan": "../plans/AR-0855.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files.",
-  "task_revision": 117,
+  "task_revision": 118,
   "title": "Enforce Huawei MIT source headers",
-  "updated_at": "2026-09-08T17:07:20+00:00",
+  "updated_at": "2026-09-08T17:07:30+00:00",
   "worktree_key": "agent-systems-benchmark-huawei-mit-headers"
 }
 ---
