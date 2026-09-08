@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T11:25:18+00:00",
+  "updated_at": "2026-09-08T11:25:28+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -135,3 +135,6 @@ Implementation has not started. Read the linked plan before claiming.
   Polyglot, and six Exercism track source identities, explicit license/platform limitations, and
   registry test (pytest 1/1). Evaluator image digests remain null, so suites remain planned and
   unqualified.
+
+- 2026-09-08T11:25:28+00:00: Recorded command exit 127; command argv SHA-256
+  8b918589c9a5abf78f4afb7db1ae341a6c56f607621cccdae67b1c4da43134f7.
