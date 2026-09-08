@@ -8,7 +8,7 @@
     "AR-0841"
   ],
   "id": "AR-0843",
-  "next_action": "Hold immutable signed candidate cca49ec3bea429a90a267600acf821cebe45c138 for independent review; do not publish or merge.",
+  "next_action": "Monitor PR #69 exact-head CI at cca49ec3bea429a90a267600acf821cebe45c138; investigate any failure and do not merge without coordinator authorization.",
   "observed_branch": "feature/frontend-privacy-assurance",
   "observed_dirty": 0,
   "observed_head": "cca49ec3bea429a90a267600acf821cebe45c138",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify frontend privacy, artifact access, and fault behavior.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Assure frontend privacy and faults",
-  "updated_at": "2026-09-08T08:56:24+00:00",
+  "updated_at": "2026-09-08T08:57:02+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-privacy-assurance"
 }
 ---
@@ -177,3 +177,14 @@ redaction failures; prove no credentials, prompts, transcripts, or private paths
 
 - 2026-09-08T08:56:24+00:00: Recorded command exit 0; command argv SHA-256
   c5f2757b24aee36884d032106ebc28b9374e4ac8772332871c4cab8f478981ca.
+
+- 2026-09-08T08:57:02+00:00: Published independently approved immutable AR-0843 candidate with
+  absent-ref force-with-lease and opened PR #69:
+  https://github.com/martin-beck/agent-systems-benchmark/pull/69. Authoritative PR head is exact
+  cca49ec3bea429a90a267600acf821cebe45c138 on base main; PR is open and currently UNSTABLE only
+  because checks are in progress. Exact-head workflow runs: Rust 34207182331 in_progress; quality
+  34207182367 in_progress; formal 34207182390 in_progress with TLC/Alloy and both Loom cells already
+  success while Kani runs; fault 34207182432 in_progress; emulated aarch64 34207182362 in_progress;
+  AWQ shadow 34207182392 completed success. Corrected a display-only malformed sign-off in the
+  initial PR body through handoffctl; the immutable commit and its verified DCO were never affected.
+  No merge performed.
