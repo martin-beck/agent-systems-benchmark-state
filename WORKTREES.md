@@ -36,7 +36,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-gemini-generate-content-replay` | `feature/gemini-generate-content-replay` | `93c19625f910` | 0 | behind 34, ahead 0 |
 | `agent-systems-benchmark-gemini-thinking-config-contract` | `feature/gemini-thinking-config-contract` | `0aff7023cacf` | 0 | behind 32, ahead 0 |
 | `agent-systems-benchmark-interaction-aware-redaction` | `feature/interaction-aware-redaction` | `867861c95c19` | 0 | behind 19, ahead 0 |
-| `agent-systems-benchmark-kernel-diagnostics` | `feature/kernel-diagnostics` | `3a07b57b8265` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-kernel-diagnostics` | `feature/kernel-diagnostics` | `3a07b57b8265` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-metrics/Cargo.toml` |
 | `agent-systems-benchmark-native-platform-lab` | `feature/native-platform-lab` | `b1669203308d` | 0 | behind 63, ahead 0 |
 | `agent-systems-benchmark-native-platforms` | `feature/native-platforms` | `bdaf9c108226` | 0 | behind 83, ahead 17 |
 | `agent-systems-benchmark-native-x86-capacity` | `feature/native-x86-capacity` | `45604cd323c5` | 0 | behind 3, ahead 0 |
