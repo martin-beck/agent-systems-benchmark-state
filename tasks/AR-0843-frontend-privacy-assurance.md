@@ -8,7 +8,7 @@
     "AR-0841"
   ],
   "id": "AR-0843",
-  "next_action": "Stop product mutation at the reviewed two-path dirty boundary; independently audit the exact diff, then make a focused signed+DCO candidate only after approval to commit.",
+  "next_action": "Hold immutable signed candidate cca49ec3bea429a90a267600acf821cebe45c138 for independent review; LGTM is requiredreti? ",
   "observed_branch": "feature/frontend-privacy-assurance",
   "observed_dirty": 0,
   "observed_head": "cca49ec3bea429a90a267600acf821cebe45c138",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify frontend privacy, artifact access, and fault behavior.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Assure frontend privacy and faults",
-  "updated_at": "2026-09-08T08:52:49+00:00",
+  "updated_at": "2026-09-08T08:53:29+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-privacy-assurance"
 }
 ---
@@ -153,3 +153,8 @@ redaction failures; prove no credentials, prompts, transcripts, or private paths
 
 - 2026-09-08T08:52:49+00:00: Recorded command exit 0; command argv SHA-256
   b8a615b87d77343cb23e386d9381950a5afae1160f1d992f591689b0aaa22f80.
+
+- 2026-09-08T08:53:29+00:00: Immutable AR-0843 candidate created after avert review approval: head
+  cca49ec3bea429a90a267600acf821cebe45c138, tree 19fff18d0c3732ddc19651969e723ade0fa5dd2f, parent
+  exact ba97a20f60f39b4c5ef601a7dade148276a631d6. Worktree is clean; range is exactly
+  crates/asb-cli/src/control.rs and docs/FRONTgadas?
