@@ -3,20 +3,18 @@
   "branch": "fix/coordinator-v014-merge-attestation",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": [
-    "AR-0852"
-  ],
+  "depends_on": [],
   "id": "AR-0853",
-  "next_action": "After AR-0852 completes, select and independently review a non-rewriting signed+DCO replacement or additive attestation for the exact v0.1.4 merge evidence.",
+  "next_action": "Select and independently review a non-rewriting signed+DCO replacement or additive attestation for the exact v0.1.4 merge evidence.",
   "owner": "",
   "plan": "../plans/AR-0853.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "planned",
   "summary": "Repair the v0.1.4 coordinator merge attestation without rewriting published history.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Repair coordinator merge attestation",
-  "updated_at": "2026-09-08T07:32:57+00:00",
+  "updated_at": "2026-09-08T07:35:00+00:00",
   "worktree_key": "agent-systems-benchmark-coordinator-merge-attestation"
 }
 ---
