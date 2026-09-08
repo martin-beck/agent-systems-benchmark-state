@@ -9,17 +9,17 @@
   "id": "AR-0403",
   "next_action": "Independent review the signed adapter checkpoint e0da4efd; run exact-tree quality gates and retain explicit unqualified Terminal-Bench limitations.",
   "observed_branch": "feature/terminal-workloads",
-  "observed_dirty": 3,
-  "observed_head": "e0da4efd375080c774cff91a8eef694d93e14132",
+  "observed_dirty": 0,
+  "observed_head": "6501f7bcb3cf8aa3d6265b1ad20144feaa696ed8",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0403.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Import terminal tasks through an adapter to the published harness or task format.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Integrate Terminal-Bench workloads",
-  "updated_at": "2026-09-08T16:43:45+00:00",
+  "updated_at": "2026-09-08T16:43:51+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-workloads"
 }
 ---
