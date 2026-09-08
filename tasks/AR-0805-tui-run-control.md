@@ -10,7 +10,7 @@
     "AR-0804"
   ],
   "id": "AR-0805",
-  "next_action": "Extend the one-file run-control projection with bounded high-cardinality page rejection, terminal event/status convergence, disconnect/reconnect and duplicate/cancellation-race negatives; then run focused and applicable full gates.",
+  "next_action": "Apply the same bounded reconnect/page/cancellation extension using smaller exact post-fmt context hunks, then rerun focused tests.",
   "observed_branch": "feature/tui-run-control",
   "observed_dirty": 1,
   "observed_head": "b2707c482876dcfb42c756c39165f6ecdb5c7c10",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T16:42:45+00:00",
+  "updated_at": "2026-09-08T16:43:23+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -93,3 +93,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T16:42:45+00:00: Recorded command exit 1; command argv SHA-256
   27dfaf8283c89553da77b2f951150438d336134c52a62106346d10292ccdaf06.
+
+- 2026-09-08T16:43:23+00:00: The next-slice apply_patch exited 1 because its expected pre-format
+  context did not match rustfmt-expanded accept_events lines. This is a patch-harness/context
+  failure; apply_patch made no product changes. Current one-file implementation and all prior 8/8
+  focused evidence remain preserved. Exact current context was inspected before the corrected patch.
