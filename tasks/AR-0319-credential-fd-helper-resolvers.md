@@ -2,7 +2,7 @@
 {
   "branch": "feature/credential-fd-helper-resolvers",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T17:06:47+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0318"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/credential-fd-helper-resolvers",
   "observed_dirty": 0,
   "observed_head": "5d62546b5d5637574da4209bed96c52430fb0ff1",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0319.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Add explicit file-descriptor and helper credential references without ambient-secret fallback.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Implement credential FD and helper resolvers",
-  "updated_at": "2026-09-08T14:08:28+00:00",
+  "updated_at": "2026-09-08T14:08:30+00:00",
   "worktree_key": "agent-systems-benchmark-credential-fd-helper-resolvers"
 }
 ---
@@ -39,3 +39,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T14:08:21+00:00: Recorded command exit 0; command argv SHA-256
   6e6df2a55efc77478194e288437c58d363861b4d7b304e38bd5d4b93b5b594d3.
+
+- 2026-09-08T14:08:30+00:00: No worktree, heartbeat, command, or implementation appeared after
+  repeated follow-ups; release the idle claim without losing any durable work. Reclaim when a worker
+  can begin the declared FD/helper contract.
