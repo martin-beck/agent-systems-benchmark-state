@@ -9,7 +9,7 @@
   "id": "AR-0402",
   "next_action": "Wait for PR #79 exact-head CI; independently review all green checks before merge.",
   "observed_branch": "feature/external-code-workloads",
-  "observed_dirty": 0,
+  "observed_dirty": 9,
   "observed_head": "2590dc3eb7704a6a8d5afbe25fe138819fce03fd",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0402.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 99,
+  "task_revision": 100,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:33:46+00:00",
+  "updated_at": "2026-09-08T12:33:53+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---

@@ -35,7 +35,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-execution-budgets` | `feature/execution-budgets` | `30a12ad33174` | 0 | behind 9, ahead 0 |
 | `agent-systems-benchmark-experiment-comparability` | `feature/experiment-comparability` | `eb5e84933830` | 0 | behind 168, ahead 0 |
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 222, ahead 0 |
-| `agent-systems-benchmark-external-code-workloads` | `feature/external-code-workloads` | `2590dc3eb770` | 0 | behind 35, ahead 11 |
+| `agent-systems-benchmark-external-code-workloads` | `feature/external-code-workloads` | `2590dc3eb770` | 9 | behind 35, ahead 11 |
+| changed files | - | - | - | `tests/workloads/test_external_acquisition_fixture.py`, `tests/workloads/test_external_registry.py`, `tests/workloads/test_external_registry_validator.py`, `tests/workloads/test_external_workload_planner.py`, `tests/workloads/test_materialize_external_source.py`, `tools/quality/materialize_external_source.py`, `tools/quality/plan_external_workload.py`, `tools/quality/validate_external_registry.py`, `tools/quality/verify_external_artifact.py` |
 | `agent-systems-benchmark-fault-assurance` | `feature/fault-assurance` | `e6c623113c15` | 0 | behind 134, ahead 0 |
 | `agent-systems-benchmark-formal-assurance` | `feature/formal-assurance` | `2a495a99a657` | 0 | behind 180, ahead 0 |
 | `agent-systems-benchmark-frontend-api-integration` | `feature/frontend-api-integration` | `76cc86f23a48` | 0 | behind 7, ahead 0 |
