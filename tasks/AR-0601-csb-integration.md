@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Reuse CSB application execution and monitoring where contracts fit ASB.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Prototype optional CSB integration",
-  "updated_at": "2026-09-08T09:19:52+00:00",
+  "updated_at": "2026-09-08T09:20:50+00:00",
   "worktree_key": "agent-systems-benchmark-csb-integration"
 }
 ---
@@ -94,3 +94,6 @@ Implementation has not started. Read the linked plan before claiming.
   classified as unrelated history; --skip-commits plus exact-range DCO passed. Earlier exits 2/127
   were operator-only apply-patch quoting/path failures before the successful wrapped edit; no blind
   retry or unintended product mutation. Await immutable review; unpublished.
+
+- 2026-09-08T09:20:50+00:00: Recorded command exit 0; command argv SHA-256
+  700e518162cf5c6914cb0e12a9e117a37e384a81aee27b02af7cf316587427e8.
