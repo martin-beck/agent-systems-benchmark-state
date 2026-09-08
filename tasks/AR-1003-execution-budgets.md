@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bound and report wall time, actions, tokens and monetary cost without treating unavailable telemetry as zero.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Enforce cost token and action budgets",
-  "updated_at": "2026-09-08T10:11:44+00:00",
+  "updated_at": "2026-09-08T10:12:29+00:00",
   "worktree_key": "agent-systems-benchmark-execution-budgets"
 }
 ---
@@ -155,3 +155,6 @@ Implementation has not started. Read the linked plan before claiming.
   failure; no further retries. An isolated pinned cargo-kani setup under an external KANI_HOME is
   the corrective operation if authorized. Continue bounded mutation, coverage, privacy, dependency
   and supply gates; retain hosted formal CI as separate evidence.
+
+- 2026-09-08T10:12:29+00:00: Recorded command exit 0; command argv SHA-256
+  341297361a0ffb1f5c8220664b2b5b6938294be33448354d70b93b54dca8f946.
