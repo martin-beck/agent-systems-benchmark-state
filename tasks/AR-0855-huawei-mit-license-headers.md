@@ -15,11 +15,11 @@
   "plan": "../plans/AR-0855.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files.",
-  "task_revision": 109,
+  "task_revision": 110,
   "title": "Enforce Huawei MIT source headers",
-  "updated_at": "2026-09-08T16:27:04+00:00",
+  "updated_at": "2026-09-08T16:58:04+00:00",
   "worktree_key": "agent-systems-benchmark-huawei-mit-headers"
 }
 ---
@@ -308,3 +308,6 @@ and fresh coordinator snapshot before claiming. Do not modify vendored coordinat
   and all 14 hosted checks pass; product implementation is complete. Await independent review/merge
   plus immutable upstream agent-workflow-coordinator release and hash-locked vendor sync; do not
   hand-edit vendor.
+
+- 2026-09-08T16:58:04+00:00: Resume for independent exact-head review of product PR 82 at
+  c90a1137df58d4989124e824410d7aaab7b56e45; preserve product branch and state-vendor blocker.
