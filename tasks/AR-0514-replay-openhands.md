@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenHands.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Qualify OpenHands replay",
-  "updated_at": "2026-09-08T07:20:11+00:00",
+  "updated_at": "2026-09-08T07:43:49+00:00",
   "worktree_key": "agent-systems-benchmark-replay-openhands"
 }
 ---
@@ -85,3 +85,6 @@ Qualify OpenHands record/replay, network denial, parity, retries, tool calls, ca
 
 - 2026-09-08T07:20:11+00:00: Recorded command exit 0; command argv SHA-256
   b89de90b8e6942880cd6abbad8a339cdae995de479e81e0aa5063a46d025b1a4.
+
+- 2026-09-08T07:43:49+00:00: Recorded command exit 0; command argv SHA-256
+  5f3003e3a17dae5fea7b8dc095a4ca55a76a0896eaabea7140c1b816910f1ab6.
