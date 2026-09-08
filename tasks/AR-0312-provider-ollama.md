@@ -2,7 +2,7 @@
 {
   "branch": "feature/provider-ollama",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-08T10:55:50+00:00",
   "depends_on": [
     "AR-0301",
     "AR-0302",
@@ -17,15 +17,15 @@
   ],
   "id": "AR-0312",
   "next_action": "Implement a loopback-only local Ollama profile and prove every compatible adapter translation.",
-  "owner": "",
+  "owner": "contracts_20260906",
   "plan": "../plans/AR-0312.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Apply one pinned local Ollama provider and model configuration to all supported agents.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Support a shared local Ollama provider",
-  "updated_at": "2026-09-08T08:21:13+00:00",
+  "updated_at": "2026-09-08T08:55:50+00:00",
   "worktree_key": "agent-systems-benchmark-provider-ollama"
 }
 ---
@@ -37,3 +37,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T08:21:13+00:00: Promote dependency-ready shared Ollama provider after AR-0842 release;
   owned provider paths are disjoint from active AR-0514 and AR-0402.
+
+- 2026-09-08T08:55:50+00:00: Claimed by contracts_20260906.
