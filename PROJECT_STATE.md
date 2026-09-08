@@ -21,7 +21,7 @@ Generated from local Git and GitHub. Do not edit.
 | 34213719735 | `289b2711774b` | push | Emulated aarch64 portability | in_progress:- |
 | 34213719710 | `289b2711774b` | push | Formal assurance | completed:success |
 | 34213719705 | `289b2711774b` | push | Fault assurance | completed:success |
-| 34213719677 | `289b2711774b` | push | Rust verification | in_progress:- |
+| 34213719677 | `289b2711774b` | push | Rust verification | completed:success |
 | 34213577517 | `92569367347b` | push | Emulated aarch64 portability | completed:cancelled |
 | 34213577174 | `92569367347b` | push | Repository quality | completed:failure |
 | 34213577139 | `92569367347b` | push | Fault assurance | completed:cancelled |
