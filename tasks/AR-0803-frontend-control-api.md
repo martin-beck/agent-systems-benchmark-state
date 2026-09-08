@@ -10,7 +10,7 @@
     "AR-0801"
   ],
   "id": "AR-0803",
-  "next_action": "Await fresh independent immutable review of repaired exact cbb764c; publish only if all prior blockers and new concurrency/privacy semantics are approved.",
+  "next_action": "Reconcile the integrated AR-0847 repair into a new immutable candidate: wire asb-control into the authoritative runner, prove cancellation/no-late-effect with cooperative and noncooperative backends, and replace blacklist JSON privacy checks with typed exhaustive projections; then rerun independent review and exact-head gates.",
   "observed_branch": "feature/frontend-control-api",
   "observed_dirty": 20,
   "observed_head": "cbb764c45c6128d75f42fb78a3a2a15a0874528a",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary.",
-  "task_revision": 303,
+  "task_revision": 304,
   "title": "Define the frontend control API",
-  "updated_at": "2026-09-08T05:23:09+00:00",
+  "updated_at": "2026-09-08T05:23:19+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api"
 }
 ---
@@ -866,3 +866,12 @@ Implementation has not started. Read the linked plan before claiming.
   continue.
 
 - 2026-09-08T05:23:09+00:00: Claimed by replay_20260906.
+
+- 2026-09-08T05:23:19+00:00: 2026-09-08T05:00:00Z: Independent immutable review BLOCKED cbb764c.
+  Although frame deadlines, exact-offered negotiation, and common initial-envelope validation are
+  fixed, acceptance still fails: no production runner wiring (only generic ControlServer/Client with
+  in-memory backend tests); detached backend work may mutate after server timeout, so no-late-effect
+  is unproven; arbitrary serde_json::Value plus blacklist privacy checks permit unrecognized
+  secret-bearing fields. The 20 dirty repair paths are not part of immutable cbb764c and cannot
+  support approval. Do not publish; reconcile integrated AR-0847 repair into a new immutable
+  candidate.
