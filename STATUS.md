@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 5 |
+| **In progress** | Claimed work with a live lease | 4 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 39 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 79 |
+| **Done** | Accepted, integrated, and durably verified | 80 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -166,7 +166,7 @@ flowchart LR
         AR_0851["AR-0851 - Done"]:::status_done
         AR_0852["AR-0852 - Done"]:::status_done
         AR_0853["AR-0853 - Done"]:::status_done
-        AR_0854["AR-0854 - In progress"]:::status_in_progress
+        AR_0854["AR-0854 - Done"]:::status_done
     end
     subgraph series_09["09 - Assurance"]
         direction TB
@@ -737,14 +737,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (5)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0313](tasks/AR-0313-all-agents-provider.md): Configure one provider for all agents | quality_20260906 | Let test plans select one provider profile for every chosen supported agent atomically. | Independent immutable review of unpublished candidate 03962f28571e79403740b560a769e1a3b171e685 tree bf48ba52a07d24474a6cf62839e8197b0f55c7e0 on exact base b6078bb1ca2ee8f35973ffab9740c2c12dd4126e; publish only after approval and fresh-base audit. |
 | P1 | [AR-0316](tasks/AR-0316-agent-runtime-bundles.md): Publish reproducible agent runtime bundles | contracts_20260906 | Make supported agent installations reproducible, license-audited, SBOM-backed, and independently verifiable. | Monitor PR #77 exact head 1249fd87d46d54556bca835fcc3e6570df15cc2c; investigate any exact-head failure and do not merge without coordinator authorization. |
 | P1 | [AR-0844](tasks/AR-0844-frontend-api-integration.md): Integrate frontend control API | replay_20260906 | Integrate and qualify the frontend control API as an independent boundary. | Monitor PR #76 exact head 76cc86f23a48d5af275b2fed9d70f54199e38637 CI to terminal; investigate failures and do not merge without coordinator authorization. |
-| P1 | [AR-0854](tasks/AR-0854-coordinator-v020-upgrade.md): Upgrade shared workflow coordinator to v0.2.0 | codex-coordinator-v020-20260908 | Adopt coordinator v0.2.0 concurrency, recovery, durable-run, replica, and vendor hardening. | Promote and claim the upgrade, vendor signed v0.2.0 in an isolated worktree, and publish only after exact-head gates pass. |
 | P2 | [AR-0402](tasks/AR-0402-external-code-workloads.md): Integrate SWE-bench and Aider Polyglot | root-coordination-20260906 | Add versioned external workload adapters without vendoring datasets. | Add digest verification/acquisition boundary and oracle fixtures, then run Rust/full quality gates. |
 
 ### Open (1)
@@ -806,7 +805,7 @@ flowchart LR
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Evaluate maintenance, licenses and reproducibility before integration. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (79)
+### Done (80)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -874,6 +873,7 @@ flowchart LR
 | P1 | [AR-0849](tasks/AR-0849-ar0801-documentation-repair.md): Repair AR-0801 documentation consistency | Unclaimed | Repair stale AR-0801 implementation and CLI documentation claims. | Align AR-0801 task text, generated status next_action, and product README with the implemented and merged CLI command surface; verify links and exact command examples. |
 | P1 | [AR-0851](tasks/AR-0851-shared-workflow-coordinator.md): Adopt shared workflow coordinator | Unclaimed | Adopt the canonical coordinator as a pinned offline-capable vendor artifact while preserving ASB extensions. | Rebase the immutable v0.1.3 integration tree onto current state main under coordinator serialization, rerun exact-tree gates, and present a signed review candidate; do not publish or merge before review. |
 | P1 | [AR-0852](tasks/AR-0852-coordinator-path-isolation.md): Adopt coordinator path isolation fix | Unclaimed | Adopt the path-exclusive coordinator commit fix discovered during live integration. | Preserve merged v0.1.4 effect e52ce3aa without history rewrite; complete a focused signed+DCO repair or documented signed state replacement under AR-0853, then re-audit live main before releasing AR-0852. |
+| P1 | [AR-0854](tasks/AR-0854-coordinator-v020-upgrade.md): Upgrade shared workflow coordinator to v0.2.0 | Unclaimed | Adopt coordinator v0.2.0 concurrency, recovery, durable-run, replica, and vendor hardening. | Promote and claim the upgrade, vendor signed v0.2.0 in an isolated worktree, and publish only after exact-head gates pass. |
 | P1 | [AR-0901](tasks/AR-0901-formal-assurance.md): Prove critical state and concurrency invariants | Unclaimed | Use bounded proofs and model tests for safety-critical domain logic. | Await independent immutable-head review of PR 14 at 2a495a99; repair any findings without merging or releasing. |
 | P1 | [AR-0902](tasks/AR-0902-fault-assurance.md): Add fuzz mutation and lifecycle fault campaigns | Unclaimed | Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection. | Run final coordination reconcile/snapshot/live doctor/full validation and release AR-0902 done only if clean synchronized state remains exact. |
 | P1 | [AR-0904](tasks/AR-0904-contract-consistency.md): Machine-check protocol and artifact consistency | Unclaimed | Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree. | Obtain fresh exact-main CI for signed+DCO main 92569367347b49c497780fa40195971ff655b0f4 using a resolvable base, then rerun final clean synchronized state validation and release only if all workflows pass. |
