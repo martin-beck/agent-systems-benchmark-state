@@ -12,17 +12,17 @@
   "id": "AR-0806",
   "next_action": "Obtain serialized asb-control protocol/schema and asb-cli backend fence to add bounded privacy-reviewed history detail and AR-1001 compatibility/confounder projections; then extend the tested one-path TUI model, regenerate schemas/fixtures, and run full gates.",
   "observed_branch": "feature/tui-history-analysis",
-  "observed_dirty": 2,
-  "observed_head": "559fbcc825234bb98a64ba554a53f38b004d24f6",
+  "observed_dirty": 0,
+  "observed_head": "9801fe8ca2dda26ed1eceac4e001ead74d689d9c",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0806.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-08T22:05:02+00:00",
+  "updated_at": "2026-09-08T22:05:09+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
