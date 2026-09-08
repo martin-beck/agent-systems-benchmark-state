@@ -10,7 +10,7 @@
     "AR-0804"
   ],
   "id": "AR-0805",
-  "next_action": "Fresh independent immutable review of unpublished candidate 84f03f402ba7e9ae1fb23f99404449efa33db948 against exact parent b2707c482876dcfb42c756c39165f6ecdb5c7c10. Verify terminal-to-needs_reconciliation convergence and all accumulated fixes before publication.",
+  "next_action": "Fresh independent immutable review of unpublished candidate fe24e48f9b4bae4ca7f62aa50be52e7586d455d3 against exact parent b2707c482876dcfb42c756c39165f6ecdb5c7c10. Verify empty-poll cursor retention and status-equivalent event lifecycle staging before publication.",
   "observed_branch": "feature/tui-run-control",
   "observed_dirty": 0,
   "observed_head": "fe24e48f9b4bae4ca7f62aa50be52e7586d455d3",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 87,
+  "task_revision": 88,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T18:19:39+00:00",
+  "updated_at": "2026-09-08T18:20:11+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -342,3 +342,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T18:19:39+00:00: Recorded command exit 0; command argv SHA-256
   452369a809fab27760b6b144709a0f4391c7d5528d354659e496f37d1470af0c.
+
+- 2026-09-08T18:20:11+00:00: Event recovery repair is complete in signed unpublished candidate
+  fe24e48f9b4bae4ca7f62aa50be52e7586d455d3, tree a2409b49cd2cb9521b667bdd419a3a64a53ec0e2, exact
+  parent b2707c482876dcfb42c756c39165f6ecdb5c7c10. One clean path, crates/asb-tui/src/lib.rs
+  (+864/-1). Valid empty event pages with next none now retain the prior reconnect cursor.
+  Matching-run events are staged and validated with the same lifecycle rules as status before any
+  cursor or summary mutation: post-terminal RunUpdated and conflicting terminal events fail without
+  advancing, terminal to NeedsReconciliation and NeedsReconciliation to terminal converge across
+  pages. Focused suite remains 13/13 with new positive and negative cases. Full fmt/workspace
+  clippy/tests/docs/release, contract/coverage/failure/platform/workflow/dependency/privacy gates,
+  plus postcommit SSH signature, DCO, policy, range Gitleaks, diff-check and focused checks all
+  pass. Broader dashboard protocol/resource/native evidence remains explicitly unclaimed.
