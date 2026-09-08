@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Guide users through agents, providers, workloads, resources, replay, metrics, and output settings.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Build the terminal settings wizard",
-  "updated_at": "2026-09-08T15:27:18+00:00",
+  "updated_at": "2026-09-08T15:27:57+00:00",
   "worktree_key": "agent-systems-benchmark-tui-settings-wizard"
 }
 ---
@@ -90,3 +90,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T15:27:18+00:00: Recorded command exit 0; command argv SHA-256
   16c7c9b07df8bd511b3f939074c400bbb604eb2e8f2793c0fae1351f3c8ac8a8.
+
+- 2026-09-08T15:27:57+00:00: Recorded command exit 0; command argv SHA-256
+  70b93aaeec894f4ddf4f7f2a532bc0857e840c9e2d04fa179750e1cb913de146.
