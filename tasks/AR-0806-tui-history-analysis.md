@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-08T21:04:11+00:00",
+  "updated_at": "2026-09-08T21:04:48+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
@@ -36,3 +36,6 @@ Implementation has not started. Read the linked plan before claiming.
   isolated TUI history/analysis lane.
 
 - 2026-09-08T21:04:11+00:00: Claimed by quality_20260906.
+
+- 2026-09-08T21:04:48+00:00: Recorded command exit 0; command argv SHA-256
+  58fdb90a2ff13a429c1b1f71c594d8e704e0b001e58fb25b0e35f7983db2d2a0.
