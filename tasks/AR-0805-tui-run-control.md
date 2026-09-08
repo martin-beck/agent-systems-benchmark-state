@@ -10,7 +10,7 @@
     "AR-0804"
   ],
   "id": "AR-0805",
-  "next_action": "Run remaining contract, coverage, failure-path, platform, workflow, dependency, privacy, and secret scans on the exact one-file lifecycle slice. Preserve AR-0855 header lines and keep unavailable dashboard fields explicitly unsupported pending an owned control-protocol extension.",
+  "next_action": "Request independent review of the exact one-file lifecycle slice before any signed checkpoint. Keep AR in progress: scheduler capacity, deadlines, leases, provider source, metrics, warnings, evidence availability, terminal resize, and native frontend resource/separation evidence require an owned follow-up boundary and are not claimed. Preserve AR-0855 header lines on any rebase.",
   "observed_branch": "feature/tui-run-control",
   "observed_dirty": 1,
   "observed_head": "b2707c482876dcfb42c756c39165f6ecdb5c7c10",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T16:57:45+00:00",
+  "updated_at": "2026-09-08T16:58:22+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -162,3 +162,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T16:57:45+00:00: Recorded command exit 0; command argv SHA-256
   f608fda4edb1fbecd1e1ac5da1ffb864d0ff510016bb125baa79d98906929372.
+
+- 2026-09-08T16:58:22+00:00: AR-0805 bounded lifecycle slice is ready for review as one dirty path,
+  crates/asb-tui/src/lib.rs (551 insertions, 1 deletion), exact base
+  b2707c482876dcfb42c756c39165f6ecdb5c7c10. A final adversarial audit found and repaired
+  status-state regression and reconciliation handling: higher-revision lifecycle regressions now
+  fail closed; needs_reconciliation is displayed as a non-cancellable authoritative terminal
+  projection. The first focused rerun exposed a source compile defect because PartialEq is not
+  const-callable; removing only the unnecessary const qualifier repaired it. Final focused test is
+  11/11 green, focused clippy/fmt/diff clean. Exact post-repair workspace fmt, all-target clippy -D
+  warnings, workspace tests, rustdoc -D warnings, contract consistency and tests, coverage floors,
+  failure fixtures, artifact outcome, platform manifests plus 23 tests, actionlint, zizmor, cargo
+  deny, cargo audit, Gitleaks file scan, added-line privacy scan, and one-path scope/diff checks all
+  pass. No schema, control protocol, Cargo, main.rs, or AR-0855 header path changed.
