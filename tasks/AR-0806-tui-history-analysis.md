@@ -10,7 +10,7 @@
     "AR-1001"
   ],
   "id": "AR-0806",
-  "next_action": "PR #89 branch was guarded-force-updated to approved 031a4516cbb3addc184ab3c4b0f4c683aa14755d, but live main advanced again from reviewed parent 3514089fa378bd50629c9794b215fd53c8ea7d5d to PR base 2219839812d9255288b8b4e0afc52396915e85a6. Hold merge; after current exact-head CI is terminal evidence, obtain another exact-base rebase/review authorization before integration.",
+  "next_action": "PR #89 is at approved 031a4516cbb3addc184ab3c4b0f4c683aa14755d, but base/main advanced from reviewed 3514089fa378bd50629c9794b215fd53c8ea7d5d to 2219839812d9255288b8b4e0afc52396915e85a6. Hold merge. After exact-head CI finishes, rebase onto current main and obtain fresh exact-base review.",
   "observed_branch": "feature/tui-history-analysis",
   "observed_dirty": 0,
   "observed_head": "031a4516cbb3addc184ab3c4b0f4c683aa14755d",
@@ -191,3 +191,11 @@ Implementation has not started. Read the linked plan before claiming.
   found base advanced to 2219839812d9255288b8b4e0afc52396915e85a6, while candidate parent/review
   base is 3514089fa378bd50629c9794b215fd53c8ea7d5d. Merge/release are held fail-closed;
   duplicate-page repair and AR-0875 limitation remain unchanged.
+
+- 2026-09-08T23:39:37+00:00: Schema-maintenance record: preserved the replaced front-matter
+  next_action verbatim: "PR #89 branch was guarded-force-updated to approved
+  031a4516cbb3addc184ab3c4b0f4c683aa14755d, but live main advanced again from reviewed parent
+  3514089fa378bd50629c9794b215fd53c8ea7d5d to PR base
+  2219839812d9255288b8b4e0afc52396915e85a6. Hold merge; after current exact-head CI is terminal
+  evidence, obtain another exact-base rebase/review authorization before integration." Only the
+  front-matter summary was shortened; owner, status, lease and revision remain unchanged.
