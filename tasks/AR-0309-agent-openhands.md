@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run a maintained MIT OpenHands SDK or canonical headless client.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Implement maintained OpenHands SDK client adapter",
-  "updated_at": "2026-09-08T04:22:15+00:00",
+  "updated_at": "2026-09-08T04:22:18+00:00",
   "worktree_key": "agent-systems-benchmark-agent-openhands"
 }
 ---
@@ -141,3 +141,6 @@ Implementation has not started. Read the linked plan before claiming.
   OpenHands/LiteLLM stdout and stderr were empty with local cost-map forcing. The wrapper
   evidence-record phase was interrupted while waiting on the shared state lock after the test had
   completed; no product or fixture residue remained.
+
+- 2026-09-08T04:22:18+00:00: Recorded command exit 0; command argv SHA-256
+  f973b1b00d8ef44cc057c439be98a059a4c095ca2591bf4a480693241e9805b9.
