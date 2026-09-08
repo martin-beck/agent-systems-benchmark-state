@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate perf and optional eBPF diagnostics without making privileged tools mandatory.",
-  "task_revision": 141,
+  "task_revision": 142,
   "title": "Add optional kernel diagnostics",
-  "updated_at": "2026-09-08T22:55:29+00:00",
+  "updated_at": "2026-09-08T22:55:47+00:00",
   "worktree_key": "agent-systems-benchmark-kernel-diagnostics"
 }
 ---
@@ -407,3 +407,6 @@ Implementation has not started. Read the linked plan before claiming.
   release. Existing branch/PR #61 contains signed fail-closed optional probes and negative tests,
   but its base is pre-attestation a369638; current main is 4cad746. Rebase before qualification. Do
   not claim positive PMU/eBPF/native arm support without genuine privileged hosts.
+
+- 2026-09-08T22:55:47+00:00: Recorded command exit 0; command argv SHA-256
+  6665b192a33d5ab998eb98bfbc0e228a02bde1fb4f675416a2e6298aaff6931d.
