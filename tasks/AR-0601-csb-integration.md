@@ -12,7 +12,7 @@
     "AR-0603"
   ],
   "id": "AR-0601",
-  "next_action": "Audit bm-runner interfaces and compare subprocess integration with direct execution.",
+  "next_action": "Await immutable review of compatibility decision candidate 524db90; do not publish.",
   "observed_branch": "feature/csb-integration",
   "observed_dirty": 0,
   "observed_head": "524db90c893366cf5f683aa5a99ec211083256a4",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Reuse CSB application execution and monitoring where contracts fit ASB.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Prototype optional CSB integration",
-  "updated_at": "2026-09-08T09:19:08+00:00",
+  "updated_at": "2026-09-08T09:19:29+00:00",
   "worktree_key": "agent-systems-benchmark-csb-integration"
 }
 ---
@@ -78,3 +78,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T09:19:08+00:00: Recorded command exit 0; command argv SHA-256
   484eb608e3b590bf2bdb5cdfc0b2e79bd03e8f0463b4ccaebb1fe3ff53f3e384.
+
+- 2026-09-08T09:19:29+00:00: Compatibility audit candidate 524db90c893356?; placeholder
