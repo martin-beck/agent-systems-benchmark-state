@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0309",
-  "next_action": "Design a bounded Python shim against pinned OpenHands Software Agent SDK v1.45.0 and inspect its exact event, confirmation, metrics, persistence, and cancellation APIs.",
+  "next_action": "Implement the isolated OpenHands module and fixture around the proven SDK-only custom-tool boundary; pin and verify the 136-package Python graph before requesting shared lib.rs registration.",
   "observed_branch": "feature/agent-openhands",
   "observed_dirty": 0,
   "observed_head": "3a07b57b8265d98eeebbcd4fd21339d72fac0663",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run a maintained MIT OpenHands SDK or canonical headless client.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Implement maintained OpenHands SDK client adapter",
-  "updated_at": "2026-09-08T04:05:10+00:00",
+  "updated_at": "2026-09-08T04:06:18+00:00",
   "worktree_key": "agent-systems-benchmark-agent-openhands"
 }
 ---
@@ -78,3 +78,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T04:05:10+00:00: Recorded command exit 0; command argv SHA-256
   b843a942da9e23c42becd7c8321107d1e2604df3eb69e56d1497f6f28962d4a4.
+
+- 2026-09-08T04:06:18+00:00: Native credential-free SDK probe succeeded with OpenHands SDK 1.45.0 on
+  CPython 3.12: isolated HOME/XDG roots, no persistence_dir (InMemoryFileStore), AlwaysConfirm
+  pending-action validation, a custom bounded write tool, finish event, positive aggregate usage (20
+  input/8 output), and exact workspace edit. Closed proxies exposed one denied LiteLLM remote
+  cost-map attempt, so production must force the local cost map and reject diagnostics. The first
+  all-wheel install failed because func-timeout 4.3.5 is sdist-only; sdk-only resolves 136 packages,
+  while adding openhands-tools/workspace expands to 194 packages. Use SDK-only plus ASB-owned
+  bounded tool to minimize attack surface.
