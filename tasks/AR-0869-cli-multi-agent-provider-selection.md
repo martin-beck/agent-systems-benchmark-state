@@ -12,7 +12,7 @@
   "id": "AR-0869",
   "next_action": "Extend the green provider-plan slice into exact manifest export/import and run/sweep consumption without per-agent overrides; keep Ollama fail-closed until verified daemon evidence is available, then add compare/report/help fixtures and full gates.",
   "observed_branch": "feature/cli-multi-agent-provider-selection",
-  "observed_dirty": 4,
+  "observed_dirty": 3,
   "observed_head": "559fbcc825234bb98a64ba554a53f38b004d24f6",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0869.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Select several agents and apply one preconfigured provider profile through inspectable command-line options.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Add CLI multi-agent provider selection",
-  "updated_at": "2026-09-08T22:15:44+00:00",
+  "updated_at": "2026-09-08T22:15:51+00:00",
   "worktree_key": "agent-systems-benchmark-cli-multi-agent-provider-selection"
 }
 ---
