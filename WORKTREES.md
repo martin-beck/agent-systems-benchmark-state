@@ -84,6 +84,6 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `3bcfd85dedd3` | 0 | behind 194, ahead 0 |
 | `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `410ecc95b80e` | 0 | behind 182, ahead 0 |
 | `agent-systems-benchmark-terminal-interface` | `feature/terminal-interface` | `d2e7b66ff6af` | 0 | behind 127, ahead 0 |
-| `agent-systems-benchmark-trace-interoperability` | `feature/trace-interoperability` | `289b2711774b` | 5 | behind 4, ahead 0 |
-| changed files | - | - | - | `crates/asb-protocol/src/lib.rs`, `crates/asb-store/README.md`, `crates/asb-store/src/lib.rs`, `crates/asb-protocol/src/trace.rs`, `crates/asb-store/src/trace.rs` |
+| `agent-systems-benchmark-trace-interoperability` | `feature/trace-interoperability` | `289b2711774b` | 8 | behind 4, ahead 0 |
+| changed files | - | - | - | `crates/asb-protocol/examples/generate_schemas.rs`, `crates/asb-protocol/src/lib.rs`, `crates/asb-protocol/tests/schema_conformance.rs`, `crates/asb-store/README.md`, `crates/asb-store/src/lib.rs`, `crates/asb-protocol/fixtures/v1/trace-span.json`, `crates/asb-protocol/src/trace.rs`, `crates/asb-store/src/trace.rs` |
 | `agent-systems-benchmark-verifier-integrity` | `feature/verifier-integrity` | `3fc65ea73bad` | 0 | behind 32, ahead 0 |
