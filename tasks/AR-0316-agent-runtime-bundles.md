@@ -15,7 +15,7 @@
     "AR-0309"
   ],
   "id": "AR-0316",
-  "next_action": "Define content-addressed offline runtime manifests for every supported agent and its complete transitive environment.",
+  "next_action": "Inventory the nine released agent runtime graphs against the existing asb-bundle v1 verifier, then add only disjoint agent-runtime manifest/provenance fixtures; defer Cargo/schema/release/platform and adapter registration to an explicit serialized fence.",
   "observed_branch": "feature/agent-runtime-bundles",
   "observed_dirty": 0,
   "observed_head": "26b7e5f66676302ea86da401c7fe9f103bdf555b",
@@ -25,9 +25,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make supported agent installations reproducible, license-audited, SBOM-backed, and independently verifiable.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Publish reproducible agent runtime bundles",
-  "updated_at": "2026-09-08T10:35:54+00:00",
+  "updated_at": "2026-09-08T10:36:42+00:00",
   "worktree_key": "agent-systems-benchmark-agent-runtime-bundles"
 }
 ---
@@ -49,3 +49,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T10:35:54+00:00: Recorded command exit 0; command argv SHA-256
   06beead18a298e3f0d6879a8d09cb13c5142d75dbbdb2239cd76e6afa586ecc8.
+
+- 2026-09-08T10:36:42+00:00: Selected AR-0316 as the highest-priority dependency-ready compatible
+  leaf after fresh snapshot. AR-0301 through AR-0309 are durably done. Deferred AR-0313 because
+  run-plan/asb-agents integration overlaps active AR-1003; AR-0704 lacks its plan-required
+  provider/account/quota/cost authorization; AR-0832 plan additionally requires blocked AR-0703;
+  AR-0844 requires shared integration paths. Claimed as contracts_20260906 through
+  2026-09-08T13:35:28Z. Created declared
+  /srv/data/projects/agent-systems-benchmark-agent-runtime-bundles worktree on
+  feature/agent-runtime-bundles at exact product main 26b7e5f66676302ea86da401c7fe9f103bdf555b.
+  Initial audit confirms AR-0317 already supplies signed v1 manifest/offline verification; AR-0316
+  must add complete per-agent graphs, provenance/license/SBOM agreement, and fail-closed
+  acquisition/materialization without modifying shared fences yet.
