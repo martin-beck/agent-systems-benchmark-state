@@ -18,12 +18,12 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34275414347 | `4176c404ac90` | push | Emulated aarch64 portability | in_progress:- |
-| 34275414318 | `4176c404ac90` | push | Repository quality | in_progress:- |
+| 34275414347 | `4176c404ac90` | push | Emulated aarch64 portability | completed:success |
+| 34275414318 | `4176c404ac90` | push | Repository quality | completed:success |
 | 34275414280 | `4176c404ac90` | push | Huawei MIT source headers | completed:success |
-| 34275414261 | `4176c404ac90` | push | Fault assurance | in_progress:- |
+| 34275414261 | `4176c404ac90` | push | Fault assurance | completed:success |
 | 34275414251 | `4176c404ac90` | push | Formal assurance | completed:success |
-| 34275414225 | `4176c404ac90` | push | Rust verification | in_progress:- |
+| 34275414225 | `4176c404ac90` | push | Rust verification | completed:success |
 | 34274899990 | `ef5c40762e27` | pull_request | Rust verification | completed:success |
 | 34274899874 | `ef5c40762e27` | pull_request | Repository quality | completed:success |
 | 34274899847 | `ef5c40762e27` | pull_request | Agent Workflow Quality shadow | completed:success |
