@@ -734,7 +734,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0514](tasks/AR-0514-replay-openhands.md): Qualify OpenHands replay | contracts_20260906 | Qualify replay conformance for OpenHands. | Recover exact approved OpenHands environment digest 63727569 from immutable provenance; otherwise schedule pin-reproduction repair before native replay. |
-| P0 | [AR-0853](tasks/AR-0853-coordinator-merge-attestation.md): Repair coordinator merge attestation | replay-20260906 | Repair the v0.1.4 coordinator merge attestation without rewriting published history. | Select and independently review a non-rewriting signed+DCO replacement or additive attestation for the exact v0.1.4 merge evidence. |
+| P0 | [AR-0853](tasks/AR-0853-coordinator-merge-attestation.md): Repair coordinator merge attestation | replay-20260906 | Repair the v0.1.4 coordinator merge attestation without rewriting published history. | Repair the attestation test to validate a closed fetch-free signed representation and installed manifest without requiring the unreachable historical merge object; document that limitation, rerun gates, and publish a signed successor by exact lease. |
 | P1 | [AR-0842](tasks/AR-0842-frontend-run-lifecycle.md): Implement frontend run lifecycle | quality_20260906 | Define and implement frontend-independent run lifecycle semantics. | Implement idempotent launch, cancellation, status reconnect, history, and recovery semantics. |
 | P2 | [AR-0402](tasks/AR-0402-external-code-workloads.md): Integrate SWE-bench and Aider Polyglot | root-coordination-20260906 | Add versioned external workload adapters without vendoring datasets. | Pin datasets/evaluators and evaluate image architecture parity. |
 

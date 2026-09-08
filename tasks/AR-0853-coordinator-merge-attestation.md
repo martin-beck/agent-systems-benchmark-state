@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-08T09:35:04+00:00",
   "depends_on": [],
   "id": "AR-0853",
-  "next_action": "Select and independently review a non-rewriting signed+DCO replacement or additive attestation for the exact v0.1.4 merge evidence.",
+  "next_action": "Repair the attestation test to validate a closed fetch-free signed representation and installed manifest without requiring the unreachable historical merge object; document that limitation, rerun gates, and publish a signed successor by exact lease.",
   "owner": "replay-20260906",
   "plan": "../plans/AR-0853.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the v0.1.4 coordinator merge attestation without rewriting published history.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Repair coordinator merge attestation",
-  "updated_at": "2026-09-08T07:44:08+00:00",
+  "updated_at": "2026-09-08T07:48:26+00:00",
   "worktree_key": "agent-systems-benchmark-coordinator-merge-attestation"
 }
 ---
@@ -63,3 +63,11 @@ only an independently reviewed additive repair.
 
 - 2026-09-08T07:44:08+00:00: Recorded command exit 0; command argv SHA-256
   f55f6aeba0d73d6494e9cde09521b6825f8eecd33d01ead5eeeb4521074c8068.
+
+- 2026-09-08T07:48:26+00:00: PR 11 exact head 18553d0 failed formal run 34200818455 after the
+  exhaustive model passed: the full test suite could not git show historical merge
+  e52ce3aaa59ffc4cc6f97657b6ea2c7dfceb2ac1 in a fresh public checkout (exit 128). Local checkout
+  availability was an invalid portability assumption. Product attestation facts remain unchanged;
+  successor will parse and validate the exact closed signed representation, internal object
+  relationships, manifest digest and release identity while explicitly stating it does not
+  independently prove an unavailable Git object.
