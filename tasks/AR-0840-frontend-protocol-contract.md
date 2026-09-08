@@ -2,22 +2,22 @@
 {
   "branch": "feature/frontend-protocol-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T05:46:56+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0801"
   ],
   "id": "AR-0840",
   "next_action": "Define version-negotiated frontend requests, events, capabilities, and fixtures.",
-  "owner": "root-coordination-20260906",
+  "owner": "",
   "plan": "../plans/AR-0840.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "planned",
   "summary": "Define the stable frontend control protocol contract.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Define frontend protocol contract",
-  "updated_at": "2026-09-08T02:46:56+00:00",
+  "updated_at": "2026-09-08T05:50:22+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-protocol-contract"
 }
 ---
@@ -123,3 +123,7 @@ compatibility rules, bounded errors, and generated consistency checks.
   eaf2472e4b0ec29bac3303a6d46474c99be3c0ab077feca87b1c3650d4745e53.
 
 - 2026-09-08T02:46:56+00:00: Heartbeat by root-coordination-20260906.
+
+- 2026-09-08T05:50:22+00:00: 2026-09-08T07:06:00Z: Coordinator lease expired with no active process;
+  preserve protocol-contract worktree and all artifacts. Release is lease recovery only; reclaim
+  after fresh audit.
