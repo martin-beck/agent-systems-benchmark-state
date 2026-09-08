@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 51 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 93 |
+| **Done** | Accepted, integrated, and durably verified | 94 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -185,7 +185,7 @@ flowchart LR
         AR_0867["AR-0867 - Planned"]:::status_planned
         AR_0868["AR-0868 - Planned"]:::status_planned
         AR_0869["AR-0869 - Done"]:::status_done
-        AR_0870["AR-0870 - In progress"]:::status_in_progress
+        AR_0870["AR-0870 - Done"]:::status_done
         AR_0871["AR-0871 - Planned"]:::status_planned
         AR_0872["AR-0872 - Planned"]:::status_planned
         AR_0873["AR-0873 - Planned"]:::status_planned
@@ -862,12 +862,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0806](tasks/AR-0806-tui-history-analysis.md): Add terminal history and analysis | quality_20260906 | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. | Fresh independent immutable review of second rebased candidate 2dbbde184ef78a93b63ec1a3b5eb5b02bca0d269, tree bb552eb2663f31bdd650ac69bb0198f2ce253155, exact parent/current origin/main 2219839812d9255288b8b4e0afc52396915e85a6. Verify &#x27;=&#x27; range-diff from 031a451, clean two-path scope, signature/DCO, gates, duplicate-page atomicity and AR-0875 limit; then exact force-with-lease PR #89 update and fresh exact-head CI. |
-| P1 | [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md): Add TUI multi-agent provider selection | replay_20260906 | Choose several agents and one preconfigured provider for all of them from negotiated TUI selection lists. | Push signed repair b3c19b1 with force-with-lease, then rerun exact-head PR checks; do not merge until all required jobs pass. |
 | P2 | [AR-0405](tasks/AR-0405-performance-workloads.md): Add performance and reproducibility workloads | contracts_20260906 | Assess SWE-Perf, SWE-fficiency and CORE-Bench for correctness-preserving optimization and reproducibility. | Audit the six-path fail-closed provenance checkpoint, run the complete applicable quality/privacy gates, and determine whether any suite can advance beyond planned without missing license and native paired-oracle evidence. |
 
 ### Open (1)
@@ -942,7 +941,7 @@ flowchart LR
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Evaluate maintenance, licenses and reproducibility before integration. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (93)
+### Done (94)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1022,6 +1021,7 @@ flowchart LR
 | P1 | [AR-0852](tasks/AR-0852-coordinator-path-isolation.md): Adopt coordinator path isolation fix | Unclaimed | Adopt the path-exclusive coordinator commit fix discovered during live integration. | Preserve merged v0.1.4 effect e52ce3aa without history rewrite; complete a focused signed+DCO repair or documented signed state replacement under AR-0853, then re-audit live main before releasing AR-0852. |
 | P1 | [AR-0854](tasks/AR-0854-coordinator-v020-upgrade.md): Upgrade shared workflow coordinator to v0.2.0 | Unclaimed | Adopt coordinator v0.2.0 concurrency, recovery, durable-run, replica, and vendor hardening. | Promote and claim the upgrade, vendor signed v0.2.0 in an isolated worktree, and publish only after exact-head gates pass. |
 | P1 | [AR-0869](tasks/AR-0869-cli-multi-agent-provider-selection.md): Add CLI multi-agent provider selection | Unclaimed | Select several agents and apply one preconfigured provider profile through inspectable command-line options. | Create a signed+DCO empty CI-provenance attestation atop repaired main a3696385be31c4ab86f6fb75cfa055ff6b098574, push normally, and require fresh exact-main post-merge workflows on that reachable base; preserve older historical merge-boundary limitations. |
+| P1 | [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md): Add TUI multi-agent provider selection | Unclaimed | Choose several agents and one preconfigured provider for all of them from negotiated TUI selection lists. | Push signed repair b3c19b1 with force-with-lease, then rerun exact-head PR checks; do not merge until all required jobs pass. |
 | P1 | [AR-0901](tasks/AR-0901-formal-assurance.md): Prove critical state and concurrency invariants | Unclaimed | Use bounded proofs and model tests for safety-critical domain logic. | Await independent immutable-head review of PR 14 at 2a495a99; repair any findings without merging or releasing. |
 | P1 | [AR-0902](tasks/AR-0902-fault-assurance.md): Add fuzz mutation and lifecycle fault campaigns | Unclaimed | Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection. | Run final coordination reconcile/snapshot/live doctor/full validation and release AR-0902 done only if clean synchronized state remains exact. |
 | P1 | [AR-0904](tasks/AR-0904-contract-consistency.md): Machine-check protocol and artifact consistency | Unclaimed | Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree. | Obtain fresh exact-main CI for signed+DCO main 92569367347b49c497780fa40195971ff655b0f4 using a resolvable base, then rerun final clean synchronized state validation and release only if all workflows pass. |

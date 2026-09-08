@@ -2,7 +2,7 @@
 {
   "branch": "feature/tui-multi-agent-provider-selection",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T01:59:24+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0804",
     "AR-0805",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/tui-multi-agent-provider-selection",
   "observed_dirty": 0,
   "observed_head": "679244e3af6125fddf1e7985be881a300892f3c1",
-  "owner": "replay_20260906",
+  "owner": "",
   "plan": "../plans/AR-0870.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Choose several agents and one preconfigured provider for all of them from negotiated TUI selection lists.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Add TUI multi-agent provider selection",
-  "updated_at": "2026-09-08T23:59:24+00:00",
+  "updated_at": "2026-09-08T23:59:55+00:00",
   "worktree_key": "agent-systems-benchmark-tui-multi-agent-provider-selection"
 }
 ---
@@ -120,3 +120,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-08T23:58:25+00:00: Heartbeat by replay_20260906.
 
 - 2026-09-08T23:59:24+00:00: Heartbeat by replay_20260906.
+
+- 2026-09-08T23:59:55+00:00: Implemented and merged signed no-ff 5b2236b; exact-head PR checks and
+  all exact-main postmerge workflows green; local full workspace tests passed.
