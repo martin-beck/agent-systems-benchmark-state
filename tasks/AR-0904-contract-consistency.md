@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Machine-check protocol and artifact consistency",
-  "updated_at": "2026-09-08T09:19:47+00:00",
+  "updated_at": "2026-09-08T09:20:15+00:00",
   "worktree_key": "agent-systems-benchmark-contract-consistency"
 }
 ---
@@ -68,3 +68,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T09:19:47+00:00: Recorded command exit 0; command argv SHA-256
   b298dcdf23f8e666af28773b55e9d697040a5942c693525dac2cc312e1e143ae.
+
+- 2026-09-08T09:20:15+00:00: Recorded command exit 0; command argv SHA-256
+  9393977e1e5467f7f33f3be4b57f810afa18138752eb693cd5f7033967e2e436.
