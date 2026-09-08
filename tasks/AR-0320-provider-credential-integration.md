@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate the verified environment credential resolver into the product workspace.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Integrate provider credential boundary",
-  "updated_at": "2026-09-08T14:24:15+00:00",
+  "updated_at": "2026-09-08T14:25:11+00:00",
   "worktree_key": "agent-systems-benchmark-provider-credential-integration"
 }
 ---
@@ -95,3 +95,6 @@ Implementation has not started. Read the linked plan before claiming.
   only target injection, bounded output and no credential emission; FD/helper remain explicitly
   unsupported. The one exit 127 was operator-only malformed env argv (`RUST prijUP_HOME`), corrected
   once; exit 2 was incorrect check_dco positional syntax, corrected to documented flags and green.
+
+- 2026-09-08T14:25:11+00:00: Recorded command exit 0; command argv SHA-256
+  f116bd49befeed53634995ffa1353a3996ce8c400ae5c3b99e77cf350fc5d946.
