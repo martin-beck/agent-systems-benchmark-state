@@ -57,8 +57,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-portable-metrics` | `feature/portable-metrics` | `a0f67bea1ffe` | 0 | behind 180, ahead 0 |
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `51daeb8608e5` | 0 | behind 199, ahead 0 |
 | `agent-systems-benchmark-provider-ollama` | `feature/provider-ollama` | `8137f5baa053` | 0 | behind 4, ahead 0 |
-| `agent-systems-benchmark-provider-openai` | `feature/provider-openai` | `e5cdf97dd295` | 3 | behind 3, ahead 0 |
-| changed files | - | - | - | `crates/asb-agents/src/lib.rs`, `crates/asb-agents/OPENAI.md`, `crates/asb-agents/src/openai.rs` |
+| `agent-systems-benchmark-provider-openai` | `feature/provider-openai` | `05262805acc5` | 0 | behind 3, ahead 1 |
 | `agent-systems-benchmark-provider-profile-contract` | `feature/provider-profile-contract` | `2870b68d0ca0` | 0 | behind 135, ahead 0 |
 | `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `748537c25e3a` | 0 | behind 216, ahead 0 |
 | `agent-systems-benchmark-recovery-models` | `feature/recovery-models` | `a288bb3485aa` | 0 | behind 38, ahead 0 |

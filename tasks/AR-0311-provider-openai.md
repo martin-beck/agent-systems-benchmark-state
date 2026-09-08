@@ -18,17 +18,17 @@
   "id": "AR-0311",
   "next_action": "Extend the three-path OpenAI profile patch with bounded synthetic effective-request observations and negative credential/settings/redaction evidence before candidate gates.",
   "observed_branch": "feature/provider-openai",
-  "observed_dirty": 3,
-  "observed_head": "e5cdf97dd2954e5d097b1a6c872beafd724aa12f",
+  "observed_dirty": 0,
+  "observed_head": "05262805acc538a31c8f12ed152a71026294706e",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0311.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply one default OpenAI provider profile consistently to all supported agents.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Support a shared OpenAI provider",
-  "updated_at": "2026-09-08T10:12:57+00:00",
+  "updated_at": "2026-09-08T10:13:20+00:00",
   "worktree_key": "agent-systems-benchmark-provider-openai"
 }
 ---
