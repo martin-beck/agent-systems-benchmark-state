@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 5 |
+| **In progress** | Claimed work with a live lease | 4 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 42 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 76 |
+| **Done** | Accepted, integrated, and durably verified | 77 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -61,7 +61,7 @@ flowchart LR
         AR_0308["AR-0308 - Done"]:::status_done
         AR_0309["AR-0309 - Done"]:::status_done
         AR_0310["AR-0310 - Done"]:::status_done
-        AR_0311["AR-0311 - In progress"]:::status_in_progress
+        AR_0311["AR-0311 - Done"]:::status_done
         AR_0312["AR-0312 - Done"]:::status_done
         AR_0313["AR-0313 - Planned"]:::status_planned
         AR_0314["AR-0314 - Planned"]:::status_planned
@@ -737,11 +737,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (5)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0311](tasks/AR-0311-provider-openai.md): Support a shared OpenAI provider | contracts_20260906 | Apply one default OpenAI provider profile consistently to all supported agents. | Monitor PR #73 exact head 1128595cd2f93988374be008fcecda07fef9fde4; do not merge until every required exact-head check is green and coordinator authorizes integration. |
 | P1 | [AR-0854](tasks/AR-0854-coordinator-v020-upgrade.md): Upgrade shared workflow coordinator to v0.2.0 | codex-coordinator-v020-20260908 | Adopt coordinator v0.2.0 concurrency, recovery, durable-run, replica, and vendor hardening. | Promote and claim the upgrade, vendor signed v0.2.0 in an isolated worktree, and publish only after exact-head gates pass. |
 | P1 | [AR-1003](tasks/AR-1003-execution-budgets.md): Enforce cost token and action budgets | replay_20260906 | Bound and report wall time, actions, tokens and monetary cost without treating unavailable telemetry as zero. | Obtain immutable independent review of candidate 0149f991; publish only after approval, then require exact-head hosted Kani/formal and all CI. |
 | P2 | [AR-0402](tasks/AR-0402-external-code-workloads.md): Integrate SWE-bench and Aider Polyglot | root-coordination-20260906 | Add versioned external workload adapters without vendoring datasets. | Define content-addressed external source manifests for SWE-bench 02e7a74ffd0b707aab73d203fe87bdc7c76afc8e and Polyglot 7e0611e77b54e2dea774cdc0aa00cf9f7ed6144f; include Exercism cpp 413b80a9, go 97472cfe, java f1b22a3d, javascript 9be84b9e, python 1f6aab86, rust 1d3a0f46 (all MIT), then pin evaluator/image metadata. |
@@ -809,7 +808,7 @@ flowchart LR
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Evaluate maintenance, licenses and reproducibility before integration. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (76)
+### Done (77)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -851,6 +850,7 @@ flowchart LR
 | P1 | [AR-0306](tasks/AR-0306-agent-qwen-code.md): Implement Qwen Code client adapter | Unclaimed | Run pinned Qwen Code through isolated headless stream-JSON. | Merge reviewed exact candidate 0be96c9 with a signed DCO merge commit, push exact main, run post-merge gates and require fresh exact-main CI. |
 | P1 | [AR-0307](tasks/AR-0307-agent-goose.md): Implement goose client adapter | Unclaimed | Run pinned AAIF goose in no-session structured mode. | Inspect exact-main merge 61b5dd33ba04295a476e444d8bfd338ab972507a runs 34078486469 Rust/native x86_64+aarch64, 34078486478 quality, and 34078486470 formal; release only after all green and residual/state/live audit. |
 | P1 | [AR-0310](tasks/AR-0310-provider-profile-contract.md): Define common provider profiles | Unclaimed | Normalize one provider configuration for safe translation across heterogeneous agent adapters. | Monitor exact-main hosted runs for signed merge d384c4c54a4576dadaae3a542cfc09a5e339a4fe, then run live state validation and await release authorization. |
+| P1 | [AR-0311](tasks/AR-0311-provider-openai.md): Support a shared OpenAI provider | Unclaimed | Apply one default OpenAI provider profile consistently to all supported agents. | Monitor PR #73 exact head 1128595cd2f93988374be008fcecda07fef9fde4; do not merge until every required exact-head check is green and coordinator authorizes integration. |
 | P1 | [AR-0312](tasks/AR-0312-provider-ollama.md): Support a shared local Ollama provider | Unclaimed | Apply one pinned local Ollama provider and model configuration to all supported agents. | Monitor fresh exact-head CI for PR #71 at rebased 8137f5baa0535e5d6e74d5a81e1dfbb0deaa2615; do not merge pending coordinator review. |
 | P1 | [AR-0401](tasks/AR-0401-engineering-workloads.md): Implement original engineering workloads | Unclaimed | Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API. | Await coordinator integration authorization for exact reviewed green PR #20 head 41ffc6e; retain Cargo fence, then signed no-ff merge and complete exact-main post-merge validation. |
 | P1 | [AR-0501](tasks/AR-0501-replay-evaluation.md): Evaluate replay literature and reusable tools | Unclaimed | Compare literature and record/replay implementations using identical synthetic conformance cases. | Await independent immutable-head review and coordinator integration of product PR #4; then run exact-main post-merge verification before release. |

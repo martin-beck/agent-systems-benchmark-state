@@ -2,7 +2,7 @@
 {
   "branch": "feature/provider-openai",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T12:57:57+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0301",
     "AR-0302",
@@ -20,15 +20,15 @@
   "observed_branch": "feature/provider-openai",
   "observed_dirty": 0,
   "observed_head": "1128595cd2f93988374be008fcecda07fef9fde4",
-  "owner": "contracts_20260906",
+  "owner": "",
   "plan": "../plans/AR-0311.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Apply one default OpenAI provider profile consistently to all supported agents.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Support a shared OpenAI provider",
-  "updated_at": "2026-09-08T10:27:14+00:00",
+  "updated_at": "2026-09-08T10:30:59+00:00",
   "worktree_key": "agent-systems-benchmark-provider-openai"
 }
 ---
@@ -127,3 +127,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T10:27:14+00:00: Recorded command exit 0; command argv SHA-256
   a7405a0f932d81b60ea264409f315c3b2b0f03fc7359a63c3d9d658d08971fee.
+
+- 2026-09-08T10:30:59+00:00: Released DONE after signed+DCO no-ff product merge
+  26b7e5f66676302ea86da401c7fe9f103bdf555b (parents 289b271 and approved 1128595; PR #73). Primary
+  main/origin-main are exact and clean. Fresh external-target postmerge cargo test --locked -p
+  asb-agents openai::tests passed 5/5. Exact-main workflows all succeeded: formal 34215439678,
+  aarch64 34215439679, quality 34215439681, fault 34215439690, Rust x86_64+arm 34215439695. Support
+  remains the documented pinned public OpenAI profile with secret references only; live credentialed
+  account journeys are opt-in and were not claimed.
