@@ -2,7 +2,7 @@
 {
   "branch": "feature/agent-runtime-bundles",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-08T13:35:28+00:00",
   "depends_on": [
     "AR-0301",
     "AR-0302",
@@ -16,15 +16,15 @@
   ],
   "id": "AR-0316",
   "next_action": "Define content-addressed offline runtime manifests for every supported agent and its complete transitive environment.",
-  "owner": "",
+  "owner": "contracts_20260906",
   "plan": "../plans/AR-0316.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make supported agent installations reproducible, license-audited, SBOM-backed, and independently verifiable.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Publish reproducible agent runtime bundles",
-  "updated_at": "2026-09-08T10:35:21+00:00",
+  "updated_at": "2026-09-08T10:35:28+00:00",
   "worktree_key": "agent-systems-benchmark-agent-runtime-bundles"
 }
 ---
@@ -41,3 +41,5 @@ Implementation has not started. Read the linked plan before claiming.
   serialized Cargo/schema paths; AR-0316 begins only with disjoint runtime-manifest inventory,
   provenance, and verification fixtures, while shared release/platform/Cargo/schema integration
   remains deferred to a coordinator fence.
+
+- 2026-09-08T10:35:28+00:00: Claimed by contracts_20260906.
