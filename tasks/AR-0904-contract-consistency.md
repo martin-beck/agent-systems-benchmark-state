@@ -13,11 +13,11 @@
   "plan": "../plans/AR-0904.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Machine-check protocol and artifact consistency",
-  "updated_at": "2026-09-06T15:09:13+00:00",
+  "updated_at": "2026-09-08T09:10:05+00:00",
   "worktree_key": "agent-systems-benchmark-contract-consistency"
 }
 ---
@@ -26,3 +26,6 @@
 Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree.
 
 Implementation has not started. Read the linked plan before claiming.
+
+- 2026-09-08T09:10:05+00:00: Dependencies AR-0101 and AR-1001 are done; promote machine-checkable
+  contract consistency as the next independent P1 lane.
