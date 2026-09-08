@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt the path-exclusive coordinator commit fix discovered during live integration.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Adopt coordinator path isolation fix",
-  "updated_at": "2026-09-08T07:33:29+00:00",
+  "updated_at": "2026-09-08T07:34:50+00:00",
   "worktree_key": "agent-systems-benchmark-shared-coordinator"
 }
 ---
@@ -51,3 +51,6 @@ v0.1.3 to v0.1.4 after AR-0851 was completed.
 
 - 2026-09-08T07:33:29+00:00: Recorded command exit 0; command argv SHA-256
   ccbec4b2be4e66a616e7194142ff049d96fc80d9966f6f8d05321acb221f974d.
+
+- 2026-09-08T07:34:50+00:00: Recorded command exit 0; command argv SHA-256
+  261d8b5a4c9334d9a40c2f2a208a49199ea6857aa72ae9bc41982853b5a25221.
