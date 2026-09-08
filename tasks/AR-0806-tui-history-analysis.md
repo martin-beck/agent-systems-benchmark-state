@@ -10,7 +10,7 @@
     "AR-1001"
   ],
   "id": "AR-0806",
-  "next_action": "Add recent-run browsing, exact repeat, comparison, and result analysis views.",
+  "next_action": "Obtain serialized asb-control protocol/schema and asb-cli backend fence to add bounded privacy-reviewed history detail and AR-1001 compatibility/confounder projections; then extend the tested one-path TUI model, regenerate schemas/fixtures, and run full gates.",
   "observed_branch": "feature/tui-history-analysis",
   "observed_dirty": 1,
   "observed_head": "559fbcc825234bb98a64ba554a53f38b004d24f6",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-08T21:44:37+00:00",
+  "updated_at": "2026-09-08T21:45:04+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
@@ -57,3 +57,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T21:44:37+00:00: Recorded command exit 0; command argv SHA-256
   ace05438f608a43f7639942908a4605810a3b215e3a8520d961ed8e67bf6efdb.
+
+- 2026-09-08T21:45:04+00:00: Implemented the first bounded AR-0806 slice in
+  crates/asb-tui/src/lib.rs only: immutable paginated history with negotiated bounds and
+  duplicate/race rejection; explicit completed-run repeat with a new validated plan and surfaced
+  digest drift; terminal-only distinct analysis selection that never infers comparability from
+  opaque metadata; confirmed sensitive-artifact metadata access; redacted plain rendering. Focused
+  cargo test --locked -p asb-tui passes 16/16, focused all-target Clippy -D warnings passes, rustdoc
+  -D warnings passes, fmt applied and diff-check clean. Contract audit found the remaining
+  acceptance data is not representable: RunSummary has no
+  time/agent/provider-source/workload/platform/integrity/outcome fields, while AnalysisSummary
+  exposes only run_count plus an opaque digest and therefore cannot carry AR-1001
+  compatibility/confounder results. No unqualified analysis claim was added.
