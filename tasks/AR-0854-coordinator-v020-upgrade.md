@@ -10,14 +10,16 @@
   "plan": "../plans/AR-0854.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Adopt coordinator v0.2.0 concurrency, recovery, durable-run, replica, and vendor hardening.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Upgrade shared workflow coordinator to v0.2.0",
-  "updated_at": "2026-09-08T10:09:00+00:00",
+  "updated_at": "2026-09-08T10:30:36+00:00",
   "worktree_key": "agent-systems-benchmark-coordinator-v020"
 }
 ---
 
 This task upgrades only the pinned shared coordinator artifact and its directly associated
 verification and documentation.
+
+- 2026-09-08T10:30:36+00:00: Signed v0.2.0 release and both upstream green CI runs verified.
