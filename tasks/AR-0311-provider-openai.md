@@ -18,7 +18,7 @@
   "id": "AR-0311",
   "next_action": "Implement the default OpenAI provider profile for every adapter that proves compatible support.",
   "observed_branch": "feature/provider-openai",
-  "observed_dirty": 0,
+  "observed_dirty": 3,
   "observed_head": "e5cdf97dd2954e5d097b1a6c872beafd724aa12f",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0311.md",
@@ -26,9 +26,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply one default OpenAI provider profile consistently to all supported agents.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Support a shared OpenAI provider",
-  "updated_at": "2026-09-08T10:00:46+00:00",
+  "updated_at": "2026-09-08T10:04:55+00:00",
   "worktree_key": "agent-systems-benchmark-provider-openai"
 }
 ---
