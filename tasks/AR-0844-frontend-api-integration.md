@@ -10,7 +10,7 @@
     "AR-0843"
   ],
   "id": "AR-0844",
-  "next_action": "Hold immutable candidate 76cc86f23a48d5af275b2fed9d70f54199e38637 for independent review; do not publish or merge before approval.",
+  "next_action": "Monitor PR #76 exact head 76cc86f23a48d5af275b2fed9d70f54199e38637 CI to terminal; investigate failures and do not merge without coordinator authorization.",
   "observed_branch": "feature/frontend-api-integration",
   "observed_dirty": 0,
   "observed_head": "76cc86f23a48d5af275b2fed9d70f54199e38637",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate and qualify the frontend control API as an independent boundary.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Integrate frontend control API",
-  "updated_at": "2026-09-08T11:38:47+00:00",
+  "updated_at": "2026-09-08T11:39:16+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-api-integration"
 }
 ---
@@ -115,3 +115,9 @@ status, no implicit network listener exists, and exact-head CI/post-merge recove
 
 - 2026-09-08T11:38:47+00:00: Recorded command exit 0; command argv SHA-256
   4b1cc29730f5fdc22f2168c1b3b1a548e66b108202ac6bcff43b771b9a27959e.
+
+- 2026-09-08T11:39:16+00:00: Independent review passed and immutable candidate published as PR #76.
+  GitHub reports exact head 76cc86f23a48d5af275b2fed9d70f54199e38637 and live base
+  b6078bb1ca2ee8f35973ffab9740c2c12dd4126e. Fresh exact-head runs: Rust 34221777025, quality
+  34221777026, formal 34221777049, fault 34221777021, emulated aarch64 34221777043, AWQ shadow
+  34221777029. AWQ is green; required gates are in progress..
