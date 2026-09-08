@@ -19,7 +19,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 34241104784 | `e0554b5590cd` | push | Rust verification | in_progress:- |
 | 34241104774 | `e0554b5590cd` | push | Fault assurance | in_progress:- |
-| 34241104757 | `e0554b5590cd` | push | Repository quality | in_progress:- |
+| 34241104757 | `e0554b5590cd` | push | Repository quality | completed:failure |
 | 34241104703 | `e0554b5590cd` | push | Emulated aarch64 portability | in_progress:- |
 | 34241104676 | `e0554b5590cd` | push | Formal assurance | in_progress:- |
 | 34240217090 | `e8fed7e572b6` | pull_request | Formal assurance | completed:success |
