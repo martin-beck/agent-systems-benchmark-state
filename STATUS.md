@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 55 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 60 |
+| **Done** | Accepted, integrated, and durably verified | 61 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -84,7 +84,7 @@ flowchart LR
         AR_0502["AR-0502 - Done"]:::status_done
         AR_0503["AR-0503 - Done"]:::status_done
         AR_0504["AR-0504 - Done"]:::status_done
-        AR_0505["AR-0505 - In progress"]:::status_in_progress
+        AR_0505["AR-0505 - Done"]:::status_done
         AR_0506["AR-0506 - Done"]:::status_done
         AR_0507["AR-0507 - Done"]:::status_done
         AR_0508["AR-0508 - Done"]:::status_done
@@ -723,11 +723,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0505](tasks/AR-0505-agent-replay-conformance.md): Prove real-agent replay conformance | quality_20260906 | Test each actual client through recording and offline replay of engineering tasks. | Independently review the exact current-main four-agent native loopback evidence and capability limits; if accepted, release AR-0505 done without adding duplicate aggregate-matrix product changes. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
 | P1 | [AR-1002](tasks/AR-1002-verifier-integrity.md): Protect verifiers and support offline rescoring | replay_20260906 | Separate immutable graders from agent work and version scoring independently of execution. | Design the immutable observation and score-revision contract using Inspect and Harbor concepts. |
 
@@ -800,7 +799,7 @@ flowchart LR
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Evaluate maintenance, licenses and reproducibility before integration. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (60)
+### Done (61)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -846,6 +845,7 @@ flowchart LR
 | P1 | [AR-0502](tasks/AR-0502-replay-cassettes.md): Implement immutable response cassette format | Unclaimed | Store versioned provider requests, event streams, causal IDs and integrity metadata. | Run full coordination validation, reconcile/snapshot/live doctor, verify clean synchronized repositories, then release AR-0502 done and return Cargo fence. |
 | P1 | [AR-0503](tasks/AR-0503-strict-replay.md): Implement strict provider response replay | Unclaimed | Serve local recorded responses while real agent and tools execute. | Run live coordination reconciliation/doctor and complete state validation; release AR-0503 done only if clean synchronized evidence remains exact. |
 | P1 | [AR-0504](tasks/AR-0504-replay-pacing.md): Implement pacing and replay overhead assessment | Unclaimed | Support immediate, fixed-latency, original-paced and seeded synthetic scenarios. | Run live coordination doctor/reconciliation, then release AR-0504 done with exact postmerge evidence. |
+| P1 | [AR-0505](tasks/AR-0505-agent-replay-conformance.md): Prove real-agent replay conformance | Unclaimed | Test each actual client through recording and offline replay of engineering tasks. | Independently review the exact current-main four-agent native loopback evidence and capability limits; if accepted, release AR-0505 done without adding duplicate aggregate-matrix product changes. |
 | P1 | [AR-0603](tasks/AR-0603-csb-execution-assurance.md): Establish pinned CSB execution and conformance boundary | Unclaimed | Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary. | Completed; retain explicit Ubuntu 24.04 x86_64 support limits. |
 | P1 | [AR-0701](tasks/AR-0701-platform-manifests.md): Pin distribution and architecture support matrix | Unclaimed | Define Ubuntu, Debian, Fedora, enterprise, openSUSE, Arch, Alpine and openEuler target manifests. | Run final coordination repository validation and live doctor, then release AR-0701 done if state and all product worktrees remain consistent. |
 | P1 | [AR-0707](tasks/AR-0707-emulated-aarch64-portability.md): Qualify emulated aarch64 portability | Unclaimed | Add explicit emulated-aarch64 portability qualification without claiming native support. | Provide a reproducible x86_64-hosted aarch64 VM/emulation lane for userspace portability and negative qualification only. |
