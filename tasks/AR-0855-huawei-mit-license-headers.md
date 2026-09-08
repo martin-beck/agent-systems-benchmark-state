@@ -15,11 +15,11 @@
   "plan": "../plans/AR-0855.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files.",
-  "task_revision": 177,
+  "task_revision": 178,
   "title": "Enforce Huawei MIT source headers",
-  "updated_at": "2026-09-08T18:27:34+00:00",
+  "updated_at": "2026-09-08T18:40:12+00:00",
   "worktree_key": "agent-systems-benchmark-huawei-mit-headers"
 }
 ---
@@ -501,3 +501,7 @@ and fresh coordinator snapshot before claiming. Do not modify vendored coordinat
   4c7bb1f6b050d56c197ee9ddd6e57fe521eae175f5043c9fb98b169f7b2d5407, retaining source commit
   b123b226. Fresh empty-cache fetch and full TLC/Alloy evidence passed. Await fresh independent
   exact-head review/merge and immutable coordinator vendor sync; do not hand-edit state vendor.
+
+- 2026-09-08T18:40:12+00:00: Authorized publication: merge independently approved exact PR #82 head
+  7add29f1 over exact base b2707c using signed+DCO merge workflow, verify post-main CI, then
+  complete product task while preserving coordinator-release state-vendor dependency.
