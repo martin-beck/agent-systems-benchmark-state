@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate perf and optional eBPF diagnostics without making privileged tools mandatory.",
-  "task_revision": 160,
+  "task_revision": 161,
   "title": "Add optional kernel diagnostics",
-  "updated_at": "2026-09-08T23:04:04+00:00",
+  "updated_at": "2026-09-08T23:08:16+00:00",
   "worktree_key": "agent-systems-benchmark-kernel-diagnostics"
 }
 ---
@@ -457,3 +457,6 @@ Implementation has not started. Read the linked plan before claiming.
   because cargo/rustup is absent from the active PATH.
 
 - 2026-09-08T23:04:04+00:00: Heartbeat by replay_20260906.
+
+- 2026-09-08T23:08:16+00:00: Recorded command exit 127; command argv SHA-256
+  2fe17c6eaf7bae7dc9766ac87ff68bdf3fe0f117a8bf6554af84b893c4f9fa4a.
