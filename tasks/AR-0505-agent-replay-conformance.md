@@ -16,16 +16,16 @@
   "next_action": "Rebase the clean conformance worktree onto exact current product main, then rerun the four-agent pinned native loopback capture/replay integration audit without weakening strict request comparison or duplicating AR-0515.",
   "observed_branch": "feature/agent-replay-conformance",
   "observed_dirty": 0,
-  "observed_head": "678ba7c8593a52beb8f3279ddd452245294131e7",
+  "observed_head": "3a07b57b8265d98eeebbcd4fd21339d72fac0663",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0505.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Test each actual client through recording and offline replay of engineering tasks.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Prove real-agent replay conformance",
-  "updated_at": "2026-09-08T02:50:09+00:00",
+  "updated_at": "2026-09-08T02:50:42+00:00",
   "worktree_key": "agent-systems-benchmark-agent-replay-conformance"
 }
 ---
