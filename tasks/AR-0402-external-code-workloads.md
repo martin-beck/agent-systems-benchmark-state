@@ -2,7 +2,7 @@
 {
   "branch": "feature/external-code-workloads",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T11:57:39+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0401"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/external-code-workloads",
   "observed_dirty": 0,
   "observed_head": "aa021eb5272bb7ca45100f2f1d6166ec61744ec8",
-  "owner": "root-coordination-20260906",
+  "owner": "",
   "plan": "../plans/AR-0402.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T11:54:15+00:00",
+  "updated_at": "2026-09-08T11:59:37+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -156,3 +156,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T11:54:15+00:00: Recorded command exit 0; command argv SHA-256
   7120abf6e3927d0cdedeb0cd3f91b0588f7425e8ec544de15c1db999f3b35ddd.
+
+- 2026-09-08T11:59:37+00:00: Lease expired during coordinated merge/CI repair; durable effects
+  audited, worktree clean, no overlap. Reopen for explicit re-claim.
