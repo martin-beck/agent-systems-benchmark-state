@@ -10,7 +10,7 @@
     "AR-0843"
   ],
   "id": "AR-0844",
-  "next_action": "Integrate independently reviewed frontend API components and qualify standalone runner operation.",
+  "next_action": "Run focused asb-control/asb-cli suites and no-network-listener source/behavior audit on the one-file reconnect continuity delta, then full applicable gates and signed candidate review.",
   "observed_branch": "feature/frontend-api-integration",
   "observed_dirty": 1,
   "observed_head": "4523da9629ff09451a0a2d2fe332d80bbb1320de",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate and qualify the frontend control API as an independent boundary.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Integrate frontend control API",
-  "updated_at": "2026-09-08T10:54:41+00:00",
+  "updated_at": "2026-09-08T10:55:27+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-api-integration"
 }
 ---
@@ -59,3 +59,13 @@ status, no implicit network listener exists, and exact-head CI/post-merge recove
 
 - 2026-09-08T10:54:41+00:00: Recorded command exit 0; command argv SHA-256
   9d93ce0fac4a96ad7c67e0ee8505318ae12247ba0bc375ed6a23355490291e82.
+
+- 2026-09-08T10:55:27+00:00: Created the declared isolated worktree at exact product main
+  4523da9629ff09451a0a2d2fe332d80bbb1320de. Existing production tests already cover standalone
+  backend completion, exclusive worker lifetime, durable idempotent recovery, and disconnect
+  survival. Added one-file real Unix integration assertions that capture the pre-disconnect event
+  cursor, reconnect after launch, require the next contiguous RunStarted event for the same run,
+  then require contiguous terminal RunCompleted evidence after authoritative status refresh. Focused
+  exact test passed: 1 passed, 0 failed; fmt and diff-check passed. Exit 127 was missing pinned
+  cargo PATH and exit 2 was a mistyped cargo fmt argument; both operator-only, no semantic test
+  failure, preserved scope.
