@@ -13,6 +13,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P1 | [AR-0806](tasks/AR-0806-tui-history-analysis.md): Add terminal history and analysis | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. | Add recent-run browsing, exact repeat, comparison, and result analysis views. | - |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary. | - |
 
 ## Blocked
@@ -36,7 +37,6 @@ Never edit this file directly.
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | Define authorized reservation, provisioning, teardown, privacy, cost, and evidence control for genuine native cells. | - |
 | P1 | [AR-0705](tasks/AR-0705-native-debian-capacity.md): Provide native Debian capacity | Provide genuine Debian native qualification cells. | Provision and qualify genuine booted Debian x86_64 and aarch64 cells with cleanup and provenance. | - |
 | P1 | [AR-0706](tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Provide genuine openEuler native qualification cells. | Provision and qualify genuine booted openEuler x86_64 and aarch64 cells with cleanup and provenance. | - |
-| P1 | [AR-0806](tasks/AR-0806-tui-history-analysis.md): Add terminal history and analysis | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. | Add recent-run browsing, exact repeat, comparison, and result analysis views. | - |
 | P1 | [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md): Qualify terminal frontend usability and isolation | Qualify the standalone TUI across terminals and platforms without perturbing benchmark results. | Independently qualify terminal UX, accessibility, isolation, packaging, and failure recovery. | - |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Write and execute end-to-end workflows for the core CLI and automation interfaces. | - |
 | P1 | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Write and validate task-oriented workflows for the standalone terminal frontend. | - |
