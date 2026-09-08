@@ -11,7 +11,7 @@
   "id": "AR-0309",
   "next_action": "Extend checkpoint 725c40b with malformed-evidence, symlink, cancellation, action-ceiling and cleanup negatives, then request the serialized lib.rs registration fence.",
   "observed_branch": "feature/agent-openhands",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "c08c7b2bc1fd65d1547a54ae1f077badef592e3f",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0309.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run a maintained MIT OpenHands SDK or canonical headless client.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Implement maintained OpenHands SDK client adapter",
-  "updated_at": "2026-09-08T04:29:42+00:00",
+  "updated_at": "2026-09-08T04:30:26+00:00",
   "worktree_key": "agent-systems-benchmark-agent-openhands"
 }
 ---
