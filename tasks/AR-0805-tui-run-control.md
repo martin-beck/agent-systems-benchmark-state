@@ -10,7 +10,7 @@
     "AR-0804"
   ],
   "id": "AR-0805",
-  "next_action": "Amend and SSH-resign the unpublished candidate with the post-terminal recovery repair, then run commit-range signature/DCO/policy/Gitleaks/focused checks and request fresh immutable review.",
+  "next_action": "Fresh independent immutable review of unpublished candidate 84f03f402ba7e9ae1fb23f99404449efa33db948 against exact parent b2707c482876dcfb42c756c39165f6ecdb5c7c10. Verify terminal-to-needs_reconciliation convergence and all accumulated fixes before publication.",
   "observed_branch": "feature/tui-run-control",
   "observed_dirty": 0,
   "observed_head": "84f03f402ba7e9ae1fb23f99404449efa33db948",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T18:04:15+00:00",
+  "updated_at": "2026-09-08T18:04:55+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -312,3 +312,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T18:04:15+00:00: Recorded command exit 0; command argv SHA-256
   452369a809fab27760b6b144709a0f4391c7d5528d354659e496f37d1470af0c.
+
+- 2026-09-08T18:04:55+00:00: Final recovery repair is complete in signed unpublished candidate
+  84f03f402ba7e9ae1fb23f99404449efa33db948, tree c3a388a8227b5701aedaadd9def14af134ca9463, exact
+  parent b2707c482876dcfb42c756c39165f6ecdb5c7c10. One clean path, crates/asb-tui/src/lib.rs
+  (+796/-1). A strictly higher authoritative revision may now move any prior state, including
+  Completed, Failed, or Cancelled, to NeedsReconciliation; same-revision mutation remains rejected.
+  Focused post-terminal status and ReconciliationRequired event cases pass, bringing asb-tui to
+  13/13. Full fmt/workspace clippy/tests/docs/release,
+  contract/coverage/failure/platform/workflow/dependency/privacy gates all passed; wrapper
+  post-command lock timeout was separately classified after commands. Post-commit signature, DCO,
+  repository policy, range Gitleaks, diff-check, focused tests and clippy pass. Broader dashboard
+  protocol/resource/native evidence remains unclaimed.
