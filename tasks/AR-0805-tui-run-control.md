@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T17:46:37+00:00",
+  "updated_at": "2026-09-08T18:00:09+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -285,3 +285,6 @@ Implementation has not started. Read the linked plan before claiming.
   policy, commit-range Gitleaks, signature, DCO, and diff gates all pass. Prior global interleaving,
   plan digest binding, immutable summary checks, colon IDs, and checked overflow remain covered.
   Broader dashboard protocol/resource/native limits remain explicit.
+
+- 2026-09-08T18:00:09+00:00: Recorded command exit 1; command argv SHA-256
+  8ea03d17613dd2f6a1a18d43e435bf77164a7fddd1183d0ac3123f66798cad13.
