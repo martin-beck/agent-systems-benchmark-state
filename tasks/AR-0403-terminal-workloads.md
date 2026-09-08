@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Import terminal tasks through an adapter to the published harness or task format.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Integrate Terminal-Bench workloads",
-  "updated_at": "2026-09-08T17:08:55+00:00",
+  "updated_at": "2026-09-08T17:29:53+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-workloads"
 }
 ---
@@ -207,3 +207,6 @@ Implementation has not started. Read the linked plan before claiming.
   same-revision mutation, status/launch plan-digest mismatch, colon identities, and u64::MAX cursor.
   AR-0805 scope/privacy and explicit unimplemented evidence limits otherwise appear sound. No
   AR-0805 path was mutated.
+
+- 2026-09-08T17:29:53+00:00: Recorded command exit 0; command argv SHA-256
+  91718e67984e4fa8a5876aa7f097559fa9592bfc9cc402641f7e3a62508748c8.
