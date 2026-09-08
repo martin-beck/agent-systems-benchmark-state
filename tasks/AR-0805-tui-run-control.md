@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T16:40:12+00:00",
+  "updated_at": "2026-09-08T16:40:32+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -74,3 +74,6 @@ Implementation has not started. Read the linked plan before claiming.
   non-test library build. This is a source compile failure, not environment or harness. Corrective
   scope is import-only: restore MutationParams at module scope and move AttemptId/RunId into the
   test module.
+
+- 2026-09-08T16:40:32+00:00: Recorded command exit 0; command argv SHA-256
+  61c42c9a70f10e57aabc5a3c2e240492450fbc505076e7f32298ad23f46936a0.
