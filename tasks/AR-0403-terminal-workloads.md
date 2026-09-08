@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Import terminal tasks through an adapter to the published harness or task format.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Integrate Terminal-Bench workloads",
-  "updated_at": "2026-09-08T16:49:06+00:00",
+  "updated_at": "2026-09-08T17:08:55+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-workloads"
 }
 ---
@@ -197,3 +197,13 @@ Implementation has not started. Read the linked plan before claiming.
   b2707c48. Runs: Rust 34253298749, emulated aarch64 34253298806, fault 34253298826, quality
   34253298831, formal 34253298850 are pending; AWQ shadow 34253298884 passed. No native
   reference-agent/oracle, image/SBOM, reset, network isolation, or aarch64 support claim is made.
+
+- 2026-09-08T17:08:55+00:00: Read-only independent AR-0805 review BLOCKS its current dirty one-file
+  slice on exact protocol semantics: the TUI rejects valid other-run events from the global event
+  journal and cannot progress its cursor; accepts same-revision status state changes and immutable
+  plan digest drift; does not bind the accepted launch summary to the exact PlanReference digest;
+  and rejects protocol-valid colon identities. Saturating revision increment also needs checked
+  exhaustion. Required regressions: interleaved concurrent runs including post-terminal events,
+  same-revision mutation, status/launch plan-digest mismatch, colon identities, and u64::MAX cursor.
+  AR-0805 scope/privacy and explicit unimplemented evidence limits otherwise appear sound. No
+  AR-0805 path was mutated.
