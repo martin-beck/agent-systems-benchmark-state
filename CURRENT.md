@@ -16,6 +16,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0312](tasks/AR-0312-provider-ollama.md): Support a shared local Ollama provider | Apply one pinned local Ollama provider and model configuration to all supported agents. | Implement a loopback-only local Ollama profile and prove every compatible adapter translation. | - |
+| P1 | [AR-1008](tasks/AR-1008.md): Integrate Agent Workflow Quality in shadow mode | Pin AWQ v0.1.0 in Agent Systems Benchmark and its state repository without replacing native gates or coordinator behavior. | Claim, create an isolated product worktree, add pinned policies and shadow workflows to both repositories, then publish reviewed evidence. | - |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary. | - |
 
 ## Blocked
