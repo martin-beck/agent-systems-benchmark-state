@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate perf and optional eBPF diagnostics without making privileged tools mandatory.",
-  "task_revision": 192,
+  "task_revision": 193,
   "title": "Add optional kernel diagnostics",
-  "updated_at": "2026-09-08T23:22:07+00:00",
+  "updated_at": "2026-09-08T23:27:42+00:00",
   "worktree_key": "agent-systems-benchmark-kernel-diagnostics"
 }
 ---
@@ -561,3 +561,6 @@ Implementation has not started. Read the linked plan before claiming.
   MalformedEvidence. Replaced it with a deterministic executable fixture. Normal focused tests,
   repeated cargo llvm-cov runs, docs, headers and policy checks pass. Signed repair d11f818 was
   pushed and follow-up PR #90 opened against exact main 3514089.
+
+- 2026-09-08T23:27:42+00:00: Recorded command exit 0; command argv SHA-256
+  05c95c82b03082527050cc8f68c6f85e25b7c458eb5292520ba2e45e48a00936.
