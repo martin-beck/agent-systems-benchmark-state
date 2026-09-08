@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run a maintained MIT OpenHands SDK or canonical headless client.",
-  "task_revision": 90,
+  "task_revision": 91,
   "title": "Implement maintained OpenHands SDK client adapter",
-  "updated_at": "2026-09-08T05:00:15+00:00",
+  "updated_at": "2026-09-08T05:02:43+00:00",
   "worktree_key": "agent-systems-benchmark-agent-openhands"
 }
 ---
@@ -295,3 +295,6 @@ Implementation has not started. Read the linked plan before claiming.
   rustdoc -D warnings pass. A mistyped venv command and two initially malformed patch hunks were
   rejected without product effect; subsequent exact patches were verified. AR remains in progress;
   v1.45.0 is unsupported and unapproved distributions fail closed.
+
+- 2026-09-08T05:02:43+00:00: Recorded command exit 0; command argv SHA-256
+  fe204399f220f841bee9c39db2ae7784fe4736d9a531e274985da7e821c202c8.
