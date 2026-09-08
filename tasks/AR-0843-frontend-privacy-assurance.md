@@ -8,7 +8,7 @@
     "AR-0841"
   ],
   "id": "AR-0843",
-  "next_action": "Add fail-closed forged/unbound artifact and ancestor-symlink tests, then bind metadata lookup to authoritative store evidence without exposing content.",
+  "next_action": "Retry the no-mutation adversarial test insertion once using the verified single-argument apply_patch wrapper form, then run only that test to capture the expected pre-repair failure.",
   "observed_branch": "feature/frontend-privacy-assurance",
   "observed_dirty": 0,
   "observed_head": "ba97a20f60f39b4c5ef601a7dade148276a631d6",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify frontend privacy, artifact access, and fault behavior.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Assure frontend privacy and faults",
-  "updated_at": "2026-09-08T08:32:49+00:00",
+  "updated_at": "2026-09-08T08:34:36+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-privacy-assurance"
 }
 ---
@@ -67,3 +67,9 @@ redaction failures; prove no credentials, prompts, transcripts, or private paths
 
 - 2026-09-08T08:32:49+00:00: Recorded command exit 1; command argv SHA-256
   3c8e85a83c5835d84fb596ff3c9b958e002d65acd897e06f4ae3de97fb6feeba.
+
+- 2026-09-08T08:34:36+00:00: Classified 2026-09-08T08:32:49Z exit 1 as harness-only patch transport
+  failure: apply_patch rejected argv because its first argument did not begin with the literal patch
+  header. No product mutation occurred; AR-0843 worktree remains clean at
+  ba97a20f60f39b4c5ef601a7dade148276a631d6. Corrective action is a distinct verified single-argument
+  invocation, not repetition of the malformed argv.
