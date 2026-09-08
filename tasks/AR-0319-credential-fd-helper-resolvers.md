@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add explicit file-descriptor and helper credential references without ambient-secret fallback.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Implement credential FD and helper resolvers",
-  "updated_at": "2026-09-08T19:17:16+00:00",
+  "updated_at": "2026-09-08T19:18:01+00:00",
   "worktree_key": "agent-systems-benchmark-credential-fd-helper-resolvers"
 }
 ---
@@ -284,3 +284,6 @@ Implementation has not started. Read the linked plan before claiming.
   fmt and diff-check pass. An initial compile exposed only Read/Write by_ref ambiguity and was
   repaired by fully qualified writes. Candidate worktree is clean. Full successor gates remain
   pending.
+
+- 2026-09-08T19:18:01+00:00: Recorded command exit 0; command argv SHA-256
+  3d560b4e9adeff801cf1cc1ffcfea302c3f94f9d6b23942a4f83c47d8bdc1717.
