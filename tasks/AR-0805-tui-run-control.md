@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T16:22:57+00:00",
+  "updated_at": "2026-09-08T16:23:19+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -36,3 +36,6 @@ Implementation has not started. Read the linked plan before claiming.
   source-header fence, which overlaps asb-tui source.
 
 - 2026-09-08T16:22:57+00:00: Claimed by quality_20260906.
+
+- 2026-09-08T16:23:19+00:00: Recorded command exit 129; command argv SHA-256
+  6fbe289a70903596c35c58cb3776d1e022f9eaa51e506a69b65d3c420dd6437b.
