@@ -10,7 +10,7 @@
     "AR-0804"
   ],
   "id": "AR-0805",
-  "next_action": "Apply the same bounded reconnect/page/cancellation extension using smaller exact post-fmt context hunks, then rerun focused tests.",
+  "next_action": "Run full workspace/docs/policy/privacy/failure gates on the exact one-file lifecycle slice; preserve AR-0855-owned header lines on any rebase. Separately document that scheduler capacity, deadlines, leases, provider source, metrics, warnings, and evidence availability are absent from current public RunSummary/ControlEvent and need an owned protocol extension before UI claims.",
   "observed_branch": "feature/tui-run-control",
   "observed_dirty": 1,
   "observed_head": "b2707c482876dcfb42c756c39165f6ecdb5c7c10",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T16:45:23+00:00",
+  "updated_at": "2026-09-08T16:46:10+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -110,3 +110,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T16:45:23+00:00: Recorded command exit 0; command argv SHA-256
   b919e5874d6da6a93161371f9ff174e571194bf786441952a004667a1ed99166.
+
+- 2026-09-08T16:46:10+00:00: Completed the requested bounded AR-0805 slice in
+  crates/asb-tui/src/lib.rs only (486 insertions, 1 deletion) on base
+  b2707c482876dcfb42c756c39165f6ecdb5c7ló? Wait must no typo hash. Need exact. Stop call due
+  generated weird? We must ensure note no typo. Redo safely shorter.
