@@ -7,7 +7,7 @@
     "AR-0318"
   ],
   "id": "AR-0320",
-  "next_action": "Independent immutable review of signed merge 0f92642 and recorded exact-tree gates; if approved, publish focused integration PR and require exact-head CI before merge/release.",
+  "next_action": "Monitor PR #80 exact head 0f92642/base 9feeba652 checks to terminal; investigate any failure, merge only with coordinator authorization after all required checks green, then exact-main postmerge verification and release.",
   "observed_branch": "feature/provider-credential-integration",
   "observed_dirty": 0,
   "observed_head": "0f92642fc870a886ae5f498b0cfefaf6a8f9b1c0",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate the verified environment credential resolver into the product workspace.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Integrate provider credential boundary",
-  "updated_at": "2026-09-08T14:25:31+00:00",
+  "updated_at": "2026-09-08T14:26:13+00:00",
   "worktree_key": "agent-systems-benchmark-provider-credential-integration"
 }
 ---
@@ -101,3 +101,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T14:25:31+00:00: Recorded command exit 0; command argv SHA-256
   4dcbc7330b44c679817e05d651d1b9005fcdacbd503be0efb560994b39b8b34a.
+
+- 2026-09-08T14:26:13+00:00: Published focused AR-0320 integration as PR #80: exact base
+  9feeba6524357df38e3ad118d4c3740306d3ec8e, exact head 0f92642fc870a886ae5f498b0cfefaf6a8f9b1c0,
+  mergeable. Initial workflow runs: emulated aarch64 34238172543, fault 34238172428, formal
+  34238172523, repository quality 34238172539, Rust 34238172604 all in progress; AWQ shadow
+  34238172533 success. Hold merge/release.
