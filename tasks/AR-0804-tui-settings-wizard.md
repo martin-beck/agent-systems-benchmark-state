@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Guide users through agents, providers, workloads, resources, replay, metrics, and output settings.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Build the terminal settings wizard",
-  "updated_at": "2026-09-08T15:44:26+00:00",
+  "updated_at": "2026-09-08T15:50:02+00:00",
   "worktree_key": "agent-systems-benchmark-tui-settings-wizard"
 }
 ---
@@ -166,3 +166,6 @@ Implementation has not started. Read the linked plan before claiming.
   Signature/show-check pass; push used exact main force-with-lease. PR #83 reports MERGED and local
   main/origin/main are clean and equal d51ee9c. Fresh five-workflow exact-main matrix is active;
   hold release.
+
+- 2026-09-08T15:50:02+00:00: Recorded command exit 0; command argv SHA-256
+  75704dee64f1e4c9098c5869decdade51510717f4bc51af7cc5446c20dd3f9cb.
