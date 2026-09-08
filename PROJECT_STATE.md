@@ -18,9 +18,9 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 34232145161 | `9feeba652435` | push | Fault assurance | completed:success |
-| 34232145154 | `9feeba652435` | push | Rust verification | in_progress:- |
-| 34232145085 | `9feeba652435` | push | Emulated aarch64 portability | in_progress:- |
-| 34232145081 | `9feeba652435` | push | Repository quality | in_progress:- |
+| 34232145154 | `9feeba652435` | push | Rust verification | completed:success |
+| 34232145085 | `9feeba652435` | push | Emulated aarch64 portability | completed:success |
+| 34232145081 | `9feeba652435` | push | Repository quality | completed:success |
 | 34232145018 | `9feeba652435` | push | Formal assurance | completed:success |
 | 34231327794 | `595b34542b31` | push | Fault assurance | completed:success |
 | 34231326708 | `595b34542b31` | push | Repository quality | completed:success |
