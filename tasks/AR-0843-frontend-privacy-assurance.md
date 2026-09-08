@@ -8,7 +8,7 @@
     "AR-0841"
   ],
   "id": "AR-0843",
-  "next_action": "Retry the no-mutation adversarial test insertion once using the verified single-argument apply_patch wrapper form, then run only that test to capture the expected pre-repair failure.",
+  "next_action": "Replace path-based artifact metadata reads with component-wise no-follow directory-relative opens rooted at the configured result store; prove symlinked ancestor rejection and regular artifact success, then run focused privacy/fault tests.",
   "observed_branch": "feature/frontend-privacy-assurance",
   "observed_dirty": 1,
   "observed_head": "ba97a20f60f39b4c5ef601a7dade148276a631d6",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify frontend privacy, artifact access, and fault behavior.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Assure frontend privacy and faults",
-  "updated_at": "2026-09-08T08:37:37+00:00",
+  "updated_at": "2026-09-08T08:38:10+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-privacy-assurance"
 }
 ---
@@ -85,3 +85,13 @@ redaction failures; prove no credentials, prompts, transcripts, or private paths
 
 - 2026-09-08T08:37:37+00:00: Recorded command exit 101; command argv SHA-256
   83c8dd43d821a391895fdd1a15124c609aa10fed05dc1ffefc4a20d2e854c793.
+
+- 2026-09-08T08:38:10+00:00: Adversarial pre-repair evidence captured. The single test
+  artifact_metadata_rejects_symlinked_artifact_ancestor executed under cargo test -p asb-cli
+  --locked and failed as intended: backend returned metadata for a digest-correct 16-byte file
+  reached through a symlinked artifacts directory, instead of Err(Rejected). This harness records
+  before that were non-product: filter/argv mistakes (one zero-test exit 0 and one Cargo usage exit
+  1); neither executed the oracle or mutated product behavior. Current dirty scope is one added test
+  in crates/asb-cli/src/control.rs. Narrow repair is a result-root dirfd plus component-wise
+  O_DIRECTORY/O_NOFOLLOW opens and final O_NOFOLLOW regular-file hashing; no artifact content will
+  cross the control boundary.
