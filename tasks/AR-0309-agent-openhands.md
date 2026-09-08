@@ -11,7 +11,7 @@
   "id": "AR-0309",
   "next_action": "Implement the isolated OpenHands module and fixture around the proven SDK-only custom-tool boundary; pin and verify the 136-package Python graph before requesting shared lib.rs registration.",
   "observed_branch": "feature/agent-openhands",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "3a07b57b8265d98eeebbcd4fd21339d72fac0663",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0309.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run a maintained MIT OpenHands SDK or canonical headless client.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Implement maintained OpenHands SDK client adapter",
-  "updated_at": "2026-09-08T04:06:18+00:00",
+  "updated_at": "2026-09-08T04:13:01+00:00",
   "worktree_key": "agent-systems-benchmark-agent-openhands"
 }
 ---
