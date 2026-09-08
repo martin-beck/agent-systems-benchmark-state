@@ -9,7 +9,7 @@
   "id": "AR-0402",
   "next_action": "Verify Exercism archives and implement production adapter integration; do not promote evaluator support without image/SBOM/oracle evidence.",
   "observed_branch": "feature/external-code-workloads",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "978902512478907f7eda3040b0c0de0b317cdfc0",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0402.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:23:53+00:00",
+  "updated_at": "2026-09-08T12:24:00+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
