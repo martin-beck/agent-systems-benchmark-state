@@ -7,7 +7,7 @@
     "AR-0318"
   ],
   "id": "AR-0319",
-  "next_action": "Run full workspace/formal/fault/privacy/supply gates on signed candidate d2e08d8d, then request independent immutable review before publication.",
+  "next_action": "Request independent immutable review of exact d2e08d8d; do not publish until approved. Local Kani remains an explicit environment-only limitation; hosted formal CI must run it.",
   "observed_branch": "feature/credential-fd-helper-resolvers",
   "observed_dirty": 0,
   "observed_head": "d2e08d8d9bfa8b728fa93c1d1aa53a955573f03e",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add explicit file-descriptor and helper credential references without ambient-secret fallback.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Implement credential FD and helper resolvers",
-  "updated_at": "2026-09-08T18:42:54+00:00",
+  "updated_at": "2026-09-08T18:43:46+00:00",
   "worktree_key": "agent-systems-benchmark-credential-fd-helper-resolvers"
 }
 ---
@@ -228,3 +228,21 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T18:42:54+00:00: Recorded command exit 0; command argv SHA-256
   67c3f5ffa15c01865ac41a027c483b5f663735d018751eb2169fe5aba0df327f.
+
+- 2026-09-08T18:43:46+00:00: Exact immutable candidate d2e08d8d9bfa8b728fa93c1d1aa53a955573f03e
+  (tree ca27f1b0e1c229e6a6ecab10bf2f0cf7b11ba87c, parent b2707c482876dcfb42c756c39165f6ecdb5c7c10)
+  remains clean, SSH-signed by Martin Beck, and DCO-certified. Exact scope is four paths:
+  Cargo.lock; crates/asb-agents/Cargo.toml; crates/asb-agents/README.md;
+  crates/asb-agents/src/credential.rs. Terminal green gates: cargo test --workspace --all-targets
+  --locked; cargo test --doc --workspace --locked; release workspace build; exact base..head
+  repository policy; formal locked Rust/Loom/production/recovery tests; offline TLC 3,709-state
+  depth-17 proof plus Alloy positive and six mutation receipts; mutation sentinels 7/7 caught; all
+  four pinned fuzz targets at 256 runs each with lock digest and clean-tree checks; contract
+  consistency; actionlint; zizmor; one-commit redacted Gitleaks; cargo-deny; cargo-audit; coverage
+  floors (workspace lines 90.55%, core 99.40%, replay 97.73%); controlled quality failure paths;
+  platform manifests and 23 platform tests; final clean tree. One initial quality-fixture invocation
+  lacked cargo on PATH and was corrected without source change. Local cargo-kani 0.67.0 is
+  environment-blocked before proof discovery: it reports failed to start cargo metadata, No such
+  file or directory, despite the pinned real cargo binary being present; this candidate does not
+  change formal harnesses and hosted formal CI must provide the independent Kani result. No product
+  blocker found; ready for immutable review, not publication.
