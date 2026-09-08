@@ -2,7 +2,7 @@
 {
   "branch": "feature/terminal-workloads",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-08T23:16:35+00:00",
   "depends_on": [
     "AR-0401"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/terminal-workloads",
   "observed_dirty": 0,
   "observed_head": "76e01e9372ca80759eb71b42913c383ccbb6c9ad",
-  "owner": "",
+  "owner": "quality_20260906",
   "plan": "../plans/AR-0403.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Import terminal tasks through an adapter to the published harness or task format.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Integrate Terminal-Bench workloads",
-  "updated_at": "2026-09-08T19:22:50+00:00",
+  "updated_at": "2026-09-08T20:16:35+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-workloads"
 }
 ---
@@ -264,3 +264,5 @@ Implementation has not started. Read the linked plan before claiming.
   and all 13 exact-head checks are green. Preserve the immutable candidate and explicit
   no-native/no-execution qualification limits; next owner must re-fetch current main, obtain
   integration authorization, and rebase/review only if required before merge.
+
+- 2026-09-08T20:16:35+00:00: Claimed by quality_20260906.

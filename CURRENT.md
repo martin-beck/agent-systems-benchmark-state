@@ -9,13 +9,13 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0319](tasks/AR-0319-credential-fd-helper-resolvers.md): Implement credential FD and helper resolvers | Add explicit file-descriptor and helper credential references without ambient-secret fallback. | Obtain fresh independent immutable review of exact 75094148 repair package; publish only after approval and hosted exact-head Kani/formal CI. | replay_20260906 |
 | P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Wait for a corrected immutable agent-workflow-coordinator v0.3.3+ release whose privacy exemption admits the legitimate session-like UUID fixture in vendored tests/test_sqlite_storage.py; then re-sync from a clean verified tag and continue state-owned header/checker/CI work without patching vendor. | codex-asb-state-headers-v033 |
+| P2 | [AR-0403](tasks/AR-0403-terminal-workloads.md): Integrate Terminal-Bench workloads | Import terminal tasks through an adapter to the published harness or task format. | Monitor PR #85 exact head 76e01e9372ca80759eb71b42913c383ccbb6c9ad checks to terminal; investigate any failure and do not merge without coordinator authorization. Preserve explicit no-native/no-execution qualification limits. | quality_20260906 |
 
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary. | - |
-| P2 | [AR-0403](tasks/AR-0403-terminal-workloads.md): Integrate Terminal-Bench workloads | Import terminal tasks through an adapter to the published harness or task format. | Monitor PR #85 exact head 76e01e9372ca80759eb71b42913c383ccbb6c9ad checks to terminal; investigate any failure and do not merge without coordinator authorization. Preserve explicit no-native/no-execution qualification limits. | - |
 
 ## Blocked
 
