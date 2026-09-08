@@ -2,7 +2,7 @@
 {
   "branch": "feature/agent-replay-conformance",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-08T04:58:03+00:00",
   "depends_on": [
     "AR-0503",
     "AR-0504",
@@ -17,15 +17,15 @@
   "observed_branch": "feature/agent-replay-conformance",
   "observed_dirty": 0,
   "observed_head": "111be970534fbf72332a80c2291fe1fe21acb694",
-  "owner": "",
+  "owner": "quality_20260906",
   "plan": "../plans/AR-0505.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Test each actual client through recording and offline replay of engineering tasks.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Prove real-agent replay conformance",
-  "updated_at": "2026-09-08T01:05:36+00:00",
+  "updated_at": "2026-09-08T01:58:03+00:00",
   "worktree_key": "agent-systems-benchmark-agent-replay-conformance"
 }
 ---
@@ -50,3 +50,5 @@ Implementation has not started. Read the linked plan before claiming.
   active, and no implementation/product effect exists. Release to open so unrelated validation can
   proceed. Next claimant must reread the complete task/plan and build the production-boundary
   synthetic-upstream matrix in the distinct preserved worktree before claiming acceptance evidence.
+
+- 2026-09-08T01:58:03+00:00: Claimed by quality_20260906.
