@@ -8,7 +8,7 @@
     "AR-1001"
   ],
   "id": "AR-0904",
-  "next_action": "Define canonical sources and generated/artifact-diff gates before extension implementations fan out.",
+  "next_action": "Add a closed repository-wide contract catalog, deterministic generated catalog document, and fail-closed registry tests; then run the registered Rust schema/fixture/control conformance commands.",
   "observed_branch": "feature/contract-consistency",
   "observed_dirty": 0,
   "observed_head": "a97c3ed708cc16522383ecde41ec9fa2e642bc61",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Machine-check protocol and artifact consistency",
-  "updated_at": "2026-09-08T09:10:58+00:00",
+  "updated_at": "2026-09-08T09:15:17+00:00",
   "worktree_key": "agent-systems-benchmark-contract-consistency"
 }
 ---
@@ -40,3 +40,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T09:10:58+00:00: Recorded command exit 0; command argv SHA-256
   dd74f78fa3cac69e52c5fc50cfaf86ed6c8fd1f409fd32d236c0c3409fff51ab.
+
+- 2026-09-08T09:15:17+00:00: AR-0904 canonical-source audit completed at clean isolated worktree
+  feature/contract-consistency, exact base a97c3ed708cc16522383ecde41ec9fa2e642bc61. Required
+  DEVELOPMENT, ARCHITECTURE, QUALITY, FORMAL_ASSURANCE, complete AR and linked plan were read.
+  Existing crate-local gates already compare Rust-generated schemas and round-trip public fixtures
+  for asb-protocol, asb-control, asb-replay, asb-bundle and asb-workloads, and stateful asb-control
+  tests cover negotiation/bounds/cancellation/errors. Concrete gap: there is no closed
+  repository-wide registry proving every checked-in Rust contract schema and positive example is
+  enrolled, no single deterministic generated catalog, and no negative proving an added/unregistered
+  schema fails. A first apply_patch composition failed locally before handoffctl execution because
+  template backticks were parsed by the JavaScript shell; no wrapper command ran and product
+  worktree remains clean. Next action is the same bounded four-path
+  registry/checker/test/generated-doc patch using corrected argument encoding.
