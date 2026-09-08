@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Offer matching prior recordings or an actual provider connection without silently choosing either.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Choose matching replay or live provider execution",
-  "updated_at": "2026-09-08T14:10:44+00:00",
+  "updated_at": "2026-09-08T14:11:17+00:00",
   "worktree_key": "agent-systems-benchmark-provider-recording-choice"
 }
 ---
@@ -88,3 +88,6 @@ Implementation has not started. Read the linked plan before claiming.
   worker can execute the configured focused repair.
 
 - 2026-09-08T14:10:44+00:00: Claimed by quality_20260906.
+
+- 2026-09-08T14:11:17+00:00: Recorded command exit 0; command argv SHA-256
+  8a803dfb909dc49c7612fd844c26acb22183a1ad25b95968a1c216df5195aab8.
