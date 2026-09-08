@@ -2,7 +2,7 @@
 {
   "branch": "feature/tui-history-analysis",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-09T00:04:11+00:00",
   "depends_on": [
     "AR-0104",
     "AR-0203",
@@ -11,15 +11,15 @@
   ],
   "id": "AR-0806",
   "next_action": "Add recent-run browsing, exact repeat, comparison, and result analysis views.",
-  "owner": "",
+  "owner": "quality_20260906",
   "plan": "../plans/AR-0806.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-08T21:04:08+00:00",
+  "updated_at": "2026-09-08T21:04:11+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
@@ -34,3 +34,5 @@ Implementation has not started. Read the linked plan before claiming.
   pending provider/account, quota, cost, and least-privilege authorization. Active AR-0855 is
   blocked on corrected vendor release and its next action is state-owned work; AR-0806 owns the
   isolated TUI history/analysis lane.
+
+- 2026-09-08T21:04:11+00:00: Claimed by quality_20260906.
