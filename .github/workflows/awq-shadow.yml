@@ -22,7 +22,6 @@ jobs:
           persist-credentials: false
           path: .awq-bundle
       - name: Run pinned AWQ v0.1.0 in shadow mode
-        continue-on-error: true
         env:
           PYTHONPATH: ${{ github.workspace }}/.awq-bundle/src
         run: |
@@ -31,4 +30,11 @@ jobs:
           doctor_status=$?
           python3 -m awq --root . check --tier pr --format json
           check_status=$?
-          exit $((doctor_status || check_status))
+          {
+            echo "### AWQ v0.1.0 shadow result"
+            echo ""
+            echo "- doctor exit: ${doctor_status}"
+            echo "- check exit: ${check_status}"
+            echo "- enforcement: disabled during equivalence assessment"
+          } >> "$GITHUB_STEP_SUMMARY"
+          exit 0
