@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define and implement frontend-independent run lifecycle semantics.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Implement frontend run lifecycle",
-  "updated_at": "2026-09-08T07:31:49+00:00",
+  "updated_at": "2026-09-08T07:32:17+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-run-lifecycle"
 }
 ---
@@ -52,3 +52,6 @@ and bounded backpressure with recovery tests.
 
 - 2026-09-08T07:31:49+00:00: Recorded command exit 0; command argv SHA-256
   29a4e67f25368dae4f0c3dddb9179e0c4043fc5b101df418d728950b47a413e7.
+
+- 2026-09-08T07:32:17+00:00: Recorded command exit 0; command argv SHA-256
+  8cb1448363ed72d309bdbbb601400e7b35fb4e6e10452d0f8f2b4d647af8f753.
