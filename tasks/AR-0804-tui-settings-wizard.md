@@ -11,7 +11,7 @@
   "id": "AR-0804",
   "next_action": "Obtain serialized Cargo workspace/lock fence, then add standalone asb-tui crate with a pure capability-driven wizard state model and snapshot/negative tests before terminal rendering dependencies.",
   "observed_branch": "feature/tui-settings-wizard",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "76497db8f22c43762f0b5bcbc7f2549c1d17281d",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0804.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Guide users through agents, providers, workloads, resources, replay, metrics, and output settings.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Build the terminal settings wizard",
-  "updated_at": "2026-09-08T15:21:03+00:00",
+  "updated_at": "2026-09-08T15:21:11+00:00",
   "worktree_key": "agent-systems-benchmark-tui-settings-wizard"
 }
 ---
