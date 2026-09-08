@@ -755,7 +755,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0804](tasks/AR-0804-tui-settings-wizard.md): Build the terminal settings wizard | quality_20260906 | Guide users through agents, providers, workloads, resources, replay, metrics, and output settings. | Add negotiated selector/search/navigation snapshot coverage and plain-terminal accessibility rendering without widening launch authority; then run full workspace and privacy/policy gates before signed candidate. |
+| P1 | [AR-0804](tasks/AR-0804-tui-settings-wizard.md): Build the terminal settings wizard | quality_20260906 | Guide users through agents, providers, workloads, resources, replay, metrics, and output settings. | Run full locked workspace, docs, repository policy/privacy/Gitleaks and bounded adversarial import/render gates; then exact scope audit and signed candidate if green. |
 | P2 | [AR-0403](tasks/AR-0403-terminal-workloads.md): Integrate Terminal-Bench workloads | replay_20260906 | Import terminal tasks through an adapter to the published harness or task format. | Independent review the signed adapter checkpoint e0da4efd; run exact-tree quality gates and retain explicit unqualified Terminal-Bench limitations. |
 
 ### Open (3)

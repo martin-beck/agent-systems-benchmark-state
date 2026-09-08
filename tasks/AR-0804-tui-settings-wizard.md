@@ -9,7 +9,7 @@
     "AR-0803"
   ],
   "id": "AR-0804",
-  "next_action": "Add negotiated selector/search/navigation snapshot coverage and plain-terminal accessibility rendering without widening launch authority; then run full workspace and privacy/policy gates before signed candidate.",
+  "next_action": "Run full locked workspace, docs, repository policy/privacy/Gitleaks and bounded adversarial import/render gates; then exact scope audit and signed candidate if green.",
   "observed_branch": "feature/tui-settings-wizard",
   "observed_dirty": 3,
   "observed_head": "76497db8f22c43762f0b5bcbc7f2549c1d17281d",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Guide users through agents, providers, workloads, resources, replay, metrics, and output settings.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Build the terminal settings wizard",
-  "updated_at": "2026-09-08T15:27:57+00:00",
+  "updated_at": "2026-09-08T15:28:23+00:00",
   "worktree_key": "agent-systems-benchmark-tui-settings-wizard"
 }
 ---
@@ -93,3 +93,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T15:27:57+00:00: Recorded command exit 0; command argv SHA-256
   70b93aaeec894f4ddf4f7f2a532bc0857e840c9e2d04fa179750e1cb913de146.
+
+- 2026-09-08T15:28:23+00:00: Second AR-0804 checkpoint on exact base 76497db: capability-driven
+  model now includes deterministic seven-step keyboard navigation, help toggle, bounded ASCII
+  selector search, width-bounded plain accessibility rendering, lossless back/reset/import, and
+  stable text snapshot coverage. Rendered source reports only live/matching-replay classification
+  and never emits cassette or credential digests. Launch remains unrepresentable; only
+  ValidateSettings and explicitly confirmed CreatePlan can be produced. Focused cargo test is 4/4
+  green, fmt check, package all-target clippy -D warnings, and diff-check are green. Dirty scope
+  remains root Cargo.toml/Cargo.lock plus four new asb-tui paths.
