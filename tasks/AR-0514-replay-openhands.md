@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0514",
-  "next_action": "Prove credential-free record/replay conformance for OpenHands with network denial and malformed/tool/cancel negatives.",
+  "next_action": "Recover exact approved OpenHands environment digest 63727569 from immutable provenance; otherwise schedule pin-reproduction repair before native replay.",
   "observed_branch": "feature/replay-openhands",
   "observed_dirty": 1,
   "observed_head": "64f6eb4e5bc70c6d70997a463e7e4884555bc4da",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenHands.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Qualify OpenHands replay",
-  "updated_at": "2026-09-08T07:43:49+00:00",
+  "updated_at": "2026-09-08T07:44:47+00:00",
   "worktree_key": "agent-systems-benchmark-replay-openhands"
 }
 ---
@@ -88,3 +88,10 @@ Qualify OpenHands record/replay, network denial, parity, retries, tool calls, ca
 
 - 2026-09-08T07:43:49+00:00: Recorded command exit 0; command argv SHA-256
   5f3003e3a17dae5fea7b8dc095a4ca55a76a0896eaabea7140c1b816910f1ab6.
+
+- 2026-09-08T07:44:47+00:00: Fail-closed provenance blocker: exact retained lock SHA dfc3b9e and
+  wheel SHA 3b771e were reconstructed with three distinct bounded recipes. stdlib venv+pip digest
+  10857178; stdlib venv+uv digest 74e71e58; stdlib venv --without-pip+uv digest 006ea070 (uv venv
+  earlier cb50d5ad; direct target bca74255). All dependency checks pass and proprietary
+  openhands_aci is absent, but none equals production multi-file digest 63727569. No digest override
+  or native run performed; all roots retained for comparison.
