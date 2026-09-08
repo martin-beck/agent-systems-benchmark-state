@@ -10,8 +10,8 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #31 | `feature/native-platforms@bdaf9c108226` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #61 | `feature/kernel-diagnostics@1d24993771a4` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | metrics: add fail-closed optional kernel probes |
+| #31 | `feature/native-platforms@bdaf9c108226` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
+| #61 | `feature/kernel-diagnostics@1d24993771a4` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | metrics: add fail-closed optional kernel probes |
 
 ## Recent workflows
 
@@ -21,8 +21,8 @@ Generated from local Git and GitHub. Do not edit.
 | 34222428397 | `84b130274f5e` | push | Rust verification | pending:- |
 | 34222428392 | `84b130274f5e` | push | Fault assurance | pending:- |
 | 34222428389 | `84b130274f5e` | push | Repository quality | in_progress:- |
-| 34222428381 | `84b130274f5e` | push | Emulated aarch64 portability | pending:- |
-| 34222389503 | `17e4d097adeb` | push | Emulated aarch64 portability | in_progress:- |
+| 34222428381 | `84b130274f5e` | push | Emulated aarch64 portability | in_progress:- |
+| 34222389503 | `17e4d097adeb` | push | Emulated aarch64 portability | completed:cancelled |
 | 34222389495 | `17e4d097adeb` | push | Fault assurance | in_progress:- |
 | 34222389481 | `17e4d097adeb` | push | Formal assurance | in_progress:- |
 | 34222389451 | `17e4d097adeb` | push | Rust verification | in_progress:- |
