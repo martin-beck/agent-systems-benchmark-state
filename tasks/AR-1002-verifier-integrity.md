@@ -9,7 +9,7 @@
     "AR-0401"
   ],
   "id": "AR-1002",
-  "next_action": "Independently review immutable candidate 3fc65ea73badcea31497e53644fdad8778115870; publish only after approval, then require exact-head CI.",
+  "next_action": "Monitor PR #62 exact head 3fc65ea73badcea31497e53644fdad8778115870 quality, emulated-aarch64, fault, Rust x86_64/aarch64, and formal runs; investigate failures and do not merge without authorization.",
   "observed_branch": "feature/verifier-integrity",
   "observed_dirty": 0,
   "observed_head": "3fc65ea73badcea31497e53644fdad8778115870",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate immutable graders from agent work and version scoring independently of execution.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Protect verifiers and support offline rescoring",
-  "updated_at": "2026-09-08T04:51:59+00:00",
+  "updated_at": "2026-09-08T04:53:02+00:00",
   "worktree_key": "agent-systems-benchmark-verifier-integrity"
 }
 ---
@@ -210,3 +210,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T04:51:59+00:00: Recorded command exit 0; command argv SHA-256
   0bbda74c4b7685a260463dd7892c9313f5a7f7b6bd3bd8b5a813e11500a8309c.
+
+- 2026-09-08T04:53:02+00:00: Published reviewed immutable candidate as PR #62 with exact head
+  3fc65ea73badcea31497e53644fdad8778115870 and exact base 3a07b57b8265d98eeebbcd4fd21339d72fac0663;
+  GitHub reports mergeable. Initial exact-head runs are quality 34188500317, emulated aarch64
+  34188500312, fault 34188500279, Rust x86_64/aarch64 34188500290, and formal 34188500295, all in
+  progress. No merge performed.
