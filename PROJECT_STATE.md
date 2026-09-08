@@ -12,16 +12,16 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- | --- |
 | #31 | `feature/native-platforms@bdaf9c108226` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
 | #61 | `feature/kernel-diagnostics@0568bf5f99d6` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | metrics: add fail-closed optional kernel probes |
-| #62 | `feature/verifier-integrity@3fc65ea73bad` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Protect verifier scoring evidence |
+| #62 | `feature/verifier-integrity@3fc65ea73bad` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Protect verifier scoring evidence |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 34188500317 | `3fc65ea73bad` | pull_request | Repository quality | completed:success |
-| 34188500312 | `3fc65ea73bad` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 34188500312 | `3fc65ea73bad` | pull_request | Emulated aarch64 portability | completed:success |
 | 34188500295 | `3fc65ea73bad` | pull_request | Formal assurance | completed:success |
-| 34188500290 | `3fc65ea73bad` | pull_request | Rust verification | in_progress:- |
+| 34188500290 | `3fc65ea73bad` | pull_request | Rust verification | completed:success |
 | 34188500279 | `3fc65ea73bad` | pull_request | Fault assurance | completed:success |
 | 34187594982 | `0568bf5f99d6` | pull_request | Fault assurance | completed:success |
 | 34187594965 | `0568bf5f99d6` | pull_request | Repository quality | completed:failure |
