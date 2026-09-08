@@ -17,11 +17,11 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34193239990 | `7a435fb6a4ac` | push | Fault assurance | in_progress:- |
+| 34193239990 | `7a435fb6a4ac` | push | Fault assurance | completed:success |
 | 34193239857 | `7a435fb6a4ac` | push | Formal assurance | completed:success |
-| 34193239838 | `7a435fb6a4ac` | push | Emulated aarch64 portability | in_progress:- |
-| 34193239799 | `7a435fb6a4ac` | push | Repository quality | in_progress:- |
-| 34193239780 | `7a435fb6a4ac` | push | Rust verification | in_progress:- |
+| 34193239838 | `7a435fb6a4ac` | push | Emulated aarch64 portability | completed:success |
+| 34193239799 | `7a435fb6a4ac` | push | Repository quality | completed:success |
+| 34193239780 | `7a435fb6a4ac` | push | Rust verification | completed:success |
 | 34192801250 | `8d7d90014dbc` | pull_request | Formal assurance | completed:success |
 | 34192801233 | `8d7d90014dbc` | pull_request | Repository quality | completed:success |
 | 34192801226 | `8d7d90014dbc` | pull_request | Emulated aarch64 portability | completed:success |
