@@ -14,6 +14,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P1 | [AR-0869](tasks/AR-0869-cli-multi-agent-provider-selection.md): Add CLI multi-agent provider selection | Select several agents and apply one preconfigured provider profile through inspectable command-line options. | Implement and qualify explicit CLI selection of several agents and one advertised provider profile. | - |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary. | - |
 
 ## Blocked
@@ -70,7 +71,6 @@ Never edit this file directly.
 | P1 | [AR-0866](tasks/AR-0866-workbuddy-replay.md): Qualify strict WorkBuddy replay | Qualify strict WorkBuddy replay. | Seal the sanitized live capture and prove strict offline replay, causal parity, malformed-record rejection, and zero external network. | - |
 | P1 | [AR-0867](tasks/AR-0867-workbuddy-parity.md): Add WorkBuddy provider parity and support matrix evidence | Add WorkBuddy provider parity and support matrix evidence. | Extend exact provider parity and the platform support matrix only for executable-qualified WorkBuddy combinations under a serialized shared-path fence. | - |
 | P1 | [AR-0868](tasks/AR-0868-workbuddy-qualification.md): Independently qualify and document WorkBuddy support | Independently qualify and document WorkBuddy support. | Run independent exact-tree qualification, offline provenance verification, full gates, native evidence, documentation review, and post-merge validation. | - |
-| P1 | [AR-0869](tasks/AR-0869-cli-multi-agent-provider-selection.md): Add CLI multi-agent provider selection | Select several agents and apply one preconfigured provider profile through inspectable command-line options. | Implement and qualify explicit CLI selection of several agents and one advertised provider profile. | - |
 | P1 | [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md): Add TUI multi-agent provider selection | Choose several agents and one preconfigured provider for all of them from negotiated TUI selection lists. | Implement and qualify searchable TUI lists for multi-agent and shared provider-profile selection. | - |
 | P1 | [AR-0871](tasks/AR-0871-record-replay-user-workflows.md): Deliver record and replay user workflows | Make recording and strict replay complete, explicit, privacy-safe user workflows in both CLI and TUI. | Deliver executable CLI and TUI journeys for recording LLM responses and replaying an exact compatible cassette. | - |
 | P1 | [AR-0873](tasks/AR-0873-ci-workflow-captures.md): Generate CI workflow screenshots | Produce reproducible screenshots and text equivalents from example workflows actually executed in CI. | Generate privacy-safe CLI and TUI workflow screenshots from real synthetic CI executions. | - |

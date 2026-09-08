@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
-| **Planned** | Defined work awaiting promotion or dependencies | 52 |
+| **Planned** | Defined work awaiting promotion or dependencies | 51 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 92 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -184,7 +184,7 @@ flowchart LR
         AR_0866["AR-0866 - Planned"]:::status_planned
         AR_0867["AR-0867 - Planned"]:::status_planned
         AR_0868["AR-0868 - Planned"]:::status_planned
-        AR_0869["AR-0869 - Planned"]:::status_planned
+        AR_0869["AR-0869 - Open"]:::status_open
         AR_0870["AR-0870 - Planned"]:::status_planned
         AR_0871["AR-0871 - Planned"]:::status_planned
         AR_0872["AR-0872 - Planned"]:::status_planned
@@ -851,10 +851,11 @@ flowchart LR
 | P1 | [AR-0806](tasks/AR-0806-tui-history-analysis.md): Add terminal history and analysis | quality_20260906 | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. | Add recent-run browsing, exact repeat, comparison, and result analysis views. |
 | P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | codex-asb-state-headers-v033 | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Wait for a corrected immutable agent-workflow-coordinator v0.3.3+ release whose privacy exemption admits the legitimate session-like UUID fixture in vendored tests/test_sqlite_storage.py; then re-sync from a clean verified tag and continue state-owned header/checker/CI work without patching vendor. |
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P1 | [AR-0869](tasks/AR-0869-cli-multi-agent-provider-selection.md): Add CLI multi-agent provider selection | Unclaimed | Select several agents and apply one preconfigured provider profile through inspectable command-line options. | Implement and qualify explicit CLI selection of several agents and one advertised provider profile. |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary. |
 
 ### Blocked (4)
@@ -866,7 +867,7 @@ flowchart LR
 | P1 | [AR-0702](tasks/AR-0702-native-platforms.md): Validate native Linux kernels and architectures | Unclaimed | Exercise native x86_64 and aarch64 including booted openEuler kernels. | Keep reviewed PR #31 head bdaf9c108226f34ec6098f75b51fd601da9e9571 immutable and green; await AR-0703 genuine Debian/openEuler x86_64/aarch64 lab capacity before completing remaining native qualification and AR-0702. |
 | P1 | [AR-0703](tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Provide genuine disposable native hosts for required Debian and openEuler platform qualification. | Obtain explicit provider/account and cost authorization, least-privilege external credentials, quotas, and four genuine disposable Debian 13.6/openEuler 24.03 LTS-SP2 x86_64/aarch64 hosts; then implement reservation/provision/collect/destroy evidence without emulation. |
 
-### Planned (52)
+### Planned (51)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -911,7 +912,6 @@ flowchart LR
 | P1 | [AR-0866](tasks/AR-0866-workbuddy-replay.md): Qualify strict WorkBuddy replay | Unclaimed | Qualify strict WorkBuddy replay. | Seal the sanitized live capture and prove strict offline replay, causal parity, malformed-record rejection, and zero external network. |
 | P1 | [AR-0867](tasks/AR-0867-workbuddy-parity.md): Add WorkBuddy provider parity and support matrix evidence | Unclaimed | Add WorkBuddy provider parity and support matrix evidence. | Extend exact provider parity and the platform support matrix only for executable-qualified WorkBuddy combinations under a serialized shared-path fence. |
 | P1 | [AR-0868](tasks/AR-0868-workbuddy-qualification.md): Independently qualify and document WorkBuddy support | Unclaimed | Independently qualify and document WorkBuddy support. | Run independent exact-tree qualification, offline provenance verification, full gates, native evidence, documentation review, and post-merge validation. |
-| P1 | [AR-0869](tasks/AR-0869-cli-multi-agent-provider-selection.md): Add CLI multi-agent provider selection | Unclaimed | Select several agents and apply one preconfigured provider profile through inspectable command-line options. | Implement and qualify explicit CLI selection of several agents and one advertised provider profile. |
 | P1 | [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md): Add TUI multi-agent provider selection | Unclaimed | Choose several agents and one preconfigured provider for all of them from negotiated TUI selection lists. | Implement and qualify searchable TUI lists for multi-agent and shared provider-profile selection. |
 | P1 | [AR-0871](tasks/AR-0871-record-replay-user-workflows.md): Deliver record and replay user workflows | Unclaimed | Make recording and strict replay complete, explicit, privacy-safe user workflows in both CLI and TUI. | Deliver executable CLI and TUI journeys for recording LLM responses and replaying an exact compatible cassette. |
 | P1 | [AR-0873](tasks/AR-0873-ci-workflow-captures.md): Generate CI workflow screenshots | Unclaimed | Produce reproducible screenshots and text equivalents from example workflows actually executed in CI. | Generate privacy-safe CLI and TUI workflow screenshots from real synthetic CI executions. |

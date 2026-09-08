@@ -3,18 +3,23 @@
   "branch": "feature/cli-multi-agent-provider-selection",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-0313", "AR-0318", "AR-0320", "AR-0801"],
+  "depends_on": [
+    "AR-0313",
+    "AR-0318",
+    "AR-0320",
+    "AR-0801"
+  ],
   "id": "AR-0869",
   "next_action": "Implement and qualify explicit CLI selection of several agents and one advertised provider profile.",
   "owner": "",
   "plan": "../plans/AR-0869.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Select several agents and apply one preconfigured provider profile through inspectable command-line options.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Add CLI multi-agent provider selection",
-  "updated_at": "2026-09-08T20:31:33+00:00",
+  "updated_at": "2026-09-08T21:05:54+00:00",
   "worktree_key": "agent-systems-benchmark-cli-multi-agent-provider-selection"
 }
 ---
@@ -23,3 +28,12 @@
 Add a safe command-line workflow for selecting several agents and one advertised provider profile.
 
 Implementation has not started. Read the linked plan before claiming.
+
+- 2026-09-08T21:05:54+00:00: Fresh dependency/overlap audit: AR-0869 dependencies AR-0313, AR-0318,
+  AR-0320, and AR-0801 are all durably done. Its CLI-only agent/provider selection, plan rendering,
+  validation, help/examples and focused-test paths are disjoint from active AR-0806 TUI
+  history/analysis and AR-0855 state/vendor header work. Higher numeric-frontier P1 leaves are not
+  safely claimable: AR-0704 lacks its plan-required external authorization, AR-0819 overlaps active
+  TUI/frontend paths, and AR-0832 is blocked by AR-0703 in its complete plan. Declared worktree and
+  branch do not exist locally or remotely. Promote AR-0869 as the highest-priority compatible ready
+  leaf.
