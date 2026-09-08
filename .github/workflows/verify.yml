@@ -67,7 +67,7 @@ jobs:
       - name: Locked quality environment
         run: uv sync --locked --only-group quality
       - name: Verify pinned coordinator release
-        run: python tools/handoffctl_vendor.py verify --target .
+        run: uv run python tools/handoffctl_vendor.py verify --target .
       - name: Formatting and typing
         run: |
           uv run ruff format --check tools tests
