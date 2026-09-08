@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add explicit file-descriptor and helper credential references without ambient-secret fallback.",
-  "task_revision": 107,
+  "task_revision": 108,
   "title": "Implement credential FD and helper resolvers",
-  "updated_at": "2026-09-08T20:28:45+00:00",
+  "updated_at": "2026-09-08T20:54:06+00:00",
   "worktree_key": "agent-systems-benchmark-credential-fd-helper-resolvers"
 }
 ---
@@ -387,3 +387,6 @@ Implementation has not started. Read the linked plan before claiming.
   including deliberate counterexample rejection; TLC/Alloy job 102225379264 passed; Loom x86_64 job
   102225379528 and arm job 102225379195 passed. Other exact-head workflows remain in progress and
   head is unchanged; no merge attempted.
+
+- 2026-09-08T20:54:06+00:00: Recorded command exit 0; command argv SHA-256
+  4ba591f6668b4c609df52f1a9452960e7b7b80cd2da12da3f6282a28a775aec4.
