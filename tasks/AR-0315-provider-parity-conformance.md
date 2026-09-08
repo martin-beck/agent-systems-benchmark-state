@@ -30,9 +30,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Conformance-test identical OpenAI and Ollama profiles across the complete supported-agent matrix.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Verify cross-agent provider parity",
-  "updated_at": "2026-09-08T16:09:24+00:00",
+  "updated_at": "2026-09-08T16:10:22+00:00",
   "worktree_key": "agent-systems-benchmark-provider-parity-conformance"
 }
 ---
@@ -134,3 +134,6 @@ Implementation has not started. Read the linked plan before claiming.
   Runs: Rust 34248761385; formal/Kani/Loom/TLC 34248761464; fault/fuzz/mutation 34248761747;
   emulated-aarch64 34248761748; repository quality 34248762086; AWQ 34248762285. No failures and no
   merge performed. Structural/native qualification limits remain explicit.
+
+- 2026-09-08T16:10:22+00:00: Recorded command exit 0; command argv SHA-256
+  bf5fae3a7983f89e672abc9448e00263b0cbbf1cb59b910e349c3611bcb5bb69.
