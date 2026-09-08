@@ -20,7 +20,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-all-agents-provider` | `feature/all-agents-provider` | `03962f28571e` | 0 | behind 58, ahead 0 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 2, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 105, ahead 0 |
-| `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `a3696385be31` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-benchmark-validity` | `feature/benchmark-validity` | `60a6c730457b` | 0 | behind 101, ahead 0 |
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `0717d4acd168` | 0 | behind 209, ahead 0 |
 | `agent-systems-benchmark-ci-artifact-quota-resilience` | `feature/ci-artifact-quota-resilience` | `7d98653e7e7f` | 0 | behind 155, ahead 0 |
