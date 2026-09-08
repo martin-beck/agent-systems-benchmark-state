@@ -15,7 +15,7 @@
     "AR-0309"
   ],
   "id": "AR-0316",
-  "next_action": "Inventory the nine released agent runtime graphs against the existing asb-bundle v1 verifier, then add only disjoint agent-runtime manifest/provenance fixtures; defer Cargo/schema/release/platform and adapter registration to an explicit serialized fence.",
+  "next_action": "Extend the fail-closed nine-agent catalog from top-level pins to complete per-component dependency nodes sourced from each retained lock/provenance record; do not mark any closure complete or redistribute until manifest, SBOM, license, and reproducibility evidence agree. Request serialized schema/release/platform fences only after crate-local closure tests are ready.",
   "observed_branch": "feature/agent-runtime-bundles",
   "observed_dirty": 0,
   "observed_head": "1249fd87d46d54556bca835fcc3e6570df15cc2c",
@@ -25,9 +25,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make supported agent installations reproducible, license-audited, SBOM-backed, and independently verifiable.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Publish reproducible agent runtime bundles",
-  "updated_at": "2026-09-08T11:37:05+00:00",
+  "updated_at": "2026-09-08T11:37:45+00:00",
   "worktree_key": "agent-systems-benchmark-agent-runtime-bundles"
 }
 ---
@@ -91,3 +91,18 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T11:37:05+00:00: Recorded command exit 0; command argv SHA-256
   700521ddec16d8270ef08c0cb16f00891407a2c1fc3a0b9afed1d657432af5b2.
+
+- 2026-09-08T11:37:45+00:00: Created clean signed+DCO checkpoint
+  1249fd87d46d54556bca835fcc3e6570df15cc2c tree a311664f1a94e99977795a3a43ab8e47afc5f8bd on base
+  26b7e5f. Exact three-path scope: new strict crates/asb-bundle/src/catalog.rs, nine-agent
+  fixtures/agents/v1/catalog.json, and lib.rs export. Catalog requires the exact sorted
+  released-agent roster, bounded canonical IDs/revisions/artifact hashes, explicit redistribution
+  status, and complete-vs-incomplete closure evidence; require_complete rejects all current
+  top-level-only inventories. Negatives cover omitted/reordered agents, uppercase digest, empty gap
+  evidence, and falsely complete unverified closure. Focused tests 2/2, Clippy -D warnings,
+  formatting, JSON parse, and diff-check pass from external target. Classified recorded fmt exit 1
+  as formatting-only and corrected it; recorded script exit 127 was a stale apply_patch helper path
+  and caused no product change. One initial partial patch effect preceded the wrapper after a
+  malformed external patch target; scope was immediately inspected, all subsequent
+  completion/fixes/tests/staging/commit used handoffctl, and the exact final tree is clean and
+  reviewable. Corrected OpenDesk license evidence to MulanPSL-2.0 from durable AR-0302 provenance.
