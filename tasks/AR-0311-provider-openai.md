@@ -16,7 +16,7 @@
     "AR-0310"
   ],
   "id": "AR-0311",
-  "next_action": "Implement the default OpenAI provider profile for every adapter that proves compatible support.",
+  "next_action": "Extend the three-path OpenAI profile patch with bounded synthetic effective-request observations and negative credential/settings/redaction evidence before candidate gates.",
   "observed_branch": "feature/provider-openai",
   "observed_dirty": 3,
   "observed_head": "e5cdf97dd2954e5d097b1a6c872beafd724aa12f",
@@ -26,9 +26,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply one default OpenAI provider profile consistently to all supported agents.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Support a shared OpenAI provider",
-  "updated_at": "2026-09-08T10:05:02+00:00",
+  "updated_at": "2026-09-08T10:05:40+00:00",
   "worktree_key": "agent-systems-benchmark-provider-openai"
 }
 ---
@@ -56,3 +56,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T10:05:02+00:00: Recorded command exit 0; command argv SHA-256
   e4e7b5d30b14991038bf41709ddde33a67e9ff498799346f925ff9c51d600257.
+
+- 2026-09-08T10:05:40+00:00: Material first implementation checkpoint on exact base e5cdf97: dirty
+  only crates/asb-agents/src/lib.rs plus new openai.rs and OPENAI.md. Added dated gpt-5.2-2025-12-11
+  public-service profile, secret-reference-only credential provenance, eight adapter translations,
+  Codex Responses versus Chat Completions routing, Gemini fail-closed rejection, and
+  profile/credential/drift negatives. Focused OpenAI tests pass 3/3 after fmt. Two earlier exits 2
+  were patch transport misuse only (apply_patch requires one argument, not stdin); neither changed
+  product files; corrected external patch artifact applied through wrapper.
