@@ -15,11 +15,11 @@
   "plan": "../plans/AR-0855.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files.",
-  "task_revision": 129,
+  "task_revision": 130,
   "title": "Enforce Huawei MIT source headers",
-  "updated_at": "2026-09-08T17:20:35+00:00",
+  "updated_at": "2026-09-08T17:31:20+00:00",
   "worktree_key": "agent-systems-benchmark-huawei-mit-headers"
 }
 ---
@@ -363,3 +363,7 @@ and fresh coordinator snapshot before claiming. Do not modify vendored coordinat
   with all 14 hosted checks passing; adjacent-pair semantics and explicit TLA/Alloy module-prologue
   validation are repaired. Await fresh independent review and immutable coordinator release/vendor
   sync; do not hand-edit hash-locked vendor.
+
+- 2026-09-08T17:31:20+00:00: Authoritative PR 82 head 609ffbbe and all 14 hosted checks
+  independently observed; resume only for fresh exact-head re-review, preserving state-vendor
+  blocker.
