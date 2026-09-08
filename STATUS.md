@@ -741,7 +741,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0313](tasks/AR-0313-all-agents-provider.md): Configure one provider for all agents | quality_20260906 | Let test plans select one provider profile for every chosen supported agent atomically. | Independent immutable review of unpublished candidate 03962f28571e79403740b560a769e1a3b171e685 tree bf48ba52a07d24474a6cf62839e8197b0f55c7e0 on exact base b6078bb1ca2ee8f35973ffab9740c2c12dd4126e; publish only after approval and fresh-base audit. |
+| P1 | [AR-0313](tasks/AR-0313-all-agents-provider.md): Configure one provider for all agents | quality_20260906 | Let test plans select one provider profile for every chosen supported agent atomically. | Wait for PR #78 exact-head CI; independently review immutable diff, then merge serially only if every required check is green. |
 | P2 | [AR-0402](tasks/AR-0402-external-code-workloads.md): Integrate SWE-bench and Aider Polyglot | root-coordination-20260906 | Add versioned external workload adapters without vendoring datasets. | Add digest verification/acquisition boundary and oracle fixtures, then run Rust/full quality gates. |
 
 ### Open (1)

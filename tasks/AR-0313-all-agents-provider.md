@@ -8,7 +8,7 @@
     "AR-0312"
   ],
   "id": "AR-0313",
-  "next_action": "Independent immutable review of unpublished candidate 03962f28571e79403740b560a769e1a3b171e685 tree bf48ba52a07d24474a6cf62839e8197b0f55c7e0 on exact base b6078bb1ca2ee8f35973ffab9740c2c12dd4126e; publish only after approval and fresh-base audit.",
+  "next_action": "Wait for PR #78 exact-head CI; independently review immutable diff, then merge serially only if every required check is green.",
   "observed_branch": "feature/all-agents-provider",
   "observed_dirty": 0,
   "observed_head": "03962f28571e79403740b560a769e1a3b171e685",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Let test plans select one provider profile for every chosen supported agent atomically.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Configure one provider for all agents",
-  "updated_at": "2026-09-08T11:46:51+00:00",
+  "updated_at": "2026-09-08T12:02:12+00:00",
   "worktree_key": "agent-systems-benchmark-all-agents-provider"
 }
 ---
@@ -137,3 +137,8 @@ Implementation has not started. Read the linked plan before claiming.
   failure. Full-tree Gitleaks false positive was only generated target/doc asb_control HTML; exact
   candidate scan found no leaks. No active AR-0844 control.rs or AR-0316 runtime-bundle path
   touched.
+
+- 2026-09-08T12:02:12+00:00: Published PR #78 at exact head 03962f28571e79403740b560a769e1a3b171e685
+  against repaired main fcbf71ae8c08d817bad27acf1fa38e29296b9547; AWQ 34223583656 passed and
+  formal/quality/Rust/fault/emulated checks are running. Publication already succeeded; do not
+  repeat.
