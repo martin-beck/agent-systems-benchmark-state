@@ -2,19 +2,19 @@
 {
   "branch": "feature/shared-workflow-coordinator",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-08T09:06:06+00:00",
   "depends_on": [],
   "id": "AR-0852",
   "next_action": "Preserve merged v0.1.4 effect e52ce3aa without history rewrite; complete a focused signed+DCO repair or documented signed state replacement under AR-0853, then re-audit live main before releasing AR-0852.",
-  "owner": "",
+  "owner": "replay-20260906",
   "plan": "../plans/AR-0852.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Adopt the path-exclusive coordinator commit fix discovered during live integration.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Adopt coordinator path isolation fix",
-  "updated_at": "2026-09-08T07:34:59+00:00",
+  "updated_at": "2026-09-08T08:06:06+00:00",
   "worktree_key": "agent-systems-benchmark-shared-coordinator"
 }
 ---
@@ -58,3 +58,5 @@ v0.1.3 to v0.1.4 after AR-0851 was completed.
 - 2026-09-08T07:34:59+00:00: Durable PR #10 merge and v0.1.4 content are verified, but completion is
   deferred to dependency-free AR-0853 for signed/DCO additive attestation; preserve e52ce3aa and
   exact branch, no rewrite.
+
+- 2026-09-08T08:06:06+00:00: Claimed by replay-20260906.
