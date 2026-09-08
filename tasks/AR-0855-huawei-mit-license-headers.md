@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-0855",
-  "next_action": "Claim, create the declared worktree, enforce exact first-party Huawei MIT source headers, test, and publish unmerged PRs.",
+  "next_action": "Repair product checker duplicate detection to count canonical adjacent header pairs while allowing standalone embedded SPDX/copyright literals; add both regression cases, rerun full gates and exact-head CI, then obtain independent re-review. Preserve the state-vendor release blocker.",
   "observed_branch": "fix/huawei-mit-license-headers",
   "observed_dirty": 0,
   "observed_head": "c90a1137df58d4989124e824410d7aaab7b56e45",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files.",
-  "task_revision": 112,
+  "task_revision": 113,
   "title": "Enforce Huawei MIT source headers",
-  "updated_at": "2026-09-08T16:58:53+00:00",
+  "updated_at": "2026-09-08T16:59:21+00:00",
   "worktree_key": "agent-systems-benchmark-huawei-mit-headers"
 }
 ---
@@ -316,3 +316,7 @@ and fresh coordinator snapshot before claiming. Do not modify vendored coordinat
 
 - 2026-09-08T16:58:53+00:00: Recorded command exit 0; command argv SHA-256
   d1f166a7b24e7740cd0428250ea6430d11c7daca6438e0460919f364e12ce354.
+
+- 2026-09-08T16:59:21+00:00: Independent exact-head review of PR 82 c90a1137 found formal placement
+  and source coverage repaired, but requested changes for naive global canonical-line counting
+  rather than adjacent-pair semantics.
