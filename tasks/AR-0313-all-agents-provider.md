@@ -10,17 +10,17 @@
   "id": "AR-0313",
   "next_action": "Execute corrected tools/quality/test_failure_paths.py with pinned cargo PATH, then pending Gitleaks and anchored added-line privacy scan.",
   "observed_branch": "feature/all-agents-provider",
-  "observed_dirty": 3,
-  "observed_head": "b6078bb1ca2ee8f35973ffab9740c2c12dd4126e",
+  "observed_dirty": 0,
+  "observed_head": "03962f28571e79403740b560a769e1a3b171e685",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0313.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Let test plans select one provider profile for every chosen supported agent atomically.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Configure one provider for all agents",
-  "updated_at": "2026-09-08T11:33:34+00:00",
+  "updated_at": "2026-09-08T11:34:25+00:00",
   "worktree_key": "agent-systems-benchmark-all-agents-provider"
 }
 ---

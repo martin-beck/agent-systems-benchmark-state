@@ -18,8 +18,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-agent-runtime-bundles` | `feature/agent-runtime-bundles` | `26b7e5f66676` | 3 | behind 4, ahead 0 |
 | changed files | - | - | - | `crates/asb-bundle/src/lib.rs`, `crates/asb-bundle/fixtures/agents/`, `crates/asb-bundle/src/catalog.rs` |
 | `agent-systems-benchmark-aider-deterministic-replay` | `fix/aider-deterministic-replay` | `87a22654913a` | 0 | behind 36, ahead 0 |
-| `agent-systems-benchmark-all-agents-provider` | `feature/all-agents-provider` | `b6078bb1ca2e` | 3 | behind 0, ahead 0 |
-| changed files | - | - | - | `README.md`, `crates/asb-agents/src/all_agents_provider.rs`, `crates/asb-agents/src/lib.rs` |
+| `agent-systems-benchmark-all-agents-provider` | `feature/all-agents-provider` | `03962f28571e` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 46, ahead 0 |
 | `agent-systems-benchmark-benchmark-validity` | `feature/benchmark-validity` | `60a6c730457b` | 0 | behind 42, ahead 0 |
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `0717d4acd168` | 0 | behind 150, ahead 0 |
