@@ -12,17 +12,17 @@
   "id": "AR-0869",
   "next_action": "Create one SSH-signed DCO candidate from the exact five-path tree, rerun exact-commit policy/signature/privacy/scope checks, and request independent immutable review before publication.",
   "observed_branch": "feature/cli-multi-agent-provider-selection",
-  "observed_dirty": 5,
-  "observed_head": "559fbcc825234bb98a64ba554a53f38b004d24f6",
+  "observed_dirty": 0,
+  "observed_head": "0d9d317716d557b916e4da7022f58197d287987a",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0869.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Select several agents and apply one preconfigured provider profile through inspectable command-line options.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Add CLI multi-agent provider selection",
-  "updated_at": "2026-09-08T22:27:33+00:00",
+  "updated_at": "2026-09-08T22:27:38+00:00",
   "worktree_key": "agent-systems-benchmark-cli-multi-agent-provider-selection"
 }
 ---
