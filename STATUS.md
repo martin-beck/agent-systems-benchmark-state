@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 37 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 85 |
+| **Done** | Accepted, integrated, and durably verified | 86 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -70,7 +70,7 @@ flowchart LR
         AR_0317["AR-0317 - Done"]:::status_done
         AR_0318["AR-0318 - Done"]:::status_done
         AR_0319["AR-0319 - Open"]:::status_open
-        AR_0320["AR-0320 - In progress"]:::status_in_progress
+        AR_0320["AR-0320 - Done"]:::status_done
     end
     subgraph series_04["04 - Live measurement"]
         direction TB
@@ -751,11 +751,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0320](tasks/AR-0320-provider-credential-integration.md): Integrate provider credential boundary | quality_20260906 | Integrate the verified environment credential resolver into the product workspace. | Monitor PR #80 exact head 0f92642/base 9feeba652 checks to terminal; investigate any failure, merge only with coordinator authorization after all required checks green, then exact-main postmerge verification and release. |
 | P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | asb-license-20260908 | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Claim, create the declared worktree, enforce exact first-party Huawei MIT source headers, test, and publish unmerged PRs. |
 | P2 | [AR-0403](tasks/AR-0403-terminal-workloads.md): Integrate Terminal-Bench workloads | replay_20260906 | Import terminal tasks through an adapter to the published harness or task format. | Independent review the signed adapter checkpoint e0da4efd; run exact-tree quality gates and retain explicit unqualified Terminal-Bench limitations. |
 
@@ -818,7 +817,7 @@ flowchart LR
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Evaluate maintenance, licenses and reproducibility before integration. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (85)
+### Done (86)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -865,6 +864,7 @@ flowchart LR
 | P1 | [AR-0313](tasks/AR-0313-all-agents-provider.md): Configure one provider for all agents | Unclaimed | Let test plans select one provider profile for every chosen supported agent atomically. | Wait for PR #78 exact-head CI; independently review immutable diff, then merge serially only if every required check is green. |
 | P1 | [AR-0316](tasks/AR-0316-agent-runtime-bundles.md): Publish reproducible agent runtime bundles | Unclaimed | Make supported agent installations reproducible, license-audited, SBOM-backed, and independently verifiable. | No further action for the released fail-closed catalog; complete runtime closures remain future work and must not be inferred. |
 | P1 | [AR-0318](tasks/AR-0318-credential-reference-boundary.md): Implement the credential-reference boundary | Unclaimed | Resolve provider credential references without exposing secrets or accepting ambient credentials. | Coordinator decision required: formally amend AR-0318 outcome/acceptance to Environment-only support, or authorize separately specified private locator contracts before implementing FileDescriptor/Helper; do not release done under the current three-source plan. |
+| P1 | [AR-0320](tasks/AR-0320-provider-credential-integration.md): Integrate provider credential boundary | Unclaimed | Integrate the verified environment credential resolver into the product workspace. | Monitor PR #80 exact head 0f92642/base 9feeba652 checks to terminal; investigate any failure, merge only with coordinator authorization after all required checks green, then exact-main postmerge verification and release. |
 | P1 | [AR-0401](tasks/AR-0401-engineering-workloads.md): Implement original engineering workloads | Unclaimed | Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API. | Await coordinator integration authorization for exact reviewed green PR #20 head 41ffc6e; retain Cargo fence, then signed no-ff merge and complete exact-main post-merge validation. |
 | P1 | [AR-0501](tasks/AR-0501-replay-evaluation.md): Evaluate replay literature and reusable tools | Unclaimed | Compare literature and record/replay implementations using identical synthetic conformance cases. | Await independent immutable-head review and coordinator integration of product PR #4; then run exact-main post-merge verification before release. |
 | P1 | [AR-0502](tasks/AR-0502-replay-cassettes.md): Implement immutable response cassette format | Unclaimed | Store versioned provider requests, event streams, causal IDs and integrity metadata. | Run full coordination validation, reconcile/snapshot/live doctor, verify clean synchronized repositories, then release AR-0502 done and return Cargo fence. |

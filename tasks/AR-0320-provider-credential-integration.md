@@ -2,7 +2,7 @@
 {
   "branch": "feature/provider-credential-integration",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T17:17:03+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0318"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/provider-credential-integration",
   "observed_dirty": 0,
   "observed_head": "0f92642fc870a886ae5f498b0cfefaf6a8f9b1c0",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0320.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Integrate the verified environment credential resolver into the product workspace.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Integrate provider credential boundary",
-  "updated_at": "2026-09-08T14:32:17+00:00",
+  "updated_at": "2026-09-08T14:37:25+00:00",
   "worktree_key": "agent-systems-benchmark-provider-credential-integration"
 }
 ---
@@ -116,3 +116,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T14:32:17+00:00: Recorded command exit 0; command argv SHA-256
   332c796bfc929c044d871d5504ab31d051f139f3c1f256408e9b1bdbd2b2d292.
+
+- 2026-09-08T14:37:25+00:00: Released after signed no-ff merge
+  33f30cb7d88ליתe8aa8d3c323895154c8237d1763c6b8 integrated reviewed Environment-only resolver; local
+  exact-main credential tests 6/6 passed; exact-main workflows 34238840007 quality, 34238839835
+  emulated-aarch64, 34238840052 fault, 34238839954 Rust, and 34238839714 formal all succeeded; state
+  reconcile, snapshot, and live doctor passed. FD/helper remain unsupported under AR-0319.
