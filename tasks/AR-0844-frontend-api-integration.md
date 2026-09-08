@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate and qualify the frontend control API as an independent boundary.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Integrate frontend control API",
-  "updated_at": "2026-09-08T11:39:16+00:00",
+  "updated_at": "2026-09-08T11:45:42+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-api-integration"
 }
 ---
@@ -121,3 +121,6 @@ status, no implicit network listener exists, and exact-head CI/post-merge recove
   b6078bb1ca2ee8f35973ffab9740c2c12dd4126e. Fresh exact-head runs: Rust 34221777025, quality
   34221777026, formal 34221777049, fault 34221777021, emulated aarch64 34221777043, AWQ shadow
   34221777029. AWQ is green; required gates are in progress..
+
+- 2026-09-08T11:45:42+00:00: Recorded command exit 0; command argv SHA-256
+  cb84292e9362f90ceb67222348049672dfefb2af05b41d5ccbd02d91fe8ef84a.
