@@ -12,7 +12,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- | --- |
 | #31 | `feature/native-platforms@bdaf9c108226` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
 | #61 | `feature/kernel-diagnostics@1d24993771a4` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | metrics: add fail-closed optional kernel probes |
-| #67 | `feature/frontend-run-lifecycle@b3b3b8907f6d` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, QUEUED:, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED: | AR-0842: stabilize frontend run lifecycle |
+| #67 | `feature/frontend-run-lifecycle@b3b3b8907f6d` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS | AR-0842: stabilize frontend run lifecycle |
 
 ## Recent workflows
 
@@ -20,8 +20,8 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 34202741379 | `b3b3b8907f6d` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 34202741334 | `b3b3b8907f6d` | pull_request | Repository quality | in_progress:- |
-| 34202741286 | `b3b3b8907f6d` | pull_request | Rust verification | queued:- |
-| 34202741272 | `b3b3b8907f6d` | pull_request | Formal assurance | queued:- |
+| 34202741286 | `b3b3b8907f6d` | pull_request | Rust verification | in_progress:- |
+| 34202741272 | `b3b3b8907f6d` | pull_request | Formal assurance | in_progress:- |
 | 34202741221 | `b3b3b8907f6d` | pull_request | Fault assurance | in_progress:- |
 | 34198796478 | `e86fe799a33c` | push | Emulated aarch64 portability | completed:success |
 | 34198796463 | `e86fe799a33c` | push | Formal assurance | completed:success |
