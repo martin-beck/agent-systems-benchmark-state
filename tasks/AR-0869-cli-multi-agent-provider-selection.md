@@ -10,7 +10,7 @@
     "AR-0801"
   ],
   "id": "AR-0869",
-  "next_action": "Implement and qualify explicit CLI selection of several agents and one advertised provider profile.",
+  "next_action": "Extend the green provider-plan slice into exact manifest export/import and run/sweep consumption without per-agent overrides; keep Ollama fail-closed until verified daemon evidence is available, then add compare/report/help fixtures and full gates.",
   "observed_branch": "feature/cli-multi-agent-provider-selection",
   "observed_dirty": 3,
   "observed_head": "559fbcc825234bb98a64ba554a53f38b004d24f6",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Select several agents and apply one preconfigured provider profile through inspectable command-line options.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Add CLI multi-agent provider selection",
-  "updated_at": "2026-09-08T21:49:58+00:00",
+  "updated_at": "2026-09-08T21:50:31+00:00",
   "worktree_key": "agent-systems-benchmark-cli-multi-agent-provider-selection"
 }
 ---
@@ -77,3 +77,19 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T21:49:58+00:00: Recorded command exit 0; command argv SHA-256
   9ac36a532731ec90503da33a1623c2c5b28eb8da28d9788dd69d34767df7cdba.
+
+- 2026-09-08T21:50:31+00:00: Substantive AR-0869 implementation checkpoint on exact base
+  559fbcc825234bb98a64ba554a53f38b004d24f6. Added  and side-effect-free  CLI surfaces backed by the
+  authoritative asb-agents all-agent preflight. A required catalog SHA fences stale choices; bounded
+  repeated  plus one  reject empty, duplicate, unknown, incompatible, over-bound and mixed/duplicate
+  option shapes before effects. OpenAI output is canonically ordered, binds every agent to one
+  credential-free profile SHA/model/API mode, exposes only credential source kind, omits the
+  credential-reference digest, and includes a deterministic content-addressed selection SHA. Ollama
+  is advertised honestly but rejected without constructor-controlled verified daemon evidence; no
+  probe occurs in dry-run. Exact dirty scope is Cargo.lock, crates/asb-cli/Cargo.toml and
+  crates/asb-cli/src/lib.rs. Authorized Cargo delta is only asb-cli -> existing asb-agents path
+  dependency plus one lock package-edge line. Pinned Rust 1.93 offline check passed; asb-cli lib
+  tests 26/26, focused Clippy -D warnings, fmt and diff-check pass. A real binary catalog ->
+  two-agent OpenAI plan round trip passed with stable opendesk/codex order, 64-byte selection
+  identity and no supplied reference digest in output. Remaining criteria are persisted in
+  next_action; no candidate/publication yet.
