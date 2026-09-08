@@ -10,7 +10,7 @@
     "AR-0804"
   ],
   "id": "AR-0805",
-  "next_action": "Coordinator independent review/merge authorization for PR #86 exact head da0d21b9c403c960e1eaac979ad22cb34932febe. All exact-head checks are terminal success; do not merge until the signed pin-repair successor is accepted.",
+  "next_action": "Controlled rebase/resign PR #86 onto exact current origin/main 32f79101da348896fdf0fd94c07356889a05b693, preserving fe24e48 TUI semantics, retaining the new Huawei MIT header, and dropping superseded da0d21b pin repair because main already contains signed repair 7add29f. Record range-diff, rerun gates, obtain fresh immutable review, then guarded force-with-lease and fresh exact-head CI.",
   "observed_branch": "feature/tui-run-control",
   "observed_dirty": 0,
   "observed_head": "da0d21b9c403c960e1eaac979ad22cb34932febe",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 100,
+  "task_revision": 101,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T18:43:43+00:00",
+  "updated_at": "2026-09-08T19:07:05+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -398,3 +398,12 @@ Implementation has not started. Read the linked plan before claiming.
   34264222958, 34264222994, 34264222925, and 34264222885 and all 13 rolled-up checks are terminal
   SUCCESS. Candidate remains unmerged pending independent acceptance of the two-line supply-pin
   repair.
+
+- 2026-09-08T19:07:05+00:00: Authorized merge preflight stopped safely: after PR #86 exact-head CI
+  became fully green, product origin/main advanced from reviewed base
+  b2707c482876dcfb42c756c39165f6ecdb5c7c10 to 32f79101da348896fdf0fd94c07356889a05b693 via Merge PR
+  #82 repository-wide Huawei MIT headers. The advancement overlaps crates/asb-tui/src/lib.rs. Main
+  also contains signed pin repair 7add29f with the same official TLA size/digest plus immutable
+  GitHub asset API URL, superseding candidate commit da0d21b. PR #86 still reports old base
+  b2707c48, so no merge was executed. Exact safe next step is controlled rebase/resign and fresh
+  review/CI; candidate and green run IDs remain preserved.
