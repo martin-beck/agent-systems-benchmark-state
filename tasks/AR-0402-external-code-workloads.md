@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:18:25+00:00",
+  "updated_at": "2026-09-08T12:20:36+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -209,3 +209,6 @@ Implementation has not started. Read the linked plan before claiming.
   for all external suites. Planned evaluators explicitly carry image/SBOM/evidence slots; validator
   rejects invalid status and any qualified record lacking all three immutable identities. Focused
   registry/validator tests pass 2/2; no evaluator qualification is claimed.
+
+- 2026-09-08T12:20:36+00:00: Recorded command exit 0; command argv SHA-256
+  cd69529006ec9ee7130be909e22d3302d6cdb711c0e787eddc478a277cc697b3.
