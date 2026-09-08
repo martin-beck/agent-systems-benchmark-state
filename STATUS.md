@@ -730,7 +730,7 @@ flowchart LR
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
 | P1 | [AR-1002](tasks/AR-1002-verifier-integrity.md): Protect verifiers and support offline rescoring | replay_20260906 | Separate immutable graders from agent work and version scoring independently of execution. | Design the immutable observation and score-revision contract using Inspect and Harbor concepts. |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | quality_20260906 | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary. |
-| P2 | [AR-0309](tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | contracts_20260906 | Run a maintained MIT OpenHands SDK or canonical headless client. | Implement the isolated OpenHands module and fixture around the proven SDK-only custom-tool boundary; pin and verify the 136-package Python graph before requesting shared lib.rs registration. |
+| P2 | [AR-0309](tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | contracts_20260906 | Run a maintained MIT OpenHands SDK or canonical headless client. | Add malformed, symlink, cancellation, action-ceiling and cleanup negatives; generate the exact locked package inventory/provenance fixture; then request the shared lib.rs registration fence. |
 
 ### Blocked (4)
 

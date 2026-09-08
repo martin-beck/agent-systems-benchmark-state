@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0309",
-  "next_action": "Implement the isolated OpenHands module and fixture around the proven SDK-only custom-tool boundary; pin and verify the 136-package Python graph before requesting shared lib.rs registration.",
+  "next_action": "Add malformed, symlink, cancellation, action-ceiling and cleanup negatives; generate the exact locked package inventory/provenance fixture; then request the shared lib.rs registration fence.",
   "observed_branch": "feature/agent-openhands",
   "observed_dirty": 2,
   "observed_head": "3a07b57b8265d98eeebbcd4fd21339d72fac0663",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run a maintained MIT OpenHands SDK or canonical headless client.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Implement maintained OpenHands SDK client adapter",
-  "updated_at": "2026-09-08T04:19:29+00:00",
+  "updated_at": "2026-09-08T04:21:57+00:00",
   "worktree_key": "agent-systems-benchmark-agent-openhands"
 }
 ---
@@ -132,3 +132,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T04:19:29+00:00: Recorded command exit 0; command argv SHA-256
   14a63e3bea35a89d4ad3486f63c95f0799d2369b8ea961c6a9fe0d578f3dd77f.
+
+- 2026-09-08T04:21:57+00:00: Isolated module and real fixture now exist in the declared worktree
+  only. Focused compile/parser/config tests pass (3 passed, native ignored). Real credential-free
+  SDK 1.45.0 test passed in 100.41s after content-verifying and privately copying 16,168 environment
+  entries / 271,861,732 bytes: exact public sentinel auth, loopback-only request, AlwaysConfirm
+  allowlist, one bounded write, finish, positive usage, empty private state, and cleanup.
+  OpenHands/LiteLLM stdout and stderr were empty with local cost-map forcing. The wrapper
+  evidence-record phase was interrupted while waiting on the shared state lock after the test had
+  completed; no product or fixture residue remained.
