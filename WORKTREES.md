@@ -12,7 +12,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-agent-mini-swe` | `feature/agent-mini-swe` | `3cf9a53fce70` | 0 | behind 55, ahead 0 |
 | `agent-systems-benchmark-agent-opencode` | `feature/agent-opencode` | `dfb0d548bf75` | 0 | behind 134, ahead 0 |
 | `agent-systems-benchmark-agent-opendesk` | `feature/agent-opendesk` | `8eb99d3c7235` | 0 | behind 127, ahead 0 |
-| `agent-systems-benchmark-agent-openhands` | `feature/agent-openhands` | `e2b312cf8fa3` | 0 | behind 4, ahead 4 |
+| `agent-systems-benchmark-agent-openhands` | `feature/agent-openhands` | `e73767d959a0` | 0 | behind 0, ahead 4 |
 | `agent-systems-benchmark-agent-qwen-code` | `feature/agent-qwen-code` | `0be96c9ec50e` | 0 | behind 103, ahead 0 |
 | `agent-systems-benchmark-agent-replay-conformance` | `feature/agent-replay-conformance` | `3a07b57b8265` | 0 | behind 4, ahead 0 |
 | `agent-systems-benchmark-aider-deterministic-replay` | `fix/aider-deterministic-replay` | `87a22654913a` | 0 | behind 5, ahead 0 |

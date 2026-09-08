@@ -12,16 +12,16 @@
   "next_action": "Await authorization for one controlled signed rebase of approved-scope OpenHands candidate e2b312c onto current main d3e2dfa, then rerun affected exact-tree gates and request immutable review.",
   "observed_branch": "feature/agent-openhands",
   "observed_dirty": 0,
-  "observed_head": "e2b312cf8fa3fcc452e1f5a708dcfe2d1c06adf1",
+  "observed_head": "e73767d959a0c640685deaf84335be84649df7c0",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0309.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run a maintained MIT OpenHands SDK or canonical headless client.",
-  "task_revision": 107,
+  "task_revision": 108,
   "title": "Implement maintained OpenHands SDK client adapter",
-  "updated_at": "2026-09-08T05:18:05+00:00",
+  "updated_at": "2026-09-08T06:35:38+00:00",
   "worktree_key": "agent-systems-benchmark-agent-openhands"
 }
 ---
