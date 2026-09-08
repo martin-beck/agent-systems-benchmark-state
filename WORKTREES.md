@@ -38,8 +38,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-gemini-generate-content-replay` | `feature/gemini-generate-content-replay` | `93c19625f910` | 0 | behind 36, ahead 0 |
 | `agent-systems-benchmark-gemini-thinking-config-contract` | `feature/gemini-thinking-config-contract` | `0aff7023cacf` | 0 | behind 34, ahead 0 |
 | `agent-systems-benchmark-interaction-aware-redaction` | `feature/interaction-aware-redaction` | `867861c95c19` | 0 | behind 21, ahead 0 |
-| `agent-systems-benchmark-kernel-diagnostics` | `feature/kernel-diagnostics` | `8d5c20de996c` | 1 | behind 2, ahead 5 |
-| changed files | - | - | - | `crates/asb-metrics/src/kernel.rs` |
+| `agent-systems-benchmark-kernel-diagnostics` | `feature/kernel-diagnostics` | `1d24993771a4` | 0 | behind 2, ahead 6 |
 | `agent-systems-benchmark-native-platform-lab` | `feature/native-platform-lab` | `b1669203308d` | 0 | behind 65, ahead 0 |
 | `agent-systems-benchmark-native-platforms` | `feature/native-platforms` | `bdaf9c108226` | 0 | behind 85, ahead 17 |
 | `agent-systems-benchmark-native-x86-capacity` | `feature/native-x86-capacity` | `45604cd323c5` | 0 | behind 5, ahead 0 |
