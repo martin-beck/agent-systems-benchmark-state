@@ -10,16 +10,16 @@
     "AR-0804"
   ],
   "id": "AR-0805",
-  "next_action": "Implement transactional run launch and reconnectable live status views in the terminal frontend.",
+  "next_action": "Create the declared worktree with the corrected exact git worktree add invocation; then hold product mutation until active AR-0855 broad source-header fence is integrated/released.",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0805.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T16:23:19+00:00",
+  "updated_at": "2026-09-08T16:23:47+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -39,3 +39,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T16:23:19+00:00: Recorded command exit 129; command argv SHA-256
   6fbe289a70903596c35c58cb3776d1e022f9eaa51e506a69b65d3c420dd6437b.
+
+- 2026-09-08T16:23:47+00:00: Initial worktree-create command exit 129 is operator-only: an
+  unintended trailing argument made git worktree add receive too many positional arguments and print
+  usage. No branch or worktree was created and no product path changed. Corrective action is a
+  single exact retry after durable classification.
