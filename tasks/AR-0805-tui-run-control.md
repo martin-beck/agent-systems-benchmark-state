@@ -12,7 +12,7 @@
   "id": "AR-0805",
   "next_action": "Read complete AR-0805 plan and product frontend/control contracts in the declared clean worktree; do not mutate crates/asb-tui until active AR-0855, which overlaps lib.rs/main.rs, is integrated or its fence is returned, then rebase onto exact main.",
   "observed_branch": "feature/tui-run-control",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "b2707c482876dcfb42c756c39165f6ecdb5c7c10",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0805.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T16:24:28+00:00",
+  "updated_at": "2026-09-08T16:37:08+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---

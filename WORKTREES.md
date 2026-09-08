@@ -95,6 +95,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-terminal-workloads` | `feature/terminal-workloads` | `e0da4efd3750` | 2 | behind 11, ahead 1 |
 | changed files | - | - | - | `tests/workloads/test_external_registry_validator.py`, `tools/quality/validate_external_registry.py` |
 | `agent-systems-benchmark-trace-interoperability` | `feature/trace-interoperability` | `921cf004f8aa` | 0 | behind 43, ahead 0 |
-| `agent-systems-benchmark-tui-run-control` | `feature/tui-run-control` | `b2707c482876` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-tui-run-control` | `feature/tui-run-control` | `b2707c482876` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-tui/src/lib.rs` |
 | `agent-systems-benchmark-tui-settings-wizard` | `feature/tui-settings-wizard` | `8f7152c525da` | 0 | behind 3, ahead 0 |
 | `agent-systems-benchmark-verifier-integrity` | `feature/verifier-integrity` | `3fc65ea73bad` | 0 | behind 76, ahead 0 |
