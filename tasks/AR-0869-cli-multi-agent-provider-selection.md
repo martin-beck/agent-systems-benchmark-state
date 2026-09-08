@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Select several agents and apply one preconfigured provider profile through inspectable command-line options.",
-  "task_revision": 91,
+  "task_revision": 92,
   "title": "Add CLI multi-agent provider selection",
-  "updated_at": "2026-09-08T22:45:55+00:00",
+  "updated_at": "2026-09-08T22:46:12+00:00",
   "worktree_key": "agent-systems-benchmark-cli-multi-agent-provider-selection"
 }
 ---
@@ -341,3 +341,6 @@ Implementation has not started. Read the linked plan before claiming.
   lacking matching DCO; these are documented historical boundaries. Do not rewrite unrelated
   history. Use additive signed-DCO CI-provenance attestation atop repaired tree, then fresh push
   post-merge gates.
+
+- 2026-09-08T22:46:12+00:00: Recorded command exit 0; command argv SHA-256
+  1cfbc4789172041ab81d9516fe2d0759723fa9eed556ebaac13c520d6b5e5917.
