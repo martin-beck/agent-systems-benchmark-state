@@ -8,7 +8,7 @@
     "AR-1001"
   ],
   "id": "AR-0904",
-  "next_action": "Integrate the contract-consistency checker into the required quality workflow/failure-fixture gate, add semantic compatibility and generated capability/support-table coverage, then run focused/full gates.",
+  "next_action": "Integrate the checker into required quality/failure gates, add semantic compatibility and generated capability/support coverage, then run focused and full validation.",
   "observed_branch": "feature/contract-consistency",
   "observed_dirty": 4,
   "observed_head": "a97c3ed708cc16522383ecde41ec9fa2e642bc61",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Machine-check protocol and artifact consistency",
-  "updated_at": "2026-09-08T09:22:00+00:00",
+  "updated_at": "2026-09-08T09:22:16+00:00",
   "worktree_key": "agent-systems-benchmark-contract-consistency"
 }
 ---
@@ -88,3 +88,16 @@ Implementation has not started. Read the linked plan before claiming.
   every one of the 14 discovered Rust-owned v1 schemas across
   protocol/control/replay/bundle/workloads, 20 positive JSON examples, a named Rust round-trip gate
   per contract, and six exact conformance commands. Determатар? skeleton no.
+
+- 2026-09-08T09:22:16+00:00: Correction and completion of the prior truncated checkpoint note: exact
+  dirty scope is four new intended paths: contracts/v1/catalog.json,
+  tools/quality/contract_consistency.py, tools/quality/test_contract_consistency.py, and
+  docs/CONTRACT_CATALOG.md. The closed registry enrolls all 14 discovered Rust-owned v1 schemas
+  across protocol, control, replay, bundle, and workloads; 20 positive JSON examples; one named Rust
+  round-trip gate per contract; and six conformance commands. Deterministic document generation and
+  zero-diff validation pass. Two Python negative groups pass and prove duplicate or unregistered
+  contracts, path traversal, unknown catalog fields, and missing Rust bindings fail closed. The
+  registry-run Rust suite exited 0: protocol schema 7/7, control schema 4/4, replay schema 4/4,
+  bundle schema 2/2, workload validity 5/5, and stateful control
+  negotiation/bounds/cancellation/error suite 14/14. Git diff-check is clean. No existing schema,
+  product type, fixture, or other AR lane was modified.
