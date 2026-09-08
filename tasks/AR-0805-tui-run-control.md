@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 92,
+  "task_revision": 93,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T18:34:44+00:00",
+  "updated_at": "2026-09-08T18:36:34+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -371,3 +371,6 @@ Implementation has not started. Read the linked plan before claiming.
   formal tools. Checkout and Java setup passed. This is an external/tool-download gate failure, not
   evidence of a TUI product or model assertion failure. Candidate remains immutable and unmerged;
   preserve explicit protocol/resource/native evidence limits.
+
+- 2026-09-08T18:36:34+00:00: Recorded command exit 0; command argv SHA-256
+  7310a2cb2367ff47a8dddeb6338e224b321652b97afde0d54b6b9483031e78f4.
