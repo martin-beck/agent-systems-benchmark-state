@@ -10,7 +10,7 @@
     "AR-0801"
   ],
   "id": "AR-0869",
-  "next_action": "Merge PR #88 exact head 0d9d317716d557b916e4da7022f58197d287987a into base 559fbcc825234bb98a64ba554a53f38b004d24f6 using the signed no-ff coordinator path; then run exact-main post-merge gates before release.",
+  "next_action": "Repair the bad GitHub merge 7571592990bf1e4a5474fbd8a183ea110e5d242c with an SSH-signed matching-DCO no-ff replacement preserving exact tree and parents; force-with-lease only main, then run fresh exact-main hosted gates and post-merge verification.",
   "observed_branch": "feature/cli-multi-agent-provider-selection",
   "observed_dirty": 0,
   "observed_head": "0d9d317716d557b916e4da7022f58197d287987a",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Select several agents and apply one preconfigured provider profile through inspectable command-line options.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Add CLI multi-agent provider selection",
-  "updated_at": "2026-09-08T22:38:57+00:00",
+  "updated_at": "2026-09-08T22:41:28+00:00",
   "worktree_key": "agent-systems-benchmark-cli-multi-agent-provider-selection"
 }
 ---
@@ -309,3 +309,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T22:38:57+00:00: Recorded command exit 0; command argv SHA-256
   307645f2e0723d6f222e925e9620ba52147569c5a7e9a795995fcabf104d72d0.
+
+- 2026-09-08T22:41:28+00:00: Post-merge repository-quality run 34286967367 failed because GitHub
+  merge commit 7571592990bf1e4a5474fbd8a183ea110e5d242c lacks a matching Signed-off-by trailer.
+  Exact PR-head CI was fully green; this is an integration-boundary defect. Preserve reviewed tree
+  25183d10ffb50bd465dd93efb5b69001a20273e4 and parents 559fbcc825234bb98a64ba554a53f38b004d24f6 plus
+  0d9d317716d557b916e4da7022f58197d287987a. Narrow signed-DCO replacement is authorized; do not
+  alter product contents.
