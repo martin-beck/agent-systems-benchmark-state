@@ -10,7 +10,7 @@
     "AR-0804"
   ],
   "id": "AR-0805",
-  "next_action": "Fresh independent immutable review of repaired unpublished candidate c8336909ae6de887d8146f59224dd21efff58b52 against exact parent b2707c482876dcfb42c756c39165f6ecdb5c7c10. Review the five prior blockers and one-file scope before publication. Preserve explicit protocol/resource/native evidence gaps and AR-0855 header lines.",
+  "next_action": "Fresh independent immutable review of unpublished candidate d0b7ed92f253a67f7d540f50690673a2760e8257 against exact parent b2707c482876dcfb42c756c39165f6ecdb5c7c10. Verify transitive snapshot convergence, strict event association validation, negotiated page limits, and preserved earlier repairs before publication.",
   "observed_branch": "feature/tui-run-control",
   "observed_dirty": 0,
   "observed_head": "d0b7ed92f253a67f7d540f50690673a2760e8257",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T17:45:59+00:00",
+  "updated_at": "2026-09-08T17:46:37+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -272,3 +272,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T17:45:59+00:00: Recorded command exit 0; command argv SHA-256
   452369a809fab27760b6b144709a0f4391c7d5528d354659e496f37d1470af0c.
+
+- 2026-09-08T17:46:37+00:00: Second review-block repair is complete in signed unpublished candidate
+  d0b7ed92f253a67f7d540f50690673a2760e8257, tree 3c61dbc61fc78dd3bab9268a3a17b67fb78de779, exact
+  parent b2707c482876dcfb42c756c39165f6ecdb5c7c10. One-file scope crates/asb-tui/src/lib.rs is clean
+  (+757/-1). Authoritative snapshots now allow transitive forward convergence including
+  Prepared/Running to Completed and completion-vs-cancel races while rejecting regressions; every
+  event page is validated against exact protocol ID associations before cursor movement; effective
+  validated ControlLimits are retained and event request/response cardinality honors negotiated
+  max_page_items below 128. Focused tests pass 12/12. Full fmt, workspace clippy/tests, rustdoc,
+  release build, contract, coverage, failure, platform, workflow, dependency, privacy, repository
+  policy, commit-range Gitleaks, signature, DCO, and diff gates all pass. Prior global interleaving,
+  plan digest binding, immutable summary checks, colon IDs, and checked overflow remain covered.
+  Broader dashboard protocol/resource/native limits remain explicit.
