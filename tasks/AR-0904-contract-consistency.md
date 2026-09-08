@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Machine-check protocol and artifact consistency",
-  "updated_at": "2026-09-08T09:23:50+00:00",
+  "updated_at": "2026-09-08T09:23:53+00:00",
   "worktree_key": "agent-systems-benchmark-contract-consistency"
 }
 ---
@@ -101,3 +101,6 @@ Implementation has not started. Read the linked plan before claiming.
   bundle schema 2/2, workload validity 5/5, and stateful control
   negotiation/bounds/cancellation/error suite 14/14. Git diff-check is clean. No existing schema,
   product type, fixture, or other AR lane was modified.
+
+- 2026-09-08T09:23:53+00:00: Recorded command exit 0; command argv SHA-256
+  b70fe5c7792dc9c8b32d9d7703dd5e2441803e9867e3aa32f6393f33e31e6b01.
