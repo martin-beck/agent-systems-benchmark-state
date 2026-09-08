@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T09:57:39+00:00",
+  "updated_at": "2026-09-08T10:04:37+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -111,3 +111,6 @@ Implementation has not started. Read the linked plan before claiming.
   c6d91569cb0ce4f520e68d629c505064f6f0a4e7ce235c05599bc164ef9895c2.
 
 - 2026-09-08T09:57:39+00:00: Heartbeat by root-coordination-20260906.
+
+- 2026-09-08T10:04:37+00:00: Recorded command exit 0; command argv SHA-256
+  293f02809b4a0545a8b524e8911da9ec5102c197221af8499a87f437f12af3e6.
