@@ -9,17 +9,17 @@
   "id": "AR-0402",
   "next_action": "Complete independent oracle execution fixtures and production API integration; keep evaluator support unqualified until image/SBOM evidence exists.",
   "observed_branch": "feature/external-code-workloads",
-  "observed_dirty": 2,
-  "observed_head": "7650be3ca0c22366b0aed0598897d95242bdad8f",
+  "observed_dirty": 0,
+  "observed_head": "1347811224b049ff4729d51512bc361dab9bd4a1",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0402.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 117,
+  "task_revision": 118,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:57:20+00:00",
+  "updated_at": "2026-09-08T12:57:27+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
