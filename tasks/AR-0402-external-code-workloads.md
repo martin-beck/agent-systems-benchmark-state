@@ -7,7 +7,7 @@
     "AR-0401"
   ],
   "id": "AR-0402",
-  "next_action": "Implement production external-workload adapter/materialization integration and add oracle execution fixtures; keep evaluator qualification planned until immutable image/SBOM evidence exists.",
+  "next_action": "Integrate this boundary into the production workload adapter and add evaluator/oracle execution fixtures; maintain planned status for unqualified images.",
   "observed_branch": "feature/external-code-workloads",
   "observed_dirty": 0,
   "observed_head": "6603d837305ef7ffe8b4430d49534495eeb121e3",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 88,
+  "task_revision": 89,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:25:37+00:00",
+  "updated_at": "2026-09-08T12:25:51+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -252,3 +252,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T12:25:30+00:00: Recorded command exit 0; command argv SHA-256
   feac4e04b566e20bbcee64b17338565ce5b629153a0d42f485dc86f7729ecf50.
+
+- 2026-09-08T12:25:51+00:00: Added signed product commit 6603d83 with safe external-source
+  materialization: exact archive SHA-256 verification, destination nonexistence, traversal
+  containment, and rejection of symlinks/hardlinks/devices before extraction. Positive and
+  traversal-negative tests pass 3/3. The helper never executes extracted content.
