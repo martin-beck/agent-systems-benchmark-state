@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0202",
-  "next_action": "Monitor exact-head CI at fb2adac; if the ARM fixture failure reproduces, debug and repair before merge. Continue preserving native privileged evidence boundary.",
+  "next_action": "Do not merge or release until genuine privileged native x86 and aarch64 evidence is recorded, or the acceptance criteria are explicitly amended by a reviewed state transition. Preserve green PR #61 and exact head fb2adac.",
   "observed_branch": "feature/kernel-diagnostics",
   "observed_dirty": 0,
   "observed_head": "fb2adac65f10aa4b228a0bdf3643285161ceea10",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate perf and optional eBPF diagnostics without making privileged tools mandatory.",
-  "task_revision": 168,
+  "task_revision": 169,
   "title": "Add optional kernel diagnostics",
-  "updated_at": "2026-09-08T23:10:14+00:00",
+  "updated_at": "2026-09-08T23:10:26+00:00",
   "worktree_key": "agent-systems-benchmark-kernel-diagnostics"
 }
 ---
@@ -480,3 +480,11 @@ Implementation has not started. Read the linked plan before claiming.
   0187992ca26b950e0d00f6b6dfaa65f9940ff5df406342155e382ae4d83cfdd4.
 
 - 2026-09-08T23:10:14+00:00: Heartbeat by replay_20260906.
+
+- 2026-09-08T23:10:26+00:00: Exact-head repair fb2adac is green across all required PR checks:
+  source headers, repository quality, Rust x86_64 and arm, emulated aarch64, fault, formal, fuzz,
+  mutation, Loom, Kani, and AWQ shadow. Independent diff/signature/DCO/scope review found no
+  additional source defect. The earlier ARM fixture failure did not reproduce and is classified as
+  transient runner/test flakiness. Acceptance is still incomplete because the plan requires genuine
+  positive native x86 and aarch64 perf/eBPF counter evidence; current CI only exercises
+  fail-closed/optional paths and no authorized native capacity is available.
