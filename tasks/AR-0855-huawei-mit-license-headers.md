@@ -2,7 +2,7 @@
 {
   "branch": "fix/huawei-mit-license-headers",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T19:18:12+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "fix/huawei-mit-license-headers",
   "observed_dirty": 0,
   "observed_head": "7add29f1d24ce3a74b9cca2e2f1fb29fa45cddd6",
-  "owner": "codex-asb-pr82-publication",
+  "owner": "",
   "plan": "../plans/AR-0855.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files.",
-  "task_revision": 185,
+  "task_revision": 186,
   "title": "Enforce Huawei MIT source headers",
-  "updated_at": "2026-09-08T18:48:28+00:00",
+  "updated_at": "2026-09-08T18:48:31+00:00",
   "worktree_key": "agent-systems-benchmark-huawei-mit-headers"
 }
 ---
@@ -529,3 +529,7 @@ and fresh coordinator snapshot before claiming. Do not modify vendored coordinat
 
 - 2026-09-08T18:48:28+00:00: Replaced stale product-review next action after exact merge and green
   post-main CI.
+
+- 2026-09-08T18:48:31+00:00: Released unowned at the sole remaining external dependency: corrected
+  immutable agent-workflow-coordinator v0.3.2+ release required before hash-locked state vendor sync
+  and state-owned header enforcement.
