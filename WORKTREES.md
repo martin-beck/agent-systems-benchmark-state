@@ -23,6 +23,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-benchmark-validity` | `feature/benchmark-validity` | `60a6c730457b` | 0 | behind 99, ahead 0 |
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `0717d4acd168` | 0 | behind 207, ahead 0 |
 | `agent-systems-benchmark-ci-artifact-quota-resilience` | `feature/ci-artifact-quota-resilience` | `7d98653e7e7f` | 0 | behind 153, ahead 0 |
+| `agent-systems-benchmark-cli-multi-agent-provider-selection` | `feature/cli-multi-agent-provider-selection` | `559fbcc82523` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-contract-consistency` | `feature/contract-consistency` | `289b2711774b` | 0 | behind 63, ahead 0 |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 276, ahead 0 |
 | `agent-systems-benchmark-credential-fd-helper-resolvers` | `feature/credential-fd-helper-resolvers` | `ef5c40762e27` | 0 | behind 4, ahead 0 |
