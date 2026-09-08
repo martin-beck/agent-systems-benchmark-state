@@ -11,17 +11,17 @@
   "id": "AR-1002",
   "next_action": "Await AR-0202 Cargo fence return; refresh only formal/Cargo.lock, rerun formal and final exact-tree gates, then create signed candidate.",
   "observed_branch": "feature/verifier-integrity",
-  "observed_dirty": 11,
-  "observed_head": "3a07b57b8265d98eeebbcd4fd21339d72fac0663",
+  "observed_dirty": 0,
+  "observed_head": "3fc65ea73badcea31497e53644fdad8778115870",
   "owner": "replay_20260906",
   "plan": "../plans/AR-1002.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate immutable graders from agent work and version scoring independently of execution.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Protect verifiers and support offline rescoring",
-  "updated_at": "2026-09-08T04:32:23+00:00",
+  "updated_at": "2026-09-08T04:32:48+00:00",
   "worktree_key": "agent-systems-benchmark-verifier-integrity"
 }
 ---

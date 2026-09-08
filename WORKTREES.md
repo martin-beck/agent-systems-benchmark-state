@@ -38,7 +38,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-gemini-generate-content-replay` | `feature/gemini-generate-content-replay` | `93c19625f910` | 0 | behind 34, ahead 0 |
 | `agent-systems-benchmark-gemini-thinking-config-contract` | `feature/gemini-thinking-config-contract` | `0aff7023cacf` | 0 | behind 32, ahead 0 |
 | `agent-systems-benchmark-interaction-aware-redaction` | `feature/interaction-aware-redaction` | `867861c95c19` | 0 | behind 19, ahead 0 |
-| `agent-systems-benchmark-kernel-diagnostics` | `feature/kernel-diagnostics` | `ee9d3e0efe88` | 0 | behind 0, ahead 3 |
+| `agent-systems-benchmark-kernel-diagnostics` | `feature/kernel-diagnostics` | `ee9d3e0efe88` | 1 | behind 0, ahead 3 |
+| changed files | - | - | - | `crates/asb-metrics/src/kernel.rs` |
 | `agent-systems-benchmark-native-platform-lab` | `feature/native-platform-lab` | `b1669203308d` | 0 | behind 63, ahead 0 |
 | `agent-systems-benchmark-native-platforms` | `feature/native-platforms` | `bdaf9c108226` | 0 | behind 83, ahead 17 |
 | `agent-systems-benchmark-native-x86-capacity` | `feature/native-x86-capacity` | `45604cd323c5` | 0 | behind 3, ahead 0 |
@@ -70,5 +71,4 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `3bcfd85dedd3` | 0 | behind 161, ahead 0 |
 | `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `410ecc95b80e` | 0 | behind 149, ahead 0 |
 | `agent-systems-benchmark-terminal-interface` | `feature/terminal-interface` | `d2e7b66ff6af` | 0 | behind 94, ahead 0 |
-| `agent-systems-benchmark-verifier-integrity` | `feature/verifier-integrity` | `3a07b57b8265` | 11 | behind 0, ahead 0 |
-| changed files | - | - | - | `Cargo.lock`, `crates/asb-analysis/Cargo.toml`, `crates/asb-analysis/README.md`, `crates/asb-analysis/src/lib.rs`, `crates/asb-store/README.md`, `crates/asb-store/src/lib.rs`, `crates/asb-workloads/README.md`, `crates/asb-workloads/src/lib.rs`, `formal/Cargo.lock`, `crates/asb-analysis/src/scoring.rs`, `crates/asb-store/src/verification.rs` |
+| `agent-systems-benchmark-verifier-integrity` | `feature/verifier-integrity` | `3fc65ea73bad` | 0 | behind 0, ahead 1 |
