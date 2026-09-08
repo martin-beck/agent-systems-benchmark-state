@@ -2,7 +2,7 @@
 {
   "branch": "feature/trace-interoperability",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T13:15:45+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0104",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/trace-interoperability",
   "observed_dirty": 0,
   "observed_head": "921cf004f8aa6884a2a3868f24b197b22dbf2a76",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-1005.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Expose stable causal ASB events and optional standards-based telemetry without binding storage to an evolving convention.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Export interoperable privacy-safe traces",
-  "updated_at": "2026-09-08T11:03:24+00:00",
+  "updated_at": "2026-09-08T11:07:51+00:00",
   "worktree_key": "agent-systems-benchmark-trace-interoperability"
 }
 ---
@@ -207,3 +207,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T11:03:24+00:00: Recorded command exit 0; command argv SHA-256
   d37c5d1f6fd0b697849ebca57e86faa6056d65401cba6b5d1c828b2f3a511109.
+
+- 2026-09-08T11:07:51+00:00: Released AR-1005 after reviewed PR #75 exact head
+  921cf004f8aa6884a2a3868f24b197b22dbf2a76 merged as SSH-signed+DCO no-ff
+  b6078bb1ca2ee8f35973ffab9740c2c12dd4126e, tree 078eadaf3f5ce6f0d916f8036f3790d2c7f580a7.
+  Exact-main workflows all terminal success: formal 34218583650, fault 34218583828, quality
+  34218583656, Rust x86/arm 34218583769, emulated aarch64 34218583713. Postmerge local focused trace
+  2/2, exporter 7/7, contract checker 4/4 plus all registered contract suites, repository policy and
+  clean synchronized refs passed. Full premerge exact-tree fmt/clippy/workspace
+  tests/rustdoc/release, failure fixtures, Gitleaks/privacy, formal and Kani 6/6 with deliberate
+  negative passed. OTLP is an optional transport-neutral bounded queue; no live collector/network
+  interoperability or raw content export is claimed.
