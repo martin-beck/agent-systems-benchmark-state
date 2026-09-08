@@ -7,7 +7,7 @@
     "AR-0401"
   ],
   "id": "AR-0402",
-  "next_action": "Complete independent oracle execution fixtures and production API integration; keep evaluator support unqualified until image/SBOM evidence exists.",
+  "next_action": "Integrate production API consumers and add independent oracle result validation; retain explicit unqualified status for real external suites.",
   "observed_branch": "feature/external-code-workloads",
   "observed_dirty": 0,
   "observed_head": "1347811224b049ff4729d51512bc361dab9bd4a1",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 119,
+  "task_revision": 120,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:57:39+00:00",
+  "updated_at": "2026-09-08T13:04:40+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -333,3 +333,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T12:57:39+00:00: Recorded command exit 0; command argv SHA-256
   0d46bb7fedb9fe9061c4e5611fd160eae61959fae3bc3ada52bd987ff1510a9c.
+
+- 2026-09-08T13:04:40+00:00: Qualified-path oracle fixture integrated as signed+DCO merge
+  80121d7d1fc1a36248c3072884d83368513ad262. Local oracle runner tests pass 3/3. Exact-main
+  post-merge all green: Rust 34229084532, quality 34229084530, formal 34229084473, fault
+  34229085173, emulated aarch64 34229084444. This is disposable contract evidence only; real
+  evaluator images/SBOMs remain unqualified.
