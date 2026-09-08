@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T08:38:19+00:00",
+  "updated_at": "2026-09-08T08:38:47+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -56,3 +56,6 @@ Implementation has not started. Read the linked plan before claiming.
   metadata; Aider Polyglot immutable main is 7e0611e77b54e2dea774cdc0aa00cf9f7ed6144f but repository
   API reports no SPDX license, so adoption is held pending explicit license inspection. No product
   files changed.
+
+- 2026-09-08T08:38:47+00:00: Recorded command exit 0; command argv SHA-256
+  b53816b1079217465ce64670b216856415841404399c34dc68b2c7933595383f.
