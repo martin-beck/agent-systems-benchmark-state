@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Let test plans select one provider profile for every chosen supported agent atomically.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Configure one provider for all agents",
-  "updated_at": "2026-09-08T11:28:57+00:00",
+  "updated_at": "2026-09-08T11:29:22+00:00",
   "worktree_key": "agent-systems-benchmark-all-agents-provider"
 }
 ---
@@ -83,3 +83,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T11:28:57+00:00: Recorded command exit 0; command argv SHA-256
   d63823df48f7e3b0ab6284ec3f93f10ee2250a12901e8b418c47ea8fc6d56341.
+
+- 2026-09-08T11:29:22+00:00: Recorded command exit 0; command argv SHA-256
+  c933617cf9c33d8f6f388124aab93302702eeda5f6daf066757960c9f445e893.
