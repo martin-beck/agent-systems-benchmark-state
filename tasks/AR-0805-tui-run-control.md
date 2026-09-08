@@ -10,7 +10,7 @@
     "AR-0804"
   ],
   "id": "AR-0805",
-  "next_action": "Fresh independent immutable review of unpublished candidate fe24e48f9b4bae4ca7f62aa50be52e7586d455d3 against exact parent b2707c482876dcfb42c756c39165f6ecdb5c7c10. Verify empty-poll cursor retention and status-equivalent event lifecycle staging before publication.",
+  "next_action": "Hold PR #86. Investigate exact-head Formal assurance run 34263658065 TLC/Alloy job failure caused by curl exit 63 Maximum file size exceeded while downloading pinned formal tooling; all other checks still settling. Do not merge until a fresh exact-head formal check and complete matrix are green.",
   "observed_branch": "feature/tui-run-control",
   "observed_dirty": 0,
   "observed_head": "fe24e48f9b4bae4ca7f62aa50be52e7586d455d3",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 91,
+  "task_revision": 92,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T18:32:36+00:00",
+  "updated_at": "2026-09-08T18:34:44+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -363,3 +363,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T18:32:36+00:00: Recorded command exit 0; command argv SHA-256
   b3c7982e8bc27a29ab51c80052c3eac661152f499181f456c621c27498d5f965.
+
+- 2026-09-08T18:34:44+00:00: Published approved candidate fe24e48f9b4bae4ca7f62aa50be52e7586d455d3
+  as PR #86 against exact base b2707c482876dcfb42c756c39165f6ecdb5c7c10. Exact-head Formal assurance
+  run 34263658065 failed in job 102187542393 before model execution: step Check temporal recovery
+  models and deliberate mutations ended with curl (63) Maximum file size exceeded while fetching
+  formal tools. Checkout and Java setup passed. This is an external/tool-download gate failure, not
+  evidence of a TUI product or model assertion failure. Candidate remains immutable and unmerged;
+  preserve explicit protocol/resource/native evidence limits.
