@@ -13,7 +13,7 @@
     "AR-0401"
   ],
   "id": "AR-0505",
-  "next_action": "Build production-boundary integration matrix using synthetic upstream service.",
+  "next_action": "Complete P0 AR-0850 deterministic multi-file aider request ordering, then rerun the exact four-agent native loopback capture/replay matrix without weakening strict comparison.",
   "observed_branch": "feature/agent-replay-conformance",
   "observed_dirty": 0,
   "observed_head": "678ba7c8593a52beb8f3279ddd452245294131e7",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Test each actual client through recording and offline replay of engineering tasks.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Prove real-agent replay conformance",
-  "updated_at": "2026-09-08T02:13:07+00:00",
+  "updated_at": "2026-09-08T02:14:10+00:00",
   "worktree_key": "agent-systems-benchmark-agent-replay-conformance"
 }
 ---
@@ -91,3 +91,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T02:13:07+00:00: Recorded command exit 0; command argv SHA-256
   ff8b68758a30e396d636221a01e95b28907c4787a0fc805f73234650b84c1e62.
+
+- 2026-09-08T02:14:10+00:00: Exact current-tree integration audit: OpenCode, OpenDesk and Codex
+  pinned Linux x86_64 loopback-only capture/seal/network-denied strict replay journeys passed. Aider
+  0.86.2 failed closed: replay returned [409, 409] instead of recorded [500, 200]. A privacy-safe
+  bounded two-capture diagnostic reproduced request drift only at /messages/5/content. Upstream
+  BaseCoder iterates list(self.abs_fnames) from a Python set and the isolated adapter does not fix
+  hash ordering, so multi-file content order varies between processes. A later coincidental pass and
+  immediate bounded stability failure confirm intermittence. No raw prompt/value was retained.
+  Product diagnostic diff was removed after durable evidence; worktree is clean. P0 AR-0850 owns
+  repair and regression proof.
