@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Enforce Huawei MIT source headers",
-  "updated_at": "2026-09-08T14:52:54+00:00",
+  "updated_at": "2026-09-08T14:54:21+00:00",
   "worktree_key": "agent-systems-benchmark-huawei-mit-headers"
 }
 ---
@@ -117,3 +117,6 @@ and fresh coordinator snapshot before claiming. Do not modify vendored coordinat
 
 - 2026-09-08T14:52:47+00:00: Recorded command exit 0; command argv SHA-256
   e45ece4b770e3469106c1cbccddb35db28cb6d89c0768dfa2136f3993c6023dc.
+
+- 2026-09-08T14:54:21+00:00: Recorded command exit 0; command argv SHA-256
+  87b2b3de1ae49d2126c348a18507a2df23503e10df87def8ac2b0813c022179d.
