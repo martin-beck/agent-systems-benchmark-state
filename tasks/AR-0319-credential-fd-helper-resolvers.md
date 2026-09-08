@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add explicit file-descriptor and helper credential references without ambient-secret fallback.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Implement credential FD and helper resolvers",
-  "updated_at": "2026-09-08T17:16:47+00:00",
+  "updated_at": "2026-09-08T17:17:13+00:00",
   "worktree_key": "agent-systems-benchmark-credential-fd-helper-resolvers"
 }
 ---
@@ -140,3 +140,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T17:16:47+00:00: Recorded command exit 101; command argv SHA-256
   98f4a48fea5233f86f6fec1d4db0fb63b660389e7fee74de415f3bfa4ad595d5.
+
+- 2026-09-08T17:17:13+00:00: Recorded command exit 101; command argv SHA-256
+  3d45decc5c9297812ee7f1443daabf5271da86ea64b89994d04fb21726eda3a2.
