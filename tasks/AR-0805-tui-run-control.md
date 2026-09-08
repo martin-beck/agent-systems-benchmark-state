@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T16:50:19+00:00",
+  "updated_at": "2026-09-08T16:52:06+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -135,3 +135,6 @@ Implementation has not started. Read the linked plan before claiming.
   reconnect without relaunch, terminal convergence, and cancellation races. Dashboard
   capacity/deadline/lease/provider/metrics/warnings/evidence fields remain unavailable from current
   public control protocol and are not claimed.
+
+- 2026-09-08T16:52:06+00:00: Recorded command exit 0; command argv SHA-256
+  8233b5d077fac82e2fd2ca3407d7e4bb326b3f10cd5f19f621534f672eab5bc5.
