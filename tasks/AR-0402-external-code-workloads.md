@@ -7,7 +7,7 @@
     "AR-0401"
   ],
   "id": "AR-0402",
-  "next_action": "Populate immutable evaluator/container/SBOM evidence for a real opt-in suite, then add production adapter integration and run Rust/full gates.",
+  "next_action": "Repair or replace unavailable Aider revision through a fresh provenance review, verify Exercism archives, then implement production adapter integration.",
   "observed_branch": "feature/external-code-workloads",
   "observed_dirty": 0,
   "observed_head": "ba2d39adb7a7182ce2b5cebe2f096df5bca5094e",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:20:56+00:00",
+  "updated_at": "2026-09-08T12:21:13+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -215,3 +215,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T12:20:50+00:00: Recorded command exit 0; command argv SHA-256
   6d8416e64ec05c4c135aa451b52e8ad0e99294ed46191fc80d7da365ae92f82d.
+
+- 2026-09-08T12:21:13+00:00: Public archive audit added signed product commit ba2d39a. SWE-bench
+  pinned archive was acquired and verified with SHA-256
+  96b996931a3732793b8840afb6a972b04552763154e2976724496a521a2a7e4d. Aider pinned revision returned
+  HTTP 404 and is explicitly marked unavailable-at-pinned-revision; Exercism archives remain
+  unverified. Validator now requires explicit archive status and digest for verified entries;
+  focused tests 2/2 pass. No suite is promoted to qualified.
