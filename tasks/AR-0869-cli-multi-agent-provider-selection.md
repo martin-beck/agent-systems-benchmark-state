@@ -10,7 +10,7 @@
     "AR-0801"
   ],
   "id": "AR-0869",
-  "next_action": "Obtain independent immutable review of exact candidate 0d9d317716d557b916e4da7022f58197d287987a before publication; if approved, publish exact head and require all hosted exact-head gates before integration.",
+  "next_action": "Publish exact candidate 0d9d317716d557b916e4da7022f58197d287987a as a focused PR, require all hosted exact-head gates, then integrate only after green review and post-merge checks.",
   "observed_branch": "feature/cli-multi-agent-provider-selection",
   "observed_dirty": 0,
   "observed_head": "0d9d317716d557b916e4da7022f58197d287987a",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Select several agents and apply one preconfigured provider profile through inspectable command-line options.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Add CLI multi-agent provider selection",
-  "updated_at": "2026-09-08T22:31:06+00:00",
+  "updated_at": "2026-09-08T22:32:36+00:00",
   "worktree_key": "agent-systems-benchmark-cli-multi-agent-provider-selection"
 }
 ---
@@ -287,3 +287,10 @@ Implementation has not started. Read the linked plan before claiming.
   source-diff Gitleaks pass. No Kani harness covers this CLI orchestration slice; hosted formal
   remains required at exact head. Candidate is ready only for independent review, not publication or
   merge.
+
+- 2026-09-08T22:32:36+00:00: Independent immutable review complete: exact candidate
+  0d9d317716d557b916e4da7022f58197d287987a has parent/current origin/main
+  559fbcc825234bb98a64ba554a53f38b004d24f6, clean worktree, SSH signature and exact DCO, five-path
+  scope matching the recorded checkpoint, clean diff-check, no candidate secret material in changed
+  paths, and all recorded local gates pass. Approved for exact-head publication; hosted CI remains
+  required.
