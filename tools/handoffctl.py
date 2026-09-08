@@ -70,7 +70,7 @@ type Meta = dict[str, Any]
 type Task = tuple[Path, Meta, str]
 type State = dict[str, Any]
 
-COORDINATOR_VERSION = "0.1.3"
+COORDINATOR_VERSION = "0.1.4"
 DEFAULT_PROJECT_SETTINGS: Meta = {
     "schema_version": 1,
     "project_id": "00000000-0000-4000-8000-000000000000",
@@ -708,17 +708,22 @@ def validate(*, live: bool = False) -> list[str]:
 
 def commit(message: str, paths: list[Path]) -> bool:
     relative = [str(path.relative_to(ROOT)) for path in paths]
+    if not relative:
+        return False
     run(["git", "-C", str(ROOT), "add", "--", *relative])
     try:
         if (
-            run(["git", "-C", str(ROOT), "diff", "--cached", "--quiet"], check=False).returncode
+            run(
+                ["git", "-C", str(ROOT), "diff", "--cached", "--quiet", "--", *relative],
+                check=False,
+            ).returncode
             == 0
         ):
             return False
         command = ["git", "-C", str(ROOT), "commit", "-S"]
         if project_settings()["commit_signoff"]:
             command.append("-s")
-        run([*command, "-m", message], capture=False)
+        run([*command, "-m", message, "--only", "--", *relative], capture=False)
         return True
     except Exception:
         run(["git", "-C", str(ROOT), "reset", "--", *relative], check=False)

@@ -22,7 +22,7 @@ raw command output and transcripts stay outside Git. Source is MIT licensed.
 
 ## Shared coordinator release
 
-This repository vendors the signed `agent-workflow-coordinator` v0.1.3 release. Its exact upstream
+This repository vendors the signed `agent-workflow-coordinator` v0.1.4 release. Its exact upstream
 commit and copied-file digests are locked in `coordinator.vendor.json`; verify them offline with
 `python tools/handoffctl_vendor.py verify --target .`. The complete integration, use, extension,
 and upgrade guide is [`docs/agent-workflow-coordinator.md`](docs/agent-workflow-coordinator.md).
