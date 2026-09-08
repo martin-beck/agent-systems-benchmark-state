@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0202",
-  "next_action": "Keep PR #61 immutable and green; obtain genuine privileged native aarch64 evidence through existing native-capacity work, then perform final review/merge/post-merge verification. Do not release AR-0202 before that evidence.",
+  "next_action": "Wait for exact-main post-merge checks, run local post-merge verification, then retain AR-0202 in progress pending genuine native aarch64 evidence; do not release as done yet.",
   "observed_branch": "feature/kernel-diagnostics",
   "observed_dirty": 0,
   "observed_head": "fb2adac65f10aa4b228a0bdf3643285161ceea10",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate perf and optional eBPF diagnostics without making privileged tools mandatory.",
-  "task_revision": 178,
+  "task_revision": 179,
   "title": "Add optional kernel diagnostics",
-  "updated_at": "2026-09-08T23:15:21+00:00",
+  "updated_at": "2026-09-08T23:15:52+00:00",
   "worktree_key": "agent-systems-benchmark-kernel-diagnostics"
 }
 ---
@@ -518,3 +518,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T23:15:21+00:00: Recorded command exit 0; command argv SHA-256
   fe4e853cc3c9e2991a581eb3300986820631d76efb4c80e335f3d6ebf388c5d9.
+
+- 2026-09-08T23:15:52+00:00: Reviewed green PR #61 head fb2adac was integrated with signed no-ff
+  merge commit 3514089fa378bd50629c9794b215fd53c8ea7d5d, exact parents main 4cad746 and fb2adac,
+  matching Signed-off-by trailer. Push-triggered post-merge checks are running at exact main
+  3514089. AR remains in progress: native x86 positive evidence is recorded, but genuine native
+  aarch64 evidence is still unavailable and required by the plan.
