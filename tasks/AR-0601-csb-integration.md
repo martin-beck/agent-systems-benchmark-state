@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Reuse CSB application execution and monitoring where contracts fit ASB.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Prototype optional CSB integration",
-  "updated_at": "2026-09-08T09:11:26+00:00",
+  "updated_at": "2026-09-08T09:12:14+00:00",
   "worktree_key": "agent-systems-benchmark-csb-integration"
 }
 ---
@@ -54,3 +54,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T09:11:26+00:00: Recorded command exit 2; command argv SHA-256
   48458d4adcbc2714c4ae60f17ec39d916357031118af6e75d9a5cd826c73f20e.
+
+- 2026-09-08T09:12:14+00:00: Recorded command exit 2; command argv SHA-256
+  8d5ac51767859b1c25a3628414592e726f8f71e129b5d9e0ba0fec0d21e16cef.
