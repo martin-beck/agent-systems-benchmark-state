@@ -2,7 +2,7 @@
 {
   "branch": "test/provider-parity-conformance",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-08T18:52:40+00:00",
   "depends_on": [
     "AR-0301",
     "AR-0302",
@@ -24,15 +24,15 @@
   "observed_branch": "test/provider-parity-conformance",
   "observed_dirty": 1,
   "observed_head": "76497db8f22c43762f0b5bcbc7f2549c1d17281d",
-  "owner": "",
+  "owner": "quality_20260906",
   "plan": "../plans/AR-0315.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Conformance-test identical OpenAI and Ollama profiles across the complete supported-agent matrix.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Verify cross-agent provider parity",
-  "updated_at": "2026-09-08T15:14:49+00:00",
+  "updated_at": "2026-09-08T15:52:40+00:00",
   "worktree_key": "agent-systems-benchmark-provider-parity-conformance"
 }
 ---
@@ -59,3 +59,5 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-08T15:14:49+00:00: Coordinator recovery after repeated lease-valid checks: no worker
   process, heartbeat, diagnostic note, checkpoint, or worktree mutation observed. Reopen for safe
   reassignment; preserve recorded exit-1 evidence.
+
+- 2026-09-08T15:52:40+00:00: Claimed by quality_20260906.
