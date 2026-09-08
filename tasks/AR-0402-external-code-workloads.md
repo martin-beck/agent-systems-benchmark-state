@@ -7,7 +7,7 @@
     "AR-0401"
   ],
   "id": "AR-0402",
-  "next_action": "Integrate comparison output into the production result/report path; retain explicit limitations and unqualified evaluator status.",
+  "next_action": "Wire the report into the user-facing benchmark result path and complete AR-0402 acceptance review; real external evaluator qualification remains planned.",
   "observed_branch": "feature/external-code-workloads",
   "observed_dirty": 0,
   "observed_head": "8a8e7e6c8271397d65418e3fdd7fa4cde7f496d6",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 135,
+  "task_revision": 136,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T13:20:10+00:00",
+  "updated_at": "2026-09-08T13:27:01+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -375,3 +375,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T13:20:10+00:00: Recorded command exit 0; command argv SHA-256
   b1592587ec72d1d0f0bd9af96b70c351c80286b99b5b58f48857a7c64986a027.
+
+- 2026-09-08T13:27:01+00:00: Integrated signed+DCO report renderer as merge
+  595b34542b31874e7fc2040ea0f8336474ae3c65. Renderer preserves comparable/non-comparable status and
+  emits explicit limitations; local report tests pass 6/6. Exact-main post-merge all green: Rust
+  34231326695, quality 34231326708, formal 34231326642, fault 34231327794, emulated aarch64
+  34231326674.
