@@ -34,7 +34,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-frontend-control-api` | `feature/frontend-control-api` | `cbb764c45c61` | 20 | behind 87, ahead 1 |
 | changed files | - | - | - | `Cargo.lock`, `crates/asb-cli/Cargo.toml`, `crates/asb-cli/src/lib.rs`, `crates/asb-control/Cargo.toml`, `crates/asb-control/README.md`, `crates/asb-control/examples/generate_schema.rs`, `crates/asb-control/fixtures/v1/success-response.json`, `crates/asb-control/schema/v1/event.schema.json`, `crates/asb-control/schema/v1/request.schema.json`, `crates/asb-control/schema/v1/response.schema.json`, `crates/asb-control/src/endpoint.rs`, `crates/asb-control/src/lib.rs`, `crates/asb-control/src/protocol.rs`, `crates/asb-control/src/state.rs`, `crates/asb-control/tests/control.rs`, `crates/asb-control/tests/endpoint.rs`, `crates/asb-control/tests/schema_conformance.rs`, `docs/FRONTEND_CONTROL_API.md`, `crates/asb-cli/src/control.rs`, `crates/asb-control/src/schema.rs` |
 | `agent-systems-benchmark-frontend-control-api-repair` | `feature/frontend-control-api-repair` | `0d2534f614cd` | 0 | behind 17, ahead 0 |
-| `agent-systems-benchmark-frontend-control-api-successor` | `feature/frontend-control-api-successor` | `d3e2dfa979d8` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-frontend-control-api-successor` | `feature/frontend-control-api-successor` | `d3e2dfa979d8` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-cli/src/control.rs` |
 | `agent-systems-benchmark-gemini-generate-content-replay` | `feature/gemini-generate-content-replay` | `93c19625f910` | 0 | behind 36, ahead 0 |
 | `agent-systems-benchmark-gemini-thinking-config-contract` | `feature/gemini-thinking-config-contract` | `0aff7023cacf` | 0 | behind 34, ahead 0 |
 | `agent-systems-benchmark-interaction-aware-redaction` | `feature/interaction-aware-redaction` | `867861c95c19` | 0 | behind 21, ahead 0 |
