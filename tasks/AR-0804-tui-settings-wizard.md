@@ -9,7 +9,7 @@
     "AR-0803"
   ],
   "id": "AR-0804",
-  "next_action": "Independent immutable review of signed candidate 8f7152c525daf0b8dd61961c780848ed7a8bf979/tree 0a17f5e on exact parent 76497db; keep unpublished and retain explicit non-rendering/non-launch limitations until approval.",
+  "next_action": "Monitor PR #83 exact head 8f7152c/base 76497db runs 34245893961 emulated-aarch64, 34245893914 quality, 34245893986 Rust, 34245893910 formal, and 34245893959 fault to terminal; investigate failures and do not merge without full green matrix and authorization.",
   "observed_branch": "feature/tui-settings-wizard",
   "observed_dirty": 0,
   "observed_head": "8f7152c525daf0b8dd61961c780848ed7a8bf979",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Guide users through agents, providers, workloads, resources, replay, metrics, and output settings.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Build the terminal settings wizard",
-  "updated_at": "2026-09-08T15:37:00+00:00",
+  "updated_at": "2026-09-08T15:37:36+00:00",
   "worktree_key": "agent-systems-benchmark-tui-settings-wizard"
 }
 ---
@@ -151,3 +151,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T15:37:00+00:00: Recorded command exit 0; command argv SHA-256
   d54772afd62a043b148785c21fb86184849454ead8c62a8eb09c4c33c0a41a69.
+
+- 2026-09-08T15:37:36+00:00: Published independently approved six-path candidate as PR #83 with
+  exact head 8f7152c525daf0b8dd61961c780848ed7a8bf979 and base
+  76497db8f22c43762f0b5bcbc7f2549c1d17281d. GitHub reports OPEN/MERGEABLE; AWQ run 34245893935
+  already succeeded and all five required workflows are active. Preserve limitations: no Launch API,
+  transport wiring, or full-screen terminal rendering claim.

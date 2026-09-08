@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0804](tasks/AR-0804-tui-settings-wizard.md): Build the terminal settings wizard | Guide users through agents, providers, workloads, resources, replay, metrics, and output settings. | Independent immutable review of signed candidate 8f7152c525daf0b8dd61961c780848ed7a8bf979/tree 0a17f5e on exact parent 76497db; keep unpublished and retain explicit non-rendering/non-launch limitations until approval. | quality_20260906 |
+| P1 | [AR-0804](tasks/AR-0804-tui-settings-wizard.md): Build the terminal settings wizard | Guide users through agents, providers, workloads, resources, replay, metrics, and output settings. | Monitor PR #83 exact head 8f7152c/base 76497db runs 34245893961 emulated-aarch64, 34245893914 quality, 34245893986 Rust, 34245893910 formal, and 34245893959 fault to terminal; investigate failures and do not merge without full green matrix and authorization. | quality_20260906 |
 | P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Claim, create the declared worktree, enforce exact first-party Huawei MIT source headers, test, and publish unmerged PRs. | codex-asb-pr82-independent-review-20260908 |
 | P2 | [AR-0403](tasks/AR-0403-terminal-workloads.md): Integrate Terminal-Bench workloads | Import terminal tasks through an adapter to the published harness or task format. | Independent review the signed adapter checkpoint e0da4efd; run exact-tree quality gates and retain explicit unqualified Terminal-Bench limitations. | replay_20260906 |
 
