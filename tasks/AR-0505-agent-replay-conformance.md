@@ -13,7 +13,7 @@
     "AR-0401"
   ],
   "id": "AR-0505",
-  "next_action": "Rebase the clean conformance worktree onto exact current product main, then rerun the four-agent pinned native loopback capture/replay integration audit without weakening strict request comparison or duplicating AR-0515.",
+  "next_action": "Independently review the exact current-main four-agent native loopback evidence and capability limits; if accepted, release AR-0505 done without adding duplicate aggregate-matrix product changes.",
   "observed_branch": "feature/agent-replay-conformance",
   "observed_dirty": 0,
   "observed_head": "3a07b57b8265d98eeebbcd4fd21339d72fac0663",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Test each actual client through recording and offline replay of engineering tasks.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Prove real-agent replay conformance",
-  "updated_at": "2026-09-08T02:55:38+00:00",
+  "updated_at": "2026-09-08T02:56:02+00:00",
   "worktree_key": "agent-systems-benchmark-agent-replay-conformance"
 }
 ---
@@ -125,3 +125,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T02:55:38+00:00: Recorded command exit 0; command argv SHA-256
   bc922f61904bf2ef2755950e7e3d03576a120d9771ffcb0159f96c4b1f740987.
+
+- 2026-09-08T02:56:02+00:00: Exact product main 3a07b57b audit passed in separate loopback-only
+  user/network namespaces: pinned OpenCode 1.18.29 24.88s, OpenDesk 0.3.5 17.71s, Codex 0.153.4
+  33.83s, and repaired Aider 0.86.2 12.05s. Each completed capture, strict replay with upstream
+  disconnected, original edit/grader parity, malformed negative, retry/tool/cancellation boundaries
+  supported by its native test. No product diff; versions and platform/capability gaps remain those
+  explicitly documented per adapter. AR-0515 aggregate matrix scope was not changed.
