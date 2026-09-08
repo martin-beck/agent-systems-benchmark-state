@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:27:06+00:00",
+  "updated_at": "2026-09-08T12:27:50+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -268,3 +268,6 @@ Implementation has not started. Read the linked plan before claiming.
   planner. It refuses unknown suites and returns explicit unqualified status until evaluator
   image/SBOM/evidence identities are all qualified; planner and materializer tests pass 4/4. No
   external execution occurs.
+
+- 2026-09-08T12:27:50+00:00: Recorded command exit 0; command argv SHA-256
+  30e2d6aba021c64e4d75e0f5e798de61046f1f7361c03d8fd24dabe96d1f85a1.
