@@ -9,17 +9,17 @@
   "id": "AR-0402",
   "next_action": "Integrate this boundary into the production workload adapter and add evaluator/oracle execution fixtures; maintain planned status for unqualified images.",
   "observed_branch": "feature/external-code-workloads",
-  "observed_dirty": 2,
-  "observed_head": "6603d837305ef7ffe8b4430d49534495eeb121e3",
+  "observed_dirty": 0,
+  "observed_head": "4253d224f06570f9e05b8276b292b320f3936e8c",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0402.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 92,
+  "task_revision": 93,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:26:47+00:00",
+  "updated_at": "2026-09-08T12:26:54+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
