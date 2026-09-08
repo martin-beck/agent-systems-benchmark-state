@@ -11,7 +11,7 @@
     "AR-0304"
   ],
   "id": "AR-1003",
-  "next_action": "Specify budget capabilities and normalize provider usage with explicit uncertainty.",
+  "next_action": "Run Clippy and semantic adversarial audit, then complete full locked gates.",
   "observed_branch": "feature/execution-budgets",
   "observed_dirty": 11,
   "observed_head": "d56052d64b1e13b42a36e557b6a772381576a5bd",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bound and report wall time, actions, tokens and monetary cost without treating unavailable telemetry as zero.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Enforce cost token and action budgets",
-  "updated_at": "2026-09-08T09:48:32+00:00",
+  "updated_at": "2026-09-08T09:49:19+00:00",
   "worktree_key": "agent-systems-benchmark-execution-budgets"
 }
 ---
@@ -58,3 +58,21 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T09:48:32+00:00: Recorded command exit 0; command argv SHA-256
   a548d3e5ca509ba687633b5789dad827f7c32162a71527d775d1a381d118145b.
+
+- 2026-09-08T09:49:19+00:00: Implemented initial bounded accounting delta across 11 declared paths:
+  Cargo.lock; crates/asb-core/src/{lib.rs,budget.rs};
+  crates/asb-agents/{Cargo.toml,src/lib.rs,src/accounting.rs};
+  crates/asb-analysis/{Cargo.toml,src/lib.rs,src/economics.rs,tests/budget_reference.rs,tests/fixtures/budget-reference-vectors.tsv}.
+  Core uses closed seven-dimension budgets, complete adapter capability declarations, opaque-adapter
+  fail-closed admission, worst-case pre-effect reservation, conservative settlement that retains
+  reservations for unavailable telemetry, measured versus versioned bounded estimated evidence,
+  disjoint cache/reasoning token classes, currency and price-revision validation, and
+  overflow/stale/exhaustion negatives. Adapter normalization rejects contradictory totals/subsets
+  and estimates cost only from complete token classes and a validated price table. Analysis computes
+  uncertainty-aware cost per success and conservative quality-latency-resource-cost Pareto frontiers
+  against checked-in vectors. Cargo.lock changed only by adding asb-core to existing
+  asb-agents/asb-analysis package dependency lists. Wrapped fmt plus focused
+  asb-core/asb-agents/asb-analysis tests passed: core 15, agents 107 plus applicable integration/doc
+  tests, analysis 25 plus budget vector and reliability tests. Initial fmt --check exit 1 was
+  formatting-only before tests; wrapped cargo fmt corrected it. Next: Clippy and semantic
+  adversarial audit, then full locked gates.
