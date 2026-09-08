@@ -10,7 +10,7 @@
   "id": "AR-0313",
   "next_action": "Read full development/architecture/quality/provider-plan docs in /srv/data/projects/agent-systems-benchmark-all-agents-provider at exact base b6078bb1ca2ee8f35973ffab9740c2c12dd4126e; audit provider selection surfaces and implement atomically without touching active AR-0844 crates/asb-cli/src/control.rs or AR-0316 runtime-bundle paths.",
   "observed_branch": "feature/all-agents-provider",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "b6078bb1ca2ee8f35973ffab9740c2c12dd4126e",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0313.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Let test plans select one provider profile for every chosen supported agent atomically.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Configure one provider for all agents",
-  "updated_at": "2026-09-08T11:17:09+00:00",
+  "updated_at": "2026-09-08T11:21:37+00:00",
   "worktree_key": "agent-systems-benchmark-all-agents-provider"
 }
 ---
