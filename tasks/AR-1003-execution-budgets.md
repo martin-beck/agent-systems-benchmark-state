@@ -2,7 +2,7 @@
 {
   "branch": "feature/execution-budgets",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T12:58:16+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0301",
@@ -15,15 +15,15 @@
   "observed_branch": "feature/execution-budgets",
   "observed_dirty": 0,
   "observed_head": "30a12ad331740921dfef02e731c6d3b87dbb155a",
-  "owner": "replay_20260906",
+  "owner": "",
   "plan": "../plans/AR-1003.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Bound and report wall time, actions, tokens and monetary cost without treating unavailable telemetry as zero.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "Enforce cost token and action budgets",
-  "updated_at": "2026-09-08T10:42:42+00:00",
+  "updated_at": "2026-09-08T10:43:57+00:00",
   "worktree_key": "agent-systems-benchmark-execution-budgets"
 }
 ---
@@ -266,3 +266,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T10:42:42+00:00: Recorded command exit 0; command argv SHA-256
   0ea6e8bf92db30750646da7d0efde25c8a162381e4758ae8483c587fd7a4b00f.
+
+- 2026-09-08T10:43:57+00:00: Merged independently reviewed PR #74 exact head
+  30a12ad331740921dfef02e731c6d3b87dbb155a as signed/DCO no-ff merge
+  4523da9629ff09451a0a2d2fe332d80bbb1320de. Exact-head CI and exact-main formal, fault, quality,
+  Rust x86_64/aarch64, and emulated-aarch64 workflows are all green. Local postmerge fmt, locked
+  workspace Clippy/tests, docs, release build, formal/Loom/production tests, repository policy,
+  clean-tree validation, and mutation sentinels 7/7 passed. Local Kani payload limitation remains
+  honestly bounded and hosted exact-head formal Kani passed. Cargo fence returned.
