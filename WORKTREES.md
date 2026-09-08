@@ -20,8 +20,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-benchmark-validity` | `feature/benchmark-validity` | `60a6c730457b` | 0 | behind 29, ahead 0 |
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `0717d4acd168` | 0 | behind 137, ahead 0 |
 | `agent-systems-benchmark-ci-artifact-quota-resilience` | `feature/ci-artifact-quota-resilience` | `7d98653e7e7f` | 0 | behind 83, ahead 0 |
-| `agent-systems-benchmark-contract-consistency` | `feature/contract-consistency` | `a97c3ed708cc` | 1 | behind 0, ahead 0 |
-| changed files | - | - | - | `contracts/` |
+| `agent-systems-benchmark-contract-consistency` | `feature/contract-consistency` | `a97c3ed708cc` | 2 | behind 0, ahead 0 |
+| changed files | - | - | - | `contracts/`, `tools/quality/contract_consistency.py` |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 206, ahead 0 |
 | `agent-systems-benchmark-csb-execution-assurance` | `feature/csb-execution-assurance` | `39e306124b56` | 0 | behind 86, ahead 0 |
 | `agent-systems-benchmark-csb-integration` | `feature/csb-integration` | `a97c3ed708cc` | 2 | behind 0, ahead 0 |
