@@ -11,7 +11,7 @@
   "id": "AR-1005",
   "next_action": "Design a bounded TraceSpan schema in asb-protocol and a nonblocking, privacy-safe OTLP JSON projection in asb-store; add malformed-span, content-opt-in, secret-redaction, round-trip, and backpressure negatives.",
   "observed_branch": "feature/trace-interoperability",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "289b2711774bad2b58b525a971f09391539f8800",
   "owner": "quality_20260906",
   "plan": "../plans/AR-1005.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose stable causal ASB events and optional standards-based telemetry without binding storage to an evolving convention.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Export interoperable privacy-safe traces",
-  "updated_at": "2026-09-08T10:20:46+00:00",
+  "updated_at": "2026-09-08T10:28:06+00:00",
   "worktree_key": "agent-systems-benchmark-trace-interoperability"
 }
 ---

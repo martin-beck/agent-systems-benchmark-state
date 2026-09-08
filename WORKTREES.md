@@ -83,5 +83,6 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `3bcfd85dedd3` | 0 | behind 192, ahead 0 |
 | `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `410ecc95b80e` | 0 | behind 180, ahead 0 |
 | `agent-systems-benchmark-terminal-interface` | `feature/terminal-interface` | `d2e7b66ff6af` | 0 | behind 125, ahead 0 |
-| `agent-systems-benchmark-trace-interoperability` | `feature/trace-interoperability` | `289b2711774b` | 0 | behind 2, ahead 0 |
+| `agent-systems-benchmark-trace-interoperability` | `feature/trace-interoperability` | `289b2711774b` | 2 | behind 2, ahead 0 |
+| changed files | - | - | - | `crates/asb-protocol/src/lib.rs`, `crates/asb-protocol/src/trace.rs` |
 | `agent-systems-benchmark-verifier-integrity` | `feature/verifier-integrity` | `3fc65ea73bad` | 0 | behind 30, ahead 0 |
