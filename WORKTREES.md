@@ -61,8 +61,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-native-platforms` | `feature/native-platforms` | `bdaf9c108226` | 0 | behind 175, ahead 17 |
 | `agent-systems-benchmark-native-x86-capacity` | `feature/native-x86-capacity` | `45604cd323c5` | 0 | behind 95, ahead 0 |
 | `agent-systems-benchmark-opendesk-strict-replay-http-compatibility` | `feature/opendesk-strict-replay-http-compatibility` | `f26216bde125` | 0 | behind 135, ahead 0 |
-| `agent-systems-benchmark-performance-workloads` | `feature/performance-workloads` | `559fbcc82523` | 6 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-workloads/registry/v1/README.md`, `crates/asb-workloads/registry/v1/external-workloads.json`, `tests/workloads/test_external_registry.py`, `tests/workloads/test_external_registry_validator.py`, `tests/workloads/test_external_workload_planner.py`, `tools/quality/validate_external_registry.py` |
+| `agent-systems-benchmark-performance-workloads` | `feature/performance-workloads` | `5294c471425d` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 269, ahead 0 |
 | `agent-systems-benchmark-portable-metrics` | `feature/portable-metrics` | `a0f67bea1ffe` | 0 | behind 243, ahead 0 |
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `51daeb8608e5` | 0 | behind 262, ahead 0 |
