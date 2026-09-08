@@ -9,7 +9,7 @@
   "id": "AR-0402",
   "next_action": "Integrate validated results into the production benchmark result path and add cross-suite comparison metadata; keep real evaluator qualification planned.",
   "observed_branch": "feature/external-code-workloads",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "7a85e160dd33f107f6b714aed63d7da5d9b03d2a",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0402.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 127,
+  "task_revision": 128,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T13:13:42+00:00",
+  "updated_at": "2026-09-08T13:13:49+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
