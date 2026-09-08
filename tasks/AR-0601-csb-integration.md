@@ -14,7 +14,7 @@
   "id": "AR-0601",
   "next_action": "Audit bm-runner interfaces and compare subprocess integration with direct execution.",
   "observed_branch": "feature/csb-integration",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "a97c3ed708cc16522383ecde41ec9fa2e642bc61",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0601.md",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Reuse CSB application execution and monitoring where contracts fit ASB.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Prototype optional CSB integration",
-  "updated_at": "2026-09-08T09:14:33+00:00",
+  "updated_at": "2026-09-08T09:15:43+00:00",
   "worktree_key": "agent-systems-benchmark-csb-integration"
 }
 ---
