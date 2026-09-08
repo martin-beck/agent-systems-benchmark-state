@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-0855",
-  "next_action": "Wait for a corrected immutable agent-workflow-coordinator v0.3.2+ release, then hash-locked vendor-sync it and implement/verify the remaining state-owned Huawei MIT headers, checker tests, and dedicated CI without hand-editing vendor.",
+  "next_action": "Wait for a corrected immutable agent-workflow-coordinator v0.3.3+ release whose privacy exemption admits the legitimate session-like UUID fixture in vendored tests/test_sqlite_storage.py; then re-sync from a clean verified tag and continue state-owned header/checker/CI work without patching vendor.",
   "observed_branch": "fix/huawei-mit-license-headers",
   "observed_dirty": 0,
   "observed_head": "7add29f1d24ce3a74b9cca2e2f1fb29fa45cddd6",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files.",
-  "task_revision": 192,
+  "task_revision": 193,
   "title": "Enforce Huawei MIT source headers",
-  "updated_at": "2026-09-08T19:02:40+00:00",
+  "updated_at": "2026-09-08T19:08:35+00:00",
   "worktree_key": "agent-systems-benchmark-huawei-mit-headers"
 }
 ---
@@ -551,3 +551,8 @@ and fresh coordinator snapshot before claiming. Do not modify vendored coordinat
 
 - 2026-09-08T19:02:40+00:00: Recorded command exit 0; command argv SHA-256
   3bfa617ef54568e0506ba855dde8f2a465fe8f703801358f89008a55c21ad0e4.
+
+- 2026-09-08T19:08:35+00:00: v0.3.2 signed tag b1a61718 -> 33819087 was cleanly vendor-synced and
+  offline hash verification passed, but the newly vendored mandatory privacy validation reports
+  tests/test_sqlite_storage.py: session-like UUID because UUID_PRIVACY_EXEMPT omits that upstream
+  fixture. Preserved the exact uncommitted vendor diff; made no state-owned implementation edits.
