@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0202",
-  "next_action": "Monitor exact-head PR #90; required CI must pass before signed no-ff repair merge. After repair post-merge checks, retain AR-0202 in progress pending genuine native aarch64 evidence.",
+  "next_action": "Monitor exact-main post-merge checks at 2219839 and run local post-merge verification. Retain AR-0202 in progress until genuine privileged native aarch64 evidence is recorded; then complete final review and release.",
   "observed_branch": "feature/kernel-diagnostics",
   "observed_dirty": 0,
   "observed_head": "d11f81837374d42977bea40cc3452d3bda8c00c7",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate perf and optional eBPF diagnostics without making privileged tools mandatory.",
-  "task_revision": 194,
+  "task_revision": 195,
   "title": "Add optional kernel diagnostics",
-  "updated_at": "2026-09-08T23:27:52+00:00",
+  "updated_at": "2026-09-08T23:28:03+00:00",
   "worktree_key": "agent-systems-benchmark-kernel-diagnostics"
 }
 ---
@@ -566,3 +566,9 @@ Implementation has not started. Read the linked plan before claiming.
   05c95c82b03082527050cc8f68c6f85e25b7c458eb5292520ba2e45e48a00936.
 
 - 2026-09-08T23:27:52+00:00: Heartbeat by replay_20260906.
+
+- 2026-09-08T23:28:03+00:00: Follow-up PR #90 exact-head d11f818 passed all required checks,
+  including the coverage workflow. Integrated with signed no-ff merge
+  2219839812d9255288b8b4e0afc52396915e85a6, exact parents 3514089 and d11f818, matching
+  Signed-off-by trailer. Push-triggered post-merge checks now run at exact main 2219839. AR remains
+  in progress pending genuine native aarch64 evidence.
