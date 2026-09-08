@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify replay conformance for OpenHands.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Qualify OpenHands replay",
-  "updated_at": "2026-09-08T07:00:55+00:00",
+  "updated_at": "2026-09-08T07:00:57+00:00",
   "worktree_key": "agent-systems-benchmark-replay-openhands"
 }
 ---
@@ -34,3 +34,6 @@ Qualify OpenHands record/replay, network denial, parity, retries, tool calls, ca
   verified done. Promoted highest-priority ready OpenHands replay qualification.
 
 - 2026-09-08T07:00:09+00:00: Claimed by contracts_20260906.
+
+- 2026-09-08T07:00:57+00:00: Recorded command exit 0; command argv SHA-256
+  799e7bb404f086a50e4307294f7aabc23b78f3356f22193c257483fb30b435d0.
