@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:17:04+00:00",
+  "updated_at": "2026-09-08T12:17:52+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -198,3 +198,6 @@ Implementation has not started. Read the linked plan before claiming.
   verify_external_artifact CLI: explicit manifest identity, safe relative path, required file, and
   exact SHA-256 before any execution boundary. Positive and mismatch-oriented offline acquisition
   tests pass 4/4.
+
+- 2026-09-08T12:17:52+00:00: Recorded command exit 0; command argv SHA-256
+  cd69529006ec9ee7130be909e22d3302d6cdb711c0e787eddc478a277cc697b3.
