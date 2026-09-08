@@ -13,7 +13,7 @@
   "id": "AR-1003",
   "next_action": "Specify budget capabilities and normalize provider usage with explicit uncertainty.",
   "observed_branch": "feature/execution-budgets",
-  "observed_dirty": 2,
+  "observed_dirty": 5,
   "observed_head": "d56052d64b1e13b42a36e557b6a772381576a5bd",
   "owner": "replay_20260906",
   "plan": "../plans/AR-1003.md",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bound and report wall time, actions, tokens and monetary cost without treating unavailable telemetry as zero.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Enforce cost token and action budgets",
-  "updated_at": "2026-09-08T09:43:18+00:00",
+  "updated_at": "2026-09-08T09:45:46+00:00",
   "worktree_key": "agent-systems-benchmark-execution-budgets"
 }
 ---
