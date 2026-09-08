@@ -10,7 +10,7 @@
     "AR-0801"
   ],
   "id": "AR-0869",
-  "next_action": "Repair the bad GitHub merge 7571592990bf1e4a5474fbd8a183ea110e5d242c with an SSH-signed matching-DCO no-ff replacement preserving exact tree and parents; force-with-lease only main, then run fresh exact-main hosted gates and post-merge verification.",
+  "next_action": "Create a signed+DCO empty CI-provenance attestation atop repaired main a3696385be31c4ab86f6fb75cfa055ff6b098574, push normally, and require fresh exact-main post-merge workflows on that reachable base; preserve older historical merge-boundary limitations.",
   "observed_branch": "feature/cli-multi-agent-provider-selection",
   "observed_dirty": 0,
   "observed_head": "0d9d317716d557b916e4da7022f58197d287987a",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Select several agents and apply one preconfigured provider profile through inspectable command-line options.",
-  "task_revision": 90,
+  "task_revision": 91,
   "title": "Add CLI multi-agent provider selection",
-  "updated_at": "2026-09-08T22:44:23+00:00",
+  "updated_at": "2026-09-08T22:45:55+00:00",
   "worktree_key": "agent-systems-benchmark-cli-multi-agent-provider-selection"
 }
 ---
@@ -334,3 +334,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T22:44:23+00:00: Recorded command exit 0; command argv SHA-256
   1f0f755dbd6dd702bc0dbec5d818f0669e12d9ce4f54129e1376edf447dfe3b5.
+
+- 2026-09-08T22:45:55+00:00: Fresh push quality 34287289472 correctly failed only because GitHub
+  supplied discarded base 7571592, which is unreachable after narrow repair. Workflow-dispatch
+  quality 34287379302 reached two older pre-existing GitHub merge commits 909078c and e0554b5
+  lacking matching DCO; these are documented historical boundaries. Do not rewrite unrelated
+  history. Use additive signed-DCO CI-provenance attestation atop repaired tree, then fresh push
+  post-merge gates.
