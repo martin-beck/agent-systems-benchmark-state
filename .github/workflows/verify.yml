@@ -69,6 +69,7 @@ jobs:
           test ! -e .runtime/config.json
           test -z "$(git ls-files 'private-archive/**')"
       - name: DCO certification
+        if: github.event_name == 'pull_request'
         env:
           PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
           PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
