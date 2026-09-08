@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Assess SWE-Perf, SWE-fficiency and CORE-Bench for correctness-preserving optimization and reproducibility.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Add performance and reproducibility workloads",
-  "updated_at": "2026-09-08T21:46:05+00:00",
+  "updated_at": "2026-09-08T21:46:48+00:00",
   "worktree_key": "agent-systems-benchmark-performance-workloads"
 }
 ---
@@ -52,3 +52,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T21:46:05+00:00: Recorded command exit 1; command argv SHA-256
   d8a8031fe2565c30bb123323ae03c106e9903803f0028023767ef1a8bfa2257d.
+
+- 2026-09-08T21:46:48+00:00: Recorded command exit 0; command argv SHA-256
+  8a09ca1edbfc6d293546082d9c70fd3d2ab91aa2d7804df2c74487a54876d4e4.
