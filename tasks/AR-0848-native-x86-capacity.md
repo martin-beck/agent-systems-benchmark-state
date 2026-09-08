@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-x86-capacity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T02:11:06+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0701",
     "AR-0103",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/native-x86-capacity",
   "observed_dirty": 0,
   "observed_head": "45604cd323c5de0ab9c7eaf0b6a39d90f4d43002",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0848.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Qualify authorized disposable native x86_64 capacity on a development host.",
-  "task_revision": 88,
+  "task_revision": 89,
   "title": "Qualify native x86 capacity",
-  "updated_at": "2026-09-08T01:45:11+00:00",
+  "updated_at": "2026-09-08T01:52:11+00:00",
   "worktree_key": "agent-systems-benchmark-native-x86-capacity"
 }
 ---
@@ -286,3 +286,16 @@ claim native aarch64 support; native aarch64 remains future work requiring separ
 
 - 2026-09-08T01:45:11+00:00: Recorded command exit 0; command argv SHA-256
   cc8397959e61195897f082ea5a1e1f583544fab82fb537972153fac5f8f2466e.
+
+- 2026-09-08T01:52:11+00:00: Released after independently reviewed PR #58 exact head
+  45604cd323c5de0ab9c7eaf0b6a39d90f4d43002 was integrated by signed+DCO no-ff merge
+  678ba7c8593a52beb8f3279ddd452245294131e7 with feature-identical tree
+  ebec01b4677174d20853574068d3265b8254e664. Exact-main local focused/platform/repository policy and
+  full fmt/clippy/workspace tests/docs/release passed from a clean primary tree. Hosted exact-main
+  runs all completed success: quality 34177692194, Rust x86_64/aarch64 34177692208, formal
+  34177692199, fault assurance 34177692197, and emulated aarch64 34177692187. Product main is clean
+  and synchronized. State 43 tests, schema validation, generated STATUS check, snapshot and live
+  doctor pass. A mistaken nonexistent tools/validate_state.py invocation failed without mutation;
+  documented tests/validate_schema.py then passed. Proven support is one existing bare-metal Ubuntu
+  24.04.4 x86_64 native-functional cell only; native aarch64, performance baseline, public-PR runner
+  eligibility, AppArmor enforcement, availability SLA and zero operational cost remain unsupported.

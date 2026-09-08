@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 55 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 58 |
+| **Done** | Accepted, integrated, and durably verified | 59 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -159,7 +159,7 @@ flowchart LR
         AR_0845["AR-0845 - Done"]:::status_done
         AR_0846["AR-0846 - Planned"]:::status_planned
         AR_0847["AR-0847 - Done"]:::status_done
-        AR_0848["AR-0848 - In progress"]:::status_in_progress
+        AR_0848["AR-0848 - Done"]:::status_done
         AR_0849["AR-0849 - Done"]:::status_done
     end
     subgraph series_09["09 - Assurance"]
@@ -719,12 +719,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
-| P1 | [AR-0848](tasks/AR-0848-native-x86-capacity.md): Qualify native x86 capacity | quality_20260906 | Qualify authorized disposable native x86_64 capacity on a development host. | Await fresh independent immutable review of rebased signed head 45604cd323c5de0ab9c7eaf0b6a39d90f4d43002 on exact product main f42645dd05f17eca5635ca2e82057b703a03a1c3; only then update PR #58 by exact force-with-lease and require fresh exact-head CI. |
 | P1 | [AR-1002](tasks/AR-1002-verifier-integrity.md): Protect verifiers and support offline rescoring | replay_20260906 | Separate immutable graders from agent work and version scoring independently of execution. | Design the immutable observation and score-revision contract using Inspect and Harbor concepts. |
 
 ### Open (1)
@@ -802,7 +801,7 @@ flowchart LR
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Evaluate maintenance, licenses and reproducibility before integration. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (58)
+### Done (59)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -856,6 +855,7 @@ flowchart LR
 | P1 | [AR-0834](tasks/AR-0834-handoffctl-lint-regression.md): Repair handoffctl lint regression | Unclaimed | Repair the coordination-tool Ruff regression discovered during AR-0830 reconciliation. | No further action; repair is integrated and verified. |
 | P1 | [AR-0835](tasks/AR-0835-runner-privacy-guard-remediation.md): Remediate runner privacy and workflow guards | Unclaimed | Remediate runner privacy leakage and protected-workflow guard gaps found during independent audit. | Hold exact unpublished c25e3d20d0ddf494d3a222aaf18f44e3de4c4b73 for independent immutable privacy/security review; do not dispatch either persistent-runner workflow. |
 | P1 | [AR-0845](tasks/AR-0845-ci-artifact-quota-resilience.md): Harden CI artifact quota behavior | Unclaimed | Prevent exhausted GitHub artifact quota from obscuring authoritative ASB results. | Independently review immutable candidate 7d98653e7e7f219cced6abfb5c611d2614c72bd7 tree 2b02deda39ae1e4a4b40e9c3e960f1f0336f19b3; do not publish before approval. |
+| P1 | [AR-0848](tasks/AR-0848-native-x86-capacity.md): Qualify native x86 capacity | Unclaimed | Qualify authorized disposable native x86_64 capacity on a development host. | Await fresh independent immutable review of rebased signed head 45604cd323c5de0ab9c7eaf0b6a39d90f4d43002 on exact product main f42645dd05f17eca5635ca2e82057b703a03a1c3; only then update PR #58 by exact force-with-lease and require fresh exact-head CI. |
 | P1 | [AR-0849](tasks/AR-0849-ar0801-documentation-repair.md): Repair AR-0801 documentation consistency | Unclaimed | Repair stale AR-0801 implementation and CLI documentation claims. | Align AR-0801 task text, generated status next_action, and product README with the implemented and merged CLI command surface; verify links and exact command examples. |
 | P1 | [AR-0901](tasks/AR-0901-formal-assurance.md): Prove critical state and concurrency invariants | Unclaimed | Use bounded proofs and model tests for safety-critical domain logic. | Await independent immutable-head review of PR 14 at 2a495a99; repair any findings without merging or releasing. |
 | P1 | [AR-0902](tasks/AR-0902-fault-assurance.md): Add fuzz mutation and lifecycle fault campaigns | Unclaimed | Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection. | Run final coordination reconcile/snapshot/live doctor/full validation and release AR-0902 done only if clean synchronized state remains exact. |
