@@ -12,6 +12,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- | --- |
 | #31 | `feature/native-platforms@bdaf9c108226` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
 | #61 | `feature/kernel-diagnostics@1d24993771a4` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | metrics: add fail-closed optional kernel probes |
+| #74 | `feature/execution-budgets@30a12ad33174` | `main` | CLEAN | - | AR-1003: enforce uncertainty-aware execution budgets |
 
 ## Recent workflows
 
