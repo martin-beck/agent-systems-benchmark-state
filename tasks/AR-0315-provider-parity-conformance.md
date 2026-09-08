@@ -21,15 +21,18 @@
   ],
   "id": "AR-0315",
   "next_action": "Prove provider-setting parity and replay/live selection across every supported agent.",
+  "observed_branch": "test/provider-parity-conformance",
+  "observed_dirty": 0,
+  "observed_head": "76497db8f22c43762f0b5bcbc7f2549c1d17281d",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0315.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Conformance-test identical OpenAI and Ollama profiles across the complete supported-agent matrix.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Verify cross-agent provider parity",
-  "updated_at": "2026-09-08T15:10:06+00:00",
+  "updated_at": "2026-09-08T15:10:14+00:00",
   "worktree_key": "agent-systems-benchmark-provider-parity-conformance"
 }
 ---

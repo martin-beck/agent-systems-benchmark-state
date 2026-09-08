@@ -65,6 +65,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-provider-credential-integration` | `feature/provider-credential-integration` | `0f92642fc870` | 0 | behind 4, ahead 0 |
 | `agent-systems-benchmark-provider-ollama` | `feature/provider-ollama` | `8137f5baa053` | 0 | behind 48, ahead 0 |
 | `agent-systems-benchmark-provider-openai` | `feature/provider-openai` | `1128595cd2f9` | 0 | behind 43, ahead 0 |
+| `agent-systems-benchmark-provider-parity-conformance` | `test/provider-parity-conformance` | `76497db8f22c` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-provider-profile-contract` | `feature/provider-profile-contract` | `2870b68d0ca0` | 0 | behind 179, ahead 0 |
 | `agent-systems-benchmark-provider-recording-choice` | `feature/provider-recording-choice` | `e8fed7e572b6` | 0 | behind 2, ahead 0 |
 | `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `748537c25e3a` | 0 | behind 260, ahead 0 |
