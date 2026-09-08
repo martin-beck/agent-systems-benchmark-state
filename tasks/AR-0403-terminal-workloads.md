@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Import terminal tasks through an adapter to the published harness or task format.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Integrate Terminal-Bench workloads",
-  "updated_at": "2026-09-08T13:37:57+00:00",
+  "updated_at": "2026-09-08T13:38:56+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-workloads"
 }
 ---
@@ -30,3 +30,6 @@ Implementation has not started. Read the linked plan before claiming.
   AR-0314 and AR-0855. Promote for contract assessment.
 
 - 2026-09-08T13:37:57+00:00: Claimed by replay_20260906.
+
+- 2026-09-08T13:38:56+00:00: Recorded command exit 0; command argv SHA-256
+  bc0b1cbda14b1f9e8ed2b04d75aa98d36461147a776680ec41ef650830c8736d.
