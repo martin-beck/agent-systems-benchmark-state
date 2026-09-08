@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 35 |
 | **Future** | Deferred roadmap work | 0 |
@@ -65,7 +65,7 @@ flowchart LR
         AR_0312["AR-0312 - Done"]:::status_done
         AR_0313["AR-0313 - Done"]:::status_done
         AR_0314["AR-0314 - Done"]:::status_done
-        AR_0315["AR-0315 - In progress"]:::status_in_progress
+        AR_0315["AR-0315 - Open"]:::status_open
         AR_0316["AR-0316 - Done"]:::status_done
         AR_0317["AR-0317 - Done"]:::status_done
         AR_0318["AR-0318 - Done"]:::status_done
@@ -751,18 +751,18 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0315](tasks/AR-0315-provider-parity-conformance.md): Verify cross-agent provider parity | quality_20260906 | Conformance-test identical OpenAI and Ollama profiles across the complete supported-agent matrix. | Prove provider-setting parity and replay/live selection across every supported agent. |
 | P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | codex-asb-header-recovery | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Claim, create the declared worktree, enforce exact first-party Huawei MIT source headers, test, and publish unmerged PRs. |
 | P2 | [AR-0403](tasks/AR-0403-terminal-workloads.md): Integrate Terminal-Bench workloads | replay_20260906 | Import terminal tasks through an adapter to the published harness or task format. | Independent review the signed adapter checkpoint e0da4efd; run exact-tree quality gates and retain explicit unqualified Terminal-Bench limitations. |
 
-### Open (3)
+### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P1 | [AR-0315](tasks/AR-0315-provider-parity-conformance.md): Verify cross-agent provider parity | Unclaimed | Conformance-test identical OpenAI and Ollama profiles across the complete supported-agent matrix. | Prove provider-setting parity and replay/live selection across every supported agent. |
 | P1 | [AR-0319](tasks/AR-0319-credential-fd-helper-resolvers.md): Implement credential FD and helper resolvers | Unclaimed | Add explicit file-descriptor and helper credential references without ambient-secret fallback. | Define and implement one-shot FD and bounded helper credential resolvers. |
 | P1 | [AR-0804](tasks/AR-0804-tui-settings-wizard.md): Build the terminal settings wizard | Unclaimed | Guide users through agents, providers, workloads, resources, replay, metrics, and output settings. | Build the independent terminal frontend shell and guided configuration workflow. |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary. |

@@ -7,7 +7,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0315](tasks/AR-0315-provider-parity-conformance.md): Verify cross-agent provider parity | Conformance-test identical OpenAI and Ollama profiles across the complete supported-agent matrix. | Prove provider-setting parity and replay/live selection across every supported agent. | quality_20260906 |
 | P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Claim, create the declared worktree, enforce exact first-party Huawei MIT source headers, test, and publish unmerged PRs. | codex-asb-header-recovery |
 | P2 | [AR-0403](tasks/AR-0403-terminal-workloads.md): Integrate Terminal-Bench workloads | Import terminal tasks through an adapter to the published harness or task format. | Independent review the signed adapter checkpoint e0da4efd; run exact-tree quality gates and retain explicit unqualified Terminal-Bench limitations. | replay_20260906 |
 
@@ -15,6 +14,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P1 | [AR-0315](tasks/AR-0315-provider-parity-conformance.md): Verify cross-agent provider parity | Conformance-test identical OpenAI and Ollama profiles across the complete supported-agent matrix. | Prove provider-setting parity and replay/live selection across every supported agent. | - |
 | P1 | [AR-0319](tasks/AR-0319-credential-fd-helper-resolvers.md): Implement credential FD and helper resolvers | Add explicit file-descriptor and helper credential references without ambient-secret fallback. | Define and implement one-shot FD and bounded helper credential resolvers. | - |
 | P1 | [AR-0804](tasks/AR-0804-tui-settings-wizard.md): Build the terminal settings wizard | Guide users through agents, providers, workloads, resources, replay, metrics, and output settings. | Build the independent terminal frontend shell and guided configuration workflow. | - |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary. | - |
