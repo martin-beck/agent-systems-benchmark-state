@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt the path-exclusive coordinator commit fix discovered during live integration.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Adopt coordinator path isolation fix",
-  "updated_at": "2026-09-08T07:31:51+00:00",
+  "updated_at": "2026-09-08T07:33:29+00:00",
   "worktree_key": "agent-systems-benchmark-shared-coordinator"
 }
 ---
@@ -48,3 +48,6 @@ v0.1.3 to v0.1.4 after AR-0851 was completed.
   tests plus six subtests pass; exact binding rejection tests and schema pass. Release blocked
   because the merge commit has no locally verifiable SSH signature and no Signed-off-by trailer.
   Preserve it; no republish or history rewrite.
+
+- 2026-09-08T07:33:29+00:00: Recorded command exit 0; command argv SHA-256
+  ccbec4b2be4e66a616e7194142ff049d96fc80d9966f6f8d05321acb221f974d.
