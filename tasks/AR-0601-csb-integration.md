@@ -2,7 +2,7 @@
 {
   "branch": "feature/csb-integration",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-08T11:03:36+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -13,15 +13,15 @@
   ],
   "id": "AR-0601",
   "next_action": "Audit bm-runner interfaces and compare subprocess integration with direct execution.",
-  "owner": "",
+  "owner": "replay_20260906",
   "plan": "../plans/AR-0601.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Reuse CSB application execution and monitoring where contracts fit ASB.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Prototype optional CSB integration",
-  "updated_at": "2026-09-08T09:03:29+00:00",
+  "updated_at": "2026-09-08T09:03:36+00:00",
   "worktree_key": "agent-systems-benchmark-csb-integration"
 }
 ---
@@ -37,3 +37,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T09:03:29+00:00: All AR-0601 dependencies are durably done; promote isolated optional
   CSB integration as next compatible P2 task.
+
+- 2026-09-08T09:03:36+00:00: Claimed by replay_20260906.
