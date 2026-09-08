@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Import terminal tasks through an adapter to the published harness or task format.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Integrate Terminal-Bench workloads",
-  "updated_at": "2026-09-08T17:29:53+00:00",
+  "updated_at": "2026-09-08T17:31:31+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-workloads"
 }
 ---
@@ -210,3 +210,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T17:29:53+00:00: Recorded command exit 0; command argv SHA-256
   91718e67984e4fa8a5876aa7f097559fa9592bfc9cc402641f7e3a62508748c8.
+
+- 2026-09-08T17:31:31+00:00: Fresh immutable AR-0805 review BLOCKS exact
+  c8336909ae6de887d8146f59224dd21efff58b52/tree 55d9dec02c37dec5a1cfa93668225da01e9c01cf after
+  verifying all five prior findings were repaired. Remaining protocol defects: accept_status rejects
+  legitimate authoritative lifecycle jumps such as production Running-to-Completed after dropped
+  events, so reconnect and completion-versus-cancel cannot converge; accept_events consumes raw
+  pages without enforcing the protocol event/ID association invariant and can silently advance over
+  malformed terminal events; events_call hardcodes 128 rather than the negotiated effective
+  max_page_items. Required negatives and exact code evidence were sent to owner. Clean one-path
+  scope, SSH signature/DCO, privacy, focused 11 tests, fmt/clippy, exact-range repository policy,
+  diff-check and Gitleaks were independently reproduced green. No AR-0805 product path was mutated.
