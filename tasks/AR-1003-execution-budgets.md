@@ -11,7 +11,7 @@
     "AR-0304"
   ],
   "id": "AR-1003",
-  "next_action": "Run bounded mutation, coverage, privacy, dependency-integrity and supply gates; prepare candidate with explicit local Kani installation limitation.",
+  "next_action": "Obtain immutable independent review of candidate 0149f991; publish only after approval, then require exact-head hosted Kani/formal and all CI.",
   "observed_branch": "feature/execution-budgets",
   "observed_dirty": 0,
   "observed_head": "0149f991ba7e7ef5c71bf4f2118bb1aecd48e3c1",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bound and report wall time, actions, tokens and monetary cost without treating unavailable telemetry as zero.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Enforce cost token and action budgets",
-  "updated_at": "2026-09-08T10:28:02+00:00",
+  "updated_at": "2026-09-08T10:28:32+00:00",
   "worktree_key": "agent-systems-benchmark-execution-budgets"
 }
 ---
@@ -212,3 +212,24 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T10:28:02+00:00: Recorded command exit 0; command argv SHA-256
   e2e650e506e8808c3c52c7b202d850b75e98a52ce35544a776ab9d834d8b9332.
+
+- 2026-09-08T10:28:32+00:00: Immutable AR-1003 candidate 0149f991ba7e7ef5c71bf4f2118bb1aecd48e3c1,
+  tree b137a3de11b9a24b7360eb03209eecdb5412dd1e, exact parent
+  d56052d64b1e13b42a36e557b6a772381576a5bd. The one SSH-signed Martin Beck commit carries DCO and a
+  clean 12-path scope: the prior 11 paths plus the authorized one-line formal/Cargo.lock closure.
+  Root Cargo.lock changes only add asb-core to asb-agents and asb-analysis; formal lock only adds
+  asb-core to asb-analysis. Final exact-commit fmt, full workspace Clippy with warnings denied,
+  workspace tests, doctests including two external compile-fail constructor negatives, docs, and
+  release build passed with a clean tree. Full coverage gate passed after a meaningful
+  absence-accessor negative repaired the initial real 94.38 percent asb-core failure; asb-core is
+  now 99.40 percent lines and the complete workspace/critical floors pass. Mutation sentinels found
+  seven and caught seven. Four pinned fuzz targets each completed 256 runs using copied seeds and
+  external disposable corpus/target/artifact roots; locks stayed byte-identical and no source
+  corpus/artifacts were created. Root and fuzz cargo-deny/audit, actionlint, zizmor, Gitleaks
+  directory and exact introduced-commit scans, repository policy, DCO, platform manifest plus 23
+  pinned-environment tests, signature and scope/privacy checks passed. One platform attempt failed
+  only because system Python lacked jsonschema; the pinned project environment rerun passed. One
+  malformed wrapper command failed before a product operation and was corrected. Locked formal
+  Rust/Loom/production tests pass; local Kani remains explicitly unavailable because its internal
+  pinned installation lacks toolchain/bin/cargo, while current hosted formal CI is green. Candidate
+  is ready for independent immutable review; do not publish before review.
