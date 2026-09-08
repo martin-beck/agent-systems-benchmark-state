@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0202",
-  "next_action": "Do not merge or release until genuine privileged native x86 and aarch64 evidence is recorded, or the acceptance criteria are explicitly amended by a reviewed state transition. Preserve green PR #61 and exact head fb2adac.",
+  "next_action": "Keep PR #61 immutable and green; obtain genuine privileged native aarch64 evidence through existing native-capacity work, then perform final review/merge/post-merge verification. Do not release AR-0202 before that evidence.",
   "observed_branch": "feature/kernel-diagnostics",
   "observed_dirty": 0,
   "observed_head": "fb2adac65f10aa4b228a0bdf3643285161ceea10",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate perf and optional eBPF diagnostics without making privileged tools mandatory.",
-  "task_revision": 175,
+  "task_revision": 176,
   "title": "Add optional kernel diagnostics",
-  "updated_at": "2026-09-08T23:13:31+00:00",
+  "updated_at": "2026-09-08T23:14:11+00:00",
   "worktree_key": "agent-systems-benchmark-kernel-diagnostics"
 }
 ---
@@ -506,3 +506,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T23:13:31+00:00: Recorded command exit 0; command argv SHA-256
   0d1504b66427904d2b0e6b0d9c0a4bfe4b5bc28225fd9231aec073d07846022a.
+
+- 2026-09-08T23:14:11+00:00: Exact-head PR #61 at fb2adac remains fully green. Native x86_64
+  evidence was exercised with digest-pinned real perf 7.0.12 and bpftool v7.7.0: unprivileged probes
+  fail closed as PermissionDenied; the same test under authorized root produced a positive perf
+  task-clock sample (342.24 msec; task-clock; 342244006; 100.00) and bpftool reported
+  CONFIG_BPF/BTF/JIT capability lines, with scratch cleanup verified. No genuine native aarch64
+  host/evidence is available; emulation is not accepted for this criterion.
