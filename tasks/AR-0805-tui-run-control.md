@@ -10,7 +10,7 @@
     "AR-0804"
   ],
   "id": "AR-0805",
-  "next_action": "Read complete AR-0805 plan and product frontend/control contracts in the declared clean worktree; do not mutate crates/asb-tui until active AR-0855, which overlaps lib.rs/main.rs, is integrated or its fence is returned, then rebase onto exact main.",
+  "next_action": "Repair the narrow import classification in asb-tui lib.rs, then rerun the same focused fmt/test/clippy batch once.",
   "observed_branch": "feature/tui-run-control",
   "observed_dirty": 1,
   "observed_head": "b2707c482876dcfb42c756c39165f6ecdb5c7c10",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T16:39:46+00:00",
+  "updated_at": "2026-09-08T16:40:12+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -67,3 +67,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T16:39:46+00:00: Recorded command exit 101; command argv SHA-256
   3caed8f2c97a1dd7146849884c2a7da81c53b7be4c84dbc3db9ff3ed69a58e3f.
+
+- 2026-09-08T16:40:12+00:00: First AR-0805 focused compile failed before tests with two local import
+  defects introduced by the new run-control slice: MutationParams was accidentally removed although
+  the existing wizard still uses it; AttemptId and RunId are test-only and therefore unused in the
+  non-test library build. This is a source compile failure, not environment or harness. Corrective
+  scope is import-only: restore MutationParams at module scope and move AttemptId/RunId into the
+  test module.

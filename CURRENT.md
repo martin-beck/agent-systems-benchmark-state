@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0319](tasks/AR-0319-credential-fd-helper-resolvers.md): Implement credential FD and helper resolvers | Add explicit file-descriptor and helper credential references without ambient-secret fallback. | Define and implement one-shot FD and bounded helper credential resolvers. | replay_20260906 |
-| P1 | [AR-0805](tasks/AR-0805-tui-run-control.md): Add terminal run control and status | Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI. | Read complete AR-0805 plan and product frontend/control contracts in the declared clean worktree; do not mutate crates/asb-tui until active AR-0855, which overlaps lib.rs/main.rs, is integrated or its fence is returned, then rebase onto exact main. | quality_20260906 |
+| P1 | [AR-0805](tasks/AR-0805-tui-run-control.md): Add terminal run control and status | Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI. | Repair the narrow import classification in asb-tui lib.rs, then rerun the same focused fmt/test/clippy batch once. | quality_20260906 |
 | P2 | [AR-0403](tasks/AR-0403-terminal-workloads.md): Integrate Terminal-Bench workloads | Import terminal tasks through an adapter to the published harness or task format. | Independent review the signed adapter checkpoint e0da4efd; run exact-tree quality gates and retain explicit unqualified Terminal-Bench limitations. | contracts_20260906 |
 
 ## Open
