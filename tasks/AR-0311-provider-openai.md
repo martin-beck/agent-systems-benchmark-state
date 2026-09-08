@@ -19,16 +19,16 @@
   "next_action": "Hold exact 05262805acc538a31c8f12ed152a71026294706e unpublished for independent immutable review; live credentialed provider/account journeys remain opt-in and were not run.",
   "observed_branch": "feature/provider-openai",
   "observed_dirty": 0,
-  "observed_head": "05262805acc538a31c8f12ed152a71026294706e",
+  "observed_head": "1128595cd2f93988374be008fcecda07fef9fde4",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0311.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply one default OpenAI provider profile consistently to all supported agents.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Support a shared OpenAI provider",
-  "updated_at": "2026-09-08T10:18:21+00:00",
+  "updated_at": "2026-09-08T10:18:40+00:00",
   "worktree_key": "agent-systems-benchmark-provider-openai"
 }
 ---
