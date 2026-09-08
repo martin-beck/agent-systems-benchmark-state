@@ -755,7 +755,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0315](tasks/AR-0315-provider-parity-conformance.md): Verify cross-agent provider parity | quality_20260906 | Conformance-test identical OpenAI and Ollama profiles across the complete supported-agent matrix. | Run full workspace/docs/policy/privacy/failure/dependency gates on the exact two-file structural conformance slice; if green create a signed checkpoint while retaining real pinned-agent/native qualification as explicit remaining work. |
+| P1 | [AR-0315](tasks/AR-0315-provider-parity-conformance.md): Verify cross-agent provider parity | quality_20260906 | Conformance-test identical OpenAI and Ollama profiles across the complete supported-agent matrix. | Create SSH-signed+DCO two-file structural-conformance checkpoint, then run commit-range repository policy and Gitleaks; request independent review without claiming real pinned-agent/native completion. |
 | P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | codex-asb-header-review-repair | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Claim, create the declared worktree, enforce exact first-party Huawei MIT source headers, test, and publish unmerged PRs. |
 
 ### Open (3)
