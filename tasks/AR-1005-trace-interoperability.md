@@ -9,7 +9,7 @@
     "AR-0502"
   ],
   "id": "AR-1005",
-  "next_action": "Harden the projection to canonical OTLP JSON attribute encoding and pseudonymized causal identifiers, add explicit secret-like label redaction and contention/backpressure negatives, then run focused/full gates.",
+  "next_action": "Monitor PR #75 exact head 921cf004 CI; classify any failure before repair and do not merge without coordinator authorization.",
   "observed_branch": "feature/trace-interoperability",
   "observed_dirty": 0,
   "observed_head": "921cf004f8aa6884a2a3868f24b197b22dbf2a76",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose stable causal ASB events and optional standards-based telemetry without binding storage to an evolving convention.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Export interoperable privacy-safe traces",
-  "updated_at": "2026-09-08T10:57:11+00:00",
+  "updated_at": "2026-09-08T10:57:46+00:00",
   "worktree_key": "agent-systems-benchmark-trace-interoperability"
 }
 ---
@@ -189,3 +189,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T10:57:11+00:00: Recorded command exit 0; command argv SHA-256
   ea19df21aa16ab0be61713ebf767fcbfd9c0f2f5ea58cb5ee4b2e26c252fdf8c.
+
+- 2026-09-08T10:57:46+00:00: Published reviewed candidate as PR #75: exact head
+  921cf004f8aa6884a2a3868f24b197b22dbf2a76, tree 078e061d19719c7ddd786571011d21651634b640, base
+  4523da9629ff09451a0a2d2fe332d80bbb1320de, mergeable, clean, SSH-signed and DCO. Corrected
+  exact-tree evidence is green: focused trace 2/2 and exporter 7/7; schema registry and four checker
+  tests; full fmt/clippy/workspace tests/rustdoc/release; repository policy; full failure-path
+  fixtures; Gitleaks and added-line privacy; formal suite, Kani 6/6 and deliberate negative. Initial
+  CI: AWQ success; Rust x86/arm, quality, formal/Kani/Loom, fault/fuzz/mutation, and emulated
+  aarch64 queued or running. No merge authorization.
