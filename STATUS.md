@@ -10,8 +10,8 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 2 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
+| **Open** | Dependency-ready and available to claim | 3 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 37 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 86 |
@@ -64,7 +64,7 @@ flowchart LR
         AR_0311["AR-0311 - Done"]:::status_done
         AR_0312["AR-0312 - Done"]:::status_done
         AR_0313["AR-0313 - Done"]:::status_done
-        AR_0314["AR-0314 - Blocked"]:::status_blocked
+        AR_0314["AR-0314 - Open"]:::status_open
         AR_0315["AR-0315 - Planned"]:::status_planned
         AR_0316["AR-0316 - Done"]:::status_done
         AR_0317["AR-0317 - Done"]:::status_done
@@ -758,20 +758,20 @@ flowchart LR
 | P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | asb-license-20260908 | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Claim, create the declared worktree, enforce exact first-party Huawei MIT source headers, test, and publish unmerged PRs. |
 | P2 | [AR-0403](tasks/AR-0403-terminal-workloads.md): Integrate Terminal-Bench workloads | replay_20260906 | Import terminal tasks through an adapter to the published harness or task format. | Independent review the signed adapter checkpoint e0da4efd; run exact-tree quality gates and retain explicit unqualified Terminal-Bench limitations. |
 
-### Open (2)
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P1 | [AR-0314](tasks/AR-0314-recording-source-choice.md): Choose matching replay or live provider execution | Unclaimed | Offer matching prior recordings or an actual provider connection without silently choosing either. | Serialize AR-0318 product publication/integration (e9a0e523 + 5d62546) onto product main or explicitly authorize its inclusion in AR-0314; then rebase AR-0314 and run the synthetic environment-credential live preflight without FD/helper claims. |
 | P1 | [AR-0319](tasks/AR-0319-credential-fd-helper-resolvers.md): Implement credential FD and helper resolvers | Unclaimed | Add explicit file-descriptor and helper credential references without ambient-secret fallback. | Define and implement one-shot FD and bounded helper credential resolvers. |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary. |
 
-### Blocked (5)
+### Blocked (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0514](tasks/AR-0514-replay-openhands.md): Qualify OpenHands replay | Unclaimed | Qualify replay conformance for OpenHands. | Recover exact approved OpenHands environment digest 63727569 from immutable provenance; otherwise schedule pin-reproduction repair before native replay. |
 | P0 | [AR-0836](tasks/AR-0836-runner-isolation-hardening.md): Harden runner isolation and credential boundaries | Unclaimed | Harden development-host runner isolation against same-UID job tampering and diagnostic leakage. | Independently review immutable signed candidate 9b4e7084e02cdb3a1ff56dc55bbdce413ed6b1d3; keep trusted workflows blocked and AR-0836 in progress until required AR-0837 proves the digest-pinned no-host-mount job-container boundary. |
-| P1 | [AR-0314](tasks/AR-0314-recording-source-choice.md): Choose matching replay or live provider execution | Unclaimed | Offer matching prior recordings or an actual provider connection without silently choosing either. | Serialize AR-0318 product publication/integration (e9a0e523 + 5d62546) onto product main or explicitly authorize its inclusion in AR-0314; then rebase AR-0314 and run the synthetic environment-credential live preflight without FD/helper claims. |
 | P1 | [AR-0702](tasks/AR-0702-native-platforms.md): Validate native Linux kernels and architectures | Unclaimed | Exercise native x86_64 and aarch64 including booted openEuler kernels. | Keep reviewed PR #31 head bdaf9c108226f34ec6098f75b51fd601da9e9571 immutable and green; await AR-0703 genuine Debian/openEuler x86_64/aarch64 lab capacity before completing remaining native qualification and AR-0702. |
 | P1 | [AR-0703](tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Provide genuine disposable native hosts for required Debian and openEuler platform qualification. | Obtain explicit provider/account and cost authorization, least-privilege external credentials, quotas, and four genuine disposable Debian 13.6/openEuler 24.03 LTS-SP2 x86_64/aarch64 hosts; then implement reservation/provision/collect/destroy evidence without emulation. |
 

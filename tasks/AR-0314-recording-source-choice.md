@@ -20,11 +20,11 @@
   "plan": "../plans/AR-0314.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Offer matching prior recordings or an actual provider connection without silently choosing either.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Choose matching replay or live provider execution",
-  "updated_at": "2026-09-08T14:16:57+00:00",
+  "updated_at": "2026-09-08T14:38:22+00:00",
   "worktree_key": "agent-systems-benchmark-provider-recording-choice"
 }
 ---
@@ -125,3 +125,7 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-08T14:16:57+00:00: Exact blocker proven: AR-0318 resolver commit is not integrated into
   product main or AR-0314 candidate. Preserve clean AR-0314 checkpoint; unblock only after AR-0320
   product integration, then rebase and run synthetic environment preflight.
+
+- 2026-09-08T14:38:22+00:00: AR-0320 is released and integrated on product main at 33f30cb; all
+  AR-0314 dependencies are done. Resume for synthetic environment-credential live preflight;
+  FD/helper remain AR-0319.
