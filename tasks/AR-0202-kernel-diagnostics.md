@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0202",
-  "next_action": "Rebase the clean signed AR-0202 branch and PR #61 onto current main 4cad746, rerun focused/full gates and exact-head CI; preserve the fail-closed boundary and explicitly retain the privileged native x86/aarch64 evidence blocker.",
+  "next_action": "Add the required adjacent Huawei 2026 and SPDX MIT header to kernel.rs, run focused policy/header tests and Rust gates, then inspect/classify ARM Rust result before publishing a signed repair.",
   "observed_branch": "feature/kernel-diagnostics",
   "observed_dirty": 0,
   "observed_head": "bf82f96bdd233c447e1002030606189610131145",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate perf and optional eBPF diagnostics without making privileged tools mandatory.",
-  "task_revision": 145,
+  "task_revision": 146,
   "title": "Add optional kernel diagnostics",
-  "updated_at": "2026-09-08T22:58:17+00:00",
+  "updated_at": "2026-09-08T22:58:53+00:00",
   "worktree_key": "agent-systems-benchmark-kernel-diagnostics"
 }
 ---
@@ -415,3 +415,9 @@ Implementation has not started. Read the linked plan before claiming.
   18f9837882daef3f671b61c2022054351e5cc87b0d502bb22c86acdd3f96ed81.
 
 - 2026-09-08T22:58:17+00:00: Heartbeat by replay_20260906.
+
+- 2026-09-08T22:58:53+00:00: Exact-head PR #61 checks exposed a real source-policy omission:
+  crates/asb-metrics/src/kernel.rs has SPDX MIT but lacks the required adjacent Huawei 2026
+  copyright header; repository-policy job failed. Policy job also stopped on the same header. ARM
+  Rust job remains in progress/failed status not yet classified; feature work preempted pending CI
+  log review. Branch/worktree remain clean at bf82f96.
