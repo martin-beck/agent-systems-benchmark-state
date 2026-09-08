@@ -1,39 +1,29 @@
 ---
 {
-  "branch": "feature/agents-openjiuwen-workbuddy",
+  "branch": "coord/agents-openjiuwen-workbuddy",
   "checkpoint_commit": "",
   "claim_expires": "",
   "depends_on": [
-    "AR-0101",
-    "AR-0102",
-    "AR-0103",
-    "AR-0310",
-    "AR-0315",
-    "AR-0317",
-    "AR-0503",
-    "AR-0855"
+    "AR-0862",
+    "AR-0868"
   ],
   "id": "AR-0856",
-  "next_action": "After AR-0855 releases, verify every dependency is durably done, promote, and pin executable OpenJiuwen and WorkBuddy source, license, package, protocol, and platform identities before implementing adapters.",
+  "next_action": "Keep planned while both child series run independently; complete only after AR-0862 and AR-0868 are durably done with executable live/replay qualification.",
   "owner": "",
   "plan": "../plans/AR-0856.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "planned",
-  "summary": "Add independently pinned, capability-accurate OpenJiuwen and WorkBuddy adapters with credential-free live and strict replay qualification.",
-  "task_revision": 2,
-  "title": "Add OpenJiuwen and WorkBuddy agent support",
-  "updated_at": "2026-09-08T18:44:30+00:00",
+  "summary": "Coordinate independently qualified OpenJiuwen and WorkBuddy support without merging their provenance or evidence boundaries.",
+  "task_revision": 3,
+  "title": "Coordinate OpenJiuwen and WorkBuddy agent support",
+  "updated_at": "2026-09-08T18:55:00+00:00",
   "worktree_key": "agent-systems-benchmark-agents-openjiuwen-workbuddy"
 }
 ---
 ## AR-0856
 
-Add OpenJiuwen and WorkBuddy only through independently pinned adapter boundaries. Neither agent is
-listed as supported until its exact executable distribution, complete license closure, protocol,
-credential-free loopback journey, and strict replay conformance are executable and green on a
-declared platform.
-
-AR-0101, AR-0102, AR-0103, AR-0310, AR-0315, AR-0317, and AR-0503 are durably done. AR-0855
-remains a temporary serialization dependency because its repository-wide first-party source-header
-repair can overlap adapter registration; keep this task planned until that dependency releases.
+Umbrella only: OpenJiuwen phases are AR-0857 through AR-0862 and WorkBuddy phases are AR-0863
+through AR-0868. The two series proceed independently, but this AR remains planned and cannot be
+released until both final qualification children are durably done. A blocked phase stays an exact
+dependency blocker; it is never converted into an unsupported label merely to close the umbrella.
