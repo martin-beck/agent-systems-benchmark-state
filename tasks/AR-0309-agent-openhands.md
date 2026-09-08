@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0309",
-  "next_action": "Await coordinator disposition for main advancement to 123c58f after approval of e73767d; do not publish or perform another rebase without explicit authorization.",
+  "next_action": "Monitor PR #65 exact-head CI for fec0487, investigate any failure, and await final review; do not merge.",
   "observed_branch": "feature/agent-openhands",
   "observed_dirty": 0,
   "observed_head": "fec0487e4fd8a78b86ce5caba023e30fe40a0cd8",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run a maintained MIT OpenHands SDK or canonical headless client.",
-  "task_revision": 122,
+  "task_revision": 123,
   "title": "Implement maintained OpenHands SDK client adapter",
-  "updated_at": "2026-09-08T06:49:47+00:00",
+  "updated_at": "2026-09-08T06:50:08+00:00",
   "worktree_key": "agent-systems-benchmark-agent-openhands"
 }
 ---
@@ -409,3 +409,10 @@ Implementation has not started. Read the linked plan before claiming.
   9bc0f67b3353798edc0a12d5cc7bbba3329074e3b6383258fcda0cd26f15bc1a.
 
 - 2026-09-08T06:49:47+00:00: Heartbeat by contracts_20260906.
+
+- 2026-09-08T06:50:08+00:00: Published immutable signed+DCO candidate
+  fec0487e4fd8a78b86ce5caba023e30fe40a0cd8 to absent remote feature branch under exact lease and
+  opened PR #65: https://github.com/martin-beck/agent-systems-benchmark/pull/65. PR base is exact
+  123c58f7a971f210873124fccb31daa16139aab4, head exact fec0487, mergeable. Exact-head runs started:
+  emulated aarch64 34196352080, fault assurance 34196352077, formal assurance 34196352123,
+  repository quality 34196352103, Rust verification 34196352151; all currently in progress.

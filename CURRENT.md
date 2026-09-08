@@ -9,7 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. | root-coordination-20260906 |
 | P1 | [AR-0851](tasks/AR-0851-shared-workflow-coordinator.md): Adopt shared workflow coordinator | Adopt the canonical coordinator as a pinned offline-capable vendor artifact while preserving ASB extensions. | After the canonical public release is verified, vendor its pinned artifact and run ASB-specific conformance, fault, race, renderer, schema, and live checks. | codex-agent-workflow-coordinator-asb-20260908 |
-| P2 | [AR-0309](tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | Run a maintained MIT OpenHands SDK or canonical headless client. | Await coordinator disposition for main advancement to 123c58f after approval of e73767d; do not publish or perform another rebase without explicit authorization. | contracts_20260906 |
+| P2 | [AR-0309](tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | Run a maintained MIT OpenHands SDK or canonical headless client. | Monitor PR #65 exact-head CI for fec0487, investigate any failure, and await final review; do not merge. | contracts_20260906 |
 
 ## Open
 
