@@ -70,5 +70,5 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `3bcfd85dedd3` | 0 | behind 161, ahead 0 |
 | `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `410ecc95b80e` | 0 | behind 149, ahead 0 |
 | `agent-systems-benchmark-terminal-interface` | `feature/terminal-interface` | `d2e7b66ff6af` | 0 | behind 94, ahead 0 |
-| `agent-systems-benchmark-verifier-integrity` | `feature/verifier-integrity` | `3a07b57b8265` | 3 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-store/src/lib.rs`, `crates/asb-workloads/src/lib.rs`, `crates/asb-store/src/verification.rs` |
+| `agent-systems-benchmark-verifier-integrity` | `feature/verifier-integrity` | `3a07b57b8265` | 6 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-analysis/Cargo.toml`, `crates/asb-analysis/src/lib.rs`, `crates/asb-store/src/lib.rs`, `crates/asb-workloads/src/lib.rs`, `crates/asb-analysis/src/scoring.rs`, `crates/asb-store/src/verification.rs` |
