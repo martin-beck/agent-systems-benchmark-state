@@ -2,7 +2,7 @@
 {
   "branch": "feature/terminal-workloads",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T23:16:35+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0401"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/terminal-workloads",
   "observed_dirty": 0,
   "observed_head": "3e67bdfc3ce093234027d4be883223a6f3b6560c",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0403.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Import terminal tasks through an adapter to the published harness or task format.",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "Integrate Terminal-Bench workloads",
-  "updated_at": "2026-09-08T20:39:58+00:00",
+  "updated_at": "2026-09-08T20:40:37+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-workloads"
 }
 ---
@@ -311,3 +311,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T20:39:58+00:00: Recorded command exit 0; command argv SHA-256
   06abe126de8f48f4c23dd4f3da2db58de68f2432e3ca5c2f02f595b56f33f521.
+
+- 2026-09-08T20:40:37+00:00: Released after controlled rebase, fresh independent review, exact-head
+  CI, and serialized signed+DCO no-ff merge of PR #85 as product commit
+  4176c404ac90048de810a3633ceade91ed14796f (tree 3074d26475feb748195ab71c70c357c6fd0b46be; parents
+  f59e6b138a9b02850fadc7d81ebec09d8ff3fa0f and 3e67bdfc3ce093234027d4be883223a6f3b6560c). Fresh
+  exact-main workflows all terminal SUCCESS: Huawei headers 34275414280, Formal 34275414251, Fault
+  34275414261, Rust 34275414225, Repository quality 34275414318, Emulated aarch64 34275414347. Final
+  local exact-main verification passed: focused pytest 10/10, asb-workloads 16+2+5 and doc tests,
+  fmt, focused all-target clippy -D warnings, exact merge-range repository policy, clean
+  synchronized refs/tree. Reconcile/snapshot/live doctor green. Scope remains a pinned fail-closed
+  Terminal-Bench v4 contract only; native execution, evaluator/image/SBOM qualification, reset,
+  network isolation, and native aarch64 support remain explicitly unclaimed.
