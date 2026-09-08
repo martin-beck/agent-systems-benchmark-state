@@ -2,7 +2,7 @@
 {
   "branch": "feature/credential-fd-helper-resolvers",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-08T19:20:40+00:00",
   "depends_on": [
     "AR-0318"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/credential-fd-helper-resolvers",
   "observed_dirty": 0,
   "observed_head": "76497db8f22c43762f0b5bcbc7f2549c1d17281d",
-  "owner": "",
+  "owner": "replay_20260906",
   "plan": "../plans/AR-0319.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add explicit file-descriptor and helper credential references without ambient-secret fallback.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Implement credential FD and helper resolvers",
-  "updated_at": "2026-09-08T15:08:17+00:00",
+  "updated_at": "2026-09-08T16:20:40+00:00",
   "worktree_key": "agent-systems-benchmark-credential-fd-helper-resolvers"
 }
 ---
@@ -52,3 +52,5 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-08T15:08:17+00:00: Coordinator recovery after repeated live checks: lease remained valid
   but no worker process, heartbeat, checkpoint, or worktree change; no product mutation observed.
   Reopened for safe reassignment.
+
+- 2026-09-08T16:20:40+00:00: Claimed by replay_20260906.
