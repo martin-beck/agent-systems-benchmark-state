@@ -8,15 +8,18 @@
   ],
   "id": "AR-0403",
   "next_action": "Assess Harbor/Terminal-Bench integration contract before implementing.",
+  "observed_branch": "feature/terminal-workloads",
+  "observed_dirty": 0,
+  "observed_head": "9feeba6524357df38e3ad118d4c3740306d3ec8e",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0403.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Import terminal tasks through an adapter to the published harness or task format.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Integrate Terminal-Bench workloads",
-  "updated_at": "2026-09-08T13:38:56+00:00",
+  "updated_at": "2026-09-08T13:39:03+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-workloads"
 }
 ---
