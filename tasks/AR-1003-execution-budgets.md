@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1003.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Bound and report wall time, actions, tokens and monetary cost without treating unavailable telemetry as zero.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Enforce cost token and action budgets",
-  "updated_at": "2026-09-06T15:06:27+00:00",
+  "updated_at": "2026-09-08T09:34:23+00:00",
   "worktree_key": "agent-systems-benchmark-execution-budgets"
 }
 ---
@@ -29,3 +29,6 @@
 Bound and report wall time, actions, tokens and monetary cost without treating unavailable telemetry as zero.
 
 Implementation has not started. Read the linked plan before claiming.
+
+- 2026-09-08T09:34:23+00:00: Dependencies AR-0101 and AR-0301 through AR-0304 are done; promote
+  execution-budget enforcement as the next independent P1 lane.
