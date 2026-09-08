@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Machine-check protocol and artifact consistency",
-  "updated_at": "2026-09-08T09:10:36+00:00",
+  "updated_at": "2026-09-08T09:10:39+00:00",
   "worktree_key": "agent-systems-benchmark-contract-consistency"
 }
 ---
@@ -34,3 +34,6 @@ Implementation has not started. Read the linked plan before claiming.
   contract consistency as the next independent P1 lane.
 
 - 2026-09-08T09:10:07+00:00: Claimed by quality_20260906.
+
+- 2026-09-08T09:10:39+00:00: Recorded command exit 0; command argv SHA-256
+  8974344a1eef5d647af1102865ce8ad4245f7ecf975e3ae0c3ee58143340f5a5.
