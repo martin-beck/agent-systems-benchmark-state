@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Select several agents and apply one preconfigured provider profile through inspectable command-line options.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Add CLI multi-agent provider selection",
-  "updated_at": "2026-09-08T21:50:53+00:00",
+  "updated_at": "2026-09-08T22:04:27+00:00",
   "worktree_key": "agent-systems-benchmark-cli-multi-agent-provider-selection"
 }
 ---
@@ -99,3 +99,6 @@ Implementation has not started. Read the linked plan before claiming.
   implemented commands are provider-catalog and provider-plan. Provider-plan accepts bounded
   repeated --agent and exactly one --provider-profile, with the behavior and green results recorded
   in the preceding note. This is an operator-only state-note formatting correction.
+
+- 2026-09-08T22:04:27+00:00: Recorded command exit 0; command argv SHA-256
+  6806d0c18eeb6857ad7994afc784e3c9c398328da994855afee60dfc9aa25d7a.
