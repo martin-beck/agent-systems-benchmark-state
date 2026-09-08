@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:24:31+00:00",
+  "updated_at": "2026-09-08T12:25:15+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -246,3 +246,6 @@ Implementation has not started. Read the linked plan before claiming.
   f255c7..., java da500a..., javascript 5638c8..., python ebe437..., rust 0a22ff.... Validator now
   accepts and checks per-repository archive digest maps; focused tests pass 2/2. Source provenance
   is verified, but evaluator/image/SBOM qualification remains absent.
+
+- 2026-09-08T12:25:15+00:00: Recorded command exit 0; command argv SHA-256
+  715add98f9526257c15597ee51d8081c4f11f6513cdd881d25c0684dee35554c.
