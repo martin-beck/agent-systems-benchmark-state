@@ -9,7 +9,7 @@
     "AR-0502"
   ],
   "id": "AR-1005",
-  "next_action": "Design a bounded TraceSpan schema in asb-protocol and a nonblocking, privacy-safe OTLP JSON projection in asb-store; add malformed-span, content-opt-in, secret-redaction, round-trip, and backpressure negatives.",
+  "next_action": "Harden the projection to canonical OTLP JSON attribute encoding and pseudonymized causal identifiers, add explicit secret-like label redaction and contention/backpressure negatives, then run focused/full gates.",
   "observed_branch": "feature/trace-interoperability",
   "observed_dirty": 5,
   "observed_head": "289b2711774bad2b58b525a971f09391539f8800",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose stable causal ASB events and optional standards-based telemetry without binding storage to an evolving convention.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Export interoperable privacy-safe traces",
-  "updated_at": "2026-09-08T10:34:43+00:00",
+  "updated_at": "2026-09-08T10:35:25+00:00",
   "worktree_key": "agent-systems-benchmark-trace-interoperability"
 }
 ---
@@ -76,3 +76,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T10:34:43+00:00: Recorded command exit 0; command argv SHA-256
   42470deaca7c7c3da17503a7e25bf9b02168b5122c98827c9d0a4c16a7e52def.
+
+- 2026-09-08T10:35:25+00:00: Implementation checkpoint: dirty scope is exactly five owned paths:
+  asb-protocol lib.rs plus new trace.rs, asb-store lib.rs/new trace.rs/README. Additive TraceSpan v1
+  validates run/trial/agent/span/tool causality, kind fields, timestamps, and optional digest-only
+  content; TraceExporter is bounded and uses try_lock so malformed spans and backpressure cannot
+  block. Official provenance is pinned to semantic-conventions-genai commit
+  b5d8440f6f126738fd50f927752cd669772c517b whose manifest declares schema URL gen-ai-dev/1.42.0-dev.
+  Focused fmt and tests are green: protocol trace 2/2, store trace 4/4. Prior failures classified:
+  fmt drift; missing-doc lint; privacy assertion exposed serialized null content and was repaired
+  with skip_serializing_if. One wrapper exit 2 was a harness quoting error and made no product
+  mutation.
