@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Offer matching prior recordings or an actual provider connection without silently choosing either.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Choose matching replay or live provider execution",
-  "updated_at": "2026-09-08T14:42:52+00:00",
+  "updated_at": "2026-09-08T14:44:10+00:00",
   "worktree_key": "agent-systems-benchmark-provider-recording-choice"
 }
 ---
@@ -170,3 +170,6 @@ Implementation has not started. Read the linked plan before claiming.
   policy exact range, DCO exact range, and Gitleaks one-commit 13.34KB/no-leaks are green.
   Candidate: tree 4ef17ad010f067e6d87409727cbb098bfb8328a3, parent
   33f30cb7d88aa8d3c323895154c8237d1763c6b8, exact two-path replay scope.
+
+- 2026-09-08T14:44:10+00:00: Recorded command exit 0; command argv SHA-256
+  4adc4d86dc701d50b9b3a50909391bf76b0ed83ef305c2355574ffa212cdcde0.
