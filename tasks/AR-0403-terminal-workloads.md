@@ -2,7 +2,7 @@
 {
   "branch": "feature/terminal-workloads",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T19:21:39+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0401"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/terminal-workloads",
   "observed_dirty": 0,
   "observed_head": "76e01e9372ca80759eb71b42913c383ccbb6c9ad",
-  "owner": "contracts_20260906",
+  "owner": "",
   "plan": "../plans/AR-0403.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Import terminal tasks through an adapter to the published harness or task format.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Integrate Terminal-Bench workloads",
-  "updated_at": "2026-09-08T18:55:41+00:00",
+  "updated_at": "2026-09-08T19:22:50+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-workloads"
 }
 ---
@@ -257,3 +257,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T18:55:41+00:00: Recorded command exit 0; command argv SHA-256
   1d8e965cdf7461b81f9848da7a4e0b89817ebedbd0abedef693b112ab54a9e80.
+
+- 2026-09-08T19:22:50+00:00: Expired lease reconciled without cleanup: declared worktree is clean at
+  signed+DCO 76e01e9372ca80759eb71b42913c383ccbb6c9ad/tree fa18d480557d1b2007738340b57bf35423508adf;
+  no AR-specific build, Git, or mutation process is active. PR #85 remains open at that exact head
+  and all 13 exact-head checks are green. Preserve the immutable candidate and explicit
+  no-native/no-execution qualification limits; next owner must re-fetch current main, obtain
+  integration authorization, and rebase/review only if required before merge.
