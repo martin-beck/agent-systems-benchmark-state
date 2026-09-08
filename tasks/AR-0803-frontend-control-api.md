@@ -18,11 +18,11 @@
   "plan": "../plans/AR-0803.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary.",
-  "task_revision": 308,
+  "task_revision": 309,
   "title": "Define the frontend control API",
-  "updated_at": "2026-09-08T05:31:15+00:00",
+  "updated_at": "2026-09-08T05:32:03+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api"
 }
 ---
@@ -887,3 +887,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-08T05:31:15+00:00: 2026-09-08T06:00:00Z: Repair worker produced no bounded implementation
   checkpoint after repeated requests; lease recovery only. Preserve clean successor lane and
   original cbb764c dirty evidence worktree unchanged. Reclaim after fresh process/worktree audit.
+
+- 2026-09-08T05:32:03+00:00: Fresh reclaim: successor worktree is clean, original dirty evidence
+  preserved, and prior stale lease was recovered without mutation.
