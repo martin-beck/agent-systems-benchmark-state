@@ -18,13 +18,13 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 34213719742 | `289b2711774b` | push | Repository quality | in_progress:- |
-| 34213719735 | `289b2711774b` | push | Emulated aarch64 portability | queued:- |
+| 34213719735 | `289b2711774b` | push | Emulated aarch64 portability | in_progress:- |
 | 34213719710 | `289b2711774b` | push | Formal assurance | queued:- |
-| 34213719705 | `289b2711774b` | push | Fault assurance | pending:- |
+| 34213719705 | `289b2711774b` | push | Fault assurance | in_progress:- |
 | 34213719677 | `289b2711774b` | push | Rust verification | pending:- |
 | 34213577517 | `92569367347b` | push | Emulated aarch64 portability | completed:cancelled |
 | 34213577174 | `92569367347b` | push | Repository quality | completed:failure |
-| 34213577139 | `92569367347b` | push | Fault assurance | in_progress:- |
+| 34213577139 | `92569367347b` | push | Fault assurance | completed:cancelled |
 | 34213577128 | `92569367347b` | push | Formal assurance | completed:success |
 | 34213577119 | `92569367347b` | push | Rust verification | in_progress:- |
 | 34213486205 | `39d09374680f` | push | Fault assurance | completed:cancelled |
