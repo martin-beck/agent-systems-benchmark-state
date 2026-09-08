@@ -2,7 +2,7 @@
 {
   "branch": "feature/contract-consistency",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T12:58:09+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-1001"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/contract-consistency",
   "observed_dirty": 0,
   "observed_head": "289b2711774bad2b58b525a971f09391539f8800",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0904.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Machine-check protocol and artifact consistency",
-  "updated_at": "2026-09-08T10:14:00+00:00",
+  "updated_at": "2026-09-08T10:14:29+00:00",
   "worktree_key": "agent-systems-benchmark-contract-consistency"
 }
 ---
@@ -256,3 +256,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T10:14:00+00:00: Recorded command exit 0; command argv SHA-256
   78a9e234667c9903eb3ac3ef8776e704720b291df975fb18ea5aaa8a20428e99.
+
+- 2026-09-08T10:14:29+00:00: AR-0904 completed at exact product main
+  289b2711774bad2b58b525a971f09391539f8800, tree 671f4123159a32067363d945fb7fc6950002ff64. Reviewed
+  six-path product change was integrated by signed+DCO merge replacement
+  92569367347b49c497780fa40195971ff655b0f4 with identical reviewed tree, followed by signed+DCO
+  empty-tree CI provenance commit 289b271. Fresh exact-main workflows all succeeded: Rust
+  34213719677, repository quality 34213719742, formal 34213719710, fault assurance 34213719705,
+  emulated aarch64 34213719735. Local postmerge full fmt, Clippy, workspace tests, rustdoc, release
+  build, checker negatives and 36 registered contract tests passed on the identical merge tree.
+  Final exact 925..289 repository policy/signatures, contract checker, synchronized refs and clean
+  worktree passed. The earlier 39d0937 DCO failure and 925 push-base orphan failure remain recorded
+  as corrected integration evidence.

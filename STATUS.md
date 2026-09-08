@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 4 |
+| **In progress** | Claimed work with a live lease | 3 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 43 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 75 |
+| **Done** | Accepted, integrated, and durably verified | 76 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -172,7 +172,7 @@ flowchart LR
         AR_0901["AR-0901 - Done"]:::status_done
         AR_0902["AR-0902 - Done"]:::status_done
         AR_0903["AR-0903 - Planned"]:::status_planned
-        AR_0904["AR-0904 - In progress"]:::status_in_progress
+        AR_0904["AR-0904 - Done"]:::status_done
         AR_0905["AR-0905 - Done"]:::status_done
     end
     subgraph series_10["10 - Reliability and release"]
@@ -735,12 +735,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0311](tasks/AR-0311-provider-openai.md): Support a shared OpenAI provider | contracts_20260906 | Apply one default OpenAI provider profile consistently to all supported agents. | Extend the three-path OpenAI profile patch with bounded synthetic effective-request observations and negative credential/settings/redaction evidence before candidate gates. |
-| P1 | [AR-0904](tasks/AR-0904-contract-consistency.md): Machine-check protocol and artifact consistency | quality_20260906 | Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree. | Obtain fresh exact-main CI for signed+DCO main 92569367347b49c497780fa40195971ff655b0f4 using a resolvable base, then rerun final clean synchronized state validation and release only if all workflows pass. |
 | P1 | [AR-1003](tasks/AR-1003-execution-budgets.md): Enforce cost token and action budgets | replay_20260906 | Bound and report wall time, actions, tokens and monetary cost without treating unavailable telemetry as zero. | Run bounded mutation, coverage, privacy, dependency-integrity and supply gates; prepare candidate with explicit local Kani installation limitation. |
 | P2 | [AR-0402](tasks/AR-0402-external-code-workloads.md): Integrate SWE-bench and Aider Polyglot | root-coordination-20260906 | Add versioned external workload adapters without vendoring datasets. | Define content-addressed external source manifests for SWE-bench 02e7a74ffd0b707aab73d203fe87bdc7c76afc8e and Polyglot 7e0611e77b54e2dea774cdc0aa00cf9f7ed6144f; include Exercism cpp 413b80a9, go 97472cfe, java f1b22a3d, javascript 9be84b9e, python 1f6aab86, rust 1d3a0f46 (all MIT), then pin evaluator/image metadata. |
 
@@ -807,7 +806,7 @@ flowchart LR
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Evaluate maintenance, licenses and reproducibility before integration. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (75)
+### Done (76)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -876,6 +875,7 @@ flowchart LR
 | P1 | [AR-0852](tasks/AR-0852-coordinator-path-isolation.md): Adopt coordinator path isolation fix | Unclaimed | Adopt the path-exclusive coordinator commit fix discovered during live integration. | Preserve merged v0.1.4 effect e52ce3aa without history rewrite; complete a focused signed+DCO repair or documented signed state replacement under AR-0853, then re-audit live main before releasing AR-0852. |
 | P1 | [AR-0901](tasks/AR-0901-formal-assurance.md): Prove critical state and concurrency invariants | Unclaimed | Use bounded proofs and model tests for safety-critical domain logic. | Await independent immutable-head review of PR 14 at 2a495a99; repair any findings without merging or releasing. |
 | P1 | [AR-0902](tasks/AR-0902-fault-assurance.md): Add fuzz mutation and lifecycle fault campaigns | Unclaimed | Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection. | Run final coordination reconcile/snapshot/live doctor/full validation and release AR-0902 done only if clean synchronized state remains exact. |
+| P1 | [AR-0904](tasks/AR-0904-contract-consistency.md): Machine-check protocol and artifact consistency | Unclaimed | Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree. | Obtain fresh exact-main CI for signed+DCO main 92569367347b49c497780fa40195971ff655b0f4 using a resolvable base, then rerun final clean synchronized state validation and release only if all workflows pass. |
 | P1 | [AR-0905](tasks/AR-0905-recovery-models.md): Model execution recovery and worker fencing | Unclaimed | Apply bounded formal models to run lifecycle, leases, recovery, replay cursors and uncertain external effects. | Monitor PR #57 exact head a288bb3485aa2a65ffa79626c3352c6522791138; investigate failures and merge only after every required exact-head check is green and coordinator authorizes. |
 | P1 | [AR-1001](tasks/AR-1001-experiment-comparability.md): Define experiment identity and comparability | Unclaimed | Make every comparison content-addressed and explicit about agent, model, workload and platform confounders. | Await coordinator integration authorization for independently approved exact PR #17 head eb5e849; do not merge or release. Cargo workspace/lock and experiment-schema fence remains held by AR-1001. |
 | P1 | [AR-1002](tasks/AR-1002-verifier-integrity.md): Protect verifiers and support offline rescoring | Unclaimed | Separate immutable graders from agent work and version scoring independently of execution. | Monitor PR #62 exact head 3fc65ea73badcea31497e53644fdad8778115870 quality, emulated-aarch64, fault, Rust x86_64/aarch64, and formal runs; investigate failures and do not merge without authorization. |
