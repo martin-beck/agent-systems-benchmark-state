@@ -9,7 +9,7 @@
     "AR-0803"
   ],
   "id": "AR-0804",
-  "next_action": "Obtain serialized Cargo workspace/lock fence, then add standalone asb-tui crate with a pure capability-driven wizard state model and snapshot/negative tests before terminal rendering dependencies.",
+  "next_action": "Add negotiated selector/search/navigation snapshot coverage and plain-terminal accessibility rendering without widening launch authority; then run full workspace and privacy/policy gates before signed candidate.",
   "observed_branch": "feature/tui-settings-wizard",
   "observed_dirty": 3,
   "observed_head": "76497db8f22c43762f0b5bcbc7f2549c1d17281d",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Guide users through agents, providers, workloads, resources, replay, metrics, and output settings.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Build the terminal settings wizard",
-  "updated_at": "2026-09-08T15:24:15+00:00",
+  "updated_at": "2026-09-08T15:24:43+00:00",
   "worktree_key": "agent-systems-benchmark-tui-settings-wizard"
 }
 ---
@@ -73,3 +73,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T15:24:15+00:00: Recorded command exit 0; command argv SHA-256
   26f655f2e0d5a89504c1b0c40046eb5bc9496af2cbbd93070e8399f3a79aa684.
+
+- 2026-09-08T15:24:43+00:00: Authorized Cargo fence implementation checkpoint on exact base 76497db:
+  dirty scope is root Cargo.toml/Cargo.lock plus new
+  crates/asb-tui/{Cargo.toml,README.md,src/lib.rs,src/main.rs}. The standalone crate has a pure
+  capability-driven wizard model; only runner-advertised
+  agents/providers/workloads/platforms/metrics/recordings are accepted, live/replay is explicit,
+  credential values are unrepresentable, JSON import is closed/bounded, back/reset are lossless,
+  dry-run maps only to ValidateSettings, and exact confirmation maps only to CreatePlan (no Launch
+  API). Initial test failed only for missing binary crate docs and was fixed. Final focused
+  evidence: fmt check green, 3/3 model tests green, clippy all-targets -D warnings green. Cargo.lock
+  changed only by registering local asb-tui dependencies already pinned in the workspace.
