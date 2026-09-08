@@ -13,16 +13,16 @@
   "next_action": "Await independent immutable review of exact signed head 5d2cd78a924b2e2cb76e0bf48e01dca3e9249e74; publish only after approval, then exact-head CI and serialized integration. Native aarch64 and performance support remain explicitly unsupported.",
   "observed_branch": "feature/native-x86-capacity",
   "observed_dirty": 0,
-  "observed_head": "5d2cd78a924b2e2cb76e0bf48e01dca3e9249e74",
+  "observed_head": "45604cd323c5de0ab9c7eaf0b6a39d90f4d43002",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0848.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify authorized disposable native x86_64 capacity on a development host.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Qualify native x86 capacity",
-  "updated_at": "2026-09-08T00:07:49+00:00",
+  "updated_at": "2026-09-08T01:17:52+00:00",
   "worktree_key": "agent-systems-benchmark-native-x86-capacity"
 }
 ---
