@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify frontend privacy, artifact access, and fault behavior.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Assure frontend privacy and faults",
-  "updated_at": "2026-09-08T08:36:14+00:00",
+  "updated_at": "2026-09-08T08:36:16+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-privacy-assurance"
 }
 ---
@@ -73,3 +73,6 @@ redaction failures; prove no credentials, prompts, transcripts, or private paths
   header. No product mutation occurred; AR-0843 worktree remains clean at
   ba97a20f60f39b4c5ef601a7dade148276a631d6. Corrective action is a distinct verified single-argument
   invocation, not repetition of the malformed argv.
+
+- 2026-09-08T08:36:16+00:00: Recorded command exit 0; command argv SHA-256
+  234b16f38540214b4b1c105c91d8101ed224bb9ce28d3912ec5cbdb441ebfb1a.
