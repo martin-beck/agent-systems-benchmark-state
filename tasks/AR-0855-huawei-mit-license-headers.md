@@ -9,7 +9,7 @@
   "id": "AR-0855",
   "next_action": "Claim, create the declared worktree, enforce exact first-party Huawei MIT source headers, test, and publish unmerged PRs.",
   "observed_branch": "fix/huawei-mit-license-headers",
-  "observed_dirty": 177,
+  "observed_dirty": 176,
   "observed_head": "33f30cb7d88aa8d3c323895154c8237d1763c6b8",
   "owner": "codex-asb-header-recovery",
   "plan": "../plans/AR-0855.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Enforce Huawei MIT source headers",
-  "updated_at": "2026-09-08T14:52:47+00:00",
+  "updated_at": "2026-09-08T14:52:54+00:00",
   "worktree_key": "agent-systems-benchmark-huawei-mit-headers"
 }
 ---
