@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0202",
-  "next_action": "Design capability probes and bounded diagnostics profiles.",
+  "next_action": "Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary.",
   "observed_branch": "feature/kernel-diagnostics",
   "observed_dirty": 0,
   "observed_head": "a44229d56a562f1943ee2588d7abb920fb1d4c89",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate perf and optional eBPF diagnostics without making privileged tools mandatory.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Add optional kernel diagnostics",
-  "updated_at": "2026-09-08T04:04:24+00:00",
+  "updated_at": "2026-09-08T04:04:52+00:00",
   "worktree_key": "agent-systems-benchmark-kernel-diagnostics"
 }
 ---
@@ -193,3 +193,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T04:04:24+00:00: Recorded command exit 0; command argv SHA-256
   c2067642b30959185c04ec17b45883eb01cb0cd71538052e9f47a94c4e012eda.
+
+- 2026-09-08T04:04:52+00:00: Signed candidate a44229d56a562f1943ee2588d7abb920fb1d4c89 (tree
+  a50704ee) adds a fail-closed optional boundary only. Focused fmt, 12 unit, 7 native including
+  privilege-drop child, 3 compile-fail docs, and clippy -D warnings passed. Real x86_64 Linux
+  7.0.0-28 probes used exact perf SHA 7ec57e47/version 7.0.12 and bpftool SHA fe2e28b7/version
+  7.7.0; both returned redacted PermissionDenied under perf_event_paranoid=4/missing capabilities
+  and left scratch empty. No positive PMU, eBPF attach, native arm, overhead, or anomaly-stop claim
+  is made; those acceptance criteria remain blocked on privileged native capacity. Cargo fence was
+  returned after exact lock diff validation.
