@@ -13,16 +13,16 @@
   "next_action": "PR #89 is published at exact head 3844c28ae60a3fd0ecc35d9845832b8a20f657b0, but live base advanced to 3514089fa378bd50629c9794b215fd53c8ea7d5d after immutable review; do not merge stale-base candidate. Obtain authorization for controlled rebase/resign onto exact current main, rerun range-diff/full gates, and require fresh immutable review plus exact-head CI before merge.",
   "observed_branch": "feature/tui-history-analysis",
   "observed_dirty": 0,
-  "observed_head": "3844c28ae60a3fd0ecc35d9845832b8a20f657b0",
+  "observed_head": "031a4516cbb3addc184ab3c4b0f4c683aa14755d",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0806.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-08T23:17:57+00:00",
+  "updated_at": "2026-09-08T23:18:04+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
