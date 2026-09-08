@@ -2,7 +2,7 @@
 {
   "branch": "feature/agent-openhands",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T09:49:47+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/agent-openhands",
   "observed_dirty": 0,
   "observed_head": "fec0487e4fd8a78b86ce5caba023e30fe40a0cd8",
-  "owner": "contracts_20260906",
+  "owner": "",
   "plan": "../plans/AR-0309.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Run a maintained MIT OpenHands SDK or canonical headless client.",
-  "task_revision": 125,
+  "task_revision": 126,
   "title": "Implement maintained OpenHands SDK client adapter",
-  "updated_at": "2026-09-08T06:57:13+00:00",
+  "updated_at": "2026-09-08T06:59:30+00:00",
   "worktree_key": "agent-systems-benchmark-agent-openhands"
 }
 ---
@@ -422,3 +422,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T06:57:13+00:00: Recorded command exit 0; command argv SHA-256
   85ec0209148652f69c63f742a2799bc26033d51e16100cad0db1242a2952a30e.
+
+- 2026-09-08T06:59:30+00:00: AR-0309 completed and merged via signed+DCO no-ff commit
+  64f6eb4e5bc70c6d70997a463e7e4884555bc4da (PR #65, exact candidate
+  fec0487e4fd8a78b86ce5caba023e30fe40a0cd8). Postmerge local fmt, asb-agents Clippy/tests/docs,
+  exact real OpenHands SDK v1.17 boundary, repository policy, DCO and clean-tree checks pass.
+  Exact-main CI all green: aarch64 34196837199, fault 34196837208, formal 34196837225, quality
+  34196837247, Rust x86_64+arm 34196837240. Supported boundary remains Linux x86_64,
+  operator-provisioned exact Python 3.12 and audited 120-package v1.17 environment; v1.45 and any
+  unapproved/proprietary dependency closure fail closed; cloud, enterprise, containers and other
+  platform combinations are not claimed.
