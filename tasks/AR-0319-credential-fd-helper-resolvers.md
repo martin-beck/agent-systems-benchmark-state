@@ -10,16 +10,16 @@
   "next_action": "Obtain fresh independent immutable review of exact 75094148 repair package; publish only after approval and hosted exact-head Kani/formal CI.",
   "observed_branch": "feature/credential-fd-helper-resolvers",
   "observed_dirty": 0,
-  "observed_head": "75094148f951467a10f31e02aaf482b3fef9c4a8",
+  "observed_head": "ef5c40762e27061f671be25eb95d26079d93768a",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0319.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add explicit file-descriptor and helper credential references without ambient-secret fallback.",
-  "task_revision": 91,
+  "task_revision": 92,
   "title": "Implement credential FD and helper resolvers",
-  "updated_at": "2026-09-08T20:09:15+00:00",
+  "updated_at": "2026-09-08T20:09:21+00:00",
   "worktree_key": "agent-systems-benchmark-credential-fd-helper-resolvers"
 }
 ---
