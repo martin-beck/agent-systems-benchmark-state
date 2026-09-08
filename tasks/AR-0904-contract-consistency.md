@@ -8,7 +8,7 @@
     "AR-1001"
   ],
   "id": "AR-0904",
-  "next_action": "Independent immutable review of exact candidate 852b549; do not publish until approved.",
+  "next_action": "Independent immutable review of rebased candidate 6349b753e2d403212c63fa8a97bd04a0f2c61a61; do not publish until approved.",
   "observed_branch": "feature/contract-consistency",
   "observed_dirty": 0,
   "observed_head": "6349b753e2d403212c63fa8a97bd04a0f2c61a61",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Machine-check protocol and artifact consistency",
-  "updated_at": "2026-09-08T09:56:53+00:00",
+  "updated_at": "2026-09-08T09:57:42+00:00",
   "worktree_key": "agent-systems-benchmark-contract-consistency"
 }
 ---
@@ -212,3 +212,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T09:56:53+00:00: Recorded command exit 0; command argv SHA-256
   d34636b753d4d463d370b562b69256d5bd7b3457fe0e614b6df568b337129ab6.
+
+- 2026-09-08T09:57:42+00:00: Controlled AR-0904 rebase completed from reviewed
+  852b54934c82a18765cbbb6592a3a23e2b385035 onto exact signed origin/main
+  e5cdf97dd2954e5d097b1a6c872beafd724aa12f after exact old-head/base/clean guards. New immutable
+  candidate 6349b753e2d403212c63fa8a97bd04a0f2c61a61, tree 671f4123159a32067363d945fb7fc6950002ff64;
+  SSH signature and DCO valid; range-diff is exactly equal; worktree clean and six-path scope
+  unchanged. Exact-tree focused gates green: Ruff, four checker negative groups, 36 registered Rust
+  conformance tests, baseline semantic compatibility and generated docs, repository policy,
+  actionlint, zizmor, one-commit Gitleaks, cargo deny/audit, and full controlled failure fixtures.
+  Full current-tree fmt, Clippy, workspace tests, rustdoc, release build and checker are green,
+  including the new main Ollama tests with its native probe honestly ignored. Formal Cargo tests are
+  green; Kani 0.67.0 verified 6 of 6 harnesses and the deliberate counterexample failed as required.
+  Candidate remains unpublished.
