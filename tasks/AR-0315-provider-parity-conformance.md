@@ -2,7 +2,7 @@
 {
   "branch": "test/provider-parity-conformance",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T18:52:40+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0301",
     "AR-0302",
@@ -24,15 +24,15 @@
   "observed_branch": "test/provider-parity-conformance",
   "observed_dirty": 0,
   "observed_head": "7a5332dd3d0329343cf27b2433818b749bfdd355",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0315.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Conformance-test identical OpenAI and Ollama profiles across the complete supported-agent matrix.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Verify cross-agent provider parity",
-  "updated_at": "2026-09-08T16:17:21+00:00",
+  "updated_at": "2026-09-08T16:18:36+00:00",
   "worktree_key": "agent-systems-benchmark-provider-parity-conformance"
 }
 ---
@@ -150,3 +150,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T16:17:21+00:00: Recorded command exit 0; command argv SHA-256
   e3dda98a39ef5c6c2ae609ce9117fae11bc57de626ee7151890c7c7902f0eb07.
+
+- 2026-09-08T16:18:36+00:00: AR-0315 completed and integrated as signed+DCO no-ff merge
+  b2707c482876dcfb42c756c39165f6ecdb5c7c10 (PR #84; candidate
+  7a5332dd3d0329343cf27b2433818b749bfdd355). Exact-main workflows all succeeded: repository quality
+  34249416603, formal 34249416594, fault 34249416580, Rust 34249416581, emulated-aarch64
+  34249416597. Local exact-main provider_parity test passed 5/5, fmt/diff checks passed, HEAD equals
+  origin/main and tree is clean; reconcile state 144915791f49e9a4ee4154756b51d7979ccd90fb, snapshot
+  and live doctor green. Completion is limited to structural/synthetic provider and replay-selection
+  conformance; real pinned-agent wire parity, real Ollama model execution, cross-agent
+  retry/deadline/cancellation observations, and native distro qualification remain explicitly
+  unclaimed.

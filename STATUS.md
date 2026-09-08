@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 35 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 88 |
+| **Done** | Accepted, integrated, and durably verified | 89 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -65,7 +65,7 @@ flowchart LR
         AR_0312["AR-0312 - Done"]:::status_done
         AR_0313["AR-0313 - Done"]:::status_done
         AR_0314["AR-0314 - Done"]:::status_done
-        AR_0315["AR-0315 - In progress"]:::status_in_progress
+        AR_0315["AR-0315 - Done"]:::status_done
         AR_0316["AR-0316 - Done"]:::status_done
         AR_0317["AR-0317 - Done"]:::status_done
         AR_0318["AR-0318 - Done"]:::status_done
@@ -751,11 +751,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0315](tasks/AR-0315-provider-parity-conformance.md): Verify cross-agent provider parity | quality_20260906 | Conformance-test identical OpenAI and Ollama profiles across the complete supported-agent matrix. | Monitor all five exact-main postmerge workflows for signed+DCO merge b2707c482876dcfb42c756c39165f6ecdb5c7c10; after terminal success run local exact-main focused verification plus reconcile/snapshot/live doctor, then release AR-0315 with evidence limits. |
 | P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | codex-asb-header-review-repair | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Claim, create the declared worktree, enforce exact first-party Huawei MIT source headers, test, and publish unmerged PRs. |
 
 ### Open (3)
@@ -815,7 +814,7 @@ flowchart LR
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Evaluate maintenance, licenses and reproducibility before integration. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (88)
+### Done (89)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -861,6 +860,7 @@ flowchart LR
 | P1 | [AR-0312](tasks/AR-0312-provider-ollama.md): Support a shared local Ollama provider | Unclaimed | Apply one pinned local Ollama provider and model configuration to all supported agents. | Monitor fresh exact-head CI for PR #71 at rebased 8137f5baa0535e5d6e74d5a81e1dfbb0deaa2615; do not merge pending coordinator review. |
 | P1 | [AR-0313](tasks/AR-0313-all-agents-provider.md): Configure one provider for all agents | Unclaimed | Let test plans select one provider profile for every chosen supported agent atomically. | Wait for PR #78 exact-head CI; independently review immutable diff, then merge serially only if every required check is green. |
 | P1 | [AR-0314](tasks/AR-0314-recording-source-choice.md): Choose matching replay or live provider execution | Unclaimed | Offer matching prior recordings or an actual provider connection without silently choosing either. | Monitor fresh exact-main runs for signed+DCO additive attestation 76497db8f22c43762f0b5bcbc7f2549c1d17281d: formal 34241332324, repository quality 34241332330, fault 34241332366, Rust 34241332421, emulated-aarch64 34241332329. After all terminal success, fast-forward clean local main, run postmerge verification/doctor, then release AR-0314. |
+| P1 | [AR-0315](tasks/AR-0315-provider-parity-conformance.md): Verify cross-agent provider parity | Unclaimed | Conformance-test identical OpenAI and Ollama profiles across the complete supported-agent matrix. | Monitor all five exact-main postmerge workflows for signed+DCO merge b2707c482876dcfb42c756c39165f6ecdb5c7c10; after terminal success run local exact-main focused verification plus reconcile/snapshot/live doctor, then release AR-0315 with evidence limits. |
 | P1 | [AR-0316](tasks/AR-0316-agent-runtime-bundles.md): Publish reproducible agent runtime bundles | Unclaimed | Make supported agent installations reproducible, license-audited, SBOM-backed, and independently verifiable. | No further action for the released fail-closed catalog; complete runtime closures remain future work and must not be inferred. |
 | P1 | [AR-0318](tasks/AR-0318-credential-reference-boundary.md): Implement the credential-reference boundary | Unclaimed | Resolve provider credential references without exposing secrets or accepting ambient credentials. | Coordinator decision required: formally amend AR-0318 outcome/acceptance to Environment-only support, or authorize separately specified private locator contracts before implementing FileDescriptor/Helper; do not release done under the current three-source plan. |
 | P1 | [AR-0320](tasks/AR-0320-provider-credential-integration.md): Integrate provider credential boundary | Unclaimed | Integrate the verified environment credential resolver into the product workspace. | Monitor PR #80 exact head 0f92642/base 9feeba652 checks to terminal; investigate any failure, merge only with coordinator authorization after all required checks green, then exact-main postmerge verification and release. |
