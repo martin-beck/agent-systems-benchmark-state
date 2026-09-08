@@ -15,7 +15,7 @@
   "id": "AR-0505",
   "next_action": "Build production-boundary integration matrix using synthetic upstream service.",
   "observed_branch": "feature/agent-replay-conformance",
-  "observed_dirty": 1,
+  "observed_dirty": 0,
   "observed_head": "678ba7c8593a52beb8f3279ddd452245294131e7",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0505.md",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Test each actual client through recording and offline replay of engineering tasks.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Prove real-agent replay conformance",
-  "updated_at": "2026-09-08T02:11:05+00:00",
+  "updated_at": "2026-09-08T02:13:05+00:00",
   "worktree_key": "agent-systems-benchmark-agent-replay-conformance"
 }
 ---

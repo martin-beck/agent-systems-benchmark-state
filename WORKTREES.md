@@ -13,8 +13,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-agent-opencode` | `feature/agent-opencode` | `dfb0d548bf75` | 0 | behind 128, ahead 0 |
 | `agent-systems-benchmark-agent-opendesk` | `feature/agent-opendesk` | `8eb99d3c7235` | 0 | behind 121, ahead 0 |
 | `agent-systems-benchmark-agent-qwen-code` | `feature/agent-qwen-code` | `0be96c9ec50e` | 0 | behind 97, ahead 0 |
-| `agent-systems-benchmark-agent-replay-conformance` | `feature/agent-replay-conformance` | `678ba7c8593a` | 1 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-agents/tests/replay_aider.rs` |
+| `agent-systems-benchmark-agent-replay-conformance` | `feature/agent-replay-conformance` | `678ba7c8593a` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 9, ahead 0 |
 | `agent-systems-benchmark-benchmark-validity` | `feature/benchmark-validity` | `60a6c730457b` | 0 | behind 5, ahead 0 |
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `0717d4acd168` | 0 | behind 113, ahead 0 |
