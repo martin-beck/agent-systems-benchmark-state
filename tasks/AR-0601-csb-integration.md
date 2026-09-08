@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Reuse CSB application execution and monitoring where contracts fit ASB.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Prototype optional CSB integration",
-  "updated_at": "2026-09-08T09:19:29+00:00",
+  "updated_at": "2026-09-08T09:19:52+00:00",
   "worktree_key": "agent-systems-benchmark-csb-integration"
 }
 ---
@@ -80,3 +80,17 @@ Implementation has not started. Read the linked plan before claiming.
   484eb608e3b590bf2bdb5cdfc0b2e79bd03e8f0463b4ccaebb1fe3ff53f3e384.
 
 - 2026-09-08T09:19:29+00:00: Compatibility audit candidate 524db90c893356?; placeholder
+
+- 2026-09-08T09:19:52+00:00: Correction to prior placeholder: signed+DCO candidate
+  524db90c893366cf5f683aa5a99ec211083256a4, tree 2132ed435e0810b68b890901e4a31f5c5664a16e, exact
+  parent a97c3ed708cc16522383ecde41ec9fa2e642bc61, contains only docs/ARCHITECTURE.md and
+  docs/CSB_INTEGRATION.md. Pinned CSB d577c524/tree 97d08b39 audit rejects high-level bm-runner
+  because it owns benchkit scheduling, barriers, cleanup, monitors/plugins, and shell command
+  construction; isolated python3 -S fails on the unlocked pandas dependency. AR-0603
+  external_application is the only compatible surface, but its verified outer script re-resolves an
+  unpinned inner --command, so no engineering-workload/direct-parity support is claimed. Repository
+  policy link/SPDX checks, diff-check, exact-range DCO, SSH signature, clean scope and privacy scan
+  pass. Full-history repository policy failure on pre-existing base commit 909078c lacking DCO was
+  classified as unrelated history; --skip-commits plus exact-range DCO passed. Earlier exits 2/127
+  were operator-only apply-patch quoting/path failures before the successful wrapped edit; no blind
+  retry or unintended product mutation. Await immutable review; unpublished.
