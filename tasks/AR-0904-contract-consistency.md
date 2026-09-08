@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "Machine-check protocol and artifact consistency",
-  "updated_at": "2026-09-08T10:07:18+00:00",
+  "updated_at": "2026-09-08T10:11:28+00:00",
   "worktree_key": "agent-systems-benchmark-contract-consistency"
 }
 ---
@@ -247,3 +247,6 @@ Implementation has not started. Read the linked plan before claiming.
   39d0937..9256936 cannot be resolved; this is CI provenance state, not an AR-0904 product
   regression. Other exact-925 workflows remain in progress. AR-0904 remains claimed and cannot
   release without a fresh all-green exact-main workflow set.
+
+- 2026-09-08T10:11:28+00:00: Recorded command exit 0; command argv SHA-256
+  a2cf121565136b09dffbc7429c806af3ea82f6948aa7c55a0f563d8468cb71d9.
