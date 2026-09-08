@@ -10,19 +10,19 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #31 | `feature/native-platforms@bdaf9c108226` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #61 | `feature/kernel-diagnostics@1d24993771a4` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | metrics: add fail-closed optional kernel probes |
+| #31 | `feature/native-platforms@bdaf9c108226` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
+| #61 | `feature/kernel-diagnostics@1d24993771a4` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | metrics: add fail-closed optional kernel probes |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34277478918 | `559fbcc82523` | push | Rust verification | queued:- |
-| 34277478894 | `559fbcc82523` | push | Huawei MIT source headers | queued:- |
+| 34277478918 | `559fbcc82523` | push | Rust verification | in_progress:- |
+| 34277478894 | `559fbcc82523` | push | Huawei MIT source headers | completed:success |
 | 34277478864 | `559fbcc82523` | push | Emulated aarch64 portability | in_progress:- |
-| 34277478849 | `559fbcc82523` | push | Formal assurance | queued:- |
-| 34277478844 | `559fbcc82523` | push | Fault assurance | queued:- |
-| 34277478843 | `559fbcc82523` | push | Repository quality | queued:- |
+| 34277478849 | `559fbcc82523` | push | Formal assurance | in_progress:- |
+| 34277478844 | `559fbcc82523` | push | Fault assurance | in_progress:- |
+| 34277478843 | `559fbcc82523` | push | Repository quality | in_progress:- |
 | 34275414347 | `4176c404ac90` | push | Emulated aarch64 portability | completed:success |
 | 34275414318 | `4176c404ac90` | push | Repository quality | completed:success |
 | 34275414280 | `4176c404ac90` | push | Huawei MIT source headers | completed:success |
