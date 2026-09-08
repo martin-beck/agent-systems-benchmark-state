@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify frontend privacy, artifact access, and fault behavior.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Assure frontend privacy and faults",
-  "updated_at": "2026-09-08T08:53:55+00:00",
+  "updated_at": "2026-09-08T08:55:24+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-privacy-assurance"
 }
 ---
@@ -168,3 +168,6 @@ redaction failures; prove no credentials, prompts, transcripts, or private paths
   Repository policy, exact-range Gitleaks, clean index/worktree, and two-path scope checks all
   passed. This correction supersedes only the malformed wording in the prior note; candidate
   identity and evidence are unchanged.
+
+- 2026-09-08T08:55:24+00:00: Recorded command exit 0; command argv SHA-256
+  258cfda141378ed4cfe564f7c9f4047ea9e7b953027df86821ba10346473a503.
