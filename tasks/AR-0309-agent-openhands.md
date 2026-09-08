@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0309",
-  "next_action": "Finish license/provenance and exact-scope audit of the v1.17.0 official-lock pivot, run affected full gates, then create a signed DCO replacement candidate for immutable review.",
+  "next_action": "Await authorization for one controlled signed rebase of approved-scope OpenHands candidate e2b312c onto current main d3e2dfa, then rerun affected exact-tree gates and request immutable review.",
   "observed_branch": "feature/agent-openhands",
   "observed_dirty": 0,
   "observed_head": "e2b312cf8fa3fcc452e1f5a708dcfe2d1c06adf1",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run a maintained MIT OpenHands SDK or canonical headless client.",
-  "task_revision": 106,
+  "task_revision": 107,
   "title": "Implement maintained OpenHands SDK client adapter",
-  "updated_at": "2026-09-08T05:16:43+00:00",
+  "updated_at": "2026-09-08T05:18:05+00:00",
   "worktree_key": "agent-systems-benchmark-agent-openhands"
 }
 ---
@@ -340,3 +340,20 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T05:16:43+00:00: Recorded command exit 0; command argv SHA-256
   d70308cdf766954a5dde371e7a5d66477048fd5b0d4658d7aa2c0fdfbe91700d.
+
+- 2026-09-08T05:18:05+00:00: Prepared clean signed+DCO OpenHands SDK v1.17.0 replacement candidate
+  e2b312cf8fa3fcc452e1f5a708dcfe2d1c06adf1, tree 8f6f630da1b23ba27037dc70c5528ba7681fd15d, on base
+  3a07b57b8265d98eeebbcd4fd21339d72fac0663. Exact four-path scope: agents lib registration,
+  openhands module, v1.17 freeze, boundary test. Fail-closed license audit rejects v1.45 because
+  required lmnr 0.7.62 pulls proprietary proxy; pinned v1.17 official lock uses lmnr 0.7.24 and has
+  a fresh 120-package hashed install with uv pip check green, audited permissive closure, proxy
+  absent, exact source/wheel/environment digests, and unapproved distributions rejected before
+  spawn. Focused unit 6/6, provenance 1/1, native real process boundary repeated green with
+  write/approval/terminal/20-input/8-output/cleanup/privacy evidence; workspace
+  fmt/clippy/tests/docs/release, deny/audit/policy/actionlint/zizmor/Gitleaks/failure fixtures
+  green. Final rustdoc -D warnings green. Coverage gate green with OpenHands 86.13% lines and
+  applicable workspace/critical thresholds passing; an earlier 89.29% artifact was environmental
+  because project-local rustup std sources polluted the tiny critical denominator, and rerun with
+  identical toolchain outside project storage passed. Live fetch found origin/main advanced
+  disjointly to d3e2dfa979d85b8b443a07f93e7dd7b9a226bc2f, so candidate is held unpublished pending
+  controlled rebase authorization.
