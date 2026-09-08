@@ -2,7 +2,7 @@
 {
   "branch": "fix/huawei-mit-license-headers",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-08T17:28:07+00:00",
   "depends_on": [
     "AR-0003"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "fix/huawei-mit-license-headers",
   "observed_dirty": 0,
   "observed_head": "c90a1137df58d4989124e824410d7aaab7b56e45",
-  "owner": "",
+  "owner": "codex-asb-pr82-rereview-20260908",
   "plan": "../plans/AR-0855.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files.",
-  "task_revision": 110,
+  "task_revision": 111,
   "title": "Enforce Huawei MIT source headers",
-  "updated_at": "2026-09-08T16:58:04+00:00",
+  "updated_at": "2026-09-08T16:58:07+00:00",
   "worktree_key": "agent-systems-benchmark-huawei-mit-headers"
 }
 ---
@@ -311,3 +311,5 @@ and fresh coordinator snapshot before claiming. Do not modify vendored coordinat
 
 - 2026-09-08T16:58:04+00:00: Resume for independent exact-head review of product PR 82 at
   c90a1137df58d4989124e824410d7aaab7b56e45; preserve product branch and state-vendor blocker.
+
+- 2026-09-08T16:58:07+00:00: Claimed by codex-asb-pr82-rereview-20260908.
