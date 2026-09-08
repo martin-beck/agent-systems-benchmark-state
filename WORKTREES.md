@@ -56,8 +56,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-gemini-thinking-config-contract` | `feature/gemini-thinking-config-contract` | `0aff7023cacf` | 0 | behind 135, ahead 0 |
 | `agent-systems-benchmark-huawei-mit-headers` | `fix/huawei-mit-license-headers` | `7add29f1d24c` | 0 | behind 19, ahead 0 |
 | `agent-systems-benchmark-interaction-aware-redaction` | `feature/interaction-aware-redaction` | `867861c95c19` | 0 | behind 122, ahead 0 |
-| `agent-systems-benchmark-kernel-diagnostics` | `feature/kernel-diagnostics` | `3514089fa378` | 1 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-metrics/src/kernel.rs` |
+| `agent-systems-benchmark-kernel-diagnostics` | `feature/kernel-diagnostics` | `d11f81837374` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-native-platform-lab` | `feature/native-platform-lab` | `b1669203308d` | 0 | behind 166, ahead 0 |
 | `agent-systems-benchmark-native-platforms` | `feature/native-platforms` | `bdaf9c108226` | 0 | behind 186, ahead 17 |
 | `agent-systems-benchmark-native-x86-capacity` | `feature/native-x86-capacity` | `45604cd323c5` | 0 | behind 106, ahead 0 |
