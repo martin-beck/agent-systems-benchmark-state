@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate perf and optional eBPF diagnostics without making privileged tools mandatory.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Add optional kernel diagnostics",
-  "updated_at": "2026-09-08T04:04:52+00:00",
+  "updated_at": "2026-09-08T04:05:53+00:00",
   "worktree_key": "agent-systems-benchmark-kernel-diagnostics"
 }
 ---
@@ -202,3 +202,6 @@ Implementation has not started. Read the linked plan before claiming.
   and left scratch empty. No positive PMU, eBPF attach, native arm, overhead, or anomaly-stop claim
   is made; those acceptance criteria remain blocked on privileged native capacity. Cargo fence was
   returned after exact lock diff validation.
+
+- 2026-09-08T04:05:53+00:00: Recorded command exit 0; command argv SHA-256
+  f571d53905c1352f392b9015d42d0dd491dcb3f2a6f34f855dc4f8dba8f80841.
