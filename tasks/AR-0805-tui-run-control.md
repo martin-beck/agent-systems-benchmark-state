@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T17:25:29+00:00",
+  "updated_at": "2026-09-08T17:27:00+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -228,3 +228,6 @@ Implementation has not started. Read the linked plan before claiming.
   requires an exact commit OID. This is a command-input failure, not a product failure; the exact
   unchanged baseline is b2707c482876dcfb42c756c39165f6ecdb5c7c10. No remaining gate ran after that
   point and the one-file repair diff is preserved.
+
+- 2026-09-08T17:27:00+00:00: Recorded command exit 0; command argv SHA-256
+  83240a69e4a0edc4dd45693ca2b993f7a9eb3e025c16bebb523a0fe27bcc426e.
