@@ -9,15 +9,18 @@
   ],
   "id": "AR-0840",
   "next_action": "Define version-negotiated frontend requests, events, capabilities, and fixtures.",
+  "observed_branch": "feature/frontend-protocol-contract",
+  "observed_dirty": 0,
+  "observed_head": "d3e2dfa979d85b8b443a07f93e7dd7b9a226bc2f",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0840.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the stable frontend control protocol contract.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Define frontend protocol contract",
-  "updated_at": "2026-09-08T05:51:11+00:00",
+  "updated_at": "2026-09-08T05:52:12+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-protocol-contract"
 }
 ---
