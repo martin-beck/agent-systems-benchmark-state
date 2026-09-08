@@ -2,7 +2,7 @@
 {
   "branch": "feature/frontend-control-api",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T07:21:16+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0104",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/frontend-control-api",
   "observed_dirty": 20,
   "observed_head": "cbb764c45c6128d75f42fb78a3a2a15a0874528a",
-  "owner": "replay_20260906",
+  "owner": "",
   "plan": "../plans/AR-0803.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary.",
-  "task_revision": 345,
+  "task_revision": 346,
   "title": "Define the frontend control API",
-  "updated_at": "2026-09-08T06:16:14+00:00",
+  "updated_at": "2026-09-08T06:17:26+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api"
 }
 ---
@@ -1006,3 +1006,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T06:16:14+00:00: Recorded command exit 0; command argv SHA-256
   4f1ac44034b551af507da1054b4e0b1bec5e3d6b81304f76a1eb3752ae9058f9.
+
+- 2026-09-08T06:17:26+00:00: Released after independently reviewed PR #63 exact head
+  8d7d90014dbcf4df2f08be90b08392776d702a11 was integrated as signed+DCO no-ff merge
+  7a435fb6a4acc59300771b8478ee342f72555c96 (parents d3e2dfa979d85b8b443a07f93e7dd7b9a226bc2f and
+  8d7d90014dbcf4df2f08be90b08392776d702a11). Exact-main hosted runs all succeeded: Rust 34193239780,
+  quality 34193239799, formal 34193239857, fault 34193239990, emulated aarch64 34193239838. Local
+  postmerge workspace tests, docs, release build, formal tests, coverage, repository policy, and
+  mutation sentinels passed; mutation baseline green and 7/7 caught at evidence state f25f6bb6.
+  Initial long-TMPDIR SUN_LEN and missing policy script/output-root/tool PATH attempts were
+  operator/environment invocation failures, corrected without source changes. Product main and state
+  were clean/synchronized; live doctor passed. Original dirty evidence worktree remains preserved.
