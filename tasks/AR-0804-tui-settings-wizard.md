@@ -2,7 +2,7 @@
 {
   "branch": "feature/tui-settings-wizard",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-08T18:18:04+00:00",
   "depends_on": [
     "AR-0313",
     "AR-0314",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/tui-settings-wizard",
   "observed_dirty": 0,
   "observed_head": "76497db8f22c43762f0b5bcbc7f2549c1d17281d",
-  "owner": "",
+  "owner": "contracts_20260906",
   "plan": "../plans/AR-0804.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Guide users through agents, providers, workloads, resources, replay, metrics, and output settings.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Build the terminal settings wizard",
-  "updated_at": "2026-09-08T15:18:01+00:00",
+  "updated_at": "2026-09-08T15:18:04+00:00",
   "worktree_key": "agent-systems-benchmark-tui-settings-wizard"
 }
 ---
@@ -50,3 +50,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T15:18:01+00:00: Coordinator recovery after repeated no-process/no-worktree checks
   despite explicit Cargo fence authorization; no product mutation observed. Reopen for reassignment.
+
+- 2026-09-08T15:18:04+00:00: Claimed by contracts_20260906.
