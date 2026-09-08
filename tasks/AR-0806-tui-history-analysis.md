@@ -10,7 +10,7 @@
     "AR-1001"
   ],
   "id": "AR-0806",
-  "next_action": "Fresh independent immutable review of rebased candidate 031a4516cbb3addc184ab3c4b0f4c683aa14755d, tree cbd1d71498d62ab5e36dfad250a9171876646ce4, exact parent/current origin/main 3514089fa378bd50629c9794b215fd53c8ea7d5d. Verify '=' range-diff from approved repaired 3844c28, clean two-path scope, signature/DCO, duplicate-page atomicity, gates, and AR-0875 limitation; then guarded force-with-lease update PR #89 and require fresh exact-head CI.",
+  "next_action": "Review rebased 031a4516cbb3addc184ab3c4b0f4c683aa14755d against main 3514089fa378bd50629c9794b215fd53c8ea7d5d, confirming '=' range-diff from 3844c28, two-path scope, signature/DCO, duplicate atomicity, gates and AR-0875 limit. Then update PR #89 with force-with-lease and require exact-head CI.",
   "observed_branch": "feature/tui-history-analysis",
   "observed_dirty": 0,
   "observed_head": "031a4516cbb3addc184ab3c4b0f4c683aa14755d",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-08T23:19:28+00:00",
+  "updated_at": "2026-09-08T23:37:32+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
@@ -172,3 +172,15 @@ Implementation has not started. Read the linked plan before claiming.
   -D warnings, release build, signature/DCO, repository policy, diff-check, and Gitleaks all pass.
   Existing PR #89 remains at old head until fresh immutable review authorizes exact force-with-lease
   update.
+
+- 2026-09-08T23:35:20+00:00: Schema-maintenance record: preserved the prior front-matter
+  next_action verbatim before shortening that field to the 300-character schema boundary:
+  "Fresh independent immutable review of rebased candidate
+  031a4516cbb3addc184ab3c4b0f4c683aa14755d, tree cbd1d71498d62ab5e36dfad250a9171876646ce4,
+  exact parent/current origin/main 3514089fa378bd50629c9794b215fd53c8ea7d5d. Verify '=' range-diff
+  from approved repaired 3844c28, clean two-path scope, signature/DCO, duplicate-page atomicity,
+  gates, and AR-0875 limitation; then guarded force-with-lease update PR #89 and require fresh
+  exact-head CI."
+
+- 2026-09-08T23:37:32+00:00: Recorded command exit 0; command argv SHA-256
+  e128d1ec2aeb47d99af3c319e37cac529efb08e879037db0f41327acbdc0e584.
