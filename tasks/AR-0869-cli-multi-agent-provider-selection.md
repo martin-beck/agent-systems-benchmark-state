@@ -12,7 +12,7 @@
   "id": "AR-0869",
   "next_action": "Implement and qualify explicit CLI selection of several agents and one advertised provider profile.",
   "observed_branch": "feature/cli-multi-agent-provider-selection",
-  "observed_dirty": 2,
+  "observed_dirty": 3,
   "observed_head": "559fbcc825234bb98a64ba554a53f38b004d24f6",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0869.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Select several agents and apply one preconfigured provider profile through inspectable command-line options.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Add CLI multi-agent provider selection",
-  "updated_at": "2026-09-08T21:45:20+00:00",
+  "updated_at": "2026-09-08T21:45:27+00:00",
   "worktree_key": "agent-systems-benchmark-cli-multi-agent-provider-selection"
 }
 ---
