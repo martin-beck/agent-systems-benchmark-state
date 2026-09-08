@@ -2,7 +2,7 @@
 {
   "branch": "fix/huawei-mit-license-headers",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-08T19:18:12+00:00",
   "depends_on": [
     "AR-0003"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "fix/huawei-mit-license-headers",
   "observed_dirty": 0,
   "observed_head": "7add29f1d24ce3a74b9cca2e2f1fb29fa45cddd6",
-  "owner": "",
+  "owner": "codex-asb-pr82-publication",
   "plan": "../plans/AR-0855.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files.",
-  "task_revision": 183,
+  "task_revision": 184,
   "title": "Enforce Huawei MIT source headers",
-  "updated_at": "2026-09-08T18:48:09+00:00",
+  "updated_at": "2026-09-08T18:48:12+00:00",
   "worktree_key": "agent-systems-benchmark-huawei-mit-headers"
 }
 ---
@@ -524,3 +524,5 @@ and fresh coordinator snapshot before claiming. Do not modify vendored coordinat
 
 - 2026-09-08T18:48:09+00:00: Correct stale next_action after successful product merge; remaining
   work is only the release-gated state vendor sync and state-owned enforcement.
+
+- 2026-09-08T18:48:12+00:00: Claimed by codex-asb-pr82-publication.
