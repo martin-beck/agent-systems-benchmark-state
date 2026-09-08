@@ -10,7 +10,7 @@
     "AR-1001"
   ],
   "id": "AR-0806",
-  "next_action": "Obtain serialized asb-control protocol/schema and asb-cli backend fence to add bounded privacy-reviewed history detail and AR-1001 compatibility/confounder projections; then extend the tested one-path TUI model, regenerate schemas/fixtures, and run full gates.",
+  "next_action": "Independent immutable review of candidate 9801fe8ca2dda26ed1eceac4e001ead74d689d9c (tree cbe8777bee6072da236ad2f74cd68e28d3a3fd8e, exact parent/current origin/main 559fbcc825234bb98a64ba554a53f38b004d24f6). If approved, publish focused PR and require exact-head CI; keep AR-0875 control/schema paths untouched and rich compatibility/history fields explicitly unavailable.",
   "observed_branch": "feature/tui-history-analysis",
   "observed_dirty": 0,
   "observed_head": "9801fe8ca2dda26ed1eceac4e001ead74d689d9c",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-08T22:06:10+00:00",
+  "updated_at": "2026-09-08T22:06:41+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
@@ -92,3 +92,15 @@ Implementation has not started. Read the linked plan before claiming.
   77bcb32ad1a7b421893d4b909bc4f6ab0c371f6103530fa1cda2d136e6c336d4.
 
 - 2026-09-08T22:06:10+00:00: Heartbeat by quality_20260906.
+
+- 2026-09-08T22:06:41+00:00: Created clean immutable AR-0806 TUI-local candidate
+  9801fe8ca2dda26ed1eceac4e001ead74d689d9c, tree cbe8777bee6072da236ad2f74cd68e28d3a3fd8e, exact
+  parent and live origin/main 559fbcc825234bb98a64ba554a53f38b004d24f6. Exact two-path scope:
+  crates/asb-tui/src/lib.rs and crates/asb-tui/README.md. Added bounded filtering and a
+  constructor-controlled opaque analysis projection whose permits_unqualified_claim is always false.
+  Full fmt, workspace all-target Clippy -D warnings, workspace tests, workspace rustdoc -D warnings,
+  and release build pass; focused asb-tui is 16/16. SSH signature and exact DCO verified, repository
+  policy and diff-check pass, Gitleaks reports no leaks. One operator-only exit 127 was caused by
+  PATH assignment applying only to the first command; corrected with exported configured toolchain
+  and all intended gates passed. AR-0875-owned control/schema/backend paths are untouched. Candidate
+  explicitly cannot supply rich provenance or compatibility until AR-0875.
