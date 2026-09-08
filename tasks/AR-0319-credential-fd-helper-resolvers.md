@@ -7,7 +7,7 @@
     "AR-0318"
   ],
   "id": "AR-0319",
-  "next_action": "Define and implement one-shot FD and bounded helper credential resolvers.",
+  "next_action": "Implement the bounded versioned allowlisted helper resolver and its timeout/cancellation/malformed/oversize/nonzero/privacy negatives; then run full focused gates and create a signed checkpoint.",
   "observed_branch": "feature/credential-fd-helper-resolvers",
   "observed_dirty": 1,
   "observed_head": "b2707c482876dcfb42c756c39165f6ecdb5c7c10",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add explicit file-descriptor and helper credential references without ambient-secret fallback.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Implement credential FD and helper resolvers",
-  "updated_at": "2026-09-08T16:43:39+00:00",
+  "updated_at": "2026-09-08T16:44:04+00:00",
   "worktree_key": "agent-systems-benchmark-credential-fd-helper-resolvers"
 }
 ---
@@ -90,3 +90,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T16:43:39+00:00: Recorded command exit 0; command argv SHA-256
   70ee44c9614a05994b53d15d8661f95a6f73b78064910e37ab606499e4d72d77.
+
+- 2026-09-08T16:44:04+00:00: Implemented the one-shot OwnedFd half of AR-0319 in
+  crates/asb-agents/src/credential.rs. The resolver accepts only an already-open owned descriptor
+  plus bounded public logical locator, domain-separates the non-secret reference digest, validates
+  current-process ownership, regular-file type, private mode, and size both before admission and
+  immediately before the bounded read, consumes the resolver once, and explicitly makes no pre-open
+  path-traversal claim. Added wrong-source, malformed-locator, group-readable, oversize, directory,
+  one-shot resolution, and debug-redaction tests. Focused locked test passed: cargo test -p
+  asb-agents credential --locked, 8 passed; cargo fmt check passed. Earlier cargo-not-found and
+  duplicate-match failures were operator/source issues respectively and are repaired. Dirty scope is
+  exactly crates/asb-agents/src/credential.rs; helper boundary remains.
