@@ -2,7 +2,7 @@
 {
   "branch": "feature/credential-fd-helper-resolvers",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T22:18:49+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0318"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/credential-fd-helper-resolvers",
   "observed_dirty": 0,
   "observed_head": "ef5c40762e27061f671be25eb95d26079d93768a",
-  "owner": "replay_20260906",
+  "owner": "",
   "plan": "../plans/AR-0319.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Add explicit file-descriptor and helper credential references without ambient-secret fallback.",
-  "task_revision": 112,
+  "task_revision": 113,
   "title": "Implement credential FD and helper resolvers",
-  "updated_at": "2026-09-08T20:56:24+00:00",
+  "updated_at": "2026-09-08T20:59:34+00:00",
   "worktree_key": "agent-systems-benchmark-credential-fd-helper-resolvers"
 }
 ---
@@ -402,3 +402,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T20:56:24+00:00: Recorded command exit 0; command argv SHA-256
   88cffa681968dacac07b38baf17c8b0ad5d717b42f6a6c555998d491607e7a64.
+
+- 2026-09-08T20:59:34+00:00: AR-0319 integrated and verified. PR #87 exact reviewed head
+  ef5c40762e27061f671be25eb95d26079d93768a merged by SSH-signed+DCO no-ff commit
+  559fbcc825234bb98a64ba554a53f38b004d24f6 onto live main 4176c404ac90048de810a3633ceade91ed14796f.
+  Exact-main hosted runs are terminal SUCCESS: Rust 34277478918, quality 34277478843, formal/Kani
+  34277478849, fault/fuzz/mutation 34277478844, emulated aarch64 34277478864, headers 34277478894.
+  Local exact-main pinned Rust 1.93 credential tests 14/14, fmt, Clippy, exact-range repository
+  policy, merge signature/DCO, diff-check, and clean tree pass. Two local postmerge failures were
+  operator-only and repaired: missing cargo under narrowed PATH, then accidental Rust 1.98 plus
+  unbounded policy history exposed unrelated inherited issues; pinned toolchain and exact merge
+  range pass. Release complete with sealed memfd and fail-closed helper/FD limits documented.
