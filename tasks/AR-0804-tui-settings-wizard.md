@@ -2,7 +2,7 @@
 {
   "branch": "feature/tui-settings-wizard",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T18:20:28+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0313",
     "AR-0314",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/tui-settings-wizard",
   "observed_dirty": 0,
   "observed_head": "8f7152c525daf0b8dd61961c780848ed7a8bf979",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0804.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Guide users through agents, providers, workloads, resources, replay, metrics, and output settings.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Build the terminal settings wizard",
-  "updated_at": "2026-09-08T15:50:02+00:00",
+  "updated_at": "2026-09-08T15:51:33+00:00",
   "worktree_key": "agent-systems-benchmark-tui-settings-wizard"
 }
 ---
@@ -169,3 +169,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T15:50:02+00:00: Recorded command exit 0; command argv SHA-256
   75704dee64f1e4c9098c5869decdade51510717f4bc51af7cc5446c20dd3f9cb.
+
+- 2026-09-08T15:51:33+00:00: Signed merge d51ee9c9ab8889f6b9837a89772f59ea6f37d3a3 verified.
+  Exact-main runs succeeded: formal 34246605248, fault 34246605182, Rust 34246605181, quality
+  34246605294, emulated-aarch64 34246605130. Local exact-main focused tests pass 5/5 and clean refs,
+  snapshot, reconcile, live doctor pass. Proven: capability-driven settings, keyboard
+  navigation/search, privacy-safe plain snapshots, bounded import/export, validation and explicit
+  plan creation. Unsupported follow-ups: run launch, transport wiring, full-screen rendering.

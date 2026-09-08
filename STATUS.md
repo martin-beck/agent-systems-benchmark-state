@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 35 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 87 |
+| **Done** | Accepted, integrated, and durably verified | 88 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -127,7 +127,7 @@ flowchart LR
         AR_0801["AR-0801 - Done"]:::status_done
         AR_0802["AR-0802 - Done"]:::status_done
         AR_0803["AR-0803 - Done"]:::status_done
-        AR_0804["AR-0804 - In progress"]:::status_in_progress
+        AR_0804["AR-0804 - Done"]:::status_done
         AR_0805["AR-0805 - Planned"]:::status_planned
         AR_0806["AR-0806 - Planned"]:::status_planned
         AR_0807["AR-0807 - Planned"]:::status_planned
@@ -751,11 +751,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0804](tasks/AR-0804-tui-settings-wizard.md): Build the terminal settings wizard | quality_20260906 | Guide users through agents, providers, workloads, resources, replay, metrics, and output settings. | Monitor exact-main d51ee9c postmerge runs: Rust 34246605181, quality 34246605294, emulated-aarch64 34246605130, fault 34246605182, formal 34246605248. After all terminal success, run focused local verification and state doctor, then release with unsupported launch/transport/full-screen limits. |
 | P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | codex-asb-header-review-repair | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Claim, create the declared worktree, enforce exact first-party Huawei MIT source headers, test, and publish unmerged PRs. |
 
 ### Open (4)
@@ -816,7 +815,7 @@ flowchart LR
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Evaluate maintenance, licenses and reproducibility before integration. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (87)
+### Done (88)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -876,6 +875,7 @@ flowchart LR
 | P1 | [AR-0707](tasks/AR-0707-emulated-aarch64-portability.md): Qualify emulated aarch64 portability | Unclaimed | Add explicit emulated-aarch64 portability qualification without claiming native support. | Provide a reproducible x86_64-hosted aarch64 VM/emulation lane for userspace portability and negative qualification only. |
 | P1 | [AR-0801](tasks/AR-0801-terminal-interface.md): Implement terminal and automation interfaces | Unclaimed | Provide doctor, plan, run, sweep, compare and report with stable JSON output. | No further AR-0801 action; preserve the verified doctor, plan, run, sweep, compare, report, and serve surface, with record and replay explicitly unsupported. |
 | P1 | [AR-0803](tasks/AR-0803-frontend-control-api.md): Define the frontend control API | Unclaimed | Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary. | Await coordinator authorization to integrate exact green PR #63 head 8d7d90014dbcf4df2f08be90b08392776d702a11; do not rewrite or merge meanwhile. |
+| P1 | [AR-0804](tasks/AR-0804-tui-settings-wizard.md): Build the terminal settings wizard | Unclaimed | Guide users through agents, providers, workloads, resources, replay, metrics, and output settings. | Monitor exact-main d51ee9c postmerge runs: Rust 34246605181, quality 34246605294, emulated-aarch64 34246605130, fault 34246605182, formal 34246605248. After all terminal success, run focused local verification and state doctor, then release with unsupported launch/transport/full-screen limits. |
 | P1 | [AR-0830](tasks/AR-0830-aiws-runner-capacity.md): Provision hardened development host ASB runner capacity | Unclaimed | Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners. | Reboot persistence is deferred to AR-0833; AR-0830 proven scope is complete. |
 | P1 | [AR-0831](tasks/AR-0831-aiws-workflow-routing.md): Integrate development host ASB runners with GitHub workflows | Unclaimed | Route explicitly trusted ASB CI jobs to qualified development host runners while preserving disposable public-PR isolation. | Hold exact unpublished f55f98cc79b75226a537600258dde5e57333bdeb for independent immutable security review; publish only after approval. |
 | P1 | [AR-0834](tasks/AR-0834-handoffctl-lint-regression.md): Repair handoffctl lint regression | Unclaimed | Repair the coordination-tool Ruff regression discovered during AR-0830 reconciliation. | No further action; repair is integrated and verified. |
