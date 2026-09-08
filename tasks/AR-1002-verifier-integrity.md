@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate immutable graders from agent work and version scoring independently of execution.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Protect verifiers and support offline rescoring",
-  "updated_at": "2026-09-08T04:53:02+00:00",
+  "updated_at": "2026-09-08T05:05:04+00:00",
   "worktree_key": "agent-systems-benchmark-verifier-integrity"
 }
 ---
@@ -216,3 +216,6 @@ Implementation has not started. Read the linked plan before claiming.
   GitHub reports mergeable. Initial exact-head runs are quality 34188500317, emulated aarch64
   34188500312, fault 34188500279, Rust x86_64/aarch64 34188500290, and formal 34188500295, all in
   progress. No merge performed.
+
+- 2026-09-08T05:05:04+00:00: Recorded command exit 0; command argv SHA-256
+  293c23c7ec02832b1afacaf92c287bd7873cb4fe72e5e04061019f612ddeb362.
