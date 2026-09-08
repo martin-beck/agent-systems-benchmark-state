@@ -2,7 +2,7 @@
 {
   "branch": "fix/huawei-mit-license-headers",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T19:05:40+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "fix/huawei-mit-license-headers",
   "observed_dirty": 0,
   "observed_head": "609ffbbe13a4b1918085ff45b121d95460fc47c6",
-  "owner": "codex-asb-adjacent-pair-repair",
+  "owner": "",
   "plan": "../plans/AR-0855.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files.",
-  "task_revision": 128,
+  "task_revision": 129,
   "title": "Enforce Huawei MIT source headers",
-  "updated_at": "2026-09-08T17:14:53+00:00",
+  "updated_at": "2026-09-08T17:20:35+00:00",
   "worktree_key": "agent-systems-benchmark-huawei-mit-headers"
 }
 ---
@@ -358,3 +358,8 @@ and fresh coordinator snapshot before claiming. Do not modify vendored coordinat
 
 - 2026-09-08T17:14:53+00:00: Recorded command exit 0; command argv SHA-256
   b75ce9f2359707dd60ffd7354593339007fe8b2ad537c050e84990aeb9ed12c1.
+
+- 2026-09-08T17:20:35+00:00: PR #82 exact head 609ffbbe13a4b1918085ff45b121d95460fc47c6 is mergeable
+  with all 14 hosted checks passing; adjacent-pair semantics and explicit TLA/Alloy module-prologue
+  validation are repaired. Await fresh independent review and immutable coordinator release/vendor
+  sync; do not hand-edit hash-locked vendor.
