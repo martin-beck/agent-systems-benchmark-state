@@ -12,17 +12,17 @@
   "id": "AR-0805",
   "next_action": "Hold PR #86. Investigate exact-head Formal assurance run 34263658065 TLC/Alloy job failure caused by curl exit 63 Maximum file size exceeded while downloading pinned formal tooling; all other checks still settling. Do not merge until a fresh exact-head formal check and complete matrix are green.",
   "observed_branch": "feature/tui-run-control",
-  "observed_dirty": 1,
-  "observed_head": "fe24e48f9b4bae4ca7f62aa50be52e7586d455d3",
+  "observed_dirty": 0,
+  "observed_head": "da0d21b9c403c960e1eaac979ad22cb34932febe",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0805.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 97,
+  "task_revision": 98,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T18:37:48+00:00",
+  "updated_at": "2026-09-08T18:37:54+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
