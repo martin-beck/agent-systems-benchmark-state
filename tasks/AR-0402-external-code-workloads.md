@@ -7,7 +7,7 @@
     "AR-0401"
   ],
   "id": "AR-0402",
-  "next_action": "Wire the report into the user-facing benchmark result path and complete AR-0402 acceptance review; real external evaluator qualification remains planned.",
+  "next_action": "Complete AR-0402 acceptance review and determine whether remaining production integration belongs in a successor AR; do not claim real evaluator qualification.",
   "observed_branch": "feature/external-code-workloads",
   "observed_dirty": 0,
   "observed_head": "d6875cc7bb6960f5feb02245b0bfde13d1099c9f",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 139,
+  "task_revision": 140,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T13:28:07+00:00",
+  "updated_at": "2026-09-08T13:34:59+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -387,3 +387,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T13:28:07+00:00: Recorded command exit 0; command argv SHA-256
   06bb4b01e6e4672addabc601f07ec0d7ac81ef4393edaed71a376107a4c7075a.
+
+- 2026-09-08T13:34:59+00:00: Documented the complete external result workflow in
+  crates/asb-workloads/README.md and integrated as signed+DCO merge
+  9feeba6524357df38e3ad118d4c3740306d3ec8e. Exact-main post-merge all green: Rust 34232145154,
+  quality 34232145081, formal 34232145018, fault 34232145161, emulated aarch64 34232145085.
+  Documentation explicitly preserves unqualified/non-comparable limitations.
