@@ -7,7 +7,7 @@
     "AR-0318"
   ],
   "id": "AR-0319",
-  "next_action": "Implement the bounded versioned allowlisted helper resolver and its timeout/cancellation/malformed/oversize/nonzero/privacy negatives; then run full focused gates and create a signed checkpoint.",
+  "next_action": "Run full workspace/formal/fault/privacy/supply gates on signed candidate d2e08d8d, then request independent immutable review before publication.",
   "observed_branch": "feature/credential-fd-helper-resolvers",
   "observed_dirty": 0,
   "observed_head": "d2e08d8d9bfa8b728fa93c1d1aa53a955573f03e",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add explicit file-descriptor and helper credential references without ambient-secret fallback.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Implement credential FD and helper resolvers",
-  "updated_at": "2026-09-08T17:22:23+00:00",
+  "updated_at": "2026-09-08T17:22:56+00:00",
   "worktree_key": "agent-systems-benchmark-credential-fd-helper-resolvers"
 }
 ---
@@ -173,3 +173,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T17:22:17+00:00: Recorded command exit 0; command argv SHA-256
   ef7934f00f98755180e5d04c87b26345da55df74ede92b6bab926227bf08906e.
+
+- 2026-09-08T17:22:56+00:00: Signed+DCO checkpoint d2e08d8d9bfa8b728fa93c1d1aa53a955573f03e (tree
+  ca27f1b0e1c229e6a6ecab10bf2f0cf7b11ba87c, parent b2707c482876dcfb42c756c39165f6ecdb5c7c10)
+  implements both AR-0319 boundaries in four paths. OwnedFd resolution is one-shot and validates
+  logical reference, current UID, regular type, private mode and size before admission/read. Helper
+  v1 binds logical locator plus exact executable SHA-256, revalidates metadata/hash pre-spawn, uses
+  only the fixed protocol argv with cleared environment/stdin, bounded JSON/stdout/stderr/deadline,
+  idempotent process-group cancellation/reaping, and generic non-secret errors. Negatives cover
+  wrong source/digest/mode/type/locator/deadline, malformed/extra-field/stderr/nonzero/oversize
+  response, timeout and double cancel. Exact Cargo delta is one existing-locked rustix 1.1.4 fs edge
+  and one lock package-edge line. Focused locked credential tests pass 12/12; all-target Clippy -D
+  warnings and fmt/diff-check pass. Failed intermediate commands are classified in the
+  implementation history and repaired.
