@@ -2,7 +2,7 @@
 {
   "branch": "feature/frontend-control-api",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T07:02:06+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0104",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/frontend-control-api",
   "observed_dirty": 20,
   "observed_head": "cbb764c45c6128d75f42fb78a3a2a15a0874528a",
-  "owner": "replay_20260906",
+  "owner": "",
   "plan": "../plans/AR-0803.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "planned",
   "summary": "Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary.",
-  "task_revision": 327,
+  "task_revision": 328,
   "title": "Define the frontend control API",
-  "updated_at": "2026-09-08T05:46:44+00:00",
+  "updated_at": "2026-09-08T05:50:31+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api"
 }
 ---
@@ -943,3 +943,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T05:46:44+00:00: Recorded command exit 1; command argv SHA-256
   8b912970db9043d1e8f60e5dce5620c155bbb69d83a166719a586968ea0f875b.
+
+- 2026-09-08T05:50:31+00:00: 2026-09-08T07:07:00Z: Lease expired and no AR-0803 process was live.
+  Preserve candidate 8d7d900 and all worktrees. Durable gate boundary: platform manifests pass;
+  platform unittest has 12 pass plus host-python jsonschema import failure;
+  coverage/dependency/fault/formal/Kani/privacy/workspace gates pass; fuzz/mutation and final
+  immutable recheck remain pending. Reclaim only after fresh process/environment audit.
