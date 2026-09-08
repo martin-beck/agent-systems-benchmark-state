@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0309",
-  "next_action": "Resolve the maintained SDK/client boundary and exclude retired or enterprise-licensed components.",
+  "next_action": "Design a bounded Python shim against pinned OpenHands Software Agent SDK v1.45.0 and inspect its exact event, confirmation, metrics, persistence, and cancellation APIs.",
   "observed_branch": "feature/agent-openhands",
   "observed_dirty": 0,
   "observed_head": "3a07b57b8265d98eeebbcd4fd21339d72fac0663",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run a maintained MIT OpenHands SDK or canonical headless client.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Implement maintained OpenHands SDK client adapter",
-  "updated_at": "2026-09-08T03:50:41+00:00",
+  "updated_at": "2026-09-08T03:55:22+00:00",
   "worktree_key": "agent-systems-benchmark-agent-openhands"
 }
 ---
@@ -41,3 +41,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T03:50:41+00:00: Recorded command exit 0; command argv SHA-256
   07036c4ad1b996ca80da9bef22d326a3298e0fa2af6aa940f96f17b07676a4b3.
+
+- 2026-09-08T03:55:22+00:00: Official-source boundary resolved: use active MIT
+  OpenHands/software-agent-sdk v1.45.0, signed tag commit 49ea74587c376b90700f6eff128c3d9b57585d27
+  and tree 639a6850375c0d8e04c9f045a5a74c15fea0406c. Exclude OpenHands/OpenHands enterprise paths.
+  Do not use OpenHands-CLI 1.16.0 for this adapter: although MIT and maintained, its latest release
+  pins older SDK/tools 1.21.0 and documented headless operation is always-approve, so it cannot
+  expose the required bounded confirmation policy as cleanly as the SDK.
