@@ -7,7 +7,7 @@
     "AR-0401"
   ],
   "id": "AR-0403",
-  "next_action": "Assess Harbor/Terminal-Bench integration contract before implementing.",
+  "next_action": "Add a provenance-only Terminal-Bench v4 adapter record and fail-closed negatives; do not qualify or execute until selected Harbor package bytes, OCI image digest, reset behavior, and native oracle evidence are available.",
   "observed_branch": "feature/terminal-workloads",
   "observed_dirty": 0,
   "observed_head": "9feeba6524357df38e3ad118d4c3740306d3ec8e",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Import terminal tasks through an adapter to the published harness or task format.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Integrate Terminal-Bench workloads",
-  "updated_at": "2026-09-08T13:47:28+00:00",
+  "updated_at": "2026-09-08T13:48:28+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-workloads"
 }
 ---
@@ -42,3 +42,17 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T13:47:28+00:00: Recorded command exit 0; command argv SHA-256
   cbda25a19c0f65fc1cfa43f3caeeb406009c7c2c62a872b9f0cf2aef3318aec0.
+
+- 2026-09-08T13:48:28+00:00: Compatibility spike: pinned Terminal-Bench v4.0.0 at verified commit
+  452bf305c6daa62fc59061d22133a7cbc7c1572e (archive SHA-256
+  390ee198a0f02fcdf140ac21420e106ce98f26d5f028b3d16b73e2d5137ff392) and Harbor v0.22.0 at peeled
+  commit 4407eb5227a2ff4f0d3f16b2eb48849382fdf276 (archive SHA-256
+  04ec6b077d610896d75ed85b6b5ff88a9a241da6d528419acca66d2307329a21); both LICENSE files are
+  Apache-2.0 SHA-256 c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4. v4 dataset
+  manifest SHA-256 ecd296ba053840bd4c0068e8f84e8a6fa829d184d0fd9852becdc19f4c895fcf contains 66
+  content-addressed task refs and labels itself terminal-bench-3. Source audit: every verifier mode
+  is separate, no task declares network policy (Harbor default is public), and only 8/66 source
+  Dockerfiles pin a base image digest. Recomputed Harbor package hashes for sampled source trees did
+  not equal dataset package digests, so tag checkout bytes cannot substitute for acquired package
+  bytes. Native oracle/reset evidence is unavailable because this worker cannot access the Docker
+  socket; no support claim made.
