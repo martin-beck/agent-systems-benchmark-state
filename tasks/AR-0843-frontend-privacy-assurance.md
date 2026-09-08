@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify frontend privacy, artifact access, and fault behavior.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Assure frontend privacy and faults",
-  "updated_at": "2026-09-08T08:38:10+00:00",
+  "updated_at": "2026-09-08T08:39:36+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-privacy-assurance"
 }
 ---
@@ -95,3 +95,6 @@ redaction failures; prove no credentials, prompts, transcripts, or private paths
   in crates/asb-cli/src/control.rs. Narrow repair is a result-root dirfd plus component-wise
   O_DIRECTORY/O_NOFOLLOW opens and final O_NOFOLLOW regular-file hashing; no artifact content will
   cross the control boundary.
+
+- 2026-09-08T08:39:36+00:00: Recorded command exit 0; command argv SHA-256
+  10afc112a6f0ce31d3ae8b05dbe6e8e7aa28a9d28207efa757a9916a7dbefd93.
