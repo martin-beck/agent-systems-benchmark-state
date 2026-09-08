@@ -11,7 +11,7 @@
     "AR-0304"
   ],
   "id": "AR-1003",
-  "next_action": "Rerun focused locked tests after interval correction, then full workspace locked test/docs/release gates.",
+  "next_action": "Run bounded mutation, coverage, privacy, dependency-integrity and supply gates; prepare candidate with explicit local Kani installation limitation.",
   "observed_branch": "feature/execution-budgets",
   "observed_dirty": 12,
   "observed_head": "d56052d64b1e13b42a36e557b6a772381576a5bd",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bound and report wall time, actions, tokens and monetary cost without treating unavailable telemetry as zero.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Enforce cost token and action budgets",
-  "updated_at": "2026-09-08T10:09:57+00:00",
+  "updated_at": "2026-09-08T10:11:44+00:00",
   "worktree_key": "agent-systems-benchmark-execution-budgets"
 }
 ---
@@ -144,3 +144,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T10:09:57+00:00: Recorded command exit 1; command argv SHA-256
   8bcdbefa9dd7c0498a8b97732bbaffe5d833fc9c89d5ea8bc59308bd41bad56e.
+
+- 2026-09-08T10:11:44+00:00: Formal lock closure and local verifier classification:
+  formal/Cargo.lock changed by exactly one dependency line, adding asb-core to the existing
+  asb-analysis package, with no version/source/checksum churn. Offline regeneration and subsequent
+  locked formal Rust/Loom/production-trace suite passed. Local Kani 0.67.0 cannot start any proof:
+  cargo-kani resolves its internal cargo under its default Kani home toolchain/bin/cargo, which is
+  absent; strace confirmed execve ENOENT. Adding the pinned stable toolchain to PATH does not affect
+  this absolute internal path. This is an incomplete local verifier installation, not a source
+  failure; no further retries. An isolated pinned cargo-kani setup under an external KANI_HOME is
+  the corrective operation if authorized. Continue bounded mutation, coverage, privacy, dependency
+  and supply gates; retain hosted formal CI as separate evidence.
