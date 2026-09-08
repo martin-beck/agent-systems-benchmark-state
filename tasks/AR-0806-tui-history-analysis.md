@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-08T23:16:43+00:00",
+  "updated_at": "2026-09-08T23:17:40+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
@@ -153,3 +153,6 @@ Implementation has not started. Read the linked plan before claiming.
   34289825742, 34289825756, 34289825759, 34289825767, 34289825794, 34289825810), but those cannot
   authorize integration against the unreviewed advanced base. Merge is held fail-closed; AR-0875
   limitation remains explicit.
+
+- 2026-09-08T23:17:40+00:00: Recorded command exit 0; command argv SHA-256
+  1d644840a760ad7aa74acfb369f0e7eb94456b92fb9fe6322ef9d2c80210c43c.
