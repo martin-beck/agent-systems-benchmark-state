@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Select several agents and apply one preconfigured provider profile through inspectable command-line options.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Add CLI multi-agent provider selection",
-  "updated_at": "2026-09-08T21:50:31+00:00",
+  "updated_at": "2026-09-08T21:50:53+00:00",
   "worktree_key": "agent-systems-benchmark-cli-multi-agent-provider-selection"
 }
 ---
@@ -93,3 +93,9 @@ Implementation has not started. Read the linked plan before claiming.
   two-agent OpenAI plan round trip passed with stable opendesk/codex order, 64-byte selection
   identity and no supplied reference digest in output. Remaining criteria are persisted in
   next_action; no candidate/publication yet.
+
+- 2026-09-08T21:50:53+00:00: Correction to prior durable checkpoint: shell command substitution
+  stripped four literal CLI names from the note only; product tests and files were unaffected. The
+  implemented commands are provider-catalog and provider-plan. Provider-plan accepts bounded
+  repeated --agent and exactly one --provider-profile, with the behavior and green results recorded
+  in the preceding note. This is an operator-only state-note formatting correction.
