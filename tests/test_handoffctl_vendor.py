@@ -1,5 +1,6 @@
 """Project-bound conformance tests for the vendored coordinator snapshot tool."""
 
+import hashlib
 import importlib.util
 import json
 import os
@@ -18,6 +19,26 @@ if SPEC is None or SPEC.loader is None:
     raise RuntimeError("cannot load vendor tool")
 VENDOR: Any = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(VENDOR)
+
+ATTESTATION = ROOT / "docs/coordinator-merge-attestation.md"
+MERGE = "e52ce3aaa59ffc4cc6f97657b6ea2c7dfceb2ac1"
+MERGE_PARENTS = "b90f28ccaa300c9ccca0167cee97925b211d2844 e4fecc1e65e640d436e4d01b8418fb7dc73c7c4e"
+MERGE_TREE = "37ba9d70bdb25b61a66ae0c58c5b6e370cddfcce"
+PR_HEAD = "e4fecc1e65e640d436e4d01b8418fb7dc73c7c4e"
+PR_HEAD_TREE = "600b2d960e16cb5b144ec0db8b1e833f7fe797a0"
+UPSTREAM_COMMIT = "9733b341f25b145d6dfad8414933cb6348701769"
+MANIFEST_SHA256 = "60d7c3c634c14f6df34874ace6044e9058a3621f78d51491407f9ed5aa0c871a"
+ATTESTED_IDENTITIES = {
+    "Pull request": "https://github.com/martin-beck/agent-systems-benchmark-state/pull/10",
+    "Pull-request head": PR_HEAD,
+    "Pull-request head tree": PR_HEAD_TREE,
+    "Published merge": MERGE,
+    "Merge parents, in order": MERGE_PARENTS,
+    "Merge tree": MERGE_TREE,
+    "Upstream signed tag object": "bd786b124a0e9ec926247e4c1de17ef4bbb84c0d",
+    "Upstream signed release commit": UPSTREAM_COMMIT,
+    "Installed vendor manifest SHA-256": MANIFEST_SHA256,
+}
 
 
 class VendorTest(unittest.TestCase):
@@ -39,6 +60,28 @@ class VendorTest(unittest.TestCase):
 
     def tearDown(self) -> None:
         self.temporary.cleanup()
+
+    def test_additive_merge_attestation_is_exact_and_honest(self) -> None:
+        text = ATTESTATION.read_text()
+        observed: dict[str, str] = {}
+        for line in text.splitlines():
+            columns = [column.strip() for column in line.split("|")]
+            if len(columns) == 4 and columns[1] in ATTESTED_IDENTITIES:
+                value = columns[2]
+                self.assertTrue(value.startswith("`") and value.endswith("`"))
+                observed[columns[1]] = value[1:-1]
+        self.assertEqual(ATTESTED_IDENTITIES, observed)
+        self.assertEqual(PR_HEAD, MERGE_PARENTS.split()[1])
+        for identity in (MERGE, MERGE_TREE, PR_HEAD, PR_HEAD_TREE, UPSTREAM_COMMIT):
+            self.assertRegex(identity, r"^[0-9a-f]{40}$")
+        self.assertIn("does **not** add", text)
+        self.assertIn("rather than rewriting public history", text)
+        self.assertIn("not an independent cryptographic proof", text)
+        manifest_bytes = (ROOT / VENDOR.LOCK_NAME).read_bytes()
+        self.assertEqual(MANIFEST_SHA256, hashlib.sha256(manifest_bytes).hexdigest())
+        manifest = json.loads(manifest_bytes)
+        self.assertEqual("v0.1.4", manifest["upstream"]["version"])
+        self.assertEqual(UPSTREAM_COMMIT, manifest["upstream"]["commit"])
 
     def test_sync_verify_and_detect_tampering(self) -> None:
         commit = "a" * 40
