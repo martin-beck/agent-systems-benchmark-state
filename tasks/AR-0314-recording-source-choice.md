@@ -12,7 +12,7 @@
     "AR-0318"
   ],
   "id": "AR-0314",
-  "next_action": "Monitor PR #81 exact head e8fed7e/base 33f30cb required checks to terminal; investigate any failure and do not merge without full green matrix and coordinator authorization.",
+  "next_action": "Hold release. Product main e0554b5590cd53adf210837d88d1068d3781e2a4 contains PR #81, but exact-main repository-quality run 34241104757 failed because the GitHub-created merge commit lacks a matching Signed-off-by trailer. Await authorization for an additive signed+DCO policy-repair commit, then require fresh exact-main full CI and clean reconciliation.",
   "observed_branch": "feature/provider-recording-choice",
   "observed_dirty": 0,
   "observed_head": "e8fed7e572b6bf9d14d76f15b91b7cb208e2d48b",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Offer matching prior recordings or an actual provider connection without silently choosing either.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Choose matching replay or live provider execution",
-  "updated_at": "2026-09-08T14:52:57+00:00",
+  "updated_at": "2026-09-08T14:54:18+00:00",
   "worktree_key": "agent-systems-benchmark-provider-recording-choice"
 }
 ---
@@ -194,3 +194,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T14:52:57+00:00: Recorded command exit 1; command argv SHA-256
   4fd5448c40f8a628a4903661bbcfe23d7a967aa53ad030c216b58bbdecb9f12e.
+
+- 2026-09-08T14:54:18+00:00: Postmerge failure classification: PR #81 was concurrently merged as
+  e0554b5590cd53adf210837d88d1068d3781e2a4 with exact parents
+  33f30cb7d88aa8d3c323895154c8237d1763c6b8 and e8fed7e572b6bf9d14d76f15b91b7cb208e2d48b.
+  Repository-quality run 34241104757 failed in repository_policy.py: merge e0554b5 lacks a matching
+  Signed-off-by trailer. This is integration metadata, not product/test behavior. Two guarded local
+  merge attempts exited before mutation (first ambiguous FETCH_HEAD assertion; second exact-base
+  assertion after origin/main advanced). Product worktree remains clean at 33f30cb behind
+  origin/main. No history rewrite or retry performed; release held.
