@@ -25,9 +25,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make supported agent installations reproducible, license-audited, SBOM-backed, and independently verifiable.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Publish reproducible agent runtime bundles",
-  "updated_at": "2026-09-08T11:37:45+00:00",
+  "updated_at": "2026-09-08T11:39:03+00:00",
   "worktree_key": "agent-systems-benchmark-agent-runtime-bundles"
 }
 ---
@@ -106,3 +106,6 @@ Implementation has not started. Read the linked plan before claiming.
   malformed external patch target; scope was immediately inspected, all subsequent
   completion/fixes/tests/staging/commit used handoffctl, and the exact final tree is clean and
   reviewable. Corrected OpenDesk license evidence to MulanPSL-2.0 from durable AR-0302 provenance.
+
+- 2026-09-08T11:39:03+00:00: Recorded command exit 0; command argv SHA-256
+  f84751cb813d5060a10e4aed79d1ef32800e2e359fca8dc16daab90819436b1c.
