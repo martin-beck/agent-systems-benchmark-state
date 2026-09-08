@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0309",
-  "next_action": "Hold immutable rebased OpenHands candidate e73767d unpublished for coordinator independent review; publish only after explicit approval.",
+  "next_action": "Await coordinator disposition for main advancement to 123c58f after approval of e73767d; do not publish or perform another rebase without explicit authorization.",
   "observed_branch": "feature/agent-openhands",
   "observed_dirty": 0,
   "observed_head": "e73767d959a0c640685deaf84335be84649df7c0",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run a maintained MIT OpenHands SDK or canonical headless client.",
-  "task_revision": 114,
+  "task_revision": 115,
   "title": "Implement maintained OpenHands SDK client adapter",
-  "updated_at": "2026-09-08T06:42:29+00:00",
+  "updated_at": "2026-09-08T06:43:38+00:00",
   "worktree_key": "agent-systems-benchmark-agent-openhands"
 }
 ---
@@ -385,3 +385,10 @@ Implementation has not started. Read the linked plan before claiming.
   subsequent exact records and this note preserve the outcome. An initial native invocation used a
   nonexistent exact filter and selected zero tests; it was immediately replaced by the correct exact
   ignored test, which passed. Worktree is clean; no blocker remains beyond immutable review.
+
+- 2026-09-08T06:43:38+00:00: Publication preflight stopped before mutation: local candidate remains
+  clean exact e73767d959a0c640685deaf84335be84649df7c0, remote feature branch absent, and no
+  existing PR. However product origin/main advanced after immutable review from approved base
+  7a435fb6a4acc59300771b8478ee342f72555c96 to signed merge 123c58f7a971f210873124fccb31daa16139aab4
+  (executable offline guides; README, CLI guide test, docs only). No branch push or PR creation
+  occurred.
