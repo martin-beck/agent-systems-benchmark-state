@@ -2,7 +2,7 @@
 {
   "branch": "feature/terminal-workloads",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T15:37:57+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0401"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/terminal-workloads",
   "observed_dirty": 0,
   "observed_head": "e0da4efd375080c774cff91a8eef694d93e14132",
-  "owner": "replay_20260906",
+  "owner": "",
   "plan": "../plans/AR-0403.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Import terminal tasks through an adapter to the published harness or task format.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Integrate Terminal-Bench workloads",
-  "updated_at": "2026-09-08T14:01:06+00:00",
+  "updated_at": "2026-09-08T15:40:40+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-workloads"
 }
 ---
@@ -102,3 +102,7 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-08T14:01:06+00:00: Signed checkpoint e0da4efd has clean exact scope, SSH signature and
   DCO. It pins Terminal-Bench v4/Harbor provenance, adds fail-closed registry validation and
   negative fixtures; no execution/native qualification claim is made.
+
+- 2026-09-08T15:40:40+00:00: Recovered expired claim formerly owned by replay_20260906. Recovered
+  expired inactive claim during coordinator validation; no AR-0403 product or external action
+  repeated.
