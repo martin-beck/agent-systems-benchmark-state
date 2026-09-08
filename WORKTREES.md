@@ -69,4 +69,5 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `3bcfd85dedd3` | 0 | behind 161, ahead 0 |
 | `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `410ecc95b80e` | 0 | behind 149, ahead 0 |
 | `agent-systems-benchmark-terminal-interface` | `feature/terminal-interface` | `d2e7b66ff6af` | 0 | behind 94, ahead 0 |
-| `agent-systems-benchmark-verifier-integrity` | `feature/verifier-integrity` | `3a07b57b8265` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-verifier-integrity` | `feature/verifier-integrity` | `3a07b57b8265` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-workloads/src/lib.rs` |
