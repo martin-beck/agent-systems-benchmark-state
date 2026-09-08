@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Guide users through agents, providers, workloads, resources, replay, metrics, and output settings.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Build the terminal settings wizard",
-  "updated_at": "2026-09-08T15:37:36+00:00",
+  "updated_at": "2026-09-08T15:43:37+00:00",
   "worktree_key": "agent-systems-benchmark-tui-settings-wizard"
 }
 ---
@@ -157,3 +157,6 @@ Implementation has not started. Read the linked plan before claiming.
   76497db8f22c43762f0b5bcbc7f2549c1d17281d. GitHub reports OPEN/MERGEABLE; AWQ run 34245893935
   already succeeded and all five required workflows are active. Preserve limitations: no Launch API,
   transport wiring, or full-screen terminal rendering claim.
+
+- 2026-09-08T15:43:37+00:00: Recorded command exit 0; command argv SHA-256
+  52e3c6c6ea3012e5b61ab57a813a60c9a3d653a9abefbdabbdd1504b2162e67b.
