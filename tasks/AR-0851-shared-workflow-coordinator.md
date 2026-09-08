@@ -2,19 +2,19 @@
 {
   "branch": "feature/shared-workflow-coordinator",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T08:56:54+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-0851",
   "next_action": "Rebase the immutable v0.1.3 integration tree onto current state main under coordinator serialization, rerun exact-tree gates, and present a signed review candidate; do not publish or merge before review.",
-  "owner": "codex-agent-workflow-coordinator-asb-20260908",
+  "owner": "",
   "plan": "../plans/AR-0851.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Adopt the canonical coordinator as a pinned offline-capable vendor artifact while preserving ASB extensions.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Adopt shared workflow coordinator",
-  "updated_at": "2026-09-08T07:13:35+00:00",
+  "updated_at": "2026-09-08T07:16:19+00:00",
   "worktree_key": "agent-systems-benchmark-shared-coordinator"
 }
 ---
@@ -176,3 +176,12 @@ ASB integration, compatibility evidence, and version pin.
 
 - 2026-09-08T07:13:35+00:00: Recorded command exit 0; command argv SHA-256
   bde58d65ab00b02fd3e0397dc1284bfc12011ddd2978ed2dad48d571998f9be6.
+
+- 2026-09-08T07:16:19+00:00: Released AR-0851 after reviewed PR 9 exact head
+  ac6571b5e27c32a6c88c288ecac988abd0f098eb merged by SSH-signed+DCO no-ff commit
+  3491a064438fe2f292127b6336c840a935b70271. Exact-merge hosted coordination run 34197953813 and
+  formal run 34197953815 passed. Postmerge offline vendor verification pins signed v0.1.3 tag and
+  signed+DCO upstream 72465e6febe987491203564c8e7251ef8f882955; format, Ruff, mypy, 53 tests,
+  schema, 97 percent branch coverage with vendor module 100 percent, and TLC models including
+  10,368,606 distinct states passed. Snapshot and live doctor passed. Feature-only v0.1.4 e4fecc1e
+  was explicitly excluded.
