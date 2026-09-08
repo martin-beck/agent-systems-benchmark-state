@@ -64,7 +64,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-provider-credential-integration` | `feature/provider-credential-integration` | `0f92642fc870` | 0 | behind 6, ahead 0 |
 | `agent-systems-benchmark-provider-ollama` | `feature/provider-ollama` | `8137f5baa053` | 0 | behind 50, ahead 0 |
 | `agent-systems-benchmark-provider-openai` | `feature/provider-openai` | `1128595cd2f9` | 0 | behind 45, ahead 0 |
-| `agent-systems-benchmark-provider-parity-conformance` | `test/provider-parity-conformance` | `76497db8f22c` | 1 | behind 2, ahead 0 |
+| `agent-systems-benchmark-provider-parity-conformance` | `test/provider-parity-conformance` | `d51ee9c9ab88` | 1 | behind 0, ahead 0 |
 | changed files | - | - | - | `crates/asb-agents/tests/provider_parity.rs` |
 | `agent-systems-benchmark-provider-profile-contract` | `feature/provider-profile-contract` | `2870b68d0ca0` | 0 | behind 181, ahead 0 |
 | `agent-systems-benchmark-provider-recording-choice` | `feature/provider-recording-choice` | `e8fed7e572b6` | 0 | behind 4, ahead 0 |
