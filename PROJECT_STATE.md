@@ -17,15 +17,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34222428419 | `84b130274f5e` | push | Formal assurance | pending:- |
-| 34222428397 | `84b130274f5e` | push | Rust verification | pending:- |
-| 34222428392 | `84b130274f5e` | push | Fault assurance | pending:- |
-| 34222428389 | `84b130274f5e` | push | Repository quality | in_progress:- |
+| 34222428419 | `84b130274f5e` | push | Formal assurance | in_progress:- |
+| 34222428397 | `84b130274f5e` | push | Rust verification | in_progress:- |
+| 34222428392 | `84b130274f5e` | push | Fault assurance | in_progress:- |
+| 34222428389 | `84b130274f5e` | push | Repository quality | completed:failure |
 | 34222428381 | `84b130274f5e` | push | Emulated aarch64 portability | in_progress:- |
 | 34222389503 | `17e4d097adeb` | push | Emulated aarch64 portability | completed:cancelled |
-| 34222389495 | `17e4d097adeb` | push | Fault assurance | in_progress:- |
-| 34222389481 | `17e4d097adeb` | push | Formal assurance | in_progress:- |
-| 34222389451 | `17e4d097adeb` | push | Rust verification | in_progress:- |
+| 34222389495 | `17e4d097adeb` | push | Fault assurance | completed:cancelled |
+| 34222389481 | `17e4d097adeb` | push | Formal assurance | completed:cancelled |
+| 34222389451 | `17e4d097adeb` | push | Rust verification | completed:cancelled |
 | 34222389450 | `17e4d097adeb` | push | Repository quality | completed:failure |
 | 34221835631 | `1249fd87d46d` | pull_request | Formal assurance | completed:success |
 | 34221835172 | `1249fd87d46d` | pull_request | Agent Workflow Quality shadow | completed:success |
