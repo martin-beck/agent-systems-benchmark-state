@@ -10,18 +10,18 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #31 | `feature/native-platforms@bdaf9c108226` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
+| #31 | `feature/native-platforms@bdaf9c108226` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34289797808 | `3514089fa378` | push | Fault assurance | queued:- |
-| 34289797724 | `3514089fa378` | push | Formal assurance | queued:- |
+| 34289797808 | `3514089fa378` | push | Fault assurance | in_progress:- |
+| 34289797724 | `3514089fa378` | push | Formal assurance | in_progress:- |
 | 34289797723 | `3514089fa378` | push | Emulated aarch64 portability | in_progress:- |
-| 34289797699 | `3514089fa378` | push | Huawei MIT source headers | in_progress:- |
+| 34289797699 | `3514089fa378` | push | Huawei MIT source headers | completed:success |
 | 34289797685 | `3514089fa378` | push | Repository quality | in_progress:- |
-| 34289797677 | `3514089fa378` | push | Rust verification | queued:- |
+| 34289797677 | `3514089fa378` | push | Rust verification | in_progress:- |
 | 34288784512 | `fb2adac65f10` | pull_request | Formal assurance | completed:success |
 | 34288784445 | `fb2adac65f10` | pull_request | Fault assurance | completed:success |
 | 34288784435 | `fb2adac65f10` | pull_request | Rust verification | completed:success |
