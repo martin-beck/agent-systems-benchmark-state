@@ -2,7 +2,7 @@
 {
   "branch": "fix/huawei-mit-license-headers",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T15:55:21+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "fix/huawei-mit-license-headers",
   "observed_dirty": 159,
   "observed_head": "d8e9d0af21a0f5f29d2b1076f33ce8153e1d26fc",
-  "owner": "asb-license-20260908",
+  "owner": "",
   "plan": "../plans/AR-0855.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Enforce Huawei MIT source headers",
-  "updated_at": "2026-09-08T14:29:46+00:00",
+  "updated_at": "2026-09-08T14:41:05+00:00",
   "worktree_key": "agent-systems-benchmark-huawei-mit-headers"
 }
 ---
@@ -87,3 +87,7 @@ and fresh coordinator snapshot before claiming. Do not modify vendored coordinat
 
 - 2026-09-08T14:29:46+00:00: Recorded command exit 0; command argv SHA-256
   158c466d2347e4d3b024aba256dd8b4189c32a7cb241237cfb062ef8e51fdd20.
+
+- 2026-09-08T14:41:05+00:00: Takeover authorized after inspecting durable worktree d8e9d0af:
+  preserve 156 tracked header edits, new checker test/workflow and repository_policy.py.rej until
+  reconciled; no prior external publication observed.
