@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**123 ARs tracked** across 5 active status categories.
+**123 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 4 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 5 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 53 |
 | **Future** | Deferred roadmap work | 0 |
@@ -162,7 +162,7 @@ flowchart LR
         AR_0848["AR-0848 - Done"]:::status_done
         AR_0849["AR-0849 - Done"]:::status_done
         AR_0850["AR-0850 - Done"]:::status_done
-        AR_0851["AR-0851 - Open"]:::status_open
+        AR_0851["AR-0851 - In progress"]:::status_in_progress
     end
     subgraph series_09["09 - Assurance"]
         direction TB
@@ -725,20 +725,15 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
+| P1 | [AR-0851](tasks/AR-0851-shared-workflow-coordinator.md): Adopt shared workflow coordinator | codex-agent-workflow-coordinator-20260908 | Adopt the canonical coordinator as a pinned offline-capable vendor artifact while preserving ASB extensions. | After the canonical public release is verified, vendor its pinned artifact and run ASB-specific conformance, fault, race, renderer, schema, and live checks. |
 | P1 | [AR-1002](tasks/AR-1002-verifier-integrity.md): Protect verifiers and support offline rescoring | replay_20260906 | Separate immutable graders from agent work and version scoring independently of execution. | Independently review immutable candidate 3fc65ea73badcea31497e53644fdad8778115870; publish only after approval, then require exact-head CI. |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | quality_20260906 | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary. |
 | P2 | [AR-0309](tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | contracts_20260906 | Run a maintained MIT OpenHands SDK or canonical headless client. | Extend checkpoint 725c40b with malformed-evidence, symlink, cancellation, action-ceiling and cleanup negatives, then request the serialized lib.rs registration fence. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0851](tasks/AR-0851-shared-workflow-coordinator.md): Adopt shared workflow coordinator | Unclaimed | Adopt the canonical coordinator as a pinned offline-capable vendor artifact while preserving ASB extensions. | After the canonical public release is verified, vendor its pinned artifact and run ASB-specific conformance, fault, race, renderer, schema, and live checks. |
 
 ### Blocked (4)
 
