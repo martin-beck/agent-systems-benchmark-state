@@ -37,7 +37,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-external-code-workloads` | `feature/external-code-workloads` | `123c58f7a971` | 0 | behind 27, ahead 0 |
 | `agent-systems-benchmark-fault-assurance` | `feature/fault-assurance` | `e6c623113c15` | 0 | behind 126, ahead 0 |
 | `agent-systems-benchmark-formal-assurance` | `feature/formal-assurance` | `2a495a99a657` | 0 | behind 172, ahead 0 |
-| `agent-systems-benchmark-frontend-api-integration` | `feature/frontend-api-integration` | `4523da9629ff` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-frontend-api-integration` | `feature/frontend-api-integration` | `4523da9629ff` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-cli/src/control.rs` |
 | `agent-systems-benchmark-frontend-control-api` | `feature/frontend-control-api` | `cbb764c45c61` | 20 | behind 118, ahead 1 |
 | changed files | - | - | - | `Cargo.lock`, `crates/asb-cli/Cargo.toml`, `crates/asb-cli/src/lib.rs`, `crates/asb-control/Cargo.toml`, `crates/asb-control/README.md`, `crates/asb-control/examples/generate_schema.rs`, `crates/asb-control/fixtures/v1/success-response.json`, `crates/asb-control/schema/v1/event.schema.json`, `crates/asb-control/schema/v1/request.schema.json`, `crates/asb-control/schema/v1/response.schema.json`, `crates/asb-control/src/endpoint.rs`, `crates/asb-control/src/lib.rs`, `crates/asb-control/src/protocol.rs`, `crates/asb-control/src/state.rs`, `crates/asb-control/tests/control.rs`, `crates/asb-control/tests/endpoint.rs`, `crates/asb-control/tests/schema_conformance.rs`, `docs/FRONTEND_CONTROL_API.md`, `crates/asb-cli/src/control.rs`, `crates/asb-control/src/schema.rs` |
 | `agent-systems-benchmark-frontend-control-api-repair` | `feature/frontend-control-api-repair` | `0d2534f614cd` | 0 | behind 48, ahead 0 |
@@ -85,6 +86,6 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `3bcfd85dedd3` | 0 | behind 194, ahead 0 |
 | `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `410ecc95b80e` | 0 | behind 182, ahead 0 |
 | `agent-systems-benchmark-terminal-interface` | `feature/terminal-interface` | `d2e7b66ff6af` | 0 | behind 127, ahead 0 |
-| `agent-systems-benchmark-trace-interoperability` | `feature/trace-interoperability` | `5c7b14d060f5` | 2 | behind 0, ahead 1 |
-| changed files | - | - | - | `contracts/v1/catalog.json`, `docs/CONTRACT_CATALOG.md` |
+| `agent-systems-benchmark-trace-interoperability` | `feature/trace-interoperability` | `5c7b14d060f5` | 4 | behind 0, ahead 1 |
+| changed files | - | - | - | `contracts/v1/catalog.json`, `docs/CONTRACT_CATALOG.md`, `tools/quality/contract_consistency.py`, `tools/quality/test_contract_consistency.py` |
 | `agent-systems-benchmark-verifier-integrity` | `feature/verifier-integrity` | `3fc65ea73bad` | 0 | behind 32, ahead 0 |

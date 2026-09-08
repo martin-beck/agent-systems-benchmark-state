@@ -11,7 +11,7 @@
   "id": "AR-1005",
   "next_action": "Harden the projection to canonical OTLP JSON attribute encoding and pseudonymized causal identifiers, add explicit secret-like label redaction and contention/backpressure negatives, then run focused/full gates.",
   "observed_branch": "feature/trace-interoperability",
-  "observed_dirty": 2,
+  "observed_dirty": 4,
   "observed_head": "5c7b14d060f5b7035f97606a9407b8fdf5f76555",
   "owner": "quality_20260906",
   "plan": "../plans/AR-1005.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose stable causal ASB events and optional standards-based telemetry without binding storage to an evolving convention.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Export interoperable privacy-safe traces",
-  "updated_at": "2026-09-08T10:49:37+00:00",
+  "updated_at": "2026-09-08T10:50:25+00:00",
   "worktree_key": "agent-systems-benchmark-trace-interoperability"
 }
 ---
