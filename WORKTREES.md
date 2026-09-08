@@ -31,7 +31,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-emulated-aarch64-portability` | `feature/emulated-aarch64-portability` | `0e6d74d2cf9f` | 0 | behind 37, ahead 0 |
 | `agent-systems-benchmark-engineering-workloads` | `feature/engineering-workloads` | `41ffc6eb8f1a` | 0 | behind 141, ahead 0 |
 | `agent-systems-benchmark-executable-guides` | `feature/executable-guides` | `5b62f9e7ef9d` | 0 | behind 19, ahead 0 |
-| `agent-systems-benchmark-execution-budgets` | `feature/execution-budgets` | `d56052d64b1e` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-execution-budgets` | `feature/execution-budgets` | `d56052d64b1e` | 2 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-core/src/lib.rs`, `crates/asb-core/src/budget.rs` |
 | `agent-systems-benchmark-experiment-comparability` | `feature/experiment-comparability` | `eb5e84933830` | 0 | behind 151, ahead 0 |
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 205, ahead 0 |
 | `agent-systems-benchmark-external-code-workloads` | `feature/external-code-workloads` | `123c58f7a971` | 0 | behind 18, ahead 0 |
