@@ -12,7 +12,7 @@
   "id": "AR-0805",
   "next_action": "Fresh independent immutable review of repaired unpublished candidate c8336909ae6de887d8146f59224dd21efff58b52 against exact parent b2707c482876dcfb42c756c39165f6ecdb5c7c10. Review the five prior blockers and one-file scope before publication. Preserve explicit protocol/resource/native evidence gaps and AR-0855 header lines.",
   "observed_branch": "feature/tui-run-control",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "c8336909ae6de887d8146f59224dd21efff58b52",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0805.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T17:41:38+00:00",
+  "updated_at": "2026-09-08T17:41:43+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
