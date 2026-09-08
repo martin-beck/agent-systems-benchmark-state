@@ -2,7 +2,7 @@
 {
   "branch": "feature/provider-recording-choice",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T17:10:44+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0104",
     "AR-0310",
@@ -16,15 +16,15 @@
   "observed_branch": "feature/provider-recording-choice",
   "observed_dirty": 0,
   "observed_head": "1d0e521690e688ee50fc099d0cb38b440dfea6b3",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0314.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Offer matching prior recordings or an actual provider connection without silently choosing either.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Choose matching replay or live provider execution",
-  "updated_at": "2026-09-08T14:15:56+00:00",
+  "updated_at": "2026-09-08T14:16:57+00:00",
   "worktree_key": "agent-systems-benchmark-provider-recording-choice"
 }
 ---
@@ -121,3 +121,7 @@ Implementation has not started. Read the linked plan before claiming.
   live preflight would be false. The independently reported asb-replay 91/91 suite remains green.
   Exact blocker is missing product integration of the released dependency, not credential lookup or
   provider behavior.
+
+- 2026-09-08T14:16:57+00:00: Exact blocker proven: AR-0318 resolver commit is not integrated into
+  product main or AR-0314 candidate. Preserve clean AR-0314 checkpoint; unblock only after AR-0320
+  product integration, then rebase and run synthetic environment preflight.
