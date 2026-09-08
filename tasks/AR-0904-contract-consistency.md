@@ -8,7 +8,7 @@
     "AR-1001"
   ],
   "id": "AR-0904",
-  "next_action": "Add a closed repository-wide contract catalog, deterministic generated catalog document, and fail-closed registry tests; then run the registered Rust schema/fixture/control conformance commands.",
+  "next_action": "Integrate the contract-consistency checker into the required quality workflow/failure-fixture gate, add semantic compatibility and generated capability/support-table coverage, then run focused/full gates.",
   "observed_branch": "feature/contract-consistency",
   "observed_dirty": 4,
   "observed_head": "a97c3ed708cc16522383ecde41ec9fa2e642bc61",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Machine-check protocol and artifact consistency",
-  "updated_at": "2026-09-08T09:21:39+00:00",
+  "updated_at": "2026-09-08T09:22:00+00:00",
   "worktree_key": "agent-systems-benchmark-contract-consistency"
 }
 ---
@@ -80,3 +80,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T09:21:39+00:00: Recorded command exit 0; command argv SHA-256
   d24fdb427e8404a01124a837e23dec87902d13fbf53b18d539cf30e408843a9b.
+
+- 2026-09-08T09:22:00+00:00: Substantive AR-0904 implementation checkpoint at clean base
+  a97c3ed708cc16522383ecde41ec9fa2e642bc61 with four intended untracked paths:
+  contracts/v1/catalog.json, tools/quality/contract_consistency.py,
+  tools/quality/test_contract_consistency.py, docs/CONTRACT_CATALOG.md. The closed registry enrolls
+  every one of the 14 discovered Rust-owned v1 schemas across
+  protocol/control/replay/bundle/workloads, 20 positive JSON examples, a named Rust round-trip gate
+  per contract, and six exact conformance commands. Determатар? skeleton no.
