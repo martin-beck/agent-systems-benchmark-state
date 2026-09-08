@@ -10,7 +10,7 @@
     "AR-0869"
   ],
   "id": "AR-0870",
-  "next_action": "Implement and qualify searchable TUI lists for multi-agent and shared provider-profile selection.",
+  "next_action": "Monitor exact-head PR #91; investigate any required failure immediately, then perform immutable review, signed no-ff merge and post-merge verification.",
   "observed_branch": "feature/tui-multi-agent-provider-selection",
   "observed_dirty": 0,
   "observed_head": "6c13a324e38f913e3085db32a6e1a2b8c48c6d38",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Choose several agents and one preconfigured provider for all of them from negotiated TUI selection lists.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Add TUI multi-agent provider selection",
-  "updated_at": "2026-09-08T23:41:07+00:00",
+  "updated_at": "2026-09-08T23:41:36+00:00",
   "worktree_key": "agent-systems-benchmark-tui-multi-agent-provider-selection"
 }
 ---
@@ -75,3 +75,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T23:41:07+00:00: Recorded command exit 0; command argv SHA-256
   92d869ff29b8ee0e7807ae7cbe595c246ec209b02fa099190ab28f711c54e1a9.
+
+- 2026-09-08T23:41:36+00:00: Signed implementation 6c13a32 is published in PR #91 against exact main
+  2219839. It adds negotiated multi-agent selection, one shared provider profile with complete
+  compatibility filtering, bounded search/toggle/clear/backtracking, canonical privacy-safe review
+  and explicit plan confirmation, with 16 focused tests plus rustfmt/diff/header-policy evidence.
+  Exact-head CI is running.
