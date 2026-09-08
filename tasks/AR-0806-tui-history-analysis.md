@@ -10,7 +10,7 @@
     "AR-1001"
   ],
   "id": "AR-0806",
-  "next_action": "PR #89 is at approved 031a4516cbb3addc184ab3c4b0f4c683aa14755d, but base/main advanced from reviewed 3514089fa378bd50629c9794b215fd53c8ea7d5d to 2219839812d9255288b8b4e0afc52396915e85a6. Hold merge. After exact-head CI finishes, rebase onto current main and obtain fresh exact-base review.",
+  "next_action": "Fresh independent immutable review of second rebased candidate 2dbbde184ef78a93b63ec1a3b5eb5b02bca0d269, tree bb552eb2663f31bdd650ac69bb0198f2ce253155, exact parent/current origin/main 2219839812d9255288b8b4e0afc52396915e85a6. Verify '=' range-diff from 031a451, clean two-path scope, signature/DCO, gates, duplicate-page atomicity and AR-0875 limit; then exact force-with-lease PR #89 update and fresh exact-head CI.",
   "observed_branch": "feature/tui-history-analysis",
   "observed_dirty": 0,
   "observed_head": "2dbbde184ef78a93b63ec1a3b5eb5b02bca0d269",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-08T23:50:47+00:00",
+  "updated_at": "2026-09-08T23:51:07+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
@@ -210,3 +210,12 @@ Implementation has not started. Read the linked plan before claiming.
   82b6b7b7b306b2946c6a274804edf37504d9a92c55109a19feda9ab217c8826d.
 
 - 2026-09-08T23:50:47+00:00: Heartbeat by quality_20260906.
+
+- 2026-09-08T23:51:07+00:00: Prior PR #89 replacement-head CI for 031a451 completed with all 14
+  checks successful: runs 34291485214, 34291485216, 34291485233, 34291485236, 34291485275,
+  34291485277, 34291485291. Per authorization, rebased onto exact live main
+  2219839812d9255288b8b4e0afc52396915e85a6. New clean signed+DCO candidate
+  2dbbde184ef78a93b63ec1a3b5eb5b02bca0d269, tree bb552eb2663f31bdd650ac69bb0198f2ce253155;
+  range-diff from 031a451 is exact '=' and scope remains README plus lib.rs. Fresh fmt, workspace
+  Clippy -D warnings, workspace tests, rustdoc -D warnings, release build, signature, repository
+  policy, diff-check and Gitleaks all pass. PR remains at 031a451 pending fresh immutable review.
