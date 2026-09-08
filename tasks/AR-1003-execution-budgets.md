@@ -13,7 +13,7 @@
   "id": "AR-1003",
   "next_action": "Rerun focused locked tests after interval correction, then full workspace locked test/docs/release gates.",
   "observed_branch": "feature/execution-budgets",
-  "observed_dirty": 11,
+  "observed_dirty": 12,
   "observed_head": "d56052d64b1e13b42a36e557b6a772381576a5bd",
   "owner": "replay_20260906",
   "plan": "../plans/AR-1003.md",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bound and report wall time, actions, tokens and monetary cost without treating unavailable telemetry as zero.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Enforce cost token and action budgets",
-  "updated_at": "2026-09-08T10:07:16+00:00",
+  "updated_at": "2026-09-08T10:08:01+00:00",
   "worktree_key": "agent-systems-benchmark-execution-budgets"
 }
 ---
