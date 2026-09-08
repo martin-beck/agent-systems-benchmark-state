@@ -2,7 +2,7 @@
 {
   "branch": "feature/all-agents-provider",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T14:13:55+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0311",
     "AR-0312"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/all-agents-provider",
   "observed_dirty": 0,
   "observed_head": "03962f28571e79403740b560a769e1a3b171e685",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0313.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Let test plans select one provider profile for every chosen supported agent atomically.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Configure one provider for all agents",
-  "updated_at": "2026-09-08T12:05:13+00:00",
+  "updated_at": "2026-09-08T12:12:03+00:00",
   "worktree_key": "agent-systems-benchmark-all-agents-provider"
 }
 ---
@@ -148,3 +148,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T12:05:13+00:00: Recorded command exit 1; command argv SHA-256
   cc83aae11a56b49bc95dd88e211cd96aa9ac132000195853d9f7da4402a459f9.
+
+- 2026-09-08T12:12:03+00:00: AR-0313 integrated as SSH-signed+DCO merge
+  d8e9d0af21a0f5f29d2b1076f33ce8153e1d26fc. PR #78 exact head 03962f285 passed all checks;
+  exact-main post-merge runs: Rust 34224098154, quality 34224098002, formal 34224097991, fault
+  34224098155, emulated aarch64 34224098137. Focused 5/5, full workspace gates,
+  policy/privacy/Gitleaks, and negative fixtures green. Provider selection remains fail-closed and
+  unsupported routes are explicit.
