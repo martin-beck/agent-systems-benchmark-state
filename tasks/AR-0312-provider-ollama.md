@@ -19,16 +19,16 @@
   "next_action": "Monitor exact-head CI for PR #71 at e49acbf455f6ca745bfd3119c729d6326904b67b; stop before merge pending coordinator authorization.",
   "observed_branch": "feature/provider-ollama",
   "observed_dirty": 0,
-  "observed_head": "e49acbf455f6ca745bfd3119c729d6326904b67b",
+  "observed_head": "8137f5baa0535e5d6e74d5a81e1dfbb0deaa2615",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0312.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply one pinned local Ollama provider and model configuration to all supported agents.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Support a shared local Ollama provider",
-  "updated_at": "2026-09-08T09:26:36+00:00",
+  "updated_at": "2026-09-08T09:34:08+00:00",
   "worktree_key": "agent-systems-benchmark-provider-ollama"
 }
 ---
