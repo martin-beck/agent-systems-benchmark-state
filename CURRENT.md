@@ -9,13 +9,13 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0319](tasks/AR-0319-credential-fd-helper-resolvers.md): Implement credential FD and helper resolvers | Add explicit file-descriptor and helper credential references without ambient-secret fallback. | Run full workspace/formal/fault/privacy/supply gates on signed candidate d2e08d8d, then request independent immutable review before publication. | replay_20260906 |
 | P1 | [AR-0805](tasks/AR-0805-tui-run-control.md): Add terminal run control and status | Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI. | Hold PR #86. Investigate exact-head Formal assurance run 34263658065 TLC/Alloy job failure caused by curl exit 63 Maximum file size exceeded while downloading pinned formal tooling; all other checks still settling. Do not merge until a fresh exact-head formal check and complete matrix are green. | quality_20260906 |
+| P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Require TLA+ and Alloy declarations to name-match their source files, add hostile wrong-name tests for both, rerun applicable gates and all exact-head CI, then obtain fresh independent review. Preserve the state-vendor release blocker. | codex-asb-pr82-publication |
 | P2 | [AR-0403](tasks/AR-0403-terminal-workloads.md): Integrate Terminal-Bench workloads | Import terminal tasks through an adapter to the published harness or task format. | Monitor PR #85 exact head 76e01e9372ca80759eb71b42913c383ccbb6c9ad checks to terminal; investigate any failure and do not merge without coordinator authorization. Preserve explicit no-native/no-execution qualification limits. | contracts_20260906 |
 
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Require TLA+ and Alloy declarations to name-match their source files, add hostile wrong-name tests for both, rerun applicable gates and all exact-head CI, then obtain fresh independent review. Preserve the state-vendor release blocker. | - |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary. | - |
 
 ## Blocked
