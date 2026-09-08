@@ -8,13 +8,13 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0313](tasks/AR-0313-all-agents-provider.md): Configure one provider for all agents | Let test plans select one provider profile for every chosen supported agent atomically. | Independent immutable review of unpublished candidate 03962f28571e79403740b560a769e1a3b171e685 tree bf48ba52a07d24474a6cf62839e8197b0f55c7e0 on exact base b6078bb1ca2ee8f35973ffab9740c2c12dd4126e; publish only after approval and fresh-base audit. | quality_20260906 |
+| P2 | [AR-0402](tasks/AR-0402-external-code-workloads.md): Integrate SWE-bench and Aider Polyglot | Add versioned external workload adapters without vendoring datasets. | Add digest verification/acquisition boundary and oracle fixtures, then run Rust/full quality gates. | root-coordination-20260906 |
 
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary. | - |
-| P2 | [AR-0402](tasks/AR-0402-external-code-workloads.md): Integrate SWE-bench and Aider Polyglot | Add versioned external workload adapters without vendoring datasets. | Add digest verification/acquisition boundary and oracle fixtures, then run Rust/full quality gates. | - |
 
 ## Blocked
 
