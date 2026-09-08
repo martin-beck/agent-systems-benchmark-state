@@ -16,9 +16,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Guide users through agents, providers, workloads, resources, replay, metrics, and output settings.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Build the terminal settings wizard",
-  "updated_at": "2026-09-08T15:14:52+00:00",
+  "updated_at": "2026-09-08T15:15:51+00:00",
   "worktree_key": "agent-systems-benchmark-tui-settings-wizard"
 }
 ---
@@ -32,3 +32,6 @@ Implementation has not started. Read the linked plan before claiming.
   promote TUI settings wizard for next safe worker slot.
 
 - 2026-09-08T15:14:52+00:00: Claimed by quality_20260906.
+
+- 2026-09-08T15:15:51+00:00: Recorded command exit 0; command argv SHA-256
+  ae8fb19894ace7028ed539e8025f93162b05b3be4e83eed8a3aa7056e24aa5ec.
