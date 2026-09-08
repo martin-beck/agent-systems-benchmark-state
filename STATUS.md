@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 4 |
+| **In progress** | Claimed work with a live lease | 3 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 47 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 71 |
+| **Done** | Accepted, integrated, and durably verified | 72 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -184,7 +184,7 @@ flowchart LR
         AR_1005["AR-1005 - Planned"]:::status_planned
         AR_1006["AR-1006 - Planned"]:::status_planned
         AR_1007["AR-1007 - Done"]:::status_done
-        AR_1008["AR-1008 - In progress"]:::status_in_progress
+        AR_1008["AR-1008 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -735,13 +735,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0312](tasks/AR-0312-provider-ollama.md): Support a shared local Ollama provider | contracts_20260906 | Apply one pinned local Ollama provider and model configuration to all supported agents. | Implement a loopback-only local Ollama profile and prove every compatible adapter translation. |
 | P1 | [AR-0843](tasks/AR-0843-frontend-privacy-assurance.md): Assure frontend privacy and faults | quality_20260906 | Qualify frontend privacy, artifact access, and fault behavior. | Monitor PR #69 exact-head CI at cca49ec3bea429a90a267600acf821cebe45c138; investigate any failure and do not merge without coordinator authorization. |
-| P1 | [AR-1008](tasks/AR-1008.md): Integrate Agent Workflow Quality in shadow mode | codex-awq-consumer-20260908 | Pin AWQ v0.1.0 in Agent Systems Benchmark and its state repository without replacing native gates or coordinator behavior. | Claim, create an isolated product worktree, add pinned policies and shadow workflows to both repositories, then publish reviewed evidence. |
 | P2 | [AR-0402](tasks/AR-0402-external-code-workloads.md): Integrate SWE-bench and Aider Polyglot | root-coordination-20260906 | Add versioned external workload adapters without vendoring datasets. | Define content-addressed external source manifests for SWE-bench 02e7a74ffd0b707aab73d203fe87bdc7c76afc8e and Polyglot 7e0611e77b54e2dea774cdc0aa00cf9f7ed6144f; include Exercism cpp 413b80a9, go 97472cfe, java f1b22a3d, javascript 9be84b9e, python 1f6aab86, rust 1d3a0f46 (all MIT), then pin evaluator/image metadata. |
 
 ### Open (1)
@@ -811,7 +810,7 @@ flowchart LR
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Evaluate maintenance, licenses and reproducibility before integration. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (71)
+### Done (72)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -883,6 +882,7 @@ flowchart LR
 | P1 | [AR-1002](tasks/AR-1002-verifier-integrity.md): Protect verifiers and support offline rescoring | Unclaimed | Separate immutable graders from agent work and version scoring independently of execution. | Monitor PR #62 exact head 3fc65ea73badcea31497e53644fdad8778115870 quality, emulated-aarch64, fault, Rust x86_64/aarch64, and formal runs; investigate failures and do not merge without authorization. |
 | P1 | [AR-1004](tasks/AR-1004-reliability-fairness.md): Measure reliability and mixed-workload fairness | Unclaimed | Report repeated-attempt reliability and prevent aggregate results from hiding starvation or hard strata. | Verify exact main 814397f with post-merge local gates and all fresh exact-main hosted CI; release only after green reconciliation. |
 | P1 | [AR-1007](tasks/AR-1007-benchmark-validity.md): Maintain benchmark validity and portability registry | Unclaimed | Track dataset provenance, contamination risk, grader validity and native portability per workload revision. | Implement registry schema and validation for built-in and imported workloads. |
+| P1 | [AR-1008](tasks/AR-1008.md): Integrate Agent Workflow Quality in shadow mode | Unclaimed | Pin AWQ v0.1.0 in Agent Systems Benchmark and its state repository without replacing native gates or coordinator behavior. | Claim, create an isolated product worktree, add pinned policies and shadow workflows to both repositories, then publish reviewed evidence. |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Unclaimed | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Run final state validation/live doctor and release done after confirming clean synchronized product/state refs at signed merge a0d80e4. |
 | P2 | [AR-0309](tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | Unclaimed | Run a maintained MIT OpenHands SDK or canonical headless client. | Monitor PR #65 exact-head CI for fec0487, investigate any failure, and await final review; do not merge. |
 | P2 | [AR-0802](tasks/AR-0802-executable-guides.md): Deliver runnable user and extension guides | Unclaimed | Publish executable offline quickstart, workload/agent extension guide and reproducibility guide. | Capture actual CLI workflows after commands are implemented. |
