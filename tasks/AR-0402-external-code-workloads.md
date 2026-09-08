@@ -10,16 +10,16 @@
   "next_action": "Wire the report into the user-facing benchmark result path and complete AR-0402 acceptance review; real external evaluator qualification remains planned.",
   "observed_branch": "feature/external-code-workloads",
   "observed_dirty": 0,
-  "observed_head": "8a8e7e6c8271397d65418e3fdd7fa4cde7f496d6",
+  "observed_head": "d6875cc7bb6960f5feb02245b0bfde13d1099c9f",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0402.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 137,
+  "task_revision": 138,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T13:27:50+00:00",
+  "updated_at": "2026-09-08T13:27:57+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
