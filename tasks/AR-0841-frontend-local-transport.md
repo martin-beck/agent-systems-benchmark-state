@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the local frontend control transport and authorization boundary.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Implement frontend local transport",
-  "updated_at": "2026-09-08T07:01:02+00:00",
+  "updated_at": "2026-09-08T07:01:29+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-local-transport"
 }
 ---
@@ -55,3 +55,6 @@ TCP implicitly.
 
 - 2026-09-08T07:01:02+00:00: Recorded command exit 0; command argv SHA-256
   50c9424de1a8e3a2fc6124bd249800eb307f45985150d79961e2b255c05640e4.
+
+- 2026-09-08T07:01:29+00:00: Recorded command exit 0; command argv SHA-256
+  1f21f634d266563a29429ede3984b6b88218567f30405a33c01b33a1bafd8e68.
