@@ -12,11 +12,11 @@
   "plan": "../plans/AR-0402.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-06T15:04:54+00:00",
+  "updated_at": "2026-09-08T06:53:20+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -25,3 +25,6 @@
 Add versioned external workload adapters without vendoring datasets.
 
 Implementation has not started. Read the linked plan before claiming.
+
+- 2026-09-08T06:53:20+00:00: Dependency AR-0401 verified done; promoted as highest-priority
+  compatible ready workload integration after AR-0840 completion.
