@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-0855",
-  "next_action": "Require TLA+ and Alloy declarations to name-match their source files, add hostile wrong-name tests for both, rerun applicable gates and all exact-head CI, then obtain fresh independent review. Preserve the state-vendor release blocker.",
+  "next_action": "Wait for a corrected immutable agent-workflow-coordinator v0.3.2+ release, then hash-locked vendor-sync it and implement/verify the remaining state-owned Huawei MIT headers, checker tests, and dedicated CI without hand-editing vendor.",
   "observed_branch": "fix/huawei-mit-license-headers",
   "observed_dirty": 0,
   "observed_head": "7add29f1d24ce3a74b9cca2e2f1fb29fa45cddd6",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files.",
-  "task_revision": 184,
+  "task_revision": 185,
   "title": "Enforce Huawei MIT source headers",
-  "updated_at": "2026-09-08T18:48:12+00:00",
+  "updated_at": "2026-09-08T18:48:28+00:00",
   "worktree_key": "agent-systems-benchmark-huawei-mit-headers"
 }
 ---
@@ -526,3 +526,6 @@ and fresh coordinator snapshot before claiming. Do not modify vendored coordinat
   work is only the release-gated state vendor sync and state-owned enforcement.
 
 - 2026-09-08T18:48:12+00:00: Claimed by codex-asb-pr82-publication.
+
+- 2026-09-08T18:48:28+00:00: Replaced stale product-review next action after exact merge and green
+  post-main CI.
