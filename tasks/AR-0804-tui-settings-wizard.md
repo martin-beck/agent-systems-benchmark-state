@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Guide users through agents, providers, workloads, resources, replay, metrics, and output settings.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Build the terminal settings wizard",
-  "updated_at": "2026-09-08T15:35:58+00:00",
+  "updated_at": "2026-09-08T15:37:00+00:00",
   "worktree_key": "agent-systems-benchmark-tui-settings-wizard"
 }
 ---
@@ -148,3 +148,6 @@ Implementation has not started. Read the linked plan before claiming.
   classified as unrelated historical/build scope after changed-path scans passed. Earlier exits were
   formatting-only and missing required --bin-dir harness argument, both corrected. No Launch API
   exists; terminal rendering/transport/run control remain unsupported follow-ups.
+
+- 2026-09-08T15:37:00+00:00: Recorded command exit 0; command argv SHA-256
+  d54772afd62a043b148785c21fb86184849454ead8c62a8eb09c4c33c0a41a69.
