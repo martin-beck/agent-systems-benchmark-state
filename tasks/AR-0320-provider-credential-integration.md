@@ -7,7 +7,7 @@
     "AR-0318"
   ],
   "id": "AR-0320",
-  "next_action": "Integrate the signed AR-0318 environment credential boundary into product main and rerun workspace gates.",
+  "next_action": "Run full locked workspace quality/privacy/dependency gates and exact-head CI on integrated 0f92642, then perform synthetic environment preflight integration.",
   "observed_branch": "feature/provider-credential-integration",
   "observed_dirty": 0,
   "observed_head": "0f92642fc870a886ae5f498b0cfefaf6a8f9b1c0",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate the verified environment credential resolver into the product workspace.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Integrate provider credential boundary",
-  "updated_at": "2026-09-08T14:18:55+00:00",
+  "updated_at": "2026-09-08T14:19:05+00:00",
   "worktree_key": "agent-systems-benchmark-provider-credential-integration"
 }
 ---
@@ -42,3 +42,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T14:18:55+00:00: Recorded command exit 0; command argv SHA-256
   3c5f09a5aaa1ff812713eec33fec2d832dec876267fbf9e282f4066e1cb03e1f.
+
+- 2026-09-08T14:19:05+00:00: Signed merge 0f92642 integrates reviewed AR-0318 docs/source 5d62546
+  into exact product tree; SSH signature and DCO verified. Independent cargo test --locked -p
+  asb-agents credential passed 6/6 with 123 filtered; worktree clean. Full release gates remain.

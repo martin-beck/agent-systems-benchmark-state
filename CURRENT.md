@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0320](tasks/AR-0320-provider-credential-integration.md): Integrate provider credential boundary | Integrate the verified environment credential resolver into the product workspace. | Integrate the signed AR-0318 environment credential boundary into product main and rerun workspace gates. | quality_20260906 |
+| P1 | [AR-0320](tasks/AR-0320-provider-credential-integration.md): Integrate provider credential boundary | Integrate the verified environment credential resolver into the product workspace. | Run full locked workspace quality/privacy/dependency gates and exact-head CI on integrated 0f92642, then perform synthetic environment preflight integration. | quality_20260906 |
 | P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Claim, create the declared worktree, enforce exact first-party Huawei MIT source headers, test, and publish unmerged PRs. | asb-license-20260908 |
 | P2 | [AR-0403](tasks/AR-0403-terminal-workloads.md): Integrate Terminal-Bench workloads | Import terminal tasks through an adapter to the published harness or task format. | Independent review the signed adapter checkpoint e0da4efd; run exact-tree quality gates and retain explicit unqualified Terminal-Bench limitations. | replay_20260906 |
 
