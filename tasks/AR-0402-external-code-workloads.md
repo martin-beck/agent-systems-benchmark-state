@@ -9,17 +9,17 @@
   "id": "AR-0402",
   "next_action": "Integrate production API consumers and add independent oracle result validation; retain explicit unqualified status for real external suites.",
   "observed_branch": "feature/external-code-workloads",
-  "observed_dirty": 2,
-  "observed_head": "1347811224b049ff4729d51512bc361dab9bd4a1",
+  "observed_dirty": 0,
+  "observed_head": "7a85e160dd33f107f6b714aed63d7da5d9b03d2a",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0402.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 123,
+  "task_revision": 124,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T13:05:41+00:00",
+  "updated_at": "2026-09-08T13:05:48+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
