@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Import terminal tasks through an adapter to the published harness or task format.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Integrate Terminal-Bench workloads",
-  "updated_at": "2026-09-08T20:23:26+00:00",
+  "updated_at": "2026-09-08T20:26:46+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-workloads"
 }
 ---
@@ -293,3 +293,6 @@ Implementation has not started. Read the linked plan before claiming.
   (exit 5), then direct script invocation lacked repo-root module path; corrected pytest and python
   -m unittest invocations passed. No product failure. Native Terminal-Bench execution/reset/network
   isolation remain unqualified and unsupported.
+
+- 2026-09-08T20:26:46+00:00: Recorded command exit 0; command argv SHA-256
+  a57f8c3a11de64bfe66d2fb9574eb4dcbb7540c7a370e851adfa1b2086f9db70.
