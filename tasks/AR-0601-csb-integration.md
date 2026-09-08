@@ -12,7 +12,7 @@
     "AR-0603"
   ],
   "id": "AR-0601",
-  "next_action": "Await immutable review of compatibility decision candidate 524db90; do not publish.",
+  "next_action": "Monitor PR #70 exact-head CI for terminal results; do not merge without coordinator authorization.",
   "observed_branch": "feature/csb-integration",
   "observed_dirty": 0,
   "observed_head": "524db90c893366cf5f683aa5a99ec211083256a4",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Reuse CSB application execution and monitoring where contracts fit ASB.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Prototype optional CSB integration",
-  "updated_at": "2026-09-08T09:21:12+00:00",
+  "updated_at": "2026-09-08T09:21:42+00:00",
   "worktree_key": "agent-systems-benchmark-csb-integration"
 }
 ---
@@ -100,3 +100,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T09:21:12+00:00: Recorded command exit 0; command argv SHA-256
   3040f3b696e405e6204d1b77e58463f6e26cfc6f02b09bd53fe48acb91b19c10.
+
+- 2026-09-08T09:21:42+00:00: Published independently approved exact candidate
+  524db90c893366cf5f683aa5a99ec211083256a4 as PR #70
+  (https://github.com/martin-beck/agent-systems-benchmark/pull/70), base main a97c3ed and exact head
+  verified. Initial exact-head runs: repository quality 34209513978, emulated aarch64 34209514063,
+  fault assurance 34209514081, Rust verification 34209514145, AWQ shadow 34209514253, formal
+  assurance 34209514357. AWQ shadow is success; all other required runs are in progress. Head
+  remains immutable; no merge.
