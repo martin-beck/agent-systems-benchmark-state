@@ -2,7 +2,7 @@
 {
   "branch": "feature/provider-recording-choice",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T17:38:25+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0104",
     "AR-0310",
@@ -16,15 +16,15 @@
   "observed_branch": "feature/provider-recording-choice",
   "observed_dirty": 0,
   "observed_head": "e8fed7e572b6bf9d14d76f15b91b7cb208e2d48b",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0314.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Offer matching prior recordings or an actual provider connection without silently choosing either.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Choose matching replay or live provider execution",
-  "updated_at": "2026-09-08T14:56:04+00:00",
+  "updated_at": "2026-09-08T15:01:14+00:00",
   "worktree_key": "agent-systems-benchmark-provider-recording-choice"
 }
 ---
@@ -217,3 +217,9 @@ Implementation has not started. Read the linked plan before claiming.
   SSH-signed+DCO commit on e0554b5; git verify-commit is good, its tree remains 4ef17ad, and it
   explicitly binds PR #81 while preserving published history. Fresh five-workflow matrix is active;
   hold release.
+
+- 2026-09-08T15:01:14+00:00: Released after signed additive repair
+  76497db8f22c43762f0b5bcbc7f2549c1d17281d on exact main e0554b5; formal 34241332324, repository
+  quality 34241332330, fault 34241332366, Rust 34241332421, and emulated-aarch64 34241332329 all
+  succeeded. Product tree unchanged; doctor and clean refs verified. Original GitHub merge e0554b5
+  lacks DCO trailer and is preserved; repair is additive attestation, not retroactive signature.
