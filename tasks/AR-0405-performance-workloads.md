@@ -11,15 +11,18 @@
   ],
   "id": "AR-0405",
   "next_action": "Run compatibility spikes and accept only workload subsets with stable independent oracles.",
+  "observed_branch": "feature/performance-workloads",
+  "observed_dirty": 0,
+  "observed_head": "559fbcc825234bb98a64ba554a53f38b004d24f6",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0405.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Assess SWE-Perf, SWE-fficiency and CORE-Bench for correctness-preserving optimization and reproducibility.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Add performance and reproducibility workloads",
-  "updated_at": "2026-09-08T21:38:26+00:00",
+  "updated_at": "2026-09-08T21:38:33+00:00",
   "worktree_key": "agent-systems-benchmark-performance-workloads"
 }
 ---
