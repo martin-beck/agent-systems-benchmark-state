@@ -65,9 +65,10 @@ readers, a competing writer, and bounded lock-wait timeout. TLC checks:
 
 Two processes are sufficient for pairwise lifecycle races; two tasks cover the
 one-active-task-per-actor invariant. The separate three-process lock model
-covers two readers plus one writer. The binding model covers the configured project and one
-foreign caller, including rejection without mutation and fair progress for correct calls. These are finite exhaustive proofs of the
-abstractions, not proofs of Linux, Git, Python, or the filesystem implementation.
+covers two readers plus one writer. The binding model covers the configured project and one foreign
+caller, including rejection without mutation and fair progress for correct calls. These are finite
+exhaustive proofs of the abstractions, not proofs of Linux, Git, Python, or the filesystem
+implementation.
 
 ## Refinement obligations and assumptions
 

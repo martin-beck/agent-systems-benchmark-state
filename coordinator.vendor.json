@@ -1,7 +1,7 @@
 {
   "files": {
     "docs/agent-workflow-coordinator.md": {
-      "sha256": "a18ed8aa244a8f28b5e1750699cbe5247e49deb30289c42b35dde20ddb57c8b9",
+      "sha256": "df8fa0373430c05be7e8f5390153ba5898d1e93e801ed7f575bf425bca75d6df",
       "source": "docs/PROJECT_GUIDE.md"
     },
     "formal/handoffctl/Handoffctl.cfg": {
@@ -29,7 +29,7 @@
       "source": "formal/handoffctl/HandoffctlLocks.tla"
     },
     "formal/handoffctl/README.md": {
-      "sha256": "c30ba3fd24b3069d70d16a32e4efa6d5fd0e5acf568a0191c39e9011f3356e9a",
+      "sha256": "b9c92b9e6a69c845f366103216f72c86fd5907aba6c04470a0f40ca0c86c4b4d",
       "source": "formal/handoffctl/README.md"
     },
     "formal/handoffctl/verify.sh": {
@@ -53,7 +53,7 @@
       "source": "tools/handoffctl"
     },
     "tools/handoffctl.py": {
-      "sha256": "3d7de7842559accbde990b6a06fb073dc1adaa0f1d8ee5d47469942fc7f434f7",
+      "sha256": "dcb069fa8e7b9b23cbda7146d501119d979bab2b73ba44f267582a33556f8063",
       "source": "tools/handoffctl.py"
     },
     "tools/handoffctl_vendor.py": {
@@ -71,8 +71,8 @@
   },
   "schema_version": 1,
   "upstream": {
-    "commit": "d3cfa497c93658c8abc06e0720f6ed88ed086162",
+    "commit": "72465e6febe987491203564c8e7251ef8f882955",
     "repository": "https://github.com/martin-beck/agent-workflow-coordinator",
-    "version": "v0.1.2"
+    "version": "v0.1.3"
   }
 }

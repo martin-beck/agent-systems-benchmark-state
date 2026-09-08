@@ -11,6 +11,7 @@ name: handoffctl formal verification
       - "tools/status_renderer.py"
       - "tests/test_status_renderer.py"
       - "tests/test_handoffctl.py"
+      - "tests/test_handoffctl_vendor.py"
       - "formal/handoffctl/**"
       - ".github/workflows/handoffctl-formal.yml"
   pull_request:
@@ -20,6 +21,7 @@ name: handoffctl formal verification
       - "tools/status_renderer.py"
       - "tests/test_status_renderer.py"
       - "tests/test_handoffctl.py"
+      - "tests/test_handoffctl_vendor.py"
       - "formal/handoffctl/**"
       - ".github/workflows/handoffctl-formal.yml"
 

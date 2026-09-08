@@ -4,7 +4,7 @@ Requires Python 3.12+, Git, GitHub CLI and the pinned uv quality environment.
 Use a shared checkout for local worker locking. All workers use their own product
 worktrees under the configured project root. The runtime config is ignored.
 
-The coordinator is pinned to signed upstream release v0.1.2. Run
+The coordinator is pinned to signed upstream release v0.1.3. Run
 `python tools/handoffctl_vendor.py verify --target .` before operating or upgrading it, and read
 `docs/agent-workflow-coordinator.md` for the complete vendor workflow. `.handoffctl.json` and
 `coordinator.binding.json` were created by the one-time initialization and must remain paired. The

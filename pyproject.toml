@@ -60,7 +60,6 @@ branch = true
 source = ["tools"]
 
 [tool.coverage.report]
-omit = ["tools/handoffctl_vendor.py"]
 fail_under = 95
 show_missing = true
 skip_covered = false

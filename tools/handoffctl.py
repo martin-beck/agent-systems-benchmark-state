@@ -70,7 +70,7 @@ type Meta = dict[str, Any]
 type Task = tuple[Path, Meta, str]
 type State = dict[str, Any]
 
-COORDINATOR_VERSION = "0.1.2"
+COORDINATOR_VERSION = "0.1.3"
 DEFAULT_PROJECT_SETTINGS: Meta = {
     "schema_version": 1,
     "project_id": "00000000-0000-4000-8000-000000000000",
@@ -527,6 +527,11 @@ def sync_task_observations(tasks: list[Task], state: State) -> None:
             write_task(path, meta, body)
 
 
+def privacy_pattern_applies(relative: Path, label: str) -> bool:
+    """Allow UUID syntax only in exact coordinator identity and contract files."""
+    return label != "session-like UUID" or relative not in UUID_PRIVACY_EXEMPT
+
+
 def privacy_errors() -> list[str]:
     errors: list[str] = []
     for path in sorted(ROOT.rglob("*")):
@@ -548,7 +553,7 @@ def privacy_errors() -> list[str]:
         except UnicodeDecodeError:
             continue
         for regex, label in PRIVATE:
-            if label == "session-like UUID" and relative in UUID_PRIVACY_EXEMPT:
+            if not privacy_pattern_applies(relative, label):
                 continue
             if regex.search(text):
                 errors.append(f"{relative}: {label}")
@@ -751,25 +756,36 @@ def restore_paths(before: dict[Path, str | None]) -> None:
             atomic(path, old)
 
 
+def generated_paths() -> list[Path]:
+    """Return every configured generated projection path."""
+    names = ["CURRENT.md", "PROJECT_STATE.md", "WORKTREES.md"]
+    if project_settings()["status_view"]:
+        names.append("STATUS.md")
+    return [ROOT / name for name in names]
+
+
+def write_generated_views(tasks: list[Task], state: Meta) -> None:
+    """Atomically refresh every configured generated projection."""
+    atomic(ROOT / "CURRENT.md", render_current(tasks))
+    if project_settings()["status_view"]:
+        atomic(ROOT / "STATUS.md", render_status_view(tasks))
+    project, worktrees = live_docs(state)
+    atomic(ROOT / "PROJECT_STATE.md", project)
+    atomic(ROOT / "WORKTREES.md", worktrees)
+
+
 def reconcile(*, do_commit: bool, push: bool = False) -> bool:
+
     with locked():
         state = project_scan()
-        generated_names = ["CURRENT.md", "PROJECT_STATE.md", "WORKTREES.md"]
-        if project_settings()["status_view"]:
-            generated_names.append("STATUS.md")
-        generated = [ROOT / name for name in generated_names]
+        generated = generated_paths()
         before: dict[Path, str | None] = {path: path.read_text() for path, _, _ in all_tasks()}
         before.update({path: path.read_text() if path.exists() else None for path in generated})
         committed = False
         try:
             sync_task_observations(all_tasks(), state)
             tasks = all_tasks()
-            atomic(ROOT / "CURRENT.md", render_current(tasks))
-            if project_settings()["status_view"]:
-                atomic(ROOT / "STATUS.md", render_status_view(tasks))
-            project, worktrees = live_docs(state)
-            atomic(ROOT / "PROJECT_STATE.md", project)
-            atomic(ROOT / "WORKTREES.md", worktrees)
+            write_generated_views(tasks, state)
             errors = validate(live=False)
             if errors:
                 raise RuntimeError("validation failed:\n" + "\n".join(errors))
