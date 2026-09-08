@@ -9,7 +9,7 @@
     "AR-0401"
   ],
   "id": "AR-1002",
-  "next_action": "Design the immutable observation and score-revision contract using Inspect and Harbor concepts.",
+  "next_action": "Await AR-0202 Cargo fence return; refresh only formal/Cargo.lock, rerun formal and final exact-tree gates, then create signed candidate.",
   "observed_branch": "feature/verifier-integrity",
   "observed_dirty": 10,
   "observed_head": "3a07b57b8265d98eeebbcd4fd21339d72fac0663",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate immutable graders from agent work and version scoring independently of execution.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Protect verifiers and support offline rescoring",
-  "updated_at": "2026-09-08T04:24:39+00:00",
+  "updated_at": "2026-09-08T04:25:42+00:00",
   "worktree_key": "agent-systems-benchmark-verifier-integrity"
 }
 ---
@@ -149,3 +149,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T04:24:39+00:00: Recorded command exit 0; command argv SHA-256
   89c419e0857d2a37ba6ef22d1e5c7f2280dba9d998d6e89b96ec73fab4941a9b.
+
+- 2026-09-08T04:25:42+00:00: Implemented protected grader identity, immutable verifier observations,
+  and append-only offline score revisions across ten owned product paths. Submission, environment,
+  and verifier artifacts are independently re-hashed; task, patch, timeout, environment, and
+  verifier failures remain distinct; decoded unkeyed ledgers are inspection-only. Focused
+  Clippy/docs and 68 affected tests are green; full locked workspace Clippy/tests/docs/release build
+  green. Nightly branch coverage completed honestly at 78.92 percent across the three affected
+  crates (97.20 percent lines); no 95 percent branch claim. Supply rerun with CARGO_HOME under the
+  approved storage root passed deny/audit; prior audit invocation read a pre-existing external
+  advisory cache whose mtime did not change, so it is excluded from candidate evidence. Formal
+  locked test is blocked solely because formal/Cargo.lock requires the new asb-analysis path
+  closure; no formal lock mutation made while AR-0202 holds the fence.
