@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Reuse CSB application execution and monitoring where contracts fit ASB.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Prototype optional CSB integration",
-  "updated_at": "2026-09-08T09:21:42+00:00",
+  "updated_at": "2026-09-08T09:32:37+00:00",
   "worktree_key": "agent-systems-benchmark-csb-integration"
 }
 ---
@@ -108,3 +108,6 @@ Implementation has not started. Read the linked plan before claiming.
   fault assurance 34209514081, Rust verification 34209514145, AWQ shadow 34209514253, formal
   assurance 34209514357. AWQ shadow is success; all other required runs are in progress. Head
   remains immutable; no merge.
+
+- 2026-09-08T09:32:37+00:00: Recorded command exit 1; command argv SHA-256
+  079f787598733bfe0bdc2bf8a5372cb27914e89de3aad356866fb5420a0f8749.
