@@ -10,8 +10,13 @@ Never edit this file directly.
 | P1 | [AR-0803](tasks/AR-0803-frontend-control-api.md): Define the frontend control API | Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary. | Await coordinator authorization to integrate exact green PR #63 head 8d7d90014dbcf4df2f08be90b08392776d702a11; do not rewrite or merge meanwhile. | replay_20260906 |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. | root-coordination-20260906 |
 | P1 | [AR-0851](tasks/AR-0851-shared-workflow-coordinator.md): Adopt shared workflow coordinator | Adopt the canonical coordinator as a pinned offline-capable vendor artifact while preserving ASB extensions. | After the canonical public release is verified, vendor its pinned artifact and run ASB-specific conformance, fault, race, renderer, schema, and live checks. | codex-agent-workflow-coordinator-asb-20260908 |
-| P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary. | quality_20260906 |
 | P2 | [AR-0309](tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | Run a maintained MIT OpenHands SDK or canonical headless client. | Await authorization for one controlled signed rebase of approved-scope OpenHands candidate e2b312c onto current main d3e2dfa, then rerun affected exact-tree gates and request immutable review. | contracts_20260906 |
+
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary. | - |
 
 ## Blocked
 

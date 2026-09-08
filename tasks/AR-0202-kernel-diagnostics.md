@@ -2,7 +2,7 @@
 {
   "branch": "feature/kernel-diagnostics",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T06:08:16+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0201",
     "AR-0103"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/kernel-diagnostics",
   "observed_dirty": 0,
   "observed_head": "1d24993771a468867c39bba4931d839f9068afd8",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0202.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Integrate perf and optional eBPF diagnostics without making privileged tools mandatory.",
-  "task_revision": 138,
+  "task_revision": 139,
   "title": "Add optional kernel diagnostics",
-  "updated_at": "2026-09-08T05:08:46+00:00",
+  "updated_at": "2026-09-08T06:11:00+00:00",
   "worktree_key": "agent-systems-benchmark-kernel-diagnostics"
 }
 ---
@@ -397,3 +397,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T05:08:46+00:00: Recorded command exit 0; command argv SHA-256
   7175d84efcef78f0afc467b1ec301a29c42c0f91145b1bf6405f6cb9f7584263.
+
+- 2026-09-08T06:11:00+00:00: Lease expired at 2026-09-08T06:08:16Z; process audit found no active
+  quality_20260906/native PMU or eBPF process. Recovery only; no product mutation.
