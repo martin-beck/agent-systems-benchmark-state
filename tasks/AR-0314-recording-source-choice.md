@@ -12,7 +12,7 @@
     "AR-0318"
   ],
   "id": "AR-0314",
-  "next_action": "Hold release. Product main e0554b5590cd53adf210837d88d1068d3781e2a4 contains PR #81, but exact-main repository-quality run 34241104757 failed because the GitHub-created merge commit lacks a matching Signed-off-by trailer. Await authorization for an additive signed+DCO policy-repair commit, then require fresh exact-main full CI and clean reconciliation.",
+  "next_action": "Monitor fresh exact-main runs for signed+DCO additive attestation 76497db8f22c43762f0b5bcbc7f2549c1d17281d: formal 34241332324, repository quality 34241332330, fault 34241332366, Rust 34241332421, emulated-aarch64 34241332329. After all terminal success, fast-forward clean local main, run postmerge verification/doctor, then release AR-0314.",
   "observed_branch": "feature/provider-recording-choice",
   "observed_dirty": 0,
   "observed_head": "e8fed7e572b6bf9d14d76f15b91b7cb208e2d48b",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Offer matching prior recordings or an actual provider connection without silently choosing either.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Choose matching replay or live provider execution",
-  "updated_at": "2026-09-08T14:54:53+00:00",
+  "updated_at": "2026-09-08T14:56:04+00:00",
   "worktree_key": "agent-systems-benchmark-provider-recording-choice"
 }
 ---
@@ -209,3 +209,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T14:54:53+00:00: Recorded command exit 1; command argv SHA-256
   7ed7e81b87a89ea12a4108414f84b9ab34ba681ed232c65a6a6267bd09325411.
+
+- 2026-09-08T14:56:04+00:00: PR #81 merged concurrently as e0554b5590cd53adf210837d88d1068d3781e2a4
+  with exact parents 33f30cb and e8fed7e/tree 4ef17ad, but GitHub-generated merge lacked
+  Signed-off-by; repository-quality run 34241104757 failed exactly at repository_policy.py.
+  Authorized additive repair 76497db8f22c43762f0b5bcbc7f2549c1d17281d is an empty-tree
+  SSH-signed+DCO commit on e0554b5; git verify-commit is good, its tree remains 4ef17ad, and it
+  explicitly binds PR #81 while preserving published history. Fresh five-workflow matrix is active;
+  hold release.
