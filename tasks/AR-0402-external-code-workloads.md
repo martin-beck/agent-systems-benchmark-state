@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 105,
+  "task_revision": 106,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:46:18+00:00",
+  "updated_at": "2026-09-08T12:47:10+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -298,3 +298,6 @@ Implementation has not started. Read the linked plan before claiming.
   quality 34227508562, formal 34227508524, fault 34227508525, emulated aarch64 34227508507.
   Provenance/materialization/planning boundary is integrated and verified; AR remains in progress
   because production adapter execution and qualified evaluator/oracle evidence are not complete.
+
+- 2026-09-08T12:47:10+00:00: Recorded command exit 1; command argv SHA-256
+  96dfe36792645b6b4c3486e774f0533b416652422b010d2cdc0b1fd1d688b2a7.
