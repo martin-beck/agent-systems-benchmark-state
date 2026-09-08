@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 4 |
+| **In progress** | Claimed work with a live lease | 3 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 3 |
 | **Planned** | Defined work awaiting promotion or dependencies | 49 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 67 |
+| **Done** | Accepted, integrated, and durably verified | 68 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -152,7 +152,7 @@ flowchart LR
         AR_0836["AR-0836 - Blocked"]:::status_blocked
         AR_0837["AR-0837 - Planned"]:::status_planned
         AR_0840["AR-0840 - Done"]:::status_done
-        AR_0841["AR-0841 - In progress"]:::status_in_progress
+        AR_0841["AR-0841 - Done"]:::status_done
         AR_0842["AR-0842 - Planned"]:::status_planned
         AR_0843["AR-0843 - Planned"]:::status_planned
         AR_0844["AR-0844 - Planned"]:::status_planned
@@ -727,12 +727,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0514](tasks/AR-0514-replay-openhands.md): Qualify OpenHands replay | contracts_20260906 | Qualify replay conformance for OpenHands. | Prove credential-free record/replay conformance for OpenHands with network denial and malformed/tool/cancel negatives. |
-| P1 | [AR-0841](tasks/AR-0841-frontend-local-transport.md): Implement frontend local transport | quality_20260906 | Implement the local frontend control transport and authorization boundary. | Implement bounded owner-only Unix-socket transport with peer checks and fail-closed framing. |
 | P1 | [AR-0852](tasks/AR-0852-coordinator-path-isolation.md): Adopt coordinator path isolation fix | codex-agent-workflow-coordinator-asb-v014-20260908 | Adopt the path-exclusive coordinator commit fix discovered during live integration. | Merge the exact green v0.1.4 follow-up and verify the installed coordinator and project binding on live main. |
 | P2 | [AR-0402](tasks/AR-0402-external-code-workloads.md): Integrate SWE-bench and Aider Polyglot | root-coordination-20260906 | Add versioned external workload adapters without vendoring datasets. | Pin datasets/evaluators and evaluate image architecture parity. |
 
@@ -804,7 +803,7 @@ flowchart LR
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Evaluate maintenance, licenses and reproducibility before integration. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (67)
+### Done (68)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -861,6 +860,7 @@ flowchart LR
 | P1 | [AR-0834](tasks/AR-0834-handoffctl-lint-regression.md): Repair handoffctl lint regression | Unclaimed | Repair the coordination-tool Ruff regression discovered during AR-0830 reconciliation. | No further action; repair is integrated and verified. |
 | P1 | [AR-0835](tasks/AR-0835-runner-privacy-guard-remediation.md): Remediate runner privacy and workflow guards | Unclaimed | Remediate runner privacy leakage and protected-workflow guard gaps found during independent audit. | Hold exact unpublished c25e3d20d0ddf494d3a222aaf18f44e3de4c4b73 for independent immutable privacy/security review; do not dispatch either persistent-runner workflow. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | Unclaimed | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
+| P1 | [AR-0841](tasks/AR-0841-frontend-local-transport.md): Implement frontend local transport | Unclaimed | Implement the local frontend control transport and authorization boundary. | Implement bounded owner-only Unix-socket transport with peer checks and fail-closed framing. |
 | P1 | [AR-0845](tasks/AR-0845-ci-artifact-quota-resilience.md): Harden CI artifact quota behavior | Unclaimed | Prevent exhausted GitHub artifact quota from obscuring authoritative ASB results. | Independently review immutable candidate 7d98653e7e7f219cced6abfb5c611d2614c72bd7 tree 2b02deda39ae1e4a4b40e9c3e960f1f0336f19b3; do not publish before approval. |
 | P1 | [AR-0848](tasks/AR-0848-native-x86-capacity.md): Qualify native x86 capacity | Unclaimed | Qualify authorized disposable native x86_64 capacity on a development host. | Await fresh independent immutable review of rebased signed head 45604cd323c5de0ab9c7eaf0b6a39d90f4d43002 on exact product main f42645dd05f17eca5635ca2e82057b703a03a1c3; only then update PR #58 by exact force-with-lease and require fresh exact-head CI. |
 | P1 | [AR-0849](tasks/AR-0849-ar0801-documentation-repair.md): Repair AR-0801 documentation consistency | Unclaimed | Repair stale AR-0801 implementation and CLI documentation claims. | Align AR-0801 task text, generated status next_action, and product README with the implemented and merged CLI command surface; verify links and exact command examples. |

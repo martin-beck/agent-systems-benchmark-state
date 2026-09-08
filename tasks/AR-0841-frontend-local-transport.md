@@ -2,7 +2,7 @@
 {
   "branch": "feature/frontend-local-transport",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T08:53:01+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0840",
     "AR-0104"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/frontend-local-transport",
   "observed_dirty": 0,
   "observed_head": "d914647bd7da4b5230ae008e11c1c496c3c93590",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0841.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Implement the local frontend control transport and authorization boundary.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Implement frontend local transport",
-  "updated_at": "2026-09-08T07:20:01+00:00",
+  "updated_at": "2026-09-08T07:25:11+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-local-transport"
 }
 ---
@@ -136,3 +136,11 @@ TCP implicitly.
 
 - 2026-09-08T07:20:01+00:00: Recorded command exit 0; command argv SHA-256
   538506beb3941d9283a99c6d51abad3b5b29f507554fcc1052fef4a158737a3a.
+
+- 2026-09-08T07:25:11+00:00: Merged signed/DCO no-ff as e86fe799a33cd17a1b8f05a029effe41bbf13de5
+  (parents 64f6eb4+d914647, reviewed tree c056a5d); PR #66. Exact-main CI SUCCESS: Rust x86/aarch64
+  34198796415, quality 34198796416, formal 34198796463, fault 34198796421, emulated aarch64
+  34198796478. Fresh external-target postmerge fmt, workspace clippy -D warnings, full workspace
+  tests, rustdoc -D warnings, and formal suite passed. Local native syscall trace observed AF_UNIX
+  and no AF_INET/AF_INET6. Client authenticates server SO_PEERCRED before bytes; peer evidence is
+  constructor-controlled; fixed errors disclose no UID. No TCP transport/support claimed.
