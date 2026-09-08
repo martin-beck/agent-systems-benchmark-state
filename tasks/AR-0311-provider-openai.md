@@ -26,9 +26,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply one default OpenAI provider profile consistently to all supported agents.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Support a shared OpenAI provider",
-  "updated_at": "2026-09-08T10:22:12+00:00",
+  "updated_at": "2026-09-08T10:27:14+00:00",
   "worktree_key": "agent-systems-benchmark-provider-openai"
 }
 ---
@@ -124,3 +124,6 @@ Implementation has not started. Read the linked plan before claiming.
   https://github.com/martin-beck/agent-systems-benchmark/pull/73; exact-head runs: quality
   34215009113, aarch64 34215009122, formal 34215009181, Rust 34215009138, AWQ shadow 34215009171,
   fault 34215009112. AWQ is green; remaining workflows are in progress at observation.
+
+- 2026-09-08T10:27:14+00:00: Recorded command exit 0; command argv SHA-256
+  a7405a0f932d81b60ea264409f315c3b2b0f03fc7359a63c3d9d658d08971fee.
