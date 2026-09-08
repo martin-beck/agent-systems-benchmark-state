@@ -10,18 +10,18 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #31 | `feature/native-platforms@bdaf9c108226` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #61 | `feature/kernel-diagnostics@1d24993771a4` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | metrics: add fail-closed optional kernel probes |
+| #31 | `feature/native-platforms@bdaf9c108226` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
+| #61 | `feature/kernel-diagnostics@1d24993771a4` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | metrics: add fail-closed optional kernel probes |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34218583828 | `b6078bb1ca2e` | push | Fault assurance | queued:- |
-| 34218583769 | `b6078bb1ca2e` | push | Rust verification | queued:- |
-| 34218583713 | `b6078bb1ca2e` | push | Emulated aarch64 portability | queued:- |
-| 34218583656 | `b6078bb1ca2e` | push | Repository quality | queued:- |
-| 34218583650 | `b6078bb1ca2e` | push | Formal assurance | queued:- |
+| 34218583828 | `b6078bb1ca2e` | push | Fault assurance | in_progress:- |
+| 34218583769 | `b6078bb1ca2e` | push | Rust verification | in_progress:- |
+| 34218583713 | `b6078bb1ca2e` | push | Emulated aarch64 portability | in_progress:- |
+| 34218583656 | `b6078bb1ca2e` | push | Repository quality | in_progress:- |
+| 34218583650 | `b6078bb1ca2e` | push | Formal assurance | in_progress:- |
 | 34218119495 | `921cf004f8aa` | pull_request | Emulated aarch64 portability | completed:success |
 | 34218119493 | `921cf004f8aa` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 34218119408 | `921cf004f8aa` | pull_request | Repository quality | completed:success |
