@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Import terminal tasks through an adapter to the published harness or task format.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Integrate Terminal-Bench workloads",
-  "updated_at": "2026-09-08T17:48:12+00:00",
+  "updated_at": "2026-09-08T17:49:33+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-workloads"
 }
 ---
@@ -224,3 +224,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T17:48:12+00:00: Recorded command exit 0; command argv SHA-256
   eb7605a5503bfa0036af77f96a730ad0041d47fbe579d9b88af15c49d4c8aa76.
+
+- 2026-09-08T17:49:33+00:00: Fresh immutable AR-0805 review BLOCKS signed candidate
+  d0b7ed92f253a67f7d540f50690673a2760e8257/tree 3c61dbc61fc78dd3bab9268a3a17b67fb78de779 on one
+  remaining production recovery mismatch. All prior eight findings are closed. The TUI transition
+  table allows NeedsReconciliation only from nonterminal states, but production Status refresh maps
+  missing result roots/manifests, failed store open, or corrupt journals to a new durable
+  NeedsReconciliation revision even after Completed, Failed, or Cancelled. The candidate rejects
+  that authoritative post-terminal change and cannot converge. Required repair: accept any prior
+  state to NeedsReconciliation only at a strictly higher revision, with native backend regression
+  for post-terminal artifact disappearance/corrupt journal and matching event projection. Clean
+  one-path scope, SSH signature/DCO, privacy, focused 12 tests, fmt/clippy, exact-range
+  policy/diff-check/Gitleaks reproduced green. No AR-0805 mutation.
