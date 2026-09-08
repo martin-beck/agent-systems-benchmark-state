@@ -10,7 +10,7 @@
     "AR-1001"
   ],
   "id": "AR-0806",
-  "next_action": "Review rebased 031a4516cbb3addc184ab3c4b0f4c683aa14755d against main 3514089fa378bd50629c9794b215fd53c8ea7d5d, confirming '=' range-diff from 3844c28, two-path scope, signature/DCO, duplicate atomicity, gates and AR-0875 limit. Then update PR #89 with force-with-lease and require exact-head CI.",
+  "next_action": "PR #89 branch was guarded-force-updated to approved 031a4516cbb3addc184ab3c4b0f4c683aa14755d, but live main advanced again from reviewed parent 3514089fa378bd50629c9794b215fd53c8ea7d5d to PR base 2219839812d9255288b8b4e0afc52396915e85a6. Hold merge; after current exact-head CI is terminal evidence, obtain another exact-base rebase/review authorization before integration.",
   "observed_branch": "feature/tui-history-analysis",
   "observed_dirty": 0,
   "observed_head": "031a4516cbb3addc184ab3c4b0f4c683aa14755d",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-08T23:37:32+00:00",
+  "updated_at": "2026-09-08T23:38:09+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
@@ -184,3 +184,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T23:37:32+00:00: Recorded command exit 0; command argv SHA-256
   e128d1ec2aeb47d99af3c319e37cac529efb08e879037db0f41327acbdc0e584.
+
+- 2026-09-08T23:38:09+00:00: Executed exact force-with-lease update of PR #89 from 3844c28 to
+  031a451. Fresh exact-head runs are 34291485214, 34291485216, 34291485233, 34291485236,
+  34291485275, 34291485277, and 34291485291 and are currently in progress. Immediate live query
+  found base advanced to 2219839812d9255288b8b4e0afc52396915e85a6, while candidate parent/review
+  base is 3514089fa378bd50629c9794b215fd53c8ea7d5d. Merge/release are held fail-closed;
+  duplicate-page repair and AR-0875 limitation remain unchanged.
