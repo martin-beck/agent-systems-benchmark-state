@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 112,
+  "task_revision": 113,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:48:37+00:00",
+  "updated_at": "2026-09-08T12:49:15+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -315,3 +315,6 @@ Implementation has not started. Read the linked plan before claiming.
   shell-free subprocess execution, explicit timeout, materialized-root requirement, and refuses
   unqualified evaluator provenance before any subprocess starts. Initial argparse defect was fixed;
   focused runner/planner tests pass 4/4 and branch was pushed for PR #79 CI.
+
+- 2026-09-08T12:49:15+00:00: Recorded command exit 0; command argv SHA-256
+  e79f48952cb8fd75f75cf0e9ab071009752f2891fff8377fbd4532cb690464fd.
