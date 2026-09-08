@@ -10,7 +10,7 @@
     "AR-0804"
   ],
   "id": "AR-0805",
-  "next_action": "Create the declared worktree with the corrected exact git worktree add invocation; then hold product mutation until active AR-0855 broad source-header fence is integrated/released.",
+  "next_action": "Read complete AR-0805 plan and product frontend/control contracts in the declared clean worktree; do not mutate crates/asb-tui until active AR-0855, which overlaps lib.rs/main.rs, is integrated or its fence is returned, then rebase onto exact main.",
   "observed_branch": "feature/tui-run-control",
   "observed_dirty": 0,
   "observed_head": "b2707c482876dcfb42c756c39165f6ecdb5c7c10",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T16:24:10+00:00",
+  "updated_at": "2026-09-08T16:24:28+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -50,3 +50,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T16:24:03+00:00: Recorded command exit 0; command argv SHA-256
   5b93a7b16ff13cbd2e349403c14ce7e7a9174946197bcdaa139476839f7c4300.
+
+- 2026-09-08T16:24:28+00:00: Post-release handoff complete. AR-0319 became unavailable in a
+  concurrent signed claim by replay_20260906, so the next highest-priority dependency-ready task
+  selected was AR-0805. Promotion 95b587e4 and claim d448ae77 are durable. Declared worktree
+  /srv/data/projects/agent-systems-benchmark-tui-run-control now exists on branch
+  feature/tui-run-control, clean at exact product main b2707c482876dcfb42c756c39165f6ecdb5c7c10.
+  Active AR-0855 candidate touches crates/asb-tui/src/lib.rs and main.rs, so shared path mutation is
+  fenced pending its integration/release.
