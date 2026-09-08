@@ -10,7 +10,7 @@
     "AR-0804"
   ],
   "id": "AR-0805",
-  "next_action": "Independent immutable review candidate fd81035f0a50436b75bb02727209bd8abd52a505 against exact parent b2707c482876dcfb42c756c39165f6ecdb5c7c10. Do not publish before review approval. Preserve explicit protocol/resource/native evidence gaps and AR-0855 header lines on any rebase.",
+  "next_action": "Rerun only contract consistency and the remaining coverage/failure/platform/workflow/dependency/privacy gates with exact baseline b2707c482876dcfb42c756c39165f6ecdb5c7c10, then amend/resign the unpublished candidate and request fresh immutable review.",
   "observed_branch": "feature/tui-run-control",
   "observed_dirty": 1,
   "observed_head": "fd81035f0a50436b75bb02727209bd8abd52a505",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T17:25:04+00:00",
+  "updated_at": "2026-09-08T17:25:29+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -221,3 +221,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T17:25:04+00:00: Recorded command exit 1; command argv SHA-256
   9143941a37cc3edfa479681543a806e6bae27c180d127f36e8ee16f9aa5dc296.
+
+- 2026-09-08T17:25:29+00:00: Post-repair full fmt, workspace clippy, workspace tests, rustdoc,
+  release build, and contract-consistency unit tests passed. The batch then exited 1 before product
+  contract checks because the operator supplied symbolic origin/main to --baseline-ref, which
+  requires an exact commit OID. This is a command-input failure, not a product failure; the exact
+  unchanged baseline is b2707c482876dcfb42c756c39165f6ecdb5c7c10. No remaining gate ran after that
+  point and the one-file repair diff is preserved.
