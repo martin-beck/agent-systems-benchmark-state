@@ -11,16 +11,16 @@
   "next_action": "Independent immutable review of rebased candidate 6349b753e2d403212c63fa8a97bd04a0f2c61a61; do not publish until approved.",
   "observed_branch": "feature/contract-consistency",
   "observed_dirty": 0,
-  "observed_head": "6349b753e2d403212c63fa8a97bd04a0f2c61a61",
+  "observed_head": "39d09374680fada3d02e286efcf726d114b24ee3",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0904.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Machine-check protocol and artifact consistency",
-  "updated_at": "2026-09-08T09:59:25+00:00",
+  "updated_at": "2026-09-08T10:05:12+00:00",
   "worktree_key": "agent-systems-benchmark-contract-consistency"
 }
 ---
