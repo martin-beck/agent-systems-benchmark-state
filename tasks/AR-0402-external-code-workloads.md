@@ -7,7 +7,7 @@
     "AR-0401"
   ],
   "id": "AR-0402",
-  "next_action": "Verify Exercism archives and implement production adapter integration; do not promote evaluator support without image/SBOM/oracle evidence.",
+  "next_action": "Implement production external-workload adapter/materialization integration and add oracle execution fixtures; keep evaluator qualification planned until immutable image/SBOM evidence exists.",
   "observed_branch": "feature/external-code-workloads",
   "observed_dirty": 0,
   "observed_head": "9f266f774bb73381175693de7aa279baa560e595",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:24:15+00:00",
+  "updated_at": "2026-09-08T12:24:31+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -240,3 +240,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T12:24:09+00:00: Recorded command exit 0; command argv SHA-256
   a6446575ba0e1995a261f93ede75dd2abd2ad3ec0f91cf9ca1c642f4d01993f8.
+
+- 2026-09-08T12:24:31+00:00: Verified all six pinned Exercism source archives via GitHub API tarball
+  endpoints; signed product commit 9f266f7 records per-track SHA-256 identities: cpp fe13f9..., go
+  f255c7..., java da500a..., javascript 5638c8..., python ebe437..., rust 0a22ff.... Validator now
+  accepts and checks per-repository archive digest maps; focused tests pass 2/2. Source provenance
+  is verified, but evaluator/image/SBOM qualification remains absent.
