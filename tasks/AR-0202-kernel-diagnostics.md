@@ -10,17 +10,17 @@
   "id": "AR-0202",
   "next_action": "Add the required adjacent Huawei 2026 and SPDX MIT header to kernel.rs, run focused policy/header tests and Rust gates, then inspect/classify ARM Rust result before publishing a signed repair.",
   "observed_branch": "feature/kernel-diagnostics",
-  "observed_dirty": 2,
-  "observed_head": "bf82f96bdd233c447e1002030606189610131145",
+  "observed_dirty": 0,
+  "observed_head": "fb2adac65f10aa4b228a0bdf3643285161ceea10",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0202.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate perf and optional eBPF diagnostics without making privileged tools mandatory.",
-  "task_revision": 156,
+  "task_revision": 157,
   "title": "Add optional kernel diagnostics",
-  "updated_at": "2026-09-08T23:00:17+00:00",
+  "updated_at": "2026-09-08T23:02:04+00:00",
   "worktree_key": "agent-systems-benchmark-kernel-diagnostics"
 }
 ---
