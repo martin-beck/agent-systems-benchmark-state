@@ -2,7 +2,7 @@
 {
   "branch": "feature/credential-fd-helper-resolvers",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T19:20:40+00:00",
+  "claim_expires": "2026-09-08T22:18:49+00:00",
   "depends_on": [
     "AR-0318"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add explicit file-descriptor and helper credential references without ambient-secret fallback.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Implement credential FD and helper resolvers",
-  "updated_at": "2026-09-08T19:18:37+00:00",
+  "updated_at": "2026-09-08T19:18:49+00:00",
   "worktree_key": "agent-systems-benchmark-credential-fd-helper-resolvers"
 }
 ---
@@ -290,3 +290,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T19:18:37+00:00: Recorded command exit 0; command argv SHA-256
   e0654f13a662838befc37ca28d2061522d4660354f31cf19361820a78ed138f0.
+
+- 2026-09-08T19:18:49+00:00: Heartbeat by replay_20260906.
