@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate perf and optional eBPF diagnostics without making privileged tools mandatory.",
-  "task_revision": 187,
+  "task_revision": 188,
   "title": "Add optional kernel diagnostics",
-  "updated_at": "2026-09-08T23:20:34+00:00",
+  "updated_at": "2026-09-08T23:20:39+00:00",
   "worktree_key": "agent-systems-benchmark-kernel-diagnostics"
 }
 ---
@@ -544,4 +544,7 @@ Implementation has not started. Read the linked plan before claiming.
   857df0bf1368f6d8d0b0aa70943fef3dceaa538281e5d27c05d7e6b658e08b1d.
 
 - 2026-09-08T23:20:27+00:00: Recorded command exit 0; command argv SHA-256
+  844f7eea65b23a73918b23b09a7c0bf9f33b99add3bd5af99b2f5ac0097e1e54.
+
+- 2026-09-08T23:20:39+00:00: Recorded command exit 0; command argv SHA-256
   844f7eea65b23a73918b23b09a7c0bf9f33b99add3bd5af99b2f5ac0097e1e54.
