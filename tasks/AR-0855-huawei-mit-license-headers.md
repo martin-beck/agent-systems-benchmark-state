@@ -2,7 +2,7 @@
 {
   "branch": "fix/huawei-mit-license-headers",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T17:42:02+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "fix/huawei-mit-license-headers",
   "observed_dirty": 0,
   "observed_head": "c90a1137df58d4989124e824410d7aaab7b56e45",
-  "owner": "codex-asb-header-review-repair",
+  "owner": "",
   "plan": "../plans/AR-0855.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files.",
-  "task_revision": 108,
+  "task_revision": 109,
   "title": "Enforce Huawei MIT source headers",
-  "updated_at": "2026-09-08T16:22:22+00:00",
+  "updated_at": "2026-09-08T16:27:04+00:00",
   "worktree_key": "agent-systems-benchmark-huawei-mit-headers"
 }
 ---
@@ -303,3 +303,8 @@ and fresh coordinator snapshot before claiming. Do not modify vendored coordinat
 
 - 2026-09-08T16:22:22+00:00: Recorded command exit 0; command argv SHA-256
   0dceb2f2fc3d8150589fd2c38e8a3d6e2cf6f4372373c3977bda4127c91bac4a.
+
+- 2026-09-08T16:27:04+00:00: PR #82 exact head c90a1137df58d4989124e824410d7aaab7b56e45 is mergeable
+  and all 14 hosted checks pass; product implementation is complete. Await independent review/merge
+  plus immutable upstream agent-workflow-coordinator release and hash-locked vendor sync; do not
+  hand-edit vendor.
