@@ -1,0 +1,68 @@
+name: handoffctl formal verification
+
+"on":
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "tools/handoffctl"
+      - "tools/handoffctl.py"
+      - "tools/status_renderer.py"
+      - "tests/test_status_renderer.py"
+      - "tests/test_handoffctl.py"
+      - "formal/handoffctl/**"
+      - ".github/workflows/handoffctl-formal.yml"
+  pull_request:
+    paths:
+      - "tools/handoffctl"
+      - "tools/handoffctl.py"
+      - "tools/status_renderer.py"
+      - "tests/test_status_renderer.py"
+      - "tests/test_handoffctl.py"
+      - "formal/handoffctl/**"
+      - ".github/workflows/handoffctl-formal.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify-handoffctl:
+    name: Model and implementation contract
+    if: >-
+      github.event_name != 'pull_request' ||
+      github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out source without credentials
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+
+      - name: Set up Java 17
+        uses: actions/setup-java@b6effb05e454b25005698d916606bdc6ffcbf961
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Set up pinned uv
+        uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d
+        with:
+          version: "0.12.8"
+          enable-cache: true
+          cache-dependency-glob: uv.lock
+
+      - name: Install locked quality environment
+        run: uv sync --locked --only-group quality
+
+      - name: Check exhaustive concurrent-state model
+        run: formal/handoffctl/verify.sh
+
+      - name: Check implementation refinement and fault behavior
+        run: uv run python -m unittest discover -s tests -p 'test_*.py'

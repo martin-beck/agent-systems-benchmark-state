@@ -13,6 +13,7 @@ import subprocess
 import sys
 import tempfile
 import textwrap
+import time
 from collections.abc import Iterator
 from pathlib import Path
 from typing import Any, cast
@@ -24,6 +25,10 @@ TASKS = ROOT / "tasks"
 RUNTIME = ROOT / ".runtime"
 LOCK = RUNTIME / "state.lock"
 CONFIG = RUNTIME / "config.json"
+LOCK_TIMEOUT_SECONDS = 10.0
+LOCK_POLL_SECONDS = 0.05
+SUBPROCESS_TIMEOUT_SECONDS = 30.0
+COMMAND_TIMEOUT_SECONDS = 1800.0
 STATUSES = (
     "in_progress",
     "open",
@@ -62,6 +67,15 @@ type Meta = dict[str, Any]
 type Task = tuple[Path, Meta, str]
 type State = dict[str, Any]
 
+
+class LockTimeoutError(RuntimeError):
+    """The coordinator lock could not be acquired within its bounded deadline."""
+
+
+class SubprocessTimeoutError(RuntimeError):
+    """A Git/GitHub or coordinator command exceeded its bounded deadline."""
+
+
 PRIVATE = (
     (re.compile("/" + "home/"), "absolute Linux home path"),
     (re.compile(r"[A-Za-z]:\\Users\\", re.I), "absolute Windows user path"),
@@ -95,8 +109,22 @@ def run(
     cwd: Path | None = None,
     check: bool = True,
     capture: bool = True,
+    timeout: float = SUBPROCESS_TIMEOUT_SECONDS,
 ) -> subprocess.CompletedProcess[str]:
-    proc = subprocess.run(args, cwd=cwd, text=True, capture_output=capture, check=False)
+    try:
+        proc = subprocess.run(
+            args,
+            cwd=cwd,
+            text=True,
+            capture_output=capture,
+            check=False,
+            timeout=timeout,
+        )
+    except subprocess.TimeoutExpired as error:
+        command = " ".join(args)
+        raise SubprocessTimeoutError(
+            f"SUBPROCESS_TIMEOUT after {timeout:.1f}s: {command}"
+        ) from error
     if check and proc.returncode:
         raise RuntimeError(f"command failed ({proc.returncode}): {' '.join(args)}\n{proc.stderr}")
     return proc
@@ -109,11 +137,24 @@ def config() -> Meta:
 
 
 @contextlib.contextmanager
-def locked(*, exclusive: bool = True) -> Iterator[None]:
+def locked(*, exclusive: bool = True, timeout: float = LOCK_TIMEOUT_SECONDS) -> Iterator[None]:
     RUNTIME.mkdir(mode=0o700, exist_ok=True)
     fd = os.open(LOCK, os.O_CREAT | os.O_RDWR, 0o600)
     try:
-        fcntl.flock(fd, fcntl.LOCK_EX if exclusive else fcntl.LOCK_SH)
+        operation = fcntl.LOCK_EX if exclusive else fcntl.LOCK_SH
+        deadline = time.monotonic() + timeout
+        while True:
+            try:
+                fcntl.flock(fd, operation | fcntl.LOCK_NB)
+                break
+            except BlockingIOError as error:
+                remaining = deadline - time.monotonic()
+                if remaining <= 0:
+                    mode = "exclusive" if exclusive else "shared"
+                    raise LockTimeoutError(
+                        f"LOCK_TIMEOUT after {timeout:.1f}s acquiring {mode} coordinator lock"
+                    ) from error
+                time.sleep(min(LOCK_POLL_SECONDS, remaining))
         yield
     finally:
         fcntl.flock(fd, fcntl.LOCK_UN)
@@ -570,6 +611,15 @@ def push_replica() -> None:
     run(["git", "-C", str(ROOT), "push", "origin", f"{local_head}:refs/heads/main"])
 
 
+def restore_paths(before: dict[Path, str | None]) -> None:
+    """Restore a pre-transaction snapshot after a detected failure."""
+    for path, old in before.items():
+        if old is None:
+            path.unlink(missing_ok=True)
+        else:
+            atomic(path, old)
+
+
 def reconcile(*, do_commit: bool, push: bool = False) -> bool:
     with locked():
         state = project_scan()
@@ -612,11 +662,7 @@ def reconcile(*, do_commit: bool, push: bool = False) -> bool:
             return committed if do_commit else True
         except Exception:
             if not committed:
-                for path, old in before.items():
-                    if old is None:
-                        path.unlink(missing_ok=True)
-                    else:
-                        atomic(path, old)
+                restore_paths(before)
             raise
 
 
@@ -864,24 +910,40 @@ def cmd_run(args: argparse.Namespace) -> int:
     require_active_owner(args.task, args.owner)
     # Never execute or consume untracked caller input. Scripts and data must be
     # named by argv or a stable file, whose content digest can be recorded too.
-    proc = subprocess.run(args.command, check=False, stdin=subprocess.DEVNULL)
-    reconcile(do_commit=True, push=True)
-
     command_hash = hashlib.sha256("\0".join(args.command).encode()).hexdigest()
+    timeout = float(getattr(args, "timeout_seconds", COMMAND_TIMEOUT_SECONDS))
+    if timeout <= 0:
+        raise RuntimeError("command timeout must be positive")
+    timed_out = False
+    try:
+        proc = subprocess.run(args.command, check=False, stdin=subprocess.DEVNULL, timeout=timeout)
+    except subprocess.TimeoutExpired:
+        timed_out = True
+        returncode = 124
+    else:
+        returncode = proc.returncode
+    note = (
+        f"Recorded command timeout; classification=SUBPROCESS_TIMEOUT; "
+        f"deadline={timeout:.1f}s; command argv SHA-256 {command_hash}."
+        if timed_out
+        else f"Recorded command exit {returncode}; command argv SHA-256 {command_hash}."
+    )
+    try:
+        reconcile(do_commit=True, push=True)
+    except (LockTimeoutError, SubprocessTimeoutError) as error:
+        note += f" Reconciliation classification preserved: {error}."
     update = argparse.Namespace(
         task=args.task,
         owner=args.owner,
-        # This internal append is serialized by mutate and must attach to the
-        # latest task revision after concurrent observation reconciliation.
         expected_revision=None,
         status=None,
         priority=None,
         summary=None,
         next_action=None,
-        note=f"Recorded command exit {proc.returncode}; command argv SHA-256 {command_hash}.",
+        note=note,
     )
     mutate(update, "update")
-    return proc.returncode
+    return returncode
 
 
 def main() -> int:
@@ -927,6 +989,7 @@ def main() -> int:
     item = commands.add_parser("run")
     item.add_argument("task")
     item.add_argument("--owner", required=True)
+    item.add_argument("--timeout-seconds", type=float, default=COMMAND_TIMEOUT_SECONDS)
     item.add_argument("command", nargs=argparse.REMAINDER)
     args = parser.parse_args()
     if args.cmd == "reconcile":
