@@ -13,7 +13,7 @@
     "AR-0401"
   ],
   "id": "AR-0505",
-  "next_action": "Complete P0 AR-0850 deterministic multi-file aider request ordering, then rerun the exact four-agent native loopback capture/replay matrix without weakening strict comparison.",
+  "next_action": "Rebase the clean conformance worktree onto exact current product main, then rerun the four-agent pinned native loopback capture/replay integration audit without weakening strict request comparison or duplicating AR-0515.",
   "observed_branch": "feature/agent-replay-conformance",
   "observed_dirty": 0,
   "observed_head": "678ba7c8593a52beb8f3279ddd452245294131e7",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Test each actual client through recording and offline replay of engineering tasks.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Prove real-agent replay conformance",
-  "updated_at": "2026-09-08T02:49:50+00:00",
+  "updated_at": "2026-09-08T02:50:09+00:00",
   "worktree_key": "agent-systems-benchmark-agent-replay-conformance"
 }
 ---
@@ -116,3 +116,6 @@ Implementation has not started. Read the linked plan before claiming.
   duplicating AR-0515.
 
 - 2026-09-08T02:49:50+00:00: Claimed by quality_20260906.
+
+- 2026-09-08T02:50:09+00:00: AR-0850 deterministic Aider repair is integrated and exact-main green;
+  begin exact-current-tree four-agent integration audit.
