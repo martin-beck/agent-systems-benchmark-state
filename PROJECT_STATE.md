@@ -4,7 +4,7 @@ Generated from local Git and GitHub. Do not edit.
 
 - Product remote main: `909078ced21f36e5a72590c9decf41ac56452212`
 - Local origin/main: `909078ced21f36e5a72590c9decf41ac56452212`
-- Primary worktree head: `909078ced21f36e5a72590c9decf41ac56452212`
+- Primary worktree head: `2f0f84d4b3ad722d7f35a8bc400830ec53630996`
 
 ## Open pull requests
 
@@ -17,7 +17,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34206963243 | `909078ced21f` | push | Fault assurance | in_progress:- |
+| 34206963243 | `909078ced21f` | push | Fault assurance | completed:success |
 | 34206963221 | `909078ced21f` | push | Emulated aarch64 portability | in_progress:- |
 | 34206963220 | `909078ced21f` | push | Rust verification | in_progress:- |
 | 34206963217 | `909078ced21f` | push | Formal assurance | completed:success |
