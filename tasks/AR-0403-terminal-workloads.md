@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Import terminal tasks through an adapter to the published harness or task format.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Integrate Terminal-Bench workloads",
-  "updated_at": "2026-09-08T17:49:33+00:00",
+  "updated_at": "2026-09-08T18:08:16+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-workloads"
 }
 ---
@@ -236,3 +236,6 @@ Implementation has not started. Read the linked plan before claiming.
   for post-terminal artifact disappearance/corrupt journal and matching event projection. Clean
   one-path scope, SSH signature/DCO, privacy, focused 12 tests, fmt/clippy, exact-range
   policy/diff-check/Gitleaks reproduced green. No AR-0805 mutation.
+
+- 2026-09-08T18:08:16+00:00: Recorded command exit 1; command argv SHA-256
+  384a63992d15fbbc43a1690b017ee5f7bb89c0ecc9cc5540a5a1fa014c0dee17.
