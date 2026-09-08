@@ -10,18 +10,18 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #31 | `feature/native-platforms@bdaf9c108226` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #61 | `feature/kernel-diagnostics@1d24993771a4` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | metrics: add fail-closed optional kernel probes |
+| #31 | `feature/native-platforms@bdaf9c108226` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
+| #61 | `feature/kernel-diagnostics@1d24993771a4` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | metrics: add fail-closed optional kernel probes |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34207708072 | `a97c3ed708cc` | push | Repository quality | queued:- |
-| 34207708071 | `a97c3ed708cc` | push | Emulated aarch64 portability | queued:- |
-| 34207708009 | `a97c3ed708cc` | push | Rust verification | queued:- |
-| 34207708004 | `a97c3ed708cc` | push | Formal assurance | queued:- |
-| 34207707978 | `a97c3ed708cc` | push | Fault assurance | queued:- |
+| 34207708072 | `a97c3ed708cc` | push | Repository quality | in_progress:- |
+| 34207708071 | `a97c3ed708cc` | push | Emulated aarch64 portability | in_progress:- |
+| 34207708009 | `a97c3ed708cc` | push | Rust verification | in_progress:- |
+| 34207708004 | `a97c3ed708cc` | push | Formal assurance | in_progress:- |
+| 34207707978 | `a97c3ed708cc` | push | Fault assurance | in_progress:- |
 | 34207250516 | `2f0f84d4b3ad` | push | Rust verification | completed:success |
 | 34207250470 | `2f0f84d4b3ad` | push | Repository quality | completed:success |
 | 34207250443 | `2f0f84d4b3ad` | push | Fault assurance | completed:success |
