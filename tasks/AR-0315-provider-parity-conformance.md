@@ -20,7 +20,7 @@
     "AR-0505"
   ],
   "id": "AR-0315",
-  "next_action": "Monitor PR #84 exact-head CI for 7a5332dd3d0329343cf27b2433818b749bfdd355; investigate failures, do not merge until every required check and coordinator authorization are green.",
+  "next_action": "Await coordinator serialized merge authorization for PR #84 exact head 7a5332dd3d0329343cf27b2433818b749bfdd355; after authorization use signed/DCO no-ff integration and require all exact-main postmerge workflows before release.",
   "observed_branch": "test/provider-parity-conformance",
   "observed_dirty": 0,
   "observed_head": "7a5332dd3d0329343cf27b2433818b749bfdd355",
@@ -30,9 +30,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Conformance-test identical OpenAI and Ollama profiles across the complete supported-agent matrix.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Verify cross-agent provider parity",
-  "updated_at": "2026-09-08T16:04:25+00:00",
+  "updated_at": "2026-09-08T16:09:24+00:00",
   "worktree_key": "agent-systems-benchmark-provider-parity-conformance"
 }
 ---
@@ -127,3 +127,10 @@ Implementation has not started. Read the linked plan before claiming.
   formal 34248761464; fault/fuzz 34248761747; emulated aarch64 34248761748; repository quality
   34248762086; AWQ shadow 34248762285. PR body preserves structural-only boundary and explicit
   unqualified real wire, Ollama execution, retry/deadline/cancel, and native distro limits.
+
+- 2026-09-08T16:09:24+00:00: PR #84 exact-head CI is terminal green: 13/13 required checks SUCCESS
+  at head 7a5332dd3d0329343cf27b2433818b749bfdd355 and base
+  d51ee9c9ab8889f6b9837a89772f59ea6f37d3a3. GitHub reports OPEN, MERGEABLE, mergeStateStatus CLEAN.
+  Runs: Rust 34248761385; formal/Kani/Loom/TLC 34248761464; fault/fuzz/mutation 34248761747;
+  emulated-aarch64 34248761748; repository quality 34248762086; AWQ 34248762285. No failures and no
+  merge performed. Structural/native qualification limits remain explicit.
