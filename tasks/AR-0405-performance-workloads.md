@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Assess SWE-Perf, SWE-fficiency and CORE-Bench for correctness-preserving optimization and reproducibility.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Add performance and reproducibility workloads",
-  "updated_at": "2026-09-08T21:49:14+00:00",
+  "updated_at": "2026-09-08T21:51:50+00:00",
   "worktree_key": "agent-systems-benchmark-performance-workloads"
 }
 ---
@@ -81,3 +81,6 @@ Implementation has not started. Read the linked plan before claiming.
   Initial 5-test failure was test-order coupling to Terminal-Bench as the final array item;
   corrected to stable ID lookup and rerun green. No dataset was downloaded or executed and no
   support/native claim is made.
+
+- 2026-09-08T21:51:50+00:00: Recorded command exit 0; command argv SHA-256
+  8f4dc5a3ba13b1ba2a686992c290a65e8e45e23ea7f02cc07b1e0da35c5688bd.
