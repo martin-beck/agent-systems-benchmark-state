@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run a maintained MIT OpenHands SDK or canonical headless client.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Implement maintained OpenHands SDK client adapter",
-  "updated_at": "2026-09-08T04:13:01+00:00",
+  "updated_at": "2026-09-08T04:13:03+00:00",
   "worktree_key": "agent-systems-benchmark-agent-openhands"
 }
 ---
@@ -87,3 +87,6 @@ Implementation has not started. Read the linked plan before claiming.
   all-wheel install failed because func-timeout 4.3.5 is sdist-only; sdk-only resolves 136 packages,
   while adding openhands-tools/workspace expands to 194 packages. Use SDK-only plus ASB-owned
   bounded tool to minimize attack surface.
+
+- 2026-09-08T04:13:03+00:00: Recorded command exit 0; command argv SHA-256
+  f1ed95d4565d704f631d934aaba61d6ff0d10990eb20b1c29fe6b01067540429.
