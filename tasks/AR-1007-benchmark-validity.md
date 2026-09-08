@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track dataset provenance, contamination risk, grader validity and native portability per workload revision.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Maintain benchmark validity and portability registry",
-  "updated_at": "2026-09-08T00:34:48+00:00",
+  "updated_at": "2026-09-08T00:35:24+00:00",
   "worktree_key": "agent-systems-benchmark-benchmark-validity"
 }
 ---
@@ -226,3 +226,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T00:34:48+00:00: Recorded command exit 1; command argv SHA-256
   f32004ce381cac5dc9ea8777384dfbce7444a9b7e2fdbe885edee73949d69baa.
+
+- 2026-09-08T00:35:24+00:00: Integration wrapper created signed DCO no-ff merge
+  f42645dd05f17eca5635ca2e82057b703a03a1c3 with exact parents
+  20ac1e507e678aff463ec5f6c7b37cfcd67a5ad0 and 60a6c730457b4c40f9a025751c1e317d9fe9429d, then
+  stopped before push because the local second-parent assertion contained a transcription typo.
+  Remote main and PR remained unchanged. Durable effect preserved; next action is verify the
+  existing merge and push it with the original exact lease, without recreating the merge.
