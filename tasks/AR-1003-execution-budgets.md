@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bound and report wall time, actions, tokens and monetary cost without treating unavailable telemetry as zero.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Enforce cost token and action budgets",
-  "updated_at": "2026-09-08T09:49:19+00:00",
+  "updated_at": "2026-09-08T09:54:28+00:00",
   "worktree_key": "agent-systems-benchmark-execution-budgets"
 }
 ---
@@ -76,3 +76,6 @@ Implementation has not started. Read the linked plan before claiming.
   tests, analysis 25 plus budget vector and reliability tests. Initial fmt --check exit 1 was
   formatting-only before tests; wrapped cargo fmt corrected it. Next: Clippy and semantic
   adversarial audit, then full locked gates.
+
+- 2026-09-08T09:54:28+00:00: Recorded command exit 2; command argv SHA-256
+  48458d4adcbc2714c4ae60f17ec39d916357031118af6e75d9a5cd826c73f20e.
