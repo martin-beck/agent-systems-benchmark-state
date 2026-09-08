@@ -7,7 +7,7 @@
     "AR-0401"
   ],
   "id": "AR-0402",
-  "next_action": "Pin SWE-bench main 02e7a74ffd0b707aab73d203fe87bdc7c76afc8e (MIT) and Aider Polyglot main 7e0611e77b54e2dea774cdc0aa00cf9f7ed6144f; capture Exercism per-track licenses and official harness/image digests before implementation.",
+  "next_action": "Define content-addressed external source manifests for SWE-bench 02e7a74ffd0b707aab73d203fe87bdc7c76afc8e and Polyglot 7e0611e77b54e2dea774cdc0aa00cf9f7ed6144f; include Exercism cpp 413b80a9, go 97472cfe, java f1b22a3d, javascript 9be84b9e, python 1f6aab86, rust 1d3a0f46 (all MIT), then pin evaluator/image metadata.",
   "observed_branch": "feature/external-code-workloads",
   "observed_dirty": 0,
   "observed_head": "123c58f7a971f210873124fccb31daa16139aab4",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T08:43:57+00:00",
+  "updated_at": "2026-09-08T08:44:09+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -73,3 +73,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T08:43:57+00:00: Recorded command exit 0; command argv SHA-256
   9c128dd8e7f3b6c5554ba8c45cfdc5b8904bd153e2456c36b633e5d68ecd6d53.
+
+- 2026-09-08T08:44:09+00:00: Fresh official API audit pinned all six Exercism source repositories
+  and found MIT SPDX metadata for each. No source content or datasets were copied; product
+  implementation remains pending manifest design and evaluator/image provenance.
