@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate the verified environment credential resolver into the product workspace.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Integrate provider credential boundary",
-  "updated_at": "2026-09-08T14:19:05+00:00",
+  "updated_at": "2026-09-08T14:19:22+00:00",
   "worktree_key": "agent-systems-benchmark-provider-credential-integration"
 }
 ---
@@ -46,3 +46,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-08T14:19:05+00:00: Signed merge 0f92642 integrates reviewed AR-0318 docs/source 5d62546
   into exact product tree; SSH signature and DCO verified. Independent cargo test --locked -p
   asb-agents credential passed 6/6 with 123 filtered; worktree clean. Full release gates remain.
+
+- 2026-09-08T14:19:22+00:00: Recorded command exit 0; command argv SHA-256
+  f1d97222cdf93ad9911a8c7146cc0bc489b50518564feabfa801d107d429120c.
