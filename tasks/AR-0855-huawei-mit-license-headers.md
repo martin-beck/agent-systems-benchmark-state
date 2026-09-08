@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files.",
-  "task_revision": 196,
+  "task_revision": 197,
   "title": "Enforce Huawei MIT source headers",
-  "updated_at": "2026-09-08T19:43:10+00:00",
+  "updated_at": "2026-09-08T19:43:28+00:00",
   "worktree_key": "agent-systems-benchmark-huawei-mit-headers"
 }
 ---
@@ -566,3 +566,6 @@ and fresh coordinator snapshot before claiming. Do not modify vendored coordinat
   c4fcd14be30e5215b1f6192e3e84c1a40aa19ec1; resume clean re-sync and remaining state enforcement.
 
 - 2026-09-08T19:43:10+00:00: Claimed by codex-asb-state-headers-v033.
+
+- 2026-09-08T19:43:28+00:00: Recorded command exit 0; command argv SHA-256
+  51123d0f93d2d1312391fe2eb7fb765cba78af8d776bf72e87923619e45b8240.
