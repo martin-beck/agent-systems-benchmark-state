@@ -11,6 +11,12 @@ Never edit this file directly.
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. | root-coordination-20260906 |
 | P1 | [AR-0848](tasks/AR-0848-native-x86-capacity.md): Qualify native x86 capacity | Qualify authorized disposable native x86_64 capacity on a development host. | Await independent immutable review of exact signed head 5d2cd78a924b2e2cb76e0bf48e01dca3e9249e74; publish only after approval, then exact-head CI and serialized integration. Native aarch64 and performance support remain explicitly unsupported. | quality_20260906 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1002](tasks/AR-1002-verifier-integrity.md): Protect verifiers and support offline rescoring | Separate immutable graders from agent work and version scoring independently of execution. | Design the immutable observation and score-revision contract using Inspect and Harbor concepts. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -65,7 +71,6 @@ Never edit this file directly.
 | P1 | [AR-0844](tasks/AR-0844-frontend-api-integration.md): Integrate frontend control API | Integrate and qualify the frontend control API as an independent boundary. | Integrate independently reviewed frontend API components and qualify standalone runner operation. | - |
 | P1 | [AR-0846](tasks/AR-0846-artifact-retention-cleanup.md): Add linked artifact retention and cleanup | Manage ASB GitHub artifact retention and cleanup without deleting required evidence. | Implement dry-run inventory and explicitly authorized bounded cleanup for linked GitHub artifacts. | - |
 | P1 | [AR-0904](tasks/AR-0904-contract-consistency.md): Machine-check protocol and artifact consistency | Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree. | Define canonical sources and generated/artifact-diff gates before extension implementations fan out. | - |
-| P1 | [AR-1002](tasks/AR-1002-verifier-integrity.md): Protect verifiers and support offline rescoring | Separate immutable graders from agent work and version scoring independently of execution. | Design the immutable observation and score-revision contract using Inspect and Harbor concepts. | - |
 | P1 | [AR-1003](tasks/AR-1003-execution-budgets.md): Enforce cost token and action budgets | Bound and report wall time, actions, tokens and monetary cost without treating unavailable telemetry as zero. | Specify budget capabilities and normalize provider usage with explicit uncertainty. | - |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Design capability probes and bounded diagnostics profiles. | - |
 | P2 | [AR-0309](tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | Run a maintained MIT OpenHands SDK or canonical headless client. | Resolve the maintained SDK/client boundary and exclude retired or enterprise-licensed components. | - |
