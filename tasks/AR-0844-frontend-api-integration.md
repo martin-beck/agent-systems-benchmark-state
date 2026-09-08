@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate and qualify the frontend control API as an independent boundary.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Integrate frontend control API",
-  "updated_at": "2026-09-08T11:29:32+00:00",
+  "updated_at": "2026-09-08T11:30:54+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-api-integration"
 }
 ---
@@ -78,3 +78,6 @@ status, no implicit network listener exists, and exact-head CI/post-merge recove
 
 - 2026-09-08T11:29:32+00:00: Recorded command exit 0; command argv SHA-256
   7774bd71bd191357e6abab6a1d18519c54b913349737a738543a99b8f04228b4.
+
+- 2026-09-08T11:30:54+00:00: Recorded command exit 0; command argv SHA-256
+  b7a106963f097b95759c96e91fe475e74b38b09341509eddb3094131266dcdd7.
