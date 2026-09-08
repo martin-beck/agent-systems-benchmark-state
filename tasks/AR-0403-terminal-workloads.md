@@ -10,16 +10,16 @@
   "next_action": "Monitor PR #85 exact head 76e01e9372ca80759eb71b42913c383ccbb6c9ad checks to terminal; investigate any failure and do not merge without coordinator authorization. Preserve explicit no-native/no-execution qualification limits.",
   "observed_branch": "feature/terminal-workloads",
   "observed_dirty": 0,
-  "observed_head": "76e01e9372ca80759eb71b42913c383ccbb6c9ad",
+  "observed_head": "3e67bdfc3ce093234027d4be883223a6f3b6560c",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0403.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Import terminal tasks through an adapter to the published harness or task format.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Integrate Terminal-Bench workloads",
-  "updated_at": "2026-09-08T20:16:35+00:00",
+  "updated_at": "2026-09-08T20:17:00+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-workloads"
 }
 ---
