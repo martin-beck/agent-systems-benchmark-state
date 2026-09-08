@@ -2,7 +2,7 @@
 {
   "branch": "feature/provider-ollama",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T10:55:50+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0301",
     "AR-0302",
@@ -20,15 +20,15 @@
   "observed_branch": "feature/provider-ollama",
   "observed_dirty": 0,
   "observed_head": "8137f5baa0535e5d6e74d5a81e1dfbb0deaa2615",
-  "owner": "contracts_20260906",
+  "owner": "",
   "plan": "../plans/AR-0312.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Apply one pinned local Ollama provider and model configuration to all supported agents.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Support a shared local Ollama provider",
-  "updated_at": "2026-09-08T09:50:37+00:00",
+  "updated_at": "2026-09-08T09:51:01+00:00",
   "worktree_key": "agent-systems-benchmark-provider-ollama"
 }
 ---
@@ -142,3 +142,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T09:50:37+00:00: Recorded command exit 0; command argv SHA-256
   093d9c2f4b57ade287c51dfbbf795e0f94cb30f4864ba63923c090db33181d57.
+
+- 2026-09-08T09:51:01+00:00: Done at signed+DCO product merge/main
+  e5cdf97dd2954e5d097b1a6c872beafd724aa12f containing exact reviewed candidate
+  8137f5baa0535e5d6e74d5a81e1dfbb0deaa2615 (PR #71). Exact-main runs all success: quality
+  34211591639, aarch64 34211591672, Rust 34211591698, fault 34211591725, formal 34211591716. Fresh
+  external-target postmerge: four focused Ollama unit tests pass; exact ignored native read-only
+  binary/server/model probe passes; asb-agents all-target clippy and repository policy pass; primary
+  remains clean. Support remains limited to pinned Ollama 0.33.1 Linux x86_64 binary and preloaded
+  qwen3-coder:30b on numeric loopback; daemon/model lifecycle is operator managed, no implicit
+  pulls, Gemini and remote/TLS routes unsupported.
