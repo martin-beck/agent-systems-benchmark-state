@@ -10,15 +10,18 @@
   ],
   "id": "AR-0802",
   "next_action": "Capture actual CLI workflows after commands are implemented.",
+  "observed_branch": "feature/executable-guides",
+  "observed_dirty": 0,
+  "observed_head": "7a435fb6a4acc59300771b8478ee342f72555c96",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0802.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish executable offline quickstart, workload/agent extension guide and reproducibility guide.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Deliver runnable user and extension guides",
-  "updated_at": "2026-09-08T06:20:54+00:00",
+  "updated_at": "2026-09-08T06:21:21+00:00",
   "worktree_key": "agent-systems-benchmark-executable-guides"
 }
 ---

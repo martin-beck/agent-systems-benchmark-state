@@ -27,6 +27,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 177, ahead 0 |
 | `agent-systems-benchmark-emulated-aarch64-portability` | `feature/emulated-aarch64-portability` | `0e6d74d2cf9f` | 0 | behind 17, ahead 0 |
 | `agent-systems-benchmark-engineering-workloads` | `feature/engineering-workloads` | `41ffc6eb8f1a` | 0 | behind 121, ahead 0 |
+| `agent-systems-benchmark-executable-guides` | `feature/executable-guides` | `7a435fb6a4ac` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-experiment-comparability` | `feature/experiment-comparability` | `eb5e84933830` | 0 | behind 131, ahead 0 |
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 185, ahead 0 |
 | `agent-systems-benchmark-fault-assurance` | `feature/fault-assurance` | `e6c623113c15` | 0 | behind 97, ahead 0 |
