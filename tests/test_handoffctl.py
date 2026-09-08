@@ -32,6 +32,15 @@ def hold_lock(lock_path: str, ready: Any, release: Any) -> None:
         release.wait(5)
 
 
+def hold_shared_lock(lock_path: str, ready: Any, release: Any) -> None:
+    """Hold a shared lock in a separate process."""
+    CORE.LOCK = Path(lock_path)
+    CORE.RUNTIME = CORE.LOCK.parent
+    with CORE.locked(exclusive=False):
+        ready.set()
+        release.wait(5)
+
+
 def configure_child(root_value: str) -> None:
     """Point the imported coordinator module at a process-shared fixture."""
     root = Path(root_value)
@@ -40,6 +49,22 @@ def configure_child(root_value: str) -> None:
     CORE.RUNTIME = root / ".runtime"
     CORE.LOCK = CORE.RUNTIME / "state.lock"
     CORE.CONFIG = CORE.RUNTIME / "config.json"
+
+
+def racing_claim(root_value: str, start: Any, owner: str, outcomes: Any) -> None:
+    """Race a claim and report whether the serialized transition won."""
+    configure_child(root_value)
+    start.wait(5)
+    try:
+        with patch.object(CORE, "commit", return_value=True):
+            CORE.mutate(
+                argparse.Namespace(task="AR-0001", owner=owner, lease_minutes=10),
+                "claim",
+            )
+    except RuntimeError as error:
+        outcomes.put(("rejected", str(error)))
+    else:
+        outcomes.put(("accepted", owner))
 
 
 def concurrent_claim(root_value: str, start: Any) -> None:
@@ -594,6 +619,95 @@ class HandoffTest(unittest.TestCase):
         self.assertEqual(0, process.exitcode)
         self.assertGreaterEqual(elapsed, 0)
 
+    def test_shared_readers_coexist_and_exclude_a_writer(self) -> None:
+        ready = multiprocessing.Event()
+        release = multiprocessing.Event()
+        reader = multiprocessing.Process(
+            target=hold_shared_lock,
+            args=(str(CORE.LOCK), ready, release),
+        )
+        reader.start()
+        self.assertTrue(ready.wait(5))
+        try:
+            with CORE.locked(exclusive=False, timeout=0.1):
+                pass
+            with (
+                self.assertRaisesRegex(CORE.LockTimeoutError, "LOCK_TIMEOUT"),
+                CORE.locked(timeout=0.1),
+            ):
+                pass
+        finally:
+            release.set()
+            reader.join(5)
+        self.assertEqual(0, reader.exitcode)
+
+    def test_lock_timeout_is_bounded_and_does_not_wait_for_convoy(self) -> None:
+        ready = multiprocessing.Event()
+        release = multiprocessing.Event()
+        process = multiprocessing.Process(
+            target=hold_lock,
+            args=(str(CORE.LOCK), ready, release),
+        )
+        process.start()
+        self.assertTrue(ready.wait(5))
+        started = time.monotonic()
+        try:
+            with (
+                self.assertRaisesRegex(CORE.LockTimeoutError, "LOCK_TIMEOUT"),
+                CORE.locked(timeout=0.1),
+            ):
+                pass
+        finally:
+            release.set()
+            process.join(5)
+        self.assertLess(time.monotonic() - started, 1)
+        self.assertEqual(0, process.exitcode)
+
+    def test_lock_is_released_after_body_error(self) -> None:
+        with self.assertRaisesRegex(RuntimeError, "body failure"), CORE.locked(timeout=0.1):
+            raise RuntimeError("body failure")
+        with CORE.locked(timeout=0.1):
+            pass
+
+    def test_subprocess_timeout_is_classified(self) -> None:
+        with (
+            patch.object(
+                CORE.subprocess,
+                "run",
+                side_effect=subprocess.TimeoutExpired(["git", "scan"], 0.1),
+            ),
+            self.assertRaisesRegex(CORE.SubprocessTimeoutError, "SUBPROCESS_TIMEOUT"),
+        ):
+            CORE.run(["git", "scan"], timeout=0.1)
+
+    def test_parallel_claims_have_one_linearization_winner(self) -> None:
+        self.make_task()
+        start = multiprocessing.Event()
+        outcomes: Any = multiprocessing.Queue()
+        claimants = [
+            multiprocessing.Process(
+                target=racing_claim,
+                args=(str(self.root), start, owner, outcomes),
+            )
+            for owner in ("worker-a", "worker-b")
+        ]
+        for process in claimants:
+            process.start()
+        start.set()
+        for process in claimants:
+            process.join(10)
+            self.assertEqual(0, process.exitcode)
+
+        results = sorted(outcomes.get(timeout=2)[0] for _ in claimants)
+        self.assertEqual(["accepted", "rejected"], results)
+        meta, _ = CORE.read_task(CORE.locate("AR-0001")[0])
+        self.assertEqual("in_progress", meta["status"])
+        self.assertIn(meta["owner"], {"worker-a", "worker-b"})
+        self.assertEqual(2, meta["task_revision"])
+        self.assertEqual(
+            CORE.render_status_view(CORE.all_tasks()), (self.root / "STATUS.md").read_text()
+        )
+
     def test_concurrent_claim_and_reconcile_keep_status_current(self) -> None:
         self.make_task()
         start = multiprocessing.Event()
@@ -1091,7 +1205,50 @@ class HandoffTest(unittest.TestCase):
             self.assertEqual(0, CORE.cmd_run(args))
             self.assertIn("command argv SHA-256", mutate.call_args.args[0].note)
             self.assertIsNone(mutate.call_args.args[0].expected_revision)
-            subprocess_run.assert_called_once_with(["true"], check=False, stdin=subprocess.DEVNULL)
+            subprocess_run.assert_called_once_with(
+                ["true"], check=False, stdin=subprocess.DEVNULL, timeout=1800.0
+            )
+        timeout_args = argparse.Namespace(
+            task="AR-0001",
+            owner="worker-a",
+            command=["slow"],
+            timeout_seconds=0.1,
+        )
+        with (
+            patch.object(
+                CORE.subprocess,
+                "run",
+                side_effect=subprocess.TimeoutExpired(["slow"], 0.1),
+            ),
+            patch.object(CORE, "reconcile"),
+            patch.object(CORE, "mutate") as mutate,
+        ):
+            self.assertEqual(124, CORE.cmd_run(timeout_args))
+            self.assertIn("classification=SUBPROCESS_TIMEOUT", mutate.call_args.args[0].note)
+        with (
+            patch.object(CORE.subprocess, "run", return_value=completed),
+            patch.object(
+                CORE,
+                "reconcile",
+                side_effect=CORE.SubprocessTimeoutError("SUBPROCESS_TIMEOUT after 0.1s"),
+            ),
+            patch.object(CORE, "mutate") as mutate,
+        ):
+            self.assertEqual(0, CORE.cmd_run(args))
+            self.assertIn("SUBPROCESS_TIMEOUT", mutate.call_args.args[0].note)
+        with (
+            patch.object(CORE.subprocess, "run") as command,
+            self.assertRaisesRegex(RuntimeError, "timeout must be positive"),
+        ):
+            CORE.cmd_run(
+                argparse.Namespace(
+                    task="AR-0001",
+                    owner="worker-a",
+                    command=["true"],
+                    timeout_seconds=0,
+                )
+            )
+        command.assert_not_called()
         with self.assertRaisesRegex(RuntimeError, "claim"):
             CORE.cmd_run(argparse.Namespace(task="AR-0001", owner="wrong", command=["true"]))
         with self.assertRaisesRegex(RuntimeError, "missing command"):
