@@ -8,7 +8,7 @@
     "AR-0841"
   ],
   "id": "AR-0843",
-  "next_action": "Hold immutable signed candidate cca49ec3bea429a90a267600acf821cebe45c138 for independent review; LGTM is requiredreti? ",
+  "next_action": "Hold immutable signed candidate cca49ec3bea429a90a267600acf821cebe45c138 for independent review; do not publish or merge.",
   "observed_branch": "feature/frontend-privacy-assurance",
   "observed_dirty": 0,
   "observed_head": "cca49ec3bea429a90a267600acf821cebe45c138",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify frontend privacy, artifact access, and fault behavior.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Assure frontend privacy and faults",
-  "updated_at": "2026-09-08T08:53:29+00:00",
+  "updated_at": "2026-09-08T08:53:55+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-privacy-assurance"
 }
 ---
@@ -158,3 +158,13 @@ redaction failures; prove no credentials, prompts, transcripts, or private paths
   cca49ec3bea429a90a267600acf821cebe45c138, tree 19fff18d0c3732ddc19651969e723ade0fa5dd2f, parent
   exact ba97a20f60f39b4c5ef601a7dade148276a631d6. Worktree is clean; range is exactly
   crates/asb-cli/src/control.rs and docs/FRONTgadas?
+
+- 2026-09-08T08:53:55+00:00: Correction to the immediately prior truncated checkpoint note:
+  candidate was created after independent review approval. Exact head is
+  cca49ec3bea429a90a267600acf821cebe45c138, tree 19fff18d0c3732ddc19651969e723ade0fa5dd2f, and
+  parent ba97a20f60f39b4c5ef601a7dade148276a631d6. The clean range contains exactly
+  crates/asb-cli/src/control.rs and docs/FRONTEND_CONTROL_API.md. SSH signature verifies for
+  martin.beck2@gmx.de with the expected ED25519 key; the exact Signed-off-by trailer is present.
+  Repository policy, exact-range Gitleaks, clean index/worktree, and two-path scope checks all
+  passed. This correction supersedes only the malformed wording in the prior note; candidate
+  identity and evidence are unchanged.
