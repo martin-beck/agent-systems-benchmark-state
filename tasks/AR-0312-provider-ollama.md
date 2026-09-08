@@ -16,7 +16,7 @@
     "AR-0310"
   ],
   "id": "AR-0312",
-  "next_action": "Implement a loopback-only local Ollama profile and prove every compatible adapter translation.",
+  "next_action": "Hold exact e49acbf455f6ca745bfd3119c729d6326904b67b unpublished for independent immutable review.",
   "observed_branch": "feature/provider-ollama",
   "observed_dirty": 0,
   "observed_head": "e49acbf455f6ca745bfd3119c729d6326904b67b",
@@ -26,9 +26,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply one pinned local Ollama provider and model configuration to all supported agents.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Support a shared local Ollama provider",
-  "updated_at": "2026-09-08T09:22:54+00:00",
+  "updated_at": "2026-09-08T09:23:31+00:00",
   "worktree_key": "agent-systems-benchmark-provider-ollama"
 }
 ---
@@ -87,3 +87,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T09:22:54+00:00: Recorded command exit 0; command argv SHA-256
   7cb5d8dadb276593f19c9551b1f3c1560a89f5b9733f5952001d2d8092acb0d9.
+
+- 2026-09-08T09:23:31+00:00: Focused SSH-signed+DCO candidate
+  e49acbf455f6ca745bfd3119c729d6326904b67b, tree c28e97e6e712f31ae50cce0c46e2570edc3039d1, parent
+  2f0f84d4b3ad722d7f35a8bc400830ec53630996; clean exact three-path scope:
+  crates/asb-agents/src/lib.rs, crates/asb-agents/src/ollama.rs, crates/asb-agents/OLLAMA.md.
+  Focused behavior/native probe, workspace fmt/clippy/tests/docs/release, cargo-deny/audit,
+  repository policy, Gitleaks, and fresh configured coverage pass. Earlier exit 101 was harness PATH
+  missing cargo-deny, not product; corrected tools path passed.
