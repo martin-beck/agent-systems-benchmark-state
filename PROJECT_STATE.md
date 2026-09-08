@@ -20,9 +20,9 @@ Generated from local Git and GitHub. Do not edit.
 | 34286967403 | `7571592990bf` | push | Rust verification | in_progress:- |
 | 34286967391 | `7571592990bf` | push | Emulated aarch64 portability | in_progress:- |
 | 34286967390 | `7571592990bf` | push | Huawei MIT source headers | completed:success |
-| 34286967367 | `7571592990bf` | push | Repository quality | in_progress:- |
-| 34286967363 | `7571592990bf` | push | Formal assurance | in_progress:- |
-| 34286967302 | `7571592990bf` | push | Fault assurance | in_progress:- |
+| 34286967367 | `7571592990bf` | push | Repository quality | completed:failure |
+| 34286967363 | `7571592990bf` | push | Formal assurance | completed:success |
+| 34286967302 | `7571592990bf` | push | Fault assurance | completed:success |
 | 34286493064 | `0d9d317716d5` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 34286493030 | `0d9d317716d5` | pull_request | Huawei MIT source headers | completed:success |
 | 34286492908 | `0d9d317716d5` | pull_request | Formal assurance | completed:success |
