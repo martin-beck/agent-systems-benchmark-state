@@ -9,17 +9,17 @@
   "id": "AR-0402",
   "next_action": "Repair or replace unavailable Aider revision through a fresh provenance review, verify Exercism archives, then implement production adapter integration.",
   "observed_branch": "feature/external-code-workloads",
-  "observed_dirty": 1,
-  "observed_head": "ba2d39adb7a7182ce2b5cebe2f096df5bca5094e",
+  "observed_dirty": 0,
+  "observed_head": "978902512478907f7eda3040b0c0de0b317cdfc0",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0402.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:22:25+00:00",
+  "updated_at": "2026-09-08T12:22:30+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
