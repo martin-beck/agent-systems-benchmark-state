@@ -20,7 +20,7 @@
     "AR-0505"
   ],
   "id": "AR-0315",
-  "next_action": "Create SSH-signed+DCO two-file structural-conformance checkpoint, then run commit-range repository policy and Gitleaks; request independent review without claiming real pinned-agent/native completion.",
+  "next_action": "Independent immutable review of structural candidate 7a5332dd3d0329343cf27b2433818b749bfdd355; do not publish or claim AR completion until review decides whether documented pinned-agent/native evidence limits require a follow-up qualification task.",
   "observed_branch": "test/provider-parity-conformance",
   "observed_dirty": 0,
   "observed_head": "7a5332dd3d0329343cf27b2433818b749bfdd355",
@@ -30,9 +30,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Conformance-test identical OpenAI and Ollama profiles across the complete supported-agent matrix.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Verify cross-agent provider parity",
-  "updated_at": "2026-09-08T16:02:27+00:00",
+  "updated_at": "2026-09-08T16:02:55+00:00",
   "worktree_key": "agent-systems-benchmark-provider-parity-conformance"
 }
 ---
@@ -107,3 +107,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T16:02:27+00:00: Recorded command exit 0; command argv SHA-256
   de495bef8e21081eccf51d24e533dd20572a6a348ec2bfc9821b890e599078a2.
+
+- 2026-09-08T16:02:55+00:00: Created clean focused candidate
+  7a5332dd3d0329343cf27b2433818b749bfdd355, tree de68a05c77eb4af013fdeb53f06f326f1865aac3, exact
+  parent d51ee9c9ab8889f6b9837a89772f59ea6f37d3a3. Scope is exactly two new paths and 294 inserted
+  lines. SSH signature verifies with Martin Beck ED25519 key, exact DCO trailer present, git
+  diff/show checks clean, repository policy passes on HEAD^..HEAD, and commit-range Gitleaks reports
+  no leaks. All focused/full/coverage/docs/contract/failure/platform/supply gates previously
+  recorded green. Candidate intentionally makes only structural/synthetic parity claims; real
+  pinned-agent wire parity, real Ollama model, retry/deadline/cancellation comparison, and native
+  distro matrix remain explicit limits.
