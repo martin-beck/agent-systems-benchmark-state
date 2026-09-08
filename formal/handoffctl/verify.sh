@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# Copyright (C) Huawei Technologies Co., Ltd. 2026. All rights reserved.
+# SPDX-License-Identifier: MIT
 set -euo pipefail
 
 readonly TLA_VERSION=1.7.4
@@ -23,4 +25,5 @@ run_model() {
 run_model HandoffctlBinding
 run_model HandoffctlLocks
 run_model HandoffctlRun
+run_model HandoffctlStorage
 run_model Handoffctl

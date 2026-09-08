@@ -3,45 +3,61 @@ name: Coordination verification
   push:
     branches: [main]
     paths:
+      - ".pre-commit-config.yaml"
       - ".handoffctl.json"
       - "coordinator.binding.json"
       - "coordinator.vendor.json"
       - "docs/agent-workflow-coordinator.md"
       - ".github/workflows/handoffctl-formal.yml"
+      - ".github/workflows/source-headers.yml"
       - ".github/workflows/verify.yml"
       - "formal/handoffctl/**"
       - "pyproject.toml"
+      - "schema/handoffctl-backend-config.schema.json"
       - "schema/handoffctl-project-binding.schema.json"
       - "schema/handoffctl-project-config.schema.json"
-      - "schema/task.schema.json"
+      - "schema/task-schema.json"
       - "tests/test_handoffctl.py"
       - "tests/test_handoffctl_vendor.py"
+      - "tests/test_source_headers.py"
+      - "tests/test_sqlite_storage.py"
       - "tests/validate_schema.py"
+      - "tools/awq"
+      - "tools/check_source_headers.py"
       - "tools/handoffctl"
       - "tools/handoffctl.py"
       - "tools/handoffctl_vendor.py"
+      - "tools/sqlite_storage.py"
       - "tools/status_renderer.py"
       - "uv.lock"
       - "vendor/agent-workflow-coordinator/**"
   pull_request:
     paths:
+      - ".pre-commit-config.yaml"
       - ".handoffctl.json"
       - "coordinator.binding.json"
       - "coordinator.vendor.json"
       - "docs/agent-workflow-coordinator.md"
       - ".github/workflows/handoffctl-formal.yml"
+      - ".github/workflows/source-headers.yml"
       - ".github/workflows/verify.yml"
       - "formal/handoffctl/**"
       - "pyproject.toml"
+      - "schema/handoffctl-backend-config.schema.json"
       - "schema/handoffctl-project-binding.schema.json"
       - "schema/handoffctl-project-config.schema.json"
-      - "schema/task.schema.json"
+      - "schema/task-schema.json"
       - "tests/test_handoffctl.py"
       - "tests/test_handoffctl_vendor.py"
+      - "tests/test_source_headers.py"
+      - "tests/test_sqlite_storage.py"
       - "tests/validate_schema.py"
+      - "tools/awq"
+      - "tools/check_source_headers.py"
       - "tools/handoffctl"
       - "tools/handoffctl.py"
       - "tools/handoffctl_vendor.py"
+      - "tools/sqlite_storage.py"
       - "tools/status_renderer.py"
       - "uv.lock"
       - "vendor/agent-workflow-coordinator/**"
@@ -70,11 +86,15 @@ jobs:
         run: uv sync --locked --only-group quality
       - name: Verify pinned coordinator release
         run: uv run python tools/handoffctl_vendor.py verify --target .
+      - name: Verify Huawei MIT source headers
+        run: uv run python tools/check_source_headers.py
       - name: Formatting and typing
         run: |
           uv run ruff format --check tools tests
           uv run ruff check --no-fix tools tests
-          uv run mypy tools/handoffctl.py tools/handoffctl_vendor.py tools/status_renderer.py tests
+          uv run mypy tools tests
+      - name: Coordinator complexity budget
+        run: uv run lizard -l python --CCN 14 tools/handoffctl.py
       - name: Fault tests and coverage
         run: |
           uv run coverage run --branch -m unittest discover -s tests -p 'test_*.py'

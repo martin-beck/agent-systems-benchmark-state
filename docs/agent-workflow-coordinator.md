@@ -5,10 +5,11 @@ canonical project is <https://github.com/martin-beck/agent-workflow-coordinator>
 
 ## What is bound to a project
 
-Initialization creates two tracked files:
+Initialization creates three tracked files:
 
 - `.handoffctl.json`: non-secret identity and presentation settings.
 - `coordinator.binding.json`: an immutable project UUID plus state and product repository IDs.
+- `coordinator.backend.json`: the project-bound authoritative backend (`sqlite` or `git`).
 
 Every command after `init` verifies the profile UUID, state checkout root and origin, product
 identity from private runtime configuration, product checkout origin, and the caller's current
@@ -19,6 +20,7 @@ rewrites the coordinator source, Git history, and binding files.
 ## Files in an integrated state repository
 
 - `.runtime/config.json`: ignored, mode 0600, with machine-local paths and optional push.
+- `.runtime/coordinator.sqlite3`: ignored SQLite WAL authority for default-backend projects.
 - `tasks/`: Markdown records with strict JSON front matter.
 - `plans/`: detailed plans referenced by tasks.
 - `CURRENT.md`: deterministic compact queue; never edit directly.
@@ -37,8 +39,16 @@ tools/handoffctl init \
   --project-name example-project \
   --project-title "Example Project" \
   --status-view \
-  --commit-signoff
+   --commit-signoff
 ```
+
+This defaults to SQLite WAL. Add `--backend git` to retain Markdown/Git authority. Normal SQLite
+commands work without `.runtime/config.json`, GitHub CLI or network access. Runtime configuration is
+needed only for product-checkout calls, live observations, or optional publication.
+
+Existing initialized projects without `coordinator.backend.json` remain Git-backed after upgrades.
+Never manufacture that file to migrate; use `handoffctl migrate --to sqlite`, verify the database
+and projections, and retain the Git files for the documented `migrate --to git` rollback.
 
 Omit `--status-view` if the project has no `STATUS.md`. Omit `--commit-signoff` if DCO trailers
 are not project policy. Commit both binding files with the vendor snapshot. There is deliberately
@@ -97,7 +107,7 @@ Use a clean checkout at an exact upstream release tag:
 python /path/to/agent-workflow-coordinator/tools/vendor.py sync \
   --source /path/to/agent-workflow-coordinator \
   --target /path/to/project-state \
-  --version v0.2.0
+  --version v0.3.5
 python tools/handoffctl_vendor.py verify --target .
 ```
 
