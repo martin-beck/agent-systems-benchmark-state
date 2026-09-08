@@ -25,9 +25,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make supported agent installations reproducible, license-audited, SBOM-backed, and independently verifiable.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Publish reproducible agent runtime bundles",
-  "updated_at": "2026-09-08T11:30:52+00:00",
+  "updated_at": "2026-09-08T11:32:56+00:00",
   "worktree_key": "agent-systems-benchmark-agent-runtime-bundles"
 }
 ---
@@ -61,3 +61,6 @@ Implementation has not started. Read the linked plan before claiming.
   Initial audit confirms AR-0317 already supplies signed v1 manifest/offline verification; AR-0316
   must add complete per-agent graphs, provenance/license/SBOM agreement, and fail-closed
   acquisition/materialization without modifying shared fences yet.
+
+- 2026-09-08T11:32:56+00:00: Recorded command exit 127; command argv SHA-256
+  c0db99a2702ae9a4f09471850ba78de431d9dcb0cfbe382d43c5e46fccc9e47e.
