@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T16:41:22+00:00",
+  "updated_at": "2026-09-08T16:42:45+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -90,3 +90,6 @@ Implementation has not started. Read the linked plan before claiming.
   diff-check pass. The prior exit 101 was repaired by restoring MutationParams and moving test-only
   IDs under cfg(test). AR-0855 is now blocked/unowned, so its active path fence is returned; future
   rebase must preserve the required header delta.
+
+- 2026-09-08T16:42:45+00:00: Recorded command exit 1; command argv SHA-256
+  27dfaf8283c89553da77b2f951150438d336134c52a62106346d10292ccdaf06.
