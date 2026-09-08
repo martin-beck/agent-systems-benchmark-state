@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish executable offline quickstart, workload/agent extension guide and reproducibility guide.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Deliver runnable user and extension guides",
-  "updated_at": "2026-09-08T06:26:54+00:00",
+  "updated_at": "2026-09-08T06:26:56+00:00",
   "worktree_key": "agent-systems-benchmark-executable-guides"
 }
 ---
@@ -40,3 +40,6 @@ Implementation has not started. Read the linked plan before claiming.
   93f0cd29c34e2137f91a1806d95d5f0860c02df3faad1fcf1909e14f8051ddde.
 
 - 2026-09-08T06:24:11+00:00: Heartbeat by quality_20260906.
+
+- 2026-09-08T06:26:56+00:00: Recorded command exit 0; command argv SHA-256
+  95ddb3efe65b79f1fe22b2d074bd8de5ec9c919c3ab660365b3f36e163e0d738.
