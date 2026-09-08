@@ -2,7 +2,7 @@
 {
   "branch": "feature/tui-run-control",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-08T22:33:05+00:00",
   "depends_on": [
     "AR-0104",
     "AR-0204",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/tui-run-control",
   "observed_dirty": 0,
   "observed_head": "da0d21b9c403c960e1eaac979ad22cb34932febe",
-  "owner": "",
+  "owner": "quality_20260906",
   "plan": "../plans/AR-0805.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 102,
+  "task_revision": 103,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T19:25:21+00:00",
+  "updated_at": "2026-09-08T19:33:05+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -418,3 +418,5 @@ Implementation has not started. Read the linked plan before claiming.
   superseded da0d21b TLA pin repair already present on main, verify range-diff/scope/signature/DCO,
   rerun exact-tree gates, obtain immutable review, and update PR only with exact force-with-lease
   followed by fresh exact-head CI. Do not merge the stale head.
+
+- 2026-09-08T19:33:05+00:00: Claimed by quality_20260906.

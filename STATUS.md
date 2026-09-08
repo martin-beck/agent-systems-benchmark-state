@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 47 |
 | **Future** | Deferred roadmap work | 0 |
@@ -128,7 +128,7 @@ flowchart LR
         AR_0802["AR-0802 - Done"]:::status_done
         AR_0803["AR-0803 - Done"]:::status_done
         AR_0804["AR-0804 - Done"]:::status_done
-        AR_0805["AR-0805 - Open"]:::status_open
+        AR_0805["AR-0805 - In progress"]:::status_in_progress
         AR_0806["AR-0806 - Planned"]:::status_planned
         AR_0807["AR-0807 - Planned"]:::status_planned
         AR_0808["AR-0808 - Planned"]:::status_planned
@@ -805,17 +805,17 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0319](tasks/AR-0319-credential-fd-helper-resolvers.md): Implement credential FD and helper resolvers | replay_20260906 | Add explicit file-descriptor and helper credential references without ambient-secret fallback. | Run full exact-tree formal/fault/privacy/supply gates on signed successor 75094148, then request fresh independent immutable review; do not publish. |
+| P1 | [AR-0805](tasks/AR-0805-tui-run-control.md): Add terminal run control and status | quality_20260906 | Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI. | Controlled rebase/resign PR #86 onto exact current origin/main 32f79101da348896fdf0fd94c07356889a05b693, preserving fe24e48 TUI semantics, retaining the new Huawei MIT header, and dropping superseded da0d21b pin repair because main already contains signed repair 7add29f. Record range-diff, rerun gates, obtain fresh immutable review, then guarded force-with-lease and fresh exact-head CI. |
 
-### Open (3)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0805](tasks/AR-0805-tui-run-control.md): Add terminal run control and status | Unclaimed | Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI. | Controlled rebase/resign PR #86 onto exact current origin/main 32f79101da348896fdf0fd94c07356889a05b693, preserving fe24e48 TUI semantics, retaining the new Huawei MIT header, and dropping superseded da0d21b pin repair because main already contains signed repair 7add29f. Record range-diff, rerun gates, obtain fresh immutable review, then guarded force-with-lease and fresh exact-head CI. |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary. |
 | P2 | [AR-0403](tasks/AR-0403-terminal-workloads.md): Integrate Terminal-Bench workloads | Unclaimed | Import terminal tasks through an adapter to the published harness or task format. | Monitor PR #85 exact head 76e01e9372ca80759eb71b42913c383ccbb6c9ad checks to terminal; investigate any failure and do not merge without coordinator authorization. Preserve explicit no-native/no-execution qualification limits. |
 
