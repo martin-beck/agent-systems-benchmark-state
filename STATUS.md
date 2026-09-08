@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**153 ARs tracked** across 5 active status categories.
+**153 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 51 |
 | **Future** | Deferred roadmap work | 0 |
@@ -185,7 +185,7 @@ flowchart LR
         AR_0867["AR-0867 - Planned"]:::status_planned
         AR_0868["AR-0868 - Planned"]:::status_planned
         AR_0869["AR-0869 - Done"]:::status_done
-        AR_0870["AR-0870 - Open"]:::status_open
+        AR_0870["AR-0870 - In progress"]:::status_in_progress
         AR_0871["AR-0871 - Planned"]:::status_planned
         AR_0872["AR-0872 - Planned"]:::status_planned
         AR_0873["AR-0873 - Planned"]:::status_planned
@@ -862,19 +862,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0806](tasks/AR-0806-tui-history-analysis.md): Add terminal history and analysis | quality_20260906 | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. | Fresh independent immutable review of rebased candidate 031a4516cbb3addc184ab3c4b0f4c683aa14755d, tree cbd1d71498d62ab5e36dfad250a9171876646ce4, exact parent/current origin/main 3514089fa378bd50629c9794b215fd53c8ea7d5d. Verify &#x27;=&#x27; range-diff from approved repaired 3844c28, clean two-path scope, signature/DCO, duplicate-page atomicity, gates, and AR-0875 limitation; then guarded force-with-lease update PR #89 and require fresh exact-head CI. |
 | P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | codex-asb-state-headers-v033 | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Wait for a corrected immutable agent-workflow-coordinator v0.3.3+ release whose privacy exemption admits the legitimate session-like UUID fixture in vendored tests/test_sqlite_storage.py; then re-sync from a clean verified tag and continue state-owned header/checker/CI work without patching vendor. |
+| P1 | [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md): Add TUI multi-agent provider selection | replay_20260906 | Choose several agents and one preconfigured provider for all of them from negotiated TUI selection lists. | Implement and qualify searchable TUI lists for multi-agent and shared provider-profile selection. |
 | P2 | [AR-0405](tasks/AR-0405-performance-workloads.md): Add performance and reproducibility workloads | contracts_20260906 | Assess SWE-Perf, SWE-fficiency and CORE-Bench for correctness-preserving optimization and reproducibility. | Audit the six-path fail-closed provenance checkpoint, run the complete applicable quality/privacy gates, and determine whether any suite can advance beyond planned without missing license and native paired-oracle evidence. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md): Add TUI multi-agent provider selection | Unclaimed | Choose several agents and one preconfigured provider for all of them from negotiated TUI selection lists. | Implement and qualify searchable TUI lists for multi-agent and shared provider-profile selection. |
 
 ### Blocked (5)
 

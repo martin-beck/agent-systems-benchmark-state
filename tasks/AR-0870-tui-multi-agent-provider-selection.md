@@ -2,7 +2,7 @@
 {
   "branch": "feature/tui-multi-agent-provider-selection",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-09T01:34:18+00:00",
   "depends_on": [
     "AR-0804",
     "AR-0805",
@@ -11,15 +11,15 @@
   ],
   "id": "AR-0870",
   "next_action": "Implement and qualify searchable TUI lists for multi-agent and shared provider-profile selection.",
-  "owner": "",
+  "owner": "replay_20260906",
   "plan": "../plans/AR-0870.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Choose several agents and one preconfigured provider for all of them from negotiated TUI selection lists.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Add TUI multi-agent provider selection",
-  "updated_at": "2026-09-08T23:34:10+00:00",
+  "updated_at": "2026-09-08T23:34:18+00:00",
   "worktree_key": "agent-systems-benchmark-tui-multi-agent-provider-selection"
 }
 ---
@@ -32,3 +32,5 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-08T23:34:10+00:00: Promoted as the highest-priority dependency-ready leaf after AR-0202
   was released blocked on external native aarch64 capacity. All declared dependencies, including
   AR-0869, are done.
+
+- 2026-09-08T23:34:18+00:00: Claimed by replay_20260906.
