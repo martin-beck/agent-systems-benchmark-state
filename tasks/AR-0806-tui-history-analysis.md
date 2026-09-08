@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-08T23:38:09+00:00",
+  "updated_at": "2026-09-08T23:49:17+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
@@ -199,3 +199,6 @@ Implementation has not started. Read the linked plan before claiming.
   2219839812d9255288b8b4e0afc52396915e85a6. Hold merge; after current exact-head CI is terminal
   evidence, obtain another exact-base rebase/review authorization before integration." Only the
   front-matter summary was shortened; owner, status, lease and revision remain unchanged.
+
+- 2026-09-08T23:49:17+00:00: Recorded command exit 0; command argv SHA-256
+  1d644840a760ad7aa74acfb369f0e7eb94456b92fb9fe6322ef9d2c80210c43c.
