@@ -7,7 +7,7 @@
     "AR-0401"
   ],
   "id": "AR-0402",
-  "next_action": "Implement production external workload adapter execution boundary and independent oracle fixtures; do not claim qualified evaluator support without immutable image/SBOM evidence.",
+  "next_action": "Wait for PR #79 updated exact-head CI, review all checks, then merge and verify post-merge runs.",
   "observed_branch": "feature/external-code-workloads",
   "observed_dirty": 0,
   "observed_head": "7650be3ca0c22366b0aed0598897d95242bdad8f",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 111,
+  "task_revision": 112,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:48:21+00:00",
+  "updated_at": "2026-09-08T12:48:37+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -310,3 +310,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T12:48:14+00:00: Recorded command exit 0; command argv SHA-256
   de576bb3bc61ef8d52f0bd6d4cbdf3ec198263654ede8008aaa53a4d55439a8f.
+
+- 2026-09-08T12:48:37+00:00: Added signed bounded evaluator runner in commit 7650be3. It uses
+  shell-free subprocess execution, explicit timeout, materialized-root requirement, and refuses
+  unqualified evaluator provenance before any subprocess starts. Initial argparse defect was fixed;
+  focused runner/planner tests pass 4/4 and branch was pushed for PR #79 CI.
