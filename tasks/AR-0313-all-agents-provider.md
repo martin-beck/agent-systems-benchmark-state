@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Let test plans select one provider profile for every chosen supported agent atomically.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Configure one provider for all agents",
-  "updated_at": "2026-09-08T11:23:00+00:00",
+  "updated_at": "2026-09-08T11:23:24+00:00",
   "worktree_key": "agent-systems-benchmark-all-agents-provider"
 }
 ---
@@ -71,3 +71,6 @@ Implementation has not started. Read the linked plan before claiming.
   patch wrapper exit 1 was a shell-quoting harness failure before mutation; corrected patch is
   present. cargo fmt --check and focused asb-agents all_agents_provider tests passed 4/4. Dirty
   scope exactly two files; active AR-0844 control.rs and AR-0316 runtime-bundle fences untouched.
+
+- 2026-09-08T11:23:24+00:00: Recorded command exit 0; command argv SHA-256
+  3ff6e766f32cd5be31dcb9ebee13e6fc9eeb50131ae890f97216793d438a642b.
