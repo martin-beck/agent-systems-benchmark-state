@@ -14,7 +14,7 @@ Martin Beck SSH signature or a Signed-off-by trailer to the already-published me
 | Merge tree | `37ba9d70bdb25b61a66ae0c58c5b6e370cddfcce` |
 | Upstream signed tag object | `bd786b124a0e9ec926247e4c1de17ef4bbb84c0d` |
 | Upstream signed release commit | `9733b341f25b145d6dfad8414933cb6348701769` |
-| Installed vendor manifest SHA-256 | `60d7c3c634c14f6df34874ace6044e9058a3621f78d51491407f9ed5aa0c871a` |
+| v0.1.4 vendor manifest SHA-256 | `60d7c3c634c14f6df34874ace6044e9058a3621f78d51491407f9ed5aa0c871a` |
 
 The pull-request head has a locally verifiable Martin Beck SSH signature and matching DCO
 trailer. The published merge has the correct parents and content, but its GitHub-generated GPG
@@ -24,6 +24,9 @@ compliance.
 
 Fresh pull-request checkouts are not required to contain the GitHub-created merge object because
 it is outside the pull-request head's ancestry. Automated checks therefore validate this exact,
-closed representation and the installed manifest. The signed attestation binds the recorded
-identities, but it is not an independent cryptographic proof of an unavailable historical object;
-reviewers must compare the merge facts with the durable GitHub PR and main-ref evidence.
+closed representation and the recorded v0.1.4 manifest identity. The signed attestation binds the
+recorded identities, but it is not an independent cryptographic proof of an unavailable historical
+object; reviewers must compare the merge facts with the durable GitHub PR and main-ref evidence.
+
+The currently installed release and manifest are verified separately by vendor conformance tests,
+so later signed upgrades do not rewrite this historical attestation.

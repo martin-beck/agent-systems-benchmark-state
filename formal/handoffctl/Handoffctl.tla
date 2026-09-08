@@ -28,7 +28,8 @@ ReleaseOperations ==
     {"release_planned", "release_open", "release_blocked", "release_done"}
 
 Operations ==
-    {"promote", "resume", "claim", "heartbeat", "update"} \cup ReleaseOperations
+    {"promote", "resume", "claim", "heartbeat", "update", "recover_expired"}
+        \cup ReleaseOperations
 
 Phases == {"waiting", "holding", "releasing", "done"}
 Results == {"pending", "accepted", "rejected", "rolled_back", "lock_timeout"}
@@ -39,6 +40,7 @@ VARIABLES
     revision,
     initialRevision,
     projectionRevision,
+    leaseExpired,
     dependencyReady,
     pc,
     operation,
@@ -51,8 +53,8 @@ VARIABLES
 
 vars ==
     <<status, owner, revision, initialRevision, projectionRevision,
-      dependencyReady, pc, operation, target, actor, expected, lockOwner,
-      result, successCount>>
+      dependencyReady, leaseExpired, pc, operation, target, actor, expected,
+      lockOwner, result, successCount>>
 
 OwnershipIsCoherent(s, o) ==
     \A t \in Tasks:
@@ -70,6 +72,7 @@ Init ==
     /\ revision = [t \in Tasks |-> 0]
     /\ initialRevision = revision
     /\ projectionRevision = revision
+    /\ leaseExpired \in [Tasks -> BOOLEAN]
     /\ dependencyReady \in [Tasks -> BOOLEAN]
     /\ pc = [p \in Processes |-> "waiting"]
     /\ operation \in [Processes -> Operations]
@@ -106,6 +109,11 @@ EnabledOperation(p) ==
             /\ status[t] = "in_progress"
             /\ owner[t] = actor[p]
             /\ expected[p] = revision[t]
+      [] operation[p] = "recover_expired" ->
+            /\ status[t] = "in_progress"
+            /\ owner[t] # NoActor
+            /\ leaseExpired[t]
+            /\ expected[p] = revision[t]
       [] operation[p] \in ReleaseOperations ->
             /\ status[t] = "in_progress"
             /\ owner[t] = actor[p]
@@ -113,6 +121,7 @@ EnabledOperation(p) ==
 StatusAfter(p) ==
     CASE operation[p] \in {"promote", "resume"} -> "open"
       [] operation[p] = "claim" -> "in_progress"
+      [] operation[p] = "recover_expired" -> "open"
       [] operation[p] \in {"heartbeat", "update"} -> status[target[p]]
       [] operation[p] = "release_planned" -> "planned"
       [] operation[p] = "release_open" -> "open"
@@ -122,9 +131,15 @@ StatusAfter(p) ==
 OwnerAfter(p) ==
     IF operation[p] = "claim"
     THEN actor[p]
-    ELSE IF operation[p] \in ReleaseOperations
+    ELSE IF operation[p] \in ReleaseOperations \cup {"recover_expired"}
          THEN NoActor
          ELSE owner[target[p]]
+
+ExpiryAfter(p) ==
+    IF operation[p] \in ReleaseOperations \cup {"claim", "heartbeat", "recover_expired"}
+    THEN FALSE
+    ELSE leaseExpired[target[p]]
+
 
 Acquire(p) ==
     /\ pc[p] = "waiting"
@@ -133,7 +148,7 @@ Acquire(p) ==
     /\ pc' = [pc EXCEPT ![p] = "holding"]
     /\ UNCHANGED
         <<status, owner, revision, initialRevision, projectionRevision,
-          dependencyReady, operation, target, actor, expected, result,
+          dependencyReady, leaseExpired, operation, target, actor, expected, result,
           successCount>>
 
 WaitTimeout(p) ==
@@ -143,7 +158,7 @@ WaitTimeout(p) ==
     /\ result' = [result EXCEPT ![p] = "lock_timeout"]
     /\ UNCHANGED
         <<status, owner, revision, initialRevision, projectionRevision,
-          dependencyReady, operation, target, actor, expected, lockOwner,
+          dependencyReady, leaseExpired, operation, target, actor, expected, lockOwner,
           successCount>>
 
 Wait(p) ==
@@ -156,6 +171,7 @@ ExecuteSuccess(p) ==
     /\ EnabledOperation(p)
     /\ status' = [status EXCEPT ![t] = StatusAfter(p)]
     /\ owner' = [owner EXCEPT ![t] = OwnerAfter(p)]
+    /\ leaseExpired' = [leaseExpired EXCEPT ![t] = ExpiryAfter(p)]
     /\ revision' = [revision EXCEPT ![t] = @ + 1]
     /\ projectionRevision' = [projectionRevision EXCEPT ![t] = @ + 1]
     /\ successCount' = [successCount EXCEPT ![t] = @ + 1]
@@ -173,7 +189,7 @@ ExecuteReject(p) ==
     /\ pc' = [pc EXCEPT ![p] = "releasing"]
     /\ UNCHANGED
         <<status, owner, revision, initialRevision, projectionRevision,
-          dependencyReady, operation, target, actor, expected, lockOwner,
+          dependencyReady, leaseExpired, operation, target, actor, expected, lockOwner,
           successCount>>
 
 (*
@@ -187,7 +203,7 @@ ExecuteRollback(p) ==
     /\ pc' = [pc EXCEPT ![p] = "releasing"]
     /\ UNCHANGED
         <<status, owner, revision, initialRevision, projectionRevision,
-          dependencyReady, operation, target, actor, expected, lockOwner,
+          dependencyReady, leaseExpired, operation, target, actor, expected, lockOwner,
           successCount>>
 
 Execute(p) ==
@@ -200,7 +216,7 @@ Release(p) ==
     /\ pc' = [pc EXCEPT ![p] = "done"]
     /\ UNCHANGED
         <<status, owner, revision, initialRevision, projectionRevision,
-          dependencyReady, operation, target, actor, expected, result,
+          dependencyReady, leaseExpired, operation, target, actor, expected, result,
           successCount>>
 
 Quiescent ==
@@ -227,6 +243,7 @@ TypeOK ==
     /\ initialRevision \in [Tasks -> Nat]
     /\ projectionRevision \in [Tasks -> Nat]
     /\ dependencyReady \in [Tasks -> BOOLEAN]
+    /\ leaseExpired \in [Tasks -> BOOLEAN]
     /\ pc \in [Processes -> Phases]
     /\ operation \in [Processes -> Operations]
     /\ target \in [Processes -> Tasks]

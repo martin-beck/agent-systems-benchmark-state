@@ -26,12 +26,15 @@ TASKS = ROOT / "tasks"
 RUNTIME = ROOT / ".runtime"
 LOCK = RUNTIME / "state.lock"
 CONFIG = RUNTIME / "config.json"
+REPLICA_BLOCKED = RUNTIME / "replica-blocked.json"
 PROJECT_CONFIG = ROOT / ".handoffctl.json"
 BINDING = ROOT / "coordinator.binding.json"
 LOCK_TIMEOUT_SECONDS = 10.0
 LOCK_POLL_SECONDS = 0.05
 SUBPROCESS_TIMEOUT_SECONDS = 30.0
 COMMAND_TIMEOUT_SECONDS = 1800.0
+OBSERVATION_ATTEMPTS = 3
+OBSERVATION_RETRY_SECONDS = 0.25
 STATUSES = (
     "in_progress",
     "open",
@@ -70,7 +73,7 @@ type Meta = dict[str, Any]
 type Task = tuple[Path, Meta, str]
 type State = dict[str, Any]
 
-COORDINATOR_VERSION = "0.1.4"
+COORDINATOR_VERSION = "0.2.0"
 DEFAULT_PROJECT_SETTINGS: Meta = {
     "schema_version": 1,
     "project_id": "00000000-0000-4000-8000-000000000000",
@@ -191,6 +194,18 @@ class SubprocessTimeoutError(RuntimeError):
     """A Git/GitHub or coordinator command exceeded its bounded deadline."""
 
 
+class ReplicaDivergedError(RuntimeError):
+    """The state replica cannot be advanced without reconciling Git history."""
+
+
+class ExternalObservationError(RuntimeError):
+    """A bounded read-only external observation failed after retries."""
+
+
+class PostCommandReconcileError(RuntimeError):
+    """A command result is durable, but its subsequent live reconciliation failed."""
+
+
 PRIVATE = (
     (re.compile("/" + "home/"), "absolute Linux home path"),
     (re.compile(r"[A-Za-z]:\\Users\\", re.I), "absolute Windows user path"),
@@ -260,10 +275,44 @@ def config() -> Meta:
     return cast(Meta, json.loads(CONFIG.read_text()))
 
 
+def run_github_observation(args: list[str]) -> subprocess.CompletedProcess[str]:
+    """Retry a bounded read-only GitHub query and classify exhausted failures."""
+    failure: RuntimeError | None = None
+    for attempt in range(OBSERVATION_ATTEMPTS):
+        try:
+            return run(args)
+        except (RuntimeError, SubprocessTimeoutError) as error:
+            failure = error
+            if attempt + 1 < OBSERVATION_ATTEMPTS:
+                time.sleep(OBSERVATION_RETRY_SECONDS * (attempt + 1))
+    command = " ".join(args)
+    raise ExternalObservationError(
+        f"EXTERNAL_API_ERROR after {OBSERVATION_ATTEMPTS} attempts: {command}"
+    ) from failure
+
+
+def coordinator_lock_path() -> Path:
+    """Resolve one lock shared by every worktree of the same local Git repository."""
+    configured = RUNTIME / "state.lock"
+    if configured != LOCK or not (ROOT / ".git").exists():
+        return LOCK
+    result = run(
+        ["git", "-C", str(ROOT), "rev-parse", "--git-common-dir"],
+        check=False,
+    )
+    if result.returncode or not result.stdout.strip():
+        raise RuntimeError("cannot resolve repository-common coordinator lock")
+    common = Path(result.stdout.strip())
+    if not common.is_absolute():
+        common = ROOT / common
+    return common.resolve() / "handoffctl" / "state.lock"
+
+
 @contextlib.contextmanager
 def locked(*, exclusive: bool = True, timeout: float = LOCK_TIMEOUT_SECONDS) -> Iterator[None]:
-    RUNTIME.mkdir(mode=0o700, exist_ok=True)
-    fd = os.open(LOCK, os.O_CREAT | os.O_RDWR, 0o600)
+    lock_path = coordinator_lock_path()
+    lock_path.parent.mkdir(mode=0o700, parents=True, exist_ok=True)
+    fd = os.open(lock_path, os.O_CREAT | os.O_RDWR, 0o600)
     try:
         operation = fcntl.LOCK_EX if exclusive else fcntl.LOCK_SH
         deadline = time.monotonic() + timeout
@@ -403,7 +452,7 @@ def project_scan() -> State:
         )
     github = settings["github_repository"]
     prs = json.loads(
-        run(
+        run_github_observation(
             [
                 "gh",
                 "pr",
@@ -420,7 +469,7 @@ def project_scan() -> State:
         ).stdout
     )
     runs = json.loads(
-        run(
+        run_github_observation(
             [
                 "gh",
                 "run",
@@ -606,16 +655,22 @@ def basic_task_errors(path: Path, meta: Meta) -> list[str]:
     return [*field_errors(path, meta), *value_errors(path, meta), *reference_errors(path, meta)]
 
 
+def parse_claim_expiry(expiry: object) -> dt.datetime:
+    """Parse one timezone-aware lease deadline."""
+    if not isinstance(expiry, str) or not expiry:
+        raise ValueError("missing or non-string claim expiry")
+    parsed = dt.datetime.fromisoformat(expiry.replace("Z", "+00:00"))
+    if parsed.tzinfo is None:
+        raise ValueError("claim expiry lacks timezone")
+    return parsed.astimezone(dt.UTC)
+
+
 def active_expiry_errors(task_id: str, expiry: object) -> list[str]:
     if not expiry:
         return [f"{task_id}: active without claim"]
-    if not isinstance(expiry, str):
-        return [f"{task_id}: invalid claim expiry"]
     try:
-        parsed_expiry = dt.datetime.fromisoformat(expiry.replace("Z", "+00:00"))
-        if parsed_expiry.tzinfo is None:
-            raise ValueError
-    except ValueError:
+        parsed_expiry = parse_claim_expiry(expiry)
+    except (TypeError, ValueError):
         return [f"{task_id}: invalid claim expiry"]
     if parsed_expiry <= dt.datetime.now(dt.UTC):
         return [f"{task_id}: expired claim"]
@@ -730,26 +785,102 @@ def commit(message: str, paths: list[Path]) -> bool:
         raise
 
 
-def push_replica() -> None:
-    if not CONFIG.exists():
-        return
-    if not config().get("push_enabled", False):
-        return
+def replication_enabled() -> bool:
+    """Return whether this checkout is the configured writable replica."""
+    return CONFIG.exists() and bool(config().get("push_enabled", False))
+
+
+def replica_heads() -> tuple[str, str]:
+    """Fetch and return local/remote main heads for a configured replica."""
     remote = run(["git", "-C", str(ROOT), "remote", "get-url", "origin"], check=False)
     if remote.returncode:
         raise RuntimeError("state replication is enabled but origin is missing")
+    branch = run(
+        ["git", "-C", str(ROOT), "symbolic-ref", "--short", "-q", "HEAD"],
+        check=False,
+    ).stdout.strip()
+    if branch != "main":
+        raise RuntimeError("state replication requires the main checkout")
     run(["git", "-C", str(ROOT), "fetch", "--no-tags", "origin", "main"])
     local_head = run(["git", "-C", str(ROOT), "rev-parse", "HEAD"]).stdout.strip()
     remote_head = run(["git", "-C", str(ROOT), "rev-parse", "FETCH_HEAD"]).stdout.strip()
-    if local_head == remote_head:
-        return
-    ancestry = run(
-        ["git", "-C", str(ROOT), "merge-base", "--is-ancestor", remote_head, local_head],
-        check=False,
+    return local_head, remote_head
+
+
+def is_ancestor(older: str, newer: str) -> bool:
+    """Return whether one fetched state revision is an ancestor of another."""
+    return (
+        run(
+            ["git", "-C", str(ROOT), "merge-base", "--is-ancestor", older, newer],
+            check=False,
+        ).returncode
+        == 0
     )
-    if ancestry.returncode:
-        raise RuntimeError("state replica diverged; refusing non-fast-forward push")
+
+
+def record_replica_block(code: str, local_head: str, remote_head: str) -> None:
+    """Persist a privacy-safe circuit-breaker marker for reconciliation services."""
+    atomic(
+        REPLICA_BLOCKED,
+        json.dumps(
+            {
+                "at": now(),
+                "code": code,
+                "local_head": local_head,
+                "remote_head": remote_head,
+            },
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n",
+    )
+
+
+def clear_replica_block() -> None:
+    """Clear a replica circuit breaker after verified ancestry recovery."""
+    REPLICA_BLOCKED.unlink(missing_ok=True)
+
+
+def sync_replica_before_write() -> None:
+    """Fast-forward a clean behind replica before creating coordinator state."""
+    if not replication_enabled():
+        return
+    local_head, remote_head = replica_heads()
+    if local_head == remote_head or is_ancestor(remote_head, local_head):
+        clear_replica_block()
+        return
+    if not is_ancestor(local_head, remote_head):
+        record_replica_block("REPLICA_DIVERGED", local_head, remote_head)
+        raise ReplicaDivergedError(
+            "REPLICA_DIVERGED: state histories require explicit reconciliation"
+        )
+    dirty = run(
+        ["git", "-C", str(ROOT), "status", "--porcelain=v1", "--untracked-files=all"]
+    ).stdout
+    if dirty:
+        record_replica_block("REPLICA_BEHIND_DIRTY", local_head, remote_head)
+        raise ReplicaDivergedError(
+            "REPLICA_BEHIND_DIRTY: clean the state checkout before fast-forwarding"
+        )
+    run(["git", "-C", str(ROOT), "merge", "--ff-only", remote_head])
+    clear_replica_block()
+
+
+def push_replica() -> None:
+    if not replication_enabled():
+        return
+    local_head, remote_head = replica_heads()
+    if local_head == remote_head:
+        clear_replica_block()
+        return
+    if not is_ancestor(remote_head, local_head):
+        relation = "REPLICA_BEHIND" if is_ancestor(local_head, remote_head) else "REPLICA_DIVERGED"
+        record_replica_block(relation, local_head, remote_head)
+        raise ReplicaDivergedError(
+            f"{relation}: refusing non-fast-forward state push; reconcile before retrying"
+        )
     run(["git", "-C", str(ROOT), "push", "origin", f"{local_head}:refs/heads/main"])
+    clear_replica_block()
 
 
 def restore_paths(before: dict[Path, str | None]) -> None:
@@ -782,6 +913,7 @@ def write_generated_views(tasks: list[Task], state: Meta) -> None:
 def reconcile(*, do_commit: bool, push: bool = False) -> bool:
 
     with locked():
+        sync_replica_before_write()
         state = project_scan()
         generated = generated_paths()
         before: dict[Path, str | None] = {path: path.read_text() for path, _, _ in all_tasks()}
@@ -903,6 +1035,29 @@ def apply_resume(args: argparse.Namespace, meta: Meta, _tasks: list[Task]) -> st
     return str(args.note)
 
 
+def apply_recover_expired(args: argparse.Namespace, meta: Meta, _tasks: list[Task]) -> str:
+    """Reopen an expired claim only after an exact-revision UTC check."""
+    if args.expected_revision != meta["task_revision"]:
+        raise RuntimeError(
+            f"stale revision: expected {args.expected_revision}, current {meta['task_revision']}"
+        )
+    if meta.get("status") != "in_progress" or not meta.get("owner"):
+        raise RuntimeError(f"{args.task} does not have an active claim")
+    try:
+        expiry = parse_claim_expiry(meta.get("claim_expires"))
+    except (TypeError, ValueError) as error:
+        raise RuntimeError(f"{args.task} has invalid claim expiry") from error
+    if expiry > dt.datetime.now(dt.UTC):
+        raise RuntimeError(f"{args.task} claim has not expired")
+    if not args.note.strip():
+        raise RuntimeError("expired-claim recovery note must not be empty")
+    previous_owner = str(meta["owner"])
+    meta["status"] = "open"
+    meta["owner"] = ""
+    meta["claim_expires"] = ""
+    return f"Recovered expired claim formerly owned by {previous_owner}. {args.note}"
+
+
 def require_promotion_preflight(kind: str) -> None:
     """Reject a promotion before writes when its source checkout is ambiguous."""
     if kind not in ("promote", "resume"):
@@ -954,6 +1109,7 @@ def rendered_task_views(tasks: list[Task]) -> dict[Path, str]:
 
 def mutate(args: argparse.Namespace, kind: str) -> None:
     with locked():
+        sync_replica_before_write()
         path, meta, body = locate(args.task)
         require_promotion_preflight(kind)
         view_paths = rendered_task_views(all_tasks())
@@ -970,6 +1126,8 @@ def mutate(args: argparse.Namespace, kind: str) -> None:
                 if kind == "promote"
                 else apply_resume(args, meta, all_tasks())
                 if kind == "resume"
+                else apply_recover_expired(args, meta, all_tasks())
+                if kind == "recover-expired"
                 else apply_owned_change(args, kind, meta)
             )
         )
@@ -1024,6 +1182,13 @@ def cmd_render_status(*, check: bool) -> None:
 def cmd_doctor(*, live: bool) -> int:
     """Validate static state and optionally compare the live generated views."""
     errors = validate(live=live)
+    if REPLICA_BLOCKED.exists():
+        try:
+            blocked = json.loads(REPLICA_BLOCKED.read_text())
+            code = str(blocked.get("code", "REPLICA_BLOCKED"))
+        except (OSError, json.JSONDecodeError, AttributeError):
+            code = "REPLICA_BLOCKED"
+        errors.append(f"{code}: replica reconciliation requires operator review")
     if errors:
         print("\n".join("ERROR: " + value for value in errors))
         return 1
@@ -1057,9 +1222,35 @@ def require_active_owner(task_id: str, owner: str) -> None:
             raise RuntimeError(errors[0])
 
 
+def append_command_result(
+    task_id: str,
+    owner: str,
+    command_hash: str,
+    returncode: int,
+    timed_out: bool,
+) -> None:
+    """Fsync a privacy-safe local result before any fallible post-command work."""
+    RUNTIME.mkdir(mode=0o700, parents=True, exist_ok=True)
+    record = {
+        "at": now(),
+        "task": task_id,
+        "owner": owner,
+        "argv_sha256": command_hash,
+        "returncode": returncode,
+        "classification": "SUBPROCESS_TIMEOUT" if timed_out else "EXIT",
+    }
+    path = RUNTIME / "command-results.jsonl"
+    descriptor = os.open(path, os.O_APPEND | os.O_CREAT | os.O_WRONLY, 0o600)
+    with os.fdopen(descriptor, "ab") as stream:
+        stream.write((json.dumps(record, sort_keys=True) + "\n").encode())
+        stream.flush()
+        os.fsync(stream.fileno())
+
+
 def cmd_run(args: argparse.Namespace) -> int:
     if not args.command:
         raise RuntimeError("missing command")
+    config()
     require_active_owner(args.task, args.owner)
     # Never execute or consume untracked caller input. Scripts and data must be
     # named by argv or a stable file, whose content digest can be recorded too.
@@ -1075,16 +1266,19 @@ def cmd_run(args: argparse.Namespace) -> int:
         returncode = 124
     else:
         returncode = proc.returncode
+    append_command_result(
+        args.task,
+        args.owner,
+        command_hash,
+        returncode,
+        timed_out,
+    )
     note = (
         f"Recorded command timeout; classification=SUBPROCESS_TIMEOUT; "
         f"deadline={timeout:.1f}s; command argv SHA-256 {command_hash}."
         if timed_out
         else f"Recorded command exit {returncode}; command argv SHA-256 {command_hash}."
     )
-    try:
-        reconcile(do_commit=True, push=True)
-    except (LockTimeoutError, SubprocessTimeoutError) as error:
-        note += f" Reconciliation classification preserved: {error}."
     update = argparse.Namespace(
         task=args.task,
         owner=args.owner,
@@ -1096,6 +1290,13 @@ def cmd_run(args: argparse.Namespace) -> int:
         note=note,
     )
     mutate(update, "update")
+    try:
+        reconcile(do_commit=True, push=True)
+    except Exception as error:
+        raise PostCommandReconcileError(
+            "COMMAND_RECORDED_POST_RECONCILE_FAILED: "
+            f"task={args.task}; argv_sha256={command_hash}; {error}"
+        ) from error
     return returncode
 
 
@@ -1147,7 +1348,15 @@ def dispatch_bound_command(args: argparse.Namespace) -> int:
         return cmd_doctor(live=args.live)
     elif args.cmd == "render-status":
         cmd_render_status(check=args.check)
-    elif args.cmd in ("claim", "heartbeat", "release", "promote", "resume", "update"):
+    elif args.cmd in (
+        "claim",
+        "heartbeat",
+        "release",
+        "promote",
+        "resume",
+        "recover-expired",
+        "update",
+    ):
         mutate(args, args.cmd)
     elif args.cmd == "run":
         if args.command and args.command[0] == "--":
@@ -1191,6 +1400,10 @@ def main() -> int:
     item.add_argument("--expected-revision", type=int, required=True)
     item.add_argument("--note", required=True)
     item = commands.add_parser("resume")
+    item.add_argument("task")
+    item.add_argument("--expected-revision", type=int, required=True)
+    item.add_argument("--note", required=True)
+    item = commands.add_parser("recover-expired")
     item.add_argument("task")
     item.add_argument("--expected-revision", type=int, required=True)
     item.add_argument("--note", required=True)

@@ -31,6 +31,8 @@ SOURCE_FILES: tuple[tuple[str, str], ...] = (
     ("formal/handoffctl/Handoffctl.cfg", "formal/handoffctl/Handoffctl.cfg"),
     ("formal/handoffctl/HandoffctlLocks.tla", "formal/handoffctl/HandoffctlLocks.tla"),
     ("formal/handoffctl/HandoffctlLocks.cfg", "formal/handoffctl/HandoffctlLocks.cfg"),
+    ("formal/handoffctl/HandoffctlRun.tla", "formal/handoffctl/HandoffctlRun.tla"),
+    ("formal/handoffctl/HandoffctlRun.cfg", "formal/handoffctl/HandoffctlRun.cfg"),
     ("formal/handoffctl/README.md", "formal/handoffctl/README.md"),
     ("formal/handoffctl/verify.sh", "formal/handoffctl/verify.sh"),
     ("formal/handoffctl/HandoffctlBinding.tla", "formal/handoffctl/HandoffctlBinding.tla"),
@@ -113,15 +115,46 @@ def build_lock(source: Path, version: str, commit: str) -> dict[str, Any]:
     }
 
 
+def install_staged_snapshot(staged: Path, target: Path, destinations: list[str]) -> None:
+    """Install one fully staged vendor set and roll back failed rename sequences."""
+    backup_root = staged / ".backup"
+    installed: list[tuple[Path, Path, bool]] = []
+    try:
+        for destination_name in destinations:
+            destination = target / destination_name
+            source = staged / destination_name
+            backup = backup_root / destination_name
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            if destination.is_symlink():
+                raise RuntimeError(f"refusing symlink destination: {destination}")
+            existed = destination.exists()
+            if existed:
+                backup.parent.mkdir(parents=True, exist_ok=True)
+                destination.replace(backup)
+            installed.append((destination, backup, existed))
+            source.replace(destination)
+    except Exception:
+        for destination, backup, existed in reversed(installed):
+            destination.unlink(missing_ok=True)
+            if existed and backup.exists():
+                backup.replace(destination)
+        raise
+
+
 def sync(source: Path, target: Path, version: str, commit: str) -> None:
-    """Copy the allowlisted release files and write their deterministic lock manifest."""
+    """Stage and transactionally install an allowlisted immutable release."""
     manifest = build_lock(source, version, commit)
-    for source_name, destination_name in SOURCE_FILES:
-        source_path = source / source_name
-        mode = source_path.stat().st_mode & 0o777
-        atomic_bytes(target / destination_name, source_path.read_bytes(), mode)
-    payload = json.dumps(manifest, indent=2, sort_keys=True).encode() + b"\n"
-    atomic_bytes(target / LOCK_NAME, payload)
+    target.mkdir(parents=True, exist_ok=True)
+    with tempfile.TemporaryDirectory(prefix=".handoffctl-vendor-", dir=target) as temporary:
+        staged = Path(temporary)
+        for source_name, destination_name in SOURCE_FILES:
+            source_path = source / source_name
+            mode = source_path.stat().st_mode & 0o777
+            atomic_bytes(staged / destination_name, source_path.read_bytes(), mode)
+        payload = json.dumps(manifest, indent=2, sort_keys=True).encode() + b"\n"
+        atomic_bytes(staged / LOCK_NAME, payload)
+        destinations = [destination for _, destination in SOURCE_FILES]
+        install_staged_snapshot(staged, target, [*destinations, LOCK_NAME])
     verify(target)
 
 
