@@ -11,17 +11,17 @@
   "id": "AR-0804",
   "next_action": "Run full locked workspace, docs, repository policy/privacy/Gitleaks and bounded adversarial import/render gates; then exact scope audit and signed candidate if green.",
   "observed_branch": "feature/tui-settings-wizard",
-  "observed_dirty": 3,
-  "observed_head": "76497db8f22c43762f0b5bcbc7f2549c1d17281d",
+  "observed_dirty": 0,
+  "observed_head": "8f7152c525daf0b8dd61961c780848ed7a8bf979",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0804.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Guide users through agents, providers, workloads, resources, replay, metrics, and output settings.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Build the terminal settings wizard",
-  "updated_at": "2026-09-08T15:35:24+00:00",
+  "updated_at": "2026-09-08T15:35:32+00:00",
   "worktree_key": "agent-systems-benchmark-tui-settings-wizard"
 }
 ---

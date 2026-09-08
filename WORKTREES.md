@@ -95,6 +95,5 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-terminal-interface` | `feature/terminal-interface` | `d2e7b66ff6af` | 0 | behind 167, ahead 0 |
 | `agent-systems-benchmark-terminal-workloads` | `feature/terminal-workloads` | `e0da4efd3750` | 0 | behind 7, ahead 1 |
 | `agent-systems-benchmark-trace-interoperability` | `feature/trace-interoperability` | `921cf004f8aa` | 0 | behind 39, ahead 0 |
-| `agent-systems-benchmark-tui-settings-wizard` | `feature/tui-settings-wizard` | `76497db8f22c` | 2 | behind 0, ahead 0 |
-| changed files | - | - | - | `Cargo.toml`, `crates/asb-tui/` |
+| `agent-systems-benchmark-tui-settings-wizard` | `feature/tui-settings-wizard` | `8f7152c525da` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-verifier-integrity` | `feature/verifier-integrity` | `3fc65ea73bad` | 0 | behind 72, ahead 0 |
