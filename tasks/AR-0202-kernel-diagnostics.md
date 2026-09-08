@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate perf and optional eBPF diagnostics without making privileged tools mandatory.",
-  "task_revision": 169,
+  "task_revision": 170,
   "title": "Add optional kernel diagnostics",
-  "updated_at": "2026-09-08T23:10:26+00:00",
+  "updated_at": "2026-09-08T23:11:08+00:00",
   "worktree_key": "agent-systems-benchmark-kernel-diagnostics"
 }
 ---
@@ -488,3 +488,6 @@ Implementation has not started. Read the linked plan before claiming.
   transient runner/test flakiness. Acceptance is still incomplete because the plan requires genuine
   positive native x86 and aarch64 perf/eBPF counter evidence; current CI only exercises
   fail-closed/optional paths and no authorized native capacity is available.
+
+- 2026-09-08T23:11:08+00:00: Recorded command exit 0; command argv SHA-256
+  e630419d84e708f4160b36e92f0be015e51b8a113bbbab6c73d242e5ac70ad9e.
