@@ -22,7 +22,7 @@ Generated from local Git and GitHub. Do not edit.
 | 34188500312 | `3fc65ea73bad` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 34188500295 | `3fc65ea73bad` | pull_request | Formal assurance | completed:success |
 | 34188500290 | `3fc65ea73bad` | pull_request | Rust verification | in_progress:- |
-| 34188500279 | `3fc65ea73bad` | pull_request | Fault assurance | in_progress:- |
+| 34188500279 | `3fc65ea73bad` | pull_request | Fault assurance | completed:success |
 | 34187594982 | `0568bf5f99d6` | pull_request | Fault assurance | completed:success |
 | 34187594965 | `0568bf5f99d6` | pull_request | Repository quality | completed:failure |
 | 34187594960 | `0568bf5f99d6` | pull_request | Formal assurance | completed:success |
