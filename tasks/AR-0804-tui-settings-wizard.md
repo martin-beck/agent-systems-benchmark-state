@@ -11,7 +11,7 @@
   "id": "AR-0804",
   "next_action": "Obtain serialized Cargo workspace/lock fence, then add standalone asb-tui crate with a pure capability-driven wizard state model and snapshot/negative tests before terminal rendering dependencies.",
   "observed_branch": "feature/tui-settings-wizard",
-  "observed_dirty": 2,
+  "observed_dirty": 3,
   "observed_head": "76497db8f22c43762f0b5bcbc7f2549c1d17281d",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0804.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Guide users through agents, providers, workloads, resources, replay, metrics, and output settings.",
-  "task_revision": 13,
+  "task_revision": 15,
   "title": "Build the terminal settings wizard",
-  "updated_at": "2026-09-08T15:23:08+00:00",
+  "updated_at": "2026-09-08T15:23:36+00:00",
   "worktree_key": "agent-systems-benchmark-tui-settings-wizard"
 }
 ---
@@ -64,3 +64,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T15:23:08+00:00: Recorded command exit 0; command argv SHA-256
   0d43dcff2c7b06b4164032960b3d5d06ba4881ff7a79f7ecce450dda269469df.
+
+- 2026-09-08T15:23:36+00:00: Recorded command exit 101; command argv SHA-256
+  0bdcdff341ca745d16c8424ff217af8df295f460b614e49399c46b4fe1b7bdbe.
