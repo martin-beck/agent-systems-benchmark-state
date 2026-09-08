@@ -10,7 +10,7 @@
     "AR-0804"
   ],
   "id": "AR-0805",
-  "next_action": "Run full workspace, documentation, policy, privacy, and failure gates on the one-file lifecycle slice. Preserve AR-0855-owned header lines on rebase. Treat unavailable dashboard fields as unsupported until an owned control-protocol extension exists.",
+  "next_action": "Run remaining contract, coverage, failure-path, platform, workflow, dependency, privacy, and secret scans on the exact one-file lifecycle slice. Preserve AR-0855 header lines and keep unavailable dashboard fields explicitly unsupported pending an owned control-protocol extension.",
   "observed_branch": "feature/tui-run-control",
   "observed_dirty": 1,
   "observed_head": "b2707c482876dcfb42c756c39165f6ecdb5c7c10",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T16:47:53+00:00",
+  "updated_at": "2026-09-08T16:50:19+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -125,3 +125,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T16:47:53+00:00: Recorded command exit 0; command argv SHA-256
   00383a816118bc9ee1eaf4852084f6dd208ae4811e4898c4bb2f4b1beb707bc3.
+
+- 2026-09-08T16:50:19+00:00: Exact-tree core gate batch completed successfully on base
+  b2707c482876dcfb42c756c39165f6ecdb5c7c10 with only crates/asb-tui/src/lib.rs dirty: cargo fmt
+  --all -- --check, cargo clippy --locked --workspace --all-targets -- -D warnings, cargo test
+  --locked --workspace, RUSTDOCFLAGS=-D warnings cargo doc --locked --workspace --no-deps, cargo
+  build --locked --workspace --release, and git diff --check all exited 0. Focused asb-tui remains
+  10/10 green. The bounded lifecycle slice proves page cardinality, contiguous cursor progression,
+  reconnect without relaunch, terminal convergence, and cancellation races. Dashboard
+  capacity/deadline/lease/provider/metrics/warnings/evidence fields remain unavailable from current
+  public control protocol and are not claimed.
