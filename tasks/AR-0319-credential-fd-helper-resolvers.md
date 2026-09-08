@@ -7,7 +7,7 @@
     "AR-0318"
   ],
   "id": "AR-0319",
-  "next_action": "Obtain fresh independent immutable review of exact ef5c40762e27061f671be25eb95d26079d93768a; after approval publish immutable head and require hosted exact-head Kani/formal CI before merge.",
+  "next_action": "Monitor every PR #87 exact-head workflow to terminal; merge only after all checks are green and coordinator confirms integration authorization, then run exact-main postmerge gates and release.",
   "observed_branch": "feature/credential-fd-helper-resolvers",
   "observed_dirty": 0,
   "observed_head": "ef5c40762e27061f671be25eb95d26079d93768a",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add explicit file-descriptor and helper credential references without ambient-secret fallback.",
-  "task_revision": 106,
+  "task_revision": 107,
   "title": "Implement credential FD and helper resolvers",
-  "updated_at": "2026-09-08T20:27:52+00:00",
+  "updated_at": "2026-09-08T20:28:45+00:00",
   "worktree_key": "agent-systems-benchmark-credential-fd-helper-resolvers"
 }
 ---
@@ -379,3 +379,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T20:27:52+00:00: Recorded command exit 0; command argv SHA-256
   8fb884156281636fc0e8a613627c62fc511e1419b09b36a0592e0093dd2da254.
+
+- 2026-09-08T20:28:45+00:00: Published independently reviewed immutable candidate as PR #87
+  https://github.com/martin-beck/agent-systems-benchmark/pull/87 with exact base
+  f59e6b138a9b02850fadc7d81ebec09d8ff3fa0f and exact head ef5c40762e27061f671be25eb95d26079d93768a.
+  Hosted formal run 34274899759 is terminal SUCCESS: Kani bounded proofs job 102225378963 passed
+  including deliberate counterexample rejection; TLC/Alloy job 102225379264 passed; Loom x86_64 job
+  102225379528 and arm job 102225379195 passed. Other exact-head workflows remain in progress and
+  head is unchanged; no merge attempted.
