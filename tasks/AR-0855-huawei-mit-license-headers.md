@@ -15,11 +15,11 @@
   "plan": "../plans/AR-0855.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files.",
-  "task_revision": 159,
+  "task_revision": 160,
   "title": "Enforce Huawei MIT source headers",
-  "updated_at": "2026-09-08T18:08:45+00:00",
+  "updated_at": "2026-09-08T18:12:05+00:00",
   "worktree_key": "agent-systems-benchmark-huawei-mit-headers"
 }
 ---
@@ -452,3 +452,7 @@ and fresh coordinator snapshot before claiming. Do not modify vendored coordinat
   failed-job retry reproduced curl exit 63 at zero bytes while fetching the pinned TLA jar, before
   model execution; local digest-pinned TLC/Alloy passed. Await external asset-transfer recovery and
   fresh independent exact-head review; preserve immutable head and state-vendor release blocker.
+
+- 2026-09-08T18:12:05+00:00: Resume to replace the upstream-replaced TLA v1.8.0 browser asset pin
+  with official GitHub asset ID 551007111 plus exact current size/digest; preserve strict
+  verification.
