@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Machine-check protocol and artifact consistency",
-  "updated_at": "2026-09-08T09:16:08+00:00",
+  "updated_at": "2026-09-08T09:16:10+00:00",
   "worktree_key": "agent-systems-benchmark-contract-consistency"
 }
 ---
@@ -53,3 +53,6 @@ Implementation has not started. Read the linked plan before claiming.
   template backticks were parsed by the JavaScript shell; no wrapper command ran and product
   worktree remains clean. Next action is the same bounded four-path
   registry/checker/test/generated-doc patch using corrected argument encoding.
+
+- 2026-09-08T09:16:10+00:00: Recorded command exit 0; command argv SHA-256
+  67c97ff5d746f85208b14063ff20084aa6483d63cb04f8acb508591b445106e3.
