@@ -26,9 +26,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply one default OpenAI provider profile consistently to all supported agents.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Support a shared OpenAI provider",
-  "updated_at": "2026-09-08T10:05:40+00:00",
+  "updated_at": "2026-09-08T10:07:44+00:00",
   "worktree_key": "agent-systems-benchmark-provider-openai"
 }
 ---
@@ -64,3 +64,6 @@ Implementation has not started. Read the linked plan before claiming.
   profile/credential/drift negatives. Focused OpenAI tests pass 3/3 after fmt. Two earlier exits 2
   were patch transport misuse only (apply_patch requires one argument, not stdin); neither changed
   product files; corrected external patch artifact applied through wrapper.
+
+- 2026-09-08T10:07:44+00:00: Recorded command exit 1; command argv SHA-256
+  e5be3f8df3b34e0a1bdec0247c3f6975eaa9dcf1d7d886959424968ab7b29b74.
