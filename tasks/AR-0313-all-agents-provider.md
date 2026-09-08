@@ -8,7 +8,7 @@
     "AR-0312"
   ],
   "id": "AR-0313",
-  "next_action": "Rerun only interrupted failure-fixture bundle with pinned cargo PATH, then run pending Gitleaks and anchored added-line privacy scan; no product repair indicated by the FileNotFoundError.",
+  "next_action": "Execute corrected tools/quality/test_failure_paths.py with pinned cargo PATH, then pending Gitleaks and anchored added-line privacy scan.",
   "observed_branch": "feature/all-agents-provider",
   "observed_dirty": 3,
   "observed_head": "b6078bb1ca2ee8f35973ffab9740c2c12dd4126e",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Let test plans select one provider profile for every chosen supported agent atomically.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Configure one provider for all agents",
-  "updated_at": "2026-09-08T11:31:39+00:00",
+  "updated_at": "2026-09-08T11:31:58+00:00",
   "worktree_key": "agent-systems-benchmark-all-agents-provider"
 }
 ---
@@ -97,3 +97,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T11:31:39+00:00: Recorded command exit 2; command argv SHA-256
   56f26427d3b308364c1c543548aa5ee49494f223639ff49b8ecf9d5af80abc14.
+
+- 2026-09-08T11:31:58+00:00: Operator-only retry failure classified: command misspelled
+  tools/quality as tools/VNquality and Python exited before loading the fixture runner. No product
+  or test code executed; executed; do not repeat malformed argv.
