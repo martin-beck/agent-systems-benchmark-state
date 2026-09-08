@@ -22,7 +22,7 @@ Generated from local Git and GitHub. Do not edit.
 | 34210005795 | `d56052d64b1e` | push | Rust verification | in_progress:- |
 | 34210005748 | `d56052d64b1e` | push | Emulated aarch64 portability | in_progress:- |
 | 34210005733 | `d56052d64b1e` | push | Formal assurance | in_progress:- |
-| 34210005718 | `d56052d64b1e` | push | Fault assurance | queued:- |
+| 34210005718 | `d56052d64b1e` | push | Fault assurance | in_progress:- |
 | 34209923333 | `e49acbf455f6` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 34209923307 | `e49acbf455f6` | pull_request | Formal assurance | completed:success |
 | 34209923296 | `e49acbf455f6` | pull_request | Emulated aarch64 portability | in_progress:- |
