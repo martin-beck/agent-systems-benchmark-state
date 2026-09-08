@@ -10,7 +10,7 @@
     "AR-0804"
   ],
   "id": "AR-0805",
-  "next_action": "Rerun only contract consistency and the remaining coverage/failure/platform/workflow/dependency/privacy gates with exact baseline b2707c482876dcfb42c756c39165f6ecdb5c7c10, then amend/resign the unpublished candidate and request fresh immutable review.",
+  "next_action": "Fresh independent immutable review of repaired unpublished candidate c8336909ae6de887d8146f59224dd21efff58b52 against exact parent b2707c482876dcfb42c756c39165f6ecdb5c7c10. Review the five prior blockers and one-file scope before publication. Preserve explicit protocol/resource/native evidence gaps and AR-0855 header lines.",
   "observed_branch": "feature/tui-run-control",
   "observed_dirty": 0,
   "observed_head": "c8336909ae6de887d8146f59224dd21efff58b52",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T17:27:40+00:00",
+  "updated_at": "2026-09-08T17:28:15+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -237,3 +237,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T17:27:40+00:00: Recorded command exit 0; command argv SHA-256
   eef317d561a8a398aa4223f323245daa026df7a56d3aa98c35fab6d66f6c5b1c.
+
+- 2026-09-08T17:28:15+00:00: Review-block repair is complete in signed unpublished candidate
+  c8336909ae6de887d8146f59224dd21efff58b52, tree 55d9dec02c37dec5a1cfa93668225da01e9c01cf, exact
+  parent b2707c482876dcfb42c756c39165f6ecdb5c7c10. One-file scope crates/asb-tui/src/lib.rs is clean
+  (+623/-1). Fixed global journal projection to advance across other runs while projecting only the
+  followed attempt, same-revision and immutable-summary drift rejection, exact PlanReference digest
+  binding at launch, reuse of protocol identity/idempotency validators including colon, and checked
+  u64 cursor overflow. Focused tests 11/11, full fmt/clippy/workspace tests/docs/release build,
+  contract/coverage/failure/platform/workflow/dependency/privacy gates, repository policy,
+  commit-range Gitleaks, signature, DCO, and diff-check all pass. A symbolic baseline operator error
+  was corrected to the exact parent before the successful remaining-gate run.
