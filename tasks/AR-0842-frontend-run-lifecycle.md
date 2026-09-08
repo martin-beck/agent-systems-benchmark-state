@@ -11,7 +11,7 @@
   "id": "AR-0842",
   "next_action": "Implement idempotent launch, cancellation, status reconnect, history, and recovery semantics.",
   "observed_branch": "feature/frontend-run-lifecycle",
-  "observed_dirty": 7,
+  "observed_dirty": 8,
   "observed_head": "e86fe799a33cd17a1b8f05a029effe41bbf13de5",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0842.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define and implement frontend-independent run lifecycle semantics.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Implement frontend run lifecycle",
-  "updated_at": "2026-09-08T07:56:48+00:00",
+  "updated_at": "2026-09-08T07:57:25+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-run-lifecycle"
 }
 ---
