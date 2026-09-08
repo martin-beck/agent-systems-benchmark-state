@@ -8,7 +8,7 @@
     "AR-0312"
   ],
   "id": "AR-0313",
-  "next_action": "Execute corrected tools/quality/test_failure_paths.py with pinned cargo PATH, then pending Gitleaks and anchored added-line privacy scan.",
+  "next_action": "Run exact candidate DCO with documented named arguments, then repository policy, Gitleaks, diff, scope and clean-tree checks; publish only after green.",
   "observed_branch": "feature/all-agents-provider",
   "observed_dirty": 0,
   "observed_head": "03962f28571e79403740b560a769e1a3b171e685",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Let test plans select one provider profile for every chosen supported agent atomically.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Configure one provider for all agents",
-  "updated_at": "2026-09-08T11:34:45+00:00",
+  "updated_at": "2026-09-08T11:46:03+00:00",
   "worktree_key": "agent-systems-benchmark-all-agents-provider"
 }
 ---
@@ -119,3 +119,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T11:34:45+00:00: Recorded command exit 2; command argv SHA-256
   32ce0e00c8e4fc6c4b9fc87f00491fd5c6a6e4857a463717bc7bf0ce0a359765.
+
+- 2026-09-08T11:46:03+00:00: Candidate 03962f28571e79403740b560a769e1a3b171e685 created
+  SSH-signed+DCO on exact base b6078bb1ca2ee8f35973ffab9740c2c12dd4126e. Commit-time SSH verify
+  passed. Audit then exited 2 because check_dco.py was invoked with unsupported positional range
+  instead of required named arguments; remaining commands did not run. Operator invocation error
+  only; source unchanged.
