@@ -9,17 +9,17 @@
   "id": "AR-0402",
   "next_action": "Add immutable evaluator/container provenance and production adapter integration; run Rust/full gates when cargo is available.",
   "observed_branch": "feature/external-code-workloads",
-  "observed_dirty": 2,
-  "observed_head": "6c4dd62b0889abe96a7bef312a586d8cbc061085",
+  "observed_dirty": 0,
+  "observed_head": "38e7f5ff310edd3d12ddce41a49f25d140e0e539",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0402.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:18:05+00:00",
+  "updated_at": "2026-09-08T12:18:11+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---

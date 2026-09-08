@@ -35,8 +35,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-execution-budgets` | `feature/execution-budgets` | `30a12ad33174` | 0 | behind 9, ahead 0 |
 | `agent-systems-benchmark-experiment-comparability` | `feature/experiment-comparability` | `eb5e84933830` | 0 | behind 168, ahead 0 |
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 222, ahead 0 |
-| `agent-systems-benchmark-external-code-workloads` | `feature/external-code-workloads` | `6c4dd62b0889` | 2 | behind 35, ahead 4 |
-| changed files | - | - | - | `crates/asb-workloads/registry/v1/external-workloads.json`, `tools/quality/validate_external_registry.py` |
+| `agent-systems-benchmark-external-code-workloads` | `feature/external-code-workloads` | `38e7f5ff310e` | 0 | behind 35, ahead 5 |
 | `agent-systems-benchmark-fault-assurance` | `feature/fault-assurance` | `e6c623113c15` | 0 | behind 134, ahead 0 |
 | `agent-systems-benchmark-formal-assurance` | `feature/formal-assurance` | `2a495a99a657` | 0 | behind 180, ahead 0 |
 | `agent-systems-benchmark-frontend-api-integration` | `feature/frontend-api-integration` | `76cc86f23a48` | 0 | behind 7, ahead 0 |
