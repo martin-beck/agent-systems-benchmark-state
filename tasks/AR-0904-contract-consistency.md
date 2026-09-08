@@ -11,16 +11,16 @@
   "next_action": "Obtain fresh exact-main CI for signed+DCO main 92569367347b49c497780fa40195971ff655b0f4 using a resolvable base, then rerun final clean synchronized state validation and release only if all workflows pass.",
   "observed_branch": "feature/contract-consistency",
   "observed_dirty": 0,
-  "observed_head": "39d09374680fada3d02e286efcf726d114b24ee3",
+  "observed_head": "289b2711774bad2b58b525a971f09391539f8800",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0904.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Machine-check protocol and artifact consistency",
-  "updated_at": "2026-09-08T10:11:28+00:00",
+  "updated_at": "2026-09-08T10:13:31+00:00",
   "worktree_key": "agent-systems-benchmark-contract-consistency"
 }
 ---
