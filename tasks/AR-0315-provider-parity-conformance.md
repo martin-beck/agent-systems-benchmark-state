@@ -20,7 +20,7 @@
     "AR-0505"
   ],
   "id": "AR-0315",
-  "next_action": "Prove provider-setting parity and replay/live selection across every supported agent.",
+  "next_action": "Run full workspace/docs/policy/privacy/failure/dependency gates on the exact two-file structural conformance slice; if green create a signed checkpoint while retaining real pinned-agent/native qualification as explicit remaining work.",
   "observed_branch": "test/provider-parity-conformance",
   "observed_dirty": 2,
   "observed_head": "d51ee9c9ab8889f6b9837a89772f59ea6f37d3a3",
@@ -30,9 +30,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Conformance-test identical OpenAI and Ollama profiles across the complete supported-agent matrix.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Verify cross-agent provider parity",
-  "updated_at": "2026-09-08T15:56:17+00:00",
+  "updated_at": "2026-09-08T15:56:51+00:00",
   "worktree_key": "agent-systems-benchmark-provider-parity-conformance"
 }
 ---
@@ -76,3 +76,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T15:56:17+00:00: Recorded command exit 0; command argv SHA-256
   07a98f95b4cacf42efbbee6d3264a91ab16f68f616c303b29d78a8e1cee3ec2e.
+
+- 2026-09-08T15:56:51+00:00: Focused AR-0315 slice is substantive: exact base
+  d51ee9c9ab8889f6b9837a89772f59ea6f37d3a3; dirty scope is only
+  crates/asb-agents/tests/provider_parity.rs plus crates/asb-agents/PROVIDER_PARITY.md. Wrapped
+  cargo fmt, provider_parity integration test (5/5), focused clippy -D warnings, and git diff
+  --check all pass. Negatives prove Gemini unsupported atomically, corrupt cassette identity
+  rejection, exact agent/profile replay binding, no fallback when live is unavailable, and
+  profile/choice mismatch rejection. Evidence is explicitly structural/synthetic: real pinned-agent
+  wire capture, retry/deadline/cancellation observations, Ollama model execution, and native distro
+  matrix remain unqualified.
