@@ -7,7 +7,7 @@
     "AR-0401"
   ],
   "id": "AR-0402",
-  "next_action": "Pin datasets/evaluators and evaluate image architecture parity.",
+  "next_action": "Pin SWE-bench main 02e7a74ffd0b707aab73d203fe87bdc7c76afc8e (MIT); inspect Aider Polyglot 7e0611e77b54e2dea774cdc0aa00cf9f7ed6144f license and official evaluator/image manifests before adapter code.",
   "observed_branch": "feature/external-code-workloads",
   "observed_dirty": 0,
   "observed_head": "123c58f7a971f210873124fccb31daa16139aab4",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T08:38:08+00:00",
+  "updated_at": "2026-09-08T08:38:19+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -51,3 +51,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T08:38:08+00:00: Recorded command exit 0; command argv SHA-256
   fe568772bdb2f36015ea4d43040686bcb88795e0f5f945a1d305c4030f18353b.
+
+- 2026-09-08T08:38:19+00:00: Fresh official API audit recorded SWE-bench immutable main and MIT
+  metadata; Aider Polyglot immutable main is 7e0611e77b54e2dea774cdc0aa00cf9f7ed6144f but repository
+  API reports no SPDX license, so adoption is held pending explicit license inspection. No product
+  files changed.
