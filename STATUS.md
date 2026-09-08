@@ -9,9 +9,9 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 4 |
+| **In progress** | Claimed work with a live lease | 3 |
 | **Open** | Dependency-ready and available to claim | 1 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 35 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 89 |
@@ -170,7 +170,7 @@ flowchart LR
         AR_0852["AR-0852 - Done"]:::status_done
         AR_0853["AR-0853 - Done"]:::status_done
         AR_0854["AR-0854 - Done"]:::status_done
-        AR_0855["AR-0855 - In progress"]:::status_in_progress
+        AR_0855["AR-0855 - Blocked"]:::status_blocked
         AR_0856["AR-0856 - Planned"]:::status_planned
     end
     subgraph series_09["09 - Assurance"]
@@ -757,13 +757,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0319](tasks/AR-0319-credential-fd-helper-resolvers.md): Implement credential FD and helper resolvers | replay_20260906 | Add explicit file-descriptor and helper credential references without ambient-secret fallback. | Run full workspace/formal/fault/privacy/supply gates on signed candidate d2e08d8d, then request independent immutable review before publication. |
 | P1 | [AR-0805](tasks/AR-0805-tui-run-control.md): Add terminal run control and status | quality_20260906 | Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI. | Fresh independent immutable review of unpublished candidate fe24e48f9b4bae4ca7f62aa50be52e7586d455d3 against exact parent b2707c482876dcfb42c756c39165f6ecdb5c7c10. Verify empty-poll cursor retention and status-equivalent event lifecycle staging before publication. |
-| P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | codex-asb-tla-asset-repin | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Require TLA+ and Alloy declarations to name-match their source files, add hostile wrong-name tests for both, rerun applicable gates and all exact-head CI, then obtain fresh independent review. Preserve the state-vendor release blocker. |
 | P2 | [AR-0403](tasks/AR-0403-terminal-workloads.md): Integrate Terminal-Bench workloads | contracts_20260906 | Import terminal tasks through an adapter to the published harness or task format. | Monitor PR #85 exact head 76e01e9372ca80759eb71b42913c383ccbb6c9ad checks to terminal; investigate any failure and do not merge without coordinator authorization. Preserve explicit no-native/no-execution qualification limits. |
 
 ### Open (1)
@@ -772,7 +771,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary. |
 
-### Blocked (4)
+### Blocked (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -780,6 +779,7 @@ flowchart LR
 | P0 | [AR-0836](tasks/AR-0836-runner-isolation-hardening.md): Harden runner isolation and credential boundaries | Unclaimed | Harden development-host runner isolation against same-UID job tampering and diagnostic leakage. | Independently review immutable signed candidate 9b4e7084e02cdb3a1ff56dc55bbdce413ed6b1d3; keep trusted workflows blocked and AR-0836 in progress until required AR-0837 proves the digest-pinned no-host-mount job-container boundary. |
 | P1 | [AR-0702](tasks/AR-0702-native-platforms.md): Validate native Linux kernels and architectures | Unclaimed | Exercise native x86_64 and aarch64 including booted openEuler kernels. | Keep reviewed PR #31 head bdaf9c108226f34ec6098f75b51fd601da9e9571 immutable and green; await AR-0703 genuine Debian/openEuler x86_64/aarch64 lab capacity before completing remaining native qualification and AR-0702. |
 | P1 | [AR-0703](tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Provide genuine disposable native hosts for required Debian and openEuler platform qualification. | Obtain explicit provider/account and cost authorization, least-privilege external credentials, quotas, and four genuine disposable Debian 13.6/openEuler 24.03 LTS-SP2 x86_64/aarch64 hosts; then implement reservation/provision/collect/destroy evidence without emulation. |
+| P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | Unclaimed | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Require TLA+ and Alloy declarations to name-match their source files, add hostile wrong-name tests for both, rerun applicable gates and all exact-head CI, then obtain fresh independent review. Preserve the state-vendor release blocker. |
 
 ### Planned (35)
 

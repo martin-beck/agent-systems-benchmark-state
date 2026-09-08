@@ -2,7 +2,7 @@
 {
   "branch": "fix/huawei-mit-license-headers",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T20:12:08+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "fix/huawei-mit-license-headers",
   "observed_dirty": 0,
   "observed_head": "7add29f1d24ce3a74b9cca2e2f1fb29fa45cddd6",
-  "owner": "codex-asb-tla-asset-repin",
+  "owner": "",
   "plan": "../plans/AR-0855.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files.",
-  "task_revision": 176,
+  "task_revision": 177,
   "title": "Enforce Huawei MIT source headers",
-  "updated_at": "2026-09-08T18:22:19+00:00",
+  "updated_at": "2026-09-08T18:27:34+00:00",
   "worktree_key": "agent-systems-benchmark-huawei-mit-headers"
 }
 ---
@@ -494,3 +494,10 @@ and fresh coordinator snapshot before claiming. Do not modify vendored coordinat
 
 - 2026-09-08T18:22:19+00:00: Recorded command exit 0; command argv SHA-256
   b75ce9f2359707dd60ffd7354593339007fe8b2ad537c050e84990aeb9ed12c1.
+
+- 2026-09-08T18:27:34+00:00: PR #82 exact head 7add29f1d24ce3a74b9cca2e2f1fb29fa45cddd6 is signed,
+  DCO-valid, mergeable, and all 14 hosted checks pass. Upstream TLA v1.8.0 replacement is documented
+  and strictly repinned to official GitHub asset ID 551007111, size 4487756, SHA-256
+  4c7bb1f6b050d56c197ee9ddd6e57fe521eae175f5043c9fb98b169f7b2d5407, retaining source commit
+  b123b226. Fresh empty-cache fetch and full TLC/Alloy evidence passed. Await fresh independent
+  exact-head review/merge and immutable coordinator vendor sync; do not hand-edit state vendor.
