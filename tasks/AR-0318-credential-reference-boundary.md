@@ -2,7 +2,7 @@
 {
   "branch": "feature/credential-reference-boundary",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-08T16:55:27+00:00",
   "depends_on": [
     "AR-0102",
     "AR-0310"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/credential-reference-boundary",
   "observed_dirty": 2,
   "observed_head": "9feeba6524357df38e3ad118d4c3740306d3ec8e",
-  "owner": "",
+  "owner": "quality_20260906",
   "plan": "../plans/AR-0318.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Resolve provider credential references without exposing secrets or accepting ambient credentials.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Implement the credential-reference boundary",
-  "updated_at": "2026-09-08T13:55:24+00:00",
+  "updated_at": "2026-09-08T13:55:27+00:00",
   "worktree_key": "agent-systems-benchmark-credential-reference-boundary"
 }
 ---
@@ -57,3 +57,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T13:55:24+00:00: Configured toolchain proven at /srv/data/projects/.asb-local; prior
   missing-cargo blocker was corrected. Resume preserved dirty resolver for focused repair/tests.
+
+- 2026-09-08T13:55:27+00:00: Claimed by quality_20260906.
