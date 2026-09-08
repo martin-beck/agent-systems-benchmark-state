@@ -16,15 +16,18 @@
   ],
   "id": "AR-0316",
   "next_action": "Define content-addressed offline runtime manifests for every supported agent and its complete transitive environment.",
+  "observed_branch": "feature/agent-runtime-bundles",
+  "observed_dirty": 0,
+  "observed_head": "26b7e5f66676302ea86da401c7fe9f103bdf555b",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0316.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make supported agent installations reproducible, license-audited, SBOM-backed, and independently verifiable.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Publish reproducible agent runtime bundles",
-  "updated_at": "2026-09-08T10:35:28+00:00",
+  "updated_at": "2026-09-08T10:35:51+00:00",
   "worktree_key": "agent-systems-benchmark-agent-runtime-bundles"
 }
 ---
