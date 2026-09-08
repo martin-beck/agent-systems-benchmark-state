@@ -2,7 +2,7 @@
 {
   "branch": "feature/agent-replay-conformance",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T04:58:03+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0503",
     "AR-0504",
@@ -17,15 +17,15 @@
   "observed_branch": "feature/agent-replay-conformance",
   "observed_dirty": 0,
   "observed_head": "678ba7c8593a52beb8f3279ddd452245294131e7",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0505.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Test each actual client through recording and offline replay of engineering tasks.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Prove real-agent replay conformance",
-  "updated_at": "2026-09-08T02:14:10+00:00",
+  "updated_at": "2026-09-08T02:14:20+00:00",
   "worktree_key": "agent-systems-benchmark-agent-replay-conformance"
 }
 ---
@@ -101,3 +101,9 @@ Implementation has not started. Read the linked plan before claiming.
   immediate bounded stability failure confirm intermittence. No raw prompt/value was retained.
   Product diagnostic diff was removed after durable evidence; worktree is clean. P0 AR-0850 owns
   repair and regression proof.
+
+- 2026-09-08T02:14:20+00:00: Released blocked, not complete. Exact current-tree non-live asb-agents
+  suite passed 97 unit tests plus all replay malformed/inconsistency gates; native
+  OpenCode/OpenDesk/Codex replay journeys passed. Aider deterministic replay remains invalid until
+  AR-0850 fixes process-dependent multi-file ordering and the full strict matrix is rerun. AR-0515
+  remains the separate complete all-agent aggregation scope.
