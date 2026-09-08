@@ -10,11 +10,11 @@
   "plan": "../plans/AR-0851.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Adopt the canonical coordinator as a pinned offline-capable vendor artifact while preserving ASB extensions.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Adopt shared workflow coordinator",
-  "updated_at": "2026-09-08T04:52:25+00:00",
+  "updated_at": "2026-09-08T05:56:52+00:00",
   "worktree_key": "agent-systems-benchmark-shared-coordinator"
 }
 ---
@@ -29,3 +29,6 @@ ASB integration, compatibility evidence, and version pin.
 - 2026-09-08T04:52:25+00:00: Reconciled cross-project claim: owner process operated Agent Relay
   AR-2203 instead of ASB state; no ASB worktree or product mutation found. Preserve AR-0851 planned
   for a correctly scoped worker.
+
+- 2026-09-08T05:56:52+00:00: Canonical v0.1.1 release is published and its full verification
+  workflow passed.

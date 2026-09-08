@@ -12,6 +12,12 @@ Never edit this file directly.
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary. | quality_20260906 |
 | P2 | [AR-0309](tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | Run a maintained MIT OpenHands SDK or canonical headless client. | Await authorization for one controlled signed rebase of approved-scope OpenHands candidate e2b312c onto current main d3e2dfa, then rerun affected exact-tree gates and request immutable review. | contracts_20260906 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0851](tasks/AR-0851-shared-workflow-coordinator.md): Adopt shared workflow coordinator | Adopt the canonical coordinator as a pinned offline-capable vendor artifact while preserving ASB extensions. | After the canonical public release is verified, vendor its pinned artifact and run ASB-specific conformance, fault, race, renderer, schema, and live checks. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -64,7 +70,6 @@ Never edit this file directly.
 | P1 | [AR-0843](tasks/AR-0843-frontend-privacy-assurance.md): Assure frontend privacy and faults | Qualify frontend privacy, artifact access, and fault behavior. | Enforce public-summary and sensitive-artifact boundaries with privacy and fault tests. | - |
 | P1 | [AR-0844](tasks/AR-0844-frontend-api-integration.md): Integrate frontend control API | Integrate and qualify the frontend control API as an independent boundary. | Integrate independently reviewed frontend API components and qualify standalone runner operation. | - |
 | P1 | [AR-0846](tasks/AR-0846-artifact-retention-cleanup.md): Add linked artifact retention and cleanup | Manage ASB GitHub artifact retention and cleanup without deleting required evidence. | Implement dry-run inventory and explicitly authorized bounded cleanup for linked GitHub artifacts. | - |
-| P1 | [AR-0851](tasks/AR-0851-shared-workflow-coordinator.md): Adopt shared workflow coordinator | Adopt the canonical coordinator as a pinned offline-capable vendor artifact while preserving ASB extensions. | After the canonical public release is verified, vendor its pinned artifact and run ASB-specific conformance, fault, race, renderer, schema, and live checks. | - |
 | P1 | [AR-0904](tasks/AR-0904-contract-consistency.md): Machine-check protocol and artifact consistency | Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree. | Define canonical sources and generated/artifact-diff gates before extension implementations fan out. | - |
 | P1 | [AR-1003](tasks/AR-1003-execution-budgets.md): Enforce cost token and action budgets | Bound and report wall time, actions, tokens and monetary cost without treating unavailable telemetry as zero. | Specify budget capabilities and normalize provider usage with explicit uncertainty. | - |
 | P2 | [AR-0402](tasks/AR-0402-external-code-workloads.md): Integrate SWE-bench and Aider Polyglot | Add versioned external workload adapters without vendoring datasets. | Pin datasets/evaluators and evaluate image architecture parity. | - |
