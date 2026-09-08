@@ -10,7 +10,7 @@
     "AR-0804"
   ],
   "id": "AR-0805",
-  "next_action": "Repair the narrow import classification in asb-tui lib.rs, then rerun the same focused fmt/test/clippy batch once.",
+  "next_action": "Extend the one-file run-control projection with bounded high-cardinality page rejection, terminal event/status convergence, disconnect/reconnect and duplicate/cancellation-race negatives; then run focused and applicable full gates.",
   "observed_branch": "feature/tui-run-control",
   "observed_dirty": 1,
   "observed_head": "b2707c482876dcfb42c756c39165f6ecdb5c7c10",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T16:40:52+00:00",
+  "updated_at": "2026-09-08T16:41:22+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -80,3 +80,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T16:40:52+00:00: Recorded command exit 0; command argv SHA-256
   3caed8f2c97a1dd7146849884c2a7da81c53b7be4c84dbc3db9ff3ed69a58e3f.
+
+- 2026-09-08T16:41:22+00:00: AR-0805 first implementation slice is working on exact base
+  b2707c482876dcfb42c756c39165f6ecdb5c7c10 with one dirty path, crates/asb-tui/src/lib.rs (367
+  insertions, 1 deletion). Added explicit-confirmation at-most-once launch, durable run/attempt
+  identity binding, bounded reconnect calls, non-regressing status, contiguous exact-run event
+  projection, causally fenced cancellation, and acknowledgement-vs-terminal separation. Focused
+  cargo test --locked -p asb-tui passes 8/8; focused all-target clippy -D warnings, fmt, and
+  diff-check pass. The prior exit 101 was repaired by restoring MutationParams and moving test-only
+  IDs under cfg(test). AR-0855 is now blocked/unowned, so its active path fence is returned; future
+  rebase must preserve the required header delta.
