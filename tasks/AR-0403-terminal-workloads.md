@@ -7,7 +7,7 @@
     "AR-0401"
   ],
   "id": "AR-0403",
-  "next_action": "Fresh independent immutable review of rebased AR-0403 candidate 3e67bdfc3ce093234027d4be883223a6f3b6560c, tree 3074d26475feb748195ab71c70c357c6fd0b46be, exact parent chain f59e6b138a9b02850fadc7d81ebec09d8ff3fa0f -> cd15696994450455558b340673266b90e15eb651 -> 3e67bdfc. If approved, guarded force-with-lease update PR #85 and require fresh exact-head CI; preserve no-native/no-execution limits.",
+  "next_action": "Durable release and post-merge verification are complete; no further AR-0403 action. Native execution, reset, network isolation, evaluator image/SBOM, and native aarch64 remain unqualified.",
   "observed_branch": "feature/terminal-workloads",
   "observed_dirty": 0,
   "observed_head": "3e67bdfc3ce093234027d4be883223a6f3b6560c",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "done",
   "summary": "Import terminal tasks through an adapter to the published harness or task format.",
-  "task_revision": 86,
+  "task_revision": 87,
   "title": "Integrate Terminal-Bench workloads",
-  "updated_at": "2026-09-08T20:40:37+00:00",
+  "updated_at": "2026-09-08T21:04:05+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-workloads"
 }
 ---
@@ -323,3 +323,6 @@ Implementation has not started. Read the linked plan before claiming.
   synchronized refs/tree. Reconcile/snapshot/live doctor green. Scope remains a pinned fail-closed
   Terminal-Bench v4 contract only; native execution, evaluator/image/SBOM qualification, reset,
   network isolation, and native aarch64 support remain explicitly unclaimed.
+
+- 2026-09-08T21:04:05+00:00: Repair invalid empty terminal next_action from the completed release
+  transition; preserve exact merge and post-merge evidence plus explicit unsupported limits.
