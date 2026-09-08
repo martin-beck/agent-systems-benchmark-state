@@ -8,15 +8,18 @@
   ],
   "id": "AR-0402",
   "next_action": "Pin datasets/evaluators and evaluate image architecture parity.",
+  "observed_branch": "feature/external-code-workloads",
+  "observed_dirty": 0,
+  "observed_head": "123c58f7a971f210873124fccb31daa16139aab4",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0402.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T06:53:25+00:00",
+  "updated_at": "2026-09-08T06:53:49+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
