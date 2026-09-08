@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 4 |
+| **In progress** | Claimed work with a live lease | 3 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 45 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 73 |
+| **Done** | Accepted, integrated, and durably verified | 74 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -104,7 +104,7 @@ flowchart LR
     end
     subgraph series_06["06 - Metrics"]
         direction TB
-        AR_0601["AR-0601 - In progress"]:::status_in_progress
+        AR_0601["AR-0601 - Done"]:::status_done
         AR_0602["AR-0602 - Planned"]:::status_planned
         AR_0603["AR-0603 - Done"]:::status_done
         AR_0604["AR-0604 - Planned"]:::status_planned
@@ -735,14 +735,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0312](tasks/AR-0312-provider-ollama.md): Support a shared local Ollama provider | contracts_20260906 | Apply one pinned local Ollama provider and model configuration to all supported agents. | Monitor exact-head CI for PR #71 at e49acbf455f6ca745bfd3119c729d6326904b67b; stop before merge pending coordinator authorization. |
 | P1 | [AR-0904](tasks/AR-0904-contract-consistency.md): Machine-check protocol and artifact consistency | quality_20260906 | Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree. | Integrate the checker into required quality/failure gates, add semantic compatibility and generated capability/support coverage, then run focused and full validation. |
 | P2 | [AR-0402](tasks/AR-0402-external-code-workloads.md): Integrate SWE-bench and Aider Polyglot | root-coordination-20260906 | Add versioned external workload adapters without vendoring datasets. | Define content-addressed external source manifests for SWE-bench 02e7a74ffd0b707aab73d203fe87bdc7c76afc8e and Polyglot 7e0611e77b54e2dea774cdc0aa00cf9f7ed6144f; include Exercism cpp 413b80a9, go 97472cfe, java f1b22a3d, javascript 9be84b9e, python 1f6aab86, rust 1d3a0f46 (all MIT), then pin evaluator/image metadata. |
-| P2 | [AR-0601](tasks/AR-0601-csb-integration.md): Prototype optional CSB integration | replay_20260906 | Reuse CSB application execution and monitoring where contracts fit ASB. | Monitor PR #70 exact-head CI for terminal results; do not merge without coordinator authorization. |
 
 ### Open (1)
 
@@ -809,7 +808,7 @@ flowchart LR
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Evaluate maintenance, licenses and reproducibility before integration. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (73)
+### Done (74)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -885,4 +884,5 @@ flowchart LR
 | P1 | [AR-1008](tasks/AR-1008.md): Integrate Agent Workflow Quality in shadow mode | Unclaimed | Pin AWQ v0.1.0 in Agent Systems Benchmark and its state repository without replacing native gates or coordinator behavior. | Claim, create an isolated product worktree, add pinned policies and shadow workflows to both repositories, then publish reviewed evidence. |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Unclaimed | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Run final state validation/live doctor and release done after confirming clean synchronized product/state refs at signed merge a0d80e4. |
 | P2 | [AR-0309](tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | Unclaimed | Run a maintained MIT OpenHands SDK or canonical headless client. | Monitor PR #65 exact-head CI for fec0487, investigate any failure, and await final review; do not merge. |
+| P2 | [AR-0601](tasks/AR-0601-csb-integration.md): Prototype optional CSB integration | Unclaimed | Reuse CSB application execution and monitoring where contracts fit ASB. | Monitor PR #70 exact-head CI for terminal results; do not merge without coordinator authorization. |
 | P2 | [AR-0802](tasks/AR-0802-executable-guides.md): Deliver runnable user and extension guides | Unclaimed | Publish executable offline quickstart, workload/agent extension guide and reproducibility guide. | Capture actual CLI workflows after commands are implemented. |

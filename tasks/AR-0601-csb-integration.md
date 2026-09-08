@@ -2,7 +2,7 @@
 {
   "branch": "feature/csb-integration",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T11:03:36+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -16,15 +16,15 @@
   "observed_branch": "feature/csb-integration",
   "observed_dirty": 0,
   "observed_head": "524db90c893366cf5f683aa5a99ec211083256a4",
-  "owner": "replay_20260906",
+  "owner": "",
   "plan": "../plans/AR-0601.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Reuse CSB application execution and monitoring where contracts fit ASB.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Prototype optional CSB integration",
-  "updated_at": "2026-09-08T09:33:16+00:00",
+  "updated_at": "2026-09-08T09:33:49+00:00",
   "worktree_key": "agent-systems-benchmark-csb-integration"
 }
 ---
@@ -117,3 +117,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T09:33:16+00:00: Recorded command exit 0; command argv SHA-256
   05985dbb72b4764a4616227a45aa5d0de540c4e8e0b727c6c89a85b5bd7b9064.
+
+- 2026-09-08T09:33:49+00:00: Released done after signed+DCO no-ff merge
+  d56052d64b1e13b42a36e557b6a772381576a5bd (parents a97c3ed708cc16522383ecde41ec9fa2e642bc61 and
+  reviewed 524db90c893366cf5f683aa5a99ec211083256a4; tree 2132ed435e0810b68b890901e4a31f5c5664a16e).
+  Exact-main hosted runs all succeeded: Fault assurance 34210005718, Formal assurance 34210005733,
+  Emulated aarch64 portability 34210005748, Rust verification 34210005795, Repository quality
+  34210005850. Local exact-main repository policy with commit checks intentionally separated,
+  Markdown link/file presence, exact-range DCO, SSH signature, diff-check, tree identity and
+  clean-tree checks passed. Compatibility outcome remains fail-closed: high-level CSB bm-runner is
+  unsupported; only AR-0603 external_application remains eligible, and no
+  engineering-workload/direct-parity bridge is claimed until immutable inner-executable and result
+  mapping gaps are closed.
