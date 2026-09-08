@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T17:07:23+00:00",
+  "updated_at": "2026-09-08T17:20:45+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -197,3 +197,6 @@ Implementation has not started. Read the linked plan before claiming.
   workspace, documentation, contract, coverage, failure, platform, workflow, dependency, privacy,
   and secret gates are green. Candidate is unpublished. Unsupported dashboard protocol fields and
   native/resource/frontend-separation evidence remain explicit completion gaps, not claims.
+
+- 2026-09-08T17:20:45+00:00: Recorded command exit 1; command argv SHA-256
+  5e32b9ae3b8ab887507518ea059a5095a5491aa3aab7d5f90100d465c7994a6c.
