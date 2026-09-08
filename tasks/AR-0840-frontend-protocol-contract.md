@@ -2,7 +2,7 @@
 {
   "branch": "feature/frontend-protocol-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T07:21:11+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0801"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/frontend-protocol-contract",
   "observed_dirty": 0,
   "observed_head": "d3e2dfa979d85b8b443a07f93e7dd7b9a226bc2f",
-  "owner": "root-coordination-20260906",
+  "owner": "",
   "plan": "../plans/AR-0840.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Define the stable frontend control protocol contract.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Define frontend protocol contract",
-  "updated_at": "2026-09-08T06:38:05+00:00",
+  "updated_at": "2026-09-08T06:52:11+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-protocol-contract"
 }
 ---
@@ -153,3 +153,9 @@ compatibility rules, bounded errors, and generated consistency checks.
 
 - 2026-09-08T06:38:05+00:00: Recorded command exit 0; command argv SHA-256
   0b16cabb2243c8e2a481915400db7124ec2647b25507030c790388c3c83b445f.
+
+- 2026-09-08T06:52:11+00:00: Independent review complete: PR #54 merged as signed/DCO no-ff
+  462bd04a349dfbea1797c8a358e390544d51471e, included in current main. Exact asb-control focused
+  suite passed: 3 unit + 13 control + 5 endpoint + 4 schema-conformance tests; schemas
+  regenerated/conformance fixtures and bounded deadline/privacy/idempotency/owner transport
+  negatives pass. Current worktree clean and protocol paths are immutable.
