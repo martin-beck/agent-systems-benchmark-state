@@ -12,15 +12,18 @@
   ],
   "id": "AR-0314",
   "next_action": "Index compatible recordings and require an explicit replay-versus-live source choice.",
+  "observed_branch": "feature/provider-recording-choice",
+  "observed_dirty": 0,
+  "observed_head": "9feeba6524357df38e3ad118d4c3740306d3ec8e",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0314.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Offer matching prior recordings or an actual provider connection without silently choosing either.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Choose matching replay or live provider execution",
-  "updated_at": "2026-09-08T13:38:40+00:00",
+  "updated_at": "2026-09-08T13:38:46+00:00",
   "worktree_key": "agent-systems-benchmark-provider-recording-choice"
 }
 ---

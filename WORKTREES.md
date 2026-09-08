@@ -63,6 +63,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-provider-ollama` | `feature/provider-ollama` | `8137f5baa053` | 0 | behind 41, ahead 0 |
 | `agent-systems-benchmark-provider-openai` | `feature/provider-openai` | `1128595cd2f9` | 0 | behind 36, ahead 0 |
 | `agent-systems-benchmark-provider-profile-contract` | `feature/provider-profile-contract` | `2870b68d0ca0` | 0 | behind 172, ahead 0 |
+| `agent-systems-benchmark-provider-recording-choice` | `feature/provider-recording-choice` | `9feeba652435` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `748537c25e3a` | 0 | behind 253, ahead 0 |
 | `agent-systems-benchmark-recovery-models` | `feature/recovery-models` | `a288bb3485aa` | 0 | behind 75, ahead 0 |
 | `agent-systems-benchmark-redacted-request-pointer-replay` | `feature/redacted-request-pointer-replay` | `d7492ef5e9ad` | 0 | behind 104, ahead 0 |
