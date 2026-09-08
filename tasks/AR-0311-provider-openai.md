@@ -16,7 +16,7 @@
     "AR-0310"
   ],
   "id": "AR-0311",
-  "next_action": "Hold exact 05262805acc538a31c8f12ed152a71026294706e unpublished for independent immutable review; live credentialed provider/account journeys remain opt-in and were not run.",
+  "next_action": "Monitor PR #73 exact head 1128595cd2f93988374be008fcecda07fef9fde4; do not merge until every required exact-head check is green and coordinator authorizes integration.",
   "observed_branch": "feature/provider-openai",
   "observed_dirty": 0,
   "observed_head": "1128595cd2f93988374be008fcecda07fef9fde4",
@@ -26,9 +26,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply one default OpenAI provider profile consistently to all supported agents.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Support a shared OpenAI provider",
-  "updated_at": "2026-09-08T10:21:31+00:00",
+  "updated_at": "2026-09-08T10:22:12+00:00",
   "worktree_key": "agent-systems-benchmark-provider-openai"
 }
 ---
@@ -116,3 +116,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T10:21:31+00:00: Recorded command exit 0; command argv SHA-256
   d98d590d3836b09741083f2cd680cb40bc17311e55a3d8f62da4a93267b84249.
+
+- 2026-09-08T10:22:12+00:00: Rebased the independently approved three-path patch onto exact product
+  main 289b2711774bad2b58b525a971f09391539f8800. Successor 1128595cd2f93988374be008fcecda07fef9fde4
+  tree 0d1af5fcf2c420332b29d1861a9b69647af172de has a good SSH signature, exact DCO, clean
+  range-diff, diff-check, and focused OpenAI tests 5/5 green. Published PR #73
+  https://github.com/martin-beck/agent-systems-benchmark/pull/73; exact-head runs: quality
+  34215009113, aarch64 34215009122, formal 34215009181, Rust 34215009138, AWQ shadow 34215009171,
+  fault 34215009112. AWQ is green; remaining workflows are in progress at observation.
