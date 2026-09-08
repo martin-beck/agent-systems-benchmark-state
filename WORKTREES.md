@@ -51,8 +51,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-frontend-run-lifecycle` | `feature/frontend-run-lifecycle` | `b3b3b8907f6d` | 0 | behind 61, ahead 0 |
 | `agent-systems-benchmark-gemini-generate-content-replay` | `feature/gemini-generate-content-replay` | `93c19625f910` | 0 | behind 109, ahead 0 |
 | `agent-systems-benchmark-gemini-thinking-config-contract` | `feature/gemini-thinking-config-contract` | `0aff7023cacf` | 0 | behind 107, ahead 0 |
-| `agent-systems-benchmark-huawei-mit-headers` | `fix/huawei-mit-license-headers` | `816441da6ddf` | 6 | behind 2, ahead 1 |
-| changed files | - | - | - | `formal/models/Recovery.als`, `formal/models/Recovery.tla`, `formal/models/RecoveryMutants.als`, `formal/models/RecoveryStaleMutation.tla`, `tools/quality/repository_policy.py`, `tools/quality/test_source_headers.py` |
+| `agent-systems-benchmark-huawei-mit-headers` | `fix/huawei-mit-license-headers` | `f2e54a0539e8` | 0 | behind 2, ahead 2 |
 | `agent-systems-benchmark-interaction-aware-redaction` | `feature/interaction-aware-redaction` | `867861c95c19` | 0 | behind 94, ahead 0 |
 | `agent-systems-benchmark-kernel-diagnostics` | `feature/kernel-diagnostics` | `1d24993771a4` | 0 | behind 75, ahead 6 |
 | `agent-systems-benchmark-native-platform-lab` | `feature/native-platform-lab` | `b1669203308d` | 0 | behind 138, ahead 0 |
