@@ -11,7 +11,7 @@
     "AR-0304"
   ],
   "id": "AR-1003",
-  "next_action": "Run Clippy and semantic adversarial audit, then complete full locked gates.",
+  "next_action": "Rerun focused locked tests after interval correction, then full workspace locked test/docs/release gates.",
   "observed_branch": "feature/execution-budgets",
   "observed_dirty": 11,
   "observed_head": "d56052d64b1e13b42a36e557b6a772381576a5bd",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bound and report wall time, actions, tokens and monetary cost without treating unavailable telemetry as zero.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Enforce cost token and action budgets",
-  "updated_at": "2026-09-08T10:03:04+00:00",
+  "updated_at": "2026-09-08T10:03:46+00:00",
   "worktree_key": "agent-systems-benchmark-execution-budgets"
 }
 ---
@@ -108,3 +108,18 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T10:03:04+00:00: Recorded command exit 0; command argv SHA-256
   145f254f429faa84f1d26bbeb5147b177a89d201b216b17b919819a4f1c1c53d.
+
+- 2026-09-08T10:03:46+00:00: Semantic adversarial pass tightened the initial implementation without
+  widening its 11-path scope. Added an adapter-facing execute_budgeted boundary that reserves the
+  complete allowance before invoking the effect, does not invoke an effect after failed admission,
+  settles only returned normalized evidence, and conservatively retains the reservation on provider
+  failure. Provider-reported measured monetary cost now requires an explicit bounded immutable
+  billing revision paired with valid currency; incomplete or path/control-like revisions fail
+  closed. Cost-per-success preserves the original Unsupported/MissingTelemetry/InvalidTelemetry
+  reason instead of collapsing absence to zero or a different class. Estimated price-table
+  arithmetic now maintains separate lower and upper token interval numerators with checked
+  floor/ceiling conversion. Wrapped rustfmt check, Clippy --locked with -D warnings, and focused
+  locked tests passed after one classified operator PATH failure and one fixed unused-import Clippy
+  failure: asb-agents 110 unit tests plus applicable integrations/docs, asb-core 15, asb-analysis 25
+  plus budget/reference/reliability/docs. Next: rerun focused tests after interval correction, then
+  full workspace locked test/docs/release gates.
