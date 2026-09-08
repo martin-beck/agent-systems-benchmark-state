@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 3 |
 | **Planned** | Defined work awaiting promotion or dependencies | 49 |
 | **Future** | Deferred roadmap work | 0 |
@@ -93,7 +93,7 @@ flowchart LR
         AR_0511["AR-0511 - Done"]:::status_done
         AR_0512["AR-0512 - Done"]:::status_done
         AR_0513["AR-0513 - Done"]:::status_done
-        AR_0514["AR-0514 - Open"]:::status_open
+        AR_0514["AR-0514 - In progress"]:::status_in_progress
         AR_0515["AR-0515 - Planned"]:::status_planned
         AR_0516["AR-0516 - Done"]:::status_done
         AR_0517["AR-0517 - Done"]:::status_done
@@ -725,19 +725,19 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-0514](tasks/AR-0514-replay-openhands.md): Qualify OpenHands replay | contracts_20260906 | Qualify replay conformance for OpenHands. | Prove credential-free record/replay conformance for OpenHands with network denial and malformed/tool/cancel negatives. |
 | P1 | [AR-0841](tasks/AR-0841-frontend-local-transport.md): Implement frontend local transport | quality_20260906 | Implement the local frontend control transport and authorization boundary. | Implement bounded owner-only Unix-socket transport with peer checks and fail-closed framing. |
 | P1 | [AR-0851](tasks/AR-0851-shared-workflow-coordinator.md): Adopt shared workflow coordinator | codex-agent-workflow-coordinator-asb-20260908 | Adopt the canonical coordinator as a pinned offline-capable vendor artifact while preserving ASB extensions. | Rebase the immutable v0.1.3 integration tree onto current state main under coordinator serialization, rerun exact-tree gates, and present a signed review candidate; do not publish or merge before review. |
 | P2 | [AR-0402](tasks/AR-0402-external-code-workloads.md): Integrate SWE-bench and Aider Polyglot | root-coordination-20260906 | Add versioned external workload adapters without vendoring datasets. | Pin datasets/evaluators and evaluate image architecture parity. |
 
-### Open (2)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0514](tasks/AR-0514-replay-openhands.md): Qualify OpenHands replay | Unclaimed | Qualify replay conformance for OpenHands. | Prove credential-free record/replay conformance for OpenHands with network denial and malformed/tool/cancel negatives. |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary. |
 
 ### Blocked (3)
