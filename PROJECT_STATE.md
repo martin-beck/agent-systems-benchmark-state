@@ -2,21 +2,25 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `f42645dd05f17eca5635ca2e82057b703a03a1c3`
-- Local origin/main: `f42645dd05f17eca5635ca2e82057b703a03a1c3`
+- Product remote main: `678ba7c8593a52beb8f3279ddd452245294131e7`
+- Local origin/main: `678ba7c8593a52beb8f3279ddd452245294131e7`
 - Primary worktree head: `678ba7c8593a52beb8f3279ddd452245294131e7`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #31 | `feature/native-platforms@bdaf9c108226` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #58 | `feature/native-x86-capacity@45604cd323c5` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: qualify local native x86 capacity |
+| #31 | `feature/native-platforms@bdaf9c108226` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34177692208 | `678ba7c8593a` | push | Rust verification | queued:- |
+| 34177692199 | `678ba7c8593a` | push | Formal assurance | queued:- |
+| 34177692197 | `678ba7c8593a` | push | Fault assurance | queued:- |
+| 34177692194 | `678ba7c8593a` | push | Repository quality | queued:- |
+| 34177692187 | `678ba7c8593a` | push | Emulated aarch64 portability | queued:- |
 | 34176982163 | `45604cd323c5` | pull_request | Rust verification | completed:success |
 | 34176982145 | `45604cd323c5` | pull_request | Formal assurance | completed:success |
 | 34176982133 | `45604cd323c5` | pull_request | Fault assurance | completed:success |
@@ -24,8 +28,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34176982130 | `45604cd323c5` | pull_request | Emulated aarch64 portability | completed:success |
 | 34173812387 | `f42645dd05f1` | push | Repository quality | completed:success |
 | 34173812369 | `f42645dd05f1` | push | Rust verification | completed:success |
-| 34173812368 | `f42645dd05f1` | push | Formal assurance | completed:success |
-| 34173812342 | `f42645dd05f1` | push | Fault assurance | completed:success |
-| 34173812330 | `f42645dd05f1` | push | Emulated aarch64 portability | completed:success |
-| 34172766665 | `60a6c730457b` | pull_request | Emulated aarch64 portability | completed:success |
-| 34172766595 | `60a6c730457b` | pull_request | Fault assurance | completed:success |
