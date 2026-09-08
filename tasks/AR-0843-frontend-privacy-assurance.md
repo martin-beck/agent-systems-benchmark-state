@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify frontend privacy, artifact access, and fault behavior.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Assure frontend privacy and faults",
-  "updated_at": "2026-09-08T08:28:48+00:00",
+  "updated_at": "2026-09-08T08:29:12+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-privacy-assurance"
 }
 ---
@@ -61,3 +61,6 @@ redaction failures; prove no credentials, prompts, transcripts, or private paths
   digest-named regular file but does not visibly bind it to authoritative run evidence and checks
   only final-component symlink metadata; next action is adversarial forged/unbound and
   ancestor-symlink tests before the narrowest behavior repair. No product paths changed.
+
+- 2026-09-08T08:29:12+00:00: Recorded command exit 0; command argv SHA-256
+  06f9416cba02c50a91557cdafcddcb3711e5a48454c0e10bbc73a1e00a601d5c.
