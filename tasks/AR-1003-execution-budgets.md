@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bound and report wall time, actions, tokens and monetary cost without treating unavailable telemetry as zero.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Enforce cost token and action budgets",
-  "updated_at": "2026-09-08T10:29:40+00:00",
+  "updated_at": "2026-09-08T10:29:42+00:00",
   "worktree_key": "agent-systems-benchmark-execution-budgets"
 }
 ---
@@ -233,3 +233,6 @@ Implementation has not started. Read the linked plan before claiming.
   Rust/Loom/production tests pass; local Kani remains explicitly unavailable because its internal
   pinned installation lacks toolchain/bin/cargo, while current hosted formal CI is green. Candidate
   is ready for independent immutable review; do not publish before review.
+
+- 2026-09-08T10:29:42+00:00: Recorded command exit 0; command argv SHA-256
+  54f915ed81a9c3389a6e69f97bf15eeba9d6ef81fa9bcbdd8588285c599a9643.
