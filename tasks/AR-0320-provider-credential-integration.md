@@ -7,7 +7,7 @@
     "AR-0318"
   ],
   "id": "AR-0320",
-  "next_action": "Run full locked workspace quality/privacy/dependency gates and exact-head CI on integrated 0f92642, then perform synthetic environment preflight integration.",
+  "next_action": "Independent immutable review of signed merge 0f92642 and recorded exact-tree gates; if approved, publish focused integration PR and require exact-head CI before merge/release.",
   "observed_branch": "feature/provider-credential-integration",
   "observed_dirty": 0,
   "observed_head": "0f92642fc870a886ae5f498b0cfefaf6a8f9b1c0",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate the verified environment credential resolver into the product workspace.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Integrate provider credential boundary",
-  "updated_at": "2026-09-08T14:23:45+00:00",
+  "updated_at": "2026-09-08T14:24:15+00:00",
   "worktree_key": "agent-systems-benchmark-provider-credential-integration"
 }
 ---
@@ -82,3 +82,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T14:23:45+00:00: Recorded command exit 0; command argv SHA-256
   92df518802ee9225643ce01947e5e7f3299cbebe613bdf97bfeca325f96e7694.
+
+- 2026-09-08T14:24:15+00:00: AR-0320 exact integrated tree 0f92642fc870a886ae5f498b0cfefaf6a8f9b1c0
+  is clean. Signed+DCO no-ff merge preserves reviewed signed parents e9a0e523/5d62546 on exact main
+  9feeba652. Wrapped gates green: focused credential/preflight 6/6; cargo fmt --check; workspace
+  all-target clippy -D warnings; cargo test --locked --workspace (all displayed suites green,
+  expected qualified native/provider ignores only); release workspace build; rustdoc -D warnings;
+  repository_policy exact base/head; DCO exact range; cargo-deny frozen
+  (advisories/bans/licenses/sources ok, only unmatched-allow warnings); cargo-audit no-fetch
+  1242-advisory DB/143 dependencies; Gitleaks 2-commit 14.45KB range no leaks. Synthetic preflight
+  proves explicit environment lookup, locator digest before lookup, empty child environment with
+  only target injection, bounded output and no credential emission; FD/helper remain explicitly
+  unsupported. The one exit 127 was operator-only malformed env argv (`RUST prijUP_HOME`), corrected
+  once; exit 2 was incorrect check_dco positional syntax, corrected to documented flags and green.
