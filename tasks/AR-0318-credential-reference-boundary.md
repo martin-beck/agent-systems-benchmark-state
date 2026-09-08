@@ -8,7 +8,7 @@
     "AR-0310"
   ],
   "id": "AR-0318",
-  "next_action": "Implement the bounded credential-reference resolver and fail-closed process boundary.",
+  "next_action": "Add bounded FD/helper resolvers or formally amend the contract and acceptance evidence for explicitly unsupported sources; then rerun full AR gates.",
   "observed_branch": "feature/credential-reference-boundary",
   "observed_dirty": 0,
   "observed_head": "e9a0e52360968c5575e82074eb205205385e6095",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve provider credential references without exposing secrets or accepting ambient credentials.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Implement the credential-reference boundary",
-  "updated_at": "2026-09-08T13:58:08+00:00",
+  "updated_at": "2026-09-08T13:58:51+00:00",
   "worktree_key": "agent-systems-benchmark-credential-reference-boundary"
 }
 ---
@@ -77,3 +77,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T13:58:03+00:00: Recorded command exit 0; command argv SHA-256
   55168954a8e84f41e2fb79c951763dbcc88180e4866573efc9617a869a5e40ea.
+
+- 2026-09-08T13:58:51+00:00: Signed checkpoint e9a0e523 has exact 2-path scope, green wrapped
+  focused cargo test 6/6, clippy -D warnings, and fmt. Environment resolution is implemented;
+  FD/Helper are explicit mismatch negatives only, so AR remains in progress pending
+  contract-complete support or approved contract amendment.

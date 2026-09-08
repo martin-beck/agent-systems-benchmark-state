@@ -749,7 +749,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0318](tasks/AR-0318-credential-reference-boundary.md): Implement the credential-reference boundary | quality_20260906 | Resolve provider credential references without exposing secrets or accepting ambient credentials. | Implement the bounded credential-reference resolver and fail-closed process boundary. |
+| P1 | [AR-0318](tasks/AR-0318-credential-reference-boundary.md): Implement the credential-reference boundary | quality_20260906 | Resolve provider credential references without exposing secrets or accepting ambient credentials. | Add bounded FD/helper resolvers or formally amend the contract and acceptance evidence for explicitly unsupported sources; then rerun full AR gates. |
 | P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | asb-license-20260908 | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Claim, create the declared worktree, enforce exact first-party Huawei MIT source headers, test, and publish unmerged PRs. |
 | P2 | [AR-0403](tasks/AR-0403-terminal-workloads.md): Integrate Terminal-Bench workloads | replay_20260906 | Import terminal tasks through an adapter to the published harness or task format. | Add a provenance-only Terminal-Bench v4 adapter record and fail-closed negatives; do not qualify or execute until selected Harbor package bytes, OCI image digest, reset behavior, and native oracle evidence are available. |
 
