@@ -2,7 +2,7 @@
 {
   "branch": "feature/frontend-privacy-assurance",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T11:21:28+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0840",
     "AR-0841"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/frontend-privacy-assurance",
   "observed_dirty": 0,
   "observed_head": "cca49ec3bea429a90a267600acf821cebe45c138",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0843.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Qualify frontend privacy, artifact access, and fault behavior.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Assure frontend privacy and faults",
-  "updated_at": "2026-09-08T09:07:52+00:00",
+  "updated_at": "2026-09-08T09:08:30+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-privacy-assurance"
 }
 ---
@@ -191,3 +191,15 @@ redaction failures; prove no credentials, prompts, transcripts, or private paths
 
 - 2026-09-08T09:07:52+00:00: Recorded command exit 0; command argv SHA-256
   2fa5f0727a18bf74e2db9ae2b43a8c2a75f3e3ee9c680eee5c57cc91d81d4797.
+
+- 2026-09-08T09:08:30+00:00: AR-0843 completed and integrated. Independently approved candidate
+  cca49ec3bea429a90a267600acf821cebe45c138 was merged by signed+DCO no-ff merge
+  a97c3ed708cc16522383ecde41ec9fa2e642bc61 and origin/main is exact and clean. Exact-main CI all
+  completed success: emulated aarch64 34207708071, repository quality 34207708072, fault assurance
+  34207707978, formal assurance 34207708004, Rust verification x86_64/native arm 34207708009.
+  Wrapped post-merge verification at exact main exited 0: fmt check, asb-cli all-target clippy with
+  warnings denied, both artifact containment/oversize tests, complete asb-control tests and
+  doctests, asb-cli docs with warnings denied, and clean index/worktree. The default API returns
+  only bounded Sensitive metadata; held result-root directory and component-wise no-follow opens
+  reject ancestor/final links and oversized artifacts before hashing. No artifact content or private
+  values are exposed. Release returns the frontend privacy/artifact fence.
