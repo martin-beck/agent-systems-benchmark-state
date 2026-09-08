@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify authorized disposable native x86_64 capacity on a development host.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Qualify native x86 capacity",
-  "updated_at": "2026-09-08T01:22:01+00:00",
+  "updated_at": "2026-09-08T01:32:18+00:00",
   "worktree_key": "agent-systems-benchmark-native-x86-capacity"
 }
 ---
@@ -274,3 +274,6 @@ claim native aarch64 support; native aarch64 remains future work requiring separ
   zizmor, Gitleaks, deny/audit, failure fixtures, aggregate/critical coverage, Kani 6/6 and
   deliberate counterexample are green. Prior PR #58 stale head 5d2cd78 had all hosted checks green
   but remains unmerged and must be replaced only after fresh review.
+
+- 2026-09-08T01:32:18+00:00: Recorded command exit 0; command argv SHA-256
+  eef9cea2a000a118f0a74457c5bc81de507ba489cec4131ddf9411e07e895f7f.
