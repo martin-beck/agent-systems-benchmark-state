@@ -2,7 +2,7 @@
 {
   "branch": "feature/executable-guides",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T09:20:54+00:00",
+  "claim_expires": "2026-09-08T09:24:11+00:00",
   "depends_on": [
     "AR-0801",
     "AR-0401",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish executable offline quickstart, workload/agent extension guide and reproducibility guide.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Deliver runnable user and extension guides",
-  "updated_at": "2026-09-08T06:21:23+00:00",
+  "updated_at": "2026-09-08T06:24:11+00:00",
   "worktree_key": "agent-systems-benchmark-executable-guides"
 }
 ---
@@ -38,3 +38,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T06:21:23+00:00: Recorded command exit 0; command argv SHA-256
   93f0cd29c34e2137f91a1806d95d5f0860c02df3faad1fcf1909e14f8051ddde.
+
+- 2026-09-08T06:24:11+00:00: Heartbeat by quality_20260906.
