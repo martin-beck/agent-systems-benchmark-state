@@ -2,7 +2,7 @@
 {
   "branch": "feature/agent-runtime-bundles",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T13:35:28+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0301",
     "AR-0302",
@@ -19,15 +19,15 @@
   "observed_branch": "feature/agent-runtime-bundles",
   "observed_dirty": 0,
   "observed_head": "1249fd87d46d54556bca835fcc3e6570df15cc2c",
-  "owner": "contracts_20260906",
+  "owner": "",
   "plan": "../plans/AR-0316.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make supported agent installations reproducible, license-audited, SBOM-backed, and independently verifiable.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Publish reproducible agent runtime bundles",
-  "updated_at": "2026-09-08T11:59:46+00:00",
+  "updated_at": "2026-09-08T12:00:21+00:00",
   "worktree_key": "agent-systems-benchmark-agent-runtime-bundles"
 }
 ---
@@ -128,3 +128,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T11:59:46+00:00: Recorded command exit 0; command argv SHA-256
   65b6f88ae1defd30c4b28134279d58e23543094fa0b3f348a60f8000ec3b5293.
+
+- 2026-09-08T12:00:21+00:00: Released DONE after repaired signed+DCO no-ff main
+  fcbf71ae8c08d817bad27acf1fa38e29296b9547 (parents 0710c937 and approved 1249fd87; PR #77). Primary
+  main/origin-main are exact and clean. Fresh external-target postmerge cargo test --locked -p
+  asb-bundle catalog::tests passed 2/2. Exact-main workflows all succeeded: formal 34222580707,
+  fault 34222580859, with the associated exact-main Rust, quality, and emulated-aarch64 runs also
+  terminal green as coordinator verified. Delivered scope is the fail-closed nine-agent provenance
+  and closure-gap catalog: every current transitive closure and redistribution decision remains
+  explicitly incomplete/unverified, so no complete runtime bundle, offline materialization,
+  redistribution, or native platform support is claimed by this release.

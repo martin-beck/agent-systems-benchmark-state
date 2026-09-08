@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 39 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 81 |
+| **Done** | Accepted, integrated, and durably verified | 82 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -66,7 +66,7 @@ flowchart LR
         AR_0313["AR-0313 - In progress"]:::status_in_progress
         AR_0314["AR-0314 - Planned"]:::status_planned
         AR_0315["AR-0315 - Planned"]:::status_planned
-        AR_0316["AR-0316 - In progress"]:::status_in_progress
+        AR_0316["AR-0316 - Done"]:::status_done
         AR_0317["AR-0317 - Done"]:::status_done
     end
     subgraph series_04["04 - Live measurement"]
@@ -737,12 +737,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0313](tasks/AR-0313-all-agents-provider.md): Configure one provider for all agents | quality_20260906 | Let test plans select one provider profile for every chosen supported agent atomically. | Independent immutable review of unpublished candidate 03962f28571e79403740b560a769e1a3b171e685 tree bf48ba52a07d24474a6cf62839e8197b0f55c7e0 on exact base b6078bb1ca2ee8f35973ffab9740c2c12dd4126e; publish only after approval and fresh-base audit. |
-| P1 | [AR-0316](tasks/AR-0316-agent-runtime-bundles.md): Publish reproducible agent runtime bundles | contracts_20260906 | Make supported agent installations reproducible, license-audited, SBOM-backed, and independently verifiable. | Monitor PR #77 exact head 1249fd87d46d54556bca835fcc3e6570df15cc2c; investigate any exact-head failure and do not merge without coordinator authorization. |
 
 ### Open (2)
 
@@ -804,7 +803,7 @@ flowchart LR
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Evaluate maintenance, licenses and reproducibility before integration. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (81)
+### Done (82)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -848,6 +847,7 @@ flowchart LR
 | P1 | [AR-0310](tasks/AR-0310-provider-profile-contract.md): Define common provider profiles | Unclaimed | Normalize one provider configuration for safe translation across heterogeneous agent adapters. | Monitor exact-main hosted runs for signed merge d384c4c54a4576dadaae3a542cfc09a5e339a4fe, then run live state validation and await release authorization. |
 | P1 | [AR-0311](tasks/AR-0311-provider-openai.md): Support a shared OpenAI provider | Unclaimed | Apply one default OpenAI provider profile consistently to all supported agents. | Monitor PR #73 exact head 1128595cd2f93988374be008fcecda07fef9fde4; do not merge until every required exact-head check is green and coordinator authorizes integration. |
 | P1 | [AR-0312](tasks/AR-0312-provider-ollama.md): Support a shared local Ollama provider | Unclaimed | Apply one pinned local Ollama provider and model configuration to all supported agents. | Monitor fresh exact-head CI for PR #71 at rebased 8137f5baa0535e5d6e74d5a81e1dfbb0deaa2615; do not merge pending coordinator review. |
+| P1 | [AR-0316](tasks/AR-0316-agent-runtime-bundles.md): Publish reproducible agent runtime bundles | Unclaimed | Make supported agent installations reproducible, license-audited, SBOM-backed, and independently verifiable. | Monitor PR #77 exact head 1249fd87d46d54556bca835fcc3e6570df15cc2c; investigate any exact-head failure and do not merge without coordinator authorization. |
 | P1 | [AR-0401](tasks/AR-0401-engineering-workloads.md): Implement original engineering workloads | Unclaimed | Deliver bug fix, feature addition, refactoring, test generation, dependency migration, build repair and repository navigation fixtures via extension API. | Await coordinator integration authorization for exact reviewed green PR #20 head 41ffc6e; retain Cargo fence, then signed no-ff merge and complete exact-main post-merge validation. |
 | P1 | [AR-0501](tasks/AR-0501-replay-evaluation.md): Evaluate replay literature and reusable tools | Unclaimed | Compare literature and record/replay implementations using identical synthetic conformance cases. | Await independent immutable-head review and coordinator integration of product PR #4; then run exact-main post-merge verification before release. |
 | P1 | [AR-0502](tasks/AR-0502-replay-cassettes.md): Implement immutable response cassette format | Unclaimed | Store versioned provider requests, event streams, causal IDs and integrity metadata. | Run full coordination validation, reconcile/snapshot/live doctor, verify clean synchronized repositories, then release AR-0502 done and return Cargo fence. |
