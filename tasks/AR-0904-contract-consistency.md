@@ -10,17 +10,17 @@
   "id": "AR-0904",
   "next_action": "Integrate the checker into required quality/failure gates, add semantic compatibility and generated capability/support coverage, then run focused and full validation.",
   "observed_branch": "feature/contract-consistency",
-  "observed_dirty": 6,
-  "observed_head": "a97c3ed708cc16522383ecde41ec9fa2e642bc61",
+  "observed_dirty": 0,
+  "observed_head": "852b54934c82a18765cbbb6592a3a23e2b385035",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0904.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Machine-check protocol and artifact consistency",
-  "updated_at": "2026-09-08T09:48:26+00:00",
+  "updated_at": "2026-09-08T09:48:51+00:00",
   "worktree_key": "agent-systems-benchmark-contract-consistency"
 }
 ---
