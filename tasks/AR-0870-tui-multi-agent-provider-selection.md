@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Choose several agents and one preconfigured provider for all of them from negotiated TUI selection lists.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Add TUI multi-agent provider selection",
-  "updated_at": "2026-09-08T23:40:31+00:00",
+  "updated_at": "2026-09-08T23:40:41+00:00",
   "worktree_key": "agent-systems-benchmark-tui-multi-agent-provider-selection"
 }
 ---
@@ -69,3 +69,6 @@ Implementation has not started. Read the linked plan before claiming.
   43ba62fd0db2413dbf0f9e087fb867eaf92af7817780a75a15edace41352b834.
 
 - 2026-09-08T23:40:31+00:00: Heartbeat by replay_20260906.
+
+- 2026-09-08T23:40:41+00:00: Recorded command exit 0; command argv SHA-256
+  93d96193475d9325b3d347d41aa42727214fca93d36ff7bf6d7fb22852e7d3d0.
