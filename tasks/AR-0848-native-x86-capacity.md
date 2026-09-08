@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0848",
-  "next_action": "Await independent immutable review of exact signed head 5d2cd78a924b2e2cb76e0bf48e01dca3e9249e74; publish only after approval, then exact-head CI and serialized integration. Native aarch64 and performance support remain explicitly unsupported.",
+  "next_action": "Await fresh independent immutable review of rebased signed head 45604cd323c5de0ab9c7eaf0b6a39d90f4d43002 on exact product main f42645dd05f17eca5635ca2e82057b703a03a1c3; only then update PR #58 by exact force-with-lease and require fresh exact-head CI.",
   "observed_branch": "feature/native-x86-capacity",
   "observed_dirty": 0,
   "observed_head": "45604cd323c5de0ab9c7eaf0b6a39d90f4d43002",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify authorized disposable native x86_64 capacity on a development host.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Qualify native x86 capacity",
-  "updated_at": "2026-09-08T01:21:33+00:00",
+  "updated_at": "2026-09-08T01:22:01+00:00",
   "worktree_key": "agent-systems-benchmark-native-x86-capacity"
 }
 ---
@@ -265,3 +265,12 @@ claim native aarch64 support; native aarch64 remains future work requiring separ
 
 - 2026-09-08T01:21:33+00:00: Recorded command exit 0; command argv SHA-256
   f3dc97c9fb502dbf961e094bbd151be191a66a63df5c65f5ab2db9240e539628.
+
+- 2026-09-08T01:22:01+00:00: Controlled rebase preserved the three-commit AR-0848 series exactly:
+  range-diff old 72dd78f..5d2cd78 versus f42645d..45604cd is equal for all commits. New head
+  45604cd323c5de0ab9c7eaf0b6a39d90f4d43002, tree ebec01b4677174d20853574068d3265b8254e664, clean
+  six-path scope; all rewritten commits are SSH-signed and DCO-valid. Exact rebased-tree focused
+  Ruff/platform 23/23, full fmt/clippy/workspace tests/docs/release, repository policy, actionlint,
+  zizmor, Gitleaks, deny/audit, failure fixtures, aggregate/critical coverage, Kani 6/6 and
+  deliberate counterexample are green. Prior PR #58 stale head 5d2cd78 had all hosted checks green
+  but remains unmerged and must be replaced only after fresh review.
