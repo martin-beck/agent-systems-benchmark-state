@@ -2,7 +2,7 @@
 {
   "branch": "feature/credential-reference-boundary",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T16:45:08+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0102",
     "AR-0310"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/credential-reference-boundary",
   "observed_dirty": 2,
   "observed_head": "9feeba6524357df38e3ad118d4c3740306d3ec8e",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0318.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Resolve provider credential references without exposing secrets or accepting ambient credentials.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Implement the credential-reference boundary",
-  "updated_at": "2026-09-08T13:53:36+00:00",
+  "updated_at": "2026-09-08T13:54:19+00:00",
   "worktree_key": "agent-systems-benchmark-credential-reference-boundary"
 }
 ---
@@ -49,3 +49,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T13:53:36+00:00: Recorded command exit 101; command argv SHA-256
   349ba7866d855184d507c3622d80b24a4d928770cfce174ba3c31b1e9979e277.
+
+- 2026-09-08T13:54:19+00:00: Blocked after repeated checks: host has neither rustup nor cargo on
+  PATH and no cargo binary under /srv/data/projects; focused Rust compile/test cannot run. Preserve
+  dirty resolver worktree; next action is provision/activate documented Rust toolchain, then rerun
+  focused tests and repair.
