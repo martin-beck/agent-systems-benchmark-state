@@ -17,7 +17,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34286967403 | `7571592990bf` | push | Rust verification | in_progress:- |
+| 34286967403 | `7571592990bf` | push | Rust verification | completed:failure |
 | 34286967391 | `7571592990bf` | push | Emulated aarch64 portability | in_progress:- |
 | 34286967390 | `7571592990bf` | push | Huawei MIT source headers | completed:success |
 | 34286967367 | `7571592990bf` | push | Repository quality | completed:failure |
