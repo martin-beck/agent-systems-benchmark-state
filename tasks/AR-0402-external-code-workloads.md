@@ -7,7 +7,7 @@
     "AR-0401"
   ],
   "id": "AR-0402",
-  "next_action": "Add immutable evaluator/container provenance and production adapter integration; run Rust/full gates when cargo is available.",
+  "next_action": "Populate immutable evaluator/container/SBOM evidence for a real opt-in suite, then add production adapter integration and run Rust/full gates.",
   "observed_branch": "feature/external-code-workloads",
   "observed_dirty": 0,
   "observed_head": "38e7f5ff310edd3d12ddce41a49f25d140e0e539",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:18:11+00:00",
+  "updated_at": "2026-09-08T12:18:25+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -204,3 +204,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T12:18:05+00:00: Recorded command exit 0; command argv SHA-256
   64d7f562fca5df40ce3572edfd1d632f1663494b38594b9cacfdc6ef967f4bb8.
+
+- 2026-09-08T12:18:25+00:00: Added signed product commit 38e7f5f binding evaluator provenance status
+  for all external suites. Planned evaluators explicitly carry image/SBOM/evidence slots; validator
+  rejects invalid status and any qualified record lacking all three immutable identities. Focused
+  registry/validator tests pass 2/2; no evaluator qualification is claimed.
