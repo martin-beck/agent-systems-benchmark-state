@@ -10,7 +10,7 @@
     "AR-1001"
   ],
   "id": "AR-0806",
-  "next_action": "PR #89 is published at exact head 3844c28ae60a3fd0ecc35d9845832b8a20f657b0, but live base advanced to 3514089fa378bd50629c9794b215fd53c8ea7d5d after immutable review; do not merge stale-base candidate. Obtain authorization for controlled rebase/resign onto exact current main, rerun range-diff/full gates, and require fresh immutable review plus exact-head CI before merge.",
+  "next_action": "Fresh independent immutable review of rebased candidate 031a4516cbb3addc184ab3c4b0f4c683aa14755d, tree cbd1d71498d62ab5e36dfad250a9171876646ce4, exact parent/current origin/main 3514089fa378bd50629c9794b215fd53c8ea7d5d. Verify '=' range-diff from approved repaired 3844c28, clean two-path scope, signature/DCO, duplicate-page atomicity, gates, and AR-0875 limitation; then guarded force-with-lease update PR #89 and require fresh exact-head CI.",
   "observed_branch": "feature/tui-history-analysis",
   "observed_dirty": 0,
   "observed_head": "031a4516cbb3addc184ab3c4b0f4c683aa14755d",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-08T23:18:55+00:00",
+  "updated_at": "2026-09-08T23:19:28+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
@@ -162,3 +162,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T23:18:55+00:00: Recorded command exit 0; command argv SHA-256
   82b6b7b7b306b2946c6a274804edf37504d9a92c55109a19feda9ab217c8826d.
+
+- 2026-09-08T23:19:28+00:00: Controlled rebase completed onto exact authorized and live origin/main
+  3514089fa378bd50629c9794b215fd53c8ea7d5d. New signed candidate
+  031a4516cbb3addc184ab3c4b0f4c683aa14755d, tree cbd1d71498d62ab5e36dfad250a9171876646ce4, maps '='
+  from approved repaired 3844c28; scope remains crates/asb-tui/src/lib.rs and README.md only.
+  Duplicate-within-page validation and atomic negative are unchanged, and AR-0875-owned paths remain
+  untouched. Fresh exact-tree fmt, workspace all-target Clippy -D warnings, workspace tests, rustdoc
+  -D warnings, release build, signature/DCO, repository policy, diff-check, and Gitleaks all pass.
+  Existing PR #89 remains at old head until fresh immutable review authorizes exact force-with-lease
+  update.
