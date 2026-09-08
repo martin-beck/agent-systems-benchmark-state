@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Offer matching prior recordings or an actual provider connection without silently choosing either.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Choose matching replay or live provider execution",
-  "updated_at": "2026-09-08T13:37:29+00:00",
+  "updated_at": "2026-09-08T13:38:40+00:00",
   "worktree_key": "agent-systems-benchmark-provider-recording-choice"
 }
 ---
@@ -34,3 +34,6 @@ Implementation has not started. Read the linked plan before claiming.
   durably done; AR-0803 is done. Promote as highest-priority compatible provider/replay leaf.
 
 - 2026-09-08T13:37:29+00:00: Claimed by quality_20260906.
+
+- 2026-09-08T13:38:40+00:00: Recorded command exit 0; command argv SHA-256
+  c2a25f84ed443b9770bf82f9936459b9a8b8dc5e072d4c915fbb2fd7643af8d2.
