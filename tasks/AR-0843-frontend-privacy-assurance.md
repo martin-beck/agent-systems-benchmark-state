@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify frontend privacy, artifact access, and fault behavior.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Assure frontend privacy and faults",
-  "updated_at": "2026-09-08T08:52:20+00:00",
+  "updated_at": "2026-09-08T08:52:22+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-privacy-assurance"
 }
 ---
@@ -147,3 +147,6 @@ redaction failures; prove no credentials, prompts, transcripts, or private paths
   diff-check, and exact two-path scope all exited 0. No credential, prompt, transcript, artifact
   bytes, or private path crosses the API; metadata remains explicitly Sensitive. Product mutation is
   stopped for independent diff review.
+
+- 2026-09-08T08:52:22+00:00: Recorded command exit 0; command argv SHA-256
+  fcbcd72b192a3a17b39971a62d3aef4ecb0eccbb16f643dc4359eec98085229e.
