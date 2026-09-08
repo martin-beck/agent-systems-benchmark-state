@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 34 |
 | **Future** | Deferred roadmap work | 0 |
@@ -170,7 +170,7 @@ flowchart LR
         AR_0852["AR-0852 - Done"]:::status_done
         AR_0853["AR-0853 - Done"]:::status_done
         AR_0854["AR-0854 - Done"]:::status_done
-        AR_0855["AR-0855 - Open"]:::status_open
+        AR_0855["AR-0855 - In progress"]:::status_in_progress
     end
     subgraph series_09["09 - Assurance"]
         direction TB
@@ -751,19 +751,19 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0319](tasks/AR-0319-credential-fd-helper-resolvers.md): Implement credential FD and helper resolvers | replay_20260906 | Add explicit file-descriptor and helper credential references without ambient-secret fallback. | Run full workspace/formal/fault/privacy/supply gates on signed candidate d2e08d8d, then request independent immutable review before publication. |
 | P1 | [AR-0805](tasks/AR-0805-tui-run-control.md): Add terminal run control and status | quality_20260906 | Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI. | Fresh independent immutable review of repaired unpublished candidate c8336909ae6de887d8146f59224dd21efff58b52 against exact parent b2707c482876dcfb42c756c39165f6ecdb5c7c10. Review the five prior blockers and one-file scope before publication. Preserve explicit protocol/resource/native evidence gaps and AR-0855 header lines. |
+| P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | codex-asb-module-name-repair | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Require TLA+ and Alloy declarations to name-match their source files, add hostile wrong-name tests for both, rerun applicable gates and all exact-head CI, then obtain fresh independent review. Preserve the state-vendor release blocker. |
 | P2 | [AR-0403](tasks/AR-0403-terminal-workloads.md): Integrate Terminal-Bench workloads | contracts_20260906 | Import terminal tasks through an adapter to the published harness or task format. | Monitor PR #85 exact head 76e01e9372ca80759eb71b42913c383ccbb6c9ad checks to terminal; investigate any failure and do not merge without coordinator authorization. Preserve explicit no-native/no-execution qualification limits. |
 
-### Open (2)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | Unclaimed | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Require TLA+ and Alloy declarations to name-match their source files, add hostile wrong-name tests for both, rerun applicable gates and all exact-head CI, then obtain fresh independent review. Preserve the state-vendor release blocker. |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary. |
 
 ### Blocked (4)

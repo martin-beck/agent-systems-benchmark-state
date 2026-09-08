@@ -2,7 +2,7 @@
 {
   "branch": "fix/huawei-mit-license-headers",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-08T19:41:28+00:00",
   "depends_on": [
     "AR-0003"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "fix/huawei-mit-license-headers",
   "observed_dirty": 0,
   "observed_head": "609ffbbe13a4b1918085ff45b121d95460fc47c6",
-  "owner": "",
+  "owner": "codex-asb-module-name-repair",
   "plan": "../plans/AR-0855.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files.",
-  "task_revision": 137,
+  "task_revision": 138,
   "title": "Enforce Huawei MIT source headers",
-  "updated_at": "2026-09-08T17:41:25+00:00",
+  "updated_at": "2026-09-08T17:41:28+00:00",
   "worktree_key": "agent-systems-benchmark-huawei-mit-headers"
 }
 ---
@@ -389,3 +389,5 @@ and fresh coordinator snapshot before claiming. Do not modify vendored coordinat
 
 - 2026-09-08T17:41:25+00:00: Resume to require TLA+/Alloy declared module names to match source
   filename stems after independent review of PR #82 head 609ffbbe.
+
+- 2026-09-08T17:41:28+00:00: Claimed by codex-asb-module-name-repair.
