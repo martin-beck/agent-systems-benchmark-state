@@ -7,7 +7,7 @@
     "AR-0401"
   ],
   "id": "AR-0402",
-  "next_action": "Pin SWE-bench main 02e7a74ffd0b707aab73d203fe87bdc7c76afc8e (MIT); inspect Aider Polyglot 7e0611e77b54e2dea774cdc0aa00cf9f7ed6144f license and official evaluator/image manifests before adapter code.",
+  "next_action": "Pin SWE-bench main 02e7a74ffd0b707aab73d203fe87bdc7c76afc8e (MIT) and Aider Polyglot main 7e0611e77b54e2dea774cdc0aa00cf9f7ed6144f; capture Exercism per-track licenses and official harness/image digests before implementation.",
   "observed_branch": "feature/external-code-workloads",
   "observed_dirty": 0,
   "observed_head": "123c58f7a971f210873124fccb31daa16139aab4",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T08:39:01+00:00",
+  "updated_at": "2026-09-08T08:39:10+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -62,3 +62,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T08:39:01+00:00: Recorded command exit 0; command argv SHA-256
   fa545d7d5999a7d4d4842001a285abf86db901d4b5032e860fc0254219f5f6bd.
+
+- 2026-09-08T08:39:10+00:00: Audited pinned README and tree: Polyglot has no repository SPDX
+  license, explicitly attributes exercises to six Exercism tracks and says their individual licenses
+  govern; adoption must preserve per-exercise attribution/licenses. SWE-bench root LICENSE is MIT.
+  No product files changed.
