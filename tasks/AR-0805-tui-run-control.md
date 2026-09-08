@@ -12,17 +12,17 @@
   "id": "AR-0805",
   "next_action": "Request independent review of the exact one-file lifecycle slice before any signed checkpoint. Keep AR in progress: scheduler capacity, deadlines, leases, provider source, metrics, warnings, evidence availability, terminal resize, and native frontend resource/separation evidence require an owned follow-up boundary and are not claimed. Preserve AR-0855 header lines on any rebase.",
   "observed_branch": "feature/tui-run-control",
-  "observed_dirty": 1,
-  "observed_head": "b2707c482876dcfb42c756c39165f6ecdb5c7c10",
+  "observed_dirty": 0,
+  "observed_head": "f9d4afe9902367fe0c09a517b210e8ce33f21d0e",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0805.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T17:06:14+00:00",
+  "updated_at": "2026-09-08T17:06:20+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
