@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0309",
-  "next_action": "Extend checkpoint 725c40b with malformed-evidence, symlink, cancellation, action-ceiling and cleanup negatives, then request the serialized lib.rs registration fence.",
+  "next_action": "Finish license/provenance and exact-scope audit of the v1.17.0 official-lock pivot, run affected full gates, then create a signed DCO replacement candidate for immutable review.",
   "observed_branch": "feature/agent-openhands",
   "observed_dirty": 5,
   "observed_head": "e9af38b5be5140c8eaf4d1b55e1eebab07d0f311",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run a maintained MIT OpenHands SDK or canonical headless client.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "Implement maintained OpenHands SDK client adapter",
-  "updated_at": "2026-09-08T04:59:31+00:00",
+  "updated_at": "2026-09-08T05:00:15+00:00",
   "worktree_key": "agent-systems-benchmark-agent-openhands"
 }
 ---
@@ -276,3 +276,22 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T04:59:31+00:00: Recorded command exit 0; command argv SHA-256
   ce29f6ff24dd109973135e1a2a3af9b38248e7a8f5a10263e68db8bf0fa500f9.
+
+- 2026-09-08T05:00:15+00:00: Changed dependency conclusion after fail-closed audit: reject SDK
+  v1.45.0 because its required lmnr 0.7.62 hard-requires LicenseRef-Proprietary
+  lmnr-claude-code-proxy 0.1.24. The latest upstream release family with a license-complete official
+  lock is OpenHands software-agent-sdk v1.17.0: lightweight tag commit
+  aabf40723d308da0d5f9063008c6793cc86df282, tree 850dd602d64b8d19560e63c2d9a4d44c48db82f4, MIT
+  source, official uv.lock pinning lmnr 0.7.24 and agent-client-protocol 0.8.1. A fresh Python 3.12
+  install from the locked hashed dependency export plus PyPI wheel SHA-256
+  3b771e72209453871c3036a562cf33e9ad9642a54bd48edb44f89915ac54709d passed uv pip check with 120
+  packages; proxy absent, metadata/license-file audit found no proprietary dependency. Source
+  archive SHA-256 is 2434fe9ef7de2e7ab8e6ca5b771ec82e9a6737d8d091a2ded16b5d23c02da2a7. Exact
+  environment digest is 6372756912734f6275362a8b66c3758fd2b2adeab776eb2a0be7935f34abb9b2. The first
+  native probe failed only because the exploratory server expected /chat/completions while a /v1
+  base correctly generated /v1/chat/completions; corrected-path native probe passed write,
+  AlwaysConfirm, finish, and 20 input/8 output usage. The real Rust process-boundary fixture then
+  passed in 70.82s with the exact pinned runtime. Unit 6/6, boundary 1/1, Clippy -D warnings and
+  rustdoc -D warnings pass. A mistyped venv command and two initially malformed patch hunks were
+  rejected without product effect; subsequent exact patches were verified. AR remains in progress;
+  v1.45.0 is unsupported and unapproved distributions fail closed.
