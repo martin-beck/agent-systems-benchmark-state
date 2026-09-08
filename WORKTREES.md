@@ -16,7 +16,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-agent-qwen-code` | `feature/agent-qwen-code` | `0be96c9ec50e` | 0 | behind 134, ahead 0 |
 | `agent-systems-benchmark-agent-replay-conformance` | `feature/agent-replay-conformance` | `3a07b57b8265` | 0 | behind 35, ahead 0 |
 | `agent-systems-benchmark-agent-runtime-bundles` | `feature/agent-runtime-bundles` | `26b7e5f66676` | 3 | behind 4, ahead 0 |
-| changed files | - | - | - | `crates/asb-bundle/src/lib.rs`, `crates/asb-bundle/fixtures/agents/`, `crates/asb-bundle/src/catalog.rs` |
+| changed files | - | - | - | `crates/asb-bundle/fixtures/agents/v1/catalog.json`, `crates/asb-bundle/src/catalog.rs`, `crates/asb-bundle/src/lib.rs` |
 | `agent-systems-benchmark-aider-deterministic-replay` | `fix/aider-deterministic-replay` | `87a22654913a` | 0 | behind 36, ahead 0 |
 | `agent-systems-benchmark-all-agents-provider` | `feature/all-agents-provider` | `03962f28571e` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 46, ahead 0 |
