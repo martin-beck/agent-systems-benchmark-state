@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0309",
-  "next_action": "Await authorization for one controlled signed rebase of approved-scope OpenHands candidate e2b312c onto current main d3e2dfa, then rerun affected exact-tree gates and request immutable review.",
+  "next_action": "Hold immutable rebased OpenHands candidate e73767d unpublished for coordinator independent review; publish only after explicit approval.",
   "observed_branch": "feature/agent-openhands",
   "observed_dirty": 0,
   "observed_head": "e73767d959a0c640685deaf84335be84649df7c0",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run a maintained MIT OpenHands SDK or canonical headless client.",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Implement maintained OpenHands SDK client adapter",
-  "updated_at": "2026-09-08T06:41:56+00:00",
+  "updated_at": "2026-09-08T06:42:29+00:00",
   "worktree_key": "agent-systems-benchmark-agent-openhands"
 }
 ---
@@ -372,3 +372,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T06:41:56+00:00: Recorded command exit 0; command argv SHA-256
   aa6d0b65b29c45354968569be943c96adac9649a5448f85786eb8c95c7db71ef.
+
+- 2026-09-08T06:42:29+00:00: Controlled rebase completed onto exact main
+  7a435fb6a4acc59300771b8478ee342f72555c96. Successor e73767d959a0c640685deaf84335be84649df7c0, tree
+  116573c1d4459357bf55dc954a9f66a523b208b0; range-diff marks all four commits equal, every rewritten
+  commit has a good SSH signature and exact DCO, and exact scope remains four OpenHands agent paths.
+  Rebased exact-tree gates pass: fmt; OpenHands unit 6/6; provenance 1/1; workspace all-target
+  Clippy -D warnings; full workspace tests including native sandbox; rustdoc -D warnings; release
+  build; cargo-deny/audit; repository policy/DCO/Gitleaks; coverage gate with OpenHands 86.13%
+  lines; and the real pinned v1.17 SDK boundary 1/1 in 66.40s. The combined gate product command
+  completed successfully but its wrapper state-record phase once hit coordinator LOCK_TIMEOUT;
+  subsequent exact records and this note preserve the outcome. An initial native invocation used a
+  nonexistent exact filter and selected zero tests; it was immediately replaced by the correct exact
+  ignored test, which passed. Worktree is clean; no blocker remains beyond immutable review.
