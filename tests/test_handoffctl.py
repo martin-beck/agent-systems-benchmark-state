@@ -1279,6 +1279,8 @@ class HandoffTest(unittest.TestCase):
         target.write_text("x")
         calls = []
 
+        self.assertFalse(CORE.commit("empty", []))
+
         def fake_run(args: list[str], **_: object) -> object:
             calls.append(args)
             return subprocess.CompletedProcess(args, 0, stdout="", stderr="")
@@ -1297,6 +1299,10 @@ class HandoffTest(unittest.TestCase):
         commit_call = next(args for args in calls if "commit" in args)
         self.assertIn("-S", commit_call)
         self.assertIn("-s", commit_call)
+
+        self.assertIn("--only", commit_call)
+        self.assertEqual(str(target.relative_to(self.root)), commit_call[-1])
+        self.assertTrue(any("diff" in args and args[-1] == "CURRENT.md" for args in calls))
 
         def failing_run(args: list[str], **_: object) -> object:
             calls.append(args)
