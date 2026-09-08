@@ -12,17 +12,17 @@
   "id": "AR-0805",
   "next_action": "Amend and SSH-resign the unpublished candidate with the post-terminal recovery repair, then run commit-range signature/DCO/policy/Gitleaks/focused checks and request fresh immutable review.",
   "observed_branch": "feature/tui-run-control",
-  "observed_dirty": 1,
-  "observed_head": "d0b7ed92f253a67f7d540f50690673a2760e8257",
+  "observed_dirty": 0,
+  "observed_head": "84f03f402ba7e9ae1fb23f99404449efa33db948",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0805.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T18:03:57+00:00",
+  "updated_at": "2026-09-08T18:04:05+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
