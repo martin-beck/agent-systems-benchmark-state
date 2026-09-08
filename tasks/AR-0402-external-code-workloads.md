@@ -7,7 +7,7 @@
     "AR-0401"
   ],
   "id": "AR-0402",
-  "next_action": "Add the production acquisition/materialization boundary and immutable evaluator/image provenance, then run Rust/full gates when cargo is available.",
+  "next_action": "Add immutable evaluator/container provenance and production adapter integration; run Rust/full gates when cargo is available.",
   "observed_branch": "feature/external-code-workloads",
   "observed_dirty": 0,
   "observed_head": "6c4dd62b0889abe96a7bef312a586d8cbc061085",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:16:52+00:00",
+  "updated_at": "2026-09-08T12:17:04+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -193,3 +193,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T12:16:47+00:00: Recorded command exit 0; command argv SHA-256
   742e66de8b0ef163b9e8e98e945b5f968480032219e3d1fdb478a6670edef402.
+
+- 2026-09-08T12:17:04+00:00: Added signed product commit 6c4dd62 with a fail-closed
+  verify_external_artifact CLI: explicit manifest identity, safe relative path, required file, and
+  exact SHA-256 before any execution boundary. Positive and mismatch-oriented offline acquisition
+  tests pass 4/4.
