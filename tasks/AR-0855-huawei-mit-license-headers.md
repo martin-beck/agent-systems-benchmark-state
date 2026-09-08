@@ -2,7 +2,7 @@
 {
   "branch": "fix/huawei-mit-license-headers",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T21:59:38+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "fix/huawei-mit-license-headers",
   "observed_dirty": 0,
   "observed_head": "7add29f1d24ce3a74b9cca2e2f1fb29fa45cddd6",
-  "owner": "codex-asb-state-headers-v032",
+  "owner": "",
   "plan": "../plans/AR-0855.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files.",
-  "task_revision": 193,
+  "task_revision": 194,
   "title": "Enforce Huawei MIT source headers",
-  "updated_at": "2026-09-08T19:08:35+00:00",
+  "updated_at": "2026-09-08T19:08:38+00:00",
   "worktree_key": "agent-systems-benchmark-huawei-mit-headers"
 }
 ---
@@ -556,3 +556,7 @@ and fresh coordinator snapshot before claiming. Do not modify vendored coordinat
   offline hash verification passed, but the newly vendored mandatory privacy validation reports
   tests/test_sqlite_storage.py: session-like UUID because UUID_PRIVACY_EXEMPT omits that upstream
   fixture. Preserved the exact uncommitted vendor diff; made no state-owned implementation edits.
+
+- 2026-09-08T19:08:38+00:00: Blocked on corrected immutable coordinator v0.3.3+; do not hand-patch
+  the hash-locked v0.3.2 vendor. Exact sync evidence remains in the dedicated worktree as an
+  uncommitted reviewed vendor diff.
