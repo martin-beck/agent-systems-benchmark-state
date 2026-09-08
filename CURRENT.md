@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0804](tasks/AR-0804-tui-settings-wizard.md): Build the terminal settings wizard | Guide users through agents, providers, workloads, resources, replay, metrics, and output settings. | Monitor PR #83 exact head 8f7152c/base 76497db runs 34245893961 emulated-aarch64, 34245893914 quality, 34245893986 Rust, 34245893910 formal, and 34245893959 fault to terminal; investigate failures and do not merge without full green matrix and authorization. | quality_20260906 |
+| P1 | [AR-0804](tasks/AR-0804-tui-settings-wizard.md): Build the terminal settings wizard | Guide users through agents, providers, workloads, resources, replay, metrics, and output settings. | Monitor exact-main d51ee9c postmerge runs: Rust 34246605181, quality 34246605294, emulated-aarch64 34246605130, fault 34246605182, formal 34246605248. After all terminal success, run focused local verification and state doctor, then release with unsupported launch/transport/full-screen limits. | quality_20260906 |
 | P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Claim, create the declared worktree, enforce exact first-party Huawei MIT source headers, test, and publish unmerged PRs. | codex-asb-header-review-repair |
 
 ## Open

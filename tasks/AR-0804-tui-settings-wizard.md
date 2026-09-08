@@ -9,7 +9,7 @@
     "AR-0803"
   ],
   "id": "AR-0804",
-  "next_action": "Monitor PR #83 exact head 8f7152c/base 76497db runs 34245893961 emulated-aarch64, 34245893914 quality, 34245893986 Rust, 34245893910 formal, and 34245893959 fault to terminal; investigate failures and do not merge without full green matrix and authorization.",
+  "next_action": "Monitor exact-main d51ee9c postmerge runs: Rust 34246605181, quality 34246605294, emulated-aarch64 34246605130, fault 34246605182, formal 34246605248. After all terminal success, run focused local verification and state doctor, then release with unsupported launch/transport/full-screen limits.",
   "observed_branch": "feature/tui-settings-wizard",
   "observed_dirty": 0,
   "observed_head": "8f7152c525daf0b8dd61961c780848ed7a8bf979",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Guide users through agents, providers, workloads, resources, replay, metrics, and output settings.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Build the terminal settings wizard",
-  "updated_at": "2026-09-08T15:43:37+00:00",
+  "updated_at": "2026-09-08T15:44:26+00:00",
   "worktree_key": "agent-systems-benchmark-tui-settings-wizard"
 }
 ---
@@ -160,3 +160,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T15:43:37+00:00: Recorded command exit 0; command argv SHA-256
   52e3c6c6ea3012e5b61ab57a813a60c9a3d653a9abefbdabbdd1504b2162e67b.
+
+- 2026-09-08T15:44:26+00:00: Authorized signed+DCO no-ff merge completed as
+  d51ee9c9ab8889f6b9837a89772f59ea6f37d3a3 with parents exact 76497db and reviewed 8f7152c.
+  Signature/show-check pass; push used exact main force-with-lease. PR #83 reports MERGED and local
+  main/origin/main are clean and equal d51ee9c. Fresh five-workflow exact-main matrix is active;
+  hold release.
