@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**153 ARs tracked** across 4 active status categories.
+**153 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 4 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **In progress** | Claimed work with a live lease | 3 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 51 |
 | **Future** | Deferred roadmap work | 0 |
@@ -170,7 +170,7 @@ flowchart LR
         AR_0852["AR-0852 - Done"]:::status_done
         AR_0853["AR-0853 - Done"]:::status_done
         AR_0854["AR-0854 - Done"]:::status_done
-        AR_0855["AR-0855 - In progress"]:::status_in_progress
+        AR_0855["AR-0855 - Open"]:::status_open
         AR_0856["AR-0856 - Planned"]:::status_planned
         AR_0857["AR-0857 - Planned"]:::status_planned
         AR_0858["AR-0858 - Planned"]:::status_planned
@@ -862,14 +862,19 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0806](tasks/AR-0806-tui-history-analysis.md): Add terminal history and analysis | quality_20260906 | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. | PR #89 branch was guarded-force-updated to approved 031a4516cbb3addc184ab3c4b0f4c683aa14755d, but live main advanced again from reviewed parent 3514089fa378bd50629c9794b215fd53c8ea7d5d to PR base 2219839812d9255288b8b4e0afc52396915e85a6. Hold merge; after current exact-head CI is terminal evidence, obtain another exact-base rebase/review authorization before integration. |
-| P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | codex-asb-state-headers-v033 | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Wait for a corrected immutable agent-workflow-coordinator v0.3.3+ release whose privacy exemption admits the legitimate session-like UUID fixture in vendored tests/test_sqlite_storage.py; then re-sync from a clean verified tag and continue state-owned header/checker/CI work without patching vendor. |
 | P1 | [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md): Add TUI multi-agent provider selection | replay_20260906 | Choose several agents and one preconfigured provider for all of them from negotiated TUI selection lists. | Monitor exact-head PR #91; investigate any required failure immediately, then perform immutable review, signed no-ff merge and post-merge verification. |
 | P2 | [AR-0405](tasks/AR-0405-performance-workloads.md): Add performance and reproducibility workloads | contracts_20260906 | Assess SWE-Perf, SWE-fficiency and CORE-Bench for correctness-preserving optimization and reproducibility. | Audit the six-path fail-closed provenance checkpoint, run the complete applicable quality/privacy gates, and determine whether any suite can advance beyond planned without missing license and native paired-oracle evidence. |
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | Unclaimed | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Wait for a corrected immutable agent-workflow-coordinator v0.3.3+ release whose privacy exemption admits the legitimate session-like UUID fixture in vendored tests/test_sqlite_storage.py; then re-sync from a clean verified tag and continue state-owned header/checker/CI work without patching vendor. |
 
 ### Blocked (5)
 
