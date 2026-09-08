@@ -10,7 +10,7 @@
     "AR-0804"
   ],
   "id": "AR-0805",
-  "next_action": "Controlled rebase/resign PR #86 onto exact current origin/main 32f79101da348896fdf0fd94c07356889a05b693, preserving fe24e48 TUI semantics, retaining the new Huawei MIT header, and dropping superseded da0d21b pin repair because main already contains signed repair 7add29f. Record range-diff, rerun gates, obtain fresh immutable review, then guarded force-with-lease and fresh exact-head CI.",
+  "next_action": "Fresh independent immutable review of rebased candidate b44282a31e902175059f9fed350ce888cf4b82ec, tree 7a7732eae29be65f55b40ed3b6239533fac470fc, exact parent 32f79101da348896fdf0fd94c07356889a05b693. If approved, guarded force-with-lease update PR #86 and require fresh exact-head CI before merge.",
   "observed_branch": "feature/tui-run-control",
   "observed_dirty": 0,
   "observed_head": "b44282a31e902175059f9fed350ce888cf4b82ec",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 107,
+  "task_revision": 108,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T19:37:06+00:00",
+  "updated_at": "2026-09-08T19:37:45+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -429,3 +429,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T19:37:06+00:00: Recorded command exit 0; command argv SHA-256
   ae4e639a6d99a9fd175e01a218f53a810ee276b55edb11280ffb707cc46d1e1f.
+
+- 2026-09-08T19:37:45+00:00: Controlled rebase complete. Old TUI commit
+  fe24e48f9b4bae4ca7f62aa50be52e7586d455d3 maps exactly (= range-diff) to signed+DCO
+  b44282a31e902175059f9fed350ce888cf4b82ec; duplicate da0d21b formal pin commit dropped because main
+  contains signed repair 7add29f. Exact clean scope is one path crates/asb-tui/src/lib.rs and
+  preserves the new Huawei MIT header. Full exact-tree gates passed: fmt, workspace all-target
+  clippy -D warnings, workspace tests including asb-tui 13/13, rustdoc -D warnings, release build,
+  repository policy, contract tests/consistency, actionlint, zizmor, range Gitleaks,
+  cargo-deny/audit, coverage, failure fixtures, artifact outcome, platform manifests/tests,
+  diff/clean-tree, and disposable TLC/Alloy positive+mutation suite. One wrapper post-command
+  LOCK_TIMEOUT occurred only after the first full Rust batch completed successfully; later wrapped
+  batches reconciled normally. No publication mutation yet.
