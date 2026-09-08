@@ -8,7 +8,7 @@
     "AR-0312"
   ],
   "id": "AR-0313",
-  "next_action": "Read full development/architecture/quality/provider-plan docs in /srv/data/projects/agent-systems-benchmark-all-agents-provider at exact base b6078bb1ca2ee8f35973ffab9740c2c12dd4126e; audit provider selection surfaces and implement atomically without touching active AR-0844 crates/asb-cli/src/control.rs or AR-0316 runtime-bundle paths.",
+  "next_action": "Extend the green two-file atomic preflight core into the versioned provider-plan/config and CLI reporting surface without touching crates/asb-cli/src/control.rs; add stale/mixed/partial serialization and recovery negatives, then run full applicable gates.",
   "observed_branch": "feature/all-agents-provider",
   "observed_dirty": 2,
   "observed_head": "b6078bb1ca2ee8f35973ffab9740c2c12dd4126e",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Let test plans select one provider profile for every chosen supported agent atomically.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Configure one provider for all agents",
-  "updated_at": "2026-09-08T11:22:42+00:00",
+  "updated_at": "2026-09-08T11:23:00+00:00",
   "worktree_key": "agent-systems-benchmark-all-agents-provider"
 }
 ---
@@ -63,3 +63,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T11:22:42+00:00: Recorded command exit 0; command argv SHA-256
   827708d15f5c3d0159c8c02f5995a9b22f040a287c27222306cefe9d84601f94.
+
+- 2026-09-08T11:23:00+00:00: Substantive implementation checkpoint: added
+  crates/asb-agents/src/all_agents_provider.rs and lib export. Atomic OpenAI/verified-Ollama
+  preflight rejects empty/duplicate/incompatible whole selections, canonicalizes agent order,
+  returns identical profile identities, and reports exact unsupported provider_route fields. Initial
+  patch wrapper exit 1 was a shell-quoting harness failure before mutation; corrected patch is
+  present. cargo fmt --check and focused asb-agents all_agents_provider tests passed 4/4. Dirty
+  scope exactly two files; active AR-0844 control.rs and AR-0316 runtime-bundle fences untouched.
