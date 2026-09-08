@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bound and report wall time, actions, tokens and monetary cost without treating unavailable telemetry as zero.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Enforce cost token and action budgets",
-  "updated_at": "2026-09-08T10:29:42+00:00",
+  "updated_at": "2026-09-08T10:31:35+00:00",
   "worktree_key": "agent-systems-benchmark-execution-budgets"
 }
 ---
@@ -236,3 +236,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T10:29:42+00:00: Recorded command exit 0; command argv SHA-256
   54f915ed81a9c3389a6e69f97bf15eeba9d6ef81fa9bcbdd8588285c599a9643.
+
+- 2026-09-08T10:31:35+00:00: Recorded command exit 0; command argv SHA-256
+  6d0d293633faa44a5d1ab1b02932ad3082c6ad8924d0f5952b7cc3d599a4a384.
