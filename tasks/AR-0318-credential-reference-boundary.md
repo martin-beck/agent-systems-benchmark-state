@@ -10,17 +10,17 @@
   "id": "AR-0318",
   "next_action": "Implement the bounded credential-reference resolver and fail-closed process boundary.",
   "observed_branch": "feature/credential-reference-boundary",
-  "observed_dirty": 2,
-  "observed_head": "9feeba6524357df38e3ad118d4c3740306d3ec8e",
+  "observed_dirty": 0,
+  "observed_head": "e9a0e52360968c5575e82074eb205205385e6095",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0318.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve provider credential references without exposing secrets or accepting ambient credentials.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Implement the credential-reference boundary",
-  "updated_at": "2026-09-08T13:58:03+00:00",
+  "updated_at": "2026-09-08T13:58:08+00:00",
   "worktree_key": "agent-systems-benchmark-credential-reference-boundary"
 }
 ---
