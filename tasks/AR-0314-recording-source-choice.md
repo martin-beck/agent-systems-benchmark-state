@@ -15,16 +15,16 @@
   "next_action": "Serialize AR-0318 product publication/integration (e9a0e523 + 5d62546) onto product main or explicitly authorize its inclusion in AR-0314; then rebase AR-0314 and run the synthetic environment-credential live preflight without FD/helper claims.",
   "observed_branch": "feature/provider-recording-choice",
   "observed_dirty": 0,
-  "observed_head": "1d0e521690e688ee50fc099d0cb38b440dfea6b3",
+  "observed_head": "e8fed7e572b6bf9d14d76f15b91b7cb208e2d48b",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0314.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Offer matching prior recordings or an actual provider connection without silently choosing either.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Choose matching replay or live provider execution",
-  "updated_at": "2026-09-08T14:39:03+00:00",
+  "updated_at": "2026-09-08T14:39:09+00:00",
   "worktree_key": "agent-systems-benchmark-provider-recording-choice"
 }
 ---
