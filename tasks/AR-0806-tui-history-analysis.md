@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-08T22:58:50+00:00",
+  "updated_at": "2026-09-08T23:15:31+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
@@ -139,3 +139,6 @@ Implementation has not started. Read the linked plan before claiming.
   workspace all-target Clippy -D warnings, workspace tests, rustdoc -D warnings, release build, SSH
   signature/DCO, repository policy, diff-check, and Gitleaks all pass. Scope remains
   crates/asb-tui/src/lib.rs plus README only; AR-0875 paths untouched.
+
+- 2026-09-08T23:15:31+00:00: Recorded command exit 0; command argv SHA-256
+  096277886ddbdbc8c5d507d99df285385c0031eb0c4d5d7a8daf9b245388e892.
