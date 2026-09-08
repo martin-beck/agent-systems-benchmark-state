@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T16:46:33+00:00",
+  "updated_at": "2026-09-08T16:47:53+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -122,3 +122,6 @@ Implementation has not started. Read the linked plan before claiming.
   event/status convergence, duplicate launch/cancel rejection, stale and cross-attempt rejection,
   and cancellation acknowledgement races. Focused asb-tui tests pass 10/10; focused clippy with
   warnings denied, fmt, and diff-check pass. No protocol/schema paths changed.
+
+- 2026-09-08T16:47:53+00:00: Recorded command exit 0; command argv SHA-256
+  00383a816118bc9ee1eaf4852084f6dd208ae4811e4898c4bb2f4b1beb707bc3.
