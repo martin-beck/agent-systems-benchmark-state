@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Transactional coordination state for Agent Systems Benchmark."""
+"""Transactional, project-configurable coordination state."""
 
 import argparse
 import contextlib
@@ -14,6 +14,7 @@ import sys
 import tempfile
 import textwrap
 import time
+import uuid
 from collections.abc import Iterator
 from pathlib import Path
 from typing import Any, cast
@@ -25,6 +26,8 @@ TASKS = ROOT / "tasks"
 RUNTIME = ROOT / ".runtime"
 LOCK = RUNTIME / "state.lock"
 CONFIG = RUNTIME / "config.json"
+PROJECT_CONFIG = ROOT / ".handoffctl.json"
+BINDING = ROOT / "coordinator.binding.json"
 LOCK_TIMEOUT_SECONDS = 10.0
 LOCK_POLL_SECONDS = 0.05
 SUBPROCESS_TIMEOUT_SECONDS = 30.0
@@ -67,6 +70,118 @@ type Meta = dict[str, Any]
 type Task = tuple[Path, Meta, str]
 type State = dict[str, Any]
 
+COORDINATOR_VERSION = "0.1.2"
+DEFAULT_PROJECT_SETTINGS: Meta = {
+    "schema_version": 1,
+    "project_id": "00000000-0000-4000-8000-000000000000",
+    "project_name": "agent-workflow",
+    "project_title": "Agent Workflow",
+    "status_view": False,
+    "commit_signoff": False,
+}
+PROJECT_SETTING_KEYS = frozenset(DEFAULT_PROJECT_SETTINGS)
+
+
+def project_settings() -> Meta:
+    """Load and strictly validate the tracked, non-secret project profile."""
+    if not PROJECT_CONFIG.exists():
+        return dict(DEFAULT_PROJECT_SETTINGS)
+    value = json.loads(PROJECT_CONFIG.read_text())
+    if not isinstance(value, dict) or set(value) != PROJECT_SETTING_KEYS:
+        raise RuntimeError(".handoffctl.json must contain exactly the documented project keys")
+    if value.get("schema_version") != 1:
+        raise RuntimeError("unsupported .handoffctl.json schema_version")
+    try:
+        project_id = uuid.UUID(str(value.get("project_id")))
+    except ValueError as error:
+        raise RuntimeError("invalid project_id in .handoffctl.json") from error
+    if project_id.version != 4:
+        raise RuntimeError("project_id must be a UUIDv4")
+    if not isinstance(value.get("project_name"), str) or not re.fullmatch(
+        r"[a-z0-9]+(?:-[a-z0-9]+)*", value["project_name"]
+    ):
+        raise RuntimeError("invalid project_name in .handoffctl.json")
+    if not isinstance(value.get("project_title"), str) or not value["project_title"].strip():
+        raise RuntimeError("invalid project_title in .handoffctl.json")
+    if not isinstance(value.get("status_view"), bool) or not isinstance(
+        value.get("commit_signoff"), bool
+    ):
+        raise RuntimeError("status_view and commit_signoff must be booleans")
+    return value
+
+
+def repository_slug(value: object) -> str:
+    """Normalize a GitHub repository URL or OWNER/REPOSITORY value."""
+    text = str(value or "").strip().removesuffix(".git")
+    if "://" in text:
+        text = text.split("://", 1)[1].split("/", 1)[-1]
+    elif text.startswith("git@") and ":" in text:
+        text = text.split(":", 1)[1]
+    text = text.strip("/")
+    if not re.fullmatch(r"[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+", text):
+        raise RuntimeError(f"invalid GitHub repository identity: {value}")
+    return text.lower()
+
+
+def project_binding() -> Meta:
+    """Load the immutable project binding created by `handoffctl init`."""
+    try:
+        value = json.loads(BINDING.read_text())
+    except (OSError, json.JSONDecodeError) as error:
+        raise RuntimeError("coordinator is not initialized for this project") from error
+    required = {"schema_version", "project_id", "state_repository", "product_repository"}
+    if not isinstance(value, dict) or set(value) != required or value.get("schema_version") != 1:
+        raise RuntimeError("invalid coordinator.binding.json")
+    try:
+        project_id = uuid.UUID(str(value.get("project_id")))
+    except ValueError as error:
+        raise RuntimeError("invalid project_id in coordinator binding") from error
+    if project_id.version != 4:
+        raise RuntimeError("binding project_id must be a UUIDv4")
+    repository_slug(value["state_repository"])
+    repository_slug(value["product_repository"])
+    return value
+
+
+def git_repository_slug(root: Path) -> str:
+    """Read and normalize one checkout's origin identity."""
+    result = run(["git", "-C", str(root), "remote", "get-url", "origin"])
+    return repository_slug(result.stdout.strip())
+
+
+def inside(candidate: Path, root: Path) -> bool:
+    """Return whether candidate is root or one of its descendants."""
+    candidate = candidate.resolve()
+    root = root.resolve()
+    return candidate == root or root in candidate.parents
+
+
+def assert_project_binding() -> None:
+    """Fail closed when this initialized coordinator is called from another project."""
+    settings = project_settings()
+    binding = project_binding()
+    if settings["project_id"] != binding["project_id"]:
+        raise RuntimeError("project profile does not match coordinator binding")
+    top = Path(run(["git", "-C", str(ROOT), "rev-parse", "--show-toplevel"]).stdout.strip())
+    if top.resolve() != ROOT.resolve():
+        raise RuntimeError("handoffctl is not installed at its bound state repository root")
+    if git_repository_slug(ROOT) != repository_slug(binding["state_repository"]):
+        raise RuntimeError("state repository does not match coordinator binding")
+    allowed = [ROOT.resolve()]
+    if CONFIG.exists():
+        runtime = config()
+        if repository_slug(runtime.get("github_repository")) != repository_slug(
+            binding["product_repository"]
+        ):
+            raise RuntimeError("runtime product repository does not match coordinator binding")
+        product = Path(str(runtime["projects_root"])) / str(runtime["product_worktree"])
+        if git_repository_slug(product) != repository_slug(binding["product_repository"]):
+            raise RuntimeError("product checkout does not match coordinator binding")
+        allowed.append(product.resolve())
+    current = Path.cwd().resolve()
+    if not any(inside(current, root) for root in allowed):
+        raise RuntimeError("handoffctl must be called from its bound state or product project")
+
 
 class LockTimeoutError(RuntimeError):
     """The coordinator lock could not be acquired within its bounded deadline."""
@@ -96,6 +211,15 @@ PRIVATE = (
         ),
         "session-like UUID",
     ),
+)
+
+UUID_PRIVACY_EXEMPT = frozenset(
+    {
+        Path(".handoffctl.json"),
+        Path("coordinator.binding.json"),
+        Path("tests/test_handoffctl.py"),
+        Path("tools/handoffctl.py"),
+    }
 )
 
 
@@ -211,7 +335,7 @@ def render_current(tasks: list[Task]) -> str:
         groups[meta["status"]].append(meta)
     labels = {x: x.replace("_", " ").title() for x in STATUSES}
     lines = [
-        "# Agent Systems Benchmark current coordination state",
+        f"# {project_settings()['project_title']} current coordination state",
         "",
         "This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.",
         "Never edit this file directly.",
@@ -327,7 +451,7 @@ def project_scan() -> State:
 
 def live_docs(state: State) -> tuple[str, str]:
     project = [
-        "# Agent Systems Benchmark live project state",
+        f"# {project_settings()['project_title']} live project state",
         "",
         "Generated from local Git and GitHub. Do not edit.",
         "",
@@ -365,7 +489,7 @@ def live_docs(state: State) -> tuple[str, str]:
             f"{item['status']}:{item.get('conclusion') or '-'} |"
         )
     worktrees = [
-        "# Agent Systems Benchmark worktree inventory",
+        f"# {project_settings()['project_title']} worktree inventory",
         "",
         "Generated from live Git. Paths are privacy-safe worktree keys.",
         "",
@@ -424,6 +548,8 @@ def privacy_errors() -> list[str]:
         except UnicodeDecodeError:
             continue
         for regex, label in PRIVATE:
+            if label == "session-like UUID" and relative in UUID_PRIVACY_EXEMPT:
+                continue
             if regex.search(text):
                 errors.append(f"{relative}: {label}")
     return errors
@@ -521,7 +647,7 @@ def claim_errors(
 
 def render_status_view(tasks: list[Task]) -> str:
     """Render the public task dashboard with coordinator presentation constants."""
-    return render_status(tasks, STATUSES, PRIORITIES)
+    return render_status(tasks, STATUSES, PRIORITIES, str(project_settings()["project_title"]))
 
 
 def generated_view_errors(tasks: list[Task]) -> list[str]:
@@ -532,6 +658,8 @@ def generated_view_errors(tasks: list[Task]) -> list[str]:
     current = ROOT / "CURRENT.md"
     if current.exists() and current.read_text() != render_current(tasks):
         errors.append("CURRENT.md differs from generated tasks")
+    if not project_settings()["status_view"]:
+        return errors
     try:
         expected_status = render_status_view(tasks)
     except StatusRenderError as error:
@@ -582,7 +710,10 @@ def commit(message: str, paths: list[Path]) -> bool:
             == 0
         ):
             return False
-        run(["git", "-C", str(ROOT), "commit", "-S", "-s", "-m", message], capture=False)
+        command = ["git", "-C", str(ROOT), "commit", "-S"]
+        if project_settings()["commit_signoff"]:
+            command.append("-s")
+        run([*command, "-m", message], capture=False)
         return True
     except Exception:
         run(["git", "-C", str(ROOT), "reset", "--", *relative], check=False)
@@ -623,9 +754,10 @@ def restore_paths(before: dict[Path, str | None]) -> None:
 def reconcile(*, do_commit: bool, push: bool = False) -> bool:
     with locked():
         state = project_scan()
-        generated = [
-            ROOT / name for name in ("CURRENT.md", "STATUS.md", "PROJECT_STATE.md", "WORKTREES.md")
-        ]
+        generated_names = ["CURRENT.md", "PROJECT_STATE.md", "WORKTREES.md"]
+        if project_settings()["status_view"]:
+            generated_names.append("STATUS.md")
+        generated = [ROOT / name for name in generated_names]
         before: dict[Path, str | None] = {path: path.read_text() for path, _, _ in all_tasks()}
         before.update({path: path.read_text() if path.exists() else None for path in generated})
         committed = False
@@ -633,7 +765,8 @@ def reconcile(*, do_commit: bool, push: bool = False) -> bool:
             sync_task_observations(all_tasks(), state)
             tasks = all_tasks()
             atomic(ROOT / "CURRENT.md", render_current(tasks))
-            atomic(ROOT / "STATUS.md", render_status_view(tasks))
+            if project_settings()["status_view"]:
+                atomic(ROOT / "STATUS.md", render_status_view(tasks))
             project, worktrees = live_docs(state)
             atomic(ROOT / "PROJECT_STATE.md", project)
             atomic(ROOT / "WORKTREES.md", worktrees)
@@ -643,11 +776,8 @@ def reconcile(*, do_commit: bool, push: bool = False) -> bool:
             touched = [
                 path for path, old in before.items() if path.exists() and path.read_text() != old
             ]
-            committed = (
-                commit("chore(state): reconcile Agent Systems Benchmark", touched)
-                if do_commit
-                else False
-            )
+            title = project_settings()["project_title"]
+            committed = commit(f"chore(state): reconcile {title}", touched) if do_commit else False
             head = run(["git", "-C", str(ROOT), "rev-parse", "HEAD"], check=False).stdout.strip()
             if push:
                 push_replica()
@@ -793,15 +923,23 @@ def apply_owned_change(args: argparse.Namespace, kind: str, meta: Meta) -> str:
     return str(args.note)
 
 
+def rendered_task_views(tasks: list[Task]) -> dict[Path, str]:
+    """Return every enabled task-derived projection for one consistent task snapshot."""
+    views = {ROOT / "CURRENT.md": render_current(tasks)}
+    if project_settings()["status_view"]:
+        views[ROOT / "STATUS.md"] = render_status_view(tasks)
+    return views
+
+
 def mutate(args: argparse.Namespace, kind: str) -> None:
     with locked():
         path, meta, body = locate(args.task)
         require_promotion_preflight(kind)
-        old_task = path.read_text()
-        current_path = ROOT / "CURRENT.md"
-        old_current = current_path.read_text() if current_path.exists() else ""
-        status_path = ROOT / "STATUS.md"
-        old_status = status_path.read_text() if status_path.exists() else None
+        view_paths = rendered_task_views(all_tasks())
+        before: dict[Path, str | None] = {path: path.read_text()}
+        before.update(
+            {target: target.read_text() if target.exists() else None for target in view_paths}
+        )
         committed = False
         note = (
             apply_claim(args, meta, all_tasks())
@@ -831,33 +969,27 @@ def mutate(args: argparse.Namespace, kind: str) -> None:
             )
         try:
             write_task(path, meta, body)
-            tasks = all_tasks()
-            atomic(current_path, render_current(tasks))
-            atomic(status_path, render_status_view(tasks))
+            views = rendered_task_views(all_tasks())
+            for target, content in views.items():
+                atomic(target, content)
             errors = validate(live=False)
             if errors:
                 raise RuntimeError("\n".join(errors))
-            committed = commit(
-                f"chore(state): {kind} {args.task}", [path, current_path, status_path]
-            )
+            committed = commit(f"chore(state): {kind} {args.task}", [path, *views])
             push_replica()
         except Exception:
             # A signed local commit is already durable even when replication fails.
             # Keep its worktree representation intact so a later reconcile can safely
             # inspect and retry the push instead of silently rolling state backward.
             if not committed:
-                atomic(path, old_task)
-                if old_current:
-                    atomic(current_path, old_current)
-                if old_status is None:
-                    status_path.unlink(missing_ok=True)
-                else:
-                    atomic(status_path, old_status)
+                restore_paths(before)
             raise
 
 
 def cmd_render_status(*, check: bool) -> None:
     """Render STATUS.md or fail if its checked-in form is stale."""
+    if not project_settings()["status_view"]:
+        raise RuntimeError("STATUS.md generation is disabled by .handoffctl.json")
     with locked(exclusive=not check):
         expected = render_status_view(all_tasks())
         path = ROOT / "STATUS.md"
@@ -946,9 +1078,73 @@ def cmd_run(args: argparse.Namespace) -> int:
     return returncode
 
 
+def cmd_init(args: argparse.Namespace) -> None:
+    """Bind a fresh vendored coordinator permanently to one state/product pair."""
+    if PROJECT_CONFIG.exists() or BINDING.exists():
+        raise RuntimeError("coordinator is already initialized")
+    top = Path(run(["git", "-C", str(ROOT), "rev-parse", "--show-toplevel"]).stdout.strip())
+    if Path.cwd().resolve() != ROOT.resolve() or top.resolve() != ROOT.resolve():
+        raise RuntimeError("initialize from the state repository root")
+    state_repository = repository_slug(args.state_repository)
+    product_repository = repository_slug(args.product_repository)
+    if git_repository_slug(ROOT) != state_repository:
+        raise RuntimeError("current origin does not match --state-repository")
+    project_id = str(uuid.uuid4())
+    settings = {
+        "schema_version": 1,
+        "project_id": project_id,
+        "project_name": args.project_name,
+        "project_title": args.project_title,
+        "status_view": args.status_view,
+        "commit_signoff": args.commit_signoff,
+    }
+    binding = {
+        "schema_version": 1,
+        "project_id": project_id,
+        "state_repository": state_repository,
+        "product_repository": product_repository,
+    }
+    before: dict[Path, str | None] = {PROJECT_CONFIG: None, BINDING: None}
+    try:
+        atomic(PROJECT_CONFIG, json.dumps(settings, indent=2, sort_keys=True) + "\n")
+        project_settings()
+        atomic(BINDING, json.dumps(binding, indent=2, sort_keys=True) + "\n")
+        project_binding()
+    except Exception:
+        restore_paths(before)
+        raise
+    print(f"Initialized project binding {project_id}")
+
+
+def dispatch_bound_command(args: argparse.Namespace) -> int:
+    """Dispatch a command only after the permanent project binding has passed."""
+    if args.cmd == "reconcile":
+        reconcile(do_commit=args.commit, push=args.push)
+    elif args.cmd == "snapshot":
+        cmd_snapshot()
+    elif args.cmd == "doctor":
+        return cmd_doctor(live=args.live)
+    elif args.cmd == "render-status":
+        cmd_render_status(check=args.check)
+    elif args.cmd in ("claim", "heartbeat", "release", "promote", "resume", "update"):
+        mutate(args, args.cmd)
+    elif args.cmd == "run":
+        if args.command and args.command[0] == "--":
+            args.command = args.command[1:]
+        return cmd_run(args)
+    return 0
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     commands = parser.add_subparsers(dest="cmd", required=True)
+    item = commands.add_parser("init")
+    item.add_argument("--state-repository", required=True)
+    item.add_argument("--product-repository", required=True)
+    item.add_argument("--project-name", required=True)
+    item.add_argument("--project-title", required=True)
+    item.add_argument("--status-view", action="store_true")
+    item.add_argument("--commit-signoff", action="store_true")
     item = commands.add_parser("reconcile")
     item.add_argument("--commit", action="store_true")
     item.add_argument("--push", action="store_true")
@@ -992,21 +1188,11 @@ def main() -> int:
     item.add_argument("--timeout-seconds", type=float, default=COMMAND_TIMEOUT_SECONDS)
     item.add_argument("command", nargs=argparse.REMAINDER)
     args = parser.parse_args()
-    if args.cmd == "reconcile":
-        reconcile(do_commit=args.commit, push=args.push)
-    elif args.cmd == "snapshot":
-        cmd_snapshot()
-    elif args.cmd == "doctor":
-        return cmd_doctor(live=args.live)
-    elif args.cmd == "render-status":
-        cmd_render_status(check=args.check)
-    elif args.cmd in ("claim", "heartbeat", "release", "promote", "resume", "update"):
-        mutate(args, args.cmd)
-    elif args.cmd == "run":
-        if args.command and args.command[0] == "--":
-            args.command = args.command[1:]
-        return cmd_run(args)
-    return 0
+    if args.cmd == "init":
+        cmd_init(args)
+        return 0
+    assert_project_binding()
+    return dispatch_bound_command(args)
 
 
 if __name__ == "__main__":

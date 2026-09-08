@@ -20,6 +20,18 @@ The AR identifier format is retained for compatibility with the reused coordinat
 Never edit generated views directly. Private configuration, captures, credentials,
 raw command output and transcripts stay outside Git. Source is MIT licensed.
 
+## Shared coordinator release
+
+This repository vendors the signed `agent-workflow-coordinator` v0.1.2 release. Its exact upstream
+commit and copied-file digests are locked in `coordinator.vendor.json`; verify them offline with
+`python tools/handoffctl_vendor.py verify --target .`. The complete integration, use, extension,
+and upgrade guide is [`docs/agent-workflow-coordinator.md`](docs/agent-workflow-coordinator.md).
+
+The one-time `.handoffctl.json` and `coordinator.binding.json` identity permits supported commands
+only from this state checkout or its configured Agent Systems Benchmark product checkout. Repository
+identity and the immutable project UUID are checked before state access; a different project must
+initialize its own coordinator and cannot rebind this one.
+
 Run `tools/handoffctl render-status --check` to verify that `STATUS.md` matches every task. A plain
 `tools/handoffctl render-status` performs an offline deterministic refresh; normal claim, update,
 promote, release, and reconcile transactions refresh it automatically under the coordinator lock.

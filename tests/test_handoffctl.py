@@ -49,6 +49,8 @@ def configure_child(root_value: str) -> None:
     CORE.RUNTIME = root / ".runtime"
     CORE.LOCK = CORE.RUNTIME / "state.lock"
     CORE.CONFIG = CORE.RUNTIME / "config.json"
+    CORE.PROJECT_CONFIG = root / ".handoffctl.json"
+    CORE.BINDING = root / "coordinator.binding.json"
 
 
 def racing_claim(root_value: str, start: Any, owner: str, outcomes: Any) -> None:
@@ -122,8 +124,32 @@ class HandoffTest(unittest.TestCase):
         CORE.RUNTIME = root / ".runtime"
         CORE.LOCK = CORE.RUNTIME / "state.lock"
         CORE.CONFIG = CORE.RUNTIME / "config.json"
+        CORE.PROJECT_CONFIG = root / ".handoffctl.json"
+        CORE.BINDING = root / "coordinator.binding.json"
         CORE.TASKS.mkdir()
         (root / "plans").mkdir()
+        CORE.PROJECT_CONFIG.write_text(
+            json.dumps(
+                {
+                    "schema_version": 1,
+                    "project_id": "11111111-1111-4111-8111-111111111111",
+                    "project_name": "test-project",
+                    "project_title": "Test Project",
+                    "status_view": True,
+                    "commit_signoff": True,
+                }
+            )
+        )
+        CORE.BINDING.write_text(
+            json.dumps(
+                {
+                    "schema_version": 1,
+                    "project_id": "11111111-1111-4111-8111-111111111111",
+                    "state_repository": "owner/state",
+                    "product_repository": "owner/product",
+                }
+            )
+        )
         self.root = root
 
     def tearDown(self) -> None:
@@ -160,6 +186,158 @@ class HandoffTest(unittest.TestCase):
         tasks = CORE.all_tasks()
         CORE.atomic(self.root / "CURRENT.md", CORE.render_current(tasks))
         CORE.atomic(self.root / "STATUS.md", CORE.render_status_view(tasks))
+
+    def test_project_profile_is_strict_and_controls_optional_status(self) -> None:
+        settings = CORE.project_settings()
+        self.assertEqual("Test Project", settings["project_title"])
+        self.assertTrue(settings["status_view"])
+        CORE.PROJECT_CONFIG.write_text(json.dumps({**settings, "status_view": False}))
+        self.make_task()
+        (self.root / "STATUS.md").unlink()
+        self.assertNotIn(
+            "STATUS.md differs from generated tasks", CORE.generated_view_errors(CORE.all_tasks())
+        )
+        with self.assertRaisesRegex(RuntimeError, "generation is disabled"):
+            CORE.cmd_render_status(check=True)
+        CORE.PROJECT_CONFIG.write_text(json.dumps({**settings, "unknown": True}))
+        with self.assertRaisesRegex(RuntimeError, "exactly the documented"):
+            CORE.project_settings()
+
+    def test_binding_rejects_other_projects_and_init_is_one_time(self) -> None:
+        self.assertEqual("owner/state", CORE.repository_slug("git@github.com:Owner/State.git"))
+        with (
+            patch.object(CORE, "run") as run,
+            patch.object(CORE, "git_repository_slug", return_value="owner/state"),
+            patch.object(CORE.Path, "cwd", return_value=self.root),
+        ):
+            run.return_value = subprocess.CompletedProcess([], 0, str(self.root) + "\n", "")
+            CORE.assert_project_binding()
+        settings = CORE.project_settings()
+        CORE.PROJECT_CONFIG.write_text(
+            json.dumps({**settings, "project_id": str("2" * 8 + "-2222-4222-8222-" + "2" * 12)})
+        )
+        with self.assertRaisesRegex(RuntimeError, "does not match"):
+            CORE.assert_project_binding()
+        CORE.PROJECT_CONFIG.unlink()
+        CORE.BINDING.unlink()
+        args = argparse.Namespace(
+            state_repository="owner/state",
+            product_repository="owner/product",
+            project_name="test-project",
+            project_title="Test Project",
+            status_view=True,
+            commit_signoff=True,
+        )
+        with (
+            patch.object(CORE, "run") as run,
+            patch.object(CORE, "git_repository_slug", return_value="owner/state"),
+            patch.object(CORE.Path, "cwd", return_value=self.root),
+            patch.object(
+                CORE.uuid,
+                "uuid4",
+                return_value=CORE.uuid.UUID("33333333-3333-4333-8333-333333333333"),
+            ),
+            patch("builtins.print"),
+        ):
+            run.return_value = subprocess.CompletedProcess([], 0, str(self.root) + "\n", "")
+            CORE.cmd_init(args)
+        self.assertEqual(
+            "33333333-3333-4333-8333-333333333333", CORE.project_settings()["project_id"]
+        )
+        with self.assertRaisesRegex(RuntimeError, "already initialized"):
+            CORE.cmd_init(args)
+
+    def test_project_profile_and_binding_reject_malformed_identity(self) -> None:
+        valid_settings = CORE.project_settings()
+        CORE.PROJECT_CONFIG.unlink()
+        self.assertEqual("Agent Workflow", CORE.project_settings()["project_title"])
+        invalid_settings = [
+            [],
+            {**valid_settings, "schema_version": 2},
+            {**valid_settings, "project_id": "bad"},
+            {**valid_settings, "project_id": "11111111-1111-1111-8111-111111111111"},
+            {**valid_settings, "project_name": "Bad Name"},
+            {**valid_settings, "project_title": ""},
+            {**valid_settings, "status_view": "yes"},
+        ]
+        for value in invalid_settings:
+            with self.subTest(value=value), self.assertRaises(RuntimeError):
+                CORE.PROJECT_CONFIG.write_text(json.dumps(value))
+                CORE.project_settings()
+        CORE.PROJECT_CONFIG.write_text(json.dumps(valid_settings))
+        valid_binding = CORE.project_binding()
+        for value in (
+            {},
+            {**valid_binding, "schema_version": 2},
+            {**valid_binding, "project_id": "bad"},
+            {**valid_binding, "project_id": "11111111-1111-1111-8111-111111111111"},
+        ):
+            with self.subTest(binding=value), self.assertRaises(RuntimeError):
+                CORE.BINDING.write_text(json.dumps(value))
+                CORE.project_binding()
+        CORE.BINDING.write_text("bad-json")
+        with self.assertRaisesRegex(RuntimeError, "not initialized"):
+            CORE.project_binding()
+        CORE.BINDING.write_text(json.dumps(valid_binding))
+        self.assertEqual("owner/state", CORE.repository_slug("https://github.com/Owner/State.git"))
+        with self.assertRaisesRegex(RuntimeError, "invalid GitHub"):
+            CORE.repository_slug("not-a-repository")
+        self.assertTrue(CORE.inside(self.root / "tasks", self.root))
+        self.assertFalse(CORE.inside(self.root, self.root / "tasks"))
+        with patch.object(CORE, "run") as run:
+            run.return_value = subprocess.CompletedProcess(
+                [], 0, "git@github.com:Owner/State.git\n", ""
+            )
+            self.assertEqual("owner/state", CORE.git_repository_slug(self.root))
+
+    def test_binding_checks_root_origin_product_and_caller(self) -> None:
+        completed = subprocess.CompletedProcess([], 0, str(self.root) + "\n", "")
+        with (
+            patch.object(CORE, "run", return_value=completed),
+            patch.object(CORE, "git_repository_slug", return_value="other/state"),
+            self.assertRaisesRegex(RuntimeError, "state repository"),
+        ):
+            CORE.assert_project_binding()
+        other = self.root.parent / f"{self.root.name}-other"
+        wrong_top = subprocess.CompletedProcess([], 0, str(other) + "\n", "")
+        with (
+            patch.object(CORE, "run", return_value=wrong_top),
+            self.assertRaisesRegex(RuntimeError, "bound state repository root"),
+        ):
+            CORE.assert_project_binding()
+        CORE.RUNTIME.mkdir()
+        CORE.CONFIG.write_text(
+            json.dumps(
+                {
+                    "projects_root": str(self.root),
+                    "product_worktree": "product",
+                    "github_repository": "owner/wrong",
+                    "push_enabled": False,
+                }
+            )
+        )
+        with (
+            patch.object(CORE, "run", return_value=completed),
+            patch.object(CORE, "git_repository_slug", return_value="owner/state"),
+            self.assertRaisesRegex(RuntimeError, "runtime product"),
+        ):
+            CORE.assert_project_binding()
+        runtime = json.loads(CORE.CONFIG.read_text())
+        runtime["github_repository"] = "owner/product"
+        CORE.CONFIG.write_text(json.dumps(runtime))
+        with (
+            patch.object(CORE, "run", return_value=completed),
+            patch.object(CORE, "git_repository_slug", side_effect=["owner/state", "owner/wrong"]),
+            self.assertRaisesRegex(RuntimeError, "product checkout"),
+        ):
+            CORE.assert_project_binding()
+        with (
+            patch.object(CORE, "run", return_value=completed),
+            patch.object(CORE, "git_repository_slug", side_effect=["owner/state", "owner/product"]),
+            patch.object(CORE.Path, "cwd", return_value=other),
+            self.assertRaisesRegex(RuntimeError, "must be called"),
+        ):
+            CORE.assert_project_binding()
 
     def test_atomic_task_round_trip_and_render(self) -> None:
         path = self.make_task()
@@ -798,8 +976,20 @@ class HandoffTest(unittest.TestCase):
         binary.write_bytes(b"\\xff")
         large = self.root / "large.md"
         large.write_text("x" * 200001)
+        sample_uuid = "33333333-3333-4333-8333-333333333333"
+        for relative in (Path("tools/handoffctl.py"), Path("tests/test_handoffctl.py")):
+            fixture = self.root / relative
+            fixture.parent.mkdir(exist_ok=True)
+            fixture.write_text(sample_uuid)
+        (self.root / "notes.md").write_text(sample_uuid)
+        CORE.BINDING.write_text(CORE.BINDING.read_text() + "\ntoken=leak\n")
         errors = "\n".join(CORE.privacy_errors())
         self.assertIn("exceeds 200 KiB", errors)
+        self.assertIn("notes.md: session-like UUID", errors)
+        self.assertNotIn("tools/handoffctl.py: session-like UUID", errors)
+        self.assertNotIn("tests/test_handoffctl.py: session-like UUID", errors)
+        self.assertNotIn("coordinator.binding.json: session-like UUID", errors)
+        self.assertIn("coordinator.binding.json: possible credential", errors)
 
     def test_validation_reports_all_basic_reference_and_claim_errors(self) -> None:
         path = self.make_task("AR-0001")
@@ -1349,18 +1539,21 @@ class HandoffTest(unittest.TestCase):
                 self.subTest(target=target),
                 patch.object(sys, "argv", argv),
                 patch.object(CORE, target, return_value=result) as called,
+                patch.object(CORE, "assert_project_binding"),
             ):
                 self.assertEqual(result or 0, CORE.main())
                 called.assert_called_once()
         with (
             patch.object(sys, "argv", ["handoffctl", "doctor"]),
             patch.object(CORE, "validate", return_value=[]),
+            patch.object(CORE, "assert_project_binding"),
             patch("builtins.print"),
         ):
             self.assertEqual(0, CORE.main())
         with (
             patch.object(sys, "argv", ["handoffctl", "doctor", "--live"]),
             patch.object(CORE, "validate", return_value=["bad"]),
+            patch.object(CORE, "assert_project_binding"),
             patch("builtins.print"),
         ):
             self.assertEqual(1, CORE.main())

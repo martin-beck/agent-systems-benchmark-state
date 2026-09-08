@@ -44,6 +44,7 @@ max-statements = 40
 "tests/**" = ["S101"]
 "tools/handoffctl.py" = ["S603", "S607"]
 "tools/handoffctl" = ["S603", "S607"]
+"tools/handoffctl_vendor.py" = ["S603", "S607"]
 
 [tool.ruff.format]
 docstring-code-format = true
@@ -59,6 +60,7 @@ branch = true
 source = ["tools"]
 
 [tool.coverage.report]
+omit = ["tools/handoffctl_vendor.py"]
 fail_under = 95
 show_missing = true
 skip_covered = false

@@ -20,5 +20,6 @@ run_model() {
         -workers auto "${SPEC_DIR}/${model}.tla"
 }
 
+run_model HandoffctlBinding
 run_model HandoffctlLocks
 run_model Handoffctl

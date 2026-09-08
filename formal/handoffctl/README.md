@@ -37,6 +37,15 @@ acquisition. Consequently two processes that observed the same revision cannot
 both apply revision-guarded changes, and two claimants cannot both claim one
 open task.
 
+## Permanent project binding
+
+`HandoffctlBinding.tla` models an initialized coordinator bound to exactly one project. A call
+from the bound project is accepted; a call from any other project preserves state. The bound
+identity is constant, accepted/rejected classification matches caller identity, and weak fairness
+of correct calls establishes that a correctly invoked coordinator can continue to make progress.
+The implementation refines this guard by checking the profile UUID, state Git root and origin,
+product identity and origin, and caller working directory before normal command execution.
+
 ## Checked properties
 
 `Handoffctl.tla` exhaustively enumerates two processes, two tasks, every
@@ -56,7 +65,8 @@ readers, a competing writer, and bounded lock-wait timeout. TLC checks:
 
 Two processes are sufficient for pairwise lifecycle races; two tasks cover the
 one-active-task-per-actor invariant. The separate three-process lock model
-covers two readers plus one writer. These are finite exhaustive proofs of the
+covers two readers plus one writer. The binding model covers the configured project and one
+foreign caller, including rejection without mutation and fair progress for correct calls. These are finite exhaustive proofs of the
 abstractions, not proofs of Linux, Git, Python, or the filesystem implementation.
 
 ## Refinement obligations and assumptions

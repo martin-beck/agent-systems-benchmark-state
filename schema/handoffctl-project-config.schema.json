@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/martin-beck/agent-workflow-coordinator/schema/project-config.schema.json",
+  "title": "handoffctl project profile",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "project_id",
+    "project_name",
+    "project_title",
+    "status_view",
+    "commit_signoff"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "project_id": {"type": "string", "format": "uuid"},
+    "project_name": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "project_title": {"type": "string", "minLength": 1, "maxLength": 100},
+    "status_view": {"type": "boolean"},
+    "commit_signoff": {"type": "boolean"}
+  }
+}
