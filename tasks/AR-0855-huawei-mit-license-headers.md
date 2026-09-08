@@ -15,11 +15,11 @@
   "plan": "../plans/AR-0855.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files.",
-  "task_revision": 194,
+  "task_revision": 195,
   "title": "Enforce Huawei MIT source headers",
-  "updated_at": "2026-09-08T19:08:38+00:00",
+  "updated_at": "2026-09-08T19:43:07+00:00",
   "worktree_key": "agent-systems-benchmark-huawei-mit-headers"
 }
 ---
@@ -560,3 +560,7 @@ and fresh coordinator snapshot before claiming. Do not modify vendored coordinat
 - 2026-09-08T19:08:38+00:00: Blocked on corrected immutable coordinator v0.3.3+; do not hand-patch
   the hash-locked v0.3.2 vendor. Exact sync evidence remains in the dedicated worktree as an
   uncommitted reviewed vendor diff.
+
+- 2026-09-08T19:43:07+00:00: Verified corrected immutable signed coordinator v0.3.3 tag object
+  3b8504fd28f6e68bcd47082c67ffed444c9bb1ad resolves to exact green
+  c4fcd14be30e5215b1f6192e3e84c1a40aa19ec1; resume clean re-sync and remaining state enforcement.
