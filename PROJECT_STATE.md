@@ -12,7 +12,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- | --- |
 | #31 | `feature/native-platforms@bdaf9c108226` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
 | #61 | `feature/kernel-diagnostics@1d24993771a4` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | metrics: add fail-closed optional kernel probes |
-| #81 | `feature/provider-recording-choice@e8fed7e572b6` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Require explicit provider replay or live choice |
+| #81 | `feature/provider-recording-choice@e8fed7e572b6` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Require explicit provider replay or live choice |
 
 ## Recent workflows
 
@@ -23,7 +23,7 @@ Generated from local Git and GitHub. Do not edit.
 | 34240216897 | `e8fed7e572b6` | pull_request | Fault assurance | completed:success |
 | 34240216893 | `e8fed7e572b6` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 34240216884 | `e8fed7e572b6` | pull_request | Rust verification | completed:success |
-| 34240216881 | `e8fed7e572b6` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 34240216881 | `e8fed7e572b6` | pull_request | Emulated aarch64 portability | completed:success |
 | 34238840052 | `33f30cb7d88a` | push | Fault assurance | completed:success |
 | 34238840007 | `33f30cb7d88a` | push | Repository quality | completed:success |
 | 34238839954 | `33f30cb7d88a` | push | Rust verification | completed:success |
