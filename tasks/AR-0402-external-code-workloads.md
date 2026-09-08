@@ -7,7 +7,7 @@
     "AR-0401"
   ],
   "id": "AR-0402",
-  "next_action": "Wait for PR #79 updated exact-head CI, review all checks, then merge and verify post-merge runs.",
+  "next_action": "Complete independent oracle execution fixtures and production API integration; keep evaluator support unqualified until image/SBOM evidence exists.",
   "observed_branch": "feature/external-code-workloads",
   "observed_dirty": 0,
   "observed_head": "7650be3ca0c22366b0aed0598897d95242bdad8f",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:49:15+00:00",
+  "updated_at": "2026-09-08T12:56:14+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -318,3 +318,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T12:49:15+00:00: Recorded command exit 0; command argv SHA-256
   e79f48952cb8fd75f75cf0e9ab071009752f2891fff8377fbd4532cb690464fd.
+
+- 2026-09-08T12:56:14+00:00: Corrected bounded evaluator runner integrated as signed+DCO merge
+  8bc15f20a1bd5da3a6ea6b38fe40010bb6c6b2e0 after PR #79 branch had already merged. Exact-main
+  post-merge all green: Rust 34228259382, quality 34228259371, formal 34228259803, fault
+  34228259484, emulated aarch64 34228260055. Runner refuses unqualified provenance before subprocess
+  effects; local runner/planner tests 4/4.
