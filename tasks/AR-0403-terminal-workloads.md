@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Import terminal tasks through an adapter to the published harness or task format.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Integrate Terminal-Bench workloads",
-  "updated_at": "2026-09-08T13:48:28+00:00",
+  "updated_at": "2026-09-08T13:51:02+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-workloads"
 }
 ---
@@ -56,3 +56,6 @@ Implementation has not started. Read the linked plan before claiming.
   not equal dataset package digests, so tag checkout bytes cannot substitute for acquired package
   bytes. Native oracle/reset evidence is unavailable because this worker cannot access the Docker
   socket; no support claim made.
+
+- 2026-09-08T13:51:02+00:00: Recorded command exit 1; command argv SHA-256
+  c82935fac7709f957bda6f12e1fc666d2f1ba2cc05cef745daf3897f445cc06c.
