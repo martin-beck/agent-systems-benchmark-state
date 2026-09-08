@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the v0.1.4 coordinator merge attestation without rewriting published history.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Repair coordinator merge attestation",
-  "updated_at": "2026-09-08T07:35:04+00:00",
+  "updated_at": "2026-09-08T07:36:23+00:00",
   "worktree_key": "agent-systems-benchmark-coordinator-merge-attestation"
 }
 ---
@@ -27,3 +27,6 @@ only an independently reviewed additive repair.
   attestation; AR-0852 remains open pending this repair.
 
 - 2026-09-08T07:35:04+00:00: Claimed by replay-20260906.
+
+- 2026-09-08T07:36:23+00:00: Recorded command exit 1; command argv SHA-256
+  be304663d36b6051ee5deceafcb182e5e38839d689a0903a06db8f4cd76f3d7e.
