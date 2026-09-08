@@ -752,7 +752,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0314](tasks/AR-0314-recording-source-choice.md): Choose matching replay or live provider execution | quality_20260906 | Offer matching prior recordings or an actual provider connection without silently choosing either. | Paused by coordinator pending dependency update for missing credential-reference resolver. Preserve exact dirty two-path replay-only catalog/source-choice skeleton; after confirmation, correct only the PolicyVersion test fixture and continue bounded boundedBut do not implement live credential resolution. |
+| P1 | [AR-0314](tasks/AR-0314-recording-source-choice.md): Choose matching replay or live provider execution | quality_20260906 | Offer matching prior recordings or an actual provider connection without silently choosing either. | Independently review signed checkpoint 1d0e521; run exact replay gates and complete live-preflight/credential-boundary evidence without weakening explicit replay/live choice. |
 | P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | asb-license-20260908 | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Claim, create the declared worktree, enforce exact first-party Huawei MIT source headers, test, and publish unmerged PRs. |
 | P2 | [AR-0403](tasks/AR-0403-terminal-workloads.md): Integrate Terminal-Bench workloads | replay_20260906 | Import terminal tasks through an adapter to the published harness or task format. | Independent review the signed adapter checkpoint e0da4efd; run exact-tree quality gates and retain explicit unqualified Terminal-Bench limitations. |
 

@@ -12,7 +12,7 @@
     "AR-0318"
   ],
   "id": "AR-0314",
-  "next_action": "Paused by coordinator pending dependency update for missing credential-reference resolver. Preserve exact dirty two-path replay-only catalog/source-choice skeleton; after confirmation, correct only the PolicyVersion test fixture and continue bounded boundedBut do not implement live credential resolution.",
+  "next_action": "Independently review signed checkpoint 1d0e521; run exact replay gates and complete live-preflight/credential-boundary evidence without weakening explicit replay/live choice.",
   "observed_branch": "feature/provider-recording-choice",
   "observed_dirty": 0,
   "observed_head": "1d0e521690e688ee50fc099d0cb38b440dfea6b3",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Offer matching prior recordings or an actual provider connection without silently choosing either.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Choose matching replay or live provider execution",
-  "updated_at": "2026-09-08T14:12:38+00:00",
+  "updated_at": "2026-09-08T14:12:55+00:00",
   "worktree_key": "agent-systems-benchmark-provider-recording-choice"
 }
 ---
@@ -103,3 +103,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T14:12:31+00:00: Recorded command exit 0; command argv SHA-256
   2b20d5d109f4e99d2b8b709894f603031aeb40a1bbeec481fd55a460de6e1e0b.
+
+- 2026-09-08T14:12:55+00:00: Signed checkpoint 1d0e521 has clean two-path scope and green wrapped
+  focused selection tests. It implements deterministic compatible recording offers and explicit
+  replay/live source choice; live preflight remains to be independently verified against AR-0318
+  environment credentials.
