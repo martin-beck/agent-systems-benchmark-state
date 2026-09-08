@@ -15,11 +15,11 @@
   "plan": "../plans/AR-0855.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files.",
-  "task_revision": 114,
+  "task_revision": 115,
   "title": "Enforce Huawei MIT source headers",
-  "updated_at": "2026-09-08T16:59:24+00:00",
+  "updated_at": "2026-09-08T17:05:37+00:00",
   "worktree_key": "agent-systems-benchmark-huawei-mit-headers"
 }
 ---
@@ -323,3 +323,6 @@ and fresh coordinator snapshot before claiming. Do not modify vendored coordinat
 
 - 2026-09-08T16:59:24+00:00: Review submitted as COMMENTED REQUEST CHANGES at exact c90a1137;
   product repair and immutable upstream coordinator release/vendor sync remain required.
+
+- 2026-09-08T17:05:37+00:00: Resume to repair duplicate adjacent-pair semantics after independent
+  review.
