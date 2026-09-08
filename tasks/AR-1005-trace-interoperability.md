@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose stable causal ASB events and optional standards-based telemetry without binding storage to an evolving convention.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Export interoperable privacy-safe traces",
-  "updated_at": "2026-09-08T10:28:06+00:00",
+  "updated_at": "2026-09-08T10:28:09+00:00",
   "worktree_key": "agent-systems-benchmark-trace-interoperability"
 }
 ---
@@ -49,3 +49,6 @@ Implementation has not started. Read the linked plan before claiming.
   preserving journal format and avoiding raw content by default. The 10:18:15 exit 1 was state-only
   rebase reconciliation after replica divergence; state is now clean/synced at ae7851ac. Later exit
   127/101 entries observed by coordinator belong to concurrent AR-0311/AR-1003, not AR-1005.
+
+- 2026-09-08T10:28:09+00:00: Recorded command exit 0; command argv SHA-256
+  2720db4fabada358791c33e2441cc41cc6b418eb7ad67e60cbb32b11bb98691e.
