@@ -92,7 +92,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `3bcfd85dedd3` | 0 | behind 227, ahead 0 |
 | `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `410ecc95b80e` | 0 | behind 215, ahead 0 |
 | `agent-systems-benchmark-terminal-interface` | `feature/terminal-interface` | `d2e7b66ff6af` | 0 | behind 160, ahead 0 |
-| `agent-systems-benchmark-terminal-workloads` | `feature/terminal-workloads` | `9feeba652435` | 1 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-workloads/registry/v1/external-workloads.json` |
+| `agent-systems-benchmark-terminal-workloads` | `feature/terminal-workloads` | `9feeba652435` | 2 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-workloads/registry/v1/README.md`, `crates/asb-workloads/registry/v1/external-workloads.json` |
 | `agent-systems-benchmark-trace-interoperability` | `feature/trace-interoperability` | `921cf004f8aa` | 0 | behind 32, ahead 0 |
 | `agent-systems-benchmark-verifier-integrity` | `feature/verifier-integrity` | `3fc65ea73bad` | 0 | behind 65, ahead 0 |
