@@ -2,7 +2,7 @@
 {
   "branch": "fix/huawei-mit-license-headers",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-08T17:42:02+00:00",
   "depends_on": [
     "AR-0003"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "fix/huawei-mit-license-headers",
   "observed_dirty": 0,
   "observed_head": "816441da6ddffc45d84f92999b28344df3bdd61f",
-  "owner": "",
+  "owner": "codex-asb-header-review-repair",
   "plan": "../plans/AR-0855.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Enforce Huawei MIT source headers",
-  "updated_at": "2026-09-08T15:41:50+00:00",
+  "updated_at": "2026-09-08T15:42:02+00:00",
   "worktree_key": "agent-systems-benchmark-huawei-mit-headers"
 }
 ---
@@ -208,3 +208,5 @@ and fresh coordinator snapshot before claiming. Do not modify vendored coordinat
   Repair and re-review before merge; preserve state-vendor release blocker.
 
 - 2026-09-08T15:41:50+00:00: Independent review found omitted T reminders
+
+- 2026-09-08T15:42:02+00:00: Claimed by codex-asb-header-review-repair.
