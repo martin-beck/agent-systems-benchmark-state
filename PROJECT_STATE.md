@@ -18,8 +18,8 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 34198796478 | `e86fe799a33c` | push | Emulated aarch64 portability | in_progress:- |
-| 34198796463 | `e86fe799a33c` | push | Formal assurance | queued:- |
-| 34198796421 | `e86fe799a33c` | push | Fault assurance | queued:- |
+| 34198796463 | `e86fe799a33c` | push | Formal assurance | completed:success |
+| 34198796421 | `e86fe799a33c` | push | Fault assurance | in_progress:- |
 | 34198796416 | `e86fe799a33c` | push | Repository quality | in_progress:- |
 | 34198796415 | `e86fe799a33c` | push | Rust verification | in_progress:- |
 | 34198266189 | `d914647bd7da` | pull_request | Repository quality | completed:success |
