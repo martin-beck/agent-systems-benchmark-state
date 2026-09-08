@@ -7,7 +7,7 @@
     "AR-0401"
   ],
   "id": "AR-0402",
-  "next_action": "Integrate validated results into the production benchmark result path and add cross-suite comparison metadata; keep real evaluator qualification planned.",
+  "next_action": "Integrate comparison output into the production result/report path; retain explicit limitations and unqualified evaluator status.",
   "observed_branch": "feature/external-code-workloads",
   "observed_dirty": 0,
   "observed_head": "4e672f64e734bb2fe1f1a164967163d0e1368dae",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 131,
+  "task_revision": 132,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T13:14:27+00:00",
+  "updated_at": "2026-09-08T13:19:11+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -363,3 +363,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T13:14:27+00:00: Recorded command exit 0; command argv SHA-256
   6bcd004823c8c98b5dd5d78a0ffe7438122fa7c6f04fd415b7244c580156aabd.
+
+- 2026-09-08T13:19:11+00:00: Integrated signed+DCO result comparison metadata as merge
+  d917972de854afa1a9fa00b5d34a14ba1e6cfc2c. Comparator ranks only shared oracle/evaluator identities
+  and returns non-comparable otherwise; local comparison tests pass 5/5. Exact-main post-merge all
+  green: Rust 34230753318, quality 34230753235, formal 34230753217, fault 34230753225, emulated
+  aarch64 34230753321.
