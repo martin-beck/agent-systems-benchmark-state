@@ -2,7 +2,7 @@
 {
   "branch": "feature/verifier-integrity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T06:46:18+00:00",
+  "claim_expires": "2026-09-08T07:20:57+00:00",
   "depends_on": [
     "AR-0103",
     "AR-0104",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate immutable graders from agent work and version scoring independently of execution.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Protect verifiers and support offline rescoring",
-  "updated_at": "2026-09-08T04:20:39+00:00",
+  "updated_at": "2026-09-08T04:20:57+00:00",
   "worktree_key": "agent-systems-benchmark-verifier-integrity"
 }
 ---
@@ -132,3 +132,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T04:20:39+00:00: Recorded command exit 0; command argv SHA-256
   28b962ac2fdfa3244db1e9ff7c3d50a22feb2dbc05388e43e4ce59c256f10a6c.
+
+- 2026-09-08T04:20:57+00:00: Heartbeat by replay_20260906.
