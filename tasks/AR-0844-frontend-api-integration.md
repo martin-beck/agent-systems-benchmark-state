@@ -2,7 +2,7 @@
 {
   "branch": "feature/frontend-api-integration",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T13:46:53+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0840",
     "AR-0841",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/frontend-api-integration",
   "observed_dirty": 0,
   "observed_head": "76cc86f23a48d5af275b2fed9d70f54199e38637",
-  "owner": "replay_20260906",
+  "owner": "",
   "plan": "../plans/AR-0844.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Integrate and qualify the frontend control API as an independent boundary.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Integrate frontend control API",
-  "updated_at": "2026-09-08T11:45:42+00:00",
+  "updated_at": "2026-09-08T12:00:17+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-api-integration"
 }
 ---
@@ -124,3 +124,13 @@ status, no implicit network listener exists, and exact-head CI/post-merge recove
 
 - 2026-09-08T11:45:42+00:00: Recorded command exit 0; command argv SHA-256
   cb84292e9362f90ceb67222348049672dfefb2af05b41d5ccbd02d91fe8ef84a.
+
+- 2026-09-08T12:00:17+00:00: Independently reviewed PR #76 exact head
+  76cc86f23a48d5af275b2fed9d70f54199e38637 merged through signed/DCO no-ff equivalent
+  0710c9376ef597ae9b1ed68e28bbb450fd588717; its tree 8eb44d1cd29c737ce9f501f21ae0bb9696ec6382
+  exactly matches GitHub's recorded merge tree 17e4d097adeb4ae9e093219162f6b743e343d612 without
+  rewriting the feature commit. Current exact main fcbf71ae8c08d817bad27acf1fa38e29296b9547 includes
+  AR-0844 and subsequent signed AR-0316. Exact-main CI is fully green: formal 34222580707, fault
+  34222580859, emulated aarch64 34222580664, Rust 34222580637, repository quality 34222580643.
+  Premerge focused/full/formal/fault/mutation/coverage/privacy/supply/platform evidence remains
+  green.
