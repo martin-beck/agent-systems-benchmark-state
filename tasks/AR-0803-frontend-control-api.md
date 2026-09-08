@@ -18,11 +18,11 @@
   "plan": "../plans/AR-0803.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary.",
-  "task_revision": 301,
+  "task_revision": 302,
   "title": "Define the frontend control API",
-  "updated_at": "2026-09-07T08:19:23+00:00",
+  "updated_at": "2026-09-08T05:13:11+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api"
 }
 ---
@@ -860,3 +860,7 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-07T08:19:23+00:00: Lease expired; exact candidate cbb764c remains dirty with 20 paths and
   awaits independent immutable review plus concurrency/privacy repairs. Preserve worktree and resume
   only after fresh reconciliation.
+
+- 2026-09-08T05:13:11+00:00: AR-0847 repair merged as 462bd04 with all exact-head/post-merge checks
+  green; resume umbrella from stale blocked state while AR-0840 and remaining child frontend work
+  continue.
