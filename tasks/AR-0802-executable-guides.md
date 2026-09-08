@@ -2,7 +2,7 @@
 {
   "branch": "feature/executable-guides",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T09:24:11+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0801",
     "AR-0401",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/executable-guides",
   "observed_dirty": 0,
   "observed_head": "5b62f9e7ef9dd5a5acb1f883fb5bd4334fc537cb",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0802.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Publish executable offline quickstart, workload/agent extension guide and reproducibility guide.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Deliver runnable user and extension guides",
-  "updated_at": "2026-09-08T06:42:46+00:00",
+  "updated_at": "2026-09-08T06:47:42+00:00",
   "worktree_key": "agent-systems-benchmark-executable-guides"
 }
 ---
@@ -100,3 +100,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T06:42:46+00:00: Recorded command exit 0; command argv SHA-256
   60a95b2aba56f19c48cb9185bbfb9ff54bca17e16ccf69e9c739282e6aca9628.
+
+- 2026-09-08T06:47:42+00:00: Released executable offline quickstart, extension, and reproducibility
+  guides in signed DCO merge 123c58f7a971f210873124fccb31daa16139aab4 (PR #64). Exact-main CI
+  succeeded: quality 34195865386, Rust x86_64+aarch64 34195865444, emulated aarch64 34195865436,
+  fault 34195865438, formal 34195865490. Post-merge workspace tests, clippy, rustdoc, repository
+  policy/link checks, guide artifacts, stale-schema and unsupported-command negatives passed;
+  recording/replay and general external-extension CLI discovery remain explicitly unsupported.
