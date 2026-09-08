@@ -10,7 +10,7 @@
     "AR-0843"
   ],
   "id": "AR-0844",
-  "next_action": "Run focused asb-control/asb-cli suites and no-network-listener source/behavior audit on the one-file reconnect continuity delta, then full applicable gates and signed candidate review.",
+  "next_action": "Hold immutable candidate 76cc86f23a48d5af275b2fed9d70f54199e38637 for independent review; do not publish or merge before approval.",
   "observed_branch": "feature/frontend-api-integration",
   "observed_dirty": 0,
   "observed_head": "76cc86f23a48d5af275b2fed9d70f54199e38637",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate and qualify the frontend control API as an independent boundary.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Integrate frontend control API",
-  "updated_at": "2026-09-08T11:37:16+00:00",
+  "updated_at": "2026-09-08T11:37:43+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-api-integration"
 }
 ---
@@ -102,3 +102,13 @@ status, no implicit network listener exists, and exact-head CI/post-merge recove
 
 - 2026-09-08T11:37:16+00:00: Recorded command exit 0; command argv SHA-256
   8d1538a67a04c4f2e6d52e94ad1127df3a8ad2ba9488b9a0baa25dcfa2cb0b9f.
+
+- 2026-09-08T11:37:43+00:00: Immutable AR-0844 candidate 76cc86f23a48d5af275b2fed9d70f54199e38637,
+  tree 7cd271062fc18162b08287765414b90625bc6873, exact parent
+  4523da9629ff09451a0a2d2fe332d80bbb1320de. One path only: crates/asb-cli/src/control.rs. Martin
+  Beck SSH signature and matching DCO verified; exact introduced range repository policy,
+  diff-check, Gitleaks, and clean-tree checks pass. Focused reconnect and no-network configuration
+  negatives pass; full workspace fmt/Clippy/tests/docs/release, formal Rust/Loom/models, retained
+  faults, mutation 7/7, coverage floors, contract consistency, actionlint/zizmor, cargo-deny/audit,
+  quality failure fixtures, and platform manifest/tests all pass. No-range policy failure is
+  inherited base commit 909078c and is excluded by the authoritative exact base..candidate pass.
