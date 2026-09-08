@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T17:28:15+00:00",
+  "updated_at": "2026-09-08T17:41:38+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -248,3 +248,6 @@ Implementation has not started. Read the linked plan before claiming.
   contract/coverage/failure/platform/workflow/dependency/privacy gates, repository policy,
   commit-range Gitleaks, signature, DCO, and diff-check all pass. A symbolic baseline operator error
   was corrected to the exact parent before the successful remaining-gate run.
+
+- 2026-09-08T17:41:38+00:00: Recorded command exit 0; command argv SHA-256
+  350163226c9c968bc656b3f9179576c781b4cfe924224c9c360d62c8608560c6.
