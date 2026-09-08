@@ -16,7 +16,7 @@
     "AR-0310"
   ],
   "id": "AR-0312",
-  "next_action": "Hold exact e49acbf455f6ca745bfd3119c729d6326904b67b unpublished for independent immutable review.",
+  "next_action": "Monitor exact-head CI for PR #71 at e49acbf455f6ca745bfd3119c729d6326904b67b; stop before merge pending coordinator authorization.",
   "observed_branch": "feature/provider-ollama",
   "observed_dirty": 0,
   "observed_head": "e49acbf455f6ca745bfd3119c729d6326904b67b",
@@ -26,9 +26,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply one pinned local Ollama provider and model configuration to all supported agents.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Support a shared local Ollama provider",
-  "updated_at": "2026-09-08T09:26:06+00:00",
+  "updated_at": "2026-09-08T09:26:36+00:00",
   "worktree_key": "agent-systems-benchmark-provider-ollama"
 }
 ---
@@ -104,3 +104,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T09:26:06+00:00: Recorded command exit 0; command argv SHA-256
   d0a612db366defb21c04ba7f7b7f054b1073eb4ba8d214c231111b2fd655b184.
+
+- 2026-09-08T09:26:36+00:00: Independent immutable review approved exact
+  e49acbf455f6ca745bfd3119c729d6326904b67b/tree c28e97e6e712f31ae50cce0c46e2570edc3039d1. Published
+  exact absent remote branch lease and opened focused PR #71
+  https://github.com/martin-beck/agent-systems-benchmark/pull/71. Exact-head runs: quality
+  34209923254, aarch64 34209923296, fault 34209923200, formal 34209923307, Rust 34209923268, AWQ
+  shadow 34209923333. AWQ green; formal partially green; remaining checks in progress. No merge
+  authorized.
