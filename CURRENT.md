@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0514](tasks/AR-0514-replay-openhands.md): Qualify OpenHands replay | Qualify replay conformance for OpenHands. | Recover exact approved OpenHands environment digest 63727569 from immutable provenance; otherwise schedule pin-reproduction repair before native replay. | contracts_20260906 |
-| P1 | [AR-0843](tasks/AR-0843-frontend-privacy-assurance.md): Assure frontend privacy and faults | Qualify frontend privacy, artifact access, and fault behavior. | Enforce public-summary and sensitive-artifact boundaries with privacy and fault tests. | quality_20260906 |
+| P1 | [AR-0843](tasks/AR-0843-frontend-privacy-assurance.md): Assure frontend privacy and faults | Qualify frontend privacy, artifact access, and fault behavior. | Add fail-closed forged/unbound artifact and ancestor-symlink tests, then bind metadata lookup to authoritative store evidence without exposing content. | quality_20260906 |
 | P2 | [AR-0402](tasks/AR-0402-external-code-workloads.md): Integrate SWE-bench and Aider Polyglot | Add versioned external workload adapters without vendoring datasets. | Pin datasets/evaluators and evaluate image architecture parity. | root-coordination-20260906 |
 
 ## Open
