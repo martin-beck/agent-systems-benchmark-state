@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T08:38:47+00:00",
+  "updated_at": "2026-09-08T08:39:01+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -59,3 +59,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T08:38:47+00:00: Recorded command exit 0; command argv SHA-256
   b53816b1079217465ce64670b216856415841404399c34dc68b2c7933595383f.
+
+- 2026-09-08T08:39:01+00:00: Recorded command exit 0; command argv SHA-256
+  fa545d7d5999a7d4d4842001a285abf86db901d4b5032e860fc0254219f5f6bd.
