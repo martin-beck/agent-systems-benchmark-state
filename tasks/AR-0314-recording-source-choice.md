@@ -12,7 +12,7 @@
     "AR-0318"
   ],
   "id": "AR-0314",
-  "next_action": "Complete live-provider preflight evidence using AR-0318 environment credentials, then run exact-head integration/CI gates.",
+  "next_action": "Serialize AR-0318 product publication/integration (e9a0e523 + 5d62546) onto product main or explicitly authorize its inclusion in AR-0314; then rebase AR-0314 and run the synthetic environment-credential live preflight without FD/helper claims.",
   "observed_branch": "feature/provider-recording-choice",
   "observed_dirty": 0,
   "observed_head": "1d0e521690e688ee50fc099d0cb38b440dfea6b3",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Offer matching prior recordings or an actual provider connection without silently choosing either.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Choose matching replay or live provider execution",
-  "updated_at": "2026-09-08T14:14:11+00:00",
+  "updated_at": "2026-09-08T14:15:56+00:00",
   "worktree_key": "agent-systems-benchmark-provider-recording-choice"
 }
 ---
@@ -113,3 +113,11 @@ Implementation has not started. Read the linked plan before claiming.
   signed 1d0e521: 91 tests passed across unit, cassette, fault, migration, pacing, redaction,
   schema, strict-replay, and Gemini suites. Replay/source-choice behavior is validated; live
   preflight remains open.
+
+- 2026-09-08T14:15:56+00:00: Live-preflight integration audit on AR-0314 candidate 1d0e521:
+  origin/main remains 9feeba652 and does not contain AR-0318 source commit e9a0e523 (merge-base
+  --is-ancestor exit 1); AR-0314 branch likewise has no crates/asb-agents/src/credential.rs.
+  Therefore no AR-0318 environment resolver is available on the exact candidate tree, and claiming a
+  live preflight would be false. The independently reported asb-replay 91/91 suite remains green.
+  Exact blocker is missing product integration of the released dependency, not credential lookup or
+  provider behavior.

@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0314](tasks/AR-0314-recording-source-choice.md): Choose matching replay or live provider execution | Offer matching prior recordings or an actual provider connection without silently choosing either. | Complete live-provider preflight evidence using AR-0318 environment credentials, then run exact-head integration/CI gates. | quality_20260906 |
+| P1 | [AR-0314](tasks/AR-0314-recording-source-choice.md): Choose matching replay or live provider execution | Offer matching prior recordings or an actual provider connection without silently choosing either. | Serialize AR-0318 product publication/integration (e9a0e523 + 5d62546) onto product main or explicitly authorize its inclusion in AR-0314; then rebase AR-0314 and run the synthetic environment-credential live preflight without FD/helper claims. | quality_20260906 |
 | P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Claim, create the declared worktree, enforce exact first-party Huawei MIT source headers, test, and publish unmerged PRs. | asb-license-20260908 |
 | P2 | [AR-0403](tasks/AR-0403-terminal-workloads.md): Integrate Terminal-Bench workloads | Import terminal tasks through an adapter to the published harness or task format. | Independent review the signed adapter checkpoint e0da4efd; run exact-tree quality gates and retain explicit unqualified Terminal-Bench limitations. | replay_20260906 |
 
