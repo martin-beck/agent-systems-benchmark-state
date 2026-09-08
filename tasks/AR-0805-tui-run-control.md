@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T16:58:22+00:00",
+  "updated_at": "2026-09-08T17:05:45+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -175,3 +175,6 @@ Implementation has not started. Read the linked plan before claiming.
   failure fixtures, artifact outcome, platform manifests plus 23 tests, actionlint, zizmor, cargo
   deny, cargo audit, Gitleaks file scan, added-line privacy scan, and one-path scope/diff checks all
   pass. No schema, control protocol, Cargo, main.rs, or AR-0855 header path changed.
+
+- 2026-09-08T17:05:45+00:00: Recorded command exit 0; command argv SHA-256
+  321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
