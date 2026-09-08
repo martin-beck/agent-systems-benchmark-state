@@ -65,6 +65,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-replay-miniswe` | `feature/replay-miniswe` | `516f7b6b1373` | 0 | behind 32, ahead 0 |
 | `agent-systems-benchmark-replay-opencode` | `feature/replay-opencode` | `eec93a240b58` | 0 | behind 60, ahead 0 |
 | `agent-systems-benchmark-replay-opendesk` | `feature/replay-opendesk` | `24a5519ef006` | 0 | behind 51, ahead 0 |
+| `agent-systems-benchmark-replay-openhands` | `feature/replay-openhands` | `64f6eb4e5bc7` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-replay-pacing` | `feature/replay-pacing` | `73d28a431c78` | 0 | behind 145, ahead 0 |
 | `agent-systems-benchmark-replay-qwen` | `feature/replay-qwen` | `dd657dddaf89` | 0 | behind 34, ahead 0 |
 | `agent-systems-benchmark-runner-isolation-hardening` | `fix/runner-isolation-hardening` | `9b4e7084e02c` | 0 | behind 80, ahead 0 |
