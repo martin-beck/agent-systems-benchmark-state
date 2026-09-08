@@ -10,16 +10,16 @@
   "next_action": "Define and implement one-shot FD and bounded helper credential resolvers.",
   "observed_branch": "feature/credential-fd-helper-resolvers",
   "observed_dirty": 0,
-  "observed_head": "76497db8f22c43762f0b5bcbc7f2549c1d17281d",
+  "observed_head": "b2707c482876dcfb42c756c39165f6ecdb5c7c10",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0319.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add explicit file-descriptor and helper credential references without ambient-secret fallback.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Implement credential FD and helper resolvers",
-  "updated_at": "2026-09-08T16:21:07+00:00",
+  "updated_at": "2026-09-08T16:21:14+00:00",
   "worktree_key": "agent-systems-benchmark-credential-fd-helper-resolvers"
 }
 ---
