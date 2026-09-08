@@ -9,7 +9,7 @@
   "id": "AR-0319",
   "next_action": "Request independent immutable review of exact d2e08d8d; do not publish until approved. Local Kani remains an explicit environment-only limitation; hosted formal CI must run it.",
   "observed_branch": "feature/credential-fd-helper-resolvers",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "d2e08d8d9bfa8b728fa93c1d1aa53a955573f03e",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0319.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add explicit file-descriptor and helper credential references without ambient-secret fallback.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Implement credential FD and helper resolvers",
-  "updated_at": "2026-09-08T19:13:27+00:00",
+  "updated_at": "2026-09-08T19:13:34+00:00",
   "worktree_key": "agent-systems-benchmark-credential-fd-helper-resolvers"
 }
 ---
