@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify authorized disposable native x86_64 capacity on a development host.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Qualify native x86 capacity",
-  "updated_at": "2026-09-08T00:06:24+00:00",
+  "updated_at": "2026-09-08T00:07:27+00:00",
   "worktree_key": "agent-systems-benchmark-native-x86-capacity"
 }
 ---
@@ -247,3 +247,6 @@ claim native aarch64 support; native aarch64 remains future work requiring separ
   is measured 56% and is not a configured critical floor; native positive behavior is additionally
   exercised by the real four-check evidence. No aarch64, performance, public-PR runner, AppArmor
   enforcement, SLA, or zero-cost claim.
+
+- 2026-09-08T00:07:27+00:00: Recorded command exit 0; command argv SHA-256
+  4e173bfaf0b49f7ba1869e9f58c5c3107f20fc0ae4b77e0283c7f199828f42e7.
