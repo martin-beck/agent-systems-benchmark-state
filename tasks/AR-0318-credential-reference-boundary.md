@@ -16,11 +16,11 @@
   "plan": "../plans/AR-0318.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Resolve provider credential references without exposing secrets or accepting ambient credentials.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Implement the credential-reference boundary",
-  "updated_at": "2026-09-08T13:54:19+00:00",
+  "updated_at": "2026-09-08T13:55:24+00:00",
   "worktree_key": "agent-systems-benchmark-credential-reference-boundary"
 }
 ---
@@ -54,3 +54,6 @@ Implementation has not started. Read the linked plan before claiming.
   PATH and no cargo binary under /srv/data/projects; focused Rust compile/test cannot run. Preserve
   dirty resolver worktree; next action is provision/activate documented Rust toolchain, then rerun
   focused tests and repair.
+
+- 2026-09-08T13:55:24+00:00: Configured toolchain proven at /srv/data/projects/.asb-local; prior
+  missing-cargo blocker was corrected. Resume preserved dirty resolver for focused repair/tests.
