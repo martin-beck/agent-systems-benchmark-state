@@ -2,7 +2,7 @@
 {
   "branch": "feature/frontend-control-api",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T07:23:09+00:00",
+  "claim_expires": "2026-09-08T07:26:03+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0104",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary.",
-  "task_revision": 304,
+  "task_revision": 305,
   "title": "Define the frontend control API",
-  "updated_at": "2026-09-08T05:23:19+00:00",
+  "updated_at": "2026-09-08T05:26:03+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api"
 }
 ---
@@ -875,3 +875,5 @@ Implementation has not started. Read the linked plan before claiming.
   secret-bearing fields. The 20 dirty repair paths are not part of immutable cbb764c and cannot
   support approval. Do not publish; reconcile integrated AR-0847 repair into a new immutable
   candidate.
+
+- 2026-09-08T05:26:03+00:00: Heartbeat by replay_20260906.
