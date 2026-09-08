@@ -31,8 +31,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-emulated-aarch64-portability` | `feature/emulated-aarch64-portability` | `0e6d74d2cf9f` | 0 | behind 39, ahead 0 |
 | `agent-systems-benchmark-engineering-workloads` | `feature/engineering-workloads` | `41ffc6eb8f1a` | 0 | behind 143, ahead 0 |
 | `agent-systems-benchmark-executable-guides` | `feature/executable-guides` | `5b62f9e7ef9d` | 0 | behind 21, ahead 0 |
-| `agent-systems-benchmark-execution-budgets` | `feature/execution-budgets` | `d56052d64b1e` | 5 | behind 2, ahead 0 |
-| changed files | - | - | - | `crates/asb-agents/Cargo.toml`, `crates/asb-agents/src/lib.rs`, `crates/asb-core/src/lib.rs`, `crates/asb-agents/src/accounting.rs`, `crates/asb-core/src/budget.rs` |
+| `agent-systems-benchmark-execution-budgets` | `feature/execution-budgets` | `d56052d64b1e` | 10 | behind 2, ahead 0 |
+| changed files | - | - | - | `crates/asb-agents/Cargo.toml`, `crates/asb-agents/src/lib.rs`, `crates/asb-analysis/Cargo.toml`, `crates/asb-analysis/src/lib.rs`, `crates/asb-core/src/lib.rs`, `crates/asb-agents/src/accounting.rs`, `crates/asb-analysis/src/economics.rs`, `crates/asb-analysis/tests/budget_reference.rs`, `crates/asb-analysis/tests/fixtures/budget-reference-vectors.tsv`, `crates/asb-core/src/budget.rs` |
 | `agent-systems-benchmark-experiment-comparability` | `feature/experiment-comparability` | `eb5e84933830` | 0 | behind 153, ahead 0 |
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 207, ahead 0 |
 | `agent-systems-benchmark-external-code-workloads` | `feature/external-code-workloads` | `123c58f7a971` | 0 | behind 20, ahead 0 |
