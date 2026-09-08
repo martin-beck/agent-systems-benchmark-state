@@ -11,17 +11,17 @@
   "id": "AR-0309",
   "next_action": "Add malformed, symlink, cancellation, action-ceiling and cleanup negatives; generate the exact locked package inventory/provenance fixture; then request the shared lib.rs registration fence.",
   "observed_branch": "feature/agent-openhands",
-  "observed_dirty": 3,
-  "observed_head": "3a07b57b8265d98eeebbcd4fd21339d72fac0663",
+  "observed_dirty": 0,
+  "observed_head": "725c40bd41b18947d25a4a986dab4a3ba46f0cd6",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0309.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run a maintained MIT OpenHands SDK or canonical headless client.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Implement maintained OpenHands SDK client adapter",
-  "updated_at": "2026-09-08T04:25:14+00:00",
+  "updated_at": "2026-09-08T04:25:38+00:00",
   "worktree_key": "agent-systems-benchmark-agent-openhands"
 }
 ---
