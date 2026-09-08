@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**126 ARs tracked** across 5 active status categories.
+**127 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 3 |
 | **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
-| **Planned** | Defined work awaiting promotion or dependencies | 46 |
+| **Planned** | Defined work awaiting promotion or dependencies | 47 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 71 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -100,6 +100,7 @@ flowchart LR
         AR_0518["AR-0518 - Done"]:::status_done
         AR_0519["AR-0519 - Done"]:::status_done
         AR_0520["AR-0520 - Done"]:::status_done
+        AR_0521["AR-0521 - Planned"]:::status_planned
     end
     subgraph series_06["06 - Metrics"]
         direction TB
@@ -364,6 +365,7 @@ flowchart LR
     AR_0309 --> AR_0315
     AR_0309 --> AR_0316
     AR_0309 --> AR_0514
+    AR_0309 --> AR_0521
     AR_0310 --> AR_0311
     AR_0310 --> AR_0312
     AR_0310 --> AR_0314
@@ -457,6 +459,7 @@ flowchart LR
     AR_0512 --> AR_0515
     AR_0513 --> AR_0515
     AR_0514 --> AR_0515
+    AR_0514 --> AR_0521
     AR_0517 --> AR_0518
     AR_0517 --> AR_0520
     AR_0518 --> AR_0519
@@ -624,7 +627,7 @@ flowchart LR
 | [AR-0306](tasks/AR-0306-agent-qwen-code.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0103](tasks/AR-0103-sandbox-runtime.md) | [AR-0311](tasks/AR-0311-provider-openai.md), [AR-0312](tasks/AR-0312-provider-ollama.md), [AR-0315](tasks/AR-0315-provider-parity-conformance.md), [AR-0316](tasks/AR-0316-agent-runtime-bundles.md), [AR-0511](tasks/AR-0511-replay-qwen.md) |
 | [AR-0307](tasks/AR-0307-agent-goose.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0103](tasks/AR-0103-sandbox-runtime.md) | [AR-0311](tasks/AR-0311-provider-openai.md), [AR-0312](tasks/AR-0312-provider-ollama.md), [AR-0315](tasks/AR-0315-provider-parity-conformance.md), [AR-0316](tasks/AR-0316-agent-runtime-bundles.md), [AR-0512](tasks/AR-0512-replay-goose.md) |
 | [AR-0308](tasks/AR-0308-agent-mini-swe.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0103](tasks/AR-0103-sandbox-runtime.md) | [AR-0311](tasks/AR-0311-provider-openai.md), [AR-0312](tasks/AR-0312-provider-ollama.md), [AR-0315](tasks/AR-0315-provider-parity-conformance.md), [AR-0316](tasks/AR-0316-agent-runtime-bundles.md), [AR-0513](tasks/AR-0513-replay-miniswe.md) |
-| [AR-0309](tasks/AR-0309-agent-openhands.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0103](tasks/AR-0103-sandbox-runtime.md) | [AR-0311](tasks/AR-0311-provider-openai.md), [AR-0312](tasks/AR-0312-provider-ollama.md), [AR-0315](tasks/AR-0315-provider-parity-conformance.md), [AR-0316](tasks/AR-0316-agent-runtime-bundles.md), [AR-0514](tasks/AR-0514-replay-openhands.md) |
+| [AR-0309](tasks/AR-0309-agent-openhands.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0103](tasks/AR-0103-sandbox-runtime.md) | [AR-0311](tasks/AR-0311-provider-openai.md), [AR-0312](tasks/AR-0312-provider-ollama.md), [AR-0315](tasks/AR-0315-provider-parity-conformance.md), [AR-0316](tasks/AR-0316-agent-runtime-bundles.md), [AR-0514](tasks/AR-0514-replay-openhands.md), [AR-0521](tasks/AR-0521-openhands-environment-pin.md) |
 | [AR-0310](tasks/AR-0310-provider-profile-contract.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-1001](tasks/AR-1001-experiment-comparability.md) | [AR-0311](tasks/AR-0311-provider-openai.md), [AR-0312](tasks/AR-0312-provider-ollama.md), [AR-0314](tasks/AR-0314-recording-source-choice.md) |
 | [AR-0311](tasks/AR-0311-provider-openai.md) | [AR-0301](tasks/AR-0301-agent-opencode.md), [AR-0302](tasks/AR-0302-agent-opendesk.md), [AR-0303](tasks/AR-0303-agent-aider.md), [AR-0304](tasks/AR-0304-agent-codex.md), [AR-0305](tasks/AR-0305-agent-gemini.md), [AR-0306](tasks/AR-0306-agent-qwen-code.md), [AR-0307](tasks/AR-0307-agent-goose.md), [AR-0308](tasks/AR-0308-agent-mini-swe.md), [AR-0309](tasks/AR-0309-agent-openhands.md), [AR-0310](tasks/AR-0310-provider-profile-contract.md) | [AR-0313](tasks/AR-0313-all-agents-provider.md), [AR-0315](tasks/AR-0315-provider-parity-conformance.md) |
 | [AR-0312](tasks/AR-0312-provider-ollama.md) | [AR-0301](tasks/AR-0301-agent-opencode.md), [AR-0302](tasks/AR-0302-agent-opendesk.md), [AR-0303](tasks/AR-0303-agent-aider.md), [AR-0304](tasks/AR-0304-agent-codex.md), [AR-0305](tasks/AR-0305-agent-gemini.md), [AR-0306](tasks/AR-0306-agent-qwen-code.md), [AR-0307](tasks/AR-0307-agent-goose.md), [AR-0308](tasks/AR-0308-agent-mini-swe.md), [AR-0309](tasks/AR-0309-agent-openhands.md), [AR-0310](tasks/AR-0310-provider-profile-contract.md) | [AR-0313](tasks/AR-0313-all-agents-provider.md), [AR-0315](tasks/AR-0315-provider-parity-conformance.md) |
@@ -652,13 +655,14 @@ flowchart LR
 | [AR-0511](tasks/AR-0511-replay-qwen.md) | [AR-0306](tasks/AR-0306-agent-qwen-code.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0504](tasks/AR-0504-replay-pacing.md) | [AR-0515](tasks/AR-0515-replay-matrix.md) |
 | [AR-0512](tasks/AR-0512-replay-goose.md) | [AR-0307](tasks/AR-0307-agent-goose.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0504](tasks/AR-0504-replay-pacing.md) | [AR-0515](tasks/AR-0515-replay-matrix.md) |
 | [AR-0513](tasks/AR-0513-replay-miniswe.md) | [AR-0308](tasks/AR-0308-agent-mini-swe.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0504](tasks/AR-0504-replay-pacing.md) | [AR-0515](tasks/AR-0515-replay-matrix.md) |
-| [AR-0514](tasks/AR-0514-replay-openhands.md) | [AR-0309](tasks/AR-0309-agent-openhands.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0504](tasks/AR-0504-replay-pacing.md) | [AR-0515](tasks/AR-0515-replay-matrix.md) |
+| [AR-0514](tasks/AR-0514-replay-openhands.md) | [AR-0309](tasks/AR-0309-agent-openhands.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0504](tasks/AR-0504-replay-pacing.md) | [AR-0515](tasks/AR-0515-replay-matrix.md), [AR-0521](tasks/AR-0521-openhands-environment-pin.md) |
 | [AR-0515](tasks/AR-0515-replay-matrix.md) | [AR-0506](tasks/AR-0506-replay-opencode.md), [AR-0507](tasks/AR-0507-replay-opendesk.md), [AR-0508](tasks/AR-0508-replay-aider.md), [AR-0509](tasks/AR-0509-replay-codex.md), [AR-0510](tasks/AR-0510-replay-gemini.md), [AR-0511](tasks/AR-0511-replay-qwen.md), [AR-0512](tasks/AR-0512-replay-goose.md), [AR-0513](tasks/AR-0513-replay-miniswe.md), [AR-0514](tasks/AR-0514-replay-openhands.md) | None |
 | [AR-0516](tasks/AR-0516-opendesk-strict-replay-http-compatibility.md) | [AR-0302](tasks/AR-0302-agent-opendesk.md), [AR-0502](tasks/AR-0502-replay-cassettes.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0504](tasks/AR-0504-replay-pacing.md) | None |
 | [AR-0517](tasks/AR-0517-redacted-request-pointer-replay.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0502](tasks/AR-0502-replay-cassettes.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0504](tasks/AR-0504-replay-pacing.md) | [AR-0518](tasks/AR-0518-gemini-generate-content-replay.md), [AR-0520](tasks/AR-0520-interaction-aware-redaction.md) |
 | [AR-0518](tasks/AR-0518-gemini-generate-content-replay.md) | [AR-0502](tasks/AR-0502-replay-cassettes.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0517](tasks/AR-0517-redacted-request-pointer-replay.md) | [AR-0519](tasks/AR-0519-gemini-thinking-config-contract.md) |
 | [AR-0519](tasks/AR-0519-gemini-thinking-config-contract.md) | [AR-0518](tasks/AR-0518-gemini-generate-content-replay.md) | None |
 | [AR-0520](tasks/AR-0520-interaction-aware-redaction.md) | [AR-0502](tasks/AR-0502-replay-cassettes.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0517](tasks/AR-0517-redacted-request-pointer-replay.md) | None |
+| [AR-0521](tasks/AR-0521-openhands-environment-pin.md) | [AR-0309](tasks/AR-0309-agent-openhands.md), [AR-0514](tasks/AR-0514-replay-openhands.md) | None |
 | [AR-0601](tasks/AR-0601-csb-integration.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0603](tasks/AR-0603-csb-execution-assurance.md) | [AR-0405](tasks/AR-0405-performance-workloads.md), [AR-0602](tasks/AR-0602-csb-monitoring-contention.md), [AR-0604](tasks/AR-0604-csb-native-qualification.md) |
 | [AR-0602](tasks/AR-0602-csb-monitoring-contention.md) | [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0202](tasks/AR-0202-kernel-diagnostics.md), [AR-0601](tasks/AR-0601-csb-integration.md), [AR-0604](tasks/AR-0604-csb-native-qualification.md) | None |
 | [AR-0603](tasks/AR-0603-csb-execution-assurance.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0104](tasks/AR-0104-durable-results.md) | [AR-0601](tasks/AR-0601-csb-integration.md) |
@@ -755,11 +759,12 @@ flowchart LR
 | P1 | [AR-0702](tasks/AR-0702-native-platforms.md): Validate native Linux kernels and architectures | Unclaimed | Exercise native x86_64 and aarch64 including booted openEuler kernels. | Keep reviewed PR #31 head bdaf9c108226f34ec6098f75b51fd601da9e9571 immutable and green; await AR-0703 genuine Debian/openEuler x86_64/aarch64 lab capacity before completing remaining native qualification and AR-0702. |
 | P1 | [AR-0703](tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Provide genuine disposable native hosts for required Debian and openEuler platform qualification. | Obtain explicit provider/account and cost authorization, least-privilege external credentials, quotas, and four genuine disposable Debian 13.6/openEuler 24.03 LTS-SP2 x86_64/aarch64 hosts; then implement reservation/provision/collect/destroy evidence without emulation. |
 
-### Planned (46)
+### Planned (47)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0515](tasks/AR-0515-replay-matrix.md): Aggregate replay conformance matrix | Unclaimed | Aggregate complete per-agent replay conformance. | Aggregate per-agent replay evidence into the complete supported-agent conformance matrix. |
+| P0 | [AR-0521](tasks/AR-0521-openhands-environment-pin.md): Reproduce and pin the OpenHands replay environment | Unclaimed | Repair OpenHands replay environment provenance and reproducibility. | Define an immutable, reproducible OpenHands environment bundle and verifier. |
 | P0 | [AR-0837](tasks/AR-0837-containerized-runner-boundary.md): Qualify containerized runner boundary | Unclaimed | Provide the containerized workflow boundary required for safe trusted runner claims. | Define and qualify a digest-pinned workflow container boundary separating operator, listener, and job principals without host mounts. |
 | P1 | [AR-0311](tasks/AR-0311-provider-openai.md): Support a shared OpenAI provider | Unclaimed | Apply one default OpenAI provider profile consistently to all supported agents. | Implement the default OpenAI provider profile for every adapter that proves compatible support. |
 | P1 | [AR-0313](tasks/AR-0313-all-agents-provider.md): Configure one provider for all agents | Unclaimed | Let test plans select one provider profile for every chosen supported agent atomically. | Add atomic all-agent provider selection with complete preflight capability reporting. |
