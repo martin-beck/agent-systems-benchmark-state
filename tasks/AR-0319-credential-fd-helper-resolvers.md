@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add explicit file-descriptor and helper credential references without ambient-secret fallback.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Implement credential FD and helper resolvers",
-  "updated_at": "2026-09-08T18:43:46+00:00",
+  "updated_at": "2026-09-08T19:13:27+00:00",
   "worktree_key": "agent-systems-benchmark-credential-fd-helper-resolvers"
 }
 ---
@@ -246,3 +246,6 @@ Implementation has not started. Read the linked plan before claiming.
   file or directory, despite the pinned real cargo binary being present; this candidate does not
   change formal harnesses and hosted formal CI must provide the independent Kani result. No product
   blocker found; ready for immutable review, not publication.
+
+- 2026-09-08T19:13:27+00:00: Recorded command exit 127; command argv SHA-256
+  3999ff83e280359932d71c7acb8e3a4eb73ae340e5bd3b9cebcf2200a93ade03.
