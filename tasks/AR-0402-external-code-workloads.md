@@ -9,7 +9,7 @@
   "id": "AR-0402",
   "next_action": "Define content-addressed external source manifests for SWE-bench 02e7a74ffd0b707aab73d203fe87bdc7c76afc8e and Polyglot 7e0611e77b54e2dea774cdc0aa00cf9f7ed6144f; include Exercism cpp 413b80a9, go 97472cfe, java f1b22a3d, javascript 9be84b9e, python 1f6aab86, rust 1d3a0f46 (all MIT), then pin evaluator/image metadata.",
   "observed_branch": "feature/external-code-workloads",
-  "observed_dirty": 0,
+  "observed_dirty": 3,
   "observed_head": "123c58f7a971f210873124fccb31daa16139aab4",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0402.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T10:26:19+00:00",
+  "updated_at": "2026-09-08T11:24:41+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
