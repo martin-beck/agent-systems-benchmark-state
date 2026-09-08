@@ -7,7 +7,7 @@
     "AR-0401"
   ],
   "id": "AR-0402",
-  "next_action": "Integrate planner/materializer into the production workload API and add a qualified disposable evaluator fixture only after independent image/SBOM evidence.",
+  "next_action": "Wait for PR #79 exact-head CI; independently review all green checks before merge.",
   "observed_branch": "feature/external-code-workloads",
   "observed_dirty": 0,
   "observed_head": "2590dc3eb7704a6a8d5afbe25fe138819fce03fd",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 97,
+  "task_revision": 98,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:30:44+00:00",
+  "updated_at": "2026-09-08T12:31:01+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -274,3 +274,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T12:30:37+00:00: Recorded command exit 0; command argv SHA-256
   56885c06c83f6fbe51b0b77b792b5b37db8540fa82ac16ba8629c12cf659b05f.
+
+- 2026-09-08T12:31:01+00:00: PR #79 policy gate found missing SPDX header on offline evaluator
+  fixture; fixed in signed commit 2590dc3 and pushed. This was a narrow policy defect; exact-head CI
+  restarted at 2590dc3. Do not repeat the prior failed run.
