@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Import terminal tasks through an adapter to the published harness or task format.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Integrate Terminal-Bench workloads",
-  "updated_at": "2026-09-08T17:31:31+00:00",
+  "updated_at": "2026-09-08T17:48:12+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-workloads"
 }
 ---
@@ -221,3 +221,6 @@ Implementation has not started. Read the linked plan before claiming.
   max_page_items. Required negatives and exact code evidence were sent to owner. Clean one-path
   scope, SSH signature/DCO, privacy, focused 11 tests, fmt/clippy, exact-range repository policy,
   diff-check and Gitleaks were independently reproduced green. No AR-0805 product path was mutated.
+
+- 2026-09-08T17:48:12+00:00: Recorded command exit 0; command argv SHA-256
+  eb7605a5503bfa0036af77f96a730ad0041d47fbe579d9b88af15c49d4c8aa76.
