@@ -26,9 +26,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply one pinned local Ollama provider and model configuration to all supported agents.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Support a shared local Ollama provider",
-  "updated_at": "2026-09-08T09:22:52+00:00",
+  "updated_at": "2026-09-08T09:22:54+00:00",
   "worktree_key": "agent-systems-benchmark-provider-ollama"
 }
 ---
@@ -84,3 +84,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T09:22:35+00:00: Recorded command exit 0; command argv SHA-256
   94c19eb37eb103c96ea736b32b92c7cc293c88f77f5a0e93fdb5706d05b45056.
+
+- 2026-09-08T09:22:54+00:00: Recorded command exit 0; command argv SHA-256
+  7cb5d8dadb276593f19c9551b1f3c1560a89f5b9733f5952001d2d8092acb0d9.
