@@ -10,7 +10,7 @@
     "AR-0801"
   ],
   "id": "AR-0869",
-  "next_action": "Publish exact candidate 0d9d317716d557b916e4da7022f58197d287987a as a focused PR, require all hosted exact-head gates, then integrate only after green review and post-merge checks.",
+  "next_action": "Merge PR #88 exact head 0d9d317716d557b916e4da7022f58197d287987a into base 559fbcc825234bb98a64ba554a53f38b004d24f6 using the signed no-ff coordinator path; then run exact-main post-merge gates before release.",
   "observed_branch": "feature/cli-multi-agent-provider-selection",
   "observed_dirty": 0,
   "observed_head": "0d9d317716d557b916e4da7022f58197d287987a",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Select several agents and apply one preconfigured provider profile through inspectable command-line options.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Add CLI multi-agent provider selection",
-  "updated_at": "2026-09-08T22:33:15+00:00",
+  "updated_at": "2026-09-08T22:38:36+00:00",
   "worktree_key": "agent-systems-benchmark-cli-multi-agent-provider-selection"
 }
 ---
@@ -300,3 +300,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T22:33:15+00:00: Recorded command exit 0; command argv SHA-256
   463384de3467da61fd2e6cd271bf2f8621ad882888c73939ca5469292e9daeb0.
+
+- 2026-09-08T22:38:36+00:00: PR #88 exact-head hosted CI is fully green and PR is OPEN/MERGEABLE at
+  immutable head 0d9d317716d557b916e4da7022f58197d287987a over base
+  559fbcc825234bb98a64ba554a53f38b004d24f6. All listed Rust, quality, formal, fault, portability,
+  headers, and AWQ checks completed SUCCESS. Coordinator authorizes merge followed by exact-main
+  post-merge verification.
