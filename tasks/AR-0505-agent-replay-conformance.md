@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Test each actual client through recording and offline replay of engineering tasks.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Prove real-agent replay conformance",
-  "updated_at": "2026-09-08T01:59:11+00:00",
+  "updated_at": "2026-09-08T01:59:13+00:00",
   "worktree_key": "agent-systems-benchmark-agent-replay-conformance"
 }
 ---
@@ -52,3 +52,6 @@ Implementation has not started. Read the linked plan before claiming.
   synthetic-upstream matrix in the distinct preserved worktree before claiming acceptance evidence.
 
 - 2026-09-08T01:58:03+00:00: Claimed by quality_20260906.
+
+- 2026-09-08T01:59:13+00:00: Recorded command exit 0; command argv SHA-256
+  b7c438686581cf292b6cd41497ceabb3af42dfed57e04dfd6cc89efed8e2d15b.
