@@ -15,11 +15,11 @@
   "plan": "../plans/AR-0855.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Enforce Huawei MIT source headers",
-  "updated_at": "2026-09-08T15:23:28+00:00",
+  "updated_at": "2026-09-08T15:36:34+00:00",
   "worktree_key": "agent-systems-benchmark-huawei-mit-headers"
 }
 ---
@@ -192,3 +192,6 @@ and fresh coordinator snapshot before claiming. Do not modify vendored coordinat
   signed release, then add/check the state-owned source headers and dedicated state CI in a focused
   state PR. GitHub commit verification remains unknown_key until the established public SSH signing
   key is registered.
+
+- 2026-09-08T15:36:34+00:00: Resume only for independent immutable-head review of product PR 82;
+  preserve implementation and state-vendor blocker.
