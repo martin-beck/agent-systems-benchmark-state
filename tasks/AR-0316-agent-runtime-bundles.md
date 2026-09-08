@@ -15,7 +15,7 @@
     "AR-0309"
   ],
   "id": "AR-0316",
-  "next_action": "Extend the fail-closed nine-agent catalog from top-level pins to complete per-component dependency nodes sourced from each retained lock/provenance record; do not mark any closure complete or redistribute until manifest, SBOM, license, and reproducibility evidence agree. Request serialized schema/release/platform fences only after crate-local closure tests are ready.",
+  "next_action": "Monitor PR #77 exact head 1249fd87d46d54556bca835fcc3e6570df15cc2c; investigate any exact-head failure and do not merge without coordinator authorization.",
   "observed_branch": "feature/agent-runtime-bundles",
   "observed_dirty": 0,
   "observed_head": "1249fd87d46d54556bca835fcc3e6570df15cc2c",
@@ -25,9 +25,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make supported agent installations reproducible, license-audited, SBOM-backed, and independently verifiable.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Publish reproducible agent runtime bundles",
-  "updated_at": "2026-09-08T11:39:26+00:00",
+  "updated_at": "2026-09-08T11:39:55+00:00",
   "worktree_key": "agent-systems-benchmark-agent-runtime-bundles"
 }
 ---
@@ -112,3 +112,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T11:39:26+00:00: Recorded command exit 0; command argv SHA-256
   fa8cf073c93cfc06c2ada10bb4d1d0b2c0926e9105c89056c4ab5a79b14fa505.
+
+- 2026-09-08T11:39:55+00:00: Independent review approved exact candidate
+  1249fd87d46d54556bca835fcc3e6570df15cc2c. Published focused PR #77
+  https://github.com/martin-beck/agent-systems-benchmark/pull/77 with exact immutable head and
+  mergeable status. Exact-head runs: Rust 34221835110, aarch64 34221835129, fault 34221835166,
+  quality 34221835167, AWQ shadow 34221835172, formal 34221835631. AWQ shadow is green; all other
+  workflows are in progress or queued at observation. No merge performed.
