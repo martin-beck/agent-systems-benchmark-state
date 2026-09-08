@@ -2,7 +2,7 @@
 {
   "branch": "feature/cli-multi-agent-provider-selection",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T01:17:00+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0313",
     "AR-0318",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/cli-multi-agent-provider-selection",
   "observed_dirty": 0,
   "observed_head": "0d9d317716d557b916e4da7022f58197d287987a",
-  "owner": "replay_20260906",
+  "owner": "",
   "plan": "../plans/AR-0869.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Select several agents and apply one preconfigured provider profile through inspectable command-line options.",
-  "task_revision": 96,
+  "task_revision": 97,
   "title": "Add CLI multi-agent provider selection",
-  "updated_at": "2026-09-08T22:53:29+00:00",
+  "updated_at": "2026-09-08T22:53:49+00:00",
   "worktree_key": "agent-systems-benchmark-cli-multi-agent-provider-selection"
 }
 ---
@@ -356,3 +356,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T22:53:29+00:00: Recorded command exit 0; command argv SHA-256
   0f16c71cb140f5fe924191201bfdc5be8dc67e6a601897c41c285a821206f3d0.
+
+- 2026-09-08T22:53:49+00:00: AR-0869 complete. Reviewed SSH-signed candidate 0d9d317 was published
+  as PR #88 and exact-head CI passed. GitHub non-DCO merge 7571592 was diagnosed and replaced by
+  signed+DCO merge a369638 with identical tree and exact parents under force-with-lease; signed
+  CI-provenance attestation 4cad746 provided a reachable push base. Fresh exact-main runs passed:
+  repository quality 34287557162, Rust 34287557140, formal 34287557113 attempt 2 after one hosted
+  403 download retry, fault 34287557160, emulated aarch64 34287557165, and headers 34287557131.
+  Local post-merge fmt, workspace tests, Clippy, rustdoc, release build, signature/DCO, repository
+  policy, and diff checks passed on the identical tree. Older historical GitHub merge-boundary DCO
+  limitations remain explicitly documented; no unrelated history was rewritten.
