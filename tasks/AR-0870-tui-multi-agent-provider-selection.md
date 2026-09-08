@@ -12,7 +12,7 @@
   "id": "AR-0870",
   "next_action": "Implement and qualify searchable TUI lists for multi-agent and shared provider-profile selection.",
   "observed_branch": "feature/tui-multi-agent-provider-selection",
-  "observed_dirty": 1,
+  "observed_dirty": 2,
   "observed_head": "2219839812d9255288b8b4e0afc52396915e85a6",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0870.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Choose several agents and one preconfigured provider for all of them from negotiated TUI selection lists.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Add TUI multi-agent provider selection",
-  "updated_at": "2026-09-08T23:39:14+00:00",
+  "updated_at": "2026-09-08T23:39:21+00:00",
   "worktree_key": "agent-systems-benchmark-tui-multi-agent-provider-selection"
 }
 ---
