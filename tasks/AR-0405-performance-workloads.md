@@ -15,11 +15,11 @@
   "plan": "../plans/AR-0405.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Assess SWE-Perf, SWE-fficiency and CORE-Bench for correctness-preserving optimization and reproducibility.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Add performance and reproducibility workloads",
-  "updated_at": "2026-09-06T15:06:27+00:00",
+  "updated_at": "2026-09-08T21:06:46+00:00",
   "worktree_key": "agent-systems-benchmark-performance-workloads"
 }
 ---
@@ -28,3 +28,10 @@
 Assess SWE-Perf, SWE-fficiency and CORE-Bench for correctness-preserving optimization and reproducibility.
 
 Implementation has not started. Read the linked plan before claiming.
+
+- 2026-09-08T21:06:46+00:00: Dependencies AR-0401, AR-0601, AR-1002, and AR-1007 are durably done.
+  Selected as the highest-priority compatible unclaimed leaf after AR-0869 was concurrently claimed:
+  P1 AR-0819 overlaps active AR-0806 frontend paths, AR-0832 lacks plan-required
+  AR-0703/native-isolation capacity, and AR-0704 lacks explicit provider/account/cost authorization.
+  AR-0405 owns isolated asb-workloads performance/reproducibility plugin paths; shared Cargo/schema
+  changes remain separately fenced.
