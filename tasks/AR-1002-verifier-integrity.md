@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate immutable graders from agent work and version scoring independently of execution.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Protect verifiers and support offline rescoring",
-  "updated_at": "2026-09-08T00:44:54+00:00",
+  "updated_at": "2026-09-08T00:44:57+00:00",
   "worktree_key": "agent-systems-benchmark-verifier-integrity"
 }
 ---
@@ -38,3 +38,6 @@ Implementation has not started. Read the linked plan before claiming.
   evidence. Declared branch, worktree, remote ref, and related processes are absent.
 
 - 2026-09-08T00:44:48+00:00: Claimed by replay_20260906.
+
+- 2026-09-08T00:44:57+00:00: Recorded command exit 0; command argv SHA-256
+  bdcaa9f19a30302c554a18a1e3bb84e9045c77088ffcbebc5ef28be0f0f65159.
