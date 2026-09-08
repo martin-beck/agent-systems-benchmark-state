@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 3 |
+| **In progress** | Claimed work with a live lease | 3 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 47 |
 | **Future** | Deferred roadmap work | 0 |
@@ -170,7 +170,7 @@ flowchart LR
         AR_0852["AR-0852 - Done"]:::status_done
         AR_0853["AR-0853 - Done"]:::status_done
         AR_0854["AR-0854 - Done"]:::status_done
-        AR_0855["AR-0855 - Open"]:::status_open
+        AR_0855["AR-0855 - In progress"]:::status_in_progress
         AR_0856["AR-0856 - Planned"]:::status_planned
         AR_0857["AR-0857 - Planned"]:::status_planned
         AR_0858["AR-0858 - Planned"]:::status_planned
@@ -805,18 +805,18 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0319](tasks/AR-0319-credential-fd-helper-resolvers.md): Implement credential FD and helper resolvers | replay_20260906 | Add explicit file-descriptor and helper credential references without ambient-secret fallback. | Obtain fresh independent immutable review of exact 75094148 repair package; publish only after approval and hosted exact-head Kani/formal CI. |
 | P1 | [AR-0805](tasks/AR-0805-tui-run-control.md): Add terminal run control and status | quality_20260906 | Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI. | Fresh independent immutable review of rebased candidate b44282a31e902175059f9fed350ce888cf4b82ec, tree 7a7732eae29be65f55b40ed3b6239533fac470fc, exact parent 32f79101da348896fdf0fd94c07356889a05b693. If approved, guarded force-with-lease update PR #86 and require fresh exact-head CI before merge. |
+| P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | codex-asb-state-headers-v033 | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Wait for a corrected immutable agent-workflow-coordinator v0.3.3+ release whose privacy exemption admits the legitimate session-like UUID fixture in vendored tests/test_sqlite_storage.py; then re-sync from a clean verified tag and continue state-owned header/checker/CI work without patching vendor. |
 
-### Open (3)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | Unclaimed | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Wait for a corrected immutable agent-workflow-coordinator v0.3.3+ release whose privacy exemption admits the legitimate session-like UUID fixture in vendored tests/test_sqlite_storage.py; then re-sync from a clean verified tag and continue state-owned header/checker/CI work without patching vendor. |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary. |
 | P2 | [AR-0403](tasks/AR-0403-terminal-workloads.md): Integrate Terminal-Bench workloads | Unclaimed | Import terminal tasks through an adapter to the published harness or task format. | Monitor PR #85 exact head 76e01e9372ca80759eb71b42913c383ccbb6c9ad checks to terminal; investigate any failure and do not merge without coordinator authorization. Preserve explicit no-native/no-execution qualification limits. |
 
