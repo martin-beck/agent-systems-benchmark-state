@@ -2,7 +2,7 @@
 {
   "branch": "test/provider-parity-conformance",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-08T18:08:44+00:00",
   "depends_on": [
     "AR-0301",
     "AR-0302",
@@ -21,15 +21,15 @@
   ],
   "id": "AR-0315",
   "next_action": "Prove provider-setting parity and replay/live selection across every supported agent.",
-  "owner": "",
+  "owner": "quality_20260906",
   "plan": "../plans/AR-0315.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Conformance-test identical OpenAI and Ollama profiles across the complete supported-agent matrix.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Verify cross-agent provider parity",
-  "updated_at": "2026-09-08T15:08:37+00:00",
+  "updated_at": "2026-09-08T15:08:44+00:00",
   "worktree_key": "agent-systems-benchmark-provider-parity-conformance"
 }
 ---
@@ -41,3 +41,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T15:08:37+00:00: Coordinator verified all declared dependencies are durably done and
   integrated; promote provider parity conformance for safe worker assignment.
+
+- 2026-09-08T15:08:44+00:00: Claimed by quality_20260906.
