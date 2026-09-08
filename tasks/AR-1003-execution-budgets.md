@@ -2,7 +2,7 @@
 {
   "branch": "feature/execution-budgets",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T11:34:25+00:00",
+  "claim_expires": "2026-09-08T12:58:16+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0301",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bound and report wall time, actions, tokens and monetary cost without treating unavailable telemetry as zero.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Enforce cost token and action budgets",
-  "updated_at": "2026-09-08T09:58:03+00:00",
+  "updated_at": "2026-09-08T09:58:16+00:00",
   "worktree_key": "agent-systems-benchmark-execution-budgets"
 }
 ---
@@ -85,3 +85,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T09:58:03+00:00: Recorded command exit 0; command argv SHA-256
   76f35bfbd17a916b9b50552187e4c24353106f6038970389a7054c77a1347efe.
+
+- 2026-09-08T09:58:16+00:00: Heartbeat by replay_20260906.
