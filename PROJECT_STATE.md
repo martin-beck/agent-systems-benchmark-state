@@ -17,11 +17,11 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34238840052 | `33f30cb7d88a` | push | Fault assurance | in_progress:- |
-| 34238840007 | `33f30cb7d88a` | push | Repository quality | in_progress:- |
-| 34238839954 | `33f30cb7d88a` | push | Rust verification | in_progress:- |
-| 34238839835 | `33f30cb7d88a` | push | Emulated aarch64 portability | in_progress:- |
-| 34238839714 | `33f30cb7d88a` | push | Formal assurance | in_progress:- |
+| 34238840052 | `33f30cb7d88a` | push | Fault assurance | completed:success |
+| 34238840007 | `33f30cb7d88a` | push | Repository quality | completed:success |
+| 34238839954 | `33f30cb7d88a` | push | Rust verification | completed:success |
+| 34238839835 | `33f30cb7d88a` | push | Emulated aarch64 portability | completed:success |
+| 34238839714 | `33f30cb7d88a` | push | Formal assurance | completed:success |
 | 34238172604 | `0f92642fc870` | pull_request | Rust verification | completed:success |
 | 34238172543 | `0f92642fc870` | pull_request | Emulated aarch64 portability | completed:success |
 | 34238172539 | `0f92642fc870` | pull_request | Repository quality | completed:success |
