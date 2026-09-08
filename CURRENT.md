@@ -9,13 +9,13 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0319](tasks/AR-0319-credential-fd-helper-resolvers.md): Implement credential FD and helper resolvers | Add explicit file-descriptor and helper credential references without ambient-secret fallback. | Request independent immutable review of exact d2e08d8d; do not publish until approved. Local Kani remains an explicit environment-only limitation; hosted formal CI must run it. | replay_20260906 |
 | P1 | [AR-0805](tasks/AR-0805-tui-run-control.md): Add terminal run control and status | Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI. | Coordinator independent review/merge authorization for PR #86 exact head da0d21b9c403c960e1eaac979ad22cb34932febe. All exact-head checks are terminal success; do not merge until the signed pin-repair successor is accepted. | quality_20260906 |
+| P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Wait for a corrected immutable agent-workflow-coordinator v0.3.2+ release, then hash-locked vendor-sync it and implement/verify the remaining state-owned Huawei MIT headers, checker tests, and dedicated CI without hand-editing vendor. | codex-asb-state-headers-v032 |
 | P2 | [AR-0403](tasks/AR-0403-terminal-workloads.md): Integrate Terminal-Bench workloads | Import terminal tasks through an adapter to the published harness or task format. | Monitor PR #85 exact head 76e01e9372ca80759eb71b42913c383ccbb6c9ad checks to terminal; investigate any failure and do not merge without coordinator authorization. Preserve explicit no-native/no-execution qualification limits. | contracts_20260906 |
 
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Wait for a corrected immutable agent-workflow-coordinator v0.3.2+ release, then hash-locked vendor-sync it and implement/verify the remaining state-owned Huawei MIT headers, checker tests, and dedicated CI without hand-editing vendor. | - |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary. | - |
 
 ## Blocked
