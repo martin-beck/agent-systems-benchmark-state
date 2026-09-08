@@ -16,7 +16,7 @@
     "AR-0310"
   ],
   "id": "AR-0312",
-  "next_action": "Monitor exact-head CI for PR #71 at e49acbf455f6ca745bfd3119c729d6326904b67b; stop before merge pending coordinator authorization.",
+  "next_action": "Monitor fresh exact-head CI for PR #71 at rebased 8137f5baa0535e5d6e74d5a81e1dfbb0deaa2615; do not merge pending coordinator review.",
   "observed_branch": "feature/provider-ollama",
   "observed_dirty": 0,
   "observed_head": "8137f5baa0535e5d6e74d5a81e1dfbb0deaa2615",
@@ -26,9 +26,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply one pinned local Ollama provider and model configuration to all supported agents.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Support a shared local Ollama provider",
-  "updated_at": "2026-09-08T09:36:40+00:00",
+  "updated_at": "2026-09-08T09:37:10+00:00",
   "worktree_key": "agent-systems-benchmark-provider-ollama"
 }
 ---
@@ -130,3 +130,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T09:36:40+00:00: Recorded command exit 0; command argv SHA-256
   198084808dabb7fd8ae1e0aaddfc81aade6ccb23d2701235df3f9de90a6b219a.
+
+- 2026-09-08T09:37:10+00:00: Old e49acbf exact-head CI completed fully green but was not merged.
+  Rebased the unchanged patch exactly once onto current main
+  d56052d64b1e13b42a36e557b6a772381576a5bd, re-signed it, and verified stable patch-id/range-diff
+  equality, exact DCO, clean three-path scope. New head 8137f5baa0535e5d6e74d5a81e1dfbb0deaa2615,
+  tree d695c40e4e2ecb196ff91fc002a7d0000692ace3. Focused fmt/unit/clippy pass after rebase. Exact
+  force-with-lease from remote e49acbf succeeded. Fresh runs: AWQ 34210946467 green; aarch64
+  34210946553, fault 34210946567, formal 34210946636, quality 34210946830, Rust 34210946865 in
+  progress.
