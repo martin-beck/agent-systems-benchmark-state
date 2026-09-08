@@ -12,17 +12,17 @@
   "id": "AR-0870",
   "next_action": "Push signed repair b3c19b1 with force-with-lease, then rerun exact-head PR checks; do not merge until all required jobs pass.",
   "observed_branch": "feature/tui-multi-agent-provider-selection",
-  "observed_dirty": 1,
-  "observed_head": "6c13a324e38f913e3085db32a6e1a2b8c48c6d38",
+  "observed_dirty": 0,
+  "observed_head": "b3c19b10021a25cbc9a5c14e098067696fc34897",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0870.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Choose several agents and one preconfigured provider for all of them from negotiated TUI selection lists.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Add TUI multi-agent provider selection",
-  "updated_at": "2026-09-08T23:45:01+00:00",
+  "updated_at": "2026-09-08T23:45:09+00:00",
   "worktree_key": "agent-systems-benchmark-tui-multi-agent-provider-selection"
 }
 ---
