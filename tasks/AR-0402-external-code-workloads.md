@@ -7,7 +7,7 @@
     "AR-0401"
   ],
   "id": "AR-0402",
-  "next_action": "Add explicit acquired-source digest/oracle fixtures, then run applicable Rust/full gates when cargo is available.",
+  "next_action": "Add the production acquisition/materialization boundary and immutable evaluator/image provenance, then run Rust/full gates when cargo is available.",
   "observed_branch": "feature/external-code-workloads",
   "observed_dirty": 0,
   "observed_head": "697af40e07a046f085505aef9746df54b7120f01",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:15:27+00:00",
+  "updated_at": "2026-09-08T12:15:40+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -182,3 +182,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T12:15:21+00:00: Recorded command exit 0; command argv SHA-256
   f8b4ebadf71b949e9f39f03734e4a6f8a26df68644e109e3b7efac3b0cf4c159.
+
+- 2026-09-08T12:15:40+00:00: Added signed product commit 697af40 with an offline evaluator
+  acquisition fixture, content-addressed SHA-256 manifest, and positive/tamper-negative oracle
+  tests. Focused workload validation now passes 4/4. This proves only the offline fixture boundary;
+  no live dataset/evaluator acquisition or platform qualification is claimed.
