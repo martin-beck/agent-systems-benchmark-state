@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track dataset provenance, contamination risk, grader validity and native portability per workload revision.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Maintain benchmark validity and portability registry",
-  "updated_at": "2026-09-08T00:16:10+00:00",
+  "updated_at": "2026-09-08T00:16:33+00:00",
   "worktree_key": "agent-systems-benchmark-benchmark-validity"
 }
 ---
@@ -210,3 +210,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T00:16:10+00:00: Recorded command exit 0; command argv SHA-256
   214f96074e0e40ecb0a6db4b6e2038e5e78adf70193a72defafd4169ec364a9d.
+
+- 2026-09-08T00:16:33+00:00: Published immutable candidate 60a6c730457b4c40f9a025751c1e317d9fe9429d
+  with an absent-ref lease and verified the remote branch at that exact OID. Opened focused PR 59
+  against exact base 20ac1e507e678aff463ec5f6c7b37cfcd67a5ad0; GitHub reports it mergeable.
+  Exact-head runs started: Rust 34172766547, formal 34172766573, fault 34172766595, quality
+  34172766590, and emulated aarch64 34172766665. Hold integration until every exact-head check is
+  terminal green and coordinator authorizes.
