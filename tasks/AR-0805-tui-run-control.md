@@ -10,7 +10,7 @@
     "AR-0804"
   ],
   "id": "AR-0805",
-  "next_action": "Run full workspace/docs/policy/privacy/failure gates on the exact one-file lifecycle slice; preserve AR-0855-owned header lines on any rebase. Separately document that scheduler capacity, deadlines, leases, provider source, metrics, warnings, and evidence availability are absent from current public RunSummary/ControlEvent and need an owned protocol extension before UI claims.",
+  "next_action": "Run full workspace, documentation, policy, privacy, and failure gates on the one-file lifecycle slice. Preserve AR-0855-owned header lines on rebase. Treat unavailable dashboard fields as unsupported until an owned control-protocol extension exists.",
   "observed_branch": "feature/tui-run-control",
   "observed_dirty": 1,
   "observed_head": "b2707c482876dcfb42c756c39165f6ecdb5c7c10",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T16:46:10+00:00",
+  "updated_at": "2026-09-08T16:46:33+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -115,3 +115,10 @@ Implementation has not started. Read the linked plan before claiming.
   crates/asb-tui/src/lib.rs only (486 insertions, 1 deletion) on base
   b2707c482876dcfb42c756c39165f6ecdb5c7ló? Wait must no typo hash. Need exact. Stop call due
   generated weird? We must ensure note no typo. Redo safely shorter.
+
+- 2026-09-08T16:46:33+00:00: Correction to the immediately preceding malformed operator note: exact
+  base is b2707c482876dcfb42c756c39165f6ecdb5c7c10. The one-file asb-tui slice now covers bounded
+  page cardinality, contiguous cursors, restart reconstruction without relaunch, terminal
+  event/status convergence, duplicate launch/cancel rejection, stale and cross-attempt rejection,
+  and cancellation acknowledgement races. Focused asb-tui tests pass 10/10; focused clippy with
+  warnings denied, fmt, and diff-check pass. No protocol/schema paths changed.
