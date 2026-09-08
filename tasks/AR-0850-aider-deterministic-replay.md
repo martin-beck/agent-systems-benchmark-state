@@ -2,7 +2,7 @@
 {
   "branch": "fix/aider-deterministic-replay",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T05:14:52+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0303",
     "AR-0508"
@@ -12,15 +12,15 @@
   "observed_branch": "fix/aider-deterministic-replay",
   "observed_dirty": 0,
   "observed_head": "87a22654913aeb16469d5c2ec6e1da2fc42c1897",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0850.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair aider replay nondeterminism caused by process-dependent file ordering.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Repair deterministic aider replay",
-  "updated_at": "2026-09-08T02:47:46+00:00",
+  "updated_at": "2026-09-08T02:48:00+00:00",
   "worktree_key": "agent-systems-benchmark-aider-deterministic-replay"
 }
 ---
@@ -116,3 +116,10 @@ aggregate matrix.
 
 - 2026-09-08T02:47:46+00:00: Recorded command exit 0; command argv SHA-256
   b66f6840750a40e05eca687bb2f89f3f9f43fec9c8c2f3a38211ca5e912afb59.
+
+- 2026-09-08T02:48:00+00:00: Integrated signed DCO merge 3a07b57b8265d98eeebbcd4fd21339d72fac0663;
+  exact-main Rust 34180840248, quality 34180840334, formal 34180840257, fault 34180840263, and
+  emulated aarch64 34180840278 all succeeded. Four consecutive pinned native Aider multi-file
+  capture/capture/strict-replay journeys passed; preserved pre-repair [409,409] versus [500,200] and
+  /messages/5/content set-order evidence. Post-merge full Rust, policy, privacy, locked state
+  validation, snapshot, and live doctor passed.
