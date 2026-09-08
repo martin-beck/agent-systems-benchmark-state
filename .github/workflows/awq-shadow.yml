@@ -1,0 +1,34 @@
+name: Agent Workflow Quality shadow
+
+"on":
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  awq-shadow:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          repository: martin-beck/agent-workflow-quality
+          ref: 6ce0d051d20376e38311d244d77085ceecb4055b
+          persist-credentials: false
+          path: .awq-bundle
+      - name: Run pinned AWQ v0.1.0 in shadow mode
+        continue-on-error: true
+        env:
+          PYTHONPATH: ${{ github.workspace }}/.awq-bundle/src
+        run: |
+          set +e
+          python3 -m awq --root . doctor --format json
+          doctor_status=$?
+          python3 -m awq --root . check --tier pr --format json
+          check_status=$?
+          exit $((doctor_status || check_status))
