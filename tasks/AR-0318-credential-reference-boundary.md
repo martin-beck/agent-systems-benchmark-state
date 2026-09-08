@@ -8,7 +8,7 @@
     "AR-0310"
   ],
   "id": "AR-0318",
-  "next_action": "Add bounded FD/helper resolvers or formally amend the contract and acceptance evidence for explicitly unsupported sources; then rerun full AR gates.",
+  "next_action": "Coordinator decision required: formally amend AR-0318 outcome/acceptance to Environment-only support, or authorize separately specified private locator contracts before implementing FileDescriptor/Helper; do not release done under the current three-source plan.",
   "observed_branch": "feature/credential-reference-boundary",
   "observed_dirty": 0,
   "observed_head": "5d62546b5d5637574da4209bed96c52430fb0ff1",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve provider credential references without exposing secrets or accepting ambient credentials.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Implement the credential-reference boundary",
-  "updated_at": "2026-09-08T14:03:07+00:00",
+  "updated_at": "2026-09-08T14:03:37+00:00",
   "worktree_key": "agent-systems-benchmark-credential-reference-boundary"
 }
 ---
@@ -97,3 +97,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T14:03:07+00:00: Recorded command exit 0; command argv SHA-256
   90085c8280765b00650b4b06c6d3574952bd2f86798389942c7bf9e097136a33.
+
+- 2026-09-08T14:03:37+00:00: Acceptance audit after signed commits e9a0e523 and 5d62546: environment
+  resolver/process boundary is focused and full-workspace green, and README explicitly documents
+  FileDescriptor/Helper as unsupported fail-closed sources. This product documentation does not
+  amend the current AR plan, whose outcome still requires all three reference kinds. Implementing
+  FD/helper safely requires canonical private locator metadata plus one-shot FD owner/mode/type
+  semantics and a bounded helper protocol/deadline/cancellation/cleanup contract; those contracts do
+  not currently exist and must not be invented implicitly. Therefore AR-0318 remains in progress and
+  cannot be released done absent a coordinator plan amendment or separately reviewed resolver
+  contract.
