@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate immutable graders from agent work and version scoring independently of execution.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Protect verifiers and support offline rescoring",
-  "updated_at": "2026-09-08T04:12:33+00:00",
+  "updated_at": "2026-09-08T04:12:36+00:00",
   "worktree_key": "agent-systems-benchmark-verifier-integrity"
 }
 ---
@@ -96,3 +96,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T04:12:11+00:00: Recorded command exit 0; command argv SHA-256
   d20246736955349385fc98d5cb7cbe16c2275fe9f799c2ebd33989ec0537ff2a.
+
+- 2026-09-08T04:12:36+00:00: Recorded command exit 0; command argv SHA-256
+  863a18bab930cd798842128e8e9f64424527acfc9a870b07d9eb80511f5d63ff.
