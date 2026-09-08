@@ -3,32 +3,48 @@ name: Coordination verification
   push:
     branches: [main]
     paths:
+      - ".handoffctl.json"
+      - "coordinator.binding.json"
+      - "coordinator.vendor.json"
+      - "docs/agent-workflow-coordinator.md"
       - ".github/workflows/handoffctl-formal.yml"
       - ".github/workflows/verify.yml"
       - "formal/handoffctl/**"
       - "pyproject.toml"
+      - "schema/handoffctl-project-binding.schema.json"
+      - "schema/handoffctl-project-config.schema.json"
       - "schema/task.schema.json"
       - "tests/test_handoffctl.py"
-      - "tests/test_status_renderer.py"
+      - "tests/test_handoffctl_vendor.py"
       - "tests/validate_schema.py"
       - "tools/handoffctl"
       - "tools/handoffctl.py"
+      - "tools/handoffctl_vendor.py"
       - "tools/status_renderer.py"
       - "uv.lock"
+      - "vendor/agent-workflow-coordinator/**"
   pull_request:
     paths:
+      - ".handoffctl.json"
+      - "coordinator.binding.json"
+      - "coordinator.vendor.json"
+      - "docs/agent-workflow-coordinator.md"
       - ".github/workflows/handoffctl-formal.yml"
       - ".github/workflows/verify.yml"
       - "formal/handoffctl/**"
       - "pyproject.toml"
+      - "schema/handoffctl-project-binding.schema.json"
+      - "schema/handoffctl-project-config.schema.json"
       - "schema/task.schema.json"
       - "tests/test_handoffctl.py"
-      - "tests/test_status_renderer.py"
+      - "tests/test_handoffctl_vendor.py"
       - "tests/validate_schema.py"
       - "tools/handoffctl"
       - "tools/handoffctl.py"
+      - "tools/handoffctl_vendor.py"
       - "tools/status_renderer.py"
       - "uv.lock"
+      - "vendor/agent-workflow-coordinator/**"
   workflow_dispatch:
 permissions:
   contents: read
@@ -52,11 +68,13 @@ jobs:
           enable-cache: false
       - name: Locked quality environment
         run: uv sync --locked --only-group quality
+      - name: Verify pinned coordinator release
+        run: uv run python tools/handoffctl_vendor.py verify --target .
       - name: Formatting and typing
         run: |
           uv run ruff format --check tools tests
           uv run ruff check --no-fix tools tests
-          uv run mypy tools/handoffctl.py tools/status_renderer.py tests
+          uv run mypy tools/handoffctl.py tools/handoffctl_vendor.py tools/status_renderer.py tests
       - name: Fault tests and coverage
         run: |
           uv run coverage run --branch -m unittest discover -s tests -p 'test_*.py'

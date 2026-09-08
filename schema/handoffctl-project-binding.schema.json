@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/martin-beck/agent-workflow-coordinator/schema/project-binding.schema.json",
+  "title": "handoffctl permanent project binding",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "project_id", "state_repository", "product_repository"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "project_id": {"type": "string", "format": "uuid"},
+    "state_repository": {"type": "string", "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"},
+    "product_repository": {"type": "string", "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"}
+  }
+}

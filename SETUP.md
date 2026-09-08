@@ -4,6 +4,14 @@ Requires Python 3.12+, Git, GitHub CLI and the pinned uv quality environment.
 Use a shared checkout for local worker locking. All workers use their own product
 worktrees under the configured project root. The runtime config is ignored.
 
+The coordinator is pinned to signed upstream release v0.1.3. Run
+`python tools/handoffctl_vendor.py verify --target .` before operating or upgrading it, and read
+`docs/agent-workflow-coordinator.md` for the complete vendor workflow. `.handoffctl.json` and
+`coordinator.binding.json` were created by the one-time initialization and must remain paired. The
+tool fails closed if their immutable project UUIDs or repository identities differ, or if it is
+called outside this state checkout and the configured product checkout. There is no supported
+rebind operation.
+
 Create .runtime/config.json with private values for projects_root (absolute parent),
 product_worktree (agent-systems-benchmark), github_repository
 (martin-beck/agent-systems-benchmark), and push_enabled (true).
@@ -27,6 +35,7 @@ remote ref before retrying; preserve a durable local transition and reconcile it
 ```sh
 uv sync --locked --only-group quality
 uv run ruff format --check tools tests
+python tools/handoffctl_vendor.py verify --target .
 uv run ruff check --no-fix tools tests
 uv run mypy tools/handoffctl.py tools/status_renderer.py tests
 uv run coverage run --branch -m unittest discover -s tests -p 'test_*.py'
