@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate and qualify the frontend control API as an independent boundary.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Integrate frontend control API",
-  "updated_at": "2026-09-08T11:37:43+00:00",
+  "updated_at": "2026-09-08T11:38:47+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-api-integration"
 }
 ---
@@ -112,3 +112,6 @@ status, no implicit network listener exists, and exact-head CI/post-merge recove
   faults, mutation 7/7, coverage floors, contract consistency, actionlint/zizmor, cargo-deny/audit,
   quality failure fixtures, and platform manifest/tests all pass. No-range policy failure is
   inherited base commit 909078c and is excluded by the authoritative exact base..candidate pass.
+
+- 2026-09-08T11:38:47+00:00: Recorded command exit 0; command argv SHA-256
+  4b1cc29730f5fdc22f2168c1b3b1a548e66b108202ac6bcff43b771b9a27959e.
