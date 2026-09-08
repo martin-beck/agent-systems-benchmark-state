@@ -10,16 +10,16 @@
   "next_action": "Authorize one controlled signed rebase of repaired candidate 6501f7b onto exact current product main b2707c48; preserve six-path scope, rerun affected exact-tree gates, and retain explicit no-native/no-execution qualification limits.",
   "observed_branch": "feature/terminal-workloads",
   "observed_dirty": 0,
-  "observed_head": "6501f7bcb3cf8aa3d6265b1ad20144feaa696ed8",
+  "observed_head": "76e01e9372ca80759eb71b42913c383ccbb6c9ad",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0403.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Import terminal tasks through an adapter to the published harness or task format.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Integrate Terminal-Bench workloads",
-  "updated_at": "2026-09-08T16:45:50+00:00",
+  "updated_at": "2026-09-08T16:45:55+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-workloads"
 }
 ---

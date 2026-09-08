@@ -93,7 +93,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `3bcfd85dedd3` | 0 | behind 238, ahead 0 |
 | `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `410ecc95b80e` | 0 | behind 226, ahead 0 |
 | `agent-systems-benchmark-terminal-interface` | `feature/terminal-interface` | `d2e7b66ff6af` | 0 | behind 171, ahead 0 |
-| `agent-systems-benchmark-terminal-workloads` | `feature/terminal-workloads` | `6501f7bcb3cf` | 0 | behind 11, ahead 2 |
+| `agent-systems-benchmark-terminal-workloads` | `feature/terminal-workloads` | `76e01e9372ca` | 0 | behind 0, ahead 2 |
 | `agent-systems-benchmark-trace-interoperability` | `feature/trace-interoperability` | `921cf004f8aa` | 0 | behind 43, ahead 0 |
 | `agent-systems-benchmark-tui-run-control` | `feature/tui-run-control` | `b2707c482876` | 1 | behind 0, ahead 0 |
 | changed files | - | - | - | `crates/asb-tui/src/lib.rs` |
