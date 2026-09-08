@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 4 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **In progress** | Claimed work with a live lease | 5 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 40 |
 | **Future** | Deferred roadmap work | 0 |
@@ -156,7 +156,7 @@ flowchart LR
         AR_0841["AR-0841 - Done"]:::status_done
         AR_0842["AR-0842 - Done"]:::status_done
         AR_0843["AR-0843 - Done"]:::status_done
-        AR_0844["AR-0844 - Open"]:::status_open
+        AR_0844["AR-0844 - In progress"]:::status_in_progress
         AR_0845["AR-0845 - Done"]:::status_done
         AR_0846["AR-0846 - Planned"]:::status_planned
         AR_0847["AR-0847 - Done"]:::status_done
@@ -737,20 +737,20 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0316](tasks/AR-0316-agent-runtime-bundles.md): Publish reproducible agent runtime bundles | contracts_20260906 | Make supported agent installations reproducible, license-audited, SBOM-backed, and independently verifiable. | Inventory the nine released agent runtime graphs against the existing asb-bundle v1 verifier, then add only disjoint agent-runtime manifest/provenance fixtures; defer Cargo/schema/release/platform and adapter registration to an explicit serialized fence. |
+| P1 | [AR-0844](tasks/AR-0844-frontend-api-integration.md): Integrate frontend control API | replay_20260906 | Integrate and qualify the frontend control API as an independent boundary. | Integrate independently reviewed frontend API components and qualify standalone runner operation. |
 | P1 | [AR-0854](tasks/AR-0854-coordinator-v020-upgrade.md): Upgrade shared workflow coordinator to v0.2.0 | codex-coordinator-v020-20260908 | Adopt coordinator v0.2.0 concurrency, recovery, durable-run, replica, and vendor hardening. | Promote and claim the upgrade, vendor signed v0.2.0 in an isolated worktree, and publish only after exact-head gates pass. |
 | P2 | [AR-0402](tasks/AR-0402-external-code-workloads.md): Integrate SWE-bench and Aider Polyglot | root-coordination-20260906 | Add versioned external workload adapters without vendoring datasets. | Define content-addressed external source manifests for SWE-bench 02e7a74ffd0b707aab73d203fe87bdc7c76afc8e and Polyglot 7e0611e77b54e2dea774cdc0aa00cf9f7ed6144f; include Exercism cpp 413b80a9, go 97472cfe, java f1b22a3d, javascript 9be84b9e, python 1f6aab86, rust 1d3a0f46 (all MIT), then pin evaluator/image metadata. |
 | P2 | [AR-1005](tasks/AR-1005-trace-interoperability.md): Export interoperable privacy-safe traces | quality_20260906 | Expose stable causal ASB events and optional standards-based telemetry without binding storage to an evolving convention. | Harden the projection to canonical OTLP JSON attribute encoding and pseudonymized causal identifiers, add explicit secret-like label redaction and contention/backpressure negatives, then run focused/full gates. |
 
-### Open (2)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0844](tasks/AR-0844-frontend-api-integration.md): Integrate frontend control API | Unclaimed | Integrate and qualify the frontend control API as an independent boundary. | Integrate independently reviewed frontend API components and qualify standalone runner operation. |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary. |
 
 ### Blocked (4)

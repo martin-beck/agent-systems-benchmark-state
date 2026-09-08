@@ -2,7 +2,7 @@
 {
   "branch": "feature/frontend-api-integration",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-08T13:46:53+00:00",
   "depends_on": [
     "AR-0840",
     "AR-0841",
@@ -11,15 +11,15 @@
   ],
   "id": "AR-0844",
   "next_action": "Integrate independently reviewed frontend API components and qualify standalone runner operation.",
-  "owner": "",
+  "owner": "replay_20260906",
   "plan": "../plans/AR-0844.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Integrate and qualify the frontend control API as an independent boundary.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Integrate frontend control API",
-  "updated_at": "2026-09-08T10:46:22+00:00",
+  "updated_at": "2026-09-08T10:46:53+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-api-integration"
 }
 ---
@@ -33,3 +33,5 @@ status, no implicit network listener exists, and exact-head CI/post-merge recove
   final frontend API integration as the highest-priority safe ready leaf: use a new isolated
   worktree and limit product scope to integration/standalone-runner qualification, with no shared
   Cargo/schema changes and no overlap with active AR-0316 or AR-1005.
+
+- 2026-09-08T10:46:53+00:00: Claimed by replay_20260906.
