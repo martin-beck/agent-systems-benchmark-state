@@ -8,7 +8,7 @@
     "AR-0312"
   ],
   "id": "AR-0313",
-  "next_action": "Extend the green two-file atomic preflight core into the versioned provider-plan/config and CLI reporting surface without touching crates/asb-cli/src/control.rs; add stale/mixed/partial serialization and recovery negatives, then run full applicable gates.",
+  "next_action": "Rerun only interrupted failure-fixture bundle with pinned cargo PATH, then run pending Gitleaks and anchored added-line privacy scan; no product repair indicated by the FileNotFoundError.",
   "observed_branch": "feature/all-agents-provider",
   "observed_dirty": 3,
   "observed_head": "b6078bb1ca2ee8f35973ffab9740c2c12dd4126e",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Let test plans select one provider profile for every chosen supported agent atomically.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Configure one provider for all agents",
-  "updated_at": "2026-09-08T11:30:14+00:00",
+  "updated_at": "2026-09-08T11:31:09+00:00",
   "worktree_key": "agent-systems-benchmark-all-agents-provider"
 }
 ---
@@ -89,3 +89,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T11:30:14+00:00: Recorded command exit 1; command argv SHA-256
   b5acbae122eeac0daababafa76d9bf5b1b547d9c31f52fbef45a9991acad9b31.
+
+- 2026-09-08T11:31:09+00:00: Gate classification: repository_policy passed. test_failure_paths
+  passed its policy/privacy/action/DCO/routing/documentation fixtures, then exited 1 before a formal
+  fixture because subprocess cargo was absent from wrapper PATH (FileNotFoundError).
+  Environment/harness failure, not product; gitleaks/privacy commands after it did not run.
