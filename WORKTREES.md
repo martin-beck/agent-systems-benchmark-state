@@ -15,7 +15,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-agent-openhands` | `feature/agent-openhands` | `fec0487e4fd8` | 0 | behind 25, ahead 0 |
 | `agent-systems-benchmark-agent-qwen-code` | `feature/agent-qwen-code` | `0be96c9ec50e` | 0 | behind 134, ahead 0 |
 | `agent-systems-benchmark-agent-replay-conformance` | `feature/agent-replay-conformance` | `3a07b57b8265` | 0 | behind 35, ahead 0 |
-| `agent-systems-benchmark-agent-runtime-bundles` | `feature/agent-runtime-bundles` | `26b7e5f66676` | 0 | behind 4, ahead 0 |
+| `agent-systems-benchmark-agent-runtime-bundles` | `feature/agent-runtime-bundles` | `26b7e5f66676` | 2 | behind 4, ahead 0 |
+| changed files | - | - | - | `crates/asb-bundle/src/lib.rs`, `crates/asb-bundle/src/catalog.rs` |
 | `agent-systems-benchmark-aider-deterministic-replay` | `fix/aider-deterministic-replay` | `87a22654913a` | 0 | behind 36, ahead 0 |
 | `agent-systems-benchmark-all-agents-provider` | `feature/all-agents-provider` | `b6078bb1ca2e` | 3 | behind 0, ahead 0 |
 | changed files | - | - | - | `README.md`, `crates/asb-agents/src/all_agents_provider.rs`, `crates/asb-agents/src/lib.rs` |

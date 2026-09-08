@@ -17,7 +17,7 @@
   "id": "AR-0316",
   "next_action": "Inventory the nine released agent runtime graphs against the existing asb-bundle v1 verifier, then add only disjoint agent-runtime manifest/provenance fixtures; defer Cargo/schema/release/platform and adapter registration to an explicit serialized fence.",
   "observed_branch": "feature/agent-runtime-bundles",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "26b7e5f66676302ea86da401c7fe9f103bdf555b",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0316.md",
@@ -25,9 +25,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make supported agent installations reproducible, license-audited, SBOM-backed, and independently verifiable.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Publish reproducible agent runtime bundles",
-  "updated_at": "2026-09-08T10:36:42+00:00",
+  "updated_at": "2026-09-08T11:30:52+00:00",
   "worktree_key": "agent-systems-benchmark-agent-runtime-bundles"
 }
 ---
