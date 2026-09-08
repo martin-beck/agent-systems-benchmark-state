@@ -12,7 +12,7 @@
     "AR-0318"
   ],
   "id": "AR-0314",
-  "next_action": "Serialize AR-0318 product publication/integration (e9a0e523 + 5d62546) onto product main or explicitly authorize its inclusion in AR-0314; then rebase AR-0314 and run the synthetic environment-credential live preflight without FD/helper claims.",
+  "next_action": "Independent immutable review of rebased signed candidate e8fed7e and exact-tree evidence; if approved, publish/update focused PR and require exact-head CI before integration/release.",
   "observed_branch": "feature/provider-recording-choice",
   "observed_dirty": 0,
   "observed_head": "e8fed7e572b6bf9d14d76f15b91b7cb208e2d48b",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Offer matching prior recordings or an actual provider connection without silently choosing either.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Choose matching replay or live provider execution",
-  "updated_at": "2026-09-08T14:42:18+00:00",
+  "updated_at": "2026-09-08T14:42:52+00:00",
   "worktree_key": "agent-systems-benchmark-provider-recording-choice"
 }
 ---
@@ -158,3 +158,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T14:42:18+00:00: Recorded command exit 0; command argv SHA-256
   a84711d4adba925bc749e7a734d54c56aa9b592ebe204fa9d99b417bc18a4df2.
+
+- 2026-09-08T14:42:52+00:00: AR-0314 controlled rebase complete: old 1d0e521 -> signed
+  e8fed7e572b6bf9d14d76f15b91b7cb208e2d48b on exact main 33f30cb; range-diff is = and worktree
+  clean. Exact-tree synthetic Environment credential preflight test passed 1/1: non-secret reference
+  digest is verified, resolved synthetic credential is injected into an otherwise empty bounded
+  child environment, output contains only `isolated`, and no credential bytes are emitted. FD/helper
+  remain unsupported. Selection focused tests passed 4/4; explicit live/replay choice, unavailable
+  live, mismatched recording/profile/agent, forged/duplicate cassette, malformed/bounded inputs all
+  fail closed. Full locked workspace test, fmt, workspace all-target clippy -D warnings, repository
+  policy exact range, DCO exact range, and Gitleaks one-commit 13.34KB/no-leaks are green.
+  Candidate: tree 4ef17ad010f067e6d87409727cbb098bfb8328a3, parent
+  33f30cb7d88aa8d3c323895154c8237d1763c6b8, exact two-path replay scope.
