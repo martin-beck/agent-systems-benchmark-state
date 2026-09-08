@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Test each actual client through recording and offline replay of engineering tasks.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Prove real-agent replay conformance",
-  "updated_at": "2026-09-08T02:03:46+00:00",
+  "updated_at": "2026-09-08T02:04:31+00:00",
   "worktree_key": "agent-systems-benchmark-agent-replay-conformance"
 }
 ---
@@ -64,3 +64,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T02:03:46+00:00: Recorded command exit 0; command argv SHA-256
   63d5c4cd012f5f12936813db5d4bd3e9117cd7848ceb8a45dcd81dacfd0c3fed.
+
+- 2026-09-08T02:04:31+00:00: Recorded command exit 0; command argv SHA-256
+  addecc19f901fab0bbcc11009e944aaf92da54d6f6da2f87cb4f5ec60c20e4ba.
