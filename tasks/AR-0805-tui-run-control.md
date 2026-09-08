@@ -10,7 +10,7 @@
     "AR-0804"
   ],
   "id": "AR-0805",
-  "next_action": "Request independent review of the exact one-file lifecycle slice before any signed checkpoint. Keep AR in progress: scheduler capacity, deadlines, leases, provider source, metrics, warnings, evidence availability, terminal resize, and native frontend resource/separation evidence require an owned follow-up boundary and are not claimed. Preserve AR-0855 header lines on any rebase.",
+  "next_action": "Independent immutable review candidate fd81035f0a50436b75bb02727209bd8abd52a505 against exact parent b2707c482876dcfb42c756c39165f6ecdb5c7c10. Do not publish before review approval. Preserve explicit protocol/resource/native evidence gaps and AR-0855 header lines on any rebase.",
   "observed_branch": "feature/tui-run-control",
   "observed_dirty": 0,
   "observed_head": "fd81035f0a50436b75bb02727209bd8abd52a505",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T17:06:44+00:00",
+  "updated_at": "2026-09-08T17:07:23+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -187,3 +187,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T17:06:44+00:00: Recorded command exit 0; command argv SHA-256
   a1b8f3d875b2df25ce8b5bddcd61e9ebafadd07981c0c00042e19b6fc40c57cf.
+
+- 2026-09-08T17:07:23+00:00: Immutable AR-0805 candidate prepared: head
+  fd81035f0a50436b75bb02727209bd8abd52a505, tree ebabe3ae0a887813306312ca9a6ff880da0c2118, parent
+  b2707c482876dcfb42c756c39165f6ecdb5c7c10. SSH signature verifies for martin.beck2@gmx.de; exact
+  DCO trailer is present; worktree is clean; diff is one path crates/asb-tui/src/lib.rs with 551
+  insertions and 1 deletion; git diff --check, repository policy, commit-range Gitleaks, fmt,
+  focused tests 11/11, and focused all-target clippy with warnings denied pass. Earlier exact-tree
+  workspace, documentation, contract, coverage, failure, platform, workflow, dependency, privacy,
+  and secret gates are green. Candidate is unpublished. Unsupported dashboard protocol fields and
+  native/resource/frontend-separation evidence remain explicit completion gaps, not claims.
