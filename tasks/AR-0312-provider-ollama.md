@@ -18,7 +18,7 @@
   "id": "AR-0312",
   "next_action": "Implement a loopback-only local Ollama profile and prove every compatible adapter translation.",
   "observed_branch": "feature/provider-ollama",
-  "observed_dirty": 0,
+  "observed_dirty": 3,
   "observed_head": "2f0f84d4b3ad722d7f35a8bc400830ec53630996",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0312.md",
@@ -26,9 +26,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply one pinned local Ollama provider and model configuration to all supported agents.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Support a shared local Ollama provider",
-  "updated_at": "2026-09-08T08:58:08+00:00",
+  "updated_at": "2026-09-08T09:06:44+00:00",
   "worktree_key": "agent-systems-benchmark-provider-ollama"
 }
 ---
