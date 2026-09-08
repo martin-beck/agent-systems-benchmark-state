@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T16:23:47+00:00",
+  "updated_at": "2026-09-08T16:24:03+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -44,3 +44,6 @@ Implementation has not started. Read the linked plan before claiming.
   unintended trailing argument made git worktree add receive too many positional arguments and print
   usage. No branch or worktree was created and no product path changed. Corrective action is a
   single exact retry after durable classification.
+
+- 2026-09-08T16:24:03+00:00: Recorded command exit 0; command argv SHA-256
+  5b93a7b16ff13cbd2e349403c14ce7e7a9174946197bcdaa139476839f7c4300.
