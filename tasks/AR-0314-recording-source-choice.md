@@ -12,7 +12,7 @@
     "AR-0318"
   ],
   "id": "AR-0314",
-  "next_action": "Independently review signed checkpoint 1d0e521; run exact replay gates and complete live-preflight/credential-boundary evidence without weakening explicit replay/live choice.",
+  "next_action": "Complete live-provider preflight evidence using AR-0318 environment credentials, then run exact-head integration/CI gates.",
   "observed_branch": "feature/provider-recording-choice",
   "observed_dirty": 0,
   "observed_head": "1d0e521690e688ee50fc099d0cb38b440dfea6b3",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Offer matching prior recordings or an actual provider connection without silently choosing either.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Choose matching replay or live provider execution",
-  "updated_at": "2026-09-08T14:12:55+00:00",
+  "updated_at": "2026-09-08T14:14:11+00:00",
   "worktree_key": "agent-systems-benchmark-provider-recording-choice"
 }
 ---
@@ -108,3 +108,8 @@ Implementation has not started. Read the linked plan before claiming.
   focused selection tests. It implements deterministic compatible recording offers and explicit
   replay/live source choice; live preflight remains to be independently verified against AR-0318
   environment credentials.
+
+- 2026-09-08T14:14:11+00:00: Coordinator independently ran cargo test --locked -p asb-replay on
+  signed 1d0e521: 91 tests passed across unit, cassette, fault, migration, pacing, redaction,
+  schema, strict-replay, and Gemini suites. Replay/source-choice behavior is validated; live
+  preflight remains open.
