@@ -2,7 +2,7 @@
 {
   "branch": "feature/verifier-integrity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T07:20:57+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0103",
     "AR-0104",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/verifier-integrity",
   "observed_dirty": 0,
   "observed_head": "3fc65ea73badcea31497e53644fdad8778115870",
-  "owner": "replay_20260906",
+  "owner": "",
   "plan": "../plans/AR-1002.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Separate immutable graders from agent work and version scoring independently of execution.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Protect verifiers and support offline rescoring",
-  "updated_at": "2026-09-08T05:06:36+00:00",
+  "updated_at": "2026-09-08T05:11:48+00:00",
   "worktree_key": "agent-systems-benchmark-verifier-integrity"
 }
 ---
@@ -222,3 +222,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T05:06:36+00:00: Recorded command exit 0; command argv SHA-256
   865c3bd1eb43e2fab3797895a71809cbd91f89c8e84693a9b095da538884ff90.
+
+- 2026-09-08T05:11:48+00:00: AR-1002 complete. Reviewed candidate
+  3fc65ea73badcea31497e53644fdad8778115870 merged by SSH-signed DCO no-ff commit
+  d3e2dfa979d85b8b443a07f93e7dd7b9a226bc2f with exact base parent
+  3a07b57b8265d98eeebbcd4fd21339d72fac0663. PR #62 merged. Exact-main local locked workspace fmt,
+  Clippy, tests, docs, release build and formal suite passed with clean tree. Exact-main hosted runs
+  all succeeded: formal 34189279599, fault 34189279609, quality 34189279679, Rust x86_64/aarch64
+  34189279652, emulated aarch64 34189279675. SHA-256 evidence provides integrity, not authenticity;
+  affected-crate nightly branch coverage remains honestly bounded at 79.13 percent while configured
+  line floors pass. Cargo and formal lock fences returned to coordinator.

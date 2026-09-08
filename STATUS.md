@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 4 |
+| **In progress** | Claimed work with a live lease | 3 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 54 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 61 |
+| **Done** | Accepted, integrated, and durably verified | 62 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -175,7 +175,7 @@ flowchart LR
     subgraph series_10["10 - Reliability and release"]
         direction TB
         AR_1001["AR-1001 - Done"]:::status_done
-        AR_1002["AR-1002 - In progress"]:::status_in_progress
+        AR_1002["AR-1002 - Done"]:::status_done
         AR_1003["AR-1003 - Planned"]:::status_planned
         AR_1004["AR-1004 - Done"]:::status_done
         AR_1005["AR-1005 - Planned"]:::status_planned
@@ -725,12 +725,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
-| P1 | [AR-1002](tasks/AR-1002-verifier-integrity.md): Protect verifiers and support offline rescoring | replay_20260906 | Separate immutable graders from agent work and version scoring independently of execution. | Monitor PR #62 exact head 3fc65ea73badcea31497e53644fdad8778115870 quality, emulated-aarch64, fault, Rust x86_64/aarch64, and formal runs; investigate failures and do not merge without authorization. |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | quality_20260906 | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary. |
 | P2 | [AR-0309](tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | contracts_20260906 | Run a maintained MIT OpenHands SDK or canonical headless client. | Finish license/provenance and exact-scope audit of the v1.17.0 official-lock pivot, run affected full gates, then create a signed DCO replacement candidate for immutable review. |
 
@@ -802,7 +801,7 @@ flowchart LR
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Evaluate maintenance, licenses and reproducibility before integration. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (61)
+### Done (62)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -864,6 +863,7 @@ flowchart LR
 | P1 | [AR-0902](tasks/AR-0902-fault-assurance.md): Add fuzz mutation and lifecycle fault campaigns | Unclaimed | Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection. | Run final coordination reconcile/snapshot/live doctor/full validation and release AR-0902 done only if clean synchronized state remains exact. |
 | P1 | [AR-0905](tasks/AR-0905-recovery-models.md): Model execution recovery and worker fencing | Unclaimed | Apply bounded formal models to run lifecycle, leases, recovery, replay cursors and uncertain external effects. | Monitor PR #57 exact head a288bb3485aa2a65ffa79626c3352c6522791138; investigate failures and merge only after every required exact-head check is green and coordinator authorizes. |
 | P1 | [AR-1001](tasks/AR-1001-experiment-comparability.md): Define experiment identity and comparability | Unclaimed | Make every comparison content-addressed and explicit about agent, model, workload and platform confounders. | Await coordinator integration authorization for independently approved exact PR #17 head eb5e849; do not merge or release. Cargo workspace/lock and experiment-schema fence remains held by AR-1001. |
+| P1 | [AR-1002](tasks/AR-1002-verifier-integrity.md): Protect verifiers and support offline rescoring | Unclaimed | Separate immutable graders from agent work and version scoring independently of execution. | Monitor PR #62 exact head 3fc65ea73badcea31497e53644fdad8778115870 quality, emulated-aarch64, fault, Rust x86_64/aarch64, and formal runs; investigate failures and do not merge without authorization. |
 | P1 | [AR-1004](tasks/AR-1004-reliability-fairness.md): Measure reliability and mixed-workload fairness | Unclaimed | Report repeated-attempt reliability and prevent aggregate results from hiding starvation or hard strata. | Verify exact main 814397f with post-merge local gates and all fresh exact-main hosted CI; release only after green reconciliation. |
 | P1 | [AR-1007](tasks/AR-1007-benchmark-validity.md): Maintain benchmark validity and portability registry | Unclaimed | Track dataset provenance, contamination risk, grader validity and native portability per workload revision. | Implement registry schema and validation for built-in and imported workloads. |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Unclaimed | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Run final state validation/live doctor and release done after confirming clean synchronized product/state refs at signed merge a0d80e4. |
