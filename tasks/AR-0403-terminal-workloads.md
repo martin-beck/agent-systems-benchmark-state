@@ -7,7 +7,7 @@
     "AR-0401"
   ],
   "id": "AR-0403",
-  "next_action": "Monitor PR #85 exact head 76e01e9372ca80759eb71b42913c383ccbb6c9ad checks to terminal; investigate any failure and do not merge without coordinator authorization. Preserve explicit no-native/no-execution qualification limits.",
+  "next_action": "Fresh independent immutable review of rebased AR-0403 candidate 3e67bdfc3ce093234027d4be883223a6f3b6560c, tree 3074d26475feb748195ab71c70c357c6fd0b46be, exact parent chain f59e6b138a9b02850fadc7d81ebec09d8ff3fa0f -> cd15696994450455558b340673266b90e15eb651 -> 3e67bdfc. If approved, guarded force-with-lease update PR #85 and require fresh exact-head CI; preserve no-native/no-execution limits.",
   "observed_branch": "feature/terminal-workloads",
   "observed_dirty": 0,
   "observed_head": "3e67bdfc3ce093234027d4be883223a6f3b6560c",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Import terminal tasks through an adapter to the published harness or task format.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Integrate Terminal-Bench workloads",
-  "updated_at": "2026-09-08T20:22:50+00:00",
+  "updated_at": "2026-09-08T20:23:26+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-workloads"
 }
 ---
@@ -281,3 +281,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T20:22:50+00:00: Recorded command exit 0; command argv SHA-256
   9358b6862b453810c27231c9e800b1d972f3b6141369c5ff99d0dc00e379c408.
+
+- 2026-09-08T20:23:26+00:00: Controlled rebase completed cleanly with exact unchanged range-diff:
+  03157d8=cd156969 and 76e01e9=3e67bdf. Both successors are SSH-signed with exact DCO, worktree
+  clean, six intended paths only, required Huawei MIT headers preserved. Focused pytest
+  registry/validator/planner 10/10 and asb-workloads tests 16+2+5 plus docs passed. Full fmt,
+  workspace clippy -D warnings/tests/docs/release, repository policy, contract consistency,
+  source-header 18/18, actionlint, zizmor, range Gitleaks, cargo-deny/audit, coverage, failure
+  fixtures, artifact outcome, platform manifests/tests, TLC/Alloy positive+mutation, diff/clean-tree
+  gates passed. Two preliminary exits were operator-only: unittest collected zero pytest functions
+  (exit 5), then direct script invocation lacked repo-root module path; corrected pytest and python
+  -m unittest invocations passed. No product failure. Native Terminal-Bench execution/reset/network
+  isolation remain unqualified and unsupported.
