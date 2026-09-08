@@ -18,12 +18,12 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 34241332421 | `76497db8f22c` | push | Rust verification | pending:- |
-| 34241332366 | `76497db8f22c` | push | Fault assurance | pending:- |
+| 34241332366 | `76497db8f22c` | push | Fault assurance | in_progress:- |
 | 34241332330 | `76497db8f22c` | push | Repository quality | in_progress:- |
 | 34241332329 | `76497db8f22c` | push | Emulated aarch64 portability | pending:- |
 | 34241332324 | `76497db8f22c` | push | Formal assurance | in_progress:- |
 | 34241104784 | `e0554b5590cd` | push | Rust verification | in_progress:- |
-| 34241104774 | `e0554b5590cd` | push | Fault assurance | in_progress:- |
+| 34241104774 | `e0554b5590cd` | push | Fault assurance | completed:cancelled |
 | 34241104757 | `e0554b5590cd` | push | Repository quality | completed:failure |
 | 34241104703 | `e0554b5590cd` | push | Emulated aarch64 portability | in_progress:- |
 | 34241104676 | `e0554b5590cd` | push | Formal assurance | completed:success |
