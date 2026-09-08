@@ -55,8 +55,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 199, ahead 0 |
 | `agent-systems-benchmark-portable-metrics` | `feature/portable-metrics` | `a0f67bea1ffe` | 0 | behind 173, ahead 0 |
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `51daeb8608e5` | 0 | behind 192, ahead 0 |
-| `agent-systems-benchmark-provider-ollama` | `feature/provider-ollama` | `2f0f84d4b3ad` | 3 | behind 2, ahead 0 |
-| changed files | - | - | - | `crates/asb-agents/src/lib.rs`, `crates/asb-agents/OLLAMA.md`, `crates/asb-agents/src/ollama.rs` |
+| `agent-systems-benchmark-provider-ollama` | `feature/provider-ollama` | `e49acbf455f6` | 0 | behind 2, ahead 1 |
 | `agent-systems-benchmark-provider-profile-contract` | `feature/provider-profile-contract` | `2870b68d0ca0` | 0 | behind 128, ahead 0 |
 | `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `748537c25e3a` | 0 | behind 209, ahead 0 |
 | `agent-systems-benchmark-recovery-models` | `feature/recovery-models` | `a288bb3485aa` | 0 | behind 31, ahead 0 |
