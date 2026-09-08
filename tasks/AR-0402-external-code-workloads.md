@@ -10,16 +10,16 @@
   "next_action": "Integrate planner/materializer into the production workload API and add a qualified disposable evaluator fixture only after independent image/SBOM evidence.",
   "observed_branch": "feature/external-code-workloads",
   "observed_dirty": 0,
-  "observed_head": "4253d224f06570f9e05b8276b292b320f3936e8c",
+  "observed_head": "2590dc3eb7704a6a8d5afbe25fe138819fce03fd",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0402.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 96,
+  "task_revision": 97,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:30:37+00:00",
+  "updated_at": "2026-09-08T12:30:44+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
