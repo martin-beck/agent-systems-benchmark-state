@@ -15,11 +15,11 @@
   "plan": "../plans/AR-0855.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files.",
-  "task_revision": 182,
+  "task_revision": 183,
   "title": "Enforce Huawei MIT source headers",
-  "updated_at": "2026-09-08T18:47:22+00:00",
+  "updated_at": "2026-09-08T18:48:09+00:00",
   "worktree_key": "agent-systems-benchmark-huawei-mit-headers"
 }
 ---
@@ -521,3 +521,6 @@ and fresh coordinator snapshot before claiming. Do not modify vendored coordinat
   34264504923, Rust 34264504840, quality 34264504971, emulated AArch64 34264504715). Remaining plan
   scope is state-owned headers/checker/CI after a corrected immutable agent-workflow-coordinator
   v0.3.2+ release and hash-locked vendor sync; do not hand-edit vendor.
+
+- 2026-09-08T18:48:09+00:00: Correct stale next_action after successful product merge; remaining
+  work is only the release-gated state vendor sync and state-owned enforcement.
