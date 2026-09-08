@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T16:52:43+00:00",
+  "updated_at": "2026-09-08T16:53:48+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -141,3 +141,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T16:52:43+00:00: Recorded command exit 0; command argv SHA-256
   3bd2246f55e55e32e8e68a51f689e76a0807a3f4f210f8e80f45c01f4c297a11.
+
+- 2026-09-08T16:53:48+00:00: Recorded command exit 0; command argv SHA-256
+  2fb716cc8bbfaf4528274187a0b12bafbc503a1be56806029142a618135cb11f.
