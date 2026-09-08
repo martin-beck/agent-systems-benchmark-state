@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run a maintained MIT OpenHands SDK or canonical headless client.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Implement maintained OpenHands SDK client adapter",
-  "updated_at": "2026-09-08T04:41:29+00:00",
+  "updated_at": "2026-09-08T04:42:44+00:00",
   "worktree_key": "agent-systems-benchmark-agent-openhands"
 }
 ---
@@ -228,3 +228,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T04:41:29+00:00: Recorded command exit 0; command argv SHA-256
   3883dbef1393c0406a83e21384d1d1b0eb5f9aff04dad793aeae61ef3383e227.
+
+- 2026-09-08T04:42:44+00:00: Recorded command exit 0; command argv SHA-256
+  a6faeb61aa6a96dee3b9b7b4c001d0af93ade15546bb61876c8acec64182f02e.
