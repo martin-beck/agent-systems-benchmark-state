@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish executable offline quickstart, workload/agent extension guide and reproducibility guide.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Deliver runnable user and extension guides",
-  "updated_at": "2026-09-08T06:21:21+00:00",
+  "updated_at": "2026-09-08T06:21:23+00:00",
   "worktree_key": "agent-systems-benchmark-executable-guides"
 }
 ---
@@ -35,3 +35,6 @@ Implementation has not started. Read the linked plan before claiming.
   guides as next compatible P2 task for idle quality worker.
 
 - 2026-09-08T06:20:54+00:00: Claimed by quality_20260906.
+
+- 2026-09-08T06:21:23+00:00: Recorded command exit 0; command argv SHA-256
+  93f0cd29c34e2137f91a1806d95d5f0860c02df3faad1fcf1909e14f8051ddde.
