@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0202",
-  "next_action": "Wait for exact-main post-merge checks, run local post-merge verification, then retain AR-0202 in progress pending genuine native aarch64 evidence; do not release as done yet.",
+  "next_action": "Monitor exact-head PR #90; required CI must pass before signed no-ff repair merge. After repair post-merge checks, retain AR-0202 in progress pending genuine native aarch64 evidence.",
   "observed_branch": "feature/kernel-diagnostics",
   "observed_dirty": 0,
   "observed_head": "d11f81837374d42977bea40cc3452d3bda8c00c7",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate perf and optional eBPF diagnostics without making privileged tools mandatory.",
-  "task_revision": 191,
+  "task_revision": 192,
   "title": "Add optional kernel diagnostics",
-  "updated_at": "2026-09-08T23:21:40+00:00",
+  "updated_at": "2026-09-08T23:22:07+00:00",
   "worktree_key": "agent-systems-benchmark-kernel-diagnostics"
 }
 ---
@@ -554,3 +554,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T23:21:40+00:00: Recorded command exit 0; command argv SHA-256
   5c43705ffc947bb8e5d527c58f7ec993cf4984671a530ee37d09077a53e31960.
+
+- 2026-09-08T23:22:07+00:00: Post-merge repository-quality failure on main 3514089 reproduced the
+  coverage-specific malformed-fixture defect: under cargo llvm-cov the self-spawned instrumented
+  test binary sometimes exited nonzero and was classified ProbeRejected instead of
+  MalformedEvidence. Replaced it with a deterministic executable fixture. Normal focused tests,
+  repeated cargo llvm-cov runs, docs, headers and policy checks pass. Signed repair d11f818 was
+  pushed and follow-up PR #90 opened against exact main 3514089.
