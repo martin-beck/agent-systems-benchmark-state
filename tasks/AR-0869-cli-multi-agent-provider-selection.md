@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Select several agents and apply one preconfigured provider profile through inspectable command-line options.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Add CLI multi-agent provider selection",
-  "updated_at": "2026-09-08T22:27:21+00:00",
+  "updated_at": "2026-09-08T22:27:33+00:00",
   "worktree_key": "agent-systems-benchmark-cli-multi-agent-provider-selection"
 }
 ---
@@ -253,3 +253,6 @@ Implementation has not started. Read the linked plan before claiming.
   superseded: exact manifest import requires it to reconstruct and validate the profile, and the
   asb-agents contract explicitly classifies this digest as credential-free; no credential value is
   accepted, retained, or rendered.
+
+- 2026-09-08T22:27:33+00:00: Recorded command exit 0; command argv SHA-256
+  edb10e451349a5940f7f7cfbe4382e66e9bcd85a921dba375e0f2cf00e2cefb5.
