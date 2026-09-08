@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track dataset provenance, contamination risk, grader validity and native portability per workload revision.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Maintain benchmark validity and portability registry",
-  "updated_at": "2026-09-08T00:36:30+00:00",
+  "updated_at": "2026-09-08T00:37:03+00:00",
   "worktree_key": "agent-systems-benchmark-benchmark-validity"
 }
 ---
@@ -239,3 +239,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T00:36:30+00:00: Recorded command exit 101; command argv SHA-256
   a9f7d59e9f1fa6021c6e2b1902cc2602955ed6160a5d010f8810b87637f187ee.
+
+- 2026-09-08T00:37:03+00:00: Postmerge exact-main formatting and workspace Clippy passed. The
+  workspace test then stopped in the pre-existing asb-control endpoint test because the configured
+  development-volume TMPDIR made its Unix socket pathname exceed SUN_LEN. This is an environment
+  scratch-path failure, not an AR-1007 product failure; later postmerge gates did not execute. Next
+  action: use a shorter scratch directory still under the configured development volume, rerun the
+  focused failed test and complete the unexecuted workspace/formal/repository/privacy gates without
+  repeating fmt or Clippy.
