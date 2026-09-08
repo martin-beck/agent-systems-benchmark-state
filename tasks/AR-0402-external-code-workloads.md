@@ -7,7 +7,7 @@
     "AR-0401"
   ],
   "id": "AR-0402",
-  "next_action": "Integrate this boundary into the production workload adapter and add evaluator/oracle execution fixtures; maintain planned status for unqualified images.",
+  "next_action": "Integrate planner/materializer into the production workload API and add a qualified disposable evaluator fixture only after independent image/SBOM evidence.",
   "observed_branch": "feature/external-code-workloads",
   "observed_dirty": 0,
   "observed_head": "4253d224f06570f9e05b8276b292b320f3936e8c",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 93,
+  "task_revision": 94,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:26:54+00:00",
+  "updated_at": "2026-09-08T12:27:06+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -263,3 +263,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T12:26:47+00:00: Recorded command exit 0; command argv SHA-256
   00fb244517d8cbf5b5b83d198f75c60a26d945ac48766aeaed8ebdda962bd431.
+
+- 2026-09-08T12:27:06+00:00: Added signed product commit 4253d22 with fail-closed external workload
+  planner. It refuses unknown suites and returns explicit unqualified status until evaluator
+  image/SBOM/evidence identities are all qualified; planner and materializer tests pass 4/4. No
+  external execution occurs.
