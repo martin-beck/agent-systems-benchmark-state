@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair aider replay nondeterminism caused by process-dependent file ordering.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Repair deterministic aider replay",
-  "updated_at": "2026-09-08T02:32:28+00:00",
+  "updated_at": "2026-09-08T02:38:35+00:00",
   "worktree_key": "agent-systems-benchmark-aider-deterministic-replay"
 }
 ---
@@ -104,3 +104,6 @@ aggregate matrix.
 
 - 2026-09-08T02:32:28+00:00: Recorded command exit 0; command argv SHA-256
   c0cbd8047a469379465671b7f7e229a303f61019da0768f9cc726f603fd629e0.
+
+- 2026-09-08T02:38:35+00:00: Recorded command exit 0; command argv SHA-256
+  4a7584be5542f995bc3d6b15cc78aa8bba7d7de1e6a52e09a61738ca67824f09.
