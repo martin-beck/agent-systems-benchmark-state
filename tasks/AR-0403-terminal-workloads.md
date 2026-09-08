@@ -7,7 +7,7 @@
     "AR-0401"
   ],
   "id": "AR-0403",
-  "next_action": "Authorize one controlled signed rebase of repaired candidate 6501f7b onto exact current product main b2707c48; preserve six-path scope, rerun affected exact-tree gates, and retain explicit no-native/no-execution qualification limits.",
+  "next_action": "Monitor PR #85 exact head 76e01e9372ca80759eb71b42913c383ccbb6c9ad checks to terminal; investigate any failure and do not merge without coordinator authorization. Preserve explicit no-native/no-execution qualification limits.",
   "observed_branch": "feature/terminal-workloads",
   "observed_dirty": 0,
   "observed_head": "76e01e9372ca80759eb71b42913c383ccbb6c9ad",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Import terminal tasks through an adapter to the published harness or task format.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Integrate Terminal-Bench workloads",
-  "updated_at": "2026-09-08T16:48:22+00:00",
+  "updated_at": "2026-09-08T16:49:06+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-workloads"
 }
 ---
@@ -187,3 +187,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T16:48:22+00:00: Recorded command exit 0; command argv SHA-256
   841c87f045f9751a5d26e3271746fc1d065fb42211fab9a348b7bd04cbb12eaf.
+
+- 2026-09-08T16:49:06+00:00: Controlled rebase completed once onto exact product main
+  b2707c482876dcfb42c756c39165f6ecdb5c7c10. Successor commits 03157d8f and 76e01e93 retain exact
+  stable patch IDs e1b5bf97/9887eae5, valid SSH signatures and DCO; six-path scope is unchanged.
+  Rebased exact-tree workload 21 tests, Ruff, strict mypy, registry fail-closed output, workspace
+  fmt/clippy/test/docs/release, repository policy, diff-check and Gitleaks all passed. Published
+  absent remote branch by exact empty-ref lease and opened PR #85 at exact head 76e01e93/base
+  b2707c48. Runs: Rust 34253298749, emulated aarch64 34253298806, fault 34253298826, quality
+  34253298831, formal 34253298850 are pending; AWQ shadow 34253298884 passed. No native
+  reference-agent/oracle, image/SBOM, reset, network isolation, or aarch64 support claim is made.
