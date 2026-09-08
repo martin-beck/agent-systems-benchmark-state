@@ -10,17 +10,17 @@
   "id": "AR-0202",
   "next_action": "Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary.",
   "observed_branch": "feature/kernel-diagnostics",
-  "observed_dirty": 1,
-  "observed_head": "ee9d3e0efe88525ab56535d700d7487cadcc6299",
+  "observed_dirty": 0,
+  "observed_head": "0568bf5f99d6783b9cd3a64e8c565722f24ab49f",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0202.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate perf and optional eBPF diagnostics without making privileged tools mandatory.",
-  "task_revision": 109,
+  "task_revision": 110,
   "title": "Add optional kernel diagnostics",
-  "updated_at": "2026-09-08T04:35:52+00:00",
+  "updated_at": "2026-09-08T04:36:04+00:00",
   "worktree_key": "agent-systems-benchmark-kernel-diagnostics"
 }
 ---
