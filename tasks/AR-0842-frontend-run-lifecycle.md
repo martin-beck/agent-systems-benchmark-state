@@ -2,7 +2,7 @@
 {
   "branch": "feature/frontend-run-lifecycle",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T10:28:32+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0840",
     "AR-0841",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/frontend-run-lifecycle",
   "observed_dirty": 0,
   "observed_head": "b3b3b8907f6dbaee3700f866e82b23a5f723deea",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0842.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Define and implement frontend-independent run lifecycle semantics.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Implement frontend run lifecycle",
-  "updated_at": "2026-09-08T08:13:52+00:00",
+  "updated_at": "2026-09-08T08:19:13+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-run-lifecycle"
 }
 ---
@@ -148,3 +148,8 @@ and bounded backpressure with recovery tests.
 
 - 2026-09-08T08:13:52+00:00: Recorded command exit 0; command argv SHA-256
   003b137dcf8edf228da525b34e5efb25ba2271fa93036fe0237a6b800d7d96fb.
+
+- 2026-09-08T08:19:13+00:00: Merged as signed+DCO no-ff ba97a20f60f39b4c5ef601a7dade148276a631d6
+  with reviewed tree 3a4587b503ee1bd451637054d84e14baca928d8e. Local postmerge fmt/clippy/workspace
+  tests/docs/release/formal/policy passed. Exact-main SUCCESS: Rust 34203369579, quality
+  34203369554, formal 34203369608, fault 34203369561, emulated aarch64 34203369736.
