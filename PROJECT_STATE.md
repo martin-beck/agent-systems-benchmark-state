@@ -21,7 +21,7 @@ Generated from local Git and GitHub. Do not edit.
 | 34215439690 | `26b7e5f66676` | push | Fault assurance | in_progress:- |
 | 34215439681 | `26b7e5f66676` | push | Repository quality | in_progress:- |
 | 34215439679 | `26b7e5f66676` | push | Emulated aarch64 portability | in_progress:- |
-| 34215439678 | `26b7e5f66676` | push | Formal assurance | in_progress:- |
+| 34215439678 | `26b7e5f66676` | push | Formal assurance | completed:success |
 | 34215009181 | `1128595cd2f9` | pull_request | Formal assurance | completed:success |
 | 34215009171 | `1128595cd2f9` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 34215009138 | `1128595cd2f9` | pull_request | Rust verification | completed:success |
