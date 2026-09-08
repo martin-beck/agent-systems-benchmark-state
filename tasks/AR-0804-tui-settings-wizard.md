@@ -9,7 +9,7 @@
     "AR-0803"
   ],
   "id": "AR-0804",
-  "next_action": "Run full locked workspace, docs, repository policy/privacy/Gitleaks and bounded adversarial import/render gates; then exact scope audit and signed candidate if green.",
+  "next_action": "Independent immutable review of signed candidate 8f7152c525daf0b8dd61961c780848ed7a8bf979/tree 0a17f5e on exact parent 76497db; keep unpublished and retain explicit non-rendering/non-launch limitations until approval.",
   "observed_branch": "feature/tui-settings-wizard",
   "observed_dirty": 0,
   "observed_head": "8f7152c525daf0b8dd61961c780848ed7a8bf979",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Guide users through agents, providers, workloads, resources, replay, metrics, and output settings.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Build the terminal settings wizard",
-  "updated_at": "2026-09-08T15:35:32+00:00",
+  "updated_at": "2026-09-08T15:35:58+00:00",
   "worktree_key": "agent-systems-benchmark-tui-settings-wizard"
 }
 ---
@@ -135,3 +135,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T15:35:24+00:00: Recorded command exit 0; command argv SHA-256
   95a72bbf54c7eef99805c0d1cd5e042012d042fed6dbe73fa74b3ac05f852eaf.
+
+- 2026-09-08T15:35:58+00:00: Signed+DCO clean candidate 8f7152c525daf0b8dd61961c780848ed7a8bf979,
+  tree 0a17f5e127b2c1766a24ea927b5a4d4b15e13111, exact parent 76497db, six-path scope (root
+  Cargo.toml/Cargo.lock plus new asb-tui Cargo.toml/README/lib/main). Full locked workspace tests,
+  workspace all-target clippy -D warnings, rustdoc -D warnings, release build, fmt and diff-check
+  passed. Focused adversarial suite 5/5 passed: closed/oversize import, unadvertised/stale replay,
+  duplicate metrics/catalog, non-ASCII/oversize search, snapshot digest non-emission,
+  navigation/back/reset, validation/create separation. Repository policy, failure-path suite,
+  contract consistency 4/4, cargo-deny and targeted Gitleaks for every changed path are green;
+  added-line privacy scan found no credential-value patterns. Whole-tree Gitleaks exit 1 was
+  classified as unrelated historical/build scope after changed-path scans passed. Earlier exits were
+  formatting-only and missing required --bin-dir harness argument, both corrected. No Launch API
+  exists; terminal rendering/transport/run control remain unsupported follow-ups.

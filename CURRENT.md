@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0804](tasks/AR-0804-tui-settings-wizard.md): Build the terminal settings wizard | Guide users through agents, providers, workloads, resources, replay, metrics, and output settings. | Run full locked workspace, docs, repository policy/privacy/Gitleaks and bounded adversarial import/render gates; then exact scope audit and signed candidate if green. | quality_20260906 |
+| P1 | [AR-0804](tasks/AR-0804-tui-settings-wizard.md): Build the terminal settings wizard | Guide users through agents, providers, workloads, resources, replay, metrics, and output settings. | Independent immutable review of signed candidate 8f7152c525daf0b8dd61961c780848ed7a8bf979/tree 0a17f5e on exact parent 76497db; keep unpublished and retain explicit non-rendering/non-launch limitations until approval. | quality_20260906 |
 | P2 | [AR-0403](tasks/AR-0403-terminal-workloads.md): Integrate Terminal-Bench workloads | Import terminal tasks through an adapter to the published harness or task format. | Independent review the signed adapter checkpoint e0da4efd; run exact-tree quality gates and retain explicit unqualified Terminal-Bench limitations. | replay_20260906 |
 
 ## Open
