@@ -7,7 +7,7 @@
     "AR-0318"
   ],
   "id": "AR-0319",
-  "next_action": "Request independent immutable review of exact d2e08d8d; do not publish until approved. Local Kani remains an explicit environment-only limitation; hosted formal CI must run it.",
+  "next_action": "Run full exact-tree formal/fault/privacy/supply gates on signed successor 75094148, then request fresh independent immutable review; do not publish.",
   "observed_branch": "feature/credential-fd-helper-resolvers",
   "observed_dirty": 0,
   "observed_head": "75094148f951467a10f31e02aaf482b3fef9c4a8",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add explicit file-descriptor and helper credential references without ambient-secret fallback.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Implement credential FD and helper resolvers",
-  "updated_at": "2026-09-08T19:16:59+00:00",
+  "updated_at": "2026-09-08T19:17:16+00:00",
   "worktree_key": "agent-systems-benchmark-credential-fd-helper-resolvers"
 }
 ---
@@ -270,3 +270,17 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T19:16:52+00:00: Recorded command exit 0; command argv SHA-256
   ff05d1eeb91a55403ea70f73a9c3f831a0b70408e72205a54b74fe4db20c3fad.
+
+- 2026-09-08T19:17:16+00:00: Review-block repair produced new single signed+DCO candidate
+  75094148f951467a10f31e02aaf482b3fef9c4a8 (tree 12654991a8114ae3daefdde7d7090d406f6fa6b8, parent
+  b2707c482876dcfb42c756c39165f6ecdb5c7c10), replacing unpublished d2e08d8d. Helper admission now
+  copies only exact expected-SHA bytes into a CLOEXEC memfd, chmods it owner read/execute, seals
+  write/grow/shrink/further-seals, revalidates seals/hash before start, and launches through the
+  still-open parent procfd without ever clearing CLOEXEC. Deterministic negatives prove the sealed
+  FD rejects writes; original inode mutation then pathname replacement cannot alter executed bytes;
+  the helper child sees no staged memfd descriptor; and 16 unrelated children spawned concurrently
+  see no staged descriptor. Focused credential tests pass 14/14, including
+  timeout/cancel/malformed/nonzero/oversize/privacy cases; all-target asb-agents Clippy -D warnings,
+  fmt and diff-check pass. An initial compile exposed only Read/Write by_ref ambiguity and was
+  repaired by fully qualified writes. Candidate worktree is clean. Full successor gates remain
+  pending.
