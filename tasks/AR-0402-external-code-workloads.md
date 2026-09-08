@@ -7,7 +7,7 @@
     "AR-0401"
   ],
   "id": "AR-0402",
-  "next_action": "Repair or replace unavailable Aider revision through a fresh provenance review, verify Exercism archives, then implement production adapter integration.",
+  "next_action": "Verify Exercism archives and implement production adapter integration; do not promote evaluator support without image/SBOM/oracle evidence.",
   "observed_branch": "feature/external-code-workloads",
   "observed_dirty": 0,
   "observed_head": "978902512478907f7eda3040b0c0de0b317cdfc0",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:22:30+00:00",
+  "updated_at": "2026-09-08T12:22:44+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -228,3 +228,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T12:22:25+00:00: Recorded command exit 0; command argv SHA-256
   4fbb2a3c62fe06401f7f2188122b41e5d0e8d9de149b5b89cd67698994872537.
+
+- 2026-09-08T12:22:44+00:00: Replaced unavailable Aider pin with upstream immutable main commit
+  5dc9490bb35f9729ef2c95d00a19ccd30c26339c after live API/ref audit. Verified Apache-2.0 metadata
+  and archive SHA-256 e8cbcdcf1dbe765a62a366a1950269bf655529174cc89545ced331cdb128f677; signed
+  product commit 9789025. Registry/validator tests pass 2/2. Evaluator image/SBOM remain
+  unqualified.
