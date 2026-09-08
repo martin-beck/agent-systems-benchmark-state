@@ -9,7 +9,7 @@
   "id": "AR-0402",
   "next_action": "Populate immutable evaluator/container/SBOM evidence for a real opt-in suite, then add production adapter integration and run Rust/full gates.",
   "observed_branch": "feature/external-code-workloads",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "38e7f5ff310edd3d12ddce41a49f25d140e0e539",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0402.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:20:36+00:00",
+  "updated_at": "2026-09-08T12:20:41+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
