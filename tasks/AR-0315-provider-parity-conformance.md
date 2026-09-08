@@ -20,7 +20,7 @@
     "AR-0505"
   ],
   "id": "AR-0315",
-  "next_action": "Await coordinator serialized merge authorization for PR #84 exact head 7a5332dd3d0329343cf27b2433818b749bfdd355; after authorization use signed/DCO no-ff integration and require all exact-main postmerge workflows before release.",
+  "next_action": "Monitor all five exact-main postmerge workflows for signed+DCO merge b2707c482876dcfb42c756c39165f6ecdb5c7c10; after terminal success run local exact-main focused verification plus reconcile/snapshot/live doctor, then release AR-0315 with evidence limits.",
   "observed_branch": "test/provider-parity-conformance",
   "observed_dirty": 0,
   "observed_head": "7a5332dd3d0329343cf27b2433818b749bfdd355",
@@ -30,9 +30,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Conformance-test identical OpenAI and Ollama profiles across the complete supported-agent matrix.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Verify cross-agent provider parity",
-  "updated_at": "2026-09-08T16:10:22+00:00",
+  "updated_at": "2026-09-08T16:10:59+00:00",
   "worktree_key": "agent-systems-benchmark-provider-parity-conformance"
 }
 ---
@@ -137,3 +137,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T16:10:22+00:00: Recorded command exit 0; command argv SHA-256
   bf5fae3a7983f89e672abc9448e00263b0cbbf1cb59b910e349c3611bcb5bb69.
+
+- 2026-09-08T16:10:59+00:00: Serialized integration complete: PR #84 merged at
+  b2707c482876dcfb42c756c39165f6ecdb5c7c10, tree de68a05c77eb4af013fdeb53f06f326f1865aac3, parents
+  d51ee9c9ab8889f6b9837a89772f59ea6f37d3a3 and 7a5332dd3d0329343cf27b2433818b749bfdd355. Merge SSH
+  signature and exact DCO trailer verify; origin/main push succeeded. Exact-main runs started:
+  quality 34249416603, formal 34249416594, fault 34249416580, Rust 34249416581, emulated-aarch64
+  34249416597. Release remains held; structural/native evidence limits preserved.

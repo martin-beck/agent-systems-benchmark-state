@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0315](tasks/AR-0315-provider-parity-conformance.md): Verify cross-agent provider parity | Conformance-test identical OpenAI and Ollama profiles across the complete supported-agent matrix. | Await coordinator serialized merge authorization for PR #84 exact head 7a5332dd3d0329343cf27b2433818b749bfdd355; after authorization use signed/DCO no-ff integration and require all exact-main postmerge workflows before release. | quality_20260906 |
+| P1 | [AR-0315](tasks/AR-0315-provider-parity-conformance.md): Verify cross-agent provider parity | Conformance-test identical OpenAI and Ollama profiles across the complete supported-agent matrix. | Monitor all five exact-main postmerge workflows for signed+DCO merge b2707c482876dcfb42c756c39165f6ecdb5c7c10; after terminal success run local exact-main focused verification plus reconcile/snapshot/live doctor, then release AR-0315 with evidence limits. | quality_20260906 |
 | P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Claim, create the declared worktree, enforce exact first-party Huawei MIT source headers, test, and publish unmerged PRs. | codex-asb-header-review-repair |
 
 ## Open
