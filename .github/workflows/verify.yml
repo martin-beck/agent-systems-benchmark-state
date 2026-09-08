@@ -2,7 +2,33 @@ name: Coordination verification
 "on":
   push:
     branches: [main]
+    paths:
+      - ".github/workflows/handoffctl-formal.yml"
+      - ".github/workflows/verify.yml"
+      - "formal/handoffctl/**"
+      - "pyproject.toml"
+      - "schema/task.schema.json"
+      - "tests/test_handoffctl.py"
+      - "tests/test_status_renderer.py"
+      - "tests/validate_schema.py"
+      - "tools/handoffctl"
+      - "tools/handoffctl.py"
+      - "tools/status_renderer.py"
+      - "uv.lock"
   pull_request:
+    paths:
+      - ".github/workflows/handoffctl-formal.yml"
+      - ".github/workflows/verify.yml"
+      - "formal/handoffctl/**"
+      - "pyproject.toml"
+      - "schema/task.schema.json"
+      - "tests/test_handoffctl.py"
+      - "tests/test_status_renderer.py"
+      - "tests/validate_schema.py"
+      - "tools/handoffctl"
+      - "tools/handoffctl.py"
+      - "tools/status_renderer.py"
+      - "uv.lock"
   workflow_dispatch:
 permissions:
   contents: read
