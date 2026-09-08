@@ -2,7 +2,7 @@
 {
   "branch": "feature/provider-recording-choice",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-08T17:10:44+00:00",
   "depends_on": [
     "AR-0104",
     "AR-0310",
@@ -16,15 +16,15 @@
   "observed_branch": "feature/provider-recording-choice",
   "observed_dirty": 2,
   "observed_head": "9feeba6524357df38e3ad118d4c3740306d3ec8e",
-  "owner": "",
+  "owner": "quality_20260906",
   "plan": "../plans/AR-0314.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Offer matching prior recordings or an actual provider connection without silently choosing either.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Choose matching replay or live provider execution",
-  "updated_at": "2026-09-08T14:10:26+00:00",
+  "updated_at": "2026-09-08T14:10:44+00:00",
   "worktree_key": "agent-systems-benchmark-provider-recording-choice"
 }
 ---
@@ -86,3 +86,5 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-08T14:10:26+00:00: Repeated resumed exit-101 with no diagnosis or fixture repair; preserve
   dirty replay/catalog worktree and exact blocker. Release inactive claim; reclaim only when the
   worker can execute the configured focused repair.
+
+- 2026-09-08T14:10:44+00:00: Claimed by quality_20260906.
