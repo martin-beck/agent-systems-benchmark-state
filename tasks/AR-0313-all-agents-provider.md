@@ -8,7 +8,7 @@
     "AR-0312"
   ],
   "id": "AR-0313",
-  "next_action": "Run exact candidate DCO with documented named arguments, then repository policy, Gitleaks, diff, scope and clean-tree checks; publish only after green.",
+  "next_action": "Independent immutable review of unpublished candidate 03962f28571e79403740b560a769e1a3b171e685 tree bf48ba52a07d24474a6cf62839e8197b0f55c7e0 on exact base b6078bb1ca2ee8f35973ffab9740c2c12dd4126e; publish only after approval and fresh-base audit.",
   "observed_branch": "feature/all-agents-provider",
   "observed_dirty": 0,
   "observed_head": "03962f28571e79403740b560a769e1a3b171e685",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Let test plans select one provider profile for every chosen supported agent atomically.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Configure one provider for all agents",
-  "updated_at": "2026-09-08T11:46:21+00:00",
+  "updated_at": "2026-09-08T11:46:51+00:00",
   "worktree_key": "agent-systems-benchmark-all-agents-provider"
 }
 ---
@@ -128,3 +128,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T11:46:21+00:00: Recorded command exit 0; command argv SHA-256
   a552aceb75f6e30e8607bf804f20571c4edd23fe6eeb182f8f9a461007f29188.
+
+- 2026-09-08T11:46:51+00:00: Candidate ready: exact 3-path scope README.md,
+  crates/asb-agents/src/lib.rs, crates/asb-agents/src/all_agents_provider.rs; clean tree, SSH
+  signature good, DCO/policy/diff/Gitleaks/added-line privacy clean. Focused all_agents_provider 5/5
+  and asb-agents Clippy green. Full workspace fmt, Clippy -D warnings, tests, rustdoc -D warnings
+  and release build green. Failure fixture suite green after correcting documented PATH harness
+  failure. Full-tree Gitleaks false positive was only generated target/doc asb_control HTML; exact
+  candidate scan found no leaks. No active AR-0844 control.rs or AR-0316 runtime-bundle path
+  touched.
