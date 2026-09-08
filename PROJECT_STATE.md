@@ -17,12 +17,12 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34287557165 | `4cad7460065e` | push | Emulated aarch64 portability | in_progress:- |
-| 34287557162 | `4cad7460065e` | push | Repository quality | in_progress:- |
-| 34287557160 | `4cad7460065e` | push | Fault assurance | in_progress:- |
-| 34287557140 | `4cad7460065e` | push | Rust verification | in_progress:- |
+| 34287557165 | `4cad7460065e` | push | Emulated aarch64 portability | completed:success |
+| 34287557162 | `4cad7460065e` | push | Repository quality | completed:success |
+| 34287557160 | `4cad7460065e` | push | Fault assurance | completed:success |
+| 34287557140 | `4cad7460065e` | push | Rust verification | completed:success |
 | 34287557131 | `4cad7460065e` | push | Huawei MIT source headers | completed:success |
-| 34287557113 | `4cad7460065e` | push | Formal assurance | in_progress:- |
+| 34287557113 | `4cad7460065e` | push | Formal assurance | completed:success |
 | 34287386959 | `a3696385be31` | workflow_dispatch | Emulated aarch64 portability | completed:cancelled |
 | 34287384721 | `a3696385be31` | workflow_dispatch | Fault assurance | completed:cancelled |
 | 34287382961 | `a3696385be31` | workflow_dispatch | Formal assurance | completed:success |
