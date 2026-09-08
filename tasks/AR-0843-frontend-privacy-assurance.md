@@ -8,7 +8,7 @@
     "AR-0841"
   ],
   "id": "AR-0843",
-  "next_action": "Replace path-based artifact metadata reads with component-wise no-follow directory-relative opens rooted at the configured result store; prove symlinked ancestor rejection and regular artifact success, then run focused privacy/fault tests.",
+  "next_action": "Stop product mutation at the reviewed two-path dirty boundary; independently audit the exact diff, then make a focused signed+DCO candidate only after approval to commit.",
   "observed_branch": "feature/frontend-privacy-assurance",
   "observed_dirty": 2,
   "observed_head": "ba97a20f60f39b4c5ef601a7dade148276a631d6",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify frontend privacy, artifact access, and fault behavior.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Assure frontend privacy and faults",
-  "updated_at": "2026-09-08T08:50:42+00:00",
+  "updated_at": "2026-09-08T08:51:12+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-privacy-assurance"
 }
 ---
@@ -134,3 +134,16 @@ redaction failures; prove no credentials, prompts, transcripts, or private paths
 
 - 2026-09-08T08:50:42+00:00: Recorded command exit 0; command argv SHA-256
   7d01f749efcbd3bdedf8f2b8bf6fcba511c4977b6965a8a7ab1dfc2b1c01e97f.
+
+- 2026-09-08T08:51:12+00:00: Complete AR-0843 focused/privacy/fault gate checkpoint. Dirty product
+  head remains exact ba97a20f60f39b4c5ef601a7dade148276a631d6 with exactly two intended paths:
+  crates/asb-cli/src/control.rs and docs/FRONTEND_CONTROL_API.md. Pre-repair ancestor-link oracle
+  failed by returning Sensitive metadata for an outside 16-byte file. Repaired tests pass: regular
+  digest-addressed file returns metadata only; symlinked artifacts ancestor rejects; final artifact
+  symlink returns NotFound; 256 MiB-plus-one sparse file rejects before hashing. Post-repair cargo
+  fmt check, asb-cli clippy all-targets -D warnings, 12 CLI control tests, full asb-control 30
+  tests/doctests, full locked workspace tests, workspace docs -D warnings, release build, six Kani
+  proofs, deliberate Kani counterexample, repository failure fixtures, dirty-tree Gitleaks,
+  diff-check, and exact two-path scope all exited 0. No credential, prompt, transcript, artifact
+  bytes, or private path crosses the API; metadata remains explicitly Sensitive. Product mutation is
+  stopped for independent diff review.
