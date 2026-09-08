@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish executable offline quickstart, workload/agent extension guide and reproducibility guide.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Deliver runnable user and extension guides",
-  "updated_at": "2026-09-08T06:33:49+00:00",
+  "updated_at": "2026-09-08T06:33:52+00:00",
   "worktree_key": "agent-systems-benchmark-executable-guides"
 }
 ---
@@ -82,3 +82,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T06:33:29+00:00: Recorded command exit 0; command argv SHA-256
   d9f6c3a41fa3d74ef45bbeaa15c595ef3bdd4b59cac80a65a3623810512ebb55.
+
+- 2026-09-08T06:33:52+00:00: Recorded command exit 0; command argv SHA-256
+  301270702b5cf4b27c364b720a2feffd6f4d1a32626b1c6cb7b4a3cecfc9ad0d.
