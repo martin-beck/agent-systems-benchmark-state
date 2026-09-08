@@ -7,7 +7,7 @@
     "AR-0401"
   ],
   "id": "AR-0402",
-  "next_action": "Define content-addressed external source manifests for SWE-bench 02e7a74ffd0b707aab73d203fe87bdc7c76afc8e and Polyglot 7e0611e77b54e2dea774cdc0aa00cf9f7ed6144f; include Exercism cpp 413b80a9, go 97472cfe, java f1b22a3d, javascript 9be84b9e, python 1f6aab86, rust 1d3a0f46 (all MIT), then pin evaluator/image metadata.",
+  "next_action": "Add digest verification/acquisition boundary and oracle fixtures, then run Rust/full quality gates.",
   "observed_branch": "feature/external-code-workloads",
   "observed_dirty": 0,
   "observed_head": "aa021eb5272bb7ca45100f2f1d6166ec61744ec8",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T11:25:00+00:00",
+  "updated_at": "2026-09-08T11:25:18+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -129,3 +129,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T11:25:00+00:00: Recorded command exit 0; command argv SHA-256
   a7a2382ca77d568f46a5a3ed0cc30d1460da42105ddfa5f821b3771de116b680.
+
+- 2026-09-08T11:25:18+00:00: Implemented external workload provenance registry and non-vendoring
+  contract at product commit aa021eb5272bb7ca45100f2f1d6166ec61744ec8; added pinned SWE-bench, Aider
+  Polyglot, and six Exercism track source identities, explicit license/platform limitations, and
+  registry test (pytest 1/1). Evaluator image digests remain null, so suites remain planned and
+  unqualified.
