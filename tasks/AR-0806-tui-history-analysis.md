@@ -10,7 +10,7 @@
     "AR-1001"
   ],
   "id": "AR-0806",
-  "next_action": "Fresh independent immutable review of repaired/rebased candidate 3844c28ae60a3fd0ecc35d9845832b8a20f657b0, tree 16d02ec17413c1743b9e026c53b2265fe431c9d0, exact parent/current origin/main 4cad7460065e0a2d4b1722eff446443c4399762e. Verify within-page run_id uniqueness is atomic, two-path scope, signature/DCO, exact '=' range-diff from repaired ded1a33, and gates before publication.",
+  "next_action": "PR #89 is published at exact head 3844c28ae60a3fd0ecc35d9845832b8a20f657b0, but live base advanced to 3514089fa378bd50629c9794b215fd53c8ea7d5d after immutable review; do not merge stale-base candidate. Obtain authorization for controlled rebase/resign onto exact current main, rerun range-diff/full gates, and require fresh immutable review plus exact-head CI before merge.",
   "observed_branch": "feature/tui-history-analysis",
   "observed_dirty": 0,
   "observed_head": "3844c28ae60a3fd0ecc35d9845832b8a20f657b0",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-08T23:15:42+00:00",
+  "updated_at": "2026-09-08T23:16:43+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
@@ -145,3 +145,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T23:15:42+00:00: Recorded command exit 0; command argv SHA-256
   6dc03dd56fa4cc4306075a4bdbfbdc1737f34eaebf2ec6ecaab72711b95f5803.
+
+- 2026-09-08T23:16:43+00:00: Published approved AR-0806 candidate as PR #89. Immediate live PR
+  reconciliation found head 3844c28ae60a3fd0ecc35d9845832b8a20f657b0 but base
+  3514089fa378bd50629c9794b215fd53c8ea7d5d, while candidate parent/reviewed base is
+  4cad7460065e0a2d4b1722eff446443c4399762e. Exact-head checks started (runs 34289825690,
+  34289825742, 34289825756, 34289825759, 34289825767, 34289825794, 34289825810), but those cannot
+  authorize integration against the unreviewed advanced base. Merge is held fail-closed; AR-0875
+  limitation remains explicit.
