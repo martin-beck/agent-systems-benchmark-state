@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-08T21:45:04+00:00",
+  "updated_at": "2026-09-08T22:02:31+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
@@ -69,3 +69,6 @@ Implementation has not started. Read the linked plan before claiming.
   time/agent/provider-source/workload/platform/integrity/outcome fields, while AnalysisSummary
   exposes only run_count plus an opaque digest and therefore cannot carry AR-1001
   compatibility/confounder results. No unqualified analysis claim was added.
+
+- 2026-09-08T22:02:31+00:00: Recorded command exit 0; command argv SHA-256
+  a5ff6e5a51f3497e76395547134d7667e3a19976d0c201725e2ab94136d2bb4e.
