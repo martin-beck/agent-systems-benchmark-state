@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**145 ARs tracked** across 5 active status categories.
+**149 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 3 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
-| **Planned** | Defined work awaiting promotion or dependencies | 47 |
+| **Planned** | Defined work awaiting promotion or dependencies | 51 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 90 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -184,6 +184,10 @@ flowchart LR
         AR_0866["AR-0866 - Planned"]:::status_planned
         AR_0867["AR-0867 - Planned"]:::status_planned
         AR_0868["AR-0868 - Planned"]:::status_planned
+        AR_0869["AR-0869 - Planned"]:::status_planned
+        AR_0870["AR-0870 - Planned"]:::status_planned
+        AR_0871["AR-0871 - Planned"]:::status_planned
+        AR_0872["AR-0872 - Planned"]:::status_planned
     end
     subgraph series_09["09 - Assurance"]
         direction TB
@@ -405,9 +409,11 @@ flowchart LR
     AR_0313 --> AR_0314
     AR_0313 --> AR_0315
     AR_0313 --> AR_0804
+    AR_0313 --> AR_0869
     AR_0314 --> AR_0315
     AR_0314 --> AR_0804
     AR_0314 --> AR_0808
+    AR_0314 --> AR_0871
     AR_0315 --> AR_0857
     AR_0315 --> AR_0863
     AR_0315 --> AR_0903
@@ -416,6 +422,8 @@ flowchart LR
     AR_0318 --> AR_0314
     AR_0318 --> AR_0319
     AR_0318 --> AR_0320
+    AR_0318 --> AR_0869
+    AR_0320 --> AR_0869
     AR_0401 --> AR_0402
     AR_0401 --> AR_0403
     AR_0401 --> AR_0405
@@ -448,6 +456,7 @@ flowchart LR
     AR_0502 --> AR_0517
     AR_0502 --> AR_0518
     AR_0502 --> AR_0520
+    AR_0502 --> AR_0871
     AR_0502 --> AR_0901
     AR_0502 --> AR_1005
     AR_0503 --> AR_0314
@@ -468,6 +477,7 @@ flowchart LR
     AR_0503 --> AR_0520
     AR_0503 --> AR_0857
     AR_0503 --> AR_0863
+    AR_0503 --> AR_0871
     AR_0503 --> AR_0902
     AR_0503 --> AR_0905
     AR_0504 --> AR_0314
@@ -486,6 +496,7 @@ flowchart LR
     AR_0505 --> AR_0315
     AR_0505 --> AR_0802
     AR_0505 --> AR_0808
+    AR_0505 --> AR_0871
     AR_0505 --> AR_0903
     AR_0506 --> AR_0515
     AR_0507 --> AR_0515
@@ -529,8 +540,10 @@ flowchart LR
     AR_0801 --> AR_0842
     AR_0801 --> AR_0847
     AR_0801 --> AR_0849
+    AR_0801 --> AR_0869
     AR_0802 --> AR_0808
     AR_0802 --> AR_0809
+    AR_0802 --> AR_0872
     AR_0802 --> AR_0903
     AR_0803 --> AR_0804
     AR_0803 --> AR_0805
@@ -545,6 +558,7 @@ flowchart LR
     AR_0804 --> AR_0819
     AR_0804 --> AR_0820
     AR_0804 --> AR_0821
+    AR_0804 --> AR_0870
     AR_0805 --> AR_0806
     AR_0805 --> AR_0807
     AR_0805 --> AR_0809
@@ -552,6 +566,7 @@ flowchart LR
     AR_0805 --> AR_0815
     AR_0805 --> AR_0817
     AR_0805 --> AR_0821
+    AR_0805 --> AR_0870
     AR_0806 --> AR_0807
     AR_0806 --> AR_0809
     AR_0806 --> AR_0812
@@ -616,6 +631,7 @@ flowchart LR
     AR_0841 --> AR_0844
     AR_0842 --> AR_0844
     AR_0843 --> AR_0844
+    AR_0844 --> AR_0870
     AR_0845 --> AR_0846
     AR_0855 --> AR_0857
     AR_0855 --> AR_0863
@@ -631,6 +647,12 @@ flowchart LR
     AR_0866 --> AR_0867
     AR_0867 --> AR_0868
     AR_0868 --> AR_0856
+    AR_0869 --> AR_0870
+    AR_0869 --> AR_0871
+    AR_0869 --> AR_0872
+    AR_0870 --> AR_0871
+    AR_0870 --> AR_0872
+    AR_0871 --> AR_0872
     AR_0901 --> AR_0903
     AR_0902 --> AR_0813
     AR_0902 --> AR_0903
@@ -683,14 +705,14 @@ flowchart LR
 | [AR-0310](tasks/AR-0310-provider-profile-contract.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-1001](tasks/AR-1001-experiment-comparability.md) | [AR-0311](tasks/AR-0311-provider-openai.md), [AR-0312](tasks/AR-0312-provider-ollama.md), [AR-0314](tasks/AR-0314-recording-source-choice.md), [AR-0318](tasks/AR-0318-credential-reference-boundary.md), [AR-0857](tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](tasks/AR-0863-workbuddy-provenance.md) |
 | [AR-0311](tasks/AR-0311-provider-openai.md) | [AR-0301](tasks/AR-0301-agent-opencode.md), [AR-0302](tasks/AR-0302-agent-opendesk.md), [AR-0303](tasks/AR-0303-agent-aider.md), [AR-0304](tasks/AR-0304-agent-codex.md), [AR-0305](tasks/AR-0305-agent-gemini.md), [AR-0306](tasks/AR-0306-agent-qwen-code.md), [AR-0307](tasks/AR-0307-agent-goose.md), [AR-0308](tasks/AR-0308-agent-mini-swe.md), [AR-0309](tasks/AR-0309-agent-openhands.md), [AR-0310](tasks/AR-0310-provider-profile-contract.md) | [AR-0313](tasks/AR-0313-all-agents-provider.md), [AR-0315](tasks/AR-0315-provider-parity-conformance.md) |
 | [AR-0312](tasks/AR-0312-provider-ollama.md) | [AR-0301](tasks/AR-0301-agent-opencode.md), [AR-0302](tasks/AR-0302-agent-opendesk.md), [AR-0303](tasks/AR-0303-agent-aider.md), [AR-0304](tasks/AR-0304-agent-codex.md), [AR-0305](tasks/AR-0305-agent-gemini.md), [AR-0306](tasks/AR-0306-agent-qwen-code.md), [AR-0307](tasks/AR-0307-agent-goose.md), [AR-0308](tasks/AR-0308-agent-mini-swe.md), [AR-0309](tasks/AR-0309-agent-openhands.md), [AR-0310](tasks/AR-0310-provider-profile-contract.md) | [AR-0313](tasks/AR-0313-all-agents-provider.md), [AR-0315](tasks/AR-0315-provider-parity-conformance.md) |
-| [AR-0313](tasks/AR-0313-all-agents-provider.md) | [AR-0311](tasks/AR-0311-provider-openai.md), [AR-0312](tasks/AR-0312-provider-ollama.md) | [AR-0314](tasks/AR-0314-recording-source-choice.md), [AR-0315](tasks/AR-0315-provider-parity-conformance.md), [AR-0804](tasks/AR-0804-tui-settings-wizard.md) |
-| [AR-0314](tasks/AR-0314-recording-source-choice.md) | [AR-0104](tasks/AR-0104-durable-results.md), [AR-0310](tasks/AR-0310-provider-profile-contract.md), [AR-0313](tasks/AR-0313-all-agents-provider.md), [AR-0318](tasks/AR-0318-credential-reference-boundary.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0504](tasks/AR-0504-replay-pacing.md) | [AR-0315](tasks/AR-0315-provider-parity-conformance.md), [AR-0804](tasks/AR-0804-tui-settings-wizard.md), [AR-0808](tasks/AR-0808-core-workflow-guides.md) |
+| [AR-0313](tasks/AR-0313-all-agents-provider.md) | [AR-0311](tasks/AR-0311-provider-openai.md), [AR-0312](tasks/AR-0312-provider-ollama.md) | [AR-0314](tasks/AR-0314-recording-source-choice.md), [AR-0315](tasks/AR-0315-provider-parity-conformance.md), [AR-0804](tasks/AR-0804-tui-settings-wizard.md), [AR-0869](tasks/AR-0869-cli-multi-agent-provider-selection.md) |
+| [AR-0314](tasks/AR-0314-recording-source-choice.md) | [AR-0104](tasks/AR-0104-durable-results.md), [AR-0310](tasks/AR-0310-provider-profile-contract.md), [AR-0313](tasks/AR-0313-all-agents-provider.md), [AR-0318](tasks/AR-0318-credential-reference-boundary.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0504](tasks/AR-0504-replay-pacing.md) | [AR-0315](tasks/AR-0315-provider-parity-conformance.md), [AR-0804](tasks/AR-0804-tui-settings-wizard.md), [AR-0808](tasks/AR-0808-core-workflow-guides.md), [AR-0871](tasks/AR-0871-record-replay-user-workflows.md) |
 | [AR-0315](tasks/AR-0315-provider-parity-conformance.md) | [AR-0301](tasks/AR-0301-agent-opencode.md), [AR-0302](tasks/AR-0302-agent-opendesk.md), [AR-0303](tasks/AR-0303-agent-aider.md), [AR-0304](tasks/AR-0304-agent-codex.md), [AR-0305](tasks/AR-0305-agent-gemini.md), [AR-0306](tasks/AR-0306-agent-qwen-code.md), [AR-0307](tasks/AR-0307-agent-goose.md), [AR-0308](tasks/AR-0308-agent-mini-swe.md), [AR-0309](tasks/AR-0309-agent-openhands.md), [AR-0311](tasks/AR-0311-provider-openai.md), [AR-0312](tasks/AR-0312-provider-ollama.md), [AR-0313](tasks/AR-0313-all-agents-provider.md), [AR-0314](tasks/AR-0314-recording-source-choice.md), [AR-0505](tasks/AR-0505-agent-replay-conformance.md) | [AR-0857](tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](tasks/AR-0863-workbuddy-provenance.md), [AR-0903](tasks/AR-0903-release-qualification.md) |
 | [AR-0316](tasks/AR-0316-agent-runtime-bundles.md) | [AR-0301](tasks/AR-0301-agent-opencode.md), [AR-0302](tasks/AR-0302-agent-opendesk.md), [AR-0303](tasks/AR-0303-agent-aider.md), [AR-0304](tasks/AR-0304-agent-codex.md), [AR-0305](tasks/AR-0305-agent-gemini.md), [AR-0306](tasks/AR-0306-agent-qwen-code.md), [AR-0307](tasks/AR-0307-agent-goose.md), [AR-0308](tasks/AR-0308-agent-mini-swe.md), [AR-0309](tasks/AR-0309-agent-openhands.md) | None |
 | [AR-0317](tasks/AR-0317-runtime-bundle-manifest.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0701](tasks/AR-0701-platform-manifests.md) | [AR-0857](tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](tasks/AR-0863-workbuddy-provenance.md) |
-| [AR-0318](tasks/AR-0318-credential-reference-boundary.md) | [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0310](tasks/AR-0310-provider-profile-contract.md) | [AR-0314](tasks/AR-0314-recording-source-choice.md), [AR-0319](tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](tasks/AR-0320-provider-credential-integration.md) |
+| [AR-0318](tasks/AR-0318-credential-reference-boundary.md) | [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0310](tasks/AR-0310-provider-profile-contract.md) | [AR-0314](tasks/AR-0314-recording-source-choice.md), [AR-0319](tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](tasks/AR-0320-provider-credential-integration.md), [AR-0869](tasks/AR-0869-cli-multi-agent-provider-selection.md) |
 | [AR-0319](tasks/AR-0319-credential-fd-helper-resolvers.md) | [AR-0318](tasks/AR-0318-credential-reference-boundary.md) | None |
-| [AR-0320](tasks/AR-0320-provider-credential-integration.md) | [AR-0318](tasks/AR-0318-credential-reference-boundary.md) | None |
+| [AR-0320](tasks/AR-0320-provider-credential-integration.md) | [AR-0318](tasks/AR-0318-credential-reference-boundary.md) | [AR-0869](tasks/AR-0869-cli-multi-agent-provider-selection.md) |
 | [AR-0401](tasks/AR-0401-engineering-workloads.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0103](tasks/AR-0103-sandbox-runtime.md) | [AR-0402](tasks/AR-0402-external-code-workloads.md), [AR-0403](tasks/AR-0403-terminal-workloads.md), [AR-0405](tasks/AR-0405-performance-workloads.md), [AR-0505](tasks/AR-0505-agent-replay-conformance.md), [AR-0506](tasks/AR-0506-replay-opencode.md), [AR-0507](tasks/AR-0507-replay-opendesk.md), [AR-0508](tasks/AR-0508-replay-aider.md), [AR-0509](tasks/AR-0509-replay-codex.md), [AR-0510](tasks/AR-0510-replay-gemini.md), [AR-0511](tasks/AR-0511-replay-qwen.md), [AR-0512](tasks/AR-0512-replay-goose.md), [AR-0513](tasks/AR-0513-replay-miniswe.md), [AR-0514](tasks/AR-0514-replay-openhands.md), [AR-0702](tasks/AR-0702-native-platforms.md), [AR-0703](tasks/AR-0703-native-platform-lab.md), [AR-0705](tasks/AR-0705-native-debian-capacity.md), [AR-0706](tasks/AR-0706-native-openeuler-capacity.md), [AR-0802](tasks/AR-0802-executable-guides.md), [AR-0808](tasks/AR-0808-core-workflow-guides.md), [AR-0848](tasks/AR-0848-native-x86-capacity.md), [AR-1002](tasks/AR-1002-verifier-integrity.md), [AR-1004](tasks/AR-1004-reliability-fairness.md), [AR-1007](tasks/AR-1007-benchmark-validity.md) |
 | [AR-0402](tasks/AR-0402-external-code-workloads.md) | [AR-0401](tasks/AR-0401-engineering-workloads.md) | [AR-0404](tasks/AR-0404-extended-workloads.md), [AR-0406](tasks/AR-0406-evolving-workloads.md) |
 | [AR-0403](tasks/AR-0403-terminal-workloads.md) | [AR-0401](tasks/AR-0401-engineering-workloads.md) | [AR-0404](tasks/AR-0404-extended-workloads.md) |
@@ -698,10 +720,10 @@ flowchart LR
 | [AR-0405](tasks/AR-0405-performance-workloads.md) | [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0601](tasks/AR-0601-csb-integration.md), [AR-1002](tasks/AR-1002-verifier-integrity.md), [AR-1007](tasks/AR-1007-benchmark-validity.md) | None |
 | [AR-0406](tasks/AR-0406-evolving-workloads.md) | [AR-0402](tasks/AR-0402-external-code-workloads.md), [AR-1007](tasks/AR-1007-benchmark-validity.md) | None |
 | [AR-0501](tasks/AR-0501-replay-evaluation.md) | [AR-0001](tasks/AR-0001-repository-bootstrap.md) | [AR-0502](tasks/AR-0502-replay-cassettes.md) |
-| [AR-0502](tasks/AR-0502-replay-cassettes.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0501](tasks/AR-0501-replay-evaluation.md) | [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0516](tasks/AR-0516-opendesk-strict-replay-http-compatibility.md), [AR-0517](tasks/AR-0517-redacted-request-pointer-replay.md), [AR-0518](tasks/AR-0518-gemini-generate-content-replay.md), [AR-0520](tasks/AR-0520-interaction-aware-redaction.md), [AR-0901](tasks/AR-0901-formal-assurance.md), [AR-1005](tasks/AR-1005-trace-interoperability.md) |
-| [AR-0503](tasks/AR-0503-strict-replay.md) | [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0502](tasks/AR-0502-replay-cassettes.md) | [AR-0314](tasks/AR-0314-recording-source-choice.md), [AR-0504](tasks/AR-0504-replay-pacing.md), [AR-0505](tasks/AR-0505-agent-replay-conformance.md), [AR-0506](tasks/AR-0506-replay-opencode.md), [AR-0507](tasks/AR-0507-replay-opendesk.md), [AR-0508](tasks/AR-0508-replay-aider.md), [AR-0509](tasks/AR-0509-replay-codex.md), [AR-0510](tasks/AR-0510-replay-gemini.md), [AR-0511](tasks/AR-0511-replay-qwen.md), [AR-0512](tasks/AR-0512-replay-goose.md), [AR-0513](tasks/AR-0513-replay-miniswe.md), [AR-0514](tasks/AR-0514-replay-openhands.md), [AR-0516](tasks/AR-0516-opendesk-strict-replay-http-compatibility.md), [AR-0517](tasks/AR-0517-redacted-request-pointer-replay.md), [AR-0518](tasks/AR-0518-gemini-generate-content-replay.md), [AR-0520](tasks/AR-0520-interaction-aware-redaction.md), [AR-0857](tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](tasks/AR-0863-workbuddy-provenance.md), [AR-0902](tasks/AR-0902-fault-assurance.md), [AR-0905](tasks/AR-0905-recovery-models.md) |
+| [AR-0502](tasks/AR-0502-replay-cassettes.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0501](tasks/AR-0501-replay-evaluation.md) | [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0516](tasks/AR-0516-opendesk-strict-replay-http-compatibility.md), [AR-0517](tasks/AR-0517-redacted-request-pointer-replay.md), [AR-0518](tasks/AR-0518-gemini-generate-content-replay.md), [AR-0520](tasks/AR-0520-interaction-aware-redaction.md), [AR-0871](tasks/AR-0871-record-replay-user-workflows.md), [AR-0901](tasks/AR-0901-formal-assurance.md), [AR-1005](tasks/AR-1005-trace-interoperability.md) |
+| [AR-0503](tasks/AR-0503-strict-replay.md) | [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0502](tasks/AR-0502-replay-cassettes.md) | [AR-0314](tasks/AR-0314-recording-source-choice.md), [AR-0504](tasks/AR-0504-replay-pacing.md), [AR-0505](tasks/AR-0505-agent-replay-conformance.md), [AR-0506](tasks/AR-0506-replay-opencode.md), [AR-0507](tasks/AR-0507-replay-opendesk.md), [AR-0508](tasks/AR-0508-replay-aider.md), [AR-0509](tasks/AR-0509-replay-codex.md), [AR-0510](tasks/AR-0510-replay-gemini.md), [AR-0511](tasks/AR-0511-replay-qwen.md), [AR-0512](tasks/AR-0512-replay-goose.md), [AR-0513](tasks/AR-0513-replay-miniswe.md), [AR-0514](tasks/AR-0514-replay-openhands.md), [AR-0516](tasks/AR-0516-opendesk-strict-replay-http-compatibility.md), [AR-0517](tasks/AR-0517-redacted-request-pointer-replay.md), [AR-0518](tasks/AR-0518-gemini-generate-content-replay.md), [AR-0520](tasks/AR-0520-interaction-aware-redaction.md), [AR-0857](tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](tasks/AR-0863-workbuddy-provenance.md), [AR-0871](tasks/AR-0871-record-replay-user-workflows.md), [AR-0902](tasks/AR-0902-fault-assurance.md), [AR-0905](tasks/AR-0905-recovery-models.md) |
 | [AR-0504](tasks/AR-0504-replay-pacing.md) | [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0503](tasks/AR-0503-strict-replay.md) | [AR-0314](tasks/AR-0314-recording-source-choice.md), [AR-0505](tasks/AR-0505-agent-replay-conformance.md), [AR-0506](tasks/AR-0506-replay-opencode.md), [AR-0507](tasks/AR-0507-replay-opendesk.md), [AR-0508](tasks/AR-0508-replay-aider.md), [AR-0509](tasks/AR-0509-replay-codex.md), [AR-0510](tasks/AR-0510-replay-gemini.md), [AR-0511](tasks/AR-0511-replay-qwen.md), [AR-0512](tasks/AR-0512-replay-goose.md), [AR-0513](tasks/AR-0513-replay-miniswe.md), [AR-0514](tasks/AR-0514-replay-openhands.md), [AR-0516](tasks/AR-0516-opendesk-strict-replay-http-compatibility.md), [AR-0517](tasks/AR-0517-redacted-request-pointer-replay.md) |
-| [AR-0505](tasks/AR-0505-agent-replay-conformance.md) | [AR-0301](tasks/AR-0301-agent-opencode.md), [AR-0302](tasks/AR-0302-agent-opendesk.md), [AR-0303](tasks/AR-0303-agent-aider.md), [AR-0304](tasks/AR-0304-agent-codex.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0504](tasks/AR-0504-replay-pacing.md) | [AR-0315](tasks/AR-0315-provider-parity-conformance.md), [AR-0802](tasks/AR-0802-executable-guides.md), [AR-0808](tasks/AR-0808-core-workflow-guides.md), [AR-0903](tasks/AR-0903-release-qualification.md) |
+| [AR-0505](tasks/AR-0505-agent-replay-conformance.md) | [AR-0301](tasks/AR-0301-agent-opencode.md), [AR-0302](tasks/AR-0302-agent-opendesk.md), [AR-0303](tasks/AR-0303-agent-aider.md), [AR-0304](tasks/AR-0304-agent-codex.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0504](tasks/AR-0504-replay-pacing.md) | [AR-0315](tasks/AR-0315-provider-parity-conformance.md), [AR-0802](tasks/AR-0802-executable-guides.md), [AR-0808](tasks/AR-0808-core-workflow-guides.md), [AR-0871](tasks/AR-0871-record-replay-user-workflows.md), [AR-0903](tasks/AR-0903-release-qualification.md) |
 | [AR-0506](tasks/AR-0506-replay-opencode.md) | [AR-0301](tasks/AR-0301-agent-opencode.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0504](tasks/AR-0504-replay-pacing.md) | [AR-0515](tasks/AR-0515-replay-matrix.md) |
 | [AR-0507](tasks/AR-0507-replay-opendesk.md) | [AR-0302](tasks/AR-0302-agent-opendesk.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0504](tasks/AR-0504-replay-pacing.md) | [AR-0515](tasks/AR-0515-replay-matrix.md) |
 | [AR-0508](tasks/AR-0508-replay-aider.md) | [AR-0303](tasks/AR-0303-agent-aider.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0504](tasks/AR-0504-replay-pacing.md) | [AR-0515](tasks/AR-0515-replay-matrix.md), [AR-0850](tasks/AR-0850-aider-deterministic-replay.md) |
@@ -729,11 +751,11 @@ flowchart LR
 | [AR-0705](tasks/AR-0705-native-debian-capacity.md) | [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0704](tasks/AR-0704-native-capacity-controller.md) | None |
 | [AR-0706](tasks/AR-0706-native-openeuler-capacity.md) | [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0704](tasks/AR-0704-native-capacity-controller.md) | None |
 | [AR-0707](tasks/AR-0707-emulated-aarch64-portability.md) | [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0701](tasks/AR-0701-platform-manifests.md) | None |
-| [AR-0801](tasks/AR-0801-terminal-interface.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md) | [AR-0802](tasks/AR-0802-executable-guides.md), [AR-0803](tasks/AR-0803-frontend-control-api.md), [AR-0808](tasks/AR-0808-core-workflow-guides.md), [AR-0820](tasks/AR-0820-verifiable-install-artifacts.md), [AR-0840](tasks/AR-0840-frontend-protocol-contract.md), [AR-0842](tasks/AR-0842-frontend-run-lifecycle.md), [AR-0847](tasks/AR-0847-frontend-control-api-repair.md), [AR-0849](tasks/AR-0849-ar0801-documentation-repair.md) |
-| [AR-0802](tasks/AR-0802-executable-guides.md) | [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0505](tasks/AR-0505-agent-replay-conformance.md), [AR-0801](tasks/AR-0801-terminal-interface.md) | [AR-0808](tasks/AR-0808-core-workflow-guides.md), [AR-0809](tasks/AR-0809-frontend-workflow-guides.md), [AR-0903](tasks/AR-0903-release-qualification.md) |
+| [AR-0801](tasks/AR-0801-terminal-interface.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md) | [AR-0802](tasks/AR-0802-executable-guides.md), [AR-0803](tasks/AR-0803-frontend-control-api.md), [AR-0808](tasks/AR-0808-core-workflow-guides.md), [AR-0820](tasks/AR-0820-verifiable-install-artifacts.md), [AR-0840](tasks/AR-0840-frontend-protocol-contract.md), [AR-0842](tasks/AR-0842-frontend-run-lifecycle.md), [AR-0847](tasks/AR-0847-frontend-control-api-repair.md), [AR-0849](tasks/AR-0849-ar0801-documentation-repair.md), [AR-0869](tasks/AR-0869-cli-multi-agent-provider-selection.md) |
+| [AR-0802](tasks/AR-0802-executable-guides.md) | [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0505](tasks/AR-0505-agent-replay-conformance.md), [AR-0801](tasks/AR-0801-terminal-interface.md) | [AR-0808](tasks/AR-0808-core-workflow-guides.md), [AR-0809](tasks/AR-0809-frontend-workflow-guides.md), [AR-0872](tasks/AR-0872-beginner-workflow-documentation.md), [AR-0903](tasks/AR-0903-release-qualification.md) |
 | [AR-0803](tasks/AR-0803-frontend-control-api.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0801](tasks/AR-0801-terminal-interface.md) | [AR-0804](tasks/AR-0804-tui-settings-wizard.md), [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-0813](tasks/AR-0813-remote-control-transport.md), [AR-0819](tasks/AR-0819-ssh-remote-bootstrap.md), [AR-0821](tasks/AR-0821-one-line-local-install.md) |
-| [AR-0804](tasks/AR-0804-tui-settings-wizard.md) | [AR-0313](tasks/AR-0313-all-agents-provider.md), [AR-0314](tasks/AR-0314-recording-source-choice.md), [AR-0803](tasks/AR-0803-frontend-control-api.md) | [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0809](tasks/AR-0809-frontend-workflow-guides.md), [AR-0812](tasks/AR-0812-modern-terminal-rendering.md), [AR-0817](tasks/AR-0817-remote-tui-workflows.md), [AR-0819](tasks/AR-0819-ssh-remote-bootstrap.md), [AR-0820](tasks/AR-0820-verifiable-install-artifacts.md), [AR-0821](tasks/AR-0821-one-line-local-install.md) |
-| [AR-0805](tasks/AR-0805-tui-run-control.md) | [AR-0104](tasks/AR-0104-durable-results.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0803](tasks/AR-0803-frontend-control-api.md), [AR-0804](tasks/AR-0804-tui-settings-wizard.md) | [AR-0806](tasks/AR-0806-tui-history-analysis.md), [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0809](tasks/AR-0809-frontend-workflow-guides.md), [AR-0812](tasks/AR-0812-modern-terminal-rendering.md), [AR-0815](tasks/AR-0815-remote-run-lifecycle.md), [AR-0817](tasks/AR-0817-remote-tui-workflows.md), [AR-0821](tasks/AR-0821-one-line-local-install.md) |
+| [AR-0804](tasks/AR-0804-tui-settings-wizard.md) | [AR-0313](tasks/AR-0313-all-agents-provider.md), [AR-0314](tasks/AR-0314-recording-source-choice.md), [AR-0803](tasks/AR-0803-frontend-control-api.md) | [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0809](tasks/AR-0809-frontend-workflow-guides.md), [AR-0812](tasks/AR-0812-modern-terminal-rendering.md), [AR-0817](tasks/AR-0817-remote-tui-workflows.md), [AR-0819](tasks/AR-0819-ssh-remote-bootstrap.md), [AR-0820](tasks/AR-0820-verifiable-install-artifacts.md), [AR-0821](tasks/AR-0821-one-line-local-install.md), [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md) |
+| [AR-0805](tasks/AR-0805-tui-run-control.md) | [AR-0104](tasks/AR-0104-durable-results.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0803](tasks/AR-0803-frontend-control-api.md), [AR-0804](tasks/AR-0804-tui-settings-wizard.md) | [AR-0806](tasks/AR-0806-tui-history-analysis.md), [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0809](tasks/AR-0809-frontend-workflow-guides.md), [AR-0812](tasks/AR-0812-modern-terminal-rendering.md), [AR-0815](tasks/AR-0815-remote-run-lifecycle.md), [AR-0817](tasks/AR-0817-remote-tui-workflows.md), [AR-0821](tasks/AR-0821-one-line-local-install.md), [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md) |
 | [AR-0806](tasks/AR-0806-tui-history-analysis.md) | [AR-0104](tasks/AR-0104-durable-results.md), [AR-0203](tasks/AR-0203-statistical-analysis.md), [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-1001](tasks/AR-1001-experiment-comparability.md) | [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0809](tasks/AR-0809-frontend-workflow-guides.md), [AR-0812](tasks/AR-0812-modern-terminal-rendering.md), [AR-0817](tasks/AR-0817-remote-tui-workflows.md) |
 | [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md) | [AR-0702](tasks/AR-0702-native-platforms.md), [AR-0804](tasks/AR-0804-tui-settings-wizard.md), [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-0806](tasks/AR-0806-tui-history-analysis.md), [AR-0812](tasks/AR-0812-modern-terminal-rendering.md) | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md), [AR-0823](tasks/AR-0823-installation-qualification.md), [AR-0903](tasks/AR-0903-release-qualification.md) |
 | [AR-0808](tasks/AR-0808-core-workflow-guides.md) | [AR-0314](tasks/AR-0314-recording-source-choice.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0505](tasks/AR-0505-agent-replay-conformance.md), [AR-0801](tasks/AR-0801-terminal-interface.md), [AR-0802](tasks/AR-0802-executable-guides.md), [AR-0821](tasks/AR-0821-one-line-local-install.md), [AR-0822](tasks/AR-0822-install-upgrade-rollback.md) | [AR-0810](tasks/AR-0810-github-pages-documentation.md), [AR-0811](tasks/AR-0811-documentation-qualification.md) |
@@ -764,7 +786,7 @@ flowchart LR
 | [AR-0841](tasks/AR-0841-frontend-local-transport.md) | [AR-0104](tasks/AR-0104-durable-results.md), [AR-0840](tasks/AR-0840-frontend-protocol-contract.md) | [AR-0842](tasks/AR-0842-frontend-run-lifecycle.md), [AR-0843](tasks/AR-0843-frontend-privacy-assurance.md), [AR-0844](tasks/AR-0844-frontend-api-integration.md) |
 | [AR-0842](tasks/AR-0842-frontend-run-lifecycle.md) | [AR-0801](tasks/AR-0801-terminal-interface.md), [AR-0840](tasks/AR-0840-frontend-protocol-contract.md), [AR-0841](tasks/AR-0841-frontend-local-transport.md) | [AR-0844](tasks/AR-0844-frontend-api-integration.md) |
 | [AR-0843](tasks/AR-0843-frontend-privacy-assurance.md) | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md), [AR-0841](tasks/AR-0841-frontend-local-transport.md) | [AR-0844](tasks/AR-0844-frontend-api-integration.md) |
-| [AR-0844](tasks/AR-0844-frontend-api-integration.md) | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md), [AR-0841](tasks/AR-0841-frontend-local-transport.md), [AR-0842](tasks/AR-0842-frontend-run-lifecycle.md), [AR-0843](tasks/AR-0843-frontend-privacy-assurance.md) | None |
+| [AR-0844](tasks/AR-0844-frontend-api-integration.md) | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md), [AR-0841](tasks/AR-0841-frontend-local-transport.md), [AR-0842](tasks/AR-0842-frontend-run-lifecycle.md), [AR-0843](tasks/AR-0843-frontend-privacy-assurance.md) | [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md) |
 | [AR-0845](tasks/AR-0845-ci-artifact-quota-resilience.md) | [AR-0003](tasks/AR-0003-quality-gates.md), [AR-0831](tasks/AR-0831-aiws-workflow-routing.md) | [AR-0846](tasks/AR-0846-artifact-retention-cleanup.md) |
 | [AR-0846](tasks/AR-0846-artifact-retention-cleanup.md) | [AR-0845](tasks/AR-0845-ci-artifact-quota-resilience.md), [AR-0903](tasks/AR-0903-release-qualification.md) | None |
 | [AR-0847](tasks/AR-0847-frontend-control-api-repair.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0801](tasks/AR-0801-terminal-interface.md) | None |
@@ -789,6 +811,10 @@ flowchart LR
 | [AR-0866](tasks/AR-0866-workbuddy-replay.md) | [AR-0865](tasks/AR-0865-workbuddy-live.md) | [AR-0867](tasks/AR-0867-workbuddy-parity.md) |
 | [AR-0867](tasks/AR-0867-workbuddy-parity.md) | [AR-0866](tasks/AR-0866-workbuddy-replay.md) | [AR-0868](tasks/AR-0868-workbuddy-qualification.md) |
 | [AR-0868](tasks/AR-0868-workbuddy-qualification.md) | [AR-0867](tasks/AR-0867-workbuddy-parity.md) | [AR-0856](tasks/AR-0856-agent-openjiuwen-workbuddy.md) |
+| [AR-0869](tasks/AR-0869-cli-multi-agent-provider-selection.md) | [AR-0313](tasks/AR-0313-all-agents-provider.md), [AR-0318](tasks/AR-0318-credential-reference-boundary.md), [AR-0320](tasks/AR-0320-provider-credential-integration.md), [AR-0801](tasks/AR-0801-terminal-interface.md) | [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0871](tasks/AR-0871-record-replay-user-workflows.md), [AR-0872](tasks/AR-0872-beginner-workflow-documentation.md) |
+| [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md) | [AR-0804](tasks/AR-0804-tui-settings-wizard.md), [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-0844](tasks/AR-0844-frontend-api-integration.md), [AR-0869](tasks/AR-0869-cli-multi-agent-provider-selection.md) | [AR-0871](tasks/AR-0871-record-replay-user-workflows.md), [AR-0872](tasks/AR-0872-beginner-workflow-documentation.md) |
+| [AR-0871](tasks/AR-0871-record-replay-user-workflows.md) | [AR-0314](tasks/AR-0314-recording-source-choice.md), [AR-0502](tasks/AR-0502-replay-cassettes.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0505](tasks/AR-0505-agent-replay-conformance.md), [AR-0869](tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md) | [AR-0872](tasks/AR-0872-beginner-workflow-documentation.md) |
+| [AR-0872](tasks/AR-0872-beginner-workflow-documentation.md) | [AR-0802](tasks/AR-0802-executable-guides.md), [AR-0869](tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0871](tasks/AR-0871-record-replay-user-workflows.md) | None |
 | [AR-0901](tasks/AR-0901-formal-assurance.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0203](tasks/AR-0203-statistical-analysis.md), [AR-0502](tasks/AR-0502-replay-cassettes.md) | [AR-0903](tasks/AR-0903-release-qualification.md) |
 | [AR-0902](tasks/AR-0902-fault-assurance.md) | [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0503](tasks/AR-0503-strict-replay.md) | [AR-0813](tasks/AR-0813-remote-control-transport.md), [AR-0903](tasks/AR-0903-release-qualification.md) |
 | [AR-0903](tasks/AR-0903-release-qualification.md) | [AR-0002](tasks/AR-0002-coordination-assurance.md), [AR-0003](tasks/AR-0003-quality-gates.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0315](tasks/AR-0315-provider-parity-conformance.md), [AR-0505](tasks/AR-0505-agent-replay-conformance.md), [AR-0702](tasks/AR-0702-native-platforms.md), [AR-0802](tasks/AR-0802-executable-guides.md), [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0811](tasks/AR-0811-documentation-qualification.md), [AR-0818](tasks/AR-0818-remote-control-security-audit.md), [AR-0823](tasks/AR-0823-installation-qualification.md), [AR-0901](tasks/AR-0901-formal-assurance.md), [AR-0902](tasks/AR-0902-fault-assurance.md) | [AR-0846](tasks/AR-0846-artifact-retention-cleanup.md) |
@@ -828,13 +854,14 @@ flowchart LR
 | P1 | [AR-0702](tasks/AR-0702-native-platforms.md): Validate native Linux kernels and architectures | Unclaimed | Exercise native x86_64 and aarch64 including booted openEuler kernels. | Keep reviewed PR #31 head bdaf9c108226f34ec6098f75b51fd601da9e9571 immutable and green; await AR-0703 genuine Debian/openEuler x86_64/aarch64 lab capacity before completing remaining native qualification and AR-0702. |
 | P1 | [AR-0703](tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Provide genuine disposable native hosts for required Debian and openEuler platform qualification. | Obtain explicit provider/account and cost authorization, least-privilege external credentials, quotas, and four genuine disposable Debian 13.6/openEuler 24.03 LTS-SP2 x86_64/aarch64 hosts; then implement reservation/provision/collect/destroy evidence without emulation. |
 
-### Planned (47)
+### Planned (51)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0515](tasks/AR-0515-replay-matrix.md): Aggregate replay conformance matrix | Unclaimed | Aggregate complete per-agent replay conformance. | Aggregate per-agent replay evidence into the complete supported-agent conformance matrix. |
 | P0 | [AR-0521](tasks/AR-0521-openhands-environment-pin.md): Reproduce and pin the OpenHands replay environment | Unclaimed | Repair OpenHands replay environment provenance and reproducibility. | Define an immutable, reproducible OpenHands environment bundle and verifier. |
 | P0 | [AR-0837](tasks/AR-0837-containerized-runner-boundary.md): Qualify containerized runner boundary | Unclaimed | Provide the containerized workflow boundary required for safe trusted runner claims. | Define and qualify a digest-pinned workflow container boundary separating operator, listener, and job principals without host mounts. |
+| P0 | [AR-0872](tasks/AR-0872-beginner-workflow-documentation.md): Publish beginner workflow documentation | Unclaimed | Publish linked beginner workflows for setup, multi-agent runs, progress, comparison, recording, and replay with and without the TUI. | Create the concise beginner workflow hub for equivalent CLI and TUI benchmark journeys. |
 | P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native CSB monitoring, kernel-contention evidence, collector overhead, loss semantics, and platform support before integration. | Build the exact CSB-to-ASB signal inventory and causal native A/B qualification matrix. |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | Define authorized reservation, provisioning, teardown, privacy, cost, and evidence control for genuine native cells. |
 | P1 | [AR-0705](tasks/AR-0705-native-debian-capacity.md): Provide native Debian capacity | Unclaimed | Provide genuine Debian native qualification cells. | Provision and qualify genuine booted Debian x86_64 and aarch64 cells with cleanup and provenance. |
@@ -873,6 +900,9 @@ flowchart LR
 | P1 | [AR-0866](tasks/AR-0866-workbuddy-replay.md): Qualify strict WorkBuddy replay | Unclaimed | Qualify strict WorkBuddy replay. | Seal the sanitized live capture and prove strict offline replay, causal parity, malformed-record rejection, and zero external network. |
 | P1 | [AR-0867](tasks/AR-0867-workbuddy-parity.md): Add WorkBuddy provider parity and support matrix evidence | Unclaimed | Add WorkBuddy provider parity and support matrix evidence. | Extend exact provider parity and the platform support matrix only for executable-qualified WorkBuddy combinations under a serialized shared-path fence. |
 | P1 | [AR-0868](tasks/AR-0868-workbuddy-qualification.md): Independently qualify and document WorkBuddy support | Unclaimed | Independently qualify and document WorkBuddy support. | Run independent exact-tree qualification, offline provenance verification, full gates, native evidence, documentation review, and post-merge validation. |
+| P1 | [AR-0869](tasks/AR-0869-cli-multi-agent-provider-selection.md): Add CLI multi-agent provider selection | Unclaimed | Select several agents and apply one preconfigured provider profile through inspectable command-line options. | Implement and qualify explicit CLI selection of several agents and one advertised provider profile. |
+| P1 | [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md): Add TUI multi-agent provider selection | Unclaimed | Choose several agents and one preconfigured provider for all of them from negotiated TUI selection lists. | Implement and qualify searchable TUI lists for multi-agent and shared provider-profile selection. |
+| P1 | [AR-0871](tasks/AR-0871-record-replay-user-workflows.md): Deliver record and replay user workflows | Unclaimed | Make recording and strict replay complete, explicit, privacy-safe user workflows in both CLI and TUI. | Deliver executable CLI and TUI journeys for recording LLM responses and replaying an exact compatible cassette. |
 | P2 | [AR-0405](tasks/AR-0405-performance-workloads.md): Add performance and reproducibility workloads | Unclaimed | Assess SWE-Perf, SWE-fficiency and CORE-Bench for correctness-preserving optimization and reproducibility. | Run compatibility spikes and accept only workload subsets with stable independent oracles. |
 | P2 | [AR-0602](tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Unclaimed | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit the pinned CSB MonitorFactory and benchmark outputs against ASB metric contracts and controlled contention oracles. |
 | P2 | [AR-0903](tasks/AR-0903-release-qualification.md): Package and qualify the first release | Unclaimed | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. |
