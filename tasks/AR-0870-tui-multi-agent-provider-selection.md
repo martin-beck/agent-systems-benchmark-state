@@ -10,7 +10,7 @@
     "AR-0869"
   ],
   "id": "AR-0870",
-  "next_action": "Monitor exact-head PR #91; investigate any required failure immediately, then perform immutable review, signed no-ff merge and post-merge verification.",
+  "next_action": "Push signed repair b3c19b1 with force-with-lease, then rerun exact-head PR checks; do not merge until all required jobs pass.",
   "observed_branch": "feature/tui-multi-agent-provider-selection",
   "observed_dirty": 1,
   "observed_head": "6c13a324e38f913e3085db32a6e1a2b8c48c6d38",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Choose several agents and one preconfigured provider for all of them from negotiated TUI selection lists.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Add TUI multi-agent provider selection",
-  "updated_at": "2026-09-08T23:44:24+00:00",
+  "updated_at": "2026-09-08T23:44:57+00:00",
   "worktree_key": "agent-systems-benchmark-tui-multi-agent-provider-selection"
 }
 ---
@@ -81,3 +81,9 @@ Implementation has not started. Read the linked plan before claiming.
   compatibility filtering, bounded search/toggle/clear/backtracking, canonical privacy-safe review
   and explicit plan confirmation, with 16 focused tests plus rustfmt/diff/header-policy evidence.
   Exact-head CI is running.
+
+- 2026-09-08T23:44:57+00:00: Exact-head PR #91 failures were one root cause: provider_choice
+  returned a reference without tying its lifetime to the catalog, which rustc rejected under
+  workspace Clippy/coverage builds; the same compile error caused emulated aarch64 and
+  repository-quality failures. Local focused tests, rustfmt and policy pass after signed repair
+  b3c19b1.
