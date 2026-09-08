@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0319](tasks/AR-0319-credential-fd-helper-resolvers.md): Implement credential FD and helper resolvers | Add explicit file-descriptor and helper credential references without ambient-secret fallback. | Run full exact-tree formal/fault/privacy/supply gates on signed successor 75094148, then request fresh independent immutable review; do not publish. | replay_20260906 |
+| P1 | [AR-0319](tasks/AR-0319-credential-fd-helper-resolvers.md): Implement credential FD and helper resolvers | Add explicit file-descriptor and helper credential references without ambient-secret fallback. | Obtain fresh independent immutable review of exact 75094148 repair package; publish only after approval and hosted exact-head Kani/formal CI. | replay_20260906 |
 | P1 | [AR-0805](tasks/AR-0805-tui-run-control.md): Add terminal run control and status | Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI. | Controlled rebase/resign PR #86 onto exact current origin/main 32f79101da348896fdf0fd94c07356889a05b693, preserving fe24e48 TUI semantics, retaining the new Huawei MIT header, and dropping superseded da0d21b pin repair because main already contains signed repair 7add29f. Record range-diff, rerun gates, obtain fresh immutable review, then guarded force-with-lease and fresh exact-head CI. | quality_20260906 |
 
 ## Open

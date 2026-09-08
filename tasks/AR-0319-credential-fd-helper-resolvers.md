@@ -7,7 +7,7 @@
     "AR-0318"
   ],
   "id": "AR-0319",
-  "next_action": "Run full exact-tree formal/fault/privacy/supply gates on signed successor 75094148, then request fresh independent immutable review; do not publish.",
+  "next_action": "Obtain fresh independent immutable review of exact 75094148 repair package; publish only after approval and hosted exact-head Kani/formal CI.",
   "observed_branch": "feature/credential-fd-helper-resolvers",
   "observed_dirty": 0,
   "observed_head": "75094148f951467a10f31e02aaf482b3fef9c4a8",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add explicit file-descriptor and helper credential references without ambient-secret fallback.",
-  "task_revision": 88,
+  "task_revision": 89,
   "title": "Implement credential FD and helper resolvers",
-  "updated_at": "2026-09-08T19:33:54+00:00",
+  "updated_at": "2026-09-08T19:34:18+00:00",
   "worktree_key": "agent-systems-benchmark-credential-fd-helper-resolvers"
 }
 ---
@@ -304,3 +304,17 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T19:33:54+00:00: Recorded command exit 0; command argv SHA-256
   ce69f956bab1516e32282b00907eb85fb0533faa3cf93f9257e3566815c93b1d.
+
+- 2026-09-08T19:34:18+00:00: Final exact-tree repair package is terminal green for candidate
+  75094148f951467a10f31e02aaf482b3fef9c4a8, tree 12654991a8114ae3daefdde7d7090d406f6fa6b8, parent
+  b2707c482876dcfb42c756c39165f6ecdb5c7c10. Full workspace all-target locked tests, doc tests and
+  release build pass. Formal Rust/Loom/production/recovery tests pass; offline TLC exhausts 3,709
+  states at depth 17 and Alloy positive plus all six mutation receipts pass. Mutation sentinels
+  catch 7/7. Four pinned fuzz targets pass 256 runs each with unchanged lock digest and clean tree.
+  Exact-range repository policy, contract consistency, actionlint, zizmor, redacted Gitleaks,
+  cargo-deny, cargo-audit, controlled failure paths, platform manifests and 23 platform tests pass.
+  Coverage floors pass: workspace 90.58% lines, asb-core 99.40%, asb-replay 97.73%. Final immutable
+  check verifies exact head/tree/parent, Martin Beck SSH signature, required DCO, clean four-path
+  scope and clean worktree. Local cargo-kani remains the previously recorded environment-only
+  metadata-launch limitation; hosted exact-head formal CI must supply Kani. No remaining product
+  blocker; fresh independent review requested before publication.
