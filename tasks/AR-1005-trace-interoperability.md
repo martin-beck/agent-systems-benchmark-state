@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose stable causal ASB events and optional standards-based telemetry without binding storage to an evolving convention.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Export interoperable privacy-safe traces",
-  "updated_at": "2026-09-08T10:41:14+00:00",
+  "updated_at": "2026-09-08T10:41:31+00:00",
   "worktree_key": "agent-systems-benchmark-trace-interoperability"
 }
 ---
@@ -111,3 +111,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T10:41:14+00:00: Recorded command exit 0; command argv SHA-256
   b3a0d19dd8a58e0b0a33f66847f699d0821e488e5bd5c8159fc32e0cba2e43a7.
+
+- 2026-09-08T10:41:31+00:00: Recorded command exit 101; command argv SHA-256
+  7fcbc76aa4180b83a24e0f5a0d8a0021305aed2c83e55ec5a23821c757d83edb.
