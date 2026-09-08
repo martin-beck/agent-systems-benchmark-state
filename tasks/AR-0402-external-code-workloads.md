@@ -9,17 +9,17 @@
   "id": "AR-0402",
   "next_action": "Add explicit acquired-source digest/oracle fixtures, then run applicable Rust/full gates when cargo is available.",
   "observed_branch": "feature/external-code-workloads",
-  "observed_dirty": 2,
-  "observed_head": "c6cb98876da22d8bc72c3ae4173f5f9f1c6992c4",
+  "observed_dirty": 0,
+  "observed_head": "697af40e07a046f085505aef9746df54b7120f01",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0402.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:15:21+00:00",
+  "updated_at": "2026-09-08T12:15:27+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
