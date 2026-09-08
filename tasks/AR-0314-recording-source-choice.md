@@ -2,7 +2,7 @@
 {
   "branch": "feature/provider-recording-choice",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T17:04:53+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0104",
     "AR-0310",
@@ -16,15 +16,15 @@
   "observed_branch": "feature/provider-recording-choice",
   "observed_dirty": 2,
   "observed_head": "9feeba6524357df38e3ad118d4c3740306d3ec8e",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0314.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Offer matching prior recordings or an actual provider connection without silently choosing either.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Choose matching replay or live provider execution",
-  "updated_at": "2026-09-08T14:06:33+00:00",
+  "updated_at": "2026-09-08T14:06:41+00:00",
   "worktree_key": "agent-systems-benchmark-provider-recording-choice"
 }
 ---
@@ -73,3 +73,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T14:06:33+00:00: Recorded command exit 101; command argv SHA-256
   6dab8e4e0daf4974e48901fca9cc72f1bf8ff91dd686f51563d8bab821fa6621.
+
+- 2026-09-08T14:06:41+00:00: No durable progress after repeated follow-ups; preserve the dirty
+  replay/catalog skeleton and exact fixture blocker. Release lane so the worker can implement ready
+  AR-0319; AR-0314 may be reclaimed only after fixture repair is explicitly resumed.
