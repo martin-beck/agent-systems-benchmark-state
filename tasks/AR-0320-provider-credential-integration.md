@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate the verified environment credential resolver into the product workspace.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Integrate provider credential boundary",
-  "updated_at": "2026-09-08T14:23:23+00:00",
+  "updated_at": "2026-09-08T14:23:45+00:00",
   "worktree_key": "agent-systems-benchmark-provider-credential-integration"
 }
 ---
@@ -79,3 +79,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T14:23:23+00:00: Recorded command exit 0; command argv SHA-256
   bebca8b53f49fb2948e02e4794a9abd3908f5fedf5779bf81a6aede9db1e02b1.
+
+- 2026-09-08T14:23:45+00:00: Recorded command exit 0; command argv SHA-256
+  92df518802ee9225643ce01947e5e7f3299cbebe613bdf97bfeca325f96e7694.
