@@ -12,7 +12,7 @@
     "AR-0318"
   ],
   "id": "AR-0314",
-  "next_action": "Monitor fresh exact-main runs for signed+DCO additive attestation 76497db8f22c43762f0b5bcbc7f2549c1d17281d: formal 34241332324, repository quality 34241332330, fault 34241332366, Rust 34241332421, emulated-aarch64 34241332329. After all terminal success, fast-forward clean local main, run postmerge verification/doctor, then release AR-0314.",
+  "next_action": "Durable release and post-merge verification are complete; no further AR-0314 action.",
   "observed_branch": "feature/provider-recording-choice",
   "observed_dirty": 0,
   "observed_head": "e8fed7e572b6bf9d14d76f15b91b7cb208e2d48b",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "done",
   "summary": "Offer matching prior recordings or an actual provider connection without silently choosing either.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Choose matching replay or live provider execution",
-  "updated_at": "2026-09-08T15:01:14+00:00",
+  "updated_at": "2026-09-08T21:03:55+00:00",
   "worktree_key": "agent-systems-benchmark-provider-recording-choice"
 }
 ---
@@ -223,3 +223,6 @@ Implementation has not started. Read the linked plan before claiming.
   quality 34241332330, fault 34241332366, Rust 34241332421, and emulated-aarch64 34241332329 all
   succeeded. Product tree unchanged; doctor and clean refs verified. Original GitHub merge e0554b5
   lacks DCO trailer and is preserved; repair is additive attestation, not retroactive signature.
+
+- 2026-09-08T21:03:55+00:00: Repair invalid empty terminal next_action from the completed release
+  transition; preserve all AR-0314 product and evidence metadata unchanged.
