@@ -7,7 +7,7 @@
     "AR-0401"
   ],
   "id": "AR-0402",
-  "next_action": "Wait for PR #79 exact-head CI; independently review all green checks before merge.",
+  "next_action": "Wait for PR #79 exact-head CI; independently review and merge only after all required checks pass.",
   "observed_branch": "feature/external-code-workloads",
   "observed_dirty": 0,
   "observed_head": "bfdc7748fe29a2838451f437d6e0bacc9ec79f4b",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 102,
+  "task_revision": 103,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:34:19+00:00",
+  "updated_at": "2026-09-08T12:34:38+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -284,3 +284,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T12:34:12+00:00: Recorded command exit 0; command argv SHA-256
   72b052b2198b2a4975cf02103f7189b4fc87dac4fc946b9a0b406e44a39d5977.
+
+- 2026-09-08T12:34:38+00:00: PR #79 policy rerun found the offline evaluator fixture digest changed
+  when its SPDX header was added; corrected manifest/test digest and added SPDX headers to all new
+  Python files in signed commit bfdc7748fe29a2838451f437d6e0bacc9ec79f4b. Local workload suite now
+  passes 9/9; PR exact-head CI restarted.
