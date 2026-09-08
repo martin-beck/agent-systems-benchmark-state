@@ -9,7 +9,7 @@
   "id": "AR-0855",
   "next_action": "Require TLA+ and Alloy declarations to name-match their source files, add hostile wrong-name tests for both, rerun applicable gates and all exact-head CI, then obtain fresh independent review. Preserve the state-vendor release blocker.",
   "observed_branch": "fix/huawei-mit-license-headers",
-  "observed_dirty": 1,
+  "observed_dirty": 4,
   "observed_head": "266e86c2cbfd081d039040ba48aba438b1aa6246",
   "owner": "codex-asb-tla-asset-repin",
   "plan": "../plans/AR-0855.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files.",
-  "task_revision": 164,
+  "task_revision": 165,
   "title": "Enforce Huawei MIT source headers",
-  "updated_at": "2026-09-08T18:17:32+00:00",
+  "updated_at": "2026-09-08T18:17:38+00:00",
   "worktree_key": "agent-systems-benchmark-huawei-mit-headers"
 }
 ---
