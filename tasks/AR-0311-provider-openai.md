@@ -26,9 +26,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply one default OpenAI provider profile consistently to all supported agents.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Support a shared OpenAI provider",
-  "updated_at": "2026-09-08T09:55:21+00:00",
+  "updated_at": "2026-09-08T09:55:23+00:00",
   "worktree_key": "agent-systems-benchmark-provider-openai"
 }
 ---
@@ -42,3 +42,6 @@ Implementation has not started. Read the linked plan before claiming.
   and AR-0312 Ollama provider is released.
 
 - 2026-09-08T09:53:27+00:00: Claimed by contracts_20260906.
+
+- 2026-09-08T09:55:23+00:00: Recorded command exit 0; command argv SHA-256
+  7e88ebced015075b888df28562157975bde6d6e50ea68961a5514a936f9ae278.
