@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 43 |
 | **Future** | Deferred roadmap work | 0 |
@@ -61,7 +61,7 @@ flowchart LR
         AR_0308["AR-0308 - Done"]:::status_done
         AR_0309["AR-0309 - Done"]:::status_done
         AR_0310["AR-0310 - Done"]:::status_done
-        AR_0311["AR-0311 - Open"]:::status_open
+        AR_0311["AR-0311 - In progress"]:::status_in_progress
         AR_0312["AR-0312 - Done"]:::status_done
         AR_0313["AR-0313 - Planned"]:::status_planned
         AR_0314["AR-0314 - Planned"]:::status_planned
@@ -735,19 +735,19 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P1 | [AR-0311](tasks/AR-0311-provider-openai.md): Support a shared OpenAI provider | contracts_20260906 | Apply one default OpenAI provider profile consistently to all supported agents. | Implement the default OpenAI provider profile for every adapter that proves compatible support. |
 | P1 | [AR-0904](tasks/AR-0904-contract-consistency.md): Machine-check protocol and artifact consistency | quality_20260906 | Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree. | Independent immutable review of exact candidate 852b549; do not publish until approved. |
 | P1 | [AR-1003](tasks/AR-1003-execution-budgets.md): Enforce cost token and action budgets | replay_20260906 | Bound and report wall time, actions, tokens and monetary cost without treating unavailable telemetry as zero. | Run Clippy and semantic adversarial audit, then complete full locked gates. |
 | P2 | [AR-0402](tasks/AR-0402-external-code-workloads.md): Integrate SWE-bench and Aider Polyglot | root-coordination-20260906 | Add versioned external workload adapters without vendoring datasets. | Define content-addressed external source manifests for SWE-bench 02e7a74ffd0b707aab73d203fe87bdc7c76afc8e and Polyglot 7e0611e77b54e2dea774cdc0aa00cf9f7ed6144f; include Exercism cpp 413b80a9, go 97472cfe, java f1b22a3d, javascript 9be84b9e, python 1f6aab86, rust 1d3a0f46 (all MIT), then pin evaluator/image metadata. |
 
-### Open (2)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0311](tasks/AR-0311-provider-openai.md): Support a shared OpenAI provider | Unclaimed | Apply one default OpenAI provider profile consistently to all supported agents. | Implement the default OpenAI provider profile for every adapter that proves compatible support. |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary. |
 
 ### Blocked (4)

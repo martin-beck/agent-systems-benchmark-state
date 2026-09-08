@@ -2,7 +2,7 @@
 {
   "branch": "feature/provider-openai",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-08T11:53:27+00:00",
   "depends_on": [
     "AR-0301",
     "AR-0302",
@@ -17,15 +17,15 @@
   ],
   "id": "AR-0311",
   "next_action": "Implement the default OpenAI provider profile for every adapter that proves compatible support.",
-  "owner": "",
+  "owner": "contracts_20260906",
   "plan": "../plans/AR-0311.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Apply one default OpenAI provider profile consistently to all supported agents.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Support a shared OpenAI provider",
-  "updated_at": "2026-09-08T09:53:22+00:00",
+  "updated_at": "2026-09-08T09:53:27+00:00",
   "worktree_key": "agent-systems-benchmark-provider-openai"
 }
 ---
@@ -37,3 +37,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T09:53:22+00:00: Promote shared OpenAI provider after all adapter dependencies are done
   and AR-0312 Ollama provider is released.
+
+- 2026-09-08T09:53:27+00:00: Claimed by contracts_20260906.
