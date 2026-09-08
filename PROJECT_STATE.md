@@ -21,7 +21,7 @@ Generated from local Git and GitHub. Do not edit.
 | 34213577174 | `92569367347b` | push | Repository quality | completed:failure |
 | 34213577139 | `92569367347b` | push | Fault assurance | in_progress:- |
 | 34213577128 | `92569367347b` | push | Formal assurance | in_progress:- |
-| 34213577119 | `92569367347b` | push | Rust verification | queued:- |
+| 34213577119 | `92569367347b` | push | Rust verification | in_progress:- |
 | 34213486205 | `39d09374680f` | push | Fault assurance | completed:cancelled |
 | 34213486200 | `39d09374680f` | push | Repository quality | completed:failure |
 | 34213486197 | `39d09374680f` | push | Rust verification | completed:cancelled |
