@@ -2,7 +2,7 @@
 {
   "branch": "feature/benchmark-validity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T03:10:34+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0401",
     "AR-0701",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/benchmark-validity",
   "observed_dirty": 0,
   "observed_head": "60a6c730457b4c40f9a025751c1e317d9fe9429d",
-  "owner": "replay_20260906",
+  "owner": "",
   "plan": "../plans/AR-1007.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Track dataset provenance, contamination risk, grader validity and native portability per workload revision.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Maintain benchmark validity and portability registry",
-  "updated_at": "2026-09-08T00:42:26+00:00",
+  "updated_at": "2026-09-08T00:42:47+00:00",
   "worktree_key": "agent-systems-benchmark-benchmark-validity"
 }
 ---
@@ -266,3 +266,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T00:42:26+00:00: Recorded command exit 0; command argv SHA-256
   f9feb1e3fe19572d1ccc124d45e01da10359229465621eb634448601792e64db.
+
+- 2026-09-08T00:42:47+00:00: Released after independently reviewed candidate
+  60a6c730457b4c40f9a025751c1e317d9fe9429d merged as signed DCO no-ff
+  f42645dd05f17eca5635ca2e82057b703a03a1c3; PR 59 exact-head and exact-main Rust x86_64/aarch64,
+  quality, formal, fault, and emulated aarch64 CI are green. Local exact-main full workspace,
+  formal/Kani/TLC/Alloy, repository/privacy/supply and state validation are green; live doctor
+  passed and product/state refs are synchronized. Registry claims no native workload,
+  contamination-resistant holdout, or performance qualification. Cargo workspace/lock package-edge
+  fence is returned to the coordinator.

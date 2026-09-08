@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 4 |
+| **In progress** | Claimed work with a live lease | 3 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 56 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 57 |
+| **Done** | Accepted, integrated, and durably verified | 58 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -178,7 +178,7 @@ flowchart LR
         AR_1004["AR-1004 - Done"]:::status_done
         AR_1005["AR-1005 - Planned"]:::status_planned
         AR_1006["AR-1006 - Planned"]:::status_planned
-        AR_1007["AR-1007 - In progress"]:::status_in_progress
+        AR_1007["AR-1007 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -719,14 +719,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0505](tasks/AR-0505-agent-replay-conformance.md): Prove real-agent replay conformance | contracts_20260906 | Test each actual client through recording and offline replay of engineering tasks. | Build production-boundary integration matrix using synthetic upstream service. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
 | P1 | [AR-0848](tasks/AR-0848-native-x86-capacity.md): Qualify native x86 capacity | quality_20260906 | Qualify authorized disposable native x86_64 capacity on a development host. | Await independent immutable review of exact signed head 5d2cd78a924b2e2cb76e0bf48e01dca3e9249e74; publish only after approval, then exact-head CI and serialized integration. Native aarch64 and performance support remain explicitly unsupported. |
-| P1 | [AR-1007](tasks/AR-1007-benchmark-validity.md): Maintain benchmark validity and portability registry | replay_20260906 | Track dataset provenance, contamination risk, grader validity and native portability per workload revision. | Implement registry schema and validation for built-in and imported workloads. |
 
 ### Blocked (4)
 
@@ -798,7 +797,7 @@ flowchart LR
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Evaluate maintenance, licenses and reproducibility before integration. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (57)
+### Done (58)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -858,4 +857,5 @@ flowchart LR
 | P1 | [AR-0905](tasks/AR-0905-recovery-models.md): Model execution recovery and worker fencing | Unclaimed | Apply bounded formal models to run lifecycle, leases, recovery, replay cursors and uncertain external effects. | Monitor PR #57 exact head a288bb3485aa2a65ffa79626c3352c6522791138; investigate failures and merge only after every required exact-head check is green and coordinator authorizes. |
 | P1 | [AR-1001](tasks/AR-1001-experiment-comparability.md): Define experiment identity and comparability | Unclaimed | Make every comparison content-addressed and explicit about agent, model, workload and platform confounders. | Await coordinator integration authorization for independently approved exact PR #17 head eb5e849; do not merge or release. Cargo workspace/lock and experiment-schema fence remains held by AR-1001. |
 | P1 | [AR-1004](tasks/AR-1004-reliability-fairness.md): Measure reliability and mixed-workload fairness | Unclaimed | Report repeated-attempt reliability and prevent aggregate results from hiding starvation or hard strata. | Verify exact main 814397f with post-merge local gates and all fresh exact-main hosted CI; release only after green reconciliation. |
+| P1 | [AR-1007](tasks/AR-1007-benchmark-validity.md): Maintain benchmark validity and portability registry | Unclaimed | Track dataset provenance, contamination risk, grader validity and native portability per workload revision. | Implement registry schema and validation for built-in and imported workloads. |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Unclaimed | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Run final state validation/live doctor and release done after confirming clean synchronized product/state refs at signed merge a0d80e4. |
