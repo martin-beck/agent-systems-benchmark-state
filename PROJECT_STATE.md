@@ -11,12 +11,17 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #31 | `feature/native-platforms@bdaf9c108226` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #61 | `feature/kernel-diagnostics@1d24993771a4` | `main` | UNKNOWN | - | metrics: add fail-closed optional kernel probes |
+| #61 | `feature/kernel-diagnostics@1d24993771a4` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, IN_PROGRESS:, QUEUED: | metrics: add fail-closed optional kernel probes |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34189516643 | `1d24993771a4` | pull_request | Formal assurance | queued:- |
+| 34189516640 | `1d24993771a4` | pull_request | Repository quality | in_progress:- |
+| 34189516629 | `1d24993771a4` | pull_request | Fault assurance | queued:- |
+| 34189516611 | `1d24993771a4` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 34189516590 | `1d24993771a4` | pull_request | Rust verification | in_progress:- |
 | 34189279679 | `d3e2dfa979d8` | push | Repository quality | completed:success |
 | 34189279675 | `d3e2dfa979d8` | push | Emulated aarch64 portability | in_progress:- |
 | 34189279652 | `d3e2dfa979d8` | push | Rust verification | completed:success |
@@ -24,8 +29,3 @@ Generated from local Git and GitHub. Do not edit.
 | 34189279599 | `d3e2dfa979d8` | push | Formal assurance | completed:success |
 | 34189110589 | `8d5c20de996c` | pull_request | Formal assurance | completed:success |
 | 34189110510 | `8d5c20de996c` | pull_request | Fault assurance | completed:success |
-| 34189110400 | `8d5c20de996c` | pull_request | Rust verification | completed:failure |
-| 34189110363 | `8d5c20de996c` | pull_request | Emulated aarch64 portability | completed:success |
-| 34189110340 | `8d5c20de996c` | pull_request | Repository quality | completed:success |
-| 34188500317 | `3fc65ea73bad` | pull_request | Repository quality | completed:success |
-| 34188500312 | `3fc65ea73bad` | pull_request | Emulated aarch64 portability | completed:success |
