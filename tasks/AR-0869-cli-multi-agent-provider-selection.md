@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Select several agents and apply one preconfigured provider profile through inspectable command-line options.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Add CLI multi-agent provider selection",
-  "updated_at": "2026-09-08T21:38:49+00:00",
+  "updated_at": "2026-09-08T21:42:46+00:00",
   "worktree_key": "agent-systems-benchmark-cli-multi-agent-provider-selection"
 }
 ---
@@ -47,3 +47,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T21:38:42+00:00: Recorded command exit 0; command argv SHA-256
   ebc36c2c7dfb453910e2ae0d87dd6d64b4a10b9fb1f64d02c36afd5d0c1cc857.
+
+- 2026-09-08T21:42:46+00:00: Recorded command exit 2; command argv SHA-256
+  48458d4adcbc2714c4ae60f17ec39d916357031118af6e75d9a5cd826c73f20e.
