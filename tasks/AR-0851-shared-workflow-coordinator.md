@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt the canonical coordinator as a pinned offline-capable vendor artifact while preserving ASB extensions.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Adopt shared workflow coordinator",
-  "updated_at": "2026-09-08T06:46:20+00:00",
+  "updated_at": "2026-09-08T06:46:57+00:00",
   "worktree_key": "agent-systems-benchmark-shared-coordinator"
 }
 ---
@@ -94,3 +94,6 @@ ASB integration, compatibility evidence, and version pin.
 
 - 2026-09-08T06:46:20+00:00: Recorded command exit 1; command argv SHA-256
   beef9fea4c8dcc506e600a4616993211290db53bab026344e8b7f0ccc2317594.
+
+- 2026-09-08T06:46:57+00:00: Recorded command exit 0; command argv SHA-256
+  cf9b7f700ac4b3e9c81b1237636c63434f5d1b5a0233de3ee9428bda38c5877a.
