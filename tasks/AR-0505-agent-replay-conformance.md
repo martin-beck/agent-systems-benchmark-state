@@ -2,7 +2,7 @@
 {
   "branch": "feature/agent-replay-conformance",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-08T05:49:50+00:00",
   "depends_on": [
     "AR-0503",
     "AR-0504",
@@ -17,15 +17,15 @@
   "observed_branch": "feature/agent-replay-conformance",
   "observed_dirty": 0,
   "observed_head": "678ba7c8593a52beb8f3279ddd452245294131e7",
-  "owner": "",
+  "owner": "quality_20260906",
   "plan": "../plans/AR-0505.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Test each actual client through recording and offline replay of engineering tasks.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Prove real-agent replay conformance",
-  "updated_at": "2026-09-08T02:48:22+00:00",
+  "updated_at": "2026-09-08T02:49:50+00:00",
   "worktree_key": "agent-systems-benchmark-agent-replay-conformance"
 }
 ---
@@ -114,3 +114,5 @@ Implementation has not started. Read the linked plan before claiming.
   capture/capture/strict-replay journeys. AR-0505 is unblocked; next action is rerun the exact
   current-main four-agent native loopback integration audit without weakening strict comparison or
   duplicating AR-0515.
+
+- 2026-09-08T02:49:50+00:00: Claimed by quality_20260906.
