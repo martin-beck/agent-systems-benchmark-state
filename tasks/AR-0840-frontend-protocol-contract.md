@@ -13,11 +13,11 @@
   "plan": "../plans/AR-0840.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Define the stable frontend control protocol contract.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Define frontend protocol contract",
-  "updated_at": "2026-09-08T05:50:22+00:00",
+  "updated_at": "2026-09-08T05:51:08+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-protocol-contract"
 }
 ---
@@ -127,3 +127,6 @@ compatibility rules, bounded errors, and generated consistency checks.
 - 2026-09-08T05:50:22+00:00: 2026-09-08T07:06:00Z: Coordinator lease expired with no active process;
   preserve protocol-contract worktree and all artifacts. Release is lease recovery only; reclaim
   after fresh audit.
+
+- 2026-09-08T05:51:08+00:00: Fresh coordinator reclaim after expired lease recovery; protocol
+  worktree preserved.

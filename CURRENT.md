@@ -10,6 +10,12 @@ Never edit this file directly.
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary. | quality_20260906 |
 | P2 | [AR-0309](tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | Run a maintained MIT OpenHands SDK or canonical headless client. | Await authorization for one controlled signed rebase of approved-scope OpenHands candidate e2b312c onto current main d3e2dfa, then rerun affected exact-tree gates and request immutable review. | contracts_20260906 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -58,7 +64,6 @@ Never edit this file directly.
 | P1 | [AR-0823](tasks/AR-0823-installation-qualification.md): Audit installation and first-run experience | Qualify the one-line experience and complete install lifecycle across the supported native matrix. | Independently attack and usability-test first install, onboarding, upgrade, rollback, repair, and uninstall. | - |
 | P1 | [AR-0832](tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. | - |
 | P1 | [AR-0833](tasks/AR-0833-aiws-runner-reboot-lifecycle.md): Qualify tokenless runner reboot lifecycle | Qualify safe reboot and restart lifecycle for disposable development-host ASB runners. | Design and qualify a tokenless supervisor/orchestration path that can provision fresh ephemeral registrations after boot without storing reusable GitHub credentials. | - |
-| P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. | - |
 | P1 | [AR-0841](tasks/AR-0841-frontend-local-transport.md): Implement frontend local transport | Implement the local frontend control transport and authorization boundary. | Implement bounded owner-only Unix-socket transport with peer checks and fail-closed framing. | - |
 | P1 | [AR-0842](tasks/AR-0842-frontend-run-lifecycle.md): Implement frontend run lifecycle | Define and implement frontend-independent run lifecycle semantics. | Implement idempotent launch, cancellation, status reconnect, history, and recovery semantics. | - |
 | P1 | [AR-0843](tasks/AR-0843-frontend-privacy-assurance.md): Assure frontend privacy and faults | Qualify frontend privacy, artifact access, and fault behavior. | Enforce public-summary and sensitive-artifact boundaries with privacy and fault tests. | - |
