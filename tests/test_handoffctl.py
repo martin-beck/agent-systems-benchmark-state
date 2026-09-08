@@ -27,6 +27,7 @@ def hold_lock(lock_path: str, ready: Any, release: Any) -> None:
     """Hold an exclusive lock in a separate process."""
     CORE.LOCK = Path(lock_path)
     CORE.RUNTIME = CORE.LOCK.parent
+    CORE.ROOT = CORE.RUNTIME.parent
     with CORE.locked():
         ready.set()
         release.wait(5)
@@ -36,6 +37,7 @@ def hold_shared_lock(lock_path: str, ready: Any, release: Any) -> None:
     """Hold a shared lock in a separate process."""
     CORE.LOCK = Path(lock_path)
     CORE.RUNTIME = CORE.LOCK.parent
+    CORE.ROOT = CORE.RUNTIME.parent
     with CORE.locked(exclusive=False):
         ready.set()
         release.wait(5)
@@ -49,6 +51,7 @@ def configure_child(root_value: str) -> None:
     CORE.RUNTIME = root / ".runtime"
     CORE.LOCK = CORE.RUNTIME / "state.lock"
     CORE.CONFIG = CORE.RUNTIME / "config.json"
+    CORE.REPLICA_BLOCKED = CORE.RUNTIME / "replica-blocked.json"
     CORE.PROJECT_CONFIG = root / ".handoffctl.json"
     CORE.BINDING = root / "coordinator.binding.json"
 
@@ -113,6 +116,23 @@ def concurrent_promote(root_value: str, start: Any) -> None:
         CORE.mutate(args, "promote")
 
 
+def hold_repository_lock(root_value: str, ready: Any, release: Any) -> None:
+    """Hold the repository-common lock from one linked worktree."""
+    configure_child(root_value)
+    with CORE.locked():
+        ready.set()
+        release.wait(5)
+
+
+def run_git(args: list[str], *, check: bool = True, capture_output: bool = False) -> None:
+    """Run Git for a real-filesystem integration fixture."""
+    subprocess.run(  # noqa: S603
+        ["/usr/bin/git", *args[1:]],
+        check=check,
+        capture_output=capture_output,
+    )
+
+
 class HandoffTest(unittest.TestCase):
     """Exercise transaction safety without accessing the live project."""
 
@@ -124,6 +144,7 @@ class HandoffTest(unittest.TestCase):
         CORE.RUNTIME = root / ".runtime"
         CORE.LOCK = CORE.RUNTIME / "state.lock"
         CORE.CONFIG = CORE.RUNTIME / "config.json"
+        CORE.REPLICA_BLOCKED = CORE.RUNTIME / "replica-blocked.json"
         CORE.PROJECT_CONFIG = root / ".handoffctl.json"
         CORE.BINDING = root / "coordinator.binding.json"
         CORE.TASKS.mkdir()
@@ -1333,6 +1354,8 @@ class HandoffTest(unittest.TestCase):
             returncode = 0
             if "remote get-url" in joined:
                 stdout = "git@example.invalid:owner/state.git\n"
+            elif "symbolic-ref" in joined:
+                stdout = "main\n"
             elif "rev-parse HEAD" in joined:
                 stdout = local + "\n"
             elif "rev-parse FETCH_HEAD" in joined:
@@ -1359,7 +1382,7 @@ class HandoffTest(unittest.TestCase):
 
         with (
             patch.object(CORE, "run", side_effect=divergent_run),
-            self.assertRaisesRegex(RuntimeError, "diverged"),
+            self.assertRaisesRegex(RuntimeError, "REPLICA_DIVERGED"),
         ):
             CORE.push_replica()
 
@@ -1393,6 +1416,7 @@ class HandoffTest(unittest.TestCase):
         ):
             CORE.cmd_snapshot()
         args = argparse.Namespace(task="AR-0001", owner="worker-a", command=["true"])
+        CORE.CONFIG.write_text("{}")
         with (
             patch.object(CORE.subprocess, "run", return_value=completed) as subprocess_run,
             patch.object(CORE, "reconcile"),
@@ -1430,8 +1454,12 @@ class HandoffTest(unittest.TestCase):
             ),
             patch.object(CORE, "mutate") as mutate,
         ):
-            self.assertEqual(0, CORE.cmd_run(args))
-            self.assertIn("SUBPROCESS_TIMEOUT", mutate.call_args.args[0].note)
+            with self.assertRaisesRegex(
+                CORE.PostCommandReconcileError,
+                "COMMAND_RECORDED_POST_RECONCILE_FAILED",
+            ):
+                CORE.cmd_run(args)
+            self.assertIn("command argv SHA-256", mutate.call_args.args[0].note)
         with (
             patch.object(CORE.subprocess, "run") as command,
             self.assertRaisesRegex(RuntimeError, "timeout must be positive"),
@@ -1460,6 +1488,191 @@ class HandoffTest(unittest.TestCase):
             CORE.cmd_run(argparse.Namespace(task="AR-0001", owner="worker-a", command=["true"]))
         command.assert_not_called()
 
+    def test_replica_prewrite_fast_forward_and_dirty_refusal(self) -> None:
+        CORE.CONFIG.parent.mkdir()
+        CORE.CONFIG.write_text('{"push_enabled": true}')
+        local = "a" * 40
+        remote = "b" * 40
+        calls: list[list[str]] = []
+        dirty = ""
+
+        def fake_run(args: list[str], **_: object) -> object:
+            calls.append(args)
+            joined = " ".join(args)
+            stdout = ""
+            returncode = 0
+            if "remote get-url" in joined:
+                stdout = "git@example.invalid:owner/state.git\n"
+            elif "symbolic-ref" in joined:
+                stdout = "main\n"
+            elif "rev-parse HEAD" in joined:
+                stdout = local + "\n"
+            elif "rev-parse FETCH_HEAD" in joined:
+                stdout = remote + "\n"
+            elif "merge-base" in joined:
+                returncode = 0 if args[-2:] == [local, remote] else 1
+            elif "status --porcelain" in joined:
+                stdout = dirty
+            return subprocess.CompletedProcess(args, returncode, stdout=stdout, stderr="")
+
+        CORE.REPLICA_BLOCKED.write_text("{}")
+        with patch.object(CORE, "run", side_effect=fake_run):
+            CORE.sync_replica_before_write()
+        self.assertFalse(CORE.REPLICA_BLOCKED.exists())
+        self.assertTrue(any("merge" in args and "--ff-only" in args for args in calls))
+
+        calls.clear()
+        dirty = " M task.md\n"
+        with (
+            patch.object(CORE, "run", side_effect=fake_run),
+            self.assertRaisesRegex(CORE.ReplicaDivergedError, "REPLICA_BEHIND_DIRTY"),
+        ):
+            CORE.sync_replica_before_write()
+        self.assertFalse(any("merge" in args and "--ff-only" in args for args in calls))
+        blocked = json.loads(CORE.REPLICA_BLOCKED.read_text())
+        self.assertEqual("REPLICA_BEHIND_DIRTY", blocked["code"])
+
+    def test_repository_common_lock_is_shared_across_worktrees(self) -> None:
+        with TemporaryDirectory() as temporary:
+            base = Path(temporary)
+            primary = base / "state"
+            secondary = base / "state-worktree"
+            run_git(["git", "init", "-b", "main", str(primary)], check=True, capture_output=True)
+            run_git(
+                ["git", "-C", str(primary), "config", "user.email", "test@example.invalid"],
+                check=True,
+            )
+            run_git(
+                ["git", "-C", str(primary), "config", "user.name", "Test"],
+                check=True,
+            )
+            (primary / "seed").write_text("seed\n")
+            run_git(["git", "-C", str(primary), "add", "seed"], check=True)
+            run_git(
+                ["git", "-C", str(primary), "commit", "-m", "seed"],
+                check=True,
+                capture_output=True,
+            )
+            run_git(
+                ["git", "-C", str(primary), "worktree", "add", "-b", "second", str(secondary)],
+                check=True,
+                capture_output=True,
+            )
+            CORE.ROOT = primary
+            CORE.RUNTIME = primary / ".runtime"
+            CORE.LOCK = CORE.RUNTIME / "state.lock"
+            first = CORE.coordinator_lock_path()
+            CORE.ROOT = secondary
+            CORE.RUNTIME = secondary / ".runtime"
+            CORE.LOCK = CORE.RUNTIME / "state.lock"
+            second = CORE.coordinator_lock_path()
+            self.assertEqual(first, second)
+            self.assertEqual(primary / ".git" / "handoffctl" / "state.lock", first)
+            ready = multiprocessing.Event()
+            release = multiprocessing.Event()
+            process = multiprocessing.Process(
+                target=hold_repository_lock,
+                args=(str(primary), ready, release),
+            )
+            process.start()
+            self.assertTrue(ready.wait(5))
+            try:
+                with (
+                    self.assertRaisesRegex(CORE.LockTimeoutError, "LOCK_TIMEOUT"),
+                    CORE.locked(timeout=0.1),
+                ):
+                    pass
+            finally:
+                release.set()
+                process.join(5)
+            self.assertEqual(0, process.exitcode)
+
+    def test_github_observation_retries_and_classifies(self) -> None:
+        completed = subprocess.CompletedProcess(["gh"], 0, stdout="[]", stderr="")
+        with (
+            patch.object(CORE, "run", side_effect=[RuntimeError("HTTP 502"), completed]) as run,
+            patch.object(CORE.time, "sleep") as sleep,
+        ):
+            self.assertIs(completed, CORE.run_github_observation(["gh", "run", "list"]))
+        self.assertEqual(2, run.call_count)
+        sleep.assert_called_once()
+        with (
+            patch.object(CORE, "run", side_effect=RuntimeError("HTTP 502")),
+            patch.object(CORE.time, "sleep"),
+            self.assertRaisesRegex(CORE.ExternalObservationError, "EXTERNAL_API_ERROR"),
+        ):
+            CORE.run_github_observation(["gh", "run", "list"])
+
+    def test_recover_expired_requires_exact_expired_revision(self) -> None:
+        future = (
+            (dt.datetime.now(dt.UTC) + dt.timedelta(minutes=10)).replace(microsecond=0).isoformat()
+        )
+        path = self.make_task(
+            status="in_progress",
+            owner="worker-a",
+            claim_expires=future,
+        )
+        args = argparse.Namespace(
+            task="AR-0001",
+            expected_revision=1,
+            note="No live process remains.",
+        )
+        with (
+            patch.object(CORE, "commit", return_value=True),
+            self.assertRaisesRegex(RuntimeError, "has not expired"),
+        ):
+            CORE.mutate(args, "recover-expired")
+        meta, body = CORE.read_task(path)
+        meta["claim_expires"] = "2000-01-01T00:00:00+00:00"
+        CORE.write_task(path, meta, body)
+        self.refresh_views()
+        with patch.object(CORE, "commit", return_value=True):
+            CORE.mutate(args, "recover-expired")
+        recovered, body = CORE.read_task(path)
+        self.assertEqual("open", recovered["status"])
+        self.assertEqual("", recovered["owner"])
+        self.assertIn("Recovered expired claim formerly owned by worker-a", body)
+        with (
+            patch.object(CORE, "commit", return_value=True),
+            self.assertRaisesRegex(RuntimeError, "stale revision"),
+        ):
+            CORE.mutate(args, "recover-expired")
+
+    def test_run_preflight_and_durable_journal_precede_reconcile(self) -> None:
+        self.make_task(
+            status="in_progress",
+            owner="worker-a",
+            claim_expires="2099-01-01T00:00:00+00:00",
+        )
+        args = argparse.Namespace(task="AR-0001", owner="worker-a", command=["true"])
+        with (
+            patch.object(CORE.subprocess, "run") as command,
+            self.assertRaisesRegex(RuntimeError, "missing private runtime config"),
+        ):
+            CORE.cmd_run(args)
+        command.assert_not_called()
+
+        CORE.CONFIG.parent.mkdir(exist_ok=True)
+        CORE.CONFIG.write_text("{}")
+        completed = subprocess.CompletedProcess(["true"], 0, stdout="", stderr="")
+        with (
+            patch.object(CORE.subprocess, "run", return_value=completed),
+            patch.object(CORE, "mutate"),
+            patch.object(CORE, "reconcile", side_effect=RuntimeError("HTTP 502")),
+            self.assertRaisesRegex(
+                CORE.PostCommandReconcileError,
+                "COMMAND_RECORDED_POST_RECONCILE_FAILED",
+            ),
+        ):
+            CORE.cmd_run(args)
+        journal = [
+            json.loads(line)
+            for line in (CORE.RUNTIME / "command-results.jsonl").read_text().splitlines()
+        ]
+        self.assertEqual(0, journal[-1]["returncode"])
+        self.assertEqual("AR-0001", journal[-1]["task"])
+        self.assertEqual("EXIT", journal[-1]["classification"])
+
     def test_explicit_status_render_and_stale_check(self) -> None:
         self.make_task()
         CORE.cmd_render_status(check=True)
@@ -1470,6 +1683,17 @@ class HandoffTest(unittest.TestCase):
         self.assertEqual(
             CORE.render_status_view(CORE.all_tasks()), (self.root / "STATUS.md").read_text()
         )
+
+    def test_doctor_reports_replica_circuit_breaker(self) -> None:
+        CORE.REPLICA_BLOCKED.parent.mkdir(exist_ok=True)
+        CORE.REPLICA_BLOCKED.write_text('{"code": "REPLICA_DIVERGED"}')
+        with patch.object(CORE, "validate", return_value=[]), patch("builtins.print") as output:
+            self.assertEqual(1, CORE.cmd_doctor(live=False))
+        self.assertIn("REPLICA_DIVERGED", output.call_args.args[0])
+        CORE.REPLICA_BLOCKED.write_text("bad")
+        with patch.object(CORE, "validate", return_value=[]), patch("builtins.print") as output:
+            self.assertEqual(1, CORE.cmd_doctor(live=False))
+        self.assertIn("REPLICA_BLOCKED", output.call_args.args[0])
 
     def test_main_dispatches_every_command(self) -> None:
         cases = [
@@ -1515,6 +1739,19 @@ class HandoffTest(unittest.TestCase):
                     "open",
                     "--note",
                     "pause",
+                ],
+                "mutate",
+                None,
+            ),
+            (
+                [
+                    "handoffctl",
+                    "recover-expired",
+                    "AR-0001",
+                    "--expected-revision",
+                    "1",
+                    "--note",
+                    "expired",
                 ],
                 "mutate",
                 None,

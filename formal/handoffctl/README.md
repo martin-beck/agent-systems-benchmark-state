@@ -16,26 +16,26 @@ owner and generated projections unchanged.
 | --- | --- | --- | --- |
 | `promote` | `planned`, unowned, dependencies done | exact revision | `open` |
 | `resume` | `blocked`, unowned | exact revision | `open` |
-| `claim` | `open`, dependencies done | actor holds no other task | `in_progress`, actor and lease set |
+| `claim` | `open`, dependencies done | owner has no active task | `in_progress`, lease set |
 | `heartbeat` | `in_progress` | current owner, positive lease | lease renewed |
 | `update` | `in_progress` | current owner, exact revision | active fields updated |
 | `release` | `in_progress` | current owner | chosen non-active state, owner and lease cleared |
-| `run` record | `in_progress`, unexpired | current owner, latest locked revision | bounded external result appended as `update` |
+| `recover-expired` | expired `in_progress` | exact revision | `open`, ownership cleared |
+| `run` record | `in_progress`, unexpired | owner and current revision | bounded result recorded |
 
 `release --status` currently accepts every schema status other than
 `in_progress`; therefore the formal model checks releases to `planned`,
 `open`, `blocked`, and `done`.
 
-`run` executes the caller's command outside the coordinator lock, with a finite
-deadline. Its result record then uses the same locked `update` transition at the
-latest revision. The arbitrary external command is outside the TLA+ proof; its
-coordinator-state effect is inside it.
+`run` checks runtime configuration and the live claim before executing outside the coordinator
+lock. Immediately after execution it fsyncs a privacy-safe local journal entry, then commits the
+task result before attempting live reconciliation. `HandoffctlRun.tla` proves that preflight
+rejection has no external effect and that task-record or post-reconciliation failure cannot erase
+journal evidence. Arbitrary command correctness remains outside the proof.
 
-The linearization point is the successful transition while the process holds
-`.runtime/state.lock`. Expected revisions are checked only after lock
-acquisition. Consequently two processes that observed the same revision cannot
-both apply revision-guarded changes, and two claimants cannot both claim one
-open task.
+The linearization point is the successful transition while the process holds the lock below Git's
+common directory. Every worktree of one local clone resolves the same lock path. Expected revisions
+are checked only after acquisition, so two processes observing one revision cannot both mutate it.
 
 ## Permanent project binding
 
@@ -65,8 +65,10 @@ readers, a competing writer, and bounded lock-wait timeout. TLC checks:
 
 Two processes are sufficient for pairwise lifecycle races; two tasks cover the
 one-active-task-per-actor invariant. The separate three-process lock model
-covers two readers plus one writer. The binding model covers the configured project and one foreign
-caller, including rejection without mutation and fair progress for correct calls. These are finite
+covers two readers plus one writer and two worktree identities resolving one repository-common lock.
+`HandoffctlRun.tla` covers preflight rejection, external execution, durable journaling, task-record
+failure, and post-reconciliation success or failure. The binding model covers the configured
+project and one foreign caller, including rejection without mutation and fair progress. These are
 exhaustive proofs of the abstractions, not proofs of Linux, Git, Python, or the filesystem
 implementation.
 
@@ -75,10 +77,9 @@ implementation.
 The implementation satisfies the model only while all of these obligations
 hold:
 
-1. Every cooperating reader and writer uses the same local
-   `.runtime/state.lock`; the filesystem implements local POSIX `flock(2)`
-   semantics. NFS and non-cooperating direct file/Git writers are outside the
-   proof boundary.
+1. Every cooperating reader and writer uses the repository-common coordinator lock below Git's
+   common directory; the filesystem implements local POSIX `flock(2)` semantics. Separate clones,
+   NFS, and non-cooperating direct file/Git writers are outside the proof boundary.
 2. Task and projection replacement is atomic, validation occurs before commit,
    and detected pre-commit exceptions restore every touched path.
 3. Lock acquisition and internal Git/GitHub scans have finite deadlines.

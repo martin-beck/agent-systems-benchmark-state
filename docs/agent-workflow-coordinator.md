@@ -71,7 +71,15 @@ tools/handoffctl doctor --live
 
 Use `promote` only for `planned -> open` after dependencies complete. Use `resume` only for
 `blocked -> open` after independently verifying the external blocker. Both require the exact
-current revision.
+current revision. Use `recover-expired` instead of impersonating the prior owner with `release`
+when another process recovers an abandoned claim:
+
+```sh
+tools/handoffctl recover-expired AR-0001 --expected-revision REVISION \
+  --note "UTC expiry and absence of the previous worker independently verified"
+```
+
+A future or malformed deadline and a stale revision are rejected before mutation.
 
 ## Extend safely
 
@@ -89,13 +97,14 @@ Use a clean checkout at an exact upstream release tag:
 python /path/to/agent-workflow-coordinator/tools/vendor.py sync \
   --source /path/to/agent-workflow-coordinator \
   --target /path/to/project-state \
-  --version v0.1.4
+  --version v0.2.0
 python tools/handoffctl_vendor.py verify --target .
 ```
 
-Sync never copies or regenerates the project profile or binding. Review the full vendor diff and run
-project integration tests before committing. On interruption, inspect the manifest, hashes, refs,
-release and CI before retrying.
+Sync stages the complete file set before rollback-capable rename installation. It never copies or
+regenerates the project profile or binding. Review the full vendor diff and run project integration
+tests before committing. On interruption, inspect the manifest, hashes, refs, release and CI before
+retrying.
 
 ## Proof boundary
 
