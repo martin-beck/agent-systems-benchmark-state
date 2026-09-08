@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve provider credential references without exposing secrets or accepting ambient credentials.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Implement the credential-reference boundary",
-  "updated_at": "2026-09-08T13:56:01+00:00",
+  "updated_at": "2026-09-08T13:56:30+00:00",
   "worktree_key": "agent-systems-benchmark-credential-reference-boundary"
 }
 ---
@@ -61,4 +61,7 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-08T13:55:27+00:00: Claimed by quality_20260906.
 
 - 2026-09-08T13:56:01+00:00: Recorded command exit 101; command argv SHA-256
+  349ba7866d855184d507c3622d80b24a4d928770cfce174ba3c31b1e9979e277.
+
+- 2026-09-08T13:56:30+00:00: Recorded command exit 0; command argv SHA-256
   349ba7866d855184d507c3622d80b24a4d928770cfce174ba3c31b1e9979e277.
