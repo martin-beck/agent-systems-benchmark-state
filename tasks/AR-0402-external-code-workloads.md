@@ -10,16 +10,16 @@
   "next_action": "Integrate comparison output into the production result/report path; retain explicit limitations and unqualified evaluator status.",
   "observed_branch": "feature/external-code-workloads",
   "observed_dirty": 0,
-  "observed_head": "4e672f64e734bb2fe1f1a164967163d0e1368dae",
+  "observed_head": "8a8e7e6c8271397d65418e3fdd7fa4cde7f496d6",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0402.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 133,
+  "task_revision": 134,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T13:19:53+00:00",
+  "updated_at": "2026-09-08T13:19:59+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
