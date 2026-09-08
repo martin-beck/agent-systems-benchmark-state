@@ -2,7 +2,7 @@
 {
   "branch": "feature/provider-recording-choice",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T15:37:29+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0104",
     "AR-0310",
@@ -16,15 +16,15 @@
   "observed_branch": "feature/provider-recording-choice",
   "observed_dirty": 2,
   "observed_head": "9feeba6524357df38e3ad118d4c3740306d3ec8e",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0314.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Offer matching prior recordings or an actual provider connection without silently choosing either.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Choose matching replay or live provider execution",
-  "updated_at": "2026-09-08T13:43:53+00:00",
+  "updated_at": "2026-09-08T13:45:01+00:00",
   "worktree_key": "agent-systems-benchmark-provider-recording-choice"
 }
 ---
@@ -64,3 +64,7 @@ Implementation has not started. Read the linked plan before claiming.
   resolver mutation. Focused cargo test exited 101 at compile time because the new test fixture
   incorrectly supplied nonexistent PolicyVersion.name; product code did not run. Preserve unchanged
   until dependency update.
+
+- 2026-09-08T13:45:01+00:00: Paused safely: replay/catalog skeleton remains in declared worktree;
+  live provider path is fenced on new AR-0318. Release lane so credential boundary can be
+  implemented.
