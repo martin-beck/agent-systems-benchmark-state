@@ -11,15 +11,18 @@
   ],
   "id": "AR-0805",
   "next_action": "Create the declared worktree with the corrected exact git worktree add invocation; then hold product mutation until active AR-0855 broad source-header fence is integrated/released.",
+  "observed_branch": "feature/tui-run-control",
+  "observed_dirty": 0,
+  "observed_head": "b2707c482876dcfb42c756c39165f6ecdb5c7c10",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0805.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T16:24:03+00:00",
+  "updated_at": "2026-09-08T16:24:10+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
