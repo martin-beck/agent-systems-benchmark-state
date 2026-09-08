@@ -2,7 +2,7 @@
 {
   "branch": "feature/execution-budgets",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-08T11:34:25+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0301",
@@ -12,15 +12,15 @@
   ],
   "id": "AR-1003",
   "next_action": "Specify budget capabilities and normalize provider usage with explicit uncertainty.",
-  "owner": "",
+  "owner": "replay_20260906",
   "plan": "../plans/AR-1003.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Bound and report wall time, actions, tokens and monetary cost without treating unavailable telemetry as zero.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Enforce cost token and action budgets",
-  "updated_at": "2026-09-08T09:34:23+00:00",
+  "updated_at": "2026-09-08T09:34:25+00:00",
   "worktree_key": "agent-systems-benchmark-execution-budgets"
 }
 ---
@@ -32,3 +32,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T09:34:23+00:00: Dependencies AR-0101 and AR-0301 through AR-0304 are done; promote
   execution-budget enforcement as the next independent P1 lane.
+
+- 2026-09-08T09:34:25+00:00: Claimed by replay_20260906.
