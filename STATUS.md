@@ -757,7 +757,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0319](tasks/AR-0319-credential-fd-helper-resolvers.md): Implement credential FD and helper resolvers | replay_20260906 | Add explicit file-descriptor and helper credential references without ambient-secret fallback. | Implement the bounded versioned allowlisted helper resolver and its timeout/cancellation/malformed/oversize/nonzero/privacy negatives; then run full focused gates and create a signed checkpoint. |
 | P1 | [AR-0805](tasks/AR-0805-tui-run-control.md): Add terminal run control and status | quality_20260906 | Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI. | Apply the same bounded reconnect/page/cancellation extension using smaller exact post-fmt context hunks, then rerun focused tests. |
-| P2 | [AR-0403](tasks/AR-0403-terminal-workloads.md): Integrate Terminal-Bench workloads | contracts_20260906 | Import terminal tasks through an adapter to the published harness or task format. | Independent review the signed adapter checkpoint e0da4efd; run exact-tree quality gates and retain explicit unqualified Terminal-Bench limitations. |
+| P2 | [AR-0403](tasks/AR-0403-terminal-workloads.md): Integrate Terminal-Bench workloads | contracts_20260906 | Import terminal tasks through an adapter to the published harness or task format. | Authorize one controlled signed rebase of repaired candidate 6501f7b onto exact current product main b2707c48; preserve six-path scope, rerun affected exact-tree gates, and retain explicit no-native/no-execution qualification limits. |
 
 ### Open (1)
 

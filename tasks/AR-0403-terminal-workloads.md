@@ -7,7 +7,7 @@
     "AR-0401"
   ],
   "id": "AR-0403",
-  "next_action": "Independent review the signed adapter checkpoint e0da4efd; run exact-tree quality gates and retain explicit unqualified Terminal-Bench limitations.",
+  "next_action": "Authorize one controlled signed rebase of repaired candidate 6501f7b onto exact current product main b2707c48; preserve six-path scope, rerun affected exact-tree gates, and retain explicit no-native/no-execution qualification limits.",
   "observed_branch": "feature/terminal-workloads",
   "observed_dirty": 0,
   "observed_head": "6501f7bcb3cf8aa3d6265b1ad20144feaa696ed8",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Import terminal tasks through an adapter to the published harness or task format.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Integrate Terminal-Bench workloads",
-  "updated_at": "2026-09-08T16:44:21+00:00",
+  "updated_at": "2026-09-08T16:44:53+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-workloads"
 }
 ---
@@ -162,3 +162,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T16:44:21+00:00: Recorded command exit 0; command argv SHA-256
   8e7fd8f73547331c19bb1d662b9ac77d253e5d3ddf116aa91572c16100984330.
+
+- 2026-09-08T16:44:53+00:00: Independent review found a fail-open promotion path in e0da4efd:
+  Terminal-Bench provenance could be changed to qualified with syntactically valid fake hashes while
+  network remained public and reset unverified, allowing planner/runner subprocess execution.
+  Repaired in signed+DCO successor 6501f7bcb3cf8aa3d6265b1ad20144feaa696ed8/tree
+  3d31c9408244969851ce7ce3f04758d1555c1f29 by binding exact source/dataset/Harbor/license digests
+  and requiring the record to remain planned with no image/SBOM/evidence until native qualification;
+  added hostile source/harness/false-qualification negatives and lint fixes. Focused pytest 10
+  passed, full workload pytest 21 passed, Ruff/mypy green, full workspace
+  fmt/clippy/test/docs/release green, exact two-commit policy/DCO/signatures/diff-check and Gitleaks
+  green. Initial full gate failure was environment-only cargo absent from wrapper PATH and passed
+  with the pinned 1.93 toolchain. Candidate remains clean and unpublished; acceptance still
+  explicitly lacks native oracle/image/reset/network qualification.
