@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T16:37:08+00:00",
+  "updated_at": "2026-09-08T16:38:01+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -58,3 +58,6 @@ Implementation has not started. Read the linked plan before claiming.
   feature/tui-run-control, clean at exact product main b2707c482876dcfb42c756c39165f6ecdb5c7c10.
   Active AR-0855 candidate touches crates/asb-tui/src/lib.rs and main.rs, so shared path mutation is
   fenced pending its integration/release.
+
+- 2026-09-08T16:38:01+00:00: Recorded command exit 2; command argv SHA-256
+  48458d4adcbc2714c4ae60f17ec39d916357031118af6e75d9a5cd826c73f20e.
