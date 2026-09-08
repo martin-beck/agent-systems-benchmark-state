@@ -2,7 +2,7 @@
 {
   "branch": "feature/tui-run-control",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T22:33:05+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0104",
     "AR-0204",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/tui-run-control",
   "observed_dirty": 0,
   "observed_head": "b44282a31e902175059f9fed350ce888cf4b82ec",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0805.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 112,
+  "task_revision": 113,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T19:52:18+00:00",
+  "updated_at": "2026-09-08T19:53:37+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -453,3 +453,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T19:52:18+00:00: Recorded command exit 0; command argv SHA-256
   99d5c342a32427faaafd079848066e404cff41d5d7241498f06f8b35a0697daa.
+
+- 2026-09-08T19:53:37+00:00: Released after serialized signed+DCO no-ff merge of PR #86 as exact
+  product main f59e6b138a9b02850fadc7d81ebec09d8ff3fa0f (tree
+  7a7732eae29be65f55b40ed3b6239533fac470fc; parents 32f79101da348896fdf0fd94c07356889a05b693 and
+  b44282a31e902175059f9fed350ce888cf4b82ec). Fresh exact-main workflows all terminal SUCCESS: Formal
+  assurance 34270816753, Fault assurance 34270816800, Huawei MIT source headers 34270816782, Rust
+  verification 34270816763, Repository quality 34270816805, Emulated aarch64 portability
+  34270816847. Final local exact-main checks passed: asb-tui 13/13, fmt, focused all-target clippy
+  -D warnings, exact merge-range repository policy, clean refs/tree. Reconcile/snapshot/live doctor
+  were green before release. Proven scope remains reconnectable terminal control; protocol lacks
+  scheduler capacity/deadline/lease/provider-source/metrics/warning availability, and native
+  resource behavior, terminal resize, and frontend process separation remain unqualified.
