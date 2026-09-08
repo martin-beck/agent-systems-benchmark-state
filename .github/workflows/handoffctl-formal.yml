@@ -38,8 +38,8 @@ jobs:
     if: >-
       github.event_name != 'pull_request' ||
       github.event.pull_request.head.repo.full_name == github.repository
-    runs-on: ubuntu-24.04
-    timeout-minutes: 30
+    runs-on: [self-hosted, linux, x64, agent-systems-benchmark-state-ci]
+    timeout-minutes: 15
 
     steps:
       - name: Check out source without credentials
