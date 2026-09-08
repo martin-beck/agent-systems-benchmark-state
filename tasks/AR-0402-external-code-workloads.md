@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T08:44:09+00:00",
+  "updated_at": "2026-09-08T08:50:55+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -77,3 +77,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-08T08:44:09+00:00: Fresh official API audit pinned all six Exercism source repositories
   and found MIT SPDX metadata for each. No source content or datasets were copied; product
   implementation remains pending manifest design and evaluator/image provenance.
+
+- 2026-09-08T08:50:55+00:00: Recorded command exit 0; command argv SHA-256
+  e90773ea7ff6a8bdec37246f48ded8d0fd80dd341641f933c33f7cbb83624847.
