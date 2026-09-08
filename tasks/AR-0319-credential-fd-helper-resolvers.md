@@ -7,7 +7,7 @@
     "AR-0318"
   ],
   "id": "AR-0319",
-  "next_action": "Obtain fresh independent immutable review of exact 75094148 repair package; publish only after approval and hosted exact-head Kani/formal CI.",
+  "next_action": "Obtain fresh independent immutable review of exact ef5c40762e27061f671be25eb95d26079d93768a; after approval publish immutable head and require hosted exact-head Kani/formal CI before merge.",
   "observed_branch": "feature/credential-fd-helper-resolvers",
   "observed_dirty": 0,
   "observed_head": "ef5c40762e27061f671be25eb95d26079d93768a",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add explicit file-descriptor and helper credential references without ambient-secret fallback.",
-  "task_revision": 102,
+  "task_revision": 103,
   "title": "Implement credential FD and helper resolvers",
-  "updated_at": "2026-09-08T20:22:07+00:00",
+  "updated_at": "2026-09-08T20:22:38+00:00",
   "worktree_key": "agent-systems-benchmark-credential-fd-helper-resolvers"
 }
 ---
@@ -354,3 +354,19 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T20:22:07+00:00: Recorded command exit 0; command argv SHA-256
   5e9c0290e31fd018806401183223e77bb33d8d6ba930c94ff76b1656f27b4d76.
+
+- 2026-09-08T20:22:38+00:00: Controlled rebase complete: signed+DCO candidate
+  ef5c40762e27061f671be25eb95d26079d93768a, tree 356e99e7e36f2cb2b893cc5e9d83e796d90cf4a3, parent
+  exact current-main f59e6b138a9b02850fadc7d81ebec09d8ff3fa0f. Backup ref preserves 75094148 and
+  range-diff is exact '=' (7509414 = ef5c407). Four-path scope unchanged; sealed memfd executable
+  staging, seals/hash revalidation, no helper/concurrent child FD inheritance, and stale source
+  mutation/replacement negatives are preserved. Post-rebase focused credential tests 14/14, fmt,
+  Clippy -D warnings, workspace all-target/doc/release, formal Cargo tests, TLC (3709 states/depth
+  17), Alloy plus six mutations, mutation sentinels 7/7, coverage policy, privacy, repository
+  policy, Gitleaks, cargo-deny/audit, platform and controlled-failure gates passed. Bounded fuzz
+  protocol_jsonrpc/cassette_decode/replay_sse/store_paths ran 256 cases each without crash and fuzz
+  Cargo.lock remained exact; its first wrapper returned only a coordinator-lock timeout while
+  recording after successful cleanup, followed by a successful immutable wrapper record. Final
+  signature/DCO/diff/scope/clean-tree check passes. Local pinned Kani cannot discover cargo metadata
+  in this environment; hosted exact-head Kani/formal remains the explicit CI gate, not claimed
+  locally.
