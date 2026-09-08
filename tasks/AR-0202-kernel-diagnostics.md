@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate perf and optional eBPF diagnostics without making privileged tools mandatory.",
-  "task_revision": 146,
+  "task_revision": 147,
   "title": "Add optional kernel diagnostics",
-  "updated_at": "2026-09-08T22:58:53+00:00",
+  "updated_at": "2026-09-08T22:59:27+00:00",
   "worktree_key": "agent-systems-benchmark-kernel-diagnostics"
 }
 ---
@@ -421,3 +421,6 @@ Implementation has not started. Read the linked plan before claiming.
   copyright header; repository-policy job failed. Policy job also stopped on the same header. ARM
   Rust job remains in progress/failed status not yet classified; feature work preempted pending CI
   log review. Branch/worktree remain clean at bf82f96.
+
+- 2026-09-08T22:59:27+00:00: Recorded command exit 1; command argv SHA-256
+  949ec89b0fcd658eca0817a7932984e5ea65256b111adc64a8958a0088d5056e.
