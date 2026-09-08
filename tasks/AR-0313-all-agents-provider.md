@@ -10,7 +10,7 @@
   "id": "AR-0313",
   "next_action": "Extend the green two-file atomic preflight core into the versioned provider-plan/config and CLI reporting surface without touching crates/asb-cli/src/control.rs; add stale/mixed/partial serialization and recovery negatives, then run full applicable gates.",
   "observed_branch": "feature/all-agents-provider",
-  "observed_dirty": 2,
+  "observed_dirty": 3,
   "observed_head": "b6078bb1ca2ee8f35973ffab9740c2c12dd4126e",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0313.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Let test plans select one provider profile for every chosen supported agent atomically.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Configure one provider for all agents",
-  "updated_at": "2026-09-08T11:23:40+00:00",
+  "updated_at": "2026-09-08T11:27:45+00:00",
   "worktree_key": "agent-systems-benchmark-all-agents-provider"
 }
 ---
