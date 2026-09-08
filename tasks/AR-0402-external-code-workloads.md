@@ -7,7 +7,7 @@
     "AR-0401"
   ],
   "id": "AR-0402",
-  "next_action": "Add digest verification/acquisition boundary and oracle fixtures, then run Rust/full quality gates.",
+  "next_action": "Add explicit acquired-source digest/oracle fixtures, then run applicable Rust/full gates when cargo is available.",
   "observed_branch": "feature/external-code-workloads",
   "observed_dirty": 0,
   "observed_head": "c6cb98876da22d8bc72c3ae4173f5f9f1c6992c4",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:13:46+00:00",
+  "updated_at": "2026-09-08T12:14:00+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -170,3 +170,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T12:13:39+00:00: Recorded command exit 0; command argv SHA-256
   56af1ba00f8ffdae22a1161630796e0cde24858a15e065052dcb7831b3d85484.
+
+- 2026-09-08T12:14:00+00:00: Added signed product commit c6cb98876da22d8bc72c3ae4173f5f9f1c6992c4
+  with full 40-character Exercism source pins and a fail-closed external-registry validator.
+  Registry and validator tests pass 2/2; validator emits stable registry digest
+  d1e2c2edbf7e39802cc222c03fc933a26d8e01eba9353069fb9a5852e7288afa. No dataset acquisition or image
+  qualification is claimed.
