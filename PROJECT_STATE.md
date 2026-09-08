@@ -12,14 +12,14 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- | --- |
 | #31 | `feature/native-platforms@bdaf9c108226` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
 | #61 | `feature/kernel-diagnostics@1d24993771a4` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | metrics: add fail-closed optional kernel probes |
-| #68 | `feature/awq-shadow@9ca58000d0cb` | `main` | UNSTABLE | COMPLETED:FAILURE, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: add AWQ v0.1.0 shadow verification |
+| #68 | `feature/awq-shadow@9ca58000d0cb` | `main` | UNSTABLE | COMPLETED:FAILURE, QUEUED:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: add AWQ v0.1.0 shadow verification |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 34206020685 | `9ca58000d0cb` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 34206020642 | `9ca58000d0cb` | pull_request | Formal assurance | in_progress:- |
+| 34206020642 | `9ca58000d0cb` | pull_request | Formal assurance | completed:success |
 | 34206020621 | `9ca58000d0cb` | pull_request | Emulated aarch64 portability | queued:- |
 | 34206020620 | `9ca58000d0cb` | pull_request | Fault assurance | in_progress:- |
 | 34206020616 | `9ca58000d0cb` | pull_request | Rust verification | in_progress:- |
