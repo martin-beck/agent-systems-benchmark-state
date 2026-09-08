@@ -10,17 +10,17 @@
   "id": "AR-0202",
   "next_action": "Wait for exact-main post-merge checks, run local post-merge verification, then retain AR-0202 in progress pending genuine native aarch64 evidence; do not release as done yet.",
   "observed_branch": "feature/kernel-diagnostics",
-  "observed_dirty": 0,
-  "observed_head": "fb2adac65f10aa4b228a0bdf3643285161ceea10",
+  "observed_dirty": 1,
+  "observed_head": "3514089fa378bd50629c9794b215fd53c8ea7d5d",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0202.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate perf and optional eBPF diagnostics without making privileged tools mandatory.",
-  "task_revision": 186,
+  "task_revision": 187,
   "title": "Add optional kernel diagnostics",
-  "updated_at": "2026-09-08T23:20:27+00:00",
+  "updated_at": "2026-09-08T23:20:34+00:00",
   "worktree_key": "agent-systems-benchmark-kernel-diagnostics"
 }
 ---
