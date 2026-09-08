@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**122 ARs tracked** across 5 active status categories.
+**122 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 3 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 55 |
 | **Future** | Deferred roadmap work | 0 |
@@ -161,7 +161,7 @@ flowchart LR
         AR_0847["AR-0847 - Done"]:::status_done
         AR_0848["AR-0848 - Done"]:::status_done
         AR_0849["AR-0849 - Done"]:::status_done
-        AR_0850["AR-0850 - Open"]:::status_open
+        AR_0850["AR-0850 - In progress"]:::status_in_progress
     end
     subgraph series_09["09 - Assurance"]
         direction TB
@@ -723,18 +723,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-0850](tasks/AR-0850-aider-deterministic-replay.md): Repair deterministic aider replay | quality_20260906 | Repair aider replay nondeterminism caused by process-dependent file ordering. | Make pinned aider multi-file capture ordering deterministic across separately spawned processes, then prove strict replay parity and rerun the native journey. |
 | P1 | [AR-0840](tasks/AR-0840-frontend-protocol-contract.md): Define frontend protocol contract | root-coordination-20260906 | Define the stable frontend control protocol contract. | Define version-negotiated frontend requests, events, capabilities, and fixtures. |
 | P1 | [AR-1002](tasks/AR-1002-verifier-integrity.md): Protect verifiers and support offline rescoring | replay_20260906 | Separate immutable graders from agent work and version scoring independently of execution. | Design the immutable observation and score-revision contract using Inspect and Harbor concepts. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-0850](tasks/AR-0850-aider-deterministic-replay.md): Repair deterministic aider replay | Unclaimed | Repair aider replay nondeterminism caused by process-dependent file ordering. | Make pinned aider multi-file capture ordering deterministic across separately spawned processes, then prove strict replay parity and rerun the native journey. |
 
 ### Blocked (5)
 
