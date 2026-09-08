@@ -9,7 +9,7 @@
   "id": "AR-0319",
   "next_action": "Implement the bounded versioned allowlisted helper resolver and its timeout/cancellation/malformed/oversize/nonzero/privacy negatives; then run full focused gates and create a signed checkpoint.",
   "observed_branch": "feature/credential-fd-helper-resolvers",
-  "observed_dirty": 1,
+  "observed_dirty": 3,
   "observed_head": "b2707c482876dcfb42c756c39165f6ecdb5c7c10",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0319.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add explicit file-descriptor and helper credential references without ambient-secret fallback.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Implement credential FD and helper resolvers",
-  "updated_at": "2026-09-08T17:13:17+00:00",
+  "updated_at": "2026-09-08T17:13:23+00:00",
   "worktree_key": "agent-systems-benchmark-credential-fd-helper-resolvers"
 }
 ---

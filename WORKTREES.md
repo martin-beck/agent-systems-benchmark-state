@@ -24,8 +24,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ci-artifact-quota-resilience` | `feature/ci-artifact-quota-resilience` | `7d98653e7e7f` | 0 | behind 138, ahead 0 |
 | `agent-systems-benchmark-contract-consistency` | `feature/contract-consistency` | `289b2711774b` | 0 | behind 48, ahead 0 |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 261, ahead 0 |
-| `agent-systems-benchmark-credential-fd-helper-resolvers` | `feature/credential-fd-helper-resolvers` | `b2707c482876` | 1 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-agents/src/credential.rs` |
+| `agent-systems-benchmark-credential-fd-helper-resolvers` | `feature/credential-fd-helper-resolvers` | `b2707c482876` | 3 | behind 0, ahead 0 |
+| changed files | - | - | - | `Cargo.lock`, `crates/asb-agents/Cargo.toml`, `crates/asb-agents/src/credential.rs` |
 | `agent-systems-benchmark-credential-reference-boundary` | `feature/credential-reference-boundary` | `5d62546b5d56` | 0 | behind 9, ahead 0 |
 | `agent-systems-benchmark-csb-execution-assurance` | `feature/csb-execution-assurance` | `39e306124b56` | 0 | behind 141, ahead 0 |
 | `agent-systems-benchmark-csb-integration` | `feature/csb-integration` | `524db90c8933` | 0 | behind 54, ahead 0 |
