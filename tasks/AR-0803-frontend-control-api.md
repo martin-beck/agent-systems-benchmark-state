@@ -18,11 +18,11 @@
   "plan": "../plans/AR-0803.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary.",
-  "task_revision": 328,
+  "task_revision": 329,
   "title": "Define the frontend control API",
-  "updated_at": "2026-09-08T05:50:31+00:00",
+  "updated_at": "2026-09-08T05:51:13+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api"
 }
 ---
@@ -949,3 +949,6 @@ Implementation has not started. Read the linked plan before claiming.
   platform unittest has 12 pass plus host-python jsonschema import failure;
   coverage/dependency/fault/formal/Kani/privacy/workspace gates pass; fuzz/mutation and final
   immutable recheck remain pending. Reclaim only after fresh process/environment audit.
+
+- 2026-09-08T05:51:13+00:00: Fresh worker reclaim after expired lease recovery; candidate and
+  evidence worktrees preserved.
