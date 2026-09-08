@@ -20,7 +20,7 @@ Generated from local Git and GitHub. Do not edit.
 | 34207708072 | `a97c3ed708cc` | push | Repository quality | in_progress:- |
 | 34207708071 | `a97c3ed708cc` | push | Emulated aarch64 portability | in_progress:- |
 | 34207708009 | `a97c3ed708cc` | push | Rust verification | in_progress:- |
-| 34207708004 | `a97c3ed708cc` | push | Formal assurance | in_progress:- |
+| 34207708004 | `a97c3ed708cc` | push | Formal assurance | completed:success |
 | 34207707978 | `a97c3ed708cc` | push | Fault assurance | in_progress:- |
 | 34207250516 | `2f0f84d4b3ad` | push | Rust verification | completed:success |
 | 34207250470 | `2f0f84d4b3ad` | push | Repository quality | completed:success |
