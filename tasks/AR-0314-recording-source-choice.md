@@ -2,7 +2,7 @@
 {
   "branch": "feature/provider-recording-choice",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-08T17:38:25+00:00",
   "depends_on": [
     "AR-0104",
     "AR-0310",
@@ -16,15 +16,15 @@
   "observed_branch": "feature/provider-recording-choice",
   "observed_dirty": 0,
   "observed_head": "1d0e521690e688ee50fc099d0cb38b440dfea6b3",
-  "owner": "",
+  "owner": "quality_20260906",
   "plan": "../plans/AR-0314.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Offer matching prior recordings or an actual provider connection without silently choosing either.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Choose matching replay or live provider execution",
-  "updated_at": "2026-09-08T14:38:22+00:00",
+  "updated_at": "2026-09-08T14:38:25+00:00",
   "worktree_key": "agent-systems-benchmark-provider-recording-choice"
 }
 ---
@@ -129,3 +129,5 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-08T14:38:22+00:00: AR-0320 is released and integrated on product main at 33f30cb; all
   AR-0314 dependencies are done. Resume for synthetic environment-credential live preflight;
   FD/helper remain AR-0319.
+
+- 2026-09-08T14:38:25+00:00: Claimed by quality_20260906.
