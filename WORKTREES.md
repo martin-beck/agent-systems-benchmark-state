@@ -20,8 +20,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-benchmark-validity` | `feature/benchmark-validity` | `60a6c730457b` | 0 | behind 31, ahead 0 |
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `0717d4acd168` | 0 | behind 139, ahead 0 |
 | `agent-systems-benchmark-ci-artifact-quota-resilience` | `feature/ci-artifact-quota-resilience` | `7d98653e7e7f` | 0 | behind 85, ahead 0 |
-| `agent-systems-benchmark-contract-consistency` | `feature/contract-consistency` | `a97c3ed708cc` | 8 | behind 2, ahead 0 |
-| changed files | - | - | - | `.github/workflows/quality.yml`, `crates/asb-control/tests/schema_conformance.rs`, `docs/FORMAL_ASSURANCE.md`, `contracts/`, `crates/asb-control/fixtures/v1/capabilities-response.json`, `docs/CONTRACT_CATALOG.md`, `tools/quality/contract_consistency.py`, `tools/quality/test_contract_consistency.py` |
+| `agent-systems-benchmark-contract-consistency` | `feature/contract-consistency` | `a97c3ed708cc` | 6 | behind 2, ahead 0 |
+| changed files | - | - | - | `.github/workflows/quality.yml`, `docs/FORMAL_ASSURANCE.md`, `contracts/`, `docs/CONTRACT_CATALOG.md`, `tools/quality/contract_consistency.py`, `tools/quality/test_contract_consistency.py` |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 208, ahead 0 |
 | `agent-systems-benchmark-csb-execution-assurance` | `feature/csb-execution-assurance` | `39e306124b56` | 0 | behind 88, ahead 0 |
 | `agent-systems-benchmark-csb-integration` | `feature/csb-integration` | `524db90c8933` | 0 | behind 1, ahead 0 |
