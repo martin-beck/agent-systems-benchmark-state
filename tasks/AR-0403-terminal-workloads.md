@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Import terminal tasks through an adapter to the published harness or task format.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Integrate Terminal-Bench workloads",
-  "updated_at": "2026-09-08T16:44:53+00:00",
+  "updated_at": "2026-09-08T16:45:50+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-workloads"
 }
 ---
@@ -175,3 +175,6 @@ Implementation has not started. Read the linked plan before claiming.
   green. Initial full gate failure was environment-only cargo absent from wrapper PATH and passed
   with the pinned 1.93 toolchain. Candidate remains clean and unpublished; acceptance still
   explicitly lacks native oracle/image/reset/network qualification.
+
+- 2026-09-08T16:45:50+00:00: Recorded command exit 0; command argv SHA-256
+  cfea72a4ed67a6e3db51a03826d538992432b1c6c9a16ef26b7eb5e15350c8b3.
