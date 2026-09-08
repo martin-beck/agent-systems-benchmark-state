@@ -30,9 +30,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Conformance-test identical OpenAI and Ollama profiles across the complete supported-agent matrix.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Verify cross-agent provider parity",
-  "updated_at": "2026-09-08T16:15:58+00:00",
+  "updated_at": "2026-09-08T16:17:21+00:00",
   "worktree_key": "agent-systems-benchmark-provider-parity-conformance"
 }
 ---
@@ -147,3 +147,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T16:15:58+00:00: Recorded command exit 1; command argv SHA-256
   936b003eab5ab917a5c5e0b0f1a1c0c294d3fc357009af227e078ae76d92697a.
+
+- 2026-09-08T16:17:21+00:00: Recorded command exit 0; command argv SHA-256
+  e3dda98a39ef5c6c2ae609ce9117fae11bc57de626ee7151890c7c7902f0eb07.
