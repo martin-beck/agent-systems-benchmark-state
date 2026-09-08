@@ -16,6 +16,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary. | - |
+| P2 | [AR-0802](tasks/AR-0802-executable-guides.md): Deliver runnable user and extension guides | Publish executable offline quickstart, workload/agent extension guide and reproducibility guide. | Capture actual CLI workflows after commands are implemented. | - |
 
 ## Blocked
 
@@ -76,7 +77,6 @@ Never edit this file directly.
 | P2 | [AR-0405](tasks/AR-0405-performance-workloads.md): Add performance and reproducibility workloads | Assess SWE-Perf, SWE-fficiency and CORE-Bench for correctness-preserving optimization and reproducibility. | Run compatibility spikes and accept only workload subsets with stable independent oracles. | - |
 | P2 | [AR-0601](tasks/AR-0601-csb-integration.md): Prototype optional CSB integration | Reuse CSB application execution and monitoring where contracts fit ASB. | Audit bm-runner interfaces and compare subprocess integration with direct execution. | - |
 | P2 | [AR-0602](tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit the pinned CSB MonitorFactory and benchmark outputs against ASB metric contracts and controlled contention oracles. | - |
-| P2 | [AR-0802](tasks/AR-0802-executable-guides.md): Deliver runnable user and extension guides | Publish executable offline quickstart, workload/agent extension guide and reproducibility guide. | Capture actual CLI workflows after commands are implemented. | - |
 | P2 | [AR-0903](tasks/AR-0903-release-qualification.md): Package and qualify the first release | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. | - |
 | P2 | [AR-1005](tasks/AR-1005-trace-interoperability.md): Export interoperable privacy-safe traces | Expose stable causal ASB events and optional standards-based telemetry without binding storage to an evolving convention. | Define stable internal trace schema and a version-pinned optional OTLP projection. | - |
 | P3 | [AR-0404](tasks/AR-0404-extended-workloads.md): Expand established benchmark catalogue | Evaluate SWE-bench Pro, BigCodeBench, EvalPlus and LiveCodeBench as optional suites. | Rank suites by additional coverage and maintenance cost. | - |

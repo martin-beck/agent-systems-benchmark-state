@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 3 |
-| **Planned** | Defined work awaiting promotion or dependencies | 53 |
+| **Planned** | Defined work awaiting promotion or dependencies | 52 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 63 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -121,7 +121,7 @@ flowchart LR
     subgraph series_08["08 - Interfaces"]
         direction TB
         AR_0801["AR-0801 - Done"]:::status_done
-        AR_0802["AR-0802 - Planned"]:::status_planned
+        AR_0802["AR-0802 - Open"]:::status_open
         AR_0803["AR-0803 - Done"]:::status_done
         AR_0804["AR-0804 - Planned"]:::status_planned
         AR_0805["AR-0805 - Planned"]:::status_planned
@@ -733,11 +733,12 @@ flowchart LR
 | P1 | [AR-0851](tasks/AR-0851-shared-workflow-coordinator.md): Adopt shared workflow coordinator | codex-agent-workflow-coordinator-asb-20260908 | Adopt the canonical coordinator as a pinned offline-capable vendor artifact while preserving ASB extensions. | After the canonical public release is verified, vendor its pinned artifact and run ASB-specific conformance, fault, race, renderer, schema, and live checks. |
 | P2 | [AR-0309](tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | contracts_20260906 | Run a maintained MIT OpenHands SDK or canonical headless client. | Await authorization for one controlled signed rebase of approved-scope OpenHands candidate e2b312c onto current main d3e2dfa, then rerun affected exact-tree gates and request immutable review. |
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary. |
+| P2 | [AR-0802](tasks/AR-0802-executable-guides.md): Deliver runnable user and extension guides | Unclaimed | Publish executable offline quickstart, workload/agent extension guide and reproducibility guide. | Capture actual CLI workflows after commands are implemented. |
 
 ### Blocked (3)
 
@@ -747,7 +748,7 @@ flowchart LR
 | P1 | [AR-0702](tasks/AR-0702-native-platforms.md): Validate native Linux kernels and architectures | Unclaimed | Exercise native x86_64 and aarch64 including booted openEuler kernels. | Keep reviewed PR #31 head bdaf9c108226f34ec6098f75b51fd601da9e9571 immutable and green; await AR-0703 genuine Debian/openEuler x86_64/aarch64 lab capacity before completing remaining native qualification and AR-0702. |
 | P1 | [AR-0703](tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Provide genuine disposable native hosts for required Debian and openEuler platform qualification. | Obtain explicit provider/account and cost authorization, least-privilege external credentials, quotas, and four genuine disposable Debian 13.6/openEuler 24.03 LTS-SP2 x86_64/aarch64 hosts; then implement reservation/provision/collect/destroy evidence without emulation. |
 
-### Planned (53)
+### Planned (52)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -798,7 +799,6 @@ flowchart LR
 | P2 | [AR-0405](tasks/AR-0405-performance-workloads.md): Add performance and reproducibility workloads | Unclaimed | Assess SWE-Perf, SWE-fficiency and CORE-Bench for correctness-preserving optimization and reproducibility. | Run compatibility spikes and accept only workload subsets with stable independent oracles. |
 | P2 | [AR-0601](tasks/AR-0601-csb-integration.md): Prototype optional CSB integration | Unclaimed | Reuse CSB application execution and monitoring where contracts fit ASB. | Audit bm-runner interfaces and compare subprocess integration with direct execution. |
 | P2 | [AR-0602](tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Unclaimed | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit the pinned CSB MonitorFactory and benchmark outputs against ASB metric contracts and controlled contention oracles. |
-| P2 | [AR-0802](tasks/AR-0802-executable-guides.md): Deliver runnable user and extension guides | Unclaimed | Publish executable offline quickstart, workload/agent extension guide and reproducibility guide. | Capture actual CLI workflows after commands are implemented. |
 | P2 | [AR-0903](tasks/AR-0903-release-qualification.md): Package and qualify the first release | Unclaimed | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. |
 | P2 | [AR-1005](tasks/AR-1005-trace-interoperability.md): Export interoperable privacy-safe traces | Unclaimed | Expose stable causal ASB events and optional standards-based telemetry without binding storage to an evolving convention. | Define stable internal trace schema and a version-pinned optional OTLP projection. |
 | P3 | [AR-0404](tasks/AR-0404-extended-workloads.md): Expand established benchmark catalogue | Unclaimed | Evaluate SWE-bench Pro, BigCodeBench, EvalPlus and LiveCodeBench as optional suites. | Rank suites by additional coverage and maintenance cost. |
