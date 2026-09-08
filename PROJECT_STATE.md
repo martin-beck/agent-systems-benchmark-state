@@ -12,19 +12,19 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- | --- |
 | #31 | `feature/native-platforms@bdaf9c108226` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
 | #89 | `feature/tui-history-analysis@031a4516cbb3` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: add bounded TUI history projection |
-| #91 | `feature/tui-multi-agent-provider-selection@b3c19b10021a` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | feat(tui): add multi-agent provider selection |
+| #91 | `feature/tui-multi-agent-provider-selection@b3c19b10021a` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(tui): add multi-agent provider selection |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34292027810 | `b3c19b10021a` | pull_request | Emulated aarch64 portability | queued:- |
-| 34292027762 | `b3c19b10021a` | pull_request | Repository quality | queued:- |
-| 34292027742 | `b3c19b10021a` | pull_request | Huawei MIT source headers | queued:- |
-| 34292027728 | `b3c19b10021a` | pull_request | Formal assurance | queued:- |
-| 34292027722 | `b3c19b10021a` | pull_request | Rust verification | queued:- |
-| 34292027708 | `b3c19b10021a` | pull_request | Agent Workflow Quality shadow | queued:- |
-| 34292027707 | `b3c19b10021a` | pull_request | Fault assurance | queued:- |
+| 34292027810 | `b3c19b10021a` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 34292027762 | `b3c19b10021a` | pull_request | Repository quality | in_progress:- |
+| 34292027742 | `b3c19b10021a` | pull_request | Huawei MIT source headers | completed:success |
+| 34292027728 | `b3c19b10021a` | pull_request | Formal assurance | in_progress:- |
+| 34292027722 | `b3c19b10021a` | pull_request | Rust verification | in_progress:- |
+| 34292027708 | `b3c19b10021a` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 34292027707 | `b3c19b10021a` | pull_request | Fault assurance | in_progress:- |
 | 34291742868 | `6c13a324e38f` | pull_request | Repository quality | completed:failure |
 | 34291742863 | `6c13a324e38f` | pull_request | Fault assurance | completed:success |
 | 34291742861 | `6c13a324e38f` | pull_request | Huawei MIT source headers | completed:success |
