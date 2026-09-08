@@ -25,9 +25,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make supported agent installations reproducible, license-audited, SBOM-backed, and independently verifiable.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Publish reproducible agent runtime bundles",
-  "updated_at": "2026-09-08T11:33:26+00:00",
+  "updated_at": "2026-09-08T11:33:47+00:00",
   "worktree_key": "agent-systems-benchmark-agent-runtime-bundles"
 }
 ---
@@ -67,3 +67,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T11:33:26+00:00: Recorded command exit 0; command argv SHA-256
   c0db99a2702ae9a4f09471850ba78de431d9dcb0cfbe382d43c5e46fccc9e47e.
+
+- 2026-09-08T11:33:47+00:00: Recorded command exit 1; command argv SHA-256
+  1881dd749231d145ef5e53964ebc86cc236a35626bd7b69ebca79faaca1f8f8a.
