@@ -2,7 +2,7 @@
 {
   "branch": "feature/terminal-workloads",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-08T19:21:39+00:00",
   "depends_on": [
     "AR-0401"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/terminal-workloads",
   "observed_dirty": 0,
   "observed_head": "e0da4efd375080c774cff91a8eef694d93e14132",
-  "owner": "",
+  "owner": "contracts_20260906",
   "plan": "../plans/AR-0403.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Import terminal tasks through an adapter to the published harness or task format.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Integrate Terminal-Bench workloads",
-  "updated_at": "2026-09-08T15:40:40+00:00",
+  "updated_at": "2026-09-08T16:21:39+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-workloads"
 }
 ---
@@ -106,3 +106,5 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-08T15:40:40+00:00: Recovered expired claim formerly owned by replay_20260906. Recovered
   expired inactive claim during coordinator validation; no AR-0403 product or external action
   repeated.
+
+- 2026-09-08T16:21:39+00:00: Claimed by contracts_20260906.
