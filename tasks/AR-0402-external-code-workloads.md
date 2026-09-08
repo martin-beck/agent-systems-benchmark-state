@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 120,
+  "task_revision": 121,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T13:04:40+00:00",
+  "updated_at": "2026-09-08T13:05:23+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -339,3 +339,6 @@ Implementation has not started. Read the linked plan before claiming.
   post-merge all green: Rust 34229084532, quality 34229084530, formal 34229084473, fault
   34229085173, emulated aarch64 34229084444. This is disposable contract evidence only; real
   evaluator images/SBOMs remain unqualified.
+
+- 2026-09-08T13:05:23+00:00: Recorded command exit 0; command argv SHA-256
+  09e18882d79a8f151f47bcb892f51419c7e2660f44d2fb7fdeb575ba72aa2925.
