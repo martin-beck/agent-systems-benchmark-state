@@ -21,11 +21,11 @@
   "plan": "../plans/AR-0505.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Test each actual client through recording and offline replay of engineering tasks.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Prove real-agent replay conformance",
-  "updated_at": "2026-09-08T02:14:20+00:00",
+  "updated_at": "2026-09-08T02:48:22+00:00",
   "worktree_key": "agent-systems-benchmark-agent-replay-conformance"
 }
 ---
@@ -107,3 +107,10 @@ Implementation has not started. Read the linked plan before claiming.
   OpenCode/OpenDesk/Codex replay journeys passed. Aider deterministic replay remains invalid until
   AR-0850 fixes process-dependent multi-file ordering and the full strict matrix is rerun. AR-0515
   remains the separate complete all-agent aggregation scope.
+
+- 2026-09-08T02:48:22+00:00: AR-0850 is done at signed state ca55ae9a after signed product merge
+  3a07b57b and all exact-main CI succeeded. The pinned Aider 0.86.2 multi-file defect is repaired by
+  a fixed child PYTHONHASHSEED and verified by four consecutive independent
+  capture/capture/strict-replay journeys. AR-0505 is unblocked; next action is rerun the exact
+  current-main four-agent native loopback integration audit without weakening strict comparison or
+  duplicating AR-0515.
