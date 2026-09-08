@@ -12,7 +12,7 @@
   "id": "AR-0806",
   "next_action": "Add recent-run browsing, exact repeat, comparison, and result analysis views.",
   "observed_branch": "feature/tui-history-analysis",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "559fbcc825234bb98a64ba554a53f38b004d24f6",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0806.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-08T21:04:54+00:00",
+  "updated_at": "2026-09-08T21:41:39+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
