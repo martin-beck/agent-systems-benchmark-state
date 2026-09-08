@@ -12,17 +12,17 @@
   "id": "AR-0844",
   "next_action": "Run focused asb-control/asb-cli suites and no-network-listener source/behavior audit on the one-file reconnect continuity delta, then full applicable gates and signed candidate review.",
   "observed_branch": "feature/frontend-api-integration",
-  "observed_dirty": 1,
-  "observed_head": "4523da9629ff09451a0a2d2fe332d80bbb1320de",
+  "observed_dirty": 0,
+  "observed_head": "76cc86f23a48d5af275b2fed9d70f54199e38637",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0844.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate and qualify the frontend control API as an independent boundary.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Integrate frontend control API",
-  "updated_at": "2026-09-08T11:33:05+00:00",
+  "updated_at": "2026-09-08T11:33:39+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-api-integration"
 }
 ---
