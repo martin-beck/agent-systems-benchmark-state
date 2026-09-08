@@ -8,7 +8,7 @@
     "AR-1001"
   ],
   "id": "AR-0904",
-  "next_action": "Integrate the checker into required quality/failure gates, add semantic compatibility and generated capability/support coverage, then run focused and full validation.",
+  "next_action": "Independent immutable review of exact candidate 852b549; do not publish until approved.",
   "observed_branch": "feature/contract-consistency",
   "observed_dirty": 0,
   "observed_head": "852b54934c82a18765cbbb6592a3a23e2b385035",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Machine-check protocol and artifact consistency",
-  "updated_at": "2026-09-08T09:49:26+00:00",
+  "updated_at": "2026-09-08T09:50:19+00:00",
   "worktree_key": "agent-systems-benchmark-contract-consistency"
 }
 ---
@@ -185,3 +185,18 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T09:49:26+00:00: Recorded command exit 0; command argv SHA-256
   51a06f27e8c30087d7319de826eb9fbf5f0f2add347eb94dc983cc589ce1478a.
+
+- 2026-09-08T09:50:19+00:00: Immutable AR-0904 candidate 852b54934c82a18765cbbb6592a3a23e2b385035,
+  tree d4563dd40aaf2c91bab8ce49ca229607e38abbe8, exact parent
+  a97c3ed708cc16522383ecde41ec9fa2e642bc61. Clean six-path scope: .github/workflows/quality.yml,
+  contracts/v1/catalog.json, docs/CONTRACT_CATALOG.md, docs/FORMAL_ASSURANCE.md,
+  tools/quality/contract_consistency.py, tools/quality/test_contract_consistency.py. SSH signature
+  and exact DCO valid. Checker closes 14 Rust-owned v1 schemas, 20 positive fixtures, named Rust
+  gates, six exact commands; parsed-JSON baseline semantic identity accepts formatting-only changes
+  and rejects changed contracts; generated provider support derives only from the canonical
+  schema-enrolled capability fixture with bounded closed shapes. Green evidence: Ruff, 4 checker
+  negative groups, registered Rust conformance 7+4+4+2+5+14, actionlint/zizmor, repository policy,
+  Gitleaks dirty and exact one-commit history, cargo deny/audit, complete quality failure fixtures,
+  formal Rust and Kani 6/6 plus deliberate failing counterexample, and full workspace
+  fmt/clippy/tests/rustdoc/release. Worktree clean. Unpublished pending independent immutable
+  review.
