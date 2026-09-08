@@ -62,6 +62,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 243, ahead 0 |
 | `agent-systems-benchmark-portable-metrics` | `feature/portable-metrics` | `a0f67bea1ffe` | 0 | behind 217, ahead 0 |
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `51daeb8608e5` | 0 | behind 236, ahead 0 |
+| `agent-systems-benchmark-provider-credential-integration` | `feature/provider-credential-integration` | `9feeba652435` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-provider-ollama` | `feature/provider-ollama` | `8137f5baa053` | 0 | behind 41, ahead 0 |
 | `agent-systems-benchmark-provider-openai` | `feature/provider-openai` | `1128595cd2f9` | 0 | behind 36, ahead 0 |
 | `agent-systems-benchmark-provider-profile-contract` | `feature/provider-profile-contract` | `2870b68d0ca0` | 0 | behind 172, ahead 0 |

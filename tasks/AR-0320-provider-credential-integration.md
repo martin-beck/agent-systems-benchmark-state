@@ -8,15 +8,18 @@
   ],
   "id": "AR-0320",
   "next_action": "Integrate the signed AR-0318 environment credential boundary into product main and rerun workspace gates.",
+  "observed_branch": "feature/provider-credential-integration",
+  "observed_dirty": 0,
+  "observed_head": "9feeba6524357df38e3ad118d4c3740306d3ec8e",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0320.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate the verified environment credential resolver into the product workspace.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Integrate provider credential boundary",
-  "updated_at": "2026-09-08T14:17:56+00:00",
+  "updated_at": "2026-09-08T14:18:03+00:00",
   "worktree_key": "agent-systems-benchmark-provider-credential-integration"
 }
 ---
