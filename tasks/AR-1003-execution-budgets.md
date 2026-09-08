@@ -14,16 +14,16 @@
   "next_action": "Obtain immutable independent review of candidate 0149f991; publish only after approval, then require exact-head hosted Kani/formal and all CI.",
   "observed_branch": "feature/execution-budgets",
   "observed_dirty": 0,
-  "observed_head": "0149f991ba7e7ef5c71bf4f2118bb1aecd48e3c1",
+  "observed_head": "30a12ad331740921dfef02e731c6d3b87dbb155a",
   "owner": "replay_20260906",
   "plan": "../plans/AR-1003.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bound and report wall time, actions, tokens and monetary cost without treating unavailable telemetry as zero.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Enforce cost token and action budgets",
-  "updated_at": "2026-09-08T10:28:32+00:00",
+  "updated_at": "2026-09-08T10:29:40+00:00",
   "worktree_key": "agent-systems-benchmark-execution-budgets"
 }
 ---
