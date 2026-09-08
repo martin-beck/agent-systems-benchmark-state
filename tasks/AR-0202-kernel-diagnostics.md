@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0202",
-  "next_action": "Obtain independently reviewed privileged native x86_64 and aarch64 hosts; validate positive perf counters plus real eBPF attach failure/teardown, then rebase and publish the safe boundary.",
+  "next_action": "Rebase the clean signed AR-0202 branch and PR #61 onto current main 4cad746, rerun focused/full gates and exact-head CI; preserve the fail-closed boundary and explicitly retain the privileged native x86/aarch64 evidence blocker.",
   "observed_branch": "feature/kernel-diagnostics",
   "observed_dirty": 0,
   "observed_head": "1d24993771a468867c39bba4931d839f9068afd8",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate perf and optional eBPF diagnostics without making privileged tools mandatory.",
-  "task_revision": 140,
+  "task_revision": 141,
   "title": "Add optional kernel diagnostics",
-  "updated_at": "2026-09-08T22:54:49+00:00",
+  "updated_at": "2026-09-08T22:55:29+00:00",
   "worktree_key": "agent-systems-benchmark-kernel-diagnostics"
 }
 ---
@@ -402,3 +402,8 @@ Implementation has not started. Read the linked plan before claiming.
   quality_20260906/native PMU or eBPF process. Recovery only; no product mutation.
 
 - 2026-09-08T22:54:49+00:00: Claimed by replay_20260906.
+
+- 2026-09-08T22:55:29+00:00: AR-0202 resumed as the only dependency-ready leaf after AR-0869
+  release. Existing branch/PR #61 contains signed fail-closed optional probes and negative tests,
+  but its base is pre-attestation a369638; current main is 4cad746. Rebase before qualification. Do
+  not claim positive PMU/eBPF/native arm support without genuine privileged hosts.
