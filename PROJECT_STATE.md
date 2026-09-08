@@ -19,9 +19,9 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 34211591725 | `e5cdf97dd295` | push | Fault assurance | completed:success |
 | 34211591716 | `e5cdf97dd295` | push | Formal assurance | completed:success |
-| 34211591698 | `e5cdf97dd295` | push | Rust verification | in_progress:- |
+| 34211591698 | `e5cdf97dd295` | push | Rust verification | completed:success |
 | 34211591672 | `e5cdf97dd295` | push | Emulated aarch64 portability | in_progress:- |
-| 34211591639 | `e5cdf97dd295` | push | Repository quality | in_progress:- |
+| 34211591639 | `e5cdf97dd295` | push | Repository quality | completed:success |
 | 34210946865 | `8137f5baa053` | pull_request | Rust verification | completed:success |
 | 34210946830 | `8137f5baa053` | pull_request | Repository quality | completed:success |
 | 34210946636 | `8137f5baa053` | pull_request | Formal assurance | completed:success |
