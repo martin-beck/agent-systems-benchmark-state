@@ -2,7 +2,7 @@
 {
   "branch": "feature/tui-settings-wizard",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T18:14:52+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0313",
     "AR-0314",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/tui-settings-wizard",
   "observed_dirty": 0,
   "observed_head": "76497db8f22c43762f0b5bcbc7f2549c1d17281d",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0804.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Guide users through agents, providers, workloads, resources, replay, metrics, and output settings.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Build the terminal settings wizard",
-  "updated_at": "2026-09-08T15:16:36+00:00",
+  "updated_at": "2026-09-08T15:18:01+00:00",
   "worktree_key": "agent-systems-benchmark-tui-settings-wizard"
 }
 ---
@@ -47,3 +47,6 @@ Implementation has not started. Read the linked plan before claiming.
   Adding the required standalone executable changes root Cargo.toml and Cargo.lock, so
   implementation is paused at the serialized workspace fence rather than mutating shared manifests
   implicitly.
+
+- 2026-09-08T15:18:01+00:00: Coordinator recovery after repeated no-process/no-worktree checks
+  despite explicit Cargo fence authorization; no product mutation observed. Reopen for reassignment.
