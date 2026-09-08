@@ -2,7 +2,7 @@
 {
   "branch": "feature/frontend-control-api",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-08T07:02:06+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0104",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/frontend-control-api",
   "observed_dirty": 20,
   "observed_head": "cbb764c45c6128d75f42fb78a3a2a15a0874528a",
-  "owner": "",
+  "owner": "replay_20260906",
   "plan": "../plans/AR-0803.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary.",
-  "task_revision": 309,
+  "task_revision": 310,
   "title": "Define the frontend control API",
-  "updated_at": "2026-09-08T05:32:03+00:00",
+  "updated_at": "2026-09-08T05:32:06+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api"
 }
 ---
@@ -890,3 +890,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T05:32:03+00:00: Fresh reclaim: successor worktree is clean, original dirty evidence
   preserved, and prior stale lease was recovered without mutation.
+
+- 2026-09-08T05:32:06+00:00: Claimed by replay_20260906.
