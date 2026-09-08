@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair aider replay nondeterminism caused by process-dependent file ordering.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Repair deterministic aider replay",
-  "updated_at": "2026-09-08T02:15:06+00:00",
+  "updated_at": "2026-09-08T02:15:08+00:00",
   "worktree_key": "agent-systems-benchmark-aider-deterministic-replay"
 }
 ---
@@ -38,3 +38,6 @@ aggregate matrix.
   nondeterminism found by exact-tree AR-0505 audit; dependencies AR-0303 and AR-0508 are done.
 
 - 2026-09-08T02:14:52+00:00: Claimed by quality_20260906.
+
+- 2026-09-08T02:15:08+00:00: Recorded command exit 0; command argv SHA-256
+  81d0a0d5258cbbfac2fbdb4927145f1e2d59fe6e87fb5ebd25850a42f1db091b.
