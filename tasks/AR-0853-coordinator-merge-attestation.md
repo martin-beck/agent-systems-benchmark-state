@@ -2,19 +2,19 @@
 {
   "branch": "fix/coordinator-v014-merge-attestation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T09:35:04+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-0853",
   "next_action": "Repair the attestation test to validate a closed fetch-free signed representation and installed manifest without requiring the unreachable historical merge object; document that limitation, rerun gates, and publish a signed successor by exact lease.",
-  "owner": "replay-20260906",
+  "owner": "",
   "plan": "../plans/AR-0853.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair the v0.1.4 coordinator merge attestation without rewriting published history.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Repair coordinator merge attestation",
-  "updated_at": "2026-09-08T08:04:23+00:00",
+  "updated_at": "2026-09-08T08:05:54+00:00",
   "worktree_key": "agent-systems-benchmark-coordinator-merge-attestation"
 }
 ---
@@ -101,3 +101,11 @@ only an independently reviewed additive repair.
 
 - 2026-09-08T08:04:23+00:00: Recorded command exit 0; command argv SHA-256
   ee3e23bde901eb779e6a11de391ccbf375b4299a537465af75a34058d70c2630.
+
+- 2026-09-08T08:05:54+00:00: Released AR-0853 after independently reviewed PR 11 exact head
+  655817806e2be89c597557a99bd4a3c0977b3b2c was integrated by SSH-signed+DCO no-ff merge
+  8bc57761488a1e3319307456d2a763d5418d2dd6. Exact-merge coordination run 34202334252 and formal run
+  34202334155 passed. Postmerge vendor verification, Ruff, mypy, 54 tests, schema, 97 percent branch
+  coverage, and TLC models including 10,368,606 distinct states passed. The additive attestation
+  binds the exact v0.1.4 evidence while honestly preserving that original merge e52ce3aa remains
+  non-retroactively noncompliant. Snapshot and live doctor passed.
