@@ -1,5 +1,6 @@
 """Project-bound conformance tests for the vendored coordinator snapshot tool."""
 
+import hashlib
 import importlib.util
 import json
 import os
@@ -18,6 +19,15 @@ if SPEC is None or SPEC.loader is None:
     raise RuntimeError("cannot load vendor tool")
 VENDOR: Any = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(VENDOR)
+
+ATTESTATION = ROOT / "docs/coordinator-merge-attestation.md"
+MERGE = "e52ce3aaa59ffc4cc6f97657b6ea2c7dfceb2ac1"
+MERGE_PARENTS = "b90f28ccaa300c9ccca0167cee97925b211d2844 e4fecc1e65e640d436e4d01b8418fb7dc73c7c4e"
+MERGE_TREE = "37ba9d70bdb25b61a66ae0c58c5b6e370cddfcce"
+PR_HEAD = "e4fecc1e65e640d436e4d01b8418fb7dc73c7c4e"
+PR_HEAD_TREE = "600b2d960e16cb5b144ec0db8b1e833f7fe797a0"
+UPSTREAM_COMMIT = "9733b341f25b145d6dfad8414933cb6348701769"
+MANIFEST_SHA256 = "60d7c3c634c14f6df34874ace6044e9058a3621f78d51491407f9ed5aa0c871a"
 
 
 class VendorTest(unittest.TestCase):
@@ -39,6 +49,31 @@ class VendorTest(unittest.TestCase):
 
     def tearDown(self) -> None:
         self.temporary.cleanup()
+
+    def test_additive_merge_attestation_is_exact_and_honest(self) -> None:
+        def git_format(object_id: str, field: str) -> str:
+            return subprocess.run(  # noqa: S603 -- fixed attested Git object IDs only.
+                ["git", "show", "-s", f"--format={field}", object_id],  # noqa: S607
+                cwd=ROOT,
+                check=True,
+                capture_output=True,
+                text=True,
+                timeout=30,
+            ).stdout.strip()
+
+        text = ATTESTATION.read_text()
+        for identity in (MERGE, MERGE_PARENTS, MERGE_TREE, PR_HEAD, PR_HEAD_TREE):
+            self.assertIn(identity, text)
+        self.assertIn("does **not** add", text)
+        self.assertIn("rather than rewriting public history", text)
+        self.assertEqual(MERGE_PARENTS, git_format(MERGE, "%P"))
+        self.assertEqual(MERGE_TREE, git_format(MERGE, "%T"))
+        self.assertEqual(PR_HEAD_TREE, git_format(PR_HEAD, "%T"))
+        manifest_bytes = (ROOT / VENDOR.LOCK_NAME).read_bytes()
+        self.assertEqual(MANIFEST_SHA256, hashlib.sha256(manifest_bytes).hexdigest())
+        manifest = json.loads(manifest_bytes)
+        self.assertEqual("v0.1.4", manifest["upstream"]["version"])
+        self.assertEqual(UPSTREAM_COMMIT, manifest["upstream"]["commit"])
 
     def test_sync_verify_and_detect_tampering(self) -> None:
         commit = "a" * 40
