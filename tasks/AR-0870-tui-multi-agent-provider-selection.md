@@ -12,7 +12,7 @@
   "id": "AR-0870",
   "next_action": "Monitor exact-head PR #91; investigate any required failure immediately, then perform immutable review, signed no-ff merge and post-merge verification.",
   "observed_branch": "feature/tui-multi-agent-provider-selection",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "6c13a324e38f913e3085db32a6e1a2b8c48c6d38",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0870.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Choose several agents and one preconfigured provider for all of them from negotiated TUI selection lists.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Add TUI multi-agent provider selection",
-  "updated_at": "2026-09-08T23:41:36+00:00",
+  "updated_at": "2026-09-08T23:44:24+00:00",
   "worktree_key": "agent-systems-benchmark-tui-multi-agent-provider-selection"
 }
 ---
