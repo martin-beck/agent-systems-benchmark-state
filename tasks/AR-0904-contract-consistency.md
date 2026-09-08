@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Machine-check protocol and artifact consistency",
-  "updated_at": "2026-09-08T09:52:59+00:00",
+  "updated_at": "2026-09-08T09:53:02+00:00",
   "worktree_key": "agent-systems-benchmark-contract-consistency"
 }
 ---
@@ -200,3 +200,6 @@ Implementation has not started. Read the linked plan before claiming.
   formal Rust and Kani 6/6 plus deliberate failing counterexample, and full workspace
   fmt/clippy/tests/rustdoc/release. Worktree clean. Unpublished pending independent immutable
   review.
+
+- 2026-09-08T09:53:02+00:00: Recorded command exit 0; command argv SHA-256
+  5b061407f1f3f5c2bff79a36eb408c0cee8f1510d20a740df119c543663563af.
