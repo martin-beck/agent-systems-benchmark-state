@@ -10,7 +10,7 @@
   "id": "AR-0202",
   "next_action": "Design capability probes and bounded diagnostics profiles.",
   "observed_branch": "feature/kernel-diagnostics",
-  "observed_dirty": 4,
+  "observed_dirty": 6,
   "observed_head": "3a07b57b8265d98eeebbcd4fd21339d72fac0663",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0202.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate perf and optional eBPF diagnostics without making privileged tools mandatory.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Add optional kernel diagnostics",
-  "updated_at": "2026-09-08T03:54:43+00:00",
+  "updated_at": "2026-09-08T03:56:02+00:00",
   "worktree_key": "agent-systems-benchmark-kernel-diagnostics"
 }
 ---
