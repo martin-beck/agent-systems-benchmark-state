@@ -9,7 +9,7 @@
     "AR-0401"
   ],
   "id": "AR-1002",
-  "next_action": "Await AR-0202 Cargo fence return; refresh only formal/Cargo.lock, rerun formal and final exact-tree gates, then create signed candidate.",
+  "next_action": "Independently review immutable candidate 3fc65ea73badcea31497e53644fdad8778115870; publish only after approval, then require exact-head CI.",
   "observed_branch": "feature/verifier-integrity",
   "observed_dirty": 0,
   "observed_head": "3fc65ea73badcea31497e53644fdad8778115870",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate immutable graders from agent work and version scoring independently of execution.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Protect verifiers and support offline rescoring",
-  "updated_at": "2026-09-08T04:34:36+00:00",
+  "updated_at": "2026-09-08T04:35:10+00:00",
   "worktree_key": "agent-systems-benchmark-verifier-integrity"
 }
 ---
@@ -191,3 +191,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T04:34:36+00:00: Recorded command exit 0; command argv SHA-256
   c616b6d9e75d1d15de8334b973a2b9a24a40d0b8ecd8d1d41c47346e8b48b601.
+
+- 2026-09-08T04:35:10+00:00: Immutable candidate 3fc65ea73badcea31497e53644fdad8778115870 is a clean
+  single SSH-signed Martin Beck DCO commit on exact parent 3a07b57b8265d98eeebbcd4fd21339d72fac0663.
+  Eleven-path scope is Cargo.lock, formal/Cargo.lock, and asb-analysis/asb-store/asb-workloads only;
+  root Cargo.toml and schemas are unchanged. Exact-tree full locked workspace fmt, Clippy, tests,
+  docs, and release build pass; formal Rust tests, 6 of 6 Kani harnesses, and deliberate Kani
+  failure pass; repository policy, DCO, signature, diff-check, Gitleaks, privacy and scope pass;
+  deny/audit pass. Standard configured line coverage floors pass. Nightly branch-aware
+  affected-crate evidence is 79.13 percent branches and 97.31 percent lines, honestly below 95
+  percent branch coverage and not claimed otherwise. Functional negatives cover forged/deceptive
+  grader outputs, broken patches, artifact/self-digest/identity tampering, decoded unkeyed ledger
+  authority, reward/chain/size tampering, and distinct task/patch/timeout/environment/verifier
+  outcomes.
