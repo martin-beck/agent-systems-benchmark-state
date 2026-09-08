@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0848",
-  "next_action": "Implement a fail-closed local native x86_64 capacity lease, bounded resource/isolation checks, sanitized evidence schema and lifecycle negatives; qualify only the authorized existing Ubuntu host and do not activate persistent GitHub runners or claim aarch64/performance support.",
+  "next_action": "Await independent immutable review of exact signed head 5d2cd78a924b2e2cb76e0bf48e01dca3e9249e74; publish only after approval, then exact-head CI and serialized integration. Native aarch64 and performance support remain explicitly unsupported.",
   "observed_branch": "feature/native-x86-capacity",
   "observed_dirty": 0,
   "observed_head": "5d2cd78a924b2e2cb76e0bf48e01dca3e9249e74",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify authorized disposable native x86_64 capacity on a development host.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Qualify native x86 capacity",
-  "updated_at": "2026-09-08T00:05:05+00:00",
+  "updated_at": "2026-09-08T00:06:24+00:00",
   "worktree_key": "agent-systems-benchmark-native-x86-capacity"
 }
 ---
@@ -233,3 +233,17 @@ claim native aarch64 support; native aarch64 remains future work requiring separ
 
 - 2026-09-08T00:05:05+00:00: Recorded command exit 0; command argv SHA-256
   c79337f00f0c6631de39c46fc655d7d187958b53d530408b9c2a5fccec8750c3.
+
+- 2026-09-08T00:06:24+00:00: Immutable candidate 5d2cd78a924b2e2cb76e0bf48e01dca3e9249e74 (tree
+  f70871120d9fd45f60eb43b80286904c0b05a546) contains three SSH-signed DCO commits on exact base
+  72dd78f. Initial real qualification failed closed at sandbox relative-path test because the
+  primary source was read-only; isolated diagnostics proved metrics/process green and sandbox EROFS.
+  Signed repair 4658d0e materialized the exact commit/tree into the private bounded cell without
+  weakening the host boundary. The changed run passed metrics/process/sandbox/workloads, collected
+  all transient units and removed the cell before emitting schema-valid sanitized evidence. Focused
+  11/11, all platform 23/23, full fmt/clippy/workspace tests/docs/release, repository policy,
+  actionlint, zizmor, Gitleaks, deny/audit, controlled failure fixtures, aggregate/critical
+  coverage, Kani 6/6 and deliberate counterexample all pass. Python changed-module branch coverage
+  is measured 56% and is not a configured critical floor; native positive behavior is additionally
+  exercised by the real four-check evidence. No aarch64, performance, public-PR runner, AppArmor
+  enforcement, SLA, or zero-cost claim.
