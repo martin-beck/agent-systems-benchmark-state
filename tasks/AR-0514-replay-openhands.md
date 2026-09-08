@@ -2,7 +2,7 @@
 {
   "branch": "feature/replay-openhands",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T09:20:17+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0309",
     "AR-0503",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/replay-openhands",
   "observed_dirty": 1,
   "observed_head": "64f6eb4e5bc70c6d70997a463e7e4884555bc4da",
-  "owner": "contracts_20260906",
+  "owner": "",
   "plan": "../plans/AR-0514.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Qualify replay conformance for OpenHands.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Qualify OpenHands replay",
-  "updated_at": "2026-09-08T08:50:17+00:00",
+  "updated_at": "2026-09-08T08:52:11+00:00",
   "worktree_key": "agent-systems-benchmark-replay-openhands"
 }
 ---
@@ -97,3 +97,10 @@ Qualify OpenHands record/replay, network denial, parity, retries, tool calls, ca
   or native run performed; all roots retained for comparison.
 
 - 2026-09-08T08:50:17+00:00: Heartbeat by contracts_20260906.
+
+- 2026-09-08T08:52:11+00:00: Owner stopped after durable heartbeat: exact approved OpenHands
+  environment digest 6372756912734f6275362a8b66c3758fd2b2adeab776eb2a0be7935f34abb9b2 could not be
+  reproduced by five bounded dependency-preserving recipes (all roots retained). No override/native
+  replay. Worktree remains feature/replay-openhands at 64f6eb4e5bc70c6d70997a463e7e4884555bc4da with
+  only untracked crates/asb-agents/tests/replay_openhands.rs; do not clean. Next action:
+  create/review a pin-reproduction repair with immutable environment provenance before reclaiming.
