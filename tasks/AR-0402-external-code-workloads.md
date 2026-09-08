@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 98,
+  "task_revision": 99,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:31:01+00:00",
+  "updated_at": "2026-09-08T12:33:46+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -278,3 +278,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-08T12:31:01+00:00: PR #79 policy gate found missing SPDX header on offline evaluator
   fixture; fixed in signed commit 2590dc3 and pushed. This was a narrow policy defect; exact-head CI
   restarted at 2590dc3. Do not repeat the prior failed run.
+
+- 2026-09-08T12:33:46+00:00: Recorded command exit 1; command argv SHA-256
+  967b1c01130061eb72acfa58cd6f6968a6ea59716ee5d319cf76c7c6c14594ee.
