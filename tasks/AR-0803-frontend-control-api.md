@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary.",
-  "task_revision": 338,
+  "task_revision": 339,
   "title": "Define the frontend control API",
-  "updated_at": "2026-09-08T06:05:14+00:00",
+  "updated_at": "2026-09-08T06:06:24+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api"
 }
 ---
@@ -985,3 +985,6 @@ Implementation has not started. Read the linked plan before claiming.
   success), Fault assurance 34192801218 (retained faults, bounded fuzz, mutation success), Formal
   assurance 34192801250 (TLC/Alloy, Kani, Loom/state success), Emulated aarch64 34192801226 success,
   Repository quality 34192801233 success. PR remains open; no merge performed.
+
+- 2026-09-08T06:06:24+00:00: Recorded command exit 0; command argv SHA-256
+  7db96099709b5d6ec48573dbb9c6fc4e973b479787e6b23bde6c7e2460d196d6.
