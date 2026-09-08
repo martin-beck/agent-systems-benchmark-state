@@ -7,7 +7,7 @@
     "AR-0401"
   ],
   "id": "AR-0402",
-  "next_action": "Integrate production API consumers and add independent oracle result validation; retain explicit unqualified status for real external suites.",
+  "next_action": "Integrate validated results into the production benchmark result path and add cross-suite comparison metadata; keep real evaluator qualification planned.",
   "observed_branch": "feature/external-code-workloads",
   "observed_dirty": 0,
   "observed_head": "7a85e160dd33f107f6b714aed63d7da5d9b03d2a",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 125,
+  "task_revision": 126,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T13:05:59+00:00",
+  "updated_at": "2026-09-08T13:12:50+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -348,3 +348,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T13:05:59+00:00: Recorded command exit 0; command argv SHA-256
   decdf87720533547726a2659517f612b70e37f3a2dae4dd295055f1677e6b904.
+
+- 2026-09-08T13:12:50+00:00: Integrated signed+DCO oracle result validation as merge
+  67ef7e3de141021061eb7187e4726463b3e83814. Validator requires exact oracle/score schema, bounded
+  numeric score, and rejects raw/extra fields; local runner tests pass 4/4. Exact-main post-merge
+  all green: Rust 34229898979, quality 34229898895, formal 34229898976, fault 34229898938, emulated
+  aarch64 34229899117.
