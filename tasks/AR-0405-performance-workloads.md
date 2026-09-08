@@ -2,7 +2,7 @@
 {
   "branch": "feature/performance-workloads",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-09T00:06:49+00:00",
   "depends_on": [
     "AR-0401",
     "AR-0601",
@@ -11,15 +11,15 @@
   ],
   "id": "AR-0405",
   "next_action": "Run compatibility spikes and accept only workload subsets with stable independent oracles.",
-  "owner": "",
+  "owner": "contracts_20260906",
   "plan": "../plans/AR-0405.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Assess SWE-Perf, SWE-fficiency and CORE-Bench for correctness-preserving optimization and reproducibility.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Add performance and reproducibility workloads",
-  "updated_at": "2026-09-08T21:06:46+00:00",
+  "updated_at": "2026-09-08T21:06:49+00:00",
   "worktree_key": "agent-systems-benchmark-performance-workloads"
 }
 ---
@@ -35,3 +35,5 @@ Implementation has not started. Read the linked plan before claiming.
   AR-0703/native-isolation capacity, and AR-0704 lacks explicit provider/account/cost authorization.
   AR-0405 owns isolated asb-workloads performance/reproducibility plugin paths; shared Cargo/schema
   changes remain separately fenced.
+
+- 2026-09-08T21:06:49+00:00: Claimed by contracts_20260906.
