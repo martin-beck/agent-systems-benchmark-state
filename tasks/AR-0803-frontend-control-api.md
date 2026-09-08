@@ -2,7 +2,7 @@
 {
   "branch": "feature/frontend-control-api",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T07:26:03+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0104",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/frontend-control-api",
   "observed_dirty": 20,
   "observed_head": "cbb764c45c6128d75f42fb78a3a2a15a0874528a",
-  "owner": "replay_20260906",
+  "owner": "",
   "plan": "../plans/AR-0803.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "planned",
   "summary": "Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary.",
-  "task_revision": 307,
+  "task_revision": 308,
   "title": "Define the frontend control API",
-  "updated_at": "2026-09-08T05:30:56+00:00",
+  "updated_at": "2026-09-08T05:31:15+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api"
 }
 ---
@@ -883,3 +883,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T05:30:56+00:00: Recorded command exit 2; command argv SHA-256
   48458d4adcbc2714c4ae60f17ec39d916357031118af6e75d9a5cd826c73f20e.
+
+- 2026-09-08T05:31:15+00:00: 2026-09-08T06:00:00Z: Repair worker produced no bounded implementation
+  checkpoint after repeated requests; lease recovery only. Preserve clean successor lane and
+  original cbb764c dirty evidence worktree unchanged. Reclaim after fresh process/worktree audit.
