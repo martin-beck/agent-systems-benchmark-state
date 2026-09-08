@@ -2,19 +2,19 @@
 {
   "branch": "feature/shared-workflow-coordinator",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T09:06:06+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-0852",
   "next_action": "Preserve merged v0.1.4 effect e52ce3aa without history rewrite; complete a focused signed+DCO repair or documented signed state replacement under AR-0853, then re-audit live main before releasing AR-0852.",
-  "owner": "replay-20260906",
+  "owner": "",
   "plan": "../plans/AR-0852.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Adopt the path-exclusive coordinator commit fix discovered during live integration.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Adopt coordinator path isolation fix",
-  "updated_at": "2026-09-08T08:06:23+00:00",
+  "updated_at": "2026-09-08T08:09:00+00:00",
   "worktree_key": "agent-systems-benchmark-shared-coordinator"
 }
 ---
@@ -63,3 +63,11 @@ v0.1.3 to v0.1.4 after AR-0851 was completed.
 
 - 2026-09-08T08:06:23+00:00: Recorded command exit 0; command argv SHA-256
   51812688623dd5a56dd6baa6f2a5a87fca74bf5050fe9a772ccc067fd83df387.
+
+- 2026-09-08T08:09:00+00:00: Released AR-0852 after preserving PR 10 merge
+  e52ce3aaa59ffc4cc6f97657b6ea2c7dfceb2ac1 and completing dependency-free AR-0853 additive repair.
+  Signed+DCO PR 11 merge 8bc57761488a1e3319307456d2a763d5418d2dd6 binds the exact v0.1.4 head,
+  trees, ordered parents, signed upstream release and manifest digest while honestly retaining the
+  original merge signature/DCO limitation. Exact-main coordination run 34202334252 and formal run
+  34202334155 passed; postmerge vendor verification, full contracts, binding negatives, schema,
+  coverage and formal gates passed. Reconcile and live doctor passed at 1ac71340.
