@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify frontend privacy, artifact access, and fault behavior.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Assure frontend privacy and faults",
-  "updated_at": "2026-09-08T08:24:01+00:00",
+  "updated_at": "2026-09-08T08:24:04+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-privacy-assurance"
 }
 ---
@@ -36,3 +36,6 @@ redaction failures; prove no credentials, prompts, transcripts, or private paths
   because required AR-0836 remains blocked.
 
 - 2026-09-08T08:21:28+00:00: Claimed by quality_20260906.
+
+- 2026-09-08T08:24:04+00:00: Recorded command exit 0; command argv SHA-256
+  7fcc7feafce793ed694f89c1ed7932f34dc94e2903faf74975d0c5c554f2dcf9.
