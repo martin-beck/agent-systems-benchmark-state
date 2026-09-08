@@ -13,16 +13,16 @@
   "next_action": "Controlled rebase/resign PR #86 onto exact current origin/main 32f79101da348896fdf0fd94c07356889a05b693, preserving fe24e48 TUI semantics, retaining the new Huawei MIT header, and dropping superseded da0d21b pin repair because main already contains signed repair 7add29f. Record range-diff, rerun gates, obtain fresh immutable review, then guarded force-with-lease and fresh exact-head CI.",
   "observed_branch": "feature/tui-run-control",
   "observed_dirty": 0,
-  "observed_head": "da0d21b9c403c960e1eaac979ad22cb34932febe",
+  "observed_head": "b44282a31e902175059f9fed350ce888cf4b82ec",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0805.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 104,
+  "task_revision": 105,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T19:33:24+00:00",
+  "updated_at": "2026-09-08T19:33:30+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---

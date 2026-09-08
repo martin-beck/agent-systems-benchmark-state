@@ -94,6 +94,6 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-terminal-interface` | `feature/terminal-interface` | `d2e7b66ff6af` | 0 | behind 179, ahead 0 |
 | `agent-systems-benchmark-terminal-workloads` | `feature/terminal-workloads` | `76e01e9372ca` | 0 | behind 8, ahead 2 |
 | `agent-systems-benchmark-trace-interoperability` | `feature/trace-interoperability` | `921cf004f8aa` | 0 | behind 51, ahead 0 |
-| `agent-systems-benchmark-tui-run-control` | `feature/tui-run-control` | `da0d21b9c403` | 0 | behind 8, ahead 2 |
+| `agent-systems-benchmark-tui-run-control` | `feature/tui-run-control` | `b44282a31e90` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-tui-settings-wizard` | `feature/tui-settings-wizard` | `8f7152c525da` | 0 | behind 11, ahead 0 |
 | `agent-systems-benchmark-verifier-integrity` | `feature/verifier-integrity` | `3fc65ea73bad` | 0 | behind 84, ahead 0 |
