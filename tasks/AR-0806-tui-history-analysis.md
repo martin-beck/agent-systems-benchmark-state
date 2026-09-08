@@ -13,16 +13,16 @@
   "next_action": "Independent immutable review of candidate 9801fe8ca2dda26ed1eceac4e001ead74d689d9c (tree cbe8777bee6072da236ad2f74cd68e28d3a3fd8e, exact parent/current origin/main 559fbcc825234bb98a64ba554a53f38b004d24f6). If approved, publish focused PR and require exact-head CI; keep AR-0875 control/schema paths untouched and rich compatibility/history fields explicitly unavailable.",
   "observed_branch": "feature/tui-history-analysis",
   "observed_dirty": 0,
-  "observed_head": "ded1a33838a33c0103c9651d4303b0807f6255f4",
+  "observed_head": "3844c28ae60a3fd0ecc35d9845832b8a20f657b0",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0806.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-08T22:57:19+00:00",
+  "updated_at": "2026-09-08T22:57:24+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
