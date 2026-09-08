@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the v0.1.4 coordinator merge attestation without rewriting published history.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Repair coordinator merge attestation",
-  "updated_at": "2026-09-08T07:48:26+00:00",
+  "updated_at": "2026-09-08T07:50:50+00:00",
   "worktree_key": "agent-systems-benchmark-coordinator-merge-attestation"
 }
 ---
@@ -71,3 +71,6 @@ only an independently reviewed additive repair.
   successor will parse and validate the exact closed signed representation, internal object
   relationships, manifest digest and release identity while explicitly stating it does not
   independently prove an unavailable Git object.
+
+- 2026-09-08T07:50:50+00:00: Recorded command exit 127; command argv SHA-256
+  5a487d88d3ab3835904fd9319427f1a152c42eeab15061d78375408f511847d6.
