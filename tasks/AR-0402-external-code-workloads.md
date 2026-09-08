@@ -9,17 +9,17 @@
   "id": "AR-0402",
   "next_action": "Add digest verification/acquisition boundary and oracle fixtures, then run Rust/full quality gates.",
   "observed_branch": "feature/external-code-workloads",
-  "observed_dirty": 3,
-  "observed_head": "aa021eb5272bb7ca45100f2f1d6166ec61744ec8",
+  "observed_dirty": 0,
+  "observed_head": "c6cb98876da22d8bc72c3ae4173f5f9f1c6992c4",
   "owner": "root-coordination-20260906",
   "plan": "../plans/AR-0402.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T12:13:39+00:00",
+  "updated_at": "2026-09-08T12:13:46+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
