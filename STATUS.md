@@ -755,7 +755,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0314](tasks/AR-0314-recording-source-choice.md): Choose matching replay or live provider execution | quality_20260906 | Offer matching prior recordings or an actual provider connection without silently choosing either. | Independent immutable review of rebased signed candidate e8fed7e and exact-tree evidence; if approved, publish/update focused PR and require exact-head CI before integration/release. |
+| P1 | [AR-0314](tasks/AR-0314-recording-source-choice.md): Choose matching replay or live provider execution | quality_20260906 | Offer matching prior recordings or an actual provider connection without silently choosing either. | Monitor PR #81 exact head e8fed7e/base 33f30cb required checks to terminal; investigate any failure and do not merge without full green matrix and coordinator authorization. |
 | P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | codex-asb-header-recovery | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Claim, create the declared worktree, enforce exact first-party Huawei MIT source headers, test, and publish unmerged PRs. |
 | P2 | [AR-0403](tasks/AR-0403-terminal-workloads.md): Integrate Terminal-Bench workloads | replay_20260906 | Import terminal tasks through an adapter to the published harness or task format. | Independent review the signed adapter checkpoint e0da4efd; run exact-tree quality gates and retain explicit unqualified Terminal-Bench limitations. |
 

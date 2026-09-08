@@ -12,7 +12,7 @@
     "AR-0318"
   ],
   "id": "AR-0314",
-  "next_action": "Independent immutable review of rebased signed candidate e8fed7e and exact-tree evidence; if approved, publish/update focused PR and require exact-head CI before integration/release.",
+  "next_action": "Monitor PR #81 exact head e8fed7e/base 33f30cb required checks to terminal; investigate any failure and do not merge without full green matrix and coordinator authorization.",
   "observed_branch": "feature/provider-recording-choice",
   "observed_dirty": 0,
   "observed_head": "e8fed7e572b6bf9d14d76f15b91b7cb208e2d48b",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Offer matching prior recordings or an actual provider connection without silently choosing either.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Choose matching replay or live provider execution",
-  "updated_at": "2026-09-08T14:44:31+00:00",
+  "updated_at": "2026-09-08T14:45:12+00:00",
   "worktree_key": "agent-systems-benchmark-provider-recording-choice"
 }
 ---
@@ -176,3 +176,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T14:44:31+00:00: Recorded command exit 0; command argv SHA-256
   b997b990c89192b6e33fa45e2d2a86f2cb689c4eea31080ae3437c875c259454.
+
+- 2026-09-08T14:45:12+00:00: Published independently approved AR-0314 candidate as PR #81. GitHub
+  confirms OPEN, MERGEABLE, exact head e8fed7e572b6bf9d14d76f15b91b7cb208e2d48b and base
+  33f30cb7d88aa8d3c323895154c8237d1763c6b8. Initial CI: AWQ and TLC/Alloy success; emulated-aarch64
+  run 34240216881, fault run 34240216897, repository-quality run 34240216945, Rust run 34240216884,
+  and formal run 34240217090 active.
