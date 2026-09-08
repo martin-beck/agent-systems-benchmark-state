@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the v0.1.4 coordinator merge attestation without rewriting published history.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Repair coordinator merge attestation",
-  "updated_at": "2026-09-08T07:43:12+00:00",
+  "updated_at": "2026-09-08T07:43:42+00:00",
   "worktree_key": "agent-systems-benchmark-coordinator-merge-attestation"
 }
 ---
@@ -57,3 +57,6 @@ only an independently reviewed additive repair.
 
 - 2026-09-08T07:43:12+00:00: Recorded command exit 1; command argv SHA-256
   968b9050b8aa069491edbd862e6a38ca802bea9a5341b3e4c0ebe0ef522f8c22.
+
+- 2026-09-08T07:43:42+00:00: Recorded command exit 2; command argv SHA-256
+  46101b714d98171a210e23487116682d71685f117907baa4a5a621924828301e.
