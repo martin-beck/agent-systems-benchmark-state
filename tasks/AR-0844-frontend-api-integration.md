@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate and qualify the frontend control API as an independent boundary.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Integrate frontend control API",
-  "updated_at": "2026-09-08T10:55:27+00:00",
+  "updated_at": "2026-09-08T11:28:23+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-api-integration"
 }
 ---
@@ -69,3 +69,6 @@ status, no implicit network listener exists, and exact-head CI/post-merge recove
   exact test passed: 1 passed, 0 failed; fmt and diff-check passed. Exit 127 was missing pinned
   cargo PATH and exit 2 was a mistyped cargo fmt argument; both operator-only, no semantic test
   failure, preserved scope.
+
+- 2026-09-08T11:28:23+00:00: Recorded command exit 0; command argv SHA-256
+  774847d8415fd097eebafcb8a207e62e3110fbb472ba0a12a471beeb1cf9da41.
