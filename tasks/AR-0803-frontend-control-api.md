@@ -10,7 +10,7 @@
     "AR-0801"
   ],
   "id": "AR-0803",
-  "next_action": "Reconcile the integrated AR-0847 repair into a new immutable candidate: wire asb-control into the authoritative runner, prove cancellation/no-late-effect with cooperative and noncooperative backends, and replace blacklist JSON privacy checks with typed exhaustive projections; then rerun independent review and exact-head gates.",
+  "next_action": "Monitor PR #63 exact head 8d7d90014dbcf4df2f08be90b08392776d702a11 across Rust, fault, formal, emulated-aarch64, and repository-quality workflows; repair only an evidence-backed failure; do not merge without coordinator authorization.",
   "observed_branch": "feature/frontend-control-api",
   "observed_dirty": 20,
   "observed_head": "cbb764c45c6128d75f42fb78a3a2a15a0874528a",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary.",
-  "task_revision": 336,
+  "task_revision": 337,
   "title": "Define the frontend control API",
-  "updated_at": "2026-09-08T06:00:08+00:00",
+  "updated_at": "2026-09-08T06:00:59+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-control-api"
 }
 ---
@@ -972,3 +972,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T06:00:08+00:00: Recorded command exit 0; command argv SHA-256
   7e9d3baf6c407cb1624ea02dde5da8890c669c8f70515337e8bff9373f84b550.
+
+- 2026-09-08T06:00:59+00:00: Published independently reviewed candidate
+  8d7d90014dbcf4df2f08be90b08392776d702a11 as PR #63:
+  https://github.com/martin-beck/agent-systems-benchmark/pull/63. Exact base
+  d3e2dfa979d85b8b443a07f93e7dd7b9a226bc2f; PR open and mergeable. Exact-head runs started: Rust
+  34192801200, Fault 34192801218, Formal 34192801250, emulated aarch64 34192801226, quality
+  34192801233. All target exact head; currently running/queued, no failure yet.
