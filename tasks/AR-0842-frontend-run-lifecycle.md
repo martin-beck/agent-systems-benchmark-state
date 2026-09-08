@@ -2,7 +2,7 @@
 {
   "branch": "feature/frontend-run-lifecycle",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T09:26:40+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0840",
     "AR-0841",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/frontend-run-lifecycle",
   "observed_dirty": 0,
   "observed_head": "e86fe799a33cd17a1b8f05a029effe41bbf13de5",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0842.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Define and implement frontend-independent run lifecycle semantics.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Implement frontend run lifecycle",
-  "updated_at": "2026-09-08T07:27:27+00:00",
+  "updated_at": "2026-09-08T07:27:53+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-run-lifecycle"
 }
 ---
@@ -38,3 +38,6 @@ and bounded backpressure with recovery tests.
 
 - 2026-09-08T07:27:27+00:00: Recorded command exit 0; command argv SHA-256
   a409a4e5c8fd683a1b29acab1e0f04473268c87decc379a27498ff33b320b612.
+
+- 2026-09-08T07:27:53+00:00: Lease expired at 09:26:40Z with no active process and clean unchanged
+  worktree at e86fe799; lease recovery only, preserve worktree and reclaim after fresh audit.
