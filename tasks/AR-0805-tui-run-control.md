@@ -2,7 +2,7 @@
 {
   "branch": "feature/tui-run-control",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-08T19:22:57+00:00",
   "depends_on": [
     "AR-0104",
     "AR-0204",
@@ -11,15 +11,15 @@
   ],
   "id": "AR-0805",
   "next_action": "Implement transactional run launch and reconnectable live status views in the terminal frontend.",
-  "owner": "",
+  "owner": "quality_20260906",
   "plan": "../plans/AR-0805.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T16:22:44+00:00",
+  "updated_at": "2026-09-08T16:22:57+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -34,3 +34,5 @@ Implementation has not started. Read the linked plan before claiming.
   Dependencies AR-0104, AR-0204, AR-0803, and AR-0804 are all durably done. Promote for
   quality_20260906; product mutation must wait for or rebase after active broad AR-0855
   source-header fence, which overlaps asb-tui source.
+
+- 2026-09-08T16:22:57+00:00: Claimed by quality_20260906.
