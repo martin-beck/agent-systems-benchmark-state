@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Track dataset provenance, contamination risk, grader validity and native portability per workload revision.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Maintain benchmark validity and portability registry",
-  "updated_at": "2026-09-08T00:14:47+00:00",
+  "updated_at": "2026-09-08T00:15:08+00:00",
   "worktree_key": "agent-systems-benchmark-benchmark-validity"
 }
 ---
@@ -194,3 +194,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T00:14:47+00:00: Recorded command exit 0; command argv SHA-256
   0f092180a92f096d60d2459469dfea56d6bbf910bedb566ccfed101aeb2451e0.
+
+- 2026-09-08T00:15:08+00:00: Immutable review candidate 60a6c730457b4c40f9a025751c1e317d9fe9429d,
+  tree 1a5f7481c34209affa7b19f19acda42df1ec5f17, exact parent/origin main
+  20ac1e507e678aff463ec5f6c7b37cfcd67a5ad0. Ten-path focused registry/Cargo/docs scope; worktree
+  clean. SSH signature is valid for Martin Beck and the exact DCO trailer is present. Exact-tree
+  repository policy, range Gitleaks, diff check, Cargo locked/offline metadata and scope audit pass.
+  Focused 22 tests, full workspace fmt/clippy/tests/docs/release, formal workspace, Kani six
+  harnesses plus false-assertion negative, TLC/Alloy witnesses and mutants, failure fixtures,
+  cargo-deny and cargo-audit pass. Validity module coverage is 97.35 percent lines and 100 percent
+  functions; explicit nightly branch instrumentation measured 79.33 percent for the module and 82.30
+  percent for the crate, so no 95 percent branch claim is made. Registry intentionally claims no
+  native workload, holdout/contamination-resistance, or host-performance qualification. Next action:
+  immutable independent review before publication.
