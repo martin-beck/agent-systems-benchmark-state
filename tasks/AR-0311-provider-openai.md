@@ -26,9 +26,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply one default OpenAI provider profile consistently to all supported agents.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Support a shared OpenAI provider",
-  "updated_at": "2026-09-08T10:11:50+00:00",
+  "updated_at": "2026-09-08T10:12:57+00:00",
   "worktree_key": "agent-systems-benchmark-provider-openai"
 }
 ---
@@ -79,3 +79,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T10:11:50+00:00: Recorded command exit 0; command argv SHA-256
   ec916e38bb1fb459f63ae04d5e9340e7a187e47a42bc1b23102fd9f420c9988b.
+
+- 2026-09-08T10:12:57+00:00: Recorded command exit 0; command argv SHA-256
+  57d5720f446b3e91b02a1874d41cbf8463e3f6a8f161e3f68156b8029c16b6d9.
