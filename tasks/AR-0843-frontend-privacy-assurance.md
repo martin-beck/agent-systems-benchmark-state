@@ -9,15 +9,18 @@
   ],
   "id": "AR-0843",
   "next_action": "Enforce public-summary and sensitive-artifact boundaries with privacy and fault tests.",
+  "observed_branch": "feature/frontend-privacy-assurance",
+  "observed_dirty": 0,
+  "observed_head": "ba97a20f60f39b4c5ef601a7dade148276a631d6",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0843.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify frontend privacy, artifact access, and fault behavior.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Assure frontend privacy and faults",
-  "updated_at": "2026-09-08T08:21:28+00:00",
+  "updated_at": "2026-09-08T08:24:01+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-privacy-assurance"
 }
 ---

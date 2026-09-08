@@ -38,6 +38,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-frontend-control-api-repair` | `feature/frontend-control-api-repair` | `0d2534f614cd` | 0 | behind 30, ahead 0 |
 | `agent-systems-benchmark-frontend-control-api-successor` | `feature/frontend-control-api-successor` | `8d7d90014dbc` | 0 | behind 12, ahead 0 |
 | `agent-systems-benchmark-frontend-local-transport` | `feature/frontend-local-transport` | `d914647bd7da` | 0 | behind 3, ahead 0 |
+| `agent-systems-benchmark-frontend-privacy-assurance` | `feature/frontend-privacy-assurance` | `ba97a20f60f3` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-frontend-protocol-contract` | `feature/frontend-protocol-contract` | `d3e2dfa979d8` | 0 | behind 13, ahead 0 |
 | `agent-systems-benchmark-frontend-run-lifecycle` | `feature/frontend-run-lifecycle` | `b3b3b8907f6d` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-gemini-generate-content-replay` | `feature/gemini-generate-content-replay` | `93c19625f910` | 0 | behind 49, ahead 0 |
