@@ -14,7 +14,7 @@ Generated from local Git and GitHub. Do not edit.
 | #61 | `feature/kernel-diagnostics@1d24993771a4` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | metrics: add fail-closed optional kernel probes |
 | #82 | `fix/huawei-mit-license-headers@7add29f1d24c` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: enforce Huawei MIT source headers |
 | #85 | `feature/terminal-workloads@76e01e9372ca` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | workloads: pin Terminal-Bench v4 contract |
-| #86 | `feature/tui-run-control@fe24e48f9b4b` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(tui): add reconnectable terminal run control |
+| #86 | `feature/tui-run-control@fe24e48f9b4b` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(tui): add reconnectable terminal run control |
 
 ## Recent workflows
 
@@ -23,7 +23,7 @@ Generated from local Git and GitHub. Do not edit.
 | 34263658065 | `fe24e48f9b4b` | pull_request | Formal assurance | completed:failure |
 | 34263657960 | `fe24e48f9b4b` | pull_request | Repository quality | in_progress:- |
 | 34263657894 | `fe24e48f9b4b` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 34263657815 | `fe24e48f9b4b` | pull_request | Fault assurance | in_progress:- |
+| 34263657815 | `fe24e48f9b4b` | pull_request | Fault assurance | completed:success |
 | 34263657803 | `fe24e48f9b4b` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 34263657802 | `fe24e48f9b4b` | pull_request | Rust verification | in_progress:- |
 | 34262639515 | `7add29f1d24c` | pull_request | Agent Workflow Quality shadow | completed:success |
