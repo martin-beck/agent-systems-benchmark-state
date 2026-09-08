@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Choose several agents and one preconfigured provider for all of them from negotiated TUI selection lists.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Add TUI multi-agent provider selection",
-  "updated_at": "2026-09-08T23:44:57+00:00",
+  "updated_at": "2026-09-08T23:45:01+00:00",
   "worktree_key": "agent-systems-benchmark-tui-multi-agent-provider-selection"
 }
 ---
@@ -87,3 +87,6 @@ Implementation has not started. Read the linked plan before claiming.
   workspace Clippy/coverage builds; the same compile error caused emulated aarch64 and
   repository-quality failures. Local focused tests, rustfmt and policy pass after signed repair
   b3c19b1.
+
+- 2026-09-08T23:45:01+00:00: Recorded command exit 0; command argv SHA-256
+  8909bb308d0b1bbdeaa40cf30a1e184f2733c751b8ca09d634815e3764b7ce83.
