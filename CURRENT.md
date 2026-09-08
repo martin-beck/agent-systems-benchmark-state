@@ -8,7 +8,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Claim, create the declared worktree, enforce exact first-party Huawei MIT source headers, test, and publish unmerged PRs. | asb-license-20260908 |
-| P2 | [AR-0402](tasks/AR-0402-external-code-workloads.md): Integrate SWE-bench and Aider Polyglot | Add versioned external workload adapters without vendoring datasets. | Complete AR-0402 acceptance review and determine whether remaining production integration belongs in a successor AR; do not claim real evaluator qualification. | root-coordination-20260906 |
 
 ## Open
 
@@ -153,6 +152,7 @@ Never edit this file directly.
 | P1 | [AR-1008](tasks/AR-1008.md): Integrate Agent Workflow Quality in shadow mode | Pin AWQ v0.1.0 in Agent Systems Benchmark and its state repository without replacing native gates or coordinator behavior. | Claim, create an isolated product worktree, add pinned policies and shadow workflows to both repositories, then publish reviewed evidence. | - |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Run final state validation/live doctor and release done after confirming clean synchronized product/state refs at signed merge a0d80e4. | - |
 | P2 | [AR-0309](tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | Run a maintained MIT OpenHands SDK or canonical headless client. | Monitor PR #65 exact-head CI for fec0487, investigate any failure, and await final review; do not merge. | - |
+| P2 | [AR-0402](tasks/AR-0402-external-code-workloads.md): Integrate SWE-bench and Aider Polyglot | Add versioned external workload adapters without vendoring datasets. | Complete AR-0402 acceptance review and determine whether remaining production integration belongs in a successor AR; do not claim real evaluator qualification. | - |
 | P2 | [AR-0601](tasks/AR-0601-csb-integration.md): Prototype optional CSB integration | Reuse CSB application execution and monitoring where contracts fit ASB. | Monitor PR #70 exact-head CI for terminal results; do not merge without coordinator authorization. | - |
 | P2 | [AR-0802](tasks/AR-0802-executable-guides.md): Deliver runnable user and extension guides | Publish executable offline quickstart, workload/agent extension guide and reproducibility guide. | Capture actual CLI workflows after commands are implemented. | - |
 | P2 | [AR-1005](tasks/AR-1005-trace-interoperability.md): Export interoperable privacy-safe traces | Expose stable causal ASB events and optional standards-based telemetry without binding storage to an evolving convention. | Monitor PR #75 exact head 921cf004 CI; classify any failure before repair and do not merge without coordinator authorization. | - |

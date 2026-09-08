@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 4 |
 | **Planned** | Defined work awaiting promotion or dependencies | 39 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 83 |
+| **Done** | Accepted, integrated, and durably verified | 84 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -72,7 +72,7 @@ flowchart LR
     subgraph series_04["04 - Live measurement"]
         direction TB
         AR_0401["AR-0401 - Done"]:::status_done
-        AR_0402["AR-0402 - In progress"]:::status_in_progress
+        AR_0402["AR-0402 - Done"]:::status_done
         AR_0403["AR-0403 - Planned"]:::status_planned
         AR_0404["AR-0404 - Planned"]:::status_planned
         AR_0405["AR-0405 - Planned"]:::status_planned
@@ -740,12 +740,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | asb-license-20260908 | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Claim, create the declared worktree, enforce exact first-party Huawei MIT source headers, test, and publish unmerged PRs. |
-| P2 | [AR-0402](tasks/AR-0402-external-code-workloads.md): Integrate SWE-bench and Aider Polyglot | root-coordination-20260906 | Add versioned external workload adapters without vendoring datasets. | Complete AR-0402 acceptance review and determine whether remaining production integration belongs in a successor AR; do not claim real evaluator qualification. |
 
 ### Open (1)
 
@@ -806,7 +805,7 @@ flowchart LR
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Evaluate maintenance, licenses and reproducibility before integration. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (83)
+### Done (84)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -890,6 +889,7 @@ flowchart LR
 | P1 | [AR-1008](tasks/AR-1008.md): Integrate Agent Workflow Quality in shadow mode | Unclaimed | Pin AWQ v0.1.0 in Agent Systems Benchmark and its state repository without replacing native gates or coordinator behavior. | Claim, create an isolated product worktree, add pinned policies and shadow workflows to both repositories, then publish reviewed evidence. |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Unclaimed | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Run final state validation/live doctor and release done after confirming clean synchronized product/state refs at signed merge a0d80e4. |
 | P2 | [AR-0309](tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | Unclaimed | Run a maintained MIT OpenHands SDK or canonical headless client. | Monitor PR #65 exact-head CI for fec0487, investigate any failure, and await final review; do not merge. |
+| P2 | [AR-0402](tasks/AR-0402-external-code-workloads.md): Integrate SWE-bench and Aider Polyglot | Unclaimed | Add versioned external workload adapters without vendoring datasets. | Complete AR-0402 acceptance review and determine whether remaining production integration belongs in a successor AR; do not claim real evaluator qualification. |
 | P2 | [AR-0601](tasks/AR-0601-csb-integration.md): Prototype optional CSB integration | Unclaimed | Reuse CSB application execution and monitoring where contracts fit ASB. | Monitor PR #70 exact-head CI for terminal results; do not merge without coordinator authorization. |
 | P2 | [AR-0802](tasks/AR-0802-executable-guides.md): Deliver runnable user and extension guides | Unclaimed | Publish executable offline quickstart, workload/agent extension guide and reproducibility guide. | Capture actual CLI workflows after commands are implemented. |
 | P2 | [AR-1005](tasks/AR-1005-trace-interoperability.md): Export interoperable privacy-safe traces | Unclaimed | Expose stable causal ASB events and optional standards-based telemetry without binding storage to an evolving convention. | Monitor PR #75 exact head 921cf004 CI; classify any failure before repair and do not merge without coordinator authorization. |

@@ -2,7 +2,7 @@
 {
   "branch": "feature/external-code-workloads",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-08T14:00:33+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0401"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/external-code-workloads",
   "observed_dirty": 0,
   "observed_head": "d6875cc7bb6960f5feb02245b0bfde13d1099c9f",
-  "owner": "root-coordination-20260906",
+  "owner": "",
   "plan": "../plans/AR-0402.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Add versioned external workload adapters without vendoring datasets.",
-  "task_revision": 140,
+  "task_revision": 141,
   "title": "Integrate SWE-bench and Aider Polyglot",
-  "updated_at": "2026-09-08T13:34:59+00:00",
+  "updated_at": "2026-09-08T13:36:07+00:00",
   "worktree_key": "agent-systems-benchmark-external-code-workloads"
 }
 ---
@@ -393,3 +393,13 @@ Implementation has not started. Read the linked plan before claiming.
   9feeba6524357df38e3ad118d4c3740306d3ec8e. Exact-main post-merge all green: Rust 34232145154,
   quality 34232145081, formal 34232145018, fault 34232145161, emulated aarch64 34232145085.
   Documentation explicitly preserves unqualified/non-comparable limitations.
+
+- 2026-09-08T13:36:07+00:00: Independent acceptance review complete. AR-0402 delivered signed/DCO
+  product merges through 9feeba6524357df38e3ad118d4c3740306d3ec8e: immutable source/license/archive
+  provenance for SWE-bench, refreshed Aider, and six Exercism tracks; explicit attempt budgets and
+  unsupported platform cells; offline digest fixtures; safe materialization; fail-closed
+  planning/execution; bounded oracle result validation; non-comparable comparison and
+  limitation-preserving report. Focused local suites reached 9/9, 6/6, and 5/5 checkpoints;
+  exact-main Rust/quality/formal/fault/emulated-aarch64 gates green (latest documented runs
+  34232145154, 34232145081, 34232145018, 34232145161, 34232145085). Real evaluator images/SBOMs and
+  official external scores remain explicitly unqualified/planned.
