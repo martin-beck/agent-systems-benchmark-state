@@ -10,17 +10,17 @@
   "id": "AR-0841",
   "next_action": "Implement bounded owner-only Unix-socket transport with peer checks and fail-closed framing.",
   "observed_branch": "feature/frontend-local-transport",
-  "observed_dirty": 5,
-  "observed_head": "123c58f7a971f210873124fccb31daa16139aab4",
+  "observed_dirty": 0,
+  "observed_head": "dbb38172f119b6c68efd9754a80c0cdff34e655d",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0841.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the local frontend control transport and authorization boundary.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Implement frontend local transport",
-  "updated_at": "2026-09-08T07:06:24+00:00",
+  "updated_at": "2026-09-08T07:06:48+00:00",
   "worktree_key": "agent-systems-benchmark-frontend-local-transport"
 }
 ---
