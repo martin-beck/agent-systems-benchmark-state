@@ -20,11 +20,11 @@
   "plan": "../plans/AR-0316.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Make supported agent installations reproducible, license-audited, SBOM-backed, and independently verifiable.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Publish reproducible agent runtime bundles",
-  "updated_at": "2026-09-06T23:40:07+00:00",
+  "updated_at": "2026-09-08T10:35:21+00:00",
   "worktree_key": "agent-systems-benchmark-agent-runtime-bundles"
 }
 ---
@@ -35,3 +35,9 @@ Make supported agent installations reproducible, license-audited, SBOM-backed,
 and independently verifiable.
 
 Implementation has not started. Read the linked plan before claiming.
+
+- 2026-09-08T10:35:21+00:00: Promote after verifying AR-0301 through AR-0309 are durably done.
+  AR-0313 is deferred because its run-plan/asb-agents integration overlaps active AR-1003 and
+  serialized Cargo/schema paths; AR-0316 begins only with disjoint runtime-manifest inventory,
+  provenance, and verification fixtures, while shared release/platform/Cargo/schema integration
+  remains deferred to a coordinator fence.
