@@ -9,17 +9,17 @@
   "id": "AR-0403",
   "next_action": "Add a provenance-only Terminal-Bench v4 adapter record and fail-closed negatives; do not qualify or execute until selected Harbor package bytes, OCI image digest, reset behavior, and native oracle evidence are available.",
   "observed_branch": "feature/terminal-workloads",
-  "observed_dirty": 6,
-  "observed_head": "9feeba6524357df38e3ad118d4c3740306d3ec8e",
+  "observed_dirty": 0,
+  "observed_head": "e0da4efd375080c774cff91a8eef694d93e14132",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0403.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Import terminal tasks through an adapter to the published harness or task format.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Integrate Terminal-Bench workloads",
-  "updated_at": "2026-09-08T14:00:23+00:00",
+  "updated_at": "2026-09-08T14:00:32+00:00",
   "worktree_key": "agent-systems-benchmark-terminal-workloads"
 }
 ---
