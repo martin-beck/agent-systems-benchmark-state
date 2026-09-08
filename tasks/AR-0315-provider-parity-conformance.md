@@ -22,17 +22,17 @@
   "id": "AR-0315",
   "next_action": "Create SSH-signed+DCO two-file structural-conformance checkpoint, then run commit-range repository policy and Gitleaks; request independent review without claiming real pinned-agent/native completion.",
   "observed_branch": "test/provider-parity-conformance",
-  "observed_dirty": 2,
-  "observed_head": "d51ee9c9ab8889f6b9837a89772f59ea6f37d3a3",
+  "observed_dirty": 0,
+  "observed_head": "7a5332dd3d0329343cf27b2433818b749bfdd355",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0315.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Conformance-test identical OpenAI and Ollama profiles across the complete supported-agent matrix.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Verify cross-agent provider parity",
-  "updated_at": "2026-09-08T16:02:12+00:00",
+  "updated_at": "2026-09-08T16:02:19+00:00",
   "worktree_key": "agent-systems-benchmark-provider-parity-conformance"
 }
 ---
