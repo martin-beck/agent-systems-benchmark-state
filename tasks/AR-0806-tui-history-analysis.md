@@ -10,7 +10,7 @@
     "AR-1001"
   ],
   "id": "AR-0806",
-  "next_action": "Independent immutable review of candidate 9801fe8ca2dda26ed1eceac4e001ead74d689d9c (tree cbe8777bee6072da236ad2f74cd68e28d3a3fd8e, exact parent/current origin/main 559fbcc825234bb98a64ba554a53f38b004d24f6). If approved, publish focused PR and require exact-head CI; keep AR-0875 control/schema paths untouched and rich compatibility/history fields explicitly unavailable.",
+  "next_action": "Fresh independent immutable review of repaired/rebased candidate 3844c28ae60a3fd0ecc35d9845832b8a20f657b0, tree 16d02ec17413c1743b9e026c53b2265fe431c9d0, exact parent/current origin/main 4cad7460065e0a2d4b1722eff446443c4399762e. Verify within-page run_id uniqueness is atomic, two-path scope, signature/DCO, exact '=' range-diff from repaired ded1a33, and gates before publication.",
   "observed_branch": "feature/tui-history-analysis",
   "observed_dirty": 0,
   "observed_head": "3844c28ae60a3fd0ecc35d9845832b8a20f657b0",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-08T22:58:10+00:00",
+  "updated_at": "2026-09-08T22:58:50+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
@@ -127,3 +127,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T22:58:10+00:00: Recorded command exit 0; command argv SHA-256
   82b6b7b7b306b2946c6a274804edf37504d9a92c55109a19feda9ab217c8826d.
+
+- 2026-09-08T22:58:50+00:00: Repaired the review defect before mutation: accept_history now builds
+  an incoming run_id set and rejects any duplicate within the page as StaleProjection before cursor,
+  has_more, or runs change. The adversarial page uses duplicate run-3 identities at distinct valid
+  creation revisions 12 and 16, then proves retained item count/render and next history call/cursor
+  are unchanged. Correct exact focused test passes 1/1 and full asb-tui passes 16/16. An earlier
+  --exact filter omitted the tests:: prefix and ran zero tests; it was operator-only and is not
+  counted as evidence. Amended signed candidate, then rebased onto advanced current main; repaired
+  ded1a33 maps '=' to final 3844c28ae60a3fd0ecc35d9845832b8a20f657b0. Fresh exact-tree fmt, full
+  workspace all-target Clippy -D warnings, workspace tests, rustdoc -D warnings, release build, SSH
+  signature/DCO, repository policy, diff-check, and Gitleaks all pass. Scope remains
+  crates/asb-tui/src/lib.rs plus README only; AR-0875 paths untouched.
