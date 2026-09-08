@@ -11,17 +11,17 @@
   "id": "AR-0309",
   "next_action": "Finish license/provenance and exact-scope audit of the v1.17.0 official-lock pivot, run affected full gates, then create a signed DCO replacement candidate for immutable review.",
   "observed_branch": "feature/agent-openhands",
-  "observed_dirty": 5,
-  "observed_head": "e9af38b5be5140c8eaf4d1b55e1eebab07d0f311",
+  "observed_dirty": 0,
+  "observed_head": "e2b312cf8fa3fcc452e1f5a708dcfe2d1c06adf1",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0309.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run a maintained MIT OpenHands SDK or canonical headless client.",
-  "task_revision": 101,
+  "task_revision": 102,
   "title": "Implement maintained OpenHands SDK client adapter",
-  "updated_at": "2026-09-08T05:12:04+00:00",
+  "updated_at": "2026-09-08T05:12:31+00:00",
   "worktree_key": "agent-systems-benchmark-agent-openhands"
 }
 ---

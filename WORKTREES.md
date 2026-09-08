@@ -12,8 +12,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-agent-mini-swe` | `feature/agent-mini-swe` | `3cf9a53fce70` | 0 | behind 53, ahead 0 |
 | `agent-systems-benchmark-agent-opencode` | `feature/agent-opencode` | `dfb0d548bf75` | 0 | behind 132, ahead 0 |
 | `agent-systems-benchmark-agent-opendesk` | `feature/agent-opendesk` | `8eb99d3c7235` | 0 | behind 125, ahead 0 |
-| `agent-systems-benchmark-agent-openhands` | `feature/agent-openhands` | `e9af38b5be51` | 5 | behind 2, ahead 3 |
-| changed files | - | - | - | `crates/asb-agents/src/lib.rs`, `crates/asb-agents/src/openhands.rs`, `crates/asb-agents/tests/fixtures/openhands-sdk-1.45.0.freeze.txt`, `crates/asb-agents/tests/openhands_boundary.rs`, `crates/asb-agents/tests/fixtures/openhands-sdk-1.17.0.freeze.txt` |
+| `agent-systems-benchmark-agent-openhands` | `feature/agent-openhands` | `e2b312cf8fa3` | 0 | behind 2, ahead 4 |
 | `agent-systems-benchmark-agent-qwen-code` | `feature/agent-qwen-code` | `0be96c9ec50e` | 0 | behind 101, ahead 0 |
 | `agent-systems-benchmark-agent-replay-conformance` | `feature/agent-replay-conformance` | `3a07b57b8265` | 0 | behind 2, ahead 0 |
 | `agent-systems-benchmark-aider-deterministic-replay` | `fix/aider-deterministic-replay` | `87a22654913a` | 0 | behind 3, ahead 0 |
