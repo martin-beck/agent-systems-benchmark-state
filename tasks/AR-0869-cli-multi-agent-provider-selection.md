@@ -10,7 +10,7 @@
     "AR-0801"
   ],
   "id": "AR-0869",
-  "next_action": "Create one SSH-signed DCO candidate from the exact five-path tree, rerun exact-commit policy/signature/privacy/scope checks, and request independent immutable review before publication.",
+  "next_action": "Obtain independent immutable review of exact candidate 0d9d317716d557b916e4da7022f58197d287987a before publication; if approved, publish exact head and require all hosted exact-head gates before integration.",
   "observed_branch": "feature/cli-multi-agent-provider-selection",
   "observed_dirty": 0,
   "observed_head": "0d9d317716d557b916e4da7022f58197d287987a",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Select several agents and apply one preconfigured provider profile through inspectable command-line options.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Add CLI multi-agent provider selection",
-  "updated_at": "2026-09-08T22:30:30+00:00",
+  "updated_at": "2026-09-08T22:31:06+00:00",
   "worktree_key": "agent-systems-benchmark-cli-multi-agent-provider-selection"
 }
 ---
@@ -271,3 +271,19 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T22:30:30+00:00: Recorded command exit 0; command argv SHA-256
   8dae376bd972e6b6584a96f02959606f7f789e4df13bea179b5f92e2221b3f9f.
+
+- 2026-09-08T22:31:06+00:00: Immutable AR-0869 candidate is exact commit
+  0d9d317716d557b916e4da7022f58197d287987a, tree 25183d10ffb50bd465dd93efb5b69001a20273e4, parent
+  559fbcc825234bb98a64ba554a53f38b004d24f6. Martin Beck SSH signature verifies with the allowed
+  ED25519 identity and the final Signed-off-by trailer exactly matches the author. Worktree is
+  clean. Exact five-path scope is Cargo.lock, crates/asb-cli/Cargo.toml, crates/asb-cli/src/lib.rs,
+  docs/QUICKSTART.md, and docs/examples/guide-contract.json; Cargo delta remains only asb-cli to
+  existing asb-agents and its lock package edge. Exact-candidate workspace tests, formal tests,
+  workspace Clippy with warnings denied, rustdoc warnings denied, and release build pass.
+  Exact-candidate mutation run found seven and caught seven. Exact-candidate coverage passes at
+  93.43 percent workspace lines, 99.40 percent asb-core, 96.83 percent asb-protocol, and 97.73
+  percent asb-replay. Exact commit range repository policy, diff-check, Git-history Gitleaks, scope,
+  signature, and DCO pass. Cargo-deny, offline cargo-audit, actionlint, zizmor, and prior
+  source-diff Gitleaks pass. No Kani harness covers this CLI orchestration slice; hosted formal
+  remains required at exact head. Candidate is ready only for independent review, not publication or
+  merge.
