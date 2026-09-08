@@ -9,7 +9,7 @@
     "AR-0103"
   ],
   "id": "AR-0309",
-  "next_action": "Add malformed, symlink, cancellation, action-ceiling and cleanup negatives; generate the exact locked package inventory/provenance fixture; then request the shared lib.rs registration fence.",
+  "next_action": "Extend checkpoint 725c40b with malformed-evidence, symlink, cancellation, action-ceiling and cleanup negatives, then request the serialized lib.rs registration fence.",
   "observed_branch": "feature/agent-openhands",
   "observed_dirty": 0,
   "observed_head": "725c40bd41b18947d25a4a986dab4a3ba46f0cd6",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Run a maintained MIT OpenHands SDK or canonical headless client.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Implement maintained OpenHands SDK client adapter",
-  "updated_at": "2026-09-08T04:25:40+00:00",
+  "updated_at": "2026-09-08T04:26:12+00:00",
   "worktree_key": "agent-systems-benchmark-agent-openhands"
 }
 ---
@@ -168,3 +168,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T04:25:40+00:00: Recorded command exit 0; command argv SHA-256
   790a009e741575e7c8951b389f84d9f707c77acfa8790d6f26e79a59c1294365.
+
+- 2026-09-08T04:26:12+00:00: Signed+DCO isolated checkpoint 725c40bd41b18947d25a4a986dab4a3ba46f0cd6
+  (tree 34eb8e470d879c701dc88ccab6446855b96f419e) adds only openhands.rs, openhands_boundary.rs and
+  the 136-package exact freeze fixture. Focused rustfmt, 3 unit/contract tests and Clippy -D
+  warnings pass; the real SDK fixture passed separately. Shared crates/asb-agents/src/lib.rs is
+  intentionally untouched pending coordinator fence.
