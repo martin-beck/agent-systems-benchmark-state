@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0877",
-  "next_action": "Independent immutable review of f80c53f0; publish only after approval, then require exact-head CI and post-merge exact-main verification.",
+  "next_action": "Independent immutable re-review of signed candidate 55fdd686; keep unpublished until the three repaired acquisition boundaries and exact evidence are approved.",
   "observed_branch": "fix/formal-tla-artifact-availability",
   "observed_dirty": 0,
   "observed_head": "55fdd686eb1a4a8583fd37a088b20e5edb7e3b89",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T14:20:53+00:00",
+  "updated_at": "2026-09-09T14:21:26+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -303,3 +303,19 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T14:20:53+00:00: Recorded command exit 0; command argv SHA-256
   ecfa089f4c6b0d8eb03d0952225d0879e5774474145af45bb5774eb780782cba.
+
+- 2026-09-09T14:21:26+00:00: Repair candidate 55fdd686eb1a4a8583fd37a088b20e5edb7e3b89, tree
+  8578fd2118b1d13adbb6861e803017e9b876c224, successor to f80c53f0 on exact base b6d04a8, is clean
+  and remains exact eight-path scope. It validates owner-controlled source-cache directories and
+  single-link archive files, copies and revalidates archives in a private build snapshot before
+  consumption, and atomically promotes inputs/output using create-new hard links that detect
+  destination races and clean owned partial/snapshot state. The mutation fixture now has an exact
+  one-to-one executed partition including offline-network; 9/9 focused tests cover unsafe cache
+  mode, archive hardlink/replacement, input/output destination races, cleanup, and concurrency. A
+  fresh real source build reproduced SHA-256 8c200a88 and 4512486 bytes; fresh TLC positive reached
+  3709 states/depth17, stale negative and Alloy positive/six mutants passed. Formal/root tests, fmt,
+  clippy, docs, release, ShellCheck, actionlint, zizmor, policy, 18 header tests, path/range
+  Gitleaks, deny, audit, coverage and failure-path suite are green. Earlier exit101 was a fixture
+  replacement mismatch; exit2 was a harness-created tool dir mode; exit127 was an incorrect analyzer
+  path; exit1 was a ShellCheck SC2015 finding. All were corrected and superseded. Both commits are
+  SSH-signed+DCO; exact-range policy/privacy/diff checks pass. No AR-0704 path changed.
