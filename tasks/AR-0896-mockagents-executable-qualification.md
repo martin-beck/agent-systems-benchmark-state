@@ -2,7 +2,7 @@
 {
   "branch": "test/mockagents-executable-qualification",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T10:47:48+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -12,15 +12,15 @@
   "observed_branch": "test/mockagents-executable-qualification",
   "observed_dirty": 0,
   "observed_head": "3f1de4106adf9ad6c34759638d70e9001709ab0a",
-  "owner": "codex-longrun-mockagents-20260909",
+  "owner": "",
   "plan": "../plans/AR-0896.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-09T10:27:19+00:00",
+  "updated_at": "2026-09-09T10:33:12+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -141,3 +141,11 @@ synthetic fixture for black-box executable evidence.
   open_backend with state root already owned. Test uses PID+atomic sequence unique Scratch roots;
   AR-0896 touched only tools/llm-double-spike, so no causal product change identified. Local cargo
   unavailable for reproduction; rerun unchanged workflow before code repair.
+
+- 2026-09-09T10:33:12+00:00: Verified local gates, exact-head PR #115 (14/14 green), signed DCO
+  repair, and all six exact-main workflows on a4e1a9de985a4c9f22628c6d604a6e62f4f173e3. Release
+  blocked: MockAgents v0.5.0 exact amd64 executable passed provenance/archive/license, loopback
+  launch, OpenAI Chat/Responses, Anthropic buffered/SSE, deterministic semantic hashes, unmatched
+  route, and cleanup, but required hostile fault/tool/tool-result, cancellation/backpressure,
+  outbound-denial, repeated-clean-state, and arm64 evidence remain unavailable. Keep AR-0890
+  blocked; do not claim candidate qualified.
