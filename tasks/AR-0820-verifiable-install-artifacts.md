@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish verifiable native bundles and metadata that a small bootstrapper can select safely.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Publish verifiable installation artifacts",
-  "updated_at": "2026-09-09T05:39:23+00:00",
+  "updated_at": "2026-09-09T05:39:47+00:00",
   "worktree_key": "agent-systems-benchmark-install-artifacts"
 }
 ---
@@ -101,3 +101,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T05:39:23+00:00: Recorded command exit 0; command argv SHA-256
   e3ce81d9e3419f229ff36788b7b7382f924e23254dcf7a4a5e8d63cc27031175.
+
+- 2026-09-09T05:39:47+00:00: Recorded command exit 1; command argv SHA-256
+  055d75a26ae4cc6b617c5f89bb012a248435d388260cd62b87c9ac4b0074d892.
