@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0877",
-  "next_action": "Repair PR #120 hosted image-identity portability only after coordinator authorizes the AR-0878 build.sh provenance path or an equivalent reviewed boundary; rerun exact-head CI, do not merge.",
+  "next_action": "Independent review 65142ea/tree 2b974af; do not publish. After AR-0906 integrates, rebase once and rerun exact-tree gates before updating PR #120.",
   "observed_branch": "fix/formal-tla-artifact-availability",
   "observed_dirty": 0,
   "observed_head": "65142ea58cbb7d4a763e5be176406b0a08e206cd",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 105,
+  "task_revision": 106,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T15:29:06+00:00",
+  "updated_at": "2026-09-09T15:29:44+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -379,3 +379,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T15:29:00+00:00: Recorded command exit 0; command argv SHA-256
   fcab481c103cddfc39140c3fb1a5fb1a15cab59d62bec23cf508ec41f2555924.
+
+- 2026-09-09T15:29:44+00:00: Signed+DCO successor 65142ea58cbb7d4a763e5be176406b0a08e206cd (tree
+  2b974af98ad478b55a95792bb93d3bb2276f496d, parent 55fdd686) repairs curl exit 63 by separating a
+  fixed 1 MiB transport slack from unchanged exact byte/SHA checks. Scope is three existing AR
+  paths. Focused acquisition 9/9 and full formal tests 38/38 passed; real pinned 82,989,507-byte
+  source transfer and SHA passed. Repository policy, headers, file-local rustfmt, diff-check, and
+  diff Gitleaks passed. Full fmt and Clippy remain blocked by inherited unrelated
+  control_models/tla_source_build formatting and recovery.rs field-reassign-with-default lints on
+  this stale base. Transfer-failure stderr is suppressed and bounded; new hostile exit-63 sentinel
+  is not leaked and no partial/output is promoted.
