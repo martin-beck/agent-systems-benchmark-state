@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin OpenJiuwen source, package, and license provenance.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Pin OpenJiuwen source, package, and license provenance",
-  "updated_at": "2026-09-09T02:54:43+00:00",
+  "updated_at": "2026-09-09T02:55:30+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-provenance"
 }
 ---
@@ -78,3 +78,6 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-09T02:54:43+00:00: Recorded command exit 1; command argv SHA-256
   aade652f0b43259953dc1928e303da5747284c4b99324ac5d5723e1f2e60b311.
+
+- 2026-09-09T02:55:30+00:00: Recorded command exit 1; command argv SHA-256
+  46e76f45441953862f0d3f5d6f757308875948622d7bb3613e23a58cfcc18802.
