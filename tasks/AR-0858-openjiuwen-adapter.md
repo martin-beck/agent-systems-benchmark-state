@@ -7,7 +7,7 @@
     "AR-0857"
   ],
   "id": "AR-0858",
-  "next_action": "Run full asb-agents package tests and workspace validation, then commit/publish the reviewed adapter boundary.",
+  "next_action": "Continue serialized polling of PR #104; if all checks pass, merge signed DCO and run exact-main post-merge gates.",
   "observed_branch": "feature/openjiuwen-adapter",
   "observed_dirty": 0,
   "observed_head": "43ceb0f1bf8bba66723b96ef8e41564df65eb7a5",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the OpenJiuwen contract and capability adapter.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Implement the OpenJiuwen contract and capability adapter",
-  "updated_at": "2026-09-09T06:15:43+00:00",
+  "updated_at": "2026-09-09T06:15:52+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-adapter"
 }
 ---
@@ -129,3 +129,8 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   9e4bc5c7c632a51063daedbbf33b4c8cfd79aeb99ab1d051241e39753aa0a70f.
 
 - 2026-09-09T06:15:43+00:00: Heartbeat by codex-longrun-openjiuwen-adapter-20260909.
+
+- 2026-09-09T06:15:52+00:00: A concurrent lease refresh hit coordinator LOCK_TIMEOUT after the fixed
+  10-second lock deadline; no product or CI mutation was lost. Subsequent heartbeat succeeded and
+  the exact PR checks remained failure-free. Upstream coordinator defect is escalated as issue #10 /
+  PR #11.
