@@ -16,6 +16,7 @@ The AR identifier format is retained for compatibility with the reused coordinat
 - tests/: generic coordinator fault, race and recovery tests.
 - [PROVENANCE.md](PROVENANCE.md): the Agent Relay State reuse boundary.
 - [SETUP.md](SETUP.md): local configuration and validation.
+- [docs/native-aarch64-policy.md](docs/native-aarch64-policy.md): required QEMU portability and optional native ARM64 policy.
 
 Never edit generated views directly. Private configuration, captures, credentials,
 raw command output and transcripts stay outside Git. Source is MIT licensed.
