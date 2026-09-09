@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-09T12:38:10+00:00",
+  "updated_at": "2026-09-09T12:40:21+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -99,3 +99,6 @@ must not block this AR or its dependents.
   replacement, root modes, and stale temp state. Focused unittest 10/10, Ruff format/lint, strict
   mypy, and diff-check pass. Worktree remains dirty only in new tools/capacity and tests/capacity
   paths; AR-0702 and runner paths are untouched, and no private host identifier appears.
+
+- 2026-09-09T12:40:21+00:00: Recorded command exit 1; command argv SHA-256
+  12af6705f973a02e5cceba14c2de2e755a8df9d4cb99881a1b4773d29388d322.
