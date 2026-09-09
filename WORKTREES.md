@@ -78,7 +78,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-one-line-install` | `feature/one-line-local-install` | `bf9e9fe625da` | 0 | behind 17, ahead 0 |
 | `agent-systems-benchmark-opendesk-strict-replay-http-compatibility` | `feature/opendesk-strict-replay-http-compatibility` | `f26216bde125` | 0 | behind 219, ahead 0 |
 | `agent-systems-benchmark-openjiuwen-adapter` | `feature/openjiuwen-adapter` | `43ceb0f1bf8b` | 0 | behind 25, ahead 0 |
-| `agent-systems-benchmark-openjiuwen-live` | `feature/openjiuwen-live` | `513c1d926458` | 0 | behind 16, ahead 0 |
+| `agent-systems-benchmark-openjiuwen-live` | `feature/openjiuwen-live` | `2a85872285e6` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-openjiuwen-provenance` | `feature/openjiuwen-provenance` | `addcfab39e48` | 0 | behind 49, ahead 0 |
 | `agent-systems-benchmark-openjiuwen-runtime-closure` | `fix/openjiuwen-runtime-closure` | `b7559931ef79` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-performance-workloads` | `feature/performance-workloads` | `0f303b3ec179` | 0 | behind 51, ahead 0 |

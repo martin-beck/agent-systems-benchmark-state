@@ -10,16 +10,16 @@
   "next_action": "Refresh the clean declared feature/openjiuwen-live worktree from exact product origin/main 2a85872285e6de374e7ea48e3b062e4134bec49e without losing preserved evidence, then implement only the three owned live-test fixture paths and execute the credential-free loopback edit/tool/usage/cancellation/cleanup/network-denial qualification. Keep support fail closed until executable evidence passes.",
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
-  "observed_head": "513c1d926458f1cb6a26d3f7277dc7d9b1496df3",
+  "observed_head": "2a85872285e6de374e7ea48e3b062e4134bec49e",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0859.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T09:41:03+00:00",
+  "updated_at": "2026-09-09T09:41:09+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
