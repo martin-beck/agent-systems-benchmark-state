@@ -891,7 +891,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0879](tasks/AR-0879-local-llm-testing-recommendations.md): Plan deterministic LLM doubles and local inference | codex-asb-local-llm-research-20260909 | Research deterministic LLM test doubles and local inference options, document ASB recommendations, and create implementation-ready follow-up ARs. | Obtain independent exact-head review of green product PR 107 at bda6cc8a and state PR 16 at 9de11a52; state global schema remains pre-existingly blocked only by active AR-0878 next_action length. |
-| P1 | [AR-0880](tasks/AR-0880-openjiuwen-runtime-closure.md): Repair OpenJiuwen runtime closure | replay_20260906 | Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification. | Regenerate and verify the exact OpenJiuwen cli plus observability runtime closure, then prove imports and the console entry point before unblocking AR-0859. |
+| P1 | [AR-0880](tasks/AR-0880-openjiuwen-runtime-closure.md): Repair OpenJiuwen runtime closure | replay_20260906 | Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification. | Audit exact three-path diff, run full workspace/formal/fault/privacy/supply gates, then create an SSH-signed+DCO immutable candidate for independent review; do not resume AR-0859 yet. |
 
 ### Blocked (8)
 

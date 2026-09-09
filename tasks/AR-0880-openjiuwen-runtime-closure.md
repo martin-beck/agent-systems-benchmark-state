@@ -7,7 +7,7 @@
     "AR-0857"
   ],
   "id": "AR-0880",
-  "next_action": "Regenerate and verify the exact OpenJiuwen cli plus observability runtime closure, then prove imports and the console entry point before unblocking AR-0859.",
+  "next_action": "Audit exact three-path diff, run full workspace/formal/fault/privacy/supply gates, then create an SSH-signed+DCO immutable candidate for independent review; do not resume AR-0859 yet.",
   "observed_branch": "fix/openjiuwen-runtime-closure",
   "observed_dirty": 3,
   "observed_head": "513c1d926458f1cb6a26d3f7277dc7d9b1496df3",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Repair OpenJiuwen runtime closure",
-  "updated_at": "2026-09-09T07:28:44+00:00",
+  "updated_at": "2026-09-09T07:29:19+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-runtime-closure"
 }
 ---
@@ -95,3 +95,15 @@ a dependency, avoiding a completion cycle while AR-0859 remains blocked on this 
 
 - 2026-09-09T07:28:44+00:00: Recorded command exit 0; command argv SHA-256
   1cf256a58ca494ef3a40f18ecc28ba27593eb15162ad3385047f647b49eb73cb.
+
+- 2026-09-09T07:29:19+00:00: Substantive AR-0880 closure checkpoint on clean base
+  513c1d926458f1cb6a26d3f7277dc7d9b1496df3. Exactly three owned paths are dirty. Regenerated
+  openjiuwen[cli,observability]==0.1.17.post1 with pinned uv 0.9.28 binary SHA256 085e6be0...;
+  closed lock is 170 packages, SHA256
+  80eb51ce8e71515453dd44f53138c9ffcbb9e042f60a127120d16e5af875a365, retaining wheel SHA256
+  21e9479c... and adding prompt-toolkit 3.0.53 plus opentelemetry-sdk 1.44.0. Two fresh
+  hash-required installs, second strictly offline from the bounded cache, have identical 170-package
+  inventories. Static provenance/mutation tests pass 2/2; exact-wheel clean-environment imports and
+  openjiuwen version/help/run-help pass 1/1 with bounded private-sentinel-free diagnostics and
+  isolated cleanup; focused Clippy is green. Initial empty-stdout failure was correctly classified
+  as bounded upstream registration logging, not an import failure.
