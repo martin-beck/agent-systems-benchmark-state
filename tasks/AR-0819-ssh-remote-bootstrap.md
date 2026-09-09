@@ -8,7 +8,7 @@
     "AR-0804"
   ],
   "id": "AR-0819",
-  "next_action": "Publish signed commit 980276d and open a PR; then monitor exact-head required CI before integration.",
+  "next_action": "Integrate signed no-ff PR #98 onto current main, then run and verify all exact-main post-merge workflows before release.",
   "observed_branch": "feature/ssh-remote-bootstrap",
   "observed_dirty": 0,
   "observed_head": "980276dd2885682ad2251893395eedf55558dc98",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use configured SSH hosts as the safe default path to a remote runner and help establish dedicated key authentication.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Add SSH remote discovery and bootstrap",
-  "updated_at": "2026-09-09T03:32:37+00:00",
+  "updated_at": "2026-09-09T03:32:58+00:00",
   "worktree_key": "agent-systems-benchmark-ssh-remote-bootstrap"
 }
 ---
@@ -91,3 +91,6 @@ Implementation has not started. Read the linked plan before claiming.
   eed410fedf8fda4d7ec90faacbf65b391487b06f09a0c48e7d7bcb8410046db7.
 
 - 2026-09-09T03:32:37+00:00: Heartbeat by replay_20260909.
+
+- 2026-09-09T03:32:58+00:00: PR #98 exact head 980276d is fully green across all required quality,
+  formal, fault, fuzz, mutation, Rust x86/arm, and emulated aarch64 checks.
