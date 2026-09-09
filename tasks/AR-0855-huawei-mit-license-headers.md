@@ -2,7 +2,7 @@
 {
   "branch": "fix/huawei-mit-license-headers",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T02:35:38+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "fix/huawei-mit-license-headers",
   "observed_dirty": 0,
   "observed_head": "7add29f1d24ce3a74b9cca2e2f1fb29fa45cddd6",
-  "owner": "codex-asb-state-headers-v035",
+  "owner": "",
   "plan": "../plans/AR-0855.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files.",
-  "task_revision": 292,
+  "task_revision": 293,
   "title": "Enforce Huawei MIT source headers",
-  "updated_at": "2026-09-09T01:24:05+00:00",
+  "updated_at": "2026-09-09T01:33:59+00:00",
   "worktree_key": "agent-systems-benchmark-huawei-mit-headers"
 }
 ---
@@ -855,3 +855,8 @@ and fresh coordinator snapshot before claiming. Do not modify vendored coordinat
 
 - 2026-09-09T01:24:05+00:00: Recorded command exit 0; command argv SHA-256
   5598f6c391404e1f7184f8e2edd055277c039787585fc66e16aec3c837b79626.
+
+- 2026-09-09T01:33:59+00:00: Completed product PR #82 and state PR #15. State exact head 3ff44bd9
+  was independently approved and merged by signed+DCO no-ff commit 06b9a320; exact-main header,
+  coordination, and formal workflows passed, including formal run 34299082203. Fresh
+  vendor/header/doctor checks pass.
