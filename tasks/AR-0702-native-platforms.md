@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify native x86_64 and required emulated AArch64 portability; track native ARM64 as optional future evidence.",
-  "task_revision": 304,
+  "task_revision": 305,
   "title": "Validate native Linux kernels and architectures",
-  "updated_at": "2026-09-09T10:38:49+00:00",
+  "updated_at": "2026-09-09T10:54:16+00:00",
   "worktree_key": "agent-systems-benchmark-native-platforms"
 }
 ---
@@ -828,3 +828,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T10:38:49+00:00: Recorded command exit 0; command argv SHA-256
   016280d464f4ee4d86dac076ea0b0f548509a9594488379444e430bc11af2280.
+
+- 2026-09-09T10:54:16+00:00: Recorded command exit 1; command argv SHA-256
+  49cd9e8e3421a6d2d70beaa2fa9607c55d42233c0ebf8bdbc0d59f59d52b8da5.
