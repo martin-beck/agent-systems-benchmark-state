@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T01:26:09+00:00",
+  "updated_at": "2026-09-09T01:49:17+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -101,3 +101,6 @@ Implementation has not started. Read the linked plan before claiming.
   and formal toolchain-pin test pass. One earlier wrapper exit was operator-only PATH loss and
   corrected with pinned cargo; no product failure. ShellCheck is unavailable locally and remains a
   required hosted/final gate.
+
+- 2026-09-09T01:49:17+00:00: Recorded command exit 2; command argv SHA-256
+  aa40dbb37fa84371f5b5b2b8fef237998d4b73113063ecdcd7bd4e49080835f6.
