@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0878",
-  "next_action": "Run the proven source-build/repack recipe inside the pinned Temurin 17.0.20+8 amd64 image on an authorized Docker-capable runner, require the same normalized digest twice, then audit the 31 vendored JAR licenses/digests and encode the closed manifest/build/verifier paths. Do not use the host-only digest as qualified output.",
+  "next_action": "Encode the closed source-build manifest and verifier using pinned normalized SHA-256 8c200a88d151c6c183c8dbc57a6b633d135e7a2b18242a3afbf243a9e4b68d3e, then complete all 31 vendored-JAR license receipt mappings and fail-closed mutation tests.",
   "observed_branch": "feature/tla-source-build-provenance",
   "observed_dirty": 0,
   "observed_head": "af9fb7dcaabc162b13d6ee1e77d8915b6d82df20",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T02:38:45+00:00",
+  "updated_at": "2026-09-09T02:40:15+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -118,3 +118,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T02:38:45+00:00: Recorded command exit 0; command argv SHA-256
   70220b6a8dec4b9485d46244365fee4a74dd7e46906570a02aede74d47fab297.
+
+- 2026-09-09T02:40:15+00:00: Authorized pinned-container acceptance is green. Two independent builds
+  ran as non-root inside eclipse-temurin amd64 child manifest
+  sha256:c0d1549d1e0f5fa5b83622ec0033b00456107e0b1d0cfcce4c1d831532ce621e with --network none,
+  --read-only root, tmpfs /tmp, fixed environment/build metadata, and Apache Ant 1.10.15. Raw
+  4,470,998-byte JAR hashes differed (be367230... vs 858e9cfe...) only in packaging metadata;
+  extracted 2,087-file trees and sorted file-name lists matched. Pinned JDK jar repack with no
+  generated manifest and fixed ZIP time 1980-01-01T00:00:02Z produced byte-identical 4,512,486-byte
+  artifacts twice, exact SHA-256 8c200a88d151c6c183c8dbc57a6b633d135e7a2b18242a3afbf243a9e4b68d3e.
+  Persistent runner receipts are under .asb-local/ar0878-source-build. Recursive audit confirms
+  exactly 31 vendored JARs; each path and SHA-256 has been enumerated against upstream
+  vendored-jars.json, with license receipt mapping still required before qualification.
