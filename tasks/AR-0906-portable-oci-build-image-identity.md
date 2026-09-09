@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make deterministic formal source builds verify OCI image identity portably across Docker engines.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Verify formal OCI build identity portably",
-  "updated_at": "2026-09-09T14:57:55+00:00",
+  "updated_at": "2026-09-09T15:05:20+00:00",
   "worktree_key": "agent-systems-benchmark-formal-oci-image-identity"
 }
 ---
@@ -93,3 +93,6 @@ instead of assuming an engine's local configuration ID equals the registry manif
   formal/root fmt-clippy-workspace-doc-release, policy, headers, actionlint, zizmor, cargo
   deny/audit, coverage, failure paths, ShellCheck, exact-path Gitleaks, diff and privacy scans all
   pass. No AR-0877 PR or AR-0704 paths touched; unpublished pending independent review.
+
+- 2026-09-09T15:05:20+00:00: Recorded command exit 0; command argv SHA-256
+  95eb851390c78171ccf9dd5836368b399d3adc942350758d51c678bff8875355.
