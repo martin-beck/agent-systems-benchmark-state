@@ -10,15 +10,18 @@
   ],
   "id": "AR-0822",
   "next_action": "Implement verified upgrades, migrations, rollback, repair, and non-destructive uninstall.",
+  "observed_branch": "feature/install-lifecycle",
+  "observed_dirty": 0,
+  "observed_head": "513c1d926458f1cb6a26d3f7277dc7d9b1496df3",
   "owner": "codex-longrun-install-lifecycle-20260909",
   "plan": "../plans/AR-0822.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Manage the complete installed lifecycle without losing configuration, history, runs, or trust state.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Add safe installation lifecycle management",
-  "updated_at": "2026-09-09T07:07:35+00:00",
+  "updated_at": "2026-09-09T07:07:40+00:00",
   "worktree_key": "agent-systems-benchmark-install-lifecycle"
 }
 ---
