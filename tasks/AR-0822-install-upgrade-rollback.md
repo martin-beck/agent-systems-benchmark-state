@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Manage the complete installed lifecycle without losing configuration, history, runs, or trust state.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Add safe installation lifecycle management",
-  "updated_at": "2026-09-09T07:11:18+00:00",
+  "updated_at": "2026-09-09T07:11:23+00:00",
   "worktree_key": "agent-systems-benchmark-install-lifecycle"
 }
 ---
@@ -48,3 +48,6 @@ Implementation has not started. Read the linked plan before claiming.
   three-backup retention, doctor-gated rollback, drift repair, and non-destructive uninstall;
   extended bootstrap tests and CLI-first-run docs. Focused tests pass; shellcheck unavailable on the
   development host.
+
+- 2026-09-09T07:11:23+00:00: Recorded command exit 0; command argv SHA-256
+  2549a95f37e84ad8dbbf53474b10714ce1a6e20c252dfb0e1ca93a9d1700dbee.
