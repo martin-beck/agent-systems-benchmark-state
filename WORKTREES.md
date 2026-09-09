@@ -106,8 +106,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `410ecc95b80e` | 0 | behind 285, ahead 0 |
 | `agent-systems-benchmark-terminal-interface` | `feature/terminal-interface` | `d2e7b66ff6af` | 0 | behind 230, ahead 0 |
 | `agent-systems-benchmark-terminal-workloads` | `feature/terminal-workloads` | `3e67bdfc3ce0` | 0 | behind 47, ahead 0 |
-| `agent-systems-benchmark-tla-source-build-provenance` | `feature/tla-source-build-provenance` | `c157cedc7443` | 4 | behind 8, ahead 1 |
-| changed files | - | - | - | `formal/tla-provenance/source-build.toml`, `formal/tla-provenance/verify.sh`, `formal/tla-provenance/licenses/`, `formal/tla-provenance/verify.py` |
+| `agent-systems-benchmark-tla-source-build-provenance` | `feature/tla-source-build-provenance` | `c157cedc7443` | 5 | behind 8, ahead 1 |
+| changed files | - | - | - | `formal/tla-provenance/build.sh`, `formal/tla-provenance/source-build.toml`, `formal/tla-provenance/verify.sh`, `formal/tla-provenance/licenses/`, `formal/tla-provenance/verify.py` |
 | `agent-systems-benchmark-trace-interoperability` | `feature/trace-interoperability` | `921cf004f8aa` | 0 | behind 102, ahead 0 |
 | `agent-systems-benchmark-tui-history-analysis` | `feature/tui-history-analysis` | `7fd21bbeddc5` | 0 | behind 2, ahead 0 |
 | `agent-systems-benchmark-tui-multi-agent-provider-selection` | `feature/tui-multi-agent-provider-selection` | `679244e3af61` | 0 | behind 28, ahead 0 |
