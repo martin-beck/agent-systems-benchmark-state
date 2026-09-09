@@ -68,7 +68,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-kernel-diagnostics` | `feature/kernel-diagnostics` | `d11f81837374` | 0 | behind 66, ahead 0 |
 | `agent-systems-benchmark-llm-double-conformance-spike` | `test/llm-double-conformance-spike` | `78e6a51ce99e` | 0 | behind 3, ahead 0 |
 | `agent-systems-benchmark-llm-fixture-scenario-contract` | `feat/llm-fixture-scenario-contract` | `4d15bbc7e1d0` | 0 | behind 1, ahead 0 |
-| `agent-systems-benchmark-local-inference-provider-profiles` | `feat/local-inference-provider-profiles` | `9f502f7a3a78` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-local-inference-provider-profiles` | `feat/local-inference-provider-profiles` | `9f502f7a3a78` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `tools/local-inference-profiles/` |
 | `agent-systems-benchmark-local-llm-testing-recommendations` | `docs/local-llm-testing-recommendations` | `4a23069336be` | 0 | behind 5, ahead 0 |
 | `agent-systems-benchmark-modern-terminal-rendering` | `feature/modern-terminal-rendering` | `fd1989a096a3` | 0 | behind 27, ahead 0 |
 | `agent-systems-benchmark-native-platform-lab` | `feature/native-platform-lab` | `b1669203308d` | 0 | behind 233, ahead 0 |
@@ -79,7 +80,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-openjiuwen-adapter` | `feature/openjiuwen-adapter` | `43ceb0f1bf8b` | 0 | behind 19, ahead 0 |
 | `agent-systems-benchmark-openjiuwen-live` | `feature/openjiuwen-live` | `513c1d926458` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-openjiuwen-provenance` | `feature/openjiuwen-provenance` | `addcfab39e48` | 0 | behind 43, ahead 0 |
-| `agent-systems-benchmark-openjiuwen-runtime-closure` | `fix/openjiuwen-runtime-closure` | `01bbe00c5971` | 0 | behind 10, ahead 1 |
+| `agent-systems-benchmark-openjiuwen-runtime-closure` | `fix/openjiuwen-runtime-closure` | `6f6666373d23` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-performance-workloads` | `feature/performance-workloads` | `0f303b3ec179` | 0 | behind 45, ahead 0 |
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 347, ahead 0 |
 | `agent-systems-benchmark-portable-metrics` | `feature/portable-metrics` | `a0f67bea1ffe` | 0 | behind 321, ahead 0 |
