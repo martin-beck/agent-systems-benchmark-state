@@ -13,11 +13,11 @@
   "plan": "../plans/AR-0907.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T16:23:00+00:00",
+  "updated_at": "2026-09-09T16:25:32+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -27,3 +27,7 @@ Repair the native-platform workflow boundary exposed by the rolling `ubuntu-24.0
 Keep AR-0848's exact Ubuntu 24.04.4 native qualification immutable and fail closed while allowing
 the hosted runner to report a separately named, non-qualification portability result when its
 patch release has advanced.
+
+- 2026-09-09T16:25:32+00:00: Dependencies AR-0702 and AR-0848 are done. The focused
+  hosted-portability schema/workflow fence is disjoint from preserved AR-0877/AR-0906 candidates and
+  keeps exact native qualification immutable.
