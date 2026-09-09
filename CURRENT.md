@@ -9,7 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Qualify pinned OpenJiuwen live execution. | Implement the three owned loopback fixtures; prove pinned edit/tool/usage/cancel/cleanup/network denial, keeping support fail closed until all executable checks pass. | replay_20260906 |
 | P1 | [AR-0895](tasks/AR-0895-verify-coordination-content.md): Verify every coordination-content pull request | Close the workflow path-filter gap that lets coordination-content pull requests skip strict state consistency and DCO checks. | Independent immutable review candidate fb147b0a8702ca6cb6340eb756c9464b66d5bd2a/tree 16fbe831; separately shorten the two out-of-scope invalid next_action values on live state main, then rerun schema/generated-view gates before publication. | quality_20260906 |
-| P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Qualify one pinned MockAgents executable before deterministic-double CI integration. | Qualify the exact MockAgents v0.5.0 executable against the complete hostile synthetic protocol and isolation suite; do not unblock AR-0890 unless every required case passes. | codex-longrun-mockagents-20260909 |
+| P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Build the pinned MockAgents qualification harness; exact amd64 protocol smoke and provenance checks pass, hostile matrix remains. | Add hostile fault/tool/cancellation/backpressure, network-denial, repeated-clean-state, and arm64/unsupported evidence checks; then rerun exact gates. | codex-longrun-mockagents-20260909 |
 
 ## Blocked
 
