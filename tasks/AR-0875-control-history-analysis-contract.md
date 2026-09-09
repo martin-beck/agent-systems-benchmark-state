@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend frontend history and analysis contracts with bounded provenance, integrity, outcome, compatibility, and confounder evidence.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Extend control history and analysis protocol",
-  "updated_at": "2026-09-09T04:29:12+00:00",
+  "updated_at": "2026-09-09T04:29:21+00:00",
   "worktree_key": "agent-systems-benchmark-control-history-analysis-contract"
 }
 ---
@@ -40,3 +40,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-09T04:29:10+00:00: Claimed by codex-longrun-control-20260909.
 
 - 2026-09-09T04:29:12+00:00: Heartbeat by codex-longrun-control-20260909.
+
+- 2026-09-09T04:29:21+00:00: Recorded command exit 0; command argv SHA-256
+  c3b8264037f44adea4463c7e37d986c8075eb26b68043cf342379a0304fccc12.
