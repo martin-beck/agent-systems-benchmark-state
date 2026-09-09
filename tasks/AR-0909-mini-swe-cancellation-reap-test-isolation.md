@@ -16,11 +16,11 @@
   "plan": "../plans/AR-0909.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-09T21:35:00+00:00",
+  "updated_at": "2026-09-09T21:57:42+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -36,3 +36,8 @@ No existing AR owns this exact embedded-test defect. AR-0308 and AR-0513 are com
 replay qualifications; AR-0902 is complete general fault assurance. Preserve the failure as a
 coverage-context lifecycle/isolation signal until the exact process identity and state are
 classified.
+
+- 2026-09-09T21:57:42+00:00: Dependency audit confirms AR-0101, AR-0102, AR-0103, AR-0308 and
+  AR-0902 are durably done. No existing AR owns the exact PR #126 cargo-llvm-cov failure in
+  mini_swe::tests::cancellation_reaps_owned_descendant_group. Promote as a focused unclaimed
+  embedded-test repair; do not weaken production lifecycle semantics.
