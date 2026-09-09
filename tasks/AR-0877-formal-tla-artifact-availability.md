@@ -17,11 +17,11 @@
   "plan": "../plans/AR-0877.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T03:46:22+00:00",
+  "updated_at": "2026-09-09T13:25:24+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -138,3 +138,7 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-09T06:09:00+00:00: Coordinator metadata maintenance shortened only the stale
   front-matter projection to satisfy the existing schema. Prior value preserved verbatim:
   `Hold the four-path acquisition prototype unchanged and obtain an authoritative immutable TLA+ 1.8.0 artifact publication (or coordinator authorization for a separately specified reproducible source-build boundary); then refresh exact metadata once, finish deterministic faults, and run TLC/Alloy. Do not chase the continuously replaced v1.8.0 pre-release asset.`
+
+- 2026-09-09T13:25:24+00:00: AR-0878 is durably done and supplies the independently qualified
+  deterministic source-build manifest and output digest; resume AR-0877 to integrate that immutable
+  artifact boundary instead of repinning the mutable v1.8.0 prerelease asset.
