@@ -21,8 +21,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 27, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 130, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 24, ahead 0 |
-| `agent-systems-benchmark-beginner-workflows` | `docs/beginner-workflows` | `f2028d71eb59` | 2 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-cli/tests/guide_examples.rs`, `docs/workflows/` |
+| `agent-systems-benchmark-beginner-workflows` | `docs/beginner-workflows` | `f2028d71eb59` | 7 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-cli/tests/guide_examples.rs`, `docs/workflows/README.md`, `docs/workflows/cli-first-run.md`, `docs/workflows/multi-agent-provider.md`, `docs/workflows/record-replay.md`, `docs/workflows/troubleshooting.md`, `docs/workflows/tui-first-run.md` |
 | `agent-systems-benchmark-benchmark-validity` | `feature/benchmark-validity` | `60a6c730457b` | 0 | behind 126, ahead 0 |
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `0717d4acd168` | 0 | behind 234, ahead 0 |
 | `agent-systems-benchmark-ci-artifact-quota-resilience` | `feature/ci-artifact-quota-resilience` | `7d98653e7e7f` | 0 | behind 180, ahead 0 |
