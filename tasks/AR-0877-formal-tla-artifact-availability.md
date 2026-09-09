@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0877",
-  "next_action": "Independent immutable re-review of signed candidate 55fdd686; keep unpublished until the three repaired acquisition boundaries and exact evidence are approved.",
+  "next_action": "Monitor PR #120 exact-head CI at 55fdd686; do not merge until every required check is terminal green and coordinator reauthorizes integration.",
   "observed_branch": "fix/formal-tla-artifact-availability",
   "observed_dirty": 0,
   "observed_head": "55fdd686eb1a4a8583fd37a088b20e5edb7e3b89",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 87,
+  "task_revision": 88,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T14:25:19+00:00",
+  "updated_at": "2026-09-09T14:25:52+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -322,3 +322,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T14:25:19+00:00: Recorded command exit 0; command argv SHA-256
   5f2c46c35f876971ce63ce2adf050be0e17c6196a7dce1165427856a01475a5e.
+
+- 2026-09-09T14:25:52+00:00: Published independently approved immutable candidate as PR #120. GitHub
+  confirms exact base b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b and exact head
+  55fdd686eb1a4a8583fd37a088b20e5edb7e3b89. Initial exact-head status: Huawei/MIT headers and AWQ
+  shadow succeeded; Rust, repository quality, native Ubuntu, emulated aarch64, formal TLC/Kani/Loom,
+  fault/fuzz/matcher remain in progress. PR is open and no merge was attempted.
