@@ -8,7 +8,7 @@
     "AR-0889"
   ],
   "id": "AR-0896",
-  "next_action": "Wait for all six post-merge workflows on 97643044, then complete hostile matrix or release blocked with exact evidence.",
+  "next_action": "Replace 97643044 with a same-tree same-parent signed merge commit carrying matching DCO trailer using exact force-with-lease, then verify fresh exact-main gates.",
   "observed_branch": "test/mockagents-executable-qualification",
   "observed_dirty": 0,
   "observed_head": "3f1de4106adf9ad6c34759638d70e9001709ab0a",
@@ -17,10 +17,10 @@
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "DCO repair merged as 97643044; exact-main post-merge verification running.",
-  "task_revision": 25,
+  "summary": "Post-merge DCO policy still rejects GitHub-generated merge; exact main merge boundary must be signed.",
+  "task_revision": 26,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-09T10:19:40+00:00",
+  "updated_at": "2026-09-09T10:20:29+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -98,3 +98,8 @@ synthetic fixture for black-box executable evidence.
 - 2026-09-09T10:19:40+00:00: PR #116 corrected the merge-boundary DCO failure and all 14 exact-head
   checks passed. It merged as 97643044ba8d782460f633c4852ba832207e9fcc. Six fresh exact-main
   post-merge workflows are active; feature work remains preempted until they settle.
+
+- 2026-09-09T10:20:29+00:00: Failure evidence: Repository quality run 34339582534 reports merge
+  commit 97643044ba8d782460f633c4852ba832207e9fcc lacks a matching Signed-off-by trailer despite the
+  signed PR follow-up. The policy range includes the GitHub-generated merge commit, so a
+  same-tree/same-parent signed merge replacement is required; feature work remains preempted.
