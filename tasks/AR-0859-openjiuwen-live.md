@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-live",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-09T12:31:49+00:00",
   "depends_on": [
     "AR-0858"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "513c1d926458f1cb6a26d3f7277dc7d9b1496df3",
-  "owner": "",
+  "owner": "replay_20260906",
   "plan": "../plans/AR-0859.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T09:31:46+00:00",
+  "updated_at": "2026-09-09T09:31:49+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -136,3 +136,5 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   credential-free loopback live qualification. Existing declared worktree is clean at preserved
   pre-repair head 513c1d926458f1cb6a26d3f7277dc7d9b1496df3 and must be refreshed from exact current
   origin/main before product mutation.
+
+- 2026-09-09T09:31:49+00:00: Claimed by replay_20260906.

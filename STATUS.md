@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**165 ARs tracked** across 5 active status categories.
+**165 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 7 |
 | **Planned** | Defined work awaiting promotion or dependencies | 41 |
 | **Future** | Deferred roadmap work | 0 |
@@ -174,7 +174,7 @@ flowchart LR
         AR_0856["AR-0856 - Planned"]:::status_planned
         AR_0857["AR-0857 - Done"]:::status_done
         AR_0858["AR-0858 - Done"]:::status_done
-        AR_0859["AR-0859 - Open"]:::status_open
+        AR_0859["AR-0859 - In progress"]:::status_in_progress
         AR_0860["AR-0860 - Planned"]:::status_planned
         AR_0861["AR-0861 - Planned"]:::status_planned
         AR_0862["AR-0862 - Planned"]:::status_planned
@@ -923,17 +923,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | replay_20260906 | Qualify pinned OpenJiuwen live execution. | Obtain a serialized provenance-closure repair for the pinned OpenJiuwen cli and observability extras before adding AR-0859 live-test paths; then install the reviewed lock and execute the loopback journey. Keep support fail closed. |
 | P1 | [AR-0891](tasks/AR-0891-local-inference-provider-profiles.md): Qualify local inference provider profiles | codex-longrun-local-inference-profiles-20260909 | Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server. | Signed no-ff merge PR #114 at exact head 9bc7fe7f91efd491d42da3961ba09d832857d361, then run post-merge exact-main verification before releasing AR-0891. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Unclaimed | Qualify pinned OpenJiuwen live execution. | Obtain a serialized provenance-closure repair for the pinned OpenJiuwen cli and observability extras before adding AR-0859 live-test paths; then install the reviewed lock and execute the loopback journey. Keep support fail closed. |
 
 ### Blocked (7)
 
