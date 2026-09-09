@@ -876,7 +876,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0872](tasks/AR-0872-beginner-workflow-documentation.md): Publish beginner workflow documentation | replay_20260909 | Publish linked beginner workflows for setup, multi-agent runs, progress, comparison, recording, and replay with and without the TUI. | Create a signed follow-up pin repair from current origin/main, validate locally, open a repair PR, and rerun exact-head plus post-merge CI. |
+| P0 | [AR-0872](tasks/AR-0872-beginner-workflow-documentation.md): Publish beginner workflow documentation | replay_20260909 | Publish linked beginner workflows for setup, multi-agent runs, progress, comparison, recording, and replay with and without the TUI. | Create a signed no-ff integration merge for PR #95 from current main, run post-merge checks, fast-forward main, and release AR-0872. |
 | P1 | [AR-0806](tasks/AR-0806-tui-history-analysis.md): Add terminal history and analysis | quality_20260906 | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. | Repair or restore the pinned TLA+ v1.8.0 artifact boundary outside the AR-0806 two-path scope, then rerun exact-head Formal Assurance for PR #89; merge remains held until every required check is green. |
 | P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | replay_20260906 | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Determine whether upstream can publish an immutable TLA+ 1.8.0 asset; otherwise freeze an independently reproducible source-build/toolchain contract. |
 

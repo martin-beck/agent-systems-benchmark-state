@@ -10,7 +10,7 @@
     "AR-0871"
   ],
   "id": "AR-0872",
-  "next_action": "Create a signed follow-up pin repair from current origin/main, validate locally, open a repair PR, and rerun exact-head plus post-merge CI.",
+  "next_action": "Create a signed no-ff integration merge for PR #95 from current main, run post-merge checks, fast-forward main, and release AR-0872.",
   "observed_branch": "docs/beginner-workflows",
   "observed_dirty": 0,
   "observed_head": "328de90ef1ed3ba391634009a855d731b1322a53",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish linked beginner workflows for setup, multi-agent runs, progress, comparison, recording, and replay with and without the TUI.",
-  "task_revision": 138,
+  "task_revision": 139,
   "title": "Publish beginner workflow documentation",
-  "updated_at": "2026-09-09T02:12:38+00:00",
+  "updated_at": "2026-09-09T02:13:02+00:00",
   "worktree_key": "agent-systems-benchmark-beginner-workflows"
 }
 ---
@@ -401,3 +401,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T02:12:38+00:00: Recorded command exit 0; command argv SHA-256
   3102a0827cc40a9871aa6e8e2443297b4e45315c243779043a4671dc33e0ff1f.
+
+- 2026-09-09T02:13:02+00:00: Follow-up PR #95 at 72e2e9c is fully green: formal TLC/Alloy/Kani/Loom,
+  Rust x86/arm, repository quality, faults/fuzz/mutation, emulated aarch64, AWQ, and headers all
+  passed. Current release asset 551753628 is validated.
