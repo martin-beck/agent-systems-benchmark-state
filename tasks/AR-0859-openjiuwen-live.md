@@ -7,7 +7,7 @@
     "AR-0858"
   ],
   "id": "AR-0859",
-  "next_action": "Hold PR 124 head e407748; repair shared AR-0877 TLA artifact failure, then rerun exact-head CI.",
+  "next_action": "Fresh immutable review of successor 19ba0fd; keep PR 124 at e407748 until approval.",
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "19ba0fd80fa63f5b8edd47fb1fbd5626859fbacb",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 192,
+  "task_revision": 193,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T18:54:55+00:00",
+  "updated_at": "2026-09-09T18:55:34+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -639,3 +639,21 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-09T18:54:55+00:00: Recorded command exit 0; command argv SHA-256
   c95c323203ae9a991bf80dc4a408183c74dbb58bb0c13b21031a7a3cd9898850.
+
+- 2026-09-09T18:55:34+00:00: Scratch-portability successor 19ba0fd80fa63f5b8edd47fb1fbd5626859fbacb
+  (tree 5171b9c062b561a4c65d74e57080af705d9fd977, parent e4077483eb04f2f3f2b7f1ac48e28dafb8c51b11)
+  is SSH-signed and DCO-trailered. The one-file repair preserves explicit absolute CARGO_TARGET_DIR
+  preference and, when absent, selects std::env::temp_dir before creating the existing unique
+  private 0700 leaf; direct tests cover configured and fallback selection plus repository overlap
+  and public-mode rejection without process-global environment mutation. Exact CI failures
+  classified: Rust 34388676114 and quality 34388676065 were candidate-caused by the prior
+  unconditional CARGO_TARGET_DIR expect; Native 34388676137 is unrelated runner-release drift before
+  tests; Formal TLC 34388676172 is the shared AR-0877 curl-63 artifact failure. Green on successor:
+  focused missing-env regression; nonignored 3/3; credential-free network-denied bwrap live 8/8;
+  fmt; full workspace Clippy with warnings denied; full workspace tests with CARGO_TARGET_DIR
+  absent; rustdoc; release build; formal Cargo/Loom/production tests; digest-pinned local TLC/Alloy
+  positive and mutation models; repository policy exact base..head; contracts; actionlint; zizmor;
+  redacted Gitleaks; cargo-deny; cargo-audit --no-fetch; mutation sentinels 7/7; llvm-cov full
+  policy including workspace lines above 90 and replay 97.84% lines/95.13% regions; final clean
+  tree, exact three-path cumulative scope, signature, DCO, and diff check. No PR update or rerun
+  performed pending fresh review.
