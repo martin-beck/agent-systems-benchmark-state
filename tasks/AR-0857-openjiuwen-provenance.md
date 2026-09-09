@@ -14,7 +14,7 @@
     "AR-0855"
   ],
   "id": "AR-0857",
-  "next_action": "Publish signed commit addcfab and open a PR; then monitor exact-head required CI before any integration.",
+  "next_action": "Integrate signed no-ff PR #97 onto current main, then run and verify all exact-main post-merge workflows before release.",
   "observed_branch": "feature/openjiuwen-provenance",
   "observed_dirty": 0,
   "observed_head": "addcfab39e48d3b5cf573ebc109cb676f299be5f",
@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin OpenJiuwen source, package, and license provenance.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Pin OpenJiuwen source, package, and license provenance",
-  "updated_at": "2026-09-09T03:05:30+00:00",
+  "updated_at": "2026-09-09T03:05:40+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-provenance"
 }
 ---
@@ -141,3 +141,6 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 - 2026-09-09T03:05:10+00:00: Heartbeat by replay_20260909.
 
 - 2026-09-09T03:05:30+00:00: Heartbeat by replay_20260909.
+
+- 2026-09-09T03:05:40+00:00: PR #97 exact head addcfab is fully green: all required quality, formal,
+  fault, fuzz, mutation, Rust x86/arm, and emulated aarch64 checks passed.

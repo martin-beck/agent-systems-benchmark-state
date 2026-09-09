@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0857](tasks/AR-0857-openjiuwen-provenance.md): Pin OpenJiuwen source, package, and license provenance | Pin OpenJiuwen source, package, and license provenance. | Publish signed commit addcfab and open a PR; then monitor exact-head required CI before any integration. | replay_20260909 |
+| P1 | [AR-0857](tasks/AR-0857-openjiuwen-provenance.md): Pin OpenJiuwen source, package, and license provenance | Pin OpenJiuwen source, package, and license provenance. | Integrate signed no-ff PR #97 onto current main, then run and verify all exact-main post-merge workflows before release. | replay_20260909 |
 | P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Run full locked formal workspace plus Alloy, repository-policy, privacy/Gitleaks, supply and coverage gates; obtain ShellCheck from the authorized pinned quality runner or record its exact unavailable boundary; then sign the exact eight-path candidate for immutable review. | replay_20260906 |
 
 ## Open
