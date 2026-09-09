@@ -103,7 +103,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `410ecc95b80e` | 0 | behind 271, ahead 0 |
 | `agent-systems-benchmark-terminal-interface` | `feature/terminal-interface` | `d2e7b66ff6af` | 0 | behind 216, ahead 0 |
 | `agent-systems-benchmark-terminal-workloads` | `feature/terminal-workloads` | `3e67bdfc3ce0` | 0 | behind 33, ahead 0 |
-| `agent-systems-benchmark-tla-asset-followup` | `fix/tla-asset-availability-followup` | `af9fb7dcaabc` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-tla-asset-followup` | `fix/tla-asset-availability-followup` | `af9fb7dcaabc` | 4 | behind 0, ahead 0 |
+| changed files | - | - | - | `formal/README.md`, `formal/run_temporal_models.sh`, `formal/tests/toolchain_pins.rs`, `formal/toolchains.toml` |
 | `agent-systems-benchmark-trace-interoperability` | `feature/trace-interoperability` | `921cf004f8aa` | 0 | behind 88, ahead 0 |
 | `agent-systems-benchmark-tui-history-analysis` | `feature/tui-history-analysis` | `dc914626bb2f` | 0 | behind 10, ahead 1 |
 | `agent-systems-benchmark-tui-multi-agent-provider-selection` | `feature/tui-multi-agent-provider-selection` | `679244e3af61` | 0 | behind 14, ahead 0 |
