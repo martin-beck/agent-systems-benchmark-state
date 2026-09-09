@@ -25,9 +25,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Research deterministic LLM test doubles and local inference options, document ASB recommendations, and create implementation-ready follow-up ARs.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Plan deterministic LLM doubles and local inference",
-  "updated_at": "2026-09-09T06:54:22+00:00",
+  "updated_at": "2026-09-09T06:55:27+00:00",
   "worktree_key": "agent-systems-benchmark-local-llm-testing-recommendations"
 }
 ---
@@ -147,3 +147,6 @@ honestly, and do not implement a simulator, mock server, inference backend, or u
 - 2026-09-09T06:54:22+00:00: All fourteen product hosted jobs are terminal SUCCESS at exact head
   bda6cc8a, including emulated AArch64. State path-triggered AWQ shadow is SUCCESS at 9de11a52;
   targeted schema and full non-schema gates pass.
+
+- 2026-09-09T06:55:27+00:00: Recorded command exit 1; command argv SHA-256
+  c377f6f23e8191ac628092cf69be4594e4f4cad0d689771b259aba09c7fa026c.
