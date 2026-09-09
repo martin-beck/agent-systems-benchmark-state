@@ -12,7 +12,7 @@
   "id": "AR-0906",
   "next_action": "Implement and test portable digest-plus-platform OCI identity verification for the deterministic TLA source build.",
   "observed_branch": "fix/formal-oci-image-identity",
-  "observed_dirty": 0,
+  "observed_dirty": 6,
   "observed_head": "b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0906.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make deterministic formal source builds verify OCI image identity portably across Docker engines.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Verify formal OCI build identity portably",
-  "updated_at": "2026-09-09T14:46:45+00:00",
+  "updated_at": "2026-09-09T14:46:56+00:00",
   "worktree_key": "agent-systems-benchmark-formal-oci-image-identity"
 }
 ---
