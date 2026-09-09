@@ -9,7 +9,7 @@
   "id": "AR-0859",
   "next_action": "Hold PR 124 head e407748; repair shared AR-0877 TLA artifact failure, then rerun exact-head CI.",
   "observed_branch": "feature/openjiuwen-live",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "e4077483eb04f2f3f2b7f1ac48e28dafb8c51b11",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0859.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 180,
+  "task_revision": 181,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T18:48:45+00:00",
+  "updated_at": "2026-09-09T18:48:51+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
