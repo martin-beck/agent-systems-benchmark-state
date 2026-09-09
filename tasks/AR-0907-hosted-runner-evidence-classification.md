@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 99,
+  "task_revision": 100,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T19:06:38+00:00",
+  "updated_at": "2026-09-09T19:08:09+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -365,3 +365,6 @@ patch release has advanced.
   never establishes full portability, sandbox/native/performance/release qualification or native
   AArch64. Exact Ubuntu 24.04.4 native qualification semantics and evidence remain unchanged.
   Proceeding to live-base and product-candidate revalidation; PR #123 remains unchanged meanwhile.
+
+- 2026-09-09T19:08:09+00:00: Recorded command exit 1; command argv SHA-256
+  60af272a6d70d0f7f9662dd270853cd90b6ccf2aa846fa3a7150566ba4ac8e19.
