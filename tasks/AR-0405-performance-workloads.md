@@ -10,7 +10,7 @@
     "AR-1007"
   ],
   "id": "AR-0405",
-  "next_action": "Audit the six-path fail-closed provenance checkpoint, run the complete applicable quality/privacy gates, and determine whether any suite can advance beyond planned without missing license and native paired-oracle evidence.",
+  "next_action": "Integrate signed no-ff after PR #96 exact-head CI is fully green; then run post-merge exact-main verification before release.",
   "observed_branch": "feature/performance-workloads",
   "observed_dirty": 0,
   "observed_head": "0f303b3ec1798906a8ecb37652e080046fd42eee",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Assess SWE-Perf, SWE-fficiency and CORE-Bench for correctness-preserving optimization and reproducibility.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Add performance and reproducibility workloads",
-  "updated_at": "2026-09-09T02:37:25+00:00",
+  "updated_at": "2026-09-09T02:37:57+00:00",
   "worktree_key": "agent-systems-benchmark-performance-workloads"
 }
 ---
@@ -230,3 +230,6 @@ Implementation has not started. Read the linked plan before claiming.
   99e93a797b8c9ec64db70c5da613d5118f607caf449f29c552911f4d707c394c.
 
 - 2026-09-09T02:37:25+00:00: Heartbeat by replay_20260909.
+
+- 2026-09-09T02:37:57+00:00: PR #96 exact head 0f303b3 has all required checks green, including
+  emulated aarch64; beginning guarded signed integration.
