@@ -8,16 +8,16 @@
     "AR-0003"
   ],
   "id": "AR-0895",
-  "next_action": "Run full state workflow/schema/generated-view/DCO/failure gates, add any missing hostile trigger cases, then create a focused signed+DCO candidate for independent review.",
+  "next_action": "Independent immutable review candidate fb147b0a8702ca6cb6340eb756c9464b66d5bd2a/tree 16fbe831; separately shorten the two out-of-scope invalid next_action values on live state main, then rerun schema/generated-view gates before publication.",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0895.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Close the workflow path-filter gap that lets coordination-content pull requests skip strict state consistency and DCO checks.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Verify every coordination-content pull request",
-  "updated_at": "2026-09-09T09:50:12+00:00",
+  "updated_at": "2026-09-09T09:50:47+00:00",
   "worktree_key": "agent-systems-benchmark-state-verify-coordination-content"
 }
 ---
@@ -73,3 +73,17 @@ Ensure state-content pull requests cannot bypass exact-head schema, generated-vi
 
 - 2026-09-09T09:50:12+00:00: Recorded command exit 0; command argv SHA-256
   92c37d7a89780126525ca8c3798742bcc0d5c84860cba8862c59046b76fb3e61.
+
+- 2026-09-09T09:50:47+00:00: Created clean SSH-signed+DCO three-path candidate
+  fb147b0a8702ca6cb6340eb756c9464b66d5bd2a, tree 16fbe831da94bfe9d19e35cde655530f990c255a, parent
+  95930b6f147aa0ea1ba22bd5d038031bf009c6c0. Scope is exactly .github/workflows/verify.yml,
+  README.md, and tests/test_workflow_triggers.py. Full state quality batch passes vendor
+  verification, Huawei/MIT headers, Ruff format/lint, strict mypy, lizard, 100/100 unit tests, 95%
+  branch-aware coverage, focused trigger 3/3, exact modified-workflow actionlint, offline zizmor
+  with no findings, commit SSH signature/DCO, and diff-check. Schema/generated-view phase is blocked
+  by two pre-existing out-of-scope live-state violations inherited from the base: AR-0859 and
+  AR-0880 next_action values exceed the schema length bound. AR-0895 must not edit existing task
+  content. One actionlint invocation without the repository custom-label exemption also failed on
+  the pre-existing self-hosted label; corrected exact-workflow invocation ignores only that known
+  label diagnostic and passes. Candidate is immutable and clean; publication remains held until
+  independent review and the state-owned schema violations are repaired.
