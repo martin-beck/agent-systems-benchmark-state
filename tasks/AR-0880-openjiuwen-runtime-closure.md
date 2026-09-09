@@ -7,7 +7,7 @@
     "AR-0857"
   ],
   "id": "AR-0880",
-  "next_action": "Independent immutable review exact candidate 343998ada0a057e177fb528eddc9f0f80ca6db3a (tree 88cff0f4f0bf0f0235ae68f1eb1e904da7f33268, parent 513c1d926458f1cb6a26d3f7277dc7d9b1496df3); current origin/main has advanced, so do not publish or rebase without coordinator authorization.",
+  "next_action": "Complete strengthened closed-oracle and mechanical fresh-install gates, create a new signed three-path candidate, and request fresh independent review; loopback provider attempt remains exclusively deferred to AR-0859.",
   "observed_branch": "fix/openjiuwen-runtime-closure",
   "observed_dirty": 2,
   "observed_head": "343998ada0a057e177fb528eddc9f0f80ca6db3a",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Repair OpenJiuwen runtime closure",
-  "updated_at": "2026-09-09T08:16:14+00:00",
+  "updated_at": "2026-09-09T08:16:40+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-runtime-closure"
 }
 ---
@@ -171,3 +171,13 @@ a dependency, avoiding a completion cycle while AR-0859 remains blocked on this 
 
 - 2026-09-09T08:16:14+00:00: Recorded command exit 0; command argv SHA-256
   8e86dad79f71192edf36188d4fb5f7f5c28c06c5abe15b7c8fe7448109e65fd1.
+
+- 2026-09-09T08:16:40+00:00: Independent-review repair checkpoint: the loopback provider connection
+  criterion is explicitly deferred unchanged to AR-0859, whose owned live-test boundary covers
+  provider endpoint, execution, cancellation, and network evidence. AR-0880 must not initiate or
+  qualify a provider session; it proves only exact package acquisition, closed runtime installation,
+  imports, and console metadata/help loading. Strengthened test now parses and digest-binds every
+  one of 170 name/version/hash sets, mutates every package field, creates fresh online and
+  network-denied offline hash-required environments, verifies exact installed
+  inventory/prefix/site/entrypoint/modules/wheel metadata, rejects /bin/true, and rejects an empty
+  corrupt offline cache. The real mechanical fresh install test is green.
