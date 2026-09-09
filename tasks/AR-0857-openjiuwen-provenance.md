@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-provenance",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T04:48:17+00:00",
+  "claim_expires": "2026-09-09T04:56:29+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin OpenJiuwen source, package, and license provenance.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Pin OpenJiuwen source, package, and license provenance",
-  "updated_at": "2026-09-09T02:56:26+00:00",
+  "updated_at": "2026-09-09T02:56:29+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-provenance"
 }
 ---
@@ -91,3 +91,5 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 - 2026-09-09T02:56:26+00:00: Provenance fixtures are implemented and verified: package/license/lock
   hashes, JSON invariants, 161-package lock dry-run, cargo test 138 passed plus integration tests,
   fmt and diff checks, policy and DCO passed.
+
+- 2026-09-09T02:56:29+00:00: Heartbeat by replay_20260909.
