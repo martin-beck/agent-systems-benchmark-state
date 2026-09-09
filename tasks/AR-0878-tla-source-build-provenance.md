@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0878",
-  "next_action": "Coordinator decision: amend the source-build lock to the 14 mechanically proven compile/dist inputs and keep the other 17 JARs as exact excluded-source inventory with a deletion/rebuild oracle, or require new authoritative evidence for the unmatched jpf-shell binary. Do not rebase or reuse generic SPDX receipts before this scope decision.",
+  "next_action": "Coordinator must correct the approved 14-build-input necessity criterion or partition. The fail-closed end-to-end deletion oracle proved jacocoant.jar is not necessary: deleting it still produced exact reviewed SHA-256 8c200a88d151c6c183c8dbc57a6b633d135e7a2b18242a3afbf243a9e4b68d3e. Preserve current 31-inventory/14-retained dirty implementation and do not weaken the oracle.",
   "observed_branch": "feature/tla-source-build-provenance",
   "observed_dirty": 10,
   "observed_head": "c157cedc744373ef75aba686c00e97ce61aa3bfc",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 108,
+  "task_revision": 109,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T04:36:35+00:00",
+  "updated_at": "2026-09-09T04:37:04+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -395,3 +395,11 @@ Implementation has not started. Read the linked plan before claiming.
   6572b87d6bc22d535312b3a5ef28e3cfb8f4f5fd8bf54523c5770e1020dd15cc.
 
 - 2026-09-09T04:36:35+00:00: Heartbeat by replay_20260906.
+
+- 2026-09-09T04:37:04+00:00: Implemented closed 31 = 14 build_input + 17 excluded_source_artifact
+  manifest/verifier, pre-Ant pruning, exact post-prune allowlist, two-run build, retained deletion
+  loop, runtime and manifest negatives, and honest docs. Focused Rust suite passed 4/4. End-to-end
+  cache build exited 65 at the second retained trial: gson deletion failed compilation as expected,
+  but jacocoant.jar deletion built the exact reviewed output, triggering retained input is not
+  necessary. This is a product-contract contradiction, not environment/operator failure; no
+  candidate created.
