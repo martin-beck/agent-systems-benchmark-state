@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**156 ARs tracked** across 5 active status categories.
+**156 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 3 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 8 |
 | **Planned** | Defined work awaiting promotion or dependencies | 37 |
 | **Future** | Deferred roadmap work | 0 |
@@ -144,7 +144,7 @@ flowchart LR
         AR_0818["AR-0818 - Planned"]:::status_planned
         AR_0819["AR-0819 - Done"]:::status_done
         AR_0820["AR-0820 - Done"]:::status_done
-        AR_0821["AR-0821 - Open"]:::status_open
+        AR_0821["AR-0821 - In progress"]:::status_in_progress
         AR_0822["AR-0822 - Planned"]:::status_planned
         AR_0823["AR-0823 - Planned"]:::status_planned
         AR_0830["AR-0830 - Done"]:::status_done
@@ -883,18 +883,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P1 | [AR-0821](tasks/AR-0821-one-line-local-install.md): Add guided one-line local installation | codex-longrun-one-line-install-20260909 | Turn a single documented command into a safe guided local ASB and TUI first run. | Implement an idempotent one-line bootstrap that verifies, installs, configures, starts the local runner, and opens asb-tui. |
 | P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | replay_20260906 | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Request fresh independent immutable review of signed candidate 7ae562dbb15a686f3e1ef304de0fd5dfbeb0613b, tree ee763d09fba2119c88f3e6b30a22e8f8d3c570d3, parent 905607b8f57b1d3248c16a565443d39e5245af7c, base 096dc4f275c05ad81772f443b6f22dddfb92da3d. Do not publish or merge before review; hosted exact-head Kani remains required after publication authorization. |
 | P1 | [AR-0879](tasks/AR-0879-local-llm-testing-recommendations.md): Plan deterministic LLM doubles and local inference | codex-asb-local-llm-research-20260909 | Research deterministic LLM test doubles and local inference options, document ASB recommendations, and create implementation-ready follow-up ARs. | Research pinned public LLM test doubles, replay literature, and local inference servers; publish an ASB-specific recommendation and dependency-ordered implementation ARs without adding runtime integration. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0821](tasks/AR-0821-one-line-local-install.md): Add guided one-line local installation | Unclaimed | Turn a single documented command into a safe guided local ASB and TUI first run. | Implement an idempotent one-line bootstrap that verifies, installs, configures, starts the local runner, and opens asb-tui. |
 
 ### Blocked (8)
 

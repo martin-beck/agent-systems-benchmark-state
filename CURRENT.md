@@ -7,14 +7,9 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P1 | [AR-0821](tasks/AR-0821-one-line-local-install.md): Add guided one-line local installation | Turn a single documented command into a safe guided local ASB and TUI first run. | Implement an idempotent one-line bootstrap that verifies, installs, configures, starts the local runner, and opens asb-tui. | codex-longrun-one-line-install-20260909 |
 | P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Request fresh independent immutable review of signed candidate 7ae562dbb15a686f3e1ef304de0fd5dfbeb0613b, tree ee763d09fba2119c88f3e6b30a22e8f8d3c570d3, parent 905607b8f57b1d3248c16a565443d39e5245af7c, base 096dc4f275c05ad81772f443b6f22dddfb92da3d. Do not publish or merge before review; hosted exact-head Kani remains required after publication authorization. | replay_20260906 |
 | P1 | [AR-0879](tasks/AR-0879-local-llm-testing-recommendations.md): Plan deterministic LLM doubles and local inference | Research deterministic LLM test doubles and local inference options, document ASB recommendations, and create implementation-ready follow-up ARs. | Research pinned public LLM test doubles, replay literature, and local inference servers; publish an ASB-specific recommendation and dependency-ordered implementation ARs without adding runtime integration. | codex-asb-local-llm-research-20260909 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0821](tasks/AR-0821-one-line-local-install.md): Add guided one-line local installation | Turn a single documented command into a safe guided local ASB and TUI first run. | Implement an idempotent one-line bootstrap that verifies, installs, configures, starts the local runner, and opens asb-tui. | - |
 
 ## Blocked
 
