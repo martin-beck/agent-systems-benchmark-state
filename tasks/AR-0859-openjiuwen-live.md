@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 112,
+  "task_revision": 113,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T17:20:22+00:00",
+  "updated_at": "2026-09-09T17:20:52+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -380,3 +380,6 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-09T17:20:22+00:00: Recorded command exit 0; command argv SHA-256
   8d873e5d25befaeccdebd07a7bc394cd1a3b9969267f82ef55b788d82462d975.
+
+- 2026-09-09T17:20:52+00:00: Recorded command exit 1; command argv SHA-256
+  e245f75d3f0cb83ce7aa6e688da9f8121ce2c5f82c0e8ec2adc9ce9c65868921.
