@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Turn a single documented command into a safe guided local ASB and TUI first run.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Add guided one-line local installation",
-  "updated_at": "2026-09-09T06:38:04+00:00",
+  "updated_at": "2026-09-09T06:38:20+00:00",
   "worktree_key": "agent-systems-benchmark-one-line-install"
 }
 ---
@@ -77,3 +77,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T06:38:04+00:00: Recorded command exit 0; command argv SHA-256
   a78ff073484658b9bc27db985fb97ff1e6042f90b0ea8d8c1e3a33353dd6c97c.
+
+- 2026-09-09T06:38:20+00:00: Recorded command exit 0; command argv SHA-256
+  7934aa9a0438ca3b46449253756d91b429cb698a5b3630b5066368a784c1a422.
