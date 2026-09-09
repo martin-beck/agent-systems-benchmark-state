@@ -2,7 +2,7 @@
 {
   "branch": "fix/formal-oci-image-identity",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-09T17:36:00+00:00",
   "depends_on": [
     "AR-0003",
     "AR-0878",
@@ -11,15 +11,15 @@
   ],
   "id": "AR-0906",
   "next_action": "Implement and test portable digest-plus-platform OCI identity verification for the deterministic TLA source build.",
-  "owner": "",
+  "owner": "quality_20260906",
   "plan": "../plans/AR-0906.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make deterministic formal source builds verify OCI image identity portably across Docker engines.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Verify formal OCI build identity portably",
-  "updated_at": "2026-09-09T14:35:26+00:00",
+  "updated_at": "2026-09-09T14:36:00+00:00",
   "worktree_key": "agent-systems-benchmark-formal-oci-image-identity"
 }
 ---
@@ -31,3 +31,5 @@ instead of assuming an engine's local configuration ID equals the registry manif
 
 - 2026-09-09T14:35:26+00:00: Dependencies AR-0003, AR-0878, AR-0901 and AR-0902 are done; the
   six-path OCI verifier fence is disjoint from active AR-0877 and AR-0704 work.
+
+- 2026-09-09T14:36:00+00:00: Claimed by quality_20260906.
