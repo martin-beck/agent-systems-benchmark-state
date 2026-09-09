@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-09T00:37:03+00:00",
+  "updated_at": "2026-09-09T00:46:41+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
@@ -300,3 +300,6 @@ Implementation has not started. Read the linked plan before claiming.
   build, diff-check, repository policy, Gitleaks, cargo-deny, cargo-audit, coverage, and the
   complete failure-path suite. Worktree is clean; candidate remains unpublished pending fresh
   immutable review.
+
+- 2026-09-09T00:46:41+00:00: Recorded command exit 0; command argv SHA-256
+  4c7d41c450d7cdd302e62542689f324c4ff640ecd175823aa05bbd01435d5349.
