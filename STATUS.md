@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**156 ARs tracked** across 4 active status categories.
+**157 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 3 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 7 |
-| **Planned** | Defined work awaiting promotion or dependencies | 36 |
+| **Planned** | Defined work awaiting promotion or dependencies | 37 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 110 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -195,6 +195,7 @@ flowchart LR
         AR_0877["AR-0877 - Blocked"]:::status_blocked
         AR_0878["AR-0878 - Done"]:::status_done
         AR_0879["AR-0879 - In progress"]:::status_in_progress
+        AR_0880["AR-0880 - Planned"]:::status_planned
     end
     subgraph series_09["09 - Assurance"]
         direction TB
@@ -666,6 +667,7 @@ flowchart LR
     AR_0855 --> AR_0857
     AR_0855 --> AR_0863
     AR_0857 --> AR_0858
+    AR_0857 --> AR_0880
     AR_0858 --> AR_0859
     AR_0859 --> AR_0860
     AR_0860 --> AR_0861
@@ -844,7 +846,7 @@ flowchart LR
 | [AR-0854](tasks/AR-0854-coordinator-v020-upgrade.md) | None | None |
 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md) | [AR-0003](tasks/AR-0003-quality-gates.md) | [AR-0857](tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](tasks/AR-0863-workbuddy-provenance.md) |
 | [AR-0856](tasks/AR-0856-agent-openjiuwen-workbuddy.md) | [AR-0862](tasks/AR-0862-openjiuwen-qualification.md), [AR-0868](tasks/AR-0868-workbuddy-qualification.md) | None |
-| [AR-0857](tasks/AR-0857-openjiuwen-provenance.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0310](tasks/AR-0310-provider-profile-contract.md), [AR-0315](tasks/AR-0315-provider-parity-conformance.md), [AR-0317](tasks/AR-0317-runtime-bundle-manifest.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md) | [AR-0858](tasks/AR-0858-openjiuwen-adapter.md) |
+| [AR-0857](tasks/AR-0857-openjiuwen-provenance.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0310](tasks/AR-0310-provider-profile-contract.md), [AR-0315](tasks/AR-0315-provider-parity-conformance.md), [AR-0317](tasks/AR-0317-runtime-bundle-manifest.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md) | [AR-0858](tasks/AR-0858-openjiuwen-adapter.md), [AR-0880](tasks/AR-0880-openjiuwen-runtime-closure.md) |
 | [AR-0858](tasks/AR-0858-openjiuwen-adapter.md) | [AR-0857](tasks/AR-0857-openjiuwen-provenance.md) | [AR-0859](tasks/AR-0859-openjiuwen-live.md) |
 | [AR-0859](tasks/AR-0859-openjiuwen-live.md) | [AR-0858](tasks/AR-0858-openjiuwen-adapter.md) | [AR-0860](tasks/AR-0860-openjiuwen-replay.md) |
 | [AR-0860](tasks/AR-0860-openjiuwen-replay.md) | [AR-0859](tasks/AR-0859-openjiuwen-live.md) | [AR-0861](tasks/AR-0861-openjiuwen-parity.md) |
@@ -867,6 +869,7 @@ flowchart LR
 | [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md) | [AR-0003](tasks/AR-0003-quality-gates.md), [AR-0901](tasks/AR-0901-formal-assurance.md), [AR-0902](tasks/AR-0902-fault-assurance.md) | None |
 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md) | [AR-0003](tasks/AR-0003-quality-gates.md), [AR-0901](tasks/AR-0901-formal-assurance.md), [AR-0902](tasks/AR-0902-fault-assurance.md) | None |
 | [AR-0879](tasks/AR-0879-local-llm-testing-recommendations.md) | [AR-0312](tasks/AR-0312-provider-ollama.md), [AR-0313](tasks/AR-0313-all-agents-provider.md), [AR-0315](tasks/AR-0315-provider-parity-conformance.md), [AR-0501](tasks/AR-0501-replay-evaluation.md), [AR-0502](tasks/AR-0502-replay-cassettes.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0504](tasks/AR-0504-replay-pacing.md), [AR-0505](tasks/AR-0505-agent-replay-conformance.md), [AR-0871](tasks/AR-0871-record-replay-user-workflows.md) | None |
+| [AR-0880](tasks/AR-0880-openjiuwen-runtime-closure.md) | [AR-0857](tasks/AR-0857-openjiuwen-provenance.md) | None |
 | [AR-0901](tasks/AR-0901-formal-assurance.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0203](tasks/AR-0203-statistical-analysis.md), [AR-0502](tasks/AR-0502-replay-cassettes.md) | [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md), [AR-0878](tasks/AR-0878-tla-source-build-provenance.md), [AR-0903](tasks/AR-0903-release-qualification.md) |
 | [AR-0902](tasks/AR-0902-fault-assurance.md) | [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0503](tasks/AR-0503-strict-replay.md) | [AR-0813](tasks/AR-0813-remote-control-transport.md), [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md), [AR-0878](tasks/AR-0878-tla-source-build-provenance.md), [AR-0903](tasks/AR-0903-release-qualification.md) |
 | [AR-0903](tasks/AR-0903-release-qualification.md) | [AR-0002](tasks/AR-0002-coordination-assurance.md), [AR-0003](tasks/AR-0003-quality-gates.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0315](tasks/AR-0315-provider-parity-conformance.md), [AR-0505](tasks/AR-0505-agent-replay-conformance.md), [AR-0702](tasks/AR-0702-native-platforms.md), [AR-0802](tasks/AR-0802-executable-guides.md), [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0811](tasks/AR-0811-documentation-qualification.md), [AR-0818](tasks/AR-0818-remote-control-security-audit.md), [AR-0823](tasks/AR-0823-installation-qualification.md), [AR-0901](tasks/AR-0901-formal-assurance.md), [AR-0902](tasks/AR-0902-fault-assurance.md) | [AR-0846](tasks/AR-0846-artifact-retention-cleanup.md) |
@@ -903,7 +906,7 @@ flowchart LR
 | P1 | [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md): Repair formal TLA artifact availability | Unclaimed | Repair the formal workflow&#x27;s unavailable TLA+ artifact pin without weakening provenance or offline verification. | Keep the four-path prototype unchanged. Obtain an authoritative immutable TLA+ 1.8.0 artifact or authorization for a reproducible source-build boundary; then refresh metadata once, finish deterministic faults, and run TLC/Alloy. Do not chase replaceable pre-release assets. |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Monitor exact-main post-merge checks at 2219839 and run local post-merge verification. Retain AR-0202 in progress until genuine privileged native aarch64 evidence is recorded; then complete final review and release. |
 
-### Planned (36)
+### Planned (37)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -940,6 +943,7 @@ flowchart LR
 | P1 | [AR-0868](tasks/AR-0868-workbuddy-qualification.md): Independently qualify and document WorkBuddy support | Unclaimed | Independently qualify and document WorkBuddy support. | Run independent exact-tree qualification, offline provenance verification, full gates, native evidence, documentation review, and post-merge validation. |
 | P1 | [AR-0873](tasks/AR-0873-ci-workflow-captures.md): Generate CI workflow screenshots | Unclaimed | Produce reproducible screenshots and text equivalents from example workflows actually executed in CI. | Generate privacy-safe CLI and TUI workflow screenshots from real synthetic CI executions. |
 | P1 | [AR-0874](tasks/AR-0874-automatic-workflow-refresh.md): Automate workflow documentation refresh | Unclaimed | Automatically refresh or reject stale workflow documentation and CI captures when essential user-visible behavior changes. | Add essential-change detection, deterministic regeneration, and reviewed update automation for workflows and captures. |
+| P1 | [AR-0880](tasks/AR-0880-openjiuwen-runtime-closure.md): Repair OpenJiuwen runtime closure | Unclaimed | Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification. | Regenerate and verify the exact OpenJiuwen cli plus observability runtime closure, then prove imports and the console entry point before unblocking AR-0859. |
 | P2 | [AR-0602](tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Unclaimed | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit the pinned CSB MonitorFactory and benchmark outputs against ASB metric contracts and controlled contention oracles. |
 | P2 | [AR-0903](tasks/AR-0903-release-qualification.md): Package and qualify the first release | Unclaimed | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
