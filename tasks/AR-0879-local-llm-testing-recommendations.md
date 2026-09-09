@@ -2,7 +2,7 @@
 {
   "branch": "docs/local-llm-testing-recommendations",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T09:58:08+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0312",
     "AR-0313",
@@ -19,15 +19,15 @@
   "observed_branch": "docs/local-llm-testing-recommendations",
   "observed_dirty": 0,
   "observed_head": "4a23069336be204d0a6816e386c5a86dc290db59",
-  "owner": "codex-asb-local-llm-research-20260909",
+  "owner": "",
   "plan": "../plans/AR-0879.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Research deterministic LLM test doubles and local inference options, document ASB recommendations, and create implementation-ready follow-up ARs.",
-  "task_revision": 162,
+  "task_revision": 163,
   "title": "Plan deterministic LLM doubles and local inference",
-  "updated_at": "2026-09-09T07:58:13+00:00",
+  "updated_at": "2026-09-09T07:58:44+00:00",
   "worktree_key": "agent-systems-benchmark-local-llm-testing-recommendations"
 }
 ---
@@ -480,3 +480,8 @@ honestly, and do not implement a simulator, mock server, inference backend, or u
 
 - 2026-09-09T07:58:13+00:00: Recorded command exit 0; command argv SHA-256
   85cf812ada1e08232407c7fb38fadd923f7e97ebf3c338d77268b7b2f6f6a492.
+
+- 2026-09-09T07:58:44+00:00: Acceptance verified: product PR #107 signed no-ff merge
+  bf66ad4198a2a96fd284765b98a60acdcef12eac passed all six exact-main post-merge workflows; state PR
+  #16 was independently reviewed, rebased to signed head 355dd134, exact-head AWQ passed, and merged
+  signed no-ff as 08e637df; final reconcile and doctor pass.
