@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Post-rewrite policy run failed because GitHub retained unreachable old base SHA; advancing main with signed no-op to establish reachable range.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-09T10:22:51+00:00",
+  "updated_at": "2026-09-09T10:23:10+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -125,3 +125,6 @@ synthetic fixture for black-box executable evidence.
 
 - 2026-09-09T10:22:51+00:00: Recorded command exit 0; command argv SHA-256
   c72c269d7628b20d021feed6eba11c829ab8b0b4896ce1d9db02099c8729b5be.
+
+- 2026-09-09T10:23:10+00:00: Recorded command exit 0; command argv SHA-256
+  982f97fcdf79769c5715c90cd56c9d81f8d59ee769769236194e3651eea54dcd.
