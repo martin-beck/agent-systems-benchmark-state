@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0877",
-  "next_action": "Keep the four-path prototype unchanged. Obtain an authoritative immutable TLA+ 1.8.0 artifact or authorization for a reproducible source-build boundary; then refresh metadata once, finish deterministic faults, and run TLC/Alloy. Do not chase replaceable pre-release assets.",
+  "next_action": "Finish acquisition adversarial review and full formal/workspace/privacy gates on the eight-path source-build integration; then create a signed candidate for independent review.",
   "observed_branch": "fix/formal-tla-artifact-availability",
   "observed_dirty": 8,
   "observed_head": "b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T13:44:01+00:00",
+  "updated_at": "2026-09-09T13:44:28+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -177,3 +177,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T13:44:01+00:00: Recorded command exit 0; command argv SHA-256
   5eeb5b21ac80d3ad10cdaa66e608eb739c1f6d90cb233de423c4c2bca27556f9.
+
+- 2026-09-09T13:44:28+00:00: Rebased preserved four-path prototype onto product main b6d04a8 and
+  replaced mutable prerelease consumption with AR-0878 deterministic source-build output SHA-256
+  8c200a88... (4512486 bytes). Exact dirty scope is eight AR-owned paths: formal workflow, README,
+  runner, toolchain metadata/pin test, new acquisition test and two fixtures. A real pinned offline
+  JAR ran TLC positive (3709 states/depth 17), deliberate stale mutation, Alloy positive and six
+  mutants successfully. A clean source build from the exact cached source/Ant inputs reproduced
+  8c200a88..., mode 0400/link count 1. Focused acquisition 6/6, provenance 4/4, and pin 1/1 tests
+  pass. Earlier focused failures were harness assertions and one shell local-initialization bug;
+  both are repaired and superseded by green results. No AR-0704 path changed and no mutable v1.8.0
+  digest was repinned.
