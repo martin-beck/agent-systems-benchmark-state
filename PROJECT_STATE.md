@@ -16,9 +16,9 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34336319359 | `adac76558387` | push | Emulated aarch64 portability | in_progress:- |
+| 34336319359 | `adac76558387` | push | Emulated aarch64 portability | completed:success |
 | 34336319346 | `adac76558387` | push | Formal assurance | completed:success |
-| 34336319329 | `adac76558387` | push | Repository quality | in_progress:- |
+| 34336319329 | `adac76558387` | push | Repository quality | completed:success |
 | 34336319198 | `adac76558387` | push | Huawei MIT source headers | completed:success |
 | 34336319194 | `adac76558387` | push | Rust verification | completed:success |
 | 34336319189 | `adac76558387` | push | Fault assurance | completed:success |
