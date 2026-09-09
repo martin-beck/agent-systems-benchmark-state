@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Repair OpenJiuwen runtime closure",
-  "updated_at": "2026-09-09T07:29:19+00:00",
+  "updated_at": "2026-09-09T07:46:24+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-runtime-closure"
 }
 ---
@@ -107,3 +107,6 @@ a dependency, avoiding a completion cycle while AR-0859 remains blocked on this 
   openjiuwen version/help/run-help pass 1/1 with bounded private-sentinel-free diagnostics and
   isolated cleanup; focused Clippy is green. Initial empty-stdout failure was correctly classified
   as bounded upstream registration logging, not an import failure.
+
+- 2026-09-09T07:46:24+00:00: Recorded command exit 0; command argv SHA-256
+  6c6607472535fdc84616e99d8c830555f432ea45727a05d8cd058fca6749271c.
