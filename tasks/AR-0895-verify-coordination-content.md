@@ -2,22 +2,22 @@
 {
   "branch": "ci/verify-coordination-content",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-09T12:42:20+00:00",
   "depends_on": [
     "AR-0002",
     "AR-0003"
   ],
   "id": "AR-0895",
   "next_action": "Make task, plan, CURRENT.md, and STATUS.md pull-request changes trigger exact-head Coordination verification and DCO, with path-filter regression tests.",
-  "owner": "",
+  "owner": "quality_20260906",
   "plan": "../plans/AR-0895.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Close the workflow path-filter gap that lets coordination-content pull requests skip strict state consistency and DCO checks.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Verify every coordination-content pull request",
-  "updated_at": "2026-09-09T09:42:17+00:00",
+  "updated_at": "2026-09-09T09:42:20+00:00",
   "worktree_key": "agent-systems-benchmark-state-verify-coordination-content"
 }
 ---
@@ -30,3 +30,5 @@ Ensure state-content pull requests cannot bypass exact-head schema, generated-vi
   authorization, AR-0832 owns runner operations, and AR-0890 overlaps active provider/workflow
   integration. AR-0895 is an isolated state-workflow quality lane with AR-0002/AR-0003 done and no
   active path-owner conflict.
+
+- 2026-09-09T09:42:20+00:00: Claimed by quality_20260906.
