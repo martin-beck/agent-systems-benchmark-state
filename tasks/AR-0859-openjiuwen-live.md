@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-live",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T10:00:09+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0858"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "513c1d926458f1cb6a26d3f7277dc7d9b1496df3",
-  "owner": "replay_20260906",
+  "owner": "",
   "plan": "../plans/AR-0859.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T07:13:22+00:00",
+  "updated_at": "2026-09-09T07:13:44+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -120,3 +120,10 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-09T07:13:22+00:00: Recorded command exit 0; command argv SHA-256
   012fbdc5ddb84f2ea8ed2335e9ebf344ffa6426a6f4ae18c313c6a4f5688b67d.
+
+- 2026-09-09T07:13:44+00:00: Live support remains fail closed. Exact pinned wheel 21e9479c... cannot
+  execute provider traffic from provenance lock 51cc9028... because cli and observability extras are
+  absent; preserved failures identify prompt_toolkit then opentelemetry.sdk before any request.
+  Dependency-ready repair AR-0880 was added without a cycle and owns the exact provenance
+  lock/manifest/import-test paths. Resume AR-0859 only after AR-0880 completes reviewed immutable
+  closure repair.
