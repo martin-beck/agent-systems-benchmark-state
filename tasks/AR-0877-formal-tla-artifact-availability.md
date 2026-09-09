@@ -11,17 +11,17 @@
   "id": "AR-0877",
   "next_action": "Repair PR #120 hosted image-identity portability only after coordinator authorizes the AR-0878 build.sh provenance path or an equivalent reviewed boundary; rerun exact-head CI, do not merge.",
   "observed_branch": "fix/formal-tla-artifact-availability",
-  "observed_dirty": 3,
-  "observed_head": "55fdd686eb1a4a8583fd37a088b20e5edb7e3b89",
+  "observed_dirty": 0,
+  "observed_head": "65142ea58cbb7d4a763e5be176406b0a08e206cd",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0877.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 104,
+  "task_revision": 105,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T15:29:00+00:00",
+  "updated_at": "2026-09-09T15:29:06+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
