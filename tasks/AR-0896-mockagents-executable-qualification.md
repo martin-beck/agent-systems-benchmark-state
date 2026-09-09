@@ -2,7 +2,7 @@
 {
   "branch": "test/mockagents-executable-qualification",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T10:40:19+00:00",
+  "claim_expires": "2026-09-09T10:47:48+00:00",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Build the pinned MockAgents qualification harness; exact amd64 protocol smoke and provenance checks pass, hostile matrix remains.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-09T10:02:16+00:00",
+  "updated_at": "2026-09-09T10:02:48+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -53,3 +53,5 @@ synthetic fixture for black-box executable evidence.
 
 - 2026-09-09T10:02:16+00:00: Recorded command exit 0; command argv SHA-256
   06c97c3ac06498041b764894cd0d33f558c890057cf487c180d031982747e27e.
+
+- 2026-09-09T10:02:48+00:00: Heartbeat by codex-longrun-mockagents-20260909.
