@@ -15,15 +15,18 @@
   ],
   "id": "AR-0863",
   "next_action": "Pin official source, package, dependency closure, license, executable digest, protocol mode, and supported platform before any adapter claim.",
+  "observed_branch": "feature/workbuddy-provenance",
+  "observed_dirty": 0,
+  "observed_head": "9aad1317bdcaabcec2e62a856ff6d0b3ac757f46",
   "owner": "replay_20260909",
   "plan": "../plans/AR-0863.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin WorkBuddy source, package, and license provenance.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Pin WorkBuddy source, package, and license provenance",
-  "updated_at": "2026-09-09T03:15:25+00:00",
+  "updated_at": "2026-09-09T03:15:33+00:00",
   "worktree_key": "agent-systems-benchmark-workbuddy-provenance"
 }
 ---

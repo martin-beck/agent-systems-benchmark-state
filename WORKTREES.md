@@ -110,3 +110,4 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-tui-run-control` | `feature/tui-run-control` | `b44282a31e90` | 0 | behind 42, ahead 0 |
 | `agent-systems-benchmark-tui-settings-wizard` | `feature/tui-settings-wizard` | `8f7152c525da` | 0 | behind 54, ahead 0 |
 | `agent-systems-benchmark-verifier-integrity` | `feature/verifier-integrity` | `3fc65ea73bad` | 0 | behind 127, ahead 0 |
+| `agent-systems-benchmark-workbuddy-provenance` | `feature/workbuddy-provenance` | `9aad1317bdca` | 0 | behind 0, ahead 0 |
