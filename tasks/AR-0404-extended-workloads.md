@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Evaluate SWE-bench Pro, BigCodeBench, EvalPlus and LiveCodeBench as optional suites.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Expand established benchmark catalogue",
-  "updated_at": "2026-09-09T03:55:41+00:00",
+  "updated_at": "2026-09-09T03:55:50+00:00",
   "worktree_key": "agent-systems-benchmark-extended-workloads"
 }
 ---
@@ -101,3 +101,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T03:55:41+00:00: Recorded command exit 0; command argv SHA-256
   6b8394683ec27cab70b2e6c3a06a197c800bb2876062ff68b0334136fb30dbe2.
+
+- 2026-09-09T03:55:50+00:00: Recorded command exit 0; command argv SHA-256
+  202a18a3cc2c8624bf6375b2e49387b84388aa60c81ae4ddbf85154d2fffdace.
