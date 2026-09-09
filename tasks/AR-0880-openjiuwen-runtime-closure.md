@@ -7,7 +7,7 @@
     "AR-0857"
   ],
   "id": "AR-0880",
-  "next_action": "Obtain coordinator authorization for one controlled range-identical rebase of exact candidate 6f6666373d23c833609008448b6a672312e1c6fb/tree 558ff1278420ce6ab85a1147b2011cb888b33fe6 from approved base 9f502f7a3a781031770ad96efb4570ed206423a9 onto live origin/main 1ab70e82fa4d442d89481050da50dd4bc3bb4d22; preserve the exact three-path scope, rerun gates, obtain fresh immutable review, and update PR #112 by exact force-with-lease before merge.",
+  "next_action": "Fresh immutable review exact rebased candidate 74f6646badd4d1520ad5999fbfd9202ef9cd54a2/tree bd37f38b5418d6e998f38fca4d5165ead83235cb/parent 1ab70e82fa4d442d89481050da50dd4bc3bb4d22; if approved, update PR #112 from old head 6f6666373d23c833609008448b6a672312e1c6fb by exact force-with-lease, then require fresh exact-head hosted CI before merge.",
   "observed_branch": "fix/openjiuwen-runtime-closure",
   "observed_dirty": 0,
   "observed_head": "74f6646badd4d1520ad5999fbfd9202ef9cd54a2",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification.",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "Repair OpenJiuwen runtime closure",
-  "updated_at": "2026-09-09T09:06:53+00:00",
+  "updated_at": "2026-09-09T09:07:40+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-runtime-closure"
 }
 ---
@@ -343,3 +343,17 @@ a dependency, avoiding a completion cycle while AR-0859 remains blocked on this 
 
 - 2026-09-09T09:06:53+00:00: Recorded command exit 0; command argv SHA-256
   336b78bc732c2411754a6f65d57ae1b3e38efbe46a2aba5917711ff975390dff.
+
+- 2026-09-09T09:07:40+00:00: Authorized controlled rebase completed. Old approved candidate
+  preserved at refs/evidence/ar0880-pre-rebase-6f666637; new exact SSH-signed Martin+DCO candidate
+  is 74f6646badd4d1520ad5999fbfd9202ef9cd54a2, tree bd37f38b5418d6e998f38fca4d5165ead83235cb,
+  parent/live base 1ab70e82fa4d442d89481050da50dd4bc3bb4d22. Range-diff from 6f666637 is exact
+  equals; clean diff/check and scope exactly the same three OpenJiuwen paths. Post-rebase green:
+  focused static 4 passed/1 ignored; pinned fresh online+hash-required offline closure 1/1;
+  workspace fmt, pinned Rust 1.93 Clippy, all tests, strict docs and release build; TLC positive
+  plus stale negative and Alloy positive/mutations; exact-range repository policy; cargo-deny/audit;
+  actionlint/zizmor; exact-range Gitleaks; mutation sentinels 7/7 caught; coverage floors including
+  critical replay 97.84% lines. Operator-only failures were sanitized wrapper PATH selecting Rust
+  1.98 instead of repository pin 1.93, omitted pinned uv env, pre-created formal scratch, and two
+  wrong-cwd handoffctl invocations; all corrected with no product changes. Candidate remains clean
+  and unpublished pending fresh immutable review.
