@@ -20,6 +20,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-all-agents-provider` | `feature/all-agents-provider` | `03962f28571e` | 0 | behind 92, ahead 0 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 36, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 139, ahead 0 |
+| `agent-systems-benchmark-ar0819-integration` | `integration/ar-0819` | `7d9191c99c0e` | 0 | behind 0, ahead 2 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 33, ahead 0 |
 | `agent-systems-benchmark-beginner-workflows` | `docs/beginner-workflows` | `328de90ef1ed` | 0 | behind 7, ahead 0 |
 | `agent-systems-benchmark-benchmark-validity` | `feature/benchmark-validity` | `60a6c730457b` | 0 | behind 135, ahead 0 |
@@ -104,8 +105,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `410ecc95b80e` | 0 | behind 277, ahead 0 |
 | `agent-systems-benchmark-terminal-interface` | `feature/terminal-interface` | `d2e7b66ff6af` | 0 | behind 222, ahead 0 |
 | `agent-systems-benchmark-terminal-workloads` | `feature/terminal-workloads` | `3e67bdfc3ce0` | 0 | behind 39, ahead 0 |
-| `agent-systems-benchmark-tla-source-build-provenance` | `feature/tla-source-build-provenance` | `6cbd169f6ba6` | 1 | behind 0, ahead 1 |
-| changed files | - | - | - | `formal/tla-provenance/source-build.toml` |
+| `agent-systems-benchmark-tla-source-build-provenance` | `feature/tla-source-build-provenance` | `6cbd169f6ba6` | 2 | behind 0, ahead 1 |
+| changed files | - | - | - | `formal/tla-provenance/source-build.toml`, `formal/tla-provenance/verify.sh` |
 | `agent-systems-benchmark-trace-interoperability` | `feature/trace-interoperability` | `921cf004f8aa` | 0 | behind 94, ahead 0 |
 | `agent-systems-benchmark-tui-history-analysis` | `feature/tui-history-analysis` | `dc914626bb2f` | 0 | behind 16, ahead 1 |
 | `agent-systems-benchmark-tui-multi-agent-provider-selection` | `feature/tui-multi-agent-provider-selection` | `679244e3af61` | 0 | behind 20, ahead 0 |
