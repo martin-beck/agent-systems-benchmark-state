@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-live",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-09T20:00:15+00:00",
   "depends_on": [
     "AR-0858"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "bf29c154cb59d332fd098e4ae64c976dc41e1416",
-  "owner": "",
+  "owner": "replay_20260906",
   "plan": "../plans/AR-0859.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T12:41:58+00:00",
+  "updated_at": "2026-09-09T17:00:15+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -289,3 +289,5 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 - 2026-09-09T12:41:58+00:00: Recovered expired claim formerly owned by replay_20260906. Expired
   owner lease recovered after coordinator audit; preserve declared worktree and require fresh claim
   before further mutation.
+
+- 2026-09-09T17:00:15+00:00: Claimed by replay_20260906.
