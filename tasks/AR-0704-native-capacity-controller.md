@@ -2,22 +2,22 @@
 {
   "branch": "feature/native-capacity-controller",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-09T15:11:42+00:00",
   "depends_on": [
     "AR-0701",
     "AR-0103"
   ],
   "id": "AR-0704",
   "next_action": "Define authorized reservation, provisioning, teardown, privacy, cost, and evidence control for genuine native cells.",
-  "owner": "",
+  "owner": "contracts_20260906",
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-09T12:11:35+00:00",
+  "updated_at": "2026-09-09T12:11:42+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -34,3 +34,5 @@ must not block this AR or its dependents.
   provider provisioning, emulated-native substitution, or cost-bearing capacity claim. Dependencies
   AR-0701 and AR-0103 are durably done and the control-policy paths are disjoint from active AR-0702
   qualification paths.
+
+- 2026-09-09T12:11:42+00:00: Claimed by contracts_20260906.
