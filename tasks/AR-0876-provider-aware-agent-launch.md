@@ -25,9 +25,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply validated provider selections at the authoritative agent launch boundary and reject conflicting runtime configuration.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "Wire provider-aware agent launches",
-  "updated_at": "2026-09-09T01:14:16+00:00",
+  "updated_at": "2026-09-09T01:14:36+00:00",
   "worktree_key": "agent-systems-benchmark-provider-aware-agent-launch"
 }
 ---
@@ -236,3 +236,6 @@ Implementation has not started. Read the linked plan before claiming.
   green; this is an integration-boundary defect. Release is preempted. Repair must replace only the
   merge boundary with a signed+DCO no-ff merge using guarded force-with-lease, then rerun exact-main
   postmerge workflows.
+
+- 2026-09-09T01:14:36+00:00: Recorded command exit 0; command argv SHA-256
+  35f4e4d75f439e6903cd23f824c29060a52792a5be80c9fe177331b361c99ba3.
