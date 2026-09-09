@@ -2,7 +2,7 @@
 {
   "branch": "feat/local-inference-provider-profiles",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T11:22:34+00:00",
+  "claim_expires": "2026-09-09T11:24:19+00:00",
   "depends_on": [
     "AR-0879",
     "AR-0312",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server.",
-  "task_revision": 86,
+  "task_revision": 87,
   "title": "Qualify local inference provider profiles",
-  "updated_at": "2026-09-09T09:24:04+00:00",
+  "updated_at": "2026-09-09T09:24:19+00:00",
   "worktree_key": "agent-systems-benchmark-local-inference-provider-profiles"
 }
 ---
@@ -222,3 +222,5 @@ Use exact Ollama, llama.cpp, vLLM and LocalAI sources in `docs/LOCAL_LLM_TESTING
   false positive at profiles-v1.json:77 on the public tokenizer_sha256 content digest; no credential
   was present. Added a narrowly path/field-scoped .gitleaks.toml allowlist and local exact-range
   scan now reports no leaks. Do not merge until a new exact-head CI run is green.
+
+- 2026-09-09T09:24:19+00:00: Heartbeat by codex-longrun-local-inference-profiles-20260909.
