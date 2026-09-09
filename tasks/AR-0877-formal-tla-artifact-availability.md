@@ -12,16 +12,16 @@
   "next_action": "Keep the four-path prototype unchanged. Obtain an authoritative immutable TLA+ 1.8.0 artifact or authorization for a reproducible source-build boundary; then refresh metadata once, finish deterministic faults, and run TLC/Alloy. Do not chase replaceable pre-release assets.",
   "observed_branch": "fix/formal-tla-artifact-availability",
   "observed_dirty": 4,
-  "observed_head": "dca243ab7b8cbb0b2b49a568dec99c517e0719c2",
+  "observed_head": "b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0877.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T13:26:37+00:00",
+  "updated_at": "2026-09-09T13:26:44+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---

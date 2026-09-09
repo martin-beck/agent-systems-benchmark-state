@@ -50,7 +50,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-external-code-workloads` | `feature/external-code-workloads` | `d6875cc7bb69` | 0 | behind 183, ahead 0 |
 | `agent-systems-benchmark-fault-assurance` | `feature/fault-assurance` | `e6c623113c15` | 0 | behind 300, ahead 0 |
 | `agent-systems-benchmark-formal-assurance` | `feature/formal-assurance` | `2a495a99a657` | 0 | behind 346, ahead 0 |
-| `agent-systems-benchmark-formal-tla-artifact-availability` | `fix/formal-tla-artifact-availability` | `dca243ab7b8c` | 4 | behind 95, ahead 0 |
+| `agent-systems-benchmark-formal-tla-artifact-availability` | `fix/formal-tla-artifact-availability` | `b6d04a8305ce` | 4 | behind 0, ahead 0 |
 | changed files | - | - | - | `formal/README.md`, `formal/run_temporal_models.sh`, `formal/tests/toolchain_pins.rs`, `formal/toolchains.toml` |
 | `agent-systems-benchmark-frontend-api-integration` | `feature/frontend-api-integration` | `76cc86f23a48` | 0 | behind 173, ahead 0 |
 | `agent-systems-benchmark-frontend-control-api` | `feature/frontend-control-api` | `cbb764c45c61` | 20 | behind 292, ahead 1 |
