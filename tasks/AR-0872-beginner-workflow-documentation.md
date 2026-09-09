@@ -12,17 +12,17 @@
   "id": "AR-0872",
   "next_action": "Run focused workflow documentation tests and product quality gates.",
   "observed_branch": "docs/beginner-workflows",
-  "observed_dirty": 7,
-  "observed_head": "f2028d71eb59e85e2175294cb9fa55844fcd0a20",
+  "observed_dirty": 0,
+  "observed_head": "3b0ad66a1cf47dcc7c7a930b85088a07dd5efab4",
   "owner": "replay_20260909",
   "plan": "../plans/AR-0872.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish linked beginner workflows for setup, multi-agent runs, progress, comparison, recording, and replay with and without the TUI.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Publish beginner workflow documentation",
-  "updated_at": "2026-09-09T01:41:21+00:00",
+  "updated_at": "2026-09-09T01:41:26+00:00",
   "worktree_key": "agent-systems-benchmark-beginner-workflows"
 }
 ---
