@@ -19,11 +19,11 @@
   "plan": "../plans/AR-0875.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Extend frontend history and analysis contracts with bounded provenance, integrity, outcome, compatibility, and confounder evidence.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Extend control history and analysis protocol",
-  "updated_at": "2026-09-08T21:55:00+00:00",
+  "updated_at": "2026-09-09T04:29:07+00:00",
   "worktree_key": "agent-systems-benchmark-control-history-analysis-contract"
 }
 ---
@@ -33,3 +33,6 @@ Define the missing versioned frontend history and analysis contract required by 
 integrate it into the production CLI backend under a separately serialized shared-path fence.
 
 Implementation has not started. Read the linked plan before claiming.
+
+- 2026-09-09T04:29:07+00:00: Selected next highest-priority dependency-ready task after AR-0806
+  release; protocol paths are disjoint from active adapter/formal work.
