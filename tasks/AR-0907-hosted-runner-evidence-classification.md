@@ -8,7 +8,7 @@
     "AR-0848"
   ],
   "id": "AR-0907",
-  "next_action": "Hold signed successor 5e58ae5cdbae7b19f08a2135674cea31d94cc7ba unpublished from PR #123 pending fresh immutable review; update PR and rerun exact-head CI only after approval.",
+  "next_action": "ambiguous",
   "observed_branch": "fix/hosted-runner-evidence-classification",
   "observed_dirty": 0,
   "observed_head": "5e58ae5cdbae7b19f08a2135674cea31d94cc7ba",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T18:58:17+00:00",
+  "updated_at": "2026-09-09T19:02:38+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -336,3 +336,5 @@ patch release has advanced.
   green. Exit 5 at 18:55:41 was operator-only malformed unittest pattern yielding zero tests;
   corrected exact discovery passed 56 tests in the subsequent full gate batch. Combined range
   remains seven AR-owned paths on base b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b.
+
+- 2026-09-09T19:02:38+00:00: ambiguous
