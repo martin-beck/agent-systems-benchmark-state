@@ -7,7 +7,7 @@
     "AR-0858"
   ],
   "id": "AR-0859",
-  "next_action": "Run full workspace/formal/fault/privacy/supply gates on b75e2fb; keep support fail closed pending review.",
+  "next_action": "Independent immutable review of b75e2fb; keep live support fail closed pending approval.",
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "b75e2fb31bd9ab569de4363b6d7afae34579184d",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 125,
+  "task_revision": 126,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T17:29:33+00:00",
+  "updated_at": "2026-09-09T17:30:06+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -419,3 +419,20 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-09T17:29:33+00:00: Recorded command exit 0; command argv SHA-256
   21e17f588e79147a7e72ac774b6286723950e0c9d31398457d3f4b0cb26fbf6d.
+
+- 2026-09-09T17:30:06+00:00: Full exact-tree review package complete for signed+DCO
+  b75e2fb31bd9ab569de4363b6d7afae34579184d (tree eb5dfd672d6a1e2715193cc0d7abacbafde9adc9,
+  parent/base b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b). Green: fmt; workspace all-targets Clippy -D
+  warnings; workspace tests; rustdoc -D warnings; release build; formal Cargo/Loom/state/production
+  tests; TLC/Alloy positive and deliberate-mutation models using digest-exact cached tools; Kani
+  0.67.0 six proofs plus deliberate-counterexample negative; retained fault tests; cargo-mutants 7/7
+  caught; bounded fuzz 256 runs each for protocol_jsonrpc, cassette_decode, replay_sse, store_paths
+  with lock unchanged and clean source; repository policy exact base..head; contract consistency;
+  actionlint; zizmor; redacted Gitleaks exact range; cargo-deny; cargo-audit; llvm-cov floor (replay
+  97.84% lines, 95.13% regions); controlled quality failure paths; platform validation/tests 46/46;
+  final signature/DCO/diff-check/clean-tree/exact three-path audit. Earlier failures were
+  operator/environment-only: stale temporal scratch, mutable upstream TLA asset mismatch avoided
+  with locally cached exact digest, interrupted nightly repaired through rustup, omitted generated
+  fuzz-artifact cleanup corrected, and incomplete Kani setup repaired without product changes.
+  Focused credential-free bwrap loopback suite remains 6/6 in 37.94s with network namespace,
+  edit/tool/usage/cancellation/reap/privacy and fail-closed negatives. No publication performed.
