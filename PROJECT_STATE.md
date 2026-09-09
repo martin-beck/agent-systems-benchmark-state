@@ -10,8 +10,8 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #31 | `feature/native-platforms@bdaf9c108226` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #89 | `feature/tui-history-analysis@dc914626bb2f` | `main` | UNKNOWN | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: add bounded TUI history projection |
+| #31 | `feature/native-platforms@bdaf9c108226` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
+| #89 | `feature/tui-history-analysis@dc914626bb2f` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: add bounded TUI history projection |
 
 ## Recent workflows
 
@@ -20,8 +20,8 @@ Generated from local Git and GitHub. Do not edit.
 | 34307633299 | `7d9191c99c0e` | push | Emulated aarch64 portability | in_progress:- |
 | 34307633287 | `7d9191c99c0e` | push | Repository quality | in_progress:- |
 | 34307633251 | `7d9191c99c0e` | push | Fault assurance | in_progress:- |
-| 34307633250 | `7d9191c99c0e` | push | Formal assurance | queued:- |
-| 34307633249 | `7d9191c99c0e` | push | Huawei MIT source headers | in_progress:- |
+| 34307633250 | `7d9191c99c0e` | push | Formal assurance | in_progress:- |
+| 34307633249 | `7d9191c99c0e` | push | Huawei MIT source headers | completed:success |
 | 34307633246 | `7d9191c99c0e` | push | Rust verification | in_progress:- |
 | 34307190858 | `980276dd2885` | pull_request | Repository quality | completed:success |
 | 34307190843 | `980276dd2885` | pull_request | Huawei MIT source headers | completed:success |
