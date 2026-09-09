@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T14:19:36+00:00",
+  "updated_at": "2026-09-09T14:19:53+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -291,3 +291,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T14:19:36+00:00: Recorded command exit 0; command argv SHA-256
   22dfe66eae5f6faa9f803b466a2e5ddbc3bdcdc7f21d3f2de97693d23e1a9867.
+
+- 2026-09-09T14:19:53+00:00: Recorded command exit 0; command argv SHA-256
+  2673e0871fbdff12307f8f462201785560c6d8ea1d1a91fa0cfbec060784802c.
