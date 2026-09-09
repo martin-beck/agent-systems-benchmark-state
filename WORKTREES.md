@@ -75,8 +75,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-mockagents-executable-qualification` | `test/mockagents-executable-qualification` | `3f1de4106adf` | 0 | behind 4, ahead 0 |
 | `agent-systems-benchmark-modern-terminal-rendering` | `feature/modern-terminal-rendering` | `fd1989a096a3` | 0 | behind 41, ahead 0 |
 | `agent-systems-benchmark-native-platform-lab` | `feature/native-platform-lab` | `b1669203308d` | 0 | behind 247, ahead 0 |
-| `agent-systems-benchmark-native-platforms` | `feature/native-platforms` | `b2e5aabd5584` | 16 | behind 0, ahead 17 |
-| changed files | - | - | - | `.github/workflows/fault-assurance.yml`, `.github/workflows/formal.yml`, `.github/workflows/native-platforms.yml`, `.github/workflows/verify.yml`, `README.md`, `crates/asb-agents/PROVIDER_PARITY.md`, `crates/asb-agents/src/goose.rs`, `crates/asb-workloads/README.md`, `docs/DEVELOPMENT.md`, `docs/NATIVE_AARCH64_POLICY.md`, `docs/PLAN.md`, `docs/PLATFORMS.md`, `docs/QUALITY.md`, `tests/platforms/test_emulated_aarch64.py`, `tools/quality/repository_policy.py`, `tools/quality/test_failure_paths.py` |
+| `agent-systems-benchmark-native-platforms` | `feature/native-platforms` | `6e5dbd619d27` | 0 | behind 0, ahead 19 |
 | `agent-systems-benchmark-native-x86-capacity` | `feature/native-x86-capacity` | `45604cd323c5` | 0 | behind 187, ahead 0 |
 | `agent-systems-benchmark-one-line-install` | `feature/one-line-local-install` | `bf9e9fe625da` | 0 | behind 25, ahead 0 |
 | `agent-systems-benchmark-opendesk-strict-replay-http-compatibility` | `feature/opendesk-strict-replay-http-compatibility` | `f26216bde125` | 0 | behind 227, ahead 0 |

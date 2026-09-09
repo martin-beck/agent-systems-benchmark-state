@@ -12,17 +12,17 @@
   "id": "AR-0702",
   "next_action": "Rebase PR #31, replace native ARM64 completion gates with the pinned QEMU AArch64 lane where applicable, document native ARM64 as optional future qualification, and rerun exact-head checks.",
   "observed_branch": "feature/native-platforms",
-  "observed_dirty": 16,
-  "observed_head": "b2e5aabd55848cc84611c3fdabb203a0d35f59fd",
+  "observed_dirty": 0,
+  "observed_head": "6e5dbd619d27259eebe99b33af6d1dba45a61908",
   "owner": "native-policy-20260909",
   "plan": "../plans/AR-0702.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify native x86_64 and required emulated AArch64 portability; track native ARM64 as optional future evidence.",
-  "task_revision": 316,
+  "task_revision": 318,
   "title": "Validate native Linux kernels and architectures",
-  "updated_at": "2026-09-09T11:09:28+00:00",
+  "updated_at": "2026-09-09T11:22:55+00:00",
   "worktree_key": "agent-systems-benchmark-native-platforms"
 }
 ---
