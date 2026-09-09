@@ -62,8 +62,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-huawei-mit-headers` | `fix/huawei-mit-license-headers` | `7add29f1d24c` | 0 | behind 56, ahead 0 |
 | `agent-systems-benchmark-interaction-aware-redaction` | `feature/interaction-aware-redaction` | `867861c95c19` | 0 | behind 159, ahead 0 |
 | `agent-systems-benchmark-kernel-diagnostics` | `feature/kernel-diagnostics` | `d11f81837374` | 0 | behind 36, ahead 0 |
-| `agent-systems-benchmark-modern-terminal-rendering` | `feature/modern-terminal-rendering` | `baaad766445e` | 2 | behind 0, ahead 2 |
-| changed files | - | - | - | `crates/asb-tui/src/main.rs`, `crates/asb-tui/src/terminal.rs` |
+| `agent-systems-benchmark-modern-terminal-rendering` | `feature/modern-terminal-rendering` | `fd1989a096a3` | 0 | behind 0, ahead 3 |
 | `agent-systems-benchmark-native-platform-lab` | `feature/native-platform-lab` | `b1669203308d` | 0 | behind 203, ahead 0 |
 | `agent-systems-benchmark-native-platforms` | `feature/native-platforms` | `bdaf9c108226` | 0 | behind 223, ahead 17 |
 | `agent-systems-benchmark-native-x86-capacity` | `feature/native-x86-capacity` | `45604cd323c5` | 0 | behind 143, ahead 0 |
