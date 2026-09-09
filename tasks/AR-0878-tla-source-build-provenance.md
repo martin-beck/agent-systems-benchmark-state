@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0878",
-  "next_action": "Request fresh independent immutable review of signed candidate 7ae562dbb15a686f3e1ef304de0fd5dfbeb0613b, tree ee763d09fba2119c88f3e6b30a22e8f8d3c570d3, parent 905607b8f57b1d3248c16a565443d39e5245af7c, base 096dc4f275c05ad81772f443b6f22dddfb92da3d. Do not publish or merge before review; hosted exact-head Kani remains required after publication authorization.",
+  "next_action": "Release AR-0878 done after final state reconcile, snapshot, and live doctor; exact-main product verification is complete.",
   "observed_branch": "feature/tla-source-build-provenance",
   "observed_dirty": 0,
   "observed_head": "7ae562dbb15a686f3e1ef304de0fd5dfbeb0613b",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 237,
+  "task_revision": 238,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T06:55:11+00:00",
+  "updated_at": "2026-09-09T06:56:03+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -812,3 +812,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T06:55:11+00:00: Recorded command exit 0; command argv SHA-256
   77ec3330c3064e403516c18ded40a46bedcc8b0f8b01cd701b35a209b0e2271f.
+
+- 2026-09-09T06:56:03+00:00: PR #105 merged. GitHub merge e4c2163f262b046a875f05cb7b37fac01402713f
+  failed repository policy solely because it lacked DCO; coordinator-authorized
+  tree/parent-identical SSH-signed+DCO replacement is 66659cc2ab74362d01e1134f5099b9f5b14fbc8b, tree
+  ee763d09fba2119c88f3e6b30a22e8f8d3c570d3, parents 096dc4f275c05ad81772f443b6f22dddfb92da3d and
+  7ae562dbb15a686f3e1ef304de0fd5dfbeb0613b. Authorized signed+DCO empty trigger
+  0fbec95d2154cfa3efd522a0a49e98d492b77a22 has identical tree and parent 66659cc. Exact-main hosted
+  runs all success: formal/Kani 34320597218, fault 34320597215, Rust 34320597235, quality
+  34320597223, headers 34320597248, emulated aarch64 34320597244. Local postmerge focused provenance
+  tests 4/4 and mutation sentinels 7/7 pass; exact main worktree is clean and remote main equals
+  0fbec95d.
