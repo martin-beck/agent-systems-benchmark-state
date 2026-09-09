@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-09T23:30:17+00:00",
+  "updated_at": "2026-09-09T23:33:12+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -180,3 +180,6 @@ classified.
   owns the descendant process group but does not create a new session; it was reverted before the
   candidate, while session identity remains captured and immutable. Linux proc evidence does not
   claim ASB reaps a zombie owned by another reaper.
+
+- 2026-09-09T23:33:12+00:00: Recorded command exit 0; command argv SHA-256
+  c309cb22f5024a888edba1b227bb1fd2fc47f53c4995fc2a1b54189d23684996.
