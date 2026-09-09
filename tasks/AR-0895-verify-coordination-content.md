@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Close the workflow path-filter gap that lets coordination-content pull requests skip strict state consistency and DCO checks.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Verify every coordination-content pull request",
-  "updated_at": "2026-09-09T10:08:34+00:00",
+  "updated_at": "2026-09-09T10:10:40+00:00",
   "worktree_key": "agent-systems-benchmark-state-verify-coordination-content"
 }
 ---
@@ -100,3 +100,6 @@ Ensure state-content pull requests cannot bypass exact-head schema, generated-vi
   remain unchanged and worktree is clean. Full prior 100-test/95%-coverage,
   vendor/header/Ruff/mypy/complexity gates remain valid; previous schema failure is resolved by
   current-base metadata repair. Ready for independent immutable review, not yet published.
+
+- 2026-09-09T10:10:40+00:00: Recorded command exit 1; command argv SHA-256
+  340d375011ee73126ebc257365445d77a52cf04480797eee68706e4e0f7ba865.
