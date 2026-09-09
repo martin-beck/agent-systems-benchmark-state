@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0877",
-  "next_action": "Audit authoritative TLA+ v1.8.0 release metadata and replace the current partial repin with bounded approved-host acquisition, exact offline cache verification, fail-closed mutation fixtures, and preserved TLC/Alloy proofs.",
+  "next_action": "Add deterministic local fake-transport acquisition tests covering metadata/redirect/status/timeout/truncation/concurrency/partial/cache mutations, strengthen redirect validation before body retrieval, then run ShellCheck and preserved TLC/Alloy proofs.",
   "observed_branch": "fix/formal-tla-artifact-availability",
   "observed_dirty": 4,
   "observed_head": "dca243ab7b8cbb0b2b49a568dec99c517e0719c2",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T01:25:24+00:00",
+  "updated_at": "2026-09-09T01:26:09+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -85,3 +85,19 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T01:25:24+00:00: Recorded command exit 0; command argv SHA-256
   67a1ac3216b08a8447f308a1f703911a2d34cfca400ab44b12f349632349210f.
+
+- 2026-09-09T01:26:09+00:00: Substantive acquisition implementation checkpoint on exact base
+  dca243ab with four owned dirty paths: formal/run_temporal_models.sh, formal/toolchains.toml,
+  formal/tests/toolchain_pins.rs, formal/README.md. Live authoritative release evidence changed
+  after the earlier partial repin: tag v1.8.0 still resolves to source b123b226, but current release
+  25926686 publishes tla2tools.jar asset 551679598 created 2026-09-09T00:59:49Z, 44892330?
+  Superseded typo: exact size is 4489230 bytes and SHA-256
+  13885c0971b5faf31c89b89b90784c2bf3e2939632aa1ab10499504627e47209. Implementation binds
+  release/tag/asset metadata, exact source ref, stable browser route, approved HTTPS final host set,
+  bounded retries/bytes/time, exclusive cache lock, create-new partials, atomic no-clobber
+  promotion, owner/mode/single-link checks, strict offline reuse, and cleanup. Real online acquire
+  and offline zero-network cache reuse pass; cache mode 400/link count 1/digest exact. Offline
+  missing, corrupt, symlink, and hardlink cases fail before a curl sentinel. bash -n, diff-check,
+  and formal toolchain-pin test pass. One earlier wrapper exit was operator-only PATH loss and
+  corrected with pinned cargo; no product failure. ShellCheck is unavailable locally and remains a
+  required hosted/final gate.
