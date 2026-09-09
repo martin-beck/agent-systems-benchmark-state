@@ -11,7 +11,7 @@
   "id": "AR-0878",
   "next_action": "Encode the closed source-build manifest and verifier using pinned normalized SHA-256 8c200a88d151c6c183c8dbc57a6b633d135e7a2b18242a3afbf243a9e4b68d3e, then complete all 31 vendored-JAR license receipt mappings and fail-closed mutation tests.",
   "observed_branch": "feature/tla-source-build-provenance",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "af9fb7dcaabc162b13d6ee1e77d8915b6d82df20",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0878.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T02:40:15+00:00",
+  "updated_at": "2026-09-09T02:45:34+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
