@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-09T21:21:10+00:00",
+  "updated_at": "2026-09-09T21:22:16+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -131,3 +131,6 @@ Implementation has not started. Read the linked plan before claiming.
   signed/DCO reviewed object remains bd6f450ab8777aeb7e055d71aedba8e4cfd375b3 with tree
   201112340e22d217189243f04f611e95eef02536. Exact-OID authorization is required because the
   instruction forbade use of a transposed identity.
+
+- 2026-09-09T21:22:16+00:00: Recorded command exit 0; command argv SHA-256
+  0ce6e8952e7679e3ea2d53a990325f0c10e50aa3e4ad043ee0d8b6a1c272e5ab.
