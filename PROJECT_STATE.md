@@ -22,7 +22,7 @@ Generated from local Git and GitHub. Do not edit.
 | 34323225738 | `624d4c050ab1` | push | Repository quality | completed:success |
 | 34323225687 | `624d4c050ab1` | push | Fault assurance | completed:success |
 | 34323225641 | `624d4c050ab1` | push | Huawei MIT source headers | completed:success |
-| 34323225632 | `624d4c050ab1` | push | Rust verification | in_progress:- |
+| 34323225632 | `624d4c050ab1` | push | Rust verification | completed:success |
 | 34322630990 | `c7d6da71c709` | pull_request | Rust verification | completed:success |
 | 34322630954 | `c7d6da71c709` | pull_request | Fault assurance | completed:success |
 | 34322630938 | `c7d6da71c709` | pull_request | Formal assurance | completed:success |
