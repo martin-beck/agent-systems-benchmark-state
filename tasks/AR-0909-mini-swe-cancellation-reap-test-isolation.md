@@ -2,7 +2,7 @@
 {
   "branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-10T01:39:18+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -12,15 +12,15 @@
   ],
   "id": "AR-0909",
   "next_action": "Reproduce the coverage-only descendant-reap failure and repair only its embedded mini-SWE test boundary.",
-  "owner": "",
+  "owner": "quality_20260906",
   "plan": "../plans/AR-0909.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-09T21:57:42+00:00",
+  "updated_at": "2026-09-09T22:39:18+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -41,3 +41,5 @@ classified.
   AR-0902 are durably done. No existing AR owns the exact PR #126 cargo-llvm-cov failure in
   mini_swe::tests::cancellation_reaps_owned_descendant_group. Promote as a focused unclaimed
   embedded-test repair; do not weaken production lifecycle semantics.
+
+- 2026-09-09T22:39:18+00:00: Claimed by quality_20260906.
