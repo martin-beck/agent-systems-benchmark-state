@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 4 |
+| **Open** | Dependency-ready and available to claim | 5 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 6 |
-| **Planned** | Defined work awaiting promotion or dependencies | 41 |
+| **Planned** | Defined work awaiting promotion or dependencies | 40 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 118 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -205,7 +205,7 @@ flowchart LR
         AR_0894["AR-0894 - Planned"]:::status_planned
         AR_0895["AR-0895 - Done"]:::status_done
         AR_0896["AR-0896 - Blocked"]:::status_blocked
-        AR_0897["AR-0897 - Planned"]:::status_planned
+        AR_0897["AR-0897 - Open"]:::status_open
         AR_0898["AR-0898 - Planned"]:::status_planned
         AR_0899["AR-0899 - Planned"]:::status_planned
     end
@@ -966,10 +966,11 @@ flowchart LR
 | P1 | [AR-0907](tasks/AR-0907-hosted-runner-evidence-classification.md): Classify hosted runner evidence without weakening native qualification | quality_20260906 | Separate rolling hosted portability checks from immutable native qualification evidence. | Monitor fresh PR #123 exact-head CI at f0b7b46; do not merge until all required checks pass. |
 | P1 | [AR-0908](tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | contracts_20260906 | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Monitor PR #125 exact-head CI; classify formal failure after logs become available and do not merge before coordinator approval. |
 
-### Open (4)
+### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-0897](tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | Unclaimed | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Restore green exact-main commit-policy evidence and prevent unsigned or non-DCO GitHub-generated merge commits. |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | Repair/rebase the fail-closed TLA provenance pin, then rerun PR #119 exact-head CI; do not merge. |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Unclaimed | Qualify pinned OpenJiuwen live execution. | Monitor PR 124 exact-head CI; inspect terminal failures without changing cceb76f. |
 | P1 | [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md): Repair formal TLA artifact availability | Unclaimed | Repair the formal workflow&#x27;s unavailable TLA+ artifact pin without weakening provenance or offline verification. | Hold local bridge 49ae13f and PR #120. AR-0906 is blocked on active AR-0907 hosted-evidence classification; after AR-0907 and AR-0906 integrate, rebase once, range-diff, rerun full gates, then exact-lease update PR #120. |
@@ -986,7 +987,7 @@ flowchart LR
 | P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Unclaimed | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun failed Repository quality workflow 34339927858 on unchanged main; if failure repeats, isolate and repair test-state ownership before any feature work. |
 | P1 | [AR-0906](tasks/AR-0906-portable-oci-build-image-identity.md): Verify formal OCI build identity portably | Unclaimed | Make deterministic formal source builds verify OCI image identity portably across Docker engines. | Combined PR #122 proves formal/emulated paths; hold all PRs while native Ubuntu runner-release mismatch is repaired or classified. |
 
-### Planned (41)
+### Planned (40)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -996,7 +997,6 @@ flowchart LR
 | P0 | [AR-0817](tasks/AR-0817-remote-tui-workflows.md): Build remote terminal frontend workflows | Unclaimed | Make secure two-machine benchmark operation clear and efficient in the terminal frontend. | Integrate polished connection, trust, remote launch, detach, reconnect, and management journeys into the TUI. |
 | P0 | [AR-0837](tasks/AR-0837-containerized-runner-boundary.md): Qualify containerized runner boundary | Unclaimed | Provide the containerized workflow boundary required for safe trusted runner claims. | Define and qualify a digest-pinned workflow container boundary separating operator, listener, and job principals without host mounts. |
 | P0 | [AR-0873](tasks/AR-0873-ci-workflow-captures.md): Generate CI workflow screenshots | Unclaimed | Produce reproducible screenshots and text equivalents from example workflows actually executed in CI. | Generate privacy-safe CLI and TUI workflow screenshots from real synthetic CI executions. |
-| P0 | [AR-0897](tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | Unclaimed | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Restore green exact-main commit-policy evidence and prevent unsigned or non-DCO GitHub-generated merge commits. |
 | P0 | [AR-0898](tasks/AR-0898-shellcheck-fail-closed.md): Make ShellCheck fail closed | Unclaimed | Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck. | Pin ShellCheck and prove actionlint cannot silently disable its delegated shell analysis. |
 | P0 | [AR-0899](tasks/AR-0899-gitleaks-revision-config-integrity.md): Align and harden Gitleaks execution | Unclaimed | Resolve GitHub issue 118 by making local and CI Gitleaks scans deterministic and config changes fail closed. | Unify Gitleaks revision scoping and protect its configuration with executable negative tests. |
 | P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Build the CSB-to-ASB signal inventory and native x86_64 causal A/B matrix; run applicable pinned QEMU AArch64 portability checks and document native ARM64 as optional future evidence. |
