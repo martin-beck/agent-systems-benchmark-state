@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0878",
-  "next_action": "Request a second controlled signed rebase of repaired candidate c157cedc744373ef75aba686c00e97ce61aa3bfc onto current origin/main 7d9191c99c0e55814845a8809aa22d7a0aefb9ae; two intervening AR-0819 TUI commits have zero path overlap. Preserve the exact license repair and rerun exact-range gates before immutable review.",
+  "next_action": "Resolve or explicitly waive the unavailable package-specific license/source provenance for jpf-shell.jar and the locally patched jpf-visual.jar before any rebase. Keep c157cedc unchanged; do not claim the current shared-SPDX receipt map is license-complete.",
   "observed_branch": "feature/tla-source-build-provenance",
   "observed_dirty": 0,
   "observed_head": "c157cedc744373ef75aba686c00e97ce61aa3bfc",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T03:39:31+00:00",
+  "updated_at": "2026-09-09T03:48:25+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -322,3 +322,17 @@ Implementation has not started. Read the linked plan before claiming.
   policy, ShellCheck, Gitleaks, cargo-deny/audit and clean-tree gates pass. Current origin/main
   advanced to 7d9191c via two TUI-only AR-0819 commits, with no overlap, so publication remains
   blocked on authorized rebase.
+
+- 2026-09-09T03:48:25+00:00: Independent license review remains blocked after a bounded
+  authoritative-history audit. Exact TLA+ commit 69396292697edceb0ac5d4696a772fe8e9f01652 binds
+  jpf.jar and jpf-classes.jar to upstream jpf-core commit 0916082fac91405e11ec7ce55f9068ce84d61aaa,
+  whose Apache-2.0 text is available. Exact TLA+ commit 3117a6daa561a9ff16acc167e1337c45adec7cb4
+  introduced jpf-shell.jar and jpf-visual.jar; its message identifies only
+  https://bitbucket.org/qiyitang71/jpf-visual and says issue 48 was manually fixed in
+  jpf-visual.jar, without an upstream source revision. The Bitbucket repository is no longer
+  anonymously retrievable; neither JAR contains LICENSE, NOTICE, POM, or coordinate metadata. Their
+  exact Git blob identities remain 5da542e93f1b135d74e19b1cf53683da3dccf106 and
+  2fa0b7fcb560be4936b9129a15279837a9501a60, but those prove bytes, not applicable terms/source
+  provenance. Therefore the required closed 31-JAR package-specific license applicability cannot
+  currently be proven. Candidate c157cedc remains clean and unchanged; its generic same-SPDX reuse
+  is not accepted evidence.
