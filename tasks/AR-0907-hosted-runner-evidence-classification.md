@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 122,
+  "task_revision": 123,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T19:46:52+00:00",
+  "updated_at": "2026-09-09T19:47:07+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -453,3 +453,6 @@ patch release has advanced.
   code. Classified as an environmental race/flaky harness outcome, not an AR-0907 product defect;
   will first rerun only the exact failed test, then resume the remaining full gates rather than
   blindly repeating prior successful checks.
+
+- 2026-09-09T19:47:07+00:00: Recorded command exit 0; command argv SHA-256
+  c81fd2ff3d7ce2849d5ef91408d0305f435369bc7a92b754c30af77002d6561d.
