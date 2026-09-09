@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Assess SWE-Perf, SWE-fficiency and CORE-Bench for correctness-preserving optimization and reproducibility.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Add performance and reproducibility workloads",
-  "updated_at": "2026-09-09T02:37:57+00:00",
+  "updated_at": "2026-09-09T02:38:20+00:00",
   "worktree_key": "agent-systems-benchmark-performance-workloads"
 }
 ---
@@ -233,3 +233,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T02:37:57+00:00: PR #96 exact head 0f303b3 has all required checks green, including
   emulated aarch64; beginning guarded signed integration.
+
+- 2026-09-09T02:38:20+00:00: Recorded command exit 0; command argv SHA-256
+  ad0edd193d0773a7f09b10f377e8b04edc3a574b013f4aa512cc9be4d4e5578e.
