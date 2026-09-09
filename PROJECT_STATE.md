@@ -17,10 +17,10 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 34338578728 | `004d87252b06` | push | Rust verification | in_progress:- |
-| 34338578635 | `004d87252b06` | push | Fault assurance | queued:- |
+| 34338578635 | `004d87252b06` | push | Fault assurance | in_progress:- |
 | 34338578631 | `004d87252b06` | push | Formal assurance | in_progress:- |
 | 34338578597 | `004d87252b06` | push | Huawei MIT source headers | completed:success |
-| 34338578572 | `004d87252b06` | push | Repository quality | in_progress:- |
+| 34338578572 | `004d87252b06` | push | Repository quality | completed:failure |
 | 34338578565 | `004d87252b06` | push | Emulated aarch64 portability | in_progress:- |
 | 34338066821 | `3f1de4106adf` | pull_request | Fault assurance | completed:success |
 | 34338066811 | `3f1de4106adf` | pull_request | Rust verification | completed:success |
