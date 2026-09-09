@@ -2,7 +2,7 @@
 {
   "branch": "feature/tui-history-analysis",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T02:50:47+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0104",
     "AR-0203",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/tui-history-analysis",
   "observed_dirty": 0,
   "observed_head": "dc914626bb2fbf57fc7df15e7d37873142850fe7",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0806.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-09T00:49:17+00:00",
+  "updated_at": "2026-09-09T02:51:18+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
@@ -318,3 +318,7 @@ Implementation has not started. Read the linked plan before claiming.
   exact-head jobs are still progressing, but the repeated terminal formal failure blocks
   merge/release regardless. Candidate remains clean and immutable; no formal/workflow mutation was
   made.
+
+- 2026-09-09T02:51:18+00:00: Recovered expired claim formerly owned by quality_20260906. Lease
+  expired at 2026-09-09T02:50:47Z and no matching quality_20260906 process is live; preserve
+  declared branch/worktree and return task for explicit re-claim.
