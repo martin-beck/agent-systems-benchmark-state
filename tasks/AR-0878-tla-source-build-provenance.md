@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 171,
+  "task_revision": 172,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T05:38:28+00:00",
+  "updated_at": "2026-09-09T05:39:07+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -589,3 +589,16 @@ Implementation has not started. Read the linked plan before claiming.
   8c200a88d151c6c183c8dbc57a6b633d135e7a2b18242a3afbf243a9e4b68d3e; workspace
   fmt/Clippy/tests/docs/release; locked formal; source-built TLC positive/stale negative and Alloy
   positive/mutants; mutation ubel
+
+- 2026-09-09T05:39:07+00:00: Correction to the immediately preceding truncated checkpoint: the two
+  external source receipts are exactly bound, and the fault gate was mutation sentinels 7/7 caught.
+  Remaining exact-tree evidence is green: lock-contention exit 75 and cancellation exit 130 with no
+  output/partial/lock residue; ShellCheck 0.9.0 on unchanged build and verifier script blobs;
+  focused llvm-cov executes 4/4 with zero instrumentable Rust regions because production is
+  shell/Python; repository policy over c157cedc..bcbdfe03; Ruff; actionlint; offline pedantic
+  zizmor; scoped Gitleaks with no leaks; cargo-deny and cargo-audit. Final immutable audit verifies
+  clean 11-path tree, diff-check, DCO and allowed SSH signatures for all three package commits.
+  Local Kani remains the previously documented incomplete-install boundary; hosted exact-head Kani
+  is required after publication authorization. Candidate for fresh review is
+  bcbdfe03e77d815467cb4341e0b9c1abef05f48bb, tree 2b52b379968d2e37344f42c5416e7020c548d138, parent
+  6e83e0893a0e64f2e529deae17147216eaf3cf17, package base c157cedc744373ef75aba686c00e97ce61aa3bfc.
