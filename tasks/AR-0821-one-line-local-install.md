@@ -10,16 +10,16 @@
     "AR-0820"
   ],
   "id": "AR-0821",
-  "next_action": "Implement an idempotent one-line bootstrap that verifies, installs, configures, starts the local runner, and opens asb-tui.",
+  "next_action": "Create the missing declared worktree from exact origin/main, then implement and test the guided installation workflow.",
   "owner": "codex-longrun-one-line-install-20260909",
   "plan": "../plans/AR-0821.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Turn a single documented command into a safe guided local ASB and TUI first run.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Add guided one-line local installation",
-  "updated_at": "2026-09-09T06:30:11+00:00",
+  "updated_at": "2026-09-09T06:30:27+00:00",
   "worktree_key": "agent-systems-benchmark-one-line-install"
 }
 ---
@@ -40,3 +40,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T06:30:11+00:00: Recorded command exit 1; command argv SHA-256
   78d7942e237f6cd1e3138a4ba81d7a545221768e49381e07ac9757d8363bdf9c.
+
+- 2026-09-09T06:30:27+00:00: First worktree observation failed: declared path
+  /srv/data/projects/agent-systems-benchmark-one-line-install was absent and no matching live
+  worktree was listed. No product mutation occurred; creating the declared isolated worktree is
+  required before implementation.
