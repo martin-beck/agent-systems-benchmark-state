@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-09T22:39:18+00:00",
+  "updated_at": "2026-09-09T22:39:46+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -43,3 +43,6 @@ classified.
   embedded-test repair; do not weaken production lifecycle semantics.
 
 - 2026-09-09T22:39:18+00:00: Claimed by quality_20260906.
+
+- 2026-09-09T22:39:46+00:00: Recorded command exit 0; command argv SHA-256
+  321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
