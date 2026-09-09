@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T18:00:03+00:00",
+  "updated_at": "2026-09-09T18:00:20+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -264,3 +264,6 @@ patch release has advanced.
   was product-relevant and fixed before green reruns. Combined range remains the same seven AR paths
   on exact base b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b; this repair changes only validator and
   focused test.
+
+- 2026-09-09T18:00:20+00:00: Recorded command exit 0; command argv SHA-256
+  7bc40ecdeebc03e4792d76d446a9eda7123dac3e8d460b4d107b14178dec8494.
