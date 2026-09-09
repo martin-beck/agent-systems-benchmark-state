@@ -115,7 +115,9 @@ must not block this AR or its dependents.
   reconciliation. The ledger enforces a private owner-only root, no-follow regular files,
   nonblocking exclusive lock, bounded canonical JSON, descriptor/path identity checks, fsync-backed
   atomic replacement, and fail-closed crash residue. Twelve focused lifecycle and CLI tests cover
-  deterministic acquire/renew/release, stale/conflicting ownership, expiry stateAdapted when
-  overdue_NONE Focused unittest 12/12, Ruff format/lint, strict mypy, and diff-check pass. Worktree
+  deterministic acquire/renew/release, stale/conflicting ownership, expiry, uncertain recovery,
+  corruption, symlink and TOCTOU replacement, lock contention, root modes, crash residue, canonical
+  bounds, and privacy-safe CLI failure. Focused unittest 12/12, Ruff format/lint, strict mypy, and
+  diff-check pass. Worktree
   remains dirty only in new tools/capacity and tests/capacity paths; AR-0702 and runner paths are
   untouched, and no private host identifier appears.
