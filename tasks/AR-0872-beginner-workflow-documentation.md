@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish linked beginner workflows for setup, multi-agent runs, progress, comparison, recording, and replay with and without the TUI.",
-  "task_revision": 93,
+  "task_revision": 94,
   "title": "Publish beginner workflow documentation",
-  "updated_at": "2026-09-09T01:56:58+00:00",
+  "updated_at": "2026-09-09T01:57:07+00:00",
   "worktree_key": "agent-systems-benchmark-beginner-workflows"
 }
 ---
@@ -273,3 +273,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T01:56:58+00:00: Recorded command exit 0; command argv SHA-256
   b9e23c52ecdb0825c9fdee3fda1e25b2afaefd4f37945fbddf220d8a91d963c0.
+
+- 2026-09-09T01:57:07+00:00: Recorded command exit 0; command argv SHA-256
+  720ec02e31e3b9ba1f403d36625a0856ef0bc69f347bc327bc76fd895a3ac7b4.
