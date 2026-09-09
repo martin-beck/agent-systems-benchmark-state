@@ -9,15 +9,18 @@
   ],
   "id": "AR-0890",
   "next_action": "Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests.",
+  "observed_branch": "ci/deterministic-llm-double",
+  "observed_dirty": 0,
+  "observed_head": "adac76558387cb0bdd09e2ba6cbfe49b9bc205be",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0890.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the independently selected deterministic protocol double as a pinned isolated CI test dependency.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Integrate a deterministic LLM double in CI",
-  "updated_at": "2026-09-09T09:44:43+00:00",
+  "updated_at": "2026-09-09T09:44:49+00:00",
   "worktree_key": "agent-systems-benchmark-deterministic-llm-double-ci"
 }
 ---

@@ -35,6 +35,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-credential-reference-boundary` | `feature/credential-reference-boundary` | `5d62546b5d56` | 0 | behind 111, ahead 0 |
 | `agent-systems-benchmark-csb-execution-assurance` | `feature/csb-execution-assurance` | `39e306124b56` | 0 | behind 243, ahead 0 |
 | `agent-systems-benchmark-csb-integration` | `feature/csb-integration` | `524db90c8933` | 0 | behind 156, ahead 0 |
+| `agent-systems-benchmark-deterministic-llm-double-ci` | `ci/deterministic-llm-double` | `adac76558387` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-development-host-runner-capacity` | `feature/development-host-runner-capacity` | `0d9b363538d2` | 0 | behind 254, ahead 0 |
 | `agent-systems-benchmark-development-host-workflow-routing` | `feature/development-host-workflow-routing` | `f55f98cc79b7` | 0 | behind 252, ahead 0 |
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 352, ahead 0 |
