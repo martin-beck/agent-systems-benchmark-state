@@ -9,17 +9,17 @@
   "id": "AR-0859",
   "next_action": "Run and review the three-path loopback qualification; keep support fail closed until all checks pass.",
   "observed_branch": "feature/openjiuwen-live",
-  "observed_dirty": 3,
-  "observed_head": "2a85872285e6de374e7ea48e3b062e4134bec49e",
+  "observed_dirty": 0,
+  "observed_head": "bf29c154cb59d332fd098e4ae64c976dc41e1416",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0859.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T10:20:24+00:00",
+  "updated_at": "2026-09-09T10:20:48+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
