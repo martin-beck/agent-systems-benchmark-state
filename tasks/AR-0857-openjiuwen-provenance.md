@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-provenance",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-09T04:48:14+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -15,15 +15,15 @@
   ],
   "id": "AR-0857",
   "next_action": "Pin official source, package, dependency closure, license, executable digest, protocol mode, and supported platform before any adapter claim.",
-  "owner": "",
+  "owner": "replay_20260909",
   "plan": "../plans/AR-0857.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Pin OpenJiuwen source, package, and license provenance.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Pin OpenJiuwen source, package, and license provenance",
-  "updated_at": "2026-09-09T02:48:11+00:00",
+  "updated_at": "2026-09-09T02:48:14+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-provenance"
 }
 ---
@@ -35,3 +35,5 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-09T02:48:11+00:00: All eight dependencies are done; promote OpenJiuwen provenance as the
   next highest-priority dependency-ready implementation track.
+
+- 2026-09-09T02:48:14+00:00: Claimed by replay_20260909.
