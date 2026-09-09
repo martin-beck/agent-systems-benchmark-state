@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T03:57:53+00:00",
+  "updated_at": "2026-09-09T04:05:02+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -363,3 +363,6 @@ Implementation has not started. Read the linked plan before claiming.
   experiment's exit 1 was operator-only Docker permission; corrected sudo -n Docker passed. This
   proves the opaque JPF artifacts are source-tree inventory, not build inputs, and supports an
   honest 14-input license closure rather than a false 31-input claim.
+
+- 2026-09-09T04:05:02+00:00: Recorded command exit 2; command argv SHA-256
+  5279f62b2a4f75953378efdc0d20dadcae713ce5381b07fb73f36e6c44898191.
