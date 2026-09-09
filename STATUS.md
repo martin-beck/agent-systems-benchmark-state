@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**173 ARs tracked** across 6 active status categories.
+**176 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 3 |
 | **Open** | Dependency-ready and available to claim | 5 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 6 |
-| **Planned** | Defined work awaiting promotion or dependencies | 40 |
+| **Planned** | Defined work awaiting promotion or dependencies | 43 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 118 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -231,6 +231,9 @@ flowchart LR
         AR_1006["AR-1006 - Planned"]:::status_planned
         AR_1007["AR-1007 - Done"]:::status_done
         AR_1008["AR-1008 - Done"]:::status_done
+        AR_1010["AR-1010 - Planned"]:::status_planned
+        AR_1011["AR-1011 - Planned"]:::status_planned
+        AR_1012["AR-1012 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -612,6 +615,7 @@ flowchart LR
     AR_0803 --> AR_0813
     AR_0803 --> AR_0819
     AR_0803 --> AR_0821
+    AR_0803 --> AR_1010
     AR_0804 --> AR_0805
     AR_0804 --> AR_0807
     AR_0804 --> AR_0809
@@ -621,6 +625,7 @@ flowchart LR
     AR_0804 --> AR_0820
     AR_0804 --> AR_0821
     AR_0804 --> AR_0870
+    AR_0804 --> AR_1010
     AR_0805 --> AR_0806
     AR_0805 --> AR_0807
     AR_0805 --> AR_0809
@@ -629,15 +634,19 @@ flowchart LR
     AR_0805 --> AR_0817
     AR_0805 --> AR_0821
     AR_0805 --> AR_0870
+    AR_0805 --> AR_1010
     AR_0806 --> AR_0807
     AR_0806 --> AR_0809
     AR_0806 --> AR_0812
     AR_0806 --> AR_0817
     AR_0806 --> AR_0875
+    AR_0806 --> AR_1010
     AR_0807 --> AR_0809
     AR_0807 --> AR_0823
     AR_0807 --> AR_0873
     AR_0807 --> AR_0903
+    AR_0807 --> AR_1011
+    AR_0807 --> AR_1012
     AR_0808 --> AR_0810
     AR_0808 --> AR_0811
     AR_0809 --> AR_0810
@@ -721,9 +730,11 @@ flowchart LR
     AR_0870 --> AR_0871
     AR_0870 --> AR_0872
     AR_0870 --> AR_0894
+    AR_0870 --> AR_1011
     AR_0871 --> AR_0872
     AR_0871 --> AR_0879
     AR_0871 --> AR_0893
+    AR_0871 --> AR_1011
     AR_0872 --> AR_0808
     AR_0872 --> AR_0809
     AR_0872 --> AR_0873
@@ -732,6 +743,7 @@ flowchart LR
     AR_0873 --> AR_0809
     AR_0873 --> AR_0874
     AR_0873 --> AR_0894
+    AR_0873 --> AR_1012
     AR_0874 --> AR_0808
     AR_0874 --> AR_0809
     AR_0875 --> AR_0908
@@ -776,6 +788,9 @@ flowchart LR
     AR_1007 --> AR_0405
     AR_1007 --> AR_0406
     AR_1008 --> AR_0898
+    AR_1010 --> AR_1011
+    AR_1010 --> AR_1012
+    AR_1011 --> AR_1012
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -864,11 +879,11 @@ flowchart LR
 | [AR-0707](tasks/AR-0707-emulated-aarch64-portability.md) | [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0701](tasks/AR-0701-platform-manifests.md) | None |
 | [AR-0801](tasks/AR-0801-terminal-interface.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md) | [AR-0802](tasks/AR-0802-executable-guides.md), [AR-0803](tasks/AR-0803-frontend-control-api.md), [AR-0808](tasks/AR-0808-core-workflow-guides.md), [AR-0820](tasks/AR-0820-verifiable-install-artifacts.md), [AR-0840](tasks/AR-0840-frontend-protocol-contract.md), [AR-0842](tasks/AR-0842-frontend-run-lifecycle.md), [AR-0847](tasks/AR-0847-frontend-control-api-repair.md), [AR-0849](tasks/AR-0849-ar0801-documentation-repair.md), [AR-0869](tasks/AR-0869-cli-multi-agent-provider-selection.md) |
 | [AR-0802](tasks/AR-0802-executable-guides.md) | [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0505](tasks/AR-0505-agent-replay-conformance.md), [AR-0801](tasks/AR-0801-terminal-interface.md) | [AR-0808](tasks/AR-0808-core-workflow-guides.md), [AR-0809](tasks/AR-0809-frontend-workflow-guides.md), [AR-0872](tasks/AR-0872-beginner-workflow-documentation.md), [AR-0903](tasks/AR-0903-release-qualification.md) |
-| [AR-0803](tasks/AR-0803-frontend-control-api.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0801](tasks/AR-0801-terminal-interface.md) | [AR-0804](tasks/AR-0804-tui-settings-wizard.md), [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-0813](tasks/AR-0813-remote-control-transport.md), [AR-0819](tasks/AR-0819-ssh-remote-bootstrap.md), [AR-0821](tasks/AR-0821-one-line-local-install.md) |
-| [AR-0804](tasks/AR-0804-tui-settings-wizard.md) | [AR-0313](tasks/AR-0313-all-agents-provider.md), [AR-0314](tasks/AR-0314-recording-source-choice.md), [AR-0803](tasks/AR-0803-frontend-control-api.md) | [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0809](tasks/AR-0809-frontend-workflow-guides.md), [AR-0812](tasks/AR-0812-modern-terminal-rendering.md), [AR-0817](tasks/AR-0817-remote-tui-workflows.md), [AR-0819](tasks/AR-0819-ssh-remote-bootstrap.md), [AR-0820](tasks/AR-0820-verifiable-install-artifacts.md), [AR-0821](tasks/AR-0821-one-line-local-install.md), [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md) |
-| [AR-0805](tasks/AR-0805-tui-run-control.md) | [AR-0104](tasks/AR-0104-durable-results.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0803](tasks/AR-0803-frontend-control-api.md), [AR-0804](tasks/AR-0804-tui-settings-wizard.md) | [AR-0806](tasks/AR-0806-tui-history-analysis.md), [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0809](tasks/AR-0809-frontend-workflow-guides.md), [AR-0812](tasks/AR-0812-modern-terminal-rendering.md), [AR-0815](tasks/AR-0815-remote-run-lifecycle.md), [AR-0817](tasks/AR-0817-remote-tui-workflows.md), [AR-0821](tasks/AR-0821-one-line-local-install.md), [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md) |
-| [AR-0806](tasks/AR-0806-tui-history-analysis.md) | [AR-0104](tasks/AR-0104-durable-results.md), [AR-0203](tasks/AR-0203-statistical-analysis.md), [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-1001](tasks/AR-1001-experiment-comparability.md) | [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0809](tasks/AR-0809-frontend-workflow-guides.md), [AR-0812](tasks/AR-0812-modern-terminal-rendering.md), [AR-0817](tasks/AR-0817-remote-tui-workflows.md), [AR-0875](tasks/AR-0875-control-history-analysis-contract.md) |
-| [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md) | [AR-0702](tasks/AR-0702-native-platforms.md), [AR-0804](tasks/AR-0804-tui-settings-wizard.md), [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-0806](tasks/AR-0806-tui-history-analysis.md), [AR-0812](tasks/AR-0812-modern-terminal-rendering.md) | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md), [AR-0823](tasks/AR-0823-installation-qualification.md), [AR-0873](tasks/AR-0873-ci-workflow-captures.md), [AR-0903](tasks/AR-0903-release-qualification.md) |
+| [AR-0803](tasks/AR-0803-frontend-control-api.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0801](tasks/AR-0801-terminal-interface.md) | [AR-0804](tasks/AR-0804-tui-settings-wizard.md), [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-0813](tasks/AR-0813-remote-control-transport.md), [AR-0819](tasks/AR-0819-ssh-remote-bootstrap.md), [AR-0821](tasks/AR-0821-one-line-local-install.md), [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md) |
+| [AR-0804](tasks/AR-0804-tui-settings-wizard.md) | [AR-0313](tasks/AR-0313-all-agents-provider.md), [AR-0314](tasks/AR-0314-recording-source-choice.md), [AR-0803](tasks/AR-0803-frontend-control-api.md) | [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0809](tasks/AR-0809-frontend-workflow-guides.md), [AR-0812](tasks/AR-0812-modern-terminal-rendering.md), [AR-0817](tasks/AR-0817-remote-tui-workflows.md), [AR-0819](tasks/AR-0819-ssh-remote-bootstrap.md), [AR-0820](tasks/AR-0820-verifiable-install-artifacts.md), [AR-0821](tasks/AR-0821-one-line-local-install.md), [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md) |
+| [AR-0805](tasks/AR-0805-tui-run-control.md) | [AR-0104](tasks/AR-0104-durable-results.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0803](tasks/AR-0803-frontend-control-api.md), [AR-0804](tasks/AR-0804-tui-settings-wizard.md) | [AR-0806](tasks/AR-0806-tui-history-analysis.md), [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0809](tasks/AR-0809-frontend-workflow-guides.md), [AR-0812](tasks/AR-0812-modern-terminal-rendering.md), [AR-0815](tasks/AR-0815-remote-run-lifecycle.md), [AR-0817](tasks/AR-0817-remote-tui-workflows.md), [AR-0821](tasks/AR-0821-one-line-local-install.md), [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md) |
+| [AR-0806](tasks/AR-0806-tui-history-analysis.md) | [AR-0104](tasks/AR-0104-durable-results.md), [AR-0203](tasks/AR-0203-statistical-analysis.md), [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-1001](tasks/AR-1001-experiment-comparability.md) | [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0809](tasks/AR-0809-frontend-workflow-guides.md), [AR-0812](tasks/AR-0812-modern-terminal-rendering.md), [AR-0817](tasks/AR-0817-remote-tui-workflows.md), [AR-0875](tasks/AR-0875-control-history-analysis-contract.md), [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md) |
+| [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md) | [AR-0702](tasks/AR-0702-native-platforms.md), [AR-0804](tasks/AR-0804-tui-settings-wizard.md), [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-0806](tasks/AR-0806-tui-history-analysis.md), [AR-0812](tasks/AR-0812-modern-terminal-rendering.md) | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md), [AR-0823](tasks/AR-0823-installation-qualification.md), [AR-0873](tasks/AR-0873-ci-workflow-captures.md), [AR-0903](tasks/AR-0903-release-qualification.md), [AR-1011](tasks/AR-1011-tui-ux-quality.md), [AR-1012](tasks/AR-1012-tui-quality-assurance.md) |
 | [AR-0808](tasks/AR-0808-core-workflow-guides.md) | [AR-0314](tasks/AR-0314-recording-source-choice.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0505](tasks/AR-0505-agent-replay-conformance.md), [AR-0801](tasks/AR-0801-terminal-interface.md), [AR-0802](tasks/AR-0802-executable-guides.md), [AR-0821](tasks/AR-0821-one-line-local-install.md), [AR-0822](tasks/AR-0822-install-upgrade-rollback.md), [AR-0872](tasks/AR-0872-beginner-workflow-documentation.md), [AR-0873](tasks/AR-0873-ci-workflow-captures.md), [AR-0874](tasks/AR-0874-automatic-workflow-refresh.md) | [AR-0810](tasks/AR-0810-github-pages-documentation.md), [AR-0811](tasks/AR-0811-documentation-qualification.md) |
 | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md) | [AR-0802](tasks/AR-0802-executable-guides.md), [AR-0804](tasks/AR-0804-tui-settings-wizard.md), [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-0806](tasks/AR-0806-tui-history-analysis.md), [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0817](tasks/AR-0817-remote-tui-workflows.md), [AR-0819](tasks/AR-0819-ssh-remote-bootstrap.md), [AR-0821](tasks/AR-0821-one-line-local-install.md), [AR-0822](tasks/AR-0822-install-upgrade-rollback.md), [AR-0872](tasks/AR-0872-beginner-workflow-documentation.md), [AR-0873](tasks/AR-0873-ci-workflow-captures.md), [AR-0874](tasks/AR-0874-automatic-workflow-refresh.md) | [AR-0810](tasks/AR-0810-github-pages-documentation.md), [AR-0811](tasks/AR-0811-documentation-qualification.md) |
 | [AR-0810](tasks/AR-0810-github-pages-documentation.md) | [AR-0808](tasks/AR-0808-core-workflow-guides.md), [AR-0809](tasks/AR-0809-frontend-workflow-guides.md) | [AR-0811](tasks/AR-0811-documentation-qualification.md) |
@@ -923,10 +938,10 @@ flowchart LR
 | [AR-0867](tasks/AR-0867-workbuddy-parity.md) | [AR-0866](tasks/AR-0866-workbuddy-replay.md) | [AR-0868](tasks/AR-0868-workbuddy-qualification.md) |
 | [AR-0868](tasks/AR-0868-workbuddy-qualification.md) | [AR-0867](tasks/AR-0867-workbuddy-parity.md) | [AR-0856](tasks/AR-0856-agent-openjiuwen-workbuddy.md) |
 | [AR-0869](tasks/AR-0869-cli-multi-agent-provider-selection.md) | [AR-0313](tasks/AR-0313-all-agents-provider.md), [AR-0318](tasks/AR-0318-credential-reference-boundary.md), [AR-0320](tasks/AR-0320-provider-credential-integration.md), [AR-0801](tasks/AR-0801-terminal-interface.md) | [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0871](tasks/AR-0871-record-replay-user-workflows.md), [AR-0872](tasks/AR-0872-beginner-workflow-documentation.md), [AR-0876](tasks/AR-0876-provider-aware-agent-launch.md), [AR-0893](tasks/AR-0893-cli-local-llm-setup.md) |
-| [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md) | [AR-0804](tasks/AR-0804-tui-settings-wizard.md), [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-0844](tasks/AR-0844-frontend-api-integration.md), [AR-0869](tasks/AR-0869-cli-multi-agent-provider-selection.md) | [AR-0871](tasks/AR-0871-record-replay-user-workflows.md), [AR-0872](tasks/AR-0872-beginner-workflow-documentation.md), [AR-0894](tasks/AR-0894-tui-local-llm-parity.md) |
-| [AR-0871](tasks/AR-0871-record-replay-user-workflows.md) | [AR-0314](tasks/AR-0314-recording-source-choice.md), [AR-0502](tasks/AR-0502-replay-cassettes.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0505](tasks/AR-0505-agent-replay-conformance.md), [AR-0869](tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md) | [AR-0872](tasks/AR-0872-beginner-workflow-documentation.md), [AR-0879](tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0893](tasks/AR-0893-cli-local-llm-setup.md) |
+| [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md) | [AR-0804](tasks/AR-0804-tui-settings-wizard.md), [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-0844](tasks/AR-0844-frontend-api-integration.md), [AR-0869](tasks/AR-0869-cli-multi-agent-provider-selection.md) | [AR-0871](tasks/AR-0871-record-replay-user-workflows.md), [AR-0872](tasks/AR-0872-beginner-workflow-documentation.md), [AR-0894](tasks/AR-0894-tui-local-llm-parity.md), [AR-1011](tasks/AR-1011-tui-ux-quality.md) |
+| [AR-0871](tasks/AR-0871-record-replay-user-workflows.md) | [AR-0314](tasks/AR-0314-recording-source-choice.md), [AR-0502](tasks/AR-0502-replay-cassettes.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0505](tasks/AR-0505-agent-replay-conformance.md), [AR-0869](tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md) | [AR-0872](tasks/AR-0872-beginner-workflow-documentation.md), [AR-0879](tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0893](tasks/AR-0893-cli-local-llm-setup.md), [AR-1011](tasks/AR-1011-tui-ux-quality.md) |
 | [AR-0872](tasks/AR-0872-beginner-workflow-documentation.md) | [AR-0802](tasks/AR-0802-executable-guides.md), [AR-0869](tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0871](tasks/AR-0871-record-replay-user-workflows.md) | [AR-0808](tasks/AR-0808-core-workflow-guides.md), [AR-0809](tasks/AR-0809-frontend-workflow-guides.md), [AR-0873](tasks/AR-0873-ci-workflow-captures.md), [AR-0893](tasks/AR-0893-cli-local-llm-setup.md) |
-| [AR-0873](tasks/AR-0873-ci-workflow-captures.md) | [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0872](tasks/AR-0872-beginner-workflow-documentation.md) | [AR-0808](tasks/AR-0808-core-workflow-guides.md), [AR-0809](tasks/AR-0809-frontend-workflow-guides.md), [AR-0874](tasks/AR-0874-automatic-workflow-refresh.md), [AR-0894](tasks/AR-0894-tui-local-llm-parity.md) |
+| [AR-0873](tasks/AR-0873-ci-workflow-captures.md) | [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0872](tasks/AR-0872-beginner-workflow-documentation.md) | [AR-0808](tasks/AR-0808-core-workflow-guides.md), [AR-0809](tasks/AR-0809-frontend-workflow-guides.md), [AR-0874](tasks/AR-0874-automatic-workflow-refresh.md), [AR-0894](tasks/AR-0894-tui-local-llm-parity.md), [AR-1012](tasks/AR-1012-tui-quality-assurance.md) |
 | [AR-0874](tasks/AR-0874-automatic-workflow-refresh.md) | [AR-0873](tasks/AR-0873-ci-workflow-captures.md) | [AR-0808](tasks/AR-0808-core-workflow-guides.md), [AR-0809](tasks/AR-0809-frontend-workflow-guides.md) |
 | [AR-0875](tasks/AR-0875-control-history-analysis-contract.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0806](tasks/AR-0806-tui-history-analysis.md), [AR-1001](tasks/AR-1001-experiment-comparability.md) | [AR-0908](tasks/AR-0908-control-state-lock-test-isolation.md) |
 | [AR-0876](tasks/AR-0876-provider-aware-agent-launch.md) | [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0313](tasks/AR-0313-all-agents-provider.md), [AR-0316](tasks/AR-0316-agent-runtime-bundles.md), [AR-0317](tasks/AR-0317-runtime-bundle-manifest.md), [AR-0318](tasks/AR-0318-credential-reference-boundary.md), [AR-0319](tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](tasks/AR-0320-provider-credential-integration.md), [AR-0869](tasks/AR-0869-cli-multi-agent-provider-selection.md) | None |
@@ -963,6 +978,9 @@ flowchart LR
 | [AR-1006](tasks/AR-1006-distributed-workers.md) | [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0702](tasks/AR-0702-native-platforms.md), [AR-1001](tasks/AR-1001-experiment-comparability.md) | None |
 | [AR-1007](tasks/AR-1007-benchmark-validity.md) | [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0701](tasks/AR-0701-platform-manifests.md), [AR-1001](tasks/AR-1001-experiment-comparability.md) | [AR-0405](tasks/AR-0405-performance-workloads.md), [AR-0406](tasks/AR-0406-evolving-workloads.md) |
 | [AR-1008](tasks/AR-1008.md) | None | [AR-0898](tasks/AR-0898-shellcheck-fail-closed.md) |
+| [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md) | [AR-0803](tasks/AR-0803-frontend-control-api.md), [AR-0804](tasks/AR-0804-tui-settings-wizard.md), [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-0806](tasks/AR-0806-tui-history-analysis.md) | [AR-1011](tasks/AR-1011-tui-ux-quality.md), [AR-1012](tasks/AR-1012-tui-quality-assurance.md) |
+| [AR-1011](tasks/AR-1011-tui-ux-quality.md) | [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0871](tasks/AR-0871-record-replay-user-workflows.md), [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md) | [AR-1012](tasks/AR-1012-tui-quality-assurance.md) |
+| [AR-1012](tasks/AR-1012-tui-quality-assurance.md) | [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0873](tasks/AR-0873-ci-workflow-captures.md), [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1011](tasks/AR-1011-tui-ux-quality.md) | None |
 
 ## Complete AR inventory
 
@@ -995,7 +1013,7 @@ flowchart LR
 | P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Unclaimed | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun failed Repository quality workflow 34339927858 on unchanged main; if failure repeats, isolate and repair test-state ownership before any feature work. |
 | P1 | [AR-0906](tasks/AR-0906-portable-oci-build-image-identity.md): Verify formal OCI build identity portably | Unclaimed | Make deterministic formal source builds verify OCI image identity portably across Docker engines. | Combined PR #122 proves formal/emulated paths; hold all PRs while native Ubuntu runner-release mismatch is repaired or classified. |
 
-### Planned (40)
+### Planned (43)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1007,6 +1025,7 @@ flowchart LR
 | P0 | [AR-0873](tasks/AR-0873-ci-workflow-captures.md): Generate CI workflow screenshots | Unclaimed | Produce reproducible screenshots and text equivalents from example workflows actually executed in CI. | Generate privacy-safe CLI and TUI workflow screenshots from real synthetic CI executions. |
 | P0 | [AR-0898](tasks/AR-0898-shellcheck-fail-closed.md): Make ShellCheck fail closed | Unclaimed | Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck. | Pin ShellCheck and prove actionlint cannot silently disable its delegated shell analysis. |
 | P0 | [AR-0899](tasks/AR-0899-gitleaks-revision-config-integrity.md): Align and harden Gitleaks execution | Unclaimed | Resolve GitHub issue 118 by making local and CI Gitleaks scans deterministic and config changes fail closed. | Unify Gitleaks revision scoping and protect its configuration with executable negative tests. |
+| P0 | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md): Adopt Ratatui/Crossterm TUI foundation | Unclaimed | Adopt Ratatui and Crossterm as the supported professional TUI foundation. | Adopt pinned Ratatui and Crossterm dependencies in an isolated TUI worktree, then implement the capability-aware application shell and event loop. |
 | P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Build the CSB-to-ASB signal inventory and native x86_64 causal A/B matrix; run applicable pinned QEMU AArch64 portability checks and document native ARM64 as optional future evidence. |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Write and execute end-to-end workflows for the core CLI and automation interfaces. |
 | P1 | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Write and validate task-oriented workflows for the standalone terminal frontend. |
@@ -1034,6 +1053,8 @@ flowchart LR
 | P1 | [AR-0892](tasks/AR-0892-llm-mode-comparative-evidence.md): Compare LLM test and inference evidence modes | Unclaimed | Quantify what each LLM execution mode proves without pooling unlike evidence or hiding harness saturation. | Execute balanced synthetic, strict replay, local inference, and remote live comparisons and publish bounded claims and capacity evidence. |
 | P1 | [AR-0893](tasks/AR-0893-cli-local-llm-setup.md): Document CLI setup for LLM doubles and local inference | Unclaimed | Provide executable beginner-safe CLI workflows for negotiated LLM modes without claiming unfinished TUI parity. | Add concise CLI setup, preflight, run, inspect, compare, and teardown workflows only for exact supported mock and local profiles. |
 | P1 | [AR-0894](tasks/AR-0894-tui-local-llm-parity.md): Add TUI parity for supported LLM modes | Unclaimed | Add tested TUI parity for supported LLM setup and diagnostics only after CLI and existing TUI evidence are stable. | After CLI and existing TUI CI-evidence dependencies complete, implement discoverable TUI parity for negotiated supported profiles and modes. |
+| P1 | [AR-1011](tasks/AR-1011-tui-ux-quality.md): Deliver TUI UX quality features | Unclaimed | Deliver an easy, discoverable, keyboard-first TUI experience for setup and benchmark analysis. | Implement and test the keyboard-first search, navigation, help, accessibility, and progress UX on the Ratatui foundation. |
+| P1 | [AR-1012](tasks/AR-1012-tui-quality-assurance.md): Qualify TUI quality and isolation | Unclaimed | Qualify TUI reliability, accessibility, performance isolation, and reproducible CI captures. | Qualify the complete Ratatui/Crossterm TUI across terminals, failure paths, accessibility checks, and benchmark-overhead budgets. |
 | P2 | [AR-0602](tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Unclaimed | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit CSB monitoring using native x86_64 oracles and required pinned QEMU AArch64 portable mapping/lifecycle checks; keep native ARM64 counters and performance as optional future evidence. |
 | P2 | [AR-0705](tasks/AR-0705-native-debian-capacity.md): Provide native Debian capacity | Unclaimed | Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 Debian and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-0706](tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
