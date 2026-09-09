@@ -8,7 +8,7 @@
     "AR-0889"
   ],
   "id": "AR-0896",
-  "next_action": "Publish a signed+DCO follow-up commit atop 004d87252b065679d80ca9674356b47146754528, rerun exact-head and post-merge gates, then release only after all green.",
+  "next_action": "Wait for PR #116 exact-head checks; merge only if all pass, then rerun exact-main post-merge workflows.",
   "observed_branch": "test/mockagents-executable-qualification",
   "observed_dirty": 0,
   "observed_head": "3f1de4106adf9ad6c34759638d70e9001709ab0a",
@@ -17,10 +17,10 @@
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Post-merge Repository quality failed on merge DCO; repair is preempting feature work.",
-  "task_revision": 20,
+  "summary": "Corrected DCO trailer identity on repair PR #116; exact-head checks rerunning.",
+  "task_revision": 21,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-09T10:11:47+00:00",
+  "updated_at": "2026-09-09T10:12:35+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -79,3 +79,7 @@ synthetic fixture for black-box executable evidence.
 
 - 2026-09-09T10:11:47+00:00: Recorded command exit 0; command argv SHA-256
   fd9b2d02f542823387ed1643ed1121cba827b4dbdb29267a2708d10bb2797cd7.
+
+- 2026-09-09T10:12:35+00:00: Policy failure 34338751615 showed the Signed-off-by email must match
+  configured commit identity martin.beck2@gmx.de. Replaced c72aa306 with signed commit 82d146d5e,
+  force-with-lease from the declared branch old head, preserving the same tree and repair scope.
