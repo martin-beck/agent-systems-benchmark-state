@@ -7,7 +7,7 @@
     "AR-0857"
   ],
   "id": "AR-0880",
-  "next_action": "Fresh independent immutable review of exact candidate 01bbe00c597166adc5feaa58206c7b9a4ba037be (tree a067045347a6a326ead8562357836c41e5ff9d7d, parent 513c1d926458f1cb6a26d3f7277dc7d9b1496df3); hold publication/rebase because origin/main 9f502f7a3a781031770ad96efb4570ed206423a9 advanced.",
+  "next_action": "Fresh independent immutable review of rebased exact candidate 6f6666373d23c833609008448b6a672312e1c6fb (tree 558ff1278420ce6ab85a1147b2011cb888b33fe6, parent/live base 9f502f7a3a781031770ad96efb4570ed206423a9); do not publish until approval.",
   "observed_branch": "fix/openjiuwen-runtime-closure",
   "observed_dirty": 0,
   "observed_head": "6f6666373d23c833609008448b6a672312e1c6fb",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Repair OpenJiuwen runtime closure",
-  "updated_at": "2026-09-09T08:42:45+00:00",
+  "updated_at": "2026-09-09T08:43:13+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-runtime-closure"
 }
 ---
@@ -280,3 +280,14 @@ a dependency, avoiding a completion cycle while AR-0859 remains blocked on this 
 
 - 2026-09-09T08:42:45+00:00: Recorded command exit 0; command argv SHA-256
   ebfe67ca3427432c175f656c45f1c93fe6ffab8b63a1456d8749c9782a9ec918.
+
+- 2026-09-09T08:43:13+00:00: Authorized controlled rebase completed with live base check. Preserved
+  original candidate at evidence/ar0880-01bbe00c. New SSH-signed+DCO commit
+  6f6666373d23c833609008448b6a672312e1c6fb, tree 558ff1278420ce6ab85a1147b2011cb888b33fe6, exact
+  parent 9f502f7a3a781031770ad96efb4570ed206423a9; range-diff is exact equals from 01bbe00c and
+  scope remains exactly three owned paths. Post-rebase green: focused static 4/1 plus real fresh
+  online/offline 1/1; full workspace fmt/Clippy/tests/docs/release; locked formal; exact-range
+  repository policy/diff-check; cargo-deny/audit; actionlint/zizmor; Gitleaks; mutation 7/7;
+  workspace coverage 93.16% lines and critical replay 97.84%. Wheel-only RECORD proof, corrupt
+  consumed-wheel offline failure, 510 digest-recomputed oracle mutations, and signed AR-0859
+  loopback deferral are unchanged.
