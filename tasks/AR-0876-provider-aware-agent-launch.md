@@ -2,7 +2,7 @@
 {
   "branch": "feature/provider-aware-agent-launch",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T03:24:25+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0102",
     "AR-0103",
@@ -19,15 +19,15 @@
   "observed_branch": "feature/provider-aware-agent-launch",
   "observed_dirty": 0,
   "observed_head": "7c9daf795b02d1692e87a6be4d0087c163050ad3",
-  "owner": "replay_20260909",
+  "owner": "",
   "plan": "../plans/AR-0876.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Apply validated provider selections at the authoritative agent launch boundary and reject conflicting runtime configuration.",
-  "task_revision": 98,
+  "task_revision": 99,
   "title": "Wire provider-aware agent launches",
-  "updated_at": "2026-09-09T01:24:25+00:00",
+  "updated_at": "2026-09-09T01:27:19+00:00",
   "worktree_key": "agent-systems-benchmark-provider-aware-agent-launch"
 }
 ---
@@ -287,3 +287,10 @@ Implementation has not started. Read the linked plan before claiming.
   f78711fcb170f9a90faaa3197f67d22beda67d3c4d135ee5ef0e113496d21ff5.
 
 - 2026-09-09T01:24:25+00:00: Heartbeat by replay_20260909.
+
+- 2026-09-09T01:27:19+00:00: AR-0876 complete and released. Product feature commits 4599965,
+  251d676, 26af8e6, 7c9daf7 merged through signed no-ff boundary bc071fd, followed by signed
+  reachable postmerge boundary f2028d7. PR #93 exact-head 7c9daf7 and final exact-main tip f2028d7
+  required checks are all green: Rust x86_64/aarch64, emulated aarch64, formal TLC/Alloy/Kani/Loom,
+  faults/fuzz/mutation, repository quality, Huawei headers, and AWQ. Local workspace tests/clippy
+  and postmerge local tests passed. All temporary integration worktrees were clean.
