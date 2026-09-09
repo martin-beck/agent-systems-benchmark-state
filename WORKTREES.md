@@ -72,6 +72,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-llm-fixture-scenario-contract` | `feat/llm-fixture-scenario-contract` | `4d15bbc7e1d0` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-local-inference-provider-profiles` | `feat/local-inference-provider-profiles` | `eed49592617a` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-local-llm-testing-recommendations` | `docs/local-llm-testing-recommendations` | `4a23069336be` | 0 | behind 14, ahead 0 |
+| `agent-systems-benchmark-mockagents-executable-qualification` | `test/mockagents-executable-qualification` | `adac76558387` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-modern-terminal-rendering` | `feature/modern-terminal-rendering` | `fd1989a096a3` | 0 | behind 36, ahead 0 |
 | `agent-systems-benchmark-native-platform-lab` | `feature/native-platform-lab` | `b1669203308d` | 0 | behind 242, ahead 0 |
 | `agent-systems-benchmark-native-platforms` | `feature/native-platforms` | `bdaf9c108226` | 0 | behind 262, ahead 17 |
