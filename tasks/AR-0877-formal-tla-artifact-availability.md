@@ -10,18 +10,18 @@
   ],
   "id": "AR-0877",
   "next_action": "Verify an authoritative durable TLA+ 1.8.0 release asset and design the digest-checked online/offline acquisition boundary before implementation.",
-  "observed_branch": "",
+  "observed_branch": "fix/formal-tla-artifact-availability",
   "observed_dirty": 0,
-  "observed_head": "0000000000000000000000000000000000000000",
+  "observed_head": "dca243ab7b8cbb0b2b49a568dec99c517e0719c2",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0877.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T01:01:44+00:00",
+  "updated_at": "2026-09-09T01:01:49+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
