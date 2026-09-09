@@ -2,7 +2,7 @@
 {
   "branch": "docs/beginner-workflows",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T04:08:24+00:00",
+  "claim_expires": "2026-09-09T04:09:55+00:00",
   "depends_on": [
     "AR-0802",
     "AR-0869",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish linked beginner workflows for setup, multi-agent runs, progress, comparison, recording, and replay with and without the TUI.",
-  "task_revision": 131,
+  "task_revision": 132,
   "title": "Publish beginner workflow documentation",
-  "updated_at": "2026-09-09T02:08:54+00:00",
+  "updated_at": "2026-09-09T02:09:55+00:00",
   "worktree_key": "agent-systems-benchmark-beginner-workflows"
 }
 ---
@@ -383,3 +383,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T02:08:54+00:00: Recorded command exit 8; command argv SHA-256
   3102a0827cc40a9871aa6e8e2443297b4e45315c243779043a4671dc33e0ff1f.
+
+- 2026-09-09T02:09:55+00:00: Heartbeat by replay_20260909.
