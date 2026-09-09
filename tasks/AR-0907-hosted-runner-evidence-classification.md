@@ -8,7 +8,7 @@
     "AR-0848"
   ],
   "id": "AR-0907",
-  "next_action": "Monitor PR #123 exact head 32a8fe5b1bc0a1b84a876c077835f1b9d2a9be19; do not merge until every required check is terminal success and coordinator authorizes.",
+  "next_action": "Hold signed successor 5e58ae5cdbae7b19f08a2135674cea31d94cc7ba unpublished from PR #123 pending fresh immutable review; update PR and rerun exact-head CI only after approval.",
   "observed_branch": "fix/hosted-runner-evidence-classification",
   "observed_dirty": 0,
   "observed_head": "5e58ae5cdbae7b19f08a2135674cea31d94cc7ba",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 93,
+  "task_revision": 94,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T18:57:44+00:00",
+  "updated_at": "2026-09-09T18:58:17+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -319,3 +319,20 @@ patch release has advanced.
 
 - 2026-09-09T18:57:44+00:00: Recorded command exit 0; command argv SHA-256
   e8b8dc2af3e1beca6c25cb431209302b035c54b025dd7e471ab8da7350563f3f.
+
+- 2026-09-09T18:58:17+00:00: PR #123 defect repair complete without touching formal paths. Clean
+  successor 5e58ae5cdbae7b19f08a2135674cea31d94cc7ba, tree 3bcd9edee1442b54c7ddf9c0f0e68b191153e63b,
+  parent 32a8fe5b1bc0a1b84a876c077835f1b9d2a9be19; SSH-signed+DCO. Removed both dead evidence_file
+  assignments (ShellCheck SC2034). Hosted checks now expose only a bounded fixed failing slot
+  (process/metrics/sandbox), never raw output, and executable process-failure test proves generic
+  slot error with no artifact. Sandbox runner consumes at most 16 MiB, hashes all output, treats
+  nonzero/timeout/overflow as hard failure, and recognizes only the trusted test's fixed
+  capability-unavailable marker at exit zero. Unavailable sandbox becomes closed-schema
+  status=unavailable plus fixed limitation and functional-portability-partial; semantic validation
+  binds status, qualification and limitation and deletes mismatches. It is never passed/native
+  evidence. Workflow removes native-required env only on hosted route; exact native route is
+  unchanged. Focused 21, all platform 56, Ruff/mypy/actionlint/zizmor, contracts/failure/artifact,
+  full locked workspace fmt/clippy/test/doc, signature/DCO/policy/Gitleaks/diff/privacy/clean all
+  green. Exit 5 at 18:55:41 was operator-only malformed unittest pattern yielding zero tests;
+  corrected exact discovery passed 56 tests in the subsequent full gate batch. Combined range
+  remains seven AR-owned paths on base b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b.
