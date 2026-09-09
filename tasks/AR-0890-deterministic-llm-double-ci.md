@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the independently selected deterministic protocol double as a pinned isolated CI test dependency.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Integrate a deterministic LLM double in CI",
-  "updated_at": "2026-09-09T09:44:49+00:00",
+  "updated_at": "2026-09-09T09:45:53+00:00",
   "worktree_key": "agent-systems-benchmark-deterministic-llm-double-ci"
 }
 ---
@@ -39,3 +39,6 @@ Integrate the one candidate selected by AR-0888 through the AR-0889 contract. If
 
 - 2026-09-09T09:44:43+00:00: Recorded command exit 0; command argv SHA-256
   7786ea9c21141d06a16c7c7047071ecd2e2349b4e257f17164b543e4e9c5a951.
+
+- 2026-09-09T09:45:53+00:00: Recorded command exit 0; command argv SHA-256
+  481425baae114a3efd9ed23c7cc60f30f7033eaf6ce5630abb892c48901768ed.
