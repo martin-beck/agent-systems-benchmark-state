@@ -60,8 +60,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-gemini-generate-content-replay` | `feature/gemini-generate-content-replay` | `93c19625f910` | 0 | behind 179, ahead 0 |
 | `agent-systems-benchmark-gemini-thinking-config-contract` | `feature/gemini-thinking-config-contract` | `0aff7023cacf` | 0 | behind 177, ahead 0 |
 | `agent-systems-benchmark-huawei-mit-headers` | `fix/huawei-mit-license-headers` | `7add29f1d24c` | 0 | behind 61, ahead 0 |
-| `agent-systems-benchmark-install-artifacts` | `feature/verifiable-install-artifacts` | `d3ff88cd70a3` | 1 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-bundle/src/lib.rs` |
+| `agent-systems-benchmark-install-artifacts` | `feature/verifiable-install-artifacts` | `74d7f1da9d7d` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-interaction-aware-redaction` | `feature/interaction-aware-redaction` | `867861c95c19` | 0 | behind 164, ahead 0 |
 | `agent-systems-benchmark-kernel-diagnostics` | `feature/kernel-diagnostics` | `d11f81837374` | 0 | behind 41, ahead 0 |
 | `agent-systems-benchmark-modern-terminal-rendering` | `feature/modern-terminal-rendering` | `fd1989a096a3` | 0 | behind 2, ahead 0 |
