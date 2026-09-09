@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server.",
-  "task_revision": 112,
+  "task_revision": 113,
   "title": "Qualify local inference provider profiles",
-  "updated_at": "2026-09-09T09:41:29+00:00",
+  "updated_at": "2026-09-09T09:41:42+00:00",
   "worktree_key": "agent-systems-benchmark-local-inference-provider-profiles"
 }
 ---
@@ -285,3 +285,6 @@ Use exact Ollama, llama.cpp, vLLM and LocalAI sources in `docs/LOCAL_LLM_TESTING
   worktree fencing correctly rejects a claimed AR-0891 worker mutating the separate product-main
   worktree. Main remains clean at cd350831 and origin/main is 2a858722; use a signed commit-tree
   merge/push from the declared feature worktree with an exact main-ref lease.
+
+- 2026-09-09T09:41:42+00:00: Recorded command exit 1; command argv SHA-256
+  10a777f2b9edd1bf5835c16fd35d008345afbc63034638c6bce108599d810cad.
