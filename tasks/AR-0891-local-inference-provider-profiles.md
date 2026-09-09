@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Qualify local inference provider profiles",
-  "updated_at": "2026-09-09T09:20:08+00:00",
+  "updated_at": "2026-09-09T09:20:11+00:00",
   "worktree_key": "agent-systems-benchmark-local-inference-provider-profiles"
 }
 ---
@@ -204,3 +204,6 @@ Use exact Ollama, llama.cpp, vLLM and LocalAI sources in `docs/LOCAL_LLM_TESTING
   c92feb1d27aeca3afe7504d041a6f83e3e4872951d83d2d1ff7b1857faff83d2.
 
 - 2026-09-09T09:20:08+00:00: Heartbeat by codex-longrun-local-inference-profiles-20260909.
+
+- 2026-09-09T09:20:11+00:00: Recorded command exit 0; command argv SHA-256
+  65f971df3ee08f59359d125c98938b466e1bafd579fed25be4e51e6e1014ce48.
