@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-09T12:40:47+00:00",
+  "updated_at": "2026-09-09T12:42:32+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -108,3 +108,14 @@ must not block this AR or its dependents.
 
 - 2026-09-09T12:40:47+00:00: Recorded command exit 0; command argv SHA-256
   d66ecd27cb8a7c91fbebde4d22782e9ed4eb1878bdb8ed40e8e707d47e87951f.
+
+- 2026-09-09T12:42:32+00:00: Implemented the provider-neutral persistent lifecycle core in two new
+  AR-0704-only paths. The contract binds a sanitized x86_64 capacity pseudonym, trusted class, exact
+  owner/revision/deadline, and zero external cost; expired or uncertain work requires positive
+  reconciliation. The ledger enforces a private owner-only root, no-follow regular files,
+  nonblocking exclusive lock, bounded canonical JSON, descriptor/path identity checks, fsync-backed
+  atomic replacement, and fail-closed crash residue. Twelve focused lifecycle and CLI tests cover
+  deterministic acquire/renew/release, stale/conflicting ownership, expiry stateAdapted when
+  overdue_NONE Focused unittest 12/12, Ruff format/lint, strict mypy, and diff-check pass. Worktree
+  remains dirty only in new tools/capacity and tests/capacity paths; AR-0702 and runner paths are
+  untouched, and no private host identifier appears.
