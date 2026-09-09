@@ -2,7 +2,7 @@
 {
   "branch": "feature/kernel-diagnostics",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T01:44:17+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0201",
     "AR-0103"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/kernel-diagnostics",
   "observed_dirty": 0,
   "observed_head": "b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b",
-  "owner": "contracts_20260906",
+  "owner": "",
   "plan": "../plans/AR-0202.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Integrate perf and optional eBPF diagnostics without making privileged tools mandatory.",
-  "task_revision": 214,
+  "task_revision": 215,
   "title": "Add optional kernel diagnostics",
-  "updated_at": "2026-09-09T23:20:33+00:00",
+  "updated_at": "2026-09-09T23:21:15+00:00",
   "worktree_key": "agent-systems-benchmark-kernel-diagnostics"
 }
 ---
@@ -629,3 +629,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T23:20:33+00:00: Recorded command exit 0; command argv SHA-256
   b16d48bf0735ae51088244a8bcf8fae53375a74245a653308b8e5a1dbeac1b18.
+
+- 2026-09-09T23:21:15+00:00: Verified exact product main b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b:
+  local asb-metrics suite passed 13 unit, 1 opt-in boundary, 6 native Linux, and 3 compile-fail doc
+  tests; pinned perf 7.0.12 and bpftool 7.7.0 probes passed both unprivileged fail-closed and
+  authorized-root execution with empty scratch cleanup. Emulated-AArch64 contract validation and 8
+  unit tests passed locally; exact-main pinned QEMU workflow 34347816881 passed. Exact-main Rust
+  workflow 34347818158 passed formatting, Clippy, tests, docs, and release, failing only its DCO
+  step already owned by AR-0897; native-platform workflow 34347816598 passed. A redundant local
+  full-workspace rerun exhausted its disposable cache and was not repeated; historical exact-merge
+  full-workspace evidence remains green. Native ARM64 PMU/eBPF stays optional and unclaimed.
