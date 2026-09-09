@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make deterministic formal source builds verify OCI image identity portably across Docker engines.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Verify formal OCI build identity portably",
-  "updated_at": "2026-09-09T14:46:56+00:00",
+  "updated_at": "2026-09-09T14:47:28+00:00",
   "worktree_key": "agent-systems-benchmark-formal-oci-image-identity"
 }
 ---
@@ -45,3 +45,6 @@ instead of assuming an engine's local configuration ID equals the registry manif
 
 - 2026-09-09T14:46:45+00:00: Recorded command exit 0; command argv SHA-256
   fd8cc47177c54ff0956e5de741ed1304bc7769bf6b41750ec8cc10f168717371.
+
+- 2026-09-09T14:47:28+00:00: Recorded command exit 0; command argv SHA-256
+  79ee00f5fb02a02c5f835f3fcb6d14de21cd6dc98153635aa06a22527555d128.
