@@ -15,7 +15,7 @@
     "AR-0869"
   ],
   "id": "AR-0876",
-  "next_action": "Freeze and independently review the provider-aware launch contract before acquiring serialized asb-agents/asb-cli/Cargo fences.",
+  "next_action": "Independently review signed commit 45999650, push immutable PR, run exact-head required CI, and repair any failure before merge.",
   "observed_branch": "feature/provider-aware-agent-launch",
   "observed_dirty": 0,
   "observed_head": "45999650c2a21f65528dc69ce7fe47eb32442742",
@@ -25,9 +25,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply validated provider selections at the authoritative agent launch boundary and reject conflicting runtime configuration.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Wire provider-aware agent launches",
-  "updated_at": "2026-09-09T00:46:11+00:00",
+  "updated_at": "2026-09-09T00:46:34+00:00",
   "worktree_key": "agent-systems-benchmark-provider-aware-agent-launch"
 }
 ---
@@ -105,3 +105,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T00:46:06+00:00: Recorded command exit 0; command argv SHA-256
   6b917aabd1bdb436194b4426d4acce75ab6bd08ae9bc8d8a618e6352a31a137d.
+
+- 2026-09-09T00:46:34+00:00: Implemented signed commit 45999650: added constructor-controlled
+  ProviderLaunchV1 binding, canonical launch digest, projection/tamper/privacy tests, CLI pre-spawn
+  binding and non-secret launch environment, durable manifest/report identity, fixtures, and
+  documentation. Focused CLI/agent tests and workspace test plus clippy passed; next action is
+  independent review, exact-head CI, and repair if required.
