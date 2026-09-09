@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Hold immutable 42fe459 for independent review; publish only after approval and fresh exact-head CI.",
+  "next_action": "Hold immutable a91cd04 for independent re-review; publish only after approval and fresh exact-head CI.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "a91cd04d5f49aa4d311c53ab727c2dcb75b77913",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-09T23:47:12+00:00",
+  "updated_at": "2026-09-09T23:47:49+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -230,3 +230,16 @@ classified.
 
 - 2026-09-09T23:47:12+00:00: Recorded command exit 0; command argv SHA-256
   2624ae5fedc61f87d5674647cb38c86ad8c998b588893f1ed7beb4348a7c8095.
+
+- 2026-09-09T23:47:49+00:00: Review repair candidate a91cd04d5f49aa4d311c53ab727c2dcb75b77913, tree
+  c1c91a8ed7595b0c393da8250a4cfcb119d2068f, parent 42fe459, aggregate base b6d04a8. The exact
+  one-path cfg(test) chain is clean and both commits are SSH-signed with matching DCO.
+  PrivateTestRoot now rejects canonical repository roots, descendants and ancestors before creation.
+  The cancellation fixture starts two descendants, validates both in the original process
+  group/session, then boundedly enumerates /proc and requires zero runnable members in that exact
+  group after terminal Cancelled; zombies remain honestly non-runnable, not claimed reaped. Focused
+  22/22, 20 serial plus 16 concurrent, full workspace Clippy/tests/rustdoc/release,
+  contract/failure/platform/policy/workflow/privacy/Gitleaks/deny/audit and exact coverage are
+  green. The first coverage attempt hit an unrelated asb-metrics ProbeRejected/MalformedEvidence
+  race; exact instrumented failing test immediately passed and one diagnosed full rerun passed every
+  floor. Disk pressure was handled only with cargo clean on AR-0909-owned target directories.
