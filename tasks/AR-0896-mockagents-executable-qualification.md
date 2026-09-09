@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Reachable signed DCO fast-forward a4e1a9d published; exact-main verification triggered.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-09T10:23:33+00:00",
+  "updated_at": "2026-09-09T10:26:30+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -132,3 +132,6 @@ synthetic fixture for black-box executable evidence.
 - 2026-09-09T10:23:33+00:00: Published signed no-op a4e1a9de985a4c9f22628c6d604a6e62f4f173e3
   parented on 5f7d631 with force-with-lease expected 5f7d631. This preserves product tree and makes
   the CI before SHA reachable after the required history repair.
+
+- 2026-09-09T10:26:30+00:00: Recorded command exit 0; command argv SHA-256
+  6b7e938a3213086d5a5d58a7ff0decddafd3b2feecaf047e0ea81572e8705b75.
