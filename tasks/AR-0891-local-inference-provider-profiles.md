@@ -10,7 +10,7 @@
     "AR-0315"
   ],
   "id": "AR-0891",
-  "next_action": "Signed no-ff merge PR #114 at exact head 9bc7fe7f91efd491d42da3961ba09d832857d361, then run post-merge exact-main verification before releasing AR-0891.",
+  "next_action": "Rebase PR #114 branch onto current origin/main 2a85872285e6de374e7ea48e3b062e4134bec49e2 (PR #112 merged during CI), rerun exact-head checks, then signed no-ff merge.",
   "observed_branch": "feat/local-inference-provider-profiles",
   "observed_dirty": 0,
   "observed_head": "9bc7fe7f91efd491d42da3961ba09d832857d361",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server.",
-  "task_revision": 99,
+  "task_revision": 100,
   "title": "Qualify local inference provider profiles",
-  "updated_at": "2026-09-09T09:32:28+00:00",
+  "updated_at": "2026-09-09T09:32:42+00:00",
   "worktree_key": "agent-systems-benchmark-local-inference-provider-profiles"
 }
 ---
@@ -251,3 +251,8 @@ Use exact Ollama, llama.cpp, vLLM and LocalAI sources in `docs/LOCAL_LLM_TESTING
   caf1c177859eab71cef1d212133a9be19e9dadf21ee14d7b68242be6bb437cc7.
 
 - 2026-09-09T09:32:28+00:00: Heartbeat by codex-longrun-local-inference-profiles-20260909.
+
+- 2026-09-09T09:32:42+00:00: Merge command was safely prevented because origin/main advanced to
+  2a85872285e6de374e7ea48e3b062e4134bec49e2 via independently merged PR #112 while PR #114 was
+  running. Product main remains clean at cd350831; no mutation occurred. Rebase the feature branch
+  before merging.
