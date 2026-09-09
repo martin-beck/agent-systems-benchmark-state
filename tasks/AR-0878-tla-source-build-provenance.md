@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0878",
-  "next_action": "Coordinator must correct the approved 14-build-input necessity criterion or partition. The fail-closed end-to-end deletion oracle proved jacocoant.jar is not necessary: deleting it still produced exact reviewed SHA-256 8c200a88d151c6c183c8dbc57a6b633d135e7a2b18242a3afbf243a9e4b68d3e. Preserve current 31-inventory/14-retained dirty implementation and do not weaken the oracle.",
+  "next_action": "Request fresh independent immutable review of signed candidate e4730653b112d733fb2a1157f65481663c4e073c (tree 64d8123c6a321c9223d1a7a5c1ed6981482d3876, parent c157cedc744373ef75aba686c00e97ce61aa3bfc). Do not publish or rebase before review; hosted exact-head Kani remains required only after publication is authorized.",
   "observed_branch": "feature/tla-source-build-provenance",
   "observed_dirty": 0,
   "observed_head": "e4730653b112d733fb2a1157f65481663c4e073c",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 136,
+  "task_revision": 137,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T05:02:00+00:00",
+  "updated_at": "2026-09-09T05:02:51+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -478,3 +478,18 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T05:02:00+00:00: Recorded command exit 0; command argv SHA-256
   07af3ac8781a9da0f77faa253852cb1af8ab02574b62dfed752295ca4a71ef75.
+
+- 2026-09-09T05:02:51+00:00: Completed corrected fail-closed 31=13 build_input+18
+  excluded_source_artifact repair. Exact pinned final campaign validates all 31, prunes all 18
+  before Ant, validates 13 survivors, individually deletes each retained input and observes build
+  failure, then performs two independent offline builds with identical 4,512,486-byte SHA256
+  8c200a88d151c6c183c8dbc57a6b633d135e7a2b18242a3afbf243a9e4b68d3e outputs. Excluded entries are
+  path/hash/classification only; jpf-shell and jacoco are reintroduction negatives; jpf-shell
+  license license applicability remains unknown/unclaimed. Exact candidate gates: focused 4/4; full
+  workspace fmt/Clippy/tests/docs/release green on Rust 1.93.0; locked formal tests green;
+  source-built TLC positive and stale negative plus Alloy positive/mutants green; mutation 7/7; real
+  concurrency/cancel cleanup green; digest-pinned Ubuntu ShellCheck 0.9.0 green; cargo-deny/audit,
+  actionlint/zizmor, scoped Gitleaks, Ruff, exact-range policy/DCO/signature/diff-check clean.
+  Focused llvm-cov executes 4/4 but has zero instrumentable Rust regions because production is
+  shell/Python. Formal all-target Clippy retains inherited recovery.rs field_reassign_with_default
+  findings outside this 11-path diff; local Kani remains the documented incomplete-install boundary.

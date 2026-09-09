@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0858](tasks/AR-0858-openjiuwen-adapter.md): Implement the OpenJiuwen contract and capability adapter | Implement the OpenJiuwen contract and capability adapter. | Implement the bounded agent contract, exact provider translation, and capability registration from the pinned protocol; keep live support unclaimed. | replay_20260909 |
-| P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Coordinator must correct the approved 14-build-input necessity criterion or partition. The fail-closed end-to-end deletion oracle proved jacocoant.jar is not necessary: deleting it still produced exact reviewed SHA-256 8c200a88d151c6c183c8dbc57a6b633d135e7a2b18242a3afbf243a9e4b68d3e. Preserve current 31-inventory/14-retained dirty implementation and do not weaken the oracle. | replay_20260906 |
+| P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Request fresh independent immutable review of signed candidate e4730653b112d733fb2a1157f65481663c4e073c (tree 64d8123c6a321c9223d1a7a5c1ed6981482d3876, parent c157cedc744373ef75aba686c00e97ce61aa3bfc). Do not publish or rebase before review; hosted exact-head Kani remains required only after publication is authorized. | replay_20260906 |
 
 ## Blocked
 
