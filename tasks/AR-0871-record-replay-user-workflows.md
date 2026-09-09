@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make recording and strict replay complete, explicit, privacy-safe user workflows in both CLI and TUI.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Deliver record and replay user workflows",
-  "updated_at": "2026-09-09T00:10:31+00:00",
+  "updated_at": "2026-09-09T00:10:42+00:00",
   "worktree_key": "agent-systems-benchmark-record-replay-user-workflows"
 }
 ---
@@ -58,4 +58,7 @@ Implementation has not started. Read the linked plan before claiming.
   ddce4221639031cc1ef6adf398b970540dfbea4cfbbc9cfedfa7bf810810261e.
 
 - 2026-09-09T00:10:23+00:00: Recorded command exit 101; command argv SHA-256
+  bddd02de78f05b41ff8972262462d0aaaa503281d2bfab3c2502930516b29c39.
+
+- 2026-09-09T00:10:42+00:00: Recorded command exit 101; command argv SHA-256
   bddd02de78f05b41ff8972262462d0aaaa503281d2bfab3c2502930516b29c39.
