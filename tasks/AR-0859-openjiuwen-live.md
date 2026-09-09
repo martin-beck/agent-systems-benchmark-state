@@ -9,7 +9,7 @@
   "id": "AR-0859",
   "next_action": "Independent immutable review of b75e2fb; keep live support fail closed pending approval.",
   "observed_branch": "feature/openjiuwen-live",
-  "observed_dirty": 1,
+  "observed_dirty": 3,
   "observed_head": "b75e2fb31bd9ab569de4363b6d7afae34579184d",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0859.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 129,
+  "task_revision": 130,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T17:45:34+00:00",
+  "updated_at": "2026-09-09T17:45:40+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
