@@ -2,7 +2,7 @@
 {
   "branch": "feature/evolving-workloads",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T08:01:55+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0402",
     "AR-1007"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/evolving-workloads",
   "observed_dirty": 0,
   "observed_head": "6bbbf130dd25fe5429168e968f5bb83adc242937",
-  "owner": "codex-longrun-evolving-workloads-20260909",
+  "owner": "",
   "plan": "../plans/AR-0406.md",
   "priority": "P3",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Add evolving long-horizon workload sources",
-  "updated_at": "2026-09-09T06:01:58+00:00",
+  "updated_at": "2026-09-09T06:02:40+00:00",
   "worktree_key": "agent-systems-benchmark-evolving-workloads"
 }
 ---
@@ -168,3 +168,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T06:01:58+00:00: Recorded command exit 0; command argv SHA-256
   f5bc506755055d9bc29d6a02ec768e99a78e6cd75f7f203da5481dd0b7617606.
+
+- 2026-09-09T06:02:40+00:00: Acceptance verified: PR #103 exact head
+  6bbbf130dd25fe5429168e968f5bb83adc242937 passed all required PR checks; signed DCO merge
+  ca6e75916a8c9831b9107377cd48d731463c272a pushed to origin/main; all six exact-main post-merge
+  workflows (Repository quality, Huawei MIT source headers, Emulated aarch64 portability, Fault
+  assurance, Formal assurance, Rust verification) completed successfully.
