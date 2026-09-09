@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-live",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-10T02:23:14+00:00",
   "depends_on": [
     "AR-0858"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "cceb76f436f8918786f610afdf20ba99fbd87d34",
-  "owner": "",
+  "owner": "contracts_20260906",
   "plan": "../plans/AR-0859.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 217,
+  "task_revision": 218,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T20:00:57+00:00",
+  "updated_at": "2026-09-09T23:23:14+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -742,3 +742,5 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 - 2026-09-09T20:00:57+00:00: Recovered expired claim formerly owned by replay_20260906. Expired
   AR-0859 lease recovered so AR-0908 coverage checkpoint can be recorded; preserve reviewed PR #124
   head cceb76f.
+
+- 2026-09-09T23:23:14+00:00: Claimed by contracts_20260906.
