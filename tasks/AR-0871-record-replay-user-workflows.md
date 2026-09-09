@@ -15,16 +15,16 @@
   "next_action": "Deliver executable CLI and TUI journeys for recording LLM responses and replaying an exact compatible cassette.",
   "observed_branch": "feature/record-replay-user-workflows",
   "observed_dirty": 0,
-  "observed_head": "7b996dd438dc7256c27e72455296f0c7c3b3eb49",
+  "observed_head": "30aa7ae86aa5df1eaff5154eb95dc371abd91754",
   "owner": "replay_20260909",
   "plan": "../plans/AR-0871.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make recording and strict replay complete, explicit, privacy-safe user workflows in both CLI and TUI.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Deliver record and replay user workflows",
-  "updated_at": "2026-09-09T00:18:05+00:00",
+  "updated_at": "2026-09-09T00:18:10+00:00",
   "worktree_key": "agent-systems-benchmark-record-replay-user-workflows"
 }
 ---
