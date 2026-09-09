@@ -10,7 +10,7 @@
     "AR-1001"
   ],
   "id": "AR-0806",
-  "next_action": "Fresh independent immutable review of conflict-resolved candidate 8e7907cc60d02328d4d418e15ec408c45829f8c0, tree b9f048b2c604e20559198fca7c72c120d074d559, exact parent/current main 5b2236b105a97756a55c7ac64360cb3616ef979f. Review the README-only range-diff integration with main's AR-0870 MultiAgentWizard documentation, verify lib.rs semantics unchanged, signature/DCO/two-path scope/full gates; then exact force-with-lease PR #89 update and fresh CI.",
+  "next_action": "Rebase the approved AR-0806 one-path semantics onto current product main dca243ab, preserve the AR-0875 limitation, rerun exact range-diff/full gates, obtain fresh immutable review, then update PR #89 and rerun exact-head CI before merge.",
   "observed_branch": "feature/tui-history-analysis",
   "observed_dirty": 0,
   "observed_head": "8e7907cc60d02328d4d418e15ec408c45829f8c0",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-09T00:23:07+00:00",
+  "updated_at": "2026-09-09T00:29:42+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
@@ -255,3 +255,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T00:23:07+00:00: Recorded command exit 0; command argv SHA-256
   6dfad3f505eaa578749ae5cd9bd002c0378d201533be50b2a17564ad0bdaf297.
+
+- 2026-09-09T00:29:42+00:00: PR #89 was successfully updated to exact approved head
+  8e7907cc60d02328d4d418e15ec408c45829f8c0 on base 5b2236b105a97756a55c7ac64360cb3616ef979f. All 14
+  exact-head checks are terminal SUCCESS: runs 34294783528, 34294783533, 34294783568, 34294783641,
+  34294783589, 34294783588, and 34294783726. Merge is now blocked, not by CI or candidate semantics,
+  but by concurrent product-main advancement to dca243ab7b8cbb0b2b49a568dec99c517e0719c2; live
+  GitHub reports mergeable=CONFLICTING and mergeStateStatus=DIRTY. No merge or release performed.
+  Controlled rebase and fresh review/CI are required.
