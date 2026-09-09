@@ -8,16 +8,16 @@
     "AR-0003"
   ],
   "id": "AR-0895",
-  "next_action": "Publish independently approved fb147b0a as focused state PR, require fresh exact-head Coordination/header/AWQ CI, then signed merge and post-merge verification before release.",
+  "next_action": "Monitor state PR #17 exact head fb147b0a to terminal; merge only when Strict state consistency, source-header verify, and AWQ are all green, then run exact-main reconciliation/doctor before release.",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0895.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Close the workflow path-filter gap that lets coordination-content pull requests skip strict state consistency and DCO checks.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Verify every coordination-content pull request",
-  "updated_at": "2026-09-09T10:15:29+00:00",
+  "updated_at": "2026-09-09T10:16:05+00:00",
   "worktree_key": "agent-systems-benchmark-state-verify-coordination-content"
 }
 ---
@@ -132,3 +132,10 @@ Ensure state-content pull requests cannot bypass exact-head schema, generated-vi
 
 - 2026-09-09T10:15:29+00:00: Recorded command exit 0; command argv SHA-256
   27e9bc65753a432f2b45ce656b48a97828ae9f288d6cc5e6619d61af85083c23.
+
+- 2026-09-09T10:16:05+00:00: Published independently approved candidate as state PR #17:
+  https://github.com/martin-beck/agent-systems-benchmark-state/pull/17. Live GitHub confirms exact
+  head fb147b0a8702ca6cb6340eb756c9464b66d5bd2a and base 87adf63706dda654659374a4ec88019b38ee1624.
+  Immediate exact-head CI: source-header verify SUCCESS (run 34339247801); Strict state consistency
+  IN_PROGRESS (34339247786); AWQ shadow IN_PROGRESS (34339247767). PR remains OPEN; no merge or
+  release performed.
