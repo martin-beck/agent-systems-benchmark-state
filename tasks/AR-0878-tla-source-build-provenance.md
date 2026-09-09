@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0878",
-  "next_action": "Add fixture-driven hostile manifest/cache/output mutations and concurrency/cancellation cleanup tests, validate the full persistent source/output receipt, then run ShellCheck, TLC/Alloy, privacy, repository-policy, and supply gates before a signed candidate.",
+  "next_action": "Run full locked formal workspace plus Alloy, repository-policy, privacy/Gitleaks, supply and coverage gates; obtain ShellCheck from the authorized pinned quality runner or record its exact unavailable boundary; then sign the exact eight-path candidate for immutable review.",
   "observed_branch": "feature/tla-source-build-provenance",
   "observed_dirty": 3,
   "observed_head": "af9fb7dcaabc162b13d6ee1e77d8915b6d82df20",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T02:55:12+00:00",
+  "updated_at": "2026-09-09T02:55:39+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -169,3 +169,17 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T02:55:12+00:00: Recorded command exit 0; command argv SHA-256
   710327ada795009fed24385d89399ee4fcd5593217aad14e8762040d5a4d4182.
+
+- 2026-09-09T02:55:39+00:00: Final implementation checkpoint: all eight owned paths are now present.
+  Full persistent-source/output verification passes the exact 31-JAR closure and 2,087-entry
+  artifact. Fixture-driven Rust suite passes 3/3, including fourteen independent
+  provenance/schema/source/container/network/environment/timestamp/dependency/license/output
+  mutations. The deterministic build script itself reproduced exact SHA-256 8c200a88... and
+  4,512,486 bytes. TLC with that source-built JAR completed Recovery.tla with no error (10,289
+  generated/3,709 distinct states), while RecoveryStaleMutation failed with exact StaleEventsFenced
+  violation. Real concurrent publication returned fail-closed exit 75; real process-group
+  cancellation returned 130 and left no output, partial, lock, or scratch effect. The first focused
+  attempt was operator-only PATH exit 127; corrected pinned Cargo passed. A later TLC exit 1 was an
+  operator-only subshell path error; corrected absolute model paths passed. ShellCheck is not
+  installed on this host and was durably classified exit 127; remaining
+  quality/formal/privacy/supply gates are not yet complete.
