@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 6 |
-| **Planned** | Defined work awaiting promotion or dependencies | 46 |
+| **Planned** | Defined work awaiting promotion or dependencies | 45 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 100 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -142,7 +142,7 @@ flowchart LR
         AR_0816["AR-0816 - Planned"]:::status_planned
         AR_0817["AR-0817 - Planned"]:::status_planned
         AR_0818["AR-0818 - Planned"]:::status_planned
-        AR_0819["AR-0819 - Planned"]:::status_planned
+        AR_0819["AR-0819 - Open"]:::status_open
         AR_0820["AR-0820 - Planned"]:::status_planned
         AR_0821["AR-0821 - Planned"]:::status_planned
         AR_0822["AR-0822 - Planned"]:::status_planned
@@ -878,11 +878,12 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | replay_20260906 | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Request one controlled signed rebase of candidate c6aed713 onto current origin/main 9aad1317 (six commits ahead, zero path overlap), preserve exact eight-path range-diff, rerun exact-tree focused/full/formal/privacy/policy/supply gates, then request independent immutable review. Do not publish stale-base candidate. |
 
-### Open (2)
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0806](tasks/AR-0806-tui-history-analysis.md): Add terminal history and analysis | Unclaimed | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. | Repair or restore the pinned TLA+ v1.8.0 artifact boundary outside the AR-0806 two-path scope, then rerun exact-head Formal Assurance for PR #89; merge remains held until every required check is green. |
+| P1 | [AR-0819](tasks/AR-0819-ssh-remote-bootstrap.md): Add SSH remote discovery and bootstrap | Unclaimed | Use configured SSH hosts as the safe default path to a remote runner and help establish dedicated key authentication. | Implement OpenSSH host selection, service probing, stdio bridging, and explicit passwordless enrollment. |
 | P1 | [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md): Repair formal TLA artifact availability | Unclaimed | Repair the formal workflow&#x27;s unavailable TLA+ artifact pin without weakening provenance or offline verification. | Hold the four-path acquisition prototype unchanged and obtain an authoritative immutable TLA+ 1.8.0 artifact publication (or coordinator authorization for a separately specified reproducible source-build boundary); then refresh exact metadata once, finish deterministic faults, and run TLC/Alloy. Do not chase the continuously replaced v1.8.0 pre-release asset. |
 
 ### Blocked (6)
@@ -896,7 +897,7 @@ flowchart LR
 | P1 | [AR-0863](tasks/AR-0863-workbuddy-provenance.md): Pin WorkBuddy source, package, and license provenance | Unclaimed | Pin WorkBuddy source, package, and license provenance. | Pin official source, package, dependency closure, license, executable digest, protocol mode, and supported platform before any adapter claim. |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Monitor exact-main post-merge checks at 2219839 and run local post-merge verification. Retain AR-0202 in progress until genuine privileged native aarch64 evidence is recorded; then complete final review and release. |
 
-### Planned (46)
+### Planned (45)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -919,7 +920,6 @@ flowchart LR
 | P1 | [AR-0816](tasks/AR-0816-cross-platform-remote-interoperability.md): Qualify cross-platform remote control | Unclaimed | Validate remote TUI and runner combinations across x86_64/aarch64 and supported Linux distributions. | Prove controller-runner interoperability across distributions, architectures, versions, and network conditions. |
 | P1 | [AR-0817](tasks/AR-0817-remote-tui-workflows.md): Build remote terminal frontend workflows | Unclaimed | Make secure two-machine benchmark operation clear and efficient in the terminal frontend. | Integrate polished connection, trust, remote launch, detach, reconnect, and management journeys into the TUI. |
 | P1 | [AR-0818](tasks/AR-0818-remote-control-security-audit.md): Audit remote benchmark control | Unclaimed | Attack and qualify remote benchmark control before any release enables it. | Independently audit remote protocol, trust, authorization, lifecycle, interoperability, privacy, and operational safety. |
-| P1 | [AR-0819](tasks/AR-0819-ssh-remote-bootstrap.md): Add SSH remote discovery and bootstrap | Unclaimed | Use configured SSH hosts as the safe default path to a remote runner and help establish dedicated key authentication. | Implement OpenSSH host selection, service probing, stdio bridging, and explicit passwordless enrollment. |
 | P1 | [AR-0820](tasks/AR-0820-verifiable-install-artifacts.md): Publish verifiable installation artifacts | Unclaimed | Publish verifiable native bundles and metadata that a small bootstrapper can select safely. | Build signed platform manifests and relocatable ASB plus asb-tui installation bundles. |
 | P1 | [AR-0821](tasks/AR-0821-one-line-local-install.md): Add guided one-line local installation | Unclaimed | Turn a single documented command into a safe guided local ASB and TUI first run. | Implement an idempotent one-line bootstrap that verifies, installs, configures, starts the local runner, and opens asb-tui. |
 | P1 | [AR-0822](tasks/AR-0822-install-upgrade-rollback.md): Add safe installation lifecycle management | Unclaimed | Manage the complete installed lifecycle without losing configuration, history, runs, or trust state. | Implement verified upgrades, migrations, rollback, repair, and non-destructive uninstall. |
