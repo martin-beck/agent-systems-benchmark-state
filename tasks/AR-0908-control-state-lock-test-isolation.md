@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Harden asb-cli control-state lock test isolation and deterministic reopen coverage.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Harden control-state lock test isolation",
-  "updated_at": "2026-09-09T20:28:10+00:00",
+  "updated_at": "2026-09-09T21:55:56+00:00",
   "worktree_key": "agent-systems-benchmark-control-state-lock-test-isolation"
 }
 ---
@@ -178,3 +178,6 @@ non-deterministic isolation signal rather than claiming a production lock defect
   AWQ 34401125597 success, Quality 34401125553, Fault 34401125530, AArch64 34401125534. Formal run
   remains in progress overall, but TLC/Alloy job 102632995297 is already failed; GitHub withholds
   failed logs until the run completes. Candidate tree and one-path scope remain unchanged.
+
+- 2026-09-09T21:55:56+00:00: Recorded command exit 0; command argv SHA-256
+  64ba92a2c712972cd36ac9b2327513e5864bb5539067c5fd2c0d2f7a9ef47582.
