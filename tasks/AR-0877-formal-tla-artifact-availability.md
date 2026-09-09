@@ -2,7 +2,7 @@
 {
   "branch": "fix/formal-tla-artifact-availability",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-09T18:17:23+00:00",
   "depends_on": [
     "AR-0003",
     "AR-0901",
@@ -13,15 +13,15 @@
   "observed_branch": "fix/formal-tla-artifact-availability",
   "observed_dirty": 0,
   "observed_head": "55fdd686eb1a4a8583fd37a088b20e5edb7e3b89",
-  "owner": "",
+  "owner": "contracts_20260906",
   "plan": "../plans/AR-0877.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 91,
+  "task_revision": 92,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T15:17:20+00:00",
+  "updated_at": "2026-09-09T15:17:23+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -344,3 +344,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T15:17:20+00:00: Resume formal acquisition repair: bound curl/tool download size and
   preserve verified source-build/cache provenance before rerunning dependent exact-head CI.
+
+- 2026-09-09T15:17:23+00:00: Claimed by contracts_20260906.
