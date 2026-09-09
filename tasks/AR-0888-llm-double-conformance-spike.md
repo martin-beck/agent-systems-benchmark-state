@@ -8,15 +8,18 @@
   ],
   "id": "AR-0888",
   "next_action": "Build the isolated OpenAI and Anthropic conformance spike, execute exact pinned candidates, and publish pass, fail, unsupported, and untested evidence.",
+  "observed_branch": "test/llm-double-conformance-spike",
+  "observed_dirty": 0,
+  "observed_head": "bf66ad4198a2a96fd284765b98a60acdcef12eac",
   "owner": "codex-longrun-llm-double-conformance-20260909",
   "plan": "../plans/AR-0888.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Measure deterministic LLM test doubles against one hostile ASB protocol and isolation suite before selecting any dependency.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Spike deterministic LLM double conformance",
-  "updated_at": "2026-09-09T07:59:30+00:00",
+  "updated_at": "2026-09-09T07:59:36+00:00",
   "worktree_key": "agent-systems-benchmark-llm-double-conformance-spike"
 }
 ---
