@@ -2,22 +2,22 @@
 {
   "branch": "ci/deterministic-llm-double",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-09T12:43:41+00:00",
   "depends_on": [
     "AR-0888",
     "AR-0889"
   ],
   "id": "AR-0890",
   "next_action": "Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests.",
-  "owner": "",
+  "owner": "contracts_20260906",
   "plan": "../plans/AR-0890.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add the independently selected deterministic protocol double as a pinned isolated CI test dependency.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Integrate a deterministic LLM double in CI",
-  "updated_at": "2026-09-09T09:43:27+00:00",
+  "updated_at": "2026-09-09T09:43:41+00:00",
   "worktree_key": "agent-systems-benchmark-deterministic-llm-double-ci"
 }
 ---
@@ -28,3 +28,5 @@ Integrate the one candidate selected by AR-0888 through the AR-0889 contract. If
 - 2026-09-09T09:43:27+00:00: Dependencies AR-0888 and AR-0889 are durably done and their exact
   product heads are integrated in origin/main; selected CI qualification scope is disjoint from
   active AR-0859 and AR-0891.
+
+- 2026-09-09T09:43:41+00:00: Claimed by contracts_20260906.

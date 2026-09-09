@@ -8,14 +8,9 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Qualify pinned OpenJiuwen live execution. | Refresh the clean declared feature/openjiuwen-live worktree from exact product origin/main 2a85872285e6de374e7ea48e3b062e4134bec49e without losing preserved evidence, then implement only the three owned live-test fixture paths and execute the credential-free loopback edit/tool/usage/cancellation/cleanup/network-denial qualification. Keep support fail closed until executable evidence passes. | replay_20260906 |
+| P1 | [AR-0890](tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. | contracts_20260906 |
 | P1 | [AR-0891](tasks/AR-0891-local-inference-provider-profiles.md): Qualify local inference provider profiles | Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server. | Create and push a signed no-ff merge object from the claimed feature worktree (worktree-fence-safe), then verify GitHub marks PR #114 merged and run post-merge exact-main checks. | codex-longrun-local-inference-profiles-20260909 |
 | P1 | [AR-0895](tasks/AR-0895-verify-coordination-content.md): Verify every coordination-content pull request | Close the workflow path-filter gap that lets coordination-content pull requests skip strict state consistency and DCO checks. | Make task, plan, CURRENT.md, and STATUS.md pull-request changes trigger exact-head Coordination verification and DCO, with path-filter regression tests. | quality_20260906 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0890](tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. | - |
 
 ## Blocked
 

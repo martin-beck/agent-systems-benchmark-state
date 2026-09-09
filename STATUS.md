@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**165 ARs tracked** across 5 active status categories.
+**165 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 7 |
 | **Planned** | Defined work awaiting promotion or dependencies | 39 |
 | **Future** | Deferred roadmap work | 0 |
@@ -198,7 +198,7 @@ flowchart LR
         AR_0880["AR-0880 - Done"]:::status_done
         AR_0888["AR-0888 - Done"]:::status_done
         AR_0889["AR-0889 - Done"]:::status_done
-        AR_0890["AR-0890 - Open"]:::status_open
+        AR_0890["AR-0890 - In progress"]:::status_in_progress
         AR_0891["AR-0891 - In progress"]:::status_in_progress
         AR_0892["AR-0892 - Planned"]:::status_planned
         AR_0893["AR-0893 - Planned"]:::status_planned
@@ -923,19 +923,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | replay_20260906 | Qualify pinned OpenJiuwen live execution. | Refresh the clean declared feature/openjiuwen-live worktree from exact product origin/main 2a85872285e6de374e7ea48e3b062e4134bec49e without losing preserved evidence, then implement only the three owned live-test fixture paths and execute the credential-free loopback edit/tool/usage/cancellation/cleanup/network-denial qualification. Keep support fail closed until executable evidence passes. |
+| P1 | [AR-0890](tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | contracts_20260906 | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. |
 | P1 | [AR-0891](tasks/AR-0891-local-inference-provider-profiles.md): Qualify local inference provider profiles | codex-longrun-local-inference-profiles-20260909 | Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server. | Create and push a signed no-ff merge object from the claimed feature worktree (worktree-fence-safe), then verify GitHub marks PR #114 merged and run post-merge exact-main checks. |
 | P1 | [AR-0895](tasks/AR-0895-verify-coordination-content.md): Verify every coordination-content pull request | quality_20260906 | Close the workflow path-filter gap that lets coordination-content pull requests skip strict state consistency and DCO checks. | Make task, plan, CURRENT.md, and STATUS.md pull-request changes trigger exact-head Coordination verification and DCO, with path-filter regression tests. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0890](tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Unclaimed | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. |
 
 ### Blocked (7)
 
