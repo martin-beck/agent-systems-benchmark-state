@@ -109,7 +109,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-tla-source-build-provenance` | `feature/tla-source-build-provenance` | `c157cedc7443` | 2 | behind 5, ahead 1 |
 | changed files | - | - | - | `formal/tla-provenance/source-build.toml`, `formal/tla-provenance/licenses/` |
 | `agent-systems-benchmark-trace-interoperability` | `feature/trace-interoperability` | `921cf004f8aa` | 0 | behind 99, ahead 0 |
-| `agent-systems-benchmark-tui-history-analysis` | `feature/tui-history-analysis` | `dc914626bb2f` | 0 | behind 21, ahead 1 |
+| `agent-systems-benchmark-tui-history-analysis` | `feature/tui-history-analysis` | `7fd21bbeddc5` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-tui-multi-agent-provider-selection` | `feature/tui-multi-agent-provider-selection` | `679244e3af61` | 0 | behind 25, ahead 0 |
 | `agent-systems-benchmark-tui-run-control` | `feature/tui-run-control` | `b44282a31e90` | 0 | behind 47, ahead 0 |
 | `agent-systems-benchmark-tui-settings-wizard` | `feature/tui-settings-wizard` | `8f7152c525da` | 0 | behind 59, ahead 0 |

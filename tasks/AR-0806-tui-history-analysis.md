@@ -13,16 +13,16 @@
   "next_action": "Repair or restore the pinned TLA+ v1.8.0 artifact boundary outside the AR-0806 two-path scope, then rerun exact-head Formal Assurance for PR #89; merge remains held until every required check is green.",
   "observed_branch": "feature/tui-history-analysis",
   "observed_dirty": 0,
-  "observed_head": "dc914626bb2fbf57fc7df15e7d37873142850fe7",
+  "observed_head": "7fd21bbeddc5144f3eabe4edbdd545ad363bc2b7",
   "owner": "codex-longrun-tui-20260909",
   "plan": "../plans/AR-0806.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-09T04:13:46+00:00",
+  "updated_at": "2026-09-09T04:13:52+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
