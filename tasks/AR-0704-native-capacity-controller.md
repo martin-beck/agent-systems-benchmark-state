@@ -10,17 +10,17 @@
   "id": "AR-0704",
   "next_action": "Independent immutable review of d47f503; do not publish before approval.",
   "observed_branch": "feature/native-capacity-controller",
-  "observed_dirty": 2,
-  "observed_head": "d47f5031394e2390867aa750caf9494a8b81e36f",
+  "observed_dirty": 0,
+  "observed_head": "28f30eea80efef5a61ea438e77402f8640564cc9",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-09T13:11:29+00:00",
+  "updated_at": "2026-09-09T13:11:35+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
