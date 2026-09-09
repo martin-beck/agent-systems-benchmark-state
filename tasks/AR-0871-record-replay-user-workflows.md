@@ -2,7 +2,7 @@
 {
   "branch": "feature/record-replay-user-workflows",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T02:28:50+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0314",
     "AR-0502",
@@ -16,15 +16,15 @@
   "observed_branch": "feature/record-replay-user-workflows",
   "observed_dirty": 0,
   "observed_head": "30aa7ae86aa5df1eaff5154eb95dc371abd91754",
-  "owner": "replay_20260909",
+  "owner": "",
   "plan": "../plans/AR-0871.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make recording and strict replay complete, explicit, privacy-safe user workflows in both CLI and TUI.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Deliver record and replay user workflows",
-  "updated_at": "2026-09-09T00:28:50+00:00",
+  "updated_at": "2026-09-09T00:30:19+00:00",
   "worktree_key": "agent-systems-benchmark-record-replay-user-workflows"
 }
 ---
@@ -118,3 +118,7 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-09T00:27:40+00:00: Heartbeat by replay_20260909.
 
 - 2026-09-09T00:28:50+00:00: Heartbeat by replay_20260909.
+
+- 2026-09-09T00:30:19+00:00: Implemented explicit sealed recording and strict replay workflows
+  across asb-replay, CLI, TUI, and docs; signed commits 7b996dd and 30aa7ae; merged signed no-ff
+  dca243a; exact-head PR and all exact-main postmerge gates green; full workspace tests passed.
