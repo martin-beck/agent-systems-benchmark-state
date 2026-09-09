@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 172,
+  "task_revision": 173,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T05:39:07+00:00",
+  "updated_at": "2026-09-09T05:39:31+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -602,3 +602,10 @@ Implementation has not started. Read the linked plan before claiming.
   is required after publication authorization. Candidate for fresh review is
   bcbdfe03e77d815467cb4341e0b9c1abef05f48bb, tree 2b52b379968d2e37344f42c5416e7020c548d138, parent
   6e83e0893a0e64f2e529deae17147216eaf3cf17, package base c157cedc744373ef75aba686c00e97ce61aa3bfc.
+
+- 2026-09-09T05:39:31+00:00: Identity correction: the final review candidate is exactly commit
+  bcbdfe03e77d815467cb4341e0b9c1abef05f48b, tree 2b52b379968d2e37344f42c5416e7020c548d138, parent
+  6e83e0893a0e64f2e529deae17147216eaf3cf17. This supersedes the extra-character candidate typo in
+  the preceding prose note; frontmatter observed_head and next_action already contain the correct
+  exact object. The prior intermediate repair is exactly 6e83e0893a0e64f2e529deae17147216eaf3cf17,
+  tree b0c805783b616d3e748797c3228dbde40b88ec85, parent e4730653b112d733fb2a1157f65481663c4e073c.
