@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T03:48:25+00:00",
+  "updated_at": "2026-09-09T03:54:32+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -336,3 +336,6 @@ Implementation has not started. Read the linked plan before claiming.
   provenance. Therefore the required closed 31-JAR package-specific license applicability cannot
   currently be proven. Candidate c157cedc remains clean and unchanged; its generic same-SPDX reuse
   is not accepted evidence.
+
+- 2026-09-09T03:54:32+00:00: Recorded command exit 1; command argv SHA-256
+  68df855a7c2e6b145d72439f1790de4cb86accd19a20e354769c722bf4ab3f8f.
