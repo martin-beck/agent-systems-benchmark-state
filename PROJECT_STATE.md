@@ -11,7 +11,7 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #31 | `feature/native-platforms@bdaf9c108226` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #106 | `feature/one-line-local-install@bf9e9fe625da` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(install): add verified rootless bootstrap |
+| #106 | `feature/one-line-local-install@bf9e9fe625da` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(install): add verified rootless bootstrap |
 | #107 | `docs/local-llm-testing-recommendations@bda6cc8aa79d` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | docs: recommend deterministic LLM test modes |
 
 ## Recent workflows
@@ -23,7 +23,7 @@ Generated from local Git and GitHub. Do not edit.
 | 34321107289 | `bf9e9fe625da` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 34321107226 | `bf9e9fe625da` | pull_request | Formal assurance | completed:success |
 | 34321107216 | `bf9e9fe625da` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 34321107201 | `bf9e9fe625da` | pull_request | Repository quality | in_progress:- |
+| 34321107201 | `bf9e9fe625da` | pull_request | Repository quality | completed:success |
 | 34321107157 | `bf9e9fe625da` | pull_request | Huawei MIT source headers | completed:success |
 | 34320680770 | `bda6cc8aa79d` | pull_request | Emulated aarch64 portability | completed:success |
 | 34320680563 | `bda6cc8aa79d` | pull_request | Formal assurance | completed:success |
