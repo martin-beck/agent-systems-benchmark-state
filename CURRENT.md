@@ -8,7 +8,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Qualify pinned OpenJiuwen live execution. | Independent immutable review of b75e2fb; keep live support fail closed pending approval. | replay_20260906 |
-| P1 | [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md): Repair formal TLA artifact availability | Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification. | Hold local bridge 49ae13f and PR #120. AR-0906 is blocked on active AR-0907 hosted-evidence classification; after AR-0907 and AR-0906 integrate, rebase once, range-diff, rerun full gates, then exact-lease update PR #120. | contracts_20260906 |
 | P1 | [AR-0907](tasks/AR-0907-hosted-runner-evidence-classification.md): Classify hosted runner evidence without weakening native qualification | Separate rolling hosted portability checks from immutable native qualification evidence. | Monitor PR #123 exact head 32a8fe5b1bc0a1b84a876c077835f1b9d2a9be19; do not merge until every required check is terminal success and coordinator authorizes. | quality_20260906 |
 
 ## Open
@@ -16,6 +15,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | Repair/rebase the fail-closed TLA provenance pin, then rerun PR #119 exact-head CI; do not merge. | - |
+| P1 | [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md): Repair formal TLA artifact availability | Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification. | Hold local bridge 49ae13f and PR #120. AR-0906 is blocked on active AR-0907 hosted-evidence classification; after AR-0907 and AR-0906 integrate, rebase once, range-diff, rerun full gates, then exact-lease update PR #120. | - |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Run final exact-main and local post-merge verification using required native x86_64 kernel evidence and applicable pinned QEMU AArch64 portability checks; record native ARM64 PMU/eBPF as optional future evidence, then release. | - |
 
 ## Blocked
