@@ -13,17 +13,17 @@
   "id": "AR-0909",
   "next_action": "Stress the identity-bound embedded test serially and in parallel, add private-root cleanup negatives, then run full gates.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
-  "observed_dirty": 1,
-  "observed_head": "b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b",
+  "observed_dirty": 0,
+  "observed_head": "42fe45966a0b213e5d85f8f16604c4885e2a3dba",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0909.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-09T23:29:17+00:00",
+  "updated_at": "2026-09-09T23:29:23+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
