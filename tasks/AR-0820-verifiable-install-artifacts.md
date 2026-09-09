@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish verifiable native bundles and metadata that a small bootstrapper can select safely.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Publish verifiable installation artifacts",
-  "updated_at": "2026-09-09T05:32:59+00:00",
+  "updated_at": "2026-09-09T05:33:18+00:00",
   "worktree_key": "agent-systems-benchmark-install-artifacts"
 }
 ---
@@ -60,3 +60,6 @@ Implementation has not started. Read the linked plan before claiming.
   59dcef2463dc3af50fd1e39a41d059039ca47c8b21685e6428fc06efc807e210.
 
 - 2026-09-09T05:32:59+00:00: Heartbeat by codex-longrun-install-20260909.
+
+- 2026-09-09T05:33:18+00:00: Recorded command exit 0; command argv SHA-256
+  37650342dbf2fd2830f523e352270055c6f9a10965c8a214217bf1f3eaebc971.
