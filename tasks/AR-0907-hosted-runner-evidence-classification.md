@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T17:14:30+00:00",
+  "updated_at": "2026-09-09T17:14:53+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -84,3 +84,6 @@ patch release has advanced.
 
 - 2026-09-09T17:14:30+00:00: Recorded command exit 0; command argv SHA-256
   5a129cbafdf9833de0ae264d89a23ae673db92a86a1454144f6845bd486994dd.
+
+- 2026-09-09T17:14:53+00:00: Recorded command exit 1; command argv SHA-256
+  3840ca0770c999e00fefc1da5f7457a297a4cb4c3c1f19edef8fbd864cfe1167.
