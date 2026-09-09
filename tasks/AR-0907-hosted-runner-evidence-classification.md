@@ -2,7 +2,7 @@
 {
   "branch": "fix/hosted-runner-evidence-classification",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T22:36:46+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0702",
     "AR-0848"
@@ -12,15 +12,15 @@
   "observed_branch": "fix/hosted-runner-evidence-classification",
   "observed_dirty": 0,
   "observed_head": "f0b7b46db271cd9de5e89ab1d3cdd6cf86a662d0",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0907.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 133,
+  "task_revision": 134,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T19:57:21+00:00",
+  "updated_at": "2026-09-09T22:38:32+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -506,3 +506,7 @@ patch release has advanced.
   34398081515, quality 34398081527, emulated aarch64 34398081609, formal 34398081718. All twelve
   jobs are currently in progress; PR remains open/UNSTABLE solely pending checks. No merge or tree
   mutation.
+
+- 2026-09-09T22:38:32+00:00: Recovered expired claim formerly owned by quality_20260906. Expired
+  AR-0907 lease recovered after terminal PR #123 review; preserve approved f0b7b46 and amendment
+  lineage, require fresh claim before further mutation.
