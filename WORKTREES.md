@@ -40,8 +40,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-executable-guides` | `feature/executable-guides` | `5b62f9e7ef9d` | 0 | behind 125, ahead 0 |
 | `agent-systems-benchmark-execution-budgets` | `feature/execution-budgets` | `30a12ad33174` | 0 | behind 98, ahead 0 |
 | `agent-systems-benchmark-experiment-comparability` | `feature/experiment-comparability` | `eb5e84933830` | 0 | behind 257, ahead 0 |
-| `agent-systems-benchmark-extended-workloads` | `feature/extended-workloads` | `7d9191c99c0e` | 6 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-workloads/registry/v1/README.md`, `crates/asb-workloads/registry/v1/external-workloads.json`, `docs/WORKLOADS.md`, `tests/workloads/test_external_registry.py`, `tests/workloads/test_external_registry_validator.py`, `tools/quality/validate_external_registry.py` |
+| `agent-systems-benchmark-extended-workloads` | `feature/extended-workloads` | `8596a7fd0dba` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-extension-contracts` | `feature/extension-contracts` | `9e90c6a62861` | 0 | behind 311, ahead 0 |
 | `agent-systems-benchmark-external-code-workloads` | `feature/external-code-workloads` | `d6875cc7bb69` | 0 | behind 106, ahead 0 |
 | `agent-systems-benchmark-fault-assurance` | `feature/fault-assurance` | `e6c623113c15` | 0 | behind 223, ahead 0 |
