@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0877",
-  "next_action": "Verify an authoritative durable TLA+ 1.8.0 release asset and design the digest-checked online/offline acquisition boundary before implementation.",
+  "next_action": "Audit authoritative TLA+ v1.8.0 release metadata and replace the current partial repin with bounded approved-host acquisition, exact offline cache verification, fail-closed mutation fixtures, and preserved TLC/Alloy proofs.",
   "observed_branch": "fix/formal-tla-artifact-availability",
   "observed_dirty": 0,
   "observed_head": "dca243ab7b8cbb0b2b49a568dec99c517e0719c2",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T01:01:49+00:00",
+  "updated_at": "2026-09-09T01:02:47+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -42,3 +42,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T01:01:44+00:00: Recorded command exit 0; command argv SHA-256
   dd885d3beb1c7712be2c40fc7a268651d94964934cea87ee439edf2d698d0f77.
+
+- 2026-09-09T01:02:47+00:00: Claimed clean isolated worktree
+  /srv/data/projects/agent-systems-benchmark-formal-tla-artifact-availability at exact product main
+  dca243ab7b8cbb0b2b49a568dec99c517e0719c2 after reading required docs and full plan. Initial audit
+  found existing signed commit 7add29f already changed four owned paths to GitHub API asset
+  551007111, SHA-256 4c7bb1f6..., and 4487756 bytes, but the current shell fetch still follows
+  redirects generically and lacks the plan's metadata/approved-final-host, create-new atomic
+  concurrency, hardlink/owner-mode, bounded retry, and comprehensive offline/cache fault boundary.
+  Preserve this partial repin as provenance and implement the remaining fail-closed acquisition
+  contract without changing authoritative TLA/Alloy models.
