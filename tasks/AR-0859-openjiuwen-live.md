@@ -7,7 +7,7 @@
     "AR-0858"
   ],
   "id": "AR-0859",
-  "next_action": "Fresh immutable review of e407748; keep support fail closed and do not publish.",
+  "next_action": "Hold PR 124 head e407748; repair shared AR-0877 TLA artifact failure, then rerun exact-head CI.",
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "e4077483eb04f2f3f2b7f1ac48e28dafb8c51b11",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 178,
+  "task_revision": 179,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T18:23:31+00:00",
+  "updated_at": "2026-09-09T18:24:57+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -593,3 +593,16 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-09T18:23:31+00:00: Recorded command exit 0; command argv SHA-256
   8dc42c0cdfebad011573d549fc841ed2874c4f69aa94ccaa648452e4a3d4d130.
+
+- 2026-09-09T18:24:57+00:00: Published independently approved immutable candidate as PR #124
+  https://github.com/martin-beck/agent-systems-benchmark/pull/124 with exact head
+  e4077483eb04f2f3f2b7f1ac48e28dafb8c51b11 and base main; remote branch feature/openjiuwen-live
+  binds that exact OID and product tree remains clean. Fresh exact-head runs: AWQ 34388676071 and
+  source headers 34388676122 succeeded; Rust 34388676114, repository quality 34388676065, native
+  34388676137, emulated aarch64 34388676093, fault 34388676126, and remaining formal jobs in
+  34388676172 were active at checkpoint. Formal TLC/Alloy job 102591309122 failed before model
+  execution with curl exit 63 Maximum file size exceeded while fetching the known
+  mutable/unavailable TLA release asset; this is the shared AR-0877 artifact-availability defect,
+  not an AR-0859 product/test failure. The exact cached digest-pinned local TLC/Alloy gate passed
+  before publication. Do not alter or merge PR #124; rerun exact-head formal only after AR-0877
+  repairs the immutable artifact boundary.

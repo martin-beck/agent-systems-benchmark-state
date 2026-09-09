@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Qualify pinned OpenJiuwen live execution. | Fresh immutable review of e407748; keep support fail closed and do not publish. | replay_20260906 |
+| P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Qualify pinned OpenJiuwen live execution. | Hold PR 124 head e407748; repair shared AR-0877 TLA artifact failure, then rerun exact-head CI. | replay_20260906 |
 | P1 | [AR-0907](tasks/AR-0907-hosted-runner-evidence-classification.md): Classify hosted runner evidence without weakening native qualification | Separate rolling hosted portability checks from immutable native qualification evidence. | Monitor PR #123 exact head 32a8fe5b1bc0a1b84a876c077835f1b9d2a9be19; do not merge until every required check is terminal success and coordinator authorizes. | quality_20260906 |
 
 ## Open
