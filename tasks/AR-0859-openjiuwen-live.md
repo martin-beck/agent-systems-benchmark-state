@@ -15,11 +15,11 @@
   "plan": "../plans/AR-0859.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T07:13:44+00:00",
+  "updated_at": "2026-09-09T09:31:46+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -127,3 +127,12 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   Dependency-ready repair AR-0880 was added without a cycle and owns the exact provenance
   lock/manifest/import-test paths. Resume AR-0859 only after AR-0880 completes reviewed immutable
   closure repair.
+
+- 2026-09-09T09:31:46+00:00: External blocker resolved by released AR-0880 at signed merge
+  2a85872285e6de374e7ea48e3b062e4134bec49e. The exact OpenJiuwen runtime lock now contains the
+  closed 170-package oracle including prompt-toolkit 3.0.53 and opentelemetry-sdk 1.44.0; pinned
+  fresh online and hash-required offline installation/import/entrypoint verification passed locally
+  and in exact-head/exact-main quality gates. Resume AR-0859 to open for its distinct
+  credential-free loopback live qualification. Existing declared worktree is clean at preserved
+  pre-repair head 513c1d926458f1cb6a26d3f7277dc7d9b1496df3 and must be refreshed from exact current
+  origin/main before product mutation.
