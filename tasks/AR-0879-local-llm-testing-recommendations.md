@@ -2,7 +2,7 @@
 {
   "branch": "docs/local-llm-testing-recommendations",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T09:50:07+00:00",
+  "claim_expires": "2026-09-09T09:51:10+00:00",
   "depends_on": [
     "AR-0312",
     "AR-0313",
@@ -25,9 +25,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Research deterministic LLM test doubles and local inference options, document ASB recommendations, and create implementation-ready follow-up ARs.",
-  "task_revision": 138,
+  "task_revision": 139,
   "title": "Plan deterministic LLM doubles and local inference",
-  "updated_at": "2026-09-09T07:50:54+00:00",
+  "updated_at": "2026-09-09T07:51:10+00:00",
   "worktree_key": "agent-systems-benchmark-local-llm-testing-recommendations"
 }
 ---
@@ -416,3 +416,5 @@ honestly, and do not implement a simulator, mock server, inference backend, or u
 
 - 2026-09-09T07:50:54+00:00: Recorded command exit 1; command argv SHA-256
   2cd3ff7e2537bfb4569a2fb0b8dea1f9634a1b958305cb3c4da0952cbba13dd4.
+
+- 2026-09-09T07:51:10+00:00: Heartbeat by codex-asb-local-llm-research-20260909.
