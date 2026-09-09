@@ -8,7 +8,7 @@
     "AR-0848"
   ],
   "id": "AR-0907",
-  "next_action": "Re-run isolated ETXTBSY test, then remaining workspace docs/build and security gates; commit only after green.",
+  "next_action": "Hold f0b7b46 for fresh immutable review; then guarded PR #123 update and exact-head CI after approval.",
   "observed_branch": "fix/hosted-runner-evidence-classification",
   "observed_dirty": 0,
   "observed_head": "f0b7b46db271cd9de5e89ab1d3cdd6cf86a662d0",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 130,
+  "task_revision": 131,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T19:51:36+00:00",
+  "updated_at": "2026-09-09T19:52:07+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -474,3 +474,23 @@ patch release has advanced.
 
 - 2026-09-09T19:51:30+00:00: Recorded command exit 0; command argv SHA-256
   b021e1514cad7078d7d3a60ea3a29c71fe725c5fa66946b349c0ee1ba0930fea.
+
+- 2026-09-09T19:52:07+00:00: AR-0907 hosted-route repair is complete as clean SSH-signed+DCO
+  candidate f0b7b46db271cd9de5e89ab1d3cdd6cf86a662d0, tree ecbac455936f0681d3c5dc332272ccbcb9f22160,
+  parent reviewed 5e58ae5cdbae7b19f08a2135674cea31d94cc7ba, exact five-path successor scope. The
+  public GitHub-hosted workflow now passes explicit execution-class github-hosted to routing and
+  collection; an exact 24.04.4 hosted image remains hosted-portability, while native-qualification
+  requires the distinct trusted-native route and unchanged native validator. Hosted schema digest is
+  updated to admit hosted 24.04.4 without claiming exact-native-release. Executable exact-release
+  routing validates a hosted artifact and proves no native artifact; forged cross-route dual
+  artifacts are atomically deleted. Full and partial hosted projections remain covered. Native
+  validator/schema/evidence paths are byte-unchanged. Gates green: focused 11/11, all platform
+  57/57, Ruff, strict focused mypy with imported native boundary skipped, actionlint, zizmor, schema
+  digest, diff-check, source headers 18, contract 4, artifact 6, repository policy/DCO, failure-path
+  partition, Gitleaks, cargo deny/audit, fmt, all-target locked clippy -D warnings, full locked
+  workspace tests/docs/doc build/release build, and coverage floors. One unrelated workspace test
+  initially hit ETXTBSY; isolated exact rerun passed and the subsequent full workspace run passed.
+  The 19:49 exit 1 was operator-only missing PYTHONPATH for source-header import after
+  policy/failure gates passed; corrected remaining batch passed. Earlier focused failures exposed
+  and drove required CLI/schema fixture updates, then passed. origin/main remained exact b6d04a8 at
+  scope review. Candidate is unpublished pending independent review.
