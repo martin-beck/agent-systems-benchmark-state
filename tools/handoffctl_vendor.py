@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# Copyright (C) Huawei Technologies Co., Ltd. 2026. All rights reserved.
+# SPDX-License-Identifier: MIT
 """Create and verify self-contained handoffctl vendor snapshots."""
 
 import argparse
@@ -16,9 +18,11 @@ LOCK_NAME = "coordinator.vendor.json"
 SOURCE_FILES: tuple[tuple[str, str], ...] = (
     ("tools/handoffctl", "tools/handoffctl"),
     ("tools/handoffctl.py", "tools/handoffctl.py"),
+    ("tools/sqlite_storage.py", "tools/sqlite_storage.py"),
     ("tools/status_renderer.py", "tools/status_renderer.py"),
     ("tools/vendor.py", "tools/handoffctl_vendor.py"),
     ("tests/test_handoffctl.py", "tests/test_handoffctl.py"),
+    ("tests/test_sqlite_storage.py", "tests/test_sqlite_storage.py"),
     (
         "schema/project-config.schema.json",
         "schema/handoffctl-project-config.schema.json",
@@ -27,12 +31,18 @@ SOURCE_FILES: tuple[tuple[str, str], ...] = (
         "schema/project-binding.schema.json",
         "schema/handoffctl-project-binding.schema.json",
     ),
+    (
+        "schema/backend-config.schema.json",
+        "schema/handoffctl-backend-config.schema.json",
+    ),
     ("formal/handoffctl/Handoffctl.tla", "formal/handoffctl/Handoffctl.tla"),
     ("formal/handoffctl/Handoffctl.cfg", "formal/handoffctl/Handoffctl.cfg"),
     ("formal/handoffctl/HandoffctlLocks.tla", "formal/handoffctl/HandoffctlLocks.tla"),
     ("formal/handoffctl/HandoffctlLocks.cfg", "formal/handoffctl/HandoffctlLocks.cfg"),
     ("formal/handoffctl/HandoffctlRun.tla", "formal/handoffctl/HandoffctlRun.tla"),
     ("formal/handoffctl/HandoffctlRun.cfg", "formal/handoffctl/HandoffctlRun.cfg"),
+    ("formal/handoffctl/HandoffctlStorage.tla", "formal/handoffctl/HandoffctlStorage.tla"),
+    ("formal/handoffctl/HandoffctlStorage.cfg", "formal/handoffctl/HandoffctlStorage.cfg"),
     ("formal/handoffctl/README.md", "formal/handoffctl/README.md"),
     ("formal/handoffctl/verify.sh", "formal/handoffctl/verify.sh"),
     ("formal/handoffctl/HandoffctlBinding.tla", "formal/handoffctl/HandoffctlBinding.tla"),

@@ -8,20 +8,24 @@ name: handoffctl formal verification
     paths:
       - "tools/handoffctl"
       - "tools/handoffctl.py"
+      - "tools/sqlite_storage.py"
       - "tools/status_renderer.py"
       - "tests/test_status_renderer.py"
       - "tests/test_handoffctl.py"
       - "tests/test_handoffctl_vendor.py"
+      - "tests/test_sqlite_storage.py"
       - "formal/handoffctl/**"
       - ".github/workflows/handoffctl-formal.yml"
   pull_request:
     paths:
       - "tools/handoffctl"
       - "tools/handoffctl.py"
+      - "tools/sqlite_storage.py"
       - "tools/status_renderer.py"
       - "tests/test_status_renderer.py"
       - "tests/test_handoffctl.py"
       - "tests/test_handoffctl_vendor.py"
+      - "tests/test_sqlite_storage.py"
       - "formal/handoffctl/**"
       - ".github/workflows/handoffctl-formal.yml"
 

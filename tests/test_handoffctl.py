@@ -1,3 +1,6 @@
+# Copyright (C) Huawei Technologies Co., Ltd. 2026. All rights reserved.
+# SPDX-License-Identifier: MIT
+
 """Fault, consistency, claim and generation tests for handoffctl."""
 
 import argparse
@@ -54,6 +57,8 @@ def configure_child(root_value: str) -> None:
     CORE.REPLICA_BLOCKED = CORE.RUNTIME / "replica-blocked.json"
     CORE.PROJECT_CONFIG = root / ".handoffctl.json"
     CORE.BINDING = root / "coordinator.binding.json"
+    CORE.BACKEND_CONFIG = root / "coordinator.backend.json"
+    CORE.DATABASE = CORE.RUNTIME / "coordinator.sqlite3"
 
 
 def racing_claim(root_value: str, start: Any, owner: str, outcomes: Any) -> None:
@@ -147,6 +152,8 @@ class HandoffTest(unittest.TestCase):
         CORE.REPLICA_BLOCKED = CORE.RUNTIME / "replica-blocked.json"
         CORE.PROJECT_CONFIG = root / ".handoffctl.json"
         CORE.BINDING = root / "coordinator.binding.json"
+        CORE.BACKEND_CONFIG = root / "coordinator.backend.json"
+        CORE.DATABASE = CORE.RUNTIME / "coordinator.sqlite3"
         CORE.TASKS.mkdir()
         (root / "plans").mkdir()
         CORE.PROJECT_CONFIG.write_text(
@@ -998,7 +1005,11 @@ class HandoffTest(unittest.TestCase):
         large = self.root / "large.md"
         large.write_text("x" * 200001)
         sample_uuid = "33333333-3333-4333-8333-333333333333"
-        for relative in (Path("tools/handoffctl.py"), Path("tests/test_handoffctl.py")):
+        for relative in (
+            Path("tools/handoffctl.py"),
+            Path("tests/test_handoffctl.py"),
+            Path("tests/test_sqlite_storage.py"),
+        ):
             fixture = self.root / relative
             fixture.parent.mkdir(exist_ok=True)
             fixture.write_text(sample_uuid)
@@ -1009,6 +1020,7 @@ class HandoffTest(unittest.TestCase):
         self.assertIn("notes.md: session-like UUID", errors)
         self.assertNotIn("tools/handoffctl.py: session-like UUID", errors)
         self.assertNotIn("tests/test_handoffctl.py: session-like UUID", errors)
+        self.assertNotIn("tests/test_sqlite_storage.py: session-like UUID", errors)
         self.assertNotIn("coordinator.binding.json: session-like UUID", errors)
         self.assertIn("coordinator.binding.json: possible credential", errors)
 
@@ -1171,6 +1183,16 @@ class HandoffTest(unittest.TestCase):
         self.assertEqual(2, len(state["worktrees"]))
         self.assertEqual(1, state["worktrees"][0]["dirty"])
         self.assertEqual("DETACHED", state["worktrees"][1]["branch"])
+
+    def test_changed_paths_preserves_existing_and_deleted_semantics(self) -> None:
+        changed = self.root / "changed.md"
+        changed.write_text("after")
+        deleted = self.root / "deleted.md"
+        unchanged = self.root / "unchanged.md"
+        unchanged.write_text("same")
+        before = {changed: "before", deleted: "before", unchanged: "same"}
+        self.assertEqual([changed], CORE.changed_paths(before))
+        self.assertEqual([changed, deleted], CORE.changed_paths(before, include_deleted=True))
 
     def test_reconcile_and_live_staleness(self) -> None:
         self.make_task()

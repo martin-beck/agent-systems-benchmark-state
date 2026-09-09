@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/martin-beck/agent-workflow-coordinator/schema/backend-config.schema.json",
+  "title": "handoffctl permanent storage backend selection",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "project_id", "backend"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "project_id": {"type": "string", "format": "uuid"},
+    "backend": {"enum": ["sqlite", "git"]}
+  }
+}

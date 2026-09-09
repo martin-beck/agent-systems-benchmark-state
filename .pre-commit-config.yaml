@@ -1,0 +1,10 @@
+repos:
+  - repo: local
+    hooks:
+      - id: huawei-mit-source-headers
+        name: Huawei MIT source headers
+        entry: python3 tools/check_source_headers.py
+        language: system
+        pass_filenames: false
+        always_run: true
+        stages: [pre-commit]

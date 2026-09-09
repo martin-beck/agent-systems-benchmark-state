@@ -6,11 +6,11 @@ the Python implementation, not a replacement implementation.
 
 ## Transition contract
 
-Every accepted lifecycle command increments `task_revision` exactly once, updates the
-generated projections under the same exclusive repository lock, validates the
-result, creates at most one local state commit, and releases the lock. A rejected
-command and any detected pre-commit failure leave the task revision, task state,
-owner and generated projections unchanged.
+Every accepted lifecycle command increments `task_revision` exactly once and validates the result.
+For Git authority, the task and generated projections update under the same repository lock and a
+detected pre-commit failure restores them. For SQLite authority, one database transaction commits
+the task first and generated projections are recoverable output. A rejected command leaves
+authoritative revision, task state and owner unchanged.
 
 | Command | Required source | Required actor/revision | Result |
 | --- | --- | --- | --- |
@@ -36,6 +36,13 @@ journal evidence. Arbitrary command correctness remains outside the proof.
 The linearization point is the successful transition while the process holds the lock below Git's
 common directory. Every worktree of one local clone resolves the same lock path. Expected revisions
 are checked only after acquisition, so two processes observing one revision cannot both mutate it.
+
+For the default SQLite backend, the linearization point is the successful conditional task update
+and commit inside one `BEGIN IMMEDIATE` transaction. The database enforces active-owner, branch and
+worktree uniqueness. The repository-common lock protects only disposable projection generation;
+it is not the SQLite mutation lock. `HandoffctlStorage.tla` models one transaction owner, monotonic
+revision accounting, prepare-before-selector migration, projection-after-commit and optional
+publication that cannot roll back local authority.
 
 ## Permanent project binding
 
@@ -72,6 +79,11 @@ project and one foreign caller, including rejection without mutation and fair pr
 exhaustive proofs of the abstractions, not proofs of Linux, Git, Python, or the filesystem
 implementation.
 
+`HandoffctlStorage.tla` checks both selected backends, transaction mutual exclusion, one accepted
+revision increment per process, prepared SQLite authority before selector switch, eventual command
+completion and eventual migration switch under weak fairness. Real independent-process tests connect
+that abstraction to SQLite WAL, busy deadlines, conditional updates and database constraints.
+
 ## Refinement obligations and assumptions
 
 The implementation satisfies the model only while all of these obligations
@@ -90,6 +102,12 @@ hold:
    transaction require reconciliation and are not claimed as atomic.
 5. A failed push after a successful local commit does not roll back that durable
    commit; replication is retried by reconciliation.
+6. SQLite processes use separate connections to one database on the same host and supported local
+   filesystem. WAL shared-memory locking on NFS or other rejected network filesystems is outside the
+   contract. The busy timeout bounds contention; weakly fair scheduling is required for eventual
+   writer completion.
+7. The SQLite transaction is durable before projection or publication. Projection files may be
+   temporarily stale after a crash and are recoverable with `reconcile`.
 
 The focused implementation tests exercise the real `flock`, atomic replacement,
 rollback, concurrent mutation/reconciliation, revision fencing, ownership and
@@ -98,15 +116,15 @@ generated-view behavior. The model and tests must both pass before a
 
 ## CI scope
 
-`.github/workflows/handoffctl-formal.yml` is path-filtered to the handoffctl
-implementation, its focused test, this model, and the workflow itself. Ordinary
-high-frequency coordinator-state commits do not start this gate.
+`.github/workflows/verify.yml` runs these models for coordinator changes. Downstream integrations
+use path-filtered formal gates so ordinary high-frequency coordinator-state commits do not start
+the expensive model checker.
 
 ## Run locally
 
 ```bash
 formal/handoffctl/verify.sh
-uv run python -m unittest tests.test_handoffctl
+uv run python -m unittest discover -s tests -p 'test_*.py'
 ```
 
 `verify.sh` downloads the official TLA+ 1.7.4 verifier into a temporary
