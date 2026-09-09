@@ -27,7 +27,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ci-artifact-quota-resilience` | `feature/ci-artifact-quota-resilience` | `7d98653e7e7f` | 0 | behind 197, ahead 0 |
 | `agent-systems-benchmark-cli-multi-agent-provider-selection` | `feature/cli-multi-agent-provider-selection` | `0d9d317716d5` | 0 | behind 43, ahead 0 |
 | `agent-systems-benchmark-contract-consistency` | `feature/contract-consistency` | `289b2711774b` | 0 | behind 107, ahead 0 |
-| `agent-systems-benchmark-control-history-analysis-contract` | `feature/control-history-analysis-contract` | `7e17c61ca773` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-control-history-analysis-contract` | `feature/control-history-analysis-contract` | `7e17c61ca773` | 2 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-control/src/protocol.rs`, `crates/asb-control/tests/control.rs` |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 320, ahead 0 |
 | `agent-systems-benchmark-credential-fd-helper-resolvers` | `feature/credential-fd-helper-resolvers` | `ef5c40762e27` | 0 | behind 48, ahead 0 |
 | `agent-systems-benchmark-credential-reference-boundary` | `feature/credential-reference-boundary` | `5d62546b5d56` | 0 | behind 68, ahead 0 |
@@ -107,8 +108,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `410ecc95b80e` | 0 | behind 285, ahead 0 |
 | `agent-systems-benchmark-terminal-interface` | `feature/terminal-interface` | `d2e7b66ff6af` | 0 | behind 230, ahead 0 |
 | `agent-systems-benchmark-terminal-workloads` | `feature/terminal-workloads` | `3e67bdfc3ce0` | 0 | behind 47, ahead 0 |
-| `agent-systems-benchmark-tla-source-build-provenance` | `feature/tla-source-build-provenance` | `c157cedc7443` | 8 | behind 8, ahead 1 |
-| changed files | - | - | - | `formal/tests/tla_source_build.rs`, `formal/tla-provenance/build.sh`, `formal/tla-provenance/fixtures/source-mutations.json`, `formal/tla-provenance/fixtures/source-positive.json`, `formal/tla-provenance/source-build.toml`, `formal/tla-provenance/verify.sh`, `formal/tla-provenance/licenses/`, `formal/tla-provenance/verify.py` |
+| `agent-systems-benchmark-tla-source-build-provenance` | `feature/tla-source-build-provenance` | `c157cedc7443` | 10 | behind 8, ahead 1 |
+| changed files | - | - | - | `docs/formal/TLA_TOOL_PROVENANCE.md`, `formal/tests/tla_source_build.rs`, `formal/tla-provenance/README.md`, `formal/tla-provenance/build.sh`, `formal/tla-provenance/fixtures/source-mutations.json`, `formal/tla-provenance/fixtures/source-positive.json`, `formal/tla-provenance/source-build.toml`, `formal/tla-provenance/verify.sh`, `formal/tla-provenance/licenses/`, `formal/tla-provenance/verify.py` |
 | `agent-systems-benchmark-trace-interoperability` | `feature/trace-interoperability` | `921cf004f8aa` | 0 | behind 102, ahead 0 |
 | `agent-systems-benchmark-tui-history-analysis` | `feature/tui-history-analysis` | `7fd21bbeddc5` | 0 | behind 2, ahead 0 |
 | `agent-systems-benchmark-tui-multi-agent-provider-selection` | `feature/tui-multi-agent-provider-selection` | `679244e3af61` | 0 | behind 28, ahead 0 |
