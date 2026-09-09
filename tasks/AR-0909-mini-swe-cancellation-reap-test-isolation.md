@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-09T23:47:49+00:00",
+  "updated_at": "2026-09-09T23:50:35+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -243,3 +243,6 @@ classified.
   green. The first coverage attempt hit an unrelated asb-metrics ProbeRejected/MalformedEvidence
   race; exact instrumented failing test immediately passed and one diagnosed full rerun passed every
   floor. Disk pressure was handled only with cargo clean on AR-0909-owned target directories.
+
+- 2026-09-09T23:50:35+00:00: Recorded command exit 0; command argv SHA-256
+  a6572f1ff3c1f5ef2c36cbf9585533480bfb0d679b9eb92f3c85b8771de7f915.
