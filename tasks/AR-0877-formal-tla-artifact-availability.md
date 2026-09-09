@@ -11,17 +11,17 @@
   "id": "AR-0877",
   "next_action": "Independent immutable review of f80c53f0; publish only after approval, then require exact-head CI and post-merge exact-main verification.",
   "observed_branch": "fix/formal-tla-artifact-availability",
-  "observed_dirty": 4,
-  "observed_head": "f80c53f0cdf5be9f81715009f13fbc6a050093ba",
+  "observed_dirty": 0,
+  "observed_head": "55fdd686eb1a4a8583fd37a088b20e5edb7e3b89",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0877.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T14:20:27+00:00",
+  "updated_at": "2026-09-09T14:20:33+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
