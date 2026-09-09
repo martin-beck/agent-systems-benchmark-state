@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**165 ARs tracked** across 4 active status categories.
+**165 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 8 |
-| **Planned** | Defined work awaiting promotion or dependencies | 42 |
+| **Planned** | Defined work awaiting promotion or dependencies | 41 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 114 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -199,7 +199,7 @@ flowchart LR
         AR_0888["AR-0888 - Done"]:::status_done
         AR_0889["AR-0889 - Done"]:::status_done
         AR_0890["AR-0890 - Planned"]:::status_planned
-        AR_0891["AR-0891 - Planned"]:::status_planned
+        AR_0891["AR-0891 - Open"]:::status_open
         AR_0892["AR-0892 - Planned"]:::status_planned
         AR_0893["AR-0893 - Planned"]:::status_planned
         AR_0894["AR-0894 - Planned"]:::status_planned
@@ -929,6 +929,12 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0880](tasks/AR-0880-openjiuwen-runtime-closure.md): Repair OpenJiuwen runtime closure | replay_20260906 | Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification. | Fresh independent immutable review of strengthened exact candidate 34c1bc0eea8164dbe9349f7a3b26649d8aaa02b2 (tree 49fe1f2fb06d487c2c4384346934465fda29a9de, parent 513c1d926458f1cb6a26d3f7277dc7d9b1496df3); hold publication and rebase because current origin/main e89a2e44db829e429dedadd7a7f2ee408f338acf has advanced. |
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0891](tasks/AR-0891-local-inference-provider-profiles.md): Qualify local inference provider profiles | Unclaimed | Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server. | Qualify grouped Ollama, llama.cpp, vLLM, and LocalAI profiles with exact engine, model, hardware, protocol, isolation, and reproducibility evidence. |
+
 ### Blocked (8)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -942,7 +948,7 @@ flowchart LR
 | P1 | [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md): Repair formal TLA artifact availability | Unclaimed | Repair the formal workflow&#x27;s unavailable TLA+ artifact pin without weakening provenance or offline verification. | Keep the four-path prototype unchanged. Obtain an authoritative immutable TLA+ 1.8.0 artifact or authorization for a reproducible source-build boundary; then refresh metadata once, finish deterministic faults, and run TLC/Alloy. Do not chase replaceable pre-release assets. |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Monitor exact-main post-merge checks at 2219839 and run local post-merge verification. Retain AR-0202 in progress until genuine privileged native aarch64 evidence is recorded; then complete final review and release. |
 
-### Planned (42)
+### Planned (41)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -980,7 +986,6 @@ flowchart LR
 | P1 | [AR-0873](tasks/AR-0873-ci-workflow-captures.md): Generate CI workflow screenshots | Unclaimed | Produce reproducible screenshots and text equivalents from example workflows actually executed in CI. | Generate privacy-safe CLI and TUI workflow screenshots from real synthetic CI executions. |
 | P1 | [AR-0874](tasks/AR-0874-automatic-workflow-refresh.md): Automate workflow documentation refresh | Unclaimed | Automatically refresh or reject stale workflow documentation and CI captures when essential user-visible behavior changes. | Add essential-change detection, deterministic regeneration, and reviewed update automation for workflows and captures. |
 | P1 | [AR-0890](tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Unclaimed | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. |
-| P1 | [AR-0891](tasks/AR-0891-local-inference-provider-profiles.md): Qualify local inference provider profiles | Unclaimed | Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server. | Qualify grouped Ollama, llama.cpp, vLLM, and LocalAI profiles with exact engine, model, hardware, protocol, isolation, and reproducibility evidence. |
 | P1 | [AR-0892](tasks/AR-0892-llm-mode-comparative-evidence.md): Compare LLM test and inference evidence modes | Unclaimed | Quantify what each LLM execution mode proves without pooling unlike evidence or hiding harness saturation. | Execute balanced synthetic, strict replay, local inference, and remote live comparisons and publish bounded claims and capacity evidence. |
 | P1 | [AR-0893](tasks/AR-0893-cli-local-llm-setup.md): Document CLI setup for LLM doubles and local inference | Unclaimed | Provide executable beginner-safe CLI workflows for negotiated LLM modes without claiming unfinished TUI parity. | Add concise CLI setup, preflight, run, inspect, compare, and teardown workflows only for exact supported mock and local profiles. |
 | P1 | [AR-0895](tasks/AR-0895-verify-coordination-content.md): Verify every coordination-content pull request | Unclaimed | Close the workflow path-filter gap that lets coordination-content pull requests skip strict state consistency and DCO checks. | Make task, plan, CURRENT.md, and STATUS.md pull-request changes trigger exact-head Coordination verification and DCO, with path-filter regression tests. |

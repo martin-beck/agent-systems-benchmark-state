@@ -9,6 +9,12 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0880](tasks/AR-0880-openjiuwen-runtime-closure.md): Repair OpenJiuwen runtime closure | Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification. | Fresh independent immutable review of strengthened exact candidate 34c1bc0eea8164dbe9349f7a3b26649d8aaa02b2 (tree 49fe1f2fb06d487c2c4384346934465fda29a9de, parent 513c1d926458f1cb6a26d3f7277dc7d9b1496df3); hold publication and rebase because current origin/main e89a2e44db829e429dedadd7a7f2ee408f338acf has advanced. | replay_20260906 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0891](tasks/AR-0891-local-inference-provider-profiles.md): Qualify local inference provider profiles | Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server. | Qualify grouped Ollama, llama.cpp, vLLM, and LocalAI profiles with exact engine, model, hardware, protocol, isolation, and reproducibility evidence. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -60,7 +66,6 @@ Never edit this file directly.
 | P1 | [AR-0873](tasks/AR-0873-ci-workflow-captures.md): Generate CI workflow screenshots | Produce reproducible screenshots and text equivalents from example workflows actually executed in CI. | Generate privacy-safe CLI and TUI workflow screenshots from real synthetic CI executions. | - |
 | P1 | [AR-0874](tasks/AR-0874-automatic-workflow-refresh.md): Automate workflow documentation refresh | Automatically refresh or reject stale workflow documentation and CI captures when essential user-visible behavior changes. | Add essential-change detection, deterministic regeneration, and reviewed update automation for workflows and captures. | - |
 | P1 | [AR-0890](tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. | - |
-| P1 | [AR-0891](tasks/AR-0891-local-inference-provider-profiles.md): Qualify local inference provider profiles | Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server. | Qualify grouped Ollama, llama.cpp, vLLM, and LocalAI profiles with exact engine, model, hardware, protocol, isolation, and reproducibility evidence. | - |
 | P1 | [AR-0892](tasks/AR-0892-llm-mode-comparative-evidence.md): Compare LLM test and inference evidence modes | Quantify what each LLM execution mode proves without pooling unlike evidence or hiding harness saturation. | Execute balanced synthetic, strict replay, local inference, and remote live comparisons and publish bounded claims and capacity evidence. | - |
 | P1 | [AR-0893](tasks/AR-0893-cli-local-llm-setup.md): Document CLI setup for LLM doubles and local inference | Provide executable beginner-safe CLI workflows for negotiated LLM modes without claiming unfinished TUI parity. | Add concise CLI setup, preflight, run, inspect, compare, and teardown workflows only for exact supported mock and local profiles. | - |
 | P1 | [AR-0895](tasks/AR-0895-verify-coordination-content.md): Verify every coordination-content pull request | Close the workflow path-filter gap that lets coordination-content pull requests skip strict state consistency and DCO checks. | Make task, plan, CURRENT.md, and STATUS.md pull-request changes trigger exact-head Coordination verification and DCO, with path-filter regression tests. | - |
