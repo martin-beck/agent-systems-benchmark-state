@@ -15,7 +15,7 @@
     "AR-0869"
   ],
   "id": "AR-0876",
-  "next_action": "Monitor PR #93 exact-head CI at 251d676; preempt feature work on any failure and repair same branch.",
+  "next_action": "Monitor PR #93 exact-head CI at 7c9daf7; preempt on failure and repair same branch.",
   "observed_branch": "feature/provider-aware-agent-launch",
   "observed_dirty": 0,
   "observed_head": "7c9daf795b02d1692e87a6be4d0087c163050ad3",
@@ -25,9 +25,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply validated provider selections at the authoritative agent launch boundary and reject conflicting runtime configuration.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Wire provider-aware agent launches",
-  "updated_at": "2026-09-09T01:06:32+00:00",
+  "updated_at": "2026-09-09T01:06:53+00:00",
   "worktree_key": "agent-systems-benchmark-provider-aware-agent-launch"
 }
 ---
@@ -212,3 +212,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T01:06:32+00:00: Recorded command exit 0; command argv SHA-256
   f2dad8c5e2ba3038e703841a610082e1c4b3888488207889e5e917cd68aa5a1d.
+
+- 2026-09-09T01:06:53+00:00: Final review found the adapter projection was being synthesized by the
+  CLI. Tightened it in signed commit 26af8e6 to derive from OpenAiProfile::translate, with private
+  projection fields/getters and exact per-adapter model/API mode; focused tests passed. A second
+  formal CI retry showed GitHub replaced the TLC asset again; signed commit 7c9daf7 pins the current
+  release URL bytes (asset 551679598, 4489230 bytes, digest 13885c09...). Local temporal runner
+  passes. PR #93 now reruns at 7c9daf7.
