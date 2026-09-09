@@ -2,7 +2,7 @@
 {
   "branch": "feature/tla-source-build-provenance",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-09T05:09:52+00:00",
   "depends_on": [
     "AR-0003",
     "AR-0901",
@@ -13,15 +13,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "",
+  "owner": "replay_20260906",
   "plan": "../plans/AR-0878.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T02:09:49+00:00",
+  "updated_at": "2026-09-09T02:09:52+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -38,3 +38,5 @@ Implementation has not started. Read the linked plan before claiming.
   paths are disjoint from active AR-0806 TUI history and AR-0872 workflow documentation, and AR-0877
   is released open with its four-path prototype preserved. Promote the dependency-free provenance
   repair to resolve the exact mutable-upstream blocker.
+
+- 2026-09-09T02:09:52+00:00: Claimed by replay_20260906.
