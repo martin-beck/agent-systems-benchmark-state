@@ -10,7 +10,7 @@
     "AR-0871"
   ],
   "id": "AR-0872",
-  "next_action": "Push 328de90, update PR #94 to exact head, and monitor the full required CI set.",
+  "next_action": "Create a signed no-ff integration merge from current origin/main, run post-merge checks, fast-forward origin/main, and reconcile.",
   "observed_branch": "docs/beginner-workflows",
   "observed_dirty": 0,
   "observed_head": "328de90ef1ed3ba391634009a855d731b1322a53",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish linked beginner workflows for setup, multi-agent runs, progress, comparison, recording, and replay with and without the TUI.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "Publish beginner workflow documentation",
-  "updated_at": "2026-09-09T01:55:51+00:00",
+  "updated_at": "2026-09-09T01:56:15+00:00",
   "worktree_key": "agent-systems-benchmark-beginner-workflows"
 }
 ---
@@ -260,3 +260,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T01:55:51+00:00: Recorded command exit 0; command argv SHA-256
   4f77b9889255c07310d96bd707f714742617f9818358138d481782b822fc06eb.
+
+- 2026-09-09T01:56:15+00:00: Exact-head PR #94 at 328de90 is fully green: repository quality, Rust
+  x86/arm, formal TLC/Alloy/Kani/Loom, faults/fuzz/mutation, emulated aarch64, AWQ, and headers all
+  passed. TLA pin repair is verified.
