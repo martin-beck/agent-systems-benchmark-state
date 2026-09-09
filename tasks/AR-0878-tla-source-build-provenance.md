@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0878",
-  "next_action": "Request fresh independent immutable review of signed candidate bcbdfe03e77d815467cb4341e0b9c1abef05f48b (tree 2b52b379968d2e37344f42c5416e7020c548d138, parent 6e83e0893a0e64f2e529deae17147216eaf3cf17; package base c157cedc744373ef75aba686c00e97ce61aa3bfc). Do not publish or rebase before review; hosted exact-head Kani remains required only after publication is authorized.",
+  "next_action": "Request fresh independent immutable review of rebased signed candidate 962e8f510947aa7c97bbeb7c31789f5ce156d4b4 (tree be4eb337f61cd61a9041b13a4873137469ac67c6, parent 4bd2bd95c9273a19f50ffeae81a04605bc6956d1, base ecdfae42d5768fc5bc74ea6e3f4d45d8bceb96ff). Do not publish or merge before review; hosted exact-head Kani remains required after publication authorization.",
   "observed_branch": "feature/tla-source-build-provenance",
   "observed_dirty": 0,
   "observed_head": "962e8f510947aa7c97bbeb7c31789f5ce156d4b4",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 196,
+  "task_revision": 197,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T05:57:31+00:00",
+  "updated_at": "2026-09-09T05:58:58+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -672,3 +672,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T05:57:31+00:00: Recorded command exit 0; command argv SHA-256
   7b319e3a7e339242797a18d282e6be4da33b85f31b7b6013cbf2a57f56e8e2e7.
+
+- 2026-09-09T05:58:58+00:00: Controlled rebase completed onto live origin/main
+  ecdfae42d5768fc5bc74ea6e3f4d45d8bceb96ff. backup/ar0878-bcbdfe03 preserves the approved original.
+  Rebased range is 3e22529ba08a910e973c2c5db517ffc9de088def,
+  717258f6cd53646ec846576c89fab98cb0efbc2d, 4bd2bd95c9273a19f50ffeae81a04605bc6956d1,
+  962e8f510947aa7c97bbeb7c31789f5ce156d4b4. Range-diff is four exact equals; final diff remains the
+  authorized 11 paths.

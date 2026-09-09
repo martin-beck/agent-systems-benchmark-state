@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Request fresh independent immutable review of signed candidate bcbdfe03e77d815467cb4341e0b9c1abef05f48b (tree 2b52b379968d2e37344f42c5416e7020c548d138, parent 6e83e0893a0e64f2e529deae17147216eaf3cf17; package base c157cedc744373ef75aba686c00e97ce61aa3bfc). Do not publish or rebase before review; hosted exact-head Kani remains required only after publication is authorized. | replay_20260906 |
+| P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Request fresh independent immutable review of rebased signed candidate 962e8f510947aa7c97bbeb7c31789f5ce156d4b4 (tree be4eb337f61cd61a9041b13a4873137469ac67c6, parent 4bd2bd95c9273a19f50ffeae81a04605bc6956d1, base ecdfae42d5768fc5bc74ea6e3f4d45d8bceb96ff). Do not publish or merge before review; hosted exact-head Kani remains required after publication authorization. | replay_20260906 |
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Monitor all required post-merge CI runs for exact main ca6e75916a8c9831b9107377cd48d731463c272a; release only after every required gate is green. | codex-longrun-evolving-workloads-20260909 |
 
 ## Open
