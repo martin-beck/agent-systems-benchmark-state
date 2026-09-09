@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0877",
-  "next_action": "Monitor PR #120 exact-head CI at 55fdd686; do not merge until every required check is terminal green and coordinator reauthorizes integration.",
+  "next_action": "Repair PR #120 hosted image-identity portability only after coordinator authorizes the AR-0878 build.sh provenance path or an equivalent reviewed boundary; rerun exact-head CI, do not merge.",
   "observed_branch": "fix/formal-tla-artifact-availability",
   "observed_dirty": 0,
   "observed_head": "55fdd686eb1a4a8583fd37a088b20e5edb7e3b89",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 88,
+  "task_revision": 89,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T14:25:52+00:00",
+  "updated_at": "2026-09-09T14:28:34+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -328,3 +328,12 @@ Implementation has not started. Read the linked plan before claiming.
   55fdd686eb1a4a8583fd37a088b20e5edb7e3b89. Initial exact-head status: Huawei/MIT headers and AWQ
   shadow succeeded; Rust, repository quality, native Ubuntu, emulated aarch64, formal TLC/Kani/Loom,
   fault/fuzz/matcher remain in progress. PR is open and no merge was attempted.
+
+- 2026-09-09T14:28:34+00:00: PR #120 exact head 55fdd686 produced one substantive hosted failure:
+  Formal assurance run 34363495390, job 102506186780, TLC/Alloy step exited 2 with `TLA build image
+  identity differs` after the digest-pinned image pull. Local qualified build passed because local
+  image .Id equals the pin; the hosted Docker engine resolves the same digest reference to a
+  platform image whose config .Id is not the repository/manifest digest. The correct portable check
+  is exact RepoDigests membership plus linux/amd64, but AR-0878 formal/tla-provenance/build.sh
+  repeats the config-.Id assumption and is outside AR-0877 owned paths. Candidate and other checks
+  remain preserved; no merge or repair mutation attempted pending serialized fence authorization.
