@@ -13,17 +13,17 @@
   "id": "AR-0909",
   "next_action": "Hold immutable 42fe459 for independent review; publish only after approval and fresh exact-head CI.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
-  "observed_dirty": 1,
-  "observed_head": "42fe45966a0b213e5d85f8f16604c4885e2a3dba",
+  "observed_dirty": 0,
+  "observed_head": "a91cd04d5f49aa4d311c53ab727c2dcb75b77913",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0909.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-09T23:46:52+00:00",
+  "updated_at": "2026-09-09T23:46:58+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
