@@ -8,7 +8,7 @@
     "AR-0848"
   ],
   "id": "AR-0907",
-  "next_action": "Revalidate amended product candidate 5e58ae5 against current product main; preserve exact native route and require full gates plus fresh immutable review before updating PR #123.",
+  "next_action": "Hold amended candidate 5e58ae5 for fresh immutable review before guarded PR #123 update and exact-head CI.",
   "observed_branch": "fix/hosted-runner-evidence-classification",
   "observed_dirty": 0,
   "observed_head": "5e58ae5cdbae7b19f08a2135674cea31d94cc7ba",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 101,
+  "task_revision": 102,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T19:09:16+00:00",
+  "updated_at": "2026-09-09T19:11:23+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -371,3 +371,18 @@ patch release has advanced.
 
 - 2026-09-09T19:09:16+00:00: Recorded command exit 0; command argv SHA-256
   949a030800278a7f4a1cf768c20c39da00a558035b4bc859df4f70a2a17cad0b.
+
+- 2026-09-09T19:11:23+00:00: Post-amendment revalidation complete. Coordinator-approved signed plan
+  lineage is proposal f6472dc2b440cbfa20a78781815792ea22d75cb4 activated by signed+DCO state commit
+  d0a455436264e6ff438c017b92ea0f654f159c42. Fresh fetch confirms product origin/main remains exact
+  b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b, so no rebase or history rewrite was needed. Clean
+  signed+DCO product candidate remains head 5e58ae5cdbae7b19f08a2135674cea31d94cc7ba, tree
+  3bcd9edee1442b54c7ddf9c0f0e68b191153e63b, parent 32a8fe5b1bc0a1b84a876c077835f1b9d2a9be19. Exact
+  seven-path AR scope is unchanged; native validator, native schema, and native evidence paths have
+  no diff from base, preserving native qualification semantics. Post-activation focused
+  hosted/platform suites, closed-schema and workflow routing negatives, Ruff, mypy, actionlint,
+  zizmor, contract/failure/artifact checks, fmt, locked workspace clippy -D warnings, locked
+  workspace tests and docs, Gitleaks, exact signature/DCO, diff/privacy/scope/clean checks passed.
+  The recorded 19:08 exit 1 was operator-only invalid cargo flag --all-target-targets after
+  preceding checks passed; corrected remaining gate batch is the recorded 19:09 exit 0. Candidate is
+  ready for fresh immutable review and remains unpublished; PR #123 still has prior head 32a8fe5.
