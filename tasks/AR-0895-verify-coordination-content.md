@@ -8,16 +8,16 @@
     "AR-0003"
   ],
   "id": "AR-0895",
-  "next_action": "Independent immutable review of signed candidate fb147b0a8702ca6cb6340eb756c9464b66d5bd2a/tree 16fbe831 against validated current state base 0cb83e83; publish only after approval.",
+  "next_action": "Complete independent reviewer decision for fb147b0a against current licensed state base 4ce99f05, then publish only if approved and exact-head checks can run.",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0895.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Close the workflow path-filter gap that lets coordination-content pull requests skip strict state consistency and DCO checks.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Verify every coordination-content pull request",
-  "updated_at": "2026-09-09T10:10:40+00:00",
+  "updated_at": "2026-09-09T10:11:36+00:00",
   "worktree_key": "agent-systems-benchmark-state-verify-coordination-content"
 }
 ---
@@ -103,3 +103,13 @@ Ensure state-content pull requests cannot bypass exact-head schema, generated-vi
 
 - 2026-09-09T10:10:40+00:00: Recorded command exit 1; command argv SHA-256
   340d375011ee73126ebc257365445d77a52cf04480797eee68706e4e0f7ba865.
+
+- 2026-09-09T10:11:36+00:00: Classified the recorded 10:10:40 exit 1 as an operator-only
+  verification typo: the intended exact candidate OID assertion accidentally appended the literal
+  text mailto to the expected hash after a successful fetch and license-commit ancestor check. It
+  made no candidate or state-content mutation. Corrected read-only inspection confirms HEAD exactly
+  fb147b0a8702ca6cb6340eb756c9464b66d5bd2a, clean tree, valid SSH signature/DCO, and signed
+  attribution commit 8baf075b is an ancestor of current state main
+  4ce99f055605a1e489717155a1b8ec05efa76520. Exact PR range remains only
+  .github/workflows/verify.yml, README.md, and tests/test_workflow_triggers.py; diff-check passes.
+  Awaiting independent reviewer decision.

@@ -932,7 +932,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | replay_20260906 | Qualify pinned OpenJiuwen live execution. | Implement the three owned loopback fixtures; prove pinned edit/tool/usage/cancel/cleanup/network denial, keeping support fail closed until all executable checks pass. |
-| P1 | [AR-0895](tasks/AR-0895-verify-coordination-content.md): Verify every coordination-content pull request | quality_20260906 | Close the workflow path-filter gap that lets coordination-content pull requests skip strict state consistency and DCO checks. | Independent immutable review of signed candidate fb147b0a8702ca6cb6340eb756c9464b66d5bd2a/tree 16fbe831 against validated current state base 0cb83e83; publish only after approval. |
+| P1 | [AR-0895](tasks/AR-0895-verify-coordination-content.md): Verify every coordination-content pull request | quality_20260906 | Close the workflow path-filter gap that lets coordination-content pull requests skip strict state consistency and DCO checks. | Complete independent reviewer decision for fb147b0a against current licensed state base 4ce99f05, then publish only if approved and exact-head checks can run. |
 | P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | codex-longrun-mockagents-20260909 | Post-merge Repository quality failed on merge DCO; repair is preempting feature work. | Publish a signed+DCO follow-up commit atop 004d87252b065679d80ca9674356b47146754528, rerun exact-head and post-merge gates, then release only after all green. |
 
 ### Blocked (8)
