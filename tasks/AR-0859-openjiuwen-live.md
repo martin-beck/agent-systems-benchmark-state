@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 174,
+  "task_revision": 175,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T18:19:16+00:00",
+  "updated_at": "2026-09-09T18:22:40+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -581,3 +581,6 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   repaired before these green reruns. Prior exact-parent Kani, coverage, and bounded fuzz evidence
   remains applicable because this repair changes only the three owned integration-test fixture
   paths; hosted exact-head rerun remains required after review.
+
+- 2026-09-09T18:22:40+00:00: Recorded command exit 0; command argv SHA-256
+  6d380d6165f02ec4ca1117f9bc8e0b9cfb3114760a79b7401de30cf5b0c4bad1.
