@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Repair OpenJiuwen runtime closure",
-  "updated_at": "2026-09-09T08:15:16+00:00",
+  "updated_at": "2026-09-09T08:16:14+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-runtime-closure"
 }
 ---
@@ -167,4 +167,7 @@ a dependency, avoiding a completion cycle while AR-0859 remains blocked on this 
   8e86dad79f71192edf36188d4fb5f7f5c28c06c5abe15b7c8fe7448109e65fd1.
 
 - 2026-09-09T08:15:16+00:00: Recorded command exit 101; command argv SHA-256
+  8e86dad79f71192edf36188d4fb5f7f5c28c06c5abe15b7c8fe7448109e65fd1.
+
+- 2026-09-09T08:16:14+00:00: Recorded command exit 0; command argv SHA-256
   8e86dad79f71192edf36188d4fb5f7f5c28c06c5abe15b7c8fe7448109e65fd1.
