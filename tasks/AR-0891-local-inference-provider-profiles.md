@@ -10,7 +10,7 @@
     "AR-0315"
   ],
   "id": "AR-0891",
-  "next_action": "Create and push a signed no-ff merge object from the claimed feature worktree (worktree-fence-safe), then verify GitHub marks PR #114 merged and run post-merge exact-main checks.",
+  "next_action": "Wait for and verify all six post-merge exact-main workflows on adac76558387cb0bdd09e2ba6cbfe49b9bc205be, then release AR-0891 and promote the next dependency-ready AR.",
   "observed_branch": "feat/local-inference-provider-profiles",
   "observed_dirty": 0,
   "observed_head": "eed49592617a0a712482d4a341ae7b1f802fe04f",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server.",
-  "task_revision": 118,
+  "task_revision": 119,
   "title": "Qualify local inference provider profiles",
-  "updated_at": "2026-09-09T09:44:13+00:00",
+  "updated_at": "2026-09-09T09:44:26+00:00",
   "worktree_key": "agent-systems-benchmark-local-inference-provider-profiles"
 }
 ---
@@ -302,3 +302,8 @@ Use exact Ollama, llama.cpp, vLLM and LocalAI sources in `docs/LOCAL_LLM_TESTING
   63c3866abebb22fa42755f062c31d1acc02b64fd053b1d17ffc3029dcd7c7d2a.
 
 - 2026-09-09T09:44:13+00:00: Heartbeat by codex-longrun-local-inference-profiles-20260909.
+
+- 2026-09-09T09:44:26+00:00: PR #114 merged successfully as signed merge
+  adac76558387cb0bdd09e2ba6cbfe49b9bc205be using a fence-safe signed commit-tree push from the
+  declared feature worktree. All 14 exact-head checks were green; post-merge exact-main suite is
+  active.
