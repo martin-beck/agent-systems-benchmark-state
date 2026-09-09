@@ -8,16 +8,16 @@
     "AR-0003"
   ],
   "id": "AR-0895",
-  "next_action": "Independent immutable review candidate fb147b0a8702ca6cb6340eb756c9464b66d5bd2a/tree 16fbe831; separately shorten the two out-of-scope invalid next_action values on live state main, then rerun schema/generated-view gates before publication.",
+  "next_action": "Independent immutable review of signed candidate fb147b0a8702ca6cb6340eb756c9464b66d5bd2a/tree 16fbe831 against validated current state base 0cb83e83; publish only after approval.",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0895.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Close the workflow path-filter gap that lets coordination-content pull requests skip strict state consistency and DCO checks.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Verify every coordination-content pull request",
-  "updated_at": "2026-09-09T10:08:05+00:00",
+  "updated_at": "2026-09-09T10:08:34+00:00",
   "worktree_key": "agent-systems-benchmark-state-verify-coordination-content"
 }
 ---
@@ -90,3 +90,13 @@ Ensure state-content pull requests cannot bypass exact-head schema, generated-vi
 
 - 2026-09-09T10:08:05+00:00: Recorded command exit 0; command argv SHA-256
   ea8371170ce9e6451d082e0c2be2a2adce939f8a65821111d978e398203534f2.
+
+- 2026-09-09T10:08:34+00:00: Revalidated the immutable AR-0895 candidate after the out-of-scope
+  AR-0859 and AR-0880 metadata repairs. Fetched exact state origin/main
+  0cb83e83f8ffbf6843b9a225eb6e93d3e12b4a52, performed a temporary no-commit merge with candidate
+  fb147b0a8702ca6cb6340eb756c9464b66d5bd2a, and ran the exact combined-tree schema validator,
+  render-status --check, CURRENT.md/STATUS.md diff cleanliness, and focused workflow-trigger tests
+  3/3: all passed. The merge was aborted by a guaranteed cleanup trap; candidate head/signature/tree
+  remain unchanged and worktree is clean. Full prior 100-test/95%-coverage,
+  vendor/header/Ruff/mypy/complexity gates remain valid; previous schema failure is resolved by
+  current-base metadata repair. Ready for independent immutable review, not yet published.
