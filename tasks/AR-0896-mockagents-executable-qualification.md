@@ -8,7 +8,7 @@
     "AR-0889"
   ],
   "id": "AR-0896",
-  "next_action": "Wait for all six post-merge workflows on 5f7d631, then release or continue hostile qualification.",
+  "next_action": "Publish one signed no-op parented on 5f7d631 via normal fast-forward, then verify fresh exact-main gates with reachable before SHA.",
   "observed_branch": "test/mockagents-executable-qualification",
   "observed_dirty": 0,
   "observed_head": "3f1de4106adf9ad6c34759638d70e9001709ab0a",
@@ -17,10 +17,10 @@
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Replaced merge boundary with same-tree same-parent signed DCO merge 5f7d631; fresh exact-main gates running.",
-  "task_revision": 30,
+  "summary": "Post-rewrite policy run failed because GitHub retained unreachable old base SHA; advancing main with signed no-op to establish reachable range.",
+  "task_revision": 31,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-09T10:22:00+00:00",
+  "updated_at": "2026-09-09T10:22:37+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -117,3 +117,8 @@ synthetic fixture for black-box executable evidence.
   Replaced main via exact force-with-lease with signed merge
   5f7d63199ed3bccb4c3a2b73a8cdb755be0aa8a8, preserving tree 872f3a0938d2c3484e1edbea4ec4c52f95e7824c
   and parents 004d8725/f25fb319. Fresh exact-main CI is required.
+
+- 2026-09-09T10:22:37+00:00: Repository quality run 34339789042 failed before policy evaluation:
+  Invalid revision range 97643044..5f7d631 because force-replacing main made the GitHub push before
+  SHA unreachable to checkout. No code failure. A signed no-op fast-forward will establish a valid
+  CI range without changing the product tree.

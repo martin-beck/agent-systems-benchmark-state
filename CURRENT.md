@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Qualify pinned OpenJiuwen live execution. | Add remaining corruption/retry/trickle/root/child negatives, then run full gates; keep support fail closed. | replay_20260906 |
-| P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Replaced merge boundary with same-tree same-parent signed DCO merge 5f7d631; fresh exact-main gates running. | Wait for all six post-merge workflows on 5f7d631, then release or continue hostile qualification. | codex-longrun-mockagents-20260909 |
+| P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Post-rewrite policy run failed because GitHub retained unreachable old base SHA; advancing main with signed no-op to establish reachable range. | Publish one signed no-op parented on 5f7d631 via normal fast-forward, then verify fresh exact-main gates with reachable before SHA. | codex-longrun-mockagents-20260909 |
 
 ## Blocked
 
