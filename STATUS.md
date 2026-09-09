@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 8 |
 | **Planned** | Defined work awaiting promotion or dependencies | 41 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 114 |
+| **Done** | Accepted, integrated, and durably verified | 115 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -195,7 +195,7 @@ flowchart LR
         AR_0877["AR-0877 - Blocked"]:::status_blocked
         AR_0878["AR-0878 - Done"]:::status_done
         AR_0879["AR-0879 - Done"]:::status_done
-        AR_0880["AR-0880 - In progress"]:::status_in_progress
+        AR_0880["AR-0880 - Done"]:::status_done
         AR_0888["AR-0888 - Done"]:::status_done
         AR_0889["AR-0889 - Done"]:::status_done
         AR_0890["AR-0890 - Planned"]:::status_planned
@@ -923,11 +923,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0880](tasks/AR-0880-openjiuwen-runtime-closure.md): Repair OpenJiuwen runtime closure | replay_20260906 | Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification. | Fresh immutable review exact candidate b7559931ef79d55ad579546c85ceec2ed5b15790/tree 9660c42cc12c84d91ab3d818a04e1e25bfa352d3/parent cd350831486d22f39e77e04daf2206625f7e4119; if approved, update PR #112 from old remote head 6f6666373d23c833609008448b6a672312e1c6fb with exact force-with-lease, then require fresh exact-head hosted CI before merge. |
 | P1 | [AR-0891](tasks/AR-0891-local-inference-provider-profiles.md): Qualify local inference provider profiles | codex-longrun-local-inference-profiles-20260909 | Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server. | Repair the exact-head policy failure in PR #114: Gitleaks false-positive on the public tokenizer content digest. Verify the narrow repository config and rerun the full exact-head suite before merging. |
 
 ### Blocked (8)
@@ -989,7 +988,7 @@ flowchart LR
 | P2 | [AR-0903](tasks/AR-0903-release-qualification.md): Package and qualify the first release | Unclaimed | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (114)
+### Done (115)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1085,6 +1084,7 @@ flowchart LR
 | P1 | [AR-0876](tasks/AR-0876-provider-aware-agent-launch.md): Wire provider-aware agent launches | Unclaimed | Apply validated provider selections at the authoritative agent launch boundary and reject conflicting runtime configuration. | Create signed+DCO follow-up parented bc071fd, force-with-lease origin/main 32562e8, rerun exact-main postmerge workflows. |
 | P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | Unclaimed | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Release AR-0878 done after final state reconcile, snapshot, and live doctor; exact-main product verification is complete. |
 | P1 | [AR-0879](tasks/AR-0879-local-llm-testing-recommendations.md): Plan deterministic LLM doubles and local inference | Unclaimed | Research deterministic LLM test doubles and local inference options, document ASB recommendations, and create implementation-ready follow-up ARs. | Obtain independent exact-head review of green product PR 107 at bda6cc8a and state PR 16 at 9de11a52; state global schema remains pre-existingly blocked only by active AR-0878 next_action length. |
+| P1 | [AR-0880](tasks/AR-0880-openjiuwen-runtime-closure.md): Repair OpenJiuwen runtime closure | Unclaimed | Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification. | Fresh immutable review exact candidate b7559931ef79d55ad579546c85ceec2ed5b15790/tree 9660c42cc12c84d91ab3d818a04e1e25bfa352d3/parent cd350831486d22f39e77e04daf2206625f7e4119; if approved, update PR #112 from old remote head 6f6666373d23c833609008448b6a672312e1c6fb with exact force-with-lease, then require fresh exact-head hosted CI before merge. |
 | P1 | [AR-0888](tasks/AR-0888-llm-double-conformance-spike.md): Spike deterministic LLM double conformance | Unclaimed | Measure deterministic LLM test doubles against one hostile ASB protocol and isolation suite before selecting any dependency. | Build the isolated OpenAI and Anthropic conformance spike, execute exact pinned candidates, and publish pass, fail, unsupported, and untested evidence. |
 | P1 | [AR-0889](tasks/AR-0889-llm-fixture-scenario-contract.md): Define the LLM fixture and scenario contract | Unclaimed | Define generated synthetic LLM scenarios without weakening the existing content-addressed cassette replay contract. | Specify and implement the selected synthetic fixture and scenario contract with strict evidence labels, privacy bounds, and fail-closed validation. |
 | P1 | [AR-0901](tasks/AR-0901-formal-assurance.md): Prove critical state and concurrency invariants | Unclaimed | Use bounded proofs and model tests for safety-critical domain logic. | Await independent immutable-head review of PR 14 at 2a495a99; repair any findings without merging or releasing. |

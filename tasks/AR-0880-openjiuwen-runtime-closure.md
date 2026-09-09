@@ -2,7 +2,7 @@
 {
   "branch": "fix/openjiuwen-runtime-closure",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T11:20:49+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0857"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "fix/openjiuwen-runtime-closure",
   "observed_dirty": 0,
   "observed_head": "b7559931ef79d55ad579546c85ceec2ed5b15790",
-  "owner": "replay_20260906",
+  "owner": "",
   "plan": "../plans/AR-0880.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification.",
-  "task_revision": 110,
+  "task_revision": 111,
   "title": "Repair OpenJiuwen runtime closure",
-  "updated_at": "2026-09-09T09:27:28+00:00",
+  "updated_at": "2026-09-09T09:30:24+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-runtime-closure"
 }
 ---
@@ -405,3 +405,17 @@ a dependency, avoiding a completion cycle while AR-0859 remains blocked on this 
 
 - 2026-09-09T09:27:28+00:00: Recorded command exit 0; command argv SHA-256
   5f56d2985937fa70107765b5482bdad5f8c6635d5ef3aab09cb4af3ece516e30.
+
+- 2026-09-09T09:30:24+00:00: Released AR-0880 after independently approved exact candidate
+  b7559931ef79d55ad579546c85ceec2ed5b15790/tree 9660c42cc12c84d91ab3d818a04e1e25bfa352d3 on base
+  cd350831486d22f39e77e04daf2206625f7e4119 updated PR #112 by exact force-with-lease. Fresh
+  exact-head runs 34333877437 emulated aarch64, 34333877495 fault/fuzz/mutation, 34333877453
+  formal/TLC/Alloy/Kani, 34333877444 quality, 34333877450 Rust x86/arm, 34333877523 AWQ, and
+  34333877472 headers all green. Integrated via locally SSH-signed+DCO no-ff merge
+  2a85872285e6de374e7ea48e3b062e4134bec49e, tree 9660c42cc12c84d91ab3d818a04e1e25bfa352d3, parents
+  cd350831486d22f39e77e04daf2206625f7e4119 and b7559931ef79d55ad579546c85ceec2ed5b15790. Exact-main
+  runs 34334495171 emulated aarch64, 34334495114 formal, 34334495047 quality, 34334495101 Rust,
+  34334494997 fault, and 34334495091 headers all green. Local exact-main fmt/Clippy/workspace
+  tests/docs/release, pinned fresh online/offline closure, TLC/Alloy, policy, privacy/supply,
+  mutation 7/7, clean tree, signature and DCO pass. AR-0880 closes the pinned OpenJiuwen
+  CLI+observability runtime dependency lock only; live provider execution remains AR-0859.
