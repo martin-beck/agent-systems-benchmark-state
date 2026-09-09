@@ -10,7 +10,7 @@
   "id": "AR-0704",
   "next_action": "Independent review of 5a0570f; then add native cell/resource/boot evidence before AR completion.",
   "observed_branch": "feature/native-capacity-controller",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "5a0570fbce2fa77ab4baf6b34d2632d289a5ab36",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0704.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-09T12:57:03+00:00",
+  "updated_at": "2026-09-09T12:57:09+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
