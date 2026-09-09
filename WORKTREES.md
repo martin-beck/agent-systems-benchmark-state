@@ -65,7 +65,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 289, ahead 0 |
 | `agent-systems-benchmark-portable-metrics` | `feature/portable-metrics` | `a0f67bea1ffe` | 0 | behind 263, ahead 0 |
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `51daeb8608e5` | 0 | behind 282, ahead 0 |
-| `agent-systems-benchmark-provider-aware-agent-launch` | `feature/provider-aware-agent-launch` | `251d6769a6ed` | 0 | behind 0, ahead 2 |
+| `agent-systems-benchmark-provider-aware-agent-launch` | `feature/provider-aware-agent-launch` | `251d6769a6ed` | 1 | behind 0, ahead 2 |
+| changed files | - | - | - | `crates/asb-agents/src/provider_launch.rs` |
 | `agent-systems-benchmark-provider-credential-integration` | `feature/provider-credential-integration` | `0f92642fc870` | 0 | behind 43, ahead 0 |
 | `agent-systems-benchmark-provider-ollama` | `feature/provider-ollama` | `8137f5baa053` | 0 | behind 87, ahead 0 |
 | `agent-systems-benchmark-provider-openai` | `feature/provider-openai` | `1128595cd2f9` | 0 | behind 82, ahead 0 |
