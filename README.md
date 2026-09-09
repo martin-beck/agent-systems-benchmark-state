@@ -36,6 +36,11 @@ Run `tools/handoffctl render-status --check` to verify that `STATUS.md` matches 
 `tools/handoffctl render-status` performs an offline deterministic refresh; normal claim, update,
 promote, release, and reconcile transactions refresh it automatically under the coordinator lock.
 
+Pull requests that change `tasks/**`, `plans/**`, `CURRENT.md`, or `STATUS.md` always run the
+exact-head Coordination verification workflow. That check validates schemas and generated views,
+requires a clean tree, and verifies DCO for every commit in the pull-request base-to-head range.
+An unrelated documentation-only change remains outside this coordination-content path filter.
+
 ## Opening dependency-ready work
 
 After reviewing dependencies and path ownership, the coordinator promotes a planned AR with:
