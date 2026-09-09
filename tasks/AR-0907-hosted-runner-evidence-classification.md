@@ -10,17 +10,17 @@
   "id": "AR-0907",
   "next_action": "Run full workspace, policy, privacy, failure and platform gates; then create a focused signed candidate for independent review.",
   "observed_branch": "fix/hosted-runner-evidence-classification",
-  "observed_dirty": 6,
-  "observed_head": "b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b",
+  "observed_dirty": 0,
+  "observed_head": "faca6aa9ddddbbed8b925cfbf6a380d622726902",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0907.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T17:30:09+00:00",
+  "updated_at": "2026-09-09T17:30:15+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
