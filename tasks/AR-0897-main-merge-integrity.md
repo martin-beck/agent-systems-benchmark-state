@@ -2,7 +2,7 @@
 {
   "branch": "fix/main-merge-integrity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T23:41:27+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "fix/main-merge-integrity",
   "observed_dirty": 0,
   "observed_head": "bd6f450ab8777aeb7e055d71aedba8e4cfd375b3",
-  "owner": "replay_20260906",
+  "owner": "",
   "plan": "../plans/AR-0897.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-09T21:24:44+00:00",
+  "updated_at": "2026-09-09T23:41:59+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -161,3 +161,7 @@ Implementation has not started. Read the linked plan before claiming.
   provisionally a shared formal acquisition/digest harness failure because the exact seven-path AR
   diff contains no formal/workflow/artifact changes and the same formal gate passed locally with
   pinned cached tools. Candidate remains unchanged; no retry or merge performed.
+
+- 2026-09-09T23:41:59+00:00: Recovered expired claim formerly owned by replay_20260906. Expired
+  AR-0897 lease recovered after terminal PR #126 classification; preserve reviewed bd6f450 and
+  shared-harness evidence, require fresh claim before mutation.
