@@ -12,17 +12,17 @@
   "id": "AR-0872",
   "next_action": "Commit and publish the exact TLA pin repair, then monitor all exact-head checks.",
   "observed_branch": "docs/beginner-workflows",
-  "observed_dirty": 4,
-  "observed_head": "3b0ad66a1cf47dcc7c7a930b85088a07dd5efab4",
+  "observed_dirty": 0,
+  "observed_head": "328de90ef1ed3ba391634009a855d731b1322a53",
   "owner": "replay_20260909",
   "plan": "../plans/AR-0872.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish linked beginner workflows for setup, multi-agent runs, progress, comparison, recording, and replay with and without the TUI.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Publish beginner workflow documentation",
-  "updated_at": "2026-09-09T01:49:51+00:00",
+  "updated_at": "2026-09-09T01:49:58+00:00",
   "worktree_key": "agent-systems-benchmark-beginner-workflows"
 }
 ---
