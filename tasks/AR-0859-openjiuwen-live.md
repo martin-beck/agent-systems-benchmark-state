@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T06:22:54+00:00",
+  "updated_at": "2026-09-09T06:23:05+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -41,3 +41,6 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   /srv/data/projects/agent-systems-benchmark-openjiuwen-live did not exist and no matching live
   worktree was listed. No product mutation occurred; creating the declared isolated worktree is
   required before implementation.
+
+- 2026-09-09T06:23:05+00:00: Recorded command exit 0; command argv SHA-256
+  4fc2abd6737b1419b77365f3a1cfa731ff78e96091a57f3c04aa5e1b764d3bd4.
