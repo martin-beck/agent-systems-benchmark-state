@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 173,
+  "task_revision": 174,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T05:39:31+00:00",
+  "updated_at": "2026-09-09T05:43:30+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -609,3 +609,6 @@ Implementation has not started. Read the linked plan before claiming.
   the preceding prose note; frontmatter observed_head and next_action already contain the correct
   exact object. The prior intermediate repair is exactly 6e83e0893a0e64f2e529deae17147216eaf3cf17,
   tree b0c805783b616d3e748797c3228dbde40b88ec85, parent e4730653b112d733fb2a1157f65481663c4e073c.
+
+- 2026-09-09T05:43:30+00:00: Recorded command exit 1; command argv SHA-256
+  6ce5d23848ef4086bedd4104e51d5f5b70914fb9182aa682b89968ee26eb2cb9.
