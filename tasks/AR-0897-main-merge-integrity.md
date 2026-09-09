@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-09T20:54:41+00:00",
+  "updated_at": "2026-09-09T21:02:12+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -76,3 +76,6 @@ Implementation has not started. Read the linked plan before claiming.
   identities, unsigned/non-DCO feature commits, and each permissive web-merge/auto-merge setting.
   Historical b6d04a8 tree 579310d1 with parents a4e1a9de/6cf8384b and failed run 34347816992 are
   preserved. Remote settings were audited as currently permissive but not changed before review.
+
+- 2026-09-09T21:02:12+00:00: Recorded command exit 0; command argv SHA-256
+  855ef833f25eba2550b413896f9b64c818cc2535c480d0d200e971861bdc1f57.
