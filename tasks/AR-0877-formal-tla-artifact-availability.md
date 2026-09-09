@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T14:01:14+00:00",
+  "updated_at": "2026-09-09T14:07:54+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -246,3 +246,6 @@ Implementation has not started. Read the linked plan before claiming.
   exit was generated target output only and superseded by exact source/range scans; one
   repository-policy exit used literal WORKTREE and was operator-only, superseded by correct checks.
   No mutable prerelease repin, no AR-0704 path, and no prohibited private host identifier.
+
+- 2026-09-09T14:07:54+00:00: Recorded command exit 0; command argv SHA-256
+  28576358c51d02a34005100a3efc797dd535da239e0c5f1d643c59bbbd6cf36e.
