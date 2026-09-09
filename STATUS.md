@@ -954,7 +954,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md): Repair formal TLA artifact availability | contracts_20260906 | Repair the formal workflow&#x27;s unavailable TLA+ artifact pin without weakening provenance or offline verification. | Independent review local bridge 49ae13f/tree 05141d3; keep PR #120 at 65142ea and PR #121 unchanged. After AR-0906 merges, rebase the AR-0877 range, rerun gates, then exact-lease update PR #120. |
-| P1 | [AR-0906](tasks/AR-0906-portable-oci-build-image-identity.md): Verify formal OCI build identity portably | quality_20260906 | Make deterministic formal source builds verify OCI image identity portably across Docker engines. | Monitor temporary integration PR #122 exact-head CI; do not merge or alter PRs #120/#121. |
+| P1 | [AR-0906](tasks/AR-0906-portable-oci-build-image-identity.md): Verify formal OCI build identity portably | quality_20260906 | Make deterministic formal source builds verify OCI image identity portably across Docker engines. | Combined PR #122 proves formal/emulated paths; hold all PRs while native Ubuntu runner-release mismatch is repaired or classified. |
 
 ### Open (3)
 

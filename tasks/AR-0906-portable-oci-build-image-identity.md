@@ -10,7 +10,7 @@
     "AR-0902"
   ],
   "id": "AR-0906",
-  "next_action": "Monitor temporary integration PR #122 exact-head CI; do not merge or alter PRs #120/#121.",
+  "next_action": "Combined PR #122 proves formal/emulated paths; hold all PRs while native Ubuntu runner-release mismatch is repaired or classified.",
   "observed_branch": "fix/formal-oci-image-identity",
   "observed_dirty": 0,
   "observed_head": "156f7e011867956cb3bfaf5f511d65340f1b840e",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make deterministic formal source builds verify OCI image identity portably across Docker engines.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Verify formal OCI build identity portably",
-  "updated_at": "2026-09-09T16:10:59+00:00",
+  "updated_at": "2026-09-09T16:16:36+00:00",
   "worktree_key": "agent-systems-benchmark-formal-oci-image-identity"
 }
 ---
@@ -165,3 +165,15 @@ instead of assuming an engine's local configuration ID equals the registry manif
   Gitleaks command had an operator-only extra b in the base OID and scanned zero commits; corrected
   exact 5-commit range scan is green. Published temporary evidence-only PR #122 at exact base/head;
   #120/#121 unchanged. Hosted checks running; header and AWQ green.
+
+- 2026-09-09T16:16:36+00:00: Temporary integration PR #122 exact head
+  f385fb27296a282d044ad04f5d91eff55c53b4b0/base b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b completed
+  hosted CI. Eleven checks passed: Formal run 34375035488 (TLC/Alloy, Kani, Loom), quality
+  34375035480, Rust 34375035574, fault/fuzz/matcher 34375035601, emulated-aarch64 34375035674,
+  headers 34375035422, AWQ 34375035444. Emulated aarch64 passed in 5m15s, confirming portable
+  combined behavior. Sole failure is Native Ubuntu run 34375035653/job 102545565251:
+  native_evidence.py rejected the runner because observed distribution did not match the exact
+  pinned release, before product tests/evidence output; artifact upload then found no file. This is
+  hosted runner-release drift, outside the exact 14-path integration diff. Candidate and PRs
+  #120/#121 unchanged; no merge attempted. Earlier Gitleaks zero-scan was operator typo in base OID;
+  corrected 5-commit scan passed.
