@@ -887,7 +887,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | replay_20260906 | Qualify pinned OpenJiuwen live execution. | Create the missing declared worktree from exact origin/main, then implement and test the pinned live qualification. |
+| P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | replay_20260906 | Qualify pinned OpenJiuwen live execution. | Obtain a serialized provenance-closure repair for the pinned OpenJiuwen cli and observability extras before adding AR-0859 live-test paths; then install the reviewed lock and execute the loopback journey. Keep support fail closed. |
 | P1 | [AR-0879](tasks/AR-0879-local-llm-testing-recommendations.md): Plan deterministic LLM doubles and local inference | codex-asb-local-llm-research-20260909 | Research deterministic LLM test doubles and local inference options, document ASB recommendations, and create implementation-ready follow-up ARs. | Obtain independent exact-head review of green product PR 107 at bda6cc8a and state PR 16 at 9de11a52; state global schema remains pre-existingly blocked only by active AR-0878 next_action length. |
 
 ### Blocked (7)

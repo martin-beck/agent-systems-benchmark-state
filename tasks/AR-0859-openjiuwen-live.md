@@ -7,7 +7,7 @@
     "AR-0858"
   ],
   "id": "AR-0859",
-  "next_action": "Create the missing declared worktree from exact origin/main, then implement and test the pinned live qualification.",
+  "next_action": "Obtain a serialized provenance-closure repair for the pinned OpenJiuwen cli and observability extras before adding AR-0859 live-test paths; then install the reviewed lock and execute the loopback journey. Keep support fail closed.",
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "513c1d926458f1cb6a26d3f7277dc7d9b1496df3",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T07:05:20+00:00",
+  "updated_at": "2026-09-09T07:06:27+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -98,3 +98,16 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-09T07:05:20+00:00: Recorded command exit 0; command argv SHA-256
   cdbee2c3fa5adc41127b55fb4755949464b8b2592697f8067f335887f94db34b.
+
+- 2026-09-09T07:06:27+00:00: Reclaimed after expired-owner audit. Existing declared worktree was
+  preserved clean and fast-forwarded to exact live main 513c1d926458f1cb6a26d3f7277dc7d9b1496df3.
+  Preserved wheel SHA256 21e9479c6b858cda28c250d63066f862fc0915cf2039edb00f016cbec7f9abba and
+  runtime lock SHA256 51cc9028ede719a7eb4d63f614e69badf1e73dd7f70b1207fb271711c0da5578. Exact lock
+  omits prompt-toolkit and opentelemetry-sdk; pinned wheel metadata declares them only in cli and
+  observability extras, while executable import paths require both before provider traffic.
+  Preserved failures are ModuleNotFoundError for prompt_toolkit, then opentelemetry.sdk after adding
+  prompt-toolkit alone. A bounded external uv compile of openjiuwen[cli,observability]==0.1.17.post1
+  succeeded as SHA256 4fb8348d815980fc98370e877a51f3e2a0a6498500bf62e63bb57796db13b131 with 170
+  packages versus 161 and includes prompt-toolkit 3.0.53/opentelemetry-sdk 1.44.0; install with
+  hashes succeeds. This proves repair feasibility but is not reviewed provenance and cannot support
+  a live claim yet. No AR-0859 owned product path changed.
