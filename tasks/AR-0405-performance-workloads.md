@@ -13,16 +13,16 @@
   "next_action": "Audit the six-path fail-closed provenance checkpoint, run the complete applicable quality/privacy gates, and determine whether any suite can advance beyond planned without missing license and native paired-oracle evidence.",
   "observed_branch": "feature/performance-workloads",
   "observed_dirty": 0,
-  "observed_head": "5294c471425d75ef10759d766a296c0c3d841eab",
+  "observed_head": "0f303b3ec1798906a8ecb37652e080046fd42eee",
   "owner": "replay_20260909",
   "plan": "../plans/AR-0405.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Assess SWE-Perf, SWE-fficiency and CORE-Bench for correctness-preserving optimization and reproducibility.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Add performance and reproducibility workloads",
-  "updated_at": "2026-09-09T02:26:49+00:00",
+  "updated_at": "2026-09-09T02:26:54+00:00",
   "worktree_key": "agent-systems-benchmark-performance-workloads"
 }
 ---
