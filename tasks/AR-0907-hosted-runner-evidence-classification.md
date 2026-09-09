@@ -8,7 +8,7 @@
     "AR-0848"
   ],
   "id": "AR-0907",
-  "next_action": "Monitor fresh PR #123 exact-head CI at 5e58ae5; do not merge until every required check is terminal green.",
+  "next_action": "Re-run isolated ETXTBSY test, then remaining workspace docs/build and security gates; commit only after green.",
   "observed_branch": "fix/hosted-runner-evidence-classification",
   "observed_dirty": 5,
   "observed_head": "5e58ae5cdbae7b19f08a2135674cea31d94cc7ba",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 121,
+  "task_revision": 122,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T19:46:15+00:00",
+  "updated_at": "2026-09-09T19:46:52+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -444,3 +444,12 @@ patch release has advanced.
 
 - 2026-09-09T19:46:15+00:00: Recorded command exit 101; command argv SHA-256
   64ca92443305c5c78c9c90f26a8f3b2c5d9ad93f836c94177833ffd44b002ce7.
+
+- 2026-09-09T19:46:52+00:00: Full Rust batch reached locked workspace tests after fmt and all-target
+  Clippy passed, then failed in unrelated asb-agents
+  mini_swe::boundary_tests::failure_and_cancellation_are_terminal_and_redacted: spawn returned OS
+  error 26 ExecutableFileBusy (Text file busy), 137 passed/1 failed/1 ignored in that crate. AR-0907
+  changes touch only hosted platform workflow/tool/schema/tests and cannot affect mini_swe process
+  code. Classified as an environmental race/flaky harness outcome, not an AR-0907 product defect;
+  will first rerun only the exact failed test, then resume the remaining full gates rather than
+  blindly repeating prior successful checks.

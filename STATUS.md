@@ -964,7 +964,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | replay_20260906 | Qualify pinned OpenJiuwen live execution. | Monitor PR 124 exact-head CI; inspect terminal failures without changing cceb76f. |
-| P1 | [AR-0907](tasks/AR-0907-hosted-runner-evidence-classification.md): Classify hosted runner evidence without weakening native qualification | quality_20260906 | Separate rolling hosted portability checks from immutable native qualification evidence. | Monitor fresh PR #123 exact-head CI at 5e58ae5; do not merge until every required check is terminal green. |
+| P1 | [AR-0907](tasks/AR-0907-hosted-runner-evidence-classification.md): Classify hosted runner evidence without weakening native qualification | quality_20260906 | Separate rolling hosted portability checks from immutable native qualification evidence. | Re-run isolated ETXTBSY test, then remaining workspace docs/build and security gates; commit only after green. |
 | P1 | [AR-0908](tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | contracts_20260906 | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Reproduce the post-drop lock failure under coverage and parallel stress, then harden only the embedded control-state test roots without weakening production locking. |
 
 ### Open (3)
