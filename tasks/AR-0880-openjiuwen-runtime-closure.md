@@ -12,11 +12,11 @@
   "plan": "../plans/AR-0880.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Repair OpenJiuwen runtime closure",
-  "updated_at": "2026-09-09T07:08:41+00:00",
+  "updated_at": "2026-09-09T07:14:48+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-runtime-closure"
 }
 ---
@@ -29,3 +29,7 @@ The repair is a prerequisite for resuming AR-0859; it does not itself establish 
 The formal dependency is AR-0857 only. AR-0859 supplied the immutable failure evidence but is not
 a dependency, avoiding a completion cycle while AR-0859 remains blocked on this repair.
 
+
+- 2026-09-09T07:14:48+00:00: AR-0857 is done; AR-0859 is blocked and released. Exact Python
+  lock/provenance/import-test paths are disjoint from active lanes, no Cargo or schema fence is
+  required, and the repair dependency graph is acyclic.
