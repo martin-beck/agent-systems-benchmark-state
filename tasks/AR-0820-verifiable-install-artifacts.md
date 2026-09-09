@@ -2,7 +2,7 @@
 {
   "branch": "feature/verifiable-install-artifacts",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-09T06:58:35+00:00",
   "depends_on": [
     "AR-0701",
     "AR-0801",
@@ -11,15 +11,15 @@
   ],
   "id": "AR-0820",
   "next_action": "Build signed platform manifests and relocatable ASB plus asb-tui installation bundles.",
-  "owner": "",
+  "owner": "codex-longrun-install-20260909",
   "plan": "../plans/AR-0820.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Publish verifiable native bundles and metadata that a small bootstrapper can select safely.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Publish verifiable installation artifacts",
-  "updated_at": "2026-09-09T05:28:33+00:00",
+  "updated_at": "2026-09-09T05:28:35+00:00",
   "worktree_key": "agent-systems-benchmark-install-artifacts"
 }
 ---
@@ -32,3 +32,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T05:28:33+00:00: dependencies AR-0701, AR-0801, AR-0804, and AR-0812 are done; implement
   signed platform manifest and verifier
+
+- 2026-09-09T05:28:35+00:00: Claimed by codex-longrun-install-20260909.
