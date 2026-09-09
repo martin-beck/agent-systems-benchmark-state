@@ -963,7 +963,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0897](tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | replay_20260906 | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Independent immutable review of bd6f450; do not publish or change repository settings. |
+| P0 | [AR-0897](tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | replay_20260906 | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Confirm existing reviewed OID bd6f450ab8777aeb before publication; supplied transposed OID does not exist. |
 | P1 | [AR-0907](tasks/AR-0907-hosted-runner-evidence-classification.md): Classify hosted runner evidence without weakening native qualification | quality_20260906 | Separate rolling hosted portability checks from immutable native qualification evidence. | Monitor fresh PR #123 exact-head CI at f0b7b46; do not merge until all required checks pass. |
 | P1 | [AR-0908](tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | contracts_20260906 | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Monitor PR #125 exact-head CI; classify formal failure after logs become available and do not merge before coordinator approval. |
 

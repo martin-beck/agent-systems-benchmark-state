@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-0897",
-  "next_action": "Independent immutable review of bd6f450; do not publish or change repository settings.",
+  "next_action": "Confirm existing reviewed OID bd6f450ab8777aeb before publication; supplied transposed OID does not exist.",
   "observed_branch": "fix/main-merge-integrity",
   "observed_dirty": 0,
   "observed_head": "bd6f450ab8777aeb7e055d71aedba8e4cfd375b3",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-09T21:16:23+00:00",
+  "updated_at": "2026-09-09T21:21:10+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -125,3 +125,9 @@ Implementation has not started. Read the linked plan before claiming.
   recorded exit-0 command 3c082082d70a4823dac1bfbca0113a4cae46077c2cdae8f59d1531a3e27c694b. Final
   immutable check exit 0 confirms both commits SSH-signed/DCO, exact tree/scope, diff-check and
   clean worktree. No publication or remote settings mutation performed.
+
+- 2026-09-09T21:21:10+00:00: Publication was not attempted: approval named
+  bd6f450ab877a7eb7e055d71aedba8e4cfd375b3, which git cat-file confirms is absent. The clean
+  signed/DCO reviewed object remains bd6f450ab8777aeb7e055d71aedba8e4cfd375b3 with tree
+  201112340e22d217189243f04f611e95eef02536. Exact-OID authorization is required because the
+  instruction forbade use of a transposed identity.
