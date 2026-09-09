@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-live",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-09T10:00:09+00:00",
   "depends_on": [
     "AR-0858"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "096dc4f275c05ad81772f443b6f22dddfb92da3d",
-  "owner": "",
+  "owner": "replay_20260906",
   "plan": "../plans/AR-0859.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T07:00:06+00:00",
+  "updated_at": "2026-09-09T07:00:09+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -87,3 +87,5 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   worktree exists clean at stale 096dc4f with no product diff; pinned provenance wheel/runtime lock
   and prior smoke/log artifacts remain preserved. Resume for exact-main compatibility and immutable
   runtime-closure investigation while keeping live support fail closed.
+
+- 2026-09-09T07:00:09+00:00: Claimed by replay_20260906.
