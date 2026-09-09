@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-09T00:13:11+00:00",
+  "updated_at": "2026-09-09T00:23:07+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
@@ -252,3 +252,6 @@ Implementation has not started. Read the linked plan before claiming.
   Fresh exact focused focused duplicate test 1 1/1, asb-tui 19/19, fmt, full workspace Clippy -D
   warnings/tests/rustdoc/release, signature, policy, diff-check and Gitleaks all pass. AR-0875
   limitation remains explicit; PR #89 still at 2dbbde1 pending review.
+
+- 2026-09-09T00:23:07+00:00: Recorded command exit 0; command argv SHA-256
+  6dfad3f505eaa578749ae5cd9bd002c0378d201533be50b2a17564ad0bdaf297.
