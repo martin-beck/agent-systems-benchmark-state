@@ -10,6 +10,12 @@ Never edit this file directly.
 | P1 | [AR-0858](tasks/AR-0858-openjiuwen-adapter.md): Implement the OpenJiuwen contract and capability adapter | Implement the OpenJiuwen contract and capability adapter. | Implement the bounded agent contract, exact provider translation, and capability registration from the pinned protocol; keep live support unclaimed. | replay_20260909 |
 | P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Request fresh independent immutable review of signed candidate e4730653b112d733fb2a1157f65481663c4e073c (tree 64d8123c6a321c9223d1a7a5c1ed6981482d3876, parent c157cedc744373ef75aba686c00e97ce61aa3bfc). Do not publish or rebase before review; hosted exact-head Kani remains required only after publication is authorized. | replay_20260906 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0820](tasks/AR-0820-verifiable-install-artifacts.md): Publish verifiable installation artifacts | Publish verifiable native bundles and metadata that a small bootstrapper can select safely. | Build signed platform manifests and relocatable ASB plus asb-tui installation bundles. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -44,7 +50,6 @@ Never edit this file directly.
 | P1 | [AR-0816](tasks/AR-0816-cross-platform-remote-interoperability.md): Qualify cross-platform remote control | Validate remote TUI and runner combinations across x86_64/aarch64 and supported Linux distributions. | Prove controller-runner interoperability across distributions, architectures, versions, and network conditions. | - |
 | P1 | [AR-0817](tasks/AR-0817-remote-tui-workflows.md): Build remote terminal frontend workflows | Make secure two-machine benchmark operation clear and efficient in the terminal frontend. | Integrate polished connection, trust, remote launch, detach, reconnect, and management journeys into the TUI. | - |
 | P1 | [AR-0818](tasks/AR-0818-remote-control-security-audit.md): Audit remote benchmark control | Attack and qualify remote benchmark control before any release enables it. | Independently audit remote protocol, trust, authorization, lifecycle, interoperability, privacy, and operational safety. | - |
-| P1 | [AR-0820](tasks/AR-0820-verifiable-install-artifacts.md): Publish verifiable installation artifacts | Publish verifiable native bundles and metadata that a small bootstrapper can select safely. | Build signed platform manifests and relocatable ASB plus asb-tui installation bundles. | - |
 | P1 | [AR-0821](tasks/AR-0821-one-line-local-install.md): Add guided one-line local installation | Turn a single documented command into a safe guided local ASB and TUI first run. | Implement an idempotent one-line bootstrap that verifies, installs, configures, starts the local runner, and opens asb-tui. | - |
 | P1 | [AR-0822](tasks/AR-0822-install-upgrade-rollback.md): Add safe installation lifecycle management | Manage the complete installed lifecycle without losing configuration, history, runs, or trust state. | Implement verified upgrades, migrations, rollback, repair, and non-destructive uninstall. | - |
 | P1 | [AR-0823](tasks/AR-0823-installation-qualification.md): Audit installation and first-run experience | Qualify the one-line experience and complete install lifecycle across the supported native matrix. | Independently attack and usability-test first install, onboarding, upgrade, rollback, repair, and uninstall. | - |

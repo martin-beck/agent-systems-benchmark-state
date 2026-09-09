@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**155 ARs tracked** across 4 active status categories.
+**155 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 7 |
-| **Planned** | Defined work awaiting promotion or dependencies | 41 |
+| **Planned** | Defined work awaiting promotion or dependencies | 40 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 105 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -143,7 +143,7 @@ flowchart LR
         AR_0817["AR-0817 - Planned"]:::status_planned
         AR_0818["AR-0818 - Planned"]:::status_planned
         AR_0819["AR-0819 - Done"]:::status_done
-        AR_0820["AR-0820 - Planned"]:::status_planned
+        AR_0820["AR-0820 - Open"]:::status_open
         AR_0821["AR-0821 - Planned"]:::status_planned
         AR_0822["AR-0822 - Planned"]:::status_planned
         AR_0823["AR-0823 - Planned"]:::status_planned
@@ -879,6 +879,12 @@ flowchart LR
 | P1 | [AR-0858](tasks/AR-0858-openjiuwen-adapter.md): Implement the OpenJiuwen contract and capability adapter | replay_20260909 | Implement the OpenJiuwen contract and capability adapter. | Implement the bounded agent contract, exact provider translation, and capability registration from the pinned protocol; keep live support unclaimed. |
 | P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | replay_20260906 | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Request fresh independent immutable review of signed candidate e4730653b112d733fb2a1157f65481663c4e073c (tree 64d8123c6a321c9223d1a7a5c1ed6981482d3876, parent c157cedc744373ef75aba686c00e97ce61aa3bfc). Do not publish or rebase before review; hosted exact-head Kani remains required only after publication is authorized. |
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0820](tasks/AR-0820-verifiable-install-artifacts.md): Publish verifiable installation artifacts | Unclaimed | Publish verifiable native bundles and metadata that a small bootstrapper can select safely. | Build signed platform manifests and relocatable ASB plus asb-tui installation bundles. |
+
 ### Blocked (7)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -891,7 +897,7 @@ flowchart LR
 | P1 | [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md): Repair formal TLA artifact availability | Unclaimed | Repair the formal workflow&#x27;s unavailable TLA+ artifact pin without weakening provenance or offline verification. | Hold the four-path acquisition prototype unchanged and obtain an authoritative immutable TLA+ 1.8.0 artifact publication (or coordinator authorization for a separately specified reproducible source-build boundary); then refresh exact metadata once, finish deterministic faults, and run TLC/Alloy. Do not chase the continuously replaced v1.8.0 pre-release asset. |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Monitor exact-main post-merge checks at 2219839 and run local post-merge verification. Retain AR-0202 in progress until genuine privileged native aarch64 evidence is recorded; then complete final review and release. |
 
-### Planned (41)
+### Planned (40)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -913,7 +919,6 @@ flowchart LR
 | P1 | [AR-0816](tasks/AR-0816-cross-platform-remote-interoperability.md): Qualify cross-platform remote control | Unclaimed | Validate remote TUI and runner combinations across x86_64/aarch64 and supported Linux distributions. | Prove controller-runner interoperability across distributions, architectures, versions, and network conditions. |
 | P1 | [AR-0817](tasks/AR-0817-remote-tui-workflows.md): Build remote terminal frontend workflows | Unclaimed | Make secure two-machine benchmark operation clear and efficient in the terminal frontend. | Integrate polished connection, trust, remote launch, detach, reconnect, and management journeys into the TUI. |
 | P1 | [AR-0818](tasks/AR-0818-remote-control-security-audit.md): Audit remote benchmark control | Unclaimed | Attack and qualify remote benchmark control before any release enables it. | Independently audit remote protocol, trust, authorization, lifecycle, interoperability, privacy, and operational safety. |
-| P1 | [AR-0820](tasks/AR-0820-verifiable-install-artifacts.md): Publish verifiable installation artifacts | Unclaimed | Publish verifiable native bundles and metadata that a small bootstrapper can select safely. | Build signed platform manifests and relocatable ASB plus asb-tui installation bundles. |
 | P1 | [AR-0821](tasks/AR-0821-one-line-local-install.md): Add guided one-line local installation | Unclaimed | Turn a single documented command into a safe guided local ASB and TUI first run. | Implement an idempotent one-line bootstrap that verifies, installs, configures, starts the local runner, and opens asb-tui. |
 | P1 | [AR-0822](tasks/AR-0822-install-upgrade-rollback.md): Add safe installation lifecycle management | Unclaimed | Manage the complete installed lifecycle without losing configuration, history, runs, or trust state. | Implement verified upgrades, migrations, rollback, repair, and non-destructive uninstall. |
 | P1 | [AR-0823](tasks/AR-0823-installation-qualification.md): Audit installation and first-run experience | Unclaimed | Qualify the one-line experience and complete install lifecycle across the supported native matrix. | Independently attack and usability-test first install, onboarding, upgrade, rollback, repair, and uninstall. |
