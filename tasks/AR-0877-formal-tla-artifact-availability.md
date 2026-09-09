@@ -17,11 +17,11 @@
   "plan": "../plans/AR-0877.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 90,
+  "task_revision": 91,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T14:35:57+00:00",
+  "updated_at": "2026-09-09T15:17:20+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -341,3 +341,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-09T14:35:57+00:00: PR #120 remains open at exact head 55fdd686. Exact-head Formal run
   34363495390 exposed the portable OCI identity defect now isolated in dependency-free AR-0906;
   preserve branch and resume AR-0877 only after AR-0906 integrates and the PR is rebased.
+
+- 2026-09-09T15:17:20+00:00: Resume formal acquisition repair: bound curl/tool download size and
+  preserve verified source-build/cache provenance before rerunning dependent exact-head CI.
