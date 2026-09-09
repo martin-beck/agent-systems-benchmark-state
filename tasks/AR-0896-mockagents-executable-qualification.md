@@ -10,7 +10,7 @@
   "id": "AR-0896",
   "next_action": "Qualify the exact MockAgents v0.5.0 executable against the complete hostile synthetic protocol and isolation suite; do not unblock AR-0890 unless every required case passes.",
   "observed_branch": "test/mockagents-executable-qualification",
-  "observed_dirty": 3,
+  "observed_dirty": 4,
   "observed_head": "adac76558387cb0bdd09e2ba6cbfe49b9bc205be",
   "owner": "codex-longrun-mockagents-20260909",
   "plan": "../plans/AR-0896.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify one pinned MockAgents executable before deterministic-double CI integration.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-09T10:00:28+00:00",
+  "updated_at": "2026-09-09T10:00:46+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
