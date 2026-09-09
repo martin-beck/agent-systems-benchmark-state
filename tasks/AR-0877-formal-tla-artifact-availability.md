@@ -11,17 +11,17 @@
   "id": "AR-0877",
   "next_action": "Finish remaining dependency/failure/coverage gates after path-scoped privacy scan, then stage and create signed candidate for independent review.",
   "observed_branch": "fix/formal-tla-artifact-availability",
-  "observed_dirty": 8,
-  "observed_head": "b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b",
+  "observed_dirty": 0,
+  "observed_head": "f80c53f0cdf5be9f81715009f13fbc6a050093ba",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0877.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T13:59:56+00:00",
+  "updated_at": "2026-09-09T14:00:03+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
