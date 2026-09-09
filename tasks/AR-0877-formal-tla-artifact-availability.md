@@ -2,7 +2,7 @@
 {
   "branch": "fix/formal-tla-artifact-availability",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T04:01:25+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003",
     "AR-0901",
@@ -13,15 +13,15 @@
   "observed_branch": "fix/formal-tla-artifact-availability",
   "observed_dirty": 4,
   "observed_head": "dca243ab7b8cbb0b2b49a568dec99c517e0719c2",
-  "owner": "replay_20260906",
+  "owner": "",
   "plan": "../plans/AR-0877.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T01:51:49+00:00",
+  "updated_at": "2026-09-09T02:08:16+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -120,3 +120,9 @@ Implementation has not started. Read the linked plan before claiming.
   dirty, bash syntax/diff-check and focused pin test pass, but its exact metadata intentionally
   rejects the replacement and full TLC cannot run. Re-pinning each transient rebuild would violate
   AR-0877 durable-asset acceptance; no signed candidate was created.
+
+- 2026-09-09T02:08:16+00:00: Released without discarding the four-path dirty prototype. Exact
+  blocker remains: upstream TLA+ v1.8.0 prerelease asset IDs 551007111 and 551679598 were deleted,
+  replacement 551717837 changed bytes/digest/publication time, so AR-0877 cannot select a durable
+  artifact. Continue only after AR-0878 qualifies an immutable publication or deterministic
+  source-build contract.
