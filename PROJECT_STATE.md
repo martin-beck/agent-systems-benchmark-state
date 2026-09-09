@@ -11,7 +11,7 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #31 | `feature/native-platforms@bdaf9c108226` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #115 | `test/mockagents-executable-qualification@3f1de4106adf` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test: qualify pinned MockAgents executable |
+| #115 | `test/mockagents-executable-qualification@3f1de4106adf` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test: qualify pinned MockAgents executable |
 
 ## Recent workflows
 
@@ -23,7 +23,7 @@ Generated from local Git and GitHub. Do not edit.
 | 34338066763 | `3f1de4106adf` | pull_request | Emulated aarch64 portability | completed:success |
 | 34338066748 | `3f1de4106adf` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 34338066722 | `3f1de4106adf` | pull_request | Formal assurance | completed:success |
-| 34338066689 | `3f1de4106adf` | pull_request | Repository quality | in_progress:- |
+| 34338066689 | `3f1de4106adf` | pull_request | Repository quality | completed:success |
 | 34336319359 | `adac76558387` | push | Emulated aarch64 portability | completed:success |
 | 34336319346 | `adac76558387` | push | Formal assurance | completed:success |
 | 34336319329 | `adac76558387` | push | Repository quality | completed:success |
