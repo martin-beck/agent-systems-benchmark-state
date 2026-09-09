@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0878",
-  "next_action": "Review candidate 962e8f510947aa7c97bbeb7c31789f5ce156d4b4, tree be4eb3371df02744040b9773e17f5890073d18bd, parent 4bd2bd95c9273a19f50ffeae81a04605bc6956d1, base ecdfae42d5768fc5bc74ea6e3f4d45d8bceb96ff. Do not publish or merge.",
+  "next_action": "Request fresh independent immutable review of signed candidate 71d0f914d3b9b353dd7cde840538b5d5fdec2cab, tree 74f118de20be097510b182cd42e442c8baaeace9, parent 38c729425309b3061ea361fbd349a961374bd64b, base ca6e75916a8c9831b9107377cd48d731463c272a. Do not publish or merge before review; hosted exact-head Kani remains required after publication authorization.",
   "observed_branch": "feature/tla-source-build-provenance",
   "observed_dirty": 0,
   "observed_head": "71d0f914d3b9b353dd7cde840538b5d5fdec2cab",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 213,
+  "task_revision": 214,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T06:19:08+00:00",
+  "updated_at": "2026-09-09T06:19:57+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -725,3 +725,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T06:19:08+00:00: Recorded command exit 0; command argv SHA-256
   763179e6930ada862784e2e00feff1aa1571299fd421609a0830421b0744f141.
+
+- 2026-09-09T06:19:57+00:00: Controlled rebase onto live ca6e75916a8c9831b9107377cd48d731463c272a is
+  complete. Range 660610b5ff5be76930ad9355bc909b16a5e51fb0,
+  66e510454ed4d3a5f909c890c9c2e726f1f8d3f6, 38c729425309b3061ea361fbd349a961374bd64b,
+  71d0f914d3b9b353dd7cde840538b5d5fdec2cab is four exact equals against the approved 962e8f5 package
+  and remains exactly 11 authorized paths. Gates green: workspace fmt, Clippy, tests, docs, release;
+  locked formal and focused 4/4; 13 deletion trials and exact dual offline output 4512486 bytes
+  SHA256 8c200a88d151c6c183c8dbc57a6b633d135e7a2b18242a3afbf243a9e4b68d3e; TLC positive and stale
+  negative; Alloy positive and mutants; mutation 7/7; contention and cancellation cleanup; policy,
+  Ruff, ShellCheck 0.9.0, actionlint, zizmor, Gitleaks, cargo-deny, cargo-audit; signatures, DCO,
+  diff-check, clean tree. llvm-cov executes 4/4 with zero instrumentable Rust regions; local Kani
+  remains unavailable and hosted exact-head Kani is required after publication.
