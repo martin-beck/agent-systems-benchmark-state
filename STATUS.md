@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**155 ARs tracked** across 5 active status categories.
+**155 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 7 |
 | **Planned** | Defined work awaiting promotion or dependencies | 39 |
 | **Future** | Deferred roadmap work | 0 |
@@ -173,7 +173,7 @@ flowchart LR
         AR_0855["AR-0855 - Done"]:::status_done
         AR_0856["AR-0856 - Planned"]:::status_planned
         AR_0857["AR-0857 - Done"]:::status_done
-        AR_0858["AR-0858 - Open"]:::status_open
+        AR_0858["AR-0858 - In progress"]:::status_in_progress
         AR_0859["AR-0859 - Planned"]:::status_planned
         AR_0860["AR-0860 - Planned"]:::status_planned
         AR_0861["AR-0861 - Planned"]:::status_planned
@@ -872,17 +872,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P1 | [AR-0858](tasks/AR-0858-openjiuwen-adapter.md): Implement the OpenJiuwen contract and capability adapter | codex-longrun-openjiuwen-adapter-20260909 | Implement the OpenJiuwen contract and capability adapter. | Implement the bounded agent contract, exact provider translation, and capability registration from the pinned protocol; keep live support unclaimed. |
 | P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | replay_20260906 | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Review candidate 962e8f510947aa7c97bbeb7c31789f5ce156d4b4, tree be4eb3371df02744040b9773e17f5890073d18bd, parent 4bd2bd95c9273a19f50ffeae81a04605bc6956d1, base ecdfae42d5768fc5bc74ea6e3f4d45d8bceb96ff. Do not publish or merge. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0858](tasks/AR-0858-openjiuwen-adapter.md): Implement the OpenJiuwen contract and capability adapter | Unclaimed | Implement the OpenJiuwen contract and capability adapter. | Implement the bounded agent contract, exact provider translation, and capability registration from the pinned protocol; keep live support unclaimed. |
 
 ### Blocked (7)
 

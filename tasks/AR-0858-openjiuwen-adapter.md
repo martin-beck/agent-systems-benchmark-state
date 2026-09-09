@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-adapter",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-09T07:34:14+00:00",
   "depends_on": [
     "AR-0857"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/openjiuwen-adapter",
   "observed_dirty": 0,
   "observed_head": "7d9191c99c0e55814845a8809aa22d7a0aefb9ae",
-  "owner": "",
+  "owner": "codex-longrun-openjiuwen-adapter-20260909",
   "plan": "../plans/AR-0858.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Implement the OpenJiuwen contract and capability adapter.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Implement the OpenJiuwen contract and capability adapter",
-  "updated_at": "2026-09-09T05:42:45+00:00",
+  "updated_at": "2026-09-09T06:04:14+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-adapter"
 }
 ---
@@ -42,3 +42,5 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 - 2026-09-09T05:42:45+00:00: Recovered expired claim formerly owned by replay_20260909. Lease
   expired; preserved declared OpenJiuwen worktree, branch, clean observed head, and prior progress
   for explicit coordinator review before any re-claim.
+
+- 2026-09-09T06:04:14+00:00: Claimed by codex-longrun-openjiuwen-adapter-20260909.
