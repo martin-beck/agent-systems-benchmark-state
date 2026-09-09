@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T19:02:38+00:00",
+  "updated_at": "2026-09-09T19:03:01+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -338,3 +338,6 @@ patch release has advanced.
   remains seven AR-owned paths on base b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b.
 
 - 2026-09-09T19:02:38+00:00: ambiguous
+
+- 2026-09-09T19:03:01+00:00: Recorded command exit 0; command argv SHA-256
+  785a36cf9bfca192b6e7199f7923f3d9c8c1ee3e6d758677ab27d87a4ecaafde.
