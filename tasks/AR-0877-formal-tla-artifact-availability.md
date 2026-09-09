@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0877",
-  "next_action": "Add deterministic local fake-transport acquisition tests covering metadata/redirect/status/timeout/truncation/concurrency/partial/cache mutations, strengthen redirect validation before body retrieval, then run ShellCheck and preserved TLC/Alloy proofs.",
+  "next_action": "Hold the four-path acquisition prototype unchanged and obtain an authoritative immutable TLA+ 1.8.0 artifact publication (or coordinator authorization for a separately specified reproducible source-build boundary); then refresh exact metadata once, finish deterministic faults, and run TLC/Alloy. Do not chase the continuously replaced v1.8.0 pre-release asset.",
   "observed_branch": "fix/formal-tla-artifact-availability",
   "observed_dirty": 4,
   "observed_head": "dca243ab7b8cbb0b2b49a568dec99c517e0719c2",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T01:51:08+00:00",
+  "updated_at": "2026-09-09T01:51:49+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -110,3 +110,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T01:51:08+00:00: Recorded command exit 0; command argv SHA-256
   1048003a12beab80a5c070bfa62dc6bbf9cc0c57bcd6b3b4969de2d26c52513e.
+
+- 2026-09-09T01:51:49+00:00: Exact upstream blocker discovered during full acquisition verification.
+  GitHub release 25926686 is a mutable v1.8.0 pre-release rebuilt from the same b123b226 tag: asset
+  551007111 is now HTTP 404; asset 551679598 observed at 00:59:49Z with 4489230 bytes/digest
+  13885c09 was deleted during this AR and is now HTTP 404; replacement 551717837 created 01:24:53Z
+  has 4489229 bytes/digest f3a6ba40 and is HTTP 200. Published_at also changed from 01:01:29Z to
+  01:26:05Z. The pre-body redirect hardening and owner/single-link/offline cache prototype remains
+  dirty, bash syntax/diff-check and focused pin test pass, but its exact metadata intentionally
+  rejects the replacement and full TLC cannot run. Re-pinning each transient rebuild would violate
+  AR-0877 durable-asset acceptance; no signed candidate was created.
