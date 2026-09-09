@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 109,
+  "task_revision": 110,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T04:37:04+00:00",
+  "updated_at": "2026-09-09T04:40:18+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -403,3 +403,6 @@ Implementation has not started. Read the linked plan before claiming.
   but jacocoant.jar deletion built the exact reviewed output, triggering retained input is not
   necessary. This is a product-contract contradiction, not environment/operator failure; no
   candidate created.
+
+- 2026-09-09T04:40:18+00:00: Recorded command exit 1; command argv SHA-256
+  cbe022e5c3f013b84c394dfe804c6596f8671cff44942620035ae8aee7d3d630.
