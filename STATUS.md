@@ -877,7 +877,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0819](tasks/AR-0819-ssh-remote-bootstrap.md): Add SSH remote discovery and bootstrap | replay_20260909 | Use configured SSH hosts as the safe default path to a remote runner and help establish dedicated key authentication. | Implement OpenSSH host selection, service probing, stdio bridging, and explicit passwordless enrollment. |
-| P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | replay_20260906 | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Request one controlled signed rebase of candidate c6aed713 onto current origin/main 9aad1317 (six commits ahead, zero path overlap), preserve exact eight-path range-diff, rerun exact-tree focused/full/formal/privacy/policy/supply gates, then request independent immutable review. Do not publish stale-base candidate. |
+| P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | replay_20260906 | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Independent immutable review of exact candidate 6cbd169f6ba6a1f1db95ea7b254ba2fdb4c5351b/tree 747081681880e1221433a7fd7853ecf8b96cf1fc on parent 9aad1317bdcaabcec2e62a856ff6d0b3ac757f46; do not publish until review. Hosted exact-head formal/Kani remains required after publication. |
 
 ### Open (2)
 

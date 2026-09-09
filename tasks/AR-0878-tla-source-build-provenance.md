@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0878",
-  "next_action": "Request one controlled signed rebase of candidate c6aed713 onto current origin/main 9aad1317 (six commits ahead, zero path overlap), preserve exact eight-path range-diff, rerun exact-tree focused/full/formal/privacy/policy/supply gates, then request independent immutable review. Do not publish stale-base candidate.",
+  "next_action": "Independent immutable review of exact candidate 6cbd169f6ba6a1f1db95ea7b254ba2fdb4c5351b/tree 747081681880e1221433a7fd7853ecf8b96cf1fc on parent 9aad1317bdcaabcec2e62a856ff6d0b3ac757f46; do not publish until review. Hosted exact-head formal/Kani remains required after publication.",
   "observed_branch": "feature/tla-source-build-provenance",
   "observed_dirty": 0,
   "observed_head": "6cbd169f6ba6a1f1db95ea7b254ba2fdb4c5351b",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T03:22:55+00:00",
+  "updated_at": "2026-09-09T03:23:30+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -270,3 +270,19 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T03:22:55+00:00: Recorded command exit 0; command argv SHA-256
   16934318b17035cac4f72d2cdb5fe9474588a84d6ed4c29f2fc2009aa1875cee.
+
+- 2026-09-09T03:23:30+00:00: Controlled rebase complete. Preserved old candidate c6aed713 under
+  evidence/ar-0878-c6aed713; initial rebased ff4e88e had exact equals range-diff. Exact-range
+  repository policy then found the new shell scripts lacked the mandatory adjacent Huawei copyright
+  line, a real metadata-only candidate issue missed while files were untracked. Added only those two
+  header lines and signed/DCO-amended to 6cbd169f6ba6a1f1db95ea7b254ba2fdb4c5351b, tree
+  747081681880e1221433a7fd7853ecf8b96cf1fc, exact parent 9aad1317bdcaabcec2e62a856ff6d0b3ac757f46.
+  Scope remains the same eight owned paths/698 lines. Post-rebase full workspace and locked formal
+  suites pass; exact focused tests 3/3, mutation sentinels 7/7, exact-range policy, Gitleaks,
+  diff-check, SSH signature/DCO, and digest-pinned Ubuntu ShellCheck 0.9.0 pass. The grouped
+  post-rebase wrapper stopped only at the policy header finding after full tests/formal had passed;
+  later wrong /srv/data/data path was an operator-only pre-execution ShellCheck retry failure and
+  the corrected exact command passed. Prior source-built TLC/Alloy, deterministic repeats,
+  concurrency/cancel, supply, and honest zero-instrumentable-Rust coverage evidence transfer because
+  the semantic patch is identical except mandatory comments. Local Kani remains the recorded
+  incomplete-install boundary; hosted exact-head Kani is required.
