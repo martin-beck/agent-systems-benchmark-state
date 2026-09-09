@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0878",
-  "next_action": "Request fresh independent immutable review of rebased signed candidate 962e8f510947aa7c97bbeb7c31789f5ce156d4b4 (tree be4eb337f61cd61a9041b13a4873137469ac67c6, parent 4bd2bd95c9273a19f50ffeae81a04605bc6956d1, base ecdfae42d5768fc5bc74ea6e3f4d45d8bceb96ff). Do not publish or merge before review; hosted exact-head Kani remains required after publication authorization.",
+  "next_action": "Request fresh independent immutable review of rebased signed candidate 962e8f510947aa7c97bbeb7c31789f5ce156d4b4, tree be4eb3371df02744040b9773e17f5890073d18bd, parent 4bd2bd95c9273a19f50ffeae81a04605bc6956d1, base ecdfae42d576 multifold",
   "observed_branch": "feature/tla-source-build-provenance",
   "observed_dirty": 0,
   "observed_head": "962e8f510947aa7c97bbeb7c31789f5ce156d4b4",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 197,
+  "task_revision": 198,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T05:58:58+00:00",
+  "updated_at": "2026-09-09T06:00:26+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -679,3 +679,7 @@ Implementation has not started. Read the linked plan before claiming.
   717258f6cd53646ec846576c89fab98cb0efbc2d, 4bd2bd95c9273a19f50ffeae81a04605bc6956d1,
   962e8f510947aa7c97bbeb7c31789f5ce156d4b4. Range-diff is four exact equals; final diff remains the
   authorized 11 paths.
+
+- 2026-09-09T06:00:26+00:00: Correction: exact tree is be4eb3371df02744040b9773e17f5890073d18bd. All
+  post-rebase gates are green; local Kani remains unavailable and hosted exact-head Kani is required
+  after publication.
