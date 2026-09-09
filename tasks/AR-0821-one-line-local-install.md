@@ -10,7 +10,7 @@
     "AR-0820"
   ],
   "id": "AR-0821",
-  "next_action": "Continue serialized polling of PR #106 rebased head c6b76fa; merge only when every restarted required check is green.",
+  "next_action": "Monitor all required post-merge CI runs for exact main 513c1d926458f1cb6a26d3f7277dc7d9b1496df3; release only after every gate is green.",
   "observed_branch": "feature/one-line-local-install",
   "observed_dirty": 0,
   "observed_head": "bf9e9fe625daf717fb841be9ff1998f8cfb03e80",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Turn a single documented command into a safe guided local ASB and TUI first run.",
-  "task_revision": 101,
+  "task_revision": 102,
   "title": "Add guided one-line local installation",
-  "updated_at": "2026-09-09T06:59:57+00:00",
+  "updated_at": "2026-09-09T07:00:24+00:00",
   "worktree_key": "agent-systems-benchmark-one-line-install"
 }
 ---
@@ -283,3 +283,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T06:59:57+00:00: Recorded command exit 0; command argv SHA-256
   2982220b28fabba4d1c76f26b6c58b1fd696e3fc47f83590e10c2139cad6151e.
+
+- 2026-09-09T07:00:24+00:00: PR #106 rebased twice as origin/main advanced; final exact head
+  bf9e9fe625daf717fb841be9ff1998f8cfb03e80 passed every restarted PR check. Signed DCO merge
+  513c1d926458f1cb6a26d3f7277dc7d9b1496df3 pushed to origin/main; exact-main verification is now
+  required.

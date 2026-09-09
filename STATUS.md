@@ -887,7 +887,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0821](tasks/AR-0821-one-line-local-install.md): Add guided one-line local installation | codex-longrun-one-line-install-20260909 | Turn a single documented command into a safe guided local ASB and TUI first run. | Continue serialized polling of PR #106 rebased head c6b76fa; merge only when every restarted required check is green. |
+| P1 | [AR-0821](tasks/AR-0821-one-line-local-install.md): Add guided one-line local installation | codex-longrun-one-line-install-20260909 | Turn a single documented command into a safe guided local ASB and TUI first run. | Monitor all required post-merge CI runs for exact main 513c1d926458f1cb6a26d3f7277dc7d9b1496df3; release only after every gate is green. |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | replay_20260906 | Qualify pinned OpenJiuwen live execution. | Create the missing declared worktree from exact origin/main, then implement and test the pinned live qualification. |
 | P1 | [AR-0879](tasks/AR-0879-local-llm-testing-recommendations.md): Plan deterministic LLM doubles and local inference | codex-asb-local-llm-research-20260909 | Research deterministic LLM test doubles and local inference options, document ASB recommendations, and create implementation-ready follow-up ARs. | Obtain independent exact-head review of green product PR 107 at bda6cc8a and state PR 16 at 9de11a52; state global schema remains pre-existingly blocked only by active AR-0878 next_action length. |
 
