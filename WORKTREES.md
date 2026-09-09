@@ -64,6 +64,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-native-platforms` | `feature/native-platforms` | `bdaf9c108226` | 0 | behind 213, ahead 17 |
 | `agent-systems-benchmark-native-x86-capacity` | `feature/native-x86-capacity` | `45604cd323c5` | 0 | behind 133, ahead 0 |
 | `agent-systems-benchmark-opendesk-strict-replay-http-compatibility` | `feature/opendesk-strict-replay-http-compatibility` | `f26216bde125` | 0 | behind 173, ahead 0 |
+| `agent-systems-benchmark-openjiuwen-adapter` | `feature/openjiuwen-adapter` | `7d9191c99c0e` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-openjiuwen-provenance` | `feature/openjiuwen-provenance` | `addcfab39e48` | 0 | behind 3, ahead 0 |
 | `agent-systems-benchmark-performance-workloads` | `feature/performance-workloads` | `0f303b3ec179` | 0 | behind 5, ahead 0 |
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 307, ahead 0 |

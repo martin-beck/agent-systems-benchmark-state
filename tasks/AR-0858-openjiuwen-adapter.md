@@ -8,15 +8,18 @@
   ],
   "id": "AR-0858",
   "next_action": "Implement the bounded agent contract, exact provider translation, and capability registration from the pinned protocol; keep live support unclaimed.",
+  "observed_branch": "feature/openjiuwen-adapter",
+  "observed_dirty": 0,
+  "observed_head": "7d9191c99c0e55814845a8809aa22d7a0aefb9ae",
   "owner": "replay_20260909",
   "plan": "../plans/AR-0858.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the OpenJiuwen contract and capability adapter.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Implement the OpenJiuwen contract and capability adapter",
-  "updated_at": "2026-09-09T03:42:13+00:00",
+  "updated_at": "2026-09-09T03:42:20+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-adapter"
 }
 ---
