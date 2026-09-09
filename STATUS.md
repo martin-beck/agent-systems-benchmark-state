@@ -928,7 +928,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0880](tasks/AR-0880-openjiuwen-runtime-closure.md): Repair OpenJiuwen runtime closure | replay_20260906 | Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification. | Fresh immutable review exact rebased candidate 74f6646badd4d1520ad5999fbfd9202ef9cd54a2/tree bd37f38b5418d6e998f38fca4d5165ead83235cb/parent 1ab70e82fa4d442d89481050da50dd4bc3bb4d22; if approved, update PR #112 from old head 6f6666373d23c833609008448b6a672312e1c6fb by exact force-with-lease, then require fresh exact-head hosted CI before merge. |
-| P1 | [AR-0891](tasks/AR-0891-local-inference-provider-profiles.md): Qualify local inference provider profiles | codex-longrun-local-inference-profiles-20260909 | Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server. | Merge PR #113 at exact head ce13e3f4cffde4d77c68b66fe1aeb98ea3621322, run post-merge exact-main checks, then either complete only with full qualification evidence or retain the explicit evidence blocker. |
+| P1 | [AR-0891](tasks/AR-0891-local-inference-provider-profiles.md): Qualify local inference provider profiles | codex-longrun-local-inference-profiles-20260909 | Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server. | Obtain an independently verifiable tokenizer artifact digest and repeated bounded generation trials for Ollama, then qualify at least one grouped profile; separately acquire immutable executable/model/backend evidence before selecting llama.cpp, vLLM, or LocalAI. Keep every incomplete profile non-selectable. |
 
 ### Blocked (8)
 

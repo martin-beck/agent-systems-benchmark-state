@@ -10,7 +10,7 @@
     "AR-0315"
   ],
   "id": "AR-0891",
-  "next_action": "Merge PR #113 at exact head ce13e3f4cffde4d77c68b66fe1aeb98ea3621322, run post-merge exact-main checks, then either complete only with full qualification evidence or retain the explicit evidence blocker.",
+  "next_action": "Obtain an independently verifiable tokenizer artifact digest and repeated bounded generation trials for Ollama, then qualify at least one grouped profile; separately acquire immutable executable/model/backend evidence before selecting llama.cpp, vLLM, or LocalAI. Keep every incomplete profile non-selectable.",
   "observed_branch": "feat/local-inference-provider-profiles",
   "observed_dirty": 0,
   "observed_head": "ce13e3f4cffde4d77c68b66fe1aeb98ea3621322",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Qualify local inference provider profiles",
-  "updated_at": "2026-09-09T09:12:52+00:00",
+  "updated_at": "2026-09-09T09:12:54+00:00",
   "worktree_key": "agent-systems-benchmark-local-inference-provider-profiles"
 }
 ---
@@ -172,3 +172,9 @@ Use exact Ollama, llama.cpp, vLLM and LocalAI sources in `docs/LOCAL_LLM_TESTING
 - 2026-09-09T09:10:24+00:00: Heartbeat by codex-longrun-local-inference-profiles-20260909.
 
 - 2026-09-09T09:12:52+00:00: Heartbeat by codex-longrun-local-inference-profiles-20260909.
+
+- 2026-09-09T09:12:54+00:00: Post-merge exact-main verification for merge
+  cd350831486d22f39e77e04daf2206625f7e4119 is fully green across all six workflows. The ignored
+  native Ollama read-only probe passed exact binary, server, and model pins; manifest records this
+  partial evidence but AR-0891 remains in progress because tokenizer and repeated-variability
+  evidence are missing and no other engine has a qualified artifact.
