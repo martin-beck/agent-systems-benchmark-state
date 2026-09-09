@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T13:25:26+00:00",
+  "updated_at": "2026-09-09T13:26:19+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -144,3 +144,6 @@ Implementation has not started. Read the linked plan before claiming.
   artifact boundary instead of repinning the mutable v1.8.0 prerelease asset.
 
 - 2026-09-09T13:25:26+00:00: Claimed by quality_20260906.
+
+- 2026-09-09T13:26:19+00:00: Recorded command exit 0; command argv SHA-256
+  c78581320d3e12633fef33a74574afb816fe7ba23d209b6b6b0e0143e9ecb31a.
