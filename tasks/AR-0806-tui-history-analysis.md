@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 117,
+  "task_revision": 118,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-09T04:23:38+00:00",
+  "updated_at": "2026-09-09T04:24:25+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
@@ -420,3 +420,6 @@ Implementation has not started. Read the linked plan before claiming.
   40a7753dab1dd28ca43e8ae11b6f8ddbc1ecbe73d9093c183e394af5f29dbb3b.
 
 - 2026-09-09T04:23:38+00:00: Heartbeat by codex-longrun-tui-20260909.
+
+- 2026-09-09T04:24:25+00:00: Recorded command exit 0; command argv SHA-256
+  40a7753dab1dd28ca43e8ae11b6f8ddbc1ecbe73d9093c183e394af5f29dbb3b.
