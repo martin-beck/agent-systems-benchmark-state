@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 102,
+  "task_revision": 103,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T19:11:23+00:00",
+  "updated_at": "2026-09-09T19:14:06+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -386,3 +386,6 @@ patch release has advanced.
   The recorded 19:08 exit 1 was operator-only invalid cargo flag --all-target-targets after
   preceding checks passed; corrected remaining gate batch is the recorded 19:09 exit 0. Candidate is
   ready for fresh immutable review and remains unpublished; PR #123 still has prior head 32a8fe5.
+
+- 2026-09-09T19:14:06+00:00: Recorded command exit 0; command argv SHA-256
+  a7ade32261e426979b5551a527f9d8264790347fdf184c66a59f22a1e0cc6d67.
