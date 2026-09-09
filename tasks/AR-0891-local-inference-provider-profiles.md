@@ -12,7 +12,7 @@
   "id": "AR-0891",
   "next_action": "Obtain an independently verifiable tokenizer artifact digest and repeated bounded generation trials for Ollama, then qualify at least one grouped profile; separately acquire immutable executable/model/backend evidence before selecting llama.cpp, vLLM, or LocalAI. Keep every incomplete profile non-selectable.",
   "observed_branch": "feat/local-inference-provider-profiles",
-  "observed_dirty": 3,
+  "observed_dirty": 5,
   "observed_head": "ce13e3f4cffde4d77c68b66fe1aeb98ea3621322",
   "owner": "codex-longrun-local-inference-profiles-20260909",
   "plan": "../plans/AR-0891.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Qualify local inference provider profiles",
-  "updated_at": "2026-09-09T09:19:50+00:00",
+  "updated_at": "2026-09-09T09:19:56+00:00",
   "worktree_key": "agent-systems-benchmark-local-inference-provider-profiles"
 }
 ---
