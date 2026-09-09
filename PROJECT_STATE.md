@@ -12,7 +12,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- | --- |
 | #31 | `feature/native-platforms@bdaf9c108226` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
 | #89 | `feature/tui-history-analysis@dc914626bb2f` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: add bounded TUI history projection |
-| #96 | `feature/performance-workloads@0f303b3ec179` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(workloads): pin performance benchmark candidates |
+| #96 | `feature/performance-workloads@0f303b3ec179` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(workloads): pin performance benchmark candidates |
 
 ## Recent workflows
 
@@ -24,7 +24,7 @@ Generated from local Git and GitHub. Do not edit.
 | 34303445663 | `0f303b3ec179` | pull_request | Rust verification | completed:success |
 | 34303445656 | `0f303b3ec179` | pull_request | Fault assurance | completed:success |
 | 34303445645 | `0f303b3ec179` | pull_request | Formal assurance | completed:success |
-| 34303445640 | `0f303b3ec179` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 34303445640 | `0f303b3ec179` | pull_request | Emulated aarch64 portability | completed:success |
 | 34302509860 | `4870dfdeacb5` | push | Emulated aarch64 portability | completed:success |
 | 34302509840 | `4870dfdeacb5` | push | Fault assurance | completed:success |
 | 34302509823 | `4870dfdeacb5` | push | Huawei MIT source headers | completed:success |
