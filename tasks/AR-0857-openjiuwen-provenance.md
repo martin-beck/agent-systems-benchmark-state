@@ -14,7 +14,7 @@
     "AR-0855"
   ],
   "id": "AR-0857",
-  "next_action": "Pin official source, package, dependency closure, license, executable digest, protocol mode, and supported platform before any adapter claim.",
+  "next_action": "Publish signed commit addcfab and open a PR; then monitor exact-head required CI before any integration.",
   "observed_branch": "feature/openjiuwen-provenance",
   "observed_dirty": 0,
   "observed_head": "addcfab39e48d3b5cf573ebc109cb676f299be5f",
@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin OpenJiuwen source, package, and license provenance.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Pin OpenJiuwen source, package, and license provenance",
-  "updated_at": "2026-09-09T02:56:04+00:00",
+  "updated_at": "2026-09-09T02:56:26+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-provenance"
 }
 ---
@@ -87,3 +87,7 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-09T02:56:04+00:00: Recorded command exit 0; command argv SHA-256
   6bf4269bb9cf4bf4bc21257aa48991f23df6229a4adc8c6b2665cb5ed2a7ec10.
+
+- 2026-09-09T02:56:26+00:00: Provenance fixtures are implemented and verified: package/license/lock
+  hashes, JSON invariants, 161-package lock dry-run, cargo test 138 passed plus integration tests,
+  fmt and diff checks, policy and DCO passed.
