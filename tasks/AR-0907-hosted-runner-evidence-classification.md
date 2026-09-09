@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 87,
+  "task_revision": 88,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T18:55:02+00:00",
+  "updated_at": "2026-09-09T18:55:24+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -304,3 +304,6 @@ patch release has advanced.
   already success; Rust, repository quality, platform evidence, emulated aarch64,
   fault/fuzz/matcher, TLC/Alloy/Kani/Loom remain queued or in progress. MergeStateStatus UNSTABLE
   solely while checks run. No tree mutation.
+
+- 2026-09-09T18:55:24+00:00: Recorded command exit 0; command argv SHA-256
+  a5ffd3504b674c80c303c89b1287252c8744006995dfe6b299cbdddabbc470fd.
