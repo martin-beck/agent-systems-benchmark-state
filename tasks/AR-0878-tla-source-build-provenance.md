@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0878",
-  "next_action": "Independent immutable review of exact candidate 6cbd169f6ba6a1f1db95ea7b254ba2fdb4c5351b/tree 747081681880e1221433a7fd7853ecf8b96cf1fc on parent 9aad1317bdcaabcec2e62a856ff6d0b3ac757f46; do not publish until review. Hosted exact-head formal/Kani remains required after publication.",
+  "next_action": "Request a second controlled signed rebase of repaired candidate c157cedc744373ef75aba686c00e97ce61aa3bfc onto current origin/main 7d9191c99c0e55814845a8809aa22d7a0aefb9ae; two intervening AR-0819 TUI commits have zero path overlap. Preserve the exact license repair and rerun exact-range gates before immutable review.",
   "observed_branch": "feature/tla-source-build-provenance",
   "observed_dirty": 0,
   "observed_head": "c157cedc744373ef75aba686c00e97ce61aa3bfc",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T03:38:46+00:00",
+  "updated_at": "2026-09-09T03:39:31+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -307,3 +307,18 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T03:38:46+00:00: Recorded command exit 0; command argv SHA-256
   7baf2f06c865026dc087ddd098a82d450601e3d68e96a4715dc77c917d69de98.
+
+- 2026-09-09T03:39:31+00:00: License review block repaired in signed/DCO candidate
+  c157cedc744373ef75aba686c00e97ce61aa3bfc/tree 8a86ce5c4cef3d879a156596cbdae64d2a116899/parent
+  9aad1317bdcaabcec2e62a856ff6d0b3ac757f46. Every one of 31 JAR mappings now points to a
+  SHA-256-bound actual license text, never pom.properties or manifest-only metadata; verifier binds
+  the allowed SPDX-to-text path/digest map and rejects substituted/non-license evidence. Manifest
+  additionally binds Ant LICENSE+NOTICE and three Temurin JDK plus four exact container-tool legal
+  receipts; build verifies their bytes inside the exact archives/digest-pinned image before
+  compilation. Added wrong-license-digest, non-license, missing-JDK-receipt and wrong-Ant-license
+  negatives. Corrected one real docker stdin bug (--interactive required for receipt checksum
+  stream); actual offline build then reproduced exact 8c200a88... output and full 31-JAR
+  verification. Exact candidate full workspace/formal, focused 3/3, mutation 7/7, exact-range
+  policy, ShellCheck, Gitleaks, cargo-deny/audit and clean-tree gates pass. Current origin/main
+  advanced to 7d9191c via two TUI-only AR-0819 commits, with no overlap, so publication remains
+  blocked on authorized rebase.
