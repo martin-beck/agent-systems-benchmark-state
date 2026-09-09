@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-live",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T08:27:10+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0858"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "096dc4f275c05ad81772f443b6f22dddfb92da3d",
-  "owner": "codex-longrun-openjiuwen-live-20260909",
+  "owner": "",
   "plan": "../plans/AR-0859.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T06:27:32+00:00",
+  "updated_at": "2026-09-09T06:27:57+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -73,3 +73,12 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-09T06:27:32+00:00: Recorded command exit 0; command argv SHA-256
   dea8571d59e31babd3e1dfcc4938af277fa51fc036453e3276fed5195f8743ce.
+
+- 2026-09-09T06:27:57+00:00: Blocked with exact evidence: pinned wheel SHA-256
+  21e9479c6b858cda28c250d63066f862fc0915cf2039edb00f016cbec7f9abba installed from the provenance
+  artifact, but the recorded openjiuwen-runtime.lock omits prompt-toolkit, so the console entry
+  point fails at import before any provider request. In a disposable environment with
+  prompt-toolkit==3.0.52 added (not lock-proven), the same entry point next fails importing
+  opentelemetry.sdk, also absent from the lock. Therefore no live
+  edit/tool/usage/cancellation/network evidence can be claimed without repairing and requalifying
+  the immutable runtime closure; preserved the declared worktree and artifacts.
