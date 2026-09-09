@@ -11,18 +11,18 @@
   ],
   "id": "AR-0806",
   "next_action": "Rebase the approved AR-0806 one-path semantics onto current product main dca243ab, preserve the AR-0875 limitation, rerun exact range-diff/full gates, obtain fresh immutable review, then update PR #89 and rerun exact-head CI before merge.",
-  "observed_branch": "DETACHED",
-  "observed_dirty": 2,
-  "observed_head": "dca243ab7b8cbb0b2b49a568dec99c517e0719c2",
+  "observed_branch": "feature/tui-history-analysis",
+  "observed_dirty": 0,
+  "observed_head": "dc914626bb2fbf57fc7df15e7d37873142850fe7",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0806.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-09T00:33:27+00:00",
+  "updated_at": "2026-09-09T00:33:34+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
