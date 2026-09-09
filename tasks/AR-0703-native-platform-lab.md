@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-platform-lab",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T11:22:53+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0701",
     "AR-0103",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/native-platform-lab",
   "observed_dirty": 0,
   "observed_head": "b1669203308db5a75fee1e78a45c6fc8e71f17ce",
-  "owner": "native-policy-future-20260909",
+  "owner": "",
   "plan": "../plans/AR-0703.md",
   "priority": "P4",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "future",
   "summary": "Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Provision native platform qualification capacity",
-  "updated_at": "2026-09-09T10:52:53+00:00",
+  "updated_at": "2026-09-09T10:52:56+00:00",
   "worktree_key": "agent-systems-benchmark-native-platform-lab"
 }
 ---
@@ -67,3 +67,6 @@ openEuler or Debian kernel evidence. Containers, cross-builds and emulation cann
 - 2026-09-09T10:52:50+00:00: Reclassified native ARM64 lab capacity as optional future evidence.
 
 - 2026-09-09T10:52:53+00:00: Claimed by native-policy-future-20260909.
+
+- 2026-09-09T10:52:56+00:00: Deferred optional native ARM64 hardware qualification; required
+  development uses native x86_64 and applicable pinned QEMU AArch64 coverage.
