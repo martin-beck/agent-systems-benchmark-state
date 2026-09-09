@@ -11,14 +11,14 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #31 | `feature/native-platforms@bdaf9c108226` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #110 | `feat/llm-fixture-scenario-contract@4d15bbc7e1d0` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: define synthetic LLM scenario contract |
+| #110 | `feat/llm-fixture-scenario-contract@4d15bbc7e1d0` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat: define synthetic LLM scenario contract |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 34328581566 | `4d15bbc7e1d0` | pull_request | Rust verification | completed:success |
-| 34328581467 | `4d15bbc7e1d0` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 34328581467 | `4d15bbc7e1d0` | pull_request | Emulated aarch64 portability | completed:success |
 | 34328581453 | `4d15bbc7e1d0` | pull_request | Repository quality | completed:success |
 | 34328581439 | `4d15bbc7e1d0` | pull_request | Fault assurance | completed:success |
 | 34328581429 | `4d15bbc7e1d0` | pull_request | Formal assurance | completed:success |
