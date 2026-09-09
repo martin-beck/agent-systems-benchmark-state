@@ -7,7 +7,7 @@
     "AR-0857"
   ],
   "id": "AR-0858",
-  "next_action": "Implement the bounded agent contract, exact provider translation, and capability registration from the pinned protocol; keep live support unclaimed.",
+  "next_action": "Run full asb-agents package tests and workspace validation, then commit/publish the reviewed adapter boundary.",
   "observed_branch": "feature/openjiuwen-adapter",
   "observed_dirty": 3,
   "observed_head": "ca6e75916a8c9831b9107377cd48d731463c272a",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the OpenJiuwen contract and capability adapter.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Implement the OpenJiuwen contract and capability adapter",
-  "updated_at": "2026-09-09T06:09:34+00:00",
+  "updated_at": "2026-09-09T06:10:04+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-adapter"
 }
 ---
@@ -73,3 +73,8 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-09T06:09:34+00:00: Recorded command exit 0; command argv SHA-256
   551d6c7eeab53208e1c2a9abdf6aad9643b0ff8f34e708316e09a72be88d15a3.
+
+- 2026-09-09T06:10:04+00:00: Implemented provenance-bound OpenJiuwen pre-start adapter: pinned
+  manifest, explicit no-live-capability registration, loopback/replay credential-free provider
+  capability matrix, exact model/endpoint/profile translation, constructor-controlled binding proof,
+  and hostile constructor/profile tests. Focused tests and clippy pass.
