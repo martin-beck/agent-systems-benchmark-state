@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-adapter",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T08:21:33+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0857"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/openjiuwen-adapter",
   "observed_dirty": 0,
   "observed_head": "43ceb0f1bf8bba66723b96ef8e41564df65eb7a5",
-  "owner": "codex-longrun-openjiuwen-adapter-20260909",
+  "owner": "",
   "plan": "../plans/AR-0858.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Implement the OpenJiuwen contract and capability adapter.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "Implement the OpenJiuwen contract and capability adapter",
-  "updated_at": "2026-09-09T06:21:37+00:00",
+  "updated_at": "2026-09-09T06:21:51+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-adapter"
 }
 ---
@@ -199,3 +199,9 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-09T06:21:37+00:00: Recorded command exit 0; command argv SHA-256
   8e262ab06c98487770bd0cac06ffff1f3cc66f8f9b073a7ad7d6fda67bd175e4.
+
+- 2026-09-09T06:21:51+00:00: Acceptance verified: PR #104 exact head
+  43ceb0f1bf8bba66723b96ef8e41564df65eb7a5 passed every required PR check; signed DCO merge
+  096dc4f275c05ad81772f443b6f22dddfb92da3d pushed to origin/main; all six exact-main post-merge
+  workflows (Repository quality, Huawei MIT source headers, Emulated aarch64 portability, Fault
+  assurance, Formal assurance, Rust verification) completed successfully.
