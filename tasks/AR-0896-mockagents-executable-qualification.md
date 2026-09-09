@@ -8,7 +8,7 @@
     "AR-0889"
   ],
   "id": "AR-0896",
-  "next_action": "Wait for fresh six exact-main workflows on a4e1a9d; then release or continue hostile qualification.",
+  "next_action": "Rerun failed Repository quality workflow 34339927858 on unchanged main; if failure repeats, isolate and repair test-state ownership before any feature work.",
   "observed_branch": "test/mockagents-executable-qualification",
   "observed_dirty": 0,
   "observed_head": "3f1de4106adf9ad6c34759638d70e9001709ab0a",
@@ -17,10 +17,10 @@
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Reachable signed DCO fast-forward a4e1a9d published; exact-main verification triggered.",
-  "task_revision": 35,
+  "summary": "Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change.",
+  "task_revision": 36,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-09T10:26:30+00:00",
+  "updated_at": "2026-09-09T10:27:19+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -135,3 +135,9 @@ synthetic fixture for black-box executable evidence.
 
 - 2026-09-09T10:26:30+00:00: Recorded command exit 0; command argv SHA-256
   6b7e938a3213086d5a5d58a7ff0decddafd3b2feecaf047e0ea81572e8705b75.
+
+- 2026-09-09T10:27:19+00:00: Failure:
+  control::tests::state_root_is_exclusive_and_uncertain_restart_fails_closed panicked on first
+  open_backend with state root already owned. Test uses PID+atomic sequence unique Scratch roots;
+  AR-0896 touched only tools/llm-double-spike, so no causal product change identified. Local cargo
+  unavailable for reproduction; rerun unchanged workflow before code repair.
