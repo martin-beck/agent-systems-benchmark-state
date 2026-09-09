@@ -12,17 +12,17 @@
   "id": "AR-0906",
   "next_action": "Run full formal/privacy/policy gates on the six-path verifier slice, then create a signed candidate for independent review.",
   "observed_branch": "fix/formal-oci-image-identity",
-  "observed_dirty": 6,
-  "observed_head": "b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b",
+  "observed_dirty": 0,
+  "observed_head": "90caa78574f70a67646c2d6fc30d8744e955c250",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0906.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make deterministic formal source builds verify OCI image identity portably across Docker engines.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Verify formal OCI build identity portably",
-  "updated_at": "2026-09-09T14:56:42+00:00",
+  "updated_at": "2026-09-09T14:56:48+00:00",
   "worktree_key": "agent-systems-benchmark-formal-oci-image-identity"
 }
 ---
