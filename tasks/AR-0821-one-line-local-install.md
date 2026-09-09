@@ -2,7 +2,7 @@
 {
   "branch": "feature/one-line-local-install",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T09:05:27+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0803",
     "AR-0804",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/one-line-local-install",
   "observed_dirty": 0,
   "observed_head": "bf9e9fe625daf717fb841be9ff1998f8cfb03e80",
-  "owner": "codex-longrun-one-line-install-20260909",
+  "owner": "",
   "plan": "../plans/AR-0821.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Turn a single documented command into a safe guided local ASB and TUI first run.",
-  "task_revision": 118,
+  "task_revision": 119,
   "title": "Add guided one-line local installation",
-  "updated_at": "2026-09-09T07:05:31+00:00",
+  "updated_at": "2026-09-09T07:05:45+00:00",
   "worktree_key": "agent-systems-benchmark-one-line-install"
 }
 ---
@@ -327,3 +327,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T07:05:31+00:00: Recorded command exit 0; command argv SHA-256
   3b16a05e13c22af596d83d8c762881f9320a15ff97676cdc0fedd0cdc85d779c.
+
+- 2026-09-09T07:05:45+00:00: Acceptance verified: PR #106 merged as signed merge
+  513c1d926458f1cb6a26d3f7277dc7d9b1496df3; all six exact-main post-merge workflows green
+  (Repository quality, Emulated aarch64 portability, Huawei MIT source headers, Fault assurance,
+  Formal assurance, Rust verification).
