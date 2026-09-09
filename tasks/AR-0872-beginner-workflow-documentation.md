@@ -10,7 +10,7 @@
     "AR-0871"
   ],
   "id": "AR-0872",
-  "next_action": "Commit and publish the exact TLA pin repair, then monitor all exact-head checks.",
+  "next_action": "Push 328de90, update PR #94 to exact head, and monitor the full required CI set.",
   "observed_branch": "docs/beginner-workflows",
   "observed_dirty": 0,
   "observed_head": "328de90ef1ed3ba391634009a855d731b1322a53",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish linked beginner workflows for setup, multi-agent runs, progress, comparison, recording, and replay with and without the TUI.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Publish beginner workflow documentation",
-  "updated_at": "2026-09-09T01:50:08+00:00",
+  "updated_at": "2026-09-09T01:50:46+00:00",
   "worktree_key": "agent-systems-benchmark-beginner-workflows"
 }
 ---
@@ -220,3 +220,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T01:50:08+00:00: Recorded command exit 0; command argv SHA-256
   87688052ad51edb3bff0c81442f0789dcc4d1c9531a4d4bbaa5202c7f1aefe04.
+
+- 2026-09-09T01:50:46+00:00: Signed+DCO repair commit 328de90 repins recreated TLA asset 551717837
+  (4489229 bytes, SHA-256 f3a6ba40...). Local temporal runner and formal pin test pass.
