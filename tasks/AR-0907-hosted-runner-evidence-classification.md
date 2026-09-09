@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T17:31:06+00:00",
+  "updated_at": "2026-09-09T17:38:42+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -182,3 +182,6 @@ patch release has advanced.
   passed, while the unchanged-tree full coverage rerun passed. Native validator/native 24.04.4
   evidence and integration f385fb27/PRs #120-#122 are unchanged. SSH signature, exact DCO, parent
   and scope verified; unpublished.
+
+- 2026-09-09T17:38:42+00:00: Recorded command exit 0; command argv SHA-256
+  d431d9f3bf519cc3be5a57272fef1e6bfac0bd8d5c581bc522e39e59201dc741.
