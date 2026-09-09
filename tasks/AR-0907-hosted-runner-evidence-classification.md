@@ -8,7 +8,7 @@
     "AR-0848"
   ],
   "id": "AR-0907",
-  "next_action": "Add a closed hosted-portability schema and conditional workflow boundary while preserving exact native qualification and its 24.04.4 evidence.",
+  "next_action": "Run full workspace, policy, privacy, failure and platform gates; then create a focused signed candidate for independent review.",
   "observed_branch": "fix/hosted-runner-evidence-classification",
   "observed_dirty": 7,
   "observed_head": "b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T17:18:19+00:00",
+  "updated_at": "2026-09-09T17:18:55+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -111,3 +111,16 @@ patch release has advanced.
 
 - 2026-09-09T17:18:19+00:00: Recorded command exit 0; command argv SHA-256
   41a16a2105427681cad5d8f1815611a7969170850fdcd26d2e3876b55bdc9242.
+
+- 2026-09-09T17:18:55+00:00: Implemented the seven-path AR-0907 slice on exact base b6d04a8. The
+  workflow now routes exact Ubuntu 24.04.4 through unchanged native_evidence and newer well-formed
+  Noble patch releases through a distinct hosted-portability collector/schema; artifacts are
+  conditionally named and native partial evidence cannot upload. The native validator and historical
+  evidence are unchanged, and a focused negative proves 24.04.5 is still rejected. Closed schema
+  fixture runs 16 unique mutations; source-race, raw-private-diagnostic redaction, stale/symlink
+  output and workflow-kind tests are included. Focused hosted tests 6/6 and existing native capacity
+  tests 11/11 pass; Ruff, strict mypy with imported legacy module skipped, actionlint, zizmor and
+  diff-check pass. Earlier exit 1/2 results were operator harness issues only: non-package unittest
+  import, missing jsonschema in system Python, one mistyped test filename, and Ruff-requested
+  context consolidation; corrected commands are green. Dirty scope is exactly seven planned paths;
+  f385fb27 and PRs #120/#121/#122 remain unchanged.
