@@ -866,7 +866,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0806](tasks/AR-0806-tui-history-analysis.md): Add terminal history and analysis | quality_20260906 | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. | PR #89 was guarded-force-updated to approved 2dbbde184ef78a93b63ec1a3b5eb5b02bca0d269, but live main advanced again to 5b2236b105a97756a55c7ac64360cb3616ef979f and GitHub reports mergeStateStatus DIRTY with no replacement checks yet. Do not merge. Reconcile the new base/conflict, obtain authorization for another controlled rebase, rerun full gates and immutable review, then update exact-head CI. |
+| P1 | [AR-0806](tasks/AR-0806-tui-history-analysis.md): Add terminal history and analysis | quality_20260906 | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. | Fresh independent immutable review of conflict-resolved candidate 8e7907cc60d02328d4d418e15ec408c45829f8c0, tree b9f048b2c604e20559198fca7c72c120d074d559, exact parent/current main 5b2236b105a97756a55c7ac64360cb3616ef979f. Review the README-only range-diff integration with main&#x27;s AR-0870 MultiAgentWizard documentation, verify lib.rs semantics unchanged, signature/DCO/two-path scope/full gates; then exact force-with-lease PR #89 update and fresh CI. |
 | P1 | [AR-0871](tasks/AR-0871-record-replay-user-workflows.md): Deliver record and replay user workflows | replay_20260909 | Make recording and strict replay complete, explicit, privacy-safe user workflows in both CLI and TUI. | Deliver executable CLI and TUI journeys for recording LLM responses and replaying an exact compatible cassette. |
 
 ### Open (2)

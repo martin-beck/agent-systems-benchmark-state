@@ -10,7 +10,7 @@
     "AR-1001"
   ],
   "id": "AR-0806",
-  "next_action": "PR #89 was guarded-force-updated to approved 2dbbde184ef78a93b63ec1a3b5eb5b02bca0d269, but live main advanced again to 5b2236b105a97756a55c7ac64360cb3616ef979f and GitHub reports mergeStateStatus DIRTY with no replacement checks yet. Do not merge. Reconcile the new base/conflict, obtain authorization for another controlled rebase, rerun full gates and immutable review, then update exact-head CI.",
+  "next_action": "Fresh independent immutable review of conflict-resolved candidate 8e7907cc60d02328d4d418e15ec408c45829f8c0, tree b9f048b2c604e20559198fca7c72c120d074d559, exact parent/current main 5b2236b105a97756a55c7ac64360cb3616ef979f. Review the README-only range-diff integration with main's AR-0870 MultiAgentWizard documentation, verify lib.rs semantics unchanged, signature/DCO/two-path scope/full gates; then exact force-with-lease PR #89 update and fresh CI.",
   "observed_branch": "feature/tui-history-analysis",
   "observed_dirty": 0,
   "observed_head": "8e7907cc60d02328d4d418e15ec408c45829f8c0",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-09T00:12:27+00:00",
+  "updated_at": "2026-09-09T00:13:11+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
@@ -241,3 +241,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T00:12:27+00:00: Recorded command exit 0; command argv SHA-256
   d037a904b8fc25a72a579e712ee022870cd1a4337a617694fdf33a3fa055c4b8.
+
+- 2026-09-09T00:13:11+00:00: Audited the DIRTY conflict against exact main
+  5b2236b105a97756a55c7ac64360cb3616ef979f: intervening commits 6c13a32/b3c19b1/679244e add AR-0870
+  MultiAgentWizard code and README text in the same two TUI files. Rebase auto-merged lib.rs; the
+  only manual resolution combined both non-conflicting README capability/limitation paragraphs. New
+  clean signed+DCO candidate 8e7907cc60d02328d4d418e15ec408c45829f8c0, tree
+  b9f048b2c604e20559198fca7c72c120d074d559. Range-diff from 2dbbde1 differs only by the inherited
+  MultiAgentWizard README paragraph; AR-0806 code and duplicate-page atomic negative are unchanged.
+  Fresh exact focused focused duplicate test 1 1/1, asb-tui 19/19, fmt, full workspace Clippy -D
+  warnings/tests/rustdoc/release, signature, policy, diff-check and Gitleaks all pass. AR-0875
+  limitation remains explicit; PR #89 still at 2dbbde1 pending review.
