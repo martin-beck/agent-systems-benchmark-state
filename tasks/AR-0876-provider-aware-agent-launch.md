@@ -17,7 +17,7 @@
   "id": "AR-0876",
   "next_action": "Monitor PR #93 exact-head workflows; immediately diagnose and repair any failure, otherwise merge only after all required checks and independent review are green.",
   "observed_branch": "feature/provider-aware-agent-launch",
-  "observed_dirty": 0,
+  "observed_dirty": 4,
   "observed_head": "45999650c2a21f65528dc69ce7fe47eb32442742",
   "owner": "replay_20260909",
   "plan": "../plans/AR-0876.md",
@@ -25,9 +25,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply validated provider selections at the authoritative agent launch boundary and reject conflicting runtime configuration.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Wire provider-aware agent launches",
-  "updated_at": "2026-09-09T00:50:32+00:00",
+  "updated_at": "2026-09-09T00:50:37+00:00",
   "worktree_key": "agent-systems-benchmark-provider-aware-agent-launch"
 }
 ---
