@@ -25,9 +25,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Research deterministic LLM test doubles and local inference options, document ASB recommendations, and create implementation-ready follow-up ARs.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Plan deterministic LLM doubles and local inference",
-  "updated_at": "2026-09-09T06:39:51+00:00",
+  "updated_at": "2026-09-09T06:40:49+00:00",
   "worktree_key": "agent-systems-benchmark-local-llm-testing-recommendations"
 }
 ---
@@ -91,3 +91,6 @@ honestly, and do not implement a simulator, mock server, inference backend, or u
 
 - 2026-09-09T06:39:51+00:00: Recorded command exit 1; command argv SHA-256
   ba05b898783840258aaabeaa131f72f2663b41d7a5adcd86b8f11b41efb90e66.
+
+- 2026-09-09T06:40:49+00:00: Recorded command exit 128; command argv SHA-256
+  8b961b1bb027c76345934c44bc313fd428bea1e37f6c96c9544b591b8f65faeb.
