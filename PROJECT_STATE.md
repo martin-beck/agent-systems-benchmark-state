@@ -17,7 +17,7 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 34312474103 | `fda3d998aed9` | push | Huawei MIT source headers | completed:success |
-| 34312474021 | `fda3d998aed9` | push | Formal assurance | in_progress:- |
+| 34312474021 | `fda3d998aed9` | push | Formal assurance | completed:success |
 | 34312473974 | `fda3d998aed9` | push | Emulated aarch64 portability | in_progress:- |
 | 34312473924 | `fda3d998aed9` | push | Repository quality | completed:failure |
 | 34312473922 | `fda3d998aed9` | push | Rust verification | in_progress:- |
