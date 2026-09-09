@@ -11,13 +11,13 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #31 | `feature/native-platforms@bdaf9c108226` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #105 | `feature/tla-source-build-provenance@7ae562dbb15a` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | formal: qualify deterministic TLA source build |
+| #105 | `feature/tla-source-build-provenance@7ae562dbb15a` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | formal: qualify deterministic TLA source build |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34319619649 | `7ae562dbb15a` | pull_request | Repository quality | in_progress:- |
+| 34319619649 | `7ae562dbb15a` | pull_request | Repository quality | completed:success |
 | 34319619591 | `7ae562dbb15a` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 34319619528 | `7ae562dbb15a` | pull_request | Formal assurance | completed:success |
 | 34319619514 | `7ae562dbb15a` | pull_request | Huawei MIT source headers | completed:success |
