@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T09:41:00+00:00",
+  "updated_at": "2026-09-09T09:41:03+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -148,3 +148,6 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   qualification.
 
 - 2026-09-09T09:41:00+00:00: Heartbeat by replay_20260906.
+
+- 2026-09-09T09:41:03+00:00: Recorded command exit 0; command argv SHA-256
+  35888e187bc933dad7551f8cae62130e0c754a63cde156bac506e8fa601da05e.
