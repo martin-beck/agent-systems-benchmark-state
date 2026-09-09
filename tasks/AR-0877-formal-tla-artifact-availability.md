@@ -2,7 +2,7 @@
 {
   "branch": "fix/formal-tla-artifact-availability",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-09T16:25:26+00:00",
   "depends_on": [
     "AR-0003",
     "AR-0901",
@@ -13,15 +13,15 @@
   "observed_branch": "fix/formal-tla-artifact-availability",
   "observed_dirty": 4,
   "observed_head": "dca243ab7b8cbb0b2b49a568dec99c517e0719c2",
-  "owner": "",
+  "owner": "quality_20260906",
   "plan": "../plans/AR-0877.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T13:25:24+00:00",
+  "updated_at": "2026-09-09T13:25:26+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -142,3 +142,5 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-09T13:25:24+00:00: AR-0878 is durably done and supplies the independently qualified
   deterministic source-build manifest and output digest; resume AR-0877 to integrate that immutable
   artifact boundary instead of repinning the mutable v1.8.0 prerelease asset.
+
+- 2026-09-09T13:25:26+00:00: Claimed by quality_20260906.
