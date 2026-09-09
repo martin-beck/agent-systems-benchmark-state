@@ -2,7 +2,7 @@
 {
   "branch": "fix/formal-tla-artifact-availability",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T05:45:56+00:00",
+  "claim_expires": "2026-09-09T05:45:59+00:00",
   "depends_on": [
     "AR-0003",
     "AR-0901",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T03:45:56+00:00",
+  "updated_at": "2026-09-09T03:45:59+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -128,3 +128,5 @@ Implementation has not started. Read the linked plan before claiming.
   source-build contract.
 
 - 2026-09-09T03:45:56+00:00: Claimed by codex-longrun-tla-20260909.
+
+- 2026-09-09T03:45:59+00:00: Heartbeat by codex-longrun-tla-20260909.
