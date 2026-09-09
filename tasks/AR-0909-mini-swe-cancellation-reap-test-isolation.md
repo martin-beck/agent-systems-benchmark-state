@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Hold immutable a91cd04 for independent re-review; publish only after approval and fresh exact-head CI.",
+  "next_action": "Monitor PR #127 exact head a91cd04 CI; do not merge until every required check is green and coordinator authorizes.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "a91cd04d5f49aa4d311c53ab727c2dcb75b77913",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-09T23:50:35+00:00",
+  "updated_at": "2026-09-09T23:51:05+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -246,3 +246,9 @@ classified.
 
 - 2026-09-09T23:50:35+00:00: Recorded command exit 0; command argv SHA-256
   a6572f1ff3c1f5ef2c36cbf9585533480bfb0d679b9eb92f3c85b8771de7f915.
+
+- 2026-09-09T23:51:05+00:00: Published independently approved immutable candidate
+  a91cd04d5f49aa4d311c53ab727c2dcb75b77913 as PR #127 against exact base
+  b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b. GitHub reports the exact head/base; AWQ shadow and
+  Huawei/MIT headers are success, while Rust, repository quality, native platform, emulated aarch64,
+  fault/fuzz/mutation, and formal/Kani/Loom checks are in progress. No merge performed.
