@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0877",
-  "next_action": "Finish acquisition adversarial review and full formal/workspace/privacy gates on the eight-path source-build integration; then create a signed candidate for independent review.",
+  "next_action": "Finish remaining dependency/failure/coverage gates after path-scoped privacy scan, then stage and create signed candidate for independent review.",
   "observed_branch": "fix/formal-tla-artifact-availability",
   "observed_dirty": 8,
   "observed_head": "b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T13:56:23+00:00",
+  "updated_at": "2026-09-09T13:56:52+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -212,3 +212,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T13:56:23+00:00: Recorded command exit 1; command argv SHA-256
   de823dd8677742a72f9602e1d7890c90b1be45542e579231d2fe396ea0be26c4.
+
+- 2026-09-09T13:56:52+00:00: Latest exit 1 was not a product failure: Gitleaks directory mode
+  scanned generated formal/target build artifacts and found one redacted generated match after
+  repository policy and source-header tests passed. Corrective action is a path-scoped scan of the
+  exact eight-file dirty diff (and git-range scan after commit), without treating build output as
+  source evidence; no retry of the broad generated-artifact scan.
