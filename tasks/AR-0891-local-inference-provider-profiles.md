@@ -13,16 +13,16 @@
   "next_action": "Rebase PR #114 branch onto current origin/main 2a85872285e6de374e7ea48e3b062e4134bec49e2 (PR #112 merged during CI), rerun exact-head checks, then signed no-ff merge.",
   "observed_branch": "feat/local-inference-provider-profiles",
   "observed_dirty": 0,
-  "observed_head": "9bc7fe7f91efd491d42da3961ba09d832857d361",
+  "observed_head": "eed49592617a0a712482d4a341ae7b1f802fe04f",
   "owner": "codex-longrun-local-inference-profiles-20260909",
   "plan": "../plans/AR-0891.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server.",
-  "task_revision": 102,
+  "task_revision": 103,
   "title": "Qualify local inference provider profiles",
-  "updated_at": "2026-09-09T09:33:11+00:00",
+  "updated_at": "2026-09-09T09:33:17+00:00",
   "worktree_key": "agent-systems-benchmark-local-inference-provider-profiles"
 }
 ---

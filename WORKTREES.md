@@ -69,7 +69,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-kernel-diagnostics` | `feature/kernel-diagnostics` | `d11f81837374` | 0 | behind 72, ahead 0 |
 | `agent-systems-benchmark-llm-double-conformance-spike` | `test/llm-double-conformance-spike` | `78e6a51ce99e` | 0 | behind 9, ahead 0 |
 | `agent-systems-benchmark-llm-fixture-scenario-contract` | `feat/llm-fixture-scenario-contract` | `4d15bbc7e1d0` | 0 | behind 7, ahead 0 |
-| `agent-systems-benchmark-local-inference-provider-profiles` | `feat/local-inference-provider-profiles` | `9bc7fe7f91ef` | 0 | behind 4, ahead 2 |
+| `agent-systems-benchmark-local-inference-provider-profiles` | `feat/local-inference-provider-profiles` | `eed49592617a` | 0 | behind 0, ahead 2 |
 | `agent-systems-benchmark-local-llm-testing-recommendations` | `docs/local-llm-testing-recommendations` | `4a23069336be` | 0 | behind 11, ahead 0 |
 | `agent-systems-benchmark-modern-terminal-rendering` | `feature/modern-terminal-rendering` | `fd1989a096a3` | 0 | behind 33, ahead 0 |
 | `agent-systems-benchmark-native-platform-lab` | `feature/native-platform-lab` | `b1669203308d` | 0 | behind 239, ahead 0 |
