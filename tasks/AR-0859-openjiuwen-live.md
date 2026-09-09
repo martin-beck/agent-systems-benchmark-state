@@ -7,7 +7,7 @@
     "AR-0858"
   ],
   "id": "AR-0859",
-  "next_action": "Fresh immutable review of successor 19ba0fd; keep PR 124 at e407748 until approval.",
+  "next_action": "Fresh immutable review of cceb76f; keep PR 124 at e407748 until approval.",
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "cceb76f436f8918786f610afdf20ba99fbd87d34",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 210,
+  "task_revision": 211,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T19:10:46+00:00",
+  "updated_at": "2026-09-09T19:11:15+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -702,3 +702,17 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-09T19:10:46+00:00: Recorded command exit 0; command argv SHA-256
   ecd4bbb4c5d0f88500ce4b43ee270a1d5e3a00215832e24c13265d5085083813.
+
+- 2026-09-09T19:11:15+00:00: Symlink-safe scratch successor cceb76f436f8918786f610afdf20ba99fbd87d34
+  (tree 2a07bfc6136d749c13d088bb49eef0bfed260e3a, parent 19ba0fd80fa63f5b8edd47fb1fbd5626859fbacb)
+  is SSH-signed and DCO-trailered with clean exact three-path cumulative scope. The fallback
+  validates/canonicalizes a disjoint nonsymlink base, atomically creates one unpredictable mode-0700
+  private leaf directly beneath it, verifies owner/mode/repository disjointness, and cleanup refuses
+  a subsequently invalid root. Tests cover explicit external CARGO_TARGET_DIR and absent-variable
+  temp fallback, hostile parent symlink to repository, and public mode. Exact-tree gates green:
+  focused scratch/nonignored/live bwrap 8/8; workspace test/Clippy/rustdoc/release/fmt/diff;
+  Cargo/Loom/production and digest-pinned TLC/Alloy positive+mutation;
+  policy/contracts/actionlint/zizmor/Gitleaks/deny/audit; coverage policy; mutation sentinels 7/7;
+  final signature/DCO/scope/tree recheck. Two operator-only exit-127 attempts used wrong working
+  directory/PATH before corrected mutation success. PR 124 remains unchanged at e407748 pending
+  review.
