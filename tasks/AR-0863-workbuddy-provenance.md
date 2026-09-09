@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin WorkBuddy source, package, and license provenance.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Pin WorkBuddy source, package, and license provenance",
-  "updated_at": "2026-09-09T03:16:28+00:00",
+  "updated_at": "2026-09-09T03:17:13+00:00",
   "worktree_key": "agent-systems-benchmark-workbuddy-provenance"
 }
 ---
@@ -51,3 +51,6 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-09T03:16:28+00:00: Recorded command exit 0; command argv SHA-256
   22600a3995212b0adcf1edae445ea941e2d8a751506bf9e92e18980eb4228aed.
+
+- 2026-09-09T03:17:13+00:00: Recorded command exit 1; command argv SHA-256
+  7f86ac116c4b310a833a163050deb6af78cde960e72f11131ba72b3c4fa5f201.
