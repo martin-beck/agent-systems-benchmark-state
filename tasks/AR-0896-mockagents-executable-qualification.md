@@ -10,17 +10,17 @@
   "id": "AR-0896",
   "next_action": "Add hostile fault/tool/cancellation/backpressure, network-denial, repeated-clean-state, and arm64/unsupported evidence checks; then rerun exact gates.",
   "observed_branch": "test/mockagents-executable-qualification",
-  "observed_dirty": 4,
-  "observed_head": "adac76558387cb0bdd09e2ba6cbfe49b9bc205be",
+  "observed_dirty": 0,
+  "observed_head": "3f1de4106adf9ad6c34759638d70e9001709ab0a",
   "owner": "codex-longrun-mockagents-20260909",
   "plan": "../plans/AR-0896.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Build the pinned MockAgents qualification harness; exact amd64 protocol smoke and provenance checks pass, hostile matrix remains.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-09T10:02:01+00:00",
+  "updated_at": "2026-09-09T10:02:07+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
