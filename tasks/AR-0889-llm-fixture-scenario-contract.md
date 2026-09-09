@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define generated synthetic LLM scenarios without weakening the existing content-addressed cassette replay contract.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Define the LLM fixture and scenario contract",
-  "updated_at": "2026-09-09T08:19:51+00:00",
+  "updated_at": "2026-09-09T08:20:03+00:00",
   "worktree_key": "agent-systems-benchmark-llm-fixture-scenario-contract"
 }
 ---
@@ -43,3 +43,6 @@ Turn selected spike findings into an ASB-owned synthetic fixture/scenario contra
   generated public fixture, and hostile tests. Enforces synthetic-only origin, closed fields,
   ordered/session/size bounds, loopback URLs, credential/private-data rejection, and preserves
   cassette separation. Six focused tests, Ruff, strict mypy, and diff-check pass.
+
+- 2026-09-09T08:20:03+00:00: Recorded command exit 0; command argv SHA-256
+  688dd0254ca55929282dc33ddb11b22c1bc07a192b868f0738f690e9d271e539.
