@@ -10,7 +10,7 @@
     "AR-0902"
   ],
   "id": "AR-0906",
-  "next_action": "Run full formal/privacy/policy gates on the six-path verifier slice, then create a signed candidate for independent review.",
+  "next_action": "Await independent immutable review of 90caa785; publish only after approval and fresh exact-head CI.",
   "observed_branch": "fix/formal-oci-image-identity",
   "observed_dirty": 0,
   "observed_head": "90caa78574f70a67646c2d6fc30d8744e955c250",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make deterministic formal source builds verify OCI image identity portably across Docker engines.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Verify formal OCI build identity portably",
-  "updated_at": "2026-09-09T14:57:11+00:00",
+  "updated_at": "2026-09-09T14:57:55+00:00",
   "worktree_key": "agent-systems-benchmark-formal-oci-image-identity"
 }
 ---
@@ -85,3 +85,11 @@ instead of assuming an engine's local configuration ID equals the registry manif
 
 - 2026-09-09T14:57:11+00:00: Recorded command exit 0; command argv SHA-256
   0ec0266aeecd98477938cf2c92460d6785b4a7d7fcc96c82f338fd4e7c4e8155.
+
+- 2026-09-09T14:57:55+00:00: Signed immutable candidate 90caa78574f70a67646c2d6fc30d8744e955c250
+  (tree ad17ba1a4a0a77aac0754abc52c1e5bd68dd2be2, parent b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b)
+  is clean and exactly six owned paths. SSH signature and DCO pass. Focused 3/3 plus 20 hostile
+  mutations, real Docker projection, deterministic source build SHA-256 8c200a88/4512486 bytes, full
+  formal/root fmt-clippy-workspace-doc-release, policy, headers, actionlint, zizmor, cargo
+  deny/audit, coverage, failure paths, ShellCheck, exact-path Gitleaks, diff and privacy scans all
+  pass. No AR-0877 PR or AR-0704 paths touched; unpublished pending independent review.
