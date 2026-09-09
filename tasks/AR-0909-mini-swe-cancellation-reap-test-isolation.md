@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Reproduce the coverage-only descendant-reap failure and repair only its embedded mini-SWE test boundary.",
+  "next_action": "Stress the identity-bound embedded test serially and in parallel, add private-root cleanup negatives, then run full gates.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 1,
   "observed_head": "b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-09T22:51:16+00:00",
+  "updated_at": "2026-09-09T22:51:42+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -94,3 +94,10 @@ classified.
 
 - 2026-09-09T22:51:16+00:00: Recorded command exit 0; command argv SHA-256
   4e0b1f490c029d9e677e28c069471c9b87dab0506e5cec26434a6eded6d1b4c8.
+
+- 2026-09-09T22:51:42+00:00: Claimed at state 0c9a8345; declared worktree is b6d04a8 with one dirty
+  owned path. Original PR126 failure did not reproduce: focused llvm-cov and the exact full coverage
+  gate passed. Test-only repair now binds PID, start time, process group and session; distinguishes
+  missing, reused, zombie, runnable and changed ownership; rejects malformed/oversized PID and proc
+  evidence; preserves terminal Cancelled and production bytes. Focused identity and instrumented
+  cancellation tests pass after correcting two test-fixture mistakes.

@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0897](tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Monitor PR 126 exact-head CI; investigate terminal failures without changing bd6f450. | replay_20260906 |
-| P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Reproduce the coverage-only descendant-reap failure and repair only its embedded mini-SWE test boundary. | quality_20260906 |
+| P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Stress the identity-bound embedded test serially and in parallel, add private-root cleanup negatives, then run full gates. | quality_20260906 |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Run final exact-main and local post-merge verification using required native x86_64 kernel evidence and applicable pinned QEMU AArch64 portability checks; record native ARM64 PMU/eBPF as optional future evidence, then release. | contracts_20260906 |
 
 ## Open
