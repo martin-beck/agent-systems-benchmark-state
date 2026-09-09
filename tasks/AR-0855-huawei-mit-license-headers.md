@@ -2,7 +2,7 @@
 {
   "branch": "fix/huawei-mit-license-headers",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-09T02:35:38+00:00",
   "depends_on": [
     "AR-0003"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "fix/huawei-mit-license-headers",
   "observed_dirty": 0,
   "observed_head": "7add29f1d24ce3a74b9cca2e2f1fb29fa45cddd6",
-  "owner": "",
+  "owner": "codex-asb-state-headers-v035",
   "plan": "../plans/AR-0855.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files.",
-  "task_revision": 269,
+  "task_revision": 270,
   "title": "Enforce Huawei MIT source headers",
-  "updated_at": "2026-09-08T23:44:16+00:00",
+  "updated_at": "2026-09-09T00:35:38+00:00",
   "worktree_key": "agent-systems-benchmark-huawei-mit-headers"
 }
 ---
@@ -787,3 +787,5 @@ and fresh coordinator snapshot before claiming. Do not modify vendored coordinat
   Lease expired at 2026-09-08T23:43:10Z; process audit found no active owner or header work.
   Recovery only; preserved clean worktree and durable blocker. Keep paused on the documented
   upstream coordinator privacy-exemption dependency.
+
+- 2026-09-09T00:35:38+00:00: Claimed by codex-asb-state-headers-v035.
