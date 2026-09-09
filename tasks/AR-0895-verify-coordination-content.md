@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Close the workflow path-filter gap that lets coordination-content pull requests skip strict state consistency and DCO checks.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Verify every coordination-content pull request",
-  "updated_at": "2026-09-09T10:17:27+00:00",
+  "updated_at": "2026-09-09T10:17:44+00:00",
   "worktree_key": "agent-systems-benchmark-state-verify-coordination-content"
 }
 ---
@@ -148,3 +148,6 @@ Ensure state-content pull requests cannot bypass exact-head schema, generated-vi
   candidate ancestry contains the oversized values. This is not a new owner repair requirement and
   rerunning the same head would repeat deterministically. No merge performed. Controlled rebase onto
   current state main is authorized.
+
+- 2026-09-09T10:17:44+00:00: Recorded command exit 0; command argv SHA-256
+  ad47607ec171015b681b2aaa0630f4ae9d557058b073ed78440ed046dd825938.
