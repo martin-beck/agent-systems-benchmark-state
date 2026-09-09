@@ -8,7 +8,7 @@
     "AR-0403"
   ],
   "id": "AR-0404",
-  "next_action": "Rank suites by additional coverage and maintenance cost.",
+  "next_action": "Run exact-tree policy, DCO, privacy and independent review; then publish the signed candidate for exact-head CI.",
   "observed_branch": "feature/extended-workloads",
   "observed_dirty": 0,
   "observed_head": "8596a7fd0dba6d9a861cdaa276777f771be69c27",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Evaluate SWE-bench Pro, BigCodeBench, EvalPlus and LiveCodeBench as optional suites.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Expand established benchmark catalogue",
-  "updated_at": "2026-09-09T03:55:59+00:00",
+  "updated_at": "2026-09-09T03:56:23+00:00",
   "worktree_key": "agent-systems-benchmark-extended-workloads"
 }
 ---
@@ -106,3 +106,8 @@ Implementation has not started. Read the linked plan before claiming.
   202a18a3cc2c8624bf6375b2e49387b84388aa60c81ae4ddbf85154d2fffdace.
 
 - 2026-09-09T03:55:59+00:00: Heartbeat by codex-longrun-workloads-20260909.
+
+- 2026-09-09T03:56:23+00:00: Implementation checkpoint 8596a7f: added four content-addressed
+  external suite records, documented their limits, and extended validator plus negative tests.
+  Focused validator/pytest, cargo test, fmt, Clippy, policy and diff checks pass; platform sweep
+  remains environment-limited by missing jsonschema.
