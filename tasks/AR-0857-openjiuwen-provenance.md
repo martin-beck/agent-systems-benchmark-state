@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin OpenJiuwen source, package, and license provenance.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Pin OpenJiuwen source, package, and license provenance",
-  "updated_at": "2026-09-09T02:56:29+00:00",
+  "updated_at": "2026-09-09T02:56:52+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-provenance"
 }
 ---
@@ -93,3 +93,6 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   fmt and diff checks, policy and DCO passed.
 
 - 2026-09-09T02:56:29+00:00: Heartbeat by replay_20260909.
+
+- 2026-09-09T02:56:52+00:00: Recorded command exit 0; command argv SHA-256
+  8f52de27d8088eb2f1868246f7a0b2db557763364f6b95bb5efa6af56d256983.
