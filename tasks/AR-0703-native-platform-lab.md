@@ -18,11 +18,11 @@
   "plan": "../plans/AR-0703.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide genuine disposable native hosts for required Debian and openEuler platform qualification.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Provision native platform qualification capacity",
-  "updated_at": "2026-09-07T10:37:02+00:00",
+  "updated_at": "2026-09-09T10:52:47+00:00",
   "worktree_key": "agent-systems-benchmark-native-platform-lab"
 }
 ---
@@ -60,3 +60,6 @@ openEuler or Debian kernel evidence. Containers, cross-builds and emulation cann
   visibility, or genuine disposable Debian 13.6 and openEuler 24.03 LTS-SP2 x86_64/aarch64 hosts.
   Resume only after coordinator supplies explicit spend authorization and least-privilege capacity;
   containers, cross-builds, QEMU/TCG, and current Ubuntu hosted runners remain non-evidence.
+
+- 2026-09-09T10:52:47+00:00: Native ARM64 capacity is optional future qualification and no longer
+  blocks AR-0702 or other development.
