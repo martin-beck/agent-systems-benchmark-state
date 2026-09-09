@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T02:55:39+00:00",
+  "updated_at": "2026-09-09T02:56:17+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -183,3 +183,6 @@ Implementation has not started. Read the linked plan before claiming.
   operator-only subshell path error; corrected absolute model paths passed. ShellCheck is not
   installed on this host and was durably classified exit 127; remaining
   quality/formal/privacy/supply gates are not yet complete.
+
+- 2026-09-09T02:56:17+00:00: Recorded command exit 101; command argv SHA-256
+  c2706c3e401862177b7598b104e060528a6e3f8053893bf472082322c14427b7.
