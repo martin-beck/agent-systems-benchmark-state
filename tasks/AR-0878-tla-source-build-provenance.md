@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T02:26:07+00:00",
+  "updated_at": "2026-09-09T02:28:03+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -88,3 +88,6 @@ Implementation has not started. Read the linked plan before claiming.
   fixed epoch/mode produced byte-identical 4455492-byte outputs, SHA-256
   0bd598f74102f5c16632fe7dfa2f36b3763479f4757b15fff24a77f6f7268d7e. This proves nondeterminism is
   packaging metadata on this host only, not yet the pinned-container or license-complete acceptance.
+
+- 2026-09-09T02:28:03+00:00: Recorded command exit 0; command argv SHA-256
+  2249014c054951d12fa6688e53009f03bed6545243f3ab5b9a7279e8a3d71dd5.
