@@ -12,9 +12,6 @@
   ],
   "id": "AR-0909",
   "next_action": "Reproduce the coverage-only descendant-reap failure and repair only its embedded mini-SWE test boundary.",
-  "observed_branch": "",
-  "observed_dirty": 0,
-  "observed_head": "",
   "owner": "",
   "plan": "../plans/AR-0909.md",
   "priority": "P1",
@@ -39,4 +36,3 @@ No existing AR owns this exact embedded-test defect. AR-0308 and AR-0513 are com
 replay qualifications; AR-0902 is complete general fault assurance. Preserve the failure as a
 coverage-context lifecycle/isolation signal until the exact process identity and state are
 classified.
-
