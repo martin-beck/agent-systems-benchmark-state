@@ -8,7 +8,7 @@
     "AR-1007"
   ],
   "id": "AR-0406",
-  "next_action": "Evaluate maintenance, licenses and reproducibility before integration.",
+  "next_action": "Monitor all required post-merge CI runs for exact main ca6e75916a8c9831b9107377cd48d731463c272a; release only after every required gate is green.",
   "observed_branch": "feature/evolving-workloads",
   "observed_dirty": 0,
   "observed_head": "6bbbf130dd25fe5429168e968f5bb83adc242937",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Add evolving long-horizon workload sources",
-  "updated_at": "2026-09-09T05:57:17+00:00",
+  "updated_at": "2026-09-09T05:57:41+00:00",
   "worktree_key": "agent-systems-benchmark-evolving-workloads"
 }
 ---
@@ -115,3 +115,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T05:57:17+00:00: Recorded command exit 0; command argv SHA-256
   b4b237f64b80fb15802a91a8e1fc46f56274856a746411bfc7adedf05b797bd8.
+
+- 2026-09-09T05:57:41+00:00: PR #103 exact head 6bbbf130dd25fe5429168e968f5bb83adc242937 passed
+  every required PR check; reviewed ancestry, diff, signature/DCO, and merged with signed DCO merge
+  ca6e75916a8c9831b9107377cd48d731463c272a. Post-merge exact-main verification is now required.
