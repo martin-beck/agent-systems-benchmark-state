@@ -2,7 +2,7 @@
 {
   "branch": "feature/install-lifecycle",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T09:20:33+00:00",
+  "claim_expires": "2026-09-09T09:22:08+00:00",
   "depends_on": [
     "AR-0104",
     "AR-0820",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Manage the complete installed lifecycle without losing configuration, history, runs, or trust state.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Add safe installation lifecycle management",
-  "updated_at": "2026-09-09T07:21:08+00:00",
+  "updated_at": "2026-09-09T07:22:08+00:00",
   "worktree_key": "agent-systems-benchmark-install-lifecycle"
 }
 ---
@@ -129,3 +129,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T07:21:08+00:00: Recorded command exit 0; command argv SHA-256
   05ce06b6c39404bffd0d08a54196f885a7557dcdfe7f2c764e6b9c2e06a7adfb.
+
+- 2026-09-09T07:22:08+00:00: Heartbeat by codex-longrun-install-lifecycle-20260909.
