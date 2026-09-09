@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server.",
-  "task_revision": 109,
+  "task_revision": 110,
   "title": "Qualify local inference provider profiles",
-  "updated_at": "2026-09-09T09:39:48+00:00",
+  "updated_at": "2026-09-09T09:40:08+00:00",
   "worktree_key": "agent-systems-benchmark-local-inference-provider-profiles"
 }
 ---
@@ -275,3 +275,6 @@ Use exact Ollama, llama.cpp, vLLM and LocalAI sources in `docs/LOCAL_LLM_TESTING
 - 2026-09-09T09:39:48+00:00: Rebased PR #114 after concurrent PR #112 advanced main. Exact-head CI
   on eed49592617a0a712482d4a341ae7b1f802fe04f is fully green across all 14 checks; the prior
   Gitleaks false positive remains repaired by the narrow allowlist.
+
+- 2026-09-09T09:40:08+00:00: Recorded command exit 1; command argv SHA-256
+  660b6fe3aa50a94de9218235e8434fee0f2bf498738215506bd695a8bb7af256.
