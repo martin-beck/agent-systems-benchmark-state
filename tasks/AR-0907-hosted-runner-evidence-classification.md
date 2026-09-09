@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 97,
+  "task_revision": 98,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T19:03:35+00:00",
+  "updated_at": "2026-09-09T19:06:13+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -354,3 +354,6 @@ patch release has advanced.
   evidence remains authoritative. Product candidate 5e58ae5 is retained locally, clean and not
   pushed to PR #123. The prior next_action value 'ambiguous' was an operator-only malformed update
   and is superseded here; no product effect occurred.
+
+- 2026-09-09T19:06:13+00:00: Recorded command exit 0; command argv SHA-256
+  1d2f6e61650b22027e10f81c161ef1ac4c1ab932d60a0903906b7f69fc487ea9.
