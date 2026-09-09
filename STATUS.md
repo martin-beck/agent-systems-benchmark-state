@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 4 |
+| **In progress** | Claimed work with a live lease | 3 |
+| **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 6 |
 | **Planned** | Defined work awaiting promotion or dependencies | 41 |
 | **Future** | Deferred roadmap work | 1 |
@@ -218,7 +218,7 @@ flowchart LR
         AR_0905["AR-0905 - Done"]:::status_done
         AR_0906["AR-0906 - Blocked"]:::status_blocked
         AR_0907["AR-0907 - In progress"]:::status_in_progress
-        AR_0908["AR-0908 - Open"]:::status_open
+        AR_0908["AR-0908 - In progress"]:::status_in_progress
     end
     subgraph series_10["10 - Reliability and release"]
         direction TB
@@ -959,20 +959,20 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | replay_20260906 | Qualify pinned OpenJiuwen live execution. | Monitor PR 124 exact-head CI; inspect terminal failures without changing cceb76f. |
 | P1 | [AR-0907](tasks/AR-0907-hosted-runner-evidence-classification.md): Classify hosted runner evidence without weakening native qualification | quality_20260906 | Separate rolling hosted portability checks from immutable native qualification evidence. | Monitor fresh PR #123 exact-head CI at 5e58ae5; do not merge until every required check is terminal green. |
+| P1 | [AR-0908](tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | contracts_20260906 | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Reproduce the post-drop lock failure under coverage and parallel stress, then harden only the embedded control-state test roots without weakening production locking. |
 
-### Open (4)
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | Repair/rebase the fail-closed TLA provenance pin, then rerun PR #119 exact-head CI; do not merge. |
 | P1 | [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md): Repair formal TLA artifact availability | Unclaimed | Repair the formal workflow&#x27;s unavailable TLA+ artifact pin without weakening provenance or offline verification. | Hold local bridge 49ae13f and PR #120. AR-0906 is blocked on active AR-0907 hosted-evidence classification; after AR-0907 and AR-0906 integrate, rebase once, range-diff, rerun full gates, then exact-lease update PR #120. |
-| P1 | [AR-0908](tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | Unclaimed | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Reproduce the post-drop lock failure under coverage and parallel stress, then harden only the embedded control-state test roots without weakening production locking. |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Run final exact-main and local post-merge verification using required native x86_64 kernel evidence and applicable pinned QEMU AArch64 portability checks; record native ARM64 PMU/eBPF as optional future evidence, then release. |
 
 ### Blocked (6)
