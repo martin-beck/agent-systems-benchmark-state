@@ -2,7 +2,7 @@
 {
   "branch": "feature/control-history-analysis-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T06:40:12+00:00",
+  "claim_expires": "2026-09-09T06:42:08+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend frontend history and analysis contracts with bounded provenance, integrity, outcome, compatibility, and confounder evidence.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Extend control history and analysis protocol",
-  "updated_at": "2026-09-09T04:42:01+00:00",
+  "updated_at": "2026-09-09T04:42:08+00:00",
   "worktree_key": "agent-systems-benchmark-control-history-analysis-contract"
 }
 ---
@@ -108,3 +108,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T04:42:01+00:00: Recorded command exit 0; command argv SHA-256
   5dafc903c8f9a94e1ca390c0ab4edd2a3b30046edae9c7019b44f665bda8f23a.
+
+- 2026-09-09T04:42:08+00:00: Heartbeat by codex-longrun-control-20260909.
