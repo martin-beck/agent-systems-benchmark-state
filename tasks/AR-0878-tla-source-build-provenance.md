@@ -12,16 +12,16 @@
   "next_action": "Request fresh independent immutable review of signed candidate 71d0f914d3b9b353dd7cde840538b5d5fdec2cab, tree 74f118de20be097510b182cd42e442c8baaeace9, parent 38c729425309b3061ea361fbd349a961374bd64b, base ca6e75916a8c9831b9107377cd48d731463c272a. Do not publish or merge before review; hosted exact-head Kani remains required after publication authorization.",
   "observed_branch": "feature/tla-source-build-provenance",
   "observed_dirty": 0,
-  "observed_head": "71d0f914d3b9b353dd7cde840538b5d5fdec2cab",
+  "observed_head": "7ae562dbb15a686f3e1ef304de0fd5dfbeb0613b",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0878.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 215,
+  "task_revision": 216,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T06:22:38+00:00",
+  "updated_at": "2026-09-09T06:22:44+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
