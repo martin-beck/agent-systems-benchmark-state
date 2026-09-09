@@ -15,7 +15,7 @@
     "AR-0869"
   ],
   "id": "AR-0876",
-  "next_action": "Independently review signed commit 45999650, push immutable PR, run exact-head required CI, and repair any failure before merge.",
+  "next_action": "Monitor PR #93 exact-head workflows; immediately diagnose and repair any failure, otherwise merge only after all required checks and independent review are green.",
   "observed_branch": "feature/provider-aware-agent-launch",
   "observed_dirty": 0,
   "observed_head": "45999650c2a21f65528dc69ce7fe47eb32442742",
@@ -25,9 +25,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply validated provider selections at the authoritative agent launch boundary and reject conflicting runtime configuration.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Wire provider-aware agent launches",
-  "updated_at": "2026-09-09T00:47:42+00:00",
+  "updated_at": "2026-09-09T00:48:06+00:00",
   "worktree_key": "agent-systems-benchmark-provider-aware-agent-launch"
 }
 ---
@@ -126,3 +126,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T00:47:42+00:00: Recorded command exit 0; command argv SHA-256
   3a315ff4db2e103070338c4e7ce7277e12596177f16a02b6688a77fbbf793067.
+
+- 2026-09-09T00:48:06+00:00: Immutable PR #93 opened at signed+DCO head 45999650 on exact main
+  dca243ab. Exact-head required CI is running; current completed checks: AWQ and Huawei header
+  validation passed. No feature work proceeds until all required gates are terminal green.
