@@ -10,6 +10,12 @@ Never edit this file directly.
 | P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Request fresh independent immutable review of signed candidate 71d0f914d3b9b353dd7cde840538b5d5fdec2cab, tree 74f118de20be097510b182cd42e442c8baaeace9, parent 38c729425309b3061ea361fbd349a961374bd64b, base ca6e75916a8c9831b9107377cd48d731463c272a. Do not publish or merge before review; hosted exact-head Kani remains required after publication authorization. | replay_20260906 |
 | P1 | [AR-0879](tasks/AR-0879-local-llm-testing-recommendations.md): Plan deterministic LLM doubles and local inference | Research deterministic LLM test doubles and local inference options, document ASB recommendations, and create implementation-ready follow-up ARs. | Research pinned public LLM test doubles, replay literature, and local inference servers; publish an ASB-specific recommendation and dependency-ordered implementation ARs without adding runtime integration. | codex-asb-local-llm-research-20260909 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Qualify pinned OpenJiuwen live execution. | Run the pinned executable against a credential-free loopback provider and prove editing, tools, usage, cancellation, cleanup, and network denial. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -51,7 +57,6 @@ Never edit this file directly.
 | P1 | [AR-0833](tasks/AR-0833-aiws-runner-reboot-lifecycle.md): Qualify tokenless runner reboot lifecycle | Qualify safe reboot and restart lifecycle for disposable development-host ASB runners. | Design and qualify a tokenless supervisor/orchestration path that can provision fresh ephemeral registrations after boot without storing reusable GitHub credentials. | - |
 | P1 | [AR-0846](tasks/AR-0846-artifact-retention-cleanup.md): Add linked artifact retention and cleanup | Manage ASB GitHub artifact retention and cleanup without deleting required evidence. | Implement dry-run inventory and explicitly authorized bounded cleanup for linked GitHub artifacts. | - |
 | P1 | [AR-0856](tasks/AR-0856-agent-openjiuwen-workbuddy.md): Coordinate OpenJiuwen and WorkBuddy agent support | Coordinate independently qualified OpenJiuwen and WorkBuddy support without merging their provenance or evidence boundaries. | Keep planned while both child series run independently; complete only after AR-0862 and AR-0868 are durably done with executable live/replay qualification. | - |
-| P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Qualify pinned OpenJiuwen live execution. | Run the pinned executable against a credential-free loopback provider and prove editing, tools, usage, cancellation, cleanup, and network denial. | - |
 | P1 | [AR-0860](tasks/AR-0860-openjiuwen-replay.md): Qualify strict OpenJiuwen replay | Qualify strict OpenJiuwen replay. | Seal the sanitized live capture and prove strict offline replay, causal parity, malformed-record rejection, and zero external network. | - |
 | P1 | [AR-0861](tasks/AR-0861-openjiuwen-parity.md): Add OpenJiuwen provider parity and support matrix evidence | Add OpenJiuwen provider parity and support matrix evidence. | Extend exact provider parity and the platform support matrix only for executable-qualified OpenJiuwen combinations under a serialized shared-path fence. | - |
 | P1 | [AR-0862](tasks/AR-0862-openjiuwen-qualification.md): Independently qualify and document OpenJiuwen support | Independently qualify and document OpenJiuwen support. | Run independent exact-tree qualification, offline provenance verification, full gates, native evidence, documentation review, and post-merge validation. | - |

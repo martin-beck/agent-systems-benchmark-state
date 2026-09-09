@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**156 ARs tracked** across 4 active status categories.
+**156 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 7 |
-| **Planned** | Defined work awaiting promotion or dependencies | 39 |
+| **Planned** | Defined work awaiting promotion or dependencies | 38 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 108 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -174,7 +174,7 @@ flowchart LR
         AR_0856["AR-0856 - Planned"]:::status_planned
         AR_0857["AR-0857 - Done"]:::status_done
         AR_0858["AR-0858 - Done"]:::status_done
-        AR_0859["AR-0859 - Planned"]:::status_planned
+        AR_0859["AR-0859 - Open"]:::status_open
         AR_0860["AR-0860 - Planned"]:::status_planned
         AR_0861["AR-0861 - Planned"]:::status_planned
         AR_0862["AR-0862 - Planned"]:::status_planned
@@ -890,6 +890,12 @@ flowchart LR
 | P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | replay_20260906 | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Request fresh independent immutable review of signed candidate 71d0f914d3b9b353dd7cde840538b5d5fdec2cab, tree 74f118de20be097510b182cd42e442c8baaeace9, parent 38c729425309b3061ea361fbd349a961374bd64b, base ca6e75916a8c9831b9107377cd48d731463c272a. Do not publish or merge before review; hosted exact-head Kani remains required after publication authorization. |
 | P1 | [AR-0879](tasks/AR-0879-local-llm-testing-recommendations.md): Plan deterministic LLM doubles and local inference | codex-asb-local-llm-research-20260909 | Research deterministic LLM test doubles and local inference options, document ASB recommendations, and create implementation-ready follow-up ARs. | Research pinned public LLM test doubles, replay literature, and local inference servers; publish an ASB-specific recommendation and dependency-ordered implementation ARs without adding runtime integration. |
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Unclaimed | Qualify pinned OpenJiuwen live execution. | Run the pinned executable against a credential-free loopback provider and prove editing, tools, usage, cancellation, cleanup, and network denial. |
+
 ### Blocked (7)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -902,7 +908,7 @@ flowchart LR
 | P1 | [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md): Repair formal TLA artifact availability | Unclaimed | Repair the formal workflow&#x27;s unavailable TLA+ artifact pin without weakening provenance or offline verification. | Keep the four-path prototype unchanged. Obtain an authoritative immutable TLA+ 1.8.0 artifact or authorization for a reproducible source-build boundary; then refresh metadata once, finish deterministic faults, and run TLC/Alloy. Do not chase replaceable pre-release assets. |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Monitor exact-main post-merge checks at 2219839 and run local post-merge verification. Retain AR-0202 in progress until genuine privileged native aarch64 evidence is recorded; then complete final review and release. |
 
-### Planned (39)
+### Planned (38)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -931,7 +937,6 @@ flowchart LR
 | P1 | [AR-0833](tasks/AR-0833-aiws-runner-reboot-lifecycle.md): Qualify tokenless runner reboot lifecycle | Unclaimed | Qualify safe reboot and restart lifecycle for disposable development-host ASB runners. | Design and qualify a tokenless supervisor/orchestration path that can provision fresh ephemeral registrations after boot without storing reusable GitHub credentials. |
 | P1 | [AR-0846](tasks/AR-0846-artifact-retention-cleanup.md): Add linked artifact retention and cleanup | Unclaimed | Manage ASB GitHub artifact retention and cleanup without deleting required evidence. | Implement dry-run inventory and explicitly authorized bounded cleanup for linked GitHub artifacts. |
 | P1 | [AR-0856](tasks/AR-0856-agent-openjiuwen-workbuddy.md): Coordinate OpenJiuwen and WorkBuddy agent support | Unclaimed | Coordinate independently qualified OpenJiuwen and WorkBuddy support without merging their provenance or evidence boundaries. | Keep planned while both child series run independently; complete only after AR-0862 and AR-0868 are durably done with executable live/replay qualification. |
-| P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Unclaimed | Qualify pinned OpenJiuwen live execution. | Run the pinned executable against a credential-free loopback provider and prove editing, tools, usage, cancellation, cleanup, and network denial. |
 | P1 | [AR-0860](tasks/AR-0860-openjiuwen-replay.md): Qualify strict OpenJiuwen replay | Unclaimed | Qualify strict OpenJiuwen replay. | Seal the sanitized live capture and prove strict offline replay, causal parity, malformed-record rejection, and zero external network. |
 | P1 | [AR-0861](tasks/AR-0861-openjiuwen-parity.md): Add OpenJiuwen provider parity and support matrix evidence | Unclaimed | Add OpenJiuwen provider parity and support matrix evidence. | Extend exact provider parity and the platform support matrix only for executable-qualified OpenJiuwen combinations under a serialized shared-path fence. |
 | P1 | [AR-0862](tasks/AR-0862-openjiuwen-qualification.md): Independently qualify and document OpenJiuwen support | Unclaimed | Independently qualify and document OpenJiuwen support. | Run independent exact-tree qualification, offline provenance verification, full gates, native evidence, documentation review, and post-merge validation. |
