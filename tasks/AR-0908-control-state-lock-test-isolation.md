@@ -10,7 +10,7 @@
     "AR-0875"
   ],
   "id": "AR-0908",
-  "next_action": "Run repeated parallel and coverage-context lock lifecycle stress; then complete exact single-path gates and immutable review candidate.",
+  "next_action": "Run remaining exact one-path and full gates, then prepare signed immutable candidate.",
   "observed_branch": "fix/control-state-lock-test-isolation",
   "observed_dirty": 1,
   "observed_head": "b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Harden asb-cli control-state lock test isolation and deterministic reopen coverage.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Harden control-state lock test isolation",
-  "updated_at": "2026-09-09T19:59:51+00:00",
+  "updated_at": "2026-09-09T20:01:32+00:00",
   "worktree_key": "agent-systems-benchmark-control-state-lock-test-isolation"
 }
 ---
@@ -82,3 +82,10 @@ non-deterministic isolation signal rather than claiming a production lock defect
 
 - 2026-09-09T19:59:51+00:00: Recorded command exit 101; command argv SHA-256
   47971602f2ef867a877c59579371b437f0b09dacaa5d2fadf2677d8b34e7f0f7.
+
+- 2026-09-09T20:01:32+00:00: Coverage checkpoint without rerun: corrected stable cargo-llvm-cov
+  invocation completed 31/31 asb-cli lib tests with 87.49% total line coverage and 82.59% control.rs
+  line coverage. The prior --branch attempt failed only because stable Rust rejects nightly -Z
+  coverage options. Handoff recording of the successful run was initially blocked by expired
+  AR-0859; coordinator repaired that unrelated lease at bfb04689. Parallel focused stress was
+  already recorded exit 0: 30 runs x 14 tests = 420 passes.
