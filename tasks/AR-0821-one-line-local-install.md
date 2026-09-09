@@ -10,7 +10,7 @@
     "AR-0820"
   ],
   "id": "AR-0821",
-  "next_action": "Create the missing declared worktree from exact origin/main, then implement and test the guided installation workflow.",
+  "next_action": "Continue serialized polling of PR #106 rebased head c6b76fa; merge only when every restarted required check is green.",
   "observed_branch": "feature/one-line-local-install",
   "observed_dirty": 0,
   "observed_head": "c6b76fa76519a7b1e227d3ad5d61e161621c62ff",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Turn a single documented command into a safe guided local ASB and TUI first run.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Add guided one-line local installation",
-  "updated_at": "2026-09-09T06:48:27+00:00",
+  "updated_at": "2026-09-09T06:49:00+00:00",
   "worktree_key": "agent-systems-benchmark-one-line-install"
 }
 ---
@@ -175,3 +175,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T06:48:27+00:00: Recorded command exit 8; command argv SHA-256
   620d26947dff60b073b112a05404ba14b3a32182d8603ffb9e8931788a262fc1.
+
+- 2026-09-09T06:49:00+00:00: One lease refresh hit coordinator LOCK_TIMEOUT during concurrent state
+  writers; no product or CI mutation was lost. Retry heartbeat succeeded and all completed PR checks
+  remain green after the required rebase onto current main.
