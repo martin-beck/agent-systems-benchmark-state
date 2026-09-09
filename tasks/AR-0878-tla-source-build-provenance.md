@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T02:45:34+00:00",
+  "updated_at": "2026-09-09T02:47:42+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -130,3 +130,6 @@ Implementation has not started. Read the linked plan before claiming.
   Persistent runner receipts are under .asb-local/ar0878-source-build. Recursive audit confirms
   exactly 31 vendored JARs; each path and SHA-256 has been enumerated against upstream
   vendored-jars.json, with license receipt mapping still required before qualification.
+
+- 2026-09-09T02:47:42+00:00: Recorded command exit 0; command argv SHA-256
+  3b0faf535309807c677283bcfb6eef3537d6d1e422727739f2edc89db8b2059d.
