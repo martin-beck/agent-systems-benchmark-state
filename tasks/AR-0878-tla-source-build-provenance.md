@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0878",
-  "next_action": "Request fresh independent immutable review of signed candidate e4730653b112d733fb2a1157f65481663c4e073c (tree 64d8123c6a321c9223d1a7a5c1ed6981482d3876, parent c157cedc744373ef75aba686c00e97ce61aa3bfc). Do not publish or rebase before review; hosted exact-head Kani remains required only after publication is authorized.",
+  "next_action": "Request fresh independent immutable review of signed candidate bcbdfe03e77d815467cb4341e0b9c1abef05f48b (tree 2b52b379968d2e37344f42c5416e7020c548d138, parent 6e83e0893a0e64f2e529deae17147216eaf3cf17; package base c157cedc744373ef75aba686c00e97ce61aa3bfc). Do not publish or rebase before review; hosted exact-head Kani remains required only after publication is authorized.",
   "observed_branch": "feature/tla-source-build-provenance",
   "observed_dirty": 0,
   "observed_head": "bcbdfe03e77d815467cb4341e0b9c1abef05f48b",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 170,
+  "task_revision": 171,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T05:36:43+00:00",
+  "updated_at": "2026-09-09T05:38:28+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -573,3 +573,19 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T05:36:43+00:00: Recorded command exit 0; command argv SHA-256
   51d85908efdb1f6a6eaaa32cee6d96c35d4f2435218bce356a26a4b2a2e19de7.
+
+- 2026-09-09T05:38:28+00:00: Review-block repair complete. Signed state commits
+  ba4e7de0b4aa92409e31eea33948ecb2eebc36dd and b40d8e4dac82ed303430287dfeb7595b4320776a amend the
+  owned-path fence from eight to the exact 11-path candidate scope. Corrected intermediate identity
+  is 6e83e0893a0e64f2e529deae17147216eaf3cf17/tree b0c805783b616d3e748797c3228dbde40b88ec85/parent
+  e4730653b112d733fb2a1157f65481663c4e073c. Final signed/DCO successor
+  bcbdfe03e77d815467cb4341e0b9c1abef05f48b/tree 2b52b379968d2e37344f42c5416e7020c548d138 names the
+  JavaCC per-line normalization exactly. JavaCC release_40@368da687 archive SHA256
+  712420087c0ae91fd221062f0407a47e7abf6478b5ce24b40c7eda509910d27f and prettier4j v0.3.2@48a56fca
+  archive SHA256 9f7bf63096ed8974b64b5489886e11831b962768f78ab5844da347d665ff75bd are bound-bound
+  with raw license and applicability digests; all provenance-field mutation negatives fail closed.
+  Exact candidate gates green: focused 4/4; 13 retained deletion trials; two offline builds
+  identical at 4,512,486 bytes/SHA256
+  8c200a88d151c6c183c8dbc57a6b633d135e7a2b18242a3afbf243a9e4b68d3e; workspace
+  fmt/Clippy/tests/docs/release; locked formal; source-built TLC positive/stale negative and Alloy
+  positive/mutants; mutation ubel
