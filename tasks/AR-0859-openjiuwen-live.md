@@ -10,16 +10,16 @@
   "next_action": "Add remaining corruption/retry/trickle/root/child negatives, then run full gates; keep support fail closed.",
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
-  "observed_head": "bf29c154cb59d332fd098e4ae64c976dc41e1416",
+  "observed_head": "a3fb08773b13992fc54553f4e29da9169b5f86c7",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0859.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T17:01:46+00:00",
+  "updated_at": "2026-09-09T17:01:53+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
