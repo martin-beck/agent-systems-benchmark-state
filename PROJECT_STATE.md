@@ -18,8 +18,8 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 34312710713 | `43018ed64b69` | push | Emulated aarch64 portability | in_progress:- |
 | 34312710688 | `43018ed64b69` | push | Formal assurance | completed:success |
-| 34312710684 | `43018ed64b69` | push | Rust verification | in_progress:- |
-| 34312710666 | `43018ed64b69` | push | Repository quality | in_progress:- |
+| 34312710684 | `43018ed64b69` | push | Rust verification | completed:failure |
+| 34312710666 | `43018ed64b69` | push | Repository quality | completed:success |
 | 34312710658 | `43018ed64b69` | push | Huawei MIT source headers | completed:success |
 | 34312710647 | `43018ed64b69` | push | Fault assurance | completed:success |
 | 34312590627 | `7669d5be6d01` | push | Emulated aarch64 portability | completed:cancelled |
