@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 8 |
 | **Planned** | Defined work awaiting promotion or dependencies | 36 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 110 |
+| **Done** | Accepted, integrated, and durably verified | 111 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -145,7 +145,7 @@ flowchart LR
         AR_0819["AR-0819 - Done"]:::status_done
         AR_0820["AR-0820 - Done"]:::status_done
         AR_0821["AR-0821 - Done"]:::status_done
-        AR_0822["AR-0822 - In progress"]:::status_in_progress
+        AR_0822["AR-0822 - Done"]:::status_done
         AR_0823["AR-0823 - Planned"]:::status_planned
         AR_0830["AR-0830 - Done"]:::status_done
         AR_0831["AR-0831 - Done"]:::status_done
@@ -886,11 +886,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0822](tasks/AR-0822-install-upgrade-rollback.md): Add safe installation lifecycle management | codex-longrun-install-lifecycle-20260909 | Manage the complete installed lifecycle without losing configuration, history, runs, or trust state. | Implement verified upgrades, migrations, rollback, repair, and non-destructive uninstall. |
 | P1 | [AR-0879](tasks/AR-0879-local-llm-testing-recommendations.md): Plan deterministic LLM doubles and local inference | codex-asb-local-llm-research-20260909 | Research deterministic LLM test doubles and local inference options, document ASB recommendations, and create implementation-ready follow-up ARs. | Obtain independent exact-head review of green product PR 107 at bda6cc8a and state PR 16 at 9de11a52; state global schema remains pre-existingly blocked only by active AR-0878 next_action length. |
 | P1 | [AR-0880](tasks/AR-0880-openjiuwen-runtime-closure.md): Repair OpenJiuwen runtime closure | replay_20260906 | Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification. | Regenerate and verify the exact OpenJiuwen cli plus observability runtime closure, then prove imports and the console entry point before unblocking AR-0859. |
 
@@ -948,7 +947,7 @@ flowchart LR
 | P2 | [AR-0903](tasks/AR-0903-release-qualification.md): Package and qualify the first release | Unclaimed | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (110)
+### Done (111)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1018,6 +1017,7 @@ flowchart LR
 | P1 | [AR-0819](tasks/AR-0819-ssh-remote-bootstrap.md): Add SSH remote discovery and bootstrap | Unclaimed | Use configured SSH hosts as the safe default path to a remote runner and help establish dedicated key authentication. | Integrate signed no-ff PR #98 onto current main, then run and verify all exact-main post-merge workflows before release. |
 | P1 | [AR-0820](tasks/AR-0820-verifiable-install-artifacts.md): Publish verifiable installation artifacts | Unclaimed | Publish verifiable native bundles and metadata that a small bootstrapper can select safely. | Build signed platform manifests and relocatable ASB plus asb-tui installation bundles. |
 | P1 | [AR-0821](tasks/AR-0821-one-line-local-install.md): Add guided one-line local installation | Unclaimed | Turn a single documented command into a safe guided local ASB and TUI first run. | Monitor all required post-merge CI runs for exact main 513c1d926458f1cb6a26d3f7277dc7d9b1496df3; release only after every gate is green. |
+| P1 | [AR-0822](tasks/AR-0822-install-upgrade-rollback.md): Add safe installation lifecycle management | Unclaimed | Manage the complete installed lifecycle without losing configuration, history, runs, or trust state. | Implement verified upgrades, migrations, rollback, repair, and non-destructive uninstall. |
 | P1 | [AR-0830](tasks/AR-0830-aiws-runner-capacity.md): Provision hardened development host ASB runner capacity | Unclaimed | Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners. | Reboot persistence is deferred to AR-0833; AR-0830 proven scope is complete. |
 | P1 | [AR-0831](tasks/AR-0831-aiws-workflow-routing.md): Integrate development host ASB runners with GitHub workflows | Unclaimed | Route explicitly trusted ASB CI jobs to qualified development host runners while preserving disposable public-PR isolation. | Hold exact unpublished f55f98cc79b75226a537600258dde5e57333bdeb for independent immutable security review; publish only after approval. |
 | P1 | [AR-0834](tasks/AR-0834-handoffctl-lint-regression.md): Repair handoffctl lint regression | Unclaimed | Repair the coordination-tool Ruff regression discovered during AR-0830 reconciliation. | No further action; repair is integrated and verified. |

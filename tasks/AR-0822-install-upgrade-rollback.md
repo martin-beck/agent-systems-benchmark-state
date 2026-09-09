@@ -2,7 +2,7 @@
 {
   "branch": "feature/install-lifecycle",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T09:24:53+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0104",
     "AR-0820",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/install-lifecycle",
   "observed_dirty": 0,
   "observed_head": "c7d6da71c70931ae99a22447287f5027d46d50ff",
-  "owner": "codex-longrun-install-lifecycle-20260909",
+  "owner": "",
   "plan": "../plans/AR-0822.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Manage the complete installed lifecycle without losing configuration, history, runs, or trust state.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Add safe installation lifecycle management",
-  "updated_at": "2026-09-09T07:24:57+00:00",
+  "updated_at": "2026-09-09T07:25:19+00:00",
   "worktree_key": "agent-systems-benchmark-install-lifecycle"
 }
 ---
@@ -155,3 +155,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T07:24:57+00:00: Recorded command exit 0; command argv SHA-256
   6056f492b05389c85a170e193d513e7521aed3b5bd6efe16e0ed076ca9e40adf.
+
+- 2026-09-09T07:25:19+00:00: Acceptance verified: signed PR #108 candidate c7d6da7 merged no-ff as
+  624d4c050ab10d40238edc6a1b3d3304ab0f0278; local lifecycle tests passed and all six exact-main
+  post-merge workflows are green.
