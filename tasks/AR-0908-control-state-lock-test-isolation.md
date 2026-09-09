@@ -12,17 +12,17 @@
   "id": "AR-0908",
   "next_action": "Run remaining exact one-path and full gates, then prepare signed immutable candidate.",
   "observed_branch": "fix/control-state-lock-test-isolation",
-  "observed_dirty": 1,
-  "observed_head": "b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b",
+  "observed_dirty": 0,
+  "observed_head": "f7a08f98743643c1fa855a19ebe3a1f3211c5f05",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0908.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Harden asb-cli control-state lock test isolation and deterministic reopen coverage.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Harden control-state lock test isolation",
-  "updated_at": "2026-09-09T20:10:10+00:00",
+  "updated_at": "2026-09-09T20:10:16+00:00",
   "worktree_key": "agent-systems-benchmark-control-state-lock-test-isolation"
 }
 ---
