@@ -11,17 +11,17 @@
   "id": "AR-0878",
   "next_action": "Run full locked formal workspace plus Alloy, repository-policy, privacy/Gitleaks, supply and coverage gates; obtain ShellCheck from the authorized pinned quality runner or record its exact unavailable boundary; then sign the exact eight-path candidate for immutable review.",
   "observed_branch": "feature/tla-source-build-provenance",
-  "observed_dirty": 3,
-  "observed_head": "af9fb7dcaabc162b13d6ee1e77d8915b6d82df20",
+  "observed_dirty": 0,
+  "observed_head": "c6aed713080c40ff24ec095cb83a1af4ff74d59e",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0878.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T03:08:02+00:00",
+  "updated_at": "2026-09-09T03:08:09+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
