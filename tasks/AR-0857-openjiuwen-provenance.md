@@ -16,17 +16,17 @@
   "id": "AR-0857",
   "next_action": "Pin official source, package, dependency closure, license, executable digest, protocol mode, and supported platform before any adapter claim.",
   "observed_branch": "feature/openjiuwen-provenance",
-  "observed_dirty": 3,
-  "observed_head": "05d30426919a6a08818be6a26b44356669e37645",
+  "observed_dirty": 0,
+  "observed_head": "addcfab39e48d3b5cf573ebc109cb676f299be5f",
   "owner": "replay_20260909",
   "plan": "../plans/AR-0857.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin OpenJiuwen source, package, and license provenance.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Pin OpenJiuwen source, package, and license provenance",
-  "updated_at": "2026-09-09T02:55:48+00:00",
+  "updated_at": "2026-09-09T02:55:54+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-provenance"
 }
 ---
