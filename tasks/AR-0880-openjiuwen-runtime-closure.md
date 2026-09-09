@@ -10,16 +10,16 @@
   "next_action": "Fresh immutable review exact rebased candidate 74f6646badd4d1520ad5999fbfd9202ef9cd54a2/tree bd37f38b5418d6e998f38fca4d5165ead83235cb/parent 1ab70e82fa4d442d89481050da50dd4bc3bb4d22; if approved, update PR #112 from old head 6f6666373d23c833609008448b6a672312e1c6fb by exact force-with-lease, then require fresh exact-head hosted CI before merge.",
   "observed_branch": "fix/openjiuwen-runtime-closure",
   "observed_dirty": 0,
-  "observed_head": "74f6646badd4d1520ad5999fbfd9202ef9cd54a2",
+  "observed_head": "b7559931ef79d55ad579546c85ceec2ed5b15790",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0880.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification.",
-  "task_revision": 97,
+  "task_revision": 98,
   "title": "Repair OpenJiuwen runtime closure",
-  "updated_at": "2026-09-09T09:09:36+00:00",
+  "updated_at": "2026-09-09T09:09:45+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-runtime-closure"
 }
 ---
