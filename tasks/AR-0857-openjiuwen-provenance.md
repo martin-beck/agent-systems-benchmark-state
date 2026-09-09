@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin OpenJiuwen source, package, and license provenance.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Pin OpenJiuwen source, package, and license provenance",
-  "updated_at": "2026-09-09T03:05:40+00:00",
+  "updated_at": "2026-09-09T03:06:07+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-provenance"
 }
 ---
@@ -144,3 +144,6 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-09T03:05:40+00:00: PR #97 exact head addcfab is fully green: all required quality, formal,
   fault, fuzz, mutation, Rust x86/arm, and emulated aarch64 checks passed.
+
+- 2026-09-09T03:06:07+00:00: Recorded command exit 0; command argv SHA-256
+  5e5b9ffa3ef8df10e4e47cc2f4557f3d9c02bcbcd51077d5ae6cdf31d06da268.
