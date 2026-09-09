@@ -3,18 +3,23 @@
   "branch": "docs/beginner-workflows",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-0802", "AR-0869", "AR-0870", "AR-0871"],
+  "depends_on": [
+    "AR-0802",
+    "AR-0869",
+    "AR-0870",
+    "AR-0871"
+  ],
   "id": "AR-0872",
   "next_action": "Create the concise beginner workflow hub for equivalent CLI and TUI benchmark journeys.",
   "owner": "",
   "plan": "../plans/AR-0872.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Publish linked beginner workflows for setup, multi-agent runs, progress, comparison, recording, and replay with and without the TUI.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Publish beginner workflow documentation",
-  "updated_at": "2026-09-08T20:31:33+00:00",
+  "updated_at": "2026-09-09T01:28:43+00:00",
   "worktree_key": "agent-systems-benchmark-beginner-workflows"
 }
 ---
@@ -23,3 +28,6 @@
 Create the beginner-first workflow hub under the product repository's canonical `docs/workflows/` tree.
 
 Implementation has not started. Read the linked plan before claiming.
+
+- 2026-09-09T01:28:43+00:00: All dependencies AR-0802, AR-0869, AR-0870 and AR-0871 are done;
+  promote the highest-priority ready documentation leaf.

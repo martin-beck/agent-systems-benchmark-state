@@ -15,6 +15,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-0872](tasks/AR-0872-beginner-workflow-documentation.md): Publish beginner workflow documentation | Publish linked beginner workflows for setup, multi-agent runs, progress, comparison, recording, and replay with and without the TUI. | Create the concise beginner workflow hub for equivalent CLI and TUI benchmark journeys. | - |
 | P2 | [AR-0405](tasks/AR-0405-performance-workloads.md): Add performance and reproducibility workloads | Assess SWE-Perf, SWE-fficiency and CORE-Bench for correctness-preserving optimization and reproducibility. | Audit the six-path fail-closed provenance checkpoint, run the complete applicable quality/privacy gates, and determine whether any suite can advance beyond planned without missing license and native paired-oracle evidence. | - |
 
 ## Blocked
@@ -34,7 +35,6 @@ Never edit this file directly.
 | P0 | [AR-0515](tasks/AR-0515-replay-matrix.md): Aggregate replay conformance matrix | Aggregate complete per-agent replay conformance. | Aggregate per-agent replay evidence into the complete supported-agent conformance matrix. | - |
 | P0 | [AR-0521](tasks/AR-0521-openhands-environment-pin.md): Reproduce and pin the OpenHands replay environment | Repair OpenHands replay environment provenance and reproducibility. | Define an immutable, reproducible OpenHands environment bundle and verifier. | - |
 | P0 | [AR-0837](tasks/AR-0837-containerized-runner-boundary.md): Qualify containerized runner boundary | Provide the containerized workflow boundary required for safe trusted runner claims. | Define and qualify a digest-pinned workflow container boundary separating operator, listener, and job principals without host mounts. | - |
-| P0 | [AR-0872](tasks/AR-0872-beginner-workflow-documentation.md): Publish beginner workflow documentation | Publish linked beginner workflows for setup, multi-agent runs, progress, comparison, recording, and replay with and without the TUI. | Create the concise beginner workflow hub for equivalent CLI and TUI benchmark journeys. | - |
 | P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Qualify native CSB monitoring, kernel-contention evidence, collector overhead, loss semantics, and platform support before integration. | Build the exact CSB-to-ASB signal inventory and causal native A/B qualification matrix. | - |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | Define authorized reservation, provisioning, teardown, privacy, cost, and evidence control for genuine native cells. | - |
 | P1 | [AR-0705](tasks/AR-0705-native-debian-capacity.md): Provide native Debian capacity | Provide genuine Debian native qualification cells. | Provision and qualify genuine booted Debian x86_64 and aarch64 cells with cleanup and provenance. | - |
