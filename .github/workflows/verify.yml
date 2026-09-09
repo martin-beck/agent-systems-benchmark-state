@@ -4,6 +4,8 @@ name: Coordination verification
     branches: [main]
     paths:
       - ".pre-commit-config.yaml"
+      - "CURRENT.md"
+      - "STATUS.md"
       - ".handoffctl.json"
       - "coordinator.binding.json"
       - "coordinator.vendor.json"
@@ -12,6 +14,7 @@ name: Coordination verification
       - ".github/workflows/source-headers.yml"
       - ".github/workflows/verify.yml"
       - "formal/handoffctl/**"
+      - "plans/**"
       - "pyproject.toml"
       - "schema/handoffctl-backend-config.schema.json"
       - "schema/handoffctl-project-binding.schema.json"
@@ -19,6 +22,7 @@ name: Coordination verification
       - "schema/task-schema.json"
       - "tests/test_handoffctl.py"
       - "tests/test_handoffctl_vendor.py"
+      - "tests/test_workflow_triggers.py"
       - "tests/test_source_headers.py"
       - "tests/test_sqlite_storage.py"
       - "tests/validate_schema.py"
@@ -29,11 +33,14 @@ name: Coordination verification
       - "tools/handoffctl_vendor.py"
       - "tools/sqlite_storage.py"
       - "tools/status_renderer.py"
+      - "tasks/**"
       - "uv.lock"
       - "vendor/agent-workflow-coordinator/**"
   pull_request:
     paths:
       - ".pre-commit-config.yaml"
+      - "CURRENT.md"
+      - "STATUS.md"
       - ".handoffctl.json"
       - "coordinator.binding.json"
       - "coordinator.vendor.json"
@@ -42,6 +49,7 @@ name: Coordination verification
       - ".github/workflows/source-headers.yml"
       - ".github/workflows/verify.yml"
       - "formal/handoffctl/**"
+      - "plans/**"
       - "pyproject.toml"
       - "schema/handoffctl-backend-config.schema.json"
       - "schema/handoffctl-project-binding.schema.json"
@@ -49,6 +57,7 @@ name: Coordination verification
       - "schema/task-schema.json"
       - "tests/test_handoffctl.py"
       - "tests/test_handoffctl_vendor.py"
+      - "tests/test_workflow_triggers.py"
       - "tests/test_source_headers.py"
       - "tests/test_sqlite_storage.py"
       - "tests/validate_schema.py"
@@ -59,6 +68,7 @@ name: Coordination verification
       - "tools/handoffctl_vendor.py"
       - "tools/sqlite_storage.py"
       - "tools/status_renderer.py"
+      - "tasks/**"
       - "uv.lock"
       - "vendor/agent-workflow-coordinator/**"
   workflow_dispatch:
