@@ -8,7 +8,7 @@
     "AR-0403"
   ],
   "id": "AR-0404",
-  "next_action": "Run exact-tree policy, DCO, privacy and independent review; then publish the signed candidate for exact-head CI.",
+  "next_action": "Run and verify all exact-main post-merge workflow jobs for merge cf9241a before release.",
   "observed_branch": "feature/extended-workloads",
   "observed_dirty": 0,
   "observed_head": "8596a7fd0dba6d9a861cdaa276777f771be69c27",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Evaluate SWE-bench Pro, BigCodeBench, EvalPlus and LiveCodeBench as optional suites.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Expand established benchmark catalogue",
-  "updated_at": "2026-09-09T04:03:36+00:00",
+  "updated_at": "2026-09-09T04:04:08+00:00",
   "worktree_key": "agent-systems-benchmark-extended-workloads"
 }
 ---
@@ -165,3 +165,6 @@ Implementation has not started. Read the linked plan before claiming.
   84d0327279fb28bfc589ed9970fe8cf0561d7d9ec4d23cd9a142f50a70723d1b.
 
 - 2026-09-09T04:03:36+00:00: Heartbeat by codex-longrun-workloads-20260909.
+
+- 2026-09-09T04:04:08+00:00: Signed no-ff merge cf9241a922ec7493edca293778c26d3a462f84a8 created on
+  product main and pushed; signature verified with ED25519 key.

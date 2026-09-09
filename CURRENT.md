@@ -9,7 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0858](tasks/AR-0858-openjiuwen-adapter.md): Implement the OpenJiuwen contract and capability adapter | Implement the OpenJiuwen contract and capability adapter. | Implement the bounded agent contract, exact provider translation, and capability registration from the pinned protocol; keep live support unclaimed. | replay_20260909 |
 | P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Coordinator decision: amend the source-build lock to the 14 mechanically proven compile/dist inputs and keep the other 17 JARs as exact excluded-source inventory with a deletion/rebuild oracle, or require new authoritative evidence for the unmatched jpf-shell binary. Do not rebase or reuse generic SPDX receipts before this scope decision. | replay_20260906 |
-| P3 | [AR-0404](tasks/AR-0404-extended-workloads.md): Expand established benchmark catalogue | Evaluate SWE-bench Pro, BigCodeBench, EvalPlus and LiveCodeBench as optional suites. | Run exact-tree policy, DCO, privacy and independent review; then publish the signed candidate for exact-head CI. | codex-longrun-workloads-20260909 |
+| P3 | [AR-0404](tasks/AR-0404-extended-workloads.md): Expand established benchmark catalogue | Evaluate SWE-bench Pro, BigCodeBench, EvalPlus and LiveCodeBench as optional suites. | Run and verify all exact-main post-merge workflow jobs for merge cf9241a before release. | codex-longrun-workloads-20260909 |
 
 ## Open
 
