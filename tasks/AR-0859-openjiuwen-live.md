@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 98,
+  "task_revision": 99,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T17:08:12+00:00",
+  "updated_at": "2026-09-09T17:09:10+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -338,3 +338,6 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   plus process-group termination/reap assertions. Exact pinned wheel/runtime under bwrap
   user+network namespace passed 6/6 focused tests in 37.94s; compile-only locked gate passed. No
   non-loopback network was available. Full repository gates and independent review remain.
+
+- 2026-09-09T17:09:10+00:00: Recorded command exit 0; command argv SHA-256
+  3c28a4ff7445735501930009ca107115caaf5ba70d02017c13d85ee71705b88a.
