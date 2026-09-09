@@ -10,18 +10,18 @@ Generated from local Git and GitHub. Do not edit.
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #31 | `feature/native-platforms@bdaf9c108226` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
+| #31 | `feature/native-platforms@bdaf9c108226` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 34315809088 | `ecdfae42d576` | push | Emulated aarch64 portability | in_progress:- |
-| 34315809076 | `ecdfae42d576` | push | Fault assurance | queued:- |
+| 34315809076 | `ecdfae42d576` | push | Fault assurance | in_progress:- |
 | 34315809071 | `ecdfae42d576` | push | Repository quality | in_progress:- |
-| 34315809037 | `ecdfae42d576` | push | Rust verification | queued:- |
-| 34315809032 | `ecdfae42d576` | push | Huawei MIT source headers | in_progress:- |
-| 34315809031 | `ecdfae42d576` | push | Formal assurance | queued:- |
+| 34315809037 | `ecdfae42d576` | push | Rust verification | in_progress:- |
+| 34315809032 | `ecdfae42d576` | push | Huawei MIT source headers | completed:success |
+| 34315809031 | `ecdfae42d576` | push | Formal assurance | in_progress:- |
 | 34315356592 | `310fdfe30f71` | pull_request | Huawei MIT source headers | completed:success |
 | 34315356554 | `310fdfe30f71` | pull_request | Formal assurance | completed:success |
 | 34315356538 | `310fdfe30f71` | pull_request | Fault assurance | completed:success |
