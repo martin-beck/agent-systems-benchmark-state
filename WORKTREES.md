@@ -51,7 +51,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-fault-assurance` | `feature/fault-assurance` | `e6c623113c15` | 0 | behind 300, ahead 0 |
 | `agent-systems-benchmark-formal-assurance` | `feature/formal-assurance` | `2a495a99a657` | 0 | behind 346, ahead 0 |
 | `agent-systems-benchmark-formal-oci-image-identity` | `fix/formal-oci-image-identity` | `156f7e011867` | 0 | behind 0, ahead 1 |
-| `agent-systems-benchmark-formal-tla-artifact-availability` | `fix/formal-tla-artifact-availability` | `55fdd686eb1a` | 0 | behind 0, ahead 2 |
+| `agent-systems-benchmark-formal-tla-artifact-availability` | `fix/formal-tla-artifact-availability` | `55fdd686eb1a` | 3 | behind 0, ahead 2 |
+| changed files | - | - | - | `formal/fixtures/tla-artifact-mutations.json`, `formal/run_temporal_models.sh`, `formal/tests/tla_artifact_acquisition.rs` |
 | `agent-systems-benchmark-frontend-api-integration` | `feature/frontend-api-integration` | `76cc86f23a48` | 0 | behind 173, ahead 0 |
 | `agent-systems-benchmark-frontend-control-api` | `feature/frontend-control-api` | `cbb764c45c61` | 20 | behind 292, ahead 1 |
 | changed files | - | - | - | `Cargo.lock`, `crates/asb-cli/Cargo.toml`, `crates/asb-cli/src/lib.rs`, `crates/asb-control/Cargo.toml`, `crates/asb-control/README.md`, `crates/asb-control/examples/generate_schema.rs`, `crates/asb-control/fixtures/v1/success-response.json`, `crates/asb-control/schema/v1/event.schema.json`, `crates/asb-control/schema/v1/request.schema.json`, `crates/asb-control/schema/v1/response.schema.json`, `crates/asb-control/src/endpoint.rs`, `crates/asb-control/src/lib.rs`, `crates/asb-control/src/protocol.rs`, `crates/asb-control/src/state.rs`, `crates/asb-control/tests/control.rs`, `crates/asb-control/tests/endpoint.rs`, `crates/asb-control/tests/schema_conformance.rs`, `docs/FRONTEND_CONTROL_API.md`, `crates/asb-cli/src/control.rs`, `crates/asb-control/src/schema.rs` |
