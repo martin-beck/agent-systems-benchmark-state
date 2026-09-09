@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-09T00:32:10+00:00",
+  "updated_at": "2026-09-09T00:32:47+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
@@ -272,3 +272,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T00:32:04+00:00: Recorded command exit 1; command argv SHA-256
   4c3522b6454eb5277d21cc8f22a7a3acab4e7f37ad7d0f1eb7474d3845f1b528.
+
+- 2026-09-09T00:32:47+00:00: Recorded command exit 1; command argv SHA-256
+  cd813962cd9afd5d91bb1f82e1ea4be2b6e846440b5e8517e027990288f43ac4.
