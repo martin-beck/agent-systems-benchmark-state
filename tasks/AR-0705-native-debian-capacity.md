@@ -24,7 +24,7 @@
 ---
 ## AR-0705
 
-Provision credential-isolated, booted Debian x86_64 and aarch64 cells. Prove native identity,
-kernel/distribution provenance, cleanup, cost/availability bounds, and evidence integrity.
+Provision a credential-isolated, booted Debian x86_64 cell and optionally an ARM64 cell. Prove
+native identity, kernel/distribution provenance, cleanup, cost/availability bounds, and evidence integrity.
 
 - 2026-09-09T10:53:36+00:00: Removed native ARM64 as a completion or downstream blocker.
