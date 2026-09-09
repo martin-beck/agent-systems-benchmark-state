@@ -10,7 +10,7 @@
     "AR-0315"
   ],
   "id": "AR-0891",
-  "next_action": "Repair the exact-head policy failure in PR #114: Gitleaks false-positive on the public tokenizer content digest. Verify the narrow repository config and rerun the full exact-head suite before merging.",
+  "next_action": "Signed no-ff merge PR #114 at exact head 9bc7fe7f91efd491d42da3961ba09d832857d361, then run post-merge exact-main verification before releasing AR-0891.",
   "observed_branch": "feat/local-inference-provider-profiles",
   "observed_dirty": 0,
   "observed_head": "9bc7fe7f91efd491d42da3961ba09d832857d361",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server.",
-  "task_revision": 96,
+  "task_revision": 97,
   "title": "Qualify local inference provider profiles",
-  "updated_at": "2026-09-09T09:31:22+00:00",
+  "updated_at": "2026-09-09T09:31:24+00:00",
   "worktree_key": "agent-systems-benchmark-local-inference-provider-profiles"
 }
 ---
@@ -242,3 +242,7 @@ Use exact Ollama, llama.cpp, vLLM and LocalAI sources in `docs/LOCAL_LLM_TESTING
 - 2026-09-09T09:29:32+00:00: Heartbeat by codex-longrun-local-inference-profiles-20260909.
 
 - 2026-09-09T09:31:22+00:00: Heartbeat by codex-longrun-local-inference-profiles-20260909.
+
+- 2026-09-09T09:31:24+00:00: Repaired policy CI failure with a narrowly scoped .gitleaks.toml
+  exception for the public tokenizer_sha256 content digest. Exact-range Gitleaks reports no leaks,
+  and all 14 PR #114 checks are now green.

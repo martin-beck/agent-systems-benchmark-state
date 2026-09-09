@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0891](tasks/AR-0891-local-inference-provider-profiles.md): Qualify local inference provider profiles | Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server. | Repair the exact-head policy failure in PR #114: Gitleaks false-positive on the public tokenizer content digest. Verify the narrow repository config and rerun the full exact-head suite before merging. | codex-longrun-local-inference-profiles-20260909 |
+| P1 | [AR-0891](tasks/AR-0891-local-inference-provider-profiles.md): Qualify local inference provider profiles | Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server. | Signed no-ff merge PR #114 at exact head 9bc7fe7f91efd491d42da3961ba09d832857d361, then run post-merge exact-main verification before releasing AR-0891. | codex-longrun-local-inference-profiles-20260909 |
 
 ## Blocked
 
