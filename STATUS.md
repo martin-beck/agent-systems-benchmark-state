@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**156 ARs tracked** across 4 active status categories.
+**156 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 7 |
-| **Planned** | Defined work awaiting promotion or dependencies | 37 |
+| **Planned** | Defined work awaiting promotion or dependencies | 36 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 110 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -145,7 +145,7 @@ flowchart LR
         AR_0819["AR-0819 - Done"]:::status_done
         AR_0820["AR-0820 - Done"]:::status_done
         AR_0821["AR-0821 - Done"]:::status_done
-        AR_0822["AR-0822 - Planned"]:::status_planned
+        AR_0822["AR-0822 - Open"]:::status_open
         AR_0823["AR-0823 - Planned"]:::status_planned
         AR_0830["AR-0830 - Done"]:::status_done
         AR_0831["AR-0831 - Done"]:::status_done
@@ -890,6 +890,12 @@ flowchart LR
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | replay_20260906 | Qualify pinned OpenJiuwen live execution. | Obtain a serialized provenance-closure repair for the pinned OpenJiuwen cli and observability extras before adding AR-0859 live-test paths; then install the reviewed lock and execute the loopback journey. Keep support fail closed. |
 | P1 | [AR-0879](tasks/AR-0879-local-llm-testing-recommendations.md): Plan deterministic LLM doubles and local inference | codex-asb-local-llm-research-20260909 | Research deterministic LLM test doubles and local inference options, document ASB recommendations, and create implementation-ready follow-up ARs. | Obtain independent exact-head review of green product PR 107 at bda6cc8a and state PR 16 at 9de11a52; state global schema remains pre-existingly blocked only by active AR-0878 next_action length. |
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0822](tasks/AR-0822-install-upgrade-rollback.md): Add safe installation lifecycle management | Unclaimed | Manage the complete installed lifecycle without losing configuration, history, runs, or trust state. | Implement verified upgrades, migrations, rollback, repair, and non-destructive uninstall. |
+
 ### Blocked (7)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -902,7 +908,7 @@ flowchart LR
 | P1 | [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md): Repair formal TLA artifact availability | Unclaimed | Repair the formal workflow&#x27;s unavailable TLA+ artifact pin without weakening provenance or offline verification. | Keep the four-path prototype unchanged. Obtain an authoritative immutable TLA+ 1.8.0 artifact or authorization for a reproducible source-build boundary; then refresh metadata once, finish deterministic faults, and run TLC/Alloy. Do not chase replaceable pre-release assets. |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Monitor exact-main post-merge checks at 2219839 and run local post-merge verification. Retain AR-0202 in progress until genuine privileged native aarch64 evidence is recorded; then complete final review and release. |
 
-### Planned (37)
+### Planned (36)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -924,7 +930,6 @@ flowchart LR
 | P1 | [AR-0816](tasks/AR-0816-cross-platform-remote-interoperability.md): Qualify cross-platform remote control | Unclaimed | Validate remote TUI and runner combinations across x86_64/aarch64 and supported Linux distributions. | Prove controller-runner interoperability across distributions, architectures, versions, and network conditions. |
 | P1 | [AR-0817](tasks/AR-0817-remote-tui-workflows.md): Build remote terminal frontend workflows | Unclaimed | Make secure two-machine benchmark operation clear and efficient in the terminal frontend. | Integrate polished connection, trust, remote launch, detach, reconnect, and management journeys into the TUI. |
 | P1 | [AR-0818](tasks/AR-0818-remote-control-security-audit.md): Audit remote benchmark control | Unclaimed | Attack and qualify remote benchmark control before any release enables it. | Independently audit remote protocol, trust, authorization, lifecycle, interoperability, privacy, and operational safety. |
-| P1 | [AR-0822](tasks/AR-0822-install-upgrade-rollback.md): Add safe installation lifecycle management | Unclaimed | Manage the complete installed lifecycle without losing configuration, history, runs, or trust state. | Implement verified upgrades, migrations, rollback, repair, and non-destructive uninstall. |
 | P1 | [AR-0823](tasks/AR-0823-installation-qualification.md): Audit installation and first-run experience | Unclaimed | Qualify the one-line experience and complete install lifecycle across the supported native matrix. | Independently attack and usability-test first install, onboarding, upgrade, rollback, repair, and uninstall. |
 | P1 | [AR-0832](tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Unclaimed | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. |
 | P1 | [AR-0833](tasks/AR-0833-aiws-runner-reboot-lifecycle.md): Qualify tokenless runner reboot lifecycle | Unclaimed | Qualify safe reboot and restart lifecycle for disposable development-host ASB runners. | Design and qualify a tokenless supervisor/orchestration path that can provision fresh ephemeral registrations after boot without storing reusable GitHub credentials. |

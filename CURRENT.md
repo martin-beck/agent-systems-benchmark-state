@@ -10,6 +10,12 @@ Never edit this file directly.
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Qualify pinned OpenJiuwen live execution. | Obtain a serialized provenance-closure repair for the pinned OpenJiuwen cli and observability extras before adding AR-0859 live-test paths; then install the reviewed lock and execute the loopback journey. Keep support fail closed. | replay_20260906 |
 | P1 | [AR-0879](tasks/AR-0879-local-llm-testing-recommendations.md): Plan deterministic LLM doubles and local inference | Research deterministic LLM test doubles and local inference options, document ASB recommendations, and create implementation-ready follow-up ARs. | Obtain independent exact-head review of green product PR 107 at bda6cc8a and state PR 16 at 9de11a52; state global schema remains pre-existingly blocked only by active AR-0878 next_action length. | codex-asb-local-llm-research-20260909 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0822](tasks/AR-0822-install-upgrade-rollback.md): Add safe installation lifecycle management | Manage the complete installed lifecycle without losing configuration, history, runs, or trust state. | Implement verified upgrades, migrations, rollback, repair, and non-destructive uninstall. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -44,7 +50,6 @@ Never edit this file directly.
 | P1 | [AR-0816](tasks/AR-0816-cross-platform-remote-interoperability.md): Qualify cross-platform remote control | Validate remote TUI and runner combinations across x86_64/aarch64 and supported Linux distributions. | Prove controller-runner interoperability across distributions, architectures, versions, and network conditions. | - |
 | P1 | [AR-0817](tasks/AR-0817-remote-tui-workflows.md): Build remote terminal frontend workflows | Make secure two-machine benchmark operation clear and efficient in the terminal frontend. | Integrate polished connection, trust, remote launch, detach, reconnect, and management journeys into the TUI. | - |
 | P1 | [AR-0818](tasks/AR-0818-remote-control-security-audit.md): Audit remote benchmark control | Attack and qualify remote benchmark control before any release enables it. | Independently audit remote protocol, trust, authorization, lifecycle, interoperability, privacy, and operational safety. | - |
-| P1 | [AR-0822](tasks/AR-0822-install-upgrade-rollback.md): Add safe installation lifecycle management | Manage the complete installed lifecycle without losing configuration, history, runs, or trust state. | Implement verified upgrades, migrations, rollback, repair, and non-destructive uninstall. | - |
 | P1 | [AR-0823](tasks/AR-0823-installation-qualification.md): Audit installation and first-run experience | Qualify the one-line experience and complete install lifecycle across the supported native matrix. | Independently attack and usability-test first install, onboarding, upgrade, rollback, repair, and uninstall. | - |
 | P1 | [AR-0832](tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. | - |
 | P1 | [AR-0833](tasks/AR-0833-aiws-runner-reboot-lifecycle.md): Qualify tokenless runner reboot lifecycle | Qualify safe reboot and restart lifecycle for disposable development-host ASB runners. | Design and qualify a tokenless supervisor/orchestration path that can provision fresh ephemeral registrations after boot without storing reusable GitHub credentials. | - |
