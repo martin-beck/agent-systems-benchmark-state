@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Post-merge Repository quality failed on merge DCO; repair is preempting feature work.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-09T10:11:27+00:00",
+  "updated_at": "2026-09-09T10:11:47+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -76,3 +76,6 @@ synthetic fixture for black-box executable evidence.
 
 - 2026-09-09T10:11:27+00:00: Recorded command exit 0; command argv SHA-256
   d701ac9e9dcae31de5192b858c0615d3041aea41df2437bcde9a67acc9e0c9d5.
+
+- 2026-09-09T10:11:47+00:00: Recorded command exit 0; command argv SHA-256
+  fd9b2d02f542823387ed1643ed1121cba827b4dbdb29267a2708d10bb2797cd7.
