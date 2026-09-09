@@ -75,8 +75,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-llm-fixture-scenario-contract` | `feat/llm-fixture-scenario-contract` | `4d15bbc7e1d0` | 0 | behind 38, ahead 0 |
 | `agent-systems-benchmark-local-inference-provider-profiles` | `feat/local-inference-provider-profiles` | `eed49592617a` | 0 | behind 29, ahead 0 |
 | `agent-systems-benchmark-local-llm-testing-recommendations` | `docs/local-llm-testing-recommendations` | `4a23069336be` | 0 | behind 42, ahead 0 |
-| `agent-systems-benchmark-main-merge-integrity` | `fix/main-merge-integrity` | `fb782963d6df` | 1 | behind 0, ahead 1 |
-| changed files | - | - | - | `tools/integration/merge_pr.py` |
+| `agent-systems-benchmark-main-merge-integrity` | `fix/main-merge-integrity` | `fb782963d6df` | 3 | behind 0, ahead 1 |
+| changed files | - | - | - | `tools/integration/merge_pr.py`, `tools/integration/repository_settings.py`, `tools/integration/test_merge_pr.py` |
 | `agent-systems-benchmark-mockagents-executable-qualification` | `test/mockagents-executable-qualification` | `3f1de4106adf` | 0 | behind 27, ahead 0 |
 | `agent-systems-benchmark-modern-terminal-rendering` | `feature/modern-terminal-rendering` | `fd1989a096a3` | 0 | behind 64, ahead 0 |
 | `agent-systems-benchmark-native-capacity-controller` | `feature/native-capacity-controller` | `28f30eea80ef` | 0 | behind 0, ahead 3 |
