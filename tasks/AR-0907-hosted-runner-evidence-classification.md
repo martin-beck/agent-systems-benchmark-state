@@ -8,7 +8,7 @@
     "AR-0848"
   ],
   "id": "AR-0907",
-  "next_action": "Hold unpublished 32a8fe5b1bc0a1b84a876c077835f1b9d2a9be19 for fresh independent immutable review; publish only after approval and fresh exact-head CI.",
+  "next_action": "Monitor PR #123 exact head 32a8fe5b1bc0a1b84a876c077835f1b9d2a9be19; do not merge until every required check is terminal success and coordinator authorizes.",
   "observed_branch": "fix/hosted-runner-evidence-classification",
   "observed_dirty": 0,
   "observed_head": "32a8fe5b1bc0a1b84a876c077835f1b9d2a9be19",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T18:05:46+00:00",
+  "updated_at": "2026-09-09T18:06:17+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -297,3 +297,10 @@ patch release has advanced.
 
 - 2026-09-09T18:05:46+00:00: Recorded command exit 0; command argv SHA-256
   953720488329ed77ce90cd844e360b56cc90e54f4dc86342d4c3c1d0e9710f06.
+
+- 2026-09-09T18:06:17+00:00: Published independently approved immutable AR-0907 candidate unchanged
+  as PR #123. Live PR base b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b and exact head
+  32a8fe5b1bc0a1b84a876c077835f1b9d2a9be19. Fresh hosted CI started: AWQ and exact source headers
+  already success; Rust, repository quality, platform evidence, emulated aarch64,
+  fault/fuzz/matcher, TLC/Alloy/Kani/Loom remain queued or in progress. MergeStateStatus UNSTABLE
+  solely while checks run. No tree mutation.
