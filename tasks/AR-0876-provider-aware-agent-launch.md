@@ -15,7 +15,7 @@
     "AR-0869"
   ],
   "id": "AR-0876",
-  "next_action": "Monitor PR #93 exact-head CI at 7c9daf7; preempt on failure and repair same branch.",
+  "next_action": "Create signed+DCO replacement merge from dca243a + 7c9daf7, guarded force-with-lease origin/main 716a8f1, then rerun postmerge gates.",
   "observed_branch": "feature/provider-aware-agent-launch",
   "observed_dirty": 0,
   "observed_head": "7c9daf795b02d1692e87a6be4d0087c163050ad3",
@@ -25,9 +25,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply validated provider selections at the authoritative agent launch boundary and reject conflicting runtime configuration.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Wire provider-aware agent launches",
-  "updated_at": "2026-09-09T01:13:06+00:00",
+  "updated_at": "2026-09-09T01:14:16+00:00",
   "worktree_key": "agent-systems-benchmark-provider-aware-agent-launch"
 }
 ---
@@ -230,3 +230,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T01:13:06+00:00: Recorded command exit 0; command argv SHA-256
   869f4fe8ee37b442566fc225cad27f94cc1c35052ac8bd5144bf13cfedf230cc.
+
+- 2026-09-09T01:14:16+00:00: Post-merge exact-main policy workflow failed on merge commit 716a8f1:
+  repository_policy.py reported no matching Signed-off-by trailer. All PR #93 exact-head checks were
+  green; this is an integration-boundary defect. Release is preempted. Repair must replace only the
+  merge boundary with a signed+DCO no-ff merge using guarded force-with-lease, then rerun exact-main
+  postmerge workflows.
