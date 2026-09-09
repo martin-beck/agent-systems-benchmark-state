@@ -2,7 +2,7 @@
 {
   "branch": "feature/tla-source-build-provenance",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T07:15:50+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003",
     "AR-0901",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/tla-source-build-provenance",
   "observed_dirty": 0,
   "observed_head": "7ae562dbb15a686f3e1ef304de0fd5dfbeb0613b",
-  "owner": "replay_20260906",
+  "owner": "",
   "plan": "../plans/AR-0878.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 238,
+  "task_revision": 239,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T06:56:03+00:00",
+  "updated_at": "2026-09-09T06:56:47+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -823,3 +823,12 @@ Implementation has not started. Read the linked plan before claiming.
   34320597223, headers 34320597248, emulated aarch64 34320597244. Local postmerge focused provenance
   tests 4/4 and mutation sentinels 7/7 pass; exact main worktree is clean and remote main equals
   0fbec95d.
+
+- 2026-09-09T06:56:47+00:00: Completed AR-0878. PR #105 exact head
+  7ae562dbb15a686f3e1ef304de0fd5dfbeb0613b passed all hosted checks including Kani.
+  Coordinator-authorized SSH-signed+DCO replacement merge 66659cc2ab74362d01e1134f5099b9f5b14fbc8b
+  preserves exact approved tree ee763d09fba2119c88f3e6b30a22e8f8d3c570d3 and parents; signed+DCO
+  empty trigger 0fbec95d2154cfa3efd522a0a49e98d492b77a22 preserves that tree. Exact-main runs
+  34320597218, 34320597215, 34320597235, 34320597223, 34320597248, and 34320597244 all succeeded.
+  Local focused source-provenance tests passed 4/4 and mutation sentinels caught 7/7; clean tree,
+  snapshot, and live doctor verified.
