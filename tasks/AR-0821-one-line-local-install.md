@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Turn a single documented command into a safe guided local ASB and TUI first run.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Add guided one-line local installation",
-  "updated_at": "2026-09-09T06:44:51+00:00",
+  "updated_at": "2026-09-09T06:44:54+00:00",
   "worktree_key": "agent-systems-benchmark-one-line-install"
 }
 ---
@@ -145,3 +145,6 @@ Implementation has not started. Read the linked plan before claiming.
   620d26947dff60b073b112a05404ba14b3a32182d8603ffb9e8931788a262fc1.
 
 - 2026-09-09T06:44:51+00:00: Heartbeat by codex-longrun-one-line-install-20260909.
+
+- 2026-09-09T06:44:54+00:00: Recorded command exit 1; command argv SHA-256
+  c3c73ee80d5a6bedce0105e3f891dcade7b066f654ab1861ff9718d4cd290363.
