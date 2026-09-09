@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0704",
-  "next_action": "Independent review of 5a0570f; then add native cell/resource/boot evidence before AR completion.",
+  "next_action": "Independent immutable review of d47f503; do not publish before approval.",
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "d47f5031394e2390867aa750caf9494a8b81e36f",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-09T13:05:32+00:00",
+  "updated_at": "2026-09-09T13:06:01+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -199,3 +199,17 @@ must not block this AR or its dependents.
 
 - 2026-09-09T13:05:32+00:00: Recorded command exit 0; command argv SHA-256
   7c61011b91e77ce2a5f1477e3b4d6a3e748ff28408c6327e1b19f9551c1da508.
+
+- 2026-09-09T13:06:01+00:00: Repaired all four independent-review blockers in signed successor
+  d47f5031394e2390867aa750caf9494a8b81e36f (tree effe89538a5b586df695dc6beb957fba30dc4d82, parent
+  5a0570fbce2fa77ab4baf6b34d2632d289a5ab36). Exact two-path scope remains
+  tools/capacity/lifecycle.py and tests/capacity/test_lifecycle.py. State and cleanup schemas now
+  require exact integers and reject unhashable state values as CapacityError; CLI lease time comes
+  only from the process clock and no longer accepts --now; reconciliation requires a private
+  no-follow canonical receipt bound to capacity/owner/revision/time plus an actually read teardown
+  artifact whose SHA-256 matches. Hostile tests cover bools, state list, expired trusted time,
+  unsafe evidence mode, and digest mismatch without ledger mutation. Postcommit: focused unittest
+  14/14, source-header unittest 18/18, Ruff format/lint, strict mypy, diff-check, exact scope, clean
+  tree and private-identifier grep pass. Both commits have valid matching SSH signatures/DCO;
+  Gitleaks scanned both commits/51.33 KB with no leaks. AR remains unpublished and in progress
+  pending independent review and later native cell/resource/boot evidence.

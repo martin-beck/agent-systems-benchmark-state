@@ -931,7 +931,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | contracts_20260906 | Control genuine native platform capacity lifecycle. | Independent review of 5a0570f; then add native cell/resource/boot evidence before AR completion. |
+| P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | contracts_20260906 | Control genuine native platform capacity lifecycle. | Independent immutable review of d47f503; do not publish before approval. |
 
 ### Open (2)
 
