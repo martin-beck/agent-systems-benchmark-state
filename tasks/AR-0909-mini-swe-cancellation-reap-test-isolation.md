@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Stress the identity-bound embedded test serially and in parallel, add private-root cleanup negatives, then run full gates.",
+  "next_action": "Hold immutable 42fe459 for independent review; publish only after approval and fresh exact-head CI.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "42fe45966a0b213e5d85f8f16604c4885e2a3dba",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-09T23:29:39+00:00",
+  "updated_at": "2026-09-09T23:30:17+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -167,3 +167,16 @@ classified.
 
 - 2026-09-09T23:29:39+00:00: Recorded command exit 0; command argv SHA-256
   dc46ea147bf73c5bfe729414765d050309a11af85efa09c4346a4ae383b779d0.
+
+- 2026-09-09T23:30:17+00:00: Immutable candidate 42fe45966a0b213e5d85f8f16604c4885e2a3dba, tree
+  806d27e116595f5f3c9417a55c6b6e3f331942a2, exact parent b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b is
+  clean, one-path embedded cfg(test) scope, SSH-signed and DCO-valid. Original PR126 coverage
+  failure remained unreproduced under exact full coverage. Final evidence: mini_swe 22/22;
+  cancellation 20 serial plus 16 concurrent; private-root symlink/unsafe-mode/replacement and
+  malformed/oversized/reused/non-owned identity negatives green; full workspace fmt, clippy -D
+  warnings, tests, rustdoc, release and exact coverage green; contract/failure/artifact/platform
+  4+7+4+4+2+5+17+6+46 green; repository policy, actionlint, zizmor, Gitleaks, cargo-deny and
+  cargo-audit green. A temporary added session-leader assertion correctly failed because production
+  owns the descendant process group but does not create a new session; it was reverted before the
+  candidate, while session identity remains captured and immutable. Linux proc evidence does not
+  claim ASB reaps a zombie owned by another reaper.

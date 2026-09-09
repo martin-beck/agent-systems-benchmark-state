@@ -991,7 +991,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0897](tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | replay_20260906 | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Monitor PR 126 exact-head CI; investigate terminal failures without changing bd6f450. |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | contracts_20260906 | Qualify pinned OpenJiuwen live execution. | Monitor PR 124 exact-head CI; inspect terminal failures without changing cceb76f. |
-| P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | quality_20260906 | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Stress the identity-bound embedded test serially and in parallel, add private-root cleanup negatives, then run full gates. |
+| P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | quality_20260906 | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Hold immutable 42fe459 for independent review; publish only after approval and fresh exact-head CI. |
 
 ### Open (4)
 
