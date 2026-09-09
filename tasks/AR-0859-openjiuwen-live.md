@@ -7,7 +7,7 @@
     "AR-0858"
   ],
   "id": "AR-0859",
-  "next_action": "Independent immutable review of b75e2fb; keep live support fail closed pending approval.",
+  "next_action": "Fresh immutable review of e407748; keep support fail closed and do not publish.",
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "e4077483eb04f2f3f2b7f1ac48e28dafb8c51b11",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 173,
+  "task_revision": 174,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T18:16:55+00:00",
+  "updated_at": "2026-09-09T18:19:16+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -562,3 +562,22 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-09T18:16:55+00:00: Recorded command exit 0; command argv SHA-256
   72bb4e81bb7887b8577ef6178a7c1ca3efa6c66674fbe8dac04d76cf858cce46.
+
+- 2026-09-09T18:19:16+00:00: Repair candidate e4077483eb04f2f3f2b7f1ac48e28dafb8c51b11 (tree
+  3be6d77ca6bff5ab30cf07378a4e12380ac86fbf, parent b75e2fb31bd9ab569de4363b6d7afae34579184d) is
+  SSH-signed and DCO-trailered with a clean exact three-path delta. It preserves the prior candidate
+  while adding fail-closed entrypoint, shebang, interpreter, runtime-root, wheel, and exact
+  170-package RECORD closure attestation (21,259 hashed installed files and 2,430 wheel RECORD
+  rows); a valid-wheel arbitrary-executable negative; bounded 1 MiB stdout/stderr capture and
+  oversize negative; agent-emitted parsed usage assertions; PID-namespace containment and a setsid
+  child-escape negative; and ambient, config, scratch, private-path, user, and machine privacy
+  sentinels. Green on the exact candidate: credential-free network-denied bwrap live suite 8/8;
+  local negatives 3/3; fmt; focused and pinned Rust 1.93 workspace Clippy with warnings denied;
+  workspace tests; rustdoc with warnings denied; release build; formal Cargo/Loom/production tests;
+  TLC/Alloy positive and mutation models; repository policy exact base..head; contract tests;
+  actionlint; zizmor; redacted Gitleaks; cargo-deny; cargo-audit --no-fetch; mutation sentinels 7/7
+  caught; final diff-check, privacy scan, signature, DCO, clean tree, and exact scope. Initial
+  verifier variable shadowing and an obsolete cached TLC jar were operator/environment failures
+  repaired before these green reruns. Prior exact-parent Kani, coverage, and bounded fuzz evidence
+  remains applicable because this repair changes only the three owned integration-test fixture
+  paths; hosted exact-head rerun remains required after review.
