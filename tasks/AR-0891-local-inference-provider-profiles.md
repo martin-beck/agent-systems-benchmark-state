@@ -12,17 +12,17 @@
   "id": "AR-0891",
   "next_action": "Repair the exact-head policy failure in PR #114: Gitleaks false-positive on the public tokenizer content digest. Verify the narrow repository config and rerun the full exact-head suite before merging.",
   "observed_branch": "feat/local-inference-provider-profiles",
-  "observed_dirty": 1,
-  "observed_head": "91b728d4307ee7feaac893b4ebb323dbdf624ad4",
+  "observed_dirty": 0,
+  "observed_head": "9bc7fe7f91efd491d42da3961ba09d832857d361",
   "owner": "codex-longrun-local-inference-profiles-20260909",
   "plan": "../plans/AR-0891.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server.",
-  "task_revision": 88,
+  "task_revision": 89,
   "title": "Qualify local inference provider profiles",
-  "updated_at": "2026-09-09T09:24:22+00:00",
+  "updated_at": "2026-09-09T09:24:29+00:00",
   "worktree_key": "agent-systems-benchmark-local-inference-provider-profiles"
 }
 ---
