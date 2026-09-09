@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Measure deterministic LLM test doubles against one hostile ASB protocol and isolation suite before selecting any dependency.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Spike deterministic LLM double conformance",
-  "updated_at": "2026-09-09T08:02:10+00:00",
+  "updated_at": "2026-09-09T08:02:24+00:00",
   "worktree_key": "agent-systems-benchmark-llm-double-conformance-spike"
 }
 ---
@@ -44,3 +44,6 @@ Evaluate MockAgents, CopilotKit aimock, larsakerlund/llmock, and piyook/llm-mock
   rate-limit/truncation/unmatched faults, deterministic repeat hashes, loopback-only/no-credential
   privacy checks, explicit untested candidate matrix, and focused tests. unittest (3), Ruff, strict
   mypy, and diff-check pass.
+
+- 2026-09-09T08:02:24+00:00: Recorded command exit 0; command argv SHA-256
+  5104cb17e012db427a6f20aec347ad52d6a32510981321d293c2e642860bc6d8.
