@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**170 ARs tracked** across 6 active status categories.
+**171 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 6 |
-| **Planned** | Defined work awaiting promotion or dependencies | 41 |
+| **Planned** | Defined work awaiting promotion or dependencies | 42 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 118 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -217,6 +217,7 @@ flowchart LR
         AR_0904["AR-0904 - Done"]:::status_done
         AR_0905["AR-0905 - Done"]:::status_done
         AR_0906["AR-0906 - Blocked"]:::status_blocked
+        AR_0907["AR-0907 - Planned"]:::status_planned
     end
     subgraph series_10["10 - Reliability and release"]
         direction TB
@@ -580,6 +581,7 @@ flowchart LR
     AR_0702 --> AR_0813
     AR_0702 --> AR_0816
     AR_0702 --> AR_0903
+    AR_0702 --> AR_0907
     AR_0702 --> AR_1006
     AR_0704 --> AR_0705
     AR_0704 --> AR_0706
@@ -686,6 +688,7 @@ flowchart LR
     AR_0843 --> AR_0844
     AR_0844 --> AR_0870
     AR_0845 --> AR_0846
+    AR_0848 --> AR_0907
     AR_0855 --> AR_0857
     AR_0855 --> AR_0863
     AR_0857 --> AR_0858
@@ -842,7 +845,7 @@ flowchart LR
 | [AR-0603](tasks/AR-0603-csb-execution-assurance.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0104](tasks/AR-0104-durable-results.md) | [AR-0601](tasks/AR-0601-csb-integration.md) |
 | [AR-0604](tasks/AR-0604-csb-native-qualification.md) | [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0202](tasks/AR-0202-kernel-diagnostics.md), [AR-0601](tasks/AR-0601-csb-integration.md) | [AR-0602](tasks/AR-0602-csb-monitoring-contention.md) |
 | [AR-0701](tasks/AR-0701-platform-manifests.md) | [AR-0001](tasks/AR-0001-repository-bootstrap.md) | [AR-0317](tasks/AR-0317-runtime-bundle-manifest.md), [AR-0702](tasks/AR-0702-native-platforms.md), [AR-0703](tasks/AR-0703-native-platform-lab.md), [AR-0704](tasks/AR-0704-native-capacity-controller.md), [AR-0707](tasks/AR-0707-emulated-aarch64-portability.md), [AR-0820](tasks/AR-0820-verifiable-install-artifacts.md), [AR-0848](tasks/AR-0848-native-x86-capacity.md), [AR-1007](tasks/AR-1007-benchmark-validity.md) |
-| [AR-0702](tasks/AR-0702-native-platforms.md) | [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0701](tasks/AR-0701-platform-manifests.md) | [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0813](tasks/AR-0813-remote-control-transport.md), [AR-0816](tasks/AR-0816-cross-platform-remote-interoperability.md), [AR-0903](tasks/AR-0903-release-qualification.md), [AR-1006](tasks/AR-1006-distributed-workers.md) |
+| [AR-0702](tasks/AR-0702-native-platforms.md) | [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0701](tasks/AR-0701-platform-manifests.md) | [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0813](tasks/AR-0813-remote-control-transport.md), [AR-0816](tasks/AR-0816-cross-platform-remote-interoperability.md), [AR-0903](tasks/AR-0903-release-qualification.md), [AR-0907](tasks/AR-0907-hosted-runner-evidence-classification.md), [AR-1006](tasks/AR-1006-distributed-workers.md) |
 | [AR-0703](tasks/AR-0703-native-platform-lab.md) | [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0701](tasks/AR-0701-platform-manifests.md) | None |
 | [AR-0704](tasks/AR-0704-native-capacity-controller.md) | [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0701](tasks/AR-0701-platform-manifests.md) | [AR-0705](tasks/AR-0705-native-debian-capacity.md), [AR-0706](tasks/AR-0706-native-openeuler-capacity.md) |
 | [AR-0705](tasks/AR-0705-native-debian-capacity.md) | [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0704](tasks/AR-0704-native-capacity-controller.md) | None |
@@ -887,7 +890,7 @@ flowchart LR
 | [AR-0845](tasks/AR-0845-ci-artifact-quota-resilience.md) | [AR-0003](tasks/AR-0003-quality-gates.md), [AR-0831](tasks/AR-0831-aiws-workflow-routing.md) | [AR-0846](tasks/AR-0846-artifact-retention-cleanup.md) |
 | [AR-0846](tasks/AR-0846-artifact-retention-cleanup.md) | [AR-0845](tasks/AR-0845-ci-artifact-quota-resilience.md), [AR-0903](tasks/AR-0903-release-qualification.md) | None |
 | [AR-0847](tasks/AR-0847-frontend-control-api-repair.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0801](tasks/AR-0801-terminal-interface.md) | None |
-| [AR-0848](tasks/AR-0848-native-x86-capacity.md) | [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0701](tasks/AR-0701-platform-manifests.md) | None |
+| [AR-0848](tasks/AR-0848-native-x86-capacity.md) | [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0701](tasks/AR-0701-platform-manifests.md) | [AR-0907](tasks/AR-0907-hosted-runner-evidence-classification.md) |
 | [AR-0849](tasks/AR-0849-ar0801-documentation-repair.md) | [AR-0004](tasks/AR-0004-ar-status-document.md), [AR-0801](tasks/AR-0801-terminal-interface.md) | None |
 | [AR-0850](tasks/AR-0850-aider-deterministic-replay.md) | [AR-0303](tasks/AR-0303-agent-aider.md), [AR-0508](tasks/AR-0508-replay-aider.md) | None |
 | [AR-0851](tasks/AR-0851-shared-workflow-coordinator.md) | None | None |
@@ -938,6 +941,7 @@ flowchart LR
 | [AR-0904](tasks/AR-0904-contract-consistency.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-1001](tasks/AR-1001-experiment-comparability.md) | None |
 | [AR-0905](tasks/AR-0905-recovery-models.md) | [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0503](tasks/AR-0503-strict-replay.md) | None |
 | [AR-0906](tasks/AR-0906-portable-oci-build-image-identity.md) | [AR-0003](tasks/AR-0003-quality-gates.md), [AR-0878](tasks/AR-0878-tla-source-build-provenance.md), [AR-0901](tasks/AR-0901-formal-assurance.md), [AR-0902](tasks/AR-0902-fault-assurance.md) | [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md) |
+| [AR-0907](tasks/AR-0907-hosted-runner-evidence-classification.md) | [AR-0702](tasks/AR-0702-native-platforms.md), [AR-0848](tasks/AR-0848-native-x86-capacity.md) | None |
 | [AR-1001](tasks/AR-1001-experiment-comparability.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0203](tasks/AR-0203-statistical-analysis.md) | [AR-0310](tasks/AR-0310-provider-profile-contract.md), [AR-0806](tasks/AR-0806-tui-history-analysis.md), [AR-0875](tasks/AR-0875-control-history-analysis-contract.md), [AR-0904](tasks/AR-0904-contract-consistency.md), [AR-1006](tasks/AR-1006-distributed-workers.md), [AR-1007](tasks/AR-1007-benchmark-validity.md) |
 | [AR-1002](tasks/AR-1002-verifier-integrity.md) | [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0401](tasks/AR-0401-engineering-workloads.md) | [AR-0405](tasks/AR-0405-performance-workloads.md) |
 | [AR-1003](tasks/AR-1003-execution-budgets.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0301](tasks/AR-0301-agent-opencode.md), [AR-0302](tasks/AR-0302-agent-opendesk.md), [AR-0303](tasks/AR-0303-agent-aider.md), [AR-0304](tasks/AR-0304-agent-codex.md) | None |
@@ -974,7 +978,7 @@ flowchart LR
 | P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Unclaimed | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun failed Repository quality workflow 34339927858 on unchanged main; if failure repeats, isolate and repair test-state ownership before any feature work. |
 | P1 | [AR-0906](tasks/AR-0906-portable-oci-build-image-identity.md): Verify formal OCI build identity portably | Unclaimed | Make deterministic formal source builds verify OCI image identity portably across Docker engines. | Combined PR #122 proves formal/emulated paths; hold all PRs while native Ubuntu runner-release mismatch is repaired or classified. |
 
-### Planned (41)
+### Planned (42)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1014,6 +1018,7 @@ flowchart LR
 | P1 | [AR-0892](tasks/AR-0892-llm-mode-comparative-evidence.md): Compare LLM test and inference evidence modes | Unclaimed | Quantify what each LLM execution mode proves without pooling unlike evidence or hiding harness saturation. | Execute balanced synthetic, strict replay, local inference, and remote live comparisons and publish bounded claims and capacity evidence. |
 | P1 | [AR-0893](tasks/AR-0893-cli-local-llm-setup.md): Document CLI setup for LLM doubles and local inference | Unclaimed | Provide executable beginner-safe CLI workflows for negotiated LLM modes without claiming unfinished TUI parity. | Add concise CLI setup, preflight, run, inspect, compare, and teardown workflows only for exact supported mock and local profiles. |
 | P1 | [AR-0894](tasks/AR-0894-tui-local-llm-parity.md): Add TUI parity for supported LLM modes | Unclaimed | Add tested TUI parity for supported LLM setup and diagnostics only after CLI and existing TUI evidence are stable. | After CLI and existing TUI CI-evidence dependencies complete, implement discoverable TUI parity for negotiated supported profiles and modes. |
+| P1 | [AR-0907](tasks/AR-0907-hosted-runner-evidence-classification.md): Classify hosted runner evidence without weakening native qualification | Unclaimed | Separate rolling hosted portability checks from immutable native qualification evidence. | Add a closed hosted-portability schema and conditional workflow boundary while preserving exact native qualification and its 24.04.4 evidence. |
 | P2 | [AR-0602](tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Unclaimed | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit CSB monitoring using native x86_64 oracles and required pinned QEMU AArch64 portable mapping/lifecycle checks; keep native ARM64 counters and performance as optional future evidence. |
 | P2 | [AR-0705](tasks/AR-0705-native-debian-capacity.md): Provide native Debian capacity | Unclaimed | Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 Debian and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-0706](tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
