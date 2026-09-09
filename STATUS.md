@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **Open** | Dependency-ready and available to claim | 3 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
-| **Planned** | Defined work awaiting promotion or dependencies | 47 |
+| **Planned** | Defined work awaiting promotion or dependencies | 46 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 100 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -178,7 +178,7 @@ flowchart LR
         AR_0860["AR-0860 - Planned"]:::status_planned
         AR_0861["AR-0861 - Planned"]:::status_planned
         AR_0862["AR-0862 - Planned"]:::status_planned
-        AR_0863["AR-0863 - Planned"]:::status_planned
+        AR_0863["AR-0863 - Open"]:::status_open
         AR_0864["AR-0864 - Planned"]:::status_planned
         AR_0865["AR-0865 - Planned"]:::status_planned
         AR_0866["AR-0866 - Planned"]:::status_planned
@@ -878,11 +878,12 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | replay_20260906 | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Request one controlled signed rebase of candidate c6aed713 onto current origin/main 9aad1317 (six commits ahead, zero path overlap), preserve exact eight-path range-diff, rerun exact-tree focused/full/formal/privacy/policy/supply gates, then request independent immutable review. Do not publish stale-base candidate. |
 
-### Open (2)
+### Open (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0806](tasks/AR-0806-tui-history-analysis.md): Add terminal history and analysis | Unclaimed | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. | Repair or restore the pinned TLA+ v1.8.0 artifact boundary outside the AR-0806 two-path scope, then rerun exact-head Formal Assurance for PR #89; merge remains held until every required check is green. |
+| P1 | [AR-0863](tasks/AR-0863-workbuddy-provenance.md): Pin WorkBuddy source, package, and license provenance | Unclaimed | Pin WorkBuddy source, package, and license provenance. | Pin official source, package, dependency closure, license, executable digest, protocol mode, and supported platform before any adapter claim. |
 | P1 | [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md): Repair formal TLA artifact availability | Unclaimed | Repair the formal workflow&#x27;s unavailable TLA+ artifact pin without weakening provenance or offline verification. | Hold the four-path acquisition prototype unchanged and obtain an authoritative immutable TLA+ 1.8.0 artifact publication (or coordinator authorization for a separately specified reproducible source-build boundary); then refresh exact metadata once, finish deterministic faults, and run TLC/Alloy. Do not chase the continuously replaced v1.8.0 pre-release asset. |
 
 ### Blocked (5)
@@ -895,7 +896,7 @@ flowchart LR
 | P1 | [AR-0703](tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Provide genuine disposable native hosts for required Debian and openEuler platform qualification. | Obtain explicit provider/account and cost authorization, least-privilege external credentials, quotas, and four genuine disposable Debian 13.6/openEuler 24.03 LTS-SP2 x86_64/aarch64 hosts; then implement reservation/provision/collect/destroy evidence without emulation. |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Monitor exact-main post-merge checks at 2219839 and run local post-merge verification. Retain AR-0202 in progress until genuine privileged native aarch64 evidence is recorded; then complete final review and release. |
 
-### Planned (47)
+### Planned (46)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -932,7 +933,6 @@ flowchart LR
 | P1 | [AR-0860](tasks/AR-0860-openjiuwen-replay.md): Qualify strict OpenJiuwen replay | Unclaimed | Qualify strict OpenJiuwen replay. | Seal the sanitized live capture and prove strict offline replay, causal parity, malformed-record rejection, and zero external network. |
 | P1 | [AR-0861](tasks/AR-0861-openjiuwen-parity.md): Add OpenJiuwen provider parity and support matrix evidence | Unclaimed | Add OpenJiuwen provider parity and support matrix evidence. | Extend exact provider parity and the platform support matrix only for executable-qualified OpenJiuwen combinations under a serialized shared-path fence. |
 | P1 | [AR-0862](tasks/AR-0862-openjiuwen-qualification.md): Independently qualify and document OpenJiuwen support | Unclaimed | Independently qualify and document OpenJiuwen support. | Run independent exact-tree qualification, offline provenance verification, full gates, native evidence, documentation review, and post-merge validation. |
-| P1 | [AR-0863](tasks/AR-0863-workbuddy-provenance.md): Pin WorkBuddy source, package, and license provenance | Unclaimed | Pin WorkBuddy source, package, and license provenance. | Pin official source, package, dependency closure, license, executable digest, protocol mode, and supported platform before any adapter claim. |
 | P1 | [AR-0864](tasks/AR-0864-workbuddy-adapter.md): Implement the WorkBuddy contract and capability adapter | Unclaimed | Implement the WorkBuddy contract and capability adapter. | Implement the bounded agent contract, exact provider translation, and capability registration from the pinned protocol; keep live support unclaimed. |
 | P1 | [AR-0865](tasks/AR-0865-workbuddy-live.md): Qualify pinned WorkBuddy live execution | Unclaimed | Qualify pinned WorkBuddy live execution. | Run the pinned executable against a credential-free loopback provider and prove editing, tools, usage, cancellation, cleanup, and network denial. |
 | P1 | [AR-0866](tasks/AR-0866-workbuddy-replay.md): Qualify strict WorkBuddy replay | Unclaimed | Qualify strict WorkBuddy replay. | Seal the sanitized live capture and prove strict offline replay, causal parity, malformed-record rejection, and zero external network. |
