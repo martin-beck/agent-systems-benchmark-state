@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify one pinned MockAgents executable before deterministic-double CI integration.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-09T09:55:19+00:00",
+  "updated_at": "2026-09-09T09:55:41+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -32,3 +32,6 @@ synthetic fixture for black-box executable evidence.
   development loop.
 
 - 2026-09-09T09:55:19+00:00: Claimed by codex-longrun-mockagents-20260909.
+
+- 2026-09-09T09:55:41+00:00: Recorded command exit 0; command argv SHA-256
+  74fbdb117ae7b36fdab88f7db32e8f5c5cceb95c78e3ace34c70a2284134fb26.
