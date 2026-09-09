@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-09T00:09:38+00:00",
+  "updated_at": "2026-09-09T00:10:21+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
@@ -229,3 +229,6 @@ Implementation has not started. Read the linked plan before claiming.
   5b2236b105a97756a55c7ac64360cb3616ef979f; GitHub reports DIRTY and statusCheckRollup is currently
   empty. Merge/release are held fail-closed. Duplicate-page repair and AR-0875 limitation remain
   preserved.
+
+- 2026-09-09T00:10:21+00:00: Recorded command exit 0; command argv SHA-256
+  1d644840a760ad7aa74acfb369f0e7eb94456b92fb9fe6322ef9d2c80210c43c.
