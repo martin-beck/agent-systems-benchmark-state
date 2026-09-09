@@ -17,7 +17,7 @@ Generated from local Git and GitHub. Do not edit.
 | #123 | `fix/hosted-runner-evidence-classification@f0b7b46db271` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: classify hosted runner evidence honestly |
 | #124 | `feature/openjiuwen-live@cceb76f436f8` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(agents): qualify pinned OpenJiuwen live execution |
 | #125 | `fix/control-state-lock-test-isolation@8b0f9fd07d5d` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(cli): isolate control state roots |
-| #126 | `fix/main-merge-integrity@bd6f450ab877` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | tools: harden signed merge publication |
+| #126 | `fix/main-merge-integrity@bd6f450ab877` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | tools: harden signed merge publication |
 
 ## Recent workflows
 
@@ -26,7 +26,7 @@ Generated from local Git and GitHub. Do not edit.
 | 34406581994 | `bd6f450ab877` | pull_request | Repository quality | completed:failure |
 | 34406581954 | `bd6f450ab877` | pull_request | Fault assurance | completed:success |
 | 34406581867 | `bd6f450ab877` | pull_request | Huawei MIT source headers | completed:success |
-| 34406581827 | `bd6f450ab877` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 34406581827 | `bd6f450ab877` | pull_request | Emulated aarch64 portability | completed:success |
 | 34406581823 | `bd6f450ab877` | pull_request | Formal assurance | completed:failure |
 | 34406581800 | `bd6f450ab877` | pull_request | Native platform evidence | completed:success |
 | 34406581791 | `bd6f450ab877` | pull_request | Rust verification | completed:success |
