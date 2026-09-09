@@ -25,9 +25,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply validated provider selections at the authoritative agent launch boundary and reject conflicting runtime configuration.",
-  "task_revision": 91,
+  "task_revision": 92,
   "title": "Wire provider-aware agent launches",
-  "updated_at": "2026-09-09T01:18:42+00:00",
+  "updated_at": "2026-09-09T01:18:59+00:00",
   "worktree_key": "agent-systems-benchmark-provider-aware-agent-launch"
 }
 ---
@@ -267,3 +267,6 @@ Implementation has not started. Read the linked plan before claiming.
   rev-list follows the bridge second parent. Repairing by dropping that second-parent reference:
   final main will be a signed+DCO normal follow-up parented to valid signed merge bc071fd, with no
   bad commit in the changed range.
+
+- 2026-09-09T01:18:59+00:00: Recorded command exit 0; command argv SHA-256
+  90fe3615c89020060455ac02f26a41f888fc7c61a49b36057b77b12ccfeacf9e.
