@@ -11,7 +11,7 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #31 | `feature/native-platforms@bdaf9c108226` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #116 | `fix/ar0896-merge-dco@f25fb3199017` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: add DCO trailer after AR-0896 merge |
+| #116 | `fix/ar0896-merge-dco@f25fb3199017` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore: add DCO trailer after AR-0896 merge |
 
 ## Recent workflows
 
@@ -21,7 +21,7 @@ Generated from local Git and GitHub. Do not edit.
 | 34339045187 | `f25fb3199017` | pull_request | Huawei MIT source headers | completed:success |
 | 34339045172 | `f25fb3199017` | pull_request | Repository quality | completed:success |
 | 34339045132 | `f25fb3199017` | pull_request | Rust verification | completed:success |
-| 34339045129 | `f25fb3199017` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 34339045129 | `f25fb3199017` | pull_request | Emulated aarch64 portability | completed:success |
 | 34339045127 | `f25fb3199017` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 34339045121 | `f25fb3199017` | pull_request | Fault assurance | completed:success |
 | 34338913802 | `82d146d5ed7a` | pull_request | Huawei MIT source headers | completed:success |
