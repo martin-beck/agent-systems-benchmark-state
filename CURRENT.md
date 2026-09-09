@@ -7,6 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-0872](tasks/AR-0872-beginner-workflow-documentation.md): Publish beginner workflow documentation | Publish linked beginner workflows for setup, multi-agent runs, progress, comparison, recording, and replay with and without the TUI. | Create the concise beginner workflow hub for equivalent CLI and TUI benchmark journeys. | replay_20260909 |
 | P1 | [AR-0806](tasks/AR-0806-tui-history-analysis.md): Add terminal history and analysis | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. | Repair or restore the pinned TLA+ v1.8.0 artifact boundary outside the AR-0806 two-path scope, then rerun exact-head Formal Assurance for PR #89; merge remains held until every required check is green. | quality_20260906 |
 | P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Wait for a corrected immutable agent-workflow-coordinator v0.3.3+ release whose privacy exemption admits the legitimate session-like UUID fixture in vendored tests/test_sqlite_storage.py; then re-sync from a clean verified tag and continue state-owned header/checker/CI work without patching vendor. | codex-asb-state-headers-v035 |
 | P1 | [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md): Repair formal TLA artifact availability | Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification. | Add deterministic local fake-transport acquisition tests covering metadata/redirect/status/timeout/truncation/concurrency/partial/cache mutations, strengthen redirect validation before body retrieval, then run ShellCheck and preserved TLC/Alloy proofs. | replay_20260906 |
@@ -15,7 +16,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0872](tasks/AR-0872-beginner-workflow-documentation.md): Publish beginner workflow documentation | Publish linked beginner workflows for setup, multi-agent runs, progress, comparison, recording, and replay with and without the TUI. | Create the concise beginner workflow hub for equivalent CLI and TUI benchmark journeys. | - |
 | P2 | [AR-0405](tasks/AR-0405-performance-workloads.md): Add performance and reproducibility workloads | Assess SWE-Perf, SWE-fficiency and CORE-Bench for correctness-preserving optimization and reproducibility. | Audit the six-path fail-closed provenance checkpoint, run the complete applicable quality/privacy gates, and determine whether any suite can advance beyond planned without missing license and native paired-oracle evidence. | - |
 
 ## Blocked

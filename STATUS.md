@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 2 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 48 |
 | **Future** | Deferred roadmap work | 0 |
@@ -187,7 +187,7 @@ flowchart LR
         AR_0869["AR-0869 - Done"]:::status_done
         AR_0870["AR-0870 - Done"]:::status_done
         AR_0871["AR-0871 - Done"]:::status_done
-        AR_0872["AR-0872 - Open"]:::status_open
+        AR_0872["AR-0872 - In progress"]:::status_in_progress
         AR_0873["AR-0873 - Planned"]:::status_planned
         AR_0874["AR-0874 - Planned"]:::status_planned
         AR_0875["AR-0875 - Planned"]:::status_planned
@@ -867,19 +867,19 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-0872](tasks/AR-0872-beginner-workflow-documentation.md): Publish beginner workflow documentation | replay_20260909 | Publish linked beginner workflows for setup, multi-agent runs, progress, comparison, recording, and replay with and without the TUI. | Create the concise beginner workflow hub for equivalent CLI and TUI benchmark journeys. |
 | P1 | [AR-0806](tasks/AR-0806-tui-history-analysis.md): Add terminal history and analysis | quality_20260906 | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. | Repair or restore the pinned TLA+ v1.8.0 artifact boundary outside the AR-0806 two-path scope, then rerun exact-head Formal Assurance for PR #89; merge remains held until every required check is green. |
 | P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | codex-asb-state-headers-v035 | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Wait for a corrected immutable agent-workflow-coordinator v0.3.3+ release whose privacy exemption admits the legitimate session-like UUID fixture in vendored tests/test_sqlite_storage.py; then re-sync from a clean verified tag and continue state-owned header/checker/CI work without patching vendor. |
 | P1 | [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md): Repair formal TLA artifact availability | replay_20260906 | Repair the formal workflow&#x27;s unavailable TLA+ artifact pin without weakening provenance or offline verification. | Add deterministic local fake-transport acquisition tests covering metadata/redirect/status/timeout/truncation/concurrency/partial/cache mutations, strengthen redirect validation before body retrieval, then run ShellCheck and preserved TLC/Alloy proofs. |
 
-### Open (2)
+### Open (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0872](tasks/AR-0872-beginner-workflow-documentation.md): Publish beginner workflow documentation | Unclaimed | Publish linked beginner workflows for setup, multi-agent runs, progress, comparison, recording, and replay with and without the TUI. | Create the concise beginner workflow hub for equivalent CLI and TUI benchmark journeys. |
 | P2 | [AR-0405](tasks/AR-0405-performance-workloads.md): Add performance and reproducibility workloads | Unclaimed | Assess SWE-Perf, SWE-fficiency and CORE-Bench for correctness-preserving optimization and reproducibility. | Audit the six-path fail-closed provenance checkpoint, run the complete applicable quality/privacy gates, and determine whether any suite can advance beyond planned without missing license and native paired-oracle evidence. |
 
 ### Blocked (5)
