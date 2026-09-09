@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-live",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T07:52:16+00:00",
+  "claim_expires": "2026-09-09T08:22:19+00:00",
   "depends_on": [
     "AR-0858"
   ],
@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T06:22:16+00:00",
+  "updated_at": "2026-09-09T06:22:19+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -31,3 +31,5 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   OpenJiuwen qualification phase for explicit claim.
 
 - 2026-09-09T06:22:16+00:00: Claimed by codex-longrun-openjiuwen-live-20260909.
+
+- 2026-09-09T06:22:19+00:00: Heartbeat by codex-longrun-openjiuwen-live-20260909.
