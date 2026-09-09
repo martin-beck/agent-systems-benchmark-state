@@ -4,5 +4,7 @@
 ## AR-0704
 
 Define the credential-isolated reservation/provision/teardown controller for genuine Debian and
-openEuler native cells, including cost ceilings, availability, privacy, boot identity, and evidence.
-No emulation or container substitution satisfies this AR.
+openEuler native x86_64 cells on the authorized development host, including local resource
+ceilings, availability, privacy, boot identity, and evidence. No emulation or container
+substitution satisfies the native x86_64 claim. Native ARM64 is optional future evidence and
+must not block this AR or its dependents.
