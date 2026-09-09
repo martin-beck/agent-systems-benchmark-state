@@ -7,7 +7,7 @@
     "AR-0857"
   ],
   "id": "AR-0880",
-  "next_action": "Fresh immutable review exact candidate b7559931ef79d55ad579546c85ceec2ed5b15790/tree 9660c42cc12c84d91ab3d818a04e1e25bfa352d3/parent cd350831486d22f39e77e04daf2206625f7e4119; if approved, update PR #112 from old remote head 6f6666373d23c833609008448b6a672312e1c6fb with exact force-with-lease, then require fresh exact-head hosted CI before merge.",
+  "next_action": "Durable release and exact-main verification are complete; no further AR-0880 action. AR-0859 owns live loopback qualification.",
   "observed_branch": "fix/openjiuwen-runtime-closure",
   "observed_dirty": 0,
   "observed_head": "b7559931ef79d55ad579546c85ceec2ed5b15790",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "done",
   "summary": "Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification.",
-  "task_revision": 111,
+  "task_revision": 112,
   "title": "Repair OpenJiuwen runtime closure",
-  "updated_at": "2026-09-09T09:30:24+00:00",
+  "updated_at": "2026-09-09T09:54:06+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-runtime-closure"
 }
 ---
