@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 131,
+  "task_revision": 132,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T04:58:07+00:00",
+  "updated_at": "2026-09-09T04:59:33+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -466,3 +466,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T04:58:07+00:00: Recorded command exit 0; command argv SHA-256
   cc49951de09262970d65eee03d5f6822d863274ffa6f415c348e81ce76d873e5.
+
+- 2026-09-09T04:59:33+00:00: Recorded command exit 0; command argv SHA-256
+  4aa668b4aa7ee3c739cb0c6d1a4c46ce59aee0e4442e9d2810f4437c839d5607.
