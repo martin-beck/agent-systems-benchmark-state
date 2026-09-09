@@ -25,9 +25,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply validated provider selections at the authoritative agent launch boundary and reject conflicting runtime configuration.",
-  "task_revision": 88,
+  "task_revision": 89,
   "title": "Wire provider-aware agent launches",
-  "updated_at": "2026-09-09T01:17:14+00:00",
+  "updated_at": "2026-09-09T01:17:33+00:00",
   "worktree_key": "agent-systems-benchmark-provider-aware-agent-launch"
 }
 ---
@@ -256,3 +256,6 @@ Implementation has not started. Read the linked plan before claiming.
   716a8f1: invalid revision range. The working tree and formal/Rust postmerge gates are otherwise
   green/in progress. Preserve both histories and add a signed bridge merge with first parent bc071fd
   so the configured base remains reachable; then rerun exact-main workflows.
+
+- 2026-09-09T01:17:33+00:00: Recorded command exit 0; command argv SHA-256
+  b3fca686654d9ccd6062eacf0fc666e6abcb469ce5d79e7f08b13063231d5d1a.
