@@ -10,17 +10,17 @@
   "id": "AR-0406",
   "next_action": "Evaluate maintenance, licenses and reproducibility before integration.",
   "observed_branch": "feature/evolving-workloads",
-  "observed_dirty": 4,
-  "observed_head": "ecdfae42d5768fc5bc74ea6e3f4d45d8bceb96ff",
+  "observed_dirty": 0,
+  "observed_head": "6bbbf130dd25fe5429168e968f5bb83adc242937",
   "owner": "codex-longrun-evolving-workloads-20260909",
   "plan": "../plans/AR-0406.md",
   "priority": "P3",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Add evolving long-horizon workload sources",
-  "updated_at": "2026-09-09T05:50:18+00:00",
+  "updated_at": "2026-09-09T05:50:23+00:00",
   "worktree_key": "agent-systems-benchmark-evolving-workloads"
 }
 ---
