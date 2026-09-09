@@ -2,7 +2,7 @@
 {
   "branch": "feature/evolving-workloads",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T07:48:04+00:00",
+  "claim_expires": "2026-09-09T07:48:18+00:00",
   "depends_on": [
     "AR-0402",
     "AR-1007"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Add evolving long-horizon workload sources",
-  "updated_at": "2026-09-09T05:48:11+00:00",
+  "updated_at": "2026-09-09T05:48:18+00:00",
   "worktree_key": "agent-systems-benchmark-evolving-workloads"
 }
 ---
@@ -52,3 +52,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T05:48:11+00:00: Recorded command exit 0; command argv SHA-256
   4ef2681e20a3e2bbf8ff3d0e4e7595f060e41a3011a7a7fda7c8caa00b53ae55.
+
+- 2026-09-09T05:48:18+00:00: Heartbeat by codex-longrun-evolving-workloads-20260909.
