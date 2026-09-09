@@ -12,7 +12,7 @@
   "id": "AR-0872",
   "next_action": "Inspect the completed formal job logs and repair only if a reproducible product failure is confirmed; otherwise wait for the workflow terminal state.",
   "observed_branch": "docs/beginner-workflows",
-  "observed_dirty": 0,
+  "observed_dirty": 4,
   "observed_head": "3b0ad66a1cf47dcc7c7a930b85088a07dd5efab4",
   "owner": "replay_20260909",
   "plan": "../plans/AR-0872.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish linked beginner workflows for setup, multi-agent runs, progress, comparison, recording, and replay with and without the TUI.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Publish beginner workflow documentation",
-  "updated_at": "2026-09-09T01:47:08+00:00",
+  "updated_at": "2026-09-09T01:47:15+00:00",
   "worktree_key": "agent-systems-benchmark-beginner-workflows"
 }
 ---
