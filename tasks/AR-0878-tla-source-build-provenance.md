@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0878",
-  "next_action": "Run full locked formal workspace plus Alloy, repository-policy, privacy/Gitleaks, supply and coverage gates; obtain ShellCheck from the authorized pinned quality runner or record its exact unavailable boundary; then sign the exact eight-path candidate for immutable review.",
+  "next_action": "Request one controlled signed rebase of candidate c6aed713 onto current origin/main 9aad1317 (six commits ahead, zero path overlap), preserve exact eight-path range-diff, rerun exact-tree focused/full/formal/privacy/policy/supply gates, then request independent immutable review. Do not publish stale-base candidate.",
   "observed_branch": "feature/tla-source-build-provenance",
   "observed_dirty": 0,
   "observed_head": "c6aed713080c40ff24ec095cb83a1af4ff74d59e",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T03:08:44+00:00",
+  "updated_at": "2026-09-09T03:09:18+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -237,3 +237,18 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T03:08:44+00:00: Recorded command exit 0; command argv SHA-256
   8316e8eeb39dfe6a7718362423fcb1bd937541316752ab59ea2336bf360fdc91.
+
+- 2026-09-09T03:09:18+00:00: Signed+DCO candidate is c6aed713080c40ff24ec095cb83a1af4ff74d59e, tree
+  99b8faaf9cf3c7445bc11ae34bdc4ea56adabbfe, parent af9fb7dcaabc162b13d6ee1e77d8915b6d82df20;
+  worktree clean and exact eight owned paths/696 insertions. Full workspace tests and locked formal
+  suite pass; source-built TLC positive/stale negative and pinned Alloy positive/mutations pass;
+  mutation sentinels found/caught 7/7; fmt, repository policy, Gitleaks, cargo-deny/audit, exact
+  build/verify, concurrency/cancel, and authorized Ubuntu-digest ShellCheck 0.9.0 pass. Focused
+  llvm-cov ran all three tests but reports zero instrumentable Rust regions because the production
+  boundary is shell/Python; no coverage percentage is claimed. Workspace Clippy fails only on six
+  inherited formal/src/recovery.rs field_reassign_with_default findings outside this eight-path
+  diff. Local Kani remains the previously proven incomplete-install environment boundary: cargo-kani
+  0.67.0 internally resolves an absent default Kani-home cargo and fails before proofs; hosted
+  exact-head formal Kani remains required. Fresh fetch shows origin/main 9aad1317, six commits
+  beyond candidate parent with zero changed-path overlap, so candidate is not publishable until an
+  authorized controlled rebase.

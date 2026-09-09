@@ -877,7 +877,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0857](tasks/AR-0857-openjiuwen-provenance.md): Pin OpenJiuwen source, package, and license provenance | replay_20260909 | Pin OpenJiuwen source, package, and license provenance. | Integrate signed no-ff PR #97 onto current main, then run and verify all exact-main post-merge workflows before release. |
-| P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | replay_20260906 | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Run full locked formal workspace plus Alloy, repository-policy, privacy/Gitleaks, supply and coverage gates; obtain ShellCheck from the authorized pinned quality runner or record its exact unavailable boundary; then sign the exact eight-path candidate for immutable review. |
+| P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | replay_20260906 | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Request one controlled signed rebase of candidate c6aed713 onto current origin/main 9aad1317 (six commits ahead, zero path overlap), preserve exact eight-path range-diff, rerun exact-tree focused/full/formal/privacy/policy/supply gates, then request independent immutable review. Do not publish stale-base candidate. |
 
 ### Open (2)
 
