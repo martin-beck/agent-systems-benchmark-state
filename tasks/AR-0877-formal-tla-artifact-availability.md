@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 86,
+  "task_revision": 87,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T14:21:26+00:00",
+  "updated_at": "2026-09-09T14:25:19+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -319,3 +319,6 @@ Implementation has not started. Read the linked plan before claiming.
   replacement mismatch; exit2 was a harness-created tool dir mode; exit127 was an incorrect analyzer
   path; exit1 was a ShellCheck SC2015 finding. All were corrected and superseded. Both commits are
   SSH-signed+DCO; exact-range policy/privacy/diff checks pass. No AR-0704 path changed.
+
+- 2026-09-09T14:25:19+00:00: Recorded command exit 0; command argv SHA-256
+  5f2c46c35f876971ce63ce2adf050be0e17c6196a7dce1165427856a01475a5e.
