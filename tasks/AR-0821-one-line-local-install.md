@@ -12,17 +12,17 @@
   "id": "AR-0821",
   "next_action": "Create the missing declared worktree from exact origin/main, then implement and test the guided installation workflow.",
   "observed_branch": "feature/one-line-local-install",
-  "observed_dirty": 3,
-  "observed_head": "096dc4f275c05ad81772f443b6f22dddfb92da3d",
+  "observed_dirty": 0,
+  "observed_head": "73d07589524f83f3bd9b8cf8387a8f9f9105a12d",
   "owner": "codex-longrun-one-line-install-20260909",
   "plan": "../plans/AR-0821.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Turn a single documented command into a safe guided local ASB and TUI first run.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Add guided one-line local installation",
-  "updated_at": "2026-09-09T06:38:20+00:00",
+  "updated_at": "2026-09-09T06:38:26+00:00",
   "worktree_key": "agent-systems-benchmark-one-line-install"
 }
 ---

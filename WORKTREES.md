@@ -70,8 +70,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-native-platform-lab` | `feature/native-platform-lab` | `b1669203308d` | 0 | behind 215, ahead 0 |
 | `agent-systems-benchmark-native-platforms` | `feature/native-platforms` | `bdaf9c108226` | 0 | behind 235, ahead 17 |
 | `agent-systems-benchmark-native-x86-capacity` | `feature/native-x86-capacity` | `45604cd323c5` | 0 | behind 155, ahead 0 |
-| `agent-systems-benchmark-one-line-install` | `feature/one-line-local-install` | `096dc4f275c0` | 3 | behind 0, ahead 0 |
-| changed files | - | - | - | `docs/workflows/cli-first-run.md`, `tests/install/`, `tools/install/` |
+| `agent-systems-benchmark-one-line-install` | `feature/one-line-local-install` | `73d07589524f` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-opendesk-strict-replay-http-compatibility` | `feature/opendesk-strict-replay-http-compatibility` | `f26216bde125` | 0 | behind 195, ahead 0 |
 | `agent-systems-benchmark-openjiuwen-adapter` | `feature/openjiuwen-adapter` | `43ceb0f1bf8b` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-openjiuwen-live` | `feature/openjiuwen-live` | `096dc4f275c0` | 0 | behind 0, ahead 0 |
