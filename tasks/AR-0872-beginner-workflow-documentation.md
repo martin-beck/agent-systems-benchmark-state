@@ -11,15 +11,18 @@
   ],
   "id": "AR-0872",
   "next_action": "Create the concise beginner workflow hub for equivalent CLI and TUI benchmark journeys.",
+  "observed_branch": "docs/beginner-workflows",
+  "observed_dirty": 0,
+  "observed_head": "f2028d71eb59e85e2175294cb9fa55844fcd0a20",
   "owner": "replay_20260909",
   "plan": "../plans/AR-0872.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish linked beginner workflows for setup, multi-agent runs, progress, comparison, recording, and replay with and without the TUI.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Publish beginner workflow documentation",
-  "updated_at": "2026-09-09T01:28:55+00:00",
+  "updated_at": "2026-09-09T01:29:01+00:00",
   "worktree_key": "agent-systems-benchmark-beginner-workflows"
 }
 ---
