@@ -8,7 +8,7 @@
     "AR-0889"
   ],
   "id": "AR-0896",
-  "next_action": "Publish one signed no-op parented on 5f7d631 via normal fast-forward, then verify fresh exact-main gates with reachable before SHA.",
+  "next_action": "Wait for fresh six exact-main workflows on a4e1a9d; then release or continue hostile qualification.",
   "observed_branch": "test/mockagents-executable-qualification",
   "observed_dirty": 0,
   "observed_head": "3f1de4106adf9ad6c34759638d70e9001709ab0a",
@@ -17,10 +17,10 @@
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Post-rewrite policy run failed because GitHub retained unreachable old base SHA; advancing main with signed no-op to establish reachable range.",
-  "task_revision": 33,
+  "summary": "Reachable signed DCO fast-forward a4e1a9d published; exact-main verification triggered.",
+  "task_revision": 34,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-09T10:23:10+00:00",
+  "updated_at": "2026-09-09T10:23:33+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -128,3 +128,7 @@ synthetic fixture for black-box executable evidence.
 
 - 2026-09-09T10:23:10+00:00: Recorded command exit 0; command argv SHA-256
   982f97fcdf79769c5715c90cd56c9d81f8d59ee769769236194e3651eea54dcd.
+
+- 2026-09-09T10:23:33+00:00: Published signed no-op a4e1a9de985a4c9f22628c6d604a6e62f4f173e3
+  parented on 5f7d631 with force-with-lease expected 5f7d631. This preserves product tree and makes
+  the CI before SHA reachable after the required history repair.
