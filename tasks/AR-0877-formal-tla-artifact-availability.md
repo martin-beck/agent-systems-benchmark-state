@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T13:44:28+00:00",
+  "updated_at": "2026-09-09T13:45:28+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -188,3 +188,6 @@ Implementation has not started. Read the linked plan before claiming.
   pass. Earlier focused failures were harness assertions and one shell local-initialization bug;
   both are repaired and superseded by green results. No AR-0704 path changed and no mutable v1.8.0
   digest was repinned.
+
+- 2026-09-09T13:45:28+00:00: Recorded command exit 101; command argv SHA-256
+  b355aeb118f5bbd4d6cb86d0cc7884e14ad3040a8189010b68503f51c12e384b.
