@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Qualify pinned OpenJiuwen live execution. | Refresh the clean declared feature/openjiuwen-live worktree from exact product origin/main 2a85872285e6de374e7ea48e3b062e4134bec49e without losing preserved evidence, then implement only the three owned live-test fixture paths and execute the credential-free loopback edit/tool/usage/cancellation/cleanup/network-denial qualification. Keep support fail closed until executable evidence passes. | replay_20260906 |
-| P1 | [AR-0891](tasks/AR-0891-local-inference-provider-profiles.md): Qualify local inference provider profiles | Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server. | Rebase PR #114 branch onto current origin/main 2a85872285e6de374e7ea48e3b062e4134bec49e2 (PR #112 merged during CI), rerun exact-head checks, then signed no-ff merge. | codex-longrun-local-inference-profiles-20260909 |
+| P1 | [AR-0891](tasks/AR-0891-local-inference-provider-profiles.md): Qualify local inference provider profiles | Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server. | Merge PR #114 at rebased exact head eed49592617a0a712482d4a341ae7b1f802fe04f onto current main 2a85872285e6de374e7ea48e3b062e4134bec49e2, then run post-merge exact-main verification. | codex-longrun-local-inference-profiles-20260909 |
 
 ## Blocked
 

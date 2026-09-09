@@ -10,7 +10,7 @@
     "AR-0315"
   ],
   "id": "AR-0891",
-  "next_action": "Rebase PR #114 branch onto current origin/main 2a85872285e6de374e7ea48e3b062e4134bec49e2 (PR #112 merged during CI), rerun exact-head checks, then signed no-ff merge.",
+  "next_action": "Merge PR #114 at rebased exact head eed49592617a0a712482d4a341ae7b1f802fe04f onto current main 2a85872285e6de374e7ea48e3b062e4134bec49e2, then run post-merge exact-main verification.",
   "observed_branch": "feat/local-inference-provider-profiles",
   "observed_dirty": 0,
   "observed_head": "eed49592617a0a712482d4a341ae7b1f802fe04f",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server.",
-  "task_revision": 108,
+  "task_revision": 109,
   "title": "Qualify local inference provider profiles",
-  "updated_at": "2026-09-09T09:39:46+00:00",
+  "updated_at": "2026-09-09T09:39:48+00:00",
   "worktree_key": "agent-systems-benchmark-local-inference-provider-profiles"
 }
 ---
@@ -271,3 +271,7 @@ Use exact Ollama, llama.cpp, vLLM and LocalAI sources in `docs/LOCAL_LLM_TESTING
 - 2026-09-09T09:38:03+00:00: Heartbeat by codex-longrun-local-inference-profiles-20260909.
 
 - 2026-09-09T09:39:46+00:00: Heartbeat by codex-longrun-local-inference-profiles-20260909.
+
+- 2026-09-09T09:39:48+00:00: Rebased PR #114 after concurrent PR #112 advanced main. Exact-head CI
+  on eed49592617a0a712482d4a341ae7b1f802fe04f is fully green across all 14 checks; the prior
+  Gitleaks false positive remains repaired by the narrow allowlist.
