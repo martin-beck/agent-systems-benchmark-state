@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use configured SSH hosts as the safe default path to a remote runner and help establish dedicated key authentication.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Add SSH remote discovery and bootstrap",
-  "updated_at": "2026-09-09T03:26:16+00:00",
+  "updated_at": "2026-09-09T03:26:36+00:00",
   "worktree_key": "agent-systems-benchmark-ssh-remote-bootstrap"
 }
 ---
@@ -57,3 +57,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T03:26:16+00:00: Recorded command exit 0; command argv SHA-256
   982c6010a9b918a95c06425d6471d37241d9b94995e2360aac238c600bdbc46b.
+
+- 2026-09-09T03:26:36+00:00: Recorded command exit 0; command argv SHA-256
+  5209e70e0d76346940af636c3e9914e31692bd2d3fef2b2fa10d4f995c3aa76b.
