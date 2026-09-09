@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 193,
+  "task_revision": 194,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T18:55:34+00:00",
+  "updated_at": "2026-09-09T18:59:34+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -657,3 +657,6 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   policy including workspace lines above 90 and replay 97.84% lines/95.13% regions; final clean
   tree, exact three-path cumulative scope, signature, DCO, and diff check. No PR update or rerun
   performed pending fresh review.
+
+- 2026-09-09T18:59:34+00:00: Recorded command exit 0; command argv SHA-256
+  51b0c02d34437c4e89a407414874f2c2718bc019d2396814f212364d25227372.
