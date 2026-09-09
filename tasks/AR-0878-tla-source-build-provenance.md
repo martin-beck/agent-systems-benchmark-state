@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T03:09:18+00:00",
+  "updated_at": "2026-09-09T03:19:50+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -252,3 +252,6 @@ Implementation has not started. Read the linked plan before claiming.
   exact-head formal Kani remains required. Fresh fetch shows origin/main 9aad1317, six commits
   beyond candidate parent with zero changed-path overlap, so candidate is not publishable until an
   authorized controlled rebase.
+
+- 2026-09-09T03:19:50+00:00: Recorded command exit 0; command argv SHA-256
+  8dd7a398b1e7449ac828a2e1cc3e6a9e1a784137bf3acb7edc42c3cbb9a3d42f.
