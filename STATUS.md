@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 5 |
+| **Open** | Dependency-ready and available to claim | 6 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 6 |
-| **Planned** | Defined work awaiting promotion or dependencies | 43 |
+| **Planned** | Defined work awaiting promotion or dependencies | 42 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 119 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -231,7 +231,7 @@ flowchart LR
         AR_1006["AR-1006 - Planned"]:::status_planned
         AR_1007["AR-1007 - Done"]:::status_done
         AR_1008["AR-1008 - Done"]:::status_done
-        AR_1010["AR-1010 - Planned"]:::status_planned
+        AR_1010["AR-1010 - Open"]:::status_open
         AR_1011["AR-1011 - Planned"]:::status_planned
         AR_1012["AR-1012 - Planned"]:::status_planned
     end
@@ -992,11 +992,12 @@ flowchart LR
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | contracts_20260906 | Qualify pinned OpenJiuwen live execution. | Monitor PR 124 exact-head CI; inspect terminal failures without changing cceb76f. |
 | P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | quality_20260906 | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Hold immutable 42fe459 for independent review; publish only after approval and fresh exact-head CI. |
 
-### Open (5)
+### Open (6)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0897](tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | Unclaimed | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Monitor PR 126 exact-head CI; investigate terminal failures without changing bd6f450. |
+| P0 | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md): Adopt Ratatui/Crossterm TUI foundation | Unclaimed | Adopt Ratatui and Crossterm as the supported professional TUI foundation. | Adopt pinned Ratatui and Crossterm dependencies in an isolated TUI worktree, then implement the capability-aware application shell and event loop. |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | Repair/rebase the fail-closed TLA provenance pin, then rerun PR #119 exact-head CI; do not merge. |
 | P1 | [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md): Repair formal TLA artifact availability | Unclaimed | Repair the formal workflow&#x27;s unavailable TLA+ artifact pin without weakening provenance or offline verification. | Hold local bridge 49ae13f and PR #120. AR-0906 is blocked on active AR-0907 hosted-evidence classification; after AR-0907 and AR-0906 integrate, rebase once, range-diff, rerun full gates, then exact-lease update PR #120. |
 | P1 | [AR-0907](tasks/AR-0907-hosted-runner-evidence-classification.md): Classify hosted runner evidence without weakening native qualification | Unclaimed | Separate rolling hosted portability checks from immutable native qualification evidence. | Monitor fresh PR #123 exact-head CI at f0b7b46; do not merge until all required checks pass. |
@@ -1013,7 +1014,7 @@ flowchart LR
 | P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Unclaimed | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun failed Repository quality workflow 34339927858 on unchanged main; if failure repeats, isolate and repair test-state ownership before any feature work. |
 | P1 | [AR-0906](tasks/AR-0906-portable-oci-build-image-identity.md): Verify formal OCI build identity portably | Unclaimed | Make deterministic formal source builds verify OCI image identity portably across Docker engines. | Combined PR #122 proves formal/emulated paths; hold all PRs while native Ubuntu runner-release mismatch is repaired or classified. |
 
-### Planned (43)
+### Planned (42)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1025,7 +1026,6 @@ flowchart LR
 | P0 | [AR-0873](tasks/AR-0873-ci-workflow-captures.md): Generate CI workflow screenshots | Unclaimed | Produce reproducible screenshots and text equivalents from example workflows actually executed in CI. | Generate privacy-safe CLI and TUI workflow screenshots from real synthetic CI executions. |
 | P0 | [AR-0898](tasks/AR-0898-shellcheck-fail-closed.md): Make ShellCheck fail closed | Unclaimed | Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck. | Pin ShellCheck and prove actionlint cannot silently disable its delegated shell analysis. |
 | P0 | [AR-0899](tasks/AR-0899-gitleaks-revision-config-integrity.md): Align and harden Gitleaks execution | Unclaimed | Resolve GitHub issue 118 by making local and CI Gitleaks scans deterministic and config changes fail closed. | Unify Gitleaks revision scoping and protect its configuration with executable negative tests. |
-| P0 | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md): Adopt Ratatui/Crossterm TUI foundation | Unclaimed | Adopt Ratatui and Crossterm as the supported professional TUI foundation. | Adopt pinned Ratatui and Crossterm dependencies in an isolated TUI worktree, then implement the capability-aware application shell and event loop. |
 | P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Build the CSB-to-ASB signal inventory and native x86_64 causal A/B matrix; run applicable pinned QEMU AArch64 portability checks and document native ARM64 as optional future evidence. |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Write and execute end-to-end workflows for the core CLI and automation interfaces. |
 | P1 | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Write and validate task-oriented workflows for the standalone terminal frontend. |
