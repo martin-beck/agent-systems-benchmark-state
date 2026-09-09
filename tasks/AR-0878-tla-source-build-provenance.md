@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0878",
-  "next_action": "Encode the closed source-build manifest and verifier using pinned normalized SHA-256 8c200a88d151c6c183c8dbc57a6b633d135e7a2b18242a3afbf243a9e4b68d3e, then complete all 31 vendored-JAR license receipt mappings and fail-closed mutation tests.",
+  "next_action": "Add fixture-driven hostile manifest/cache/output mutations and concurrency/cancellation cleanup tests, validate the full persistent source/output receipt, then run ShellCheck, TLC/Alloy, privacy, repository-policy, and supply gates before a signed candidate.",
   "observed_branch": "feature/tla-source-build-provenance",
   "observed_dirty": 1,
   "observed_head": "af9fb7dcaabc162b13d6ee1e77d8915b6d82df20",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T02:47:42+00:00",
+  "updated_at": "2026-09-09T02:48:08+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -133,3 +133,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T02:47:42+00:00: Recorded command exit 0; command argv SHA-256
   3b0faf535309807c677283bcfb6eef3537d6d1e422727739f2edc89db8b2059d.
+
+- 2026-09-09T02:48:08+00:00: Encoded the complete 31-JAR dependency and license-receipt closure in
+  formal/tla-provenance/source-build.toml. Every recursively vendored JAR now has a unique sorted
+  source-relative path, exact SHA-256, immutable Maven coordinate or upstream origin,
+  runtime/development scope, SPDX expression, and license evidence locator inside the pinned source
+  tree or JAR. Added offline build.sh binding the exact source/Ant digests and sizes, pinned
+  linux/amd64 Temurin image, non-root/network-none/read-only container, fixed environment/build
+  metadata, exclusive output lock, private scratch/cleanup, deterministic JDK repack, verification,
+  and create-new publication. Added verify.sh with closed-schema/count/path/digest/license checks
+  and safe output ZIP topology/timestamp/size/hash enforcement. Manifest-only verifier and git diff
+  --check pass. This is a dirty pre-candidate checkpoint; adversarial fixtures/tests and full gates
+  remain.
