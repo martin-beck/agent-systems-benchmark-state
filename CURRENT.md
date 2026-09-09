@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0880](tasks/AR-0880-openjiuwen-runtime-closure.md): Repair OpenJiuwen runtime closure | Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification. | Fresh independent immutable review of strengthened exact candidate 34c1bc0eea8164dbe9349f7a3b26649d8aaa02b2 (tree 49fe1f2fb06d487c2c4384346934465fda29a9de, parent 513c1d926458f1cb6a26d3f7277dc7d9b1496df3); hold publication and rebase because current origin/main e89a2e44db829e429dedadd7a7f2ee408f338acf has advanced. | replay_20260906 |
+| P1 | [AR-0880](tasks/AR-0880-openjiuwen-runtime-closure.md): Repair OpenJiuwen runtime closure | Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification. | Fresh independent immutable review of exact candidate 01bbe00c597166adc5feaa58206c7b9a4ba037be (tree a067045347a6a326ead8562357836c41e5ff9d7d, parent 513c1d926458f1cb6a26d3f7277dc7d9b1496df3); hold publication/rebase because origin/main 9f502f7a3a781031770ad96efb4570ed206423a9 advanced. | replay_20260906 |
 | P1 | [AR-0891](tasks/AR-0891-local-inference-provider-profiles.md): Qualify local inference provider profiles | Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server. | Qualify grouped Ollama, llama.cpp, vLLM, and LocalAI profiles with exact engine, model, hardware, protocol, isolation, and reproducibility evidence. | codex-longrun-local-inference-profiles-20260909 |
 
 ## Blocked

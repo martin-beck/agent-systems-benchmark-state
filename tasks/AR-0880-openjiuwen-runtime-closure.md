@@ -7,7 +7,7 @@
     "AR-0857"
   ],
   "id": "AR-0880",
-  "next_action": "Fresh independent immutable review of strengthened exact candidate 34c1bc0eea8164dbe9349f7a3b26649d8aaa02b2 (tree 49fe1f2fb06d487c2c4384346934465fda29a9de, parent 513c1d926458f1cb6a26d3f7277dc7d9b1496df3); hold publication and rebase because current origin/main e89a2e44db829e429dedadd7a7f2ee408f338acf has advanced.",
+  "next_action": "Fresh independent immutable review of exact candidate 01bbe00c597166adc5feaa58206c7b9a4ba037be (tree a067045347a6a326ead8562357836c41e5ff9d7d, parent 513c1d926458f1cb6a26d3f7277dc7d9b1496df3); hold publication/rebase because origin/main 9f502f7a3a781031770ad96efb4570ed206423a9 advanced.",
   "observed_branch": "fix/openjiuwen-runtime-closure",
   "observed_dirty": 0,
   "observed_head": "01bbe00c597166adc5feaa58206c7b9a4ba037be",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Repair OpenJiuwen runtime closure",
-  "updated_at": "2026-09-09T08:35:25+00:00",
+  "updated_at": "2026-09-09T08:36:00+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-runtime-closure"
 }
 ---
@@ -248,3 +248,20 @@ a dependency, avoiding a completion cycle while AR-0859 remains blocked on this 
 
 - 2026-09-09T08:35:25+00:00: Recorded command exit 0; command argv SHA-256
   ebfe67ca3427432c175f656c45f1c93fe6ffab8b63a1456d8749c9782a9ec918.
+
+- 2026-09-09T08:36:00+00:00: Second review repair complete. Exact SSH-signed+DCO candidate
+  01bbe00c597166adc5feaa58206c7b9a4ba037be, tree a067045347a6a326ead8562357836c41e5ff9d7d, parent
+  513c1d926458f1cb6a26d3f7277dc7d9b1496df3; clean exact three product paths, 715 insertions/5
+  deletions. Exact wheel is installed first from a wheel-only no-index hash-required wheelhouse with
+  only-binary, then the complete lock is synchronized with only-binary. Installed OpenJiuwen
+  metadata, console entrypoint, and every hashed/sized wheel RECORD file are compared to the
+  digest-bound wheel. A fresh corrupted copy of that consumed wheel has one byte flipped;
+  offline/no-index installation into a fresh environment rejects it without fallback and leaves no
+  package. Every one of 510 per-package name/version/hash mutations recomputes only the outer lock
+  digest so validation reaches the strict parser/canonical oracle and checks the exact parser/oracle
+  error. State plan commit 261b53be removes the contradictory loopback criterion and explicitly
+  defers it to AR-0859. Green: static 4/1, real fresh online/offline 1/1, workspace
+  fmt/Clippy/tests/docs/release, formal, policy, deny/audit, actionlint/zizmor, exact-range
+  Gitleaks, mutation 7/7, coverage workspace 93.16% and critical replay 97.84%. One policy
+  invocation used mistyped non-object head 01bbe00f and failed operator-only; corrected full OID
+  passed.
