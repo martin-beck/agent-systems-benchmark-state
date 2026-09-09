@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**166 ARs tracked** across 6 active status categories.
+**169 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
-| **Planned** | Defined work awaiting promotion or dependencies | 38 |
+| **Planned** | Defined work awaiting promotion or dependencies | 41 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 118 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -205,6 +205,9 @@ flowchart LR
         AR_0894["AR-0894 - Planned"]:::status_planned
         AR_0895["AR-0895 - Done"]:::status_done
         AR_0896["AR-0896 - Blocked"]:::status_blocked
+        AR_0897["AR-0897 - Planned"]:::status_planned
+        AR_0898["AR-0898 - Planned"]:::status_planned
+        AR_0899["AR-0899 - Planned"]:::status_planned
     end
     subgraph series_09["09 - Assurance"]
         direction TB
@@ -243,6 +246,9 @@ flowchart LR
     AR_0003 --> AR_0877
     AR_0003 --> AR_0878
     AR_0003 --> AR_0895
+    AR_0003 --> AR_0897
+    AR_0003 --> AR_0898
+    AR_0003 --> AR_0899
     AR_0003 --> AR_0903
     AR_0004 --> AR_0005
     AR_0004 --> AR_0849
@@ -727,6 +733,11 @@ flowchart LR
     AR_0891 --> AR_0893
     AR_0892 --> AR_0893
     AR_0893 --> AR_0894
+    AR_0897 --> AR_0898
+    AR_0897 --> AR_0903
+    AR_0898 --> AR_0899
+    AR_0898 --> AR_0903
+    AR_0899 --> AR_0903
     AR_0901 --> AR_0877
     AR_0901 --> AR_0878
     AR_0901 --> AR_0903
@@ -744,6 +755,7 @@ flowchart LR
     AR_1002 --> AR_0405
     AR_1007 --> AR_0405
     AR_1007 --> AR_0406
+    AR_1008 --> AR_0898
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -760,7 +772,7 @@ flowchart LR
 | --- | --- | --- |
 | [AR-0001](tasks/AR-0001-repository-bootstrap.md) | None | [AR-0002](tasks/AR-0002-coordination-assurance.md), [AR-0003](tasks/AR-0003-quality-gates.md), [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0501](tasks/AR-0501-replay-evaluation.md), [AR-0701](tasks/AR-0701-platform-manifests.md) |
 | [AR-0002](tasks/AR-0002-coordination-assurance.md) | [AR-0001](tasks/AR-0001-repository-bootstrap.md) | [AR-0004](tasks/AR-0004-ar-status-document.md), [AR-0005](tasks/AR-0005-transactional-promotion.md), [AR-0830](tasks/AR-0830-aiws-runner-capacity.md), [AR-0834](tasks/AR-0834-handoffctl-lint-regression.md), [AR-0895](tasks/AR-0895-verify-coordination-content.md), [AR-0903](tasks/AR-0903-release-qualification.md) |
-| [AR-0003](tasks/AR-0003-quality-gates.md) | [AR-0001](tasks/AR-0001-repository-bootstrap.md) | [AR-0830](tasks/AR-0830-aiws-runner-capacity.md), [AR-0831](tasks/AR-0831-aiws-workflow-routing.md), [AR-0845](tasks/AR-0845-ci-artifact-quota-resilience.md), [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md), [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md), [AR-0878](tasks/AR-0878-tla-source-build-provenance.md), [AR-0895](tasks/AR-0895-verify-coordination-content.md), [AR-0903](tasks/AR-0903-release-qualification.md) |
+| [AR-0003](tasks/AR-0003-quality-gates.md) | [AR-0001](tasks/AR-0001-repository-bootstrap.md) | [AR-0830](tasks/AR-0830-aiws-runner-capacity.md), [AR-0831](tasks/AR-0831-aiws-workflow-routing.md), [AR-0845](tasks/AR-0845-ci-artifact-quota-resilience.md), [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md), [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md), [AR-0878](tasks/AR-0878-tla-source-build-provenance.md), [AR-0895](tasks/AR-0895-verify-coordination-content.md), [AR-0897](tasks/AR-0897-main-merge-integrity.md), [AR-0898](tasks/AR-0898-shellcheck-fail-closed.md), [AR-0899](tasks/AR-0899-gitleaks-revision-config-integrity.md), [AR-0903](tasks/AR-0903-release-qualification.md) |
 | [AR-0004](tasks/AR-0004-ar-status-document.md) | [AR-0002](tasks/AR-0002-coordination-assurance.md) | [AR-0005](tasks/AR-0005-transactional-promotion.md), [AR-0849](tasks/AR-0849-ar0801-documentation-repair.md) |
 | [AR-0005](tasks/AR-0005-transactional-promotion.md) | [AR-0002](tasks/AR-0002-coordination-assurance.md), [AR-0004](tasks/AR-0004-ar-status-document.md) | None |
 | [AR-0101](tasks/AR-0101-extension-contracts.md) | [AR-0001](tasks/AR-0001-repository-bootstrap.md) | [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0203](tasks/AR-0203-statistical-analysis.md), [AR-0301](tasks/AR-0301-agent-opencode.md), [AR-0302](tasks/AR-0302-agent-opendesk.md), [AR-0303](tasks/AR-0303-agent-aider.md), [AR-0304](tasks/AR-0304-agent-codex.md), [AR-0305](tasks/AR-0305-agent-gemini.md), [AR-0306](tasks/AR-0306-agent-qwen-code.md), [AR-0307](tasks/AR-0307-agent-goose.md), [AR-0308](tasks/AR-0308-agent-mini-swe.md), [AR-0309](tasks/AR-0309-agent-openhands.md), [AR-0310](tasks/AR-0310-provider-profile-contract.md), [AR-0317](tasks/AR-0317-runtime-bundle-manifest.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0502](tasks/AR-0502-replay-cassettes.md), [AR-0517](tasks/AR-0517-redacted-request-pointer-replay.md), [AR-0601](tasks/AR-0601-csb-integration.md), [AR-0603](tasks/AR-0603-csb-execution-assurance.md), [AR-0801](tasks/AR-0801-terminal-interface.md), [AR-0803](tasks/AR-0803-frontend-control-api.md), [AR-0840](tasks/AR-0840-frontend-protocol-contract.md), [AR-0847](tasks/AR-0847-frontend-control-api-repair.md), [AR-0857](tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](tasks/AR-0863-workbuddy-provenance.md), [AR-0875](tasks/AR-0875-control-history-analysis-contract.md), [AR-0901](tasks/AR-0901-formal-assurance.md), [AR-0904](tasks/AR-0904-contract-consistency.md), [AR-1001](tasks/AR-1001-experiment-comparability.md), [AR-1003](tasks/AR-1003-execution-budgets.md), [AR-1005](tasks/AR-1005-trace-interoperability.md) |
@@ -911,9 +923,12 @@ flowchart LR
 | [AR-0894](tasks/AR-0894-tui-local-llm-parity.md) | [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0873](tasks/AR-0873-ci-workflow-captures.md), [AR-0893](tasks/AR-0893-cli-local-llm-setup.md) | None |
 | [AR-0895](tasks/AR-0895-verify-coordination-content.md) | [AR-0002](tasks/AR-0002-coordination-assurance.md), [AR-0003](tasks/AR-0003-quality-gates.md) | None |
 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md) | [AR-0888](tasks/AR-0888-llm-double-conformance-spike.md), [AR-0889](tasks/AR-0889-llm-fixture-scenario-contract.md) | None |
+| [AR-0897](tasks/AR-0897-main-merge-integrity.md) | [AR-0003](tasks/AR-0003-quality-gates.md) | [AR-0898](tasks/AR-0898-shellcheck-fail-closed.md), [AR-0903](tasks/AR-0903-release-qualification.md) |
+| [AR-0898](tasks/AR-0898-shellcheck-fail-closed.md) | [AR-0003](tasks/AR-0003-quality-gates.md), [AR-0897](tasks/AR-0897-main-merge-integrity.md), [AR-1008](tasks/AR-1008.md) | [AR-0899](tasks/AR-0899-gitleaks-revision-config-integrity.md), [AR-0903](tasks/AR-0903-release-qualification.md) |
+| [AR-0899](tasks/AR-0899-gitleaks-revision-config-integrity.md) | [AR-0003](tasks/AR-0003-quality-gates.md), [AR-0898](tasks/AR-0898-shellcheck-fail-closed.md) | [AR-0903](tasks/AR-0903-release-qualification.md) |
 | [AR-0901](tasks/AR-0901-formal-assurance.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0203](tasks/AR-0203-statistical-analysis.md), [AR-0502](tasks/AR-0502-replay-cassettes.md) | [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md), [AR-0878](tasks/AR-0878-tla-source-build-provenance.md), [AR-0903](tasks/AR-0903-release-qualification.md) |
 | [AR-0902](tasks/AR-0902-fault-assurance.md) | [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0503](tasks/AR-0503-strict-replay.md) | [AR-0813](tasks/AR-0813-remote-control-transport.md), [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md), [AR-0878](tasks/AR-0878-tla-source-build-provenance.md), [AR-0903](tasks/AR-0903-release-qualification.md) |
-| [AR-0903](tasks/AR-0903-release-qualification.md) | [AR-0002](tasks/AR-0002-coordination-assurance.md), [AR-0003](tasks/AR-0003-quality-gates.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0315](tasks/AR-0315-provider-parity-conformance.md), [AR-0505](tasks/AR-0505-agent-replay-conformance.md), [AR-0702](tasks/AR-0702-native-platforms.md), [AR-0802](tasks/AR-0802-executable-guides.md), [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0811](tasks/AR-0811-documentation-qualification.md), [AR-0818](tasks/AR-0818-remote-control-security-audit.md), [AR-0823](tasks/AR-0823-installation-qualification.md), [AR-0901](tasks/AR-0901-formal-assurance.md), [AR-0902](tasks/AR-0902-fault-assurance.md) | [AR-0846](tasks/AR-0846-artifact-retention-cleanup.md) |
+| [AR-0903](tasks/AR-0903-release-qualification.md) | [AR-0002](tasks/AR-0002-coordination-assurance.md), [AR-0003](tasks/AR-0003-quality-gates.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0315](tasks/AR-0315-provider-parity-conformance.md), [AR-0505](tasks/AR-0505-agent-replay-conformance.md), [AR-0702](tasks/AR-0702-native-platforms.md), [AR-0802](tasks/AR-0802-executable-guides.md), [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0811](tasks/AR-0811-documentation-qualification.md), [AR-0818](tasks/AR-0818-remote-control-security-audit.md), [AR-0823](tasks/AR-0823-installation-qualification.md), [AR-0897](tasks/AR-0897-main-merge-integrity.md), [AR-0898](tasks/AR-0898-shellcheck-fail-closed.md), [AR-0899](tasks/AR-0899-gitleaks-revision-config-integrity.md), [AR-0901](tasks/AR-0901-formal-assurance.md), [AR-0902](tasks/AR-0902-fault-assurance.md) | [AR-0846](tasks/AR-0846-artifact-retention-cleanup.md) |
 | [AR-0904](tasks/AR-0904-contract-consistency.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-1001](tasks/AR-1001-experiment-comparability.md) | None |
 | [AR-0905](tasks/AR-0905-recovery-models.md) | [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0503](tasks/AR-0503-strict-replay.md) | None |
 | [AR-1001](tasks/AR-1001-experiment-comparability.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0203](tasks/AR-0203-statistical-analysis.md) | [AR-0310](tasks/AR-0310-provider-profile-contract.md), [AR-0806](tasks/AR-0806-tui-history-analysis.md), [AR-0875](tasks/AR-0875-control-history-analysis-contract.md), [AR-0904](tasks/AR-0904-contract-consistency.md), [AR-1006](tasks/AR-1006-distributed-workers.md), [AR-1007](tasks/AR-1007-benchmark-validity.md) |
@@ -923,7 +938,7 @@ flowchart LR
 | [AR-1005](tasks/AR-1005-trace-interoperability.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0502](tasks/AR-0502-replay-cassettes.md) | None |
 | [AR-1006](tasks/AR-1006-distributed-workers.md) | [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0702](tasks/AR-0702-native-platforms.md), [AR-1001](tasks/AR-1001-experiment-comparability.md) | None |
 | [AR-1007](tasks/AR-1007-benchmark-validity.md) | [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0701](tasks/AR-0701-platform-manifests.md), [AR-1001](tasks/AR-1001-experiment-comparability.md) | [AR-0405](tasks/AR-0405-performance-workloads.md), [AR-0406](tasks/AR-0406-evolving-workloads.md) |
-| [AR-1008](tasks/AR-1008.md) | None | None |
+| [AR-1008](tasks/AR-1008.md) | None | [AR-0898](tasks/AR-0898-shellcheck-fail-closed.md) |
 
 ## Complete AR inventory
 
@@ -951,7 +966,7 @@ flowchart LR
 | P1 | [AR-0890](tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Unclaimed | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. |
 | P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Unclaimed | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun failed Repository quality workflow 34339927858 on unchanged main; if failure repeats, isolate and repair test-state ownership before any feature work. |
 
-### Planned (38)
+### Planned (41)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -961,6 +976,9 @@ flowchart LR
 | P0 | [AR-0817](tasks/AR-0817-remote-tui-workflows.md): Build remote terminal frontend workflows | Unclaimed | Make secure two-machine benchmark operation clear and efficient in the terminal frontend. | Integrate polished connection, trust, remote launch, detach, reconnect, and management journeys into the TUI. |
 | P0 | [AR-0837](tasks/AR-0837-containerized-runner-boundary.md): Qualify containerized runner boundary | Unclaimed | Provide the containerized workflow boundary required for safe trusted runner claims. | Define and qualify a digest-pinned workflow container boundary separating operator, listener, and job principals without host mounts. |
 | P0 | [AR-0873](tasks/AR-0873-ci-workflow-captures.md): Generate CI workflow screenshots | Unclaimed | Produce reproducible screenshots and text equivalents from example workflows actually executed in CI. | Generate privacy-safe CLI and TUI workflow screenshots from real synthetic CI executions. |
+| P0 | [AR-0897](tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | Unclaimed | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Restore green exact-main commit-policy evidence and prevent unsigned or non-DCO GitHub-generated merge commits. |
+| P0 | [AR-0898](tasks/AR-0898-shellcheck-fail-closed.md): Make ShellCheck fail closed | Unclaimed | Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck. | Pin ShellCheck and prove actionlint cannot silently disable its delegated shell analysis. |
+| P0 | [AR-0899](tasks/AR-0899-gitleaks-revision-config-integrity.md): Align and harden Gitleaks execution | Unclaimed | Resolve GitHub issue 118 by making local and CI Gitleaks scans deterministic and config changes fail closed. | Unify Gitleaks revision scoping and protect its configuration with executable negative tests. |
 | P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Build the CSB-to-ASB signal inventory and native x86_64 causal A/B matrix; run applicable pinned QEMU AArch64 portability checks and document native ARM64 as optional future evidence. |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Write and execute end-to-end workflows for the core CLI and automation interfaces. |
 | P1 | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Write and validate task-oriented workflows for the standalone terminal frontend. |
