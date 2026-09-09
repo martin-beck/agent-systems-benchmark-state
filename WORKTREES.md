@@ -65,7 +65,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-install-artifacts` | `feature/verifiable-install-artifacts` | `310fdfe30f71` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-interaction-aware-redaction` | `feature/interaction-aware-redaction` | `867861c95c19` | 0 | behind 176, ahead 0 |
 | `agent-systems-benchmark-kernel-diagnostics` | `feature/kernel-diagnostics` | `d11f81837374` | 0 | behind 53, ahead 0 |
-| `agent-systems-benchmark-local-llm-testing-recommendations` | `docs/local-llm-testing-recommendations` | `ca6e75916a8c` | 2 | behind 7, ahead 0 |
+| `agent-systems-benchmark-local-llm-testing-recommendations` | `docs/local-llm-testing-recommendations` | `66659cc2ab74` | 2 | behind 0, ahead 0 |
 | changed files | - | - | - | `docs/REPLAY_RESEARCH.md`, `docs/LOCAL_LLM_TESTING_RECOMMENDATIONS.md` |
 | `agent-systems-benchmark-modern-terminal-rendering` | `feature/modern-terminal-rendering` | `fd1989a096a3` | 0 | behind 14, ahead 0 |
 | `agent-systems-benchmark-native-platform-lab` | `feature/native-platform-lab` | `b1669203308d` | 0 | behind 220, ahead 0 |
