@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make deterministic formal source builds verify OCI image identity portably across Docker engines.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Verify formal OCI build identity portably",
-  "updated_at": "2026-09-09T14:50:09+00:00",
+  "updated_at": "2026-09-09T14:51:59+00:00",
   "worktree_key": "agent-systems-benchmark-formal-oci-image-identity"
 }
 ---
@@ -70,3 +70,6 @@ instead of assuming an engine's local configuration ID equals the registry manif
   ShellCheck and focused clippy pass. Real local Docker projection passes, and a full deterministic
   source build reproduced exact output SHA-256 8c200a88, 4512486 bytes. No AR-0877 or AR-0704 path
   changed.
+
+- 2026-09-09T14:51:59+00:00: Recorded command exit 0; command argv SHA-256
+  1049836bb4cc2ab94a0f499c32b8b6b6256ab85dd6f07c048aa123212693bc79.
