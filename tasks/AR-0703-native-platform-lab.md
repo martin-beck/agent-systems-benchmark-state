@@ -28,11 +28,10 @@
 ---
 ## AR-0703
 
-Provide genuine disposable native hosts for required Debian and openEuler platform qualification.
-
-This task was added after AR-0702 proved that the available development machine supplies only a
-bare-metal Ubuntu x86_64 cell and that the public native-arm runner does not supply booted
-openEuler or Debian kernel evidence. Containers, cross-builds and emulation cannot satisfy it.
+Optionally provide genuine disposable native ARM64 Debian and openEuler hosts for future,
+claim-scoped qualification. Their absence cannot block development, integration, release, or any AR.
+QEMU covers feasible portable userspace behavior but cannot substitute for optional native kernel, PMU,
+eBPF, timing, contention, performance, or booted-distribution evidence.
 
 - 2026-09-07T10:34:30+00:00: Dependencies AR-0701, AR-0103, AR-0201, and AR-0401 are durably done;
   branch, remote ref, and declared worktree are absent. Promote for fail-closed native capacity

@@ -28,7 +28,8 @@
 ---
 ## AR-0702
 
-Exercise native x86_64 and aarch64 including booted openEuler kernels.
+Require native x86_64 qualification and pinned QEMU AArch64 portability where applicable. Native
+ARM64, including booted openEuler kernels, is optional future claim-scoped evidence.
 
 Implementation has not started. Read the linked plan before claiming.
 
