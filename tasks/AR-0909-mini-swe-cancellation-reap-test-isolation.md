@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-09T22:40:14+00:00",
+  "updated_at": "2026-09-09T22:41:02+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -52,3 +52,6 @@ classified.
 
 - 2026-09-09T22:40:08+00:00: Recorded command exit 0; command argv SHA-256
   b2b1444698fd041bbbe96b9cf2c81d7500a5ca120d1a9e23eb81a078326bb6f8.
+
+- 2026-09-09T22:41:02+00:00: Recorded command exit 1; command argv SHA-256
+  31bbd9e4802232293f2efcaf9caf9c04b91079dbf154a255e67485f38be12f17.
