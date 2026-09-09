@@ -2,7 +2,7 @@
 {
   "branch": "feature/verifiable-install-artifacts",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T07:45:16+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0701",
     "AR-0801",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/verifiable-install-artifacts",
   "observed_dirty": 0,
   "observed_head": "310fdfe30f71f87387789645fe9fcc5c4c41281e",
-  "owner": "codex-longrun-install-20260909",
+  "owner": "",
   "plan": "../plans/AR-0820.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Publish verifiable native bundles and metadata that a small bootstrapper can select safely.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Publish verifiable installation artifacts",
-  "updated_at": "2026-09-09T05:45:26+00:00",
+  "updated_at": "2026-09-09T05:45:36+00:00",
   "worktree_key": "agent-systems-benchmark-install-artifacts"
 }
 ---
@@ -132,3 +132,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T05:45:26+00:00: Recorded command exit 0; command argv SHA-256
   f6a3e2af72def84a6fbd8230212a70440a1305079386e954c005694b601722c1.
+
+- 2026-09-09T05:45:36+00:00: Merged PR #102 with signed DCO-bearing no-ff merge
+  ecdfae42d5768fc5bc74ea6e3f4d45d8bceb96ff; all six post-merge gates passed at exact head. Added
+  bounded PlatformReleaseManifest and exact HTTPS target selector over existing signed
+  RuntimeBundleManifest verifier, with unit tests and documented limits. Product main and feature
+  worktree are clean.
