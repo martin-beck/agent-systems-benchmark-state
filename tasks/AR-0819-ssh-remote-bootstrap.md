@@ -2,7 +2,7 @@
 {
   "branch": "feature/ssh-remote-bootstrap",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T05:40:07+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0803",
     "AR-0804"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ssh-remote-bootstrap",
   "observed_dirty": 0,
   "observed_head": "980276dd2885682ad2251893395eedf55558dc98",
-  "owner": "replay_20260909",
+  "owner": "",
   "plan": "../plans/AR-0819.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Use configured SSH hosts as the safe default path to a remote runner and help establish dedicated key authentication.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Add SSH remote discovery and bootstrap",
-  "updated_at": "2026-09-09T03:40:41+00:00",
+  "updated_at": "2026-09-09T03:41:05+00:00",
   "worktree_key": "agent-systems-benchmark-ssh-remote-bootstrap"
 }
 ---
@@ -136,3 +136,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T03:40:41+00:00: Recorded command exit 0; command argv SHA-256
   01e813eb80f58957dc36c890b6ab64db170daaf456de36ce71ed558c4a9b960f.
+
+- 2026-09-09T03:41:05+00:00: Completed and released: signed candidate 980276d, PR #98 fully green at
+  exact head, signed no-ff merge 7d9191c onto main, 24 asb-tui tests plus Clippy passed, repository
+  policy and DCO passed, all six exact-main workflows green (runs 34307633249, 34307633250,
+  34307633251, 34307633246, 34307633287, 34307633299), primary checkout synchronized clean at
+  7d9191c, temporary integration worktree removed.
