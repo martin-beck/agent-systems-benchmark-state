@@ -9,15 +9,18 @@
   ],
   "id": "AR-0907",
   "next_action": "Add a closed hosted-portability schema and conditional workflow boundary while preserving exact native qualification and its 24.04.4 evidence.",
+  "observed_branch": "fix/hosted-runner-evidence-classification",
+  "observed_dirty": 0,
+  "observed_head": "b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0907.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T17:02:19+00:00",
+  "updated_at": "2026-09-09T17:02:25+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
