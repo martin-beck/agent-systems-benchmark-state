@@ -5,13 +5,13 @@
 
 ## Portfolio overview
 
-**166 ARs tracked** across 4 active status categories.
+**166 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 0 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 8 |
+| **Open** | Dependency-ready and available to claim | 1 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 7 |
 | **Planned** | Defined work awaiting promotion or dependencies | 39 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 117 |
@@ -45,7 +45,7 @@ flowchart LR
     subgraph series_02["02 - Analysis"]
         direction TB
         AR_0201["AR-0201 - Done"]:::status_done
-        AR_0202["AR-0202 - Blocked"]:::status_blocked
+        AR_0202["AR-0202 - Open"]:::status_open
         AR_0203["AR-0203 - Done"]:::status_done
         AR_0204["AR-0204 - Done"]:::status_done
     end
@@ -934,7 +934,13 @@ flowchart LR
 | P1 | [AR-0702](tasks/AR-0702-native-platforms.md): Validate native Linux kernels and architectures | native-policy-20260909 | Qualify native x86_64 and required emulated AArch64 portability; track native ARM64 as optional future evidence. | Rebase PR #31, replace native ARM64 completion gates with the pinned QEMU AArch64 lane where applicable, document native ARM64 as optional future qualification, and rerun exact-head checks. |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | replay_20260906 | Qualify pinned OpenJiuwen live execution. | Add remaining corruption/retry/trickle/root/child negatives, then run full gates; keep support fail closed. |
 
-### Blocked (8)
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Monitor exact-main post-merge checks at 2219839 and run local post-merge verification. Retain AR-0202 in progress until genuine privileged native aarch64 evidence is recorded; then complete final review and release. |
+
+### Blocked (7)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -945,7 +951,6 @@ flowchart LR
 | P1 | [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md): Repair formal TLA artifact availability | Unclaimed | Repair the formal workflow&#x27;s unavailable TLA+ artifact pin without weakening provenance or offline verification. | Keep the four-path prototype unchanged. Obtain an authoritative immutable TLA+ 1.8.0 artifact or authorization for a reproducible source-build boundary; then refresh metadata once, finish deterministic faults, and run TLC/Alloy. Do not chase replaceable pre-release assets. |
 | P1 | [AR-0890](tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Unclaimed | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. |
 | P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Unclaimed | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun failed Repository quality workflow 34339927858 on unchanged main; if failure repeats, isolate and repair test-state ownership before any feature work. |
-| P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Monitor exact-main post-merge checks at 2219839 and run local post-merge verification. Retain AR-0202 in progress until genuine privileged native aarch64 evidence is recorded; then complete final review and release. |
 
 ### Planned (39)
 

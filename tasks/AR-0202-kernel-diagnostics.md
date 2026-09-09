@@ -16,11 +16,11 @@
   "plan": "../plans/AR-0202.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Integrate perf and optional eBPF diagnostics without making privileged tools mandatory.",
-  "task_revision": 198,
+  "task_revision": 199,
   "title": "Add optional kernel diagnostics",
-  "updated_at": "2026-09-08T23:33:12+00:00",
+  "updated_at": "2026-09-09T10:52:42+00:00",
   "worktree_key": "agent-systems-benchmark-kernel-diagnostics"
 }
 ---
@@ -584,3 +584,7 @@ Implementation has not started. Read the linked plan before claiming.
   blocked by the named external dependency of genuine privileged native aarch64 capacity/evidence;
   emulation is explicitly insufficient. Resume only when authorized native aarch64 evidence is
   available.
+
+- 2026-09-09T10:52:42+00:00: Native ARM64 PMU/eBPF evidence is now optional future qualification by
+  user policy; native x86_64 plus applicable pinned QEMU AArch64 portability evidence governs
+  completion.
