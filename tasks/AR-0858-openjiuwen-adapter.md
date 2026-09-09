@@ -7,7 +7,7 @@
     "AR-0857"
   ],
   "id": "AR-0858",
-  "next_action": "Continue serialized polling of PR #104; if all checks pass, merge signed DCO and run exact-main post-merge gates.",
+  "next_action": "Monitor all required post-merge CI runs for exact main 096dc4f275c05ad81772f443b6f22dddfb92da3d; release only after every required gate is green.",
   "observed_branch": "feature/openjiuwen-adapter",
   "observed_dirty": 0,
   "observed_head": "43ceb0f1bf8bba66723b96ef8e41564df65eb7a5",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the OpenJiuwen contract and capability adapter.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Implement the OpenJiuwen contract and capability adapter",
-  "updated_at": "2026-09-09T06:17:03+00:00",
+  "updated_at": "2026-09-09T06:17:25+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-adapter"
 }
 ---
@@ -149,3 +149,8 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-09T06:17:03+00:00: Recorded command exit 0; command argv SHA-256
   b02994d8fad8d35daca917657774e5cd6b687ecc85bbce2465ef539134b5f5a8.
+
+- 2026-09-09T06:17:25+00:00: PR #104 exact head 43ceb0f1bf8bba66723b96ef8e41564df65eb7a5 passed
+  every required PR check; reviewed immutable ancestry, diff, signature/DCO, and merged with signed
+  DCO merge 096dc4f275c05ad81772f443b6f22dddfb92da3d. Post-merge exact-main verification is now
+  required.
