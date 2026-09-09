@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish linked beginner workflows for setup, multi-agent runs, progress, comparison, recording, and replay with and without the TUI.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Publish beginner workflow documentation",
-  "updated_at": "2026-09-09T01:45:05+00:00",
+  "updated_at": "2026-09-09T01:45:22+00:00",
   "worktree_key": "agent-systems-benchmark-beginner-workflows"
 }
 ---
@@ -168,3 +168,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-09T01:45:05+00:00: PR #94 exact-head CI started for 3b0ad66. Formal TLC/Alloy job
   102305620099 failed at 01:43:18Z while the parent workflow remained in progress; feature work is
   preempted pending bounded failure diagnosis.
+
+- 2026-09-09T01:45:22+00:00: Recorded command exit 0; command argv SHA-256
+  c1456f8c0d50f057f82be912dc56127f3b637d2948d9305ee955992c61c3dcd7.
