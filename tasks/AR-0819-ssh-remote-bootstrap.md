@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use configured SSH hosts as the safe default path to a remote runner and help establish dedicated key authentication.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Add SSH remote discovery and bootstrap",
-  "updated_at": "2026-09-09T03:32:58+00:00",
+  "updated_at": "2026-09-09T03:33:23+00:00",
   "worktree_key": "agent-systems-benchmark-ssh-remote-bootstrap"
 }
 ---
@@ -94,3 +94,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T03:32:58+00:00: PR #98 exact head 980276d is fully green across all required quality,
   formal, fault, fuzz, mutation, Rust x86/arm, and emulated aarch64 checks.
+
+- 2026-09-09T03:33:23+00:00: Recorded command exit 0; command argv SHA-256
+  7d8ea69f222b0a250ecb8c2ad1eea560cdcfc8e4763c86f2f2974784b4c24700.
