@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 137,
+  "task_revision": 138,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T05:02:51+00:00",
+  "updated_at": "2026-09-09T05:06:59+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -493,3 +493,6 @@ Implementation has not started. Read the linked plan before claiming.
   Focused llvm-cov executes 4/4 but has zero instrumentable Rust regions because production is
   shell/Python. Formal all-target Clippy retains inherited recovery.rs field_reassign_with_default
   findings outside this 11-path diff; local Kani remains the documented incomplete-install boundary.
+
+- 2026-09-09T05:06:59+00:00: Recorded command exit 0; command argv SHA-256
+  2aa4b670b0dc6247260797a1ba7351f1ce072c5268eb88bd8640f662fe1e25be.
