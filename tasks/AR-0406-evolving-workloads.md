@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Add evolving long-horizon workload sources",
-  "updated_at": "2026-09-09T05:57:50+00:00",
+  "updated_at": "2026-09-09T05:57:54+00:00",
   "worktree_key": "agent-systems-benchmark-evolving-workloads"
 }
 ---
@@ -121,3 +121,6 @@ Implementation has not started. Read the linked plan before claiming.
   ca6e75916a8c9831b9107377cd48d731463c272a. Post-merge exact-main verification is now required.
 
 - 2026-09-09T05:57:50+00:00: Heartbeat by codex-longrun-evolving-workloads-20260909.
+
+- 2026-09-09T05:57:54+00:00: Recorded command exit 0; command argv SHA-256
+  d23e3920163ffcc874f7f73481a93488fb208960fd8d820de0aeec10b04dcce1.
