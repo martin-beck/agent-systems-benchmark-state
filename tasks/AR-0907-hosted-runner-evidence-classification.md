@@ -8,7 +8,7 @@
     "AR-0848"
   ],
   "id": "AR-0907",
-  "next_action": "Hold unpublished signed candidate 5a2cfef662d58634828235ea77a417128d30a734 for fresh independent immutable review; publish only after approval and exact-head CI.",
+  "next_action": "Hold unpublished 32a8fe5b1bc0a1b84a876c077835f1b9d2a9be19 for fresh independent immutable review; publish only after approval and fresh exact-head CI.",
   "observed_branch": "fix/hosted-runner-evidence-classification",
   "observed_dirty": 0,
   "observed_head": "32a8fe5b1bc0a1b84a876c077835f1b9d2a9be19",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T18:03:24+00:00",
+  "updated_at": "2026-09-09T18:04:01+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -279,3 +279,18 @@ patch release has advanced.
 
 - 2026-09-09T18:03:24+00:00: Recorded command exit 0; command argv SHA-256
   a700243ec6becd1bce469c90cb4d97d938a760dad92068464ab2012f0daeaad6.
+
+- 2026-09-09T18:04:01+00:00: JSON equality repair complete. Candidate
+  32a8fe5b1bc0a1b84a876c077835f1b9d2a9be19, tree c87cfd8daa07fe2ff34d065b36407acfbe2a2d74, parent
+  5a2cfef662d58634828235ea77a417128d30a734; clean SSH-signed+DCO successor. Stdlib validator now
+  compares JSON const/enum values with booleans distinct from every numeric value while preserving
+  JSON numeric equivalence; uniqueItems uses the same type-correct equality. Fixture registry adds
+  boolean-for-integer and numeric-for-boolean mutations (19 closed cases total). Executable
+  dependency-minimal python -S negatives prove both malformed artifacts fail with generic stdout,
+  empty stderr, and deletion before upload. Focused 19 tests, all platform 54, Ruff/strict mypy,
+  failure paths, full locked workspace fmt/clippy/test/doc, signatures, DCO, exact-range policy,
+  Gitleaks, diff/privacy and clean tree pass. Exit 127 at 18:02:59 was an operator-only mistyped
+  absolute interpreter path after signature/DCO/policy had passed; the omitted
+  focused/Gitleaks/clean portion was rerun correctly at exit 0. Combined candidate remains exact
+  seven-path scope on base b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b; this successor changes only
+  validator, hosted mutation fixture and focused test.
