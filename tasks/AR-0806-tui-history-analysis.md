@@ -10,7 +10,7 @@
     "AR-1001"
   ],
   "id": "AR-0806",
-  "next_action": "Rebase the approved AR-0806 one-path semantics onto current product main dca243ab, preserve the AR-0875 limitation, rerun exact range-diff/full gates, obtain fresh immutable review, then update PR #89 and rerun exact-head CI before merge.",
+  "next_action": "Independent immutable review exact candidate dc914626bb2fbf57fc7df15e7d37873142850fe7/tree 03a1db51 on parent dca243ab; if approved, guarded PR #89 update and fresh exact-head CI before merge.",
   "observed_branch": "feature/tui-history-analysis",
   "observed_dirty": 0,
   "observed_head": "dc914626bb2fbf57fc7df15e7d37873142850fe7",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-09T00:36:29+00:00",
+  "updated_at": "2026-09-09T00:37:03+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
@@ -287,3 +287,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T00:36:29+00:00: Recorded command exit 0; command argv SHA-256
   138c8a81afc77ececb8877cfcb04c0a38fb661dc6c0b3d2657fd3b64562a70d4.
+
+- 2026-09-09T00:37:03+00:00: Controlled rebase completed onto exact current main
+  dca243ab7b8cbb0b2b49a568dec99c517e0719c2. README conflict was caused only by intervening
+  RecordingWorkflow documentation and was resolved additively, retaining both that paragraph and the
+  AR-0806 opaque-analysis/AR-0875 limitation. New clean two-path candidate
+  dc914626bb2fbf57fc7df15e7d37873142850fe7, tree 03a1db51caff4dbcf0f980148274c6eee4764ff1, exact
+  parent dca243ab; SSH signature good and exact DCO retained. Range-diff from approved 8e7907c
+  differs only in README context placement around the newly inherited RecordingWorkflow paragraph;
+  AR-0806 source semantics and duplicate-page repair remain preserved. Fresh gates green: asb-tui
+  22/22, fmt, workspace all-target Clippy -D warnings, workspace tests, rustdoc -D warnings, release
+  build, diff-check, repository policy, Gitleaks, cargo-deny, cargo-audit, coverage, and the
+  complete failure-path suite. Worktree is clean; candidate remains unpublished pending fresh
+  immutable review.
