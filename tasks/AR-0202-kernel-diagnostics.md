@@ -2,7 +2,7 @@
 {
   "branch": "feature/kernel-diagnostics",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-10T01:44:17+00:00",
   "depends_on": [
     "AR-0201",
     "AR-0103"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/kernel-diagnostics",
   "observed_dirty": 0,
   "observed_head": "d11f81837374d42977bea40cc3452d3bda8c00c7",
-  "owner": "",
+  "owner": "contracts_20260906",
   "plan": "../plans/AR-0202.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Integrate perf and optional eBPF diagnostics without making privileged tools mandatory.",
-  "task_revision": 200,
+  "task_revision": 201,
   "title": "Add optional kernel diagnostics",
-  "updated_at": "2026-09-09T10:52:45+00:00",
+  "updated_at": "2026-09-09T22:44:17+00:00",
   "worktree_key": "agent-systems-benchmark-kernel-diagnostics"
 }
 ---
@@ -591,3 +591,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T10:52:45+00:00: Removed native ARM64 capacity as a completion blocker without weakening
   native x86_64 kernel diagnostics.
+
+- 2026-09-09T22:44:17+00:00: Claimed by contracts_20260906.
