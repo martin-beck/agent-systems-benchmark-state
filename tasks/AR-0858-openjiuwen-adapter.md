@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-adapter",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T08:16:58+00:00",
+  "claim_expires": "2026-09-09T08:17:35+00:00",
   "depends_on": [
     "AR-0857"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the OpenJiuwen contract and capability adapter.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Implement the OpenJiuwen contract and capability adapter",
-  "updated_at": "2026-09-09T06:17:25+00:00",
+  "updated_at": "2026-09-09T06:17:35+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-adapter"
 }
 ---
@@ -154,3 +154,5 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   every required PR check; reviewed immutable ancestry, diff, signature/DCO, and merged with signed
   DCO merge 096dc4f275c05ad81772f443b6f22dddfb92da3d. Post-merge exact-main verification is now
   required.
+
+- 2026-09-09T06:17:35+00:00: Heartbeat by codex-longrun-openjiuwen-adapter-20260909.
