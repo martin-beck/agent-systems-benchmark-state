@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**166 ARs tracked** across 5 active status categories.
+**166 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 3 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 8 |
 | **Planned** | Defined work awaiting promotion or dependencies | 39 |
 | **Future** | Deferred roadmap work | 0 |
@@ -204,7 +204,7 @@ flowchart LR
         AR_0893["AR-0893 - Planned"]:::status_planned
         AR_0894["AR-0894 - Planned"]:::status_planned
         AR_0895["AR-0895 - In progress"]:::status_in_progress
-        AR_0896["AR-0896 - Open"]:::status_open
+        AR_0896["AR-0896 - In progress"]:::status_in_progress
     end
     subgraph series_09["09 - Assurance"]
         direction TB
@@ -927,18 +927,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | replay_20260906 | Qualify pinned OpenJiuwen live execution. | Implement the three owned loopback fixtures; prove pinned edit/tool/usage/cancel/cleanup/network denial, keeping support fail closed until all executable checks pass. |
 | P1 | [AR-0895](tasks/AR-0895-verify-coordination-content.md): Verify every coordination-content pull request | quality_20260906 | Close the workflow path-filter gap that lets coordination-content pull requests skip strict state consistency and DCO checks. | Independent immutable review candidate fb147b0a8702ca6cb6340eb756c9464b66d5bd2a/tree 16fbe831; separately shorten the two out-of-scope invalid next_action values on live state main, then rerun schema/generated-view gates before publication. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Unclaimed | Qualify one pinned MockAgents executable before deterministic-double CI integration. | Qualify the exact MockAgents v0.5.0 executable against the complete hostile synthetic protocol and isolation suite; do not unblock AR-0890 unless every required case passes. |
+| P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | codex-longrun-mockagents-20260909 | Qualify one pinned MockAgents executable before deterministic-double CI integration. | Qualify the exact MockAgents v0.5.0 executable against the complete hostile synthetic protocol and isolation suite; do not unblock AR-0890 unless every required case passes. |
 
 ### Blocked (8)
 

@@ -2,22 +2,22 @@
 {
   "branch": "test/mockagents-executable-qualification",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-09T10:40:19+00:00",
   "depends_on": [
     "AR-0888",
     "AR-0889"
   ],
   "id": "AR-0896",
   "next_action": "Qualify the exact MockAgents v0.5.0 executable against the complete hostile synthetic protocol and isolation suite; do not unblock AR-0890 unless every required case passes.",
-  "owner": "",
+  "owner": "codex-longrun-mockagents-20260909",
   "plan": "../plans/AR-0896.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify one pinned MockAgents executable before deterministic-double CI integration.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-09T09:55:13+00:00",
+  "updated_at": "2026-09-09T09:55:19+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -30,3 +30,5 @@ synthetic fixture for black-box executable evidence.
 
 - 2026-09-09T09:55:13+00:00: Promote dependency-ready MockAgents executable qualification for the
   development loop.
+
+- 2026-09-09T09:55:19+00:00: Claimed by codex-longrun-mockagents-20260909.
