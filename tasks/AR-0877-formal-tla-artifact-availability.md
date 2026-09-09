@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0877",
-  "next_action": "Finish remaining dependency/failure/coverage gates after path-scoped privacy scan, then stage and create signed candidate for independent review.",
+  "next_action": "Independent immutable review of f80c53f0; publish only after approval, then require exact-head CI and post-merge exact-main verification.",
   "observed_branch": "fix/formal-tla-artifact-availability",
   "observed_dirty": 0,
   "observed_head": "f80c53f0cdf5be9f81715009f13fbc6a050093ba",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T14:00:44+00:00",
+  "updated_at": "2026-09-09T14:01:14+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -233,3 +233,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T14:00:44+00:00: Recorded command exit 0; command argv SHA-256
   62c6d86ae3c21d70bad0ec693eb4e7c4d52791e70b7f75f60c529594475711d4.
+
+- 2026-09-09T14:01:14+00:00: Signed immutable AR-0877 candidate
+  f80c53f0cdf5be9f81715009f13fbc6a050093ba, tree a1c21ad9a41d1814702e766af66711bd61370490, exact
+  parent b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b. Clean exact eight-path scope; SSH signature and
+  exact DCO valid; diff-check, exact-range repository policy, path-scoped and commit-range Gitleaks,
+  source headers 18/18, privacy scan, ShellCheck, actionlint, zizmor, cargo-deny/audit, 90.64%
+  workspace coverage, and failure-path suite pass. Focused acquisition 7/7, source provenance 4/4,
+  pin 1/1, full formal tests/docs, root fmt/clippy/workspace tests/docs/release pass. Real offline
+  TLC positive (3709 states/depth 17), stale mutation negative, Alloy positive/six mutants, and
+  clean deterministic source build reproduce exact 8c200a88 output. One broad directory Gitleaks
+  exit was generated target output only and superseded by exact source/range scans; one
+  repository-policy exit used literal WORKTREE and was operator-only, superseded by correct checks.
+  No mutable prerelease repin, no AR-0704 path, and no prohibited private host identifier.
