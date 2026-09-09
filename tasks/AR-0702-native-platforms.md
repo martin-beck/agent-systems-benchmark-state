@@ -18,11 +18,11 @@
   "plan": "../plans/AR-0702.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Exercise native x86_64 and aarch64 including booted openEuler kernels.",
-  "task_revision": 293,
+  "task_revision": 294,
   "title": "Validate native Linux kernels and architectures",
-  "updated_at": "2026-09-07T07:45:14+00:00",
+  "updated_at": "2026-09-09T10:36:11+00:00",
   "worktree_key": "agent-systems-benchmark-native-platforms"
 }
 ---
@@ -795,3 +795,7 @@ Implementation has not started. Read the linked plan before claiming.
   separately proved exact composite runner label and one ephemeral-compatible canary, but found
   public job log runner/machine identity exposure and a canary missing a main-ref guard; coordinator
   added AR-0835 for remediation.
+
+- 2026-09-09T10:36:11+00:00: User policy makes native ARM64 evidence optional; require the completed
+  pinned QEMU AArch64 portability lane where applicable and retain native ARM64 only as documented
+  future qualification.
