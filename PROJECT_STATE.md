@@ -11,19 +11,19 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #31 | `feature/native-platforms@bdaf9c108226` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #107 | `docs/local-llm-testing-recommendations@4a23069336be` | `main` | CLEAN | - | docs: recommend deterministic LLM test modes |
+| #107 | `docs/local-llm-testing-recommendations@4a23069336be` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | docs: recommend deterministic LLM test modes |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34324949844 | `4a23069336be` | pull_request | Fault assurance | queued:- |
-| 34324949820 | `4a23069336be` | pull_request | Agent Workflow Quality shadow | queued:- |
-| 34324949810 | `4a23069336be` | pull_request | Huawei MIT source headers | queued:- |
-| 34324949776 | `4a23069336be` | pull_request | Rust verification | queued:- |
-| 34324949765 | `4a23069336be` | pull_request | Formal assurance | queued:- |
-| 34324949724 | `4a23069336be` | pull_request | Emulated aarch64 portability | queued:- |
-| 34324949706 | `4a23069336be` | pull_request | Repository quality | queued:- |
+| 34324949844 | `4a23069336be` | pull_request | Fault assurance | in_progress:- |
+| 34324949820 | `4a23069336be` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 34324949810 | `4a23069336be` | pull_request | Huawei MIT source headers | completed:success |
+| 34324949776 | `4a23069336be` | pull_request | Rust verification | in_progress:- |
+| 34324949765 | `4a23069336be` | pull_request | Formal assurance | in_progress:- |
+| 34324949724 | `4a23069336be` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 34324949706 | `4a23069336be` | pull_request | Repository quality | in_progress:- |
 | 34323225772 | `624d4c050ab1` | push | Formal assurance | completed:success |
 | 34323225771 | `624d4c050ab1` | push | Emulated aarch64 portability | completed:success |
 | 34323225738 | `624d4c050ab1` | push | Repository quality | completed:success |
