@@ -2,7 +2,7 @@
 {
   "branch": "feature/workbuddy-provenance",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T05:15:01+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -18,15 +18,15 @@
   "observed_branch": "feature/workbuddy-provenance",
   "observed_dirty": 0,
   "observed_head": "9aad1317bdcaabcec2e62a856ff6d0b3ac757f46",
-  "owner": "replay_20260909",
+  "owner": "",
   "plan": "../plans/AR-0863.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Pin WorkBuddy source, package, and license provenance.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Pin WorkBuddy source, package, and license provenance",
-  "updated_at": "2026-09-09T03:17:13+00:00",
+  "updated_at": "2026-09-09T03:18:06+00:00",
   "worktree_key": "agent-systems-benchmark-workbuddy-provenance"
 }
 ---
@@ -54,3 +54,14 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-09T03:17:13+00:00: Recorded command exit 1; command argv SHA-256
   7f86ac116c4b310a833a163050deb6af78cde960e72f11131ba72b3c4fa5f201.
+
+- 2026-09-09T03:18:06+00:00: Blocked with exact evidence: official WorkBuddy pages
+  https://www.workbuddy.ai/ and https://copilot.tencent.com/work/ expose dynamically served
+  macOS/Windows installers and account-backed service only; official installation docs state Windows
+  10+ and macOS 12+ but publish no immutable artifact URL, checksum, signature, source repository,
+  dependency lock, or noninteractive protocol. GitHub search found Tencent/workbuddy-bench
+  (benchmark only) and third-party mirrors/proxies, none authoritative executable provenance. No
+  product files changed; clean declared worktree preserved. Next action: obtain an authorized
+  immutable Tencent WorkBuddy installer/source publication with SHA-256/signature, license and
+  dependency closure, plus a credential-free protocol test boundary; do not substitute mirrors,
+  proxies, or private artifacts.
