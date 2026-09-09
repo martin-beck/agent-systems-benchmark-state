@@ -10,6 +10,12 @@ Never edit this file directly.
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Qualify pinned OpenJiuwen live execution. | Implement the three owned loopback fixtures; prove pinned edit/tool/usage/cancel/cleanup/network denial, keeping support fail closed until all executable checks pass. | replay_20260906 |
 | P1 | [AR-0895](tasks/AR-0895-verify-coordination-content.md): Verify every coordination-content pull request | Close the workflow path-filter gap that lets coordination-content pull requests skip strict state consistency and DCO checks. | Independent immutable review candidate fb147b0a8702ca6cb6340eb756c9464b66d5bd2a/tree 16fbe831; separately shorten the two out-of-scope invalid next_action values on live state main, then rerun schema/generated-view gates before publication. | quality_20260906 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Qualify one pinned MockAgents executable before deterministic-double CI integration. | Qualify the exact MockAgents v0.5.0 executable against the complete hostile synthetic protocol and isolation suite; do not unblock AR-0890 unless every required case passes. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -62,7 +68,6 @@ Never edit this file directly.
 | P1 | [AR-0874](tasks/AR-0874-automatic-workflow-refresh.md): Automate workflow documentation refresh | Automatically refresh or reject stale workflow documentation and CI captures when essential user-visible behavior changes. | Add essential-change detection, deterministic regeneration, and reviewed update automation for workflows and captures. | - |
 | P1 | [AR-0892](tasks/AR-0892-llm-mode-comparative-evidence.md): Compare LLM test and inference evidence modes | Quantify what each LLM execution mode proves without pooling unlike evidence or hiding harness saturation. | Execute balanced synthetic, strict replay, local inference, and remote live comparisons and publish bounded claims and capacity evidence. | - |
 | P1 | [AR-0893](tasks/AR-0893-cli-local-llm-setup.md): Document CLI setup for LLM doubles and local inference | Provide executable beginner-safe CLI workflows for negotiated LLM modes without claiming unfinished TUI parity. | Add concise CLI setup, preflight, run, inspect, compare, and teardown workflows only for exact supported mock and local profiles. | - |
-| P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Qualify one pinned MockAgents executable before deterministic-double CI integration. | Qualify the exact MockAgents v0.5.0 executable against the complete hostile synthetic protocol and isolation suite; do not unblock AR-0890 unless every required case passes. | - |
 | P2 | [AR-0602](tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit the pinned CSB MonitorFactory and benchmark outputs against ASB metric contracts and controlled contention oracles. | - |
 | P2 | [AR-0894](tasks/AR-0894-tui-local-llm-parity.md): Add TUI parity for supported LLM modes | Add tested TUI parity for supported LLM setup and diagnostics only after CLI and existing TUI evidence are stable. | After CLI and existing TUI CI-evidence dependencies complete, implement discoverable TUI parity for negotiated supported profiles and modes. | - |
 | P2 | [AR-0903](tasks/AR-0903-release-qualification.md): Package and qualify the first release | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. | - |
