@@ -2,7 +2,7 @@
 {
   "branch": "fix/formal-oci-image-identity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T17:36:00+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003",
     "AR-0878",
@@ -14,15 +14,15 @@
   "observed_branch": "fix/formal-oci-image-identity",
   "observed_dirty": 0,
   "observed_head": "156f7e011867956cb3bfaf5f511d65340f1b840e",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0906.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Make deterministic formal source builds verify OCI image identity portably across Docker engines.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Verify formal OCI build identity portably",
-  "updated_at": "2026-09-09T16:16:36+00:00",
+  "updated_at": "2026-09-09T16:22:44+00:00",
   "worktree_key": "agent-systems-benchmark-formal-oci-image-identity"
 }
 ---
@@ -177,3 +177,9 @@ instead of assuming an engine's local configuration ID equals the registry manif
   hosted runner-release drift, outside the exact 14-path integration diff. Candidate and PRs
   #120/#121 unchanged; no merge attempted. Earlier Gitleaks zero-scan was operator typo in base OID;
   corrected 5-commit scan passed.
+
+- 2026-09-09T16:22:44+00:00: Hosted combined PR #122 proves formal, quality, Rust, fault/fuzz,
+  headers, AWQ, and emulated-aarch64 green at f385fb27; native workflow run 34375035653 fails
+  because rolling ubuntu-24.04 reports 24.04.5 while immutable qualification requires exact 24.04.4.
+  Preserve PRs #120/#121/#122 and f385fb27 unchanged; route conditional hosted portability versus
+  native qualification to AR-0907.
