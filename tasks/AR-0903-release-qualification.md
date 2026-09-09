@@ -15,6 +15,9 @@
     "AR-0811",
     "AR-0818",
     "AR-0823",
+    "AR-0897",
+    "AR-0898",
+    "AR-0899",
     "AR-0901",
     "AR-0902"
   ],
@@ -26,9 +29,9 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Deliver reproducible native release artifacts with complete support and evidence statements.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Package and qualify the first release",
-  "updated_at": "2026-09-06T21:42:00+00:00",
+  "updated_at": "2026-09-09T13:31:55+00:00",
   "worktree_key": "agent-systems-benchmark-release-qualification"
 }
 ---
