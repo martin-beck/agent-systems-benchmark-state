@@ -7,7 +7,7 @@
     "AR-0857"
   ],
   "id": "AR-0880",
-  "next_action": "Audit exact three-path diff, run full workspace/formal/fault/privacy/supply gates, then create an SSH-signed+DCO immutable candidate for independent review; do not resume AR-0859 yet.",
+  "next_action": "Independent immutable review exact candidate 343998ada0a057e177fb528eddc9f0f80ca6db3a (tree 88cff0f4f0bf0f0235ae68f1eb1e904da7f33268, parent 513c1d926458f1cb6a26d3f7277dc7d9b1496df3); current origin/main has advanced, so do not publish or rebase without coordinator authorization.",
   "observed_branch": "fix/openjiuwen-runtime-closure",
   "observed_dirty": 0,
   "observed_head": "343998ada0a057e177fb528eddc9f0f80ca6db3a",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Repair OpenJiuwen runtime closure",
-  "updated_at": "2026-09-09T07:52:47+00:00",
+  "updated_at": "2026-09-09T07:53:32+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-runtime-closure"
 }
 ---
@@ -131,3 +131,16 @@ a dependency, avoiding a completion cycle while AR-0859 remains blocked on this 
 
 - 2026-09-09T07:52:47+00:00: Recorded command exit 0; command argv SHA-256
   ebfe67ca3427432c175f656c45f1c93fe6ffab8b63a1456d8749c9782a9ec918.
+
+- 2026-09-09T07:53:32+00:00: Immutable candidate checkpoint: SSH-signed+DCO commit
+  343998ada0a057e177fb528eddc9f0f80ca6db3a, tree 88cff0f4f0bf0f0235ae68f1eb1e904da7f33268, parent
+  513c1d926458f1cb6a26d3f7277dc7d9b1496df3; clean exact three owned paths, 264 insertions/5
+  deletions. Full workspace fmt/Clippy/tests/docs/release exit 0; locked formal suite exit 0;
+  repository policy exact range exit 0; cargo-deny and cargo-audit exit 0; actionlint and zizmor
+  exit 0; mutation sentinels 7/7 caught; exact staged and commit Gitleaks scans no findings;
+  workspace/critical cargo-llvm-cov floors exit 0 (critical replay 97.84% lines). Exact online and
+  offline hash-required OpenJiuwen environments contain identical 170-package inventories, and
+  exact-wheel import/entrypoint test passes. Whole-tree no-git Gitleaks alone found one inherited
+  generated target/doc private-key pattern; exact source diff scans are clean and generated output
+  is not committed. Current origin/main bf66ad4198a2a96fd284765b98a60acdcef12eac differs from
+  candidate parent; hold for independent review/rebase direction.
