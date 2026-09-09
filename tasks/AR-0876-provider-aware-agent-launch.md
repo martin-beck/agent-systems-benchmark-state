@@ -2,7 +2,7 @@
 {
   "branch": "feature/provider-aware-agent-launch",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T03:05:30+00:00",
+  "claim_expires": "2026-09-09T03:09:39+00:00",
   "depends_on": [
     "AR-0102",
     "AR-0103",
@@ -25,9 +25,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply validated provider selections at the authoritative agent launch boundary and reject conflicting runtime configuration.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Wire provider-aware agent launches",
-  "updated_at": "2026-09-09T01:06:53+00:00",
+  "updated_at": "2026-09-09T01:09:39+00:00",
   "worktree_key": "agent-systems-benchmark-provider-aware-agent-launch"
 }
 ---
@@ -219,3 +219,5 @@ Implementation has not started. Read the linked plan before claiming.
   formal CI retry showed GitHub replaced the TLC asset again; signed commit 7c9daf7 pins the current
   release URL bytes (asset 551679598, 4489230 bytes, digest 13885c09...). Local temporal runner
   passes. PR #93 now reruns at 7c9daf7.
+
+- 2026-09-09T01:09:39+00:00: Heartbeat by replay_20260909.
