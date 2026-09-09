@@ -2,7 +2,7 @@
 {
   "branch": "feature/extended-workloads",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T06:11:43+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0402",
     "AR-0403"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/extended-workloads",
   "observed_dirty": 0,
   "observed_head": "8596a7fd0dba6d9a861cdaa276777f771be69c27",
-  "owner": "codex-longrun-workloads-20260909",
+  "owner": "",
   "plan": "../plans/AR-0404.md",
   "priority": "P3",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Evaluate SWE-bench Pro, BigCodeBench, EvalPlus and LiveCodeBench as optional suites.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Expand established benchmark catalogue",
-  "updated_at": "2026-09-09T04:11:43+00:00",
+  "updated_at": "2026-09-09T04:12:15+00:00",
   "worktree_key": "agent-systems-benchmark-extended-workloads"
 }
 ---
@@ -238,3 +238,9 @@ Implementation has not started. Read the linked plan before claiming.
   d3b26a7d90a4026943dd3e556bfdd02db2e2e4a350bb3bff3f7831606d8deba2.
 
 - 2026-09-09T04:11:43+00:00: Heartbeat by codex-longrun-workloads-20260909.
+
+- 2026-09-09T04:12:15+00:00: Released AR-0404 done. Signed feature 8596a7f merged as DCO-repaired
+  merge cfc49c8 plus signed normal ancestry repair dc79eda. Exact-main post-merge runs all green:
+  Rust 34309709953, Formal 34309709955, Fault 34309710049, Quality 34309709991, Emulated aarch64
+  34309709981, Headers 34309709948. Focused validator/pytest, cargo workload tests, fmt, Clippy,
+  policy and DCO passed; platform unittest limitation was missing local jsonschema only.
