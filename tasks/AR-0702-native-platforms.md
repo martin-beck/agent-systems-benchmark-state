@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-platforms",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T14:36:14+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0701",
     "AR-0103",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/native-platforms",
   "observed_dirty": 0,
   "observed_head": "6e5dbd619d27259eebe99b33af6d1dba45a61908",
-  "owner": "native-policy-20260909",
+  "owner": "",
   "plan": "../plans/AR-0702.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Qualify native x86_64 and required emulated AArch64 portability; track native ARM64 as optional future evidence.",
-  "task_revision": 318,
+  "task_revision": 319,
   "title": "Validate native Linux kernels and architectures",
-  "updated_at": "2026-09-09T11:22:55+00:00",
+  "updated_at": "2026-09-09T11:54:31+00:00",
   "worktree_key": "agent-systems-benchmark-native-platforms"
 }
 ---
@@ -856,3 +856,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T11:09:28+00:00: Recorded command exit 1; command argv SHA-256
   e76c536644d075991c63b42e00f4b13054aaa7b8fcee3cb3846484889cd5eb44.
+
+- 2026-09-09T11:54:31+00:00: Merged product PR #31 as b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b after
+  exact-head native x86_64, pinned QEMU AArch64, repository-quality, Rust, formal, fault,
+  Huawei/MIT-header, and AWQ checks passed. Native ARM64 remains optional future claim-scoped
+  evidence.
