@@ -2,21 +2,21 @@
 {
   "branch": "fix/main-merge-integrity",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-09T23:41:27+00:00",
   "depends_on": [
     "AR-0003"
   ],
   "id": "AR-0897",
   "next_action": "Restore green exact-main commit-policy evidence and prevent unsigned or non-DCO GitHub-generated merge commits.",
-  "owner": "",
+  "owner": "replay_20260906",
   "plan": "../plans/AR-0897.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-09T20:41:24+00:00",
+  "updated_at": "2026-09-09T20:41:27+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -32,3 +32,5 @@ Implementation has not started. Read the linked plan before claiming.
   unowned task with no existing branch, PR, worktree, or durable product effect; its
   integration-policy/docs/fixture scope is disjoint from active AR-0907 hosted-platform paths,
   AR-0908 asb-cli test path, and held formal integration.
+
+- 2026-09-09T20:41:27+00:00: Claimed by replay_20260906.
