@@ -11,7 +11,7 @@
   "id": "AR-0877",
   "next_action": "Audit authoritative TLA+ v1.8.0 release metadata and replace the current partial repin with bounded approved-host acquisition, exact offline cache verification, fail-closed mutation fixtures, and preserved TLC/Alloy proofs.",
   "observed_branch": "fix/formal-tla-artifact-availability",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "dca243ab7b8cbb0b2b49a568dec99c517e0719c2",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0877.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T01:16:06+00:00",
+  "updated_at": "2026-09-09T01:17:56+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
