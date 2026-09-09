@@ -13,16 +13,16 @@
   "next_action": "Continue serialized polling of PR #106 rebased head c6b76fa; merge only when every restarted required check is green.",
   "observed_branch": "feature/one-line-local-install",
   "observed_dirty": 0,
-  "observed_head": "c6b76fa76519a7b1e227d3ad5d61e161621c62ff",
+  "observed_head": "bf9e9fe625daf717fb841be9ff1998f8cfb03e80",
   "owner": "codex-longrun-one-line-install-20260909",
   "plan": "../plans/AR-0821.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Turn a single documented command into a safe guided local ASB and TUI first run.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "Add guided one-line local installation",
-  "updated_at": "2026-09-09T06:52:56+00:00",
+  "updated_at": "2026-09-09T06:53:01+00:00",
   "worktree_key": "agent-systems-benchmark-one-line-install"
 }
 ---
