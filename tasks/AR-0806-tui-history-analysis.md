@@ -10,7 +10,7 @@
     "AR-1001"
   ],
   "id": "AR-0806",
-  "next_action": "Fresh independent immutable review of second rebased candidate 2dbbde184ef78a93b63ec1a3b5eb5b02bca0d269, tree bb552eb2663f31bdd650ac69bb0198f2ce253155, exact parent/current origin/main 2219839812d9255288b8b4e0afc52396915e85a6. Verify '=' range-diff from 031a451, clean two-path scope, signature/DCO, gates, duplicate-page atomicity and AR-0875 limit; then exact force-with-lease PR #89 update and fresh exact-head CI.",
+  "next_action": "PR #89 was guarded-force-updated to approved 2dbbde184ef78a93b63ec1a3b5eb5b02bca0d269, but live main advanced again to 5b2236b105a97756a55c7ac64360cb3616ef979f and GitHub reports mergeStateStatus DIRTY with no replacement checks yet. Do not merge. Reconcile the new base/conflict, obtain authorization for another controlled rebase, rerun full gates and immutable review, then update exact-head CI.",
   "observed_branch": "feature/tui-history-analysis",
   "observed_dirty": 0,
   "observed_head": "2dbbde184ef78a93b63ec1a3b5eb5b02bca0d269",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-09T00:09:06+00:00",
+  "updated_at": "2026-09-09T00:09:38+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
@@ -222,3 +222,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T00:09:06+00:00: Recorded command exit 0; command argv SHA-256
   39f2d3eb2630819fe7fe5e025021bd99581342e825abe3648d63252f1b90379e.
+
+- 2026-09-09T00:09:38+00:00: Executed exact force-with-lease PR #89 update from 031a451 to approved
+  2dbbde184ef78a93b63ec1a3b5eb5b02bca0d269. Immediate live query confirms exact head but
+  base/current main advanced from reviewed parent 2219839812d9255288b8b4e0afc52396915e85a6 to
+  5b2236b105a97756a55c7ac64360cb3616ef979f; GitHub reports DIRTY and statusCheckRollup is currently
+  empty. Merge/release are held fail-closed. Duplicate-page repair and AR-0875 limitation remain
+  preserved.
