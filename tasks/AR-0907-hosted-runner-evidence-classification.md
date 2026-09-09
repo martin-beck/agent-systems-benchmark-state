@@ -8,7 +8,7 @@
     "AR-0848"
   ],
   "id": "AR-0907",
-  "next_action": "Hold unpublished signed candidate faca6aa for independent immutable review; publish only after approval and require fresh exact-head CI.",
+  "next_action": "Hold unpublished 2953f23470e5d6ad31fc1098f0b967e1e8b263e6 for fresh independent immutable review; publish only after approval and hosted exact-head CI.",
   "observed_branch": "fix/hosted-runner-evidence-classification",
   "observed_dirty": 0,
   "observed_head": "2953f23470e5d6ad31fc1098f0b967e1e8b263e6",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T17:44:26+00:00",
+  "updated_at": "2026-09-09T17:45:31+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -215,3 +215,16 @@ patch release has advanced.
 
 - 2026-09-09T17:44:26+00:00: Recorded command exit 0; command argv SHA-256
   9c46012ea7d8037a2d52c0b470ebde4423aa6729ef0b557795045f4cba83d72a.
+
+- 2026-09-09T17:45:31+00:00: Reviewer repair complete. Candidate
+  2953f23470e5d6ad31fc1098f0b967e1e8b263e6, tree 5673b12807d3821ec9a3933a8058848b6e54e7aa, parent
+  faca6aa9ddddbbed8b925cfbf6a380d622726902; clean two-commit seven-path range on exact base
+  b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b, SSH signatures and DCO verified. Public workflow now
+  distinguishes hosted portability from native qualification; exact closed route schema and semantic
+  pair validate before upload; failures remove artifacts and emit no raw diagnostics; executable
+  hosted/native positives plus malformed, ambiguous and unknown-route no-artifact negatives pass.
+  Final handoffctl gate batch exit 0: both signatures, DCO, exact-range policy, contract
+  consistency, manifest validation, all platform tests, failure paths, artifact outcome, Ruff,
+  strict mypy boundary, actionlint, zizmor, Gitleaks, cargo fmt/clippy workspace all-targets -D
+  warnings, diff/clean checks. Unsupported native qualification on rolling hosted images remains
+  explicit.
