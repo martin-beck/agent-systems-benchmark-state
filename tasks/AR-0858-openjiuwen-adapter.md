@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-adapter",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T05:41:51+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0857"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/openjiuwen-adapter",
   "observed_dirty": 0,
   "observed_head": "7d9191c99c0e55814845a8809aa22d7a0aefb9ae",
-  "owner": "replay_20260909",
+  "owner": "",
   "plan": "../plans/AR-0858.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Implement the OpenJiuwen contract and capability adapter.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Implement the OpenJiuwen contract and capability adapter",
-  "updated_at": "2026-09-09T03:42:20+00:00",
+  "updated_at": "2026-09-09T05:42:45+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-adapter"
 }
 ---
@@ -38,3 +38,7 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-09T03:42:13+00:00: Recorded command exit 0; command argv SHA-256
   778339161495177d0b361e78351e9dda800f60e44c4966cdd3e9cd7b37631fbe.
+
+- 2026-09-09T05:42:45+00:00: Recovered expired claim formerly owned by replay_20260909. Lease
+  expired; preserved declared OpenJiuwen worktree, branch, clean observed head, and prior progress
+  for explicit coordinator review before any re-claim.
