@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-adapter",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T08:04:17+00:00",
+  "claim_expires": "2026-09-09T08:10:14+00:00",
   "depends_on": [
     "AR-0857"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the OpenJiuwen contract and capability adapter.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Implement the OpenJiuwen contract and capability adapter",
-  "updated_at": "2026-09-09T06:10:04+00:00",
+  "updated_at": "2026-09-09T06:10:14+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-adapter"
 }
 ---
@@ -78,3 +78,5 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   manifest, explicit no-live-capability registration, loopback/replay credential-free provider
   capability matrix, exact model/endpoint/profile translation, constructor-controlled binding proof,
   and hostile constructor/profile tests. Focused tests and clippy pass.
+
+- 2026-09-09T06:10:14+00:00: Heartbeat by codex-longrun-openjiuwen-adapter-20260909.
