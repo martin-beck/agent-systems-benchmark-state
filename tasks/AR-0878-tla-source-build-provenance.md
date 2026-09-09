@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0878",
-  "next_action": "Request fresh independent immutable review of signed candidate 71d0f914d3b9b353dd7cde840538b5d5fdec2cab, tree 74f118de20be097510b182cd42e442c8baaeace9, parent 38c729425309b3061ea361fbd349a961374bd64b, base ca6e75916a8c9831b9107377cd48d731463c272a. Do not publish or merge before review; hosted exact-head Kani remains required after publication authorization.",
+  "next_action": "Request fresh independent immutable review of signed candidate 7ae562dbb15a686f3e1ef304de0fd5dfbeb0613b, tree ee763d09fba2119c88f3e6b30a22e8f8d3c570d3, parent 905607b8f57b1d3248c16a565443d39e5245af7c, base 096dc4f275c05ad81772f443b6f22dddfb92da3d. Do not publish or merge before review; hosted exact-head Kani remains required after publication authorization.",
   "observed_branch": "feature/tla-source-build-provenance",
   "observed_dirty": 0,
   "observed_head": "7ae562dbb15a686f3e1ef304de0fd5dfbeb0613b",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 224,
+  "task_revision": 225,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T06:29:08+00:00",
+  "updated_at": "2026-09-09T06:29:38+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -764,3 +764,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T06:29:08+00:00: Recorded command exit 0; command argv SHA-256
   ddce4ccaba6421c205a7bf6eef798f2146e79b497633f8832974d143ae174cca.
+
+- 2026-09-09T06:29:38+00:00: Controlled rebase onto live 096dc4f275c05ad81772f443b6f22dddfb92da3d
+  complete. Exact signed DCO range: fd23184b9f4d6190552597e87e070ebf9c17fa3b,
+  e8dfa4c11f57dd8480840b6f4472dfa268b3d8ae, 905607b8f57b1d3248c16a565443d39e5245af7c,
+  7ae562dbb15a686f3e1ef304de0fd5dfbeb0613b. Range-diff is four exact equals and scope remains 11
+  paths. Gates green: workspace fmt, Clippy, tests, docs, release; full locked formal and focused
+  4/4; 13 deletion trials and dual offline output SHA256
+  8c200a88d151c6c183c8dbc57a6b633d135e7a2b18242a3afbf243a9e4b68d3e; TLC positive/stale negative;
+  Alloy positive/mutants; mutation 7/7; contention/cancel cleanup; policy, Ruff, ShellCheck 0.9.0,
+  actionlint, zizmor, Gitleaks, cargo-deny/audit; signatures, DCO, diff-check, clean tree. llvm-cov
+  runs 4/4 with zero instrumentable Rust regions; local Kani unavailable, hosted exact-head required
+  after publication.
