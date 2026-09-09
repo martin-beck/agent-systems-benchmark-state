@@ -8,7 +8,7 @@
     "AR-0889"
   ],
   "id": "AR-0896",
-  "next_action": "Run post-merge exact-main workflows, then complete hostile fault/tool/cancellation/backpressure and network-denial evidence or release blocked if required behavior is unavailable.",
+  "next_action": "Publish a signed+DCO follow-up commit atop 004d87252b065679d80ca9674356b47146754528, rerun exact-head and post-merge gates, then release only after all green.",
   "observed_branch": "test/mockagents-executable-qualification",
   "observed_dirty": 0,
   "observed_head": "3f1de4106adf9ad6c34759638d70e9001709ab0a",
@@ -17,10 +17,10 @@
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "PR #115 merged; qualification harness integrated, with hostile unsupported cases explicitly bounded.",
-  "task_revision": 14,
+  "summary": "Post-merge Repository quality failed on merge DCO; repair is preempting feature work.",
+  "task_revision": 15,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-09T10:08:28+00:00",
+  "updated_at": "2026-09-09T10:09:06+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -60,3 +60,7 @@ synthetic fixture for black-box executable evidence.
   004d87252b065679d80ca9674356b47146754528 after all 14 exact-head checks passed. Post-merge six
   required workflows are running. The implementation does not claim AR-0890 readiness; unsupported
   cases remain explicit.
+
+- 2026-09-09T10:09:06+00:00: Failure evidence: post-merge Repository quality run 34338578572 reports
+  merge commit 004d87252b065679d80ca9674356b47146754528 lacks a matching Signed-off-by trailer. No
+  product defect was reported. Feature work is preempted pending reviewed DCO repair.
