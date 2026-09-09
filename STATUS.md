@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 8 |
 | **Planned** | Defined work awaiting promotion or dependencies | 42 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 113 |
+| **Done** | Accepted, integrated, and durably verified | 114 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -197,7 +197,7 @@ flowchart LR
         AR_0879["AR-0879 - Done"]:::status_done
         AR_0880["AR-0880 - In progress"]:::status_in_progress
         AR_0888["AR-0888 - Done"]:::status_done
-        AR_0889["AR-0889 - In progress"]:::status_in_progress
+        AR_0889["AR-0889 - Done"]:::status_done
         AR_0890["AR-0890 - Planned"]:::status_planned
         AR_0891["AR-0891 - Planned"]:::status_planned
         AR_0892["AR-0892 - Planned"]:::status_planned
@@ -923,12 +923,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0880](tasks/AR-0880-openjiuwen-runtime-closure.md): Repair OpenJiuwen runtime closure | replay_20260906 | Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification. | Fresh independent immutable review of strengthened exact candidate 34c1bc0eea8164dbe9349f7a3b26649d8aaa02b2 (tree 49fe1f2fb06d487c2c4384346934465fda29a9de, parent 513c1d926458f1cb6a26d3f7277dc7d9b1496df3); hold publication and rebase because current origin/main e89a2e44db829e429dedadd7a7f2ee408f338acf has advanced. |
-| P1 | [AR-0889](tasks/AR-0889-llm-fixture-scenario-contract.md): Define the LLM fixture and scenario contract | codex-longrun-llm-fixture-contract-20260909 | Define generated synthetic LLM scenarios without weakening the existing content-addressed cassette replay contract. | Specify and implement the selected synthetic fixture and scenario contract with strict evidence labels, privacy bounds, and fail-closed validation. |
 
 ### Blocked (8)
 
@@ -990,7 +989,7 @@ flowchart LR
 | P2 | [AR-0903](tasks/AR-0903-release-qualification.md): Package and qualify the first release | Unclaimed | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (113)
+### Done (114)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1087,6 +1086,7 @@ flowchart LR
 | P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | Unclaimed | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Release AR-0878 done after final state reconcile, snapshot, and live doctor; exact-main product verification is complete. |
 | P1 | [AR-0879](tasks/AR-0879-local-llm-testing-recommendations.md): Plan deterministic LLM doubles and local inference | Unclaimed | Research deterministic LLM test doubles and local inference options, document ASB recommendations, and create implementation-ready follow-up ARs. | Obtain independent exact-head review of green product PR 107 at bda6cc8a and state PR 16 at 9de11a52; state global schema remains pre-existingly blocked only by active AR-0878 next_action length. |
 | P1 | [AR-0888](tasks/AR-0888-llm-double-conformance-spike.md): Spike deterministic LLM double conformance | Unclaimed | Measure deterministic LLM test doubles against one hostile ASB protocol and isolation suite before selecting any dependency. | Build the isolated OpenAI and Anthropic conformance spike, execute exact pinned candidates, and publish pass, fail, unsupported, and untested evidence. |
+| P1 | [AR-0889](tasks/AR-0889-llm-fixture-scenario-contract.md): Define the LLM fixture and scenario contract | Unclaimed | Define generated synthetic LLM scenarios without weakening the existing content-addressed cassette replay contract. | Specify and implement the selected synthetic fixture and scenario contract with strict evidence labels, privacy bounds, and fail-closed validation. |
 | P1 | [AR-0901](tasks/AR-0901-formal-assurance.md): Prove critical state and concurrency invariants | Unclaimed | Use bounded proofs and model tests for safety-critical domain logic. | Await independent immutable-head review of PR 14 at 2a495a99; repair any findings without merging or releasing. |
 | P1 | [AR-0902](tasks/AR-0902-fault-assurance.md): Add fuzz mutation and lifecycle fault campaigns | Unclaimed | Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection. | Run final coordination reconcile/snapshot/live doctor/full validation and release AR-0902 done only if clean synchronized state remains exact. |
 | P1 | [AR-0904](tasks/AR-0904-contract-consistency.md): Machine-check protocol and artifact consistency | Unclaimed | Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree. | Obtain fresh exact-main CI for signed+DCO main 92569367347b49c497780fa40195971ff655b0f4 using a resolvable base, then rerun final clean synchronized state validation and release only if all workflows pass. |

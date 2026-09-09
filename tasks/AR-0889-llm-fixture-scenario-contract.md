@@ -2,7 +2,7 @@
 {
   "branch": "feat/llm-fixture-scenario-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T10:33:00+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0888"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feat/llm-fixture-scenario-contract",
   "observed_dirty": 0,
   "observed_head": "4d15bbc7e1d06e26b21364c3fdbc00827803e584",
-  "owner": "codex-longrun-llm-fixture-contract-20260909",
+  "owner": "",
   "plan": "../plans/AR-0889.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Define generated synthetic LLM scenarios without weakening the existing content-addressed cassette replay contract.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Define the LLM fixture and scenario contract",
-  "updated_at": "2026-09-09T08:33:00+00:00",
+  "updated_at": "2026-09-09T08:33:09+00:00",
   "worktree_key": "agent-systems-benchmark-llm-fixture-scenario-contract"
 }
 ---
@@ -137,3 +137,7 @@ Turn selected spike findings into an ASB-owned synthetic fixture/scenario contra
   1dae5844f661fb04cc070d14aeb48b9e872b6d332d3ba2f8f7aa1dad88038027.
 
 - 2026-09-09T08:33:00+00:00: Heartbeat by codex-longrun-llm-fixture-contract-20260909.
+
+- 2026-09-09T08:33:09+00:00: Acceptance verified: signed PR #110 candidate 4d15bbc passed all
+  required checks and merged no-ff as 9f502f7a3a781031770ad96efb4570ed206423a9; all six exact-main
+  post-merge workflows are green. Focused six tests, Ruff, strict mypy, and diff-check passed.
