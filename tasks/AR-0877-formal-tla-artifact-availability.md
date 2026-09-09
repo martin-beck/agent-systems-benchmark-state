@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T01:02:47+00:00",
+  "updated_at": "2026-09-09T01:15:21+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -52,3 +52,6 @@ Implementation has not started. Read the linked plan before claiming.
   concurrency, hardlink/owner-mode, bounded retry, and comprehensive offline/cache fault boundary.
   Preserve this partial repin as provenance and implement the remaining fail-closed acquisition
   contract without changing authoritative TLA/Alloy models.
+
+- 2026-09-09T01:15:21+00:00: Recorded command exit 0; command argv SHA-256
+  70f1fead417b3551ce217b80588f20f9dbde4f1dcadb78008ccc4be6ff343440.
