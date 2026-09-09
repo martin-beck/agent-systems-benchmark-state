@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0704",
-  "next_action": "Add bounded CLI operations and lifecycle fixtures around the green atomic ledger, then run full applicable gates and prepare a focused signed candidate.",
+  "next_action": "Independent review of 5a0570f; then add native cell/resource/boot evidence before AR completion.",
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "5a0570fbce2fa77ab4baf6b34d2632d289a5ab36",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-09T12:49:38+00:00",
+  "updated_at": "2026-09-09T12:52:08+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -142,3 +142,15 @@ must not block this AR or its dependents.
 
 - 2026-09-09T12:49:38+00:00: Recorded command exit 0; command argv SHA-256
   3049280bee1bf2c89ec265727326e27bf58c81334bfb2fa92110b845d09d6576.
+
+- 2026-09-09T12:52:08+00:00: Prepared focused product candidate
+  5a0570fbce2fa77ab4baf6b34d2632d289a5ab36 (tree 019d46abbd72997f042f57087cf8a9e79f586928, parent
+  b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b). Exact scope is two new paths:
+  tools/capacity/lifecycle.py and tests/capacity/test_lifecycle.py; worktree clean. Commit is
+  SSH-signed and contains matching Signed-off-by. Corrected immutable gates pass: 13/13 focused
+  tests, source-header unittest, Ruff format, Ruff lint, strict mypy, diff-check, exact two-path
+  assertion, and private-host/path/token grep. Earlier exit 2 was only an invalid checker filename;
+  corrected module gate passed. Review boundary: this candidate proves the provider-neutral local
+  lifecycle/ledger and CLI only; it does not yet establish native Debian/openEuler provisioning,
+  boot identity/persistence, resource enforcement, or native execution evidence, so AR-0704 must
+  remain in progress and unpublished pending independent review and remaining evidence.
