@@ -2,22 +2,22 @@
 {
   "branch": "fix/hosted-runner-evidence-classification",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-09T19:25:36+00:00",
   "depends_on": [
     "AR-0702",
     "AR-0848"
   ],
   "id": "AR-0907",
   "next_action": "Add a closed hosted-portability schema and conditional workflow boundary while preserving exact native qualification and its 24.04.4 evidence.",
-  "owner": "",
+  "owner": "quality_20260906",
   "plan": "../plans/AR-0907.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T16:25:32+00:00",
+  "updated_at": "2026-09-09T16:25:36+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -31,3 +31,5 @@ patch release has advanced.
 - 2026-09-09T16:25:32+00:00: Dependencies AR-0702 and AR-0848 are done. The focused
   hosted-portability schema/workflow fence is disjoint from preserved AR-0877/AR-0906 candidates and
   keeps exact native qualification immutable.
+
+- 2026-09-09T16:25:36+00:00: Claimed by quality_20260906.
