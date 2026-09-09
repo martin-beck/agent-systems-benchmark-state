@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 127,
+  "task_revision": 128,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T17:38:48+00:00",
+  "updated_at": "2026-09-09T17:43:28+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -436,3 +436,6 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   fuzz-artifact cleanup corrected, and incomplete Kani setup repaired without product changes.
   Focused credential-free bwrap loopback suite remains 6/6 in 37.94s with network namespace,
   edit/tool/usage/cancellation/reap/privacy and fail-closed negatives. No publication performed.
+
+- 2026-09-09T17:43:28+00:00: Recorded command exit 2; command argv SHA-256
+  cb76f2eadc7d84a08940326c617e2bf9e8f94bdca84bf86b5de2ac1eaaae9c80.
