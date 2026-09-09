@@ -10,7 +10,7 @@
     "AR-0902"
   ],
   "id": "AR-0906",
-  "next_action": "Await independent immutable review of 90caa785; publish only after approval and fresh exact-head CI.",
+  "next_action": "Await fresh independent immutable review of repaired candidate 156f7e0; do not publish before approval.",
   "observed_branch": "fix/formal-oci-image-identity",
   "observed_dirty": 0,
   "observed_head": "156f7e011867956cb3bfaf5f511d65340f1b840e",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make deterministic formal source builds verify OCI image identity portably across Docker engines.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Verify formal OCI build identity portably",
-  "updated_at": "2026-09-09T15:10:57+00:00",
+  "updated_at": "2026-09-09T15:11:29+00:00",
   "worktree_key": "agent-systems-benchmark-formal-oci-image-identity"
 }
 ---
@@ -114,3 +114,15 @@ instead of assuming an engine's local configuration ID equals the registry manif
 
 - 2026-09-09T15:10:57+00:00: Recorded command exit 0; command argv SHA-256
   62470d7979da2a3d85dfb1a33eeb4d4fdfb77b0d71e39dae8499a3c78c2a3320.
+
+- 2026-09-09T15:11:29+00:00: Review-block repair complete in replacement signed candidate
+  156f7e011867956cb3bfaf5f511d65340f1b840e (tree 740616c7ec9806a4ec6f429aad7d7e90036a7987, exact
+  parent b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b). build.sh now direct-pipes inspect JSON to the
+  16385-byte verifier under pipefail, suppresses raw inspect stderr, and emits bounded generic
+  classification. Fake-Docker integration tests prove invalid/oversized/private-stderr projections
+  exit 65 without a run marker and prove valid input reaches the exact offline license-check argv;
+  focused suite 5/5. Full formal/workspace fmt, clippy, tests, docs, release, deterministic build
+  SHA-256 8c200a88/4512486 bytes, actionlint, zizmor, policy, headers, deny, audit, coverage,
+  failure paths, ShellCheck, Gitleaks and privacy pass. Earlier exit 127 was operator-only: unquoted
+  RUSTDOCFLAGS split warnings into a command; corrected invocation passed. Clean exact six-path
+  scope, SSH signature and DCO pass; unpublished.

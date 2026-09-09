@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | Repair/rebase the fail-closed TLA provenance pin, then rerun PR #119 exact-head CI; do not merge. | contracts_20260906 |
-| P1 | [AR-0906](tasks/AR-0906-portable-oci-build-image-identity.md): Verify formal OCI build identity portably | Make deterministic formal source builds verify OCI image identity portably across Docker engines. | Await independent immutable review of 90caa785; publish only after approval and fresh exact-head CI. | quality_20260906 |
+| P1 | [AR-0906](tasks/AR-0906-portable-oci-build-image-identity.md): Verify formal OCI build identity portably | Make deterministic formal source builds verify OCI image identity portably across Docker engines. | Await fresh independent immutable review of repaired candidate 156f7e0; do not publish before approval. | quality_20260906 |
 
 ## Open
 
