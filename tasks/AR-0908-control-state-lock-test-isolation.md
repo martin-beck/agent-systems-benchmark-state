@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Harden asb-cli control-state lock test isolation and deterministic reopen coverage.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Harden control-state lock test isolation",
-  "updated_at": "2026-09-09T20:23:41+00:00",
+  "updated_at": "2026-09-09T20:24:04+00:00",
   "worktree_key": "agent-systems-benchmark-control-state-lock-test-isolation"
 }
 ---
@@ -148,3 +148,6 @@ non-deterministic isolation signal rather than claiming a production lock defect
 
 - 2026-09-09T20:23:35+00:00: Recorded command exit 0; command argv SHA-256
   c5a5d17fa1cad4473d544af54fabc10e2e7c0d32c1ae8f8f4af89ecc6628cd2d.
+
+- 2026-09-09T20:24:04+00:00: Recorded command exit 0; command argv SHA-256
+  26cafe5973eebd904304fd6a6d09e626e29f0c102a53abc3121bba052da94571.
