@@ -15,7 +15,7 @@
     "AR-0869"
   ],
   "id": "AR-0876",
-  "next_action": "Monitor PR #93 exact-head workflows; immediately diagnose and repair any failure, otherwise merge only after all required checks and independent review are green.",
+  "next_action": "Monitor PR #93 exact-head CI at 251d676; preempt feature work on any failure and repair same branch.",
   "observed_branch": "feature/provider-aware-agent-launch",
   "observed_dirty": 0,
   "observed_head": "251d6769a6ed86171cca7838471974d8b73486b7",
@@ -25,9 +25,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply validated provider selections at the authoritative agent launch boundary and reject conflicting runtime configuration.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Wire provider-aware agent launches",
-  "updated_at": "2026-09-09T00:51:52+00:00",
+  "updated_at": "2026-09-09T00:52:22+00:00",
   "worktree_key": "agent-systems-benchmark-provider-aware-agent-launch"
 }
 ---
@@ -147,3 +147,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T00:51:52+00:00: Recorded command exit 0; command argv SHA-256
   f2dad8c5e2ba3038e703841a610082e1c4b3888488207889e5e917cd68aa5a1d.
+
+- 2026-09-09T00:52:22+00:00: CI failure on original head 45999650 was diagnosed from job logs:
+  formal TLC asset 551007111 returned HTTP 404. Root cause was an upstream release asset
+  replacement, not launch code. Repaired same branch with signed+DCO commit 251d676, pinning
+  official asset 551658253, size 4489044, digest 0d1f3b48..., updated formal metadata/tests/docs;
+  local formal test and temporal runner passed. PR #93 now reruns at exact head 251d676.
