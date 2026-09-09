@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish linked beginner workflows for setup, multi-agent runs, progress, comparison, recording, and replay with and without the TUI.",
-  "task_revision": 110,
+  "task_revision": 111,
   "title": "Publish beginner workflow documentation",
-  "updated_at": "2026-09-09T02:02:50+00:00",
+  "updated_at": "2026-09-09T02:03:26+00:00",
   "worktree_key": "agent-systems-benchmark-beginner-workflows"
 }
 ---
@@ -323,3 +323,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-09T02:02:50+00:00: Post-merge exact-main formal job failed because the TLA+ v1.8.0 URL was
   replaced again at 01:52:25Z: asset 551753628, 4490679 bytes, SHA-256 a1fc0bfe.... Download/hash
   reproduction confirms the failure is external artifact drift, not workflow content.
+
+- 2026-09-09T02:03:26+00:00: Recorded command exit 0; command argv SHA-256
+  5345cd4b5f66285dc80cddfe59c0a95475263f9ff88d25d2639fce3c300aa4b9.
