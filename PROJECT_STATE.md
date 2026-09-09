@@ -16,9 +16,9 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34310769313 | `7e17c61ca773` | push | Formal assurance | queued:- |
+| 34310769313 | `7e17c61ca773` | push | Formal assurance | in_progress:- |
 | 34310769180 | `7e17c61ca773` | push | Repository quality | in_progress:- |
-| 34310769087 | `7e17c61ca773` | push | Fault assurance | queued:- |
+| 34310769087 | `7e17c61ca773` | push | Fault assurance | in_progress:- |
 | 34310769070 | `7e17c61ca773` | push | Rust verification | in_progress:- |
 | 34310769058 | `7e17c61ca773` | push | Emulated aarch64 portability | in_progress:- |
 | 34310769041 | `7e17c61ca773` | push | Huawei MIT source headers | completed:success |
