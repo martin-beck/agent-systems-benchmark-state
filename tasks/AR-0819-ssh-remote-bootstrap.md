@@ -2,7 +2,7 @@
 {
   "branch": "feature/ssh-remote-bootstrap",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T05:18:58+00:00",
+  "claim_expires": "2026-09-09T05:27:00+00:00",
   "depends_on": [
     "AR-0803",
     "AR-0804"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use configured SSH hosts as the safe default path to a remote runner and help establish dedicated key authentication.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Add SSH remote discovery and bootstrap",
-  "updated_at": "2026-09-09T03:26:57+00:00",
+  "updated_at": "2026-09-09T03:27:00+00:00",
   "worktree_key": "agent-systems-benchmark-ssh-remote-bootstrap"
 }
 ---
@@ -65,3 +65,5 @@ Implementation has not started. Read the linked plan before claiming.
   parsing, OpenSSH ssh -G resolution, fixed no-shell stdio probe argv, private recent ledger,
   confirmation-gated restricted Ed25519 enrollment, atomic authorized_keys update, docs, 24 asb-tui
   tests, Clippy, policy, DCO, and diff checks all pass.
+
+- 2026-09-09T03:27:00+00:00: Heartbeat by replay_20260909.
