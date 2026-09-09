@@ -10,7 +10,7 @@
     "AR-0315"
   ],
   "id": "AR-0891",
-  "next_action": "Merge PR #114 at rebased exact head eed49592617a0a712482d4a341ae7b1f802fe04f onto current main 2a85872285e6de374e7ea48e3b062e4134bec49e2, then run post-merge exact-main verification.",
+  "next_action": "Create and push a signed no-ff merge object from the claimed feature worktree (worktree-fence-safe), then verify GitHub marks PR #114 merged and run post-merge exact-main checks.",
   "observed_branch": "feat/local-inference-provider-profiles",
   "observed_dirty": 0,
   "observed_head": "eed49592617a0a712482d4a341ae7b1f802fe04f",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server.",
-  "task_revision": 111,
+  "task_revision": 112,
   "title": "Qualify local inference provider profiles",
-  "updated_at": "2026-09-09T09:41:25+00:00",
+  "updated_at": "2026-09-09T09:41:29+00:00",
   "worktree_key": "agent-systems-benchmark-local-inference-provider-profiles"
 }
 ---
@@ -280,3 +280,8 @@ Use exact Ollama, llama.cpp, vLLM and LocalAI sources in `docs/LOCAL_LLM_TESTING
   660b6fe3aa50a94de9218235e8434fee0f2bf498738215506bd695a8bb7af256.
 
 - 2026-09-09T09:41:25+00:00: Heartbeat by codex-longrun-local-inference-profiles-20260909.
+
+- 2026-09-09T09:41:29+00:00: The normal main-worktree merge command exited 1 because upstream
+  worktree fencing correctly rejects a claimed AR-0891 worker mutating the separate product-main
+  worktree. Main remains clean at cd350831 and origin/main is 2a858722; use a signed commit-tree
+  merge/push from the declared feature worktree with an exact main-ref lease.
