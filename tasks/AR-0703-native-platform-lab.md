@@ -10,19 +10,19 @@
     "AR-0401"
   ],
   "id": "AR-0703",
-  "next_action": "Obtain explicit provider/account and cost authorization, least-privilege external credentials, quotas, and four genuine disposable Debian 13.6/openEuler 24.03 LTS-SP2 x86_64/aarch64 hosts; then implement reservation/provision/collect/destroy evidence without emulation.",
+  "next_action": "When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR.",
   "observed_branch": "feature/native-platform-lab",
   "observed_dirty": 0,
   "observed_head": "b1669203308db5a75fee1e78a45c6fc8e71f17ce",
   "owner": "",
   "plan": "../plans/AR-0703.md",
-  "priority": "P1",
+  "priority": "P4",
   "schema_version": 1,
   "status": "open",
-  "summary": "Provide genuine disposable native hosts for required Debian and openEuler platform qualification.",
-  "task_revision": 8,
+  "summary": "Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence.",
+  "task_revision": 9,
   "title": "Provision native platform qualification capacity",
-  "updated_at": "2026-09-09T10:52:47+00:00",
+  "updated_at": "2026-09-09T10:52:50+00:00",
   "worktree_key": "agent-systems-benchmark-native-platform-lab"
 }
 ---
@@ -63,3 +63,5 @@ openEuler or Debian kernel evidence. Containers, cross-builds and emulation cann
 
 - 2026-09-09T10:52:47+00:00: Native ARM64 capacity is optional future qualification and no longer
   blocks AR-0702 or other development.
+
+- 2026-09-09T10:52:50+00:00: Reclassified native ARM64 lab capacity as optional future evidence.
