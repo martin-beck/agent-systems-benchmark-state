@@ -2,7 +2,7 @@
 {
   "branch": "feature/install-lifecycle",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T09:18:20+00:00",
+  "claim_expires": "2026-09-09T09:19:33+00:00",
   "depends_on": [
     "AR-0104",
     "AR-0820",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Manage the complete installed lifecycle without losing configuration, history, runs, or trust state.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Add safe installation lifecycle management",
-  "updated_at": "2026-09-09T07:19:18+00:00",
+  "updated_at": "2026-09-09T07:19:33+00:00",
   "worktree_key": "agent-systems-benchmark-install-lifecycle"
 }
 ---
@@ -111,3 +111,5 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-09T07:19:18+00:00: PR #108 exact head c7d6da7 passed all 15 required checks and was signed
   no-ff merged as 624d4c0. One merge-boundary LOCK_TIMEOUT occurred and was retried successfully;
   begin exact-main post-merge verification.
+
+- 2026-09-09T07:19:33+00:00: Heartbeat by codex-longrun-install-lifecycle-20260909.
