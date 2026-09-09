@@ -2,7 +2,7 @@
 {
   "branch": "fix/formal-tla-artifact-availability",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T16:25:26+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003",
     "AR-0901",
@@ -13,15 +13,15 @@
   "observed_branch": "fix/formal-tla-artifact-availability",
   "observed_dirty": 0,
   "observed_head": "55fdd686eb1a4a8583fd37a088b20e5edb7e3b89",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0877.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T14:28:34+00:00",
+  "updated_at": "2026-09-09T14:35:57+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -337,3 +337,7 @@ Implementation has not started. Read the linked plan before claiming.
   is exact RepoDigests membership plus linux/amd64, but AR-0878 formal/tla-provenance/build.sh
   repeats the config-.Id assumption and is outside AR-0877 owned paths. Candidate and other checks
   remain preserved; no merge or repair mutation attempted pending serialized fence authorization.
+
+- 2026-09-09T14:35:57+00:00: PR #120 remains open at exact head 55fdd686. Exact-head Formal run
+  34363495390 exposed the portable OCI identity defect now isolated in dependency-free AR-0906;
+  preserve branch and resume AR-0877 only after AR-0906 integrates and the PR is rebased.
