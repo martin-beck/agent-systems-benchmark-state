@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-adapter",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T08:15:43+00:00",
+  "claim_expires": "2026-09-09T08:16:26+00:00",
   "depends_on": [
     "AR-0857"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the OpenJiuwen contract and capability adapter.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Implement the OpenJiuwen contract and capability adapter",
-  "updated_at": "2026-09-09T06:15:52+00:00",
+  "updated_at": "2026-09-09T06:16:26+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-adapter"
 }
 ---
@@ -134,3 +134,5 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   10-second lock deadline; no product or CI mutation was lost. Subsequent heartbeat succeeded and
   the exact PR checks remained failure-free. Upstream coordinator defect is escalated as issue #10 /
   PR #11.
+
+- 2026-09-09T06:16:26+00:00: Heartbeat by codex-longrun-openjiuwen-adapter-20260909.
