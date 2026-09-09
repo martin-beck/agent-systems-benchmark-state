@@ -10,7 +10,7 @@
     "AR-1001"
   ],
   "id": "AR-0806",
-  "next_action": "Independent immutable review exact candidate dc914626bb2fbf57fc7df15e7d37873142850fe7/tree 03a1db51 on parent dca243ab; if approved, guarded PR #89 update and fresh exact-head CI before merge.",
+  "next_action": "Repair or restore the pinned TLA+ v1.8.0 artifact boundary outside the AR-0806 two-path scope, then rerun exact-head Formal Assurance for PR #89; merge remains held until every required check is green.",
   "observed_branch": "feature/tui-history-analysis",
   "observed_dirty": 0,
   "observed_head": "dc914626bb2fbf57fc7df15e7d37873142850fe7",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-09T00:48:08+00:00",
+  "updated_at": "2026-09-09T00:49:17+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
@@ -306,3 +306,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T00:48:08+00:00: Recorded command exit 0; command argv SHA-256
   583623e2f397818bc56b3db8d815a607e2db9409dc68e7b356f6dcef9d1341c7.
+
+- 2026-09-09T00:49:17+00:00: PR #89 guarded update succeeded: exact head
+  dc914626bb2fbf57fc7df15e7d37873142850fe7 and base dca243ab7b8cbb0b2b49a568dec99c517e0719c2; GitHub
+  reports MERGEABLE. Exact-head Formal Assurance run 34296446841 failed only the TLC/Alloy job:
+  pinned TLA GitHub release asset API URL returned HTTP 404 at formal/run_temporal_models.sh fetch,
+  exit 22. A single failed-job rerun (attempt 2, job 102294281790) reproduced the same HTTP 404; no
+  further blind retry performed. Kani and both Loom jobs pass. This is a runner/tooling artifact
+  availability failure on an unchanged formal path: AR-0806 changes only crates/asb-tui/README.md
+  and crates/asb-tui/src/lib.rs, and exact-base main formal run 34294873227 previously passed. Other
+  exact-head jobs are still progressing, but the repeated terminal formal failure blocks
+  merge/release regardless. Candidate remains clean and immutable; no formal/workflow mutation was
+  made.
