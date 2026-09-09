@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T17:18:55+00:00",
+  "updated_at": "2026-09-09T17:20:59+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -124,3 +124,6 @@ patch release has advanced.
   import, missing jsonschema in system Python, one mistyped test filename, and Ruff-requested
   context consolidation; corrected commands are green. Dirty scope is exactly seven planned paths;
   f385fb27 and PRs #120/#121/#122 remain unchanged.
+
+- 2026-09-09T17:20:59+00:00: Recorded command exit 0; command argv SHA-256
+  76bae6a04d7e57cfe901b77289ca19d0548d2b017db5e59b9cea2437a0dedfcd.
