@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make deterministic formal source builds verify OCI image identity portably across Docker engines.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Verify formal OCI build identity portably",
-  "updated_at": "2026-09-09T14:36:00+00:00",
+  "updated_at": "2026-09-09T14:36:27+00:00",
   "worktree_key": "agent-systems-benchmark-formal-oci-image-identity"
 }
 ---
@@ -33,3 +33,6 @@ instead of assuming an engine's local configuration ID equals the registry manif
   six-path OCI verifier fence is disjoint from active AR-0877 and AR-0704 work.
 
 - 2026-09-09T14:36:00+00:00: Claimed by quality_20260906.
+
+- 2026-09-09T14:36:27+00:00: Recorded command exit 0; command argv SHA-256
+  cdcd326ab164f572ec8097b3acfae0b1487ac6fcd2490f76eaff129bd3f80646.
