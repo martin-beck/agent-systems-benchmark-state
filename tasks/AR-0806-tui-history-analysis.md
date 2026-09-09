@@ -2,7 +2,7 @@
 {
   "branch": "feature/tui-history-analysis",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T06:28:07+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0104",
     "AR-0203",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/tui-history-analysis",
   "observed_dirty": 0,
   "observed_head": "7fd21bbeddc5144f3eabe4edbdd545ad363bc2b7",
-  "owner": "codex-longrun-tui-20260909",
+  "owner": "",
   "plan": "../plans/AR-0806.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 127,
+  "task_revision": 128,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-09T04:28:07+00:00",
+  "updated_at": "2026-09-09T04:28:29+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
@@ -445,3 +445,9 @@ Implementation has not started. Read the linked plan before claiming.
   d3b26a7d90a4026943dd3e556bfdd02db2e2e4a350bb3bff3f7831606d8deba2.
 
 - 2026-09-09T04:28:07+00:00: Heartbeat by codex-longrun-tui-20260909.
+
+- 2026-09-09T04:28:29+00:00: Released AR-0806 done. Preserved branch rebased onto current main;
+  signed no-ff merge 2088419 was DCO-repaired as 7e3f173, followed by signed normal ancestry repair
+  7e17c61. Exact-main post-merge runs all green: Rust 34310769070, Formal 34310769313, Fault
+  34310769087, Quality 34310769180, Emulated aarch64 34310769058, Headers 34310769041. Focused cargo
+  test 27, Clippy, fmt, policy and DCO passed.

@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 7 |
 | **Planned** | Defined work awaiting promotion or dependencies | 43 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 102 |
+| **Done** | Accepted, integrated, and durably verified | 103 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -129,7 +129,7 @@ flowchart LR
         AR_0803["AR-0803 - Done"]:::status_done
         AR_0804["AR-0804 - Done"]:::status_done
         AR_0805["AR-0805 - Done"]:::status_done
-        AR_0806["AR-0806 - In progress"]:::status_in_progress
+        AR_0806["AR-0806 - Done"]:::status_done
         AR_0807["AR-0807 - Planned"]:::status_planned
         AR_0808["AR-0808 - Planned"]:::status_planned
         AR_0809["AR-0809 - Planned"]:::status_planned
@@ -872,11 +872,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0806](tasks/AR-0806-tui-history-analysis.md): Add terminal history and analysis | codex-longrun-tui-20260909 | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. | Repair merge DCO trailer and add a signed normal ancestry commit; rerun exact-main gates. |
 | P1 | [AR-0858](tasks/AR-0858-openjiuwen-adapter.md): Implement the OpenJiuwen contract and capability adapter | replay_20260909 | Implement the OpenJiuwen contract and capability adapter. | Implement the bounded agent contract, exact provider translation, and capability registration from the pinned protocol; keep live support unclaimed. |
 | P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | replay_20260906 | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Coordinator decision: amend the source-build lock to the 14 mechanically proven compile/dist inputs and keep the other 17 JARs as exact excluded-source inventory with a deletion/rebuild oracle, or require new authoritative evidence for the unmatched jpf-shell binary. Do not rebase or reuse generic SPDX receipts before this scope decision. |
 
@@ -940,7 +939,7 @@ flowchart LR
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Evaluate maintenance, licenses and reproducibility before integration. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (102)
+### Done (103)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1005,6 +1004,7 @@ flowchart LR
 | P1 | [AR-0803](tasks/AR-0803-frontend-control-api.md): Define the frontend control API | Unclaimed | Expose runner planning, launch, status, cancellation, history, and analysis through a stable frontend boundary. | Await coordinator authorization to integrate exact green PR #63 head 8d7d90014dbcf4df2f08be90b08392776d702a11; do not rewrite or merge meanwhile. |
 | P1 | [AR-0804](tasks/AR-0804-tui-settings-wizard.md): Build the terminal settings wizard | Unclaimed | Guide users through agents, providers, workloads, resources, replay, metrics, and output settings. | Monitor exact-main d51ee9c postmerge runs: Rust 34246605181, quality 34246605294, emulated-aarch64 34246605130, fault 34246605182, formal 34246605248. After all terminal success, run focused local verification and state doctor, then release with unsupported launch/transport/full-screen limits. |
 | P1 | [AR-0805](tasks/AR-0805-tui-run-control.md): Add terminal run control and status | Unclaimed | Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI. | Fresh independent immutable review of rebased candidate b44282a31e902175059f9fed350ce888cf4b82ec, tree 7a7732eae29be65f55b40ed3b6239533fac470fc, exact parent 32f79101da348896fdf0fd94c07356889a05b693. If approved, guarded force-with-lease update PR #86 and require fresh exact-head CI before merge. |
+| P1 | [AR-0806](tasks/AR-0806-tui-history-analysis.md): Add terminal history and analysis | Unclaimed | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. | Repair merge DCO trailer and add a signed normal ancestry commit; rerun exact-main gates. |
 | P1 | [AR-0819](tasks/AR-0819-ssh-remote-bootstrap.md): Add SSH remote discovery and bootstrap | Unclaimed | Use configured SSH hosts as the safe default path to a remote runner and help establish dedicated key authentication. | Integrate signed no-ff PR #98 onto current main, then run and verify all exact-main post-merge workflows before release. |
 | P1 | [AR-0830](tasks/AR-0830-aiws-runner-capacity.md): Provision hardened development host ASB runner capacity | Unclaimed | Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners. | Reboot persistence is deferred to AR-0833; AR-0830 proven scope is complete. |
 | P1 | [AR-0831](tasks/AR-0831-aiws-workflow-routing.md): Integrate development host ASB runners with GitHub workflows | Unclaimed | Route explicitly trusted ASB CI jobs to qualified development host runners while preserving disposable public-PR isolation. | Hold exact unpublished f55f98cc79b75226a537600258dde5e57333bdeb for independent immutable security review; publish only after approval. |
