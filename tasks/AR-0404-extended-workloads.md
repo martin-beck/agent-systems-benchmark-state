@@ -8,7 +8,7 @@
     "AR-0403"
   ],
   "id": "AR-0404",
-  "next_action": "Repair merge DCO trailer, force-with-lease main, then rerun all exact-main post-merge workflows.",
+  "next_action": "Add signed normal follow-up after rewritten merge so push range is resolvable; rerun exact-main post-merge workflows.",
   "observed_branch": "feature/extended-workloads",
   "observed_dirty": 0,
   "observed_head": "8596a7fd0dba6d9a861cdaa276777f771be69c27",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Evaluate SWE-bench Pro, BigCodeBench, EvalPlus and LiveCodeBench as optional suites.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Expand established benchmark catalogue",
-  "updated_at": "2026-09-09T04:06:29+00:00",
+  "updated_at": "2026-09-09T04:06:46+00:00",
   "worktree_key": "agent-systems-benchmark-extended-workloads"
 }
 ---
@@ -199,3 +199,7 @@ Implementation has not started. Read the linked plan before claiming.
   15d76f606f48fbb90a0a02dd23d50909990aaa90425805e9c87e5bed5f15f946.
 
 - 2026-09-09T04:06:29+00:00: Heartbeat by codex-longrun-workloads-20260909.
+
+- 2026-09-09T04:06:46+00:00: Quality run 34309607867 failed before policy evaluation because push
+  base cf9241a was force-replaced and unavailable in the rewritten history. No product check ran;
+  preserve cfc49c signed merge and restore valid ancestry with a normal follow-up push.
