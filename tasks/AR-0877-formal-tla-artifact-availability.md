@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T13:56:52+00:00",
+  "updated_at": "2026-09-09T13:59:19+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -218,3 +218,6 @@ Implementation has not started. Read the linked plan before claiming.
   repository policy and source-header tests passed. Corrective action is a path-scoped scan of the
   exact eight-file dirty diff (and git-range scan after commit), without treating build output as
   source evidence; no retry of the broad generated-artifact scan.
+
+- 2026-09-09T13:59:19+00:00: Recorded command exit 0; command argv SHA-256
+  5ab0a9460a00b6b8b324f6e7a4143958abc552642424ba87c985e734e1dd72f3.
