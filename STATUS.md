@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 49 |
 | **Future** | Deferred roadmap work | 0 |
@@ -191,7 +191,7 @@ flowchart LR
         AR_0873["AR-0873 - Planned"]:::status_planned
         AR_0874["AR-0874 - Planned"]:::status_planned
         AR_0875["AR-0875 - Planned"]:::status_planned
-        AR_0876["AR-0876 - Open"]:::status_open
+        AR_0876["AR-0876 - In progress"]:::status_in_progress
     end
     subgraph series_09["09 - Assurance"]
         direction TB
@@ -862,18 +862,18 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0806](tasks/AR-0806-tui-history-analysis.md): Add terminal history and analysis | quality_20260906 | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. | Rebase the approved AR-0806 one-path semantics onto current product main dca243ab, preserve the AR-0875 limitation, rerun exact range-diff/full gates, obtain fresh immutable review, then update PR #89 and rerun exact-head CI before merge. |
+| P1 | [AR-0876](tasks/AR-0876-provider-aware-agent-launch.md): Wire provider-aware agent launches | replay_20260909 | Apply validated provider selections at the authoritative agent launch boundary and reject conflicting runtime configuration. | Freeze and independently review the provider-aware launch contract before acquiring serialized asb-agents/asb-cli/Cargo fences. |
 
-### Open (3)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | Unclaimed | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Wait for a corrected immutable agent-workflow-coordinator v0.3.3+ release whose privacy exemption admits the legitimate session-like UUID fixture in vendored tests/test_sqlite_storage.py; then re-sync from a clean verified tag and continue state-owned header/checker/CI work without patching vendor. |
-| P1 | [AR-0876](tasks/AR-0876-provider-aware-agent-launch.md): Wire provider-aware agent launches | Unclaimed | Apply validated provider selections at the authoritative agent launch boundary and reject conflicting runtime configuration. | Freeze and independently review the provider-aware launch contract before acquiring serialized asb-agents/asb-cli/Cargo fences. |
 | P2 | [AR-0405](tasks/AR-0405-performance-workloads.md): Add performance and reproducibility workloads | Unclaimed | Assess SWE-Perf, SWE-fficiency and CORE-Bench for correctness-preserving optimization and reproducibility. | Audit the six-path fail-closed provenance checkpoint, run the complete applicable quality/privacy gates, and determine whether any suite can advance beyond planned without missing license and native paired-oracle evidence. |
 
 ### Blocked (5)
