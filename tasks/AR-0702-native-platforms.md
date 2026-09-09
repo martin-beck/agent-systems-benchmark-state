@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-platforms",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-09T14:36:14+00:00",
   "depends_on": [
     "AR-0701",
     "AR-0103",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/native-platforms",
   "observed_dirty": 0,
   "observed_head": "bdaf9c108226f34ec6098f75b51fd601da9e9571",
-  "owner": "",
+  "owner": "native-policy-20260909",
   "plan": "../plans/AR-0702.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Exercise native x86_64 and aarch64 including booted openEuler kernels.",
-  "task_revision": 294,
+  "task_revision": 295,
   "title": "Validate native Linux kernels and architectures",
-  "updated_at": "2026-09-09T10:36:11+00:00",
+  "updated_at": "2026-09-09T10:36:14+00:00",
   "worktree_key": "agent-systems-benchmark-native-platforms"
 }
 ---
@@ -799,3 +799,5 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-09T10:36:11+00:00: User policy makes native ARM64 evidence optional; require the completed
   pinned QEMU AArch64 portability lane where applicable and retain native ARM64 only as documented
   future qualification.
+
+- 2026-09-09T10:36:14+00:00: Claimed by native-policy-20260909.
