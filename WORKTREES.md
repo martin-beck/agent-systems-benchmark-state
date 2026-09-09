@@ -75,7 +75,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-mockagents-executable-qualification` | `test/mockagents-executable-qualification` | `3f1de4106adf` | 0 | behind 4, ahead 0 |
 | `agent-systems-benchmark-modern-terminal-rendering` | `feature/modern-terminal-rendering` | `fd1989a096a3` | 0 | behind 41, ahead 0 |
 | `agent-systems-benchmark-native-platform-lab` | `feature/native-platform-lab` | `b1669203308d` | 0 | behind 247, ahead 0 |
-| `agent-systems-benchmark-native-platforms` | `feature/native-platforms` | `bdaf9c108226` | 0 | behind 267, ahead 17 |
+| `agent-systems-benchmark-native-platforms` | `DETACHED` | `a4e1a9de985a` | 9 | behind 0, ahead 0 |
+| changed files | - | - | - | `.github/workflows/native-platforms.yml`, `config/quality-tools.json`, `crates/asb-runtime/tests/sandbox_boundary.rs`, `docs/PLATFORMS.md`, `docs/QUALITY.md`, `tests/platforms/test_native_evidence.py`, `tests/platforms/test_validate_manifests.py`, `tools/platforms/native_evidence.py`, `tools/platforms/validate_manifests.py` |
 | `agent-systems-benchmark-native-x86-capacity` | `feature/native-x86-capacity` | `45604cd323c5` | 0 | behind 187, ahead 0 |
 | `agent-systems-benchmark-one-line-install` | `feature/one-line-local-install` | `bf9e9fe625da` | 0 | behind 25, ahead 0 |
 | `agent-systems-benchmark-opendesk-strict-replay-http-compatibility` | `feature/opendesk-strict-replay-http-compatibility` | `f26216bde125` | 0 | behind 227, ahead 0 |
