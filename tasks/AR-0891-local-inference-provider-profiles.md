@@ -10,7 +10,7 @@
     "AR-0315"
   ],
   "id": "AR-0891",
-  "next_action": "Qualify grouped Ollama, llama.cpp, vLLM, and LocalAI profiles with exact engine, model, hardware, protocol, isolation, and reproducibility evidence.",
+  "next_action": "Use the validated manifest as the gate, then obtain immutable tokenizer/model/backend and repeated hardware evidence for at least one candidate before making any profile selectable or extending the CLI catalog.",
   "observed_branch": "feat/local-inference-provider-profiles",
   "observed_dirty": 2,
   "observed_head": "9f502f7a3a781031770ad96efb4570ed206423a9",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Qualify local inference provider profiles",
-  "updated_at": "2026-09-09T08:41:43+00:00",
+  "updated_at": "2026-09-09T08:41:59+00:00",
   "worktree_key": "agent-systems-benchmark-local-inference-provider-profiles"
 }
 ---
@@ -62,3 +62,9 @@ Use exact Ollama, llama.cpp, vLLM and LocalAI sources in `docs/LOCAL_LLM_TESTING
   ab1fa736790ffddd7b0f2e0b666555ce6c819ae6c665d808e1e872a15ca39bf5.
 
 - 2026-09-09T08:41:43+00:00: Heartbeat by codex-longrun-local-inference-profiles-20260909.
+
+- 2026-09-09T08:41:59+00:00: Milestone: added tools/local-inference-profiles/profiles-v1.json plus
+  fail-closed validator, hostile tests, and documentation. All four grouped profiles are explicitly
+  unqualified/non-selectable because complete model/tokenizer/runtime/hardware/repeated-trial
+  evidence is not yet present; no runtime support was overclaimed. Focused tests, Ruff, strict mypy,
+  canonical digest, and diff-check pass.

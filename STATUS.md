@@ -928,7 +928,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0880](tasks/AR-0880-openjiuwen-runtime-closure.md): Repair OpenJiuwen runtime closure | replay_20260906 | Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification. | Fresh independent immutable review of exact candidate 01bbe00c597166adc5feaa58206c7b9a4ba037be (tree a067045347a6a326ead8562357836c41e5ff9d7d, parent 513c1d926458f1cb6a26d3f7277dc7d9b1496df3); hold publication/rebase because origin/main 9f502f7a3a781031770ad96efb4570ed206423a9 advanced. |
-| P1 | [AR-0891](tasks/AR-0891-local-inference-provider-profiles.md): Qualify local inference provider profiles | codex-longrun-local-inference-profiles-20260909 | Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server. | Qualify grouped Ollama, llama.cpp, vLLM, and LocalAI profiles with exact engine, model, hardware, protocol, isolation, and reproducibility evidence. |
+| P1 | [AR-0891](tasks/AR-0891-local-inference-provider-profiles.md): Qualify local inference provider profiles | codex-longrun-local-inference-profiles-20260909 | Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server. | Use the validated manifest as the gate, then obtain immutable tokenizer/model/backend and repeated hardware evidence for at least one candidate before making any profile selectable or extending the CLI catalog. |
 
 ### Blocked (8)
 
