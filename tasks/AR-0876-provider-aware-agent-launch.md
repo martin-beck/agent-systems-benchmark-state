@@ -15,7 +15,7 @@
     "AR-0869"
   ],
   "id": "AR-0876",
-  "next_action": "Create signed+DCO replacement merge from dca243a + 7c9daf7, guarded force-with-lease origin/main 716a8f1, then rerun postmerge gates.",
+  "next_action": "Create signed+DCO bridge merge with first parent bc071fd and second parent 716a8f1, guarded force-with-lease, then rerun postmerge gates.",
   "observed_branch": "feature/provider-aware-agent-launch",
   "observed_dirty": 0,
   "observed_head": "7c9daf795b02d1692e87a6be4d0087c163050ad3",
@@ -25,9 +25,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply validated provider selections at the authoritative agent launch boundary and reject conflicting runtime configuration.",
-  "task_revision": 87,
+  "task_revision": 88,
   "title": "Wire provider-aware agent launches",
-  "updated_at": "2026-09-09T01:16:15+00:00",
+  "updated_at": "2026-09-09T01:17:14+00:00",
   "worktree_key": "agent-systems-benchmark-provider-aware-agent-launch"
 }
 ---
@@ -250,3 +250,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T01:16:15+00:00: Recorded command exit 0; command argv SHA-256
   ac61978be9ce6a6cbcab8cb2ddfa1912f1e51e545bae44b1f73502ffc9392a71.
+
+- 2026-09-09T01:17:14+00:00: Post-merge repository-quality retry on signed replacement bc071fd
+  failed before policy evaluation because workflow RANGE_BASE remained old unreachable merge
+  716a8f1: invalid revision range. The working tree and formal/Rust postmerge gates are otherwise
+  green/in progress. Preserve both histories and add a signed bridge merge with first parent bc071fd
+  so the configured base remains reachable; then rerun exact-main workflows.
