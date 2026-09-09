@@ -12,7 +12,7 @@
   "id": "AR-0820",
   "next_action": "Build signed platform manifests and relocatable ASB plus asb-tui installation bundles.",
   "observed_branch": "feature/verifiable-install-artifacts",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "d3ff88cd70a320a4d961422ed66a5407b336dee9",
   "owner": "codex-longrun-install-20260909",
   "plan": "../plans/AR-0820.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish verifiable native bundles and metadata that a small bootstrapper can select safely.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Publish verifiable installation artifacts",
-  "updated_at": "2026-09-09T05:30:43+00:00",
+  "updated_at": "2026-09-09T05:30:48+00:00",
   "worktree_key": "agent-systems-benchmark-install-artifacts"
 }
 ---

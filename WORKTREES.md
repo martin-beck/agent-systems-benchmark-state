@@ -60,7 +60,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-gemini-generate-content-replay` | `feature/gemini-generate-content-replay` | `93c19625f910` | 0 | behind 179, ahead 0 |
 | `agent-systems-benchmark-gemini-thinking-config-contract` | `feature/gemini-thinking-config-contract` | `0aff7023cacf` | 0 | behind 177, ahead 0 |
 | `agent-systems-benchmark-huawei-mit-headers` | `fix/huawei-mit-license-headers` | `7add29f1d24c` | 0 | behind 61, ahead 0 |
-| `agent-systems-benchmark-install-artifacts` | `feature/verifiable-install-artifacts` | `d3ff88cd70a3` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-install-artifacts` | `feature/verifiable-install-artifacts` | `d3ff88cd70a3` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-bundle/src/lib.rs` |
 | `agent-systems-benchmark-interaction-aware-redaction` | `feature/interaction-aware-redaction` | `867861c95c19` | 0 | behind 164, ahead 0 |
 | `agent-systems-benchmark-kernel-diagnostics` | `feature/kernel-diagnostics` | `d11f81837374` | 0 | behind 41, ahead 0 |
 | `agent-systems-benchmark-modern-terminal-rendering` | `feature/modern-terminal-rendering` | `fd1989a096a3` | 0 | behind 2, ahead 0 |
@@ -109,7 +110,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `410ecc95b80e` | 0 | behind 294, ahead 0 |
 | `agent-systems-benchmark-terminal-interface` | `feature/terminal-interface` | `d2e7b66ff6af` | 0 | behind 239, ahead 0 |
 | `agent-systems-benchmark-terminal-workloads` | `feature/terminal-workloads` | `3e67bdfc3ce0` | 0 | behind 56, ahead 0 |
-| `agent-systems-benchmark-tla-source-build-provenance` | `feature/tla-source-build-provenance` | `6e83e0893a0e` | 0 | behind 17, ahead 3 |
+| `agent-systems-benchmark-tla-source-build-provenance` | `feature/tla-source-build-provenance` | `6e83e0893a0e` | 5 | behind 17, ahead 3 |
+| changed files | - | - | - | `docs/formal/TLA_TOOL_PROVENANCE.md`, `formal/tla-provenance/README.md`, `formal/tla-provenance/fixtures/source-mutations.json`, `formal/tla-provenance/source-build.toml`, `formal/tla-provenance/verify.py` |
 | `agent-systems-benchmark-trace-interoperability` | `feature/trace-interoperability` | `921cf004f8aa` | 0 | behind 111, ahead 0 |
 | `agent-systems-benchmark-tui-history-analysis` | `feature/tui-history-analysis` | `7fd21bbeddc5` | 0 | behind 11, ahead 0 |
 | `agent-systems-benchmark-tui-multi-agent-provider-selection` | `feature/tui-multi-agent-provider-selection` | `679244e3af61` | 0 | behind 37, ahead 0 |
