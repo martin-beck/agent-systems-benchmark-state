@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Harden asb-cli control-state lock test isolation and deterministic reopen coverage.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Harden control-state lock test isolation",
-  "updated_at": "2026-09-09T20:24:32+00:00",
+  "updated_at": "2026-09-09T20:27:14+00:00",
   "worktree_key": "agent-systems-benchmark-control-state-lock-test-isolation"
 }
 ---
@@ -167,3 +167,6 @@ non-deterministic isolation signal rather than claiming a production lock defect
   exact workspace/critical coverage passes; full locked workspace fmt, Clippy, tests, rustdoc,
   release, contract/schema, failure/artifact, deny/audit pass. Both commits SSH-signed+DCO;
   aggregate exact-range policy/Gitleaks/diff/privacy/scope and clean tree pass.
+
+- 2026-09-09T20:27:14+00:00: Recorded command exit 0; command argv SHA-256
+  3dd4b53be6f2c03bc99d28c4064f2427fadccc60eecf5462e2696404e769df78.
