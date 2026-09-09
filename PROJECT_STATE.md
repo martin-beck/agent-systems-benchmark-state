@@ -17,7 +17,7 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 34327512515 | `e89a2e44db82` | push | Huawei MIT source headers | completed:success |
-| 34327512499 | `e89a2e44db82` | push | Formal assurance | in_progress:- |
+| 34327512499 | `e89a2e44db82` | push | Formal assurance | completed:success |
 | 34327512492 | `e89a2e44db82` | push | Repository quality | in_progress:- |
 | 34327512454 | `e89a2e44db82` | push | Fault assurance | in_progress:- |
 | 34327512448 | `e89a2e44db82` | push | Emulated aarch64 portability | in_progress:- |
