@@ -10,7 +10,7 @@
     "AR-0902"
   ],
   "id": "AR-0877",
-  "next_action": "Hold PR #120 at exact 65142ea. Formal run 34371022004 fails only the known OCI .Id portability boundary; rebase after reviewed AR-0906/PR #121 integrates, then rerun all CI.",
+  "next_action": "Independent review local bridge 49ae13f/tree 05141d3; keep PR #120 at 65142ea and PR #121 unchanged. After AR-0906 merges, rebase the AR-0877 range, rerun gates, then exact-lease update PR #120.",
   "observed_branch": "fix/formal-tla-artifact-availability",
   "observed_dirty": 0,
   "observed_head": "49ae13f7116cfa7a353bf0d8939517c5a306ffd0",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 119,
+  "task_revision": 120,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T15:45:29+00:00",
+  "updated_at": "2026-09-09T15:46:18+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -427,3 +427,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T15:45:23+00:00: Recorded command exit 0; command argv SHA-256
   25faf8266c3f82a475073c0d06ee612984fc3ddd5fa622e326a52c2271a2c333.
+
+- 2026-09-09T15:46:18+00:00: Added acyclic AR-0906 dependency in signed state 5e5ff329. Local
+  signed+DCO bridge 49ae13f7116cfa7a353bf0d8939517c5a306ffd0 (tree
+  05141d330c159bd97623242b08d57e64945ebb03, parent 65142ea) removes only run_temporal_models.sh
+  duplicate Docker config-ID equality and tests that identity remains delegated to
+  tla-provenance/build.sh. Serialized focused 9/9 and full formal 38/38 pass; policy, bash syntax,
+  rustfmt, diff-check and diff-Gitleaks pass. Parallel focused run first hit environmental ETXTBSY
+  (7/9); serialized rerun passed. Remote PR heads remain unchanged.
