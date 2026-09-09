@@ -72,8 +72,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-provider-profile-contract` | `feature/provider-profile-contract` | `2870b68d0ca0` | 0 | behind 215, ahead 0 |
 | `agent-systems-benchmark-provider-recording-choice` | `feature/provider-recording-choice` | `e8fed7e572b6` | 0 | behind 38, ahead 0 |
 | `agent-systems-benchmark-quality-gates` | `feature/quality-gates` | `748537c25e3a` | 0 | behind 296, ahead 0 |
-| `agent-systems-benchmark-record-replay-user-workflows` | `feature/record-replay-user-workflows` | `5b2236b105a9` | 7 | behind 0, ahead 0 |
-| changed files | - | - | - | `Cargo.lock`, `crates/asb-cli/Cargo.toml`, `crates/asb-cli/src/lib.rs`, `crates/asb-replay/src/lib.rs`, `crates/asb-replay/src/redaction.rs`, `crates/asb-tui/src/lib.rs`, `crates/asb-replay/src/workflow.rs` |
+| `agent-systems-benchmark-record-replay-user-workflows` | `feature/record-replay-user-workflows` | `5b2236b105a9` | 11 | behind 0, ahead 0 |
+| changed files | - | - | - | `Cargo.lock`, `crates/asb-cli/Cargo.toml`, `crates/asb-cli/src/lib.rs`, `crates/asb-cli/tests/guide_examples.rs`, `crates/asb-replay/src/lib.rs`, `crates/asb-replay/src/redaction.rs`, `crates/asb-tui/README.md`, `crates/asb-tui/src/lib.rs`, `docs/QUICKSTART.md`, `docs/examples/guide-contract.json`, `crates/asb-replay/src/workflow.rs` |
 | `agent-systems-benchmark-recovery-models` | `feature/recovery-models` | `a288bb3485aa` | 0 | behind 118, ahead 0 |
 | `agent-systems-benchmark-redacted-request-pointer-replay` | `feature/redacted-request-pointer-replay` | `d7492ef5e9ad` | 0 | behind 147, ahead 0 |
 | `agent-systems-benchmark-reliability-fairness` | `feature/reliability-fairness` | `eb28ca7aeae5` | 0 | behind 193, ahead 0 |
