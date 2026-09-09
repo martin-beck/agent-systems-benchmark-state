@@ -11,7 +11,7 @@ Generated from local Git and GitHub. Do not edit.
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
 | #31 | `feature/native-platforms@bdaf9c108226` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #114 | `feat/local-inference-provider-profiles@91b728d4307e` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | Qualify the pinned Ollama local profile |
+| #114 | `feat/local-inference-provider-profiles@9bc7fe7f91ef` | `main` | CLEAN | - | Qualify the pinned Ollama local profile |
 
 ## Recent workflows
 
@@ -28,4 +28,4 @@ Generated from local Git and GitHub. Do not edit.
 | 34334165596 | `91b728d4307e` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 34334165543 | `91b728d4307e` | pull_request | Repository quality | completed:failure |
 | 34334165522 | `91b728d4307e` | pull_request | Fault assurance | completed:success |
-| 34334165490 | `91b728d4307e` | pull_request | Rust verification | in_progress:- |
+| 34334165490 | `91b728d4307e` | pull_request | Rust verification | completed:success |
