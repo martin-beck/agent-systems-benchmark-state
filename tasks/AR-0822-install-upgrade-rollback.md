@@ -16,9 +16,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Manage the complete installed lifecycle without losing configuration, history, runs, or trust state.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Add safe installation lifecycle management",
-  "updated_at": "2026-09-09T07:07:32+00:00",
+  "updated_at": "2026-09-09T07:07:35+00:00",
   "worktree_key": "agent-systems-benchmark-install-lifecycle"
 }
 ---
@@ -35,3 +35,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-09T07:07:24+00:00: Claimed by codex-longrun-install-lifecycle-20260909.
 
 - 2026-09-09T07:07:32+00:00: Heartbeat by codex-longrun-install-lifecycle-20260909.
+
+- 2026-09-09T07:07:35+00:00: Recorded command exit 0; command argv SHA-256
+  46d4d8735238a0821f3057456fa8fc8e317069526b6b4699be0eeb091f1d4897.
