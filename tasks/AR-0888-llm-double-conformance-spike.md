@@ -2,7 +2,7 @@
 {
   "branch": "test/llm-double-conformance-spike",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T10:14:26+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0879"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "test/llm-double-conformance-spike",
   "observed_dirty": 0,
   "observed_head": "78e6a51ce99ed407db8bbfe2487a1f20f0c27f2b",
-  "owner": "codex-longrun-llm-double-conformance-20260909",
+  "owner": "",
   "plan": "../plans/AR-0888.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Measure deterministic LLM test doubles against one hostile ASB protocol and isolation suite before selecting any dependency.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Spike deterministic LLM double conformance",
-  "updated_at": "2026-09-09T08:14:29+00:00",
+  "updated_at": "2026-09-09T08:14:48+00:00",
   "worktree_key": "agent-systems-benchmark-llm-double-conformance-spike"
 }
 ---
@@ -136,3 +136,7 @@ Evaluate MockAgents, CopilotKit aimock, larsakerlund/llmock, and piyook/llm-mock
 
 - 2026-09-09T08:14:29+00:00: Recorded command exit 0; command argv SHA-256
   c661bf740008c288fcd633551916dd633e648886f779d9661409061a9349c809.
+
+- 2026-09-09T08:14:48+00:00: Acceptance verified: signed PR #109 candidate 78e6a51 passed all
+  required checks and merged no-ff as e89a2e44db829e429dedadd7a7f2ee408f338acf; all six exact-main
+  post-merge workflows are green. Focused unittest, Ruff, strict mypy, and diff-check passed.
