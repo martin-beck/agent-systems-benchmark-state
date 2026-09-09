@@ -11,7 +11,7 @@
   "id": "AR-0878",
   "next_action": "Add fixture-driven hostile manifest/cache/output mutations and concurrency/cancellation cleanup tests, validate the full persistent source/output receipt, then run ShellCheck, TLC/Alloy, privacy, repository-policy, and supply gates before a signed candidate.",
   "observed_branch": "feature/tla-source-build-provenance",
-  "observed_dirty": 1,
+  "observed_dirty": 3,
   "observed_head": "af9fb7dcaabc162b13d6ee1e77d8915b6d82df20",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0878.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T02:50:31+00:00",
+  "updated_at": "2026-09-09T02:50:37+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
