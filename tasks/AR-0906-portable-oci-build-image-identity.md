@@ -28,4 +28,3 @@
 Repair the Docker image identity boundary exposed by hosted formal CI without weakening the exact
 AR-0878 source-build provenance. Verify the immutable repository digest and platform independently
 instead of assuming an engine's local configuration ID equals the registry manifest digest.
-
