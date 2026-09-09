@@ -9,7 +9,7 @@
   "id": "AR-0859",
   "next_action": "Implement the three owned loopback fixtures; prove pinned edit/tool/usage/cancel/cleanup/network denial, keeping support fail closed until all executable checks pass.",
   "observed_branch": "feature/openjiuwen-live",
-  "observed_dirty": 3,
+  "observed_dirty": 4,
   "observed_head": "2a85872285e6de374e7ea48e3b062e4134bec49e",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0859.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T10:01:45+00:00",
+  "updated_at": "2026-09-09T10:02:21+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---

@@ -80,8 +80,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-one-line-install` | `feature/one-line-local-install` | `bf9e9fe625da` | 0 | behind 20, ahead 0 |
 | `agent-systems-benchmark-opendesk-strict-replay-http-compatibility` | `feature/opendesk-strict-replay-http-compatibility` | `f26216bde125` | 0 | behind 222, ahead 0 |
 | `agent-systems-benchmark-openjiuwen-adapter` | `feature/openjiuwen-adapter` | `43ceb0f1bf8b` | 0 | behind 28, ahead 0 |
-| `agent-systems-benchmark-openjiuwen-live` | `feature/openjiuwen-live` | `2a85872285e6` | 3 | behind 3, ahead 0 |
-| changed files | - | - | - | `crates/asb-agents/tests/fixtures/openjiuwen-events.ndjson`, `crates/asb-agents/tests/fixtures/openjiuwen-loopback.py`, `crates/asb-agents/tests/real_openjiuwen.rs` |
+| `agent-systems-benchmark-openjiuwen-live` | `feature/openjiuwen-live` | `2a85872285e6` | 4 | behind 3, ahead 0 |
+| changed files | - | - | - | `crates/asb-agents/logs/`, `crates/asb-agents/tests/fixtures/openjiuwen-events.ndjson`, `crates/asb-agents/tests/fixtures/openjiuwen-loopback.py`, `crates/asb-agents/tests/real_openjiuwen.rs` |
 | `agent-systems-benchmark-openjiuwen-provenance` | `feature/openjiuwen-provenance` | `addcfab39e48` | 0 | behind 52, ahead 0 |
 | `agent-systems-benchmark-openjiuwen-runtime-closure` | `fix/openjiuwen-runtime-closure` | `b7559931ef79` | 0 | behind 4, ahead 0 |
 | `agent-systems-benchmark-performance-workloads` | `feature/performance-workloads` | `0f303b3ec179` | 0 | behind 54, ahead 0 |
