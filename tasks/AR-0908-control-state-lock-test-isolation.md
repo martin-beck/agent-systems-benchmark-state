@@ -10,7 +10,7 @@
     "AR-0875"
   ],
   "id": "AR-0908",
-  "next_action": "Reproduce the post-drop lock failure under coverage and parallel stress, then harden only the embedded control-state test roots without weakening production locking.",
+  "next_action": "Run repeated parallel and coverage-context lock lifecycle stress; then complete exact single-path gates and immutable review candidate.",
   "observed_branch": "fix/control-state-lock-test-isolation",
   "observed_dirty": 1,
   "observed_head": "b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Harden asb-cli control-state lock test isolation and deterministic reopen coverage.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Harden control-state lock test isolation",
-  "updated_at": "2026-09-09T19:48:01+00:00",
+  "updated_at": "2026-09-09T19:48:34+00:00",
   "worktree_key": "agent-systems-benchmark-control-state-lock-test-isolation"
 }
 ---
@@ -68,3 +68,11 @@ non-deterministic isolation signal rather than claiming a production lock defect
 
 - 2026-09-09T19:48:01+00:00: Recorded command exit 0; command argv SHA-256
   f8cf86a4aa31d5c9a33125cfd658365f041d5a32bb5c094ce7a5c405cc3246f3.
+
+- 2026-09-09T19:48:34+00:00: First substantive checkpoint: source audit located the observed failure
+  at post-drop reopen. Existing recursive PID/sequence roots could reuse stale paths. Embedded tests
+  now use canonical symlink-free external bases, atomic bounded create-new 0700 owner-bound leaves,
+  device/inode-aware cleanup, and hostile parent-symlink/collision/wrong-owner/public-mode
+  negatives. Focused control suite passes 14/14. Earlier exit 1 was an accidental invalid git
+  subcommand with no product effect; the first compile exit 101 correctly exposed an unused test
+  import and was resolved by adding the intended hostile test.
