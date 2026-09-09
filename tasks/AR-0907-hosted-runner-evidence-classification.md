@@ -8,7 +8,7 @@
     "AR-0848"
   ],
   "id": "AR-0907",
-  "next_action": "Run full workspace, policy, privacy, failure and platform gates; then create a focused signed candidate for independent review.",
+  "next_action": "Hold unpublished signed candidate faca6aa for independent immutable review; publish only after approval and require fresh exact-head CI.",
   "observed_branch": "fix/hosted-runner-evidence-classification",
   "observed_dirty": 0,
   "observed_head": "faca6aa9ddddbbed8b925cfbf6a380d622726902",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T17:30:34+00:00",
+  "updated_at": "2026-09-09T17:31:06+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -169,3 +169,16 @@ patch release has advanced.
 
 - 2026-09-09T17:30:34+00:00: Recorded command exit 0; command argv SHA-256
   d3c3620d3956f2c271c39826f02d102599beeb6c6cef657ecaf5336784a1fde5.
+
+- 2026-09-09T17:31:06+00:00: Signed+DCO candidate faca6aa9ddddbbed8b925cfbf6a380d622726902 (tree
+  1b8b2acc47332aec27dea27ea24cc96e88ab6851, exact parent b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b)
+  is clean and exactly seven owned paths. Fixtures live in a dedicated hosted-portability
+  subdirectory so the existing root failure-fixture loader remains closed. Focused hosted 6/6,
+  native capacity 11/11, all platform 52/52, full workspace fmt/clippy/tests/docs/release, contract
+  consistency, failure paths, coverage, deny/audit, Ruff, strict mypy boundary, actionlint, zizmor,
+  source headers, exact-range policy, Gitleaks, diff and privacy gates pass. First all-platform
+  attempt exposed fixture namespace collision and was repaired; first coverage run hit a
+  pre-existing asb-metrics subprocess classification flake after the ordinary workspace suite had
+  passed, while the unchanged-tree full coverage rerun passed. Native validator/native 24.04.4
+  evidence and integration f385fb27/PRs #120-#122 are unchanged. SSH signature, exact DCO, parent
+  and scope verified; unpublished.
