@@ -964,7 +964,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0907](tasks/AR-0907-hosted-runner-evidence-classification.md): Classify hosted runner evidence without weakening native qualification | quality_20260906 | Separate rolling hosted portability checks from immutable native qualification evidence. | Monitor fresh PR #123 exact-head CI at f0b7b46; do not merge until all required checks pass. |
-| P1 | [AR-0908](tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | contracts_20260906 | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Hold f7a08f9 for independent immutable review; publish only after approval. |
+| P1 | [AR-0908](tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | contracts_20260906 | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Hold successor 8b0f9fd for fresh independent immutable review; publish only after approval. |
 
 ### Open (4)
 

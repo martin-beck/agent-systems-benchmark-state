@@ -10,7 +10,7 @@
     "AR-0875"
   ],
   "id": "AR-0908",
-  "next_action": "Hold f7a08f9 for independent immutable review; publish only after approval.",
+  "next_action": "Hold successor 8b0f9fd for fresh independent immutable review; publish only after approval.",
   "observed_branch": "fix/control-state-lock-test-isolation",
   "observed_dirty": 0,
   "observed_head": "8b0f9fd07d5dfbedd83376c1380ab225dfba1213",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Harden asb-cli control-state lock test isolation and deterministic reopen coverage.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Harden control-state lock test isolation",
-  "updated_at": "2026-09-09T20:24:04+00:00",
+  "updated_at": "2026-09-09T20:24:32+00:00",
   "worktree_key": "agent-systems-benchmark-control-state-lock-test-isolation"
 }
 ---
@@ -151,3 +151,19 @@ non-deterministic isolation signal rather than claiming a production lock defect
 
 - 2026-09-09T20:24:04+00:00: Recorded command exit 0; command argv SHA-256
   26cafe5973eebd904304fd6a6d09e626e29f0c102a53abc3121bba052da94571.
+
+- 2026-09-09T20:24:32+00:00: Independent-review repair successor
+  8b0f9fd07d5dfbedd83376c1380ab225dfba1213, tree 178f6fe26c1a3f6689367a33a017bd12b6af7018, parent
+  f7a08f98743643c1fa855a19ebe3a1f3211c5f05; aggregate exact base
+  b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b and one-path cfg(test) scope. Repository overlap now
+  binds the canonical workspace root, not the crate directory. Bases are opened
+  O_DIRECTORY|O_NOFOLLOW and accepted only as current-UID non-group/world-writable or owner/root
+  sticky directories. Root creation uses retained base fd through /proc/self/fd; cleanup walks
+  retained directory fds with no-follow opens and only removes an empty root after rechecking it
+  against the held identity. Synchronized hooks prove an ancestor swap to the workspace still
+  creates under the retained original base, and a replacement between cleanup validation and
+  deletion remains intact. Hostile policy negatives cover workspace sibling, unsafe 0777 base and
+  accepted sticky boundary. Repaired focused 14/14 and Clippy pass; 30x14 parallel stress passes;
+  exact workspace/critical coverage passes; full locked workspace fmt, Clippy, tests, rustdoc,
+  release, contract/schema, failure/artifact, deny/audit pass. Both commits SSH-signed+DCO;
+  aggregate exact-range policy/Gitleaks/diff/privacy/scope and clean tree pass.
