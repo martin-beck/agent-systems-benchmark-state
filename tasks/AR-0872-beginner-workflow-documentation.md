@@ -10,7 +10,7 @@
     "AR-0871"
   ],
   "id": "AR-0872",
-  "next_action": "Create a signed no-ff integration merge from current origin/main, run post-merge checks, fast-forward origin/main, and reconcile.",
+  "next_action": "Create a signed follow-up pin repair from current origin/main, validate locally, open a repair PR, and rerun exact-head plus post-merge CI.",
   "observed_branch": "docs/beginner-workflows",
   "observed_dirty": 0,
   "observed_head": "328de90ef1ed3ba391634009a855d731b1322a53",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish linked beginner workflows for setup, multi-agent runs, progress, comparison, recording, and replay with and without the TUI.",
-  "task_revision": 109,
+  "task_revision": 110,
   "title": "Publish beginner workflow documentation",
-  "updated_at": "2026-09-09T02:02:18+00:00",
+  "updated_at": "2026-09-09T02:02:50+00:00",
   "worktree_key": "agent-systems-benchmark-beginner-workflows"
 }
 ---
@@ -319,3 +319,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T02:02:18+00:00: Recorded command exit 0; command argv SHA-256
   968811335855bc32904e1de1e84a0dc47def16cf410c38e1d7727882927cca66.
+
+- 2026-09-09T02:02:50+00:00: Post-merge exact-main formal job failed because the TLA+ v1.8.0 URL was
+  replaced again at 01:52:25Z: asset 551753628, 4490679 bytes, SHA-256 a1fc0bfe.... Download/hash
+  reproduction confirms the failure is external artifact drift, not workflow content.
