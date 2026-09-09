@@ -31,7 +31,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-cli-multi-agent-provider-selection` | `feature/cli-multi-agent-provider-selection` | `0d9d317716d5` | 0 | behind 114, ahead 0 |
 | `agent-systems-benchmark-contract-consistency` | `feature/contract-consistency` | `289b2711774b` | 0 | behind 178, ahead 0 |
 | `agent-systems-benchmark-control-history-analysis-contract` | `feature/control-history-analysis-contract` | `73b4a76b9436` | 0 | behind 69, ahead 0 |
-| `agent-systems-benchmark-control-state-lock-test-isolation` | `fix/control-state-lock-test-isolation` | `b6d04a8305ce` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-control-state-lock-test-isolation` | `fix/control-state-lock-test-isolation` | `b6d04a8305ce` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-cli/src/control.rs` |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 391, ahead 0 |
 | `agent-systems-benchmark-credential-fd-helper-resolvers` | `feature/credential-fd-helper-resolvers` | `ef5c40762e27` | 0 | behind 119, ahead 0 |
 | `agent-systems-benchmark-credential-reference-boundary` | `feature/credential-reference-boundary` | `5d62546b5d56` | 0 | behind 139, ahead 0 |
@@ -65,8 +66,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-frontend-run-lifecycle` | `feature/frontend-run-lifecycle` | `b3b3b8907f6d` | 0 | behind 193, ahead 0 |
 | `agent-systems-benchmark-gemini-generate-content-replay` | `feature/gemini-generate-content-replay` | `93c19625f910` | 0 | behind 241, ahead 0 |
 | `agent-systems-benchmark-gemini-thinking-config-contract` | `feature/gemini-thinking-config-contract` | `0aff7023cacf` | 0 | behind 239, ahead 0 |
-| `agent-systems-benchmark-hosted-runner-evidence` | `fix/hosted-runner-evidence-classification` | `5e58ae5cdbae` | 3 | behind 0, ahead 5 |
-| changed files | - | - | - | `.github/workflows/native-platforms.yml`, `tests/platforms/test_hosted_portability.py`, `tools/platforms/hosted_portability.py` |
+| `agent-systems-benchmark-hosted-runner-evidence` | `fix/hosted-runner-evidence-classification` | `5e58ae5cdbae` | 5 | behind 0, ahead 5 |
+| changed files | - | - | - | `.github/workflows/native-platforms.yml`, `platforms/v1/hosted-portability.schema.json`, `tests/platforms/fixtures/hosted-portability/mutations.json`, `tests/platforms/test_hosted_portability.py`, `tools/platforms/hosted_portability.py` |
 | `agent-systems-benchmark-huawei-mit-headers` | `fix/huawei-mit-license-headers` | `7add29f1d24c` | 0 | behind 123, ahead 0 |
 | `agent-systems-benchmark-install-artifacts` | `feature/verifiable-install-artifacts` | `310fdfe30f71` | 0 | behind 60, ahead 0 |
 | `agent-systems-benchmark-install-lifecycle` | `feature/install-lifecycle` | `c7d6da71c709` | 0 | behind 46, ahead 0 |

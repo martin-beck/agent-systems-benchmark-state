@@ -12,7 +12,7 @@
   "id": "AR-0908",
   "next_action": "Reproduce the post-drop lock failure under coverage and parallel stress, then harden only the embedded control-state test roots without weakening production locking.",
   "observed_branch": "fix/control-state-lock-test-isolation",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0908.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Harden asb-cli control-state lock test isolation and deterministic reopen coverage.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Harden control-state lock test isolation",
-  "updated_at": "2026-09-09T19:43:44+00:00",
+  "updated_at": "2026-09-09T19:44:47+00:00",
   "worktree_key": "agent-systems-benchmark-control-state-lock-test-isolation"
 }
 ---
