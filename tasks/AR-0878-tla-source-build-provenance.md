@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0878",
-  "next_action": "Determine whether upstream can publish an immutable TLA+ 1.8.0 asset; otherwise freeze an independently reproducible source-build/toolchain contract.",
+  "next_action": "Run the proven source-build/repack recipe inside the pinned Temurin 17.0.20+8 amd64 image on an authorized Docker-capable runner, require the same normalized digest twice, then audit the 31 vendored JAR licenses/digests and encode the closed manifest/build/verifier paths. Do not use the host-only digest as qualified output.",
   "observed_branch": "feature/tla-source-build-provenance",
   "observed_dirty": 0,
   "observed_head": "af9fb7dcaabc162b13d6ee1e77d8915b6d82df20",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T02:25:16+00:00",
+  "updated_at": "2026-09-09T02:26:07+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -73,3 +73,18 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T02:25:16+00:00: Recorded command exit 0; command argv SHA-256
   ba71dce786adebc752b7e3f3aceec7ecd0d2165c3c16ef0cddff88b3a67ae50a.
+
+- 2026-09-09T02:26:07+00:00: Substantive AR-0878 source-build checkpoint; worktree remains clean at
+  af9fb7d. The upstream v1.8.0 prerelease is still actively mutable: release 25926686 moved again to
+  published_at 2026-09-09T01:53:46Z and asset 551753628 (4490679 bytes, digest a1fc0bfe), so
+  immutable-publication branch remains rejected. Exact source archive for b123b226 is 82989507
+  bytes/SHA-256 1f96ee7ef950e456794d13b7e4d8123c345a91528257a3a41b7cc1b506d1b58f. Apache Ant 1.10.15
+  archive is 6925830 bytes/SHA-256 71334d7e.../published SHA-512 d78427af.... Source includes 31
+  vendored JAR inputs. Pinned eclipse-temurin 17.0.20+8 amd64 manifest is sha256:c0d1549d.... Docker
+  pull failed before any build with permission denied on /var/run/docker.sock, an
+  environment/authorization boundary. A host-only Ubuntu OpenJDK 17.0.20+8 diagnostic built twice
+  from independent source trees: raw JARs had equal 4471000-byte size but different hashes; every
+  non-directory ZIP entry name and payload was byte-identical. Canonical sorted ZIP repack with
+  fixed epoch/mode produced byte-identical 4455492-byte outputs, SHA-256
+  0bd598f74102f5c16632fe7dfa2f36b3763479f4757b15fff24a77f6f7268d7e. This proves nondeterminism is
+  packaging metadata on this host only, not yet the pinned-container or license-complete acceptance.
