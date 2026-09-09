@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0880](tasks/AR-0880-openjiuwen-runtime-closure.md): Repair OpenJiuwen runtime closure | Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification. | Fresh immutable review exact candidate b7559931ef79d55ad579546c85ceec2ed5b15790/tree 9660c42cc12c84d91ab3d818a04e1e25bfa352d3/parent cd350831486d22f39e77e04daf2206625f7e4119; if approved, update PR #112 from old remote head 6f6666373d23c833609008448b6a672312e1c6fb with exact force-with-lease, then require fresh exact-head hosted CI before merge. | replay_20260906 |
-| P1 | [AR-0891](tasks/AR-0891-local-inference-provider-profiles.md): Qualify local inference provider profiles | Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server. | Obtain an independently verifiable tokenizer artifact digest and repeated bounded generation trials for Ollama, then qualify at least one grouped profile; separately acquire immutable executable/model/backend evidence before selecting llama.cpp, vLLM, or LocalAI. Keep every incomplete profile non-selectable. | codex-longrun-local-inference-profiles-20260909 |
+| P1 | [AR-0891](tasks/AR-0891-local-inference-provider-profiles.md): Qualify local inference provider profiles | Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server. | Repair the exact-head policy failure in PR #114: Gitleaks false-positive on the public tokenizer content digest. Verify the narrow repository config and rerun the full exact-head suite before merging. | codex-longrun-local-inference-profiles-20260909 |
 
 ## Blocked
 

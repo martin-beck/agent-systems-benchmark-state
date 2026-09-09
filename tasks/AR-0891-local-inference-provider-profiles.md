@@ -10,7 +10,7 @@
     "AR-0315"
   ],
   "id": "AR-0891",
-  "next_action": "Obtain an independently verifiable tokenizer artifact digest and repeated bounded generation trials for Ollama, then qualify at least one grouped profile; separately acquire immutable executable/model/backend evidence before selecting llama.cpp, vLLM, or LocalAI. Keep every incomplete profile non-selectable.",
+  "next_action": "Repair the exact-head policy failure in PR #114: Gitleaks false-positive on the public tokenizer content digest. Verify the narrow repository config and rerun the full exact-head suite before merging.",
   "observed_branch": "feat/local-inference-provider-profiles",
   "observed_dirty": 1,
   "observed_head": "91b728d4307ee7feaac893b4ebb323dbdf624ad4",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server.",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "Qualify local inference provider profiles",
-  "updated_at": "2026-09-09T09:23:50+00:00",
+  "updated_at": "2026-09-09T09:24:04+00:00",
   "worktree_key": "agent-systems-benchmark-local-inference-provider-profiles"
 }
 ---
@@ -216,3 +216,9 @@ Use exact Ollama, llama.cpp, vLLM and LocalAI sources in `docs/LOCAL_LLM_TESTING
 - 2026-09-09T09:21:05+00:00: Heartbeat by codex-longrun-local-inference-profiles-20260909.
 
 - 2026-09-09T09:22:34+00:00: Heartbeat by codex-longrun-local-inference-profiles-20260909.
+
+- 2026-09-09T09:24:04+00:00: CI failure preempted feature work: PR #114 policy/coverage/supply-chain
+  run 34334165543 failed only in Gitleaks. Local exact-range reproduction identified generic-api-key
+  false positive at profiles-v1.json:77 on the public tokenizer_sha256 content digest; no credential
+  was present. Added a narrowly path/field-scoped .gitleaks.toml allowlist and local exact-range
+  scan now reports no leaks. Do not merge until a new exact-head CI run is green.
