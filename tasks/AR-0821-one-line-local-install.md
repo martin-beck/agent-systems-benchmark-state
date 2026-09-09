@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Turn a single documented command into a safe guided local ASB and TUI first run.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Add guided one-line local installation",
-  "updated_at": "2026-09-09T06:30:27+00:00",
+  "updated_at": "2026-09-09T06:30:30+00:00",
   "worktree_key": "agent-systems-benchmark-one-line-install"
 }
 ---
@@ -45,3 +45,6 @@ Implementation has not started. Read the linked plan before claiming.
   /srv/data/projects/agent-systems-benchmark-one-line-install was absent and no matching live
   worktree was listed. No product mutation occurred; creating the declared isolated worktree is
   required before implementation.
+
+- 2026-09-09T06:30:30+00:00: Recorded command exit 0; command argv SHA-256
+  25e5fe5d71720f64e877ee7a599da60d2c9f070238bca30155d0e145bc6c6aed.
