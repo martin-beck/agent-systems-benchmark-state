@@ -10,17 +10,17 @@
   "id": "AR-0907",
   "next_action": "Re-run isolated ETXTBSY test, then remaining workspace docs/build and security gates; commit only after green.",
   "observed_branch": "fix/hosted-runner-evidence-classification",
-  "observed_dirty": 5,
-  "observed_head": "5e58ae5cdbae7b19f08a2135674cea31d94cc7ba",
+  "observed_dirty": 0,
+  "observed_head": "f0b7b46db271cd9de5e89ab1d3cdd6cf86a662d0",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0907.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 129,
+  "task_revision": 130,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T19:51:30+00:00",
+  "updated_at": "2026-09-09T19:51:36+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
