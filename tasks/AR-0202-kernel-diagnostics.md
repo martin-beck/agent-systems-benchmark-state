@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0202",
-  "next_action": "Monitor exact-main post-merge checks at 2219839 and run local post-merge verification. Retain AR-0202 in progress until genuine privileged native aarch64 evidence is recorded; then complete final review and release.",
+  "next_action": "Run final exact-main and local post-merge verification using required native x86_64 kernel evidence and applicable pinned QEMU AArch64 portability checks; record native ARM64 PMU/eBPF as optional future evidence, then release.",
   "observed_branch": "feature/kernel-diagnostics",
   "observed_dirty": 0,
   "observed_head": "d11f81837374d42977bea40cc3452d3bda8c00c7",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "open",
   "summary": "Integrate perf and optional eBPF diagnostics without making privileged tools mandatory.",
-  "task_revision": 199,
+  "task_revision": 200,
   "title": "Add optional kernel diagnostics",
-  "updated_at": "2026-09-09T10:52:42+00:00",
+  "updated_at": "2026-09-09T10:52:45+00:00",
   "worktree_key": "agent-systems-benchmark-kernel-diagnostics"
 }
 ---
@@ -588,3 +588,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-09T10:52:42+00:00: Native ARM64 PMU/eBPF evidence is now optional future qualification by
   user policy; native x86_64 plus applicable pinned QEMU AArch64 portability evidence governs
   completion.
+
+- 2026-09-09T10:52:45+00:00: Removed native ARM64 capacity as a completion blocker without weakening
+  native x86_64 kernel diagnostics.
