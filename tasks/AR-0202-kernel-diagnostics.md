@@ -11,16 +11,16 @@
   "next_action": "Run final exact-main and local post-merge verification using required native x86_64 kernel evidence and applicable pinned QEMU AArch64 portability checks; record native ARM64 PMU/eBPF as optional future evidence, then release.",
   "observed_branch": "feature/kernel-diagnostics",
   "observed_dirty": 0,
-  "observed_head": "d11f81837374d42977bea40cc3452d3bda8c00c7",
+  "observed_head": "b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0202.md",
   "priority": "P2",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate perf and optional eBPF diagnostics without making privileged tools mandatory.",
-  "task_revision": 202,
+  "task_revision": 203,
   "title": "Add optional kernel diagnostics",
-  "updated_at": "2026-09-09T23:13:29+00:00",
+  "updated_at": "2026-09-09T23:13:35+00:00",
   "worktree_key": "agent-systems-benchmark-kernel-diagnostics"
 }
 ---

@@ -70,7 +70,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-install-artifacts` | `feature/verifiable-install-artifacts` | `310fdfe30f71` | 0 | behind 60, ahead 0 |
 | `agent-systems-benchmark-install-lifecycle` | `feature/install-lifecycle` | `c7d6da71c709` | 0 | behind 46, ahead 0 |
 | `agent-systems-benchmark-interaction-aware-redaction` | `feature/interaction-aware-redaction` | `867861c95c19` | 0 | behind 226, ahead 0 |
-| `agent-systems-benchmark-kernel-diagnostics` | `feature/kernel-diagnostics` | `d11f81837374` | 0 | behind 103, ahead 0 |
+| `agent-systems-benchmark-kernel-diagnostics` | `feature/kernel-diagnostics` | `b6d04a8305ce` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-llm-double-conformance-spike` | `test/llm-double-conformance-spike` | `78e6a51ce99e` | 0 | behind 40, ahead 0 |
 | `agent-systems-benchmark-llm-fixture-scenario-contract` | `feat/llm-fixture-scenario-contract` | `4d15bbc7e1d0` | 0 | behind 38, ahead 0 |
 | `agent-systems-benchmark-local-inference-provider-profiles` | `feat/local-inference-provider-profiles` | `eed49592617a` | 0 | behind 29, ahead 0 |
