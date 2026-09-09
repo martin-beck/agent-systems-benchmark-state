@@ -11,17 +11,17 @@
   "id": "AR-0878",
   "next_action": "Request one controlled signed rebase of candidate c6aed713 onto current origin/main 9aad1317 (six commits ahead, zero path overlap), preserve exact eight-path range-diff, rerun exact-tree focused/full/formal/privacy/policy/supply gates, then request independent immutable review. Do not publish stale-base candidate.",
   "observed_branch": "feature/tla-source-build-provenance",
-  "observed_dirty": 2,
-  "observed_head": "ff4e88e07519c86ec27977e9ac2974a653350e4e",
+  "observed_dirty": 0,
+  "observed_head": "6cbd169f6ba6a1f1db95ea7b254ba2fdb4c5351b",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0878.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T03:21:30+00:00",
+  "updated_at": "2026-09-09T03:21:38+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
