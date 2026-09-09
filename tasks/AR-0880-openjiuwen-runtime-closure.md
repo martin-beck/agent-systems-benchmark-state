@@ -8,15 +8,18 @@
   ],
   "id": "AR-0880",
   "next_action": "Regenerate and verify the exact OpenJiuwen cli plus observability runtime closure, then prove imports and the console entry point before unblocking AR-0859.",
+  "observed_branch": "fix/openjiuwen-runtime-closure",
+  "observed_dirty": 0,
+  "observed_head": "513c1d926458f1cb6a26d3f7277dc7d9b1496df3",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0880.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Repair OpenJiuwen runtime closure",
-  "updated_at": "2026-09-09T07:15:15+00:00",
+  "updated_at": "2026-09-09T07:15:21+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-runtime-closure"
 }
 ---
