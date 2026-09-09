@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0704",
-  "next_action": "Define authorized reservation, provisioning, teardown, privacy, cost, and evidence control for genuine native cells.",
+  "next_action": "Add bounded CLI operations and lifecycle fixtures around the green atomic ledger, then run full applicable gates and prepare a focused signed candidate.",
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 2,
   "observed_head": "b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-09T12:37:40+00:00",
+  "updated_at": "2026-09-09T12:38:10+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -87,3 +87,15 @@ must not block this AR or its dependents.
 
 - 2026-09-09T12:37:40+00:00: Recorded command exit 0; command argv SHA-256
   d66ecd27cb8a7c91fbebde4d22782e9ed4eb1878bdb8ed40e8e707d47e87951f.
+
+- 2026-09-09T12:38:10+00:00: Implemented the provider-neutral persistent lifecycle core in two new
+  AR-0704-only paths. The contract binds a sanitized x86_64 capacity pseudonym, trusted class, exact
+  owner/revision/deadline, and zero external cost; expired or uncertain work requires positive
+  reconciliation. The ledger enforces a private owner-only root, no-follow regular files,
+  nonblocking exclusive lock, bounded canonical JSON, descriptor/path identity checks, fsync-backed
+  atomic replacement, and fail-closed crash residue. Ten focused tests cover deterministic
+  acquire/renew/release, stale/conflicting owner, expiry, cost/architecture/privacy bounds,
+  uncertain recovery, corruption, symlink, lock contention, failed-transition atomicity, mid-read
+  replacement, root modes, and stale temp state. Focused unittest 10/10, Ruff format/lint, strict
+  mypy, and diff-check pass. Worktree remains dirty only in new tools/capacity and tests/capacity
+  paths; AR-0702 and runner paths are untouched, and no private host identifier appears.

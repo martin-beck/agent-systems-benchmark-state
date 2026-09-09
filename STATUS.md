@@ -931,7 +931,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | contracts_20260906 | Control genuine native platform capacity lifecycle. | Define authorized reservation, provisioning, teardown, privacy, cost, and evidence control for genuine native cells. |
+| P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | contracts_20260906 | Control genuine native platform capacity lifecycle. | Add bounded CLI operations and lifecycle fixtures around the green atomic ledger, then run full applicable gates and prepare a focused signed candidate. |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | replay_20260906 | Qualify pinned OpenJiuwen live execution. | Add remaining corruption/retry/trickle/root/child negatives, then run full gates; keep support fail closed. |
 
 ### Open (1)
