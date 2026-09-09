@@ -2,7 +2,7 @@
 {
   "branch": "feat/llm-fixture-scenario-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T10:26:16+00:00",
+  "claim_expires": "2026-09-09T10:26:48+00:00",
   "depends_on": [
     "AR-0888"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define generated synthetic LLM scenarios without weakening the existing content-addressed cassette replay contract.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Define the LLM fixture and scenario contract",
-  "updated_at": "2026-09-09T08:26:30+00:00",
+  "updated_at": "2026-09-09T08:26:48+00:00",
   "worktree_key": "agent-systems-benchmark-llm-fixture-scenario-contract"
 }
 ---
@@ -92,3 +92,5 @@ Turn selected spike findings into an ASB-owned synthetic fixture/scenario contra
 
 - 2026-09-09T08:26:30+00:00: Recorded command exit 0; command argv SHA-256
   b9da8151f2836d4bd32ff361f86316e57f3d66be5a1991a1cecd5a1b40aab0e7.
+
+- 2026-09-09T08:26:48+00:00: Heartbeat by codex-longrun-llm-fixture-contract-20260909.
