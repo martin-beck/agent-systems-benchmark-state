@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-provenance",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T05:13:08+00:00",
+  "claim_expires": "2026-09-09T05:13:10+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -24,9 +24,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Pin OpenJiuwen source, package, and license provenance.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Pin OpenJiuwen source, package, and license provenance",
-  "updated_at": "2026-09-09T03:13:08+00:00",
+  "updated_at": "2026-09-09T03:13:10+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-provenance"
 }
 ---
@@ -184,3 +184,5 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   d1378c48cdac6b57123bd93c181df53ec5ba64a78020313dc21461c7104164ce.
 
 - 2026-09-09T03:13:08+00:00: Heartbeat by replay_20260909.
+
+- 2026-09-09T03:13:10+00:00: Heartbeat by replay_20260909.
