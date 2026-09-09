@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Repair OpenJiuwen runtime closure",
-  "updated_at": "2026-09-09T07:14:54+00:00",
+  "updated_at": "2026-09-09T07:15:15+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-runtime-closure"
 }
 ---
@@ -35,3 +35,6 @@ a dependency, avoiding a completion cycle while AR-0859 remains blocked on this 
   required, and the repair dependency graph is acyclic.
 
 - 2026-09-09T07:14:54+00:00: Claimed by replay_20260906.
+
+- 2026-09-09T07:15:15+00:00: Recorded command exit 0; command argv SHA-256
+  2e1535a3f2c8cfa0e732ec737839009238c325aaa98b17ba063531e2dc4f4761.
