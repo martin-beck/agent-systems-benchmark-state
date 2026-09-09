@@ -107,8 +107,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `410ecc95b80e` | 0 | behind 289, ahead 0 |
 | `agent-systems-benchmark-terminal-interface` | `feature/terminal-interface` | `d2e7b66ff6af` | 0 | behind 234, ahead 0 |
 | `agent-systems-benchmark-terminal-workloads` | `feature/terminal-workloads` | `3e67bdfc3ce0` | 0 | behind 51, ahead 0 |
-| `agent-systems-benchmark-tla-source-build-provenance` | `feature/tla-source-build-provenance` | `c157cedc7443` | 11 | behind 12, ahead 1 |
-| changed files | - | - | - | `docs/formal/TLA_TOOL_PROVENANCE.md`, `formal/tests/tla_source_build.rs`, `formal/tla-provenance/README.md`, `formal/tla-provenance/build.sh`, `formal/tla-provenance/fixtures/source-mutations.json`, `formal/tla-provenance/fixtures/source-positive.json`, `formal/tla-provenance/licenses/javacc-4.0-BSD-3-Clause.txt`, `formal/tla-provenance/licenses/prettier4j-0.3.2-Apache-2.0.txt`, `formal/tla-provenance/source-build.toml`, `formal/tla-provenance/verify.py`, `formal/tla-provenance/verify.sh` |
+| `agent-systems-benchmark-tla-source-build-provenance` | `feature/tla-source-build-provenance` | `e4730653b112` | 0 | behind 12, ahead 2 |
 | `agent-systems-benchmark-trace-interoperability` | `feature/trace-interoperability` | `921cf004f8aa` | 0 | behind 106, ahead 0 |
 | `agent-systems-benchmark-tui-history-analysis` | `feature/tui-history-analysis` | `7fd21bbeddc5` | 0 | behind 6, ahead 0 |
 | `agent-systems-benchmark-tui-multi-agent-provider-selection` | `feature/tui-multi-agent-provider-selection` | `679244e3af61` | 0 | behind 32, ahead 0 |

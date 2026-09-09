@@ -11,17 +11,17 @@
   "id": "AR-0878",
   "next_action": "Coordinator must correct the approved 14-build-input necessity criterion or partition. The fail-closed end-to-end deletion oracle proved jacocoant.jar is not necessary: deleting it still produced exact reviewed SHA-256 8c200a88d151c6c183c8dbc57a6b633d135e7a2b18242a3afbf243a9e4b68d3e. Preserve current 31-inventory/14-retained dirty implementation and do not weaken the oracle.",
   "observed_branch": "feature/tla-source-build-provenance",
-  "observed_dirty": 11,
-  "observed_head": "c157cedc744373ef75aba686c00e97ce61aa3bfc",
+  "observed_dirty": 0,
+  "observed_head": "e4730653b112d733fb2a1157f65481663c4e073c",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0878.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 134,
+  "task_revision": 135,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T05:01:25+00:00",
+  "updated_at": "2026-09-09T05:01:31+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
