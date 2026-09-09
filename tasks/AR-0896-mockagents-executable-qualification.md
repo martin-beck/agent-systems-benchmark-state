@@ -8,7 +8,7 @@
     "AR-0889"
   ],
   "id": "AR-0896",
-  "next_action": "Wait for PR #116 exact-head checks; merge only if all pass, then rerun exact-main post-merge workflows.",
+  "next_action": "Wait for PR #116 checks; merge only once policy and all gates pass, then rerun exact-main post-merge workflows.",
   "observed_branch": "test/mockagents-executable-qualification",
   "observed_dirty": 0,
   "observed_head": "3f1de4106adf9ad6c34759638d70e9001709ab0a",
@@ -17,10 +17,10 @@
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Corrected DCO trailer identity on repair PR #116; exact-head checks rerunning.",
-  "task_revision": 23,
+  "summary": "DCO repair branch corrected to a single signed follow-up parented directly on merge; checks rerunning.",
+  "task_revision": 24,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-09T10:13:15+00:00",
+  "updated_at": "2026-09-09T10:13:33+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -89,3 +89,8 @@ synthetic fixture for black-box executable evidence.
 
 - 2026-09-09T10:13:15+00:00: Recorded command exit 0; command argv SHA-256
   fcea23512f1ffe77af4a5673653679a3fdb65b6a20ee819ac25f020e63b5a34f.
+
+- 2026-09-09T10:13:33+00:00: Second policy failure showed the first repair commit remained in PR
+  ancestry. Rebuilt the follow-up directly on merge 004d87252b065679d80ca9674356b47146754528 as
+  signed f25fb319 with matching martin.beck2@gmx.de trailer, and force-with-lease updated PR #116
+  from 82d146d.

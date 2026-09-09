@@ -9,7 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Qualify pinned OpenJiuwen live execution. | Implement the three owned loopback fixtures; prove pinned edit/tool/usage/cancel/cleanup/network denial, keeping support fail closed until all executable checks pass. | replay_20260906 |
 | P1 | [AR-0895](tasks/AR-0895-verify-coordination-content.md): Verify every coordination-content pull request | Close the workflow path-filter gap that lets coordination-content pull requests skip strict state consistency and DCO checks. | Complete independent reviewer decision for fb147b0a against current licensed state base 4ce99f05, then publish only if approved and exact-head checks can run. | quality_20260906 |
-| P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Corrected DCO trailer identity on repair PR #116; exact-head checks rerunning. | Wait for PR #116 exact-head checks; merge only if all pass, then rerun exact-main post-merge workflows. | codex-longrun-mockagents-20260909 |
+| P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | DCO repair branch corrected to a single signed follow-up parented directly on merge; checks rerunning. | Wait for PR #116 checks; merge only once policy and all gates pass, then rerun exact-main post-merge workflows. | codex-longrun-mockagents-20260909 |
 
 ## Blocked
 
