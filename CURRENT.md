@@ -10,6 +10,12 @@ Never edit this file directly.
 | P1 | [AR-0858](tasks/AR-0858-openjiuwen-adapter.md): Implement the OpenJiuwen contract and capability adapter | Implement the OpenJiuwen contract and capability adapter. | Implement the bounded agent contract, exact provider translation, and capability registration from the pinned protocol; keep live support unclaimed. | replay_20260909 |
 | P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Request fresh independent immutable review of signed candidate e4730653b112d733fb2a1157f65481663c4e073c (tree 64d8123c6a321c9223d1a7a5c1ed6981482d3876, parent c157cedc744373ef75aba686c00e97ce61aa3bfc). Do not publish or rebase before review; hosted exact-head Kani remains required only after publication is authorized. | replay_20260906 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0812](tasks/AR-0812-modern-terminal-rendering.md): Deliver modern adaptive terminal rendering | Use modern terminal capabilities for polished visual fidelity with robust SSH/multiplexer fallbacks. | Implement capability-aware premium rendering, channel detection, and resize-safe responsive layouts. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -38,7 +44,6 @@ Never edit this file directly.
 | P1 | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Write and validate task-oriented workflows for the standalone terminal frontend. | - |
 | P1 | [AR-0810](tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project's GitHub Pages site. | - |
 | P1 | [AR-0811](tasks/AR-0811-documentation-qualification.md): Audit workflow documentation and publication | Qualify documentation completeness, executability, accessibility, privacy, provenance, and release accuracy. | Independently audit every published workflow against released programs and deployed Pages output. | - |
-| P1 | [AR-0812](tasks/AR-0812-modern-terminal-rendering.md): Deliver modern adaptive terminal rendering | Use modern terminal capabilities for polished visual fidelity with robust SSH/multiplexer fallbacks. | Implement capability-aware premium rendering, channel detection, and resize-safe responsive layouts. | - |
 | P1 | [AR-0813](tasks/AR-0813-remote-control-transport.md): Add secure remote control transport | Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client. | Specify and implement an explicitly enabled authenticated remote transport for the frontend control API. | - |
 | P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Pair remote TUIs with runners using explicit trust and least-privilege roles. | Implement operator enrollment, mutual identity, scoped authorization, rotation, and revocation. | - |
 | P1 | [AR-0815](tasks/AR-0815-remote-run-lifecycle.md): Manage remote benchmark run lifecycles | Manage durable benchmark runs from another machine without making the frontend their owner. | Implement remote validation, launch, detach, reconnect, status, cancellation, and recovery workflows. | - |
