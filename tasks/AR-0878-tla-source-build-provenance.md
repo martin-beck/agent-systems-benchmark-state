@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0878",
-  "next_action": "Resolve or explicitly waive the unavailable package-specific license/source provenance for jpf-shell.jar and the locally patched jpf-visual.jar before any rebase. Keep c157cedc unchanged; do not claim the current shared-SPDX receipt map is license-complete.",
+  "next_action": "Coordinator decision: amend the source-build lock to the 14 mechanically proven compile/dist inputs and keep the other 17 JARs as exact excluded-source inventory with a deletion/rebuild oracle, or require new authoritative evidence for the unmatched jpf-shell binary. Do not rebase or reuse generic SPDX receipts before this scope decision.",
   "observed_branch": "feature/tla-source-build-provenance",
   "observed_dirty": 0,
   "observed_head": "c157cedc744373ef75aba686c00e97ce61aa3bfc",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 88,
+  "task_revision": 89,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T03:56:28+00:00",
+  "updated_at": "2026-09-09T03:57:53+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -345,3 +345,21 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T03:56:28+00:00: Recorded command exit 0; command argv SHA-256
   01cb79b80aa89c35c0e967b7c71f23d1eae6d9ce583ee21548709b08e90f96fd.
+
+- 2026-09-09T03:57:53+00:00: Authoritative archive research narrows the prior blocker. Software
+  Heritage origin qiyitang71/jpf-visual preserves revision
+  swh:1:rev:8aeba829ca1e2c672a40aea6b42a3c54421677dd and directory
+  swh:1:dir:86a5e46e13e2bdd6b35269107391d769cae24039, including package-specific Apache-2.0 text
+  SHA-256 cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30. Origin sbadame/jpf-shell
+  preserves revision swh:1:rev:1f2dba3499b3e009227bec5a7209f6d47cf959eb and directory
+  swh:1:dir:b2c97e85b42cd74a7b5b9194a8ca669319c72e73, including actual NOSA-1.3-JPF text SHA-256
+  e98e5fa95e37dcbac4013f36be94966172c181321bee5ac863e6405d10e58eeb; therefore c157cedc's Apache-2.0
+  assertion for jpf-shell is false. The archived shell source has only 28 main classes while the
+  exact vendored jar has 73, so it still cannot bind that binary to source. Two controlled
+  pinned-container experiments establish a safe alternative boundary: deleting all five JPF jars,
+  then deleting all 17 non-read jars while retaining exactly 14 direct compile/dist inputs, both
+  reproduce exact normalized output SHA-256
+  8c200a88d151c6c183c8dbc57a6b633d135e7a2b18242a3afbf243a9e4b68d3e byte-for-byte. The first
+  experiment's exit 1 was operator-only Docker permission; corrected sudo -n Docker passed. This
+  proves the opaque JPF artifacts are source-tree inventory, not build inputs, and supports an
+  honest 14-input license closure rather than a false 31-input claim.
