@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-live",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T20:00:15+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0858"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "cceb76f436f8918786f610afdf20ba99fbd87d34",
-  "owner": "replay_20260906",
+  "owner": "",
   "plan": "../plans/AR-0859.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 216,
+  "task_revision": 217,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T19:15:36+00:00",
+  "updated_at": "2026-09-09T20:00:57+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -738,3 +738,7 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   quality, and 34393862356 Rust. Headers passed; TLC/Alloy job 102608590429 reported failure while
   its parent formal run remained active, so GitHub withheld failure logs; other required jobs were
   pending. No rerun or tree mutation.
+
+- 2026-09-09T20:00:57+00:00: Recovered expired claim formerly owned by replay_20260906. Expired
+  AR-0859 lease recovered so AR-0908 coverage checkpoint can be recorded; preserve reviewed PR #124
+  head cceb76f.
