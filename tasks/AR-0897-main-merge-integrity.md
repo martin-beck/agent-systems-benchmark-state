@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-0897",
-  "next_action": "Restore green exact-main commit-policy evidence and prevent unsigned or non-DCO GitHub-generated merge commits.",
+  "next_action": "Run full gates and independent review of fb782963; do not publish or apply repository settings yet.",
   "observed_branch": "fix/main-merge-integrity",
   "observed_dirty": 0,
   "observed_head": "fb782963d6df4d0792a22c2c229e8c7f393eff64",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-09T20:54:09+00:00",
+  "updated_at": "2026-09-09T20:54:41+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -64,3 +64,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T20:54:03+00:00: Recorded command exit 0; command argv SHA-256
   45949eccbd799981ce89a55f41d08c8f25717e174da857890f75489700b1b5bc.
+
+- 2026-09-09T20:54:41+00:00: Signed+DCO focused checkpoint fb782963d6df4d0792a22c2c229e8c7f393eff64
+  (tree d1487102f2c8e080bfcd55fd8c3e857b0f3628dc, parent b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b)
+  is clean with seven owned integration-policy/docs/test paths. It adds an exact base/head/tree
+  verifier, signed DCO commit-tree merge with exact parents, remote-ref rechecks and exact
+  force-with-lease publication; a fail-closed repository-settings auditor/applicator; policy
+  enforcement; historical b6d04a8 identities/limitations; and adversarial fixtures. Focused results:
+  Ruff check/format, Python compilation, repository policy, diff-check, and four integration suites
+  green. Tests construct and push a signed exact-tree two-parent merge and reject stale/wrong
+  identities, unsigned/non-DCO feature commits, and each permissive web-merge/auto-merge setting.
+  Historical b6d04a8 tree 579310d1 with parents a4e1a9de/6cf8384b and failed run 34347816992 are
+  preserved. Remote settings were audited as currently permissive but not changed before review.
