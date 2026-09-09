@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T03:23:30+00:00",
+  "updated_at": "2026-09-09T03:31:35+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -286,3 +286,6 @@ Implementation has not started. Read the linked plan before claiming.
   concurrency/cancel, supply, and honest zero-instrumentable-Rust coverage evidence transfer because
   the semantic patch is identical except mandatory comments. Local Kani remains the recorded
   incomplete-install boundary; hosted exact-head Kani is required.
+
+- 2026-09-09T03:31:35+00:00: Recorded command exit 0; command argv SHA-256
+  29bf36144e3069ba5a2340df225a452967c40ea4d7062a2e39cde34ef29cd1c0.
