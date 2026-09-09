@@ -11,7 +11,7 @@
   "id": "AR-0812",
   "next_action": "Implement capability-aware premium rendering, channel detection, and resize-safe responsive layouts.",
   "observed_branch": "feature/modern-terminal-rendering",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "baaad766445e728dfdee5bc77104ba9fb6f6481e",
   "owner": "codex-longrun-terminal-20260909",
   "plan": "../plans/AR-0812.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use modern terminal capabilities for polished visual fidelity with robust SSH/multiplexer fallbacks.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Deliver modern adaptive terminal rendering",
-  "updated_at": "2026-09-09T05:08:45+00:00",
+  "updated_at": "2026-09-09T05:08:50+00:00",
   "worktree_key": "agent-systems-benchmark-modern-terminal-rendering"
 }
 ---
