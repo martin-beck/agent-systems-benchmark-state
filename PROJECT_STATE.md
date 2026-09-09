@@ -17,20 +17,21 @@ Generated from local Git and GitHub. Do not edit.
 | #123 | `fix/hosted-runner-evidence-classification@f0b7b46db271` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: classify hosted runner evidence honestly |
 | #124 | `feature/openjiuwen-live@cceb76f436f8` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(agents): qualify pinned OpenJiuwen live execution |
 | #125 | `fix/control-state-lock-test-isolation@8b0f9fd07d5d` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(cli): isolate control state roots |
+| #126 | `fix/main-merge-integrity@bd6f450ab877` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | tools: harden signed merge publication |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34406581994 | `bd6f450ab877` | pull_request | Repository quality | queued:- |
+| 34406581954 | `bd6f450ab877` | pull_request | Fault assurance | queued:- |
+| 34406581867 | `bd6f450ab877` | pull_request | Huawei MIT source headers | queued:- |
+| 34406581827 | `bd6f450ab877` | pull_request | Emulated aarch64 portability | queued:- |
+| 34406581823 | `bd6f450ab877` | pull_request | Formal assurance | queued:- |
+| 34406581800 | `bd6f450ab877` | pull_request | Native platform evidence | queued:- |
+| 34406581791 | `bd6f450ab877` | pull_request | Rust verification | queued:- |
+| 34406581790 | `bd6f450ab877` | pull_request | Agent Workflow Quality shadow | queued:- |
 | 34401125597 | `8b0f9fd07d5d` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 34401125569 | `8b0f9fd07d5d` | pull_request | Formal assurance | completed:failure |
 | 34401125568 | `8b0f9fd07d5d` | pull_request | Native platform evidence | completed:failure |
 | 34401125553 | `8b0f9fd07d5d` | pull_request | Repository quality | completed:success |
-| 34401125535 | `8b0f9fd07d5d` | pull_request | Rust verification | completed:success |
-| 34401125534 | `8b0f9fd07d5d` | pull_request | Emulated aarch64 portability | completed:success |
-| 34401125530 | `8b0f9fd07d5d` | pull_request | Fault assurance | completed:success |
-| 34401125518 | `8b0f9fd07d5d` | pull_request | Huawei MIT source headers | completed:success |
-| 34398081718 | `f0b7b46db271` | pull_request | Formal assurance | completed:failure |
-| 34398081609 | `f0b7b46db271` | pull_request | Emulated aarch64 portability | completed:success |
-| 34398081527 | `f0b7b46db271` | pull_request | Repository quality | completed:success |
-| 34398081515 | `f0b7b46db271` | pull_request | Fault assurance | completed:success |
