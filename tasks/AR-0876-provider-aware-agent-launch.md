@@ -16,18 +16,18 @@
   ],
   "id": "AR-0876",
   "next_action": "Freeze and independently review the provider-aware launch contract before acquiring serialized asb-agents/asb-cli/Cargo fences.",
-  "observed_branch": "",
+  "observed_branch": "feature/provider-aware-agent-launch",
   "observed_dirty": 0,
-  "observed_head": "0000000000000000000000000000000000000000",
+  "observed_head": "dca243ab7b8cbb0b2b49a568dec99c517e0719c2",
   "owner": "replay_20260909",
   "plan": "../plans/AR-0876.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply validated provider selections at the authoritative agent launch boundary and reject conflicting runtime configuration.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Wire provider-aware agent launches",
-  "updated_at": "2026-09-09T00:31:20+00:00",
+  "updated_at": "2026-09-09T00:31:27+00:00",
   "worktree_key": "agent-systems-benchmark-provider-aware-agent-launch"
 }
 ---
