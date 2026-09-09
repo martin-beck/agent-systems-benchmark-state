@@ -99,12 +99,14 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-runtime-bundle-manifest` | `feature/runtime-bundle-manifest` | `4b2805d870df` | 0 | behind 187, ahead 0 |
 | `agent-systems-benchmark-sandbox-runtime` | `feature/sandbox-runtime` | `ac4a23599649` | 0 | behind 264, ahead 0 |
 | `agent-systems-benchmark-sandbox-test-portability` | `fix/sandbox-test-portability` | `23035acde688` | 0 | behind 252, ahead 0 |
-| `agent-systems-benchmark-ssh-remote-bootstrap` | `feature/ssh-remote-bootstrap` | `9aad1317bdca` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-ssh-remote-bootstrap` | `feature/ssh-remote-bootstrap` | `9aad1317bdca` | 2 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-tui/src/lib.rs`, `crates/asb-tui/src/remote.rs` |
 | `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `3bcfd85dedd3` | 0 | behind 289, ahead 0 |
 | `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `410ecc95b80e` | 0 | behind 277, ahead 0 |
 | `agent-systems-benchmark-terminal-interface` | `feature/terminal-interface` | `d2e7b66ff6af` | 0 | behind 222, ahead 0 |
 | `agent-systems-benchmark-terminal-workloads` | `feature/terminal-workloads` | `3e67bdfc3ce0` | 0 | behind 39, ahead 0 |
-| `agent-systems-benchmark-tla-source-build-provenance` | `feature/tla-source-build-provenance` | `ff4e88e07519` | 0 | behind 0, ahead 1 |
+| `agent-systems-benchmark-tla-source-build-provenance` | `feature/tla-source-build-provenance` | `ff4e88e07519` | 2 | behind 0, ahead 1 |
+| changed files | - | - | - | `formal/tla-provenance/build.sh`, `formal/tla-provenance/verify.sh` |
 | `agent-systems-benchmark-trace-interoperability` | `feature/trace-interoperability` | `921cf004f8aa` | 0 | behind 94, ahead 0 |
 | `agent-systems-benchmark-tui-history-analysis` | `feature/tui-history-analysis` | `dc914626bb2f` | 0 | behind 16, ahead 1 |
 | `agent-systems-benchmark-tui-multi-agent-provider-selection` | `feature/tui-multi-agent-provider-selection` | `679244e3af61` | 0 | behind 20, ahead 0 |
