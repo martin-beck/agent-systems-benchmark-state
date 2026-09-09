@@ -12,17 +12,17 @@
   "id": "AR-0891",
   "next_action": "Use the validated manifest as the gate, then obtain immutable tokenizer/model/backend and repeated hardware evidence for at least one candidate before making any profile selectable or extending the CLI catalog.",
   "observed_branch": "feat/local-inference-provider-profiles",
-  "observed_dirty": 5,
-  "observed_head": "9f502f7a3a781031770ad96efb4570ed206423a9",
+  "observed_dirty": 0,
+  "observed_head": "5ff404225c119e3c0db8a9edd96cf797243c0ad1",
   "owner": "codex-longrun-local-inference-profiles-20260909",
   "plan": "../plans/AR-0891.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Qualify local inference provider profiles",
-  "updated_at": "2026-09-09T08:43:48+00:00",
+  "updated_at": "2026-09-09T08:43:54+00:00",
   "worktree_key": "agent-systems-benchmark-local-inference-provider-profiles"
 }
 ---
