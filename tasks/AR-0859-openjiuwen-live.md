@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T07:00:09+00:00",
+  "updated_at": "2026-09-09T07:00:38+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -89,3 +89,6 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   runtime-closure investigation while keeping live support fail closed.
 
 - 2026-09-09T07:00:09+00:00: Claimed by replay_20260906.
+
+- 2026-09-09T07:00:38+00:00: Recorded command exit 0; command argv SHA-256
+  48cdb6350ff059ab006b8e272d071ea84842b30058bf76834009d30fef5f7775.
