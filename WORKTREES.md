@@ -66,8 +66,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-install-lifecycle` | `feature/install-lifecycle` | `c7d6da71c709` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-interaction-aware-redaction` | `feature/interaction-aware-redaction` | `867861c95c19` | 0 | behind 179, ahead 0 |
 | `agent-systems-benchmark-kernel-diagnostics` | `feature/kernel-diagnostics` | `d11f81837374` | 0 | behind 56, ahead 0 |
-| `agent-systems-benchmark-local-llm-testing-recommendations` | `docs/local-llm-testing-recommendations` | `9686cef457b1` | 1 | behind 0, ahead 1 |
-| changed files | - | - | - | `docs/LOCAL_LLM_TESTING_RECOMMENDATIONS.md` |
+| `agent-systems-benchmark-local-llm-testing-recommendations` | `docs/local-llm-testing-recommendations` | `9b95dc088088` | 0 | behind 0, ahead 2 |
 | `agent-systems-benchmark-modern-terminal-rendering` | `feature/modern-terminal-rendering` | `fd1989a096a3` | 0 | behind 17, ahead 0 |
 | `agent-systems-benchmark-native-platform-lab` | `feature/native-platform-lab` | `b1669203308d` | 0 | behind 223, ahead 0 |
 | `agent-systems-benchmark-native-platforms` | `feature/native-platforms` | `bdaf9c108226` | 0 | behind 243, ahead 17 |
