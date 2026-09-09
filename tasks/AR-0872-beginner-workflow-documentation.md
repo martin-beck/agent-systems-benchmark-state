@@ -10,7 +10,7 @@
     "AR-0871"
   ],
   "id": "AR-0872",
-  "next_action": "Create the concise beginner workflow hub for equivalent CLI and TUI benchmark journeys.",
+  "next_action": "Run focused workflow documentation tests and product quality gates.",
   "observed_branch": "docs/beginner-workflows",
   "observed_dirty": 2,
   "observed_head": "f2028d71eb59e85e2175294cb9fa55844fcd0a20",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish linked beginner workflows for setup, multi-agent runs, progress, comparison, recording, and replay with and without the TUI.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Publish beginner workflow documentation",
-  "updated_at": "2026-09-09T01:35:31+00:00",
+  "updated_at": "2026-09-09T01:35:57+00:00",
   "worktree_key": "agent-systems-benchmark-beginner-workflows"
 }
 ---
@@ -51,3 +51,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T01:35:31+00:00: Recorded command exit 0; command argv SHA-256
   f10a9c6f425f4963e08a72f2b34b8358ccd19ae15e8ee344a87442154f9c8b27.
+
+- 2026-09-09T01:35:57+00:00: Implemented linked beginner workflow hub and
+  CLI/TUI/multi-agent/record-replay/troubleshooting guides; added executable documentation contract
+  coverage. TUI renderer boundary is documented explicitly.
