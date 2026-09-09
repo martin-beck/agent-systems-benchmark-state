@@ -17,15 +17,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34309710049 | `dc79eda79ea7` | push | Fault assurance | queued:- |
+| 34309710049 | `dc79eda79ea7` | push | Fault assurance | in_progress:- |
 | 34309709991 | `dc79eda79ea7` | push | Repository quality | in_progress:- |
 | 34309709981 | `dc79eda79ea7` | push | Emulated aarch64 portability | in_progress:- |
 | 34309709955 | `dc79eda79ea7` | push | Formal assurance | in_progress:- |
-| 34309709953 | `dc79eda79ea7` | push | Rust verification | queued:- |
+| 34309709953 | `dc79eda79ea7` | push | Rust verification | in_progress:- |
 | 34309709948 | `dc79eda79ea7` | push | Huawei MIT source headers | completed:success |
 | 34309607907 | `cfc49c87d278` | push | Rust verification | completed:cancelled |
 | 34309607886 | `cfc49c87d278` | push | Formal assurance | completed:success |
 | 34309607880 | `cfc49c87d278` | push | Huawei MIT source headers | completed:success |
-| 34309607878 | `cfc49c87d278` | push | Fault assurance | in_progress:- |
+| 34309607878 | `cfc49c87d278` | push | Fault assurance | completed:cancelled |
 | 34309607867 | `cfc49c87d278` | push | Repository quality | completed:failure |
 | 34309607863 | `cfc49c87d278` | push | Emulated aarch64 portability | completed:cancelled |
