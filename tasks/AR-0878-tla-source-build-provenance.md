@@ -10,18 +10,18 @@
   ],
   "id": "AR-0878",
   "next_action": "Determine whether upstream can publish an immutable TLA+ 1.8.0 asset; otherwise freeze an independently reproducible source-build/toolchain contract.",
-  "observed_branch": "",
+  "observed_branch": "feature/tla-source-build-provenance",
   "observed_dirty": 0,
-  "observed_head": "0000000000000000000000000000000000000000",
+  "observed_head": "af9fb7dcaabc162b13d6ee1e77d8915b6d82df20",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0878.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T02:10:21+00:00",
+  "updated_at": "2026-09-09T02:10:28+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
