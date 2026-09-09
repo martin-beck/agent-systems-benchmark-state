@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T18:04:01+00:00",
+  "updated_at": "2026-09-09T18:05:46+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -294,3 +294,6 @@ patch release has advanced.
   focused/Gitleaks/clean portion was rerun correctly at exit 0. Combined candidate remains exact
   seven-path scope on base b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b; this successor changes only
   validator, hosted mutation fixture and focused test.
+
+- 2026-09-09T18:05:46+00:00: Recorded command exit 0; command argv SHA-256
+  953720488329ed77ce90cd844e360b56cc90e54f4dc86342d4c3c1d0e9710f06.
