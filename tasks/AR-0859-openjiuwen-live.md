@@ -7,7 +7,7 @@
     "AR-0858"
   ],
   "id": "AR-0859",
-  "next_action": "Obtain a serialized provenance-closure repair for the pinned OpenJiuwen cli and observability extras before adding AR-0859 live-test paths; then install the reviewed lock and execute the loopback journey. Keep support fail closed.",
+  "next_action": "Refresh the clean declared feature/openjiuwen-live worktree from exact product origin/main 2a85872285e6de374e7ea48e3b062e4134bec49e without losing preserved evidence, then implement only the three owned live-test fixture paths and execute the credential-free loopback edit/tool/usage/cancellation/cleanup/network-denial qualification. Keep support fail closed until executable evidence passes.",
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "513c1d926458f1cb6a26d3f7277dc7d9b1496df3",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T09:31:49+00:00",
+  "updated_at": "2026-09-09T09:32:30+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -138,3 +138,11 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   origin/main before product mutation.
 
 - 2026-09-09T09:31:49+00:00: Claimed by replay_20260906.
+
+- 2026-09-09T09:32:30+00:00: AR-0859 resumed and claimed only after independently verifying AR-0880
+  closure release. Existing declared worktree
+  /srv/data/projects/agent-systems-benchmark-openjiuwen-live is clean at preserved head
+  513c1d926458f1cb6a26d3f7277dc7d9b1496df3, currently behind exact product main
+  2a85872285e6de374e7ea48e3b062e4134bec49e. No AR-0859 product mutation has occurred in this
+  transition. Next step is a controlled refresh followed by the distinct three-path loopback live
+  qualification.
