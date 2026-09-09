@@ -2,7 +2,7 @@
 {
   "branch": "feature/performance-workloads",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T04:45:57+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0401",
     "AR-0601",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/performance-workloads",
   "observed_dirty": 0,
   "observed_head": "0f303b3ec1798906a8ecb37652e080046fd42eee",
-  "owner": "replay_20260909",
+  "owner": "",
   "plan": "../plans/AR-0405.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Assess SWE-Perf, SWE-fficiency and CORE-Bench for correctness-preserving optimization and reproducibility.",
-  "task_revision": 91,
+  "task_revision": 92,
   "title": "Add performance and reproducibility workloads",
-  "updated_at": "2026-09-09T02:46:22+00:00",
+  "updated_at": "2026-09-09T02:46:51+00:00",
   "worktree_key": "agent-systems-benchmark-performance-workloads"
 }
 ---
@@ -286,3 +286,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T02:46:22+00:00: Recorded command exit 0; command argv SHA-256
   d15e1a9c5d1ccff3bfbc8f75d17ed891eb30a4c3f72539e1e220089342acace3.
+
+- 2026-09-09T02:46:51+00:00: Completed and released: signed candidate 0f303b3, PR #96 fully green at
+  exact head, signed no-ff merge 05d3042 onto main, focused post-merge registry tests (12 passed),
+  policy and DCO gates passed, all six exact-main workflows green (runs 34304070305, 34304070337,
+  34304070351, 34304070356, 34304070369, 34304070371), primary checkout synchronized clean at
+  05d3042, temporary integration worktree removed.
