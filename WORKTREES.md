@@ -21,7 +21,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 27, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 130, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 24, ahead 0 |
-| `agent-systems-benchmark-ar0876-final` | `integration/ar-0876-final` | `bc071fd76895` | 0 | behind 2, ahead 0 |
+| `agent-systems-benchmark-ar0876-final` | `integration/ar-0876-final` | `19a672c86340` | 0 | behind 2, ahead 1 |
 | `agent-systems-benchmark-ar0876-integration` | `integration/ar-0876` | `716a8f154063` | 0 | behind 2, ahead 0 |
 | `agent-systems-benchmark-ar0876-repair` | `integration/ar-0876-signed` | `32562e89ff6e` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-benchmark-validity` | `feature/benchmark-validity` | `60a6c730457b` | 0 | behind 126, ahead 0 |
