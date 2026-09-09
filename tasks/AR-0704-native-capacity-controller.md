@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0704",
-  "next_action": "Independent immutable review of d47f503; do not publish before approval.",
+  "next_action": "Independent immutable review of 28f30ee; keep reconciliation fenced and do not publish.",
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "28f30eea80efef5a61ea438e77402f8640564cc9",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-09T13:11:56+00:00",
+  "updated_at": "2026-09-09T13:12:22+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -225,3 +225,16 @@ must not block this AR or its dependents.
 
 - 2026-09-09T13:11:56+00:00: Recorded command exit 0; command argv SHA-256
   d231a09f2fdbbbd51e288c943a8be4c76049205ebe0a14d401d878b373522868.
+
+- 2026-09-09T13:12:22+00:00: Remaining trust defect repaired in signed successor
+  28f30eea80efef5a61ea438e77402f8640564cc9 (tree 28885e94a94cebb745dd5c5be94998d936f86813, parent
+  d47f5031394e2390867aa750caf9494a8b81e36f). Same-UID canonical receipts and matching teardown
+  artifacts are validated only for diagnostics and can no longer transition needs_reconciliation to
+  available: reconcile_clean always fails closed until a distinct authenticated cleanup verifier
+  exists. The former positive arbitrary-byte fixture is now an explicit forged-but-self-consistent
+  receipt/artifact atomic negative and proves the ledger remains at revision 2 needs_reconciliation.
+  Exact two-path scope remains clean. Postcommit gates pass: focused unittest 14/14, source-header
+  unittest 18/18, Ruff format/lint, strict mypy, full base-range diff-check/scope/privacy, valid SSH
+  signature and DCO, and Gitleaks across all three commits (52.74 KB) with no leaks. Candidate
+  remains unpublished; AR remains in progress with native provisioning/resource/boot and
+  authenticated reconciliation evidence unclaimed.
