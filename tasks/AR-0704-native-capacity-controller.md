@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-capacity-controller",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T15:11:42+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0701",
     "AR-0103"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "28f30eea80efef5a61ea438e77402f8640564cc9",
-  "owner": "contracts_20260906",
+  "owner": "",
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-09T13:20:36+00:00",
+  "updated_at": "2026-09-09T15:16:11+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -274,3 +274,7 @@ must not block this AR or its dependents.
   provenance mismatch in unchanged formal paths, not an AR-0704 two-path regression. No merge
   attempted. Preserve exact approved scope and explicit unavailable-verifier/native-evidence
   limitations.
+
+- 2026-09-09T15:16:11+00:00: Recovered expired claim formerly owned by contracts_20260906. Expired
+  owner lease recovered after coordinator audit; preserve reviewed PR head and require fresh claim
+  before further AR-0704 mutation.
