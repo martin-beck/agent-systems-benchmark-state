@@ -10,7 +10,7 @@
   "id": "AR-0907",
   "next_action": "Monitor fresh PR #123 exact-head CI at 5e58ae5; do not merge until every required check is terminal green.",
   "observed_branch": "fix/hosted-runner-evidence-classification",
-  "observed_dirty": 0,
+  "observed_dirty": 3,
   "observed_head": "5e58ae5cdbae7b19f08a2135674cea31d94cc7ba",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0907.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 106,
+  "task_revision": 107,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T19:39:24+00:00",
+  "updated_at": "2026-09-09T19:39:30+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
