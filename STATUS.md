@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**155 ARs tracked** across 5 active status categories.
+**155 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 3 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 7 |
 | **Planned** | Defined work awaiting promotion or dependencies | 43 |
 | **Future** | Deferred roadmap work | 0 |
@@ -129,7 +129,7 @@ flowchart LR
         AR_0803["AR-0803 - Done"]:::status_done
         AR_0804["AR-0804 - Done"]:::status_done
         AR_0805["AR-0805 - Done"]:::status_done
-        AR_0806["AR-0806 - Open"]:::status_open
+        AR_0806["AR-0806 - In progress"]:::status_in_progress
         AR_0807["AR-0807 - Planned"]:::status_planned
         AR_0808["AR-0808 - Planned"]:::status_planned
         AR_0809["AR-0809 - Planned"]:::status_planned
@@ -872,18 +872,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P1 | [AR-0806](tasks/AR-0806-tui-history-analysis.md): Add terminal history and analysis | codex-longrun-tui-20260909 | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. | Repair or restore the pinned TLA+ v1.8.0 artifact boundary outside the AR-0806 two-path scope, then rerun exact-head Formal Assurance for PR #89; merge remains held until every required check is green. |
 | P1 | [AR-0858](tasks/AR-0858-openjiuwen-adapter.md): Implement the OpenJiuwen contract and capability adapter | replay_20260909 | Implement the OpenJiuwen contract and capability adapter. | Implement the bounded agent contract, exact provider translation, and capability registration from the pinned protocol; keep live support unclaimed. |
 | P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | replay_20260906 | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Coordinator decision: amend the source-build lock to the 14 mechanically proven compile/dist inputs and keep the other 17 JARs as exact excluded-source inventory with a deletion/rebuild oracle, or require new authoritative evidence for the unmatched jpf-shell binary. Do not rebase or reuse generic SPDX receipts before this scope decision. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0806](tasks/AR-0806-tui-history-analysis.md): Add terminal history and analysis | Unclaimed | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. | Repair or restore the pinned TLA+ v1.8.0 artifact boundary outside the AR-0806 two-path scope, then rerun exact-head Formal Assurance for PR #89; merge remains held until every required check is green. |
 
 ### Blocked (7)
 

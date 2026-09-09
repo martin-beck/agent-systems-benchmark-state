@@ -7,14 +7,9 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P1 | [AR-0806](tasks/AR-0806-tui-history-analysis.md): Add terminal history and analysis | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. | Repair or restore the pinned TLA+ v1.8.0 artifact boundary outside the AR-0806 two-path scope, then rerun exact-head Formal Assurance for PR #89; merge remains held until every required check is green. | codex-longrun-tui-20260909 |
 | P1 | [AR-0858](tasks/AR-0858-openjiuwen-adapter.md): Implement the OpenJiuwen contract and capability adapter | Implement the OpenJiuwen contract and capability adapter. | Implement the bounded agent contract, exact provider translation, and capability registration from the pinned protocol; keep live support unclaimed. | replay_20260909 |
 | P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Coordinator decision: amend the source-build lock to the 14 mechanically proven compile/dist inputs and keep the other 17 JARs as exact excluded-source inventory with a deletion/rebuild oracle, or require new authoritative evidence for the unmatched jpf-shell binary. Do not rebase or reuse generic SPDX receipts before this scope decision. | replay_20260906 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0806](tasks/AR-0806-tui-history-analysis.md): Add terminal history and analysis | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. | Repair or restore the pinned TLA+ v1.8.0 artifact boundary outside the AR-0806 two-path scope, then rerun exact-head Formal Assurance for PR #89; merge remains held until every required check is green. | - |
 
 ## Blocked
 
