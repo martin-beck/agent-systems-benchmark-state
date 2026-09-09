@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Add evolving long-horizon workload sources",
-  "updated_at": "2026-09-09T05:50:34+00:00",
+  "updated_at": "2026-09-09T05:50:42+00:00",
   "worktree_key": "agent-systems-benchmark-evolving-workloads"
 }
 ---
@@ -67,3 +67,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T05:50:34+00:00: Recorded command exit 0; command argv SHA-256
   72b935ba941d0818b89625441ef3e039d717255aab3be0f3ebdbe0e9f7f83cc3.
+
+- 2026-09-09T05:50:42+00:00: Recorded command exit 0; command argv SHA-256
+  0d9497409c754fb88e22887b8dfce420f6e7b717607c508fdfe8fc902693e54e.
