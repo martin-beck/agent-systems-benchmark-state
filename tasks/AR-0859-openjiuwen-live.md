@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 179,
+  "task_revision": 180,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T18:24:57+00:00",
+  "updated_at": "2026-09-09T18:48:45+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -606,3 +606,6 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   not an AR-0859 product/test failure. The exact cached digest-pinned local TLC/Alloy gate passed
   before publication. Do not alter or merge PR #124; rerun exact-head formal only after AR-0877
   repairs the immutable artifact boundary.
+
+- 2026-09-09T18:48:45+00:00: Recorded command exit 0; command argv SHA-256
+  df55974f119ba9345be7a32474df652ea58bb033cdcd376dc7267f3cfdca7956.
