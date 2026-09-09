@@ -10,7 +10,7 @@
     "AR-0902"
   ],
   "id": "AR-0877",
-  "next_action": "Independent review local bridge 49ae13f/tree 05141d3; keep PR #120 at 65142ea and PR #121 unchanged. After AR-0906 merges, rebase the AR-0877 range, rerun gates, then exact-lease update PR #120.",
+  "next_action": "Hold local bridge 49ae13f and PR #120. AR-0906 is blocked on active AR-0907 hosted-evidence classification; after AR-0907 and AR-0906 integrate, rebase once, range-diff, rerun full gates, then exact-lease update PR #120.",
   "observed_branch": "fix/formal-tla-artifact-availability",
   "observed_dirty": 0,
   "observed_head": "49ae13f7116cfa7a353bf0d8939517c5a306ffd0",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 120,
+  "task_revision": 121,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T15:46:18+00:00",
+  "updated_at": "2026-09-09T17:02:03+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -435,3 +435,11 @@ Implementation has not started. Read the linked plan before claiming.
   tla-provenance/build.sh. Serialized focused 9/9 and full formal 38/38 pass; policy, bash syntax,
   rustfmt, diff-check and diff-Gitleaks pass. Parallel focused run first hit environmental ETXTBSY
   (7/9); serialized rerun passed. Remote PR heads remain unchanged.
+
+- 2026-09-09T17:02:03+00:00: Fresh dependency reconciliation: signed state b0925202 and live doctor
+  are clean, but AR-0906 is durably blocked/unowned pending active AR-0907. Combined temporary PR
+  #122 at f385fb27 proves the AR-0877 bridge plus AR-0906 across formal, quality, Rust, fault/fuzz,
+  headers, AWQ and emulated-aarch64; its sole native failure is the separate rolling-host 24.04.5
+  versus immutable 24.04.4 classification now owned by AR-0907. Therefore no safe AR-0877 rebase or
+  PR #120 update exists yet. Preserve local signed+DCO 49ae13f/tree 05141d3 and remote PR #120 head
+  65142ea unchanged.
