@@ -8,16 +8,16 @@
     "AR-0003"
   ],
   "id": "AR-0895",
-  "next_action": "Monitor state PR #17 exact head fb147b0a to terminal; merge only when Strict state consistency, source-header verify, and AWQ are all green, then run exact-main reconciliation/doctor before release.",
+  "next_action": "Rebase the approved three-path patch onto current repaired/licensed state main, preserve exact scope/signature/DCO, guarded force-with-lease PR #17, and require fresh exact-head CI before merge.",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0895.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Close the workflow path-filter gap that lets coordination-content pull requests skip strict state consistency and DCO checks.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Verify every coordination-content pull request",
-  "updated_at": "2026-09-09T10:16:05+00:00",
+  "updated_at": "2026-09-09T10:17:27+00:00",
   "worktree_key": "agent-systems-benchmark-state-verify-coordination-content"
 }
 ---
@@ -139,3 +139,12 @@ Ensure state-content pull requests cannot bypass exact-head schema, generated-vi
   Immediate exact-head CI: source-header verify SUCCESS (run 34339247801); Strict state consistency
   IN_PROGRESS (34339247786); AWQ shadow IN_PROGRESS (34339247767). PR remains OPEN; no merge or
   release performed.
+
+- 2026-09-09T10:17:27+00:00: PR #17 exact-head CI classification: AWQ run 34339247767 and
+  source-header verify 34339247801 passed; Strict state consistency 34339247786 failed schema
+  validation because the workflow intentionally checks raw pull-request head fb147b0a, whose old
+  parent 95930b6f predates AR-0859/AR-0880 metadata repairs. Current origin/main contains signed
+  repairs 40c96beb and 87a60c88 and validates clean; direct blob comparison confirms only the stale
+  candidate ancestry contains the oversized values. This is not a new owner repair requirement and
+  rerunning the same head would repeat deterministically. No merge performed. Controlled rebase onto
+  current state main is authorized.
