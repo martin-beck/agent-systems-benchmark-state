@@ -22,6 +22,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 185, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 79, ahead 0 |
 | `agent-systems-benchmark-ar0878-integration` | `DETACHED` | `0fbec95d2154` | 0 | behind 16, ahead 0 |
+| `agent-systems-benchmark-ar0880-integration` | `integration/ar0880-b7559931` | `2a85872285e6` | 0 | behind 0, ahead 2 |
 | `agent-systems-benchmark-beginner-workflows` | `docs/beginner-workflows` | `328de90ef1ed` | 0 | behind 53, ahead 0 |
 | `agent-systems-benchmark-benchmark-validity` | `feature/benchmark-validity` | `60a6c730457b` | 0 | behind 181, ahead 0 |
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `0717d4acd168` | 0 | behind 289, ahead 0 |
@@ -68,7 +69,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-kernel-diagnostics` | `feature/kernel-diagnostics` | `d11f81837374` | 0 | behind 70, ahead 0 |
 | `agent-systems-benchmark-llm-double-conformance-spike` | `test/llm-double-conformance-spike` | `78e6a51ce99e` | 0 | behind 7, ahead 0 |
 | `agent-systems-benchmark-llm-fixture-scenario-contract` | `feat/llm-fixture-scenario-contract` | `4d15bbc7e1d0` | 0 | behind 5, ahead 0 |
-| `agent-systems-benchmark-local-inference-provider-profiles` | `feat/local-inference-provider-profiles` | `91b728d4307e` | 0 | behind 2, ahead 1 |
+| `agent-systems-benchmark-local-inference-provider-profiles` | `feat/local-inference-provider-profiles` | `91b728d4307e` | 1 | behind 2, ahead 1 |
+| changed files | - | - | - | `.gitleaks.toml` |
 | `agent-systems-benchmark-local-llm-testing-recommendations` | `docs/local-llm-testing-recommendations` | `4a23069336be` | 0 | behind 9, ahead 0 |
 | `agent-systems-benchmark-modern-terminal-rendering` | `feature/modern-terminal-rendering` | `fd1989a096a3` | 0 | behind 31, ahead 0 |
 | `agent-systems-benchmark-native-platform-lab` | `feature/native-platform-lab` | `b1669203308d` | 0 | behind 237, ahead 0 |
