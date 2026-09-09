@@ -9,7 +9,7 @@
   "id": "AR-0897",
   "next_action": "Restore green exact-main commit-policy evidence and prevent unsigned or non-DCO GitHub-generated merge commits.",
   "observed_branch": "fix/main-merge-integrity",
-  "observed_dirty": 0,
+  "observed_dirty": 5,
   "observed_head": "b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0897.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-09T20:48:49+00:00",
+  "updated_at": "2026-09-09T20:48:55+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
