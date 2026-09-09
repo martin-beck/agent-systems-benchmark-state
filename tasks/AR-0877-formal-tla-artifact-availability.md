@@ -11,7 +11,7 @@
   "id": "AR-0877",
   "next_action": "Hold PR #120 at exact 65142ea. Formal run 34371022004 fails only the known OCI .Id portability boundary; rebase after reviewed AR-0906/PR #121 integrates, then rerun all CI.",
   "observed_branch": "fix/formal-tla-artifact-availability",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "65142ea58cbb7d4a763e5be176406b0a08e206cd",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0877.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 112,
+  "task_revision": 113,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T15:42:53+00:00",
+  "updated_at": "2026-09-09T15:42:59+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
