@@ -4,7 +4,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
-| `agent-systems-benchmark` | `main` | `4870dfdeacb5` | 0 | behind 2, ahead 0 |
+| `agent-systems-benchmark` | `main` | `05d30426919a` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-agent-aider` | `feature/agent-aider` | `da81ead6932c` | 0 | behind 239, ahead 0 |
 | `agent-systems-benchmark-agent-codex` | `feature/agent-codex` | `eb03bd9d9ed5` | 0 | behind 227, ahead 0 |
 | `agent-systems-benchmark-agent-gemini` | `feature/agent-gemini` | `d381d340163e` | 0 | behind 223, ahead 0 |
@@ -19,7 +19,6 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-aider-deterministic-replay` | `fix/aider-deterministic-replay` | `87a22654913a` | 0 | behind 127, ahead 0 |
 | `agent-systems-benchmark-all-agents-provider` | `feature/all-agents-provider` | `03962f28571e` | 0 | behind 90, ahead 0 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 34, ahead 0 |
-| `agent-systems-benchmark-ar0405-integration` | `integration/ar-0405` | `05d30426919a` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 137, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 31, ahead 0 |
 | `agent-systems-benchmark-beginner-workflows` | `docs/beginner-workflows` | `328de90ef1ed` | 0 | behind 5, ahead 0 |
