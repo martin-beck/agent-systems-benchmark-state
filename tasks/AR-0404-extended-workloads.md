@@ -10,7 +10,7 @@
   "id": "AR-0404",
   "next_action": "Rank suites by additional coverage and maintenance cost.",
   "observed_branch": "feature/extended-workloads",
-  "observed_dirty": 0,
+  "observed_dirty": 6,
   "observed_head": "7d9191c99c0e55814845a8809aa22d7a0aefb9ae",
   "owner": "codex-longrun-workloads-20260909",
   "plan": "../plans/AR-0404.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Evaluate SWE-bench Pro, BigCodeBench, EvalPlus and LiveCodeBench as optional suites.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Expand established benchmark catalogue",
-  "updated_at": "2026-09-09T03:51:45+00:00",
+  "updated_at": "2026-09-09T03:51:53+00:00",
   "worktree_key": "agent-systems-benchmark-extended-workloads"
 }
 ---
