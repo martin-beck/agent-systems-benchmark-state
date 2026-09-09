@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Post-rewrite policy run failed because GitHub retained unreachable old base SHA; advancing main with signed no-op to establish reachable range.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-09T10:22:37+00:00",
+  "updated_at": "2026-09-09T10:22:51+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -122,3 +122,6 @@ synthetic fixture for black-box executable evidence.
   Invalid revision range 97643044..5f7d631 because force-replacing main made the GitHub push before
   SHA unreachable to checkout. No code failure. A signed no-op fast-forward will establish a valid
   CI range without changing the product tree.
+
+- 2026-09-09T10:22:51+00:00: Recorded command exit 0; command argv SHA-256
+  c72c269d7628b20d021feed6eba11c829ab8b0b4896ce1d9db02099c8729b5be.
