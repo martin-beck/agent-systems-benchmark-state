@@ -9,7 +9,7 @@
   "id": "AR-0889",
   "next_action": "Specify and implement the selected synthetic fixture and scenario contract with strict evidence labels, privacy bounds, and fail-closed validation.",
   "observed_branch": "feat/llm-fixture-scenario-contract",
-  "observed_dirty": 0,
+  "observed_dirty": 5,
   "observed_head": "e89a2e44db829e429dedadd7a7f2ee408f338acf",
   "owner": "codex-longrun-llm-fixture-contract-20260909",
   "plan": "../plans/AR-0889.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define generated synthetic LLM scenarios without weakening the existing content-addressed cassette replay contract.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Define the LLM fixture and scenario contract",
-  "updated_at": "2026-09-09T08:16:10+00:00",
+  "updated_at": "2026-09-09T08:18:28+00:00",
   "worktree_key": "agent-systems-benchmark-llm-fixture-scenario-contract"
 }
 ---
