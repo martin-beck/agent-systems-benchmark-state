@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Build the pinned MockAgents qualification harness; exact amd64 protocol smoke and provenance checks pass, hostile matrix remains.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-09T10:01:30+00:00",
+  "updated_at": "2026-09-09T10:01:52+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -44,3 +44,6 @@ synthetic fixture for black-box executable evidence.
   deterministic semantic hashes, public fixture evidence, and negative archive tests. The exact
   v0.5.0 linux-amd64 release passed the implemented checks. AR-0890 remains blocked; no support
   catalog or CI workflow was changed.
+
+- 2026-09-09T10:01:52+00:00: Recorded command exit 0; command argv SHA-256
+  3b63290ca600a5863bd3bbdbf734b37a74913861a7ed3a4ba258ed703676cee1.
