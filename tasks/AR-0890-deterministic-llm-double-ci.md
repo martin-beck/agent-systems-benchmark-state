@@ -2,7 +2,7 @@
 {
   "branch": "ci/deterministic-llm-double",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T12:43:41+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -12,15 +12,15 @@
   "observed_branch": "ci/deterministic-llm-double",
   "observed_dirty": 0,
   "observed_head": "adac76558387cb0bdd09e2ba6cbfe49b9bc205be",
-  "owner": "contracts_20260906",
+  "owner": "",
   "plan": "../plans/AR-0890.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Add the independently selected deterministic protocol double as a pinned isolated CI test dependency.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Integrate a deterministic LLM double in CI",
-  "updated_at": "2026-09-09T09:45:53+00:00",
+  "updated_at": "2026-09-09T09:46:12+00:00",
   "worktree_key": "agent-systems-benchmark-deterministic-llm-double-ci"
 }
 ---
@@ -42,3 +42,13 @@ Integrate the one candidate selected by AR-0888 through the AR-0889 contract. If
 
 - 2026-09-09T09:45:53+00:00: Recorded command exit 0; command argv SHA-256
   481425baae114a3efd9ed23c7cc60f30f7033eaf6ce5630abb892c48901768ed.
+
+- 2026-09-09T09:46:12+00:00: Fail-closed dependency audit on product base
+  adac76558387cb0bdd09e2ba6cbfe49b9bc205be found AR-0888 selected no executable candidate:
+  mockagents 0.5.0, aimock 1.40.0, llmock-rust 0.1.2, and llm-mock-node 3.3.6 are all
+  status=untested because ASB supplies no pinned executable artifact/digest. Wrapped conformance and
+  six scenario tests pass only for the ASB-owned synthetic fixture and cannot qualify a third-party
+  CI service. Worktree ci/deterministic-llm-double remains clean with no product mutation. Next:
+  qualify exactly one pinned executable against the complete AR-0888 hostile suite, with artifact
+  digest/license and lifecycle/network-isolation evidence, then resume AR-0890; do not select ad
+  hoc.
