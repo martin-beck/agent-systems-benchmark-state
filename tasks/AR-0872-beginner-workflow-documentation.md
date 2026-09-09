@@ -10,7 +10,7 @@
     "AR-0871"
   ],
   "id": "AR-0872",
-  "next_action": "Inspect the completed formal job logs and repair only if a reproducible product failure is confirmed; otherwise wait for the workflow terminal state.",
+  "next_action": "Commit and publish the exact TLA pin repair, then monitor all exact-head checks.",
   "observed_branch": "docs/beginner-workflows",
   "observed_dirty": 4,
   "observed_head": "3b0ad66a1cf47dcc7c7a930b85088a07dd5efab4",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish linked beginner workflows for setup, multi-agent runs, progress, comparison, recording, and replay with and without the TUI.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Publish beginner workflow documentation",
-  "updated_at": "2026-09-09T01:47:48+00:00",
+  "updated_at": "2026-09-09T01:48:28+00:00",
   "worktree_key": "agent-systems-benchmark-beginner-workflows"
 }
 ---
@@ -191,3 +191,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T01:47:48+00:00: Recorded command exit 0; command argv SHA-256
   1f9747f3c19ac00b882f84661feb757a00f3fc6edf0d48cf279ac525e9dc6ffc.
+
+- 2026-09-09T01:48:28+00:00: Formal pin test passed with Rust 1.93.0. The upstream TLA release
+  replacement and repair are independently verified; proceed to signed branch repair and CI rerun.
