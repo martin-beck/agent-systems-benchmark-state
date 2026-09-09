@@ -12,7 +12,7 @@
   "id": "AR-0891",
   "next_action": "Independently review PR #111 at immutable head 772c6277c99354e8685aee73fafa2c957a3eb9c8, then signed no-ff merge and post-merge exact-main verification.",
   "observed_branch": "feat/local-inference-provider-profiles",
-  "observed_dirty": 0,
+  "observed_dirty": 3,
   "observed_head": "772c6277c99354e8685aee73fafa2c957a3eb9c8",
   "owner": "codex-longrun-local-inference-profiles-20260909",
   "plan": "../plans/AR-0891.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Qualify local inference provider profiles",
-  "updated_at": "2026-09-09T08:58:42+00:00",
+  "updated_at": "2026-09-09T08:58:48+00:00",
   "worktree_key": "agent-systems-benchmark-local-inference-provider-profiles"
 }
 ---
