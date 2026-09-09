@@ -9,15 +9,18 @@
   ],
   "id": "AR-0819",
   "next_action": "Implement OpenSSH host selection, service probing, stdio bridging, and explicit passwordless enrollment.",
+  "observed_branch": "feature/ssh-remote-bootstrap",
+  "observed_dirty": 0,
+  "observed_head": "9aad1317bdcaabcec2e62a856ff6d0b3ac757f46",
   "owner": "replay_20260909",
   "plan": "../plans/AR-0819.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use configured SSH hosts as the safe default path to a remote runner and help establish dedicated key authentication.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Add SSH remote discovery and bootstrap",
-  "updated_at": "2026-09-09T03:19:19+00:00",
+  "updated_at": "2026-09-09T03:19:26+00:00",
   "worktree_key": "agent-systems-benchmark-ssh-remote-bootstrap"
 }
 ---
