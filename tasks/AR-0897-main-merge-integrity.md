@@ -9,7 +9,7 @@
   "id": "AR-0897",
   "next_action": "Run full gates and independent review of fb782963; do not publish or apply repository settings yet.",
   "observed_branch": "fix/main-merge-integrity",
-  "observed_dirty": 3,
+  "observed_dirty": 4,
   "observed_head": "fb782963d6df4d0792a22c2c229e8c7f393eff64",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0897.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-09T21:06:23+00:00",
+  "updated_at": "2026-09-09T21:06:29+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
