@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Post-merge DCO policy still rejects GitHub-generated merge; exact main merge boundary must be signed.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-09T10:21:12+00:00",
+  "updated_at": "2026-09-09T10:21:36+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -109,3 +109,6 @@ synthetic fixture for black-box executable evidence.
 
 - 2026-09-09T10:21:12+00:00: Recorded command exit 0; command argv SHA-256
   685ee277522efbd521d8a3893329a20092318d046ec15661265f09a37a89f25b.
+
+- 2026-09-09T10:21:36+00:00: Recorded command exit 0; command argv SHA-256
+  cdfab783876cf11b1e8ac9ef9133d6999c78b2bc6dd18b444e80fe8a8ddac831.
