@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 111,
+  "task_revision": 112,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T15:38:02+00:00",
+  "updated_at": "2026-09-09T15:42:53+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -408,3 +408,6 @@ Implementation has not started. Read the linked plan before claiming.
   exit 2 with bounded message TLA build image identity differs. This is the separately owned AR-0906
   Docker identity boundary in PR #121; no PR #121 paths were touched. Eight exact-head checks were
   green at classification time; remaining checks continued. No merge.
+
+- 2026-09-09T15:42:53+00:00: Recorded command exit 0; command argv SHA-256
+  d4a5d157cca2eb266df5d975e9223a26ea8266b984da57b6310e17eb3e8d1004.
