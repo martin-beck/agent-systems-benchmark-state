@@ -2,7 +2,7 @@
 {
   "branch": "docs/beginner-workflows",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T04:20:40+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0802",
     "AR-0869",
@@ -14,15 +14,15 @@
   "observed_branch": "docs/beginner-workflows",
   "observed_dirty": 0,
   "observed_head": "328de90ef1ed3ba391634009a855d731b1322a53",
-  "owner": "replay_20260909",
+  "owner": "",
   "plan": "../plans/AR-0872.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Publish linked beginner workflows for setup, multi-agent runs, progress, comparison, recording, and replay with and without the TUI.",
-  "task_revision": 168,
+  "task_revision": 169,
   "title": "Publish beginner workflow documentation",
-  "updated_at": "2026-09-09T02:23:51+00:00",
+  "updated_at": "2026-09-09T02:24:30+00:00",
   "worktree_key": "agent-systems-benchmark-beginner-workflows"
 }
 ---
@@ -487,3 +487,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T02:23:51+00:00: Recorded command exit 0; command argv SHA-256
   498ccf248bc166cd8940e579a67ad12e0a07199783062cc3019459f7d310c063.
+
+- 2026-09-09T02:24:30+00:00: Completed and independently verified. Product commits 3b0ad66 (beginner
+  workflow hub) and 328de90 (first TLA repin) merged by signed+DCO no-ff af9fb7d via PR #94;
+  upstream TLA asset was replaced again, repaired in signed+DCO 72e2e9c and merged by signed+DCO
+  no-ff 4870dfd via PR #95. Exact-head PR checks and post-merge main checks are green for 4870dfd:
+  repository quality, Rust x86/arm, formal TLC/Alloy/Kani/Loom, faults/fuzz/mutation, emulated
+  aarch64, AWQ, and headers. Local guide/TUI/formal tests pass; primary main and declared worktree
+  are clean.
