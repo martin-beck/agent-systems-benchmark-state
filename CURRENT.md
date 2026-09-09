@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Qualify pinned OpenJiuwen live execution. | Fresh immutable review of successor 19ba0fd; keep PR 124 at e407748 until approval. | replay_20260906 |
-| P1 | [AR-0907](tasks/AR-0907-hosted-runner-evidence-classification.md): Classify hosted runner evidence without weakening native qualification | Separate rolling hosted portability checks from immutable native qualification evidence. | Hold PR #123 and product successor 5e58ae5 unpublished; obtain independent review and explicit coordinator approval or rejection of signed partial-evidence amendment f6472dc2 before any product/PR change. | quality_20260906 |
+| P1 | [AR-0907](tasks/AR-0907-hosted-runner-evidence-classification.md): Classify hosted runner evidence without weakening native qualification | Separate rolling hosted portability checks from immutable native qualification evidence. | Revalidate amended product candidate 5e58ae5 against current product main; preserve exact native route and require full gates plus fresh immutable review before updating PR #123. | quality_20260906 |
 
 ## Open
 

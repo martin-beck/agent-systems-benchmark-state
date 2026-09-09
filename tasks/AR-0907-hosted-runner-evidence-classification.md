@@ -8,7 +8,7 @@
     "AR-0848"
   ],
   "id": "AR-0907",
-  "next_action": "Hold PR #123 and product successor 5e58ae5 unpublished; obtain independent review and explicit coordinator approval or rejection of signed partial-evidence amendment f6472dc2 before any product/PR change.",
+  "next_action": "Revalidate amended product candidate 5e58ae5 against current product main; preserve exact native route and require full gates plus fresh immutable review before updating PR #123.",
   "observed_branch": "fix/hosted-runner-evidence-classification",
   "observed_dirty": 0,
   "observed_head": "5e58ae5cdbae7b19f08a2135674cea31d94cc7ba",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 98,
+  "task_revision": 99,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T19:06:13+00:00",
+  "updated_at": "2026-09-09T19:06:38+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -357,3 +357,11 @@ patch release has advanced.
 
 - 2026-09-09T19:06:13+00:00: Recorded command exit 0; command argv SHA-256
   1d2f6e61650b22027e10f81c161ef1ac4c1ab932d60a0903906b7f69fc487ea9.
+
+- 2026-09-09T19:06:38+00:00: Coordinator approved activation of independently reviewed amendment
+  proposal f6472dc2b440cbfa20a78781815792ea22d75cb4. Signed+DCO activation commit
+  d0a455436264e6ff438c017b92ea0f654f159c42 records that exact lineage and makes full-or-partial
+  hosted projection acceptance effective with exact qualification-token downstream gating. Partial
+  never establishes full portability, sandbox/native/performance/release qualification or native
+  AArch64. Exact Ubuntu 24.04.4 native qualification semantics and evidence remain unchanged.
+  Proceeding to live-base and product-candidate revalidation; PR #123 remains unchanged meanwhile.
