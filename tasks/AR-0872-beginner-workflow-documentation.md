@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish linked beginner workflows for setup, multi-agent runs, progress, comparison, recording, and replay with and without the TUI.",
-  "task_revision": 139,
+  "task_revision": 140,
   "title": "Publish beginner workflow documentation",
-  "updated_at": "2026-09-09T02:13:02+00:00",
+  "updated_at": "2026-09-09T02:13:25+00:00",
   "worktree_key": "agent-systems-benchmark-beginner-workflows"
 }
 ---
@@ -405,3 +405,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-09T02:13:02+00:00: Follow-up PR #95 at 72e2e9c is fully green: formal TLC/Alloy/Kani/Loom,
   Rust x86/arm, repository quality, faults/fuzz/mutation, emulated aarch64, AWQ, and headers all
   passed. Current release asset 551753628 is validated.
+
+- 2026-09-09T02:13:25+00:00: Recorded command exit 0; command argv SHA-256
+  42ea341acb381f14dfdcb09cb8d5ea66eae4ce6f66144698e636d8b1d7f5ca64.
