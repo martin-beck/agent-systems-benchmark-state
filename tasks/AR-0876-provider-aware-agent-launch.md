@@ -25,9 +25,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply validated provider selections at the authoritative agent launch boundary and reject conflicting runtime configuration.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Wire provider-aware agent launches",
-  "updated_at": "2026-09-09T01:19:20+00:00",
+  "updated_at": "2026-09-09T01:20:36+00:00",
   "worktree_key": "agent-systems-benchmark-provider-aware-agent-launch"
 }
 ---
@@ -276,3 +276,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T01:19:20+00:00: Recorded command exit 0; command argv SHA-256
   2d4d15d43fda7d7e2fcf29e2f35a97e98856bafd592f858fabc087464c7ea412.
+
+- 2026-09-09T01:20:36+00:00: Recorded command exit 0; command argv SHA-256
+  59ea39c5251954f266b911a3e440e76f4d88773f38867540a1be6df2f047523c.
