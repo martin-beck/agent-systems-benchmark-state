@@ -10,7 +10,7 @@
     "AR-0875"
   ],
   "id": "AR-0908",
-  "next_action": "Run remaining exact one-path and full gates, then prepare signed immutable candidate.",
+  "next_action": "Hold f7a08f9 for independent immutable review; publish only after approval.",
   "observed_branch": "fix/control-state-lock-test-isolation",
   "observed_dirty": 0,
   "observed_head": "f7a08f98743643c1fa855a19ebe3a1f3211c5f05",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Harden asb-cli control-state lock test isolation and deterministic reopen coverage.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Harden control-state lock test isolation",
-  "updated_at": "2026-09-09T20:10:37+00:00",
+  "updated_at": "2026-09-09T20:11:07+00:00",
   "worktree_key": "agent-systems-benchmark-control-state-lock-test-isolation"
 }
 ---
@@ -116,3 +116,20 @@ non-deterministic isolation signal rather than claiming a production lock defect
 
 - 2026-09-09T20:10:37+00:00: Recorded command exit 0; command argv SHA-256
   e1c9b197831a90273213545ab2fe1f95a07c00fa799dda354a29674d78b28cbb.
+
+- 2026-09-09T20:11:07+00:00: Immutable candidate f7a08f98743643c1fa855a19ebe3a1f3211c5f05, tree
+  a9484d622d8d487ccb1ef85fdc52b671dd4d2c77, exact parent b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b.
+  Scope is exactly crates/asb-cli/src/control.rs within cfg(test); production locking is unchanged.
+  Atomic unique 0700 external roots validate absolute canonical non-symlink base,
+  ownership/mode/repository disjointness, bound collisions, and retain an open directory identity so
+  substituted cleanup paths are not removed. Hostile test covers relative/file/symlinked bases,
+  stale collision preservation, leaf symlink preservation, wrong owner, public mode, and path
+  substitution. Focused 14/14; parallel stress 30x14=420; exact coverage gate green (workspace and
+  critical floors), with 31/31 asb-cli library tests and 87.49% lines in the earlier focused
+  coverage context. Full locked workspace fmt, all-target clippy -D warnings, tests, rustdoc, and
+  release build green; contracts/schema, failure-path/artifact, deny/audit, exact-range repository
+  policy, signature/DCO, Gitleaks, diff/privacy/scope/clean checks green. One new hostile test
+  initially exposed inode reuse in dev/inode-only cleanup; repaired by retaining an open directory
+  handle and focused suite then passed. Earlier policy exit scanned full history because base was
+  omitted; earlier contract exit used symbolic rather than exact baseline; corrected exact-range
+  invocations passed.
