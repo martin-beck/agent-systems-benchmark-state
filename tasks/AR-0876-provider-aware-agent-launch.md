@@ -15,7 +15,7 @@
     "AR-0869"
   ],
   "id": "AR-0876",
-  "next_action": "Create signed+DCO bridge merge with first parent bc071fd and second parent 716a8f1, guarded force-with-lease, then rerun postmerge gates.",
+  "next_action": "Create signed+DCO follow-up parented bc071fd, force-with-lease origin/main 32562e8, rerun exact-main postmerge workflows.",
   "observed_branch": "feature/provider-aware-agent-launch",
   "observed_dirty": 0,
   "observed_head": "7c9daf795b02d1692e87a6be4d0087c163050ad3",
@@ -25,9 +25,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply validated provider selections at the authoritative agent launch boundary and reject conflicting runtime configuration.",
-  "task_revision": 90,
+  "task_revision": 91,
   "title": "Wire provider-aware agent launches",
-  "updated_at": "2026-09-09T01:17:51+00:00",
+  "updated_at": "2026-09-09T01:18:42+00:00",
   "worktree_key": "agent-systems-benchmark-provider-aware-agent-launch"
 }
 ---
@@ -262,3 +262,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T01:17:51+00:00: Recorded command exit 0; command argv SHA-256
   9e0700745adbe8ee2147f1c1c4363345891a6f28ca8101bff8281a3c0a749ce3.
+
+- 2026-09-09T01:18:42+00:00: Policy retry on bridge 32562e8 still rejected obsolete 716a8f1 because
+  rev-list follows the bridge second parent. Repairing by dropping that second-parent reference:
+  final main will be a signed+DCO normal follow-up parented to valid signed merge bc071fd, with no
+  bad commit in the changed range.
