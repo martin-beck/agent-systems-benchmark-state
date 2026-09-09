@@ -10,7 +10,7 @@
     "AR-0902"
   ],
   "id": "AR-0906",
-  "next_action": "Complete fake-Docker effect-order negatives, source-build regression and full formal/privacy gates; then create signed candidate for review.",
+  "next_action": "Run full formal/privacy/policy gates on the six-path verifier slice, then create a signed candidate for independent review.",
   "observed_branch": "fix/formal-oci-image-identity",
   "observed_dirty": 6,
   "observed_head": "b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make deterministic formal source builds verify OCI image identity portably across Docker engines.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Verify formal OCI build identity portably",
-  "updated_at": "2026-09-09T14:49:21+00:00",
+  "updated_at": "2026-09-09T14:50:09+00:00",
   "worktree_key": "agent-systems-benchmark-formal-oci-image-identity"
 }
 ---
@@ -60,3 +60,13 @@ instead of assuming an engine's local configuration ID equals the registry manif
 
 - 2026-09-09T14:49:21+00:00: Recorded command exit 0; command argv SHA-256
   646877526d47d96c73301b82fcda376bc137edcdbe9113af9036ccdcfe794461.
+
+- 2026-09-09T14:50:09+00:00: Bounded OCI verifier implemented in exact six-path AR-0906 scope on
+  base b6d04a8. build.sh now projects config ID, repository digests, OS and architecture as bounded
+  JSON; the closed verifier requires the sole exact name-at-digest and linux/amd64 while treating
+  config ID as a separate well-formed value. Focused tests pass 3/3: matching and distinct config
+  IDs both bind the exact repository digest; all 20 unique mutation fixtures fail with one redacted
+  diagnostic; static ordering requires verification before any docker run effect. Bash syntax,
+  ShellCheck and focused clippy pass. Real local Docker projection passes, and a full deterministic
+  source build reproduced exact output SHA-256 8c200a88, 4512486 bytes. No AR-0877 or AR-0704 path
+  changed.

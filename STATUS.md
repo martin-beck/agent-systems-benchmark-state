@@ -953,7 +953,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | contracts_20260906 | Control genuine native platform capacity lifecycle. | Repair/rebase the fail-closed TLA provenance pin, then rerun PR #119 exact-head CI; do not merge. |
-| P1 | [AR-0906](tasks/AR-0906-portable-oci-build-image-identity.md): Verify formal OCI build identity portably | quality_20260906 | Make deterministic formal source builds verify OCI image identity portably across Docker engines. | Complete fake-Docker effect-order negatives, source-build regression and full formal/privacy gates; then create signed candidate for review. |
+| P1 | [AR-0906](tasks/AR-0906-portable-oci-build-image-identity.md): Verify formal OCI build identity portably | quality_20260906 | Make deterministic formal source builds verify OCI image identity portably across Docker engines. | Run full formal/privacy/policy gates on the six-path verifier slice, then create a signed candidate for independent review. |
 
 ### Open (2)
 
