@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 7 |
 | **Planned** | Defined work awaiting promotion or dependencies | 42 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 103 |
+| **Done** | Accepted, integrated, and durably verified | 104 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -190,7 +190,7 @@ flowchart LR
         AR_0872["AR-0872 - Done"]:::status_done
         AR_0873["AR-0873 - Planned"]:::status_planned
         AR_0874["AR-0874 - Planned"]:::status_planned
-        AR_0875["AR-0875 - In progress"]:::status_in_progress
+        AR_0875["AR-0875 - Done"]:::status_done
         AR_0876["AR-0876 - Done"]:::status_done
         AR_0877["AR-0877 - Blocked"]:::status_blocked
         AR_0878["AR-0878 - In progress"]:::status_in_progress
@@ -872,12 +872,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0858](tasks/AR-0858-openjiuwen-adapter.md): Implement the OpenJiuwen contract and capability adapter | replay_20260909 | Implement the OpenJiuwen contract and capability adapter. | Implement the bounded agent contract, exact provider translation, and capability registration from the pinned protocol; keep live support unclaimed. |
-| P1 | [AR-0875](tasks/AR-0875-control-history-analysis-contract.md): Extend control history and analysis protocol | codex-longrun-control-20260909 | Extend frontend history and analysis contracts with bounded provenance, integrity, outcome, compatibility, and confounder evidence. | After AR-0806 completes, define the versioned history and analysis protocol extension before serialized CLI backend integration. |
 | P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | replay_20260906 | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Coordinator must correct the approved 14-build-input necessity criterion or partition. The fail-closed end-to-end deletion oracle proved jacocoant.jar is not necessary: deleting it still produced exact reviewed SHA-256 8c200a88d151c6c183c8dbc57a6b633d135e7a2b18242a3afbf243a9e4b68d3e. Preserve current 31-inventory/14-retained dirty implementation and do not weaken the oracle. |
 
 ### Blocked (7)
@@ -939,7 +938,7 @@ flowchart LR
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Evaluate maintenance, licenses and reproducibility before integration. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (103)
+### Done (104)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1026,6 +1025,7 @@ flowchart LR
 | P1 | [AR-0869](tasks/AR-0869-cli-multi-agent-provider-selection.md): Add CLI multi-agent provider selection | Unclaimed | Select several agents and apply one preconfigured provider profile through inspectable command-line options. | Create a signed+DCO empty CI-provenance attestation atop repaired main a3696385be31c4ab86f6fb75cfa055ff6b098574, push normally, and require fresh exact-main post-merge workflows on that reachable base; preserve older historical merge-boundary limitations. |
 | P1 | [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md): Add TUI multi-agent provider selection | Unclaimed | Choose several agents and one preconfigured provider for all of them from negotiated TUI selection lists. | Push signed repair b3c19b1 with force-with-lease, then rerun exact-head PR checks; do not merge until all required jobs pass. |
 | P1 | [AR-0871](tasks/AR-0871-record-replay-user-workflows.md): Deliver record and replay user workflows | Unclaimed | Make recording and strict replay complete, explicit, privacy-safe user workflows in both CLI and TUI. | Deliver executable CLI and TUI journeys for recording LLM responses and replaying an exact compatible cassette. |
+| P1 | [AR-0875](tasks/AR-0875-control-history-analysis-contract.md): Extend control history and analysis protocol | Unclaimed | Extend frontend history and analysis contracts with bounded provenance, integrity, outcome, compatibility, and confounder evidence. | After AR-0806 completes, define the versioned history and analysis protocol extension before serialized CLI backend integration. |
 | P1 | [AR-0876](tasks/AR-0876-provider-aware-agent-launch.md): Wire provider-aware agent launches | Unclaimed | Apply validated provider selections at the authoritative agent launch boundary and reject conflicting runtime configuration. | Create signed+DCO follow-up parented bc071fd, force-with-lease origin/main 32562e8, rerun exact-main postmerge workflows. |
 | P1 | [AR-0901](tasks/AR-0901-formal-assurance.md): Prove critical state and concurrency invariants | Unclaimed | Use bounded proofs and model tests for safety-critical domain logic. | Await independent immutable-head review of PR 14 at 2a495a99; repair any findings without merging or releasing. |
 | P1 | [AR-0902](tasks/AR-0902-fault-assurance.md): Add fuzz mutation and lifecycle fault campaigns | Unclaimed | Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection. | Run final coordination reconcile/snapshot/live doctor/full validation and release AR-0902 done only if clean synchronized state remains exact. |

@@ -2,7 +2,7 @@
 {
   "branch": "feature/control-history-analysis-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T07:02:07+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -15,15 +15,15 @@
   "observed_branch": "feature/control-history-analysis-contract",
   "observed_dirty": 0,
   "observed_head": "73b4a76b94365dc61b231f5bb4595a75999cbfbd",
-  "owner": "codex-longrun-control-20260909",
+  "owner": "",
   "plan": "../plans/AR-0875.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Extend frontend history and analysis contracts with bounded provenance, integrity, outcome, compatibility, and confounder evidence.",
-  "task_revision": 93,
+  "task_revision": 94,
   "title": "Extend control history and analysis protocol",
-  "updated_at": "2026-09-09T05:02:10+00:00",
+  "updated_at": "2026-09-09T05:02:30+00:00",
   "worktree_key": "agent-systems-benchmark-control-history-analysis-contract"
 }
 ---
@@ -252,3 +252,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T05:02:10+00:00: Recorded command exit 0; command argv SHA-256
   f6a3e2af72def84a6fbd8230212a70440a1305079386e954c005694b601722c1.
+
+- 2026-09-09T05:02:30+00:00: Merged PR #100 as signed no-ff merge
+  7669d5be6d013621dabfbae6a1fb17c4453ec50f; post-merge repair head
+  43018ed64b699725ac50e67a33359175af412381 passed headers, formal, fault, quality, emulated-aarch64,
+  and rerun Rust verification (run 34312710684; initial HTTP 500 Goose download was transient).
+  Product main and worktree are clean and synchronized.
