@@ -64,7 +64,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-frontend-run-lifecycle` | `feature/frontend-run-lifecycle` | `b3b3b8907f6d` | 0 | behind 193, ahead 0 |
 | `agent-systems-benchmark-gemini-generate-content-replay` | `feature/gemini-generate-content-replay` | `93c19625f910` | 0 | behind 241, ahead 0 |
 | `agent-systems-benchmark-gemini-thinking-config-contract` | `feature/gemini-thinking-config-contract` | `0aff7023cacf` | 0 | behind 239, ahead 0 |
-| `agent-systems-benchmark-hosted-runner-evidence` | `fix/hosted-runner-evidence-classification` | `32a8fe5b1bc0` | 0 | behind 0, ahead 4 |
+| `agent-systems-benchmark-hosted-runner-evidence` | `fix/hosted-runner-evidence-classification` | `32a8fe5b1bc0` | 4 | behind 0, ahead 4 |
+| changed files | - | - | - | `.github/workflows/native-platforms.yml`, `docs/NATIVE_X86_CAPACITY.md`, `platforms/v1/hosted-portability.schema.json`, `tools/platforms/hosted_portability.py` |
 | `agent-systems-benchmark-huawei-mit-headers` | `fix/huawei-mit-license-headers` | `7add29f1d24c` | 0 | behind 123, ahead 0 |
 | `agent-systems-benchmark-install-artifacts` | `feature/verifiable-install-artifacts` | `310fdfe30f71` | 0 | behind 60, ahead 0 |
 | `agent-systems-benchmark-install-lifecycle` | `feature/install-lifecycle` | `c7d6da71c709` | 0 | behind 46, ahead 0 |
