@@ -11,7 +11,7 @@
   "id": "AR-0878",
   "next_action": "Coordinator decision: amend the source-build lock to the 14 mechanically proven compile/dist inputs and keep the other 17 JARs as exact excluded-source inventory with a deletion/rebuild oracle, or require new authoritative evidence for the unmatched jpf-shell binary. Do not rebase or reuse generic SPDX receipts before this scope decision.",
   "observed_branch": "feature/tla-source-build-provenance",
-  "observed_dirty": 5,
+  "observed_dirty": 7,
   "observed_head": "c157cedc744373ef75aba686c00e97ce61aa3bfc",
   "owner": "replay_20260906",
   "plan": "../plans/AR-0878.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 100,
+  "task_revision": 101,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T04:26:38+00:00",
+  "updated_at": "2026-09-09T04:29:26+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
