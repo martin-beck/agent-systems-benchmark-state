@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-live",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T12:41:00+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0858"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "bf29c154cb59d332fd098e4ae64c976dc41e1416",
-  "owner": "replay_20260906",
+  "owner": "",
   "plan": "../plans/AR-0859.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T10:21:26+00:00",
+  "updated_at": "2026-09-09T12:41:58+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -285,3 +285,7 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   TraceSchema.index failure, so success evidence uses JSON while malformed terminal evidence retains
   stream-json. Worktree is clean; full hostile matrix and repository gates remain, so this is not
   publication-ready and support remains fail closed.
+
+- 2026-09-09T12:41:58+00:00: Recovered expired claim formerly owned by replay_20260906. Expired
+  owner lease recovered after coordinator audit; preserve declared worktree and require fresh claim
+  before further mutation.
