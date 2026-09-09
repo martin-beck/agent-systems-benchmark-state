@@ -2,30 +2,29 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `bf66ad4198a2a96fd284765b98a60acdcef12eac`
-- Local origin/main: `bf66ad4198a2a96fd284765b98a60acdcef12eac`
-- Primary worktree head: `bf66ad4198a2a96fd284765b98a60acdcef12eac`
+- Product remote main: `e89a2e44db829e429dedadd7a7f2ee408f338acf`
+- Local origin/main: `e89a2e44db829e429dedadd7a7f2ee408f338acf`
+- Primary worktree head: `e89a2e44db829e429dedadd7a7f2ee408f338acf`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #31 | `feature/native-platforms@bdaf9c108226` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #109 | `test/llm-double-conformance-spike@78e6a51ce99e` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test: add deterministic LLM double conformance spike |
+| #31 | `feature/native-platforms@bdaf9c108226` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34327512515 | `e89a2e44db82` | push | Huawei MIT source headers | queued:- |
+| 34327512499 | `e89a2e44db82` | push | Formal assurance | queued:- |
+| 34327512492 | `e89a2e44db82` | push | Repository quality | in_progress:- |
+| 34327512454 | `e89a2e44db82` | push | Fault assurance | queued:- |
+| 34327512448 | `e89a2e44db82` | push | Emulated aarch64 portability | in_progress:- |
+| 34327512443 | `e89a2e44db82` | push | Rust verification | queued:- |
 | 34326984268 | `78e6a51ce99e` | pull_request | Rust verification | completed:success |
 | 34326984236 | `78e6a51ce99e` | pull_request | Huawei MIT source headers | completed:success |
 | 34326984229 | `78e6a51ce99e` | pull_request | Fault assurance | completed:success |
 | 34326984222 | `78e6a51ce99e` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 34326984211 | `78e6a51ce99e` | pull_request | Formal assurance | completed:success |
 | 34326984182 | `78e6a51ce99e` | pull_request | Repository quality | completed:success |
-| 34326984142 | `78e6a51ce99e` | pull_request | Emulated aarch64 portability | completed:success |
-| 34325747694 | `bf66ad4198a2` | push | Rust verification | completed:success |
-| 34325747629 | `bf66ad4198a2` | push | Repository quality | completed:success |
-| 34325747615 | `bf66ad4198a2` | push | Huawei MIT source headers | completed:success |
-| 34325747581 | `bf66ad4198a2` | push | Formal assurance | completed:success |
-| 34325747531 | `bf66ad4198a2` | push | Fault assurance | completed:success |
