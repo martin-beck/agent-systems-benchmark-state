@@ -10,17 +10,17 @@
   "id": "AR-0704",
   "next_action": "Add bounded CLI operations and lifecycle fixtures around the green atomic ledger, then run full applicable gates and prepare a focused signed candidate.",
   "observed_branch": "feature/native-capacity-controller",
-  "observed_dirty": 2,
-  "observed_head": "b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b",
+  "observed_dirty": 0,
+  "observed_head": "5a0570fbce2fa77ab4baf6b34d2632d289a5ab36",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-09T12:48:42+00:00",
+  "updated_at": "2026-09-09T12:48:47+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
