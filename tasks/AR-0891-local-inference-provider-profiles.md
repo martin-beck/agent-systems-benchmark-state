@@ -2,7 +2,7 @@
 {
   "branch": "feat/local-inference-provider-profiles",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T11:12:52+00:00",
+  "claim_expires": "2026-09-09T11:14:43+00:00",
   "depends_on": [
     "AR-0879",
     "AR-0312",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Qualify local inference provider profiles",
-  "updated_at": "2026-09-09T09:12:54+00:00",
+  "updated_at": "2026-09-09T09:14:43+00:00",
   "worktree_key": "agent-systems-benchmark-local-inference-provider-profiles"
 }
 ---
@@ -178,3 +178,5 @@ Use exact Ollama, llama.cpp, vLLM and LocalAI sources in `docs/LOCAL_LLM_TESTING
   native Ollama read-only probe passed exact binary, server, and model pins; manifest records this
   partial evidence but AR-0891 remains in progress because tokenizer and repeated-variability
   evidence are missing and no other engine has a qualified artifact.
+
+- 2026-09-09T09:14:43+00:00: Heartbeat by codex-longrun-local-inference-profiles-20260909.
