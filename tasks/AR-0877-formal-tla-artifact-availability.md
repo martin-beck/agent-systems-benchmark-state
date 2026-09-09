@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0877",
-  "next_action": "Hold the four-path acquisition prototype unchanged and obtain an authoritative immutable TLA+ 1.8.0 artifact publication (or coordinator authorization for a separately specified reproducible source-build boundary); then refresh exact metadata once, finish deterministic faults, and run TLC/Alloy. Do not chase the continuously replaced v1.8.0 pre-release asset.",
+  "next_action": "Keep the four-path prototype unchanged. Obtain an authoritative immutable TLA+ 1.8.0 artifact or authorization for a reproducible source-build boundary; then refresh metadata once, finish deterministic faults, and run TLC/Alloy. Do not chase replaceable pre-release assets.",
   "observed_branch": "fix/formal-tla-artifact-availability",
   "observed_dirty": 4,
   "observed_head": "dca243ab7b8cbb0b2b49a568dec99c517e0719c2",
@@ -134,3 +134,7 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-09T03:46:22+00:00: Reconciled existing prototype: authoritative v1.8.0 prerelease asset
   was deleted/rebuilt with changed bytes; no durable artifact exists. Preserve dirty four-path
   prototype and wait for AR-0878 immutable publication or approved source-build boundary.
+
+- 2026-09-09T06:09:00+00:00: Coordinator metadata maintenance shortened only the stale
+  front-matter projection to satisfy the existing schema. Prior value preserved verbatim:
+  `Hold the four-path acquisition prototype unchanged and obtain an authoritative immutable TLA+ 1.8.0 artifact publication (or coordinator authorization for a separately specified reproducible source-build boundary); then refresh exact metadata once, finish deterministic faults, and run TLC/Alloy. Do not chase the continuously replaced v1.8.0 pre-release asset.`
