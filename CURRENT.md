@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Qualify pinned OpenJiuwen live execution. | Run and review the three-path loopback qualification; keep support fail closed until all checks pass. | replay_20260906 |
+| P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Qualify pinned OpenJiuwen live execution. | Add remaining corruption/retry/trickle/root/child negatives, then run full gates; keep support fail closed. | replay_20260906 |
 | P1 | [AR-0895](tasks/AR-0895-verify-coordination-content.md): Verify every coordination-content pull request | Close the workflow path-filter gap that lets coordination-content pull requests skip strict state consistency and DCO checks. | Rebase the approved three-path patch onto current repaired/licensed state main, preserve exact scope/signature/DCO, guarded force-with-lease PR #17, and require fresh exact-head CI before merge. | quality_20260906 |
 | P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Post-merge DCO policy still rejects GitHub-generated merge; exact main merge boundary must be signed. | Replace 97643044 with a same-tree same-parent signed merge commit carrying matching DCO trailer using exact force-with-lease, then verify fresh exact-main gates. | codex-longrun-mockagents-20260909 |
 

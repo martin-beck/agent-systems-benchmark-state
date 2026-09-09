@@ -7,7 +7,7 @@
     "AR-0858"
   ],
   "id": "AR-0859",
-  "next_action": "Run and review the three-path loopback qualification; keep support fail closed until all checks pass.",
+  "next_action": "Add remaining corruption/retry/trickle/root/child negatives, then run full gates; keep support fail closed.",
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "bf29c154cb59d332fd098e4ae64c976dc41e1416",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T10:20:48+00:00",
+  "updated_at": "2026-09-09T10:21:26+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -271,3 +271,17 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-09T10:20:24+00:00: Recorded command exit 0; command argv SHA-256
   0b5587e009228901ce131aa774734c9366b8063496b91f67c7d9f6d58be7fdf1.
+
+- 2026-09-09T10:21:26+00:00: Signed+DCO checkpoint bf29c154cb59d332fd098e4ae64c976dc41e1416 (tree
+  3a0f3113dd5eecb00d9ef1b92190667661dae6c2, parent 2a85872285e6de374e7ea48e3b062e4134bec49e) adds
+  exactly the three owned paths. In a bwrap user+network namespace with read-only host root, exact
+  wheel SHA256 21e9479c6b858cda28c250d63066f862fc0915cf2039edb00f016cbec7f9abba and reviewed AR-0880
+  runtime executable passed 3/3 live tests: loopback-only tool edit plus final/usage receipt,
+  malformed stream fail-closed without edit, and bounded cancellation without late edit. Ambient
+  config was planted and command-line loopback binding prevailed; output redaction assertions
+  passed. Earlier exit 2 was an operator-side patch transport failure with no product effect; an old
+  pre-AR-0880 venv correctly failed for missing opentelemetry.sdk; and successful live execution
+  uses the exact repaired runtime. The pinned stream-json success renderer exposed upstream
+  TraceSchema.index failure, so success evidence uses JSON while malformed terminal evidence retains
+  stream-json. Worktree is clean; full hostile matrix and repository gates remain, so this is not
+  publication-ready and support remains fail closed.
