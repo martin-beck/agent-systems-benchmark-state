@@ -2,30 +2,29 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `43018ed64b699725ac50e67a33359175af412381`
-- Local origin/main: `43018ed64b699725ac50e67a33359175af412381`
-- Primary worktree head: `43018ed64b699725ac50e67a33359175af412381`
+- Product remote main: `0d3f05c3c4e6c8925d336fc97b4050ef184e698d`
+- Local origin/main: `0d3f05c3c4e6c8925d336fc97b4050ef184e698d`
+- Primary worktree head: `0d3f05c3c4e6c8925d336fc97b4050ef184e698d`
 
 ## Open pull requests
 
 | PR | Head | Base | Merge | Checks | Title |
 | --- | --- | --- | --- | --- | --- |
-| #31 | `feature/native-platforms@bdaf9c108226` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
-| #101 | `feature/modern-terminal-rendering@fd1989a096a3` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(tui): add adaptive terminal capability policy |
+| #31 | `feature/native-platforms@bdaf9c108226` | `main` | UNKNOWN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | platforms: add fail-closed native qualification evidence |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34314501892 | `0d3f05c3c4e6` | push | Formal assurance | queued:- |
+| 34314501848 | `0d3f05c3c4e6` | push | Fault assurance | queued:- |
+| 34314501837 | `0d3f05c3c4e6` | push | Repository quality | queued:- |
+| 34314501779 | `0d3f05c3c4e6` | push | Emulated aarch64 portability | queued:- |
+| 34314501761 | `0d3f05c3c4e6` | push | Huawei MIT source headers | queued:- |
+| 34314501712 | `0d3f05c3c4e6` | push | Rust verification | queued:- |
 | 34313816676 | `fd1989a096a3` | pull_request | Formal assurance | completed:success |
 | 34313816546 | `fd1989a096a3` | pull_request | Emulated aarch64 portability | completed:success |
 | 34313816487 | `fd1989a096a3` | pull_request | Repository quality | completed:success |
 | 34313816477 | `fd1989a096a3` | pull_request | Rust verification | completed:success |
 | 34313816474 | `fd1989a096a3` | pull_request | Huawei MIT source headers | completed:success |
 | 34313816421 | `fd1989a096a3` | pull_request | Fault assurance | completed:success |
-| 34313816413 | `fd1989a096a3` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 34312710713 | `43018ed64b69` | push | Emulated aarch64 portability | completed:success |
-| 34312710688 | `43018ed64b69` | push | Formal assurance | completed:success |
-| 34312710684 | `43018ed64b69` | push | Rust verification | completed:success |
-| 34312710666 | `43018ed64b69` | push | Repository quality | completed:success |
-| 34312710658 | `43018ed64b69` | push | Huawei MIT source headers | completed:success |
