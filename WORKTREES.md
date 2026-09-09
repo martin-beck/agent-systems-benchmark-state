@@ -27,8 +27,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ci-artifact-quota-resilience` | `feature/ci-artifact-quota-resilience` | `7d98653e7e7f` | 0 | behind 197, ahead 0 |
 | `agent-systems-benchmark-cli-multi-agent-provider-selection` | `feature/cli-multi-agent-provider-selection` | `0d9d317716d5` | 0 | behind 43, ahead 0 |
 | `agent-systems-benchmark-contract-consistency` | `feature/contract-consistency` | `289b2711774b` | 0 | behind 107, ahead 0 |
-| `agent-systems-benchmark-control-history-analysis-contract` | `feature/control-history-analysis-contract` | `7e17c61ca773` | 3 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-control/src/protocol.rs`, `crates/asb-control/tests/control.rs`, `docs/FRONTEND_CONTROL_API.md` |
+| `agent-systems-benchmark-control-history-analysis-contract` | `feature/control-history-analysis-contract` | `7e17c61ca773` | 11 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-control/examples/generate_schema.rs`, `crates/asb-control/src/lib.rs`, `crates/asb-control/src/protocol.rs`, `crates/asb-control/src/schema.rs`, `crates/asb-control/tests/control.rs`, `crates/asb-control/tests/schema_conformance.rs`, `docs/FRONTEND_CONTROL_API.md`, `crates/asb-control/fixtures/v1/analysis-evidence.json`, `crates/asb-control/fixtures/v1/history-evidence.json`, `crates/asb-control/schema/v1/analysis-evidence.schema.json`, `crates/asb-control/schema/v1/history-evidence.schema.json` |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 320, ahead 0 |
 | `agent-systems-benchmark-credential-fd-helper-resolvers` | `feature/credential-fd-helper-resolvers` | `ef5c40762e27` | 0 | behind 48, ahead 0 |
 | `agent-systems-benchmark-credential-reference-boundary` | `feature/credential-reference-boundary` | `5d62546b5d56` | 0 | behind 68, ahead 0 |

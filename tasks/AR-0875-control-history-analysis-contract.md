@@ -13,7 +13,7 @@
   "id": "AR-0875",
   "next_action": "After AR-0806 completes, define the versioned history and analysis protocol extension before serialized CLI backend integration.",
   "observed_branch": "feature/control-history-analysis-contract",
-  "observed_dirty": 3,
+  "observed_dirty": 11,
   "observed_head": "7e17c61ca77329913f836443fd53109d1eb8b840",
   "owner": "codex-longrun-control-20260909",
   "plan": "../plans/AR-0875.md",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend frontend history and analysis contracts with bounded provenance, integrity, outcome, compatibility, and confounder evidence.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Extend control history and analysis protocol",
-  "updated_at": "2026-09-09T04:38:32+00:00",
+  "updated_at": "2026-09-09T04:38:37+00:00",
   "worktree_key": "agent-systems-benchmark-control-history-analysis-contract"
 }
 ---
