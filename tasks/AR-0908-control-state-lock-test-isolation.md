@@ -12,7 +12,7 @@
   "id": "AR-0908",
   "next_action": "Hold f7a08f9 for independent immutable review; publish only after approval.",
   "observed_branch": "fix/control-state-lock-test-isolation",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "f7a08f98743643c1fa855a19ebe3a1f3211c5f05",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0908.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Harden asb-cli control-state lock test isolation and deterministic reopen coverage.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Harden control-state lock test isolation",
-  "updated_at": "2026-09-09T20:18:50+00:00",
+  "updated_at": "2026-09-09T20:18:57+00:00",
   "worktree_key": "agent-systems-benchmark-control-state-lock-test-isolation"
 }
 ---
