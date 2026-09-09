@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T17:45:31+00:00",
+  "updated_at": "2026-09-09T17:51:09+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -228,3 +228,6 @@ patch release has advanced.
   strict mypy boundary, actionlint, zizmor, Gitleaks, cargo fmt/clippy workspace all-targets -D
   warnings, diff/clean checks. Unsupported native qualification on rolling hosted images remains
   explicit.
+
+- 2026-09-09T17:51:09+00:00: Recorded command exit 127; command argv SHA-256
+  d47783a22c0773184ae348243555e8eb8edd90e90b2f1cbe35a0dc8fb675e37c.
