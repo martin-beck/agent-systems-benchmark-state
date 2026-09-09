@@ -8,7 +8,7 @@
     "AR-0889"
   ],
   "id": "AR-0896",
-  "next_action": "Add hostile fault/tool/cancellation/backpressure, network-denial, repeated-clean-state, and arm64/unsupported evidence checks; then rerun exact gates.",
+  "next_action": "Run post-merge exact-main workflows, then complete hostile fault/tool/cancellation/backpressure and network-denial evidence or release blocked if required behavior is unavailable.",
   "observed_branch": "test/mockagents-executable-qualification",
   "observed_dirty": 0,
   "observed_head": "3f1de4106adf9ad6c34759638d70e9001709ab0a",
@@ -17,10 +17,10 @@
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Build the pinned MockAgents qualification harness; exact amd64 protocol smoke and provenance checks pass, hostile matrix remains.",
-  "task_revision": 13,
+  "summary": "PR #115 merged; qualification harness integrated, with hostile unsupported cases explicitly bounded.",
+  "task_revision": 14,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-09T10:02:48+00:00",
+  "updated_at": "2026-09-09T10:08:28+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -55,3 +55,8 @@ synthetic fixture for black-box executable evidence.
   06c97c3ac06498041b764894cd0d33f558c890057cf487c180d031982747e27e.
 
 - 2026-09-09T10:02:48+00:00: Heartbeat by codex-longrun-mockagents-20260909.
+
+- 2026-09-09T10:08:28+00:00: PR #115 merged to product main as
+  004d87252b065679d80ca9674356b47146754528 after all 14 exact-head checks passed. Post-merge six
+  required workflows are running. The implementation does not claim AR-0890 readiness; unsupported
+  cases remain explicit.
