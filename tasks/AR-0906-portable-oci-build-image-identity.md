@@ -12,17 +12,17 @@
   "id": "AR-0906",
   "next_action": "Await independent immutable review of 90caa785; publish only after approval and fresh exact-head CI.",
   "observed_branch": "fix/formal-oci-image-identity",
-  "observed_dirty": 3,
-  "observed_head": "90caa78574f70a67646c2d6fc30d8744e955c250",
+  "observed_dirty": 0,
+  "observed_head": "156f7e011867956cb3bfaf5f511d65340f1b840e",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0906.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make deterministic formal source builds verify OCI image identity portably across Docker engines.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Verify formal OCI build identity portably",
-  "updated_at": "2026-09-09T15:10:30+00:00",
+  "updated_at": "2026-09-09T15:10:36+00:00",
   "worktree_key": "agent-systems-benchmark-formal-oci-image-identity"
 }
 ---
