@@ -8,7 +8,7 @@
     "AR-0848"
   ],
   "id": "AR-0907",
-  "next_action": "Hold f0b7b46 for fresh immutable review; then guarded PR #123 update and exact-head CI after approval.",
+  "next_action": "Monitor fresh PR #123 exact-head CI at f0b7b46; do not merge until all required checks pass.",
   "observed_branch": "fix/hosted-runner-evidence-classification",
   "observed_dirty": 0,
   "observed_head": "f0b7b46db271cd9de5e89ab1d3cdd6cf86a662d0",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 132,
+  "task_revision": 133,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T19:56:46+00:00",
+  "updated_at": "2026-09-09T19:57:21+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -497,3 +497,12 @@ patch release has advanced.
 
 - 2026-09-09T19:56:46+00:00: Recorded command exit 0; command argv SHA-256
   c7f301d9cd892a526be18aff0a42d3dd7dd2cafab81aee420afc1ad6b386377d.
+
+- 2026-09-09T19:57:21+00:00: After independent approval, guarded exact force-with-lease updated PR
+  #123 from remote head 5e58ae5cdbae7b19f08a2135674cea31d94cc7ba to unchanged reviewed
+  f0b7b46db271cd9de5e89ab1d3cdd6cf86a662d0 on base b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b.
+  Worktree remains clean and candidate signature/DCO/tree are preserved. Fresh exact-head runs
+  started: Rust 34398081415, platform 34398081472, AWQ 34398081506, headers 34398081509, fault
+  34398081515, quality 34398081527, emulated aarch64 34398081609, formal 34398081718. All twelve
+  jobs are currently in progress; PR remains open/UNSTABLE solely pending checks. No merge or tree
+  mutation.
