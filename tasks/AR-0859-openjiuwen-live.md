@@ -7,7 +7,7 @@
     "AR-0858"
   ],
   "id": "AR-0859",
-  "next_action": "Fresh immutable review of cceb76f; keep PR 124 at e407748 until approval.",
+  "next_action": "Monitor PR 124 exact-head CI; inspect terminal failures without changing cceb76f.",
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "cceb76f436f8918786f610afdf20ba99fbd87d34",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 215,
+  "task_revision": 216,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T19:15:08+00:00",
+  "updated_at": "2026-09-09T19:15:36+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -728,3 +728,13 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-09T19:15:08+00:00: Recorded command exit 1; command argv SHA-256
   9e42c995fa731ff4ff8b30d2147a362c1519c6a9ff4b8b7e62f3869e118b3394.
+
+- 2026-09-09T19:15:36+00:00: Independent-review-approved head
+  cceb76f436f8918786f610afdf20ba99fbd87d34 was published to PR #124 by exact force-with-lease from
+  expected remote e4077483eb04f2f3f2b7f1ac48e28dafb8c51b11. Remote branch and PR now bind cceb76f
+  exactly; local tree remains clean at 2a07bfc6136d749c13d088bb49eef0bfed260e3a with verified SSH
+  signature and DCO. Fresh exact-head CI launched: runs 34393862053 formal, 34393862056 emulated
+  aarch64, 34393862085 headers, 34393862124 fault, 34393862216 AWQ, 34393862222 native, 34393862230
+  quality, and 34393862356 Rust. Headers passed; TLC/Alloy job 102608590429 reported failure while
+  its parent formal run remained active, so GitHub withheld failure logs; other required jobs were
+  pending. No rerun or tree mutation.
