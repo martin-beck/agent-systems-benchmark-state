@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Close the workflow path-filter gap that lets coordination-content pull requests skip strict state consistency and DCO checks.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Verify every coordination-content pull request",
-  "updated_at": "2026-09-09T10:15:00+00:00",
+  "updated_at": "2026-09-09T10:15:18+00:00",
   "worktree_key": "agent-systems-benchmark-state-verify-coordination-content"
 }
 ---
@@ -126,3 +126,6 @@ Ensure state-content pull requests cannot bypass exact-head schema, generated-vi
   action pins, actionlint, 3/3 focused tests, verify-commit and diff-check. Recorded full gates and
   combined-tree repaired metadata validation are sufficient. Publication approved; no reviewer
   mutation.
+
+- 2026-09-09T10:15:18+00:00: Recorded command exit 0; command argv SHA-256
+  609b861d4687b99d171f631cab2dc402e26f342ebfcbf3dbdeeb03d6d020006e.
