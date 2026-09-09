@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-08T23:51:07+00:00",
+  "updated_at": "2026-09-09T00:09:06+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
@@ -219,3 +219,6 @@ Implementation has not started. Read the linked plan before claiming.
   range-diff from 031a451 is exact '=' and scope remains README plus lib.rs. Fresh fmt, workspace
   Clippy -D warnings, workspace tests, rustdoc -D warnings, release build, signature, repository
   policy, diff-check and Gitleaks all pass. PR remains at 031a451 pending fresh immutable review.
+
+- 2026-09-09T00:09:06+00:00: Recorded command exit 0; command argv SHA-256
+  39f2d3eb2630819fe7fe5e025021bd99581342e825abe3648d63252f1b90379e.
