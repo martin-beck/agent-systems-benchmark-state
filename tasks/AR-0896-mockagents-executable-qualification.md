@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Corrected DCO trailer identity on repair PR #116; exact-head checks rerunning.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-09T10:12:35+00:00",
+  "updated_at": "2026-09-09T10:12:59+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -83,3 +83,6 @@ synthetic fixture for black-box executable evidence.
 - 2026-09-09T10:12:35+00:00: Policy failure 34338751615 showed the Signed-off-by email must match
   configured commit identity martin.beck2@gmx.de. Replaced c72aa306 with signed commit 82d146d5e,
   force-with-lease from the declared branch old head, preserving the same tree and repair scope.
+
+- 2026-09-09T10:12:59+00:00: Recorded command exit 0; command argv SHA-256
+  5f9fda1e7ce76a3560f1448a43040fa4972789f2eca3049ad2d0d28d53ddc547.
