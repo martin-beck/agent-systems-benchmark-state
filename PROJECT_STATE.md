@@ -21,7 +21,7 @@ Generated from local Git and GitHub. Do not edit.
 | 34315809071 | `ecdfae42d576` | push | Repository quality | in_progress:- |
 | 34315809037 | `ecdfae42d576` | push | Rust verification | in_progress:- |
 | 34315809032 | `ecdfae42d576` | push | Huawei MIT source headers | completed:success |
-| 34315809031 | `ecdfae42d576` | push | Formal assurance | in_progress:- |
+| 34315809031 | `ecdfae42d576` | push | Formal assurance | completed:success |
 | 34315356592 | `310fdfe30f71` | pull_request | Huawei MIT source headers | completed:success |
 | 34315356554 | `310fdfe30f71` | pull_request | Formal assurance | completed:success |
 | 34315356538 | `310fdfe30f71` | pull_request | Fault assurance | completed:success |
