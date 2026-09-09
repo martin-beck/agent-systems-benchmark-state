@@ -7,7 +7,7 @@
     "AR-0857"
   ],
   "id": "AR-0880",
-  "next_action": "Complete strengthened closed-oracle and mechanical fresh-install gates, create a new signed three-path candidate, and request fresh independent review; loopback provider attempt remains exclusively deferred to AR-0859.",
+  "next_action": "Fresh independent immutable review of strengthened exact candidate 34c1bc0eea8164dbe9349f7a3b26649d8aaa02b2 (tree 49fe1f2fb06d487c2c4384346934465fda29a9de, parent 513c1d926458f1cb6a26d3f7277dc7d9b1496df3); hold publication and rebase because current origin/main e89a2e44db829e429dedadd7a7f2ee408f338acf has advanced.",
   "observed_branch": "fix/openjiuwen-runtime-closure",
   "observed_dirty": 0,
   "observed_head": "34c1bc0eea8164dbe9349f7a3b26649d8aaa02b2",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Repair OpenJiuwen runtime closure",
-  "updated_at": "2026-09-09T08:20:49+00:00",
+  "updated_at": "2026-09-09T08:21:20+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-runtime-closure"
 }
 ---
@@ -198,3 +198,20 @@ a dependency, avoiding a completion cycle while AR-0859 remains blocked on this 
   ebfe67ca3427432c175f656c45f1c93fe6ffab8b63a1456d8749c9782a9ec918.
 
 - 2026-09-09T08:20:49+00:00: Heartbeat by replay_20260906.
+
+- 2026-09-09T08:21:20+00:00: Review-repair candidate complete: SSH-signed+DCO
+  34c1bc0eea8164dbe9349f7a3b26649d8aaa02b2, tree 49fe1f2fb06d487c2c4384346934465fda29a9de, parent
+  513c1d926458f1cb6a26d3f7277dc7d9b1496df3; clean exact three-path scope, 610 insertions/5
+  deletions. The validator strictly parses 170 sorted unique package identities and every sorted
+  unique SHA256 artifact set and binds canonical inventory digest
+  05ac9dae97b398b18f2d466cda559ad6cde0485b7e449cf4772a545935debeab in code and provenance. It
+  rejects per-package name/version/hash mutations (510 cases),
+  floating/partial/deleted/duplicate/swapped-wheel/base-only/inventory/resolver mutations.
+  Mechanical exact test uses digest-bound uv and wheel, performs fresh online then explicit
+  UV_OFFLINE/proxy-denied hash-required install from the acquired cache, checks exact 170 inventory,
+  sys.prefix/site isolation, metadata console script, required modules, wheel metadata, derived
+  executable/help/version, and fresh partial-corrupt-cache rejection; arbitrary /bin/true is
+  rejected. Loopback provider attempt remains explicitly deferred to AR-0859. Green exact tree:
+  focused 4 passed/1 ignored plus real ignored 1 passed; workspace fmt/Clippy/tests/docs/release;
+  formal; policy; cargo-deny/audit; actionlint/zizmor; mutation 7/7; exact-range Gitleaks; coverage
+  workspace 93.16% lines and critical replay 97.84%.
