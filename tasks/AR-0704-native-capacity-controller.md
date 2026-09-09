@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0704",
-  "next_action": "Independent immutable review of 28f30ee; keep reconciliation fenced and do not publish.",
+  "next_action": "Repair/rebase the fail-closed TLA provenance pin, then rerun PR #119 exact-head CI; do not merge.",
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "28f30eea80efef5a61ea438e77402f8640564cc9",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-09T13:20:03+00:00",
+  "updated_at": "2026-09-09T13:20:36+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -262,3 +262,15 @@ must not block this AR or its dependents.
 
 - 2026-09-09T13:20:03+00:00: Recorded command exit 1; command argv SHA-256
   c67106852a0572347e8565eef1b0401c25be3c98c53cf55261e555e3fcf6ed4c.
+
+- 2026-09-09T13:20:36+00:00: Published independently approved exact candidate
+  28f30eea80efef5a61ea438e77402f8640564cc9 as focused PR #119; remote branch was absent before the
+  non-force push. PR head and base were verified as 28f30eea and b6d04a83. Exact-head CI is
+  terminal: 11 checks succeeded and one failed. Formal assurance run 34355869235 job 102480266536
+  failed in run_temporal_models.sh immediately after downloading the official TLA+ v1.8.0 asset.
+  Sanitized reproduction confirms the asset retains expected 4490679 bytes but now hashes
+  ae41e3f67f8f81de9788e348cac2c868f0fdf810e14c6b49fd759b3ef578562e instead of pinned
+  a1fc0bfe391d99fdd86f579a63ff68c0950010e9dde551f1192b867d5c8f4efd. This is a fail-closed upstream
+  provenance mismatch in unchanged formal paths, not an AR-0704 two-path regression. No merge
+  attempted. Preserve exact approved scope and explicit unavailable-verifier/native-evidence
+  limitations.
