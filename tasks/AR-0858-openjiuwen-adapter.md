@@ -9,17 +9,17 @@
   "id": "AR-0858",
   "next_action": "Run full asb-agents package tests and workspace validation, then commit/publish the reviewed adapter boundary.",
   "observed_branch": "feature/openjiuwen-adapter",
-  "observed_dirty": 3,
-  "observed_head": "ca6e75916a8c9831b9107377cd48d731463c272a",
+  "observed_dirty": 0,
+  "observed_head": "43ceb0f1bf8bba66723b96ef8e41564df65eb7a5",
   "owner": "codex-longrun-openjiuwen-adapter-20260909",
   "plan": "../plans/AR-0858.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the OpenJiuwen contract and capability adapter.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Implement the OpenJiuwen contract and capability adapter",
-  "updated_at": "2026-09-09T06:10:48+00:00",
+  "updated_at": "2026-09-09T06:10:53+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-adapter"
 }
 ---
