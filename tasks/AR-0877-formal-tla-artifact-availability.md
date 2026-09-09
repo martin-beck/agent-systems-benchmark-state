@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T01:01:25+00:00",
+  "updated_at": "2026-09-09T01:01:44+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -39,3 +39,6 @@ Implementation has not started. Read the linked plan before claiming.
   provider-launch scopes. Promote for the blocking TLA+ artifact availability repair.
 
 - 2026-09-09T01:01:25+00:00: Claimed by replay_20260906.
+
+- 2026-09-09T01:01:44+00:00: Recorded command exit 0; command argv SHA-256
+  dd885d3beb1c7712be2c40fc7a268651d94964934cea87ee439edf2d698d0f77.
