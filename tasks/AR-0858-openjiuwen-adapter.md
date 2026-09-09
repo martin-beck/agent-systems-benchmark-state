@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the OpenJiuwen contract and capability adapter.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Implement the OpenJiuwen contract and capability adapter",
-  "updated_at": "2026-09-09T06:16:58+00:00",
+  "updated_at": "2026-09-09T06:17:03+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-adapter"
 }
 ---
@@ -146,3 +146,6 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   8f92bc0a3d2a3fe2a4549ca96e84097542516f018ff5c1bab644c3531ad605a6.
 
 - 2026-09-09T06:16:58+00:00: Heartbeat by codex-longrun-openjiuwen-adapter-20260909.
+
+- 2026-09-09T06:17:03+00:00: Recorded command exit 0; command argv SHA-256
+  b02994d8fad8d35daca917657774e5cd6b687ecc85bbce2465ef539134b5f5a8.
