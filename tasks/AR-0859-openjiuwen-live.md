@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T07:06:27+00:00",
+  "updated_at": "2026-09-09T07:09:38+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -111,3 +111,6 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   packages versus 161 and includes prompt-toolkit 3.0.53/opentelemetry-sdk 1.44.0; install with
   hashes succeeds. This proves repair feasibility but is not reviewed provenance and cannot support
   a live claim yet. No AR-0859 owned product path changed.
+
+- 2026-09-09T07:09:38+00:00: Recorded command exit 2; command argv SHA-256
+  cb76f2eadc7d84a08940326c617e2bf9e8f94bdca84bf86b5de2ac1eaaae9c80.
