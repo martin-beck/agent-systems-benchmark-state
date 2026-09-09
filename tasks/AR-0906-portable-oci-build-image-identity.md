@@ -10,7 +10,7 @@
     "AR-0902"
   ],
   "id": "AR-0906",
-  "next_action": "Implement and test portable digest-plus-platform OCI identity verification for the deterministic TLA source build.",
+  "next_action": "Complete fake-Docker effect-order negatives, source-build regression and full formal/privacy gates; then create signed candidate for review.",
   "observed_branch": "fix/formal-oci-image-identity",
   "observed_dirty": 6,
   "observed_head": "b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make deterministic formal source builds verify OCI image identity portably across Docker engines.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Verify formal OCI build identity portably",
-  "updated_at": "2026-09-09T14:47:28+00:00",
+  "updated_at": "2026-09-09T14:47:54+00:00",
   "worktree_key": "agent-systems-benchmark-formal-oci-image-identity"
 }
 ---
@@ -48,3 +48,12 @@ instead of assuming an engine's local configuration ID equals the registry manif
 
 - 2026-09-09T14:47:28+00:00: Recorded command exit 0; command argv SHA-256
   79ee00f5fb02a02c5f835f3fcb6d14de21cd6dc98153635aa06a22527555d128.
+
+- 2026-09-09T14:47:54+00:00: Initial AR-0906 verifier checkpoint on exact product base b6d04a8.
+  Dirty scope is exactly six owned paths: build.sh, new bounded verifier, positive/mutation
+  fixtures, focused Rust test and public design note. Verifier distinguishes OCI config ID from
+  repository digest; it requires a closed <=16384-byte JSON projection, exactly one pinned
+  name-at-digest, linux/amd64, and redacts all failures. Focused test passes 3/3: two positive
+  config-ID representations and all 20 unique declared mutations fail closed, plus static effect
+  ordering. Real local Docker projection for the pinned digest passes. No AR-0877 PR path or AR-0704
+  path changed.
