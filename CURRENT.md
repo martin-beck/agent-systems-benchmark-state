@@ -9,6 +9,12 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0880](tasks/AR-0880-openjiuwen-runtime-closure.md): Repair OpenJiuwen runtime closure | Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification. | Independent immutable review exact candidate 343998ada0a057e177fb528eddc9f0f80ca6db3a (tree 88cff0f4f0bf0f0235ae68f1eb1e904da7f33268, parent 513c1d926458f1cb6a26d3f7277dc7d9b1496df3); current origin/main has advanced, so do not publish or rebase without coordinator authorization. | replay_20260906 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0888](tasks/AR-0888-llm-double-conformance-spike.md): Spike deterministic LLM double conformance | Measure deterministic LLM test doubles against one hostile ASB protocol and isolation suite before selecting any dependency. | Build the isolated OpenAI and Anthropic conformance spike, execute exact pinned candidates, and publish pass, fail, unsupported, and untested evidence. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -59,7 +65,6 @@ Never edit this file directly.
 | P1 | [AR-0868](tasks/AR-0868-workbuddy-qualification.md): Independently qualify and document WorkBuddy support | Independently qualify and document WorkBuddy support. | Run independent exact-tree qualification, offline provenance verification, full gates, native evidence, documentation review, and post-merge validation. | - |
 | P1 | [AR-0873](tasks/AR-0873-ci-workflow-captures.md): Generate CI workflow screenshots | Produce reproducible screenshots and text equivalents from example workflows actually executed in CI. | Generate privacy-safe CLI and TUI workflow screenshots from real synthetic CI executions. | - |
 | P1 | [AR-0874](tasks/AR-0874-automatic-workflow-refresh.md): Automate workflow documentation refresh | Automatically refresh or reject stale workflow documentation and CI captures when essential user-visible behavior changes. | Add essential-change detection, deterministic regeneration, and reviewed update automation for workflows and captures. | - |
-| P1 | [AR-0888](tasks/AR-0888-llm-double-conformance-spike.md): Spike deterministic LLM double conformance | Measure deterministic LLM test doubles against one hostile ASB protocol and isolation suite before selecting any dependency. | Build the isolated OpenAI and Anthropic conformance spike, execute exact pinned candidates, and publish pass, fail, unsupported, and untested evidence. | - |
 | P1 | [AR-0889](tasks/AR-0889-llm-fixture-scenario-contract.md): Define the LLM fixture and scenario contract | Define generated synthetic LLM scenarios without weakening the existing content-addressed cassette replay contract. | Specify and implement the selected synthetic fixture and scenario contract with strict evidence labels, privacy bounds, and fail-closed validation. | - |
 | P1 | [AR-0890](tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. | - |
 | P1 | [AR-0891](tasks/AR-0891-local-inference-provider-profiles.md): Qualify local inference provider profiles | Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server. | Qualify grouped Ollama, llama.cpp, vLLM, and LocalAI profiles with exact engine, model, hardware, protocol, isolation, and reproducibility evidence. | - |
