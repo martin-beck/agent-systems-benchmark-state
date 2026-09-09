@@ -10,7 +10,7 @@
     "AR-0401"
   ],
   "id": "AR-0702",
-  "next_action": "Keep reviewed PR #31 head bdaf9c108226f34ec6098f75b51fd601da9e9571 immutable and green; await AR-0703 genuine Debian/openEuler x86_64/aarch64 lab capacity before completing remaining native qualification and AR-0702.",
+  "next_action": "Rebase PR #31, replace native ARM64 completion gates with the pinned QEMU AArch64 lane where applicable, document native ARM64 as optional future qualification, and rerun exact-head checks.",
   "observed_branch": "feature/native-platforms",
   "observed_dirty": 0,
   "observed_head": "bdaf9c108226f34ec6098f75b51fd601da9e9571",
@@ -19,10 +19,10 @@
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Exercise native x86_64 and aarch64 including booted openEuler kernels.",
-  "task_revision": 295,
+  "summary": "Qualify native x86_64 and required emulated AArch64 portability; track native ARM64 as optional future evidence.",
+  "task_revision": 296,
   "title": "Validate native Linux kernels and architectures",
-  "updated_at": "2026-09-09T10:36:14+00:00",
+  "updated_at": "2026-09-09T10:36:17+00:00",
   "worktree_key": "agent-systems-benchmark-native-platforms"
 }
 ---
@@ -801,3 +801,6 @@ Implementation has not started. Read the linked plan before claiming.
   future qualification.
 
 - 2026-09-09T10:36:14+00:00: Claimed by native-policy-20260909.
+
+- 2026-09-09T10:36:17+00:00: Applied the user-directed non-blocking native ARM64 policy to the
+  active task.

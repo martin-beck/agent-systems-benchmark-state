@@ -931,7 +931,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0702](tasks/AR-0702-native-platforms.md): Validate native Linux kernels and architectures | native-policy-20260909 | Exercise native x86_64 and aarch64 including booted openEuler kernels. | Keep reviewed PR #31 head bdaf9c108226f34ec6098f75b51fd601da9e9571 immutable and green; await AR-0703 genuine Debian/openEuler x86_64/aarch64 lab capacity before completing remaining native qualification and AR-0702. |
+| P1 | [AR-0702](tasks/AR-0702-native-platforms.md): Validate native Linux kernels and architectures | native-policy-20260909 | Qualify native x86_64 and required emulated AArch64 portability; track native ARM64 as optional future evidence. | Rebase PR #31, replace native ARM64 completion gates with the pinned QEMU AArch64 lane where applicable, document native ARM64 as optional future qualification, and rerun exact-head checks. |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | replay_20260906 | Qualify pinned OpenJiuwen live execution. | Add remaining corruption/retry/trickle/root/child negatives, then run full gates; keep support fail closed. |
 
 ### Blocked (8)
