@@ -2,7 +2,7 @@
 {
   "branch": "feature/provider-aware-agent-launch",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T02:43:34+00:00",
+  "claim_expires": "2026-09-09T02:43:58+00:00",
   "depends_on": [
     "AR-0102",
     "AR-0103",
@@ -25,9 +25,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Apply validated provider selections at the authoritative agent launch boundary and reject conflicting runtime configuration.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Wire provider-aware agent launches",
-  "updated_at": "2026-09-09T00:43:38+00:00",
+  "updated_at": "2026-09-09T00:43:58+00:00",
   "worktree_key": "agent-systems-benchmark-provider-aware-agent-launch"
 }
 ---
@@ -87,3 +87,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T00:43:38+00:00: Recorded command exit 0; command argv SHA-256
   8ac918ff2f721c0cbeb365213414bd96fba625d2259fb4d9d8040feb612e7236.
+
+- 2026-09-09T00:43:58+00:00: Heartbeat by replay_20260909.
