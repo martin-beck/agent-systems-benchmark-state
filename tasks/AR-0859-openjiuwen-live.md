@@ -7,7 +7,7 @@
     "AR-0858"
   ],
   "id": "AR-0859",
-  "next_action": "Implement the three owned loopback fixtures; prove pinned edit/tool/usage/cancel/cleanup/network denial, keeping support fail closed until all executable checks pass.",
+  "next_action": "Run and review the three-path loopback qualification; keep support fail closed until all checks pass.",
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 4,
   "observed_head": "2a85872285e6de374e7ea48e3b062e4134bec49e",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T10:16:15+00:00",
+  "updated_at": "2026-09-09T10:17:03+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -244,3 +244,6 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-09T10:16:15+00:00: Recorded command exit 0; command argv SHA-256
   3416eb388a4b966b6cf4bdd1139aa9f349e6bfc708573eb3fabfdae4195f59a0.
+
+- 2026-09-09T10:17:03+00:00: Shortened next_action below the coordination schema limit; full
+  executable evidence and acceptance details remain in the task body.
