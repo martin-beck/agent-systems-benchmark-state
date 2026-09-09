@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 8 |
 | **Planned** | Defined work awaiting promotion or dependencies | 39 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 116 |
+| **Done** | Accepted, integrated, and durably verified | 117 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -203,7 +203,7 @@ flowchart LR
         AR_0892["AR-0892 - Planned"]:::status_planned
         AR_0893["AR-0893 - Planned"]:::status_planned
         AR_0894["AR-0894 - Planned"]:::status_planned
-        AR_0895["AR-0895 - In progress"]:::status_in_progress
+        AR_0895["AR-0895 - Done"]:::status_done
         AR_0896["AR-0896 - In progress"]:::status_in_progress
     end
     subgraph series_09["09 - Assurance"]
@@ -927,12 +927,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | replay_20260906 | Qualify pinned OpenJiuwen live execution. | Add remaining corruption/retry/trickle/root/child negatives, then run full gates; keep support fail closed. |
-| P1 | [AR-0895](tasks/AR-0895-verify-coordination-content.md): Verify every coordination-content pull request | quality_20260906 | Close the workflow path-filter gap that lets coordination-content pull requests skip strict state consistency and DCO checks. | Rebase the approved three-path patch onto current repaired/licensed state main, preserve exact scope/signature/DCO, guarded force-with-lease PR #17, and require fresh exact-head CI before merge. |
 | P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | codex-longrun-mockagents-20260909 | Post-merge DCO policy still rejects GitHub-generated merge; exact main merge boundary must be signed. | Replace 97643044 with a same-tree same-parent signed merge commit carrying matching DCO trailer using exact force-with-lease, then verify fresh exact-main gates. |
 
 ### Blocked (8)
@@ -992,7 +991,7 @@ flowchart LR
 | P2 | [AR-0903](tasks/AR-0903-release-qualification.md): Package and qualify the first release | Unclaimed | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (116)
+### Done (117)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1092,6 +1091,7 @@ flowchart LR
 | P1 | [AR-0888](tasks/AR-0888-llm-double-conformance-spike.md): Spike deterministic LLM double conformance | Unclaimed | Measure deterministic LLM test doubles against one hostile ASB protocol and isolation suite before selecting any dependency. | Build the isolated OpenAI and Anthropic conformance spike, execute exact pinned candidates, and publish pass, fail, unsupported, and untested evidence. |
 | P1 | [AR-0889](tasks/AR-0889-llm-fixture-scenario-contract.md): Define the LLM fixture and scenario contract | Unclaimed | Define generated synthetic LLM scenarios without weakening the existing content-addressed cassette replay contract. | Specify and implement the selected synthetic fixture and scenario contract with strict evidence labels, privacy bounds, and fail-closed validation. |
 | P1 | [AR-0891](tasks/AR-0891-local-inference-provider-profiles.md): Qualify local inference provider profiles | Unclaimed | Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server. | Wait for and verify all six post-merge exact-main workflows on adac76558387cb0bdd09e2ba6cbfe49b9bc205be, then release AR-0891 and promote the next dependency-ready AR. |
+| P1 | [AR-0895](tasks/AR-0895-verify-coordination-content.md): Verify every coordination-content pull request | Unclaimed | Close the workflow path-filter gap that lets coordination-content pull requests skip strict state consistency and DCO checks. | Rebase the approved three-path patch onto current repaired/licensed state main, preserve exact scope/signature/DCO, guarded force-with-lease PR #17, and require fresh exact-head CI before merge. |
 | P1 | [AR-0901](tasks/AR-0901-formal-assurance.md): Prove critical state and concurrency invariants | Unclaimed | Use bounded proofs and model tests for safety-critical domain logic. | Await independent immutable-head review of PR 14 at 2a495a99; repair any findings without merging or releasing. |
 | P1 | [AR-0902](tasks/AR-0902-fault-assurance.md): Add fuzz mutation and lifecycle fault campaigns | Unclaimed | Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection. | Run final coordination reconcile/snapshot/live doctor/full validation and release AR-0902 done only if clean synchronized state remains exact. |
 | P1 | [AR-0904](tasks/AR-0904-contract-consistency.md): Machine-check protocol and artifact consistency | Unclaimed | Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree. | Obtain fresh exact-main CI for signed+DCO main 92569367347b49c497780fa40195971ff655b0f4 using a resolvable base, then rerun final clean synchronized state validation and release only if all workflows pass. |

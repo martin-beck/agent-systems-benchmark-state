@@ -2,22 +2,22 @@
 {
   "branch": "ci/verify-coordination-content",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T12:42:20+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0002",
     "AR-0003"
   ],
   "id": "AR-0895",
   "next_action": "Rebase the approved three-path patch onto current repaired/licensed state main, preserve exact scope/signature/DCO, guarded force-with-lease PR #17, and require fresh exact-head CI before merge.",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0895.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Close the workflow path-filter gap that lets coordination-content pull requests skip strict state consistency and DCO checks.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Verify every coordination-content pull request",
-  "updated_at": "2026-09-09T10:21:19+00:00",
+  "updated_at": "2026-09-09T10:21:46+00:00",
   "worktree_key": "agent-systems-benchmark-state-verify-coordination-content"
 }
 ---
@@ -163,3 +163,15 @@ Ensure state-content pull requests cannot bypass exact-head schema, generated-vi
 
 - 2026-09-09T10:21:19+00:00: Recorded command exit 0; command argv SHA-256
   9f479b247f1b84e7455b82462a4582adfce451bb44137ce93172113aafcec7c8.
+
+- 2026-09-09T10:21:46+00:00: Released done after independently approved three-path candidate
+  431e5041cebfedadd5bf068263967474971f5a1f (range-diff identical to fb147b0a) passed PR #17
+  exact-head AWQ 34339540213, Strict state consistency 34339540193, and source-header verify
+  34339540276. Controlled SSH-signed+DCO no-ff merge 438a407c548d0331dea51e3a3501f6ee06926600 is on
+  main; repaired metadata and signed license attribution commit 8baf075b remain ancestors.
+  Post-merge source-header run 34339652293 and Coordination verification run 34339658140 succeeded
+  on descendants containing the exact merge. Final local main
+  bac066d9d3168e720171850800287405e91975f5 retained merge ancestry and passed focused trigger tests
+  3/3, schema validation, render-status check, clean diff, and live doctor. Acceptance is bounded to
+  coordination-content path routing and exact-head/DCO enforcement; unrelated documentation remains
+  intentionally outside the filter.
