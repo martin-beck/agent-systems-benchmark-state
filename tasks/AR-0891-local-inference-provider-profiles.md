@@ -2,7 +2,7 @@
 {
   "branch": "feat/local-inference-provider-profiles",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T11:49:31+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0879",
     "AR-0312",
@@ -14,15 +14,15 @@
   "observed_branch": "feat/local-inference-provider-profiles",
   "observed_dirty": 0,
   "observed_head": "eed49592617a0a712482d4a341ae7b1f802fe04f",
-  "owner": "codex-longrun-local-inference-profiles-20260909",
+  "owner": "",
   "plan": "../plans/AR-0891.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server.",
-  "task_revision": 123,
+  "task_revision": 124,
   "title": "Qualify local inference provider profiles",
-  "updated_at": "2026-09-09T09:49:31+00:00",
+  "updated_at": "2026-09-09T09:49:38+00:00",
   "worktree_key": "agent-systems-benchmark-local-inference-provider-profiles"
 }
 ---
@@ -315,3 +315,11 @@ Use exact Ollama, llama.cpp, vLLM and LocalAI sources in `docs/LOCAL_LLM_TESTING
 - 2026-09-09T09:47:47+00:00: Heartbeat by codex-longrun-local-inference-profiles-20260909.
 
 - 2026-09-09T09:49:31+00:00: Heartbeat by codex-longrun-local-inference-profiles-20260909.
+
+- 2026-09-09T09:49:38+00:00: Completed and independently reviewed: PR #111 and follow-up PR #113
+  were signed, exact-head green, merged as 1ab70e82fa4d442d89481050da50dd4bc3bb4d22 and
+  adac76558387cb0bdd09e2ba6cbfe49b9bc205be; all six post-merge workflows for adac765 are green.
+  Added fail-closed grouped profile manifest/validator and GGUF tokenizer digest tooling. Ollama is
+  qualified only for the exact local-live profile with immutable server/model/tokenizer evidence and
+  three identical bounded seeded trials. llama.cpp, vLLM, and LocalAI remain explicitly
+  unqualified/non-selectable pending their own artifacts and trials.
