@@ -2,7 +2,7 @@
 {
   "branch": "test/llm-double-conformance-spike",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T10:05:49+00:00",
+  "claim_expires": "2026-09-09T10:06:14+00:00",
   "depends_on": [
     "AR-0879"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Measure deterministic LLM test doubles against one hostile ASB protocol and isolation suite before selecting any dependency.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Spike deterministic LLM double conformance",
-  "updated_at": "2026-09-09T08:05:53+00:00",
+  "updated_at": "2026-09-09T08:06:14+00:00",
   "worktree_key": "agent-systems-benchmark-llm-double-conformance-spike"
 }
 ---
@@ -74,3 +74,5 @@ Evaluate MockAgents, CopilotKit aimock, larsakerlund/llmock, and piyook/llm-mock
 
 - 2026-09-09T08:05:53+00:00: Recorded command exit 8; command argv SHA-256
   c22d02b809c14b27042704f4577f4912d5ff9d1a8d8d7bae5823bfc7adc9633b.
+
+- 2026-09-09T08:06:14+00:00: Heartbeat by codex-longrun-llm-double-conformance-20260909.
