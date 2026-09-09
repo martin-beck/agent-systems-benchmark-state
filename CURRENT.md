@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0897](tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Run full gates and independent review of fb782963; do not publish or apply repository settings yet. | replay_20260906 |
+| P0 | [AR-0897](tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Independent immutable review of bd6f450; do not publish or change repository settings. | replay_20260906 |
 | P1 | [AR-0907](tasks/AR-0907-hosted-runner-evidence-classification.md): Classify hosted runner evidence without weakening native qualification | Separate rolling hosted portability checks from immutable native qualification evidence. | Monitor fresh PR #123 exact-head CI at f0b7b46; do not merge until all required checks pass. | quality_20260906 |
 | P1 | [AR-0908](tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Monitor PR #125 exact-head CI; classify formal failure after logs become available and do not merge before coordinator approval. | contracts_20260906 |
 

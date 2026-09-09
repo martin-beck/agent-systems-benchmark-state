@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-0897",
-  "next_action": "Run full gates and independent review of fb782963; do not publish or apply repository settings yet.",
+  "next_action": "Independent immutable review of bd6f450; do not publish or change repository settings.",
   "observed_branch": "fix/main-merge-integrity",
   "observed_dirty": 0,
   "observed_head": "bd6f450ab8777aeb7e055d71aedba8e4cfd375b3",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-09T21:15:55+00:00",
+  "updated_at": "2026-09-09T21:16:23+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -109,3 +109,19 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T21:15:55+00:00: Recorded command exit 0; command argv SHA-256
   4002e49fce166943aa697da211b9eef6a78e63d614277d3a5ef09abbc9123f42.
+
+- 2026-09-09T21:16:23+00:00: Signed repair successor bd6f450ab8777aeb7e055d71aedba8e4cfd375b3 (tree
+  201112340e22d217189243f04f611e95eef02536, parent fb782963d6df4d0792a22c2c229e8c7f393eff64, base
+  b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b) is clean and limited to the seven owned
+  docs/integration-policy/test paths. Review repairs are complete: bounded generic subprocess
+  diagnostics with privacy sentinels; immediate target+PR ref reconciliation including
+  accepted-after-error; signer principal bound to author/committer and exact DCO identity; atomic
+  target/PR reads and post-push recheck; PR drift, target race, GitHub-generated unsigned merge,
+  identity spoof, and accepted-but-error hostile tests. Full exact-tree gates pass: Ruff/py_compile
+  and 9 integration suites; cargo fmt, Clippy, workspace tests, rustdoc, release build and CLI
+  smoke; coverage floors; formal tests, digest-pinned offline TLC/Alloy; mutation sentinels 7/7;
+  failure-path, contract and 46 platform tests; actionlint, zizmor, Gitleaks, cargo-deny/audit and
+  exact-range repository policy. Pinned Kani plus required false-assertion negative passed in
+  recorded exit-0 command 3c082082d70a4823dac1bfbca0113a4cae46077c2cdae8f59d1531a3e27c694b. Final
+  immutable check exit 0 confirms both commits SSH-signed/DCO, exact tree/scope, diff-check and
+  clean worktree. No publication or remote settings mutation performed.
