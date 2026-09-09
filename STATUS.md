@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**165 ARs tracked** across 4 active status categories.
+**166 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 8 |
-| **Planned** | Defined work awaiting promotion or dependencies | 39 |
+| **Planned** | Defined work awaiting promotion or dependencies | 40 |
 | **Future** | Deferred roadmap work | 0 |
 | **Done** | Accepted, integrated, and durably verified | 116 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -204,6 +204,7 @@ flowchart LR
         AR_0893["AR-0893 - Planned"]:::status_planned
         AR_0894["AR-0894 - Planned"]:::status_planned
         AR_0895["AR-0895 - In progress"]:::status_in_progress
+        AR_0896["AR-0896 - Planned"]:::status_planned
     end
     subgraph series_09["09 - Assurance"]
         direction TB
@@ -717,7 +718,9 @@ flowchart LR
     AR_0879 --> AR_0891
     AR_0888 --> AR_0889
     AR_0888 --> AR_0890
+    AR_0888 --> AR_0896
     AR_0889 --> AR_0890
+    AR_0889 --> AR_0896
     AR_0890 --> AR_0892
     AR_0890 --> AR_0893
     AR_0891 --> AR_0892
@@ -899,14 +902,15 @@ flowchart LR
 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md) | [AR-0003](tasks/AR-0003-quality-gates.md), [AR-0901](tasks/AR-0901-formal-assurance.md), [AR-0902](tasks/AR-0902-fault-assurance.md) | None |
 | [AR-0879](tasks/AR-0879-local-llm-testing-recommendations.md) | [AR-0312](tasks/AR-0312-provider-ollama.md), [AR-0313](tasks/AR-0313-all-agents-provider.md), [AR-0315](tasks/AR-0315-provider-parity-conformance.md), [AR-0501](tasks/AR-0501-replay-evaluation.md), [AR-0502](tasks/AR-0502-replay-cassettes.md), [AR-0503](tasks/AR-0503-strict-replay.md), [AR-0504](tasks/AR-0504-replay-pacing.md), [AR-0505](tasks/AR-0505-agent-replay-conformance.md), [AR-0871](tasks/AR-0871-record-replay-user-workflows.md) | [AR-0888](tasks/AR-0888-llm-double-conformance-spike.md), [AR-0891](tasks/AR-0891-local-inference-provider-profiles.md) |
 | [AR-0880](tasks/AR-0880-openjiuwen-runtime-closure.md) | [AR-0857](tasks/AR-0857-openjiuwen-provenance.md) | None |
-| [AR-0888](tasks/AR-0888-llm-double-conformance-spike.md) | [AR-0879](tasks/AR-0879-local-llm-testing-recommendations.md) | [AR-0889](tasks/AR-0889-llm-fixture-scenario-contract.md), [AR-0890](tasks/AR-0890-deterministic-llm-double-ci.md) |
-| [AR-0889](tasks/AR-0889-llm-fixture-scenario-contract.md) | [AR-0888](tasks/AR-0888-llm-double-conformance-spike.md) | [AR-0890](tasks/AR-0890-deterministic-llm-double-ci.md) |
+| [AR-0888](tasks/AR-0888-llm-double-conformance-spike.md) | [AR-0879](tasks/AR-0879-local-llm-testing-recommendations.md) | [AR-0889](tasks/AR-0889-llm-fixture-scenario-contract.md), [AR-0890](tasks/AR-0890-deterministic-llm-double-ci.md), [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md) |
+| [AR-0889](tasks/AR-0889-llm-fixture-scenario-contract.md) | [AR-0888](tasks/AR-0888-llm-double-conformance-spike.md) | [AR-0890](tasks/AR-0890-deterministic-llm-double-ci.md), [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md) |
 | [AR-0890](tasks/AR-0890-deterministic-llm-double-ci.md) | [AR-0888](tasks/AR-0888-llm-double-conformance-spike.md), [AR-0889](tasks/AR-0889-llm-fixture-scenario-contract.md) | [AR-0892](tasks/AR-0892-llm-mode-comparative-evidence.md), [AR-0893](tasks/AR-0893-cli-local-llm-setup.md) |
 | [AR-0891](tasks/AR-0891-local-inference-provider-profiles.md) | [AR-0312](tasks/AR-0312-provider-ollama.md), [AR-0313](tasks/AR-0313-all-agents-provider.md), [AR-0315](tasks/AR-0315-provider-parity-conformance.md), [AR-0879](tasks/AR-0879-local-llm-testing-recommendations.md) | [AR-0892](tasks/AR-0892-llm-mode-comparative-evidence.md), [AR-0893](tasks/AR-0893-cli-local-llm-setup.md) |
 | [AR-0892](tasks/AR-0892-llm-mode-comparative-evidence.md) | [AR-0890](tasks/AR-0890-deterministic-llm-double-ci.md), [AR-0891](tasks/AR-0891-local-inference-provider-profiles.md) | [AR-0893](tasks/AR-0893-cli-local-llm-setup.md) |
 | [AR-0893](tasks/AR-0893-cli-local-llm-setup.md) | [AR-0869](tasks/AR-0869-cli-multi-agent-provider-selection.md), [AR-0871](tasks/AR-0871-record-replay-user-workflows.md), [AR-0872](tasks/AR-0872-beginner-workflow-documentation.md), [AR-0890](tasks/AR-0890-deterministic-llm-double-ci.md), [AR-0891](tasks/AR-0891-local-inference-provider-profiles.md), [AR-0892](tasks/AR-0892-llm-mode-comparative-evidence.md) | [AR-0894](tasks/AR-0894-tui-local-llm-parity.md) |
 | [AR-0894](tasks/AR-0894-tui-local-llm-parity.md) | [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0873](tasks/AR-0873-ci-workflow-captures.md), [AR-0893](tasks/AR-0893-cli-local-llm-setup.md) | None |
 | [AR-0895](tasks/AR-0895-verify-coordination-content.md) | [AR-0002](tasks/AR-0002-coordination-assurance.md), [AR-0003](tasks/AR-0003-quality-gates.md) | None |
+| [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md) | [AR-0888](tasks/AR-0888-llm-double-conformance-spike.md), [AR-0889](tasks/AR-0889-llm-fixture-scenario-contract.md) | None |
 | [AR-0901](tasks/AR-0901-formal-assurance.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0102](tasks/AR-0102-process-runtime.md), [AR-0203](tasks/AR-0203-statistical-analysis.md), [AR-0502](tasks/AR-0502-replay-cassettes.md) | [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md), [AR-0878](tasks/AR-0878-tla-source-build-provenance.md), [AR-0903](tasks/AR-0903-release-qualification.md) |
 | [AR-0902](tasks/AR-0902-fault-assurance.md) | [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0104](tasks/AR-0104-durable-results.md), [AR-0503](tasks/AR-0503-strict-replay.md) | [AR-0813](tasks/AR-0813-remote-control-transport.md), [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md), [AR-0878](tasks/AR-0878-tla-source-build-provenance.md), [AR-0903](tasks/AR-0903-release-qualification.md) |
 | [AR-0903](tasks/AR-0903-release-qualification.md) | [AR-0002](tasks/AR-0002-coordination-assurance.md), [AR-0003](tasks/AR-0003-quality-gates.md), [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0315](tasks/AR-0315-provider-parity-conformance.md), [AR-0505](tasks/AR-0505-agent-replay-conformance.md), [AR-0702](tasks/AR-0702-native-platforms.md), [AR-0802](tasks/AR-0802-executable-guides.md), [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0811](tasks/AR-0811-documentation-qualification.md), [AR-0818](tasks/AR-0818-remote-control-security-audit.md), [AR-0823](tasks/AR-0823-installation-qualification.md), [AR-0901](tasks/AR-0901-formal-assurance.md), [AR-0902](tasks/AR-0902-fault-assurance.md) | [AR-0846](tasks/AR-0846-artifact-retention-cleanup.md) |
@@ -943,7 +947,7 @@ flowchart LR
 | P1 | [AR-0890](tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Unclaimed | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Monitor exact-main post-merge checks at 2219839 and run local post-merge verification. Retain AR-0202 in progress until genuine privileged native aarch64 evidence is recorded; then complete final review and release. |
 
-### Planned (39)
+### Planned (40)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -982,6 +986,7 @@ flowchart LR
 | P1 | [AR-0874](tasks/AR-0874-automatic-workflow-refresh.md): Automate workflow documentation refresh | Unclaimed | Automatically refresh or reject stale workflow documentation and CI captures when essential user-visible behavior changes. | Add essential-change detection, deterministic regeneration, and reviewed update automation for workflows and captures. |
 | P1 | [AR-0892](tasks/AR-0892-llm-mode-comparative-evidence.md): Compare LLM test and inference evidence modes | Unclaimed | Quantify what each LLM execution mode proves without pooling unlike evidence or hiding harness saturation. | Execute balanced synthetic, strict replay, local inference, and remote live comparisons and publish bounded claims and capacity evidence. |
 | P1 | [AR-0893](tasks/AR-0893-cli-local-llm-setup.md): Document CLI setup for LLM doubles and local inference | Unclaimed | Provide executable beginner-safe CLI workflows for negotiated LLM modes without claiming unfinished TUI parity. | Add concise CLI setup, preflight, run, inspect, compare, and teardown workflows only for exact supported mock and local profiles. |
+| P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Unclaimed | Qualify one pinned MockAgents executable before deterministic-double CI integration. | Qualify the exact MockAgents v0.5.0 executable against the complete hostile synthetic protocol and isolation suite; do not unblock AR-0890 unless every required case passes. |
 | P2 | [AR-0602](tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Unclaimed | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit the pinned CSB MonitorFactory and benchmark outputs against ASB metric contracts and controlled contention oracles. |
 | P2 | [AR-0894](tasks/AR-0894-tui-local-llm-parity.md): Add TUI parity for supported LLM modes | Unclaimed | Add tested TUI parity for supported LLM setup and diagnostics only after CLI and existing TUI evidence are stable. | After CLI and existing TUI CI-evidence dependencies complete, implement discoverable TUI parity for negotiated supported profiles and modes. |
 | P2 | [AR-0903](tasks/AR-0903-release-qualification.md): Package and qualify the first release | Unclaimed | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. |
