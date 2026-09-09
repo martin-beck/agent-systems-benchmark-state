@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Harden asb-cli control-state lock test isolation and deterministic reopen coverage.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Harden control-state lock test isolation",
-  "updated_at": "2026-09-09T20:01:32+00:00",
+  "updated_at": "2026-09-09T20:02:30+00:00",
   "worktree_key": "agent-systems-benchmark-control-state-lock-test-isolation"
 }
 ---
@@ -89,3 +89,6 @@ non-deterministic isolation signal rather than claiming a production lock defect
   coverage options. Handoff recording of the successful run was initially blocked by expired
   AR-0859; coordinator repaired that unrelated lease at bfb04689. Parallel focused stress was
   already recorded exit 0: 30 runs x 14 tests = 420 passes.
+
+- 2026-09-09T20:02:30+00:00: Recorded command exit 101; command argv SHA-256
+  660a0cb43587dc519e51750e271f74529f861bb7761047222c4441f451ab6591.
