@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Post-merge DCO policy still rejects GitHub-generated merge; exact main merge boundary must be signed.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-09T10:20:29+00:00",
+  "updated_at": "2026-09-09T10:20:42+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -103,3 +103,6 @@ synthetic fixture for black-box executable evidence.
   commit 97643044ba8d782460f633c4852ba832207e9fcc lacks a matching Signed-off-by trailer despite the
   signed PR follow-up. The policy range includes the GitHub-generated merge commit, so a
   same-tree/same-parent signed merge replacement is required; feature work remains preempted.
+
+- 2026-09-09T10:20:42+00:00: Recorded command exit 0; command argv SHA-256
+  faadf5c5a088686d124c05184fea96ad58b6dca798d0d63e97bfb0fa8134ca3d.
