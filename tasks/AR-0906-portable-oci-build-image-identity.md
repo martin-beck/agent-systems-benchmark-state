@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make deterministic formal source builds verify OCI image identity portably across Docker engines.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Verify formal OCI build identity portably",
-  "updated_at": "2026-09-09T14:47:54+00:00",
+  "updated_at": "2026-09-09T14:49:21+00:00",
   "worktree_key": "agent-systems-benchmark-formal-oci-image-identity"
 }
 ---
@@ -57,3 +57,6 @@ instead of assuming an engine's local configuration ID equals the registry manif
   config-ID representations and all 20 unique declared mutations fail closed, plus static effect
   ordering. Real local Docker projection for the pinned digest passes. No AR-0877 PR path or AR-0704
   path changed.
+
+- 2026-09-09T14:49:21+00:00: Recorded command exit 0; command argv SHA-256
+  646877526d47d96c73301b82fcda376bc137edcdbe9113af9036ccdcfe794461.
