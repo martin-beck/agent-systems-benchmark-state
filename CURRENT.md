@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Qualify pinned OpenJiuwen live execution. | Add remaining corruption/retry/trickle/root/child negatives, then run full gates; keep support fail closed. | replay_20260906 |
-| P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Post-merge DCO policy still rejects GitHub-generated merge; exact main merge boundary must be signed. | Replace 97643044 with a same-tree same-parent signed merge commit carrying matching DCO trailer using exact force-with-lease, then verify fresh exact-main gates. | codex-longrun-mockagents-20260909 |
+| P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Replaced merge boundary with same-tree same-parent signed DCO merge 5f7d631; fresh exact-main gates running. | Wait for all six post-merge workflows on 5f7d631, then release or continue hostile qualification. | codex-longrun-mockagents-20260909 |
 
 ## Blocked
 

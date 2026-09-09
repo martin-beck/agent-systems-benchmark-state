@@ -8,7 +8,7 @@
     "AR-0889"
   ],
   "id": "AR-0896",
-  "next_action": "Replace 97643044 with a same-tree same-parent signed merge commit carrying matching DCO trailer using exact force-with-lease, then verify fresh exact-main gates.",
+  "next_action": "Wait for all six post-merge workflows on 5f7d631, then release or continue hostile qualification.",
   "observed_branch": "test/mockagents-executable-qualification",
   "observed_dirty": 0,
   "observed_head": "3f1de4106adf9ad6c34759638d70e9001709ab0a",
@@ -17,10 +17,10 @@
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Post-merge DCO policy still rejects GitHub-generated merge; exact main merge boundary must be signed.",
-  "task_revision": 29,
+  "summary": "Replaced merge boundary with same-tree same-parent signed DCO merge 5f7d631; fresh exact-main gates running.",
+  "task_revision": 30,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-09T10:21:36+00:00",
+  "updated_at": "2026-09-09T10:22:00+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -112,3 +112,8 @@ synthetic fixture for black-box executable evidence.
 
 - 2026-09-09T10:21:36+00:00: Recorded command exit 0; command argv SHA-256
   cdfab783876cf11b1e8ac9ef9133d6999c78b2bc6dd18b444e80fe8a8ddac831.
+
+- 2026-09-09T10:22:00+00:00: Repository quality proved GitHub merge 97643044 itself lacked DCO.
+  Replaced main via exact force-with-lease with signed merge
+  5f7d63199ed3bccb4c3a2b73a8cdb755be0aa8a8, preserving tree 872f3a0938d2c3484e1edbea4ec4c52f95e7824c
+  and parents 004d8725/f25fb319. Fresh exact-main CI is required.
