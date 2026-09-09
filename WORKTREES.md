@@ -21,7 +21,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 65, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 168, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 62, ahead 0 |
-| `agent-systems-benchmark-ar0878-integration` | `DETACHED` | `66659cc2ab74` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-ar0878-integration` | `DETACHED` | `0fbec95d2154` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-beginner-workflows` | `docs/beginner-workflows` | `328de90ef1ed` | 0 | behind 36, ahead 0 |
 | `agent-systems-benchmark-benchmark-validity` | `feature/benchmark-validity` | `60a6c730457b` | 0 | behind 164, ahead 0 |
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `0717d4acd168` | 0 | behind 272, ahead 0 |
@@ -71,7 +71,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-native-platform-lab` | `feature/native-platform-lab` | `b1669203308d` | 0 | behind 220, ahead 0 |
 | `agent-systems-benchmark-native-platforms` | `feature/native-platforms` | `bdaf9c108226` | 0 | behind 240, ahead 17 |
 | `agent-systems-benchmark-native-x86-capacity` | `feature/native-x86-capacity` | `45604cd323c5` | 0 | behind 160, ahead 0 |
-| `agent-systems-benchmark-one-line-install` | `feature/one-line-local-install` | `73d07589524f` | 0 | behind 5, ahead 1 |
+| `agent-systems-benchmark-one-line-install` | `feature/one-line-local-install` | `c6b76fa76519` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-opendesk-strict-replay-http-compatibility` | `feature/opendesk-strict-replay-http-compatibility` | `f26216bde125` | 0 | behind 200, ahead 0 |
 | `agent-systems-benchmark-openjiuwen-adapter` | `feature/openjiuwen-adapter` | `43ceb0f1bf8b` | 0 | behind 6, ahead 0 |
 | `agent-systems-benchmark-openjiuwen-live` | `feature/openjiuwen-live` | `096dc4f275c0` | 0 | behind 5, ahead 0 |
