@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-provenance",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T05:13:10+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -18,15 +18,15 @@
   "observed_branch": "feature/openjiuwen-provenance",
   "observed_dirty": 0,
   "observed_head": "addcfab39e48d3b5cf573ebc109cb676f299be5f",
-  "owner": "replay_20260909",
+  "owner": "",
   "plan": "../plans/AR-0857.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Pin OpenJiuwen source, package, and license provenance.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Pin OpenJiuwen source, package, and license provenance",
-  "updated_at": "2026-09-09T03:13:52+00:00",
+  "updated_at": "2026-09-09T03:14:15+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-provenance"
 }
 ---
@@ -192,3 +192,10 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-09T03:13:52+00:00: Recorded command exit 0; command argv SHA-256
   31b4becca1e8cfa14a8d2115fc8e59a621c79fc2110f219cca35d1711e83ba72.
+
+- 2026-09-09T03:14:15+00:00: Completed and released: signed candidate addcfab, PR #97 fully green at
+  exact head, signed no-ff merge 9aad131 onto main, provenance JSON/license/161-package lock
+  fixtures verified, cargo test --locked -p asb-agents passed (138 unit + integration/doc tests),
+  policy and DCO passed, all six exact-main workflows green (runs 34305861058, 34305861092,
+  34305861064, 34305861081, 34305861094, 34305861122), primary checkout synchronized clean at
+  9aad131, temporary integration worktree removed.
