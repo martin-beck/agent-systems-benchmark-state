@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 211,
+  "task_revision": 212,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T19:11:15+00:00",
+  "updated_at": "2026-09-09T19:13:57+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -716,3 +716,6 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   final signature/DCO/scope/tree recheck. Two operator-only exit-127 attempts used wrong working
   directory/PATH before corrected mutation success. PR 124 remains unchanged at e407748 pending
   review.
+
+- 2026-09-09T19:13:57+00:00: Recorded command exit 0; command argv SHA-256
+  e6a77e24aa02e717523e676d9c21d57873d6225021ecfa7b3e72f75d40b6f5f0.
