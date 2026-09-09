@@ -10,7 +10,7 @@
     "AR-1001"
   ],
   "id": "AR-0806",
-  "next_action": "Repair or restore the pinned TLA+ v1.8.0 artifact boundary outside the AR-0806 two-path scope, then rerun exact-head Formal Assurance for PR #89; merge remains held until every required check is green.",
+  "next_action": "Repair merge DCO trailer and add a signed normal ancestry commit; rerun exact-main gates.",
   "observed_branch": "feature/tui-history-analysis",
   "observed_dirty": 0,
   "observed_head": "7fd21bbeddc5144f3eabe4edbdd545ad363bc2b7",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 107,
+  "task_revision": 108,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-09T04:22:01+00:00",
+  "updated_at": "2026-09-09T04:22:26+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---
@@ -393,3 +393,7 @@ Implementation has not started. Read the linked plan before claiming.
   4b3da448f890f899bf5a268e965a3aff62607e2b1195bdc6799691c92b308256.
 
 - 2026-09-09T04:22:01+00:00: Heartbeat by codex-longrun-tui-20260909.
+
+- 2026-09-09T04:22:26+00:00: Post-merge quality run 34310626459 failed because merge 208841947
+  lacked Signed-off-by. Feature head was green; this is the same merge-procedure defect seen on
+  AR-0404.

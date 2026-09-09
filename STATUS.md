@@ -876,7 +876,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0806](tasks/AR-0806-tui-history-analysis.md): Add terminal history and analysis | codex-longrun-tui-20260909 | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. | Repair or restore the pinned TLA+ v1.8.0 artifact boundary outside the AR-0806 two-path scope, then rerun exact-head Formal Assurance for PR #89; merge remains held until every required check is green. |
+| P1 | [AR-0806](tasks/AR-0806-tui-history-analysis.md): Add terminal history and analysis | codex-longrun-tui-20260909 | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. | Repair merge DCO trailer and add a signed normal ancestry commit; rerun exact-main gates. |
 | P1 | [AR-0858](tasks/AR-0858-openjiuwen-adapter.md): Implement the OpenJiuwen contract and capability adapter | replay_20260909 | Implement the OpenJiuwen contract and capability adapter. | Implement the bounded agent contract, exact provider translation, and capability registration from the pinned protocol; keep live support unclaimed. |
 | P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | replay_20260906 | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Coordinator decision: amend the source-build lock to the 14 mechanically proven compile/dist inputs and keep the other 17 JARs as exact excluded-source inventory with a deletion/rebuild oracle, or require new authoritative evidence for the unmatched jpf-shell binary. Do not rebase or reuse generic SPDX receipts before this scope decision. |
 
