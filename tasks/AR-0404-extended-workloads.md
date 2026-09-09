@@ -13,11 +13,11 @@
   "plan": "../plans/AR-0404.md",
   "priority": "P3",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Evaluate SWE-bench Pro, BigCodeBench, EvalPlus and LiveCodeBench as optional suites.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Expand established benchmark catalogue",
-  "updated_at": "2026-09-06T15:04:54+00:00",
+  "updated_at": "2026-09-09T03:46:59+00:00",
   "worktree_key": "agent-systems-benchmark-extended-workloads"
 }
 ---
@@ -26,3 +26,6 @@
 Evaluate SWE-bench Pro, BigCodeBench, EvalPlus and LiveCodeBench as optional suites.
 
 Implementation has not started. Read the linked plan before claiming.
+
+- 2026-09-09T03:46:59+00:00: Selected as next dependency-ready independent task after AR-0877
+  external artifact blocker; no path overlap with active claims.
