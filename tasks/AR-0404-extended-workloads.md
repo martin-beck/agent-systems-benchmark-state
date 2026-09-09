@@ -8,7 +8,7 @@
     "AR-0403"
   ],
   "id": "AR-0404",
-  "next_action": "Run and verify all exact-main post-merge workflow jobs for merge cf9241a before release.",
+  "next_action": "Repair merge DCO trailer, force-with-lease main, then rerun all exact-main post-merge workflows.",
   "observed_branch": "feature/extended-workloads",
   "observed_dirty": 0,
   "observed_head": "8596a7fd0dba6d9a861cdaa276777f771be69c27",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Evaluate SWE-bench Pro, BigCodeBench, EvalPlus and LiveCodeBench as optional suites.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Expand established benchmark catalogue",
-  "updated_at": "2026-09-09T04:04:48+00:00",
+  "updated_at": "2026-09-09T04:05:16+00:00",
   "worktree_key": "agent-systems-benchmark-extended-workloads"
 }
 ---
@@ -178,3 +178,7 @@ Implementation has not started. Read the linked plan before claiming.
   a7aaf72dfcb0a01e934a0225304d2e1a24eda9751012f976db24f95af9012081.
 
 - 2026-09-09T04:04:48+00:00: Heartbeat by codex-longrun-workloads-20260909.
+
+- 2026-09-09T04:05:16+00:00: Post-merge quality run 34309482001 failed immediately because signed
+  merge cf9241a lacked a matching Signed-off-by trailer. Feature commit and PR checks were green;
+  this is a merge-procedure defect.
