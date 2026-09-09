@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 214,
+  "task_revision": 215,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T06:19:57+00:00",
+  "updated_at": "2026-09-09T06:22:38+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -737,3 +737,6 @@ Implementation has not started. Read the linked plan before claiming.
   Ruff, ShellCheck 0.9.0, actionlint, zizmor, Gitleaks, cargo-deny, cargo-audit; signatures, DCO,
   diff-check, clean tree. llvm-cov executes 4/4 with zero instrumentable Rust regions; local Kani
   remains unavailable and hosted exact-head Kani is required after publication.
+
+- 2026-09-09T06:22:38+00:00: Recorded command exit 0; command argv SHA-256
+  bc4c4c53528716b4da4be0cd4c9f9f98155207b89f2dedd95c50629f9ffc0b57.
