@@ -10,7 +10,7 @@
     "AR-0902"
   ],
   "id": "AR-0906",
-  "next_action": "Await fresh independent immutable review of repaired candidate 156f7e0; do not publish before approval.",
+  "next_action": "Hold PR #121 unchanged; AR-0877 must repair hosted curl exit-63 acquisition cap, then rerun exact-head CI.",
   "observed_branch": "fix/formal-oci-image-identity",
   "observed_dirty": 0,
   "observed_head": "156f7e011867956cb3bfaf5f511d65340f1b840e",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make deterministic formal source builds verify OCI image identity portably across Docker engines.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Verify formal OCI build identity portably",
-  "updated_at": "2026-09-09T15:11:29+00:00",
+  "updated_at": "2026-09-09T15:16:55+00:00",
   "worktree_key": "agent-systems-benchmark-formal-oci-image-identity"
 }
 ---
@@ -126,3 +126,13 @@ instead of assuming an engine's local configuration ID equals the registry manif
   failure paths, ShellCheck, Gitleaks and privacy pass. Earlier exit 127 was operator-only: unquoted
   RUSTDOCFLAGS split warnings into a command; corrected invocation passed. Clean exact six-path
   scope, SSH signature and DCO pass; unpublished.
+
+- 2026-09-09T15:16:55+00:00: Approved candidate published unchanged as PR #121: exact base
+  b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b, head 156f7e011867956cb3bfaf5f511d65340f1b840e.
+  Exact-head formal run 34368956147 job 102524900910 failed before AR-0906 execution:
+  formal/run_temporal_models.sh curl exited 63 Maximum file size exceeded during TLA artifact
+  acquisition. This is AR-0877-owned formal acquisition scope; AR-0877 is currently blocked and
+  unowned at 55fdd686/PR #120, so coordinator must resume/claim it or create a successor to adjust
+  the verified source-build/cache acquisition size boundary. PR #121 can rerun unchanged after that
+  repair. Publication wrapper exit 1 was only the now-recovered unrelated AR-0704 expired-lease
+  reconciliation. No merge attempted.

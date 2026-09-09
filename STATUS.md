@@ -952,7 +952,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0906](tasks/AR-0906-portable-oci-build-image-identity.md): Verify formal OCI build identity portably | quality_20260906 | Make deterministic formal source builds verify OCI image identity portably across Docker engines. | Await fresh independent immutable review of repaired candidate 156f7e0; do not publish before approval. |
+| P1 | [AR-0906](tasks/AR-0906-portable-oci-build-image-identity.md): Verify formal OCI build identity portably | quality_20260906 | Make deterministic formal source builds verify OCI image identity portably across Docker engines. | Hold PR #121 unchanged; AR-0877 must repair hosted curl exit-63 acquisition cap, then rerun exact-head CI. |
 
 ### Open (3)
 
