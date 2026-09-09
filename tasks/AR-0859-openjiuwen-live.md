@@ -7,7 +7,7 @@
     "AR-0858"
   ],
   "id": "AR-0859",
-  "next_action": "Add remaining corruption/retry/trickle/root/child negatives, then run full gates; keep support fail closed.",
+  "next_action": "Run full workspace/formal/fault/privacy/supply gates on b75e2fb; keep support fail closed pending review.",
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "b75e2fb31bd9ab569de4363b6d7afae34579184d",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 97,
+  "task_revision": 98,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T17:07:34+00:00",
+  "updated_at": "2026-09-09T17:08:12+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -327,3 +327,14 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-09T17:07:28+00:00: Recorded command exit 0; command argv SHA-256
   deb1a89d934f67ec6048ea41dc1030b928ffcac860cc0d65953a92daa47f6775.
+
+- 2026-09-09T17:08:12+00:00: Controlled disjoint rebase completed from preserved evidence ref
+  refs/evidence/ar0859-bf29c154 onto exact product origin/main
+  b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b. New signed+DCO head
+  b75e2fb31bd9ab569de4363b6d7afae34579184d, tree eb5dfd672d6a1e2715193cc0d7abacbafde9adc9, parent
+  b6d04a83; clean exact three-path scope and diff-check. Expanded closed fixture inventory now
+  validates positive internally consistent usage and adds corrupt-tool, bounded HTTP retry
+  exhaustion, trickled-stream cancellation, repository/root-overlap and public-permission rejection,
+  plus process-group termination/reap assertions. Exact pinned wheel/runtime under bwrap
+  user+network namespace passed 6/6 focused tests in 37.94s; compile-only locked gate passed. No
+  non-loopback network was available. Full repository gates and independent review remain.
