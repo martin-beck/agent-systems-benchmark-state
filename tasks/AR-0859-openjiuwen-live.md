@@ -15,11 +15,11 @@
   "plan": "../plans/AR-0859.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T06:27:57+00:00",
+  "updated_at": "2026-09-09T07:00:06+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -82,3 +82,8 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   opentelemetry.sdk, also absent from the lock. Therefore no live
   edit/tool/usage/cancellation/network evidence can be claimed without repairing and requalifying
   the immutable runtime closure; preserved the declared worktree and artifacts.
+
+- 2026-09-09T07:00:06+00:00: AR-0858 is durably done. Reclaim after expired-owner audit: declared
+  worktree exists clean at stale 096dc4f with no product diff; pinned provenance wheel/runtime lock
+  and prior smoke/log artifacts remain preserved. Resume for exact-main compatibility and immutable
+  runtime-closure investigation while keeping live support fail closed.
