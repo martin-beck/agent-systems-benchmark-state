@@ -8,7 +8,7 @@
     "AR-0804"
   ],
   "id": "AR-0819",
-  "next_action": "Implement OpenSSH host selection, service probing, stdio bridging, and explicit passwordless enrollment.",
+  "next_action": "Publish signed commit 980276d and open a PR; then monitor exact-head required CI before integration.",
   "observed_branch": "feature/ssh-remote-bootstrap",
   "observed_dirty": 0,
   "observed_head": "980276dd2885682ad2251893395eedf55558dc98",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use configured SSH hosts as the safe default path to a remote runner and help establish dedicated key authentication.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Add SSH remote discovery and bootstrap",
-  "updated_at": "2026-09-09T03:26:36+00:00",
+  "updated_at": "2026-09-09T03:26:57+00:00",
   "worktree_key": "agent-systems-benchmark-ssh-remote-bootstrap"
 }
 ---
@@ -60,3 +60,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T03:26:36+00:00: Recorded command exit 0; command argv SHA-256
   5209e70e0d76346940af636c3e9914e31692bd2d3fef2b2fa10d4f995c3aa76b.
+
+- 2026-09-09T03:26:57+00:00: Implemented and tested SSH discovery/bootstrap slice: bounded Include
+  parsing, OpenSSH ssh -G resolution, fixed no-shell stdio probe argv, private recent ledger,
+  confirmation-gated restricted Ed25519 enrollment, atomic authorized_keys update, docs, 24 asb-tui
+  tests, Clippy, policy, DCO, and diff checks all pass.

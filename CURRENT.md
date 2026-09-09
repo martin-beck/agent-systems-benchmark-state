@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0819](tasks/AR-0819-ssh-remote-bootstrap.md): Add SSH remote discovery and bootstrap | Use configured SSH hosts as the safe default path to a remote runner and help establish dedicated key authentication. | Implement OpenSSH host selection, service probing, stdio bridging, and explicit passwordless enrollment. | replay_20260909 |
+| P1 | [AR-0819](tasks/AR-0819-ssh-remote-bootstrap.md): Add SSH remote discovery and bootstrap | Use configured SSH hosts as the safe default path to a remote runner and help establish dedicated key authentication. | Publish signed commit 980276d and open a PR; then monitor exact-head required CI before integration. | replay_20260909 |
 | P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Independent immutable review of exact candidate 6cbd169f6ba6a1f1db95ea7b254ba2fdb4c5351b/tree 747081681880e1221433a7fd7853ecf8b96cf1fc on parent 9aad1317bdcaabcec2e62a856ff6d0b3ac757f46; do not publish until review. Hosted exact-head formal/Kani remains required after publication. | replay_20260906 |
 
 ## Open
