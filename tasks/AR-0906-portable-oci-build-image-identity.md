@@ -10,7 +10,7 @@
     "AR-0902"
   ],
   "id": "AR-0906",
-  "next_action": "Hold PR #121 unchanged; AR-0877 must repair hosted curl exit-63 acquisition cap, then rerun exact-head CI.",
+  "next_action": "Monitor temporary integration PR #122 exact-head CI; do not merge or alter PRs #120/#121.",
   "observed_branch": "fix/formal-oci-image-identity",
   "observed_dirty": 0,
   "observed_head": "156f7e011867956cb3bfaf5f511d65340f1b840e",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make deterministic formal source builds verify OCI image identity portably across Docker engines.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Verify formal OCI build identity portably",
-  "updated_at": "2026-09-09T16:10:22+00:00",
+  "updated_at": "2026-09-09T16:10:59+00:00",
   "worktree_key": "agent-systems-benchmark-formal-oci-image-identity"
 }
 ---
@@ -154,3 +154,14 @@ instead of assuming an engine's local configuration ID equals the registry manif
 
 - 2026-09-09T16:10:22+00:00: Recorded command exit 0; command argv SHA-256
   399f5268625320f6cf0d735167c220708e5d9e0e43e30091ae15bc76c4772c84.
+
+- 2026-09-09T16:10:59+00:00: Coordinator-authorized temporary integration candidate
+  f385fb27296a282d044ad04f5d91eff55c53b4b0, tree 67503aa11818b20216781422604d0c8f62cf1050, is a
+  signed+DCO octopus commit with exact parents current main
+  b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b, AR-0906 156f7e011867956cb3bfaf5f511d65340f1b840e, and
+  AR-0877 bridge chain 49ae13f7116cfa7a353bf0d8939517c5a306ffd0. Combined diff is exact disjoint
+  14-path union. Local focused acquisition 9/9, image identity 5/5, full formal/workspace
+  fmt-clippy-tests-docs-release, policy/privacy/security/coverage/failure gates pass. Initial
+  Gitleaks command had an operator-only extra b in the base OID and scanned zero commits; corrected
+  exact 5-commit range scan is green. Published temporary evidence-only PR #122 at exact base/head;
+  #120/#121 unchanged. Hosted checks running; header and AWQ green.
