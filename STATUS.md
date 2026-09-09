@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**165 ARs tracked** across 5 active status categories.
+**165 ARs tracked** across 4 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 8 |
 | **Planned** | Defined work awaiting promotion or dependencies | 43 |
 | **Future** | Deferred roadmap work | 0 |
@@ -196,7 +196,7 @@ flowchart LR
         AR_0878["AR-0878 - Done"]:::status_done
         AR_0879["AR-0879 - Done"]:::status_done
         AR_0880["AR-0880 - In progress"]:::status_in_progress
-        AR_0888["AR-0888 - Open"]:::status_open
+        AR_0888["AR-0888 - In progress"]:::status_in_progress
         AR_0889["AR-0889 - Planned"]:::status_planned
         AR_0890["AR-0890 - Planned"]:::status_planned
         AR_0891["AR-0891 - Planned"]:::status_planned
@@ -923,17 +923,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0880](tasks/AR-0880-openjiuwen-runtime-closure.md): Repair OpenJiuwen runtime closure | replay_20260906 | Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification. | Independent immutable review exact candidate 343998ada0a057e177fb528eddc9f0f80ca6db3a (tree 88cff0f4f0bf0f0235ae68f1eb1e904da7f33268, parent 513c1d926458f1cb6a26d3f7277dc7d9b1496df3); current origin/main has advanced, so do not publish or rebase without coordinator authorization. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0888](tasks/AR-0888-llm-double-conformance-spike.md): Spike deterministic LLM double conformance | Unclaimed | Measure deterministic LLM test doubles against one hostile ASB protocol and isolation suite before selecting any dependency. | Build the isolated OpenAI and Anthropic conformance spike, execute exact pinned candidates, and publish pass, fail, unsupported, and untested evidence. |
+| P1 | [AR-0888](tasks/AR-0888-llm-double-conformance-spike.md): Spike deterministic LLM double conformance | codex-longrun-llm-double-conformance-20260909 | Measure deterministic LLM test doubles against one hostile ASB protocol and isolation suite before selecting any dependency. | Build the isolated OpenAI and Anthropic conformance spike, execute exact pinned candidates, and publish pass, fail, unsupported, and untested evidence. |
 
 ### Blocked (8)
 
