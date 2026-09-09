@@ -64,7 +64,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-frontend-run-lifecycle` | `feature/frontend-run-lifecycle` | `b3b3b8907f6d` | 0 | behind 193, ahead 0 |
 | `agent-systems-benchmark-gemini-generate-content-replay` | `feature/gemini-generate-content-replay` | `93c19625f910` | 0 | behind 241, ahead 0 |
 | `agent-systems-benchmark-gemini-thinking-config-contract` | `feature/gemini-thinking-config-contract` | `0aff7023cacf` | 0 | behind 239, ahead 0 |
-| `agent-systems-benchmark-hosted-runner-evidence` | `fix/hosted-runner-evidence-classification` | `faca6aa9dddd` | 0 | behind 0, ahead 1 |
+| `agent-systems-benchmark-hosted-runner-evidence` | `fix/hosted-runner-evidence-classification` | `faca6aa9dddd` | 3 | behind 0, ahead 1 |
+| changed files | - | - | - | `.github/workflows/native-platforms.yml`, `tests/platforms/test_hosted_portability.py`, `tools/platforms/hosted_portability.py` |
 | `agent-systems-benchmark-huawei-mit-headers` | `fix/huawei-mit-license-headers` | `7add29f1d24c` | 0 | behind 123, ahead 0 |
 | `agent-systems-benchmark-install-artifacts` | `feature/verifiable-install-artifacts` | `310fdfe30f71` | 0 | behind 60, ahead 0 |
 | `agent-systems-benchmark-install-lifecycle` | `feature/install-lifecycle` | `c7d6da71c709` | 0 | behind 46, ahead 0 |
@@ -83,7 +84,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-one-line-install` | `feature/one-line-local-install` | `bf9e9fe625da` | 0 | behind 48, ahead 0 |
 | `agent-systems-benchmark-opendesk-strict-replay-http-compatibility` | `feature/opendesk-strict-replay-http-compatibility` | `f26216bde125` | 0 | behind 250, ahead 0 |
 | `agent-systems-benchmark-openjiuwen-adapter` | `feature/openjiuwen-adapter` | `43ceb0f1bf8b` | 0 | behind 56, ahead 0 |
-| `agent-systems-benchmark-openjiuwen-live` | `feature/openjiuwen-live` | `b75e2fb31bd9` | 0 | behind 0, ahead 1 |
+| `agent-systems-benchmark-openjiuwen-live` | `feature/openjiuwen-live` | `b75e2fb31bd9` | 1 | behind 0, ahead 1 |
+| changed files | - | - | - | `logs/` |
 | `agent-systems-benchmark-openjiuwen-provenance` | `feature/openjiuwen-provenance` | `addcfab39e48` | 0 | behind 80, ahead 0 |
 | `agent-systems-benchmark-openjiuwen-runtime-closure` | `fix/openjiuwen-runtime-closure` | `b7559931ef79` | 0 | behind 32, ahead 0 |
 | `agent-systems-benchmark-performance-workloads` | `feature/performance-workloads` | `0f303b3ec179` | 0 | behind 82, ahead 0 |

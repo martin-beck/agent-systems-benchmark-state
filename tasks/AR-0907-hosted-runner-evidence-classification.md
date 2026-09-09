@@ -10,7 +10,7 @@
   "id": "AR-0907",
   "next_action": "Hold unpublished signed candidate faca6aa for independent immutable review; publish only after approval and require fresh exact-head CI.",
   "observed_branch": "fix/hosted-runner-evidence-classification",
-  "observed_dirty": 0,
+  "observed_dirty": 3,
   "observed_head": "faca6aa9ddddbbed8b925cfbf6a380d622726902",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0907.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T17:38:42+00:00",
+  "updated_at": "2026-09-09T17:38:48+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
