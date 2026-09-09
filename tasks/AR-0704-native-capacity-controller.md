@@ -9,15 +9,18 @@
   ],
   "id": "AR-0704",
   "next_action": "Define authorized reservation, provisioning, teardown, privacy, cost, and evidence control for genuine native cells.",
+  "observed_branch": "feature/native-capacity-controller",
+  "observed_dirty": 0,
+  "observed_head": "b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b",
   "owner": "contracts_20260906",
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-09T12:13:04+00:00",
+  "updated_at": "2026-09-09T12:13:09+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
