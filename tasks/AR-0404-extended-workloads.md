@@ -2,7 +2,7 @@
 {
   "branch": "feature/extended-workloads",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T05:47:05+00:00",
+  "claim_expires": "2026-09-09T05:47:29+00:00",
   "depends_on": [
     "AR-0402",
     "AR-0403"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Evaluate SWE-bench Pro, BigCodeBench, EvalPlus and LiveCodeBench as optional suites.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Expand established benchmark catalogue",
-  "updated_at": "2026-09-09T03:47:26+00:00",
+  "updated_at": "2026-09-09T03:47:29+00:00",
   "worktree_key": "agent-systems-benchmark-extended-workloads"
 }
 ---
@@ -39,3 +39,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T03:47:19+00:00: Recorded command exit 0; command argv SHA-256
   01191acaae4c7da564decdc21c0b5ce5f7680d3a59a5583de459d7e6d794ee0e.
+
+- 2026-09-09T03:47:29+00:00: Heartbeat by codex-longrun-workloads-20260909.
