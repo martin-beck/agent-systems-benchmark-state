@@ -11,18 +11,18 @@
   ],
   "id": "AR-0806",
   "next_action": "PR #89 was guarded-force-updated to approved 2dbbde184ef78a93b63ec1a3b5eb5b02bca0d269, but live main advanced again to 5b2236b105a97756a55c7ac64360cb3616ef979f and GitHub reports mergeStateStatus DIRTY with no replacement checks yet. Do not merge. Reconcile the new base/conflict, obtain authorization for another controlled rebase, rerun full gates and immutable review, then update exact-head CI.",
-  "observed_branch": "feature/tui-history-analysis",
-  "observed_dirty": 0,
-  "observed_head": "2dbbde184ef78a93b63ec1a3b5eb5b02bca0d269",
+  "observed_branch": "DETACHED",
+  "observed_dirty": 2,
+  "observed_head": "5b2236b105a97756a55c7ac64360cb3616ef979f",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0806.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Add terminal history and analysis",
-  "updated_at": "2026-09-09T00:10:50+00:00",
+  "updated_at": "2026-09-09T00:10:57+00:00",
   "worktree_key": "agent-systems-benchmark-tui-history-analysis"
 }
 ---

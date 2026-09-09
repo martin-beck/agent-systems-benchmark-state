@@ -100,7 +100,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-terminal-interface` | `feature/terminal-interface` | `d2e7b66ff6af` | 0 | behind 203, ahead 0 |
 | `agent-systems-benchmark-terminal-workloads` | `feature/terminal-workloads` | `3e67bdfc3ce0` | 0 | behind 20, ahead 0 |
 | `agent-systems-benchmark-trace-interoperability` | `feature/trace-interoperability` | `921cf004f8aa` | 0 | behind 75, ahead 0 |
-| `agent-systems-benchmark-tui-history-analysis` | `feature/tui-history-analysis` | `2dbbde184ef7` | 0 | behind 4, ahead 1 |
+| `agent-systems-benchmark-tui-history-analysis` | `DETACHED` | `5b2236b105a9` | 2 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-tui/README.md`, `crates/asb-tui/src/lib.rs` |
 | `agent-systems-benchmark-tui-multi-agent-provider-selection` | `feature/tui-multi-agent-provider-selection` | `679244e3af61` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-tui-run-control` | `feature/tui-run-control` | `b44282a31e90` | 0 | behind 23, ahead 0 |
 | `agent-systems-benchmark-tui-settings-wizard` | `feature/tui-settings-wizard` | `8f7152c525da` | 0 | behind 35, ahead 0 |
