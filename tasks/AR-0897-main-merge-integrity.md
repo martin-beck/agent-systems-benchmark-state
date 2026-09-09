@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-0897",
-  "next_action": "Confirm existing reviewed OID bd6f450ab8777aeb before publication; supplied transposed OID does not exist.",
+  "next_action": "Monitor PR 126 exact-head CI; investigate terminal failures without changing bd6f450.",
   "observed_branch": "fix/main-merge-integrity",
   "observed_dirty": 0,
   "observed_head": "bd6f450ab8777aeb7e055d71aedba8e4cfd375b3",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-09T21:24:08+00:00",
+  "updated_at": "2026-09-09T21:24:44+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -149,3 +149,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T21:24:08+00:00: Recorded command exit 0; command argv SHA-256
   9456b107d1c39179fb03a170bf16f7a2b310d39b167593225e489d05f1bcd50c.
+
+- 2026-09-09T21:24:44+00:00: Published the verified reviewed object
+  bd6f450ab8777aeb7e055d71aedba8e4cfd375b3 (tree 201112340e22d217189243f04f611e95eef02536) as PR
+  #126 https://github.com/martin-beck/agent-systems-benchmark/pull/126, exact base
+  b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b. Remote head identity was re-read and matches exactly.
+  Exact-head CI launched: AWQ shadow and header gates passed; Native Ubuntu, Kani, fault, fuzz,
+  emulated aarch64, Loom/state, mutation, quality/supply, and Rust were pending at first query.
+  TLC/Alloy job 102650889322 in run 34406581823 failed in run_temporal_models.sh immediately after
+  the pinned TLA artifact download; the log contains no model diagnostic before exit 1. This is
+  provisionally a shared formal acquisition/digest harness failure because the exact seven-path AR
+  diff contains no formal/workflow/artifact changes and the same formal gate passed locally with
+  pinned cached tools. Candidate remains unchanged; no retry or merge performed.
