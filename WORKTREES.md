@@ -76,7 +76,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-openjiuwen-adapter` | `feature/openjiuwen-adapter` | `43ceb0f1bf8b` | 0 | behind 9, ahead 0 |
 | `agent-systems-benchmark-openjiuwen-live` | `feature/openjiuwen-live` | `513c1d926458` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-openjiuwen-provenance` | `feature/openjiuwen-provenance` | `addcfab39e48` | 0 | behind 33, ahead 0 |
-| `agent-systems-benchmark-openjiuwen-runtime-closure` | `fix/openjiuwen-runtime-closure` | `513c1d926458` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-openjiuwen-runtime-closure` | `fix/openjiuwen-runtime-closure` | `513c1d926458` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-agents/tests/fixtures/openjiuwen-runtime.lock` |
 | `agent-systems-benchmark-performance-workloads` | `feature/performance-workloads` | `0f303b3ec179` | 0 | behind 35, ahead 0 |
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 337, ahead 0 |
 | `agent-systems-benchmark-portable-metrics` | `feature/portable-metrics` | `a0f67bea1ffe` | 0 | behind 311, ahead 0 |
