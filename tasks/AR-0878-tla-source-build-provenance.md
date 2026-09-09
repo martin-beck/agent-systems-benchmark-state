@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Qualify immutable TLA tool provenance",
-  "updated_at": "2026-09-09T02:09:52+00:00",
+  "updated_at": "2026-09-09T02:10:21+00:00",
   "worktree_key": "agent-systems-benchmark-tla-source-build-provenance"
 }
 ---
@@ -40,3 +40,6 @@ Implementation has not started. Read the linked plan before claiming.
   repair to resolve the exact mutable-upstream blocker.
 
 - 2026-09-09T02:09:52+00:00: Claimed by replay_20260906.
+
+- 2026-09-09T02:10:21+00:00: Recorded command exit 0; command argv SHA-256
+  87591628a4708da948baeca8de57baa3f6a9e497f59362495507839baa5db451.
