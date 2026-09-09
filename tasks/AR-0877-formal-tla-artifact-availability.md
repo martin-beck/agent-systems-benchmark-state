@@ -2,7 +2,7 @@
 {
   "branch": "fix/formal-tla-artifact-availability",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T05:45:59+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003",
     "AR-0901",
@@ -13,15 +13,15 @@
   "observed_branch": "fix/formal-tla-artifact-availability",
   "observed_dirty": 4,
   "observed_head": "dca243ab7b8cbb0b2b49a568dec99c517e0719c2",
-  "owner": "codex-longrun-tla-20260909",
+  "owner": "",
   "plan": "../plans/AR-0877.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T03:45:59+00:00",
+  "updated_at": "2026-09-09T03:46:22+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -130,3 +130,7 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-09T03:45:56+00:00: Claimed by codex-longrun-tla-20260909.
 
 - 2026-09-09T03:45:59+00:00: Heartbeat by codex-longrun-tla-20260909.
+
+- 2026-09-09T03:46:22+00:00: Reconciled existing prototype: authoritative v1.8.0 prerelease asset
+  was deleted/rebuilt with changed bytes; no durable artifact exists. Preserve dirty four-path
+  prototype and wait for AR-0878 immutable publication or approved source-build boundary.
