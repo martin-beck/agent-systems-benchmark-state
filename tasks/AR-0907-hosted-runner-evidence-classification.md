@@ -8,7 +8,7 @@
     "AR-0848"
   ],
   "id": "AR-0907",
-  "next_action": "Hold unpublished 2953f23470e5d6ad31fc1098f0b967e1e8b263e6 for fresh independent immutable review; publish only after approval and hosted exact-head CI.",
+  "next_action": "Hold unpublished signed candidate 5a2cfef662d58634828235ea77a417128d30a734 for fresh independent immutable review; publish only after approval and exact-head CI.",
   "observed_branch": "fix/hosted-runner-evidence-classification",
   "observed_dirty": 0,
   "observed_head": "5a2cfef662d58634828235ea77a417128d30a734",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T17:55:53+00:00",
+  "updated_at": "2026-09-09T17:56:36+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -249,3 +249,18 @@ patch release has advanced.
 
 - 2026-09-09T17:55:53+00:00: Recorded command exit 0; command argv SHA-256
   58f1c7a2ce478351b426d9adda8ad0294bfa965fea2fc5f303ed4b973ac98ccb.
+
+- 2026-09-09T17:56:36+00:00: Final AR-0907 reproducibility repair complete. Successor
+  5a2cfef662d58634828235ea77a417128d30a734, tree 1861e50b01a128806da7da5b65084576901cdc25, parent
+  2953f23470e5d6ad31fc1098f0b967e1e8b263e6; signed SSH+DCO, clean. Removed runtime/test jsonschema
+  imports. Production now uses a stdlib-only validator over digest-pinned exact native/hosted schema
+  bytes, bounded no-follow reads, closed local refs/keywords, and fail-closed candidate cleanup.
+  Fresh-environment subprocess runs with Python -S, PYTHONNOUSERSITE=1 and minimal PATH; valid
+  hosted evidence succeeds while altered schema identity fails with redacted stdout, empty stderr,
+  and no artifact. Focused 19 tests, all platform 54 tests, contract/schema/failure/artifact gates,
+  Ruff, strict mypy, actionlint, zizmor, full locked workspace fmt/clippy/tests/docs, exact-range
+  policy/DCO/Gitleaks/diff/privacy/clean and all three signatures pass. Earlier exit 1s were
+  classified: unavailable state-venv shell alias was operator environment only; one mypy type error
+  was product-relevant and fixed before green reruns. Combined range remains the same seven AR paths
+  on exact base b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b; this repair changes only validator and
+  focused test.
