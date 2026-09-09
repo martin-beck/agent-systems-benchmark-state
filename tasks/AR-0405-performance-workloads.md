@@ -2,7 +2,7 @@
 {
   "branch": "feature/performance-workloads",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T00:06:49+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0401",
     "AR-0601",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/performance-workloads",
   "observed_dirty": 0,
   "observed_head": "5294c471425d75ef10759d766a296c0c3d841eab",
-  "owner": "contracts_20260906",
+  "owner": "",
   "plan": "../plans/AR-0405.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Assess SWE-Perf, SWE-fficiency and CORE-Bench for correctness-preserving optimization and reproducibility.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Add performance and reproducibility workloads",
-  "updated_at": "2026-09-08T23:08:40+00:00",
+  "updated_at": "2026-09-09T00:07:52+00:00",
   "worktree_key": "agent-systems-benchmark-performance-workloads"
 }
 ---
@@ -132,3 +132,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-08T23:08:40+00:00: Recorded command exit 0; command argv SHA-256
   854044105d96dfd3261a3910fb75635b09691f8eabbc07389318bf0936e4caf5.
+
+- 2026-09-09T00:07:52+00:00: Recovered expired claim formerly owned by contracts_20260906. Lease
+  expired at 2026-09-09T00:06:49Z; no active owner process found, declared worktree is clean at
+  5294c471; preserving worktree and returning task to open for future claim.

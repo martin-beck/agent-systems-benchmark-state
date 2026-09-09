@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 2 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 50 |
 | **Future** | Deferred roadmap work | 0 |
@@ -78,7 +78,7 @@ flowchart LR
         AR_0402["AR-0402 - Done"]:::status_done
         AR_0403["AR-0403 - Done"]:::status_done
         AR_0404["AR-0404 - Planned"]:::status_planned
-        AR_0405["AR-0405 - In progress"]:::status_in_progress
+        AR_0405["AR-0405 - Open"]:::status_open
         AR_0406["AR-0406 - Planned"]:::status_planned
     end
     subgraph series_05["05 - Replay"]
@@ -862,19 +862,19 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0806](tasks/AR-0806-tui-history-analysis.md): Add terminal history and analysis | quality_20260906 | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. | Fresh independent immutable review of second rebased candidate 2dbbde184ef78a93b63ec1a3b5eb5b02bca0d269, tree bb552eb2663f31bdd650ac69bb0198f2ce253155, exact parent/current origin/main 2219839812d9255288b8b4e0afc52396915e85a6. Verify &#x27;=&#x27; range-diff from 031a451, clean two-path scope, signature/DCO, gates, duplicate-page atomicity and AR-0875 limit; then exact force-with-lease PR #89 update and fresh exact-head CI. |
 | P1 | [AR-0871](tasks/AR-0871-record-replay-user-workflows.md): Deliver record and replay user workflows | replay_20260909 | Make recording and strict replay complete, explicit, privacy-safe user workflows in both CLI and TUI. | Deliver executable CLI and TUI journeys for recording LLM responses and replaying an exact compatible cassette. |
-| P2 | [AR-0405](tasks/AR-0405-performance-workloads.md): Add performance and reproducibility workloads | contracts_20260906 | Assess SWE-Perf, SWE-fficiency and CORE-Bench for correctness-preserving optimization and reproducibility. | Audit the six-path fail-closed provenance checkpoint, run the complete applicable quality/privacy gates, and determine whether any suite can advance beyond planned without missing license and native paired-oracle evidence. |
 
-### Open (1)
+### Open (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | Unclaimed | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Wait for a corrected immutable agent-workflow-coordinator v0.3.3+ release whose privacy exemption admits the legitimate session-like UUID fixture in vendored tests/test_sqlite_storage.py; then re-sync from a clean verified tag and continue state-owned header/checker/CI work without patching vendor. |
+| P2 | [AR-0405](tasks/AR-0405-performance-workloads.md): Add performance and reproducibility workloads | Unclaimed | Assess SWE-Perf, SWE-fficiency and CORE-Bench for correctness-preserving optimization and reproducibility. | Audit the six-path fail-closed provenance checkpoint, run the complete applicable quality/privacy gates, and determine whether any suite can advance beyond planned without missing license and native paired-oracle evidence. |
 
 ### Blocked (5)
 
