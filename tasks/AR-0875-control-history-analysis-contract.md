@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend frontend history and analysis contracts with bounded provenance, integrity, outcome, compatibility, and confounder evidence.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Extend control history and analysis protocol",
-  "updated_at": "2026-09-09T04:39:14+00:00",
+  "updated_at": "2026-09-09T04:39:45+00:00",
   "worktree_key": "agent-systems-benchmark-control-history-analysis-contract"
 }
 ---
@@ -83,3 +83,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T04:39:14+00:00: Recorded command exit 2; command argv SHA-256
   6a628d072aaef70b1cc31086fc8e19dc06fe1de291808309d56be1bc85ca655c.
+
+- 2026-09-09T04:39:45+00:00: Recorded command exit 0; command argv SHA-256
+  ce586431fc19754f794a55322981eca41c1dfadadb8f03c6bcbac3c4fe28fb21.
