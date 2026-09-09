@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0880](tasks/AR-0880-openjiuwen-runtime-closure.md): Repair OpenJiuwen runtime closure | Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification. | Monitor PR #112 exact head 6f6666373d23c833609008448b6a672312e1c6fb to terminal across Rust x86/arm, emulated aarch64, quality, fault/fuzz/mutation, formal/TLC/Alloy/Kani, headers, and AWQ; investigate failures and merge only if all green. | replay_20260906 |
-| P1 | [AR-0891](tasks/AR-0891-local-inference-provider-profiles.md): Qualify local inference provider profiles | Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server. | Use the validated manifest as the gate, then obtain immutable tokenizer/model/backend and repeated hardware evidence for at least one candidate before making any profile selectable or extending the CLI catalog. | codex-longrun-local-inference-profiles-20260909 |
+| P1 | [AR-0891](tasks/AR-0891-local-inference-provider-profiles.md): Qualify local inference provider profiles | Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server. | Independently review PR #111 at immutable head 772c6277c99354e8685aee73fafa2c957a3eb9c8, then signed no-ff merge and post-merge exact-main verification. | codex-longrun-local-inference-profiles-20260909 |
 
 ## Blocked
 
