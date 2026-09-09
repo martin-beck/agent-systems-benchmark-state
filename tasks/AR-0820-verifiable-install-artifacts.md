@@ -2,7 +2,7 @@
 {
   "branch": "feature/verifiable-install-artifacts",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T07:28:46+00:00",
+  "claim_expires": "2026-09-09T07:31:22+00:00",
   "depends_on": [
     "AR-0701",
     "AR-0801",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish verifiable native bundles and metadata that a small bootstrapper can select safely.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Publish verifiable installation artifacts",
-  "updated_at": "2026-09-09T05:31:15+00:00",
+  "updated_at": "2026-09-09T05:31:22+00:00",
   "worktree_key": "agent-systems-benchmark-install-artifacts"
 }
 ---
@@ -48,3 +48,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T05:31:15+00:00: Recorded command exit 0; command argv SHA-256
   fb403b427722c37d2070845da1aa93b1a295a09cfd7091add4ef1dc06a94aef1.
+
+- 2026-09-09T05:31:22+00:00: Heartbeat by codex-longrun-install-20260909.
