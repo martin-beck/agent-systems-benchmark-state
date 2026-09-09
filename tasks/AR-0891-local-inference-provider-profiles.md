@@ -11,15 +11,18 @@
   ],
   "id": "AR-0891",
   "next_action": "Qualify grouped Ollama, llama.cpp, vLLM, and LocalAI profiles with exact engine, model, hardware, protocol, isolation, and reproducibility evidence.",
+  "observed_branch": "feat/local-inference-provider-profiles",
+  "observed_dirty": 0,
+  "observed_head": "9f502f7a3a781031770ad96efb4570ed206423a9",
   "owner": "codex-longrun-local-inference-profiles-20260909",
   "plan": "../plans/AR-0891.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend ASB local inference through evidence-backed profiles rather than one speculative adapter task per server.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Qualify local inference provider profiles",
-  "updated_at": "2026-09-09T08:33:47+00:00",
+  "updated_at": "2026-09-09T08:33:53+00:00",
   "worktree_key": "agent-systems-benchmark-local-inference-provider-profiles"
 }
 ---
