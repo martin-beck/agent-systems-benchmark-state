@@ -2,7 +2,7 @@
 {
   "branch": "feature/modern-terminal-rendering",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-09T07:27:11+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0804",
     "AR-0805",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/modern-terminal-rendering",
   "observed_dirty": 0,
   "observed_head": "fd1989a096a3401b7de9fe6286e33a74f14ddca5",
-  "owner": "codex-longrun-terminal-20260909",
+  "owner": "",
   "plan": "../plans/AR-0812.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Use modern terminal capabilities for polished visual fidelity with robust SSH/multiplexer fallbacks.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Deliver modern adaptive terminal rendering",
-  "updated_at": "2026-09-09T05:27:27+00:00",
+  "updated_at": "2026-09-09T05:27:49+00:00",
   "worktree_key": "agent-systems-benchmark-modern-terminal-rendering"
 }
 ---
@@ -211,3 +211,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T05:27:27+00:00: Recorded command exit 0; command argv SHA-256
   f6a3e2af72def84a6fbd8230212a70440a1305079386e954c005694b601722c1.
+
+- 2026-09-09T05:27:49+00:00: Merged PR #101 with signed no-ff merge
+  bc82383c52af384bf2f983c43156ef6ee0e25fc4; post-merge ancestry repair head
+  d3ff88cd70a320a4d961422ed66a5407b336dee9 passed headers, formal, fault, Rust, quality, and
+  emulated-aarch64 gates. Initial arm test failure was unrelated flaky mini_swe descendant cleanup
+  and passed on rerun. Product main and feature worktree are clean.

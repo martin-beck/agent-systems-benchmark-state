@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 7 |
 | **Planned** | Defined work awaiting promotion or dependencies | 41 |
 | **Future** | Deferred roadmap work | 0 |
-| **Done** | Accepted, integrated, and durably verified | 104 |
+| **Done** | Accepted, integrated, and durably verified | 105 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -135,7 +135,7 @@ flowchart LR
         AR_0809["AR-0809 - Planned"]:::status_planned
         AR_0810["AR-0810 - Planned"]:::status_planned
         AR_0811["AR-0811 - Planned"]:::status_planned
-        AR_0812["AR-0812 - In progress"]:::status_in_progress
+        AR_0812["AR-0812 - Done"]:::status_done
         AR_0813["AR-0813 - Planned"]:::status_planned
         AR_0814["AR-0814 - Planned"]:::status_planned
         AR_0815["AR-0815 - Planned"]:::status_planned
@@ -872,11 +872,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0812](tasks/AR-0812-modern-terminal-rendering.md): Deliver modern adaptive terminal rendering | codex-longrun-terminal-20260909 | Use modern terminal capabilities for polished visual fidelity with robust SSH/multiplexer fallbacks. | Implement capability-aware premium rendering, channel detection, and resize-safe responsive layouts. |
 | P1 | [AR-0858](tasks/AR-0858-openjiuwen-adapter.md): Implement the OpenJiuwen contract and capability adapter | replay_20260909 | Implement the OpenJiuwen contract and capability adapter. | Implement the bounded agent contract, exact provider translation, and capability registration from the pinned protocol; keep live support unclaimed. |
 | P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | replay_20260906 | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Request fresh independent immutable review of signed candidate e4730653b112d733fb2a1157f65481663c4e073c (tree 64d8123c6a321c9223d1a7a5c1ed6981482d3876, parent c157cedc744373ef75aba686c00e97ce61aa3bfc). Do not publish or rebase before review; hosted exact-head Kani remains required only after publication is authorized. |
 
@@ -938,7 +937,7 @@ flowchart LR
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Evaluate maintenance, licenses and reproducibility before integration. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
-### Done (104)
+### Done (105)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1004,6 +1003,7 @@ flowchart LR
 | P1 | [AR-0804](tasks/AR-0804-tui-settings-wizard.md): Build the terminal settings wizard | Unclaimed | Guide users through agents, providers, workloads, resources, replay, metrics, and output settings. | Monitor exact-main d51ee9c postmerge runs: Rust 34246605181, quality 34246605294, emulated-aarch64 34246605130, fault 34246605182, formal 34246605248. After all terminal success, run focused local verification and state doctor, then release with unsupported launch/transport/full-screen limits. |
 | P1 | [AR-0805](tasks/AR-0805-tui-run-control.md): Add terminal run control and status | Unclaimed | Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI. | Fresh independent immutable review of rebased candidate b44282a31e902175059f9fed350ce888cf4b82ec, tree 7a7732eae29be65f55b40ed3b6239533fac470fc, exact parent 32f79101da348896fdf0fd94c07356889a05b693. If approved, guarded force-with-lease update PR #86 and require fresh exact-head CI before merge. |
 | P1 | [AR-0806](tasks/AR-0806-tui-history-analysis.md): Add terminal history and analysis | Unclaimed | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. | Repair merge DCO trailer and add a signed normal ancestry commit; rerun exact-main gates. |
+| P1 | [AR-0812](tasks/AR-0812-modern-terminal-rendering.md): Deliver modern adaptive terminal rendering | Unclaimed | Use modern terminal capabilities for polished visual fidelity with robust SSH/multiplexer fallbacks. | Implement capability-aware premium rendering, channel detection, and resize-safe responsive layouts. |
 | P1 | [AR-0819](tasks/AR-0819-ssh-remote-bootstrap.md): Add SSH remote discovery and bootstrap | Unclaimed | Use configured SSH hosts as the safe default path to a remote runner and help establish dedicated key authentication. | Integrate signed no-ff PR #98 onto current main, then run and verify all exact-main post-merge workflows before release. |
 | P1 | [AR-0830](tasks/AR-0830-aiws-runner-capacity.md): Provision hardened development host ASB runner capacity | Unclaimed | Add isolated, disposable ASB self-hosted CI capacity on development host beside existing runners. | Reboot persistence is deferred to AR-0833; AR-0830 proven scope is complete. |
 | P1 | [AR-0831](tasks/AR-0831-aiws-workflow-routing.md): Integrate development host ASB runners with GitHub workflows | Unclaimed | Route explicitly trusted ASB CI jobs to qualified development host runners while preserving disposable public-PR isolation. | Hold exact unpublished f55f98cc79b75226a537600258dde5e57333bdeb for independent immutable security review; publish only after approval. |
