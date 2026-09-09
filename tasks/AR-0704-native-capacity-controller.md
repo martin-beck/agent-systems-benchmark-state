@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-09T12:52:08+00:00",
+  "updated_at": "2026-09-09T12:56:35+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -154,3 +154,6 @@ must not block this AR or its dependents.
   lifecycle/ledger and CLI only; it does not yet establish native Debian/openEuler provisioning,
   boot identity/persistence, resource enforcement, or native execution evidence, so AR-0704 must
   remain in progress and unpublished pending independent review and remaining evidence.
+
+- 2026-09-09T12:56:35+00:00: Recorded command exit 2; command argv SHA-256
+  48458d4adcbc2714c4ae60f17ec39d916357031118af6e75d9a5cd826c73f20e.
