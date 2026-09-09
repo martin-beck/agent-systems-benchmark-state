@@ -21,7 +21,7 @@ Generated from local Git and GitHub. Do not edit.
 | 34321629398 | `513c1d926458` | push | Huawei MIT source headers | completed:success |
 | 34321629388 | `513c1d926458` | push | Repository quality | in_progress:- |
 | 34321629387 | `513c1d926458` | push | Formal assurance | completed:success |
-| 34321629324 | `513c1d926458` | push | Fault assurance | in_progress:- |
+| 34321629324 | `513c1d926458` | push | Fault assurance | completed:success |
 | 34321629319 | `513c1d926458` | push | Emulated aarch64 portability | in_progress:- |
 | 34321107306 | `bf9e9fe625da` | pull_request | Rust verification | completed:success |
 | 34321107304 | `bf9e9fe625da` | pull_request | Fault assurance | completed:success |
