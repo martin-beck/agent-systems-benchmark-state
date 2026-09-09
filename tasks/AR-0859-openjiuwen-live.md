@@ -8,15 +8,18 @@
   ],
   "id": "AR-0859",
   "next_action": "Create the missing declared worktree from exact origin/main, then implement and test the pinned live qualification.",
+  "observed_branch": "feature/openjiuwen-live",
+  "observed_dirty": 0,
+  "observed_head": "096dc4f275c05ad81772f443b6f22dddfb92da3d",
   "owner": "codex-longrun-openjiuwen-live-20260909",
   "plan": "../plans/AR-0859.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T06:23:05+00:00",
+  "updated_at": "2026-09-09T06:23:11+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
