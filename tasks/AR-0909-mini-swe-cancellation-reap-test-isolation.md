@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-09T22:51:42+00:00",
+  "updated_at": "2026-09-09T23:13:18+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -101,3 +101,6 @@ classified.
   missing, reused, zombie, runnable and changed ownership; rejects malformed/oversized PID and proc
   evidence; preserves terminal Cancelled and production bytes. Focused identity and instrumented
   cancellation tests pass after correcting two test-fixture mistakes.
+
+- 2026-09-09T23:13:18+00:00: Recorded command exit 0; command argv SHA-256
+  712bff4bdbfc6f17c00ce6d2d81a55fbf0aa0751e938b77502be0d9d55b41972.
