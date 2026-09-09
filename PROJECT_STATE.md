@@ -17,7 +17,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34301409935 | `af9fb7dcaabc` | push | Fault assurance | in_progress:- |
+| 34301409935 | `af9fb7dcaabc` | push | Fault assurance | completed:success |
 | 34301409923 | `af9fb7dcaabc` | push | Repository quality | in_progress:- |
 | 34301409908 | `af9fb7dcaabc` | push | Emulated aarch64 portability | in_progress:- |
 | 34301409905 | `af9fb7dcaabc` | push | Formal assurance | completed:failure |
