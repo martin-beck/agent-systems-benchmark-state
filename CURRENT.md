@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md): Repair formal TLA artifact availability | Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification. | Independent review 65142ea/tree 2b974af; do not publish. After AR-0906 integrates, rebase once and rerun exact-tree gates before updating PR #120. | contracts_20260906 |
+| P1 | [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md): Repair formal TLA artifact availability | Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification. | Hold PR #120 at exact 65142ea. Formal run 34371022004 fails only the known OCI .Id portability boundary; rebase after reviewed AR-0906/PR #121 integrates, then rerun all CI. | contracts_20260906 |
 | P1 | [AR-0906](tasks/AR-0906-portable-oci-build-image-identity.md): Verify formal OCI build identity portably | Make deterministic formal source builds verify OCI image identity portably across Docker engines. | Hold PR #121 unchanged; AR-0877 must repair hosted curl exit-63 acquisition cap, then rerun exact-head CI. | quality_20260906 |
 
 ## Open

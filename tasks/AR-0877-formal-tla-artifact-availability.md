@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0877",
-  "next_action": "Independent review 65142ea/tree 2b974af; do not publish. After AR-0906 integrates, rebase once and rerun exact-tree gates before updating PR #120.",
+  "next_action": "Hold PR #120 at exact 65142ea. Formal run 34371022004 fails only the known OCI .Id portability boundary; rebase after reviewed AR-0906/PR #121 integrates, then rerun all CI.",
   "observed_branch": "fix/formal-tla-artifact-availability",
   "observed_dirty": 0,
   "observed_head": "65142ea58cbb7d4a763e5be176406b0a08e206cd",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 110,
+  "task_revision": 111,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T15:37:16+00:00",
+  "updated_at": "2026-09-09T15:38:02+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -401,3 +401,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T15:37:16+00:00: Recorded command exit 0; command argv SHA-256
   a6cc4de3d4fa2333d96c7353c5937781e853ae5174747ccd99252cd681e9876a.
+
+- 2026-09-09T15:38:02+00:00: Published approved three-path repair to PR #120 at exact head
+  65142ea58cbb7d4a763e5be176406b0a08e206cd using force-with-lease against 55fdd686. Hosted Formal
+  assurance run 34371022004 passed acquisition/build through the prior curl-63 point, then failed
+  exit 2 with bounded message TLA build image identity differs. This is the separately owned AR-0906
+  Docker identity boundary in PR #121; no PR #121 paths were touched. Eight exact-head checks were
+  green at classification time; remaining checks continued. No merge.
