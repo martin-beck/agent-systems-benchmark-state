@@ -7,7 +7,7 @@
     "AR-0857"
   ],
   "id": "AR-0880",
-  "next_action": "Fresh immutable review exact rebased candidate 74f6646badd4d1520ad5999fbfd9202ef9cd54a2/tree bd37f38b5418d6e998f38fca4d5165ead83235cb/parent 1ab70e82fa4d442d89481050da50dd4bc3bb4d22; if approved, update PR #112 from old head 6f6666373d23c833609008448b6a672312e1c6fb by exact force-with-lease, then require fresh exact-head hosted CI before merge.",
+  "next_action": "Fresh immutable review exact candidate b7559931ef79d55ad579546c85ceec2ed5b15790/tree 9660c42cc12c84d91ab3d818a04e1e25bfa352d3/parent cd350831486d22f39e77e04daf2206625f7e4119; if approved, update PR #112 from old remote head 6f6666373d23c833609008448b6a672312e1c6fb with exact force-with-lease, then require fresh exact-head hosted CI before merge.",
   "observed_branch": "fix/openjiuwen-runtime-closure",
   "observed_dirty": 0,
   "observed_head": "b7559931ef79d55ad579546c85ceec2ed5b15790",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification.",
-  "task_revision": 103,
+  "task_revision": 104,
   "title": "Repair OpenJiuwen runtime closure",
-  "updated_at": "2026-09-09T09:14:18+00:00",
+  "updated_at": "2026-09-09T09:15:15+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-runtime-closure"
 }
 ---
@@ -375,3 +375,15 @@ a dependency, avoiding a completion cycle while AR-0859 remains blocked on this 
 
 - 2026-09-09T09:14:18+00:00: Recorded command exit 0; command argv SHA-256
   336b78bc732c2411754a6f65d57ae1b3e38efbe46a2aba5917711ff975390dff.
+
+- 2026-09-09T09:15:15+00:00: Second authorized controlled rebase completed. Preserved prior
+  candidate 74f6646badd4d1520ad5999fbfd9202ef9cd54a2 at refs/evidence/ar0880-pre-rebase-74f6646b.
+  New exact SSH-signed Martin+DCO candidate b7559931ef79d55ad579546c85ceec2ed5b15790, tree
+  9660c42cc12c84d91ab3d818a04e1e25bfa352d3, parent/live base
+  cd350831486d22f39e77e04daf2206625f7e4119. Range-diff from 74f6646b is exact equals; clean
+  diff/check and exact three OpenJiuwen paths. Green post-rebase: focused static 4/1 and pinned real
+  fresh online/offline closure 1/1; workspace fmt, Rust 1.93 Clippy, all tests, strict docs, release
+  build; TLC positive/stale negative and Alloy positive/mutations; exact-range repository policy;
+  cargo-deny/audit; actionlint/zizmor; exact-range Gitleaks; mutation 7/7 caught; coverage floors
+  including critical replay 97.84% lines. Candidate clean; no PR update or merge pending fresh
+  immutable review.
