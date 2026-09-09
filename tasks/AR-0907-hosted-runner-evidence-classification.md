@@ -8,7 +8,7 @@
     "AR-0848"
   ],
   "id": "AR-0907",
-  "next_action": "ambiguous",
+  "next_action": "Hold PR #123 and product successor 5e58ae5 unpublished; obtain independent review and explicit coordinator approval or rejection of signed partial-evidence amendment f6472dc2 before any product/PR change.",
   "observed_branch": "fix/hosted-runner-evidence-classification",
   "observed_dirty": 0,
   "observed_head": "5e58ae5cdbae7b19f08a2135674cea31d94cc7ba",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 96,
+  "task_revision": 97,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T19:03:01+00:00",
+  "updated_at": "2026-09-09T19:03:35+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -341,3 +341,16 @@ patch release has advanced.
 
 - 2026-09-09T19:03:01+00:00: Recorded command exit 0; command argv SHA-256
   785a36cf9bfca192b6e7199f7923f3d9c8c1ee3e6d758677ab27d87a4ecaafde.
+
+- 2026-09-09T19:03:35+00:00: Stopped publication because current signed AR acceptance requires
+  process, metrics and sandbox all pass. Hosted exact-head evidence shows the rolling service does
+  not guarantee the exact native sandbox boundary; prior exact native workflow succeeded only with
+  sandbox optional, while required hosted collection failed. Prepared non-effective signed+DCO plan
+  amendment f6472dc2b440cbfa20a78781815792ea22d75cb4 for separate review. It permits partial
+  evidence only if process+metrics pass and the reviewed sandbox suite exits zero with its fixed
+  unavailable marker; all nonzero/timeout/oversize cases remain no-artifact failures. It defines
+  closed partial schema fields and requires downstream rejection for full portability,
+  native/sandbox qualification, performance, release qualification and native AArch64. Exact 24.04.4
+  evidence remains authoritative. Product candidate 5e58ae5 is retained locally, clean and not
+  pushed to PR #123. The prior next_action value 'ambiguous' was an operator-only malformed update
+  and is superseded here; no product effect occurred.
