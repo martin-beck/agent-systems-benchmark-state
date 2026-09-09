@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the OpenJiuwen contract and capability adapter.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Implement the OpenJiuwen contract and capability adapter",
-  "updated_at": "2026-09-09T06:11:07+00:00",
+  "updated_at": "2026-09-09T06:11:15+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-adapter"
 }
 ---
@@ -91,3 +91,6 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-09T06:11:07+00:00: Recorded command exit 0; command argv SHA-256
   83a71b9a58b38881fc444204fd094b839c0c18107e3061472a5561a852c56c9f.
+
+- 2026-09-09T06:11:15+00:00: Recorded command exit 0; command argv SHA-256
+  7496a11695cc8812589b38a5b82adc39f6c10778cbcaa8670fc2109e61e6b4cc.
