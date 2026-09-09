@@ -10,7 +10,7 @@
     "AR-0875"
   ],
   "id": "AR-0908",
-  "next_action": "Hold successor 8b0f9fd for fresh independent immutable review; publish only after approval.",
+  "next_action": "Monitor PR #125 exact-head CI; classify formal failure after logs become available and do not merge before coordinator approval.",
   "observed_branch": "fix/control-state-lock-test-isolation",
   "observed_dirty": 0,
   "observed_head": "8b0f9fd07d5dfbedd83376c1380ab225dfba1213",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Harden asb-cli control-state lock test isolation and deterministic reopen coverage.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Harden control-state lock test isolation",
-  "updated_at": "2026-09-09T20:27:14+00:00",
+  "updated_at": "2026-09-09T20:28:10+00:00",
   "worktree_key": "agent-systems-benchmark-control-state-lock-test-isolation"
 }
 ---
@@ -170,3 +170,11 @@ non-deterministic isolation signal rather than claiming a production lock defect
 
 - 2026-09-09T20:27:14+00:00: Recorded command exit 0; command argv SHA-256
   3dd4b53be6f2c03bc99d28c4064f2427fadccc60eecf5462e2696404e769df78.
+
+- 2026-09-09T20:28:10+00:00: Published independently approved candidate unchanged as PR #125 at
+  exact head 8b0f9fd07d5dfbedd83376c1380ab225dfba1213, base
+  b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b, using absent-ref force-with-lease. Fresh exact-head
+  workflows: Rust 34401125535, Native 34401125568, Formal 34401125569, Headers 34401125518 success,
+  AWQ 34401125597 success, Quality 34401125553, Fault 34401125530, AArch64 34401125534. Formal run
+  remains in progress overall, but TLC/Alloy job 102632995297 is already failed; GitHub withholds
+  failed logs until the run completes. Candidate tree and one-path scope remain unchanged.
