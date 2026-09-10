@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 103,
+  "task_revision": 104,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T05:25:09+00:00",
+  "updated_at": "2026-09-10T05:25:29+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -388,3 +388,6 @@ classified.
   with a lexically constructed temp path; the safe repair is to compare with the canonical target of
   the fd-anchored directory entry, retaining nofollow and swap detection without assuming host/guest
   path spelling. Formal failure remains separate AR-0877 acquisition.
+
+- 2026-09-10T05:25:29+00:00: Recorded command exit 0; command argv SHA-256
+  62542055408709e2d8161f229ae1a17dea4514906b1f70e1c80ebd43f969ee15.
