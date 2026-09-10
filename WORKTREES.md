@@ -25,8 +25,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar0878-integration` | `DETACHED` | `0fbec95d2154` | 0 | behind 64, ahead 0 |
 | `agent-systems-benchmark-ar0880-integration` | `integration/ar0880-b7559931` | `2a85872285e6` | 0 | behind 46, ahead 0 |
 | `agent-systems-benchmark-ar0906-merge-dco` | `repair/ar0906-merge-dco` | `66ca27afc2fb` | 0 | behind 0, ahead 0 |
-| `agent-systems-benchmark-asb-tui-capabilities-command` | `feature/asb-tui-capabilities-command` | `66ca27afc2fb` | 12 | behind 0, ahead 0 |
-| changed files | - | - | - | `Cargo.lock`, `README.md`, `crates/asb-cli/Cargo.toml`, `crates/asb-cli/src/lib.rs`, `docs/QUICKSTART.md`, `docs/examples/guide-contract.json`, `crates/asb-cli/examples/`, `crates/asb-cli/fixtures/asb-tui-capabilities-v1.json`, `crates/asb-cli/fixtures/asb-tui-capabilities-v1.provenance.json`, `crates/asb-cli/schema/`, `crates/asb-cli/src/capabilities.rs`, `crates/asb-cli/tests/capability_contract.rs` |
+| `agent-systems-benchmark-asb-tui-capabilities-command` | `feature/asb-tui-capabilities-command` | `66ca27afc2fb` | 14 | behind 0, ahead 0 |
+| changed files | - | - | - | `Cargo.lock`, `README.md`, `contracts/v1/catalog.json`, `crates/asb-cli/Cargo.toml`, `crates/asb-cli/src/lib.rs`, `docs/QUICKSTART.md`, `docs/examples/guide-contract.json`, `tools/quality/contract_consistency.py`, `crates/asb-cli/examples/`, `crates/asb-cli/fixtures/asb-tui-capabilities-v1.json`, `crates/asb-cli/fixtures/asb-tui-capabilities-v1.provenance.json`, `crates/asb-cli/schema/`, `crates/asb-cli/src/capabilities.rs`, `crates/asb-cli/tests/capability_contract.rs` |
 | `agent-systems-benchmark-beginner-workflows` | `docs/beginner-workflows` | `328de90ef1ed` | 0 | behind 101, ahead 0 |
 | `agent-systems-benchmark-benchmark-validity` | `feature/benchmark-validity` | `60a6c730457b` | 0 | behind 229, ahead 0 |
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `0717d4acd168` | 0 | behind 337, ahead 0 |
