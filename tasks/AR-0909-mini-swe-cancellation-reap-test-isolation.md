@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Fresh immutable review of eb41e148, then update PR #127 and require hosted emulated-AArch64 exact-head success; formal acquisition remains AR-0877-owned.",
+  "next_action": "Hold PR #127: await hosted emulated-AArch64 run 34421905238; inspect terminal formal run 34421905246 logs and route acquisition failure to AR-0877. Do not merge.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "eb41e1487bf5b47b78a4848860328494880ff5d0",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T00:35:06+00:00",
+  "updated_at": "2026-09-10T00:35:52+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -311,3 +311,14 @@ classified.
 
 - 2026-09-10T00:35:06+00:00: Recorded command exit 0; command argv SHA-256
   5ff2181bfb377bbff4e7e2f852a7e759cb8f43fde6078db50dfb463bbbc67a7b.
+
+- 2026-09-10T00:35:52+00:00: Published exact independently reviewed successor
+  eb41e1487bf5b47b78a4848860328494880ff5d0 to PR #127 by guarded force-with-lease from a91cd04. Live
+  PR base is b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b and exact head is eb41e148. Fresh checks
+  started. Hosted emulated-AArch64 run 34421905238/job 102698956369 is in progress and is the
+  required proof for this portability repair. Formal TLC/Alloy job 102698956216 in run 34421905246
+  is already terminal failure while the overall run remains in progress, so GitHub withholds failed
+  logs; candidate changes no formal paths and prior identical failure is the AR-0877-owned TLA
+  acquisition artifact, but exact fresh classification awaits terminal logs. AWQ and headers are
+  success; Rust, repository quality, native, Kani, Loom, fault/fuzz/matcher remain queued or in
+  progress. PR remains open and unmerged.
