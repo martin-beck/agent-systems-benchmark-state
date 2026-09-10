@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Build asb-tui as an isolated optional repository and extension.",
-  "task_revision": 117,
+  "task_revision": 118,
   "title": "Create the standalone asb-tui extension repository",
-  "updated_at": "2026-09-10T11:39:37+00:00",
+  "updated_at": "2026-09-10T11:42:15+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-separate-repository"
 }
 ---
@@ -464,3 +464,6 @@ metadata, and tests proving the main benchmark runs independently when the TUI i
   directory or equivalent, adds a regression proving coverage leaves the checkout clean, and updates
   hosted/trusted final gates to require both git diff --exit-code and an empty git status
   --porcelain. Publication remains prohibited pending fresh independent green gates.
+
+- 2026-09-10T11:42:15+00:00: Recorded command exit 0; command argv SHA-256
+  4eac93b62869bfa2f1156c7bdaeb0d58f8a868b4119a2e6f1556ebe27a4f231d.
