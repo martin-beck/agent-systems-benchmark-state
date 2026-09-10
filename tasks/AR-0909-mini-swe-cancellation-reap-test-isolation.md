@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Diagnose hosted emulated-AArch64-only PrivateTestRoot binding instability in cancellation test; repair descriptor identity portably, rerun focused native/QEMU and full gates, then request immutable review. Do not merge PR #127.",
+  "next_action": "Request immutable review of fb26f3d; if approved, guarded force-with-lease PR #127 and fresh exact-head CI. Do not merge; formal acquisition remains AR-0877-owned.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "fb26f3d2023d43f689f0743d3713470d0edf6096",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 127,
+  "task_revision": 128,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T05:49:29+00:00",
+  "updated_at": "2026-09-10T05:50:08+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -467,3 +467,18 @@ classified.
 
 - 2026-09-10T05:49:22+00:00: Recorded command exit 0; command argv SHA-256
   44ba9c1be2aee16f5ccd3d4f5c9dbdcb3016e5b2cf6526a383f7c33dd3e4e6b8.
+
+- 2026-09-10T05:50:08+00:00: Signed successor fb26f3d2023d43f689f0743d3713470d0edf6096, tree
+  ab99734a50c0b049e3aaba991a1f4273b5c02540, parent 236e007e2e2c387bc206c68637810f5318c85dea replaces
+  unstable canonical-path spelling for the newly created scratch entry with openat
+  O_DIRECTORY|O_NOFOLLOW plus target-native statat/fstat device+inode equality anchored to the
+  retained base descriptor; symlink negative is explicit. Exact aggregate scope remains one
+  cfg(test) path and production is untouched. Native focused tests pass; native cancellation stress
+  20/20 passes; local AArch64/QEMU focused tests and cancellation stress 30/30 pass. fmt, workspace
+  all-target clippy -D warnings, full workspace debug tests, rustdoc -D warnings, and full workspace
+  release tests pass. One exploratory full parallel local QEMU lib run had cancellation pass but
+  unrelated trajectory_file_and_spawn_failures fail (140 other results: 139 pass, 1 ignored); that
+  isolated pre-existing test is outside this diff and not claimed green. Commit SSH signature/DCO
+  and diff-check pass; worktree clean. The later read-only combined inspection exit 2 was
+  operator-only: rg targeted the state task path from the product worktree after all git checks had
+  passed.
