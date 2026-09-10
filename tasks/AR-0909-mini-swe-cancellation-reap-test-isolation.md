@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 180,
+  "task_revision": 181,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T06:56:52+00:00",
+  "updated_at": "2026-09-10T06:58:32+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -707,3 +707,6 @@ classified.
   AR-0909. Formal remains AR-0877-owned. The proposed $5->$1 edit remains disproved by the
   executable child_import fixture assertions ($1=-P, $2=-S, trajectory=$7, config=$12); workspace is
   $5 for the shell stand-in. PR127 remains open and unmerged.
+
+- 2026-09-10T06:58:32+00:00: Recorded command exit 0; command argv SHA-256
+  bd723a5f43a40a824d2281427f87801ea1bdad78971b4ea1d1c5878fde4557cd.
