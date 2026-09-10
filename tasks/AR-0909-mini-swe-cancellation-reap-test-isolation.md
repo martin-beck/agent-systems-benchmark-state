@@ -13,7 +13,7 @@
   "id": "AR-0909",
   "next_action": "Diagnose PR #127 emulated-aarch64 run 34418686073 and TLC/Alloy job in run 34418686110; do not rerun or merge before classification.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "a91cd04d5f49aa4d311c53ab727c2dcb75b77913",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0909.md",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T00:20:34+00:00",
+  "updated_at": "2026-09-10T00:20:41+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
