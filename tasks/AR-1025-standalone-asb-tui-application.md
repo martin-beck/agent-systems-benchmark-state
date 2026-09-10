@@ -12,10 +12,10 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Deliver the actual standalone interactive asb-tui application without an ASB workspace dependency.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Build the standalone asb-tui application",
-  "updated_at": "2026-09-10T19:00:00+00:00",
-  "worktree_key": "agent-systems-benchmark-standalone-asb-tui-application"
+  "updated_at": "2026-09-10T19:30:00+00:00",
+  "worktree_key": "agent-systems-benchmark-asb-tui-standalone-application"
 }
 ---
 Move reviewed behavior from the legacy in-tree frontend into the separate repository, add the real
@@ -25,3 +25,6 @@ The standalone source must not depend on the ASB Cargo workspace or assume bench
 Acceptance requires settings, launch/status/cancel, history/analysis, repeat and record/replay
 journeys; terminal restoration and accessibility fallbacks; reconnect and stale-event correctness;
 cross-contract fixtures; complete tests and audits; exact-head CI and post-merge verification.
+
+Repository boundary: the complete application lives in `martin-beck/asb-tui`; this AR owns no
+product path in `martin-beck/agent-systems-benchmark`.
