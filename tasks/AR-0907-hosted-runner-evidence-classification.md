@@ -8,7 +8,7 @@
     "AR-0848"
   ],
   "id": "AR-0907",
-  "next_action": "Monitor fresh PR #123 exact-head CI at f0b7b46; do not merge until all required checks pass.",
+  "next_action": "Hold PR 123 at f0b7b46; integrate AR-0906 then AR-0877, rebase once, and require fresh all-green exact-head CI before merge.",
   "observed_branch": "fix/hosted-runner-evidence-classification",
   "observed_dirty": 0,
   "observed_head": "f0b7b46db271cd9de5e89ab1d3cdd6cf86a662d0",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 136,
+  "task_revision": 137,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-10T08:28:49+00:00",
+  "updated_at": "2026-09-10T08:29:26+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -515,3 +515,12 @@ patch release has advanced.
 
 - 2026-09-10T08:28:49+00:00: Recorded command exit 0; command argv SHA-256
   e8fec862d002b26cdc600c2317ac797a96ece356fad19ed08f65aab9bc5434ee.
+
+- 2026-09-10T08:29:26+00:00: Terminal exact-head PR 123 evidence at f0b7b46/ecbac455: 11 of 12
+  required jobs pass, including Platform evidence on rolling Ubuntu, Rust, quality, emulated
+  AArch64, fault, AWQ, headers, Kani, Loom and mutation. Sole failure is Formal run 34398081718 job
+  102622757613: formal/run_temporal_models.sh curl exit 63 maximum-file-size acquisition before
+  TLC/Alloy execution. This is the shared AR-0877 acquisition boundary, not an AR-0907 path or
+  hosted-classification defect. AR-0907 product acceptance is behaviorally proven but publication
+  acceptance is incomplete because required exact-head CI is not all green. Preserve clean exact
+  candidate and do not merge.
