@@ -989,7 +989,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md): Adopt Ratatui/Crossterm TUI foundation | replay_20260906 | Adopt Ratatui and Crossterm as the supported professional TUI foundation. | Adopt pinned Ratatui and Crossterm dependencies in an isolated TUI worktree, then implement the capability-aware application shell and event loop. |
+| P0 | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md): Adopt Ratatui/Crossterm TUI foundation | replay_20260906 | Adopt Ratatui and Crossterm as the supported professional TUI foundation. | Run full workspace, formal, fault, privacy, policy, and supply gates on signed df92c05. |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | contracts_20260906 | Qualify pinned OpenJiuwen live execution. | Monitor PR 124 exact-head CI; inspect terminal failures without changing cceb76f. |
 | P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | quality_20260906 | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Hold PR #127: await hosted emulated-AArch64 run 34421905238; inspect terminal formal run 34421905246 logs and route acquisition failure to AR-0877. Do not merge. |
 

@@ -10,7 +10,7 @@
     "AR-0806"
   ],
   "id": "AR-1010",
-  "next_action": "Adopt pinned Ratatui and Crossterm dependencies in an isolated TUI worktree, then implement the capability-aware application shell and event loop.",
+  "next_action": "Run full workspace, formal, fault, privacy, policy, and supply gates on signed df92c05.",
   "observed_branch": "feature/tui-ratatui-crossterm-foundation",
   "observed_dirty": 0,
   "observed_head": "df92c0513f742ce3f22a7f2d8808441537cf3dbb",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T00:35:48+00:00",
+  "updated_at": "2026-09-10T00:36:14+00:00",
   "worktree_key": "agent-systems-benchmark-tui-ratatui-crossterm-foundation"
 }
 ---
@@ -53,3 +53,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-10T00:35:42+00:00: Recorded command exit 0; command argv SHA-256
   167094bba547a0cfc94b5b5ff1b2eefdaaba0cd6b1c44f022006f02efde5cdd1.
+
+- 2026-09-10T00:36:14+00:00: Signed+DCO foundation checkpoint
+  df92c0513f742ce3f22a7f2d8808441537cf3dbb (tree 7e101bd5d0a1f02deaa775447451c0b1aa0c95bb,
+  parent/base b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b) is clean in the declared isolated worktree.
+  Six-path scope: Cargo.lock, asb-tui manifest, lib/main, and new app/runtime modules. Ratatui
+  0.29.0 and matching sole Crossterm 0.28.1 are exact-pinned MIT dependencies; attempted Ratatui
+  0.30.2 was rejected because its transitive serde_core 1.0.228 conflicts with the workspace exact
+  serde 1.0.219, then corrected without weakening pins. The slice adds typed single-writer actions,
+  atomic contiguous control-event projection, pure TestBackend rendering, stable non-TTY plain text,
+  bounded resize/quit loop, and rollback/idempotent restoration on startup failure, normal exit,
+  drop, and panic. Focused cargo check/test/Clippy and fmt pass; 40 asb-tui tests pass, dependency
+  uniqueness/license assertions pass, non-TTY executable smoke passes, diff-check and clean-tree
+  checks pass. Cargo lock change contains only the resolved Ratatui/Crossterm closure.
