@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 5 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 51 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 129 |
+| **Done** | Accepted, integrated, and durably verified | 130 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -243,7 +243,7 @@ flowchart LR
         AR_1019["AR-1019 - Done"]:::status_done
         AR_1020["AR-1020 - Done"]:::status_done
         AR_1021["AR-1021 - Done"]:::status_done
-        AR_1022["AR-1022 - In progress"]:::status_in_progress
+        AR_1022["AR-1022 - Done"]:::status_done
         AR_1023["AR-1023 - Done"]:::status_done
         AR_1024["AR-1024 - Planned"]:::status_planned
         AR_1025["AR-1025 - Planned"]:::status_planned
@@ -1091,12 +1091,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md): Adopt Ratatui/Crossterm TUI foundation | codex-ar1010-asb-tui-renderer-20260910 | Adopt Ratatui and Crossterm as the supported professional TUI foundation. | Review draft PR 9 and choose an explicit Zlib/duplicate-policy decision or a dedicated upstream dependency AR before adding the real Ratatui renderer. |
-| P0 | [AR-1022](tasks/AR-1022-asb-tui-release-contract-hardening.md): Harden the asb-tui release lifecycle contract | codex-ar1022-lifecycle-20260910 | Turn the tested unverified asb-tui lifecycle boundary into a release-safe delegated contract. | Wait for AR-1030 PR 11 to merge, rebase signed+DCO AR-1022 PR 10 onto exact new asb-tui main, reconcile overlaps to source_only_unverified, rerun full gates and exact-head CI, then integrate by protected admin merge only when all requirements are green. |
 | P1 | [AR-1028](tasks/AR-1028-asb-cli-workflow-captures.md): Generate ASB CLI workflow captures | codex-ar1028-cli-captures-20260910 | Produce reproducible ASB CLI transcripts separately from standalone TUI screenshots. | Review final diff, commit signed+DCO, push PR, and wait for exact-head CI. |
 
 ### Open (5)
@@ -1181,7 +1180,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (129)
+### Done (130)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1205,6 +1204,7 @@ flowchart LR
 | P0 | [AR-0850](tasks/AR-0850-aider-deterministic-replay.md): Repair deterministic aider replay | Unclaimed | Repair aider replay nondeterminism caused by process-dependent file ordering. | Make pinned aider multi-file capture ordering deterministic across separately spawned processes, then prove strict replay parity and rerun the native journey. |
 | P0 | [AR-0853](tasks/AR-0853-coordinator-merge-attestation.md): Repair coordinator merge attestation | Unclaimed | Repair the v0.1.4 coordinator merge attestation without rewriting published history. | Repair the attestation test to validate a closed fetch-free signed representation and installed manifest without requiring the unreachable historical merge object; document that limitation, rerun gates, and publish a signed successor by exact lease. |
 | P0 | [AR-0872](tasks/AR-0872-beginner-workflow-documentation.md): Publish beginner workflow documentation | Unclaimed | Publish linked beginner workflows for setup, multi-agent runs, progress, comparison, recording, and replay with and without the TUI. | Create a signed no-ff integration merge for PR #95 from current main, run post-merge checks, fast-forward main, and release AR-0872. |
+| P0 | [AR-1022](tasks/AR-1022-asb-tui-release-contract-hardening.md): Harden the asb-tui release lifecycle contract | Unclaimed | Turn the tested unverified asb-tui lifecycle boundary into a release-safe delegated contract. | Wait for AR-1030 PR 11 to merge, rebase signed+DCO AR-1022 PR 10 onto exact new asb-tui main, reconcile overlaps to source_only_unverified, rerun full gates and exact-head CI, then integrate by protected admin merge only when all requirements are green. |
 | P0 | [AR-1023](tasks/AR-1023-asb-tui-capabilities-command.md): Add the ASB frontend capabilities command | Unclaimed | Publish the ASB capability negotiation command required by the standalone frontend. | Monitor exact head d60d2351004479998608f2141730849366351373 on PR 128, repair any CI failure, obtain independent review, merge through policy, and run post-merge verification. |
 | P0 | [AR-1030](tasks/AR-1030-ratatui-dependency-closure.md): Resolve the Ratatui dependency closure | Unclaimed | Make the maintained Ratatui release consumable by standalone asb-tui without hiding supply-chain exceptions. | Register/authorize a GitHub-recognized signing identity for exact head c0dfdd3114741f9415a124f4d4995dac354b4260, or explicitly approve a GitHub rebase/squash rewrite; then rerun exact-head gates and merge PR #11. |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Unclaimed | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. |

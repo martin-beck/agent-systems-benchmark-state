@@ -2,7 +2,7 @@
 {
   "branch": "feature/asb-tui-release-contract-hardening",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T22:17:26+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1017",
     "AR-1018",
@@ -12,15 +12,15 @@
   ],
   "id": "AR-1022",
   "next_action": "Wait for AR-1030 PR 11 to merge, rebase signed+DCO AR-1022 PR 10 onto exact new asb-tui main, reconcile overlaps to source_only_unverified, rerun full gates and exact-head CI, then integrate by protected admin merge only when all requirements are green.",
-  "owner": "codex-ar1022-lifecycle-20260910",
+  "owner": "",
   "plan": "../plans/AR-1022.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Turn the tested unverified asb-tui lifecycle boundary into a release-safe delegated contract.",
-  "task_revision": 97,
+  "task_revision": 98,
   "title": "Harden the asb-tui release lifecycle contract",
-  "updated_at": "2026-09-10T20:29:33+00:00",
+  "updated_at": "2026-09-10T20:30:17+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-release-contract-hardening"
 }
 ---
@@ -332,3 +332,16 @@ and filesystem tests, complete local gates, independent review, exact-head CI an
 
 - 2026-09-10T20:29:33+00:00: Recorded command exit 0; command argv SHA-256
   9b9aa60ff2dd4910312e53b264d502f0b69298f015cdbcd04d3b12102e9377c0.
+
+- 2026-09-10T20:30:17+00:00: Completed and merged PR 10. Reviewed signed+DCO head
+  96c7ddd8886394cb3e29e580e5ccfbb61251f20b was rebased onto remediated main
+  1898ab22135b555377536e323b643563dae82510; exact-head GitHub Repository quality passed and
+  independent re-review approved. GitHub-signed squash d58eda9b74431752675f784978dd5851f4eb9f18 has
+  the identical reviewed tree 132f1014a05bd3e92c928ef51fafe8221e50edfb, verified=true signature, and
+  a correctly parsed Signed-off-by trailer. Exact merged main post-merge gates pass: 90.82% line
+  coverage; fmt, clippy, full Rust tests including four dependency-policy tests, rustdoc warnings,
+  release build, schema/release/publication validators, cargo deny/audit, shell/workflow/Gitleaks,
+  and ASB isolation with 16 unit plus 2 doc tests. target removed and worktree clean. Lifecycle now
+  uses embedded static signer/promotion policy, bounded system time, signed external manifest
+  artifact identity, mandatory release-build source metadata, source-only fail-closed activation,
+  transactional safety, and adversarial coverage without embedded self hashes.
