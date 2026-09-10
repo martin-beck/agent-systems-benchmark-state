@@ -991,7 +991,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md): Adopt Ratatui/Crossterm TUI foundation | replay_20260906 | Adopt Ratatui and Crossterm as the supported professional TUI foundation. | Upstream Ratatui and Kasuari must ship a selectable non-Zlib hasher closure; then pin that maintained release and rerun deny/audit. |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | contracts_20260906 | Qualify pinned OpenJiuwen live execution. | Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI. |
-| P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | quality_20260906 | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Repair hosted-emulation base-directory binding without weakening O_DIRECTORY/O_NOFOLLOW, repository overlap, owner/mode, entry identity, or cleanup checks; rerun native/QEMU focused and full gates. Do not merge PR #127. |
+| P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | quality_20260906 | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Obtain immutable review of signed 4e35710; if approved, guarded PR #127 update and fresh exact-head CI. Do not merge; formal/platform failures remain separately owned. |
 
 ### Open (5)
 

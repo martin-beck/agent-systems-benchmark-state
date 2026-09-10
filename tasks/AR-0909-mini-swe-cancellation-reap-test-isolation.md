@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Repair hosted-emulation base-directory binding without weakening O_DIRECTORY/O_NOFOLLOW, repository overlap, owner/mode, entry identity, or cleanup checks; rerun native/QEMU focused and full gates. Do not merge PR #127.",
+  "next_action": "Obtain immutable review of signed 4e35710; if approved, guarded PR #127 update and fresh exact-head CI. Do not merge; formal/platform failures remain separately owned.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "4e35710ad90a5c421af9bb4a008a1caa08fcff59",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 140,
+  "task_revision": 141,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T06:02:46+00:00",
+  "updated_at": "2026-09-10T06:03:21+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -526,3 +526,15 @@ classified.
 
 - 2026-09-10T06:02:38+00:00: Recorded command exit 0; command argv SHA-256
   30bda2676136e77639d63fd1d91fd6816d0bbdda5a19acbbc72cb6fbf5bbde84.
+
+- 2026-09-10T06:03:21+00:00: Signed successor 4e10ad90a5c421af9bb4a008a1caa08fcff59, tree
+  9814329092cc3e5cea1d6391df8341834e4b5603, parent fb26f3d2023d43f689f0743d3713470d0edf6096 repairs
+  the remaining hosted-emulation base binding: both requested and canonical expected directories are
+  independently opened with target-native rustix O_DIRECTORY|O_NOFOLLOW|CLOEXEC and compared using
+  fstat dev+ino within the guest ABI. Existing canonical repository-overlap, base owner/mode,
+  fd-anchored entry statat/fstat identity, symlink negative and cleanup replacement checks remain.
+  Exact aggregate scope is still one cfg(test) file with production unchanged; SSH signature/DCO,
+  show-check, diff-check and clean worktree pass. Local AArch64/QEMU direct private-root test and
+  40/40 cancellation stress pass. Native fmt, all-target workspace clippy -D warnings and full
+  locked workspace tests pass. Prior release/rustdoc/security gates remain applicable to this
+  test-only successor. PR127 remains unchanged at failing fb26f3d pending immutable review.
