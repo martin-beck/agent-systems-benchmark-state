@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 5 |
+| **Open** | Dependency-ready and available to claim | 6 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
-| **Planned** | Defined work awaiting promotion or dependencies | 56 |
+| **Planned** | Defined work awaiting promotion or dependencies | 55 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 131 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -234,7 +234,7 @@ flowchart LR
         AR_1010["AR-1010 - In progress"]:::status_in_progress
         AR_1011["AR-1011 - Planned"]:::status_planned
         AR_1012["AR-1012 - Planned"]:::status_planned
-        AR_1013["AR-1013 - Planned"]:::status_planned
+        AR_1013["AR-1013 - Open"]:::status_open
         AR_1014["AR-1014 - Planned"]:::status_planned
         AR_1015["AR-1015 - Planned"]:::status_planned
         AR_1016["AR-1016 - Planned"]:::status_planned
@@ -1136,7 +1136,7 @@ flowchart LR
 | P0 | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md): Adopt Ratatui/Crossterm TUI foundation | codex-ar1010-asb-tui-renderer-20260910 | Adopt Ratatui and Crossterm as the supported professional TUI foundation. | Complete immutable-head review of asb-tui PR 9 at 10df38759371a4f6addb78dcfd970b65b3c90be5; repair any blocking finding, otherwise mark ready and merge through the protected reviewed PR path, then verify exact tree, signature, DCO, and post-merge gates. |
 | P0 | [AR-1024](tasks/AR-1024-asb-tui-lifecycle-router.md): Implement &#96;asb tui&#96; lifecycle routing | codex-ar1024-router-20260910 | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | Add signed-channel and resumable/truncation/concurrency negatives, validate copied schemas/docs, run clippy and full relevant gates, then commit for independent review after exact AR-1010 contract integration. |
 
-### Open (5)
+### Open (6)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1145,6 +1145,7 @@ flowchart LR
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Unclaimed | Qualify pinned OpenJiuwen live execution. | Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI. |
 | P1 | [AR-0908](tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | Unclaimed | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Hold PR #125 unchanged; shared formal asset and native-runner pin owners must repair their gates before a fresh exact-head run. |
 | P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | Unclaimed | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Hold PR127 unmerged; AR-0877 must repair formal acquisition and platform owner must repair hosted distro evidence, then rerun exact-head CI unchanged. |
+| P1 | [AR-1013](tasks/AR-1013-measurement-catalog-semantics.md): Version the measurement catalog and semantic groups | Unclaimed | Define selectable ASB measurements grouped by stable semantic meaning. | Define and review the versioned measurement catalog and semantic grouping contract before implementation. |
 
 ### Blocked (5)
 
@@ -1156,7 +1157,7 @@ flowchart LR
 | P1 | [AR-0890](tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Unclaimed | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. |
 | P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Unclaimed | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun failed Repository quality workflow 34339927858 on unchanged main; if failure repeats, isolate and repair test-state ownership before any feature work. |
 
-### Planned (56)
+### Planned (55)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1206,7 +1207,6 @@ flowchart LR
 | P1 | [AR-0894](tasks/AR-0894-tui-local-llm-parity.md): Add TUI parity for supported LLM modes | Unclaimed | Add tested TUI parity for supported LLM setup and diagnostics only after CLI and existing TUI evidence are stable. | After CLI and existing TUI CI-evidence dependencies complete, implement discoverable TUI parity for negotiated supported profiles and modes. |
 | P1 | [AR-1011](tasks/AR-1011-tui-ux-quality.md): Deliver TUI UX quality features | Unclaimed | Deliver an easy, discoverable, keyboard-first TUI experience for setup and benchmark analysis. | Implement and test the keyboard-first search, navigation, help, accessibility, and progress UX on the Ratatui foundation. |
 | P1 | [AR-1012](tasks/AR-1012-tui-quality-assurance.md): Qualify TUI quality and isolation | Unclaimed | Qualify TUI reliability, accessibility, performance isolation, and reproducible CI captures. | Qualify the complete Ratatui/Crossterm TUI across terminals, failure paths, accessibility checks, and benchmark-overhead budgets. |
-| P1 | [AR-1013](tasks/AR-1013-measurement-catalog-semantics.md): Version the measurement catalog and semantic groups | Unclaimed | Define selectable ASB measurements grouped by stable semantic meaning. | Define and review the versioned measurement catalog and semantic grouping contract before implementation. |
 | P1 | [AR-1014](tasks/AR-1014-tui-measurement-selection.md): Add grouped measurement selection to the TUI | Unclaimed | Let users select grouped measurements from the standalone ASB TUI. | Implement the catalog-driven TUI selection flow after AR-1013 is reviewed and merged. |
 | P1 | [AR-1015](tasks/AR-1015-csb-measurement-adapter.md): Add a pinned, provenance-safe CSB measurement adapter | Unclaimed | Import qualified CSB resource, system-statistics, and contention measurements into ASB. | Inventory pinned CSB signals and implement only contract-compatible adapters after the catalog is accepted. |
 | P1 | [AR-1027](tasks/AR-1027-asb-tui-verified-release.md): Publish the verified asb-tui release | Unclaimed | Create and independently promote the first installable signed asb-tui release channel. | Publish the first verified asb-tui release only after ASB release, complete UI/install qualification and exact cross-repository evidence are done. |
