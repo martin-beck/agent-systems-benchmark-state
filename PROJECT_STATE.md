@@ -18,20 +18,20 @@ Generated from local Git and GitHub. Do not edit.
 | #124 | `feature/openjiuwen-live@cceb76f436f8` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(agents): qualify pinned OpenJiuwen live execution |
 | #125 | `fix/control-state-lock-test-isolation@8b0f9fd07d5d` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(cli): isolate control state roots |
 | #126 | `fix/main-merge-integrity@bd6f450ab877` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | tools: harden signed merge publication |
-| #127 | `fix/mini-swe-cancellation-reap-test-isolation@a91cd04d5f49` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | test(agents): harden mini-swe cancellation isolation |
+| #127 | `fix/mini-swe-cancellation-reap-test-isolation@a91cd04d5f49` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(agents): harden mini-swe cancellation isolation |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34418686216 | `a91cd04d5f49` | pull_request | Agent Workflow Quality shadow | in_progress:- |
-| 34418686128 | `a91cd04d5f49` | pull_request | Huawei MIT source headers | in_progress:- |
-| 34418686110 | `a91cd04d5f49` | pull_request | Formal assurance | in_progress:- |
-| 34418686106 | `a91cd04d5f49` | pull_request | Rust verification | in_progress:- |
-| 34418686105 | `a91cd04d5f49` | pull_request | Repository quality | queued:- |
-| 34418686101 | `a91cd04d5f49` | pull_request | Fault assurance | queued:- |
-| 34418686074 | `a91cd04d5f49` | pull_request | Native platform evidence | in_progress:- |
-| 34418686073 | `a91cd04d5f49` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 34418686216 | `a91cd04d5f49` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 34418686128 | `a91cd04d5f49` | pull_request | Huawei MIT source headers | completed:success |
+| 34418686110 | `a91cd04d5f49` | pull_request | Formal assurance | completed:failure |
+| 34418686106 | `a91cd04d5f49` | pull_request | Rust verification | completed:success |
+| 34418686105 | `a91cd04d5f49` | pull_request | Repository quality | completed:success |
+| 34418686101 | `a91cd04d5f49` | pull_request | Fault assurance | completed:success |
+| 34418686074 | `a91cd04d5f49` | pull_request | Native platform evidence | completed:success |
+| 34418686073 | `a91cd04d5f49` | pull_request | Emulated aarch64 portability | completed:failure |
 | 34406581994 | `bd6f450ab877` | pull_request | Repository quality | completed:failure |
 | 34406581954 | `bd6f450ab877` | pull_request | Fault assurance | completed:success |
 | 34406581867 | `bd6f450ab877` | pull_request | Huawei MIT source headers | completed:success |
