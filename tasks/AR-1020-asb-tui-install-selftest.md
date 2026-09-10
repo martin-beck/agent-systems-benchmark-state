@@ -7,7 +7,7 @@
     "AR-1019"
   ],
   "id": "AR-1020",
-  "next_action": "Implement isolated user-space installation, self-test, status, upgrade, remove, and launch commands.",
+  "next_action": "Implement the standalone transactional lifecycle and delegated command contract; open a focused ASB CLI routing dependency if no existing safe seam can expose asb tui.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Install and operate asb-tui safely as an optional extension.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Add isolated asb-tui install and self-test lifecycle",
-  "updated_at": "2026-09-10T15:53:34+00:00",
+  "updated_at": "2026-09-10T15:54:28+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-install-selftest"
 }
 ---
@@ -37,3 +37,12 @@ read-only status, detached-run continuity, permissions/privacy checks, and clear
   install lifecycle may begin.
 
 - 2026-09-10T15:53:34+00:00: Claimed by contracts_20260906.
+
+- 2026-09-10T15:54:28+00:00: Exact public ASB source audit found versioned external executable
+  protocol types and conformance fixtures, but docs/EXTENSIONS.md explicitly says general
+  external-extension discovery and transport are not yet a CLI feature. The current ASB TUI remains
+  a built-in startup shell. Therefore this standalone repository cannot alone make asb tui route to
+  an extension without overwriting/shadowing ASB core, which is prohibited. Proceed with isolated
+  user-space install/status/upgrade/remove/launch implementation and tests in asb-tui, define a
+  fail-closed delegated invocation contract, and record a separate product-side routing dependency
+  rather than claiming current end-to-end ASB CLI availability.
