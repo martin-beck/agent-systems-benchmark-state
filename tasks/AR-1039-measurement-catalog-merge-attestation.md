@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-11T01:36:08+00:00",
   "depends_on": [],
   "id": "AR-1039",
-  "next_action": "Independently review draft PR #134 exact head 4a7eb724c601ab8fb2a6dd4552f54726ad3a0dd9 and tree 141362f96bd29c2694c5049d9d2010211fbaac99; require all hosted checks green and do not merge.",
+  "next_action": "Independently review draft PR #134 exact head 4a7eb724c601ab8fb2a6dd4552f54726ad3a0dd9 and tree 141362f96bd29c2694c5049d9d2010211fbaac99; do not merge before approval and use the exact lowercase GitHub-author DCO trailer.",
   "observed_branch": "docs/measurement-catalog-merge-attestation",
   "observed_dirty": 0,
   "observed_head": "607a3afb3a44b87f9c60b6ae3bc764570e84d5fe",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover the measurement catalog publication boundary without rewriting protected main.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Attest the measurement catalog merge boundary",
-  "updated_at": "2026-09-10T23:56:50+00:00",
+  "updated_at": "2026-09-10T23:57:08+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-merge-attestation"
 }
 ---
@@ -262,3 +262,8 @@ the corrective merge commit uses an actual multiline DCO trailer. This AR owns n
 
 - 2026-09-10T23:56:50+00:00: Recorded command exit 0; command argv SHA-256
   11f88ddfdddded679a2cff58ebb64875224f74b3afb721d1c12792a92b9656ca.
+
+- 2026-09-10T23:57:08+00:00: Live GitHub verification confirms draft PR #134 remains OPEN at exact
+  immutable head 4a7eb724c601ab8fb2a6dd4552f54726ad3a0dd9 and all twelve expected hosted checks are
+  terminal SUCCESS. No product or PR mutation performed. Releasing ownership OPEN for independent
+  immutable review; merge remains forbidden pending approval.
