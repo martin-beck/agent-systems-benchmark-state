@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 100,
+  "task_revision": 101,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T05:10:12+00:00",
+  "updated_at": "2026-09-10T05:17:42+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -368,3 +368,6 @@ classified.
   SSH-signed/DCO-valid and clean. Formal run 34421905246 failed before model execution immediately
   after downloading about 4385 KiB where formal/run_temporal_models.sh enforces exact
   4,490,679-byte/hash TLA artifact; this is AR-0877-owned acquisition/provenance, not AR-0909.
+
+- 2026-09-10T05:17:42+00:00: Recorded command exit 0; command argv SHA-256
+  2f2e9e0015a28966159d76c5a5fb4c23aa46a5f2f5d88b23efa02d5fda288e78.
