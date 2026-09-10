@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 92,
+  "task_revision": 93,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T19:46:13+00:00",
+  "updated_at": "2026-09-10T19:46:28+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -329,3 +329,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-10T19:46:13+00:00: Evidence correction: the exact signed+DCO standalone checkpoint and
   pushed PR 9 head is 9b3f9fb746b3ac8a17a7b9ea7541f621650969e8. The prior note transcribed an
   incorrect full object ID; do not use it.
+
+- 2026-09-10T19:46:28+00:00: Recorded command exit 0; command argv SHA-256
+  a7c2491006dea572fd657f061af914fd043601421c596c8f472ef97ad4801088.
