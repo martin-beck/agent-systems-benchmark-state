@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Turn the tested unverified asb-tui lifecycle boundary into a release-safe delegated contract.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Harden the asb-tui release lifecycle contract",
-  "updated_at": "2026-09-10T19:13:59+00:00",
+  "updated_at": "2026-09-10T19:14:17+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-release-contract-hardening"
 }
 ---
@@ -34,3 +34,6 @@ embedded signer identity, system-clock verification, honest verified-channel sta
 and filesystem tests, complete local gates, independent review, exact-head CI and post-merge checks.
 
 - 2026-09-10T19:13:59+00:00: Claimed by codex-ar1022-lifecycle-20260910.
+
+- 2026-09-10T19:14:17+00:00: Recorded command exit 0; command argv SHA-256
+  8944772fadc13e086aeb779120b568f0f9c23190d34e1aa24ce37ea79900fd7f.
