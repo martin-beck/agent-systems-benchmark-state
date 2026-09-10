@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Replace nested guest exec readiness with a bounded direct process primitive or record a contract amendment; preserve real RunningMiniSwe cancellation/group oracle. Do not change timeout again or merge PR #127.",
+  "next_action": "Obtain immutable review of eefdb833; if approved, guarded force-with-lease PR #127 and fresh exact-head CI. Do not merge.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "eefdb833248db5bf7135ac4749b7dc8886aa5458",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 196,
+  "task_revision": 197,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T07:08:05+00:00",
+  "updated_at": "2026-09-10T07:08:54+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -743,3 +743,19 @@ classified.
 
 - 2026-09-10T07:07:56+00:00: Recorded command exit 0; command argv SHA-256
   aa8bbb794a8069f4bd394e556db231e44c3f50e46d037b1b43ee97098ea39713.
+
+- 2026-09-10T07:08:54+00:00: Signed repair candidate eefdb833248db5bf7135ac4749b7dc8886aa5458, tree
+  b5734d7dc7710815abab70a0db9d94fdf2145ca5, parent 9297275e8ab328f1cbcd9e4d848f516d70caaa32. Exact
+  scope is one cfg(test) path, crates/asb-agents/src/mini_swe.rs; production is unchanged, worktree
+  clean, git diff --check clean, SSH signature and Signed-off-by valid. Root cause of hosted run
+  34447129649 was nested guest executable startup in the cancellation fixture, not the MiniSwe argv
+  boundary: the shell stand-in receives workspace at $5 (existing import-boundary test proves $1=-P
+  and trajectory=$7). The repair uses two shell-builtin subshell descendants blocked on an
+  explicitly created workspace FIFO, retaining real RunningMiniSwe cancellation, exact
+  process-group/session membership, two-PID evidence, and bounded no-runnable-member oracle without
+  invoking guest sleep or a nested test binary. Exact hosted-workflow-equivalent cargo test
+  --offline --locked --target aarch64-unknown-linux-gnu -p asb-agents --lib -- --skip
+  mini_swe::tests::trajectory_file_and_spawn_failures_are_bounded_and_cleaned passed 139/139 with 1
+  ignored and 1 filtered. Native cargo fmt --all -- --check; cargo clippy --locked --workspace
+  --all-targets -- -D warnings; cargo test --locked --workspace all passed. A forbidden-unsafe
+  direct-fork experiment failed compilation and was fully reverted before this candidate.
