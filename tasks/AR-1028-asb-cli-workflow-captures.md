@@ -7,7 +7,7 @@
     "AR-0872"
   ],
   "id": "AR-1028",
-  "next_action": "Implement real-CLI normalized transcript fixture, provenance hash checks, drift/privacy negatives, and workflow documentation link.",
+  "next_action": "Review final diff, commit signed+DCO, push PR, and wait for exact-head CI.",
   "observed_branch": "docs/asb-cli-workflow-captures",
   "observed_dirty": 4,
   "observed_head": "32df706413a6f165f086941426a5c793bd5e01e8",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Produce reproducible ASB CLI transcripts separately from standalone TUI screenshots.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Generate ASB CLI workflow captures",
-  "updated_at": "2026-09-10T20:28:14+00:00",
+  "updated_at": "2026-09-10T20:28:38+00:00",
   "worktree_key": "agent-systems-benchmark-asb-cli-workflow-captures"
 }
 ---
@@ -178,3 +178,14 @@ renderer, terminal application, Ratatui/Crossterm dependency, or asb-tui source.
 
 - 2026-09-10T20:28:14+00:00: Recorded command exit 0; command argv SHA-256
   1998f534aa23fab5a5f3d35d18c637e0bb9291490da8c16c1aadbc24649d8733.
+
+- 2026-09-10T20:28:38+00:00: Implementation complete in four CLI-only files. Focused
+  transcript/guide/e2e tests pass (9 tests); fmt, clippy workspace, workspace tests, rustdoc,
+  release build, cargo-deny, corrected cargo audit, contract consistency, coverage floors,
+  actionlint, zizmor, gitleaks, and failure-path suite pass. Coverage-generated profraw artifacts
+  were removed and LLVM_PROFILE_FILE is now preserved through env clearing; focused llvm-cov proves
+  no recurrence. Classified failures: missing product cwd, rustfmt diff, coordinator lock timeouts,
+  expected initial golden/provenance drift, temporary-borrow compile error repaired, in-repo target
+  violating existing scratch-boundary test corrected to external target, direct cargo-audit syntax
+  corrected, contract baseline ref corrected to exact SHA, and failure-path PATH corrected. No
+  renderer/TUI code or dependency touched.
