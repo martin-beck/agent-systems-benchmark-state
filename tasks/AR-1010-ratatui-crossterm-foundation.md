@@ -11,16 +11,16 @@
     "AR-1030"
   ],
   "id": "AR-1010",
-  "next_action": "Run complete policy, cross-target, repository-quality, coverage, and ASB-isolation gates; consolidate the rebased renderer and terminal-handoff implementation into a signed DCO commit; publish exact PR head for independent review.",
+  "next_action": "Complete immutable-head review of asb-tui PR 9 at 10df38759371a4f6addb78dcfd970b65b3c90be5; repair any blocking finding, otherwise mark ready and merge through the protected reviewed PR path, then verify exact tree, signature, DCO, and post-merge gates.",
   "owner": "codex-ar1010-asb-tui-renderer-20260910",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 187,
+  "task_revision": 188,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T21:07:08+00:00",
+  "updated_at": "2026-09-10T21:09:02+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -626,3 +626,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-10T21:07:08+00:00: Recorded command exit 0; command argv SHA-256
   8b28de97f7db2686fa98997aa763f446e451c0ba770720f577038b0073623be8.
+
+- 2026-09-10T21:09:02+00:00: Published signed+DCO PR 9 head 10df38759371a4f6addb78dcfd970b65b3c90be5
+  (tree 4c4339eabf17a1f25e6c35d9f09ce2040bb914d2) on exact d58eda9 main; hosted Repository quality
+  is green. Full fmt/clippy/test/rustdoc/release, native/x86_64/AArch64 cargo-deny and cargo checks,
+  cargo-audit, SBOM/schema/publication/release-channel/shell/workflow/gitleaks, ASB isolation, and
+  clean coverage passed. Coverage is 89.03% regions and 92.13% lines; renderer 100%, runtime 95.88%
+  regions and 96.73% lines. One cargo-deny gate command exited 2 solely because target was placed
+  after the check subcommand; rerun with the supported global --target position passed for both
+  targets. Three wrapped gh operations completed remotely but recorded exit 1 because then-broken
+  state rendering lacked AR-1036; exact PR title/body/head/CI were independently verified, and the
+  state defect has since been repaired with doctor --live green. No ASB product files were modified.
