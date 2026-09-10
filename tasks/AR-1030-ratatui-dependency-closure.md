@@ -7,16 +7,16 @@
     "AR-1017"
   ],
   "id": "AR-1030",
-  "next_action": "Integrate draft PR #11 at exact reviewed head c0dfdd3114741f9415a124f4d4995dac354b4260 after reconciling AR-1022 classification wording, then unblock Ratatui renderer work in AR-1010.",
+  "next_action": "Register/authorize a GitHub-recognized signing identity for exact head c0dfdd3114741f9415a124f4d4995dac354b4260, or explicitly approve a GitHub rebase/squash rewrite; then rerun exact-head gates and merge PR #11.",
   "owner": "codex-ar1030-ratatui-policy-20260910",
   "plan": "../plans/AR-1030.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the maintained Ratatui release consumable by standalone asb-tui without hiding supply-chain exceptions.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Resolve the Ratatui dependency closure",
-  "updated_at": "2026-09-10T20:15:40+00:00",
+  "updated_at": "2026-09-10T20:16:34+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-dependency-closure"
 }
 ---
@@ -162,3 +162,12 @@ and syn 2/3. Resolve this visibly before AR-1010 adds a renderer.
 
 - 2026-09-10T20:15:40+00:00: Recorded command exit 1; command argv SHA-256
   f803b509cea788504b22b9f6abc53f417babd7d97d5490d9eb7196db9922b1b0.
+
+- 2026-09-10T20:16:34+00:00: Classified the latest merge exit 1: `gh pr merge --admin --merge` was
+  rejected by GitHub with `Commits must have verified signatures. (mergePullRequest)`. Local git
+  verifies c0dfdd3 as a good ED25519 signature and DCO is present, but GitHub reports
+  commit.verification.reason=unknown_key and signature.isValid=false. Main protection requires
+  signed commits and enforces admins. Current gh token lacks admin:ssh_signing_key and API says an
+  auth refresh is required. No direct main push, protection bypass, account-key mutation, or history
+  rewrite was performed. PR #11 remains open/ready, exact-head CI green, and
+  mergeable_state=blocked.
