@@ -990,7 +990,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | contracts_20260906 | Qualify pinned OpenJiuwen live execution. | Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI. |
-| P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | quality_20260906 | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Obtain immutable review of signed 67d07fd; if approved, guarded PR #127 update and fresh exact-head CI. Do not merge; formal acquisition remains AR-0877-owned. |
+| P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | quality_20260906 | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Hold PR #127 for terminal exact-head 67d07fd CI; investigate candidate-owned failures only. Do not merge; formal acquisition and native distribution identity remain separately owned. |
 
 ### Open (6)
 
