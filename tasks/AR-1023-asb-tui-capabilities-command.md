@@ -15,7 +15,7 @@
   "id": "AR-1023",
   "next_action": "Implement the closed side-effect-free ASB frontend capability command and cross-check its output against the published asb-tui parser contract.",
   "observed_branch": "feature/asb-tui-capabilities-command",
-  "observed_dirty": 5,
+  "observed_dirty": 9,
   "observed_head": "66ca27afc2fb5a82b171e849e6dda4145735c8d2",
   "owner": "codex-ar1023-capabilities-20260910",
   "plan": "../plans/AR-1023.md",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish the ASB capability negotiation command required by the standalone frontend.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Add the ASB frontend capabilities command",
-  "updated_at": "2026-09-10T19:30:34+00:00",
+  "updated_at": "2026-09-10T19:30:43+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-capabilities-command"
 }
 ---
