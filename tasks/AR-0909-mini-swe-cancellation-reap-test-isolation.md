@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Hold PR #127 for terminal exact-head 67d07fd CI; investigate candidate-owned failures only. Do not merge; formal acquisition and native distribution identity remain separately owned.",
+  "next_action": "Obtain immutable review of signed 9297275; if approved, guarded PR #127 update and fresh exact-head CI. Do not merge; formal acquisition remains AR-0877-owned.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "9297275e8ab328f1cbcd9e4d848f516d70caaa32",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 176,
+  "task_revision": 177,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T06:50:13+00:00",
+  "updated_at": "2026-09-10T06:50:52+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -669,3 +669,19 @@ classified.
 
 - 2026-09-10T06:50:13+00:00: Recorded command exit 0; command argv SHA-256
   46b5c409635e1ba1f134ad75d5b5e9be69c00c4c4ad1cf1179ee89be47f36d84.
+
+- 2026-09-10T06:50:52+00:00: Signed successor 9297275e8ab328f1cbcd9e4d848f516d70caaa32, tree
+  a52540c717a825ba3f05a0c8c0420e2de8f495ed, parent 67d07fd2f681bd7b625bc517367d4ba49fb5034e removes
+  dependence on generated shell and guest sleep binaries. The test executable provides explicit
+  leader/sleeper modes and an explicit private PID-evidence path; the leader spawns two exact
+  executable descendants, while RunningMiniSwe wraps the real RunningProcess cancellation path and
+  the unchanged bounded group/session liveness oracle proves no runnable original-group member
+  survives. AArch64 retains bounded isolated self-reexec; native remains direct. Exact
+  hosted-workflow-equivalent local AArch64/QEMU asb-agents lib run passes 139/139 with 1 ignored and
+  the known trajectory test skipped; nested cancellation passes. Exact native focused cancellation
+  passes. Native full locked workspace tests passed before the final wrapper-only refinement; exact
+  candidate fmt and all-target workspace clippy -D warnings pass. Existing source proves the
+  rejected $5->$1 suggestion was incorrect: the shebang stand-in receives -P,-S,-c,DRIVER as $1-$4,
+  workspace as $5, trajectory as $7, and config as $12. Exact aggregate scope remains one cfg(test)
+  file, production untouched; SSH signature/DCO/diff-check/worktree clean. PR127 remains at failing
+  67d07fd pending immutable review.
