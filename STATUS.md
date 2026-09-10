@@ -1036,7 +1036,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1019](tasks/AR-1019-asb-tui-bundle-verification.md): Verify signed asb-tui extension bundles | contracts_20260906 | Verify asb-tui bundles before installation or execution. | Implement production bounded HTTPS range transport and identity-safe verified cache; add manifest schemas and full fault/coverage gates. |
+| P1 | [AR-1019](tasks/AR-1019-asb-tui-bundle-verification.md): Verify signed asb-tui extension bundles | contracts_20260906 | Verify asb-tui bundles before installation or execution. | Publish exact clean 67839598 after final privacy review; open focused PR and require exact-head hosted CI before merge. |
 
 ### Open (8)
 

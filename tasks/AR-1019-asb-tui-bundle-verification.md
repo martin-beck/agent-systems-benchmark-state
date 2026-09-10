@@ -8,7 +8,7 @@
     "AR-1018"
   ],
   "id": "AR-1019",
-  "next_action": "Implement production bounded HTTPS range transport and identity-safe verified cache; add manifest schemas and full fault/coverage gates.",
+  "next_action": "Publish exact clean 67839598 after final privacy review; open focused PR and require exact-head hosted CI before merge.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Verify asb-tui bundles before installation or execution.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Verify signed asb-tui extension bundles",
-  "updated_at": "2026-09-10T15:29:52+00:00",
+  "updated_at": "2026-09-10T15:50:06+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-bundle-verification"
 }
 ---
@@ -53,3 +53,16 @@ artifact-quota-safe retention, and reproducible verification tests.
   commands failed only because wrapper PATH omits cargo/cargo-fmt; pinned absolute Rust 1.93
   toolchain corrected it. Generated target was removed with cargo clean; worktree is clean.
   Production transport/cache, schemas, docs, fault expansion, coverage and complete gates remain.
+
+- 2026-09-10T15:50:06+00:00: Candidate 67839598f7908232b67d4f482475d883908230b0/tree
+  a5c8f0e743395dc742cea52fdf0bd0735d629b8b, exact base public main a7ca8e07, is clean with five
+  SSH-signed exact-DCO commits. Review repairs added immutable version/commit/tree/build-digest
+  closure for asb-tui, coordinator v0.3.5 and quality v0.23.0; sole pinned signer enforcement
+  rejects appended keys; persistent partial state resumes across invocations but is never treated as
+  verified; partials clear after digest failure or successful content-addressed insertion.
+  Production HTTPS ranges and retained-directory owner-private cache are implemented. Full
+  exact-head gates pass: 54 Rust tests, fmt, locked Clippy -D warnings, rustdoc -D warnings, release
+  build, deny/audit, closed schema fixture validation, shell/workflow/Zizmor, full five-commit
+  Gitleaks/privacy, ASB isolation 16 tests plus 2 doctests, and clean llvm-cov 90.74% lines/88.34%
+  regions. Initial isolation exit 127 was only wrapper cargo PATH omission; pinned Rust 1.93 PATH
+  rerun passed. No branch publication yet.
