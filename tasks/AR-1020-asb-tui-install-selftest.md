@@ -2,7 +2,7 @@
 {
   "branch": "feature/asb-tui-install-selftest",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T19:29:52+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1019"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "contracts_20260906",
+  "owner": "",
   "plan": "../plans/AR-1020.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Install and operate asb-tui safely as an optional extension.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Add isolated asb-tui install and self-test lifecycle",
-  "updated_at": "2026-09-10T16:30:08+00:00",
+  "updated_at": "2026-09-10T16:40:52+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-install-selftest"
 }
 ---
@@ -65,3 +65,11 @@ read-only status, detached-run continuity, permissions/privacy checks, and clear
   90.52% lines; clippy/rustfmt/docs/schema, ShellCheck/shfmt, actionlint/zizmor, Gitleaks (7
   commits, no leaks), and ASB isolation (16 tests plus 2 doctests) pass. The first ASB isolation
   invocation lacked cargo on PATH; rerun with exact Rust 1.93.0 passed.
+
+- 2026-09-10T16:40:52+00:00: Completed on public asb-tui main at GitHub-verified DCO commit
+  524f0f5871a87b34c08b63b679ce5b27fd30a8b9. PR #6 delivered the lifecycle and PR #7 closed the
+  acceptance-audit reuse edge case. Exact reviewed trees match both squash merges; signed-commit
+  protection is restored. Final hosted run 34503439341 and trusted local run 34503439327 pass on
+  exact main. Local evidence includes 90.55% line coverage, full locked tests, lint/docs/schema,
+  workflow/shell/privacy gates, and ASB isolation. Product-side top-level asb tui routing remains a
+  separate dependency and is not claimed by this standalone completion.

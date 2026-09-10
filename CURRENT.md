@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1020](tasks/AR-1020-asb-tui-install-selftest.md): Add isolated asb-tui install and self-test lifecycle | Install and operate asb-tui safely as an optional extension. | Publish c5454fa through a protected pull request, verify exact-head hosted CI, merge with DCO and verified signature, then run hosted and trusted local post-merge CI. | contracts_20260906 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -206,6 +200,7 @@ Never edit this file directly.
 | P1 | [AR-1017](tasks/AR-1017-asb-tui-separate-repository.md): Create the standalone asb-tui extension repository | Build asb-tui as an isolated optional repository and extension. | Publication and exact-head verification complete; no further AR-1017 action. | - |
 | P1 | [AR-1018](tasks/AR-1018-asb-tui-compatibility-detection.md): Add asb-tui compatibility and terminal capability detection | Detect whether an asb-tui bundle is compatible before installation or launch. | Await coordinator independent validation of exact-main attestation, post-merge CI, restored protections, and divergent local empty attestation; do not release. | - |
 | P1 | [AR-1019](tasks/AR-1019-asb-tui-bundle-verification.md): Verify signed asb-tui extension bundles | Verify asb-tui bundles before installation or execution. | Publish exact clean 67839598 after final privacy review; open focused PR and require exact-head hosted CI before merge. | - |
+| P1 | [AR-1020](tasks/AR-1020-asb-tui-install-selftest.md): Add isolated asb-tui install and self-test lifecycle | Install and operate asb-tui safely as an optional extension. | Publish c5454fa through a protected pull request, verify exact-head hosted CI, merge with DCO and verified signature, then run hosted and trusted local post-merge CI. | - |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Run final exact-main and local post-merge verification using required native x86_64 kernel evidence and applicable pinned QEMU AArch64 portability checks; record native ARM64 PMU/eBPF as optional future evidence, then release. | - |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Run final state validation/live doctor and release done after confirming clean synchronized product/state refs at signed merge a0d80e4. | - |
 | P2 | [AR-0309](tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | Run a maintained MIT OpenHands SDK or canonical headless client. | Monitor PR #65 exact-head CI for fec0487, investigate any failure, and await final review; do not merge. | - |
