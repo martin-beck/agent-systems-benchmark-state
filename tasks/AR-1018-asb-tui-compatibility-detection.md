@@ -2,7 +2,7 @@
 {
   "branch": "feature/asb-tui-compatibility-detection",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T17:56:40+00:00",
+  "claim_expires": "2026-09-10T18:05:11+00:00",
   "depends_on": [
     "AR-1017"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Detect whether an asb-tui bundle is compatible before installation or launch.",
-  "task_revision": 175,
+  "task_revision": 176,
   "title": "Add asb-tui compatibility and terminal capability detection",
-  "updated_at": "2026-09-10T15:02:25+00:00",
+  "updated_at": "2026-09-10T15:05:11+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-compatibility-detection"
 }
 ---
@@ -615,3 +615,5 @@ fixtures for mismatches, privacy-safe diagnostics, and no host identifiers in pu
   strict hosted quality, enforce_admins, signed commits, conversation resolution, and force/delete
   prohibitions. After protected merge, trusted self-hosted exact-main verification remains mandatory
   before AR release.
+
+- 2026-09-10T15:05:11+00:00: Heartbeat by contracts_20260906.
