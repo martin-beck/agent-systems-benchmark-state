@@ -2,7 +2,7 @@
 {
   "branch": "feature/ratatui-crossterm-foundation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-10T22:22:07+00:00",
   "depends_on": [
     "AR-0803",
     "AR-0804",
@@ -11,15 +11,15 @@
   ],
   "id": "AR-1010",
   "next_action": "Upstream Kasuari then Ratatui selectable std-map features; consume only after reviewed immutable releases eliminate foldhash.",
-  "owner": "",
+  "owner": "codex-ar1010-asb-tui-foundation-20260910",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T19:20:00+00:00",
+  "updated_at": "2026-09-10T19:22:07+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -221,3 +221,5 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-10T19:20:00+00:00: Re-scoped all application, renderer, Ratatui/Crossterm runtime,
   terminal lifecycle, and UI test ownership to the existing martin-beck/asb-tui repository. The
   unpublished ASB product candidate is historical read-only evidence and must not be merged there.
+
+- 2026-09-10T19:22:07+00:00: Claimed by codex-ar1010-asb-tui-foundation-20260910.
