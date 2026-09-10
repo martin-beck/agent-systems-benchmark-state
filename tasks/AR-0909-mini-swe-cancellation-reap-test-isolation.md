@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Widen only bounded cancellation-test readiness and teardown budgets for loaded hosted emulation, rerun native/QEMU stress and full gates, then request immutable review. Do not merge PR #127.",
+  "next_action": "Obtain immutable review of ef864f7; if approved, guarded PR #127 update and fresh exact-head CI. Do not merge; formal acquisition remains AR-0877-owned.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "ef864f70dacc3d70e782a65de2571131ad47d7c0",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 151,
+  "task_revision": 152,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T06:15:34+00:00",
+  "updated_at": "2026-09-10T06:16:06+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -572,3 +572,13 @@ classified.
 
 - 2026-09-10T06:15:23+00:00: Recorded command exit 0; command argv SHA-256
   ca930d90d7430d428d1233d2d61e7402cf14f4f32d6f9160f02d1915e1a9efcf.
+
+- 2026-09-10T06:16:06+00:00: Signed successor ef864f70dacc3d70e782a65de2571131ad47d7c0, tree
+  21b8d3c7347cea51a5fc43d85bf2f7294f0d3928, parent 4e35710ad90a5c421af9bb4a008a1caa08fcff59 bounds
+  the now-isolated hosted-emulation timing defect: cancellation test process limit 10s->30s, helper
+  readiness 2s->15s, terminal group-reap observation 2s->10s. Assertions and fail-closed
+  group/session liveness oracle are unchanged. Exact aggregate scope remains one cfg(test) file,
+  production untouched; SSH signature/DCO, show-check, diff-check and worktree clean. Local
+  AArch64/QEMU cancellation stress 50/50 passes. Native fmt, all-target workspace clippy -D warnings
+  and full locked workspace tests pass. PR127 remains at 4e35710 pending review; native platform
+  failure was separately classified and formal remains AR-0877-owned.
