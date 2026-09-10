@@ -132,8 +132,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-trace-interoperability` | `feature/trace-interoperability` | `921cf004f8aa` | 0 | behind 173, ahead 0 |
 | `agent-systems-benchmark-tui-history-analysis` | `feature/tui-history-analysis` | `7fd21bbeddc5` | 0 | behind 73, ahead 0 |
 | `agent-systems-benchmark-tui-multi-agent-provider-selection` | `feature/tui-multi-agent-provider-selection` | `679244e3af61` | 0 | behind 99, ahead 0 |
-| `agent-systems-benchmark-tui-ratatui-crossterm-foundation` | `feature/tui-ratatui-crossterm-foundation` | `b6d04a8305ce` | 6 | behind 0, ahead 0 |
-| changed files | - | - | - | `Cargo.lock`, `crates/asb-tui/Cargo.toml`, `crates/asb-tui/src/lib.rs`, `crates/asb-tui/src/main.rs`, `crates/asb-tui/src/app.rs`, `crates/asb-tui/src/runtime.rs` |
+| `agent-systems-benchmark-tui-ratatui-crossterm-foundation` | `feature/tui-ratatui-crossterm-foundation` | `df92c0513f74` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-tui-run-control` | `feature/tui-run-control` | `b44282a31e90` | 0 | behind 121, ahead 0 |
 | `agent-systems-benchmark-tui-settings-wizard` | `feature/tui-settings-wizard` | `8f7152c525da` | 0 | behind 133, ahead 0 |
 | `agent-systems-benchmark-verifier-integrity` | `feature/verifier-integrity` | `3fc65ea73bad` | 0 | behind 206, ahead 0 |
