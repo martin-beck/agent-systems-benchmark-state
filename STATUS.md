@@ -1096,7 +1096,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md): Adopt Ratatui/Crossterm TUI foundation | codex-ar1010-asb-tui-renderer-20260910 | Adopt Ratatui and Crossterm as the supported professional TUI foundation. | Review draft PR 9 and choose an explicit Zlib/duplicate-policy decision or a dedicated upstream dependency AR before adding the real Ratatui renderer. |
-| P1 | [AR-1028](tasks/AR-1028-asb-cli-workflow-captures.md): Generate ASB CLI workflow captures | codex-ar1028-cli-captures-20260910 | Produce reproducible ASB CLI transcripts separately from standalone TUI screenshots. | Review final diff, commit signed+DCO, push PR, and wait for exact-head CI. |
+| P1 | [AR-1028](tasks/AR-1028-asb-cli-workflow-captures.md): Generate ASB CLI workflow captures | codex-ar1028-cli-captures-20260910 | Produce reproducible ASB CLI transcripts separately from standalone TUI screenshots. | Push signed commit, open PR, obtain independent review, and require terminal green exact-head CI. |
 
 ### Open (5)
 

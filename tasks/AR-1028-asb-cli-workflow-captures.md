@@ -7,7 +7,7 @@
     "AR-0872"
   ],
   "id": "AR-1028",
-  "next_action": "Review final diff, commit signed+DCO, push PR, and wait for exact-head CI.",
+  "next_action": "Push signed commit, open PR, obtain independent review, and require terminal green exact-head CI.",
   "observed_branch": "docs/asb-cli-workflow-captures",
   "observed_dirty": 0,
   "observed_head": "3db6e6be7f0fe457ee0cb8d44d7434868e157a1a",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Produce reproducible ASB CLI transcripts separately from standalone TUI screenshots.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Generate ASB CLI workflow captures",
-  "updated_at": "2026-09-10T20:30:23+00:00",
+  "updated_at": "2026-09-10T20:30:51+00:00",
   "worktree_key": "agent-systems-benchmark-asb-cli-workflow-captures"
 }
 ---
@@ -207,3 +207,9 @@ renderer, terminal application, Ratatui/Crossterm dependency, or asb-tui source.
 
 - 2026-09-10T20:30:23+00:00: Recorded command exit 0; command argv SHA-256
   7f8d39ef8bf90c957fcc8e4b43ea4d654097aecac850e5a11d018a4414f03fa7.
+
+- 2026-09-10T20:30:51+00:00: Signed+DCO commit 3db6e6be7f0fe457ee0cb8d44d7434868e157a1a created;
+  ED25519 signature verified, DCO and repository policy pass, worktree clean. Classified post-commit
+  exit 2: check_dco.py was first called with positional revisions instead of required --base/--head
+  flags; corrected invocation passed. A state update also rejected unsupported --checkpoint-commit
+  before mutation; checkpoint is already observed through wrapped git state.
