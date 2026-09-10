@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 6 |
+| **In progress** | Claimed work with a live lease | 3 |
+| **Open** | Dependency-ready and available to claim | 5 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 52 |
 | **Future** | Deferred roadmap work | 1 |
@@ -249,7 +249,7 @@ flowchart LR
         AR_1025["AR-1025 - Planned"]:::status_planned
         AR_1026["AR-1026 - Planned"]:::status_planned
         AR_1027["AR-1027 - Planned"]:::status_planned
-        AR_1028["AR-1028 - Open"]:::status_open
+        AR_1028["AR-1028 - In progress"]:::status_in_progress
         AR_1029["AR-1029 - Planned"]:::status_planned
         AR_1030["AR-1030 - In progress"]:::status_in_progress
     end
@@ -1091,14 +1091,15 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1022](tasks/AR-1022-asb-tui-release-contract-hardening.md): Harden the asb-tui release lifecycle contract | codex-ar1022-lifecycle-20260910 | Turn the tested unverified asb-tui lifecycle boundary into a release-safe delegated contract. | Monitor PR 10 exact-head CI at f406af260db8da12356906aaf12d3d75b235e5c3, obtain independent exact-diff review, repair any finding, and record merge plus exact-main post-merge evidence. |
 | P0 | [AR-1030](tasks/AR-1030-ratatui-dependency-closure.md): Resolve the Ratatui dependency closure | codex-ar1030-ratatui-policy-20260910 | Make the maintained Ratatui release consumable by standalone asb-tui without hiding supply-chain exceptions. | Resolve the exact Ratatui release dependency closure through a reviewed upstream feature or narrowly justified fail-closed policy decision. |
+| P1 | [AR-1028](tasks/AR-1028-asb-cli-workflow-captures.md): Generate ASB CLI workflow captures | codex-ar1028-cli-captures-20260910 | Produce reproducible ASB CLI transcripts separately from standalone TUI screenshots. | Generate deterministic privacy-safe ASB CLI workflow captures without importing terminal UI dependencies. |
 
-### Open (6)
+### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1107,7 +1108,6 @@ flowchart LR
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Unclaimed | Qualify pinned OpenJiuwen live execution. | Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI. |
 | P1 | [AR-0908](tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | Unclaimed | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Hold PR #125 unchanged; shared formal asset and native-runner pin owners must repair their gates before a fresh exact-head run. |
 | P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | Unclaimed | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Hold PR127 unmerged; AR-0877 must repair formal acquisition and platform owner must repair hosted distro evidence, then rerun exact-head CI unchanged. |
-| P1 | [AR-1028](tasks/AR-1028-asb-cli-workflow-captures.md): Generate ASB CLI workflow captures | Unclaimed | Produce reproducible ASB CLI transcripts separately from standalone TUI screenshots. | Generate deterministic privacy-safe ASB CLI workflow captures without importing terminal UI dependencies. |
 
 ### Blocked (5)
 
