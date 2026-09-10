@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-11T01:36:08+00:00",
   "depends_on": [],
   "id": "AR-1039",
-  "next_action": "Immutable independent review of PR #133 exact head 607a3afb/tree b45e1a6; if approved, merge only with a genuine multiline matching Signed-off-by trailer and verify post-merge main.",
+  "next_action": "Independently review draft PR #134 exact head 4a7eb724c601ab8fb2a6dd4552f54726ad3a0dd9 and tree 141362f96bd29c2694c5049d9d2010211fbaac99; require all hosted checks green and do not merge.",
   "observed_branch": "docs/measurement-catalog-merge-attestation",
   "observed_dirty": 0,
   "observed_head": "607a3afb3a44b87f9c60b6ae3bc764570e84d5fe",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover the measurement catalog publication boundary without rewriting protected main.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Attest the measurement catalog merge boundary",
-  "updated_at": "2026-09-10T23:50:55+00:00",
+  "updated_at": "2026-09-10T23:51:41+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-merge-attestation"
 }
 ---
@@ -233,3 +233,26 @@ the corrective merge commit uses an actual multiline DCO trailer. This AR owns n
 
 - 2026-09-10T23:50:55+00:00: Recorded command exit 0; command argv SHA-256
   87b6499a6b89ef7490589d69c4bca8f4163a8cfb02be8128248647fe83322a91.
+
+- 2026-09-10T23:51:41+00:00: Second-recovery implementation published as draft PR #134 from isolated
+  branch docs/measurement-catalog-second-recovery at signed+DCO commit
+  4a7eb724c601ab8fb2a6dd4552f54726ad3a0dd9, tree 141362f96bd29c2694c5049d9d2010211fbaac99, exact
+  base a01f7f21f5be07dda7f18185724122c56dff1bb7. Four-file scope only: bounded JSON attestation,
+  private Rust validator/negatives, and two documentation files; no product/UI semantics. Evidence
+  binds PR #133 reviewed head 607a3afb/tree b45e1a6 and merge a01f7f2, including valid GitHub
+  signature, exact tree equality, raw trailer Signed-off-by: Martin Beck <martin.beck2@gmx.de>,
+  actual merge author martin-beck <martin.beck2@gmx.de>, and truthful non-DCO classification. Future
+  GitHub merge recipe is mechanically bound to exact case-sensitive Signed-off-by: martin-beck
+  <martin.beck2@gmx.de>; local implementation identity remains Martin Beck. Green locally: focused
+  attestation 2/2; fmt; Clippy all targets -D warnings; serial workspace tests; rustdoc -D warnings;
+  release; cargo-deny/audit; contract consistency; actionlint/zizmor/gitleaks; controlled failure
+  paths; artifact/platform suites; coverage; repository policy; signature/DCO; diff/clean tree.
+  cargo-deny emitted only existing unused-license warnings. Recorded exit 1 at 23:41 was
+  rustfmt-only drift, fixed/rerun green; 23:44 contract command failed environmentally because PATH
+  assignment was not exported to Python, corrected export and exact rerun green; 23:48 commit
+  attempt made no mutation due coordinator LOCK_TIMEOUT, exact retry succeeded. Coverage generated
+  exactly twelve crates/asb-cli/default_*.profraw files due pending AR-1038 bug; removed only those
+  artifacts under governance and confirmed clean. Initial PR body quoting allowed shell backtick
+  substitution and created a mangled body; corrected with safe single-quoted gh edit and live PR
+  JSON now proves real newlines and exact trailer. Hosted checks are running; do not merge before
+  independent immutable-head review and exact-head green.
