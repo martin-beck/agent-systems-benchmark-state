@@ -7,16 +7,16 @@
     "AR-1017"
   ],
   "id": "AR-1030",
-  "next_action": "Resolve the exact Ratatui release dependency closure through a reviewed upstream feature or narrowly justified fail-closed policy decision.",
+  "next_action": "Commit and publish the reviewed exact Ratatui closure after clean rerun; obtain independent review before unblocking AR-1010.",
   "owner": "codex-ar1030-ratatui-policy-20260910",
   "plan": "../plans/AR-1030.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the maintained Ratatui release consumable by standalone asb-tui without hiding supply-chain exceptions.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Resolve the Ratatui dependency closure",
-  "updated_at": "2026-09-10T20:05:25+00:00",
+  "updated_at": "2026-09-10T20:07:07+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-dependency-closure"
 }
 ---
@@ -93,3 +93,12 @@ and syn 2/3. Resolve this visibly before AR-1010 adds a renderer.
 
 - 2026-09-10T20:05:25+00:00: Recorded command exit 1; command argv SHA-256
   bed7f39bec24d3d132648ce1448054b4b56843a0527b20a39162460bcc176cfd.
+
+- 2026-09-10T20:07:07+00:00: Classified the 2026-09-10 20:05 UTC exit-1 records: both were
+  environment-only follow-up invocations where generate-rust-sbom.py could not execute cargo because
+  the handoffctl non-login shell lacked the Rust toolchain on PATH. The dependency-policy test body
+  did not execute and no product/policy assertion failed. The immediately preceding comprehensive
+  gate exited 0, including full tests, exact-feature anti-widening tests, cargo deny globally and
+  for x86_64/AArch64, cargo audit over 93 packages, builds, cross-checks, schema/workflow checks,
+  and gitleaks. Rerunning focused checks with the explicit repository-local Rust 1.93 toolchain
+  path.
