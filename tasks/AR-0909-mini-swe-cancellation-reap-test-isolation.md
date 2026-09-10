@@ -13,17 +13,17 @@
   "id": "AR-0909",
   "next_action": "Repair created-root binding against the canonical fd-anchored entry, rerun native and AArch64/QEMU focused/full gates, then prepare signed successor; do not merge.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
-  "observed_dirty": 1,
-  "observed_head": "502a0e66ffdfe1aec85f5802b53f7c30c189b304",
+  "observed_dirty": 0,
+  "observed_head": "236e007e2e2c387bc206c68637810f5318c85dea",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0909.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 109,
+  "task_revision": 110,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T05:28:59+00:00",
+  "updated_at": "2026-09-10T05:29:05+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
