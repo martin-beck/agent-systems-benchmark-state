@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T04:39:23+00:00",
+  "updated_at": "2026-09-10T04:41:36+00:00",
   "worktree_key": "agent-systems-benchmark-tui-ratatui-crossterm-foundation"
 }
 ---
@@ -148,3 +148,6 @@ Implementation has not started. Read the linked plan before claiming.
   RUSTSEC-2024-0436; cargo audit additionally rejects lru 0.12.5 RUSTSEC-2026-0253 and
   RUSTSEC-2026-0002. These are candidate-introduced dependency findings, not runner/shared-harness
   failures. Candidate remains clean/unpublished; no policy weakening performed.
+
+- 2026-09-10T04:41:36+00:00: Recorded command exit 101; command argv SHA-256
+  73f5e3c8c9a763394b3bbc411a0128c7acaca536e96138023cd7fbfffcb32867.
