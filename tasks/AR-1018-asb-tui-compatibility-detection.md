@@ -2,7 +2,7 @@
 {
   "branch": "feature/asb-tui-compatibility-detection",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T16:48:01+00:00",
+  "claim_expires": "2026-09-10T17:08:27+00:00",
   "depends_on": [
     "AR-1017"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Detect whether an asb-tui bundle is compatible before installation or launch.",
-  "task_revision": 123,
+  "task_revision": 124,
   "title": "Add asb-tui compatibility and terminal capability detection",
-  "updated_at": "2026-09-10T14:07:25+00:00",
+  "updated_at": "2026-09-10T14:08:27+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-compatibility-detection"
 }
 ---
@@ -423,3 +423,5 @@ fixtures for mismatches, privacy-safe diagnostics, and no host identifiers in pu
   (7 library, 1 main, 3 capability, 9 compatibility, 2 doctor, 2 isolation, 1 metadata, 5
   release-discovery, 6 system-probe, and 4 workflow-policy), not 39. All other recorded candidate
   identities and gate conclusions are unchanged.
+
+- 2026-09-10T14:08:27+00:00: Heartbeat by contracts_20260906.
