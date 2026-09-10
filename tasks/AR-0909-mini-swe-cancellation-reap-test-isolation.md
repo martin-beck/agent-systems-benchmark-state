@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 155,
+  "task_revision": 156,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T06:23:34+00:00",
+  "updated_at": "2026-09-10T06:25:50+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -604,3 +604,6 @@ classified.
   acquisition-owned. PR127 stays open and unmerged. A subsequent read-only grep exited 2 only
   because workflow paths were queried from the state repo; it made no mutation and is not a product
   failure.
+
+- 2026-09-10T06:25:50+00:00: Recorded command exit 0; command argv SHA-256
+  48ecb4f46de891cbc7fcd994933f1b61e38c5e0a256ae0eabf68a336077ebd12.
