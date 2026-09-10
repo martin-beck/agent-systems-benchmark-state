@@ -18,11 +18,11 @@
   "plan": "../plans/AR-0906.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Make deterministic formal source builds verify OCI image identity portably across Docker engines.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Verify formal OCI build identity portably",
-  "updated_at": "2026-09-09T16:22:44+00:00",
+  "updated_at": "2026-09-10T16:43:18+00:00",
   "worktree_key": "agent-systems-benchmark-formal-oci-image-identity"
 }
 ---
@@ -183,3 +183,9 @@ instead of assuming an engine's local configuration ID equals the registry manif
   because rolling ubuntu-24.04 reports 24.04.5 while immutable qualification requires exact 24.04.4.
   Preserve PRs #120/#121/#122 and f385fb27 unchanged; route conditional hosted portability versus
   native qualification to AR-0907.
+
+- 2026-09-10T16:43:18+00:00: Resume for coordinator-owned integration recovery. Existing clean
+  integration candidate f385fb2 combines the exact AR-0906 OCI identity repair and AR-0877 TLA
+  acquisition repair. Independently reviewed AR-0907 head f0b7b46 supplies the hosted runner
+  classification that AR-0906 requires. Build one combined candidate and require the complete
+  exact-head gate set before any merge; preserve the original PRs until proven.
