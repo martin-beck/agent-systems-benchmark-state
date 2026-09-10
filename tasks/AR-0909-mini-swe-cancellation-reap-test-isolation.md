@@ -13,7 +13,7 @@
   "id": "AR-0909",
   "next_action": "Replace invalid host-/bin/sh assumption with a reviewed architecture-neutral process fixture or amend cross-emulation evidence contract; preserve real group oracle. Do not rerun unchanged head or merge.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "d82b5123f9d9adf8dd24ab499ff97e0036e31f84",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0909.md",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 236,
+  "task_revision": 237,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T07:51:24+00:00",
+  "updated_at": "2026-09-10T07:51:30+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
