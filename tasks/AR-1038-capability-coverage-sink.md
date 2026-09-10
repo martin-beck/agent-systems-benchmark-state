@@ -7,7 +7,7 @@
     "AR-1023"
   ],
   "id": "AR-1038",
-  "next_action": "Independently review immutable PR #132 exact head 6e467bbde40c31bd817d215483ba496e2ecc5df5 tree d94c93a4458866a3c39b722536881787b97ed5cf; require exact-head CI terminal green and approval; do not merge.",
+  "next_action": "Independently review immutable PR #132 exact head 51e18c62287816c7877925234ba37c0eb043f023 tree e35af4ee18030bead6b165aa561345f712a4ed34; wait for all 12 replacement exact-head checks terminal green; do not merge before approval.",
   "observed_branch": "test/capability-coverage-sink",
   "observed_dirty": 0,
   "observed_head": "51e18c62287816c7877925234ba37c0eb043f023",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent sanitized capability child tests from writing default profraw files into the source checkout.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Preserve coverage sinks in sanitized CLI child tests",
-  "updated_at": "2026-09-10T23:18:45+00:00",
+  "updated_at": "2026-09-10T23:19:23+00:00",
   "worktree_key": "agent-systems-benchmark-capability-coverage-sink"
 }
 ---
@@ -127,3 +127,14 @@ Fix the six `default_*.profraw` files discovered during AR-1013 full coverage wi
 
 - 2026-09-10T23:18:45+00:00: Recorded command exit 0; command argv SHA-256
   fbc5262f0a32d6002cbe7a2f72989c02904a38dae701a9582f0e84b01ff969ac.
+
+- 2026-09-10T23:19:23+00:00: PR #132 advanced by normal signed+DCO merge of current main, without
+  force: exact remote head 51e18c62287816c7877925234ba37c0eb043f023, tree
+  e35af4ee18030bead6b165aa561345f712a4ed34, GitHub base 0c65159d70ee728e21c7936663a90bea49ab0366.
+  The initial exact-head Platform Evidence failure was correctly classified as source identity not
+  immutable because main advanced after branch creation and the workflow base was no longer an
+  ancestor; merging current main repaired ancestry and the replacement Platform Evidence check
+  passed. Scope diff against current base remains only capability_contract.rs. Exact-head fmt,
+  workspace clippy, focused 9/9, full workspace tests, rustdoc, contract consistency, repository
+  policy and full serial coverage pass; protocol lines 96.44%, replay lines 97.64%, zero checkout
+  default profiles. Live replacement CI currently 9/12 success and 3 running.
