@@ -7,7 +7,7 @@
     "AR-1017"
   ],
   "id": "AR-1018",
-  "next_action": "Publish approved d268a938, open focused PR, and require all exact-head checks before merge.",
+  "next_action": "Monitor PR 2 exact d268a938 hosted checks; do not merge before coordinator verification.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Detect whether an asb-tui bundle is compatible before installation or launch.",
-  "task_revision": 171,
+  "task_revision": 172,
   "title": "Add asb-tui compatibility and terminal capability detection",
-  "updated_at": "2026-09-10T14:57:51+00:00",
+  "updated_at": "2026-09-10T14:58:19+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-compatibility-detection"
 }
 ---
@@ -588,3 +588,9 @@ fixtures for mismatches, privacy-safe diagnostics, and no host identifiers in pu
 
 - 2026-09-10T14:57:51+00:00: Recorded command exit 0; command argv SHA-256
   7548395819dc874d9b158777274c43fd95d1e3d11de3f03489b9215a2d0240f7.
+
+- 2026-09-10T14:58:19+00:00: Published approved immutable head
+  d268a938446c26e9ef40c97db7460373997c9e03 normally to feature/asb-tui-compatibility-detection and
+  opened focused sanitized PR https://github.com/martin-beck/asb-tui/pull/2 against main. GitHub
+  reports exact head OID d268a938 and hosted Rust, supply-chain, and privacy gates in progress. No
+  force push or merge occurred.
