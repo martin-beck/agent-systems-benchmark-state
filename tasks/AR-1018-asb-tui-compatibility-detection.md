@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Detect whether an asb-tui bundle is compatible before installation or launch.",
-  "task_revision": 184,
+  "task_revision": 185,
   "title": "Add asb-tui compatibility and terminal capability detection",
-  "updated_at": "2026-09-10T15:09:49+00:00",
+  "updated_at": "2026-09-10T15:10:13+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-compatibility-detection"
 }
 ---
@@ -652,3 +652,6 @@ fixtures for mismatches, privacy-safe diagnostics, and no host identifiers in pu
   empty SSH-signed exact-DCO attestation and pushed under an absent-ref exact lease. A stale
   overlapping coordinator was stopped after its unguarded concurrent merge/settings mutation; no
   private process or host details are recorded. Public history remains intact.
+
+- 2026-09-10T15:10:13+00:00: Recorded command exit 0; command argv SHA-256
+  83e07d065cfbd30bda8b6e4d1e3af2f1d598ba85266f6a5667979d92db3e191c.
