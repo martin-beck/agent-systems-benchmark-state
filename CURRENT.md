@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1017](tasks/AR-1017-asb-tui-separate-repository.md): Create the standalone asb-tui extension repository | Build asb-tui as an isolated optional repository and extension. | Add a focused signed+DCO successor that runs full exact-main validation on the trusted self-hosted label for main push/manual only, while keeping all pull-request code exclusively GitHub-hosted; independently rerun all pre-publication gates before publication. | contracts_20260906 |
+| P1 | [AR-1017](tasks/AR-1017-asb-tui-separate-repository.md): Create the standalone asb-tui extension repository | Build asb-tui as an isolated optional repository and extension. | Await independent immutable review of 963ccb0/tree ef9c1c96; no remote or publication exists. Publish only after coordinator approval. | contracts_20260906 |
 
 ## Open
 

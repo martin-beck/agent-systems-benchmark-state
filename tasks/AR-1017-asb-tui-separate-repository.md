@@ -11,7 +11,7 @@
     "AR-0851"
   ],
   "id": "AR-1017",
-  "next_action": "Add a focused signed+DCO successor that runs full exact-main validation on the trusted self-hosted label for main push/manual only, while keeping all pull-request code exclusively GitHub-hosted; independently rerun all pre-publication gates before publication.",
+  "next_action": "Await independent immutable review of 963ccb0/tree ef9c1c96; no remote or publication exists. Publish only after coordinator approval.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Build asb-tui as an isolated optional repository and extension.",
-  "task_revision": 112,
+  "task_revision": 113,
   "title": "Create the standalone asb-tui extension repository",
-  "updated_at": "2026-09-10T11:35:26+00:00",
+  "updated_at": "2026-09-10T11:35:58+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-separate-repository"
 }
 ---
@@ -429,3 +429,20 @@ metadata, and tests proving the main benchmark runs independently when the TUI i
 
 - 2026-09-10T11:35:26+00:00: Recorded command exit 0; command argv SHA-256
   69f6d482ffd51a1dc1b28c737c6c857a93f107dcf190b822d15cfdddb8ef3cd1.
+
+- 2026-09-10T11:35:58+00:00: Trusted-main repair successor complete:
+  963ccb0fd1062acac0a52ef64a76040c774cb350/tree ef9c1c966d60ccd05bfdb207eb4db4a28bb7d01b, exact
+  parent c6749880a16082c9d3ab3fe892d3e6083540f1ce, clean exact six-path diff, no remote. SSH
+  signature and exact DCO pass. The new persistent-runner workflow has only main push/manual
+  triggers, repository/ref/event guards before checkout, SHA-pinned checkout without persisted
+  credentials, exact checkout plus live origin/main equality, exact privacy-safe label, full
+  Rust/supply/coverage/schema/provenance/shell/workflow/Gitleaks/privacy gates, and no PR or secrets
+  context. Hostile executable tests reject PR, fork repository, feature ref, malformed SHA, stale
+  checkout and stale remote main; hosted PR workflow remains ubuntu-24.04 only. All 17 Rust tests
+  pass; coverage remains 92.57% lines/90.16% regions; fmt, Clippy, rustdoc, release, deny, audit,
+  exact dependency authentication, 16+2 asb-core isolation, checksum-pinned
+  ShellCheck/shfmt/actionlint/Zizmor zero findings, Gitleaks and privacy scans pass. Four transient
+  LLVM profiles from the earlier pre-current-dir run were removed by exact path. The first final
+  privacy run found only its own literal detector strings; equivalent split regexes removed the
+  self-match and the rerun passed. A temporary state-recording blocker from expired AR-1010 was
+  resolved at coordinator state 00526d2b before final evidence/commit.
