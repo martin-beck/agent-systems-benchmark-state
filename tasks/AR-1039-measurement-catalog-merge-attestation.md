@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover the measurement catalog publication boundary without rewriting protected main.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Attest the measurement catalog merge boundary",
-  "updated_at": "2026-09-10T23:23:14+00:00",
+  "updated_at": "2026-09-10T23:23:26+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-merge-attestation"
 }
 ---
@@ -81,3 +81,6 @@ the corrective merge commit uses an actual multiline DCO trailer. This AR owns n
   development-only formatting/test-compile failures corrected before commit; two later cleanup
   attempts failed before mutation because the wrapper path/cwd was invalid and were rerun correctly.
   Removed exactly six generated .profraw files after coverage; worktree is clean.
+
+- 2026-09-10T23:23:26+00:00: Recorded command exit 0; command argv SHA-256
+  cd161c100b0251ab280a5ee85b7d480aa4cbf8c97f807a12c50d0430d792eb48.
