@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Hold PR #127 for terminal exact-head 4e35710 CI; investigate candidate-owned failures only. Do not merge; formal/platform dependency failures remain separately owned.",
+  "next_action": "Widen only bounded cancellation-test readiness and teardown budgets for loaded hosted emulation, rerun native/QEMU stress and full gates, then request immutable review. Do not merge PR #127.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "4e35710ad90a5c421af9bb4a008a1caa08fcff59",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 144,
+  "task_revision": 145,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T06:04:50+00:00",
+  "updated_at": "2026-09-10T06:10:52+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -553,3 +553,10 @@ classified.
   emulated-AArch64 34443621614 in progress; formal 34443621601 in progress; fault 34443621588 in
   progress; native 34443621606 in progress; quality 34443622506 in progress; Rust 34443621921 in
   progress; AWQ 34443621593 in progress; headers 34443621710 success. No merge or rerun.
+
+- 2026-09-10T06:10:52+00:00: Terminal exact-head emulated-AArch64 run 34443621614 on 4e35710 failed
+  138 passed/1 failed, but the prior directory-binding error is gone. The sole cancellation test
+  reached startup and panicked at mini_swe.rs:2169 with helper readiness timed out after its fixed
+  two-second test-only deadline. This is a candidate test-timing defect under loaded emulation, not
+  evidence of a surviving descendant. Native platform now passes; formal remains AR-0877-owned.
+  PR127 remains open and must not merge.
