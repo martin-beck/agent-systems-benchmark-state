@@ -13,7 +13,7 @@
   "id": "AR-1024",
   "next_action": "Add signed synthetic channel/bundle and filesystem/delegation adversarial tests, incorporate the pending asb-tui controlling-TTY and foldhash-Zlib contract revision, then harden docs/schema and run focused clippy/tests.",
   "observed_branch": "feature/asb-tui-lifecycle-router",
-  "observed_dirty": 6,
+  "observed_dirty": 7,
   "observed_head": "32df706413a6f165f086941426a5c793bd5e01e8",
   "owner": "codex-ar1024-router-20260910",
   "plan": "../plans/AR-1024.md",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Implement `asb tui` lifecycle routing",
-  "updated_at": "2026-09-10T21:09:37+00:00",
+  "updated_at": "2026-09-10T21:09:45+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-lifecycle-router"
 }
 ---
