@@ -9,6 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md): Adopt Ratatui/Crossterm TUI foundation | Adopt Ratatui and Crossterm as the supported professional TUI foundation. | Complete immutable-head review of asb-tui PR 9 at 10df38759371a4f6addb78dcfd970b65b3c90be5; repair any blocking finding, otherwise mark ready and merge through the protected reviewed PR path, then verify exact tree, signature, DCO, and post-merge gates. | codex-ar1010-asb-tui-renderer-20260910 |
 | P0 | [AR-1024](tasks/AR-1024-asb-tui-lifecycle-router.md): Implement `asb tui` lifecycle routing | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | Add signed-channel and resumable/truncation/concurrency negatives, validate copied schemas/docs, run clippy and full relevant gates, then commit for independent review after exact AR-1010 contract integration. | codex-ar1024-router-20260910 |
+| P1 | [AR-1013](tasks/AR-1013-measurement-catalog-semantics.md): Version the measurement catalog and semantic groups | Define selectable ASB measurements grouped by stable semantic meaning. | Define and review the versioned measurement catalog and semantic grouping contract before implementation. | codex-ar1013-measurement-catalog-20260910 |
 
 ## Open
 
@@ -19,7 +20,6 @@ Never edit this file directly.
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Qualify pinned OpenJiuwen live execution. | Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI. | - |
 | P1 | [AR-0908](tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Hold PR #125 unchanged; shared formal asset and native-runner pin owners must repair their gates before a fresh exact-head run. | - |
 | P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Hold PR127 unmerged; AR-0877 must repair formal acquisition and platform owner must repair hosted distro evidence, then rerun exact-head CI unchanged. | - |
-| P1 | [AR-1013](tasks/AR-1013-measurement-catalog-semantics.md): Version the measurement catalog and semantic groups | Define selectable ASB measurements grouped by stable semantic meaning. | Define and review the versioned measurement catalog and semantic grouping contract before implementation. | - |
 
 ## Blocked
 

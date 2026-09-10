@@ -2,7 +2,7 @@
 {
   "branch": "feature/measurement-catalog-semantics",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-11T00:44:21+00:00",
   "depends_on": [
     "AR-0101",
     "AR-1001"
@@ -12,15 +12,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "codex-ar1013-measurement-catalog-20260910",
   "plan": "../plans/AR-1013.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Define selectable ASB measurements grouped by stable semantic meaning.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Version the measurement catalog and semantic groups",
-  "updated_at": "2026-09-10T21:43:33+00:00",
+  "updated_at": "2026-09-10T21:44:21+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-semantics"
 }
 ---
@@ -41,3 +41,5 @@ duplicate, unit-mismatch, unavailable, and privacy-sensitive metrics.
 
 - 2026-09-10T21:43:33+00:00: AR-0101 and AR-1001 verified done; baseline catalog explicitly excludes
   optional AR-0602 qualification and all UI ownership
+
+- 2026-09-10T21:44:21+00:00: Claimed by codex-ar1013-measurement-catalog-20260910.
