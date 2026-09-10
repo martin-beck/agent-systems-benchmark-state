@@ -2,7 +2,7 @@
 {
   "branch": "test/capability-coverage-sink",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-11T00:59:58+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1023"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "test/capability-coverage-sink",
   "observed_dirty": 0,
   "observed_head": "b65cb4b5e9a9d6d75de967ff4673506218c62b45",
-  "owner": "codex-ar1038-coverage-20260911",
+  "owner": "",
   "plan": "../plans/AR-1038.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Prevent sanitized capability child tests from writing default profraw files into the source checkout.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Preserve coverage sinks in sanitized CLI child tests",
-  "updated_at": "2026-09-10T23:29:27+00:00",
+  "updated_at": "2026-09-10T23:29:38+00:00",
   "worktree_key": "agent-systems-benchmark-capability-coverage-sink"
 }
 ---
@@ -187,3 +187,8 @@ Fix the six `default_*.profraw` files discovered during AR-1013 full coverage wi
   state commit 2237ecac to permit exact cargo-llvm-cov absolute sinks beneath ignored workspace
   target as well as validated external roots, while retaining source-path, root-default, traversal
   and symlink rejection. No merge or production/UI/TUI change was made.
+
+- 2026-09-10T23:29:38+00:00: Implementation is frozen at PR #132 exact head
+  b65cb4b5e9a9d6d75de967ff4673506218c62b45 tree ed1c1847687f5a73216169af242ad2c71d234dad with all 12
+  checks terminal green. Await independent immutable review and coordinated protected merge; no
+  self-merge.
