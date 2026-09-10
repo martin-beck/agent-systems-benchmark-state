@@ -2,7 +2,7 @@
 {
   "branch": "fix/control-state-lock-test-isolation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-10T11:27:52+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -14,15 +14,15 @@
   "observed_branch": "fix/control-state-lock-test-isolation",
   "observed_dirty": 0,
   "observed_head": "8b0f9fd07d5dfbedd83376c1380ab225dfba1213",
-  "owner": "",
+  "owner": "replay_20260906",
   "plan": "../plans/AR-0908.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Harden asb-cli control-state lock test isolation and deterministic reopen coverage.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Harden control-state lock test isolation",
-  "updated_at": "2026-09-09T22:42:02+00:00",
+  "updated_at": "2026-09-10T08:27:52+00:00",
   "worktree_key": "agent-systems-benchmark-control-state-lock-test-isolation"
 }
 ---
@@ -191,3 +191,5 @@ non-deterministic isolation signal rather than claiming a production lock defect
 - 2026-09-09T22:42:02+00:00: Recovered expired claim formerly owned by contracts_20260906. Expired
   AR-0908 lease recovered after terminal PR #125 review; preserve approved 8b0f9fd and exact
   test-only scope, require fresh claim before mutation.
+
+- 2026-09-10T08:27:52+00:00: Claimed by replay_20260906.
