@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 96,
+  "task_revision": 97,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T19:50:00+00:00",
+  "updated_at": "2026-09-10T20:23:48+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -346,3 +346,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-10T19:50:00+00:00: Added AR-1030 as an explicit prerequisite for the unresolved Ratatui
   release dependency closure. Draft PR 9 remains a non-rendering checkpoint and cannot complete
   this AR until AR-1030 is reviewed and integrated.
+
+- 2026-09-10T20:23:48+00:00: AR-1030 is durably done at verified asb-tui main with the exact Ratatui
+  closure; resume standalone renderer work only in asb-tui.
