@@ -2,22 +2,22 @@
 {
   "branch": "docs/measurement-catalog-merge-attestation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-11T01:33:45+00:00",
   "depends_on": [],
   "id": "AR-1039",
   "next_action": "Immutable independent review of PR #133 exact head 607a3afb/tree b45e1a6; if approved, merge only with a genuine multiline matching Signed-off-by trailer and verify post-merge main.",
   "observed_branch": "docs/measurement-catalog-merge-attestation",
   "observed_dirty": 0,
   "observed_head": "607a3afb3a44b87f9c60b6ae3bc764570e84d5fe",
-  "owner": "",
+  "owner": "codex-ar1039-integration-20260911",
   "plan": "../plans/AR-1039.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Recover the measurement catalog publication boundary without rewriting protected main.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Attest the measurement catalog merge boundary",
-  "updated_at": "2026-09-10T23:29:44+00:00",
+  "updated_at": "2026-09-10T23:33:45+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-merge-attestation"
 }
 ---
@@ -126,3 +126,5 @@ the corrective merge commit uses an actual multiline DCO trailer. This AR owns n
   607a3afb/tree b45e1a6 with 12/12 hosted checks green. Released OPEN for immutable independent
   review. No merge performed; eventual corrective merge must use a genuinely multiline matching
   Signed-off-by trailer and post-merge verification.
+
+- 2026-09-10T23:33:45+00:00: Claimed by codex-ar1039-integration-20260911.
