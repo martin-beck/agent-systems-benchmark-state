@@ -9,6 +9,7 @@
     "AR-0805",
     "AR-0806",
     "AR-0812",
+    "AR-1011",
     "AR-1026"
   ],
   "id": "AR-0807",
@@ -19,9 +20,9 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Qualify the standalone TUI across terminals and platforms without perturbing benchmark results.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Qualify terminal frontend usability and isolation",
-  "updated_at": "2026-09-10T19:20:00+00:00",
+  "updated_at": "2026-09-10T21:04:37+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-resilience-accessibility"
 }
 ---
@@ -39,3 +40,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-10T19:20:00+00:00: Assigned all terminal UX, application resilience, accessibility, and
   renderer qualification work to the standalone asb-tui repository.
+
+- 2026-09-10T21:04:37+00:00: Ordered this independent qualification after AR-1011's integrated
+  usability pass so the audit targets the complete standalone application rather than partial
+  screens.

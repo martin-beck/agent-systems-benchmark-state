@@ -3,7 +3,7 @@
   "branch": "feature/tui-configuration-center",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1025", "AR-1033"],
+  "depends_on": ["AR-1014", "AR-1025", "AR-1033"],
   "id": "AR-1034",
   "next_action": "Implement the standalone configuration menu and versioned non-secret preference store after the visual system exists.",
   "owner": "",
@@ -12,11 +12,14 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Add a searchable configuration menu for frontend preferences and benchmark defaults.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Add the standalone TUI configuration center",
-  "updated_at": "2026-09-10T20:57:16+00:00",
+  "updated_at": "2026-09-10T21:04:37+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-configuration-center"
 }
 ---
 Implement the configuration UI and non-secret preference persistence in `martin-beck/asb-tui`.
 ASB remains the authority for runner configuration, validation and benchmark execution.
+
+- 2026-09-10T21:04:37+00:00: Excluded runner configuration mutation and required reuse of
+  AR-1014's canonical validated measurement-selection plan for stored presets.
