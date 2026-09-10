@@ -11,7 +11,7 @@
     "AR-0851"
   ],
   "id": "AR-1017",
-  "next_action": "Implement and independently gate the assurance tests and public-repository baseline; publish only the reviewed immutable signed head, then verify visibility, settings, protections, and exact-head CI.",
+  "next_action": "Complete privacy, provenance, exact-scope and full pre-publication gates; create one SSH-signed DCO successor for immutable review. Do not publish yet.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Build asb-tui as an isolated optional repository and extension.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Create the standalone asb-tui extension repository",
-  "updated_at": "2026-09-10T11:01:03+00:00",
+  "updated_at": "2026-09-10T11:01:48+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-separate-repository"
 }
 ---
@@ -255,3 +255,17 @@ metadata, and tests proving the main benchmark runs independently when the TUI i
 
 - 2026-09-10T11:01:03+00:00: Recorded command exit 0; command argv SHA-256
   8e234fc8d5598419c3ca804e9f43198a7f3284926f017193931224b0cd3d2278.
+
+- 2026-09-10T11:01:48+00:00: Substantive implementation checkpoint: standalone crate now has strict
+  serde deny_unknown_fields capability parsing with
+  wrong/missing/unknown/duplicate/trailing/type/version negatives; 12 Rust tests pass. Authenticated
+  release verification binds the pinned signer fingerprint, detached lock signature, signed
+  annotated tag objects, commits and trees; unsigned, substituted-signer, mutable-tag and
+  tampered-identity cases fail closed, and the exact coordinator v0.3.5/AWQ v0.23.0 local tag check
+  passes. Executable isolation proof confirms asb-core dependency tree excludes standalone asb-tui
+  and 16 unit plus 2 doctests pass. SPDX inventory is Cargo.lock-closed; MIT/security/contribution
+  docs, pinned checkout Action, hosted quality/Gitleaks and checkout-free manual exact-label runner
+  canary are prepared. One combined gate exited after tests because sanitized PATH omitted
+  actionlint; absolute pinned actionlint rerun passed. cargo-deny initially rejected all licenses
+  because deny.toml was absent; explicit narrow OSI license/source policy fixed it and cargo-deny
+  plus cargo-audit now pass. An accidental wrapped env-only diagnostic had no product effect.
