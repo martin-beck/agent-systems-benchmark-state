@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Detect whether an asb-tui bundle is compatible before installation or launch.",
-  "task_revision": 180,
+  "task_revision": 181,
   "title": "Add asb-tui compatibility and terminal capability detection",
-  "updated_at": "2026-09-10T15:06:53+00:00",
+  "updated_at": "2026-09-10T15:07:25+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-compatibility-detection"
 }
 ---
@@ -638,3 +638,6 @@ fixtures for mismatches, privacy-safe diagnostics, and no host identifiers in pu
   quality 34493198580 and Trusted main verification 34493198554 are green. Preserve history; propose
   one SSH-signed exact-DCO empty corrective attestation successor on add8df6, only after coordinator
   authorization.
+
+- 2026-09-10T15:07:25+00:00: Recorded command exit 0; command argv SHA-256
+  528b9eb648da7b7e2c57151a3cd9b76e7ea2ceaa0a5fe773d06ddbe494e52f79.
