@@ -13,17 +13,17 @@
   "id": "AR-0909",
   "next_action": "Repair hosted-emulation base-directory binding without weakening O_DIRECTORY/O_NOFOLLOW, repository overlap, owner/mode, entry identity, or cleanup checks; rerun native/QEMU focused and full gates. Do not merge PR #127.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
-  "observed_dirty": 1,
-  "observed_head": "fb26f3d2023d43f689f0743d3713470d0edf6096",
+  "observed_dirty": 0,
+  "observed_head": "4e35710ad90a5c421af9bb4a008a1caa08fcff59",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0909.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 139,
+  "task_revision": 140,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T06:02:38+00:00",
+  "updated_at": "2026-09-10T06:02:46+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
