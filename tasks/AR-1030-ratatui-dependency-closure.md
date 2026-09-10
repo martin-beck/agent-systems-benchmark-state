@@ -7,16 +7,16 @@
     "AR-1017"
   ],
   "id": "AR-1030",
-  "next_action": "Wait for exact-head PR #11 CI; after green, reconcile the nonblocking AR-1022 classification wording during rebase/merge ordering, then merge and unblock AR-1010.",
+  "next_action": "Integrate draft PR #11 at exact reviewed head c0dfdd3114741f9415a124f4d4995dac354b4260 after reconciling AR-1022 classification wording, then unblock Ratatui renderer work in AR-1010.",
   "owner": "codex-ar1030-ratatui-policy-20260910",
   "plan": "../plans/AR-1030.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the maintained Ratatui release consumable by standalone asb-tui without hiding supply-chain exceptions.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Resolve the Ratatui dependency closure",
-  "updated_at": "2026-09-10T20:11:30+00:00",
+  "updated_at": "2026-09-10T20:12:07+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-dependency-closure"
 }
 ---
@@ -135,3 +135,9 @@ and syn 2/3. Resolve this visibly before AR-1010 adds a renderer.
 
 - 2026-09-10T20:11:30+00:00: Recorded command exit 0; command argv SHA-256
   c65936e210c5941a778180c3316170034f45ed2c0afa90a074f5ff05f5db2675.
+
+- 2026-09-10T20:12:07+00:00: Live exact-head CI is green: Repository quality / Rust, supply-chain,
+  and privacy gates passed in GitHub Actions run 34524715305 job 103030678680 at
+  c0dfdd3114741f9415a124f4d4995dac354b4260. Independent review has no blocking finding. Draft PR #11
+  remains open and unmerged as assigned; branch/worktree are clean and generated Python cache is
+  absent.
