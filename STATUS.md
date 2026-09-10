@@ -1036,7 +1036,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1018](tasks/AR-1018-asb-tui-compatibility-detection.md): Add asb-tui compatibility and terminal capability detection | contracts_20260906 | Detect whether an asb-tui bundle is compatible before installation or launch. | Monitor PR 2 exact d268a938 hosted checks; do not merge before coordinator verification. |
+| P1 | [AR-1018](tasks/AR-1018-asb-tui-compatibility-detection.md): Add asb-tui compatibility and terminal capability detection | contracts_20260906 | Detect whether an asb-tui bundle is compatible before installation or launch. | Await coordinator final diff/protection review of all-green PR 2 exact d268a938; do not merge. |
 
 ### Open (8)
 
