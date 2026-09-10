@@ -2,7 +2,7 @@
 {
   "branch": "fix/formal-tla-artifact-availability",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-10T19:05:08+00:00",
   "depends_on": [
     "AR-0003",
     "AR-0906",
@@ -14,15 +14,15 @@
   "observed_branch": "fix/formal-tla-artifact-availability",
   "observed_dirty": 0,
   "observed_head": "49ae13f7116cfa7a353bf0d8939517c5a306ffd0",
-  "owner": "",
+  "owner": "asb_tui_coordinator_20260910",
   "plan": "../plans/AR-0877.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 122,
+  "task_revision": 123,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-09T18:18:40+00:00",
+  "updated_at": "2026-09-10T17:05:08+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -447,3 +447,5 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-09T18:18:40+00:00: Recovered expired claim formerly owned by contracts_20260906. Expired
   AR-0877 lease recovered so unrelated AR-0859 checkpoint can be recorded; preserve bridge and PR
   heads.
+
+- 2026-09-10T17:05:08+00:00: Claimed by asb_tui_coordinator_20260910.
