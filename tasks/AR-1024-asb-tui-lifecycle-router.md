@@ -2,7 +2,7 @@
 {
   "branch": "feature/asb-tui-lifecycle-router",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-10T22:31:26+00:00",
   "depends_on": [
     "AR-0820",
     "AR-0821",
@@ -12,15 +12,15 @@
   ],
   "id": "AR-1024",
   "next_action": "Implement trusted release discovery, acquisition and typed `asb tui` lifecycle routing after the hardened lifecycle and capability contracts merge.",
-  "owner": "",
+  "owner": "codex-ar1024-router-20260910",
   "plan": "../plans/AR-1024.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Implement `asb tui` lifecycle routing",
-  "updated_at": "2026-09-10T20:31:20+00:00",
+  "updated_at": "2026-09-10T20:31:26+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-lifecycle-router"
 }
 ---
@@ -35,3 +35,5 @@ complete gates, exact-head CI and post-merge verification.
 
 - 2026-09-10T20:31:20+00:00: AR-1022 and AR-1023 are durably done; begin the trusted ASB-side
   lifecycle router without renderer or UI ownership.
+
+- 2026-09-10T20:31:26+00:00: Claimed by codex-ar1024-router-20260910.
