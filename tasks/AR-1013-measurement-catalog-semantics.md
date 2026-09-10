@@ -8,7 +8,7 @@
     "AR-1001"
   ],
   "id": "AR-1013",
-  "next_action": "Define and review the versioned measurement catalog and semantic grouping contract before implementation.",
+  "next_action": "Publish clean exact head 6d0c991 for immutable independent schema/provenance review; do not merge before approval and exact-head CI.",
   "observed_branch": "feature/measurement-catalog-semantics",
   "observed_dirty": 0,
   "observed_head": "6d0c9916e18f31fa9428bdc9fa1d794611027d9d",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define selectable ASB measurements grouped by stable semantic meaning.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Version the measurement catalog and semantic groups",
-  "updated_at": "2026-09-10T22:32:17+00:00",
+  "updated_at": "2026-09-10T22:32:34+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-semantics"
 }
 ---
@@ -199,3 +199,13 @@ duplicate, unit-mismatch, unavailable, and privacy-sensitive metrics.
 
 - 2026-09-10T22:32:17+00:00: Recorded command exit 0; command argv SHA-256
   857ccad3fa17f8807799db0e1d904aac9a4892c1be53b9964a77b3662bc00b9f.
+
+- 2026-09-10T22:32:34+00:00: Implemented ASB-only measurement catalog v1 at clean head 6d0c991:
+  exactly 25 selectable portable procfs/cgroup metrics in two nonempty groups with
+  ID/unit/aggregation/scope/source parity; mandatory usage/cost, latency/outcomes,
+  analysis/scoring/economics/fairness and provenance are documented non-selectable outputs. Added
+  versioned schema, content digest, bounded maximal/empty/negative fixtures and contract registry.
+  Exact-head fmt, clippy workspace, workspace tests, rustdoc, deny, audit, repository policy and
+  contract consistency pass. Coverage passed serially: workspace 94.47%, asb-protocol 97.08%; first
+  concurrent coverage run hit known process-test ETXTBSY/reap races, then serial rerun passed. No
+  UI/render/terminal code changed.
