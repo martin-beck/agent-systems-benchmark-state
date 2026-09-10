@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the maintained Ratatui release consumable by standalone asb-tui without hiding supply-chain exceptions.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Resolve the Ratatui dependency closure",
-  "updated_at": "2026-09-10T19:56:12+00:00",
+  "updated_at": "2026-09-10T19:56:50+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-dependency-closure"
 }
 ---
@@ -54,3 +54,6 @@ and syn 2/3. Resolve this visibly before AR-1010 adds a renderer.
 
 - 2026-09-10T19:56:12+00:00: Recorded command exit 0; command argv SHA-256
   913e1e1a99f1a1f0601e06b33726299a3fb54fd4c3be66f8cb5b36d654161349.
+
+- 2026-09-10T19:56:50+00:00: Recorded command exit 1; command argv SHA-256
+  5d8fa64d1b08568dbf52607648ff129ed525244547b1fcb1c5fdbd5497ee211a.
