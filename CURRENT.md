@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P2 | [AR-1021](tasks/AR-1021-asb-tui-release-promotion.md): Audit and promote the asb-tui release channel | Audit and promote asb-tui from optional extension to verified release when eligible. | Independently audit the extension and document its optional/unverified or verified release channel. | asb_tui_coordinator_20260910 |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -13,7 +19,6 @@ Never edit this file directly.
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Qualify pinned OpenJiuwen live execution. | Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI. | - |
 | P1 | [AR-0908](tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Hold PR #125 unchanged; shared formal asset and native-runner pin owners must repair their gates before a fresh exact-head run. | - |
 | P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Hold PR127 unmerged; AR-0877 must repair formal acquisition and platform owner must repair hosted distro evidence, then rerun exact-head CI unchanged. | - |
-| P2 | [AR-1021](tasks/AR-1021-asb-tui-release-promotion.md): Audit and promote the asb-tui release channel | Audit and promote asb-tui from optional extension to verified release when eligible. | Independently audit the extension and document its optional/unverified or verified release channel. | - |
 
 ## Blocked
 

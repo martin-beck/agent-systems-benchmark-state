@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**185 ARs tracked** across 5 active status categories.
+**185 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 7 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 6 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 46 |
 | **Future** | Deferred roadmap work | 1 |
@@ -242,7 +242,7 @@ flowchart LR
         AR_1018["AR-1018 - Done"]:::status_done
         AR_1019["AR-1019 - Done"]:::status_done
         AR_1020["AR-1020 - Done"]:::status_done
-        AR_1021["AR-1021 - Open"]:::status_open
+        AR_1021["AR-1021 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1032,7 +1032,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (7)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P2 | [AR-1021](tasks/AR-1021-asb-tui-release-promotion.md): Audit and promote the asb-tui release channel | asb_tui_coordinator_20260910 | Audit and promote asb-tui from optional extension to verified release when eligible. | Independently audit the extension and document its optional/unverified or verified release channel. |
+
+### Open (6)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1042,7 +1048,6 @@ flowchart LR
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Unclaimed | Qualify pinned OpenJiuwen live execution. | Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI. |
 | P1 | [AR-0908](tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | Unclaimed | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Hold PR #125 unchanged; shared formal asset and native-runner pin owners must repair their gates before a fresh exact-head run. |
 | P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | Unclaimed | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Hold PR127 unmerged; AR-0877 must repair formal acquisition and platform owner must repair hosted distro evidence, then rerun exact-head CI unchanged. |
-| P2 | [AR-1021](tasks/AR-1021-asb-tui-release-promotion.md): Audit and promote the asb-tui release channel | Unclaimed | Audit and promote asb-tui from optional extension to verified release when eligible. | Independently audit the extension and document its optional/unverified or verified release channel. |
 
 ### Blocked (5)
 
