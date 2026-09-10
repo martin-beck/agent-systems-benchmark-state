@@ -8,7 +8,7 @@
     "AR-1001"
   ],
   "id": "AR-1013",
-  "next_action": "Publish clean exact head 6d0c991 for immutable independent schema/provenance review; do not merge before approval and exact-head CI.",
+  "next_action": "Independently review immutable PR #131 head 6d0c991/tree 3e4620f, require all 12 exact-head checks terminal green, and do not merge before approval.",
   "observed_branch": "feature/measurement-catalog-semantics",
   "observed_dirty": 0,
   "observed_head": "6d0c9916e18f31fa9428bdc9fa1d794611027d9d",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define selectable ASB measurements grouped by stable semantic meaning.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Version the measurement catalog and semantic groups",
-  "updated_at": "2026-09-10T22:33:07+00:00",
+  "updated_at": "2026-09-10T22:33:53+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-semantics"
 }
 ---
@@ -215,3 +215,18 @@ duplicate, unit-mismatch, unavailable, and privacy-sensitive metrics.
 
 - 2026-09-10T22:33:07+00:00: Recorded command exit 0; command argv SHA-256
   ad589e9659f90dba21af2abfb1e2d54f8e55da5e4329bf1390ca4a449bdc79de.
+
+- 2026-09-10T22:33:53+00:00: Published PR #131 at exact clean remote head
+  6d0c9916e18f31fa9428bdc9fa1d794611027d9d and tree 3e4620f672dd727efbbbda8026c457c34ff9ca14, base
+  58d0da27736d6c22ca7c43f76ade497165b29919. Commits 4adc92b, 65f02c6 and 6d0c991 are locally
+  SSH-signed with exact matching DCO. Exact-head fmt, clippy -D warnings, full workspace tests,
+  rustdoc, deny, audit, repository policy, contract consistency and serial coverage pass; coverage
+  is workspace 94.47% and asb-protocol 97.08%. Initial failures are classified: default-PATH cargo
+  exit127 was environment setup; heredoc/patch context/JS encoding failures made no product
+  mutation; cargo example-name typo and fmt drift were corrected; compile/test exit101 instances
+  exposed missing derives/imports/test assumptions and were repaired; source-parity prefix assertion
+  used cgroup-v2 instead of authoritative cgroup2 and was repaired; coordinator post-command lock
+  timeouts followed successful tests and later wrapper runs reconciled; first concurrent coverage
+  run hit unrelated asb-agents ETXTBSY/reap races, while RUST_TEST_THREADS=1 rerun passed all
+  coverage thresholds. No renderer, Ratatui, Crossterm, terminal lifecycle, widgets, navigation,
+  selection interaction or frontend state was added.

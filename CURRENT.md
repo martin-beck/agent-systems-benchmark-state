@@ -9,7 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md): Adopt Ratatui/Crossterm TUI foundation | Adopt Ratatui and Crossterm as the supported professional TUI foundation. | Independently review immutable asb-tui PR 9 head 41c61bdef7e0ae7d5dd3c9c7c0056d5d364b9965 and tree 3515148c613079afee0a1cafbf19b1a2af795ad5, wait for exact-head hosted CI, and repair any blocking finding before readiness; do not merge without approval. | codex-ar1010-asb-tui-renderer-20260910 |
 | P0 | [AR-1024](tasks/AR-1024-asb-tui-lifecycle-router.md): Implement `asb tui` lifecycle routing | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | Await immutable reviewed AR-1010 successor, repin exact contract, rerun cross-repo PTY and full exact-head gates, then publish for independent review. | codex-ar1024-router-20260910 |
-| P1 | [AR-1013](tasks/AR-1013-measurement-catalog-semantics.md): Version the measurement catalog and semantic groups | Define selectable ASB measurements grouped by stable semantic meaning. | Publish clean exact head 6d0c991 for immutable independent schema/provenance review; do not merge before approval and exact-head CI. | codex-ar1013-measurement-catalog-20260910 |
+| P1 | [AR-1013](tasks/AR-1013-measurement-catalog-semantics.md): Version the measurement catalog and semantic groups | Define selectable ASB measurements grouped by stable semantic meaning. | Independently review immutable PR #131 head 6d0c991/tree 3e4620f, require all 12 exact-head checks terminal green, and do not merge before approval. | codex-ar1013-measurement-catalog-20260910 |
 
 ## Open
 
