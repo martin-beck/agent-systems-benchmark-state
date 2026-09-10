@@ -2,7 +2,7 @@
 {
   "branch": "feature/tui-ratatui-crossterm-foundation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T06:28:12+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0803",
     "AR-0804",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/tui-ratatui-crossterm-foundation",
   "observed_dirty": 0,
   "observed_head": "2754623be3503589b24cbb84341dfcf65ccb8911",
-  "owner": "replay_20260906",
+  "owner": "",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T04:53:23+00:00",
+  "updated_at": "2026-09-10T06:29:41+00:00",
   "worktree_key": "agent-systems-benchmark-tui-ratatui-crossterm-foundation"
 }
 ---
@@ -190,3 +190,7 @@ Implementation has not started. Read the linked plan before claiming.
   unknown-git policy. Concrete safe next step is an upstream Ratatui/Kasuari change exposing a
   policy-compatible hasher feature followed by immutable releases. Product remains clean at 2754623;
   no mutation justified.
+
+- 2026-09-10T06:29:41+00:00: Recovered expired claim formerly owned by replay_20260906. Coordinator
+  recovery: expired replay lease blocks all state publication; preserve signed candidate and reopen
+  task for explicit reassignment.

@@ -7,7 +7,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md): Adopt Ratatui/Crossterm TUI foundation | Adopt Ratatui and Crossterm as the supported professional TUI foundation. | Upstream Ratatui and Kasuari must ship a selectable non-Zlib hasher closure; then pin that maintained release and rerun deny/audit. | replay_20260906 |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Qualify pinned OpenJiuwen live execution. | Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI. | contracts_20260906 |
 | P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Diagnose hosted QEMU child-start/readiness-file semantics and make the cancellation oracle observe startup without relying on emulated execution of a generated shell script. Do not increase timeout blindly or merge PR #127. | quality_20260906 |
 
@@ -16,6 +15,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0897](tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Monitor PR 126 exact-head CI; investigate terminal failures without changing bd6f450. | - |
+| P0 | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md): Adopt Ratatui/Crossterm TUI foundation | Adopt Ratatui and Crossterm as the supported professional TUI foundation. | Upstream Ratatui and Kasuari must ship a selectable non-Zlib hasher closure; then pin that maintained release and rerun deny/audit. | - |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | Repair/rebase the fail-closed TLA provenance pin, then rerun PR #119 exact-head CI; do not merge. | - |
 | P1 | [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md): Repair formal TLA artifact availability | Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification. | Hold local bridge 49ae13f and PR #120. AR-0906 is blocked on active AR-0907 hosted-evidence classification; after AR-0907 and AR-0906 integrate, rebase once, range-diff, rerun full gates, then exact-lease update PR #120. | - |
 | P1 | [AR-0907](tasks/AR-0907-hosted-runner-evidence-classification.md): Classify hosted runner evidence without weakening native qualification | Separate rolling hosted portability checks from immutable native qualification evidence. | Monitor fresh PR #123 exact-head CI at f0b7b46; do not merge until all required checks pass. | - |
