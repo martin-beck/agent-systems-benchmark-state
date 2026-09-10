@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Build asb-tui as an isolated optional repository and extension.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Create the standalone asb-tui extension repository",
-  "updated_at": "2026-09-10T09:05:32+00:00",
+  "updated_at": "2026-09-10T09:05:42+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-separate-repository"
 }
 ---
@@ -115,3 +115,6 @@ metadata, and tests proving the main benchmark runs independently when the TUI i
   binds wheel 9d480cab, provenance a2ba5f30, SBOM 840e85a1, sdist 69b1c9c4; structural/source
   verification passes. AWQ is dependency-free Python >=3.12 MIT, LICENSE sha256 20647d25.... Both
   releases are acceptable with the explicit coordinator provenance limitation.
+
+- 2026-09-10T09:05:42+00:00: Recorded command exit 1; command argv SHA-256
+  274f9b56c94523cd52878e961dcc6ed51292b1d2f8dbccda8f40b542ada1b749.
