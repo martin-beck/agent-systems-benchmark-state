@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover the measurement catalog publication boundary without rewriting protected main.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Attest the measurement catalog merge boundary",
-  "updated_at": "2026-09-10T23:35:08+00:00",
+  "updated_at": "2026-09-10T23:35:51+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-merge-attestation"
 }
 ---
@@ -143,3 +143,7 @@ the corrective merge commit uses an actual multiline DCO trailer. This AR owns n
 
 - 2026-09-10T23:35:08+00:00: Recorded command exit 0; command argv SHA-256
   bd56bc2260e6bb9dee394690b9b5fec19417796049b4f13e6dfc300c80fe6308.
+
+- 2026-09-10T23:35:51+00:00: Corrective merge a01f7f2 is GitHub-signed and has exact reviewed tree,
+  but post-merge policy rejects trailer name Martin Beck because GitHub authored it as martin-beck.
+  Preserve both commits; extend attestation and merge recipe using exact GitHub author identity.
