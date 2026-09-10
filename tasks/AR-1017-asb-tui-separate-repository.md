@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Build asb-tui as an isolated optional repository and extension.",
-  "task_revision": 152,
+  "task_revision": 153,
   "title": "Create the standalone asb-tui extension repository",
-  "updated_at": "2026-09-10T11:57:10+00:00",
+  "updated_at": "2026-09-10T11:58:41+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-separate-repository"
 }
 ---
@@ -580,3 +580,6 @@ metadata, and tests proving the main benchmark runs independently when the TUI i
   doctests), diff/privacy/scope gates passed. One isolation invocation exited 127 solely from
   omitted Cargo PATH; corrected exact invocation passed. Ready for independent immutable review; no
   remote or publication.
+
+- 2026-09-10T11:58:41+00:00: Recorded command exit 0; command argv SHA-256
+  892ded1136e1abef92424cd46a901d56e1efb3439304b2e2fcb260a3e2673c7b.
