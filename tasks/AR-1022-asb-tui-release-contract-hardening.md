@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Turn the tested unverified asb-tui lifecycle boundary into a release-safe delegated contract.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Harden the asb-tui release lifecycle contract",
-  "updated_at": "2026-09-10T19:40:33+00:00",
+  "updated_at": "2026-09-10T19:40:43+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-release-contract-hardening"
 }
 ---
@@ -94,3 +94,6 @@ and filesystem tests, complete local gates, independent review, exact-head CI an
 
 - 2026-09-10T19:40:33+00:00: Recorded command exit 0; command argv SHA-256
   0a3cb09fcc4269379326bd7ad243e1c6d3093c1b7715eee7ab2ada5aa5a26020.
+
+- 2026-09-10T19:40:43+00:00: Recorded command exit 0; command argv SHA-256
+  0727ab62751f97ac3f8005e4337de58183d93dade158ff996213ea3f424b966a.
