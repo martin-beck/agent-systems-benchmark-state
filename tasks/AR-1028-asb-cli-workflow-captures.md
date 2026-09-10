@@ -9,7 +9,7 @@
   "id": "AR-1028",
   "next_action": "Push signed commit, open PR, obtain independent review, and require terminal green exact-head CI.",
   "observed_branch": "docs/asb-cli-workflow-captures-attestation",
-  "observed_dirty": 0,
+  "observed_dirty": 3,
   "observed_head": "b2763fb548e1057e4ea36912515706406098eb63",
   "owner": "codex-ar1028-cli-captures-20260910",
   "plan": "../plans/AR-1028.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Produce reproducible ASB CLI transcripts separately from standalone TUI screenshots.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Generate ASB CLI workflow captures",
-  "updated_at": "2026-09-10T20:40:08+00:00",
+  "updated_at": "2026-09-10T20:40:16+00:00",
   "worktree_key": "agent-systems-benchmark-asb-cli-workflow-captures"
 }
 ---

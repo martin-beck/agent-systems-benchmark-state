@@ -25,7 +25,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar0878-integration` | `DETACHED` | `0fbec95d2154` | 0 | behind 67, ahead 0 |
 | `agent-systems-benchmark-ar0880-integration` | `integration/ar0880-b7559931` | `2a85872285e6` | 0 | behind 49, ahead 0 |
 | `agent-systems-benchmark-ar0906-merge-dco` | `repair/ar0906-merge-dco` | `66ca27afc2fb` | 0 | behind 3, ahead 0 |
-| `agent-systems-benchmark-asb-cli-workflow-captures` | `docs/asb-cli-workflow-captures-attestation` | `b2763fb548e1` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-asb-cli-workflow-captures` | `docs/asb-cli-workflow-captures-attestation` | `b2763fb548e1` | 3 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-cli/tests/workflow_transcript.rs`, `docs/DEVELOPMENT.md`, `docs/examples/asb-cli-workflow-v1.merge-attestation.json` |
 | `agent-systems-benchmark-asb-tui-capabilities-command` | `feature/asb-tui-capabilities-command` | `d60d23510044` | 0 | behind 2, ahead 0 |
 | `agent-systems-benchmark-asb-tui-lifecycle-router` | `feature/asb-tui-lifecycle-router` | `32df706413a6` | 2 | behind 1, ahead 0 |
 | changed files | - | - | - | `crates/asb-cli/Cargo.toml`, `crates/asb-cli/src/lib.rs` |
