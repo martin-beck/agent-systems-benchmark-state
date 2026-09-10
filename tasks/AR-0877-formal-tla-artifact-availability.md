@@ -2,7 +2,7 @@
 {
   "branch": "fix/formal-tla-artifact-availability",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T19:05:08+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003",
     "AR-0906",
@@ -14,15 +14,15 @@
   "observed_branch": "fix/formal-tla-artifact-availability",
   "observed_dirty": 0,
   "observed_head": "49ae13f7116cfa7a353bf0d8939517c5a306ffd0",
-  "owner": "asb_tui_coordinator_20260910",
+  "owner": "",
   "plan": "../plans/AR-0877.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification.",
-  "task_revision": 124,
+  "task_revision": 125,
   "title": "Repair formal TLA artifact availability",
-  "updated_at": "2026-09-10T17:05:19+00:00",
+  "updated_at": "2026-09-10T17:05:47+00:00",
   "worktree_key": "agent-systems-benchmark-formal-tla-artifact-availability"
 }
 ---
@@ -452,3 +452,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-10T17:05:19+00:00: Recorded command exit 1; command argv SHA-256
   fc02c45d42273b14f1b3561b76427eab98a9435348db9eb29f1b92f01d4d6396.
+
+- 2026-09-10T17:05:47+00:00: Completed through combined PR #122; GitHub marks focused PR #120 merged
+  because its exact commits are reachable from main. The combined exact-head formal job passed TLC
+  positive, deliberate stale mutation, Alloy checks, authenticated TLA acquisition, cache/offline
+  faults, and source-tree cleanliness. Signed+DCO verification base 66ca27a has all seven exact-main
+  workflows green. This proves availability and byte identity for the pinned TLA tool only, not
+  unbounded model correctness or general offline portability.

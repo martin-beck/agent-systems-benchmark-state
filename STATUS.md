@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**185 ARs tracked** across 6 active status categories.
+**185 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 7 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 47 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 124 |
+| **Done** | Accepted, integrated, and durably verified | 125 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -192,7 +192,7 @@ flowchart LR
         AR_0874["AR-0874 - Planned"]:::status_planned
         AR_0875["AR-0875 - Done"]:::status_done
         AR_0876["AR-0876 - Done"]:::status_done
-        AR_0877["AR-0877 - In progress"]:::status_in_progress
+        AR_0877["AR-0877 - Done"]:::status_done
         AR_0878["AR-0878 - Done"]:::status_done
         AR_0879["AR-0879 - Done"]:::status_done
         AR_0880["AR-0880 - Done"]:::status_done
@@ -1032,12 +1032,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md): Repair formal TLA artifact availability | asb_tui_coordinator_20260910 | Repair the formal workflow&#x27;s unavailable TLA+ artifact pin without weakening provenance or offline verification. | Hold local bridge 49ae13f and PR #120. AR-0906 is blocked on active AR-0907 hosted-evidence classification; after AR-0907 and AR-0906 integrate, rebase once, range-diff, rerun full gates, then exact-lease update PR #120. |
-
 ### Open (7)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -1118,7 +1112,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (124)
+### Done (125)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1213,6 +1207,7 @@ flowchart LR
 | P1 | [AR-0871](tasks/AR-0871-record-replay-user-workflows.md): Deliver record and replay user workflows | Unclaimed | Make recording and strict replay complete, explicit, privacy-safe user workflows in both CLI and TUI. | Deliver executable CLI and TUI journeys for recording LLM responses and replaying an exact compatible cassette. |
 | P1 | [AR-0875](tasks/AR-0875-control-history-analysis-contract.md): Extend control history and analysis protocol | Unclaimed | Extend frontend history and analysis contracts with bounded provenance, integrity, outcome, compatibility, and confounder evidence. | After AR-0806 completes, define the versioned history and analysis protocol extension before serialized CLI backend integration. |
 | P1 | [AR-0876](tasks/AR-0876-provider-aware-agent-launch.md): Wire provider-aware agent launches | Unclaimed | Apply validated provider selections at the authoritative agent launch boundary and reject conflicting runtime configuration. | Create signed+DCO follow-up parented bc071fd, force-with-lease origin/main 32562e8, rerun exact-main postmerge workflows. |
+| P1 | [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md): Repair formal TLA artifact availability | Unclaimed | Repair the formal workflow&#x27;s unavailable TLA+ artifact pin without weakening provenance or offline verification. | Hold local bridge 49ae13f and PR #120. AR-0906 is blocked on active AR-0907 hosted-evidence classification; after AR-0907 and AR-0906 integrate, rebase once, range-diff, rerun full gates, then exact-lease update PR #120. |
 | P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | Unclaimed | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Release AR-0878 done after final state reconcile, snapshot, and live doctor; exact-main product verification is complete. |
 | P1 | [AR-0879](tasks/AR-0879-local-llm-testing-recommendations.md): Plan deterministic LLM doubles and local inference | Unclaimed | Research deterministic LLM test doubles and local inference options, document ASB recommendations, and create implementation-ready follow-up ARs. | Obtain independent exact-head review of green product PR 107 at bda6cc8a and state PR 16 at 9de11a52; state global schema remains pre-existingly blocked only by active AR-0878 next_action length. |
 | P1 | [AR-0880](tasks/AR-0880-openjiuwen-runtime-closure.md): Repair OpenJiuwen runtime closure | Unclaimed | Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification. | Durable release and exact-main verification are complete; no further AR-0880 action. AR-0859 owns live loopback qualification. |

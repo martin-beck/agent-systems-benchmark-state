@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md): Repair formal TLA artifact availability | Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification. | Hold local bridge 49ae13f and PR #120. AR-0906 is blocked on active AR-0907 hosted-evidence classification; after AR-0907 and AR-0906 integrate, rebase once, range-diff, rerun full gates, then exact-lease update PR #120. | asb_tui_coordinator_20260910 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -184,6 +178,7 @@ Never edit this file directly.
 | P1 | [AR-0871](tasks/AR-0871-record-replay-user-workflows.md): Deliver record and replay user workflows | Make recording and strict replay complete, explicit, privacy-safe user workflows in both CLI and TUI. | Deliver executable CLI and TUI journeys for recording LLM responses and replaying an exact compatible cassette. | - |
 | P1 | [AR-0875](tasks/AR-0875-control-history-analysis-contract.md): Extend control history and analysis protocol | Extend frontend history and analysis contracts with bounded provenance, integrity, outcome, compatibility, and confounder evidence. | After AR-0806 completes, define the versioned history and analysis protocol extension before serialized CLI backend integration. | - |
 | P1 | [AR-0876](tasks/AR-0876-provider-aware-agent-launch.md): Wire provider-aware agent launches | Apply validated provider selections at the authoritative agent launch boundary and reject conflicting runtime configuration. | Create signed+DCO follow-up parented bc071fd, force-with-lease origin/main 32562e8, rerun exact-main postmerge workflows. | - |
+| P1 | [AR-0877](tasks/AR-0877-formal-tla-artifact-availability.md): Repair formal TLA artifact availability | Repair the formal workflow's unavailable TLA+ artifact pin without weakening provenance or offline verification. | Hold local bridge 49ae13f and PR #120. AR-0906 is blocked on active AR-0907 hosted-evidence classification; after AR-0907 and AR-0906 integrate, rebase once, range-diff, rerun full gates, then exact-lease update PR #120. | - |
 | P1 | [AR-0878](tasks/AR-0878-tla-source-build-provenance.md): Qualify immutable TLA tool provenance | Qualify immutable TLA+ tool provenance through an authoritative publication or deterministic source build. | Release AR-0878 done after final state reconcile, snapshot, and live doctor; exact-main product verification is complete. | - |
 | P1 | [AR-0879](tasks/AR-0879-local-llm-testing-recommendations.md): Plan deterministic LLM doubles and local inference | Research deterministic LLM test doubles and local inference options, document ASB recommendations, and create implementation-ready follow-up ARs. | Obtain independent exact-head review of green product PR 107 at bda6cc8a and state PR 16 at 9de11a52; state global schema remains pre-existingly blocked only by active AR-0878 next_action length. | - |
 | P1 | [AR-0880](tasks/AR-0880-openjiuwen-runtime-closure.md): Repair OpenJiuwen runtime closure | Repair the incomplete pinned OpenJiuwen Python runtime closure required by live qualification. | Durable release and exact-main verification are complete; no further AR-0880 action. AR-0859 owns live loopback qualification. | - |
