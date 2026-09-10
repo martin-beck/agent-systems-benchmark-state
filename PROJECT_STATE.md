@@ -15,21 +15,22 @@ Generated from local Git and GitHub. Do not edit.
 | #125 | `fix/control-state-lock-test-isolation@8b0f9fd07d5d` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(cli): isolate control state roots |
 | #126 | `fix/main-merge-integrity@bd6f450ab877` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | tools: harden signed merge publication |
 | #127 | `fix/mini-swe-cancellation-reap-test-isolation@c897313524a8` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(agents): harden mini-swe cancellation isolation |
-| #132 | `test/capability-coverage-sink@51e18c622878` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(cli): preserve external coverage sink |
+| #132 | `test/capability-coverage-sink@b65cb4b5e9a9` | `main` | CLEAN | - | test(cli): preserve external coverage sink |
+| #133 | `docs/measurement-catalog-merge-attestation@607a3afb3a44` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | docs: attest measurement catalog merge boundary |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34541354571 | `51e18c622878` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 34541354560 | `51e18c622878` | pull_request | Hosted portability and native qualification | completed:success |
-| 34541354559 | `51e18c622878` | pull_request | Formal assurance | completed:success |
-| 34541354551 | `51e18c622878` | pull_request | Fault assurance | completed:success |
-| 34541354547 | `51e18c622878` | pull_request | Huawei MIT source headers | completed:success |
-| 34541354537 | `51e18c622878` | pull_request | Repository quality | completed:failure |
-| 34541354533 | `51e18c622878` | pull_request | Rust verification | completed:success |
-| 34541354517 | `51e18c622878` | pull_request | Emulated aarch64 portability | completed:success |
-| 34541164133 | `6e467bbde40c` | pull_request | Formal assurance | completed:cancelled |
-| 34541164083 | `6e467bbde40c` | pull_request | Emulated aarch64 portability | completed:cancelled |
-| 34541164057 | `6e467bbde40c` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 34541164031 | `6e467bbde40c` | pull_request | Fault assurance | completed:cancelled |
+| 34541960377 | `b65cb4b5e9a9` | pull_request | Fault assurance | queued:- |
+| 34541960350 | `b65cb4b5e9a9` | pull_request | Formal assurance | queued:- |
+| 34541960330 | `b65cb4b5e9a9` | pull_request | Huawei MIT source headers | queued:- |
+| 34541960314 | `b65cb4b5e9a9` | pull_request | Agent Workflow Quality shadow | queued:- |
+| 34541960308 | `b65cb4b5e9a9` | pull_request | Repository quality | queued:- |
+| 34541960307 | `b65cb4b5e9a9` | pull_request | Emulated aarch64 portability | queued:- |
+| 34541960292 | `b65cb4b5e9a9` | pull_request | Hosted portability and native qualification | queued:- |
+| 34541960290 | `b65cb4b5e9a9` | pull_request | Rust verification | queued:- |
+| 34541957538 | `607a3afb3a44` | pull_request | Rust verification | queued:- |
+| 34541957536 | `607a3afb3a44` | pull_request | Hosted portability and native qualification | queued:- |
+| 34541957502 | `607a3afb3a44` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 34541957478 | `607a3afb3a44` | pull_request | Agent Workflow Quality shadow | in_progress:- |
