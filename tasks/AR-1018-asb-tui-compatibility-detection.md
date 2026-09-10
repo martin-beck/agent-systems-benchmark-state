@@ -7,7 +7,7 @@
     "AR-1017"
   ],
   "id": "AR-1018",
-  "next_action": "Implement platform, architecture, ASB-version, protocol, and terminal capability detection.",
+  "next_action": "Obtain independent immutable review of f5edd558; do not publish or mutate the candidate before approval.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Detect whether an asb-tui bundle is compatible before installation or launch.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Add asb-tui compatibility and terminal capability detection",
-  "updated_at": "2026-09-10T13:00:27+00:00",
+  "updated_at": "2026-09-10T13:01:03+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-compatibility-detection"
 }
 ---
@@ -121,3 +121,22 @@ fixtures for mismatches, privacy-safe diagnostics, and no host identifiers in pu
 
 - 2026-09-10T13:00:27+00:00: Recorded command exit 0; command argv SHA-256
   f83d1e654052d38912e7eef20bbbe8187a645d1788712022b66bd6cf25080f81.
+
+- 2026-09-10T13:01:03+00:00: Immutable AR-1018 candidate
+  f5edd5583f78ba333af7b29fee428c7d0b3fb8e1/tree b46502b9de37208f06b13c114a35dd3c0ff47131, exact
+  parent public main c2fcb7221db24c847ef81cde010735de15cb10f3, is SSH-signed with exact DCO and
+  clean 11-path scope. It adds closed probe/report schemas and deterministic stdin CLI evaluation
+  for normalized Linux distribution, x86_64/AArch64, installed ASB/protocol versions, exact
+  coordinator v0.3.5 and quality v0.23.0 commits, terminal
+  size/color/Unicode/resize/channel/SSH/tmux/screen facts, storage/filesystem/verifier requirements,
+  and compatible bundle selection. Fixed reason codes fail closed without input-controlled
+  diagnostics or host/path/credential fields. Positive, mismatch, malformed, oversized,
+  wrong-version/type, unsupported platform, boundary resize/channel, tooling/runtime exhaustive
+  negatives, context, schema, privacy, deterministic output, and executable exit tests pass. One
+  initial test failed because it incorrectly expected unsupported_distribution for a supported
+  Ubuntu token paired with Windows; implementation correctly returned inconsistent_platform, and the
+  fixture expectation was corrected. Full 27 tests, fmt, Clippy -D warnings, rustdoc -D warnings,
+  release build, cargo-deny, cargo-audit, JSON schemas, ShellCheck/shfmt, actionlint/Zizmor,
+  Gitleaks/privacy, ASB-core absence (16 tests plus 2 doctests), diff/scope, and clean llvm-cov
+  passed. Coverage is 90.42% lines and 88.01% regions; worktree is clean with no in-checkout
+  profiles.
