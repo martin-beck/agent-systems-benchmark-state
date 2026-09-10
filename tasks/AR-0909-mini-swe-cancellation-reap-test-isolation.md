@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 131,
+  "task_revision": 132,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T05:57:41+00:00",
+  "updated_at": "2026-09-10T05:58:20+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -505,3 +505,6 @@ classified.
   product tests in Collect bounded native evidence with observed distribution does not match exact
   pinned release; this is platform/environment identity, not the AR-0909 test-only diff. Formal
   34442740801 remains the separate AR-0877 acquisition boundary.
+
+- 2026-09-10T05:58:20+00:00: Recorded command exit 1; command argv SHA-256
+  797878dd074020e366d0d23814b427a8d2d37e85276cfdb89d581a0b9318a191.
