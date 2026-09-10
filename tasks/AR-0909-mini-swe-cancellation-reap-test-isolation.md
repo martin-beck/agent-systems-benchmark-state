@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Monitor PR #127 exact head a91cd04 CI; do not merge until every required check is green and coordinator authorizes.",
+  "next_action": "Diagnose PR #127 emulated-aarch64 run 34418686073 and TLC/Alloy job in run 34418686110; do not rerun or merge before classification.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "a91cd04d5f49aa4d311c53ab727c2dcb75b77913",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-09T23:51:05+00:00",
+  "updated_at": "2026-09-10T00:17:42+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -252,3 +252,9 @@ classified.
   b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b. GitHub reports the exact head/base; AWQ shadow and
   Huawei/MIT headers are success, while Rust, repository quality, native platform, emulated aarch64,
   fault/fuzz/mutation, and formal/Kani/Loom checks are in progress. No merge performed.
+
+- 2026-09-10T00:17:42+00:00: One exact-head query at a91cd04 found all 12 checks terminal: 10
+  succeeded; Emulated aarch64 portability run 34418686073 failed, and TLC and Alloy recovery models
+  job 102689149968 in Formal assurance run 34418686110 failed. Repository Quality, Rust, native
+  Ubuntu, AWQ, headers, fault, fuzz, mutation, Kani, and Loom succeeded. PR remains OPEN with
+  mergeStateStatus UNSTABLE; candidate unchanged.
