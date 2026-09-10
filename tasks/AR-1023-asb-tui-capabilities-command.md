@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish the ASB capability negotiation command required by the standalone frontend.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Add the ASB frontend capabilities command",
-  "updated_at": "2026-09-10T19:31:42+00:00",
+  "updated_at": "2026-09-10T19:32:02+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-capabilities-command"
 }
 ---
@@ -84,3 +84,6 @@ local gates, independent review, exact-head CI and post-merge verification.
 
 - 2026-09-10T19:31:42+00:00: Recorded command exit 1; command argv SHA-256
   0b90adb3c4f09e46ca9eaee396dfa79c30e5a52cbc7079422154a99a9f78d6bc.
+
+- 2026-09-10T19:32:02+00:00: Recorded command exit 0; command argv SHA-256
+  73137c665bbf77df98c23131203a4adeb9c6c14b236a5b81e8dd740b68dddac9.
