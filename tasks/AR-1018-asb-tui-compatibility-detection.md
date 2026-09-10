@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Detect whether an asb-tui bundle is compatible before installation or launch.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Add asb-tui compatibility and terminal capability detection",
-  "updated_at": "2026-09-10T13:01:03+00:00",
+  "updated_at": "2026-09-10T13:09:27+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-compatibility-detection"
 }
 ---
@@ -140,3 +140,6 @@ fixtures for mismatches, privacy-safe diagnostics, and no host identifiers in pu
   Gitleaks/privacy, ASB-core absence (16 tests plus 2 doctests), diff/scope, and clean llvm-cov
   passed. Coverage is 90.42% lines and 88.01% regions; worktree is clean with no in-checkout
   profiles.
+
+- 2026-09-10T13:09:27+00:00: Recorded command exit 0; command argv SHA-256
+  1b63e3a086eded049150930a3fa8b967acc421ae4f7cc14a275c2532cefaa6c6.
