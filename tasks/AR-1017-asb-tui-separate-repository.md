@@ -11,7 +11,7 @@
     "AR-0851"
   ],
   "id": "AR-1017",
-  "next_action": "Fix coverage child-process artifact isolation and make all final workflow clean-tree gates reject untracked files; rerun llvm-cov from a clean tree and independently verify zero profraw/untracked output before publication.",
+  "next_action": "Independently review immutable 0a726d4 and all pre-publication evidence; do not create a remote or publish before coordinator authorization.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Build asb-tui as an isolated optional repository and extension.",
-  "task_revision": 151,
+  "task_revision": 152,
   "title": "Create the standalone asb-tui extension repository",
-  "updated_at": "2026-09-10T11:56:02+00:00",
+  "updated_at": "2026-09-10T11:57:10+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-separate-repository"
 }
 ---
@@ -566,3 +566,17 @@ metadata, and tests proving the main benchmark runs independently when the TUI i
 
 - 2026-09-10T11:56:02+00:00: Recorded command exit 1; command argv SHA-256
   4c177b8b9fbe2a7ffb769f7a36b6f496bf64f81fff0c015c7be87832e1f41187.
+
+- 2026-09-10T11:57:10+00:00: Coverage repair successor 0a726d4ab3f939ab21811608e952b6fc1249c22c
+  (tree db1d64341d060d3b6f86dd868a11ea45a0899692, parent 28911d936b7bc4d70869f053bdf6f48aff4b6b94)
+  is SSH-signed and exact-DCO, clean three-path scope: tests/doctor.rs, tests/isolation.rs,
+  tests/support/mod.rs. Prior clean coverage at 28911d9 failed after 18/18 tests and left one
+  default profraw; cause was doctor.rs child inheriting checkout cwd after env_clear. Successor uses
+  shared collision-safe 0700 RAII temp cwd for every direct asb-tui child and asserts no checkout
+  profile and cleanup. Corrected clean-tree llvm-cov passed 18/18 with 92.57% line and 90.16% region
+  coverage; afterward git status porcelain empty and zero default profraw. Full fmt, Clippy -D
+  warnings, tests, rustdoc -D warnings, release, cargo-deny, cargo-audit, shell/workflow quality
+  including Zizmor, Gitleaks, JSON/provenance/SBOM, ASB-core absence proof (16 tests plus 2
+  doctests), diff/privacy/scope gates passed. One isolation invocation exited 127 solely from
+  omitted Cargo PATH; corrected exact invocation passed. Ready for independent immutable review; no
+  remote or publication.

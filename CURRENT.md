@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1017](tasks/AR-1017-asb-tui-separate-repository.md): Create the standalone asb-tui extension repository | Build asb-tui as an isolated optional repository and extension. | Fix coverage child-process artifact isolation and make all final workflow clean-tree gates reject untracked files; rerun llvm-cov from a clean tree and independently verify zero profraw/untracked output before publication. | contracts_20260906 |
+| P1 | [AR-1017](tasks/AR-1017-asb-tui-separate-repository.md): Create the standalone asb-tui extension repository | Build asb-tui as an isolated optional repository and extension. | Independently review immutable 0a726d4 and all pre-publication evidence; do not create a remote or publish before coordinator authorization. | contracts_20260906 |
 
 ## Open
 
