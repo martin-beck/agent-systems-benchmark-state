@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define selectable ASB measurements grouped by stable semantic meaning.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Version the measurement catalog and semantic groups",
-  "updated_at": "2026-09-10T22:40:35+00:00",
+  "updated_at": "2026-09-10T22:41:16+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-semantics"
 }
 ---
@@ -232,3 +232,6 @@ duplicate, unit-mismatch, unavailable, and privacy-sensitive metrics.
   selection interaction or frontend state was added.
 
 - 2026-09-10T22:40:35+00:00: Heartbeat by codex-ar1013-measurement-catalog-20260910.
+
+- 2026-09-10T22:41:16+00:00: Recorded command exit 0; command argv SHA-256
+  72034138b28290e41e0e251b820e9e4f731478e6e890f1152f770986dd6ebf67.
