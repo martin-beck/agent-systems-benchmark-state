@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 112,
+  "task_revision": 113,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T05:29:54+00:00",
+  "updated_at": "2026-09-10T05:30:19+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -419,3 +419,6 @@ classified.
   gates remain green. Five-commit aggregate remains one cfg(test) path, production prefix
   byte-identical, SSH-signed/DCO-valid and clean. PR127 remains at failing 502a0e6 pending review;
   formal 34440495620 remains separate AR-0877 acquisition failure.
+
+- 2026-09-10T05:30:19+00:00: Recorded command exit 0; command argv SHA-256
+  6d14898ae959542543d28c2a8b22054117b894c3f4971f8aeda19c02ce1af6e6.
