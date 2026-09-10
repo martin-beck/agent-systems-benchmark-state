@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Hold PR #127 for hosted emulated-AArch64 run 34441460132 and remaining exact-head checks; formal acquisition remains AR-0877-owned. Do not merge.",
+  "next_action": "Diagnose hosted emulated-AArch64-only PrivateTestRoot binding instability in cancellation test; repair descriptor identity portably, rerun focused native/QEMU and full gates, then request immutable review. Do not merge PR #127.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "236e007e2e2c387bc206c68637810f5318c85dea",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 115,
+  "task_revision": 116,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T05:32:49+00:00",
+  "updated_at": "2026-09-10T05:39:46+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -432,3 +432,11 @@ classified.
   emulated-AArch64 run 34441460132/job 102757187245 is in progress. Formal TLC/Alloy run
   34441460141/job 102757187372 failed at the separate AR-0877 acquisition boundary; AWQ and headers
   pass; other exact-head jobs remain in progress. PR is open and unmerged.
+
+- 2026-09-10T05:39:46+00:00: Terminal exact-head emulated-AArch64 run 34441460132 (job 102757187245)
+  failed: asb-agents had 138 passed/1 failed;
+  mini_swe::tests::cancellation_leaves_no_runnable_owned_descendant panicked while unwrapping
+  PrivateTestRoot::new with test-root directory binding changed. The prior direct private-root test
+  passed, so the rustix flag repair is effective but cancellation-root identity remains nonportable
+  under hosted emulation. Formal acquisition failure is separate AR-0877-owned provenance/tooling
+  and no formal paths will be changed.

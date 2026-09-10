@@ -991,7 +991,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md): Adopt Ratatui/Crossterm TUI foundation | replay_20260906 | Adopt Ratatui and Crossterm as the supported professional TUI foundation. | Upstream Ratatui and Kasuari must ship a selectable non-Zlib hasher closure; then pin that maintained release and rerun deny/audit. |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | contracts_20260906 | Qualify pinned OpenJiuwen live execution. | Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI. |
-| P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | quality_20260906 | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Hold PR #127 for hosted emulated-AArch64 run 34441460132 and remaining exact-head checks; formal acquisition remains AR-0877-owned. Do not merge. |
+| P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | quality_20260906 | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Diagnose hosted emulated-AArch64-only PrivateTestRoot binding instability in cancellation test; repair descriptor identity portably, rerun focused native/QEMU and full gates, then request immutable review. Do not merge PR #127. |
 
 ### Open (5)
 
