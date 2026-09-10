@@ -7,16 +7,16 @@
     "AR-1017"
   ],
   "id": "AR-1030",
-  "next_action": "Commit and publish the reviewed exact Ratatui closure after clean rerun; obtain independent review before unblocking AR-1010.",
+  "next_action": "Wait for exact-head PR #11 CI; after green, reconcile the nonblocking AR-1022 classification wording during rebase/merge ordering, then merge and unblock AR-1010.",
   "owner": "codex-ar1030-ratatui-policy-20260910",
   "plan": "../plans/AR-1030.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the maintained Ratatui release consumable by standalone asb-tui without hiding supply-chain exceptions.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Resolve the Ratatui dependency closure",
-  "updated_at": "2026-09-10T20:10:25+00:00",
+  "updated_at": "2026-09-10T20:11:12+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-dependency-closure"
 }
 ---
@@ -123,3 +123,12 @@ and syn 2/3. Resolve this visibly before AR-1010 adds a renderer.
 
 - 2026-09-10T20:10:25+00:00: Recorded command exit 0; command argv SHA-256
   af43793490abdc61430a231efc6d4b75713252962f75718a56248ca7e6ace6df.
+
+- 2026-09-10T20:11:12+00:00: Published signed+DCO checkpoint
+  c0dfdd3114741f9415a124f4d4995dac354b4260 on draft asb-tui PR #11. Live GitHub head, local HEAD,
+  and origin head match exactly; quality CI is in progress. Comprehensive local gates passed: full
+  test suite, clippy/docs/release build, cargo-deny globally/x86_64/AArch64, cargo-audit over 93
+  packages, x86_64/AArch64 cargo checks, deterministic SPDX/schema/workflow/privacy checks, and
+  clean-tree coverage at 90.55% lines. Independent review found the Zlib/duplicate exception narrow,
+  mechanically guarded, signed, and nonblocking; no blocking finding. Nonblocking merge-order note:
+  reconcile unverified_extension wording to source_only_unverified when integrating AR-1022.
