@@ -2,7 +2,7 @@
 {
   "branch": "fix/hosted-runner-evidence-classification",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T19:05:51+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0702",
     "AR-0848"
@@ -12,15 +12,15 @@
   "observed_branch": "fix/hosted-runner-evidence-classification",
   "observed_dirty": 0,
   "observed_head": "f0b7b46db271cd9de5e89ab1d3cdd6cf86a662d0",
-  "owner": "asb_tui_coordinator_20260910",
+  "owner": "",
   "plan": "../plans/AR-0907.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 139,
+  "task_revision": 140,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-10T17:05:51+00:00",
+  "updated_at": "2026-09-10T17:06:04+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -531,3 +531,10 @@ patch release has advanced.
   reclaim AR-0907 only for one controlled rebase and fresh all-green exact-head CI.
 
 - 2026-09-10T17:05:51+00:00: Claimed by asb_tui_coordinator_20260910.
+
+- 2026-09-10T17:06:04+00:00: Completed through combined PR #122; GitHub marks focused PR #123 merged
+  because exact head f0b7b46 is reachable from main through signed integration merge 1af2865.
+  Exact-head Platform evidence passed on the rolling hosted image and emitted only the closed hosted
+  portability classification while preserving immutable native qualification. All combined PR jobs
+  and all seven exact-main workflows on signed+DCO verification base 66ca27a pass. Hosted evidence
+  remains non-qualification and cannot substitute for native Ubuntu 24.04.4 evidence.
