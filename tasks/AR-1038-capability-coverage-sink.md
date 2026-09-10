@@ -7,7 +7,7 @@
     "AR-1023"
   ],
   "id": "AR-1038",
-  "next_action": "Repair PR #132 review blockers in the single capability_contract test: closed LLVM_PROFILE_FILE token grammar, default.profraw scanning, actual runtime uniqueness/adversarial coverage, and bounded canonical-parent race handling; then run full gates and republish for immutable review.",
+  "next_action": "Finish remaining docs/release/security gates, sign+DCO successor over b65cb4b, push PR #132 exact head, require terminal CI and a new immutable independent review; do not merge.",
   "observed_branch": "test/capability-coverage-sink",
   "observed_dirty": 1,
   "observed_head": "b65cb4b5e9a9d6d75de967ff4673506218c62b45",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent sanitized capability child tests from writing default profraw files into the source checkout.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Preserve coverage sinks in sanitized CLI child tests",
-  "updated_at": "2026-09-10T23:49:01+00:00",
+  "updated_at": "2026-09-10T23:49:26+00:00",
   "worktree_key": "agent-systems-benchmark-capability-coverage-sink"
 }
 ---
@@ -269,3 +269,21 @@ Fix the six `default_*.profraw` files discovered during AR-1013 full coverage wi
 
 - 2026-09-10T23:49:01+00:00: Recorded command exit 0; command argv SHA-256
   50321a092344ee70add2b781ab34b5ea6aae130178c09d2e6d67558e751b0a00.
+
+- 2026-09-10T23:49:26+00:00: Review-blocker repair checkpoint: single capability_contract.rs diff
+  now parses LLVM substitutions rather than substring matching: exactly one real %p, at most one
+  bare %m or numeric %Nm with N 1..32, rejecting %%p, %t under env_clear, unknown tokens, repeated
+  PID/merge tokens, zero/leading-zero/oversized pools. The live cargo-llvm-cov test-process format
+  is target/llvm-cov-target/...-%p-%m.profraw (show-env advertises target/...-%p-%32m.profraw); both
+  exact hosted forms are accepted and covered. Canonical parent replacement closes pre-existing
+  symlink aliases; documented residual race is limited to a same-user directory rename because LLVM
+  accepts only a pathname, and source-resolving paths still fail before spawn. Artifact scanning now
+  includes default.profraw and default_*.profraw. An actual instrumented parallel run exercises one
+  canonical and five failing CLI children and proves six distinct child-%p profiles with no
+  fallback/shared/default profile. Focused normal 11/11, focused llvm-cov 11/11, workspace Clippy -D
+  warnings, full serial workspace tests, and full workspace/critical coverage pass; post-coverage
+  checkout scan is empty. Development failures: initial focused coverage exit101 was a real
+  rejection of live bare-%m hosted grammar and was repaired; one attempted filtered llvm-cov command
+  exited2 because filter was placed as a subcommand, then rerun with the proper post-- test
+  argument. Earlier PATH/cwd/apply_patch failures were pre-execution/no product mutation and already
+  classified.
