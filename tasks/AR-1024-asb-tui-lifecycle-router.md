@@ -12,15 +12,18 @@
   ],
   "id": "AR-1024",
   "next_action": "Implement trusted release discovery, acquisition and typed `asb tui` lifecycle routing after the hardened lifecycle and capability contracts merge.",
+  "observed_branch": "feature/asb-tui-lifecycle-router",
+  "observed_dirty": 0,
+  "observed_head": "32df706413a6f165f086941426a5c793bd5e01e8",
   "owner": "codex-ar1024-router-20260910",
   "plan": "../plans/AR-1024.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Implement `asb tui` lifecycle routing",
-  "updated_at": "2026-09-10T20:32:17+00:00",
+  "updated_at": "2026-09-10T20:32:24+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-lifecycle-router"
 }
 ---
