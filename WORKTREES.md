@@ -81,8 +81,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-local-inference-provider-profiles` | `feat/local-inference-provider-profiles` | `eed49592617a` | 0 | behind 49, ahead 0 |
 | `agent-systems-benchmark-local-llm-testing-recommendations` | `docs/local-llm-testing-recommendations` | `4a23069336be` | 0 | behind 62, ahead 0 |
 | `agent-systems-benchmark-main-merge-integrity` | `fix/main-merge-integrity` | `bd6f450ab877` | 0 | behind 20, ahead 2 |
-| `agent-systems-benchmark-measurement-catalog-semantics` | `feature/measurement-catalog-semantics` | `65f02c61a0e4` | 8 | behind 0, ahead 2 |
-| changed files | - | - | - | `crates/asb-protocol/examples/generate_measurement_fixtures.rs`, `crates/asb-protocol/fixtures/v1/measurement-catalog-digest-mismatch.json`, `crates/asb-protocol/fixtures/v1/measurement-catalog-duplicate.json`, `crates/asb-protocol/fixtures/v1/measurement-catalog-privacy.json`, `crates/asb-protocol/fixtures/v1/measurement-catalog-unit-mismatch.json`, `crates/asb-protocol/fixtures/v1/measurement-catalog-unknown-field.json`, `crates/asb-protocol/fixtures/v1/measurement-catalog-unsupported-csb.json`, `crates/asb-protocol/fixtures/v1/measurement-catalog-wrong-version.json` |
+| `agent-systems-benchmark-measurement-catalog-semantics` | `feature/measurement-catalog-semantics` | `6d0c9916e18f` | 0 | behind 0, ahead 3 |
 | `agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation` | `fix/mini-swe-cancellation-reap-test-isolation` | `c897313524a8` | 0 | behind 20, ahead 14 |
 | `agent-systems-benchmark-mockagents-executable-qualification` | `test/mockagents-executable-qualification` | `3f1de4106adf` | 0 | behind 47, ahead 0 |
 | `agent-systems-benchmark-modern-terminal-rendering` | `feature/modern-terminal-rendering` | `fd1989a096a3` | 0 | behind 84, ahead 0 |
