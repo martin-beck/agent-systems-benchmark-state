@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 188,
+  "task_revision": 189,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T21:09:02+00:00",
+  "updated_at": "2026-09-10T21:09:49+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -637,3 +637,6 @@ Implementation has not started. Read the linked plan before claiming.
   targets. Three wrapped gh operations completed remotely but recorded exit 1 because then-broken
   state rendering lacked AR-1036; exact PR title/body/head/CI were independently verified, and the
   state defect has since been repaired with doctor --live green. No ASB product files were modified.
+
+- 2026-09-10T21:09:49+00:00: Recorded command exit 0; command argv SHA-256
+  4abe4d50d3084f2c45b1a7b8f7e34bbf3ce81545eac76a45b215462b95dffdb0.
