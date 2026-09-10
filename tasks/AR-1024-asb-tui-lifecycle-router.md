@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend.",
-  "task_revision": 132,
+  "task_revision": 133,
   "title": "Implement `asb tui` lifecycle routing",
-  "updated_at": "2026-09-10T21:38:06+00:00",
+  "updated_at": "2026-09-10T21:39:13+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-lifecycle-router"
 }
 ---
@@ -411,3 +411,6 @@ complete gates, exact-head CI and post-merge verification.
   c408d256d9d0c1290afa41c255859fd4309be2ba493b0dca7646dc6dac50584e.
 
 - 2026-09-10T21:38:06+00:00: Heartbeat by codex-ar1024-router-20260910.
+
+- 2026-09-10T21:39:13+00:00: Recorded command exit 0; command argv SHA-256
+  a5ee1b71f21dbc5f974bc3be32ef9cc8a4b4ae924e4d9cbdfb392121238fa8ec.
