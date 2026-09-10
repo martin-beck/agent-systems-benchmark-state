@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Hold PR #127 for terminal exact-head 9297275 CI; investigate candidate-owned failures only. Do not merge; formal acquisition remains AR-0877-owned.",
+  "next_action": "Replace nested guest exec readiness with a bounded direct process primitive or record a contract amendment; preserve real RunningMiniSwe cancellation/group oracle. Do not change timeout again or merge PR #127.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "9297275e8ab328f1cbcd9e4d848f516d70caaa32",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 179,
+  "task_revision": 180,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T06:52:05+00:00",
+  "updated_at": "2026-09-10T06:56:52+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -696,3 +696,14 @@ classified.
   34447129649 in progress; fault 34447129583 in progress; formal 34447129677 in progress; native
   34447129599 in progress; quality 34447129620 in progress; Rust 34447129590 in progress; AWQ
   34447129562 success; headers 34447129633 success. No merge or rerun.
+
+- 2026-09-10T06:56:52+00:00: Terminal exact-head 9297275 evidence: emulated-AArch64 run 34447129649
+  failed 138 passed/1 failed/1 ignored; the isolated outer test reached the nested cancellation
+  case, which timed out at mini_swe.rs:2197 waiting for leader readiness after 15s (total 16.28s).
+  Thus executable leader/sleeper modes still rely on nested guest exec and do not solve hosted
+  full-userspace QEMU semantics. Repository quality run 34447129620 separately failed
+  control::tests::state_root_is_exclusive_and_uncertain_restart_fails_closed at control.rs:2075 with
+  control state root is already owned after 29/30; this is shared AR-0908 test isolation, not
+  AR-0909. Formal remains AR-0877-owned. The proposed $5->$1 edit remains disproved by the
+  executable child_import fixture assertions ($1=-P, $2=-S, trajectory=$7, config=$12); workspace is
+  $5 for the shell stand-in. PR127 remains open and unmerged.
