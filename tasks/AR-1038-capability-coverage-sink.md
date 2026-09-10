@@ -7,7 +7,7 @@
     "AR-1023"
   ],
   "id": "AR-1038",
-  "next_action": "Independently review immutable PR #132 exact head 51e18c62287816c7877925234ba37c0eb043f023 tree e35af4ee18030bead6b165aa561345f712a4ed34; wait for all 12 replacement exact-head checks terminal green; do not merge before approval.",
+  "next_action": "Wait for all 12 PR #132 checks on exact head b65cb4b5e9a9d6d75de967ff4673506218c62b45 tree ed1c1847687f5a73216169af242ad2c71d234dad to become terminal green, then obtain independent immutable review; do not merge.",
   "observed_branch": "test/capability-coverage-sink",
   "observed_dirty": 0,
   "observed_head": "b65cb4b5e9a9d6d75de967ff4673506218c62b45",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent sanitized capability child tests from writing default profraw files into the source checkout.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Preserve coverage sinks in sanitized CLI child tests",
-  "updated_at": "2026-09-10T23:23:56+00:00",
+  "updated_at": "2026-09-10T23:25:35+00:00",
   "worktree_key": "agent-systems-benchmark-capability-coverage-sink"
 }
 ---
@@ -156,3 +156,18 @@ Fix the six `default_*.profraw` files discovered during AR-1013 full coverage wi
 
 - 2026-09-10T23:23:56+00:00: Recorded command exit 0; command argv SHA-256
   20f1e3269fcfcd0b6985a821cd7965e53282e4ed0ff88decdd2ff2ecd6d7215b.
+
+- 2026-09-10T23:25:35+00:00: CI repair successor b65cb4b5e9a9d6d75de967ff4673506218c62b45 (tree
+  ed1c1847687f5a73216169af242ad2c71d234dad) is signed+DCO and pushed to PR #132. Exact hosted
+  cargo-llvm-cov behavior is an absolute per-process .profraw path inside the checkout's ignored
+  target subtree, not always an external root. The validator now permits only that isolated
+  workspace target subtree or a resolved external directory; source paths, parent traversal,
+  symlinked ancestors, relative/empty/oversized/control-bearing/shared/non-profraw values still fail
+  before spawn. Added the exact hosted %p-%32m target fixture plus source-escape and symlink
+  negatives. With CARGO_TARGET_DIR deliberately unset, focused normal and llvm-cov tests pass 9/9
+  and the checkout-wide scan finds zero default_*.profraw. Prior exact 51e18c full
+  workspace/coverage gates passed; replacement b65cb4b exact-head CI is running. The superseded
+  quality failure is classified as a real validator incompatibility with cargo-llvm-cov's workspace
+  target sink and was repaired, not retried unchanged. One later wrapper post-check exit1 occurred
+  only because unrelated AR-1010 lease expired after product verification; AR-1010 recovery and
+  doctor live now pass.
