@@ -10,7 +10,7 @@
     "AR-0806"
   ],
   "id": "AR-1010",
-  "next_action": "Upstream Ratatui and Kasuari must ship a selectable non-Zlib hasher closure; then pin that maintained release and rerun deny/audit.",
+  "next_action": "Upstream Kasuari then Ratatui selectable std-map features; consume only after reviewed immutable releases eliminate foldhash.",
   "observed_branch": "feature/tui-ratatui-crossterm-foundation",
   "observed_dirty": 0,
   "observed_head": "2754623be3503589b24cbb84341dfcf65ccb8911",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T08:31:39+00:00",
+  "updated_at": "2026-09-10T08:33:09+00:00",
   "worktree_key": "agent-systems-benchmark-tui-ratatui-crossterm-foundation"
 }
 ---
@@ -196,3 +196,16 @@ Implementation has not started. Read the linked plan before claiming.
   task for explicit reassignment.
 
 - 2026-09-10T08:31:39+00:00: Claimed by replay_20260906.
+
+- 2026-09-10T08:33:09+00:00: Upstream design checkpoint, ASB untouched: Ratatui main
+  99168f8afa2d75f89beeee17f0d15835010177c4 and Kasuari main 4cf0b817a3c333c056a15df1d69c3829ceccbb14
+  remain maintained but have no selectable non-Zlib closure. Hashbrown default-hasher is exactly
+  dep:foldhash. Ratatui Core and Widgets use workspace hashbrown defaults; Kasuari uses
+  HashMap/HashSet constructors through default hashbrown. A focused viable upstream sequence is: (1)
+  Kasuari adds an opt-in std collection backend while declaring hashbrown default-features=false and
+  retaining existing default behavior; release it. (2) Ratatui adds a matching feature, routes std
+  builds to std collections in core/widgets and Kasuari, declares hashbrown default-features=false,
+  retains backward-compatible default, and releases. ASB could then select the std backend with
+  defaults disabled. No martin-beck forks currently exist, no upstream patch/release implements
+  this, and direct Git/path/vendor consumption would violate maintained immutable-release and
+  source-policy requirements. Product worktree remains byte-clean at 2754623.
