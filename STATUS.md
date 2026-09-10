@@ -1036,7 +1036,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1020](tasks/AR-1020-asb-tui-install-selftest.md): Add isolated asb-tui install and self-test lifecycle | contracts_20260906 | Install and operate asb-tui safely as an optional extension. | Add the fail-closed delegated lifecycle CLI and production protocol/terminal self-test, then run full hosted and trusted local validation. |
+| P1 | [AR-1020](tasks/AR-1020-asb-tui-install-selftest.md): Add isolated asb-tui install and self-test lifecycle | contracts_20260906 | Install and operate asb-tui safely as an optional extension. | Publish c5454fa through a protected pull request, verify exact-head hosted CI, merge with DCO and verified signature, then run hosted and trusted local post-merge CI. |
 
 ### Open (8)
 

@@ -7,7 +7,7 @@
     "AR-1019"
   ],
   "id": "AR-1020",
-  "next_action": "Add the fail-closed delegated lifecycle CLI and production protocol/terminal self-test, then run full hosted and trusted local validation.",
+  "next_action": "Publish c5454fa through a protected pull request, verify exact-head hosted CI, merge with DCO and verified signature, then run hosted and trusted local post-merge CI.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Install and operate asb-tui safely as an optional extension.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Add isolated asb-tui install and self-test lifecycle",
-  "updated_at": "2026-09-10T16:29:52+00:00",
+  "updated_at": "2026-09-10T16:30:08+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-install-selftest"
 }
 ---
@@ -56,3 +56,12 @@ read-only status, detached-run continuity, permissions/privacy checks, and clear
   Product ASB routing remains an explicit separate dependency.
 
 - 2026-09-10T16:29:52+00:00: Heartbeat by contracts_20260906.
+
+- 2026-09-10T16:30:08+00:00: Standalone AR-1020 implementation is complete at signed+DCO head
+  c5454fa. It provides closed delegated install/upgrade/status/launch/remove JSON contracts,
+  authenticated complete-bundle verification, owner-private transactional storage, exact-candidate
+  bounded protocol/terminal self-test, digest recheck before launch, interrupted recovery, and no
+  benchmark-process ownership. Full locked suite passes (74 tests plus doctests); coverage passes at
+  90.52% lines; clippy/rustfmt/docs/schema, ShellCheck/shfmt, actionlint/zizmor, Gitleaks (7
+  commits, no leaks), and ASB isolation (16 tests plus 2 doctests) pass. The first ASB isolation
+  invocation lacked cargo on PATH; rerun with exact Rust 1.93.0 passed.
