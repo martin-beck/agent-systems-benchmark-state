@@ -2,7 +2,7 @@
 {
   "branch": "docs/asb-cli-workflow-captures",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T23:01:59+00:00",
+  "claim_expires": "2026-09-10T23:03:42+00:00",
   "depends_on": [
     "AR-0872"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Produce reproducible ASB CLI transcripts separately from standalone TUI screenshots.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Generate ASB CLI workflow captures",
-  "updated_at": "2026-09-10T20:02:10+00:00",
+  "updated_at": "2026-09-10T20:03:42+00:00",
   "worktree_key": "agent-systems-benchmark-asb-cli-workflow-captures"
 }
 ---
@@ -33,3 +33,5 @@ renderer, terminal application, Ratatui/Crossterm dependency, or asb-tui source.
 
 - 2026-09-10T20:02:02+00:00: Recorded command exit 0; command argv SHA-256
   48ce8c035d66a7ab0478204d6ea9ff42e080068ac6938ca529e2c4005f2449e2.
+
+- 2026-09-10T20:03:42+00:00: Heartbeat by codex-ar1028-cli-captures-20260910.
