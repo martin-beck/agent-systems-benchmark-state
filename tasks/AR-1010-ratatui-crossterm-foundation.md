@@ -11,16 +11,16 @@
     "AR-1030"
   ],
   "id": "AR-1010",
-  "next_action": "Repair exact 1bab7ad review blockers: seal/authenticate supervisor bytes, deterministic unrelated-child handshake, inherited thread/namespace seccomp probes, and accurate pidfd/killpg/SIGCHLD documentation; then full gates and signed successor.",
+  "next_action": "Run full exact-tree asb-tui gates, review and sign the trust-boundary successor, push PR #9, then wait for exact-head CI and a fresh independent reviewer; no merge.",
   "owner": "codex-ar1010-trust-repair-20260911",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 351,
+  "task_revision": 352,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T23:50:02+00:00",
+  "updated_at": "2026-09-10T23:50:27+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -1209,3 +1209,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-10T23:50:02+00:00: Recorded command exit 0; command argv SHA-256
   73575f2fd4a9ac2da180ec47b9b293ed1c2ef2f5cb96176a9d74b04e72929767.
+
+- 2026-09-10T23:50:27+00:00: Repair implementation checkpoint: README.md, src/lifecycle.rs and
+  tests/lifecycle.rs only. Production now seals a copy of the currently executing trusted
+  supervisor; the hidden test-only seam requires independent exact bytes, rejects symlink,
+  wrong-owner/group/world-writable and equal-length substitution, and seals the authenticated copy
+  so demonstrated post-bind same-inode mutation is harmless. Cleanup checks group/pidfd signal
+  errors. Adversarial probe covers fork/exec, spawned thread, namespace attempt with bounded
+  unavailable errno, and setsid/setpgid denial. Unrelated-child proof now uses a two-way ready ->
+  child-live -> acknowledged handshake before candidate response/cleanup. Full lifecycle 13/13,
+  focused PTY nested probe, fmt, Clippy -D warnings and diff-check pass. Classified failures: first
+  patch command passed no patch argument and made no product change; two wrapper attempts hit
+  coordinator lock timeout before mutation; first compile found ambiguous Read/Write by_ref and was
+  corrected with Read::by_ref; initial fmt-only failure was corrected.
