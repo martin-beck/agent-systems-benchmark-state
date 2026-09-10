@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-11T01:10:32+00:00",
   "depends_on": [],
   "id": "AR-1039",
-  "next_action": "Attest PR #131's valid signed tree-equivalent but non-DCO merge and publish a DCO-compliant corrective merge.",
+  "next_action": "Push signed head 607a3afb, open an unmerged PR, verify exact-head CI, and request immutable independent review before any corrective merge.",
   "observed_branch": "docs/measurement-catalog-merge-attestation",
   "observed_dirty": 0,
   "observed_head": "607a3afb3a44b87f9c60b6ae3bc764570e84d5fe",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover the measurement catalog publication boundary without rewriting protected main.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Attest the measurement catalog merge boundary",
-  "updated_at": "2026-09-10T23:22:53+00:00",
+  "updated_at": "2026-09-10T23:23:14+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-merge-attestation"
 }
 ---
@@ -70,3 +70,14 @@ the corrective merge commit uses an actual multiline DCO trailer. This AR owns n
 
 - 2026-09-10T23:22:46+00:00: Recorded command exit 0; command argv SHA-256
   8f0bc13b47bc3cf9121893eb877785c6e01cc36236f8ceae0e083a9f8b879234.
+
+- 2026-09-10T23:23:14+00:00: Implementation checkpoint: signed+DCO commit
+  607a3afb3a44b87f9c60b6ae3bc764570e84d5fe (tree b45e1a64545cf40fa3c181e255fb3051c71e6858) adds only
+  the bounded PR #131 merge attestation, publication documentation, and private validation/negative
+  tests; no product semantics or UI. Focused attestation tests 2/2, fmt, workspace all-target Clippy
+  -D warnings, serial workspace tests, rustdoc -D warnings, release build, cargo-deny, cargo-audit,
+  repository policy, diff check, signature/DCO, and coverage all pass. Coverage examples observed:
+  asb-plugin-sdk 96.69% lines and asb-replay 97.84% lines. Earlier recorded exits 1 were
+  development-only formatting/test-compile failures corrected before commit; two later cleanup
+  attempts failed before mutation because the wrapper path/cwd was invalid and were rerun correctly.
+  Removed exactly six generated .profraw files after coverage; worktree is clean.
