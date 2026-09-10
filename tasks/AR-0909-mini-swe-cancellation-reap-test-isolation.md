@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 197,
+  "task_revision": 198,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T07:08:54+00:00",
+  "updated_at": "2026-09-10T07:09:43+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -759,3 +759,6 @@ classified.
   ignored and 1 filtered. Native cargo fmt --all -- --check; cargo clippy --locked --workspace
   --all-targets -- -D warnings; cargo test --locked --workspace all passed. A forbidden-unsafe
   direct-fork experiment failed compilation and was fully reverted before this candidate.
+
+- 2026-09-10T07:09:43+00:00: Recorded command exit 0; command argv SHA-256
+  3effde408c3a820070dbc923b84d026295c2737f3a8524b9951f4fd86256ecad.
