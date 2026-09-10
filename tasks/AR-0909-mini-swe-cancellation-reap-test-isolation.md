@@ -2,7 +2,7 @@
 {
   "branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T02:46:33+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -15,15 +15,15 @@
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "eb41e1487bf5b47b78a4848860328494880ff5d0",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0909.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 86,
+  "task_revision": 87,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T00:35:52+00:00",
+  "updated_at": "2026-09-10T04:27:06+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -322,3 +322,6 @@ classified.
   acquisition artifact, but exact fresh classification awaits terminal logs. AWQ and headers are
   success; Rust, repository quality, native, Kani, Loom, fault/fuzz/matcher remain queued or in
   progress. PR remains open and unmerged.
+
+- 2026-09-10T04:27:06+00:00: Recovered expired claim formerly owned by quality_20260906. Recover
+  expired lease; preserve PR #127 exact reviewed head and CI evidence.
