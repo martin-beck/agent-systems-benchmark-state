@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Detect whether an asb-tui bundle is compatible before installation or launch.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Add asb-tui compatibility and terminal capability detection",
-  "updated_at": "2026-09-10T13:35:53+00:00",
+  "updated_at": "2026-09-10T13:35:58+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-compatibility-detection"
 }
 ---
@@ -269,3 +269,6 @@ fixtures for mismatches, privacy-safe diagnostics, and no host identifiers in pu
   succeeded, but executable=false because the copied executable remained open writable at exec time
   (Linux ETXTBSY boundary). The source now closes the writable descriptor before bounded execution;
   next run is changed, not an identical retry.
+
+- 2026-09-10T13:35:58+00:00: Recorded command exit 0; command argv SHA-256
+  272e4586928b3548aa3fe9735f36371798234e2b90b05b47d344f88ee605379f.
