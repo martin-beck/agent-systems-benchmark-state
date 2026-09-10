@@ -12,7 +12,7 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Let users select grouped measurements from the standalone ASB TUI.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Add grouped measurement selection to the TUI",
   "updated_at": "2026-09-10T21:04:37+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-measurement-selection"
@@ -35,5 +35,8 @@ test in `martin-beck/asb-tui`; consume the ASB measurement catalog only through 
   group counts, whole-group selection/clearing, drill-down, and independent per-measure toggles in
   the actual standalone application after AR-1025 and its visual system.
 
-- 2026-09-10T21:04:37+00:00: Added AR-1036 so the UI consumes a real bounded catalog operation,
-  and required exact group-state transitions and plan round-trip fixtures.
+- 2026-09-10T21:04:37+00:00: Added AR-1036 so the UI consumes a real bounded catalog operation and
+  required exact group-state transitions and plan round-trip fixtures.
+
+- 2026-09-10T21:40:00+00:00: Marked AR-0804 and AR-0805 as read-only migration inputs that cannot
+  reopen ASB UI implementation paths.

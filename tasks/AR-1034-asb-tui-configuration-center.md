@@ -12,7 +12,7 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Add a searchable configuration menu for frontend preferences and benchmark defaults.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Add the standalone TUI configuration center",
   "updated_at": "2026-09-10T21:04:37+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-configuration-center"
@@ -23,3 +23,6 @@ ASB remains the authority for runner configuration, validation and benchmark exe
 
 - 2026-09-10T21:04:37+00:00: Excluded runner configuration mutation and required reuse of
   AR-1014's canonical validated measurement-selection plan for stored presets.
+
+- 2026-09-10T21:25:00+00:00: Added exact XDG and import/export byte, item, string and nesting bounds
+  plus fail-closed assertions that preserve the last valid store and leave no temporary artifacts.

@@ -20,7 +20,7 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Qualify the standalone TUI across terminals and platforms without perturbing benchmark results.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Qualify terminal frontend usability and isolation",
   "updated_at": "2026-09-10T21:04:37+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-resilience-accessibility"
@@ -44,3 +44,7 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-10T21:04:37+00:00: Ordered this independent qualification after AR-1011's integrated
   usability pass so the audit targets the complete standalone application rather than partial
   screens.
+
+- 2026-09-10T21:40:00+00:00: Limited this AR to independent installed-package/operator journeys,
+  adversarial lifecycle qualification and release-facing review; AR-1012 owns the reproducible
+  low-level terminal/render/resource conformance matrix.

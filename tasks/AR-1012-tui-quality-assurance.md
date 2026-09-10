@@ -12,7 +12,7 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Qualify TUI reliability, accessibility, performance isolation, and reproducible CI captures.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Qualify TUI quality and isolation",
   "updated_at": "2026-09-10T19:20:00+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-quality-assurance"
@@ -26,3 +26,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-10T19:20:00+00:00: Assigned renderer, terminal lifecycle, application performance, and
   accessibility qualification to the standalone asb-tui repository.
+
+- 2026-09-10T21:40:00+00:00: Distinguished this automated frame, escape-stream, restoration,
+  resource-budget and CI matrix from AR-0807's independent operator journeys and package audit.

@@ -3,7 +3,7 @@
   "branch": "feature/measurement-catalog-semantics",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-0101", "AR-1001", "AR-0602"],
+  "depends_on": ["AR-0101", "AR-1001"],
   "id": "AR-1013",
   "next_action": "Define and review the versioned measurement catalog and semantic grouping contract before implementation.",
   "observed_branch": "",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Define selectable ASB measurements grouped by stable semantic meaning.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Version the measurement catalog and semantic groups",
-  "updated_at": "2026-09-10T00:00:00+00:00",
+  "updated_at": "2026-09-10T21:25:00+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-semantics"
 }
 ---
@@ -30,3 +30,8 @@ Acceptance criteria: schema and Rust types are versioned; duplicate/ambiguous na
 units are rejected; groups and metrics have stable IDs; live/replay/unsupported states are explicit;
 CSB-derived metrics have provenance and no double counting; fixtures and negative tests cover unknown,
 duplicate, unit-mismatch, unavailable, and privacy-sensitive metrics.
+
+- 2026-09-10T21:25:00+00:00: Removed optional AR-0602 monitoring qualification as a hard
+  prerequisite. The baseline catalog must represent unsupported or not-yet-qualified CSB measures
+  explicitly; AR-0602 may add or qualify versioned catalog entries later without blocking the
+  standalone measurement selector.

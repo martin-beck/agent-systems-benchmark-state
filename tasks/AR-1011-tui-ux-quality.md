@@ -12,7 +12,7 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Deliver an easy, discoverable, keyboard-first TUI experience for setup and benchmark analysis.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Deliver TUI UX quality features",
   "updated_at": "2026-09-10T21:04:37+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ux-quality"
@@ -34,3 +34,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-10T21:04:37+00:00: Removed premature AR-0807 qualification dependency and narrowed this
   AR to cross-screen integration and usability defect closure; focused ARs retain their screen and
   widget implementation ownership.
+
+- 2026-09-10T21:40:00+00:00: Marked AR-0870 and AR-0871 as read-only migration/behavior inputs;
+  they cannot reopen implementation in legacy ASB frontend paths.
