@@ -7,7 +7,7 @@
     "AR-1017"
   ],
   "id": "AR-1018",
-  "next_action": "Repair executable identity-bound execution and cleanup; add bounded real PTY resize verification; rerun full gates.",
+  "next_action": "Complete cleanup/PTY repair audit, rerun all full clean gates, and create a focused signed+DCO successor.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Detect whether an asb-tui bundle is compatible before installation or launch.",
-  "task_revision": 147,
+  "task_revision": 148,
   "title": "Add asb-tui compatibility and terminal capability detection",
-  "updated_at": "2026-09-10T14:38:51+00:00",
+  "updated_at": "2026-09-10T14:39:31+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-compatibility-detection"
 }
 ---
@@ -496,3 +496,12 @@ fixtures for mismatches, privacy-safe diagnostics, and no host identifiers in pu
 
 - 2026-09-10T14:38:51+00:00: Recorded command exit 0; command argv SHA-256
   2c317fa8f6581b34bd0138679aa619afd2d7c3f57bef3d20429296b57122ff77.
+
+- 2026-09-10T14:39:31+00:00: Focused repair reached 11/11 system-probe tests. The PTY verifier uses
+  identity-checked retained setsid and dash inodes, an isolated controlling slave/foreground process
+  group, and TIOCSWINSZ as the sole WINCH cause; the no-event control omits size change. Repeated
+  focused failure was classified: the retained std::process::Command kept a parent-side slave fd
+  open, preventing bounded reader completion after successful kernel SIGWINCH delivery. Explicitly
+  dropping Command after spawn fixed the causal drain failure. Initial cargo exits 127/2 were
+  harness PATH/RUSTC configuration errors, not product defects; absolute pinned toolchain paths
+  corrected them.
