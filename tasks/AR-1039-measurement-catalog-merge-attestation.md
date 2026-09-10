@@ -6,15 +6,18 @@
   "depends_on": [],
   "id": "AR-1039",
   "next_action": "Attest PR #131's valid signed tree-equivalent but non-DCO merge and publish a DCO-compliant corrective merge.",
+  "observed_branch": "docs/measurement-catalog-merge-attestation",
+  "observed_dirty": 0,
+  "observed_head": "0c65159d70ee728e21c7936663a90bea49ab0366",
   "owner": "codex-ar1039-catalog-merge-recovery-20260911",
   "plan": "../plans/AR-1039.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover the measurement catalog publication boundary without rewriting protected main.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Attest the measurement catalog merge boundary",
-  "updated_at": "2026-09-10T23:11:14+00:00",
+  "updated_at": "2026-09-10T23:11:20+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-merge-attestation"
 }
 ---
