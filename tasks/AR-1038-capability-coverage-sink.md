@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent sanitized capability child tests from writing default profraw files into the source checkout.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Preserve coverage sinks in sanitized CLI child tests",
-  "updated_at": "2026-09-10T23:36:11+00:00",
+  "updated_at": "2026-09-10T23:38:45+00:00",
   "worktree_key": "agent-systems-benchmark-capability-coverage-sink"
 }
 ---
@@ -200,3 +200,6 @@ Fix the six `default_*.profraw` files discovered during AR-1013 full coverage wi
   runtime substitutions and artifact scan misses default.profraw. Invalid read-only handoffctl show
   invocation exited 2 due to nonexistent subcommand and made no mutation. Repair remains one
   test-file only; no production or UI scope.
+
+- 2026-09-10T23:38:45+00:00: Recorded command exit 0; command argv SHA-256
+  febfa975120aa7c91ba5976dddcbcfed57bf0d3762f8b668bd8bb89bf5a130ae.
