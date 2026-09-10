@@ -9,17 +9,17 @@
   "id": "AR-1028",
   "next_action": "Review final diff, commit signed+DCO, push PR, and wait for exact-head CI.",
   "observed_branch": "docs/asb-cli-workflow-captures",
-  "observed_dirty": 4,
-  "observed_head": "32df706413a6f165f086941426a5c793bd5e01e8",
+  "observed_dirty": 0,
+  "observed_head": "3db6e6be7f0fe457ee0cb8d44d7434868e157a1a",
   "owner": "codex-ar1028-cli-captures-20260910",
   "plan": "../plans/AR-1028.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Produce reproducible ASB CLI transcripts separately from standalone TUI screenshots.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Generate ASB CLI workflow captures",
-  "updated_at": "2026-09-10T20:29:40+00:00",
+  "updated_at": "2026-09-10T20:29:47+00:00",
   "worktree_key": "agent-systems-benchmark-asb-cli-workflow-captures"
 }
 ---
