@@ -7,7 +7,7 @@
     "AR-1023"
   ],
   "id": "AR-1038",
-  "next_action": "Obtain independent immutable review of PR #132 head b65cb4b5e9a9d6d75de967ff4673506218c62b45 tree ed1c1847687f5a73216169af242ad2c71d234dad, then coordinate protected merge sequencing; do not merge without approval.",
+  "next_action": "Repair PR #132 review blockers in the single capability_contract test: closed LLVM_PROFILE_FILE token grammar, default.profraw scanning, actual runtime uniqueness/adversarial coverage, and bounded canonical-parent race handling; then run full gates and republish for immutable review.",
   "observed_branch": "test/capability-coverage-sink",
   "observed_dirty": 0,
   "observed_head": "b65cb4b5e9a9d6d75de967ff4673506218c62b45",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent sanitized capability child tests from writing default profraw files into the source checkout.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Preserve coverage sinks in sanitized CLI child tests",
-  "updated_at": "2026-09-10T23:35:03+00:00",
+  "updated_at": "2026-09-10T23:36:11+00:00",
   "worktree_key": "agent-systems-benchmark-capability-coverage-sink"
 }
 ---
@@ -194,3 +194,9 @@ Fix the six `default_*.profraw` files discovered during AR-1013 full coverage wi
   self-merge.
 
 - 2026-09-10T23:35:03+00:00: Claimed by codex-ar1038-coverage-20260911.
+
+- 2026-09-10T23:36:11+00:00: Reclaimed frozen b65cb4b after reading full repository
+  guidance/task/plan. Initial audit confirms contains(%p) accepts escaped/unsupported/repeated
+  runtime substitutions and artifact scan misses default.profraw. Invalid read-only handoffctl show
+  invocation exited 2 due to nonexistent subcommand and made no mutation. Repair remains one
+  test-file only; no production or UI scope.
