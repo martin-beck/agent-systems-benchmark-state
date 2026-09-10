@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-0897",
-  "next_action": "Monitor PR 126 exact-head CI; investigate terminal failures without changing bd6f450.",
+  "next_action": "Hold PR 126 at bd6f450; after AR-0877 and AR-0909 integrate, rebase once and require fresh all-green exact-head CI before merge.",
   "observed_branch": "fix/main-merge-integrity",
   "observed_dirty": 0,
   "observed_head": "bd6f450ab8777aeb7e055d71aedba8e4cfd375b3",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-10T08:31:00+00:00",
+  "updated_at": "2026-09-10T08:31:31+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -173,3 +173,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-10T08:31:00+00:00: Recorded command exit 0; command argv SHA-256
   b8ca90ba48a62b054bc3913a824221b202338129d116a96d4e835cad641fda34.
+
+- 2026-09-10T08:31:31+00:00: Terminal PR 126 exact-head evidence at bd6f450/tree 20111234: 10 of 12
+  jobs pass, including native Ubuntu, Rust, emulated AArch64, Kani, Loom, fault, fuzz, mutation, AWQ
+  and headers. Formal run 34406581823 job 102650889322 fails in the shared temporal acquisition path
+  before model diagnostics; AR-0877 owns that boundary. Repository Quality run 34406581994 job
+  102650889901 fails only during coverage when
+  mini_swe::tests::cancellation_reaps_owned_descendant_group asserts /proc disappearance too early
+  (137 passed/1 failed/1 ignored); AR-0909 owns that test-isolation/lifecycle repair. Neither
+  failure touches AR-0897 seven-path integration-policy scope. Candidate and PR remain unchanged;
+  exact-head acceptance and merge remain blocked pending both serialized repairs.
