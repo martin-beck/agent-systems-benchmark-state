@@ -23,7 +23,8 @@
 ---
 Provide `asb tui install`, `asb tui`, `asb tui status`, `asb tui upgrade`, and `asb tui remove`. Install
 only into an isolated user directory, never overwrite ASB core files, run a protocol/terminal self-test
-before launch, and show the extension's verified/unverified boundary and exact version. Preserve the
+before launch, validate the locked coordinator and workflow-quality release versions, and show the
+extension's verified/unverified boundary and exact versions. Preserve the
 main benchmark process when the TUI disconnects or is removed.
 
 Acceptance criteria: fresh install/upgrade/remove/reconnect tests, interrupted-install recovery,

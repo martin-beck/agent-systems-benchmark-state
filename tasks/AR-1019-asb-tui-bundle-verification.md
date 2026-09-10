@@ -21,8 +21,9 @@
   "worktree_key": "agent-systems-benchmark-asb-tui-bundle-verification"
 }
 ---
-Specify signed release metadata containing immutable source/build references, checksums, architecture,
-ASB/protocol compatibility, license report, and SBOM. Verify signatures, digests, size, provenance,
+Specify signed release metadata containing immutable source/build references for the TUI,
+agent-workflow-coordinator, and agent-workflow-quality, checksums, architecture, ASB/protocol
+compatibility, license report, and SBOM. Verify signatures, digests, size, provenance,
 license policy, and compatibility before any extraction or execution; reject mutable URLs and partial
 downloads. Support bounded retry, resumable transfer, and verified-cache reuse.
 

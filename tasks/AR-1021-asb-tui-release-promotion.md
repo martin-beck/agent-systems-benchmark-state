@@ -23,7 +23,8 @@
 ---
 Run independent source, license, SBOM, provenance, security, protocol, platform, UX, and exact-head
 CI audits. Maintain an explicitly labelled optional/unverified channel until every policy and formal
-requirement passes; only then promote the same user workflow to the verified release channel.
+requirement passes for asb-tui and its exact coordinator and workflow-quality releases; only then
+promote the same user workflow to the verified release channel.
 
 Acceptance criteria: public installation/upgrade workflows, capability matrix, evidence limits,
 artifact cleanup policy, signed release provenance, and documented promotion/rollback criteria.

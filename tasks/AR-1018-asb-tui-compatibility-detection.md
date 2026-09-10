@@ -21,7 +21,8 @@
   "worktree_key": "agent-systems-benchmark-asb-tui-compatibility-detection"
 }
 ---
-Detect OS/distribution, architecture, ASB version, protocol version, terminal dimensions/features,
+Detect OS/distribution, architecture, ASB version, protocol version, exact coordinator and
+workflow-quality release compatibility, terminal dimensions/features,
 SSH/tmux/screen context, and filesystem/runtime requirements. Select only compatible bundles and fail
 closed with actionable diagnostics for unsupported combinations.
 

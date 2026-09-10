@@ -7,7 +7,8 @@
     "AR-0803",
     "AR-0804",
     "AR-0805",
-    "AR-0806"
+    "AR-0806",
+    "AR-0851"
   ],
   "id": "AR-1017",
   "next_action": "Create the standalone asb-tui repository boundary and stable CLI/JSON protocol contract.",
@@ -26,11 +27,15 @@
   "worktree_key": "agent-systems-benchmark-asb-tui-separate-repository"
 }
 ---
-Create a separate public asb-tui repository containing the optional terminal frontend only. Define a
-versioned, capability-negotiated CLI/JSON protocol to the installed ASB program; do not share Cargo
+Create a separate public asb-tui repository containing the optional terminal frontend only. Consume
+the latest immutable releases of `martin-beck/agent-workflow-coordinator` and
+`martin-beck/agent-workflow-quality`, recording exact tags/commits, artifact digests, signatures,
+licenses, and compatibility in a lock manifest. Define a versioned, capability-negotiated CLI/JSON
+protocol to the installed ASB program; do not share Cargo
 workspace manifests, provider code, benchmark execution, or private coordination history.
 
-Acceptance criteria: isolated repository and worktree, pinned Ratatui/Crossterm inputs, explicit
+Acceptance criteria: isolated repository and worktree, latest-release discovery that rejects mutable
+or unsigned inputs, pinned coordinator/quality/Ratatui/Crossterm inputs, explicit
 unverified-extension classification, protocol compatibility matrix, sanitized SBOM/license/provenance
 metadata, and tests proving the main benchmark runs independently when the TUI is absent.
 
