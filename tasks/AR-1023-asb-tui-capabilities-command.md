@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish the ASB capability negotiation command required by the standalone frontend.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Add the ASB frontend capabilities command",
-  "updated_at": "2026-09-10T19:53:55+00:00",
+  "updated_at": "2026-09-10T19:54:16+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-capabilities-command"
 }
 ---
@@ -242,3 +242,9 @@ local gates, independent review, exact-head CI and post-merge verification.
   PR https://github.com/martin-beck/agent-systems-benchmark/pull/128. Signature verifies against the
   allowed ED25519 signer and repository policy passes for origin/main..HEAD. At first live poll,
   header and AWQ checks passed and ten exact-head checks were in progress.
+
+- 2026-09-10T19:54:16+00:00: Independent source review of exact head
+  d60d2351004479998608f2141730849366351373 found no blocking defect: closed output/schema matches
+  the standalone parser contract, exact invocation is side-effect-free, all eight booleans map to
+  implemented RunnerBackend methods, hostile shape/duplicate/environment paths are covered, and
+  signature/DCO/diff-check pass. Awaiting terminal exact-head CI before any merge.
