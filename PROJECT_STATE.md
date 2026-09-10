@@ -26,7 +26,7 @@ Generated from local Git and GitHub. Do not edit.
 | 34540582104 | `0c65159d70ee` | push | Repository quality | completed:failure |
 | 34540582095 | `0c65159d70ee` | push | Emulated aarch64 portability | in_progress:- |
 | 34540582093 | `0c65159d70ee` | push | Huawei MIT source headers | completed:success |
-| 34540582084 | `0c65159d70ee` | push | Formal assurance | in_progress:- |
+| 34540582084 | `0c65159d70ee` | push | Formal assurance | completed:success |
 | 34539900613 | `78c63febc0ce` | pull_request | Huawei MIT source headers | completed:success |
 | 34539900609 | `78c63febc0ce` | pull_request | Formal assurance | completed:success |
 | 34539900575 | `78c63febc0ce` | pull_request | Agent Workflow Quality shadow | completed:success |
