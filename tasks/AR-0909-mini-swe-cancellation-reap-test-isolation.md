@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 274,
+  "task_revision": 275,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T08:18:17+00:00",
+  "updated_at": "2026-09-10T08:19:11+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1044,3 +1044,6 @@ classified.
   139 pass/1 ignored but its unrelated malformed-executable spawn negative differed under the
   locally extracted userspace; it is not claimed as hosted full-lane evidence. Fresh hosted
   exact-head emulated CI remains mandatory.
+
+- 2026-09-10T08:19:11+00:00: Recorded command exit 0; command argv SHA-256
+  d6b9c866b68aad46464b0b11e9a7a452cd0d58fc53961fbb6a9e2f51e739f625.
