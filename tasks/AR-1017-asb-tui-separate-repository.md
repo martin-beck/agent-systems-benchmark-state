@@ -11,7 +11,7 @@
     "AR-0851"
   ],
   "id": "AR-1017",
-  "next_action": "Publish reviewed signed head 0a726d4 unchanged as public martin-beck/asb-tui main; configure metadata, security, and required hosted plus trusted self-hosted exact-main checks; verify exact-head CI before release.",
+  "next_action": "Publication and exact-head verification complete; no further AR-1017 action.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Build asb-tui as an isolated optional repository and extension.",
-  "task_revision": 266,
+  "task_revision": 267,
   "title": "Create the standalone asb-tui extension repository",
-  "updated_at": "2026-09-10T12:37:34+00:00",
+  "updated_at": "2026-09-10T12:38:32+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-separate-repository"
 }
 ---
@@ -935,3 +935,24 @@ metadata, and tests proving the main benchmark runs independently when the TUI i
 
 - 2026-09-10T12:37:34+00:00: Recorded command exit 0; command argv SHA-256
   febeb799abf20c9082ce80560969f42ff72aa276f4f9af805ae3ddc503dd67ac.
+
+- 2026-09-10T12:38:32+00:00: Published public repository https://github.com/martin-beck/asb-tui with
+  exact main c2fcb7221db24c847ef81cde010735de15cb10f3, tree 856?; local HEAD and origin/main match,
+  clean, SSH signature verified. Hosted Repository quality run 34475381286/job 102864777205 is
+  success. Trusted run 34475381360: attempt 1 failed only rustup missing after
+  preflight/checkout/SHA binding; attempt 2 failed because runner .path overrode the systemd PATH;
+  attempt 3/job 102870544827 is success on exact head and label
+  asb-development-v1-x86_64-ubuntu2404, all safety/Rust/supply-chain/schema/workflow/privacy steps
+  green. Dedicated repo-scoped runner asb-tui-x86_64-01 is online/non-busy under gha-asb-tui with
+  v2.337.0 upstream artifact SHA-256
+  70920811a4f8ad4328818682bca5c6469c1c942fab52448868071d0063816613; rustup-init 1.29.1 SHA-256
+  dda7234360b7f578ca8b0ddcb80145646fa61a67c1720a5abc7051b35c9fcb71. Service is active/enabled with
+  UMask 0077, NoNewPrivileges, PrivateTmp/Devices, ProtectSystem strict, ProtectHome, empty
+  capabilities, and only its isolated root writable. Registration token was in-memory only; no
+  token-named file remains. Repository is public with accurate description/homepage/topics; issues
+  enabled, wiki/projects disabled, delete-branch and web signoff enabled. Vulnerability alerts,
+  dependency security updates, secret scanning/push protection, automated security fixes, and
+  private vulnerability reporting are enabled. Main protection is strict/enforced for admins,
+  requires one fresh approving review, conversation resolution, signed commits, and exact GitHub
+  Actions checks Rust, supply-chain, and privacy gates plus Verify exact trusted main revision;
+  force pushes/deletion disabled.
