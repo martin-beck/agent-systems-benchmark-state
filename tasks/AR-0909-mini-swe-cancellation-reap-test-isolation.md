@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 200,
+  "task_revision": 201,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T07:15:21+00:00",
+  "updated_at": "2026-09-10T07:22:53+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -778,3 +778,6 @@ classified.
   observable in the hosted guest despite passing the local QEMU-equivalent run. Treat this as a
   candidate/test-design defect, not green portability evidence. Preserve PR/head for diagnosis; do
   not increase the timeout blindly and do not merge.
+
+- 2026-09-10T07:22:53+00:00: Recorded command exit 2; command argv SHA-256
+  48458d4adcbc2714c4ae60f17ec39d916357031118af6e75d9a5cd826c73f20e.
