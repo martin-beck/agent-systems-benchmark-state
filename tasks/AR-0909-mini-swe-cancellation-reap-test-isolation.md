@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Obtain immutable review of signed 9297275; if approved, guarded PR #127 update and fresh exact-head CI. Do not merge; formal acquisition remains AR-0877-owned.",
+  "next_action": "Hold PR #127 for terminal exact-head 9297275 CI; investigate candidate-owned failures only. Do not merge; formal acquisition remains AR-0877-owned.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "9297275e8ab328f1cbcd9e4d848f516d70caaa32",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 178,
+  "task_revision": 179,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T06:51:29+00:00",
+  "updated_at": "2026-09-10T06:52:05+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -688,3 +688,11 @@ classified.
 
 - 2026-09-10T06:51:29+00:00: Recorded command exit 0; command argv SHA-256
   dff6d017b33cc2186d570608e30ded69d3f41455c79b2d7407f7408b5e9c8ddc.
+
+- 2026-09-10T06:52:05+00:00: Published independently approved
+  9297275e8ab328f1cbcd9e4d848f516d70caaa32 to PR #127 via guarded force-with-lease from exact prior
+  head 67d07fd2f681bd7b625bc517367d4ba49fb5034e. Live PR is OPEN, exact base
+  b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b, exact head 9297275. Fresh workflows: emulated-AArch64
+  34447129649 in progress; fault 34447129583 in progress; formal 34447129677 in progress; native
+  34447129599 in progress; quality 34447129620 in progress; Rust 34447129590 in progress; AWQ
+  34447129562 success; headers 34447129633 success. No merge or rerun.
