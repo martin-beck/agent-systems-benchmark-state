@@ -1,0 +1,25 @@
+---
+{
+  "branch": "docs/measurement-catalog-merge-attestation",
+  "checkpoint_commit": "",
+  "claim_expires": "",
+  "depends_on": [],
+  "id": "AR-1039",
+  "next_action": "Attest PR #131's valid signed tree-equivalent but non-DCO merge and publish a DCO-compliant corrective merge.",
+  "owner": "",
+  "plan": "../plans/AR-1039.md",
+  "priority": "P0",
+  "schema_version": 1,
+  "status": "planned",
+  "summary": "Recover the measurement catalog publication boundary without rewriting protected main.",
+  "task_revision": 1,
+  "title": "Attest the measurement catalog merge boundary",
+  "updated_at": "2026-09-10T23:09:00+00:00",
+  "worktree_key": "agent-systems-benchmark-measurement-catalog-merge-attestation"
+}
+---
+
+PR #131 merged as GitHub-verified commit `0c65159d70ee728e21c7936663a90bea49ab0366`
+with reviewed tree `9303272ac7070a742249722c0f9e13568c3ed660`, but the merge message lacks a
+matching Signed-off-by trailer. Preserve history, publish a truthful bounded attestation, and ensure
+the corrective merge commit uses an actual multiline DCO trailer. This AR owns no TUI code.
