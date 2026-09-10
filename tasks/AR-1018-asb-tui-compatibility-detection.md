@@ -2,7 +2,7 @@
 {
   "branch": "feature/asb-tui-compatibility-detection",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-10T15:40:09+00:00",
   "depends_on": [
     "AR-1017"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "contracts_20260906",
   "plan": "../plans/AR-1018.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Detect whether an asb-tui bundle is compatible before installation or launch.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Add asb-tui compatibility and terminal capability detection",
-  "updated_at": "2026-09-10T12:40:02+00:00",
+  "updated_at": "2026-09-10T12:40:09+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-compatibility-detection"
 }
 ---
@@ -33,3 +33,5 @@ fixtures for mismatches, privacy-safe diagnostics, and no host identifiers in pu
 
 - 2026-09-10T12:40:02+00:00: AR-1017 is durably done at state 9aa38bcc with public exact-head checks
   and protection verified; AR-1018 is dependency-ready and owns disjoint compatibility detection.
+
+- 2026-09-10T12:40:09+00:00: Claimed by contracts_20260906.
