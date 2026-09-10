@@ -15,17 +15,17 @@
   "id": "AR-1023",
   "next_action": "Create and verify the signed DCO implementation commit, push the branch, open the pull request, and await exact-head review/CI.",
   "observed_branch": "feature/asb-tui-capabilities-command",
-  "observed_dirty": 15,
-  "observed_head": "66ca27afc2fb5a82b171e849e6dda4145735c8d2",
+  "observed_dirty": 0,
+  "observed_head": "d60d2351004479998608f2141730849366351373",
   "owner": "codex-ar1023-capabilities-20260910",
   "plan": "../plans/AR-1023.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish the ASB capability negotiation command required by the standalone frontend.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Add the ASB frontend capabilities command",
-  "updated_at": "2026-09-10T19:51:09+00:00",
+  "updated_at": "2026-09-10T19:51:18+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-capabilities-command"
 }
 ---
