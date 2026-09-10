@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 8 |
+| **Open** | Dependency-ready and available to claim | 9 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 6 |
-| **Planned** | Defined work awaiting promotion or dependencies | 49 |
+| **Planned** | Defined work awaiting promotion or dependencies | 48 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 121 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -240,7 +240,7 @@ flowchart LR
         AR_1016["AR-1016 - Planned"]:::status_planned
         AR_1017["AR-1017 - Done"]:::status_done
         AR_1018["AR-1018 - Done"]:::status_done
-        AR_1019["AR-1019 - Planned"]:::status_planned
+        AR_1019["AR-1019 - Open"]:::status_open
         AR_1020["AR-1020 - Planned"]:::status_planned
         AR_1021["AR-1021 - Planned"]:::status_planned
     end
@@ -1032,7 +1032,7 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (8)
+### Open (9)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1044,6 +1044,7 @@ flowchart LR
 | P1 | [AR-0907](tasks/AR-0907-hosted-runner-evidence-classification.md): Classify hosted runner evidence without weakening native qualification | Unclaimed | Separate rolling hosted portability checks from immutable native qualification evidence. | Hold PR 123 at f0b7b46; integrate AR-0906 then AR-0877, rebase once, and require fresh all-green exact-head CI before merge. |
 | P1 | [AR-0908](tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | Unclaimed | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Hold PR #125 unchanged; shared formal asset and native-runner pin owners must repair their gates before a fresh exact-head run. |
 | P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | Unclaimed | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Hold PR127 unmerged; AR-0877 must repair formal acquisition and platform owner must repair hosted distro evidence, then rerun exact-head CI unchanged. |
+| P1 | [AR-1019](tasks/AR-1019-asb-tui-bundle-verification.md): Verify signed asb-tui extension bundles | Unclaimed | Verify asb-tui bundles before installation or execution. | Define and implement signed bundle metadata, digest, license, SBOM, and compatibility verification. |
 
 ### Blocked (6)
 
@@ -1056,7 +1057,7 @@ flowchart LR
 | P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Unclaimed | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun failed Repository quality workflow 34339927858 on unchanged main; if failure repeats, isolate and repair test-state ownership before any feature work. |
 | P1 | [AR-0906](tasks/AR-0906-portable-oci-build-image-identity.md): Verify formal OCI build identity portably | Unclaimed | Make deterministic formal source builds verify OCI image identity portably across Docker engines. | Combined PR #122 proves formal/emulated paths; hold all PRs while native Ubuntu runner-release mismatch is repaired or classified. |
 
-### Planned (49)
+### Planned (48)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1100,7 +1101,6 @@ flowchart LR
 | P1 | [AR-1013](tasks/AR-1013-measurement-catalog-semantics.md): Version the measurement catalog and semantic groups | Unclaimed | Define selectable ASB measurements grouped by stable semantic meaning. | Define and review the versioned measurement catalog and semantic grouping contract before implementation. |
 | P1 | [AR-1014](tasks/AR-1014-tui-measurement-selection.md): Add grouped measurement selection to the TUI | Unclaimed | Let users select grouped measurements from the standalone ASB TUI. | Implement the catalog-driven TUI selection flow after AR-1013 is reviewed and merged. |
 | P1 | [AR-1015](tasks/AR-1015-csb-measurement-adapter.md): Add a pinned, provenance-safe CSB measurement adapter | Unclaimed | Import qualified CSB resource, system-statistics, and contention measurements into ASB. | Inventory pinned CSB signals and implement only contract-compatible adapters after the catalog is accepted. |
-| P1 | [AR-1019](tasks/AR-1019-asb-tui-bundle-verification.md): Verify signed asb-tui extension bundles | Unclaimed | Verify asb-tui bundles before installation or execution. | Define and implement signed bundle metadata, digest, license, SBOM, and compatibility verification. |
 | P1 | [AR-1020](tasks/AR-1020-asb-tui-install-selftest.md): Add isolated asb-tui install and self-test lifecycle | Unclaimed | Install and operate asb-tui safely as an optional extension. | Implement isolated user-space installation, self-test, status, upgrade, remove, and launch commands. |
 | P2 | [AR-0602](tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Unclaimed | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit CSB monitoring using native x86_64 oracles and required pinned QEMU AArch64 portable mapping/lifecycle checks; keep native ARM64 counters and performance as optional future evidence. |
 | P2 | [AR-0705](tasks/AR-0705-native-debian-capacity.md): Provide native Debian capacity | Unclaimed | Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 Debian and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
