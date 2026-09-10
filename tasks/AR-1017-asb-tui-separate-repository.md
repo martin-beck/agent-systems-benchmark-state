@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Build asb-tui as an isolated optional repository and extension.",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "Create the standalone asb-tui extension repository",
-  "updated_at": "2026-09-10T11:21:43+00:00",
+  "updated_at": "2026-09-10T11:25:18+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-separate-repository"
 }
 ---
@@ -378,3 +378,6 @@ metadata, and tests proving the main benchmark runs independently when the TUI i
   other untrusted fork code. Preserve the GitHub-hosted pull_request quality path. After push,
   require and verify exact-head hosted quality and trusted local-runner validation in branch
   protection before release.
+
+- 2026-09-10T11:25:18+00:00: Recorded command exit 0; command argv SHA-256
+  f2030b8ca5f4292176817c2bd3af851115a9fc1513bd18b7790c4f5b45795dcc.
