@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1018](tasks/AR-1018-asb-tui-compatibility-detection.md): Add asb-tui compatibility and terminal capability detection | Detect whether an asb-tui bundle is compatible before installation or launch. | Hold release: preserve merged history; add signed DCO corrective attestation only after coordinator authorization, then reverify exact-main CI and protections. | contracts_20260906 |
+| P1 | [AR-1018](tasks/AR-1018-asb-tui-compatibility-detection.md): Add asb-tui compatibility and terminal capability detection | Detect whether an asb-tui bundle is compatible before installation or launch. | Open transparent attestation PR; require hosted exact-head green, then fast-forward main only under restored protections and rerun hosted plus trusted exact-main CI. | contracts_20260906 |
 
 ## Open
 

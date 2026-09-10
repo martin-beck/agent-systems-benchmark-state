@@ -7,7 +7,7 @@
     "AR-1017"
   ],
   "id": "AR-1018",
-  "next_action": "Hold release: preserve merged history; add signed DCO corrective attestation only after coordinator authorization, then reverify exact-main CI and protections.",
+  "next_action": "Open transparent attestation PR; require hosted exact-head green, then fast-forward main only under restored protections and rerun hosted plus trusted exact-main CI.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Detect whether an asb-tui bundle is compatible before installation or launch.",
-  "task_revision": 183,
+  "task_revision": 184,
   "title": "Add asb-tui compatibility and terminal capability detection",
-  "updated_at": "2026-09-10T15:09:14+00:00",
+  "updated_at": "2026-09-10T15:09:49+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-compatibility-detection"
 }
 ---
@@ -646,3 +646,9 @@ fixtures for mismatches, privacy-safe diagnostics, and no host identifiers in pu
 
 - 2026-09-10T15:09:14+00:00: Recorded command exit 0; command argv SHA-256
   e36394b93977f30f3f15c4ab6e81dba4e68423726a017893c6089cbf6df6b3a8.
+
+- 2026-09-10T15:09:49+00:00: Authorized non-rewriting corrective successor
+  e3e02c7a999212164652e23393747bd70247330c/tree ad238226c, exact parent add8df612, was created as an
+  empty SSH-signed exact-DCO attestation and pushed under an absent-ref exact lease. A stale
+  overlapping coordinator was stopped after its unguarded concurrent merge/settings mutation; no
+  private process or host details are recorded. Public history remains intact.
