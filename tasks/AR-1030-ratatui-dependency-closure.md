@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the maintained Ratatui release consumable by standalone asb-tui without hiding supply-chain exceptions.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Resolve the Ratatui dependency closure",
-  "updated_at": "2026-09-10T20:11:12+00:00",
+  "updated_at": "2026-09-10T20:11:30+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-dependency-closure"
 }
 ---
@@ -132,3 +132,6 @@ and syn 2/3. Resolve this visibly before AR-1010 adds a renderer.
   clean-tree coverage at 90.55% lines. Independent review found the Zlib/duplicate exception narrow,
   mechanically guarded, signed, and nonblocking; no blocking finding. Nonblocking merge-order note:
   reconcile unverified_extension wording to source_only_unverified when integrating AR-1022.
+
+- 2026-09-10T20:11:30+00:00: Recorded command exit 0; command argv SHA-256
+  c65936e210c5941a778180c3316170034f45ed2c0afa90a074f5ff05f5db2675.
