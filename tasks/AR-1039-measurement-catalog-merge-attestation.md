@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1039.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Recover the measurement catalog publication boundary without rewriting protected main.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Attest the measurement catalog merge boundary",
-  "updated_at": "2026-09-10T23:09:00+00:00",
+  "updated_at": "2026-09-10T23:10:22+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-merge-attestation"
 }
 ---
@@ -23,3 +23,6 @@ PR #131 merged as GitHub-verified commit `0c65159d70ee728e21c7936663a90bea49ab03
 with reviewed tree `9303272ac7070a742249722c0f9e13568c3ed660`, but the merge message lacks a
 matching Signed-off-by trailer. Preserve history, publish a truthful bounded attestation, and ensure
 the corrective merge commit uses an actual multiline DCO trailer. This AR owns no TUI code.
+
+- 2026-09-10T23:10:22+00:00: Protected main is red because PR #131 merge commit lacks DCO; focused
+  recovery is immediately dependency-ready.
