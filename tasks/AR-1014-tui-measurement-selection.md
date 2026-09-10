@@ -3,7 +3,7 @@
   "branch": "feature/tui-measurement-selection",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1013", "AR-0804", "AR-0805"],
+  "depends_on": ["AR-1013", "AR-0804", "AR-0805", "AR-1025", "AR-1033"],
   "id": "AR-1014",
   "next_action": "Implement the catalog-driven TUI selection flow after AR-1013 is reviewed and merged.",
   "owner": "",
@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Let users select grouped measurements from the standalone ASB TUI.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Add grouped measurement selection to the TUI",
-  "updated_at": "2026-09-10T19:20:00+00:00",
+  "updated_at": "2026-09-10T20:57:16+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-measurement-selection"
 }
 ---
@@ -30,3 +30,7 @@ serialization, resize, and accessibility-oriented terminal tests.
 
 Repository boundary: implement every view, interaction, renderer, state transition, and terminal
 test in `martin-beck/asb-tui`; consume the ASB measurement catalog only through its public contract.
+
+- 2026-09-10T20:57:16+00:00: Sharpened acceptance to require a visible search field, tri-state
+  group counts, whole-group selection/clearing, drill-down, and independent per-measure toggles in
+  the actual standalone application after AR-1025 and its visual system.
