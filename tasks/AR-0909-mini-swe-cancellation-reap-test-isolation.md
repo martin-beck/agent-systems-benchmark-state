@@ -13,7 +13,7 @@
   "id": "AR-0909",
   "next_action": "Redesign the hosted-emulation cancellation fixture around an observable process primitive that does not require guest shell/test executable startup; preserve real RunningMiniSwe and group oracle. No timeout increase or merge.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "eefdb833248db5bf7135ac4749b7dc8886aa5458",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0909.md",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 203,
+  "task_revision": 204,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T07:25:01+00:00",
+  "updated_at": "2026-09-10T07:25:10+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
