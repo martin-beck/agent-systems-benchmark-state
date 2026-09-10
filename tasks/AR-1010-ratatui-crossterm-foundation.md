@@ -10,7 +10,7 @@
     "AR-0806"
   ],
   "id": "AR-1010",
-  "next_action": "Coordinator decision required: no released Ratatui closure satisfies deny.toml without allowing Zlib or carrying a patched dependency.",
+  "next_action": "Upstream Ratatui and Kasuari must ship a selectable non-Zlib hasher closure; then pin that maintained release and rerun deny/audit.",
   "observed_branch": "feature/tui-ratatui-crossterm-foundation",
   "observed_dirty": 0,
   "observed_head": "2754623be3503589b24cbb84341dfcf65ccb8911",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T04:49:51+00:00",
+  "updated_at": "2026-09-10T04:53:23+00:00",
   "worktree_key": "agent-systems-benchmark-tui-ratatui-crossterm-foundation"
 }
 ---
@@ -177,3 +177,16 @@ Implementation has not started. Read the linked plan before claiming.
   transitive default feature. Older Ratatui 0.24-0.29 retain vulnerable/unmaintained lru/paste
   closures. All exploratory manifest/lock changes were mechanically restored; product is byte-clean
   at signed 2754623. No successor was committed and no policy was weakened.
+
+- 2026-09-10T04:53:23+00:00: Read-only maintained-patch investigation: current Ratatui main
+  99168f8afa2d75f89beeee17f0d15835010177c4 still declares hashbrown 0.17 and kasuari 0.4.9; current
+  Kasuari main 4cf0b817a3c333c056a15df1d69c3829ceccbb14 still declares hashbrown 0.17 with defaults.
+  Hashbrown 0.16/0.17 default-hasher is foldhash, so neither released 0.30.2 nor current maintained
+  upstream has a feature boundary that removes Zlib. GitHub issue/PR search found only closed
+  version-bump PRs ratatui#2084/#2495 and kasuari#32, no upstream no-foldhash patch. A local
+  crates-io patch would require vendoring/reimplementing Ratatui Core, Widgets and Kasuari hash-map
+  construction or a hashbrown compatibility shim, creating a large unmaintained fork and defeating
+  the requested focused maintained dependency strategy; git patches would also violate deny.toml
+  unknown-git policy. Concrete safe next step is an upstream Ratatui/Kasuari change exposing a
+  policy-compatible hasher feature followed by immutable releases. Product remains clean at 2754623;
+  no mutation justified.
