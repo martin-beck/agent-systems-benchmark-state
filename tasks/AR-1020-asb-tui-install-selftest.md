@@ -7,7 +7,7 @@
     "AR-1019"
   ],
   "id": "AR-1020",
-  "next_action": "Implement the standalone transactional lifecycle and delegated command contract; open a focused ASB CLI routing dependency if no existing safe seam can expose asb tui.",
+  "next_action": "Add the fail-closed delegated lifecycle CLI and production protocol/terminal self-test, then run full hosted and trusted local validation.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Install and operate asb-tui safely as an optional extension.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Add isolated asb-tui install and self-test lifecycle",
-  "updated_at": "2026-09-10T16:05:45+00:00",
+  "updated_at": "2026-09-10T16:05:56+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-install-selftest"
 }
 ---
@@ -48,3 +48,9 @@ read-only status, detached-run continuity, permissions/privacy checks, and clear
   rather than claiming current end-to-end ASB CLI availability.
 
 - 2026-09-10T16:05:45+00:00: Heartbeat by contracts_20260906.
+
+- 2026-09-10T16:05:56+00:00: Checkpoint 040adfb adds owner-private retained-directory lifecycle
+  storage with kernel-released exclusive locking, bounded inode-stable reads, digest-addressed
+  executable versions, atomic active-state replacement, interrupted-stage recovery, read-only
+  verification, idempotent install/remove, and lifecycle tests. Clippy and 7 focused tests pass.
+  Product ASB routing remains an explicit separate dependency.

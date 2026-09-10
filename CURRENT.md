@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1020](tasks/AR-1020-asb-tui-install-selftest.md): Add isolated asb-tui install and self-test lifecycle | Install and operate asb-tui safely as an optional extension. | Implement the standalone transactional lifecycle and delegated command contract; open a focused ASB CLI routing dependency if no existing safe seam can expose asb tui. | contracts_20260906 |
+| P1 | [AR-1020](tasks/AR-1020-asb-tui-install-selftest.md): Add isolated asb-tui install and self-test lifecycle | Install and operate asb-tui safely as an optional extension. | Add the fail-closed delegated lifecycle CLI and production protocol/terminal self-test, then run full hosted and trusted local validation. | contracts_20260906 |
 
 ## Open
 
