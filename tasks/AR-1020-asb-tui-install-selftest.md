@@ -2,7 +2,7 @@
 {
   "branch": "feature/asb-tui-install-selftest",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T18:53:34+00:00",
+  "claim_expires": "2026-09-10T19:05:45+00:00",
   "depends_on": [
     "AR-1019"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Install and operate asb-tui safely as an optional extension.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Add isolated asb-tui install and self-test lifecycle",
-  "updated_at": "2026-09-10T15:54:28+00:00",
+  "updated_at": "2026-09-10T16:05:45+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-install-selftest"
 }
 ---
@@ -46,3 +46,5 @@ read-only status, detached-run continuity, permissions/privacy checks, and clear
   user-space install/status/upgrade/remove/launch implementation and tests in asb-tui, define a
   fail-closed delegated invocation contract, and record a separate product-side routing dependency
   rather than claiming current end-to-end ASB CLI availability.
+
+- 2026-09-10T16:05:45+00:00: Heartbeat by contracts_20260906.
