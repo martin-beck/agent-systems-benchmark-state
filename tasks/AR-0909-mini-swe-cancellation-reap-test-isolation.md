@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Monitor fresh PR127 exact-head CI at c897313 once; classify terminal emulated/formal/platform results. Do not merge.",
+  "next_action": "Hold PR127 unmerged; AR-0877 must repair formal acquisition and platform owner must repair hosted distro evidence, then rerun exact-head CI unchanged.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "c897313524a8d061a078465c5db0512ed366af9d",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 276,
+  "task_revision": 277,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T08:19:42+00:00",
+  "updated_at": "2026-09-10T08:26:28+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1054,3 +1054,13 @@ classified.
   emulated AArch64 34454519079, Rust 34454519103, repository quality 34454518773, native platform
   34454518771, formal 34454518676, fault 34454518886, AWQ 34454518837, headers 34454518729. Headers
   is already success; remaining checks are in progress. PR stays open and unmerged.
+
+- 2026-09-10T08:26:28+00:00: PR #127 exact reviewed head c897313/base b6d04a83 is terminal. SUCCESS:
+  emulated AArch64 34454519079 (the prior candidate-owned cancellation failure is closed), Rust
+  34454519103, repository quality 34454518773, fault 34454518886 all three jobs, AWQ 34454518837,
+  headers 34454518729, plus Kani and Loom in formal 34454518676. FAILURE before AR-0909 product
+  validation: Native 34454518771 rejects the hosted runner distribution as not the exact pinned
+  release; TLC/Alloy job in formal 34454518676 fails during shared bounded tool acquisition before
+  model execution. These are platform/shared AR-0877 infrastructure blockers, not evidence against
+  c897313. No checks remain pending. mergeStateStatus is UNSTABLE; PR remains open and must not
+  merge until both infrastructure lanes are repaired and fresh exact-head CI is fully green.
