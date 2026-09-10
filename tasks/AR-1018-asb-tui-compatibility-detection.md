@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Detect whether an asb-tui bundle is compatible before installation or launch.",
-  "task_revision": 172,
+  "task_revision": 173,
   "title": "Add asb-tui compatibility and terminal capability detection",
-  "updated_at": "2026-09-10T14:58:19+00:00",
+  "updated_at": "2026-09-10T14:58:49+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-compatibility-detection"
 }
 ---
@@ -594,3 +594,6 @@ fixtures for mismatches, privacy-safe diagnostics, and no host identifiers in pu
   opened focused sanitized PR https://github.com/martin-beck/asb-tui/pull/2 against main. GitHub
   reports exact head OID d268a938 and hosted Rust, supply-chain, and privacy gates in progress. No
   force push or merge occurred.
+
+- 2026-09-10T14:58:49+00:00: Recorded command exit 0; command argv SHA-256
+  5c35e084046b3c25b329c3512379bf5f4429a3b62af44a1597b42d169d095cb7.
