@@ -11,16 +11,16 @@
     "AR-1030"
   ],
   "id": "AR-1010",
-  "next_action": "Independently review immutable asb-tui PR 9 head 41c61bdef7e0ae7d5dd3c9c7c0056d5d364b9965 and tree 3515148c613079afee0a1cafbf19b1a2af795ad5, wait for exact-head hosted CI, and repair any blocking finding before readiness; do not merge without approval.",
+  "next_action": "Fresh immutable review of standalone asb-tui PR #9 exact head 140b4fa2bb38be6fc5e6299a02fd67ae11223339 tree b89108c5a2cd324c5a35d968a47438ec59feba6a; require exact-head hosted CI green and do not merge without approval.",
   "owner": "codex-ar1010-asb-tui-renderer-20260910",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 306,
+  "task_revision": 307,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T22:55:34+00:00",
+  "updated_at": "2026-09-10T22:56:00+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -1028,3 +1028,27 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-10T22:55:34+00:00: Recorded command exit 0; command argv SHA-256
   4ddb7b68bb963d858a13caecda9e6f3e2416a3cad91cdd3b79459387b72a2960.
+
+- 2026-09-10T22:56:00+00:00: Published signed+DCO review-repair successor
+  140b4fa2bb38be6fc5e6299a02fd67ae11223339 (tree b89108c5a2cd324c5a35d968a47438ec59feba6a) to draft
+  PR #9. It bounds Ratatui backend/frame dimensions before allocation (4096 per dimension, 262144
+  cells; deterministic 1x1 transient-zero fallback; oversized initial PTY and resize storms fail
+  closed and restore termios) and hardens nested untrusted executable self-tests with a dedicated
+  process group, retained pidfd leader fence, bounded nonblocking output, serialized subreaper
+  adoption for session escapees, fail-closed Result-based /proc enumeration, and bounded group/pidfd
+  kill+reap on success, reject, timeout, malformed, oversized, and signal paths. Adversarial PTY
+  proof covers fork/pipe rejection, timeout, success-with-child, SIGTERM, setsid escape, 10 race
+  repeats, /proc fault injection, and rejects a preexisting unrelated child while proving it remains
+  live/unreaped. Full local exact-tree gates pass: fmt, Clippy -D warnings, 44 lib plus all
+  integration/doc tests, 88.24% region/91.44% line coverage, rustdoc, deterministic SBOM,
+  compatibility/release/publication validators, cargo-deny, cargo-audit, shellcheck/shfmt,
+  workflow/zizmor, real promoted self-test ready, ASB-isolation 16 tests+2 doctests, privacy scans,
+  release build, gitleaks, and clean tree. Classified repaired failures: exit101 compile errors from
+  forbidden unsafe pre_exec/API imports replaced by safe process_group(0) and correct pidfd APIs;
+  exit101 resize fixture inherited TMUX and was repaired with controlled terminal env; exit127
+  release command was sanitized PATH only and reran green with explicit pinned Rust 1.93 paths; one
+  verification command initially inspected the state checkout due missing git -C, made no product
+  mutation, and was immediately rerun against the absolute product path. Scope remains standalone
+  asb-tui only; live control belongs to AR-1025 and benchmark runners remain authoritative external
+  ASB processes. Lifecycle JSON/schema and bundle fixtures are unchanged by this successor. Hosted
+  Repository quality is currently in progress on exact head.
