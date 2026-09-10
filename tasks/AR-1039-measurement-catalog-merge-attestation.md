@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-11T01:10:32+00:00",
   "depends_on": [],
   "id": "AR-1039",
-  "next_action": "Push signed head 607a3afb, open an unmerged PR, verify exact-head CI, and request immutable independent review before any corrective merge.",
+  "next_action": "Wait for all 12 PR #133 exact-head checks, then hand exact head/tree and CI evidence to an independent reviewer; do not merge.",
   "observed_branch": "docs/measurement-catalog-merge-attestation",
   "observed_dirty": 0,
   "observed_head": "607a3afb3a44b87f9c60b6ae3bc764570e84d5fe",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover the measurement catalog publication boundary without rewriting protected main.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Attest the measurement catalog merge boundary",
-  "updated_at": "2026-09-10T23:25:03+00:00",
+  "updated_at": "2026-09-10T23:25:23+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-merge-attestation"
 }
 ---
@@ -90,3 +90,14 @@ the corrective merge commit uses an actual multiline DCO trailer. This AR owns n
 
 - 2026-09-10T23:25:03+00:00: Recorded command exit 8; command argv SHA-256
   4ce5ca41d6c4a5ae9be6ffb5387c6f8e907bc86ebd7665e10ae5e2e68b864588.
+
+- 2026-09-10T23:25:23+00:00: Published PR #133 at
+  https://github.com/martin-beck/agent-systems-benchmark/pull/133 with exact base
+  0c65159d70ee728e21c7936663a90bea49ab0366 and head 607a3afb3a44b87f9c60b6ae3bc764570e84d5fe. PR
+  body was verified after correction and explicitly requires independent review and a genuine
+  multiline matching Signed-off-by trailer on eventual merge. Scope audit is exactly four files
+  (attestation JSON, bounded private integration test, two docs), 287 lines, no
+  Ratatui/Crossterm/render/TUI references. Latest wrapper exit 8 is gh pr checks expected pending
+  state: 7/12 completed success, 5 pending, no failures. Earlier post-command AR-1010 lease errors
+  occurred after gh read/edit succeeded; root recovered the expired lease and doctor --live is
+  green.
