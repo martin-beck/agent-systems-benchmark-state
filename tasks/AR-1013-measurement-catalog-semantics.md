@@ -8,7 +8,7 @@
     "AR-1001"
   ],
   "id": "AR-1013",
-  "next_action": "Independently review immutable PR #131 head 6d0c991/tree 3e4620f, require all 12 exact-head checks terminal green, and do not merge before approval.",
+  "next_action": "Independently review immutable PR #131 exact head 78c63febc0ce6c4724bf4d14121e9ae178e2a020 tree 9303272ac7070a742249722c0f9e13568c3ed660; require all exact-head CI terminal green and approval; do not merge.",
   "observed_branch": "feature/measurement-catalog-semantics",
   "observed_dirty": 0,
   "observed_head": "78c63febc0ce6c4724bf4d14121e9ae178e2a020",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define selectable ASB measurements grouped by stable semantic meaning.",
-  "task_revision": 117,
+  "task_revision": 118,
   "title": "Version the measurement catalog and semantic groups",
-  "updated_at": "2026-09-10T22:57:12+00:00",
+  "updated_at": "2026-09-10T22:57:53+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-semantics"
 }
 ---
@@ -319,3 +319,25 @@ duplicate, unit-mismatch, unavailable, and privacy-sensitive metrics.
 
 - 2026-09-10T22:57:12+00:00: Recorded command exit 0; command argv SHA-256
   4522d077a70e54eb113c8591e6e0e3c9b8c003fb923c6a0369f5f50716ef78fd.
+
+- 2026-09-10T22:57:53+00:00: Repair successor 78c63febc0ce6c4724bf4d14121e9ae178e2a020 (tree
+  9303272ac7070a742249722c0f9e13568c3ed660) is pushed to PR #131. Measurement definitions now expose
+  a closed path-free source_identity plus resolution_ns and map to every exact runtime
+  MetricDescriptor field for all 25 emitted metrics; parity checks
+  ID/unit/aggregation/scope/source/resolution. Public MeasurementCatalogV1 no longer implements
+  Deserialize; only 256-KiB-capped slice/reader constructors reach a private wire DTO, with
+  preflight top-level/nested/text bounds before sorting, canonical serialization or hashing.
+  Adversarial oversized vector/nested/string, bounded-reader, malformed-reader, source mismatch,
+  schema and compile-fail API tests pass. Exact-head fmt, workspace clippy -D warnings, full
+  workspace tests, rustdoc -D warnings, deny, audit, repository policy, contract consistency,
+  diff-check, signature/DCO and serial coverage gates pass; protocol line coverage is 96.44%. Six
+  untracked profraw files were removed exactly; root cause is existing capability_contract.rs
+  env_clear dropping LLVM_PROFILE_FILE and is assigned to a separate focused AR, with no unrelated
+  harness change in AR-1013. Repair failures classified: unsupported heartbeat --note exited 2 then
+  correct heartbeat passed; early tests exited 101 due intended validation ordering/source-class
+  fixtures and were repaired; schema tests exited 101 after Deserialize removal because
+  additionalProperties closure needed schemars deny_unknown_fields and regenerated fixtures; one
+  patch context miss exited 1 without mutation and was reapplied; final verification wrapper exited
+  1 only because generated state summaries concurrently drifted, reconcile then identical
+  verification passed; attempted unrelated harness patch exited 2 at shell parse before mutation and
+  was abandoned per scope.
