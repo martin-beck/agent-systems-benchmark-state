@@ -7,7 +7,7 @@
     "AR-1017"
   ],
   "id": "AR-1018",
-  "next_action": "Obtain independent immutable review of d268a938/ad238226; do not publish before approval.",
+  "next_action": "Publish approved d268a938, open focused PR, and require all exact-head checks before merge.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Detect whether an asb-tui bundle is compatible before installation or launch.",
-  "task_revision": 168,
+  "task_revision": 169,
   "title": "Add asb-tui compatibility and terminal capability detection",
-  "updated_at": "2026-09-10T14:56:40+00:00",
+  "updated_at": "2026-09-10T14:56:53+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-compatibility-detection"
 }
 ---
@@ -577,3 +577,8 @@ fixtures for mismatches, privacy-safe diagnostics, and no host identifiers in pu
   94bec3e43b310a8b323a737424bb2590a75f744d6affcb60cb37e04ea90fd55b.
 
 - 2026-09-10T14:56:40+00:00: Heartbeat by contracts_20260906.
+
+- 2026-09-10T14:56:53+00:00: Coordinator and independent immutable reviews approve
+  d268a938446c26e9ef40c97db7460373997c9e03/tree ad238226c0d441458204ecdafff02ad14a121575 for
+  publication. Publication is in progress under exact head/tree/base guards; merge remains
+  prohibited until fresh exact-head checks and coordinator verification are green.
