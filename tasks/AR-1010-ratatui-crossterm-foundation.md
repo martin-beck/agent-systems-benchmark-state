@@ -2,7 +2,7 @@
 {
   "branch": "feature/tui-ratatui-crossterm-foundation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T22:13:56+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0803",
     "AR-0804",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/tui-ratatui-crossterm-foundation",
   "observed_dirty": 0,
   "observed_head": "2754623be3503589b24cbb84341dfcf65ccb8911",
-  "owner": "codex-ar1010-upstream-20260910",
+  "owner": "",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T19:13:56+00:00",
+  "updated_at": "2026-09-10T19:14:51+00:00",
   "worktree_key": "agent-systems-benchmark-tui-ratatui-crossterm-foundation"
 }
 ---
@@ -216,3 +216,7 @@ Implementation has not started. Read the linked plan before claiming.
   reopen without changing product or weakening dependency policy.
 
 - 2026-09-10T19:13:56+00:00: Claimed by codex-ar1010-upstream-20260910.
+
+- 2026-09-10T19:14:51+00:00: Repository boundary corrected before worker launch: preserve
+  unpublished ASB candidate only as historical evidence; all Ratatui/render/application work must
+  continue in the existing asb-tui repository.
