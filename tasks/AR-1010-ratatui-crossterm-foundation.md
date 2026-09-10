@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 242,
+  "task_revision": 243,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T21:51:01+00:00",
+  "updated_at": "2026-09-10T21:51:13+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -808,3 +808,6 @@ Implementation has not started. Read the linked plan before claiming.
   repository toolchain path; recorded exit 1 at 21:50 was the corrected cargo fmt --check reporting
   formatting-only diffs in the new test; cargo fmt then completed successfully. No failure is
   acceptance evidence; the repaired multiplexer test and all broad gates remain pending.
+
+- 2026-09-10T21:51:13+00:00: Recorded command exit 101; command argv SHA-256
+  dfd5cd71ee62a1e4aed700db9215b84d026f6aaced8ecbd6c91a1f00c5c3b45b.
