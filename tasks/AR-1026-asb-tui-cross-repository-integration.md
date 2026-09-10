@@ -3,7 +3,7 @@
   "branch": "test/asb-tui-cross-repository-integration",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1024", "AR-1025"],
+  "depends_on": ["AR-1024", "AR-1025", "AR-1029"],
   "id": "AR-1026",
   "next_action": "Prove the ASB router and standalone frontend against exact cross-repository revisions through install, launch, run continuity and lifecycle faults.",
   "owner": "",
@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Integrate and adversarially test the exact ASB and asb-tui revisions together.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Qualify cross-repository ASB and asb-tui integration",
-  "updated_at": "2026-09-10T19:00:00+00:00",
+  "updated_at": "2026-09-10T19:20:00+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-cross-repository-integration"
 }
 ---

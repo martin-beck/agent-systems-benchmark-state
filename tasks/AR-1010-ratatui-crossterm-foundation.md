@@ -1,6 +1,6 @@
 ---
 {
-  "branch": "feature/tui-ratatui-crossterm-foundation",
+  "branch": "feature/ratatui-crossterm-foundation",
   "checkpoint_commit": "",
   "claim_expires": "",
   "depends_on": [
@@ -11,19 +11,16 @@
   ],
   "id": "AR-1010",
   "next_action": "Upstream Kasuari then Ratatui selectable std-map features; consume only after reviewed immutable releases eliminate foldhash.",
-  "observed_branch": "feature/tui-ratatui-crossterm-foundation",
-  "observed_dirty": 0,
-  "observed_head": "2754623be3503589b24cbb84341dfcf65ccb8911",
   "owner": "",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "open",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T19:14:51+00:00",
-  "worktree_key": "agent-systems-benchmark-tui-ratatui-crossterm-foundation"
+  "updated_at": "2026-09-10T19:20:00+00:00",
+  "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
 ## AR-1010
@@ -217,6 +214,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-10T19:13:56+00:00: Claimed by codex-ar1010-upstream-20260910.
 
-- 2026-09-10T19:14:51+00:00: Repository boundary corrected before worker launch: preserve
+- 2026-09-10T19:14:51+00:00: Repository boundary corrected before worker launch: preserve the
   unpublished ASB candidate only as historical evidence; all Ratatui/render/application work must
   continue in the existing asb-tui repository.
+
+- 2026-09-10T19:20:00+00:00: Re-scoped all application, renderer, Ratatui/Crossterm runtime,
+  terminal lifecycle, and UI test ownership to the existing martin-beck/asb-tui repository. The
+  unpublished ASB product candidate is historical read-only evidence and must not be merged there.

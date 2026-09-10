@@ -12,10 +12,10 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Publish terminal frontend workflow guides",
-  "updated_at": "2026-09-08T20:31:33+00:00",
-  "worktree_key": "agent-systems-benchmark-frontend-workflow-guides"
+  "updated_at": "2026-09-10T19:20:00+00:00",
+  "worktree_key": "agent-systems-benchmark-asb-tui-frontend-workflow-guides"
 }
 ---
 ## AR-0809
@@ -23,3 +23,6 @@
 Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI.
 
 Implementation has not started. Read the linked plan before claiming.
+
+- 2026-09-10T19:20:00+00:00: Assigned application-facing workflow documentation and captures to
+  the standalone asb-tui repository.

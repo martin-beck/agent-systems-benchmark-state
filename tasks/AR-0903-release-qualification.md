@@ -19,6 +19,7 @@
     "AR-0898",
     "AR-0899",
     "AR-1012",
+    "AR-1029",
     "AR-0901",
     "AR-0902"
   ],
@@ -30,9 +31,9 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Deliver reproducible native release artifacts with complete support and evidence statements.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Package and qualify the first release",
-  "updated_at": "2026-09-09T13:31:55+00:00",
+  "updated_at": "2026-09-10T19:20:00+00:00",
   "worktree_key": "agent-systems-benchmark-release-qualification"
 }
 ---
@@ -41,3 +42,6 @@
 Deliver reproducible native release artifacts with complete support and evidence statements.
 
 Implementation has not started. Read the linked plan before claiming.
+
+- 2026-09-10T19:20:00+00:00: Added AR-1029 as a release gate so ASB cannot ship the legacy
+  in-tree renderer after the standalone frontend is integrated.

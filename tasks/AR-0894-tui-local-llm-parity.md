@@ -16,10 +16,10 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Add tested TUI parity for supported LLM setup and diagnostics only after CLI and existing TUI evidence are stable.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Add TUI parity for supported LLM modes",
-  "updated_at": "2026-09-09T10:25:06+00:00",
-  "worktree_key": "agent-systems-benchmark-tui-local-llm-parity"
+  "updated_at": "2026-09-10T19:20:00+00:00",
+  "worktree_key": "agent-systems-benchmark-asb-tui-local-llm-parity"
 }
 ---
 ## AR-0894
@@ -28,3 +28,6 @@ This depends on unfinished work and claims no current screen, shortcut or local-
 
 - 2026-09-09T10:25:06+00:00: Raised local-LLM TUI parity priority by operator request; dependencies
   and planned status remain unchanged.
+
+- 2026-09-10T19:20:00+00:00: Assigned all local-LLM TUI state, views, and application tests to
+  the standalone asb-tui repository.

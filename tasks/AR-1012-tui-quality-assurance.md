@@ -12,10 +12,10 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Qualify TUI reliability, accessibility, performance isolation, and reproducible CI captures.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Qualify TUI quality and isolation",
-  "updated_at": "2026-09-10T00:00:00+00:00",
-  "worktree_key": "agent-systems-benchmark-tui-quality-assurance"
+  "updated_at": "2026-09-10T19:20:00+00:00",
+  "worktree_key": "agent-systems-benchmark-asb-tui-quality-assurance"
 }
 ---
 ## AR-1012
@@ -23,3 +23,6 @@
 Qualify the complete professional TUI before release claims.
 
 Implementation has not started. Read the linked plan before claiming.
+
+- 2026-09-10T19:20:00+00:00: Assigned renderer, terminal lifecycle, application performance, and
+  accessibility qualification to the standalone asb-tui repository.

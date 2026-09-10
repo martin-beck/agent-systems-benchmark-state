@@ -19,10 +19,10 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Make secure two-machine benchmark operation clear and efficient in the terminal frontend.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Build remote terminal frontend workflows",
-  "updated_at": "2026-09-09T10:25:00+00:00",
-  "worktree_key": "agent-systems-benchmark-remote-tui-workflows"
+  "updated_at": "2026-09-10T19:20:00+00:00",
+  "worktree_key": "agent-systems-benchmark-asb-tui-remote-workflows"
 }
 ---
 ## AR-0817
@@ -33,3 +33,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-09T10:25:00+00:00: Raised remote TUI workflow priority by operator request; dependencies
   and planned status remain unchanged.
+
+- 2026-09-10T19:20:00+00:00: Assigned the complete remote terminal application workflow to
+  asb-tui; ASB owns only the authenticated remote protocol and runner behavior it consumes.

@@ -12,10 +12,10 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Deliver an easy, discoverable, keyboard-first TUI experience for setup and benchmark analysis.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Deliver TUI UX quality features",
-  "updated_at": "2026-09-10T00:00:00+00:00",
-  "worktree_key": "agent-systems-benchmark-tui-ux-quality"
+  "updated_at": "2026-09-10T19:20:00+00:00",
+  "worktree_key": "agent-systems-benchmark-asb-tui-ux-quality"
 }
 ---
 ## AR-1011
@@ -23,3 +23,6 @@
 Deliver the high-value usability features on top of the adopted TUI foundation.
 
 Implementation has not started. Read the linked plan before claiming.
+
+- 2026-09-10T19:20:00+00:00: Assigned every screen, widget, navigation action, and application
+  test to the standalone asb-tui repository.

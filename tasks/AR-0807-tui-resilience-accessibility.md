@@ -19,10 +19,10 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Qualify the standalone TUI across terminals and platforms without perturbing benchmark results.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Qualify terminal frontend usability and isolation",
-  "updated_at": "2026-09-10T19:00:00+00:00",
-  "worktree_key": "agent-systems-benchmark-tui-resilience-accessibility"
+  "updated_at": "2026-09-10T19:20:00+00:00",
+  "worktree_key": "agent-systems-benchmark-asb-tui-resilience-accessibility"
 }
 ---
 ## AR-0807
@@ -36,3 +36,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-10T19:00:00+00:00: Added AR-1026 dependency so qualification targets the actual
   standalone repository and product-side `asb tui` router rather than the legacy built-in shell.
+
+- 2026-09-10T19:20:00+00:00: Assigned all terminal UX, application resilience, accessibility, and
+  renderer qualification work to the standalone asb-tui repository.
