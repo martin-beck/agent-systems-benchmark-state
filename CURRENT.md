@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1018](tasks/AR-1018-asb-tui-compatibility-detection.md): Add asb-tui compatibility and terminal capability detection | Detect whether an asb-tui bundle is compatible before installation or launch. | Await coordinator independent validation of exact-main attestation, post-merge CI, restored protections, and divergent local empty attestation; do not release. | contracts_20260906 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -206,6 +200,7 @@ Never edit this file directly.
 | P1 | [AR-1007](tasks/AR-1007-benchmark-validity.md): Maintain benchmark validity and portability registry | Track dataset provenance, contamination risk, grader validity and native portability per workload revision. | Implement registry schema and validation for built-in and imported workloads. | - |
 | P1 | [AR-1008](tasks/AR-1008.md): Integrate Agent Workflow Quality in shadow mode | Pin AWQ v0.1.0 in Agent Systems Benchmark and its state repository without replacing native gates or coordinator behavior. | Claim, create an isolated product worktree, add pinned policies and shadow workflows to both repositories, then publish reviewed evidence. | - |
 | P1 | [AR-1017](tasks/AR-1017-asb-tui-separate-repository.md): Create the standalone asb-tui extension repository | Build asb-tui as an isolated optional repository and extension. | Publication and exact-head verification complete; no further AR-1017 action. | - |
+| P1 | [AR-1018](tasks/AR-1018-asb-tui-compatibility-detection.md): Add asb-tui compatibility and terminal capability detection | Detect whether an asb-tui bundle is compatible before installation or launch. | Await coordinator independent validation of exact-main attestation, post-merge CI, restored protections, and divergent local empty attestation; do not release. | - |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Run final exact-main and local post-merge verification using required native x86_64 kernel evidence and applicable pinned QEMU AArch64 portability checks; record native ARM64 PMU/eBPF as optional future evidence, then release. | - |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Run final state validation/live doctor and release done after confirming clean synchronized product/state refs at signed merge a0d80e4. | - |
 | P2 | [AR-0309](tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | Run a maintained MIT OpenHands SDK or canonical headless client. | Monitor PR #65 exact-head CI for fec0487, investigate any failure, and await final review; do not merge. | - |

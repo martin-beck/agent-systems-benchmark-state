@@ -2,7 +2,7 @@
 {
   "branch": "feature/asb-tui-compatibility-detection",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T18:09:08+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1017"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "contracts_20260906",
+  "owner": "",
   "plan": "../plans/AR-1018.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Detect whether an asb-tui bundle is compatible before installation or launch.",
-  "task_revision": 197,
+  "task_revision": 198,
   "title": "Add asb-tui compatibility and terminal capability detection",
-  "updated_at": "2026-09-10T15:15:48+00:00",
+  "updated_at": "2026-09-10T15:17:00+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-compatibility-detection"
 }
 ---
@@ -701,3 +701,15 @@ fixtures for mismatches, privacy-safe diagnostics, and no host identifiers in pu
   resolution enabled, force/deletion disabled, review protection absent. Public history was not
   rewritten. Hold release for coordinator review because local empty attestation e3e02c7 remains a
   divergent unpublished sibling and the concurrent PR 4 path must be independently accepted.
+
+- 2026-09-10T15:17:00+00:00: Coordinator independently validated terminal public result. AR-1018
+  reviewed head d268a938446c26e9ef40c97db7460373997c9e03 merged in PR 2 as
+  add8df612456e5d5568af344a94e1a6ae568b0d9 with exact reviewed tree
+  ad238226c0d441458204ecdafff02ad14a121575; PR-head hosted 34492510547 and exact-main hosted/trusted
+  34493198580/34493198554 passed. Corrective public PR 4 from SSH-signed exact-DCO
+  489a1c7422ce214af281e287ac588ca8fa052ad2 added a sanitized merge attestation and passed hosted
+  exact-head 34494030097. It squash-merged normally as GitHub-verified exact-DCO main
+  a7ca8e07f177fc6a647b3297df624137cfb85e86; fresh exact-main hosted 34494265901 and trusted local
+  runner 34494265789 passed. Native signed-commit protection is restored; strict hosted checks,
+  admin enforcement, conversation resolution, and no force/delete remain. Duplicate PR 3 was closed
+  unmerged; stale coordinators were disconnected for single-writer ownership.
