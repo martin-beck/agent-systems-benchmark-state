@@ -11,7 +11,7 @@
     "AR-1023"
   ],
   "id": "AR-1024",
-  "next_action": "Await repaired independently reviewed AR-1010 successor; after explicit exact-head archive authorization, repin and run real compiled PTY plus all exact-head gates.",
+  "next_action": "Await a new AR-1010 successor that repairs unrelated-child classification and persistent-proc-failure setsid escape, passes fresh immutable review and exact-head CI; only then request exact archive build authorization, repin, PTY-test and rerun gates.",
   "observed_branch": "feature/asb-tui-lifecycle-router",
   "observed_dirty": 0,
   "observed_head": "c545c33c8bfedd33fb234ec7f2526447dfe56534",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend.",
-  "task_revision": 259,
+  "task_revision": 260,
   "title": "Implement `asb tui` lifecycle routing",
-  "updated_at": "2026-09-10T23:07:17+00:00",
+  "updated_at": "2026-09-10T23:07:33+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-lifecycle-router"
 }
 ---
@@ -741,3 +741,10 @@ complete gates, exact-head CI and post-merge verification.
 - 2026-09-10T23:00:23+00:00: Heartbeat by codex-ar1024-router-20260910.
 
 - 2026-09-10T23:07:17+00:00: Heartbeat by codex-ar1024-router-20260910.
+
+- 2026-09-10T23:07:33+00:00: AR-1024 remains clean at signed+DCO
+  c545c33c8bfedd33fb234ec7f2526447dfe56534. Rejected upstream 140b4fa was neither pinned, built nor
+  consumed: immutable review found concurrent unrelated-child misclassification/kill and persistent
+  /proc failure leaking a setsid escape. The ASB process-group boundary and external
+  authoritative-runner sentinel are implemented and focused green, but final cross-repository
+  qualification remains deliberately null until a non-rejected upstream successor exists.
