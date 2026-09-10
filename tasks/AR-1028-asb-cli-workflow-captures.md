@@ -7,7 +7,7 @@
     "AR-0872"
   ],
   "id": "AR-1028",
-  "next_action": "Generate deterministic privacy-safe ASB CLI workflow captures without importing terminal UI dependencies.",
+  "next_action": "Implement real-CLI normalized transcript fixture, provenance hash checks, drift/privacy negatives, and workflow documentation link.",
   "observed_branch": "docs/asb-cli-workflow-captures",
   "observed_dirty": 0,
   "observed_head": "32df706413a6f165f086941426a5c793bd5e01e8",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Produce reproducible ASB CLI transcripts separately from standalone TUI screenshots.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Generate ASB CLI workflow captures",
-  "updated_at": "2026-09-10T20:03:55+00:00",
+  "updated_at": "2026-09-10T20:05:21+00:00",
   "worktree_key": "agent-systems-benchmark-asb-cli-workflow-captures"
 }
 ---
@@ -38,3 +38,8 @@ renderer, terminal application, Ratatui/Crossterm dependency, or asb-tui source.
 
 - 2026-09-10T20:03:55+00:00: Recorded command exit 0; command argv SHA-256
   a2808036e9be365682dfe9eed52cfb76668c7c24ed86fdc4b59d26b160043f7d.
+
+- 2026-09-10T20:05:21+00:00: Initial audit complete at ASB 32df706. Scope is text-only CLI evidence:
+  doctor, plan, run, report, compare, record, replay. No screenshots, terminal renderer, TUI
+  application, Ratatui/Crossterm, or asb-tui source. Classified initial exit 2 as read-only sed
+  using the state checkout instead of sibling product docs; no mutation.

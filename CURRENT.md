@@ -9,7 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1022](tasks/AR-1022-asb-tui-release-contract-hardening.md): Harden the asb-tui release lifecycle contract | Turn the tested unverified asb-tui lifecycle boundary into a release-safe delegated contract. | Monitor PR 10 exact-head CI at f406af260db8da12356906aaf12d3d75b235e5c3, obtain independent exact-diff review, repair any finding, and record merge plus exact-main post-merge evidence. | codex-ar1022-lifecycle-20260910 |
 | P0 | [AR-1030](tasks/AR-1030-ratatui-dependency-closure.md): Resolve the Ratatui dependency closure | Make the maintained Ratatui release consumable by standalone asb-tui without hiding supply-chain exceptions. | Resolve the exact Ratatui release dependency closure through a reviewed upstream feature or narrowly justified fail-closed policy decision. | codex-ar1030-ratatui-policy-20260910 |
-| P1 | [AR-1028](tasks/AR-1028-asb-cli-workflow-captures.md): Generate ASB CLI workflow captures | Produce reproducible ASB CLI transcripts separately from standalone TUI screenshots. | Generate deterministic privacy-safe ASB CLI workflow captures without importing terminal UI dependencies. | codex-ar1028-cli-captures-20260910 |
+| P1 | [AR-1028](tasks/AR-1028-asb-cli-workflow-captures.md): Generate ASB CLI workflow captures | Produce reproducible ASB CLI transcripts separately from standalone TUI screenshots. | Implement real-CLI normalized transcript fixture, provenance hash checks, drift/privacy negatives, and workflow documentation link. | codex-ar1028-cli-captures-20260910 |
 
 ## Open
 
