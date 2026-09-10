@@ -12,7 +12,7 @@
   "id": "AR-1010",
   "next_action": "Repair the Ratatui dependency closure so cargo-deny and cargo-audit pass; preserve TUI semantics and rerun all gates.",
   "observed_branch": "feature/tui-ratatui-crossterm-foundation",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "2754623be3503589b24cbb84341dfcf65ccb8911",
   "owner": "replay_20260906",
   "plan": "../plans/AR-1010.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T04:41:36+00:00",
+  "updated_at": "2026-09-10T04:41:42+00:00",
   "worktree_key": "agent-systems-benchmark-tui-ratatui-crossterm-foundation"
 }
 ---
