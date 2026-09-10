@@ -11,7 +11,7 @@
     "AR-0851"
   ],
   "id": "AR-1017",
-  "next_action": "Hold clean signed head 0a726d4 unpublished under the current do-not-publish instruction. When publication is explicitly resumed, create/configure the public repository, push this exact reviewed head, require hosted PR quality plus trusted exact-main local-runner verification, and verify all exact-head checks before release.",
+  "next_action": "Publish reviewed signed head 0a726d4 unchanged as public martin-beck/asb-tui main; configure metadata, security, and required hosted plus trusted self-hosted exact-main checks; verify exact-head CI before release.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Build asb-tui as an isolated optional repository and extension.",
-  "task_revision": 154,
+  "task_revision": 155,
   "title": "Create the standalone asb-tui extension repository",
-  "updated_at": "2026-09-10T11:59:21+00:00",
+  "updated_at": "2026-09-10T12:00:54+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-separate-repository"
 }
 ---
@@ -595,3 +595,10 @@ metadata, and tests proving the main benchmark runs independently when the TUI i
   supply-chain, workflow, shell, release-authentication, privacy, Gitleaks, provenance and ASB-core
   isolation gates remain green. No remote or publication exists; current instruction explicitly
   prohibits publication.
+
+- 2026-09-10T12:00:54+00:00: Publication explicitly resumed after causal coverage repair and
+  independent pre-publication gates passed at signed+DCO head
+  0a726d4ab3f939ab21811608e952b6fc1249c22c/tree db1d64341d060d3b6f86dd868a11ea45a0899692. AR-1017 is
+  publication-in-progress. Preserve signed history without rewrite; verify GitHub authentication and
+  repository nonexistence before creation, then record public URL, settings, rules/protection, exact
+  pushed SHA, workflow run IDs, conclusions, and local-runner evidence.
