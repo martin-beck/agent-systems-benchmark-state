@@ -2,22 +2,22 @@
 {
   "branch": "docs/measurement-catalog-merge-attestation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-11T01:33:45+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1039",
   "next_action": "Immutable independent review of PR #133 exact head 607a3afb/tree b45e1a6; if approved, merge only with a genuine multiline matching Signed-off-by trailer and verify post-merge main.",
   "observed_branch": "docs/measurement-catalog-merge-attestation",
   "observed_dirty": 0,
   "observed_head": "607a3afb3a44b87f9c60b6ae3bc764570e84d5fe",
-  "owner": "codex-ar1039-integration-20260911",
+  "owner": "",
   "plan": "../plans/AR-1039.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Recover the measurement catalog publication boundary without rewriting protected main.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Attest the measurement catalog merge boundary",
-  "updated_at": "2026-09-10T23:35:51+00:00",
+  "updated_at": "2026-09-10T23:35:54+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-merge-attestation"
 }
 ---
@@ -147,3 +147,6 @@ the corrective merge commit uses an actual multiline DCO trailer. This AR owns n
 - 2026-09-10T23:35:51+00:00: Corrective merge a01f7f2 is GitHub-signed and has exact reviewed tree,
   but post-merge policy rejects trailer name Martin Beck because GitHub authored it as martin-beck.
   Preserve both commits; extend attestation and merge recipe using exact GitHub author identity.
+
+- 2026-09-10T23:35:54+00:00: Requires a second reviewed correction for exact merge-author DCO
+  matching; protected history must not be rewritten.
