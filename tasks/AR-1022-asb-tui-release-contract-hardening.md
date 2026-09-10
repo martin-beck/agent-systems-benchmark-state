@@ -11,16 +11,16 @@
     "AR-1021"
   ],
   "id": "AR-1022",
-  "next_action": "Monitor PR 10 exact-head CI at f406af260db8da12356906aaf12d3d75b235e5c3, obtain independent exact-diff review, repair any finding, and record merge plus exact-main post-merge evidence.",
+  "next_action": "Wait for AR-1030 PR 11 to merge, rebase signed+DCO AR-1022 PR 10 onto exact new asb-tui main, reconcile overlaps to source_only_unverified, rerun full gates and exact-head CI, then integrate by protected admin merge only when all requirements are green.",
   "owner": "codex-ar1022-lifecycle-20260910",
   "plan": "../plans/AR-1022.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Turn the tested unverified asb-tui lifecycle boundary into a release-safe delegated contract.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Harden the asb-tui release lifecycle contract",
-  "updated_at": "2026-09-10T20:15:11+00:00",
+  "updated_at": "2026-09-10T20:16:01+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-release-contract-hardening"
 }
 ---
@@ -274,3 +274,14 @@ and filesystem tests, complete local gates, independent review, exact-head CI an
 
 - 2026-09-10T20:15:11+00:00: Recorded command exit 0; command argv SHA-256
   9b9aa60ff2dd4910312e53b264d502f0b69298f015cdbcd04d3b12102e9377c0.
+
+- 2026-09-10T20:16:01+00:00: Exact remote PR 10 head 4efdc02aae93dd6fbec561257a37385f70a5d980
+  removes self-referential embedded artifact/source hashes: static embedded signer/promotion policy
+  bootstraps verification, the signed external manifest binds artifact identities, and mandatory
+  ASB_TUI_SOURCE_COMMIT/TREE release-build metadata binds candidate source. Independent re-review
+  found no blocking source issue. Exact-head cargo fmt/clippy/test/doc/release build,
+  schemas/publication/channel validators, deny/audit, shell/workflow/Gitleaks, ASB isolation (16
+  unit + 2 doc), and 90.82% line coverage all pass; GitHub quality CI passes. PR body is current,
+  target artifacts removed, tree clean, remote exact. Exit 1 at 20:10:11 UTC was only an apply_patch
+  context mismatch; no product mutation or test ran, and the documentation patch was reapplied and
+  validated. Integration intentionally waits for overlapping AR-1030 per merge ordering.
