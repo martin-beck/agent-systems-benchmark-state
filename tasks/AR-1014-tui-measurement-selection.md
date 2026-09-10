@@ -3,7 +3,7 @@
   "branch": "feature/tui-measurement-selection",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1013", "AR-0804", "AR-0805", "AR-1025", "AR-1033", "AR-1036"],
+  "depends_on": ["AR-1013", "AR-0804", "AR-0805", "AR-1025", "AR-1033", "AR-1036", "AR-1037"],
   "id": "AR-1014",
   "next_action": "Implement the catalog-driven TUI selection flow after AR-1013 is reviewed and merged.",
   "owner": "",
@@ -12,7 +12,7 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Let users select grouped measurements from the standalone ASB TUI.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Add grouped measurement selection to the TUI",
   "updated_at": "2026-09-10T21:04:37+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-measurement-selection"
@@ -40,3 +40,7 @@ test in `martin-beck/asb-tui`; consume the ASB measurement catalog only through 
 
 - 2026-09-10T21:40:00+00:00: Marked AR-0804 and AR-0805 as read-only migration inputs that cannot
   reopen ASB UI implementation paths.
+
+- 2026-09-10T22:20:00+00:00: Added AR-1037 because ASB had no authoritative run-plan field for a
+  selected measurement set. The standalone UI must submit that exact canonical selection and show
+  mandatory non-selectable evidence separately.
