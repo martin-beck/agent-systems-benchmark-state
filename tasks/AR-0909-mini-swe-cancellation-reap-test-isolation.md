@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T00:17:42+00:00",
+  "updated_at": "2026-09-10T00:20:34+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -258,3 +258,6 @@ classified.
   job 102689149968 in Formal assurance run 34418686110 failed. Repository Quality, Rust, native
   Ubuntu, AWQ, headers, fault, fuzz, mutation, Kani, and Loom succeeded. PR remains OPEN with
   mergeStateStatus UNSTABLE; candidate unchanged.
+
+- 2026-09-10T00:20:34+00:00: Recorded command exit 0; command argv SHA-256
+  30b52e54a40d886e4a61567bebece181abff368a079bd7346ec1ecadc47dfff4.
