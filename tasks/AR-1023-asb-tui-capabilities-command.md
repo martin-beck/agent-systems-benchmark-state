@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish the ASB capability negotiation command required by the standalone frontend.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Add the ASB frontend capabilities command",
-  "updated_at": "2026-09-10T19:34:43+00:00",
+  "updated_at": "2026-09-10T19:35:03+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-capabilities-command"
 }
 ---
@@ -106,3 +106,6 @@ local gates, independent review, exact-head CI and post-merge verification.
   rejection separately; two apply_patch context misses were no-op incremental-edit conflicts.
   Focused capability contract now passes, with exact emitted fixture, generated schema equality,
   strict drift rejection and malformed CLI coverage.
+
+- 2026-09-10T19:35:03+00:00: Recorded command exit 1; command argv SHA-256
+  b8c8ec6288c650b38396769a302d4ee87b422c44d5ef3389ce1d7b0fd0bb8174.
