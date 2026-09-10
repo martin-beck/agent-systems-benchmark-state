@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Replace invalid host-/bin/sh assumption with a reviewed architecture-neutral process fixture or amend cross-emulation evidence contract; preserve real group oracle. Do not rerun unchanged head or merge.",
+  "next_action": "Obtain immutable review of c897313; if approved, guarded-update PR127 and require fresh exact-head hosted CI before merge.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "c897313524a8d061a078465c5db0512ed366af9d",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 273,
+  "task_revision": 274,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T08:17:27+00:00",
+  "updated_at": "2026-09-10T08:18:17+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1029,3 +1029,18 @@ classified.
 
 - 2026-09-10T08:17:27+00:00: Recorded command exit 0; command argv SHA-256
   25215b98a3e2f524e6e9816818c4cbd797c31238f775374f48cb86ee5f2c4066.
+
+- 2026-09-10T08:18:17+00:00: Signed successor c897313524a8d061a078465c5db0512ed366af9d (tree
+  5c8188deea166c7b63a09c583609fa6e5402ec7a, parent d82b512) replaces QEMU-invisible global /proc
+  enumeration and cross-namespace PID-file readiness with a bounded direct kernel child oracle:
+  deterministic /bin/sh creates exactly two FIFO-blocked builtin children,
+  /proc/<leader>/task/<leader>/children identifies both, exact PGID/session/start-time identities
+  are retained, and post-cancel direct identity checks reject any runnable or ownership-changed
+  original. Child-list parser rejects duplicate, zero, malformed, and oversized evidence. Exact
+  AArch64 QEMU cancellation and parser tests pass; cancellation stress passes 20/20 QEMU plus 20/20
+  native; native mini_swe 10/10 passes; fmt, workspace all-target clippy -D warnings, and full
+  locked workspace tests/docs pass; exact-range repository policy, DCO, diff-check, Gitleaks, SSH
+  signature and clean one-file cfg(test) scope pass. A local full ARM64 suite additionally reached
+  139 pass/1 ignored but its unrelated malformed-executable spawn negative differed under the
+  locally extracted userspace; it is not claimed as hosted full-lane evidence. Fresh hosted
+  exact-head emulated CI remains mandatory.
