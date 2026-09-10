@@ -3,7 +3,9 @@
   "branch": "feature/asb-tui-install-selftest",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1019"],
+  "depends_on": [
+    "AR-1019"
+  ],
   "id": "AR-1020",
   "next_action": "Implement isolated user-space installation, self-test, status, upgrade, remove, and launch commands.",
   "observed_branch": "",
@@ -13,11 +15,11 @@
   "plan": "../plans/AR-1020.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Install and operate asb-tui safely as an optional extension.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Add isolated asb-tui install and self-test lifecycle",
-  "updated_at": "2026-09-10T00:00:00+00:00",
+  "updated_at": "2026-09-10T15:53:31+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-install-selftest"
 }
 ---
@@ -29,3 +31,7 @@ main benchmark process when the TUI disconnects or is removed.
 
 Acceptance criteria: fresh install/upgrade/remove/reconnect tests, interrupted-install recovery,
 read-only status, detached-run continuity, permissions/privacy checks, and clear actionable errors.
+
+- 2026-09-10T15:53:31+00:00: AR-1019 is complete on public exact main
+  990517eda77d4d42ff51ca5d1da03b56e7b8cdda with hosted and trusted local validation; isolated
+  install lifecycle may begin.
