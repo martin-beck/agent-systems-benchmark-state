@@ -13,7 +13,7 @@
   "id": "AR-0909",
   "next_action": "Hold PR #127 for terminal exact-head 67d07fd CI; investigate candidate-owned failures only. Do not merge; formal acquisition and native distribution identity remain separately owned.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "67d07fd2f681bd7b625bc517367d4ba49fb5034e",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0909.md",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 165,
+  "task_revision": 166,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T06:42:53+00:00",
+  "updated_at": "2026-09-10T06:42:59+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
