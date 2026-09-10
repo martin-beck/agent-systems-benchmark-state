@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-11T01:10:32+00:00",
   "depends_on": [],
   "id": "AR-1039",
-  "next_action": "Wait for all 12 PR #133 exact-head checks, then hand exact head/tree and CI evidence to an independent reviewer; do not merge.",
+  "next_action": "Immutable independent review of PR #133 exact head 607a3afb/tree b45e1a6; if approved, merge only with a genuine multiline matching Signed-off-by trailer and verify post-merge main.",
   "observed_branch": "docs/measurement-catalog-merge-attestation",
   "observed_dirty": 0,
   "observed_head": "607a3afb3a44b87f9c60b6ae3bc764570e84d5fe",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover the measurement catalog publication boundary without rewriting protected main.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Attest the measurement catalog merge boundary",
-  "updated_at": "2026-09-10T23:29:18+00:00",
+  "updated_at": "2026-09-10T23:29:41+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-merge-attestation"
 }
 ---
@@ -116,3 +116,8 @@ the corrective merge commit uses an actual multiline DCO trailer. This AR owns n
 
 - 2026-09-10T23:29:18+00:00: Recorded command exit 0; command argv SHA-256
   4ce5ca41d6c4a5ae9be6ffb5387c6f8e907bc86ebd7665e10ae5e2e68b864588.
+
+- 2026-09-10T23:29:41+00:00: Exact-head hosted CI is terminal green: all 12/12 PR #133 checks pass
+  at 607a3afb3a44b87f9c60b6ae3bc764570e84d5fe. No check failed or was skipped. Candidate remains
+  clean, signed, DCO-compliant, and unmerged. Release to OPEN now for immutable independent review;
+  do not mark done.
