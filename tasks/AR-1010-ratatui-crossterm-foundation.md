@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 283,
+  "task_revision": 284,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T22:25:04+00:00",
+  "updated_at": "2026-09-10T22:30:30+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -959,3 +959,6 @@ Implementation has not started. Read the linked plan before claiming.
   filter ran zero tests and was replaced by the fully qualified exact test, which first exposed the
   unsafe fixture then passed after repair. AR-1010 owns typed event injection/projection only;
   AR-1025 owns live client negotiation/polling/responsiveness. No ASB product or UI source changed.
+
+- 2026-09-10T22:30:30+00:00: Recorded command exit 127; command argv SHA-256
+  438dc966625bc869a068bae5a5a86a721ecbb630e0187f2519b1c60d1d2ea7b9.
