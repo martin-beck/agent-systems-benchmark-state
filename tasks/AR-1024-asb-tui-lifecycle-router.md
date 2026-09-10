@@ -11,7 +11,7 @@
     "AR-1023"
   ],
   "id": "AR-1024",
-  "next_action": "Await repaired independently reviewed AR-1010 successor after descendant-process leak blocker; repin only that exact head, compile from verified archive, run real cross-repo PTY, then rerun exact-head gates.",
+  "next_action": "Await repaired independently reviewed AR-1010 successor; after explicit exact-head archive authorization, repin and run real compiled PTY plus all exact-head gates.",
   "observed_branch": "feature/asb-tui-lifecycle-router",
   "observed_dirty": 1,
   "observed_head": "2c8a9c7941017992cc3f1aec7423b44ad2c4c6a7",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend.",
-  "task_revision": 248,
+  "task_revision": 249,
   "title": "Implement `asb tui` lifecycle routing",
-  "updated_at": "2026-09-10T22:43:23+00:00",
+  "updated_at": "2026-09-10T22:44:08+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-lifecycle-router"
 }
 ---
@@ -713,3 +713,13 @@ complete gates, exact-head CI and post-merge verification.
 
 - 2026-09-10T22:43:23+00:00: Recorded command exit 0; command argv SHA-256
   7d759dd27e2c6a61892fa5ab4ccccc345cb755ebc446388ec01e92d461530e01.
+
+- 2026-09-10T22:44:08+00:00: Final read-only boundary audit found ASB had the same descendant-held
+  lifecycle-pipe risk class as rejected upstream: direct child wait/reap could leave a descendant
+  retaining stdout, especially after unbounded launch. Hardened candidate execution as an owned
+  process group; waitid NOWAIT retains the leader/PID fence, group KILL closes descendant-held pipes
+  before reap, and response join is bounded. Added adversarial unbounded-launch descendant test;
+  focused test passes in 0.01s and asb-cli all-target Clippy -D warnings passes. Two preceding patch
+  attempts were invocation-only quoting/argv failures and made no product change; the
+  apply_patch-wrapped retry succeeded. Worktree is intentionally dirty only with this uncommitted
+  hardening pending final upstream pin.
