@@ -11,7 +11,7 @@
     "AR-1023"
   ],
   "id": "AR-1024",
-  "next_action": "Add signed-channel and resumable/truncation/concurrency negatives, validate copied schemas/docs, run clippy and full relevant gates, then commit for independent review after exact AR-1010 contract integration.",
+  "next_action": "Await immutable reviewed AR-1010 successor, repin exact contract, rerun cross-repo PTY and full exact-head gates, then publish for independent review.",
   "observed_branch": "feature/asb-tui-lifecycle-router",
   "observed_dirty": 6,
   "observed_head": "afc66c24da6e0d560c31915257edee5a8da05884",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend.",
-  "task_revision": 169,
+  "task_revision": 170,
   "title": "Implement `asb tui` lifecycle routing",
-  "updated_at": "2026-09-10T22:05:12+00:00",
+  "updated_at": "2026-09-10T22:06:15+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-lifecycle-router"
 }
 ---
@@ -506,3 +506,14 @@ complete gates, exact-head CI and post-merge verification.
 
 - 2026-09-10T22:05:12+00:00: Recorded command exit 0; command argv SHA-256
   5ea154a78fc4ae309bec5ea643400fec4c801a46fdd5e78495cfd011a7865376.
+
+- 2026-09-10T22:06:15+00:00: Hardening checkpoint: fixed cached exact-size boundary; durable signed
+  manifest/signature now precede pending activation and every local status/doctor/remove/launch
+  reauthenticates active release/source/compatibility/executable before execution. Added
+  authenticated PTY fixture, unsigned active/executable substitution rejection, explicit
+  acquisition-time expiry versus installed structural validation, exact delegated-status binding,
+  complete license-report/SPDX identity equality, and GitHub proxy redirect fixture. Focused router
+  19/19, lifecycle PTY/schema 4/4, and focused all-target Clippy pass. Format-only and
+  invocation-only failures were corrected; no unexplained code failures. Rootless same-UID replay
+  limitation and per-atomic-operation dirfd scope are documented without overclaiming. No UI/render
+  dependencies or implementation exist in ASB.

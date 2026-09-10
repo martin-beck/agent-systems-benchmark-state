@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md): Adopt Ratatui/Crossterm TUI foundation | Adopt Ratatui and Crossterm as the supported professional TUI foundation. | Complete bounded tmux/screen evidence, full standalone asb-tui gates and coverage, then publish a signed+DCO immutable successor to draft PR 9 for independent review; AR-1025 exclusively owns live client negotiation, polling, and responsiveness. | codex-ar1010-asb-tui-renderer-20260910 |
-| P0 | [AR-1024](tasks/AR-1024-asb-tui-lifecycle-router.md): Implement `asb tui` lifecycle routing | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | Add signed-channel and resumable/truncation/concurrency negatives, validate copied schemas/docs, run clippy and full relevant gates, then commit for independent review after exact AR-1010 contract integration. | codex-ar1024-router-20260910 |
+| P0 | [AR-1024](tasks/AR-1024-asb-tui-lifecycle-router.md): Implement `asb tui` lifecycle routing | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | Await immutable reviewed AR-1010 successor, repin exact contract, rerun cross-repo PTY and full exact-head gates, then publish for independent review. | codex-ar1024-router-20260910 |
 | P1 | [AR-1013](tasks/AR-1013-measurement-catalog-semantics.md): Version the measurement catalog and semantic groups | Define selectable ASB measurements grouped by stable semantic meaning. | Define and review the versioned measurement catalog and semantic grouping contract before implementation. | codex-ar1013-measurement-catalog-20260910 |
 
 ## Open
