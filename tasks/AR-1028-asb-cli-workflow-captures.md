@@ -7,7 +7,7 @@
     "AR-0872"
   ],
   "id": "AR-1028",
-  "next_action": "Push signed commit, open PR, obtain independent review, and require terminal green exact-head CI.",
+  "next_action": "Release done after verified corrective publication and exact-tree post-merge transcript regeneration.",
   "observed_branch": "docs/asb-cli-workflow-captures-attestation",
   "observed_dirty": 0,
   "observed_head": "b18e38ad94f19ff3ea83f8214004a2d7987ba2bf",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Produce reproducible ASB CLI transcripts separately from standalone TUI screenshots.",
-  "task_revision": 98,
+  "task_revision": 99,
   "title": "Generate ASB CLI workflow captures",
-  "updated_at": "2026-09-10T20:49:59+00:00",
+  "updated_at": "2026-09-10T20:50:19+00:00",
   "worktree_key": "agent-systems-benchmark-asb-cli-workflow-captures"
 }
 ---
@@ -294,3 +294,12 @@ renderer, terminal application, Ratatui/Crossterm dependency, or asb-tui source.
 
 - 2026-09-10T20:49:59+00:00: Recorded command exit 0; command argv SHA-256
   1db5854ef9449001d75b46f6c14c3aedd5aeacd87cebf476424ade4e0c48c3db.
+
+- 2026-09-10T20:50:19+00:00: PR #129 merged as unsigned rebase recreation b2763fb with exact
+  reviewed tree d90537bb; boundary is not treated as retroactively signed. Corrective signed+DCO
+  attestation b18e38ad passed independent review and all 12 exact-head checks in PR #130, then
+  merged only with --merge as GitHub-verified commit 58d0da27736d6c22ca7c43f76ade497165b29919. Merge
+  tree 8fb04d1493e69309331fe03ceec6b65a90ccdd3a equals reviewed b18e38a tree; b18e38a SSH signature
+  and raw matching DCO verified. Post-merge transcript regeneration tests pass 3/3 on the identical
+  tree. Historical b2763fb remains explicitly attested unsigned. No TUI application/renderer code or
+  dependency changed.
