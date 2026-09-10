@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 141,
+  "task_revision": 142,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T06:03:21+00:00",
+  "updated_at": "2026-09-10T06:03:41+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -538,3 +538,7 @@ classified.
   40/40 cancellation stress pass. Native fmt, all-target workspace clippy -D warnings and full
   locked workspace tests pass. Prior release/rustdoc/security gates remain applicable to this
   test-only successor. PR127 remains unchanged at failing fb26f3d pending immutable review.
+
+- 2026-09-10T06:03:41+00:00: Correction to prior evidence typo: exact signed successor is
+  4e35710ad90a5c421af9bb4a008a1caa08fcff59 (tree 9814329092cc3e5cea1d6391df8341834e4b5603, parent
+  fb26f3d2023d43f689f0743d3713470d0edf6096). All described scope and gate evidence is unchanged.
