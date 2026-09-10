@@ -2,7 +2,7 @@
 {
   "branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T09:48:13+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -15,15 +15,15 @@
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "c897313524a8d061a078465c5db0512ed366af9d",
-  "owner": "quality_20260906",
+  "owner": "",
   "plan": "../plans/AR-0909.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 277,
+  "task_revision": 278,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T08:26:28+00:00",
+  "updated_at": "2026-09-10T10:28:31+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1064,3 +1064,7 @@ classified.
   model execution. These are platform/shared AR-0877 infrastructure blockers, not evidence against
   c897313. No checks remain pending. mergeStateStatus is UNSTABLE; PR remains open and must not
   merge until both infrastructure lanes are repaired and fresh exact-head CI is fully green.
+
+- 2026-09-10T10:28:31+00:00: Recovered expired claim formerly owned by quality_20260906. Recover
+  stale expired lease after terminal candidate evidence; preserve PR127 c897313 and recorded shared
+  infrastructure blockers.
