@@ -13,7 +13,7 @@
   "id": "AR-1024",
   "next_action": "Implement typed asb tui dispatch, safe XDG state, signed channel and bundle acquisition, exact-byte lifecycle delegation, and adversarial tests without frontend or rendering code.",
   "observed_branch": "feature/asb-tui-lifecycle-router",
-  "observed_dirty": 2,
+  "observed_dirty": 4,
   "observed_head": "32df706413a6f165f086941426a5c793bd5e01e8",
   "owner": "codex-ar1024-router-20260910",
   "plan": "../plans/AR-1024.md",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Implement `asb tui` lifecycle routing",
-  "updated_at": "2026-09-10T20:42:32+00:00",
+  "updated_at": "2026-09-10T20:42:38+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-lifecycle-router"
 }
 ---

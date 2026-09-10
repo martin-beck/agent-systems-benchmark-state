@@ -27,8 +27,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar0906-merge-dco` | `repair/ar0906-merge-dco` | `66ca27afc2fb` | 0 | behind 3, ahead 0 |
 | `agent-systems-benchmark-asb-cli-workflow-captures` | `docs/asb-cli-workflow-captures-attestation` | `b18e38ad94f1` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-asb-tui-capabilities-command` | `feature/asb-tui-capabilities-command` | `d60d23510044` | 0 | behind 2, ahead 0 |
-| `agent-systems-benchmark-asb-tui-lifecycle-router` | `feature/asb-tui-lifecycle-router` | `32df706413a6` | 2 | behind 1, ahead 0 |
-| changed files | - | - | - | `crates/asb-cli/Cargo.toml`, `crates/asb-cli/src/lib.rs` |
+| `agent-systems-benchmark-asb-tui-lifecycle-router` | `feature/asb-tui-lifecycle-router` | `32df706413a6` | 4 | behind 1, ahead 0 |
+| changed files | - | - | - | `crates/asb-cli/Cargo.toml`, `crates/asb-cli/src/lib.rs`, `crates/asb-cli/src/tui.rs`, `crates/asb-cli/src/tui_allowed_signers` |
 | `agent-systems-benchmark-beginner-workflows` | `docs/beginner-workflows` | `328de90ef1ed` | 0 | behind 104, ahead 0 |
 | `agent-systems-benchmark-benchmark-validity` | `feature/benchmark-validity` | `60a6c730457b` | 0 | behind 232, ahead 0 |
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `0717d4acd168` | 0 | behind 340, ahead 0 |
