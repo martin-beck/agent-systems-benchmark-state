@@ -13,17 +13,17 @@
   "id": "AR-0909",
   "next_action": "Obtain immutable review of signed 67d07fd; if approved, guarded PR #127 update and fresh exact-head CI. Do not merge; formal acquisition remains AR-0877-owned.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
-  "observed_dirty": 1,
-  "observed_head": "ef864f70dacc3d70e782a65de2571131ad47d7c0",
+  "observed_dirty": 0,
+  "observed_head": "67d07fd2f681bd7b625bc517367d4ba49fb5034e",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0909.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 160,
+  "task_revision": 162,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T06:30:09+00:00",
+  "updated_at": "2026-09-10T06:31:06+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -625,3 +625,6 @@ classified.
   tests pass. Exact aggregate scope remains one cfg(test) file, production untouched; SSH
   signature/DCO/diff-check/worktree clean. Earlier durable update was blocked only by the
   now-recovered unrelated AR-1010 expired claim.
+
+- 2026-09-10T06:31:06+00:00: Recorded command exit 0; command argv SHA-256
+  d3e8f5647ec815417b1998bf35e9702d204c40d348e6c232888b32beca6d1c36.
