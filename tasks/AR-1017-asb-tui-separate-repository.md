@@ -2,7 +2,7 @@
 {
   "branch": "feature/asb-tui-separate-repository",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T13:30:26+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0803",
     "AR-0804",
@@ -15,15 +15,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "contracts_20260906",
+  "owner": "",
   "plan": "../plans/AR-1017.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Build asb-tui as an isolated optional repository and extension.",
-  "task_revision": 268,
+  "task_revision": 269,
   "title": "Create the standalone asb-tui extension repository",
-  "updated_at": "2026-09-10T12:38:54+00:00",
+  "updated_at": "2026-09-10T12:39:05+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-separate-repository"
 }
 ---
@@ -960,3 +960,9 @@ metadata, and tests proving the main benchmark runs independently when the TUI i
 - 2026-09-10T12:38:54+00:00: Correction to immediately preceding publication evidence: exact public
   c2fcb7221db24c847ef81cde010735de15cb10f3 tree is 7680fa07e5ea65ffb94a4400a6c4dc844ac6cca0; the
   temporary tree placeholder in that note is void.
+
+- 2026-09-10T12:39:05+00:00: DONE: public main is exact signed+DCO
+  c2fcb7221db24c847ef81cde010735de15cb10f3/tree 7680fa07e5ea65ffb94a4400a6c4dc844ac6cca0; hosted run
+  34475381286 and trusted attempt 3 run 34475381360 are successful; dedicated runner is
+  online/non-busy; repository security, metadata, signed-commit and strict two-check main protection
+  are verified; local HEAD/origin are synchronized and clean.
