@@ -21,8 +21,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 115, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 218, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 112, ahead 0 |
-| `agent-systems-benchmark-ar0877-ar0906-integration` | `integration/ar0877-ar0906` | `f385fb27296a` | 5 | behind 0, ahead 6 |
-| changed files | - | - | - | `.github/workflows/native-platforms.yml`, `platforms/v1/hosted-portability.schema.json`, `tests/platforms/fixtures/hosted-portability/mutations.json`, `tests/platforms/test_hosted_portability.py`, `tools/platforms/hosted_portability.py` |
+| `agent-systems-benchmark-ar0877-ar0906-integration` | `integration/ar0877-ar0906` | `f385fb27296a` | 0 | behind 0, ahead 6 |
 | `agent-systems-benchmark-ar0878-integration` | `DETACHED` | `0fbec95d2154` | 0 | behind 49, ahead 0 |
 | `agent-systems-benchmark-ar0880-integration` | `integration/ar0880-b7559931` | `2a85872285e6` | 0 | behind 31, ahead 0 |
 | `agent-systems-benchmark-beginner-workflows` | `docs/beginner-workflows` | `328de90ef1ed` | 0 | behind 86, ahead 0 |
