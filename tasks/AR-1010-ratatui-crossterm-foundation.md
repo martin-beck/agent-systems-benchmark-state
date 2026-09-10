@@ -11,16 +11,16 @@
     "AR-1030"
   ],
   "id": "AR-1010",
-  "next_action": "Complete bounded tmux/screen evidence, full standalone asb-tui gates and coverage, then publish a signed+DCO immutable successor to draft PR 9 for independent review; AR-1025 exclusively owns live client negotiation, polling, and responsiveness.",
+  "next_action": "Independently review immutable asb-tui PR 9 head 41c61bdef7e0ae7d5dd3c9c7c0056d5d364b9965 and tree 3515148c613079afee0a1cafbf19b1a2af795ad5, wait for exact-head hosted CI, and repair any blocking finding before readiness; do not merge without approval.",
   "owner": "codex-ar1010-asb-tui-renderer-20260910",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 282,
+  "task_revision": 283,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T22:24:16+00:00",
+  "updated_at": "2026-09-10T22:25:04+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -937,3 +937,25 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-10T22:24:16+00:00: Recorded command exit 0; command argv SHA-256
   5b7aeec4bacc2df06cce4ed40e2888a20fb0b5008d173b5c420b456cfee37613.
+
+- 2026-09-10T22:25:04+00:00: Published clean SSH-signed+DCO successor
+  41c61bdef7e0ae7d5dd3c9c7c0056d5d364b9965 (tree 3515148c613079afee0a1cafbf19b1a2af795ad5, base
+  d58eda9b74431752675f784978dd5851f4eb9f18) to draft asb-tui PR 9; live PR reports exact head and
+  hosted quality is running. Local acceptance evidence: fmt; Clippy -D warnings; locked full tests
+  (42 library and all integration suites, including 10 PTY tests); rustdoc -D warnings; release
+  build; cargo-deny advisories/bans/licenses/sources; cargo-audit 93 dependencies against 1243
+  advisories; SBOM generator exact check; schema/release/publication/JSON validators;
+  shellcheck/shfmt; zizmor; privacy greps; gitleaks over 3 commits/117107 bytes; standalone-to-ASB
+  isolation with 16 asb-core tests and 2 doctests; real promoted executable self-test ready=true;
+  10/10 real tmux+GNU screen repetitions with per-pass session/process/socket cleanup; coverage
+  88.85 percent regions and 92.10 percent lines; clean tree. Exact failure repairs: 22:11 cleanup
+  test exit101 was an unsafe-mode 0755 fixture correctly quarantined by policy, fixed fixture mode
+  0700 and rerun passed; 22:14 full-suite exit101 was stale lifecycle-self-test CLI args in doctor
+  test, updated to explicit ASB/protocol and full rerun passed; 22:16 Clippy exit101 was two
+  needless generic borrows, fixed and rerun passed; 22:17 generator exit1 was an incorrect
+  CARGO_HOME pointing at a tools-only cache without Ratatui, rerun under the normal repository cache
+  passed; 22:18 shell exit1 was ShellCheck SC1007 in the new script, fixed; 22:19 shell exit1 was
+  shfmt indentation diff, fixed and complete shell/workflow rerun passed. Earlier wrong exact unit
+  filter ran zero tests and was replaced by the fully qualified exact test, which first exposed the
+  unsafe fixture then passed after repair. AR-1010 owns typed event injection/projection only;
+  AR-1025 owns live client negotiation/polling/responsiveness. No ASB product or UI source changed.
