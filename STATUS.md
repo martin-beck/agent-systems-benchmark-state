@@ -989,7 +989,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | quality_20260906 | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Obtain fresh immutable review of exact d82b512; if approved, guarded PR #127 update from 23c6ed5 and fresh exact-head CI. Do not merge. |
+| P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | quality_20260906 | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Monitor PR #127 exact-head CI at d82b512; classify terminal results, route known formal/native shared blockers, and do not merge. |
 
 ### Open (7)
 
