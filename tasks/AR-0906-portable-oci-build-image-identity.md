@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make deterministic formal source builds verify OCI image identity portably across Docker engines.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Verify formal OCI build identity portably",
-  "updated_at": "2026-09-10T16:43:21+00:00",
+  "updated_at": "2026-09-10T16:44:04+00:00",
   "worktree_key": "agent-systems-benchmark-formal-oci-image-identity"
 }
 ---
@@ -191,3 +191,6 @@ instead of assuming an engine's local configuration ID equals the registry manif
   exact-head gate set before any merge; preserve the original PRs until proven.
 
 - 2026-09-10T16:43:21+00:00: Claimed by asb_tui_coordinator_20260910.
+
+- 2026-09-10T16:44:04+00:00: Recorded command exit 1; command argv SHA-256
+  4eaccf22e3a59b8c07f59ddc13185f6ff6f3f7b15636bee07351edd844dcfa85.
