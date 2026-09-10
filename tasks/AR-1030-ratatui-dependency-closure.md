@@ -2,21 +2,21 @@
 {
   "branch": "build/ratatui-dependency-closure",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T22:52:14+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1017"
   ],
   "id": "AR-1030",
   "next_action": "Register/authorize a GitHub-recognized signing identity for exact head c0dfdd3114741f9415a124f4d4995dac354b4260, or explicitly approve a GitHub rebase/squash rewrite; then rerun exact-head gates and merge PR #11.",
-  "owner": "codex-ar1030-ratatui-policy-20260910",
+  "owner": "",
   "plan": "../plans/AR-1030.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make the maintained Ratatui release consumable by standalone asb-tui without hiding supply-chain exceptions.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Resolve the Ratatui dependency closure",
-  "updated_at": "2026-09-10T20:22:45+00:00",
+  "updated_at": "2026-09-10T20:23:07+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-dependency-closure"
 }
 ---
@@ -204,3 +204,20 @@ and syn 2/3. Resolve this visibly before AR-1010 adds a renderer.
 
 - 2026-09-10T20:22:45+00:00: Recorded command exit 0; command argv SHA-256
   00c2b384b2ae3649a9a4a0c70b1b497a8ff2a5fea9b6ef50e13cb5d0cabc0ccc.
+
+- 2026-09-10T20:23:07+00:00: Completed and merged the reviewed Ratatui dependency closure. PR #11
+  exact reviewed source c0dfdd3114741f9415a124f4d4995dac354b4260 passed independent review and
+  exact-head CI; GitHub squash 033b464d9eba6bdbe49d2254b879564f316e0a7d is verified and has tree
+  e8ef16b15ef066bbc5da560ed177d44206aec600, exactly equal to the reviewed source tree. It pins
+  Ratatui 0.30.2/Crossterm 0.29.0, limits Zlib to foldhash 0.2.0, limits duplicates to exact
+  hashbrown/syn versions, and enforces checksums/features/sources/SBOM via executable tests.
+  Historical limitation: the #11 squash message contains literal escaped newline text before
+  Signed-off-by, so it does not have a valid DCO trailer; this was not claimed repaired. The
+  established corrective attestation PR #12 was independently approved and merged as
+  GitHub-verified+DCO commit 1898ab22135b555377536e323b643563dae82510, exact tree
+  fb2ac6d2bf671bb9bd95fc8339d3e11b3661ffca, explicitly preserving that limitation. Both main push CI
+  runs succeeded (34525490071 for policy merge; 34525841968 for attestation). Post-merge full tests,
+  clippy, docs, cargo-deny, cargo-audit over 93 crates, deterministic
+  SBOM/schema/channel/publication, shell/workflow, gitleaks, clean-tree and no-cache checks passed.
+  AR-1010 can now rebase and implement the renderer; reconcile source_only_unverified wording with
+  AR-1022.
