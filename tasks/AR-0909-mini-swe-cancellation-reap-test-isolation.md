@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Hold PR #127: await hosted emulated-AArch64 run 34421905238; inspect terminal formal run 34421905246 logs and route acquisition failure to AR-0877. Do not merge.",
+  "next_action": "Fresh immutable review of 502a0e66, then guarded PR #127 update and exact-head CI; keep formal AR-0877 failure separate and do not merge.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "502a0e66ffdfe1aec85f5802b53f7c30c189b304",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 99,
+  "task_revision": 100,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T05:09:41+00:00",
+  "updated_at": "2026-09-10T05:10:12+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -353,3 +353,18 @@ classified.
 
 - 2026-09-10T05:09:41+00:00: Recorded command exit 0; command argv SHA-256
   fcb18cf753e074787be8a12e2c73c74bdddc6de57502fd5b9ffda3b5e8b0c553.
+
+- 2026-09-10T05:10:12+00:00: PR127 emulated run 34421905238 was a candidate defect: 137 passed/2
+  failed; cancellation root creation returned EINVAL and the direct open_bound_directory positive
+  failed. Root cause was x86-specific numeric O_DIRECTORY/O_NOFOLLOW bits compiled into the AArch64
+  binary. Signed successor 502a0e66ffdfe1aec85f5802b53f7c30c189b304, tree
+  978c3204847cdb0f5a6867da7a33980b3d63c234, parent eb41e1487bf5b47b78a4848860328494880ff5d0 replaces
+  the numeric mask with rustix target-native OFlags while preserving RDONLY, DIRECTORY, NOFOLLOW,
+  CLOEXEC, canonical proc-fd target binding, repo separation, owner/mode/nlink and replacement
+  checks. Local AArch64 cross/QEMU reruns of both previously failing tests pass; native focused
+  mini_swe 22/22 passes. Full fmt/clippy/workspace/rustdoc/release, exact coverage,
+  contracts/failure/artifact/platform/workflows, policy/privacy/Gitleaks/deny/audit all green.
+  Four-commit aggregate remains one cfg(test) path, production prefix byte-identical,
+  SSH-signed/DCO-valid and clean. Formal run 34421905246 failed before model execution immediately
+  after downloading about 4385 KiB where formal/run_temporal_models.sh enforces exact
+  4,490,679-byte/hash TLA artifact; this is AR-0877-owned acquisition/provenance, not AR-0909.
