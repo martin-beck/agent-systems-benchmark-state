@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-live",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T07:28:56+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0858"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "cceb76f436f8918786f610afdf20ba99fbd87d34",
-  "owner": "contracts_20260906",
+  "owner": "",
   "plan": "../plans/AR-0859.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 227,
+  "task_revision": 228,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-10T04:31:00+00:00",
+  "updated_at": "2026-09-10T07:31:04+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -775,3 +775,7 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   (AR-0907); Rust 34393862356 passed product tests except the shared asb-cli control-state ownership
   isolation test, 29/30, already owned by AR-0908. No AR-0859 product failure, rerun, or mutation;
   preserve exact reviewed head until serialized shared repairs integrate.
+
+- 2026-09-10T07:31:04+00:00: Recovered expired claim formerly owned by contracts_20260906. Recover
+  stale global lease; worker has no active transition and PR remains held on shared blockers.
+  Preserve state and unblock other valid claims.
