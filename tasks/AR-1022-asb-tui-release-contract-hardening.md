@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Turn the tested unverified asb-tui lifecycle boundary into a release-safe delegated contract.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "Harden the asb-tui release lifecycle contract",
-  "updated_at": "2026-09-10T20:17:26+00:00",
+  "updated_at": "2026-09-10T20:18:10+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-release-contract-hardening"
 }
 ---
@@ -287,3 +287,6 @@ and filesystem tests, complete local gates, independent review, exact-head CI an
   validated. Integration intentionally waits for overlapping AR-1030 per merge ordering.
 
 - 2026-09-10T20:17:26+00:00: Heartbeat by codex-ar1022-lifecycle-20260910.
+
+- 2026-09-10T20:18:10+00:00: Recorded command exit 1; command argv SHA-256
+  73fa30c29214410fadbf5d419d03239fe673a4652a1226eeb2d1db3ba6f04164.
