@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Build asb-tui as an isolated optional repository and extension.",
-  "task_revision": 267,
+  "task_revision": 268,
   "title": "Create the standalone asb-tui extension repository",
-  "updated_at": "2026-09-10T12:38:32+00:00",
+  "updated_at": "2026-09-10T12:38:54+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-separate-repository"
 }
 ---
@@ -956,3 +956,7 @@ metadata, and tests proving the main benchmark runs independently when the TUI i
   requires one fresh approving review, conversation resolution, signed commits, and exact GitHub
   Actions checks Rust, supply-chain, and privacy gates plus Verify exact trusted main revision;
   force pushes/deletion disabled.
+
+- 2026-09-10T12:38:54+00:00: Correction to immediately preceding publication evidence: exact public
+  c2fcb7221db24c847ef81cde010735de15cb10f3 tree is 7680fa07e5ea65ffb94a4400a6c4dc844ac6cca0; the
+  temporary tree placeholder in that note is void.
