@@ -23,7 +23,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 34541354571 | `51e18c622878` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 34541354560 | `51e18c622878` | pull_request | Hosted portability and native qualification | completed:success |
-| 34541354559 | `51e18c622878` | pull_request | Formal assurance | in_progress:- |
+| 34541354559 | `51e18c622878` | pull_request | Formal assurance | completed:success |
 | 34541354551 | `51e18c622878` | pull_request | Fault assurance | completed:success |
 | 34541354547 | `51e18c622878` | pull_request | Huawei MIT source headers | completed:success |
 | 34541354537 | `51e18c622878` | pull_request | Repository quality | in_progress:- |
