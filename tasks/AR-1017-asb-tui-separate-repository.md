@@ -11,7 +11,7 @@
     "AR-0851"
   ],
   "id": "AR-1017",
-  "next_action": "Complete privacy, provenance, exact-scope and full pre-publication gates; create one SSH-signed DCO successor for immutable review. Do not publish yet.",
+  "next_action": "Await independent immutable review of c674988/tree 56351344; no remote or publication exists. Publish only after coordinator approval.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Build asb-tui as an isolated optional repository and extension.",
-  "task_revision": 93,
+  "task_revision": 94,
   "title": "Create the standalone asb-tui extension repository",
-  "updated_at": "2026-09-10T11:19:35+00:00",
+  "updated_at": "2026-09-10T11:20:07+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-separate-repository"
 }
 ---
@@ -353,3 +353,17 @@ metadata, and tests proving the main benchmark runs independently when the TUI i
 
 - 2026-09-10T11:19:35+00:00: Recorded command exit 0; command argv SHA-256
   f7d36ea27005d6c4bf392bbb043711488c3240cb8bfc430d6062d33691a82a9c.
+
+- 2026-09-10T11:20:07+00:00: Pre-publication candidate complete:
+  c6749880a16082c9d3ab3fe892d3e6083540f1ce, tree 56351344df5b934aea43751b8fa8a0fadc1c84c6, exact
+  parent/root 42d540d96709e13bdf3796a2e45dd195c042d898, 23-path focused successor, clean tree and no
+  remote. Both commits verify with the pinned ED25519 signer and exact DCO. Final Rust gate: 14
+  tests plus doctests pass, fmt, Clippy -D warnings, rustdoc -D warnings, release build, cargo
+  package, cargo-deny, cargo-audit green. Coverage is 92.57% lines (90.16% regions), above the 90%
+  floor. Exact upstream tag/signature probe passes; hostile
+  unsigned/substituted-signer/mutable/tampered cases fail closed. ASB isolation executes 16 asb-core
+  tests plus 2 doctests and proves no standalone dependency. Actionlint and Zizmor (zero findings),
+  digest-pinned ShellCheck/shfmt, Gitleaks, schema/JSON, privacy and diff checks pass. Earlier
+  final-identity wrapper exit 1 was only a faulty tail-last-line DCO assertion against the commit
+  message trailing blank; corrected exact-line grep, signatures, parent/tree/scope and clean-state
+  check passed. No remote, GitHub repository, push, PR, or publication was created.
