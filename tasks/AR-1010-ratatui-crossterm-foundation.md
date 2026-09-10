@@ -11,16 +11,16 @@
     "AR-1030"
   ],
   "id": "AR-1010",
-  "next_action": "Fresh immutable review of standalone asb-tui PR #9 exact head 140b4fa2bb38be6fc5e6299a02fd67ae11223339 tree b89108c5a2cd324c5a35d968a47438ec59feba6a; require exact-head hosted CI green and do not merge without approval.",
+  "next_action": "Fresh immutable review of standalone asb-tui draft PR #9 exact head 1bab7ad34cdbf1647c7eea4953c3e60875c19ddc tree 5876314e4c6a9e54dccb3bcc027c6596f3a03912; require exact-head hosted CI green and do not merge without approval.",
   "owner": "codex-ar1010-asb-tui-renderer-20260910",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 332,
+  "task_revision": 333,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T23:21:33+00:00",
+  "updated_at": "2026-09-10T23:22:04+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -1127,3 +1127,27 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-10T23:21:33+00:00: Recorded command exit 0; command argv SHA-256
   5d880ad4b47a92c538397e52da5284f7057be4fccddeb9cf3178aefee9452384.
+
+- 2026-09-10T23:22:04+00:00: Published signed+DCO ownership-safe cleanup successor
+  1bab7ad34cdbf1647c7eea4953c3e60875c19ddc (tree 5876314e4c6a9e54dccb3bcc027c6596f3a03912) to draft
+  PR #9. It removes process-global subreaper and /proc child enumeration. The retained trusted
+  supervisor is placed in a fresh process group before it installs an inherited seccomp filter
+  denying setsid/setpgid and execs the sealed candidate; all candidate forks therefore remain in the
+  exact pidfd-fenced group, so cleanup is bounded, proc-independent, and cannot classify/signal/reap
+  unrelated concurrent children. Deterministic PTY proof attempts both syscalls, exercises a double
+  fork, verifies its child disappears, spawns an unrelated sleep after candidate readiness, and
+  proves it remains live/unreaped; the full adversarial self-test matrix passed plus 10 bounded
+  repeats. Added exact seccompiler 0.5.0 checksum/empty-feature/SPDX/license sentinels; it adds no
+  transitive crate beyond already locked libc 0.2.189, and cargo-deny accepts Apache-2.0 OR
+  BSD-3-Clause. Full exact-tree local gates pass: fmt, Clippy -D warnings, 44 lib/all
+  integration/doc tests, rustdoc -D warnings, deterministic SBOM and validators, promoted self-test
+  ready, shell/workflow/zizmor, cargo-deny, cargo-audit 94 crates/1243 advisories, ASB isolation
+  16+2 doctests, release build, Gitleaks, diff check, clean-tree coverage 88.03% regions/91.41%
+  lines. Classified non-code failures: two wrapper attempts hit coordinator lock timeouts before
+  product commands; first compile exposed the deliberately removed old proc-test reference and was
+  repaired; initial source-sentinel matched its own literal and was split then passed; clean
+  coverage correctly refused the dirty precommit tree and passed after commit; first isolation
+  invocation omitted its required ASB root and reran green. One initial one-line Cargo.toml edit was
+  inadvertently applied before wrapper use; it was subsequently captured by all wrapped tests/git
+  actions and the signed commit, with no other repository affected. Lifecycle JSON/schema and bundle
+  fixture bytes are unchanged. Hosted exact-head Repository quality is IN_PROGRESS.
