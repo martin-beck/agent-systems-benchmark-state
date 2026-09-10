@@ -11,16 +11,16 @@
     "AR-1021"
   ],
   "id": "AR-1022",
-  "next_action": "Harden the standalone lifecycle trust root, clock, classification and release-compatible schemas before any public install route consumes them.",
+  "next_action": "Monitor PR 10 exact-head CI at f406af260db8da12356906aaf12d3d75b235e5c3, obtain independent exact-diff review, repair any finding, and record merge plus exact-main post-merge evidence.",
   "owner": "codex-ar1022-lifecycle-20260910",
   "plan": "../plans/AR-1022.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Turn the tested unverified asb-tui lifecycle boundary into a release-safe delegated contract.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Harden the asb-tui release lifecycle contract",
-  "updated_at": "2026-09-10T20:00:21+00:00",
+  "updated_at": "2026-09-10T20:00:54+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-release-contract-hardening"
 }
 ---
@@ -211,3 +211,9 @@ and filesystem tests, complete local gates, independent review, exact-head CI an
 
 - 2026-09-10T20:00:21+00:00: Recorded command exit 0; command argv SHA-256
   1d55ab3c228d41970f8bee31a8dc1cee0d77fed6536cff35e74a980b8ed0801f.
+
+- 2026-09-10T20:00:54+00:00: Published signed+DCO commit f406af260db8da12356906aaf12d3d75b235e5c3 in
+  asb-tui PR 10. Green local evidence: full locked tests, fmt, Clippy -D warnings, rustdoc, release
+  build, schemas, release/publication validators, deny/audit, Gitleaks, shell/workflow analyzers,
+  ASB-core isolation, and 90.71% line coverage against the 90% gate. Removed generated target/ after
+  testing; .gitignore now prevents recurrence.

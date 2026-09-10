@@ -1095,7 +1095,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1022](tasks/AR-1022-asb-tui-release-contract-hardening.md): Harden the asb-tui release lifecycle contract | codex-ar1022-lifecycle-20260910 | Turn the tested unverified asb-tui lifecycle boundary into a release-safe delegated contract. | Harden the standalone lifecycle trust root, clock, classification and release-compatible schemas before any public install route consumes them. |
+| P0 | [AR-1022](tasks/AR-1022-asb-tui-release-contract-hardening.md): Harden the asb-tui release lifecycle contract | codex-ar1022-lifecycle-20260910 | Turn the tested unverified asb-tui lifecycle boundary into a release-safe delegated contract. | Monitor PR 10 exact-head CI at f406af260db8da12356906aaf12d3d75b235e5c3, obtain independent exact-diff review, repair any finding, and record merge plus exact-main post-merge evidence. |
 | P0 | [AR-1023](tasks/AR-1023-asb-tui-capabilities-command.md): Add the ASB frontend capabilities command | codex-ar1023-capabilities-20260910 | Publish the ASB capability negotiation command required by the standalone frontend. | Monitor exact head d60d2351004479998608f2141730849366351373 on PR 128, repair any CI failure, obtain independent review, merge through policy, and run post-merge verification. |
 | P0 | [AR-1030](tasks/AR-1030-ratatui-dependency-closure.md): Resolve the Ratatui dependency closure | codex-ar1030-ratatui-policy-20260910 | Make the maintained Ratatui release consumable by standalone asb-tui without hiding supply-chain exceptions. | Resolve the exact Ratatui release dependency closure through a reviewed upstream feature or narrowly justified fail-closed policy decision. |
 
