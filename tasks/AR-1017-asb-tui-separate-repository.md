@@ -2,7 +2,7 @@
 {
   "branch": "feature/asb-tui-separate-repository",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-10T11:57:32+00:00",
   "depends_on": [
     "AR-0803",
     "AR-0804",
@@ -15,15 +15,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "contracts_20260906",
   "plan": "../plans/AR-1017.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Build asb-tui as an isolated optional repository and extension.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Create the standalone asb-tui extension repository",
-  "updated_at": "2026-09-10T08:55:59+00:00",
+  "updated_at": "2026-09-10T08:57:32+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-separate-repository"
 }
 ---
@@ -41,3 +41,5 @@ metadata, and tests proving the main benchmark runs independently when the TUI i
 
 - 2026-09-10T08:55:59+00:00: Promote standalone asb-tui extension boundary after dependency
   preflight.
+
+- 2026-09-10T08:57:32+00:00: Claimed by contracts_20260906.
