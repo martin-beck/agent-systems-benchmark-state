@@ -11,7 +11,7 @@
     "AR-0851"
   ],
   "id": "AR-1017",
-  "next_action": "Create isolated local asb-tui repository from exact signed release locks; keep extension unverified and ASB independent until protocol and absence tests pass.",
+  "next_action": "Independently review root commit 42d540d; then add closed schema negatives, ASB-absence proof, and authenticated release-discovery tests before any public repo creation.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Build asb-tui as an isolated optional repository and extension.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Create the standalone asb-tui extension repository",
-  "updated_at": "2026-09-10T09:16:36+00:00",
+  "updated_at": "2026-09-10T09:17:36+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-separate-repository"
 }
 ---
@@ -157,3 +157,16 @@ metadata, and tests proving the main benchmark runs independently when the TUI i
 
 - 2026-09-10T09:16:36+00:00: Recorded command exit 0; command argv SHA-256
   4665c7e4710433e0a6ac72ee8d8faa0c2986888e77b4730ed41a233f995803b4.
+
+- 2026-09-10T09:17:36+00:00: Standalone local repository boundary created at
+  /srv/data/projects/agent-systems-benchmark-asb-tui-separate-repository on declared branch. Root
+  candidate 42d540d96709e13bdf3796a2e45dd195c042d898/tree d4f34270f099402d9f76197a085cbe7b64449fd2
+  is clean, SSH-signed by the independently pinned key, and has exact DCO. Eight paths establish an
+  independent dependency-free Rust 1.93 crate, MIT license, explicit unverified-extension doctor
+  JSON/exit 3, closed v1 capability schema, and immutable tooling lock for coordinator v0.3.5 plus
+  AWQ v0.23.0. Rendering remains explicitly unavailable pending AR-1010; no Ratatui/Crossterm or ASB
+  product dependency is claimed. Focused 3/3 tests, fmt and Clippy -D warnings pass. Initial cargo
+  command failed only because handoffctl has no ambient cargo PATH; corrected commands use the exact
+  1.93 toolchain. Initial commit signing attempted GPG due the new repository lacking local config;
+  no commit was created, and the corrected command-scoped SSH signing produced 42d540d. No remote
+  repository exists or was created.
