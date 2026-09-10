@@ -10,16 +10,16 @@
     "AR-0806"
   ],
   "id": "AR-1010",
-  "next_action": "Upstream Kasuari then Ratatui selectable std-map features; consume only after reviewed immutable releases eliminate foldhash.",
+  "next_action": "Port the reviewed application foundation into standalone asb-tui and resolve or precisely isolate the dependency-policy blocker without weakening policy.",
   "owner": "codex-ar1010-asb-tui-foundation-20260910",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T19:23:29+00:00",
+  "updated_at": "2026-09-10T19:23:52+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -231,3 +231,6 @@ Implementation has not started. Read the linked plan before claiming.
   8a508d2671df28ddefaf5ccb619999d66039a79bcbaaacbba9cd838724691bd7.
 
 - 2026-09-10T19:23:29+00:00: Heartbeat by codex-ar1010-asb-tui-foundation-20260910.
+
+- 2026-09-10T19:23:52+00:00: Correct stale pre-migration next action: implementation ownership is
+  the standalone asb-tui repository; ASB candidate 2754623 remains read-only evidence.
