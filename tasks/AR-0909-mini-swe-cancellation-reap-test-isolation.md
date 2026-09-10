@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Hold PR #127 for exact-head emulated-AArch64 run 34440495564 and remaining checks; formal acquisition failure is AR-0877-owned. Do not merge.",
+  "next_action": "Repair created-root binding against the canonical fd-anchored entry, rerun native and AArch64/QEMU focused/full gates, then prepare signed successor; do not merge.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "502a0e66ffdfe1aec85f5802b53f7c30c189b304",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 102,
+  "task_revision": 103,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T05:18:38+00:00",
+  "updated_at": "2026-09-10T05:25:09+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -379,3 +379,12 @@ classified.
   34440495620/job 102754339857 failed at the unchanged AR-0877-owned exact TLA acquisition size/hash
   boundary before model execution. AWQ and source headers pass; Rust, quality, native, Kani, Loom,
   fault/fuzz/matcher remain in progress. PR remains open and unmerged.
+
+- 2026-09-10T05:25:09+00:00: PR127 exact-head emulated-AArch64 run 34440495564/job 102754339359 is
+  terminal failure: 138 passed/1 failed. Target-native rustix flags fixed
+  private_test_root_rejects_redirection_and_preserves_replacement, but
+  cancellation_leaves_no_runnable_owned_descendant failed at PrivateTestRoot::new with test-root
+  directory binding changed. The remaining defect is the created-root check comparing the fd target
+  with a lexically constructed temp path; the safe repair is to compare with the canonical target of
+  the fd-anchored directory entry, retaining nofollow and swap detection without assuming host/guest
+  path spelling. Formal failure remains separate AR-0877 acquisition.
