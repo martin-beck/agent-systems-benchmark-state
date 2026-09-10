@@ -11,7 +11,7 @@
     "AR-1023"
   ],
   "id": "AR-1024",
-  "next_action": "Await immutable reviewed AR-1010 successor, repin exact contract, rerun cross-repo PTY and full exact-head gates, then publish for independent review.",
+  "next_action": "Await repaired independently reviewed AR-1010 successor after descendant-process leak blocker; repin only that exact head, compile from verified archive, run real cross-repo PTY, then rerun exact-head gates.",
   "observed_branch": "feature/asb-tui-lifecycle-router",
   "observed_dirty": 6,
   "observed_head": "fbbf6f48f2a27300823011f9347ef60eb2b35c44",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend.",
-  "task_revision": 232,
+  "task_revision": 233,
   "title": "Implement `asb tui` lifecycle routing",
-  "updated_at": "2026-09-10T22:34:39+00:00",
+  "updated_at": "2026-09-10T22:35:04+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-lifecycle-router"
 }
 ---
@@ -666,3 +666,13 @@ complete gates, exact-head CI and post-merge verification.
 
 - 2026-09-10T22:34:39+00:00: Recorded command exit 0; command argv SHA-256
   c909c1db3ad1d9ce60f080c5289b9b176473f3830e3f50feaefa64ae3ca71994.
+
+- 2026-09-10T22:35:04+00:00: Cross-repo checkpoint: rejected AR-1010 head 41c61bd was archived and
+  built under explicit authorization before its blocker notification; tree 3515148 verified and
+  binary digest recorded, but it was not consumed after independent review found rejected self-test
+  can leak a live descendant/stdout reader. Exact temp tree was removed and interactive
+  qualification pin is now null/awaiting repair. Router local trust was further hardened to persist
+  and reverify the signed channel namespace as well as signed manifest, proving active bytes came
+  from a promoted channel; authenticated fixture now rejects channel tamper and unsigned
+  active/executable substitution. Prior exact router/full workspace/coverage/supply-chain gates were
+  green; final gates await successor repin.
