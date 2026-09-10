@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 7 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 8 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 56 |
 | **Future** | Deferred roadmap work | 1 |
@@ -260,7 +260,7 @@ flowchart LR
         AR_1036["AR-1036 - Planned"]:::status_planned
         AR_1037["AR-1037 - Planned"]:::status_planned
         AR_1038["AR-1038 - Open"]:::status_open
-        AR_1039["AR-1039 - In progress"]:::status_in_progress
+        AR_1039["AR-1039 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1139,21 +1139,21 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1024](tasks/AR-1024-asb-tui-lifecycle-router.md): Implement &#96;asb tui&#96; lifecycle routing | codex-ar1024-router-20260910 | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | Await a new AR-1010 successor that repairs unrelated-child classification and persistent-proc-failure setsid escape, passes fresh immutable review and exact-head CI; only then request exact archive build authorization, repin, PTY-test and rerun gates. |
-| P0 | [AR-1039](tasks/AR-1039-measurement-catalog-merge-attestation.md): Attest the measurement catalog merge boundary | codex-ar1039-catalog-merge-recovery-20260911 | Recover the measurement catalog publication boundary without rewriting protected main. | Immutable independent review of PR #133 exact head 607a3afb/tree b45e1a6; if approved, merge only with a genuine multiline matching Signed-off-by trailer and verify post-merge main. |
 | P1 | [AR-1013](tasks/AR-1013-measurement-catalog-semantics.md): Version the measurement catalog and semantic groups | codex-ar1013-measurement-catalog-20260910 | Define selectable ASB measurements grouped by stable semantic meaning. | Independently review immutable PR #131 exact head 78c63febc0ce6c4724bf4d14121e9ae178e2a020 tree 9303272ac7070a742249722c0f9e13568c3ed660; require all exact-head CI terminal green and approval; do not merge. |
 
-### Open (7)
+### Open (8)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0897](tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | Unclaimed | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Hold PR 126 at bd6f450; after AR-0877 and AR-0909 integrate, rebase once and require fresh all-green exact-head CI before merge. |
 | P0 | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md): Adopt Ratatui/Crossterm TUI foundation | Unclaimed | Adopt Ratatui and Crossterm as the supported professional TUI foundation. | Fresh immutable review of standalone asb-tui draft PR #9 exact head 1bab7ad34cdbf1647c7eea4953c3e60875c19ddc tree 5876314e4c6a9e54dccb3bcc027c6596f3a03912; exact-head hosted CI is green; do not merge without approval. |
 | P0 | [AR-1038](tasks/AR-1038-capability-coverage-sink.md): Preserve coverage sinks in sanitized CLI child tests | Unclaimed | Prevent sanitized capability child tests from writing default profraw files into the source checkout. | Obtain independent immutable review of PR #132 head b65cb4b5e9a9d6d75de967ff4673506218c62b45 tree ed1c1847687f5a73216169af242ad2c71d234dad, then coordinate protected merge sequencing; do not merge without approval. |
+| P0 | [AR-1039](tasks/AR-1039-measurement-catalog-merge-attestation.md): Attest the measurement catalog merge boundary | Unclaimed | Recover the measurement catalog publication boundary without rewriting protected main. | Immutable independent review of PR #133 exact head 607a3afb/tree b45e1a6; if approved, merge only with a genuine multiline matching Signed-off-by trailer and verify post-merge main. |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | Repair/rebase the fail-closed TLA provenance pin, then rerun PR #119 exact-head CI; do not merge. |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Unclaimed | Qualify pinned OpenJiuwen live execution. | Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI. |
 | P1 | [AR-0908](tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | Unclaimed | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Hold PR #125 unchanged; shared formal asset and native-runner pin owners must repair their gates before a fresh exact-head run. |
