@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the maintained Ratatui release consumable by standalone asb-tui without hiding supply-chain exceptions.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Resolve the Ratatui dependency closure",
-  "updated_at": "2026-09-10T20:12:07+00:00",
+  "updated_at": "2026-09-10T20:12:21+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-dependency-closure"
 }
 ---
@@ -141,3 +141,6 @@ and syn 2/3. Resolve this visibly before AR-1010 adds a renderer.
   c0dfdd3114741f9415a124f4d4995dac354b4260. Independent review has no blocking finding. Draft PR #11
   remains open and unmerged as assigned; branch/worktree are clean and generated Python cache is
   absent.
+
+- 2026-09-10T20:12:21+00:00: Recorded command exit 1; command argv SHA-256
+  f85ba2b3337f52dfd08aa0128ef5cca4dec8c5de6fdb2c09833df8f3bfee1876.
