@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Hold PR #127 for terminal exact-head ef864f7 CI; investigate candidate-owned failures only. Do not merge; formal acquisition remains AR-0877-owned.",
+  "next_action": "Diagnose hosted QEMU child-start/readiness-file semantics and make the cancellation oracle observe startup without relying on emulated execution of a generated shell script. Do not increase timeout blindly or merge PR #127.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "ef864f70dacc3d70e782a65de2571131ad47d7c0",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 154,
+  "task_revision": 155,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T06:18:11+00:00",
+  "updated_at": "2026-09-10T06:23:34+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -594,3 +594,13 @@ classified.
   progress; quality 34444563425 in progress; Rust 34444563309 in progress; formal 34444563301 has
   the known AR-0877-owned TLC/Alloy acquisition failure while Kani/Loom remain in progress; AWQ
   34444563316 success; headers 34444563322 success. No merge or rerun.
+
+- 2026-09-10T06:23:34+00:00: Terminal exact-head ef864f7 emulated-AArch64 run 34444563306 failed 138
+  passed/1 failed: cancellation_leaves_no_runnable_owned_descendant again reached helper readiness
+  timed out, now after the widened 15-second bounded deadline; total failing test time was 16.25s.
+  This disproves ordinary short scheduling delay and requires diagnosis of generated helper
+  execution/readiness under hosted user-mode emulation. Native platform again failed before product
+  tests on the exact distribution pin, separately environment/platform-owned. Formal remains AR-0877
+  acquisition-owned. PR127 stays open and unmerged. A subsequent read-only grep exited 2 only
+  because workflow paths were queried from the state repo; it made no mutation and is not a product
+  failure.
