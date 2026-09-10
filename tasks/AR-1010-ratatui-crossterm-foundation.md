@@ -10,16 +10,16 @@
     "AR-0806"
   ],
   "id": "AR-1010",
-  "next_action": "Port the reviewed application foundation into standalone asb-tui and resolve or precisely isolate the dependency-policy blocker without weakening policy.",
+  "next_action": "Review draft PR 9 and choose an explicit Zlib/duplicate-policy decision or a dedicated upstream dependency AR before adding the real Ratatui renderer.",
   "owner": "codex-ar1010-asb-tui-foundation-20260910",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 90,
+  "task_revision": 91,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T19:45:06+00:00",
+  "updated_at": "2026-09-10T19:45:27+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -315,3 +315,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-10T19:45:06+00:00: Recorded command exit 0; command argv SHA-256
   70fee75bee540ad56dd9513b90d9fbd095ec6fa798af3f8715832cce5d628a62.
+
+- 2026-09-10T19:45:27+00:00: Signed+DCO standalone checkpoint
+  9b3f9fb3e1f52cf0a80c67f89d5dd44356310621 is pushed in draft PR 9. It adds exact-pinned
+  policy-clean Crossterm 0.29, deterministic Action/AppState/frame projection, privacy-safe terminal
+  policy and doctor, rollback-safe terminal lifecycle, PTY normal/panic restoration tests, exact
+  SBOM closure, and 90.75% line coverage. Full fmt, Clippy -D warnings, locked tests/doctests,
+  rustdoc, release build, cargo-deny, cargo-audit, schema/publication/channel, shell/workflow, and
+  secret gates pass. Ratatui 0.30.2 remains absent: fresh cargo-deny rejects foldhash 0.2.0 Zlib
+  plus unavoidable hashbrown 0.16.1/0.17.1 and syn 2.0.119/3.0.5 duplicates; cargo-audit is clean.
+  No policy weakening or ASB product change was made; AR remains incomplete.
