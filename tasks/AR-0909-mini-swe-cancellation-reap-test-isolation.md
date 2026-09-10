@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 152,
+  "task_revision": 153,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T06:16:06+00:00",
+  "updated_at": "2026-09-10T06:17:32+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -582,3 +582,6 @@ classified.
   AArch64/QEMU cancellation stress 50/50 passes. Native fmt, all-target workspace clippy -D warnings
   and full locked workspace tests pass. PR127 remains at 4e35710 pending review; native platform
   failure was separately classified and formal remains AR-0877-owned.
+
+- 2026-09-10T06:17:32+00:00: Recorded command exit 0; command argv SHA-256
+  0cd59212ea27fa9c9b5780dd2553045b314abefae4e01328d077412f82aae739.
