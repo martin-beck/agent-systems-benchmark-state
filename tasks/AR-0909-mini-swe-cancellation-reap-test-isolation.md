@@ -13,7 +13,7 @@
   "id": "AR-0909",
   "next_action": "Diagnose hosted QEMU child-start/readiness-file semantics and make the cancellation oracle observe startup without relying on emulated execution of a generated shell script. Do not increase timeout blindly or merge PR #127.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "ef864f70dacc3d70e782a65de2571131ad47d7c0",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0909.md",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 156,
+  "task_revision": 157,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T06:25:50+00:00",
+  "updated_at": "2026-09-10T06:25:56+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
