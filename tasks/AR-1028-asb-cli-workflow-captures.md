@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Produce reproducible ASB CLI transcripts separately from standalone TUI screenshots.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Generate ASB CLI workflow captures",
-  "updated_at": "2026-09-10T20:05:21+00:00",
+  "updated_at": "2026-09-10T20:06:55+00:00",
   "worktree_key": "agent-systems-benchmark-asb-cli-workflow-captures"
 }
 ---
@@ -43,3 +43,6 @@ renderer, terminal application, Ratatui/Crossterm dependency, or asb-tui source.
   doctor, plan, run, report, compare, record, replay. No screenshots, terminal renderer, TUI
   application, Ratatui/Crossterm, or asb-tui source. Classified initial exit 2 as read-only sed
   using the state checkout instead of sibling product docs; no mutation.
+
+- 2026-09-10T20:06:55+00:00: Recorded command exit 0; command argv SHA-256
+  f77810c92a0ebdfe32daa24865be55ae1eaea4ef4a8523cd21925d923d6398ad.
