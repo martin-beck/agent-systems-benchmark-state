@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Monitor PR #127 exact-head CI at d82b512; classify terminal results, route known formal/native shared blockers, and do not merge.",
+  "next_action": "Replace invalid host-/bin/sh assumption with a reviewed architecture-neutral process fixture or amend cross-emulation evidence contract; preserve real group oracle. Do not rerun unchanged head or merge.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "d82b5123f9d9adf8dd24ab499ff97e0036e31f84",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 228,
+  "task_revision": 229,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T07:42:05+00:00",
+  "updated_at": "2026-09-10T07:46:57+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -893,3 +893,14 @@ classified.
   34451234506, fault 34451234497, formal 34451234499, native 34451234501, repository-quality
   34451234496, Rust 34451234533, AWQ 34451234494, headers 34451234503. Headers already SUCCESS; all
   others were in progress at the first bounded observation. No merge attempted.
+
+- 2026-09-10T07:46:57+00:00: PR #127 exact-head d82b512 CI is terminal. PASS: Rust 34451234533;
+  repository-quality 34451234496; native 34451234501; fault 34451234497 including all three jobs;
+  AWQ 34451234494; headers 34451234503; Kani and Loom/state-model jobs in formal 34451234499. FAIL
+  candidate-owned: emulated-AArch64 34451234506, where descriptor-relative FIFO creation passed but
+  cancellation_leaves_no_runnable_owned_descendant still timed out at mini_swe.rs:2166; suite 138
+  passed, 1 failed, 1 ignored, 1 filtered in 16.28s. The full immutable userspace disproves the
+  local assumption that direct /bin/sh becomes an observable host-side child, so d82b512 is not
+  portable. FAIL shared: TLC/Alloy job 34451234499 exited during the known AR-0877 tool acquisition
+  before model execution. Native now passed, superseding the prior runner identity failure for this
+  head. PR remains open and unmerged; do not rerun unchanged candidate.
