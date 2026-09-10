@@ -2,7 +2,7 @@
 {
   "branch": "fix/hosted-runner-evidence-classification",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-10T19:05:51+00:00",
   "depends_on": [
     "AR-0702",
     "AR-0848"
@@ -12,15 +12,15 @@
   "observed_branch": "fix/hosted-runner-evidence-classification",
   "observed_dirty": 0,
   "observed_head": "f0b7b46db271cd9de5e89ab1d3cdd6cf86a662d0",
-  "owner": "",
+  "owner": "asb_tui_coordinator_20260910",
   "plan": "../plans/AR-0907.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 138,
+  "task_revision": 139,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-10T08:29:37+00:00",
+  "updated_at": "2026-09-10T17:05:51+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -529,3 +529,5 @@ patch release has advanced.
   ecbac455 and PR 123 remain clean and unchanged. Eleven exact-head jobs pass; required formal job
   is blocked solely by AR-0877 curl-63 acquisition. AR-0906 may now proceed, followed by AR-0877;
   reclaim AR-0907 only for one controlled rebase and fresh all-green exact-head CI.
+
+- 2026-09-10T17:05:51+00:00: Claimed by asb_tui_coordinator_20260910.
