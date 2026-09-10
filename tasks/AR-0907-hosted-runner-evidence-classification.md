@@ -2,7 +2,7 @@
 {
   "branch": "fix/hosted-runner-evidence-classification",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T11:27:12+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0702",
     "AR-0848"
@@ -12,15 +12,15 @@
   "observed_branch": "fix/hosted-runner-evidence-classification",
   "observed_dirty": 0,
   "observed_head": "f0b7b46db271cd9de5e89ab1d3cdd6cf86a662d0",
-  "owner": "contracts_20260906",
+  "owner": "",
   "plan": "../plans/AR-0907.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 137,
+  "task_revision": 138,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-10T08:29:26+00:00",
+  "updated_at": "2026-09-10T08:29:37+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -524,3 +524,8 @@ patch release has advanced.
   hosted-classification defect. AR-0907 product acceptance is behaviorally proven but publication
   acceptance is incomplete because required exact-head CI is not all green. Preserve clean exact
   candidate and do not merge.
+
+- 2026-09-10T08:29:37+00:00: Released open without product mutation: exact candidate f0b7b46/tree
+  ecbac455 and PR 123 remain clean and unchanged. Eleven exact-head jobs pass; required formal job
+  is blocked solely by AR-0877 curl-63 acquisition. AR-0906 may now proceed, followed by AR-0877;
+  reclaim AR-0907 only for one controlled rebase and fresh all-green exact-head CI.
