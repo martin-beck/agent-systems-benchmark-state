@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 116,
+  "task_revision": 117,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T05:39:46+00:00",
+  "updated_at": "2026-09-10T05:42:20+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -440,3 +440,6 @@ classified.
   passed, so the rustix flag repair is effective but cancellation-root identity remains nonportable
   under hosted emulation. Formal acquisition failure is separate AR-0877-owned provenance/tooling
   and no formal paths will be changed.
+
+- 2026-09-10T05:42:20+00:00: Recorded command exit 0; command argv SHA-256
+  b4e299f61731a68697cd2d3aff899ddfdacd095f10a3cbe15b7a311d46227aba.
