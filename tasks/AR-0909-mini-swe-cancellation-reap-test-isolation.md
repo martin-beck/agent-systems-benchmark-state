@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Monitor fresh PR #127 exact-head CI at eefdb833; classify terminal failures, and do not merge without coordinator authorization.",
+  "next_action": "Redesign the hosted-emulation cancellation fixture around an observable process primitive that does not require guest shell/test executable startup; preserve real RunningMiniSwe and group oracle. No timeout increase or merge.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "eefdb833248db5bf7135ac4749b7dc8886aa5458",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 199,
+  "task_revision": 200,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T07:10:19+00:00",
+  "updated_at": "2026-09-10T07:15:21+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -770,3 +770,11 @@ classified.
   fault 34448590456, formal 34448590449, native 34448590439, repository-quality 34448590418, Rust
   34448590475, AWQ 34448590389, headers 34448590434. AWQ and headers were already SUCCESS at first
   bounded observation; remaining checks were in progress. No merge authorized or attempted.
+
+- 2026-09-10T07:15:21+00:00: PR #127 exact-head emulated-AArch64 run 34448590400 is terminal FAILURE
+  at reviewed eefdb833. The asb-agents lib result was 138 passed, 1 failed, 1 ignored;
+  cancellation_leaves_no_runnable_owned_descendant panicked at mini_swe.rs:2182 with helper
+  readiness timed out, total suite 16.96s. Thus shell-builtin FIFO descendants still do not become
+  observable in the hosted guest despite passing the local QEMU-equivalent run. Treat this as a
+  candidate/test-design defect, not green portability evidence. Preserve PR/head for diagnosis; do
+  not increase the timeout blindly and do not merge.
