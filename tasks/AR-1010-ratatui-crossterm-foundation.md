@@ -11,16 +11,16 @@
     "AR-1030"
   ],
   "id": "AR-1010",
-  "next_action": "Complete immutable-head review of asb-tui PR 9 at 10df38759371a4f6addb78dcfd970b65b3c90be5; repair any blocking finding, otherwise mark ready and merge through the protected reviewed PR path, then verify exact tree, signature, DCO, and post-merge gates.",
+  "next_action": "Complete bounded tmux/screen evidence, full standalone asb-tui gates and coverage, then publish a signed+DCO immutable successor to draft PR 9 for independent review; AR-1025 exclusively owns live client negotiation, polling, and responsiveness.",
   "owner": "codex-ar1010-asb-tui-renderer-20260910",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 241,
+  "task_revision": 242,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T21:50:16+00:00",
+  "updated_at": "2026-09-10T21:51:01+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -796,3 +796,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-10T21:50:16+00:00: Recorded command exit 0; command argv SHA-256
   ff3fffefc6bcfe5bf9f3eacf9484a41a46f521c8a961fea36e8429c120204f7e.
+
+- 2026-09-10T21:51:01+00:00: Review-repair checkpoint remains dirty on published head 10df387. Typed
+  injection/projection only is AR-1010 scope; AR-1025 exclusively owns the live client. Focused
+  AppState, signal/termios, NO_COLOR, exact inventory, sealed-memfd, retained-fd XDG, and lifecycle
+  self-test tests pass. The first multiplexer test was interrupted after an unbounded GNU screen
+  control command leaked exact session asb-tui-test-3272385; the leaked PID/session was terminated
+  successfully. Repair now gives every tmux/screen command a 3-second SIGKILL deadline, uses unique
+  session names, waits boundedly for an actual rendered Connection frame, has Drop cleanup on all
+  exits, and asserts sessions are gone. Recorded exit 127 at 21:49 was cargo fmt invoked without the
+  repository toolchain path; recorded exit 1 at 21:50 was the corrected cargo fmt --check reporting
+  formatting-only diffs in the new test; cargo fmt then completed successfully. No failure is
+  acceptance evidence; the repaired multiplexer test and all broad gates remain pending.
