@@ -13,17 +13,17 @@
   "id": "AR-0909",
   "next_action": "Hold PR #127: await hosted emulated-AArch64 run 34421905238; inspect terminal formal run 34421905246 logs and route acquisition failure to AR-0877. Do not merge.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
-  "observed_dirty": 1,
-  "observed_head": "eb41e1487bf5b47b78a4848860328494880ff5d0",
+  "observed_dirty": 0,
+  "observed_head": "502a0e66ffdfe1aec85f5802b53f7c30c189b304",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0909.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 97,
+  "task_revision": 98,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T05:09:21+00:00",
+  "updated_at": "2026-09-10T05:09:27+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
