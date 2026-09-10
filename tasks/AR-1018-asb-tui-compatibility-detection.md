@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Detect whether an asb-tui bundle is compatible before installation or launch.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Add asb-tui compatibility and terminal capability detection",
-  "updated_at": "2026-09-10T13:24:21+00:00",
+  "updated_at": "2026-09-10T13:24:43+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-compatibility-detection"
 }
 ---
@@ -222,3 +222,6 @@ fixtures for mismatches, privacy-safe diagnostics, and no host identifiers in pu
 
 - 2026-09-10T13:24:21+00:00: Recorded command exit 101; command argv SHA-256
   8a62776d99ae6c6069285dd3f66a66129da72bcdc382c71a5d752de61c6783d6.
+
+- 2026-09-10T13:24:43+00:00: Recorded command exit 101; command argv SHA-256
+  3f7d5d0a9c3a59c0c824cea7f9f1a60701fc84ef6fd992ce18f333e5ddec003c.
