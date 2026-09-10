@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Turn the tested unverified asb-tui lifecycle boundary into a release-safe delegated contract.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Harden the asb-tui release lifecycle contract",
-  "updated_at": "2026-09-10T20:00:54+00:00",
+  "updated_at": "2026-09-10T20:04:27+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-release-contract-hardening"
 }
 ---
@@ -217,3 +217,6 @@ and filesystem tests, complete local gates, independent review, exact-head CI an
   build, schemas, release/publication validators, deny/audit, Gitleaks, shell/workflow analyzers,
   ASB-core isolation, and 90.71% line coverage against the 90% gate. Removed generated target/ after
   testing; .gitignore now prevents recurrence.
+
+- 2026-09-10T20:04:27+00:00: Recorded command exit 0; command argv SHA-256
+  d0baeb7d63933a86af1accd1c32e3bde030c665e14d854e0088bb252f682ffd5.
