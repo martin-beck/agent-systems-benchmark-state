@@ -7,7 +7,8 @@
     "AR-0803",
     "AR-0804",
     "AR-0805",
-    "AR-0806"
+    "AR-0806",
+    "AR-1030"
   ],
   "id": "AR-1010",
   "next_action": "Review draft PR 9 and choose an explicit Zlib/duplicate-policy decision or a dedicated upstream dependency AR before adding the real Ratatui renderer.",
@@ -17,9 +18,9 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T19:47:31+00:00",
+  "updated_at": "2026-09-10T19:50:00+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -341,3 +342,7 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-10T19:47:31+00:00: Clean signed checkpoint is preserved in draft PR 9; release worker
   lease while a separate dependency-resolution AR is authored. AR-1010 remains incomplete and must
   not merge as a finished renderer.
+
+- 2026-09-10T19:50:00+00:00: Added AR-1030 as an explicit prerequisite for the unresolved Ratatui
+  release dependency closure. Draft PR 9 remains a non-rendering checkpoint and cannot complete
+  this AR until AR-1030 is reviewed and integrated.

@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**193 ARs tracked** across 6 active status categories.
+**194 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 5 |
+| **Open** | Dependency-ready and available to claim | 6 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 53 |
 | **Future** | Deferred roadmap work | 1 |
@@ -251,6 +251,7 @@ flowchart LR
         AR_1027["AR-1027 - Planned"]:::status_planned
         AR_1028["AR-1028 - Planned"]:::status_planned
         AR_1029["AR-1029 - Planned"]:::status_planned
+        AR_1030["AR-1030 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -855,6 +856,7 @@ flowchart LR
     AR_1017 --> AR_1019
     AR_1017 --> AR_1021
     AR_1017 --> AR_1022
+    AR_1017 --> AR_1030
     AR_1018 --> AR_1019
     AR_1018 --> AR_1021
     AR_1018 --> AR_1022
@@ -877,6 +879,7 @@ flowchart LR
     AR_1026 --> AR_1027
     AR_1029 --> AR_0903
     AR_1029 --> AR_1026
+    AR_1030 --> AR_1010
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1064,14 +1067,14 @@ flowchart LR
 | [AR-1006](tasks/AR-1006-distributed-workers.md) | [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0702](tasks/AR-0702-native-platforms.md), [AR-1001](tasks/AR-1001-experiment-comparability.md) | None |
 | [AR-1007](tasks/AR-1007-benchmark-validity.md) | [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0701](tasks/AR-0701-platform-manifests.md), [AR-1001](tasks/AR-1001-experiment-comparability.md) | [AR-0405](tasks/AR-0405-performance-workloads.md), [AR-0406](tasks/AR-0406-evolving-workloads.md), [AR-1016](tasks/AR-1016-measurement-integration-audit.md) |
 | [AR-1008](tasks/AR-1008.md) | None | [AR-0898](tasks/AR-0898-shellcheck-fail-closed.md) |
-| [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md) | [AR-0803](tasks/AR-0803-frontend-control-api.md), [AR-0804](tasks/AR-0804-tui-settings-wizard.md), [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-0806](tasks/AR-0806-tui-history-analysis.md) | [AR-1011](tasks/AR-1011-tui-ux-quality.md), [AR-1012](tasks/AR-1012-tui-quality-assurance.md), [AR-1025](tasks/AR-1025-standalone-asb-tui-application.md) |
+| [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md) | [AR-0803](tasks/AR-0803-frontend-control-api.md), [AR-0804](tasks/AR-0804-tui-settings-wizard.md), [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-0806](tasks/AR-0806-tui-history-analysis.md), [AR-1030](tasks/AR-1030-ratatui-dependency-closure.md) | [AR-1011](tasks/AR-1011-tui-ux-quality.md), [AR-1012](tasks/AR-1012-tui-quality-assurance.md), [AR-1025](tasks/AR-1025-standalone-asb-tui-application.md) |
 | [AR-1011](tasks/AR-1011-tui-ux-quality.md) | [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0871](tasks/AR-0871-record-replay-user-workflows.md), [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md) | [AR-1012](tasks/AR-1012-tui-quality-assurance.md) |
 | [AR-1012](tasks/AR-1012-tui-quality-assurance.md) | [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0873](tasks/AR-0873-ci-workflow-captures.md), [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1011](tasks/AR-1011-tui-ux-quality.md) | [AR-0823](tasks/AR-0823-installation-qualification.md), [AR-0903](tasks/AR-0903-release-qualification.md), [AR-1027](tasks/AR-1027-asb-tui-verified-release.md) |
 | [AR-1013](tasks/AR-1013-measurement-catalog-semantics.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-0602](tasks/AR-0602-csb-monitoring-contention.md), [AR-1001](tasks/AR-1001-experiment-comparability.md) | [AR-1014](tasks/AR-1014-tui-measurement-selection.md), [AR-1015](tasks/AR-1015-csb-measurement-adapter.md) |
 | [AR-1014](tasks/AR-1014-tui-measurement-selection.md) | [AR-0804](tasks/AR-0804-tui-settings-wizard.md), [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-1013](tasks/AR-1013-measurement-catalog-semantics.md) | [AR-1016](tasks/AR-1016-measurement-integration-audit.md) |
 | [AR-1015](tasks/AR-1015-csb-measurement-adapter.md) | [AR-0601](tasks/AR-0601-csb-integration.md), [AR-0602](tasks/AR-0602-csb-monitoring-contention.md), [AR-0604](tasks/AR-0604-csb-native-qualification.md), [AR-1013](tasks/AR-1013-measurement-catalog-semantics.md) | [AR-1016](tasks/AR-1016-measurement-integration-audit.md) |
 | [AR-1016](tasks/AR-1016-measurement-integration-audit.md) | [AR-1002](tasks/AR-1002-verifier-integrity.md), [AR-1007](tasks/AR-1007-benchmark-validity.md), [AR-1014](tasks/AR-1014-tui-measurement-selection.md), [AR-1015](tasks/AR-1015-csb-measurement-adapter.md) | None |
-| [AR-1017](tasks/AR-1017-asb-tui-separate-repository.md) | [AR-0803](tasks/AR-0803-frontend-control-api.md), [AR-0804](tasks/AR-0804-tui-settings-wizard.md), [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-0806](tasks/AR-0806-tui-history-analysis.md), [AR-0851](tasks/AR-0851-shared-workflow-coordinator.md) | [AR-1018](tasks/AR-1018-asb-tui-compatibility-detection.md), [AR-1019](tasks/AR-1019-asb-tui-bundle-verification.md), [AR-1021](tasks/AR-1021-asb-tui-release-promotion.md), [AR-1022](tasks/AR-1022-asb-tui-release-contract-hardening.md) |
+| [AR-1017](tasks/AR-1017-asb-tui-separate-repository.md) | [AR-0803](tasks/AR-0803-frontend-control-api.md), [AR-0804](tasks/AR-0804-tui-settings-wizard.md), [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-0806](tasks/AR-0806-tui-history-analysis.md), [AR-0851](tasks/AR-0851-shared-workflow-coordinator.md) | [AR-1018](tasks/AR-1018-asb-tui-compatibility-detection.md), [AR-1019](tasks/AR-1019-asb-tui-bundle-verification.md), [AR-1021](tasks/AR-1021-asb-tui-release-promotion.md), [AR-1022](tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1030](tasks/AR-1030-ratatui-dependency-closure.md) |
 | [AR-1018](tasks/AR-1018-asb-tui-compatibility-detection.md) | [AR-1017](tasks/AR-1017-asb-tui-separate-repository.md) | [AR-1019](tasks/AR-1019-asb-tui-bundle-verification.md), [AR-1021](tasks/AR-1021-asb-tui-release-promotion.md), [AR-1022](tasks/AR-1022-asb-tui-release-contract-hardening.md) |
 | [AR-1019](tasks/AR-1019-asb-tui-bundle-verification.md) | [AR-1017](tasks/AR-1017-asb-tui-separate-repository.md), [AR-1018](tasks/AR-1018-asb-tui-compatibility-detection.md) | [AR-1020](tasks/AR-1020-asb-tui-install-selftest.md), [AR-1021](tasks/AR-1021-asb-tui-release-promotion.md), [AR-1022](tasks/AR-1022-asb-tui-release-contract-hardening.md) |
 | [AR-1020](tasks/AR-1020-asb-tui-install-selftest.md) | [AR-1019](tasks/AR-1019-asb-tui-bundle-verification.md) | [AR-1021](tasks/AR-1021-asb-tui-release-promotion.md), [AR-1022](tasks/AR-1022-asb-tui-release-contract-hardening.md) |
@@ -1084,6 +1087,7 @@ flowchart LR
 | [AR-1027](tasks/AR-1027-asb-tui-verified-release.md) | [AR-0823](tasks/AR-0823-installation-qualification.md), [AR-0903](tasks/AR-0903-release-qualification.md), [AR-1012](tasks/AR-1012-tui-quality-assurance.md), [AR-1026](tasks/AR-1026-asb-tui-cross-repository-integration.md) | None |
 | [AR-1028](tasks/AR-1028-asb-cli-workflow-captures.md) | [AR-0872](tasks/AR-0872-beginner-workflow-documentation.md) | None |
 | [AR-1029](tasks/AR-1029-remove-legacy-in-tree-tui.md) | [AR-1024](tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](tasks/AR-1025-standalone-asb-tui-application.md) | [AR-0903](tasks/AR-0903-release-qualification.md), [AR-1026](tasks/AR-1026-asb-tui-cross-repository-integration.md) |
+| [AR-1030](tasks/AR-1030-ratatui-dependency-closure.md) | [AR-1017](tasks/AR-1017-asb-tui-separate-repository.md) | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md) |
 
 ## Complete AR inventory
 
@@ -1094,11 +1098,12 @@ flowchart LR
 | P0 | [AR-1022](tasks/AR-1022-asb-tui-release-contract-hardening.md): Harden the asb-tui release lifecycle contract | codex-ar1022-lifecycle-20260910 | Turn the tested unverified asb-tui lifecycle boundary into a release-safe delegated contract. | Harden the standalone lifecycle trust root, clock, classification and release-compatible schemas before any public install route consumes them. |
 | P0 | [AR-1023](tasks/AR-1023-asb-tui-capabilities-command.md): Add the ASB frontend capabilities command | codex-ar1023-capabilities-20260910 | Publish the ASB capability negotiation command required by the standalone frontend. | Run full pinned workspace and repository gates, inspect exact diff, then create a signed DCO commit and publish the review branch. |
 
-### Open (5)
+### Open (6)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0897](tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | Unclaimed | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Hold PR 126 at bd6f450; after AR-0877 and AR-0909 integrate, rebase once and require fresh all-green exact-head CI before merge. |
+| P0 | [AR-1030](tasks/AR-1030-ratatui-dependency-closure.md): Resolve the Ratatui dependency closure | Unclaimed | Make the maintained Ratatui release consumable by standalone asb-tui without hiding supply-chain exceptions. | Resolve the exact Ratatui release dependency closure through a reviewed upstream feature or narrowly justified fail-closed policy decision. |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | Repair/rebase the fail-closed TLA provenance pin, then rerun PR #119 exact-head CI; do not merge. |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Unclaimed | Qualify pinned OpenJiuwen live execution. | Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI. |
 | P1 | [AR-0908](tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | Unclaimed | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Hold PR #125 unchanged; shared formal asset and native-runner pin owners must repair their gates before a fresh exact-head run. |
