@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the maintained Ratatui release consumable by standalone asb-tui without hiding supply-chain exceptions.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Resolve the Ratatui dependency closure",
-  "updated_at": "2026-09-10T19:50:04+00:00",
+  "updated_at": "2026-09-10T19:50:21+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-dependency-closure"
 }
 ---
@@ -25,3 +25,6 @@ supply-chain policy because it necessarily contains Zlib-licensed foldhash, hash
 and syn 2/3. Resolve this visibly before AR-1010 adds a renderer.
 
 - 2026-09-10T19:50:04+00:00: Claimed by codex-ar1030-ratatui-policy-20260910.
+
+- 2026-09-10T19:50:21+00:00: Recorded command exit 0; command argv SHA-256
+  7e0d0efe0ae08a4c308f06db576693eff2b55df1b1195c580afd000b6237ceef.
