@@ -11,7 +11,7 @@
     "AR-1023"
   ],
   "id": "AR-1024",
-  "next_action": "Implement trusted release discovery, acquisition and typed `asb tui` lifecycle routing after the hardened lifecycle and capability contracts merge.",
+  "next_action": "Implement typed asb tui dispatch, safe XDG state, signed channel and bundle acquisition, exact-byte lifecycle delegation, and adversarial tests without frontend or rendering code.",
   "observed_branch": "feature/asb-tui-lifecycle-router",
   "observed_dirty": 0,
   "observed_head": "32df706413a6f165f086941426a5c793bd5e01e8",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Implement `asb tui` lifecycle routing",
-  "updated_at": "2026-09-10T20:32:24+00:00",
+  "updated_at": "2026-09-10T20:34:34+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-lifecycle-router"
 }
 ---
@@ -43,3 +43,11 @@ complete gates, exact-head CI and post-merge verification.
 
 - 2026-09-10T20:32:17+00:00: Recorded command exit 0; command argv SHA-256
   1629c9f9a24c48825d6b7660c64f1bb238f910e17d68a4d23bb57a3efb94f807.
+
+- 2026-09-10T20:34:34+00:00: Initial audit complete at exact ASB origin/main
+  32df706413a6f165f086941426a5c793bd5e01e8. Read repository AGENTS, DEVELOPMENT, ARCHITECTURE,
+  QUALITY, AR task/plan, current asb-cli/asb-bundle/control boundaries, and exact merged asb-tui
+  d58eda9 lifecycle request/response/bundle contracts. First implementation target is
+  crates/asb-cli/src/tui.rs with crates/asb-cli/tests/tui_lifecycle.rs; ASB will contain only
+  trusted installation/lifecycle routing, never Ratatui/Crossterm/render/UI application code or a
+  source link to asb-tui.

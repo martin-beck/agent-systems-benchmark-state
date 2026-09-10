@@ -1096,7 +1096,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md): Adopt Ratatui/Crossterm TUI foundation | codex-ar1010-asb-tui-renderer-20260910 | Adopt Ratatui and Crossterm as the supported professional TUI foundation. | Review draft PR 9 and choose an explicit Zlib/duplicate-policy decision or a dedicated upstream dependency AR before adding the real Ratatui renderer. |
-| P0 | [AR-1024](tasks/AR-1024-asb-tui-lifecycle-router.md): Implement &#96;asb tui&#96; lifecycle routing | codex-ar1024-router-20260910 | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | Implement trusted release discovery, acquisition and typed &#96;asb tui&#96; lifecycle routing after the hardened lifecycle and capability contracts merge. |
+| P0 | [AR-1024](tasks/AR-1024-asb-tui-lifecycle-router.md): Implement &#96;asb tui&#96; lifecycle routing | codex-ar1024-router-20260910 | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | Implement typed asb tui dispatch, safe XDG state, signed channel and bundle acquisition, exact-byte lifecycle delegation, and adversarial tests without frontend or rendering code. |
 | P1 | [AR-1028](tasks/AR-1028-asb-cli-workflow-captures.md): Generate ASB CLI workflow captures | codex-ar1028-cli-captures-20260910 | Produce reproducible ASB CLI transcripts separately from standalone TUI screenshots. | Push signed commit, open PR, obtain independent review, and require terminal green exact-head CI. |
 
 ### Open (5)
