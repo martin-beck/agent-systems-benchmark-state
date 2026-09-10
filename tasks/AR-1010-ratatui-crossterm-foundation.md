@@ -11,16 +11,16 @@
     "AR-1030"
   ],
   "id": "AR-1010",
-  "next_action": "Run full exact-tree asb-tui gates, review and sign the trust-boundary successor, push PR #9, then wait for exact-head CI and a fresh independent reviewer; no merge.",
+  "next_action": "Push signed successor 0301179/tree 15d4619 to PR #9, verify exact-head CI, then release OPEN for a fresh independent reviewer; no merge.",
   "owner": "codex-ar1010-trust-repair-20260911",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 357,
+  "task_revision": 358,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T23:53:30+00:00",
+  "updated_at": "2026-09-10T23:53:53+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -1237,3 +1237,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-10T23:53:30+00:00: Recorded command exit 0; command argv SHA-256
   64b4856dfec323e10ac36b1d6f47f7f64e5b51da8398ee07e494e6d439e37ead.
+
+- 2026-09-10T23:53:53+00:00: Signed+DCO repair successor 0301179dd6c8ea9edf7873527f266a59b7f16215
+  (tree 15d4619cd478129caa3393bb5825c4e6e7e9c070) is clean. Namespace creation succeeded in the
+  actual PTY adversarial probe and setsid returned seccomp EPERM (reported namespace confinement
+  probe: denied); thread and exec attempts also denied. Full gates pass: fmt, all-target Clippy -D
+  warnings, 44 lib/all integration/doc tests including lifecycle 13/13 and terminal PTY 12/12,
+  rustdoc, release build, deterministic SBOM/schema/release/publication validators, real promoted
+  self-test ready, shell/workflow/zizmor, cargo-deny, cargo-audit 94 deps/1243 advisories, Gitleaks,
+  ASB isolation 16+2 doctests, and clean-tree coverage 88.04% regions/91.44% lines. Entire
+  six-commit PR range signatures and matching DCO pass.
