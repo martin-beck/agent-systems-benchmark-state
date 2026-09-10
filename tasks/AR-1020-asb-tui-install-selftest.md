@@ -2,7 +2,7 @@
 {
   "branch": "feature/asb-tui-install-selftest",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-10T18:53:34+00:00",
   "depends_on": [
     "AR-1019"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "contracts_20260906",
   "plan": "../plans/AR-1020.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Install and operate asb-tui safely as an optional extension.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Add isolated asb-tui install and self-test lifecycle",
-  "updated_at": "2026-09-10T15:53:31+00:00",
+  "updated_at": "2026-09-10T15:53:34+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-install-selftest"
 }
 ---
@@ -35,3 +35,5 @@ read-only status, detached-run continuity, permissions/privacy checks, and clear
 - 2026-09-10T15:53:31+00:00: AR-1019 is complete on public exact main
   990517eda77d4d42ff51ca5d1da03b56e7b8cdda with hosted and trusted local validation; isolated
   install lifecycle may begin.
+
+- 2026-09-10T15:53:34+00:00: Claimed by contracts_20260906.
