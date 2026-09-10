@@ -2,7 +2,7 @@
 {
   "branch": "feature/ratatui-crossterm-foundation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-11T01:38:35+00:00",
   "depends_on": [
     "AR-0803",
     "AR-0804",
@@ -12,15 +12,15 @@
   ],
   "id": "AR-1010",
   "next_action": "Fresh immutable review of standalone asb-tui draft PR #9 exact head 1bab7ad34cdbf1647c7eea4953c3e60875c19ddc tree 5876314e4c6a9e54dccb3bcc027c6596f3a03912; exact-head hosted CI is green; do not merge without approval.",
-  "owner": "",
+  "owner": "codex-ar1010-trust-repair-20260911",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 336,
+  "task_revision": 337,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T23:24:54+00:00",
+  "updated_at": "2026-09-10T23:38:35+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -1164,3 +1164,5 @@ Implementation has not started. Read the linked plan before claiming.
   codex-ar1010-asb-tui-renderer-20260910. Implementation worker completed and stopped; exact
   successor 1bab7ad is frozen with green CI and awaits immutable review. Recover expired lease
   without changing product state.
+
+- 2026-09-10T23:38:35+00:00: Claimed by codex-ar1010-trust-repair-20260911.
