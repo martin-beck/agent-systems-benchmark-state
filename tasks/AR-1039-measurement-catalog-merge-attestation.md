@@ -2,19 +2,19 @@
 {
   "branch": "docs/measurement-catalog-merge-attestation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-11T01:10:32+00:00",
   "depends_on": [],
   "id": "AR-1039",
   "next_action": "Attest PR #131's valid signed tree-equivalent but non-DCO merge and publish a DCO-compliant corrective merge.",
-  "owner": "",
+  "owner": "codex-ar1039-catalog-merge-recovery-20260911",
   "plan": "../plans/AR-1039.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Recover the measurement catalog publication boundary without rewriting protected main.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Attest the measurement catalog merge boundary",
-  "updated_at": "2026-09-10T23:10:22+00:00",
+  "updated_at": "2026-09-10T23:10:32+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-merge-attestation"
 }
 ---
@@ -26,3 +26,5 @@ the corrective merge commit uses an actual multiline DCO trailer. This AR owns n
 
 - 2026-09-10T23:10:22+00:00: Protected main is red because PR #131 merge commit lacks DCO; focused
   recovery is immediately dependency-ready.
+
+- 2026-09-10T23:10:32+00:00: Claimed by codex-ar1039-catalog-merge-recovery-20260911.
