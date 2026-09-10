@@ -9,18 +9,18 @@
   ],
   "id": "AR-1013",
   "next_action": "Define and review the versioned measurement catalog and semantic grouping contract before implementation.",
-  "observed_branch": "",
+  "observed_branch": "feature/measurement-catalog-semantics",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "58d0da27736d6c22ca7c43f76ade497165b29919",
   "owner": "codex-ar1013-measurement-catalog-20260910",
   "plan": "../plans/AR-1013.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define selectable ASB measurements grouped by stable semantic meaning.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Version the measurement catalog and semantic groups",
-  "updated_at": "2026-09-10T21:44:56+00:00",
+  "updated_at": "2026-09-10T21:45:03+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-semantics"
 }
 ---
