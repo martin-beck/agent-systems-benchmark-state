@@ -7,7 +7,7 @@
     "AR-1017"
   ],
   "id": "AR-1018",
-  "next_action": "Open transparent attestation PR; require hosted exact-head green, then fast-forward main only under restored protections and rerun hosted plus trusted exact-main CI.",
+  "next_action": "Await coordinator independent validation of exact-main attestation, post-merge CI, restored protections, and divergent local empty attestation; do not release.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Detect whether an asb-tui bundle is compatible before installation or launch.",
-  "task_revision": 196,
+  "task_revision": 197,
   "title": "Add asb-tui compatibility and terminal capability detection",
-  "updated_at": "2026-09-10T15:15:15+00:00",
+  "updated_at": "2026-09-10T15:15:48+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-compatibility-detection"
 }
 ---
@@ -688,3 +688,16 @@ fixtures for mismatches, privacy-safe diagnostics, and no host identifiers in pu
 
 - 2026-09-10T15:15:15+00:00: Recorded command exit 0; command argv SHA-256
   e69dd9bbc7aac2f942797f0573ce831bcbefd35484c550690ae647f5f66e3be8.
+
+- 2026-09-10T15:15:48+00:00: Corrective transition: empty attestation e3e02c7 was locally SSH-signed
+  and DCO-bearing and exact hosted workflow_dispatch 34493962664/job 102927594599 passed. Direct
+  fast-forward was fail-closed rejected because GitHub classified that SSH signature unknown_key and
+  did not accept the dispatch check as the branch status; public main remained add8df6. A concurrent
+  transparent PR 4 added only provenance/merge-attestations/AR-1018.md, passed exact-head hosted run
+  34494030097/job 102927982617, and integrated as GitHub-verified, DCO-bearing single-parent commit
+  a7ca8e07f177fc6a647b3297df624137cfb85e86/tree 8556090e. Exact-main Repository quality 34494265901
+  and Trusted main verification 34494265789 completed SUCCESS. Protection reverified: required
+  signatures enabled, strict sole hosted required context, admin enforcement and conversation
+  resolution enabled, force/deletion disabled, review protection absent. Public history was not
+  rewritten. Hold release for coordinator review because local empty attestation e3e02c7 remains a
+  divergent unpublished sibling and the concurrent PR 4 path must be independently accepted.
