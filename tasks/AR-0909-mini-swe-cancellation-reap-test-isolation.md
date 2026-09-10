@@ -2,7 +2,7 @@
 {
   "branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T07:28:29+00:00",
+  "claim_expires": "2026-09-10T07:28:43+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 88,
+  "task_revision": 89,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T04:28:29+00:00",
+  "updated_at": "2026-09-10T04:28:43+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -327,3 +327,5 @@ classified.
   expired lease; preserve PR #127 exact reviewed head and CI evidence.
 
 - 2026-09-10T04:28:29+00:00: Claimed by quality_20260906.
+
+- 2026-09-10T04:28:43+00:00: Heartbeat by quality_20260906.
