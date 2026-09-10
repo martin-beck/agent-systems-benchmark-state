@@ -2,7 +2,7 @@
 {
   "branch": "feature/asb-tui-release-promotion",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T20:06:31+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1017",
     "AR-1018",
@@ -16,15 +16,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "asb_tui_coordinator_20260910",
+  "owner": "",
   "plan": "../plans/AR-1021.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Audit and promote asb-tui from optional extension to verified release when eligible.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Audit and promote the asb-tui release channel",
-  "updated_at": "2026-09-10T17:14:47+00:00",
+  "updated_at": "2026-09-10T17:17:11+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-release-promotion"
 }
 ---
@@ -53,3 +53,15 @@ artifact cleanup policy, signed release provenance, and documented promotion/rol
   doctests, documentation, schema/publication validation, workflow quality, coverage, and secret
   scanning passed. Hosted exact-head CI is pending; protected trusted-main verification remains
   intentionally post-merge only.
+
+- 2026-09-10T17:17:11+00:00: Independent release-channel audit completed. Public PR 8 merged as
+  GitHub-verified+DCO main 3d2b6b537da817469bf8a39841ccf9a79a4c370f with reviewed tree
+  54a1eecdd3b06e2c251ef57eb4b93444f77e4fa6. Exact-main hosted Repository quality run 34507098594 and
+  protected trusted local run 34507098555 both passed. The repository is public and MIT licensed;
+  Huawei Technologies Co., Ltd. 2026 copyright and SPDX enforcement, signed release provenance
+  criteria, capability/evidence matrix, public lifecycle unavailability, rollback, and cleanup
+  policy are documented and CI-enforced. Strict required CI, signed commits, admin enforcement,
+  conversation resolution, and force/delete prevention are restored. No tag or binary release
+  exists: the channel correctly remains source-only optional_unverified because ASB external routing
+  and the qualified interactive UI are absent. Promotion now fails closed until every
+  machine-readable condition becomes true.

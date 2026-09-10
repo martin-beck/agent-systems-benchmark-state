@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**185 ARs tracked** across 6 active status categories.
+**185 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 6 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 46 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 126 |
+| **Done** | Accepted, integrated, and durably verified | 127 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -242,7 +242,7 @@ flowchart LR
         AR_1018["AR-1018 - Done"]:::status_done
         AR_1019["AR-1019 - Done"]:::status_done
         AR_1020["AR-1020 - Done"]:::status_done
-        AR_1021["AR-1021 - In progress"]:::status_in_progress
+        AR_1021["AR-1021 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1032,12 +1032,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P2 | [AR-1021](tasks/AR-1021-asb-tui-release-promotion.md): Audit and promote the asb-tui release channel | asb_tui_coordinator_20260910 | Audit and promote asb-tui from optional extension to verified release when eligible. | Review exact-head PR 8 hosted evidence, merge without weakening permanent protections, then obtain exact-main hosted and trusted local evidence. |
-
 ### Open (6)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -1116,7 +1110,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (126)
+### Done (127)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1244,5 +1238,6 @@ flowchart LR
 | P2 | [AR-0601](tasks/AR-0601-csb-integration.md): Prototype optional CSB integration | Unclaimed | Reuse CSB application execution and monitoring where contracts fit ASB. | Monitor PR #70 exact-head CI for terminal results; do not merge without coordinator authorization. |
 | P2 | [AR-0802](tasks/AR-0802-executable-guides.md): Deliver runnable user and extension guides | Unclaimed | Publish executable offline quickstart, workload/agent extension guide and reproducibility guide. | Capture actual CLI workflows after commands are implemented. |
 | P2 | [AR-1005](tasks/AR-1005-trace-interoperability.md): Export interoperable privacy-safe traces | Unclaimed | Expose stable causal ASB events and optional standards-based telemetry without binding storage to an evolving convention. | Monitor PR #75 exact head 921cf004 CI; classify any failure before repair and do not merge without coordinator authorization. |
+| P2 | [AR-1021](tasks/AR-1021-asb-tui-release-promotion.md): Audit and promote the asb-tui release channel | Unclaimed | Audit and promote asb-tui from optional extension to verified release when eligible. | Review exact-head PR 8 hosted evidence, merge without weakening permanent protections, then obtain exact-main hosted and trusted local evidence. |
 | P3 | [AR-0404](tasks/AR-0404-extended-workloads.md): Expand established benchmark catalogue | Unclaimed | Evaluate SWE-bench Pro, BigCodeBench, EvalPlus and LiveCodeBench as optional suites. | Add signed normal follow-up after rewritten merge so push range is resolvable; rerun exact-main post-merge workflows. |
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Monitor all required post-merge CI runs for exact main ca6e75916a8c9831b9107377cd48d731463c272a; release only after every required gate is green. |
