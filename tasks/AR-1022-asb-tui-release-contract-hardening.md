@@ -2,19 +2,25 @@
 {
   "branch": "feature/asb-tui-release-contract-hardening",
   "checkpoint_commit": "",
-  "claim_expires": "",
-  "depends_on": ["AR-1017", "AR-1018", "AR-1019", "AR-1020", "AR-1021"],
+  "claim_expires": "2026-09-10T22:13:59+00:00",
+  "depends_on": [
+    "AR-1017",
+    "AR-1018",
+    "AR-1019",
+    "AR-1020",
+    "AR-1021"
+  ],
   "id": "AR-1022",
   "next_action": "Harden the standalone lifecycle trust root, clock, classification and release-compatible schemas before any public install route consumes them.",
-  "owner": "",
+  "owner": "codex-ar1022-lifecycle-20260910",
   "plan": "../plans/AR-1022.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Turn the tested unverified asb-tui lifecycle boundary into a release-safe delegated contract.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Harden the asb-tui release lifecycle contract",
-  "updated_at": "2026-09-10T19:00:00+00:00",
+  "updated_at": "2026-09-10T19:13:59+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-release-contract-hardening"
 }
 ---
@@ -26,3 +32,5 @@ extension. Preserve deterministic injection seams only inside tests.
 Acceptance requires closed generated schemas, backward/rejection behavior documented explicitly,
 embedded signer identity, system-clock verification, honest verified-channel state, hostile request
 and filesystem tests, complete local gates, independent review, exact-head CI and post-merge checks.
+
+- 2026-09-10T19:13:59+00:00: Claimed by codex-ar1022-lifecycle-20260910.
