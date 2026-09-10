@@ -3,7 +3,7 @@
 Generated from local Git and GitHub. Do not edit.
 
 - Product remote main: `58d0da27736d6c22ca7c43f76ade497165b29919`
-- Local origin/main: `b2763fb548e1057e4ea36912515706406098eb63`
+- Local origin/main: `58d0da27736d6c22ca7c43f76ade497165b29919`
 - Primary worktree head: `bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09`
 
 ## Open pull requests
@@ -23,7 +23,7 @@ Generated from local Git and GitHub. Do not edit.
 | 34528554629 | `58d0da27736d` | push | Rust verification | in_progress:- |
 | 34528554616 | `58d0da27736d` | push | Huawei MIT source headers | completed:success |
 | 34528554558 | `58d0da27736d` | push | Emulated aarch64 portability | in_progress:- |
-| 34528554555 | `58d0da27736d` | push | Repository quality | in_progress:- |
+| 34528554555 | `58d0da27736d` | push | Repository quality | completed:failure |
 | 34528554533 | `58d0da27736d` | push | Formal assurance | in_progress:- |
 | 34528554531 | `58d0da27736d` | push | Fault assurance | in_progress:- |
 | 34528554530 | `58d0da27736d` | push | Hosted portability and native qualification | in_progress:- |
