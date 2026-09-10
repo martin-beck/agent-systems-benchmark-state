@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Diagnose hosted QEMU child-start/readiness-file semantics and make the cancellation oracle observe startup without relying on emulated execution of a generated shell script. Do not increase timeout blindly or merge PR #127.",
+  "next_action": "Obtain immutable review of signed 67d07fd; if approved, guarded PR #127 update and fresh exact-head CI. Do not merge; formal acquisition remains AR-0877-owned.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 1,
   "observed_head": "ef864f70dacc3d70e782a65de2571131ad47d7c0",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 159,
+  "task_revision": 160,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T06:27:59+00:00",
+  "updated_at": "2026-09-10T06:30:09+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -613,3 +613,15 @@ classified.
 
 - 2026-09-10T06:27:59+00:00: Recorded command exit 0; command argv SHA-256
   d8611c415faef707cab4eaa0a2607aef21f9621cf4b80dd8ade432b89d68a2ca.
+
+- 2026-09-10T06:30:09+00:00: Signed successor 67d07fd2f681bd7b625bc517367d4ba49fb5034e, tree
+  602f009285a71e66700961ffe0364df26d9fa29b, parent ef864f70dacc3d70e782a65de2571131ad47d7c0 isolates
+  the AArch64 cancellation case in a bounded 60-second self-reexec of the exact same test before
+  executing the unchanged real MiniSwe cancellation and two-descendant process-group oracle. This
+  avoids QEMU multithreaded fork/exec interference while retaining real cancellation coverage;
+  native execution remains direct. The exact hosted-workflow-equivalent local AArch64/QEMU full
+  asb-agents lib command passes 139/139 with 1 ignored and the known trajectory test skipped; nested
+  cancellation passes. Native fmt, workspace all-target clippy -D warnings and full locked workspace
+  tests pass. Exact aggregate scope remains one cfg(test) file, production untouched; SSH
+  signature/DCO/diff-check/worktree clean. Earlier durable update was blocked only by the
+  now-recovered unrelated AR-1010 expired claim.
