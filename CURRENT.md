@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1022](tasks/AR-1022-asb-tui-release-contract-hardening.md): Harden the asb-tui release lifecycle contract | Turn the tested unverified asb-tui lifecycle boundary into a release-safe delegated contract. | Harden the standalone lifecycle trust root, clock, classification and release-compatible schemas before any public install route consumes them. | codex-ar1022-lifecycle-20260910 |
-| P0 | [AR-1023](tasks/AR-1023-asb-tui-capabilities-command.md): Add the ASB frontend capabilities command | Publish the ASB capability negotiation command required by the standalone frontend. | Run full pinned workspace and repository gates, inspect exact diff, then create a signed DCO commit and publish the review branch. | codex-ar1023-capabilities-20260910 |
+| P0 | [AR-1023](tasks/AR-1023-asb-tui-capabilities-command.md): Add the ASB frontend capabilities command | Publish the ASB capability negotiation command required by the standalone frontend. | Create and verify the signed DCO implementation commit, push the branch, open the pull request, and await exact-head review/CI. | codex-ar1023-capabilities-20260910 |
 
 ## Open
 
