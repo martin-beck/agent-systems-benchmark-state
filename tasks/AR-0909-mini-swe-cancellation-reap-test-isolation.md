@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 128,
+  "task_revision": 129,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T05:50:08+00:00",
+  "updated_at": "2026-09-10T05:51:20+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -482,3 +482,6 @@ classified.
   and diff-check pass; worktree clean. The later read-only combined inspection exit 2 was
   operator-only: rg targeted the state task path from the product worktree after all git checks had
   passed.
+
+- 2026-09-10T05:51:20+00:00: Recorded command exit 0; command argv SHA-256
+  e190f9cbe398c8f590be8ac14c625ff83e6716808adb108e7be5c1aacaebd518.
