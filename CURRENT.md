@@ -9,7 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md): Adopt Ratatui/Crossterm TUI foundation | Adopt Ratatui and Crossterm as the supported professional TUI foundation. | Port the reviewed application foundation into standalone asb-tui and resolve or precisely isolate the dependency-policy blocker without weakening policy. | codex-ar1010-asb-tui-foundation-20260910 |
 | P0 | [AR-1022](tasks/AR-1022-asb-tui-release-contract-hardening.md): Harden the asb-tui release lifecycle contract | Turn the tested unverified asb-tui lifecycle boundary into a release-safe delegated contract. | Harden the standalone lifecycle trust root, clock, classification and release-compatible schemas before any public install route consumes them. | codex-ar1022-lifecycle-20260910 |
-| P0 | [AR-1023](tasks/AR-1023-asb-tui-capabilities-command.md): Add the ASB frontend capabilities command | Publish the ASB capability negotiation command required by the standalone frontend. | Implement the closed side-effect-free ASB frontend capability command and cross-check its output against the published asb-tui parser contract. | codex-ar1023-capabilities-20260910 |
+| P0 | [AR-1023](tasks/AR-1023-asb-tui-capabilities-command.md): Add the ASB frontend capabilities command | Publish the ASB capability negotiation command required by the standalone frontend. | Run full pinned workspace and repository gates, inspect exact diff, then create a signed DCO commit and publish the review branch. | codex-ar1023-capabilities-20260910 |
 
 ## Open
 

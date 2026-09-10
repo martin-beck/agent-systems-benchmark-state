@@ -13,7 +13,7 @@
     "AR-0904"
   ],
   "id": "AR-1023",
-  "next_action": "Implement the closed side-effect-free ASB frontend capability command and cross-check its output against the published asb-tui parser contract.",
+  "next_action": "Run full pinned workspace and repository gates, inspect exact diff, then create a signed DCO commit and publish the review branch.",
   "observed_branch": "feature/asb-tui-capabilities-command",
   "observed_dirty": 12,
   "observed_head": "66ca27afc2fb5a82b171e849e6dda4145735c8d2",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish the ASB capability negotiation command required by the standalone frontend.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Add the ASB frontend capabilities command",
-  "updated_at": "2026-09-10T19:34:17+00:00",
+  "updated_at": "2026-09-10T19:34:43+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-capabilities-command"
 }
 ---
@@ -99,3 +99,10 @@ local gates, independent review, exact-head CI and post-merge verification.
 
 - 2026-09-10T19:34:17+00:00: Recorded command exit 0; command argv SHA-256
   400ddc2b2b8b05c35cd53e1b4ff0858e14fb4518bc5ab554c50281483f820498.
+
+- 2026-09-10T19:34:43+00:00: Debugged wrapped failures: initial cargo/rustc lookup failures were
+  sanitized-PATH environment issues resolved with absolute pinned Rust 1.93.0 tools; one focused
+  test failure was an invalid duplicate-key schema oracle and is fixed by testing raw duplicate
+  rejection separately; two apply_patch context misses were no-op incremental-edit conflicts.
+  Focused capability contract now passes, with exact emitted fixture, generated schema equality,
+  strict drift rejection and malformed CLI coverage.
