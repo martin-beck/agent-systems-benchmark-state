@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 238,
+  "task_revision": 239,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T21:47:09+00:00",
+  "updated_at": "2026-09-10T21:49:17+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -787,3 +787,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-10T21:47:09+00:00: Recorded command exit 0; command argv SHA-256
   2fcc3ee52d4be7ff156e68a80f228b989836c7c54df2c88c0df94f9c39f233f1.
+
+- 2026-09-10T21:49:17+00:00: Recorded command exit 127; command argv SHA-256
+  03be9ad67fe8d3178df77ff58d5ff6d3e376948eb49d7f5bfd97161b18af13df.
