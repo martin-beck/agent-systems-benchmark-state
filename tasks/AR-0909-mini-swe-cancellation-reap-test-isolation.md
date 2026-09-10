@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 214,
+  "task_revision": 215,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T07:32:07+00:00",
+  "updated_at": "2026-09-10T07:32:45+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -826,3 +826,6 @@ classified.
   warnings, and cargo test --locked --workspace all completed green; the final wrapper exit 1 was
   solely post-command state reconciliation detecting the since-recovered AR-0909/AR-0859 lease
   expiry, after all test/doc-test output passed.
+
+- 2026-09-10T07:32:45+00:00: Recorded command exit 0; command argv SHA-256
+  75cda8fe8aa2a9e40b8722859049394bbb588396652cbcb55729782cc9033ada.
