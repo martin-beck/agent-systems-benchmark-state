@@ -10,7 +10,7 @@
     "AR-0806"
   ],
   "id": "AR-1010",
-  "next_action": "Run full exact-tree assurance gates on signed baseline repair 2754623; no publication.",
+  "next_action": "Repair the Ratatui dependency closure so cargo-deny and cargo-audit pass; preserve TUI semantics and rerun all gates.",
   "observed_branch": "feature/tui-ratatui-crossterm-foundation",
   "observed_dirty": 0,
   "observed_head": "2754623be3503589b24cbb84341dfcf65ccb8911",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T04:38:46+00:00",
+  "updated_at": "2026-09-10T04:39:23+00:00",
   "worktree_key": "agent-systems-benchmark-tui-ratatui-crossterm-foundation"
 }
 ---
@@ -135,3 +135,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-10T04:38:46+00:00: Recorded command exit 1; command argv SHA-256
   70ee4f26a98d45a10ff8b1e83e8061ee0ea6eb02629896c14354f021a3025aac.
+
+- 2026-09-10T04:39:23+00:00: Full exact-tree checkpoint on signed head
+  2754623be3503589b24cbb84341dfcf65ccb8911: PASS workspace fmt, Clippy -D warnings, locked
+  tests/doctests, rustdoc -D warnings, release build; PASS formal locked Rust/Loom; PASS TLC 3,709
+  states plus stale mutant and Alloy positive/six mutants; PASS mutation sentinels 7/7 caught after
+  selecting pinned cargo-mutants 27.1.0 (initial exit 101 was environment-only missing PATH); PASS
+  repository policy, contract consistency, actionlint, zizmor, Gitleaks, failure-path fixtures,
+  platform manifest/46 tests, and coverage 95.13% regions/97.84% lines. BLOCKED candidate dependency
+  closure: cargo deny rejects Ratatui 0.29 transitive foldhash Zlib license, duplicate
+  hashbrown/rustix/linux-raw-sys/unicode-width/windows-sys versions, and unmaintained paste
+  RUSTSEC-2024-0436; cargo audit additionally rejects lru 0.12.5 RUSTSEC-2026-0253 and
+  RUSTSEC-2026-0002. These are candidate-introduced dependency findings, not runner/shared-harness
+  failures. Candidate remains clean/unpublished; no policy weakening performed.
