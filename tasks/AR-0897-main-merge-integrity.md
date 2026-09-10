@@ -2,7 +2,7 @@
 {
   "branch": "fix/main-merge-integrity",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-10T11:30:14+00:00",
   "depends_on": [
     "AR-0003"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "fix/main-merge-integrity",
   "observed_dirty": 0,
   "observed_head": "bd6f450ab8777aeb7e055d71aedba8e4cfd375b3",
-  "owner": "",
+  "owner": "contracts_20260906",
   "plan": "../plans/AR-0897.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-09T23:41:59+00:00",
+  "updated_at": "2026-09-10T08:30:14+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -165,3 +165,5 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-09T23:41:59+00:00: Recovered expired claim formerly owned by replay_20260906. Expired
   AR-0897 lease recovered after terminal PR #126 classification; preserve reviewed bd6f450 and
   shared-harness evidence, require fresh claim before mutation.
+
+- 2026-09-10T08:30:14+00:00: Claimed by contracts_20260906.
