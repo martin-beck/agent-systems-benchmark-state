@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 247,
+  "task_revision": 248,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T21:52:51+00:00",
+  "updated_at": "2026-09-10T21:56:32+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -823,3 +823,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-10T21:52:51+00:00: Recorded command exit 0; command argv SHA-256
   48f054edfd6b2c7b08dc68feda3fb8a8b55480dbe2fa5fced7bd9075a9a57e50.
+
+- 2026-09-10T21:56:32+00:00: Multiplexer failure classification: the original local test used GNU
+  screen option -DmS (capital D), which selects no-fork mode and caused the controller to remain
+  attached indefinitely. Interrupting the unbounded run left exact orphan session/PID
+  asb-tui-test-3272385/3272400; it was terminated. A diagnostic reproduction intentionally exited
+  137 under timeout and created dead socket asb-screen-probe-3374653; the wrong-flag targeted test
+  intentionally exited 101 and created dead socket asb-tui-test-3371268-1789077070306040365. Both
+  exact dead sockets were wiped, with unrelated active screen sessions preserved. Repair uses
+  correct detached -dmS, a unique nonce session, 3-second SIGKILL deadlines for every control
+  command, bounded first-render observation, Drop cleanup, and explicit no-leak assertion. Repaired
+  targeted test passed 1/1 in 0.12s under a 45-second outer deadline. Next evidence requires at
+  least ten repetitions plus artifact audit.
