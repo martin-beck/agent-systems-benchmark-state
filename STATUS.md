@@ -727,6 +727,7 @@ flowchart LR
     AR_0844 --> AR_0870
     AR_0845 --> AR_0846
     AR_0848 --> AR_0907
+    AR_0851 --> AR_1017
     AR_0855 --> AR_0857
     AR_0855 --> AR_0863
     AR_0857 --> AR_0858
@@ -957,7 +958,7 @@ flowchart LR
 | [AR-0848](tasks/AR-0848-native-x86-capacity.md) | [AR-0103](tasks/AR-0103-sandbox-runtime.md), [AR-0201](tasks/AR-0201-portable-metrics.md), [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0701](tasks/AR-0701-platform-manifests.md) | [AR-0907](tasks/AR-0907-hosted-runner-evidence-classification.md) |
 | [AR-0849](tasks/AR-0849-ar0801-documentation-repair.md) | [AR-0004](tasks/AR-0004-ar-status-document.md), [AR-0801](tasks/AR-0801-terminal-interface.md) | None |
 | [AR-0850](tasks/AR-0850-aider-deterministic-replay.md) | [AR-0303](tasks/AR-0303-agent-aider.md), [AR-0508](tasks/AR-0508-replay-aider.md) | None |
-| [AR-0851](tasks/AR-0851-shared-workflow-coordinator.md) | None | None |
+| [AR-0851](tasks/AR-0851-shared-workflow-coordinator.md) | None | [AR-1017](tasks/AR-1017-asb-tui-separate-repository.md) |
 | [AR-0852](tasks/AR-0852-coordinator-path-isolation.md) | None | None |
 | [AR-0853](tasks/AR-0853-coordinator-merge-attestation.md) | None | None |
 | [AR-0854](tasks/AR-0854-coordinator-v020-upgrade.md) | None | None |
@@ -1023,7 +1024,7 @@ flowchart LR
 | [AR-1014](tasks/AR-1014-tui-measurement-selection.md) | [AR-0804](tasks/AR-0804-tui-settings-wizard.md), [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-1013](tasks/AR-1013-measurement-catalog-semantics.md) | [AR-1016](tasks/AR-1016-measurement-integration-audit.md) |
 | [AR-1015](tasks/AR-1015-csb-measurement-adapter.md) | [AR-0601](tasks/AR-0601-csb-integration.md), [AR-0602](tasks/AR-0602-csb-monitoring-contention.md), [AR-0604](tasks/AR-0604-csb-native-qualification.md), [AR-1013](tasks/AR-1013-measurement-catalog-semantics.md) | [AR-1016](tasks/AR-1016-measurement-integration-audit.md) |
 | [AR-1016](tasks/AR-1016-measurement-integration-audit.md) | [AR-1002](tasks/AR-1002-verifier-integrity.md), [AR-1007](tasks/AR-1007-benchmark-validity.md), [AR-1014](tasks/AR-1014-tui-measurement-selection.md), [AR-1015](tasks/AR-1015-csb-measurement-adapter.md) | None |
-| [AR-1017](tasks/AR-1017-asb-tui-separate-repository.md) | [AR-0803](tasks/AR-0803-frontend-control-api.md), [AR-0804](tasks/AR-0804-tui-settings-wizard.md), [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-0806](tasks/AR-0806-tui-history-analysis.md) | [AR-1018](tasks/AR-1018-asb-tui-compatibility-detection.md), [AR-1019](tasks/AR-1019-asb-tui-bundle-verification.md), [AR-1021](tasks/AR-1021-asb-tui-release-promotion.md) |
+| [AR-1017](tasks/AR-1017-asb-tui-separate-repository.md) | [AR-0803](tasks/AR-0803-frontend-control-api.md), [AR-0804](tasks/AR-0804-tui-settings-wizard.md), [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-0806](tasks/AR-0806-tui-history-analysis.md), [AR-0851](tasks/AR-0851-shared-workflow-coordinator.md) | [AR-1018](tasks/AR-1018-asb-tui-compatibility-detection.md), [AR-1019](tasks/AR-1019-asb-tui-bundle-verification.md), [AR-1021](tasks/AR-1021-asb-tui-release-promotion.md) |
 | [AR-1018](tasks/AR-1018-asb-tui-compatibility-detection.md) | [AR-1017](tasks/AR-1017-asb-tui-separate-repository.md) | [AR-1019](tasks/AR-1019-asb-tui-bundle-verification.md), [AR-1021](tasks/AR-1021-asb-tui-release-promotion.md) |
 | [AR-1019](tasks/AR-1019-asb-tui-bundle-verification.md) | [AR-1017](tasks/AR-1017-asb-tui-separate-repository.md), [AR-1018](tasks/AR-1018-asb-tui-compatibility-detection.md) | [AR-1020](tasks/AR-1020-asb-tui-install-selftest.md), [AR-1021](tasks/AR-1021-asb-tui-release-promotion.md) |
 | [AR-1020](tasks/AR-1020-asb-tui-install-selftest.md) | [AR-1019](tasks/AR-1019-asb-tui-bundle-verification.md) | [AR-1021](tasks/AR-1021-asb-tui-release-promotion.md) |
