@@ -81,7 +81,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-local-inference-provider-profiles` | `feat/local-inference-provider-profiles` | `eed49592617a` | 0 | behind 54, ahead 0 |
 | `agent-systems-benchmark-local-llm-testing-recommendations` | `docs/local-llm-testing-recommendations` | `4a23069336be` | 0 | behind 67, ahead 0 |
 | `agent-systems-benchmark-main-merge-integrity` | `fix/main-merge-integrity` | `bd6f450ab877` | 0 | behind 25, ahead 2 |
-| `agent-systems-benchmark-measurement-catalog-merge-attestation` | `docs/measurement-catalog-merge-attestation` | `607a3afb3a44` | 0 | behind 0, ahead 1 |
+| `agent-systems-benchmark-measurement-catalog-merge-attestation` | `docs/measurement-catalog-merge-attestation` | `607a3afb3a44` | 6 | behind 0, ahead 1 |
+| changed files | - | - | - | `crates/asb-cli/default_15080522557072826153_0_791617.profraw`, `crates/asb-cli/default_15080522557072826153_0_791618.profraw`, `crates/asb-cli/default_15080522557072826153_0_791619.profraw`, `crates/asb-cli/default_15080522557072826153_0_791622.profraw`, `crates/asb-cli/default_15080522557072826153_0_791623.profraw`, `crates/asb-cli/default_15080522557072826153_0_791626.profraw` |
 | `agent-systems-benchmark-measurement-catalog-semantics` | `feature/measurement-catalog-semantics` | `78c63febc0ce` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation` | `fix/mini-swe-cancellation-reap-test-isolation` | `c897313524a8` | 0 | behind 25, ahead 14 |
 | `agent-systems-benchmark-mockagents-executable-qualification` | `test/mockagents-executable-qualification` | `3f1de4106adf` | 0 | behind 52, ahead 0 |
