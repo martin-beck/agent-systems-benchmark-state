@@ -7,7 +7,7 @@
     "AR-1017"
   ],
   "id": "AR-1018",
-  "next_action": "Obtain independent immutable review of 31afab0c/e053c1b6; do not publish before approval.",
+  "next_action": "Repair executable identity-bound execution and cleanup; add bounded real PTY resize verification; rerun full gates.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Detect whether an asb-tui bundle is compatible before installation or launch.",
-  "task_revision": 126,
+  "task_revision": 127,
   "title": "Add asb-tui compatibility and terminal capability detection",
-  "updated_at": "2026-09-10T14:13:30+00:00",
+  "updated_at": "2026-09-10T14:16:15+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-compatibility-detection"
 }
 ---
@@ -430,3 +430,9 @@ fixtures for mismatches, privacy-safe diagnostics, and no host identifiers in pu
   a19f3078515fa91e8a408e7bd633dfb267bff696af7d82b6f170684cec2189f0.
 
 - 2026-09-10T14:13:30+00:00: Heartbeat by contracts_20260906.
+
+- 2026-09-10T14:16:15+00:00: Independent review rejected 31afab0c/e053c1b6: executable verification
+  executes /proc/self/fd/0/destination after path re-resolution, cleanup success is not bound to
+  returned capability booleans, and LocalSystem production resize verification is hard-false.
+  Publication remains blocked; preserve signed history and repair with hostile replacement, cleanup
+  failure/rollback, and bounded PTY WINCH evidence.

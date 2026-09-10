@@ -1036,7 +1036,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1018](tasks/AR-1018-asb-tui-compatibility-detection.md): Add asb-tui compatibility and terminal capability detection | contracts_20260906 | Detect whether an asb-tui bundle is compatible before installation or launch. | Obtain independent immutable review of 31afab0c/e053c1b6; do not publish before approval. |
+| P1 | [AR-1018](tasks/AR-1018-asb-tui-compatibility-detection.md): Add asb-tui compatibility and terminal capability detection | contracts_20260906 | Detect whether an asb-tui bundle is compatible before installation or launch. | Repair executable identity-bound execution and cleanup; add bounded real PTY resize verification; rerun full gates. |
 
 ### Open (8)
 
