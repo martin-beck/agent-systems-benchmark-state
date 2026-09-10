@@ -12,11 +12,14 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Provide a context-fitted hotkey window, global action search and mechanically complete help.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Add contextual hotkeys and complete action help",
-  "updated_at": "2026-09-10T20:57:16+00:00",
+  "updated_at": "2026-09-10T21:04:37+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-contextual-help"
 }
 ---
 Implement all hotkey, help-overlay, action-search and help-coverage behavior in the standalone
 `asb-tui` application. ASB may advertise capabilities but must not render or own these interactions.
+
+- 2026-09-10T21:04:37+00:00: Replaced subjective help completeness with a mechanically checked
+  action registry and an explicit reviewed passive-label exception allowlist.
