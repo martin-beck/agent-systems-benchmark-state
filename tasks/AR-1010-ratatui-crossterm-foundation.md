@@ -12,17 +12,17 @@
   "id": "AR-1010",
   "next_action": "Run full exact-tree workspace/formal/fault/privacy/policy/supply gates on repaired 9ba39a5.",
   "observed_branch": "feature/tui-ratatui-crossterm-foundation",
-  "observed_dirty": 3,
-  "observed_head": "9ba39a58c7e5492e1c69db642ff6c20e33192244",
+  "observed_dirty": 0,
+  "observed_head": "2754623be3503589b24cbb84341dfcf65ccb8911",
   "owner": "replay_20260906",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T00:54:20+00:00",
+  "updated_at": "2026-09-10T00:54:26+00:00",
   "worktree_key": "agent-systems-benchmark-tui-ratatui-crossterm-foundation"
 }
 ---
