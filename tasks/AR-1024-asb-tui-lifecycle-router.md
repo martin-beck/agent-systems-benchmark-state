@@ -13,7 +13,7 @@
   "id": "AR-1024",
   "next_action": "Await immutable reviewed AR-1010 successor, repin exact contract, rerun cross-repo PTY and full exact-head gates, then publish for independent review.",
   "observed_branch": "feature/asb-tui-lifecycle-router",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "fbbf6f48f2a27300823011f9347ef60eb2b35c44",
   "owner": "codex-ar1024-router-20260910",
   "plan": "../plans/AR-1024.md",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend.",
-  "task_revision": 210,
+  "task_revision": 211,
   "title": "Implement `asb tui` lifecycle routing",
-  "updated_at": "2026-09-10T22:25:43+00:00",
+  "updated_at": "2026-09-10T22:25:49+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-lifecycle-router"
 }
 ---
