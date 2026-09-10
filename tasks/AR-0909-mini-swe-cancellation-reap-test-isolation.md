@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Hold PR #127 for terminal exact-head fb26f3d CI; investigate candidate-owned failures only. Formal acquisition failure remains AR-0877-owned. Do not merge.",
+  "next_action": "Repair hosted-emulation base-directory binding without weakening O_DIRECTORY/O_NOFOLLOW, repository overlap, owner/mode, entry identity, or cleanup checks; rerun native/QEMU focused and full gates. Do not merge PR #127.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "fb26f3d2023d43f689f0743d3713470d0edf6096",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 130,
+  "task_revision": 131,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T05:52:11+00:00",
+  "updated_at": "2026-09-10T05:57:41+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -495,3 +495,13 @@ classified.
   progress with TLC/Alloy job failed at the known separate AR-0877 acquisition boundary and
   remaining formal jobs in progress; AWQ 34442740803 success; headers 34442740850 success. No rerun
   requested and no merge.
+
+- 2026-09-10T05:57:41+00:00: Terminal exact-head fb26f3d classifications: emulated-AArch64 run
+  34442740767 failed the same single cancellation_leaves_no_runnable_owned_descendant test after 138
+  passes with test-root directory binding changed, so fb26f3d is insufficient under hosted emulation
+  and PR127 must not merge. Because created entries now use separate openat/statat/fstat identity,
+  the remaining generic failure is consistent with the base open_bound_directory canonical-path
+  comparison and needs a focused portable repair. Native platform run 34442740783 failed before
+  product tests in Collect bounded native evidence with observed distribution does not match exact
+  pinned release; this is platform/environment identity, not the AR-0909 test-only diff. Formal
+  34442740801 remains the separate AR-0877 acquisition boundary.
