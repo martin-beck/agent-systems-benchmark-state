@@ -12,7 +12,7 @@
   "id": "AR-1010",
   "next_action": "Adopt pinned Ratatui and Crossterm dependencies in an isolated TUI worktree, then implement the capability-aware application shell and event loop.",
   "observed_branch": "feature/tui-ratatui-crossterm-foundation",
-  "observed_dirty": 3,
+  "observed_dirty": 5,
   "observed_head": "b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b",
   "owner": "replay_20260906",
   "plan": "../plans/AR-1010.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 6,
+  "task_revision": 8,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T00:31:30+00:00",
+  "updated_at": "2026-09-10T00:33:19+00:00",
   "worktree_key": "agent-systems-benchmark-tui-ratatui-crossterm-foundation"
 }
 ---
@@ -41,3 +41,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-10T00:26:45+00:00: Recorded command exit 0; command argv SHA-256
   32365df186a2a78c0fd3c125d218afd1ecfff97ce53e357fb3dcc527a42e60fc.
+
+- 2026-09-10T00:33:19+00:00: Recorded command exit 101; command argv SHA-256
+  ca0684257d947fe7f2e83a3345a15381ce96aba5098dc998474be630e3df1a58.
