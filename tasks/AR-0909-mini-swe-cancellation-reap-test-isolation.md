@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Diagnose PR #127 emulated-aarch64 run 34418686073 and TLC/Alloy job in run 34418686110; do not rerun or merge before classification.",
+  "next_action": "Fresh immutable review of eb41e148, then update PR #127 and require hosted emulated-AArch64 exact-head success; formal acquisition remains AR-0877-owned.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "eb41e1487bf5b47b78a4848860328494880ff5d0",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T00:29:50+00:00",
+  "updated_at": "2026-09-10T00:30:51+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -291,3 +291,17 @@ classified.
 
 - 2026-09-10T00:29:50+00:00: Recorded command exit 0; command argv SHA-256
   4dc4c41831ef77bf2c6a265de17a679a4734a4f5cda15c084afd3eb652d11733.
+
+- 2026-09-10T00:30:51+00:00: QEMU-portability successor eb41e1487bf5b47b78a4848860328494880ff5d0,
+  tree b8d1f1031780cb0a78ef5f62a023b8a692ef89c6, parent a91cd04d5f49aa4d311c53ab727c2dcb75b77913.
+  One cfg(test) path only; production prefix is byte-identical. Replaced guest-unstable dev/inode
+  comparisons with O_DIRECTORY|O_NOFOLLOW|O_CLOEXEC fd opens bound to canonical /proc/self/fd
+  targets for creation and cleanup; retained canonical repository separation and opened-fd
+  owner/mode/nlink checks. Added direct matching-target, mismatched-target, symlink, unsafe-mode,
+  overlap, and replacement negatives. Focused mini_swe 22/22; cancellation stress 20 serial + 16
+  concurrent; fmt/clippy/workspace/rustdoc/release, exact coverage,
+  contracts/failure/artifact/platform/workflows/privacy/Gitleaks/deny/audit all green. Three-commit
+  aggregate signature/DCO and exact-range policy green. Local Docker/QEMU launch is
+  permission-blocked, so fresh hosted emulated-AArch64 remains required. PR127 formal failure is the
+  separate AR-0877 acquisition artifact issue. Generated PROJECT_STATE.md reconciliation included
+  automatically.
