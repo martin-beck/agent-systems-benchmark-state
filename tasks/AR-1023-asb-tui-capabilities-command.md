@@ -2,7 +2,7 @@
 {
   "branch": "feature/asb-tui-capabilities-command",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T22:23:58+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0803",
     "AR-0840",
@@ -17,15 +17,15 @@
   "observed_branch": "feature/asb-tui-capabilities-command",
   "observed_dirty": 0,
   "observed_head": "d60d2351004479998608f2141730849366351373",
-  "owner": "codex-ar1023-capabilities-20260910",
+  "owner": "",
   "plan": "../plans/AR-1023.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Publish the ASB capability negotiation command required by the standalone frontend.",
-  "task_revision": 91,
+  "task_revision": 92,
   "title": "Add the ASB frontend capabilities command",
-  "updated_at": "2026-09-10T20:00:46+00:00",
+  "updated_at": "2026-09-10T20:01:05+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-capabilities-command"
 }
 ---
@@ -287,3 +287,11 @@ local gates, independent review, exact-head CI and post-merge verification.
 
 - 2026-09-10T20:00:46+00:00: Recorded command exit 0; command argv SHA-256
   bb551dc6b64136b3cd64aacbb6c67f984e8eb1ad8ff175f265d8387a67c4fdb5.
+
+- 2026-09-10T20:01:05+00:00: Merged independently reviewed PR 128 at verified merge commit
+  32df706413a6f165f086941426a5c793bd5e01e8 from exact signed+DCO head
+  d60d2351004479998608f2141730849366351373. All 12 exact-head CI checks passed. Fetched origin/main,
+  proved the merged relevant tree byte-identical to the reviewed head, verified GitHub's merge
+  signature, and observed the release binary emit the exact closed asb-tui v1 capability fixture.
+  Local workspace, contract, coverage, supply-chain, workflow, privacy, negative-path, docs and
+  release gates passed; no actual TUI/rendering code entered ASB.
