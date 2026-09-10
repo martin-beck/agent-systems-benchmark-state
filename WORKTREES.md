@@ -27,8 +27,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar0906-merge-dco` | `repair/ar0906-merge-dco` | `66ca27afc2fb` | 0 | behind 5, ahead 0 |
 | `agent-systems-benchmark-asb-cli-workflow-captures` | `docs/asb-cli-workflow-captures-attestation` | `b18e38ad94f1` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-asb-tui-capabilities-command` | `feature/asb-tui-capabilities-command` | `d60d23510044` | 0 | behind 4, ahead 0 |
-| `agent-systems-benchmark-asb-tui-lifecycle-router` | `feature/asb-tui-lifecycle-router` | `32df706413a6` | 8 | behind 3, ahead 0 |
-| changed files | - | - | - | `Cargo.lock`, `crates/asb-cli/Cargo.toml`, `crates/asb-cli/src/lib.rs`, `crates/asb-cli/fixtures/tui/`, `crates/asb-cli/schema/tui/`, `crates/asb-cli/src/tui.rs`, `crates/asb-cli/src/tui_allowed_signers`, `crates/asb-cli/tests/tui_lifecycle.rs` |
+| `agent-systems-benchmark-asb-tui-lifecycle-router` | `feature/asb-tui-lifecycle-router` | `32df706413a6` | 10 | behind 3, ahead 0 |
+| changed files | - | - | - | `Cargo.lock`, `crates/asb-cli/Cargo.toml`, `crates/asb-cli/src/lib.rs`, `docs/QUICKSTART.md`, `crates/asb-cli/fixtures/tui/`, `crates/asb-cli/schema/tui/`, `crates/asb-cli/src/tui.rs`, `crates/asb-cli/src/tui_allowed_signers`, `crates/asb-cli/tests/tui_lifecycle.rs`, `docs/ASB_TUI_LIFECYCLE.md` |
 | `agent-systems-benchmark-beginner-workflows` | `docs/beginner-workflows` | `328de90ef1ed` | 0 | behind 106, ahead 0 |
 | `agent-systems-benchmark-benchmark-validity` | `feature/benchmark-validity` | `60a6c730457b` | 0 | behind 234, ahead 0 |
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `0717d4acd168` | 0 | behind 342, ahead 0 |
