@@ -2,7 +2,7 @@
 {
   "branch": "feature/asb-tui-capabilities-command",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T22:14:02+00:00",
+  "claim_expires": "2026-09-10T22:23:58+00:00",
   "depends_on": [
     "AR-0803",
     "AR-0840",
@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish the ASB capability negotiation command required by the standalone frontend.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Add the ASB frontend capabilities command",
-  "updated_at": "2026-09-10T19:22:35+00:00",
+  "updated_at": "2026-09-10T19:23:58+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-capabilities-command"
 }
 ---
@@ -41,3 +41,5 @@ local gates, independent review, exact-head CI and post-merge verification.
 
 - 2026-09-10T19:22:26+00:00: Recorded command exit 0; command argv SHA-256
   5fc886b4070fa3ab0ac6f393b844d9a9add78751cef9f4fa0a626ebafbee8e8b.
+
+- 2026-09-10T19:23:58+00:00: Heartbeat by codex-ar1023-capabilities-20260910.
