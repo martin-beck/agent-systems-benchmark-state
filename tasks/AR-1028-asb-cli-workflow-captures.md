@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Produce reproducible ASB CLI transcripts separately from standalone TUI screenshots.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Generate ASB CLI workflow captures",
-  "updated_at": "2026-09-10T20:03:42+00:00",
+  "updated_at": "2026-09-10T20:03:55+00:00",
   "worktree_key": "agent-systems-benchmark-asb-cli-workflow-captures"
 }
 ---
@@ -35,3 +35,6 @@ renderer, terminal application, Ratatui/Crossterm dependency, or asb-tui source.
   48ce8c035d66a7ab0478204d6ea9ff42e080068ac6938ca529e2c4005f2449e2.
 
 - 2026-09-10T20:03:42+00:00: Heartbeat by codex-ar1028-cli-captures-20260910.
+
+- 2026-09-10T20:03:55+00:00: Recorded command exit 0; command argv SHA-256
+  a2808036e9be365682dfe9eed52cfb76668c7c24ed86fdc4b59d26b160043f7d.
