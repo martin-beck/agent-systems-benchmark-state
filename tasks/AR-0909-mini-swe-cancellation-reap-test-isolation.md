@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Await terminal emulated/Rust/quality checks on PR #127 head 23c6ed5; route formal acquisition to AR-0877 and native release identity to AR-0907. Do not alter candidate or merge.",
+  "next_action": "Repair candidate-owned QEMU ENOENT by creating/opening FIFO relative to retained PrivateTestRoot fd, rerun focused/full emulation and native gates, then fresh review. Do not merge.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "23c6ed5bb64599e5036bb03f5184b38041cccd9c",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 218,
+  "task_revision": 219,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T07:36:58+00:00",
+  "updated_at": "2026-09-10T07:38:32+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -849,3 +849,13 @@ classified.
   is not candidate-owned. Fault, AWQ, headers, Kani and Loom checks are green; emulated-AArch64,
   Rust and repository-quality remained in progress at the bounded status query. Preserve exact
   candidate and PR; no rerun, mutation, or merge.
+
+- 2026-09-10T07:38:32+00:00: PR #127 emulated-AArch64 run 34450494606 is terminal FAILURE at
+  23c6ed5: 138 passed, 1 failed, 1 ignored, 1 filtered. The cancellation test failed at
+  mini_swe.rs:2111 before process spawn because rustix mkfifoat(CWD, absolute private-temp path)
+  returned ENOENT. This is an AR-0909 candidate portability defect, distinct from the prior helper
+  readiness timeout. The retained PrivateTestRoot directory fd provides the correct QEMU-portable
+  boundary: create and open the FIFO relative to that fd, while continuing to pass only the public
+  absolute path to the host-side helper. Rust passed. Formal and native failures remain separately
+  classified shared blockers. Repository-quality had not yet terminated at this observation. No
+  merge.

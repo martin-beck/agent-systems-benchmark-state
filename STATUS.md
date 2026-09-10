@@ -989,7 +989,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | quality_20260906 | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Await terminal emulated/Rust/quality checks on PR #127 head 23c6ed5; route formal acquisition to AR-0877 and native release identity to AR-0907. Do not alter candidate or merge. |
+| P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | quality_20260906 | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Repair candidate-owned QEMU ENOENT by creating/opening FIFO relative to retained PrivateTestRoot fd, rerun focused/full emulation and native gates, then fresh review. Do not merge. |
 
 ### Open (7)
 
