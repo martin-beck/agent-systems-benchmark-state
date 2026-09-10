@@ -7,7 +7,7 @@
     "AR-1023"
   ],
   "id": "AR-1038",
-  "next_action": "Preserve the validated external LLVM coverage sink across capability test env_clear without inheriting other ambient state.",
+  "next_action": "Independently review immutable PR #132 exact head 6e467bbde40c31bd817d215483ba496e2ecc5df5 tree d94c93a4458866a3c39b722536881787b97ed5cf; require exact-head CI terminal green and approval; do not merge.",
   "observed_branch": "test/capability-coverage-sink",
   "observed_dirty": 0,
   "observed_head": "6e467bbde40c31bd817d215483ba496e2ecc5df5",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent sanitized capability child tests from writing default profraw files into the source checkout.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Preserve coverage sinks in sanitized CLI child tests",
-  "updated_at": "2026-09-10T23:13:22+00:00",
+  "updated_at": "2026-09-10T23:13:50+00:00",
   "worktree_key": "agent-systems-benchmark-capability-coverage-sink"
 }
 ---
@@ -83,3 +83,23 @@ Fix the six `default_*.profraw` files discovered during AR-1013 full coverage wi
 
 - 2026-09-10T23:13:22+00:00: Recorded command exit 0; command argv SHA-256
   5025ca94f626015736de9d45d837bfd633592ef08da2b236577b891b333ea0a2.
+
+- 2026-09-10T23:13:50+00:00: Implemented and published PR #132 at signed+DCO head
+  6e467bbde40c31bd817d215483ba496e2ecc5df5, tree d94c93a4458866a3c39b722536881787b97ed5cf, base
+  58d0da27736d6c22ca7c43f76ade497165b29919. Scope is one test harness file only. Centralized the six
+  env-cleared capability children; absence remains valid, while a supplied sink is forwarded exactly
+  only if UTF-8, <=4096 bytes, absolute, parent-resolvable outside the checkout,
+  parent-traversal-free, per-process (%p), control-free and .profraw-suffixed. Invalid sinks fail
+  before spawn, preventing instrumented fallback files. Tests cover absent, empty, relative,
+  oversized, control-bearing, shared, wrong-suffix, traversal and checkout-local sinks plus parallel
+  canonical/failing children. Focused normal tests pass 9/9. Focused llvm-cov produced 16
+  instrumented process profiles only under the external coverage target and zero default_*.profraw
+  anywhere in the checkout. Exact-head fmt, workspace clippy -D warnings, full workspace tests with
+  serial process tests, rustdoc -D warnings, release build, workspace/critical coverage floors,
+  deny, audit, contract consistency, repository policy, diff-check, clean tree and signature/DCO
+  pass. Failures classified: initial wrapper lookup exit127 used the product cwd and made no
+  mutation; first apply_patch stdin form exited2 before mutation and was replaced by the supported
+  patch argument form; one formatted-context patch exited1 without mutation and was reapplied; first
+  PR-create quoting exited2 before GitHub mutation and was retried safely; contract consistency
+  exited1 because origin/main was not accepted as an exact commit and passed unchanged with exact
+  base 58d0da2.
