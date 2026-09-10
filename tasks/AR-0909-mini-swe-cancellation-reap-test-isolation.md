@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Repair candidate-owned QEMU ENOENT by creating/opening FIFO relative to retained PrivateTestRoot fd, rerun focused/full emulation and native gates, then fresh review. Do not merge.",
+  "next_action": "Obtain fresh immutable review of exact d82b512; if approved, guarded PR #127 update from 23c6ed5 and fresh exact-head CI. Do not merge.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "d82b5123f9d9adf8dd24ab499ff97e0036e31f84",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 225,
+  "task_revision": 226,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T07:40:33+00:00",
+  "updated_at": "2026-09-10T07:40:57+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -871,3 +871,15 @@ classified.
 
 - 2026-09-10T07:40:26+00:00: Recorded command exit 0; command argv SHA-256
   f48e0b331f370a160ae7470309306ff5a6c4776b28b4b82f548f37047c8c0191.
+
+- 2026-09-10T07:40:57+00:00: Signed QEMU portability successor
+  d82b5123f9d9adf8dd24ab499ff97e0036e31f84, tree a1fe0a91a448d136371c781fb02dc4aa34809646, parent
+  23c6ed5bb64599e5036bb03f5184b38041cccd9c. Exact one cfg(test) path; production untouched;
+  worktree, diff-check, SSH signature and DCO clean. It repairs hosted run 34450494606 ENOENT by
+  creating and opening the private FIFO relative to the already retained PrivateTestRoot directory
+  descriptor with mkfifoat/openat, eliminating QEMU absolute-path resolution from the mutation
+  boundary while leaving the helper-visible absolute path and cancellation oracle unchanged. Exact
+  local AArch64/QEMU asb-agents suite passed 139/139 with 1 ignored and 1 filtered. Native fmt,
+  workspace all-target clippy -D warnings, full workspace tests and doc tests passed. PR #127
+  remains at 23c6ed5 pending fresh review; shared formal AR-0877 and native AR-0907 failures remain
+  separate.

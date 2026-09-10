@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Repair candidate-owned QEMU ENOENT by creating/opening FIFO relative to retained PrivateTestRoot fd, rerun focused/full emulation and native gates, then fresh review. Do not merge. | quality_20260906 |
+| P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Obtain fresh immutable review of exact d82b512; if approved, guarded PR #127 update from 23c6ed5 and fresh exact-head CI. Do not merge. | quality_20260906 |
 
 ## Open
 
