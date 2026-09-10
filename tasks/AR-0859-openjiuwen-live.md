@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-live",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T02:23:14+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0858"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "cceb76f436f8918786f610afdf20ba99fbd87d34",
-  "owner": "contracts_20260906",
+  "owner": "",
   "plan": "../plans/AR-0859.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 218,
+  "task_revision": 219,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-09T23:23:14+00:00",
+  "updated_at": "2026-09-10T04:27:04+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -744,3 +744,6 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   head cceb76f.
 
 - 2026-09-09T23:23:14+00:00: Claimed by contracts_20260906.
+
+- 2026-09-10T04:27:04+00:00: Recovered expired claim formerly owned by contracts_20260906. Recover
+  expired lease after owner interruption; preserve PR #124 exact head.
