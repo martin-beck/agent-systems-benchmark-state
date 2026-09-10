@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T19:23:52+00:00",
+  "updated_at": "2026-09-10T19:25:28+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -234,3 +234,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-10T19:23:52+00:00: Correct stale pre-migration next action: implementation ownership is
   the standalone asb-tui repository; ASB candidate 2754623 remains read-only evidence.
+
+- 2026-09-10T19:25:28+00:00: Recorded command exit 127; command argv SHA-256
+  8a0f78ce55aa89c2fb2a4a98dc84d882734c107a28e9d74a218c90b66f057efe.
