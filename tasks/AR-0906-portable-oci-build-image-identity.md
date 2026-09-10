@@ -2,7 +2,7 @@
 {
   "branch": "fix/formal-oci-image-identity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T19:43:21+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003",
     "AR-0878",
@@ -14,15 +14,15 @@
   "observed_branch": "fix/formal-oci-image-identity",
   "observed_dirty": 0,
   "observed_head": "156f7e011867956cb3bfaf5f511d65340f1b840e",
-  "owner": "asb_tui_coordinator_20260910",
+  "owner": "",
   "plan": "../plans/AR-0906.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make deterministic formal source builds verify OCI image identity portably across Docker engines.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Verify formal OCI build identity portably",
-  "updated_at": "2026-09-10T16:59:11+00:00",
+  "updated_at": "2026-09-10T17:04:58+00:00",
   "worktree_key": "agent-systems-benchmark-formal-oci-image-identity"
 }
 ---
@@ -245,3 +245,12 @@ instead of assuming an engine's local configuration ID equals the registry manif
 
 - 2026-09-10T16:59:11+00:00: Recorded command exit 0; command argv SHA-256
   afaf3651df8b30b97c93fae54c960c17e7b500454de1dee02ca6387a04b28dc0.
+
+- 2026-09-10T17:04:58+00:00: Completed through combined PR #122. Signed integration head 1af2865
+  combined exact AR-0906, AR-0877, and AR-0907 heads; all 12 exact-head PR jobs passed, including
+  formerly failing platform, formal, and emulated cells. GitHub merge 76258c0 preserved the exact
+  reviewed tree and was GitHub-verified but formatted DCO text outside a trailer block; published
+  history was not rewritten. Signed+DCO empty successor 66ca27a restored the current-main
+  verification boundary with the identical tree. All seven exact-main workflows pass on 66ca27a.
+  Evidence proves the exact pinned OCI identity across reviewed engine representations; it does not
+  qualify other images, platforms, registries, or daemon trust.

@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**185 ARs tracked** across 6 active status categories.
+**185 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 8 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 47 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 123 |
+| **Done** | Accepted, integrated, and durably verified | 124 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -216,7 +216,7 @@ flowchart LR
         AR_0903["AR-0903 - Planned"]:::status_planned
         AR_0904["AR-0904 - Done"]:::status_done
         AR_0905["AR-0905 - Done"]:::status_done
-        AR_0906["AR-0906 - In progress"]:::status_in_progress
+        AR_0906["AR-0906 - Done"]:::status_done
         AR_0907["AR-0907 - Open"]:::status_open
         AR_0908["AR-0908 - Open"]:::status_open
         AR_0909["AR-0909 - Open"]:::status_open
@@ -1032,12 +1032,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0906](tasks/AR-0906-portable-oci-build-image-identity.md): Verify formal OCI build identity portably | asb_tui_coordinator_20260910 | Make deterministic formal source builds verify OCI image identity portably across Docker engines. | Combined PR #122 proves formal/emulated paths; hold all PRs while native Ubuntu runner-release mismatch is repaired or classified. |
-
 ### Open (8)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -1119,7 +1113,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (123)
+### Done (124)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1225,6 +1219,7 @@ flowchart LR
 | P1 | [AR-0902](tasks/AR-0902-fault-assurance.md): Add fuzz mutation and lifecycle fault campaigns | Unclaimed | Stress parser, archive, path, recovery and cleanup boundaries with meaningful failure injection. | Run final coordination reconcile/snapshot/live doctor/full validation and release AR-0902 done only if clean synchronized state remains exact. |
 | P1 | [AR-0904](tasks/AR-0904-contract-consistency.md): Machine-check protocol and artifact consistency | Unclaimed | Make schemas, Rust types, protocol examples, CLI capability output and documentation mechanically agree. | Obtain fresh exact-main CI for signed+DCO main 92569367347b49c497780fa40195971ff655b0f4 using a resolvable base, then rerun final clean synchronized state validation and release only if all workflows pass. |
 | P1 | [AR-0905](tasks/AR-0905-recovery-models.md): Model execution recovery and worker fencing | Unclaimed | Apply bounded formal models to run lifecycle, leases, recovery, replay cursors and uncertain external effects. | Monitor PR #57 exact head a288bb3485aa2a65ffa79626c3352c6522791138; investigate failures and merge only after every required exact-head check is green and coordinator authorizes. |
+| P1 | [AR-0906](tasks/AR-0906-portable-oci-build-image-identity.md): Verify formal OCI build identity portably | Unclaimed | Make deterministic formal source builds verify OCI image identity portably across Docker engines. | Combined PR #122 proves formal/emulated paths; hold all PRs while native Ubuntu runner-release mismatch is repaired or classified. |
 | P1 | [AR-1001](tasks/AR-1001-experiment-comparability.md): Define experiment identity and comparability | Unclaimed | Make every comparison content-addressed and explicit about agent, model, workload and platform confounders. | Await coordinator integration authorization for independently approved exact PR #17 head eb5e849; do not merge or release. Cargo workspace/lock and experiment-schema fence remains held by AR-1001. |
 | P1 | [AR-1002](tasks/AR-1002-verifier-integrity.md): Protect verifiers and support offline rescoring | Unclaimed | Separate immutable graders from agent work and version scoring independently of execution. | Monitor PR #62 exact head 3fc65ea73badcea31497e53644fdad8778115870 quality, emulated-aarch64, fault, Rust x86_64/aarch64, and formal runs; investigate failures and do not merge without authorization. |
 | P1 | [AR-1003](tasks/AR-1003-execution-budgets.md): Enforce cost token and action budgets | Unclaimed | Bound and report wall time, actions, tokens and monetary cost without treating unavailable telemetry as zero. | Await coordinator merge review and explicit serialized integration authorization for all-green PR 74; do not change head. |
