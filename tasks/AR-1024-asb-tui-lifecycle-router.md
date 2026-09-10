@@ -11,7 +11,7 @@
     "AR-1023"
   ],
   "id": "AR-1024",
-  "next_action": "Implement typed asb tui dispatch, safe XDG state, signed channel and bundle acquisition, exact-byte lifecycle delegation, and adversarial tests without frontend or rendering code.",
+  "next_action": "Add signed synthetic channel/bundle and filesystem/delegation adversarial tests, incorporate the pending asb-tui controlling-TTY and foldhash-Zlib contract revision, then harden docs/schema and run focused clippy/tests.",
   "observed_branch": "feature/asb-tui-lifecycle-router",
   "observed_dirty": 5,
   "observed_head": "32df706413a6f165f086941426a5c793bd5e01e8",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Implement `asb tui` lifecycle routing",
-  "updated_at": "2026-09-10T20:47:54+00:00",
+  "updated_at": "2026-09-10T20:48:22+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-lifecycle-router"
 }
 ---
@@ -96,3 +96,18 @@ complete gates, exact-head CI and post-merge verification.
 
 - 2026-09-10T20:47:54+00:00: Recorded command exit 0; command argv SHA-256
   410aaa85bbc4e367957471f5f39e6a8ea35ba12e0c01cda79db8343bde2b6334.
+
+- 2026-09-10T20:48:22+00:00: Early compiling checkpoint: new private asb-cli tui router module and
+  typed dispatch compile at ASB base 32df706; six parser/XDG/channel/redirect/response tests pass.
+  XDG roots are split correctly: installs in DATA, durable rollback/lock in STATE, resumable
+  artifacts/index in CACHE. Fixed absolute root-owned non-writable curl/ssh-keygen tools, curl
+  config disabled, manual HTTPS redirect allow-list for github.com to
+  release-assets.githubusercontent.com, bounded range retry/resume, static trust root,
+  manifest/artifact/document verification, memfd candidate delegation, network-free local
+  operations, and narrow foldhash 0.2.0 Zlib policy are present. Cross-repo launch and license fixes
+  are coordinated with AR-1010. Failure classification: initial locked build exit 101 only meant
+  Cargo.lock needed the intentional direct rustix dependency update; subsequent exit 101 exposed two
+  ordinary compile errors in the new parser/lifetime code and they were fixed; one direct cargo
+  invocation failed before compile because rustc PATH was omitted, then the exact command with fixed
+  toolchain PATH passed. The check+test wrapper did execute both newline-separated commands; it was
+  not an argv concatenation.
