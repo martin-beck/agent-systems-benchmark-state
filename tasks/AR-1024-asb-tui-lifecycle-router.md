@@ -13,17 +13,17 @@
   "id": "AR-1024",
   "next_action": "Add signed-channel and resumable/truncation/concurrency negatives, validate copied schemas/docs, run clippy and full relevant gates, then commit for independent review after exact AR-1010 contract integration.",
   "observed_branch": "feature/asb-tui-lifecycle-router",
-  "observed_dirty": 15,
-  "observed_head": "32df706413a6f165f086941426a5c793bd5e01e8",
+  "observed_dirty": 0,
+  "observed_head": "471f416faf1c7f46f0440c4c2a43f5d3f306872d",
   "owner": "codex-ar1024-router-20260910",
   "plan": "../plans/AR-1024.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend.",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Implement `asb tui` lifecycle routing",
-  "updated_at": "2026-09-10T21:31:04+00:00",
+  "updated_at": "2026-09-10T21:31:13+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-lifecycle-router"
 }
 ---
