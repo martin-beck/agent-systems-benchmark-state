@@ -7,7 +7,7 @@
     "AR-0858"
   ],
   "id": "AR-0859",
-  "next_action": "Monitor PR 124 exact-head CI; inspect terminal failures without changing cceb76f.",
+  "next_action": "Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI.",
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "cceb76f436f8918786f610afdf20ba99fbd87d34",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 226,
+  "task_revision": 227,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-10T04:30:31+00:00",
+  "updated_at": "2026-09-10T04:31:00+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -767,3 +767,11 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-10T04:30:31+00:00: Recorded command exit 0; command argv SHA-256
   ecf06201b0abee33f56c30c880e86a4710646159e3435018d594fd7ffbb13b3c.
+
+- 2026-09-10T04:31:00+00:00: Reclaimed at signed state 7e8de739; declared worktree remains clean at
+  exact cceb76f and PR 124 is terminal. Eight workflows yielded nine passed jobs and three failures:
+  formal run 34393862053 failed curl exit 63 maximum-file-size acquisition (AR-0877); native
+  34393862222 rejected observed distribution versus pinned release and produced no artifact
+  (AR-0907); Rust 34393862356 passed product tests except the shared asb-cli control-state ownership
+  isolation test, 29/30, already owned by AR-0908. No AR-0859 product failure, rerun, or mutation;
+  preserve exact reviewed head until serialized shared repairs integrate.
