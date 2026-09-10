@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Turn the tested unverified asb-tui lifecycle boundary into a release-safe delegated contract.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Harden the asb-tui release lifecycle contract",
-  "updated_at": "2026-09-10T19:24:52+00:00",
+  "updated_at": "2026-09-10T19:25:46+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-release-contract-hardening"
 }
 ---
@@ -41,3 +41,6 @@ and filesystem tests, complete local gates, independent review, exact-head CI an
 - 2026-09-10T19:24:52+00:00: Baseline wrapper call from the standalone asb-tui worktree was rejected
   by the project binding before cargo ran; subsequent wrapped commands originate in the bound state
   checkout and use explicit asb-tui paths.
+
+- 2026-09-10T19:25:46+00:00: Recorded command exit 101; command argv SHA-256
+  2046939d4755a9d214168dbeabd77c7b63f39f4d6101cd267eaf16b3f4abb651.
