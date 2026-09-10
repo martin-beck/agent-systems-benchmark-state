@@ -1036,7 +1036,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P2 | [AR-1021](tasks/AR-1021-asb-tui-release-promotion.md): Audit and promote the asb-tui release channel | asb_tui_coordinator_20260910 | Audit and promote asb-tui from optional extension to verified release when eligible. | Independently audit the extension and document its optional/unverified or verified release channel. |
+| P2 | [AR-1021](tasks/AR-1021-asb-tui-release-promotion.md): Audit and promote the asb-tui release channel | asb_tui_coordinator_20260910 | Audit and promote asb-tui from optional extension to verified release when eligible. | Review exact-head PR 8 hosted evidence, merge without weakening permanent protections, then obtain exact-main hosted and trusted local evidence. |
 
 ### Open (6)
 

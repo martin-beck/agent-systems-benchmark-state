@@ -12,7 +12,7 @@
     "AR-0906"
   ],
   "id": "AR-1021",
-  "next_action": "Independently audit the extension and document its optional/unverified or verified release channel.",
+  "next_action": "Review exact-head PR 8 hosted evidence, merge without weakening permanent protections, then obtain exact-main hosted and trusted local evidence.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -22,9 +22,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Audit and promote asb-tui from optional extension to verified release when eligible.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Audit and promote the asb-tui release channel",
-  "updated_at": "2026-09-10T17:06:31+00:00",
+  "updated_at": "2026-09-10T17:14:47+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-release-promotion"
 }
 ---
@@ -43,3 +43,13 @@ artifact cleanup policy, signed release provenance, and documented promotion/rol
   artifacts and every promotion criterion are proven.
 
 - 2026-09-10T17:06:31+00:00: Claimed by asb_tui_coordinator_20260910.
+
+- 2026-09-10T17:14:47+00:00: Published signed+DCO asb-tui PR 8 at exact head
+  1e16eb36702e305113a096fdfed5da9bad65c3ca. The change documents and machine-enforces the
+  source-only optional/unverified channel, capability and evidence limits, signed bundle promotion
+  gates, rollback and artifact cleanup, MIT licensing, and Huawei Technologies Co., Ltd. 2026
+  copyright headers. No tag or binary release was created because ASB routing and qualified
+  interactive rendering remain unavailable. Local Rust 1.93.0 formatting, clippy, 77 tests plus
+  doctests, documentation, schema/publication validation, workflow quality, coverage, and secret
+  scanning passed. Hosted exact-head CI is pending; protected trusted-main verification remains
+  intentionally post-merge only.
