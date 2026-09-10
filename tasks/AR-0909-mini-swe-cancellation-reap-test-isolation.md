@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 226,
+  "task_revision": 227,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T07:40:57+00:00",
+  "updated_at": "2026-09-10T07:41:34+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -883,3 +883,6 @@ classified.
   workspace all-target clippy -D warnings, full workspace tests and doc tests passed. PR #127
   remains at 23c6ed5 pending fresh review; shared formal AR-0877 and native AR-0907 failures remain
   separate.
+
+- 2026-09-10T07:41:34+00:00: Recorded command exit 0; command argv SHA-256
+  bd600343f715428fcc4978661fcc5d34ce207c80c8e960ca3945e7a3c79350e8.
