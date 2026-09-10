@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**185 ARs tracked** across 5 active status categories.
+**185 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 9 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 8 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 6 |
 | **Planned** | Defined work awaiting promotion or dependencies | 48 |
 | **Future** | Deferred roadmap work | 1 |
@@ -240,7 +240,7 @@ flowchart LR
         AR_1016["AR-1016 - Planned"]:::status_planned
         AR_1017["AR-1017 - Done"]:::status_done
         AR_1018["AR-1018 - Done"]:::status_done
-        AR_1019["AR-1019 - Open"]:::status_open
+        AR_1019["AR-1019 - In progress"]:::status_in_progress
         AR_1020["AR-1020 - Planned"]:::status_planned
         AR_1021["AR-1021 - Planned"]:::status_planned
     end
@@ -1032,7 +1032,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (9)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1019](tasks/AR-1019-asb-tui-bundle-verification.md): Verify signed asb-tui extension bundles | contracts_20260906 | Verify asb-tui bundles before installation or execution. | Define and implement signed bundle metadata, digest, license, SBOM, and compatibility verification. |
+
+### Open (8)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1044,7 +1050,6 @@ flowchart LR
 | P1 | [AR-0907](tasks/AR-0907-hosted-runner-evidence-classification.md): Classify hosted runner evidence without weakening native qualification | Unclaimed | Separate rolling hosted portability checks from immutable native qualification evidence. | Hold PR 123 at f0b7b46; integrate AR-0906 then AR-0877, rebase once, and require fresh all-green exact-head CI before merge. |
 | P1 | [AR-0908](tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | Unclaimed | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Hold PR #125 unchanged; shared formal asset and native-runner pin owners must repair their gates before a fresh exact-head run. |
 | P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | Unclaimed | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Hold PR127 unmerged; AR-0877 must repair formal acquisition and platform owner must repair hosted distro evidence, then rerun exact-head CI unchanged. |
-| P1 | [AR-1019](tasks/AR-1019-asb-tui-bundle-verification.md): Verify signed asb-tui extension bundles | Unclaimed | Verify asb-tui bundles before installation or execution. | Define and implement signed bundle metadata, digest, license, SBOM, and compatibility verification. |
 
 ### Blocked (6)
 

@@ -2,7 +2,7 @@
 {
   "branch": "feature/asb-tui-bundle-verification",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-10T18:17:21+00:00",
   "depends_on": [
     "AR-1017",
     "AR-1018"
@@ -12,15 +12,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "contracts_20260906",
   "plan": "../plans/AR-1019.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Verify asb-tui bundles before installation or execution.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Verify signed asb-tui extension bundles",
-  "updated_at": "2026-09-10T15:17:18+00:00",
+  "updated_at": "2026-09-10T15:17:21+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-bundle-verification"
 }
 ---
@@ -36,3 +36,5 @@ artifact-quota-safe retention, and reproducible verification tests.
 - 2026-09-10T15:17:18+00:00: AR-1017 and AR-1018 are complete. Public asb-tui main
   a7ca8e07f177fc6a647b3297df624137cfb85e86 has exact hosted and trusted local validation; signed
   bundle verification may begin.
+
+- 2026-09-10T15:17:21+00:00: Claimed by contracts_20260906.
