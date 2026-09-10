@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Build asb-tui as an isolated optional repository and extension.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Create the standalone asb-tui extension repository",
-  "updated_at": "2026-09-10T09:02:22+00:00",
+  "updated_at": "2026-09-10T09:03:55+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-separate-repository"
 }
 ---
@@ -88,3 +88,6 @@ metadata, and tests proving the main benchmark runs independently when the TUI i
 
 - 2026-09-10T09:02:22+00:00: Recorded command exit 0; command argv SHA-256
   12b49793e1aea457d66ae255f5fb905f39de3448c982ff569206380867b9c386.
+
+- 2026-09-10T09:03:55+00:00: Recorded command exit 0; command argv SHA-256
+  af44f955b3bb5ea94a585a4edb54fb4f496e8134f5b166b115d291c267f22083.
