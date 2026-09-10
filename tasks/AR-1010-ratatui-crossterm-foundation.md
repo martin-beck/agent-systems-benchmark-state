@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T04:28:25+00:00",
+  "updated_at": "2026-09-10T04:31:33+00:00",
   "worktree_key": "agent-systems-benchmark-tui-ratatui-crossterm-foundation"
 }
 ---
@@ -108,3 +108,6 @@ Implementation has not started. Read the linked plan before claiming.
   standalone and negotiated first-event stale/skipped/max-wrap negatives plus real ControlServer
   page integration pass. Prior focused result: fmt, 43 library tests, 3 integration/PTY tests,
   doctests, Clippy -D warnings and diff-check green. Resume full gates without tree mutation.
+
+- 2026-09-10T04:31:33+00:00: Recorded command exit 0; command argv SHA-256
+  d46f7921bb52b7bf8c5ed90223d276cb43f20338b59e2b45da321e42dfccb691.
