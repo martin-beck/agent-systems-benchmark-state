@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Build asb-tui as an isolated optional repository and extension.",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Create the standalone asb-tui extension repository",
-  "updated_at": "2026-09-10T11:35:58+00:00",
+  "updated_at": "2026-09-10T11:38:03+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-separate-repository"
 }
 ---
@@ -446,3 +446,6 @@ metadata, and tests proving the main benchmark runs independently when the TUI i
   privacy run found only its own literal detector strings; equivalent split regexes removed the
   self-match and the rerun passed. A temporary state-recording blocker from expired AR-1010 was
   resolved at coordinator state 00526d2b before final evidence/commit.
+
+- 2026-09-10T11:38:03+00:00: Recorded command exit 1; command argv SHA-256
+  6eda4b42bc351469a94c5769a3ce440b7bc7595dd62b921a1b67c1a4dbd6fd68.
