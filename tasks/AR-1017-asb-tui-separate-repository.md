@@ -11,7 +11,7 @@
     "AR-0851"
   ],
   "id": "AR-1017",
-  "next_action": "Await independent immutable review of 963ccb0/tree ef9c1c96; no remote or publication exists. Publish only after coordinator approval.",
+  "next_action": "Fix coverage child-process artifact isolation and make all final workflow clean-tree gates reject untracked files; rerun llvm-cov from a clean tree and independently verify zero profraw/untracked output before publication.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Build asb-tui as an isolated optional repository and extension.",
-  "task_revision": 116,
+  "task_revision": 117,
   "title": "Create the standalone asb-tui extension repository",
-  "updated_at": "2026-09-10T11:38:48+00:00",
+  "updated_at": "2026-09-10T11:39:37+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-separate-repository"
 }
 ---
@@ -455,3 +455,12 @@ metadata, and tests proving the main benchmark runs independently when the TUI i
 
 - 2026-09-10T11:38:48+00:00: Recorded command exit 0; command argv SHA-256
   8d620784c11b0c0c2666d5a987f1662d162b98abc0113793f7fbf6328bfdef51.
+
+- 2026-09-10T11:39:37+00:00: Independent causal review found deletion was not remediation: cargo
+  llvm-cov instruments the env-cleared child in tests/isolation.rs; env_clear removes
+  LLVM_PROFILE_FILE and no current_dir is set, so the child writes default_*.profraw into the
+  checkout. Trusted-main would reproduce this, while git diff --exit-code ignores untracked files.
+  Require a focused signed+DCO successor that runs the child in a unique safely cleaned temporary
+  directory or equivalent, adds a regression proving coverage leaves the checkout clean, and updates
+  hosted/trusted final gates to require both git diff --exit-code and an empty git status
+  --porcelain. Publication remains prohibited pending fresh independent green gates.
