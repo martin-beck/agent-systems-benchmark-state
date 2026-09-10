@@ -2,7 +2,7 @@
 {
   "branch": "feature/tui-ratatui-crossterm-foundation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T01:43:48+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0803",
     "AR-0804",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/tui-ratatui-crossterm-foundation",
   "observed_dirty": 0,
   "observed_head": "2754623be3503589b24cbb84341dfcf65ccb8911",
-  "owner": "replay_20260906",
+  "owner": "",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T00:54:26+00:00",
+  "updated_at": "2026-09-10T04:27:09+00:00",
   "worktree_key": "agent-systems-benchmark-tui-ratatui-crossterm-foundation"
 }
 ---
@@ -96,3 +96,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-10T00:54:20+00:00: Recorded command exit 0; command argv SHA-256
   5aa65be359ee080f5775b933bf69f6a9044d7dda9f3e7d4256d9319e7d72ccbf.
+
+- 2026-09-10T04:27:09+00:00: Recovered expired claim formerly owned by replay_20260906. Recover
+  expired lease; preserve signed candidate 2754623 for full gates.
