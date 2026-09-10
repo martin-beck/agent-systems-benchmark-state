@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Fresh immutable review of 502a0e66, then guarded PR #127 update and exact-head CI; keep formal AR-0877 failure separate and do not merge.",
+  "next_action": "Hold PR #127 for exact-head emulated-AArch64 run 34440495564 and remaining checks; formal acquisition failure is AR-0877-owned. Do not merge.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "502a0e66ffdfe1aec85f5802b53f7c30c189b304",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 101,
+  "task_revision": 102,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T05:17:42+00:00",
+  "updated_at": "2026-09-10T05:18:38+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -371,3 +371,11 @@ classified.
 
 - 2026-09-10T05:17:42+00:00: Recorded command exit 0; command argv SHA-256
   2f2e9e0015a28966159d76c5a5fb4c23aa46a5f2f5d88b23efa02d5fda288e78.
+
+- 2026-09-10T05:18:38+00:00: Coordinator-reviewed successor 502a0e66ffdfe1aec85f5802b53f7c30c189b304
+  is now published to PR #127 at exact base b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b via guarded
+  force-with-lease from eb41e148. Fresh exact-head CI started. Emulated-AArch64 run 34440495564/job
+  102754339359 is in progress and is the decisive product repair proof. Formal TLC/Alloy run
+  34440495620/job 102754339857 failed at the unchanged AR-0877-owned exact TLA acquisition size/hash
+  boundary before model execution. AWQ and source headers pass; Rust, quality, native, Kani, Loom,
+  fault/fuzz/matcher remain in progress. PR remains open and unmerged.
