@@ -2,7 +2,7 @@
 {
   "branch": "fix/formal-oci-image-identity",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-10T19:43:21+00:00",
   "depends_on": [
     "AR-0003",
     "AR-0878",
@@ -14,15 +14,15 @@
   "observed_branch": "fix/formal-oci-image-identity",
   "observed_dirty": 0,
   "observed_head": "156f7e011867956cb3bfaf5f511d65340f1b840e",
-  "owner": "",
+  "owner": "asb_tui_coordinator_20260910",
   "plan": "../plans/AR-0906.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make deterministic formal source builds verify OCI image identity portably across Docker engines.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Verify formal OCI build identity portably",
-  "updated_at": "2026-09-10T16:43:18+00:00",
+  "updated_at": "2026-09-10T16:43:21+00:00",
   "worktree_key": "agent-systems-benchmark-formal-oci-image-identity"
 }
 ---
@@ -189,3 +189,5 @@ instead of assuming an engine's local configuration ID equals the registry manif
   acquisition repair. Independently reviewed AR-0907 head f0b7b46 supplies the hosted runner
   classification that AR-0906 requires. Build one combined candidate and require the complete
   exact-head gate set before any merge; preserve the original PRs until proven.
+
+- 2026-09-10T16:43:21+00:00: Claimed by asb_tui_coordinator_20260910.
