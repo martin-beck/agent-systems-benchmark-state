@@ -9,7 +9,7 @@
   "id": "AR-1038",
   "next_action": "Repair PR #132 review blockers in the single capability_contract test: closed LLVM_PROFILE_FILE token grammar, default.profraw scanning, actual runtime uniqueness/adversarial coverage, and bounded canonical-parent race handling; then run full gates and republish for immutable review.",
   "observed_branch": "test/capability-coverage-sink",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "b65cb4b5e9a9d6d75de967ff4673506218c62b45",
   "owner": "codex-ar1038-coverage-20260911",
   "plan": "../plans/AR-1038.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent sanitized capability child tests from writing default profraw files into the source checkout.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Preserve coverage sinks in sanitized CLI child tests",
-  "updated_at": "2026-09-10T23:38:45+00:00",
+  "updated_at": "2026-09-10T23:38:52+00:00",
   "worktree_key": "agent-systems-benchmark-capability-coverage-sink"
 }
 ---
