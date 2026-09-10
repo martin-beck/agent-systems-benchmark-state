@@ -2,7 +2,7 @@
 {
   "branch": "fix/control-state-lock-test-isolation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T11:27:52+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -14,15 +14,15 @@
   "observed_branch": "fix/control-state-lock-test-isolation",
   "observed_dirty": 0,
   "observed_head": "8b0f9fd07d5dfbedd83376c1380ab225dfba1213",
-  "owner": "replay_20260906",
+  "owner": "",
   "plan": "../plans/AR-0908.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Harden asb-cli control-state lock test isolation and deterministic reopen coverage.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Harden control-state lock test isolation",
-  "updated_at": "2026-09-10T08:30:23+00:00",
+  "updated_at": "2026-09-10T08:31:16+00:00",
   "worktree_key": "agent-systems-benchmark-control-state-lock-test-isolation"
 }
 ---
@@ -205,3 +205,10 @@ non-deterministic isolation signal rather than claiming a production lock defect
   no report; candidate does not alter platform/workflow files. PR remains OPEN/MERGEABLE/UNSTABLE
   and worktree is clean at signed+DCO 8b0f9fd. No focused AR-0908 source repair is justified and no
   rerun/merge was attempted.
+
+- 2026-09-10T08:31:16+00:00: Diagnosis complete at state 988ba5d7; preserve PR #125 exact head
+  8b0f9fd unchanged. Formal 34401125569/102632995297 fails at mutable TLA+ v1.8.0 pinned byte/hash
+  verification before models. Native 34401125568/102632995122 fails exact Ubuntu 24.04.4 os-release
+  validation before candidate checks. All owned/control-state, Rust, quality, coverage, supply,
+  fault, Kani, Loom and emulated-aarch64 checks are green. Await shared formal/native repairs and
+  fresh exact-head CI; no merge.
