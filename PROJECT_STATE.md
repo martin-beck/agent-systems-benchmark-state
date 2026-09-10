@@ -25,7 +25,7 @@ Generated from local Git and GitHub. Do not edit.
 | 34528554558 | `58d0da27736d` | push | Emulated aarch64 portability | in_progress:- |
 | 34528554555 | `58d0da27736d` | push | Repository quality | completed:failure |
 | 34528554533 | `58d0da27736d` | push | Formal assurance | in_progress:- |
-| 34528554531 | `58d0da27736d` | push | Fault assurance | in_progress:- |
+| 34528554531 | `58d0da27736d` | push | Fault assurance | completed:success |
 | 34528554530 | `58d0da27736d` | push | Hosted portability and native qualification | completed:success |
 | 34528041796 | `b18e38ad94f1` | pull_request | Fault assurance | completed:success |
 | 34528041744 | `b18e38ad94f1` | pull_request | Formal assurance | completed:success |
