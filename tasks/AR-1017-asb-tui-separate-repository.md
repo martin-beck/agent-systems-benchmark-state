@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Build asb-tui as an isolated optional repository and extension.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Create the standalone asb-tui extension repository",
-  "updated_at": "2026-09-10T11:01:48+00:00",
+  "updated_at": "2026-09-10T11:02:34+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-separate-repository"
 }
 ---
@@ -269,3 +269,6 @@ metadata, and tests proving the main benchmark runs independently when the TUI i
   actionlint; absolute pinned actionlint rerun passed. cargo-deny initially rejected all licenses
   because deny.toml was absent; explicit narrow OSI license/source policy fixed it and cargo-deny
   plus cargo-audit now pass. An accidental wrapped env-only diagnostic had no product effect.
+
+- 2026-09-10T11:02:34+00:00: Recorded command exit 127; command argv SHA-256
+  1ed6d37086174c69529c38933227dbf1abcae6a4c00a0fdbce7296e735b97af3.
