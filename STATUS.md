@@ -1037,7 +1037,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md): Adopt Ratatui/Crossterm TUI foundation | replay_20260906 | Adopt Ratatui and Crossterm as the supported professional TUI foundation. | Upstream Kasuari then Ratatui selectable std-map features; consume only after reviewed immutable releases eliminate foldhash. |
-| P1 | [AR-1017](tasks/AR-1017-asb-tui-separate-repository.md): Create the standalone asb-tui extension repository | contracts_20260906 | Build asb-tui as an isolated optional repository and extension. | Independently review root commit 42d540d; then add closed schema negatives, ASB-absence proof, and authenticated release-discovery tests before any public repo creation. |
+| P1 | [AR-1017](tasks/AR-1017-asb-tui-separate-repository.md): Create the standalone asb-tui extension repository | contracts_20260906 | Build asb-tui as an isolated optional repository and extension. | Implement and independently gate the assurance tests and public-repository baseline; publish only the reviewed immutable signed head, then verify visibility, settings, protections, and exact-head CI. |
 
 ### Open (7)
 

@@ -11,7 +11,7 @@
     "AR-0851"
   ],
   "id": "AR-1017",
-  "next_action": "Independently review root commit 42d540d; then add closed schema negatives, ASB-absence proof, and authenticated release-discovery tests before any public repo creation.",
+  "next_action": "Implement and independently gate the assurance tests and public-repository baseline; publish only the reviewed immutable signed head, then verify visibility, settings, protections, and exact-head CI.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Build asb-tui as an isolated optional repository and extension.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Create the standalone asb-tui extension repository",
-  "updated_at": "2026-09-10T10:31:15+00:00",
+  "updated_at": "2026-09-10T10:38:56+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-separate-repository"
 }
 ---
@@ -175,3 +175,14 @@ metadata, and tests proving the main benchmark runs independently when the TUI i
 
 - 2026-09-10T10:31:15+00:00: Recorded command exit 0; command argv SHA-256
   8755eb8279d8421bcbb3e9b11dcfdbf54e16bf20ec4bdcc632723360c5eeef9b.
+
+- 2026-09-10T10:38:56+00:00: Scope expanded by explicit authorization: after closed-schema
+  negatives, ASB-core absence/isolation proof, authenticated immutable release-discovery tests, and
+  all pre-publication gates pass, create the public martin-beck/asb-tui repository. Before
+  publication require MIT licensing; exact Huawei Technologies Co., Ltd. 2026 copyright and SPDX
+  headers on first-party sources; README, CONTRIBUTING.md, SECURITY.md; sanitized content and
+  history; repository metadata; immutable pinned Actions; quality, privacy, and Gitleaks checks;
+  applicable branch protections; and privacy-safe self-hosted CI labels/workflows that disclose no
+  development-host identifiers or credentials. After publication verify public visibility, exact
+  pushed signed+DCO head, settings/protections, and exact-head CI. Status-only worker output is not
+  a substantive checkpoint.
