@@ -11,7 +11,7 @@
     "AR-1023"
   ],
   "id": "AR-1024",
-  "next_action": "Add signed synthetic channel/bundle and filesystem/delegation adversarial tests, incorporate the pending asb-tui controlling-TTY and foldhash-Zlib contract revision, then harden docs/schema and run focused clippy/tests.",
+  "next_action": "Add signed-channel and resumable/truncation/concurrency negatives, validate copied schemas/docs, run clippy and full relevant gates, then commit for independent review after exact AR-1010 contract integration.",
   "observed_branch": "feature/asb-tui-lifecycle-router",
   "observed_dirty": 10,
   "observed_head": "32df706413a6f165f086941426a5c793bd5e01e8",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Implement `asb tui` lifecycle routing",
-  "updated_at": "2026-09-10T21:17:32+00:00",
+  "updated_at": "2026-09-10T21:17:54+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-lifecycle-router"
 }
 ---
@@ -266,3 +266,17 @@ complete gates, exact-head CI and post-merge verification.
 
 - 2026-09-10T21:17:32+00:00: Recorded command exit 0; command argv SHA-256
   c408d256d9d0c1290afa41c255859fd4309be2ba493b0dca7646dc6dac50584e.
+
+- 2026-09-10T21:17:54+00:00: Hardening checkpoint: modified crates/asb-cli/src/tui.rs, lib.rs,
+  Cargo.toml/lock, tests/tui_lifecycle.rs, schema/tui/v1, fixtures/tui, docs/ASB_TUI_LIFECYCLE.md
+  and QUICKSTART. Resolved audit findings with strict verified success/operation response matrix and
+  corrected verified_installation spelling; exact component/executable/coordinator/quality identity;
+  sealed candidate memfd; crash-durable pending+accepted rollback floor; retained nofollow
+  directory-fd reads/writes, unique exclusive temps, rename+parent fsync; truthful combined --launch
+  network result; contradictory dry-run/launch rejection; stable absent/repeated-remove exits; exact
+  upstream schema/signature pins; PTY fixture proving /dev/tty output, q exit, parseable lifecycle
+  JSON and unchanged runner sentinel. AR-1010 exact interactive qualification head is
+  10df38759371a4f6addb78dcfd970b65b3c90be5. Focused unit 14/14 and process tests 3/3 pass.
+  Classified exits: compile/test fixture errors were source-test issues fixed; one filtered
+  zero-test invocation was invocation-only and was rerun correctly; one wrapper exit was
+  post-command coordinator AR-1036 dependency failure, repaired by root and doctor now passes.
