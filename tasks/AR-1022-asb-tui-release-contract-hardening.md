@@ -2,7 +2,7 @@
 {
   "branch": "feature/asb-tui-release-contract-hardening",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T22:13:59+00:00",
+  "claim_expires": "2026-09-10T22:17:26+00:00",
   "depends_on": [
     "AR-1017",
     "AR-1018",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Turn the tested unverified asb-tui lifecycle boundary into a release-safe delegated contract.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Harden the asb-tui release lifecycle contract",
-  "updated_at": "2026-09-10T20:16:01+00:00",
+  "updated_at": "2026-09-10T20:17:26+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-release-contract-hardening"
 }
 ---
@@ -285,3 +285,5 @@ and filesystem tests, complete local gates, independent review, exact-head CI an
   target artifacts removed, tree clean, remote exact. Exit 1 at 20:10:11 UTC was only an apply_patch
   context mismatch; no product mutation or test ran, and the documentation patch was reapplied and
   validated. Integration intentionally waits for overlapping AR-1030 per merge ordering.
+
+- 2026-09-10T20:17:26+00:00: Heartbeat by codex-ar1022-lifecycle-20260910.
