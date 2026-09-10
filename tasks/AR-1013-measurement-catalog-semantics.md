@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define selectable ASB measurements grouped by stable semantic meaning.",
-  "task_revision": 118,
+  "task_revision": 119,
   "title": "Version the measurement catalog and semantic groups",
-  "updated_at": "2026-09-10T22:57:53+00:00",
+  "updated_at": "2026-09-10T22:58:02+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-semantics"
 }
 ---
@@ -341,3 +341,6 @@ duplicate, unit-mismatch, unavailable, and privacy-sensitive metrics.
   1 only because generated state summaries concurrently drifted, reconcile then identical
   verification passed; attempted unrelated harness patch exited 2 at shell parse before mutation and
   was abandoned per scope.
+
+- 2026-09-10T22:58:02+00:00: Recorded command exit 0; command argv SHA-256
+  cd4e0fb942442e902e1c8c075ae8a62f40762803840eea9d3ad4b73d45ce1ede.
