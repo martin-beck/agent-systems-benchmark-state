@@ -2,7 +2,7 @@
 {
   "branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T09:33:28+00:00",
+  "claim_expires": "2026-09-10T09:48:13+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 229,
+  "task_revision": 230,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T07:46:57+00:00",
+  "updated_at": "2026-09-10T07:48:13+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -904,3 +904,5 @@ classified.
   portable. FAIL shared: TLC/Alloy job 34451234499 exited during the known AR-0877 tool acquisition
   before model execution. Native now passed, superseding the prior runner identity failure for this
   head. PR remains open and unmerged; do not rerun unchanged candidate.
+
+- 2026-09-10T07:48:13+00:00: Heartbeat by quality_20260906.
