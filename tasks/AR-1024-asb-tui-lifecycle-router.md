@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Implement `asb tui` lifecycle routing",
-  "updated_at": "2026-09-10T20:34:34+00:00",
+  "updated_at": "2026-09-10T20:35:59+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-lifecycle-router"
 }
 ---
@@ -51,3 +51,6 @@ complete gates, exact-head CI and post-merge verification.
   crates/asb-cli/src/tui.rs with crates/asb-cli/tests/tui_lifecycle.rs; ASB will contain only
   trusted installation/lifecycle routing, never Ratatui/Crossterm/render/UI application code or a
   source link to asb-tui.
+
+- 2026-09-10T20:35:59+00:00: Recorded command exit 1; command argv SHA-256
+  bc1a8e34e1b3da829c192d079e163f6453d39b19ad42cea81cd9a33bf24802b8.
