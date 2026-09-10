@@ -13,7 +13,7 @@
   "id": "AR-0909",
   "next_action": "Replace nested guest exec readiness with a bounded direct process primitive or record a contract amendment; preserve real RunningMiniSwe cancellation/group oracle. Do not change timeout again or merge PR #127.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
-  "observed_dirty": 1,
+  "observed_dirty": 0,
   "observed_head": "9297275e8ab328f1cbcd9e4d848f516d70caaa32",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0909.md",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 184,
+  "task_revision": 185,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T07:00:55+00:00",
+  "updated_at": "2026-09-10T07:01:01+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
