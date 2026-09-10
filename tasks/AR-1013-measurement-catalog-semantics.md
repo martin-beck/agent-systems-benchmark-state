@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define selectable ASB measurements grouped by stable semantic meaning.",
-  "task_revision": 127,
+  "task_revision": 128,
   "title": "Version the measurement catalog and semantic groups",
-  "updated_at": "2026-09-10T23:08:58+00:00",
+  "updated_at": "2026-09-10T23:10:57+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-semantics"
 }
 ---
@@ -368,3 +368,8 @@ duplicate, unit-mismatch, unavailable, and privacy-sensitive metrics.
 
 - 2026-09-10T23:08:58+00:00: Recorded command exit 0; command argv SHA-256
   a61dd18f1b39a1e41182c8dd56370a71dbe31c22bba62d6cbe33e77993a7fb45.
+
+- 2026-09-10T23:10:57+00:00: PR #131 merged as GitHub-verified 0c65159d with exact reviewed tree
+  9303272a; post-merge protocol tests pass, but main Repository quality failed because the merge
+  message lacks Signed-off-by. Keep AR in progress until focused recovery AR-1039 is independently
+  reviewed, merged with a real multiline DCO trailer, and all main checks pass.
