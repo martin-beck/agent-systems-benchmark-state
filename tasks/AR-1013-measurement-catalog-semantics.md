@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define selectable ASB measurements grouped by stable semantic meaning.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Version the measurement catalog and semantic groups",
-  "updated_at": "2026-09-10T22:29:39+00:00",
+  "updated_at": "2026-09-10T22:30:01+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-semantics"
 }
 ---
@@ -187,3 +187,6 @@ duplicate, unit-mismatch, unavailable, and privacy-sensitive metrics.
 
 - 2026-09-10T22:29:33+00:00: Recorded command exit 0; command argv SHA-256
   661998f347d30032163a714bc0242f545f4ec82deb049456e78d40d5ad1755f5.
+
+- 2026-09-10T22:30:01+00:00: Recorded command exit 0; command argv SHA-256
+  ff5c46d1eb4bbcf3be547ea5fd96028d40af74cb605c36bb906771a6e441b4dd.
