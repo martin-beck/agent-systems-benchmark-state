@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 220,
+  "task_revision": 221,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-10T04:28:56+00:00",
+  "updated_at": "2026-09-10T04:29:04+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -749,3 +749,6 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   expired lease after owner interruption; preserve PR #124 exact head.
 
 - 2026-09-10T04:28:56+00:00: Claimed by contracts_20260906.
+
+- 2026-09-10T04:29:04+00:00: Recorded command exit 1; command argv SHA-256
+  526c4362ce81400fdb6c2ffefd68220283978c62dd7ef98f012bff6fe876f5a7.
