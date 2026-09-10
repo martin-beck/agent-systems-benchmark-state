@@ -23,9 +23,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish the ASB capability negotiation command required by the standalone frontend.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Add the ASB frontend capabilities command",
-  "updated_at": "2026-09-10T19:23:58+00:00",
+  "updated_at": "2026-09-10T19:24:09+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-capabilities-command"
 }
 ---
@@ -43,3 +43,8 @@ local gates, independent review, exact-head CI and post-merge verification.
   5fc886b4070fa3ab0ac6f393b844d9a9add78751cef9f4fa0a626ebafbee8e8b.
 
 - 2026-09-10T19:23:58+00:00: Heartbeat by codex-ar1023-capabilities-20260910.
+
+- 2026-09-10T19:24:09+00:00: Reconciled standalone asb-tui capability schema at origin/main
+  3d2b6b537da817469bf8a39841ccf9a79a4c370f with ASB control v1: all eight advertised frontend
+  operations have authoritative typed control methods and RunnerBackend implementations;
+  implementing closed side-effect-free JSON command and parity tests.
