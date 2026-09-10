@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**185 ARs tracked** across 6 active status categories.
+**185 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 8 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 6 |
 | **Planned** | Defined work awaiting promotion or dependencies | 48 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 121 |
+| **Done** | Accepted, integrated, and durably verified | 122 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -240,7 +240,7 @@ flowchart LR
         AR_1016["AR-1016 - Planned"]:::status_planned
         AR_1017["AR-1017 - Done"]:::status_done
         AR_1018["AR-1018 - Done"]:::status_done
-        AR_1019["AR-1019 - In progress"]:::status_in_progress
+        AR_1019["AR-1019 - Done"]:::status_done
         AR_1020["AR-1020 - Planned"]:::status_planned
         AR_1021["AR-1021 - Planned"]:::status_planned
     end
@@ -1032,12 +1032,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1019](tasks/AR-1019-asb-tui-bundle-verification.md): Verify signed asb-tui extension bundles | contracts_20260906 | Verify asb-tui bundles before installation or execution. | Publish exact clean 67839598 after final privacy review; open focused PR and require exact-head hosted CI before merge. |
-
 ### Open (8)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -1121,7 +1115,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (121)
+### Done (122)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1235,6 +1229,7 @@ flowchart LR
 | P1 | [AR-1008](tasks/AR-1008.md): Integrate Agent Workflow Quality in shadow mode | Unclaimed | Pin AWQ v0.1.0 in Agent Systems Benchmark and its state repository without replacing native gates or coordinator behavior. | Claim, create an isolated product worktree, add pinned policies and shadow workflows to both repositories, then publish reviewed evidence. |
 | P1 | [AR-1017](tasks/AR-1017-asb-tui-separate-repository.md): Create the standalone asb-tui extension repository | Unclaimed | Build asb-tui as an isolated optional repository and extension. | Publication and exact-head verification complete; no further AR-1017 action. |
 | P1 | [AR-1018](tasks/AR-1018-asb-tui-compatibility-detection.md): Add asb-tui compatibility and terminal capability detection | Unclaimed | Detect whether an asb-tui bundle is compatible before installation or launch. | Await coordinator independent validation of exact-main attestation, post-merge CI, restored protections, and divergent local empty attestation; do not release. |
+| P1 | [AR-1019](tasks/AR-1019-asb-tui-bundle-verification.md): Verify signed asb-tui extension bundles | Unclaimed | Verify asb-tui bundles before installation or execution. | Publish exact clean 67839598 after final privacy review; open focused PR and require exact-head hosted CI before merge. |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Unclaimed | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Run final exact-main and local post-merge verification using required native x86_64 kernel evidence and applicable pinned QEMU AArch64 portability checks; record native ARM64 PMU/eBPF as optional future evidence, then release. |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Unclaimed | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Run final state validation/live doctor and release done after confirming clean synchronized product/state refs at signed merge a0d80e4. |
 | P2 | [AR-0309](tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | Unclaimed | Run a maintained MIT OpenHands SDK or canonical headless client. | Monitor PR #65 exact-head CI for fec0487, investigate any failure, and await final review; do not merge. |

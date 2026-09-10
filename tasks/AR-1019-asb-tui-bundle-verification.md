@@ -2,7 +2,7 @@
 {
   "branch": "feature/asb-tui-bundle-verification",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T18:17:21+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1017",
     "AR-1018"
@@ -12,15 +12,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "contracts_20260906",
+  "owner": "",
   "plan": "../plans/AR-1019.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Verify asb-tui bundles before installation or execution.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Verify signed asb-tui extension bundles",
-  "updated_at": "2026-09-10T15:50:06+00:00",
+  "updated_at": "2026-09-10T15:53:28+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-bundle-verification"
 }
 ---
@@ -66,3 +66,15 @@ artifact-quota-safe retention, and reproducible verification tests.
   Gitleaks/privacy, ASB isolation 16 tests plus 2 doctests, and clean llvm-cov 90.74% lines/88.34%
   regions. Initial isolation exit 127 was only wrapper cargo PATH omission; pinned Rust 1.93 PATH
   rerun passed. No branch publication yet.
+
+- 2026-09-10T15:53:28+00:00: Completed public AR-1019. Five SSH-signed exact-DCO source commits
+  through 67839598f7908232b67d4f482475d883908230b0/tree a5c8f0e743395dc742cea52fdf0bd0735d629b8b
+  passed complete local gates and public PR 5 exact-head hosted run 34498301671. Normal protected
+  squash merge produced GitHub-verified exact-DCO main 990517eda77d4d42ff51ca5d1da03b56e7b8cdda with
+  identical reviewed tree. Exact-main hosted run 34498444488 and trusted local runner 34498444539
+  succeeded; signed-commit protection was restored immediately. Delivered signed closed manifest,
+  immutable three-component source/tree/build identities, exact compatibility, artifact
+  quotas/digests, license/SPDX/provenance policy, HTTPS range retry, persistent process-restart
+  resume, retained-directory owner-private verified cache, offline signed/tampered fixtures, fixed
+  privacy-safe failures, schema/docs, 54 tests, ASB isolation 16 plus 2 doctests, and 90.74% line
+  coverage. No release artifact was claimed or executed.
