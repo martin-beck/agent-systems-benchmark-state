@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Monitor fresh PR #127 exact-head CI at 23c6ed5; classify terminal failures and do not merge without coordinator authorization. | quality_20260906 |
+| P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Await terminal emulated/Rust/quality checks on PR #127 head 23c6ed5; route formal acquisition to AR-0877 and native release identity to AR-0907. Do not alter candidate or merge. | quality_20260906 |
 
 ## Open
 

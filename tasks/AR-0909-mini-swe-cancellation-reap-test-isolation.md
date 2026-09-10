@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Monitor fresh PR #127 exact-head CI at 23c6ed5; classify terminal failures and do not merge without coordinator authorization.",
+  "next_action": "Await terminal emulated/Rust/quality checks on PR #127 head 23c6ed5; route formal acquisition to AR-0877 and native release identity to AR-0907. Do not alter candidate or merge.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "23c6ed5bb64599e5036bb03f5184b38041cccd9c",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 217,
+  "task_revision": 218,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T07:33:28+00:00",
+  "updated_at": "2026-09-10T07:36:58+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -839,3 +839,13 @@ classified.
   in progress. No merge attempted.
 
 - 2026-09-10T07:33:28+00:00: Heartbeat by quality_20260906.
+
+- 2026-09-10T07:36:58+00:00: Exact-head PR #127 infrastructure classification at 23c6ed5: Native
+  Ubuntu run 34450494779 failed before tests because native_evidence.py reported observed
+  distribution does not match exact pinned release and emitted no artifact; this is shared
+  runner/platform identity, not AR-0909. Formal run 34450494641 TLC/Alloy job downloaded about 4385
+  KiB and exited 1 immediately in formal/run_temporal_models.sh before any model execution; Kani and
+  Loom/state-model jobs passed. This repeats the AR-0877 formal acquisition/provenance blocker and
+  is not candidate-owned. Fault, AWQ, headers, Kani and Loom checks are green; emulated-AArch64,
+  Rust and repository-quality remained in progress at the bounded status query. Preserve exact
+  candidate and PR; no rerun, mutation, or merge.
