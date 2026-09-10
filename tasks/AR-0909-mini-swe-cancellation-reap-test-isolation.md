@@ -13,17 +13,17 @@
   "id": "AR-0909",
   "next_action": "Diagnose hosted emulated-AArch64-only PrivateTestRoot binding instability in cancellation test; repair descriptor identity portably, rerun focused native/QEMU and full gates, then request immutable review. Do not merge PR #127.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
-  "observed_dirty": 1,
-  "observed_head": "236e007e2e2c387bc206c68637810f5318c85dea",
+  "observed_dirty": 0,
+  "observed_head": "fb26f3d2023d43f689f0743d3713470d0edf6096",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0909.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 126,
+  "task_revision": 127,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T05:49:22+00:00",
+  "updated_at": "2026-09-10T05:49:29+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
