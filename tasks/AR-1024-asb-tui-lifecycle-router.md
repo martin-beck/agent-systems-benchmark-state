@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Implement `asb tui` lifecycle routing",
-  "updated_at": "2026-09-10T20:31:26+00:00",
+  "updated_at": "2026-09-10T20:32:17+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-lifecycle-router"
 }
 ---
@@ -37,3 +37,6 @@ complete gates, exact-head CI and post-merge verification.
   lifecycle router without renderer or UI ownership.
 
 - 2026-09-10T20:31:26+00:00: Claimed by codex-ar1024-router-20260910.
+
+- 2026-09-10T20:32:17+00:00: Recorded command exit 0; command argv SHA-256
+  1629c9f9a24c48825d6b7660c64f1bb238f910e17d68a4d23bb57a3efb94f807.
