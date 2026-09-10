@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend.",
-  "task_revision": 170,
+  "task_revision": 171,
   "title": "Implement `asb tui` lifecycle routing",
-  "updated_at": "2026-09-10T22:06:15+00:00",
+  "updated_at": "2026-09-10T22:06:39+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-lifecycle-router"
 }
 ---
@@ -517,3 +517,6 @@ complete gates, exact-head CI and post-merge verification.
   invocation-only failures were corrected; no unexplained code failures. Rootless same-UID replay
   limitation and per-atomic-operation dirfd scope are documented without overclaiming. No UI/render
   dependencies or implementation exist in ASB.
+
+- 2026-09-10T22:06:39+00:00: Recorded command exit 101; command argv SHA-256
+  6c914cf4c4bc7afc1057e0d467eaa0248fb5fe5cf089dfcd32c657596960490b.
