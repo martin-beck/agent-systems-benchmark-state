@@ -7,7 +7,7 @@
     "AR-1023"
   ],
   "id": "AR-1038",
-  "next_action": "Finish remaining docs/release/security gates, sign+DCO successor over b65cb4b, push PR #132 exact head, require terminal CI and a new immutable independent review; do not merge.",
+  "next_action": "Monitor all 12 PR #132 checks at exact head 69888a33cdf8383f4155d3dca1e9180104770b33/tree 42fd9229538ab7183b71a0517ca6c5bd751bdb99; if terminal green, release OPEN for a new immutable independent review. Do not merge.",
   "observed_branch": "test/capability-coverage-sink",
   "observed_dirty": 0,
   "observed_head": "69888a33cdf8383f4155d3dca1e9180104770b33",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent sanitized capability child tests from writing default profraw files into the source checkout.",
-  "task_revision": 101,
+  "task_revision": 102,
   "title": "Preserve coverage sinks in sanitized CLI child tests",
-  "updated_at": "2026-09-10T23:55:53+00:00",
+  "updated_at": "2026-09-10T23:56:17+00:00",
   "worktree_key": "agent-systems-benchmark-capability-coverage-sink"
 }
 ---
@@ -356,3 +356,13 @@ Fix the six `default_*.profraw` files discovered during AR-1013 full coverage wi
 
 - 2026-09-10T23:55:53+00:00: Recorded command exit 0; command argv SHA-256
   cf904deea92ddd0c58e662909e102cd953de1406d468b5f94f1ed862039ff0e8.
+
+- 2026-09-10T23:56:17+00:00: Published signed+DCO review-repair successor
+  69888a33cdf8383f4155d3dca1e9180104770b33 (tree 42fd9229538ab7183b71a0517ca6c5bd751bdb99) to PR
+  #132. Exact scope remains one test file. Local final evidence: focused normal and llvm-cov 12/12;
+  actual coverage run creates six distinct external child-%p profiles for canonical plus five
+  failing children; default.profraw/default_*.profraw fixture detection passes and checkout scan is
+  empty. Workspace fmt, Clippy -D warnings, full serial tests, rustdoc -D warnings, release build,
+  full coverage floors (protocol 96.69%, replay 97.84%), deny, audit, contract consistency,
+  repository policy, diff-check, clean tree, allowed SSH signature and exact DCO pass. PR body
+  updated with exact grammar and immutable-review requirement; hosted CI running.
