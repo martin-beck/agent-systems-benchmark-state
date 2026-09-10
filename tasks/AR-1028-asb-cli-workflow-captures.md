@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Produce reproducible ASB CLI transcripts separately from standalone TUI screenshots.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Generate ASB CLI workflow captures",
-  "updated_at": "2026-09-10T20:28:38+00:00",
+  "updated_at": "2026-09-10T20:28:51+00:00",
   "worktree_key": "agent-systems-benchmark-asb-cli-workflow-captures"
 }
 ---
@@ -189,3 +189,6 @@ renderer, terminal application, Ratatui/Crossterm dependency, or asb-tui source.
   violating existing scratch-boundary test corrected to external target, direct cargo-audit syntax
   corrected, contract baseline ref corrected to exact SHA, and failure-path PATH corrected. No
   renderer/TUI code or dependency touched.
+
+- 2026-09-10T20:28:51+00:00: Recorded command exit 0; command argv SHA-256
+  9f4a1e93786f80c195e62b06e6b12ead05034839dbf4e645c4ab973b846c8a4a.
