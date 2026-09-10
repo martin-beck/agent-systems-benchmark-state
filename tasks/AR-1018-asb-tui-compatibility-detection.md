@@ -7,7 +7,7 @@
     "AR-1017"
   ],
   "id": "AR-1018",
-  "next_action": "Obtain independent immutable review of f5edd558; do not publish or mutate the candidate before approval.",
+  "next_action": "Finish hostile probe repairs and full pre-publication gates; then prepare a signed successor for immutable review.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Detect whether an asb-tui bundle is compatible before installation or launch.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Add asb-tui compatibility and terminal capability detection",
-  "updated_at": "2026-09-10T13:34:50+00:00",
+  "updated_at": "2026-09-10T13:35:53+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-compatibility-detection"
 }
 ---
@@ -264,3 +264,8 @@ fixtures for mismatches, privacy-safe diagnostics, and no host identifiers in pu
 
 - 2026-09-10T13:34:50+00:00: Recorded command exit 101; command argv SHA-256
   8deddfdca7884b0a4415aef332e4e26a6780d67c4c002de5c8903b931e1122ff.
+
+- 2026-09-10T13:35:53+00:00: Classified repeated focused failure: filesystem probe write/rename
+  succeeded, but executable=false because the copied executable remained open writable at exec time
+  (Linux ETXTBSY boundary). The source now closes the writable descriptor before bounded execution;
+  next run is changed, not an identical retry.

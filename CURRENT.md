@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1018](tasks/AR-1018-asb-tui-compatibility-detection.md): Add asb-tui compatibility and terminal capability detection | Detect whether an asb-tui bundle is compatible before installation or launch. | Obtain independent immutable review of f5edd558; do not publish or mutate the candidate before approval. | contracts_20260906 |
+| P1 | [AR-1018](tasks/AR-1018-asb-tui-compatibility-detection.md): Add asb-tui compatibility and terminal capability detection | Detect whether an asb-tui bundle is compatible before installation or launch. | Finish hostile probe repairs and full pre-publication gates; then prepare a signed successor for immutable review. | contracts_20260906 |
 
 ## Open
 
