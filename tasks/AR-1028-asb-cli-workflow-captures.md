@@ -2,7 +2,7 @@
 {
   "branch": "docs/asb-cli-workflow-captures",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T23:03:42+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0872"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "docs/asb-cli-workflow-captures-attestation",
   "observed_dirty": 0,
   "observed_head": "b18e38ad94f19ff3ea83f8214004a2d7987ba2bf",
-  "owner": "codex-ar1028-cli-captures-20260910",
+  "owner": "",
   "plan": "../plans/AR-1028.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Produce reproducible ASB CLI transcripts separately from standalone TUI screenshots.",
-  "task_revision": 99,
+  "task_revision": 100,
   "title": "Generate ASB CLI workflow captures",
-  "updated_at": "2026-09-10T20:50:19+00:00",
+  "updated_at": "2026-09-10T20:50:26+00:00",
   "worktree_key": "agent-systems-benchmark-asb-cli-workflow-captures"
 }
 ---
@@ -303,3 +303,8 @@ renderer, terminal application, Ratatui/Crossterm dependency, or asb-tui source.
   and raw matching DCO verified. Post-merge transcript regeneration tests pass 3/3 on the identical
   tree. Historical b2763fb remains explicitly attested unsigned. No TUI application/renderer code or
   dependency changed.
+
+- 2026-09-10T20:50:26+00:00: Delivered reproducible privacy-safe ASB CLI transcript in PR #129;
+  corrective PR #130 durably attests the unsigned rebase recreation, mandates merge-only
+  publication, is GitHub-signed, tree-exact, exact-head green, independently reviewed, and
+  post-merge regenerated.
