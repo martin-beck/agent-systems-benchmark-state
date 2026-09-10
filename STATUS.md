@@ -1036,7 +1036,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1018](tasks/AR-1018-asb-tui-compatibility-detection.md): Add asb-tui compatibility and terminal capability detection | contracts_20260906 | Detect whether an asb-tui bundle is compatible before installation or launch. | Await authorization to remove the impossible pre-merge trusted-main check and solo approval gate; preserve hosted quality and all other protections. |
+| P1 | [AR-1018](tasks/AR-1018-asb-tui-compatibility-detection.md): Add asb-tui compatibility and terminal capability detection | contracts_20260906 | Detect whether an asb-tui bundle is compatible before installation or launch. | Hold release: preserve merged history; add signed DCO corrective attestation only after coordinator authorization, then reverify exact-main CI and protections. |
 
 ### Open (8)
 

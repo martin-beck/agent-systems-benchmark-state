@@ -7,7 +7,7 @@
     "AR-1017"
   ],
   "id": "AR-1018",
-  "next_action": "Await authorization to remove the impossible pre-merge trusted-main check and solo approval gate; preserve hosted quality and all other protections.",
+  "next_action": "Hold release: preserve merged history; add signed DCO corrective attestation only after coordinator authorization, then reverify exact-main CI and protections.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Detect whether an asb-tui bundle is compatible before installation or launch.",
-  "task_revision": 179,
+  "task_revision": 180,
   "title": "Add asb-tui compatibility and terminal capability detection",
-  "updated_at": "2026-09-10T15:06:08+00:00",
+  "updated_at": "2026-09-10T15:06:53+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-compatibility-detection"
 }
 ---
@@ -626,3 +626,15 @@ fixtures for mismatches, privacy-safe diagnostics, and no host identifiers in pu
 
 - 2026-09-10T15:06:08+00:00: Recorded command exit 0; command argv SHA-256
   1deddca048bbb32f271ab36f83eb0b578e20aebe421a546201af087c452ed6be.
+
+- 2026-09-10T15:06:53+00:00: Post-merge audit: PR 2 was concurrently merged at
+  add8df612456e5d5568af344a94e1a6ae568b0d9 before this worker executed the authorized guarded merge.
+  Public API shows GitHub-valid signature, parents c2fcb722 and d268a938, expected tree ad238226,
+  but immutable merge message lacks Signed-off-by. The same audit found required signatures disabled
+  and review protection absent; public issue events identify actor martin-beck but expose no
+  originating command, so exact mechanism is not provable. Restored required_signatures through the
+  dedicated GitHub protection endpoint and reverified enabled=true; strict hosted quality, admin
+  enforcement, conversation resolution, and force/delete prohibitions remain. Exact-main Repository
+  quality 34493198580 and Trusted main verification 34493198554 are green. Preserve history; propose
+  one SSH-signed exact-DCO empty corrective attestation successor on add8df6, only after coordinator
+  authorization.
