@@ -7,7 +7,7 @@
     "AR-1017"
   ],
   "id": "AR-1018",
-  "next_action": "Finish hostile probe repairs and full pre-publication gates; then prepare a signed successor for immutable review.",
+  "next_action": "Obtain independent immutable review of 31afab0c/e053c1b6; do not publish before approval.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Detect whether an asb-tui bundle is compatible before installation or launch.",
-  "task_revision": 121,
+  "task_revision": 122,
   "title": "Add asb-tui compatibility and terminal capability detection",
-  "updated_at": "2026-09-10T14:05:58+00:00",
+  "updated_at": "2026-09-10T14:06:33+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-compatibility-detection"
 }
 ---
@@ -403,3 +403,18 @@ fixtures for mismatches, privacy-safe diagnostics, and no host identifiers in pu
 
 - 2026-09-10T14:05:58+00:00: Recorded command exit 0; command argv SHA-256
   b8b777eb53945af03c0827758ffaa6916c7613c0f78a5f04fdafc2021623a79f.
+
+- 2026-09-10T14:06:33+00:00: Repair candidate range 3233af30..31afab0c (tip tree
+  e053c1b6529bb5b11b8094de03eca6163f7cb9db) is clean atop rejected f5edd558 and consists of four
+  SSH-signed exact-DCO commits. Nineteen-path scope adds real bounded local detection, closed
+  schemas and semantic validator, rustix fd-relative runtime probes with closed 18-package SBOM,
+  hostile fixtures, and hosted/trusted schema gates. Required capability booleans now bind
+  eligibility; missing/extra/false cases fail closed. ASB 99.0.0, absent/mismatched protocol,
+  duplicate os-release fields, non-UTF8/oversize/private stderr, exact argv, sanitized environment,
+  descendant timeout/reaping, base/artifact replacement, mode/symlink, channel and resize negatives
+  pass. Production resize remains explicitly unavailable until authenticated PTY evidence exists.
+  Full 39 tests, fmt, Clippy -D warnings, rustdoc, release, deny, audit, semantic schemas,
+  shell/workflow quality, Gitleaks/privacy, ASB isolation, scope/diff/signature/DCO and clean-tree
+  gates pass. Exact-head clean llvm-cov passes at 94.42% lines and 91.48% regions with zero checkout
+  profiles. The prior coverage-only executable failure was fixed by binding its directory fd to
+  stdin; subprocess tests are serialized to prevent hostile process-group fixtures from racing.
