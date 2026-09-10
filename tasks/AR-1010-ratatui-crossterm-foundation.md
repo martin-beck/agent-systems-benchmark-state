@@ -12,7 +12,7 @@
   "id": "AR-1010",
   "next_action": "Run full workspace, formal, fault, privacy, policy, and supply gates on signed df92c05.",
   "observed_branch": "feature/tui-ratatui-crossterm-foundation",
-  "observed_dirty": 0,
+  "observed_dirty": 3,
   "observed_head": "df92c0513f742ce3f22a7f2d8808441537cf3dbb",
   "owner": "replay_20260906",
   "plan": "../plans/AR-1010.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T00:42:58+00:00",
+  "updated_at": "2026-09-10T00:43:05+00:00",
   "worktree_key": "agent-systems-benchmark-tui-ratatui-crossterm-foundation"
 }
 ---
