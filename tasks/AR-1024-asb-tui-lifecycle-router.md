@@ -2,7 +2,7 @@
 {
   "branch": "feature/asb-tui-lifecycle-router",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T23:37:17+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0820",
     "AR-0821",
@@ -15,15 +15,15 @@
   "observed_branch": "feature/asb-tui-lifecycle-router",
   "observed_dirty": 0,
   "observed_head": "c545c33c8bfedd33fb234ec7f2526447dfe56534",
-  "owner": "codex-ar1024-router-20260910",
+  "owner": "",
   "plan": "../plans/AR-1024.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend.",
-  "task_revision": 260,
+  "task_revision": 261,
   "title": "Implement `asb tui` lifecycle routing",
-  "updated_at": "2026-09-10T23:07:33+00:00",
+  "updated_at": "2026-09-10T23:37:45+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-lifecycle-router"
 }
 ---
@@ -748,3 +748,7 @@ complete gates, exact-head CI and post-merge verification.
   /proc failure leaking a setsid escape. The ASB process-group boundary and external
   authoritative-runner sentinel are implemented and focused green, but final cross-repository
   qualification remains deliberately null until a non-rejected upstream successor exists.
+
+- 2026-09-10T23:37:45+00:00: Recovered expired claim formerly owned by codex-ar1024-router-20260910.
+  AR-1024 worker stopped after recording clean signed checkpoint c545c33; dependency AR-1010 remains
+  under repair, so recover expired lease and leave task open without product mutation.
