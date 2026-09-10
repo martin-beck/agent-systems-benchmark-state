@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Fresh immutable review of 236e007e, then guarded PR #127 update and exact-head CI; keep formal AR-0877 failure separate and do not merge.",
+  "next_action": "Hold PR #127 for hosted emulated-AArch64 run 34441460132 and remaining exact-head checks; formal acquisition remains AR-0877-owned. Do not merge.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "236e007e2e2c387bc206c68637810f5318c85dea",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 114,
+  "task_revision": 115,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T05:32:10+00:00",
+  "updated_at": "2026-09-10T05:32:49+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -425,3 +425,10 @@ classified.
 
 - 2026-09-10T05:32:10+00:00: Recorded command exit 0; command argv SHA-256
   b8854d06d553e2bb0e65742c954d8c562c97e9e04eb891e00d8ce65d5160325c.
+
+- 2026-09-10T05:32:49+00:00: Published independently approved successor
+  236e007e2e2c387bc206c68637810f5318c85dea to PR #127 by exact force-with-lease from 502a0e66. Live
+  PR base remains b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b and exact head is 236e007e. Fresh hosted
+  emulated-AArch64 run 34441460132/job 102757187245 is in progress. Formal TLC/Alloy run
+  34441460141/job 102757187372 failed at the separate AR-0877 acquisition boundary; AWQ and headers
+  pass; other exact-head jobs remain in progress. PR is open and unmerged.
