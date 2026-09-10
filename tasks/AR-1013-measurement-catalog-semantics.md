@@ -10,7 +10,7 @@
   "id": "AR-1013",
   "next_action": "Independently review immutable PR #131 head 6d0c991/tree 3e4620f, require all 12 exact-head checks terminal green, and do not merge before approval.",
   "observed_branch": "feature/measurement-catalog-semantics",
-  "observed_dirty": 6,
+  "observed_dirty": 0,
   "observed_head": "78c63febc0ce6c4724bf4d14121e9ae178e2a020",
   "owner": "codex-ar1013-measurement-catalog-20260910",
   "plan": "../plans/AR-1013.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define selectable ASB measurements grouped by stable semantic meaning.",
-  "task_revision": 114,
+  "task_revision": 115,
   "title": "Version the measurement catalog and semantic groups",
-  "updated_at": "2026-09-10T22:56:20+00:00",
+  "updated_at": "2026-09-10T22:56:26+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-semantics"
 }
 ---
