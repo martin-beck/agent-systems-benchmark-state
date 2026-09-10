@@ -11,7 +11,7 @@
     "AR-0851"
   ],
   "id": "AR-1017",
-  "next_action": "Await independent immutable review of c674988/tree 56351344; no remote or publication exists. Publish only after coordinator approval.",
+  "next_action": "Add a focused signed+DCO successor that runs full exact-main validation on the trusted self-hosted label for main push/manual only, while keeping all pull-request code exclusively GitHub-hosted; independently rerun all pre-publication gates before publication.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Build asb-tui as an isolated optional repository and extension.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Create the standalone asb-tui extension repository",
-  "updated_at": "2026-09-10T11:20:07+00:00",
+  "updated_at": "2026-09-10T11:21:43+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-separate-repository"
 }
 ---
@@ -367,3 +367,14 @@ metadata, and tests proving the main benchmark runs independently when the TUI i
   final-identity wrapper exit 1 was only a faulty tail-last-line DCO assertion against the commit
   message trailing blank; corrected exact-line grep, signatures, parent/tree/scope and clean-state
   check passed. No remote, GitHub repository, push, PR, or publication was created.
+
+- 2026-09-10T11:21:43+00:00: Independent review found a required runner-policy gap in c674988: the
+  self-hosted development-runner workflow is checkout-free canary only, while complete quality
+  validation runs only on GitHub-hosted Ubuntu. Before publication add a trusted
+  main-push/workflow_dispatch self-hosted job using privacy-safe label
+  asb-development-v1-x86_64-ubuntu2404. It must check out and validate exactly github.sha/current
+  main, fail closed on repository/ref/event/architecture mismatch, use immutable pinned Actions,
+  persist no credentials, expose no host identifiers or credentials, and never run pull_request or
+  other untrusted fork code. Preserve the GitHub-hosted pull_request quality path. After push,
+  require and verify exact-head hosted quality and trusted local-runner validation in branch
+  protection before release.
