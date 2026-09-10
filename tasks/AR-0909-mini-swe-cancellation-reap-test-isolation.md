@@ -13,7 +13,7 @@
   "id": "AR-0909",
   "next_action": "Widen only bounded cancellation-test readiness and teardown budgets for loaded hosted emulation, rerun native/QEMU stress and full gates, then request immutable review. Do not merge PR #127.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "4e35710ad90a5c421af9bb4a008a1caa08fcff59",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0909.md",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 146,
+  "task_revision": 147,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T06:11:35+00:00",
+  "updated_at": "2026-09-10T06:11:46+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
