@@ -13,7 +13,7 @@
   "id": "AR-0909",
   "next_action": "Repair candidate-owned QEMU ENOENT by creating/opening FIFO relative to retained PrivateTestRoot fd, rerun focused/full emulation and native gates, then fresh review. Do not merge.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "23c6ed5bb64599e5036bb03f5184b38041cccd9c",
   "owner": "quality_20260906",
   "plan": "../plans/AR-0909.md",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 220,
+  "task_revision": 221,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T07:38:49+00:00",
+  "updated_at": "2026-09-10T07:38:56+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
