@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 307,
+  "task_revision": 308,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T22:56:00+00:00",
+  "updated_at": "2026-09-10T23:00:49+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -1052,3 +1052,6 @@ Implementation has not started. Read the linked plan before claiming.
   asb-tui only; live control belongs to AR-1025 and benchmark runners remain authoritative external
   ASB processes. Lifecycle JSON/schema and bundle fixtures are unchanged by this successor. Hosted
   Repository quality is currently in progress on exact head.
+
+- 2026-09-10T23:00:49+00:00: Recorded command exit 0; command argv SHA-256
+  bd2d01465d4deac975bf2fc9483f824488e9979273aa079e14b04d42ef960d4e.
