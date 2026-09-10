@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 248,
+  "task_revision": 249,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T21:56:32+00:00",
+  "updated_at": "2026-09-10T21:56:45+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -835,3 +835,6 @@ Implementation has not started. Read the linked plan before claiming.
   command, bounded first-render observation, Drop cleanup, and explicit no-leak assertion. Repaired
   targeted test passed 1/1 in 0.12s under a 45-second outer deadline. Next evidence requires at
   least ten repetitions plus artifact audit.
+
+- 2026-09-10T21:56:45+00:00: Recorded command exit 0; command argv SHA-256
+  ae84a38f6a7e5835d36fb9814c87866fa3c0ee840a724d833c84ce4278d9b276.
