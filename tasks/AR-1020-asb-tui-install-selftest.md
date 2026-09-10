@@ -2,7 +2,7 @@
 {
   "branch": "feature/asb-tui-install-selftest",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T19:05:45+00:00",
+  "claim_expires": "2026-09-10T19:29:52+00:00",
   "depends_on": [
     "AR-1019"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Install and operate asb-tui safely as an optional extension.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Add isolated asb-tui install and self-test lifecycle",
-  "updated_at": "2026-09-10T16:05:56+00:00",
+  "updated_at": "2026-09-10T16:29:52+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-install-selftest"
 }
 ---
@@ -54,3 +54,5 @@ read-only status, detached-run continuity, permissions/privacy checks, and clear
   executable versions, atomic active-state replacement, interrupted-stage recovery, read-only
   verification, idempotent install/remove, and lifecycle tests. Clippy and 7 focused tests pass.
   Product ASB routing remains an explicit separate dependency.
+
+- 2026-09-10T16:29:52+00:00: Heartbeat by contracts_20260906.
