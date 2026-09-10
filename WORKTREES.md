@@ -81,8 +81,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-local-inference-provider-profiles` | `feat/local-inference-provider-profiles` | `eed49592617a` | 0 | behind 49, ahead 0 |
 | `agent-systems-benchmark-local-llm-testing-recommendations` | `docs/local-llm-testing-recommendations` | `4a23069336be` | 0 | behind 62, ahead 0 |
 | `agent-systems-benchmark-main-merge-integrity` | `fix/main-merge-integrity` | `bd6f450ab877` | 0 | behind 20, ahead 2 |
-| `agent-systems-benchmark-measurement-catalog-semantics` | `feature/measurement-catalog-semantics` | `58d0da27736d` | 3 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-metrics/src/lib.rs`, `crates/asb-protocol/src/lib.rs`, `crates/asb-protocol/src/measurement.rs` |
+| `agent-systems-benchmark-measurement-catalog-semantics` | `feature/measurement-catalog-semantics` | `58d0da27736d` | 7 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-metrics/src/lib.rs`, `crates/asb-protocol/Cargo.toml`, `crates/asb-protocol/examples/generate_schemas.rs`, `crates/asb-protocol/src/lib.rs`, `crates/asb-protocol/tests/schema_conformance.rs`, `crates/asb-protocol/examples/generate_measurement_fixtures.rs`, `crates/asb-protocol/src/measurement.rs` |
 | `agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation` | `fix/mini-swe-cancellation-reap-test-isolation` | `c897313524a8` | 0 | behind 20, ahead 14 |
 | `agent-systems-benchmark-mockagents-executable-qualification` | `test/mockagents-executable-qualification` | `3f1de4106adf` | 0 | behind 47, ahead 0 |
 | `agent-systems-benchmark-modern-terminal-rendering` | `feature/modern-terminal-rendering` | `fd1989a096a3` | 0 | behind 84, ahead 0 |
