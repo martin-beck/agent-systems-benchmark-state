@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the maintained Ratatui release consumable by standalone asb-tui without hiding supply-chain exceptions.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Resolve the Ratatui dependency closure",
-  "updated_at": "2026-09-10T20:16:34+00:00",
+  "updated_at": "2026-09-10T20:17:13+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-dependency-closure"
 }
 ---
@@ -171,3 +171,6 @@ and syn 2/3. Resolve this visibly before AR-1010 adds a renderer.
   auth refresh is required. No direct main push, protection bypass, account-key mutation, or history
   rewrite was performed. PR #11 remains open/ready, exact-head CI green, and
   mergeable_state=blocked.
+
+- 2026-09-10T20:17:13+00:00: Recorded command exit 1; command argv SHA-256
+  ddaa34cff50029b5286afb0f03e4048a3f54a3fa9ad4f263fc510e580acf01b0.
