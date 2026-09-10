@@ -2,7 +2,7 @@
 {
   "branch": "fix/main-merge-integrity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T11:30:14+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "fix/main-merge-integrity",
   "observed_dirty": 0,
   "observed_head": "bd6f450ab8777aeb7e055d71aedba8e4cfd375b3",
-  "owner": "contracts_20260906",
+  "owner": "",
   "plan": "../plans/AR-0897.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-10T08:31:31+00:00",
+  "updated_at": "2026-09-10T08:31:42+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -183,3 +183,8 @@ Implementation has not started. Read the linked plan before claiming.
   (137 passed/1 failed/1 ignored); AR-0909 owns that test-isolation/lifecycle repair. Neither
   failure touches AR-0897 seven-path integration-policy scope. Candidate and PR remain unchanged;
   exact-head acceptance and merge remain blocked pending both serialized repairs.
+
+- 2026-09-10T08:31:42+00:00: Released open without product mutation. PR 126 preserves exact reviewed
+  bd6f450/tree 20111234; AR-0897 has no in-scope failure, but acceptance is incomplete until AR-0877
+  formal acquisition and AR-0909 cancellation-reaping coverage repairs integrate and fresh
+  exact-head CI is all green.
