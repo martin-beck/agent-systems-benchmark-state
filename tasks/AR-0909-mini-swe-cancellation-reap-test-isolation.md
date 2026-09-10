@@ -2,7 +2,7 @@
 {
   "branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T10:31:16+00:00",
+  "claim_expires": "2026-09-10T09:33:28+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 216,
+  "task_revision": 217,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T07:33:25+00:00",
+  "updated_at": "2026-09-10T07:33:28+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -837,3 +837,5 @@ classified.
   34450494779, repository-quality 34450494592, Rust 34450494757, AWQ 34450494614, headers
   34450494646. AWQ and headers were SUCCESS at the first bounded observation; remaining checks were
   in progress. No merge attempted.
+
+- 2026-09-10T07:33:28+00:00: Heartbeat by quality_20260906.
