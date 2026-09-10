@@ -7,7 +7,7 @@
     "AR-1017"
   ],
   "id": "AR-1018",
-  "next_action": "Await coordinator final diff/protection review of all-green PR 2 exact d268a938; do not merge.",
+  "next_action": "Await authorization to remove the impossible pre-merge trusted-main check and solo approval gate; preserve hosted quality and all other protections.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Detect whether an asb-tui bundle is compatible before installation or launch.",
-  "task_revision": 174,
+  "task_revision": 175,
   "title": "Add asb-tui compatibility and terminal capability detection",
-  "updated_at": "2026-09-10T14:59:17+00:00",
+  "updated_at": "2026-09-10T15:02:25+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-compatibility-detection"
 }
 ---
@@ -602,3 +602,16 @@ fixtures for mismatches, privacy-safe diagnostics, and no host identifiers in pu
   102922577443 completed SUCCESS at d268a938446c26e9ef40c97db7460373997c9e03. GitHub reports
   mergeState BLOCKED and reviewDecision REVIEW_REQUIRED, as intended. Candidate remains immutable
   and merge is withheld for coordinator review.
+
+- 2026-09-10T15:02:25+00:00: Live protection audit found no rulesets and classic main protection
+  strict/enforced for admins. Required checks are hosted Rust, supply-chain, and privacy gates plus
+  Verify exact trusted main revision; required reviews demand one approval, stale dismissal, and
+  last-push approval. PR 2 exact d268a938 has hosted SUCCESS but no reviews and is
+  BLOCKED/REVIEW_REQUIRED. The trusted workflow has only main push/workflow_dispatch triggers and an
+  exact main ref guard, so it cannot create a PR-head check without violating the persistent-runner
+  trust boundary. The sole maintainer cannot satisfy the independent approval in GitHub UI. Minimal
+  proposed repair, pending authorization: delete only the trusted-main context from pre-merge
+  required checks and patch required approving reviews to zero with last-push approval false. Retain
+  strict hosted quality, enforce_admins, signed commits, conversation resolution, and force/delete
+  prohibitions. After protected merge, trusted self-hosted exact-main verification remains mandatory
+  before AR release.
