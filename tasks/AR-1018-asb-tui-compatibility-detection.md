@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Detect whether an asb-tui bundle is compatible before installation or launch.",
-  "task_revision": 122,
+  "task_revision": 123,
   "title": "Add asb-tui compatibility and terminal capability detection",
-  "updated_at": "2026-09-10T14:06:33+00:00",
+  "updated_at": "2026-09-10T14:07:25+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-compatibility-detection"
 }
 ---
@@ -418,3 +418,8 @@ fixtures for mismatches, privacy-safe diagnostics, and no host identifiers in pu
   gates pass. Exact-head clean llvm-cov passes at 94.42% lines and 91.48% regions with zero checkout
   profiles. The prior coverage-only executable failure was fixed by binding its directory fd to
   stdin; subprocess tests are serialized to prevent hostile process-group fixtures from racing.
+
+- 2026-09-10T14:07:25+00:00: Evidence-count correction: the exact-head full Rust run passed 40 tests
+  (7 library, 1 main, 3 capability, 9 compatibility, 2 doctor, 2 isolation, 1 metadata, 5
+  release-discovery, 6 system-probe, and 4 workflow-policy), not 39. All other recorded candidate
+  identities and gate conclusions are unchanged.
