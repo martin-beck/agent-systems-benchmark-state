@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Redesign the hosted-emulation cancellation fixture around an observable process primitive that does not require guest shell/test executable startup; preserve real RunningMiniSwe and group oracle. No timeout increase or merge.",
+  "next_action": "Obtain immutable review of exact 23c6ed5; if approved, guarded force-with-lease PR #127 and fresh exact-head CI. Do not merge.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "23c6ed5bb64599e5036bb03f5184b38041cccd9c",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 213,
+  "task_revision": 214,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T07:31:36+00:00",
+  "updated_at": "2026-09-10T07:32:07+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -811,3 +811,18 @@ classified.
 
 - 2026-09-10T07:31:27+00:00: Recorded command exit 0; command argv SHA-256
   56d6cfa3b231a157feec55e8f176c97a5ff4e4f93c42381ffb79f835fc66fefa.
+
+- 2026-09-10T07:32:07+00:00: Signed successor 23c6ed5bb64599e5036bb03f5184b38041cccd9c, tree
+  5d1c4dac21c3a8506ab64ea1d0a49a799e091895, parent eefdb833248db5bf7135ac4749b7dc8886aa5458.
+  Worktree clean; exact commit scope is one cfg(test) path crates/asb-agents/src/mini_swe.rs;
+  production unchanged; git diff --check, SSH signature and exact Signed-off-by pass. The repair
+  removes staged guest-script and nested guest/test-executable startup. It directly starts host
+  /bin/sh as the owned RunningProcess, wraps it in real RunningMiniSwe, and creates two
+  shell-builtin descendants blocked on a private FIFO. It retains two-PID evidence, exact
+  process-group/session validation, Cancelled terminal evidence, and bounded zero-runnable-member
+  verification. Focused native exact test passed 1/1. Focused aarch64 QEMU exact test passed 1/1.
+  Exact hosted-workflow-equivalent aarch64 asb-agents lib suite passed 139/139 with 1 ignored and 1
+  filtered. Native cargo fmt --all -- --check, cargo clippy --locked --workspace --all-targets -- -D
+  warnings, and cargo test --locked --workspace all completed green; the final wrapper exit 1 was
+  solely post-command state reconciliation detecting the since-recovered AR-0909/AR-0859 lease
+  expiry, after all test/doc-test output passed.

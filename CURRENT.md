@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Redesign the hosted-emulation cancellation fixture around an observable process primitive that does not require guest shell/test executable startup; preserve real RunningMiniSwe and group oracle. No timeout increase or merge. | quality_20260906 |
+| P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Obtain immutable review of exact 23c6ed5; if approved, guarded force-with-lease PR #127 and fresh exact-head CI. Do not merge. | quality_20260906 |
 
 ## Open
 
