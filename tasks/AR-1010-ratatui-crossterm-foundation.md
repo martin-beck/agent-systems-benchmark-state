@@ -10,7 +10,7 @@
     "AR-0806"
   ],
   "id": "AR-1010",
-  "next_action": "Repair the Ratatui dependency closure so cargo-deny and cargo-audit pass; preserve TUI semantics and rerun all gates.",
+  "next_action": "Coordinator decision required: no released Ratatui closure satisfies deny.toml without allowing Zlib or carrying a patched dependency.",
   "observed_branch": "feature/tui-ratatui-crossterm-foundation",
   "observed_dirty": 0,
   "observed_head": "2754623be3503589b24cbb84341dfcf65ccb8911",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T04:49:13+00:00",
+  "updated_at": "2026-09-10T04:49:51+00:00",
   "worktree_key": "agent-systems-benchmark-tui-ratatui-crossterm-foundation"
 }
 ---
@@ -166,3 +166,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-10T04:49:06+00:00: Recorded command exit 101; command argv SHA-256
   778d24839e628dbba60fced334002b0eb6bac2dd44c28c9833724865068ad7e5.
+
+- 2026-09-10T04:49:51+00:00: Dependency-closure repair exhausted without policy weakening. Ratatui
+  0.30.0 with Crossterm 0.29 removes paste and old rustix/unicode-width duplicates, but fixed lru
+  requires >=0.18.2 while 0.30.0 constrains lru ^0.16; time 0.3.44 is vulnerable
+  (RUSTSEC-2026-0009). Ratatui 0.30.2 with exact serde 1.0.220, time 0.3.47 and lru 0.18.2 compiles
+  the full locked workspace and clears all advisories, but cargo-deny still rejects unavoidable
+  foldhash 0.2.0 Zlib and duplicate hashbrown 0.16.1/0.17.1: ratatui-core directly enables hashbrown
+  0.17 defaults and kasuari directly enables hashbrown 0.16 defaults. Features cannot disable a
+  transitive default feature. Older Ratatui 0.24-0.29 retain vulnerable/unmaintained lru/paste
+  closures. All exploratory manifest/lock changes were mechanically restored; product is byte-clean
+  at signed 2754623. No successor was committed and no policy was weakened.
