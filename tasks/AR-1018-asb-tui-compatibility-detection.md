@@ -7,7 +7,7 @@
     "AR-1017"
   ],
   "id": "AR-1018",
-  "next_action": "Complete cleanup/PTY repair audit, rerun all full clean gates, and create a focused signed+DCO successor.",
+  "next_action": "Obtain independent immutable review of d268a938/ad238226; do not publish before approval.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Detect whether an asb-tui bundle is compatible before installation or launch.",
-  "task_revision": 163,
+  "task_revision": 164,
   "title": "Add asb-tui compatibility and terminal capability detection",
-  "updated_at": "2026-09-10T14:49:20+00:00",
+  "updated_at": "2026-09-10T14:50:03+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-compatibility-detection"
 }
 ---
@@ -550,3 +550,20 @@ fixtures for mismatches, privacy-safe diagnostics, and no host identifiers in pu
 
 - 2026-09-10T14:49:20+00:00: Recorded command exit 0; command argv SHA-256
   00d5ac9b8321e7955d831892d1c1183622550ffe7093509240573a3ee5a618a4.
+
+- 2026-09-10T14:50:03+00:00: Repair successor d268a938446c26e9ef40c97db7460373997c9e03/tree
+  ad238226c0d441458204ecdafff02ad14a121575, exact parent 31afab0c, is clean, SSH-signed, exact-DCO,
+  and limited to Cargo.toml, README.md, and src/system_probe.rs. Executable probing now opens
+  trusted source and generated executable inodes, executes the retained generated inode through
+  /proc/self/fd/0, rejects post-open substitution with zero marker effects, and returns capability
+  true only after identity-bound unlink/rmdir plus absence verification. Partial create/write
+  rollback, cleanup denial, artifact/root replacement, and ancestor swaps fail closed. Production
+  resize now uses an isolated PTY, identity-checked retained /usr/bin/setsid and /bin/dash inodes, a
+  controlling slave and foreground process group; TIOCSWINSZ alone causes the observed WINCH.
+  No-size-change, ignored-event timeout, descendant reaping, wrong-channel, and privacy boundaries
+  pass. Exact tree gates: 45 Rust tests; fmt; locked Clippy -D warnings, rustdoc -D warnings,
+  release; deny/audit; schema/SBOM; shell/workflow/Zizmor; Gitleaks/privacy; ASB isolation 16 tests
+  plus 2 doctests; clean llvm-cov 92.74% lines/90.84% regions; zero profraw and empty porcelain.
+  Commit signing first failed under wrapper because it selected unavailable OpenPGP; explicit
+  configured SSH signing produced d268a938. A later exact-head guard typo used a guessed suffix and
+  exited 1 before gates; the corrected full OID guard and all gates passed.

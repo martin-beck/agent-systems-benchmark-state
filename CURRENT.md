@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1018](tasks/AR-1018-asb-tui-compatibility-detection.md): Add asb-tui compatibility and terminal capability detection | Detect whether an asb-tui bundle is compatible before installation or launch. | Complete cleanup/PTY repair audit, rerun all full clean gates, and create a focused signed+DCO successor. | contracts_20260906 |
+| P1 | [AR-1018](tasks/AR-1018-asb-tui-compatibility-detection.md): Add asb-tui compatibility and terminal capability detection | Detect whether an asb-tui bundle is compatible before installation or launch. | Obtain independent immutable review of d268a938/ad238226; do not publish before approval. | contracts_20260906 |
 
 ## Open
 
