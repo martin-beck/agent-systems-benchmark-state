@@ -10,7 +10,7 @@
     "AR-0806"
   ],
   "id": "AR-1010",
-  "next_action": "Run full workspace, formal, fault, privacy, policy, and supply gates on signed df92c05.",
+  "next_action": "Run full exact-tree workspace/formal/fault/privacy/policy/supply gates on repaired 9ba39a5.",
   "observed_branch": "feature/tui-ratatui-crossterm-foundation",
   "observed_dirty": 0,
   "observed_head": "9ba39a58c7e5492e1c69db642ff6c20e33192244",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T00:45:32+00:00",
+  "updated_at": "2026-09-10T00:46:03+00:00",
   "worktree_key": "agent-systems-benchmark-tui-ratatui-crossterm-foundation"
 }
 ---
@@ -78,3 +78,15 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-10T00:45:25+00:00: Recorded command exit 0; command argv SHA-256
   319d2f0fc8d18987d7bce2c0c125229deb7b0b73db1b2dbcae0b77d039bcbd49.
+
+- 2026-09-10T00:46:03+00:00: Review-repair successor 9ba39a58c7e5492e1c69db642ff6c20e33192244 (tree
+  a8535f8882dccff00cb66a8c901c8f3bb0991745, parent df92c0513f742ce3f22a7f2d8808441537cf3dbb) is
+  SSH-signed, DCO-trailed, and clean. It uses checked_add so u64::MAX event cursors fail atomically;
+  binds the runtime to an explicit owner-authenticated ControlClient socket with negotiated bounded
+  polling and Connected/Control/Disconnected actions; injects terminal evidence for deterministic
+  non-TTY behavior; and adds real util-linux pseudo-terminal success/error tests proving
+  alternate-screen, cursor, bracketed-paste and raw-mode restoration boundaries. Focused fmt, 42
+  library tests, 2 PTY integration tests, doctests, Clippy -D warnings, and diff-check pass. The
+  earlier full workspace command was deliberately interrupted after review blockers arrived, so its
+  partial output is not completion evidence; full exact-tree gates remain pending on this repaired
+  successor.
