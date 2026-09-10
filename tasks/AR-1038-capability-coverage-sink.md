@@ -7,7 +7,7 @@
     "AR-1023"
   ],
   "id": "AR-1038",
-  "next_action": "Wait for all 12 PR #132 checks on exact head b65cb4b5e9a9d6d75de967ff4673506218c62b45 tree ed1c1847687f5a73216169af242ad2c71d234dad to become terminal green, then obtain independent immutable review; do not merge.",
+  "next_action": "Obtain independent immutable review of PR #132 head b65cb4b5e9a9d6d75de967ff4673506218c62b45 tree ed1c1847687f5a73216169af242ad2c71d234dad, then coordinate protected merge sequencing; do not merge without approval.",
   "observed_branch": "test/capability-coverage-sink",
   "observed_dirty": 0,
   "observed_head": "b65cb4b5e9a9d6d75de967ff4673506218c62b45",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent sanitized capability child tests from writing default profraw files into the source checkout.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Preserve coverage sinks in sanitized CLI child tests",
-  "updated_at": "2026-09-10T23:27:07+00:00",
+  "updated_at": "2026-09-10T23:29:27+00:00",
   "worktree_key": "agent-systems-benchmark-capability-coverage-sink"
 }
 ---
@@ -180,3 +180,10 @@ Fix the six `default_*.profraw` files discovered during AR-1013 full coverage wi
 
 - 2026-09-10T23:27:07+00:00: Recorded command exit 0; command argv SHA-256
   dd2d52c31c1974687cb9c30562215dbaab7ab5e8ec1337c85cc3da9ba64530b2.
+
+- 2026-09-10T23:29:27+00:00: Final immutable PR #132 head b65cb4b5e9a9d6d75de967ff4673506218c62b45
+  tree ed1c1847687f5a73216169af242ad2c71d234dad has all 12 exact-head GitHub checks terminal
+  SUCCESS, including repository quality and emulated aarch64. The task plan is aligned in signed+DCO
+  state commit 2237ecac to permit exact cargo-llvm-cov absolute sinks beneath ignored workspace
+  target as well as validated external roots, while retaining source-path, root-default, traversal
+  and symlink rejection. No merge or production/UI/TUI change was made.
