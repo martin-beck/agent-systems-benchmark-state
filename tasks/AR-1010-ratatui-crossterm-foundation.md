@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 166,
+  "task_revision": 167,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T20:59:30+00:00",
+  "updated_at": "2026-09-10T20:59:44+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -563,3 +563,6 @@ Implementation has not started. Read the linked plan before claiming.
   failure at raw enable, alternate-screen entry, cursor hiding, paste enablement, and restoration
   retry. PTY coverage proves exact memfd frontend bytes render on the controlling terminal, q exits,
   restoration completes, and lifecycle stdout remains exactly one parseable JSON response.
+
+- 2026-09-10T20:59:44+00:00: Recorded command exit 2; command argv SHA-256
+  e2354a3fdf988ccf08274251440890581e2ca91ad05f25077e6692f18478a2a1.
