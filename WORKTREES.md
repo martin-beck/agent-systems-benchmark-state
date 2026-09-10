@@ -30,7 +30,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-asb-tui-lifecycle-router` | `feature/asb-tui-lifecycle-router` | `c545c33c8bfe` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-beginner-workflows` | `docs/beginner-workflows` | `328de90ef1ed` | 0 | behind 106, ahead 0 |
 | `agent-systems-benchmark-benchmark-validity` | `feature/benchmark-validity` | `60a6c730457b` | 0 | behind 234, ahead 0 |
-| `agent-systems-benchmark-capability-coverage-sink` | `test/capability-coverage-sink` | `58d0da27736d` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-capability-coverage-sink` | `test/capability-coverage-sink` | `58d0da27736d` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-cli/tests/capability_contract.rs` |
 | `agent-systems-benchmark-capacity-sweeps` | `feature/capacity-sweeps` | `0717d4acd168` | 0 | behind 342, ahead 0 |
 | `agent-systems-benchmark-ci-artifact-quota-resilience` | `feature/ci-artifact-quota-resilience` | `7d98653e7e7f` | 0 | behind 288, ahead 0 |
 | `agent-systems-benchmark-cli-multi-agent-provider-selection` | `feature/cli-multi-agent-provider-selection` | `0d9d317716d5` | 0 | behind 134, ahead 0 |

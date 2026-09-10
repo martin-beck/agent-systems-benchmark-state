@@ -9,7 +9,7 @@
   "id": "AR-1038",
   "next_action": "Preserve the validated external LLVM coverage sink across capability test env_clear without inheriting other ambient state.",
   "observed_branch": "test/capability-coverage-sink",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "58d0da27736d6c22ca7c43f76ade497165b29919",
   "owner": "codex-ar1038-coverage-20260911",
   "plan": "../plans/AR-1038.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent sanitized capability child tests from writing default profraw files into the source checkout.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Preserve coverage sinks in sanitized CLI child tests",
-  "updated_at": "2026-09-10T23:04:06+00:00",
+  "updated_at": "2026-09-10T23:04:12+00:00",
   "worktree_key": "agent-systems-benchmark-capability-coverage-sink"
 }
 ---
