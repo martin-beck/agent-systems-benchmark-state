@@ -2,7 +2,7 @@
 {
   "branch": "feature/measurement-catalog-semantics",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-11T00:44:21+00:00",
+  "claim_expires": "2026-09-11T00:40:35+00:00",
   "depends_on": [
     "AR-0101",
     "AR-1001"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define selectable ASB measurements grouped by stable semantic meaning.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Version the measurement catalog and semantic groups",
-  "updated_at": "2026-09-10T22:33:53+00:00",
+  "updated_at": "2026-09-10T22:40:35+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-semantics"
 }
 ---
@@ -230,3 +230,5 @@ duplicate, unit-mismatch, unavailable, and privacy-sensitive metrics.
   run hit unrelated asb-agents ETXTBSY/reap races, while RUST_TEST_THREADS=1 rerun passed all
   coverage thresholds. No renderer, Ratatui, Crossterm, terminal lifecycle, widgets, navigation,
   selection interaction or frontend state was added.
+
+- 2026-09-10T22:40:35+00:00: Heartbeat by codex-ar1013-measurement-catalog-20260910.
