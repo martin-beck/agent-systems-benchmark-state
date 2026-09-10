@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T00:30:51+00:00",
+  "updated_at": "2026-09-10T00:32:29+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -305,3 +305,6 @@ classified.
   permission-blocked, so fresh hosted emulated-AArch64 remains required. PR127 formal failure is the
   separate AR-0877 acquisition artifact issue. Generated PROJECT_STATE.md reconciliation included
   automatically.
+
+- 2026-09-10T00:32:29+00:00: Recorded command exit 0; command argv SHA-256
+  488658b5eabb14dab4ca492a0202cb1f6eb024953281f15d8557bb16658b89bf.
