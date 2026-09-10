@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Turn the tested unverified asb-tui lifecycle boundary into a release-safe delegated contract.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Harden the asb-tui release lifecycle contract",
-  "updated_at": "2026-09-10T19:34:06+00:00",
+  "updated_at": "2026-09-10T19:34:36+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-release-contract-hardening"
 }
 ---
@@ -65,3 +65,8 @@ and filesystem tests, complete local gates, independent review, exact-head CI an
 
 - 2026-09-10T19:34:06+00:00: Recorded command exit 101; command argv SHA-256
   02966aaacd1d8c320ad8cbc910eaa8057f02af6621e5ef2540ab601665b224e2.
+
+- 2026-09-10T19:34:36+00:00: Classified focused test exit 101: intended self-test response expanded
+  from 9 to 14 closed identity fields; source-only binary correctly exited 3 with ready=false.
+  Updated assertions now bind classification, target, empty unpromoted identities, ASB/protocol
+  versions and exact field count; rerunning focused and full gates.
