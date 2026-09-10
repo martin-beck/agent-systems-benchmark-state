@@ -10,7 +10,7 @@
     "AR-0806"
   ],
   "id": "AR-1010",
-  "next_action": "Run full exact-tree workspace/formal/fault/privacy/policy/supply gates on repaired 9ba39a5.",
+  "next_action": "Run full exact-tree assurance gates on signed baseline repair 2754623; no publication.",
   "observed_branch": "feature/tui-ratatui-crossterm-foundation",
   "observed_dirty": 0,
   "observed_head": "2754623be3503589b24cbb84341dfcf65ccb8911",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T04:28:12+00:00",
+  "updated_at": "2026-09-10T04:28:25+00:00",
   "worktree_key": "agent-systems-benchmark-tui-ratatui-crossterm-foundation"
 }
 ---
@@ -101,3 +101,10 @@ Implementation has not started. Read the linked plan before claiming.
   expired lease; preserve signed candidate 2754623 for full gates.
 
 - 2026-09-10T04:28:12+00:00: Claimed by replay_20260906.
+
+- 2026-09-10T04:28:25+00:00: Reclaimed preserved clean signed+DCO baseline repair
+  2754623be3503589b24cbb84341dfcf65ccb8911, tree 5fc76ef3ec34f853daa535c31355e161729457cb, parent
+  9ba39a58c7e5492e1c69db642ff6c20e33192244. Negotiated latest_revision now seeds AppState;
+  standalone and negotiated first-event stale/skipped/max-wrap negatives plus real ControlServer
+  page integration pass. Prior focused result: fmt, 43 library tests, 3 integration/PTY tests,
+  doctests, Clippy -D warnings and diff-check green. Resume full gates without tree mutation.
