@@ -2,7 +2,7 @@
 {
   "branch": "fix/hosted-runner-evidence-classification",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-10T11:27:12+00:00",
   "depends_on": [
     "AR-0702",
     "AR-0848"
@@ -12,15 +12,15 @@
   "observed_branch": "fix/hosted-runner-evidence-classification",
   "observed_dirty": 0,
   "observed_head": "f0b7b46db271cd9de5e89ab1d3cdd6cf86a662d0",
-  "owner": "",
+  "owner": "contracts_20260906",
   "plan": "../plans/AR-0907.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Separate rolling hosted portability checks from immutable native qualification evidence.",
-  "task_revision": 134,
+  "task_revision": 135,
   "title": "Classify hosted runner evidence without weakening native qualification",
-  "updated_at": "2026-09-09T22:38:32+00:00",
+  "updated_at": "2026-09-10T08:27:12+00:00",
   "worktree_key": "agent-systems-benchmark-hosted-runner-evidence"
 }
 ---
@@ -510,3 +510,5 @@ patch release has advanced.
 - 2026-09-09T22:38:32+00:00: Recovered expired claim formerly owned by quality_20260906. Expired
   AR-0907 lease recovered after terminal PR #123 review; preserve approved f0b7b46 and amendment
   lineage, require fresh claim before further mutation.
+
+- 2026-09-10T08:27:12+00:00: Claimed by contracts_20260906.
