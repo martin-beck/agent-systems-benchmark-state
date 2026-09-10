@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Implement `asb tui` lifecycle routing",
-  "updated_at": "2026-09-10T20:48:22+00:00",
+  "updated_at": "2026-09-10T20:49:42+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-lifecycle-router"
 }
 ---
@@ -111,3 +111,6 @@ complete gates, exact-head CI and post-merge verification.
   invocation failed before compile because rustc PATH was omitted, then the exact command with fixed
   toolchain PATH passed. The check+test wrapper did execute both newline-separated commands; it was
   not an argv concatenation.
+
+- 2026-09-10T20:49:42+00:00: Recorded command exit 0; command argv SHA-256
+  a6b6611dec337de11366052ecacbcfb330c65e3ca7da863d0695e1a79ab4978b.
