@@ -1126,7 +1126,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md): Adopt Ratatui/Crossterm TUI foundation | codex-ar1010-asb-tui-renderer-20260910 | Adopt Ratatui and Crossterm as the supported professional TUI foundation. | Review draft PR 9 and choose an explicit Zlib/duplicate-policy decision or a dedicated upstream dependency AR before adding the real Ratatui renderer. |
+| P0 | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md): Adopt Ratatui/Crossterm TUI foundation | codex-ar1010-asb-tui-renderer-20260910 | Adopt Ratatui and Crossterm as the supported professional TUI foundation. | Run complete policy, cross-target, repository-quality, coverage, and ASB-isolation gates; consolidate the rebased renderer and terminal-handoff implementation into a signed DCO commit; publish exact PR head for independent review. |
 | P0 | [AR-1024](tasks/AR-1024-asb-tui-lifecycle-router.md): Implement &#96;asb tui&#96; lifecycle routing | codex-ar1024-router-20260910 | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | Add signed synthetic channel/bundle and filesystem/delegation adversarial tests, incorporate the pending asb-tui controlling-TTY and foldhash-Zlib contract revision, then harden docs/schema and run focused clippy/tests. |
 
 ### Open (5)

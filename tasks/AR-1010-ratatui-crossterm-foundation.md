@@ -11,16 +11,16 @@
     "AR-1030"
   ],
   "id": "AR-1010",
-  "next_action": "Review draft PR 9 and choose an explicit Zlib/duplicate-policy decision or a dedicated upstream dependency AR before adding the real Ratatui renderer.",
+  "next_action": "Run complete policy, cross-target, repository-quality, coverage, and ASB-isolation gates; consolidate the rebased renderer and terminal-handoff implementation into a signed DCO commit; publish exact PR head for independent review.",
   "owner": "codex-ar1010-asb-tui-renderer-20260910",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 165,
+  "task_revision": 166,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T20:58:47+00:00",
+  "updated_at": "2026-09-10T20:59:30+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -552,3 +552,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-10T20:58:47+00:00: Recorded command exit 0; command argv SHA-256
   92a2fb010907e4b4fd89869cfa2234caf8cc93019f73b293082947ec53951133.
+
+- 2026-09-10T20:59:30+00:00: Full cargo suite initially exposed two stale tests, not product
+  failures: the pre-handoff launcher test expected success without a controlling terminal, and a
+  release-lock negative mutation still targeted the former unavailable classification. Both were
+  repaired to test the current fail-closed contracts. Focused lifecycle/renderer/PTY tests and the
+  subsequent complete cargo fmt, clippy, test, rustdoc, and release build are green. Independent
+  review found a genuine partial-startup restoration edge; terminal effects are now issued and
+  tracked individually, failed cleanup flags remain active for retry, and injected tests cover
+  failure at raw enable, alternate-screen entry, cursor hiding, paste enablement, and restoration
+  retry. PTY coverage proves exact memfd frontend bytes render on the controlling terminal, q exits,
+  restoration completes, and lifecycle stdout remains exactly one parseable JSON response.
