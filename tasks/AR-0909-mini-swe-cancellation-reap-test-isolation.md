@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Repair created-root binding against the canonical fd-anchored entry, rerun native and AArch64/QEMU focused/full gates, then prepare signed successor; do not merge.",
+  "next_action": "Fresh immutable review of 236e007e, then guarded PR #127 update and exact-head CI; keep formal AR-0877 failure separate and do not merge.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "236e007e2e2c387bc206c68637810f5318c85dea",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 111,
+  "task_revision": 112,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T05:29:21+00:00",
+  "updated_at": "2026-09-10T05:29:54+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -406,3 +406,16 @@ classified.
 
 - 2026-09-10T05:29:21+00:00: Recorded command exit 0; command argv SHA-256
   fcb18cf753e074787be8a12e2c73c74bdddc6de57502fd5b9ffda3b5e8b0c553.
+
+- 2026-09-10T05:29:54+00:00: Second PR127 emulated run 34440495564 was terminal 138 passed/1 failed:
+  only cancellation_leaves_no_runnable_owned_descendant failed because created-root fd target was
+  compared to a lexically constructed temp path. Signed successor
+  236e007e2e2c387bc206c68637810f5318c85dea, tree baa8d10f1aa5891783e7974eda9dac87a7882b4f, parent
+  502a0e66ffdfe1aec85f5802b53f7c30c189b304 now compares the root fd against the canonical target of
+  the nofollow fd-anchored directory entry, preserving swap rejection without host/guest
+  path-spelling assumptions. Local AArch64 cross/QEMU exact reruns of both prior failures pass;
+  native mini_swe 22/22 passes. Full fmt/clippy/workspace/rustdoc/release and exact coverage are
+  green; unchanged contract/failure/artifact/platform/workflow/policy/privacy/Gitleaks/deny/audit
+  gates remain green. Five-commit aggregate remains one cfg(test) path, production prefix
+  byte-identical, SSH-signed/DCO-valid and clean. PR127 remains at failing 502a0e6 pending review;
+  formal 34440495620 remains separate AR-0877 acquisition failure.
