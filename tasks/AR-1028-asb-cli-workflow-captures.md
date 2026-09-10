@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Produce reproducible ASB CLI transcripts separately from standalone TUI screenshots.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Generate ASB CLI workflow captures",
-  "updated_at": "2026-09-10T20:30:05+00:00",
+  "updated_at": "2026-09-10T20:30:23+00:00",
   "worktree_key": "agent-systems-benchmark-asb-cli-workflow-captures"
 }
 ---
@@ -204,3 +204,6 @@ renderer, terminal application, Ratatui/Crossterm dependency, or asb-tui source.
 
 - 2026-09-10T20:30:05+00:00: Recorded command exit 2; command argv SHA-256
   07e492ce93f579de8607711fbad52cb7d2af26afd9b56c84d76c184ac4947694.
+
+- 2026-09-10T20:30:23+00:00: Recorded command exit 0; command argv SHA-256
+  7f8d39ef8bf90c957fcc8e4b43ea4d654097aecac850e5a11d018a4414f03fa7.
