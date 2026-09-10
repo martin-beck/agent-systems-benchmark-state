@@ -22,7 +22,7 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 34542715029 | `a01f7f21f5be` | push | Rust verification | in_progress:- |
-| 34542715007 | `a01f7f21f5be` | push | Repository quality | in_progress:- |
+| 34542715007 | `a01f7f21f5be` | push | Repository quality | completed:failure |
 | 34542715006 | `a01f7f21f5be` | push | Huawei MIT source headers | completed:success |
 | 34542715003 | `a01f7f21f5be` | push | Fault assurance | in_progress:- |
 | 34542714979 | `a01f7f21f5be` | push | Hosted portability and native qualification | in_progress:- |
