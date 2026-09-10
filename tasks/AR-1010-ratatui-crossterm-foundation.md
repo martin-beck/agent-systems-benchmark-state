@@ -2,7 +2,7 @@
 {
   "branch": "feature/ratatui-crossterm-foundation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T22:23:29+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0803",
     "AR-0804",
@@ -11,15 +11,15 @@
   ],
   "id": "AR-1010",
   "next_action": "Review draft PR 9 and choose an explicit Zlib/duplicate-policy decision or a dedicated upstream dependency AR before adding the real Ratatui renderer.",
-  "owner": "codex-ar1010-asb-tui-foundation-20260910",
+  "owner": "",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "planned",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T19:46:42+00:00",
+  "updated_at": "2026-09-10T19:47:31+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -337,3 +337,7 @@ Implementation has not started. Read the linked plan before claiming.
   9b3f9fb746b3ac8a17a7b9ea7541f621650969e8, and its Repository quality / Rust, supply-chain, and
   privacy gates check completed SUCCESS at 2026-09-10T19:45:54Z. AR remains in_progress because no
   Ratatui renderer exists.
+
+- 2026-09-10T19:47:31+00:00: Clean signed checkpoint is preserved in draft PR 9; release worker
+  lease while a separate dependency-resolution AR is authored. AR-1010 remains incomplete and must
+  not merge as a finished renderer.
