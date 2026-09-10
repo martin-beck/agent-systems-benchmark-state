@@ -11,7 +11,7 @@
     "AR-0851"
   ],
   "id": "AR-1017",
-  "next_action": "Independently review immutable 0a726d4 and all pre-publication evidence; do not create a remote or publish before coordinator authorization.",
+  "next_action": "Hold clean signed head 0a726d4 unpublished under the current do-not-publish instruction. When publication is explicitly resumed, create/configure the public repository, push this exact reviewed head, require hosted PR quality plus trusted exact-main local-runner verification, and verify all exact-head checks before release.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Build asb-tui as an isolated optional repository and extension.",
-  "task_revision": 153,
+  "task_revision": 154,
   "title": "Create the standalone asb-tui extension repository",
-  "updated_at": "2026-09-10T11:58:41+00:00",
+  "updated_at": "2026-09-10T11:59:21+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-separate-repository"
 }
 ---
@@ -583,3 +583,15 @@ metadata, and tests proving the main benchmark runs independently when the TUI i
 
 - 2026-09-10T11:58:41+00:00: Recorded command exit 0; command argv SHA-256
   892ded1136e1abef92424cd46a901d56e1efb3439304b2e2fcb260a3e2673c7b.
+
+- 2026-09-10T11:59:21+00:00: Independent causal review passed immutable
+  0a726d4ab3f939ab21811608e952b6fc1249c22c/tree db1d64341d060d3b6f86dd868a11ea45a0899692, exact
+  parent 28911d9. Pinned allowed-signers SSH verification and exact DCO pass; scope is only
+  tests/doctor.rs, tests/isolation.rs, tests/support/mod.rs. Every asb-tui child now runs in a
+  unique mode-0700 RAII directory, including both env-cleared launch sites. A fresh clean-tree
+  tools/run-coverage-clean.sh run passed all 18 tests at 92.57% lines/90.16% regions and ended with
+  zero default_*.profraw plus empty git status --porcelain. The prior 28911d9 post-coverage
+  untracked artifact failure is preserved as the negative detection evidence. Full earlier Rust,
+  supply-chain, workflow, shell, release-authentication, privacy, Gitleaks, provenance and ASB-core
+  isolation gates remain green. No remote or publication exists; current instruction explicitly
+  prohibits publication.

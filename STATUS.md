@@ -1036,7 +1036,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1017](tasks/AR-1017-asb-tui-separate-repository.md): Create the standalone asb-tui extension repository | contracts_20260906 | Build asb-tui as an isolated optional repository and extension. | Independently review immutable 0a726d4 and all pre-publication evidence; do not create a remote or publish before coordinator authorization. |
+| P1 | [AR-1017](tasks/AR-1017-asb-tui-separate-repository.md): Create the standalone asb-tui extension repository | contracts_20260906 | Build asb-tui as an isolated optional repository and extension. | Hold clean signed head 0a726d4 unpublished under the current do-not-publish instruction. When publication is explicitly resumed, create/configure the public repository, push this exact reviewed head, require hosted PR quality plus trusted exact-main local-runner verification, and verify all exact-head checks before release. |
 
 ### Open (8)
 
