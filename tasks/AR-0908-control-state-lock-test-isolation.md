@@ -10,7 +10,7 @@
     "AR-0875"
   ],
   "id": "AR-0908",
-  "next_action": "Monitor PR #125 exact-head CI; classify formal failure after logs become available and do not merge before coordinator approval.",
+  "next_action": "Hold PR #125 unchanged; shared formal asset and native-runner pin owners must repair their gates before a fresh exact-head run.",
   "observed_branch": "fix/control-state-lock-test-isolation",
   "observed_dirty": 0,
   "observed_head": "8b0f9fd07d5dfbedd83376c1380ab225dfba1213",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Harden asb-cli control-state lock test isolation and deterministic reopen coverage.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Harden control-state lock test isolation",
-  "updated_at": "2026-09-10T08:27:52+00:00",
+  "updated_at": "2026-09-10T08:30:23+00:00",
   "worktree_key": "agent-systems-benchmark-control-state-lock-test-isolation"
 }
 ---
@@ -193,3 +193,15 @@ non-deterministic isolation signal rather than claiming a production lock defect
   test-only scope, require fresh claim before mutation.
 
 - 2026-09-10T08:27:52+00:00: Claimed by replay_20260906.
+
+- 2026-09-10T08:30:23+00:00: Fresh exact-head diagnosis for PR #125 head
+  8b0f9fd07d5dfbedd83376c1380ab225dfba1213/base b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b:
+  candidate/control-state checks are green (Rust, Repository Quality including coverage/supply,
+  fault/fuzz/mutation, Kani, Loom/state models, headers, AWQ, emulated aarch64). Two failures are
+  outside the one-path cfg(test) diff. Formal run 34401125569 job 102632995297 downloads the mutable
+  TLA+ v1.8.0 release URL then exits 1 at the pinned byte/hash check before TLC or Alloy; candidate
+  does not alter formal files. Native run 34401125568 job 102632995122 exits before checks because
+  runner /etc/os-release does not equal the exact Ubuntu 24.04.4 profile; artifact upload then finds
+  no report; candidate does not alter platform/workflow files. PR remains OPEN/MERGEABLE/UNSTABLE
+  and worktree is clean at signed+DCO 8b0f9fd. No focused AR-0908 source repair is justified and no
+  rerun/merge was attempted.
