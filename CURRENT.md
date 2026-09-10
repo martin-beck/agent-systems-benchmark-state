@@ -13,6 +13,7 @@ Never edit this file directly.
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Qualify pinned OpenJiuwen live execution. | Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI. | - |
 | P1 | [AR-0908](tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Hold PR #125 unchanged; shared formal asset and native-runner pin owners must repair their gates before a fresh exact-head run. | - |
 | P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Hold PR127 unmerged; AR-0877 must repair formal acquisition and platform owner must repair hosted distro evidence, then rerun exact-head CI unchanged. | - |
+| P2 | [AR-1021](tasks/AR-1021-asb-tui-release-promotion.md): Audit and promote the asb-tui release channel | Audit and promote asb-tui from optional extension to verified release when eligible. | Independently audit the extension and document its optional/unverified or verified release channel. | - |
 
 ## Blocked
 
@@ -73,7 +74,6 @@ Never edit this file directly.
 | P2 | [AR-0706](tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. | - |
 | P2 | [AR-0903](tasks/AR-0903-release-qualification.md): Package and qualify the first release | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. | - |
 | P2 | [AR-1016](tasks/AR-1016-measurement-integration-audit.md): Integrate and audit measurement selection and CSB evidence | Audit selectable and CSB-backed measurements across live and replay runs. | Add end-to-end live/replay comparison, release documentation, and independent audit after AR-1014 and AR-1015. | - |
-| P2 | [AR-1021](tasks/AR-1021-asb-tui-release-promotion.md): Audit and promote the asb-tui release channel | Audit and promote asb-tui from optional extension to verified release when eligible. | Independently audit the extension and document its optional/unverified or verified release channel. | - |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. | - |
 
 ## Future

@@ -10,9 +10,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 6 |
+| **Open** | Dependency-ready and available to claim | 7 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
-| **Planned** | Defined work awaiting promotion or dependencies | 47 |
+| **Planned** | Defined work awaiting promotion or dependencies | 46 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 126 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -242,7 +242,7 @@ flowchart LR
         AR_1018["AR-1018 - Done"]:::status_done
         AR_1019["AR-1019 - Done"]:::status_done
         AR_1020["AR-1020 - Done"]:::status_done
-        AR_1021["AR-1021 - Planned"]:::status_planned
+        AR_1021["AR-1021 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1032,7 +1032,7 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (6)
+### Open (7)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1042,6 +1042,7 @@ flowchart LR
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Unclaimed | Qualify pinned OpenJiuwen live execution. | Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI. |
 | P1 | [AR-0908](tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | Unclaimed | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Hold PR #125 unchanged; shared formal asset and native-runner pin owners must repair their gates before a fresh exact-head run. |
 | P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | Unclaimed | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Hold PR127 unmerged; AR-0877 must repair formal acquisition and platform owner must repair hosted distro evidence, then rerun exact-head CI unchanged. |
+| P2 | [AR-1021](tasks/AR-1021-asb-tui-release-promotion.md): Audit and promote the asb-tui release channel | Unclaimed | Audit and promote asb-tui from optional extension to verified release when eligible. | Independently audit the extension and document its optional/unverified or verified release channel. |
 
 ### Blocked (5)
 
@@ -1053,7 +1054,7 @@ flowchart LR
 | P1 | [AR-0890](tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Unclaimed | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. |
 | P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Unclaimed | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun failed Repository quality workflow 34339927858 on unchanged main; if failure repeats, isolate and repair test-state ownership before any feature work. |
 
-### Planned (47)
+### Planned (46)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1102,7 +1103,6 @@ flowchart LR
 | P2 | [AR-0706](tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-0903](tasks/AR-0903-release-qualification.md): Package and qualify the first release | Unclaimed | Deliver reproducible native release artifacts with complete support and evidence statements. | Audit milestone completeness and run isolated release qualification. |
 | P2 | [AR-1016](tasks/AR-1016-measurement-integration-audit.md): Integrate and audit measurement selection and CSB evidence | Unclaimed | Audit selectable and CSB-backed measurements across live and replay runs. | Add end-to-end live/replay comparison, release documentation, and independent audit after AR-1014 and AR-1015. |
-| P2 | [AR-1021](tasks/AR-1021-asb-tui-release-promotion.md): Audit and promote the asb-tui release channel | Unclaimed | Audit and promote asb-tui from optional extension to verified release when eligible. | Independently audit the extension and document its optional/unverified or verified release channel. |
 | P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
 ### Future (1)
