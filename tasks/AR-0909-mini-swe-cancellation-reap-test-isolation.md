@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 145,
+  "task_revision": 146,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T06:10:52+00:00",
+  "updated_at": "2026-09-10T06:11:35+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -560,3 +560,6 @@ classified.
   two-second test-only deadline. This is a candidate test-timing defect under loaded emulation, not
   evidence of a surviving descendant. Native platform now passes; formal remains AR-0877-owned.
   PR127 remains open and must not merge.
+
+- 2026-09-10T06:11:35+00:00: Recorded command exit 0; command argv SHA-256
+  0aa5181d5e4f00c34af3611d5137ce1ee3cab19b0e03c00b6db923b648d5867a.
