@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover the measurement catalog publication boundary without rewriting protected main.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Attest the measurement catalog merge boundary",
-  "updated_at": "2026-09-10T23:14:58+00:00",
+  "updated_at": "2026-09-10T23:15:52+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-merge-attestation"
 }
 ---
@@ -40,3 +40,6 @@ the corrective merge commit uses an actual multiline DCO trailer. This AR owns n
 
 - 2026-09-10T23:14:52+00:00: Recorded command exit 0; command argv SHA-256
   f11422bd09dcbee61e0c989118e553f6f8f14766bd541932ee4219a0f83f5b2a.
+
+- 2026-09-10T23:15:52+00:00: Recorded command exit 0; command argv SHA-256
+  7384520d3e8de1cce0f7cfbaab49c935374e60e914f26055f84b926fc09305ae.
