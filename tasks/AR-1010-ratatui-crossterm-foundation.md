@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 93,
+  "task_revision": 94,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T19:46:28+00:00",
+  "updated_at": "2026-09-10T19:46:42+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -332,3 +332,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-10T19:46:28+00:00: Recorded command exit 0; command argv SHA-256
   a7c2491006dea572fd657f061af914fd043601421c596c8f472ef97ad4801088.
+
+- 2026-09-10T19:46:42+00:00: Live GitHub verification: draft PR 9 is MERGEABLE at exact head
+  9b3f9fb746b3ac8a17a7b9ea7541f621650969e8, and its Repository quality / Rust, supply-chain, and
+  privacy gates check completed SUCCESS at 2026-09-10T19:45:54Z. AR remains in_progress because no
+  Ratatui renderer exists.
