@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define selectable ASB measurements grouped by stable semantic meaning.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Version the measurement catalog and semantic groups",
-  "updated_at": "2026-09-10T22:32:34+00:00",
+  "updated_at": "2026-09-10T22:32:46+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-semantics"
 }
 ---
@@ -209,3 +209,6 @@ duplicate, unit-mismatch, unavailable, and privacy-sensitive metrics.
   contract consistency pass. Coverage passed serially: workspace 94.47%, asb-protocol 97.08%; first
   concurrent coverage run hit known process-test ETXTBSY/reap races, then serial rerun passed. No
   UI/render/terminal code changed.
+
+- 2026-09-10T22:32:46+00:00: Recorded command exit 0; command argv SHA-256
+  80b6e74d4a478126b5afadb47183fbc33d501260a3806be301e157f13acd4449.
