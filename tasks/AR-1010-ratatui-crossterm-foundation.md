@@ -12,7 +12,7 @@
   "id": "AR-1010",
   "next_action": "Adopt pinned Ratatui and Crossterm dependencies in an isolated TUI worktree, then implement the capability-aware application shell and event loop.",
   "observed_branch": "feature/tui-ratatui-crossterm-foundation",
-  "observed_dirty": 5,
+  "observed_dirty": 6,
   "observed_head": "b6d04a8305ce6d49cc327e4e6d2d6fa42a88050b",
   "owner": "replay_20260906",
   "plan": "../plans/AR-1010.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T00:34:23+00:00",
+  "updated_at": "2026-09-10T00:34:29+00:00",
   "worktree_key": "agent-systems-benchmark-tui-ratatui-crossterm-foundation"
 }
 ---
