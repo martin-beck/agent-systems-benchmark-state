@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Detect whether an asb-tui bundle is compatible before installation or launch.",
-  "task_revision": 127,
+  "task_revision": 128,
   "title": "Add asb-tui compatibility and terminal capability detection",
-  "updated_at": "2026-09-10T14:16:15+00:00",
+  "updated_at": "2026-09-10T14:18:15+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-compatibility-detection"
 }
 ---
@@ -436,3 +436,6 @@ fixtures for mismatches, privacy-safe diagnostics, and no host identifiers in pu
   returned capability booleans, and LocalSystem production resize verification is hard-false.
   Publication remains blocked; preserve signed history and repair with hostile replacement, cleanup
   failure/rollback, and bounded PTY WINCH evidence.
+
+- 2026-09-10T14:18:15+00:00: Recorded command exit 0; command argv SHA-256
+  2761a71d162cecc2deb8b24a3709990b086dc5f06a190ea98f1f5fb717ae9c47.
