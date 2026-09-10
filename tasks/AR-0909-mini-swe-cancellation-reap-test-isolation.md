@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 177,
+  "task_revision": 178,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T06:50:52+00:00",
+  "updated_at": "2026-09-10T06:51:29+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -685,3 +685,6 @@ classified.
   workspace as $5, trajectory as $7, and config as $12. Exact aggregate scope remains one cfg(test)
   file, production untouched; SSH signature/DCO/diff-check/worktree clean. PR127 remains at failing
   67d07fd pending immutable review.
+
+- 2026-09-10T06:51:29+00:00: Recorded command exit 0; command argv SHA-256
+  dff6d017b33cc2186d570608e30ded69d3f41455c79b2d7407f7408b5e9c8ddc.
