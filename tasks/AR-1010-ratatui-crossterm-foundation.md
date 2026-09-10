@@ -2,7 +2,7 @@
 {
   "branch": "feature/tui-ratatui-crossterm-foundation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-10T11:31:39+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0803",
     "AR-0804",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/tui-ratatui-crossterm-foundation",
   "observed_dirty": 0,
   "observed_head": "2754623be3503589b24cbb84341dfcf65ccb8911",
-  "owner": "replay_20260906",
+  "owner": "",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T08:33:09+00:00",
+  "updated_at": "2026-09-10T11:32:25+00:00",
   "worktree_key": "agent-systems-benchmark-tui-ratatui-crossterm-foundation"
 }
 ---
@@ -209,3 +209,8 @@ Implementation has not started. Read the linked plan before claiming.
   defaults disabled. No martin-beck forks currently exist, no upstream patch/release implements
   this, and direct Git/path/vendor consumption would violate maintained immutable-release and
   source-policy requirements. Product worktree remains byte-clean at 2754623.
+
+- 2026-09-10T11:32:25+00:00: Recovered expired claim formerly owned by replay_20260906. Coordinator
+  recovery after lease expiry blocked unrelated AR-1017 recording. Preserve clean signed product
+  head 2754623be3503589b24cbb84341dfcf65ccb8911 and the recorded upstream immutable-release blocker;
+  reopen without changing product or weakening dependency policy.
