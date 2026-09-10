@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "Implement `asb tui` lifecycle routing",
-  "updated_at": "2026-09-10T21:17:54+00:00",
+  "updated_at": "2026-09-10T21:18:35+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-lifecycle-router"
 }
 ---
@@ -280,3 +280,6 @@ complete gates, exact-head CI and post-merge verification.
   Classified exits: compile/test fixture errors were source-test issues fixed; one filtered
   zero-test invocation was invocation-only and was rerun correctly; one wrapper exit was
   post-command coordinator AR-1036 dependency failure, repaired by root and doctor now passes.
+
+- 2026-09-10T21:18:35+00:00: Recorded command exit 0; command argv SHA-256
+  f7fa5ab86fbb46dde0f154965af10a8ff4dd2888e29c36def1e93a46dce7eac2.
