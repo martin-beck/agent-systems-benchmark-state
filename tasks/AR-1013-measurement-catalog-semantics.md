@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define selectable ASB measurements grouped by stable semantic meaning.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Version the measurement catalog and semantic groups",
-  "updated_at": "2026-09-10T21:44:21+00:00",
+  "updated_at": "2026-09-10T21:44:38+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-semantics"
 }
 ---
@@ -43,3 +43,6 @@ duplicate, unit-mismatch, unavailable, and privacy-sensitive metrics.
   optional AR-0602 qualification and all UI ownership
 
 - 2026-09-10T21:44:21+00:00: Claimed by codex-ar1013-measurement-catalog-20260910.
+
+- 2026-09-10T21:44:38+00:00: Recorded command exit 0; command argv SHA-256
+  321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
