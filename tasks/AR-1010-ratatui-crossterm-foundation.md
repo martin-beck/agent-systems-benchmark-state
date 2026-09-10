@@ -2,7 +2,7 @@
 {
   "branch": "feature/ratatui-crossterm-foundation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-10T23:24:05+00:00",
   "depends_on": [
     "AR-0803",
     "AR-0804",
@@ -12,15 +12,15 @@
   ],
   "id": "AR-1010",
   "next_action": "Review draft PR 9 and choose an explicit Zlib/duplicate-policy decision or a dedicated upstream dependency AR before adding the real Ratatui renderer.",
-  "owner": "",
+  "owner": "codex-ar1010-asb-tui-renderer-20260910",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 97,
+  "task_revision": 98,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T20:23:48+00:00",
+  "updated_at": "2026-09-10T20:24:05+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -349,3 +349,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-10T20:23:48+00:00: AR-1030 is durably done at verified asb-tui main with the exact Ratatui
   closure; resume standalone renderer work only in asb-tui.
+
+- 2026-09-10T20:24:05+00:00: Claimed by codex-ar1010-asb-tui-renderer-20260910.
