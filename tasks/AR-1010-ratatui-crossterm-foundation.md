@@ -11,16 +11,16 @@
     "AR-1030"
   ],
   "id": "AR-1010",
-  "next_action": "Fresh immutable review of standalone asb-tui draft PR #9 exact head 1bab7ad34cdbf1647c7eea4953c3e60875c19ddc tree 5876314e4c6a9e54dccb3bcc027c6596f3a03912; require exact-head hosted CI green and do not merge without approval.",
+  "next_action": "Fresh immutable review of standalone asb-tui draft PR #9 exact head 1bab7ad34cdbf1647c7eea4953c3e60875c19ddc tree 5876314e4c6a9e54dccb3bcc027c6596f3a03912; exact-head hosted CI is green; do not merge without approval.",
   "owner": "codex-ar1010-asb-tui-renderer-20260910",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 334,
+  "task_revision": 335,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T23:22:58+00:00",
+  "updated_at": "2026-09-10T23:23:24+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -1154,3 +1154,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-10T23:22:58+00:00: Recorded command exit 0; command argv SHA-256
   7076739b9f3b972e8688df94c51f560a98ba12e9ed53da238b6771a006fdff4d.
+
+- 2026-09-10T23:23:24+00:00: Verified GitHub PR #9 still draft at exact head
+  1bab7ad34cdbf1647c7eea4953c3e60875c19ddc. Repository quality run 34541773153 job 103085791745
+  completed SUCCESS at that exact head. Independent immutable review remains required; no merge
+  performed.
