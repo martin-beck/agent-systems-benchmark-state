@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend.",
-  "task_revision": 193,
+  "task_revision": 194,
   "title": "Implement `asb tui` lifecycle routing",
-  "updated_at": "2026-09-10T22:13:18+00:00",
+  "updated_at": "2026-09-10T22:13:57+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-lifecycle-router"
 }
 ---
@@ -571,3 +571,6 @@ complete gates, exact-head CI and post-merge verification.
 
 - 2026-09-10T22:13:18+00:00: Recorded command exit 0; command argv SHA-256
   2431e2495209eb1c9b00458e3bec07b04bb1d45c30edb5a2bfdeddf6437fa880.
+
+- 2026-09-10T22:13:57+00:00: Recorded command exit 101; command argv SHA-256
+  26b8b2f380c1e158a0b9204f384b0bc71114d19bf153e1e3beef86512cf18dd5.
