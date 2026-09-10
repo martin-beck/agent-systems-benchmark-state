@@ -9,17 +9,17 @@
   "id": "AR-1038",
   "next_action": "Finish remaining docs/release/security gates, sign+DCO successor over b65cb4b, push PR #132 exact head, require terminal CI and a new immutable independent review; do not merge.",
   "observed_branch": "test/capability-coverage-sink",
-  "observed_dirty": 1,
-  "observed_head": "227be00d0c32ed438087ced2b04d3257537fb068",
+  "observed_dirty": 0,
+  "observed_head": "69888a33cdf8383f4155d3dca1e9180104770b33",
   "owner": "codex-ar1038-coverage-20260911",
   "plan": "../plans/AR-1038.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent sanitized capability child tests from writing default profraw files into the source checkout.",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "Preserve coverage sinks in sanitized CLI child tests",
-  "updated_at": "2026-09-10T23:54:29+00:00",
+  "updated_at": "2026-09-10T23:54:35+00:00",
   "worktree_key": "agent-systems-benchmark-capability-coverage-sink"
 }
 ---
