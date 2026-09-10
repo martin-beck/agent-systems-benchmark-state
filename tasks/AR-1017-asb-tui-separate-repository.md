@@ -11,7 +11,7 @@
     "AR-0851"
   ],
   "id": "AR-1017",
-  "next_action": "Create the standalone asb-tui repository boundary and stable CLI/JSON protocol contract.",
+  "next_action": "Create isolated local asb-tui repository from exact signed release locks; keep extension unverified and ASB independent until protocol and absence tests pass.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Build asb-tui as an isolated optional repository and extension.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Create the standalone asb-tui extension repository",
-  "updated_at": "2026-09-10T09:04:54+00:00",
+  "updated_at": "2026-09-10T09:05:32+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-separate-repository"
 }
 ---
@@ -100,3 +100,18 @@ metadata, and tests proving the main benchmark runs independently when the TUI i
 
 - 2026-09-10T09:04:54+00:00: Recorded command exit 0; command argv SHA-256
   724a3a45f1b13e5fc518f8f430c9c32aeb167e469bb0f970bf5d88aa205d66a8.
+
+- 2026-09-10T09:05:32+00:00: Immutable dependency discovery passed without mutable/vendor
+  substitution. Latest coordinator release is v0.3.5 (published 2026-09-08), annotated tag object
+  9e862e9e7af328e489b6e2fe958e5df1ddd702c1 -> commit 510817b93feb80dde13e5a6c61d657954fae2346/tree
+  41d08ed42333cb47b07c2c401a9167b56c7cfb81; tag verifies with independently pinned ASB ED25519 key,
+  source is dependency-free Python >=3.12 under MIT, LICENSE sha256 91863eae..., and fetched GitHub
+  archive sha256 a51e58ed... is byte-tree-equal to the exact tag checkout. Coordinator publishes no
+  separate assets/SBOM, so the lock must state source-archive-only provenance and may not imply
+  binary/SBOM attestation. Latest AWQ release is v0.23.0 (published 2026-09-10), annotated tag
+  object 79c699258111cc3ae4585d46c6ce4999784001b3 -> commit
+  8a9f056b7fc7926b9465a0f7a09225d4da1c572a/tree ca77db478f0737142690d37683d826710cd953b0; tag and
+  detached awq-release manifest signature verify with the same independent key. Manifest 05bbb0d4
+  binds wheel 9d480cab, provenance a2ba5f30, SBOM 840e85a1, sdist 69b1c9c4; structural/source
+  verification passes. AWQ is dependency-free Python >=3.12 MIT, LICENSE sha256 20647d25.... Both
+  releases are acceptable with the explicit coordinator provenance limitation.
