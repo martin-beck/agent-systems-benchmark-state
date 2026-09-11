@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-11T05:51:44+00:00",
   "depends_on": [],
   "id": "AR-1052",
-  "next_action": "Immutable review diagnostic-only PR #18 exact 9c4cb4c42b9398c610e291759fffff420cc0af86; if approved, obtain explicit merge authorization so main-bound trusted run can reveal the closed failure stage.",
+  "next_action": "Replace the proven unavailable tmux display-message server-PID query with kernel SO_PEERCRED binding on the exact stable Unix socket, retain process start-time and socket generation revalidation, test substitutions, then freeze a separate repair candidate for fresh review.",
   "owner": "codex-ar1052-tmux-authority-portability-20260911",
   "plan": "../plans/AR-1052.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Diagnose and repair the trusted-runner tmux server-authority portability gap without weakening cleanup authentication.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Diagnose trusted tmux server authority",
-  "updated_at": "2026-09-11T04:03:41+00:00",
+  "updated_at": "2026-09-11T04:05:02+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-server-authority-portability"
 }
 ---
@@ -101,3 +101,10 @@ authenticated cleanup and zero-widening invariant. Change no product UI, rendere
 
 - 2026-09-11T04:03:41+00:00: Recorded command exit 1; command argv SHA-256
   8240a6e1619f63eac491f2021653d73fbf7491e587cfd29e7942567250668068.
+
+- 2026-09-11T04:05:02+00:00: Approved diagnostic checkpoint merged GitHub-verified as
+  de5c6c6289f306361e02cb97325db072775f2a29, parent cb28f246, exact reviewed tree
+  2c2a5edd20b877c9f28886fb400cfc3c1e430d6b and valid raw lowercase-login DCO. Postmerge Repository
+  quality 34560721721 passed. Trusted-main 34560721718 failed 22/27 and conclusively reported
+  server_observation=server_pid_command_unavailable across live paths; no authority change existed
+  in that merge.
