@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Align offline signature policy with the repository-required GitHub merge path.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Reconcile protected-merge signature verification",
-  "updated_at": "2026-09-11T00:29:21+00:00",
+  "updated_at": "2026-09-11T00:31:32+00:00",
   "worktree_key": "agent-systems-benchmark-protected-merge-signature-policy"
 }
 ---
@@ -119,3 +119,6 @@ without allowing Web Flow signatures on ordinary commits or PR heads. This AR ow
   PR #135: https://github.com/martin-beck/agent-systems-benchmark/pull/135. Live base/head are exact
   cad9fa97/d6fa883. CI started with 12 checks; 2 complete SUCCESS and 10 in progress at first
   observation. Local full gates and clean tree passed.
+
+- 2026-09-11T00:31:32+00:00: Recorded command exit 0; command argv SHA-256
+  6cfca7242bab3222fc03b5cad513807452d1d2860389e0c46cd9f5cad428055e.
