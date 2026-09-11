@@ -25,7 +25,7 @@ Generated from local Git and GitHub. Do not edit.
 | 34555432268 | `23530dfc8086` | push | Hosted portability and native qualification | completed:success |
 | 34555432254 | `23530dfc8086` | push | Rust verification | in_progress:- |
 | 34555432248 | `23530dfc8086` | push | Huawei MIT source headers | completed:success |
-| 34555432242 | `23530dfc8086` | push | Fault assurance | in_progress:- |
+| 34555432242 | `23530dfc8086` | push | Fault assurance | completed:success |
 | 34555432232 | `23530dfc8086` | push | Repository quality | in_progress:- |
 | 34554979073 | `40a84dda234f` | pull_request | Formal assurance | completed:success |
 | 34554979051 | `40a84dda234f` | pull_request | Huawei MIT source headers | completed:success |
