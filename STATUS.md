@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**224 ARs tracked** across 6 active status categories.
+**225 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 19 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
-| **Planned** | Defined work awaiting promotion or dependencies | 54 |
+| **Planned** | Defined work awaiting promotion or dependencies | 55 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 143 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -282,6 +282,7 @@ flowchart LR
         AR_1058["AR-1058 - In progress"]:::status_in_progress
         AR_1059["AR-1059 - Done"]:::status_done
         AR_1060["AR-1060 - In progress"]:::status_in_progress
+        AR_1061["AR-1061 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -954,6 +955,7 @@ flowchart LR
     AR_1058 --> AR_1010
     AR_1060 --> AR_1024
     AR_1060 --> AR_1025
+    AR_1061 --> AR_1010
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1141,7 +1143,7 @@ flowchart LR
 | [AR-1006](tasks/AR-1006-distributed-workers.md) | [AR-0204](tasks/AR-0204-capacity-sweeps.md), [AR-0702](tasks/AR-0702-native-platforms.md), [AR-1001](tasks/AR-1001-experiment-comparability.md) | None |
 | [AR-1007](tasks/AR-1007-benchmark-validity.md) | [AR-0401](tasks/AR-0401-engineering-workloads.md), [AR-0701](tasks/AR-0701-platform-manifests.md), [AR-1001](tasks/AR-1001-experiment-comparability.md) | [AR-0405](tasks/AR-0405-performance-workloads.md), [AR-0406](tasks/AR-0406-evolving-workloads.md), [AR-1016](tasks/AR-1016-measurement-integration-audit.md) |
 | [AR-1008](tasks/AR-1008.md) | None | [AR-0898](tasks/AR-0898-shellcheck-fail-closed.md) |
-| [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md) | [AR-0803](tasks/AR-0803-frontend-control-api.md), [AR-0804](tasks/AR-0804-tui-settings-wizard.md), [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-0806](tasks/AR-0806-tui-history-analysis.md), [AR-1030](tasks/AR-1030-ratatui-dependency-closure.md), [AR-1052](tasks/AR-1052-tmux-server-authority-portability.md), [AR-1054](tasks/AR-1054-tmux-socket-connect-completion.md), [AR-1056](tasks/AR-1056-tmux-socket-connect-diagnostics.md), [AR-1058](tasks/AR-1058-tmux-startup-observation-diagnostics.md) | [AR-1011](tasks/AR-1011-tui-ux-quality.md), [AR-1012](tasks/AR-1012-tui-quality-assurance.md), [AR-1024](tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](tasks/AR-1025-standalone-asb-tui-application.md), [AR-1033](tasks/AR-1033-asb-tui-visual-system.md) |
+| [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md) | [AR-0803](tasks/AR-0803-frontend-control-api.md), [AR-0804](tasks/AR-0804-tui-settings-wizard.md), [AR-0805](tasks/AR-0805-tui-run-control.md), [AR-0806](tasks/AR-0806-tui-history-analysis.md), [AR-1030](tasks/AR-1030-ratatui-dependency-closure.md), [AR-1052](tasks/AR-1052-tmux-server-authority-portability.md), [AR-1054](tasks/AR-1054-tmux-socket-connect-completion.md), [AR-1056](tasks/AR-1056-tmux-socket-connect-diagnostics.md), [AR-1058](tasks/AR-1058-tmux-startup-observation-diagnostics.md), [AR-1061](tasks/AR-1061-isolate-concurrent-tmux-fixtures.md) | [AR-1011](tasks/AR-1011-tui-ux-quality.md), [AR-1012](tasks/AR-1012-tui-quality-assurance.md), [AR-1024](tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](tasks/AR-1025-standalone-asb-tui-application.md), [AR-1033](tasks/AR-1033-asb-tui-visual-system.md) |
 | [AR-1011](tasks/AR-1011-tui-ux-quality.md) | [AR-0870](tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0871](tasks/AR-0871-record-replay-user-workflows.md), [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1014](tasks/AR-1014-tui-measurement-selection.md), [AR-1031](tasks/AR-1031-asb-tui-landing-screen.md), [AR-1032](tasks/AR-1032-asb-tui-contextual-help.md), [AR-1033](tasks/AR-1033-asb-tui-visual-system.md), [AR-1034](tasks/AR-1034-asb-tui-configuration-center.md), [AR-1035](tasks/AR-1035-asb-tui-reports-compare.md) | [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-1012](tasks/AR-1012-tui-quality-assurance.md), [AR-1026](tasks/AR-1026-asb-tui-cross-repository-integration.md) |
 | [AR-1012](tasks/AR-1012-tui-quality-assurance.md) | [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0873](tasks/AR-0873-ci-workflow-captures.md), [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1011](tasks/AR-1011-tui-ux-quality.md) | [AR-0823](tasks/AR-0823-installation-qualification.md), [AR-0903](tasks/AR-0903-release-qualification.md), [AR-1027](tasks/AR-1027-asb-tui-verified-release.md) |
 | [AR-1013](tasks/AR-1013-measurement-catalog-semantics.md) | [AR-0101](tasks/AR-0101-extension-contracts.md), [AR-1001](tasks/AR-1001-experiment-comparability.md) | [AR-1014](tasks/AR-1014-tui-measurement-selection.md), [AR-1015](tasks/AR-1015-csb-measurement-adapter.md), [AR-1036](tasks/AR-1036-measurement-catalog-control.md) |
@@ -1192,6 +1194,7 @@ flowchart LR
 | [AR-1058](tasks/AR-1058-tmux-startup-observation-diagnostics.md) | None | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md) |
 | [AR-1059](tasks/AR-1059-asb-tui-lifecycle-router-publication-readiness.md) | None | None |
 | [AR-1060](tasks/AR-1060-authenticated-control-endpoint-handoff.md) | [AR-1022](tasks/AR-1022-asb-tui-release-contract-hardening.md), [AR-1023](tasks/AR-1023-asb-tui-capabilities-command.md) | [AR-1024](tasks/AR-1024-asb-tui-lifecycle-router.md), [AR-1025](tasks/AR-1025-standalone-asb-tui-application.md) |
+| [AR-1061](tasks/AR-1061-isolate-concurrent-tmux-fixtures.md) | None | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md) |
 
 ## Complete AR inventory
 
@@ -1207,7 +1210,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0897](tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | Unclaimed | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Hold PR 126 at bd6f450; after AR-0877 and AR-0909 integrate, rebase once and require fresh all-green exact-head CI before merge. |
-| P0 | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md): Adopt Ratatui/Crossterm TUI foundation | Unclaimed | Adopt Ratatui and Crossterm as the supported professional TUI foundation. | Wait for AR-1058 to diagnose and repair the remaining trusted stable-startup/pane observation failure, then require green exact-main Repository quality and Trusted main verification before closing the AR-1010 recovery chain. |
+| P0 | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md): Adopt Ratatui/Crossterm TUI foundation | Unclaimed | Adopt Ratatui and Crossterm as the supported professional TUI foundation. | Wait for AR-1061 to isolate the remaining default-parallel trusted tmux fixture failures, then require green exact-main Repository quality and Trusted main verification before closing the AR-1010 recovery chain. |
 | P0 | [AR-1024](tasks/AR-1024-asb-tui-lifecycle-router.md): Implement &#96;asb tui&#96; lifecycle routing | Unclaimed | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. |
 | P0 | [AR-1038](tasks/AR-1038-capability-coverage-sink.md): Preserve coverage sinks in sanitized CLI child tests | Unclaimed | Prevent sanitized capability child tests from writing default profraw files into the source checkout. | Keep AR-1038 in progress while a separately reviewed forward-only policy correction permits one strictly bounded current-main synchronization merge at the topic tip; then require exact-main green postmerge evidence before completion. |
 | P0 | [AR-1039](tasks/AR-1039-measurement-catalog-merge-attestation.md): Attest the measurement catalog merge boundary | Unclaimed | Recover the measurement catalog publication boundary without rewriting protected main. | Independently review draft PR #134 exact head 4a7eb724c601ab8fb2a6dd4552f54726ad3a0dd9 and tree 141362f96bd29c2694c5049d9d2010211fbaac99; do not merge before approval and use the exact lowercase GitHub-author DCO trailer. |
@@ -1236,7 +1239,7 @@ flowchart LR
 | P1 | [AR-0890](tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Unclaimed | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. |
 | P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Unclaimed | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun failed Repository quality workflow 34339927858 on unchanged main; if failure repeats, isolate and repair test-state ownership before any feature work. |
 
-### Planned (54)
+### Planned (55)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1256,6 +1259,7 @@ flowchart LR
 | P0 | [AR-1033](tasks/AR-1033-asb-tui-visual-system.md): Establish the professional TUI visual system | Unclaimed | Create a responsive, accessible and professional visual system for every TUI screen. | Create the standalone Ratatui visual system after the application shell is integrated. |
 | P0 | [AR-1034](tasks/AR-1034-asb-tui-configuration-center.md): Add the standalone TUI configuration center | Unclaimed | Add a searchable configuration menu for frontend preferences and benchmark defaults. | Implement the standalone configuration menu and versioned non-secret preference store after the visual system exists. |
 | P0 | [AR-1035](tasks/AR-1035-asb-tui-reports-compare.md): Build recent-runs, report and comparison workspaces | Unclaimed | Add searchable recent runs, report inspection and evidence-qualified comparison workspaces. | Implement recent-runs, report and comparison screens from the published ASB history/analysis contract. |
+| P0 | [AR-1061](tasks/AR-1061-isolate-concurrent-tmux-fixtures.md): Isolate concurrent trusted tmux fixtures | Unclaimed | Diagnose and isolate concurrent trusted tmux fixture contention. | Create the isolated asb-tui worktree at exact main 69fecc01 and serialize only the five live tmux fixtures without changing authentication or product behavior. |
 | P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Build the CSB-to-ASB signal inventory and native x86_64 causal A/B matrix; run applicable pinned QEMU AArch64 portability checks and document native ARM64 as optional future evidence. |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Write and execute end-to-end workflows for the core CLI and automation interfaces. |
 | P1 | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Write and validate task-oriented workflows for the standalone terminal frontend. |
