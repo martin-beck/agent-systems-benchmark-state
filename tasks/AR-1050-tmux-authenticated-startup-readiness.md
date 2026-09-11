@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wait for bounded stable authenticated tmux server, session and window readiness after detached creation.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Acquire authenticated tmux startup readiness",
-  "updated_at": "2026-09-11T03:25:14+00:00",
+  "updated_at": "2026-09-11T03:26:04+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-authenticated-startup-readiness"
 }
 ---
@@ -159,3 +159,6 @@ server/session/window identity and retained pane authority. Change no renderer o
   exit 1 ended at cargo audit with no diagnostic; immediate identical standalone audit passed, so
   classified transient tool/index execution. Earlier coverage exit 1 was its documented clean-tree
   precondition on the precommit dirty diff; exact clean commit rerun passed.
+
+- 2026-09-11T03:26:04+00:00: Recorded command exit 0; command argv SHA-256
+  0c15c887bbb76da525105eadf3fbf7d146b2ac8f9afbfd8837b1707682057c6f.
