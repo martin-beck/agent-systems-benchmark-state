@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1050.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Wait for bounded stable authenticated tmux server, session and window readiness after detached creation.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Acquire authenticated tmux startup readiness",
-  "updated_at": "2026-09-11T03:06:00+00:00",
+  "updated_at": "2026-09-11T03:03:07+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-authenticated-startup-readiness"
 }
 ---
@@ -23,3 +23,6 @@ Trusted-main run 34556679585 at exact merge aacf672c018706ef8a361e1a2dd6c19d890f
 passed 19 of 24 terminal tests, while all five live tmux fixtures completed new-session and then
 failed the immediate server observation. Add bounded evidence-based startup acquisition with stable
 server/session/window identity and retained pane authority. Change no renderer or application code.
+
+- 2026-09-11T03:03:07+00:00: Pre-approved P0 recovery is ready after trusted-main run 34556679585
+  exposed asynchronous tmux startup observability.
