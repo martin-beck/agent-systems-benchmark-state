@@ -2,7 +2,7 @@
 {
   "branch": "docs/measurement-catalog-merge-attestation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-11T06:31:24+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1045"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "docs/measurement-catalog-merge-attestation",
   "observed_dirty": 0,
   "observed_head": "7b3ef113d2b77c3982748f16c540d0e556252464",
-  "owner": "codex-ar1051-measurement-catalog-attestation-20260911",
+  "owner": "",
   "plan": "../plans/AR-1051.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Record the exact reviewed measurement-catalog merge and its non-compliant GitHub-authored DCO identity without rewriting history.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Attest the measurement catalog merge boundary",
-  "updated_at": "2026-09-11T04:11:27+00:00",
+  "updated_at": "2026-09-11T04:11:44+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-merge-attestation"
 }
 ---
@@ -218,3 +218,14 @@ attestation evidence and a corrective future merge recipe using the exact GitHub
 
 - 2026-09-11T04:11:27+00:00: Recorded command exit 0; command argv SHA-256
   ab3ab29ccde41194074a4d9ef5545a4dac77b4fdbf19ba7de501ebf7025b5077.
+
+- 2026-09-11T04:11:44+00:00: AR-1051 accepted and published through PR #142. Independently approved
+  source 7b3ef113d2b77c3982748f16c540d0e556252464, tree 2430f369bd110e4560b38ea1ca3ad8e7b003c348,
+  passed all 12 exact-head checks. Protected merge 229f5ae6e2991cf2bbcf4bfe6a715ca44645af7e has
+  exact parents 1a19b692d724fd5ba1996470daccbfed06171a0a and
+  7b3ef113d2b77c3982748f16c540d0e556252464, exact reviewed tree, valid GitHub signature, author
+  martin-beck <martin.beck2@gmx.de>, and exact matching raw Signed-off-by trailer; offline DCO and
+  protected-main policy passed. All seven postmerge workflows succeeded: headers 34560819549,
+  quality 34560819501, Rust 34560819493, AArch64 34560819507, fault 34560819484, formal 34560819463,
+  platform 34560819476. The historical PR140 DCO defect remains explicitly attested, not repaired
+  retroactively.
