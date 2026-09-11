@@ -2,7 +2,7 @@
 {
   "branch": "feature/ratatui-crossterm-foundation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-11T02:11:17+00:00",
   "depends_on": [
     "AR-0803",
     "AR-0804",
@@ -12,15 +12,15 @@
   ],
   "id": "AR-1010",
   "next_action": "Fresh independent immutable review of PR #9 exact base d58eda9, head 0301179, tree 15d4619; exact-head CI green; do not merge without approval.",
-  "owner": "",
+  "owner": "codex-ar1010-dependency-doc-repair-20260911",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 366,
+  "task_revision": 367,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-10T23:57:00+00:00",
+  "updated_at": "2026-09-11T00:11:17+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -1277,3 +1277,5 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-10T23:57:00+00:00: Trust-boundary repair complete and published at draft PR #9 exact
   signed+DCO head 0301179/tree 15d4619. Exact-head hosted CI is green. Released OPEN for a fresh
   different immutable reviewer; no merge performed.
+
+- 2026-09-11T00:11:17+00:00: Claimed by codex-ar1010-dependency-doc-repair-20260911.
