@@ -2,19 +2,19 @@
 {
   "branch": "test/serialize-emulated-aarch64-agents",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-11T03:35:27+00:00",
   "depends_on": [],
   "id": "AR-1046",
   "next_action": "Obtain approval for the narrow two-file test/CI plan, then promote and claim before any product edit.",
-  "owner": "",
+  "owner": "codex-ar1046-aarch64-serialization-20260911",
   "plan": "../plans/AR-1046.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make the emulated AArch64 asb-agents fake-node readiness fixtures deterministic without changing production semantics.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Serialize emulated AArch64 agent tests",
-  "updated_at": "2026-09-11T01:35:25+00:00",
+  "updated_at": "2026-09-11T01:35:27+00:00",
   "worktree_key": "agent-systems-benchmark-emulated-aarch64-agent-serialization"
 }
 ---
@@ -28,3 +28,5 @@ existing skip and all budgets; do not change Rust production code or any UI/TUI 
 
 - 2026-09-11T01:35:25+00:00: Root independently approved the narrow two-file AArch64 serialization
   plan after two distinct HookUnavailable failures.
+
+- 2026-09-11T01:35:27+00:00: Claimed by codex-ar1046-aarch64-serialization-20260911.
