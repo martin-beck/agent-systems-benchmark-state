@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-server-authority-portability",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-11T05:51:44+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1052",
   "next_action": "Publish approved exact head 5b55f6aa4d8883bc13a79b64193da246788831b9, open draft PR, require exact-head checks, then merge and verify postmerge/trusted-main.",
-  "owner": "codex-ar1052-tmux-authority-portability-20260911",
+  "owner": "",
   "plan": "../plans/AR-1052.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Diagnose and repair the trusted-runner tmux server-authority portability gap without weakening cleanup authentication.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Diagnose trusted tmux server authority",
-  "updated_at": "2026-09-11T04:28:56+00:00",
+  "updated_at": "2026-09-11T04:29:18+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-server-authority-portability"
 }
 ---
@@ -221,3 +221,8 @@ authenticated cleanup and zero-widening invariant. Change no product UI, rendere
 
 - 2026-09-11T04:28:56+00:00: Recorded command exit 0; command argv SHA-256
   296fc418af6169fb846e45e9089e0990bda9d7edbd9a2c27d5d1187bbaf436fa.
+
+- 2026-09-11T04:29:18+00:00: PR #19 merged as exact provenance-clean 7a398032, but trusted-main run
+  34562090773 failed five live tmux fixtures at socket_connection_unavailable. AR-1054 owns the
+  narrow AF_UNIX EAGAIN/completion recovery; AR-1052 remains open pending its green exact-main
+  qualification.
