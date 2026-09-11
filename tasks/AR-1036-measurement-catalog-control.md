@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose the versioned ASB measurement catalog to standalone frontends without UI code.",
-  "task_revision": 110,
+  "task_revision": 111,
   "title": "Publish the measurement catalog control contract",
-  "updated_at": "2026-09-11T02:39:32+00:00",
+  "updated_at": "2026-09-11T02:39:51+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-control"
 }
 ---
@@ -249,3 +249,6 @@ rendering and help behavior remains exclusively in `martin-beck/asb-tui` under A
 
 - 2026-09-11T02:39:32+00:00: Recorded command exit 0; command argv SHA-256
   9d9af5518562cdc4b455aa65a94878df909477c00ebdef5272804709bd5e7384.
+
+- 2026-09-11T02:39:51+00:00: Recorded command exit 0; command argv SHA-256
+  4a0ea3e9a9c7b9f8a0ac58101d85474187c9976d78f57671b0a50460b61c4caf.
