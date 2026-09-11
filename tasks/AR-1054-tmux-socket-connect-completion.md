@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair trusted tmux socket connection completion without weakening authenticated cleanup authority.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Repair tmux socket connection completion",
-  "updated_at": "2026-09-11T04:42:30+00:00",
+  "updated_at": "2026-09-11T04:44:16+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-socket-connect-completion"
 }
 ---
@@ -137,3 +137,6 @@ lifecycle protocol, dependency, workflow or ASB source change is in scope.
   shell/workflow, privacy, one-commit Gitleaks, scoped exact-binary no-process and clean-tree gates
   pass. Postmerge Repository quality for AR-1052 also passed run 34562090778; Trusted main failure
   34562090773 is the reproduced recovery trigger. Await immutable review; no push.
+
+- 2026-09-11T04:44:16+00:00: Recorded command exit 0; command argv SHA-256
+  dc9e7d0431736181efc478fb3d4a72b921e8db63581dd916a088c1fe0dc71169.
