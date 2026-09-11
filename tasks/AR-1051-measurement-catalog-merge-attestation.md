@@ -7,7 +7,7 @@
     "AR-1045"
   ],
   "id": "AR-1051",
-  "next_action": "After AR-1045 restores a green protected-main descendant, publish a bounded immutable attestation for PR #140 and its missing-DCO merge boundary.",
+  "next_action": "Run fully qualified focused and full gates, freeze a signed DCO four-file attestation commit, and obtain immutable review before push.",
   "observed_branch": "docs/measurement-catalog-merge-attestation",
   "observed_dirty": 4,
   "observed_head": "1a19b692d724fd5ba1996470daccbfed06171a0a",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Record the exact reviewed measurement-catalog merge and its non-compliant GitHub-authored DCO identity without rewriting history.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Attest the measurement catalog merge boundary",
-  "updated_at": "2026-09-11T03:38:28+00:00",
+  "updated_at": "2026-09-11T03:39:05+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-merge-attestation"
 }
 ---
@@ -74,3 +74,7 @@ attestation evidence and a corrective future merge recipe using the exact GitHub
 
 - 2026-09-11T03:38:28+00:00: Recorded command exit 127; command argv SHA-256
   0177c7f298b9557d14d47a62050dcb3281c530d0065de703b3d407ece7b3773e.
+
+- 2026-09-11T03:39:05+00:00: Classified focused gate exit 127: governed shell PATH did not contain
+  cargo, so no Rust test executed. Rerun uses the fully qualified Rust tool; four-file
+  attestation/docs/test-only scope remains intact.

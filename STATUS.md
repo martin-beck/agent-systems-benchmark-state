@@ -1171,7 +1171,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1037](tasks/AR-1037-measurement-selection-plan.md): Add measurement selection to validated run plans | codex-root-ar1037-selection-20260911 | Carry catalog-backed measurement choices through ASB plan validation, collection and evidence. | After AR-1036, add canonical measurement IDs to validated ASB plans and make collection honor them without any UI code. |
 | P0 | [AR-1050](tasks/AR-1050-tmux-authenticated-startup-readiness.md): Acquire authenticated tmux startup readiness | codex-ar1050-tmux-startup-readiness-20260911 | Wait for bounded stable authenticated tmux server, session and window readiness after detached creation. | Freeze exact 46145ad63af61d0b6f4549f06c001f33d60f02c1/tree b64bd9d15a985deb43373ebff8140a3bfa2a8cef for fresh immutable review; do not push. |
-| P0 | [AR-1051](tasks/AR-1051-measurement-catalog-merge-attestation.md): Attest the measurement catalog merge boundary | codex-ar1051-measurement-catalog-attestation-20260911 | Record the exact reviewed measurement-catalog merge and its non-compliant GitHub-authored DCO identity without rewriting history. | After AR-1045 restores a green protected-main descendant, publish a bounded immutable attestation for PR #140 and its missing-DCO merge boundary. |
+| P0 | [AR-1051](tasks/AR-1051-measurement-catalog-merge-attestation.md): Attest the measurement catalog merge boundary | codex-ar1051-measurement-catalog-attestation-20260911 | Record the exact reviewed measurement-catalog merge and its non-compliant GitHub-authored DCO identity without rewriting history. | Run fully qualified focused and full gates, freeze a signed DCO four-file attestation commit, and obtain immutable review before push. |
 
 ### Open (15)
 
