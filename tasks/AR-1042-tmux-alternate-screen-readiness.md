@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-11T02:43:01+00:00",
   "depends_on": [],
   "id": "AR-1042",
-  "next_action": "Reap the exact owned tmux pane process group on every guard cleanup path, prove no process/socket leaks, then amend and rerun all gates.",
+  "next_action": "Push exact signed head 312b511, open draft PR, and require exact-head CI plus independent review before merge.",
   "owner": "codex-ar1042-tmux-readiness-20260911",
   "plan": "../plans/AR-1042.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make tmux TUI readiness validate the displayed alternate screen deterministically.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Capture alternate-screen TUI readiness deterministically",
-  "updated_at": "2026-09-11T01:10:57+00:00",
+  "updated_at": "2026-09-11T01:11:18+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-alternate-screen-readiness"
 }
 ---
@@ -175,3 +175,9 @@ emit bounded diagnostics; do not change renderer or application semantics.
 
 - 2026-09-11T01:10:57+00:00: Recorded command exit 0; command argv SHA-256
   0490a8d49a36c6847a8328e1fc2f1d1a39b7b84eb7da4bb0d8a8df875e787032.
+
+- 2026-09-11T01:11:18+00:00: Exact signed+DCO head 312b51125180310b6a9454270973b6668ea673ab tree
+  8aea9909974fe1e4e592fe9b4aa406d44c27032a passes all local gates. Repeated evidence: 5 focused and
+  10 full parallel terminal passes before leak repair; 5 repaired full terminal passes with per-pass
+  exact cleanup; final exact-head full test, docs, release, deny, audit, coverage 91.44% lines,
+  schema, shell, workflow, gitleaks and clean-tree gates pass.
