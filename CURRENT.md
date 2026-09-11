@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1037](tasks/AR-1037-measurement-selection-plan.md): Add measurement selection to validated run plans | Carry catalog-backed measurement choices through ASB plan validation, collection and evidence. | After AR-1036, add canonical measurement IDs to validated ASB plans and make collection honor them without any UI code. | codex-root-ar1037-selection-20260911 |
-| P0 | [AR-1056](tasks/AR-1056-tmux-socket-connect-diagnostics.md): Diagnose tmux socket connection stage | Diagnose and repair the remaining trusted tmux socket connection-stage failure. | Fresh immutable review of exact unpushed diagnostic head dd0555208a1631018e91149a9f94f3bdc65b7da5, tree dfb41570127d45f59ecd0767af3487169e9d5ae8; do not publish until approved. | codex-ar1056-tmux-connect-diagnostics-20260911 |
+| P0 | [AR-1056](tasks/AR-1056-tmux-socket-connect-diagnostics.md): Diagnose tmux socket connection stage | Diagnose and repair the remaining trusted tmux socket connection-stage failure. | Publish approved exact diagnostic head dd0555208a1631018e91149a9f94f3bdc65b7da5, require exact-head CI, merge exact tree, then use trusted-main closed stage only to select repair. | codex-ar1056-tmux-connect-diagnostics-20260911 |
 
 ## Open
 

@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-11T06:52:56+00:00",
   "depends_on": [],
   "id": "AR-1056",
-  "next_action": "Fresh immutable review of exact unpushed diagnostic head dd0555208a1631018e91149a9f94f3bdc65b7da5, tree dfb41570127d45f59ecd0767af3487169e9d5ae8; do not publish until approved.",
+  "next_action": "Publish approved exact diagnostic head dd0555208a1631018e91149a9f94f3bdc65b7da5, require exact-head CI, merge exact tree, then use trusted-main closed stage only to select repair.",
   "owner": "codex-ar1056-tmux-connect-diagnostics-20260911",
   "plan": "../plans/AR-1056.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Diagnose and repair the remaining trusted tmux socket connection-stage failure.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Diagnose tmux socket connection stage",
-  "updated_at": "2026-09-11T04:59:25+00:00",
+  "updated_at": "2026-09-11T04:59:47+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-socket-connect-diagnostics"
 }
 ---
@@ -86,3 +86,10 @@ workflow or ASB source change is in scope.
 
 - 2026-09-11T04:59:25+00:00: Recorded command exit 0; command argv SHA-256
   9b22828d23fa8c3be6c854594f73a3c11204407a2540951f115416f783efb117.
+
+- 2026-09-11T04:59:47+00:00: Fresh immutable review approved exact diagnostic head
+  dd0555208a1631018e91149a9f94f3bdc65b7da5/tree dfb41570127d45f59ecd0767af3487169e9d5ae8/base
+  092cf20a. One test-only file, clean SSH signature+DCO, bounded unique content-free stages, no
+  authority or UI behavior change. Additional rustdoc, release, deny and audit gates pass; one
+  intermediate exit 127 was an invocation-only PATH scope error between chained cargo commands and
+  was corrected.
