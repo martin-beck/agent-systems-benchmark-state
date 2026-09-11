@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use an explicit tmux window-option command so trusted-main terminal qualification is portable.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Make tmux window-option setup portable",
-  "updated_at": "2026-09-11T02:34:18+00:00",
+  "updated_at": "2026-09-11T02:34:32+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-window-option-portability"
 }
 ---
@@ -96,4 +96,7 @@ authority, and change no renderer or application behavior.
   97caad1d8d961487e253baa60551e16319e7541b8bddc79059772d31bcfe8861.
 
 - 2026-09-11T02:34:18+00:00: Recorded command exit 0; command argv SHA-256
+  2dda1bdba839857234a8564386225a71f4e98486eb6d7129c451ba4975d8661e.
+
+- 2026-09-11T02:34:32+00:00: Recorded command exit 0; command argv SHA-256
   2dda1bdba839857234a8564386225a71f4e98486eb6d7129c451ba4975d8661e.
