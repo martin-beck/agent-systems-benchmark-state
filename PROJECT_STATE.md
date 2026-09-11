@@ -16,7 +16,7 @@ Generated from local Git and GitHub. Do not edit.
 | #126 | `fix/main-merge-integrity@bd6f450ab877` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | tools: harden signed merge publication |
 | #127 | `fix/mini-swe-cancellation-reap-test-isolation@c897313524a8` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(agents): harden mini-swe cancellation isolation |
 | #137 | `fix/protected-topic-sync-topology@c76975e8c0b9` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix: qualify bounded topic synchronization |
-| #139 | `fix/gemini-hook-marker-appearance-race@661d52c614c5` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix: retry atomically published Gemini marker |
+| #139 | `fix/gemini-hook-marker-appearance-race@661d52c614c5` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix: retry atomically published Gemini marker |
 
 ## Recent workflows
 
@@ -29,7 +29,7 @@ Generated from local Git and GitHub. Do not edit.
 | 34553546336 | `661d52c614c5` | pull_request | Formal assurance | completed:success |
 | 34553546334 | `661d52c614c5` | pull_request | Repository quality | in_progress:- |
 | 34553546332 | `661d52c614c5` | pull_request | Fault assurance | completed:success |
-| 34553546331 | `661d52c614c5` | pull_request | Rust verification | in_progress:- |
+| 34553546331 | `661d52c614c5` | pull_request | Rust verification | completed:success |
 | 34552034188 | `9d923c103d15` | pull_request | Huawei MIT source headers | completed:success |
 | 34552034169 | `9d923c103d15` | pull_request | Fault assurance | completed:success |
 | 34552034130 | `9d923c103d15` | pull_request | Repository quality | completed:success |
