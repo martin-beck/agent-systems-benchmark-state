@@ -9,19 +9,20 @@
     "AR-0805",
     "AR-0806",
     "AR-1030",
-    "AR-1052"
+    "AR-1052",
+    "AR-1054"
   ],
   "id": "AR-1010",
-  "next_action": "Wait for AR-1052 to repair the proven trusted-runner tmux server-authority portability gap, then require green exact-main Repository quality and Trusted main verification before closing the AR-1010 recovery chain.",
+  "next_action": "Wait for AR-1054 to repair the proven AF_UNIX connection-completion portability gap, then require green exact-main Repository quality and Trusted main verification before closing the AR-1010 recovery chain.",
   "owner": "",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "open",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 428,
+  "task_revision": 429,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-11T04:12:48+00:00",
+  "updated_at": "2026-09-11T04:30:00+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -29,8 +30,13 @@
 
 Adopt Ratatui with Crossterm as the supported ASB terminal UI foundation.
 
-The standalone foundation is merged. Completion remains gated by AR-1052 and a green exact-main
+The standalone foundation is merged. Completion remains gated by AR-1054 and a green exact-main
 trusted terminal qualification; do not repeat the already merged PR #9 publication.
+
+- 2026-09-11T04:30:00+00:00: Added AR-1054 as the one-way recovery dependency after exact main
+  7a398032 passed Repository quality but Trusted main 34562090773 failed before peer credentials at
+  `socket_connection_unavailable`. AR-1054 has no dependency on AR-1010, so the graph remains
+  acyclic.
 
 - 2026-09-11T04:12:48+00:00: Corrected stale PR #9 publication text and added the active AR-1052
   trusted-main recovery dependency without creating a reverse edge or dependency cycle.
