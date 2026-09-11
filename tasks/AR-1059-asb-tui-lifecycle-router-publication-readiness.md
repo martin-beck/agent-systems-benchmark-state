@@ -2,19 +2,19 @@
 {
   "branch": "docs/asb-tui-lifecycle-router-publication-readiness",
   "checkpoint_commit": "31b6efb87d017d16b25498f83c77f7d7f280d81f",
-  "claim_expires": "2026-09-11T07:17:20+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1059",
   "next_action": "Bind AR-1024 to the exact rebase, environment, process-cleanup, no-daemon and trusted-pin gates required before lifecycle-router publication.",
-  "owner": "codex-ar1059-lifecycle-router-readiness-20260911",
+  "owner": "",
   "plan": "../plans/AR-1059.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Harden the ASB lifecycle-router roadmap before rebasing and publishing it.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Harden lifecycle-router publication readiness",
-  "updated_at": "2026-09-11T05:19:12+00:00",
+  "updated_at": "2026-09-11T05:19:28+00:00",
   "worktree_key": "agent-systems-benchmark-state-asb-tui-lifecycle-router-publication-readiness"
 }
 ---
@@ -42,3 +42,9 @@ Ratatui, Crossterm, widgets, screens and interactive application behavior remain
 
 - 2026-09-11T05:19:12+00:00: Recorded command exit 0; command argv SHA-256
   0b527d241f4fd284662b5f85c523585a3aedbbef341e3d5b1667a93de6db2b62.
+
+- 2026-09-11T05:19:28+00:00: State-only publication-readiness repair complete. AR-1024 retains
+  open/unowned status and now depends on AR-1010 and AR-1037; its plan requires controlled
+  post-AR-1037 rebase, regenerated Cargo/provenance evidence, privacy-safe terminal-context
+  sentinels, immediate RAII cleanup, fail-closed foreground/no-daemon ownership and a final asb-tui
+  pin only after exact trusted-green protected main. No product or UI source changed.
