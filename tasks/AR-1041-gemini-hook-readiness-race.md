@@ -7,7 +7,7 @@
   "id": "AR-1041",
   "next_action": "Implement the closed atomic publication/observation state machine and deterministic hostile marker tests from current protected main 6155d63.",
   "observed_branch": "fix/gemini-hook-readiness-race",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "6155d63bec04a5c76c4323843c26649b0c084f6e",
   "owner": "codex-ar1041-gemini-readiness-20260911",
   "plan": "../plans/AR-1041.md",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Eliminate the load-sensitive Gemini hook readiness race without weakening validation.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Make Gemini hook readiness publication atomic",
-  "updated_at": "2026-09-11T00:46:38+00:00",
+  "updated_at": "2026-09-11T00:46:44+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-hook-readiness-race"
 }
 ---
