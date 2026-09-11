@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Diagnose and repair the trusted-runner tmux server-authority portability gap without weakening cleanup authentication.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Diagnose trusted tmux server authority",
-  "updated_at": "2026-09-11T04:05:02+00:00",
+  "updated_at": "2026-09-11T04:05:18+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-server-authority-portability"
 }
 ---
@@ -108,3 +108,6 @@ authenticated cleanup and zero-widening invariant. Change no product UI, rendere
   quality 34560721721 passed. Trusted-main 34560721718 failed 22/27 and conclusively reported
   server_observation=server_pid_command_unavailable across live paths; no authority change existed
   in that merge.
+
+- 2026-09-11T04:05:18+00:00: Recorded command exit 0; command argv SHA-256
+  89f5401ce6aa52f46fcd8ff80f71d86437dafb649ba31d094a5b30036e11a704.
