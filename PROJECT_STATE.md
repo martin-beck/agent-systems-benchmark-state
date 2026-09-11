@@ -15,7 +15,7 @@ Generated from local Git and GitHub. Do not edit.
 | #125 | `fix/control-state-lock-test-isolation@8b0f9fd07d5d` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(cli): isolate control state roots |
 | #126 | `fix/main-merge-integrity@bd6f450ab877` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | tools: harden signed merge publication |
 | #127 | `fix/mini-swe-cancellation-reap-test-isolation@c897313524a8` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(agents): harden mini-swe cancellation isolation |
-| #140 | `feature/measurement-catalog-control@95fa9dc55f2a` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:FAILURE, IN_PROGRESS: | feat(control): publish measurement catalog v1.2 |
+| #140 | `feature/measurement-catalog-control@95fa9dc55f2a` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:FAILURE, IN_PROGRESS: | feat(control): publish measurement catalog v1.2 |
 
 ## Recent workflows
 
@@ -28,7 +28,7 @@ Generated from local Git and GitHub. Do not edit.
 | 34556491834 | `95fa9dc55f2a` | pull_request | Repository quality | in_progress:- |
 | 34556491825 | `95fa9dc55f2a` | pull_request | Formal assurance | in_progress:- |
 | 34556491805 | `95fa9dc55f2a` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 34556491778 | `95fa9dc55f2a` | pull_request | Huawei MIT source headers | in_progress:- |
+| 34556491778 | `95fa9dc55f2a` | pull_request | Huawei MIT source headers | completed:success |
 | 34555432305 | `23530dfc8086` | push | Formal assurance | completed:success |
 | 34555432283 | `23530dfc8086` | push | Emulated aarch64 portability | completed:success |
 | 34555432268 | `23530dfc8086` | push | Hosted portability and native qualification | completed:success |
