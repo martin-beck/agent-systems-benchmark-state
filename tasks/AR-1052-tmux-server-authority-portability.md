@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-11T05:51:44+00:00",
   "depends_on": [],
   "id": "AR-1052",
-  "next_action": "Fresh immutable review of exact unpushed signed+DCO repair 5b55f6aa4d8883bc13a79b64193da246788831b9/tree 4d78d1a6d82771aac0392091ce7bc3dd8d15ee9e; do not push until approved.",
+  "next_action": "Publish approved exact head 5b55f6aa4d8883bc13a79b64193da246788831b9, open draft PR, require exact-head checks, then merge and verify postmerge/trusted-main.",
   "owner": "codex-ar1052-tmux-authority-portability-20260911",
   "plan": "../plans/AR-1052.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Diagnose and repair the trusted-runner tmux server-authority portability gap without weakening cleanup authentication.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Diagnose trusted tmux server authority",
-  "updated_at": "2026-09-11T04:19:13+00:00",
+  "updated_at": "2026-09-11T04:21:44+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-server-authority-portability"
 }
 ---
@@ -168,3 +168,8 @@ authenticated cleanup and zero-widening invariant. Change no product UI, rendere
 
 - 2026-09-11T04:19:13+00:00: Recorded command exit 0; command argv SHA-256
   d6db2ba5337407475f2b9b29fb770e41c2b0e5cded148686bdbe60658cda2407.
+
+- 2026-09-11T04:21:44+00:00: Fresh immutable review approved exact repair head
+  5b55f6aa4d8883bc13a79b64193da246788831b9, tree 4d78d1a6d82771aac0392091ce7bc3dd8d15ee9e.
+  Authorized for governed publication and integration only after exact-head required checks are
+  green.

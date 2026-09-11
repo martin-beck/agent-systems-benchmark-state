@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1037](tasks/AR-1037-measurement-selection-plan.md): Add measurement selection to validated run plans | Carry catalog-backed measurement choices through ASB plan validation, collection and evidence. | After AR-1036, add canonical measurement IDs to validated ASB plans and make collection honor them without any UI code. | codex-root-ar1037-selection-20260911 |
-| P0 | [AR-1052](tasks/AR-1052-tmux-server-authority-portability.md): Diagnose trusted tmux server authority | Diagnose and repair the trusted-runner tmux server-authority portability gap without weakening cleanup authentication. | Fresh immutable review of exact unpushed signed+DCO repair 5b55f6aa4d8883bc13a79b64193da246788831b9/tree 4d78d1a6d82771aac0392091ce7bc3dd8d15ee9e; do not push until approved. | codex-ar1052-tmux-authority-portability-20260911 |
+| P0 | [AR-1052](tasks/AR-1052-tmux-server-authority-portability.md): Diagnose trusted tmux server authority | Diagnose and repair the trusted-runner tmux server-authority portability gap without weakening cleanup authentication. | Publish approved exact head 5b55f6aa4d8883bc13a79b64193da246788831b9, open draft PR, require exact-head checks, then merge and verify postmerge/trusted-main. | codex-ar1052-tmux-authority-portability-20260911 |
 | P0 | [AR-1053](tasks/AR-1053-asb-tui-roadmap-hardening.md): Harden the standalone asb-tui roadmap | Make the standalone asb-tui UX roadmap detailed, non-overlapping and dependency-executable. | Harden the audited standalone asb-tui task and plan records without changing either product repository or feature-task status. | codex-ar1053-asb-tui-roadmap-hardening-20260911 |
 
 ## Open
