@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 19 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 54 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 142 |
+| **Done** | Accepted, integrated, and durably verified | 143 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -258,7 +258,7 @@ flowchart LR
         AR_1034["AR-1034 - Planned"]:::status_planned
         AR_1035["AR-1035 - Planned"]:::status_planned
         AR_1036["AR-1036 - Done"]:::status_done
-        AR_1037["AR-1037 - In progress"]:::status_in_progress
+        AR_1037["AR-1037 - Done"]:::status_done
         AR_1038["AR-1038 - Open"]:::status_open
         AR_1039["AR-1039 - Open"]:::status_open
         AR_1040["AR-1040 - Done"]:::status_done
@@ -1195,11 +1195,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1037](tasks/AR-1037-measurement-selection-plan.md): Add measurement selection to validated run plans | codex-root-ar1037-selection-20260911 | Carry catalog-backed measurement choices through ASB plan validation, collection and evidence. | After AR-1036, add canonical measurement IDs to validated ASB plans and make collection honor them without any UI code. |
 | P0 | [AR-1058](tasks/AR-1058-tmux-startup-observation-diagnostics.md): Diagnose tmux startup observation | codex-ar1058-tmux-startup-diagnostics-20260911 | Diagnose and repair the remaining trusted tmux stable-startup observation failure. | Freeze the diagnostic-only exact head after green focused, terminal, full locked, fmt and Clippy gates; obtain immutable review before publication. |
 | P0 | [AR-1060](tasks/AR-1060-authenticated-control-endpoint-handoff.md): Add authenticated control endpoint handoff | codex-ar1060-control-endpoint-handoff-state-20260911 | Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths. | Freeze the descriptor and reconnect contract, then implement ASB provisioning and standalone asb-tui peer-authenticated consumption in separately reviewed repository changes. |
 
@@ -1302,7 +1301,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (142)
+### Done (143)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1330,6 +1329,7 @@ flowchart LR
 | P0 | [AR-1023](tasks/AR-1023-asb-tui-capabilities-command.md): Add the ASB frontend capabilities command | Unclaimed | Publish the ASB capability negotiation command required by the standalone frontend. | Monitor exact head d60d2351004479998608f2141730849366351373 on PR 128, repair any CI failure, obtain independent review, merge through policy, and run post-merge verification. |
 | P0 | [AR-1030](tasks/AR-1030-ratatui-dependency-closure.md): Resolve the Ratatui dependency closure | Unclaimed | Make the maintained Ratatui release consumable by standalone asb-tui without hiding supply-chain exceptions. | Register/authorize a GitHub-recognized signing identity for exact head c0dfdd3114741f9415a124f4d4995dac354b4260, or explicitly approve a GitHub rebase/squash rewrite; then rerun exact-head gates and merge PR #11. |
 | P0 | [AR-1036](tasks/AR-1036-measurement-catalog-control.md): Publish the measurement catalog control contract | Unclaimed | Expose the versioned ASB measurement catalog to standalone frontends without UI code. | Catalog control v1.2 is merged and qualified; AR-1037 may now carry selected measurement IDs through validated ASB plans. |
+| P0 | [AR-1037](tasks/AR-1037-measurement-selection-plan.md): Add measurement selection to validated run plans | Unclaimed | Carry catalog-backed measurement choices through ASB plan validation, collection and evidence. | After AR-1036, add canonical measurement IDs to validated ASB plans and make collection honor them without any UI code. |
 | P0 | [AR-1040](tasks/AR-1040-protected-merge-signature-policy.md): Reconcile protected-merge signature verification | Unclaimed | Align offline signature policy with the repository-required GitHub merge path. | AR-1040 acceptance complete at protected main 6155d63bec04a5c76c4323843c26649b0c084f6e; release done. |
 | P0 | [AR-1043](tasks/AR-1043-protected-topic-sync-topology.md): Qualify exact topic-tip synchronization merges | Unclaimed | Accept one exact signed topic-tip sync merge without weakening protected-main policy. | All 12 exact-head checks on independently approved PR #137 head 40a84dda234f250927bb36a5b3c46bb342f60149 are green, including AArch64. Await explicit root merge authorization; merge must use protected method and a truthful real multiline body ending exact lowercase trailer Signed-off-by: martin-beck &lt;martin.beck2@gmx.de&gt;. |
 | P0 | [AR-1045](tasks/AR-1045-gemini-readiness-merge-attestation.md): Attest the Gemini readiness merge boundary | Unclaimed | Recover the Gemini readiness publication boundary without rewriting protected main. | Await fresh immutable review of clean signed+DCO current-main successor d0ea32ce84f600e505899e2e3d2fdb885ee7ad76, tree d6f734bc270281957b1c2268fa0c12db2e2c6075, parent 252f746e903555c2dc626fadfa1a75bb76913144. Do not push before READY. |

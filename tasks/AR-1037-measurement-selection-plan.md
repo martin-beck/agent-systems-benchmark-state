@@ -2,7 +2,7 @@
 {
   "branch": "feature/measurement-selection-plan",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-11T06:32:03+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0104",
     "AR-1036"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/measurement-selection-plan",
   "observed_dirty": 0,
   "observed_head": "819de6934a42579abc07613b7827394c7bae6abe",
-  "owner": "codex-root-ar1037-selection-20260911",
+  "owner": "",
   "plan": "../plans/AR-1037.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Carry catalog-backed measurement choices through ASB plan validation, collection and evidence.",
-  "task_revision": 170,
+  "task_revision": 171,
   "title": "Add measurement selection to validated run plans",
-  "updated_at": "2026-09-11T05:23:57+00:00",
+  "updated_at": "2026-09-11T05:34:52+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-selection-plan"
 }
 ---
@@ -417,3 +417,11 @@ exclusively in `martin-beck/asb-tui` under AR-1014.
 
 - 2026-09-11T05:23:57+00:00: Recorded command exit 0; command argv SHA-256
   59fc91f2e03caed83c4c702cc85a8b78e376acb8acdffe8a11bb5939552b1645.
+
+- 2026-09-11T05:34:52+00:00: Completed as reviewed PR #143: protected merge
+  10a353e0342ced88dabbebac7d1da5b0f2511d84 has exact reviewed tree
+  234688130844913018c765762d5466028fad1dc3 and parents 229f5ae6+819de693; GitHub verification is
+  valid, merge DCO matches, all 12 exact-head checks passed, and all seven exact-main postmerge
+  workflow groups passed. ASB scope is protocol, plan validation, collectors, runner and evidence
+  only; no TUI renderer, Ratatui, Crossterm, navigation, help or frontend application code was
+  added.
