@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-11T05:51:44+00:00",
   "depends_on": [],
   "id": "AR-1052",
-  "next_action": "Replace the proven unavailable tmux display-message server-PID query with kernel SO_PEERCRED binding on the exact stable Unix socket, retain process start-time and socket generation revalidation, test substitutions, then freeze a separate repair candidate for fresh review.",
+  "next_action": "Fresh immutable review of exact unpushed signed+DCO repair 5b55f6aa4d8883bc13a79b64193da246788831b9/tree 4d78d1a6d82771aac0392091ce7bc3dd8d15ee9e; do not push until approved.",
   "owner": "codex-ar1052-tmux-authority-portability-20260911",
   "plan": "../plans/AR-1052.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Diagnose and repair the trusted-runner tmux server-authority portability gap without weakening cleanup authentication.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Diagnose trusted tmux server authority",
-  "updated_at": "2026-09-11T04:12:57+00:00",
+  "updated_at": "2026-09-11T04:13:27+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-server-authority-portability"
 }
 ---
@@ -144,3 +144,15 @@ authenticated cleanup and zero-widening invariant. Change no product UI, rendere
 
 - 2026-09-11T04:12:57+00:00: Recorded command exit 0; command argv SHA-256
   425d200766240349e172c6b46b242ace2b26b845ee422bac8c6220e1acd150da.
+
+- 2026-09-11T04:13:27+00:00: Separate repair candidate 5b55f6aa4d8883bc13a79b64193da246788831b9
+  replaces only the trusted-unavailable tmux server PID command with a bounded nonblocking kernel
+  SO_PEERCRED query on the exact Unix socket. It retains owner/type/dev/inode bracketing, peer PID
+  start-time generation, repeat equality, stable startup and all pre-option/pre-TERM/pre-KILL
+  checks. Cross-process credential and unavailable-socket negatives pass. Five serial terminal
+  suites passed 140/140, parallel terminal 28/28, full locked suite, fmt, Clippy, rustdoc, release,
+  deny/audit, coverage 91.44%, schema/release/publication/promoted-self-test,
+  shell/workflow/privacy/Gitleaks and clean tree all pass; scoped exact-binary leak audit zero. The
+  commit command succeeded but its post-command coordinator evidence update hit LOCK_TIMEOUT; later
+  wrapped gates reconciled normally, so this was coordinator-only after the durable signed product
+  commit.
