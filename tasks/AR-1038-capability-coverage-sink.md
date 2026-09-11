@@ -7,7 +7,7 @@
     "AR-1023"
   ],
   "id": "AR-1038",
-  "next_action": "Obtain a new immutable independent review of PR #132 exact head 69888a33cdf8383f4155d3dca1e9180104770b33/tree 42fd9229538ab7183b71a0517ca6c5bd751bdb99. All 12 exact-head checks are terminal SUCCESS. Do not merge without approval.",
+  "next_action": "Monitor PR #132 exact successor 297895dbdee6acfc2a7425c5a9ab254c6d2cce96/tree 1cde5c478dd35aaa7b68e56e4b54254d4f3a401d to 12/12 green, then obtain immutable delta review before merge.",
   "observed_branch": "test/capability-coverage-sink",
   "observed_dirty": 0,
   "observed_head": "297895dbdee6acfc2a7425c5a9ab254c6d2cce96",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent sanitized capability child tests from writing default profraw files into the source checkout.",
-  "task_revision": 116,
+  "task_revision": 117,
   "title": "Preserve coverage sinks in sanitized CLI child tests",
-  "updated_at": "2026-09-11T00:48:44+00:00",
+  "updated_at": "2026-09-11T00:49:11+00:00",
   "worktree_key": "agent-systems-benchmark-capability-coverage-sink"
 }
 ---
@@ -408,3 +408,20 @@ Fix the six `default_*.profraw` files discovered during AR-1013 full coverage wi
 
 - 2026-09-11T00:48:44+00:00: Recorded command exit 0; command argv SHA-256
   bdbad0dc3b27949e93f62d77d1d0f2c959836a6ad81d5a6dc9cd34236f0f3851.
+
+- 2026-09-11T00:49:11+00:00: Final-integration successor published to PR #132 at signed+DCO merge
+  commit 297895dbdee6acfc2a7425c5a9ab254c6d2cce96, tree 1cde5c478dd35aaa7b68e56e4b54254d4f3a401d,
+  after normally merging protected main 6155d63bec04a5c76c4323843c26649b0c084f6e without
+  rebase/force. Main-relative scope remains exactly crates/asb-cli/tests/capability_contract.rs. The
+  reviewed old/new file blobs are identical and the old-base and current-main base blobs are
+  identical; full patch SHA-256 is unchanged at
+  8d8ad3c07816e87a4cae6273d1698963e4993122cf42137b01e11f751906b26c, proving no semantic delta. Green
+  local evidence: focused normal 12/12 and focused llvm-cov 12/12 with no
+  default.profraw/default_*.profraw; fmt; workspace all-target Clippy -D warnings; full serial
+  workspace tests; rustdoc -D warnings; release build; full coverage floors; cargo-deny/audit;
+  contract consistency; actionlint/zizmor/gitleaks; controlled failure paths; signature-policy
+  adversaries; artifact/platform suites; repository policy; signature/DCO; clean tree. cargo-deny
+  emitted only preexisting unused-license warnings. Initial merge invocation exited 2 before
+  mutation because git merge -s selects a strategy rather than signoff; corrected to --gpg-sign
+  --signoff and merge succeeded cleanly. PR base/head are live exact 6155d63/297895d and 12 hosted
+  checks are running. Do not merge until terminal green and immutable delta review is recorded.
