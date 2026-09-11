@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make standalone asb-tui consume precise privacy-safe measurement validation diagnostics.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Harden asb-tui control v1.3 readiness",
-  "updated_at": "2026-09-11T05:02:03+00:00",
+  "updated_at": "2026-09-11T05:03:41+00:00",
   "worktree_key": "agent-systems-benchmark-state-asb-tui-control-v1-3-readiness"
 }
 ---
@@ -29,3 +29,6 @@ or any feature-task status.
   dependencies are empty and all product-task statuses remain unchanged.
 
 - 2026-09-11T05:02:03+00:00: Claimed by codex-ar1057-asb-tui-control-v1-3-readiness-20260911.
+
+- 2026-09-11T05:03:41+00:00: Recorded command exit 0; command argv SHA-256
+  1c427f7b027f91880a93d5d4fcd18eab9c929a070f728ce5a732cb8aa5b315e8.
