@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use an explicit tmux window-option command so trusted-main terminal qualification is portable.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Make tmux window-option setup portable",
-  "updated_at": "2026-09-11T02:32:20+00:00",
+  "updated_at": "2026-09-11T02:33:23+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-window-option-portability"
 }
 ---
@@ -88,3 +88,6 @@ authority, and change no renderer or application behavior.
   head/tree; local allowed-signers verification passes. Exact-head Repository quality run
   34554860348 passed in 1m28s. The first publication attempt acquired no wrapper lock and caused no
   external effect; the retry succeeded.
+
+- 2026-09-11T02:33:23+00:00: Recorded command exit 0; command argv SHA-256
+  3b71c19ec34b8dd9d7284eaba297c2265695a7f40f3504380da2c799b081795f.
