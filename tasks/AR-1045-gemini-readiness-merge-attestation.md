@@ -8,16 +8,16 @@
   "next_action": "Await different-agent immutable re-review of repaired clean signed+DCO head bbb3ebd3e0e5678562f6e46f61e231d40f589cdb, tree 211d74bc6b0e39d30e3201241fedd011265dc3fd, parent 23530dfc808650a8f3019c87a1c69fe3d0d654b5. Do not push before READY.",
   "observed_branch": "docs/gemini-readiness-merge-attestation",
   "observed_dirty": 0,
-  "observed_head": "bbb3ebd3e0e5678562f6e46f61e231d40f589cdb",
+  "observed_head": "d0ea32ce84f600e505899e2e3d2fdb885ee7ad76",
   "owner": "codex-ar1045-gemini-attestation-20260911",
   "plan": "../plans/AR-1045.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover the Gemini readiness publication boundary without rewriting protected main.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Attest the Gemini readiness merge boundary",
-  "updated_at": "2026-09-11T03:13:01+00:00",
+  "updated_at": "2026-09-11T03:13:07+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-readiness-merge-attestation"
 }
 ---
