@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-11T03:24:35+00:00",
   "depends_on": [],
   "id": "AR-1044",
-  "next_action": "Claim the task, create the declared isolated asb-tui worktree from exact merged main eb4960e, and implement foreground-group observation fixtures before integration changes.",
+  "next_action": "Obtain early immutable diff review, add any remaining tuple/reuse negatives, then run repeated focused/full/leak gates and publish a signed+DCO test-only PR.",
   "owner": "codex-ar1044-tmux-foreground-20260911",
   "plan": "../plans/AR-1044.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Recover tmux foreground-group qualification",
-  "updated_at": "2026-09-11T01:31:26+00:00",
+  "updated_at": "2026-09-11T01:31:57+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-pane-foreground-group-recovery"
 }
 ---
@@ -64,3 +64,11 @@ absent or changes. Do not change renderer or application behavior.
 
 - 2026-09-11T01:31:26+00:00: Recorded command exit 0; command argv SHA-256
   7f2f1bf633d124e92720c977b4c5895866b6571025f80a45b15b2985734f255e.
+
+- 2026-09-11T01:31:57+00:00: Dirty test-only implementation replaces pane_pid==PGID with bounded
+  pane_pid/pane_tty/tpgid/UID/EUID observation and exact pre-signal revalidation. Early review
+  blockers are fixed: ps receives pts/N, all TTY rows must share the pane foreground tpgid, an exact
+  current-UID/EUID foreground leader is required, and inconsistent/unrelated/wrong-UID fixtures
+  reject. Parser, HUP-resistant cleanup, no-authority cleanup, real tmux+screen focused tests and
+  the serial 17-test terminal suite pass. Classified earlier failures: nonexistent canonical asb-tui
+  alias and fmt drift were invocation/formatting issues corrected before tests.
