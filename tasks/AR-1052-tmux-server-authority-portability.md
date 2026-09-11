@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Diagnose and repair the trusted-runner tmux server-authority portability gap without weakening cleanup authentication.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Diagnose trusted tmux server authority",
-  "updated_at": "2026-09-11T03:59:30+00:00",
+  "updated_at": "2026-09-11T04:01:03+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-server-authority-portability"
 }
 ---
@@ -83,3 +83,6 @@ authenticated cleanup and zero-widening invariant. Change no product UI, rendere
   Exact-head Repository quality run 34560365359 passed. Trusted-main is intentionally restricted to
   exact public main, so the closed runner stage requires approved diagnostic-only integration; no
   merge yet.
+
+- 2026-09-11T04:01:03+00:00: Recorded command exit 0; command argv SHA-256
+  754545c0dbfee8e30d1521f398231a7ae2d8d52e84378b24079790cfbb70f1e0.
