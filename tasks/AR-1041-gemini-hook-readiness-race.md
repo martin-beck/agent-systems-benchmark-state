@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-11T02:57:22+00:00",
   "depends_on": [],
   "id": "AR-1041",
-  "next_action": "Monitor all 12 checks on draft PR #136 exact head 310873510c6abe86e309541b6171f26387ac12ec, then freeze for root immutable review; do not merge.",
+  "next_action": "Monitor all 12 checks on draft PR #136 exact linear successor 208682166c7b1a5a6bc2bf71c01fe1daea709f46, then freeze for root immutable review; do not merge.",
   "observed_branch": "fix/gemini-hook-readiness-race",
   "observed_dirty": 0,
   "observed_head": "208682166c7b1a5a6bc2bf71c01fe1daea709f46",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Eliminate the load-sensitive Gemini hook readiness race without weakening validation.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Make Gemini hook readiness publication atomic",
-  "updated_at": "2026-09-11T01:02:25+00:00",
+  "updated_at": "2026-09-11T01:02:51+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-hook-readiness-race"
 }
 ---
@@ -141,3 +141,13 @@ any TUI code.
 
 - 2026-09-11T01:02:25+00:00: Recorded command exit 0; command argv SHA-256
   ccbd7a2495fef13583d8dc21f4a30973b9d288f2e3e7c9f13b6f0e9b6e1833b9.
+
+- 2026-09-11T01:02:51+00:00: Preserved failed old head 310873510c6abe86e309541b6171f26387ac12ec:
+  Platform evidence failed before cargo with source identity not immutable because its parent
+  6155d63 was behind live PR base 44eb1b48. Reapplied the exact patch as single signed+DCO successor
+  208682166c7b1a5a6bc2bf71c01fe1daea709f46 (tree 97bd03c9cd962da7c1aabb1be2f45d333d26b84b), whose
+  only parent is current main 44eb1b48. Old/new stable patch ID is exactly
+  9b99a57e559428302d1187b94f24538eb70d895d. No merge/synchronization commit; one unique topic commit
+  and one Gemini file. Successor focused 15 tests, full workspace fmt/clippy/test and a fresh 24x250
+  stress pass. Force-with-lease replaced only expected remote 3108735; PR #136 live head/base are
+  exact 2086821/44eb1b4 and fresh exact-head CI is running.
