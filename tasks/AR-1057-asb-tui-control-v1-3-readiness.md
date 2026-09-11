@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1057.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Make standalone asb-tui consume precise privacy-safe measurement validation diagnostics.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Harden asb-tui control v1.3 readiness",
-  "updated_at": "2026-09-11T05:00:00+00:00",
+  "updated_at": "2026-09-11T05:02:00+00:00",
   "worktree_key": "agent-systems-benchmark-state-asb-tui-control-v1-3-readiness"
 }
 ---
@@ -24,3 +24,6 @@ standalone asb-tui roadmap. Require the client shell to negotiate and parse v1.3
 retaining the closed v1.2 legacy categories, and require the selector UX to present exact trusted
 reasons without reflecting attacker-controlled identifiers. Do not change either product repository
 or any feature-task status.
+
+- 2026-09-11T05:02:00+00:00: Authorized state-only control-contract readiness correction;
+  dependencies are empty and all product-task statuses remain unchanged.
