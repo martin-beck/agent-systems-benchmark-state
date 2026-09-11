@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-socket-connect-diagnostics",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-11T06:52:56+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1056",
   "next_action": "Publish approved exact diagnostic head dd0555208a1631018e91149a9f94f3bdc65b7da5, require exact-head CI, merge exact tree, then use trusted-main closed stage only to select repair.",
-  "owner": "codex-ar1056-tmux-connect-diagnostics-20260911",
+  "owner": "",
   "plan": "../plans/AR-1056.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Diagnose and repair the remaining trusted tmux socket connection-stage failure.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Diagnose tmux socket connection stage",
-  "updated_at": "2026-09-11T05:05:51+00:00",
+  "updated_at": "2026-09-11T05:06:16+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-socket-connect-diagnostics"
 }
 ---
@@ -126,3 +126,8 @@ workflow or ASB source change is in scope.
 
 - 2026-09-11T05:05:51+00:00: Recorded command exit 0; command argv SHA-256
   863510c75900ffe5ea3627ae1c6911fad14b7c02e699e25039d013221e9f686b.
+
+- 2026-09-11T05:06:16+00:00: PR #21 merged provenance-clean as 37613e81; postmerge Repository
+  quality 34564426536 passed. Trusted main 34564426538 failed 5/29 generically after server
+  acquisition, proving the socket substages are no longer the blocker. AR-1058 owns
+  stable-startup/pane diagnosis and repair; AR-1056 remains open pending green recovery.
