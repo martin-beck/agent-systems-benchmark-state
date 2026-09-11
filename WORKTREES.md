@@ -85,8 +85,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-local-inference-provider-profiles` | `feat/local-inference-provider-profiles` | `eed49592617a` | 0 | behind 70, ahead 0 |
 | `agent-systems-benchmark-local-llm-testing-recommendations` | `docs/local-llm-testing-recommendations` | `4a23069336be` | 0 | behind 83, ahead 0 |
 | `agent-systems-benchmark-main-merge-integrity` | `fix/main-merge-integrity` | `bd6f450ab877` | 0 | behind 41, ahead 2 |
-| `agent-systems-benchmark-measurement-catalog-control` | `feature/measurement-catalog-control` | `45add48fd78e` | 2 | behind 2, ahead 1 |
-| changed files | - | - | - | `crates/asb-control/src/endpoint.rs`, `crates/asb-control/tests/endpoint.rs` |
+| `agent-systems-benchmark-measurement-catalog-control` | `feature/measurement-catalog-control` | `2b56c5a5bc14` | 0 | behind 2, ahead 1 |
 | `agent-systems-benchmark-measurement-catalog-merge-attestation` | `docs/measurement-catalog-merge-attestation` | `607a3afb3a44` | 0 | behind 15, ahead 0 |
 | `agent-systems-benchmark-measurement-catalog-second-recovery` | `docs/measurement-catalog-second-recovery` | `4a7eb724c601` | 0 | behind 13, ahead 0 |
 | `agent-systems-benchmark-measurement-catalog-semantics` | `feature/measurement-catalog-semantics` | `78c63febc0ce` | 0 | behind 17, ahead 0 |
