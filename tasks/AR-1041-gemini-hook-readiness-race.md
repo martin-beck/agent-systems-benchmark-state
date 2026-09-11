@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-11T02:57:22+00:00",
   "depends_on": [],
   "id": "AR-1041",
-  "next_action": "Push signed+DCO 310873510c6abe86e309541b6171f26387ac12ec, open a draft PR, and require exact-head CI plus immutable independent review; do not merge.",
+  "next_action": "Monitor all 12 checks on draft PR #136 exact head 310873510c6abe86e309541b6171f26387ac12ec, then freeze for root immutable review; do not merge.",
   "observed_branch": "fix/gemini-hook-readiness-race",
   "observed_dirty": 0,
   "observed_head": "310873510c6abe86e309541b6171f26387ac12ec",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Eliminate the load-sensitive Gemini hook readiness race without weakening validation.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Make Gemini hook readiness publication atomic",
-  "updated_at": "2026-09-11T00:58:30+00:00",
+  "updated_at": "2026-09-11T00:59:08+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-hook-readiness-race"
 }
 ---
@@ -122,3 +122,10 @@ any TUI code.
 
 - 2026-09-11T00:58:30+00:00: Recorded command exit 0; command argv SHA-256
   b4f2b8234ba7b162059b402efbc58e617a3346180f14b1d7a0c338f860f77d7e.
+
+- 2026-09-11T00:59:08+00:00: Published draft PR #136 at
+  https://github.com/martin-beck/agent-systems-benchmark/pull/136. Live head is exact signed+DCO
+  310873510c6abe86e309541b6171f26387ac12ec and PR base is current protected main
+  44eb1b48cb79b789252eff1cc798980d868c908c; triple-dot scope is only
+  crates/asb-agents/src/gemini.rs. No synchronization merge was added. All 12 checks started; two
+  are already SUCCESS and ten are in progress. Worktree remains clean.
