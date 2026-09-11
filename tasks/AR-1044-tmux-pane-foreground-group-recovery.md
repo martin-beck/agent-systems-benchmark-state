@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Recover tmux foreground-group qualification",
-  "updated_at": "2026-09-11T01:34:54+00:00",
+  "updated_at": "2026-09-11T01:35:53+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-pane-foreground-group-recovery"
 }
 ---
@@ -87,3 +87,6 @@ absent or changes. Do not change renderer or application behavior.
 
 - 2026-09-11T01:34:54+00:00: Recorded command exit 0; command argv SHA-256
   776123a35c3410e3f29a88e02d855aebbea5faed148fed9dbf8cd395b45b084c.
+
+- 2026-09-11T01:35:53+00:00: Recorded command exit 0; command argv SHA-256
+  ff16574c0d1d5fe5ea93a7744a5ea951ed0419b39fe001570155693997b1f305.
