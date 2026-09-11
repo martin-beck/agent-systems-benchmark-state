@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-created-window-identity",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-11T04:38:34+00:00",
   "depends_on": [],
   "id": "AR-1049",
   "next_action": "Promote and claim the pre-approved test-only recovery, then acquire and target the exact tmux window identity returned by new-session.",
-  "owner": "",
+  "owner": "codex-ar1049-tmux-window-identity-20260911",
   "plan": "../plans/AR-1049.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Bind tmux remain-on-exit setup to the exact created window identity instead of a fixed index.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Bind tmux setup to its created window",
-  "updated_at": "2026-09-11T02:38:31+00:00",
+  "updated_at": "2026-09-11T02:38:34+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-created-window-identity"
 }
 ---
@@ -26,3 +26,5 @@ ID, and preserve all established cleanup authority. Change no renderer or applic
 
 - 2026-09-11T02:38:31+00:00: Pre-approved P0 recovery is dependency-ready after trusted-main run
   34555068496 falsified fixed window-index targeting.
+
+- 2026-09-11T02:38:34+00:00: Claimed by codex-ar1049-tmux-window-identity-20260911.

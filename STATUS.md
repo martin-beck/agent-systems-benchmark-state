@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 16 |
+| **In progress** | Claimed work with a live lease | 3 |
+| **Open** | Dependency-ready and available to claim | 15 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 55 |
 | **Future** | Deferred roadmap work | 1 |
@@ -270,7 +270,7 @@ flowchart LR
         AR_1046["AR-1046 - Open"]:::status_open
         AR_1047["AR-1047 - Done"]:::status_done
         AR_1048["AR-1048 - Open"]:::status_open
-        AR_1049["AR-1049 - Open"]:::status_open
+        AR_1049["AR-1049 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1160,14 +1160,15 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1036](tasks/AR-1036-measurement-catalog-control.md): Publish the measurement catalog control contract | codex-root-ar1036-catalog-20260911 | Expose the versioned ASB measurement catalog to standalone frontends without UI code. | After AR-1013, publish the bounded measurement-catalog control operation and exact standalone parser fixtures. |
 | P0 | [AR-1043](tasks/AR-1043-protected-topic-sync-topology.md): Qualify exact topic-tip synchronization merges | codex-ar1043-protected-topic-sync-20260911 | Accept one exact signed topic-tip sync merge without weakening protected-main policy. | All 12 exact-head checks on independently approved PR #137 head 40a84dda234f250927bb36a5b3c46bb342f60149 are green, including AArch64. Await explicit root merge authorization; merge must use protected method and a truthful real multiline body ending exact lowercase trailer Signed-off-by: martin-beck &lt;martin.beck2@gmx.de&gt;. |
+| P0 | [AR-1049](tasks/AR-1049-tmux-created-window-identity.md): Bind tmux setup to its created window | codex-ar1049-tmux-window-identity-20260911 | Bind tmux remain-on-exit setup to the exact created window identity instead of a fixed index. | Promote and claim the pre-approved test-only recovery, then acquire and target the exact tmux window identity returned by new-session. |
 
-### Open (16)
+### Open (15)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1182,7 +1183,6 @@ flowchart LR
 | P0 | [AR-1045](tasks/AR-1045-gemini-readiness-merge-attestation.md): Attest the Gemini readiness merge boundary | Unclaimed | Recover the Gemini readiness publication boundary without rewriting protected main. | Create a forward-only, bounded attestation of PR #136 merge 2ecb876 and add regression evidence for the exact GitHub merge-author DCO recipe; do not rewrite protected main. |
 | P0 | [AR-1046](tasks/AR-1046-serialize-emulated-aarch64-agent-tests.md): Serialize emulated AArch64 agent tests | Unclaimed | Make the emulated AArch64 asb-agents fake-node readiness fixtures deterministic without changing production semantics. | Await immutable review of exact signed head 9d923c103d1527ab76c702321e2db7c8e3d55d7c/tree c793aacc37facf556d879831584db68ba93e56d4; do not publish PR until review approval. |
 | P0 | [AR-1048](tasks/AR-1048-tmux-window-option-portability.md): Make tmux window-option setup portable | Unclaimed | Use an explicit tmux window-option command so trusted-main terminal qualification is portable. | Remain OPEN pending AR-1049 exact created-window identity recovery and a green trusted-main rerun. |
-| P0 | [AR-1049](tasks/AR-1049-tmux-created-window-identity.md): Bind tmux setup to its created window | Unclaimed | Bind tmux remain-on-exit setup to the exact created window identity instead of a fixed index. | Promote and claim the pre-approved test-only recovery, then acquire and target the exact tmux window identity returned by new-session. |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | Repair/rebase the fail-closed TLA provenance pin, then rerun PR #119 exact-head CI; do not merge. |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Unclaimed | Qualify pinned OpenJiuwen live execution. | Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI. |
 | P1 | [AR-0908](tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | Unclaimed | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Hold PR #125 unchanged; shared formal asset and native-runner pin owners must repair their gates before a fresh exact-head run. |
