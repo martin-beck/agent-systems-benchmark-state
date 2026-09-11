@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-11T03:24:35+00:00",
   "depends_on": [],
   "id": "AR-1044",
-  "next_action": "Await immutable review of exact signed head df96e13b58ddcab0000ed2f0947e5217f43f23ae; if approved, push/open draft PR and require exact-head CI before any merge.",
+  "next_action": "Await fresh independent immutable approval of PR #14 exact head 837403aeb37fcfb335d2fc2491d5a58b17baede7; do not merge without root authorization.",
   "owner": "codex-ar1044-tmux-foreground-20260911",
   "plan": "../plans/AR-1044.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Recover tmux foreground-group qualification",
-  "updated_at": "2026-09-11T01:55:23+00:00",
+  "updated_at": "2026-09-11T01:55:49+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-pane-foreground-group-recovery"
 }
 ---
@@ -194,3 +194,15 @@ absent or changes. Do not change renderer or application behavior.
 
 - 2026-09-11T01:55:23+00:00: Recorded command exit 0; command argv SHA-256
   2bc1c8615be61bab14ce81778e6cb2fc5374324b7fc72e4bc60ce6da127a7dff.
+
+- 2026-09-11T01:55:49+00:00: Second-review repair exact signed+DCO head
+  837403aeb37fcfb335d2fc2491d5a58b17baede7 tree a06c628a16db0fd3f3bf9204b9dadf277168cdd0 is pushed
+  to draft PR #14. It adds generation-bound pane/leader authority, stable TTY dev/ino/rdev, pre-TERM
+  and pre-KILL exact reobservation with signal-recorder tests, global PID/leader uniqueness, safe
+  server-generation/socket unlink, symlink_metadata NotFound absence,
+  dangling/symlink/nondevice/wrong-owner negatives and hostile TMUX_TMPDIR isolation. Exact-head
+  Repository quality run 34552452268 passed. Local fmt, clippy, complete locked tests including 20
+  terminal tests, rustdoc, release, deny, audit, 91.42% line coverage,
+  schema/release/publication/promoted-self-test, JSON, shell/workflow, gitleaks and clean-tree gates
+  pass. One full-gate attempt used a wrong guessed full hash and ran nothing; the next retry hit
+  coordinator lock before execution; the corrected wrapped exact-head run passed fully.
