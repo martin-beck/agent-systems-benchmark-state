@@ -1,0 +1,26 @@
+---
+{
+  "branch": "fix/tmux-socket-connect-completion",
+  "checkpoint_commit": "",
+  "claim_expires": "",
+  "depends_on": [],
+  "id": "AR-1054",
+  "next_action": "Repair exact AF_UNIX EAGAIN and bounded connection-completion semantics from merged asb-tui main 7a398032, then prove all live tmux fixtures on trusted main.",
+  "owner": "",
+  "plan": "../plans/AR-1054.md",
+  "priority": "P0",
+  "schema_version": 1,
+  "status": "planned",
+  "summary": "Repair trusted tmux socket connection completion without weakening authenticated cleanup authority.",
+  "task_revision": 1,
+  "title": "Repair tmux socket connection completion",
+  "updated_at": "2026-09-11T04:29:00+00:00",
+  "worktree_key": "agent-systems-benchmark-asb-tui-tmux-socket-connect-completion"
+}
+---
+
+Trusted-main run 34562090773 at exact asb-tui merge
+7a398032246aa935b13b5d3139949c2375fa7309 failed five live tmux fixtures at the closed
+`socket_connection_unavailable` stage before peer credentials. Correct only the proven Linux
+AF_UNIX `EAGAIN` and bounded completion portability gap under the detailed plan. No renderer, UI,
+lifecycle protocol, dependency, workflow or ASB source change is in scope.
