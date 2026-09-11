@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Diagnose and repair the remaining trusted tmux socket connection-stage failure.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Diagnose tmux socket connection stage",
-  "updated_at": "2026-09-11T04:59:47+00:00",
+  "updated_at": "2026-09-11T04:59:52+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-socket-connect-diagnostics"
 }
 ---
@@ -93,3 +93,6 @@ workflow or ASB source change is in scope.
   authority or UI behavior change. Additional rustdoc, release, deny and audit gates pass; one
   intermediate exit 127 was an invocation-only PATH scope error between chained cargo commands and
   was corrected.
+
+- 2026-09-11T04:59:52+00:00: Recorded command exit 0; command argv SHA-256
+  45a02fd18866f04de05eaabb49a6d72a83783f57bd74bcabc1d5179a22c8ce24.
