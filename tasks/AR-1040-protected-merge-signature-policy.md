@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1040.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Align offline signature policy with the repository-required GitHub merge path.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Reconcile protected-merge signature verification",
-  "updated_at": "2026-09-11T00:06:00+00:00",
+  "updated_at": "2026-09-11T00:06:02+00:00",
   "worktree_key": "agent-systems-benchmark-protected-merge-signature-policy"
 }
 ---
@@ -23,3 +23,6 @@ Protected main merge `cad9fa9777aaca45b9ee62801d89168c5f3e8c32` has a matching r
 trailer and GitHub API verification `valid`, but offline Repository quality rejects GitHub's PGP
 signature because it recognizes only the local SSH allowed signer. Fix the policy contradiction
 without allowing Web Flow signatures on ordinary commits or PR heads. This AR owns no TUI code.
+
+- 2026-09-11T00:06:02+00:00: Protected main demonstrates a live signature-policy contradiction;
+  focused recovery is dependency-ready.
