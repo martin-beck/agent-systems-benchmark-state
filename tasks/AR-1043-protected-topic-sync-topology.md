@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Accept one exact signed topic-tip sync merge without weakening protected-main policy.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Qualify exact topic-tip synchronization merges",
-  "updated_at": "2026-09-11T02:38:26+00:00",
+  "updated_at": "2026-09-11T02:38:42+00:00",
   "worktree_key": "agent-systems-benchmark-protected-topic-sync-topology"
 }
 ---
@@ -251,3 +251,6 @@ by the plan, preserve all negative cases and restore a green forward protected-m
   34554978992; AArch64 34554978993; fault suite 34554978998; quality 34554979001; platform
   34554979008; headers 34554979051; formal 34554979073; AWQ 34554978997. Pending-check polling exits
   were gh exit 8 by documented convention and not failures. No merge performed.
+
+- 2026-09-11T02:38:42+00:00: Recorded command exit 0; command argv SHA-256
+  506848096b1957a5f83303736313a3ab8896204ac97e3e0a9c2b74401f68bd54.
