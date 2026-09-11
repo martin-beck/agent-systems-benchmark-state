@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-11T02:07:02+00:00",
   "depends_on": [],
   "id": "AR-1040",
-  "next_action": "Push signed head d6fa883, open a draft PR with official key provenance and exact trust-boundary evidence, then monitor exact-head CI and await independent review.",
+  "next_action": "Monitor PR #135 exact-head CI at d6fa883; when all 12 checks are green, freeze the immutable head and request different-agent security review. Do not merge.",
   "observed_branch": "fix/protected-merge-signature-policy",
   "observed_dirty": 0,
   "observed_head": "d6fa883ad1b2739e7fbd5522029bf02d75e954b8",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Align offline signature policy with the repository-required GitHub merge path.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Reconcile protected-merge signature verification",
-  "updated_at": "2026-09-11T00:28:58+00:00",
+  "updated_at": "2026-09-11T00:29:21+00:00",
   "worktree_key": "agent-systems-benchmark-protected-merge-signature-policy"
 }
 ---
@@ -114,3 +114,8 @@ without allowing Web Flow signatures on ordinary commits or PR heads. This AR ow
 
 - 2026-09-11T00:28:58+00:00: Recorded command exit 0; command argv SHA-256
   f7ba28ad0565c9e3d8bf4321e2bf1068f9433263428e33595b5f9ff9e88ead1c.
+
+- 2026-09-11T00:29:21+00:00: Published signed+DCO d6fa883ad1b2739e7fbd5522029bf02d75e954b8 as draft
+  PR #135: https://github.com/martin-beck/agent-systems-benchmark/pull/135. Live base/head are exact
+  cad9fa97/d6fa883. CI started with 12 checks; 2 complete SUCCESS and 10 in progress at first
+  observation. Local full gates and clean tree passed.
