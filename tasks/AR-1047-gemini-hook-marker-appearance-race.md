@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-11T03:59:36+00:00",
   "depends_on": [],
   "id": "AR-1047",
-  "next_action": "Await immutable review of exact signed head 661d52c614c5cfa28859d71131fbc8158b68bc2d/tree 3931f7cb300f1138a1fb2be7493991c03647c1c5 before publishing a draft PR.",
+  "next_action": "PR #139 exact 661d52c/tree 3931f7cb is independently approved and 12/12 exact-head green; await explicit root authorization and exact multiline protected merge recipe.",
   "observed_branch": "fix/gemini-hook-marker-appearance-race",
   "observed_dirty": 0,
   "observed_head": "661d52c614c5cfa28859d71131fbc8158b68bc2d",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Treat a regular marker published between absent open and fallback lstat as pending for descriptor validation on the next poll.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Close the Gemini hook-marker appearance race",
-  "updated_at": "2026-09-11T02:15:38+00:00",
+  "updated_at": "2026-09-11T02:16:00+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-hook-marker-appearance-race"
 }
 ---
@@ -97,3 +97,8 @@ remain `Invalid`. Add an exact deterministic interposition test and preserve all
 
 - 2026-09-11T02:15:38+00:00: Recorded command exit 0; command argv SHA-256
   eb2fc0ac66f5cefb1d734155f65266ab3b95a8afe2adb889d2de53deefad341a.
+
+- 2026-09-11T02:16:00+00:00: PR #139 exact-head CI is terminal 12/12 green. Emulated AArch64 run
+  34553546358/job 103121253796 passed in 5m27s; Repository quality 34553546334 and Rust 34553546331
+  pass, with all formal/fault/platform/header/AWQ checks passing. Remote PR remains base
+  2ecb876/head 661d52c/tree 3931f7cb. No merge performed.
