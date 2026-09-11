@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover the Gemini readiness publication boundary without rewriting protected main.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Attest the Gemini readiness merge boundary",
-  "updated_at": "2026-09-11T03:17:13+00:00",
+  "updated_at": "2026-09-11T03:18:04+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-readiness-merge-attestation"
 }
 ---
@@ -173,3 +173,6 @@ signature and DCO policy. This AR owns no Gemini runtime change and no TUI code.
   (expected MalformedEvidence, observed ProbeRejected); its exact test then passed 10/10 and the
   complete workspace/full gate rerun passed, classifying it as transient pre-existing fixture
   behavior rather than AR-1045 failure.
+
+- 2026-09-11T03:18:04+00:00: Recorded command exit 0; command argv SHA-256
+  a3f7ad8e7ddc586067c681dc6b54926356b69bf94a4f93ba1a69291077209b62.
