@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Eliminate the load-sensitive Gemini hook readiness race without weakening validation.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Make Gemini hook readiness publication atomic",
-  "updated_at": "2026-09-11T01:00:05+00:00",
+  "updated_at": "2026-09-11T01:00:08+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-hook-readiness-race"
 }
 ---
@@ -129,3 +129,6 @@ any TUI code.
   44eb1b48cb79b789252eff1cc798980d868c908c; triple-dot scope is only
   crates/asb-agents/src/gemini.rs. No synchronization merge was added. All 12 checks started; two
   are already SUCCESS and ten are in progress. Worktree remains clean.
+
+- 2026-09-11T01:00:08+00:00: Recorded command exit 0; command argv SHA-256
+  5b9c97b4e41b0b3700a6e586304972247a74c59f0b2c356409420928d240d8d0.
