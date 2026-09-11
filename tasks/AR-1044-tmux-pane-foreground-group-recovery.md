@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-11T03:24:35+00:00",
   "depends_on": [],
   "id": "AR-1044",
-  "next_action": "Await fresh independent immutable approval of PR #14 exact head 837403aeb37fcfb335d2fc2491d5a58b17baede7; do not merge without root authorization.",
+  "next_action": "Await fresh independent immutable approval of draft PR #14 exact head fffea870708a30e32e52c5d465876015ead7b56d; do not merge without root authorization.",
   "owner": "codex-ar1044-tmux-foreground-20260911",
   "plan": "../plans/AR-1044.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Recover tmux foreground-group qualification",
-  "updated_at": "2026-09-11T02:12:25+00:00",
+  "updated_at": "2026-09-11T02:12:59+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-pane-foreground-group-recovery"
 }
 ---
@@ -257,3 +257,18 @@ absent or changes. Do not change renderer or application behavior.
 
 - 2026-09-11T02:12:25+00:00: Recorded command exit 0; command argv SHA-256
   edae9aa1869ef00171144485fc74478597dd166231bb3d9c7b128883023f52ff.
+
+- 2026-09-11T02:12:59+00:00: Socket-substitution repair exact signed+DCO head
+  fffea870708a30e32e52c5d465876015ead7b56d tree 366272f806034d1fa10f60ec112fe4510e1395e1 is clean
+  and pushed. Each tmux server uses an explicit socket inside a disposable private scratch root.
+  Stop authenticates exact retained PID/start-time and socket dev/inode immediately before
+  kill-server, issues zero kill on mismatch, never unlinks a pathname, requires server generation
+  gone, and verifies retained stale inode is unconnectable; whole-root teardown removes residue
+  later. Generation/socket/symlink substitutions retain replacements and record zero kills. Five
+  consecutive 21-test terminal suites passed with zero exact-binary leaks. Full exact-head fmt,
+  clippy, locked tests, rustdoc, release, deny, audit, 91.44% coverage,
+  schema/release/publication/promoted-self-test, JSON, shell/workflow, gitleaks and clean-tree gates
+  pass. Exact-head Repository quality run 34553620155 passed. Two earlier wrapped patches completed
+  before post-command coordinator failure caused by expired AR-1039; root recovered it. Empirical
+  probes confirmed tmux 3.4 retains the same socket inode after kill-server and SIGTERM, motivating
+  the approved fail-closed disposable-root design.
