@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the asb tui install and full interactive integration sequence dependency-executable.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Harden asb-tui install integration readiness",
-  "updated_at": "2026-09-11T04:34:23+00:00",
+  "updated_at": "2026-09-11T04:34:53+00:00",
   "worktree_key": "agent-systems-benchmark-state-asb-tui-install-integration-readiness"
 }
 ---
@@ -44,3 +44,6 @@ without claiming or changing any product task.
 
 - 2026-09-11T04:34:23+00:00: Recorded command exit 1; command argv SHA-256
   2eda13069174fa996a1d938630ba94e0bcec24db858c9a9fc1308162a7936be1.
+
+- 2026-09-11T04:34:53+00:00: Recorded command exit 0; command argv SHA-256
+  e003fddcd9128559bcabb6a6e79e47790cb801370f54df58bec7c43442b49a4a.
