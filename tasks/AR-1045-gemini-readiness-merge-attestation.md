@@ -2,19 +2,19 @@
 {
   "branch": "docs/gemini-readiness-merge-attestation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-11T05:46:03+00:00",
   "depends_on": [],
   "id": "AR-1045",
   "next_action": "Create a forward-only, bounded attestation of PR #136 merge 2ecb876 and add regression evidence for the exact GitHub merge-author DCO recipe; do not rewrite protected main.",
-  "owner": "",
+  "owner": "codex-ar1045-gemini-attestation-20260911",
   "plan": "../plans/AR-1045.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Recover the Gemini readiness publication boundary without rewriting protected main.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Attest the Gemini readiness merge boundary",
-  "updated_at": "2026-09-11T01:39:10+00:00",
+  "updated_at": "2026-09-11T02:46:03+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-readiness-merge-attestation"
 }
 ---
@@ -38,3 +38,5 @@ signature and DCO policy. This AR owns no Gemini runtime change and no TUI code.
   recovery. Immutable PR136 evidence and the closed four-path attestation design are fully audited
   in the plan/root checkpoint. Reclaim only from exact recovered protected main; preserve merge
   2ecb876 and failed quality run 34550483000 without rewrite.
+
+- 2026-09-11T02:46:03+00:00: Claimed by codex-ar1045-gemini-attestation-20260911.
