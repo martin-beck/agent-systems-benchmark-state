@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-11T03:24:35+00:00",
   "depends_on": [],
   "id": "AR-1044",
-  "next_action": "Await fresh independent immutable approval of draft PR #14 exact head fffea870708a30e32e52c5d465876015ead7b56d; do not merge without root authorization.",
+  "next_action": "Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge.",
   "owner": "codex-ar1044-tmux-foreground-20260911",
   "plan": "../plans/AR-1044.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Recover tmux foreground-group qualification",
-  "updated_at": "2026-09-11T02:18:45+00:00",
+  "updated_at": "2026-09-11T02:19:16+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-pane-foreground-group-recovery"
 }
 ---
@@ -284,3 +284,12 @@ absent or changes. Do not change renderer or application behavior.
 
 - 2026-09-11T02:18:45+00:00: Recorded command exit 0; command argv SHA-256
   e6fa5b1117e42d83ecde5efdd031fc5b5bbb3a3af0714ad6dccd5d03579298ec.
+
+- 2026-09-11T02:19:16+00:00: PR #14 merged as f5434c938883b4f756f525038dc1b6e6c0a90761 with reviewed
+  tree 366272f806034d1fa10f60ec112fe4510e1395e1, GitHub-valid signature, exact parent
+  eb4960e816f2fe7cf0f01456655662d33618feb7, and a valid raw multiline DCO trailer. Postmerge
+  trusted-main run 34553880557 failed: 17/21 terminal tests passed; all four tmux integration
+  fixtures failed at ambiguous set-option -t session remain-on-exit on. AR-1048 records the narrow
+  portability recovery. Earlier status evidence query completed but post-command reconcile hit a
+  coordinator lock timeout; the subsequent log query completed and durably captured the product
+  failure.
