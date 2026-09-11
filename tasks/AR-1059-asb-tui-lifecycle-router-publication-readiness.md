@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1059.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Harden the ASB lifecycle-router roadmap before rebasing and publishing it.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Harden lifecycle-router publication readiness",
-  "updated_at": "2026-09-11T05:15:10+00:00",
+  "updated_at": "2026-09-11T05:17:18+00:00",
   "worktree_key": "agent-systems-benchmark-state-asb-tui-lifecycle-router-publication-readiness"
 }
 ---
@@ -25,3 +25,6 @@ ASB remains responsible for verified lifecycle routing and process ownership, wh
 Ratatui, Crossterm, widgets, screens and interactive application behavior remain exclusively in
 `martin-beck/asb-tui`.
 
+
+- 2026-09-11T05:17:18+00:00: Authorized state-only lifecycle-router publication-readiness repair;
+  dependencies are empty and product task statuses remain unchanged.
