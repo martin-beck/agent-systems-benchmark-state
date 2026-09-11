@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-11T02:42:38+00:00",
   "depends_on": [],
   "id": "AR-1041",
-  "next_action": "Reproduce the readiness-file truncate/write race with deterministic barriers, then implement atomic publication and fail-closed bounded observation.",
+  "next_action": "Implement the closed atomic publication/observation state machine and deterministic hostile marker tests from current protected main 6155d63.",
   "observed_branch": "fix/gemini-hook-readiness-race",
   "observed_dirty": 0,
   "observed_head": "6155d63bec04a5c76c4323843c26649b0c084f6e",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Eliminate the load-sensitive Gemini hook readiness race without weakening validation.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Make Gemini hook readiness publication atomic",
-  "updated_at": "2026-09-11T00:43:16+00:00",
+  "updated_at": "2026-09-11T00:44:30+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-hook-readiness-race"
 }
 ---
@@ -35,3 +35,13 @@ any TUI code.
 
 - 2026-09-11T00:43:10+00:00: Recorded command exit 0; command argv SHA-256
   7e1979277ce6960adaa7fb049856abde286ebd0a26444c858e342299e33785e2.
+
+- 2026-09-11T00:44:30+00:00: Initial audit complete. PR #135 is now merged as protected main
+  6155d63bec04a5c76c4323843c26649b0c084f6e, so the declared isolated worktree/branch was created
+  from that exact commit. Reproduced the original defect at d6fa883: 1,000 sequential focused runs
+  passed, while 24 concurrent workers reproduced five exact HookUnavailable failures. The fixture
+  publishes with shell truncate/write at gemini.rs:1915 and :1959; the waiter at :1417-1426 returns
+  false on transient readable empty/partial bytes. Ten repeated full workspace suites and 100
+  default-parallel asb-agents lib suites passed, confirming load sensitivity. The preceding update
+  attempt failed only because governed worktree creation advanced task revision from 3 to 5; no
+  product command failed.
