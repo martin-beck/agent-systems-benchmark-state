@@ -2,7 +2,7 @@
 {
   "branch": "feature/measurement-catalog-semantics",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-11T01:45:23+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-1001"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/measurement-catalog-semantics",
   "observed_dirty": 0,
   "observed_head": "78c63febc0ce6c4724bf4d14121e9ae178e2a020",
-  "owner": "codex-ar1013-final-release-20260911",
+  "owner": "",
   "plan": "../plans/AR-1013.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Define selectable ASB measurements grouped by stable semantic meaning.",
-  "task_revision": 130,
+  "task_revision": 131,
   "title": "Version the measurement catalog and semantic groups",
-  "updated_at": "2026-09-11T00:45:23+00:00",
+  "updated_at": "2026-09-11T00:45:35+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-semantics"
 }
 ---
@@ -380,3 +380,11 @@ duplicate, unit-mismatch, unavailable, and privacy-sensitive metrics.
   protected-main policy repair/post-merge verification before final release.
 
 - 2026-09-11T00:45:23+00:00: Claimed by codex-ar1013-final-release-20260911.
+
+- 2026-09-11T00:45:35+00:00: Acceptance complete. PR #131 merged as 0c65159d with exact reviewed
+  tree 9303272a; all catalog Rust/schema/fixture blobs remain byte-identical on current protected
+  main 6155d63, with only the intended immutable attestation link appended to documentation.
+  Corrective attestations and AR-1040 now provide exact lowercase DCO history and offline
+  verification of the GitHub Web Flow merge boundary. Current main passed all 11 applicable
+  post-merge workflows, including Repository quality under the repaired policy. UI ownership remains
+  exclusively AR-1014/asb-tui; no presentation code was added.
