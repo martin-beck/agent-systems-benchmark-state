@@ -2,22 +2,22 @@
 {
   "branch": "test/serialize-emulated-aarch64-agents",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-11T03:35:27+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1046",
   "next_action": "Await immutable review of exact signed head 9d923c103d1527ab76c702321e2db7c8e3d55d7c/tree c793aacc37facf556d879831584db68ba93e56d4; do not publish PR until review approval.",
   "observed_branch": "test/serialize-emulated-aarch64-agents",
   "observed_dirty": 0,
   "observed_head": "88f4fce68eabc7481d4fb9d35b064ebba32188ba",
-  "owner": "codex-ar1046-aarch64-serialization-20260911",
+  "owner": "",
   "plan": "../plans/AR-1046.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Make the emulated AArch64 asb-agents fake-node readiness fixtures deterministic without changing production semantics.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Serialize emulated AArch64 agent tests",
-  "updated_at": "2026-09-11T01:58:41+00:00",
+  "updated_at": "2026-09-11T01:58:59+00:00",
   "worktree_key": "agent-systems-benchmark-emulated-aarch64-agent-serialization"
 }
 ---
@@ -169,3 +169,11 @@ existing skip and all budgets; do not change Rust production code or any UI/TUI 
 
 - 2026-09-11T01:58:41+00:00: Recorded command exit 0; command argv SHA-256
   eaf2472e4b0ec29bac3303a6d46474c99be3c0ab077feca87b1c3650d4745e53.
+
+- 2026-09-11T01:58:59+00:00: Rejected hypothesis, no merge. Closed draft PR #138 at superseded
+  signed head 9d923c1 after AArch64 run 34552034116 again failed
+  ambient_config_prompt_limits_and_cancellation_fail_closed with HookUnavailable despite serialized
+  execution. Root localized the exact production race: valid regular marker can appear between
+  O_NOFOLLOW open ENOENT and fallback lstat, which current code incorrectly marks Invalid. AR-1047
+  plan/task committed at fc607d8a6; await approval, then implement the deterministic marker
+  interleaving repair. Preserve AR-1046 branch only as negative evidence.
