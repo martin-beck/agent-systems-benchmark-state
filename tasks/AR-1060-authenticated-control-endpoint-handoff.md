@@ -10,7 +10,7 @@
   "id": "AR-1060",
   "next_action": "Freeze the descriptor and reconnect contract, then implement ASB provisioning and standalone asb-tui peer-authenticated consumption in separately reviewed repository changes.",
   "observed_branch": "feature/authenticated-control-endpoint-handoff",
-  "observed_dirty": 1,
+  "observed_dirty": 0,
   "observed_head": "10a353e0342ced88dabbebac7d1da5b0f2511d84",
   "owner": "codex-ar1060-asb-endpoint-provider-20260911",
   "plan": "../plans/AR-1060.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Add authenticated control endpoint handoff",
-  "updated_at": "2026-09-11T05:50:32+00:00",
+  "updated_at": "2026-09-11T05:50:39+00:00",
   "worktree_key": "agent-systems-benchmark-authenticated-control-endpoint-handoff"
 }
 ---
