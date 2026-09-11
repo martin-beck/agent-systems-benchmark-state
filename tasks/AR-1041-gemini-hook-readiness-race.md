@@ -6,15 +6,18 @@
   "depends_on": [],
   "id": "AR-1041",
   "next_action": "Reproduce the readiness-file truncate/write race with deterministic barriers, then implement atomic publication and fail-closed bounded observation.",
+  "observed_branch": "fix/gemini-hook-readiness-race",
+  "observed_dirty": 0,
+  "observed_head": "6155d63bec04a5c76c4323843c26649b0c084f6e",
   "owner": "codex-ar1041-gemini-readiness-20260911",
   "plan": "../plans/AR-1041.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Eliminate the load-sensitive Gemini hook readiness race without weakening validation.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Make Gemini hook readiness publication atomic",
-  "updated_at": "2026-09-11T00:43:10+00:00",
+  "updated_at": "2026-09-11T00:43:16+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-hook-readiness-race"
 }
 ---
