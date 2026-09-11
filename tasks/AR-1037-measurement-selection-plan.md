@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry catalog-backed measurement choices through ASB plan validation, collection and evidence.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Add measurement selection to validated run plans",
-  "updated_at": "2026-09-11T03:43:31+00:00",
+  "updated_at": "2026-09-11T03:45:25+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-selection-plan"
 }
 ---
@@ -54,3 +54,6 @@ exclusively in `martin-beck/asb-tui` under AR-1014.
 
 - 2026-09-11T03:41:59+00:00: Recorded command exit 0; command argv SHA-256
   9ccfcfa9c389668cf5c8f871d8115e0a1d8e06c78ef5b3135f5f0f79d08664ab.
+
+- 2026-09-11T03:45:25+00:00: Recorded command exit 101; command argv SHA-256
+  476105f72caa4cc95ff415ef324a9ee1e1a12507c57629e7848ad27364dad583.
