@@ -8,7 +8,7 @@
     "AR-1023"
   ],
   "id": "AR-1060",
-  "next_action": "Freeze the descriptor and reconnect contract, then implement ASB provisioning and standalone asb-tui peer-authenticated consumption in separately reviewed repository changes.",
+  "next_action": "Obtain immutable review of the frozen SOCK_SEQPACKET framing, then implement only the ASB authenticated-generation producer and broker state machine; keep launch and consumer behavior in AR-1024/1025.",
   "observed_branch": "feature/authenticated-control-endpoint-handoff",
   "observed_dirty": 0,
   "observed_head": "10a353e0342ced88dabbebac7d1da5b0f2511d84",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Add authenticated control endpoint handoff",
-  "updated_at": "2026-09-11T05:51:10+00:00",
+  "updated_at": "2026-09-11T05:51:33+00:00",
   "worktree_key": "agent-systems-benchmark-authenticated-control-endpoint-handoff"
 }
 ---
@@ -97,3 +97,12 @@ planned until their full dependency sets are done.
 
 - 2026-09-11T05:51:10+00:00: Recorded command exit 0; command argv SHA-256
   5e5ffc5446b96baebf2bdd9959d49e029211155440bf2076151c1897c9029dfc.
+
+- 2026-09-11T05:51:33+00:00: Pre-freeze review incorporated before product mutation. Removed unsafe
+  arbitrary fixed-FD adoption, CLOEXEC clearing, proc-fd socket reopening, socketpair peer-identity
+  claims, PID authority/signaling, launch-command acceptance and application continuity ownership.
+  Froze child-stdin SOCK_SEQPACKET possession authority, exact request/reply plus one SCM_RIGHTS
+  descriptor, monotonic deadlines/retry ceilings, probe negotiation plus a second
+  same-UID/PID/starttime unnegotiated stream, typed AuthenticatedGeneration and post-adoption
+  validator seam, receiver shape/CMSG_CLOEXEC checks, explicit epoch/sequence no-wrap ordering and
+  changed-runner behavior owned by AR-1025. Product worktree is clean at 10a353e.
