@@ -2,7 +2,7 @@
 {
   "branch": "test/capability-coverage-sink",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-11T01:35:03+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1023"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "test/capability-coverage-sink",
   "observed_dirty": 0,
   "observed_head": "69888a33cdf8383f4155d3dca1e9180104770b33",
-  "owner": "codex-ar1038-coverage-20260911",
+  "owner": "",
   "plan": "../plans/AR-1038.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Prevent sanitized capability child tests from writing default profraw files into the source checkout.",
-  "task_revision": 103,
+  "task_revision": 104,
   "title": "Preserve coverage sinks in sanitized CLI child tests",
-  "updated_at": "2026-09-11T00:01:58+00:00",
+  "updated_at": "2026-09-11T00:02:01+00:00",
   "worktree_key": "agent-systems-benchmark-capability-coverage-sink"
 }
 ---
@@ -371,3 +371,8 @@ Fix the six `default_*.profraw` files discovered during AR-1013 full coverage wi
   69888a33cdf8383f4155d3dca1e9180104770b33: 12/12 checks SUCCESS, none pending, skipped, or failing.
   Candidate remains clean, signed+DCO, single-test-file scope, unmerged, and ready for a fresh
   immutable independent review.
+
+- 2026-09-11T00:02:01+00:00: Review-blocker successor frozen at PR #132 head
+  69888a33cdf8383f4155d3dca1e9180104770b33/tree 42fd9229538ab7183b71a0517ca6c5bd751bdb99 with local
+  full gates and 12/12 exact-head CI green. Released OPEN for immutable independent review; no merge
+  performed.
