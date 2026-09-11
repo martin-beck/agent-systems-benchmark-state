@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Recover tmux foreground-group qualification",
-  "updated_at": "2026-09-11T01:36:31+00:00",
+  "updated_at": "2026-09-11T01:37:28+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-pane-foreground-group-recovery"
 }
 ---
@@ -101,3 +101,6 @@ absent or changes. Do not change renderer or application behavior.
   clean-coverage refusal because the reviewed change was still dirty; committing signed+DCO then
   rerunning coverage resolved it. Root early diff review found no blocker. Head is intentionally not
   pushed pending immutable review.
+
+- 2026-09-11T01:37:28+00:00: Recorded command exit 0; command argv SHA-256
+  71798ce202dbfe9c3939453be64634ff0f3bd0ce09805f0e810e68fe95f5bb59.
