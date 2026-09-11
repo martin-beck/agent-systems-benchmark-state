@@ -1,7 +1,7 @@
 ---
 {
   "branch": "docs/asb-tui-install-integration-readiness",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "8069f0fb307fbf105c59f4fa60c5eb5b2fc49656",
   "claim_expires": "2026-09-11T06:31:18+00:00",
   "depends_on": [],
   "id": "AR-1055",
