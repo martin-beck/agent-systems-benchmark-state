@@ -10,7 +10,7 @@
   "id": "AR-1036",
   "next_action": "Open protected PR for approved exact head 95fa9dc55f2aedc8c7dba8cb1deab5f225b66782, require all exact-head checks, merge, and verify postmerge.",
   "observed_branch": "feature/measurement-catalog-control",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "95fa9dc55f2aedc8c7dba8cb1deab5f225b66782",
   "owner": "codex-root-ar1036-catalog-20260911",
   "plan": "../plans/AR-1036.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose the versioned ASB measurement catalog to standalone frontends without UI code.",
-  "task_revision": 145,
+  "task_revision": 146,
   "title": "Publish the measurement catalog control contract",
-  "updated_at": "2026-09-11T02:57:31+00:00",
+  "updated_at": "2026-09-11T02:57:38+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-control"
 }
 ---
