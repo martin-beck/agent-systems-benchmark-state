@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Diagnose and isolate concurrent trusted tmux fixture contention.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Isolate concurrent trusted tmux fixtures",
-  "updated_at": "2026-09-11T05:46:20+00:00",
+  "updated_at": "2026-09-11T05:47:49+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-live-fixture-isolation"
 }
 ---
@@ -90,3 +90,6 @@ product/UI behavior remain unchanged.
   because coverage was invoked before the product checkpoint commit; the same coverage gate passed
   after commit. Classified exit-2 combined-script attempt as invocation-only missing required
   ASB_PRODUCT_ROOT for prove-asb-isolation; rerun with the exact ASB root passed.
+
+- 2026-09-11T05:47:49+00:00: Recorded command exit 0; command argv SHA-256
+  58fb224d2a3004186148c639e3773c5f4df8c66bdf113b0882efdd11898e5824.
