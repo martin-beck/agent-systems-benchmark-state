@@ -8,7 +8,7 @@
     "AR-1023"
   ],
   "id": "AR-1036",
-  "next_action": "Open protected PR for approved exact head 95fa9dc55f2aedc8c7dba8cb1deab5f225b66782, require all exact-head checks, merge, and verify postmerge.",
+  "next_action": "Require all 12 PR #140 checks on reviewed exact head 8e8d37e8c7ca7a4f673e8ae84d7395d512d45197, merge only if green, then verify all postmerge workflows.",
   "observed_branch": "feature/measurement-catalog-control",
   "observed_dirty": 0,
   "observed_head": "8e8d37e8c7ca7a4f673e8ae84d7395d512d45197",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose the versioned ASB measurement catalog to standalone frontends without UI code.",
-  "task_revision": 153,
+  "task_revision": 154,
   "title": "Publish the measurement catalog control contract",
-  "updated_at": "2026-09-11T03:01:01+00:00",
+  "updated_at": "2026-09-11T03:01:37+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-control"
 }
 ---
@@ -366,3 +366,10 @@ rendering and help behavior remains exclusively in `martin-beck/asb-tui` under A
 
 - 2026-09-11T03:01:01+00:00: Recorded command exit 0; command argv SHA-256
   09fc1aa6e36945f0ad44ca44c02246777698ea1a59571a8fb1083c9669880de5.
+
+- 2026-09-11T03:01:37+00:00: PR #140 first CI exposed stale separate formal/Cargo.lock after
+  asb-control gained asb-protocol. Reproduced exact --locked failure; repaired only the missing
+  asb-control -> asb-protocol graph edge, with zero package/version/checksum drift. Full formal
+  suite then passed; one known environmental ETXTBSY parallel fixture flake passed serial and
+  immediate full retry. Immutable reviewer approved exact final head/tree and one-line lock delta;
+  force-with-lease updated PR.
