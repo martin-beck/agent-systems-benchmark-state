@@ -23,7 +23,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 34553973054 | `92cf2c847781` | push | Hosted portability and native qualification | completed:success |
 | 34553972942 | `92cf2c847781` | push | Formal assurance | completed:success |
-| 34553972929 | `92cf2c847781` | push | Emulated aarch64 portability | in_progress:- |
+| 34553972929 | `92cf2c847781` | push | Emulated aarch64 portability | completed:success |
 | 34553972898 | `92cf2c847781` | push | Fault assurance | completed:success |
 | 34553972896 | `92cf2c847781` | push | Repository quality | in_progress:- |
 | 34553972892 | `92cf2c847781` | push | Rust verification | completed:success |
