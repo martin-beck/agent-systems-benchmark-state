@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-11T05:06:01+00:00",
   "depends_on": [],
   "id": "AR-1050",
-  "next_action": "Promote and claim the pre-approved test-only recovery, then add bounded stable authenticated tmux startup acquisition before option setup.",
+  "next_action": "Patch bounded two-sample authenticated startup observation in tests/terminal_foundation.rs and compile focused tests.",
   "owner": "codex-ar1050-tmux-startup-readiness-20260911",
   "plan": "../plans/AR-1050.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wait for bounded stable authenticated tmux server, session and window readiness after detached creation.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Acquire authenticated tmux startup readiness",
-  "updated_at": "2026-09-11T03:06:01+00:00",
+  "updated_at": "2026-09-11T03:06:04+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-authenticated-startup-readiness"
 }
 ---
@@ -33,3 +33,8 @@ server/session/window identity and retained pane authority. Change no renderer o
   cba9d7bd2ba40e44aa93d4d92afc64fb942236dfde48fc6a0f4617c06f60c170.
 
 - 2026-09-11T03:06:01+00:00: Heartbeat by codex-ar1050-tmux-startup-readiness-20260911.
+
+- 2026-09-11T03:06:04+00:00: Initial audit complete at exact base aacf672c. First heartbeat
+  invocation used an unsupported --note argument and made no state/product change; classified as
+  invocation-only. Proceeding with immediate guard, stable startup identity, and pre-option
+  revalidation.

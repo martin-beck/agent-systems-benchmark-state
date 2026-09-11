@@ -9,7 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1036](tasks/AR-1036-measurement-catalog-control.md): Publish the measurement catalog control contract | Expose the versioned ASB measurement catalog to standalone frontends without UI code. | Require all 12 PR #140 checks on reviewed exact head 8e8d37e8c7ca7a4f673e8ae84d7395d512d45197, merge only if green, then verify all postmerge workflows. | codex-root-ar1036-catalog-20260911 |
 | P0 | [AR-1045](tasks/AR-1045-gemini-readiness-merge-attestation.md): Attest the Gemini readiness merge boundary | Recover the Gemini readiness publication boundary without rewriting protected main. | Await independent immutable review of clean signed+DCO head d53799a407322f6279d752ad670ff412a1330924, tree ed5e10f973b8f7b3002795fe6332d6a520aed3a2, parent exact green main 23530dfc808650a8f3019c87a1c69fe3d0d654b5. Do not push before review. | codex-ar1045-gemini-attestation-20260911 |
-| P0 | [AR-1050](tasks/AR-1050-tmux-authenticated-startup-readiness.md): Acquire authenticated tmux startup readiness | Wait for bounded stable authenticated tmux server, session and window readiness after detached creation. | Promote and claim the pre-approved test-only recovery, then add bounded stable authenticated tmux startup acquisition before option setup. | codex-ar1050-tmux-startup-readiness-20260911 |
+| P0 | [AR-1050](tasks/AR-1050-tmux-authenticated-startup-readiness.md): Acquire authenticated tmux startup readiness | Wait for bounded stable authenticated tmux server, session and window readiness after detached creation. | Patch bounded two-sample authenticated startup observation in tests/terminal_foundation.rs and compile focused tests. | codex-ar1050-tmux-startup-readiness-20260911 |
 
 ## Open
 
