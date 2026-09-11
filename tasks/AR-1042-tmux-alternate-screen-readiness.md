@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make tmux TUI readiness capture deterministic on the actual alternate screen.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Capture alternate-screen TUI readiness deterministically",
-  "updated_at": "2026-09-11T00:50:00+00:00",
+  "updated_at": "2026-09-11T00:50:40+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-alternate-screen-readiness"
 }
 ---
@@ -49,3 +49,6 @@ diagnostics; do not change renderer or application semantics.
 
 - 2026-09-11T00:50:00+00:00: Recorded command exit 101; command argv SHA-256
   b2c5d4bc5bc591f6bfe95677b0140cc9adcbec5c168bfbdd236ab51e0ab0c464.
+
+- 2026-09-11T00:50:40+00:00: Recorded command exit 0; command argv SHA-256
+  0cc44239b5ab5b9f0ac4556966a5c32470238c9f86a742ba5f28ca57f67b9162.
