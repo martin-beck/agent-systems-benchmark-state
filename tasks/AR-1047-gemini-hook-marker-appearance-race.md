@@ -7,7 +7,7 @@
   "id": "AR-1047",
   "next_action": "Obtain approval for the exact marker-appearance interleaving plan, then promote and claim before product edits.",
   "observed_branch": "fix/gemini-hook-marker-appearance-race",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "2ecb876b82a91a8103926b298c42ad49ce8dd143",
   "owner": "codex-ar1047-gemini-marker-race-20260911",
   "plan": "../plans/AR-1047.md",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Treat a regular marker published between absent open and fallback lstat as pending for descriptor validation on the next poll.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Close the Gemini hook-marker appearance race",
-  "updated_at": "2026-09-11T02:01:46+00:00",
+  "updated_at": "2026-09-11T02:01:52+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-hook-marker-appearance-race"
 }
 ---
