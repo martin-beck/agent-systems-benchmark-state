@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Record the exact reviewed measurement-catalog merge and its non-compliant GitHub-authored DCO identity without rewriting history.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Attest the measurement catalog merge boundary",
-  "updated_at": "2026-09-11T03:47:29+00:00",
+  "updated_at": "2026-09-11T03:47:58+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-merge-attestation"
 }
 ---
@@ -124,3 +124,6 @@ attestation evidence and a corrective future merge recipe using the exact GitHub
 
 - 2026-09-11T03:47:22+00:00: Recorded command exit 0; command argv SHA-256
   5b77f9aa909afd87a60713d4097618442e96583256599e42eb6da4a451454935.
+
+- 2026-09-11T03:47:58+00:00: Recorded command exit 0; command argv SHA-256
+  e1cf755495d5bf9c991f6810bed5ad39c2c884614bb10a7790465ed2b0c7c804.
