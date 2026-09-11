@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-11T02:43:01+00:00",
   "depends_on": [],
   "id": "AR-1042",
-  "next_action": "Merge independently reviewed exact head 7236a393 through the repository-compliant squash path, then verify tree, signature, DCO and both post-merge workflows.",
+  "next_action": "Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification.",
   "owner": "codex-ar1042-tmux-readiness-20260911",
   "plan": "../plans/AR-1042.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make tmux TUI readiness validate the displayed alternate screen deterministically.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Capture alternate-screen TUI readiness deterministically",
-  "updated_at": "2026-09-11T01:19:42+00:00",
+  "updated_at": "2026-09-11T01:21:49+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-alternate-screen-readiness"
 }
 ---
@@ -237,3 +237,10 @@ emit bounded diagnostics; do not change renderer or application semantics.
 
 - 2026-09-11T01:19:42+00:00: Recorded command exit 0; command argv SHA-256
   c106bc02956fef6425864f1f7d6eaaba2aeac20cf8ff671a95a9b5b76c641f8a.
+
+- 2026-09-11T01:21:49+00:00: PR #13 merged as eb4960e816f2fe7cf0f01456655662d33618feb7 with tree
+  6243b05158b77d7c8352a8a9cffc2c2fd77824d9 equal to reviewed head, GitHub signature valid and raw
+  DCO valid. Repository quality run 34550197595 passed. Trusted-main run 34550197610 failed
+  deterministically because tmux pane_pid was not the pane foreground PGID, invalidating the
+  test-only cleanup acquisition assumption. AR-1042 remains in progress and is not accepted;
+  recovery moves to AR-1044.
