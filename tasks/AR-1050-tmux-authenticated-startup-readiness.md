@@ -2,7 +2,7 @@
 {
   "branch": "fix/tmux-authenticated-startup-readiness",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-11T05:03:09+00:00",
+  "claim_expires": "2026-09-11T05:06:01+00:00",
   "depends_on": [],
   "id": "AR-1050",
   "next_action": "Promote and claim the pre-approved test-only recovery, then add bounded stable authenticated tmux startup acquisition before option setup.",
@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wait for bounded stable authenticated tmux server, session and window readiness after detached creation.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Acquire authenticated tmux startup readiness",
-  "updated_at": "2026-09-11T03:03:21+00:00",
+  "updated_at": "2026-09-11T03:06:01+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-authenticated-startup-readiness"
 }
 ---
@@ -31,3 +31,5 @@ server/session/window identity and retained pane authority. Change no renderer o
 
 - 2026-09-11T03:03:21+00:00: Recorded command exit 0; command argv SHA-256
   cba9d7bd2ba40e44aa93d4d92afc64fb942236dfde48fc6a0f4617c06f60c170.
+
+- 2026-09-11T03:06:01+00:00: Heartbeat by codex-ar1050-tmux-startup-readiness-20260911.
