@@ -7,7 +7,7 @@
     "AR-1040"
   ],
   "id": "AR-1043",
-  "next_action": "Await immutable review of exact clean candidate 40a84dda234f250927bb36a5b3c46bb342f60149; once READY, publish/update PR #137 and require all 12 exact-head checks including AArch64 before any merge authorization.",
+  "next_action": "Monitor all 12 exact-head checks on PR #137 at approved head 40a84dda234f250927bb36a5b3c46bb342f60149, including AArch64; do not merge without terminal green and root authorization.",
   "observed_branch": "fix/protected-topic-sync-topology",
   "observed_dirty": 0,
   "observed_head": "40a84dda234f250927bb36a5b3c46bb342f60149",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Accept one exact signed topic-tip sync merge without weakening protected-main policy.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Qualify exact topic-tip synchronization merges",
-  "updated_at": "2026-09-11T02:31:52+00:00",
+  "updated_at": "2026-09-11T02:32:38+00:00",
   "worktree_key": "agent-systems-benchmark-protected-topic-sync-topology"
 }
 ---
@@ -223,3 +223,11 @@ by the plan, preserve all negative cases and restore a green forward protected-m
 
 - 2026-09-11T02:31:52+00:00: Recorded command exit 0; command argv SHA-256
   c9bc310eaf344aad008271605b9f080b892681bbacdf64931f23bf4965b55d27.
+
+- 2026-09-11T02:32:38+00:00: Root immutable review approved exact head/tree/base and transferred the
+  prior review through exact stable patch identity. Force-with-lease updated PR #137 from stale
+  c76975e to exact approved head 40a84dda234f250927bb36a5b3c46bb342f60149; GitHub now reports base
+  92cf2c84778147f9c48498656f0b4a614a4067d6 and fresh 12-check runs including AArch64. The subsequent
+  verification wrapper returned exit 1 only because automatic state reconciliation timed out
+  acquiring the coordinator lock after 10s; product/GitHub verification had already succeeded and no
+  product/test failure occurred.
