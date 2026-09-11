@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make tmux TUI readiness validate the displayed alternate screen deterministically.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Capture alternate-screen TUI readiness deterministically",
-  "updated_at": "2026-09-11T01:06:46+00:00",
+  "updated_at": "2026-09-11T01:07:22+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-alternate-screen-readiness"
 }
 ---
@@ -151,3 +151,6 @@ emit bounded diagnostics; do not change renderer or application semantics.
 
 - 2026-09-11T01:06:46+00:00: Recorded command exit 0; command argv SHA-256
   d5b7d23c58a0d55365927d1b0b92c6d53120452d822284c546c31ffc19946f29.
+
+- 2026-09-11T01:07:22+00:00: Recorded command exit 0; command argv SHA-256
+  c1054a92fb7e7e2a3101b3306c6e27fa325d5c0ab20f15e2c6f242cced3c436e.
