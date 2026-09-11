@@ -9,7 +9,7 @@
   "id": "AR-1043",
   "next_action": "Promote and claim after AR-1040 is confirmed done, then implement the closed topic-tip synchronization topology and hostile policy tests.",
   "observed_branch": "fix/protected-topic-sync-topology",
-  "observed_dirty": 2,
+  "observed_dirty": 5,
   "observed_head": "44eb1b48cb79b789252eff1cc798980d868c908c",
   "owner": "codex-ar1043-protected-topic-sync-20260911",
   "plan": "../plans/AR-1043.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Accept one exact signed topic-tip sync merge without weakening protected-main policy.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Qualify exact topic-tip synchronization merges",
-  "updated_at": "2026-09-11T01:06:03+00:00",
+  "updated_at": "2026-09-11T01:06:54+00:00",
   "worktree_key": "agent-systems-benchmark-protected-topic-sync-topology"
 }
 ---
