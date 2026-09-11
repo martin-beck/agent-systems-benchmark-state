@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-window-option-portability",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-11T04:19:32+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1048",
   "next_action": "Remain OPEN pending AR-1049 exact created-window identity recovery and a green trusted-main rerun.",
-  "owner": "codex-ar1048-tmux-window-portability-20260911",
+  "owner": "",
   "plan": "../plans/AR-1048.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Use an explicit tmux window-option command so trusted-main terminal qualification is portable.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Make tmux window-option setup portable",
-  "updated_at": "2026-09-11T02:38:20+00:00",
+  "updated_at": "2026-09-11T02:38:23+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-window-option-portability"
 }
 ---
@@ -119,3 +119,6 @@ authority, and change no renderer or application behavior.
   trailer. Repository quality 34555068475 passed. Trusted-main 34555068496 failed: 18/22 terminal
   tests passed, but all four tmux fixtures rejected exact session:0 option targeting, falsifying the
   fixed-index assumption. AR-1049 is the narrow pre-approved identity-based recovery.
+
+- 2026-09-11T02:38:23+00:00: Merged command-namespace repair remains unaccepted because trusted-main
+  falsified the fixed window index; AR-1049 will target the exact returned window identity.
