@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1058.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Diagnose and repair the remaining trusted tmux stable-startup observation failure.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Diagnose tmux startup observation",
-  "updated_at": "2026-09-11T05:05:00+00:00",
+  "updated_at": "2026-09-11T05:06:13+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-startup-observation-diagnostics"
 }
 ---
@@ -24,3 +24,6 @@ Trusted-main run 34564426538 at exact merge
 fixtures still fail later at generic `tmux_startup_not_ready`. Add closed startup/pane substages
 first, then repair only the observed portability gap. No renderer, UI, lifecycle protocol,
 dependency, workflow or ASB source change is in scope.
+
+- 2026-09-11T05:06:13+00:00: Exact-main Trusted main 34564426538 proves server acquisition succeeds
+  and the stable-startup/pane diagnostic is dependency-ready.
