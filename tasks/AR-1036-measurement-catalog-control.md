@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose the versioned ASB measurement catalog to standalone frontends without UI code.",
-  "task_revision": 141,
+  "task_revision": 142,
   "title": "Publish the measurement catalog control contract",
-  "updated_at": "2026-09-11T02:55:03+00:00",
+  "updated_at": "2026-09-11T02:55:12+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-control"
 }
 ---
@@ -336,3 +336,6 @@ rendering and help behavior remains exclusively in `martin-beck/asb-tui` under A
   public invalid version offers now reject before socket connect with no-accept regression, and raw
   publication wrapper bytes are capped before decode with outer-whitespace regression. Exact head
   full workspace tests and workspace clippy are green; contract consistency run-tests is green.
+
+- 2026-09-11T02:55:12+00:00: Recorded command exit 0; command argv SHA-256
+  187242ee63f931b31e01491ffc5dd693173bcd99728ad810d0e637a53836ac68.
