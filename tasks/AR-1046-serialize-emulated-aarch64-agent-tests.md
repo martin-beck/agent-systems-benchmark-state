@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the emulated AArch64 asb-agents fake-node readiness fixtures deterministic without changing production semantics.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Serialize emulated AArch64 agent tests",
-  "updated_at": "2026-09-11T01:44:44+00:00",
+  "updated_at": "2026-09-11T01:44:54+00:00",
   "worktree_key": "agent-systems-benchmark-emulated-aarch64-agent-serialization"
 }
 ---
@@ -90,3 +90,6 @@ existing skip and all budgets; do not change Rust production code or any UI/TUI 
 
 - 2026-09-11T01:44:44+00:00: Recorded command exit 0; command argv SHA-256
   b3907d09d4151424aeb6153c5a1bb7c57940fbb3a015e422f53c0c86d781e7ff.
+
+- 2026-09-11T01:44:54+00:00: Recorded command exit 0; command argv SHA-256
+  8d9e03317c97db860db694d3afe1691fe087140bfa67b4c78961ddad1c47de96.
