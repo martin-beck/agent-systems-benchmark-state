@@ -24,7 +24,7 @@ Generated from local Git and GitHub. Do not edit.
 | 34548483091 | `44eb1b48cb79` | push | Formal assurance | in_progress:- |
 | 34548483088 | `44eb1b48cb79` | push | Emulated aarch64 portability | in_progress:- |
 | 34548483050 | `44eb1b48cb79` | push | Hosted portability and native qualification | completed:success |
-| 34548483011 | `44eb1b48cb79` | push | Fault assurance | in_progress:- |
+| 34548483011 | `44eb1b48cb79` | push | Fault assurance | completed:success |
 | 34548482999 | `44eb1b48cb79` | push | Rust verification | in_progress:- |
 | 34548482976 | `44eb1b48cb79` | push | Repository quality | completed:failure |
 | 34548057685 | `297895dbdee6` | pull_request | Repository quality | completed:success |
