@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Diagnose and repair the trusted-runner tmux server-authority portability gap without weakening cleanup authentication.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Diagnose trusted tmux server authority",
-  "updated_at": "2026-09-11T04:13:27+00:00",
+  "updated_at": "2026-09-11T04:14:17+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-server-authority-portability"
 }
 ---
@@ -156,3 +156,6 @@ authenticated cleanup and zero-widening invariant. Change no product UI, rendere
   commit command succeeded but its post-command coordinator evidence update hit LOCK_TIMEOUT; later
   wrapped gates reconciled normally, so this was coordinator-only after the durable signed product
   commit.
+
+- 2026-09-11T04:14:17+00:00: Recorded command exit 0; command argv SHA-256
+  25f4e819e9ee9efd8c0d36dc65be8bc277fa44d4cad0d529a6849a8c499ff47c.
