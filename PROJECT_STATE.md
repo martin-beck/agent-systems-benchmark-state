@@ -20,7 +20,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34558262221 | `1a19b692d724` | push | Fault assurance | in_progress:- |
+| 34558262221 | `1a19b692d724` | push | Fault assurance | completed:success |
 | 34558262216 | `1a19b692d724` | push | Rust verification | in_progress:- |
 | 34558262187 | `1a19b692d724` | push | Emulated aarch64 portability | in_progress:- |
 | 34558262185 | `1a19b692d724` | push | Hosted portability and native qualification | completed:success |
