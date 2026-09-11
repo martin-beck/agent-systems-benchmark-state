@@ -10,16 +10,16 @@
   "next_action": "Wait for AR-1041/PR #136 integration decision; if protected main advances, rebase AR-1043 to that exact main as a clean single-parent signed commit, rerun focused gates, then publish for exact-head CI and immutable review.",
   "observed_branch": "fix/protected-topic-sync-topology",
   "observed_dirty": 0,
-  "observed_head": "c7b7265e067ff946b9d5cbedc2749223a9dc2db2",
+  "observed_head": "c76975e8c0b986fc9dd5b013467021f054182981",
   "owner": "codex-ar1043-protected-topic-sync-20260911",
   "plan": "../plans/AR-1043.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Accept one exact signed topic-tip sync merge without weakening protected-main policy.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Qualify exact topic-tip synchronization merges",
-  "updated_at": "2026-09-11T01:24:25+00:00",
+  "updated_at": "2026-09-11T01:24:32+00:00",
   "worktree_key": "agent-systems-benchmark-protected-topic-sync-topology"
 }
 ---
