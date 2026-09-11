@@ -2,7 +2,7 @@
 {
   "branch": "fix/protected-topic-sync-topology",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-11T04:24:13+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1040"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "fix/protected-topic-sync-topology",
   "observed_dirty": 0,
   "observed_head": "40a84dda234f250927bb36a5b3c46bb342f60149",
-  "owner": "codex-ar1043-protected-topic-sync-20260911",
+  "owner": "",
   "plan": "../plans/AR-1043.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Accept one exact signed topic-tip sync merge without weakening protected-main policy.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Qualify exact topic-tip synchronization merges",
-  "updated_at": "2026-09-11T02:45:30+00:00",
+  "updated_at": "2026-09-11T02:45:52+00:00",
   "worktree_key": "agent-systems-benchmark-protected-topic-sync-topology"
 }
 ---
@@ -275,3 +275,13 @@ by the plan, preserve all negative cases and restore a green forward protected-m
 
 - 2026-09-11T02:45:30+00:00: Recorded command exit 0; command argv SHA-256
   dfdd162c9fdf7a165019f4609d959846cd9870638b309289cecab48381176853.
+
+- 2026-09-11T02:45:52+00:00: Merged independently approved PR #137 as protected-main commit
+  23530dfc808650a8f3019c87a1c69fe3d0d654b5. Exact parents are
+  92cf2c84778147f9c48498656f0b4a614a4067d6 and reviewed head
+  40a84dda234f250927bb36a5b3c46bb342f60149; merge tree is exact reviewed
+  f9b841b11b68ac0311e13d8dfa0b2e0eab2ad69d. GitHub verification is verified=true/reason=valid, raw
+  message ends exact matching lowercase Signed-off-by trailer, and all seven postmerge workflows are
+  terminal success: quality 34555432232, Rust 34555432254, AArch64 34555432283, fault 34555432242,
+  headers 34555432248, platform 34555432268, formal 34555432305. Historical failed merges remain
+  truthfully preserved.
