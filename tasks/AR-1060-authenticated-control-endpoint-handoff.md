@@ -2,22 +2,22 @@
 {
   "branch": "feature/authenticated-control-endpoint-handoff",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-11T08:36:18+00:00",
   "depends_on": [
     "AR-1022",
     "AR-1023"
   ],
   "id": "AR-1060",
   "next_action": "Freeze the descriptor and reconnect contract, then implement ASB provisioning and standalone asb-tui peer-authenticated consumption in separately reviewed repository changes.",
-  "owner": "",
+  "owner": "codex-ar1060-asb-endpoint-provider-20260911",
   "plan": "../plans/AR-1060.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Add authenticated control endpoint handoff",
-  "updated_at": "2026-09-11T05:35:04+00:00",
+  "updated_at": "2026-09-11T05:36:18+00:00",
   "worktree_key": "agent-systems-benchmark-authenticated-control-endpoint-handoff"
 }
 ---
@@ -77,3 +77,5 @@ planned until their full dependency sets are done.
   and AR-1025 remains PLANNED/unowned, both with one-way AR-1060 dependencies. Unique-ID, targeted
   strict schema, graph/render, privacy, reconcile and live doctor checks passed; implementation
   awaits a separately claimed worker and repository-local immutable reviews.
+
+- 2026-09-11T05:36:18+00:00: Claimed by codex-ar1060-asb-endpoint-provider-20260911.
