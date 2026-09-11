@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Treat a regular marker published between absent open and fallback lstat as pending for descriptor validation on the next poll.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Close the Gemini hook-marker appearance race",
-  "updated_at": "2026-09-11T02:07:46+00:00",
+  "updated_at": "2026-09-11T02:09:43+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-hook-marker-appearance-race"
 }
 ---
@@ -79,3 +79,6 @@ remain `Invalid`. Add an exact deterministic interposition test and preserve all
   manifests and 57 platform tests pass. Earlier exit 1 fmt check was a mechanical layout finding
   before tests; 0-test exact filters were invalid evidence due omitted gemini::tests:: prefix and
   were corrected to 1/1 each.
+
+- 2026-09-11T02:09:43+00:00: Recorded command exit 0; command argv SHA-256
+  0e7d5419f9cb1c6faa517b04b489ecd4b87d4e135912302a508d3157f564e3db.
