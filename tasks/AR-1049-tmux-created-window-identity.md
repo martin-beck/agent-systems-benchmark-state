@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind tmux remain-on-exit setup to the exact created window identity instead of a fixed index.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Bind tmux setup to its created window",
-  "updated_at": "2026-09-11T02:59:57+00:00",
+  "updated_at": "2026-09-11T03:00:12+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-created-window-identity"
 }
 ---
@@ -127,3 +127,6 @@ ID, and preserve all established cleanup authority. Change no renderer or applic
 
 - 2026-09-11T02:59:57+00:00: Recorded command exit 1; command argv SHA-256
   65bc858ad4c5d84e940fd443c1c15eb52a1df6bc1f5ff448f3f542b8cf995dfe.
+
+- 2026-09-11T03:00:12+00:00: Recorded command exit 0; command argv SHA-256
+  67702ffe5d009344e51858a93b7845c3647f5ec115277dd2c9b47b6fe7e45d66.
