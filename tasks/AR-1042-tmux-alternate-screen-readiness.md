@@ -12,20 +12,21 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make tmux TUI readiness validate the displayed alternate screen deterministically.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Capture alternate-screen TUI readiness deterministically",
-  "updated_at": "2026-09-11T00:54:40+00:00",
+  "updated_at": "2026-09-11T00:55:15+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-alternate-screen-readiness"
 }
 ---
 
-Trusted-main run 34546963576 failed twice because the probe captured tmux's primary pane while the
-application rendered in alternate storage. Use a clean tmux server, alternate capture and bounded
-diagnostics; do not change renderer or application semantics.
+Trusted-main run 34546963576 failed twice in a tmux readiness probe influenced by ambient server
+configuration. An exact tmux 3.4 probe established that `capture-pane -p` returns the displayed
+live alternate-screen frame while `-a` returns blank alternate-history storage in this state. Use a
+clean tmux server, bracket displayed-pane capture with exact `alternate_on=1` observations, and
+emit bounded diagnostics; do not change renderer or application semantics.
 
-- 2026-09-11T00:41:41+00:00: Two exact trusted-main failures prove primary-pane polling cannot
-  observe the actual alternate-screen frame; independent diagnosis specifies a narrow test-only
-  repair.
+- 2026-09-11T00:41:41+00:00: Two exact trusted-main failures require a narrow deterministic
+  readiness repair; the later exact tmux probe supersedes the initial primary-buffer diagnosis.
 
 - 2026-09-11T00:43:01+00:00: Claimed by codex-ar1042-tmux-readiness-20260911.
 
@@ -78,3 +79,6 @@ diagnostics; do not change renderer or application semantics.
   returned the displayed live alternate frame, while -a returned blank alternate-history storage.
   Readiness now requires valid recognized UTF-8 content bracketed by exact alternate_on=1
   observations.
+
+- 2026-09-11T00:55:15+00:00: Recorded command exit 0; command argv SHA-256
+  35f99fd9798f9f4cd4ce2999262058b80149389f04814457616e69c4694abeb7.
