@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Align offline signature policy with the repository-required GitHub merge path.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Reconcile protected-merge signature verification",
-  "updated_at": "2026-09-11T00:28:18+00:00",
+  "updated_at": "2026-09-11T00:28:26+00:00",
   "worktree_key": "agent-systems-benchmark-protected-merge-signature-policy"
 }
 ---
@@ -108,3 +108,6 @@ without allowing Web Flow signatures on ordinary commits or PR heads. This AR ow
   EXE001 was fixed; octopus expected-message assertion was corrected; one failure-path run omitted
   cargo from PATH and passed on governed rerun. Generated profraw artifacts were removed; worktree
   is clean.
+
+- 2026-09-11T00:28:26+00:00: Recorded command exit 0; command argv SHA-256
+  fffb3f1d0364f64a410516af7fdba5b2540b8385dcf4cfd2ffc98428c76d97ca.
