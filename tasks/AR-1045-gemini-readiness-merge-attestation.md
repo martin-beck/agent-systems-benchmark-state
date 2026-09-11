@@ -7,17 +7,17 @@
   "id": "AR-1045",
   "next_action": "Create a forward-only, bounded attestation of PR #136 merge 2ecb876 and add regression evidence for the exact GitHub merge-author DCO recipe; do not rewrite protected main.",
   "observed_branch": "docs/gemini-readiness-merge-attestation",
-  "observed_dirty": 4,
-  "observed_head": "23530dfc808650a8f3019c87a1c69fe3d0d654b5",
+  "observed_dirty": 0,
+  "observed_head": "d53799a407322f6279d752ad670ff412a1330924",
   "owner": "codex-ar1045-gemini-attestation-20260911",
   "plan": "../plans/AR-1045.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover the Gemini readiness publication boundary without rewriting protected main.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Attest the Gemini readiness merge boundary",
-  "updated_at": "2026-09-11T03:02:32+00:00",
+  "updated_at": "2026-09-11T03:02:37+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-readiness-merge-attestation"
 }
 ---
