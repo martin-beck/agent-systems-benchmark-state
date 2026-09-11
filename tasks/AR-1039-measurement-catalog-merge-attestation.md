@@ -2,22 +2,22 @@
 {
   "branch": "docs/measurement-catalog-merge-attestation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-11T02:00:42+00:00",
   "depends_on": [],
   "id": "AR-1039",
   "next_action": "Independently review draft PR #134 exact head 4a7eb724c601ab8fb2a6dd4552f54726ad3a0dd9 and tree 141362f96bd29c2694c5049d9d2010211fbaac99; do not merge before approval and use the exact lowercase GitHub-author DCO trailer.",
   "observed_branch": "docs/measurement-catalog-merge-attestation",
   "observed_dirty": 0,
   "observed_head": "607a3afb3a44b87f9c60b6ae3bc764570e84d5fe",
-  "owner": "",
+  "owner": "codex-ar1039-final-integration-20260911",
   "plan": "../plans/AR-1039.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Recover the measurement catalog publication boundary without rewriting protected main.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Attest the measurement catalog merge boundary",
-  "updated_at": "2026-09-10T23:57:11+00:00",
+  "updated_at": "2026-09-11T00:00:42+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-merge-attestation"
 }
 ---
@@ -272,3 +272,5 @@ the corrective merge commit uses an actual multiline DCO trailer. This AR owns n
   4a7eb724c601ab8fb2a6dd4552f54726ad3a0dd9, tree 141362f96bd29c2694c5049d9d2010211fbaac99, hosted
   checks 12/12 SUCCESS. Released OPEN solely for independent immutable review. Do not merge before
   approval; required GitHub merge trailer is Signed-off-by: martin-beck <martin.beck2@gmx.de>.
+
+- 2026-09-11T00:00:42+00:00: Claimed by codex-ar1039-final-integration-20260911.
