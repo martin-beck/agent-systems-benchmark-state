@@ -2,19 +2,19 @@
 {
   "branch": "fix/protected-merge-signature-policy",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-11T02:06:18+00:00",
   "depends_on": [],
   "id": "AR-1040",
   "next_action": "Pin and narrowly verify GitHub Web Flow signatures only for canonical protected-main merge commits while keeping PR heads SSH-only.",
-  "owner": "",
+  "owner": "codex-ar1040-merge-signature-20260911",
   "plan": "../plans/AR-1040.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Align offline signature policy with the repository-required GitHub merge path.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Reconcile protected-merge signature verification",
-  "updated_at": "2026-09-11T00:06:02+00:00",
+  "updated_at": "2026-09-11T00:06:18+00:00",
   "worktree_key": "agent-systems-benchmark-protected-merge-signature-policy"
 }
 ---
@@ -26,3 +26,5 @@ without allowing Web Flow signatures on ordinary commits or PR heads. This AR ow
 
 - 2026-09-11T00:06:02+00:00: Protected main demonstrates a live signature-policy contradiction;
   focused recovery is dependency-ready.
+
+- 2026-09-11T00:06:18+00:00: Claimed by codex-ar1040-merge-signature-20260911.
