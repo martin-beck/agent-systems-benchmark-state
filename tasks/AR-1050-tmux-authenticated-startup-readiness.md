@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-authenticated-startup-readiness",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-11T05:44:12+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1050",
   "next_action": "Publish approved exact head 46145ad63af61d0b6f4549f06c001f33d60f02c1, open PR, require exact-head CI, then merge and run trusted-main qualification only if all green.",
-  "owner": "codex-ar1050-tmux-startup-readiness-20260911",
+  "owner": "",
   "plan": "../plans/AR-1050.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Wait for bounded stable authenticated tmux server, session and window readiness after detached creation.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Acquire authenticated tmux startup readiness",
-  "updated_at": "2026-09-11T03:51:10+00:00",
+  "updated_at": "2026-09-11T03:51:39+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-authenticated-startup-readiness"
 }
 ---
@@ -261,3 +261,10 @@ server/session/window identity and retained pane authority. Change no renderer o
 
 - 2026-09-11T03:51:10+00:00: Recorded command exit 0; command argv SHA-256
   56fca2352c85d10725d44cc5fdd6bf0693dca3380f2e9f8f32b99ef3c141177a.
+
+- 2026-09-11T03:51:39+00:00: PR #17 merged as GitHub-verified
+  cb28f246a591d2ce98ecbfa3d4f54052e99a652b with exact reviewed tree
+  b64bd9d15a985deb43373ebff8140a3bfa2a8cef. Exact-head run 34559652266 and postmerge Repository
+  quality 34559774880 passed. Trusted-main 34559774865 failed 21/26: all five live tmux fixtures
+  exhausted tmux_startup_not_ready, including server-observation-only acquisition. AR-1052 owns
+  closed diagnostic and narrow portability recovery; AR-1050 remains open pending it.
