@@ -2,7 +2,7 @@
 {
   "branch": "fix/protected-topic-sync-topology",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-11T04:24:13+00:00",
   "depends_on": [
     "AR-1040"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "fix/protected-topic-sync-topology",
   "observed_dirty": 0,
   "observed_head": "c76975e8c0b986fc9dd5b013467021f054182981",
-  "owner": "",
+  "owner": "codex-ar1043-protected-topic-sync-20260911",
   "plan": "../plans/AR-1043.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Accept one exact signed topic-tip sync merge without weakening protected-main policy.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Qualify exact topic-tip synchronization merges",
-  "updated_at": "2026-09-11T01:35:22+00:00",
+  "updated_at": "2026-09-11T02:24:13+00:00",
   "worktree_key": "agent-systems-benchmark-protected-topic-sync-topology"
 }
 ---
@@ -187,3 +187,5 @@ by the plan, preserve all negative cases and restore a green forward protected-m
   AArch64 HookUnavailable failures. AR-1046 plan/task was committed as 294e879d7 and root approved
   the narrow two-file recovery. Resume AR-1043 only after AR-1046 restores protected main, then
   cleanly rebase the preserved patch.
+
+- 2026-09-11T02:24:13+00:00: Claimed by codex-ar1043-protected-topic-sync-20260911.
