@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-11T04:19:32+00:00",
   "depends_on": [],
   "id": "AR-1048",
-  "next_action": "Await immutable different-agent review of signed+DCO head 72f2f5575054f2efba00d3e31a481c34f67b91fb tree f0e9da5847058e2dd6b2b01d0508f0c2a00b996e before publication and exact-head CI; do not merge.",
+  "next_action": "Await root merge authorization for independently approved PR #15 exact head 72f2f5575054f2efba00d3e31a481c34f67b91fb after exact-head Repository quality run 34554860348 passed; do not merge early.",
   "owner": "codex-ar1048-tmux-window-portability-20260911",
   "plan": "../plans/AR-1048.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use an explicit tmux window-option command so trusted-main terminal qualification is portable.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Make tmux window-option setup portable",
-  "updated_at": "2026-09-11T02:32:02+00:00",
+  "updated_at": "2026-09-11T02:32:20+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-window-option-portability"
 }
 ---
@@ -81,3 +81,10 @@ authority, and change no renderer or application behavior.
 
 - 2026-09-11T02:32:02+00:00: Recorded command exit 0; command argv SHA-256
   1de320c67a97b26d6bbe59b12150827377131400b68de277ec54b98fe2b9549c.
+
+- 2026-09-11T02:32:20+00:00: Independent immutable review approved exact base
+  f5434c938883b4f756f525038dc1b6e6c0a90761, head 72f2f5575054f2efba00d3e31a481c34f67b91fb, tree
+  f0e9da5847058e2dd6b2b01d0508f0c2a00b996e. Draft PR #15 is published at that exact remote
+  head/tree; local allowed-signers verification passes. Exact-head Repository quality run
+  34554860348 passed in 1m28s. The first publication attempt acquired no wrapper lock and caused no
+  external effect; the retry succeeded.
