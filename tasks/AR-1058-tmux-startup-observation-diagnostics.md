@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Diagnose and repair the remaining trusted tmux stable-startup observation failure.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Diagnose tmux startup observation",
-  "updated_at": "2026-09-11T05:15:44+00:00",
+  "updated_at": "2026-09-11T05:15:56+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-startup-observation-diagnostics"
 }
 ---
@@ -89,3 +89,6 @@ dependency, workflow or ASB source change is in scope.
   unbound product path; rerun from the bound state project exited 0. Current evidence is focused
   diagnostic PASS, serial terminal 30/30 PASS, cargo test --locked PASS, fmt --check PASS, and
   Clippy all-targets PASS.
+
+- 2026-09-11T05:15:56+00:00: Recorded command exit 0; command argv SHA-256
+  80ab7afb25442a2ef3a9862692d9c06a1ab59e2deed0dafc1d9b31d7f521b3c8.
