@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make standalone asb-tui consume precise privacy-safe measurement validation diagnostics.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Harden asb-tui control v1.3 readiness",
-  "updated_at": "2026-09-11T05:10:08+00:00",
+  "updated_at": "2026-09-11T05:10:24+00:00",
   "worktree_key": "agent-systems-benchmark-state-asb-tui-control-v1-3-readiness"
 }
 ---
@@ -59,3 +59,6 @@ or any feature-task status.
 
 - 2026-09-11T05:10:08+00:00: Recorded command exit 101; command argv SHA-256
   c3ee409a13d0fa2e776de8b1099f237eea5d2446233ce977c63918c0592469d5.
+
+- 2026-09-11T05:10:24+00:00: Recorded command exit 0; command argv SHA-256
+  ba4b2259d00a386eaf8689fa44b3914d5a9043441ac08097ce24b0311791ab42.
