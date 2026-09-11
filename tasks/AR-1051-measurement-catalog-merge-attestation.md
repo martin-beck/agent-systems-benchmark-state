@@ -9,7 +9,7 @@
   "id": "AR-1051",
   "next_action": "After AR-1045 restores a green protected-main descendant, publish a bounded immutable attestation for PR #140 and its missing-DCO merge boundary.",
   "observed_branch": "docs/measurement-catalog-merge-attestation",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "1a19b692d724fd5ba1996470daccbfed06171a0a",
   "owner": "codex-ar1051-measurement-catalog-attestation-20260911",
   "plan": "../plans/AR-1051.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Record the exact reviewed measurement-catalog merge and its non-compliant GitHub-authored DCO identity without rewriting history.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Attest the measurement catalog merge boundary",
-  "updated_at": "2026-09-11T03:35:46+00:00",
+  "updated_at": "2026-09-11T03:35:52+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-merge-attestation"
 }
 ---
