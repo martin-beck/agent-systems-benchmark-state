@@ -7,7 +7,7 @@
   "id": "AR-1046",
   "next_action": "Obtain approval for the narrow two-file test/CI plan, then promote and claim before any product edit.",
   "observed_branch": "test/serialize-emulated-aarch64-agents",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "2ecb876b82a91a8103926b298c42ad49ce8dd143",
   "owner": "codex-ar1046-aarch64-serialization-20260911",
   "plan": "../plans/AR-1046.md",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the emulated AArch64 asb-agents fake-node readiness fixtures deterministic without changing production semantics.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Serialize emulated AArch64 agent tests",
-  "updated_at": "2026-09-11T01:36:51+00:00",
+  "updated_at": "2026-09-11T01:36:57+00:00",
   "worktree_key": "agent-systems-benchmark-emulated-aarch64-agent-serialization"
 }
 ---
