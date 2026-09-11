@@ -21,8 +21,8 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34553973054 | `92cf2c847781` | push | Hosted portability and native qualification | in_progress:- |
-| 34553972942 | `92cf2c847781` | push | Formal assurance | queued:- |
+| 34553973054 | `92cf2c847781` | push | Hosted portability and native qualification | completed:success |
+| 34553972942 | `92cf2c847781` | push | Formal assurance | in_progress:- |
 | 34553972929 | `92cf2c847781` | push | Emulated aarch64 portability | in_progress:- |
 | 34553972898 | `92cf2c847781` | push | Fault assurance | in_progress:- |
 | 34553972896 | `92cf2c847781` | push | Repository quality | in_progress:- |
