@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 395,
+  "task_revision": 396,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-11T00:19:26+00:00",
+  "updated_at": "2026-09-11T00:19:34+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -1375,3 +1375,6 @@ Implementation has not started. Read the linked plan before claiming.
   root; first cargo attempts lacked sanitized cargo/rustc PATH, then passed with exact Rust 1.93
   path; first cargo-audit invocation omitted its required audit subcommand, then passed. No
   source/schema/artifact/UI/runtime change and no merge.
+
+- 2026-09-11T00:19:34+00:00: Recorded command exit 0; command argv SHA-256
+  6bded1e80cbdb42f2f13887c02f0402046372e82664e15ed0ab12005a02cf2cd.
