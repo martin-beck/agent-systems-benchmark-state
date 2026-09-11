@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Eliminate the load-sensitive Gemini hook readiness race without weakening validation.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Make Gemini hook readiness publication atomic",
-  "updated_at": "2026-09-11T00:57:22+00:00",
+  "updated_at": "2026-09-11T00:57:38+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-hook-readiness-race"
 }
 ---
@@ -95,3 +95,6 @@ any TUI code.
   8dbe8c2acb7f80bb6b94c2e88d5dd02e0f292a4a90fab370481a06600106295e.
 
 - 2026-09-11T00:57:22+00:00: Heartbeat by codex-ar1041-gemini-readiness-20260911.
+
+- 2026-09-11T00:57:38+00:00: Recorded command exit 0; command argv SHA-256
+  d8e74c8b01f997dd54533e3cfd63763f753e161c2b2929d7a97eec28a4fb867b.
