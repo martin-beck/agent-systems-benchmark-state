@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent sanitized capability child tests from writing default profraw files into the source checkout.",
-  "task_revision": 124,
+  "task_revision": 125,
   "title": "Preserve coverage sinks in sanitized CLI child tests",
-  "updated_at": "2026-09-11T00:55:53+00:00",
+  "updated_at": "2026-09-11T00:56:32+00:00",
   "worktree_key": "agent-systems-benchmark-capability-coverage-sink"
 }
 ---
@@ -446,3 +446,6 @@ Fix the six `default_*.profraw` files discovered during AR-1013 full coverage wi
 
 - 2026-09-11T00:55:53+00:00: Recorded command exit 0; command argv SHA-256
   f777f880e62380d4bd0ccaff7bc6943f04e18b3a601f4beb8e918bf2d82db472.
+
+- 2026-09-11T00:56:32+00:00: Recorded command exit 0; command argv SHA-256
+  4c36fad969596828e44a07363cd6fa70d4fee076c95f24c9beddedbae5fda879.
