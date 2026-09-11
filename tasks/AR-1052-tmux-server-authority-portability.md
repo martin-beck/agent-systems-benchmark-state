@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-11T05:51:44+00:00",
   "depends_on": [],
   "id": "AR-1052",
-  "next_action": "Expose the exact trusted-runner tmux server-observation failure as a bounded closed diagnostic before changing authority semantics.",
+  "next_action": "Publish diagnostic-only exact 9c4cb4c42b9398c610e291759fffff420cc0af86/tree 2c2a5edd20b877c9f28886fb400cfc3c1e430d6b as draft and inspect exact-head trusted diagnostics before changing authority semantics.",
   "owner": "codex-ar1052-tmux-authority-portability-20260911",
   "plan": "../plans/AR-1052.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Diagnose and repair the trusted-runner tmux server-authority portability gap without weakening cleanup authentication.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Diagnose trusted tmux server authority",
-  "updated_at": "2026-09-11T03:56:07+00:00",
+  "updated_at": "2026-09-11T03:56:30+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-server-authority-portability"
 }
 ---
@@ -60,3 +60,11 @@ authenticated cleanup and zero-widening invariant. Change no product UI, rendere
 
 - 2026-09-11T03:56:07+00:00: Recorded command exit 0; command argv SHA-256
   e4d78c59fede11edb6cdeb6d0e837c2b3e234b92d3022fc7f64b7a1d8b34cfa3.
+
+- 2026-09-11T03:56:30+00:00: Closed diagnostic checkpoint: one test-only file, signed+DCO clean head
+  9c4cb4c42b9398c610e291759fffff420cc0af86. Server observation now classifies only fixed bounded
+  stages and acquisition reports the final closed stage on exhaustion; injected stage
+  labels/sequences pass. Local focused 27/27 serial and 27/27 parallel, fmt and all-target Clippy
+  pass. Initial compile exit 101 was code-local String conversion/Option comparison after changing
+  the diagnostic return type; repaired and rerun green. Initial cargo invocation exit 127 omitted
+  the governed absolute Cargo PATH and manifest path; invocation-only, corrected immediately.
