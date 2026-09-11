@@ -7,7 +7,7 @@
   "id": "AR-1046",
   "next_action": "Await immutable review of exact signed head 9d923c103d1527ab76c702321e2db7c8e3d55d7c/tree c793aacc37facf556d879831584db68ba93e56d4; do not publish PR until review approval.",
   "observed_branch": "test/serialize-emulated-aarch64-agents",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "9d923c103d1527ab76c702321e2db7c8e3d55d7c",
   "owner": "codex-ar1046-aarch64-serialization-20260911",
   "plan": "../plans/AR-1046.md",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the emulated AArch64 asb-agents fake-node readiness fixtures deterministic without changing production semantics.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Serialize emulated AArch64 agent tests",
-  "updated_at": "2026-09-11T01:53:30+00:00",
+  "updated_at": "2026-09-11T01:53:37+00:00",
   "worktree_key": "agent-systems-benchmark-emulated-aarch64-agent-serialization"
 }
 ---
