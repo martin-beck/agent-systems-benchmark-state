@@ -2,7 +2,7 @@
 {
   "branch": "fix/protected-topic-sync-topology",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-11T02:03:17+00:00",
   "depends_on": [
     "AR-1040"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "fix/protected-topic-sync-topology",
   "observed_dirty": 0,
   "observed_head": "c76975e8c0b986fc9dd5b013467021f054182981",
-  "owner": "",
+  "owner": "codex-ar1043-protected-topic-sync-20260911",
   "plan": "../plans/AR-1043.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Accept one exact signed topic-tip sync merge without weakening protected-main policy.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Qualify exact topic-tip synchronization merges",
-  "updated_at": "2026-09-11T01:32:43+00:00",
+  "updated_at": "2026-09-11T01:33:17+00:00",
   "worktree_key": "agent-systems-benchmark-protected-topic-sync-topology"
 }
 ---
@@ -165,3 +165,5 @@ by the plan, preserve all negative cases and restore a green forward protected-m
   fake-node test with HookUnavailable. This is a repeated deterministic QEMU qualification defect,
   not an AR-1043 policy diff failure. Do not rerun or merge; AR-1043 awaits narrow AR-1046 test/CI
   recovery and a clean rebase onto recovered main.
+
+- 2026-09-11T01:33:17+00:00: Claimed by codex-ar1043-protected-topic-sync-20260911.
