@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use an explicit tmux window-option command so trusted-main terminal qualification is portable.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Make tmux window-option setup portable",
-  "updated_at": "2026-09-11T02:28:24+00:00",
+  "updated_at": "2026-09-11T02:30:06+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-window-option-portability"
 }
 ---
@@ -75,3 +75,6 @@ authority, and change no renderer or application behavior.
   drift then cargo fmt corrected it; one repeated-suite shell had quoting syntax error and ran no
   tests; a later five-suite product command passed fully but post-command state reconciliation hit
   coordinator lock timeout.
+
+- 2026-09-11T02:30:06+00:00: Recorded command exit 0; command argv SHA-256
+  08065ca57c49d3edbdb401acdba7d26b16babb786e43b4207a320ce663350500.
