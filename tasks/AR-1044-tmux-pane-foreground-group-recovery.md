@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-11T03:24:35+00:00",
   "depends_on": [],
   "id": "AR-1044",
-  "next_action": "Obtain early immutable diff review, add any remaining tuple/reuse negatives, then run repeated focused/full/leak gates and publish a signed+DCO test-only PR.",
+  "next_action": "Await immutable review of exact signed head df96e13b58ddcab0000ed2f0947e5217f43f23ae; if approved, push/open draft PR and require exact-head CI before any merge.",
   "owner": "codex-ar1044-tmux-foreground-20260911",
   "plan": "../plans/AR-1044.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Recover tmux foreground-group qualification",
-  "updated_at": "2026-09-11T01:35:53+00:00",
+  "updated_at": "2026-09-11T01:36:31+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-pane-foreground-group-recovery"
 }
 ---
@@ -90,3 +90,14 @@ absent or changes. Do not change renderer or application behavior.
 
 - 2026-09-11T01:35:53+00:00: Recorded command exit 0; command argv SHA-256
   ff16574c0d1d5fe5ea93a7744a5ea951ed0419b39fe001570155693997b1f305.
+
+- 2026-09-11T01:36:31+00:00: Frozen signed+DCO head df96e13b58ddcab0000ed2f0947e5217f43f23ae tree
+  a8528cb923c810217f51703dd4710873555b39d9 is one test-only file (+207/-45) over eb4960e. Five
+  consecutive serial 17-test terminal suites passed with zero exact-worktree-binary leaks after
+  each. Full fmt, clippy, locked tests, rustdoc, release build, deny, audit, coverage 91.44% lines,
+  schema/release/publication/promoted-self-test, JSON, shell/workflow, gitleaks and clean-tree gates
+  pass. Exit 1 at 01:33:45 occurred at cargo-audit after prior gates; isolated identical rerun
+  passed and is classified transient advisory fetch/tool state. Exit 1 at 01:34:22 was expected
+  clean-coverage refusal because the reviewed change was still dirty; committing signed+DCO then
+  rerunning coverage resolved it. Root early diff review found no blocker. Head is intentionally not
+  pushed pending immutable review.
