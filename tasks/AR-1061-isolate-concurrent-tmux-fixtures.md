@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-live-fixture-isolation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-11T07:07:48+00:00",
   "depends_on": [],
   "id": "AR-1061",
   "next_action": "Create the isolated asb-tui worktree at exact main 69fecc01 and serialize only the five live tmux fixtures without changing authentication or product behavior.",
-  "owner": "",
+  "owner": "codex-ar1061-tmux-fixture-isolation-20260911",
   "plan": "../plans/AR-1061.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Diagnose and isolate concurrent trusted tmux fixture contention.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Isolate concurrent trusted tmux fixtures",
-  "updated_at": "2026-09-11T05:37:46+00:00",
+  "updated_at": "2026-09-11T05:37:48+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-live-fixture-isolation"
 }
 ---
@@ -26,3 +26,5 @@ product/UI behavior remain unchanged.
 
 - 2026-09-11T05:37:46+00:00: Detailed test-only recovery plan approved by root after exact-main run
   34565894753 localized failures to concurrent live tmux fixtures; AR-1061 is dependency-ready.
+
+- 2026-09-11T05:37:48+00:00: Claimed by codex-ar1061-tmux-fixture-isolation-20260911.
