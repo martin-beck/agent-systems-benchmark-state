@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-11T04:38:34+00:00",
   "depends_on": [],
   "id": "AR-1049",
-  "next_action": "Promote and claim the pre-approved test-only recovery, then acquire and target the exact tmux window identity returned by new-session.",
+  "next_action": "Await immutable different-agent review of signed+DCO head 8fd04eaf826fea6d633592a4fc8e06a83a36c6ca tree 222a68de5c76890b6231d8c0f8762777ff6100c7 before publication and exact-head CI; do not merge.",
   "owner": "codex-ar1049-tmux-window-identity-20260911",
   "plan": "../plans/AR-1049.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind tmux remain-on-exit setup to the exact created window identity instead of a fixed index.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Bind tmux setup to its created window",
-  "updated_at": "2026-09-11T02:52:18+00:00",
+  "updated_at": "2026-09-11T02:52:37+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-created-window-identity"
 }
 ---
@@ -94,3 +94,18 @@ ID, and preserve all established cleanup authority. Change no renderer or applic
 
 - 2026-09-11T02:52:18+00:00: Recorded command exit 0; command argv SHA-256
   d6e92384ea51f555fa6e7764d1d00094b22402da79b331f284375a5f82e1600e.
+
+- 2026-09-11T02:52:37+00:00: Frozen one-file test-only head 8fd04eaf826fea6d633592a4fc8e06a83a36c6ca
+  over exact main 6853d319469ad28ee9ff8b115b7c4c79da1ab777. Bounded new-session returns exact
+  #{window_id}; strict canonical @u32 newline parser accepts valid @0 and rejects whitespace, rows,
+  encoding, overflow, leading-zero and oversize widening. Guard authenticates server and pane
+  authority before parsing or option work; malformed identity live test with HUP-resistant child
+  proves full cleanup. Exact @ID targets set-window-option; closed
+  creation/malformed/disappeared/unsupported categories contain no names or paths. Five serial
+  24-test terminal suites pass with zero exact-binary leaks. Full fmt, clippy, locked tests,
+  rustdoc, release, deny, audit, schema/release/publication/promoted-self-test, JSON,
+  shell/workflow, privacy, 91.44 percent line coverage, Gitleaks, signature, DCO and clean-tree
+  gates pass. Classified failures: initial compile caught a heterogeneous expected-array type error
+  and two unused mut warnings; corrected before focused/full gates. One early multi-hunk
+  cleanup-order patch found no matching context and made no product delta; it was reapplied in
+  bounded patches.
