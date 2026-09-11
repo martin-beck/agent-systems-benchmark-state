@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-11T02:35:35+00:00",
   "depends_on": [],
   "id": "AR-1040",
-  "next_action": "Monitor rerun of PR #135 Rust checks and remaining exact-head CI; freeze only after all 12 checks pass, then request different-agent review. Do not merge.",
+  "next_action": "AR-1040 acceptance complete at protected main 6155d63bec04a5c76c4323843c26649b0c084f6e; release done.",
   "observed_branch": "fix/protected-merge-signature-policy",
   "observed_dirty": 0,
   "observed_head": "d6fa883ad1b2739e7fbd5522029bf02d75e954b8",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Align offline signature policy with the repository-required GitHub merge path.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Reconcile protected-merge signature verification",
-  "updated_at": "2026-09-11T00:42:26+00:00",
+  "updated_at": "2026-09-11T00:42:53+00:00",
   "worktree_key": "agent-systems-benchmark-protected-merge-signature-policy"
 }
 ---
@@ -165,3 +165,18 @@ without allowing Web Flow signatures on ordinary commits or PR heads. This AR ow
 
 - 2026-09-11T00:42:26+00:00: Recorded command exit 0; command argv SHA-256
   8c5d5276ef829a57083ad088c27c11bfa8d655c621e4e5e6a713c8c19f90df5b.
+
+- 2026-09-11T00:42:53+00:00: Final protected integration completed. PR #135 exact reviewed head
+  d6fa883ad1b2739e7fbd5522029bf02d75e954b8/tree 41b0ae3485246e724408b382b46d16356a5baab7 merged by
+  documented --merge path as 6155d63bec04a5c76c4323843c26649b0c084f6e. Merge parents are exact
+  cad9fa9777aaca45b9ee62801d89168c5f3e8c32 then d6fa883ad1b2739e7fbd5522029bf02d75e954b8; merge tree
+  exactly equals reviewed tree. Raw message ends with exact Signed-off-by: martin-beck
+  <martin.beck2@gmx.de>, matching author martin-beck <martin.beck2@gmx.de>; committer is GitHub
+  <noreply@github.com>. GitHub API reports signature verified=true reason=valid at the merge
+  boundary. The newly published offline policy validates cad9fa9..6155d63 in protected-main
+  push/refs/heads/main mode, proving exact topology, DCO, topic SSH signature, pinned Web Flow
+  key/fingerprint and no network key lookup. Exact main postmerge CI is terminal 11/11 SUCCESS; AWQ
+  is pull-request-only and had already passed on the exact reviewed head, yielding the reviewed PR
+  12/12 SUCCESS. Initial here-document merge invocation failed before PR mutation because nested
+  shell quoting malformed the delimiter; live PR remained unmerged, then exact-head guarded direct
+  invocation with ANSI-C real newlines succeeded. No squash/rebase/direct-main push occurred.
