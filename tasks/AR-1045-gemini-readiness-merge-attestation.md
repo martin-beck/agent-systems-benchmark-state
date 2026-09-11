@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-11T05:46:03+00:00",
   "depends_on": [],
   "id": "AR-1045",
-  "next_action": "Await different-agent immutable re-review of repaired clean signed+DCO head bbb3ebd3e0e5678562f6e46f61e231d40f589cdb, tree 211d74bc6b0e39d30e3201241fedd011265dc3fd, parent 23530dfc808650a8f3019c87a1c69fe3d0d654b5. Do not push before READY.",
+  "next_action": "Await fresh immutable review of clean signed+DCO current-main successor d0ea32ce84f600e505899e2e3d2fdb885ee7ad76, tree d6f734bc270281957b1c2268fa0c12db2e2c6075, parent 252f746e903555c2dc626fadfa1a75bb76913144. Do not push before READY.",
   "observed_branch": "docs/gemini-readiness-merge-attestation",
   "observed_dirty": 0,
   "observed_head": "d0ea32ce84f600e505899e2e3d2fdb885ee7ad76",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover the Gemini readiness publication boundary without rewriting protected main.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Attest the Gemini readiness merge boundary",
-  "updated_at": "2026-09-11T03:16:48+00:00",
+  "updated_at": "2026-09-11T03:17:13+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-readiness-merge-attestation"
 }
 ---
@@ -165,3 +165,11 @@ signature and DCO policy. This AR owns no Gemini runtime change and no TUI code.
 
 - 2026-09-11T03:16:48+00:00: Recorded command exit 0; command argv SHA-256
   0674caffd30b21f5491b619189ac8151fc06e87f7bbd7ea29f1931ea87d8ad8e.
+
+- 2026-09-11T03:17:13+00:00: Reapplied the exact approved four-file patch onto current main after PR
+  #140 advanced it. Stable patch-id bdc751a6dbd481784c0760b4184ccf738a393b10 exactly matches
+  approved bbb3ebd and rebase had no conflict; no product/runtime/TUI files changed. Full exact-head
+  gates pass. One intermediate workspace run had an unrelated existing asb-metrics fixture mismatch
+  (expected MalformedEvidence, observed ProbeRejected); its exact test then passed 10/10 and the
+  complete workspace/full gate rerun passed, classifying it as transient pre-existing fixture
+  behavior rather than AR-1045 failure.
