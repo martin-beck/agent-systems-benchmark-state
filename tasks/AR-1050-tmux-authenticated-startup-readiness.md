@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wait for bounded stable authenticated tmux server, session and window readiness after detached creation.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Acquire authenticated tmux startup readiness",
-  "updated_at": "2026-09-11T03:26:35+00:00",
+  "updated_at": "2026-09-11T03:27:39+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-authenticated-startup-readiness"
 }
 ---
@@ -168,3 +168,6 @@ server/session/window identity and retained pane authority. Change no renderer o
 
 - 2026-09-11T03:26:35+00:00: Recorded command exit 0; command argv SHA-256
   e1ee139710c75ecef8da8ff683d90981b954f68dd6f58dddf6ef39187a8d6292.
+
+- 2026-09-11T03:27:39+00:00: Recorded command exit 0; command argv SHA-256
+  56023cc2b647bc7e970198287aef04347644fe9ed136b8e1d6d59db16018fe8d.
