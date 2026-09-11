@@ -7,7 +7,7 @@
     "AR-1023"
   ],
   "id": "AR-1038",
-  "next_action": "Monitor PR #132 exact successor 297895dbdee6acfc2a7425c5a9ab254c6d2cce96/tree 1cde5c478dd35aaa7b68e56e4b54254d4f3a401d to 12/12 green, then obtain immutable delta review before merge.",
+  "next_action": "Keep AR-1038 in progress while a separately reviewed forward-only policy correction permits one strictly bounded current-main synchronization merge at the topic tip; then require exact-main green postmerge evidence before completion.",
   "observed_branch": "test/capability-coverage-sink",
   "observed_dirty": 0,
   "observed_head": "297895dbdee6acfc2a7425c5a9ab254c6d2cce96",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent sanitized capability child tests from writing default profraw files into the source checkout.",
-  "task_revision": 126,
+  "task_revision": 127,
   "title": "Preserve coverage sinks in sanitized CLI child tests",
-  "updated_at": "2026-09-11T00:56:47+00:00",
+  "updated_at": "2026-09-11T00:57:20+00:00",
   "worktree_key": "agent-systems-benchmark-capability-coverage-sink"
 }
 ---
@@ -452,3 +452,20 @@ Fix the six `default_*.profraw` files discovered during AR-1013 full coverage wi
 
 - 2026-09-11T00:56:47+00:00: Recorded command exit 0; command argv SHA-256
   34f70ce7768d4bd5111f6d0e15008a692ae8d404226164757ca62b41ec59acc2.
+
+- 2026-09-11T00:57:20+00:00: PR #132 merged exact reviewed successor
+  297895dbdee6acfc2a7425c5a9ab254c6d2cce96 as GitHub merge 44eb1b48cb79b789252eff1cc798980d868c908c.
+  Merge tree equals reviewed tree 1cde5c478dd35aaa7b68e56e4b54254d4f3a401d; parents are protected
+  base 6155d63bec04a5c76c4323843c26649b0c084f6e and reviewed topic head; GitHub API reports
+  verified=true/reason=valid; raw lowercase matching trailer is present. Postmerge Repository
+  quality failed exactly: repository policy: protected-main range must contain one final two-parent
+  merge. Cause: reviewed topic head 297895d is itself the required normal current-main
+  synchronization merge, so base..head contains it plus final Web Flow merge. Historical run cannot
+  be made green. Separate local verification attempt exited 1 only because local git lacks GitHub
+  Web Flow RSA public key; API/pinned offline verifier is authoritative. One wrapper attempt exited
+  LOCK_TIMEOUT before running policy. Recommendation: forward-only corrective AR/PR, no history
+  rewrite, narrowly allow at most one topic-tip sync merge only when it has exactly two parents,
+  second parent equals protected range base, all pre-sync topic revisions are single-parent
+  SSH-signed+DCO, sync merge itself is SSH-signed+DCO, and sync-tree/topic-tree/final protected
+  merge tree are identical; reject nested/off-tip/arbitrary-base/multiple merges and add adversarial
+  tests.
