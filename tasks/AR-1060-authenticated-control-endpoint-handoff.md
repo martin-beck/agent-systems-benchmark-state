@@ -2,22 +2,22 @@
 {
   "branch": "feature/authenticated-control-endpoint-handoff",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-11T06:28:38+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1022",
     "AR-1023"
   ],
   "id": "AR-1060",
   "next_action": "Freeze the descriptor and reconnect contract, then implement ASB provisioning and standalone asb-tui peer-authenticated consumption in separately reviewed repository changes.",
-  "owner": "codex-ar1060-control-endpoint-handoff-state-20260911",
+  "owner": "",
   "plan": "../plans/AR-1060.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Add authenticated control endpoint handoff",
-  "updated_at": "2026-09-11T05:34:39+00:00",
+  "updated_at": "2026-09-11T05:35:04+00:00",
   "worktree_key": "agent-systems-benchmark-authenticated-control-endpoint-handoff"
 }
 ---
@@ -71,3 +71,9 @@ planned until their full dependency sets are done.
   assignment appears in the six owned task/plan files. Earlier full schema validation also exposed
   only pre-existing repository-wide checkpoint and AR-1043 next_action violations; targeted strict
   schema validation of AR-1024, AR-1025 and AR-1060 passed.
+
+- 2026-09-11T05:35:04+00:00: State-only AR definition complete. AR-1060 is the P0 non-UI
+  cross-repository contract; it depends only on done AR-1022/AR-1023. AR-1024 remains OPEN/unowned
+  and AR-1025 remains PLANNED/unowned, both with one-way AR-1060 dependencies. Unique-ID, targeted
+  strict schema, graph/render, privacy, reconcile and live doctor checks passed; implementation
+  awaits a separately claimed worker and repository-local immutable reviews.
