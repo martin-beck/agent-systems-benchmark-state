@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent sanitized capability child tests from writing default profraw files into the source checkout.",
-  "task_revision": 117,
+  "task_revision": 118,
   "title": "Preserve coverage sinks in sanitized CLI child tests",
-  "updated_at": "2026-09-11T00:49:11+00:00",
+  "updated_at": "2026-09-11T00:53:53+00:00",
   "worktree_key": "agent-systems-benchmark-capability-coverage-sink"
 }
 ---
@@ -425,3 +425,6 @@ Fix the six `default_*.profraw` files discovered during AR-1013 full coverage wi
   mutation because git merge -s selects a strategy rather than signoff; corrected to --gpg-sign
   --signoff and merge succeeded cleanly. PR base/head are live exact 6155d63/297895d and 12 hosted
   checks are running. Do not merge until terminal green and immutable delta review is recorded.
+
+- 2026-09-11T00:53:53+00:00: Recorded command exit 0; command argv SHA-256
+  afe63d6e7bd4d4ebac3ad6c0f75d011a38a541200a5fc54e143059cf235b128f.
