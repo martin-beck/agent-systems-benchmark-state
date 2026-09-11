@@ -26,8 +26,9 @@
 
 PR #132 merged the exact reviewed tree with a valid GitHub Web Flow signature and matching
 lowercase DCO trailer, but post-merge Repository quality run 34548482976 rejected the range because
-the signed topic tip was itself a current-main synchronization merge. Add only the closed topology
-defined by the plan, preserve all negative cases and restore a green forward protected-main head.
+the signed topic included one historical ancestor-only synchronization checkpoint and its tip was
+itself a current-main synchronization merge. Add only the capped first-parent-spine topology defined
+by the plan, preserve all negative cases and restore a green forward protected-main head.
 
 - 2026-09-11T00:59:18+00:00: AR-1040 is done at protected main; PR #132 exposed the exact topic-tip
   sync topology recovery and AR-1043 is dependency-ready.
