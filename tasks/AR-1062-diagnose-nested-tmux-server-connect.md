@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Diagnose the exact nested tmux server and rejected socket-error class on trusted main.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Diagnose nested tmux server connection failures",
-  "updated_at": "2026-09-11T05:57:21+00:00",
+  "updated_at": "2026-09-11T06:02:37+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-nested-server-connect-diagnostics"
 }
 ---
@@ -29,3 +29,6 @@ failing connection class hidden. Add diagnostics only; preserve all authority an
 
 - 2026-09-11T05:57:21+00:00: Recorded command exit 0; command argv SHA-256
   a305b775cc7ec9d25c0b49e8a6b1c3bdbc7302456595d854156d11d09c7db2bb.
+
+- 2026-09-11T06:02:37+00:00: Recorded command exit 0; command argv SHA-256
+  27fc067adfb16ec21ab416237e1291e3ca5678311b1027d2940646098eb2caf8.
