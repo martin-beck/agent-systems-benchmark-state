@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Accept one exact signed topic-tip sync merge without weakening protected-main policy.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Qualify exact topic-tip synchronization merges",
-  "updated_at": "2026-09-11T02:25:49+00:00",
+  "updated_at": "2026-09-11T02:28:16+00:00",
   "worktree_key": "agent-systems-benchmark-protected-topic-sync-topology"
 }
 ---
@@ -201,3 +201,6 @@ by the plan, preserve all negative cases and restore a green forward protected-m
 
 - 2026-09-11T02:25:49+00:00: Recorded command exit 0; command argv SHA-256
   0d47ffcad4d7c98b4bc08e347cc18f55c670c107a0ad5dd7bd8686d6088fe2dd.
+
+- 2026-09-11T02:28:16+00:00: Recorded command exit 0; command argv SHA-256
+  8646bf72b74d44f42e950bec6486e88c040000e7307e29e40c2da49fd065fa48.
