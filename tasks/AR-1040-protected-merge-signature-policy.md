@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Align offline signature policy with the repository-required GitHub merge path.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Reconcile protected-merge signature verification",
-  "updated_at": "2026-09-11T00:35:35+00:00",
+  "updated_at": "2026-09-11T00:35:53+00:00",
   "worktree_key": "agent-systems-benchmark-protected-merge-signature-policy"
 }
 ---
@@ -138,3 +138,6 @@ without allowing Web Flow signatures on ordinary commits or PR heads. This AR ow
   protected-main mode.
 
 - 2026-09-11T00:35:35+00:00: Claimed by codex-ar1040-final-integration-20260911.
+
+- 2026-09-11T00:35:53+00:00: Recorded command exit 0; command argv SHA-256
+  91323cab0faf788a7ebdce199b11fe60e292e2f54386106294c0787d7c4141f8.
