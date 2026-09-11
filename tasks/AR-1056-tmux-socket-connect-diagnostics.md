@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-socket-connect-diagnostics",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-11T06:52:56+00:00",
   "depends_on": [],
   "id": "AR-1056",
   "next_action": "Add privacy-safe AF_UNIX connection substages at exact asb-tui main 092cf20a, obtain trusted-main evidence, then repair only the proven predicate.",
-  "owner": "",
+  "owner": "codex-ar1056-tmux-connect-diagnostics-20260911",
   "plan": "../plans/AR-1056.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Diagnose and repair the remaining trusted tmux socket connection-stage failure.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Diagnose tmux socket connection stage",
-  "updated_at": "2026-09-11T04:52:43+00:00",
+  "updated_at": "2026-09-11T04:52:56+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-socket-connect-diagnostics"
 }
 ---
@@ -27,3 +27,5 @@ workflow or ASB source change is in scope.
 
 - 2026-09-11T04:52:43+00:00: Exact-main Trusted main 34563628936 proves the diagnostic recovery is
   dependency-ready; scope is one asb-tui test harness file.
+
+- 2026-09-11T04:52:56+00:00: Claimed by codex-ar1056-tmux-connect-diagnostics-20260911.
