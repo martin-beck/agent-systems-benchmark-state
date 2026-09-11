@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind tmux remain-on-exit setup to the exact created window identity instead of a fixed index.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Bind tmux setup to its created window",
-  "updated_at": "2026-09-11T02:52:37+00:00",
+  "updated_at": "2026-09-11T02:56:53+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-created-window-identity"
 }
 ---
@@ -109,3 +109,6 @@ ID, and preserve all established cleanup authority. Change no renderer or applic
   and two unused mut warnings; corrected before focused/full gates. One early multi-hunk
   cleanup-order patch found no matching context and made no product delta; it was reapplied in
   bounded patches.
+
+- 2026-09-11T02:56:53+00:00: Recorded command exit 0; command argv SHA-256
+  a2af36739c5547b7b8f840d8592f9f6214a3e345db01264eaf1441db21f88085.
