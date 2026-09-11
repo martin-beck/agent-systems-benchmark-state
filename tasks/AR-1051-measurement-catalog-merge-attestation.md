@@ -2,7 +2,7 @@
 {
   "branch": "docs/measurement-catalog-merge-attestation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-11T06:31:24+00:00",
   "depends_on": [
     "AR-1045"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "docs/measurement-catalog-merge-attestation",
   "observed_dirty": 0,
   "observed_head": "607a3afb3a44b87f9c60b6ae3bc764570e84d5fe",
-  "owner": "",
+  "owner": "codex-ar1051-measurement-catalog-attestation-20260911",
   "plan": "../plans/AR-1051.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Record the exact reviewed measurement-catalog merge and its non-compliant GitHub-authored DCO identity without rewriting history.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Attest the measurement catalog merge boundary",
-  "updated_at": "2026-09-11T03:31:21+00:00",
+  "updated_at": "2026-09-11T03:31:24+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-merge-attestation"
 }
 ---
@@ -33,3 +33,5 @@ attestation evidence and a corrective future merge recipe using the exact GitHub
 
 - 2026-09-11T03:31:21+00:00: AR-1045 is done at protected-main merge 1a19b692 with all postmerge
   workflows green; PR #140 historical attestation is dependency-ready.
+
+- 2026-09-11T03:31:24+00:00: Claimed by codex-ar1051-measurement-catalog-attestation-20260911.
