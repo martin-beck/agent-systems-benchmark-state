@@ -91,8 +91,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | changed files | - | - | - | `docs/PUBLICATION_ATTESTATIONS.md`, `docs/QUALITY_GATES.md`, `crates/asb-protocol/tests/measurement_catalog_pr140_merge_attestation.rs`, `docs/attestations/measurement-catalog-pr140-merge.json` |
 | `agent-systems-benchmark-measurement-catalog-second-recovery` | `docs/measurement-catalog-second-recovery` | `4a7eb724c601` | 0 | behind 19, ahead 0 |
 | `agent-systems-benchmark-measurement-catalog-semantics` | `feature/measurement-catalog-semantics` | `78c63febc0ce` | 0 | behind 23, ahead 0 |
-| `agent-systems-benchmark-measurement-selection-plan` | `feature/measurement-selection-plan` | `1a19b692d724` | 1 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-protocol/src/measurement.rs` |
+| `agent-systems-benchmark-measurement-selection-plan` | `feature/measurement-selection-plan` | `1a19b692d724` | 2 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-metrics/src/lib.rs`, `crates/asb-protocol/src/measurement.rs` |
 | `agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation` | `fix/mini-swe-cancellation-reap-test-isolation` | `c897313524a8` | 0 | behind 47, ahead 14 |
 | `agent-systems-benchmark-mockagents-executable-qualification` | `test/mockagents-executable-qualification` | `3f1de4106adf` | 0 | behind 74, ahead 0 |
 | `agent-systems-benchmark-modern-terminal-rendering` | `feature/modern-terminal-rendering` | `fd1989a096a3` | 0 | behind 111, ahead 0 |
