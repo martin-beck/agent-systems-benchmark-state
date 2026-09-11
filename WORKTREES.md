@@ -90,6 +90,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-measurement-catalog-merge-attestation` | `docs/measurement-catalog-merge-attestation` | `607a3afb3a44` | 0 | behind 21, ahead 0 |
 | `agent-systems-benchmark-measurement-catalog-second-recovery` | `docs/measurement-catalog-second-recovery` | `4a7eb724c601` | 0 | behind 19, ahead 0 |
 | `agent-systems-benchmark-measurement-catalog-semantics` | `feature/measurement-catalog-semantics` | `78c63febc0ce` | 0 | behind 23, ahead 0 |
+| `agent-systems-benchmark-measurement-selection-plan` | `feature/measurement-selection-plan` | `1a19b692d724` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation` | `fix/mini-swe-cancellation-reap-test-isolation` | `c897313524a8` | 0 | behind 47, ahead 14 |
 | `agent-systems-benchmark-mockagents-executable-qualification` | `test/mockagents-executable-qualification` | `3f1de4106adf` | 0 | behind 74, ahead 0 |
 | `agent-systems-benchmark-modern-terminal-rendering` | `feature/modern-terminal-rendering` | `fd1989a096a3` | 0 | behind 111, ahead 0 |
