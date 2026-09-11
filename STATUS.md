@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 5 |
-| **Open** | Dependency-ready and available to claim | 7 |
+| **In progress** | Claimed work with a live lease | 4 |
+| **Open** | Dependency-ready and available to claim | 8 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 56 |
 | **Future** | Deferred roadmap work | 1 |
@@ -231,7 +231,7 @@ flowchart LR
         AR_1006["AR-1006 - Planned"]:::status_planned
         AR_1007["AR-1007 - Done"]:::status_done
         AR_1008["AR-1008 - Done"]:::status_done
-        AR_1010["AR-1010 - In progress"]:::status_in_progress
+        AR_1010["AR-1010 - Open"]:::status_open
         AR_1011["AR-1011 - Planned"]:::status_planned
         AR_1012["AR-1012 - Planned"]:::status_planned
         AR_1013["AR-1013 - Open"]:::status_open
@@ -1145,21 +1145,21 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (5)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md): Adopt Ratatui/Crossterm TUI foundation | codex-ar1010-final-review-20260911 | Adopt Ratatui and Crossterm as the supported professional TUI foundation. | Mark PR #9 ready, squash-merge exact reviewed tree 6521148 with valid lowercase GitHub-author DCO, then verify protected main tree, signature and post-merge CI before release. |
 | P0 | [AR-1038](tasks/AR-1038-capability-coverage-sink.md): Preserve coverage sinks in sanitized CLI child tests | codex-ar1038-final-integration-20260911 | Prevent sanitized capability child tests from writing default profraw files into the source checkout. | Obtain a new immutable independent review of PR #132 exact head 69888a33cdf8383f4155d3dca1e9180104770b33/tree 42fd9229538ab7183b71a0517ca6c5bd751bdb99. All 12 exact-head checks are terminal SUCCESS. Do not merge without approval. |
 | P0 | [AR-1039](tasks/AR-1039-measurement-catalog-merge-attestation.md): Attest the measurement catalog merge boundary | codex-ar1039-final-integration-20260911 | Recover the measurement catalog publication boundary without rewriting protected main. | Independently review draft PR #134 exact head 4a7eb724c601ab8fb2a6dd4552f54726ad3a0dd9 and tree 141362f96bd29c2694c5049d9d2010211fbaac99; do not merge before approval and use the exact lowercase GitHub-author DCO trailer. |
 | P0 | [AR-1041](tasks/AR-1041-gemini-hook-readiness-race.md): Make Gemini hook readiness publication atomic | codex-ar1041-gemini-readiness-20260911 | Eliminate the load-sensitive Gemini hook readiness race without weakening validation. | Implement the closed atomic publication/observation state machine and deterministic hostile marker tests from current protected main 6155d63. |
 | P0 | [AR-1042](tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | codex-ar1042-tmux-readiness-20260911 | Make tmux TUI readiness capture deterministic on the actual alternate screen. | Replace primary-pane readiness polling with isolated alternate-screen capture and bounded diagnostics, then rerun trusted-main qualification. |
 
-### Open (7)
+### Open (8)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0897](tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | Unclaimed | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Hold PR 126 at bd6f450; after AR-0877 and AR-0909 integrate, rebase once and require fresh all-green exact-head CI before merge. |
+| P0 | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md): Adopt Ratatui/Crossterm TUI foundation | Unclaimed | Adopt Ratatui and Crossterm as the supported professional TUI foundation. | Mark PR #9 ready, squash-merge exact reviewed tree 6521148 with valid lowercase GitHub-author DCO, then verify protected main tree, signature and post-merge CI before release. |
 | P0 | [AR-1024](tasks/AR-1024-asb-tui-lifecycle-router.md): Implement &#96;asb tui&#96; lifecycle routing | Unclaimed | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | Await a new AR-1010 successor that repairs unrelated-child classification and persistent-proc-failure setsid escape, passes fresh immutable review and exact-head CI; only then request exact archive build authorization, repin, PTY-test and rerun gates. |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | Repair/rebase the fail-closed TLA provenance pin, then rerun PR #119 exact-head CI; do not merge. |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Unclaimed | Qualify pinned OpenJiuwen live execution. | Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI. |

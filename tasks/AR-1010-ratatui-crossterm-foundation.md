@@ -2,7 +2,7 @@
 {
   "branch": "feature/ratatui-crossterm-foundation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-11T02:31:10+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0803",
     "AR-0804",
@@ -12,15 +12,15 @@
   ],
   "id": "AR-1010",
   "next_action": "Mark PR #9 ready, squash-merge exact reviewed tree 6521148 with valid lowercase GitHub-author DCO, then verify protected main tree, signature and post-merge CI before release.",
-  "owner": "codex-ar1010-final-review-20260911",
+  "owner": "",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 426,
+  "task_revision": 427,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-11T00:37:02+00:00",
+  "updated_at": "2026-09-11T00:44:40+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -1499,3 +1499,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-11T00:37:02+00:00: Recorded command exit 0; command argv SHA-256
   39392ec1f063e4593f0575ce399794af2d99c4a5424cb369510917313e006f85.
+
+- 2026-09-11T00:44:40+00:00: Foundation merged as GitHub-verified squash 882c315e with exact
+  reviewed tree 6521148 and matching lowercase DCO; Repository quality is green. Trusted-main run
+  34546963576 failed twice because the test polled tmux primary storage while Ratatui rendered in
+  alternate storage. AR-1042 owns the narrow qualification repair. Resume AR-1010 only after AR-1042
+  merges and exact-main trusted verification is green.
