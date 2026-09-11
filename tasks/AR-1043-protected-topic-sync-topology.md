@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Accept one exact signed topic-tip sync merge without weakening protected-main policy.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Qualify exact topic-tip synchronization merges",
-  "updated_at": "2026-09-11T01:33:17+00:00",
+  "updated_at": "2026-09-11T01:33:35+00:00",
   "worktree_key": "agent-systems-benchmark-protected-topic-sync-topology"
 }
 ---
@@ -167,3 +167,6 @@ by the plan, preserve all negative cases and restore a green forward protected-m
   recovery and a clean rebase onto recovered main.
 
 - 2026-09-11T01:33:17+00:00: Claimed by codex-ar1043-protected-topic-sync-20260911.
+
+- 2026-09-11T01:33:35+00:00: Recorded command exit 0; command argv SHA-256
+  a9ed06b575bf3dd7ab02396043dd516c56861c146748ffb384994ffbc9947496.
