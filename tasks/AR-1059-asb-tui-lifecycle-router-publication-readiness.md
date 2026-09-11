@@ -1,7 +1,7 @@
 ---
 {
   "branch": "docs/asb-tui-lifecycle-router-publication-readiness",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "31b6efb87d017d16b25498f83c77f7d7f280d81f",
   "claim_expires": "2026-09-11T07:17:20+00:00",
   "depends_on": [],
   "id": "AR-1059",
