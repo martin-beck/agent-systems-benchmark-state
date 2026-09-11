@@ -1,7 +1,7 @@
 ---
 {
   "branch": "docs/asb-tui-roadmap-hardening",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "fadda79cb039df2df35261d36f8608bc2b2d7fa1",
   "claim_expires": "2026-09-11T06:12:29+00:00",
   "depends_on": [],
   "id": "AR-1053",
