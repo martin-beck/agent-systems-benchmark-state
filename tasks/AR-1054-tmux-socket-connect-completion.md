@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1054.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Repair trusted tmux socket connection completion without weakening authenticated cleanup authority.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Repair tmux socket connection completion",
-  "updated_at": "2026-09-11T04:29:00+00:00",
+  "updated_at": "2026-09-11T04:29:14+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-socket-connect-completion"
 }
 ---
@@ -24,3 +24,6 @@ Trusted-main run 34562090773 at exact asb-tui merge
 `socket_connection_unavailable` stage before peer credentials. Correct only the proven Linux
 AF_UNIX `EAGAIN` and bounded completion portability gap under the detailed plan. No renderer, UI,
 lifecycle protocol, dependency, workflow or ASB source change is in scope.
+
+- 2026-09-11T04:29:14+00:00: Approved narrow recovery from exact trusted-main failure 34562090773;
+  scope remains one test harness file and dependencies are satisfied.
