@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose the versioned ASB measurement catalog to standalone frontends without UI code.",
-  "task_revision": 154,
+  "task_revision": 155,
   "title": "Publish the measurement catalog control contract",
-  "updated_at": "2026-09-11T03:01:37+00:00",
+  "updated_at": "2026-09-11T03:05:52+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-control"
 }
 ---
@@ -373,3 +373,6 @@ rendering and help behavior remains exclusively in `martin-beck/asb-tui` under A
   suite then passed; one known environmental ETXTBSY parallel fixture flake passed serial and
   immediate full retry. Immutable reviewer approved exact final head/tree and one-line lock delta;
   force-with-lease updated PR.
+
+- 2026-09-11T03:05:52+00:00: Recorded command exit 0; command argv SHA-256
+  6deba0dc4d70782925ee56510eb87a8b302b20d628984e1c968089ec0ba55211.
