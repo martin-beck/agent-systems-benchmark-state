@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-11T03:35:27+00:00",
   "depends_on": [],
   "id": "AR-1046",
-  "next_action": "Obtain approval for the narrow two-file test/CI plan, then promote and claim before any product edit.",
+  "next_action": "Await immutable review of exact signed head 9d923c103d1527ab76c702321e2db7c8e3d55d7c/tree c793aacc37facf556d879831584db68ba93e56d4; do not publish PR until review approval.",
   "observed_branch": "test/serialize-emulated-aarch64-agents",
   "observed_dirty": 0,
   "observed_head": "9d923c103d1527ab76c702321e2db7c8e3d55d7c",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the emulated AArch64 asb-agents fake-node readiness fixtures deterministic without changing production semantics.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Serialize emulated AArch64 agent tests",
-  "updated_at": "2026-09-11T01:45:32+00:00",
+  "updated_at": "2026-09-11T01:45:56+00:00",
   "worktree_key": "agent-systems-benchmark-emulated-aarch64-agent-serialization"
 }
 ---
@@ -99,3 +99,16 @@ existing skip and all budgets; do not change Rust production code or any UI/TUI 
 
 - 2026-09-11T01:45:32+00:00: Recorded command exit 0; command argv SHA-256
   55275e0e06a5dd9423c5ed919bfff3b80a368091ec97fdc7678432e465296ff5.
+
+- 2026-09-11T01:45:56+00:00: Frozen clean signed+DCO single-parent successor
+  9d923c103d1527ab76c702321e2db7c8e3d55d7c, tree c793aacc37facf556d879831584db68ba93e56d4, parent
+  exact main 2ecb876b82a91a8103926b298c42ad49ce8dd143. Diff is exactly
+  .github/workflows/emulated-aarch64.yml (+ --test-threads=1) and
+  tests/platforms/test_emulated_aarch64.py (closed exact invocation plus hostile
+  removal/duplicate/differently-spelled split/filter/retry/loop negatives), 71 insertions. Focused
+  10/10; fmt, clippy, workspace tests, rustdoc, release build, deny, audit, coverage, contract
+  consistency/tests, actionlint, zizmor, gitleaks, controlled failures, signature tests, artifact
+  tests, manifests and all 59 platform tests passed. Exit 1 at 01:37 was wrong cwd (no test ran;
+  corrected 10/10); exit 127 at 01:38 was missing cargo PATH (no Rust gate ran; pinned toolchain
+  rerun passed); exit 1 at 01:41 was missing ruff in ambient Python after tests passed (correct
+  pinned ruff rerun passed).
