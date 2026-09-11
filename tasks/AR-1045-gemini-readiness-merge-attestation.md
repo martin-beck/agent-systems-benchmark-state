@@ -2,22 +2,22 @@
 {
   "branch": "docs/gemini-readiness-merge-attestation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-11T05:46:03+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1045",
   "next_action": "Await fresh immutable review of clean signed+DCO current-main successor d0ea32ce84f600e505899e2e3d2fdb885ee7ad76, tree d6f734bc270281957b1c2268fa0c12db2e2c6075, parent 252f746e903555c2dc626fadfa1a75bb76913144. Do not push before READY.",
   "observed_branch": "docs/gemini-readiness-merge-attestation",
   "observed_dirty": 0,
   "observed_head": "d0ea32ce84f600e505899e2e3d2fdb885ee7ad76",
-  "owner": "codex-ar1045-gemini-attestation-20260911",
+  "owner": "",
   "plan": "../plans/AR-1045.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Recover the Gemini readiness publication boundary without rewriting protected main.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Attest the Gemini readiness merge boundary",
-  "updated_at": "2026-09-11T03:30:30+00:00",
+  "updated_at": "2026-09-11T03:30:45+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-readiness-merge-attestation"
 }
 ---
@@ -215,3 +215,14 @@ signature and DCO policy. This AR owns no Gemini runtime change and no TUI code.
 
 - 2026-09-11T03:30:30+00:00: Recorded command exit 0; command argv SHA-256
   a847b6b72eaa2dfd64b9b4e928c0908468d751544fb7c8844a2659b4ba945f06.
+
+- 2026-09-11T03:30:45+00:00: Merged independently approved PR #141 as protected-main commit
+  1a19b692d724fd5ba1996470daccbfed06171a0a. Exact parents are
+  252f746e903555c2dc626fadfa1a75bb76913144 and reviewed source
+  d0ea32ce84f600e505899e2e3d2fdb885ee7ad76; merge tree exactly matches reviewed
+  d6f734bc270281957b1c2268fa0c12db2e2c6075. GitHub verification is verified=true/reason=valid at
+  2026-09-11T03:23:35Z; raw merge message ends exact author-matching Signed-off-by: martin-beck
+  <martin.beck2@gmx.de>. PR exact-head checks were 12/12 green and all seven postmerge workflows are
+  terminal success: quality 34558262173, Rust 34558262216, AArch64 34558262187, fault 34558262221,
+  formal 34558262154, headers 34558262146, platform 34558262185. Historical PR #136 missing-DCO
+  merge remains visible and truthfully attested; no runtime or TUI code changed.
