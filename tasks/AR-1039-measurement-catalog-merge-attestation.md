@@ -8,16 +8,16 @@
   "next_action": "Independently review draft PR #134 exact head 4a7eb724c601ab8fb2a6dd4552f54726ad3a0dd9 and tree 141362f96bd29c2694c5049d9d2010211fbaac99; do not merge before approval and use the exact lowercase GitHub-author DCO trailer.",
   "observed_branch": "docs/measurement-catalog-merge-attestation",
   "observed_dirty": 0,
-  "observed_head": "607a3afb3a44b87f9c60b6ae3bc764570e84d5fe",
+  "observed_head": "1a19b692d724fd5ba1996470daccbfed06171a0a",
   "owner": "",
   "plan": "../plans/AR-1039.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "open",
   "summary": "Recover the measurement catalog publication boundary without rewriting protected main.",
-  "task_revision": 87,
+  "task_revision": 88,
   "title": "Attest the measurement catalog merge boundary",
-  "updated_at": "2026-09-11T02:01:36+00:00",
+  "updated_at": "2026-09-11T03:33:14+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-merge-attestation"
 }
 ---
