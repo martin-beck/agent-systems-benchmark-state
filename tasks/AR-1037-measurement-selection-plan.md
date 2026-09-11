@@ -10,7 +10,7 @@
   "id": "AR-1037",
   "next_action": "After AR-1036, add canonical measurement IDs to validated ASB plans and make collection honor them without any UI code.",
   "observed_branch": "feature/measurement-selection-plan",
-  "observed_dirty": 16,
+  "observed_dirty": 18,
   "observed_head": "a01f38f20982516fc93f58482e536896c49246df",
   "owner": "codex-root-ar1037-selection-20260911",
   "plan": "../plans/AR-1037.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry catalog-backed measurement choices through ASB plan validation, collection and evidence.",
-  "task_revision": 118,
+  "task_revision": 119,
   "title": "Add measurement selection to validated run plans",
-  "updated_at": "2026-09-11T04:51:53+00:00",
+  "updated_at": "2026-09-11T04:51:59+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-selection-plan"
 }
 ---
