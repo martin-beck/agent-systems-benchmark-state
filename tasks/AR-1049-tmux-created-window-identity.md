@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-created-window-identity",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-11T03:31:41+00:00",
   "depends_on": [],
   "id": "AR-1049",
   "next_action": "Remain OPEN pending a narrow bounded tmux startup-readiness recovery and a green trusted-main rerun.",
-  "owner": "",
+  "owner": "codex-ar1049-recovery-planning-20260911",
   "plan": "../plans/AR-1049.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Bind tmux remain-on-exit setup to the exact created window identity instead of a fixed index.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Bind tmux setup to its created window",
-  "updated_at": "2026-09-11T03:01:25+00:00",
+  "updated_at": "2026-09-11T03:01:41+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-created-window-identity"
 }
 ---
@@ -145,3 +145,5 @@ ID, and preserve all established cleanup authority. Change no renderer or applic
 
 - 2026-09-11T03:01:25+00:00: Merged immutable-window repair remains unaccepted because trusted-main
   exposed an immediate server-observation startup race; keep all parent recoveries open.
+
+- 2026-09-11T03:01:41+00:00: Claimed by codex-ar1049-recovery-planning-20260911.
