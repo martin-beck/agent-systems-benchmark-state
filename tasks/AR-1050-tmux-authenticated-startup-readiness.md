@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-authenticated-startup-readiness",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-11T05:03:09+00:00",
   "depends_on": [],
   "id": "AR-1050",
   "next_action": "Promote and claim the pre-approved test-only recovery, then add bounded stable authenticated tmux startup acquisition before option setup.",
-  "owner": "",
+  "owner": "codex-ar1050-tmux-startup-readiness-20260911",
   "plan": "../plans/AR-1050.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Wait for bounded stable authenticated tmux server, session and window readiness after detached creation.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Acquire authenticated tmux startup readiness",
-  "updated_at": "2026-09-11T03:03:07+00:00",
+  "updated_at": "2026-09-11T03:03:09+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-authenticated-startup-readiness"
 }
 ---
@@ -26,3 +26,5 @@ server/session/window identity and retained pane authority. Change no renderer o
 
 - 2026-09-11T03:03:07+00:00: Pre-approved P0 recovery is ready after trusted-main run 34556679585
   exposed asynchronous tmux startup observability.
+
+- 2026-09-11T03:03:09+00:00: Claimed by codex-ar1050-tmux-startup-readiness-20260911.
