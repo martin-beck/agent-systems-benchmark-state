@@ -2,7 +2,7 @@
 {
   "branch": "feature/ratatui-crossterm-foundation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-11T02:11:55+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0803",
     "AR-0804",
@@ -12,15 +12,15 @@
   ],
   "id": "AR-1010",
   "next_action": "Release OPEN for fresh independent immutable review of PR #9 exact base d58eda9, head 2068872, tree 6521148; exact-head CI green; do not merge.",
-  "owner": "codex-ar1010-dependency-doc-repair-20260911",
+  "owner": "",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 416,
+  "task_revision": 417,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-11T00:30:39+00:00",
+  "updated_at": "2026-09-11T00:30:52+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -1462,3 +1462,8 @@ Implementation has not started. Read the linked plan before claiming.
   fmt, Clippy, rustdoc, deterministic SBOM, cargo-deny, cargo-audit 94 deps/1243 advisories,
   signature/DCO/diff/clean tree. Failed 06769dc hosted attempts are durably classified as the
   repaired fork-inherited-flock test-isolation race. No merge.
+
+- 2026-09-11T00:30:52+00:00: Implementation frozen at exact signed+DCO head
+  20688721d4815431746088fe313e340622de0668 tree 6521148aef9d310144645a796c35c2992bc37083; PR #9
+  exact-head hosted run 34546663641 is SUCCESS. Released OPEN solely for fresh immutable review; no
+  merge.
