@@ -3,18 +3,18 @@
   "branch": "feature/standalone-asb-tui-application",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-0804", "AR-0805", "AR-0806", "AR-0870", "AR-0871", "AR-1010", "AR-1022", "AR-1023"],
+  "depends_on": ["AR-0804", "AR-0805", "AR-0806", "AR-0870", "AR-0871", "AR-1010", "AR-1022", "AR-1023", "AR-1037"],
   "id": "AR-1025",
-  "next_action": "Build the functional standalone shell, authenticated control client, authoritative state projection, routing and terminal lifecycle without implementing downstream feature screens or professional visual components.",
+  "next_action": "After ASB AR-1037 completes, build the standalone shell and a closed control client that prefers v1.3 precise diagnostics, retains exact v1.2 fallback categories and implements no downstream feature screens.",
   "owner": "",
   "plan": "../plans/AR-1025.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "planned",
   "summary": "Deliver the actual standalone interactive asb-tui application without an ASB workspace dependency.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Build the standalone asb-tui application",
-  "updated_at": "2026-09-11T04:12:48+00:00",
+  "updated_at": "2026-09-11T05:05:00+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-standalone-application"
 }
 ---
@@ -33,3 +33,7 @@ product path in `martin-beck/agent-systems-benchmark`.
 
 - 2026-09-11T04:12:48+00:00: Narrowed this AR to the functional application shell and stable
   extension seams so it can complete before, and without duplicating, the focused downstream UI ARs.
+
+- 2026-09-11T05:05:00+00:00: Added ASB AR-1037 as a dependency and bound the standalone client to
+  closed v1.3 precise-diagnostic parsing with exact v1.2 legacy fallback categories; visible
+  validation presentation remains AR-1014-owned.

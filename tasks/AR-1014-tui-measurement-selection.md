@@ -5,16 +5,16 @@
   "claim_expires": "",
   "depends_on": ["AR-1013", "AR-0804", "AR-0805", "AR-1025", "AR-1033", "AR-1036", "AR-1037"],
   "id": "AR-1014",
-  "next_action": "After AR-1025, AR-1033 and ASB AR-1037 complete, implement the bounded catalog-driven selector and canonical plan round trips exclusively in standalone asb-tui.",
+  "next_action": "After AR-1025, AR-1033 and ASB AR-1037 complete, implement the bounded selector with precise v1.3 validation UX, generic v1.2 fallback and canonical plan round trips only in standalone asb-tui.",
   "owner": "",
   "plan": "../plans/AR-1014.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "planned",
   "summary": "Let users select grouped measurements from the standalone ASB TUI.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Add grouped measurement selection to the TUI",
-  "updated_at": "2026-09-11T04:12:48+00:00",
+  "updated_at": "2026-09-11T05:05:00+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-measurement-selection"
 }
 ---
@@ -48,3 +48,6 @@ test in `martin-beck/asb-tui`; consume the ASB measurement catalog only through 
 - 2026-09-11T04:12:48+00:00: Expanded the plan with exact catalog bounds, filtered group-toggle
   semantics, mandatory evidence separation, stale-digest handling and canonical AR-1037 plan tests;
   corrected the next action to name every remaining implementation dependency.
+
+- 2026-09-11T05:05:00+00:00: Required precise privacy-safe control v1.3 validation presentation,
+  a generic four-category v1.2 fallback and closed v1.0 selector disablement without inferred IDs.
