@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-11T04:19:32+00:00",
   "depends_on": [],
   "id": "AR-1048",
-  "next_action": "Promote and claim the pre-approved test-only recovery, then replace ambiguous remain-on-exit setup with the exact portable window-option command.",
+  "next_action": "Await immutable different-agent review of signed+DCO head 72f2f5575054f2efba00d3e31a481c34f67b91fb tree f0e9da5847058e2dd6b2b01d0508f0c2a00b996e before publication and exact-head CI; do not merge.",
   "owner": "codex-ar1048-tmux-window-portability-20260911",
   "plan": "../plans/AR-1048.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use an explicit tmux window-option command so trusted-main terminal qualification is portable.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Make tmux window-option setup portable",
-  "updated_at": "2026-09-11T02:27:55+00:00",
+  "updated_at": "2026-09-11T02:28:24+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-window-option-portability"
 }
 ---
@@ -62,3 +62,16 @@ authority, and change no renderer or application behavior.
 
 - 2026-09-11T02:27:55+00:00: Recorded command exit 0; command argv SHA-256
   130a98233003739271d41e050bb0ae62caf82a87d89588786d068ee8d1726737.
+
+- 2026-09-11T02:28:24+00:00: Frozen one-file test-only head 72f2f5575054f2efba00d3e31a481c34f67b91fb
+  over exact merged base f5434c938883b4f756f525038dc1b6e6c0a90761. Every remain-on-exit fixture now
+  uses set-window-option -t session:0 remain-on-exit on through one helper; deterministic test
+  checks the exact command and fixed ASCII path/session-free failure. Five consecutive serial
+  22-test suites pass with zero exact-target binary leaks. Full fmt, clippy, locked tests, rustdoc,
+  release, cargo-deny, cargo-audit, schema, release, publication, promoted self-test, JSON,
+  shell/workflow, privacy, 91.44 percent line coverage, Gitleaks, signature, DCO and clean-tree
+  gates pass. Classified failures: one unwrapped cargo invocation had no local PATH and ran nothing;
+  one wrapped focused run omitted product cd and ran no asb-tui test; one fmt check found formatting
+  drift then cargo fmt corrected it; one repeated-suite shell had quoting syntax error and ran no
+  tests; a later five-suite product command passed fully but post-command state reconciliation hit
+  coordinator lock timeout.

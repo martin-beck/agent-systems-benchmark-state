@@ -9,7 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1036](tasks/AR-1036-measurement-catalog-control.md): Publish the measurement catalog control contract | Expose the versioned ASB measurement catalog to standalone frontends without UI code. | After AR-1013, publish the bounded measurement-catalog control operation and exact standalone parser fixtures. | codex-root-ar1036-catalog-20260911 |
 | P0 | [AR-1043](tasks/AR-1043-protected-topic-sync-topology.md): Qualify exact topic-tip synchronization merges | Accept one exact signed topic-tip sync merge without weakening protected-main policy. | Wait for AR-1041/PR #136 integration decision; if protected main advances, rebase AR-1043 to that exact main as a clean single-parent signed commit, rerun focused gates, then publish for exact-head CI and immutable review. | codex-ar1043-protected-topic-sync-20260911 |
-| P0 | [AR-1048](tasks/AR-1048-tmux-window-option-portability.md): Make tmux window-option setup portable | Use an explicit tmux window-option command so trusted-main terminal qualification is portable. | Promote and claim the pre-approved test-only recovery, then replace ambiguous remain-on-exit setup with the exact portable window-option command. | codex-ar1048-tmux-window-portability-20260911 |
+| P0 | [AR-1048](tasks/AR-1048-tmux-window-option-portability.md): Make tmux window-option setup portable | Use an explicit tmux window-option command so trusted-main terminal qualification is portable. | Await immutable different-agent review of signed+DCO head 72f2f5575054f2efba00d3e31a481c34f67b91fb tree f0e9da5847058e2dd6b2b01d0508f0c2a00b996e before publication and exact-head CI; do not merge. | codex-ar1048-tmux-window-portability-20260911 |
 
 ## Open
 
