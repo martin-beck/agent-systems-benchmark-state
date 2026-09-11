@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Diagnose and repair the remaining trusted tmux socket connection-stage failure.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Diagnose tmux socket connection stage",
-  "updated_at": "2026-09-11T04:57:36+00:00",
+  "updated_at": "2026-09-11T04:58:37+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-socket-connect-diagnostics"
 }
 ---
@@ -74,3 +74,6 @@ workflow or ASB source change is in scope.
   error/timeout/invalid/no-completion, SO_ERROR unavailable/malformed/nonzero, and NUL/overlong
   paths. Local focused, serial terminal 29/29, full locked suite, fmt and all-target Clippy pass.
   Await fresh immutable review before push; trusted integration is required to select any repair.
+
+- 2026-09-11T04:58:37+00:00: Recorded command exit 0; command argv SHA-256
+  043338fa78f93da8299fed8cdb672fd4ff61c04894f5837b0e7c76964b745cc8.
