@@ -1,0 +1,25 @@
+---
+{
+  "branch": "fix/protected-merge-signature-policy",
+  "checkpoint_commit": "",
+  "claim_expires": "",
+  "depends_on": [],
+  "id": "AR-1040",
+  "next_action": "Pin and narrowly verify GitHub Web Flow signatures only for canonical protected-main merge commits while keeping PR heads SSH-only.",
+  "owner": "",
+  "plan": "../plans/AR-1040.md",
+  "priority": "P0",
+  "schema_version": 1,
+  "status": "planned",
+  "summary": "Align offline signature policy with the repository-required GitHub merge path.",
+  "task_revision": 1,
+  "title": "Reconcile protected-merge signature verification",
+  "updated_at": "2026-09-11T00:06:00+00:00",
+  "worktree_key": "agent-systems-benchmark-protected-merge-signature-policy"
+}
+---
+
+Protected main merge `cad9fa9777aaca45b9ee62801d89168c5f3e8c32` has a matching raw DCO
+trailer and GitHub API verification `valid`, but offline Repository quality rejects GitHub's PGP
+signature because it recognizes only the local SSH allowed signer. Fix the policy contradiction
+without allowing Web Flow signatures on ordinary commits or PR heads. This AR owns no TUI code.
