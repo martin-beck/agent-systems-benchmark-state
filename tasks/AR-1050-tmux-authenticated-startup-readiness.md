@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-11T05:06:01+00:00",
   "depends_on": [],
   "id": "AR-1050",
-  "next_action": "Run complete repository quality, supply-chain, coverage, provenance, workflow and privacy gates; then freeze signed+DCO for immutable review.",
+  "next_action": "Freeze exact c465aa6a06395f11bdbf757d92f315b1b89603b7/tree 9c84adb111497687251fc1d90893a082f23246a8 for immutable different-agent review before any push.",
   "owner": "codex-ar1050-tmux-startup-readiness-20260911",
   "plan": "../plans/AR-1050.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wait for bounded stable authenticated tmux server, session and window readiness after detached creation.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Acquire authenticated tmux startup readiness",
-  "updated_at": "2026-09-11T03:24:41+00:00",
+  "updated_at": "2026-09-11T03:25:14+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-authenticated-startup-readiness"
 }
 ---
@@ -151,3 +151,11 @@ server/session/window identity and retained pane authority. Change no renderer o
 
 - 2026-09-11T03:24:41+00:00: Recorded command exit 0; command argv SHA-256
   bf313c9cd77e0b797999b9c3d87f568051175e3957ad5d0494e49b45852a6a1d.
+
+- 2026-09-11T03:25:14+00:00: Signed+DCO candidate c465aa6a06395f11bdbf757d92f315b1b89603b7 is clean
+  and unpushed. Five serial terminal suites passed (130/130), scoped exact binary leaks 0, full
+  coverage-clean passed at 91.44% lines, and all applicable
+  Rust/docs/schema/release/supply-chain/shell/workflow/privacy gates passed. Combined supply gate
+  exit 1 ended at cargo audit with no diagnostic; immediate identical standalone audit passed, so
+  classified transient tool/index execution. Earlier coverage exit 1 was its documented clean-tree
+  precondition on the precommit dirty diff; exact clean commit rerun passed.
