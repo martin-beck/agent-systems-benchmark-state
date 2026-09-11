@@ -9,17 +9,17 @@
   "id": "AR-1051",
   "next_action": "Create and verify a signed DCO four-file commit, then freeze it unpushed for different-agent immutable review.",
   "observed_branch": "docs/measurement-catalog-merge-attestation",
-  "observed_dirty": 4,
-  "observed_head": "1a19b692d724fd5ba1996470daccbfed06171a0a",
+  "observed_dirty": 0,
+  "observed_head": "7b3ef113d2b77c3982748f16c540d0e556252464",
   "owner": "codex-ar1051-measurement-catalog-attestation-20260911",
   "plan": "../plans/AR-1051.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Record the exact reviewed measurement-catalog merge and its non-compliant GitHub-authored DCO identity without rewriting history.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Attest the measurement catalog merge boundary",
-  "updated_at": "2026-09-11T03:47:22+00:00",
+  "updated_at": "2026-09-11T03:47:29+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-merge-attestation"
 }
 ---
