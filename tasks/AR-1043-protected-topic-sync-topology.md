@@ -2,7 +2,7 @@
 {
   "branch": "fix/protected-topic-sync-topology",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-11T02:03:17+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1040"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "fix/protected-topic-sync-topology",
   "observed_dirty": 0,
   "observed_head": "c76975e8c0b986fc9dd5b013467021f054182981",
-  "owner": "codex-ar1043-protected-topic-sync-20260911",
+  "owner": "",
   "plan": "../plans/AR-1043.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Accept one exact signed topic-tip sync merge without weakening protected-main policy.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Qualify exact topic-tip synchronization merges",
-  "updated_at": "2026-09-11T01:35:07+00:00",
+  "updated_at": "2026-09-11T01:35:22+00:00",
   "worktree_key": "agent-systems-benchmark-protected-topic-sync-topology"
 }
 ---
@@ -182,3 +182,8 @@ by the plan, preserve all negative cases and restore a green forward protected-m
 
 - 2026-09-11T01:35:07+00:00: Recorded command exit 0; command argv SHA-256
   eaf2472e4b0ec29bac3303a6d46474c99be3c0ab077feca87b1c3650d4745e53.
+
+- 2026-09-11T01:35:22+00:00: PR #137 remains frozen at exact c76975e/tree 117fee87 after repeated
+  AArch64 HookUnavailable failures. AR-1046 plan/task was committed as 294e879d7 and root approved
+  the narrow two-file recovery. Resume AR-1043 only after AR-1046 restores protected main, then
+  cleanly rebase the preserved patch.
