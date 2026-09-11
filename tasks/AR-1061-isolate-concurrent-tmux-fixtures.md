@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Diagnose and isolate concurrent trusted tmux fixture contention.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Isolate concurrent trusted tmux fixtures",
-  "updated_at": "2026-09-11T05:44:57+00:00",
+  "updated_at": "2026-09-11T05:45:14+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-live-fixture-isolation"
 }
 ---
@@ -67,3 +67,6 @@ product/UI behavior remain unchanged.
 
 - 2026-09-11T05:44:57+00:00: Recorded command exit 0; command argv SHA-256
   12688130a96d74f80d55a8c9004a5f813651585eef26613b86bfa97527f62203.
+
+- 2026-09-11T05:45:14+00:00: Recorded command exit 2; command argv SHA-256
+  940a2f97caf53f8ed0c9f36b3d498780e7954544122533732b0307dc5d8d4fbd.
