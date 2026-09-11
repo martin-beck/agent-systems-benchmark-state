@@ -15,21 +15,21 @@ Generated from local Git and GitHub. Do not edit.
 | #125 | `fix/control-state-lock-test-isolation@8b0f9fd07d5d` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(cli): isolate control state roots |
 | #126 | `fix/main-merge-integrity@bd6f450ab877` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | tools: harden signed merge publication |
 | #127 | `fix/mini-swe-cancellation-reap-test-isolation@c897313524a8` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(agents): harden mini-swe cancellation isolation |
-| #132 | `test/capability-coverage-sink@69888a33cdf8` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(cli): preserve external coverage sink |
+| #132 | `test/capability-coverage-sink@297895dbdee6` | `main` | CLEAN | - | test(cli): preserve external coverage sink |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34548057685 | `297895dbdee6` | pull_request | Repository quality | queued:- |
+| 34548057663 | `297895dbdee6` | pull_request | Emulated aarch64 portability | queued:- |
+| 34548057521 | `297895dbdee6` | pull_request | Agent Workflow Quality shadow | queued:- |
+| 34548057516 | `297895dbdee6` | pull_request | Huawei MIT source headers | queued:- |
+| 34548057506 | `297895dbdee6` | pull_request | Hosted portability and native qualification | queued:- |
+| 34548057463 | `297895dbdee6` | pull_request | Formal assurance | queued:- |
+| 34548057440 | `297895dbdee6` | pull_request | Fault assurance | queued:- |
+| 34548057347 | `297895dbdee6` | pull_request | Rust verification | queued:- |
 | 34547233548 | `6155d63bec04` | push | Formal assurance | completed:success |
 | 34547233493 | `6155d63bec04` | push | Huawei MIT source headers | completed:success |
 | 34547233382 | `6155d63bec04` | push | Hosted portability and native qualification | completed:success |
 | 34547233362 | `6155d63bec04` | push | Rust verification | completed:success |
-| 34547233355 | `6155d63bec04` | push | Repository quality | completed:success |
-| 34547233339 | `6155d63bec04` | push | Fault assurance | completed:success |
-| 34547233309 | `6155d63bec04` | push | Emulated aarch64 portability | completed:success |
-| 34546660422 | `d6fa883ad1b2` | pull_request | Rust verification | completed:success |
-| 34546660119 | `d6fa883ad1b2` | pull_request | Fault assurance | completed:success |
-| 34546660089 | `d6fa883ad1b2` | pull_request | Repository quality | completed:success |
-| 34546660032 | `d6fa883ad1b2` | pull_request | Formal assurance | completed:success |
-| 34546660029 | `d6fa883ad1b2` | pull_request | Huawei MIT source headers | completed:success |
