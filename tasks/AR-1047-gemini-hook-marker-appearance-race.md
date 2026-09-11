@@ -2,22 +2,22 @@
 {
   "branch": "fix/gemini-hook-marker-appearance-race",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-11T03:59:36+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1047",
   "next_action": "PR #139 exact 661d52c/tree 3931f7cb is independently approved and 12/12 exact-head green; await explicit root authorization and exact multiline protected merge recipe.",
   "observed_branch": "fix/gemini-hook-marker-appearance-race",
   "observed_dirty": 0,
   "observed_head": "661d52c614c5cfa28859d71131fbc8158b68bc2d",
-  "owner": "codex-ar1047-gemini-marker-race-20260911",
+  "owner": "",
   "plan": "../plans/AR-1047.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Treat a regular marker published between absent open and fallback lstat as pending for descriptor validation on the next poll.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Close the Gemini hook-marker appearance race",
-  "updated_at": "2026-09-11T02:23:02+00:00",
+  "updated_at": "2026-09-11T02:23:28+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-hook-marker-appearance-race"
 }
 ---
@@ -120,3 +120,14 @@ remain `Invalid`. Add an exact deterministic interposition test and preserve all
 
 - 2026-09-11T02:23:02+00:00: Recorded command exit 0; command argv SHA-256
   1dac593b3f627da0b5b2643bfe8fefb4a1adc7ea89a6ad275f70066b1c825b50.
+
+- 2026-09-11T02:23:28+00:00: Completed via PR #139. Reviewed source
+  661d52c614c5cfa28859d71131fbc8158b68bc2d/tree 3931f7cb300f1138a1fb2be7493991c03647c1c5 passed
+  12/12 exact-head checks including AArch64 run 34553546358. Protected merge
+  92cf2c84778147f9c48498656f0b4a614a4067d6 has exact parents
+  [2ecb876b82a91a8103926b298c42ad49ce8dd143, 661d52c614c5cfa28859d71131fbc8158b68bc2d], exact
+  reviewed tree, GitHub verified=true/reason=valid, and raw matching lowercase Signed-off-by
+  trailer. Local protected-main policy passes. All seven exact-main workflows are terminal green:
+  quality 34553972896, Rust 34553972892, AArch64 34553972929, fault 34553972898, headers
+  34553972884, formal 34553972942, platform 34553973054. PR #138 remains closed unmerged as rejected
+  scheduling-hypothesis evidence; no TUI/frontend change.
