@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-11T05:06:01+00:00",
   "depends_on": [],
   "id": "AR-1050",
-  "next_action": "Patch bounded two-sample authenticated startup observation in tests/terminal_foundation.rs and compile focused tests.",
+  "next_action": "Run complete repository quality, supply-chain, coverage, provenance, workflow and privacy gates; then freeze signed+DCO for immutable review.",
   "owner": "codex-ar1050-tmux-startup-readiness-20260911",
   "plan": "../plans/AR-1050.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wait for bounded stable authenticated tmux server, session and window readiness after detached creation.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Acquire authenticated tmux startup readiness",
-  "updated_at": "2026-09-11T03:19:03+00:00",
+  "updated_at": "2026-09-11T03:19:24+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-authenticated-startup-readiness"
 }
 ---
@@ -104,3 +104,11 @@ server/session/window identity and retained pane authority. Change no renderer o
 
 - 2026-09-11T03:19:03+00:00: Recorded command exit 0; command argv SHA-256
   23f3849df54009ebb9a909c8e248923ba37cb5330bca225c8cb55a8da2f79b98.
+
+- 2026-09-11T03:19:24+00:00: Implementation checkpoint: one test-only file. 26/26 serial terminal
+  tests passed; five consecutive complete serial suites passed (130 tests) and scoped exact AR-1050
+  binary leak audit found 0. Injected observer tests require unavailable then two equal samples,
+  reject alternating/one-sample/timeout/mismatched retained authority, and pre-option
+  server/session/window/pane transition issues zero option commands. The earlier exit 1 was cargo
+  fmt --check reporting only deterministic formatting delta; cargo fmt applied and subsequent
+  fmt/test passed.
