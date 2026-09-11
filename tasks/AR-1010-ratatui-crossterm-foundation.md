@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 398,
+  "task_revision": 399,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-11T00:22:08+00:00",
+  "updated_at": "2026-09-11T00:22:16+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -1390,3 +1390,6 @@ Implementation has not started. Read the linked plan before claiming.
   addition to the earlier full suite. Classify as pre-existing nondeterministic lifecycle test/host
   timing pending a single evidence-backed hosted rerun, not as a documentation defect and not
   dismissed. No scope expansion or product edit made.
+
+- 2026-09-11T00:22:16+00:00: Recorded command exit 0; command argv SHA-256
+  e3e0e46b52c3f4561b394d803dcf75da79b0c2100f018da8dc7881aa275925dd.
