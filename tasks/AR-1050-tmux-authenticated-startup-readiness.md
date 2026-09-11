@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-11T05:06:01+00:00",
   "depends_on": [],
   "id": "AR-1050",
-  "next_action": "Freeze exact c465aa6a06395f11bdbf757d92f315b1b89603b7/tree 9c84adb111497687251fc1d90893a082f23246a8 for immutable different-agent review before any push.",
+  "next_action": "Freeze exact 46145ad63af61d0b6f4549f06c001f33d60f02c1/tree b64bd9d15a985deb43373ebff8140a3bfa2a8cef for fresh immutable review; do not push.",
   "owner": "codex-ar1050-tmux-startup-readiness-20260911",
   "plan": "../plans/AR-1050.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wait for bounded stable authenticated tmux server, session and window readiness after detached creation.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Acquire authenticated tmux startup readiness",
-  "updated_at": "2026-09-11T03:33:38+00:00",
+  "updated_at": "2026-09-11T03:34:17+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-authenticated-startup-readiness"
 }
 ---
@@ -207,3 +207,12 @@ server/session/window identity and retained pane authority. Change no renderer o
 
 - 2026-09-11T03:33:38+00:00: Recorded command exit 0; command argv SHA-256
   2bf72c23ed925dac00a56939555a81732f81d4d32d2c1c3fb77ad6d8f099f621.
+
+- 2026-09-11T03:34:17+00:00: Obsolete c465aa6/dfdcecf were blocked by two live-fixture guard
+  invariants. Exact 46145ad repairs both: malformed output enters guarded finisher immediately;
+  authenticated startup is stored inside the guard and the real option path can only derive
+  authority from that guard. No-pane guard proves zero observer/option calls and exact server
+  cleanup. Final five serial suites passed (130/130), exact binary leaks 0, fmt/clippy and
+  coverage-clean full suite passed at 91.44%. Compile exits 101 while adding the guard field were
+  code-local missing-pattern and large-enum lint findings; repaired with exhaustive pattern and
+  boxed retained tuple, then rerun green.
