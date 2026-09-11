@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1045.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Recover the Gemini readiness publication boundary without rewriting protected main.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Attest the Gemini readiness merge boundary",
-  "updated_at": "2026-09-11T01:24:46+00:00",
+  "updated_at": "2026-09-11T01:25:55+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-readiness-merge-attestation"
 }
 ---
@@ -25,3 +25,6 @@ merge message omitted a matching `Signed-off-by` trailer. Preserve the historica
 truthful bounded attestation, and make the corrective GitHub merge commit itself pass protected-main
 signature and DCO policy. This AR owns no Gemini runtime change and no TUI code.
 
+
+- 2026-09-11T01:25:55+00:00: Forward-only recovery is dependency-ready; AR-1043 integrates first,
+  then AR-1045 linearizes on exact current main.
