@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-alternate-screen-readiness",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-11T02:43:01+00:00",
   "depends_on": [],
   "id": "AR-1042",
   "next_action": "Replace primary-pane readiness polling with isolated alternate-screen capture and bounded diagnostics, then rerun trusted-main qualification.",
-  "owner": "",
+  "owner": "codex-ar1042-tmux-readiness-20260911",
   "plan": "../plans/AR-1042.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make tmux TUI readiness capture deterministic on the actual alternate screen.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Capture alternate-screen TUI readiness deterministically",
-  "updated_at": "2026-09-11T00:41:41+00:00",
+  "updated_at": "2026-09-11T00:43:01+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-alternate-screen-readiness"
 }
 ---
@@ -26,3 +26,5 @@ diagnostics; do not change renderer or application semantics.
 - 2026-09-11T00:41:41+00:00: Two exact trusted-main failures prove primary-pane polling cannot
   observe the actual alternate-screen frame; independent diagnosis specifies a narrow test-only
   repair.
+
+- 2026-09-11T00:43:01+00:00: Claimed by codex-ar1042-tmux-readiness-20260911.
