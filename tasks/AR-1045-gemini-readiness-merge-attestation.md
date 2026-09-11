@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-11T05:46:03+00:00",
   "depends_on": [],
   "id": "AR-1045",
-  "next_action": "Create a forward-only, bounded attestation of PR #136 merge 2ecb876 and add regression evidence for the exact GitHub merge-author DCO recipe; do not rewrite protected main.",
+  "next_action": "Await independent immutable review of clean signed+DCO head d53799a407322f6279d752ad670ff412a1330924, tree ed5e10f973b8f7b3002795fe6332d6a520aed3a2, parent exact green main 23530dfc808650a8f3019c87a1c69fe3d0d654b5. Do not push before review.",
   "observed_branch": "docs/gemini-readiness-merge-attestation",
   "observed_dirty": 0,
   "observed_head": "d53799a407322f6279d752ad670ff412a1330924",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover the Gemini readiness publication boundary without rewriting protected main.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Attest the Gemini readiness merge boundary",
-  "updated_at": "2026-09-11T03:02:49+00:00",
+  "updated_at": "2026-09-11T03:03:12+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-readiness-merge-attestation"
 }
 ---
@@ -109,3 +109,16 @@ signature and DCO policy. This AR owns no Gemini runtime change and no TUI code.
 
 - 2026-09-11T03:02:49+00:00: Recorded command exit 0; command argv SHA-256
   7f01cef58a926829f40c4ade3ae01d07fc96444d54d6457a7fe8edba9a4dc1a6.
+
+- 2026-09-11T03:03:12+00:00: Implemented the forward-only PR #136 attestation in exactly four files:
+  one bounded JSON attestation, one closed Rust validation/negative test, and two documentation
+  updates. No production source, Gemini runtime, or TUI changes. The attestation binds exact
+  PR/head/base/tree, 12 check names/workflows/run URLs, reviewed SSH+DCO message, GitHub merge
+  signature/time/author/raw missing-trailer message, historical Gemini blob SHA-256 from merge
+  2ecb876 with a 256 KiB read cap, failed quality run 34550483000 and exact error, and the protected
+  merge recipe. Initial exit 101 failures were JSON newline over-escaping and comparison against the
+  later AR-1047 current Gemini bytes; repaired by exact JSON encoding and immutable historical-blob
+  verification with substituted-content negative. Focused 2/2, fmt, clippy all targets, full
+  workspace tests, rustdoc, release, deny, audit, coverage, contract consistency, actionlint,
+  zizmor, gitleaks exact commit, failure paths, signature policy, artifact outcome, platform
+  validation/tests, repository policy, diff-check, signature, DCO, and clean tree all pass.
