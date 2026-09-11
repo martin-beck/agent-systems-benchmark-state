@@ -101,7 +101,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 413, ahead 0 |
 | `agent-systems-benchmark-portable-metrics` | `feature/portable-metrics` | `a0f67bea1ffe` | 0 | behind 387, ahead 0 |
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `51daeb8608e5` | 0 | behind 406, ahead 0 |
-| `agent-systems-benchmark-protected-merge-signature-policy` | `fix/protected-merge-signature-policy` | `d6fa883ad1b2` | 0 | behind 0, ahead 1 |
+| `agent-systems-benchmark-protected-merge-signature-policy` | `fix/protected-merge-signature-policy` | `d6fa883ad1b2` | 6 | behind 0, ahead 1 |
+| changed files | - | - | - | `crates/asb-cli/default_15080522557072826153_0_1822696.profraw`, `crates/asb-cli/default_15080522557072826153_0_1822697.profraw`, `crates/asb-cli/default_15080522557072826153_0_1822699.profraw`, `crates/asb-cli/default_15080522557072826153_0_1822701.profraw`, `crates/asb-cli/default_15080522557072826153_0_1822702.profraw`, `crates/asb-cli/default_15080522557072826153_0_1822703.profraw` |
 | `agent-systems-benchmark-provider-aware-agent-launch` | `feature/provider-aware-agent-launch` | `7c9daf795b02` | 0 | behind 120, ahead 0 |
 | `agent-systems-benchmark-provider-credential-integration` | `feature/provider-credential-integration` | `0f92642fc870` | 0 | behind 167, ahead 0 |
 | `agent-systems-benchmark-provider-ollama` | `feature/provider-ollama` | `8137f5baa053` | 0 | behind 211, ahead 0 |
