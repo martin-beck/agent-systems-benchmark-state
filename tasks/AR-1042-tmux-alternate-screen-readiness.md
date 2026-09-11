@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-11T02:43:01+00:00",
   "depends_on": [],
   "id": "AR-1042",
-  "next_action": "Replace primary-pane readiness polling with isolated alternate-screen capture and bounded diagnostics, then rerun trusted-main qualification.",
+  "next_action": "Require clean tmux config, bracket displayed-pane capture with exact alternate_on=1 observations, and rerun repeated qualification.",
   "owner": "codex-ar1042-tmux-readiness-20260911",
   "plan": "../plans/AR-1042.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Make tmux TUI readiness capture deterministic on the actual alternate screen.",
-  "task_revision": 18,
+  "summary": "Make tmux TUI readiness validate the displayed alternate screen deterministically.",
+  "task_revision": 19,
   "title": "Capture alternate-screen TUI readiness deterministically",
-  "updated_at": "2026-09-11T00:54:16+00:00",
+  "updated_at": "2026-09-11T00:54:40+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-alternate-screen-readiness"
 }
 ---
@@ -73,3 +73,8 @@ diagnostics; do not change renderer or application semantics.
 
 - 2026-09-11T00:54:16+00:00: Recorded command exit 0; command argv SHA-256
   8cd460aae30f1e39fb6fda77044f38e316d405badb81377ff2e9011dd81426fc.
+
+- 2026-09-11T00:54:40+00:00: Empirical tmux 3.4 probe corrected the capture model: capture-pane -p
+  returned the displayed live alternate frame, while -a returned blank alternate-history storage.
+  Readiness now requires valid recognized UTF-8 content bracketed by exact alternate_on=1
+  observations.
