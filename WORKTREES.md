@@ -73,8 +73,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-gemini-generate-content-replay` | `feature/gemini-generate-content-replay` | `93c19625f910` | 0 | behind 286, ahead 0 |
 | `agent-systems-benchmark-gemini-hook-marker-appearance-race` | `fix/gemini-hook-marker-appearance-race` | `661d52c614c5` | 0 | behind 5, ahead 0 |
 | `agent-systems-benchmark-gemini-hook-readiness-race` | `fix/gemini-hook-readiness-race` | `55648d5a29f4` | 0 | behind 7, ahead 0 |
-| `agent-systems-benchmark-gemini-readiness-merge-attestation` | `docs/gemini-readiness-merge-attestation` | `d53799a40732` | 1 | behind 2, ahead 1 |
-| changed files | - | - | - | `crates/asb-protocol/tests/gemini_readiness_merge_attestation.rs` |
+| `agent-systems-benchmark-gemini-readiness-merge-attestation` | `docs/gemini-readiness-merge-attestation` | `bbb3ebd3e0e5` | 0 | behind 2, ahead 1 |
 | `agent-systems-benchmark-gemini-thinking-config-contract` | `feature/gemini-thinking-config-contract` | `0aff7023cacf` | 0 | behind 284, ahead 0 |
 | `agent-systems-benchmark-hosted-runner-evidence` | `fix/hosted-runner-evidence-classification` | `f0b7b46db271` | 0 | behind 39, ahead 0 |
 | `agent-systems-benchmark-huawei-mit-headers` | `fix/huawei-mit-license-headers` | `7add29f1d24c` | 0 | behind 168, ahead 0 |
