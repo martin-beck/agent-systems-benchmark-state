@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-11T05:46:03+00:00",
   "depends_on": [],
   "id": "AR-1045",
-  "next_action": "Await independent immutable review of clean signed+DCO head d53799a407322f6279d752ad670ff412a1330924, tree ed5e10f973b8f7b3002795fe6332d6a520aed3a2, parent exact green main 23530dfc808650a8f3019c87a1c69fe3d0d654b5. Do not push before review.",
+  "next_action": "Await different-agent immutable re-review of repaired clean signed+DCO head bbb3ebd3e0e5678562f6e46f61e231d40f589cdb, tree 211d74bc6b0e39d30e3201241fedd011265dc3fd, parent 23530dfc808650a8f3019c87a1c69fe3d0d654b5. Do not push before READY.",
   "observed_branch": "docs/gemini-readiness-merge-attestation",
   "observed_dirty": 0,
   "observed_head": "bbb3ebd3e0e5678562f6e46f61e231d40f589cdb",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover the Gemini readiness publication boundary without rewriting protected main.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Attest the Gemini readiness merge boundary",
-  "updated_at": "2026-09-11T03:10:30+00:00",
+  "updated_at": "2026-09-11T03:10:56+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-readiness-merge-attestation"
 }
 ---
@@ -137,3 +137,16 @@ signature and DCO policy. This AR owns no Gemini runtime change and no TUI code.
 
 - 2026-09-11T03:10:30+00:00: Recorded command exit 0; command argv SHA-256
   81b383ed4527dbb8e876d92e3a270d4a9cddf0bc265387db6563a602ad23e259.
+
+- 2026-09-11T03:10:56+00:00: Repaired the sole immutable-review blocker without widening the
+  four-file scope. Historical source verification now pipes stdout, nulls stdin/stderr, reads only
+  MAX_SOURCE_BYTES+1, rejects the sentinel overflow byte, and terminates/reaps the child on missing
+  stdout, overflow, read error, or wait error. Deterministic exact-limit+1 overflow and injected
+  reader failure tests pass; focused suite is 3/3. Re-amended signed+DCO candidate is
+  bbb3ebd3e0e5678562f6e46f61e231d40f589cdb/tree 211d74bc6b0e39d30e3201241fedd011265dc3fd. Full fmt,
+  clippy workspace/all targets, workspace tests, rustdoc, release, cargo-deny/audit, coverage,
+  contract consistency, actionlint, zizmor, exact-range gitleaks, failure paths, signature policy,
+  artifact outcome, platform gates, repository policy, diff-check, and clean tree reran green. PR
+  #140 missing-DCO incident is separate historical scope and should receive its own detailed AR
+  rather than be silently added here; AR-1045 retains and mechanically enforces the exact lowercase
+  trailer recipe for its future merge.
