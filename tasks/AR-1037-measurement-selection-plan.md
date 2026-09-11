@@ -2,22 +2,22 @@
 {
   "branch": "feature/measurement-selection-plan",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-11T06:32:03+00:00",
   "depends_on": [
     "AR-0104",
     "AR-1036"
   ],
   "id": "AR-1037",
   "next_action": "After AR-1036, add canonical measurement IDs to validated ASB plans and make collection honor them without any UI code.",
-  "owner": "",
+  "owner": "codex-root-ar1037-selection-20260911",
   "plan": "../plans/AR-1037.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Carry catalog-backed measurement choices through ASB plan validation, collection and evidence.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Add measurement selection to validated run plans",
-  "updated_at": "2026-09-11T03:31:52+00:00",
+  "updated_at": "2026-09-11T03:32:03+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-selection-plan"
 }
 ---
@@ -31,3 +31,5 @@ exclusively in `martin-beck/asb-tui` under AR-1014.
 - 2026-09-11T03:31:52+00:00: Dependencies AR-0104 and AR-1036 are done; fully green protected-main
   descendant 1a19b692 qualifies the catalog control boundary. Promote ASB-only measurement selection
   semantics with no frontend implementation.
+
+- 2026-09-11T03:32:03+00:00: Claimed by codex-root-ar1037-selection-20260911.
