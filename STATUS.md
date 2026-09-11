@@ -1166,7 +1166,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1036](tasks/AR-1036-measurement-catalog-control.md): Publish the measurement catalog control contract | codex-root-ar1036-catalog-20260911 | Expose the versioned ASB measurement catalog to standalone frontends without UI code. | After AR-1013, publish the bounded measurement-catalog control operation and exact standalone parser fixtures. |
 | P0 | [AR-1043](tasks/AR-1043-protected-topic-sync-topology.md): Qualify exact topic-tip synchronization merges | codex-ar1043-protected-topic-sync-20260911 | Accept one exact signed topic-tip sync merge without weakening protected-main policy. | Monitor all 12 exact-head checks on PR #137 at approved head 40a84dda234f250927bb36a5b3c46bb342f60149, including AArch64; do not merge without terminal green and root authorization. |
-| P0 | [AR-1048](tasks/AR-1048-tmux-window-option-portability.md): Make tmux window-option setup portable | codex-ar1048-tmux-window-portability-20260911 | Use an explicit tmux window-option command so trusted-main terminal qualification is portable. | Await root merge authorization for independently approved PR #15 exact head 72f2f5575054f2efba00d3e31a481c34f67b91fb after exact-head Repository quality run 34554860348 passed; do not merge early. |
+| P0 | [AR-1048](tasks/AR-1048-tmux-window-option-portability.md): Make tmux window-option setup portable | codex-ar1048-tmux-window-portability-20260911 | Use an explicit tmux window-option command so trusted-main terminal qualification is portable. | Remain OPEN pending AR-1049 exact created-window identity recovery and a green trusted-main rerun. |
 
 ### Open (14)
 

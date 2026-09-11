@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-11T04:19:32+00:00",
   "depends_on": [],
   "id": "AR-1048",
-  "next_action": "Await root merge authorization for independently approved PR #15 exact head 72f2f5575054f2efba00d3e31a481c34f67b91fb after exact-head Repository quality run 34554860348 passed; do not merge early.",
+  "next_action": "Remain OPEN pending AR-1049 exact created-window identity recovery and a green trusted-main rerun.",
   "owner": "codex-ar1048-tmux-window-portability-20260911",
   "plan": "../plans/AR-1048.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use an explicit tmux window-option command so trusted-main terminal qualification is portable.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Make tmux window-option setup portable",
-  "updated_at": "2026-09-11T02:37:56+00:00",
+  "updated_at": "2026-09-11T02:38:20+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-window-option-portability"
 }
 ---
@@ -112,3 +112,10 @@ authority, and change no renderer or application behavior.
 
 - 2026-09-11T02:37:56+00:00: Recorded command exit 0; command argv SHA-256
   64c3428ca8a96496857e3bbed8e5a41fb302ec50ada8e4bdb7d91cf967ad5baa.
+
+- 2026-09-11T02:38:20+00:00: PR #15 merged as 6853d319469ad28ee9ff8b115b7c4c79da1ab777 with exact
+  reviewed tree f0e9da5847058e2dd6b2b01d0508f0c2a00b996e, parent
+  f5434c938883b4f756f525038dc1b6e6c0a90761, GitHub-valid signature, and exact raw Signed-off-by
+  trailer. Repository quality 34555068475 passed. Trusted-main 34555068496 failed: 18/22 terminal
+  tests passed, but all four tmux fixtures rejected exact session:0 option targeting, falsifying the
+  fixed-index assumption. AR-1049 is the narrow pre-approved identity-based recovery.
