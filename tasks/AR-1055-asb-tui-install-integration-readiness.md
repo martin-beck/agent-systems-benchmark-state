@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the asb tui install and full interactive integration sequence dependency-executable.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Harden asb-tui install integration readiness",
-  "updated_at": "2026-09-11T04:31:18+00:00",
+  "updated_at": "2026-09-11T04:31:52+00:00",
   "worktree_key": "agent-systems-benchmark-state-asb-tui-install-integration-readiness"
 }
 ---
@@ -29,3 +29,6 @@ without claiming or changing any product task.
   product tasks remain untouched.
 
 - 2026-09-11T04:31:18+00:00: Claimed by codex-ar1055-asb-tui-install-integration-readiness-20260911.
+
+- 2026-09-11T04:31:52+00:00: Recorded command exit 2; command argv SHA-256
+  48458d4adcbc2714c4ae60f17ec39d916357031118af6e75d9a5cd826c73f20e.
