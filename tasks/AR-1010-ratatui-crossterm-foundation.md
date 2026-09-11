@@ -11,16 +11,16 @@
     "AR-1030"
   ],
   "id": "AR-1010",
-  "next_action": "Push signed+DCO documentation successor 06769dc to PR #9 and require terminal exact-head CI plus fresh immutable review; do not merge.",
+  "next_action": "Rerun failed exact-head hosted quality after 10/10 local lifecycle-suite reproductions pass; require terminal green and independent immutable review; no merge.",
   "owner": "codex-ar1010-dependency-doc-repair-20260911",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 397,
+  "task_revision": 398,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-11T00:21:51+00:00",
+  "updated_at": "2026-09-11T00:22:08+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -1381,3 +1381,12 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-11T00:21:51+00:00: Recorded command exit 0; command argv SHA-256
   b201416051ead13bd3762384170825fa7d0c4ddcd53337378b4d08441693162e.
+
+- 2026-09-11T00:22:08+00:00: Exact-head hosted run 34546014493 failed in unchanged test
+  filesystem_upgrade_reconnect_and_existing_version_reuse_are_verified at tests/lifecycle.rs:296
+  while reopening a just-dropped private lifecycle store; dependency-policy and preceding tests were
+  green. This documentation-only successor did not modify source/tests and the same complete
+  lifecycle suite passed locally 10/10 consecutive repetitions at exact 06769dc (13/13 each), in
+  addition to the earlier full suite. Classify as pre-existing nondeterministic lifecycle test/host
+  timing pending a single evidence-backed hosted rerun, not as a documentation defect and not
+  dismissed. No scope expansion or product edit made.
