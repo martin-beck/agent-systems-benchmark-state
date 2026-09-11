@@ -8,19 +8,20 @@
     "AR-0804",
     "AR-0805",
     "AR-0806",
-    "AR-1030"
+    "AR-1030",
+    "AR-1052"
   ],
   "id": "AR-1010",
-  "next_action": "Mark PR #9 ready, squash-merge exact reviewed tree 6521148 with valid lowercase GitHub-author DCO, then verify protected main tree, signature and post-merge CI before release.",
+  "next_action": "Wait for AR-1052 to repair the proven trusted-runner tmux server-authority portability gap, then require green exact-main Repository quality and Trusted main verification before closing the AR-1010 recovery chain.",
   "owner": "",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "open",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 427,
+  "task_revision": 428,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-11T00:44:40+00:00",
+  "updated_at": "2026-09-11T04:12:48+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -28,7 +29,11 @@
 
 Adopt Ratatui with Crossterm as the supported ASB terminal UI foundation.
 
-Implementation has not started. Read the linked plan before claiming.
+The standalone foundation is merged. Completion remains gated by AR-1052 and a green exact-main
+trusted terminal qualification; do not repeat the already merged PR #9 publication.
+
+- 2026-09-11T04:12:48+00:00: Corrected stale PR #9 publication text and added the active AR-1052
+  trusted-main recovery dependency without creating a reverse edge or dependency cycle.
 
 - 2026-09-09T23:43:45+00:00: All dependencies AR-0803, AR-0804, AR-0805, and AR-0806 are durably
   done. No remote branch, PR, or declared worktree exists. Owned asb-tui/workspace dependency scope

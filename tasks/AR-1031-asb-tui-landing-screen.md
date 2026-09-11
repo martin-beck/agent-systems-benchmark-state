@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Add a state-aware landing screen with primary journeys and bounded recent activity.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Build the standalone TUI landing screen",
-  "updated_at": "2026-09-10T21:04:37+00:00",
+  "updated_at": "2026-09-11T04:12:48+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-landing-screen"
 }
 ---
@@ -31,3 +31,6 @@ navigation. No screen, widget, renderer or UI state belongs in the ASB repositor
 - 2026-09-10T21:40:00+00:00: Added the released AR-0875 history contract explicitly and limited
   landing ownership to five summaries and navigation; AR-1035 alone owns history queries, report
   details, pagination and comparison.
+
+- 2026-09-11T04:12:48+00:00: Added stable route registration plus authoritative recent-order and
+  tie-handling acceptance so the landing screen can precede downstream destination screens safely.

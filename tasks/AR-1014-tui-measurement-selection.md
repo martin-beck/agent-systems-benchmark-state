@@ -5,16 +5,16 @@
   "claim_expires": "",
   "depends_on": ["AR-1013", "AR-0804", "AR-0805", "AR-1025", "AR-1033", "AR-1036", "AR-1037"],
   "id": "AR-1014",
-  "next_action": "Implement the catalog-driven TUI selection flow after AR-1013 is reviewed and merged.",
+  "next_action": "After AR-1025, AR-1033 and ASB AR-1037 complete, implement the bounded catalog-driven selector and canonical plan round trips exclusively in standalone asb-tui.",
   "owner": "",
   "plan": "../plans/AR-1014.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "planned",
   "summary": "Let users select grouped measurements from the standalone ASB TUI.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Add grouped measurement selection to the TUI",
-  "updated_at": "2026-09-10T21:04:37+00:00",
+  "updated_at": "2026-09-11T04:12:48+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-measurement-selection"
 }
 ---
@@ -44,3 +44,7 @@ test in `martin-beck/asb-tui`; consume the ASB measurement catalog only through 
 - 2026-09-10T22:20:00+00:00: Added AR-1037 because ASB had no authoritative run-plan field for a
   selected measurement set. The standalone UI must submit that exact canonical selection and show
   mandatory non-selectable evidence separately.
+
+- 2026-09-11T04:12:48+00:00: Expanded the plan with exact catalog bounds, filtered group-toggle
+  semantics, mandatory evidence separation, stale-digest handling and canonical AR-1037 plan tests;
+  corrected the next action to name every remaining implementation dependency.

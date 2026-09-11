@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Create a responsive, accessible and professional visual system for every TUI screen.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Establish the professional TUI visual system",
-  "updated_at": "2026-09-10T21:04:37+00:00",
+  "updated_at": "2026-09-11T04:12:48+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-visual-system"
 }
 ---
@@ -23,3 +23,6 @@ visual snapshots and accessible fallbacks. ASB must remain free of visual/render
 
 - 2026-09-10T21:04:37+00:00: Added completed AR-0812 as migration input and made the visual,
   contrast and redraw evidence matrix numerically testable without reopening legacy ASB UI paths.
+
+- 2026-09-11T04:12:48+00:00: Added a mechanical downstream screen-conformance contract so the
+  professional visual evidence cannot pass on reusable or demonstration widgets alone.

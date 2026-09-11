@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Add a searchable configuration menu for frontend preferences and benchmark defaults.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Add the standalone TUI configuration center",
-  "updated_at": "2026-09-10T21:04:37+00:00",
+  "updated_at": "2026-09-11T04:12:48+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-configuration-center"
 }
 ---
@@ -26,3 +26,6 @@ ASB remains the authority for runner configuration, validation and benchmark exe
 
 - 2026-09-10T21:25:00+00:00: Added exact XDG and import/export byte, item, string and nesting bounds
   plus fail-closed assertions that preserve the last valid store and leave no temporary artifacts.
+
+- 2026-09-11T04:12:48+00:00: Added bounded deterministic setting search and explicit filtered-action
+  scope tests; stored values and secret-shaped content may never enter the search index.

@@ -5,16 +5,16 @@
   "claim_expires": "",
   "depends_on": ["AR-0870", "AR-0871", "AR-1010", "AR-1014", "AR-1031", "AR-1032", "AR-1033", "AR-1034", "AR-1035"],
   "id": "AR-1011",
-  "next_action": "Implement and test the keyboard-first search, navigation, help, accessibility, and progress UX on the Ratatui foundation.",
+  "next_action": "Integrate and qualify AR-1014 and AR-1031 through AR-1035, closing only cross-screen navigation, accessibility and usability defects after their focused implementations complete.",
   "owner": "",
   "plan": "../plans/AR-1011.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "planned",
   "summary": "Deliver an easy, discoverable, keyboard-first TUI experience for setup and benchmark analysis.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Deliver TUI UX quality features",
-  "updated_at": "2026-09-10T21:04:37+00:00",
+  "updated_at": "2026-09-11T04:12:48+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ux-quality"
 }
 ---
@@ -37,3 +37,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-10T21:40:00+00:00: Marked AR-0870 and AR-0871 as read-only migration/behavior inputs;
   they cannot reopen implementation in legacy ASB frontend paths.
+
+- 2026-09-11T04:12:48+00:00: Corrected the next action to integrated qualification rather than
+  duplicating focused feature ownership and added mechanical focus/navigation graph acceptance.
