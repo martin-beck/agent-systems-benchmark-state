@@ -103,7 +103,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-portable-metrics` | `feature/portable-metrics` | `a0f67bea1ffe` | 0 | behind 395, ahead 0 |
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `51daeb8608e5` | 0 | behind 414, ahead 0 |
 | `agent-systems-benchmark-protected-merge-signature-policy` | `fix/protected-merge-signature-policy` | `d6fa883ad1b2` | 0 | behind 7, ahead 0 |
-| `agent-systems-benchmark-protected-topic-sync-topology` | `fix/protected-topic-sync-topology` | `44eb1b48cb79` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-protected-topic-sync-topology` | `fix/protected-topic-sync-topology` | `44eb1b48cb79` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `tools/quality/repository_policy.py` |
 | `agent-systems-benchmark-provider-aware-agent-launch` | `feature/provider-aware-agent-launch` | `7c9daf795b02` | 0 | behind 128, ahead 0 |
 | `agent-systems-benchmark-provider-credential-integration` | `feature/provider-credential-integration` | `0f92642fc870` | 0 | behind 175, ahead 0 |
 | `agent-systems-benchmark-provider-ollama` | `feature/provider-ollama` | `8137f5baa053` | 0 | behind 219, ahead 0 |
