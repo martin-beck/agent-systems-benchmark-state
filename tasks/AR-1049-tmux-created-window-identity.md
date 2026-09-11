@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind tmux remain-on-exit setup to the exact created window identity instead of a fixed index.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Bind tmux setup to its created window",
-  "updated_at": "2026-09-11T03:01:41+00:00",
+  "updated_at": "2026-09-11T03:02:40+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-created-window-identity"
 }
 ---
@@ -147,3 +147,6 @@ ID, and preserve all established cleanup authority. Change no renderer or applic
   exposed an immediate server-observation startup race; keep all parent recoveries open.
 
 - 2026-09-11T03:01:41+00:00: Claimed by codex-ar1049-recovery-planning-20260911.
+
+- 2026-09-11T03:02:40+00:00: Recorded command exit 0; command argv SHA-256
+  5924630a136d70a165a300c5b3c99b816bcfb4075c1b48401d3cc0fa682c5eb8.
