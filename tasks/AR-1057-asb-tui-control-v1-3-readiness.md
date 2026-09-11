@@ -1,7 +1,7 @@
 ---
 {
   "branch": "docs/asb-tui-control-v1-3-readiness",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "b8c5da5f46131128527f24ca452cb53371a3f8b0",
   "claim_expires": "2026-09-11T07:02:03+00:00",
   "depends_on": [],
   "id": "AR-1057",
