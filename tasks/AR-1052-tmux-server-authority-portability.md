@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Diagnose and repair the trusted-runner tmux server-authority portability gap without weakening cleanup authentication.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Diagnose trusted tmux server authority",
-  "updated_at": "2026-09-11T04:12:05+00:00",
+  "updated_at": "2026-09-11T04:12:57+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-server-authority-portability"
 }
 ---
@@ -141,3 +141,6 @@ authenticated cleanup and zero-widening invariant. Change no product UI, rendere
 
 - 2026-09-11T04:12:05+00:00: Recorded command exit 0; command argv SHA-256
   6ac228aeedbd511ecbe9e51d344daf1edc8701f383d61e6d98f6ba13a2010b54.
+
+- 2026-09-11T04:12:57+00:00: Recorded command exit 0; command argv SHA-256
+  425d200766240349e172c6b46b242ace2b26b845ee422bac8c6220e1acd150da.
