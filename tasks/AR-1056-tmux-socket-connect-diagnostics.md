@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1056.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Diagnose and repair the remaining trusted tmux socket connection-stage failure.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Diagnose tmux socket connection stage",
-  "updated_at": "2026-09-11T04:52:00+00:00",
+  "updated_at": "2026-09-11T04:52:43+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-socket-connect-diagnostics"
 }
 ---
@@ -24,3 +24,6 @@ Trusted-main run 34563628936 at exact merge
 aggregate `socket_connection_unavailable` stage. Add closed substages first, then repair only the
 observed portability gap under the detailed plan. No renderer, UI, lifecycle protocol, dependency,
 workflow or ASB source change is in scope.
+
+- 2026-09-11T04:52:43+00:00: Exact-main Trusted main 34563628936 proves the diagnostic recovery is
+  dependency-ready; scope is one asb-tui test harness file.
