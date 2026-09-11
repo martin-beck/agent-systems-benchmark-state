@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Treat a regular marker published between absent open and fallback lstat as pending for descriptor validation on the next poll.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Close the Gemini hook-marker appearance race",
-  "updated_at": "2026-09-11T02:10:56+00:00",
+  "updated_at": "2026-09-11T02:13:18+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-hook-marker-appearance-race"
 }
 ---
@@ -90,4 +90,7 @@ remain `Invalid`. Add an exact deterministic interposition test and preserve all
   3979ecc44022bf1dae73bab38afa4063fcef04ee190a5c66c840b4983a54abc3.
 
 - 2026-09-11T02:10:56+00:00: Recorded command exit 8; command argv SHA-256
+  eb2fc0ac66f5cefb1d734155f65266ab3b95a8afe2adb889d2de53deefad341a.
+
+- 2026-09-11T02:13:18+00:00: Recorded command exit 8; command argv SHA-256
   eb2fc0ac66f5cefb1d734155f65266ab3b95a8afe2adb889d2de53deefad341a.
