@@ -15,21 +15,21 @@ Generated from local Git and GitHub. Do not edit.
 | #125 | `fix/control-state-lock-test-isolation@8b0f9fd07d5d` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(cli): isolate control state roots |
 | #126 | `fix/main-merge-integrity@bd6f450ab877` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | tools: harden signed merge publication |
 | #127 | `fix/mini-swe-cancellation-reap-test-isolation@c897313524a8` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(agents): harden mini-swe cancellation isolation |
-| #136 | `fix/gemini-hook-readiness-race@208682166c7b` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix: publish Gemini hook readiness atomically |
+| #136 | `fix/gemini-hook-readiness-race@55648d5a29f4` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, IN_PROGRESS:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | fix: publish Gemini hook readiness atomically |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34550056870 | `55648d5a29f4` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 34550056810 | `55648d5a29f4` | pull_request | Huawei MIT source headers | queued:- |
+| 34550056784 | `55648d5a29f4` | pull_request | Fault assurance | queued:- |
+| 34550056779 | `55648d5a29f4` | pull_request | Emulated aarch64 portability | queued:- |
+| 34550056667 | `55648d5a29f4` | pull_request | Repository quality | in_progress:- |
+| 34550056658 | `55648d5a29f4` | pull_request | Formal assurance | queued:- |
+| 34550056630 | `55648d5a29f4` | pull_request | Rust verification | in_progress:- |
+| 34550056599 | `55648d5a29f4` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 34549021304 | `208682166c7b` | pull_request | Rust verification | completed:success |
 | 34549021275 | `208682166c7b` | pull_request | Formal assurance | completed:success |
 | 34549021271 | `208682166c7b` | pull_request | Fault assurance | completed:success |
 | 34549021259 | `208682166c7b` | pull_request | Repository quality | completed:success |
-| 34549021253 | `208682166c7b` | pull_request | Huawei MIT source headers | completed:success |
-| 34549021242 | `208682166c7b` | pull_request | Emulated aarch64 portability | completed:failure |
-| 34549021234 | `208682166c7b` | pull_request | Hosted portability and native qualification | completed:success |
-| 34549021232 | `208682166c7b` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 34548738524 | `310873510c6a` | pull_request | Hosted portability and native qualification | completed:failure |
-| 34548738518 | `310873510c6a` | pull_request | Emulated aarch64 portability | completed:cancelled |
-| 34548738516 | `310873510c6a` | pull_request | Rust verification | completed:cancelled |
-| 34548738488 | `310873510c6a` | pull_request | Repository quality | completed:cancelled |
