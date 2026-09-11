@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1055.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Make the asb tui install and full interactive integration sequence dependency-executable.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Harden asb-tui install integration readiness",
-  "updated_at": "2026-09-11T04:30:08+00:00",
+  "updated_at": "2026-09-11T04:31:15+00:00",
   "worktree_key": "agent-systems-benchmark-state-asb-tui-install-integration-readiness"
 }
 ---
@@ -24,3 +24,6 @@ the existing AR-1024 candidate and the hardened standalone UI roadmap. Amend coo
 only: retain AR-1026's real interactive benchmark acceptance and make the complete UI an explicit
 dependency. Record exact missing release, rebase, platform, lifecycle and legacy-renderer evidence
 without claiming or changing any product task.
+
+- 2026-09-11T04:31:15+00:00: Authorized state-only readiness correction; dependencies are empty and
+  product tasks remain untouched.
