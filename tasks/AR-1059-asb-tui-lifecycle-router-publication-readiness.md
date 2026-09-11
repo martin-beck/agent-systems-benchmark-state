@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Harden the ASB lifecycle-router roadmap before rebasing and publishing it.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Harden lifecycle-router publication readiness",
-  "updated_at": "2026-09-11T05:17:20+00:00",
+  "updated_at": "2026-09-11T05:18:01+00:00",
   "worktree_key": "agent-systems-benchmark-state-asb-tui-lifecycle-router-publication-readiness"
 }
 ---
@@ -30,3 +30,6 @@ Ratatui, Crossterm, widgets, screens and interactive application behavior remain
   dependencies are empty and product task statuses remain unchanged.
 
 - 2026-09-11T05:17:20+00:00: Claimed by codex-ar1059-lifecycle-router-readiness-20260911.
+
+- 2026-09-11T05:18:01+00:00: Recorded command exit 0; command argv SHA-256
+  cf7323cbd20d8ae99a8710db091c109d96c392a1ef85d2f4bceb44ef6765455d.
