@@ -2,22 +2,22 @@
 {
   "branch": "fix/protected-merge-signature-policy",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-11T02:35:35+00:00",
   "depends_on": [],
   "id": "AR-1040",
   "next_action": "Monitor rerun of PR #135 Rust checks and remaining exact-head CI; freeze only after all 12 checks pass, then request different-agent review. Do not merge.",
   "observed_branch": "fix/protected-merge-signature-policy",
   "observed_dirty": 0,
   "observed_head": "d6fa883ad1b2739e7fbd5522029bf02d75e954b8",
-  "owner": "",
+  "owner": "codex-ar1040-final-integration-20260911",
   "plan": "../plans/AR-1040.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Align offline signature policy with the repository-required GitHub merge path.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Reconcile protected-merge signature verification",
-  "updated_at": "2026-09-11T00:34:50+00:00",
+  "updated_at": "2026-09-11T00:35:35+00:00",
   "worktree_key": "agent-systems-benchmark-protected-merge-signature-policy"
 }
 ---
@@ -136,3 +136,5 @@ without allowing Web Flow signatures on ordinary commits or PR heads. This AR ow
   Worktree clean; awaiting a different-agent immutable security review. Do not merge before
   approval; final GitHub merge must use the matching martin-beck trailer and then self-validate in
   protected-main mode.
+
+- 2026-09-11T00:35:35+00:00: Claimed by codex-ar1040-final-integration-20260911.
