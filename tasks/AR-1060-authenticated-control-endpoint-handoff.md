@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Add authenticated control endpoint handoff",
-  "updated_at": "2026-09-11T05:36:18+00:00",
+  "updated_at": "2026-09-11T05:36:37+00:00",
   "worktree_key": "agent-systems-benchmark-authenticated-control-endpoint-handoff"
 }
 ---
@@ -79,3 +79,6 @@ planned until their full dependency sets are done.
   awaits a separately claimed worker and repository-local immutable reviews.
 
 - 2026-09-11T05:36:18+00:00: Claimed by codex-ar1060-asb-endpoint-provider-20260911.
+
+- 2026-09-11T05:36:37+00:00: Recorded command exit 0; command argv SHA-256
+  6a50527cfbf9c1b1a7134978d79d1c1d487a995e9ac4a7df2ae767403992cd6f.
