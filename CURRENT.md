@@ -9,7 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1036](tasks/AR-1036-measurement-catalog-control.md): Publish the measurement catalog control contract | Expose the versioned ASB measurement catalog to standalone frontends without UI code. | After AR-1013, publish the bounded measurement-catalog control operation and exact standalone parser fixtures. | codex-root-ar1036-catalog-20260911 |
 | P0 | [AR-1044](tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Await fresh independent immutable approval of PR #14 exact head 837403aeb37fcfb335d2fc2491d5a58b17baede7; do not merge without root authorization. | codex-ar1044-tmux-foreground-20260911 |
-| P0 | [AR-1047](tasks/AR-1047-gemini-hook-marker-appearance-race.md): Close the Gemini hook-marker appearance race | Treat a regular marker published between absent open and fallback lstat as pending for descriptor validation on the next poll. | Obtain approval for the exact marker-appearance interleaving plan, then promote and claim before product edits. | codex-ar1047-gemini-marker-race-20260911 |
+| P0 | [AR-1047](tasks/AR-1047-gemini-hook-marker-appearance-race.md): Close the Gemini hook-marker appearance race | Treat a regular marker published between absent open and fallback lstat as pending for descriptor validation on the next poll. | Await immutable review of exact signed head 661d52c614c5cfa28859d71131fbc8158b68bc2d/tree 3931f7cb300f1138a1fb2be7493991c03647c1c5 before publishing a draft PR. | codex-ar1047-gemini-marker-race-20260911 |
 
 ## Open
 
