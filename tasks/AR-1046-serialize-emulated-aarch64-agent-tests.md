@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1046.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Make the emulated AArch64 asb-agents fake-node readiness fixtures deterministic without changing production semantics.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Serialize emulated AArch64 agent tests",
-  "updated_at": "2026-09-11T01:33:45+00:00",
+  "updated_at": "2026-09-11T01:35:25+00:00",
   "worktree_key": "agent-systems-benchmark-emulated-aarch64-agent-serialization"
 }
 ---
@@ -25,3 +25,6 @@ PR #137 run `34550643921` job `103112635225` failed the ambient-config/cancellat
 only `--test-threads=1` to the existing AArch64 `asb-agents --lib` command and bind that exact,
 complete, non-retrying test inventory in `tests/platforms/test_emulated_aarch64.py`. Preserve the
 existing skip and all budgets; do not change Rust production code or any UI/TUI repository.
+
+- 2026-09-11T01:35:25+00:00: Root independently approved the narrow two-file AArch64 serialization
+  plan after two distinct HookUnavailable failures.
