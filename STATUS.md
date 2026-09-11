@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 19 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 54 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 140 |
+| **Done** | Accepted, integrated, and durably verified | 141 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -278,7 +278,7 @@ flowchart LR
         AR_1054["AR-1054 - Open"]:::status_open
         AR_1055["AR-1055 - Done"]:::status_done
         AR_1056["AR-1056 - Open"]:::status_open
-        AR_1057["AR-1057 - In progress"]:::status_in_progress
+        AR_1057["AR-1057 - Done"]:::status_done
         AR_1058["AR-1058 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
@@ -1185,12 +1185,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1037](tasks/AR-1037-measurement-selection-plan.md): Add measurement selection to validated run plans | codex-root-ar1037-selection-20260911 | Carry catalog-backed measurement choices through ASB plan validation, collection and evidence. | After AR-1036, add canonical measurement IDs to validated ASB plans and make collection honor them without any UI code. |
-| P0 | [AR-1057](tasks/AR-1057-asb-tui-control-v1-3-readiness.md): Harden asb-tui control v1.3 readiness | codex-ar1057-asb-tui-control-v1-3-readiness-20260911 | Make standalone asb-tui consume precise privacy-safe measurement validation diagnostics. | Bind the standalone client and measurement-selection UX roadmap to ASB control v1.3 precise diagnostics with closed v1.2 fallback behavior. |
 | P0 | [AR-1058](tasks/AR-1058-tmux-startup-observation-diagnostics.md): Diagnose tmux startup observation | codex-ar1058-tmux-startup-diagnostics-20260911 | Diagnose and repair the remaining trusted tmux stable-startup observation failure. | Add privacy-safe stable-startup and pane observation substages at exact asb-tui main 37613e81, obtain trusted-main evidence, then repair only the proven predicate. |
 
 ### Open (19)
@@ -1292,7 +1291,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (140)
+### Done (141)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1327,6 +1326,7 @@ flowchart LR
 | P0 | [AR-1051](tasks/AR-1051-measurement-catalog-merge-attestation.md): Attest the measurement catalog merge boundary | Unclaimed | Record the exact reviewed measurement-catalog merge and its non-compliant GitHub-authored DCO identity without rewriting history. | Push exact approved head 7b3ef113d2b77c3982748f16c540d0e556252464, open the protected-merge PR, and require all exact-head checks before merge. |
 | P0 | [AR-1053](tasks/AR-1053-asb-tui-roadmap-hardening.md): Harden the standalone asb-tui roadmap | Unclaimed | Make the standalone asb-tui UX roadmap detailed, non-overlapping and dependency-executable. | Harden the audited standalone asb-tui task and plan records without changing either product repository or feature-task status. |
 | P0 | [AR-1055](tasks/AR-1055-asb-tui-install-integration-readiness.md): Harden asb-tui install integration readiness | Unclaimed | Make the asb tui install and full interactive integration sequence dependency-executable. | Bind AR-1026 to the complete standalone UI and record the exact router, release and cross-repository qualification gaps without changing product code or feature-task status. |
+| P0 | [AR-1057](tasks/AR-1057-asb-tui-control-v1-3-readiness.md): Harden asb-tui control v1.3 readiness | Unclaimed | Make standalone asb-tui consume precise privacy-safe measurement validation diagnostics. | Bind the standalone client and measurement-selection UX roadmap to ASB control v1.3 precise diagnostics with closed v1.2 fallback behavior. |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Unclaimed | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. |
 | P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Unclaimed | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. |
 | P1 | [AR-0004](tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Unclaimed | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. |

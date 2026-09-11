@@ -2,19 +2,19 @@
 {
   "branch": "docs/asb-tui-control-v1-3-readiness",
   "checkpoint_commit": "b8c5da5f46131128527f24ca452cb53371a3f8b0",
-  "claim_expires": "2026-09-11T07:02:03+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1057",
   "next_action": "Bind the standalone client and measurement-selection UX roadmap to ASB control v1.3 precise diagnostics with closed v1.2 fallback behavior.",
-  "owner": "codex-ar1057-asb-tui-control-v1-3-readiness-20260911",
+  "owner": "",
   "plan": "../plans/AR-1057.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make standalone asb-tui consume precise privacy-safe measurement validation diagnostics.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Harden asb-tui control v1.3 readiness",
-  "updated_at": "2026-09-11T05:11:20+00:00",
+  "updated_at": "2026-09-11T05:11:51+00:00",
   "worktree_key": "agent-systems-benchmark-state-asb-tui-control-v1-3-readiness"
 }
 ---
@@ -71,3 +71,9 @@ or any feature-task status.
 
 - 2026-09-11T05:11:20+00:00: Recorded command exit 0; command argv SHA-256
   e3833595b34b405d9f03f0e2a7e7384170c015f3c8bec5294514001005019bbc.
+
+- 2026-09-11T05:11:51+00:00: State-only roadmap alignment complete: exact 5093 audit rejected its
+  non-byte-stable legacy projection; corrected c6bc contract verified. AR-1025 now depends on
+  AR-1037 and requires closed v1.3 parsing plus exact v1.2/v1.0 behavior; AR-1014 requires precise
+  v1.3 UX and non-inferential fallback. Feature task statuses and owners unchanged; focused Rust
+  tests, state unit tests, graph, schema, privacy and generated views pass.
