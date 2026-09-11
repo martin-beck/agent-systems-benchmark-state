@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1036](tasks/AR-1036-measurement-catalog-control.md): Publish the measurement catalog control contract | Expose the versioned ASB measurement catalog to standalone frontends without UI code. | After AR-1013, publish the bounded measurement-catalog control operation and exact standalone parser fixtures. | codex-root-ar1036-catalog-20260911 |
-| P0 | [AR-1043](tasks/AR-1043-protected-topic-sync-topology.md): Qualify exact topic-tip synchronization merges | Accept one exact signed topic-tip sync merge without weakening protected-main policy. | Monitor all 12 exact-head checks on PR #137 at approved head 40a84dda234f250927bb36a5b3c46bb342f60149, including AArch64; do not merge without terminal green and root authorization. | codex-ar1043-protected-topic-sync-20260911 |
+| P0 | [AR-1043](tasks/AR-1043-protected-topic-sync-topology.md): Qualify exact topic-tip synchronization merges | Accept one exact signed topic-tip sync merge without weakening protected-main policy. | All 12 exact-head checks on independently approved PR #137 head 40a84dda234f250927bb36a5b3c46bb342f60149 are green, including AArch64. Await explicit root merge authorization; merge must use protected method and a truthful real multiline body ending exact lowercase trailer Signed-off-by: martin-beck <martin.beck2@gmx.de>. | codex-ar1043-protected-topic-sync-20260911 |
 
 ## Open
 

@@ -7,7 +7,7 @@
     "AR-1040"
   ],
   "id": "AR-1043",
-  "next_action": "Monitor all 12 exact-head checks on PR #137 at approved head 40a84dda234f250927bb36a5b3c46bb342f60149, including AArch64; do not merge without terminal green and root authorization.",
+  "next_action": "All 12 exact-head checks on independently approved PR #137 head 40a84dda234f250927bb36a5b3c46bb342f60149 are green, including AArch64. Await explicit root merge authorization; merge must use protected method and a truthful real multiline body ending exact lowercase trailer Signed-off-by: martin-beck <martin.beck2@gmx.de>.",
   "observed_branch": "fix/protected-topic-sync-topology",
   "observed_dirty": 0,
   "observed_head": "40a84dda234f250927bb36a5b3c46bb342f60149",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Accept one exact signed topic-tip sync merge without weakening protected-main policy.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Qualify exact topic-tip synchronization merges",
-  "updated_at": "2026-09-11T02:38:06+00:00",
+  "updated_at": "2026-09-11T02:38:26+00:00",
   "worktree_key": "agent-systems-benchmark-protected-topic-sync-topology"
 }
 ---
@@ -246,3 +246,8 @@ by the plan, preserve all negative cases and restore a green forward protected-m
 
 - 2026-09-11T02:38:06+00:00: Recorded command exit 0; command argv SHA-256
   b143bf9c34f1cb1f9f7a692358f2897734fd78b0c006f7562928d919ba240efd.
+
+- 2026-09-11T02:38:26+00:00: PR #137 exact-head CI is terminal 12/12 green. Run IDs: Rust
+  34554978992; AArch64 34554978993; fault suite 34554978998; quality 34554979001; platform
+  34554979008; headers 34554979051; formal 34554979073; AWQ 34554978997. Pending-check polling exits
+  were gh exit 8 by documented convention and not failures. No merge performed.
