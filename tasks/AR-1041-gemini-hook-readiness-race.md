@@ -2,22 +2,22 @@
 {
   "branch": "fix/gemini-hook-readiness-race",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-11T02:57:22+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1041",
   "next_action": "Monitor all 12 checks on draft PR #136 exact head 55648d5a29f4c29e9525eb7f2a890ac5232d7b5a; if terminal green, release OPEN for protected merge decision; do not self-merge.",
   "observed_branch": "fix/gemini-hook-readiness-race",
   "observed_dirty": 0,
   "observed_head": "55648d5a29f4c29e9525eb7f2a890ac5232d7b5a",
-  "owner": "codex-ar1041-gemini-readiness-20260911",
+  "owner": "",
   "plan": "../plans/AR-1041.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Eliminate the load-sensitive Gemini hook readiness race without weakening validation.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Make Gemini hook readiness publication atomic",
-  "updated_at": "2026-09-11T01:23:41+00:00",
+  "updated_at": "2026-09-11T01:27:10+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-hook-readiness-race"
 }
 ---
@@ -208,3 +208,8 @@ any TUI code.
 
 - 2026-09-11T01:23:41+00:00: Recorded command exit 0; command argv SHA-256
   0e0a30d119b6e88d05de830cee4b9c8dc11bcc452a0eab0700b1764394aef889.
+
+- 2026-09-11T01:27:10+00:00: PR #136 exact head 55648d5/tree e7eb2b7 passed 12/12 and merged as
+  GitHub-verified exact-tree commit 2ecb876, but its default merge message lacks DCO; protected-main
+  quality run 34550483000 failed exactly that policy. AR-1041 is not done and remains pending
+  forward-only AR-1045 attestation/current-main recovery; reclaim only after AR-1045 completes.
