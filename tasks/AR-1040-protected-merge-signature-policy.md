@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-11T02:07:02+00:00",
   "depends_on": [],
   "id": "AR-1040",
-  "next_action": "Monitor PR #135 exact-head CI at d6fa883; when all 12 checks are green, freeze the immutable head and request different-agent security review. Do not merge.",
+  "next_action": "Monitor rerun of PR #135 Rust checks and remaining exact-head CI; freeze only after all 12 checks pass, then request different-agent review. Do not merge.",
   "observed_branch": "fix/protected-merge-signature-policy",
   "observed_dirty": 0,
   "observed_head": "d6fa883ad1b2739e7fbd5522029bf02d75e954b8",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Align offline signature policy with the repository-required GitHub merge path.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Reconcile protected-merge signature verification",
-  "updated_at": "2026-09-11T00:31:32+00:00",
+  "updated_at": "2026-09-11T00:31:51+00:00",
   "worktree_key": "agent-systems-benchmark-protected-merge-signature-policy"
 }
 ---
@@ -122,3 +122,9 @@ without allowing Web Flow signatures on ordinary commits or PR heads. This AR ow
 
 - 2026-09-11T00:31:32+00:00: Recorded command exit 0; command argv SHA-256
   6cfca7242bab3222fc03b5cad513807452d1d2860389e0c46cd9f5cad428055e.
+
+- 2026-09-11T00:31:51+00:00: Exact-head Rust checks first attempt failed in unrelated existing
+  gemini::process_boundary_hides_prompt_isolates_state_and_cleans_up with HookUnavailable (137 other
+  asb-agents tests passed). AR-1040 changes no Rust/Gemini code; the same full workspace and test
+  passed locally, including under coverage. Classified as pre-existing parallel-test/environment
+  flake and triggered the supported failed-job rerun. Other completed PR checks are green.
