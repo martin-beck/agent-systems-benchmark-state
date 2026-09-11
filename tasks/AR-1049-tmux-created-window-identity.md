@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-created-window-identity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-11T03:31:41+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1049",
   "next_action": "Remain OPEN pending a narrow bounded tmux startup-readiness recovery and a green trusted-main rerun.",
-  "owner": "codex-ar1049-recovery-planning-20260911",
+  "owner": "",
   "plan": "../plans/AR-1049.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Bind tmux remain-on-exit setup to the exact created window identity instead of a fixed index.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Bind tmux setup to its created window",
-  "updated_at": "2026-09-11T03:02:40+00:00",
+  "updated_at": "2026-09-11T03:02:57+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-created-window-identity"
 }
 ---
@@ -150,3 +150,6 @@ ID, and preserve all established cleanup authority. Change no renderer or applic
 
 - 2026-09-11T03:02:40+00:00: Recorded command exit 0; command argv SHA-256
   5924630a136d70a165a300c5b3c99b816bcfb4075c1b48401d3cc0fa682c5eb8.
+
+- 2026-09-11T03:02:57+00:00: AR-1050 now records the narrow bounded authenticated startup-readiness
+  recovery; AR-1049 remains unaccepted pending its trusted-main result.
