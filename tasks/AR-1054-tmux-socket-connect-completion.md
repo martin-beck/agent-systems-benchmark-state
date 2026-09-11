@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-11T06:29:21+00:00",
   "depends_on": [],
   "id": "AR-1054",
-  "next_action": "Repair exact AF_UNIX EAGAIN and bounded connection-completion semantics from merged asb-tui main 7a398032, then prove all live tmux fixtures on trusted main.",
+  "next_action": "Create signed+DCO one-file checkpoint, run clean-tree coverage/promoted-self-test and remaining gates, then freeze for fresh immutable review before publication.",
   "owner": "codex-ar1054-tmux-connect-completion-20260911",
   "plan": "../plans/AR-1054.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair trusted tmux socket connection completion without weakening authenticated cleanup authority.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Repair tmux socket connection completion",
-  "updated_at": "2026-09-11T04:39:55+00:00",
+  "updated_at": "2026-09-11T04:40:17+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-socket-connect-completion"
 }
 ---
@@ -95,3 +95,15 @@ lifecycle protocol, dependency, workflow or ASB source change is in scope.
 
 - 2026-09-11T04:39:55+00:00: Recorded command exit 0; command argv SHA-256
   2bba44e0419b2e3593bbeb505559dbd837b6e4267578e7241f3e4f4d5a34de7b.
+
+- 2026-09-11T04:40:17+00:00: Implementation checkpoint: exact one-file test-harness diff now accepts
+  Linux AF_UNIX EAGAIN or EINPROGRESS only as incomplete, requires bounded poll completion and exact
+  zero SO_ERROR, and retains all peer/socket/process authority checks. New pure negatives cover bad
+  errno, timeout/readiness, POLLNVAL, bad SO_ERROR length/status/value, NUL and overlong paths.
+  Focused tests pass; full serial 29/29; five repeated serial suites 145/145; five repeated parallel
+  suites 145/145; full locked tests, fmt, all-target Clippy, rustdoc, release, deny,
+  schema/release/publication, shell/workflow and privacy gates pass. Three initial exit-127 commands
+  omitted the wrapper-required absolute Cargo path and were invocation-only; corrected. Coverage
+  exit 1 was expected clean-tree precondition on the intentional uncommitted diff. Cargo audit
+  completed its scan with no advisory failure, then wrapper evidence hit coordinator LOCK_TIMEOUT;
+  rerun after commit is required.

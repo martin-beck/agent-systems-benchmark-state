@@ -1181,7 +1181,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1037](tasks/AR-1037-measurement-selection-plan.md): Add measurement selection to validated run plans | codex-root-ar1037-selection-20260911 | Carry catalog-backed measurement choices through ASB plan validation, collection and evidence. | After AR-1036, add canonical measurement IDs to validated ASB plans and make collection honor them without any UI code. |
-| P0 | [AR-1054](tasks/AR-1054-tmux-socket-connect-completion.md): Repair tmux socket connection completion | codex-ar1054-tmux-connect-completion-20260911 | Repair trusted tmux socket connection completion without weakening authenticated cleanup authority. | Repair exact AF_UNIX EAGAIN and bounded connection-completion semantics from merged asb-tui main 7a398032, then prove all live tmux fixtures on trusted main. |
+| P0 | [AR-1054](tasks/AR-1054-tmux-socket-connect-completion.md): Repair tmux socket connection completion | codex-ar1054-tmux-connect-completion-20260911 | Repair trusted tmux socket connection completion without weakening authenticated cleanup authority. | Create signed+DCO one-file checkpoint, run clean-tree coverage/promoted-self-test and remaining gates, then freeze for fresh immutable review before publication. |
 
 ### Open (17)
 
