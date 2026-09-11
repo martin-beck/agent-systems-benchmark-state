@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent sanitized capability child tests from writing default profraw files into the source checkout.",
-  "task_revision": 127,
+  "task_revision": 128,
   "title": "Preserve coverage sinks in sanitized CLI child tests",
-  "updated_at": "2026-09-11T00:57:20+00:00",
+  "updated_at": "2026-09-11T00:58:40+00:00",
   "worktree_key": "agent-systems-benchmark-capability-coverage-sink"
 }
 ---
@@ -469,3 +469,6 @@ Fix the six `default_*.profraw` files discovered during AR-1013 full coverage wi
   SSH-signed+DCO, sync merge itself is SSH-signed+DCO, and sync-tree/topic-tree/final protected
   merge tree are identical; reject nested/off-tip/arbitrary-base/multiple merges and add adversarial
   tests.
+
+- 2026-09-11T00:58:40+00:00: Recorded command exit 0; command argv SHA-256
+  d506d35f62efe6cf576ee3572b595e11a783fbbba89a3de10da2157c6234f59f.
