@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Recover tmux foreground-group qualification",
-  "updated_at": "2026-09-11T02:12:59+00:00",
+  "updated_at": "2026-09-11T02:15:02+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-pane-foreground-group-recovery"
 }
 ---
@@ -272,3 +272,6 @@ absent or changes. Do not change renderer or application behavior.
   before post-command coordinator failure caused by expired AR-1039; root recovered it. Empirical
   probes confirmed tmux 3.4 retains the same socket inode after kill-server and SIGTERM, motivating
   the approved fail-closed disposable-root design.
+
+- 2026-09-11T02:15:02+00:00: Recorded command exit 0; command argv SHA-256
+  1072278aab4d52c035e53f17a72af0279250b9eb5243022d0b6ee77c47e68d9f.
