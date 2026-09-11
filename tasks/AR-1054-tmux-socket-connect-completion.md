@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-11T06:29:21+00:00",
   "depends_on": [],
   "id": "AR-1054",
-  "next_action": "Create signed+DCO one-file checkpoint, run clean-tree coverage/promoted-self-test and remaining gates, then freeze for fresh immutable review before publication.",
+  "next_action": "Fresh different-agent immutable review of exact unpushed signed+DCO head d4ace404949ab92090c72fcedf8ce182c37ee2e7, tree ff609b21e655b30a06cf5ccc6848ad239574c812; do not publish until approved.",
   "owner": "codex-ar1054-tmux-connect-completion-20260911",
   "plan": "../plans/AR-1054.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair trusted tmux socket connection completion without weakening authenticated cleanup authority.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Repair tmux socket connection completion",
-  "updated_at": "2026-09-11T04:42:10+00:00",
+  "updated_at": "2026-09-11T04:42:30+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-socket-connect-completion"
 }
 ---
@@ -128,3 +128,12 @@ lifecycle protocol, dependency, workflow or ASB source change is in scope.
 
 - 2026-09-11T04:42:10+00:00: Recorded command exit 0; command argv SHA-256
   699a346f5ceb875873813e88b6bb73d164c47f81ca95bbab3cfbe350a1c85448.
+
+- 2026-09-11T04:42:30+00:00: Frozen AR-1054 candidate d4ace404949ab92090c72fcedf8ce182c37ee2e7/tree
+  ff609b21e655b30a06cf5ccc6848ad239574c812 is one test-only file, clean, valid SSH signature and
+  matching DCO. Exact base 7a398032. Five serial terminal suites pass 145/145, five parallel pass
+  145/145, full locked suite and 29/29 terminal pass; fmt, Clippy, rustdoc, release, cargo-deny,
+  cargo-audit, 91.44% coverage, compatibility/channel/publication, promoted executable self-test,
+  shell/workflow, privacy, one-commit Gitleaks, scoped exact-binary no-process and clean-tree gates
+  pass. Postmerge Repository quality for AR-1052 also passed run 34562090778; Trusted main failure
+  34562090773 is the reproduced recovery trigger. Await immutable review; no push.

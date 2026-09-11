@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1037](tasks/AR-1037-measurement-selection-plan.md): Add measurement selection to validated run plans | Carry catalog-backed measurement choices through ASB plan validation, collection and evidence. | After AR-1036, add canonical measurement IDs to validated ASB plans and make collection honor them without any UI code. | codex-root-ar1037-selection-20260911 |
-| P0 | [AR-1054](tasks/AR-1054-tmux-socket-connect-completion.md): Repair tmux socket connection completion | Repair trusted tmux socket connection completion without weakening authenticated cleanup authority. | Create signed+DCO one-file checkpoint, run clean-tree coverage/promoted-self-test and remaining gates, then freeze for fresh immutable review before publication. | codex-ar1054-tmux-connect-completion-20260911 |
+| P0 | [AR-1054](tasks/AR-1054-tmux-socket-connect-completion.md): Repair tmux socket connection completion | Repair trusted tmux socket connection completion without weakening authenticated cleanup authority. | Fresh different-agent immutable review of exact unpushed signed+DCO head d4ace404949ab92090c72fcedf8ce182c37ee2e7, tree ff609b21e655b30a06cf5ccc6848ad239574c812; do not publish until approved. | codex-ar1054-tmux-connect-completion-20260911 |
 
 ## Open
 
