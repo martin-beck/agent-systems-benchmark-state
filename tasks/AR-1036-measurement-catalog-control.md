@@ -11,16 +11,16 @@
   "next_action": "After AR-1013, publish the bounded measurement-catalog control operation and exact standalone parser fixtures.",
   "observed_branch": "feature/measurement-catalog-control",
   "observed_dirty": 0,
-  "observed_head": "e8df8d007c1c168aee8a9c2f4d304eda30f3ab60",
+  "observed_head": "d77e4a681f26f694cf0911188cb7996e5271c325",
   "owner": "codex-root-ar1036-catalog-20260911",
   "plan": "../plans/AR-1036.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose the versioned ASB measurement catalog to standalone frontends without UI code.",
-  "task_revision": 115,
+  "task_revision": 116,
   "title": "Publish the measurement catalog control contract",
-  "updated_at": "2026-09-11T02:41:28+00:00",
+  "updated_at": "2026-09-11T02:41:35+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-control"
 }
 ---
