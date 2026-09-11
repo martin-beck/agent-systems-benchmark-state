@@ -8,7 +8,7 @@
     "AR-1023"
   ],
   "id": "AR-1036",
-  "next_action": "Publish reviewed exact head d77e4a681f26f694cf0911188cb7996e5271c325 as a protected PR, require all exact-head checks, merge, and verify postmerge.",
+  "next_action": "Open protected PR for approved exact head 95fa9dc55f2aedc8c7dba8cb1deab5f225b66782, require all exact-head checks, merge, and verify postmerge.",
   "observed_branch": "feature/measurement-catalog-control",
   "observed_dirty": 0,
   "observed_head": "95fa9dc55f2aedc8c7dba8cb1deab5f225b66782",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose the versioned ASB measurement catalog to standalone frontends without UI code.",
-  "task_revision": 140,
+  "task_revision": 141,
   "title": "Publish the measurement catalog control contract",
-  "updated_at": "2026-09-11T02:54:29+00:00",
+  "updated_at": "2026-09-11T02:55:03+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-control"
 }
 ---
@@ -331,3 +331,8 @@ rendering and help behavior remains exclusively in `martin-beck/asb-tui` under A
 
 - 2026-09-11T02:54:29+00:00: Recorded command exit 0; command argv SHA-256
   199d28615859b7271a35e742f39d249d4e4230ea4f2640cb9e550643a29d1ece.
+
+- 2026-09-11T02:55:03+00:00: Immutable reviewer approved exact head/tree after fixing both blockers:
+  public invalid version offers now reject before socket connect with no-accept regression, and raw
+  publication wrapper bytes are capped before decode with outer-whitespace regression. Exact head
+  full workspace tests and workspace clippy are green; contract consistency run-tests is green.
