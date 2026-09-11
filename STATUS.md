@@ -1181,7 +1181,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1037](tasks/AR-1037-measurement-selection-plan.md): Add measurement selection to validated run plans | codex-root-ar1037-selection-20260911 | Carry catalog-backed measurement choices through ASB plan validation, collection and evidence. | After AR-1036, add canonical measurement IDs to validated ASB plans and make collection honor them without any UI code. |
-| P0 | [AR-1054](tasks/AR-1054-tmux-socket-connect-completion.md): Repair tmux socket connection completion | codex-ar1054-tmux-connect-completion-20260911 | Repair trusted tmux socket connection completion without weakening authenticated cleanup authority. | Fresh different-agent immutable review of exact unpushed signed+DCO head d4ace404949ab92090c72fcedf8ce182c37ee2e7, tree ff609b21e655b30a06cf5ccc6848ad239574c812; do not publish until approved. |
+| P0 | [AR-1054](tasks/AR-1054-tmux-socket-connect-completion.md): Repair tmux socket connection completion | codex-ar1054-tmux-connect-completion-20260911 | Repair trusted tmux socket connection completion without weakening authenticated cleanup authority. | Publish approved exact head d4ace404949ab92090c72fcedf8ce182c37ee2e7, open PR, require exact-head checks, then merge and verify both exact-main workflows. |
 
 ### Open (17)
 

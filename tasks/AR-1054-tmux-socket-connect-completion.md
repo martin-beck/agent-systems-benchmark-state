@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-11T06:29:21+00:00",
   "depends_on": [],
   "id": "AR-1054",
-  "next_action": "Fresh different-agent immutable review of exact unpushed signed+DCO head d4ace404949ab92090c72fcedf8ce182c37ee2e7, tree ff609b21e655b30a06cf5ccc6848ad239574c812; do not publish until approved.",
+  "next_action": "Publish approved exact head d4ace404949ab92090c72fcedf8ce182c37ee2e7, open PR, require exact-head checks, then merge and verify both exact-main workflows.",
   "owner": "codex-ar1054-tmux-connect-completion-20260911",
   "plan": "../plans/AR-1054.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair trusted tmux socket connection completion without weakening authenticated cleanup authority.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Repair tmux socket connection completion",
-  "updated_at": "2026-09-11T04:45:04+00:00",
+  "updated_at": "2026-09-11T04:46:21+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-socket-connect-completion"
 }
 ---
@@ -146,3 +146,7 @@ lifecycle protocol, dependency, workflow or ASB source change is in scope.
 
 - 2026-09-11T04:45:04+00:00: Recorded command exit 0; command argv SHA-256
   d2c779568654c6aad933a5e81828253cbae59bf409590b70811c9818367f71f2.
+
+- 2026-09-11T04:46:21+00:00: Fresh immutable review approved exact one-file signed+DCO recovery
+  d4ace404949ab92090c72fcedf8ce182c37ee2e7/tree ff609b21e655b30a06cf5ccc6848ad239574c812/base
+  7a398032. Governed publication is authorized; merge remains conditional on all exact-head checks.
