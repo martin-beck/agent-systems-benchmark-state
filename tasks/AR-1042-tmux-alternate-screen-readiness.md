@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-11T02:43:01+00:00",
   "depends_on": [],
   "id": "AR-1042",
-  "next_action": "Require clean tmux config, bracket displayed-pane capture with exact alternate_on=1 observations, and rerun repeated qualification.",
+  "next_action": "Reap the exact owned tmux pane process group on every guard cleanup path, prove no process/socket leaks, then amend and rerun all gates.",
   "owner": "codex-ar1042-tmux-readiness-20260911",
   "plan": "../plans/AR-1042.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make tmux TUI readiness validate the displayed alternate screen deterministically.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Capture alternate-screen TUI readiness deterministically",
-  "updated_at": "2026-09-11T01:04:20+00:00",
+  "updated_at": "2026-09-11T01:04:54+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-alternate-screen-readiness"
 }
 ---
@@ -133,3 +133,9 @@ emit bounded diagnostics; do not change renderer or application semantics.
 
 - 2026-09-11T01:04:20+00:00: Recorded command exit 0; command argv SHA-256
   545f88059381a271c392abc51e1734196de2e0b30a6a46172eb7c2a3743812b5.
+
+- 2026-09-11T01:04:54+00:00: Leak audit found the failed readiness path could kill only the tmux
+  server and orphan a HUP-resistant asb-tui pane group. Three exact historical groups were
+  identity-checked, terminated and verified gone. The test guard now owns the validated pane PGID
+  and performs bounded TERM/KILL cleanup; runtime hangup behavior remains a separate follow-up
+  concern, not a renderer change in AR-1042.
