@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Eliminate the load-sensitive Gemini hook readiness race without weakening validation.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Make Gemini hook readiness publication atomic",
-  "updated_at": "2026-09-11T00:50:33+00:00",
+  "updated_at": "2026-09-11T00:51:03+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-hook-readiness-race"
 }
 ---
@@ -72,3 +72,6 @@ any TUI code.
 
 - 2026-09-11T00:50:33+00:00: Recorded command exit 0; command argv SHA-256
   90d3567df2faf96247120928cda2eb401278d55495aa63d3d88d3c2f8773f12f.
+
+- 2026-09-11T00:51:03+00:00: Recorded command exit 0; command argv SHA-256
+  63fd9158f48e0931d155fc71e5f91c38cdccd660cbf510480e41bd439946e104.
