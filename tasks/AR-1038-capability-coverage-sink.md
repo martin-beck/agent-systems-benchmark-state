@@ -10,16 +10,16 @@
   "next_action": "Obtain a new immutable independent review of PR #132 exact head 69888a33cdf8383f4155d3dca1e9180104770b33/tree 42fd9229538ab7183b71a0517ca6c5bd751bdb99. All 12 exact-head checks are terminal SUCCESS. Do not merge without approval.",
   "observed_branch": "test/capability-coverage-sink",
   "observed_dirty": 0,
-  "observed_head": "69888a33cdf8383f4155d3dca1e9180104770b33",
+  "observed_head": "297895dbdee6acfc2a7425c5a9ab254c6d2cce96",
   "owner": "codex-ar1038-final-integration-20260911",
   "plan": "../plans/AR-1038.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent sanitized capability child tests from writing default profraw files into the source checkout.",
-  "task_revision": 107,
+  "task_revision": 108,
   "title": "Preserve coverage sinks in sanitized CLI child tests",
-  "updated_at": "2026-09-11T00:44:07+00:00",
+  "updated_at": "2026-09-11T00:44:13+00:00",
   "worktree_key": "agent-systems-benchmark-capability-coverage-sink"
 }
 ---
