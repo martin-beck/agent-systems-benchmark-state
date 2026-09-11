@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Harden the ASB lifecycle-router roadmap before rebasing and publishing it.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Harden lifecycle-router publication readiness",
-  "updated_at": "2026-09-11T05:18:01+00:00",
+  "updated_at": "2026-09-11T05:18:21+00:00",
   "worktree_key": "agent-systems-benchmark-state-asb-tui-lifecycle-router-publication-readiness"
 }
 ---
@@ -33,3 +33,6 @@ Ratatui, Crossterm, widgets, screens and interactive application behavior remain
 
 - 2026-09-11T05:18:01+00:00: Recorded command exit 0; command argv SHA-256
   cf7323cbd20d8ae99a8710db091c109d96c392a1ef85d2f4bceb44ef6765455d.
+
+- 2026-09-11T05:18:21+00:00: Recorded command exit 0; command argv SHA-256
+  1dc8bbb4952860c25f60b8cb81a4330353408d76434dbca4441cd33250665d0a.
