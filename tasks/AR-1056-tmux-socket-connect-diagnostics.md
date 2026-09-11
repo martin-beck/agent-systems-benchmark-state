@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Diagnose and repair the remaining trusted tmux socket connection-stage failure.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Diagnose tmux socket connection stage",
-  "updated_at": "2026-09-11T04:55:54+00:00",
+  "updated_at": "2026-09-11T04:56:24+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-socket-connect-diagnostics"
 }
 ---
@@ -53,3 +53,6 @@ workflow or ASB source change is in scope.
 
 - 2026-09-11T04:55:54+00:00: Recorded command exit 0; command argv SHA-256
   a13608d24080c15d6bff41fa9f005de88b7299a46461aae5ffd4448e85470d8a.
+
+- 2026-09-11T04:56:24+00:00: Recorded command exit 0; command argv SHA-256
+  61a6901512dceb1291ea5100ecf715c5df1aafbb182450eb9435a433413b20ad.
