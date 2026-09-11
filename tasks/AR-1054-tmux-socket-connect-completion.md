@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair trusted tmux socket connection completion without weakening authenticated cleanup authority.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Repair tmux socket connection completion",
-  "updated_at": "2026-09-11T04:46:21+00:00",
+  "updated_at": "2026-09-11T04:46:26+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-socket-connect-completion"
 }
 ---
@@ -150,3 +150,6 @@ lifecycle protocol, dependency, workflow or ASB source change is in scope.
 - 2026-09-11T04:46:21+00:00: Fresh immutable review approved exact one-file signed+DCO recovery
   d4ace404949ab92090c72fcedf8ce182c37ee2e7/tree ff609b21e655b30a06cf5ccc6848ad239574c812/base
   7a398032. Governed publication is authorized; merge remains conditional on all exact-head checks.
+
+- 2026-09-11T04:46:26+00:00: Recorded command exit 0; command argv SHA-256
+  ec742533612b87a9ceb41846a17a4e051ed0e4fe358317da61bca4ade0a59b9f.
