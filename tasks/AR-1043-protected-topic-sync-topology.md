@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Accept one exact signed topic-tip sync merge without weakening protected-main policy.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Qualify exact topic-tip synchronization merges",
-  "updated_at": "2026-09-11T01:20:37+00:00",
+  "updated_at": "2026-09-11T01:22:37+00:00",
   "worktree_key": "agent-systems-benchmark-protected-topic-sync-topology"
 }
 ---
@@ -111,3 +111,6 @@ by the plan, preserve all negative cases and restore a green forward protected-m
   without jsonschema after all prior gates passed, then existing quality venv passed 57/57 and
   remaining coverage. Several LOCK_TIMEOUT exits occurred before commands during concurrent
   coordination.
+
+- 2026-09-11T01:22:37+00:00: Recorded command exit 0; command argv SHA-256
+  71eaed42b7806f8287dc3230889aa5b18f5164dc3f72649ae4fd2a212da7482e.
