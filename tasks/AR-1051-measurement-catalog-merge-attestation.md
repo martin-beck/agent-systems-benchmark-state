@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Record the exact reviewed measurement-catalog merge and its non-compliant GitHub-authored DCO identity without rewriting history.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Attest the measurement catalog merge boundary",
-  "updated_at": "2026-09-11T03:47:03+00:00",
+  "updated_at": "2026-09-11T03:47:22+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-merge-attestation"
 }
 ---
@@ -121,3 +121,6 @@ attestation evidence and a corrective future merge recipe using the exact GitHub
   paths; one exit 1 was the expected fmt-check diff before formatting; formal fixture hit one
   transient ETXTBSY, then passed exact test 10/10 and full formal rerun; one exit 1 came from
   malformed audit-only awk quoting and the corrected exact-scope assertion passed.
+
+- 2026-09-11T03:47:22+00:00: Recorded command exit 0; command argv SHA-256
+  5b77f9aa909afd87a60713d4097618442e96583256599e42eb6da4a451454935.
