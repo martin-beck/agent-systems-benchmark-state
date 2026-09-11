@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-window-option-portability",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-11T04:19:32+00:00",
   "depends_on": [],
   "id": "AR-1048",
   "next_action": "Promote and claim the pre-approved test-only recovery, then replace ambiguous remain-on-exit setup with the exact portable window-option command.",
-  "owner": "",
+  "owner": "codex-ar1048-tmux-window-portability-20260911",
   "plan": "../plans/AR-1048.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Use an explicit tmux window-option command so trusted-main terminal qualification is portable.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Make tmux window-option setup portable",
-  "updated_at": "2026-09-11T02:19:29+00:00",
+  "updated_at": "2026-09-11T02:19:32+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-window-option-portability"
 }
 ---
@@ -27,3 +27,5 @@ authority, and change no renderer or application behavior.
 
 - 2026-09-11T02:19:29+00:00: Pre-approved P0 test-only recovery is dependency-ready after
   trusted-main run 34553880557 exposed the portable window-option command requirement.
+
+- 2026-09-11T02:19:32+00:00: Claimed by codex-ar1048-tmux-window-portability-20260911.
