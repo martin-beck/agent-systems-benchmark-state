@@ -1,0 +1,23 @@
+---
+{
+  "branch": "fix/tmux-nested-server-connect-diagnostics",
+  "checkpoint_commit": "",
+  "claim_expires": "",
+  "depends_on": [],
+  "id": "AR-1062",
+  "next_action": "At exact asb-tui main db612b6f, preserve nested server stages and split rejected connection errno into closed symbolic classes without changing behavior.",
+  "owner": "",
+  "plan": "../plans/AR-1062.md",
+  "priority": "P0",
+  "schema_version": 1,
+  "status": "planned",
+  "summary": "Diagnose the exact nested tmux server and rejected socket-error class on trusted main.",
+  "task_revision": 1,
+  "title": "Diagnose nested tmux server connection failures",
+  "updated_at": "2026-09-11T05:54:00+00:00",
+  "worktree_key": "agent-systems-benchmark-asb-tui-tmux-nested-server-connect-diagnostics"
+}
+---
+
+Trusted main `34567498957` at exact merge `db612b6f` falsified live-fixture contention and left the
+failing connection class hidden. Add diagnostics only; preserve all authority and product behavior.

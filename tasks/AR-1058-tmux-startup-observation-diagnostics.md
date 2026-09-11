@@ -3,18 +3,18 @@
   "branch": "fix/tmux-startup-observation-diagnostics",
   "checkpoint_commit": "bd3423d2425a805ec024d980f4a72575b67f0d81",
   "claim_expires": "",
-  "depends_on": [],
+  "depends_on": ["AR-1062"],
   "id": "AR-1058",
-  "next_action": "Freeze the diagnostic-only exact head after green focused, terminal, full locked, fmt and Clippy gates; obtain immutable review before publication.",
+  "next_action": "Wait for AR-1062 to preserve the hidden nested server stage and symbolic socket-error class, then require green exact-main terminal qualification.",
   "owner": "",
   "plan": "../plans/AR-1058.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "open",
   "summary": "Diagnose and repair the remaining trusted tmux stable-startup observation failure.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Diagnose tmux startup observation",
-  "updated_at": "2026-09-11T05:53:04+00:00",
+  "updated_at": "2026-09-11T05:54:00+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-startup-observation-diagnostics"
 }
 ---
@@ -24,6 +24,9 @@ Trusted-main run 34564426538 at exact merge
 fixtures still fail later at generic `tmux_startup_not_ready`. Add closed startup/pane substages
 first, then repair only the observed portability gap. No renderer, UI, lifecycle protocol,
 dependency, workflow or ASB source change is in scope.
+
+- 2026-09-11T05:54:00+00:00: Added one-way AR-1062 dependency after AR-1061 falsified concurrent
+  fixture contention. AR-1062 has no dependency on AR-1058, so the graph remains acyclic.
 
 - 2026-09-11T05:06:13+00:00: Exact-main Trusted main 34564426538 proves server acquisition succeeds
   and the stable-startup/pane diagnostic is dependency-ready.

@@ -3,18 +3,18 @@
   "branch": "fix/tmux-live-fixture-isolation",
   "checkpoint_commit": "17f8b3bc26cfa35b1f8ecb8a2e2e5c11d756dae1",
   "claim_expires": "",
-  "depends_on": [],
+  "depends_on": ["AR-1062"],
   "id": "AR-1061",
-  "next_action": "Freeze exact signed test-only checkpoint 17f8b3bc/e4777aef for immutable review; publish only after approval, then require exact-head and exact-main trusted CI.",
+  "next_action": "Wait for AR-1062 to expose the nested trusted server/connect failure and select a bounded repair; fixture contention was falsified.",
   "owner": "",
   "plan": "../plans/AR-1061.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "open",
   "summary": "Diagnose and isolate concurrent trusted tmux fixture contention.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Isolate concurrent trusted tmux fixtures",
-  "updated_at": "2026-09-11T05:52:43+00:00",
+  "updated_at": "2026-09-11T05:54:00+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-live-fixture-isolation"
 }
 ---
@@ -23,6 +23,10 @@ Exact-main Trusted run `34565894753` failed all five live tmux fixtures under th
 test binary after AR-1058 exposed `socket_connect_rejected` and `server_before_unavailable` stages.
 Test process-local serialization is the next bounded experiment. Authentication, cleanup and all
 product/UI behavior remain unchanged.
+
+- 2026-09-11T05:54:00+00:00: Postmerge Repository quality 34567498914 passed; Trusted main
+  34567498957 failed 5/31 sequentialized terminal tests and falsified contention. Added one-way
+  AR-1062 dependency for nested server/connect diagnostics; AR-1062 has no reverse dependency.
 
 - 2026-09-11T05:37:46+00:00: Detailed test-only recovery plan approved by root after exact-main run
   34565894753 localized failures to concurrent live tmux fixtures; AR-1061 is dependency-ready.

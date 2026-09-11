@@ -13,19 +13,20 @@
     "AR-1054",
     "AR-1056",
     "AR-1058",
-    "AR-1061"
+    "AR-1061",
+    "AR-1062"
   ],
   "id": "AR-1010",
-  "next_action": "Wait for AR-1061 to isolate the remaining default-parallel trusted tmux fixture failures, then require green exact-main Repository quality and Trusted main verification before closing the AR-1010 recovery chain.",
+  "next_action": "Wait for AR-1062 to expose the nested trusted tmux server/connect failure, then require its bounded repair and green exact-main Repository quality and Trusted main verification.",
   "owner": "",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "open",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 432,
+  "task_revision": 433,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-11T05:35:00+00:00",
+  "updated_at": "2026-09-11T05:54:00+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -33,8 +34,12 @@
 
 Adopt Ratatui with Crossterm as the supported ASB terminal UI foundation.
 
-The standalone foundation is merged. Completion remains gated by AR-1061 and a green exact-main
+The standalone foundation is merged. Completion remains gated by AR-1062 and a green exact-main
 trusted terminal qualification; do not repeat the already merged PR #9 publication.
+
+- 2026-09-11T05:54:00+00:00: Added one-way AR-1062 dependency after AR-1061 made live tmux tests
+  sequential but Trusted main 34567498957 still failed at a rejected connection and hidden nested
+  server-before stage. AR-1062 has no dependency on AR-1010, so the graph remains acyclic.
 
 - 2026-09-11T05:35:00+00:00: Added one-way AR-1061 recovery dependency after exact main
   69fecc01 passed Repository quality but default-parallel Trusted main 34565894753 failed the five
