@@ -1208,7 +1208,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1060](tasks/AR-1060-authenticated-control-endpoint-handoff.md): Add authenticated control endpoint handoff | codex-ar1060-asb-endpoint-provider-20260911 | Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths. | Obtain immutable review of the frozen SOCK_SEQPACKET framing, then implement only the ASB authenticated-generation producer and broker state machine; keep launch and consumer behavior in AR-1024/1025. |
-| P0 | [AR-1062](tasks/AR-1062-diagnose-nested-tmux-server-connect.md): Diagnose nested tmux server connection failures | codex-ar1062-tmux-nested-connect-diagnostics-20260911 | Diagnose the exact nested tmux server and rejected socket-error class on trusted main. | At exact asb-tui main db612b6f, preserve nested server stages and split rejected connection errno into closed symbolic classes without changing behavior. |
+| P0 | [AR-1062](tasks/AR-1062-diagnose-nested-tmux-server-connect.md): Diagnose nested tmux server connection failures | codex-ar1062-tmux-nested-connect-diagnostics-20260911 | Diagnose the exact nested tmux server and rejected socket-error class on trusted main. | Run exact Rust 1.93.0 full gates on the diagnostic-only test patch, then freeze a signed DCO commit for immutable review. |
 
 ### Open (21)
 

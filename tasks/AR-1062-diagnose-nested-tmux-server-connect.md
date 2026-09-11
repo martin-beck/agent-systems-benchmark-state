@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-11T07:27:02+00:00",
   "depends_on": [],
   "id": "AR-1062",
-  "next_action": "At exact asb-tui main db612b6f, preserve nested server stages and split rejected connection errno into closed symbolic classes without changing behavior.",
+  "next_action": "Run exact Rust 1.93.0 full gates on the diagnostic-only test patch, then freeze a signed DCO commit for immutable review.",
   "owner": "codex-ar1062-tmux-nested-connect-diagnostics-20260911",
   "plan": "../plans/AR-1062.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Diagnose the exact nested tmux server and rejected socket-error class on trusted main.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Diagnose nested tmux server connection failures",
-  "updated_at": "2026-09-11T06:05:11+00:00",
+  "updated_at": "2026-09-11T06:05:41+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-nested-server-connect-diagnostics"
 }
 ---
@@ -47,3 +47,10 @@ failing connection class hidden. Add diagnostics only; preserve all authority an
 
 - 2026-09-11T06:05:11+00:00: Recorded command exit 0; command argv SHA-256
   b39d44460af2067155b315431fc2e60fc9f1d358dfc1b0b708e7ed3351b94fcd.
+
+- 2026-09-11T06:05:41+00:00: Implementation checkpoint: only tests/terminal_foundation.rs changed.
+  Added nested server-before/server-after stages and closed errno classes. The 06:03:29 exit 101 was
+  a code-level assertion: the new fixed resource_transient label exceeded the old 40-byte test
+  ceiling; bounded server labels are now capped at 48 and exact Rust 1.93.0 terminal suite passes
+  32/32. Earlier passes using the local stable symlink are excluded from release evidence and are
+  being rerun with the mandated exact 1.93.0 PATH.
