@@ -1,7 +1,7 @@
 ---
 {
   "branch": "fix/tmux-live-fixture-isolation",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "17f8b3bc26cfa35b1f8ecb8a2e2e5c11d756dae1",
   "claim_expires": "2026-09-11T07:07:48+00:00",
   "depends_on": [],
   "id": "AR-1061",
