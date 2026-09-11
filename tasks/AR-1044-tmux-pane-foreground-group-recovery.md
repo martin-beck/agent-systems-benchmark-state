@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Recover tmux foreground-group qualification",
-  "updated_at": "2026-09-11T01:55:49+00:00",
+  "updated_at": "2026-09-11T02:02:12+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-pane-foreground-group-recovery"
 }
 ---
@@ -206,3 +206,6 @@ absent or changes. Do not change renderer or application behavior.
   schema/release/publication/promoted-self-test, JSON, shell/workflow, gitleaks and clean-tree gates
   pass. One full-gate attempt used a wrong guessed full hash and ran nothing; the next retry hit
   coordinator lock before execution; the corrected wrapped exact-head run passed fully.
+
+- 2026-09-11T02:02:12+00:00: Recorded command exit 0; command argv SHA-256
+  5630689fe7ba507ebd137ce0cc3d9682f2d4965ea36f8b9a780f713958daca93.
