@@ -15,21 +15,21 @@ Generated from local Git and GitHub. Do not edit.
 | #125 | `fix/control-state-lock-test-isolation@8b0f9fd07d5d` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(cli): isolate control state roots |
 | #126 | `fix/main-merge-integrity@bd6f450ab877` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | tools: harden signed merge publication |
 | #127 | `fix/mini-swe-cancellation-reap-test-isolation@c897313524a8` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(agents): harden mini-swe cancellation isolation |
-| #140 | `feature/measurement-catalog-control@95fa9dc55f2a` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | feat(control): publish measurement catalog v1.2 |
+| #140 | `feature/measurement-catalog-control@8e8d37e8c7ca` | `main` | CLEAN | - | feat(control): publish measurement catalog v1.2 |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34556818774 | `8e8d37e8c7ca` | pull_request | Repository quality | queued:- |
+| 34556818762 | `8e8d37e8c7ca` | pull_request | Agent Workflow Quality shadow | queued:- |
+| 34556818753 | `8e8d37e8c7ca` | pull_request | Fault assurance | queued:- |
+| 34556818749 | `8e8d37e8c7ca` | pull_request | Hosted portability and native qualification | queued:- |
+| 34556818744 | `8e8d37e8c7ca` | pull_request | Emulated aarch64 portability | queued:- |
+| 34556818741 | `8e8d37e8c7ca` | pull_request | Formal assurance | queued:- |
+| 34556818733 | `8e8d37e8c7ca` | pull_request | Rust verification | queued:- |
 | 34556491931 | `95fa9dc55f2a` | pull_request | Fault assurance | completed:success |
 | 34556491861 | `95fa9dc55f2a` | pull_request | Hosted portability and native qualification | completed:success |
 | 34556491846 | `95fa9dc55f2a` | pull_request | Rust verification | completed:success |
 | 34556491843 | `95fa9dc55f2a` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 34556491834 | `95fa9dc55f2a` | pull_request | Repository quality | in_progress:- |
-| 34556491825 | `95fa9dc55f2a` | pull_request | Formal assurance | completed:failure |
-| 34556491805 | `95fa9dc55f2a` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 34556491778 | `95fa9dc55f2a` | pull_request | Huawei MIT source headers | completed:success |
-| 34555432305 | `23530dfc8086` | push | Formal assurance | completed:success |
-| 34555432283 | `23530dfc8086` | push | Emulated aarch64 portability | completed:success |
-| 34555432268 | `23530dfc8086` | push | Hosted portability and native qualification | completed:success |
-| 34555432254 | `23530dfc8086` | push | Rust verification | completed:success |
