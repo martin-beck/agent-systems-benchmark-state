@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-live-fixture-isolation",
   "checkpoint_commit": "17f8b3bc26cfa35b1f8ecb8a2e2e5c11d756dae1",
-  "claim_expires": "2026-09-11T07:07:48+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1061",
   "next_action": "Freeze exact signed test-only checkpoint 17f8b3bc/e4777aef for immutable review; publish only after approval, then require exact-head and exact-main trusted CI.",
-  "owner": "codex-ar1061-tmux-fixture-isolation-20260911",
+  "owner": "",
   "plan": "../plans/AR-1061.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Diagnose and isolate concurrent trusted tmux fixture contention.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Isolate concurrent trusted tmux fixtures",
-  "updated_at": "2026-09-11T05:52:21+00:00",
+  "updated_at": "2026-09-11T05:52:43+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-live-fixture-isolation"
 }
 ---
@@ -120,3 +120,12 @@ product/UI behavior remain unchanged.
 
 - 2026-09-11T05:52:21+00:00: Recorded command exit 0; command argv SHA-256
   a836ce33d4ce0c85ce1ed9f80c9c8dd62b32947a84d3511e97eb75665a86c1ea.
+
+- 2026-09-11T05:52:43+00:00: Delivered approved PR #23 and GitHub-verified squash
+  db612b6f07029b34caf7a80998b6cd1b10929567 with exact reviewed tree e4777aef and valid raw DCO.
+  Exact-head Repository quality 34567359906 and postmerge Repository quality 34567498914 passed.
+  Trusted main 34567498957 failed 5/31: serialization made execution sequential but local
+  interactive still reports socket_connect_rejected; malformed/HUP fixtures report
+  server_before_unavailable; remaining failures are downstream. Same-process fixture contention is
+  falsified. Keep AR-1061 and AR-1010 open pending a new narrow nested-server/connect diagnostic; do
+  not weaken authentication.
