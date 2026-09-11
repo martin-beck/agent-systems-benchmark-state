@@ -22,7 +22,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 34555432305 | `23530dfc8086` | push | Formal assurance | in_progress:- |
 | 34555432283 | `23530dfc8086` | push | Emulated aarch64 portability | in_progress:- |
-| 34555432268 | `23530dfc8086` | push | Hosted portability and native qualification | in_progress:- |
+| 34555432268 | `23530dfc8086` | push | Hosted portability and native qualification | completed:success |
 | 34555432254 | `23530dfc8086` | push | Rust verification | in_progress:- |
 | 34555432248 | `23530dfc8086` | push | Huawei MIT source headers | completed:success |
 | 34555432242 | `23530dfc8086` | push | Fault assurance | in_progress:- |
