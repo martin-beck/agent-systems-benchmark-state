@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 18 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 17 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 54 |
 | **Future** | Deferred roadmap work | 1 |
@@ -275,7 +275,7 @@ flowchart LR
         AR_1051["AR-1051 - Done"]:::status_done
         AR_1052["AR-1052 - Open"]:::status_open
         AR_1053["AR-1053 - Done"]:::status_done
-        AR_1054["AR-1054 - Open"]:::status_open
+        AR_1054["AR-1054 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1172,13 +1172,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1037](tasks/AR-1037-measurement-selection-plan.md): Add measurement selection to validated run plans | codex-root-ar1037-selection-20260911 | Carry catalog-backed measurement choices through ASB plan validation, collection and evidence. | After AR-1036, add canonical measurement IDs to validated ASB plans and make collection honor them without any UI code. |
+| P0 | [AR-1054](tasks/AR-1054-tmux-socket-connect-completion.md): Repair tmux socket connection completion | codex-ar1054-tmux-connect-completion-20260911 | Repair trusted tmux socket connection completion without weakening authenticated cleanup authority. | Repair exact AF_UNIX EAGAIN and bounded connection-completion semantics from merged asb-tui main 7a398032, then prove all live tmux fixtures on trusted main. |
 
-### Open (18)
+### Open (17)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1195,7 +1196,6 @@ flowchart LR
 | P0 | [AR-1049](tasks/AR-1049-tmux-created-window-identity.md): Bind tmux setup to its created window | Unclaimed | Bind tmux remain-on-exit setup to the exact created window identity instead of a fixed index. | Remain OPEN pending a narrow bounded tmux startup-readiness recovery and a green trusted-main rerun. |
 | P0 | [AR-1050](tasks/AR-1050-tmux-authenticated-startup-readiness.md): Acquire authenticated tmux startup readiness | Unclaimed | Wait for bounded stable authenticated tmux server, session and window readiness after detached creation. | Publish approved exact head 46145ad63af61d0b6f4549f06c001f33d60f02c1, open PR, require exact-head CI, then merge and run trusted-main qualification only if all green. |
 | P0 | [AR-1052](tasks/AR-1052-tmux-server-authority-portability.md): Diagnose trusted tmux server authority | Unclaimed | Diagnose and repair the trusted-runner tmux server-authority portability gap without weakening cleanup authentication. | Publish approved exact head 5b55f6aa4d8883bc13a79b64193da246788831b9, open draft PR, require exact-head checks, then merge and verify postmerge/trusted-main. |
-| P0 | [AR-1054](tasks/AR-1054-tmux-socket-connect-completion.md): Repair tmux socket connection completion | Unclaimed | Repair trusted tmux socket connection completion without weakening authenticated cleanup authority. | Repair exact AF_UNIX EAGAIN and bounded connection-completion semantics from merged asb-tui main 7a398032, then prove all live tmux fixtures on trusted main. |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | Repair/rebase the fail-closed TLA provenance pin, then rerun PR #119 exact-head CI; do not merge. |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Unclaimed | Qualify pinned OpenJiuwen live execution. | Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI. |
 | P1 | [AR-0908](tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | Unclaimed | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Hold PR #125 unchanged; shared formal asset and native-runner pin owners must repair their gates before a fresh exact-head run. |
