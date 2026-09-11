@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-11T06:52:56+00:00",
   "depends_on": [],
   "id": "AR-1056",
-  "next_action": "Add privacy-safe AF_UNIX connection substages at exact asb-tui main 092cf20a, obtain trusted-main evidence, then repair only the proven predicate.",
+  "next_action": "Fresh immutable review of exact unpushed diagnostic head dd0555208a1631018e91149a9f94f3bdc65b7da5, tree dfb41570127d45f59ecd0767af3487169e9d5ae8; do not publish until approved.",
   "owner": "codex-ar1056-tmux-connect-diagnostics-20260911",
   "plan": "../plans/AR-1056.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Diagnose and repair the remaining trusted tmux socket connection-stage failure.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Diagnose tmux socket connection stage",
-  "updated_at": "2026-09-11T04:57:13+00:00",
+  "updated_at": "2026-09-11T04:57:36+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-socket-connect-diagnostics"
 }
 ---
@@ -65,3 +65,12 @@ workflow or ASB source change is in scope.
 
 - 2026-09-11T04:57:13+00:00: Recorded command exit 0; command argv SHA-256
   50f0181bdd6ef627efceea407b705488eb363cf1a36be117299208374a810d03.
+
+- 2026-09-11T04:57:36+00:00: Frozen AR-1056 diagnostic checkpoint
+  dd0555208a1631018e91149a9f94f3bdc65b7da5/tree dfb41570127d45f59ecd0767af3487169e9d5ae8/base
+  092cf20a is one test-only file, clean, SSH-signed and DCO. It changes no authority decision: the
+  aggregate socket_connection_unavailable is split into ten fixed content-free substages, with pure
+  classifiers and negatives for direct/EINPROGRESS/EAGAIN, immediate rejection, poll
+  error/timeout/invalid/no-completion, SO_ERROR unavailable/malformed/nonzero, and NUL/overlong
+  paths. Local focused, serial terminal 29/29, full locked suite, fmt and all-target Clippy pass.
+  Await fresh immutable review before push; trusted integration is required to select any repair.
