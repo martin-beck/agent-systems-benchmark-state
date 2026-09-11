@@ -6,15 +6,18 @@
   "depends_on": [],
   "id": "AR-1040",
   "next_action": "Create isolated exact-cad9fa97 worktree, pin official GitHub Web Flow key, and implement narrowly gated protected-main verification with adversarial tests.",
+  "observed_branch": "fix/protected-merge-signature-policy",
+  "observed_dirty": 0,
+  "observed_head": "cad9fa9777aaca45b9ee62801d89168c5f3e8c32",
   "owner": "codex-ar1040-merge-signature-20260911",
   "plan": "../plans/AR-1040.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Align offline signature policy with the repository-required GitHub merge path.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Reconcile protected-merge signature verification",
-  "updated_at": "2026-09-11T00:07:09+00:00",
+  "updated_at": "2026-09-11T00:07:15+00:00",
   "worktree_key": "agent-systems-benchmark-protected-merge-signature-policy"
 }
 ---
