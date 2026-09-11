@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Accept one exact signed topic-tip sync merge without weakening protected-main policy.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Qualify exact topic-tip synchronization merges",
-  "updated_at": "2026-09-11T00:59:24+00:00",
+  "updated_at": "2026-09-11T00:59:34+00:00",
   "worktree_key": "agent-systems-benchmark-protected-topic-sync-topology"
 }
 ---
@@ -30,3 +30,6 @@ defined by the plan, preserve all negative cases and restore a green forward pro
   sync topology recovery and AR-1043 is dependency-ready.
 
 - 2026-09-11T00:59:24+00:00: Claimed by codex-ar1043-protected-topic-sync-20260911.
+
+- 2026-09-11T00:59:34+00:00: Recorded command exit 0; command argv SHA-256
+  35f1081fffd2af82f90017b676ed5af88d06b0e58b10186c0f977ca9e3631e5e.
