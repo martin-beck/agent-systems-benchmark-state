@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover the Gemini readiness publication boundary without rewriting protected main.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Attest the Gemini readiness merge boundary",
-  "updated_at": "2026-09-11T02:58:19+00:00",
+  "updated_at": "2026-09-11T03:00:52+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-readiness-merge-attestation"
 }
 ---
@@ -94,3 +94,6 @@ signature and DCO policy. This AR owns no Gemini runtime change and no TUI code.
 
 - 2026-09-11T02:58:19+00:00: Recorded command exit 0; command argv SHA-256
   710637df4ac7f17b0cab2524ec7056e3ee8827a0b2ff3d2f604f3d9b85d28720.
+
+- 2026-09-11T03:00:52+00:00: Recorded command exit 0; command argv SHA-256
+  34334c6da0b0f9566c420d294a1758761d3a20130f53143b5f8334d8af4ec90d.
