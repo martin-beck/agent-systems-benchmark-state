@@ -11,16 +11,16 @@
     "AR-1030"
   ],
   "id": "AR-1010",
-  "next_action": "Push signed+DCO lifecycle-test isolation successor 2068872 to PR #9, require terminal exact-head hosted CI and fresh immutable review; do not merge.",
+  "next_action": "Release OPEN for fresh independent immutable review of PR #9 exact base d58eda9, head 2068872, tree 6521148; exact-head CI green; do not merge.",
   "owner": "codex-ar1010-dependency-doc-repair-20260911",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 415,
+  "task_revision": 416,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-11T00:28:49+00:00",
+  "updated_at": "2026-09-11T00:30:39+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -1451,3 +1451,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-11T00:28:49+00:00: Recorded command exit 0; command argv SHA-256
   6bded1e80cbdb42f2f13887c02f0402046372e82664e15ed0ab12005a02cf2cd.
+
+- 2026-09-11T00:30:39+00:00: Published final signed+DCO successor
+  20688721d4815431746088fe313e340622de0668 tree 6521148aef9d310144645a796c35c2992bc37083. It
+  contains the exact seccompiler/count dependency-policy repair plus narrow tests-only fork/flock
+  isolation; no production source change in either successor. Hosted Repository quality run
+  34546663641 job 103100668310 completed SUCCESS at exact head. PR #9 remains OPEN draft MERGEABLE
+  with exact base d58eda9. Local evidence: dependency policy 4/4, metadata 1/1, lifecycle 10
+  consecutive 13/13 runs after isolation, full locked suite including 44 lib/lifecycle 13/PTY 12,
+  fmt, Clippy, rustdoc, deterministic SBOM, cargo-deny, cargo-audit 94 deps/1243 advisories,
+  signature/DCO/diff/clean tree. Failed 06769dc hosted attempts are durably classified as the
+  repaired fork-inherited-flock test-isolation race. No merge.
