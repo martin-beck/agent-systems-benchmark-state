@@ -11,16 +11,16 @@
     "AR-1030"
   ],
   "id": "AR-1010",
-  "next_action": "Fresh independent immutable review of PR #9 exact base d58eda9, head 0301179, tree 15d4619; exact-head CI green; do not merge without approval.",
+  "next_action": "Push signed+DCO documentation successor 06769dc to PR #9 and require terminal exact-head CI plus fresh immutable review; do not merge.",
   "owner": "codex-ar1010-dependency-doc-repair-20260911",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 394,
+  "task_revision": 395,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-11T00:19:03+00:00",
+  "updated_at": "2026-09-11T00:19:26+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -1359,3 +1359,19 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-11T00:19:03+00:00: Recorded command exit 0; command argv SHA-256
   3878edc64c4b2f3b3e93637bbf71b83dae8a369ac10d0a77a1a8be421c1568dd.
+
+- 2026-09-11T00:19:26+00:00: Implemented the single immutable-review blocker only in
+  docs/TERMINAL_DEPENDENCY_POLICY.md. Exact signed+DCO head 06769dc04bd4c895f0c5a97dcab51ad28ec46cf9
+  tree d603d849b2ecdd13b99b9444c97dddcaa4dbd0c9 adds seccompiler 0.5.0 checksum
+  a4ae55de56877481d112a559bbc12667635fdaf5e005712fd4e2b2fa50ffc884, records Apache-2.0 OR
+  BSD-3-Clause with accepted Apache option, and corrects the closed Cargo.lock/SPDX inventory from
+  93 to 94. Focused dependency_policy 4/4 and metadata 1/1 pass; full locked suite passes (44 lib,
+  all integration including lifecycle 13 and PTY 12); fmt, Clippy all targets -D warnings, rustdoc
+  -D warnings, deterministic SBOM check, cargo-deny all categories, cargo-audit 94 deps/1243
+  advisories, diff check and clean tree pass. Classified failures: an initial apply_patch heredoc
+  was not forwarded by handoffctl and made no product change; follow-up static validation had
+  malformed nested shell quoting and exposed/corrected one documentation typo; two parallel wrapper
+  calls used the product-relative missing tools/handoffctl path (exit 127), then passed from state
+  root; first cargo attempts lacked sanitized cargo/rustc PATH, then passed with exact Rust 1.93
+  path; first cargo-audit invocation omitted its required audit subcommand, then passed. No
+  source/schema/artifact/UI/runtime change and no merge.
