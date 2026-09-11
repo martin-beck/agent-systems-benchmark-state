@@ -8,7 +8,7 @@
     "AR-1023"
   ],
   "id": "AR-1036",
-  "next_action": "After AR-1013, publish the bounded measurement-catalog control operation and exact standalone parser fixtures.",
+  "next_action": "Publish reviewed exact head d77e4a681f26f694cf0911188cb7996e5271c325 as a protected PR, require all exact-head checks, merge, and verify postmerge.",
   "observed_branch": "feature/measurement-catalog-control",
   "observed_dirty": 0,
   "observed_head": "d77e4a681f26f694cf0911188cb7996e5271c325",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose the versioned ASB measurement catalog to standalone frontends without UI code.",
-  "task_revision": 127,
+  "task_revision": 128,
   "title": "Publish the measurement catalog control contract",
-  "updated_at": "2026-09-11T02:45:55+00:00",
+  "updated_at": "2026-09-11T02:48:53+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-control"
 }
 ---
@@ -294,3 +294,10 @@ rendering and help behavior remains exclusively in `martin-beck/asb-tui` under A
 
 - 2026-09-11T02:45:55+00:00: Recorded command exit 2; command argv SHA-256
   a1ca2f1c7f1228225d92ac60d21836832ead6fcbd267a35ad6c7203358fd27b9.
+
+- 2026-09-11T02:48:53+00:00: Rebased single signed DCO commit onto postmerge-green ASB main
+  23530dfc808650a8f3019c87a1c69fe3d0d654b5. Exact head d77e4a681f26f694cf0911188cb7996e5271c325 tree
+  7147fe39efab91319d52da5a3359aef221f5c201. Full workspace all-target tests, clippy -D warnings,
+  rustdoc -D warnings, release build and CLI help/version/invalid exit 2, contract consistency unit
+  and run-tests gates all pass. Pre-rebase immutable review approved explicit-null presence fix;
+  final post-rebase immutable review pending.

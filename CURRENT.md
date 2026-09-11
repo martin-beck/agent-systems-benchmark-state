@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1036](tasks/AR-1036-measurement-catalog-control.md): Publish the measurement catalog control contract | Expose the versioned ASB measurement catalog to standalone frontends without UI code. | After AR-1013, publish the bounded measurement-catalog control operation and exact standalone parser fixtures. | codex-root-ar1036-catalog-20260911 |
+| P0 | [AR-1036](tasks/AR-1036-measurement-catalog-control.md): Publish the measurement catalog control contract | Expose the versioned ASB measurement catalog to standalone frontends without UI code. | Publish reviewed exact head d77e4a681f26f694cf0911188cb7996e5271c325 as a protected PR, require all exact-head checks, merge, and verify postmerge. | codex-root-ar1036-catalog-20260911 |
 | P0 | [AR-1045](tasks/AR-1045-gemini-readiness-merge-attestation.md): Attest the Gemini readiness merge boundary | Recover the Gemini readiness publication boundary without rewriting protected main. | Create a forward-only, bounded attestation of PR #136 merge 2ecb876 and add regression evidence for the exact GitHub merge-author DCO recipe; do not rewrite protected main. | codex-ar1045-gemini-attestation-20260911 |
 | P0 | [AR-1049](tasks/AR-1049-tmux-created-window-identity.md): Bind tmux setup to its created window | Bind tmux remain-on-exit setup to the exact created window identity instead of a fixed index. | Promote and claim the pre-approved test-only recovery, then acquire and target the exact tmux window identity returned by new-session. | codex-ar1049-tmux-window-identity-20260911 |
 
