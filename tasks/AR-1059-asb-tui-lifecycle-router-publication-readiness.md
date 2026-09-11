@@ -2,19 +2,19 @@
 {
   "branch": "docs/asb-tui-lifecycle-router-publication-readiness",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-11T07:17:20+00:00",
   "depends_on": [],
   "id": "AR-1059",
   "next_action": "Bind AR-1024 to the exact rebase, environment, process-cleanup, no-daemon and trusted-pin gates required before lifecycle-router publication.",
-  "owner": "",
+  "owner": "codex-ar1059-lifecycle-router-readiness-20260911",
   "plan": "../plans/AR-1059.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Harden the ASB lifecycle-router roadmap before rebasing and publishing it.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Harden lifecycle-router publication readiness",
-  "updated_at": "2026-09-11T05:17:18+00:00",
+  "updated_at": "2026-09-11T05:17:20+00:00",
   "worktree_key": "agent-systems-benchmark-state-asb-tui-lifecycle-router-publication-readiness"
 }
 ---
@@ -28,3 +28,5 @@ Ratatui, Crossterm, widgets, screens and interactive application behavior remain
 
 - 2026-09-11T05:17:18+00:00: Authorized state-only lifecycle-router publication-readiness repair;
   dependencies are empty and product task statuses remain unchanged.
+
+- 2026-09-11T05:17:20+00:00: Claimed by codex-ar1059-lifecycle-router-readiness-20260911.
