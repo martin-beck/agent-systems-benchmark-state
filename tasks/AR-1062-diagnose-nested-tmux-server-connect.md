@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-nested-server-connect-diagnostics",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-11T07:27:02+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1062",
   "next_action": "Run exact Rust 1.93.0 full gates on the diagnostic-only test patch, then freeze a signed DCO commit for immutable review.",
-  "owner": "codex-ar1062-tmux-nested-connect-diagnostics-20260911",
+  "owner": "",
   "plan": "../plans/AR-1062.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Diagnose the exact nested tmux server and rejected socket-error class on trusted main.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Diagnose nested tmux server connection failures",
-  "updated_at": "2026-09-11T06:06:32+00:00",
+  "updated_at": "2026-09-11T06:10:25+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-nested-server-connect-diagnostics"
 }
 ---
@@ -60,3 +60,7 @@ failing connection class hidden. Add diagnostics only; preserve all authority an
 
 - 2026-09-11T06:06:32+00:00: Recorded command exit 0; command argv SHA-256
   cb5b10ef4d53edbf49866ad39547b5a2d435e149a380b5783931d4afd450bf2c.
+
+- 2026-09-11T06:10:25+00:00: exact 1.93.0 terminal_foundation diagnostics are complete; commit
+  defffe3 passes terminal-foundation, full workspace tests (no doctests), fmt, clippy, rustdoc, and
+  preserves diff scope to test-only in tests/terminal_foundation.rs
