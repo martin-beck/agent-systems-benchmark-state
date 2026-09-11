@@ -2,7 +2,7 @@
 {
   "branch": "fix/gemini-hook-readiness-race",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-11T02:42:38+00:00",
+  "claim_expires": "2026-09-11T02:57:22+00:00",
   "depends_on": [],
   "id": "AR-1041",
   "next_action": "Implement the closed atomic publication/observation state machine and deterministic hostile marker tests from current protected main 6155d63.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Eliminate the load-sensitive Gemini hook readiness race without weakening validation.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Make Gemini hook readiness publication atomic",
-  "updated_at": "2026-09-11T00:56:59+00:00",
+  "updated_at": "2026-09-11T00:57:22+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-hook-readiness-race"
 }
 ---
@@ -93,3 +93,5 @@ any TUI code.
 
 - 2026-09-11T00:56:59+00:00: Recorded command exit 0; command argv SHA-256
   8dbe8c2acb7f80bb6b94c2e88d5dd02e0f292a4a90fab370481a06600106295e.
+
+- 2026-09-11T00:57:22+00:00: Heartbeat by codex-ar1041-gemini-readiness-20260911.
