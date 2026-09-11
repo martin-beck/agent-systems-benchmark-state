@@ -7,7 +7,7 @@
     "AR-1040"
   ],
   "id": "AR-1043",
-  "next_action": "Promote and claim after AR-1040 is confirmed done, then implement the closed topic-tip synchronization topology and hostile policy tests.",
+  "next_action": "Wait for AR-1041/PR #136 integration decision; if protected main advances, rebase AR-1043 to that exact main as a clean single-parent signed commit, rerun focused gates, then publish for exact-head CI and immutable review.",
   "observed_branch": "fix/protected-topic-sync-topology",
   "observed_dirty": 5,
   "observed_head": "44eb1b48cb79b789252eff1cc798980d868c908c",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Accept one exact signed topic-tip sync merge without weakening protected-main policy.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Qualify exact topic-tip synchronization merges",
-  "updated_at": "2026-09-11T01:20:03+00:00",
+  "updated_at": "2026-09-11T01:20:37+00:00",
   "worktree_key": "agent-systems-benchmark-protected-topic-sync-topology"
 }
 ---
@@ -94,3 +94,20 @@ by the plan, preserve all negative cases and restore a green forward protected-m
 
 - 2026-09-11T01:20:03+00:00: Recorded command exit 0; command argv SHA-256
   aff8617049bb1b8466e1d2279f4857244baf2b70269498e15a9da62fdbdcabdf.
+
+- 2026-09-11T01:20:37+00:00: Dirty five-file implementation is complete against main 44eb1b4. Closed
+  topology accepts direct topics or one exact-base topic-tip sync plus at most one historical
+  first-parent-spine checkpoint whose second parent is already protected-base ancestry; rejects
+  off-spine, octopus, arbitrary-base, redundant/second exact-base, more than one historical
+  checkpoint, unsigned, non-DCO and tree-changing forms. Exact PR132 protected range passes offline.
+  Focused signature suite passes 16/16 and attestation is whole-object exact. Full fmt, clippy,
+  serial workspace tests, rustdoc, release, deny, audit, contract consistency, policy, actionlint,
+  zizmor, gitleaks, controlled failures, artifact, platform 57/57 and Rust coverage floors pass.
+  Failures classified: initial focused 13-test run exposed corrected real two-checkpoint topology
+  plus stale expected messages; ruff found one unused fixture variable then format check identified
+  baseline formatting; second exact-base negative expected a later error but correctly failed
+  earlier as redundant; first full-gate wrapper put --timeout after task and ran nothing; corrected
+  command lacked governed Rust PATH and ran nothing; first platform invocation used system Python
+  without jsonschema after all prior gates passed, then existing quality venv passed 57/57 and
+  remaining coverage. Several LOCK_TIMEOUT exits occurred before commands during concurrent
+  coordination.
