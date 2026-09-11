@@ -1204,7 +1204,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1058](tasks/AR-1058-tmux-startup-observation-diagnostics.md): Diagnose tmux startup observation | codex-ar1058-tmux-startup-diagnostics-20260911 | Diagnose and repair the remaining trusted tmux stable-startup observation failure. | Freeze the diagnostic-only exact head after green focused, terminal, full locked, fmt and Clippy gates; obtain immutable review before publication. |
 | P0 | [AR-1060](tasks/AR-1060-authenticated-control-endpoint-handoff.md): Add authenticated control endpoint handoff | codex-ar1060-asb-endpoint-provider-20260911 | Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths. | Freeze the descriptor and reconnect contract, then implement ASB provisioning and standalone asb-tui peer-authenticated consumption in separately reviewed repository changes. |
-| P0 | [AR-1061](tasks/AR-1061-isolate-concurrent-tmux-fixtures.md): Isolate concurrent trusted tmux fixtures | codex-ar1061-tmux-fixture-isolation-20260911 | Diagnose and isolate concurrent trusted tmux fixture contention. | Create the isolated asb-tui worktree at exact main 69fecc01 and serialize only the five live tmux fixtures without changing authentication or product behavior. |
+| P0 | [AR-1061](tasks/AR-1061-isolate-concurrent-tmux-fixtures.md): Isolate concurrent trusted tmux fixtures | codex-ar1061-tmux-fixture-isolation-20260911 | Diagnose and isolate concurrent trusted tmux fixture contention. | Freeze exact signed test-only checkpoint 17f8b3bc/e4777aef for immutable review; publish only after approval, then require exact-head and exact-main trusted CI. |
 
 ### Open (19)
 

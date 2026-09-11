@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-11T07:07:48+00:00",
   "depends_on": [],
   "id": "AR-1061",
-  "next_action": "Create the isolated asb-tui worktree at exact main 69fecc01 and serialize only the five live tmux fixtures without changing authentication or product behavior.",
+  "next_action": "Freeze exact signed test-only checkpoint 17f8b3bc/e4777aef for immutable review; publish only after approval, then require exact-head and exact-main trusted CI.",
   "owner": "codex-ar1061-tmux-fixture-isolation-20260911",
   "plan": "../plans/AR-1061.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Diagnose and isolate concurrent trusted tmux fixture contention.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Isolate concurrent trusted tmux fixtures",
-  "updated_at": "2026-09-11T05:45:57+00:00",
+  "updated_at": "2026-09-11T05:46:20+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-live-fixture-isolation"
 }
 ---
@@ -76,3 +76,17 @@ product/UI behavior remain unchanged.
 
 - 2026-09-11T05:45:57+00:00: Recorded command exit 0; command argv SHA-256
   2429f5505e7e4ee51e5770030c9166aeb80251c5ce99a65ff9fe27284f0431b8.
+
+- 2026-09-11T05:46:20+00:00: Frozen signed product checkpoint
+  17f8b3bc26cfa35b1f8ecb8a2e2e5c11d756dae1, tree e4777aef699520acd74780a215ba85963f980604, base
+  69fecc01. One test file adds process-local complete-lifetime exclusion for five live tmux fixtures
+  and an injected two-way mutex proof; authentication and cleanup authority are unchanged. Gates:
+  focused PASS; five default-parallel terminal passes 155/155; two serial passes 62/62; full locked
+  PASS; fmt, all-target Clippy, rustdoc, release, deny, audit, coverage 91.44%, shell/workflow,
+  schema/publication/channel validators, ASB isolation and promoted self-test PASS; scoped process
+  audit zero. Classified first exit-101 as code-local nondeterminism in the new proof because it
+  competed on the global fixture mutex; repaired using an injected local mutex, repeated parallel
+  gates green. Classified two later exit-1 coverage attempts as clean-tree precondition failures
+  because coverage was invoked before the product checkpoint commit; the same coverage gate passed
+  after commit. Classified exit-2 combined-script attempt as invocation-only missing required
+  ASB_PRODUCT_ROOT for prove-asb-isolation; rerun with the exact ASB root passed.
