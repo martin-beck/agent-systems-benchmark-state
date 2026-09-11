@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Diagnose the exact nested tmux server and rejected socket-error class on trusted main.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Diagnose nested tmux server connection failures",
-  "updated_at": "2026-09-11T06:05:41+00:00",
+  "updated_at": "2026-09-11T06:05:54+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-nested-server-connect-diagnostics"
 }
 ---
@@ -54,3 +54,6 @@ failing connection class hidden. Add diagnostics only; preserve all authority an
   ceiling; bounded server labels are now capped at 48 and exact Rust 1.93.0 terminal suite passes
   32/32. Earlier passes using the local stable symlink are excluded from release evidence and are
   being rerun with the mandated exact 1.93.0 PATH.
+
+- 2026-09-11T06:05:54+00:00: Recorded command exit 0; command argv SHA-256
+  cb5a3fbd398dca70299040166033c51a38966a6c87d50574d7eaf1b65ad409e5.
