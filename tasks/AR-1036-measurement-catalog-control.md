@@ -8,7 +8,7 @@
     "AR-1023"
   ],
   "id": "AR-1036",
-  "next_action": "Require all 12 PR #140 checks on reviewed exact head 8e8d37e8c7ca7a4f673e8ae84d7395d512d45197, merge only if green, then verify all postmerge workflows.",
+  "next_action": "Restore a fully green protected-main descendant through reviewed AR-1045 using exact merge-author DCO identity, then verify all postmerge workflows before closing AR-1036.",
   "observed_branch": "feature/measurement-catalog-control",
   "observed_dirty": 0,
   "observed_head": "8e8d37e8c7ca7a4f673e8ae84d7395d512d45197",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose the versioned ASB measurement catalog to standalone frontends without UI code.",
-  "task_revision": 155,
+  "task_revision": 156,
   "title": "Publish the measurement catalog control contract",
-  "updated_at": "2026-09-11T03:05:52+00:00",
+  "updated_at": "2026-09-11T03:07:10+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-control"
 }
 ---
@@ -376,3 +376,10 @@ rendering and help behavior remains exclusively in `martin-beck/asb-tui` under A
 
 - 2026-09-11T03:05:52+00:00: Recorded command exit 0; command argv SHA-256
   6deba0dc4d70782925ee56510eb87a8b302b20d628984e1c968089ec0ba55211.
+
+- 2026-09-11T03:07:10+00:00: PR #140 exact reviewed head passed all 12 checks and merged as verified
+  commit 252f746e903555c2dc626fadfa1a75bb76913144 with exact reviewed tree and parents. Postmerge
+  repository quality failed solely because GitHub merge author name martin-beck did not exactly
+  match trailer name Martin Beck; email and lowercase trailer key were correct. Product tree is
+  unchanged and other workflows continue. Root classified the exact identity error and instructed
+  AR-1045 merge recipe to use Signed-off-by: martin-beck <martin.beck2@gmx.de>.
