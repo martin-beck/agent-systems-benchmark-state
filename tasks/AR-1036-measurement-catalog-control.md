@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose the versioned ASB measurement catalog to standalone frontends without UI code.",
-  "task_revision": 128,
+  "task_revision": 129,
   "title": "Publish the measurement catalog control contract",
-  "updated_at": "2026-09-11T02:48:53+00:00",
+  "updated_at": "2026-09-11T02:50:50+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-control"
 }
 ---
@@ -301,3 +301,6 @@ rendering and help behavior remains exclusively in `martin-beck/asb-tui` under A
   rustdoc -D warnings, release build and CLI help/version/invalid exit 2, contract consistency unit
   and run-tests gates all pass. Pre-rebase immutable review approved explicit-null presence fix;
   final post-rebase immutable review pending.
+
+- 2026-09-11T02:50:50+00:00: Recorded command exit 1; command argv SHA-256
+  867206790f33111679421a45e27f9b910cb92cc9e8400eb1d33fe1d5547c648a.
