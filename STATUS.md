@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 20 |
+| **In progress** | Claimed work with a live lease | 3 |
+| **Open** | Dependency-ready and available to claim | 19 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 54 |
 | **Future** | Deferred roadmap work | 1 |
@@ -279,7 +279,7 @@ flowchart LR
         AR_1055["AR-1055 - Done"]:::status_done
         AR_1056["AR-1056 - Open"]:::status_open
         AR_1057["AR-1057 - In progress"]:::status_in_progress
-        AR_1058["AR-1058 - Open"]:::status_open
+        AR_1058["AR-1058 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1185,14 +1185,15 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1037](tasks/AR-1037-measurement-selection-plan.md): Add measurement selection to validated run plans | codex-root-ar1037-selection-20260911 | Carry catalog-backed measurement choices through ASB plan validation, collection and evidence. | After AR-1036, add canonical measurement IDs to validated ASB plans and make collection honor them without any UI code. |
 | P0 | [AR-1057](tasks/AR-1057-asb-tui-control-v1-3-readiness.md): Harden asb-tui control v1.3 readiness | codex-ar1057-asb-tui-control-v1-3-readiness-20260911 | Make standalone asb-tui consume precise privacy-safe measurement validation diagnostics. | Bind the standalone client and measurement-selection UX roadmap to ASB control v1.3 precise diagnostics with closed v1.2 fallback behavior. |
+| P0 | [AR-1058](tasks/AR-1058-tmux-startup-observation-diagnostics.md): Diagnose tmux startup observation | codex-ar1058-tmux-startup-diagnostics-20260911 | Diagnose and repair the remaining trusted tmux stable-startup observation failure. | Add privacy-safe stable-startup and pane observation substages at exact asb-tui main 37613e81, obtain trusted-main evidence, then repair only the proven predicate. |
 
-### Open (20)
+### Open (19)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1211,7 +1212,6 @@ flowchart LR
 | P0 | [AR-1052](tasks/AR-1052-tmux-server-authority-portability.md): Diagnose trusted tmux server authority | Unclaimed | Diagnose and repair the trusted-runner tmux server-authority portability gap without weakening cleanup authentication. | Publish approved exact head 5b55f6aa4d8883bc13a79b64193da246788831b9, open draft PR, require exact-head checks, then merge and verify postmerge/trusted-main. |
 | P0 | [AR-1054](tasks/AR-1054-tmux-socket-connect-completion.md): Repair tmux socket connection completion | Unclaimed | Repair trusted tmux socket connection completion without weakening authenticated cleanup authority. | Publish approved exact head d4ace404949ab92090c72fcedf8ce182c37ee2e7, open PR, require exact-head checks, then merge and verify both exact-main workflows. |
 | P0 | [AR-1056](tasks/AR-1056-tmux-socket-connect-diagnostics.md): Diagnose tmux socket connection stage | Unclaimed | Diagnose and repair the remaining trusted tmux socket connection-stage failure. | Publish approved exact diagnostic head dd0555208a1631018e91149a9f94f3bdc65b7da5, require exact-head CI, merge exact tree, then use trusted-main closed stage only to select repair. |
-| P0 | [AR-1058](tasks/AR-1058-tmux-startup-observation-diagnostics.md): Diagnose tmux startup observation | Unclaimed | Diagnose and repair the remaining trusted tmux stable-startup observation failure. | Add privacy-safe stable-startup and pane observation substages at exact asb-tui main 37613e81, obtain trusted-main evidence, then repair only the proven predicate. |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | Repair/rebase the fail-closed TLA provenance pin, then rerun PR #119 exact-head CI; do not merge. |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Unclaimed | Qualify pinned OpenJiuwen live execution. | Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI. |
 | P1 | [AR-0908](tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | Unclaimed | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Hold PR #125 unchanged; shared formal asset and native-runner pin owners must repair their gates before a fresh exact-head run. |

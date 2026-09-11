@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-startup-observation-diagnostics",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-11T07:06:19+00:00",
   "depends_on": [],
   "id": "AR-1058",
   "next_action": "Add privacy-safe stable-startup and pane observation substages at exact asb-tui main 37613e81, obtain trusted-main evidence, then repair only the proven predicate.",
-  "owner": "",
+  "owner": "codex-ar1058-tmux-startup-diagnostics-20260911",
   "plan": "../plans/AR-1058.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Diagnose and repair the remaining trusted tmux stable-startup observation failure.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Diagnose tmux startup observation",
-  "updated_at": "2026-09-11T05:06:13+00:00",
+  "updated_at": "2026-09-11T05:06:19+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-startup-observation-diagnostics"
 }
 ---
@@ -27,3 +27,5 @@ dependency, workflow or ASB source change is in scope.
 
 - 2026-09-11T05:06:13+00:00: Exact-main Trusted main 34564426538 proves server acquisition succeeds
   and the stable-startup/pane diagnostic is dependency-ready.
+
+- 2026-09-11T05:06:19+00:00: Claimed by codex-ar1058-tmux-startup-diagnostics-20260911.
