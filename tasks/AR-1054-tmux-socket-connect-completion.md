@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair trusted tmux socket connection completion without weakening authenticated cleanup authority.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Repair tmux socket connection completion",
-  "updated_at": "2026-09-11T04:29:21+00:00",
+  "updated_at": "2026-09-11T04:29:42+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-socket-connect-completion"
 }
 ---
@@ -29,3 +29,6 @@ lifecycle protocol, dependency, workflow or ASB source change is in scope.
   scope remains one test harness file and dependencies are satisfied.
 
 - 2026-09-11T04:29:21+00:00: Claimed by codex-ar1054-tmux-connect-completion-20260911.
+
+- 2026-09-11T04:29:42+00:00: Recorded command exit 0; command argv SHA-256
+  3007ebf91e08cba6b09952c5654222362fb1a001d9f38b0a7912fbd43ae03b79.
