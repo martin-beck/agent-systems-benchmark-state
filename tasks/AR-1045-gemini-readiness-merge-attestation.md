@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover the Gemini readiness publication boundary without rewriting protected main.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Attest the Gemini readiness merge boundary",
-  "updated_at": "2026-09-11T03:03:12+00:00",
+  "updated_at": "2026-09-11T03:07:14+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-readiness-merge-attestation"
 }
 ---
@@ -122,3 +122,6 @@ signature and DCO policy. This AR owns no Gemini runtime change and no TUI code.
   workspace tests, rustdoc, release, deny, audit, coverage, contract consistency, actionlint,
   zizmor, gitleaks exact commit, failure paths, signature policy, artifact outcome, platform
   validation/tests, repository policy, diff-check, signature, DCO, and clean tree all pass.
+
+- 2026-09-11T03:07:14+00:00: Recorded command exit 0; command argv SHA-256
+  bef63ec9c156ab67c5d29689bbd570b849f78d0e1978ceb2a5be7b0a8f6f079f.
