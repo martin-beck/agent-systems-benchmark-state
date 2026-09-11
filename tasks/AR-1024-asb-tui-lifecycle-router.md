@@ -7,11 +7,13 @@
     "AR-0820",
     "AR-0821",
     "AR-0822",
+    "AR-1010",
     "AR-1022",
-    "AR-1023"
+    "AR-1023",
+    "AR-1037"
   ],
   "id": "AR-1024",
-  "next_action": "Await a new AR-1010 successor that repairs unrelated-child classification and persistent-proc-failure setsid escape, passes fresh immutable review and exact-head CI; only then request exact archive build authorization, repin, PTY-test and rerun gates.",
+  "next_action": "After AR-1010 and AR-1037 are done, rebase c545c33 onto protected ASB main; harden safe terminal context, RAII cleanup and no-daemon ownership; regenerate lock/provenance; pin asb-tui only after trusted green.",
   "observed_branch": "feature/asb-tui-lifecycle-router",
   "observed_dirty": 0,
   "observed_head": "c545c33c8bfedd33fb234ec7f2526447dfe56534",
@@ -21,9 +23,9 @@
   "schema_version": 1,
   "status": "open",
   "summary": "Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend.",
-  "task_revision": 261,
+  "task_revision": 262,
   "title": "Implement `asb tui` lifecycle routing",
-  "updated_at": "2026-09-10T23:37:45+00:00",
+  "updated_at": "2026-09-11T05:18:00+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-lifecycle-router"
 }
 ---
@@ -752,3 +754,9 @@ complete gates, exact-head CI and post-merge verification.
 - 2026-09-10T23:37:45+00:00: Recovered expired claim formerly owned by codex-ar1024-router-20260910.
   AR-1024 worker stopped after recording clean signed checkpoint c545c33; dependency AR-1010 remains
   under repair, so recover expired lease and leave task open without product mutation.
+
+- 2026-09-11T05:18:00+00:00: AR-1059 made AR-1010 and AR-1037 explicit dependencies and required a
+  post-AR-1037 controlled rebase, validated privacy-safe terminal context, armed post-spawn RAII
+  cleanup, fail-closed setsid/double-fork/no-daemon ownership, regenerated lock/provenance and a
+  final asb-tui pin only after exact protected-main trusted-green evidence. Status and owner remain
+  unchanged; ASB owns no renderer or frontend application work.
