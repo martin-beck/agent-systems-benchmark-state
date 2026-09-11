@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Eliminate the load-sensitive Gemini hook readiness race without weakening validation.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Make Gemini hook readiness publication atomic",
-  "updated_at": "2026-09-11T00:58:03+00:00",
+  "updated_at": "2026-09-11T00:58:10+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-hook-readiness-race"
 }
 ---
@@ -116,3 +116,6 @@ any TUI code.
   two other Gemini fixtures and was corrected by retaining one atomic shared publisher. Coverage
   emitted two sets of six known asb-cli profraw artifacts because AR-1038 is not integrated; only
   those exact generated files were removed and tree is clean.
+
+- 2026-09-11T00:58:10+00:00: Recorded command exit 0; command argv SHA-256
+  35b85ec04ea82ece98cf97e355cc90cd591817f41fadc967eea4acbdaa535c71.
