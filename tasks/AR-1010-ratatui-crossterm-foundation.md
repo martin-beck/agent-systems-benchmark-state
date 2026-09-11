@@ -11,16 +11,16 @@
     "AR-1030"
   ],
   "id": "AR-1010",
-  "next_action": "Rerun failed exact-head hosted quality after 10/10 local lifecycle-suite reproductions pass; require terminal green and independent immutable review; no merge.",
+  "next_action": "Push signed+DCO lifecycle-test isolation successor 2068872 to PR #9, require terminal exact-head hosted CI and fresh immutable review; do not merge.",
   "owner": "codex-ar1010-dependency-doc-repair-20260911",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 413,
+  "task_revision": 414,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-11T00:28:09+00:00",
+  "updated_at": "2026-09-11T00:28:41+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -1435,3 +1435,16 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-11T00:28:09+00:00: Recorded command exit 0; command argv SHA-256
   3878edc64c4b2f3b3e93637bbf71b83dae8a369ac10d0a77a1a8be421c1568dd.
+
+- 2026-09-11T00:28:41+00:00: Hosted exact head 06769dc attempts 1 and 2 both failed at unchanged
+  tests/lifecycle.rs:296 during parallel executable PTY activity. Root cause is test isolation: a
+  fork transiently inherits all open file descriptions before exec applies CLOEXEC, including a
+  different parallel test lifecycle flock across drop/immediate nonblocking reopen. Tests-only
+  successor 20688721d4815431746088fe313e340622de0668 tree 6521148aef9d310144645a796c35c2992bc37083
+  serializes the reconnect case with the two subprocess-producing lifecycle cases via one
+  process-local Mutex; production code/lock semantics unchanged. Exact successor is signed+DCO and
+  clean. Post-fix lifecycle suite passed 10/10 consecutive parallel repetitions (13/13 each), full
+  locked suite green (44 lib plus every integration, lifecycle 13, PTY 12), fmt and all-target
+  Clippy -D warnings green. One comment apply_patch failed from an apostrophe breaking shell quoting
+  and made no product change; corrected invocation succeeded. One combined git add/commit wrapper
+  hit coordinator LOCK_TIMEOUT before action; separate retry succeeded.
