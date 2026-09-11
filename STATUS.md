@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**213 ARs tracked** across 6 active status categories.
+**214 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 3 |
 | **Open** | Dependency-ready and available to claim | 14 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
-| **Planned** | Defined work awaiting promotion or dependencies | 55 |
+| **Planned** | Defined work awaiting promotion or dependencies | 56 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 135 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -271,6 +271,7 @@ flowchart LR
         AR_1047["AR-1047 - Done"]:::status_done
         AR_1048["AR-1048 - Open"]:::status_open
         AR_1049["AR-1049 - In progress"]:::status_in_progress
+        AR_1050["AR-1050 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1157,6 +1158,7 @@ flowchart LR
 | [AR-1047](tasks/AR-1047-gemini-hook-marker-appearance-race.md) | None | None |
 | [AR-1048](tasks/AR-1048-tmux-window-option-portability.md) | None | None |
 | [AR-1049](tasks/AR-1049-tmux-created-window-identity.md) | None | None |
+| [AR-1050](tasks/AR-1050-tmux-authenticated-startup-readiness.md) | None | None |
 
 ## Complete AR inventory
 
@@ -1197,7 +1199,7 @@ flowchart LR
 | P1 | [AR-0890](tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Unclaimed | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. |
 | P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Unclaimed | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun failed Repository quality workflow 34339927858 on unchanged main; if failure repeats, isolate and repair test-state ownership before any feature work. |
 
-### Planned (55)
+### Planned (56)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1218,6 +1220,7 @@ flowchart LR
 | P0 | [AR-1034](tasks/AR-1034-asb-tui-configuration-center.md): Add the standalone TUI configuration center | Unclaimed | Add a searchable configuration menu for frontend preferences and benchmark defaults. | Implement the standalone configuration menu and versioned non-secret preference store after the visual system exists. |
 | P0 | [AR-1035](tasks/AR-1035-asb-tui-reports-compare.md): Build recent-runs, report and comparison workspaces | Unclaimed | Add searchable recent runs, report inspection and evidence-qualified comparison workspaces. | Implement recent-runs, report and comparison screens from the published ASB history/analysis contract. |
 | P0 | [AR-1037](tasks/AR-1037-measurement-selection-plan.md): Add measurement selection to validated run plans | Unclaimed | Carry catalog-backed measurement choices through ASB plan validation, collection and evidence. | After AR-1036, add canonical measurement IDs to validated ASB plans and make collection honor them without any UI code. |
+| P0 | [AR-1050](tasks/AR-1050-tmux-authenticated-startup-readiness.md): Acquire authenticated tmux startup readiness | Unclaimed | Wait for bounded stable authenticated tmux server, session and window readiness after detached creation. | Promote and claim the pre-approved test-only recovery, then add bounded stable authenticated tmux startup acquisition before option setup. |
 | P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Build the CSB-to-ASB signal inventory and native x86_64 causal A/B matrix; run applicable pinned QEMU AArch64 portability checks and document native ARM64 as optional future evidence. |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Write and execute end-to-end workflows for the core CLI and automation interfaces. |
 | P1 | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Write and validate task-oriented workflows for the standalone terminal frontend. |
