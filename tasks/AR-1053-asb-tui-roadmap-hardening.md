@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the standalone asb-tui UX roadmap detailed, non-overlapping and dependency-executable.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Harden the standalone asb-tui roadmap",
-  "updated_at": "2026-09-11T04:19:28+00:00",
+  "updated_at": "2026-09-11T04:20:30+00:00",
   "worktree_key": "agent-systems-benchmark-state-asb-tui-roadmap-hardening"
 }
 ---
@@ -27,3 +27,6 @@ claim product work and do not mark any feature AR done.
 
 - 2026-09-11T04:19:28+00:00: Recorded command exit 0; command argv SHA-256
   aef9816fba450350052b112c18091d2264d8d5842944d930558b451385d3fa5c.
+
+- 2026-09-11T04:20:30+00:00: Recorded command exit 1; command argv SHA-256
+  b8f2009ecd5a90fc5d0c81d3096834f17016a4baadb817afe1082943a7b1a8f7.
