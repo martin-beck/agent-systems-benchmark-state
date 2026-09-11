@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind tmux remain-on-exit setup to the exact created window identity instead of a fixed index.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Bind tmux setup to its created window",
-  "updated_at": "2026-09-11T02:38:34+00:00",
+  "updated_at": "2026-09-11T02:38:51+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-created-window-identity"
 }
 ---
@@ -28,3 +28,6 @@ ID, and preserve all established cleanup authority. Change no renderer or applic
   34555068496 falsified fixed window-index targeting.
 
 - 2026-09-11T02:38:34+00:00: Claimed by codex-ar1049-tmux-window-identity-20260911.
+
+- 2026-09-11T02:38:51+00:00: Recorded command exit 0; command argv SHA-256
+  871993554182fbd81a15e292265b972cf120013893cd0de80765f83de1cd07ac.
