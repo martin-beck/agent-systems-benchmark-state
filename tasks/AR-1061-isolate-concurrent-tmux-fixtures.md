@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Diagnose and isolate concurrent trusted tmux fixture contention.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Isolate concurrent trusted tmux fixtures",
-  "updated_at": "2026-09-11T05:37:48+00:00",
+  "updated_at": "2026-09-11T05:38:16+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-live-fixture-isolation"
 }
 ---
@@ -28,3 +28,6 @@ product/UI behavior remain unchanged.
   34565894753 localized failures to concurrent live tmux fixtures; AR-1061 is dependency-ready.
 
 - 2026-09-11T05:37:48+00:00: Claimed by codex-ar1061-tmux-fixture-isolation-20260911.
+
+- 2026-09-11T05:38:16+00:00: Recorded command exit 0; command argv SHA-256
+  88c9af6c736f41f3d7ca06988d2aa000f4682ca0f5fd03b9a4be193cc01416f1.
