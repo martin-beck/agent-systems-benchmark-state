@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**206 ARs tracked** across 6 active status categories.
+**207 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 4 |
 | **Open** | Dependency-ready and available to claim | 7 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
-| **Planned** | Defined work awaiting promotion or dependencies | 56 |
+| **Planned** | Defined work awaiting promotion or dependencies | 57 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 133 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -264,6 +264,7 @@ flowchart LR
         AR_1040["AR-1040 - Done"]:::status_done
         AR_1041["AR-1041 - In progress"]:::status_in_progress
         AR_1042["AR-1042 - In progress"]:::status_in_progress
+        AR_1043["AR-1043 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -922,6 +923,7 @@ flowchart LR
     AR_1036 --> AR_1014
     AR_1036 --> AR_1037
     AR_1037 --> AR_1014
+    AR_1040 --> AR_1043
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1139,9 +1141,10 @@ flowchart LR
 | [AR-1037](tasks/AR-1037-measurement-selection-plan.md) | [AR-0104](tasks/AR-0104-durable-results.md), [AR-1036](tasks/AR-1036-measurement-catalog-control.md) | [AR-1014](tasks/AR-1014-tui-measurement-selection.md) |
 | [AR-1038](tasks/AR-1038-capability-coverage-sink.md) | [AR-1023](tasks/AR-1023-asb-tui-capabilities-command.md) | None |
 | [AR-1039](tasks/AR-1039-measurement-catalog-merge-attestation.md) | None | None |
-| [AR-1040](tasks/AR-1040-protected-merge-signature-policy.md) | None | None |
+| [AR-1040](tasks/AR-1040-protected-merge-signature-policy.md) | None | [AR-1043](tasks/AR-1043-protected-topic-sync-topology.md) |
 | [AR-1041](tasks/AR-1041-gemini-hook-readiness-race.md) | None | None |
 | [AR-1042](tasks/AR-1042-tmux-alternate-screen-readiness.md) | None | None |
+| [AR-1043](tasks/AR-1043-protected-topic-sync-topology.md) | [AR-1040](tasks/AR-1040-protected-merge-signature-policy.md) | None |
 
 ## Complete AR inventory
 
@@ -1151,7 +1154,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1038](tasks/AR-1038-capability-coverage-sink.md): Preserve coverage sinks in sanitized CLI child tests | codex-ar1038-final-integration-20260911 | Prevent sanitized capability child tests from writing default profraw files into the source checkout. | Keep AR-1038 in progress while a separately reviewed forward-only policy correction permits one strictly bounded current-main synchronization merge at the topic tip; then require exact-main green postmerge evidence before completion. |
 | P0 | [AR-1039](tasks/AR-1039-measurement-catalog-merge-attestation.md): Attest the measurement catalog merge boundary | codex-ar1039-final-integration-20260911 | Recover the measurement catalog publication boundary without rewriting protected main. | Independently review draft PR #134 exact head 4a7eb724c601ab8fb2a6dd4552f54726ad3a0dd9 and tree 141362f96bd29c2694c5049d9d2010211fbaac99; do not merge before approval and use the exact lowercase GitHub-author DCO trailer. |
-| P0 | [AR-1041](tasks/AR-1041-gemini-hook-readiness-race.md): Make Gemini hook readiness publication atomic | codex-ar1041-gemini-readiness-20260911 | Eliminate the load-sensitive Gemini hook readiness race without weakening validation. | Implement the closed atomic publication/observation state machine and deterministic hostile marker tests from current protected main 6155d63. |
+| P0 | [AR-1041](tasks/AR-1041-gemini-hook-readiness-race.md): Make Gemini hook readiness publication atomic | codex-ar1041-gemini-readiness-20260911 | Eliminate the load-sensitive Gemini hook readiness race without weakening validation. | Push signed+DCO 310873510c6abe86e309541b6171f26387ac12ec, open a draft PR, and require exact-head CI plus immutable independent review; do not merge. |
 | P0 | [AR-1042](tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | codex-ar1042-tmux-readiness-20260911 | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Require clean tmux config, bracket displayed-pane capture with exact alternate_on=1 observations, and rerun repeated qualification. |
 
 ### Open (7)
@@ -1176,7 +1179,7 @@ flowchart LR
 | P1 | [AR-0890](tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Unclaimed | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. |
 | P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Unclaimed | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun failed Repository quality workflow 34339927858 on unchanged main; if failure repeats, isolate and repair test-state ownership before any feature work. |
 
-### Planned (56)
+### Planned (57)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1198,6 +1201,7 @@ flowchart LR
 | P0 | [AR-1035](tasks/AR-1035-asb-tui-reports-compare.md): Build recent-runs, report and comparison workspaces | Unclaimed | Add searchable recent runs, report inspection and evidence-qualified comparison workspaces. | Implement recent-runs, report and comparison screens from the published ASB history/analysis contract. |
 | P0 | [AR-1036](tasks/AR-1036-measurement-catalog-control.md): Publish the measurement catalog control contract | Unclaimed | Expose the versioned ASB measurement catalog to standalone frontends without UI code. | After AR-1013, publish the bounded measurement-catalog control operation and exact standalone parser fixtures. |
 | P0 | [AR-1037](tasks/AR-1037-measurement-selection-plan.md): Add measurement selection to validated run plans | Unclaimed | Carry catalog-backed measurement choices through ASB plan validation, collection and evidence. | After AR-1036, add canonical measurement IDs to validated ASB plans and make collection honor them without any UI code. |
+| P0 | [AR-1043](tasks/AR-1043-protected-topic-sync-topology.md): Qualify exact topic-tip synchronization merges | Unclaimed | Accept one exact signed topic-tip sync merge without weakening protected-main policy. | Promote and claim after AR-1040 is confirmed done, then implement the closed topic-tip synchronization topology and hostile policy tests. |
 | P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Build the CSB-to-ASB signal inventory and native x86_64 causal A/B matrix; run applicable pinned QEMU AArch64 portability checks and document native ARM64 as optional future evidence. |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Write and execute end-to-end workflows for the core CLI and automation interfaces. |
 | P1 | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Write and validate task-oriented workflows for the standalone terminal frontend. |

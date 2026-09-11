@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-11T02:57:22+00:00",
   "depends_on": [],
   "id": "AR-1041",
-  "next_action": "Implement the closed atomic publication/observation state machine and deterministic hostile marker tests from current protected main 6155d63.",
+  "next_action": "Push signed+DCO 310873510c6abe86e309541b6171f26387ac12ec, open a draft PR, and require exact-head CI plus immutable independent review; do not merge.",
   "observed_branch": "fix/gemini-hook-readiness-race",
   "observed_dirty": 0,
   "observed_head": "310873510c6abe86e309541b6171f26387ac12ec",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Eliminate the load-sensitive Gemini hook readiness race without weakening validation.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Make Gemini hook readiness publication atomic",
-  "updated_at": "2026-09-11T00:57:44+00:00",
+  "updated_at": "2026-09-11T00:58:03+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-hook-readiness-race"
 }
 ---
@@ -98,3 +98,21 @@ any TUI code.
 
 - 2026-09-11T00:57:38+00:00: Recorded command exit 0; command argv SHA-256
   d8e74c8b01f997dd54533e3cfd63763f753e161c2b2929d7a97eec28a4fb867b.
+
+- 2026-09-11T00:58:03+00:00: Implementation frozen clean at signed+DCO
+  310873510c6abe86e309541b6171f26387ac12ec (tree af36f16d6fdfd2b50ffbca5b768298a639194791), one-file
+  ASB-only diff. Production SessionStart readiness now uses private same-directory O_EXCL/O_NOFOLLOW
+  creation, exact write, file fsync/close, atomic rename and directory fsync. Consumer opens
+  O_NOFOLLOW and validates root/file kind, 0700/0600 modes, same uid, one link, bounded size and
+  exact bytes; only absent or exact-prefix incomplete states retry to the existing deadline.
+  Deterministic channel barriers cover absent/during-temp/after-rename, with malformed, oversized,
+  wrong-mode, symlink, directory, hard-link and cleanup negatives. Pre-fix 24x250 reproduced five
+  HookUnavailable; post-fix 24x250 completed 6000/6000. Focused 15 Gemini tests, workspace
+  fmt/clippy/test/doc/release, cargo-deny/audit, coverage floors, actionlint/zizmor/gitleaks,
+  repository policy, failure paths and signature tests pass. Exact pinned Node 26.3.0 SHA-256
+  5325ac9d... exposes O_NOFOLLOW/O_DIRECTORY and executed the embedded hook successfully with 0600
+  exact marker/no temp residue. One initial compile error (ambiguous by_ref) and one cargo
+  multi-filter invocation error were repaired; removing the shared fake-node publisher first broke
+  two other Gemini fixtures and was corrected by retaining one atomic shared publisher. Coverage
+  emitted two sets of six known asb-cli profraw artifacts because AR-1038 is not integrated; only
+  those exact generated files were removed and tree is clean.
