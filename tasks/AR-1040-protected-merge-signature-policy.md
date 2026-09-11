@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Align offline signature policy with the repository-required GitHub merge path.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Reconcile protected-merge signature verification",
-  "updated_at": "2026-09-11T00:36:52+00:00",
+  "updated_at": "2026-09-11T00:37:11+00:00",
   "worktree_key": "agent-systems-benchmark-protected-merge-signature-policy"
 }
 ---
@@ -150,3 +150,6 @@ without allowing Web Flow signatures on ordinary commits or PR heads. This AR ow
 
 - 2026-09-11T00:36:52+00:00: Recorded command exit 0; command argv SHA-256
   d870b53617e45f5aadee614eddb8405a43e6314804450d0ded0bbc5a4efd5ef0.
+
+- 2026-09-11T00:37:11+00:00: Recorded command exit 0; command argv SHA-256
+  a66b0520621532835cda3f24dfd989ecb756a29ab32f68ebd4ef08c9ad76de82.
