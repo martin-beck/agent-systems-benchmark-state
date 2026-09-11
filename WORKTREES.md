@@ -87,8 +87,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-local-llm-testing-recommendations` | `docs/local-llm-testing-recommendations` | `4a23069336be` | 0 | behind 89, ahead 0 |
 | `agent-systems-benchmark-main-merge-integrity` | `fix/main-merge-integrity` | `bd6f450ab877` | 0 | behind 47, ahead 2 |
 | `agent-systems-benchmark-measurement-catalog-control` | `feature/measurement-catalog-control` | `8e8d37e8c7ca` | 0 | behind 3, ahead 0 |
-| `agent-systems-benchmark-measurement-catalog-merge-attestation` | `docs/measurement-catalog-merge-attestation` | `1a19b692d724` | 2 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-protocol/tests/measurement_catalog_pr140_merge_attestation.rs`, `docs/attestations/measurement-catalog-pr140-merge.json` |
+| `agent-systems-benchmark-measurement-catalog-merge-attestation` | `docs/measurement-catalog-merge-attestation` | `1a19b692d724` | 4 | behind 0, ahead 0 |
+| changed files | - | - | - | `docs/PUBLICATION_ATTESTATIONS.md`, `docs/QUALITY_GATES.md`, `crates/asb-protocol/tests/measurement_catalog_pr140_merge_attestation.rs`, `docs/attestations/measurement-catalog-pr140-merge.json` |
 | `agent-systems-benchmark-measurement-catalog-second-recovery` | `docs/measurement-catalog-second-recovery` | `4a7eb724c601` | 0 | behind 19, ahead 0 |
 | `agent-systems-benchmark-measurement-catalog-semantics` | `feature/measurement-catalog-semantics` | `78c63febc0ce` | 0 | behind 23, ahead 0 |
 | `agent-systems-benchmark-measurement-selection-plan` | `feature/measurement-selection-plan` | `1a19b692d724` | 0 | behind 0, ahead 0 |
