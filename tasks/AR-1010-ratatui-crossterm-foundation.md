@@ -11,16 +11,16 @@
     "AR-1030"
   ],
   "id": "AR-1010",
-  "next_action": "Release OPEN for fresh independent immutable review of PR #9 exact base d58eda9, head 2068872, tree 6521148; exact-head CI green; do not merge.",
+  "next_action": "Mark PR #9 ready, squash-merge exact reviewed tree 6521148 with valid lowercase GitHub-author DCO, then verify protected main tree, signature and post-merge CI before release.",
   "owner": "codex-ar1010-final-review-20260911",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 418,
+  "task_revision": 419,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-11T00:31:10+00:00",
+  "updated_at": "2026-09-11T00:31:47+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -1469,3 +1469,12 @@ Implementation has not started. Read the linked plan before claiming.
   merge.
 
 - 2026-09-11T00:31:10+00:00: Claimed by codex-ar1010-final-review-20260911.
+
+- 2026-09-11T00:31:47+00:00: Independent immutable review READY at exact base
+  d58eda9b74431752675f784978dd5851f4eb9f18, head 20688721d4815431746088fe313e340622de0668, tree
+  6521148aef9d310144645a796c35c2992bc37083. Rechecked the only post-review delta: dependency
+  identity/count documentation exactly matches the 94-package lock/SBOM; the tests-only mutex covers
+  every subprocess-spawning case in the lifecycle integration binary and the reconnect case,
+  addresses fork-before-exec flock inheritance without altering production semantics, and passed 10
+  consecutive parallel lifecycle suites. Diff-check, SSH signatures, exact author DCO, clean
+  worktree and hosted Repository quality run 34546663641 are green. No blocker.
