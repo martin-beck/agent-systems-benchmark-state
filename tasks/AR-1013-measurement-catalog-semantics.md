@@ -2,7 +2,7 @@
 {
   "branch": "feature/measurement-catalog-semantics",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-11T01:45:23+00:00",
   "depends_on": [
     "AR-0101",
     "AR-1001"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/measurement-catalog-semantics",
   "observed_dirty": 0,
   "observed_head": "78c63febc0ce6c4724bf4d14121e9ae178e2a020",
-  "owner": "",
+  "owner": "codex-ar1013-final-release-20260911",
   "plan": "../plans/AR-1013.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Define selectable ASB measurements grouped by stable semantic meaning.",
-  "task_revision": 129,
+  "task_revision": 130,
   "title": "Version the measurement catalog and semantic groups",
-  "updated_at": "2026-09-11T00:41:17+00:00",
+  "updated_at": "2026-09-11T00:45:23+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-semantics"
 }
 ---
@@ -378,3 +378,5 @@ duplicate, unit-mismatch, unavailable, and privacy-sensitive metrics.
   codex-ar1013-measurement-catalog-20260910. Lease expired with no live worker. PR #131 and both DCO
   attestation successors are already merged; preserve exact evidence and return OPEN pending AR-1040
   protected-main policy repair/post-merge verification before final release.
+
+- 2026-09-11T00:45:23+00:00: Claimed by codex-ar1013-final-release-20260911.
