@@ -9,7 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1036](tasks/AR-1036-measurement-catalog-control.md): Publish the measurement catalog control contract | Expose the versioned ASB measurement catalog to standalone frontends without UI code. | Open protected PR for approved exact head 95fa9dc55f2aedc8c7dba8cb1deab5f225b66782, require all exact-head checks, merge, and verify postmerge. | codex-root-ar1036-catalog-20260911 |
 | P0 | [AR-1045](tasks/AR-1045-gemini-readiness-merge-attestation.md): Attest the Gemini readiness merge boundary | Recover the Gemini readiness publication boundary without rewriting protected main. | Create a forward-only, bounded attestation of PR #136 merge 2ecb876 and add regression evidence for the exact GitHub merge-author DCO recipe; do not rewrite protected main. | codex-ar1045-gemini-attestation-20260911 |
-| P0 | [AR-1049](tasks/AR-1049-tmux-created-window-identity.md): Bind tmux setup to its created window | Bind tmux remain-on-exit setup to the exact created window identity instead of a fixed index. | Await immutable different-agent review of signed+DCO head 8fd04eaf826fea6d633592a4fc8e06a83a36c6ca tree 222a68de5c76890b6231d8c0f8762777ff6100c7 before publication and exact-head CI; do not merge. | codex-ar1049-tmux-window-identity-20260911 |
+| P0 | [AR-1049](tasks/AR-1049-tmux-created-window-identity.md): Bind tmux setup to its created window | Bind tmux remain-on-exit setup to the exact created window identity instead of a fixed index. | Remain OPEN pending a narrow bounded tmux startup-readiness recovery and a green trusted-main rerun. | codex-ar1049-tmux-window-identity-20260911 |
 
 ## Open
 

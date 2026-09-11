@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-11T04:38:34+00:00",
   "depends_on": [],
   "id": "AR-1049",
-  "next_action": "Await immutable different-agent review of signed+DCO head 8fd04eaf826fea6d633592a4fc8e06a83a36c6ca tree 222a68de5c76890b6231d8c0f8762777ff6100c7 before publication and exact-head CI; do not merge.",
+  "next_action": "Remain OPEN pending a narrow bounded tmux startup-readiness recovery and a green trusted-main rerun.",
   "owner": "codex-ar1049-tmux-window-identity-20260911",
   "plan": "../plans/AR-1049.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind tmux remain-on-exit setup to the exact created window identity instead of a fixed index.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Bind tmux setup to its created window",
-  "updated_at": "2026-09-11T03:00:45+00:00",
+  "updated_at": "2026-09-11T03:01:22+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-created-window-identity"
 }
 ---
@@ -133,3 +133,12 @@ ID, and preserve all established cleanup authority. Change no renderer or applic
 
 - 2026-09-11T03:00:45+00:00: Recorded command exit 0; command argv SHA-256
   6e3c649c32a23aa8202bee0a2c7512c55968dc2e1c5da9331fb25b73c6a9113e.
+
+- 2026-09-11T03:01:22+00:00: PR #16 merged as aacf672c018706ef8a361e1a2dd6c19d890f02d8 with exact
+  reviewed tree 222a68de5c76890b6231d8c0f8762777ff6100c7, parent
+  6853d319469ad28ee9ff8b115b7c4c79da1ab777, GitHub-valid signature and exact raw DCO trailer.
+  Repository quality 34556679558 passed. Trusted-main 34556679585 failed: 19/24 terminal tests
+  passed; all five live tmux tests reached successful bounded new-session but immediate
+  tmux_server_observation returned unavailable before identity parsing or option setup. This
+  falsifies synchronous startup-readiness, not immutable window targeting. A bounded authenticated
+  readiness acquisition recovery is required.
