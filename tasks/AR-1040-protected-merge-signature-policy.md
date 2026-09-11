@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-11T02:07:02+00:00",
   "depends_on": [],
   "id": "AR-1040",
-  "next_action": "Create isolated exact-cad9fa97 worktree, pin official GitHub Web Flow key, and implement narrowly gated protected-main verification with adversarial tests.",
+  "next_action": "Push signed head d6fa883, open a draft PR with official key provenance and exact trust-boundary evidence, then monitor exact-head CI and await independent review.",
   "observed_branch": "fix/protected-merge-signature-policy",
   "observed_dirty": 0,
   "observed_head": "d6fa883ad1b2739e7fbd5522029bf02d75e954b8",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Align offline signature policy with the repository-required GitHub merge path.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Reconcile protected-merge signature verification",
-  "updated_at": "2026-09-11T00:27:45+00:00",
+  "updated_at": "2026-09-11T00:28:18+00:00",
   "worktree_key": "agent-systems-benchmark-protected-merge-signature-policy"
 }
 ---
@@ -98,3 +98,13 @@ without allowing Web Flow signatures on ordinary commits or PR heads. This AR ow
 
 - 2026-09-11T00:27:39+00:00: Recorded command exit 0; command argv SHA-256
   a82582f0d723e5c2865b747d7b8b534a393535223e03bd34f3c026d66d06d124.
+
+- 2026-09-11T00:28:18+00:00: Implemented and committed d6fa883ad1b2739e7fbd5522029bf02d75e954b8
+  (tree 41b0ae3485246e724408b382b46d16356a5baab7), signed+DCO. Official github.com/web-flow.gpg
+  bytes are pinned at SHA-256 6e8af687... and accepted only as fingerprint 968479A1... in canonical
+  push/main mode. Full local gates pass, including real cad9 protected verification, historical
+  0c/a01 DCO rejection, 7 adversarial signature tests, full
+  workspace/tests/docs/release/coverage/supply-chain/analyzers/platform/failure paths. Initial
+  EXE001 was fixed; octopus expected-message assertion was corrected; one failure-path run omitted
+  cargo from PATH and passed on governed rerun. Generated profraw artifacts were removed; worktree
+  is clean.
