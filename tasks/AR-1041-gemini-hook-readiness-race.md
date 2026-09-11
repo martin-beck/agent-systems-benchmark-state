@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-11T02:57:22+00:00",
   "depends_on": [],
   "id": "AR-1041",
-  "next_action": "Monitor all 12 checks on draft PR #136 exact linear successor 208682166c7b1a5a6bc2bf71c01fe1daea709f46, then freeze for root immutable review; do not merge.",
+  "next_action": "Monitor all 12 checks on draft PR #136 exact head 55648d5a29f4c29e9525eb7f2a890ac5232d7b5a; if terminal green, release OPEN for protected merge decision; do not self-merge.",
   "observed_branch": "fix/gemini-hook-readiness-race",
   "observed_dirty": 0,
   "observed_head": "55648d5a29f4c29e9525eb7f2a890ac5232d7b5a",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Eliminate the load-sensitive Gemini hook readiness race without weakening validation.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Make Gemini hook readiness publication atomic",
-  "updated_at": "2026-09-11T01:17:08+00:00",
+  "updated_at": "2026-09-11T01:20:15+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-hook-readiness-race"
 }
 ---
@@ -190,3 +190,15 @@ any TUI code.
 
 - 2026-09-11T01:17:08+00:00: Recorded command exit 0; command argv SHA-256
   14eeeab6de1a3279643af79317c4fc23d7327fd67bd0b084d4efe35937d94216.
+
+- 2026-09-11T01:20:15+00:00: Published signed+DCO linear successor
+  55648d5a29f4c29e9525eb7f2a890ac5232d7b5a (tree e7eb2b713de8abaf4af5d75f8882622740c7c3d8; parent
+  44eb1b48cb79b789252eff1cc798980d868c908c). It adds marker-only O_NONBLOCK, disambiguates open
+  ENOENT with symlink_metadata, and covers hostile FIFO rejection. Native focused Gemini, all 15
+  Gemini, clippy, full workspace tests, docs -D warnings, and release build pass; repaired focused
+  test passes under AArch64/QEMU. Broader local AArch64 lane repeatedly fails unrelated mini_swe
+  trajectory spawn assertion in the older local rootfs; exact Gemini subset is green and no mini_swe
+  code changed. Earlier 2086821 hosted Loom ETXTBSY and policy control-root failures were known
+  unrelated first-attempt failures and their reruns are superseded by this fresh head. Initial
+  post-repair cargo invocation failed only because sanitized wrapper PATH omitted cargo; rerun with
+  pinned explicit toolchain passed.
