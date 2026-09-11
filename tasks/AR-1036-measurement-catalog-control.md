@@ -18,14 +18,15 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose the versioned ASB measurement catalog to standalone frontends without UI code.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Publish the measurement catalog control contract",
-  "updated_at": "2026-09-11T02:12:48+00:00",
+  "updated_at": "2026-09-11T02:14:01+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-control"
 }
 ---
-Implement only the bounded ASB control method, types, schema, backend dispatch, capability bit and
-cross-repository fixtures required to retrieve the AR-1013 catalog. All search, grouping, selection,
+Implement only the bounded ASB control method, types, schema, backend dispatch, exact-version
+advertisement and cross-repository fixtures required to retrieve the AR-1013 catalog. Preserve the
+immutable 1.0 capability shape; exact 1.2 selection advertises catalog support. All search, grouping, selection,
 rendering and help behavior remains exclusively in `martin-beck/asb-tui` under AR-1014.
 
 - 2026-09-10T21:40:00+00:00: Clarified that cross-repository parser validation is read-only pinned
@@ -116,3 +117,6 @@ rendering and help behavior remains exclusively in `martin-beck/asb-tui` under A
 
 - 2026-09-11T02:12:48+00:00: Recorded command exit 0; command argv SHA-256
   b97ea1d63b168226e0924f05a9d5453ae84e4839a684f5034a82abd347edb049.
+
+- 2026-09-11T02:14:01+00:00: Recorded command exit 0; command argv SHA-256
+  46c58e4018a568d6c8158b1cb5473361e3f8c51fc332f5ec7697bee035b7f150.
