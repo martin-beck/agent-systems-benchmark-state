@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Diagnose and repair the trusted-runner tmux server-authority portability gap without weakening cleanup authentication.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Diagnose trusted tmux server authority",
-  "updated_at": "2026-09-11T03:56:30+00:00",
+  "updated_at": "2026-09-11T03:56:42+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-server-authority-portability"
 }
 ---
@@ -68,3 +68,6 @@ authenticated cleanup and zero-widening invariant. Change no product UI, rendere
   pass. Initial compile exit 101 was code-local String conversion/Option comparison after changing
   the diagnostic return type; repaired and rerun green. Initial cargo invocation exit 127 omitted
   the governed absolute Cargo PATH and manifest path; invocation-only, corrected immediately.
+
+- 2026-09-11T03:56:42+00:00: Recorded command exit 0; command argv SHA-256
+  38429dd16e8cee2f3dd3e3d50a5dabb086ae5ae65503bcff53887a5c9911d801.
