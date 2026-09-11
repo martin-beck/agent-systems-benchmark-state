@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-11T07:06:19+00:00",
   "depends_on": [],
   "id": "AR-1058",
-  "next_action": "Add privacy-safe stable-startup and pane observation substages at exact asb-tui main 37613e81, obtain trusted-main evidence, then repair only the proven predicate.",
+  "next_action": "Freeze the diagnostic-only exact head after green focused, terminal, full locked, fmt and Clippy gates; obtain immutable review before publication.",
   "owner": "codex-ar1058-tmux-startup-diagnostics-20260911",
   "plan": "../plans/AR-1058.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Diagnose and repair the remaining trusted tmux stable-startup observation failure.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Diagnose tmux startup observation",
-  "updated_at": "2026-09-11T05:15:19+00:00",
+  "updated_at": "2026-09-11T05:15:44+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-startup-observation-diagnostics"
 }
 ---
@@ -80,3 +80,12 @@ dependency, workflow or ASB source change is in scope.
 
 - 2026-09-11T05:15:19+00:00: Recorded command exit 0; command argv SHA-256
   8522f47779b92afda67888a78b2eeed52ae8228931fd4b4dcedab0b373f7e08c.
+
+- 2026-09-11T05:15:44+00:00: Classified four recorded exit-101 attempts at 05:09:48, 05:09:58,
+  05:12:22 and 05:12:30 as code-local early compilation failures: the first parallel focused/full
+  pair exposed a missing BTreeSet import; the second pair exposed an Option-versus-Result return
+  mismatch in the new diagnostic helper. Both defects were repaired, and the identical command
+  hashes subsequently exited 0. A later exit-1 was invocation-only: handoffctl was called from an
+  unbound product path; rerun from the bound state project exited 0. Current evidence is focused
+  diagnostic PASS, serial terminal 30/30 PASS, cargo test --locked PASS, fmt --check PASS, and
+  Clippy all-targets PASS.

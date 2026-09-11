@@ -1190,7 +1190,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1037](tasks/AR-1037-measurement-selection-plan.md): Add measurement selection to validated run plans | codex-root-ar1037-selection-20260911 | Carry catalog-backed measurement choices through ASB plan validation, collection and evidence. | After AR-1036, add canonical measurement IDs to validated ASB plans and make collection honor them without any UI code. |
-| P0 | [AR-1058](tasks/AR-1058-tmux-startup-observation-diagnostics.md): Diagnose tmux startup observation | codex-ar1058-tmux-startup-diagnostics-20260911 | Diagnose and repair the remaining trusted tmux stable-startup observation failure. | Add privacy-safe stable-startup and pane observation substages at exact asb-tui main 37613e81, obtain trusted-main evidence, then repair only the proven predicate. |
+| P0 | [AR-1058](tasks/AR-1058-tmux-startup-observation-diagnostics.md): Diagnose tmux startup observation | codex-ar1058-tmux-startup-diagnostics-20260911 | Diagnose and repair the remaining trusted tmux stable-startup observation failure. | Freeze the diagnostic-only exact head after green focused, terminal, full locked, fmt and Clippy gates; obtain immutable review before publication. |
 
 ### Open (19)
 
