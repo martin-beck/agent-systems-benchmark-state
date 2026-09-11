@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-pane-foreground-group-recovery",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-11T03:24:35+00:00",
   "depends_on": [],
   "id": "AR-1044",
   "next_action": "Claim the task, create the declared isolated asb-tui worktree from exact merged main eb4960e, and implement foreground-group observation fixtures before integration changes.",
-  "owner": "",
+  "owner": "codex-ar1044-tmux-foreground-20260911",
   "plan": "../plans/AR-1044.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Recover tmux foreground-group qualification",
-  "updated_at": "2026-09-11T01:22:00+00:00",
+  "updated_at": "2026-09-11T01:24:35+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-pane-foreground-group-recovery"
 }
 ---
@@ -26,3 +26,5 @@ Recover the qualification without weakening ownership: acquire and retain one bo
 revalidated. Always clean the uniquely owned tmux server and socket even when group authority is
 absent or changes. Do not change renderer or application behavior.
 
+
+- 2026-09-11T01:24:35+00:00: Claimed by codex-ar1044-tmux-foreground-20260911.
