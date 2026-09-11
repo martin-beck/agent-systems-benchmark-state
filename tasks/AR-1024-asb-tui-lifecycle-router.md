@@ -10,10 +10,11 @@
     "AR-1010",
     "AR-1022",
     "AR-1023",
-    "AR-1037"
+    "AR-1037",
+    "AR-1060"
   ],
   "id": "AR-1024",
-  "next_action": "After AR-1010 and AR-1037 are done, rebase c545c33 onto protected ASB main; harden safe terminal context, RAII cleanup and no-daemon ownership; regenerate lock/provenance; pin asb-tui only after trusted green.",
+  "next_action": "After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning.",
   "observed_branch": "feature/asb-tui-lifecycle-router",
   "observed_dirty": 0,
   "observed_head": "c545c33c8bfedd33fb234ec7f2526447dfe56534",
@@ -23,9 +24,9 @@
   "schema_version": 1,
   "status": "open",
   "summary": "Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend.",
-  "task_revision": 262,
+  "task_revision": 263,
   "title": "Implement `asb tui` lifecycle routing",
-  "updated_at": "2026-09-11T05:18:00+00:00",
+  "updated_at": "2026-09-11T05:28:38+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-lifecycle-router"
 }
 ---
@@ -37,6 +38,10 @@ Acceptance requires safe default XDG paths, signed immutable release selection, 
 redirect resistance, bounded/resumable acquisition, offline support, typed delegation, network-free
 status/launch/remove, removal of the legacy bundled-TUI bootstrap assumption, adversarial tests,
 complete gates, exact-head CI and post-merge verification.
+
+- 2026-09-11T05:28:38+00:00: Added AR-1060 as the prerequisite for privacy-safe authenticated
+  control-channel provisioning. ASB owns endpoint discovery, connection/broker provisioning and
+  lifecycle cleanup only; raw endpoint disclosure and frontend/UI implementation remain forbidden.
 
 - 2026-09-10T20:31:20+00:00: AR-1022 and AR-1023 are durably done; begin the trusted ASB-side
   lifecycle router without renderer or UI ownership.

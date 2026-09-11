@@ -12,20 +12,19 @@
     "AR-1052",
     "AR-1054",
     "AR-1056",
-    "AR-1058",
-    "AR-1060"
+    "AR-1058"
   ],
   "id": "AR-1010",
-  "next_action": "Wait for AR-1060 to isolate the remaining default-parallel trusted tmux fixture failures, then require green exact-main Repository quality and Trusted main verification before closing the AR-1010 recovery chain.",
+  "next_action": "Wait for AR-1058 to diagnose and repair the remaining trusted stable-startup/pane observation failure, then require green exact-main Repository quality and Trusted main verification before closing the AR-1010 recovery chain.",
   "owner": "",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "open",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 432,
+  "task_revision": 431,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-11T05:29:00+00:00",
+  "updated_at": "2026-09-11T05:05:00+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -33,13 +32,8 @@
 
 Adopt Ratatui with Crossterm as the supported ASB terminal UI foundation.
 
-The standalone foundation is merged. Completion remains gated by AR-1060 and a green exact-main
+The standalone foundation is merged. Completion remains gated by AR-1058 and a green exact-main
 trusted terminal qualification; do not repeat the already merged PR #9 publication.
-
-- 2026-09-11T05:29:00+00:00: Added one-way AR-1060 recovery dependency after exact main
-  69fecc01 passed Repository quality but default-parallel Trusted main 34565894753 failed the five
-  live tmux fixtures at closed socket/server-observation stages. AR-1060 has no dependency on
-  AR-1010, so the graph remains acyclic.
 
 - 2026-09-11T05:05:00+00:00: Added one-way AR-1058 recovery dependency after exact main
   37613e81 proved authenticated server acquisition succeeds but all five live tmux fixtures fail in

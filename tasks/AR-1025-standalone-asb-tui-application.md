@@ -3,18 +3,18 @@
   "branch": "feature/standalone-asb-tui-application",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-0804", "AR-0805", "AR-0806", "AR-0870", "AR-0871", "AR-1010", "AR-1022", "AR-1023", "AR-1037"],
+  "depends_on": ["AR-0804", "AR-0805", "AR-0806", "AR-0870", "AR-0871", "AR-1010", "AR-1022", "AR-1023", "AR-1037", "AR-1060"],
   "id": "AR-1025",
-  "next_action": "After ASB AR-1037 completes, build the standalone shell and a closed control client that prefers v1.3 precise diagnostics, retains exact v1.2 fallback categories and implements no downstream feature screens.",
+  "next_action": "After AR-1010, AR-1037 and AR-1060 complete, build the standalone shell and make its closed v1.3 control transport consume and independently re-authenticate the inherited channel.",
   "owner": "",
   "plan": "../plans/AR-1025.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "planned",
   "summary": "Deliver the actual standalone interactive asb-tui application without an ASB workspace dependency.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Build the standalone asb-tui application",
-  "updated_at": "2026-09-11T05:05:00+00:00",
+  "updated_at": "2026-09-11T05:28:38+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-standalone-application"
 }
 ---
@@ -37,3 +37,7 @@ product path in `martin-beck/agent-systems-benchmark`.
 - 2026-09-11T05:05:00+00:00: Added ASB AR-1037 as a dependency and bound the standalone client to
   closed v1.3 precise-diagnostic parsing with exact v1.2 legacy fallback categories; visible
   validation presentation remains AR-1014-owned.
+
+- 2026-09-11T05:28:38+00:00: Added AR-1060 as the prerequisite for receiving and independently
+  re-authenticating a privacy-safe inherited control channel. Endpoint discovery/provisioning stays
+  in ASB; all transport consumption and application behavior stays in standalone `asb-tui`.
