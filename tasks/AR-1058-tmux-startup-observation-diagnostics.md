@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Diagnose and repair the remaining trusted tmux stable-startup observation failure.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Diagnose tmux startup observation",
-  "updated_at": "2026-09-11T05:26:59+00:00",
+  "updated_at": "2026-09-11T05:27:25+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-startup-observation-diagnostics"
 }
 ---
@@ -155,3 +155,6 @@ dependency, workflow or ASB source change is in scope.
 
 - 2026-09-11T05:26:59+00:00: Recorded command exit 1; command argv SHA-256
   9d0cef065d06e560390fac04c7c22cffa77b50525e7b9842bfaa3e4388ae1096.
+
+- 2026-09-11T05:27:25+00:00: Recorded command exit 0; command argv SHA-256
+  65bc3467a392454fc6e36d3e9f9069f3a1684aa287f4c64bf2c7e599d7669959.
