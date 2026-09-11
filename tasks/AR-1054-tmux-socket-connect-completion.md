@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-socket-connect-completion",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-11T06:29:21+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1054",
   "next_action": "Publish approved exact head d4ace404949ab92090c72fcedf8ce182c37ee2e7, open PR, require exact-head checks, then merge and verify both exact-main workflows.",
-  "owner": "codex-ar1054-tmux-connect-completion-20260911",
+  "owner": "",
   "plan": "../plans/AR-1054.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Repair trusted tmux socket connection completion without weakening authenticated cleanup authority.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Repair tmux socket connection completion",
-  "updated_at": "2026-09-11T04:52:27+00:00",
+  "updated_at": "2026-09-11T04:52:47+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-socket-connect-completion"
 }
 ---
@@ -186,3 +186,8 @@ lifecycle protocol, dependency, workflow or ASB source change is in scope.
 
 - 2026-09-11T04:52:27+00:00: Recorded command exit 0; command argv SHA-256
   f34657f81eb183f8fbd3c672f18a2ce521aa00ae468792057efed1e88bb465aa.
+
+- 2026-09-11T04:52:47+00:00: PR #20 merged provenance-clean as 092cf20a, but exact-main Repository
+  quality 34563629050 and Trusted main 34563628936 failed. Trusted main remains 5 live tmux failures
+  at aggregate socket_connection_unavailable; AR-1056 owns closed connection-substage diagnosis and
+  repair. AR-1054 remains open pending that green recovery.
