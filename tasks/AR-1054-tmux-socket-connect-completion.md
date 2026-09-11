@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair trusted tmux socket connection completion without weakening authenticated cleanup authority.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Repair tmux socket connection completion",
-  "updated_at": "2026-09-11T04:38:32+00:00",
+  "updated_at": "2026-09-11T04:39:09+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-socket-connect-completion"
 }
 ---
@@ -86,3 +86,6 @@ lifecycle protocol, dependency, workflow or ASB source change is in scope.
 
 - 2026-09-11T04:38:32+00:00: Recorded command exit 0; command argv SHA-256
   15cc433c17e40b6aa86f1a21e468b19aa95d4189ea8fdbf16e1376640912cee6.
+
+- 2026-09-11T04:39:09+00:00: Recorded command exit 1; command argv SHA-256
+  a3e48605bbd6d573c2c085de07f82c8eeff7211d9d47a9164a6731122c03b25f.
