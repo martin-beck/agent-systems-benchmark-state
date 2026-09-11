@@ -70,6 +70,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-frontend-protocol-contract` | `feature/frontend-protocol-contract` | `d3e2dfa979d8` | 0 | behind 244, ahead 0 |
 | `agent-systems-benchmark-frontend-run-lifecycle` | `feature/frontend-run-lifecycle` | `b3b3b8907f6d` | 0 | behind 232, ahead 0 |
 | `agent-systems-benchmark-gemini-generate-content-replay` | `feature/gemini-generate-content-replay` | `93c19625f910` | 0 | behind 280, ahead 0 |
+| `agent-systems-benchmark-gemini-hook-marker-appearance-race` | `fix/gemini-hook-marker-appearance-race` | `2ecb876b82a9` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-gemini-hook-readiness-race` | `fix/gemini-hook-readiness-race` | `55648d5a29f4` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-gemini-thinking-config-contract` | `feature/gemini-thinking-config-contract` | `0aff7023cacf` | 0 | behind 278, ahead 0 |
 | `agent-systems-benchmark-hosted-runner-evidence` | `fix/hosted-runner-evidence-classification` | `f0b7b46db271` | 0 | behind 33, ahead 0 |
