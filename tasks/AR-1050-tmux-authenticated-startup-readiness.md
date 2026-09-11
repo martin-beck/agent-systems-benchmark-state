@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wait for bounded stable authenticated tmux server, session and window readiness after detached creation.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Acquire authenticated tmux startup readiness",
-  "updated_at": "2026-09-11T03:44:24+00:00",
+  "updated_at": "2026-09-11T03:45:08+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-authenticated-startup-readiness"
 }
 ---
@@ -228,3 +228,6 @@ server/session/window identity and retained pane authority. Change no renderer o
 - 2026-09-11T03:44:24+00:00: Independent immutable review APPROVED exact signed+DCO head
   46145ad63af61d0b6f4549f06c001f33d60f02c1, tree b64bd9d15a985deb43373ebff8140a3bfa2a8cef. Resume
   governed delivery without source mutation.
+
+- 2026-09-11T03:45:08+00:00: Recorded command exit 0; command argv SHA-256
+  daa1eef0769700492f01c420be8be4ebf9e7f446659a89654bddea45ea0195a7.
