@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the emulated AArch64 asb-agents fake-node readiness fixtures deterministic without changing production semantics.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Serialize emulated AArch64 agent tests",
-  "updated_at": "2026-09-11T01:35:27+00:00",
+  "updated_at": "2026-09-11T01:35:38+00:00",
   "worktree_key": "agent-systems-benchmark-emulated-aarch64-agent-serialization"
 }
 ---
@@ -30,3 +30,6 @@ existing skip and all budgets; do not change Rust production code or any UI/TUI 
   plan after two distinct HookUnavailable failures.
 
 - 2026-09-11T01:35:27+00:00: Claimed by codex-ar1046-aarch64-serialization-20260911.
+
+- 2026-09-11T01:35:38+00:00: Recorded command exit 0; command argv SHA-256
+  5345cd4b5f66285dc80cddfe59c0a95475263f9ff88d25d2639fce3c300aa4b9.
