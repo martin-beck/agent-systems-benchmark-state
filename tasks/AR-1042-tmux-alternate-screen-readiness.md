@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make tmux TUI readiness validate the displayed alternate screen deterministically.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Capture alternate-screen TUI readiness deterministically",
-  "updated_at": "2026-09-11T01:21:49+00:00",
+  "updated_at": "2026-09-11T01:22:47+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-alternate-screen-readiness"
 }
 ---
@@ -244,3 +244,6 @@ emit bounded diagnostics; do not change renderer or application semantics.
   deterministically because tmux pane_pid was not the pane foreground PGID, invalidating the
   test-only cleanup acquisition assumption. AR-1042 remains in progress and is not accepted;
   recovery moves to AR-1044.
+
+- 2026-09-11T01:22:47+00:00: Recorded command exit 2; command argv SHA-256
+  48458d4adcbc2714c4ae60f17ec39d916357031118af6e75d9a5cd826c73f20e.
