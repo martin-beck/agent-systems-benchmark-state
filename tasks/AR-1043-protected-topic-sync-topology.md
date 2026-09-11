@@ -2,7 +2,7 @@
 {
   "branch": "fix/protected-topic-sync-topology",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-11T02:59:24+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1040"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "fix/protected-topic-sync-topology",
   "observed_dirty": 0,
   "observed_head": "c76975e8c0b986fc9dd5b013467021f054182981",
-  "owner": "codex-ar1043-protected-topic-sync-20260911",
+  "owner": "",
   "plan": "../plans/AR-1043.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Accept one exact signed topic-tip sync merge without weakening protected-main policy.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Qualify exact topic-tip synchronization merges",
-  "updated_at": "2026-09-11T01:32:15+00:00",
+  "updated_at": "2026-09-11T01:32:43+00:00",
   "worktree_key": "agent-systems-benchmark-protected-topic-sync-topology"
 }
 ---
@@ -156,3 +156,12 @@ by the plan, preserve all negative cases and restore a green forward protected-m
 
 - 2026-09-11T01:32:15+00:00: Recorded command exit 0; command argv SHA-256
   b0aeca0384b5a97242558e89b883a2c387c3fce0865ec9be9fa571ed79feed11.
+
+- 2026-09-11T01:32:43+00:00: PR #137 remains draft and frozen at
+  c76975e8c0b986fc9dd5b013467021f054182981 (tree 117fee87a68e190c8ac1767f95a89d5991748b63).
+  Exact-head AArch64 run 34550643921/job 103112635225 failed
+  gemini::tests::ambient_config_prompt_limits_and_cancellation_fail_closed with HookUnavailable (138
+  passed, 1 failed, 1 ignored); current-main run 34550483005 independently failed a different Gemini
+  fake-node test with HookUnavailable. This is a repeated deterministic QEMU qualification defect,
+  not an AR-1043 policy diff failure. Do not rerun or merge; AR-1043 awaits narrow AR-1046 test/CI
+  recovery and a clean rebase onto recovered main.
