@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair trusted tmux socket connection completion without weakening authenticated cleanup authority.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Repair tmux socket connection completion",
-  "updated_at": "2026-09-11T04:40:17+00:00",
+  "updated_at": "2026-09-11T04:40:25+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-socket-connect-completion"
 }
 ---
@@ -107,3 +107,6 @@ lifecycle protocol, dependency, workflow or ASB source change is in scope.
   exit 1 was expected clean-tree precondition on the intentional uncommitted diff. Cargo audit
   completed its scan with no advisory failure, then wrapper evidence hit coordinator LOCK_TIMEOUT;
   rerun after commit is required.
+
+- 2026-09-11T04:40:25+00:00: Recorded command exit 0; command argv SHA-256
+  4f439593a61e62e73569029a0402214af47dea78a1481008123b417d9a6f44fc.
