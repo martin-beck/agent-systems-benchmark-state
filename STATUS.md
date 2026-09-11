@@ -9,12 +9,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 5 |
+| **In progress** | Claimed work with a live lease | 4 |
 | **Open** | Dependency-ready and available to claim | 8 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 56 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 131 |
+| **Done** | Accepted, integrated, and durably verified | 132 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 0 |
 
@@ -261,7 +261,7 @@ flowchart LR
         AR_1037["AR-1037 - Planned"]:::status_planned
         AR_1038["AR-1038 - Open"]:::status_open
         AR_1039["AR-1039 - In progress"]:::status_in_progress
-        AR_1040["AR-1040 - In progress"]:::status_in_progress
+        AR_1040["AR-1040 - Done"]:::status_done
         AR_1041["AR-1041 - In progress"]:::status_in_progress
         AR_1042["AR-1042 - In progress"]:::status_in_progress
     end
@@ -1145,13 +1145,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (5)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md): Adopt Ratatui/Crossterm TUI foundation | codex-ar1010-final-review-20260911 | Adopt Ratatui and Crossterm as the supported professional TUI foundation. | Mark PR #9 ready, squash-merge exact reviewed tree 6521148 with valid lowercase GitHub-author DCO, then verify protected main tree, signature and post-merge CI before release. |
 | P0 | [AR-1039](tasks/AR-1039-measurement-catalog-merge-attestation.md): Attest the measurement catalog merge boundary | codex-ar1039-final-integration-20260911 | Recover the measurement catalog publication boundary without rewriting protected main. | Independently review draft PR #134 exact head 4a7eb724c601ab8fb2a6dd4552f54726ad3a0dd9 and tree 141362f96bd29c2694c5049d9d2010211fbaac99; do not merge before approval and use the exact lowercase GitHub-author DCO trailer. |
-| P0 | [AR-1040](tasks/AR-1040-protected-merge-signature-policy.md): Reconcile protected-merge signature verification | codex-ar1040-final-integration-20260911 | Align offline signature policy with the repository-required GitHub merge path. | AR-1040 acceptance complete at protected main 6155d63bec04a5c76c4323843c26649b0c084f6e; release done. |
 | P0 | [AR-1041](tasks/AR-1041-gemini-hook-readiness-race.md): Make Gemini hook readiness publication atomic | codex-ar1041-gemini-readiness-20260911 | Eliminate the load-sensitive Gemini hook readiness race without weakening validation. | Reproduce the readiness-file truncate/write race with deterministic barriers, then implement atomic publication and fail-closed bounded observation. |
 | P0 | [AR-1042](tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | codex-ar1042-tmux-readiness-20260911 | Make tmux TUI readiness capture deterministic on the actual alternate screen. | Replace primary-pane readiness polling with isolated alternate-screen capture and bounded diagnostics, then rerun trusted-main qualification. |
 
@@ -1245,7 +1244,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (131)
+### Done (132)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1272,6 +1271,7 @@ flowchart LR
 | P0 | [AR-1022](tasks/AR-1022-asb-tui-release-contract-hardening.md): Harden the asb-tui release lifecycle contract | Unclaimed | Turn the tested unverified asb-tui lifecycle boundary into a release-safe delegated contract. | Wait for AR-1030 PR 11 to merge, rebase signed+DCO AR-1022 PR 10 onto exact new asb-tui main, reconcile overlaps to source_only_unverified, rerun full gates and exact-head CI, then integrate by protected admin merge only when all requirements are green. |
 | P0 | [AR-1023](tasks/AR-1023-asb-tui-capabilities-command.md): Add the ASB frontend capabilities command | Unclaimed | Publish the ASB capability negotiation command required by the standalone frontend. | Monitor exact head d60d2351004479998608f2141730849366351373 on PR 128, repair any CI failure, obtain independent review, merge through policy, and run post-merge verification. |
 | P0 | [AR-1030](tasks/AR-1030-ratatui-dependency-closure.md): Resolve the Ratatui dependency closure | Unclaimed | Make the maintained Ratatui release consumable by standalone asb-tui without hiding supply-chain exceptions. | Register/authorize a GitHub-recognized signing identity for exact head c0dfdd3114741f9415a124f4d4995dac354b4260, or explicitly approve a GitHub rebase/squash rewrite; then rerun exact-head gates and merge PR #11. |
+| P0 | [AR-1040](tasks/AR-1040-protected-merge-signature-policy.md): Reconcile protected-merge signature verification | Unclaimed | Align offline signature policy with the repository-required GitHub merge path. | AR-1040 acceptance complete at protected main 6155d63bec04a5c76c4323843c26649b0c084f6e; release done. |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Unclaimed | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. |
 | P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Unclaimed | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. |
 | P1 | [AR-0004](tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Unclaimed | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. |

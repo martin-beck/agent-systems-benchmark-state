@@ -2,22 +2,22 @@
 {
   "branch": "fix/protected-merge-signature-policy",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-11T02:35:35+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1040",
   "next_action": "AR-1040 acceptance complete at protected main 6155d63bec04a5c76c4323843c26649b0c084f6e; release done.",
   "observed_branch": "fix/protected-merge-signature-policy",
   "observed_dirty": 0,
   "observed_head": "d6fa883ad1b2739e7fbd5522029bf02d75e954b8",
-  "owner": "codex-ar1040-final-integration-20260911",
+  "owner": "",
   "plan": "../plans/AR-1040.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Align offline signature policy with the repository-required GitHub merge path.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Reconcile protected-merge signature verification",
-  "updated_at": "2026-09-11T00:42:53+00:00",
+  "updated_at": "2026-09-11T00:43:07+00:00",
   "worktree_key": "agent-systems-benchmark-protected-merge-signature-policy"
 }
 ---
@@ -180,3 +180,8 @@ without allowing Web Flow signatures on ordinary commits or PR heads. This AR ow
   12/12 SUCCESS. Initial here-document merge invocation failed before PR mutation because nested
   shell quoting malformed the delimiter; live PR remained unmerged, then exact-head guarded direct
   invocation with ANSI-C real newlines succeeded. No squash/rebase/direct-main push occurred.
+
+- 2026-09-11T00:43:07+00:00: Verified protected merge 6155d63bec04a5c76c4323843c26649b0c084f6e:
+  exact reviewed tree/parents, valid GitHub signature, matching raw DCO, offline protected-main
+  policy pass, and all 11 applicable exact-main postmerge checks terminal SUCCESS. PR exact-head
+  checks were 12/12 SUCCESS. AR-1040 complete.
