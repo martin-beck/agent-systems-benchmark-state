@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1051.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Record the exact reviewed measurement-catalog merge and its non-compliant GitHub-authored DCO identity without rewriting history.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Attest the measurement catalog merge boundary",
-  "updated_at": "2026-09-11T03:12:10+00:00",
+  "updated_at": "2026-09-11T03:31:21+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-merge-attestation"
 }
 ---
@@ -30,3 +30,6 @@ the GitHub author is `martin-beck <martin.beck2@gmx.de>` while its trailer names
 Do not rewrite or retroactively call that merge compliant. Publish only bounded, reproducible
 attestation evidence and a corrective future merge recipe using the exact GitHub author identity.
 
+
+- 2026-09-11T03:31:21+00:00: AR-1045 is done at protected-main merge 1a19b692 with all postmerge
+  workflows green; PR #140 historical attestation is dependency-ready.
