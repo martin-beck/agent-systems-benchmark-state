@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wait for bounded stable authenticated tmux server, session and window readiness after detached creation.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Acquire authenticated tmux startup readiness",
-  "updated_at": "2026-09-11T03:06:04+00:00",
+  "updated_at": "2026-09-11T03:07:23+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-authenticated-startup-readiness"
 }
 ---
@@ -38,3 +38,6 @@ server/session/window identity and retained pane authority. Change no renderer o
   invocation used an unsupported --note argument and made no state/product change; classified as
   invocation-only. Proceeding with immediate guard, stable startup identity, and pre-option
   revalidation.
+
+- 2026-09-11T03:07:23+00:00: Recorded command exit 1; command argv SHA-256
+  11f4f5096b2fdb900cd58e3fd1862b9faa21d054e9cbeb2c32f2392d87748c84.
