@@ -7,7 +7,7 @@
     "AR-1040"
   ],
   "id": "AR-1043",
-  "next_action": "Wait for AR-1041/PR #136 integration decision; if protected main advances, rebase AR-1043 to that exact main as a clean single-parent signed commit, rerun focused gates, then publish for exact-head CI and immutable review.",
+  "next_action": "Await immutable review of exact clean candidate 40a84dda234f250927bb36a5b3c46bb342f60149; once READY, publish/update PR #137 and require all 12 exact-head checks including AArch64 before any merge authorization.",
   "observed_branch": "fix/protected-topic-sync-topology",
   "observed_dirty": 0,
   "observed_head": "40a84dda234f250927bb36a5b3c46bb342f60149",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Accept one exact signed topic-tip sync merge without weakening protected-main policy.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Qualify exact topic-tip synchronization merges",
-  "updated_at": "2026-09-11T02:30:18+00:00",
+  "updated_at": "2026-09-11T02:30:47+00:00",
   "worktree_key": "agent-systems-benchmark-protected-topic-sync-topology"
 }
 ---
@@ -207,3 +207,16 @@ by the plan, preserve all negative cases and restore a green forward protected-m
 
 - 2026-09-11T02:30:18+00:00: Recorded command exit 0; command argv SHA-256
   da1310cdb21de39ea213ebe8d271877865081b7ea2a7ac872f8ff9cc8ab2a798.
+
+- 2026-09-11T02:30:47+00:00: Recreated the preserved policy-only patch from exact postmerge-green
+  main 92cf2c84778147f9c48498656f0b4a614a4067d6 as clean single-parent signed+DCO head
+  40a84dda234f250927bb36a5b3c46bb342f60149, tree f9b841b11b68ac0311e13d8dfa0b2e0eab2ad69d. Stable
+  patch-id is exactly preserved as 337346adde3bf96892fc7e855282e7943f44a18b; scope is only
+  docs/PUBLICATION_ATTESTATIONS.md, docs/QUALITY_GATES.md,
+  docs/attestations/capability-coverage-pr132-merge.json, tools/quality/repository_policy.py, and
+  tools/quality/test_signature_policy.py, with no crates/src/TUI changes. Focused 16/16
+  signature-policy tests, historical PR132 protected-main proof, current PR-mode policy, fmt, clippy
+  all targets, workspace tests, rustdoc warnings, release build, cargo-deny, cargo-audit, coverage,
+  contract consistency, actionlint, zizmor, gitleaks, failure paths, artifact outcome, platform
+  manifests/tests, repository policy, diff-check, and clean-tree checks all passed. Candidate
+  remains unpushed pending immutable review.
