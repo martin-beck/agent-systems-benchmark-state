@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-startup-observation-diagnostics",
   "checkpoint_commit": "bd3423d2425a805ec024d980f4a72575b67f0d81",
-  "claim_expires": "2026-09-11T07:06:19+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1058",
   "next_action": "Freeze the diagnostic-only exact head after green focused, terminal, full locked, fmt and Clippy gates; obtain immutable review before publication.",
-  "owner": "codex-ar1058-tmux-startup-diagnostics-20260911",
+  "owner": "",
   "plan": "../plans/AR-1058.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Diagnose and repair the remaining trusted tmux stable-startup observation failure.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Diagnose tmux startup observation",
-  "updated_at": "2026-09-11T05:27:25+00:00",
+  "updated_at": "2026-09-11T05:53:04+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-startup-observation-diagnostics"
 }
 ---
@@ -158,3 +158,9 @@ dependency, workflow or ASB source change is in scope.
 
 - 2026-09-11T05:27:25+00:00: Recorded command exit 0; command argv SHA-256
   65bc3467a392454fc6e36d3e9f9069f3a1684aa287f4c64bf2c7e599d7669959.
+
+- 2026-09-11T05:53:04+00:00: PR #22 was delivered and merged as GitHub-verified 69fecc01 with exact
+  reviewed tree; exact-head Repository quality 34565747286 and postmerge Repository quality
+  34565894817 passed. Trusted main 34565894753 remained red, and AR-1061 subsequently falsified
+  concurrent live-fixture contention. Leave AR-1058 OPEN awaiting the dependency-ready AR-1062
+  nested server/connect diagnostic; do not weaken authentication.
