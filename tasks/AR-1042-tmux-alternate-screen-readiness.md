@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make tmux TUI readiness validate the displayed alternate screen deterministically.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Capture alternate-screen TUI readiness deterministically",
-  "updated_at": "2026-09-11T01:11:18+00:00",
+  "updated_at": "2026-09-11T01:11:26+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-alternate-screen-readiness"
 }
 ---
@@ -181,3 +181,6 @@ emit bounded diagnostics; do not change renderer or application semantics.
   10 full parallel terminal passes before leak repair; 5 repaired full terminal passes with per-pass
   exact cleanup; final exact-head full test, docs, release, deny, audit, coverage 91.44% lines,
   schema, shell, workflow, gitleaks and clean-tree gates pass.
+
+- 2026-09-11T01:11:26+00:00: Recorded command exit 0; command argv SHA-256
+  797310ab3a61d9907304d101aa1b3e07755e9f2bf474a009825d29562a683e72.
