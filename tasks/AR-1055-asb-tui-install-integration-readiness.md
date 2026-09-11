@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the asb tui install and full interactive integration sequence dependency-executable.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Harden asb-tui install integration readiness",
-  "updated_at": "2026-09-11T04:36:04+00:00",
+  "updated_at": "2026-09-11T04:36:23+00:00",
   "worktree_key": "agent-systems-benchmark-state-asb-tui-install-integration-readiness"
 }
 ---
@@ -50,3 +50,11 @@ without claiming or changing any product task.
 
 - 2026-09-11T04:36:04+00:00: Recorded command exit 0; command argv SHA-256
   094f0da947a4109e5d1ea26b04704eed5138c0b90a16064e4100df8dca6fa48c.
+
+- 2026-09-11T04:36:23+00:00: State-only correction complete at signed checkpoint 8069f0fb: AR-1026
+  remains planned/unowned and now depends on AR-1011, AR-1024, AR-1025 and AR-1029 while retaining
+  full interactive acceptance. Changed-task schema, exact status/owner preservation, diff-check,
+  dependency acyclicity, structure/references/privacy/generated views, reconcile/push and doctor
+  --live pass. Repository-wide tests/validate_schema.py still reports only the pre-existing seven
+  empty done-task checkpoints AR-1015 through AR-1021 and AR-1043 overlong next_action; no AR-1055
+  path is implicated.
