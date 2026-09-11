@@ -20,7 +20,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34557143678 | `252f746e9035` | push | Formal assurance | in_progress:- |
+| 34557143678 | `252f746e9035` | push | Formal assurance | completed:success |
 | 34557143668 | `252f746e9035` | push | Hosted portability and native qualification | completed:success |
 | 34557143667 | `252f746e9035` | push | Rust verification | in_progress:- |
 | 34557143666 | `252f746e9035` | push | Repository quality | completed:failure |
