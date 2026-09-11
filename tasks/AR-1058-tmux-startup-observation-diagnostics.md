@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Diagnose and repair the remaining trusted tmux stable-startup observation failure.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Diagnose tmux startup observation",
-  "updated_at": "2026-09-11T05:06:19+00:00",
+  "updated_at": "2026-09-11T05:06:33+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-startup-observation-diagnostics"
 }
 ---
@@ -29,3 +29,6 @@ dependency, workflow or ASB source change is in scope.
   and the stable-startup/pane diagnostic is dependency-ready.
 
 - 2026-09-11T05:06:19+00:00: Claimed by codex-ar1058-tmux-startup-diagnostics-20260911.
+
+- 2026-09-11T05:06:33+00:00: Recorded command exit 0; command argv SHA-256
+  3007ebf91e08cba6b09952c5654222362fb1a001d9f38b0a7912fbd43ae03b79.
