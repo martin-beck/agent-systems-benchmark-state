@@ -69,8 +69,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-frontend-protocol-contract` | `feature/frontend-protocol-contract` | `d3e2dfa979d8` | 0 | behind 236, ahead 0 |
 | `agent-systems-benchmark-frontend-run-lifecycle` | `feature/frontend-run-lifecycle` | `b3b3b8907f6d` | 0 | behind 224, ahead 0 |
 | `agent-systems-benchmark-gemini-generate-content-replay` | `feature/gemini-generate-content-replay` | `93c19625f910` | 0 | behind 272, ahead 0 |
-| `agent-systems-benchmark-gemini-hook-readiness-race` | `fix/gemini-hook-readiness-race` | `6155d63bec04` | 1 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-agents/src/gemini.rs` |
+| `agent-systems-benchmark-gemini-hook-readiness-race` | `fix/gemini-hook-readiness-race` | `6155d63bec04` | 7 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-agents/src/gemini.rs`, `crates/asb-cli/default_15080591826305376041_0_2481359.profraw`, `crates/asb-cli/default_15080591826305376041_0_2481361.profraw`, `crates/asb-cli/default_15080591826305376041_0_2481363.profraw`, `crates/asb-cli/default_15080591826305376041_0_2481365.profraw`, `crates/asb-cli/default_15080591826305376041_0_2481366.profraw`, `crates/asb-cli/default_15080591826305376041_0_2481367.profraw` |
 | `agent-systems-benchmark-gemini-thinking-config-contract` | `feature/gemini-thinking-config-contract` | `0aff7023cacf` | 0 | behind 270, ahead 0 |
 | `agent-systems-benchmark-hosted-runner-evidence` | `fix/hosted-runner-evidence-classification` | `f0b7b46db271` | 0 | behind 25, ahead 0 |
 | `agent-systems-benchmark-huawei-mit-headers` | `fix/huawei-mit-license-headers` | `7add29f1d24c` | 0 | behind 154, ahead 0 |
