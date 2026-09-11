@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Wait for bounded stable authenticated tmux server, session and window readiness after detached creation.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Acquire authenticated tmux startup readiness",
-  "updated_at": "2026-09-11T03:34:17+00:00",
+  "updated_at": "2026-09-11T03:41:11+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-authenticated-startup-readiness"
 }
 ---
@@ -216,3 +216,6 @@ server/session/window identity and retained pane authority. Change no renderer o
   coverage-clean full suite passed at 91.44%. Compile exits 101 while adding the guard field were
   code-local missing-pattern and large-enum lint findings; repaired with exhaustive pattern and
   boxed retained tuple, then rerun green.
+
+- 2026-09-11T03:41:11+00:00: Recorded command exit 0; command argv SHA-256
+  0ac211a990d74c1be636dfdc9132b23efde5d70e8627140f51e276cda087e1ab.
