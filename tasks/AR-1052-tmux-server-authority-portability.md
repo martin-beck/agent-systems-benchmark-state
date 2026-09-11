@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-server-authority-portability",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-11T05:51:44+00:00",
   "depends_on": [],
   "id": "AR-1052",
   "next_action": "Expose the exact trusted-runner tmux server-observation failure as a bounded closed diagnostic before changing authority semantics.",
-  "owner": "",
+  "owner": "codex-ar1052-tmux-authority-portability-20260911",
   "plan": "../plans/AR-1052.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Diagnose and repair the trusted-runner tmux server-authority portability gap without weakening cleanup authentication.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Diagnose trusted tmux server authority",
-  "updated_at": "2026-09-11T03:50:00+00:00",
+  "updated_at": "2026-09-11T03:51:44+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-server-authority-portability"
 }
 ---
@@ -25,3 +25,5 @@ fixtures exhausted the bounded closed startup observation. The no-pane-authority
 the failure to server observation before pane, session, window or option work. Add closed staged
 diagnostics first, then repair only the proven non-portable predicate while preserving every
 authenticated cleanup and zero-widening invariant. Change no product UI, renderer or ASB source.
+
+- 2026-09-11T03:51:44+00:00: Claimed by codex-ar1052-tmux-authority-portability-20260911.
