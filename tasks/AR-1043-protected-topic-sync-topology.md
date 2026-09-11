@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Accept one exact signed topic-tip sync merge without weakening protected-main policy.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Qualify exact topic-tip synchronization merges",
-  "updated_at": "2026-09-11T02:32:38+00:00",
+  "updated_at": "2026-09-11T02:32:45+00:00",
   "worktree_key": "agent-systems-benchmark-protected-topic-sync-topology"
 }
 ---
@@ -231,3 +231,6 @@ by the plan, preserve all negative cases and restore a green forward protected-m
   verification wrapper returned exit 1 only because automatic state reconciliation timed out
   acquiring the coordinator lock after 10s; product/GitHub verification had already succeeded and no
   product/test failure occurred.
+
+- 2026-09-11T02:32:45+00:00: Recorded command exit 8; command argv SHA-256
+  b143bf9c34f1cb1f9f7a692358f2897734fd78b0c006f7562928d919ba240efd.
