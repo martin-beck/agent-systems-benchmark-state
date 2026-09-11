@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make the emulated AArch64 asb-agents fake-node readiness fixtures deterministic without changing production semantics.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Serialize emulated AArch64 agent tests",
-  "updated_at": "2026-09-11T01:45:56+00:00",
+  "updated_at": "2026-09-11T01:46:38+00:00",
   "worktree_key": "agent-systems-benchmark-emulated-aarch64-agent-serialization"
 }
 ---
@@ -112,3 +112,6 @@ existing skip and all budgets; do not change Rust production code or any UI/TUI 
   corrected 10/10); exit 127 at 01:38 was missing cargo PATH (no Rust gate ran; pinned toolchain
   rerun passed); exit 1 at 01:41 was missing ruff in ambient Python after tests passed (correct
   pinned ruff rerun passed).
+
+- 2026-09-11T01:46:38+00:00: Recorded command exit 0; command argv SHA-256
+  4feea2bf63b86cdf121b1963ca335ed2323bf65f4c7a7b0fd08e46e3310a2683.
