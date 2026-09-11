@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Recover tmux foreground-group qualification",
-  "updated_at": "2026-09-11T01:31:57+00:00",
+  "updated_at": "2026-09-11T01:32:48+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-pane-foreground-group-recovery"
 }
 ---
@@ -72,3 +72,6 @@ absent or changes. Do not change renderer or application behavior.
   reject. Parser, HUP-resistant cleanup, no-authority cleanup, real tmux+screen focused tests and
   the serial 17-test terminal suite pass. Classified earlier failures: nonexistent canonical asb-tui
   alias and fmt drift were invocation/formatting issues corrected before tests.
+
+- 2026-09-11T01:32:48+00:00: Recorded command exit 0; command argv SHA-256
+  d4e8f51a5daf7c90b1e457d35590e80cb31143f850b7c809b39684ab74c003d8.
