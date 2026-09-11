@@ -1169,7 +1169,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1036](tasks/AR-1036-measurement-catalog-control.md): Publish the measurement catalog control contract | codex-root-ar1036-catalog-20260911 | Expose the versioned ASB measurement catalog to standalone frontends without UI code. | Restore a fully green protected-main descendant through reviewed AR-1045 using exact merge-author DCO identity, then verify all postmerge workflows before closing AR-1036. |
+| P0 | [AR-1036](tasks/AR-1036-measurement-catalog-control.md): Publish the measurement catalog control contract | codex-root-ar1036-catalog-20260911 | Expose the versioned ASB measurement catalog to standalone frontends without UI code. | Catalog control v1.2 is merged and qualified; AR-1037 may now carry selected measurement IDs through validated ASB plans. |
 | P0 | [AR-1050](tasks/AR-1050-tmux-authenticated-startup-readiness.md): Acquire authenticated tmux startup readiness | codex-ar1050-tmux-startup-readiness-20260911 | Wait for bounded stable authenticated tmux server, session and window readiness after detached creation. | Freeze exact c465aa6a06395f11bdbf757d92f315b1b89603b7/tree 9c84adb111497687251fc1d90893a082f23246a8 for immutable different-agent review before any push. |
 
 ### Open (15)

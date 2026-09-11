@@ -8,7 +8,7 @@
     "AR-1023"
   ],
   "id": "AR-1036",
-  "next_action": "Restore a fully green protected-main descendant through reviewed AR-1045 using exact merge-author DCO identity, then verify all postmerge workflows before closing AR-1036.",
+  "next_action": "Catalog control v1.2 is merged and qualified; AR-1037 may now carry selected measurement IDs through validated ASB plans.",
   "observed_branch": "feature/measurement-catalog-control",
   "observed_dirty": 0,
   "observed_head": "8e8d37e8c7ca7a4f673e8ae84d7395d512d45197",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose the versioned ASB measurement catalog to standalone frontends without UI code.",
-  "task_revision": 156,
+  "task_revision": 157,
   "title": "Publish the measurement catalog control contract",
-  "updated_at": "2026-09-11T03:07:10+00:00",
+  "updated_at": "2026-09-11T03:31:07+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-control"
 }
 ---
@@ -383,3 +383,9 @@ rendering and help behavior remains exclusively in `martin-beck/asb-tui` under A
   match trailer name Martin Beck; email and lowercase trailer key were correct. Product tree is
   unchanged and other workflows continue. Root classified the exact identity error and instructed
   AR-1045 merge recipe to use Signed-off-by: martin-beck <martin.beck2@gmx.de>.
+
+- 2026-09-11T03:31:07+00:00: AR-1036 exact reviewed head passed 12/12 PR checks and merged as
+  verified 252f746 with exact reviewed tree/parents. Its merge had only a DCO author-name case
+  mismatch; reviewed AR-1045 merged as verified 1a19b692 with exact author-matching trailer. All
+  seven descendant protected-main workflows are green. No UI/render/Ratatui/Crossterm implementation
+  entered ASB.
