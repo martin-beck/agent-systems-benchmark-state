@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Expose the versioned ASB measurement catalog to standalone frontends without UI code.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Publish the measurement catalog control contract",
-  "updated_at": "2026-09-11T01:39:48+00:00",
+  "updated_at": "2026-09-11T01:40:15+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-control"
 }
 ---
@@ -32,3 +32,6 @@ rendering and help behavior remains exclusively in `martin-beck/asb-tui` under A
   protocol-only plan and repository boundary.
 
 - 2026-09-11T01:39:48+00:00: Claimed by codex-root-ar1036-catalog-20260911.
+
+- 2026-09-11T01:40:15+00:00: Recorded command exit 0; command argv SHA-256
+  ea153b531f1106f5d94913543b5962bf799305c4e35ed4d05dd3cd19dab1610a.
