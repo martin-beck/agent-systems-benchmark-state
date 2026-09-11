@@ -2,7 +2,7 @@
 {
   "branch": "feature/measurement-catalog-control",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-11T03:39:48+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1013",
     "AR-1023"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/measurement-catalog-control",
   "observed_dirty": 0,
   "observed_head": "8e8d37e8c7ca7a4f673e8ae84d7395d512d45197",
-  "owner": "codex-root-ar1036-catalog-20260911",
+  "owner": "",
   "plan": "../plans/AR-1036.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Expose the versioned ASB measurement catalog to standalone frontends without UI code.",
-  "task_revision": 157,
+  "task_revision": 158,
   "title": "Publish the measurement catalog control contract",
-  "updated_at": "2026-09-11T03:31:07+00:00",
+  "updated_at": "2026-09-11T03:31:18+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-control"
 }
 ---
@@ -389,3 +389,7 @@ rendering and help behavior remains exclusively in `martin-beck/asb-tui` under A
   mismatch; reviewed AR-1045 merged as verified 1a19b692 with exact author-matching trailer. All
   seven descendant protected-main workflows are green. No UI/render/Ratatui/Crossterm implementation
   entered ASB.
+
+- 2026-09-11T03:31:18+00:00: Completed after verified catalog merge and fully green author-corrected
+  protected-main descendant 1a19b692d724fd5ba1996470daccbfed06171a0a; exact workflow run IDs are
+  recorded in task evidence.
