@@ -1,7 +1,7 @@
 ---
 {
   "branch": "fix/tmux-startup-observation-diagnostics",
-  "checkpoint_commit": "",
+  "checkpoint_commit": "46e3d55082d15d69c6b0b4fef0f3324fa000e9d0",
   "claim_expires": "2026-09-11T07:06:19+00:00",
   "depends_on": [],
   "id": "AR-1058",
