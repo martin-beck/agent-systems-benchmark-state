@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**207 ARs tracked** across 6 active status categories.
+**208 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 5 |
-| **Open** | Dependency-ready and available to claim | 7 |
+| **Open** | Dependency-ready and available to claim | 8 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 56 |
 | **Future** | Deferred roadmap work | 1 |
@@ -265,6 +265,7 @@ flowchart LR
         AR_1041["AR-1041 - In progress"]:::status_in_progress
         AR_1042["AR-1042 - In progress"]:::status_in_progress
         AR_1043["AR-1043 - In progress"]:::status_in_progress
+        AR_1044["AR-1044 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1145,6 +1146,7 @@ flowchart LR
 | [AR-1041](tasks/AR-1041-gemini-hook-readiness-race.md) | None | None |
 | [AR-1042](tasks/AR-1042-tmux-alternate-screen-readiness.md) | None | None |
 | [AR-1043](tasks/AR-1043-protected-topic-sync-topology.md) | [AR-1040](tasks/AR-1040-protected-merge-signature-policy.md) | None |
+| [AR-1044](tasks/AR-1044-tmux-pane-foreground-group-recovery.md) | None | None |
 
 ## Complete AR inventory
 
@@ -1158,13 +1160,14 @@ flowchart LR
 | P0 | [AR-1042](tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | codex-ar1042-tmux-readiness-20260911 | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. |
 | P0 | [AR-1043](tasks/AR-1043-protected-topic-sync-topology.md): Qualify exact topic-tip synchronization merges | codex-ar1043-protected-topic-sync-20260911 | Accept one exact signed topic-tip sync merge without weakening protected-main policy. | Wait for AR-1041/PR #136 integration decision; if protected main advances, rebase AR-1043 to that exact main as a clean single-parent signed commit, rerun focused gates, then publish for exact-head CI and immutable review. |
 
-### Open (7)
+### Open (8)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0897](tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | Unclaimed | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Hold PR 126 at bd6f450; after AR-0877 and AR-0909 integrate, rebase once and require fresh all-green exact-head CI before merge. |
 | P0 | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md): Adopt Ratatui/Crossterm TUI foundation | Unclaimed | Adopt Ratatui and Crossterm as the supported professional TUI foundation. | Mark PR #9 ready, squash-merge exact reviewed tree 6521148 with valid lowercase GitHub-author DCO, then verify protected main tree, signature and post-merge CI before release. |
 | P0 | [AR-1024](tasks/AR-1024-asb-tui-lifecycle-router.md): Implement &#96;asb tui&#96; lifecycle routing | Unclaimed | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | Await a new AR-1010 successor that repairs unrelated-child classification and persistent-proc-failure setsid escape, passes fresh immutable review and exact-head CI; only then request exact archive build authorization, repin, PTY-test and rerun gates. |
+| P0 | [AR-1044](tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Unclaimed | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Claim the task, create the declared isolated asb-tui worktree from exact merged main eb4960e, and implement foreground-group observation fixtures before integration changes. |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | Repair/rebase the fail-closed TLA provenance pin, then rerun PR #119 exact-head CI; do not merge. |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Unclaimed | Qualify pinned OpenJiuwen live execution. | Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI. |
 | P1 | [AR-0908](tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | Unclaimed | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Hold PR #125 unchanged; shared formal asset and native-runner pin owners must repair their gates before a fresh exact-head run. |
