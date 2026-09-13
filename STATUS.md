@@ -1263,7 +1263,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1060](tasks/AR-1060-authenticated-control-endpoint-handoff.md): Add authenticated control endpoint handoff | codex-ar1060-endpoint-recovery-20260913 | Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths. | Obtain independent immutable review of signed ASB head e55df62c4247ca86b6af863c75e189980fadd9fe, then add the bounded router-side probe/acquisition producer and remaining hostile descriptor, credential, timeout and admission tests without UI work. |
+| P0 | [AR-1060](tasks/AR-1060-authenticated-control-endpoint-handoff.md): Add authenticated control endpoint handoff | codex-ar1060-endpoint-recovery-20260913 | Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths. | Obtain independent immutable review of signed ASB head f34e4f57e1419bbe9783798bf15fe9c930bffa09; repair findings, then publish the exact head through protected CI and merge before AR-1024 consumes the provisioning handoff, with no UI work. |
 
 ### Open (21)
 

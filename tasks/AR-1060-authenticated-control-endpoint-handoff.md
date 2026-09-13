@@ -8,7 +8,7 @@
     "AR-1023"
   ],
   "id": "AR-1060",
-  "next_action": "Obtain independent immutable review of signed ASB head e55df62c4247ca86b6af863c75e189980fadd9fe, then add the bounded router-side probe/acquisition producer and remaining hostile descriptor, credential, timeout and admission tests without UI work.",
+  "next_action": "Obtain independent immutable review of signed ASB head f34e4f57e1419bbe9783798bf15fe9c930bffa09; repair findings, then publish the exact head through protected CI and merge before AR-1024 consumes the provisioning handoff, with no UI work.",
   "observed_branch": "feature/authenticated-control-endpoint-handoff",
   "observed_dirty": 0,
   "observed_head": "f34e4f57e1419bbe9783798bf15fe9c930bffa09",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths.",
-  "task_revision": 139,
+  "task_revision": 140,
   "title": "Add authenticated control endpoint handoff",
-  "updated_at": "2026-09-13T19:04:53+00:00",
+  "updated_at": "2026-09-13T19:06:07+00:00",
   "worktree_key": "agent-systems-benchmark-authenticated-control-endpoint-handoff"
 }
 ---
@@ -424,3 +424,8 @@ planned until their full dependency sets are done.
 
 - 2026-09-13T18:48:11+00:00: Recorded command exit 0; command argv SHA-256
   5db40640be19dff55d20cbfa56fd266eca453467a01d7e54c2a58631f6d0ab85.
+
+- 2026-09-13T19:06:07+00:00: Reconciled clean signed+DCO head
+  f34e4f57e1419bbe9783798bf15fe9c930bffa09 after focused and full/formal gates passed. Require
+  independent immutable review and protected exact-head publication before AR-1024 consumes the
+  handoff; no UI scope.
