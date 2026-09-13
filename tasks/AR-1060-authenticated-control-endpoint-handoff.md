@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths.",
-  "task_revision": 140,
+  "task_revision": 141,
   "title": "Add authenticated control endpoint handoff",
-  "updated_at": "2026-09-13T19:06:07+00:00",
+  "updated_at": "2026-09-13T19:09:15+00:00",
   "worktree_key": "agent-systems-benchmark-authenticated-control-endpoint-handoff"
 }
 ---
@@ -429,3 +429,6 @@ planned until their full dependency sets are done.
   f34e4f57e1419bbe9783798bf15fe9c930bffa09 after focused and full/formal gates passed. Require
   independent immutable review and protected exact-head publication before AR-1024 consumes the
   handoff; no UI scope.
+
+- 2026-09-13T19:09:15+00:00: Recorded command exit 0; command argv SHA-256
+  efeea20b67da84390dca0bd472abb6002b0b27ebe75685b9676fc66852df79d8.
