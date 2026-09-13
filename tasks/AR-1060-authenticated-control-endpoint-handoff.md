@@ -8,7 +8,7 @@
     "AR-1023"
   ],
   "id": "AR-1060",
-  "next_action": "Recover PR #152 publication provenance: produce a protected merge commit for reviewed tree 36f21d9bfca9d3afde9514348c89d2ab884ebefc with a verifiable signature and DCO trailer, then rerun exact-main gates before releasing AR-1060 to AR-1024; no UI work.",
+  "next_action": "Recover PR #152 publication provenance with a verifiably signed, DCO-compliant protected merge for reviewed tree 36f21d9bfca9d3afde9514348c89d2ab884ebefc; rerun exact-main policy/DCO and full gates before releasing AR-1060 to AR-1024. No history rewrite, policy weakening, or UI work.",
   "observed_branch": "feature/authenticated-control-endpoint-handoff",
   "observed_dirty": 0,
   "observed_head": "f34e4f57e1419bbe9783798bf15fe9c930bffa09",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths.",
-  "task_revision": 150,
+  "task_revision": 151,
   "title": "Add authenticated control endpoint handoff",
-  "updated_at": "2026-09-13T19:19:00+00:00",
+  "updated_at": "2026-09-13T19:23:29+00:00",
   "worktree_key": "agent-systems-benchmark-authenticated-control-endpoint-handoff"
 }
 ---
@@ -466,3 +466,9 @@ planned until their full dependency sets are done.
   f34e4f57e1419bbe9783798bf15fe9c930bffa09: content identity PASS. Publication provenance FAIL:
   GitHub reports merge signature status E and the merge body lacks Signed-off-by. Keep AR-1060 in
   progress pending signed/DCO merge recovery and exact-main requalification.
+
+- 2026-09-13T19:23:29+00:00: Post-merge CI rejects d450945a: both repository policy and DCO checks
+  fail because the merge commit lacks Signed-off-by; its GitHub signature status is E. The merged
+  tree still exactly matches reviewed f34e4f57/tree 36f21d9b, so content identity passes while
+  publication provenance remains blocking. Keep AR-1060 in progress; do not rewrite history or
+  weaken policy.
