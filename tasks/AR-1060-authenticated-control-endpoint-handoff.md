@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths.",
-  "task_revision": 125,
+  "task_revision": 126,
   "title": "Add authenticated control endpoint handoff",
-  "updated_at": "2026-09-13T18:44:44+00:00",
+  "updated_at": "2026-09-13T18:45:07+00:00",
   "worktree_key": "agent-systems-benchmark-authenticated-control-endpoint-handoff"
 }
 ---
@@ -388,3 +388,6 @@ planned until their full dependency sets are done.
 
 - 2026-09-13T18:44:44+00:00: Recorded command exit 0; command argv SHA-256
   a7cee00ad90f38354b16b88122d3573cb2e5b95e49edba00efc34c995c0620bd.
+
+- 2026-09-13T18:45:07+00:00: Recorded command exit 0; command argv SHA-256
+  d9c5e978ade14e836e82ea00463fc3156469132b45a1260c55f445584eb9646f.
