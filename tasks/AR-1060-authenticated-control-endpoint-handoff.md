@@ -2,7 +2,7 @@
 {
   "branch": "feature/authenticated-control-endpoint-handoff",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-13T21:17:37+00:00",
   "depends_on": [
     "AR-1022",
     "AR-1023"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/authenticated-control-endpoint-handoff",
   "observed_dirty": 0,
   "observed_head": "f34e4f57e1419bbe9783798bf15fe9c930bffa09",
-  "owner": "",
+  "owner": "codex-ar1060-merge-20260913",
   "plan": "../plans/AR-1060.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths.",
-  "task_revision": 147,
+  "task_revision": 148,
   "title": "Add authenticated control endpoint handoff",
-  "updated_at": "2026-09-13T19:17:27+00:00",
+  "updated_at": "2026-09-13T19:17:37+00:00",
   "worktree_key": "agent-systems-benchmark-authenticated-control-endpoint-handoff"
 }
 ---
@@ -455,3 +455,5 @@ planned until their full dependency sets are done.
   codex-ar1060-endpoint-recovery-20260913. Recovered expired AR-1060 owner after exact-head PR #152
   reached CLEAN with all 12 required checks passing; preserve signed head f34e4f57 and prepare
   protected merge.
+
+- 2026-09-13T19:17:37+00:00: Claimed by codex-ar1060-merge-20260913.
