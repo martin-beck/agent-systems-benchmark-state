@@ -4,7 +4,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
-| `agent-systems-benchmark` | `main` | `bd7d10d4a760` | 0 | behind 84, ahead 1 |
+| `agent-systems-benchmark` | `main` | `bd7d10d4a760` | 1 | behind 84, ahead 1 |
+| changed files | - | - | - | `ProvisionedControlServer` |
 | `agent-systems-benchmark-agent-aider` | `feature/agent-aider` | `da81ead6932c` | 0 | behind 371, ahead 0 |
 | `agent-systems-benchmark-agent-codex` | `feature/agent-codex` | `eb03bd9d9ed5` | 0 | behind 359, ahead 0 |
 | `agent-systems-benchmark-agent-gemini` | `feature/agent-gemini` | `d381d340163e` | 0 | behind 355, ahead 0 |
@@ -28,7 +29,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-asb-cli-workflow-captures` | `docs/asb-cli-workflow-captures-attestation` | `b18e38ad94f1` | 0 | behind 32, ahead 0 |
 | `agent-systems-benchmark-asb-tui-capabilities-command` | `feature/asb-tui-capabilities-command` | `d60d23510044` | 0 | behind 35, ahead 0 |
 | `agent-systems-benchmark-asb-tui-lifecycle-router` | `feature/asb-tui-lifecycle-router` | `c545c33c8bfe` | 0 | behind 31, ahead 1 |
-| `agent-systems-benchmark-authenticated-control-endpoint-handoff` | `feature/authenticated-control-endpoint-handoff` | `10a353e0342c` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-authenticated-control-endpoint-handoff` | `feature/authenticated-control-endpoint-handoff` | `0f449e1603b8` | 3 | behind 0, ahead 1 |
+| changed files | - | - | - | `crates/asb-control/src/endpoint.rs`, `crates/asb-control/src/handoff.rs`, `crates/asb-control/src/transport.rs` |
 | `agent-systems-benchmark-beginner-workflows` | `docs/beginner-workflows` | `328de90ef1ed` | 0 | behind 137, ahead 0 |
 | `agent-systems-benchmark-benchmark-validity` | `feature/benchmark-validity` | `60a6c730457b` | 0 | behind 265, ahead 0 |
 | `agent-systems-benchmark-capability-coverage-sink` | `test/capability-coverage-sink` | `297895dbdee6` | 0 | behind 15, ahead 0 |
