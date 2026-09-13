@@ -8,7 +8,7 @@
     "AR-1023"
   ],
   "id": "AR-1060",
-  "next_action": "Obtain independent immutable review of signed ASB head f34e4f57e1419bbe9783798bf15fe9c930bffa09; repair findings, then publish the exact head through protected CI and merge before AR-1024 consumes the provisioning handoff, with no UI work.",
+  "next_action": "Push exact signed head f34e4f57e1419bbe9783798bf15fe9c930bffa09, open a focused PR, require exact-head CI and protected merge plus exact-main verification, then release AR-1060 and hand the verified provisioning contract to AR-1024; no UI work.",
   "observed_branch": "feature/authenticated-control-endpoint-handoff",
   "observed_dirty": 0,
   "observed_head": "f34e4f57e1419bbe9783798bf15fe9c930bffa09",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths.",
-  "task_revision": 143,
+  "task_revision": 144,
   "title": "Add authenticated control endpoint handoff",
-  "updated_at": "2026-09-13T19:09:47+00:00",
+  "updated_at": "2026-09-13T19:10:10+00:00",
   "worktree_key": "agent-systems-benchmark-authenticated-control-endpoint-handoff"
 }
 ---
@@ -438,3 +438,9 @@ planned until their full dependency sets are done.
 
 - 2026-09-13T19:09:47+00:00: Recorded command exit 0; command argv SHA-256
   1a17f743c40b94a2b57629e087453357bb52dbcff00a7d51e3b8e2798b9ea739.
+
+- 2026-09-13T19:10:10+00:00: Independent immutable review of
+  f34e4f57e1419bbe9783798bf15fe9c930bffa09 (tree 36f21d9bfca9d3afde9514348c89d2ab884ebefc) passes
+  token binding, readiness gating, and backpressure behavior; focused 20/20 and full/formal gates
+  are green. Publication remains blocked on remote branch/PR, exact-head hosted CI, protected merge,
+  and exact-main verification.
