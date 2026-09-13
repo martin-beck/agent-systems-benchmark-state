@@ -12,11 +12,11 @@
   "plan": "../plans/AR-1058.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "superseded",
   "summary": "Diagnose and repair the remaining trusted tmux stable-startup observation failure.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Diagnose tmux startup observation",
-  "updated_at": "2026-09-13T19:58:18+00:00",
+  "updated_at": "2026-09-13T19:58:20+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-startup-observation-diagnostics"
 }
 ---
@@ -173,3 +173,6 @@ dependency, workflow or ASB source change is in scope.
 - 2026-09-13T19:58:18+00:00: PR #22 merged exact approved head
   bd3423d2425a805ec024d980f4a72575b67f0d81 as 69fecc01; Repository quality passed but Trusted main
   34565894753 stayed red. AR-1061 superseded this incomplete startup-observation recovery.
+
+- 2026-09-13T19:58:20+00:00: Superseded by AR-1061 after the provenance-clean PR #22 merge left
+  Trusted main red and narrowed the next hypothesis to fixture contention.
