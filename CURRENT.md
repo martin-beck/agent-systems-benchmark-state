@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1060](tasks/AR-1060-authenticated-control-endpoint-handoff.md): Add authenticated control endpoint handoff | Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths. | Stop descendant recovery: every commit atop ec0c7a3 retains the invalid merge in its policy range. Escalate for an authorized repository-level recovery that neither rewrites history nor weakens signature/DCO policy; keep AR-1060 and AR-1024 blocked. No UI work. | codex-ar1060-merge-20260913 |
-| P0 | [AR-1100](tasks/AR-1100.md): Configuration defaults | Persist configuration defaults. | PR #154 is open at 38c0399; wait exact-head CI, independently review the configuration diff, then merge only if every required check including inherited main policy is green. | codex-asb-config-defaults-20260913 |
+| P0 | [AR-1100](tasks/AR-1100.md): Configuration defaults | Persist configuration defaults. | PR #154 exact head 38c0399 is under review; platform evidence fails inherited immutable-source check against base ec0c7a3. Do not merge until all checks and base policy are green. | codex-asb-config-defaults-20260913 |
 
 ## Open
 
