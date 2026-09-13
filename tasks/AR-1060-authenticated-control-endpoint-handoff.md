@@ -2,7 +2,7 @@
 {
   "branch": "feature/authenticated-control-endpoint-handoff",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-11T08:36:18+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1022",
     "AR-1023"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/authenticated-control-endpoint-handoff",
   "observed_dirty": 0,
   "observed_head": "10a353e0342ced88dabbebac7d1da5b0f2511d84",
-  "owner": "codex-ar1060-asb-endpoint-provider-20260911",
+  "owner": "",
   "plan": "../plans/AR-1060.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Add authenticated control endpoint handoff",
-  "updated_at": "2026-09-11T06:03:58+00:00",
+  "updated_at": "2026-09-13T16:56:38+00:00",
   "worktree_key": "agent-systems-benchmark-authenticated-control-endpoint-handoff"
 }
 ---
@@ -127,3 +127,8 @@ planned until their full dependency sets are done.
 
 - 2026-09-11T06:03:58+00:00: Recorded command exit 0; command argv SHA-256
   bcf8bf31eb1629894c362b64e10649b4abe94fff852f76f65c9cd028cf263630.
+
+- 2026-09-13T16:56:38+00:00: Recovered expired claim formerly owned by
+  codex-ar1060-asb-endpoint-provider-20260911. Recovered expired claim after live audit: declared
+  worktree is clean with no implementation and no live ASB worker process; dependency is available
+  for a fresh owner.
