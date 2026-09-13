@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1054.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "superseded",
   "summary": "Repair trusted tmux socket connection completion without weakening authenticated cleanup authority.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Repair tmux socket connection completion",
-  "updated_at": "2026-09-13T19:58:06+00:00",
+  "updated_at": "2026-09-13T19:58:09+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-socket-connect-completion"
 }
 ---
@@ -196,3 +196,6 @@ lifecycle protocol, dependency, workflow or ASB source change is in scope.
   d4ace404949ab92090c72fcedf8ce182c37ee2e7 as 092cf20a, but exact-main Repository quality
   34563629050 and Trusted main 34563628936 remained red. Preserve the EAGAIN/completion repair;
   AR-1056 superseded the incomplete outcome.
+
+- 2026-09-13T19:58:09+00:00: Superseded by AR-1056 after the provenance-clean PR #20 merge left a
+  narrower connection-stage failure.
