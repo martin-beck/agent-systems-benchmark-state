@@ -22,21 +22,21 @@ Generated from local Git and GitHub. Do not edit.
 | #148 | `dependabot/github_actions/actions/upload-artifact-7.0.1@7d45f4cadff2` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump actions/upload-artifact from 4.6.2 to 7.0.1 |
 | #149 | `dependabot/cargo/url-2.5.8@f7edfbbd0e98` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump url from 2.5.7 to 2.5.8 |
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
-| #151 | `dependabot/cargo/serde-1.0.229@59d0e478681f` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
+| #151 | `dependabot/cargo/serde-1.0.229@de7a00922c14` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:FAILURE, IN_PROGRESS: | chore(deps): bump serde from 1.0.219 to 1.0.229 |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34777313289 | `d450945a7940` | dynamic | Dependabot Updates | in_progress:- |
+| 34777361198 | `de7a00922c14` | pull_request | Rust verification | in_progress:- |
+| 34777361171 | `de7a00922c14` | pull_request | Repository quality | completed:failure |
+| 34777361152 | `de7a00922c14` | pull_request | Formal assurance | in_progress:- |
+| 34777361146 | `de7a00922c14` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 34777361145 | `de7a00922c14` | pull_request | Hosted portability and native qualification | completed:success |
+| 34777361140 | `de7a00922c14` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 34777361139 | `de7a00922c14` | pull_request | Huawei MIT source headers | completed:success |
+| 34777361138 | `de7a00922c14` | pull_request | Fault assurance | in_progress:- |
+| 34777313289 | `d450945a7940` | dynamic | Dependabot Updates | completed:success |
 | 34777257620 | `d450945a7940` | push | Emulated aarch64 portability | in_progress:- |
-| 34777257618 | `d450945a7940` | push | Fault assurance | in_progress:- |
+| 34777257618 | `d450945a7940` | push | Fault assurance | completed:success |
 | 34777257602 | `d450945a7940` | push | Hosted portability and native qualification | completed:success |
-| 34777257595 | `d450945a7940` | push | Formal assurance | in_progress:- |
-| 34777257594 | `d450945a7940` | push | Rust verification | in_progress:- |
-| 34777257564 | `d450945a7940` | push | Repository quality | completed:failure |
-| 34777257560 | `d450945a7940` | push | Huawei MIT source headers | completed:success |
-| 34776885391 | `f34e4f57e141` | pull_request | Repository quality | completed:success |
-| 34776885326 | `f34e4f57e141` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 34776885323 | `f34e4f57e141` | pull_request | Emulated aarch64 portability | completed:success |
-| 34776885322 | `f34e4f57e141` | pull_request | Hosted portability and native qualification | completed:success |
