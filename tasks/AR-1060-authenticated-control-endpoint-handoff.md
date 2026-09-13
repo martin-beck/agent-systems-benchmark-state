@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths.",
-  "task_revision": 151,
+  "task_revision": 152,
   "title": "Add authenticated control endpoint handoff",
-  "updated_at": "2026-09-13T19:23:29+00:00",
+  "updated_at": "2026-09-13T19:35:50+00:00",
   "worktree_key": "agent-systems-benchmark-authenticated-control-endpoint-handoff"
 }
 ---
@@ -472,3 +472,6 @@ planned until their full dependency sets are done.
   tree still exactly matches reviewed f34e4f57/tree 36f21d9b, so content identity passes while
   publication provenance remains blocking. Keep AR-1060 in progress; do not rewrite history or
   weaken policy.
+
+- 2026-09-13T19:35:50+00:00: Recorded command exit 0; command argv SHA-256
+  7e3d1e36cf0d7791f199160aad844081725bf76c1c4f2f6147f84e04800b491b.
