@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1052.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "superseded",
   "summary": "Diagnose and repair the trusted-runner tmux server-authority portability gap without weakening cleanup authentication.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Diagnose trusted tmux server authority",
-  "updated_at": "2026-09-13T19:58:00+00:00",
+  "updated_at": "2026-09-13T19:58:03+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-server-authority-portability"
 }
 ---
@@ -231,3 +231,6 @@ authenticated cleanup and zero-widening invariant. Change no product UI, rendere
   5b55f6aa4d8883bc13a79b64193da246788831b9 as 7a398032, but Trusted main 34562090773 still failed at
   socket_connection_unavailable. Preserve that valid intermediate result; AR-1054 superseded its
   incomplete recovery.
+
+- 2026-09-13T19:58:03+00:00: Superseded by AR-1054 after the provenance-clean PR #19 merge exposed
+  the next downstream socket-completion failure.
