@@ -3,18 +3,18 @@
   "branch": "docs/frontend-workflow-guides",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-0802", "AR-0804", "AR-0805", "AR-0806", "AR-0807", "AR-0817", "AR-0819", "AR-0821", "AR-0822", "AR-0872", "AR-0873", "AR-0874"],
+  "depends_on": ["AR-0802", "AR-0804", "AR-0805", "AR-0806", "AR-0807", "AR-0817", "AR-0819", "AR-0821", "AR-0822", "AR-0872", "AR-0873", "AR-0874", "AR-1170", "AR-1180"],
   "id": "AR-0809",
-  "next_action": "Write and validate task-oriented workflows for the standalone terminal frontend.",
+  "next_action": "Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes.",
   "owner": "",
   "plan": "../plans/AR-0809.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "planned",
   "summary": "Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Publish terminal frontend workflow guides",
-  "updated_at": "2026-09-10T19:20:00+00:00",
+  "updated_at": "2026-09-13T17:05:57+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-frontend-workflow-guides"
 }
 ---

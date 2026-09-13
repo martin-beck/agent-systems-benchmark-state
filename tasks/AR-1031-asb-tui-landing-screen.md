@@ -3,18 +3,18 @@
   "branch": "feature/tui-landing-screen",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-0875", "AR-1025", "AR-1033"],
+  "depends_on": ["AR-0875", "AR-1025", "AR-1033", "AR-1170"],
   "id": "AR-1031",
-  "next_action": "Implement the standalone landing screen after the application shell and visual system are integrated.",
+  "next_action": "Implement the landing screen after the shell, visual system and first-run wizard expose stable typed routes.",
   "owner": "",
   "plan": "../plans/AR-1031.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "planned",
   "summary": "Add a state-aware landing screen with primary journeys and bounded recent activity.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Build the standalone TUI landing screen",
-  "updated_at": "2026-09-11T04:12:48+00:00",
+  "updated_at": "2026-09-13T17:05:57+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-landing-screen"
 }
 ---

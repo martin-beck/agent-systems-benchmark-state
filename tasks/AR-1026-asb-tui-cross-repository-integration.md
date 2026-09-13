@@ -3,7 +3,7 @@
   "branch": "test/asb-tui-cross-repository-integration",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1011", "AR-1024", "AR-1025", "AR-1029"],
+  "depends_on": ["AR-1011", "AR-1024", "AR-1025", "AR-1029", "AR-1170"],
   "id": "AR-1026",
   "next_action": "Wait for AR-1024, AR-1025, AR-1029 and the complete standalone UI integration AR-1011, then qualify exact install, update, rollback, launch, remove and benchmark-continuity paths across both repositories.",
   "owner": "",
@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Integrate and adversarially test the exact ASB and asb-tui revisions together.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Qualify cross-repository ASB and asb-tui integration",
-  "updated_at": "2026-09-10T19:20:00+00:00",
+  "updated_at": "2026-09-13T17:05:57+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-cross-repository-integration"
 }
 ---

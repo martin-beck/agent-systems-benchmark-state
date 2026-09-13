@@ -3,18 +3,18 @@
   "branch": "feature/tui-reports-compare",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-0875", "AR-1025", "AR-1033"],
+  "depends_on": ["AR-0875", "AR-1025", "AR-1033", "AR-1170"],
   "id": "AR-1035",
-  "next_action": "Implement recent-runs, report and comparison screens from the published ASB history/analysis contract.",
+  "next_action": "Implement report and comparison screens after recording workflows publish stable live and strict-replay source labels.",
   "owner": "",
   "plan": "../plans/AR-1035.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "planned",
   "summary": "Add searchable recent runs, report inspection and evidence-qualified comparison workspaces.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Build recent-runs, report and comparison workspaces",
-  "updated_at": "2026-09-11T04:12:48+00:00",
+  "updated_at": "2026-09-13T17:05:57+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-reports-compare"
 }
 ---

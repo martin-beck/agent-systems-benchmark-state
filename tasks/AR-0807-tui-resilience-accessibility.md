@@ -10,19 +10,20 @@
     "AR-0806",
     "AR-0812",
     "AR-1011",
-    "AR-1026"
+    "AR-1026",
+    "AR-1170"
   ],
   "id": "AR-0807",
-  "next_action": "Independently qualify terminal UX, accessibility, isolation, packaging, and failure recovery.",
+  "next_action": "Independently qualify terminal UX, accessibility, isolation, packaging and recovery after the complete standalone wizard passes focused assurance.",
   "owner": "",
   "plan": "../plans/AR-0807.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "planned",
   "summary": "Qualify the standalone TUI across terminals and platforms without perturbing benchmark results.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Qualify terminal frontend usability and isolation",
-  "updated_at": "2026-09-10T21:04:37+00:00",
+  "updated_at": "2026-09-13T17:05:57+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-resilience-accessibility"
 }
 ---

@@ -5,7 +5,8 @@
   "claim_expires": "",
   "depends_on": [
     "AR-0807",
-    "AR-0872"
+    "AR-0872",
+    "AR-1170"
   ],
   "id": "AR-0873",
   "next_action": "Generate privacy-safe asb-tui workflow screenshots from real synthetic CI executions.",
@@ -15,9 +16,9 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Produce reproducible standalone TUI screenshots and text equivalents from workflows executed in CI.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Generate asb-tui CI workflow screenshots",
-  "updated_at": "2026-09-10T19:20:00+00:00",
+  "updated_at": "2026-09-13T17:05:57+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ci-workflow-captures"
 }
 ---

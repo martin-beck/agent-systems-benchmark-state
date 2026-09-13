@@ -3,7 +3,7 @@
   "branch": "feature/tui-contextual-help",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1014", "AR-1031", "AR-1034", "AR-1035"],
+  "depends_on": ["AR-1014", "AR-1031", "AR-1034", "AR-1035", "AR-1170"],
   "id": "AR-1032",
   "next_action": "Add the contextual action registry, search field, fitted hotkey window and complete help coverage after the user-facing screens exist.",
   "owner": "",
@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Provide a context-fitted hotkey window, global action search and mechanically complete help.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Add contextual hotkeys and complete action help",
-  "updated_at": "2026-09-10T21:04:37+00:00",
+  "updated_at": "2026-09-13T17:05:57+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-contextual-help"
 }
 ---

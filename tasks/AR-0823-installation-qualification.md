@@ -3,7 +3,7 @@
   "branch": "audit/installation-experience",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-0807", "AR-0821", "AR-0822", "AR-1012", "AR-1026"],
+  "depends_on": ["AR-0807", "AR-0821", "AR-0822", "AR-1012", "AR-1026", "AR-1140", "AR-1170"],
   "id": "AR-0823",
   "next_action": "Independently attack and usability-test first install, onboarding, upgrade, rollback, repair, and uninstall.",
   "owner": "",
@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "planned",
   "summary": "Qualify the one-line experience and complete install lifecycle across the supported native matrix.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Audit installation and first-run experience",
-  "updated_at": "2026-09-10T19:00:00+00:00",
+  "updated_at": "2026-09-13T17:05:57+00:00",
   "worktree_key": "agent-systems-benchmark-install-audit"
 }
 ---

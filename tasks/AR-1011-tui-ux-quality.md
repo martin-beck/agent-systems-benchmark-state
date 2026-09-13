@@ -3,24 +3,27 @@
   "branch": "feature/tui-ux-quality",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-0870", "AR-0871", "AR-1010", "AR-1014", "AR-1031", "AR-1032", "AR-1033", "AR-1034", "AR-1035"],
+  "depends_on": ["AR-0870", "AR-0871", "AR-1010", "AR-1014", "AR-1031", "AR-1032", "AR-1033", "AR-1034", "AR-1035", "AR-1170"],
   "id": "AR-1011",
-  "next_action": "Integrate and qualify AR-1014 and AR-1031 through AR-1035, closing only cross-screen navigation, accessibility and usability defects after their focused implementations complete.",
+  "next_action": "Integrate AR-1014, AR-1031 through AR-1035 and AR-1170 after the focused standalone wizard journeys complete.",
   "owner": "",
   "plan": "../plans/AR-1011.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "planned",
   "summary": "Deliver an easy, discoverable, keyboard-first TUI experience for setup and benchmark analysis.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Deliver TUI UX quality features",
-  "updated_at": "2026-09-11T04:12:48+00:00",
+  "updated_at": "2026-09-13T17:05:57+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ux-quality"
 }
 ---
 ## AR-1011
 
 Deliver the high-value usability features on top of the adopted TUI foundation.
+
+- 2026-09-13T17:05:57+00:00: Added AR-1170 as the focused setup, recording, run and analysis
+  journey dependency; AR-1011 remains the final cross-screen UX integration owner.
 
 Implementation has not started. Read the linked plan before claiming.
 
