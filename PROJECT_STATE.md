@@ -3,7 +3,7 @@
 Generated from local Git and GitHub. Do not edit.
 
 - Product remote main: `ec0c7a3d47ca3b8a4dabceab74b4400177f53d11`
-- Local origin/main: `d450945a79407c4e5bcd9da3f0d8902583f7deb1`
+- Local origin/main: `ec0c7a3d47ca3b8a4dabceab74b4400177f53d11`
 - Primary worktree head: `bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09`
 
 ## Open pull requests
@@ -30,10 +30,10 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 34778528119 | `ec0c7a3d47ca` | push | Emulated aarch64 portability | in_progress:- |
 | 34778528082 | `ec0c7a3d47ca` | push | Formal assurance | in_progress:- |
-| 34778528052 | `ec0c7a3d47ca` | push | Hosted portability and native qualification | in_progress:- |
+| 34778528052 | `ec0c7a3d47ca` | push | Hosted portability and native qualification | completed:success |
 | 34778528037 | `ec0c7a3d47ca` | push | Rust verification | in_progress:- |
-| 34778528035 | `ec0c7a3d47ca` | push | Fault assurance | in_progress:- |
-| 34778528023 | `ec0c7a3d47ca` | push | Repository quality | queued:- |
+| 34778528035 | `ec0c7a3d47ca` | push | Fault assurance | completed:success |
+| 34778528023 | `ec0c7a3d47ca` | push | Repository quality | completed:failure |
 | 34778528015 | `ec0c7a3d47ca` | push | Huawei MIT source headers | completed:success |
 | 34778227780 | `0164aea25afb` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 34778227758 | `0164aea25afb` | pull_request | Hosted portability and native qualification | completed:success |
