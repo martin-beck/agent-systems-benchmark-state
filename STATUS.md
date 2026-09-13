@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**236 ARs tracked** across 6 active status categories.
+**237 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 21 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
-| **Planned** | Defined work awaiting promotion or dependencies | 64 |
+| **Planned** | Defined work awaiting promotion or dependencies | 65 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 144 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -297,6 +297,7 @@ flowchart LR
         AR_1160["AR-1160 - Planned"]:::status_planned
         AR_1170["AR-1170 - Planned"]:::status_planned
         AR_1180["AR-1180 - Planned"]:::status_planned
+        AR_1181["AR-1181 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1256,6 +1257,7 @@ flowchart LR
 | [AR-1160](tasks/AR-1160.md) | [AR-1060](tasks/AR-1060-authenticated-control-endpoint-handoff.md), [AR-1151](tasks/AR-1151.md) | [AR-1034](tasks/AR-1034-asb-tui-configuration-center.md), [AR-1170](tasks/AR-1170.md) |
 | [AR-1170](tasks/AR-1170.md) | [AR-1034](tasks/AR-1034-asb-tui-configuration-center.md), [AR-1160](tasks/AR-1160.md) | [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0809](tasks/AR-0809-frontend-workflow-guides.md), [AR-0823](tasks/AR-0823-installation-qualification.md), [AR-0873](tasks/AR-0873-ci-workflow-captures.md), [AR-1011](tasks/AR-1011-tui-ux-quality.md), [AR-1026](tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1031](tasks/AR-1031-asb-tui-landing-screen.md), [AR-1032](tasks/AR-1032-asb-tui-contextual-help.md), [AR-1035](tasks/AR-1035-asb-tui-reports-compare.md), [AR-1180](tasks/AR-1180.md) |
 | [AR-1180](tasks/AR-1180.md) | [AR-1026](tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1140](tasks/AR-1140.md), [AR-1170](tasks/AR-1170.md) | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md) |
+| [AR-1181](tasks/AR-1181.md) | None | None |
 
 ## Complete AR inventory
 
@@ -1301,7 +1303,7 @@ flowchart LR
 | P1 | [AR-0890](tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Unclaimed | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. |
 | P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Unclaimed | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun failed Repository quality workflow 34339927858 on unchanged main; if failure repeats, isolate and repair test-state ownership before any feature work. |
 
-### Planned (64)
+### Planned (65)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1331,6 +1333,7 @@ flowchart LR
 | P0 | [AR-1160](tasks/AR-1160.md): Wizard control API | Unclaimed | Expose wizard operations. | Read the plan. |
 | P0 | [AR-1170](tasks/AR-1170.md): Standalone TUI wizard | Unclaimed | Guide TUI setup through analysis. | Read the plan. |
 | P0 | [AR-1180](tasks/AR-1180.md): Cross-project wizard qualification | Unclaimed | Qualify the complete wizard. | Read the plan. |
+| P0 | [AR-1181](tasks/AR-1181.md): Bounded TLA+ execution and admission safety | Unclaimed | Prevent ASB state formal jobs from exhausting shared host memory. | Define and implement bounded handoffctl TLC invocation and host-admission integration without interrupting active coordination. |
 | P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Build the CSB-to-ASB signal inventory and native x86_64 causal A/B matrix; run applicable pinned QEMU AArch64 portability checks and document native ARM64 as optional future evidence. |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
@@ -1478,7 +1481,7 @@ flowchart LR
 | P1 | [AR-0851](tasks/AR-0851-shared-workflow-coordinator.md): Adopt shared workflow coordinator | Unclaimed | Adopt the canonical coordinator as a pinned offline-capable vendor artifact while preserving ASB extensions. | Rebase the immutable v0.1.3 integration tree onto current state main under coordinator serialization, rerun exact-tree gates, and present a signed review candidate; do not publish or merge before review. |
 | P1 | [AR-0852](tasks/AR-0852-coordinator-path-isolation.md): Adopt coordinator path isolation fix | Unclaimed | Adopt the path-exclusive coordinator commit fix discovered during live integration. | Preserve merged v0.1.4 effect e52ce3aa without history rewrite; complete a focused signed+DCO repair or documented signed state replacement under AR-0853, then re-audit live main before releasing AR-0852. |
 | P1 | [AR-0854](tasks/AR-0854-coordinator-v020-upgrade.md): Upgrade shared workflow coordinator to v0.2.0 | Unclaimed | Adopt coordinator v0.2.0 concurrency, recovery, durable-run, replica, and vendor hardening. | Promote and claim the upgrade, vendor signed v0.2.0 in an isolated worktree, and publish only after exact-head gates pass. |
-| P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | Unclaimed | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Wait for a corrected immutable agent-workflow-coordinator v0.3.3+ release whose privacy exemption admits the legitimate session-like UUID fixture in vendored tests/test_sqlite_storage.py; then re-sync from a clean verified tag and continue state-owned header/checker/CI work without patching vendor. |
+| P1 | [AR-0855](tasks/AR-0855-huawei-mit-license-headers.md): Enforce Huawei MIT source headers | Unclaimed | Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files. | Complete; no further action. |
 | P1 | [AR-0857](tasks/AR-0857-openjiuwen-provenance.md): Pin OpenJiuwen source, package, and license provenance | Unclaimed | Pin OpenJiuwen source, package, and license provenance. | Integrate signed no-ff PR #97 onto current main, then run and verify all exact-main post-merge workflows before release. |
 | P1 | [AR-0858](tasks/AR-0858-openjiuwen-adapter.md): Implement the OpenJiuwen contract and capability adapter | Unclaimed | Implement the OpenJiuwen contract and capability adapter. | Monitor all required post-merge CI runs for exact main 096dc4f275c05ad81772f443b6f22dddfb92da3d; release only after every required gate is green. |
 | P1 | [AR-0869](tasks/AR-0869-cli-multi-agent-provider-selection.md): Add CLI multi-agent provider selection | Unclaimed | Select several agents and apply one preconfigured provider profile through inspectable command-line options. | Create a signed+DCO empty CI-provenance attestation atop repaired main a3696385be31c4ab86f6fb75cfa055ff6b098574, push normally, and require fresh exact-main post-merge workflows on that reachable base; preserve older historical merge-boundary limitations. |

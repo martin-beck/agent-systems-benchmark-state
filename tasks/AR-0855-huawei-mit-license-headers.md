@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-0855",
-  "next_action": "Wait for a corrected immutable agent-workflow-coordinator v0.3.3+ release whose privacy exemption admits the legitimate session-like UUID fixture in vendored tests/test_sqlite_storage.py; then re-sync from a clean verified tag and continue state-owned header/checker/CI work without patching vendor.",
+  "next_action": "Complete; no further action.",
   "observed_branch": "fix/huawei-mit-license-headers",
   "observed_dirty": 0,
   "observed_head": "7add29f1d24ce3a74b9cca2e2f1fb29fa45cddd6",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "done",
   "summary": "Enforce exact Huawei 2026 copyright and SPDX MIT headers across first-party product and state source files.",
-  "task_revision": 293,
+  "task_revision": 294,
   "title": "Enforce Huawei MIT source headers",
-  "updated_at": "2026-09-09T01:33:59+00:00",
+  "updated_at": "2026-09-13T19:31:51+00:00",
   "worktree_key": "agent-systems-benchmark-huawei-mit-headers"
 }
 ---
@@ -860,3 +860,6 @@ and fresh coordinator snapshot before claiming. Do not modify vendored coordinat
   was independently approved and merged by signed+DCO no-ff commit 06b9a320; exact-main header,
   coordination, and formal workflows passed, including formal run 34299082203. Fresh
   vendor/header/doctor checks pass.
+
+- 2026-09-13T19:31:51+00:00: Compacted the stale vendor-wait next action after completed acceptance;
+  no status or evidence boundary changed.
