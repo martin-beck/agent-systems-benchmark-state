@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Add authenticated control endpoint handoff",
-  "updated_at": "2026-09-13T17:37:21+00:00",
+  "updated_at": "2026-09-13T17:46:20+00:00",
   "worktree_key": "agent-systems-benchmark-authenticated-control-endpoint-handoff"
 }
 ---
@@ -242,3 +242,6 @@ planned until their full dependency sets are done.
   configuration and hostile integration coverage. Exact Rust 1.93 formatting, Clippy for
   asb-control/asb-cli all targets, and both packages' complete test/doc-test suites passed; worktree
   is clean.
+
+- 2026-09-13T17:46:20+00:00: Recorded command exit 101; command argv SHA-256
+  28d1d99fa69694b824562aeafa2673c952a2532e8435abb81363ff5e18ea4d12.
