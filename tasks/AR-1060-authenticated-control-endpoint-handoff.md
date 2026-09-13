@@ -10,7 +10,7 @@
   "id": "AR-1060",
   "next_action": "Obtain immutable review of the frozen SOCK_SEQPACKET framing, then implement only the ASB authenticated-generation producer and broker state machine; keep launch and consumer behavior in AR-1024/1025.",
   "observed_branch": "feature/authenticated-control-endpoint-handoff",
-  "observed_dirty": 3,
+  "observed_dirty": 4,
   "observed_head": "0f449e1603b81942124cd67566f8a8a13c5ecd8f",
   "owner": "codex-ar1060-endpoint-recovery-20260913",
   "plan": "../plans/AR-1060.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Add authenticated control endpoint handoff",
-  "updated_at": "2026-09-13T17:30:59+00:00",
+  "updated_at": "2026-09-13T17:31:05+00:00",
   "worktree_key": "agent-systems-benchmark-authenticated-control-endpoint-handoff"
 }
 ---
