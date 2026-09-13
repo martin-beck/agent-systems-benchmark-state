@@ -9,7 +9,7 @@
     "AR-0803"
   ],
   "id": "AR-0804",
-  "next_action": "Monitor exact-main d51ee9c postmerge runs: Rust 34246605181, quality 34246605294, emulated-aarch64 34246605130, fault 34246605182, formal 34246605248. After all terminal success, run focused local verification and state doctor, then release with unsupported launch/transport/full-screen limits.",
+  "next_action": "Complete; no further action.",
   "observed_branch": "feature/tui-settings-wizard",
   "observed_dirty": 0,
   "observed_head": "8f7152c525daf0b8dd61961c780848ed7a8bf979",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "done",
   "summary": "Guide users through agents, providers, workloads, resources, replay, metrics, and output settings.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Build the terminal settings wizard",
-  "updated_at": "2026-09-08T15:51:33+00:00",
+  "updated_at": "2026-09-13T20:08:42+00:00",
   "worktree_key": "agent-systems-benchmark-tui-settings-wizard"
 }
 ---
@@ -176,3 +176,6 @@ Implementation has not started. Read the linked plan before claiming.
   snapshot, reconcile, live doctor pass. Proven: capability-driven settings, keyboard
   navigation/search, privacy-safe plain snapshots, bounded import/export, validation and explicit
   plan creation. Unsupported follow-ups: run launch, transport wiring, full-screen rendering.
+
+- 2026-09-13T20:08:42+00:00: Compacted stale post-merge monitoring instructions after completed
+  acceptance to preserve bounded generated-state capacity; no status or evidence boundary changed.
