@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1046.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "superseded",
   "summary": "Make the emulated AArch64 asb-agents fake-node readiness fixtures deterministic without changing production semantics.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Serialize emulated AArch64 agent tests",
-  "updated_at": "2026-09-13T19:36:55+00:00",
+  "updated_at": "2026-09-13T19:36:58+00:00",
   "worktree_key": "agent-systems-benchmark-emulated-aarch64-agent-serialization"
 }
 ---
@@ -182,3 +182,7 @@ existing skip and all budgets; do not change Rust production code or any UI/TUI 
   unmerged after emulated AArch64 run 34552034116 reproduced HookUnavailable despite serialization.
   AR-1047 identified and repaired the marker-appearance race and merged as
   92cf2c84778147f9c48498656f0b4a614a4067d6; do not republish AR-1046.
+
+- 2026-09-13T19:36:58+00:00: Superseded by completed AR-1047: PR #138/run 34552034116 disproved test
+  serialization, while AR-1047 merged the actual marker-appearance race fix. Preserve the closed
+  branch only as negative evidence.

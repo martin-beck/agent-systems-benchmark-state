@@ -5,18 +5,18 @@
 
 ## Portfolio overview
 
-**237 ARs tracked** across 6 active status categories.
+**237 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 22 |
+| **Open** | Dependency-ready and available to claim | 21 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 64 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 144 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
-| **Superseded** | Replaced by another AR | 0 |
+| **Superseded** | Replaced by another AR | 1 |
 
 ## Dependency graph
 
@@ -267,7 +267,7 @@ flowchart LR
         AR_1043["AR-1043 - Done"]:::status_done
         AR_1044["AR-1044 - Open"]:::status_open
         AR_1045["AR-1045 - Done"]:::status_done
-        AR_1046["AR-1046 - Open"]:::status_open
+        AR_1046["AR-1046 - Superseded"]:::status_superseded
         AR_1047["AR-1047 - Done"]:::status_done
         AR_1048["AR-1048 - Open"]:::status_open
         AR_1049["AR-1049 - Open"]:::status_open
@@ -1267,7 +1267,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1060](tasks/AR-1060-authenticated-control-endpoint-handoff.md): Add authenticated control endpoint handoff | codex-ar1060-merge-20260913 | Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths. | Recover PR #152 publication provenance with a verifiably signed, DCO-compliant protected merge for reviewed tree 36f21d9bfca9d3afde9514348c89d2ab884ebefc; rerun exact-main policy/DCO and full gates before releasing AR-1060 to AR-1024. No history rewrite, policy weakening, or UI work. |
 
-### Open (22)
+### Open (21)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1279,7 +1279,6 @@ flowchart LR
 | P0 | [AR-1041](tasks/AR-1041-gemini-hook-readiness-race.md): Make Gemini hook readiness publication atomic | Unclaimed | Eliminate the load-sensitive Gemini hook readiness race without weakening validation. | Monitor all 12 checks on draft PR #136 exact head 55648d5a29f4c29e9525eb7f2a890ac5232d7b5a; if terminal green, release OPEN for protected merge decision; do not self-merge. |
 | P0 | [AR-1042](tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Unclaimed | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. |
 | P0 | [AR-1044](tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Unclaimed | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. |
-| P0 | [AR-1046](tasks/AR-1046-serialize-emulated-aarch64-agent-tests.md): Serialize emulated AArch64 agent tests | Unclaimed | Make the emulated AArch64 asb-agents fake-node readiness fixtures deterministic without changing production semantics. | No further action: AR-1047 superseded the disproven serialization hypothesis. |
 | P0 | [AR-1048](tasks/AR-1048-tmux-window-option-portability.md): Make tmux window-option setup portable | Unclaimed | Use an explicit tmux window-option command so trusted-main terminal qualification is portable. | Remain OPEN pending AR-1049 exact created-window identity recovery and a green trusted-main rerun. |
 | P0 | [AR-1049](tasks/AR-1049-tmux-created-window-identity.md): Bind tmux setup to its created window | Unclaimed | Bind tmux remain-on-exit setup to the exact created window identity instead of a fixed index. | Remain OPEN pending a narrow bounded tmux startup-readiness recovery and a green trusted-main rerun. |
 | P0 | [AR-1050](tasks/AR-1050-tmux-authenticated-startup-readiness.md): Acquire authenticated tmux startup readiness | Unclaimed | Wait for bounded stable authenticated tmux server, session and window readiness after detached creation. | Publish approved exact head 46145ad63af61d0b6f4549f06c001f33d60f02c1, open PR, require exact-head CI, then merge and run trusted-main qualification only if all green. |
@@ -1527,3 +1526,9 @@ flowchart LR
 | P2 | [AR-1021](tasks/AR-1021-asb-tui-release-promotion.md): Audit and promote the asb-tui release channel | Unclaimed | Audit and promote asb-tui from optional extension to verified release when eligible. | Review exact-head PR 8 hosted evidence, merge without weakening permanent protections, then obtain exact-main hosted and trusted local evidence. |
 | P3 | [AR-0404](tasks/AR-0404-extended-workloads.md): Expand established benchmark catalogue | Unclaimed | Evaluate SWE-bench Pro, BigCodeBench, EvalPlus and LiveCodeBench as optional suites. | Add signed normal follow-up after rewritten merge so push range is resolvable; rerun exact-main post-merge workflows. |
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Monitor all required post-merge CI runs for exact main ca6e75916a8c9831b9107377cd48d731463c272a; release only after every required gate is green. |
+
+### Superseded (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1046](tasks/AR-1046-serialize-emulated-aarch64-agent-tests.md): Serialize emulated AArch64 agent tests | Unclaimed | Make the emulated AArch64 asb-agents fake-node readiness fixtures deterministic without changing production semantics. | No further action: AR-1047 superseded the disproven serialization hypothesis. |
