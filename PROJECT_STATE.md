@@ -23,20 +23,21 @@ Generated from local Git and GitHub. Do not edit.
 | #149 | `dependabot/cargo/url-2.5.8@f7edfbbd0e98` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump url from 2.5.7 to 2.5.8 |
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
 | #151 | `dependabot/cargo/serde-1.0.229@de7a00922c14` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
+| #153 | `recovery/ar-1060-merge-attestation@0164aea25afb` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | AR-1060: attest the immutable reviewed merge tree |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34778227780 | `0164aea25afb` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 34778227758 | `0164aea25afb` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 34778227757 | `0164aea25afb` | pull_request | Fault assurance | queued:- |
+| 34778227750 | `0164aea25afb` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 34778227743 | `0164aea25afb` | pull_request | Formal assurance | queued:- |
+| 34778227741 | `0164aea25afb` | pull_request | Huawei MIT source headers | in_progress:- |
+| 34778227733 | `0164aea25afb` | pull_request | Repository quality | in_progress:- |
+| 34778227732 | `0164aea25afb` | pull_request | Rust verification | in_progress:- |
 | 34777361198 | `de7a00922c14` | pull_request | Rust verification | completed:failure |
 | 34777361171 | `de7a00922c14` | pull_request | Repository quality | completed:failure |
 | 34777361152 | `de7a00922c14` | pull_request | Formal assurance | completed:failure |
 | 34777361146 | `de7a00922c14` | pull_request | Emulated aarch64 portability | completed:success |
-| 34777361145 | `de7a00922c14` | pull_request | Hosted portability and native qualification | completed:success |
-| 34777361140 | `de7a00922c14` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 34777361139 | `de7a00922c14` | pull_request | Huawei MIT source headers | completed:success |
-| 34777361138 | `de7a00922c14` | pull_request | Fault assurance | completed:failure |
-| 34777313289 | `d450945a7940` | dynamic | Dependabot Updates | completed:success |
-| 34777257620 | `d450945a7940` | push | Emulated aarch64 portability | completed:success |
-| 34777257618 | `d450945a7940` | push | Fault assurance | completed:success |
-| 34777257602 | `d450945a7940` | push | Hosted portability and native qualification | completed:success |
