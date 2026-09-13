@@ -19,8 +19,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-agent-runtime-bundles` | `feature/agent-runtime-bundles` | `1249fd87d46d` | 0 | behind 236, ahead 0 |
 | `agent-systems-benchmark-aider-deterministic-replay` | `fix/aider-deterministic-replay` | `87a22654913a` | 0 | behind 269, ahead 0 |
 | `agent-systems-benchmark-all-agents-provider` | `feature/all-agents-provider` | `03962f28571e` | 0 | behind 232, ahead 0 |
-| `agent-systems-benchmark-ar-1100` | `feature/ar-1100` | `d450945a7940` | 3 | behind 2, ahead 0 |
-| changed files | - | - | - | `Cargo.lock`, `Cargo.toml`, `crates/asb-config/` |
+| `agent-systems-benchmark-ar-1100` | `feature/ar-1100` | `38c039975077` | 0 | behind 2, ahead 1 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 176, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 279, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 173, ahead 0 |
