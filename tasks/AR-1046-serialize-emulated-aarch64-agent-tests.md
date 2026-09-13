@@ -5,7 +5,7 @@
   "claim_expires": "",
   "depends_on": [],
   "id": "AR-1046",
-  "next_action": "Await immutable review of exact signed head 9d923c103d1527ab76c702321e2db7c8e3d55d7c/tree c793aacc37facf556d879831584db68ba93e56d4; do not publish PR until review approval.",
+  "next_action": "No further action: AR-1047 superseded the disproven serialization hypothesis.",
   "observed_branch": "test/serialize-emulated-aarch64-agents",
   "observed_dirty": 0,
   "observed_head": "88f4fce68eabc7481d4fb9d35b064ebba32188ba",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "open",
   "summary": "Make the emulated AArch64 asb-agents fake-node readiness fixtures deterministic without changing production semantics.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Serialize emulated AArch64 agent tests",
-  "updated_at": "2026-09-11T01:58:59+00:00",
+  "updated_at": "2026-09-13T19:36:55+00:00",
   "worktree_key": "agent-systems-benchmark-emulated-aarch64-agent-serialization"
 }
 ---
@@ -177,3 +177,8 @@ existing skip and all budgets; do not change Rust production code or any UI/TUI 
   O_NOFOLLOW open ENOENT and fallback lstat, which current code incorrectly marks Invalid. AR-1047
   plan/task committed at fc607d8a6; await approval, then implement the deterministic marker
   interleaving repair. Preserve AR-1046 branch only as negative evidence.
+
+- 2026-09-13T19:36:55+00:00: PR #138 exact head 9d923c103d1527ab76c702321e2db7c8e3d55d7c remained
+  unmerged after emulated AArch64 run 34552034116 reproduced HookUnavailable despite serialization.
+  AR-1047 identified and repaired the marker-appearance race and merged as
+  92cf2c84778147f9c48498656f0b4a614a4067d6; do not republish AR-1046.
