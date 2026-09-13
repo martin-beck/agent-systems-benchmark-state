@@ -8,7 +8,7 @@
     "AR-1023"
   ],
   "id": "AR-1060",
-  "next_action": "Push exact signed head f34e4f57e1419bbe9783798bf15fe9c930bffa09, open a focused PR, require exact-head CI and protected merge plus exact-main verification, then release AR-1060 and hand the verified provisioning contract to AR-1024; no UI work.",
+  "next_action": "Recover PR #152 publication provenance: produce a protected merge commit for reviewed tree 36f21d9bfca9d3afde9514348c89d2ab884ebefc with a verifiable signature and DCO trailer, then rerun exact-main gates before releasing AR-1060 to AR-1024; no UI work.",
   "observed_branch": "feature/authenticated-control-endpoint-handoff",
   "observed_dirty": 0,
   "observed_head": "f34e4f57e1419bbe9783798bf15fe9c930bffa09",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths.",
-  "task_revision": 149,
+  "task_revision": 150,
   "title": "Add authenticated control endpoint handoff",
-  "updated_at": "2026-09-13T19:17:50+00:00",
+  "updated_at": "2026-09-13T19:19:00+00:00",
   "worktree_key": "agent-systems-benchmark-authenticated-control-endpoint-handoff"
 }
 ---
@@ -460,3 +460,9 @@ planned until their full dependency sets are done.
 
 - 2026-09-13T19:17:50+00:00: Recorded command exit 0; command argv SHA-256
   a7e3ce5d56476861d2b31606ca6f2515af3c1b8ce2f672323a78658fbac4fd62.
+
+- 2026-09-13T19:19:00+00:00: PR #152 merged as d450945a with tree
+  36f21d9bfca9d3afde9514348c89d2ab884ebefc, exactly matching independently reviewed signed head
+  f34e4f57e1419bbe9783798bf15fe9c930bffa09: content identity PASS. Publication provenance FAIL:
+  GitHub reports merge signature status E and the merge body lacks Signed-off-by. Keep AR-1060 in
+  progress pending signed/DCO merge recovery and exact-main requalification.
