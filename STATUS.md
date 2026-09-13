@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 21 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 22 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 63 |
 | **Future** | Deferred roadmap work | 1 |
@@ -287,7 +287,7 @@ flowchart LR
     end
     subgraph series_11["11 - Additional work"]
         direction TB
-        AR_1100["AR-1100 - In progress"]:::status_in_progress
+        AR_1100["AR-1100 - Open"]:::status_open
         AR_1110["AR-1110 - Planned"]:::status_planned
         AR_1120["AR-1120 - Planned"]:::status_planned
         AR_1130["AR-1130 - Planned"]:::status_planned
@@ -1261,14 +1261,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1060](tasks/AR-1060-authenticated-control-endpoint-handoff.md): Add authenticated control endpoint handoff | codex-ar1060-merge-20260913 | Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths. | Stop descendant recovery: every commit atop ec0c7a3 retains the invalid merge in its policy range. Escalate for an authorized repository-level recovery that neither rewrites history nor weakens signature/DCO policy; keep AR-1060 and AR-1024 blocked. No UI work. |
-| P0 | [AR-1100](tasks/AR-1100.md): Configuration defaults | codex-asb-config-defaults-20260913 | Persist configuration defaults. | PR #154 exact head 38c0399 is under review; platform evidence fails inherited immutable-source check against base ec0c7a3. Do not merge until all checks and base policy are green. |
 
-### Open (21)
+### Open (22)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1288,6 +1287,7 @@ flowchart LR
 | P0 | [AR-1056](tasks/AR-1056-tmux-socket-connect-diagnostics.md): Diagnose tmux socket connection stage | Unclaimed | Diagnose and repair the remaining trusted tmux socket connection-stage failure. | Publish approved exact diagnostic head dd0555208a1631018e91149a9f94f3bdc65b7da5, require exact-head CI, merge exact tree, then use trusted-main closed stage only to select repair. |
 | P0 | [AR-1058](tasks/AR-1058-tmux-startup-observation-diagnostics.md): Diagnose tmux startup observation | Unclaimed | Diagnose and repair the remaining trusted tmux stable-startup observation failure. | Wait for AR-1062 to preserve the hidden nested server stage and symbolic socket-error class, then require green exact-main terminal qualification. |
 | P0 | [AR-1061](tasks/AR-1061-isolate-concurrent-tmux-fixtures.md): Isolate concurrent trusted tmux fixtures | Unclaimed | Diagnose and isolate concurrent trusted tmux fixture contention. | Wait for AR-1062 to expose the nested trusted server/connect failure and select a bounded repair; fixture contention was falsified. |
+| P0 | [AR-1100](tasks/AR-1100.md): Configuration defaults | Unclaimed | Persist configuration defaults. | PR #154 exact head 38c0399 is under review; platform evidence fails inherited immutable-source check against base ec0c7a3. Do not merge until all checks and base policy are green. |
 | P0 | [AR-1181](tasks/AR-1181.md): TLA admission | Unclaimed | Bound ASB TLC memory. | Implement bounded TLC admission. |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | Repair/rebase the fail-closed TLA provenance pin, then rerun PR #119 exact-head CI; do not merge. |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Unclaimed | Qualify pinned OpenJiuwen live execution. | Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI. |
