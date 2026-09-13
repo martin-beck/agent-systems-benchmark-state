@@ -20,7 +20,7 @@
     "AR-0505"
   ],
   "id": "AR-0315",
-  "next_action": "Monitor all five exact-main postmerge workflows for signed+DCO merge b2707c482876dcfb42c756c39165f6ecdb5c7c10; after terminal success run local exact-main focused verification plus reconcile/snapshot/live doctor, then release AR-0315 with evidence limits.",
+  "next_action": "Complete; no further action.",
   "observed_branch": "test/provider-parity-conformance",
   "observed_dirty": 0,
   "observed_head": "7a5332dd3d0329343cf27b2433818b749bfdd355",
@@ -30,9 +30,9 @@
   "schema_version": 1,
   "status": "done",
   "summary": "Conformance-test identical OpenAI and Ollama profiles across the complete supported-agent matrix.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Verify cross-agent provider parity",
-  "updated_at": "2026-09-08T16:18:36+00:00",
+  "updated_at": "2026-09-13T20:08:48+00:00",
   "worktree_key": "agent-systems-benchmark-provider-parity-conformance"
 }
 ---
@@ -161,3 +161,6 @@ Implementation has not started. Read the linked plan before claiming.
   conformance; real pinned-agent wire parity, real Ollama model execution, cross-agent
   retry/deadline/cancellation observations, and native distro qualification remain explicitly
   unclaimed.
+
+- 2026-09-13T20:08:48+00:00: Compacted stale post-merge monitoring instructions after completed
+  acceptance to preserve bounded generated-state capacity; no status or evidence boundary changed.
