@@ -32,3 +32,11 @@ The unsigned source commit is `defffe34caf27ac293dee34d12ada5c30a3aea17`; signed
 `6d0fe4b986f23077066c87b5bf019fac5d889c63` attests the same tree but cannot be published because
 its range retains the unsigned parent. Both identify tree `0a84455ca544a68999721e4744dc8c885071154d`
 and are evidence inputs only, never publication authority.
+
+- 2026-09-13T20:05:48+00:00: State PR #20 exact head
+  `a59f00b5224da830b3d744129219734eb8f0842a` is blocked solely by Coordination verification run
+  `34779682318`, step `Verify pinned coordinator release`: `handoffctl_vendor.py verify --target .`
+  reports `vendor digest mismatch: tools/handoffctl.py`. AWQ shadow passed. This mismatch predates
+  AR-1063 and is infrastructure evidence, not permission to edit vendor files, refresh the pin,
+  weaken verification, or merge the PR. Keep PR #20 open pending a separately reviewed coordinator
+  vendor repair.
