@@ -10,7 +10,7 @@
     "AR-0801"
   ],
   "id": "AR-0869",
-  "next_action": "Create a signed+DCO empty CI-provenance attestation atop repaired main a3696385be31c4ab86f6fb75cfa055ff6b098574, push normally, and require fresh exact-main post-merge workflows on that reachable base; preserve older historical merge-boundary limitations.",
+  "next_action": "Complete; no further action.",
   "observed_branch": "feature/cli-multi-agent-provider-selection",
   "observed_dirty": 0,
   "observed_head": "0d9d317716d557b916e4da7022f58197d287987a",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "done",
   "summary": "Select several agents and apply one preconfigured provider profile through inspectable command-line options.",
-  "task_revision": 97,
+  "task_revision": 98,
   "title": "Add CLI multi-agent provider selection",
-  "updated_at": "2026-09-08T22:53:49+00:00",
+  "updated_at": "2026-09-13T20:08:45+00:00",
   "worktree_key": "agent-systems-benchmark-cli-multi-agent-provider-selection"
 }
 ---
@@ -366,3 +366,6 @@ Implementation has not started. Read the linked plan before claiming.
   Local post-merge fmt, workspace tests, Clippy, rustdoc, release build, signature/DCO, repository
   policy, and diff checks passed on the identical tree. Older historical GitHub merge-boundary DCO
   limitations remain explicitly documented; no unrelated history was rewritten.
+
+- 2026-09-13T20:08:45+00:00: Compacted stale attestation instructions after completed acceptance to
+  preserve bounded generated-state capacity; no status or evidence boundary changed.
