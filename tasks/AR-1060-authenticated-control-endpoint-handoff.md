@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths.",
-  "task_revision": 144,
+  "task_revision": 145,
   "title": "Add authenticated control endpoint handoff",
-  "updated_at": "2026-09-13T19:10:10+00:00",
+  "updated_at": "2026-09-13T19:10:18+00:00",
   "worktree_key": "agent-systems-benchmark-authenticated-control-endpoint-handoff"
 }
 ---
@@ -444,3 +444,6 @@ planned until their full dependency sets are done.
   token binding, readiness gating, and backpressure behavior; focused 20/20 and full/formal gates
   are green. Publication remains blocked on remote branch/PR, exact-head hosted CI, protected merge,
   and exact-main verification.
+
+- 2026-09-13T19:10:18+00:00: Recorded command exit 1; command argv SHA-256
+  0352ec5bcb35f4dc852ded5cf55092589c8689ead9297fe78d787cff2cd42ab0.
