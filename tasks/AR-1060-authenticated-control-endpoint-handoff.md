@@ -2,7 +2,7 @@
 {
   "branch": "feature/authenticated-control-endpoint-handoff",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-13T21:17:37+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1022",
     "AR-1023"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/authenticated-control-endpoint-handoff",
   "observed_dirty": 0,
   "observed_head": "f34e4f57e1419bbe9783798bf15fe9c930bffa09",
-  "owner": "codex-ar1060-merge-20260913",
+  "owner": "",
   "plan": "../plans/AR-1060.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths.",
-  "task_revision": 156,
+  "task_revision": 157,
   "title": "Add authenticated control endpoint handoff",
-  "updated_at": "2026-09-13T19:46:18+00:00",
+  "updated_at": "2026-09-13T20:02:23+00:00",
   "worktree_key": "agent-systems-benchmark-authenticated-control-endpoint-handoff"
 }
 ---
@@ -490,3 +490,7 @@ planned until their full dependency sets are done.
   Repository quality run 34778528023 failed. Do not add further descendants: their validation range
   still includes bad ec0c7a3. Preserve history, signature/DCO policy, and the reviewed content
   boundary.
+
+- 2026-09-13T20:02:23+00:00: No worker remains active; descendant recovery is stopped because
+  protected-main merge ec0c7a3 lacks Signed-off-by and all descendants retain that invalid commit in
+  policy range. Requires authorized repository-level recovery without rewrite or policy weakening.
