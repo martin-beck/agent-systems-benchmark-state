@@ -8,7 +8,7 @@
     "AR-1023"
   ],
   "id": "AR-1060",
-  "next_action": "Obtain immutable review of the frozen SOCK_SEQPACKET framing, then implement only the ASB authenticated-generation producer and broker state machine; keep launch and consumer behavior in AR-1024/1025.",
+  "next_action": "Obtain independent immutable review of signed ASB head e55df62c4247ca86b6af863c75e189980fadd9fe, then add the bounded router-side probe/acquisition producer and remaining hostile descriptor, credential, timeout and admission tests without UI work.",
   "observed_branch": "feature/authenticated-control-endpoint-handoff",
   "observed_dirty": 0,
   "observed_head": "e55df62c4247ca86b6af863c75e189980fadd9fe",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Add authenticated control endpoint handoff",
-  "updated_at": "2026-09-13T17:36:52+00:00",
+  "updated_at": "2026-09-13T17:37:21+00:00",
   "worktree_key": "agent-systems-benchmark-authenticated-control-endpoint-handoff"
 }
 ---
@@ -235,3 +235,10 @@ planned until their full dependency sets are done.
 
 - 2026-09-13T17:36:45+00:00: Recorded command exit 0; command argv SHA-256
   d56947531c1511dd5d023654b7c21042ec6a176048fc6a3ca70fb30e2287884a.
+
+- 2026-09-13T17:37:21+00:00: Signed+DCO checkpoint e55df62c4247ca86b6af863c75e189980fadd9fe (tree
+  6d0286dc04a8c90ca042a4903d49f3008790bb2f) adds private seqpacket provisioning, service-created
+  anonymous stream transfer, one shared 16-session admission guard, dual-endpoint service
+  configuration and hostile integration coverage. Exact Rust 1.93 formatting, Clippy for
+  asb-control/asb-cli all targets, and both packages' complete test/doc-test suites passed; worktree
+  is clean.
