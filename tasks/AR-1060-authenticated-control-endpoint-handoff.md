@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths.",
-  "task_revision": 97,
+  "task_revision": 98,
   "title": "Add authenticated control endpoint handoff",
-  "updated_at": "2026-09-13T18:27:55+00:00",
+  "updated_at": "2026-09-13T18:30:07+00:00",
   "worktree_key": "agent-systems-benchmark-authenticated-control-endpoint-handoff"
 }
 ---
@@ -316,3 +316,6 @@ planned until their full dependency sets are done.
   0b16801a3b379d26925ca379d3e3e5e678749d4f1dcd17d409af97bef62c2dfb.
 
 - 2026-09-13T18:27:55+00:00: Heartbeat by codex-ar1060-endpoint-recovery-20260913.
+
+- 2026-09-13T18:30:07+00:00: Recorded command exit 1; command argv SHA-256
+  e38a8f11f9fc192ddc3b99c4f59e5451102d4eaed4ecd51dbab58ae3a93b96e6.
