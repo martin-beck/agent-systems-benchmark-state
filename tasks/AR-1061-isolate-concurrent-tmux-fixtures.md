@@ -12,11 +12,11 @@
   "plan": "../plans/AR-1061.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "superseded",
   "summary": "Diagnose and isolate concurrent trusted tmux fixture contention.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Isolate concurrent trusted tmux fixtures",
-  "updated_at": "2026-09-13T19:58:23+00:00",
+  "updated_at": "2026-09-13T19:58:26+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-live-fixture-isolation"
 }
 ---
@@ -140,3 +140,6 @@ product/UI behavior remain unchanged.
   17f8b3bc26cfa35b1f8ecb8a2e2e5c11d756dae1 as db612b6f; Repository quality passed, but Trusted main
   34567498957 still failed 5/31 and falsified same-process contention. Preserve the negative result;
   AR-1062 superseded it.
+
+- 2026-09-13T19:58:26+00:00: Superseded by AR-1062 after PR #23 proved fixture serialization did not
+  repair Trusted main and exposed nested server/connect diagnostics as the next lane.
