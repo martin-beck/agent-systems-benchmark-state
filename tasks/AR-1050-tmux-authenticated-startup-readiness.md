@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1050.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "superseded",
   "summary": "Wait for bounded stable authenticated tmux server, session and window readiness after detached creation.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Acquire authenticated tmux startup readiness",
-  "updated_at": "2026-09-13T20:00:12+00:00",
+  "updated_at": "2026-09-13T20:00:15+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-authenticated-startup-readiness"
 }
 ---
@@ -273,3 +273,6 @@ server/session/window identity and retained pane authority. Change no renderer o
   46145ad63af61d0b6f4549f06c001f33d60f02c1 as GitHub-verified cb28f246 with reviewed tree b64bd9d1.
   Exact-head and Repository quality passed, but Trusted main 34559774865 failed all five live
   fixtures at tmux_startup_not_ready. AR-1052 superseded this incomplete recovery.
+
+- 2026-09-13T20:00:15+00:00: Superseded by AR-1052 after the provenance-clean PR #17 merge failed
+  required Trusted-main acceptance and localized the next server-authority portability diagnostic.
