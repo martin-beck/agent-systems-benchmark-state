@@ -10,7 +10,7 @@
     "AR-0804"
   ],
   "id": "AR-0805",
-  "next_action": "Fresh independent immutable review of rebased candidate b44282a31e902175059f9fed350ce888cf4b82ec, tree 7a7732eae29be65f55b40ed3b6239533fac470fc, exact parent 32f79101da348896fdf0fd94c07356889a05b693. If approved, guarded force-with-lease update PR #86 and require fresh exact-head CI before merge.",
+  "next_action": "Complete; no further action.",
   "observed_branch": "feature/tui-run-control",
   "observed_dirty": 0,
   "observed_head": "b44282a31e902175059f9fed350ce888cf4b82ec",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "done",
   "summary": "Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI.",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Add terminal run control and status",
-  "updated_at": "2026-09-08T19:53:37+00:00",
+  "updated_at": "2026-09-13T20:02:46+00:00",
   "worktree_key": "agent-systems-benchmark-tui-run-control"
 }
 ---
@@ -465,3 +465,6 @@ Implementation has not started. Read the linked plan before claiming.
   were green before release. Proven scope remains reconnectable terminal control; protocol lacks
   scheduler capacity/deadline/lease/provider-source/metrics/warning availability, and native
   resource behavior, terminal resize, and frontend process separation remain unqualified.
+
+- 2026-09-13T20:02:46+00:00: Compacted stale pre-merge instructions after completed acceptance to
+  preserve bounded generated-state capacity; no status or evidence boundary changed.
