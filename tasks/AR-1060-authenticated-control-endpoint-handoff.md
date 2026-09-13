@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Add authenticated control endpoint handoff",
-  "updated_at": "2026-09-13T17:06:32+00:00",
+  "updated_at": "2026-09-13T17:06:41+00:00",
   "worktree_key": "agent-systems-benchmark-authenticated-control-endpoint-handoff"
 }
 ---
@@ -139,3 +139,6 @@ planned until their full dependency sets are done.
   wrapper binding must be resolved before a fresh claim.
 
 - 2026-09-13T17:06:32+00:00: Claimed by codex-ar1060-endpoint-recovery-20260913.
+
+- 2026-09-13T17:06:41+00:00: Recorded command exit 0; command argv SHA-256
+  a1159e9df3670d549d04524532629f5477ceb7deec9b45e47e8c009506ecb2c8.
