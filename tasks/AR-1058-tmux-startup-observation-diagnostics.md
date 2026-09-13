@@ -3,18 +3,20 @@
   "branch": "fix/tmux-startup-observation-diagnostics",
   "checkpoint_commit": "bd3423d2425a805ec024d980f4a72575b67f0d81",
   "claim_expires": "",
-  "depends_on": ["AR-1062"],
+  "depends_on": [
+    "AR-1062"
+  ],
   "id": "AR-1058",
-  "next_action": "Wait for AR-1062 to preserve the hidden nested server stage and symbolic socket-error class, then require green exact-main terminal qualification.",
+  "next_action": "No further action: AR-1061 superseded this recovery after PR #22 merged and tested the remaining fixture-contention hypothesis.",
   "owner": "",
   "plan": "../plans/AR-1058.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "open",
   "summary": "Diagnose and repair the remaining trusted tmux stable-startup observation failure.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Diagnose tmux startup observation",
-  "updated_at": "2026-09-11T05:54:00+00:00",
+  "updated_at": "2026-09-13T19:58:18+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-startup-observation-diagnostics"
 }
 ---
@@ -167,3 +169,7 @@ dependency, workflow or ASB source change is in scope.
   34565894817 passed. Trusted main 34565894753 remained red, and AR-1061 subsequently falsified
   concurrent live-fixture contention. Leave AR-1058 OPEN awaiting the dependency-ready AR-1062
   nested server/connect diagnostic; do not weaken authentication.
+
+- 2026-09-13T19:58:18+00:00: PR #22 merged exact approved head
+  bd3423d2425a805ec024d980f4a72575b67f0d81 as 69fecc01; Repository quality passed but Trusted main
+  34565894753 stayed red. AR-1061 superseded this incomplete startup-observation recovery.
