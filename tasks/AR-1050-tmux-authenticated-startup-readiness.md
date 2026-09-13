@@ -5,16 +5,16 @@
   "claim_expires": "",
   "depends_on": [],
   "id": "AR-1050",
-  "next_action": "Publish approved exact head 46145ad63af61d0b6f4549f06c001f33d60f02c1, open PR, require exact-head CI, then merge and run trusted-main qualification only if all green.",
+  "next_action": "No further action: AR-1052 superseded this recovery after PR #17 merged and Trusted main exposed the unavailable server-authority observation.",
   "owner": "",
   "plan": "../plans/AR-1050.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "open",
   "summary": "Wait for bounded stable authenticated tmux server, session and window readiness after detached creation.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Acquire authenticated tmux startup readiness",
-  "updated_at": "2026-09-11T03:51:39+00:00",
+  "updated_at": "2026-09-13T20:00:12+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-authenticated-startup-readiness"
 }
 ---
@@ -268,3 +268,8 @@ server/session/window identity and retained pane authority. Change no renderer o
   quality 34559774880 passed. Trusted-main 34559774865 failed 21/26: all five live tmux fixtures
   exhausted tmux_startup_not_ready, including server-observation-only acquisition. AR-1052 owns
   closed diagnostic and narrow portability recovery; AR-1050 remains open pending it.
+
+- 2026-09-13T20:00:12+00:00: PR #17 merged exact approved head
+  46145ad63af61d0b6f4549f06c001f33d60f02c1 as GitHub-verified cb28f246 with reviewed tree b64bd9d1.
+  Exact-head and Repository quality passed, but Trusted main 34559774865 failed all five live
+  fixtures at tmux_startup_not_ready. AR-1052 superseded this incomplete recovery.
