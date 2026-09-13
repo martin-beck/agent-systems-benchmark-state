@@ -10,17 +10,17 @@
   "id": "AR-1060",
   "next_action": "Obtain independent immutable review of signed ASB head e55df62c4247ca86b6af863c75e189980fadd9fe, then add the bounded router-side probe/acquisition producer and remaining hostile descriptor, credential, timeout and admission tests without UI work.",
   "observed_branch": "feature/authenticated-control-endpoint-handoff",
-  "observed_dirty": 5,
-  "observed_head": "1c51cbf5a14b007fbb3881b7fb4604e9db35c305",
+  "observed_dirty": 0,
+  "observed_head": "97736814893d1fa5b759e41bab1eeae52b23c9d8",
   "owner": "codex-ar1060-endpoint-recovery-20260913",
   "plan": "../plans/AR-1060.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Add authenticated control endpoint handoff",
-  "updated_at": "2026-09-13T18:20:22+00:00",
+  "updated_at": "2026-09-13T18:20:29+00:00",
   "worktree_key": "agent-systems-benchmark-authenticated-control-endpoint-handoff"
 }
 ---
