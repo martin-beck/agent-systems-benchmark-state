@@ -7,7 +7,7 @@
     "AR-1040"
   ],
   "id": "AR-1043",
-  "next_action": "All 12 exact-head checks on independently approved PR #137 head 40a84dda234f250927bb36a5b3c46bb342f60149 are green, including AArch64. Await explicit root merge authorization; merge must use protected method and a truthful real multiline body ending exact lowercase trailer Signed-off-by: martin-beck <martin.beck2@gmx.de>.",
+  "next_action": "Complete; no further action.",
   "observed_branch": "fix/protected-topic-sync-topology",
   "observed_dirty": 0,
   "observed_head": "40a84dda234f250927bb36a5b3c46bb342f60149",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "done",
   "summary": "Accept one exact signed topic-tip sync merge without weakening protected-main policy.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Qualify exact topic-tip synchronization merges",
-  "updated_at": "2026-09-11T02:45:52+00:00",
+  "updated_at": "2026-09-13T19:31:48+00:00",
   "worktree_key": "agent-systems-benchmark-protected-topic-sync-topology"
 }
 ---
@@ -285,3 +285,6 @@ by the plan, preserve all negative cases and restore a green forward protected-m
   terminal success: quality 34555432232, Rust 34555432254, AArch64 34555432283, fault 34555432242,
   headers 34555432248, platform 34555432268, formal 34555432305. Historical failed merges remain
   truthfully preserved.
+
+- 2026-09-13T19:31:48+00:00: Compacted the stale pre-merge next action after completed acceptance;
+  no status or evidence boundary changed.
