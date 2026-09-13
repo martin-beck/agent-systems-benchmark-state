@@ -5,16 +5,16 @@
   "claim_expires": "",
   "depends_on": [],
   "id": "AR-1052",
-  "next_action": "Publish approved exact head 5b55f6aa4d8883bc13a79b64193da246788831b9, open draft PR, require exact-head checks, then merge and verify postmerge/trusted-main.",
+  "next_action": "No further action: AR-1054 superseded this recovery after PR #19 merged and exact-main exposed the downstream socket-completion failure.",
   "owner": "",
   "plan": "../plans/AR-1052.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "open",
   "summary": "Diagnose and repair the trusted-runner tmux server-authority portability gap without weakening cleanup authentication.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Diagnose trusted tmux server authority",
-  "updated_at": "2026-09-11T04:29:18+00:00",
+  "updated_at": "2026-09-13T19:58:00+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-server-authority-portability"
 }
 ---
@@ -226,3 +226,8 @@ authenticated cleanup and zero-widening invariant. Change no product UI, rendere
   34562090773 failed five live tmux fixtures at socket_connection_unavailable. AR-1054 owns the
   narrow AF_UNIX EAGAIN/completion recovery; AR-1052 remains open pending its green exact-main
   qualification.
+
+- 2026-09-13T19:58:00+00:00: PR #19 merged exact approved head
+  5b55f6aa4d8883bc13a79b64193da246788831b9 as 7a398032, but Trusted main 34562090773 still failed at
+  socket_connection_unavailable. Preserve that valid intermediate result; AR-1054 superseded its
+  incomplete recovery.
