@@ -29,7 +29,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-asb-cli-workflow-captures` | `docs/asb-cli-workflow-captures-attestation` | `b18e38ad94f1` | 0 | behind 32, ahead 0 |
 | `agent-systems-benchmark-asb-tui-capabilities-command` | `feature/asb-tui-capabilities-command` | `d60d23510044` | 0 | behind 35, ahead 0 |
 | `agent-systems-benchmark-asb-tui-lifecycle-router` | `feature/asb-tui-lifecycle-router` | `c545c33c8bfe` | 0 | behind 31, ahead 1 |
-| `agent-systems-benchmark-authenticated-control-endpoint-handoff` | `feature/authenticated-control-endpoint-handoff` | `1946af794986` | 0 | behind 0, ahead 5 |
+| `agent-systems-benchmark-authenticated-control-endpoint-handoff` | `feature/authenticated-control-endpoint-handoff` | `1946af794986` | 1 | behind 0, ahead 5 |
+| changed files | - | - | - | `crates/asb-control/src/handoff.rs` |
 | `agent-systems-benchmark-beginner-workflows` | `docs/beginner-workflows` | `328de90ef1ed` | 0 | behind 137, ahead 0 |
 | `agent-systems-benchmark-benchmark-validity` | `feature/benchmark-validity` | `60a6c730457b` | 0 | behind 265, ahead 0 |
 | `agent-systems-benchmark-capability-coverage-sink` | `test/capability-coverage-sink` | `297895dbdee6` | 0 | behind 15, ahead 0 |
