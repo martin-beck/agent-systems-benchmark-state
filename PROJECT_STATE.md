@@ -33,7 +33,7 @@ Generated from local Git and GitHub. Do not edit.
 | 34778918956 | `38c039975077` | pull_request | Fault assurance | completed:success |
 | 34778918951 | `38c039975077` | pull_request | Hosted portability and native qualification | completed:failure |
 | 34778918933 | `38c039975077` | pull_request | Repository quality | in_progress:- |
-| 34778918927 | `38c039975077` | pull_request | Rust verification | in_progress:- |
+| 34778918927 | `38c039975077` | pull_request | Rust verification | completed:success |
 | 34778918918 | `38c039975077` | pull_request | Huawei MIT source headers | completed:success |
 | 34778918917 | `38c039975077` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 34778918915 | `38c039975077` | pull_request | Formal assurance | completed:success |
