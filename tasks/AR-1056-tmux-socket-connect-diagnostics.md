@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1056.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "superseded",
   "summary": "Diagnose and repair the remaining trusted tmux socket connection-stage failure.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Diagnose tmux socket connection stage",
-  "updated_at": "2026-09-13T19:58:12+00:00",
+  "updated_at": "2026-09-13T19:58:15+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-socket-connect-diagnostics"
 }
 ---
@@ -136,3 +136,6 @@ workflow or ASB source change is in scope.
   dd0555208a1631018e91149a9f94f3bdc65b7da5 as 37613e81; post-merge Repository quality 34564426536
   passed, while Trusted main 34564426538 moved the failure downstream of server acquisition. AR-1058
   superseded this diagnostic.
+
+- 2026-09-13T19:58:15+00:00: Superseded by AR-1058 after PR #21 moved the trusted failure beyond
+  authenticated socket acquisition.
