@@ -17,16 +17,16 @@
     "AR-1062"
   ],
   "id": "AR-1010",
-  "next_action": "Wait for AR-1062 to expose the nested trusted tmux server/connect failure, then require its bounded repair and green exact-main Repository quality and Trusted main verification.",
+  "next_action": "Remain open pending a supported AR-1062 signed publication/repair successor, green exact-main Repository quality and Trusted main, and recovered AR-1060 control-publication provenance. Do not repeat merged foundation work or add UI code to ASB.",
   "owner": "",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "open",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 433,
+  "task_revision": 434,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-11T05:54:00+00:00",
+  "updated_at": "2026-09-13T20:03:51+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -1539,3 +1539,7 @@ trusted terminal qualification; do not repeat the already merged PR #9 publicati
   34546963576 failed twice because the test polled tmux primary storage while Ratatui rendered in
   alternate storage. AR-1042 owns the narrow qualification repair. Resume AR-1010 only after AR-1042
   merges and exact-main trusted verification is green.
+
+- 2026-09-13T20:03:51+00:00: Updated stale wording: AR-1062 produced local diagnostics but lacks
+  supported signed publication and Trusted-main acceptance; AR-1060 control provenance is separately
+  blocked. Preserve current status and dependency graph pending a reviewed successor definition.
