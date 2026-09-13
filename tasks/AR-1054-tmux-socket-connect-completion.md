@@ -5,16 +5,16 @@
   "claim_expires": "",
   "depends_on": [],
   "id": "AR-1054",
-  "next_action": "Publish approved exact head d4ace404949ab92090c72fcedf8ce182c37ee2e7, open PR, require exact-head checks, then merge and verify both exact-main workflows.",
+  "next_action": "No further action: AR-1056 superseded this recovery after PR #20 merged and exact-main localized a remaining connection-stage failure.",
   "owner": "",
   "plan": "../plans/AR-1054.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "open",
   "summary": "Repair trusted tmux socket connection completion without weakening authenticated cleanup authority.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Repair tmux socket connection completion",
-  "updated_at": "2026-09-11T04:52:47+00:00",
+  "updated_at": "2026-09-13T19:58:06+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-socket-connect-completion"
 }
 ---
@@ -191,3 +191,8 @@ lifecycle protocol, dependency, workflow or ASB source change is in scope.
   quality 34563629050 and Trusted main 34563628936 failed. Trusted main remains 5 live tmux failures
   at aggregate socket_connection_unavailable; AR-1056 owns closed connection-substage diagnosis and
   repair. AR-1054 remains open pending that green recovery.
+
+- 2026-09-13T19:58:06+00:00: PR #20 merged exact approved head
+  d4ace404949ab92090c72fcedf8ce182c37ee2e7 as 092cf20a, but exact-main Repository quality
+  34563629050 and Trusted main 34563628936 remained red. Preserve the EAGAIN/completion repair;
+  AR-1056 superseded the incomplete outcome.
