@@ -8,7 +8,7 @@
     "AR-1023"
   ],
   "id": "AR-1060",
-  "next_action": "Recover PR #152 publication provenance with a verifiably signed, DCO-compliant protected merge for reviewed tree 36f21d9bfca9d3afde9514348c89d2ab884ebefc; rerun exact-main policy/DCO and full gates before releasing AR-1060 to AR-1024. No history rewrite, policy weakening, or UI work.",
+  "next_action": "Stop descendant recovery: every commit atop ec0c7a3 retains the invalid merge in its policy range. Escalate for an authorized repository-level recovery that neither rewrites history nor weakens signature/DCO policy; keep AR-1060 and AR-1024 blocked. No UI work.",
   "observed_branch": "feature/authenticated-control-endpoint-handoff",
   "observed_dirty": 0,
   "observed_head": "f34e4f57e1419bbe9783798bf15fe9c930bffa09",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths.",
-  "task_revision": 155,
+  "task_revision": 156,
   "title": "Add authenticated control endpoint handoff",
-  "updated_at": "2026-09-13T19:36:45+00:00",
+  "updated_at": "2026-09-13T19:46:18+00:00",
   "worktree_key": "agent-systems-benchmark-authenticated-control-endpoint-handoff"
 }
 ---
@@ -484,3 +484,9 @@ planned until their full dependency sets are done.
 
 - 2026-09-13T19:36:45+00:00: Recorded command exit 0; command argv SHA-256
   f38eec0a15da4072dba114c2894d9b45eeeabd692238bf09d7c07bac4c2dd62e.
+
+- 2026-09-13T19:46:18+00:00: Second recovery failed. PR #153 merged as ec0c7a3 with a literal
+  escaped newline in the merge message, so no matching Signed-off-by trailer exists; post-merge
+  Repository quality run 34778528023 failed. Do not add further descendants: their validation range
+  still includes bad ec0c7a3. Preserve history, signature/DCO policy, and the reviewed content
+  boundary.

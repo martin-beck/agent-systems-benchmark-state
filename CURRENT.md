@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1060](tasks/AR-1060-authenticated-control-endpoint-handoff.md): Add authenticated control endpoint handoff | Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths. | Recover PR #152 publication provenance with a verifiably signed, DCO-compliant protected merge for reviewed tree 36f21d9bfca9d3afde9514348c89d2ab884ebefc; rerun exact-main policy/DCO and full gates before releasing AR-1060 to AR-1024. No history rewrite, policy weakening, or UI work. | codex-ar1060-merge-20260913 |
+| P0 | [AR-1060](tasks/AR-1060-authenticated-control-endpoint-handoff.md): Add authenticated control endpoint handoff | Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths. | Stop descendant recovery: every commit atop ec0c7a3 retains the invalid merge in its policy range. Escalate for an authorized repository-level recovery that neither rewrites history nor weakens signature/DCO policy; keep AR-1060 and AR-1024 blocked. No UI work. | codex-ar1060-merge-20260913 |
 | P0 | [AR-1100](tasks/AR-1100.md): Configuration defaults | Persist configuration defaults. | Read the plan. | codex-asb-config-defaults-20260913 |
 
 ## Open
