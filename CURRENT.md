@@ -8,6 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1060](tasks/AR-1060-authenticated-control-endpoint-handoff.md): Add authenticated control endpoint handoff | Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths. | Recover PR #152 publication provenance with a verifiably signed, DCO-compliant protected merge for reviewed tree 36f21d9bfca9d3afde9514348c89d2ab884ebefc; rerun exact-main policy/DCO and full gates before releasing AR-1060 to AR-1024. No history rewrite, policy weakening, or UI work. | codex-ar1060-merge-20260913 |
+| P0 | [AR-1100](tasks/AR-1100.md): Configuration defaults | Persist configuration defaults. | Read the plan. | codex-asb-config-defaults-20260913 |
 
 ## Open
 
@@ -29,7 +30,6 @@ Never edit this file directly.
 | P0 | [AR-1056](tasks/AR-1056-tmux-socket-connect-diagnostics.md): Diagnose tmux socket connection stage | Diagnose and repair the remaining trusted tmux socket connection-stage failure. | Publish approved exact diagnostic head dd0555208a1631018e91149a9f94f3bdc65b7da5, require exact-head CI, merge exact tree, then use trusted-main closed stage only to select repair. | - |
 | P0 | [AR-1058](tasks/AR-1058-tmux-startup-observation-diagnostics.md): Diagnose tmux startup observation | Diagnose and repair the remaining trusted tmux stable-startup observation failure. | Wait for AR-1062 to preserve the hidden nested server stage and symbolic socket-error class, then require green exact-main terminal qualification. | - |
 | P0 | [AR-1061](tasks/AR-1061-isolate-concurrent-tmux-fixtures.md): Isolate concurrent trusted tmux fixtures | Diagnose and isolate concurrent trusted tmux fixture contention. | Wait for AR-1062 to expose the nested trusted server/connect failure and select a bounded repair; fixture contention was falsified. | - |
-| P0 | [AR-1100](tasks/AR-1100.md): Configuration defaults | Persist configuration defaults. | Read the plan. | - |
 | P0 | [AR-1181](tasks/AR-1181.md): TLA admission | Bound ASB TLC memory. | Implement bounded TLC admission. | - |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | Repair/rebase the fail-closed TLA provenance pin, then rerun PR #119 exact-head CI; do not merge. | - |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Qualify pinned OpenJiuwen live execution. | Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI. | - |
