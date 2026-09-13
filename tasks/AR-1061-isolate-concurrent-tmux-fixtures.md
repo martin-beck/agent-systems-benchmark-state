@@ -3,18 +3,20 @@
   "branch": "fix/tmux-live-fixture-isolation",
   "checkpoint_commit": "17f8b3bc26cfa35b1f8ecb8a2e2e5c11d756dae1",
   "claim_expires": "",
-  "depends_on": ["AR-1062"],
+  "depends_on": [
+    "AR-1062"
+  ],
   "id": "AR-1061",
-  "next_action": "Wait for AR-1062 to expose the nested trusted server/connect failure and select a bounded repair; fixture contention was falsified.",
+  "next_action": "No further action: AR-1062 superseded the falsified fixture-contention hypothesis with nested server/connect diagnostics.",
   "owner": "",
   "plan": "../plans/AR-1061.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "open",
   "summary": "Diagnose and isolate concurrent trusted tmux fixture contention.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Isolate concurrent trusted tmux fixtures",
-  "updated_at": "2026-09-11T05:54:00+00:00",
+  "updated_at": "2026-09-13T19:58:23+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-live-fixture-isolation"
 }
 ---
@@ -133,3 +135,8 @@ product/UI behavior remain unchanged.
   server_before_unavailable; remaining failures are downstream. Same-process fixture contention is
   falsified. Keep AR-1061 and AR-1010 open pending a new narrow nested-server/connect diagnostic; do
   not weaken authentication.
+
+- 2026-09-13T19:58:23+00:00: PR #23 merged exact approved head
+  17f8b3bc26cfa35b1f8ecb8a2e2e5c11d756dae1 as db612b6f; Repository quality passed, but Trusted main
+  34567498957 still failed 5/31 and falsified same-process contention. Preserve the negative result;
+  AR-1062 superseded it.
