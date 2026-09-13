@@ -27,6 +27,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar0878-integration` | `DETACHED` | `0fbec95d2154` | 0 | behind 108, ahead 0 |
 | `agent-systems-benchmark-ar0880-integration` | `integration/ar0880-b7559931` | `2a85872285e6` | 0 | behind 90, ahead 0 |
 | `agent-systems-benchmark-ar0906-merge-dco` | `repair/ar0906-merge-dco` | `66ca27afc2fb` | 0 | behind 44, ahead 0 |
+| `agent-systems-benchmark-ar1060-merge-attestation` | `recovery/ar-1060-merge-attestation` | `d450945a7940` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-asb-cli-workflow-captures` | `docs/asb-cli-workflow-captures-attestation` | `b18e38ad94f1` | 0 | behind 40, ahead 0 |
 | `agent-systems-benchmark-asb-tui-capabilities-command` | `feature/asb-tui-capabilities-command` | `d60d23510044` | 0 | behind 43, ahead 0 |
 | `agent-systems-benchmark-asb-tui-lifecycle-router` | `feature/asb-tui-lifecycle-router` | `c545c33c8bfe` | 0 | behind 39, ahead 1 |
