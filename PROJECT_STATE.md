@@ -23,20 +23,21 @@ Generated from local Git and GitHub. Do not edit.
 | #149 | `dependabot/cargo/url-2.5.8@f7edfbbd0e98` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump url from 2.5.7 to 2.5.8 |
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
 | #151 | `dependabot/cargo/serde-1.0.229@59d0e478681f` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
+| #152 | `feature/authenticated-control-endpoint-handoff@f34e4f57e141` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, IN_PROGRESS:, QUEUED:, IN_PROGRESS: | AR-1060: bind authenticated broker acquisition to one request budget |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34776885391 | `f34e4f57e141` | pull_request | Repository quality | in_progress:- |
+| 34776885326 | `f34e4f57e141` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 34776885323 | `f34e4f57e141` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 34776885322 | `f34e4f57e141` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 34776885313 | `f34e4f57e141` | pull_request | Formal assurance | queued:- |
+| 34776885290 | `f34e4f57e141` | pull_request | Fault assurance | queued:- |
+| 34776885281 | `f34e4f57e141` | pull_request | Huawei MIT source headers | in_progress:- |
+| 34776885272 | `f34e4f57e141` | pull_request | Rust verification | in_progress:- |
 | 34761092571 | `59d0e478681f` | pull_request | Emulated aarch64 portability | completed:success |
 | 34761092569 | `59d0e478681f` | pull_request | Fault assurance | completed:failure |
 | 34761092553 | `59d0e478681f` | pull_request | Formal assurance | completed:failure |
 | 34761092549 | `59d0e478681f` | pull_request | Rust verification | completed:failure |
-| 34761092548 | `59d0e478681f` | pull_request | Huawei MIT source headers | completed:success |
-| 34761092547 | `59d0e478681f` | pull_request | Hosted portability and native qualification | completed:success |
-| 34761092546 | `59d0e478681f` | pull_request | Repository quality | completed:failure |
-| 34761092545 | `59d0e478681f` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 34761089135 | `d4eb5ee4a62e` | pull_request | Rust verification | completed:failure |
-| 34761089134 | `d4eb5ee4a62e` | pull_request | Hosted portability and native qualification | completed:success |
-| 34761089133 | `d4eb5ee4a62e` | pull_request | Emulated aarch64 portability | completed:success |
-| 34761089125 | `d4eb5ee4a62e` | pull_request | Fault assurance | completed:success |
