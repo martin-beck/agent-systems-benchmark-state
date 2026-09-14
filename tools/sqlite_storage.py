@@ -10,7 +10,7 @@ import os
 import sqlite3
 import tempfile
 from collections.abc import Callable, Iterator, Sequence
-from contextlib import contextmanager
+from contextlib import AbstractContextManager, contextmanager, nullcontext
 from pathlib import Path
 from typing import Any, Protocol, cast
 
@@ -117,10 +117,17 @@ class SQLiteBackend:
 
     name = "sqlite"
 
-    def __init__(self, path: Path, binding: Meta, tasks_root: Path) -> None:
+    def __init__(
+        self,
+        path: Path,
+        binding: Meta,
+        tasks_root: Path,
+        mutation_scope: Callable[[], AbstractContextManager[object]] | None = None,
+    ) -> None:
         self.path = path
         self.binding = binding
         self.tasks_root = tasks_root
+        self.mutation_scope = mutation_scope
 
     def _connect(self, *, read_only: bool = False) -> sqlite3.Connection:
         _require_database(self.path)
@@ -167,7 +174,7 @@ class SQLiteBackend:
             raise RuntimeError("SQLITE_BACKEND_INACTIVE: retry using the selected backend")
 
     @contextmanager
-    def transaction(self) -> Iterator[sqlite3.Connection]:
+    def _transaction(self) -> Iterator[sqlite3.Connection]:
         connection = self._connect()
         try:
             connection.execute("BEGIN IMMEDIATE")
@@ -184,6 +191,13 @@ class SQLiteBackend:
             raise
         finally:
             connection.close()
+
+    @contextmanager
+    def transaction(self) -> Iterator[sqlite3.Connection]:
+        """Run the mutation under the optional provisioned fence scope."""
+        scope = self.mutation_scope() if self.mutation_scope is not None else nullcontext()
+        with scope, self._transaction() as connection:
+            yield connection
 
     def _load(self, connection: sqlite3.Connection) -> list[Task]:
         result: list[Task] = []

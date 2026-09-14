@@ -10,10 +10,12 @@ import json
 import multiprocessing
 import subprocess
 import sys
+import threading
 import time
 import unittest
 from pathlib import Path
 from tempfile import TemporaryDirectory
+from types import SimpleNamespace
 from typing import Any, cast
 from unittest.mock import patch
 
@@ -326,6 +328,7 @@ class HandoffTest(unittest.TestCase):
             self.assertRaisesRegex(RuntimeError, "state repository"),
         ):
             CORE.assert_project_binding()
+
         other = self.root.parent / f"{self.root.name}-other"
         wrong_top = subprocess.CompletedProcess([], 0, str(other) + "\n", "")
         with (
@@ -366,6 +369,155 @@ class HandoffTest(unittest.TestCase):
             self.assertRaisesRegex(RuntimeError, "must be called"),
         ):
             CORE.assert_project_binding()
+
+    def test_binding_accepts_linked_product_worktree_with_matching_origin(self) -> None:
+        projects_root = self.root.parent
+        product = projects_root / f"{self.root.name}-product"
+        linked = projects_root / f"{self.root.name}-product-worker"
+        product.mkdir()
+        linked.mkdir()
+        CORE.CONFIG.parent.mkdir()
+        CORE.CONFIG.write_text(
+            json.dumps(
+                {
+                    "projects_root": str(projects_root),
+                    "product_worktree": product.name,
+                    "github_repository": "owner/product",
+                    "push_enabled": False,
+                }
+            )
+        )
+
+        def git_query(args: list[str], **_: object) -> subprocess.CompletedProcess[str]:
+            if args[-2:] == ["rev-parse", "--show-toplevel"]:
+                checkout = Path(args[2])
+                top = linked if checkout == linked else self.root
+                return subprocess.CompletedProcess(args, 0, str(top) + "\n", "")
+            if args[-3:] == ["remote", "get-url", "origin"]:
+                remote = (
+                    "git@github.com:owner/product.git"
+                    if Path(args[2]) != CORE.ROOT
+                    else "git@github.com:owner/state.git"
+                )
+                return subprocess.CompletedProcess(args, 0, remote + "\n", "")
+            raise AssertionError(args)
+
+        with (
+            patch.object(CORE, "run", side_effect=git_query),
+            patch.object(CORE.Path, "cwd", return_value=linked),
+        ):
+            CORE.assert_project_binding()
+
+    def configure_product_invocation(self, product: Path) -> None:
+        """Configure one product checkout for wrapped-command identity tests."""
+        CORE.CONFIG.parent.mkdir(parents=True, exist_ok=True)
+        CORE.CONFIG.write_text(
+            json.dumps(
+                {
+                    "projects_root": str(product.parent),
+                    "product_worktree": product.name,
+                    "github_repository": "owner/product",
+                    "push_enabled": False,
+                }
+            )
+        )
+
+    def product_git_query(self, product: Path, args: list[str], **_: object) -> Any:
+        """Answer the bounded Git identity queries used by invocation preflight."""
+        if args[-2:] == ["rev-parse", "--show-toplevel"]:
+            return subprocess.CompletedProcess(args, 0, str(product) + "\n", "")
+        if args[-4:] == ["symbolic-ref", "--short", "-q", "HEAD"]:
+            return subprocess.CompletedProcess(args, 0, "feature/good\n", "")
+        raise AssertionError(args)
+
+    def test_wrapped_product_invocation_must_match_declared_worktree(self) -> None:
+        product = self.root / "product"
+        product.mkdir()
+        self.configure_product_invocation(product)
+        self.make_task(
+            status="in_progress",
+            owner="worker",
+            claim_expires="2999-01-01T00:00:00+00:00",
+            worktree_key="product",
+            branch="feature/good",
+        )
+        with (
+            patch.object(CORE.Path, "cwd", return_value=product),
+            patch.object(
+                CORE,
+                "run",
+                side_effect=lambda args, **kwargs: self.product_git_query(product, args, **kwargs),
+            ),
+        ):
+            CORE.require_active_owner("AR-0001", "worker")
+
+    def test_wrapped_product_invocation_rejects_wrong_worktree_or_branch(self) -> None:
+        product = self.root / "product"
+        product.mkdir()
+        self.configure_product_invocation(product)
+        self.make_task(
+            status="in_progress",
+            owner="worker",
+            claim_expires="2999-01-01T00:00:00+00:00",
+            worktree_key="other-worktree",
+            branch="feature/good",
+        )
+        with (
+            patch.object(CORE.Path, "cwd", return_value=product),
+            patch.object(
+                CORE,
+                "run",
+                side_effect=lambda args, **kwargs: self.product_git_query(product, args, **kwargs),
+            ),
+            self.assertRaisesRegex(RuntimeError, "does not match declared worktree"),
+        ):
+            CORE.require_active_owner("AR-0001", "worker")
+
+        meta, body = CORE.read_task(CORE.locate("AR-0001")[0])
+        meta["worktree_key"] = "product"
+        meta["branch"] = "feature/expected"
+        CORE.write_task(CORE.locate("AR-0001")[0], meta, body)
+        with (
+            patch.object(CORE.Path, "cwd", return_value=product),
+            patch.object(
+                CORE,
+                "run",
+                side_effect=lambda args, **kwargs: self.product_git_query(product, args, **kwargs),
+            ),
+            self.assertRaisesRegex(RuntimeError, "does not match declared branch"),
+        ):
+            CORE.require_active_owner("AR-0001", "worker")
+
+    def test_wrapped_state_invocation_remains_valid_for_state_commands(self) -> None:
+        self.make_task(
+            status="in_progress",
+            owner="worker",
+            claim_expires="2999-01-01T00:00:00+00:00",
+            worktree_key="product",
+            branch="feature/good",
+        )
+        with patch.object(CORE.Path, "cwd", return_value=self.root):
+            CORE.require_active_owner("AR-0001", "worker")
+
+    def test_wrapped_product_invocation_requires_declared_identity(self) -> None:
+        product = self.root / "product"
+        product.mkdir()
+        self.configure_product_invocation(product)
+        self.make_task(
+            status="in_progress",
+            owner="worker",
+            claim_expires="2999-01-01T00:00:00+00:00",
+        )
+        with (
+            patch.object(CORE.Path, "cwd", return_value=product),
+            patch.object(
+                CORE,
+                "run",
+                side_effect=lambda args, **kwargs: self.product_git_query(product, args, **kwargs),
+            ),
+            self.assertRaisesRegex(RuntimeError, "lacks declared worktree"),
+        ):
+            CORE.require_active_owner("AR-0001", "worker")
 
     def test_atomic_task_round_trip_and_render(self) -> None:
         path = self.make_task()
@@ -540,6 +692,48 @@ class HandoffTest(unittest.TestCase):
                     "claim",
                 )
 
+    def test_superseded_dependency_requires_done_successor_chain(self) -> None:
+        self.make_task("AR-0003", status="done")
+        self.make_task("AR-0002", status="superseded", superseded_by="AR-0003")
+        self.make_task("AR-0001", status="superseded", superseded_by="AR-0002")
+        self.make_task("AR-0004", depends_on=["AR-0001"])
+        with patch.object(CORE, "commit", return_value=True):
+            CORE.mutate(
+                argparse.Namespace(task="AR-0004", owner="worker-a", lease_minutes=10),
+                "claim",
+            )
+        self.assertEqual("in_progress", CORE.read_task(CORE.TASKS / "AR-0004-test.md")[0]["status"])
+
+    def test_superseded_dependency_fails_closed_for_missing_or_unfinished_successor(self) -> None:
+        self.make_task("AR-0003", status="open")
+        self.make_task("AR-0002", status="superseded", superseded_by="AR-0003")
+        self.make_task("AR-0001", depends_on=["AR-0002"])
+        with self.assertRaisesRegex(RuntimeError, "unfinished dependencies"):
+            CORE.mutate(
+                argparse.Namespace(task="AR-0001", owner="worker-a", lease_minutes=10),
+                "claim",
+            )
+
+        dependency, body = CORE.read_task(CORE.TASKS / "AR-0002-test.md")
+        dependency["superseded_by"] = "AR-9999"
+        CORE.write_task(CORE.TASKS / "AR-0002-test.md", dependency, body)
+        self.refresh_views()
+        self.assertIn("missing superseded_by task", "\n".join(CORE.validate()))
+
+    def test_supersession_validation_rejects_invalid_status_self_and_cycle(self) -> None:
+        self.make_task("AR-0001", status="open", superseded_by="AR-0002")
+        self.make_task("AR-0002", status="superseded", superseded_by="bad")
+        self.make_task("AR-0003", status="superseded", superseded_by="AR-0003")
+        self.make_task("AR-0004", status="superseded", superseded_by="AR-0005")
+        self.make_task("AR-0005", status="superseded", superseded_by="AR-0004")
+
+        errors = "\n".join(CORE.validate())
+        self.assertIn("AR-0001: superseded_by requires superseded status", errors)
+        self.assertIn("AR-0002: invalid superseded_by", errors)
+        self.assertIn("AR-0003: superseded_by self reference", errors)
+        self.assertIn("AR-0004: superseded_by chain does not end in done task", errors)
+        self.assertIn("AR-0005: superseded_by chain does not end in done task", errors)
+
     def test_promote_is_dependency_revision_and_state_aware(self) -> None:
         dependency = self.make_task("AR-0001", status="done")
         target = self.make_task(
@@ -619,7 +813,7 @@ class HandoffTest(unittest.TestCase):
         self.refresh_views()
         with (
             patch.object(CORE, "dirty_state_paths", return_value=[]),
-            self.assertRaisesRegex(RuntimeError, "promotion preflight failed"),
+            self.assertRaisesRegex(RuntimeError, "active claim metadata"),
         ):
             CORE.mutate(args, "promote")
         meta["owner"] = ""
@@ -874,6 +1068,90 @@ class HandoffTest(unittest.TestCase):
             raise RuntimeError("body failure")
         with CORE.locked(timeout=0.1):
             pass
+
+    def test_lock_yields_capability_and_invalidates_after_scope(self) -> None:
+        with CORE.locked(timeout=0.1) as guard:
+            self.assertEqual(CORE.coordinator_lock_path().resolve(), guard.path)
+            guard.assert_owned()
+        with self.assertRaisesRegex(CORE.LockOwnershipError, "inactive"):
+            guard.assert_owned()
+
+    def test_lock_guard_constructor_is_not_public(self) -> None:
+        with TemporaryDirectory() as directory:
+            path = Path(directory) / "state.lock"
+            fd = path.open("w+")
+            try:
+                with self.assertRaises(TypeError):
+                    CORE.CoordinatorLockGuard(path, fd.fileno(), exclusive=True)
+                with self.assertRaisesRegex(TypeError, "construction is private"):
+                    CORE.CoordinatorLockGuard(
+                        path, fd.fileno(), exclusive=True, _creation_token=object()
+                    )
+            finally:
+                fd.close()
+
+    def test_lock_guard_rejects_use_from_another_thread(self) -> None:
+        errors: list[BaseException] = []
+        with CORE.locked(timeout=0.1) as guard:
+            thread = threading.Thread(
+                target=lambda: self._assert_guard_rejected(guard, errors), daemon=True
+            )
+            thread.start()
+            thread.join(5)
+        self.assertEqual(1, len(errors))
+        self.assertIsInstance(errors[0], CORE.LockOwnershipError)
+
+    def test_shared_lock_guard_cannot_authorize_exclusive_operation(self) -> None:
+        with (
+            CORE.locked(exclusive=False, timeout=0.1) as guard,
+            self.assertRaisesRegex(CORE.LockOwnershipError, "not exclusive"),
+        ):
+            guard.assert_owned()
+
+    def test_lock_guard_rejects_replaced_path_inode(self) -> None:
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            with (
+                patch.object(CORE, "ROOT", root),
+                patch.object(CORE, "RUNTIME", root / ".runtime"),
+                patch.object(CORE, "LOCK", root / ".runtime" / "state.lock"),
+                CORE.locked(timeout=0.1) as guard,
+            ):
+                guard.path.replace(guard.path.with_name("state.lock.old"))
+                guard.path.touch()
+                with self.assertRaisesRegex(CORE.LockOwnershipError, "path identity"):
+                    guard.assert_owned()
+
+    def test_lock_guard_rejects_descriptor_and_path_failures(self) -> None:
+        with CORE.locked(timeout=0.1) as guard:
+            with (
+                patch.object(CORE.os, "fstat", side_effect=OSError("closed")),
+                self.assertRaisesRegex(CORE.LockOwnershipError, "descriptor is unavailable"),
+            ):
+                guard.assert_owned()
+            with (
+                patch.object(
+                    CORE.os,
+                    "fstat",
+                    return_value=SimpleNamespace(st_dev=-1, st_ino=-1),
+                ),
+                self.assertRaisesRegex(CORE.LockOwnershipError, "descriptor identity"),
+            ):
+                guard.assert_owned()
+            with (
+                patch.object(
+                    CORE, "coordinator_lock_path", return_value=guard.path.parent / "other"
+                ),
+                self.assertRaisesRegex(CORE.LockOwnershipError, "path changed"),
+            ):
+                guard.assert_owned()
+
+    @staticmethod
+    def _assert_guard_rejected(guard: Any, errors: list[BaseException]) -> None:
+        try:
+            guard.assert_owned()
+        except BaseException as error:
+            errors.append(error)
 
     def test_subprocess_timeout_is_classified(self) -> None:
         with (
@@ -1625,6 +1903,210 @@ class HandoffTest(unittest.TestCase):
         ):
             CORE.run_github_observation(["gh", "run", "list"])
 
+    def test_multiple_expired_claims_recover_sequentially(self) -> None:
+        expired = "2000-01-01T00:00:00+00:00"
+        first = self.make_task(
+            "AR-0001",
+            status="in_progress",
+            owner="worker-a",
+            claim_expires=expired,
+            worktree_key="worktree-a",
+            branch="feature/a",
+        )
+        second = self.make_task(
+            "AR-0002",
+            status="in_progress",
+            owner="worker-b",
+            claim_expires=expired,
+            worktree_key="worktree-b",
+            branch="feature/b",
+        )
+        with patch.object(CORE, "commit", return_value=True):
+            for task_id in ("AR-0001", "AR-0002"):
+                CORE.mutate(
+                    argparse.Namespace(
+                        task=task_id,
+                        expected_revision=1,
+                        note="No live process remains.",
+                    ),
+                    "recover-expired",
+                )
+        for path in (first, second):
+            meta, _ = CORE.read_task(path)
+            self.assertEqual("open", meta["status"])
+            self.assertEqual("", meta["owner"])
+            self.assertEqual(2, meta["task_revision"])
+        self.assertEqual([], CORE.validate())
+
+    def test_unrelated_expiry_does_not_block_healthy_lifecycle(self) -> None:
+        expired = "2000-01-01T00:00:00+00:00"
+        self.make_task(
+            "AR-0001",
+            status="in_progress",
+            owner="stale-worker",
+            claim_expires=expired,
+        )
+        claimed = self.make_task("AR-0002")
+        healthy = self.make_task(
+            "AR-0003",
+            status="in_progress",
+            owner="healthy-worker",
+            claim_expires="2099-01-01T00:00:00+00:00",
+        )
+        promoted = self.make_task("AR-0004", status="planned")
+        with patch.object(CORE, "commit", return_value=True):
+            CORE.mutate(
+                argparse.Namespace(task="AR-0002", owner="new-worker", lease_minutes=10),
+                "claim",
+            )
+            CORE.mutate(
+                argparse.Namespace(task="AR-0003", owner="healthy-worker", lease_minutes=20),
+                "heartbeat",
+            )
+            CORE.mutate(
+                argparse.Namespace(
+                    task="AR-0003",
+                    owner="healthy-worker",
+                    status="done",
+                    note="Healthy work completed.",
+                ),
+                "release",
+            )
+            with patch.object(CORE, "dirty_state_paths", return_value=[]):
+                CORE.mutate(
+                    argparse.Namespace(
+                        task="AR-0004",
+                        expected_revision=1,
+                        note="Dependencies verified.",
+                    ),
+                    "promote",
+                )
+        self.assertEqual("in_progress", CORE.read_task(claimed)[0]["status"])
+        self.assertEqual("done", CORE.read_task(healthy)[0]["status"])
+        self.assertEqual("open", CORE.read_task(promoted)[0]["status"])
+        self.assertIn("AR-0001: expired claim", CORE.validate())
+
+    def test_preexisting_privacy_and_size_findings_do_not_block_mutations(self) -> None:
+        expired = self.make_task(
+            "AR-0001",
+            status="in_progress",
+            owner="stale-worker",
+            claim_expires="2000-01-01T00:00:00+00:00",
+        )
+        claimed = self.make_task("AR-0002")
+        (self.root / "NOTES.md").write_text("Investigate " + "127." + "0.0.1.")
+        (self.root / "archive.txt").write_text("x" * 200001)
+        with patch.object(CORE, "commit", return_value=True):
+            CORE.mutate(
+                argparse.Namespace(
+                    task="AR-0001",
+                    expected_revision=1,
+                    note="No live process remains.",
+                ),
+                "recover-expired",
+            )
+            CORE.mutate(
+                argparse.Namespace(task="AR-0002", owner="new-worker", lease_minutes=10),
+                "claim",
+            )
+        self.assertEqual("open", CORE.read_task(expired)[0]["status"])
+        self.assertEqual("in_progress", CORE.read_task(claimed)[0]["status"])
+        errors = CORE.validate()
+        self.assertIn("NOTES.md: private or loopback IP", errors)
+        self.assertIn("archive.txt: state file exceeds 200 KiB", errors)
+
+    def test_new_privacy_and_size_findings_roll_back_exactly(self) -> None:
+        path = self.make_task(
+            status="in_progress",
+            owner="worker-a",
+            claim_expires="2099-01-01T00:00:00+00:00",
+        )
+        owned = (path, self.root / "CURRENT.md", self.root / "STATUS.md")
+        before = {candidate: candidate.read_text() for candidate in owned}
+        private_args = argparse.Namespace(
+            task="AR-0001",
+            owner="worker-a",
+            expected_revision=1,
+            status=None,
+            priority=None,
+            summary="Connect to " + "127." + "0.0.1.",
+            next_action=None,
+            note="Unsafe update.",
+        )
+        with (
+            patch.object(CORE, "commit", return_value=True) as commit,
+            self.assertRaisesRegex(RuntimeError, "newly introduced private or loopback IP"),
+        ):
+            CORE.mutate(private_args, "update")
+        commit.assert_not_called()
+        self.assertTrue(all(candidate.read_text() == before[candidate] for candidate in owned))
+
+        oversized_args = argparse.Namespace(
+            task="AR-0001",
+            owner="worker-a",
+            expected_revision=1,
+            status=None,
+            priority=None,
+            summary=None,
+            next_action="x" * 200001,
+            note="Oversized update.",
+        )
+        with (
+            patch.object(CORE, "commit", return_value=True) as commit,
+            self.assertRaisesRegex(RuntimeError, "state file exceeds 200 KiB"),
+        ):
+            CORE.mutate(oversized_args, "update")
+        commit.assert_not_called()
+        self.assertTrue(all(candidate.read_text() == before[candidate] for candidate in owned))
+        self.assertEqual(1, CORE.read_task(path)[0]["task_revision"])
+
+    def test_mutation_keeps_global_active_key_uniqueness(self) -> None:
+        self.make_task(
+            "AR-0001",
+            status="in_progress",
+            owner="worker-a",
+            claim_expires="2099-01-01T00:00:00+00:00",
+            worktree_key="shared-worktree",
+            branch="feature/shared",
+        )
+        target = self.make_task(
+            "AR-0002",
+            worktree_key="shared-worktree",
+            branch="feature/shared",
+        )
+        before = {
+            candidate: candidate.read_text()
+            for candidate in (target, self.root / "CURRENT.md", self.root / "STATUS.md")
+        }
+        with (
+            patch.object(CORE, "commit", return_value=True) as commit,
+            self.assertRaises(RuntimeError) as raised,
+        ):
+            CORE.mutate(
+                argparse.Namespace(task="AR-0002", owner="worker-b", lease_minutes=10), "claim"
+            )
+        commit.assert_not_called()
+        self.assertIn("active worktree_key also used", str(raised.exception))
+        self.assertIn("active branch also used", str(raised.exception))
+        self.assertTrue(all(candidate.read_text() == before[candidate] for candidate in before))
+
+    def test_mutation_requires_valid_target_even_with_unrelated_findings(self) -> None:
+        target = self.make_task("AR-0001", extra="unsupported")
+        before = {
+            candidate: candidate.read_text()
+            for candidate in (target, self.root / "CURRENT.md", self.root / "STATUS.md")
+        }
+        with (
+            patch.object(CORE, "commit", return_value=True) as commit,
+            self.assertRaisesRegex(RuntimeError, "unknown field extra"),
+        ):
+            CORE.mutate(
+                argparse.Namespace(task="AR-0001", owner="worker-a", lease_minutes=10),
+                "claim",
+            )
+        commit.assert_not_called()
+        self.assertTrue(all(candidate.read_text() == before[candidate] for candidate in before))
+
     def test_recover_expired_requires_exact_expired_revision(self) -> None:
         future = (
             (dt.datetime.now(dt.UTC) + dt.timedelta(minutes=10)).replace(microsecond=0).isoformat()
@@ -1797,6 +2279,11 @@ class HandoffTest(unittest.TestCase):
                 ["handoffctl", "run", "--owner", "worker-a", "AR-0001", "--", "true"],
                 "cmd_run",
                 7,
+            ),
+            (
+                ["handoffctl", "upgrade", "check", "--contract", "contract.json"],
+                "cmd_upgrade",
+                0,
             ),
         ]
         for argv, target, result in cases:
