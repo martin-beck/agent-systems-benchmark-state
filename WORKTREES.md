@@ -32,6 +32,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar1024-wire` | `DETACHED` | `565e66043fff` | 0 | behind 5, ahead 3 |
 | `agent-systems-benchmark-ar1025-broker-seam` | `DETACHED` | `e3b876ac011d` | 0 | behind 5, ahead 2 |
 | `agent-systems-benchmark-ar1029` | `audit/ar1029-legacy-tui` | `b74b9c1eaa8d` | 0 | behind 5, ahead 0 |
+| `agent-systems-benchmark-ar1029-current` | `DETACHED` | `0b989a71bfb9` | 0 | behind 0, ahead 3 |
 | `agent-systems-benchmark-ar1036-catalog` | `DETACHED` | `b74b9c1eaa8d` | 0 | behind 5, ahead 0 |
 | `agent-systems-benchmark-ar1060-ci-topic` | `repair/ar1060-ci-topology` | `7ec2ac620293` | 0 | behind 10, ahead 0 |
 | `agent-systems-benchmark-ar1060-dco-topic` | `repair/ar1060-dco-correction` | `43bc7f036348` | 0 | behind 6, ahead 0 |

@@ -16,28 +16,29 @@ Generated from local Git and GitHub. Do not edit.
 | #126 | `fix/main-merge-integrity@bd6f450ab877` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | tools: harden signed merge publication |
 | #127 | `fix/mini-swe-cancellation-reap-test-isolation@c897313524a8` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(agents): harden mini-swe cancellation isolation |
 | #144 | `dependabot/github_actions/actions/setup-java-6.0.0@5885c200026e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump actions/setup-java from 5.0.0 to 6.0.0 |
-| #145 | `dependabot/cargo/toml-0.9.5@6254fa4db61c` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 0.9.5 |
+| #145 | `dependabot/cargo/toml-0.9.5@08396c3066c5` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 0.9.5 |
 | #146 | `dependabot/github_actions/taiki-e/install-action-2.87.7@51db8d79ad9f` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.7 |
-| #147 | `dependabot/cargo/sha2-0.11.0@6fbcd61ea256` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE | chore(deps): bump sha2 from 0.10.9 to 0.11.0 |
+| #147 | `dependabot/cargo/sha2-0.11.0@29e425b86217` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE | chore(deps): bump sha2 from 0.10.9 to 0.11.0 |
 | #148 | `dependabot/github_actions/actions/upload-artifact-7.0.1@7d45f4cadff2` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump actions/upload-artifact from 4.6.2 to 7.0.1 |
 | #149 | `dependabot/cargo/url-2.5.8@f7edfbbd0e98` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump url from 2.5.7 to 2.5.8 |
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
-| #151 | `dependabot/cargo/serde-1.0.229@de7a00922c14` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
+| #151 | `dependabot/cargo/serde-1.0.229@accdb91a76af` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
 | #154 | `feature/ar-1100@38c039975077` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | AR-1100: add authoritative configuration defaults |
+| #158 | `feature/remove-legacy-asb-tui@0b989a71bfb9` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | refactor: remove legacy in-tree TUI application |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34850152044 | `967a4a7a0501` | push | Huawei MIT source headers | completed:success |
-| 34850152018 | `967a4a7a0501` | push | Formal assurance | in_progress:- |
-| 34850152016 | `967a4a7a0501` | push | Repository quality | completed:failure |
-| 34850151956 | `967a4a7a0501` | push | Fault assurance | in_progress:- |
-| 34850151950 | `967a4a7a0501` | push | Rust verification | in_progress:- |
-| 34850151944 | `967a4a7a0501` | push | Hosted portability and native qualification | in_progress:- |
-| 34850151942 | `967a4a7a0501` | push | Emulated aarch64 portability | in_progress:- |
-| 34849503580 | `f6968d924ad5` | pull_request | Hosted portability and native qualification | completed:success |
-| 34849503512 | `f6968d924ad5` | pull_request | Emulated aarch64 portability | completed:success |
-| 34849503507 | `f6968d924ad5` | pull_request | Formal assurance | completed:success |
-| 34849503422 | `f6968d924ad5` | pull_request | Huawei MIT source headers | completed:success |
-| 34849503381 | `f6968d924ad5` | pull_request | Rust verification | completed:success |
+| 34851033978 | `0b989a71bfb9` | pull_request | Huawei MIT source headers | in_progress:- |
+| 34851033964 | `0b989a71bfb9` | pull_request | Formal assurance | queued:- |
+| 34851033933 | `0b989a71bfb9` | pull_request | Fault assurance | pending:- |
+| 34851033932 | `0b989a71bfb9` | pull_request | Repository quality | in_progress:- |
+| 34851033915 | `0b989a71bfb9` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 34851033914 | `0b989a71bfb9` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 34851033823 | `0b989a71bfb9` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 34851033809 | `0b989a71bfb9` | pull_request | Rust verification | queued:- |
+| 34850969093 | `3a9d2969e6c1` | pull_request | Hosted portability and native qualification | completed:cancelled |
+| 34850969084 | `3a9d2969e6c1` | pull_request | Fault assurance | in_progress:- |
+| 34850969018 | `3a9d2969e6c1` | pull_request | Repository quality | completed:failure |
+| 34850968982 | `3a9d2969e6c1` | pull_request | Agent Workflow Quality shadow | completed:success |
