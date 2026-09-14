@@ -30,12 +30,12 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 34831173557 | `b74b9c1eaa8d` | push | Hosted portability and native qualification | completed:success |
-| 34831173274 | `b74b9c1eaa8d` | push | Repository quality | in_progress:- |
+| 34831173274 | `b74b9c1eaa8d` | push | Repository quality | completed:success |
 | 34831173260 | `b74b9c1eaa8d` | push | Huawei MIT source headers | completed:success |
-| 34831173245 | `b74b9c1eaa8d` | push | Rust verification | in_progress:- |
-| 34831173214 | `b74b9c1eaa8d` | push | Emulated aarch64 portability | in_progress:- |
-| 34831173196 | `b74b9c1eaa8d` | push | Formal assurance | in_progress:- |
-| 34831173155 | `b74b9c1eaa8d` | push | Fault assurance | in_progress:- |
+| 34831173245 | `b74b9c1eaa8d` | push | Rust verification | completed:success |
+| 34831173214 | `b74b9c1eaa8d` | push | Emulated aarch64 portability | completed:success |
+| 34831173196 | `b74b9c1eaa8d` | push | Formal assurance | completed:success |
+| 34831173155 | `b74b9c1eaa8d` | push | Fault assurance | completed:success |
 | 34830614596 | `43bc7f036348` | pull_request | Formal assurance | completed:success |
 | 34830614570 | `43bc7f036348` | pull_request | Repository quality | completed:success |
 | 34830614565 | `43bc7f036348` | pull_request | Emulated aarch64 portability | completed:success |
