@@ -179,4 +179,5 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-boundary-hardening` | `DETACHED` | `d32748d0795e` | 0 | behind 3, ahead 0 |
 | `asb-review-154` | `DETACHED` | `4ceaf04f32a0` | 0 | behind 2, ahead 0 |
 | `asb-review-154-fix` | `DETACHED` | `c68c49eff7e3` | 0 | behind 1, ahead 0 |
-| `asb-verify-latest` | `DETACHED` | `d32748d0795e` | 0 | behind 3, ahead 0 |
+| `asb-signed-merge-repair` | `DETACHED` | `fd5c32d90765` | 0 | behind 1, ahead 1 |
+| `asb-verify-latest` | `DETACHED` | `817a40bfbd7c` | 0 | behind 0, ahead 0 |
