@@ -5,18 +5,18 @@
 
 ## Portfolio overview
 
-**237 ARs tracked** across 7 active status categories.
+**237 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 15 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 63 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 145 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
-| **Superseded** | Replaced by another AR | 7 |
+| **Superseded** | Replaced by another AR | 8 |
 
 ## Dependency graph
 
@@ -270,7 +270,7 @@ flowchart LR
         AR_1046["AR-1046 - Superseded"]:::status_superseded
         AR_1047["AR-1047 - Done"]:::status_done
         AR_1048["AR-1048 - Open"]:::status_open
-        AR_1049["AR-1049 - In progress"]:::status_in_progress
+        AR_1049["AR-1049 - Superseded"]:::status_superseded
         AR_1050["AR-1050 - Superseded"]:::status_superseded
         AR_1051["AR-1051 - Done"]:::status_done
         AR_1052["AR-1052 - Superseded"]:::status_superseded
@@ -1261,12 +1261,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1049](tasks/AR-1049-tmux-created-window-identity.md): Bind tmux setup to its created window | codex-ar1049-startup-recovery-20260914 | Bind tmux remain-on-exit setup to the exact created window identity instead of a fixed index. | No further action: AR-1050 superseded this recovery after PR #16 merged and Trusted main exposed downstream startup readiness. |
-
 ### Open (15)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -1521,11 +1515,12 @@ flowchart LR
 | P3 | [AR-0404](tasks/AR-0404-extended-workloads.md): Expand established benchmark catalogue | Unclaimed | Evaluate SWE-bench Pro, BigCodeBench, EvalPlus and LiveCodeBench as optional suites. | Add signed normal follow-up after rewritten merge so push range is resolvable; rerun exact-main post-merge workflows. |
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Unclaimed | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Monitor all required post-merge CI runs for exact main ca6e75916a8c9831b9107377cd48d731463c272a; release only after every required gate is green. |
 
-### Superseded (7)
+### Superseded (8)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1046](tasks/AR-1046-serialize-emulated-aarch64-agent-tests.md): Serialize emulated AArch64 agent tests | Unclaimed | Make the emulated AArch64 asb-agents fake-node readiness fixtures deterministic without changing production semantics. | No further action: AR-1047 superseded the disproven serialization hypothesis. |
+| P0 | [AR-1049](tasks/AR-1049-tmux-created-window-identity.md): Bind tmux setup to its created window | Unclaimed | Bind tmux remain-on-exit setup to the exact created window identity instead of a fixed index. | No further action: AR-1050 superseded this recovery after PR #16 merged and Trusted main exposed downstream startup readiness. |
 | P0 | [AR-1050](tasks/AR-1050-tmux-authenticated-startup-readiness.md): Acquire authenticated tmux startup readiness | Unclaimed | Wait for bounded stable authenticated tmux server, session and window readiness after detached creation. | No further action: AR-1052 superseded this recovery after PR #17 merged and Trusted main exposed the unavailable server-authority observation. |
 | P0 | [AR-1052](tasks/AR-1052-tmux-server-authority-portability.md): Diagnose trusted tmux server authority | Unclaimed | Diagnose and repair the trusted-runner tmux server-authority portability gap without weakening cleanup authentication. | No further action: AR-1054 superseded this recovery after PR #19 merged and exact-main exposed the downstream socket-completion failure. |
 | P0 | [AR-1054](tasks/AR-1054-tmux-socket-connect-completion.md): Repair tmux socket connection completion | Unclaimed | Repair trusted tmux socket connection completion without weakening authenticated cleanup authority. | No further action: AR-1056 superseded this recovery after PR #20 merged and exact-main localized a remaining connection-stage failure. |

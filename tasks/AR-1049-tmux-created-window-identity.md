@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-created-window-identity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-14T12:15:03+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1049",
   "next_action": "No further action: AR-1050 superseded this recovery after PR #16 merged and Trusted main exposed downstream startup readiness.",
-  "owner": "codex-ar1049-startup-recovery-20260914",
+  "owner": "",
   "plan": "../plans/AR-1049.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "superseded",
   "summary": "Bind tmux remain-on-exit setup to the exact created window identity instead of a fixed index.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Bind tmux setup to its created window",
-  "updated_at": "2026-09-14T10:15:57+00:00",
+  "updated_at": "2026-09-14T10:16:00+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-created-window-identity"
 }
 ---
@@ -159,3 +159,6 @@ ID, and preserve all established cleanup authority. Change no renderer or applic
 - 2026-09-14T10:15:57+00:00: Terminalized stale in-progress claim: PR #16 merged AR-1049 effect;
   Trusted main 34556679585 exposed downstream startup observation, now represented by later recovery
   chain.
+
+- 2026-09-14T10:16:00+00:00: PR #16/aacf672 merged the reviewed window-identity repair; AR-1050 and
+  successors supersede further startup-readiness work.

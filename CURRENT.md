@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1049](tasks/AR-1049-tmux-created-window-identity.md): Bind tmux setup to its created window | Bind tmux remain-on-exit setup to the exact created window identity instead of a fixed index. | No further action: AR-1050 superseded this recovery after PR #16 merged and Trusted main exposed downstream startup readiness. | codex-ar1049-startup-recovery-20260914 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -268,6 +262,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1046](tasks/AR-1046-serialize-emulated-aarch64-agent-tests.md): Serialize emulated AArch64 agent tests | Make the emulated AArch64 asb-agents fake-node readiness fixtures deterministic without changing production semantics. | No further action: AR-1047 superseded the disproven serialization hypothesis. | - |
+| P0 | [AR-1049](tasks/AR-1049-tmux-created-window-identity.md): Bind tmux setup to its created window | Bind tmux remain-on-exit setup to the exact created window identity instead of a fixed index. | No further action: AR-1050 superseded this recovery after PR #16 merged and Trusted main exposed downstream startup readiness. | - |
 | P0 | [AR-1050](tasks/AR-1050-tmux-authenticated-startup-readiness.md): Acquire authenticated tmux startup readiness | Wait for bounded stable authenticated tmux server, session and window readiness after detached creation. | No further action: AR-1052 superseded this recovery after PR #17 merged and Trusted main exposed the unavailable server-authority observation. | - |
 | P0 | [AR-1052](tasks/AR-1052-tmux-server-authority-portability.md): Diagnose trusted tmux server authority | Diagnose and repair the trusted-runner tmux server-authority portability gap without weakening cleanup authentication. | No further action: AR-1054 superseded this recovery after PR #19 merged and exact-main exposed the downstream socket-completion failure. | - |
 | P0 | [AR-1054](tasks/AR-1054-tmux-socket-connect-completion.md): Repair tmux socket connection completion | Repair trusted tmux socket connection completion without weakening authenticated cleanup authority. | No further action: AR-1056 superseded this recovery after PR #20 merged and exact-main localized a remaining connection-stage failure. | - |
