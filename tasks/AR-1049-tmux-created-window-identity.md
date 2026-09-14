@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-created-window-identity",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-14T12:15:03+00:00",
   "depends_on": [],
   "id": "AR-1049",
   "next_action": "Remain OPEN pending a narrow bounded tmux startup-readiness recovery and a green trusted-main rerun.",
-  "owner": "",
+  "owner": "codex-ar1049-startup-recovery-20260914",
   "plan": "../plans/AR-1049.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Bind tmux remain-on-exit setup to the exact created window identity instead of a fixed index.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Bind tmux setup to its created window",
-  "updated_at": "2026-09-11T03:02:57+00:00",
+  "updated_at": "2026-09-14T10:15:03+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-created-window-identity"
 }
 ---
@@ -153,3 +153,5 @@ ID, and preserve all established cleanup authority. Change no renderer or applic
 
 - 2026-09-11T03:02:57+00:00: AR-1050 now records the narrow bounded authenticated startup-readiness
   recovery; AR-1049 remains unaccepted pending its trusted-main result.
+
+- 2026-09-14T10:15:03+00:00: Claimed by codex-ar1049-startup-recovery-20260914.

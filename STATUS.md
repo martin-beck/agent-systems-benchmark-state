@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**237 ARs tracked** across 6 active status categories.
+**237 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 16 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 15 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 63 |
 | **Future** | Deferred roadmap work | 1 |
@@ -270,7 +270,7 @@ flowchart LR
         AR_1046["AR-1046 - Superseded"]:::status_superseded
         AR_1047["AR-1047 - Done"]:::status_done
         AR_1048["AR-1048 - Open"]:::status_open
-        AR_1049["AR-1049 - Open"]:::status_open
+        AR_1049["AR-1049 - In progress"]:::status_in_progress
         AR_1050["AR-1050 - Superseded"]:::status_superseded
         AR_1051["AR-1051 - Done"]:::status_done
         AR_1052["AR-1052 - Superseded"]:::status_superseded
@@ -1261,7 +1261,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (16)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1049](tasks/AR-1049-tmux-created-window-identity.md): Bind tmux setup to its created window | codex-ar1049-startup-recovery-20260914 | Bind tmux remain-on-exit setup to the exact created window identity instead of a fixed index. | Remain OPEN pending a narrow bounded tmux startup-readiness recovery and a green trusted-main rerun. |
+
+### Open (15)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1274,7 +1280,6 @@ flowchart LR
 | P0 | [AR-1042](tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Unclaimed | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. |
 | P0 | [AR-1044](tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Unclaimed | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. |
 | P0 | [AR-1048](tasks/AR-1048-tmux-window-option-portability.md): Make tmux window-option setup portable | Unclaimed | Use an explicit tmux window-option command so trusted-main terminal qualification is portable. | Remain OPEN pending AR-1049 exact created-window identity recovery and a green trusted-main rerun. |
-| P0 | [AR-1049](tasks/AR-1049-tmux-created-window-identity.md): Bind tmux setup to its created window | Unclaimed | Bind tmux remain-on-exit setup to the exact created window identity instead of a fixed index. | Remain OPEN pending a narrow bounded tmux startup-readiness recovery and a green trusted-main rerun. |
 | P0 | [AR-1100](tasks/AR-1100.md): Configuration defaults | Unclaimed | Persist configuration defaults. | PR #154 exact head 38c0399 is under review; platform evidence fails inherited immutable-source check against base ec0c7a3. Do not merge until all checks and base policy are green. |
 | P0 | [AR-1181](tasks/AR-1181.md): TLA admission | Unclaimed | Bound ASB TLC memory. | Implement bounded TLC admission. |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | Repair/rebase the fail-closed TLA provenance pin, then rerun PR #119 exact-head CI; do not merge. |
