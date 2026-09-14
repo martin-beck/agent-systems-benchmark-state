@@ -2,19 +2,19 @@
 {
   "branch": "chore/asb-tui-branch-policy-context",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-14T17:45:24+00:00",
   "depends_on": [],
   "id": "AR-1065",
   "next_action": "A repository maintainer must remove the stale legacy required-status context from asb-tui main while retaining the app-scoped GitHub Actions check, then re-evaluate PR #26.",
-  "owner": "",
+  "owner": "root-branch-policy",
   "plan": "../plans/AR-1065.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Normalize asb-tui main branch protection so successful GitHub Actions checks can merge.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Normalize asb-tui branch required-status policy",
-  "updated_at": "2026-09-14T17:15:21+00:00",
+  "updated_at": "2026-09-14T17:15:24+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-branch-policy-context"
 }
 ---
@@ -29,3 +29,5 @@ credential, or CI evidence must be changed to mask the mismatch.
 
 - 2026-09-14T17:15:21+00:00: Repository protection audit confirms only the app-scoped check remains;
   proceed with exact policy verification.
+
+- 2026-09-14T17:15:24+00:00: Claimed by root-branch-policy.

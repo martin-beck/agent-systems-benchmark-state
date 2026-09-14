@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**239 ARs tracked** across 6 active status categories.
+**239 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 15 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 14 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 63 |
 | **Future** | Deferred roadmap work | 1 |
@@ -285,7 +285,7 @@ flowchart LR
         AR_1061["AR-1061 - Superseded"]:::status_superseded
         AR_1062["AR-1062 - Done"]:::status_done
         AR_1064["AR-1064 - Done"]:::status_done
-        AR_1065["AR-1065 - Open"]:::status_open
+        AR_1065["AR-1065 - In progress"]:::status_in_progress
     end
     subgraph series_11["11 - Additional work"]
         direction TB
@@ -1265,7 +1265,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (15)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1065](tasks/AR-1065-asb-tui-branch-policy-context.md): Normalize asb-tui branch required-status policy | root-branch-policy | Normalize asb-tui main branch protection so successful GitHub Actions checks can merge. | A repository maintainer must remove the stale legacy required-status context from asb-tui main while retaining the app-scoped GitHub Actions check, then re-evaluate PR #26. |
+
+### Open (14)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1277,7 +1283,6 @@ flowchart LR
 | P0 | [AR-1041](tasks/AR-1041-gemini-hook-readiness-race.md): Make Gemini hook readiness publication atomic | Unclaimed | Eliminate the load-sensitive Gemini hook readiness race without weakening validation. | Monitor all 12 checks on draft PR #136 exact head 55648d5a29f4c29e9525eb7f2a890ac5232d7b5a; if terminal green, release OPEN for protected merge decision; do not self-merge. |
 | P0 | [AR-1042](tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Unclaimed | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. |
 | P0 | [AR-1044](tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Unclaimed | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. |
-| P0 | [AR-1065](tasks/AR-1065-asb-tui-branch-policy-context.md): Normalize asb-tui branch required-status policy | Unclaimed | Normalize asb-tui main branch protection so successful GitHub Actions checks can merge. | A repository maintainer must remove the stale legacy required-status context from asb-tui main while retaining the app-scoped GitHub Actions check, then re-evaluate PR #26. |
 | P0 | [AR-1100](tasks/AR-1100.md): Configuration defaults | Unclaimed | Persist configuration defaults. | PR #154 exact head 38c0399 is under review; platform evidence fails inherited immutable-source check against base ec0c7a3. Do not merge until all checks and base policy are green. |
 | P0 | [AR-1181](tasks/AR-1181.md): TLA admission | Unclaimed | Bound ASB TLC memory. | Implement bounded TLC admission. |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | Repair/rebase the fail-closed TLA provenance pin, then rerun PR #119 exact-head CI; do not merge. |
