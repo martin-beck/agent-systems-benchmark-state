@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-hosted-startup-readiness-recovery",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-14T12:35:25+00:00",
   "depends_on": [],
   "id": "AR-1064",
   "next_action": "Implement the bounded hosted-runner startup-readiness recovery in asb-tui tests/terminal_foundation.rs, then run exact Rust 1.93.0 gates and trusted-main.",
-  "owner": "",
+  "owner": "codex-ar1064-tmux-startup-recovery-20260914",
   "plan": "../plans/AR-1064.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Recover authenticated tmux startup observation on the hosted trusted runner without weakening authority or cleanup.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Recover hosted tmux startup readiness",
-  "updated_at": "2026-09-14T10:35:17+00:00",
+  "updated_at": "2026-09-14T10:35:25+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-hosted-startup-readiness-recovery"
 }
 ---
@@ -39,3 +39,5 @@ recovery and must prove it on the hosted runner.
 
 - 2026-09-14T10:35:17+00:00: Hosted Trusted-main failure is confirmed and this bounded recovery is
   dependency-ready.
+
+- 2026-09-14T10:35:25+00:00: Claimed by codex-ar1064-tmux-startup-recovery-20260914.
