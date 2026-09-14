@@ -29,12 +29,12 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34860163945 | `d32748d0795e` | push | Rust verification | in_progress:- |
+| 34860163945 | `d32748d0795e` | push | Rust verification | completed:success |
 | 34860163879 | `d32748d0795e` | push | Hosted portability and native qualification | completed:success |
-| 34860163823 | `d32748d0795e` | push | Formal assurance | completed:failure |
-| 34860163821 | `d32748d0795e` | push | Emulated aarch64 portability | in_progress:- |
+| 34860163823 | `d32748d0795e` | push | Formal assurance | in_progress:- |
+| 34860163821 | `d32748d0795e` | push | Emulated aarch64 portability | completed:success |
 | 34860163793 | `d32748d0795e` | push | Fault assurance | completed:success |
-| 34860163773 | `d32748d0795e` | push | Repository quality | in_progress:- |
+| 34860163773 | `d32748d0795e` | push | Repository quality | completed:success |
 | 34860163768 | `d32748d0795e` | push | Huawei MIT source headers | completed:success |
 | 34859410308 | `1b821930cb50` | pull_request | Repository quality | completed:success |
 | 34859408744 | `1b821930cb50` | pull_request | Huawei MIT source headers | completed:success |
