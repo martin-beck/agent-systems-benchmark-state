@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-hosted-startup-readiness-recovery",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-14T12:35:25+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1064",
   "next_action": "PR #26 is exact-head green but protected merge is blocked because GitHub reports the required context as pending; resolve policy/check-run propagation without admin bypass, then require post-merge Trusted main.",
-  "owner": "codex-ar1064-tmux-startup-recovery-20260914",
+  "owner": "",
   "plan": "../plans/AR-1064.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Recover authenticated tmux startup observation on the hosted trusted runner without weakening authority or cleanup.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Recover hosted tmux startup readiness",
-  "updated_at": "2026-09-14T10:42:14+00:00",
+  "updated_at": "2026-09-14T10:43:12+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-hosted-startup-readiness-recovery"
 }
 ---
@@ -44,3 +44,7 @@ recovery and must prove it on the hosted runner.
 
 - 2026-09-14T10:42:14+00:00: Published signed candidate PR #26 at 58cf344; local and exact-head
   gates green. Await protected merge and fresh Trusted main.
+
+- 2026-09-14T10:43:12+00:00: Candidate PR #26 at 58cf344 is exact-head green, but protected merge is
+  blocked by GitHub required-context propagation; retain AR open pending policy resolution and
+  post-merge Trusted main.
