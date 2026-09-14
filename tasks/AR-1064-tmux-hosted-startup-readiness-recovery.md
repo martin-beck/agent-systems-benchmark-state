@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-14T12:35:25+00:00",
   "depends_on": [],
   "id": "AR-1064",
-  "next_action": "Implement the bounded hosted-runner startup-readiness recovery in asb-tui tests/terminal_foundation.rs, then run exact Rust 1.93.0 gates and trusted-main.",
+  "next_action": "PR #26 is exact-head green but protected merge is blocked because GitHub reports the required context as pending; resolve policy/check-run propagation without admin bypass, then require post-merge Trusted main.",
   "owner": "codex-ar1064-tmux-startup-recovery-20260914",
   "plan": "../plans/AR-1064.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover authenticated tmux startup observation on the hosted trusted runner without weakening authority or cleanup.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Recover hosted tmux startup readiness",
-  "updated_at": "2026-09-14T10:35:25+00:00",
+  "updated_at": "2026-09-14T10:42:14+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-hosted-startup-readiness-recovery"
 }
 ---
@@ -41,3 +41,6 @@ recovery and must prove it on the hosted runner.
   dependency-ready.
 
 - 2026-09-14T10:35:25+00:00: Claimed by codex-ar1064-tmux-startup-recovery-20260914.
+
+- 2026-09-14T10:42:14+00:00: Published signed candidate PR #26 at 58cf344; local and exact-head
+  gates green. Await protected merge and fresh Trusted main.

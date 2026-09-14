@@ -1267,7 +1267,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1064](tasks/AR-1064-tmux-hosted-startup-readiness-recovery.md): Recover hosted tmux startup readiness | codex-ar1064-tmux-startup-recovery-20260914 | Recover authenticated tmux startup observation on the hosted trusted runner without weakening authority or cleanup. | Implement the bounded hosted-runner startup-readiness recovery in asb-tui tests/terminal_foundation.rs, then run exact Rust 1.93.0 gates and trusted-main. |
+| P0 | [AR-1064](tasks/AR-1064-tmux-hosted-startup-readiness-recovery.md): Recover hosted tmux startup readiness | codex-ar1064-tmux-startup-recovery-20260914 | Recover authenticated tmux startup observation on the hosted trusted runner without weakening authority or cleanup. | PR #26 is exact-head green but protected merge is blocked because GitHub reports the required context as pending; resolve policy/check-run propagation without admin bypass, then require post-merge Trusted main. |
 
 ### Open (14)
 
