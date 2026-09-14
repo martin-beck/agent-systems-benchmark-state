@@ -2,8 +2,8 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `c6bdd2ba1374b03f1e0a5f4e437c1fb70b6fdc47`
-- Local origin/main: `c6bdd2ba1374b03f1e0a5f4e437c1fb70b6fdc47`
+- Product remote main: `c83e9486110217f71b6ba581ad3a0cda83e53605`
+- Local origin/main: `c83e9486110217f71b6ba581ad3a0cda83e53605`
 - Primary worktree head: `bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09`
 
 ## Open pull requests
@@ -24,20 +24,21 @@ Generated from local Git and GitHub. Do not edit.
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
 | #151 | `dependabot/cargo/serde-1.0.229@1e3bafa11ff3` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
 | #154 | `feature/ar-1100@38c039975077` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | AR-1100: add authoritative configuration defaults |
+| #160 | `repair/github-dco-fix@a0b0d8bb0c58` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | docs: align hosted DCO identity |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34854331236 | `c6bdd2ba1374` | push | Emulated aarch64 portability | in_progress:- |
-| 34854331167 | `c6bdd2ba1374` | push | Repository quality | completed:failure |
-| 34854331116 | `c6bdd2ba1374` | push | Huawei MIT source headers | completed:success |
-| 34854331094 | `c6bdd2ba1374` | push | Hosted portability and native qualification | completed:failure |
-| 34854331088 | `c6bdd2ba1374` | push | Fault assurance | in_progress:- |
-| 34854331066 | `c6bdd2ba1374` | push | Formal assurance | in_progress:- |
-| 34854331040 | `c6bdd2ba1374` | push | Rust verification | in_progress:- |
-| 34854296906 | `f16f8e491189` | push | Rust verification | completed:cancelled |
-| 34854296864 | `f16f8e491189` | push | Hosted portability and native qualification | completed:cancelled |
-| 34854296736 | `f16f8e491189` | push | Huawei MIT source headers | completed:success |
-| 34854296726 | `f16f8e491189` | push | Repository quality | completed:cancelled |
-| 34854296650 | `f16f8e491189` | push | Fault assurance | completed:cancelled |
+| 34855687570 | `a0b0d8bb0c58` | pull_request | Huawei MIT source headers | completed:success |
+| 34855687526 | `a0b0d8bb0c58` | pull_request | Hosted portability and native qualification | completed:success |
+| 34855687512 | `a0b0d8bb0c58` | pull_request | Repository quality | in_progress:- |
+| 34855687429 | `a0b0d8bb0c58` | pull_request | Formal assurance | in_progress:- |
+| 34855687381 | `a0b0d8bb0c58` | pull_request | Rust verification | in_progress:- |
+| 34855687346 | `a0b0d8bb0c58` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 34855687294 | `a0b0d8bb0c58` | pull_request | Fault assurance | completed:success |
+| 34855687265 | `a0b0d8bb0c58` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 34855517592 | `c83e94861102` | push | Formal assurance | completed:success |
+| 34855517505 | `c83e94861102` | push | Repository quality | completed:failure |
+| 34855517482 | `c83e94861102` | push | Huawei MIT source headers | completed:success |
+| 34855517472 | `c83e94861102` | push | Hosted portability and native qualification | completed:success |
