@@ -24,20 +24,21 @@ Generated from local Git and GitHub. Do not edit.
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
 | #151 | `dependabot/cargo/serde-1.0.229@de7a00922c14` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
 | #154 | `feature/ar-1100@38c039975077` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | AR-1100: add authoritative configuration defaults |
+| #157 | `feature/asb-tui-lifecycle-router-recovered@d078d7ddd905` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat: add safe asb tui lifecycle router |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34849116862 | `d078d7ddd905` | pull_request | Rust verification | in_progress:- |
+| 34849116819 | `d078d7ddd905` | pull_request | Repository quality | in_progress:- |
+| 34849116765 | `d078d7ddd905` | pull_request | Huawei MIT source headers | completed:success |
+| 34849116745 | `d078d7ddd905` | pull_request | Formal assurance | in_progress:- |
+| 34849116720 | `d078d7ddd905` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 34849116672 | `d078d7ddd905` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 34849116665 | `d078d7ddd905` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 34849116643 | `d078d7ddd905` | pull_request | Fault assurance | in_progress:- |
 | 34831173557 | `b74b9c1eaa8d` | push | Hosted portability and native qualification | completed:success |
 | 34831173274 | `b74b9c1eaa8d` | push | Repository quality | completed:success |
 | 34831173260 | `b74b9c1eaa8d` | push | Huawei MIT source headers | completed:success |
 | 34831173245 | `b74b9c1eaa8d` | push | Rust verification | completed:success |
-| 34831173214 | `b74b9c1eaa8d` | push | Emulated aarch64 portability | completed:success |
-| 34831173196 | `b74b9c1eaa8d` | push | Formal assurance | completed:success |
-| 34831173155 | `b74b9c1eaa8d` | push | Fault assurance | completed:success |
-| 34830614596 | `43bc7f036348` | pull_request | Formal assurance | completed:success |
-| 34830614570 | `43bc7f036348` | pull_request | Repository quality | completed:success |
-| 34830614565 | `43bc7f036348` | pull_request | Emulated aarch64 portability | completed:success |
-| 34830614540 | `43bc7f036348` | pull_request | Huawei MIT source headers | completed:success |
-| 34830614537 | `43bc7f036348` | pull_request | Rust verification | completed:success |
