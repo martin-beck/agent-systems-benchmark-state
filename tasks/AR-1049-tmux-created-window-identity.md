@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-14T12:15:03+00:00",
   "depends_on": [],
   "id": "AR-1049",
-  "next_action": "Remain OPEN pending a narrow bounded tmux startup-readiness recovery and a green trusted-main rerun.",
+  "next_action": "No further action: AR-1050 superseded this recovery after PR #16 merged and Trusted main exposed downstream startup readiness.",
   "owner": "codex-ar1049-startup-recovery-20260914",
   "plan": "../plans/AR-1049.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind tmux remain-on-exit setup to the exact created window identity instead of a fixed index.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Bind tmux setup to its created window",
-  "updated_at": "2026-09-14T10:15:03+00:00",
+  "updated_at": "2026-09-14T10:15:57+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-created-window-identity"
 }
 ---
@@ -155,3 +155,7 @@ ID, and preserve all established cleanup authority. Change no renderer or applic
   recovery; AR-1049 remains unaccepted pending its trusted-main result.
 
 - 2026-09-14T10:15:03+00:00: Claimed by codex-ar1049-startup-recovery-20260914.
+
+- 2026-09-14T10:15:57+00:00: Terminalized stale in-progress claim: PR #16 merged AR-1049 effect;
+  Trusted main 34556679585 exposed downstream startup observation, now represented by later recovery
+  chain.
