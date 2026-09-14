@@ -5,16 +5,16 @@
 
 ## Portfolio overview
 
-**239 ARs tracked** across 7 active status categories.
+**239 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 13 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 63 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 147 |
+| **Done** | Accepted, integrated, and durably verified | 148 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 9 |
 
@@ -289,7 +289,7 @@ flowchart LR
     end
     subgraph series_11["11 - Additional work"]
         direction TB
-        AR_1100["AR-1100 - In progress"]:::status_in_progress
+        AR_1100["AR-1100 - Done"]:::status_done
         AR_1110["AR-1110 - Planned"]:::status_planned
         AR_1120["AR-1120 - Planned"]:::status_planned
         AR_1130["AR-1130 - Planned"]:::status_planned
@@ -1265,12 +1265,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1100](tasks/AR-1100.md): Configuration defaults | codex-asb-ar1100-repair-20260914 | Persist configuration defaults. | PR #154 exact head 38c0399 is under review; platform evidence fails inherited immutable-source check against base ec0c7a3. Do not merge until all checks and base policy are green. |
-
 ### Open (13)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -1373,7 +1367,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (147)
+### Done (148)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1415,6 +1409,7 @@ flowchart LR
 | P0 | [AR-1062](tasks/AR-1062-diagnose-nested-tmux-server-connect.md): Diagnose nested tmux server connection failures | Unclaimed | Diagnose the exact nested tmux server and rejected socket-error class on trusted main. | Run exact Rust 1.93.0 full gates on the diagnostic-only test patch, then freeze a signed DCO commit for immutable review. |
 | P0 | [AR-1064](tasks/AR-1064-tmux-hosted-startup-readiness-recovery.md): Recover hosted tmux startup readiness | Unclaimed | Recover authenticated tmux startup observation on the hosted trusted runner without weakening authority or cleanup. | PR #26 is exact-head green but protected merge is blocked because GitHub reports the required context as pending; resolve policy/check-run propagation without admin bypass, then require post-merge Trusted main. |
 | P0 | [AR-1065](tasks/AR-1065-asb-tui-branch-policy-context.md): Normalize asb-tui branch required-status policy | Unclaimed | Normalize asb-tui main branch protection so successful GitHub Actions checks can merge. | A repository maintainer must remove the stale legacy required-status context from asb-tui main while retaining the app-scoped GitHub Actions check, then re-evaluate PR #26. |
+| P0 | [AR-1100](tasks/AR-1100.md): Configuration defaults | Unclaimed | Persist configuration defaults. | PR #154 exact head 38c0399 is under review; platform evidence fails inherited immutable-source check against base ec0c7a3. Do not merge until all checks and base policy are green. |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Unclaimed | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. |
 | P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Unclaimed | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. |
 | P1 | [AR-0004](tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Unclaimed | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. |

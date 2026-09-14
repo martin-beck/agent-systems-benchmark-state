@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1100](tasks/AR-1100.md): Configuration defaults | Persist configuration defaults. | PR #154 exact head 38c0399 is under review; platform evidence fails inherited immutable-source check against base ec0c7a3. Do not merge until all checks and base policy are green. | codex-asb-ar1100-repair-20260914 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -153,6 +147,7 @@ Never edit this file directly.
 | P0 | [AR-1062](tasks/AR-1062-diagnose-nested-tmux-server-connect.md): Diagnose nested tmux server connection failures | Diagnose the exact nested tmux server and rejected socket-error class on trusted main. | Run exact Rust 1.93.0 full gates on the diagnostic-only test patch, then freeze a signed DCO commit for immutable review. | - |
 | P0 | [AR-1064](tasks/AR-1064-tmux-hosted-startup-readiness-recovery.md): Recover hosted tmux startup readiness | Recover authenticated tmux startup observation on the hosted trusted runner without weakening authority or cleanup. | PR #26 is exact-head green but protected merge is blocked because GitHub reports the required context as pending; resolve policy/check-run propagation without admin bypass, then require post-merge Trusted main. | - |
 | P0 | [AR-1065](tasks/AR-1065-asb-tui-branch-policy-context.md): Normalize asb-tui branch required-status policy | Normalize asb-tui main branch protection so successful GitHub Actions checks can merge. | A repository maintainer must remove the stale legacy required-status context from asb-tui main while retaining the app-scoped GitHub Actions check, then re-evaluate PR #26. | - |
+| P0 | [AR-1100](tasks/AR-1100.md): Configuration defaults | Persist configuration defaults. | PR #154 exact head 38c0399 is under review; platform evidence fails inherited immutable-source check against base ec0c7a3. Do not merge until all checks and base policy are green. | - |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. | - |
 | P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. | - |
 | P1 | [AR-0004](tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. | - |
