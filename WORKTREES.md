@@ -101,7 +101,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-llm-fixture-scenario-contract` | `feat/llm-fixture-scenario-contract` | `4d15bbc7e1d0` | 0 | behind 135, ahead 0 |
 | `agent-systems-benchmark-local-inference-provider-profiles` | `feat/local-inference-provider-profiles` | `eed49592617a` | 0 | behind 126, ahead 0 |
 | `agent-systems-benchmark-local-llm-testing-recommendations` | `docs/local-llm-testing-recommendations` | `4a23069336be` | 0 | behind 139, ahead 0 |
-| `agent-systems-benchmark-main-forward` | `repair/github-dco-fix` | `a0b0d8bb0c58` | 0 | behind 0, ahead 1 |
+| `agent-systems-benchmark-main-forward` | `repair/github-dco-fix` | `dfd3f80d6d57` | 0 | behind 0, ahead 5 |
 | `agent-systems-benchmark-main-merge-integrity` | `fix/main-merge-integrity` | `bd6f450ab877` | 0 | behind 97, ahead 2 |
 | `agent-systems-benchmark-main-repair` | `DETACHED` | `cc4df693964d` | 0 | behind 26, ahead 0 |
 | `agent-systems-benchmark-main-repair2` | `DETACHED` | `b9fb334b29f5` | 0 | behind 25, ahead 0 |
