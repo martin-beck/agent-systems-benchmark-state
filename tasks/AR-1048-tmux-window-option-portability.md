@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-window-option-portability",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-14T10:31:54+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1048",
   "next_action": "No further action: AR-1049 superseded this recovery after PR #15 merged and Trusted main falsified fixed session:0 targeting.",
-  "owner": "codex-root",
+  "owner": "",
   "plan": "../plans/AR-1048.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "superseded",
   "summary": "Use an explicit tmux window-option command so trusted-main terminal qualification is portable.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Make tmux window-option setup portable",
-  "updated_at": "2026-09-14T10:16:57+00:00",
+  "updated_at": "2026-09-14T10:16:59+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-window-option-portability"
 }
 ---
@@ -127,3 +127,6 @@ authority, and change no renderer or application behavior.
 
 - 2026-09-14T10:16:57+00:00: Terminalized predecessor after PR #15/6853d319 and AR-1049 successor
   evidence.
+
+- 2026-09-14T10:16:59+00:00: AR-1049 is the authorized exact-window successor; no implementation
+  remains in this AR.
