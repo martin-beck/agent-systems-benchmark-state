@@ -177,4 +177,5 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-workbuddy-provenance` | `feature/workbuddy-provenance` | `9aad1317bdca` | 0 | behind 183, ahead 0 |
 | `asb-ar1100-repair` | `DETACHED` | `4ceaf04f32a0` | 0 | behind 0, ahead 1 |
 | `asb-boundary-hardening` | `DETACHED` | `d32748d0795e` | 0 | behind 0, ahead 0 |
+| `asb-review-154` | `DETACHED` | `4ceaf04f32a0` | 0 | behind 0, ahead 1 |
 | `asb-verify-latest` | `DETACHED` | `d32748d0795e` | 0 | behind 0, ahead 0 |
