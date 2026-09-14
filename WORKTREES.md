@@ -30,6 +30,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar1024-descriptor` | `DETACHED` | `9c164c6ed8fe` | 0 | behind 0, ahead 3 |
 | `agent-systems-benchmark-ar1024-router` | `DETACHED` | `1e902a8d96a7` | 0 | behind 0, ahead 2 |
 | `agent-systems-benchmark-ar1024-wire` | `DETACHED` | `565e66043fff` | 0 | behind 0, ahead 3 |
+| `agent-systems-benchmark-ar1025-broker-seam` | `DETACHED` | `5999f8ed8dbd` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-ar1029` | `audit/ar1029-legacy-tui` | `b74b9c1eaa8d` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar1036-catalog` | `DETACHED` | `b74b9c1eaa8d` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar1060-ci-topic` | `repair/ar1060-ci-topology` | `7ec2ac620293` | 0 | behind 5, ahead 0 |
