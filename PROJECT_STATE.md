@@ -31,7 +31,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 34860163945 | `d32748d0795e` | push | Rust verification | completed:success |
 | 34860163879 | `d32748d0795e` | push | Hosted portability and native qualification | completed:success |
-| 34860163823 | `d32748d0795e` | push | Formal assurance | in_progress:- |
+| 34860163823 | `d32748d0795e` | push | Formal assurance | completed:success |
 | 34860163821 | `d32748d0795e` | push | Emulated aarch64 portability | completed:success |
 | 34860163793 | `d32748d0795e` | push | Fault assurance | completed:success |
 | 34860163773 | `d32748d0795e` | push | Repository quality | completed:success |
