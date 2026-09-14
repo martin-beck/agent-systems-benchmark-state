@@ -5,12 +5,12 @@
 
 ## Portfolio overview
 
-**239 ARs tracked** across 6 active status categories.
+**240 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 13 |
+| **Open** | Dependency-ready and available to claim | 14 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 63 |
 | **Future** | Deferred roadmap work | 1 |
@@ -300,6 +300,7 @@ flowchart LR
         AR_1170["AR-1170 - Planned"]:::status_planned
         AR_1180["AR-1180 - Planned"]:::status_planned
         AR_1181["AR-1181 - Open"]:::status_open
+        AR_1182["AR-1182 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1262,10 +1263,11 @@ flowchart LR
 | [AR-1170](tasks/AR-1170.md) | [AR-1034](tasks/AR-1034-asb-tui-configuration-center.md), [AR-1160](tasks/AR-1160.md) | [AR-0807](tasks/AR-0807-tui-resilience-accessibility.md), [AR-0809](tasks/AR-0809-frontend-workflow-guides.md), [AR-0823](tasks/AR-0823-installation-qualification.md), [AR-0873](tasks/AR-0873-ci-workflow-captures.md), [AR-1011](tasks/AR-1011-tui-ux-quality.md), [AR-1026](tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1031](tasks/AR-1031-asb-tui-landing-screen.md), [AR-1032](tasks/AR-1032-asb-tui-contextual-help.md), [AR-1035](tasks/AR-1035-asb-tui-reports-compare.md), [AR-1180](tasks/AR-1180.md) |
 | [AR-1180](tasks/AR-1180.md) | [AR-1026](tasks/AR-1026-asb-tui-cross-repository-integration.md), [AR-1140](tasks/AR-1140.md), [AR-1170](tasks/AR-1170.md) | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md) |
 | [AR-1181](tasks/AR-1181.md) | None | None |
+| [AR-1182](tasks/AR-1182-coordinator-v036-supersession-vendor-sync.md) | None | None |
 
 ## Complete AR inventory
 
-### Open (13)
+### Open (14)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1278,6 +1280,7 @@ flowchart LR
 | P0 | [AR-1042](tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Unclaimed | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. |
 | P0 | [AR-1044](tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Unclaimed | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. |
 | P0 | [AR-1181](tasks/AR-1181.md): TLA admission | Unclaimed | Bound ASB TLC memory. | Implement bounded TLC admission. |
+| P0 | [AR-1182](tasks/AR-1182-coordinator-v036-supersession-vendor-sync.md): Coordinator v0.3.6 supersession vendor synchronization | Unclaimed | Consume coordinator v0.3.6 and repair the verified vendor pin for supersession readiness. | Read the plan; verify the signed v0.3.6 tag and run the supported vendor sync in an isolated state worktree. |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | Repair/rebase the fail-closed TLA provenance pin, then rerun PR #119 exact-head CI; do not merge. |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Unclaimed | Qualify pinned OpenJiuwen live execution. | Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI. |
 | P1 | [AR-0908](tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | Unclaimed | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Hold PR #125 unchanged; shared formal asset and native-runner pin owners must repair their gates before a fresh exact-head run. |
