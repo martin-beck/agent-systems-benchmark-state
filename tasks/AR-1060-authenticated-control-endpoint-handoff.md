@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1060.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths.",
-  "task_revision": 157,
+  "task_revision": 158,
   "title": "Add authenticated control endpoint handoff",
-  "updated_at": "2026-09-13T20:02:23+00:00",
+  "updated_at": "2026-09-14T10:04:12+00:00",
   "worktree_key": "agent-systems-benchmark-authenticated-control-endpoint-handoff"
 }
 ---
@@ -494,3 +494,7 @@ planned until their full dependency sets are done.
 - 2026-09-13T20:02:23+00:00: No worker remains active; descendant recovery is stopped because
   protected-main merge ec0c7a3 lacks Signed-off-by and all descendants retain that invalid commit in
   policy range. Requires authorized repository-level recovery without rewrite or policy weakening.
+
+- 2026-09-14T10:04:12+00:00: User authorized one-time protected-history repair; signed Web Flow
+  merge b74b9c1 now passes exact topology and DCO policy. Resume AR-1060 for post-repair
+  verification.
