@@ -30,3 +30,10 @@ content; it does not authorize changing product or TUI code.
 Current verification stops at `tools/handoffctl.py`: lock digest
 `ccc2145c2d6345d93648566c66c79d9d1e7fe32a1ee2c52fd79e455220325f10` differs from checked-in
 digest `8d9a4304de2f7d7a074508c2232a8853864f94c2a9c1ee0a1df06c4632dfca2f`.
+
+- 2026-09-14T00:00:00+00:00: Upstream release audit confirms `v0.3.5` at
+  `510817b93feb80dde13e5a6c61d657954fae2346` remains the latest signed tag and release. The only
+  open upstream PR, #22, owns bounded TLC admission and its verification is failing; it neither
+  publishes nor qualifies the four-line lease-recovery behavior. Do not vendor untagged upstream
+  main, PR #22, or any mutable ref. AR-1182 remains externally blocked pending a separately reviewed
+  signed upstream release containing the required recovery behavior.
