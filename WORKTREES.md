@@ -42,7 +42,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-asb-cli-workflow-captures` | `docs/asb-cli-workflow-captures-attestation` | `b18e38ad94f1` | 0 | behind 47, ahead 0 |
 | `agent-systems-benchmark-asb-tui-capabilities-command` | `feature/asb-tui-capabilities-command` | `d60d23510044` | 0 | behind 50, ahead 0 |
 | `agent-systems-benchmark-asb-tui-lifecycle-router` | `feature/asb-tui-lifecycle-router` | `c545c33c8bfe` | 0 | behind 46, ahead 1 |
-| `agent-systems-benchmark-asb-tui-lifecycle-router-rebased-candidate` | `DETACHED` | `18de85738780` | 0 | behind 0, ahead 1 |
+| `agent-systems-benchmark-asb-tui-lifecycle-router-rebased-candidate` | `DETACHED` | `869b1d086261` | 0 | behind 0, ahead 2 |
 | `agent-systems-benchmark-authenticated-control-endpoint-handoff` | `feature/authenticated-control-endpoint-handoff` | `f34e4f57e141` | 0 | behind 8, ahead 0 |
 | `agent-systems-benchmark-beginner-workflows` | `docs/beginner-workflows` | `328de90ef1ed` | 0 | behind 152, ahead 0 |
 | `agent-systems-benchmark-benchmark-validity` | `feature/benchmark-validity` | `60a6c730457b` | 0 | behind 280, ahead 0 |
