@@ -27,8 +27,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar0878-integration` | `DETACHED` | `0fbec95d2154` | 0 | behind 115, ahead 0 |
 | `agent-systems-benchmark-ar0880-integration` | `integration/ar0880-b7559931` | `2a85872285e6` | 0 | behind 97, ahead 0 |
 | `agent-systems-benchmark-ar0906-merge-dco` | `repair/ar0906-merge-dco` | `66ca27afc2fb` | 0 | behind 51, ahead 0 |
-| `agent-systems-benchmark-ar1024-descriptor` | `DETACHED` | `1e902a8d96a7` | 1 | behind 0, ahead 2 |
-| changed files | - | - | - | `crates/asb-cli/src/tui.rs` |
+| `agent-systems-benchmark-ar1024-descriptor` | `DETACHED` | `9c164c6ed8fe` | 0 | behind 0, ahead 3 |
 | `agent-systems-benchmark-ar1024-router` | `DETACHED` | `1e902a8d96a7` | 0 | behind 0, ahead 2 |
 | `agent-systems-benchmark-ar1060-ci-topic` | `repair/ar1060-ci-topology` | `7ec2ac620293` | 0 | behind 5, ahead 0 |
 | `agent-systems-benchmark-ar1060-dco-topic` | `repair/ar1060-dco-correction` | `43bc7f036348` | 0 | behind 1, ahead 0 |
