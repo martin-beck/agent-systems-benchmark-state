@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-hosted-startup-readiness-recovery",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-14T17:40:24+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1064",
   "next_action": "PR #26 is exact-head green but protected merge is blocked because GitHub reports the required context as pending; resolve policy/check-run propagation without admin bypass, then require post-merge Trusted main.",
-  "owner": "root-tmux-fix",
+  "owner": "",
   "plan": "../plans/AR-1064.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Recover authenticated tmux startup observation on the hosted trusted runner without weakening authority or cleanup.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Recover hosted tmux startup readiness",
-  "updated_at": "2026-09-14T17:10:24+00:00",
+  "updated_at": "2026-09-14T17:10:43+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-hosted-startup-readiness-recovery"
 }
 ---
@@ -50,3 +50,9 @@ recovery and must prove it on the hosted runner.
   post-merge Trusted main.
 
 - 2026-09-14T17:10:24+00:00: Claimed by root-tmux-fix.
+
+- 2026-09-14T17:10:43+00:00: Completed with evidence: exact runner-user reproduction showed
+  /usr/sbin/nologin caused tmux and PTY panes to exit; trusted-main merge
+  78bf72d111953f5da476a3c49f9d2d66f952638b sets SHELL=/bin/bash only for the terminal gate. Run
+  34872879697 passed all 31 terminal tests, coverage, supply-chain, privacy, and provenance gates.
+  Runner login shell remains locked.
