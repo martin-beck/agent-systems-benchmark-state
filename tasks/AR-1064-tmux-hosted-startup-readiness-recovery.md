@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1064.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Recover authenticated tmux startup observation on the hosted trusted runner without weakening authority or cleanup.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Recover hosted tmux startup readiness",
-  "updated_at": "2026-09-14T10:30:00+00:00",
+  "updated_at": "2026-09-14T10:35:17+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-hosted-startup-readiness-recovery"
 }
 ---
@@ -36,3 +36,6 @@ recovery and must prove it on the hosted runner.
   repeated local serial and parallel terminal suites, full Rust gates, privacy/schema/publication
   checks, and a clean worktree.
 
+
+- 2026-09-14T10:35:17+00:00: Hosted Trusted-main failure is confirmed and this bounded recovery is
+  dependency-ready.
