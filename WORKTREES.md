@@ -28,7 +28,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar0880-integration` | `integration/ar0880-b7559931` | `2a85872285e6` | 0 | behind 97, ahead 0 |
 | `agent-systems-benchmark-ar0906-merge-dco` | `repair/ar0906-merge-dco` | `66ca27afc2fb` | 0 | behind 51, ahead 0 |
 | `agent-systems-benchmark-ar1024-descriptor` | `DETACHED` | `9c164c6ed8fe` | 0 | behind 0, ahead 3 |
-| `agent-systems-benchmark-ar1024-router` | `DETACHED` | `1e902a8d96a7` | 0 | behind 0, ahead 2 |
+| `agent-systems-benchmark-ar1024-router` | `DETACHED` | `d078d7ddd905` | 0 | behind 0, ahead 3 |
 | `agent-systems-benchmark-ar1024-wire` | `DETACHED` | `565e66043fff` | 0 | behind 0, ahead 3 |
 | `agent-systems-benchmark-ar1025-broker-seam` | `DETACHED` | `e3b876ac011d` | 0 | behind 0, ahead 2 |
 | `agent-systems-benchmark-ar1029` | `audit/ar1029-legacy-tui` | `b74b9c1eaa8d` | 0 | behind 0, ahead 0 |
