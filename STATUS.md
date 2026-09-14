@@ -5,14 +5,14 @@
 
 ## Portfolio overview
 
-**238 ARs tracked** across 6 active status categories.
+**239 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 15 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
-| **Planned** | Defined work awaiting promotion or dependencies | 63 |
+| **Planned** | Defined work awaiting promotion or dependencies | 64 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 145 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -285,6 +285,7 @@ flowchart LR
         AR_1061["AR-1061 - Superseded"]:::status_superseded
         AR_1062["AR-1062 - Done"]:::status_done
         AR_1064["AR-1064 - Open"]:::status_open
+        AR_1065["AR-1065 - Planned"]:::status_planned
     end
     subgraph series_11["11 - Additional work"]
         direction TB
@@ -1249,6 +1250,7 @@ flowchart LR
 | [AR-1061](tasks/AR-1061-isolate-concurrent-tmux-fixtures.md) | [AR-1062](tasks/AR-1062-diagnose-nested-tmux-server-connect.md) | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md) |
 | [AR-1062](tasks/AR-1062-diagnose-nested-tmux-server-connect.md) | None | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1058](tasks/AR-1058-tmux-startup-observation-diagnostics.md), [AR-1061](tasks/AR-1061-isolate-concurrent-tmux-fixtures.md) |
 | [AR-1064](tasks/AR-1064-tmux-hosted-startup-readiness-recovery.md) | None | None |
+| [AR-1065](tasks/AR-1065-asb-tui-branch-policy-context.md) | None | None |
 | [AR-1100](tasks/AR-1100.md) | [AR-0313](tasks/AR-0313-all-agents-provider.md) | [AR-1120](tasks/AR-1120.md) |
 | [AR-1110](tasks/AR-1110.md) | [AR-0315](tasks/AR-0315-provider-parity-conformance.md), [AR-1120](tasks/AR-1120.md) | [AR-1130](tasks/AR-1130.md) |
 | [AR-1120](tasks/AR-1120.md) | [AR-0320](tasks/AR-0320-provider-credential-integration.md), [AR-1100](tasks/AR-1100.md) | [AR-1110](tasks/AR-1110.md) |
@@ -1293,7 +1295,7 @@ flowchart LR
 | P1 | [AR-0890](tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Unclaimed | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. |
 | P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Unclaimed | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun failed Repository quality workflow 34339927858 on unchanged main; if failure repeats, isolate and repair test-state ownership before any feature work. |
 
-### Planned (63)
+### Planned (64)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1313,6 +1315,7 @@ flowchart LR
 | P0 | [AR-1033](tasks/AR-1033-asb-tui-visual-system.md): Establish the professional TUI visual system | Unclaimed | Create a responsive, accessible and professional visual system for every TUI screen. | Create the standalone Ratatui visual system after the application shell is integrated. |
 | P0 | [AR-1034](tasks/AR-1034-asb-tui-configuration-center.md): Add the standalone TUI configuration center | Unclaimed | Add a searchable configuration menu for frontend preferences and benchmark defaults. | Implement the non-secret configuration center foundation after the visual system and ASB wizard control API are stable; AR-1170 owns provider, authentication and default integration. |
 | P0 | [AR-1035](tasks/AR-1035-asb-tui-reports-compare.md): Build recent-runs, report and comparison workspaces | Unclaimed | Add searchable recent runs, report inspection and evidence-qualified comparison workspaces. | Implement report and comparison screens after recording workflows publish stable live and strict-replay source labels. |
+| P0 | [AR-1065](tasks/AR-1065-asb-tui-branch-policy-context.md): Normalize asb-tui branch required-status policy | Unclaimed | Normalize asb-tui main branch protection so successful GitHub Actions checks can merge. | A repository maintainer must remove the stale legacy required-status context from asb-tui main while retaining the app-scoped GitHub Actions check, then re-evaluate PR #26. |
 | P0 | [AR-1110](tasks/AR-1110.md): Provider and model registry | Unclaimed | Manage providers and models. | Read the plan. |
 | P0 | [AR-1120](tasks/AR-1120.md): Authentication enrollment | Unclaimed | Enroll provider authentication. | Read the plan. |
 | P0 | [AR-1130](tasks/AR-1130.md): Configured provider launches | Unclaimed | Launch agents with configured providers. | Read the plan. |
