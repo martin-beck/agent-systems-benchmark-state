@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1060](tasks/AR-1060-authenticated-control-endpoint-handoff.md): Add authenticated control endpoint handoff | Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths. | Stop descendant recovery: every commit atop ec0c7a3 retains the invalid merge in its policy range. Escalate for an authorized repository-level recovery that neither rewrites history nor weakens signature/DCO policy; keep AR-1060 and AR-1024 blocked. No UI work. | codex-ar1060-history-repair-20260914 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -152,6 +146,7 @@ Never edit this file directly.
 | P0 | [AR-1055](tasks/AR-1055-asb-tui-install-integration-readiness.md): Harden asb-tui install integration readiness | Make the asb tui install and full interactive integration sequence dependency-executable. | Bind AR-1026 to the complete standalone UI and record the exact router, release and cross-repository qualification gaps without changing product code or feature-task status. | - |
 | P0 | [AR-1057](tasks/AR-1057-asb-tui-control-v1-3-readiness.md): Harden asb-tui control v1.3 readiness | Make standalone asb-tui consume precise privacy-safe measurement validation diagnostics. | Bind the standalone client and measurement-selection UX roadmap to ASB control v1.3 precise diagnostics with closed v1.2 fallback behavior. | - |
 | P0 | [AR-1059](tasks/AR-1059-asb-tui-lifecycle-router-publication-readiness.md): Harden lifecycle-router publication readiness | Harden the ASB lifecycle-router roadmap before rebasing and publishing it. | Bind AR-1024 to the exact rebase, environment, process-cleanup, no-daemon and trusted-pin gates required before lifecycle-router publication. | - |
+| P0 | [AR-1060](tasks/AR-1060-authenticated-control-endpoint-handoff.md): Add authenticated control endpoint handoff | Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths. | Stop descendant recovery: every commit atop ec0c7a3 retains the invalid merge in its policy range. Escalate for an authorized repository-level recovery that neither rewrites history nor weakens signature/DCO policy; keep AR-1060 and AR-1024 blocked. No UI work. | - |
 | P0 | [AR-1062](tasks/AR-1062-diagnose-nested-tmux-server-connect.md): Diagnose nested tmux server connection failures | Diagnose the exact nested tmux server and rejected socket-error class on trusted main. | Run exact Rust 1.93.0 full gates on the diagnostic-only test patch, then freeze a signed DCO commit for immutable review. | - |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. | - |
 | P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. | - |

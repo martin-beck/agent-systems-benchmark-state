@@ -2,7 +2,7 @@
 {
   "branch": "feature/authenticated-control-endpoint-handoff",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-14T12:04:15+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1022",
     "AR-1023"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/authenticated-control-endpoint-handoff",
   "observed_dirty": 0,
   "observed_head": "f34e4f57e1419bbe9783798bf15fe9c930bffa09",
-  "owner": "codex-ar1060-history-repair-20260914",
+  "owner": "",
   "plan": "../plans/AR-1060.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Hand the standalone frontend an authenticated ASB control connection without exposing endpoint paths.",
-  "task_revision": 159,
+  "task_revision": 160,
   "title": "Add authenticated control endpoint handoff",
-  "updated_at": "2026-09-14T10:04:15+00:00",
+  "updated_at": "2026-09-14T10:04:42+00:00",
   "worktree_key": "agent-systems-benchmark-authenticated-control-endpoint-handoff"
 }
 ---
@@ -500,3 +500,10 @@ planned until their full dependency sets are done.
   verification.
 
 - 2026-09-14T10:04:15+00:00: Claimed by codex-ar1060-history-repair-20260914.
+
+- 2026-09-14T10:04:42+00:00: One-time authorized history repair completed. Replaced invalid
+  ec0c7a3/d450945 lineage with signed reviewed merge 3f1daeb (tree 36f21d9), then GitHub Web Flow
+  protected merges 7230c32 and b74b9c1. PR #155 and #156 exact checks all green; local
+  protected-main policy and DCO pass; GitHub merge b74b9c1 has valid Web Flow signature and exact
+  martin-beck DCO trailer. Backup refs preserve pre-repair commits. Proceed to AR-1024 only after
+  its own rebase, exact cross-repository fixtures, and trusted frontend qualification.
