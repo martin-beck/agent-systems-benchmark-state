@@ -23,7 +23,7 @@ Generated from local Git and GitHub. Do not edit.
 | #149 | `dependabot/cargo/url-2.5.8@f7edfbbd0e98` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump url from 2.5.7 to 2.5.8 |
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
 | #151 | `dependabot/cargo/serde-1.0.229@1e3bafa11ff3` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
-| #154 | `feature/ar-1100@4ceaf04f32a0` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | AR-1100: add authoritative configuration defaults |
+| #154 | `feature/ar-1100@4ceaf04f32a0` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | AR-1100: add authoritative configuration defaults |
 
 ## Recent workflows
 
@@ -36,7 +36,7 @@ Generated from local Git and GitHub. Do not edit.
 | 34874005106 | `4ceaf04f32a0` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 34874005105 | `4ceaf04f32a0` | pull_request | Rust verification | in_progress:- |
 | 34874005095 | `4ceaf04f32a0` | pull_request | Hosted portability and native qualification | completed:success |
-| 34874005092 | `4ceaf04f32a0` | pull_request | Fault assurance | in_progress:- |
+| 34874005092 | `4ceaf04f32a0` | pull_request | Fault assurance | completed:success |
 | 34860163945 | `d32748d0795e` | push | Rust verification | completed:success |
 | 34860163879 | `d32748d0795e` | push | Hosted portability and native qualification | completed:success |
 | 34860163823 | `d32748d0795e` | push | Formal assurance | completed:success |
