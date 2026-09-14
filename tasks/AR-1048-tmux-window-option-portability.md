@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-14T10:31:54+00:00",
   "depends_on": [],
   "id": "AR-1048",
-  "next_action": "Remain OPEN pending AR-1049 exact created-window identity recovery and a green trusted-main rerun.",
+  "next_action": "No further action: AR-1049 superseded this recovery after PR #15 merged and Trusted main falsified fixed session:0 targeting.",
   "owner": "codex-root",
   "plan": "../plans/AR-1048.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Use an explicit tmux window-option command so trusted-main terminal qualification is portable.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Make tmux window-option setup portable",
-  "updated_at": "2026-09-14T10:16:54+00:00",
+  "updated_at": "2026-09-14T10:16:57+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-window-option-portability"
 }
 ---
@@ -124,3 +124,6 @@ authority, and change no renderer or application behavior.
   falsified the fixed window index; AR-1049 will target the exact returned window identity.
 
 - 2026-09-14T10:16:54+00:00: Claimed by codex-root.
+
+- 2026-09-14T10:16:57+00:00: Terminalized predecessor after PR #15/6853d319 and AR-1049 successor
+  evidence.

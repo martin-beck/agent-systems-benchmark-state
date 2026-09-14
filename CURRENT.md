@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1048](tasks/AR-1048-tmux-window-option-portability.md): Make tmux window-option setup portable | Use an explicit tmux window-option command so trusted-main terminal qualification is portable. | Remain OPEN pending AR-1049 exact created-window identity recovery and a green trusted-main rerun. | codex-root |
+| P0 | [AR-1048](tasks/AR-1048-tmux-window-option-portability.md): Make tmux window-option setup portable | Use an explicit tmux window-option command so trusted-main terminal qualification is portable. | No further action: AR-1049 superseded this recovery after PR #15 merged and Trusted main falsified fixed session:0 targeting. | codex-root |
 
 ## Open
 
