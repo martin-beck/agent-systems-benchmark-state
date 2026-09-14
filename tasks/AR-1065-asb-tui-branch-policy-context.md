@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1065.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Normalize asb-tui main branch protection so successful GitHub Actions checks can merge.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Normalize asb-tui branch required-status policy",
-  "updated_at": "2026-09-14T11:00:00+00:00",
+  "updated_at": "2026-09-14T17:15:21+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-branch-policy-context"
 }
 ---
@@ -26,3 +26,6 @@ name. The legacy commit-status endpoint is empty/pending because the workflow em
 not a legacy status. This AR records the repository-administration repair; no source, workflow,
 credential, or CI evidence must be changed to mask the mismatch.
 
+
+- 2026-09-14T17:15:21+00:00: Repository protection audit confirms only the app-scoped check remains;
+  proceed with exact policy verification.
