@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1230-authenticated-provider-request-seam",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-15T21:17:30+00:00",
+  "claim_expires": "2026-09-15T21:22:05+00:00",
   "depends_on": [
     "AR-0319",
     "AR-0320",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T19:19:06+00:00",
+  "updated_at": "2026-09-15T19:22:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
@@ -224,3 +224,5 @@ integration.
   in the unknown-field test. Focused authenticated_request tests: 3 passed; fmt/clippy passed. Prior
   Loom/state CI failure was classified by coordinator as shared transient ETXTBSY in
   formal/tests/tla_artifact_acquisition.rs; PR code was untouched and CI must rerun.
+
+- 2026-09-15T19:22:05+00:00: Heartbeat by asb_ar1230_auth_request_seam.
