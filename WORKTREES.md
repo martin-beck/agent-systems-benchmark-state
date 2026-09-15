@@ -175,9 +175,10 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-tui-settings-wizard` | `feature/tui-settings-wizard` | `8f7152c525da` | 0 | behind 245, ahead 0 |
 | `agent-systems-benchmark-verifier-integrity` | `feature/verifier-integrity` | `3fc65ea73bad` | 0 | behind 318, ahead 0 |
 | `agent-systems-benchmark-workbuddy-provenance` | `feature/workbuddy-provenance` | `9aad1317bdca` | 0 | behind 191, ahead 0 |
+| `asb-ar0908-current` | `fix/ar0908-current-main` | `4977bd84b456` | 0 | behind 0, ahead 2 |
 | `asb-ar1100-repair` | `DETACHED` | `c68c49eff7e3` | 0 | behind 6, ahead 0 |
 | `asb-ar1190-catalog` | `feature/asb-authenticated-agent-catalog` | `78ae48b71ccc` | 0 | behind 1, ahead 0 |
-| `asb-ar1191-lifecycle` | `feature/asb-verified-agent-lifecycle` | `471e7385b1c6` | 0 | behind 1, ahead 2 |
+| `asb-ar1191-lifecycle` | `feature/asb-verified-agent-lifecycle` | `75798f2322e9` | 0 | behind 0, ahead 2 |
 | `asb-boundary-hardening` | `DETACHED` | `d32748d0795e` | 0 | behind 8, ahead 0 |
 | `asb-current-audit-20260914` | `DETACHED` | `817a40bfbd7c` | 0 | behind 5, ahead 0 |
 | `asb-dco-repair` | `repair/protected-main-dco-history` | `200edbbbc3f0` | 0 | behind 1, ahead 1 |
