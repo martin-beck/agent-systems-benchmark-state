@@ -8,7 +8,7 @@
     "AR-1230"
   ],
   "id": "AR-1229",
-  "next_action": "Monitor PR #179 exact head 8771b9b78402b889898af30b8edf49b0cdf2c472 checks; once all required lanes terminal green, request independent review and verify catalog/schema evidence before merge.",
+  "next_action": "Implement remaining AR-1229 review blockers on 35b8c2d: AuthRevoke mutation idempotency schema, bounded CLI control-service dispatch, and lifecycle restart/partial-failure tests; then rerun focused/full gates and update PR #179.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
   "observed_dirty": 0,
   "observed_head": "35b8c2d5ef6ec9efb112920bbd2bb87082cab42b",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 177,
+  "task_revision": 178,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:49:14+00:00",
+  "updated_at": "2026-09-15T22:49:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -479,3 +479,8 @@ public state or weaken the existing resolver and authenticated-control boundarie
 
 - 2026-09-15T22:49:14+00:00: Recorded command exit 0; command argv SHA-256
   422de929f35a13a7206d8a95352061502a93f1785f7694e5184458196cd08b15.
+
+- 2026-09-15T22:49:59+00:00: Schema conformance repaired: legacy v1-v1.5 generators now exclude auth
+  variants while v1.6 checked-in request/response schemas are asserted against fresh generation.
+  Focused schema_conformance passed 4/4. Product commit 35b8c2d is SSH-signed with DCO and pushed;
+  worktree clean.
