@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1230-authenticated-provider-request-seam",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-15T21:28:49+00:00",
+  "claim_expires": "2026-09-15T21:35:10+00:00",
   "depends_on": [
     "AR-0319",
     "AR-0320",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 114,
+  "task_revision": 115,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T19:32:44+00:00",
+  "updated_at": "2026-09-15T19:35:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
@@ -333,3 +333,5 @@ integration.
   validate_json_instance runtime validator, covering unknown fields, OpenAI/Gemini/Ollama policy
   combinations, zero and overflow deadlines. Focused authenticated_request tests: 4 passed; fmt and
   clippy passed. Branch pushed; AR-1230 remains open pending independent review and CI.
+
+- 2026-09-15T19:35:10+00:00: Heartbeat by asb_ar1230_auth_request_seam.
