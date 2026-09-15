@@ -10,7 +10,7 @@
   "id": "AR-1229",
   "next_action": "Monitor PR #179 exact head 8771b9b78402b889898af30b8edf49b0cdf2c472 checks; once all required lanes terminal green, request independent review and verify catalog/schema evidence before merge.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "8771b9b78402b889898af30b8edf49b0cdf2c472",
   "owner": "asb_ar1229_auth_application",
   "plan": "../plans/AR-1229.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 162,
+  "task_revision": 163,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:43:35+00:00",
+  "updated_at": "2026-09-15T22:43:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
