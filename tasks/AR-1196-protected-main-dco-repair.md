@@ -10,11 +10,11 @@
   "plan": "../plans/AR-1196.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Restore a Signed-off-by-bearing protected-main history after the catalog merge.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Protected-main DCO history repair",
-  "updated_at": "2026-09-15T07:55:00+00:00",
+  "updated_at": "2026-09-15T08:06:31+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-dco-repair"
 }
 ---
@@ -24,3 +24,6 @@ Repair the exact ASB main history introduced by catalog integration commit
 Use the repository-approved reversible history-repair path or a protected merge mechanism that
 creates a DCO-bearing boundary. Preserve all feature content, signatures, branch protection and
 policy checks; never bypass the gate or misclassify the failed post-merge run.
+
+- 2026-09-15T08:06:31+00:00: Promote planned AR for live policy audit and signed merge-candidate
+  preparation; no merge/release.
