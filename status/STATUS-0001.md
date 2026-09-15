@@ -1064,7 +1064,10 @@ flowchart LR
     AR_1215 --> AR_1216
     AR_1228 --> AR_1120
     AR_1228 --> AR_1229
+    AR_1229 --> AR_1120
+    AR_1230 --> AR_1120
     AR_1230 --> AR_1228
+    AR_1230 --> AR_1229
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1309,7 +1312,7 @@ flowchart LR
 | [AR-1065](../tasks/AR-1065-asb-tui-branch-policy-context.md) | None | None |
 | [AR-1100](../tasks/AR-1100.md) | [AR-0313](../tasks/AR-0313-all-agents-provider.md) | [AR-1120](../tasks/AR-1120.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) |
 | [AR-1110](../tasks/AR-1110.md) | [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-1120](../tasks/AR-1120.md) | [AR-1130](../tasks/AR-1130.md) |
-| [AR-1120](../tasks/AR-1120.md) | [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-1100](../tasks/AR-1100.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md) | [AR-1110](../tasks/AR-1110.md) |
+| [AR-1120](../tasks/AR-1120.md) | [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-1100](../tasks/AR-1100.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-1110](../tasks/AR-1110.md) |
 | [AR-1130](../tasks/AR-1130.md) | [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-1110](../tasks/AR-1110.md) | [AR-1140](../tasks/AR-1140.md), [AR-1150](../tasks/AR-1150.md) |
 | [AR-1140](../tasks/AR-1140.md) | [AR-1130](../tasks/AR-1130.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0823](../tasks/AR-0823-installation-qualification.md), [AR-1180](../tasks/AR-1180.md) |
 | [AR-1150](../tasks/AR-1150.md) | [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-1130](../tasks/AR-1130.md) | [AR-1151](../tasks/AR-1151.md) |
@@ -1335,8 +1338,8 @@ flowchart LR
 | [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md) | [AR-1200](../tasks/AR-1200-metrics-timeout-fixture-stability.md) | None |
 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md) | [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md), [AR-1151](../tasks/AR-1151.md), [AR-1160](../tasks/AR-1160.md) | None |
 | [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md) | [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-1100](../tasks/AR-1100.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-1120](../tasks/AR-1120.md), [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md) |
-| [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md) | [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md) | None |
-| [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-1100](../tasks/AR-1100.md) | [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md) |
+| [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md) | [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-1120](../tasks/AR-1120.md) |
+| [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-1100](../tasks/AR-1100.md) | [AR-1120](../tasks/AR-1120.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md) |
 
 ## Complete AR inventory
 
@@ -1532,4 +1535,3 @@ flowchart LR
 | P1 | [AR-0314](../tasks/AR-0314-recording-source-choice.md): Choose matching replay or live provider execution | Unclaimed | Offer matching prior recordings or an actual provider connection without silently choosing either. | Durable release and post-merge verification are complete; no further AR-0314 action. |
 | P1 | [AR-0315](../tasks/AR-0315-provider-parity-conformance.md): Verify cross-agent provider parity | Unclaimed | Conformance-test identical OpenAI and Ollama profiles across the complete supported-agent matrix. | Complete; no further action. |
 | P1 | [AR-0316](../tasks/AR-0316-agent-runtime-bundles.md): Publish reproducible agent runtime bundles | Unclaimed | Make supported agent installations reproducible, license-audited, SBOM-backed, and independently verifiable. | No further action for the released fail-closed catalog; complete runtime closures remain future work and must not be inferred. |
-| P1 | [AR-0318](../tasks/AR-0318-credential-reference-boundary.md): Implement the credential-reference boundary | Unclaimed | Resolve provider credential references without exposing secrets or accepting ambient credentials. | Coordinator decision required: formally amend AR-0318 outcome/acceptance to Environment-only support, or authorize separately specified private locator contracts before implementing FileDescriptor/Helper; do not release done under the current three-source plan. |
