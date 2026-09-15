@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1229-auth-application-integration",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T00:05:16+00:00",
+  "claim_expires": "2026-09-16T00:16:28+00:00",
   "depends_on": [
     "AR-1228",
     "AR-1230"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 106,
+  "task_revision": 107,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:16:09+00:00",
+  "updated_at": "2026-09-15T22:16:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -299,3 +299,5 @@ public state or weaken the existing resolver and authenticated-control boundarie
   run 35029861526 reports contract_consistency: in-place v1 schema change
   crates/asb-control/schema/v1/request.schema.json. This is a legitimate versioning blocker, not
   infrastructure; do not weaken the native schema gate or merge. Other checks remain pending/green.
+
+- 2026-09-15T22:16:28+00:00: Heartbeat by asb_ar1229_cli_admission.
