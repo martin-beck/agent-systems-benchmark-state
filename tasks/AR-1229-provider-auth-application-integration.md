@@ -10,17 +10,17 @@
   "id": "AR-1229",
   "next_action": "Run full applicable local gates on 8acad23, inspect PR #179 exact-head CI terminal results, then request independent review; merge remains prohibited until all required checks/review are green.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
-  "observed_dirty": 1,
-  "observed_head": "8acad2317a4ad2a1a38c1a06024297bfed56d190",
+  "observed_dirty": 0,
+  "observed_head": "0a5ddb1c9895dfb3d4aabaf0c044eeba724f9c10",
   "owner": "asb_ar1229_auth_application",
   "plan": "../plans/AR-1229.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 220,
+  "task_revision": 221,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T23:03:38+00:00",
+  "updated_at": "2026-09-15T23:03:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
