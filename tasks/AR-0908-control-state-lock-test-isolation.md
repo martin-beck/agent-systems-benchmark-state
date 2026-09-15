@@ -2,7 +2,7 @@
 {
   "branch": "fix/control-state-lock-test-isolation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-15T10:22:35+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -14,15 +14,15 @@
   "observed_branch": "fix/control-state-lock-test-isolation",
   "observed_dirty": 0,
   "observed_head": "8b0f9fd07d5dfbedd83376c1380ab225dfba1213",
-  "owner": "asb-open-ar0908-hardening",
+  "owner": "",
   "plan": "../plans/AR-0908.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Harden asb-cli control-state lock test isolation and deterministic reopen coverage.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Harden control-state lock test isolation",
-  "updated_at": "2026-09-15T08:22:35+00:00",
+  "updated_at": "2026-09-15T10:25:44+00:00",
   "worktree_key": "agent-systems-benchmark-control-state-lock-test-isolation"
 }
 ---
@@ -214,3 +214,7 @@ non-deterministic isolation signal rather than claiming a production lock defect
   fresh exact-head CI; no merge.
 
 - 2026-09-15T08:22:35+00:00: Claimed by asb-open-ar0908-hardening.
+
+- 2026-09-15T10:25:44+00:00: Recovered expired claim formerly owned by asb-open-ar0908-hardening.
+  Recovered expired claim during coordinator reconciliation; preserve PR #125 evidence and reassign
+  only after dependencies and gates are rechecked.
