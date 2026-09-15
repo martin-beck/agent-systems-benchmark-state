@@ -13,9 +13,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify concurrent ASB control scratch-root isolation on current repaired main.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Qualify current-main control scratch isolation",
-  "updated_at": "2026-09-15T10:17:12+00:00",
+  "updated_at": "2026-09-15T10:19:41+00:00",
   "worktree_key": "agent-systems-benchmark-control-scratch-isolation-current-main"
 }
 ---
@@ -63,3 +63,9 @@ with all 12 required checks terminal green. No merge or release is implied by th
   81a81cfdb913a273fa2c4b9785f5515787e1a524. Independent review confirmed three signed/DCO commits,
   no conflicts, focused tests 20/20 serial and 20/20 with 8 threads, fmt/clippy/diff checks pass.
   Fresh GitHub checks are running on exact head; do not merge until all terminal and green.
+
+- 2026-09-15T10:19:41+00:00: PR #173 merged at immutable main SHA
+  2117a40e2e27602c39aebee87581cf652628a534 after current-main rebase, independent review, and all 12
+  exact-head checks passed. Post-merge assurance runs 34957326922, 34957326967, 34957326944,
+  34957327028, 34957326942, 34957326974, and 34957326917 are currently in progress; keep task
+  in_progress until every run reaches a terminal result.
