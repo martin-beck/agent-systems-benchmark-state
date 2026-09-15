@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1120](tasks/AR-1120.md): Authentication enrollment | Enroll provider authentication. | Expand auth enrollment: add backend API-key/system-secret/descriptor/helper hooks, authenticated probe generation fencing, metadata persistence, CLI/control integration, docs/schema and negative/privacy/recovery tests; rerun all gates before review. | asb_ar1120_auth_enrollment |
+| P0 | [AR-1120](tasks/AR-1120.md): Authentication enrollment | Enroll provider authentication. | Rerun focused gates after from_json type annotation; then review rotation/revocation failure atomicity and publish updated signed commit only after all negative/privacy checks pass. | asb_ar1120_auth_enrollment |
 | P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Await exact-head CI for b0df3fb; inspect AArch64 and all required checks, independently review, merge only if all green. | asb_ar0909_lifecycle_repair |
 
 ## Open
