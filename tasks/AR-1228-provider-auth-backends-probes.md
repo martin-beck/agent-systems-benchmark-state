@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 208,
+  "task_revision": 209,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T21:13:22+00:00",
+  "updated_at": "2026-09-15T21:13:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
@@ -600,3 +600,6 @@ integration rather than renderer or frontend behavior.
   7c730eec3ea71bd24ffc5a9255bf7f542481bf601dba6c72bed6e00f6c2fab3c.
 
 - 2026-09-15T21:13:22+00:00: Heartbeat by asb_ar1228_transport_repair.
+
+- 2026-09-15T21:13:41+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
