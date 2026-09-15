@@ -1338,7 +1338,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md): Qualify provider authentication backends and probes | asb_ar1228_auth_backends | Qualify provider authentication backends, probes and application integration. | PR #177 exact head 22b3572 has concrete resolver adapters and bounded provider classification. AR-1229 now owns durable config/registry and authenticated CLI/control enrollment; finish actual transport/provider fixtures here, then coordinate AR-1229 before terminal review. |
+| P0 | [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md): Qualify provider authentication backends and probes | asb_ar1228_auth_backends | Qualify provider authentication backends, probes and application integration. | Provider probe request contract now at local exact head pending commit/push. Focused provider_probe tests (3), auth_backend compile tests, fmt and clippy pass after correcting byte-range typing and moved test fixture; commit signed+DCO, push PR #177, then await independent review and full CI. |
 | P1 | [AR-0909](../tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | asb_ar0909_lifecycle_repair | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Await exact-head CI for b0df3fb; inspect AArch64 and all required checks, independently review, merge only if all green. |
 
 ### Open (12)

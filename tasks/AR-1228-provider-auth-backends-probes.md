@@ -9,7 +9,7 @@
     "AR-1100"
   ],
   "id": "AR-1228",
-  "next_action": "PR #177 exact head 22b3572 has concrete resolver adapters and bounded provider classification. AR-1229 now owns durable config/registry and authenticated CLI/control enrollment; finish actual transport/provider fixtures here, then coordinate AR-1229 before terminal review.",
+  "next_action": "Provider probe request contract now at local exact head pending commit/push. Focused provider_probe tests (3), auth_backend compile tests, fmt and clippy pass after correcting byte-range typing and moved test fixture; commit signed+DCO, push PR #177, then await independent review and full CI.",
   "observed_branch": "feature/ar-1228-auth-backends-probes",
   "observed_dirty": 1,
   "observed_head": "22b3572a448bd8cc2c0e90bd403ca2ae1d2abbac",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T18:28:22+00:00",
+  "updated_at": "2026-09-15T18:28:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
@@ -160,3 +160,8 @@ integration rather than renderer or frontend behavior.
 
 - 2026-09-15T18:28:22+00:00: Recorded command exit 0; command argv SHA-256
   4340dcbf253e5e20fd7f5355131da4428901f1f912a4e0ac816826265343c6b5.
+
+- 2026-09-15T18:28:39+00:00: The 18:27:37 exit 101 was a compile failure in provider_probe tests:
+  byte range used char f instead of byte bf, and non-Copy ProbeRequest was moved in repeated
+  assertions. Fixed with byte literal and clones; reran provider_probe (3 tests), auth_backend
+  compile suite, fmt and clippy successfully.
