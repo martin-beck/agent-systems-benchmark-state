@@ -26,7 +26,7 @@ Generated from local Git and GitHub. Do not edit.
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #173 | `fix/ar0908-current-main@39f90b316faf` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(cli): harden control scratch isolation on current main |
 | #174 | `feature/ar1195-catalog-digest@0a39815de52c` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(control): authenticate agent catalog digest |
-| #175 | `repair/metrics-timeout-flake@0a7f6a192af9` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(metrics): stabilize bounded rejection fixture |
+| #175 | `repair/metrics-timeout-flake@0a7f6a192af9` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(metrics): stabilize bounded rejection fixture |
 
 ## Recent workflows
 
@@ -35,8 +35,8 @@ Generated from local Git and GitHub. Do not edit.
 | 34952754675 | `0a7f6a192af9` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 34952754606 | `0a7f6a192af9` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 34952754589 | `0a7f6a192af9` | pull_request | Huawei MIT source headers | completed:success |
-| 34952754516 | `0a7f6a192af9` | pull_request | Formal assurance | in_progress:- |
-| 34952754503 | `0a7f6a192af9` | pull_request | Rust verification | in_progress:- |
+| 34952754516 | `0a7f6a192af9` | pull_request | Formal assurance | completed:success |
+| 34952754503 | `0a7f6a192af9` | pull_request | Rust verification | completed:success |
 | 34952754485 | `0a7f6a192af9` | pull_request | Hosted portability and native qualification | completed:success |
 | 34952754404 | `0a7f6a192af9` | pull_request | Repository quality | in_progress:- |
 | 34952754360 | `0a7f6a192af9` | pull_request | Fault assurance | completed:success |
