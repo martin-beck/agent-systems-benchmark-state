@@ -9,7 +9,7 @@
     "AR-1100"
   ],
   "id": "AR-1228",
-  "next_action": "PR #177 now includes resolver adapters and body-free provider probe classification at exact head 22b3572. Remaining acceptance is actual provider transport/probe fixtures plus durable config/registry and authenticated CLI/control integration; do not merge or release yet.",
+  "next_action": "PR #177 exact head 22b3572 has concrete resolver adapters and bounded provider classification. AR-1229 now owns durable config/registry and authenticated CLI/control enrollment; finish actual transport/provider fixtures here, then coordinate AR-1229 before terminal review.",
   "observed_branch": "feature/ar-1228-auth-backends-probes",
   "observed_dirty": 0,
   "observed_head": "22b3572a448bd8cc2c0e90bd403ca2ae1d2abbac",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T18:21:32+00:00",
+  "updated_at": "2026-09-15T18:21:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
@@ -121,3 +121,7 @@ integration rather than renderer or frontend behavior.
   explicit.
 
 - 2026-09-15T18:21:32+00:00: Heartbeat by asb_ar1228_auth_backends.
+
+- 2026-09-15T18:21:35+00:00: Application integration crosses asb-config, asb-control and asb-cli
+  contracts; splitting it into AR-1229 prevents an adapter-only completion claim. AR-1228 remains
+  active for concrete backend/probe qualification.
