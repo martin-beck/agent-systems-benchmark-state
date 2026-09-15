@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T21:56:02+00:00",
+  "updated_at": "2026-09-15T21:56:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -135,3 +135,6 @@ public state or weaken the existing resolver and authenticated-control boundarie
   --offline --lib: 35 passed; cargo test -p asb-cli --lib --offline: 63 passed. Auth lifecycle calls
   validate and match typed results, but backend deliberately returns CapabilityUnavailable until
   durable registry and CLI dispatch are implemented; AR remains in_progress.
+
+- 2026-09-15T21:56:29+00:00: Recorded command exit 2; command argv SHA-256
+  48458d4adcbc2714c4ae60f17ec39d916357031118af6e75d9a5cd826c73f20e.
