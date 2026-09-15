@@ -10,7 +10,7 @@
     "AR-1230"
   ],
   "id": "AR-1228",
-  "next_action": "Independent review PR #177 at exact head 727c11b3c4bda34b34865c10524bd17230b63f3e; verify CI and review remaining provider-backend/application gaps before merge.",
+  "next_action": "Implement review blockers on PR #177: enforce one absolute deadline and cancellation during transport, add mid-probe generation-rotation coverage, authenticated Gemini API-key and Ollama policy tests, and authenticated timeout/oversize/malformed/redirect fail-closed tests.",
   "observed_branch": "feature/ar-1228-auth-backends-probes",
   "observed_dirty": 1,
   "observed_head": "727c11b3c4bda34b34865c10524bd17230b63f3e",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 142,
+  "task_revision": 143,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T20:45:20+00:00",
+  "updated_at": "2026-09-15T20:46:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
@@ -414,3 +414,9 @@ integration rather than renderer or frontend behavior.
 
 - 2026-09-15T20:45:20+00:00: Recorded command exit 101; command argv SHA-256
   5eb12bd35cc3be9aa24b0fefb8331e23dc956d3388574ce38cef451f9e1d2694.
+
+- 2026-09-15T20:46:00+00:00: Independent review approves auth seam wiring at exact head
+  727c11b3c4bda34b34865c10524bd17230b63f3e, but blocks completion because transport still uses
+  per-operation timeout and lacks cancellation checks during I/O; missing mid-transport generation
+  test, authenticated Gemini/Ollama policy coverage, and authenticated failure-path tests. Worktree
+  is intentionally dirty with the next test-fixture correction; lease retained.

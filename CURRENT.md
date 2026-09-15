@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1228](tasks/AR-1228-provider-auth-backends-probes.md): Qualify provider authentication backends and probes | Qualify provider authentication backends, probes and application integration. | Independent review PR #177 at exact head 727c11b3c4bda34b34865c10524bd17230b63f3e; verify CI and review remaining provider-backend/application gaps before merge. | asb_ar1228_auth_backends |
+| P0 | [AR-1228](tasks/AR-1228-provider-auth-backends-probes.md): Qualify provider authentication backends and probes | Qualify provider authentication backends, probes and application integration. | Implement review blockers on PR #177: enforce one absolute deadline and cancellation during transport, add mid-probe generation-rotation coverage, authenticated Gemini API-key and Ollama policy tests, and authenticated timeout/oversize/malformed/redirect fail-closed tests. | asb_ar1228_auth_backends |
 
 ## Open
 
