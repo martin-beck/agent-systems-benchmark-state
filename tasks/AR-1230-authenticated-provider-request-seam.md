@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1230-authenticated-provider-request-seam",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-15T22:07:52+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0319",
     "AR-0320",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1230-authenticated-provider-request-seam",
   "observed_dirty": 0,
   "observed_head": "3d0349af1a56396e6b42226dbec79b3a5da3628c",
-  "owner": "asb_ar1230_auth_request_seam",
+  "owner": "",
   "plan": "../plans/AR-1230.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 204,
+  "task_revision": 205,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T20:24:50+00:00",
+  "updated_at": "2026-09-15T20:26:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
@@ -559,3 +559,8 @@ integration.
 
 - 2026-09-15T20:24:50+00:00: Recorded command exit 0; command argv SHA-256
   80dad2b38714ddb82e386e1dccf8d06652ee950bafe6ca652d6e585830186ad9.
+
+- 2026-09-15T20:26:03+00:00: PR #178 merged at 3989cb7a2066e9f1e36c8989567289617e36ad35 from
+  reviewed exact head 3d0349a; all 12 required CI checks green including recovered AArch64 rerun;
+  independent seam review approved; post-merge authenticated_request module and schema verified on
+  origin/main.
