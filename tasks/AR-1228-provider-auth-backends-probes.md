@@ -11,17 +11,17 @@
   "id": "AR-1228",
   "next_action": "Provider probe request contract now at local exact head pending commit/push. Focused provider_probe tests (3), auth_backend compile tests, fmt and clippy pass after correcting byte-range typing and moved test fixture; commit signed+DCO, push PR #177, then await independent review and full CI.",
   "observed_branch": "feature/ar-1228-auth-backends-probes",
-  "observed_dirty": 1,
-  "observed_head": "22b3572a448bd8cc2c0e90bd403ca2ae1d2abbac",
+  "observed_dirty": 0,
+  "observed_head": "ad570f37a1f366d1515dc2870804d7aa4fd5d584",
   "owner": "asb_ar1228_auth_backends",
   "plan": "../plans/AR-1228.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T18:28:57+00:00",
+  "updated_at": "2026-09-15T18:29:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
