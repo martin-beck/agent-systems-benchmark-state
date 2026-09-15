@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-15T10:10:42+00:00",
   "depends_on": [],
   "id": "AR-1196",
-  "next_action": "Reconcile PR #170 merge commit 748c16ba against remote main; preserve evidence and do not merge duplicate PR #171. If main advances to 748c, rerun exact-main policy and all post-merge gates; if it does not, escalate branch-ref inconsistency.",
+  "next_action": "Reconcile PR #170 merge commit 748c16ba against remote main; PR #172 is the topic re-publication candidate and PR #171 is a duplicate signed-merge candidate. Do not merge either until remote main ref and exact post-merge checks are reconciled; if main remains 817a40b, investigate the missing push event.",
   "owner": "asb_main_policy_repair",
   "plan": "../plans/AR-1196.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Restore a Signed-off-by-bearing protected-main history after the catalog merge.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Protected-main DCO history repair",
-  "updated_at": "2026-09-15T08:10:42+00:00",
+  "updated_at": "2026-09-15T08:10:52+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-dco-repair"
 }
 ---
@@ -47,3 +47,10 @@ policy checks; never bypass the gate or misclassify the failed post-merge run.
   748c16b. Do not merge #171 until refs and exact-main status reconcile.
 
 - 2026-09-15T08:10:42+00:00: Heartbeat by asb_main_policy_repair.
+
+- 2026-09-15T08:10:52+00:00: Additional live evidence: PR #172 opened at 08:09:11 with exact catalog
+  topic and DCO body; PR #170 reports merged at 08:07:04 but origin/main remains
+  817a40bfbd7c906092ec10c8036fe0386152a544 and no main PushEvent followed. PR #171 hosted platform
+  check failed because workflow BASE_COMMIT resolved synthetic merge 748c16ba, reporting source
+  identity not immutable; this is a workflow/ref interaction, not candidate source failure. No
+  merge/release by this worker.

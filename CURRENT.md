@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1190](tasks/AR-1190.md): Authenticated agent catalog control | Expose a verified, capability-aware local-agent catalog to asb-tui. | Wait for exact-main post-merge assurance on 748c16ba67b9cff5a08558784dd183d020a1f2d4, then qualify ASB v1.4 fixtures against asb-tui PR #86. | root-ar1190-review |
-| P0 | [AR-1196](tasks/AR-1196-protected-main-dco-repair.md): Protected-main DCO history repair | Restore a Signed-off-by-bearing protected-main history after the catalog merge. | Reconcile PR #170 merge commit 748c16ba against remote main; preserve evidence and do not merge duplicate PR #171. If main advances to 748c, rerun exact-main policy and all post-merge gates; if it does not, escalate branch-ref inconsistency. | asb_main_policy_repair |
+| P0 | [AR-1196](tasks/AR-1196-protected-main-dco-repair.md): Protected-main DCO history repair | Restore a Signed-off-by-bearing protected-main history after the catalog merge. | Reconcile PR #170 merge commit 748c16ba against remote main; PR #172 is the topic re-publication candidate and PR #171 is a duplicate signed-merge candidate. Do not merge either until remote main ref and exact post-merge checks are reconciled; if main remains 817a40b, investigate the missing push event. | asb_main_policy_repair |
 
 ## Open
 
