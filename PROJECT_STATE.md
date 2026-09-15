@@ -3,7 +3,7 @@
 Generated from local Git and GitHub. Do not edit.
 
 - Product remote main: `ef82484fa78dd31c0d7b5ad48e2dc51a93ec1339`
-- Local origin/main: `537811179bc5b956c1fecefae99b1bf4805e0b10`
+- Local origin/main: `ef82484fa78dd31c0d7b5ad48e2dc51a93ec1339`
 - Primary worktree head: `bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09`
 
 ## Open pull requests
@@ -33,10 +33,10 @@ Generated from local Git and GitHub. Do not edit.
 | 34955354581 | `ef82484fa78d` | push | Repository quality | completed:failure |
 | 34955354482 | `ef82484fa78d` | push | Formal assurance | completed:success |
 | 34955354481 | `ef82484fa78d` | push | Hosted portability and native qualification | completed:success |
-| 34955354479 | `ef82484fa78d` | push | Rust verification | in_progress:- |
+| 34955354479 | `ef82484fa78d` | push | Rust verification | completed:success |
 | 34955354446 | `ef82484fa78d` | push | Fault assurance | completed:success |
 | 34955354399 | `ef82484fa78d` | push | Huawei MIT source headers | completed:success |
-| 34955354389 | `ef82484fa78d` | push | Emulated aarch64 portability | in_progress:- |
+| 34955354389 | `ef82484fa78d` | push | Emulated aarch64 portability | completed:success |
 | 34955323035 | `d354a5127c8d` | push | Rust verification | completed:cancelled |
 | 34955323024 | `d354a5127c8d` | push | Hosted portability and native qualification | completed:cancelled |
 | 34955323007 | `d354a5127c8d` | push | Repository quality | completed:cancelled |
