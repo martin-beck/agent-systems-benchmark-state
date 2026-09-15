@@ -13,9 +13,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify concurrent ASB control scratch-root isolation on current repaired main.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Qualify current-main control scratch isolation",
-  "updated_at": "2026-09-15T10:09:21+00:00",
+  "updated_at": "2026-09-15T10:17:12+00:00",
   "worktree_key": "agent-systems-benchmark-control-scratch-isolation-current-main"
 }
 ---
@@ -57,3 +57,9 @@ with all 12 required checks terminal green. No merge or release is implied by th
   worktree lived under /tmp, making the default scratch root overlap the repository. Do not merge
   the old remote head; guarded force-with-lease update and fresh exact-head CI/independent review
   remain required.
+
+- 2026-09-15T10:17:12+00:00: Guarded force-with-lease updated PR #173 from
+  39f90b316faf4bbbce4170d7f0289c99355c9642 to current-main rebased head
+  81a81cfdb913a273fa2c4b9785f5515787e1a524. Independent review confirmed three signed/DCO commits,
+  no conflicts, focused tests 20/20 serial and 20/20 with 8 threads, fmt/clippy/diff checks pass.
+  Fresh GitHub checks are running on exact head; do not merge until all terminal and green.
