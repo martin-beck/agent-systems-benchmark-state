@@ -9,7 +9,7 @@
     "AR-1100"
   ],
   "id": "AR-1230",
-  "next_action": "PR #178 exact head e1a5c1d requires independent re-review and CI rerun. Shared runtime JSON validator now exercises schema-shaped positive/negative provider-policy/deadline instances; delegated transport/application gates remain AR-1228/AR-1229.",
+  "next_action": "PR #178 exact head 07b670d requires independent re-review and CI rerun. Shared runtime validator now enforces every required field and bound (digest, generation, timeout, deadline, response limit) plus provider/policy combinations; delegated transport/application gates remain AR-1228/AR-1229.",
   "observed_branch": "feature/ar-1230-authenticated-provider-request-seam",
   "observed_dirty": 0,
   "observed_head": "07b670ded6be329a861c5c63255aa781ceeca5ef",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 123,
+  "task_revision": 124,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T19:36:11+00:00",
+  "updated_at": "2026-09-15T19:36:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
@@ -353,3 +353,8 @@ integration.
 
 - 2026-09-15T19:36:11+00:00: Recorded command exit 0; command argv SHA-256
   987e0d9ac4e88d83cd62975832c181c3c798255f62859a22c4f44552b8cfc960.
+
+- 2026-09-15T19:36:35+00:00: Signed+DCO 07b670d fixes validator gaps identified in review: missing
+  endpoint/generation/timeout/response fields now fail closed with schema-instance error; timeout
+  and response maxima are enforced; added negative representative cases. Focused
+  authenticated_request tests: 4 passed; fmt and clippy passed; pushed PR #178.
