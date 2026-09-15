@@ -4,6 +4,22 @@ This directory defines the machine-checked contract for every task-lifecycle
 mutation performed by `tools/handoffctl`. The TLA+ model is an abstraction of
 the Python implementation, not a replacement implementation.
 
+## Evidence classification
+
+[`../evidence.json`](../evidence.json) records the structured formal-evidence contract required by
+Agent Workflow Quality v0.24.0. It classifies these six TLC runs as bounded-model evidence and
+records the largest finite process, task, actor, project, worktree, and revision domains used by
+their checked configurations. Each `.cfg` file remains authoritative for the exact bound of its
+model.
+
+The correspondence classification is `not-proven`. Passing TLC establishes the invariants and
+temporal properties below only for the tracked TLA+ specifications under those finite bounds and
+assumptions. The implementation tests are separate evidence that selected Python behavior
+corresponds to the abstractions; neither evidence source proves implementation refinement or the
+correctness of Python, Git, SQLite, operating-system, kernel, filesystem, or arbitrary wrapped
+commands. The explicit assumptions, non-claims, and limitations in `formal/evidence.json` are part
+of this contract and must remain aligned with the configurations and runner.
+
 ## Transition contract
 
 Every accepted lifecycle command increments `task_revision` exactly once and validates the result.
@@ -51,7 +67,10 @@ from the bound project is accepted; a call from any other project preserves stat
 identity is constant, accepted/rejected classification matches caller identity, and weak fairness
 of correct calls establishes that a correctly invoked coordinator can continue to make progress.
 The implementation refines this guard by checking the profile UUID, state Git root and origin,
-product identity and origin, and caller working directory before normal command execution.
+product identity and origin, and caller working directory before normal command execution. A
+wrapped command started from a product checkout has an additional runtime guard: its Git root and
+branch must match the active task's declared worktree key and branch. This command preflight is
+outside the lifecycle abstraction below and does not alter the TLA+ transition relation.
 
 ## Checked properties
 
@@ -68,11 +87,19 @@ readers, a competing writer, and bounded lock-wait timeout. TLC checks:
 - atomic task/projection revision advancement and rollback;
 - rejection of invalid source, owner, dependency, and revision combinations;
 - timeout without state mutation when another process holds the lock;
+- acceptance of eligible recovery despite simultaneous expiries and an unrelated repository
+  finding;
 - deadlock freedom and eventual completion under weak process/lock fairness.
 
-Two processes are sufficient for pairwise lifecycle races; two tasks cover the
-one-active-task-per-actor invariant. The separate three-process lock model
-covers two readers plus one writer and two worktree identities resolving one repository-common lock.
+Two processes are sufficient for pairwise lifecycle races in the general model; its two tasks cover
+the one-active-task-per-actor invariant. `HandoffctlRecovery.tla` separately starts two tasks as
+simultaneously expired claims owned by two distinct actors while an unrelated repository finding
+persists. Without injected I/O failure or lock timeout, which the general transition and lock
+models cover, it proves every eligible held recovery is accepted and both distinct claims are
+eventually recovered.
+
+The separate three-process lock model covers two readers plus one writer and two worktree
+identities resolving one repository-common lock.
 `HandoffctlRun.tla` covers preflight rejection, external execution, durable journaling, task-record
 failure, and post-reconciliation success or failure. The binding model covers the configured
 project and one foreign caller, including rejection without mutation and fair progress. These are
@@ -130,3 +157,38 @@ uv run python -m unittest discover -s tests -p 'test_*.py'
 `verify.sh` downloads the official TLA+ 1.7.4 verifier into a temporary
 directory and verifies its pinned SHA-256 before execution. It does not retain
 the JAR or modify coordinator state.
+
+Formal tiers are explicit: `verify.sh --tier portable-smoke` runs one model
+and is non-exhaustive; it cannot produce publication or full evidence.
+`verify.sh --tier pr-publication` checks every invariant family. Five models
+use their full configurations; the general lifecycle model uses the
+one-process `HandoffctlPR.cfg`, while the separate lock and recovery models
+retain independent-process races. This exact-head PR tier is not the complete
+two-process lifecycle cross-product and cannot produce full release evidence.
+`verify.sh --tier full-exhaustive` runs all six full configurations on the
+scheduled weekly or manually dispatched gate. A release claim requires its
+fresh exact-head full attestation; neither smaller tier substitutes for it.
+
+Each model is executed through `tools/tlc_runner.py`, never directly through
+TLC. The runner uses finite workers (`2`), a `2048m` heap for cgroup-contained
+publication runs, a `512m` heap for hosted smoke, CPU quota (`200%`), process
+limit (`64`), a 1200-second PR or 6000-second weekly per-model deadline, and
+cgroup memory/swap limits (`3G`/`3G`). A canonical host-wide admission lock prevents
+multiple formal jobs from competing for memory while leaving coordinator worker
+processes and leases untouched. A durable per-job queue record survives caller
+death for stale-job recovery; completed, failed, and canceled outcomes retain
+the exact resource bounds and exit classification. `systemd-run` owns the process group (`KillMode=control-group`) on hosts with a user systemd bus. Hosted CI selects an explicit `portable` containment mode: GNU `timeout` and `prlimit` enforce aggregate address-space, process-count, CPU-time, and wall-clock limits; the runner fails closed if either tool is unavailable.
+
+The runner retains `/tmp/agent-workflow-coordinator-tlc-admission.lock` as the canonical
+publication lock. For an authorized local run on a host where that shared lock is inaccessible,
+the lower-level runner accepts an explicit private lock together with a private queue:
+
+```bash
+python3 tools/tlc_runner.py --queue ./private-tlc-queue \\
+  --admission-lock ./private-tlc-admission.lock ...
+```
+
+This option is intentionally CLI-only; there is no environment override. The checked-in
+`formal/handoffctl/verify.sh` workflow never supplies it and therefore cannot silently replace
+canonical publication admission. An isolated run is local diagnostic evidence only and must not be
+reported as a canonical publication or weekly full attestation.

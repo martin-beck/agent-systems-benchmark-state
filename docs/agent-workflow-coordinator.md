@@ -24,7 +24,9 @@ rewrites the coordinator source, Git history, and binding files.
 - `tasks/`: Markdown records with strict JSON front matter.
 - `plans/`: detailed plans referenced by tasks.
 - `CURRENT.md`: deterministic compact queue; never edit directly.
-- `STATUS.md`: optional deterministic portfolio view; never edit directly.
+- `STATUS.md`: optional deterministic portfolio view or, for large projects, a compact index to
+  generated `status/STATUS-####.md` pages; never edit directly. The linked pages together contain
+  the complete graph, dependency index and AR inventory.
 - `PROJECT_STATE.md` and `WORKTREES.md`: generated live observations.
 - `coordinator.vendor.json`: upstream version, commit and SHA-256 for every vendored file.
 
@@ -90,6 +92,17 @@ tools/handoffctl recover-expired AR-0001 --expected-revision REVISION \
 ```
 
 A future or malformed deadline and a stale revision are rejected before mutation.
+
+Dependencies normally require status `done`. A task with status `superseded` can satisfy a
+dependency only when its optional `superseded_by` field names an existing task (or finite chain of
+such tasks) ending in a task with status `done`. Missing, malformed, cyclic, or unfinished
+successors remain unsatisfied; old superseded records without this field therefore fail closed.
+
+On the Git backend, recover expired claims one at a time even when several leases elapsed. An
+unrelated expired claim or pre-existing repository privacy/size finding does not block a valid
+lifecycle transition, but it remains a strict `doctor` error until remediated. A transition still
+fails and rolls back if its resulting target or global active keys are invalid, or if it introduces
+a new privacy/size finding in a file it writes.
 
 ## Extend safely
 
