@@ -22,8 +22,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1100` | `feature/ar-1100` | `38c039975077` | 0 | behind 68, ahead 2 |
 | `agent-systems-benchmark-ar-1120` | `feature/ar-1120` | `d9253f2187a6` | 0 | behind 0, ahead 5 |
 | `agent-systems-benchmark-ar-1228-auth-backends-probes` | `feature/ar-1228-auth-backends-probes` | `d6e1c4e810a6` | 0 | behind 0, ahead 5 |
-| `agent-systems-benchmark-ar-1230-authenticated-provider-request-seam` | `feature/ar-1230-authenticated-provider-request-seam` | `c5b3933ef34f` | 1 | behind 0, ahead 5 |
-| changed files | - | - | - | `crates/asb-agents/src/authenticated_request.rs` |
+| `agent-systems-benchmark-ar-1230-authenticated-provider-request-seam` | `feature/ar-1230-authenticated-provider-request-seam` | `35bbb2788a52` | 0 | behind 0, ahead 6 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 241, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 344, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 238, ahead 0 |

@@ -11,17 +11,17 @@
   "id": "AR-1230",
   "next_action": "PR #178 exact head c5b3933 requires independent re-review and CI rerun. Absolute deadline and conditional schema are now seam-owned and tested; verify gates, then hand off to AR-1228 transport and AR-1229 application integration.",
   "observed_branch": "feature/ar-1230-authenticated-provider-request-seam",
-  "observed_dirty": 1,
-  "observed_head": "c5b3933ef34f049a1530d580807d697c5598fa6e",
+  "observed_dirty": 0,
+  "observed_head": "35bbb2788a52dbb485e528d007aad98de835da08",
   "owner": "asb_ar1230_auth_request_seam",
   "plan": "../plans/AR-1230.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T19:23:29+00:00",
+  "updated_at": "2026-09-15T19:23:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
