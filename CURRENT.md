@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1120](tasks/AR-1120.md): Authentication enrollment | Enroll provider authentication. | PR #176 updated to exact head 31c5562 with valid rustdoc link. Await replacement exact-head CI and independent review; merge only when every required check is green, then run post-merge gates. | asb_ar1120_auth_enrollment |
+| P0 | [AR-1120](tasks/AR-1120.md): Authentication enrollment | Enroll provider authentication. | Fix rotate_api_key transaction: preflight generation, rollback staged replacement when old revoke fails, represent rollback failure without false success, add failing-revoke test proving metadata/backend consistency; then rerun all gates. | asb_ar1120_auth_enrollment |
 | P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Await exact-head CI for b0df3fb; inspect AArch64 and all required checks, independently review, merge only if all green. | asb_ar0909_lifecycle_repair |
 
 ## Open
