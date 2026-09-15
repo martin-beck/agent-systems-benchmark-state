@@ -12,7 +12,7 @@
   "id": "AR-1228",
   "next_action": "Independent review PR #177 at exact head 727c11b3c4bda34b34865c10524bd17230b63f3e; verify CI and review remaining provider-backend/application gaps before merge.",
   "observed_branch": "feature/ar-1228-auth-backends-probes",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "727c11b3c4bda34b34865c10524bd17230b63f3e",
   "owner": "asb_ar1228_auth_backends",
   "plan": "../plans/AR-1228.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 140,
+  "task_revision": 141,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T20:45:08+00:00",
+  "updated_at": "2026-09-15T20:45:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
