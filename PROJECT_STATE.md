@@ -14,7 +14,7 @@ Generated from local Git and GitHub. Do not edit.
 | #124 | `feature/openjiuwen-live@cceb76f436f8` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(agents): qualify pinned OpenJiuwen live execution |
 | #125 | `fix/control-state-lock-test-isolation@8b0f9fd07d5d` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(cli): isolate control state roots |
 | #126 | `fix/main-merge-integrity@bd6f450ab877` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | tools: harden signed merge publication |
-| #127 | `fix/mini-swe-cancellation-reap-test-isolation@f4a8c5d0847b` | `main` | CLEAN | - | test(agents): harden mini-swe cancellation isolation |
+| #127 | `fix/mini-swe-cancellation-reap-test-isolation@f4a8c5d0847b` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | test(agents): harden mini-swe cancellation isolation |
 | #144 | `dependabot/github_actions/actions/setup-java-6.0.0@5885c200026e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump actions/setup-java from 5.0.0 to 6.0.0 |
 | #145 | `dependabot/cargo/toml-0.9.5@5f30c0c92f18` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 0.9.5 |
 | #146 | `dependabot/github_actions/taiki-e/install-action-2.87.7@51db8d79ad9f` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.7 |
@@ -29,14 +29,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34997612697 | `f4a8c5d0847b` | pull_request | Rust verification | queued:- |
-| 34997612568 | `f4a8c5d0847b` | pull_request | Repository quality | queued:- |
-| 34997612542 | `f4a8c5d0847b` | pull_request | Emulated aarch64 portability | queued:- |
-| 34997612513 | `f4a8c5d0847b` | pull_request | Hosted portability and native qualification | queued:- |
-| 34997612447 | `f4a8c5d0847b` | pull_request | Fault assurance | queued:- |
-| 34997612428 | `f4a8c5d0847b` | pull_request | Agent Workflow Quality shadow | queued:- |
-| 34997612422 | `f4a8c5d0847b` | pull_request | Formal assurance | queued:- |
-| 34997612385 | `f4a8c5d0847b` | pull_request | Huawei MIT source headers | queued:- |
+| 34997612697 | `f4a8c5d0847b` | pull_request | Rust verification | in_progress:- |
+| 34997612568 | `f4a8c5d0847b` | pull_request | Repository quality | in_progress:- |
+| 34997612542 | `f4a8c5d0847b` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 34997612513 | `f4a8c5d0847b` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 34997612447 | `f4a8c5d0847b` | pull_request | Fault assurance | in_progress:- |
+| 34997612428 | `f4a8c5d0847b` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 34997612422 | `f4a8c5d0847b` | pull_request | Formal assurance | in_progress:- |
+| 34997612385 | `f4a8c5d0847b` | pull_request | Huawei MIT source headers | completed:success |
 | 34994676709 | `37c1a08e3dc1` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 34994676659 | `37c1a08e3dc1` | pull_request | Hosted portability and native qualification | completed:success |
 | 34994676572 | `37c1a08e3dc1` | pull_request | Emulated aarch64 portability | completed:failure |
