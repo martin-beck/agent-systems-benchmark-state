@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remove hosted timing flakiness from the bounded kernel diagnostic rejection test.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Kernel diagnostic rejection fixture stability",
-  "updated_at": "2026-09-15T10:02:09+00:00",
+  "updated_at": "2026-09-15T10:04:13+00:00",
   "worktree_key": "agent-systems-benchmark-metrics-timeout-flake"
 }
 ---
@@ -44,3 +44,10 @@ failure classification, output bounds, staging verification, and cleanup remain 
   failed with protected-main merge-tree mismatch (range
   d354a5127c8d065de64432fb443200612df10f6d..ef82484fa78dd31c0d7b5ad48e2dc51a93ec1339); keep
   in_progress and investigate before release.
+
+- 2026-09-15T10:04:13+00:00: Post-merge watch terminal: 34955354389 Emulated aarch64 success; all
+  assurance runs for merge SHA ef82484fa78dd31c0d7b5ad48e2dc51a93ec1339 are terminal and successful
+  except Repository quality 34955354581 failure. Failure is the protected-main merge-tree mismatch
+  caused by merging stale-base PR #175 after #174 (range
+  d354a5127c8d065de64432fb443200612df10f6d..ef82484fa78dd31c0d7b5ad48e2dc51a93ec1339). Do not
+  release until policy failure is remediated or explicitly adjudicated.
