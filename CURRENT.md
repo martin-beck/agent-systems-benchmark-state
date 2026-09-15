@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1120](tasks/AR-1120.md): Authentication enrollment | Enroll provider authentication. | Rebase completed onto origin/main; preserve AR-1120 auth.rs and restore merged auth_backend/authenticated_request module exports in dirty lib.rs, then run focused auth gates and inspect PR #176 exact head before publication. | asb_ar1024_lifecycle_router |
+| P0 | [AR-1120](tasks/AR-1120.md): Authentication enrollment | Enroll provider authentication. | PR #176 now targets current main 2f96f211 at exact head f64985a; obtain independent review, wait for all required exact-head CI lanes, then merge only on approval and green checks. | asb_ar1024_lifecycle_router |
 
 ## Open
 
