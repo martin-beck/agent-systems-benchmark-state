@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P2 | [AR-1200](tasks/AR-1200-metrics-timeout-fixture-stability.md): Kernel diagnostic rejection fixture stability | Remove hosted timing flakiness from the bounded kernel diagnostic rejection test. | Review and merge the isolated test-fixture stabilization after exact-head CI passes; do not modify production timeout policy. | root-ar1200-closeout |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -275,6 +269,7 @@ Never edit this file directly.
 | P2 | [AR-0802](tasks/AR-0802-executable-guides.md): Deliver runnable user and extension guides | Publish executable offline quickstart, workload/agent extension guide and reproducibility guide. | Capture actual CLI workflows after commands are implemented. | - |
 | P2 | [AR-1005](tasks/AR-1005-trace-interoperability.md): Export interoperable privacy-safe traces | Expose stable causal ASB events and optional standards-based telemetry without binding storage to an evolving convention. | Monitor PR #75 exact head 921cf004 CI; classify any failure before repair and do not merge without coordinator authorization. | - |
 | P2 | [AR-1021](tasks/AR-1021-asb-tui-release-promotion.md): Audit and promote the asb-tui release channel | Audit and promote asb-tui from optional extension to verified release when eligible. | Review exact-head PR 8 hosted evidence, merge without weakening permanent protections, then obtain exact-main hosted and trusted local evidence. | - |
+| P2 | [AR-1200](tasks/AR-1200-metrics-timeout-fixture-stability.md): Kernel diagnostic rejection fixture stability | Remove hosted timing flakiness from the bounded kernel diagnostic rejection test. | Review and merge the isolated test-fixture stabilization after exact-head CI passes; do not modify production timeout policy. | - |
 | P3 | [AR-0404](tasks/AR-0404-extended-workloads.md): Expand established benchmark catalogue | Evaluate SWE-bench Pro, BigCodeBench, EvalPlus and LiveCodeBench as optional suites. | Add signed normal follow-up after rewritten merge so push range is resolvable; rerun exact-main post-merge workflows. | - |
 | P3 | [AR-0406](tasks/AR-0406-evolving-workloads.md): Add evolving long-horizon workload sources | Assess SWE-Lancer and SWE-rebench for feature/proposal and contamination-aware evaluation. | Monitor all required post-merge CI runs for exact main ca6e75916a8c9831b9107377cd48d731463c272a; release only after every required gate is green. | - |
 
