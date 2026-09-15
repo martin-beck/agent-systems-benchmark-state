@@ -10,17 +10,17 @@
   "id": "AR-1229",
   "next_action": "Run full workspace gates on 0a5ddb1, including repeated auth restart/recovery coverage; inspect PR #179 exact-head CI terminal results, then request independent review.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
-  "observed_dirty": 1,
-  "observed_head": "0a5ddb1c9895dfb3d4aabaf0c044eeba724f9c10",
+  "observed_dirty": 0,
+  "observed_head": "c1d55eee18cbc8a5a1b02b522f811cdda5fb8eff",
   "owner": "asb_ar1229_auth_application",
   "plan": "../plans/AR-1229.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 230,
+  "task_revision": 231,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T23:05:40+00:00",
+  "updated_at": "2026-09-15T23:05:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
