@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 214,
+  "task_revision": 215,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T23:01:42+00:00",
+  "updated_at": "2026-09-15T23:02:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -574,3 +574,6 @@ public state or weaken the existing resolver and authenticated-control boundarie
   acknowledged auth mutation because target/result matching had no auth arm. Added auth target
   validation plus restart/reopen and idempotent revoke test. Focused test passes 1/1. Signed-DCO
   product commit 8acad23 pushed; worktree clean.
+
+- 2026-09-15T23:02:05+00:00: Recorded command exit 101; command argv SHA-256
+  681994a9b7b368ece8b133aae9b6f6ac982dd6a4869c3ca5fb59dcb9ad68604a.
