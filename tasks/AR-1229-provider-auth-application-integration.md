@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 247,
+  "task_revision": 248,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T23:15:19+00:00",
+  "updated_at": "2026-09-15T23:15:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -658,3 +658,6 @@ public state or weaken the existing resolver and authenticated-control boundarie
 - 2026-09-15T23:15:19+00:00: All required CI lanes are terminal green on PR #179 exact head b33d6da.
   Lease renewed for final independent review and merge transition. Merge remains gated on reviewer
   approval; no merge performed yet.
+
+- 2026-09-15T23:15:31+00:00: Recorded command exit 1; command argv SHA-256
+  c3987db9fc08daf754e1f100aa5d95cd022c78ad8bd63c874d1a8c8ed6023dc5.
