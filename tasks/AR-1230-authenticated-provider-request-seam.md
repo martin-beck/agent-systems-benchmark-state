@@ -11,17 +11,17 @@
   "id": "AR-1230",
   "next_action": "PR #178 exact head e1a5c1d requires independent re-review and CI rerun. Shared runtime JSON validator now exercises schema-shaped positive/negative provider-policy/deadline instances; delegated transport/application gates remain AR-1228/AR-1229.",
   "observed_branch": "feature/ar-1230-authenticated-provider-request-seam",
-  "observed_dirty": 1,
-  "observed_head": "e1a5c1d6dac088138f93ff8b50ededfebdff2e61",
+  "observed_dirty": 0,
+  "observed_head": "07b670ded6be329a861c5c63255aa781ceeca5ef",
   "owner": "asb_ar1230_auth_request_seam",
   "plan": "../plans/AR-1230.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 121,
+  "task_revision": 122,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T19:35:59+00:00",
+  "updated_at": "2026-09-15T19:36:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
