@@ -12,7 +12,7 @@
   "id": "AR-1228",
   "next_action": "Independent review PR #177 at exact head ac65697ff82e48beac1ca0918766b75b76ec2; add provider-specific authenticated policy/response and mid-transport cancellation/generation tests, then await all required CI.",
   "observed_branch": "feature/ar-1228-auth-backends-probes",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "ac65697ff82e48beac1ca0918766b75b76ec2b65",
   "owner": "asb_ar1228_auth_backends",
   "plan": "../plans/AR-1228.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 170,
+  "task_revision": 171,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T20:54:17+00:00",
+  "updated_at": "2026-09-15T20:54:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
