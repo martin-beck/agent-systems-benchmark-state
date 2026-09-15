@@ -1347,7 +1347,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1120](../tasks/AR-1120.md): Authentication enrollment | asb_ar1024_lifecycle_router | Enroll provider authentication. | Wait for AR-1230, AR-1228 and AR-1229 in dependency order; then requalify PR #176 only after the authenticated seam and durable application integration complete, followed by independent review and exact-head CI. |
+| P0 | [AR-1120](../tasks/AR-1120.md): Authentication enrollment | asb_ar1024_lifecycle_router | Enroll provider authentication. | Rebase completed onto origin/main; preserve AR-1120 auth.rs and restore merged auth_backend/authenticated_request module exports in dirty lib.rs, then run focused auth gates and inspect PR #176 exact head before publication. |
 
 ### Open (13)
 
