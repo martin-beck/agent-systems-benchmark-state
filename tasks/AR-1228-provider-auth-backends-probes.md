@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1228-auth-backends-probes",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-15T23:11:01+00:00",
   "depends_on": [
     "AR-0319",
     "AR-0320",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1228-auth-backends-probes",
   "observed_dirty": 0,
   "observed_head": "cdfd81cb55f505cd27316e3d8d744d303e74ba67",
-  "owner": "",
+  "owner": "asb_ar1228_transport_repair",
   "plan": "../plans/AR-1228.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 201,
+  "task_revision": 202,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T21:10:15+00:00",
+  "updated_at": "2026-09-15T21:11:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
@@ -584,3 +584,5 @@ integration rather than renderer or frontend behavior.
 
 - 2026-09-15T21:10:15+00:00: Worker cannot safely continue nonblocking transport implementation in
   this turn; claim released for another worker.
+
+- 2026-09-15T21:11:01+00:00: Claimed by asb_ar1228_transport_repair.
