@@ -1329,7 +1329,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0909](../tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | asb_ar0909_lifecycle_repair | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Hold PR127 unmerged; AR-0877 must repair formal acquisition and platform owner must repair hosted distro evidence, then rerun exact-head CI unchanged. |
+| P1 | [AR-0909](../tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | asb_ar0909_lifecycle_repair | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Await fresh exact-head CI for e3d2962; inspect every required check, then independently review and merge only if all green. |
 
 ### Open (12)
 

@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Hold PR127 unmerged; AR-0877 must repair formal acquisition and platform owner must repair hosted distro evidence, then rerun exact-head CI unchanged.",
+  "next_action": "Await fresh exact-head CI for e3d2962; inspect every required check, then independently review and merge only if all green.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "e3d2962095a138a8fc1569f3f3283f42e33d0b8f",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 304,
+  "task_revision": 305,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-15T15:44:35+00:00",
+  "updated_at": "2026-09-15T15:45:05+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1123,3 +1123,12 @@ classified.
 
 - 2026-09-15T15:44:35+00:00: Recorded command exit 0; command argv SHA-256
   23357cce65aac3ab188ef6a43f3a3b61ff2641f98d5be6396b3f6abaab7ff46b.
+
+- 2026-09-15T15:45:05+00:00: Classified PR127 emulated-AArch64 failure as patch-related: 141
+  passed/1 failed, cancellation_leaves_no_runnable_owned_descendant failed in PrivateTestRoot::new
+  with test-root directory binding changed. The prior open_bound_directory compared a proc-fd
+  canonical target against a guest pathname, which is not stable under QEMU. Minimal test-only
+  repair e3d2962095a138a8fc1569f3f3283f42e33d0b8f retains O_DIRECTORY|O_NOFOLLOW descriptor binding
+  and ordinary-path canonical rejection, while skipping only proc-fd spelling comparison; no
+  production lifecycle code changed. Local mini-SWE tests 10/10, fmt and Clippy passed; commit
+  SSH-signed with matching DCO. Fresh exact-head CI is running; no merge yet.
