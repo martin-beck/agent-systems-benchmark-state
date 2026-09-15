@@ -1347,7 +1347,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md): Provider authentication application integration | asb_ar1229_auth_application | Integrate provider authentication into ASB config, control and CLI surfaces. | Rerun full workspace gates on b33d6da after regenerated v1.6 AuthRevoke schema; inspect PR #179 exact-head checks and request independent review only when terminal green. |
+| P0 | [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md): Provider authentication application integration | asb_ar1229_auth_application | Integrate provider authentication into ASB config, control and CLI surfaces. | Monitor PR #179 exact head b33d6da until every required CI lane is terminal green; then obtain independent exact-head review before any merge. |
 
 ### Open (13)
 
