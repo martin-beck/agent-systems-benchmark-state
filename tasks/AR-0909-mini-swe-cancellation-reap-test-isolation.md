@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Apply explicit workspace-argument readiness publication fix; rerun native and exact-head AArch64, then inspect all checks.",
+  "next_action": "Await exact-head CI for f4a8c5d; inspect AArch64 and all required checks, then independently review and merge only if all green.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "f4a8c5d0847b82784759a045ef68c5df6b4003d0",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 357,
+  "task_revision": 358,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-15T16:51:18+00:00",
+  "updated_at": "2026-09-15T16:51:41+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1279,3 +1279,10 @@ classified.
 
 - 2026-09-15T16:51:18+00:00: Recorded command exit 0; command argv SHA-256
   23357cce65aac3ab188ef6a43f3a3b61ff2641f98d5be6396b3f6abaab7ff46b.
+
+- 2026-09-15T16:51:41+00:00: Applied coordinator-requested explicit workspace argument publication.
+  Fixture now selects absolute $1 workspace when present, with a compatibility fallback to the
+  existing $5 workspace position, and writes children.pids there. This removes cwd ambiguity without
+  increasing timeouts or changing production code/gates. Local focused cancellation test and fmt
+  pass; signed SSH/DCO commit f4a8c5d0847b82784759a045ef68c5df6b4003d0 pushed to PR127 with
+  force-with-lease. Fresh exact-head CI required.
