@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Await exact-head CI for 37c1a08; inspect every required check, independently review, and merge only if all green.",
+  "next_action": "Apply explicit workspace-argument readiness publication fix; rerun native and exact-head AArch64, then inspect all checks.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "37c1a08e3dc1dbc62a4897927e3a73013faa5236",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 350,
+  "task_revision": 351,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-15T16:50:17+00:00",
+  "updated_at": "2026-09-15T16:50:28+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1261,3 +1261,9 @@ classified.
 - 2026-09-15T16:23:54+00:00: Heartbeat by asb_ar0909_lifecycle_repair.
 
 - 2026-09-15T16:50:17+00:00: Heartbeat by asb_ar0909_lifecycle_repair.
+
+- 2026-09-15T16:50:28+00:00: Coordinator review requests eliminating emulated cwd ambiguity after
+  25s readiness still failed in run 34992348805 (failure at 26.23s). Although Rust command
+  construction suggests shell $5 is workspace after -P/-S/-c/driver, the fixture will now select the
+  absolute workspace argument explicitly (with a bounded compatibility fallback only for the
+  existing argv shape), then publish children.pids there. No timeout increase or gate weakening.
