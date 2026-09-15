@@ -2,7 +2,7 @@
 {
   "branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-15T17:24:24+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -15,15 +15,15 @@
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "c897313524a8d061a078465c5db0512ed366af9d",
-  "owner": "",
+  "owner": "asb_ar0909_lifecycle_repair",
   "plan": "../plans/AR-0909.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 278,
+  "task_revision": 279,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-10T10:28:31+00:00",
+  "updated_at": "2026-09-15T15:24:24+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1068,3 +1068,5 @@ classified.
 - 2026-09-10T10:28:31+00:00: Recovered expired claim formerly owned by quality_20260906. Recover
   stale expired lease after terminal candidate evidence; preserve PR127 c897313 and recorded shared
   infrastructure blockers.
+
+- 2026-09-15T15:24:24+00:00: Claimed by asb_ar0909_lifecycle_repair.
