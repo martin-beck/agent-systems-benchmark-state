@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-15T10:07:50+00:00",
   "depends_on": [],
   "id": "AR-1196",
-  "next_action": "Await independent review and all exact-head PR #171 checks; integration must use local signed merge/push, not GitHub web merge. Current main remains 817a40b.",
+  "next_action": "Reconcile PR #170 merge commit 748c16ba against remote main; preserve evidence and do not merge duplicate PR #171. If main advances to 748c, rerun exact-main policy and all post-merge gates; if it does not, escalate branch-ref inconsistency.",
   "owner": "asb_main_policy_repair",
   "plan": "../plans/AR-1196.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Restore a Signed-off-by-bearing protected-main history after the catalog merge.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Protected-main DCO history repair",
-  "updated_at": "2026-09-15T08:08:09+00:00",
+  "updated_at": "2026-09-15T08:10:04+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-dco-repair"
 }
 ---
@@ -38,3 +38,10 @@ policy checks; never bypass the gate or misclassify the failed post-merge run.
   519879aa13507f2eb46eb174d404cea7f505525c. SSH ED25519 signature and exact DCO verified. Local
   repository policy passed; signature/failure-path tests 16 passed plus 2 subtests. No merge/release
   performed.
+
+- 2026-09-15T08:10:04+00:00: Live update: PR #170 is now reported MERGED with GitHub-generated merge
+  commit 748c16ba67b9cff5a08558784dd183d020a1f2d4 (parents 817a40b and 78ae48b, tree 519879aa). Its
+  body includes DCO but committer is GitHub; local main ref query still returns 817a40b, so
+  publication/ref reconciliation is pending. PR #171 remains open with signed local candidate
+  200edbb; its platform job failed source identity because the PR workflow used synthetic base
+  748c16b. Do not merge #171 until refs and exact-main status reconcile.
