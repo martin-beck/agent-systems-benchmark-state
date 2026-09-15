@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1228-auth-backends-probes",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-15T20:36:44+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0319",
     "AR-0320",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1228-auth-backends-probes",
   "observed_dirty": 0,
   "observed_head": "d6e1c4e810a646323056d8547a800f7c34ae581e",
-  "owner": "asb_ar1228_auth_backends",
+  "owner": "",
   "plan": "../plans/AR-1228.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T18:41:26+00:00",
+  "updated_at": "2026-09-15T18:42:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
@@ -233,3 +233,8 @@ integration rather than renderer or frontend behavior.
 
 - 2026-09-15T18:41:26+00:00: Recorded command exit 0; command argv SHA-256
   eaf2472e4b0ec29bac3303a6d46474c99be3c0ab077feca87b1c3650d4745e53.
+
+- 2026-09-15T18:42:09+00:00: Blocked on AR-1230 authenticated provider-request seam. AR-1230 created
+  in state commit 78e602be5 with dependencies AR-0319, AR-0320 and AR-1100. Independent review
+  confirms PR #177 d6e1c4e transport is unauthenticated GET-only; no approved secret/header
+  injection seam exists. Preserve PR #177 evidence; resume only after AR-1230 completes.
