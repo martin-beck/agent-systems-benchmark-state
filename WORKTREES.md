@@ -176,8 +176,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-verifier-integrity` | `feature/verifier-integrity` | `3fc65ea73bad` | 0 | behind 313, ahead 0 |
 | `agent-systems-benchmark-workbuddy-provenance` | `feature/workbuddy-provenance` | `9aad1317bdca` | 0 | behind 186, ahead 0 |
 | `asb-ar1100-repair` | `DETACHED` | `c68c49eff7e3` | 0 | behind 1, ahead 0 |
-| `asb-ar1190-catalog` | `feature/asb-authenticated-agent-catalog` | `8a35fbed11d1` | 0 | behind 0, ahead 3 |
-| `asb-ar1191-lifecycle` | `feature/asb-verified-agent-lifecycle` | `f80b4c4f69c9` | 0 | behind 0, ahead 2 |
+| `asb-ar1190-catalog` | `feature/asb-authenticated-agent-catalog` | `78ae48b71ccc` | 0 | behind 0, ahead 4 |
+| `asb-ar1191-lifecycle` | `feature/asb-verified-agent-lifecycle` | `b9887e316aea` | 0 | behind 0, ahead 3 |
 | `asb-boundary-hardening` | `DETACHED` | `d32748d0795e` | 0 | behind 3, ahead 0 |
 | `asb-current-audit-20260914` | `DETACHED` | `817a40bfbd7c` | 0 | behind 0, ahead 0 |
 | `asb-review-154` | `DETACHED` | `4ceaf04f32a0` | 0 | behind 2, ahead 0 |

@@ -23,22 +23,22 @@ Generated from local Git and GitHub. Do not edit.
 | #149 | `dependabot/cargo/url-2.5.8@f7edfbbd0e98` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump url from 2.5.7 to 2.5.8 |
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
 | #151 | `dependabot/cargo/serde-1.0.229@9c87e23d6d29` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
-| #168 | `feature/asb-authenticated-agent-catalog@8a35fbed11d1` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS | feat(control): add authenticated agent catalog contract |
-| #169 | `feature/asb-verified-agent-lifecycle@f80b4c4f69c9` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(control): define verified agent lifecycle contract |
+| #168 | `feature/asb-authenticated-agent-catalog@78ae48b71ccc` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(control): add authenticated agent catalog contract |
+| #169 | `feature/asb-verified-agent-lifecycle@b9887e316aea` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(control): define verified agent lifecycle contract |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34942009355 | `f80b4c4f69c9` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 34942009184 | `f80b4c4f69c9` | pull_request | Repository quality | in_progress:- |
-| 34942009173 | `f80b4c4f69c9` | pull_request | Formal assurance | in_progress:- |
-| 34942009147 | `f80b4c4f69c9` | pull_request | Hosted portability and native qualification | in_progress:- |
-| 34942009136 | `f80b4c4f69c9` | pull_request | Huawei MIT source headers | completed:success |
-| 34942009128 | `f80b4c4f69c9` | pull_request | Fault assurance | in_progress:- |
-| 34942009127 | `f80b4c4f69c9` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 34942009121 | `f80b4c4f69c9` | pull_request | Rust verification | in_progress:- |
-| 34941989587 | `8a35fbed11d1` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 34941989576 | `8a35fbed11d1` | pull_request | Huawei MIT source headers | completed:success |
-| 34941989538 | `8a35fbed11d1` | pull_request | Repository quality | in_progress:- |
-| 34941989506 | `8a35fbed11d1` | pull_request | Formal assurance | in_progress:- |
+| 34942434511 | `78ae48b71ccc` | pull_request | Fault assurance | completed:success |
+| 34942434490 | `78ae48b71ccc` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 34942434457 | `78ae48b71ccc` | pull_request | Huawei MIT source headers | completed:success |
+| 34942434447 | `78ae48b71ccc` | pull_request | Emulated aarch64 portability | completed:success |
+| 34942434428 | `78ae48b71ccc` | pull_request | Formal assurance | completed:success |
+| 34942434393 | `78ae48b71ccc` | pull_request | Rust verification | completed:success |
+| 34942434378 | `78ae48b71ccc` | pull_request | Repository quality | in_progress:- |
+| 34942434372 | `78ae48b71ccc` | pull_request | Hosted portability and native qualification | completed:success |
+| 34942396560 | `b9887e316aea` | pull_request | Repository quality | completed:success |
+| 34942396518 | `b9887e316aea` | pull_request | Fault assurance | completed:success |
+| 34942396426 | `b9887e316aea` | pull_request | Rust verification | completed:success |
+| 34942396389 | `b9887e316aea` | pull_request | Formal assurance | completed:success |
