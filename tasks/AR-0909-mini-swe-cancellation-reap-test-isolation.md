@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Await fresh exact-head CI for 3393737; inspect all required checks, then independently review and merge only if all green.",
+  "next_action": "Repair emulated helper publication/path and bounded readiness budget; rerun focused and exact-head CI.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "3393737f5a1b3d32a6c947c824fbfdc59907e045",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 318,
+  "task_revision": 319,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-15T15:59:22+00:00",
+  "updated_at": "2026-09-15T15:59:48+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1167,3 +1167,9 @@ classified.
   exact-head CI restarted. No production code or gates weakened.
 
 - 2026-09-15T15:59:22+00:00: Heartbeat by asb_ar0909_lifecycle_repair.
+
+- 2026-09-15T15:59:48+00:00: Fresh exact-head run 34991323523 still failed emulated-AArch64 mini_swe
+  cancellation readiness at line 2158 after 3393737 cwd fix. The fixture did not publish
+  children.pids within the 2-second deadline under QEMU; local native pass is insufficient.
+  Investigating helper argv/cwd under emulation and bounded startup budget; no merge or gate
+  weakening.
