@@ -18,11 +18,11 @@
   "plan": "../plans/AR-1228.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T18:42:09+00:00",
+  "updated_at": "2026-09-15T20:27:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
@@ -238,3 +238,6 @@ integration rather than renderer or frontend behavior.
   in state commit 78e602be5 with dependencies AR-0319, AR-0320 and AR-1100. Independent review
   confirms PR #177 d6e1c4e transport is unauthenticated GET-only; no approved secret/header
   injection seam exists. Preserve PR #177 evidence; resume only after AR-1230 completes.
+
+- 2026-09-15T20:27:10+00:00: AR-1230 seam is merged at 3989cb7; resume concrete backend/probe
+  transport implementation.
