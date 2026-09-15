@@ -13,7 +13,7 @@
   "id": "AR-0909",
   "next_action": "Use a bounded emulation-compatible readiness window below the helper lifetime, rerun focused and exact-head CI; retain fail-closed missing-file failure.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "7da1e0d9beb7b36d0e6fbba78c12718b9e25b181",
   "owner": "asb_ar0909_lifecycle_repair",
   "plan": "../plans/AR-0909.md",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 342,
+  "task_revision": 343,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-15T16:22:34+00:00",
+  "updated_at": "2026-09-15T16:22:41+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
