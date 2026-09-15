@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1228-auth-backends-probes",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-15T23:30:24+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0319",
     "AR-0320",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1228-auth-backends-probes",
   "observed_dirty": 0,
   "observed_head": "2d716c8cac9474d5aafbd3dd399dc1641ec0eb85",
-  "owner": "asb_ar1228_transport_repair",
+  "owner": "",
   "plan": "../plans/AR-1228.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 244,
+  "task_revision": 245,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T21:37:38+00:00",
+  "updated_at": "2026-09-15T21:38:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
@@ -694,3 +694,7 @@ integration rather than renderer or frontend behavior.
 
 - 2026-09-15T21:37:38+00:00: Recorded command exit 0; command argv SHA-256
   59acd827c63efcf61e719a82c5c9ddaf6f95bd13e892174b35c76c30925ca285.
+
+- 2026-09-15T21:38:11+00:00: PR #177 merged at efe741a75a8a3e7bd14afd8c6cef119f46a21c74; exact head
+  2d716c8; all 12 required checks green; independent review approved; post-merge origin/main
+  verified.
