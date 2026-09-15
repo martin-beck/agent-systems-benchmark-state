@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 156,
+  "task_revision": 157,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T19:56:08+00:00",
+  "updated_at": "2026-09-15T19:56:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
@@ -434,3 +434,6 @@ integration.
 
 - 2026-09-15T19:56:01+00:00: Recorded command exit 0; command argv SHA-256
   23a96bffbf546b4dd3032cbfbe4f3ee6cde2dc87e5fc8bfed2beaa08b8749326.
+
+- 2026-09-15T19:56:13+00:00: Recorded command exit 0; command argv SHA-256
+  987e0d9ac4e88d83cd62975832c181c3c798255f62859a22c4f44552b8cfc960.
