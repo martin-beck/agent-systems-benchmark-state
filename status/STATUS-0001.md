@@ -1347,7 +1347,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md): Authenticated provider-request seam and secret injection contract | asb_ar1230_auth_request_seam | Define the approved bounded provider authentication request and secret-injection seam. | PR #178 exact head 35bbb27 requires independent re-review and CI rerun. Absolute deadline now has bounded monotonic-window validation with distinct DeadlineExceeded; schema conditionals and tests remain green. After gates, hand off to AR-1228 transport and AR-1229 application integration. |
+| P0 | [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md): Authenticated provider-request seam and secret injection contract | asb_ar1230_auth_request_seam | Define the approved bounded provider authentication request and secret-injection seam. | PR #178 exact head 77464e0 requires independent re-review and CI rerun. Runtime and schema deadline maxima now match and invalid-boundary tests pass; transport response/redirect gates remain AR-1228, application/schema integration remains AR-1229. |
 
 ### Open (13)
 
