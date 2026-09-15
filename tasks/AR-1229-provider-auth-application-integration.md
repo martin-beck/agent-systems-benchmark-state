@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 224,
+  "task_revision": 225,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T23:04:18+00:00",
+  "updated_at": "2026-09-15T23:04:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -599,3 +599,6 @@ public state or weaken the existing resolver and authenticated-control boundarie
   worktree clean. Full workspace gate must be rerun at this new exact head.
 
 - 2026-09-15T23:04:18+00:00: Heartbeat by asb_ar1229_auth_application.
+
+- 2026-09-15T23:04:41+00:00: Recorded command exit 101; command argv SHA-256
+  681994a9b7b368ece8b133aae9b6f6ac982dd6a4869c3ca5fb59dcb9ad68604a.
