@@ -10,17 +10,17 @@
   "id": "AR-1229",
   "next_action": "Wire the durable auth registry into RunnerBackend and add bounded asb auth CLI dispatch plus positive, negative, idempotency, and privacy tests; current signed head 8c9eca7 is only the protocol/compile correction and remains fail-closed.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
-  "observed_dirty": 1,
-  "observed_head": "8c9eca7af1fe5021463dccb5cc00662807ad1fd2",
+  "observed_dirty": 0,
+  "observed_head": "1f806b94472b8040f57ed2af6b0e2cced0545e31",
   "owner": "asb_ar1229_cli_admission",
   "plan": "../plans/AR-1229.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T21:58:48+00:00",
+  "updated_at": "2026-09-15T21:58:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
