@@ -8,7 +8,7 @@
     "AR-1230"
   ],
   "id": "AR-1229",
-  "next_action": "Implement remaining AR-1229 review blockers on 35b8c2d: AuthRevoke mutation idempotency schema, bounded CLI control-service dispatch, and lifecycle restart/partial-failure tests; then rerun focused/full gates and update PR #179.",
+  "next_action": "Implement bounded CLI control-service execution and lifecycle restart/partial-failure tests on e91dd89; rerun full applicable gates and update PR #179 exact head for independent review.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
   "observed_dirty": 0,
   "observed_head": "e91dd89fc985075fc8ff78a1c0358abea914a7c2",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 190,
+  "task_revision": 191,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:52:45+00:00",
+  "updated_at": "2026-09-15T22:53:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -509,3 +509,9 @@ public state or weaken the existing resolver and authenticated-control boundarie
 
 - 2026-09-15T22:52:45+00:00: Recorded command exit 0; command argv SHA-256
   422de929f35a13a7206d8a95352061502a93f1785f7694e5184458196cd08b15.
+
+- 2026-09-15T22:53:08+00:00: AuthRevoke now has dedicated deny-unknown-fields AuthRevokeParams with
+  required idempotency_key; validation and CLI/control mutation key propagation updated. Provenance
+  hash refreshed. Product commit e91dd89 is SSH-signed with DCO and pushed; asb-control and asb-cli
+  library tests passed (100 total). Prior full asb-cli test exposed and was corrected for provenance
+  drift.

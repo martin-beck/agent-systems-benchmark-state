@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1229](tasks/AR-1229-provider-auth-application-integration.md): Provider authentication application integration | Integrate provider authentication into ASB config, control and CLI surfaces. | Implement remaining AR-1229 review blockers on 35b8c2d: AuthRevoke mutation idempotency schema, bounded CLI control-service dispatch, and lifecycle restart/partial-failure tests; then rerun focused/full gates and update PR #179. | asb_ar1229_auth_application |
+| P0 | [AR-1229](tasks/AR-1229-provider-auth-application-integration.md): Provider authentication application integration | Integrate provider authentication into ASB config, control and CLI surfaces. | Implement bounded CLI control-service execution and lifecycle restart/partial-failure tests on e91dd89; rerun full applicable gates and update PR #179 exact head for independent review. | asb_ar1229_auth_application |
 
 ## Open
 
