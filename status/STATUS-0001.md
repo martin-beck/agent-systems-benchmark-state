@@ -1329,7 +1329,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1120](../tasks/AR-1120.md): Authentication enrollment | asb_ar1120_auth_enrollment | Enroll provider authentication. | Await independent review of PR #176 exact head 8641bff and all required exact-head CI. If approved and green, merge through coordinator, run exact-main post-merge gates, then release AR-1120 with evidence; no downstream promotion yet. |
+| P0 | [AR-1120](../tasks/AR-1120.md): Authentication enrollment | asb_ar1120_auth_enrollment | Enroll provider authentication. | PR #176 updated to exact head 31c5562 with valid rustdoc link. Await replacement exact-head CI and independent review; merge only when every required check is green, then run post-merge gates. |
 | P1 | [AR-0909](../tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | asb_ar0909_lifecycle_repair | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Await exact-head CI for b0df3fb; inspect AArch64 and all required checks, independently review, merge only if all green. |
 
 ### Open (12)
