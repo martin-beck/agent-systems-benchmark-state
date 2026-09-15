@@ -9,7 +9,7 @@
     "AR-1100"
   ],
   "id": "AR-1230",
-  "next_action": "PR #178 exact head 474e546 requires independent re-review and CI rerun. Schema instance tests now exercise valid OpenAI/Gemini/Ollama policies and invalid policy/deadline boundaries; delegated transport/application gates remain AR-1228/AR-1229.",
+  "next_action": "PR #178 exact head e1a5c1d requires independent re-review and CI rerun. Shared runtime JSON validator now exercises schema-shaped positive/negative provider-policy/deadline instances; delegated transport/application gates remain AR-1228/AR-1229.",
   "observed_branch": "feature/ar-1230-authenticated-provider-request-seam",
   "observed_dirty": 0,
   "observed_head": "e1a5c1d6dac088138f93ff8b50ededfebdff2e61",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T19:32:20+00:00",
+  "updated_at": "2026-09-15T19:32:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
@@ -328,3 +328,8 @@ integration.
 
 - 2026-09-15T19:32:20+00:00: Recorded command exit 0; command argv SHA-256
   987e0d9ac4e88d83cd62975832c181c3c798255f62859a22c4f44552b8cfc960.
+
+- 2026-09-15T19:32:44+00:00: Signed+DCO e1a5c1d replaces duplicated schema test helper with shared
+  validate_json_instance runtime validator, covering unknown fields, OpenAI/Gemini/Ollama policy
+  combinations, zero and overflow deadlines. Focused authenticated_request tests: 4 passed; fmt and
+  clippy passed. Branch pushed; AR-1230 remains open pending independent review and CI.
