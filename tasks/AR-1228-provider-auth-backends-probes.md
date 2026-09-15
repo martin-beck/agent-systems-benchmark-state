@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 127,
+  "task_revision": 128,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T20:41:49+00:00",
+  "updated_at": "2026-09-15T20:41:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
@@ -375,3 +375,6 @@ integration rather than renderer or frontend behavior.
   ignored; integration suites passed with documented environment-gated ignores; 4 doc tests passed.
   Worktree clean and lease refreshed. Product head remains signed+DCO
   16375248089fc55a4494efc82a9cf7e5a5f92d18.
+
+- 2026-09-15T20:41:59+00:00: Recorded command exit 0; command argv SHA-256
+  a2bd1471a11ab9bf5bfe98f95695a5d62c09fd2059f25a7a2f59d2498e047a26.
