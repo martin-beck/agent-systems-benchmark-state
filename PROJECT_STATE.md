@@ -25,21 +25,21 @@ Generated from local Git and GitHub. Do not edit.
 | #151 | `dependabot/cargo/serde-1.0.229@4cf44ffb2fba` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #176 | `feature/ar-1120@d9253f2187a6` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(auth): add credential enrollment lifecycle |
-| #179 | `feature/ar-1229-auth-application-integration@b33d6da59ba9` | `main` | CLEAN | - | feat: integrate provider authentication application surfaces |
+| #179 | `feature/ar-1229-auth-application-integration@b33d6da59ba9` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS | feat: integrate provider authentication application surfaces |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35034271853 | `b33d6da59ba9` | pull_request | Huawei MIT source headers | queued:- |
-| 35034271842 | `b33d6da59ba9` | pull_request | Agent Workflow Quality shadow | queued:- |
-| 35034271803 | `b33d6da59ba9` | pull_request | Hosted portability and native qualification | queued:- |
-| 35034271788 | `b33d6da59ba9` | pull_request | Repository quality | queued:- |
-| 35034271780 | `b33d6da59ba9` | pull_request | Fault assurance | pending:- |
-| 35034271763 | `b33d6da59ba9` | pull_request | Rust verification | pending:- |
-| 35034271737 | `b33d6da59ba9` | pull_request | Formal assurance | pending:- |
-| 35034271726 | `b33d6da59ba9` | pull_request | Emulated aarch64 portability | pending:- |
+| 35034271853 | `b33d6da59ba9` | pull_request | Huawei MIT source headers | completed:success |
+| 35034271842 | `b33d6da59ba9` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 35034271803 | `b33d6da59ba9` | pull_request | Hosted portability and native qualification | completed:success |
+| 35034271788 | `b33d6da59ba9` | pull_request | Repository quality | in_progress:- |
+| 35034271780 | `b33d6da59ba9` | pull_request | Fault assurance | in_progress:- |
+| 35034271763 | `b33d6da59ba9` | pull_request | Rust verification | in_progress:- |
+| 35034271737 | `b33d6da59ba9` | pull_request | Formal assurance | in_progress:- |
+| 35034271726 | `b33d6da59ba9` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 35034110044 | `c1d55eee18cb` | pull_request | Hosted portability and native qualification | completed:success |
 | 35034110031 | `c1d55eee18cb` | pull_request | Repository quality | completed:failure |
-| 35034110010 | `c1d55eee18cb` | pull_request | Fault assurance | in_progress:- |
-| 35034109997 | `c1d55eee18cb` | pull_request | Rust verification | in_progress:- |
+| 35034110010 | `c1d55eee18cb` | pull_request | Fault assurance | completed:cancelled |
+| 35034109997 | `c1d55eee18cb` | pull_request | Rust verification | completed:cancelled |
