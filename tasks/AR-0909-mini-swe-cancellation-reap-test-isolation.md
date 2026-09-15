@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Repair helper readiness synchronization for emulated AArch64 without weakening identity/liveness checks; rerun focused and exact-head CI.",
+  "next_action": "Await fresh exact-head CI for 3393737; inspect all required checks, then independently review and merge only if all green.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "3393737f5a1b3d32a6c947c824fbfdc59907e045",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 316,
+  "task_revision": 317,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-15T15:52:30+00:00",
+  "updated_at": "2026-09-15T15:52:42+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1157,3 +1157,11 @@ classified.
   23357cce65aac3ab188ef6a43f3a3b61ff2641f98d5be6396b3f6abaab7ff46b.
 
 - 2026-09-15T15:52:30+00:00: Heartbeat by asb_ar0909_lifecycle_repair.
+
+- 2026-09-15T15:52:42+00:00: Diagnosed readiness timeout as a test-fixture argv/path defect: the
+  helper wrote children.pids to shell positional $5 (provider endpoint), not the configured
+  workspace; under hosted AArch64 it never created the readiness file. Test-only commit
+  3393737f5a1b3d32a6c947c824fbfdc59907e045 changes the helper to write children.pids in its
+  already-bound workspace cwd, matching the observed pid_path. Focused cancellation test and package
+  Clippy pass; SSH signature and DCO verified. PR127 updated with guarded force-with-lease;
+  exact-head CI restarted. No production code or gates weakened.

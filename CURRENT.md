@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Repair helper readiness synchronization for emulated AArch64 without weakening identity/liveness checks; rerun focused and exact-head CI. | asb_ar0909_lifecycle_repair |
+| P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Await fresh exact-head CI for 3393737; inspect all required checks, then independently review and merge only if all green. | asb_ar0909_lifecycle_repair |
 
 ## Open
 
