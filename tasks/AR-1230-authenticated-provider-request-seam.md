@@ -11,17 +11,17 @@
   "id": "AR-1230",
   "next_action": "PR #178 exact head 1f49831 requires independent re-review and CI. Seam schema/docs and unknown-field negative test now present; verify exact-head gates, then hand off to AR-1228 transport and AR-1229 application integration.",
   "observed_branch": "feature/ar-1230-authenticated-provider-request-seam",
-  "observed_dirty": 2,
-  "observed_head": "1f49831b291368bc01d6fba574bc0c0115a8224e",
+  "observed_dirty": 0,
+  "observed_head": "c5b3933ef34f049a1530d580807d697c5598fa6e",
   "owner": "asb_ar1230_auth_request_seam",
   "plan": "../plans/AR-1230.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T19:18:23+00:00",
+  "updated_at": "2026-09-15T19:18:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
