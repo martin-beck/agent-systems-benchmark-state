@@ -31,7 +31,7 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 34955354581 | `ef82484fa78d` | push | Repository quality | completed:failure |
-| 34955354482 | `ef82484fa78d` | push | Formal assurance | in_progress:- |
+| 34955354482 | `ef82484fa78d` | push | Formal assurance | completed:success |
 | 34955354481 | `ef82484fa78d` | push | Hosted portability and native qualification | completed:success |
 | 34955354479 | `ef82484fa78d` | push | Rust verification | in_progress:- |
 | 34955354446 | `ef82484fa78d` | push | Fault assurance | completed:success |
