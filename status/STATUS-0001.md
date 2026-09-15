@@ -1329,7 +1329,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1120](../tasks/AR-1120.md): Authentication enrollment | asb_ar1120_auth_enrollment | Enroll provider authentication. | Fix rotate_api_key transaction: preflight generation, rollback staged replacement when old revoke fails, represent rollback failure without false success, add failing-revoke test proving metadata/backend consistency; then rerun all gates. |
+| P0 | [AR-1120](../tasks/AR-1120.md): Authentication enrollment | asb_ar1120_auth_enrollment | Enroll provider authentication. | PR #176 exact head a68b29a is awaiting replacement CI and independent approval. If all checks green, merge through coordinator, run post-merge verification, then release AR-1120; no downstream promotion before terminal evidence. |
 | P1 | [AR-0909](../tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | asb_ar0909_lifecycle_repair | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Await exact-head CI for b0df3fb; inspect AArch64 and all required checks, independently review, merge only if all green. |
 
 ### Open (12)
