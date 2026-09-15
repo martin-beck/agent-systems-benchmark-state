@@ -24,21 +24,21 @@ Generated from local Git and GitHub. Do not edit.
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
 | #151 | `dependabot/cargo/serde-1.0.229@9c87e23d6d29` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
-| #173 | `fix/ar0908-current-main@39f90b316faf` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(cli): harden control scratch isolation on current main |
+| #173 | `fix/ar0908-current-main@81a81cfdb913` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(cli): harden control scratch isolation on current main |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34956775723 | `81a81cfdb913` | pull_request | Rust verification | in_progress:- |
+| 34956775629 | `81a81cfdb913` | pull_request | Huawei MIT source headers | completed:success |
+| 34956775558 | `81a81cfdb913` | pull_request | Repository quality | in_progress:- |
+| 34956775474 | `81a81cfdb913` | pull_request | Formal assurance | in_progress:- |
+| 34956775387 | `81a81cfdb913` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 34956775380 | `81a81cfdb913` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 34956775348 | `81a81cfdb913` | pull_request | Fault assurance | completed:success |
+| 34956775169 | `81a81cfdb913` | pull_request | Hosted portability and native qualification | completed:success |
 | 34955354581 | `ef82484fa78d` | push | Repository quality | completed:failure |
 | 34955354482 | `ef82484fa78d` | push | Formal assurance | completed:success |
 | 34955354481 | `ef82484fa78d` | push | Hosted portability and native qualification | completed:success |
 | 34955354479 | `ef82484fa78d` | push | Rust verification | completed:success |
-| 34955354446 | `ef82484fa78d` | push | Fault assurance | completed:success |
-| 34955354399 | `ef82484fa78d` | push | Huawei MIT source headers | completed:success |
-| 34955354389 | `ef82484fa78d` | push | Emulated aarch64 portability | completed:success |
-| 34955323035 | `d354a5127c8d` | push | Rust verification | completed:cancelled |
-| 34955323024 | `d354a5127c8d` | push | Hosted portability and native qualification | completed:cancelled |
-| 34955323007 | `d354a5127c8d` | push | Repository quality | completed:cancelled |
-| 34955322922 | `d354a5127c8d` | push | Fault assurance | completed:cancelled |
-| 34955322916 | `d354a5127c8d` | push | Emulated aarch64 portability | completed:cancelled |
