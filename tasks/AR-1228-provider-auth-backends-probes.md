@@ -9,7 +9,7 @@
     "AR-1100"
   ],
   "id": "AR-1228",
-  "next_action": "Provider probe request contract now at local exact head pending commit/push. Focused provider_probe tests (3), auth_backend compile tests, fmt and clippy pass after correcting byte-range typing and moved test fixture; commit signed+DCO, push PR #177, then await independent review and full CI.",
+  "next_action": "PR #177 exact head d6e1c4e adds loopback-only pinned bounded GET transport with stale-generation and redirect/oversize fail-closed tests. Independent review still blocks completion: no approved credential/header injection or provider-auth protocol contract; durable registry/CLI/control integration remains AR-1229. Define the approved authenticated request seam before further transport work, then rerun full gates.",
   "observed_branch": "feature/ar-1228-auth-backends-probes",
   "observed_dirty": 0,
   "observed_head": "d6e1c4e810a646323056d8547a800f7c34ae581e",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T18:35:57+00:00",
+  "updated_at": "2026-09-15T18:36:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
@@ -214,3 +214,10 @@ integration rather than renderer or frontend behavior.
 
 - 2026-09-15T18:35:57+00:00: Recorded command exit 0; command argv SHA-256
   48ebab3bb5e4bd42c46cad07dcc55d37b4aefca315508cfb17e67a0025be5412.
+
+- 2026-09-15T18:36:34+00:00: Implemented and pushed signed+DCO d6e1c4e. execute_loopback_probe
+  validates endpoint digest, loopback-only HTTP, timeout/body bounds, rejects redirects/malformed
+  responses, and checks generation before/after I/O. Focused provider_probe tests: 5 passed; cargo
+  fmt and clippy -D warnings passed. Review blocker remains missing approved authenticated provider
+  request seam and AR-1229 durable application integration; no unsafe ambient/plaintext/unqualified
+  network path added.

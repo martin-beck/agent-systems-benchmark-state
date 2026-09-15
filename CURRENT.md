@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1228](tasks/AR-1228-provider-auth-backends-probes.md): Qualify provider authentication backends and probes | Qualify provider authentication backends, probes and application integration. | Provider probe request contract now at local exact head pending commit/push. Focused provider_probe tests (3), auth_backend compile tests, fmt and clippy pass after correcting byte-range typing and moved test fixture; commit signed+DCO, push PR #177, then await independent review and full CI. | asb_ar1228_auth_backends |
+| P0 | [AR-1228](tasks/AR-1228-provider-auth-backends-probes.md): Qualify provider authentication backends and probes | Qualify provider authentication backends, probes and application integration. | PR #177 exact head d6e1c4e adds loopback-only pinned bounded GET transport with stale-generation and redirect/oversize fail-closed tests. Independent review still blocks completion: no approved credential/header injection or provider-auth protocol contract; durable registry/CLI/control integration remains AR-1229. Define the approved authenticated request seam before further transport work, then rerun full gates. | asb_ar1228_auth_backends |
 | P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Await exact-head CI for b0df3fb; inspect AArch64 and all required checks, independently review, merge only if all green. | asb_ar0909_lifecycle_repair |
 
 ## Open
