@@ -11,12 +11,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 13 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 72 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 151 |
+| **Done** | Accepted, integrated, and durably verified | 152 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 9 |
 
@@ -305,7 +305,7 @@ flowchart LR
         AR_1190["AR-1190 - Done"]:::status_done
         AR_1191["AR-1191 - Done"]:::status_done
         AR_1196["AR-1196 - Done"]:::status_done
-        AR_1197["AR-1197 - In progress"]:::status_in_progress
+        AR_1197["AR-1197 - Done"]:::status_done
         AR_1198["AR-1198 - In progress"]:::status_in_progress
         AR_1199["AR-1199 - Planned"]:::status_planned
     end
@@ -1320,12 +1320,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1198](../tasks/AR-1198.md): Canonical authenticated agent-catalog digest | root-merge-watch | Define and enforce the canonical authenticated ASB v1.4 agent-catalog digest. | Independently review PR #174 at exact head 3cc8fa1a27587642bda5100f45140c11f1fd0c6d, run cross-repository vector checks with asb-tui AR-1195, then merge only after all exact-head checks are green. |
-| P1 | [AR-1197](../tasks/AR-1197-control-scratch-isolation-current-main.md): Qualify current-main control scratch isolation | root-pr173-rebase | Qualify concurrent ASB control scratch-root isolation on current repaired main. | Obtain independent immutable-head review of PR #173; then merge only through protected main after exact-head checks remain green, and verify post-merge assurance at the resulting main SHA. |
 | P2 | [AR-1200](../tasks/AR-1200-metrics-timeout-fixture-stability.md): Kernel diagnostic rejection fixture stability | root-ar1200-metrics | Remove hosted timing flakiness from the bounded kernel diagnostic rejection test. | Review and merge the isolated test-fixture stabilization after exact-head CI passes; do not modify production timeout policy. |
 
 ### Open (13)
@@ -1439,7 +1438,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (151)
+### Done (152)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1519,3 +1518,4 @@ flowchart LR
 | P1 | [AR-0503](../tasks/AR-0503-strict-replay.md): Implement strict provider response replay | Unclaimed | Serve local recorded responses while real agent and tools execute. | Run live coordination reconciliation/doctor and complete state validation; release AR-0503 done only if clean synchronized evidence remains exact. |
 | P1 | [AR-0504](../tasks/AR-0504-replay-pacing.md): Implement pacing and replay overhead assessment | Unclaimed | Support immediate, fixed-latency, original-paced and seeded synthetic scenarios. | Run live coordination doctor/reconciliation, then release AR-0504 done with exact postmerge evidence. |
 | P1 | [AR-0505](../tasks/AR-0505-agent-replay-conformance.md): Prove real-agent replay conformance | Unclaimed | Test each actual client through recording and offline replay of engineering tasks. | Independently review the exact current-main four-agent native loopback evidence and capability limits; if accepted, release AR-0505 done without adding duplicate aggregate-matrix product changes. |
+| P1 | [AR-0603](../tasks/AR-0603-csb-execution-assurance.md): Establish pinned CSB execution and conformance boundary | Unclaimed | Pin and audit CSB provenance and prove a bounded sandboxed execution, cancellation, recovery, artifact, and privacy boundary. | Completed; retain explicit Ubuntu 24.04 x86_64 support limits. |
