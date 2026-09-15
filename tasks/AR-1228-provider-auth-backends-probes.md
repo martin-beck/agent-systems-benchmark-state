@@ -10,7 +10,7 @@
     "AR-1230"
   ],
   "id": "AR-1228",
-  "next_action": "Implement remaining authenticated Gemini/Ollama wire fixtures and mid-I/O cancellation/generation/oversize tests; design cancellable transport seam for connect/write before merge. PR #177 exact head cdfd81cb55f505cd27316e3d8d744d303e74ba67 remains unmergeable.",
+  "next_action": "PR #177 exact head ca5ba5ac66681eb2088727415e36daae00557320 contains std-only 50ms polled connect and partial writes with cancellation/deadline checks. Run exact-head CI and independently review; then address any remaining provider fixture or mid-I/O evidence before merge.",
   "observed_branch": "feature/ar-1228-auth-backends-probes",
   "observed_dirty": 0,
   "observed_head": "ca5ba5ac66681eb2088727415e36daae00557320",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 219,
+  "task_revision": 220,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T21:15:53+00:00",
+  "updated_at": "2026-09-15T21:16:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
@@ -629,3 +629,6 @@ integration rather than renderer or frontend behavior.
   48ebab3bb5e4bd42c46cad07dcc55d37b4aefca315508cfb17e67a0025be5412.
 
 - 2026-09-15T21:15:53+00:00: Heartbeat by asb_ar1228_transport_repair.
+
+- 2026-09-15T21:16:31+00:00: Signed+DCO ca5ba5a pushed to PR #177. Focused provider_probe tests
+  (10), fmt, clippy and diff checks passed. Lease retained for follow-up.
