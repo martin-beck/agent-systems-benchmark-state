@@ -8,7 +8,7 @@
     "AR-1230"
   ],
   "id": "AR-1229",
-  "next_action": "Run policy and conformance against exact head 8771b9b78402b889898af30b8edf49b0cdf2c472; verify v1-v1.5 schema byte identity to efe741a and v1.6-only auth variants, then update PR #179 and full gates.",
+  "next_action": "Monitor PR #179 exact head 8771b9b78402b889898af30b8edf49b0cdf2c472 checks; once all required lanes terminal green, request independent review and verify catalog/schema evidence before merge.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
   "observed_dirty": 0,
   "observed_head": "8771b9b78402b889898af30b8edf49b0cdf2c472",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 160,
+  "task_revision": 161,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:39:33+00:00",
+  "updated_at": "2026-09-15T22:39:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -436,3 +436,7 @@ public state or weaken the existing resolver and authenticated-control boundarie
   request/response schemas remain additive. Signed DCO commit
   8771b9b78402b889898af30b8edf49b0cdf2c472 pushed to PR #179 branch. Earlier generator exit101 was
   unresolved v1.6 re-export; fixed by exporting schema functions. Worktree clean.
+
+- 2026-09-15T22:39:56+00:00: Exact signed-DCO head 8771b9b78402b889898af30b8edf49b0cdf2c472 pushed
+  after restoring v1-v1.5 schema byte identity to efe741a and retaining only additive v1.6
+  artifacts. PR #179 checks restarted; no merge requested yet.
