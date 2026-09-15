@@ -2,7 +2,7 @@
 {
   "branch": "fix/control-state-lock-test-isolation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-15T10:22:35+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -14,15 +14,15 @@
   "observed_branch": "fix/control-state-lock-test-isolation",
   "observed_dirty": 0,
   "observed_head": "8b0f9fd07d5dfbedd83376c1380ab225dfba1213",
-  "owner": "",
+  "owner": "asb-open-ar0908-hardening",
   "plan": "../plans/AR-0908.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Harden asb-cli control-state lock test isolation and deterministic reopen coverage.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Harden control-state lock test isolation",
-  "updated_at": "2026-09-10T08:31:16+00:00",
+  "updated_at": "2026-09-15T08:22:35+00:00",
   "worktree_key": "agent-systems-benchmark-control-state-lock-test-isolation"
 }
 ---
@@ -212,3 +212,5 @@ non-deterministic isolation signal rather than claiming a production lock defect
   validation before candidate checks. All owned/control-state, Rust, quality, coverage, supply,
   fault, Kani, Loom and emulated-aarch64 checks are green. Await shared formal/native repairs and
   fresh exact-head CI; no merge.
+
+- 2026-09-15T08:22:35+00:00: Claimed by asb-open-ar0908-hardening.
