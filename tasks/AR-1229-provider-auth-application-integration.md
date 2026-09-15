@@ -10,7 +10,7 @@
   "id": "AR-1229",
   "next_action": "Add bounded asb auth CLI dispatch and its protocol/control integration tests; durable RunnerBackend registry now persists credential-free enrollment, status, rotation generation, revocation and idempotent enroll/rotate. Current signed head 1f806b9.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
-  "observed_dirty": 0,
+  "observed_dirty": 10,
   "observed_head": "1f806b94472b8040f57ed2af6b0e2cced0545e31",
   "owner": "asb_ar1229_cli_admission",
   "plan": "../plans/AR-1229.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:03:59+00:00",
+  "updated_at": "2026-09-15T22:04:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
