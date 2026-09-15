@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1229-auth-application-integration",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-15T23:34:18+00:00",
+  "claim_expires": "2026-09-15T23:38:30+00:00",
   "depends_on": [
     "AR-1228",
     "AR-1230"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 241,
+  "task_revision": 242,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T23:08:28+00:00",
+  "updated_at": "2026-09-15T23:08:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -640,3 +640,5 @@ public state or weaken the existing resolver and authenticated-control boundarie
   AuthRevokeParams gained required idempotency_key. Regenerated all versioned schemas with
   generate-control-schema; only v1.6 request artifact changed. schema_conformance passed 4/4 and
   diff check passed. Signed-DCO product commit b33d6da pushed; worktree clean.
+
+- 2026-09-15T23:08:30+00:00: Heartbeat by asb_ar1229_auth_application.
