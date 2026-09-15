@@ -9,7 +9,7 @@
     "AR-1100"
   ],
   "id": "AR-1230",
-  "next_action": "PR #178 exact head 240f9f4 requires independent re-review and CI rerun. Partial-write fixture now records only byte count/status and never retains credential bytes; cancellation and generation-race tests remain green. Delegated transport/application gates remain AR-1228/AR-1229.",
+  "next_action": "PR #178 exact head e85c23d requires independent re-review and CI rerun. HeaderSink now has transactional rollback on injection failure, and PartialSink proves durable byte state is cleared without retaining secrets. Current-generation callback redesign remains the next seam review item; delegated transport/application gates remain AR-1228/AR-1229.",
   "observed_branch": "feature/ar-1230-authenticated-provider-request-seam",
   "observed_dirty": 0,
   "observed_head": "e85c23d806e82b8c0cfdd4729d07b145d32762f7",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 189,
+  "task_revision": 190,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T20:08:56+00:00",
+  "updated_at": "2026-09-15T20:09:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
@@ -516,3 +516,8 @@ integration.
 
 - 2026-09-15T20:08:56+00:00: Recorded command exit 0; command argv SHA-256
   987e0d9ac4e88d83cd62975832c181c3c798255f62859a22c4f44552b8cfc960.
+
+- 2026-09-15T20:09:26+00:00: Signed+DCO e85c23d adds HeaderSink::rollback and invokes it on
+  partial/error writes; privacy-safe PartialSink records only count/status, rollback clears count,
+  and test asserts no retained durable state. Focused authenticated_request tests: 6 passed; fmt and
+  clippy passed; branch pushed to PR #178.
