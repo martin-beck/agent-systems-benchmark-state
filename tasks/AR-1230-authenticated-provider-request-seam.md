@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T18:51:45+00:00",
+  "updated_at": "2026-09-15T18:53:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
@@ -100,3 +100,6 @@ integration.
   sink-failure handling. Added negative endpoint/policy/timeout/empty-credential/sink tests. Focused
   authenticated_request tests: 2 passed; fmt and clippy -D warnings passed. Prior exit 101 was a
   moved-value test assertion, fixed by cloning request metadata; rerun passed.
+
+- 2026-09-15T18:53:34+00:00: Recorded command exit 1; command argv SHA-256
+  71dfaac7543cef9fb3f7b0cd58d8b68698acf268eeae2437c31b9dcab5de1a77.
