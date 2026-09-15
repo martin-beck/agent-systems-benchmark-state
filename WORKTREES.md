@@ -184,8 +184,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-current-audit-20260914` | `DETACHED` | `817a40bfbd7c` | 0 | behind 10, ahead 0 |
 | `asb-dco-repair` | `repair/protected-main-dco-history` | `200edbbbc3f0` | 0 | behind 6, ahead 1 |
 | `asb-metrics-timeout` | `repair/metrics-timeout-stability` | `78ae48b71ccc` | 0 | behind 6, ahead 0 |
-| `asb-metrics-timeout-fix` | `repair/metrics-timeout-flake` | `537811179bc5` | 1 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-metrics/src/kernel.rs` |
+| `asb-metrics-timeout-fix` | `repair/metrics-timeout-flake` | `0a7f6a192af9` | 0 | behind 0, ahead 1 |
 | `asb-pr173-audit.tyfD8R` | `DETACHED` | `39f90b316faf` | 0 | behind 5, ahead 3 |
 | `asb-pr173-merged.IZXfiU` | `DETACHED` | `51842b359bb8` | 0 | behind 0, ahead 4 |
 | `asb-review-154` | `DETACHED` | `4ceaf04f32a0` | 0 | behind 12, ahead 0 |
