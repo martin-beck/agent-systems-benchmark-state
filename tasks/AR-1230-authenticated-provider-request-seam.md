@@ -11,17 +11,17 @@
   "id": "AR-1230",
   "next_action": "Promote after architecture review; specify and test the fail-closed authenticated provider-request seam, then unblock AR-1228.",
   "observed_branch": "feature/ar-1230-authenticated-provider-request-seam",
-  "observed_dirty": 3,
-  "observed_head": "2117a40e2e27602c39aebee87581cf652628a534",
+  "observed_dirty": 0,
+  "observed_head": "5869e73141ad20a96eca56f609c9cb256fe00b9d",
   "owner": "asb_ar1230_auth_request_seam",
   "plan": "../plans/AR-1230.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T18:51:02+00:00",
+  "updated_at": "2026-09-15T18:51:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
