@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T18:21:35+00:00",
+  "updated_at": "2026-09-15T18:22:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
@@ -125,3 +125,6 @@ integration rather than renderer or frontend behavior.
 - 2026-09-15T18:21:35+00:00: Application integration crosses asb-config, asb-control and asb-cli
   contracts; splitting it into AR-1229 prevents an adapter-only completion claim. AR-1228 remains
   active for concrete backend/probe qualification.
+
+- 2026-09-15T18:22:05+00:00: Recorded command exit 0; command argv SHA-256
+  86b44bd35d1beaa8931ec0f1fedead469bb26e9bbc023e2d573945ee2c2413df.
