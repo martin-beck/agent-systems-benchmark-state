@@ -20,8 +20,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-aider-deterministic-replay` | `fix/aider-deterministic-replay` | `87a22654913a` | 0 | behind 334, ahead 0 |
 | `agent-systems-benchmark-all-agents-provider` | `feature/all-agents-provider` | `03962f28571e` | 0 | behind 297, ahead 0 |
 | `agent-systems-benchmark-ar-1100` | `feature/ar-1100` | `38c039975077` | 0 | behind 68, ahead 2 |
-| `agent-systems-benchmark-ar-1120` | `feature/ar-1120` | `2117a40e2e27` | 2 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-agents/src/auth.rs`, `crates/asb-agents/src/lib.rs` |
+| `agent-systems-benchmark-ar-1120` | `feature/ar-1120` | `032f620b52ea` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 241, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 344, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 238, ahead 0 |
