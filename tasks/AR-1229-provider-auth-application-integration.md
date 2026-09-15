@@ -5,7 +5,7 @@
   "claim_expires": "",
   "depends_on": ["AR-1228"],
   "id": "AR-1229",
-  "next_action": "Promote after AR-1120 and AR-1228 are complete; implement durable config registry and authenticated CLI/control enrollment integration.",
+  "next_action": "Promote after AR-1228 is complete; implement durable config registry and authenticated CLI/control enrollment integration, then requalify AR-1120.",
   "owner": "",
   "plan": "../plans/AR-1229.md",
   "priority": "P0",
