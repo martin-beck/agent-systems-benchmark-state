@@ -12,17 +12,17 @@
   "id": "AR-1228",
   "next_action": "Implement remaining authenticated Gemini/Ollama wire fixtures and mid-I/O cancellation/generation/oversize tests; design cancellable transport seam for connect/write before merge. PR #177 exact head cdfd81cb55f505cd27316e3d8d744d303e74ba67 remains unmergeable.",
   "observed_branch": "feature/ar-1228-auth-backends-probes",
-  "observed_dirty": 1,
-  "observed_head": "cdfd81cb55f505cd27316e3d8d744d303e74ba67",
+  "observed_dirty": 0,
+  "observed_head": "ca5ba5ac66681eb2088727415e36daae00557320",
   "owner": "asb_ar1228_transport_repair",
   "plan": "../plans/AR-1228.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 215,
+  "task_revision": 216,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T21:14:55+00:00",
+  "updated_at": "2026-09-15T21:15:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---

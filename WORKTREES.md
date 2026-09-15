@@ -21,8 +21,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-all-agents-provider` | `feature/all-agents-provider` | `03962f28571e` | 0 | behind 315, ahead 0 |
 | `agent-systems-benchmark-ar-1100` | `feature/ar-1100` | `38c039975077` | 0 | behind 86, ahead 2 |
 | `agent-systems-benchmark-ar-1120` | `feature/ar-1120` | `d9253f2187a6` | 0 | behind 18, ahead 5 |
-| `agent-systems-benchmark-ar-1228-auth-backends-probes` | `feature/ar-1228-auth-backends-probes` | `cdfd81cb55f5` | 1 | behind 0, ahead 12 |
-| changed files | - | - | - | `crates/asb-agents/src/provider_probe.rs` |
+| `agent-systems-benchmark-ar-1228-auth-backends-probes` | `feature/ar-1228-auth-backends-probes` | `ca5ba5ac6668` | 0 | behind 0, ahead 13 |
 | `agent-systems-benchmark-ar-1230-authenticated-provider-request-seam` | `feature/ar-1230-authenticated-provider-request-seam` | `3d0349af1a56` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 259, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 362, ahead 0 |
