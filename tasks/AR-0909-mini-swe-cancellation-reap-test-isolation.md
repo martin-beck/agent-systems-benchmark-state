@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 372,
+  "task_revision": 373,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-15T17:04:38+00:00",
+  "updated_at": "2026-09-15T17:04:53+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1326,3 +1326,6 @@ classified.
   emulated Python/helper startup exceeds 25s, not path publication. Proceeding with an explicitly
   bounded 60s readiness window and 90s helper lifetime; missing children.pids remains fail-closed
   and no production/gate changes are allowed.
+
+- 2026-09-15T17:04:53+00:00: Recorded command exit 0; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
