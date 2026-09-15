@@ -10,7 +10,7 @@
   "id": "AR-1229",
   "next_action": "Introduce CONTROL_AUTH_V1 minor 6 and preserve v1-v1.5 schema bytes via auth-variant pruning in legacy schema generators; add v1.6 request/response generation and conformance fixtures, update SUPPORTED_CONTROL_VERSIONS, minimum_version routing, contract_consistency roots/catalog/docs. Then regenerate and rerun PR gates.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "84d008cbc91d4ed49bdbd6568676642b2ae74ef9",
   "owner": "asb_ar1229_auth_application",
   "plan": "../plans/AR-1229.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 121,
+  "task_revision": 122,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:28:17+00:00",
+  "updated_at": "2026-09-15T22:28:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
