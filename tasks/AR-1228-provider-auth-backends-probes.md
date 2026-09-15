@@ -10,7 +10,7 @@
     "AR-1230"
   ],
   "id": "AR-1228",
-  "next_action": "Add authenticated Gemini/Ollama live transport fixtures and mid-transport generation/cancellation/oversize tests; then await independent review and exact-head CI for PR #177 at cdfd81cb55f505cd27316e3d8d744d303e74ba67.",
+  "next_action": "Implement remaining authenticated Gemini/Ollama wire fixtures and mid-I/O cancellation/generation/oversize tests; design cancellable transport seam for connect/write before merge. PR #177 exact head cdfd81cb55f505cd27316e3d8d744d303e74ba67 remains unmergeable.",
   "observed_branch": "feature/ar-1228-auth-backends-probes",
   "observed_dirty": 0,
   "observed_head": "cdfd81cb55f505cd27316e3d8d744d303e74ba67",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 199,
+  "task_revision": 200,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T21:02:45+00:00",
+  "updated_at": "2026-09-15T21:02:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
@@ -574,3 +574,10 @@ integration rather than renderer or frontend behavior.
   cdfd81cb55f505cd27316e3d8d744d303e74ba67 pushed to PR #177; worktree clean.
 
 - 2026-09-15T21:02:45+00:00: Heartbeat by asb_ar1228_auth_backends.
+
+- 2026-09-15T21:02:56+00:00: Heartbeat maintained. Review residuals are confirmed: current std::net
+  TcpStream connect_timeout and write_all cannot observe cancellation while blocked; satisfying this
+  requires an approved nonblocking/polling transport seam, not an unsafe thread or unbounded helper.
+  Existing provider probe only has OpenAI wire fixture; Gemini/Ollama authenticated wire fixtures
+  and mid-I/O generation/cancellation/oversize tests remain to implement. No product mutation made
+  this turn; worktree clean.
