@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T21:54:32+00:00",
+  "updated_at": "2026-09-15T21:54:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -118,3 +118,6 @@ public state or weaken the existing resolver and authenticated-control boundarie
 
 - 2026-09-15T21:54:32+00:00: Recorded command exit 0; command argv SHA-256
   e7a3b2dda05e1858ecb105874379df45b5884bc2c86078cc21fa0d90f4c88be4.
+
+- 2026-09-15T21:54:55+00:00: Recorded command exit 0; command argv SHA-256
+  f489a19876782722ed16d09ca01ff72aa074415a2bb4183d7206b5819538e360.
