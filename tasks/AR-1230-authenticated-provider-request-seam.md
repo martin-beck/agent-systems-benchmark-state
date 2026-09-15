@@ -9,7 +9,7 @@
     "AR-1100"
   ],
   "id": "AR-1230",
-  "next_action": "PR #178 exact head d4a102f requires independent re-review and CI. Verify endpoint-bound injection, cancellation, explicit provider policies and failure handling; then coordinate AR-1228 rebinding and full gates.",
+  "next_action": "PR #178 exact head 2a74205 requires independent re-review and CI. AR-1230 typed cancellation and provider policy seam is complete for its owned boundary; AR-1228 must supply absolute transport deadline/response and redirect tests, while AR-1229 supplies schema/application handoff tests before merge.",
   "observed_branch": "feature/ar-1230-authenticated-provider-request-seam",
   "observed_dirty": 0,
   "observed_head": "2a74205ce8a090e35bae688d32e33f1650e91f82",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T19:03:57+00:00",
+  "updated_at": "2026-09-15T19:04:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
@@ -154,3 +154,9 @@ integration.
 
 - 2026-09-15T19:03:57+00:00: Recorded command exit 0; command argv SHA-256
   987e0d9ac4e88d83cd62975832c181c3c798255f62859a22c4f44552b8cfc960.
+
+- 2026-09-15T19:04:28+00:00: Review follow-up signed+DCO commit 2a74205 adds typed Cancellation
+  trait (with closure compatibility), explicit Ollama no-auth policy, internal endpoint/generation
+  checks during inject, cancellation checks before/after sink, and fail-closed tests. Focused tests
+  2 passed; fmt and clippy -D warnings passed. Remaining transport deadline/response parsing and
+  schema/application integration are explicitly delegated to AR-1228/AR-1229, not duplicated here.

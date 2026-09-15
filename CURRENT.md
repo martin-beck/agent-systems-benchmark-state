@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1230](tasks/AR-1230-authenticated-provider-request-seam.md): Authenticated provider-request seam and secret injection contract | Define the approved bounded provider authentication request and secret-injection seam. | PR #178 exact head d4a102f requires independent re-review and CI. Verify endpoint-bound injection, cancellation, explicit provider policies and failure handling; then coordinate AR-1228 rebinding and full gates. | asb_ar1230_auth_request_seam |
+| P0 | [AR-1230](tasks/AR-1230-authenticated-provider-request-seam.md): Authenticated provider-request seam and secret injection contract | Define the approved bounded provider authentication request and secret-injection seam. | PR #178 exact head 2a74205 requires independent re-review and CI. AR-1230 typed cancellation and provider policy seam is complete for its owned boundary; AR-1228 must supply absolute transport deadline/response and redirect tests, while AR-1229 supplies schema/application handoff tests before merge. | asb_ar1230_auth_request_seam |
 | P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Await exact-head CI for b0df3fb; inspect AArch64 and all required checks, independently review, merge only if all green. | asb_ar0909_lifecycle_repair |
 
 ## Open
