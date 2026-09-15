@@ -9,7 +9,7 @@
     "AR-1100"
   ],
   "id": "AR-1230",
-  "next_action": "PR #178 exact head c5b3933 requires independent re-review and CI rerun. Absolute deadline and conditional schema are now seam-owned and tested; verify gates, then hand off to AR-1228 transport and AR-1229 application integration.",
+  "next_action": "PR #178 exact head 35bbb27 requires independent re-review and CI rerun. Absolute deadline now has bounded monotonic-window validation with distinct DeadlineExceeded; schema conditionals and tests remain green. After gates, hand off to AR-1228 transport and AR-1229 application integration.",
   "observed_branch": "feature/ar-1230-authenticated-provider-request-seam",
   "observed_dirty": 0,
   "observed_head": "35bbb2788a52dbb485e528d007aad98de835da08",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T19:23:40+00:00",
+  "updated_at": "2026-09-15T19:24:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
@@ -253,3 +253,9 @@ integration.
 
 - 2026-09-15T19:23:40+00:00: Recorded command exit 0; command argv SHA-256
   987e0d9ac4e88d83cd62975832c181c3c798255f62859a22c4f44552b8cfc960.
+
+- 2026-09-15T19:24:06+00:00: Signed+DCO commit 35bbb27 fixes deadline semantics: rejects
+  zero/inconsistent absolute deadlines, enforces now-before-deadline and bounded timeout window, and
+  reports DeadlineExceeded separately from cancellation/stale generation. Added expired and
+  invalid-deadline tests. Focused tests: 3 passed; fmt and clippy -D warnings passed; PR #178
+  pushed. Prior exit 101 was a moved request test assertion, fixed and rerun successfully.
