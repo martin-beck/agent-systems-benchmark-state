@@ -23,7 +23,7 @@ Generated from local Git and GitHub. Do not edit.
 | #149 | `dependabot/cargo/url-2.5.8@f7edfbbd0e98` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump url from 2.5.7 to 2.5.8 |
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
 | #151 | `dependabot/cargo/serde-1.0.229@9c87e23d6d29` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
-| #169 | `feature/asb-verified-agent-lifecycle@3fa66e5c1ded` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(control): define verified agent lifecycle contract |
+| #169 | `feature/asb-verified-agent-lifecycle@6d210836d4b4` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(control): define verified agent lifecycle contract |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #173 | `fix/ar0908-current-main@39f90b316faf` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(cli): harden control scratch isolation on current main |
 
@@ -31,15 +31,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34948108761 | `6d210836d4b4` | pull_request | Fault assurance | in_progress:- |
+| 34948108754 | `6d210836d4b4` | pull_request | Huawei MIT source headers | completed:success |
+| 34948108733 | `6d210836d4b4` | pull_request | Formal assurance | in_progress:- |
+| 34948108729 | `6d210836d4b4` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 34948108709 | `6d210836d4b4` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 34948108686 | `6d210836d4b4` | pull_request | Repository quality | in_progress:- |
+| 34948108676 | `6d210836d4b4` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 34948108666 | `6d210836d4b4` | pull_request | Rust verification | in_progress:- |
 | 34947293218 | `3fa66e5c1ded` | pull_request | Hosted portability and native qualification | completed:success |
 | 34947293175 | `3fa66e5c1ded` | pull_request | Emulated aarch64 portability | completed:success |
 | 34947293097 | `3fa66e5c1ded` | pull_request | Huawei MIT source headers | completed:success |
 | 34947293092 | `3fa66e5c1ded` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 34947293086 | `3fa66e5c1ded` | pull_request | Formal assurance | completed:success |
-| 34947292973 | `3fa66e5c1ded` | pull_request | Repository quality | completed:success |
-| 34947292950 | `3fa66e5c1ded` | pull_request | Rust verification | completed:success |
-| 34947292925 | `3fa66e5c1ded` | pull_request | Fault assurance | completed:success |
-| 34946774465 | `39f90b316faf` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 34946774431 | `39f90b316faf` | pull_request | Hosted portability and native qualification | completed:success |
-| 34946774398 | `39f90b316faf` | pull_request | Fault assurance | completed:success |
-| 34946774395 | `39f90b316faf` | pull_request | Repository quality | completed:success |

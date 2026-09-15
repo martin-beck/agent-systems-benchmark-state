@@ -178,7 +178,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-ar0908-current` | `fix/ar0908-current-main` | `39f90b316faf` | 0 | behind 0, ahead 3 |
 | `asb-ar1100-repair` | `DETACHED` | `c68c49eff7e3` | 0 | behind 6, ahead 0 |
 | `asb-ar1190-catalog` | `feature/asb-authenticated-agent-catalog` | `78ae48b71ccc` | 0 | behind 1, ahead 0 |
-| `asb-ar1191-lifecycle` | `feature/asb-verified-agent-lifecycle` | `3fa66e5c1ded` | 0 | behind 0, ahead 3 |
+| `asb-ar1191-lifecycle` | `DETACHED` | `6d210836d4b4` | 0 | behind 0, ahead 4 |
 | `asb-boundary-hardening` | `DETACHED` | `d32748d0795e` | 0 | behind 8, ahead 0 |
 | `asb-current-audit-20260914` | `DETACHED` | `817a40bfbd7c` | 0 | behind 5, ahead 0 |
 | `asb-dco-repair` | `repair/protected-main-dco-history` | `200edbbbc3f0` | 0 | behind 1, ahead 1 |
