@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1228-auth-backends-probes",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-15T20:11:35+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0319",
     "AR-0320",
@@ -10,15 +10,15 @@
   ],
   "id": "AR-1228",
   "next_action": "Promote after dependencies are independently complete; implement concrete qualified secret backends, provider probes and durable CLI/control/config integration for AR-1120.",
-  "owner": "asb_ar1228_auth_backends",
+  "owner": "",
   "plan": "../plans/AR-1228.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T18:11:35+00:00",
+  "updated_at": "2026-09-15T18:11:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
@@ -39,3 +39,10 @@ integration rather than renderer or frontend behavior.
 - 2026-09-15T18:10:58+00:00: Claimed by asb_ar1228_auth_backends.
 
 - 2026-09-15T18:11:35+00:00: Heartbeat by asb_ar1228_auth_backends.
+
+- 2026-09-15T18:11:45+00:00: Implementation audit complete: existing ASB resolver primitives are
+  concrete for launch-time env/FD/helper resolution, but AR-1228 acceptance requires an approved
+  durable secret authority and provider-specific probe/application wiring not present in current
+  architecture. No unsafe ambient, plaintext, or unqualified network implementation was added.
+  Earliest next action: architecture owner must qualify backend/probe contract and integration
+  boundary, then reclaim AR-1228.
