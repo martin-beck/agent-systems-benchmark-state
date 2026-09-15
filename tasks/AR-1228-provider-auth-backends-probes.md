@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 234,
+  "task_revision": 235,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T21:23:36+00:00",
+  "updated_at": "2026-09-15T21:29:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
@@ -670,3 +670,6 @@ integration rather than renderer or frontend behavior.
   passed after stabilizing response fixtures by bounded request read and orderly server write
   shutdown; clippy/fmt/diff checks passed. Earlier exit 101 was fixture close/reset timing, fixed
   and rerun green.
+
+- 2026-09-15T21:29:11+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
