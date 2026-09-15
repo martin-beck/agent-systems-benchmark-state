@@ -12,7 +12,7 @@
   "id": "AR-1228",
   "next_action": "PR #177 exact head ca5ba5ac66681eb2088727415e36daae00557320 contains std-only 50ms polled connect and partial writes with cancellation/deadline checks. Run exact-head CI and independently review; then address any remaining provider fixture or mid-I/O evidence before merge.",
   "observed_branch": "feature/ar-1228-auth-backends-probes",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "ca5ba5ac66681eb2088727415e36daae00557320",
   "owner": "asb_ar1228_transport_repair",
   "plan": "../plans/AR-1228.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 221,
+  "task_revision": 222,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T21:20:35+00:00",
+  "updated_at": "2026-09-15T21:20:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
