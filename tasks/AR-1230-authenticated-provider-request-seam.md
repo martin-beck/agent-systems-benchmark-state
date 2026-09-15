@@ -11,17 +11,17 @@
   "id": "AR-1230",
   "next_action": "PR #178 exact head 35bbb27 requires independent re-review and CI rerun. Absolute deadline now has bounded monotonic-window validation with distinct DeadlineExceeded; schema conditionals and tests remain green. After gates, hand off to AR-1228 transport and AR-1229 application integration.",
   "observed_branch": "feature/ar-1230-authenticated-provider-request-seam",
-  "observed_dirty": 2,
-  "observed_head": "35bbb2788a52dbb485e528d007aad98de835da08",
+  "observed_dirty": 0,
+  "observed_head": "77464e034838fcee886bbaf49915765f9da8fc71",
   "owner": "asb_ar1230_auth_request_seam",
   "plan": "../plans/AR-1230.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 92,
+  "task_revision": 93,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T19:27:31+00:00",
+  "updated_at": "2026-09-15T19:27:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
