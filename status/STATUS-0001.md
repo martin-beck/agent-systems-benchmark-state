@@ -1276,7 +1276,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1190](../tasks/AR-1190.md): Authenticated agent catalog control | root-ar1190-review | Expose a verified, capability-aware local-agent catalog to asb-tui. | Review PR #168 exact head 8a35fbed11d1d3abfa8f2ef9571807a7184c0441; wait for all hosted checks, then merge only with green required gates. |
+| P0 | [AR-1190](../tasks/AR-1190.md): Authenticated agent catalog control | root-ar1190-review | Expose a verified, capability-aware local-agent catalog to asb-tui. | Resolve exact-head cross-repository schema compatibility with asb-tui AR-1195, then rerun all hosted assurance gates before merge. |
 
 ### Open (13)
 
