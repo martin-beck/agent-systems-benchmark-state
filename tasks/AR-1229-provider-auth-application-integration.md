@@ -10,17 +10,17 @@
   "id": "AR-1229",
   "next_action": "Implement bounded asb auth CLI dispatch and dedicated lifecycle behavior/privacy tests; current exact signed head 3521f72 includes durable backend and regenerated v1-v1.5 schemas. Do not create/merge PR until CLI acceptance and full gates pass.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
-  "observed_dirty": 2,
-  "observed_head": "3521f7248a368810f55adb240960d01eda995600",
+  "observed_dirty": 0,
+  "observed_head": "1594e0943d5d92b3fdd70c44f4142dfc8a1dec63",
   "owner": "asb_ar1229_cli_admission",
   "plan": "../plans/AR-1229.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:07:37+00:00",
+  "updated_at": "2026-09-15T22:07:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
