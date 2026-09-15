@@ -13,17 +13,17 @@
   "id": "AR-0909",
   "next_action": "Repair emulated helper publication/path and bounded readiness budget; rerun focused and exact-head CI.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
-  "observed_dirty": 1,
-  "observed_head": "3393737f5a1b3d32a6c947c824fbfdc59907e045",
+  "observed_dirty": 0,
+  "observed_head": "25dfa9980c48eacfffe72836fe9dc9e0a62932b4",
   "owner": "asb_ar0909_lifecycle_repair",
   "plan": "../plans/AR-0909.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 326,
+  "task_revision": 327,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-15T16:01:28+00:00",
+  "updated_at": "2026-09-15T16:01:35+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
