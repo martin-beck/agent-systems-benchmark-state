@@ -2,19 +2,19 @@
 {
   "branch": "repair/protected-main-dco-history",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-15T10:10:42+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1196",
   "next_action": "Reconcile PR #170 merge commit 748c16ba against remote main; PR #172 is the topic re-publication candidate and PR #171 is a duplicate signed-merge candidate. Do not merge either until remote main ref and exact post-merge checks are reconciled; if main remains 817a40b, investigate the missing push event.",
-  "owner": "asb_main_policy_repair",
+  "owner": "",
   "plan": "../plans/AR-1196.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Restore a Signed-off-by-bearing protected-main history after the catalog merge.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Protected-main DCO history repair",
-  "updated_at": "2026-09-15T08:10:52+00:00",
+  "updated_at": "2026-09-15T08:27:09+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-dco-repair"
 }
 ---
@@ -54,3 +54,6 @@ policy checks; never bypass the gate or misclassify the failed post-merge run.
   check failed because workflow BASE_COMMIT resolved synthetic merge 748c16ba, reporting source
   identity not immutable; this is a workflow/ref interaction, not candidate source failure. No
   merge/release by this worker.
+
+- 2026-09-15T08:27:09+00:00: Completed: repaired ASB main through GitHub Web Flow DCO-bearing merge
+  4f855514c5086e1a933ba1e5a4f41db135dbf0a8; exact main post-merge assurance is green.
