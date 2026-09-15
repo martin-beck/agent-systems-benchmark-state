@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1120](tasks/AR-1120.md): Authentication enrollment | Enroll provider authentication. | AR complete: merged PR #176 at bd9e153a; post-merge exact-main verification and full auth package gates passed; retain closure evidence in state. | asb_ar1024_lifecycle_router |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -163,6 +157,7 @@ Never edit this file directly.
 | P0 | [AR-1064](tasks/AR-1064-tmux-hosted-startup-readiness-recovery.md): Recover hosted tmux startup readiness | Recover authenticated tmux startup observation on the hosted trusted runner without weakening authority or cleanup. | PR #26 is exact-head green but protected merge is blocked because GitHub reports the required context as pending; resolve policy/check-run propagation without admin bypass, then require post-merge Trusted main. | - |
 | P0 | [AR-1065](tasks/AR-1065-asb-tui-branch-policy-context.md): Normalize asb-tui branch required-status policy | Normalize asb-tui main branch protection so successful GitHub Actions checks can merge. | A repository maintainer must remove the stale legacy required-status context from asb-tui main while retaining the app-scoped GitHub Actions check, then re-evaluate PR #26. | - |
 | P0 | [AR-1100](tasks/AR-1100.md): Configuration defaults | Persist configuration defaults. | Post-merge verification complete at protected ASB main; retain merged evidence and monitor downstream wizard dependencies. | - |
+| P0 | [AR-1120](tasks/AR-1120.md): Authentication enrollment | Enroll provider authentication. | AR complete: merged PR #176 at bd9e153a; post-merge exact-main verification and full auth package gates passed; retain closure evidence in state. | - |
 | P0 | [AR-1190](tasks/AR-1190.md): Authenticated agent catalog control | Expose a verified, capability-aware local-agent catalog to asb-tui. | Wait for exact-main post-merge assurance on 748c16ba67b9cff5a08558784dd183d020a1f2d4, then qualify ASB v1.4 fixtures against asb-tui PR #86. | - |
 | P0 | [AR-1191](tasks/AR-1191.md): Verified local-agent lifecycle | Install, activate, verify and recover supported local benchmark agents safely. | Run independent review on lifecycle PR #169 head 6d210836d4b45942aa6b9b2530c30a0afe30144a after hosted checks, then merge and qualify asb-tui. | - |
 | P0 | [AR-1196](tasks/AR-1196-protected-main-dco-repair.md): Protected-main DCO history repair | Restore a Signed-off-by-bearing protected-main history after the catalog merge. | Reconcile PR #170 merge commit 748c16ba against remote main; PR #172 is the topic re-publication candidate and PR #171 is a duplicate signed-merge candidate. Do not merge either until remote main ref and exact post-merge checks are reconciled; if main remains 817a40b, investigate the missing push event. | - |
