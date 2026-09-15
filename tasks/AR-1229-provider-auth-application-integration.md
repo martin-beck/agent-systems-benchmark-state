@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1229-auth-application-integration",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-15T23:45:37+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1228",
     "AR-1230"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1229-auth-application-integration",
   "observed_dirty": 0,
   "observed_head": "1cce20076c1cd2c3ff2465ccb6ee2b87d31e6b4c",
-  "owner": "asb_ar1229_auth_application",
+  "owner": "",
   "plan": "../plans/AR-1229.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T21:47:05+00:00",
+  "updated_at": "2026-09-15T21:48:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -83,3 +83,6 @@ public state or weaken the existing resolver and authenticated-control boundarie
   derivation. cargo check --locked -p asb-control passes. Signed DCO product commit 1cce200 pushed
   to feature/ar-1229-auth-application-integration. Config registry foundation remains in prior
   signed commit 05a9374; no PR created until control/CLI behavior is implemented.
+
+- 2026-09-15T21:48:23+00:00: Releasing claim because cross-crate admission/CLI implementation cannot
+  be completed safely in this turn; preserve signed control/config commits for next worker.
