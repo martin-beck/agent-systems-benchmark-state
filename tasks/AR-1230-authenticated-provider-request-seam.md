@@ -11,17 +11,17 @@
   "id": "AR-1230",
   "next_action": "PR #178 exact head ae5b1b2 requires independent re-review and CI rerun. AuthenticatedRequest/AuthProvider/AuthPolicy now serde-typed with deny-unknown-fields; committed schema is validated by jsonschema 0.33 and typed JSON parse parity tests. Delegated transport/application gates remain AR-1228/AR-1229.",
   "observed_branch": "feature/ar-1230-authenticated-provider-request-seam",
-  "observed_dirty": 1,
-  "observed_head": "ae5b1b281724145cd4a9d5245b56fd6e48b3f031",
+  "observed_dirty": 0,
+  "observed_head": "fc71739a644b1ee40dbb614941616a5454177dc2",
   "owner": "asb_ar1230_auth_request_seam",
   "plan": "../plans/AR-1230.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 155,
+  "task_revision": 156,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T19:56:01+00:00",
+  "updated_at": "2026-09-15T19:56:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
