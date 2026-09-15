@@ -13,7 +13,7 @@
   "id": "AR-0909",
   "next_action": "Restore shell wrapper workspace position to $5; rerun focused and exact-head CI, inspect all checks.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "f4a8c5d0847b82784759a045ef68c5df6b4003d0",
   "owner": "asb_ar0909_lifecycle_repair",
   "plan": "../plans/AR-0909.md",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 362,
+  "task_revision": 363,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-15T16:57:34+00:00",
+  "updated_at": "2026-09-15T16:57:41+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
