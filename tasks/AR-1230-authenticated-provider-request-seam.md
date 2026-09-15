@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1230-authenticated-provider-request-seam",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-15T20:43:15+00:00",
   "depends_on": [
     "AR-0319",
     "AR-0320",
@@ -10,15 +10,15 @@
   ],
   "id": "AR-1230",
   "next_action": "Promote after architecture review; specify and test the fail-closed authenticated provider-request seam, then unblock AR-1228.",
-  "owner": "",
+  "owner": "asb_ar1230_auth_request_seam",
   "plan": "../plans/AR-1230.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T18:43:01+00:00",
+  "updated_at": "2026-09-15T18:43:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
@@ -34,3 +34,5 @@ integration.
 
 - 2026-09-15T18:43:01+00:00: Dependencies AR-0319, AR-0320 and AR-1100 verified complete; promote
   authenticated provider-request seam prerequisite.
+
+- 2026-09-15T18:43:15+00:00: Claimed by asb_ar1230_auth_request_seam.
