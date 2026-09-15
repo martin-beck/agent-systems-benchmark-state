@@ -10,17 +10,17 @@
   "id": "AR-1229",
   "next_action": "Implement bounded CLI control-service execution and lifecycle restart/partial-failure tests on e91dd89; rerun full applicable gates and update PR #179 exact head for independent review.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
-  "observed_dirty": 1,
-  "observed_head": "e91dd89fc985075fc8ff78a1c0358abea914a7c2",
+  "observed_dirty": 0,
+  "observed_head": "efd98941ca8f4efd156967a53577874f1e22dcad",
   "owner": "asb_ar1229_auth_application",
   "plan": "../plans/AR-1229.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 197,
+  "task_revision": 198,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:55:20+00:00",
+  "updated_at": "2026-09-15T22:55:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
