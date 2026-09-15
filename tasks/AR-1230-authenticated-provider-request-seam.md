@@ -11,7 +11,7 @@
   "id": "AR-1230",
   "next_action": "PR #178 exact head 074e0f4 requires independent re-review and CI rerun. Partial-write sink failure and cancellation race evidence now pass; next reviewer action is verify current-generation transition coverage before merge. Delegated transport/application gates remain AR-1228/AR-1229.",
   "observed_branch": "feature/ar-1230-authenticated-provider-request-seam",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "074e0f48ed14f4381400c489ed3d9c940f03fdb7",
   "owner": "asb_ar1230_auth_request_seam",
   "plan": "../plans/AR-1230.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 172,
+  "task_revision": 173,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T20:03:36+00:00",
+  "updated_at": "2026-09-15T20:03:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
