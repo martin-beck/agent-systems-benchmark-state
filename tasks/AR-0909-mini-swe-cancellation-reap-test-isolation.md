@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 330,
+  "task_revision": 331,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-15T16:02:16+00:00",
+  "updated_at": "2026-09-15T16:12:12+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1204,3 +1204,6 @@ classified.
   25dfa9980c48eacfffe72836fe9dc9e0a62932b4 extends readiness to 10 seconds, below the 10-second
   process timeout only by equal bound; missing publication still fails closed. Commit is
   SSH-signed/DCO; PR127 force-with-lease updated. Fresh exact-head CI required.
+
+- 2026-09-15T16:12:12+00:00: Recorded command exit 0; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
