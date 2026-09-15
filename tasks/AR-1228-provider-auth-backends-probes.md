@@ -10,7 +10,7 @@
     "AR-1230"
   ],
   "id": "AR-1228",
-  "next_action": "Independent review PR #177 at exact head ac65697ff82e48beac1ca0918766b75b76ec2; add provider-specific authenticated policy/response and mid-transport cancellation/generation tests, then await all required CI.",
+  "next_action": "Bind transport budget to AuthenticatedRequest.deadline_ms and add authenticated mid-transport cancellation/generation/oversize failure tests; then await independent review and exact-head CI for PR #177 at 339cb283272afcd742128c09d346496c4b760b1c.",
   "observed_branch": "feature/ar-1228-auth-backends-probes",
   "observed_dirty": 0,
   "observed_head": "339cb283272afcd742128c09d346496c4b760b1c",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 177,
+  "task_revision": 178,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T20:55:11+00:00",
+  "updated_at": "2026-09-15T20:55:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
@@ -510,3 +510,11 @@ integration rather than renderer or frontend behavior.
 
 - 2026-09-15T20:55:11+00:00: Recorded command exit 0; command argv SHA-256
   39225008163410f1c943d38b9f985faf03828ce5b91402c742997f2072005e31.
+
+- 2026-09-15T20:55:30+00:00: Added authenticated Gemini API-key and Ollama no-auth wrapper coverage,
+  cancellation/expired-deadline fail-closed tests, and live authenticated OpenAI header transport
+  fixture. Corrected fragmented fixture reads and header termination after exit101 diagnostics.
+  Product commit 339cb283272afcd742128c09d346496c4b760b1c is signed+DCO and pushed; worktree clean.
+  Focused provider_probe suite passes 10 tests and clippy passes. Remaining review scope is
+  explicit: tie budget to auth deadline_ms and add mid-transport rotation/cancellation plus
+  authenticated oversize/response failure coverage.

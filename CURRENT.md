@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1228](tasks/AR-1228-provider-auth-backends-probes.md): Qualify provider authentication backends and probes | Qualify provider authentication backends, probes and application integration. | Independent review PR #177 at exact head ac65697ff82e48beac1ca0918766b75b76ec2; add provider-specific authenticated policy/response and mid-transport cancellation/generation tests, then await all required CI. | asb_ar1228_auth_backends |
+| P0 | [AR-1228](tasks/AR-1228-provider-auth-backends-probes.md): Qualify provider authentication backends and probes | Qualify provider authentication backends, probes and application integration. | Bind transport budget to AuthenticatedRequest.deadline_ms and add authenticated mid-transport cancellation/generation/oversize failure tests; then await independent review and exact-head CI for PR #177 at 339cb283272afcd742128c09d346496c4b760b1c. | asb_ar1228_auth_backends |
 
 ## Open
 
