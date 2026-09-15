@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Await fresh exact-head CI for cc72012; inspect AArch64 and all required checks, independently review, then merge only if all green.",
+  "next_action": "Increase emulation startup budget to 60s readiness/90s helper lifetime; rerun focused and exact-head CI, inspect all checks.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "cc72012d35acf19626c1d8ff78098cac7d5f464b",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 371,
+  "task_revision": 372,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-15T17:04:28+00:00",
+  "updated_at": "2026-09-15T17:04:38+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1320,3 +1320,9 @@ classified.
 - 2026-09-15T16:58:45+00:00: Heartbeat by asb_ar0909_lifecycle_repair.
 
 - 2026-09-15T17:04:28+00:00: Heartbeat by asb_ar0909_lifecycle_repair.
+
+- 2026-09-15T17:04:38+00:00: Fresh exact-head run after cc72012 still timed out exactly at 25s
+  (total 26.29s) with corrected $5 workspace publication. Exact-boundary timing strongly indicates
+  emulated Python/helper startup exceeds 25s, not path publication. Proceeding with an explicitly
+  bounded 60s readiness window and 90s helper lifetime; missing children.pids remains fail-closed
+  and no production/gate changes are allowed.
