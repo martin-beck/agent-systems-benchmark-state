@@ -9,7 +9,7 @@
     "AR-1100"
   ],
   "id": "AR-1230",
-  "next_action": "Independent exact-head review and required CI for PR #178 at 5869e73141ad20a96eca56f609c9cb256fe00b9d. Resolve review findings before merge; then coordinate AR-1228 rebinding and full gates.",
+  "next_action": "PR #178 exact head d4a102f requires independent re-review and CI. Verify endpoint-bound injection, cancellation, explicit provider policies and failure handling; then coordinate AR-1228 rebinding and full gates.",
   "observed_branch": "feature/ar-1230-authenticated-provider-request-seam",
   "observed_dirty": 0,
   "observed_head": "d4a102f535c08af7935dece8ea58c5aba6a63217",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T18:58:38+00:00",
+  "updated_at": "2026-09-15T18:59:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
@@ -128,3 +128,9 @@ integration.
 
 - 2026-09-15T18:58:38+00:00: Recorded command exit 0; command argv SHA-256
   987e0d9ac4e88d83cd62975832c181c3c798255f62859a22c4f44552b8cfc960.
+
+- 2026-09-15T18:59:03+00:00: Review findings addressed in signed+DCO d4a102f: injection now
+  validates concrete endpoint identity and current generation, checks cancellation before/after
+  sink, supports explicit Ollama no-auth policy, and rejects unsupported provider/policy
+  combinations. Added endpoint mismatch, stale/cancelled, empty credential and sink failure tests.
+  Focused tests 2 passed; fmt and clippy -D warnings passed. Pushed PR #178 update.
