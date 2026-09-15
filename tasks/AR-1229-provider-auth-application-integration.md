@@ -10,7 +10,7 @@
   "id": "AR-1229",
   "next_action": "Update catalog/docs/conformance for control v1.6, verify v1-v1.5 generated schema byte identity, then create/update PR #179 from exact signed head b85d07860472fbaabec47eb3b0f0cc931312708d and run full gates.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
-  "observed_dirty": 0,
+  "observed_dirty": 10,
   "observed_head": "b85d07860472fbaabec47eb3b0f0cc931312708d",
   "owner": "asb_ar1229_auth_application",
   "plan": "../plans/AR-1229.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 153,
+  "task_revision": 154,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:38:01+00:00",
+  "updated_at": "2026-09-15T22:38:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
