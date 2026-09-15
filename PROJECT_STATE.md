@@ -26,20 +26,20 @@ Generated from local Git and GitHub. Do not edit.
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #176 | `feature/ar-1120@d9253f2187a6` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(auth): add credential enrollment lifecycle |
 | #177 | `feature/ar-1228-auth-backends-probes@d6e1c4e810a6` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(auth): bind concrete credential resolvers |
-| #178 | `feature/ar-1230-authenticated-provider-request-seam@1f49831b2913` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | feat(auth): add authenticated provider request seam |
+| #178 | `feature/ar-1230-authenticated-provider-request-seam@1f49831b2913` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | feat(auth): add authenticated provider request seam |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35012192004 | `1f49831b2913` | pull_request | Huawei MIT source headers | queued:- |
-| 35012191857 | `1f49831b2913` | pull_request | Fault assurance | queued:- |
-| 35012191802 | `1f49831b2913` | pull_request | Emulated aarch64 portability | queued:- |
-| 35012191800 | `1f49831b2913` | pull_request | Repository quality | queued:- |
-| 35012191796 | `1f49831b2913` | pull_request | Agent Workflow Quality shadow | queued:- |
-| 35012191794 | `1f49831b2913` | pull_request | Hosted portability and native qualification | queued:- |
-| 35012191702 | `1f49831b2913` | pull_request | Rust verification | queued:- |
-| 35012191663 | `1f49831b2913` | pull_request | Formal assurance | queued:- |
+| 35012192004 | `1f49831b2913` | pull_request | Huawei MIT source headers | completed:success |
+| 35012191857 | `1f49831b2913` | pull_request | Fault assurance | completed:success |
+| 35012191802 | `1f49831b2913` | pull_request | Emulated aarch64 portability | completed:success |
+| 35012191800 | `1f49831b2913` | pull_request | Repository quality | in_progress:- |
+| 35012191796 | `1f49831b2913` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 35012191794 | `1f49831b2913` | pull_request | Hosted portability and native qualification | completed:success |
+| 35012191702 | `1f49831b2913` | pull_request | Rust verification | completed:success |
+| 35012191663 | `1f49831b2913` | pull_request | Formal assurance | completed:failure |
 | 35011365142 | `2a74205ce8a0` | pull_request | Formal assurance | completed:success |
 | 35011365141 | `2a74205ce8a0` | pull_request | Emulated aarch64 portability | completed:success |
 | 35011365119 | `2a74205ce8a0` | pull_request | Huawei MIT source headers | completed:success |
