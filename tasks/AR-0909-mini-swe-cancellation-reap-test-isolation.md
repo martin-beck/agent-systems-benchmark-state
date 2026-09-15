@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Await fresh exact-head CI for 25dfa99; inspect all required checks, independently review and merge only if all green.",
+  "next_action": "Await exact-head CI for 7da1e0d; inspect every required check, independently review, then merge only if all green.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "7da1e0d9beb7b36d0e6fbba78c12718b9e25b181",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 337,
+  "task_revision": 338,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-15T16:13:14+00:00",
+  "updated_at": "2026-09-15T16:13:52+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1219,3 +1219,12 @@ classified.
 
 - 2026-09-15T16:13:14+00:00: Recorded command exit 0; command argv SHA-256
   23357cce65aac3ab188ef6a43f3a3b61ff2641f98d5be6396b3f6abaab7ff46b.
+
+- 2026-09-15T16:13:52+00:00: Latest run 34992348805 failed after 14.38s at helper readiness despite
+  10s readiness bound. Direct local reproduction showed the helper process itself had a 10s
+  ProcessLimits timeout, so it could be terminated before the readiness poll completed under
+  emulation. The fixture argv/path is correct ($5 is workspace). Test-only commit
+  7da1e0d9beb7b36d0e6fbba78c12718b9e25b181 raises only this helper lifetime bound to 30s while
+  retaining a 10s readiness deadline; no production lifecycle or gate changes. Local focused test,
+  fmt, Clippy pass; SSH/DCO verified. PR127 updated by guarded force-with-lease and fresh exact-head
+  CI is required.
