@@ -9,7 +9,7 @@
     "AR-1100"
   ],
   "id": "AR-1228",
-  "next_action": "PR #177 incremental adapter checkpoint 98733fc needs independent review, then implement provider-specific bounded probes and durable CLI/control/config registry integration; do not release AR-1120 or mark AR-1228 done yet.",
+  "next_action": "PR #177 now includes resolver adapters and body-free provider probe classification at exact head 22b3572. Remaining acceptance is actual provider transport/probe fixtures plus durable config/registry and authenticated CLI/control integration; do not merge or release yet.",
   "observed_branch": "feature/ar-1228-auth-backends-probes",
   "observed_dirty": 0,
   "observed_head": "22b3572a448bd8cc2c0e90bd403ca2ae1d2abbac",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T18:19:28+00:00",
+  "updated_at": "2026-09-15T18:19:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
@@ -113,3 +113,9 @@ integration rather than renderer or frontend behavior.
 
 - 2026-09-15T18:19:28+00:00: Recorded command exit 0; command argv SHA-256
   48ebab3bb5e4bd42c46cad07dcc55d37b4aefca315508cfb17e67a0025be5412.
+
+- 2026-09-15T18:19:46+00:00: Added provider-specific bounded status classifier for OpenAI, Gemini
+  and Ollama with oversized/non-JSON fail-closed outcomes in signed+DCO 22b3572. Focused
+  provider_probe tests (2), auth_backend compile tests and clippy pass. Classification intentionally
+  does not claim actual network/provider qualification; remaining architecture-owned integration is
+  explicit.

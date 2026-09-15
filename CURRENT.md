@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1228](tasks/AR-1228-provider-auth-backends-probes.md): Qualify provider authentication backends and probes | Qualify provider authentication backends, probes and application integration. | PR #177 incremental adapter checkpoint 98733fc needs independent review, then implement provider-specific bounded probes and durable CLI/control/config registry integration; do not release AR-1120 or mark AR-1228 done yet. | asb_ar1228_auth_backends |
+| P0 | [AR-1228](tasks/AR-1228-provider-auth-backends-probes.md): Qualify provider authentication backends and probes | Qualify provider authentication backends, probes and application integration. | PR #177 now includes resolver adapters and body-free provider probe classification at exact head 22b3572. Remaining acceptance is actual provider transport/probe fixtures plus durable config/registry and authenticated CLI/control integration; do not merge or release yet. | asb_ar1228_auth_backends |
 | P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Await exact-head CI for b0df3fb; inspect AArch64 and all required checks, independently review, merge only if all green. | asb_ar0909_lifecycle_repair |
 
 ## Open
