@@ -10,7 +10,7 @@
   "id": "AR-1229",
   "next_action": "Implement control-state admission/authorization and bounded asb auth CLI dispatch for AuthEnroll/AuthStatus/AuthRotate/AuthRevoke; add protocol schema and negative/privacy tests, then create PR from exact signed head 1cce200.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
-  "observed_dirty": 1,
+  "observed_dirty": 2,
   "observed_head": "1cce20076c1cd2c3ff2465ccb6ee2b87d31e6b4c",
   "owner": "asb_ar1229_cli_admission",
   "plan": "../plans/AR-1229.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T21:52:17+00:00",
+  "updated_at": "2026-09-15T21:52:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
