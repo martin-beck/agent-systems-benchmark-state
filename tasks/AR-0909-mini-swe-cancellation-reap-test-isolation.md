@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 319,
+  "task_revision": 320,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-15T15:59:48+00:00",
+  "updated_at": "2026-09-15T16:00:06+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1173,3 +1173,6 @@ classified.
   children.pids within the 2-second deadline under QEMU; local native pass is insufficient.
   Investigating helper argv/cwd under emulation and bounded startup budget; no merge or gate
   weakening.
+
+- 2026-09-15T16:00:06+00:00: Recorded command exit 0; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
