@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1120](tasks/AR-1120.md): Authentication enrollment | Enroll provider authentication. | PR #176 exact head a68b29a is awaiting replacement CI and independent approval. If all checks green, merge through coordinator, run post-merge verification, then release AR-1120; no downstream promotion before terminal evidence. | asb_ar1120_auth_enrollment |
+| P0 | [AR-1120](tasks/AR-1120.md): Authentication enrollment | Enroll provider authentication. | PR #176 exact head d9253f2 has lint-corrected rollback-safe rotation. Await replacement exact-head CI and independent approval; merge only when every check is green, then post-merge verify and release AR-1120. | asb_ar1120_auth_enrollment |
 | P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Await exact-head CI for b0df3fb; inspect AArch64 and all required checks, independently review, merge only if all green. | asb_ar0909_lifecycle_repair |
 
 ## Open
