@@ -20,7 +20,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-aider-deterministic-replay` | `fix/aider-deterministic-replay` | `87a22654913a` | 0 | behind 388, ahead 0 |
 | `agent-systems-benchmark-all-agents-provider` | `feature/all-agents-provider` | `03962f28571e` | 0 | behind 351, ahead 0 |
 | `agent-systems-benchmark-ar-1100` | `feature/ar-1100` | `38c039975077` | 0 | behind 122, ahead 2 |
-| `agent-systems-benchmark-ar-1120` | `feature/ar-1120` | `d9253f2187a6` | 0 | behind 54, ahead 5 |
+| `agent-systems-benchmark-ar-1120` | `DETACHED` | `2f96f2115441` | 2 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-agents/src/auth.rs`, `crates/asb-agents/src/lib.rs` |
 | `agent-systems-benchmark-ar-1228-auth-backends-probes` | `feature/ar-1228-auth-backends-probes` | `2d716c8cac94` | 0 | behind 21, ahead 0 |
 | `agent-systems-benchmark-ar-1229-auth-application-integration` | `feature/ar-1229-auth-application-integration` | `b33d6da59ba9` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-ar-1230-authenticated-provider-request-seam` | `feature/ar-1230-authenticated-provider-request-seam` | `3d0349af1a56` | 0 | behind 37, ahead 0 |
