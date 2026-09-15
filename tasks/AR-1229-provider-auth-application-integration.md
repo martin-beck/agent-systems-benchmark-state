@@ -8,7 +8,7 @@
     "AR-1230"
   ],
   "id": "AR-1229",
-  "next_action": "Regenerate v1.6 control schemas/catalog/docs and run contract consistency plus full control/config gates; then create/update PR #179 from exact signed head 9c4741f934b3e1fbdb2b290cae3f65b1d7d7dd90.",
+  "next_action": "Update catalog/docs/conformance for control v1.6, verify v1-v1.5 generated schema byte identity, then create/update PR #179 from exact signed head b85d07860472fbaabec47eb3b0f0cc931312708d and run full gates.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
   "observed_dirty": 0,
   "observed_head": "b85d07860472fbaabec47eb3b0f0cc931312708d",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 151,
+  "task_revision": 152,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:35:21+00:00",
+  "updated_at": "2026-09-15T22:35:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -408,3 +408,10 @@ public state or weaken the existing resolver and authenticated-control boundarie
 
 - 2026-09-15T22:35:21+00:00: Recorded command exit 0; command argv SHA-256
   9599102ffaa7296c7b9559c4ac6b11eac178a844a6b0f7026129b8fccd02c7e6.
+
+- 2026-09-15T22:35:42+00:00: Added and exported v1.6 request/response schema generators and extended
+  generate-control-schema example with a sixth v1.6 output directory. Generated checked-in
+  crates/asb-control/schema/v1.6 request/response artifacts (3334 lines). Fixed legacy handoff
+  fixtures to explicitly negotiate CONTROL_AGENT_LIFECYCLE_V1; focused handoff tests 21/21 pass and
+  schema conformance target compiles. Signed DCO product head
+  b85d07860472fbaabec47eb3b0f0cc931312708d pushed.
