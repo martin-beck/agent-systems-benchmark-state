@@ -11,17 +11,17 @@
   "id": "AR-1230",
   "next_action": "PR #178 exact head 474e546 requires independent re-review and CI rerun. Schema instance tests now exercise valid OpenAI/Gemini/Ollama policies and invalid policy/deadline boundaries; delegated transport/application gates remain AR-1228/AR-1229.",
   "observed_branch": "feature/ar-1230-authenticated-provider-request-seam",
-  "observed_dirty": 1,
-  "observed_head": "474e5461a61c91230fcbc26b0e49d400780bacf4",
+  "observed_dirty": 0,
+  "observed_head": "e1a5c1d6dac088138f93ff8b50ededfebdff2e61",
   "owner": "asb_ar1230_auth_request_seam",
   "plan": "../plans/AR-1230.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 111,
+  "task_revision": 112,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T19:32:09+00:00",
+  "updated_at": "2026-09-15T19:32:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
