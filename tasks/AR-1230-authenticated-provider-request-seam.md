@@ -11,7 +11,7 @@
   "id": "AR-1230",
   "next_action": "PR #178 exact head e85c23d requires independent re-review and CI rerun. HeaderSink now has transactional rollback on injection failure, and PartialSink proves durable byte state is cleared without retaining secrets. Current-generation callback redesign remains the next seam review item; delegated transport/application gates remain AR-1228/AR-1229.",
   "observed_branch": "feature/ar-1230-authenticated-provider-request-seam",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "e85c23d806e82b8c0cfdd4729d07b145d32762f7",
   "owner": "asb_ar1230_auth_request_seam",
   "plan": "../plans/AR-1230.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 191,
+  "task_revision": 192,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T20:10:17+00:00",
+  "updated_at": "2026-09-15T20:10:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
