@@ -22,8 +22,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1100` | `feature/ar-1100` | `38c039975077` | 0 | behind 102, ahead 2 |
 | `agent-systems-benchmark-ar-1120` | `feature/ar-1120` | `d9253f2187a6` | 0 | behind 34, ahead 5 |
 | `agent-systems-benchmark-ar-1228-auth-backends-probes` | `feature/ar-1228-auth-backends-probes` | `2d716c8cac94` | 0 | behind 1, ahead 0 |
-| `agent-systems-benchmark-ar-1229-auth-application-integration` | `feature/ar-1229-auth-application-integration` | `1f806b94472b` | 10 | behind 0, ahead 4 |
-| changed files | - | - | - | `crates/asb-control/schema/v1.2/request.schema.json`, `crates/asb-control/schema/v1.2/response.schema.json`, `crates/asb-control/schema/v1.3/request.schema.json`, `crates/asb-control/schema/v1.3/response.schema.json`, `crates/asb-control/schema/v1.4/request.schema.json`, `crates/asb-control/schema/v1.4/response.schema.json`, `crates/asb-control/schema/v1.5/request.schema.json`, `crates/asb-control/schema/v1.5/response.schema.json`, `crates/asb-control/schema/v1/request.schema.json`, `crates/asb-control/schema/v1/response.schema.json` |
+| `agent-systems-benchmark-ar-1229-auth-application-integration` | `feature/ar-1229-auth-application-integration` | `3521f7248a36` | 0 | behind 0, ahead 5 |
 | `agent-systems-benchmark-ar-1230-authenticated-provider-request-seam` | `feature/ar-1230-authenticated-provider-request-seam` | `3d0349af1a56` | 0 | behind 17, ahead 0 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 275, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 378, ahead 0 |
