@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Use a bounded emulation-compatible readiness window below the helper lifetime, rerun focused and exact-head CI; retain fail-closed missing-file failure.",
+  "next_action": "Await exact-head CI for 37c1a08; inspect every required check, independently review, and merge only if all green.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "37c1a08e3dc1dbc62a4897927e3a73013faa5236",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 347,
+  "task_revision": 348,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-15T16:23:17+00:00",
+  "updated_at": "2026-09-15T16:23:52+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1250,3 +1250,10 @@ classified.
 
 - 2026-09-15T16:23:17+00:00: Recorded command exit 0; command argv SHA-256
   23357cce65aac3ab188ef6a43f3a3b61ff2641f98d5be6396b3f6abaab7ff46b.
+
+- 2026-09-15T16:23:52+00:00: Run 34992348805 established no helper publication by 10s under QEMU
+  despite a 30s process lifetime; total 14.49s and timeout at 10s. Native helper publication remains
+  immediate. Extended only the test readiness deadline from 10s to 25s, still below the 30s helper
+  lifetime; missing publication remains a fail-closed error. Test-only signed+DCO commit
+  37c1a08e3dc1dbc62a4897927e3a73013faa5236; local focused cancellation and fmt pass. PR127 updated
+  with guarded force-with-lease; fresh exact-head CI required.

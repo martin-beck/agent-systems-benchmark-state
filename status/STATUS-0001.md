@@ -1329,7 +1329,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0909](../tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | asb_ar0909_lifecycle_repair | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Use a bounded emulation-compatible readiness window below the helper lifetime, rerun focused and exact-head CI; retain fail-closed missing-file failure. |
+| P1 | [AR-0909](../tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | asb_ar0909_lifecycle_repair | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Await exact-head CI for 37c1a08; inspect every required check, independently review, and merge only if all green. |
 
 ### Open (12)
 
