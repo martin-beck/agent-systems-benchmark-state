@@ -10,7 +10,7 @@
     "AR-1230"
   ],
   "id": "AR-1228",
-  "next_action": "PR #177 exact head ca5ba5ac66681eb2088727415e36daae00557320 contains std-only 50ms polled connect and partial writes with cancellation/deadline checks. Run exact-head CI and independently review; then address any remaining provider fixture or mid-I/O evidence before merge.",
+  "next_action": "PR #177 exact head 0a5927c includes std-only polled connect/write, authenticated Gemini/Ollama wire fixtures, and malformed/redirect/oversized authenticated response fixtures. Await exact-head CI and independent review; then address any reported mid-I/O gaps before merge.",
   "observed_branch": "feature/ar-1228-auth-backends-probes",
   "observed_dirty": 0,
   "observed_head": "0a5927c6219ea1d5c98919e00f1bc40d062f3051",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 233,
+  "task_revision": 234,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T21:23:13+00:00",
+  "updated_at": "2026-09-15T21:23:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
@@ -665,3 +665,8 @@ integration rather than renderer or frontend behavior.
 
 - 2026-09-15T21:23:13+00:00: Recorded command exit 0; command argv SHA-256
   48ebab3bb5e4bd42c46cad07dcc55d37b4aefca315508cfb17e67a0025be5412.
+
+- 2026-09-15T21:23:36+00:00: Signed+DCO 0a5927c pushed to PR #177. Focused provider_probe tests: 12
+  passed after stabilizing response fixtures by bounded request read and orderly server write
+  shutdown; clippy/fmt/diff checks passed. Earlier exit 101 was fixture close/reset timing, fixed
+  and rerun green.

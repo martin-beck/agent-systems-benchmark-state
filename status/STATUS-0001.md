@@ -1347,7 +1347,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md): Qualify provider authentication backends and probes | asb_ar1228_transport_repair | Qualify provider authentication backends, probes and application integration. | PR #177 exact head ca5ba5ac66681eb2088727415e36daae00557320 contains std-only 50ms polled connect and partial writes with cancellation/deadline checks. Run exact-head CI and independently review; then address any remaining provider fixture or mid-I/O evidence before merge. |
+| P0 | [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md): Qualify provider authentication backends and probes | asb_ar1228_transport_repair | Qualify provider authentication backends, probes and application integration. | PR #177 exact head 0a5927c includes std-only polled connect/write, authenticated Gemini/Ollama wire fixtures, and malformed/redirect/oversized authenticated response fixtures. Await exact-head CI and independent review; then address any reported mid-I/O gaps before merge. |
 
 ### Open (13)
 
