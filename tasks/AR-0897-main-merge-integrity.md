@@ -2,7 +2,7 @@
 {
   "branch": "fix/main-merge-integrity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-15T17:18:59+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "fix/main-merge-integrity",
   "observed_dirty": 0,
   "observed_head": "bd6f450ab8777aeb7e055d71aedba8e4cfd375b3",
-  "owner": "asb_ar0897_merge_integrity",
+  "owner": "",
   "plan": "../plans/AR-0897.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-15T15:19:44+00:00",
+  "updated_at": "2026-09-15T15:20:15+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -204,3 +204,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-15T15:19:44+00:00: Recorded command exit 0; command argv SHA-256
   ff6d1fa7a7185010f75fcfafe4bdc1bdd5b9804d8c2b3e7abdd8a1b96cd81c63.
+
+- 2026-09-15T15:20:15+00:00: Dependency audit 2026-09-15: AR-0877 is done, but AR-0909 remains open
+  (task revision 278; PR #127 exact head c897313524a8d061a078465c5db0512ed366af9d has failing
+  TLC/Alloy and Native Ubuntu checks). Existing reviewed AR-0897 PR #126 remains unchanged at
+  bd6f450ab8777aeb7e055d71aedba8e4cfd375b3/tree 201112340e22d217189243f04f611e95eef02536. No product
+  mutation or publication attempted. After AR-0909 integrates, rebase PR #126 onto current protected
+  main, rerun complete gates, independently review exact head, and merge only with green CI.
