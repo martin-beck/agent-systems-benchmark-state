@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 133,
+  "task_revision": 134,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:30:37+00:00",
+  "updated_at": "2026-09-15T22:31:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -369,3 +369,6 @@ public state or weaken the existing resolver and authenticated-control boundarie
   preserving v1-v1.5 wire behavior instead of selecting new v1.6. Focused handoff tests pass 21/21.
   Prior exit101 was expected-version assertion plus an unused import after initial correction; both
   fixed. Signed DCO product commit 9c4741f934b3e1fbdb2b290cae3f65b1d7d7dd90 pushed.
+
+- 2026-09-15T22:31:11+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
