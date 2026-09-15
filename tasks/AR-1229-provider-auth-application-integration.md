@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1229-auth-application-integration",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-15T23:45:10+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1228",
     "AR-1230"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1229-auth-application-integration",
   "observed_dirty": 0,
   "observed_head": "b33d6da59ba9551f7f4c9a2c2b6dd2b6a959bc6e",
-  "owner": "asb_ar1229_auth_application",
+  "owner": "",
   "plan": "../plans/AR-1229.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 254,
+  "task_revision": 255,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T23:17:53+00:00",
+  "updated_at": "2026-09-15T23:17:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -682,3 +682,8 @@ public state or weaken the existing resolver and authenticated-control boundarie
   7cd295eabe6c6d2da8adaf8226e5ff1a311e0008. Focused schema conformance passed 4/4, auth
   restart/idempotent revoke passed 1/1, and full offline workspace cargo test completed exit 0.
   Worktree clean.
+
+- 2026-09-15T23:17:56+00:00: AR-1229 completed and released after PR #179 merge at 2f96f211.
+  Exact-main tree verification matched feature tree; focused auth/schema gates and full offline
+  workspace tests passed post-merge. All required CI lanes were green at reviewed feature head
+  b33d6da. No unresolved AR acceptance work remains.
