@@ -13,7 +13,7 @@
   "id": "AR-0909",
   "next_action": "Repair helper readiness synchronization for emulated AArch64 without weakening identity/liveness checks; rerun focused and exact-head CI.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "e3d2962095a138a8fc1569f3f3283f42e33d0b8f",
   "owner": "asb_ar0909_lifecycle_repair",
   "plan": "../plans/AR-0909.md",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 310,
+  "task_revision": 311,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-15T15:51:33+00:00",
+  "updated_at": "2026-09-15T15:51:44+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
