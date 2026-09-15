@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Restore shell wrapper workspace position to $5; rerun focused and exact-head CI, inspect all checks.",
+  "next_action": "Await fresh exact-head CI for cc72012; inspect AArch64 and all required checks, independently review, then merge only if all green.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "cc72012d35acf19626c1d8ff78098cac7d5f464b",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 368,
+  "task_revision": 369,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-15T16:58:20+00:00",
+  "updated_at": "2026-09-15T16:58:42+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1310,3 +1310,9 @@ classified.
 
 - 2026-09-15T16:58:20+00:00: Recorded command exit 0; command argv SHA-256
   23357cce65aac3ab188ef6a43f3a3b61ff2641f98d5be6396b3f6abaab7ff46b.
+
+- 2026-09-15T16:58:42+00:00: Corrected f4a8c5d per shell argv evidence: #!/bin/sh receives $1=-P,
+  $2=-S, $3=-c, $4=DRIVER, $5=absolute workspace. Restored direct $5/children.pids publication;
+  retained the previously justified 25s readiness and 30s helper lifetime bounds. Test-only
+  signed+DCO commit cc72012d35acf19626c1d8ff78098cac7d5f464b; local focused cancellation, fmt and
+  Clippy pass. PR127 updated by guarded force-with-lease; fresh exact-head CI required.
