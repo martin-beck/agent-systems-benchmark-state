@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**255 ARs tracked** across 6 active status categories.
+**255 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 13 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 12 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 73 |
 | **Future** | Deferred roadmap work | 1 |
@@ -207,7 +207,7 @@ flowchart LR
         AR_0894["AR-0894 - Planned"]:::status_planned
         AR_0895["AR-0895 - Done"]:::status_done
         AR_0896["AR-0896 - Blocked"]:::status_blocked
-        AR_0897["AR-0897 - Open"]:::status_open
+        AR_0897["AR-0897 - In progress"]:::status_in_progress
         AR_0898["AR-0898 - Planned"]:::status_planned
         AR_0899["AR-0899 - Planned"]:::status_planned
     end
@@ -1325,11 +1325,16 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (13)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0897](../tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | Unclaimed | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Hold PR 126 at bd6f450; after AR-0877 and AR-0909 integrate, rebase once and require fresh all-green exact-head CI before merge. |
+| P0 | [AR-0897](../tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | asb_ar0897_merge_integrity | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Hold PR 126 at bd6f450; after AR-0877 and AR-0909 integrate, rebase once and require fresh all-green exact-head CI before merge. |
+
+### Open (12)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
 | P0 | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md): Adopt Ratatui/Crossterm TUI foundation | Unclaimed | Adopt Ratatui and Crossterm as the supported professional TUI foundation. | Remain open pending a supported AR-1062 signed publication/repair successor, green exact-main Repository quality and Trusted main, and recovered AR-1060 control-publication provenance. Do not repeat merged foundation work or add UI code to ASB. |
 | P0 | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md): Implement &#96;asb tui&#96; lifecycle routing | Unclaimed | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. |
 | P0 | [AR-1038](../tasks/AR-1038-capability-coverage-sink.md): Preserve coverage sinks in sanitized CLI child tests | Unclaimed | Prevent sanitized capability child tests from writing default profraw files into the source checkout. | Keep AR-1038 in progress while a separately reviewed forward-only policy correction permits one strictly bounded current-main synchronization merge at the topic tip; then require exact-main green postmerge evidence before completion. |
