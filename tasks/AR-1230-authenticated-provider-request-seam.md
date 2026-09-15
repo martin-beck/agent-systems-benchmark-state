@@ -11,7 +11,7 @@
   "id": "AR-1230",
   "next_action": "PR #178 exact head 07b670d requires independent re-review and CI rerun. Shared runtime validator now enforces every required field and bound (digest, generation, timeout, deadline, response limit) plus provider/policy combinations; delegated transport/application gates remain AR-1228/AR-1229.",
   "observed_branch": "feature/ar-1230-authenticated-provider-request-seam",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "07b670ded6be329a861c5c63255aa781ceeca5ef",
   "owner": "asb_ar1230_auth_request_seam",
   "plan": "../plans/AR-1230.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 126,
+  "task_revision": 127,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T19:39:12+00:00",
+  "updated_at": "2026-09-15T19:39:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
