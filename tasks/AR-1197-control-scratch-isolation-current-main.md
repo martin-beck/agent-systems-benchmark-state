@@ -2,20 +2,20 @@
 {
   "branch": "fix/ar0908-current-main",
   "checkpoint_commit": "39f90b316faf4bbbce4170d7f0289c99355c9642",
-  "claim_expires": "",
+  "claim_expires": "2026-09-15T12:09:19+00:00",
   "depends_on": [],
   "id": "AR-1197",
   "next_action": "Obtain independent immutable-head review of PR #173; then merge only through protected main after exact-head checks remain green, and verify post-merge assurance at the resulting main SHA.",
   "observed_head": "39f90b316faf4bbbce4170d7f0289c99355c9642",
-  "owner": "",
+  "owner": "root-pr173-rebase",
   "plan": "../plans/AR-1197.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify concurrent ASB control scratch-root isolation on current repaired main.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Qualify current-main control scratch isolation",
-  "updated_at": "2026-09-15T09:55:32+00:00",
+  "updated_at": "2026-09-15T10:09:19+00:00",
   "worktree_key": "agent-systems-benchmark-control-scratch-isolation-current-main"
 }
 ---
@@ -47,3 +47,5 @@ with all 12 required checks terminal green. No merge or release is implied by th
 - 2026-09-15T09:55:32+00:00: Recovered expired claim formerly owned by asb-ar1197-registry.
   Recovered expired claim before publishing the new tutorial AR series; no product implementation
   change was made.
+
+- 2026-09-15T10:09:19+00:00: Claimed by root-pr173-rebase.
