@@ -1347,7 +1347,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md): Provider authentication application integration | asb_ar1229_auth_application | Integrate provider authentication into ASB config, control and CLI surfaces. | Add lifecycle restart/partial-failure tests for auth enrollment and run full applicable gates on efd9894; then update PR #179 exact-head evidence and request independent review. |
+| P0 | [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md): Provider authentication application integration | asb_ar1229_auth_application | Integrate provider authentication into ASB config, control and CLI surfaces. | Run full applicable local gates on 8acad23, inspect PR #179 exact-head CI terminal results, then request independent review; merge remains prohibited until all required checks/review are green. |
 
 ### Open (13)
 
@@ -1534,4 +1534,3 @@ flowchart LR
 | P1 | [AR-0313](../tasks/AR-0313-all-agents-provider.md): Configure one provider for all agents | Unclaimed | Let test plans select one provider profile for every chosen supported agent atomically. | Wait for PR #78 exact-head CI; independently review immutable diff, then merge serially only if every required check is green. |
 | P1 | [AR-0314](../tasks/AR-0314-recording-source-choice.md): Choose matching replay or live provider execution | Unclaimed | Offer matching prior recordings or an actual provider connection without silently choosing either. | Durable release and post-merge verification are complete; no further AR-0314 action. |
 | P1 | [AR-0315](../tasks/AR-0315-provider-parity-conformance.md): Verify cross-agent provider parity | Unclaimed | Conformance-test identical OpenAI and Ollama profiles across the complete supported-agent matrix. | Complete; no further action. |
-| P1 | [AR-0316](../tasks/AR-0316-agent-runtime-bundles.md): Publish reproducible agent runtime bundles | Unclaimed | Make supported agent installations reproducible, license-audited, SBOM-backed, and independently verifiable. | No further action for the released fail-closed catalog; complete runtime closures remain future work and must not be inferred. |

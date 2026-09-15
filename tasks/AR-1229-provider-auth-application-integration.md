@@ -8,7 +8,7 @@
     "AR-1230"
   ],
   "id": "AR-1229",
-  "next_action": "Add lifecycle restart/partial-failure tests for auth enrollment and run full applicable gates on efd9894; then update PR #179 exact-head evidence and request independent review.",
+  "next_action": "Run full applicable local gates on 8acad23, inspect PR #179 exact-head CI terminal results, then request independent review; merge remains prohibited until all required checks/review are green.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
   "observed_dirty": 0,
   "observed_head": "8acad2317a4ad2a1a38c1a06024297bfed56d190",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 213,
+  "task_revision": 214,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T23:01:16+00:00",
+  "updated_at": "2026-09-15T23:01:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -569,3 +569,8 @@ public state or weaken the existing resolver and authenticated-control boundarie
   422de929f35a13a7206d8a95352061502a93f1785f7694e5184458196cd08b15.
 
 - 2026-09-15T23:01:16+00:00: Heartbeat by asb_ar1229_auth_application.
+
+- 2026-09-15T23:01:42+00:00: Diagnosed 22:57 auth test failure: validate_catalog rejected
+  acknowledged auth mutation because target/result matching had no auth arm. Added auth target
+  validation plus restart/reopen and idempotent revoke test. Focused test passes 1/1. Signed-DCO
+  product commit 8acad23 pushed; worktree clean.

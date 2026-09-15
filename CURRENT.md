@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1229](tasks/AR-1229-provider-auth-application-integration.md): Provider authentication application integration | Integrate provider authentication into ASB config, control and CLI surfaces. | Add lifecycle restart/partial-failure tests for auth enrollment and run full applicable gates on efd9894; then update PR #179 exact-head evidence and request independent review. | asb_ar1229_auth_application |
+| P0 | [AR-1229](tasks/AR-1229-provider-auth-application-integration.md): Provider authentication application integration | Integrate provider authentication into ASB config, control and CLI surfaces. | Run full applicable local gates on 8acad23, inspect PR #179 exact-head CI terminal results, then request independent review; merge remains prohibited until all required checks/review are green. | asb_ar1229_auth_application |
 
 ## Open
 
