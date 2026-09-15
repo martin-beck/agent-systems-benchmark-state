@@ -1347,7 +1347,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md): Provider authentication application integration | asb_ar1229_auth_application | Integrate provider authentication into ASB config, control and CLI surfaces. | Update catalog/docs/conformance for control v1.6, verify v1-v1.5 generated schema byte identity, then create/update PR #179 from exact signed head b85d07860472fbaabec47eb3b0f0cc931312708d and run full gates. |
+| P0 | [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md): Provider authentication application integration | asb_ar1229_auth_application | Integrate provider authentication into ASB config, control and CLI surfaces. | Run policy and conformance against exact head 8771b9b78402b889898af30b8edf49b0cdf2c472; verify v1-v1.5 schema byte identity to efe741a and v1.6-only auth variants, then update PR #179 and full gates. |
 
 ### Open (13)
 

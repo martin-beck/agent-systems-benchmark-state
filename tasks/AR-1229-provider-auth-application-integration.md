@@ -8,7 +8,7 @@
     "AR-1230"
   ],
   "id": "AR-1229",
-  "next_action": "Update catalog/docs/conformance for control v1.6, verify v1-v1.5 generated schema byte identity, then create/update PR #179 from exact signed head b85d07860472fbaabec47eb3b0f0cc931312708d and run full gates.",
+  "next_action": "Run policy and conformance against exact head 8771b9b78402b889898af30b8edf49b0cdf2c472; verify v1-v1.5 schema byte identity to efe741a and v1.6-only auth variants, then update PR #179 and full gates.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
   "observed_dirty": 0,
   "observed_head": "8771b9b78402b889898af30b8edf49b0cdf2c472",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 159,
+  "task_revision": 160,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:39:04+00:00",
+  "updated_at": "2026-09-15T22:39:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -430,3 +430,9 @@ public state or weaken the existing resolver and authenticated-control boundarie
 
 - 2026-09-15T22:39:04+00:00: Recorded command exit 0; command argv SHA-256
   9599102ffaa7296c7b9559c4ac6b11eac178a844a6b0f7026129b8fccd02c7e6.
+
+- 2026-09-15T22:39:33+00:00: Restored every checked-in v1 through v1.5 schema artifact
+  byte-identical to protected baseline efe741a75a8a3e7bd14afd8c6cef119f46a21c74; only new v1.6
+  request/response schemas remain additive. Signed DCO commit
+  8771b9b78402b889898af30b8edf49b0cdf2c472 pushed to PR #179 branch. Earlier generator exit101 was
+  unresolved v1.6 re-export; fixed by exporting schema functions. Worktree clean.
