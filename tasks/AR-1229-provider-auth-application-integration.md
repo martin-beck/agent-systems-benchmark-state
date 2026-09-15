@@ -8,7 +8,7 @@
     "AR-1230"
   ],
   "id": "AR-1229",
-  "next_action": "Run dedicated auth CLI positive/negative/privacy tests and full documented gates; then create PR from exact signed head 1594e09. Existing schema_conformance remains the canonical generated-schema CI gate; do not duplicate it.",
+  "next_action": "Run full applicable ASB gates and create PR from exact signed head 264cd4d; then independent review, exact-head CI, merge and post-merge verification. Existing schema_conformance is canonical generated-schema gate.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
   "observed_dirty": 0,
   "observed_head": "264cd4d60a5c909fe613b116b12aa202c4736d0f",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 91,
+  "task_revision": 92,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:09:41+00:00",
+  "updated_at": "2026-09-15T22:09:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -253,3 +253,8 @@ public state or weaken the existing resolver and authenticated-control boundarie
 
 - 2026-09-15T22:09:41+00:00: Recorded command exit 0; command argv SHA-256
   af49f1a2c12fe610e176334d1e1f0199956efc75923a96939ff24df4a977e040.
+
+- 2026-09-15T22:09:52+00:00: Added dedicated auth CLI tests: typed enroll request is bounded and
+  contains no secret material; rotate missing options fail closed with bounded structured error.
+  cargo test -p asb-cli --lib --offline: 65 passed. Signed DCO commit 264cd4d pushed; worktree
+  clean.
