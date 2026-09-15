@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remove hosted timing flakiness from the bounded kernel diagnostic rejection test.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Kernel diagnostic rejection fixture stability",
-  "updated_at": "2026-09-15T09:31:27+00:00",
+  "updated_at": "2026-09-15T10:02:09+00:00",
   "worktree_key": "agent-systems-benchmark-metrics-timeout-flake"
 }
 ---
@@ -36,3 +36,11 @@ failure classification, output bounds, staging verification, and cleanup remain 
   hosted PR #174 run 34951783425 with TimedOut instead of ProbeRejected; fixed candidate passed 30
   focused repetitions, full asb-metrics unit tests (16 passed, 4 ignored), fmt, clippy -D warnings,
   and diff check. Await exact-head PR #175 CI and independent review; do not merge PR #174 here.
+
+- 2026-09-15T10:02:09+00:00: PR #175 merged at immutable main SHA
+  ef82484fa78dd31c0d7b5ad48e2dc51a93ec1339. Post-merge runs: 34955354481 success, 34955354446
+  completed success, 34955354399 success; 34955354479 Rust verification, 34955354482 Formal
+  assurance, and 34955354389 Emulated aarch64 remain in progress. Repository quality 34955354581
+  failed with protected-main merge-tree mismatch (range
+  d354a5127c8d065de64432fb443200612df10f6d..ef82484fa78dd31c0d7b5ad48e2dc51a93ec1339); keep
+  in_progress and investigate before release.
