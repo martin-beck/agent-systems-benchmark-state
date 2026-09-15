@@ -1329,7 +1329,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1120](../tasks/AR-1120.md): Authentication enrollment | asb_ar1120_auth_enrollment | Enroll provider authentication. | Rerun focused gates after from_json type annotation; then review rotation/revocation failure atomicity and publish updated signed commit only after all negative/privacy checks pass. |
+| P0 | [AR-1120](../tasks/AR-1120.md): Authentication enrollment | asb_ar1120_auth_enrollment | Enroll provider authentication. | Await independent review of PR #176 exact head 8641bff and all required exact-head CI. If approved and green, merge through coordinator, run exact-main post-merge gates, then release AR-1120 with evidence; no downstream promotion yet. |
 | P1 | [AR-0909](../tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | asb_ar0909_lifecycle_repair | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Await exact-head CI for b0df3fb; inspect AArch64 and all required checks, independently review, merge only if all green. |
 
 ### Open (12)
