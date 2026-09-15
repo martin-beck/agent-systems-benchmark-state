@@ -12,17 +12,17 @@
   "id": "AR-1228",
   "next_action": "Add authenticated Gemini/Ollama live transport fixtures, provider-specific response/expired semantics, and mid-transport cancellation/generation/oversize failure tests; then await independent review and exact-head CI for PR #177 at a53dcdd27f74094a7038b7031aeb6aa7ed17b127.",
   "observed_branch": "feature/ar-1228-auth-backends-probes",
-  "observed_dirty": 1,
-  "observed_head": "a53dcdd27f74094a7038b7031aeb6aa7ed17b127",
+  "observed_dirty": 0,
+  "observed_head": "cdfd81cb55f505cd27316e3d8d744d303e74ba67",
   "owner": "asb_ar1228_auth_backends",
   "plan": "../plans/AR-1228.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 195,
+  "task_revision": 196,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T20:59:43+00:00",
+  "updated_at": "2026-09-15T20:59:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
