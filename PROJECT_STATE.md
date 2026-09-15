@@ -26,13 +26,13 @@ Generated from local Git and GitHub. Do not edit.
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #176 | `feature/ar-1120@d9253f2187a6` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(auth): add credential enrollment lifecycle |
 | #177 | `feature/ar-1228-auth-backends-probes@d6e1c4e810a6` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(auth): bind concrete credential resolvers |
-| #178 | `feature/ar-1230-authenticated-provider-request-seam@e85c23d806e8` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | feat(auth): add authenticated provider request seam |
+| #178 | `feature/ar-1230-authenticated-provider-request-seam@e85c23d806e8` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | feat(auth): add authenticated provider request seam |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35017854520 | `e85c23d806e8` | pull_request | Formal assurance | in_progress:- |
+| 35017854520 | `e85c23d806e8` | pull_request | Formal assurance | completed:failure |
 | 35017854475 | `e85c23d806e8` | pull_request | Huawei MIT source headers | completed:success |
 | 35017854425 | `e85c23d806e8` | pull_request | Hosted portability and native qualification | completed:success |
 | 35017854369 | `e85c23d806e8` | pull_request | Rust verification | in_progress:- |
