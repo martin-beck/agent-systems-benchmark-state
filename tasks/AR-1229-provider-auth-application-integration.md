@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 152,
+  "task_revision": 153,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:35:42+00:00",
+  "updated_at": "2026-09-15T22:38:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -415,3 +415,6 @@ public state or weaken the existing resolver and authenticated-control boundarie
   fixtures to explicitly negotiate CONTROL_AGENT_LIFECYCLE_V1; focused handoff tests 21/21 pass and
   schema conformance target compiles. Signed DCO product head
   b85d07860472fbaabec47eb3b0f0cc931312708d pushed.
+
+- 2026-09-15T22:38:01+00:00: Recorded command exit 0; command argv SHA-256
+  54b46d71f8fdc9acfa4101671d7c29b7f8175f072ae27e789e4f9d48663f35ca.
