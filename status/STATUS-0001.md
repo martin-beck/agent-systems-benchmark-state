@@ -1276,7 +1276,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1190](../tasks/AR-1190.md): Authenticated agent catalog control | root-ar1190-review | Expose a verified, capability-aware local-agent catalog to asb-tui. | Define and implement the authenticated agent catalog control contract. |
+| P0 | [AR-1190](../tasks/AR-1190.md): Authenticated agent catalog control | root-ar1190-review | Expose a verified, capability-aware local-agent catalog to asb-tui. | Independently review PR #168 exact head 6402b00abea9bc25b18af99fa65e0cb3cb6ea263; wait for all hosted checks, then merge only with green required gates. |
 
 ### Open (13)
 
