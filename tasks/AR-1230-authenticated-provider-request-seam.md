@@ -9,7 +9,7 @@
     "AR-1100"
   ],
   "id": "AR-1230",
-  "next_action": "PR #178 exact head 074e0f4 requires independent re-review and CI rerun. Partial-write sink failure and cancellation race evidence now pass; next reviewer action is verify current-generation transition coverage before merge. Delegated transport/application gates remain AR-1228/AR-1229.",
+  "next_action": "PR #178 exact head 240f9f4 requires independent re-review and CI rerun. Partial-write fixture now records only byte count/status and never retains credential bytes; cancellation and generation-race tests remain green. Delegated transport/application gates remain AR-1228/AR-1229.",
   "observed_branch": "feature/ar-1230-authenticated-provider-request-seam",
   "observed_dirty": 0,
   "observed_head": "240f9f4e6f9e09ed21ab5667d6256ed9c0bd5957",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 179,
+  "task_revision": 180,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T20:04:28+00:00",
+  "updated_at": "2026-09-15T20:04:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
@@ -492,3 +492,7 @@ integration.
 
 - 2026-09-15T20:04:28+00:00: Recorded command exit 0; command argv SHA-256
   987e0d9ac4e88d83cd62975832c181c3c798255f62859a22c4f44552b8cfc960.
+
+- 2026-09-15T20:04:51+00:00: Signed+DCO 240f9f4 redesigns PartialSink to retain only bytes_written
+  and failed status, preserving privacy while simulating partial write. Focused
+  authenticated_request tests: 6 passed; fmt and clippy passed; branch pushed to PR #178.

@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1230](tasks/AR-1230-authenticated-provider-request-seam.md): Authenticated provider-request seam and secret injection contract | Define the approved bounded provider authentication request and secret-injection seam. | PR #178 exact head 074e0f4 requires independent re-review and CI rerun. Partial-write sink failure and cancellation race evidence now pass; next reviewer action is verify current-generation transition coverage before merge. Delegated transport/application gates remain AR-1228/AR-1229. | asb_ar1230_auth_request_seam |
+| P0 | [AR-1230](tasks/AR-1230-authenticated-provider-request-seam.md): Authenticated provider-request seam and secret injection contract | Define the approved bounded provider authentication request and secret-injection seam. | PR #178 exact head 240f9f4 requires independent re-review and CI rerun. Partial-write fixture now records only byte count/status and never retains credential bytes; cancellation and generation-race tests remain green. Delegated transport/application gates remain AR-1228/AR-1229. | asb_ar1230_auth_request_seam |
 
 ## Open
 
