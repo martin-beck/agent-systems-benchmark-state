@@ -10,7 +10,7 @@
   "id": "AR-1229",
   "next_action": "Run full applicable ASB gates and create PR from exact signed head 264cd4d; then independent review, exact-head CI, merge and post-merge verification. Existing schema_conformance is canonical generated-schema gate.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "264cd4d60a5c909fe613b116b12aa202c4736d0f",
   "owner": "asb_ar1229_cli_admission",
   "plan": "../plans/AR-1229.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 96,
+  "task_revision": 97,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:11:53+00:00",
+  "updated_at": "2026-09-15T22:12:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
