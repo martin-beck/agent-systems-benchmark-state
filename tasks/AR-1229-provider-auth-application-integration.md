@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:05:16+00:00",
+  "updated_at": "2026-09-15T22:06:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -211,3 +211,6 @@ public state or weaken the existing resolver and authenticated-control boundarie
   schema_conformance now 4 passed. Signed DCO commit 3521f72 pushed. AR remains in_progress.
 
 - 2026-09-15T22:05:16+00:00: Heartbeat by asb_ar1229_cli_admission.
+
+- 2026-09-15T22:06:08+00:00: Recorded command exit 1; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
