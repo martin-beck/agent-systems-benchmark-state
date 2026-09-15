@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1191](tasks/AR-1191.md): Verified local-agent lifecycle | Install, activate, verify and recover supported local benchmark agents safely. | Wait for exact-head hosted checks on lifecycle correlation/schema fixes at PR #169 head 3fa66e5c1ded9a797d45a5b9fb3606b39c2e11ce; then independently qualify against asb-tui PR #86. | root-ar1191-review |
+| P0 | [AR-1191](tasks/AR-1191.md): Verified local-agent lifecycle | Install, activate, verify and recover supported local benchmark agents safely. | Obtain independent review sign-off on lifecycle PR #169 head 3fa66e5c1ded9a797d45a5b9fb3606b39c2e11ce; then merge and run protected-main assurance. | root-ar1191-review |
 | P1 | [AR-0908](tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Hold PR #125 unchanged; shared formal asset and native-runner pin owners must repair their gates before a fresh exact-head run. | asb-open-ar0908-hardening |
 
 ## Open
