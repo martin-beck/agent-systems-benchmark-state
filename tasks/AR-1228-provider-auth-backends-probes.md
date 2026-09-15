@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1228-auth-backends-probes",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-15T22:27:12+00:00",
   "depends_on": [
     "AR-0319",
     "AR-0320",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1228-auth-backends-probes",
   "observed_dirty": 0,
   "observed_head": "d6e1c4e810a646323056d8547a800f7c34ae581e",
-  "owner": "",
+  "owner": "asb_ar1228_auth_backends",
   "plan": "../plans/AR-1228.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T20:27:10+00:00",
+  "updated_at": "2026-09-15T20:27:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
@@ -241,3 +241,5 @@ integration rather than renderer or frontend behavior.
 
 - 2026-09-15T20:27:10+00:00: AR-1230 seam is merged at 3989cb7; resume concrete backend/probe
   transport implementation.
+
+- 2026-09-15T20:27:12+00:00: Claimed by asb_ar1228_auth_backends.
