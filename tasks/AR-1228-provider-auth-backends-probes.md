@@ -11,17 +11,17 @@
   "id": "AR-1228",
   "next_action": "PR #177 incremental adapter checkpoint 98733fc needs independent review, then implement provider-specific bounded probes and durable CLI/control/config registry integration; do not release AR-1120 or mark AR-1228 done yet.",
   "observed_branch": "feature/ar-1228-auth-backends-probes",
-  "observed_dirty": 2,
-  "observed_head": "98733fc1a9142af36cb9dcad1a2f81ebd32f0977",
+  "observed_dirty": 0,
+  "observed_head": "22b3572a448bd8cc2c0e90bd403ca2ae1d2abbac",
   "owner": "asb_ar1228_auth_backends",
   "plan": "../plans/AR-1228.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T18:19:16+00:00",
+  "updated_at": "2026-09-15T18:19:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
