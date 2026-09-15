@@ -10,7 +10,7 @@
     "AR-1230"
   ],
   "id": "AR-1228",
-  "next_action": "Bind transport budget to AuthenticatedRequest.deadline_ms and add authenticated mid-transport cancellation/generation/oversize failure tests; then await independent review and exact-head CI for PR #177 at 339cb283272afcd742128c09d346496c4b760b1c.",
+  "next_action": "Add authenticated Gemini/Ollama live transport fixtures, provider-specific response/expired semantics, and mid-transport cancellation/generation/oversize failure tests; then await independent review and exact-head CI for PR #177 at a53dcdd27f74094a7038b7031aeb6aa7ed17b127.",
   "observed_branch": "feature/ar-1228-auth-backends-probes",
   "observed_dirty": 0,
   "observed_head": "a53dcdd27f74094a7038b7031aeb6aa7ed17b127",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 186,
+  "task_revision": 187,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T20:56:59+00:00",
+  "updated_at": "2026-09-15T20:57:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
@@ -536,3 +536,10 @@ integration rather than renderer or frontend behavior.
 
 - 2026-09-15T20:56:59+00:00: Recorded command exit 0; command argv SHA-256
   39225008163410f1c943d38b9f985faf03828ce5b91402c742997f2072005e31.
+
+- 2026-09-15T20:57:18+00:00: Bound execute_authenticated_loopback_probe transport budget to
+  min(ProbeRequest timeout, AuthenticatedRequest deadline_ms - now_ms), using remaining budget for
+  connect/read/write and cancellation/deadline checks during reads. Focused provider_probe suite
+  passes 10 tests; signed DCO commit a53dcdd27f74094a7038b7031aeb6aa7ed17b127 pushed to PR #177.
+  Remaining review blockers are explicit: actual Gemini/Ollama authenticated fixtures, Expired
+  semantics, mid-I/O cancellation/generation rotation, and failure-path coverage.
