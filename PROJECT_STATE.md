@@ -30,7 +30,7 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 35035953472 | `bd9e153a726c` | push | Hosted portability and native qualification | completed:success |
-| 35035953445 | `bd9e153a726c` | push | Emulated aarch64 portability | in_progress:- |
+| 35035953445 | `bd9e153a726c` | push | Emulated aarch64 portability | completed:success |
 | 35035953414 | `bd9e153a726c` | push | Fault assurance | completed:success |
 | 35035953410 | `bd9e153a726c` | push | Huawei MIT source headers | completed:success |
 | 35035953409 | `bd9e153a726c` | push | Formal assurance | completed:success |
