@@ -1347,7 +1347,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md): Qualify provider authentication backends and probes | asb_ar1228_auth_backends | Qualify provider authentication backends, probes and application integration. | Add authenticated Gemini/Ollama live transport fixtures, provider-specific response/expired semantics, and mid-transport cancellation/generation/oversize failure tests; then await independent review and exact-head CI for PR #177 at a53dcdd27f74094a7038b7031aeb6aa7ed17b127. |
+| P0 | [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md): Qualify provider authentication backends and probes | asb_ar1228_auth_backends | Qualify provider authentication backends, probes and application integration. | Add authenticated Gemini/Ollama live transport fixtures and mid-transport generation/cancellation/oversize tests; then await independent review and exact-head CI for PR #177 at cdfd81cb55f505cd27316e3d8d744d303e74ba67. |
 
 ### Open (13)
 

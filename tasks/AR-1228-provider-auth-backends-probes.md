@@ -10,7 +10,7 @@
     "AR-1230"
   ],
   "id": "AR-1228",
-  "next_action": "Add authenticated Gemini/Ollama live transport fixtures, provider-specific response/expired semantics, and mid-transport cancellation/generation/oversize failure tests; then await independent review and exact-head CI for PR #177 at a53dcdd27f74094a7038b7031aeb6aa7ed17b127.",
+  "next_action": "Add authenticated Gemini/Ollama live transport fixtures and mid-transport generation/cancellation/oversize tests; then await independent review and exact-head CI for PR #177 at cdfd81cb55f505cd27316e3d8d744d303e74ba67.",
   "observed_branch": "feature/ar-1228-auth-backends-probes",
   "observed_dirty": 0,
   "observed_head": "cdfd81cb55f505cd27316e3d8d744d303e74ba67",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 197,
+  "task_revision": 198,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T20:59:54+00:00",
+  "updated_at": "2026-09-15T21:00:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
@@ -565,3 +565,10 @@ integration rather than renderer or frontend behavior.
 
 - 2026-09-15T20:59:54+00:00: Recorded command exit 0; command argv SHA-256
   39225008163410f1c943d38b9f985faf03828ce5b91402c742997f2072005e31.
+
+- 2026-09-15T21:00:17+00:00: Implemented end-to-end deadline enforcement: budget begins before
+  credential injection and is bounded by AuthenticatedRequest.deadline_ms minus now_ms;
+  connect/read/write use remaining budget, reads poll at 50ms for cancellation, and
+  expired/cancelled outcomes remain typed. Added Expired classification for HTTP 410 and provider
+  policy tests. Focused provider_probe 10 tests and clippy pass. Signed DCO commit
+  cdfd81cb55f505cd27316e3d8d744d303e74ba67 pushed to PR #177; worktree clean.
