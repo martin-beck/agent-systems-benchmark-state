@@ -10,7 +10,7 @@
   "id": "AR-1229",
   "next_action": "Regenerate v1.6 control schemas/catalog/docs and run contract consistency plus full control/config gates; then create/update PR #179 from exact signed head 9c4741f934b3e1fbdb2b290cae3f65b1d7d7dd90.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
-  "observed_dirty": 2,
+  "observed_dirty": 3,
   "observed_head": "9c4741f934b3e1fbdb2b290cae3f65b1d7d7dd90",
   "owner": "asb_ar1229_auth_application",
   "plan": "../plans/AR-1229.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 139,
+  "task_revision": 140,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:33:36+00:00",
+  "updated_at": "2026-09-15T22:33:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
