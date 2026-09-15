@@ -10,7 +10,7 @@
     "AR-1230"
   ],
   "id": "AR-1228",
-  "next_action": "Implement review blockers on PR #177: enforce one absolute deadline and cancellation during transport, add mid-probe generation-rotation coverage, authenticated Gemini API-key and Ollama policy tests, and authenticated timeout/oversize/malformed/redirect fail-closed tests.",
+  "next_action": "Independent review PR #177 at exact head ac65697ff82e48beac1ca0918766b75b76ec2; add provider-specific authenticated policy/response and mid-transport cancellation/generation tests, then await all required CI.",
   "observed_branch": "feature/ar-1228-auth-backends-probes",
   "observed_dirty": 0,
   "observed_head": "ac65697ff82e48beac1ca0918766b75b76ec2b65",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 167,
+  "task_revision": 168,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T20:53:19+00:00",
+  "updated_at": "2026-09-15T20:53:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
@@ -482,3 +482,11 @@ integration rather than renderer or frontend behavior.
 
 - 2026-09-15T20:53:19+00:00: Recorded command exit 0; command argv SHA-256
   39225008163410f1c943d38b9f985faf03828ce5b91402c742997f2072005e31.
+
+- 2026-09-15T20:53:40+00:00: Fixed review blocker: authenticated transport now derives
+  connect/read/write socket timeouts from remaining monotonic operation budget and checks typed
+  cancellation/deadline before and during reads; captured auth headers are wiped on injection
+  failure and after transport. Focused provider_probe suite passes 8 tests; prior exit 101
+  classified as fragmented test-fixture request/insufficient header termination and corrected with
+  bounded read-until-header-end. Signed DCO product commit ac65697ff82e48beac1ca0918766b75b76ec2
+  pushed to PR #177; worktree clean.
