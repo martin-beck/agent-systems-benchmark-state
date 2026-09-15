@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Increase emulation startup budget to 60s readiness/90s helper lifetime; rerun focused and exact-head CI, inspect all checks.",
+  "next_action": "Await exact-head CI for b0df3fb; inspect AArch64 and all required checks, independently review, merge only if all green.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "b0df3fbc5d9f7dd13969903d250849efa56e3981",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 378,
+  "task_revision": 379,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-15T17:05:33+00:00",
+  "updated_at": "2026-09-15T17:05:56+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1338,3 +1338,9 @@ classified.
 
 - 2026-09-15T17:05:33+00:00: Recorded command exit 0; command argv SHA-256
   23357cce65aac3ab188ef6a43f3a3b61ff2641f98d5be6396b3f6abaab7ff46b.
+
+- 2026-09-15T17:05:56+00:00: Latest PR127 run timed out exactly at 25s (total 26.29s) with correct
+  $5 workspace publication, proving emulated helper startup/publication exceeds 25s. Test-only
+  signed+DCO commit b0df3fbc5d9f7dd13969903d250849efa56e3981 increases only this fixture lifetime to
+  90s and readiness bound to 60s; missing publication remains fail-closed. Local focused
+  cancellation and fmt pass. PR updated by guarded force-with-lease; fresh exact-head CI required.
