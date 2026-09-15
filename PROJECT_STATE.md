@@ -23,20 +23,21 @@ Generated from local Git and GitHub. Do not edit.
 | #149 | `dependabot/cargo/url-2.5.8@f7edfbbd0e98` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump url from 2.5.7 to 2.5.8 |
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
 | #151 | `dependabot/cargo/serde-1.0.229@9c87e23d6d29` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
+| #168 | `feature/asb-authenticated-agent-catalog@3f2ce78c6acd` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(control): add authenticated agent catalog contract |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 34940860390 | `3f2ce78c6acd` | pull_request | Repository quality | in_progress:- |
+| 34940860357 | `3f2ce78c6acd` | pull_request | Huawei MIT source headers | completed:success |
+| 34940860345 | `3f2ce78c6acd` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 34940860334 | `3f2ce78c6acd` | pull_request | Rust verification | in_progress:- |
+| 34940860327 | `3f2ce78c6acd` | pull_request | Fault assurance | in_progress:- |
+| 34940860321 | `3f2ce78c6acd` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 34940860318 | `3f2ce78c6acd` | pull_request | Formal assurance | in_progress:- |
+| 34940860316 | `3f2ce78c6acd` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 34879485649 | `9c87e23d6d29` | pull_request | Emulated aarch64 portability | completed:success |
 | 34879485510 | `9c87e23d6d29` | pull_request | Repository quality | completed:failure |
 | 34879485506 | `9c87e23d6d29` | pull_request | Hosted portability and native qualification | completed:success |
 | 34879485488 | `9c87e23d6d29` | pull_request | Rust verification | completed:failure |
-| 34879485404 | `9c87e23d6d29` | pull_request | Fault assurance | completed:failure |
-| 34879485349 | `9c87e23d6d29` | pull_request | Huawei MIT source headers | completed:success |
-| 34879485335 | `9c87e23d6d29` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 34879485246 | `9c87e23d6d29` | pull_request | Formal assurance | completed:failure |
-| 34879465882 | `5f30c0c92f18` | pull_request | Hosted portability and native qualification | completed:success |
-| 34879465874 | `5f30c0c92f18` | pull_request | Formal assurance | completed:success |
-| 34879465865 | `5f30c0c92f18` | pull_request | Rust verification | completed:failure |
-| 34879465858 | `5f30c0c92f18` | pull_request | Fault assurance | completed:success |
