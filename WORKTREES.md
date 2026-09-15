@@ -176,7 +176,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-verifier-integrity` | `feature/verifier-integrity` | `3fc65ea73bad` | 0 | behind 313, ahead 0 |
 | `agent-systems-benchmark-workbuddy-provenance` | `feature/workbuddy-provenance` | `9aad1317bdca` | 0 | behind 186, ahead 0 |
 | `asb-ar1100-repair` | `DETACHED` | `c68c49eff7e3` | 0 | behind 1, ahead 0 |
-| `asb-ar1190-catalog` | `feature/asb-authenticated-agent-catalog` | `3f2ce78c6acd` | 0 | behind 0, ahead 1 |
+| `asb-ar1190-catalog` | `feature/asb-authenticated-agent-catalog` | `6402b00abea9` | 0 | behind 0, ahead 2 |
 | `asb-boundary-hardening` | `DETACHED` | `d32748d0795e` | 0 | behind 3, ahead 0 |
 | `asb-current-audit-20260914` | `DETACHED` | `817a40bfbd7c` | 0 | behind 0, ahead 0 |
 | `asb-review-154` | `DETACHED` | `4ceaf04f32a0` | 0 | behind 2, ahead 0 |
