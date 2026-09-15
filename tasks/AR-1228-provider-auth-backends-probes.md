@@ -10,7 +10,7 @@
     "AR-1230"
   ],
   "id": "AR-1228",
-  "next_action": "Wait for AR-1230 to define the approved authenticated provider-request seam; then bind it to the bounded loopback transport at PR #177 exact head d6e1c4e and rerun full gates.",
+  "next_action": "Independent review of PR #177 at exact head 16375248089fc55a4494efc82a9cf7e5a5f92d18; then complete concrete provider transport/backend integration and full required CI before merge.",
   "observed_branch": "feature/ar-1228-auth-backends-probes",
   "observed_dirty": 0,
   "observed_head": "16375248089fc55a4494efc82a9cf7e5a5f92d18",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 123,
+  "task_revision": 124,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T20:40:43+00:00",
+  "updated_at": "2026-09-15T20:41:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
@@ -357,3 +357,11 @@ integration rather than renderer or frontend behavior.
 
 - 2026-09-15T20:40:43+00:00: Recorded command exit 0; command argv SHA-256
   39225008163410f1c943d38b9f985faf03828ce5b91402c742997f2072005e31.
+
+- 2026-09-15T20:41:04+00:00: Rebased onto origin/main 3989cb7 and restored authenticated_request
+  module export. Added inject_probe_auth binding with endpoint/generation/deadline/policy
+  enforcement plus positive bearer and negative provider-policy/endpoint-mismatch tests. cargo fmt
+  check, focused provider_probe tests (7 passed), and clippy -D warnings pass. Earlier exit 101 was
+  missing module export after rebase; a transient loopback fixture Unavailable was stabilized by
+  writing response before shutdown; no debug logging remains. Signed DCO product commit
+  16375248089fc55a4494efc82a9cf7e5a5f92d18 pushed to PR #177.

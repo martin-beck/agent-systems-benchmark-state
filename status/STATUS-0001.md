@@ -1347,7 +1347,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md): Qualify provider authentication backends and probes | asb_ar1228_auth_backends | Qualify provider authentication backends, probes and application integration. | Wait for AR-1230 to define the approved authenticated provider-request seam; then bind it to the bounded loopback transport at PR #177 exact head d6e1c4e and rerun full gates. |
+| P0 | [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md): Qualify provider authentication backends and probes | asb_ar1228_auth_backends | Qualify provider authentication backends, probes and application integration. | Independent review of PR #177 at exact head 16375248089fc55a4494efc82a9cf7e5a5f92d18; then complete concrete provider transport/backend integration and full required CI before merge. |
 
 ### Open (13)
 
