@@ -24,20 +24,20 @@ Generated from local Git and GitHub. Do not edit.
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
 | #151 | `dependabot/cargo/serde-1.0.229@9c87e23d6d29` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
-| #176 | `feature/ar-1120@8641bff13f61` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(auth): add credential enrollment lifecycle |
+| #176 | `feature/ar-1120@8641bff13f61` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(auth): add credential enrollment lifecycle |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 35002176342 | `8641bff13f61` | pull_request | Huawei MIT source headers | completed:success |
-| 35002175952 | `8641bff13f61` | pull_request | Repository quality | in_progress:- |
-| 35002175951 | `8641bff13f61` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35002175952 | `8641bff13f61` | pull_request | Repository quality | completed:success |
+| 35002175951 | `8641bff13f61` | pull_request | Hosted portability and native qualification | completed:success |
 | 35002175869 | `8641bff13f61` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 35002175848 | `8641bff13f61` | pull_request | Rust verification | in_progress:- |
-| 35002175838 | `8641bff13f61` | pull_request | Fault assurance | in_progress:- |
-| 35002175822 | `8641bff13f61` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 35002175806 | `8641bff13f61` | pull_request | Formal assurance | in_progress:- |
+| 35002175848 | `8641bff13f61` | pull_request | Rust verification | completed:failure |
+| 35002175838 | `8641bff13f61` | pull_request | Fault assurance | completed:success |
+| 35002175822 | `8641bff13f61` | pull_request | Emulated aarch64 portability | completed:success |
+| 35002175806 | `8641bff13f61` | pull_request | Formal assurance | completed:success |
 | 35001205330 | `032f620b52ea` | pull_request | Formal assurance | completed:success |
 | 35001205319 | `032f620b52ea` | pull_request | Emulated aarch64 portability | completed:success |
 | 35001205298 | `032f620b52ea` | pull_request | Agent Workflow Quality shadow | completed:success |
