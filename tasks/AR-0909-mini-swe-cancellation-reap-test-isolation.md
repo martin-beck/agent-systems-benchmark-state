@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 351,
+  "task_revision": 352,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-15T16:50:28+00:00",
+  "updated_at": "2026-09-15T16:50:42+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1267,3 +1267,6 @@ classified.
   construction suggests shell $5 is workspace after -P/-S/-c/driver, the fixture will now select the
   absolute workspace argument explicitly (with a bounded compatibility fallback only for the
   existing argv shape), then publish children.pids there. No timeout increase or gate weakening.
+
+- 2026-09-15T16:50:42+00:00: Recorded command exit 0; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
