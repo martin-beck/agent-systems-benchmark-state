@@ -10,7 +10,7 @@
     "AR-1230"
   ],
   "id": "AR-1228",
-  "next_action": "PR #177 exact head 0a5927c includes std-only polled connect/write, authenticated Gemini/Ollama wire fixtures, and malformed/redirect/oversized authenticated response fixtures. Await exact-head CI and independent review; then address any reported mid-I/O gaps before merge.",
+  "next_action": "PR #177 exact head 2d716c8 includes std-only polled connect/write, authenticated Gemini/Ollama wire fixtures, and stabilized malformed/redirect/oversized response fixtures. Await exact-head CI and independent review; investigate any architecture-runner failures.",
   "observed_branch": "feature/ar-1228-auth-backends-probes",
   "observed_dirty": 0,
   "observed_head": "2d716c8cac9474d5aafbd3dd399dc1641ec0eb85",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 242,
+  "task_revision": 243,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T21:30:24+00:00",
+  "updated_at": "2026-09-15T21:31:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
@@ -687,3 +687,7 @@ integration rather than renderer or frontend behavior.
   48ebab3bb5e4bd42c46cad07dcc55d37b4aefca315508cfb17e67a0025be5412.
 
 - 2026-09-15T21:30:24+00:00: Heartbeat by asb_ar1228_transport_repair.
+
+- 2026-09-15T21:31:06+00:00: Signed+DCO 2d716c8 pushed to PR #177. Focused provider_probe tests: 12
+  passed after fixing AArch64 fixture race by bounded request-header read and orderly shutdown;
+  prior exit-101 classified as server closing before client response read.

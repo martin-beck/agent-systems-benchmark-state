@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1228](tasks/AR-1228-provider-auth-backends-probes.md): Qualify provider authentication backends and probes | Qualify provider authentication backends, probes and application integration. | PR #177 exact head 0a5927c includes std-only polled connect/write, authenticated Gemini/Ollama wire fixtures, and malformed/redirect/oversized authenticated response fixtures. Await exact-head CI and independent review; then address any reported mid-I/O gaps before merge. | asb_ar1228_transport_repair |
+| P0 | [AR-1228](tasks/AR-1228-provider-auth-backends-probes.md): Qualify provider authentication backends and probes | Qualify provider authentication backends, probes and application integration. | PR #177 exact head 2d716c8 includes std-only polled connect/write, authenticated Gemini/Ollama wire fixtures, and stabilized malformed/redirect/oversized response fixtures. Await exact-head CI and independent review; investigate any architecture-runner failures. | asb_ar1228_transport_repair |
 
 ## Open
 
