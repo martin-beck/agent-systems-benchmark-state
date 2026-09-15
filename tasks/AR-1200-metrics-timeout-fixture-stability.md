@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remove hosted timing flakiness from the bounded kernel diagnostic rejection test.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Kernel diagnostic rejection fixture stability",
-  "updated_at": "2026-09-15T09:29:16+00:00",
+  "updated_at": "2026-09-15T09:31:27+00:00",
   "worktree_key": "agent-systems-benchmark-metrics-timeout-flake"
 }
 ---
@@ -28,3 +28,11 @@ failure classification, output bounds, staging verification, and cleanup remain 
 
 
 - 2026-09-15T09:29:16+00:00: Claimed by root-ar1200-metrics.
+
+- 2026-09-15T09:31:27+00:00: Separate PR #175 published from signed branch
+  repair/metrics-timeout-flake at exact head 0a7f6a192af9b6a538c7547dfff9e65842d59049. The candidate
+  keeps production timeout behavior unchanged and replaces only the flaky test-binary rejection
+  subprocess with a pinned fixture. Pre-fix focused test passed 30 local repetitions but failed
+  hosted PR #174 run 34951783425 with TimedOut instead of ProbeRejected; fixed candidate passed 30
+  focused repetitions, full asb-metrics unit tests (16 passed, 4 ignored), fmt, clippy -D warnings,
+  and diff check. Await exact-head PR #175 CI and independent review; do not merge PR #174 here.
