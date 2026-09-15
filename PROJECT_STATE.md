@@ -25,7 +25,7 @@ Generated from local Git and GitHub. Do not edit.
 | #151 | `dependabot/cargo/serde-1.0.229@9c87e23d6d29` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #176 | `feature/ar-1120@d9253f2187a6` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(auth): add credential enrollment lifecycle |
-| #177 | `feature/ar-1228-auth-backends-probes@22b3572a448b` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(auth): bind concrete credential resolvers |
+| #177 | `feature/ar-1228-auth-backends-probes@22b3572a448b` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(auth): bind concrete credential resolvers |
 
 ## Recent workflows
 
@@ -36,7 +36,7 @@ Generated from local Git and GitHub. Do not edit.
 | 35006759371 | `22b3572a448b` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 35006759355 | `22b3572a448b` | pull_request | Hosted portability and native qualification | completed:success |
 | 35006759346 | `22b3572a448b` | pull_request | Formal assurance | completed:success |
-| 35006759326 | `22b3572a448b` | pull_request | Rust verification | in_progress:- |
+| 35006759326 | `22b3572a448b` | pull_request | Rust verification | completed:success |
 | 35006759315 | `22b3572a448b` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35006759312 | `22b3572a448b` | pull_request | Fault assurance | completed:success |
 | 35006345948 | `98733fc1a914` | pull_request | Repository quality | completed:cancelled |
