@@ -2,7 +2,7 @@
 {
   "branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-15T17:47:34+00:00",
+  "claim_expires": "2026-09-15T17:50:56+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 308,
+  "task_revision": 309,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-15T15:50:54+00:00",
+  "updated_at": "2026-09-15T15:50:56+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1141,3 +1141,5 @@ classified.
   passed/1 failed; cancellation_leaves_no_runnable_owned_descendant timed out at mini_swe.rs:2158
   while awaiting the helper children.pids readiness file. Prior proc-fd spelling repair passed root
   creation but did not make shell-helper publication deterministic under emulation. No merge.
+
+- 2026-09-15T15:50:56+00:00: Heartbeat by asb_ar0909_lifecycle_repair.
