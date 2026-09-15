@@ -12,17 +12,17 @@
   "id": "AR-1228",
   "next_action": "PR #177 exact head 0a5927c includes std-only polled connect/write, authenticated Gemini/Ollama wire fixtures, and malformed/redirect/oversized authenticated response fixtures. Await exact-head CI and independent review; then address any reported mid-I/O gaps before merge.",
   "observed_branch": "feature/ar-1228-auth-backends-probes",
-  "observed_dirty": 1,
-  "observed_head": "0a5927c6219ea1d5c98919e00f1bc40d062f3051",
+  "observed_dirty": 0,
+  "observed_head": "2d716c8cac9474d5aafbd3dd399dc1641ec0eb85",
   "owner": "asb_ar1228_transport_repair",
   "plan": "../plans/AR-1228.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 239,
+  "task_revision": 240,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T21:29:52+00:00",
+  "updated_at": "2026-09-15T21:29:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
