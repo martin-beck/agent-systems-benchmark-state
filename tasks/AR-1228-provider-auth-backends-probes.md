@@ -3,18 +3,22 @@
   "branch": "feature/ar-1228-auth-backends-probes",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-0319", "AR-0320", "AR-1100"],
+  "depends_on": [
+    "AR-0319",
+    "AR-0320",
+    "AR-1100"
+  ],
   "id": "AR-1228",
   "next_action": "Promote after dependencies are independently complete; implement concrete qualified secret backends, provider probes and durable CLI/control/config integration for AR-1120.",
   "owner": "",
   "plan": "../plans/AR-1228.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T18:10:00+00:00",
+  "updated_at": "2026-09-15T18:10:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
@@ -27,3 +31,7 @@ integration rather than renderer or frontend behavior.
   injected `SecretBackend` seam has no qualified concrete backend, provider-specific bounded probe,
   or CLI/control/config durable integration. Existing resolver primitives must be bound without
   weakening their privacy boundary.
+
+- 2026-09-15T18:10:37+00:00: Dependencies AR-0319, AR-0320 and AR-1100 are complete; begin concrete
+  qualified auth backend, bounded provider probe and durable CLI/control/config integration required
+  by blocked AR-1120.
