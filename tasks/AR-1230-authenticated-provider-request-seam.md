@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1230-authenticated-provider-request-seam",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-15T21:35:10+00:00",
+  "claim_expires": "2026-09-15T21:39:09+00:00",
   "depends_on": [
     "AR-0319",
     "AR-0320",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 124,
+  "task_revision": 125,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T19:36:35+00:00",
+  "updated_at": "2026-09-15T19:39:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
@@ -358,3 +358,5 @@ integration.
   endpoint/generation/timeout/response fields now fail closed with schema-instance error; timeout
   and response maxima are enforced; added negative representative cases. Focused
   authenticated_request tests: 4 passed; fmt and clippy passed; pushed PR #178.
+
+- 2026-09-15T19:39:09+00:00: Heartbeat by asb_ar1230_auth_request_seam.
