@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1230-authenticated-provider-request-seam",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-15T20:43:39+00:00",
+  "claim_expires": "2026-09-15T20:47:16+00:00",
   "depends_on": [
     "AR-0319",
     "AR-0320",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T18:43:39+00:00",
+  "updated_at": "2026-09-15T18:47:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
@@ -44,3 +44,5 @@ integration.
   e95aa81c9bca865107c5e1bb46effcb4a6f91d4a8e4c8c04b85dccbe373d0147.
 
 - 2026-09-15T18:43:39+00:00: Heartbeat by asb_ar1230_auth_request_seam.
+
+- 2026-09-15T18:47:16+00:00: Heartbeat by asb_ar1230_auth_request_seam.
