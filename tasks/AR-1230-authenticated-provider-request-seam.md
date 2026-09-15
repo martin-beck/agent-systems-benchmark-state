@@ -11,17 +11,17 @@
   "id": "AR-1230",
   "next_action": "PR #178 exact head d4a102f requires independent re-review and CI. Verify endpoint-bound injection, cancellation, explicit provider policies and failure handling; then coordinate AR-1228 rebinding and full gates.",
   "observed_branch": "feature/ar-1230-authenticated-provider-request-seam",
-  "observed_dirty": 1,
-  "observed_head": "d4a102f535c08af7935dece8ea58c5aba6a63217",
+  "observed_dirty": 0,
+  "observed_head": "2a74205ce8a090e35bae688d32e33f1650e91f82",
   "owner": "asb_ar1230_auth_request_seam",
   "plan": "../plans/AR-1230.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T19:03:45+00:00",
+  "updated_at": "2026-09-15T19:03:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
