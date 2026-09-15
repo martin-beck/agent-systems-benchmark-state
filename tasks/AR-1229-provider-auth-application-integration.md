@@ -10,17 +10,17 @@
   "id": "AR-1229",
   "next_action": "Implement remaining AR-1229 review blockers on 35b8c2d: AuthRevoke mutation idempotency schema, bounded CLI control-service dispatch, and lifecycle restart/partial-failure tests; then rerun focused/full gates and update PR #179.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
-  "observed_dirty": 4,
-  "observed_head": "35b8c2d5ef6ec9efb112920bbd2bb87082cab42b",
+  "observed_dirty": 0,
+  "observed_head": "e91dd89fc985075fc8ff78a1c0358abea914a7c2",
   "owner": "asb_ar1229_auth_application",
   "plan": "../plans/AR-1229.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 188,
+  "task_revision": 189,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:52:33+00:00",
+  "updated_at": "2026-09-15T22:52:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
