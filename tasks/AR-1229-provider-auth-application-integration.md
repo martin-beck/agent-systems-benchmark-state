@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 161,
+  "task_revision": 162,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:39:56+00:00",
+  "updated_at": "2026-09-15T22:43:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -440,3 +440,6 @@ public state or weaken the existing resolver and authenticated-control boundarie
 - 2026-09-15T22:39:56+00:00: Exact signed-DCO head 8771b9b78402b889898af30b8edf49b0cdf2c472 pushed
   after restoring v1-v1.5 schema byte identity to efe741a and retaining only additive v1.6
   artifacts. PR #179 checks restarted; no merge requested yet.
+
+- 2026-09-15T22:43:35+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
