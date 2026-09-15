@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Await exact-head CI for f4a8c5d; inspect AArch64 and all required checks, then independently review and merge only if all green.",
+  "next_action": "Restore shell wrapper workspace position to $5; rerun focused and exact-head CI, inspect all checks.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "f4a8c5d0847b82784759a045ef68c5df6b4003d0",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 360,
+  "task_revision": 361,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-15T16:57:11+00:00",
+  "updated_at": "2026-09-15T16:57:19+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1290,3 +1290,8 @@ classified.
 - 2026-09-15T16:51:49+00:00: Heartbeat by asb_ar0909_lifecycle_repair.
 
 - 2026-09-15T16:57:11+00:00: Heartbeat by asb_ar0909_lifecycle_repair.
+
+- 2026-09-15T16:57:19+00:00: Coordinator review confirms #!/bin/sh receives $1=-P, $2=-S, $3=-c,
+  $4=DRIVER, $5=workspace. The f4a8 conditional $1 logic is unnecessary and must be removed; restore
+  direct $5 publication. Current PR head f4a8c5d and its exact-head run remain unmergeable pending
+  this correction; no stale head evidence is being used.
