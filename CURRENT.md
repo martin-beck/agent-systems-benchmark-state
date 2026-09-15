@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1229](tasks/AR-1229-provider-auth-application-integration.md): Provider authentication application integration | Integrate provider authentication into ASB config, control and CLI surfaces. | PR #179 exact head c705dfe is open. Obtain independent exact-head review, wait for all required CI green, then merge only from exact clean head and perform post-merge verification. | asb_ar1229_cli_admission |
+| P0 | [AR-1229](tasks/AR-1229-provider-auth-application-integration.md): Provider authentication application integration | Integrate provider authentication into ASB config, control and CLI surfaces. | Resolve PR #179 policy failure by introducing the next additive control protocol/schema version for auth methods; preserve frozen v1-v1.5 schemas and update generator, conformance fixtures, contract catalog and docs. Then regenerate, rerun full gates, and force-push only with reviewed exact head. | asb_ar1229_cli_admission |
 
 ## Open
 

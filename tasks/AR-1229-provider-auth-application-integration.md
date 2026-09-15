@@ -8,7 +8,7 @@
     "AR-1230"
   ],
   "id": "AR-1229",
-  "next_action": "PR #179 exact head c705dfe is open. Obtain independent exact-head review, wait for all required CI green, then merge only from exact clean head and perform post-merge verification.",
+  "next_action": "Resolve PR #179 policy failure by introducing the next additive control protocol/schema version for auth methods; preserve frozen v1-v1.5 schemas and update generator, conformance fixtures, contract catalog and docs. Then regenerate, rerun full gates, and force-push only with reviewed exact head.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
   "observed_dirty": 0,
   "observed_head": "c705dfe9a513c18a5c7b76ebe820e1f67348418d",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 105,
+  "task_revision": 106,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:13:55+00:00",
+  "updated_at": "2026-09-15T22:16:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -294,3 +294,8 @@ public state or weaken the existing resolver and authenticated-control boundarie
   tests passed; pinned external tests appropriately ignored), schema_conformance 4/4,
   workflow_transcript 3/3. PR #179 opened from clean signed exact head c705dfe after refreshing
   generated provenance.
+
+- 2026-09-15T22:16:09+00:00: PR #179 exact head c705dfe policy/coverage/supply-chain failed. gh log
+  run 35029861526 reports contract_consistency: in-place v1 schema change
+  crates/asb-control/schema/v1/request.schema.json. This is a legitimate versioning blocker, not
+  infrastructure; do not weaken the native schema gate or merge. Other checks remain pending/green.
