@@ -8,7 +8,7 @@
     "AR-1230"
   ],
   "id": "AR-1229",
-  "next_action": "Obtain independent exact-head review of PR #179 at b33d6da; if approved and all required checks remain green, perform documented merge transition, then post-merge verification and durable AR closure evidence.",
+  "next_action": "AR complete: merged PR #179 at 2f96f211; retain post-merge verification and release evidence in durable history.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
   "observed_dirty": 0,
   "observed_head": "b33d6da59ba9551f7f4c9a2c2b6dd2b6a959bc6e",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 253,
+  "task_revision": 254,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T23:17:35+00:00",
+  "updated_at": "2026-09-15T23:17:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -676,3 +676,9 @@ public state or weaken the existing resolver and authenticated-control boundarie
 
 - 2026-09-15T23:17:35+00:00: Recorded command exit 0; command argv SHA-256
   681994a9b7b368ece8b133aae9b6f6ac982dd6a4869c3ca5fb59dcb9ad68604a.
+
+- 2026-09-15T23:17:53+00:00: Post-merge verification complete: origin/main fetched at merge commit
+  2f96f21154414871c2de8542c242729b17ede941; feature head b33d6da and origin/main have identical tree
+  7cd295eabe6c6d2da8adaf8226e5ff1a311e0008. Focused schema conformance passed 4/4, auth
+  restart/idempotent revoke passed 1/1, and full offline workspace cargo test completed exit 0.
+  Worktree clean.
