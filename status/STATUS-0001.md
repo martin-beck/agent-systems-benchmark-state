@@ -1347,7 +1347,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md): Authenticated provider-request seam and secret injection contract | asb_ar1230_auth_request_seam | Define the approved bounded provider authentication request and secret-injection seam. | PR #178 exact head e85c23d requires independent re-review and CI rerun. HeaderSink now has transactional rollback on injection failure, and PartialSink proves durable byte state is cleared without retaining secrets. Current-generation callback redesign remains the next seam review item; delegated transport/application gates remain AR-1228/AR-1229. |
+| P0 | [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md): Authenticated provider-request seam and secret injection contract | asb_ar1230_auth_request_seam | Define the approved bounded provider authentication request and secret-injection seam. | PR #178 exact head 3d0349a requires independent re-review and CI rerun. inject now polls a current-generation callback before and after sink; synchronized AtomicU64 transition test proves concurrent rotation fails closed. Rollback/privacy tests remain green; delegated transport/application gates remain AR-1228/AR-1229. |
 
 ### Open (13)
 

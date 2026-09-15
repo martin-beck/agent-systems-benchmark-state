@@ -9,7 +9,7 @@
     "AR-1100"
   ],
   "id": "AR-1230",
-  "next_action": "PR #178 exact head e85c23d requires independent re-review and CI rerun. HeaderSink now has transactional rollback on injection failure, and PartialSink proves durable byte state is cleared without retaining secrets. Current-generation callback redesign remains the next seam review item; delegated transport/application gates remain AR-1228/AR-1229.",
+  "next_action": "PR #178 exact head 3d0349a requires independent re-review and CI rerun. inject now polls a current-generation callback before and after sink; synchronized AtomicU64 transition test proves concurrent rotation fails closed. Rollback/privacy tests remain green; delegated transport/application gates remain AR-1228/AR-1229.",
   "observed_branch": "feature/ar-1230-authenticated-provider-request-seam",
   "observed_dirty": 0,
   "observed_head": "3d0349af1a56396e6b42226dbec79b3a5da3628c",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 199,
+  "task_revision": 200,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T20:12:17+00:00",
+  "updated_at": "2026-09-15T20:12:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
@@ -542,3 +542,8 @@ integration.
 
 - 2026-09-15T20:12:17+00:00: Recorded command exit 0; command argv SHA-256
   987e0d9ac4e88d83cd62975832c181c3c798255f62859a22c4f44552b8cfc960.
+
+- 2026-09-15T20:12:46+00:00: Signed+DCO 3d0349a changes inject to current-generation callback (no
+  snapshot), adds synchronized GenerationSink that changes generation during sink, and retains
+  rollback-safe privacy fixture. Focused authenticated_request tests: 6 passed; clippy -D warnings
+  passed; branch pushed to PR #178.
