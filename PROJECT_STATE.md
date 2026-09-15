@@ -20,9 +20,9 @@ Generated from local Git and GitHub. Do not edit.
 | #146 | `dependabot/github_actions/taiki-e/install-action-2.87.7@51db8d79ad9f` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.7 |
 | #147 | `dependabot/cargo/sha2-0.11.0@29e425b86217` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE | chore(deps): bump sha2 from 0.10.9 to 0.11.0 |
 | #148 | `dependabot/github_actions/actions/upload-artifact-7.0.1@7d45f4cadff2` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump actions/upload-artifact from 4.6.2 to 7.0.1 |
-| #149 | `dependabot/cargo/url-2.5.8@f7edfbbd0e98` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump url from 2.5.7 to 2.5.8 |
+| #149 | `dependabot/cargo/url-2.5.8@b41476d1358f` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:FAILURE, IN_PROGRESS: | chore(deps): bump url from 2.5.7 to 2.5.8 |
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
-| #151 | `dependabot/cargo/serde-1.0.229@9c87e23d6d29` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
+| #151 | `dependabot/cargo/serde-1.0.229@4cf44ffb2fba` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:FAILURE, IN_PROGRESS: | chore(deps): bump serde from 1.0.219 to 1.0.229 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #176 | `feature/ar-1120@d9253f2187a6` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(auth): add credential enrollment lifecycle |
 | #177 | `feature/ar-1228-auth-backends-probes@d6e1c4e810a6` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(auth): bind concrete credential resolvers |
@@ -31,15 +31,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35019587040 | `3989cb7a2066` | dynamic | Dependabot Updates | in_progress:- |
-| 35019586633 | `3989cb7a2066` | dynamic | Dependabot Updates | in_progress:- |
-| 35019473960 | `3989cb7a2066` | push | Emulated aarch64 portability | in_progress:- |
-| 35019473954 | `3989cb7a2066` | push | Hosted portability and native qualification | completed:success |
-| 35019473825 | `3989cb7a2066` | push | Fault assurance | in_progress:- |
-| 35019473741 | `3989cb7a2066` | push | Rust verification | in_progress:- |
-| 35019473724 | `3989cb7a2066` | push | Formal assurance | in_progress:- |
-| 35019473683 | `3989cb7a2066` | push | Huawei MIT source headers | completed:success |
-| 35019473668 | `3989cb7a2066` | push | Repository quality | completed:failure |
-| 35018198462 | `3d0349af1a56` | pull_request | Hosted portability and native qualification | completed:success |
-| 35018198430 | `3d0349af1a56` | pull_request | Fault assurance | completed:success |
-| 35018198364 | `3d0349af1a56` | pull_request | Repository quality | completed:success |
+| 35019684215 | `b41476d1358f` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 35019684183 | `b41476d1358f` | pull_request | Rust verification | in_progress:- |
+| 35019684153 | `b41476d1358f` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35019684058 | `b41476d1358f` | pull_request | Huawei MIT source headers | completed:success |
+| 35019684028 | `b41476d1358f` | pull_request | Repository quality | completed:failure |
+| 35019684000 | `b41476d1358f` | pull_request | Fault assurance | in_progress:- |
+| 35019683997 | `b41476d1358f` | pull_request | Formal assurance | in_progress:- |
+| 35019683977 | `b41476d1358f` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 35019682148 | `4cf44ffb2fba` | pull_request | Huawei MIT source headers | completed:success |
+| 35019682087 | `4cf44ffb2fba` | pull_request | Rust verification | in_progress:- |
+| 35019682071 | `4cf44ffb2fba` | pull_request | Repository quality | completed:failure |
+| 35019682046 | `4cf44ffb2fba` | pull_request | Agent Workflow Quality shadow | completed:success |
