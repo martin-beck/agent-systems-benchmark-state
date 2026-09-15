@@ -8,7 +8,7 @@
     "AR-1230"
   ],
   "id": "AR-1229",
-  "next_action": "Run full applicable local gates on 8acad23, inspect PR #179 exact-head CI terminal results, then request independent review; merge remains prohibited until all required checks/review are green.",
+  "next_action": "Run full workspace gates on 0a5ddb1, including repeated auth restart/recovery coverage; inspect PR #179 exact-head CI terminal results, then request independent review.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
   "observed_dirty": 0,
   "observed_head": "0a5ddb1c9895dfb3d4aabaf0c044eeba724f9c10",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 222,
+  "task_revision": 223,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T23:03:50+00:00",
+  "updated_at": "2026-09-15T23:04:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -592,3 +592,8 @@ public state or weaken the existing resolver and authenticated-control boundarie
 
 - 2026-09-15T23:03:50+00:00: Recorded command exit 0; command argv SHA-256
   422de929f35a13a7206d8a95352061502a93f1785f7694e5184458196cd08b15.
+
+- 2026-09-15T23:04:15+00:00: Full workspace test exposed flaky auth restart test: flock release was
+  not immediately observable after backend drop. Added bounded retry (2s) before declaring restart
+  failure. Focused auth lifecycle test now passes 1/1. Signed-DCO product commit 0a5ddb1 pushed;
+  worktree clean. Full workspace gate must be rerun at this new exact head.
