@@ -10,7 +10,7 @@
   "id": "AR-1229",
   "next_action": "Run dedicated auth CLI positive/negative/privacy tests and full documented gates; then create PR from exact signed head 1594e09. Existing schema_conformance remains the canonical generated-schema CI gate; do not duplicate it.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "1594e0943d5d92b3fdd70c44f4142dfc8a1dec63",
   "owner": "asb_ar1229_cli_admission",
   "plan": "../plans/AR-1229.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:08:54+00:00",
+  "updated_at": "2026-09-15T22:09:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
