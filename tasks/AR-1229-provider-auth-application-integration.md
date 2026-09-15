@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 92,
+  "task_revision": 93,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:09:52+00:00",
+  "updated_at": "2026-09-15T22:10:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -258,3 +258,6 @@ public state or weaken the existing resolver and authenticated-control boundarie
   contains no secret material; rotate missing options fail closed with bounded structured error.
   cargo test -p asb-cli --lib --offline: 65 passed. Signed DCO commit 264cd4d pushed; worktree
   clean.
+
+- 2026-09-15T22:10:24+00:00: Recorded command exit 0; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
