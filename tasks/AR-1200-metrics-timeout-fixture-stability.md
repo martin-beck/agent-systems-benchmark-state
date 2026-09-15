@@ -2,19 +2,19 @@
 {
   "branch": "repair/metrics-timeout-flake",
   "checkpoint_commit": "0a7f6a192af9b6a538c7547dfff9e65842d59049",
-  "claim_expires": "",
+  "claim_expires": "2026-09-15T12:25:27+00:00",
   "depends_on": [],
   "id": "AR-1200",
   "next_action": "Review and merge the isolated test-fixture stabilization after exact-head CI passes; do not modify production timeout policy.",
-  "owner": "",
+  "owner": "root-ar1200-closeout",
   "plan": "../plans/AR-1200.md",
   "priority": "P2",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Remove hosted timing flakiness from the bounded kernel diagnostic rejection test.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Kernel diagnostic rejection fixture stability",
-  "updated_at": "2026-09-15T11:55:24+00:00",
+  "updated_at": "2026-09-15T11:55:27+00:00",
   "worktree_key": "agent-systems-benchmark-metrics-timeout-flake"
 }
 ---
@@ -54,3 +54,5 @@ failure classification, output bounds, staging verification, and cleanup remain 
 
 - 2026-09-15T11:55:24+00:00: Recovered expired claim formerly owned by root-ar1200-metrics. Recover
   expired metrics-fixture claim before recording merged PR #175 assurance.
+
+- 2026-09-15T11:55:27+00:00: Claimed by root-ar1200-closeout.
