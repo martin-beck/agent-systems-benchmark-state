@@ -9,7 +9,7 @@
     "AR-1100"
   ],
   "id": "AR-1230",
-  "next_action": "PR #178 exact head 1f49831 requires independent re-review and CI. Seam schema/docs and unknown-field negative test now present; verify exact-head gates, then hand off to AR-1228 transport and AR-1229 application integration.",
+  "next_action": "PR #178 exact head c5b3933 requires independent re-review and CI rerun. Absolute deadline and conditional schema are now seam-owned and tested; verify gates, then hand off to AR-1228 transport and AR-1229 application integration.",
   "observed_branch": "feature/ar-1230-authenticated-provider-request-seam",
   "observed_dirty": 0,
   "observed_head": "c5b3933ef34f049a1530d580807d697c5598fa6e",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T19:18:35+00:00",
+  "updated_at": "2026-09-15T19:19:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
@@ -218,3 +218,9 @@ integration.
 
 - 2026-09-15T19:18:35+00:00: Recorded command exit 0; command argv SHA-256
   987e0d9ac4e88d83cd62975832c181c3c798255f62859a22c4f44552b8cfc960.
+
+- 2026-09-15T19:19:06+00:00: Signed+DCO c5b3933 adds absolute deadline_ms validation/enforcement,
+  updates schema required fields and provider/policy conditionals, and parses the committed schema
+  in the unknown-field test. Focused authenticated_request tests: 3 passed; fmt/clippy passed. Prior
+  Loom/state CI failure was classified by coordinator as shared transient ETXTBSY in
+  formal/tests/tla_artifact_acquisition.rs; PR code was untouched and CI must rerun.
