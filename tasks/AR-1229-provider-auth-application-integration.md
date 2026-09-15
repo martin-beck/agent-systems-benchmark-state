@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1229-auth-application-integration",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-15T23:49:08+00:00",
+  "claim_expires": "2026-09-16T00:00:02+00:00",
   "depends_on": [
     "AR-1228",
     "AR-1230"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T21:59:16+00:00",
+  "updated_at": "2026-09-15T22:00:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -164,3 +164,5 @@ public state or weaken the existing resolver and authenticated-control boundarie
   and validated auth mutation targets. Signed DCO commit 1f806b9 pushed. Auth backend now persists
   credential-free records in catalog and fail-closes unknown providers; cargo check -p asb-cli
   --offline passes. CLI dispatch and behavioral tests remain outstanding.
+
+- 2026-09-15T22:00:02+00:00: Heartbeat by asb_ar1229_cli_admission.
