@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1229](tasks/AR-1229-provider-auth-application-integration.md): Provider authentication application integration | Integrate provider authentication into ASB config, control and CLI surfaces. | Run full workspace gates on 0a5ddb1, including repeated auth restart/recovery coverage; inspect PR #179 exact-head CI terminal results, then request independent review. | asb_ar1229_auth_application |
+| P0 | [AR-1229](tasks/AR-1229-provider-auth-application-integration.md): Provider authentication application integration | Integrate provider authentication into ASB config, control and CLI surfaces. | Rerun full workspace gates on b33d6da after regenerated v1.6 AuthRevoke schema; inspect PR #179 exact-head checks and request independent review only when terminal green. | asb_ar1229_auth_application |
 
 ## Open
 

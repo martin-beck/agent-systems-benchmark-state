@@ -8,7 +8,7 @@
     "AR-1230"
   ],
   "id": "AR-1229",
-  "next_action": "Run full workspace gates on 0a5ddb1, including repeated auth restart/recovery coverage; inspect PR #179 exact-head CI terminal results, then request independent review.",
+  "next_action": "Rerun full workspace gates on b33d6da after regenerated v1.6 AuthRevoke schema; inspect PR #179 exact-head checks and request independent review only when terminal green.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
   "observed_dirty": 0,
   "observed_head": "b33d6da59ba9551f7f4c9a2c2b6dd2b6a959bc6e",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 240,
+  "task_revision": 241,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T23:07:59+00:00",
+  "updated_at": "2026-09-15T23:08:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -635,3 +635,8 @@ public state or weaken the existing resolver and authenticated-control boundarie
 
 - 2026-09-15T23:07:59+00:00: Recorded command exit 0; command argv SHA-256
   422de929f35a13a7206d8a95352061502a93f1785f7694e5184458196cd08b15.
+
+- 2026-09-15T23:08:28+00:00: Policy review identified stale v1.6 request schema after
+  AuthRevokeParams gained required idempotency_key. Regenerated all versioned schemas with
+  generate-control-schema; only v1.6 request artifact changed. schema_conformance passed 4/4 and
+  diff check passed. Signed-DCO product commit b33d6da pushed; worktree clean.
