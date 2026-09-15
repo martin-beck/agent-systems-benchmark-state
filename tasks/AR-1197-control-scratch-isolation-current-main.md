@@ -13,9 +13,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify concurrent ASB control scratch-root isolation on current repaired main.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Qualify current-main control scratch isolation",
-  "updated_at": "2026-09-15T10:19:41+00:00",
+  "updated_at": "2026-09-15T10:25:20+00:00",
   "worktree_key": "agent-systems-benchmark-control-scratch-isolation-current-main"
 }
 ---
@@ -69,3 +69,9 @@ with all 12 required checks terminal green. No merge or release is implied by th
   exact-head checks passed. Post-merge assurance runs 34957326922, 34957326967, 34957326944,
   34957327028, 34957326942, 34957326974, and 34957326917 are currently in progress; keep task
   in_progress until every run reaches a terminal result.
+
+- 2026-09-15T10:25:20+00:00: Post-merge assurance for 2117a40e2e27602c39aebee87581cf652628a534 is
+  now terminal-success for runs 34957326944 (Huawei headers), 34957326917 (hosted portability),
+  34957326922 (fault assurance), 34957326967 (formal assurance), 34957327028 (Rust verification),
+  and 34957326974 (repository quality). Emulated aarch64 run 34957326942 remains in progress; keep
+  task in_progress until it reaches a terminal conclusion.
