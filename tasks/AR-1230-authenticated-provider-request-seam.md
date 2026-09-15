@@ -9,7 +9,7 @@
     "AR-1100"
   ],
   "id": "AR-1230",
-  "next_action": "Independent review of PR branch at exact head 5869e73; verify authenticated seam API, privacy/wipe behavior and provider policy before requesting merge. Then coordinate AR-1228 rebinding and rerun full gates.",
+  "next_action": "Independent exact-head review and required CI for PR #178 at 5869e73141ad20a96eca56f609c9cb256fe00b9d. Resolve review findings before merge; then coordinate AR-1228 rebinding and full gates.",
   "observed_branch": "feature/ar-1230-authenticated-provider-request-seam",
   "observed_dirty": 0,
   "observed_head": "5869e73141ad20a96eca56f609c9cb256fe00b9d",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T18:53:34+00:00",
+  "updated_at": "2026-09-15T18:54:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
@@ -103,3 +103,8 @@ integration.
 
 - 2026-09-15T18:53:34+00:00: Recorded command exit 1; command argv SHA-256
   71dfaac7543cef9fb3f7b0cd58d8b68698acf268eeae2437c31b9dcab5de1a77.
+
+- 2026-09-15T18:54:06+00:00: PR #178 exists at
+  https://github.com/martin-beck/agent-systems-benchmark/pull/178 for exact head 5869e73. Draft
+  creation command reported the existing PR, so no duplicate was created. Review/CI are now the next
+  gates; branch remains clean and signed+DCO.
