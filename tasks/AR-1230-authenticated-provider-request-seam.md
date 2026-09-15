@@ -9,7 +9,7 @@
     "AR-1100"
   ],
   "id": "AR-1230",
-  "next_action": "PR #178 exact head 2a74205 requires independent re-review and CI. AR-1230 typed cancellation and provider policy seam is complete for its owned boundary; AR-1228 must supply absolute transport deadline/response and redirect tests, while AR-1229 supplies schema/application handoff tests before merge.",
+  "next_action": "PR #178 exact head 1f49831 requires independent re-review and CI. Seam schema/docs and unknown-field negative test now present; verify exact-head gates, then hand off to AR-1228 transport and AR-1229 application integration.",
   "observed_branch": "feature/ar-1230-authenticated-provider-request-seam",
   "observed_dirty": 0,
   "observed_head": "1f49831b291368bc01d6fba574bc0c0115a8224e",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T19:12:03+00:00",
+  "updated_at": "2026-09-15T19:12:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
@@ -192,3 +192,9 @@ integration.
 
 - 2026-09-15T19:12:03+00:00: Recorded command exit 0; command argv SHA-256
   987e0d9ac4e88d83cd62975832c181c3c798255f62859a22c4f44552b8cfc960.
+
+- 2026-09-15T19:12:35+00:00: Added versioned authenticated-request JSON schema with
+  additionalProperties false and public AUTHENTICATED_REQUEST.md documentation in signed+DCO commit
+  1f49831. Added unknown-field negative test; focused authenticated_request tests: 3 passed; fmt and
+  clippy -D warnings passed. Ownership plans corrected: AR-1228 transport only, AR-1229
+  config/control/CLI only, AR-1230 seam only. PR #178 pushed to 1f49831.

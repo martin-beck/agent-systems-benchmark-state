@@ -1347,7 +1347,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md): Authenticated provider-request seam and secret injection contract | asb_ar1230_auth_request_seam | Define the approved bounded provider authentication request and secret-injection seam. | PR #178 exact head 2a74205 requires independent re-review and CI. AR-1230 typed cancellation and provider policy seam is complete for its owned boundary; AR-1228 must supply absolute transport deadline/response and redirect tests, while AR-1229 supplies schema/application handoff tests before merge. |
+| P0 | [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md): Authenticated provider-request seam and secret injection contract | asb_ar1230_auth_request_seam | Define the approved bounded provider authentication request and secret-injection seam. | PR #178 exact head 1f49831 requires independent re-review and CI. Seam schema/docs and unknown-field negative test now present; verify exact-head gates, then hand off to AR-1228 transport and AR-1229 application integration. |
 
 ### Open (13)
 
