@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1230](tasks/AR-1230-authenticated-provider-request-seam.md): Authenticated provider-request seam and secret injection contract | Define the approved bounded provider authentication request and secret-injection seam. | PR #178 exact head ae5b1b2 requires independent re-review and CI rerun. AuthenticatedRequest/AuthProvider/AuthPolicy now serde-typed with deny-unknown-fields; committed schema is validated by jsonschema 0.33 and typed JSON parse parity tests. Delegated transport/application gates remain AR-1228/AR-1229. | asb_ar1230_auth_request_seam |
+| P0 | [AR-1230](tasks/AR-1230-authenticated-provider-request-seam.md): Authenticated provider-request seam and secret injection contract | Define the approved bounded provider authentication request and secret-injection seam. | PR #178 exact head fc71739 requires independent re-review and CI rerun. Added seam-local cancellation-before/after-sink, partial failure, and generation-race tests; focused tests now 6 passed. Delegated transport/application gates remain AR-1228/AR-1229. | asb_ar1230_auth_request_seam |
 
 ## Open
 
