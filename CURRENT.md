@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1229](tasks/AR-1229-provider-auth-application-integration.md): Provider authentication application integration | Integrate provider authentication into ASB config, control and CLI surfaces. | Run full applicable ASB gates and create PR from exact signed head 264cd4d; then independent review, exact-head CI, merge and post-merge verification. Existing schema_conformance is canonical generated-schema gate. | asb_ar1229_cli_admission |
+| P0 | [AR-1229](tasks/AR-1229-provider-auth-application-integration.md): Provider authentication application integration | Integrate provider authentication into ASB config, control and CLI surfaces. | PR #179 exact head c705dfe is open. Obtain independent exact-head review, wait for all required CI green, then merge only from exact clean head and perform post-merge verification. | asb_ar1229_cli_admission |
 
 ## Open
 

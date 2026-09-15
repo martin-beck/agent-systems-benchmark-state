@@ -8,7 +8,7 @@
     "AR-1230"
   ],
   "id": "AR-1229",
-  "next_action": "Run full applicable ASB gates and create PR from exact signed head 264cd4d; then independent review, exact-head CI, merge and post-merge verification. Existing schema_conformance is canonical generated-schema gate.",
+  "next_action": "PR #179 exact head c705dfe is open. Obtain independent exact-head review, wait for all required CI green, then merge only from exact clean head and perform post-merge verification.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
   "observed_dirty": 0,
   "observed_head": "c705dfe9a513c18a5c7b76ebe820e1f67348418d",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 104,
+  "task_revision": 105,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:13:30+00:00",
+  "updated_at": "2026-09-15T22:13:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -288,3 +288,9 @@ public state or weaken the existing resolver and authenticated-control boundarie
 
 - 2026-09-15T22:13:30+00:00: Recorded command exit 0; command argv SHA-256
   2be198979c84ebfc842badfbf600c9d8209f3af4080abd3f9a4865cafab0870b.
+
+- 2026-09-15T22:13:55+00:00: Full applicable gates passed: cargo fmt --all -- --check, cargo clippy
+  --workspace --all-targets --offline -D warnings, cargo test --workspace --offline --quiet (all
+  tests passed; pinned external tests appropriately ignored), schema_conformance 4/4,
+  workflow_transcript 3/3. PR #179 opened from clean signed exact head c705dfe after refreshing
+  generated provenance.
