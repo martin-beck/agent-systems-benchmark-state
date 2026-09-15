@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1229](tasks/AR-1229-provider-auth-application-integration.md): Provider authentication application integration | Integrate provider authentication into ASB config, control and CLI surfaces. | Add bounded asb auth CLI dispatch and its protocol/control integration tests; durable RunnerBackend registry now persists credential-free enrollment, status, rotation generation, revocation and idempotent enroll/rotate. Current signed head 1f806b9. | asb_ar1229_cli_admission |
+| P0 | [AR-1229](tasks/AR-1229-provider-auth-application-integration.md): Provider authentication application integration | Integrate provider authentication into ASB config, control and CLI surfaces. | Implement bounded asb auth CLI dispatch and dedicated lifecycle behavior/privacy tests; current exact signed head 3521f72 includes durable backend and regenerated v1-v1.5 schemas. Do not create/merge PR until CLI acceptance and full gates pass. | asb_ar1229_cli_admission |
 
 ## Open
 

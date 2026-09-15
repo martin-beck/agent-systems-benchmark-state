@@ -8,7 +8,7 @@
     "AR-1230"
   ],
   "id": "AR-1229",
-  "next_action": "Add bounded asb auth CLI dispatch and its protocol/control integration tests; durable RunnerBackend registry now persists credential-free enrollment, status, rotation generation, revocation and idempotent enroll/rotate. Current signed head 1f806b9.",
+  "next_action": "Implement bounded asb auth CLI dispatch and dedicated lifecycle behavior/privacy tests; current exact signed head 3521f72 includes durable backend and regenerated v1-v1.5 schemas. Do not create/merge PR until CLI acceptance and full gates pass.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
   "observed_dirty": 0,
   "observed_head": "3521f7248a368810f55adb240960d01eda995600",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:04:50+00:00",
+  "updated_at": "2026-09-15T22:05:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -204,3 +204,8 @@ public state or weaken the existing resolver and authenticated-control boundarie
 
 - 2026-09-15T22:04:50+00:00: Recorded command exit 0; command argv SHA-256
   af49f1a2c12fe610e176334d1e1f0199956efc75923a96939ff24df4a977e040.
+
+- 2026-09-15T22:05:09+00:00: Full workspace failure was identified precisely as stale checked-in
+  control schemas: checked_in_schemas_equal_fresh_generation failed because auth methods were absent
+  from schema files. Regenerated via cargo run -p asb-control --example generate-control-schema;
+  schema_conformance now 4 passed. Signed DCO commit 3521f72 pushed. AR remains in_progress.
