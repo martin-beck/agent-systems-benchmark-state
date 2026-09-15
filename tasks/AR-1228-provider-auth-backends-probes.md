@@ -11,7 +11,7 @@
   "id": "AR-1228",
   "next_action": "PR #177 exact head 22b3572 has concrete resolver adapters and bounded provider classification. AR-1229 now owns durable config/registry and authenticated CLI/control enrollment; finish actual transport/provider fixtures here, then coordinate AR-1229 before terminal review.",
   "observed_branch": "feature/ar-1228-auth-backends-probes",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "22b3572a448bd8cc2c0e90bd403ca2ae1d2abbac",
   "owner": "asb_ar1228_auth_backends",
   "plan": "../plans/AR-1228.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T18:27:24+00:00",
+  "updated_at": "2026-09-15T18:27:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
