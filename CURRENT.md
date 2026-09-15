@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1190](tasks/AR-1190.md): Authenticated agent catalog control | Expose a verified, capability-aware local-agent catalog to asb-tui. | Resolve exact-head cross-repository schema compatibility with asb-tui AR-1195, then rerun all hosted assurance gates before merge. | root-ar1190-review |
+| P0 | [AR-1190](tasks/AR-1190.md): Authenticated agent catalog control | Expose a verified, capability-aware local-agent catalog to asb-tui. | Wait for exact-main post-merge assurance on 748c16ba67b9cff5a08558784dd183d020a1f2d4, then qualify ASB v1.4 fixtures against asb-tui PR #86. | root-ar1190-review |
 | P0 | [AR-1196](tasks/AR-1196-protected-main-dco-repair.md): Protected-main DCO history repair | Restore a Signed-off-by-bearing protected-main history after the catalog merge. | Repair the protected-main merge/DCO boundary without weakening policy, then rerun exact-main assurance. | asb_main_policy_repair |
 
 ## Open
