@@ -11,7 +11,7 @@
   "id": "AR-1230",
   "next_action": "PR #178 exact head 240f9f4 requires independent re-review and CI rerun. Partial-write fixture now records only byte count/status and never retains credential bytes; cancellation and generation-race tests remain green. Delegated transport/application gates remain AR-1228/AR-1229.",
   "observed_branch": "feature/ar-1230-authenticated-provider-request-seam",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "240f9f4e6f9e09ed21ab5667d6256ed9c0bd5957",
   "owner": "asb_ar1230_auth_request_seam",
   "plan": "../plans/AR-1230.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 182,
+  "task_revision": 183,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T20:07:55+00:00",
+  "updated_at": "2026-09-15T20:08:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
