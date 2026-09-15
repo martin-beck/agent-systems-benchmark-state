@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 243,
+  "task_revision": 244,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T21:31:06+00:00",
+  "updated_at": "2026-09-15T21:37:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
@@ -691,3 +691,6 @@ integration rather than renderer or frontend behavior.
 - 2026-09-15T21:31:06+00:00: Signed+DCO 2d716c8 pushed to PR #177. Focused provider_probe tests: 12
   passed after fixing AArch64 fixture race by bounded request-header read and orderly shutdown;
   prior exit-101 classified as server closing before client response read.
+
+- 2026-09-15T21:37:38+00:00: Recorded command exit 0; command argv SHA-256
+  59acd827c63efcf61e719a82c5c9ddaf6f95bd13e892174b35c76c30925ca285.
