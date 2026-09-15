@@ -13,9 +13,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify concurrent ASB control scratch-root isolation on current repaired main.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Qualify current-main control scratch isolation",
-  "updated_at": "2026-09-15T10:09:19+00:00",
+  "updated_at": "2026-09-15T10:09:21+00:00",
   "worktree_key": "agent-systems-benchmark-control-scratch-isolation-current-main"
 }
 ---
@@ -49,3 +49,11 @@ with all 12 required checks terminal green. No merge or release is implied by th
   change was made.
 
 - 2026-09-15T10:09:19+00:00: Claimed by root-pr173-rebase.
+
+- 2026-09-15T10:09:21+00:00: Current-main rebase audit completed in isolated worktree outside the
+  repository: origin/main ef82484fa78dd31c0d7b5ad48e2dc51a93ec1339 rebased PR #173 topic to
+  temporary head 75785c151fc193c2c79f629c6addcebe0a5c14af; ASB_TEST_ROOT=/tmp cargo test -p asb-cli
+  --lib --locked passed and git diff --check passed. Prior failure was only because the temporary
+  worktree lived under /tmp, making the default scratch root overlap the repository. Do not merge
+  the old remote head; guarded force-with-lease update and fresh exact-head CI/independent review
+  remain required.
