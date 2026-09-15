@@ -8,7 +8,7 @@
     "AR-1230"
   ],
   "id": "AR-1229",
-  "next_action": "Promote after AR-1228 and AR-1230 are complete; implement durable config registry and authenticated CLI/control enrollment integration, then requalify AR-1120.",
+  "next_action": "Implement control-state admission/authorization and bounded asb auth CLI dispatch for AuthEnroll/AuthStatus/AuthRotate/AuthRevoke; add protocol schema and negative/privacy tests, then create PR from exact signed head 1cce200.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
   "observed_dirty": 0,
   "observed_head": "1cce20076c1cd2c3ff2465ccb6ee2b87d31e6b4c",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T21:46:34+00:00",
+  "updated_at": "2026-09-15T21:47:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -77,3 +77,9 @@ public state or weaken the existing resolver and authenticated-control boundarie
 
 - 2026-09-15T21:46:34+00:00: Recorded command exit 0; command argv SHA-256
   9599102ffaa7296c7b9559c4ac6b11eac178a844a6b0f7026129b8fccd02c7e6.
+
+- 2026-09-15T21:47:05+00:00: Added renderer-neutral authenticated lifecycle control request variants
+  and deny-unknown-fields parameter structs for enroll/status/rotate/revoke, with stable JSON schema
+  derivation. cargo check --locked -p asb-control passes. Signed DCO product commit 1cce200 pushed
+  to feature/ar-1229-auth-application-integration. Config registry foundation remains in prior
+  signed commit 05a9374; no PR created until control/CLI behavior is implemented.
