@@ -16,9 +16,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T18:43:15+00:00",
+  "updated_at": "2026-09-15T18:43:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
@@ -36,3 +36,6 @@ integration.
   authenticated provider-request seam prerequisite.
 
 - 2026-09-15T18:43:15+00:00: Claimed by asb_ar1230_auth_request_seam.
+
+- 2026-09-15T18:43:29+00:00: Recorded command exit 0; command argv SHA-256
+  e95aa81c9bca865107c5e1bb46effcb4a6f91d4a8e4c8c04b85dccbe373d0147.
