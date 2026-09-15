@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1230-authenticated-provider-request-seam",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-15T20:57:38+00:00",
+  "claim_expires": "2026-09-15T21:02:44+00:00",
   "depends_on": [
     "AR-0319",
     "AR-0320",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T18:59:03+00:00",
+  "updated_at": "2026-09-15T19:02:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
@@ -134,3 +134,5 @@ integration.
   sink, supports explicit Ollama no-auth policy, and rejects unsupported provider/policy
   combinations. Added endpoint mismatch, stale/cancelled, empty credential and sink failure tests.
   Focused tests 2 passed; fmt and clippy -D warnings passed. Pushed PR #178 update.
+
+- 2026-09-15T19:02:44+00:00: Heartbeat by asb_ar1230_auth_request_seam.
