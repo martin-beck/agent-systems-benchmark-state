@@ -11,18 +11,18 @@
   ],
   "id": "AR-1228",
   "next_action": "Wait for AR-1230 to define the approved authenticated provider-request seam; then bind it to the bounded loopback transport at PR #177 exact head d6e1c4e and rerun full gates.",
-  "observed_branch": "DETACHED",
-  "observed_dirty": 2,
-  "observed_head": "3989cb7a2066e9f1e36c8989567289617e36ad35",
+  "observed_branch": "feature/ar-1228-auth-backends-probes",
+  "observed_dirty": 0,
+  "observed_head": "a41e01bec159bebe98508481d0d00947db177f6b",
   "owner": "asb_ar1228_auth_backends",
   "plan": "../plans/AR-1228.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T20:28:58+00:00",
+  "updated_at": "2026-09-15T20:29:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
