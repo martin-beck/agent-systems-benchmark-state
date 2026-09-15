@@ -2,7 +2,7 @@
 {
   "branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-15T17:45:09+00:00",
+  "claim_expires": "2026-09-15T17:47:34+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 306,
+  "task_revision": 307,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-15T15:45:09+00:00",
+  "updated_at": "2026-09-15T15:47:34+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1134,3 +1134,5 @@ classified.
   SSH-signed with matching DCO. Fresh exact-head CI is running; no merge yet.
 
 - 2026-09-15T15:45:09+00:00: Heartbeat by asb_ar0909_lifecycle_repair.
+
+- 2026-09-15T15:47:34+00:00: Heartbeat by asb_ar0909_lifecycle_repair.
