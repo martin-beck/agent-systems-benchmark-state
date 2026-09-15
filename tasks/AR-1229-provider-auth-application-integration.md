@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1229-auth-application-integration",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T00:27:25+00:00",
+  "claim_expires": "2026-09-15T23:20:02+00:00",
   "depends_on": [
     "AR-1228",
     "AR-1230"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 178,
+  "task_revision": 179,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:49:59+00:00",
+  "updated_at": "2026-09-15T22:50:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -484,3 +484,5 @@ public state or weaken the existing resolver and authenticated-control boundarie
   variants while v1.6 checked-in request/response schemas are asserted against fresh generation.
   Focused schema_conformance passed 4/4. Product commit 35b8c2d is SSH-signed with DCO and pushed;
   worktree clean.
+
+- 2026-09-15T22:50:02+00:00: Heartbeat by asb_ar1229_auth_application.
