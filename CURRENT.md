@@ -8,6 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1190](tasks/AR-1190.md): Authenticated agent catalog control | Expose a verified, capability-aware local-agent catalog to asb-tui. | Resolve exact-head cross-repository schema compatibility with asb-tui AR-1195, then rerun all hosted assurance gates before merge. | root-ar1190-review |
+| P0 | [AR-1196](tasks/AR-1196-protected-main-dco-repair.md): Protected-main DCO history repair | Restore a Signed-off-by-bearing protected-main history after the catalog merge. | Repair the protected-main merge/DCO boundary without weakening policy, then rerun exact-main assurance. | asb_main_policy_repair |
 
 ## Open
 
@@ -22,7 +23,6 @@ Never edit this file directly.
 | P0 | [AR-1042](tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. | - |
 | P0 | [AR-1044](tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. | - |
 | P0 | [AR-1181](tasks/AR-1181.md): TLA admission | Bound ASB TLC memory. | Implement bounded TLC admission. | - |
-| P0 | [AR-1196](tasks/AR-1196-protected-main-dco-repair.md): Protected-main DCO history repair | Restore a Signed-off-by-bearing protected-main history after the catalog merge. | Repair the protected-main merge/DCO boundary without weakening policy, then rerun exact-main assurance. | - |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | Repair/rebase the fail-closed TLA provenance pin, then rerun PR #119 exact-head CI; do not merge. | - |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Qualify pinned OpenJiuwen live execution. | Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI. | - |
 | P1 | [AR-0908](tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Hold PR #125 unchanged; shared formal asset and native-runner pin owners must repair their gates before a fresh exact-head run. | - |
