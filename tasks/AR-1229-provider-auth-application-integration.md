@@ -10,7 +10,7 @@
   "id": "AR-1229",
   "next_action": "Add lifecycle restart/partial-failure tests for auth enrollment and run full applicable gates on efd9894; then update PR #179 exact-head evidence and request independent review.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "efd98941ca8f4efd156967a53577874f1e22dcad",
   "owner": "asb_ar1229_auth_application",
   "plan": "../plans/AR-1229.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 202,
+  "task_revision": 203,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:57:37+00:00",
+  "updated_at": "2026-09-15T22:57:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
