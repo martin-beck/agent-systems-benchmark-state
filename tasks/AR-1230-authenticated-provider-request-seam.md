@@ -9,7 +9,7 @@
     "AR-1100"
   ],
   "id": "AR-1230",
-  "next_action": "PR #178 exact head 07b670d requires independent re-review and CI rerun. Shared runtime validator now enforces every required field and bound (digest, generation, timeout, deadline, response limit) plus provider/policy combinations; delegated transport/application gates remain AR-1228/AR-1229.",
+  "next_action": "PR #178 exact head a681768 requires independent re-review and CI rerun. The pinned jsonschema 0.33 validator now validates committed schema instances (positive and negative), and shared runtime validation enforces all required fields; delegated transport/application gates remain AR-1228/AR-1229.",
   "observed_branch": "feature/ar-1230-authenticated-provider-request-seam",
   "observed_dirty": 0,
   "observed_head": "a681768a69308d59c9e1da45ac60d09733e98fe2",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 137,
+  "task_revision": 138,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T19:40:42+00:00",
+  "updated_at": "2026-09-15T19:41:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
@@ -387,3 +387,8 @@ integration.
 
 - 2026-09-15T19:40:42+00:00: Recorded command exit 0; command argv SHA-256
   987e0d9ac4e88d83cd62975832c181c3c798255f62859a22c4f44552b8cfc960.
+
+- 2026-09-15T19:41:04+00:00: Signed+DCO a681768 adds pinned jsonschema 0.33 dev validation and
+  Cargo.lock update. Tests validate committed schema against valid OpenAI/Bearer and invalid
+  policy/unknown-field instances, alongside shared runtime field/bound checks. Focused
+  authenticated_request tests: 5 passed; fmt and clippy passed; branch pushed to PR #178.

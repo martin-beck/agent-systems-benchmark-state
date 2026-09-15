@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1230](tasks/AR-1230-authenticated-provider-request-seam.md): Authenticated provider-request seam and secret injection contract | Define the approved bounded provider authentication request and secret-injection seam. | PR #178 exact head 07b670d requires independent re-review and CI rerun. Shared runtime validator now enforces every required field and bound (digest, generation, timeout, deadline, response limit) plus provider/policy combinations; delegated transport/application gates remain AR-1228/AR-1229. | asb_ar1230_auth_request_seam |
+| P0 | [AR-1230](tasks/AR-1230-authenticated-provider-request-seam.md): Authenticated provider-request seam and secret injection contract | Define the approved bounded provider authentication request and secret-injection seam. | PR #178 exact head a681768 requires independent re-review and CI rerun. The pinned jsonschema 0.33 validator now validates committed schema instances (positive and negative), and shared runtime validation enforces all required fields; delegated transport/application gates remain AR-1228/AR-1229. | asb_ar1230_auth_request_seam |
 
 ## Open
 
