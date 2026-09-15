@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1229-auth-application-integration",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-15T23:31:16+00:00",
+  "claim_expires": "2026-09-15T23:34:18+00:00",
   "depends_on": [
     "AR-1228",
     "AR-1230"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 223,
+  "task_revision": 224,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T23:04:15+00:00",
+  "updated_at": "2026-09-15T23:04:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -597,3 +597,5 @@ public state or weaken the existing resolver and authenticated-control boundarie
   not immediately observable after backend drop. Added bounded retry (2s) before declaring restart
   failure. Focused auth lifecycle test now passes 1/1. Signed-DCO product commit 0a5ddb1 pushed;
   worktree clean. Full workspace gate must be rerun at this new exact head.
+
+- 2026-09-15T23:04:18+00:00: Heartbeat by asb_ar1229_auth_application.
