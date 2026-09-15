@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 361,
+  "task_revision": 362,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-15T16:57:19+00:00",
+  "updated_at": "2026-09-15T16:57:34+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1295,3 +1295,6 @@ classified.
   $4=DRIVER, $5=workspace. The f4a8 conditional $1 logic is unnecessary and must be removed; restore
   direct $5 publication. Current PR head f4a8c5d and its exact-head run remain unmergeable pending
   this correction; no stale head evidence is being used.
+
+- 2026-09-15T16:57:34+00:00: Recorded command exit 0; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
