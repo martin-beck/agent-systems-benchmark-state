@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1228-auth-backends-probes",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-15T20:13:13+00:00",
   "depends_on": [
     "AR-0319",
     "AR-0320",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1228-auth-backends-probes",
   "observed_dirty": 0,
   "observed_head": "2117a40e2e27602c39aebee87581cf652628a534",
-  "owner": "",
+  "owner": "asb_ar1228_auth_backends",
   "plan": "../plans/AR-1228.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T18:11:58+00:00",
+  "updated_at": "2026-09-15T18:13:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
@@ -49,3 +49,5 @@ integration rather than renderer or frontend behavior.
   architecture. No unsafe ambient, plaintext, or unqualified network implementation was added.
   Earliest next action: architecture owner must qualify backend/probe contract and integration
   boundary, then reclaim AR-1228.
+
+- 2026-09-15T18:13:13+00:00: Claimed by asb_ar1228_auth_backends.
