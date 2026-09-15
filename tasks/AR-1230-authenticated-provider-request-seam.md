@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 200,
+  "task_revision": 201,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T20:12:46+00:00",
+  "updated_at": "2026-09-15T20:12:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
@@ -547,3 +547,6 @@ integration.
   snapshot), adds synchronized GenerationSink that changes generation during sink, and retains
   rollback-safe privacy fixture. Focused authenticated_request tests: 6 passed; clippy -D warnings
   passed; branch pushed to PR #178.
+
+- 2026-09-15T20:12:50+00:00: Recorded command exit 0; command argv SHA-256
+  c1e7039f75f0d249f1099a8ed9798935c71634c00dc669755dba2f34373ab2dd.
