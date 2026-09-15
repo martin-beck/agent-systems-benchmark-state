@@ -180,6 +180,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-ar1190-catalog` | `feature/asb-authenticated-agent-catalog` | `78ae48b71ccc` | 0 | behind 6, ahead 0 |
 | `asb-ar1191-lifecycle` | `DETACHED` | `6d210836d4b4` | 0 | behind 1, ahead 0 |
 | `asb-boundary-hardening` | `DETACHED` | `d32748d0795e` | 0 | behind 13, ahead 0 |
+| `asb-catalog-digest` | `feature/ar1195-catalog-digest` | `3cc8fa1a2758` | 0 | behind 0, ahead 1 |
 | `asb-current-audit-20260914` | `DETACHED` | `817a40bfbd7c` | 0 | behind 10, ahead 0 |
 | `asb-dco-repair` | `repair/protected-main-dco-history` | `200edbbbc3f0` | 0 | behind 6, ahead 1 |
 | `asb-metrics-timeout` | `repair/metrics-timeout-stability` | `78ae48b71ccc` | 0 | behind 6, ahead 0 |
