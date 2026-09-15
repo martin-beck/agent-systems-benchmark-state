@@ -9,7 +9,7 @@
     "AR-1100"
   ],
   "id": "AR-1230",
-  "next_action": "Promote after architecture review; specify and test the fail-closed authenticated provider-request seam, then unblock AR-1228.",
+  "next_action": "Independent review of PR branch at exact head 5869e73; verify authenticated seam API, privacy/wipe behavior and provider policy before requesting merge. Then coordinate AR-1228 rebinding and rerun full gates.",
   "observed_branch": "feature/ar-1230-authenticated-provider-request-seam",
   "observed_dirty": 0,
   "observed_head": "5869e73141ad20a96eca56f609c9cb256fe00b9d",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T18:51:14+00:00",
+  "updated_at": "2026-09-15T18:51:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
@@ -93,3 +93,10 @@ integration.
 
 - 2026-09-15T18:51:14+00:00: Recorded command exit 0; command argv SHA-256
   987e0d9ac4e88d83cd62975832c181c3c798255f62859a22c4f44552b8cfc960.
+
+- 2026-09-15T18:51:45+00:00: Implemented signed+DCO commit 5869e73. Added authenticated_request
+  module with bounded typed metadata, endpoint identity validation, generation/timeout/response
+  bounds, provider policy validation, opaque final-boundary header injection, credential wiping and
+  sink-failure handling. Added negative endpoint/policy/timeout/empty-credential/sink tests. Focused
+  authenticated_request tests: 2 passed; fmt and clippy -D warnings passed. Prior exit 101 was a
+  moved-value test assertion, fixed by cloning request metadata; rerun passed.
