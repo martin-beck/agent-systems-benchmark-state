@@ -9,7 +9,7 @@
     "AR-1100"
   ],
   "id": "AR-1228",
-  "next_action": "Promote after dependencies are independently complete; implement concrete qualified secret backends, provider probes and durable CLI/control/config integration for AR-1120.",
+  "next_action": "PR #177 incremental adapter checkpoint 98733fc needs independent review, then implement provider-specific bounded probes and durable CLI/control/config registry integration; do not release AR-1120 or mark AR-1228 done yet.",
   "observed_branch": "feature/ar-1228-auth-backends-probes",
   "observed_dirty": 0,
   "observed_head": "98733fc1a9142af36cb9dcad1a2f81ebd32f0977",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T18:15:45+00:00",
+  "updated_at": "2026-09-15T18:15:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
@@ -82,3 +82,8 @@ integration rather than renderer or frontend behavior.
   fbf107f6908c64da8938a9104321cb2eea89f3ba51c3353663e15880e3f9a68c.
 
 - 2026-09-15T18:15:45+00:00: Heartbeat by asb_ar1228_auth_backends.
+
+- 2026-09-15T18:15:48+00:00: Added concrete CredentialBackend adapters over existing qualified
+  environment, one-shot FD and staged helper resolvers in signed+DCO commit 98733fc; local fmt,
+  clippy and compile/test gates pass. Review scope gap remains provider-specific probes and
+  application integration; PR #177 records this as incremental only.
