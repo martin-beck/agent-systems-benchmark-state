@@ -1278,7 +1278,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1191](../tasks/AR-1191.md): Verified local-agent lifecycle | root-ar1191-review | Install, activate, verify and recover supported local benchmark agents safely. | Obtain independent review sign-off on lifecycle PR #169 head 3fa66e5c1ded9a797d45a5b9fb3606b39c2e11ce; then merge and run protected-main assurance. |
+| P0 | [AR-1191](../tasks/AR-1191.md): Verified local-agent lifecycle | root-ar1191-review | Install, activate, verify and recover supported local benchmark agents safely. | Run independent review on lifecycle PR #169 head 6d210836d4b45942aa6b9b2530c30a0afe30144a after hosted checks, then merge and qualify asb-tui. |
 | P1 | [AR-0908](../tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | asb-open-ar0908-hardening | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Hold PR #125 unchanged; shared formal asset and native-runner pin owners must repair their gates before a fresh exact-head run. |
 
 ### Open (12)
