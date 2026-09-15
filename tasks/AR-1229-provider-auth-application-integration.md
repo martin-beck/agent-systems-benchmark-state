@@ -10,7 +10,7 @@
   "id": "AR-1229",
   "next_action": "Promote after AR-1228 and AR-1230 are complete; implement durable config registry and authenticated CLI/control enrollment integration, then requalify AR-1120.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "efe741a75a8a3e7bd14afd8c6cef119f46a21c74",
   "owner": "asb_ar1229_auth_application",
   "plan": "../plans/AR-1229.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T21:42:31+00:00",
+  "updated_at": "2026-09-15T21:42:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---

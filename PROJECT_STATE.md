@@ -31,7 +31,7 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 35026683714 | `efe741a75a8a` | push | Huawei MIT source headers | completed:success |
-| 35026683703 | `efe741a75a8a` | push | Rust verification | in_progress:- |
+| 35026683703 | `efe741a75a8a` | push | Rust verification | completed:failure |
 | 35026683694 | `efe741a75a8a` | push | Fault assurance | completed:success |
 | 35026683673 | `efe741a75a8a` | push | Emulated aarch64 portability | in_progress:- |
 | 35026683664 | `efe741a75a8a` | push | Repository quality | completed:failure |
