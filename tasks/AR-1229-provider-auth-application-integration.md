@@ -8,7 +8,7 @@
     "AR-1230"
   ],
   "id": "AR-1229",
-  "next_action": "Implement control-state admission/authorization and bounded asb auth CLI dispatch for AuthEnroll/AuthStatus/AuthRotate/AuthRevoke; add protocol schema and negative/privacy tests, then create PR from exact signed head 1cce200.",
+  "next_action": "Wire the durable auth registry into RunnerBackend and add bounded asb auth CLI dispatch plus positive, negative, idempotency, and privacy tests; current signed head 8c9eca7 is only the protocol/compile correction and remains fail-closed.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
   "observed_dirty": 0,
   "observed_head": "8c9eca7af1fe5021463dccb5cc00662807ad1fd2",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T21:55:46+00:00",
+  "updated_at": "2026-09-15T21:56:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -130,3 +130,8 @@ public state or weaken the existing resolver and authenticated-control boundarie
 
 - 2026-09-15T21:55:46+00:00: Recorded command exit 0; command argv SHA-256
   af49f1a2c12fe610e176334d1e1f0199956efc75923a96939ff24df4a977e040.
+
+- 2026-09-15T21:56:02+00:00: Signed DCO product commit 8c9eca7 pushed. cargo test -p asb-control
+  --offline --lib: 35 passed; cargo test -p asb-cli --lib --offline: 63 passed. Auth lifecycle calls
+  validate and match typed results, but backend deliberately returns CapabilityUnavailable until
+  durable registry and CLI dispatch are implemented; AR remains in_progress.
