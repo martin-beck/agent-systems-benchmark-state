@@ -12,7 +12,7 @@
   "id": "AR-1228",
   "next_action": "Bind transport budget to AuthenticatedRequest.deadline_ms and add authenticated mid-transport cancellation/generation/oversize failure tests; then await independent review and exact-head CI for PR #177 at 339cb283272afcd742128c09d346496c4b760b1c.",
   "observed_branch": "feature/ar-1228-auth-backends-probes",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "339cb283272afcd742128c09d346496c4b760b1c",
   "owner": "asb_ar1228_auth_backends",
   "plan": "../plans/AR-1228.md",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 179,
+  "task_revision": 180,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T20:56:01+00:00",
+  "updated_at": "2026-09-15T20:56:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
