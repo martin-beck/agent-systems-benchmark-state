@@ -13,9 +13,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify concurrent ASB control scratch-root isolation on current repaired main.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Qualify current-main control scratch isolation",
-  "updated_at": "2026-09-15T08:52:15+00:00",
+  "updated_at": "2026-09-15T08:52:28+00:00",
   "worktree_key": "agent-systems-benchmark-control-scratch-isolation-current-main"
 }
 ---
@@ -37,3 +37,6 @@ with all 12 required checks terminal green. No merge or release is implied by th
 
 - 2026-09-15T08:52:15+00:00: Recorded command exit 0; command argv SHA-256
   2846b5527043de108f01be7bd57d4ee958dc9192f7af073d0571fc5caa4ed06e.
+
+- 2026-09-15T08:52:28+00:00: Recorded command exit 0; command argv SHA-256
+  eaf2472e4b0ec29bac3303a6d46474c99be3c0ab077feca87b1c3650d4745e53.
