@@ -8,7 +8,7 @@
     "AR-1230"
   ],
   "id": "AR-1229",
-  "next_action": "Implement bounded asb auth CLI dispatch and dedicated lifecycle behavior/privacy tests; current exact signed head 3521f72 includes durable backend and regenerated v1-v1.5 schemas. Do not create/merge PR until CLI acceptance and full gates pass.",
+  "next_action": "Run dedicated auth CLI positive/negative/privacy tests and full documented gates; then create PR from exact signed head 1594e09. Existing schema_conformance remains the canonical generated-schema CI gate; do not duplicate it.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
   "observed_dirty": 0,
   "observed_head": "1594e0943d5d92b3fdd70c44f4142dfc8a1dec63",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:07:48+00:00",
+  "updated_at": "2026-09-15T22:08:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -232,3 +232,9 @@ public state or weaken the existing resolver and authenticated-control boundarie
 
 - 2026-09-15T22:07:48+00:00: Recorded command exit 0; command argv SHA-256
   af49f1a2c12fe610e176334d1e1f0199956efc75923a96939ff24df4a977e040.
+
+- 2026-09-15T22:08:07+00:00: Signed DCO commit 1594e09 pushed. Added bounded credential-free asb
+  auth enroll/status/rotate/revoke dispatch producing typed control requests; malformed/missing
+  options fail with usage errors and no secret values enter argv/config. cargo test -p asb-cli --lib
+  --offline: 63 passed. Dedicated auth CLI behavior/privacy tests and PR review/CI remain
+  outstanding.
