@@ -13,7 +13,7 @@
   "id": "AR-0909",
   "next_action": "Hold PR127 unmerged; AR-0877 must repair formal acquisition and platform owner must repair hosted distro evidence, then rerun exact-head CI unchanged.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "375ad6e16543da3245e315cf9be9a36fcbf1db9d",
   "owner": "asb_ar0909_lifecycle_repair",
   "plan": "../plans/AR-0909.md",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 299,
+  "task_revision": 300,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-15T15:43:58+00:00",
+  "updated_at": "2026-09-15T15:44:05+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
