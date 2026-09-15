@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1229-auth-application-integration",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T00:27:23+00:00",
   "depends_on": [
     "AR-1228",
     "AR-1230"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1229-auth-application-integration",
   "observed_dirty": 0,
   "observed_head": "84d008cbc91d4ed49bdbd6568676642b2ae74ef9",
-  "owner": "",
+  "owner": "asb_ar1229_auth_application",
   "plan": "../plans/AR-1229.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 117,
+  "task_revision": 118,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:27:08+00:00",
+  "updated_at": "2026-09-15T22:27:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -326,3 +326,5 @@ public state or weaken the existing resolver and authenticated-control boundarie
 - 2026-09-15T22:27:08+00:00: Worker unable to complete additive v1.6 schema migration; preserved
   signed protocol commit 84d008c and clean worktree. Fresh worker required to wire schema
   generation, frozen v1-v1.5 fixtures, handoff expectations, catalog/docs, then rerun all gates.
+
+- 2026-09-15T22:27:23+00:00: Claimed by asb_ar1229_auth_application.
