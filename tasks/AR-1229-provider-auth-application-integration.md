@@ -8,7 +8,7 @@
     "AR-1230"
   ],
   "id": "AR-1229",
-  "next_action": "Monitor PR #179 exact head b33d6da until every required CI lane is terminal green; then obtain independent exact-head review before any merge.",
+  "next_action": "Obtain independent exact-head review of PR #179 at b33d6da; if approved and all required checks remain green, perform documented merge transition, then post-merge verification and durable AR closure evidence.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
   "observed_dirty": 0,
   "observed_head": "b33d6da59ba9551f7f4c9a2c2b6dd2b6a959bc6e",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 246,
+  "task_revision": 247,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T23:15:10+00:00",
+  "updated_at": "2026-09-15T23:15:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -654,3 +654,7 @@ public state or weaken the existing resolver and authenticated-control boundarie
 - 2026-09-15T23:09:42+00:00: Heartbeat by asb_ar1229_auth_application.
 
 - 2026-09-15T23:15:10+00:00: Heartbeat by asb_ar1229_auth_application.
+
+- 2026-09-15T23:15:19+00:00: All required CI lanes are terminal green on PR #179 exact head b33d6da.
+  Lease renewed for final independent review and merge transition. Merge remains gated on reviewer
+  approval; no merge performed yet.
