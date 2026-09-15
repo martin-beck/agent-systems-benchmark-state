@@ -9,7 +9,7 @@
     "AR-1100"
   ],
   "id": "AR-1230",
-  "next_action": "PR #178 exact head 77464e0 requires independent re-review and CI rerun. Runtime and schema deadline maxima now match and invalid-boundary tests pass; transport response/redirect gates remain AR-1228, application/schema integration remains AR-1229.",
+  "next_action": "PR #178 exact head 474e546 requires independent re-review and CI rerun. Schema instance tests now exercise valid OpenAI/Gemini/Ollama policies and invalid policy/deadline boundaries; delegated transport/application gates remain AR-1228/AR-1229.",
   "observed_branch": "feature/ar-1230-authenticated-provider-request-seam",
   "observed_dirty": 0,
   "observed_head": "474e5461a61c91230fcbc26b0e49d400780bacf4",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 104,
+  "task_revision": 105,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T19:29:47+00:00",
+  "updated_at": "2026-09-15T19:30:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
@@ -304,3 +304,9 @@ integration.
 
 - 2026-09-15T19:29:47+00:00: Recorded command exit 0; command argv SHA-256
   987e0d9ac4e88d83cd62975832c181c3c798255f62859a22c4f44552b8cfc960.
+
+- 2026-09-15T19:30:09+00:00: Signed+DCO 474e546 adds executable representative schema-instance
+  validation: positive OpenAI bearer, Gemini api_key and Ollama none cases; negative Gemini bearer,
+  zero deadline and overflow deadline cases. Committed schema is parsed and
+  additionalProperties/conditional count checked. Focused authenticated_request tests: 4 passed; fmt
+  and clippy passed.

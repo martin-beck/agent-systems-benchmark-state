@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1230](tasks/AR-1230-authenticated-provider-request-seam.md): Authenticated provider-request seam and secret injection contract | Define the approved bounded provider authentication request and secret-injection seam. | PR #178 exact head 77464e0 requires independent re-review and CI rerun. Runtime and schema deadline maxima now match and invalid-boundary tests pass; transport response/redirect gates remain AR-1228, application/schema integration remains AR-1229. | asb_ar1230_auth_request_seam |
+| P0 | [AR-1230](tasks/AR-1230-authenticated-provider-request-seam.md): Authenticated provider-request seam and secret injection contract | Define the approved bounded provider authentication request and secret-injection seam. | PR #178 exact head 474e546 requires independent re-review and CI rerun. Schema instance tests now exercise valid OpenAI/Gemini/Ollama policies and invalid policy/deadline boundaries; delegated transport/application gates remain AR-1228/AR-1229. | asb_ar1230_auth_request_seam |
 
 ## Open
 
