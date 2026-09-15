@@ -8,7 +8,7 @@
     "AR-1230"
   ],
   "id": "AR-1229",
-  "next_action": "Resolve PR #179 policy failure by introducing the next additive control protocol/schema version for auth methods; preserve frozen v1-v1.5 schemas and update generator, conformance fixtures, contract catalog and docs. Then regenerate, rerun full gates, and force-push only with reviewed exact head.",
+  "next_action": "Introduce CONTROL_AUTH_V1 minor 6 and preserve v1-v1.5 schema bytes via auth-variant pruning in legacy schema generators; add v1.6 request/response generation and conformance fixtures, update SUPPORTED_CONTROL_VERSIONS, minimum_version routing, contract_consistency roots/catalog/docs. Then regenerate and rerun PR gates.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
   "observed_dirty": 0,
   "observed_head": "c705dfe9a513c18a5c7b76ebe820e1f67348418d",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 107,
+  "task_revision": 108,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:16:28+00:00",
+  "updated_at": "2026-09-15T22:17:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -301,3 +301,8 @@ public state or weaken the existing resolver and authenticated-control boundarie
   infrastructure; do not weaken the native schema gate or merge. Other checks remain pending/green.
 
 - 2026-09-15T22:16:28+00:00: Heartbeat by asb_ar1229_cli_admission.
+
+- 2026-09-15T22:17:16+00:00: Follow-up design evidence: protocol currently routes auth
+  minimum_version to CONTROL_V1 and supported versions stop at minor 5. Contract consistency scans
+  v1, v1.2, v1.3 roots; adding auth to those is forbidden. New minor 6 is required and old generated
+  bytes must remain unchanged.
