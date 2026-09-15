@@ -6,10 +6,11 @@
   "depends_on": [
     "AR-0319",
     "AR-0320",
-    "AR-1100"
+    "AR-1100",
+    "AR-1230"
   ],
   "id": "AR-1228",
-  "next_action": "PR #177 exact head d6e1c4e adds loopback-only pinned bounded GET transport with stale-generation and redirect/oversize fail-closed tests. Independent review still blocks completion: no approved credential/header injection or provider-auth protocol contract; durable registry/CLI/control integration remains AR-1229. Define the approved authenticated request seam before further transport work, then rerun full gates.",
+  "next_action": "Wait for AR-1230 to define the approved authenticated provider-request seam; then bind it to the bounded loopback transport at PR #177 exact head d6e1c4e and rerun full gates.",
   "observed_branch": "feature/ar-1228-auth-backends-probes",
   "observed_dirty": 0,
   "observed_head": "d6e1c4e810a646323056d8547a800f7c34ae581e",
@@ -19,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T18:36:44+00:00",
+  "updated_at": "2026-09-15T18:41:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
@@ -223,3 +224,6 @@ integration rather than renderer or frontend behavior.
   network path added.
 
 - 2026-09-15T18:36:44+00:00: Heartbeat by asb_ar1228_auth_backends.
+
+- 2026-09-15T18:41:05+00:00: Recorded command exit 0; command argv SHA-256
+  2e1a7d74251b8552f7bfbd5eca3457010630ff2070f5024ecafe69fe146b1b2c.
