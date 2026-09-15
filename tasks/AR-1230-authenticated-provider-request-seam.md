@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T19:22:05+00:00",
+  "updated_at": "2026-09-15T19:22:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
@@ -226,3 +226,6 @@ integration.
   formal/tests/tla_artifact_acquisition.rs; PR code was untouched and CI must rerun.
 
 - 2026-09-15T19:22:05+00:00: Heartbeat by asb_ar1230_auth_request_seam.
+
+- 2026-09-15T19:22:08+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
