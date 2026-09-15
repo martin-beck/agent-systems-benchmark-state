@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Await fresh exact-head CI for e3d2962; inspect every required check, then independently review and merge only if all green.",
+  "next_action": "Repair helper readiness synchronization for emulated AArch64 without weakening identity/liveness checks; rerun focused and exact-head CI.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "e3d2962095a138a8fc1569f3f3283f42e33d0b8f",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 307,
+  "task_revision": 308,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-15T15:47:34+00:00",
+  "updated_at": "2026-09-15T15:50:54+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1136,3 +1136,8 @@ classified.
 - 2026-09-15T15:45:09+00:00: Heartbeat by asb_ar0909_lifecycle_repair.
 
 - 2026-09-15T15:47:34+00:00: Heartbeat by asb_ar0909_lifecycle_repair.
+
+- 2026-09-15T15:50:54+00:00: Fresh exact-head PR127 emulated-AArch64 failure is patch-related: 141
+  passed/1 failed; cancellation_leaves_no_runnable_owned_descendant timed out at mini_swe.rs:2158
+  while awaiting the helper children.pids readiness file. Prior proc-fd spelling repair passed root
+  creation but did not make shell-helper publication deterministic under emulation. No merge.
