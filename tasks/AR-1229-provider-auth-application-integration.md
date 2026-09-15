@@ -8,7 +8,7 @@
     "AR-1230"
   ],
   "id": "AR-1229",
-  "next_action": "Wire the durable auth registry into RunnerBackend and add bounded asb auth CLI dispatch plus positive, negative, idempotency, and privacy tests; current signed head 8c9eca7 is only the protocol/compile correction and remains fail-closed.",
+  "next_action": "Add bounded asb auth CLI dispatch and its protocol/control integration tests; durable RunnerBackend registry now persists credential-free enrollment, status, rotation generation, revocation and idempotent enroll/rotate. Current signed head 1f806b9.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
   "observed_dirty": 0,
   "observed_head": "1f806b94472b8040f57ed2af6b0e2cced0545e31",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T21:59:00+00:00",
+  "updated_at": "2026-09-15T21:59:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -159,3 +159,8 @@ public state or weaken the existing resolver and authenticated-control boundarie
 
 - 2026-09-15T21:59:00+00:00: Recorded command exit 0; command argv SHA-256
   af49f1a2c12fe610e176334d1e1f0199956efc75923a96939ff24df4a977e040.
+
+- 2026-09-15T21:59:16+00:00: Fixed prior exit2/exit1 compile failures: imported AuthStatusResponse
+  and validated auth mutation targets. Signed DCO commit 1f806b9 pushed. Auth backend now persists
+  credential-free records in catalog and fail-closes unknown providers; cargo check -p asb-cli
+  --offline passes. CLI dispatch and behavioral tests remain outstanding.
