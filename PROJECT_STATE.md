@@ -2,7 +2,7 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `537811179bc5b956c1fecefae99b1bf4805e0b10`
+- Product remote main: `ef82484fa78dd31c0d7b5ad48e2dc51a93ec1339`
 - Local origin/main: `537811179bc5b956c1fecefae99b1bf4805e0b10`
 - Primary worktree head: `bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09`
 
@@ -25,22 +25,20 @@ Generated from local Git and GitHub. Do not edit.
 | #151 | `dependabot/cargo/serde-1.0.229@9c87e23d6d29` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #173 | `fix/ar0908-current-main@39f90b316faf` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(cli): harden control scratch isolation on current main |
-| #174 | `feature/ar1195-catalog-digest@0a39815de52c` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(control): authenticate agent catalog digest |
-| #175 | `repair/metrics-timeout-flake@0a7f6a192af9` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(metrics): stabilize bounded rejection fixture |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 34952754675 | `0a7f6a192af9` | pull_request | Emulated aarch64 portability | completed:success |
-| 34952754606 | `0a7f6a192af9` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 34952754589 | `0a7f6a192af9` | pull_request | Huawei MIT source headers | completed:success |
-| 34952754516 | `0a7f6a192af9` | pull_request | Formal assurance | completed:success |
-| 34952754503 | `0a7f6a192af9` | pull_request | Rust verification | completed:success |
-| 34952754485 | `0a7f6a192af9` | pull_request | Hosted portability and native qualification | completed:success |
-| 34952754404 | `0a7f6a192af9` | pull_request | Repository quality | completed:success |
-| 34952754360 | `0a7f6a192af9` | pull_request | Fault assurance | completed:success |
-| 34951783949 | `0a39815de52c` | pull_request | Hosted portability and native qualification | completed:success |
-| 34951783562 | `0a39815de52c` | pull_request | Fault assurance | completed:success |
-| 34951783556 | `0a39815de52c` | pull_request | Huawei MIT source headers | completed:success |
-| 34951783460 | `0a39815de52c` | pull_request | Emulated aarch64 portability | completed:success |
+| 34955354581 | `ef82484fa78d` | push | Repository quality | completed:failure |
+| 34955354482 | `ef82484fa78d` | push | Formal assurance | in_progress:- |
+| 34955354481 | `ef82484fa78d` | push | Hosted portability and native qualification | completed:success |
+| 34955354479 | `ef82484fa78d` | push | Rust verification | in_progress:- |
+| 34955354446 | `ef82484fa78d` | push | Fault assurance | completed:success |
+| 34955354399 | `ef82484fa78d` | push | Huawei MIT source headers | completed:success |
+| 34955354389 | `ef82484fa78d` | push | Emulated aarch64 portability | in_progress:- |
+| 34955323035 | `d354a5127c8d` | push | Rust verification | completed:cancelled |
+| 34955323024 | `d354a5127c8d` | push | Hosted portability and native qualification | completed:cancelled |
+| 34955323007 | `d354a5127c8d` | push | Repository quality | completed:cancelled |
+| 34955322922 | `d354a5127c8d` | push | Fault assurance | completed:cancelled |
+| 34955322916 | `d354a5127c8d` | push | Emulated aarch64 portability | completed:cancelled |
