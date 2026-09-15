@@ -8,7 +8,7 @@
     "AR-1230"
   ],
   "id": "AR-1229",
-  "next_action": "Implement bounded CLI control-service execution and lifecycle restart/partial-failure tests on e91dd89; rerun full applicable gates and update PR #179 exact head for independent review.",
+  "next_action": "Add lifecycle restart/partial-failure tests for auth enrollment and run full applicable gates on efd9894; then update PR #179 exact-head evidence and request independent review.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
   "observed_dirty": 0,
   "observed_head": "efd98941ca8f4efd156967a53577874f1e22dcad",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 199,
+  "task_revision": 200,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:55:32+00:00",
+  "updated_at": "2026-09-15T22:56:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -532,3 +532,9 @@ public state or weaken the existing resolver and authenticated-control boundarie
 
 - 2026-09-15T22:55:32+00:00: Recorded command exit 0; command argv SHA-256
   422de929f35a13a7206d8a95352061502a93f1785f7694e5184458196cd08b15.
+
+- 2026-09-15T22:56:02+00:00: Implemented bounded actual CLI control-service dispatch when --socket
+  is supplied: owner-authenticated ControlClient negotiates supported versions including auth v1.6,
+  applies fixed 300s request deadline, validates typed response, and emits bounded JSON. Existing
+  no-socket mode remains credential-free request preview. asb-cli library tests 65/65 passed.
+  Signed-DCO product commit efd9894 pushed; worktree clean.
