@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1110](tasks/AR-1110.md): Provider and model registry | Manage providers and models. | Read the plan. | asb_ar1110_discovery |
+| P0 | [AR-1110](tasks/AR-1110.md): Provider and model registry | Manage providers and models. | Extend provider catalog qualification attacks on 943e274: oversized payload/count, unsafe endpoint and credential-bearing URL rejection, stale/tampered cache and qualification mismatch fixtures; add schema/docs and rerun focused/full gates. | asb_ar1110_discovery |
 
 ## Open
 
