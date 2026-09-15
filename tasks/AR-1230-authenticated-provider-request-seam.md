@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 190,
+  "task_revision": 191,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T20:09:26+00:00",
+  "updated_at": "2026-09-15T20:10:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
@@ -521,3 +521,6 @@ integration.
   partial/error writes; privacy-safe PartialSink records only count/status, rollback clears count,
   and test asserts no retained durable state. Focused authenticated_request tests: 6 passed; fmt and
   clippy passed; branch pushed to PR #178.
+
+- 2026-09-15T20:10:17+00:00: Recorded command exit 101; command argv SHA-256
+  c1e7039f75f0d249f1099a8ed9798935c71634c00dc669755dba2f34373ab2dd.
