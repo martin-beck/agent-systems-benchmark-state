@@ -10,7 +10,7 @@
     "AR-1230"
   ],
   "id": "AR-1228",
-  "next_action": "Await independent review of PR #177 at exact head 16375248089fc55a4494efc82a9cf7e5a5f92d18; address review findings, then complete concrete provider transport/backend integration and required CI before merge.",
+  "next_action": "Independent review PR #177 at exact head 727c11b3c4bda34b34865c10524bd17230b63f3e; verify CI and review remaining provider-backend/application gaps before merge.",
   "observed_branch": "feature/ar-1228-auth-backends-probes",
   "observed_dirty": 0,
   "observed_head": "727c11b3c4bda34b34865c10524bd17230b63f3e",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 137,
+  "task_revision": 138,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T20:44:26+00:00",
+  "updated_at": "2026-09-15T20:44:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
@@ -398,3 +398,11 @@ integration rather than renderer or frontend behavior.
 
 - 2026-09-15T20:44:26+00:00: Recorded command exit 0; command argv SHA-256
   39225008163410f1c943d38b9f985faf03828ce5b91402c742997f2072005e31.
+
+- 2026-09-15T20:44:44+00:00: Integrated AR-1230 authenticated_request into provider probe transport
+  via execute_authenticated_loopback_probe: provider identity matching, endpoint-pinned auth header
+  injection, bounded transport, generation/deadline/cancellation checks and header wiping. Added
+  live loopback fixture asserting Authorization header plus wrapper policy/mismatch tests. Focused
+  provider_probe: 8 passed; clippy -D warnings passed; full asb-agents suite previously passed 154
+  unit tests plus integration/doc tests. Signed DCO product commit
+  727c11b3c4bda34b34865c10524bd17230b63f3e pushed to PR #177.
