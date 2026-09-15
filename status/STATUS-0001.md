@@ -1347,7 +1347,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md): Authenticated provider-request seam and secret injection contract | asb_ar1230_auth_request_seam | Define the approved bounded provider authentication request and secret-injection seam. | PR #178 exact head a681768 requires independent re-review and CI rerun. The pinned jsonschema 0.33 validator now validates committed schema instances (positive and negative), and shared runtime validation enforces all required fields; delegated transport/application gates remain AR-1228/AR-1229. |
+| P0 | [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md): Authenticated provider-request seam and secret injection contract | asb_ar1230_auth_request_seam | Define the approved bounded provider authentication request and secret-injection seam. | PR #178 exact head ae5b1b2 requires independent re-review and CI rerun. AuthenticatedRequest/AuthProvider/AuthPolicy now serde-typed with deny-unknown-fields; committed schema is validated by jsonschema 0.33 and typed JSON parse parity tests. Delegated transport/application gates remain AR-1228/AR-1229. |
 
 ### Open (13)
 

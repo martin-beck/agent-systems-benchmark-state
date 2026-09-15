@@ -9,7 +9,7 @@
     "AR-1100"
   ],
   "id": "AR-1230",
-  "next_action": "PR #178 exact head a681768 requires independent re-review and CI rerun. The pinned jsonschema 0.33 validator now validates committed schema instances (positive and negative), and shared runtime validation enforces all required fields; delegated transport/application gates remain AR-1228/AR-1229.",
+  "next_action": "PR #178 exact head ae5b1b2 requires independent re-review and CI rerun. AuthenticatedRequest/AuthProvider/AuthPolicy now serde-typed with deny-unknown-fields; committed schema is validated by jsonschema 0.33 and typed JSON parse parity tests. Delegated transport/application gates remain AR-1228/AR-1229.",
   "observed_branch": "feature/ar-1230-authenticated-provider-request-seam",
   "observed_dirty": 0,
   "observed_head": "ae5b1b281724145cd4a9d5245b56fd6e48b3f031",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 147,
+  "task_revision": 148,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T19:44:32+00:00",
+  "updated_at": "2026-09-15T19:44:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
@@ -412,3 +412,8 @@ integration.
 
 - 2026-09-15T19:44:32+00:00: Recorded command exit 0; command argv SHA-256
   987e0d9ac4e88d83cd62975832c181c3c798255f62859a22c4f44552b8cfc960.
+
+- 2026-09-15T19:44:53+00:00: Signed+DCO ae5b1b2 adds serde Serialize/Deserialize with snake_case
+  policy/provider names and typed parse tests covering valid instance, missing field and wrong type,
+  alongside jsonschema validation. Focused authenticated_request tests: 5 passed; fmt and clippy
+  passed; branch pushed to PR #178.
