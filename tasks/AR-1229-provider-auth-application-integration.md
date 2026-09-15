@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 108,
+  "task_revision": 109,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:17:16+00:00",
+  "updated_at": "2026-09-15T22:18:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -306,3 +306,6 @@ public state or weaken the existing resolver and authenticated-control boundarie
   minimum_version to CONTROL_V1 and supported versions stop at minor 5. Contract consistency scans
   v1, v1.2, v1.3 roots; adding auth to those is forbidden. New minor 6 is required and old generated
   bytes must remain unchanged.
+
+- 2026-09-15T22:18:13+00:00: Recorded command exit 0; command argv SHA-256
+  503d79820a7b6b35a054619882f81ce11f3c8065f8ea848fb8256c7d82b97d61.
