@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1230-authenticated-provider-request-seam",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-15T21:58:59+00:00",
+  "claim_expires": "2026-09-15T22:03:33+00:00",
   "depends_on": [
     "AR-0319",
     "AR-0320",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the approved bounded provider authentication request and secret-injection seam.",
-  "task_revision": 170,
+  "task_revision": 171,
   "title": "Authenticated provider-request seam and secret injection contract",
-  "updated_at": "2026-09-15T20:01:02+00:00",
+  "updated_at": "2026-09-15T20:03:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1230-authenticated-provider-request-seam"
 }
 ---
@@ -472,3 +472,5 @@ integration.
 - 2026-09-15T20:01:02+00:00: Signed+DCO 074e0f4 adds PartialSink fixture that records partial header
   bytes then fails, asserting TransportRejected and no false success, plus seam cancellation tests.
   Focused authenticated_request tests: 6 passed; fmt/clippy passed; branch pushed to PR #178.
+
+- 2026-09-15T20:03:33+00:00: Heartbeat by asb_ar1230_auth_request_seam.
