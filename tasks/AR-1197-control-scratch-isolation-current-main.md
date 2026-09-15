@@ -13,9 +13,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify concurrent ASB control scratch-root isolation on current repaired main.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Qualify current-main control scratch isolation",
-  "updated_at": "2026-09-15T08:51:50+00:00",
+  "updated_at": "2026-09-15T08:52:15+00:00",
   "worktree_key": "agent-systems-benchmark-control-scratch-isolation-current-main"
 }
 ---
@@ -34,3 +34,6 @@ with all 12 required checks terminal green. No merge or release is implied by th
   missing; keep the task open until review and protected post-merge evidence exist.
 
 - 2026-09-15T08:51:50+00:00: Claimed by asb-ar1197-registry.
+
+- 2026-09-15T08:52:15+00:00: Recorded command exit 0; command argv SHA-256
+  2846b5527043de108f01be7bd57d4ee958dc9192f7af073d0571fc5caa4ed06e.
