@@ -26,7 +26,7 @@ Generated from local Git and GitHub. Do not edit.
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #176 | `feature/ar-1120@d9253f2187a6` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(auth): add credential enrollment lifecycle |
 | #177 | `feature/ar-1228-auth-backends-probes@d6e1c4e810a6` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(auth): bind concrete credential resolvers |
-| #178 | `feature/ar-1230-authenticated-provider-request-seam@474e5461a61c` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | feat(auth): add authenticated provider request seam |
+| #178 | `feature/ar-1230-authenticated-provider-request-seam@474e5461a61c` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(auth): add authenticated provider request seam |
 
 ## Recent workflows
 
@@ -34,7 +34,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 35013970611 | `474e5461a61c` | pull_request | Formal assurance | in_progress:- |
 | 35013970433 | `474e5461a61c` | pull_request | Hosted portability and native qualification | completed:success |
-| 35013970371 | `474e5461a61c` | pull_request | Fault assurance | in_progress:- |
+| 35013970371 | `474e5461a61c` | pull_request | Fault assurance | completed:success |
 | 35013970358 | `474e5461a61c` | pull_request | Huawei MIT source headers | completed:success |
 | 35013970345 | `474e5461a61c` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35013970334 | `474e5461a61c` | pull_request | Rust verification | in_progress:- |
