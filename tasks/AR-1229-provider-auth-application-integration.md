@@ -8,7 +8,7 @@
     "AR-1230"
   ],
   "id": "AR-1229",
-  "next_action": "Introduce CONTROL_AUTH_V1 minor 6 and preserve v1-v1.5 schema bytes via auth-variant pruning in legacy schema generators; add v1.6 request/response generation and conformance fixtures, update SUPPORTED_CONTROL_VERSIONS, minimum_version routing, contract_consistency roots/catalog/docs. Then regenerate and rerun PR gates.",
+  "next_action": "Regenerate v1.6 control schemas/catalog/docs and run contract consistency plus full control/config gates; then create/update PR #179 from exact signed head 9c4741f934b3e1fbdb2b290cae3f65b1d7d7dd90.",
   "observed_branch": "feature/ar-1229-auth-application-integration",
   "observed_dirty": 0,
   "observed_head": "9c4741f934b3e1fbdb2b290cae3f65b1d7d7dd90",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate provider authentication into ASB config, control and CLI surfaces.",
-  "task_revision": 132,
+  "task_revision": 133,
   "title": "Provider authentication application integration",
-  "updated_at": "2026-09-15T22:30:19+00:00",
+  "updated_at": "2026-09-15T22:30:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1229-auth-application-integration"
 }
 ---
@@ -363,3 +363,9 @@ public state or weaken the existing resolver and authenticated-control boundarie
 
 - 2026-09-15T22:30:19+00:00: Recorded command exit 0; command argv SHA-256
   9599102ffaa7296c7b9559c4ac6b11eac178a844a6b0f7026129b8fccd02c7e6.
+
+- 2026-09-15T22:30:37+00:00: Fixed handoff fixture regression after CONTROL_AUTH_V1 introduction:
+  legacy authenticated-generation handoff tests now explicitly negotiate CONTROL_AGENT_LIFECYCLE_V1,
+  preserving v1-v1.5 wire behavior instead of selecting new v1.6. Focused handoff tests pass 21/21.
+  Prior exit101 was expected-version assertion plus an unused import after initial correction; both
+  fixed. Signed DCO product commit 9c4741f934b3e1fbdb2b290cae3f65b1d7d7dd90 pushed.

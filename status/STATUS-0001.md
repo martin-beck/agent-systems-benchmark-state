@@ -1347,7 +1347,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md): Provider authentication application integration | asb_ar1229_auth_application | Integrate provider authentication into ASB config, control and CLI surfaces. | Introduce CONTROL_AUTH_V1 minor 6 and preserve v1-v1.5 schema bytes via auth-variant pruning in legacy schema generators; add v1.6 request/response generation and conformance fixtures, update SUPPORTED_CONTROL_VERSIONS, minimum_version routing, contract_consistency roots/catalog/docs. Then regenerate and rerun PR gates. |
+| P0 | [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md): Provider authentication application integration | asb_ar1229_auth_application | Integrate provider authentication into ASB config, control and CLI surfaces. | Regenerate v1.6 control schemas/catalog/docs and run contract consistency plus full control/config gates; then create/update PR #179 from exact signed head 9c4741f934b3e1fbdb2b290cae3f65b1d7d7dd90. |
 
 ### Open (13)
 
