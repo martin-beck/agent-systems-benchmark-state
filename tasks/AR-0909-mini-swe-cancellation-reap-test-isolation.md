@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Repair emulated helper publication/path and bounded readiness budget; rerun focused and exact-head CI.",
+  "next_action": "Await fresh exact-head CI for 25dfa99; inspect all required checks, independently review and merge only if all green.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "25dfa9980c48eacfffe72836fe9dc9e0a62932b4",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 329,
+  "task_revision": 330,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-15T16:02:00+00:00",
+  "updated_at": "2026-09-15T16:02:16+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1196,3 +1196,11 @@ classified.
   23357cce65aac3ab188ef6a43f3a3b61ff2641f98d5be6396b3f6abaab7ff46b.
 
 - 2026-09-15T16:02:00+00:00: Heartbeat by asb_ar0909_lifecycle_repair.
+
+- 2026-09-15T16:02:16+00:00: Reproduction clarified the fixture argv: shell $5 is the workspace
+  because Python receives -P, -S, -c, driver before application args; reverting to $5 is correct.
+  The persistent emulated timeout was the 2-second readiness bound, not missing publication. Native
+  focused test passed with a 10-second bounded deadline. Test-only commit
+  25dfa9980c48eacfffe72836fe9dc9e0a62932b4 extends readiness to 10 seconds, below the 10-second
+  process timeout only by equal bound; missing publication still fails closed. Commit is
+  SSH-signed/DCO; PR127 force-with-lease updated. Fresh exact-head CI required.
