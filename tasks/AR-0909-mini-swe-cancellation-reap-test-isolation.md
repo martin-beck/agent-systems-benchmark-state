@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 279,
+  "task_revision": 280,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-15T15:24:24+00:00",
+  "updated_at": "2026-09-15T15:25:15+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1070,3 +1070,6 @@ classified.
   infrastructure blockers.
 
 - 2026-09-15T15:24:24+00:00: Claimed by asb_ar0909_lifecycle_repair.
+
+- 2026-09-15T15:25:15+00:00: Recorded command exit 0; command argv SHA-256
+  65035bbfeefd008604bece2748cd01964301913a2c015ddd8447e2210cb4c74a.
