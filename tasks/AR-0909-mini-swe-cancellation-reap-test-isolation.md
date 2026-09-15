@@ -2,7 +2,7 @@
 {
   "branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-15T19:05:58+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -15,15 +15,15 @@
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "b0df3fbc5d9f7dd13969903d250849efa56e3981",
-  "owner": "asb_ar0909_lifecycle_repair",
+  "owner": "",
   "plan": "../plans/AR-0909.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 380,
+  "task_revision": 381,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-15T17:05:58+00:00",
+  "updated_at": "2026-09-15T19:08:56+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1346,3 +1346,7 @@ classified.
   cancellation and fmt pass. PR updated by guarded force-with-lease; fresh exact-head CI required.
 
 - 2026-09-15T17:05:58+00:00: Heartbeat by asb_ar0909_lifecycle_repair.
+
+- 2026-09-15T19:08:56+00:00: Recovered expired claim formerly owned by asb_ar0909_lifecycle_repair.
+  Recover expired claim so coordinator validation can proceed; preserve PR b0df3fb evidence and
+  reopen for ownerless follow-up.
