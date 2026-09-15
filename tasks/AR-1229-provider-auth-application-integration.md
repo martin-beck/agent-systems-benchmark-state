@@ -3,7 +3,7 @@
   "branch": "feature/ar-1229-auth-application-integration",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1120", "AR-1228"],
+  "depends_on": ["AR-1228"],
   "id": "AR-1229",
   "next_action": "Promote after AR-1120 and AR-1228 are complete; implement durable config registry and authenticated CLI/control enrollment integration.",
   "owner": "",
