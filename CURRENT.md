@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1191](tasks/AR-1191.md): Verified local-agent lifecycle | Install, activate, verify and recover supported local benchmark agents safely. | Implement the verified local-agent lifecycle over the authenticated catalog. | root-ar1191-review |
+| P0 | [AR-1191](tasks/AR-1191.md): Verified local-agent lifecycle | Install, activate, verify and recover supported local benchmark agents safely. | Qualify lifecycle PR #169 exact head against repaired ASB main and asb-tui PR #86 before merge. | root-ar1191-review |
 | P0 | [AR-1196](tasks/AR-1196-protected-main-dco-repair.md): Protected-main DCO history repair | Restore a Signed-off-by-bearing protected-main history after the catalog merge. | Reconcile PR #170 merge commit 748c16ba against remote main; PR #172 is the topic re-publication candidate and PR #171 is a duplicate signed-merge candidate. Do not merge either until remote main ref and exact post-merge checks are reconciled; if main remains 817a40b, investigate the missing push event. | asb_main_policy_repair |
 | P1 | [AR-0908](tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Hold PR #125 unchanged; shared formal asset and native-runner pin owners must repair their gates before a fresh exact-head run. | asb-open-ar0908-hardening |
 
