@@ -1347,7 +1347,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1120](../tasks/AR-1120.md): Authentication enrollment | asb_ar1024_lifecycle_router | Enroll provider authentication. | PR #176 now targets current main 2f96f211 at exact head f64985a; obtain independent review, wait for all required exact-head CI lanes, then merge only on approval and green checks. |
+| P0 | [AR-1120](../tasks/AR-1120.md): Authentication enrollment | asb_ar1024_lifecycle_router | Enroll provider authentication. | Merge transition is coordinator-controlled: PR #176 exact head f64985a has all required CI green and independent review approval with no blockers. Await coordinator merge, then perform post-merge exact-main verification and close AR with durable evidence. |
 
 ### Open (13)
 
