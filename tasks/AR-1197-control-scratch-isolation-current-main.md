@@ -2,20 +2,20 @@
 {
   "branch": "fix/ar0908-current-main",
   "checkpoint_commit": "39f90b316faf4bbbce4170d7f0289c99355c9642",
-  "claim_expires": "2026-09-15T09:51:50+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1197",
   "next_action": "Obtain independent immutable-head review of PR #173; then merge only through protected main after exact-head checks remain green, and verify post-merge assurance at the resulting main SHA.",
   "observed_head": "39f90b316faf4bbbce4170d7f0289c99355c9642",
-  "owner": "asb-ar1197-registry",
+  "owner": "",
   "plan": "../plans/AR-1197.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Qualify concurrent ASB control scratch-root isolation on current repaired main.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Qualify current-main control scratch isolation",
-  "updated_at": "2026-09-15T08:52:51+00:00",
+  "updated_at": "2026-09-15T09:55:32+00:00",
   "worktree_key": "agent-systems-benchmark-control-scratch-isolation-current-main"
 }
 ---
@@ -43,3 +43,7 @@ with all 12 required checks terminal green. No merge or release is implied by th
 
 - 2026-09-15T08:52:51+00:00: Recorded command exit 0; command argv SHA-256
   eaf2472e4b0ec29bac3303a6d46474c99be3c0ab077feca87b1c3650d4745e53.
+
+- 2026-09-15T09:55:32+00:00: Recovered expired claim formerly owned by asb-ar1197-registry.
+  Recovered expired claim before publishing the new tutorial AR series; no product implementation
+  change was made.
