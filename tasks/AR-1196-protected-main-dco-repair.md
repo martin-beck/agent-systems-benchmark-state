@@ -2,7 +2,7 @@
 {
   "branch": "repair/protected-main-dco-history",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-15T10:07:50+00:00",
+  "claim_expires": "2026-09-15T10:10:42+00:00",
   "depends_on": [],
   "id": "AR-1196",
   "next_action": "Reconcile PR #170 merge commit 748c16ba against remote main; preserve evidence and do not merge duplicate PR #171. If main advances to 748c, rerun exact-main policy and all post-merge gates; if it does not, escalate branch-ref inconsistency.",
@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Restore a Signed-off-by-bearing protected-main history after the catalog merge.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Protected-main DCO history repair",
-  "updated_at": "2026-09-15T08:10:04+00:00",
+  "updated_at": "2026-09-15T08:10:42+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-dco-repair"
 }
 ---
@@ -45,3 +45,5 @@ policy checks; never bypass the gate or misclassify the failed post-merge run.
   publication/ref reconciliation is pending. PR #171 remains open with signed local candidate
   200edbb; its platform job failed source identity because the PR workflow used synthetic base
   748c16b. Do not merge #171 until refs and exact-main status reconcile.
+
+- 2026-09-15T08:10:42+00:00: Heartbeat by asb_main_policy_repair.
