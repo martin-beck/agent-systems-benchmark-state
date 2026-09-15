@@ -11,17 +11,17 @@
   "id": "AR-1228",
   "next_action": "Promote after dependencies are independently complete; implement concrete qualified secret backends, provider probes and durable CLI/control/config integration for AR-1120.",
   "observed_branch": "feature/ar-1228-auth-backends-probes",
-  "observed_dirty": 2,
-  "observed_head": "2117a40e2e27602c39aebee87581cf652628a534",
+  "observed_dirty": 0,
+  "observed_head": "98733fc1a9142af36cb9dcad1a2f81ebd32f0977",
   "owner": "asb_ar1228_auth_backends",
   "plan": "../plans/AR-1228.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify provider authentication backends, probes and application integration.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Qualify provider authentication backends and probes",
-  "updated_at": "2026-09-15T18:14:53+00:00",
+  "updated_at": "2026-09-15T18:15:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1228-auth-backends-probes"
 }
 ---
