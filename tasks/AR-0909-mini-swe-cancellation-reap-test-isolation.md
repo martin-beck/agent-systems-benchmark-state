@@ -2,7 +2,7 @@
 {
   "branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-15T18:02:00+00:00",
+  "claim_expires": "2026-09-15T18:13:55+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 338,
+  "task_revision": 339,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-15T16:13:52+00:00",
+  "updated_at": "2026-09-15T16:13:55+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1228,3 +1228,5 @@ classified.
   retaining a 10s readiness deadline; no production lifecycle or gate changes. Local focused test,
   fmt, Clippy pass; SSH/DCO verified. PR127 updated by guarded force-with-lease and fresh exact-head
   CI is required.
+
+- 2026-09-15T16:13:55+00:00: Heartbeat by asb_ar0909_lifecycle_repair.
