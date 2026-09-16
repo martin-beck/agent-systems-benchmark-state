@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**275 ARs tracked** across 7 active status categories.
+**276 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 10 |
-| **Planned** | Defined work awaiting promotion or dependencies | 63 |
+| **Planned** | Defined work awaiting promotion or dependencies | 64 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 186 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -341,6 +341,7 @@ flowchart LR
         AR_1245["AR-1245 - Done"]:::status_done
         AR_1246["AR-1246 - In progress"]:::status_in_progress
         AR_1247["AR-1247 - In progress"]:::status_in_progress
+        AR_1248["AR-1248 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1103,8 +1104,10 @@ flowchart LR
     AR_1231 --> AR_1234
     AR_1231 --> AR_1236
     AR_1231 --> AR_1238
+    AR_1231 --> AR_1248
     AR_1232 --> AR_1151
     AR_1232 --> AR_1244
+    AR_1232 --> AR_1248
     AR_1233 --> AR_1232
     AR_1233 --> AR_1237
     AR_1234 --> AR_1232
@@ -1397,8 +1400,8 @@ flowchart LR
 | [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md) | [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-1100](../tasks/AR-1100.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-1120](../tasks/AR-1120.md), [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md) |
 | [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md) | [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-1120](../tasks/AR-1120.md) |
 | [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-1100](../tasks/AR-1100.md) | [AR-1120](../tasks/AR-1120.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) |
-| [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md) | [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-1100](../tasks/AR-1100.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-1151](../tasks/AR-1151.md), [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md), [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md) |
-| [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) | [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-1100](../tasks/AR-1100.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md), [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md), [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md) | [AR-1151](../tasks/AR-1151.md), [AR-1244](../tasks/AR-1244-publish-replay-supervision.md) |
+| [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md) | [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-1100](../tasks/AR-1100.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-1151](../tasks/AR-1151.md), [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md), [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md) |
+| [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) | [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-1100](../tasks/AR-1100.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md), [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md), [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md) | [AR-1151](../tasks/AR-1151.md), [AR-1244](../tasks/AR-1244-publish-replay-supervision.md), [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md) |
 | [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md) | [AR-1100](../tasks/AR-1100.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md) | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md), [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md) |
 | [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md) | [AR-1100](../tasks/AR-1100.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md) | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) |
 | [AR-1235](../tasks/AR-1235-goose-diagnostic-fixture-portability.md) | [AR-0003](../tasks/AR-0003-quality-gates.md) | None |
@@ -1414,6 +1417,7 @@ flowchart LR
 | [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md) | [AR-1242](../tasks/AR-1242-protected-main-admission.md), [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md) | [AR-1246](../tasks/AR-1246-protected-main-dco-flow.md) |
 | [AR-1246](../tasks/AR-1246-protected-main-dco-flow.md) | [AR-1242](../tasks/AR-1242-protected-main-admission.md), [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md) | None |
 | [AR-1247](../tasks/AR-1247-protected-main-dco-workflow.md) | [AR-1242](../tasks/AR-1242-protected-main-admission.md) | None |
+| [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md) | [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) | None |
 
 ## Complete AR inventory
 
@@ -1448,7 +1452,7 @@ flowchart LR
 | P1 | [AR-0890](../tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Unclaimed | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. |
 | P1 | [AR-0896](../tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Unclaimed | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun 34339927858 was launched via handoffctl and is actively watched by PID 736624/gh PID 736653; exact rerun head a4e1a9de985a4c9f22628c6d604a6e62f4f173e3, job 104684371738 currently running. Keep lease heartbeat, wait terminal, then capture failures or green result. |
 
-### Planned (63)
+### Planned (64)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1478,6 +1482,7 @@ flowchart LR
 | P0 | [AR-1215](../tasks/AR-1215-result-comparison.md): Multi-agent result comparison tutorial | Unclaimed | Teach conservative comparison of multiple agents from the same benchmark. | Implement the syntax-checked tutorial for comparing two or more agents on one benchmark definition. |
 | P0 | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md): ASB tutorial freshness CI and documentation qualification | Unclaimed | Continuously keep ASB tutorial commands and steps syntactically current. | Implement the repository-wide tutorial discovery and syntax-freshness CI gate after all tutorial contracts are defined. |
 | P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
+| P0 | [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | Unclaimed | Define the strict-replay CLI consumer contract. | Define bounded cassette artifact resolution and authenticated CLI SidecarHandoff inputs; add schemas, docs, and fail-closed tests. |
 | P1 | [AR-0604](../tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Build the CSB-to-ASB signal inventory and native x86_64 causal A/B matrix; run applicable pinned QEMU AArch64 portability checks and document native ARM64 as optional future evidence. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
@@ -1579,5 +1584,3 @@ flowchart LR
 | P0 | [AR-1191](../tasks/AR-1191.md): Verified local-agent lifecycle | Unclaimed | Install, activate, verify and recover supported local benchmark agents safely. | Run independent review on lifecycle PR #169 head 6d210836d4b45942aa6b9b2530c30a0afe30144a after hosted checks, then merge and qualify asb-tui. |
 | P0 | [AR-1196](../tasks/AR-1196-protected-main-dco-repair.md): Protected-main DCO history repair | Unclaimed | Restore a Signed-off-by-bearing protected-main history after the catalog merge. | Reconcile PR #170 merge commit 748c16ba against remote main; PR #172 is the topic re-publication candidate and PR #171 is a duplicate signed-merge candidate. Do not merge either until remote main ref and exact post-merge checks are reconciled; if main remains 817a40b, investigate the missing push event. |
 | P0 | [AR-1198](../tasks/AR-1198.md): Canonical authenticated agent-catalog digest | Unclaimed | Define and enforce the canonical authenticated ASB v1.4 agent-catalog digest. | Independently review PR #174 at exact head 3cc8fa1a27587642bda5100f45140c11f1fd0c6d, run cross-repository vector checks with asb-tui AR-1195, then merge only after all exact-head checks are green. |
-| P0 | [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md): Qualify provider authentication backends and probes | Unclaimed | Qualify provider authentication backends, probes and application integration. | PR #177 exact head 2d716c8 includes std-only polled connect/write, authenticated Gemini/Ollama wire fixtures, and stabilized malformed/redirect/oversized response fixtures. Await exact-head CI and independent review; investigate any architecture-runner failures. |
-| P0 | [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md): Provider authentication application integration | Unclaimed | Integrate provider authentication into ASB config, control and CLI surfaces. | AR complete: merged PR #179 at 2f96f211; retain post-merge verification and release evidence in durable history. |

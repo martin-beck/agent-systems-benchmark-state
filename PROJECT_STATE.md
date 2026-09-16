@@ -28,7 +28,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 35085015371 | `128ecddbfdb7` | push | Emulated aarch64 portability | in_progress:- |
 | 35085015347 | `128ecddbfdb7` | push | Repository quality | in_progress:- |
-| 35085015339 | `128ecddbfdb7` | push | Formal assurance | in_progress:- |
+| 35085015339 | `128ecddbfdb7` | push | Formal assurance | completed:success |
 | 35085015331 | `128ecddbfdb7` | push | Rust verification | in_progress:- |
 | 35085015320 | `128ecddbfdb7` | push | Fault assurance | completed:success |
 | 35085015279 | `128ecddbfdb7` | push | Hosted portability and native qualification | completed:success |
