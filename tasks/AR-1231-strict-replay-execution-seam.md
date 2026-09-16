@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents through strict replay without provider egress or live fallback.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Strict replay execution and egress-isolation seam",
-  "updated_at": "2026-09-16T01:49:44+00:00",
+  "updated_at": "2026-09-16T01:50:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1231"
 }
 ---
@@ -101,3 +101,6 @@
   policy, bounded timeout, authenticated digest record, deny-unknown-fields serde, schema artifact,
   and positive/negative validation tests. Focused locked offline cargo test -p asb-agents
   strict_replay passed. Signed DCO commit ba68508 pushed; worktree clean.
+
+- 2026-09-16T01:50:01+00:00: Recorded command exit 0; command argv SHA-256
+  ed0ac558717bcecd0a568f5798a2b9db72682728bd90bce70deed3506e8542b8.
