@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision pinned Python transport fixture runtime.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Provision pinned Python transport fixture runtime",
-  "updated_at": "2026-09-16T13:32:50+00:00",
+  "updated_at": "2026-09-16T13:33:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1253"
 }
 ---
@@ -104,3 +104,6 @@ Keep runtime images, caches, provenance, and all test activity under `/srv/data/
   handoffctl; formal run 35101828439 terminal success. PR #201 exact-head status: all 12 required
   checks SUCCESS, mergeable CLEAN, no GitHub review yet; independent review evidence remains
   required before merge.
+
+- 2026-09-16T13:33:32+00:00: Recorded command exit 0; command argv SHA-256
+  0d23c9b05ed7c5de18803505613035ed0784a46103170208024ab644ce3d39fa.
