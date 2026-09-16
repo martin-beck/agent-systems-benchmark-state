@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1271-cassette-operation-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T01:12:53+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1271-cassette-operation-contract",
   "observed_dirty": 0,
   "observed_head": "c41b423c0536fe30fd2b6c5a6a33e46c9102ec5e",
-  "owner": "asb_ar1024_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1271.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Define a dependency-neutral cassette request/response operation contract.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Dependency-neutral cassette operation contract",
-  "updated_at": "2026-09-16T23:19:09+00:00",
+  "updated_at": "2026-09-16T23:19:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1271-cassette-operation"
 }
 ---
@@ -98,3 +98,13 @@ Preserve AR-1270's blocked evidence and do not fabricate responses or authority.
   CassetteResponseSink; finish validates the shared response envelope. CLI suite passes 71/71 and
   fmt pass; product tree clean. Actual replay service invocation and supervised
   lifecycle/egress/no-fallback fixtures remain next.
+
+- 2026-09-16T23:19:36+00:00: Released blocked/ownerless at clean signed c41b423. Shared
+  CassetteRequest/Response contract, runtime one-shot RuntimeCassetteOperation, and CLI
+  take_request/CassetteResponseSink are implemented and focused suites pass (core 18/18, runtime
+  39/39, CLI 71/71, fmt). Exact blocker: runtime-neutral operation carries request + service
+  identity but no cassette contents; StrictReplayService lives in asb-replay/CLI. Invoking it would
+  require caller-supplied cassette bytes and would not prove runtime-authenticated execution.
+  Requires an approved cassette-service backend/handle that binds immutable cassette content to
+  runtime-issued operation before real request/response, egress, lifecycle, and no-fallback
+  fixtures.
