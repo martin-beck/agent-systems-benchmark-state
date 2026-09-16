@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1267-runtime-replay-execution",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T00:39:06+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1267-runtime-replay-execution",
   "observed_dirty": 0,
   "observed_head": "8ed8ce1f83e52f0ea35499e7260f7ae9474de054",
-  "owner": "asb_ar1024_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1267.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Implement real runtime-owned strict-replay execution and lifecycle supervision.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Runtime strict-replay execution hook",
-  "updated_at": "2026-09-16T22:43:55+00:00",
+  "updated_at": "2026-09-16T22:44:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1267-runtime-replay-execution"
 }
 ---
@@ -88,3 +88,11 @@ context-boundary evidence and its blocker; do not accept metadata-only behavior 
   record/isolation wrapper remains only as lower-level primitive. Focused offline CLI tests pass
   71/71 and fmt pass; product tree clean. Remaining work is argument-level replay dispatch and
   supervised lifecycle/egress/cancellation/cleanup evidence.
+
+- 2026-09-16T22:44:21+00:00: Released blocked/ownerless at clean signed head 8ed8ce1. Runtime-owned
+  ReplayDispatchContext and authenticated cassette request hook are implemented; focused CLI 71/71
+  and fmt pass. Exact blocker: runtime cannot own StrictReplayLaunchRecord/Cassette/isolation due
+  dependency cycle, while existing CLI argument dispatch has no runtime context injection and cannot
+  safely invoke the hook. Completing argument-level supervised
+  lifecycle/egress/cancel/restart/timeout/crash/no-fallback requires a separately approved
+  runtime-to-CLI transport/context seam; do not fabricate caller authority.
