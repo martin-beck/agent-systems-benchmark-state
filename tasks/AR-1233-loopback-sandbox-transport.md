@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated loopback-only sandbox transport for strict replay services.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Approved loopback-only sandbox transport",
-  "updated_at": "2026-09-16T05:13:49+00:00",
+  "updated_at": "2026-09-16T05:16:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1233"
 }
 ---
@@ -68,3 +68,6 @@
   loopback implementation is added, preventing host-network fallback. Focused cargo test --locked
   --offline -p asb-runtime sandbox::tests::malformed_specs_fail_before_spawn passed 1/1; worktree
   clean.
+
+- 2026-09-16T05:16:34+00:00: Recorded command exit 0; command argv SHA-256
+  dd64cc00d697c09654f1cab86d4f13a1d56e1cc54846d30ad53c12c02d6b725b.
