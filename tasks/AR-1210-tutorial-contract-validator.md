@@ -2,7 +2,7 @@
 {
   "branch": "docs/ar-1210-tutorial-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T05:38:56+00:00",
+  "claim_expires": "2026-09-16T05:40:44+00:00",
   "depends_on": [],
   "id": "AR-1210",
   "next_action": "Promote after review; define the versioned offline tutorial-step schema and ASB syntax validator.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define offline tutorial steps and validate them against the ASB CLI grammar.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Tutorial contract and syntax validator",
-  "updated_at": "2026-09-16T03:39:23+00:00",
+  "updated_at": "2026-09-16T03:40:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1210"
 }
 ---
@@ -44,3 +44,5 @@ be required.
 
 - 2026-09-16T03:39:16+00:00: Recorded command exit 0; command argv SHA-256
   70b6a267b6c2bd11031f54db74892e7afc85e3a32e65cad9bb055049173b5f03.
+
+- 2026-09-16T03:40:44+00:00: Heartbeat by asb_ar1210_tutorial_contract.
