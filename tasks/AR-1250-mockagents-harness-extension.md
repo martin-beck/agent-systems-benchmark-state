@@ -11,16 +11,16 @@
   "next_action": "Implement actual outbound-denial and arm64 repeat probes; run full locked gates.",
   "observed_branch": "feature/ar-1250-mockagents-harness-extension",
   "observed_dirty": 0,
-  "observed_head": "55be26880282cc5ade473ee16cf2a7ad1248bb0d",
+  "observed_head": "0d42bca02b276342606ae35bfaa30a5b5cd5247a",
   "owner": "asb_ar1250_mockagents_harness",
   "plan": "../plans/AR-1250.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend the pinned MockAgents executable qualification harness.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Extend MockAgents qualification harness",
-  "updated_at": "2026-09-16T19:12:20+00:00",
+  "updated_at": "2026-09-16T19:12:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1250"
 }
 ---
