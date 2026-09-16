@@ -7,7 +7,7 @@
     "AR-1023"
   ],
   "id": "AR-1038",
-  "next_action": "Keep AR-1038 in progress while a separately reviewed forward-only policy correction permits one strictly bounded current-main synchronization merge at the topic tip; then require exact-main green postmerge evidence before completion.",
+  "next_action": "Post-merge verified on protected main fd7daa4; retain PR132 merge/tree/signature evidence and continue coordinator monitoring.",
   "observed_branch": "test/capability-coverage-sink",
   "observed_dirty": 0,
   "observed_head": "297895dbdee6acfc2a7425c5a9ab254c6d2cce96",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent sanitized capability child tests from writing default profraw files into the source checkout.",
-  "task_revision": 130,
+  "task_revision": 131,
   "title": "Preserve coverage sinks in sanitized CLI child tests",
-  "updated_at": "2026-09-16T05:55:48+00:00",
+  "updated_at": "2026-09-16T05:56:23+00:00",
   "worktree_key": "agent-systems-benchmark-capability-coverage-sink"
 }
 ---
@@ -480,3 +480,9 @@ Fix the six `default_*.profraw` files discovered during AR-1013 full coverage wi
   policy recovery and terminal-green latest-main evidence.
 
 - 2026-09-16T05:55:48+00:00: Claimed by asb_ar1038_followup.
+
+- 2026-09-16T05:56:23+00:00: AR-1038 implementation is already merged: PR132 reviewed head 297895d
+  is an ancestor of protected main; current main includes capability coverage sink changes. Current
+  main fd7daa4 Repository quality run 35060286401 is green after AR-0897 signed policy repair, with
+  hosted portability, formal, Rust, fault and headers checks green. No additional product mutation
+  is needed.
