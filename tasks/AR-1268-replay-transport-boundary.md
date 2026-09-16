@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1268",
-  "next_action": "Adapt CLI runtime context to consume ReplayTransportV1 and add cross-crate stale/duplicate/mismatch/no-fallback tests; then run full locked gates.",
+  "next_action": "Wire CliReplayTransport into actual replay argument dispatch and add malformed/no-fallback/lifecycle integration; then run full locked gates.",
   "observed_branch": "feature/ar-1268-replay-transport-boundary",
   "observed_dirty": 0,
   "observed_head": "da7320295ad24493920d5b5ef39f30324f66dd7a",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Break the strict-replay runtime/CLI dependency cycle with a shared transport contract.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Break strict-replay runtime/CLI dependency cycle",
-  "updated_at": "2026-09-16T22:51:18+00:00",
+  "updated_at": "2026-09-16T22:51:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1268-replay-transport"
 }
 ---
@@ -96,3 +96,9 @@ Preserve AR-1267's blocked evidence; do not fabricate authority or weaken crate 
 
 - 2026-09-16T22:51:10+00:00: Recorded command exit 0; command argv SHA-256
   ca7e0bc39a17fb8fca8734460750f01bee5d2ca4ad440b9c68bebe0ca9216489.
+
+- 2026-09-16T22:51:32+00:00: Signed checkpoint da73202 adds CLI CliReplayTransport adapter over
+  shared ReplayTransportV1. It validates the contract, binds cassette/route/provider dialect to
+  exact StrictReplayLaunchRecord, consumes once, rejects duplicate consumption and stale route
+  mismatch. Cross-crate adapter tests pass 2/2; asb-core 18/18 and asb-runtime 40/40 remain green;
+  fmt pass; product tree clean.
