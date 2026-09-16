@@ -21,19 +21,19 @@ Generated from local Git and GitHub. Do not edit.
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
 | #151 | `dependabot/cargo/serde-1.0.229@c926edfde377` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
-| #196 | `fix/ar-1247-protected-main-dco-workflow@53d018d69057` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: bind Rust verification to protected-main policy |
+| #196 | `fix/ar-1247-protected-main-dco-workflow@53d018d69057` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: bind Rust verification to protected-main policy |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35084403817 | `53d018d69057` | pull_request | Repository quality | in_progress:- |
+| 35084403817 | `53d018d69057` | pull_request | Repository quality | completed:success |
 | 35084403492 | `53d018d69057` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35084403487 | `53d018d69057` | pull_request | Hosted portability and native qualification | completed:success |
 | 35084403482 | `53d018d69057` | pull_request | Rust verification | completed:success |
 | 35084403476 | `53d018d69057` | pull_request | Formal assurance | completed:success |
 | 35084403442 | `53d018d69057` | pull_request | Fault assurance | completed:success |
-| 35084403430 | `53d018d69057` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 35084403430 | `53d018d69057` | pull_request | Emulated aarch64 portability | completed:success |
 | 35084403402 | `53d018d69057` | pull_request | Huawei MIT source headers | completed:success |
 | 35084196974 | `46b7cc5668b3` | pull_request | Repository quality | completed:failure |
 | 35084196948 | `46b7cc5668b3` | pull_request | Hosted portability and native qualification | completed:failure |
