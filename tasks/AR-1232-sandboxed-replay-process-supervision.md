@@ -11,7 +11,7 @@
   "id": "AR-1232",
   "next_action": "Review blocks curl nonzero as non-causal and lacks native StrictReplayExecutor authenticated child lifecycle. Add deterministic owned loopback listener/child request fixture and executor lifecycle integration; retain explicit native prerequisite gate.",
   "observed_branch": "feature/ar-1232",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "317202820c8be8fc1c970898e110baf5122bbb7b",
   "owner": "asb_ar1232_sandbox_supervision",
   "plan": "../plans/AR-1232.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 336,
+  "task_revision": 337,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T04:41:50+00:00",
+  "updated_at": "2026-09-16T04:41:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
