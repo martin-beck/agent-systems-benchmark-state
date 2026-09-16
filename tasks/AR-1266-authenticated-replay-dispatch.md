@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add authenticated runtime context to the actual strict-replay CLI dispatch path.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Authenticated replay dispatch context",
-  "updated_at": "2026-09-16T22:34:55+00:00",
+  "updated_at": "2026-09-16T22:35:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1266-authenticated-replay"
 }
 ---
@@ -59,3 +59,6 @@ Preserve all prior blocked evidence; no fabricated launch authority or weakened 
 
 - 2026-09-16T22:34:55+00:00: Recorded command exit 0; command argv SHA-256
   4d794e29b61dffc224f97f0280c573e3ed07695dad1bba348b4bd20627fb7998.
+
+- 2026-09-16T22:35:17+00:00: Recorded command exit 0; command argv SHA-256
+  741cfe2315e8885176c610dbce3485c875124e5f3593b9609a860195946b54f0.
