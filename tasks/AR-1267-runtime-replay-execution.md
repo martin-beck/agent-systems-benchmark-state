@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement real runtime-owned strict-replay execution and lifecycle supervision.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Runtime strict-replay execution hook",
-  "updated_at": "2026-09-16T22:41:26+00:00",
+  "updated_at": "2026-09-16T22:42:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1267-runtime-replay-execution"
 }
 ---
@@ -62,3 +62,6 @@ context-boundary evidence and its blocker; do not accept metadata-only behavior 
   green; product tree clean. Existing asb-agents executor fixtures already prove qualified response,
   stale route rejection, recovery closure, and invalid cassette/identity behavior. Actual
   argument-level replay dispatch and supervised lifecycle matrix remain next.
+
+- 2026-09-16T22:42:12+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
