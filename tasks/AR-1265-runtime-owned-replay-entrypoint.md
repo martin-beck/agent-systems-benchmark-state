@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1265",
-  "next_action": "Wire replay-plan dispatch to runtime-issued issue_launch authority; add real cassette response and lifecycle/egress/no-fallback tests before full gates.",
+  "next_action": "Wire replay-plan dispatch to the runtime issuer and cassette service; add end-to-end request/response plus egress, cancellation, restart, timeout/crash, stale/duplicate/no-fallback tests.",
   "observed_branch": "feature/ar-1265-runtime-owned-replay-entrypoint",
   "observed_dirty": 0,
   "observed_head": "fcc3f49815d17f383e6c2d398c790b5b9203c78f",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a real runtime-owned strict-replay CLI entrypoint.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Runtime-owned strict-replay CLI entrypoint",
-  "updated_at": "2026-09-16T22:29:24+00:00",
+  "updated_at": "2026-09-16T22:29:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1265-runtime-replay-entrypoint"
 }
 ---
@@ -122,3 +122,11 @@ unmerged implementation is not an input; preserve its review as the reason this 
 
 - 2026-09-16T22:29:17+00:00: Recorded command exit 0; command argv SHA-256
   2810db75b93a8a5c989569a888e39d8301f0bae43c4693d291ad00ebf3bb91ee.
+
+- 2026-09-16T22:29:42+00:00: Signed checkpoint fcc3f49 adds one-shot authority regression:
+  take_launch refuses metadata-only authority without consuming it, preserving later take_once
+  semantics. Focused offline suite rerun green: asb-cli 71/71 and asb-runtime 40/40; cargo fmt
+  green. Product worktree clean at fcc3f49. Runtime-owned spawn_runtime_replay now validates the
+  strict record, consumes backend/input/lease/pinned commands from authority, calls
+  StrictReplayLaunchBridge::spawn, and retains sidecar; actual CLI replay-plan/cassette service and
+  end-to-end lifecycle/egress coverage remain next.
