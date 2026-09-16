@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1236-runtime-loopback-sidecar",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T09:12:07+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1100",
     "AR-1231"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1236-runtime-loopback-sidecar",
   "observed_dirty": 0,
   "observed_head": "1c6ab1db1496250adb927a615e7751d376e8f1e9",
-  "owner": "asb_ar1236_worker",
+  "owner": "",
   "plan": "../plans/AR-1236.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide a runtime-owned private-namespace loopback sidecar capability.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Runtime-owned loopback sidecar capability",
-  "updated_at": "2026-09-16T07:14:16+00:00",
+  "updated_at": "2026-09-16T07:15:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1236"
 }
 ---
@@ -41,3 +41,12 @@ privacy, policy, native, signature, and exact-head gates.
   runtime-owned loopback sidecar capability.
 
 - 2026-09-16T07:12:07+00:00: Claimed by asb_ar1236_worker.
+
+- 2026-09-16T07:15:03+00:00: Implemented authenticated per-launch loopback sidecar seam at signed
+  commit 1c6ab1d; cargo fmt, clippy -p asb-runtime, cargo test -p asb-runtime, and cargo test
+  --workspace all pass. Capability probe: rootless unshare -Urn is available but loopback is DOWN
+  and no reviewed mechanism exists to configure child-visible TCP; bwrap --unshare-net remains
+  isolated and cannot inject a sidecar/bridge. Final in-namespace TCP-to-Unix forwarding and
+  provider/descendant denial therefore remain blocked pending reviewed launcher/namespace contract.
+  No host sharing, firewall mutation, ambient ip command, privileged helper, credentials, or
+  unrelated AR changed.
