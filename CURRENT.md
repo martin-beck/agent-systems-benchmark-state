@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Resolve or explicitly delegate certificate/pairing/SecretBackend gaps; then obtain independent review for publication. | asb_ar0814_enrollment_authz |
+| P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Implement or explicitly split the still-owned certificate issuance/import and durable pairing identity-store ceremony, provide a qualified OS-protected SecretBackend, and add the missing hostile threat-matrix evidence/tests. Then rerun full gates and request publication review. | asb_ar0814_enrollment_authz |
 
 ## Open
 

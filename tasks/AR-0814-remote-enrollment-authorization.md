@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Resolve or explicitly delegate certificate/pairing/SecretBackend gaps; then obtain independent review for publication.",
+  "next_action": "Implement or explicitly split the still-owned certificate issuance/import and durable pairing identity-store ceremony, provide a qualified OS-protected SecretBackend, and add the missing hostile threat-matrix evidence/tests. Then rerun full gates and request publication review.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "ddbe44c95fde95cb861d633b1dbc08d4a6d0ba21",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 248,
+  "task_revision": 249,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:25:41+00:00",
+  "updated_at": "2026-09-16T19:25:52+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -667,3 +667,17 @@ Implementation has not started. Read the linked plan before claiming.
   gaps; these must be implemented or explicitly delegated before publication.
 
 - 2026-09-16T19:25:41+00:00: Heartbeat by asb_ar0814_enrollment_authz.
+
+- 2026-09-16T19:25:52+00:00: Final independent review of exact signed head
+  ddbe44c95fde95cb861d633b1dbc08d4a6d0ba21 after full gates: cargo fmt check and cargo test
+  --workspace --locked pass; endpoint/schema/CLI focused suites and auth 14/14 pass; clean tree, SSH
+  signature and matching DCO verified; legacy v1-v1.6 schema byte identity preserved. BreakGlass
+  path now correctly binds runner-owned principal/request/generation and fails closed without
+  context, with positive and negative dispatch tests. Publication is still NOT authorized because
+  the complete AR plan explicitly owns certificate issuance/import, identity store, and OS-protected
+  secret references: CertificateIdentityV1::import only validates supplied digest metadata, pairing
+  CLI emits a pending JSON object rather than performing a durable store ceremony, and SecretBackend
+  is only an abstract caller boundary with no qualified OS-backed implementation. Threat-matrix
+  evidence remains incomplete for stolen/expired/not-yet-valid/wrong-IP identities, confused
+  deputy/escalation, audit tampering, and real lost-controller recovery. Full local gates are
+  necessary but insufficient for acceptance; do not publish/merge.
