@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind immutable cassette content to a runtime-authenticated replay backend handle.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Authenticated immutable cassette backend",
-  "updated_at": "2026-09-16T23:22:50+00:00",
+  "updated_at": "2026-09-16T23:23:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1272-cassette-backend"
 }
 ---
@@ -60,3 +60,6 @@ paths as authority.
   failure accepted /tmp-like generation because allowed-character validation was absent; fixed by
   restricting generation to bounded alphanumeric/dot/underscore/dash and reran green. Runtime
   content handle and real supervised CLI replay remain next.
+
+- 2026-09-16T23:23:39+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
