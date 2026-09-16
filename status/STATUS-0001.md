@@ -1486,7 +1486,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1264](../tasks/AR-1264-pr205-merge-integrity.md): Recover signed integration after PR #205 | asb_ar1264_merge_integrity | Recover signed protected-main integration after PR #205. | Monitor exact-main post-merge workflows for signed main 69e8b064d312; verify all terminal green, then record policy/tree/signature evidence and release AR-1264 done. |
+| P0 | [AR-1264](../tasks/AR-1264-pr205-merge-integrity.md): Recover signed integration after PR #205 | asb_ar1264_merge_integrity | Recover signed protected-main integration after PR #205. | Complete: signed main 69e8b064 verified exact parents/tree/DCO; all seven post-merge workflows SUCCESS. Preserve AR-1263 traceability and recovery evidence. |
 
 ### Open (6)
 
