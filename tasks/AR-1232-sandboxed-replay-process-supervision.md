@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1232",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T06:59:54+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "994c6716904dc2f3d4b9fc186ea35490f236b869",
-  "owner": "asb_ar1232_sandbox_supervision",
+  "owner": "",
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 383,
+  "task_revision": 384,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T05:01:34+00:00",
+  "updated_at": "2026-09-16T05:03:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -1012,3 +1012,8 @@
   reverted from behavior; focused native harness passes 7/7 and executor unit suite 15/15. Product
   head 994c671 is signed/DCO, clean, pushed. This is an architecture/runtime capability blocker, not
   a test waiver.
+
+- 2026-09-16T05:03:26+00:00: Released as blocked on AR-1233. AR-1233 now depends on completed
+  AR-1231 and AR-1100, avoiding a cycle. Native StrictReplayExecutor child-service integration
+  requires the new approved loopback-only transport seam; existing signed head 994c671 and 7/7
+  native plus 15/15 unit evidence are preserved.
