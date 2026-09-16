@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1252-approved-isolated-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T14:52:44+00:00",
+  "claim_expires": "2026-09-16T14:57:47+00:00",
   "depends_on": [
     "AR-0003"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 105,
+  "task_revision": 106,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T12:57:45+00:00",
+  "updated_at": "2026-09-16T12:57:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -324,3 +324,5 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
   pushed with force-with-lease against prior d5f21ce. Full llm-double-spike suite 15/15, source
   policy headers, and diff checks pass on rebased tree. Platform source identity is now current-base
   eligible; request fresh PR checks and independent review.
+
+- 2026-09-16T12:57:47+00:00: Heartbeat by asb_ar1252_isolated_runner.
