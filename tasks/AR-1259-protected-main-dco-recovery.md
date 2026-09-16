@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover a signed protected-main DCO boundary after the unsigned PR202 web merge.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Protected-main DCO recovery for PR202",
-  "updated_at": "2026-09-16T17:08:19+00:00",
+  "updated_at": "2026-09-16T17:13:04+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-dco-1259"
 }
 ---
@@ -114,3 +114,6 @@ Create a signed, forward-only protected-main recovery for the unsigned PR202 mer
   merge_pr.py integration; GitHub web merge remains unauthorized. PR204 exact-head checks currently
   green: retained faults, TLC, platform, headers, fuzz, Kani, mutation, Loom; AArch64, Policy, Rust
   remain IN_PROGRESS. No merge authorization until terminal green and independent approval.
+
+- 2026-09-16T17:13:04+00:00: Recorded command exit 0; command argv SHA-256
+  e534b9e08b7574afd9b781d11903257a63d0723241cc6440771e0be62ce74d30.
