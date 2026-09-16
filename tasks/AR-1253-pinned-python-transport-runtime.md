@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1253-pinned-python-transport-runtime",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T15:36:22+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1252"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1253-pinned-python-transport-runtime",
   "observed_dirty": 0,
   "observed_head": "b7797d05c1a12f4e5cdd8d7df2a7b26c72425052",
-  "owner": "asb_ar1253_python_runtime",
+  "owner": "",
   "plan": "../plans/AR-1253.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Provision pinned Python transport fixture runtime.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Provision pinned Python transport fixture runtime",
-  "updated_at": "2026-09-16T13:40:34+00:00",
+  "updated_at": "2026-09-16T13:41:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1253"
 }
 ---
@@ -126,3 +126,15 @@ Keep runtime images, caches, provenance, and all test activity under `/srv/data/
 
 - 2026-09-16T13:40:34+00:00: Recorded command exit 0; command argv SHA-256
   7b1f359c884acec80a5995157f78141ba15a1f0a52d6a82f4f74102ba19240c2.
+
+- 2026-09-16T13:41:05+00:00: Completed and verified. Signed exact head b7797d05 merged via local
+  signed no-ff integration as a0befc0ff247a42b8d796af161b58b1011de8377 (parents
+  85bcd1e423a6bd7da29a29cac4dbdcf9e4822837 and b7797d05c1a12f4e5cdd8d7df2a7b26c72425052; tree
+  ed49266ea0a24423a4712894203f0a1472d4867e; SSH signature G martin.beck2@gmx.de; DCO present). PR
+  #201 exact-head all 12 required checks green after transient Loom ExecutableFileBusy rerun (formal
+  run 35101828439, rerun Loom job 104814960434). All seven exact-main post-merge workflows for
+  a0befc0 terminal SUCCESS: Emulated aarch64 35102724959, Repository quality 35102725004, Hosted
+  portability 35102725050, Fault assurance 35102725038, Rust verification 35102725105, Huawei MIT
+  headers 35102724977, Formal assurance 35102725019. Local check_dco and protected-main
+  repository_policy passed; exact remote tree/signature/DCO verified. Runner-only transient
+  classified and no source weakening.

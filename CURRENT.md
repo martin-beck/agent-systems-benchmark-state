@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1253](tasks/AR-1253-pinned-python-transport-runtime.md): Provision pinned Python transport fixture runtime | Provision pinned Python transport fixture runtime. | Monitor post-merge workflows for exact main a0befc0 until all seven terminal SUCCESS; verify exact tree/signature/DCO/policy, then release AR-1253 done. | asb_ar1253_python_runtime |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -290,6 +284,7 @@ Never edit this file directly.
 | P1 | [AR-1028](tasks/AR-1028-asb-cli-workflow-captures.md): Generate ASB CLI workflow captures | Produce reproducible ASB CLI transcripts separately from standalone TUI screenshots. | Release done after verified corrective publication and exact-tree post-merge transcript regeneration. | - |
 | P1 | [AR-1197](tasks/AR-1197-control-scratch-isolation-current-main.md): Qualify current-main control scratch isolation | Qualify concurrent ASB control scratch-root isolation on current repaired main. | Obtain independent immutable-head review of PR #173; then merge only through protected main after exact-head checks remain green, and verify post-merge assurance at the resulting main SHA. | - |
 | P1 | [AR-1235](tasks/AR-1235-goose-diagnostic-fixture-portability.md): Portable Goose diagnostic fixture | Repair Goose diagnostic fixture portability under emulated AArch64. | Hosted Emulated aarch64 portability workflow 35062888126 succeeded at exact head fd7daa43549edd67b60076aa6b1eee333061b438; job 104686828496 terminal success. This closes the original Goose exit-127 evidence as runner-only/transient; no source diff was required. Release AR done/ownerless. | - |
+| P1 | [AR-1253](tasks/AR-1253-pinned-python-transport-runtime.md): Provision pinned Python transport fixture runtime | Provision pinned Python transport fixture runtime. | Monitor post-merge workflows for exact main a0befc0 until all seven terminal SUCCESS; verify exact tree/signature/DCO/policy, then release AR-1253 done. | - |
 | P2 | [AR-0202](tasks/AR-0202-kernel-diagnostics.md): Add optional kernel diagnostics | Integrate perf and optional eBPF diagnostics without making privileged tools mandatory. | Run final exact-main and local post-merge verification using required native x86_64 kernel evidence and applicable pinned QEMU AArch64 portability checks; record native ARM64 PMU/eBPF as optional future evidence, then release. | - |
 | P2 | [AR-0308](tasks/AR-0308-agent-mini-swe.md): Implement mini-SWE-agent client adapter | Run pinned mini-SWE-agent as a bounded batch engineering agent. | Run final state validation/live doctor and release done after confirming clean synchronized product/state refs at signed merge a0d80e4. | - |
 | P2 | [AR-0309](tasks/AR-0309-agent-openhands.md): Implement maintained OpenHands SDK client adapter | Run a maintained MIT OpenHands SDK or canonical headless client. | Monitor PR #65 exact-head CI for fec0487, investigate any failure, and await final review; do not merge. | - |
