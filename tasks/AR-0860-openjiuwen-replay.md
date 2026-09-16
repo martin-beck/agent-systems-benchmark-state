@@ -12,11 +12,11 @@
   "plan": "../plans/AR-0860.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Qualify strict OpenJiuwen replay.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Qualify strict OpenJiuwen replay",
-  "updated_at": "2026-09-08T18:55:00+00:00",
+  "updated_at": "2026-09-16T08:20:45+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-replay"
 }
 ---
@@ -25,3 +25,6 @@
 Seal the sanitized live capture and prove strict offline replay, causal parity, malformed-record rejection, and zero external network.
 
 This phase cannot claim support from mocks, parser fixtures, source inspection, compilation, or mutable artifacts. If its executable evidence is unavailable, leave this child blocked with exact provenance evidence while the sibling agent series proceeds.
+
+- 2026-09-16T08:20:45+00:00: Dependency AR-0859 is complete; begin strict OpenJiuwen replay
+  qualification.
