@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1251-mockagents-transport-sandbox",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T20:52:09+00:00",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1251-mockagents-transport-sandbox",
   "observed_dirty": 0,
   "observed_head": "128ecddbfdb7fcfff6e257adf3237b5866aca481",
-  "owner": "",
+  "owner": "asb_ar1251_mockagents_transport",
   "plan": "../plans/AR-1251.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add a bounded transport and sandbox fixture for MockAgents qualification.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Add MockAgents transport sandbox fixture",
-  "updated_at": "2026-09-16T18:51:47+00:00",
+  "updated_at": "2026-09-16T18:52:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1251"
 }
 ---
@@ -65,3 +65,5 @@ preserve privacy, network-denial, signature, DCO, and exact-tree gates.
 - 2026-09-16T18:51:47+00:00: Dependencies AR-0888 and AR-0889 are durably done; transport/sandbox
   fixture implementation is now the actionable gap for ASB qualification. Reopen without weakening
   network or evidence gates.
+
+- 2026-09-16T18:52:09+00:00: Claimed by asb_ar1251_mockagents_transport.
