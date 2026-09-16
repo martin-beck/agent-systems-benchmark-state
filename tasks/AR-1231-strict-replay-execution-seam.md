@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1231.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Execute real agents through strict replay without provider egress or live fallback.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Strict replay execution and egress-isolation seam",
-  "updated_at": "2026-09-16T01:32:00+00:00",
+  "updated_at": "2026-09-16T01:37:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1231"
 }
 ---
@@ -30,3 +30,6 @@
   replay command only decodes/indexes/selects cassettes and emits metadata; no adapter-facing
   launch seam passes `StrictReplayService`, and network denial is declarative only. AR-1151 must
   consume this prerequisite before claiming executable strict replay.
+
+- 2026-09-16T01:37:59+00:00: Dependencies AR-0505, AR-1100 and AR-1230 are done; promote strict
+  replay execution seam.
