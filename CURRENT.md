@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Wire runner-owned authenticated admin context and generation/audit into BreakGlass dispatch; then rerun full locked workspace gates. | asb_ar0814_enrollment_authz |
-| P1 | [AR-1250](tasks/AR-1250-mockagents-harness-extension.md): Extend MockAgents qualification harness | Extend the pinned MockAgents executable qualification harness. | Implement actual outbound-denial and arm64 repeat probes; run full locked gates. | asb_ar1250_mockagents_harness |
+| P1 | [AR-1250](tasks/AR-1250-mockagents-harness-extension.md): Extend MockAgents qualification harness | Extend the pinned MockAgents executable qualification harness. | Run qualification with approved pinned artifact; add arm64 repeat evidence using explicit runner. | asb_ar1250_mockagents_harness |
 
 ## Open
 

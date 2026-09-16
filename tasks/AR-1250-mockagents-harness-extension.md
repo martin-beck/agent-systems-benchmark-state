@@ -8,7 +8,7 @@
     "AR-0889"
   ],
   "id": "AR-1250",
-  "next_action": "Implement actual outbound-denial and arm64 repeat probes; run full locked gates.",
+  "next_action": "Run qualification with approved pinned artifact; add arm64 repeat evidence using explicit runner.",
   "observed_branch": "feature/ar-1250-mockagents-harness-extension",
   "observed_dirty": 0,
   "observed_head": "0d42bca02b276342606ae35bfaa30a5b5cd5247a",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend the pinned MockAgents executable qualification harness.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Extend MockAgents qualification harness",
-  "updated_at": "2026-09-16T19:12:27+00:00",
+  "updated_at": "2026-09-16T19:12:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1250"
 }
 ---
@@ -191,3 +191,8 @@ privacy, signature, DCO, and exact-tree gates; do not claim support from host in
 
 - 2026-09-16T19:12:20+00:00: Recorded command exit 0; command argv SHA-256
   728739e7c4650cd19356af516db98fc74e39cef9fc7f94e342c23ba7257f75a4.
+
+- 2026-09-16T19:12:39+00:00: Signed+DCO 0d42bca adds a bounded real outbound connection attempt to
+  TEST-NET and fail-closed success semantics; py_compile plus qualification, conformance, and
+  scenario suites pass 9/9. Worktree clean. Arm64 remains blocked until an approved pinned emulator
+  runner is available.
