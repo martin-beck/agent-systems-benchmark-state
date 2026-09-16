@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 301,
+  "task_revision": 302,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T16:37:27+00:00",
+  "updated_at": "2026-09-16T16:39:00+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -917,3 +917,6 @@ Implementation has not started. Read the linked plan before claiming.
   AR-1242/1246 are done. Existing post-merge merge commit 14b604f remains GitHub-authored without
   Signed-off-by. Coordinator must create/promote narrowly scoped successor before signed recovery;
   AR-0813 remains in progress.
+
+- 2026-09-16T16:39:00+00:00: Recorded command exit 0; command argv SHA-256
+  b5683d27b91bd14f029498f2299bd167efc5aa278c5da93ad26ca6f6b6d1dbc4.
