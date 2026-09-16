@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-live",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T08:50:14+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0858"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "cceb76f436f8918786f610afdf20ba99fbd87d34",
-  "owner": "asb_ar0859_runtime_requal",
+  "owner": "",
   "plan": "../plans/AR-0859.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 232,
+  "task_revision": 233,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-16T06:51:57+00:00",
+  "updated_at": "2026-09-16T06:52:37+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -794,3 +794,7 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   openjiuwen-0.1.17.post1-py3-none-any.whl and openjiuwen-runtime.lock, with no pinned
   executable/runtime interpreter required by real_openjiuwen.rs. No compatible substitute or live
   claim used.
+
+- 2026-09-16T06:52:37+00:00: Released blocked and ownerless. Live OpenJiuwen evidence requires the
+  missing pinned executable/runtime closure; retain fail-closed qualification and do not substitute
+  an unreviewed runtime.
