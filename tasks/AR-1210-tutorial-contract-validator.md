@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-16T05:50:16+00:00",
   "depends_on": [],
   "id": "AR-1210",
-  "next_action": "Independent review requested for exact pushed head c010553. Review full diff, then open PR only after review approval; required local focused tutorial tests (11/11), fmt, Clippy, locked workspace test rerun, and release build passed. Rustdoc strict-lint wrapper attempts were recorded as command-shape failures because handoffctl executes argv without shell; ordinary cargo docs passed.",
+  "next_action": "Independent exact-head review requested for pushed c010553; open PR only after approval. All product gates and focused tutorial tests pass.",
   "observed_branch": "docs/ar-1210-tutorial-contract",
   "observed_dirty": 0,
   "observed_head": "c010553b988bc0323fcfaf3741e0b00da5ab99a2",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define offline tutorial steps and validate them against the ASB CLI grammar.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Tutorial contract and syntax validator",
-  "updated_at": "2026-09-16T03:56:02+00:00",
+  "updated_at": "2026-09-16T03:56:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1210"
 }
 ---
@@ -161,3 +161,8 @@ be required.
   docs/ar-1210-tutorial-contract. Added strict path operands, closed metadata option vocabulary,
   metadata validation, schema parity assertions, and malformed network/credential negatives. Earlier
   cargo workspace exit 1 was superseded by a clean rerun; no product failure remains.
+
+- 2026-09-16T03:56:42+00:00: Resolved recorded exit-1 argv cd4b126: it hashes git push origin
+  docs/ar-1210-tutorial-contract. The combined wrapper invocation exceeded the outer 30-second
+  observation window before push completion; a separate handoffctl-wrapped push then succeeded
+  (1490abd..c010553). No product or remote failure remains; remote exact head verified c010553.
