@@ -3,7 +3,10 @@
   "branch": "feature/ar-1238-runtime-loopback-supervisor",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1100", "AR-1231"],
+  "depends_on": [
+    "AR-1100",
+    "AR-1231"
+  ],
   "id": "AR-1238",
   "next_action": "Implement and qualify a pinned in-tree supervisor that composes a private user/network namespace, raises only its own loopback, mounts the per-launch Unix relay, and supervises sidecar plus adapter without host networking.",
   "observed_branch": "feature/ar-1238-runtime-loopback-supervisor",
@@ -13,11 +16,11 @@
   "plan": "../plans/AR-1238.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Provide the runtime-owned private-namespace supervisor for loopback replay.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Runtime-owned loopback supervisor",
-  "updated_at": "2026-09-16T07:34:00+00:00",
+  "updated_at": "2026-09-16T07:46:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1238"
 }
 ---
@@ -32,3 +35,6 @@ Acceptance: immutable command identity and route/generation attestation; bounded
 startup; fail-closed namespace setup; teardown/reaping on success, timeout, cancellation, crash,
 restart, duplicate, stale, and partial launch; provider/external egress denial; unrelated-process
 non-interference; focused/full locked, privacy, policy, native, signature/DCO, and exact-head gates.
+
+- 2026-09-16T07:46:08+00:00: Dependencies AR-1100 and AR-1231 verified complete; promote
+  runtime-owned loopback supervisor prerequisite.
