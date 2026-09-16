@@ -1465,7 +1465,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | asb_ar1024_lifecycle_router | Define the strict-replay CLI consumer contract. | CI is still running on 7d9c2ee; publication blocked by independent review. Replay-plan provenance repair is complete, but runtime-owned launch integration remains required: literal attestation/LoopbackSidecar path does not invoke StrictReplayLaunchBridge::spawn with SandboxBackend/ResourceLease or prove child egress, cancellation, cleanup, and no-fallback. |
+| P0 | [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | asb_ar1024_lifecycle_router | Define the strict-replay CLI consumer contract. | Runtime-supervision integration remains blocking: implement or route the approved StrictReplayLaunchBridge/SandboxBackend/ResourceLease child execution seam, with real cassette request/response, provider-egress denial, cancellation/restart/cleanup and no-fallback evidence. PR #197 exact head 7d9c2ee has all required CI green; do not merge until independent review clears this blocker. |
 
 ### Open (5)
 

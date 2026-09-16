@@ -8,7 +8,7 @@
     "AR-1232"
   ],
   "id": "AR-1248",
-  "next_action": "CI is still running on 7d9c2ee; publication blocked by independent review. Replay-plan provenance repair is complete, but runtime-owned launch integration remains required: literal attestation/LoopbackSidecar path does not invoke StrictReplayLaunchBridge::spawn with SandboxBackend/ResourceLease or prove child egress, cancellation, cleanup, and no-fallback.",
+  "next_action": "Runtime-supervision integration remains blocking: implement or route the approved StrictReplayLaunchBridge/SandboxBackend/ResourceLease child execution seam, with real cassette request/response, provider-egress denial, cancellation/restart/cleanup and no-fallback evidence. PR #197 exact head 7d9c2ee has all required CI green; do not merge until independent review clears this blocker.",
   "observed_branch": "feature/ar-1248-strict-replay-cli-contract",
   "observed_dirty": 0,
   "observed_head": "7d9c2ee2e08b9d61cb03837236918575405fb5c2",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 136,
+  "task_revision": 137,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T20:12:20+00:00",
+  "updated_at": "2026-09-16T20:20:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -390,3 +390,10 @@ formal, privacy, signature, DCO, and exact-tree gates.
   request/response, provider-egress denial, cancellation/cleanup, restart and no-fallback evidence
   remain unproven. Do not merge; retain exact-head CI monitoring and route runtime integration to
   the approved runtime capability successor if outside this CLI contract.
+
+- 2026-09-16T20:20:27+00:00: Terminal exact-head CI recorded for PR #197 head 7d9c2ee: AArch64
+  portability run 35144819641, Formal assurance run 35144819644, Repository quality run 35144819653,
+  Rust verification run 35144819699, plus AWQ 35144819681, Fault assurance 35144819716, Platform
+  evidence 35144819659, and headers 35144819652 all concluded SUCCESS. Independent review still
+  blocks publication because replay_plan does not invoke supervised runtime child launch or prove
+  end-to-end transport lifecycle.
