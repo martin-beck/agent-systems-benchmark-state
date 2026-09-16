@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1234",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T09:03:55+00:00",
   "depends_on": [
     "AR-1100",
     "AR-1231"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1234",
   "observed_dirty": 0,
   "observed_head": "04b3f728fc5ff2a7e883fc1dcf0458865ce96247",
-  "owner": "",
+  "owner": "asb_loopback_plan_worker",
   "plan": "../plans/AR-1234.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide an approved runtime-owned loopback-only sandbox namespace capability.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Runtime-owned loopback namespace capability",
-  "updated_at": "2026-09-16T07:03:53+00:00",
+  "updated_at": "2026-09-16T07:03:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1234"
 }
 ---
@@ -163,3 +163,5 @@
 - 2026-09-16T07:03:53+00:00: Beginning dependency-ordered implementation attempt: AR-1234 only. Use
   rootless private namespace and runtime-owned relay; fail closed and do not use host sharing,
   firewall mutation, ambient helpers, credentials, or external network.
+
+- 2026-09-16T07:03:55+00:00: Claimed by asb_loopback_plan_worker.
