@@ -195,8 +195,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-recovery-models` | `feature/recovery-models` | `a288bb3485aa` | 0 | behind 573, ahead 0 |
 | `agent-systems-benchmark-redacted-request-pointer-replay` | `feature/redacted-request-pointer-replay` | `d7492ef5e9ad` | 0 | behind 602, ahead 0 |
 | `agent-systems-benchmark-reliability-fairness` | `feature/reliability-fairness` | `eb28ca7aeae5` | 0 | behind 648, ahead 0 |
-| `agent-systems-benchmark-remote-control-transport` | `feature/remote-control-transport` | `0cb96d28a731` | 1 | behind 0, ahead 4 |
-| changed files | - | - | - | `crates/asb-control/src/transport.rs` |
+| `agent-systems-benchmark-remote-control-transport` | `feature/remote-control-transport` | `c46a3a6d9904` | 0 | behind 0, ahead 5 |
 | `agent-systems-benchmark-replay-aider` | `feature/replay-aider` | `ec0a2930690c` | 0 | behind 610, ahead 0 |
 | `agent-systems-benchmark-replay-cassettes` | `feature/replay-cassettes` | `cd88f5703fb3` | 0 | behind 730, ahead 0 |
 | `agent-systems-benchmark-replay-codex` | `feature/replay-codex` | `d086fec11f59` | 0 | behind 600, ahead 0 |
