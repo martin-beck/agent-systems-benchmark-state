@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Integrate authorization context into enrollment and CLI mutation dispatch; add rotation/revocation audit tests.",
+  "next_action": "Add enrollment ceremony identity binding and scoped CLI authorization dispatch; test rotation/revocation audit privacy.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "c5a8724cdf2786265a9ee5eca144626c307a8991",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T17:42:16+00:00",
+  "updated_at": "2026-09-16T17:42:26+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -82,3 +82,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T17:42:09+00:00: Recorded command exit 0; command argv SHA-256
   ee406cb76bfaf49e47fc10593110a825b1ad8f88bd8c75068d0ee3995b45406e.
+
+- 2026-09-16T17:42:26+00:00: Signed+DCO c5a8724 adds permission_for_call/authorize_call wiring for
+  every ControlCall plus 3 focused authz tests passing. RemoteRole denies observer mutations and
+  operator enrollment/revocation; invalid digests/generation and unknown fields fail closed.
