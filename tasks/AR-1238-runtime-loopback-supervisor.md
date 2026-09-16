@@ -8,7 +8,7 @@
     "AR-1231"
   ],
   "id": "AR-1238",
-  "next_action": "Package and pin asb_loopback_supervisor and sidecar in the trusted runtime bundle; then run real end-to-end cassette relay with authenticated host listener, egress denial, teardown, and unrelated-process tests.",
+  "next_action": "Provide trusted runtime bundle installation and immutable digest pinning for supervisor and sidecar; then run native bwrap end-to-end cassette and isolation tests.",
   "observed_branch": "feature/ar-1238-runtime-loopback-supervisor",
   "observed_dirty": 0,
   "observed_head": "d9f42ecb2a205b86250233f4f4c75688a997c063",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned private-namespace supervisor for loopback replay.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Runtime-owned loopback supervisor",
-  "updated_at": "2026-09-16T08:07:14+00:00",
+  "updated_at": "2026-09-16T08:07:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1238"
 }
 ---
@@ -113,3 +113,7 @@ remaining work is launcher integration and real sidecar forwarding, not a host c
   qualification test and retain fail-closed packaging boundary.
 
 - 2026-09-16T08:07:14+00:00: Claimed by asb_ar1238_bwrap_relay_worker.
+
+- 2026-09-16T08:07:17+00:00: Added signed commit 4a23b97 with authenticated generation handshake and
+  end-to-end HTTP relay test (3/3 sidecar tests). Full runtime gates remain green. No host
+  networking or global policy changes.
