@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Make ShellCheck fail closed",
-  "updated_at": "2026-09-16T08:44:25+00:00",
+  "updated_at": "2026-09-16T08:50:08+00:00",
   "worktree_key": "agent-systems-benchmark-shellcheck-fail-closed"
 }
 ---
@@ -125,3 +125,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-16T08:44:25+00:00: 2026-09-16T08:45Z: Initial merge correctly refused because main
   advanced from c261af0 to 606375f. Rebased 8176605 onto 606375f, signature verified G and DCO
   retained, force-with-lease updated PR #190. No source changes beyond rebase.
+
+- 2026-09-16T08:50:08+00:00: Recorded command exit 0; command argv SHA-256
+  aab8f510764e76ae7ad1e219cd8e20f9de840c1a6be5ba60afee972e43090d33.
