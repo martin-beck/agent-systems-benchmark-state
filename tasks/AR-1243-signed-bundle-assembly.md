@@ -9,7 +9,7 @@
     "AR-1241"
   ],
   "id": "AR-1243",
-  "next_action": "Run combined bundle/replay focused tests and full locked/policy/signature gates at 99c5cd2; then publish only after exact-head review.",
+  "next_action": "Stop AR-1243 publication pending coordinator separation/reconciliation: branch c9fdcaf includes unrelated runtime/replay commits beyond bundle-only scope. Preserve all signed history; create a clean packaging branch or coordinator-approved split before gates/PR.",
   "observed_branch": "feature/ar-1243",
   "observed_dirty": 0,
   "observed_head": "dc1fe1dcfa462d2953bb9033297c78a41633d559",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Build, sign, verify, and publish installable supervisor and sidecar runtime bundles.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Installable signed runtime bundle assembly",
-  "updated_at": "2026-09-16T09:20:18+00:00",
+  "updated_at": "2026-09-16T09:20:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1243"
 }
 ---
@@ -77,3 +77,9 @@ private material; do not alter host networking, firewall, credentials, or unrela
 - 2026-09-16T09:20:18+00:00: Bundle assembly commit dc1fe1d is SSH-signed/DCO and preserves prior
   a14ea8b. Shared branch then received concurrent signed replay launch-bridge commit 99c5cd2;
   preserved without rewriting. Current exact branch head is 99c5cd2; worktree clean.
+
+- 2026-09-16T09:20:50+00:00: Scope audit: worktree is clean at c9fdcaf, all observed feature commits
+  are SSH-signed/DCO, but origin/main...HEAD includes runtime supervisor/sidecar, sandbox, replay
+  launch bridge, schema and agent changes in addition to bundle tooling. AR-1243 plan permits only
+  bundle packaging/signing tooling, release fixtures, and documentation; do not publish this mixed
+  branch or rewrite unrelated history. Prior bundle commit dc1fe1d and tests remain preserved.

@@ -1407,7 +1407,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md): Installable signed runtime bundle assembly | asb_ar1232_lifecycle_router | Build, sign, verify, and publish installable supervisor and sidecar runtime bundles. | Run combined bundle/replay focused tests and full locked/policy/signature gates at 99c5cd2; then publish only after exact-head review. |
+| P0 | [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md): Installable signed runtime bundle assembly | asb_ar1232_lifecycle_router | Build, sign, verify, and publish installable supervisor and sidecar runtime bundles. | Stop AR-1243 publication pending coordinator separation/reconciliation: branch c9fdcaf includes unrelated runtime/replay commits beyond bundle-only scope. Preserve all signed history; create a clean packaging branch or coordinator-approved split before gates/PR. |
 
 ### Open (5)
 
