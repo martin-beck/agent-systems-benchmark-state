@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1233.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide an authenticated loopback-only sandbox transport for strict replay services.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Approved loopback-only sandbox transport",
-  "updated_at": "2026-09-16T05:21:06+00:00",
+  "updated_at": "2026-09-16T06:48:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1233"
 }
 ---
@@ -86,3 +86,6 @@
   LoopbackOnly preservation is implemented at signed head 143213c with full asb-runtime gates green.
   Requires approved runtime-owned loopback namespace/helper before native child cassette-service
   tests can proceed.
+
+- 2026-09-16T06:48:39+00:00: Resuming exclusively for capability assessment and fail-closed
+  LoopbackOnly implementation; no host-network sharing or ambient egress.
