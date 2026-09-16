@@ -34,8 +34,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1231` | `feature/ar-1231` | `fd8eaef0c36d` | 0 | behind 50, ahead 0 |
 | `agent-systems-benchmark-ar-1232` | `feature/ar-1232` | `7613c678c718` | 0 | behind 49, ahead 27 |
 | `agent-systems-benchmark-ar-1233` | `feature/ar-1233` | `b8455b3fc5f5` | 0 | behind 28, ahead 2 |
-| `agent-systems-benchmark-ar-1233-positive` | `feature/ar-1233-positive-transport` | `b994e03331fe` | 2 | behind 303, ahead 8 |
-| changed files | - | - | - | `crates/asb-runtime/src/bin/asb_loopback_supervisor.rs`, `crates/asb-runtime/src/sandbox.rs` |
+| `agent-systems-benchmark-ar-1233-positive` | `feature/ar-1233-positive-transport` | `b994e03331fe` | 3 | behind 303, ahead 8 |
+| changed files | - | - | - | `crates/asb-runtime/src/bin/asb_loopback_supervisor.rs`, `crates/asb-runtime/src/sandbox.rs`, `crates/asb-runtime/tests/sandbox_boundary.rs` |
 | `agent-systems-benchmark-ar-1234` | `feature/ar-1234` | `04b3f728fc5f` | 0 | behind 22, ahead 2 |
 | `agent-systems-benchmark-ar-1235` | `feature/ar-1235-goose-fixture-portability` | `fd7daa43549e` | 3 | behind 19, ahead 0 |
 | changed files | - | - | - | `target-hosted-aarch64/`, `target-hosted-full-aarch64/`, `target-repeat-aarch64/` |
@@ -148,7 +148,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-openjiuwen-adapter` | `feature/openjiuwen-adapter` | `43ceb0f1bf8b` | 0 | behind 326, ahead 0 |
 | `agent-systems-benchmark-openjiuwen-live` | `feature/openjiuwen-live` | `230084ef1ea8` | 0 | behind 14, ahead 0 |
 | `agent-systems-benchmark-openjiuwen-provenance` | `feature/openjiuwen-provenance` | `addcfab39e48` | 0 | behind 350, ahead 0 |
-| `agent-systems-benchmark-openjiuwen-replay` | `feature/openjiuwen-replay` | `c261af069c5c` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-openjiuwen-replay` | `feature/openjiuwen-replay` | `c261af069c5c` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-agents/tests/fixtures/openjiuwen-cassette.json` |
 | `agent-systems-benchmark-openjiuwen-runtime-closure` | `fix/openjiuwen-runtime-closure` | `b7559931ef79` | 0 | behind 302, ahead 0 |
 | `agent-systems-benchmark-performance-workloads` | `feature/performance-workloads` | `0f303b3ec179` | 0 | behind 352, ahead 0 |
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 654, ahead 0 |
@@ -187,8 +188,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-runtime-bundle-manifest` | `feature/runtime-bundle-manifest` | `4b2805d870df` | 0 | behind 536, ahead 0 |
 | `agent-systems-benchmark-sandbox-runtime` | `feature/sandbox-runtime` | `ac4a23599649` | 0 | behind 613, ahead 0 |
 | `agent-systems-benchmark-sandbox-test-portability` | `fix/sandbox-test-portability` | `23035acde688` | 0 | behind 601, ahead 0 |
-| `agent-systems-benchmark-shellcheck-fail-closed` | `fix/shellcheck-fail-closed` | `c261af069c5c` | 4 | behind 0, ahead 0 |
-| changed files | - | - | - | `.github/workflows/quality.yml`, `config/quality-tools.json`, `tools/quality/install-external-tools.sh`, `tools/quality/test_failure_paths.py` |
+| `agent-systems-benchmark-shellcheck-fail-closed` | `fix/shellcheck-fail-closed` | `c261af069c5c` | 11 | behind 0, ahead 0 |
+| changed files | - | - | - | `.github/workflows/quality.yml`, `config/quality-tools.json`, `tools/quality/install-external-tools.sh`, `tools/quality/test_failure_paths.py`, `crates/asb-cli/default_17620349906757407305_0_1871441.profraw`, `crates/asb-cli/default_17620349906757407305_0_1871446.profraw`, `crates/asb-cli/default_17620349906757407305_0_1871447.profraw`, `crates/asb-cli/default_17620349906757407305_0_1871449.profraw`, `crates/asb-cli/default_17620349906757407305_0_1871450.profraw`, `crates/asb-cli/default_17620349906757407305_0_1871471.profraw`, `crates/asb-cli/default_17620349906757407305_0_1871474.profraw` |
 | `agent-systems-benchmark-ssh-remote-bootstrap` | `feature/ssh-remote-bootstrap` | `980276dd2885` | 0 | behind 348, ahead 0 |
 | `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `3bcfd85dedd3` | 0 | behind 638, ahead 0 |
 | `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `410ecc95b80e` | 0 | behind 626, ahead 0 |

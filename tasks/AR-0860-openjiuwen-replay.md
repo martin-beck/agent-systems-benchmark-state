@@ -9,7 +9,7 @@
   "id": "AR-0860",
   "next_action": "Seal the sanitized live capture and prove strict offline replay, causal parity, malformed-record rejection, and zero external network.",
   "observed_branch": "feature/openjiuwen-replay",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "c261af069c5ce7ecb84b2acfc56f12d2a4cb116a",
   "owner": "asb_ar1232_lifecycle_router",
   "plan": "../plans/AR-0860.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict OpenJiuwen replay.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Qualify strict OpenJiuwen replay",
-  "updated_at": "2026-09-16T08:25:11+00:00",
+  "updated_at": "2026-09-16T08:25:18+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-replay"
 }
 ---
