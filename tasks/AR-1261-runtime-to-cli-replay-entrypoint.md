@@ -11,7 +11,7 @@
   "id": "AR-1261",
   "next_action": "Promote after AR-1260 is resolved or superseded; implement the typed runtime-to-CLI handoff entrypoint and prove supervised replay lifecycle.",
   "observed_branch": "feature/ar-1261-runtime-to-cli-replay-entrypoint",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "0ff179226254a988362b09404841ae51d9ec7d18",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1261.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-owned entrypoint for strict-replay CLI supervision.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Runtime-to-CLI strict-replay handoff entrypoint",
-  "updated_at": "2026-09-16T20:50:34+00:00",
+  "updated_at": "2026-09-16T20:50:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1261-runtime-cli"
 }
 ---
