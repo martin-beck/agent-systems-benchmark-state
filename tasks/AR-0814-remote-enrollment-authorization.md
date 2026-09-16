@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 119,
+  "task_revision": 120,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T18:11:04+00:00",
+  "updated_at": "2026-09-16T18:11:20+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -330,3 +330,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T18:10:58+00:00: Recorded command exit 0; command argv SHA-256
   22fc0cba6787640c4d02fd62022e4b1611b38b6b4bf41c5f444d74d41011c7e9.
+
+- 2026-09-16T18:11:20+00:00: Signed+DCO eaab82f adds CAS-style rotate_if_generation and bounded
+  certificate validate_at clock skew. Auth suite 13/13 passes, including stale concurrent rotation
+  and pre/post-window clock failures. Worktree clean.
