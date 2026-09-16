@@ -11,17 +11,17 @@
   "id": "AR-1269",
   "next_action": "Promote after dependency verification; implement the runtime-owned authenticated launch-bundle factory and real supervised replay fixtures.",
   "observed_branch": "feature/ar-1269-runtime-replay-launch-factory",
-  "observed_dirty": 0,
-  "observed_head": "",
+  "observed_dirty": 2,
+  "observed_head": "69e8b064d3121a4bae1f672cdae9c0c8672000bc",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1269.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create runtime-owned launch bundles for supervised strict replay.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Runtime-owned replay launch-bundle factory",
-  "updated_at": "2026-09-16T22:58:22+00:00",
+  "updated_at": "2026-09-16T22:58:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1269-runtime-launch-factory"
 }
 ---
