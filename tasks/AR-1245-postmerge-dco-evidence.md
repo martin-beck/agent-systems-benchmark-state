@@ -8,7 +8,7 @@
     "AR-1243"
   ],
   "id": "AR-1245",
-  "next_action": "Open/review commit 3e12d64; run protected-main CI and post-merge checks.",
+  "next_action": "Monitor PR #194 required checks; merge only after all protected checks pass.",
   "observed_branch": "fix/ar-1245-postmerge-dco-evidence",
   "observed_dirty": 0,
   "observed_head": "",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair DCO admission for the immutable PR-192 GitHub merge while preserving strict future checks.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Post-merge DCO admission evidence",
-  "updated_at": "2026-09-16T09:41:06+00:00",
+  "updated_at": "2026-09-16T09:41:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1245"
 }
 ---
@@ -39,3 +39,7 @@ bundle, or TUI code.
   rejected. cargo fmt, clippy, workspace tests (166 passed, 1 ignored) and targeted flaky test pass.
   Full negative suite is blocked locally because the configured external-tools directory lacks
   shellcheck.
+
+- 2026-09-16T09:41:38+00:00: Published signed commit 3e12d64; existing PR #194 is open and MERGEABLE
+  with head 3e12d64, base published merge 75248467. Required GitHub checks are queued/in progress
+  (run 35080824787 etc.). Local Rust gates pass; negative suite awaits missing shellcheck.
