@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1252-approved-isolated-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T13:36:52+00:00",
+  "claim_expires": "2026-09-16T13:38:30+00:00",
   "depends_on": [
     "AR-0003"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:38:18+00:00",
+  "updated_at": "2026-09-16T11:38:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -197,3 +197,5 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
   no python3). With executable digest d62c55e4..., mode returned artifact-version-verified. Existing
   network-none, timeout, no-mount, shell rejection and cleanup contract tests remain passing. Full
   AR-1251 harness invocation and descendant-process cleanup proof remain.
+
+- 2026-09-16T11:38:30+00:00: Heartbeat by asb_ar1252_isolated_runner.
