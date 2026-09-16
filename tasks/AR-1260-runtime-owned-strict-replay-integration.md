@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1260-runtime-owned-strict-replay-integration",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T22:43:15+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1260-runtime-owned-strict-replay-integration",
   "observed_dirty": 0,
   "observed_head": "9e4a1c095e1f736011699edb4ab216e876e77251",
-  "owner": "asb_ar1024_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1260.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Integrate strict replay with runtime-owned attestation and supervised sandbox execution.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Runtime-owned strict-replay integration",
-  "updated_at": "2026-09-16T20:43:54+00:00",
+  "updated_at": "2026-09-16T20:44:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1260-runtime"
 }
 ---
@@ -130,3 +130,11 @@ missing, stale, duplicated, or mismatched.
   cannot obtain runtime-issued attestation, launch input, lease, or pinned commands. Existing
   spawn_runtime_replay wrapper is safe but unreachable from CLI dispatch. No scope-widening mutation
   made.
+
+- 2026-09-16T20:44:03+00:00: Re-audit complete: runtime APIs are present on protected main 0a808a6,
+  but CLI replay_plan dispatch has no runtime-issued authority input. It only receives plan/artifact
+  paths and cannot safely obtain SidecarHandoff attestation, SandboxLaunchInput, ResourceLease, or
+  pinned supervisor/sidecar commands. Existing spawn_runtime_replay is therefore unreachable without
+  a runtime-to-CLI entrypoint change outside AR-1260 owned paths. Preserve signed 9e4a1c0 and green
+  gates; leave ownerless blocked pending a narrow runtime entrypoint/successor AR. No fabrication or
+  scope widening.
