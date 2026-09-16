@@ -9,16 +9,16 @@
     "AR-1001"
   ],
   "id": "AR-1006",
-  "next_action": "Open PR from signed 1a41d0b, request independent review, then run exact-head CI.",
+  "next_action": "Repair worker-loss restart fencing: remove/revoke lease epoch or otherwise reject old completion after same-ID re-registration; add regression test, rerun gates, then request review before publication.",
   "owner": "asb_ar1006_distributed_workers",
   "plan": "../plans/AR-1006.md",
   "priority": "P3",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Schedule trials across native-capability workers while preserving per-host capacity meaning.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Coordinate distributed experiment workers",
-  "updated_at": "2026-09-16T12:28:01+00:00",
+  "updated_at": "2026-09-16T12:28:55+00:00",
   "worktree_key": "agent-systems-benchmark-distributed-workers"
 }
 ---
@@ -60,3 +60,10 @@ Implementation has not started. Read the linked plan before claiming.
   diff check clean. PR publication/review/CI remain.
 
 - 2026-09-16T12:28:01+00:00: Heartbeat by asb_ar1006_distributed_workers.
+
+- 2026-09-16T12:28:55+00:00: Independent exact-head review of signed 1a41d0b found blocker:
+  Coordinator::remove clears worker and active_attempts but leaves leases entry/fence.
+  Re-registering the same WorkerId before old expiry can therefore allow the old completion
+  (worker/fence still match), violating worker-loss/restart invalidation acceptance. Existing
+  negative test removes worker but does not re-register same ID. PR publication paused pending
+  fail-closed repair.
