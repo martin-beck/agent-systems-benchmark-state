@@ -52,7 +52,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1249` | `feature/ar-1249-mockagents-qualification-evidence` | `128ecddbfdb7` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar-1250` | `feature/ar-1250-mockagents-harness-extension` | `8a61b4672843` | 0 | behind 0, ahead 8 |
 | `agent-systems-benchmark-ar-1251` | `feature/ar-1251-mockagents-transport-sandbox` | `128ecddbfdb7` | 0 | behind 0, ahead 0 |
-| `agent-systems-benchmark-ar-1252` | `feature/ar-1252-approved-isolated-runner` | `bde4bf836a8b` | 0 | behind 0, ahead 6 |
+| `agent-systems-benchmark-ar-1252` | `feature/ar-1252-approved-isolated-runner` | `61039767da31` | 0 | behind 0, ahead 7 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 445, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 548, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 442, ahead 0 |
