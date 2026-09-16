@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T14:43:34+00:00",
+  "updated_at": "2026-09-16T14:44:55+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -235,3 +235,6 @@ Implementation has not started. Read the linked plan before claiming.
   unrelated pre-existing asb-metrics kernel.rs:713 expectation mismatch (expected MalformedEvidence,
   got ProbeRejected); this is not an AR-0813 defect but means full-gate evidence is incomplete.
   Focused asb-control 41 tests and clippy pass; tree is clean; no PR/publication authorized.
+
+- 2026-09-16T14:44:55+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
