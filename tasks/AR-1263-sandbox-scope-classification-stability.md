@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stabilize intermittent sandbox scope classification in the quality gate.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Stabilize sandbox scope classification gate",
-  "updated_at": "2026-09-16T21:17:51+00:00",
+  "updated_at": "2026-09-16T21:17:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1263-sandbox-stability"
 }
 ---
@@ -36,3 +36,6 @@ fail-closed test/runner behavior and preserve the original semantic assertions.
   existing sandbox scope flake.
 
 - 2026-09-16T21:17:51+00:00: Claimed by asb_ar1263_sandbox_stability.
+
+- 2026-09-16T21:17:53+00:00: Recorded command exit 0; command argv SHA-256
+  0ed28ab2d231d0b2bd8ef8fcc7c11bb59995fd48770e67cf2eb8a98065389117.
