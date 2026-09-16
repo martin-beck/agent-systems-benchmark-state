@@ -9,17 +9,17 @@
   "id": "AR-0814",
   "next_action": "Run full fmt, clippy, workspace, policy and privacy gates; prepare exact clean head for independent review.",
   "observed_branch": "feature/remote-enrollment-authz",
-  "observed_dirty": 1,
-  "observed_head": "35cffababeacec79f8eed63b187ad1caaa528146",
+  "observed_dirty": 0,
+  "observed_head": "1f9c36aad338849bfdbbb9922bd2a2efa72e00fa",
   "owner": "asb_ar0814_enrollment_authz",
   "plan": "../plans/AR-0814.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T17:54:25+00:00",
+  "updated_at": "2026-09-16T17:54:32+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
