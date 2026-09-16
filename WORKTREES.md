@@ -97,6 +97,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-csb-integration` | `feature/csb-integration` | `524db90c8933` | 0 | behind 518, ahead 0 |
 | `agent-systems-benchmark-deterministic-llm-double-ci` | `ci/deterministic-llm-double` | `adac76558387` | 0 | behind 362, ahead 0 |
 | `agent-systems-benchmark-development-host-runner-capacity` | `feature/development-host-runner-capacity` | `0d9b363538d2` | 0 | behind 616, ahead 0 |
+| `agent-systems-benchmark-development-host-runner-qualification` | `feature/development-host-runner-qualification` | `3e8d58994eb2` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-development-host-workflow-routing` | `feature/development-host-workflow-routing` | `f55f98cc79b7` | 0 | behind 614, ahead 0 |
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 714, ahead 0 |
 | `agent-systems-benchmark-emulated-aarch64-agent-serialization` | `test/serialize-emulated-aarch64-agents` | `88f4fce68eab` | 0 | behind 295, ahead 1 |

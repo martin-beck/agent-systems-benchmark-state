@@ -9,15 +9,18 @@
   ],
   "id": "AR-0832",
   "next_action": "Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance.",
+  "observed_branch": "feature/development-host-runner-qualification",
+  "observed_dirty": 0,
+  "observed_head": "3e8d58994eb2b3faeda9449e4186498cf86eeb86",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-0832.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Qualify development host ASB runner operations",
-  "updated_at": "2026-09-16T12:21:57+00:00",
+  "updated_at": "2026-09-16T12:22:04+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-qualification"
 }
 ---
