@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1276-primary-replay-runtime",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T01:57:46+00:00",
+  "claim_expires": "2026-09-17T01:58:43+00:00",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate runtime-owned operation execution into the primary strict-replay command.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Primary replay runtime integration",
-  "updated_at": "2026-09-16T23:57:46+00:00",
+  "updated_at": "2026-09-16T23:58:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1276-primary-replay-runtime"
 }
 ---
@@ -35,3 +35,5 @@ blocked evidence and require real supervised cassette traffic and lifecycle test
   evidence only; implement the primary command integration without consuming its branch.
 
 - 2026-09-16T23:57:46+00:00: Claimed by asb_ar1024_lifecycle_router.
+
+- 2026-09-16T23:58:43+00:00: Heartbeat by asb_ar1024_lifecycle_router.
