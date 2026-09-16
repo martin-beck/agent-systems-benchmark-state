@@ -8,7 +8,7 @@
     "AR-0889"
   ],
   "id": "AR-1250",
-  "next_action": "Implement hostile tool/result, cancellation/backpressure, outbound-denial cases; then run arm64 repeat and full gates.",
+  "next_action": "Add tool-result, cancellation/backpressure, and outbound-denial executable cases; then rerun arm64 repeat and full gates.",
   "observed_branch": "feature/ar-1250-mockagents-harness-extension",
   "observed_dirty": 0,
   "observed_head": "94a31224a44bcf3dc0417abe2eefd67d2a81f8e9",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend the pinned MockAgents executable qualification harness.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Extend MockAgents qualification harness",
-  "updated_at": "2026-09-16T10:56:44+00:00",
+  "updated_at": "2026-09-16T10:57:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1250"
 }
 ---
@@ -108,3 +108,9 @@ privacy, signature, DCO, and exact-tree gates; do not claim support from host in
 
 - 2026-09-16T10:56:44+00:00: Recorded command exit 0; command argv SHA-256
   a0968de1aefe0fb2e4cd136fc0e468b02decd4d2372ea7615e50290a11b7e235.
+
+- 2026-09-16T10:57:04+00:00: Concrete hostile progress: added an executable MockAgents tool
+  definition and real chat request asserting HTTP 200 tool_calls plus lookup identity. Signed+DCO
+  commit 94a3122 pushed; amd64 qualification including tool_call and repeat-clean-state passes.
+  Remaining tool-result, cancellation/backpressure, outbound-denial, malformed/cleanup cases and
+  arm64 rerun remain outstanding.
