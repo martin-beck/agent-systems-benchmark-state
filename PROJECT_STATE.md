@@ -21,21 +21,21 @@ Generated from local Git and GitHub. Do not edit.
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
 | #151 | `dependabot/cargo/serde-1.0.229@c926edfde377` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
-| #190 | `fix/shellcheck-fail-closed@8176605df747` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: enforce ShellCheck for workflow analysis |
+| #190 | `fix/shellcheck-fail-closed@760eded801d3` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | ci: enforce ShellCheck for workflow analysis |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35075403827 | `760eded801d3` | pull_request | Fault assurance | queued:- |
+| 35075403759 | `760eded801d3` | pull_request | Repository quality | queued:- |
+| 35075403698 | `760eded801d3` | pull_request | Formal assurance | queued:- |
+| 35075403696 | `760eded801d3` | pull_request | Agent Workflow Quality shadow | queued:- |
+| 35075403678 | `760eded801d3` | pull_request | Emulated aarch64 portability | queued:- |
+| 35075403664 | `760eded801d3` | pull_request | Hosted portability and native qualification | queued:- |
+| 35075403660 | `760eded801d3` | pull_request | Rust verification | queued:- |
+| 35075403645 | `760eded801d3` | pull_request | Huawei MIT source headers | queued:- |
 | 35074957165 | `606375f613fc` | push | Emulated aarch64 portability | in_progress:- |
 | 35074957145 | `606375f613fc` | push | Repository quality | completed:failure |
 | 35074957142 | `606375f613fc` | push | Huawei MIT source headers | completed:success |
 | 35074957123 | `606375f613fc` | push | Fault assurance | completed:success |
-| 35074957101 | `606375f613fc` | push | Rust verification | in_progress:- |
-| 35074957098 | `606375f613fc` | push | Formal assurance | in_progress:- |
-| 35074957075 | `606375f613fc` | push | Hosted portability and native qualification | completed:success |
-| 35074291314 | `8176605df747` | pull_request | Formal assurance | completed:success |
-| 35074291305 | `8176605df747` | pull_request | Hosted portability and native qualification | completed:success |
-| 35074291304 | `8176605df747` | pull_request | Rust verification | completed:success |
-| 35074291293 | `8176605df747` | pull_request | Fault assurance | completed:success |
-| 35074291276 | `8176605df747` | pull_request | Huawei MIT source headers | completed:success |

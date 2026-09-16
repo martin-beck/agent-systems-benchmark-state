@@ -9,7 +9,7 @@
   "id": "AR-1241",
   "next_action": "Add provider/external/descendant egress denial and timeout/cancel/crash/non-interference tests for the signed native bundle.",
   "observed_branch": "feature/ar-1241-native-isolation-matrix",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "fd4192d2d76761d100415f199faf26982c6a1cf4",
   "owner": "asb_ar1241_matrix_worker",
   "plan": "../plans/AR-1241.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Complete native signed-bundle isolation negative and lifecycle evidence.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Native isolation negative and lifecycle matrix",
-  "updated_at": "2026-09-16T08:42:40+00:00",
+  "updated_at": "2026-09-16T08:44:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1241"
 }
 ---
