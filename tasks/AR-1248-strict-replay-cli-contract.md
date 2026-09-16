@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1248-strict-replay-cli-contract",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T12:34:06+00:00",
   "depends_on": [
     "AR-1231",
     "AR-1232"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1248-strict-replay-cli-contract",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "asb_ar1232_lifecycle_router",
   "plan": "../plans/AR-1248.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T10:33:49+00:00",
+  "updated_at": "2026-09-16T10:34:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -31,3 +31,5 @@ formal, privacy, signature, DCO, and exact-tree gates.
 
 - 2026-09-16T10:33:49+00:00: Dependencies AR-1231 and AR-1232 are durably done on protected main;
   strict replay CLI consumer gap is concrete and dependency-ready.
+
+- 2026-09-16T10:34:06+00:00: Claimed by asb_ar1232_lifecycle_router.
