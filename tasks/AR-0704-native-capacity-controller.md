@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-capacity-controller",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T08:08:56+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0701",
     "AR-0103"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "28f30eea80efef5a61ea438e77402f8640564cc9",
-  "owner": "asb_ar1232_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-16T06:26:25+00:00",
+  "updated_at": "2026-09-16T06:26:43+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -295,3 +295,9 @@ must not block this AR or its dependents.
 
 - 2026-09-16T06:26:25+00:00: Recorded command exit 0; command argv SHA-256
   1a49978bc89826a6f0252ab2c0d64311d64ed1b7dd5a23d2328d638dba243654.
+
+- 2026-09-16T06:26:43+00:00: Exact PR #119 audit complete. Head 28f30ee is clean and signed/DCO;
+  hosted checks were green except TLC and Alloy recovery models, which failed exit 1 during the
+  pinned formal-tool download before model execution. gh run failed log confirms transfer reached
+  100% then process exited 1, with no product assertion. Release ownerless blocked; rerun/rebase
+  only after formal infrastructure/provenance lane is available.
