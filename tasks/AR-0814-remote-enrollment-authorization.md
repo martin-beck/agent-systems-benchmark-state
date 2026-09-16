@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Run full locked workspace gates and independent review of BreakGlass context-bound endpoint/schema migration.",
+  "next_action": "Run and record the complete locked workspace/full applicable gates at exact ddbe44c; then obtain final independent review/publication authorization. Preserve runner-owned context binding and CLI fail-closed BreakGlass behavior.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "ddbe44c95fde95cb861d633b1dbc08d4a6d0ba21",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 243,
+  "task_revision": 244,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:22:07+00:00",
+  "updated_at": "2026-09-16T19:22:19+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -635,3 +635,21 @@ Implementation has not started. Read the linked plan before claiming.
   error response as Ok(ControlResponse), so result.is_err was invalid; corrected and verified.
 
 - 2026-09-16T19:22:07+00:00: Heartbeat by asb_ar0814_enrollment_authz.
+
+- 2026-09-16T19:22:19+00:00: Independent exact-head review of
+  ddbe44c95fde95cb861d633b1dbc08d4a6d0ba21: clean cumulative tree; HEAD SSH signature identity
+  martin.beck2@gmx.de and matching Signed-off-by verified; diff --check passes; no private values
+  observed. New 3e0f228 binds BreakGlass principal/request/generation to runner-owned
+  AuthorizationContext before backend authorization; 47ba610 makes CLI backend fail closed; ddbe44c
+  adds positive admin dispatch and absent-context denial. Endpoint suite 9/9 and schema suite 5/5
+  are recorded, with v1.7 additive schema and legacy v1-v1.6 byte-identity checks. Auth focused
+  14/14 remains recorded. Review finds no new fail-open in the BreakGlass path, but full locked
+  workspace gates are not yet recorded at this exact head (worker history ends with focused
+  evidence). The CLI/backend intentionally returns CapabilityUnavailable without a runner-owned
+  context, so lost-controller recovery remains unavailable in the ordinary CLI and must be
+  documented as a qualified capability boundary or implemented before claiming complete AR
+  acceptance. General ControlBackend::authorize still defaults to Ok for non-BreakGlass calls; this
+  is acceptable only if all concrete remote backends provide their own authorization, which is not
+  proven by this diff. Certificate/pairing/SecretBackend and hostile threat-matrix gaps from prior
+  review remain unless separately evidenced. Do not publish until full gates and scope/acceptance
+  decision are durable.
