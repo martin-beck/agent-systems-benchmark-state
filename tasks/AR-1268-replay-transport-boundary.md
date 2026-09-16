@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Break the strict-replay runtime/CLI dependency cycle with a shared transport contract.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Break strict-replay runtime/CLI dependency cycle",
-  "updated_at": "2026-09-16T22:47:26+00:00",
+  "updated_at": "2026-09-16T22:48:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1268-replay-transport"
 }
 ---
@@ -60,3 +60,6 @@ Preserve AR-1267's blocked evidence; do not fabricate authority or weaken crate 
   fmt green; product tree clean. Crate graph audit confirms asb-runtime depends only rustix/sha2
   while asb-cli depends asb-agents/replay/runtime, so shared core is the safe cycle-breaking
   boundary.
+
+- 2026-09-16T22:48:13+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
