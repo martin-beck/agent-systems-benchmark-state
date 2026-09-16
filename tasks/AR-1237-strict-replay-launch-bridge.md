@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1237.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Map the authenticated relay into the strict-replay child launch contract.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Strict-replay child launch bridge",
-  "updated_at": "2026-09-16T08:55:59+00:00",
+  "updated_at": "2026-09-16T08:57:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1237"
 }
 ---
@@ -45,3 +45,6 @@ locked, privacy, policy, native, exact-head, and post-merge gates.
   because origin/main lacks the AR-1233/1236 runtime-issued ReplayRelayHandoff and SupervisorPlan
   types. Apply commit after those dependency payloads are merged, then add concrete runtime
   adapter/native lifecycle tests.
+
+- 2026-09-16T08:57:16+00:00: Runtime handoff dependencies AR-1233/1236 are complete; reopen to
+  integrate reviewed heads and run native launch-bridge tests.
