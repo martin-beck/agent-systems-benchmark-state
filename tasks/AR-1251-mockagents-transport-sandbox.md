@@ -8,7 +8,7 @@
     "AR-0889"
   ],
   "id": "AR-1251",
-  "next_action": "Design and implement bounded transport/sandbox fixture for MockAgents tool-result, cancellation/backpressure, network-denial, cleanup, and arm64 evidence.",
+  "next_action": "Await reviewed AR-1252 integration allowing pinned MockAgents and Python client in one approved sandbox; then add real transport/lifecycle/egress tests.",
   "observed_branch": "feature/ar-1251-mockagents-transport-sandbox",
   "observed_dirty": 0,
   "observed_head": "2a12068c2e1d0c6146fb41de785155b1d43f51ee",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a bounded transport and sandbox fixture for MockAgents qualification.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Add MockAgents transport sandbox fixture",
-  "updated_at": "2026-09-16T18:55:32+00:00",
+  "updated_at": "2026-09-16T18:55:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1251"
 }
 ---
@@ -97,3 +97,6 @@ preserve privacy, network-denial, signature, DCO, and exact-tree gates.
 - 2026-09-16T18:55:29+00:00: Correct stale next action after runner seam commit and release.
 
 - 2026-09-16T18:55:32+00:00: Claimed by asb_ar1251_mockagents_transport.
+
+- 2026-09-16T18:55:35+00:00: Corrected durable next action to the one-mount co-location blocker;
+  signed head 2a12068 remains clean.

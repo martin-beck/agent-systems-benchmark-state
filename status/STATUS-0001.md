@@ -1467,7 +1467,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | asb_ar0814_enrollment_authz | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Implement backend-owned BreakGlass admin authorization and v1.7 schemas/endpoint tests; preserve legacy schemas. |
 | P1 | [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md): Extend MockAgents qualification harness | asb_ar1250_mockagents_harness | Extend the pinned MockAgents executable qualification harness. | Implement actual outbound-denial and arm64 repeat probes; run full locked gates. |
-| P1 | [AR-1251](../tasks/AR-1251-mockagents-transport-sandbox.md): Add MockAgents transport sandbox fixture | asb_ar1251_mockagents_transport | Add a bounded transport and sandbox fixture for MockAgents qualification. | Design and implement bounded transport/sandbox fixture for MockAgents tool-result, cancellation/backpressure, network-denial, cleanup, and arm64 evidence. |
+| P1 | [AR-1251](../tasks/AR-1251-mockagents-transport-sandbox.md): Add MockAgents transport sandbox fixture | asb_ar1251_mockagents_transport | Add a bounded transport and sandbox fixture for MockAgents qualification. | Await reviewed AR-1252 integration allowing pinned MockAgents and Python client in one approved sandbox; then add real transport/lifecycle/egress tests. |
 
 ### Open (4)
 
