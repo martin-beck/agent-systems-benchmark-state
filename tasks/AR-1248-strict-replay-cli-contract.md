@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1248.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 117,
+  "task_revision": 118,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T11:26:22+00:00",
+  "updated_at": "2026-09-16T20:02:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -337,3 +337,7 @@ formal, privacy, signature, DCO, and exact-tree gates.
   fail-closed scope. Dependency/runtime follow-up is AR-1232 (currently blocked on approved sandbox
   capability AR-1233/AR-1234). Preserve PR #197 and exact head cebe8ef; resume after runtime
   capability lands.
+
+- 2026-09-16T20:02:47+00:00: Coordinator authorized bounded failure-repair audit: dependencies are
+  terminal done; inspect exact PR #197 Repository quality/Rust failures and repair only reproducible
+  scoped coverage/provenance issues before publication.
