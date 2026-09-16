@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 216,
+  "task_revision": 217,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T03:45:32+00:00",
+  "updated_at": "2026-09-16T03:45:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -575,3 +575,6 @@
 
 - 2026-09-16T03:45:32+00:00: Recorded command exit 0; command argv SHA-256
   63e323244ebe177cfa0edb90ab50f1694314e09e226a2b8a90bde0202b87a251.
+
+- 2026-09-16T03:45:49+00:00: Recorded command exit 0; command argv SHA-256
+  b67d5d493aacbbaaddf7a86093c5e5b84d9c7e661e4eab7cec4c9c15461b7718.
