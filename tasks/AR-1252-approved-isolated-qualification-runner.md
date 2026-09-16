@@ -10,16 +10,16 @@
   "next_action": "Integrate runner with AR-1251; add no-mount assertion and run full policy gates.",
   "observed_branch": "feature/ar-1252-approved-isolated-runner",
   "observed_dirty": 0,
-  "observed_head": "c065b22144995d2e2ac0319eb645e9969c65e280",
+  "observed_head": "7666d9490b020e128f263703c7facea21af381f5",
   "owner": "asb_ar1252_isolated_runner",
   "plan": "../plans/AR-1252.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:21:00+00:00",
+  "updated_at": "2026-09-16T11:21:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
