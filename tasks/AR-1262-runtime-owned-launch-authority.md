@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1262-runtime-owned-launch-authority",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T00:13:20+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1262-runtime-owned-launch-authority",
   "observed_dirty": 0,
   "observed_head": "535149950dc4b0ec1105093092689be146972b50",
-  "owner": "asb_ar1024_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1262.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Issue runtime-owned authority for supervised strict-replay execution.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-16T22:18:19+00:00",
+  "updated_at": "2026-09-16T22:18:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1262-runtime-authority"
 }
 ---
@@ -216,3 +216,14 @@ ownership and bounded lifecycle evidence.
 
 - 2026-09-16T22:18:12+00:00: Recorded command exit 0; command argv SHA-256
   543c1689030a32e53bc05be0e11748211bb206c275e713b84d29a25602de3d6e.
+
+- 2026-09-16T22:18:26+00:00: Independent review blocks PR #207: replay_plan still fabricates
+  LoopbackSidecar/fresh relay and literal readiness; CLI dispatch does not execute
+  spawn_authorized_replay with a real runtime-issued authority; no real cassette request/response,
+  provider/descendant egress denial, cancellation/restart/cleanup, or no-fallback lifecycle
+  evidence. Scoped repair signed 5351499 makes authority issuer constructors crate-internal, but
+  cannot safely wire runtime issuance into current path-only CLI without a further reviewed
+  entrypoint design. Earlier gate exit-101 causes were (1) stale provenance fixture, fixed in
+  ad0bc02; (2) clippy too_many_arguments and dead_code after authority visibility tightening, fixed
+  in 5351499. Product tree clean at 5351499, but PR #207 must not merge; leave ownerless blocked
+  with successor/runtime-entrypoint next action.
