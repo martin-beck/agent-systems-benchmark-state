@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1241-native-isolation-matrix",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T10:42:40+00:00",
   "depends_on": [
     "AR-1240"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1241-native-isolation-matrix",
   "observed_dirty": 0,
   "observed_head": "fd4192d2d76761d100415f199faf26982c6a1cf4",
-  "owner": "",
+  "owner": "asb_ar1241_matrix_worker",
   "plan": "../plans/AR-1241.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Complete native signed-bundle isolation negative and lifecycle evidence.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Native isolation negative and lifecycle matrix",
-  "updated_at": "2026-09-16T08:42:37+00:00",
+  "updated_at": "2026-09-16T08:42:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1241"
 }
 ---
@@ -35,3 +35,5 @@ global network state.
 
 - 2026-09-16T08:42:26+00:00: Release stale claimed lease so the assigned matrix worker can take
   over; no product changes were made under the stale lease.
+
+- 2026-09-16T08:42:40+00:00: Claimed by asb_ar1241_matrix_worker.
