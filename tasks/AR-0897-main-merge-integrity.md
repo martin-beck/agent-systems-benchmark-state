@@ -2,7 +2,7 @@
 {
   "branch": "fix/main-merge-integrity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T06:56:54+00:00",
+  "claim_expires": "2026-09-16T06:59:49+00:00",
   "depends_on": [
     "AR-0003"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 91,
+  "task_revision": 92,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-16T04:59:16+00:00",
+  "updated_at": "2026-09-16T04:59:49+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -330,3 +330,5 @@ Implementation has not started. Read the linked plan before claiming.
   35057669012/69115/69146/69149/69102/69117/69083/69116 is pending except AWQ shadow and headers
   pass. Do not merge until every required check is green and protected local signed merge path is
   authorized; next monitor exact-head CI and independently reconcile any failures.
+
+- 2026-09-16T04:59:49+00:00: Heartbeat by asb_ar0897_merge_integrity.
