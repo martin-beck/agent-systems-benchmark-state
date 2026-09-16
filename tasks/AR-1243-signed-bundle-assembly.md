@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1243",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T11:22:40+00:00",
   "depends_on": [
     "AR-1239",
     "AR-1240",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1243",
   "observed_dirty": 0,
   "observed_head": "dc1fe1dcfa462d2953bb9033297c78a41633d559",
-  "owner": "",
+  "owner": "asb_ar1232_lifecycle_router",
   "plan": "../plans/AR-1243.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Build, sign, verify, and publish installable supervisor and sidecar runtime bundles.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Installable signed runtime bundle assembly",
-  "updated_at": "2026-09-16T09:22:28+00:00",
+  "updated_at": "2026-09-16T09:22:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1243"
 }
 ---
@@ -92,3 +92,5 @@ private material; do not alter host networking, firewall, credentials, or unrela
 
 - 2026-09-16T09:22:28+00:00: Coordinator authorized resumption. Create isolated packaging worktree
   from exact origin/main and preserve mixed historical branch; cherry-pick only scoped dc1fe1d.
+
+- 2026-09-16T09:22:40+00:00: Claimed by asb_ar1232_lifecycle_router.
