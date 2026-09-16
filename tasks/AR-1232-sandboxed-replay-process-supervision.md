@@ -9,7 +9,7 @@
     "AR-1230"
   ],
   "id": "AR-1232",
-  "next_action": "Integrate strict replay launch consumer after AR-1231 merge; add sandbox child launch/cancel/restart/crash tests using SandboxBackend::spawn. Current 28e7cc5 exposes validated SandboxSpec network attestation; no provider egress is enabled by constructor.",
+  "next_action": "Run focused and full runtime gates on 0a7a760; the earlier exit-101 was a compile failure because SandboxError lacked the new NetworkPolicy variant, corrected and sandbox unit tests now pass (18). Then add concrete spawn lifecycle tests through the existing sandbox harness.",
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "0a7a76011d34809beeffe348121bc290a3f8b4df",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T02:54:58+00:00",
+  "updated_at": "2026-09-16T02:55:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -157,3 +157,8 @@
   be39618c4929ea96524bef5b35cb1f4560065023e1d1d86d29a90f9ccb03696d.
 
 - 2026-09-16T02:54:58+00:00: Heartbeat by asb_ar1232_sandbox_supervision.
+
+- 2026-09-16T02:55:25+00:00: Launch-input patch is signed/DCO at 0a7a760 and pushed. Diagnosed
+  repeated exit-101 as missing SandboxError::NetworkPolicy variant after introducing the launch
+  invariant; added the typed variant, reran cargo test --locked --offline -p asb-runtime sandbox
+  --lib: 18 passed. Worktree was clean after push.
