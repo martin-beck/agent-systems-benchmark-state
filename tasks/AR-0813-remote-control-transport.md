@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0813",
-  "next_action": "Create/promote successor for unsigned merge 14b604f; perform signed protected-main recovery and rerun exact-main policy before closing AR-0813.",
+  "next_action": "AR-1259 owns signed recovery of merge 14b604f; await exact-main policy/post-merge success, then close AR-0813 with preserved evidence.",
   "observed_branch": "feature/remote-control-transport",
   "observed_dirty": 0,
   "observed_head": "b7d9e142d684f1fa65fc3f52258ec46585194950",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 306,
+  "task_revision": 307,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T16:40:55+00:00",
+  "updated_at": "2026-09-16T16:41:57+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -932,3 +932,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T16:40:55+00:00: Recorded command exit 0; command argv SHA-256
   23b2cad55d063096f1db1ccc3f3d836e4b2a7b710b948912fa96bcb9825162c3.
+
+- 2026-09-16T16:41:57+00:00: Cycle resolved: AR-1259 promoted and claimed by
+  asb_ar1259_signed_recovery, depending on completed AR-1242. AR-1259 plan/task preserve PR202 merge
+  parents/tree and require SSH-signed+DCO recovery plus exact-main gates. AR-0813 remains open
+  pending successor completion.
