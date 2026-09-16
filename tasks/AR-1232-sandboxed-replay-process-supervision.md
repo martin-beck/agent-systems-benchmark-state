@@ -11,7 +11,7 @@
   "id": "AR-1232",
   "next_action": "Owned loopback egress fixture committed and pushed at 048356b; native ignored gate passes 6/6 with explicit ASB_TEST_ROOT, including no-connection assertion against test-owned listener. Remaining blocker is native StrictReplayExecutor service lifecycle/recovery integration; add or document exact seam before re-review.",
   "observed_branch": "feature/ar-1232",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "048356b8d93134507ab1967b17102cc68e4b9880",
   "owner": "asb_ar1232_sandbox_supervision",
   "plan": "../plans/AR-1232.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 346,
+  "task_revision": 347,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T04:44:30+00:00",
+  "updated_at": "2026-09-16T04:44:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
