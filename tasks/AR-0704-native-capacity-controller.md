@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-capacity-controller",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T08:48:44+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0701",
     "AR-0103"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "28f30eea80efef5a61ea438e77402f8640564cc9",
-  "owner": "asb_ar0704_formal_infra",
+  "owner": "",
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-16T06:48:54+00:00",
+  "updated_at": "2026-09-16T06:48:59+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -319,3 +319,6 @@ must not block this AR or its dependents.
   run 34355869235 after the TLA v1.8.0 download; pinned TLA_BYTES/hash validation rejects the
   downloaded 4385 KiB asset against expected 4490679 bytes and SHA a1fc0bfe... All other checks
   passed. This is outside AR-0704 native-capacity scope. No product mutation or gate weakening.
+
+- 2026-09-16T06:48:59+00:00: Released blocked and ownerless. Formal TLA artifact/provenance repair
+  belongs to AR-0877/AR-0907; do not alter native-capacity code or weaken formal verification.
