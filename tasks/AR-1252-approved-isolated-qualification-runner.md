@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:19:26+00:00",
+  "updated_at": "2026-09-16T11:20:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -124,3 +124,6 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
   exactly header-only output. Probe now returns network-none-verified. Existing 2/2 isolation
   contract tests and timeout 124 test remain passing. One validated read-only artifact bind is the
   sole host input; no other mounts are created. AR-1251 integration and no-mount evidence remain.
+
+- 2026-09-16T11:20:23+00:00: Recorded command exit 0; command argv SHA-256
+  7322a9e64c1dc820dea80fe57baadb27af15b4d1a1a6c03f465f6d0f2b8c3489.
