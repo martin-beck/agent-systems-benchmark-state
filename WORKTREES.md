@@ -41,8 +41,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1236` | `feature/ar-1236-runtime-loopback-sidecar` | `42c3d1959b9a` | 0 | behind 303, ahead 4 |
 | `agent-systems-benchmark-ar-1238` | `feature/ar-1238-runtime-loopback-supervisor` | `e4c2e56c076a` | 0 | behind 303, ahead 10 |
 | `agent-systems-benchmark-ar-1239` | `feature/ar-1239-signed-runtime-bundle` | `6836bb4010f5` | 0 | behind 303, ahead 2 |
-| `agent-systems-benchmark-ar-1240` | `feature/ar-1240-native-signed-bundle-fixture` | `42bd8ed869f5` | 2 | behind 303, ahead 12 |
-| changed files | - | - | - | `crates/asb-runtime/src/bin/asb_loopback_supervisor.rs`, `crates/asb-runtime/tests/sandbox_boundary.rs` |
+| `agent-systems-benchmark-ar-1240` | `feature/ar-1240-native-signed-bundle-fixture` | `282eeffd78ea` | 0 | behind 303, ahead 13 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 385, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 488, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 382, ahead 0 |

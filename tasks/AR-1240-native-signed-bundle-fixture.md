@@ -10,17 +10,17 @@
   "id": "AR-1240",
   "next_action": "Extend native fixture invocation from helper lifecycle proof to authenticated cassette HTTP success plus provider/descendant denial and cleanup/non-interference matrix.",
   "observed_branch": "feature/ar-1240-native-signed-bundle-fixture",
-  "observed_dirty": 2,
-  "observed_head": "42bd8ed869f515694b9a7407095d3de83fbb69d1",
+  "observed_dirty": 0,
+  "observed_head": "282eeffd78eaadbf706c90cb56a7ee1be29e77dc",
   "owner": "asb_ar1240_native_fixture_worker",
   "plan": "../plans/AR-1240.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add native signed-bundle fixture and end-to-end supervisor isolation tests.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Native signed-bundle supervisor fixture",
-  "updated_at": "2026-09-16T08:39:21+00:00",
+  "updated_at": "2026-09-16T08:39:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1240"
 }
 ---

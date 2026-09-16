@@ -33,7 +33,7 @@ Generated from local Git and GitHub. Do not edit.
 | 35074957123 | `606375f613fc` | push | Fault assurance | in_progress:- |
 | 35074957101 | `606375f613fc` | push | Rust verification | in_progress:- |
 | 35074957098 | `606375f613fc` | push | Formal assurance | in_progress:- |
-| 35074957075 | `606375f613fc` | push | Hosted portability and native qualification | in_progress:- |
+| 35074957075 | `606375f613fc` | push | Hosted portability and native qualification | completed:success |
 | 35074291314 | `8176605df747` | pull_request | Formal assurance | completed:success |
 | 35074291305 | `8176605df747` | pull_request | Hosted portability and native qualification | completed:success |
 | 35074291304 | `8176605df747` | pull_request | Rust verification | completed:success |
