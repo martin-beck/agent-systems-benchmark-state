@@ -16,11 +16,11 @@
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-16T06:26:43+00:00",
+  "updated_at": "2026-09-16T06:29:17+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -301,3 +301,6 @@ must not block this AR or its dependents.
   pinned formal-tool download before model execution. gh run failed log confirms transfer reached
   100% then process exited 1, with no product assertion. Release ownerless blocked; rerun/rebase
   only after formal infrastructure/provenance lane is available.
+
+- 2026-09-16T06:29:17+00:00: Formal infrastructure investigation is now actionable: inspect PR #119
+  hosted TLC/Alloy artifact download/provenance failure without weakening gates.

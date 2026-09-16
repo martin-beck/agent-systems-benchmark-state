@@ -12,8 +12,8 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 6 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 10 |
+| **Open** | Dependency-ready and available to claim | 7 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 9 |
 | **Planned** | Defined work awaiting promotion or dependencies | 66 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 168 |
@@ -119,7 +119,7 @@ flowchart LR
         AR_0701["AR-0701 - Done"]:::status_done
         AR_0702["AR-0702 - Done"]:::status_done
         AR_0703["AR-0703 - Future"]:::status_future
-        AR_0704["AR-0704 - Blocked"]:::status_blocked
+        AR_0704["AR-0704 - Open"]:::status_open
         AR_0705["AR-0705 - Planned"]:::status_planned
         AR_0706["AR-0706 - Planned"]:::status_planned
         AR_0707["AR-0707 - Done"]:::status_done
@@ -1374,7 +1374,7 @@ flowchart LR
 | P0 | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md): Sandboxed replay process supervision | asb_ar1232_loopback_worker | Supervise strict replay adapters inside the approved network-denied sandbox. | Native executor-service attempt is blocked by runtime policy: SandboxSpec accepts only NetworkPolicy::Deny, so loopback cassette listener is unreachable (child curl exit 7). Keep strict replay native harness 7/7 and 15/15 executor unit gates green; require approved loopback-only sandbox transport seam before further implementation/re-review. |
 | P1 | [AR-0896](../tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | asb_ar0896_qualification | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun 34339927858 was launched via handoffctl and is actively watched by PID 736624/gh PID 736653; exact rerun head a4e1a9de985a4c9f22628c6d604a6e62f4f173e3, job 104684371738 currently running. Keep lease heartbeat, wait terminal, then capture failures or green result. |
 
-### Open (6)
+### Open (7)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1383,9 +1383,10 @@ flowchart LR
 | P0 | [AR-1042](../tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Unclaimed | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. |
 | P0 | [AR-1044](../tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Unclaimed | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. |
 | P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | Unclaimed | Replay strictly without providers. | Design and implement the missing executable strict-replay run-path seam: pass exact cassette route/service into agent adapter launch, deny provider egress at process boundary, and add campaign-level cancellation/restart/no-fallback tests. Current CLI replay only decodes/indexes/selects and emits metadata. |
+| P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | Focused lifecycle/schema tests pass 25/25 on signed head 28f30ee. Remaining action is requalify PR #119 exact head for the fail-closed TLA provenance pin; inspect hosted failure and repair only if reproducible. |
 | P1 | [AR-0859](../tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Unclaimed | Qualify pinned OpenJiuwen live execution. | Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI. |
 
-### Blocked (10)
+### Blocked (9)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1396,7 +1397,6 @@ flowchart LR
 | P0 | [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md): Protected merge-tree remediation | Unclaimed | Remediate the protected-main merge-tree mismatch from stale-base PR merging. | Historical reproduction confirms policy rejects ef82484 before merge-tree comparison because its RSA/GPG signature is not in the allowed SSH trust set. Current clean branch is fd7daa4; create a signed-DCO current-main topic repair, then rerun policy and exact-head gates. |
 | P0 | [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md): Approved loopback-only sandbox transport | Unclaimed | Provide an authenticated loopback-only sandbox transport for strict replay services. | Typed LoopbackOnly policy slice 143213c passes full asb-runtime package tests; actual attested loopback namespace/listener binding remains required. Implement backend capability without weakening Deny, then add native child-service/provider-egress tests and full workspace gates. |
 | P0 | [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md): Runtime-owned loopback namespace capability | Unclaimed | Provide an approved runtime-owned loopback-only sandbox namespace capability. | Capability audit complete: pinned tools exist but unshare -n fails Operation not permitted. Do not add ambient privileged setup or host sharing. Require approved runtime-owned loopback namespace/helper capability, then implement native service/egress tests. |
-| P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | Focused lifecycle/schema tests pass 25/25 on signed head 28f30ee. Remaining action is requalify PR #119 exact head for the fail-closed TLA provenance pin; inspect hosted failure and repair only if reproducible. |
 | P1 | [AR-0863](../tasks/AR-0863-workbuddy-provenance.md): Pin WorkBuddy source, package, and license provenance | Unclaimed | Pin WorkBuddy source, package, and license provenance. | Pin official source, package, dependency closure, license, executable digest, protocol mode, and supported platform before any adapter claim. |
 | P1 | [AR-0890](../tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Unclaimed | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. |
 
