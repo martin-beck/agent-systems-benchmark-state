@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T02:19:57+00:00",
+  "updated_at": "2026-09-16T02:22:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -65,3 +65,6 @@
   clean. Full strict replay consumer remains dependent on AR-1231 merge.
 
 - 2026-09-16T02:19:57+00:00: Heartbeat by asb_ar1232_sandbox_supervision.
+
+- 2026-09-16T02:22:20+00:00: Recorded command exit 0; command argv SHA-256
+  10c9fbcdca4f98f5377c4b82d7beddaf18747b096954c15081bed9ae204467c5.
