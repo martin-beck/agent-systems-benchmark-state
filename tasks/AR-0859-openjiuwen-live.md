@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-live",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T08:47:36+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0858"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "230084ef1ea88168eac2be9098cc3c71dd14c465",
-  "owner": "asb_ar0859_postmerge_verify",
+  "owner": "",
   "plan": "../plans/AR-0859.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 286,
+  "task_revision": 287,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-16T08:18:03+00:00",
+  "updated_at": "2026-09-16T08:18:28+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -968,3 +968,11 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-16T08:18:03+00:00: Recorded command exit 0; command argv SHA-256
   91d040a409771f4ddc74d5445e66f0da95521d8c281a52504b994744b525efba.
+
+- 2026-09-16T08:18:28+00:00: AR-0859 complete. Managed CPython 3.11.16 provenance-bound live
+  qualification passed: focused real_openjiuwen 4/4, live loopback edit/tools/usage 1/1, asb-agents
+  package 138 passed/1 ignored. Feature commit 230084ef was reviewed, all 12 PR124 checks passed,
+  and signed recovery merges c261af0 (PR188) restored protected-main integrity after preserved
+  unsigned historical merges. Local protected-main repository policy over a7a64bcc..c261af0 passed;
+  exact-main workflows 35072310706, 35072310869, 35072310763, 35072310761, 35072310720, 35072310709,
+  35072310718 all succeeded. Historical merges remain unchanged and documented.
