@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 384,
+  "task_revision": 385,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T05:03:26+00:00",
+  "updated_at": "2026-09-16T06:14:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -1017,3 +1017,9 @@
   AR-1231 and AR-1100, avoiding a cycle. Native StrictReplayExecutor child-service integration
   requires the new approved loopback-only transport seam; existing signed head 994c671 and 7/7
   native plus 15/15 unit evidence are preserved.
+
+- 2026-09-16T06:14:50+00:00: Reopened for AR-1232-only implementation. User explicitly authorizes
+  loopback-only network access solely to validate the authenticated replay transport seam; no
+  external/ambient network, provider endpoints, credentials, or broad network access. Any grant must
+  be least-privilege, contained to loopback, and revoked after validation; record the actual
+  mechanism, scope, and revocation evidence here.
