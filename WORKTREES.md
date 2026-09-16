@@ -62,8 +62,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1262-runtime-authority` | `feature/ar-1262-runtime-owned-launch-authority` | `535149950dc4` | 0 | behind 0, ahead 10 |
 | `agent-systems-benchmark-ar-1263-sandbox-stability` | `fix/ar-1263-sandbox-scope-classification` | `0acbc1d1a8bf` | 0 | behind 3, ahead 0 |
 | `agent-systems-benchmark-ar-1264-merge-integrity` | `repair/ar-1264-pr205-merge-integrity` | `ebfa37023e56` | 0 | behind 2, ahead 0 |
-| `agent-systems-benchmark-ar-1265-runtime-replay-entrypoint` | `feature/ar-1265-runtime-owned-replay-entrypoint` | `301b9e1e8c1a` | 2 | behind 0, ahead 2 |
-| changed files | - | - | - | `crates/asb-cli/src/replay_entrypoint.rs`, `crates/asb-runtime/src/replay_entrypoint.rs` |
+| `agent-systems-benchmark-ar-1265-runtime-replay-entrypoint` | `feature/ar-1265-runtime-owned-replay-entrypoint` | `321f2a9f2e95` | 0 | behind 0, ahead 3 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 509, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 612, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 506, ahead 0 |

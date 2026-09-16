@@ -11,17 +11,17 @@
   "id": "AR-1265",
   "next_action": "Commit runtime-owned launch bundle after dead-code fix; then add executable replay dispatch and lifecycle tests.",
   "observed_branch": "feature/ar-1265-runtime-owned-replay-entrypoint",
-  "observed_dirty": 2,
-  "observed_head": "301b9e1e8c1a522bd4ac53ddb0600b12928d90e8",
+  "observed_dirty": 0,
+  "observed_head": "321f2a9f2e95668918e75d70e46bc8b70feee471",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1265.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a real runtime-owned strict-replay CLI entrypoint.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Runtime-owned strict-replay CLI entrypoint",
-  "updated_at": "2026-09-16T22:27:32+00:00",
+  "updated_at": "2026-09-16T22:27:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1265-runtime-replay-entrypoint"
 }
 ---
