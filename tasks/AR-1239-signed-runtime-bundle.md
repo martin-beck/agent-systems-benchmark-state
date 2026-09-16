@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1239.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Package and sign the verified loopback supervisor and sidecar runtime payloads.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Signed supervisor and sidecar runtime bundle",
-  "updated_at": "2026-09-16T08:21:15+00:00",
+  "updated_at": "2026-09-16T08:29:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1239"
 }
 ---
@@ -28,3 +28,6 @@ Own only the `asb-bundle` packaging and verification boundary. Do not modify TUI
 AR-1238 runtime launch logic. The bundle must provide immutable, signed payload identities that
 SandboxBackend can consume without a mutable `/usr` fallback. Preserve privacy, fail-closed
 verification, and unrelated-process safety.
+
+- 2026-09-16T08:29:57+00:00: AR-1236 is done; signed bundle implementation 6836bb4 and verifier
+  gates complete. Promote for release review.
