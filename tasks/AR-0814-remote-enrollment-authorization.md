@@ -2,7 +2,7 @@
 {
   "branch": "feature/remote-enrollment-authz",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T21:48:25+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0813"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "29cfa19323a0ceb124438854d73f664ae2b86dcc",
-  "owner": "asb_ar0814_enrollment_authz",
+  "owner": "",
   "plan": "../plans/AR-0814.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 293,
+  "task_revision": 294,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:48:38+00:00",
+  "updated_at": "2026-09-16T19:49:13+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -831,3 +831,9 @@ Implementation has not started. Read the linked plan before claiming.
   runner-owned context. Verdict: implementation slice is publication-quality for its bounded
   metadata/auth boundary, but do not close or publish as full AR-0814 until coordinator creates
   successor AR with these explicit acceptance boundaries and links it durably.
+
+- 2026-09-16T19:49:13+00:00: Released ownerless after independent re-review approval of bounded
+  scope. Preserve exact signed head 29cfa19 and green full locked gates/review evidence. Closure
+  blocked only on coordinator-created successor AR for certificate issuance/chain validation and
+  trusted route/ancestor authority; do not publish or mark AR-0814 done until successor dependency
+  is declared.
