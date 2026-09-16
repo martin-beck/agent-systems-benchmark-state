@@ -11,17 +11,17 @@
   "id": "AR-1267",
   "next_action": "Bind execute_cassette_request to actual replay command context and add malformed/mismatch/egress/cancel/restart/timeout/crash/no-fallback tests; then full gates.",
   "observed_branch": "feature/ar-1267-runtime-replay-execution",
-  "observed_dirty": 3,
-  "observed_head": "4ad0b90777f3f79f15e6005db340e4f3609ea81b",
+  "observed_dirty": 0,
+  "observed_head": "8ed8ce1f83e52f0ea35499e7260f7ae9474de054",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1267.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement real runtime-owned strict-replay execution and lifecycle supervision.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Runtime strict-replay execution hook",
-  "updated_at": "2026-09-16T22:43:33+00:00",
+  "updated_at": "2026-09-16T22:43:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1267-runtime-replay-execution"
 }
 ---
