@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 6 |
+| **In progress** | Claimed work with a live lease | 3 |
+| **Open** | Dependency-ready and available to claim | 5 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 12 |
 | **Planned** | Defined work awaiting promotion or dependencies | 65 |
 | **Future** | Deferred roadmap work | 1 |
@@ -332,7 +332,7 @@ flowchart LR
         AR_1236["AR-1236 - Done"]:::status_done
         AR_1237["AR-1237 - Planned"]:::status_planned
         AR_1238["AR-1238 - Done"]:::status_done
-        AR_1239["AR-1239 - Open"]:::status_open
+        AR_1239["AR-1239 - In progress"]:::status_in_progress
         AR_1240["AR-1240 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
@@ -1391,14 +1391,15 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md): Make ShellCheck fail closed | asb_ar0898_shellcheck | Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck. | Implementation committed as signed+DCO 8176605df747cca12010f8220e74509cca01539f. Focused gates pass: ShellCheck 0.11.0 x86_64/aarch64 pins install and verify, actionlint runs with explicit absolute -shellcheck, and test_failure_paths rejects SC2086 plus existing defects. Worktree clean after removing only owned profraw test artifacts. Next independently review complete diff, run full applicable local gates, then publish exact clean head. |
+| P0 | [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md): Signed supervisor and sidecar runtime bundle | asb_ar1239_bundle_worker | Package and sign the verified loopback supervisor and sidecar runtime payloads. | Implement asb-bundle-owned manifest/payload wiring for the supervisor and sidecar, then sign and verify the canonical bundle offline. |
 | P1 | [AR-0860](../tasks/AR-0860-openjiuwen-replay.md): Qualify strict OpenJiuwen replay | asb_ar1232_lifecycle_router | Qualify strict OpenJiuwen replay. | Run full applicable ASB gates, publish exact signed head for review, and complete post-merge qualification. Current head c894a34. |
 
-### Open (6)
+### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1407,7 +1408,6 @@ flowchart LR
 | P0 | [AR-1042](../tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Unclaimed | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. |
 | P0 | [AR-1044](../tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Unclaimed | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. |
 | P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | Unclaimed | Replay strictly without providers. | Design and implement the missing executable strict-replay run-path seam: pass exact cassette route/service into agent adapter launch, deny provider egress at process boundary, and add campaign-level cancellation/restart/no-fallback tests. Current CLI replay only decodes/indexes/selects and emits metadata. |
-| P0 | [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md): Signed supervisor and sidecar runtime bundle | Unclaimed | Package and sign the verified loopback supervisor and sidecar runtime payloads. | Implement asb-bundle-owned manifest/payload wiring for the supervisor and sidecar, then sign and verify the canonical bundle offline. |
 
 ### Blocked (12)
 
