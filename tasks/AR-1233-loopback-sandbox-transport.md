@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated loopback-only sandbox transport for strict replay services.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Approved loopback-only sandbox transport",
-  "updated_at": "2026-09-16T05:12:43+00:00",
+  "updated_at": "2026-09-16T05:12:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1233"
 }
 ---
@@ -46,3 +46,6 @@
   cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
 
 - 2026-09-16T05:12:43+00:00: Heartbeat by asb_ar1232_sandbox_supervision.
+
+- 2026-09-16T05:12:45+00:00: Recorded command exit 0; command argv SHA-256
+  430c5876fb09571c305425ff5a651b25d7797200eb4e67f73d6a4af7b2f2b091.
