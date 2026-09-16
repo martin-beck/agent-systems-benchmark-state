@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1275-replay-operation-injection",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T01:56:01+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1275-replay-operation-injection",
   "observed_dirty": 0,
   "observed_head": "2ff7b8df88f747afb08f36f15c224a2c4bdacca1",
-  "owner": "asb_ar1024_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1275.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Inject runtime-owned operation handles into actual strict-replay dispatch.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Runtime operation injection into replay dispatcher",
-  "updated_at": "2026-09-16T23:56:01+00:00",
+  "updated_at": "2026-09-16T23:56:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1275-operation-injection"
 }
 ---
@@ -92,3 +92,14 @@ blocked evidence and do not accept metadata-only or caller-fabricated execution.
   runtime-issued handle and no real supervised lifecycle/egress fixtures exist.
 
 - 2026-09-16T23:56:01+00:00: Heartbeat by asb_ar1024_lifecycle_router.
+
+- 2026-09-16T23:56:04+00:00: Released blocked/ownerless at clean signed 2ff7b8d. Implemented
+  dependency-neutral ReplayRequestV1/ReplayResponseV1, runtime-owned one-shot
+  RuntimeReplayOperation, and CLI dispatch_with_runtime_operation adapter with response parity and
+  stale/duplicate/no-fallback tests. Focused adapter 2/2, core/runtime focused tests, fmt/check, and
+  full locked workspace tests green. Provenance drift from new lib.rs export was diagnosed (old
+  b024... expected vs actual 430f...), fixture updated and workflow transcript 3/3 passed. Exact
+  blocker: primary argument-level replay command remains argument-only and has no runtime-issued
+  handle injection; supervised cassette traffic, provider/descendant egress denial,
+  cancellation/restart/timeout/crash reaping, and cleanup evidence remain unimplemented. Preserve
+  checkpoint for follow-on integration.
