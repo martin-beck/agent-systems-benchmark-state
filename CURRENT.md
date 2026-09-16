@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1261](tasks/AR-1261-runtime-to-cli-replay-entrypoint.md): Runtime-to-CLI strict-replay handoff entrypoint | Provide a runtime-owned entrypoint for strict-replay CLI supervision. | Promote after AR-1260 is resolved or superseded; implement the typed runtime-to-CLI handoff entrypoint and prove supervised replay lifecycle. | asb_ar1024_lifecycle_router |
+| P0 | [AR-1261](tasks/AR-1261-runtime-to-cli-replay-entrypoint.md): Runtime-to-CLI strict-replay handoff entrypoint | Provide a runtime-owned entrypoint for strict-replay CLI supervision. | Reconcile coordinator view against declared runtime-cli worktree; then run focused/full gates and review exact signed head d91520f. | asb_ar1024_lifecycle_router |
 
 ## Open
 

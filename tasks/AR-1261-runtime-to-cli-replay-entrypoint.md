@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1261",
-  "next_action": "Promote after AR-1260 is resolved or superseded; implement the typed runtime-to-CLI handoff entrypoint and prove supervised replay lifecycle.",
+  "next_action": "Reconcile coordinator view against declared runtime-cli worktree; then run focused/full gates and review exact signed head d91520f.",
   "observed_branch": "feature/ar-1261-runtime-to-cli-replay-entrypoint",
   "observed_dirty": 0,
   "observed_head": "d91520f0d8ff519601a89396999bd14a6612ed0e",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-owned entrypoint for strict-replay CLI supervision.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Runtime-to-CLI strict-replay handoff entrypoint",
-  "updated_at": "2026-09-16T20:51:22+00:00",
+  "updated_at": "2026-09-16T20:51:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1261-runtime-cli"
 }
 ---
@@ -58,3 +58,9 @@ preserving fail-closed ownership and bounded lifecycle evidence.
 
 - 2026-09-16T20:51:14+00:00: Recorded command exit 0; command argv SHA-256
   10db35e829e8c06882584397dabade83a449f8a39bda368c83ccb41fa3b72237.
+
+- 2026-09-16T20:51:56+00:00: Setup verification: declared worktree_key
+  agent-systems-benchmark-ar-1261-runtime-cli exists at the exact declared path and is registered in
+  ASB git worktree list on feature/ar-1261-runtime-to-cli-replay-entrypoint. Product tree is clean
+  at signed d91520f. The alternate path agent-systems-benchmark-ar-1261-runtime does not exist and
+  is not declared by task metadata; no unrelated checkout used.
