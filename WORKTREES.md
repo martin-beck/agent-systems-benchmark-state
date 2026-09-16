@@ -23,7 +23,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1110` | `feature/ar-1110` | `d16d8d08f5d5` | 0 | behind 51, ahead 0 |
 | `agent-systems-benchmark-ar-1120` | `feature/ar-1120` | `f64985ad3502` | 0 | behind 65, ahead 0 |
 | `agent-systems-benchmark-ar-1130` | `feature/ar-1130` | `603eb8eb86dd` | 0 | behind 47, ahead 0 |
-| `agent-systems-benchmark-ar-1140` | `feature/ar-1140` | `58ebdc2de8e5` | 0 | behind 0, ahead 2 |
+| `agent-systems-benchmark-ar-1140` | `feature/ar-1140` | `58ebdc2de8e5` | 2 | behind 0, ahead 2 |
+| changed files | - | - | - | `crates/asb-cli/schema/v1/setup-output.schema.json`, `docs/workflows/setup-preflight.md` |
 | `agent-systems-benchmark-ar-1150` | `feature/ar-1150` | `d2498a7372ed` | 0 | behind 41, ahead 0 |
 | `agent-systems-benchmark-ar-1151` | `feature/ar-1151` | `baf119c55844` | 1 | behind 40, ahead 3 |
 | changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
@@ -34,8 +35,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1231` | `feature/ar-1231` | `fd8eaef0c36d` | 0 | behind 31, ahead 0 |
 | `agent-systems-benchmark-ar-1232` | `feature/ar-1232` | `7613c678c718` | 0 | behind 30, ahead 27 |
 | `agent-systems-benchmark-ar-1233` | `feature/ar-1233` | `143213c1d09c` | 0 | behind 9, ahead 1 |
-| `agent-systems-benchmark-ar-1234` | `feature/ar-1234` | `36a458020483` | 1 | behind 3, ahead 1 |
-| changed files | - | - | - | `crates/asb-runtime/src/sandbox.rs` |
+| `agent-systems-benchmark-ar-1234` | `feature/ar-1234` | `04b3f728fc5f` | 0 | behind 3, ahead 2 |
 | `agent-systems-benchmark-ar-1235` | `feature/ar-1235-goose-fixture-portability` | `fd7daa43549e` | 3 | behind 0, ahead 0 |
 | changed files | - | - | - | `target-hosted-aarch64/`, `target-hosted-full-aarch64/`, `target-repeat-aarch64/` |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 366, ahead 0 |

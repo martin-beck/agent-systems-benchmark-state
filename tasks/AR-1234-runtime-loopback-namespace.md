@@ -10,17 +10,17 @@
   "id": "AR-1234",
   "next_action": "Capability audit complete: pinned tools exist but unshare -n fails Operation not permitted. Do not add ambient privileged setup or host sharing. Require approved runtime-owned loopback namespace/helper capability, then implement native service/egress tests.",
   "observed_branch": "feature/ar-1234",
-  "observed_dirty": 1,
-  "observed_head": "36a458020483c1b4aa204e491a936f00acd5706d",
+  "observed_dirty": 0,
+  "observed_head": "04b3f728fc5ff2a7e883fc1dcf0458865ce96247",
   "owner": "asb_ar1234_worker",
   "plan": "../plans/AR-1234.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an approved runtime-owned loopback-only sandbox namespace capability.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Runtime-owned loopback namespace capability",
-  "updated_at": "2026-09-16T06:52:58+00:00",
+  "updated_at": "2026-09-16T06:53:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1234"
 }
 ---
