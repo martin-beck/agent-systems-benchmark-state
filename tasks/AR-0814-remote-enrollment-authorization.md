@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Run full locked workspace gates and obtain independent review of v1.7 endpoint/schema slice.",
+  "next_action": "Remove the uncommitted asb-cli control.rs change only after deciding/documenting break-glass capability semantics; implement runner-owned authenticated admin context and actual recovery or explicitly split a prerequisite AR. Then run full locked workspace gates on clean 40838db and obtain independent review.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 1,
   "observed_head": "40838db24e7097877bfcf006c407bdd2b0f1528b",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 223,
+  "task_revision": 224,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:01:18+00:00",
+  "updated_at": "2026-09-16T19:01:31+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -566,3 +566,20 @@ Implementation has not started. Read the linked plan before claiming.
   23bb04bdef2db5d2a56a3f98a7b30c34cb40a6a8d6062f311ecc34153c8c5f21.
 
 - 2026-09-16T19:01:18+00:00: Heartbeat by asb_ar0814_enrollment_authz.
+
+- 2026-09-16T19:01:31+00:00: Independent review of cumulative exact head
+  40838db24e7097877bfcf006c407bdd2b0f1528b (descends from requested 45310e6): commits are SSH-signed
+  with matching DCO; v1.7 request/response schemas are generated and checked-in, additive, and
+  schema conformance 5/5 plus endpoint 8/8 pass; auth focused suite 14/14 pass; legacy v1-v1.6
+  schema byte identity is asserted by the worker evidence. However tree is currently dirty:
+  crates/asb-cli/src/control.rs has an uncommitted BreakGlass match returning CapabilityUnavailable.
+  That confirms the CLI/backend cannot perform the required lost-controller recovery. More
+  importantly ControlBackend::authorize defaults to Ok and endpoint calls only this backend hook; no
+  shared AuthorizationContext/current enrollment-generation binding or AuthAuditEvent dispatch is
+  enforced centrally. BreakGlass request validates syntax but runner backend rejects it as
+  unavailable. Certificate import still stores validated metadata/digests rather than importing
+  certificate bytes, and pairing remains a metadata emitter rather than durable identity-store
+  ceremony. SecretBackend remains qualified abstract boundary without an OS backend. No recorded
+  full locked workspace gate at 40838db, no complete threat-matrix evidence (wrong-IP/stolen/expiry,
+  confused deputy, audit tamper, recovery). Do not publish from dirty tree; resolve
+  capability/authorization semantics and rerun full gates.
