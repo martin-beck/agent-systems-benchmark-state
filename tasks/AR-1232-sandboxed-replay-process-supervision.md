@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1232",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T06:55:24+00:00",
+  "claim_expires": "2026-09-16T06:56:01+00:00",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 368,
+  "task_revision": 369,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T04:55:37+00:00",
+  "updated_at": "2026-09-16T04:56:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -968,3 +968,5 @@
   second recovery (no fallback/reuse). Product head d7ca82f is signed/DCO, clean, and
   remote-advanced despite wrapper push reporting expected-ref lock race. Remaining review scope:
   native executor service lifecycle plus stale/duplicate generation integration.
+
+- 2026-09-16T04:56:01+00:00: Heartbeat by asb_ar1232_sandbox_supervision.
