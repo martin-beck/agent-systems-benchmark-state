@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Implement durable identity-store pairing write and remaining certificate threat-matrix tests.",
+  "next_action": "Add certificate threat-matrix negatives and audit/pairing integration tests; retain validated identity-store write boundary.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "0a5f47021bc576dd8a47a491a76c127f174fa221",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 264,
+  "task_revision": 265,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:37:42+00:00",
+  "updated_at": "2026-09-16T19:37:54+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -717,3 +717,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T19:37:34+00:00: Recorded command exit 0; command argv SHA-256
   0f307dd0235f0c35abcf267273eb692cc11b721a649a811f98958f35a1c685f8.
+
+- 2026-09-16T19:37:54+00:00: Signed+DCO 0a5f470 adds persist_confirmed_identity: validates
+  certificate validity and existing private owner/mode/symlink-safe store before bounded metadata
+  write. Round-trip persistence and expiry rejection test pass; worktree clean. No certificate bytes
+  or secrets are stored.
