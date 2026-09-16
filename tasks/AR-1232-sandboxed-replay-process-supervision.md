@@ -11,17 +11,17 @@
   "id": "AR-1232",
   "next_action": "Extend the launch-wrapper coverage to explicit timeout/crash/partial-launch and stale/duplicate lifecycle assertions, then run full locked runtime/workspace gates and prepare review.",
   "observed_branch": "feature/ar-1232",
-  "observed_dirty": 1,
-  "observed_head": "d9a02c1e8d329644717ca5c6df38aa93c8c9003b",
+  "observed_dirty": 0,
+  "observed_head": "1f8a4697f195fc738108e23a418deb812e7c1fdf",
   "owner": "asb_ar1232_sandbox_supervision",
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T03:02:01+00:00",
+  "updated_at": "2026-09-16T03:02:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
