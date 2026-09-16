@@ -1531,7 +1531,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1273](../tasks/AR-1273-complete-replay-context.md): Complete runtime-owned replay request context | asb_ar1024_lifecycle_router | Provide complete runtime-owned context for strict-replay execution. | Adapt CLI replay dispatch to consume ReplayRequestContext exactly once and bind cassette/service execution; add real supervised response, egress, cancellation, restart, timeout, crash, cleanup, and no-fallback tests. |
+| P0 | [AR-1273](../tasks/AR-1273-complete-replay-context.md): Complete runtime-owned replay request context | asb_ar1024_lifecycle_router | Provide complete runtime-owned context for strict-replay execution. | Integrate ReplayRequestContext into actual argument-level replay dispatch and connect runtime cassette service; add real response parity and supervised egress/no-fallback/cancel/restart/timeout/crash cleanup tests. |
 
 ### Open (6)
 
