@@ -11,17 +11,17 @@
   "id": "AR-1232",
   "next_action": "abc0317 is clean, signed/DCO, pushed; native strict replay 6/6, full locked offline workspace, repository policy, and signature policy all pass. Request independent exact-head review focused on child egress denial and lifecycle cleanup; do not publish/merge before approval.",
   "observed_branch": "feature/ar-1232",
-  "observed_dirty": 1,
-  "observed_head": "1dbeaa7a55592796230c6b3af6a2b9e6e5ad32af",
+  "observed_dirty": 0,
+  "observed_head": "317202820c8be8fc1c970898e110baf5122bbb7b",
   "owner": "asb_ar1232_sandbox_supervision",
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 322,
+  "task_revision": 323,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T04:34:26+00:00",
+  "updated_at": "2026-09-16T04:34:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
