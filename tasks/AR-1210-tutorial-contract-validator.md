@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-16T06:06:28+00:00",
   "depends_on": [],
   "id": "AR-1210",
-  "next_action": "PR #184 exact head 3e475bd after complete source-header repair; monitor fresh exact-head checks, diagnose failures, and do not merge before all required checks and coordinator approval.",
+  "next_action": "Final exact-tree review complete; PR #184 exact head 3e475bd approved and all required checks green. Merge through protected path, then verify resulting main and post-merge assurance.",
   "observed_branch": "docs/ar-1210-tutorial-contract",
   "observed_dirty": 0,
   "observed_head": "3e475bda8f44836a169bc8fc679b430f6c993961",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define offline tutorial steps and validate them against the ASB CLI grammar.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Tutorial contract and syntax validator",
-  "updated_at": "2026-09-16T04:06:28+00:00",
+  "updated_at": "2026-09-16T04:12:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1210"
 }
 ---
@@ -216,3 +216,8 @@ be required.
   d1789e00bf09d7462a2b402231054b4ee77ef67944bd160c1d1d4d9bc9fe4caf.
 
 - 2026-09-16T04:06:28+00:00: Heartbeat by asb_ar1210_tutorial_contract.
+
+- 2026-09-16T04:12:27+00:00: Mapped durable exit-8 hash
+  d1789e00bf09d7462a2b402231054b4ee77ef67944bd160c1d1d4d9bc9fe4caf to gh pr checks 184. The 04:05:35
+  exit 8 was an intermediate polling result while checks were incomplete; current PR API reports all
+  required checks terminal SUCCESS and mergeable clean.

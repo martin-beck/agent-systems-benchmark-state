@@ -1359,7 +1359,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1210](../tasks/AR-1210-tutorial-contract-validator.md): Tutorial contract and syntax validator | asb_ar1210_tutorial_contract | Define offline tutorial steps and validate them against the ASB CLI grammar. | PR #184 exact head 3e475bd after complete source-header repair; monitor fresh exact-head checks, diagnose failures, and do not merge before all required checks and coordinator approval. |
+| P0 | [AR-1210](../tasks/AR-1210-tutorial-contract-validator.md): Tutorial contract and syntax validator | asb_ar1210_tutorial_contract | Define offline tutorial steps and validate them against the ASB CLI grammar. | Final exact-tree review complete; PR #184 exact head 3e475bd approved and all required checks green. Merge through protected path, then verify resulting main and post-merge assurance. |
 | P0 | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md): Sandboxed replay process supervision | asb_ar1232_sandbox_supervision | Supervise strict replay adapters inside the approved network-denied sandbox. | Full locked workspace gate passed on current branch; run independent exact-head review of lifecycle/replay changes and prepare PR after descendant egress evidence is confirmed or explicitly bounded. |
 | P1 | [AR-0909](../tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | asb_ar0909_repair | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Await exact-head CI for b0df3fb; inspect AArch64 and all required checks, independently review, merge only if all green. |
 
