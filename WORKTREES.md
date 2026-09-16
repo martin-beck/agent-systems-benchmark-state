@@ -180,7 +180,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-portable-metrics` | `feature/portable-metrics` | `a0f67bea1ffe` | 0 | behind 746, ahead 0 |
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `51daeb8608e5` | 0 | behind 765, ahead 0 |
 | `agent-systems-benchmark-protected-main-admission` | `DETACHED` | `eb0ad13f8b6e` | 0 | behind 114, ahead 0 |
-| `agent-systems-benchmark-protected-main-dco-1259` | `repair/pr202-protected-main-dco` | `b7d21e083978` | 0 | behind 1, ahead 0 |
+| `agent-systems-benchmark-protected-main-dco-1259` | `repair/pr202-protected-main-dco` | `7edda7d06df7` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-protected-merge-signature-policy` | `fix/protected-merge-signature-policy` | `d6fa883ad1b2` | 0 | behind 358, ahead 0 |
 | `agent-systems-benchmark-protected-merge-tree-remediation` | `repair/protected-merge-tree-policy` | `fd7daa43549e` | 0 | behind 137, ahead 0 |
 | `agent-systems-benchmark-protected-topic-sync-topology` | `fix/protected-topic-sync-topology` | `40a84dda234f` | 0 | behind 346, ahead 0 |
