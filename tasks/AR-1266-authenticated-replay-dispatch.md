@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1266-authenticated-replay-dispatch",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T00:31:53+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1266-authenticated-replay-dispatch",
   "observed_dirty": 0,
   "observed_head": "0d3ef706de98b7df0a254fddb6c8e795aaf98ae5",
-  "owner": "asb_ar1024_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1266.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Add authenticated runtime context to the actual strict-replay CLI dispatch path.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Authenticated replay dispatch context",
-  "updated_at": "2026-09-16T22:37:18+00:00",
+  "updated_at": "2026-09-16T22:38:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1266-authenticated-replay"
 }
 ---
@@ -93,3 +93,12 @@ Preserve all prior blocked evidence; no fabricated launch authority or weakened 
   ownership contamination, unrelated to AR-1266 files. Product tree clean. Focused suite had 70/71
   before isolation; rerun of failing test is green. Remaining acceptance is real supervised cassette
   lifecycle, not yet complete.
+
+- 2026-09-16T22:38:03+00:00: Released blocked/ownerless at clean signed head 0d3ef70. Implemented
+  runtime-issued opaque ReplayDispatchContext, exact-once consumption, and replay-only
+  context-bearing CLI entrypoint. Focused context/runtime tests compile; isolated control state-root
+  test passes 1/1 after prior concurrent ownership contamination. Unresolved blocker: existing
+  replay implementation has no request/response execution hook accepting runtime context, so
+  supervised cassette lifecycle, provider/descendant egress denial, cancellation/restart,
+  timeout/crash cleanup, stale/duplicate/no-fallback evidence cannot be claimed. Requires successor
+  integration in actual replay execution path.

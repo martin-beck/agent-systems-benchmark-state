@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1266](tasks/AR-1266-authenticated-replay-dispatch.md): Authenticated replay dispatch context | Add authenticated runtime context to the actual strict-replay CLI dispatch path. | Connect runtime context to supervised cassette execution rather than merely offline replay; add request/response, egress denial, cancellation/restart/timeout/crash cleanup and no-fallback tests. | asb_ar1024_lifecycle_router |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -34,6 +28,7 @@ Never edit this file directly.
 | P0 | [AR-1261](tasks/AR-1261-runtime-to-cli-replay-entrypoint.md): Runtime-to-CLI strict-replay handoff entrypoint | Provide a runtime-owned entrypoint for strict-replay CLI supervision. | Reconcile coordinator view against declared runtime-cli worktree; then run focused/full gates and review exact signed head d91520f. | - |
 | P0 | [AR-1262](tasks/AR-1262-runtime-owned-launch-authority.md): Runtime-owned strict-replay launch authority | Issue runtime-owned authority for supervised strict-replay execution. | Monitor PR #207 exact head c0091857 through terminal required CI; retain merge block until independent review and all checks green. | - |
 | P0 | [AR-1265](tasks/AR-1265-runtime-owned-replay-entrypoint.md): Runtime-owned strict-replay CLI entrypoint | Provide a real runtime-owned strict-replay CLI entrypoint. | Runtime/CLI owner must add an authenticated context-bearing replay-plan dispatch entrypoint; then exercise cassette request/response and lifecycle/egress tests through it. | - |
+| P0 | [AR-1266](tasks/AR-1266-authenticated-replay-dispatch.md): Authenticated replay dispatch context | Add authenticated runtime context to the actual strict-replay CLI dispatch path. | Connect runtime context to supervised cassette execution rather than merely offline replay; add request/response, egress denial, cancellation/restart/timeout/crash cleanup and no-fallback tests. | - |
 | P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain coordinator-authorized native x86_64 runner/container and immutable CSB source root plus interpreter bytes matching Python 3.12.3 SHA-256 1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118. Docker is currently inaccessible; qemu cannot substitute native x86 evidence. Then rerun native_boundary and record A/B/overhead evidence. | - |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | Formal assurance owner AR-0877/AR-0907 must repair the pinned TLA artifact provenance mismatch (downloaded byte count/hash) before PR #119 can be requalified; AR-0704 native controller requires no source change. | - |
 | P1 | [AR-0832](tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. | - |
