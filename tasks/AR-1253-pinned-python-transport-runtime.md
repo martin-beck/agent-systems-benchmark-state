@@ -7,7 +7,7 @@
     "AR-1252"
   ],
   "id": "AR-1253",
-  "next_action": "Pin and validate exact source docker-library/python and source_revision python:3.13.15-slim-bookworm; add source/revision tamper negatives and rerun focused/full gates before review/publication.",
+  "next_action": "Request independent re-review of exact head b7797d0, then open PR and run exact-head CI.",
   "observed_branch": "feature/ar-1253-pinned-python-transport-runtime",
   "observed_dirty": 0,
   "observed_head": "b7797d05c1a12f4e5cdd8d7df2a7b26c72425052",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision pinned Python transport fixture runtime.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Provision pinned Python transport fixture runtime",
-  "updated_at": "2026-09-16T13:23:40+00:00",
+  "updated_at": "2026-09-16T13:23:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1253"
 }
 ---
@@ -66,3 +66,9 @@ Keep runtime images, caches, provenance, and all test activity under `/srv/data/
 
 - 2026-09-16T13:23:33+00:00: Recorded command exit 0; command argv SHA-256
   321942e0f0153a2d8cbd19eedd393105a4c68944659dfc47ca8844b9bec09b94.
+
+- 2026-09-16T13:23:56+00:00: Review blocker fixed in signed+DCO b7797d0: validator now requires
+  exact source docker-library/python and exact source_revision python:3.13.15-slim-bookworm. Added
+  negative tests for source and source_revision tampering alongside unknown-field, mutable-tag,
+  digest, version, architecture and isolation drift. Full llm-double-spike suite 17/17 and source
+  policy headers/diff checks pass. Request fresh independent review before publication.

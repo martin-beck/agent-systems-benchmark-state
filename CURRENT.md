@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1253](tasks/AR-1253-pinned-python-transport-runtime.md): Provision pinned Python transport fixture runtime | Provision pinned Python transport fixture runtime. | Pin and validate exact source docker-library/python and source_revision python:3.13.15-slim-bookworm; add source/revision tamper negatives and rerun focused/full gates before review/publication. | asb_ar1253_python_runtime |
+| P1 | [AR-1253](tasks/AR-1253-pinned-python-transport-runtime.md): Provision pinned Python transport fixture runtime | Provision pinned Python transport fixture runtime. | Request independent re-review of exact head b7797d0, then open PR and run exact-head CI. | asb_ar1253_python_runtime |
 
 ## Open
 
