@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-1252",
-  "next_action": "Rebase feature onto protected main 4e2820b, preserving runner changes and producing newly SSH-signed+DCO commits; push exact new head, rerun all PR gates including platform source identity.",
+  "next_action": "Request PR #200 refresh to exact head 1d0c3cd; monitor all exact-head checks to terminal.",
   "observed_branch": "feature/ar-1252-approved-isolated-runner",
   "observed_dirty": 0,
   "observed_head": "1d0c3cd017e8d486231dabbd1c590b654f74cc9c",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 104,
+  "task_revision": 105,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T12:57:24+00:00",
+  "updated_at": "2026-09-16T12:57:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -318,3 +318,9 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
 
 - 2026-09-16T12:57:24+00:00: Recorded command exit 0; command argv SHA-256
   db4f92a1d13e3e74221f4464c98b1f8ec96fb71473f85e96db90e1e82c2a5ba3.
+
+- 2026-09-16T12:57:45+00:00: Rebased clean branch onto protected main 4e2820b via handoffctl. Git
+  rebase preserved SSH-valid signatures on all 16 feature commits; refreshed exact head 1d0c3cd
+  pushed with force-with-lease against prior d5f21ce. Full llm-double-spike suite 15/15, source
+  policy headers, and diff checks pass on rebased tree. Platform source identity is now current-base
+  eligible; request fresh PR checks and independent review.
