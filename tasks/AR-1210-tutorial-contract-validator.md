@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define offline tutorial steps and validate them against the ASB CLI grammar.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Tutorial contract and syntax validator",
-  "updated_at": "2026-09-16T04:12:27+00:00",
+  "updated_at": "2026-09-16T04:12:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1210"
 }
 ---
@@ -221,3 +221,6 @@ be required.
   d1789e00bf09d7462a2b402231054b4ee77ef67944bd160c1d1d4d9bc9fe4caf to gh pr checks 184. The 04:05:35
   exit 8 was an intermediate polling result while checks were incomplete; current PR API reports all
   required checks terminal SUCCESS and mergeable clean.
+
+- 2026-09-16T04:12:56+00:00: Recorded command exit 0; command argv SHA-256
+  c29705eb46c9f583b3bf4d8772c84f23fc3e5cde810058d352014847d82e987a.
