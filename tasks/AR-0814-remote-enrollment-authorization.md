@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Add explicit enrollment fingerprint ceremony and rotation/revocation integration audit tests; regenerate contract docs.",
+  "next_action": "Regenerate contract schemas/docs and add rotation/revocation CLI integration audit fixtures.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "f8714ca4399c83f2bfe0ae21be8d22db27a13575",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T17:48:05+00:00",
+  "updated_at": "2026-09-16T17:48:20+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -131,3 +131,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T17:47:58+00:00: Recorded command exit 0; command argv SHA-256
   b702ab926a9381e8ad2fcf58f539730f68d7f949865e8f730075b6919c2c3eb0.
+
+- 2026-09-16T17:48:20+00:00: Signed+DCO f8714ca adds CertificateIdentityV1 and one-time
+  EnrollmentPairingV1. Pairing requires exact out-of-band fingerprint and unexpired code, stores
+  only code digest, rejects replay/expiry/malformed identities/unknown fields. Auth suite: 9 passed.
