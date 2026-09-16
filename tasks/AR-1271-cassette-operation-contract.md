@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define a dependency-neutral cassette request/response operation contract.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Dependency-neutral cassette operation contract",
-  "updated_at": "2026-09-16T23:15:40+00:00",
+  "updated_at": "2026-09-16T23:15:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1271-cassette-operation"
 }
 ---
@@ -59,3 +59,6 @@ Preserve AR-1270's blocked evidence and do not fabricate responses or authority.
 
 - 2026-09-16T23:15:33+00:00: Recorded command exit 0; command argv SHA-256
   cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
+
+- 2026-09-16T23:15:44+00:00: Recorded command exit 101; command argv SHA-256
+  176cab5b29a40fa8794f09725ed51520aae1b944c519cabbe22bf8591c02577a.
