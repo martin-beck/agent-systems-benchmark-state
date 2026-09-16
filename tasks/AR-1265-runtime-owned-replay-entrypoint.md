@@ -11,7 +11,7 @@
   "id": "AR-1265",
   "next_action": "Wire replay-plan dispatch to runtime-issued issue_launch authority; add real cassette response and lifecycle/egress/no-fallback tests before full gates.",
   "observed_branch": "feature/ar-1265-runtime-owned-replay-entrypoint",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "321f2a9f2e95668918e75d70e46bc8b70feee471",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1265.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a real runtime-owned strict-replay CLI entrypoint.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Runtime-owned strict-replay CLI entrypoint",
-  "updated_at": "2026-09-16T22:28:43+00:00",
+  "updated_at": "2026-09-16T22:28:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1265-runtime-replay-entrypoint"
 }
 ---
