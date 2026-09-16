@@ -9,17 +9,17 @@
   "id": "AR-0814",
   "next_action": "Implement backend-owned BreakGlass admin authorization and v1.7 schemas/endpoint tests; preserve legacy schemas.",
   "observed_branch": "feature/remote-enrollment-authz",
-  "observed_dirty": 6,
-  "observed_head": "75fbd5f1ae8c5265eba874dbbbda3862c2e2b15d",
+  "observed_dirty": 0,
+  "observed_head": "45310e625e1b3035984d65acd74ba62c00b13ada",
   "owner": "asb_ar0814_enrollment_authz",
   "plan": "../plans/AR-0814.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 209,
+  "task_revision": 210,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T18:57:47+00:00",
+  "updated_at": "2026-09-16T18:57:55+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
