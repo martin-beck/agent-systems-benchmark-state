@@ -8,7 +8,7 @@
     "AR-1232"
   ],
   "id": "AR-1248",
-  "next_action": "Run full locked workspace, policy/privacy/signature gates at eac5232; push PR and request independent exact-head review.",
+  "next_action": "Monitor PR #197 exact head 8896cad CI; independent exact-head review pending. Merge only all required checks green, then post-merge verify and release.",
   "observed_branch": "feature/ar-1248-strict-replay-cli-contract",
   "observed_dirty": 0,
   "observed_head": "8896cad357e3677998d446e472aeec3cec8f3b7d",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T10:47:18+00:00",
+  "updated_at": "2026-09-16T10:47:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -121,3 +121,8 @@ formal, privacy, signature, DCO, and exact-tree gates.
 
 - 2026-09-16T10:47:18+00:00: Recorded command exit 8; command argv SHA-256
   457dad11b37c52ae4a46a832d7a082caacae43e9439a5c72cb55c17e0435bbed.
+
+- 2026-09-16T10:47:43+00:00: Workflow provenance digest failure from full gate was diagnosed and
+  fixed in signed 8896cad; focused workflow_transcript 3/3 passes. PR #197 updated from eac5232 to
+  8896cad. Contract consistency, focused replay tests 2/2, clippy, and prior full workspace reached
+  only this stale-fixture failure.
