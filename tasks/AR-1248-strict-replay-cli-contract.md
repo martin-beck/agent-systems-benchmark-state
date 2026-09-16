@@ -10,17 +10,17 @@
   "id": "AR-1248",
   "next_action": "Review blocks merge: integrate resolver with runtime-issued SidecarHandoff/SandboxLaunchInput seam or narrow acceptance with coordinator; cross-validate cassette route/dialect and add malformed/executor lifecycle tests before new signed head.",
   "observed_branch": "feature/ar-1248-strict-replay-cli-contract",
-  "observed_dirty": 2,
-  "observed_head": "8e575b3963a67860c1a7e3ffca7314f27b9ea076",
+  "observed_dirty": 0,
+  "observed_head": "bc127a9d87fb893bbf8b52102d318507cc92d2c3",
   "owner": "asb_ar1232_lifecycle_router",
   "plan": "../plans/AR-1248.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T10:58:40+00:00",
+  "updated_at": "2026-09-16T10:58:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
