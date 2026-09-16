@@ -9,17 +9,17 @@
   "id": "AR-0814",
   "next_action": "Run full policy/privacy gates and independent review; document negotiation pre-auth boundary and secret backend scope.",
   "observed_branch": "feature/remote-enrollment-authz",
-  "observed_dirty": 2,
-  "observed_head": "241a033504212b0e4071ee1b112b4a2541cbf4c9",
+  "observed_dirty": 0,
+  "observed_head": "917350e357afb518699a0fd20942abcf6e0eb971",
   "owner": "asb_ar0814_enrollment_authz",
   "plan": "../plans/AR-0814.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 109,
+  "task_revision": 110,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T18:08:17+00:00",
+  "updated_at": "2026-09-16T18:08:24+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
