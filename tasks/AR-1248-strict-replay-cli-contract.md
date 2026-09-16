@@ -8,7 +8,7 @@
     "AR-1232"
   ],
   "id": "AR-1248",
-  "next_action": "Rerun PR #197 exact-head policy/Rust/contract CI and request independent review at cebe8ef. Executable replay-plan now resolves the verified cassette and retains RuntimeBoundReplay.sidecar for the execution lifetime; runtime attestation is consumed before handoff creation; relay cleanup is asserted on drop. Focused CLI 76/76 and clippy pass.",
+  "next_action": "PR #197 updated to signed head 7d9c2ee; rerun exact-head Repository quality and Rust CI, then request independent review. Focused workflow transcript 3/3 and full locked offline workspace gate pass.",
   "observed_branch": "feature/ar-1248-strict-replay-cli-contract",
   "observed_dirty": 0,
   "observed_head": "7d9c2ee2e08b9d61cb03837236918575405fb5c2",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 133,
+  "task_revision": 134,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T20:09:11+00:00",
+  "updated_at": "2026-09-16T20:09:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -373,3 +373,11 @@ formal, privacy, signature, DCO, and exact-tree gates.
 
 - 2026-09-16T20:09:11+00:00: Recorded command exit 0; command argv SHA-256
   3bd05d41ad1e7e81a241742cb8f9bc4068ab10db15e7786209352d8936230537.
+
+- 2026-09-16T20:09:33+00:00: Diagnosed PR #197 failures: workflow_transcript provenance assertion
+  used a stale 63-character cli_source_sha256. Updated only
+  docs/examples/asb-cli-workflow-v1.provenance.json to the exact 64-character digest for
+  crates/asb-cli/src/lib.rs. Signed+DCO commit 7d9c2ee pushed; focused transcript tests 3/3 pass,
+  full locked offline workspace test gate passes, git signature verifies, and worktree is clean.
+  Prior runtime attestation/replay-supervision review blocker remains distinct and unresolved; no
+  merge requested.

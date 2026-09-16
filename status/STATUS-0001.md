@@ -1465,7 +1465,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | asb_ar1024_lifecycle_router | Define the strict-replay CLI consumer contract. | Rerun PR #197 exact-head policy/Rust/contract CI and request independent review at cebe8ef. Executable replay-plan now resolves the verified cassette and retains RuntimeBoundReplay.sidecar for the execution lifetime; runtime attestation is consumed before handoff creation; relay cleanup is asserted on drop. Focused CLI 76/76 and clippy pass. |
+| P0 | [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | asb_ar1024_lifecycle_router | Define the strict-replay CLI consumer contract. | PR #197 updated to signed head 7d9c2ee; rerun exact-head Repository quality and Rust CI, then request independent review. Focused workflow transcript 3/3 and full locked offline workspace gate pass. |
 
 ### Open (5)
 
