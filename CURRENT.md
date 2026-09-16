@@ -8,6 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0897](tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Run PR188 exact-head CI/review, then create signed recovery merge and verify protected-main policy. | asb_ar0897_merge_integrity |
+| P0 | [AR-1238](tasks/AR-1238-runtime-loopback-supervisor.md): Runtime-owned loopback supervisor | Provide the runtime-owned private-namespace supervisor for loopback replay. | Provide trusted runtime bundle installation and immutable digest pinning for supervisor and sidecar; then run native bwrap end-to-end cassette and isolation tests. | asb_ar1238_bwrap_relay_worker |
 | P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun 34339927858 was launched via handoffctl and is actively watched by PID 736624/gh PID 736653; exact rerun head a4e1a9de985a4c9f22628c6d604a6e62f4f173e3, job 104684371738 currently running. Keep lease heartbeat, wait terminal, then capture failures or green result. | asb_ar0896_qualification |
 
 ## Open
@@ -19,7 +20,6 @@ Never edit this file directly.
 | P0 | [AR-1042](tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. | - |
 | P0 | [AR-1044](tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. | - |
 | P0 | [AR-1151](tasks/AR-1151.md): Strict offline replay | Replay strictly without providers. | Design and implement the missing executable strict-replay run-path seam: pass exact cassette route/service into agent adapter launch, deny provider egress at process boundary, and add campaign-level cancellation/restart/no-fallback tests. Current CLI replay only decodes/indexes/selects and emits metadata. | - |
-| P0 | [AR-1238](tasks/AR-1238-runtime-loopback-supervisor.md): Runtime-owned loopback supervisor | Provide the runtime-owned private-namespace supervisor for loopback replay. | Provide trusted runtime bundle installation and immutable digest pinning for supervisor and sidecar; then run native bwrap end-to-end cassette and isolation tests. | - |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Qualify pinned OpenJiuwen live execution. | Coordinate signed protected-main merge recovery for 1c07e90, then rerun post-merge policy before closing AR-0859. | - |
 
 ## Blocked

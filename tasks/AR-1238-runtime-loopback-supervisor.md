@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1238-runtime-loopback-supervisor",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T10:08:51+00:00",
   "depends_on": [
     "AR-1100",
     "AR-1231"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1238-runtime-loopback-supervisor",
   "observed_dirty": 0,
   "observed_head": "d9f42ecb2a205b86250233f4f4c75688a997c063",
-  "owner": "",
+  "owner": "asb_ar1238_bwrap_relay_worker",
   "plan": "../plans/AR-1238.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide the runtime-owned private-namespace supervisor for loopback replay.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Runtime-owned loopback supervisor",
-  "updated_at": "2026-09-16T08:08:49+00:00",
+  "updated_at": "2026-09-16T08:08:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1238"
 }
 ---
@@ -126,3 +126,5 @@ remaining work is launcher integration and real sidecar forwarding, not a host c
 
 - 2026-09-16T08:08:49+00:00: User-approved continuation: implement trusted runtime-bundle pinning
   and native Bubblewrap cassette/isolation tests exclusively for AR-1238.
+
+- 2026-09-16T08:08:51+00:00: Claimed by asb_ar1238_bwrap_relay_worker.
