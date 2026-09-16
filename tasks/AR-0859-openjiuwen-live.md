@@ -7,7 +7,7 @@
     "AR-0858"
   ],
   "id": "AR-0859",
-  "next_action": "Run fresh exact-head CI for 230084e and independently review the rebased OpenJiuwen qualification diff.",
+  "next_action": "Coordinate signed protected-main merge recovery for 1c07e90, then rerun post-merge policy before closing AR-0859.",
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "230084ef1ea88168eac2be9098cc3c71dd14c465",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 281,
+  "task_revision": 282,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-16T07:32:03+00:00",
+  "updated_at": "2026-09-16T07:32:46+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -950,3 +950,8 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-16T07:32:03+00:00: Recorded command exit 0; command argv SHA-256
   8130534c27551224c7d89286f64415266ed12cac561feacbb96a5266e8362980.
+
+- 2026-09-16T07:32:46+00:00: PR124 merged feature head 230084ef onto protected main as merge
+  1c07e907. Post-merge policy run 35069013257 failed closed: merge commit lacks matching
+  Signed-off-by trailer. Do not mark AR done or claim release; product head and pre-merge checks
+  were green, but protected-main merge integrity is unresolved.
