@@ -10,16 +10,16 @@
   "next_action": "Promote and claim after reconciliation; reproduce and deterministically repair the sandbox scope-classification timing flake without weakening assertions.",
   "observed_branch": "fix/ar-1263-sandbox-scope-classification",
   "observed_dirty": 0,
-  "observed_head": "0000000000000000000000000000000000000000",
+  "observed_head": "0a808a635d85fdc4a43b575e3711ef23b38089e3",
   "owner": "asb_ar1263_sandbox_stability",
   "plan": "../plans/AR-1263.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stabilize intermittent sandbox scope classification in the quality gate.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Stabilize sandbox scope classification gate",
-  "updated_at": "2026-09-16T21:19:00+00:00",
+  "updated_at": "2026-09-16T21:19:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1263-sandbox-stability"
 }
 ---
