@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 436,
+  "task_revision": 437,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T06:42:19+00:00",
+  "updated_at": "2026-09-16T06:43:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -1200,3 +1200,7 @@
   Clippy passes. No unrelated process or network behavior is changed. Remaining boundary is
   unchanged: actual child HTTP/TCP cassette bridging requires a separately reviewed adapter/launch
   contract mapping the Unix endpoint into the isolated child.
+
+- 2026-09-16T06:43:37+00:00: Attempt child-visible forwarding only within AR-1232. Do not weaken
+  denied networking or add unreviewed helper; verify whether existing launch API can safely host an
+  in-tree sidecar.
