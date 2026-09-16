@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1263](tasks/AR-1263-sandbox-scope-classification-stability.md): Stabilize sandbox scope classification gate | Stabilize intermittent sandbox scope classification in the quality gate. | Promote and claim after reconciliation; reproduce and deterministically repair the sandbox scope-classification timing flake without weakening assertions. | asb_ar1263_sandbox_stability |
+| P1 | [AR-1263](tasks/AR-1263-sandbox-scope-classification-stability.md): Stabilize sandbox scope classification gate | Stabilize intermittent sandbox scope classification in the quality gate. | Run full locked workspace gates and review signed 0acbc1d; preserve terminal crash assertion and 20-run evidence. | asb_ar1263_sandbox_stability |
 
 ## Open
 

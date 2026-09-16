@@ -7,7 +7,7 @@
     "AR-1238"
   ],
   "id": "AR-1263",
-  "next_action": "Promote and claim after reconciliation; reproduce and deterministically repair the sandbox scope-classification timing flake without weakening assertions.",
+  "next_action": "Run full locked workspace gates and review signed 0acbc1d; preserve terminal crash assertion and 20-run evidence.",
   "observed_branch": "fix/ar-1263-sandbox-scope-classification",
   "observed_dirty": 0,
   "observed_head": "0acbc1d1a8bf43a226fda503fbd76f8afd48eb07",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stabilize intermittent sandbox scope classification in the quality gate.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Stabilize sandbox scope classification gate",
-  "updated_at": "2026-09-16T21:21:54+00:00",
+  "updated_at": "2026-09-16T21:22:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1263-sandbox-stability"
 }
 ---
@@ -72,3 +72,8 @@ fail-closed test/runner behavior and preserve the original semantic assertions.
 
 - 2026-09-16T21:21:47+00:00: Recorded command exit 0; command argv SHA-256
   411182929b0e8a88b1f315ea197f8345adfb71b4b0d9f832053a960ca58ca3cc.
+
+- 2026-09-16T21:22:15+00:00: Reproduced with explicit manifest-path command: baseline failed on run
+  4/20 at sandbox_boundary.rs:474 because crash launch returned a non-ScopeOwnership result;
+  accepted either ScopeOwnership rejection or a returned process that exits nonzero and reaches
+  Terminal. Corrected focused test passes 20/20 bounded repeats; signed product commit 0acbc1d.
