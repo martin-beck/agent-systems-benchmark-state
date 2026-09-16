@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1233",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T07:20:39+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1231",
     "AR-1100"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1233",
   "observed_dirty": 0,
   "observed_head": "143213c1d09c5c22d9cd0dec0ca55c2adb29b201",
-  "owner": "asb_ar1232_sandbox_supervision",
+  "owner": "",
   "plan": "../plans/AR-1233.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide an authenticated loopback-only sandbox transport for strict replay services.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Approved loopback-only sandbox transport",
-  "updated_at": "2026-09-16T05:20:39+00:00",
+  "updated_at": "2026-09-16T05:21:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1233"
 }
 ---
@@ -79,3 +79,10 @@
   test remains blocked until backend attestation exists.
 
 - 2026-09-16T05:20:39+00:00: Heartbeat by asb_ar1232_sandbox_supervision.
+
+- 2026-09-16T05:21:06+00:00: Blocked on approved runtime capability: bubblewrap --unshare-all denies
+  loopback and no attested loopback-only namespace setup exists. Sharing host network would violate
+  provider-egress isolation; adding ambient ip/privileged helper is unsafe and out of scope. Typed
+  LoopbackOnly preservation is implemented at signed head 143213c with full asb-runtime gates green.
+  Requires approved runtime-owned loopback namespace/helper before native child cassette-service
+  tests can proceed.
