@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1232",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T05:38:29+00:00",
+  "claim_expires": "2026-09-16T05:40:41+00:00",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 194,
+  "task_revision": 195,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T03:40:20+00:00",
+  "updated_at": "2026-09-16T03:40:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -518,3 +518,5 @@
   loopback environment reaches a real sandbox child and command identity mismatch fails before
   native spawn. Focused strict replay remains green. No child output or credentials retained in
   evidence.
+
+- 2026-09-16T03:40:41+00:00: Heartbeat by asb_ar1232_sandbox_supervision.
