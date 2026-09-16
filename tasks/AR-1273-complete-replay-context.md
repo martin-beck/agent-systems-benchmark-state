@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide complete runtime-owned context for strict-replay execution.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Complete runtime-owned replay request context",
-  "updated_at": "2026-09-16T23:32:42+00:00",
+  "updated_at": "2026-09-16T23:33:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1273-complete-replay-context"
 }
 ---
@@ -36,3 +36,6 @@ AR-1272's blocked evidence; never accept caller-provided authority or fabricate 
 - 2026-09-16T23:30:31+00:00: Claimed by asb_ar1024_lifecycle_router.
 
 - 2026-09-16T23:32:42+00:00: Heartbeat by asb_ar1024_lifecycle_router.
+
+- 2026-09-16T23:33:58+00:00: Recorded command exit 1; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
