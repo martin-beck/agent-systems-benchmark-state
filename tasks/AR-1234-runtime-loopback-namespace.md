@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1234",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T08:56:58+00:00",
   "depends_on": [
     "AR-1100",
     "AR-1231"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1234",
   "observed_dirty": 0,
   "observed_head": "04b3f728fc5ff2a7e883fc1dcf0458865ce96247",
-  "owner": "",
+  "owner": "asb_ar1234_worker_next",
   "plan": "../plans/AR-1234.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide an approved runtime-owned loopback-only sandbox namespace capability.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Runtime-owned loopback namespace capability",
-  "updated_at": "2026-09-16T06:56:35+00:00",
+  "updated_at": "2026-09-16T06:56:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1234"
 }
 ---
@@ -136,3 +136,5 @@
 - 2026-09-16T06:56:35+00:00: Resume for one-worker AR-1234-only audit and implementation attempt;
   rootless loopback-only mechanisms only; no host sharing, firewall mutation, ambient privileged
   helper, or external network.
+
+- 2026-09-16T06:56:58+00:00: Claimed by asb_ar1234_worker_next.
