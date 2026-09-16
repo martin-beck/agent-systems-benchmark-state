@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend the pinned MockAgents executable qualification harness.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Extend MockAgents qualification harness",
-  "updated_at": "2026-09-16T18:40:24+00:00",
+  "updated_at": "2026-09-16T18:40:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1250"
 }
 ---
@@ -143,3 +143,6 @@ privacy, signature, DCO, and exact-tree gates; do not claim support from host in
   without weakening gates.
 
 - 2026-09-16T18:40:24+00:00: Claimed by asb_ar1250_mockagents_harness.
+
+- 2026-09-16T18:40:58+00:00: Recorded command exit 1; command argv SHA-256
+  bc282d4653b8a5cde3c4375e01b8363a9b0f22ffd483efa275984c7a7c1a14af.
