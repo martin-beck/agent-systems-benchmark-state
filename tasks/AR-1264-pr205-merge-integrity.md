@@ -7,7 +7,7 @@
     "AR-0897"
   ],
   "id": "AR-1264",
-  "next_action": "Promote after AR-1263 is repaired/released; preserve unsigned PR #205 merge and create a signed DCO-bearing forward-only recovery through handoffctl.",
+  "next_action": "Monitor PR #206 exact head ef56571f7274 against base ebfa37023e56; hosted checks are running. After all green and review, use merge_pr.py with refs/pull/206/head and exact OIDs; verify signed main and post-merge gates.",
   "observed_branch": "repair/ar-1264-pr205-merge-integrity",
   "observed_dirty": 0,
   "observed_head": "ef56571f727416202df4dd6c4b34c01a2dd7ef75",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover signed protected-main integration after PR #205.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Recover signed integration after PR #205",
-  "updated_at": "2026-09-16T21:46:53+00:00",
+  "updated_at": "2026-09-16T21:47:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1264-merge-integrity"
 }
 ---
@@ -51,3 +51,11 @@ main gates.
 
 - 2026-09-16T21:46:53+00:00: Recorded command exit 0; command argv SHA-256
   7bffbd6d9d418894faaba7bc2939bf697e721466f771b7c5c597b081c7d66a8f.
+
+- 2026-09-16T21:47:23+00:00: Diagnosed two prior exit-1 merge attempts: merge_pr.py rejected
+  abbreviated expected head ef56571 (requires full lowercase object ID), then rejected refs/heads
+  topic ref (requires refs/pull/<number>/head). Corrected by opening PR #206 from exact worktree
+  branch. PR #206 exact base ebfa37023e56269b8299254b535be60f3cf1d186, head
+  ef56571f727416202df4dd6c4b34c01a2dd7ef75, tree 1d0a5577da8cd2d6199d20980d951c468205c934; hosted
+  checks started (AWQ/header passed, remaining required checks in progress). Signed recovery topic
+  tip is clean and DCO-bearing.

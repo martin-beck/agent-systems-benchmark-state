@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1264](tasks/AR-1264-pr205-merge-integrity.md): Recover signed integration after PR #205 | Recover signed protected-main integration after PR #205. | Promote after AR-1263 is repaired/released; preserve unsigned PR #205 merge and create a signed DCO-bearing forward-only recovery through handoffctl. | asb_ar1264_merge_integrity |
+| P0 | [AR-1264](tasks/AR-1264-pr205-merge-integrity.md): Recover signed integration after PR #205 | Recover signed protected-main integration after PR #205. | Monitor PR #206 exact head ef56571f7274 against base ebfa37023e56; hosted checks are running. After all green and review, use merge_pr.py with refs/pull/206/head and exact OIDs; verify signed main and post-merge gates. | asb_ar1264_merge_integrity |
 
 ## Open
 
