@@ -32,8 +32,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1229-auth-application-integration` | `feature/ar-1229-auth-application-integration` | `b33d6da59ba9` | 0 | behind 95, ahead 0 |
 | `agent-systems-benchmark-ar-1230-authenticated-provider-request-seam` | `feature/ar-1230-authenticated-provider-request-seam` | `3d0349af1a56` | 0 | behind 131, ahead 0 |
 | `agent-systems-benchmark-ar-1231` | `feature/ar-1231` | `fd8eaef0c36d` | 0 | behind 54, ahead 0 |
-| `agent-systems-benchmark-ar-1232` | `feature/ar-1232` | `ec25db8ec6bc` | 2 | behind 53, ahead 38 |
-| changed files | - | - | - | `crates/asb-agents/src/launch_bridge.rs`, `crates/asb-runtime/src/sandbox.rs` |
+| `agent-systems-benchmark-ar-1232` | `feature/ar-1232` | `ec25db8ec6bc` | 3 | behind 53, ahead 38 |
+| changed files | - | - | - | `crates/asb-agents/src/launch_bridge.rs`, `crates/asb-runtime/src/loopback_sidecar.rs`, `crates/asb-runtime/src/sandbox.rs` |
 | `agent-systems-benchmark-ar-1233` | `feature/ar-1233` | `11575f6a96a1` | 0 | behind 32, ahead 11 |
 | `agent-systems-benchmark-ar-1233-positive` | `feature/ar-1233-positive-transport` | `36dd575d2b76` | 0 | behind 307, ahead 9 |
 | `agent-systems-benchmark-ar-1234` | `feature/ar-1234` | `7afabe002d82` | 0 | behind 0, ahead 14 |
@@ -52,7 +52,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar0877-ar0906-integration` | `integration/ar0877-ar0906` | `1af28655c6e2` | 0 | behind 261, ahead 0 |
 | `agent-systems-benchmark-ar0878-integration` | `DETACHED` | `0fbec95d2154` | 0 | behind 323, ahead 0 |
 | `agent-systems-benchmark-ar0880-integration` | `integration/ar0880-b7559931` | `2a85872285e6` | 0 | behind 305, ahead 0 |
-| `agent-systems-benchmark-ar0898-integration` | `DETACHED` | `606375f613fc` | 0 | behind 2, ahead 0 |
+| `agent-systems-benchmark-ar0898-integration` | `DETACHED` | `eb0ad13f8b6e` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar0906-merge-dco` | `repair/ar0906-merge-dco` | `66ca27afc2fb` | 0 | behind 259, ahead 0 |
 | `agent-systems-benchmark-ar1024-descriptor` | `DETACHED` | `9c164c6ed8fe` | 0 | behind 206, ahead 1 |
 | `agent-systems-benchmark-ar1024-router` | `DETACHED` | `f6968d924ad5` | 0 | behind 204, ahead 0 |
