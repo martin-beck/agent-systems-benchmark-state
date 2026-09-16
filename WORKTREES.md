@@ -115,7 +115,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-local-inference-provider-profiles` | `feat/local-inference-provider-profiles` | `eed49592617a` | 0 | behind 277, ahead 0 |
 | `agent-systems-benchmark-local-llm-testing-recommendations` | `docs/local-llm-testing-recommendations` | `4a23069336be` | 0 | behind 290, ahead 0 |
 | `agent-systems-benchmark-main-forward` | `repair/github-dco-fix` | `1b821930cb50` | 0 | behind 145, ahead 0 |
-| `agent-systems-benchmark-main-merge-integrity` | `fix/main-merge-integrity` | `44ca04d2adda` | 0 | behind 1, ahead 0 |
+| `agent-systems-benchmark-main-merge-integrity` | `fix/main-merge-integrity` | `44ca04d2adda` | 1 | behind 1, ahead 0 |
+| changed files | - | - | - | `tools/quality/repository_policy.py` |
 | `agent-systems-benchmark-main-repair` | `DETACHED` | `cc4df693964d` | 0 | behind 177, ahead 0 |
 | `agent-systems-benchmark-main-repair2` | `DETACHED` | `b9fb334b29f5` | 0 | behind 176, ahead 0 |
 | `agent-systems-benchmark-main-repair3` | `DETACHED` | `50345d56b9d9` | 0 | behind 173, ahead 0 |

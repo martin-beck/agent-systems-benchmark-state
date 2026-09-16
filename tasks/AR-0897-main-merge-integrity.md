@@ -9,7 +9,7 @@
   "id": "AR-0897",
   "next_action": "Hold PR 126 at bd6f450; after AR-0877 and AR-0909 integrate, rebase once and require fresh all-green exact-head CI before merge.",
   "observed_branch": "fix/main-merge-integrity",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "44ca04d2adda4b128c06f17e6c3512efb07be41c",
   "owner": "asb_ar0897_merge_integrity",
   "plan": "../plans/AR-0897.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 118,
+  "task_revision": 119,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-16T05:18:46+00:00",
+  "updated_at": "2026-09-16T05:18:53+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
