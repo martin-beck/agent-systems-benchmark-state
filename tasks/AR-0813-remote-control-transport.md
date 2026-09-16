@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0813",
-  "next_action": "Close remaining AR-0813 transport scope before publication: implement listener lifecycle with actual max-connection admission, bounded backpressure/keepalive/idle/rate/drain controls, reconnect revision/event replay without gaps or duplicate mutations, and fault tests for malformed/truncated/slow/half-open/reorder/packet-loss/reconnect/protocol-skew/IPv4/IPv6/partition cases; rerun full workspace gate after unrelated asb-metrics mismatch is repaired or explicitly qualified.",
+  "next_action": "Add missing plan-mandated network fault/address coverage or link reviewed external-harness evidence: IPv4/IPv6 bind/address changes, packet loss/reorder, network partitions, half-open/reconnect storms, protocol skew/downgrade, port reuse; also implement/verify keepalive, rate limiting and graceful drain. Repair unrelated asb-metrics mismatch, rerun full workspace gates, then seek publication review.",
   "observed_branch": "feature/remote-control-transport",
   "observed_dirty": 0,
   "observed_head": "1eeb6ca94ddfdd0d531ddca137c7fb1683e5a280",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T14:55:50+00:00",
+  "updated_at": "2026-09-16T14:56:01+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -330,3 +330,16 @@ Implementation has not started. Read the linked plan before claiming.
   still has unrelated asb-metrics mismatch.
 
 - 2026-09-16T14:55:50+00:00: Heartbeat by asb_ar0813_remote_transport.
+
+- 2026-09-16T14:56:01+00:00: Independent exact-head review of
+  1eeb6ca94ddfdd0d531ddca137c7fb1683e5a280 passed signatures/DCO, clean tree, TLS 1.3 mTLS/ALPN,
+  explicit bind/listener and RAII connection/request bounds, frame integration,
+  malformed/truncated/oversized/slow-peer tests, reconnect EventWindow resume API, focused
+  asb-control 43 tests plus docs green. Publication remains blocked: plan explicitly requires fault
+  coverage for packet loss/reorder, reconnect storms, protocol skew/downgrade, port reuse/address
+  changes, IPv4/IPv6, and network partitions; commit records these as external-harness scope without
+  supplying reviewed evidence. Also no concrete keepalive, rate-limiting, graceful-drain, or
+  client-disconnect runner-continuation implementation is present in the cumulative diff. Full
+  workspace cargo test remains blocked by unrelated asb-metrics kernel.rs:713 expectation mismatch;
+  this is not attributed to AR-0813 but leaves the applicable full gate incomplete. No
+  PR/publication authorized.
