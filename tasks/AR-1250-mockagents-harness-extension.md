@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1250-mockagents-harness-extension",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T12:46:35+00:00",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1250-mockagents-harness-extension",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "asb_ar1250_mockagents_harness",
   "plan": "../plans/AR-1250.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Extend the pinned MockAgents executable qualification harness.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Extend MockAgents qualification harness",
-  "updated_at": "2026-09-16T10:45:50+00:00",
+  "updated_at": "2026-09-16T10:46:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1250"
 }
 ---
@@ -31,3 +31,5 @@ privacy, signature, DCO, and exact-tree gates; do not claim support from host in
 
 - 2026-09-16T10:45:50+00:00: AR-1249 artifact audit identified explicit platform-selection and
   hostile/lifecycle harness gaps; promote focused repair.
+
+- 2026-09-16T10:46:35+00:00: Claimed by asb_ar1250_mockagents_harness.
