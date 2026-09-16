@@ -1443,7 +1443,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P3 | [AR-1006](../tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | asb_ar1006_distributed_workers | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
+| P3 | [AR-1006](../tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | asb_ar1006_distributed_workers | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Open PR from signed 1a41d0b, request independent review, then run exact-head CI. |
 
 ### Open (4)
 
