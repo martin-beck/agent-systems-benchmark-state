@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision pinned Python transport fixture runtime.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Provision pinned Python transport fixture runtime",
-  "updated_at": "2026-09-16T13:18:50+00:00",
+  "updated_at": "2026-09-16T13:19:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1253"
 }
 ---
@@ -31,3 +31,6 @@ Keep runtime images, caches, provenance, and all test activity under `/srv/data/
   exact-head evidence; promote runtime fixture successor.
 
 - 2026-09-16T13:18:50+00:00: Claimed by asb_ar1253_python_runtime.
+
+- 2026-09-16T13:19:05+00:00: Recorded command exit 0; command argv SHA-256
+  eaa6bca78b91f67bb7aa44895c2a2056ccb44cfde9e2427c8f5830265b90b196.
