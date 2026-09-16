@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add OpenJiuwen provider parity and support matrix evidence.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Add OpenJiuwen provider parity and support matrix evidence",
-  "updated_at": "2026-09-16T12:20:27+00:00",
+  "updated_at": "2026-09-16T12:20:30+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-parity"
 }
 ---
@@ -38,3 +38,6 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-16T12:20:19+00:00: Recorded command exit 0; command argv SHA-256
   694058a07c30311c499b513da6eda6f4b0f17629a2e608d034924311c76b17eb.
+
+- 2026-09-16T12:20:30+00:00: Recorded command exit 101; command argv SHA-256
+  ab97a5f6db73481cf378a483b8cea89dfc61e7580766ace7bd856205c056cdf4.
