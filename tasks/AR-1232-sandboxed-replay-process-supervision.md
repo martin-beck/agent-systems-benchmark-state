@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 182,
+  "task_revision": 183,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T03:36:55+00:00",
+  "updated_at": "2026-09-16T03:37:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -487,3 +487,6 @@
   65fbc419567805f949a8d85b8a71a5dbe7af2a9bfc3e9b7ddc115feb27b3fabd.
 
 - 2026-09-16T03:36:55+00:00: Heartbeat by asb_ar1232_sandbox_supervision.
+
+- 2026-09-16T03:37:00+00:00: Recorded command exit 0; command argv SHA-256
+  ee9547519af9bcbd14b7248ca5a415a6765fa56f0cae84fd81585b345e951ec1.
