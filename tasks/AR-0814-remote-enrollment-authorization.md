@@ -10,16 +10,16 @@
   "next_action": "Implement durable certificate/pairing persistence and threat-matrix tests; retain explicit fail-closed SecretBackend boundary.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
-  "observed_head": "677e8fd5ed7c7437bbfe9b5dafd375b773a115c1",
+  "observed_head": "1e5508e850c7c7d96d041a3ffbca64e2702f1b77",
   "owner": "asb_ar0814_enrollment_authz",
   "plan": "../plans/AR-0814.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 253,
+  "task_revision": 254,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:29:24+00:00",
+  "updated_at": "2026-09-16T19:29:31+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
