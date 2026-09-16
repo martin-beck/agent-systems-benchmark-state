@@ -21,7 +21,7 @@ Generated from local Git and GitHub. Do not edit.
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
 | #151 | `dependabot/cargo/serde-1.0.229@c926edfde377` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
-| #190 | `fix/shellcheck-fail-closed@760eded801d3` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | ci: enforce ShellCheck for workflow analysis |
+| #190 | `fix/shellcheck-fail-closed@760eded801d3` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | ci: enforce ShellCheck for workflow analysis |
 
 ## Recent workflows
 
@@ -32,7 +32,7 @@ Generated from local Git and GitHub. Do not edit.
 | 35075403698 | `760eded801d3` | pull_request | Formal assurance | in_progress:- |
 | 35075403696 | `760eded801d3` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35075403678 | `760eded801d3` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 35075403664 | `760eded801d3` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35075403664 | `760eded801d3` | pull_request | Hosted portability and native qualification | completed:success |
 | 35075403660 | `760eded801d3` | pull_request | Rust verification | in_progress:- |
 | 35075403645 | `760eded801d3` | pull_request | Huawei MIT source headers | completed:success |
 | 35074957165 | `606375f613fc` | push | Emulated aarch64 portability | completed:success |
