@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1130](tasks/AR-1130.md): Configured provider launches | Launch agents with configured providers. | DCO history repaired and force-with-lease pushed at exact head 603eb8e. Re-run focused launch/provenance tests, then rerun full gates and monitor PR #181 CI. Loom failures are ETXTBSY in shared TLA artifact acquisition fixtures; classify as reproducible infrastructure/product fixture contention and coordinate rerun. | asb_ar1130_launch |
+| P0 | [AR-1130](tasks/AR-1130.md): Configured provider launches | Launch agents with configured providers. | Post-merge verification complete: PR #181 merged at 0443ebac; exact-main tree matches feature tree, focused provider-launch/workflow tests and full locked offline workspace tests passed, worktree clean. Release AR-1130 as done. | asb_ar1130_launch |
 
 ## Open
 
