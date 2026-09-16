@@ -23,7 +23,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1110` | `feature/ar-1110` | `d16d8d08f5d5` | 0 | behind 57, ahead 0 |
 | `agent-systems-benchmark-ar-1120` | `feature/ar-1120` | `f64985ad3502` | 0 | behind 71, ahead 0 |
 | `agent-systems-benchmark-ar-1130` | `feature/ar-1130` | `603eb8eb86dd` | 0 | behind 53, ahead 0 |
-| `agent-systems-benchmark-ar-1140` | `feature/ar-1140` | `d83be5b7e576` | 0 | behind 6, ahead 7 |
+| `agent-systems-benchmark-ar-1140` | `feature/ar-1140` | `d83be5b7e576` | 1 | behind 6, ahead 7 |
+| changed files | - | - | - | `docs/examples/asb-cli-workflow-v1.json` |
 | `agent-systems-benchmark-ar-1150` | `feature/ar-1150` | `d2498a7372ed` | 0 | behind 47, ahead 0 |
 | `agent-systems-benchmark-ar-1151` | `feature/ar-1151` | `baf119c55844` | 1 | behind 46, ahead 3 |
 | changed files | - | - | - | `crates/asb-cli/src/lib.rs` |

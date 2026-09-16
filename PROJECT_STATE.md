@@ -29,7 +29,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 35069013457 | `1c07e907a6fd` | push | Hosted portability and native qualification | completed:success |
 | 35069013323 | `1c07e907a6fd` | push | Rust verification | completed:failure |
-| 35069013312 | `1c07e907a6fd` | push | Emulated aarch64 portability | in_progress:- |
+| 35069013312 | `1c07e907a6fd` | push | Emulated aarch64 portability | completed:success |
 | 35069013270 | `1c07e907a6fd` | push | Formal assurance | completed:success |
 | 35069013257 | `1c07e907a6fd` | push | Repository quality | completed:failure |
 | 35069013256 | `1c07e907a6fd` | push | Fault assurance | completed:success |
