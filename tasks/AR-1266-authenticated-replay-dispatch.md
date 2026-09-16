@@ -11,7 +11,7 @@
   "id": "AR-1266",
   "next_action": "Fix runtime context dead-code gate, rerun focused tests, then bind context into replay dispatch with supervised cassette lifecycle.",
   "observed_branch": "feature/ar-1266-authenticated-replay-dispatch",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "b62ed5f12b4ca72d397bdce680332f20a0c8a9e5",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1266.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add authenticated runtime context to the actual strict-replay CLI dispatch path.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Authenticated replay dispatch context",
-  "updated_at": "2026-09-16T22:35:52+00:00",
+  "updated_at": "2026-09-16T22:35:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1266-authenticated-replay"
 }
 ---
