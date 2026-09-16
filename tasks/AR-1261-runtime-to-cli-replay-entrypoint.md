@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1261-runtime-to-cli-replay-entrypoint",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T22:48:40+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1261-runtime-to-cli-replay-entrypoint",
   "observed_dirty": 0,
   "observed_head": "d91520f0d8ff519601a89396999bd14a6612ed0e",
-  "owner": "asb_ar1024_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1261.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide a runtime-owned entrypoint for strict-replay CLI supervision.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Runtime-to-CLI strict-replay handoff entrypoint",
-  "updated_at": "2026-09-16T20:51:56+00:00",
+  "updated_at": "2026-09-16T20:55:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1261-runtime-cli"
 }
 ---
@@ -64,3 +64,12 @@ preserving fail-closed ownership and bounded lifecycle evidence.
   ASB git worktree list on feature/ar-1261-runtime-to-cli-replay-entrypoint. Product tree is clean
   at signed d91520f. The alternate path agent-systems-benchmark-ar-1261-runtime does not exist and
   is not declared by task metadata; no unrelated checkout used.
+
+- 2026-09-16T20:55:14+00:00: Independent review blocker confirmed at signed d91520f: replay_plan
+  remains metadata-only; CLI creates LoopbackSidecar/fresh relay and passes literal namespace
+  readiness, while no runtime-issued entrypoint supplies authenticated handoff, SandboxLaunchInput,
+  ResourceLease, or pinned supervisor/sidecar commands to execute a real cassette child. Positive
+  supervised request/response, provider/descendant egress denial, cancellation/crash/restart cleanup
+  and no-fallback evidence are therefore unavailable within current CLI path. Full implementation
+  requires a reviewed runtime-to-CLI authority entrypoint/runtime-owned lifecycle successor.
+  Preserve clean declared worktree and all prior gate evidence; do not publish.
