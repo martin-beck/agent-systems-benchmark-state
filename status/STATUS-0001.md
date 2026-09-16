@@ -1414,7 +1414,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1244](../tasks/AR-1244-publish-replay-supervision.md): Publish AR-1232 strict-replay supervision | asb_ar1244_publish_1232 | Publish strict-replay supervision integration. | Run fresh PR193 CI at ca5f7fa after formal lock repair; review exact head before merge. |
+| P0 | [AR-1244](../tasks/AR-1244-publish-replay-supervision.md): Publish AR-1232 strict-replay supervision | asb_ar1244_publish_1232 | Publish strict-replay supervision integration. | Monitor fresh PR193 CI at 7ceb522; review exact head and merge only after all required checks green. |
 | P0 | [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md): Post-merge DCO admission evidence | asb_ar1237_launch_bridge_worker | Repair DCO admission for the immutable PR-192 GitHub merge while preserving strict future checks. | Monitor PR #194 required checks; merge only after all protected checks pass. |
 
 ### Open (4)

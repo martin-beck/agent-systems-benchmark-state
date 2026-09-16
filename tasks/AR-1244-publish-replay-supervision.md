@@ -7,7 +7,7 @@
     "AR-1232"
   ],
   "id": "AR-1244",
-  "next_action": "Run fresh PR193 CI at ca5f7fa after formal lock repair; review exact head before merge.",
+  "next_action": "Monitor fresh PR193 CI at 7ceb522; review exact head and merge only after all required checks green.",
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "2543a4c213bc7a1f9b426cb8c0b95d815a0bf7e4",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish strict-replay supervision integration.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Publish AR-1232 strict-replay supervision",
-  "updated_at": "2026-09-16T09:49:25+00:00",
+  "updated_at": "2026-09-16T09:49:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1244-publish"
 }
 ---
@@ -91,3 +91,8 @@ mutation.
 
 - 2026-09-16T09:49:25+00:00: Recorded command exit 0; command argv SHA-256
   55e84fd8538f7dbfd315e1f18109a1aea70d095d1d4190531adb1bb1956eb42f.
+
+- 2026-09-16T09:49:48+00:00: Rebased signed AR-1232 publication branch onto current origin/main
+  c6db21e to avoid stale-base identity failure. New exact PR193 head 7ceb522; formal/Cargo.lock
+  refresh remains included and branch is clean. All 41 commits in origin/main..HEAD verify SSH
+  signatures and DCO.
