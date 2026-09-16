@@ -10,7 +10,7 @@
   "id": "AR-1237",
   "next_action": "Extend the reviewed strict-replay launch contract to map ReplayRelayHandoff into the child-visible HTTP loopback endpoint, with authenticated route/generation metadata and bounded lifecycle ownership.",
   "observed_branch": "feature/ar-1237-launch-bridge",
-  "observed_dirty": 1,
+  "observed_dirty": 2,
   "observed_head": "835c47027513b8cab590a48d9367be971395543e",
   "owner": "asb_ar1237_launch_bridge_worker",
   "plan": "../plans/AR-1237.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Map the authenticated relay into the strict-replay child launch contract.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Strict-replay child launch bridge",
-  "updated_at": "2026-09-16T08:51:27+00:00",
+  "updated_at": "2026-09-16T08:51:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1237"
 }
 ---

@@ -10,17 +10,17 @@
   "id": "AR-1242",
   "next_action": "Resolve GitHub settings permission failure, then add and gate fail-closed protected-main admission fixtures.",
   "observed_branch": "fix/protected-main-admission",
-  "observed_dirty": 3,
-  "observed_head": "606375f613fc195f3e9ff697253f1cf20a3fec72",
+  "observed_dirty": 0,
+  "observed_head": "da8d736c8a9618b6e59b33c4df44467c695bbc0c",
   "owner": "asb_ar1242_merge_admission",
   "plan": "../plans/AR-1242.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent protected-main admission from creating unsigned GitHub merge commits.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Enforce signed protected-main admission",
-  "updated_at": "2026-09-16T08:51:36+00:00",
+  "updated_at": "2026-09-16T08:51:43+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-admission"
 }
 ---
