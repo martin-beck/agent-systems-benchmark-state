@@ -10,7 +10,7 @@
   "id": "AR-1254",
   "next_action": "Add arm64 artifact selection/provenance and runner-proven network-none denial; request independent review after full gates.",
   "observed_branch": "feature/ar-1254-mockagents-pinned-python-transport",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "ce5452c2104d6101f5bdfb35bb4d817e48a713cd",
   "owner": "asb_ar1254_mockagents_transport",
   "plan": "../plans/AR-1254.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify MockAgents through the pinned Python sandbox.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Qualify MockAgents through pinned Python transport",
-  "updated_at": "2026-09-16T13:52:24+00:00",
+  "updated_at": "2026-09-16T13:52:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1254"
 }
 ---
