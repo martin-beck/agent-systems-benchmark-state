@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Remove the uncommitted asb-cli control.rs change only after deciding/documenting break-glass capability semantics; implement runner-owned authenticated admin context and actual recovery or explicitly split a prerequisite AR. Then run full locked workspace gates on clean 40838db and obtain independent review.",
+  "next_action": "Wire runner-owned authenticated admin context and generation/audit into BreakGlass dispatch; then rerun full locked workspace gates.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "47ba6109aba55c8eb89bebb0f73e7cb6a1f65b87",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 226,
+  "task_revision": 227,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:01:43+00:00",
+  "updated_at": "2026-09-16T19:02:02+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -586,3 +586,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T19:01:35+00:00: Recorded command exit 0; command argv SHA-256
   23c6be065f2e6f5332fcb69e029bffc7c03f6590ac00ee526e996409447dc6c5.
+
+- 2026-09-16T19:02:02+00:00: Signed+DCO 45310e6 adds v1.7 BreakGlass schemas and endpoint
+  admin-hook/schema conformance; 47ba610 adds explicit CLI fail-closed BreakGlass dispatch and
+  refreshed provenance. Focused endpoint/schema 8/8 + 5/5 and CLI workflow 3/3 pass. Full workspace
+  initially failed because new BreakGlass enum lacked an exhaustive asb-cli match; corrected in
+  47ba610. Worktree clean. Remaining scope is runner-owned auth context/recovery semantics, not a
+  gate bypass.
