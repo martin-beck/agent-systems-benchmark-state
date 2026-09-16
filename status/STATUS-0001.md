@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**290 ARs tracked** across 7 active status categories.
+**291 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 6 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 5 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 21 |
-| **Planned** | Defined work awaiting promotion or dependencies | 58 |
+| **Planned** | Defined work awaiting promotion or dependencies | 59 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 194 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -341,7 +341,7 @@ flowchart LR
         AR_1245["AR-1245 - Done"]:::status_done
         AR_1246["AR-1246 - Done"]:::status_done
         AR_1247["AR-1247 - Done"]:::status_done
-        AR_1248["AR-1248 - Open"]:::status_open
+        AR_1248["AR-1248 - In progress"]:::status_in_progress
         AR_1249["AR-1249 - Blocked"]:::status_blocked
         AR_1250["AR-1250 - Blocked"]:::status_blocked
         AR_1251["AR-1251 - Blocked"]:::status_blocked
@@ -356,6 +356,7 @@ flowchart LR
         AR_1260["AR-1260 - Blocked"]:::status_blocked
         AR_1261["AR-1261 - Blocked"]:::status_blocked
         AR_1262["AR-1262 - In progress"]:::status_in_progress
+        AR_1263["AR-1263 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1146,6 +1147,7 @@ flowchart LR
     AR_1238 --> AR_1260
     AR_1238 --> AR_1261
     AR_1238 --> AR_1262
+    AR_1238 --> AR_1263
     AR_1239 --> AR_1240
     AR_1239 --> AR_1243
     AR_1239 --> AR_1260
@@ -1448,7 +1450,7 @@ flowchart LR
 | [AR-1235](../tasks/AR-1235-goose-diagnostic-fixture-portability.md) | [AR-0003](../tasks/AR-0003-quality-gates.md) | None |
 | [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md) | [AR-1100](../tasks/AR-1100.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md) | [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md), [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) |
 | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md) | [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md) | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md), [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md), [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md), [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md) |
-| [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md) | [AR-1100](../tasks/AR-1100.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md) | [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md), [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md), [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md), [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md), [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md) |
+| [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md) | [AR-1100](../tasks/AR-1100.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md) | [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md), [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md), [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md), [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md), [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md), [AR-1263](../tasks/AR-1263-sandbox-scope-classification-stability.md) |
 | [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md) | [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md), [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md), [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md), [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md), [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md) |
 | [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md) | [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | [AR-1241](../tasks/AR-1241-native-isolation-matrix.md), [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md) |
 | [AR-1241](../tasks/AR-1241-native-isolation-matrix.md) | [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md) | [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md) |
@@ -1473,16 +1475,18 @@ flowchart LR
 | [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
 | [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
 | [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
+| [AR-1263](../tasks/AR-1263-sandbox-scope-classification-stability.md) | [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md) | None |
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | coordinator-successor-creation | Define the strict-replay CLI consumer contract. | Await a runtime-owned successor that supplies independently attested namespace capability plus supervised SandboxLaunchInput/ResourceLease. Then wire replay_plan through StrictReplayLaunchBridge::spawn and add real request/response, egress-denial, cancellation/restart/cleanup and no-fallback tests. Preserve PR #197 head 7d9c2ee and its green CI; do not fabricate namespace readiness in CLI. |
 | P0 | [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md): Runtime-owned strict-replay launch authority | asb_ar1024_lifecycle_router | Issue runtime-owned authority for supervised strict-replay execution. | Classify or rerun the pre-existing native sandbox fixture failure under its dedicated gate; do not weaken authority. After terminal green, run remaining policy/privacy/rustdoc and request independent review. |
 
-### Open (6)
+### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1490,7 +1494,6 @@ flowchart LR
 | P0 | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md): Implement &#96;asb tui&#96; lifecycle routing | Unclaimed | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. |
 | P0 | [AR-1042](../tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Unclaimed | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. |
 | P0 | [AR-1044](../tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Unclaimed | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. |
-| P0 | [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | Unclaimed | Define the strict-replay CLI consumer contract. | Await a runtime-owned successor that supplies independently attested namespace capability plus supervised SandboxLaunchInput/ResourceLease. Then wire replay_plan through StrictReplayLaunchBridge::spawn and add real request/response, egress-denial, cancellation/restart/cleanup and no-fallback tests. Preserve PR #197 head 7d9c2ee and its green CI; do not fabricate namespace readiness in CLI. |
 | P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Unclaimed | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Coordinator must create and link the successor AR for certificate issuance/chain validation and trusted route/ancestor authority; preserve this exact clean head and do not publish/close as fully complete until successor scope and bounded acceptance are recorded. |
 
 ### Blocked (21)
@@ -1519,7 +1522,7 @@ flowchart LR
 | P1 | [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md): Execute bundled MockAgents transport in isolation | Unclaimed | Execute bundled MockAgents transport in isolation. | Implement bundled in-container MockAgents transport and digest-pinned arm64 QEMU evidence. |
 | P1 | [AR-1258](../tasks/AR-1258-docker-binfmt-qemu.md): Provision Docker binfmt/QEMU capability | Unclaimed | Provision and verify Docker binfmt/QEMU for multiarch qualification. | Inspect Docker/binfmt/QEMU capability and approved privilege workflow; add bounded verification and rollback-safe checks. |
 
-### Planned (58)
+### Planned (59)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1576,6 +1579,7 @@ flowchart LR
 | P1 | [AR-1027](../tasks/AR-1027-asb-tui-verified-release.md): Publish the verified asb-tui release | Unclaimed | Create and independently promote the first installable signed asb-tui release channel. | Publish the first verified asb-tui release only after ASB release, complete UI/install qualification and exact cross-repository evidence are done. |
 | P1 | [AR-1255](../tasks/AR-1255-bundled-mockagents-qemu-runner.md): Bundle MockAgents transport and QEMU runner | Unclaimed | Bundle MockAgents transport and QEMU runner. | Provision a digest-pinned bundled transport/QEMU runner and implement real in-container evidence. |
 | P1 | [AR-1257](../tasks/AR-1257-mockagents-qemu-image.md): Qualify digest-pinned multiarch MockAgents image | Unclaimed | Qualify a digest-pinned multiarch MockAgents OCI image for QEMU isolation. | Read the complete plan and verify official digest-pinned multiarch image, signature, license, and QEMU capability before any support claim. |
+| P1 | [AR-1263](../tasks/AR-1263-sandbox-scope-classification-stability.md): Stabilize sandbox scope classification gate | Unclaimed | Stabilize intermittent sandbox scope classification in the quality gate. | Promote and claim after reconciliation; reproduce and deterministically repair the sandbox scope-classification timing flake without weakening assertions. |
 | P2 | [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Unclaimed | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit CSB monitoring using native x86_64 oracles and required pinned QEMU AArch64 portable mapping/lifecycle checks; keep native ARM64 counters and performance as optional future evidence. |
 | P2 | [AR-0705](../tasks/AR-0705-native-debian-capacity.md): Provide native Debian capacity | Unclaimed | Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 Debian and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
@@ -1619,5 +1623,3 @@ flowchart LR
 | P0 | [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md): Add the ASB frontend capabilities command | Unclaimed | Publish the ASB capability negotiation command required by the standalone frontend. | Monitor exact head d60d2351004479998608f2141730849366351373 on PR 128, repair any CI failure, obtain independent review, merge through policy, and run post-merge verification. |
 | P0 | [AR-1030](../tasks/AR-1030-ratatui-dependency-closure.md): Resolve the Ratatui dependency closure | Unclaimed | Make the maintained Ratatui release consumable by standalone asb-tui without hiding supply-chain exceptions. | Register/authorize a GitHub-recognized signing identity for exact head c0dfdd3114741f9415a124f4d4995dac354b4260, or explicitly approve a GitHub rebase/squash rewrite; then rerun exact-head gates and merge PR #11. |
 | P0 | [AR-1036](../tasks/AR-1036-measurement-catalog-control.md): Publish the measurement catalog control contract | Unclaimed | Expose the versioned ASB measurement catalog to standalone frontends without UI code. | Catalog control v1.2 is merged and qualified; AR-1037 may now carry selected measurement IDs through validated ASB plans. |
-| P0 | [AR-1037](../tasks/AR-1037-measurement-selection-plan.md): Add measurement selection to validated run plans | Unclaimed | Carry catalog-backed measurement choices through ASB plan validation, collection and evidence. | After AR-1036, add canonical measurement IDs to validated ASB plans and make collection honor them without any UI code. |
-| P0 | [AR-1038](../tasks/AR-1038-capability-coverage-sink.md): Preserve coverage sinks in sanitized CLI child tests | Unclaimed | Prevent sanitized capability child tests from writing default profraw files into the source checkout. | Post-merge verified on protected main fd7daa4; retain PR132 merge/tree/signature evidence and continue coordinator monitoring. |
