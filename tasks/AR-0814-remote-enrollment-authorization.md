@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Repair detached AR-0814 worktree branch before running focused authz tests.",
+  "next_action": "Integrate authorization context into enrollment and CLI mutation dispatch; add rotation/revocation audit tests.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "2d60d70ab277800ca949a90ee684a617c9a72ce8",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T17:40:41+00:00",
+  "updated_at": "2026-09-16T17:40:58+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -66,3 +66,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T17:40:33+00:00: Recorded command exit 0; command argv SHA-256
   c12fbef4a002881ce694cf23f666fe0f5a7ed7810a5f8ee50e8beabbaad2395d.
+
+- 2026-09-16T17:40:58+00:00: Committed signed+DCO 2d60d70: scoped RemoteRole/RemotePermission matrix
+  and AuthorizationContext with principal/request SHA-256, generation, unknown-field and
+  least-privilege negative tests. Focused cargo test -p asb-control authorization --lib: 2 passed.

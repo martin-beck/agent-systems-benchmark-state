@@ -1465,7 +1465,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | asb_ar0814_enrollment_authz | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Repair detached AR-0814 worktree branch before running focused authz tests. |
+| P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | asb_ar0814_enrollment_authz | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Integrate authorization context into enrollment and CLI mutation dispatch; add rotation/revocation audit tests. |
 
 ### Open (4)
 
