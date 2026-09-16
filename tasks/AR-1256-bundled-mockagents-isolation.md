@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1256-bundled-mockagents-isolation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T16:02:19+00:00",
   "depends_on": [
     "AR-1252",
     "AR-1253"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1256-bundled-mockagents-isolation",
   "observed_dirty": 0,
   "observed_head": "a0befc0ff247a42b8d796af161b58b1011de8377",
-  "owner": "",
+  "owner": "asb_ar1256_bundled_isolation",
   "plan": "../plans/AR-1256.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Execute bundled MockAgents transport in isolation.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Execute bundled MockAgents transport in isolation",
-  "updated_at": "2026-09-16T14:02:17+00:00",
+  "updated_at": "2026-09-16T14:02:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1256"
 }
 ---
@@ -46,3 +46,5 @@ Keep bundles, images, QEMU artifacts, caches, and evidence under `/srv/data/proj
 
 - 2026-09-16T14:02:17+00:00: Official Python 3.13.15 slim arm64 digest ae8c3b6 is available;
   provision and qualify both immutable platform images through Docker.
+
+- 2026-09-16T14:02:19+00:00: Claimed by asb_ar1256_bundled_isolation.
