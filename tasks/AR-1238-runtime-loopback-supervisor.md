@@ -8,7 +8,7 @@
     "AR-1231"
   ],
   "id": "AR-1238",
-  "next_action": "Integrate the in-tree supervisor into SandboxBackend using bwrap --unshare-all --unshare-user --unshare-net with --tmpfs /tmp before a 0600 relay bind mount; prove private loopback readiness, cassette forwarding, egress denial, lifecycle teardown, and unrelated-process non-interference.",
+  "next_action": "Run exact-head workspace gates, independently review SandboxBackend relay mount and supervisor composition, then release with signed commit d9f42ec; real cassette forwarding remains dependent on sidecar protocol implementation.",
   "observed_branch": "feature/ar-1238-runtime-loopback-supervisor",
   "observed_dirty": 2,
   "observed_head": "9d982fe87b77bcf5b674d72f1c8a0119bf657327",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned private-namespace supervisor for loopback replay.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Runtime-owned loopback supervisor",
-  "updated_at": "2026-09-16T08:02:42+00:00",
+  "updated_at": "2026-09-16T08:03:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1238"
 }
 ---
@@ -76,3 +76,8 @@ remaining work is launcher integration and real sidecar forwarding, not a host c
   and real sidecar forwarding with no host-network sharing.
 
 - 2026-09-16T08:01:15+00:00: Claimed by asb_ar1238_bwrap_relay_worker.
+
+- 2026-09-16T08:03:31+00:00: Integrated SupervisorPlan into SandboxBackend: validates 0600 Unix
+  relay socket, mounts it at /tmp/asb-replay-relay.sock after tmpfs, and launches runtime-owned
+  supervisor with namespace-local relay args. Focused runtime tests and full workspace tests pass;
+  clippy and rustdoc pass.
