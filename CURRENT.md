@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Add a real non-interactive pairing/identity-store CLI ceremony and certificate identity binding; enforce authorization for every remotely reachable call (including AgentStatus), canonical lowercase digests, clock-skew/revocation/rotation concurrency and compromised-store tests, then rerun policy/privacy/full gates before publication. | asb_ar0814_enrollment_authz |
+| P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Implement noninteractive pairing/identity-store CLI and certificate import; add concurrency/clock-skew/compromised-store tests. | asb_ar0814_enrollment_authz |
 
 ## Open
 

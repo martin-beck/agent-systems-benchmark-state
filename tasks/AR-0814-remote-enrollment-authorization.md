@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Add a real non-interactive pairing/identity-store CLI ceremony and certificate identity binding; enforce authorization for every remotely reachable call (including AgentStatus), canonical lowercase digests, clock-skew/revocation/rotation concurrency and compromised-store tests, then rerun policy/privacy/full gates before publication.",
+  "next_action": "Implement noninteractive pairing/identity-store CLI and certificate import; add concurrency/clock-skew/compromised-store tests.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "947abad81c4233625783552b1c890c1b62d1335c",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T17:59:48+00:00",
+  "updated_at": "2026-09-16T18:00:03+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -239,3 +239,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T17:59:41+00:00: Recorded command exit 0; command argv SHA-256
   adbf37501395da49acbb02927c8c59bc159c772b815b797c0aa451c6049d0f65.
+
+- 2026-09-16T18:00:03+00:00: Signed+DCO 947abad enforces canonical lowercase SHA-256 digests in
+  control/auth and adds certificate validity/route metadata to pairing; confirmation fails closed
+  before validity windows and replay. Auth 10/10 and control authz 3/3 passed. One combined cargo
+  test invocation failed due invalid multiple TESTNAME syntax; rerun separately succeeded.
