@@ -37,6 +37,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1234` | `feature/ar-1234` | `04b3f728fc5f` | 0 | behind 3, ahead 2 |
 | `agent-systems-benchmark-ar-1235` | `feature/ar-1235-goose-fixture-portability` | `fd7daa43549e` | 3 | behind 0, ahead 0 |
 | changed files | - | - | - | `target-hosted-aarch64/`, `target-hosted-full-aarch64/`, `target-repeat-aarch64/` |
+| `agent-systems-benchmark-ar-1236` | `feature/ar-1236-runtime-loopback-sidecar` | `bd7d10d4a760` | 2 | behind 284, ahead 1 |
+| changed files | - | - | - | `crates/asb-runtime/src/lib.rs`, `crates/asb-runtime/src/loopback_sidecar.rs` |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 366, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 469, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 363, ahead 0 |
@@ -141,7 +143,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-one-line-install` | `feature/one-line-local-install` | `bf9e9fe625da` | 0 | behind 299, ahead 0 |
 | `agent-systems-benchmark-opendesk-strict-replay-http-compatibility` | `feature/opendesk-strict-replay-http-compatibility` | `f26216bde125` | 0 | behind 501, ahead 0 |
 | `agent-systems-benchmark-openjiuwen-adapter` | `feature/openjiuwen-adapter` | `43ceb0f1bf8b` | 0 | behind 307, ahead 0 |
-| `agent-systems-benchmark-openjiuwen-live` | `feature/openjiuwen-live` | `cceb76f436f8` | 0 | behind 251, ahead 4 |
+| `agent-systems-benchmark-openjiuwen-live` | `feature/openjiuwen-live` | `cceb76f436f8` | 1 | behind 251, ahead 4 |
+| changed files | - | - | - | `crates/asb-agents/tests/real_openjiuwen.rs` |
 | `agent-systems-benchmark-openjiuwen-provenance` | `feature/openjiuwen-provenance` | `addcfab39e48` | 0 | behind 331, ahead 0 |
 | `agent-systems-benchmark-openjiuwen-runtime-closure` | `fix/openjiuwen-runtime-closure` | `b7559931ef79` | 0 | behind 283, ahead 0 |
 | `agent-systems-benchmark-performance-workloads` | `feature/performance-workloads` | `0f303b3ec179` | 0 | behind 333, ahead 0 |

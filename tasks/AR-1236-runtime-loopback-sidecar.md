@@ -10,17 +10,17 @@
   "id": "AR-1236",
   "next_action": "Design and implement an approved runtime-owned in-namespace loopback sidecar/relay capability; preserve NetworkPolicy::Deny, deny provider and ambient egress, and prove lifecycle cleanup and unrelated-process non-interference.",
   "observed_branch": "feature/ar-1236-runtime-loopback-sidecar",
-  "observed_dirty": 0,
-  "observed_head": "11d37da2ec59fb5e2afe26c35d9c1bab1787f034",
+  "observed_dirty": 2,
+  "observed_head": "bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09",
   "owner": "asb_ar1236_worker",
   "plan": "../plans/AR-1236.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-owned private-namespace loopback sidecar capability.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime-owned loopback sidecar capability",
-  "updated_at": "2026-09-16T07:12:07+00:00",
+  "updated_at": "2026-09-16T07:13:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1236"
 }
 ---
