@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-16T05:50:16+00:00",
   "depends_on": [],
   "id": "AR-1210",
-  "next_action": "Promote after review; define the versioned offline tutorial-step schema and ASB syntax validator.",
+  "next_action": "Independent review requested for exact pushed head c010553. Review full diff, then open PR only after review approval; required local focused tutorial tests (11/11), fmt, Clippy, locked workspace test rerun, and release build passed. Rustdoc strict-lint wrapper attempts were recorded as command-shape failures because handoffctl executes argv without shell; ordinary cargo docs passed.",
   "observed_branch": "docs/ar-1210-tutorial-contract",
   "observed_dirty": 0,
   "observed_head": "c010553b988bc0323fcfaf3741e0b00da5ab99a2",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define offline tutorial steps and validate them against the ASB CLI grammar.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Tutorial contract and syntax validator",
-  "updated_at": "2026-09-16T03:55:32+00:00",
+  "updated_at": "2026-09-16T03:56:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1210"
 }
 ---
@@ -156,3 +156,8 @@ be required.
 
 - 2026-09-16T03:55:32+00:00: Recorded command exit 1; command argv SHA-256
   cd4b126355e951f8ad8bb9de9e1ecbd99bd95b6abb15dd1fc01491b05f493e14.
+
+- 2026-09-16T03:56:02+00:00: Exact candidate c010553 is clean, SSH-signed, DCO-bearing, pushed as
+  docs/ar-1210-tutorial-contract. Added strict path operands, closed metadata option vocabulary,
+  metadata validation, schema parity assertions, and malformed network/credential negatives. Earlier
+  cargo workspace exit 1 was superseded by a clean rerun; no product failure remains.
