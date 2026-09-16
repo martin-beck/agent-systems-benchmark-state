@@ -34,7 +34,7 @@ Generated from local Git and GitHub. Do not edit.
 | 35056807972 | `00f37631e680` | push | Rust verification | completed:failure |
 | 35056807971 | `00f37631e680` | push | Repository quality | completed:failure |
 | 35056807969 | `00f37631e680` | push | Formal assurance | completed:success |
-| 35056807960 | `00f37631e680` | push | Emulated aarch64 portability | in_progress:- |
+| 35056807960 | `00f37631e680` | push | Emulated aarch64 portability | completed:success |
 | 35056260773 | `aba1f8cded47` | pull_request | Hosted portability and native qualification | completed:success |
 | 35056260736 | `aba1f8cded47` | pull_request | Repository quality | completed:success |
 | 35056260730 | `aba1f8cded47` | pull_request | Emulated aarch64 portability | completed:success |
