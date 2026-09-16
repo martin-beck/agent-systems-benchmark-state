@@ -12,9 +12,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 4 |
+| **Open** | Dependency-ready and available to claim | 5 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 16 |
-| **Planned** | Defined work awaiting promotion or dependencies | 62 |
+| **Planned** | Defined work awaiting promotion or dependencies | 61 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 189 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -151,7 +151,7 @@ flowchart LR
         AR_0823["AR-0823 - Planned"]:::status_planned
         AR_0830["AR-0830 - Done"]:::status_done
         AR_0831["AR-0831 - Done"]:::status_done
-        AR_0832["AR-0832 - Planned"]:::status_planned
+        AR_0832["AR-0832 - Open"]:::status_open
         AR_0833["AR-0833 - Planned"]:::status_planned
         AR_0834["AR-0834 - Done"]:::status_done
         AR_0835["AR-0835 - Done"]:::status_done
@@ -1439,7 +1439,7 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (4)
+### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1447,6 +1447,7 @@ flowchart LR
 | P0 | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md): Implement &#96;asb tui&#96; lifecycle routing | Unclaimed | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. |
 | P0 | [AR-1042](../tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Unclaimed | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. |
 | P0 | [AR-1044](../tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Unclaimed | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. |
+| P1 | [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Unclaimed | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. |
 
 ### Blocked (16)
 
@@ -1469,7 +1470,7 @@ flowchart LR
 | P1 | [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md): Extend MockAgents qualification harness | Unclaimed | Extend the pinned MockAgents executable qualification harness. | Implement tool-result, cancellation/backpressure, outbound-denial cases; rerun arm64 repeat and full gates. |
 | P1 | [AR-1251](../tasks/AR-1251-mockagents-transport-sandbox.md): Add MockAgents transport sandbox fixture | Unclaimed | Add a bounded transport and sandbox fixture for MockAgents qualification. | Design and implement bounded transport/sandbox fixture for MockAgents tool-result, cancellation/backpressure, network-denial, cleanup, and arm64 evidence. |
 
-### Planned (62)
+### Planned (61)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1509,7 +1510,6 @@ flowchart LR
 | P1 | [AR-0816](../tasks/AR-0816-cross-platform-remote-interoperability.md): Qualify cross-platform remote control | Unclaimed | Validate remote TUI interoperability with native x86_64 and required emulated AArch64 coverage; keep native ARM64 optional. | Prove native x86_64 and pinned QEMU AArch64 controller-runner protocol workflows across available distributions; document native ARM64 cross-host testing as optional future evidence. |
 | P1 | [AR-0818](../tasks/AR-0818-remote-control-security-audit.md): Audit remote benchmark control | Unclaimed | Attack and qualify remote benchmark control before any release enables it. | Independently audit remote protocol, trust, authorization, lifecycle, interoperability, privacy, and operational safety. |
 | P1 | [AR-0823](../tasks/AR-0823-installation-qualification.md): Audit installation and first-run experience | Unclaimed | Qualify the one-line experience and complete install lifecycle across the supported native matrix. | Independently attack and usability-test first install, onboarding, upgrade, rollback, repair, and uninstall. |
-| P1 | [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Unclaimed | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. |
 | P1 | [AR-0833](../tasks/AR-0833-aiws-runner-reboot-lifecycle.md): Qualify tokenless runner reboot lifecycle | Unclaimed | Qualify safe reboot and restart lifecycle for disposable development-host ASB runners. | Design and qualify a tokenless supervisor/orchestration path that can provision fresh ephemeral registrations after boot without storing reusable GitHub credentials. |
 | P1 | [AR-0846](../tasks/AR-0846-artifact-retention-cleanup.md): Add linked artifact retention and cleanup | Unclaimed | Manage ASB GitHub artifact retention and cleanup without deleting required evidence. | Implement dry-run inventory and explicitly authorized bounded cleanup for linked GitHub artifacts. |
 | P1 | [AR-0856](../tasks/AR-0856-agent-openjiuwen-workbuddy.md): Coordinate OpenJiuwen and WorkBuddy agent support | Unclaimed | Coordinate independently qualified OpenJiuwen and WorkBuddy support without merging their provenance or evidence boundaries. | Keep planned while both child series run independently; complete only after AR-0862 and AR-0868 are durably done with executable live/replay qualification. |
