@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 97,
+  "task_revision": 98,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T12:53:51+00:00",
+  "updated_at": "2026-09-16T12:54:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -296,3 +296,6 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
   rejection/named cleanup, adds artifact digest/version verification and live probes. Focused 6/6
   and full llm-double-spike 15/15 pass; source policy/diff checks pass; all commits SSH-signed+DCO.
   AR-1251 invocation remains correctly separate. No PR currently exists; publication authorized.
+
+- 2026-09-16T12:54:03+00:00: Recorded command exit 0; command argv SHA-256
+  4d4924e3fa5769f950c31020702bf2259d16238425a10ddd564a511b3815d3c1.
