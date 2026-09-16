@@ -1541,7 +1541,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1275](../tasks/AR-1275-replay-operation-injection.md): Runtime operation injection into replay dispatcher | asb_ar1024_lifecycle_router | Inject runtime-owned operation handles into actual strict-replay dispatch. | Promote after dependency verification; add the required runtime operation-handle injection point to actual replay dispatch and test real supervised traffic. |
+| P0 | [AR-1275](../tasks/AR-1275-replay-operation-injection.md): Runtime operation injection into replay dispatcher | asb_ar1024_lifecycle_router | Inject runtime-owned operation handles into actual strict-replay dispatch. | Bind runtime-issued operation handle into the primary argument-level replay command; add supervised cassette response/egress/cancel/restart/timeout/crash/cleanup evidence. |
 
 ### Open (6)
 

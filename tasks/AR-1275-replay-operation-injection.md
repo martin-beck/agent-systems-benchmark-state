@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1275",
-  "next_action": "Promote after dependency verification; add the required runtime operation-handle injection point to actual replay dispatch and test real supervised traffic.",
+  "next_action": "Bind runtime-issued operation handle into the primary argument-level replay command; add supervised cassette response/egress/cancel/restart/timeout/crash/cleanup evidence.",
   "observed_branch": "feature/ar-1275-replay-operation-injection",
   "observed_dirty": 0,
   "observed_head": "2ff7b8df88f747afb08f36f15c224a2c4bdacca1",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Inject runtime-owned operation handles into actual strict-replay dispatch.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Runtime operation injection into replay dispatcher",
-  "updated_at": "2026-09-16T23:55:29+00:00",
+  "updated_at": "2026-09-16T23:55:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1275-operation-injection"
 }
 ---
@@ -82,3 +82,11 @@ blocked evidence and do not accept metadata-only or caller-fabricated execution.
 
 - 2026-09-16T23:55:29+00:00: Recorded command exit 0; command argv SHA-256
   534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
+
+- 2026-09-16T23:55:51+00:00: Signed head 2ff7b8d adds runtime ReplayOperationHandle,
+  dependency-neutral request/response envelopes, and CLI dispatch_with_runtime_operation adapter
+  with positive response and stale/no-fallback tests. Focused CLI adapter 2/2 and core/runtime tests
+  pass. Full locked workspace suite passes after fixing workflow_transcript provenance drift caused
+  by new lib.rs export (old digest b024... replaced with actual 430f...). Tree clean. Acceptance
+  remains incomplete because primary argument-only replay dispatch still cannot obtain
+  runtime-issued handle and no real supervised lifecycle/egress fixtures exist.
