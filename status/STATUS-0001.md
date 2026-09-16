@@ -1396,7 +1396,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md): Make ShellCheck fail closed | asb_ar0898_shellcheck | Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck. | Implementation committed as signed+DCO 8176605df747cca12010f8220e74509cca01539f. Focused gates pass: ShellCheck 0.11.0 x86_64/aarch64 pins install and verify, actionlint runs with explicit absolute -shellcheck, and test_failure_paths rejects SC2086 plus existing defects. Worktree clean after removing only owned profraw test artifacts. Next independently review complete diff, run full applicable local gates, then publish exact clean head. |
-| P1 | [AR-0860](../tasks/AR-0860-openjiuwen-replay.md): Qualify strict OpenJiuwen replay | asb_ar1232_lifecycle_router | Qualify strict OpenJiuwen replay. | Run full applicable ASB gates, publish exact signed head for review, and complete post-merge qualification. Current head c894a34. |
+| P1 | [AR-0860](../tasks/AR-0860-openjiuwen-replay.md): Qualify strict OpenJiuwen replay | asb_ar1232_lifecycle_router | Qualify strict OpenJiuwen replay. | Monitor draft PR #189 exact-head CI and request independent review; do not merge until all gates/review green. Head c894a34. |
 
 ### Open (5)
 

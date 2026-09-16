@@ -7,7 +7,7 @@
     "AR-0859"
   ],
   "id": "AR-0860",
-  "next_action": "Run full applicable ASB gates, publish exact signed head for review, and complete post-merge qualification. Current head c894a34.",
+  "next_action": "Monitor draft PR #189 exact-head CI and request independent review; do not merge until all gates/review green. Head c894a34.",
   "observed_branch": "feature/openjiuwen-replay",
   "observed_dirty": 0,
   "observed_head": "c894a341183d448d576e5f04bbe621d4887fe45b",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict OpenJiuwen replay.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Qualify strict OpenJiuwen replay",
-  "updated_at": "2026-09-16T08:30:22+00:00",
+  "updated_at": "2026-09-16T08:30:51+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-replay"
 }
 ---
@@ -91,3 +91,9 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-16T08:30:22+00:00: Recorded command exit 0; command argv SHA-256
   c810c65b04f40b4dccc4f319a8a377be9e4fefb62ea0c64a07fa7942d5967bbb.
+
+- 2026-09-16T08:30:51+00:00: Published draft PR #189:
+  https://github.com/martin-beck/agent-systems-benchmark/pull/189 from clean signed+DCO head
+  c894a341183d448d576e5f04bbe621d4887fe45b. Remote branch feature/openjiuwen-replay is exact head.
+  Full asb-agents tests and clippy passed locally; live qualification and strict replay results
+  recorded.
