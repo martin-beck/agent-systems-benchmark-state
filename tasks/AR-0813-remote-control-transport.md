@@ -2,7 +2,7 @@
 {
   "branch": "feature/remote-control-transport",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T17:34:29+00:00",
+  "claim_expires": "2026-09-16T16:35:36+00:00",
   "depends_on": [
     "AR-0702",
     "AR-0803",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 230,
+  "task_revision": 231,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T15:35:28+00:00",
+  "updated_at": "2026-09-16T15:35:36+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -714,3 +714,5 @@ Implementation has not started. Read the linked plan before claiming.
   7b4168ff40ca5f134efb2acb50ef730240a48a99, base a0befc0ff247a42b8d796af161b58b1011de8377,
   mergeable, SSH-signed+DCO. Twelve required checks started; two header/AWQ checks already
   successful, remaining checks in progress.
+
+- 2026-09-16T15:35:36+00:00: Heartbeat by asb_ar0813_remote_transport.
