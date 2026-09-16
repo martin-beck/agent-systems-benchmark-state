@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1258.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provision and verify Docker binfmt/QEMU for multiarch qualification.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Provision Docker binfmt/QEMU capability",
-  "updated_at": "2026-09-16T14:11:21+00:00",
+  "updated_at": "2026-09-16T14:13:53+00:00",
   "worktree_key": "agent-systems-benchmark-docker-binfmt-qemu"
 }
 ---
@@ -114,3 +114,6 @@ Provide the independent Docker binfmt/QEMU capability required by multiarch qual
   --network none fails `/bin/true: no such file or directory` (exit 125), while network mode also
   lacks docker0 veth. Docker daemon/containerd does not expose a working arm64 handler. No QEMU
   capability claim; resume requires daemon handler repair and successful pinned arm64 execution.
+
+- 2026-09-16T14:13:53+00:00: Investigate reversible F fix-binary registration using the pinned
+  tonistiigi/binfmt image; do not unregister handlers or restart Docker.
