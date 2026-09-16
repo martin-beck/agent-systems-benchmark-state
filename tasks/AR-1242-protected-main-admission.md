@@ -8,7 +8,7 @@
     "AR-0897"
   ],
   "id": "AR-1242",
-  "next_action": "Run fresh PR191 CI for rebased 9db468c and independently review; settings apply still needs admin authority.",
+  "next_action": "No further action; signed merge and all exact-main post-merge gates are complete.",
   "observed_branch": "DETACHED",
   "observed_dirty": 0,
   "observed_head": "eb0ad13f8b6e64b6ee46b92602a631ba0c96f9f4",
