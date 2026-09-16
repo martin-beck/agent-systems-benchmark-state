@@ -7,7 +7,7 @@
     "AR-1238"
   ],
   "id": "AR-1263",
-  "next_action": "Monitor PR #205 exact head 0acbc1d1a8b against base 0a808a635d85; all required hosted checks are in progress. Do not merge until terminal green and independent review remains recorded.",
+  "next_action": "Post-merge DCO recovery required: protected main ebfa37023e56 merged PR #205 but merge commit lacks Signed-off-by and GitHub RSA key is unverified locally. Preserve feature 0acbc1d and rerun exact-main policy after signed recovery.",
   "observed_branch": "fix/ar-1263-sandbox-scope-classification",
   "observed_dirty": 0,
   "observed_head": "0acbc1d1a8bf43a226fda503fbd76f8afd48eb07",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stabilize intermittent sandbox scope classification in the quality gate.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Stabilize sandbox scope classification gate",
-  "updated_at": "2026-09-16T21:41:15+00:00",
+  "updated_at": "2026-09-16T21:41:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1263-sandbox-stability"
 }
 ---
@@ -173,3 +173,10 @@ fail-closed test/runner behavior and preserve the original semantic assertions.
 
 - 2026-09-16T21:41:15+00:00: Recorded command exit 0; command argv SHA-256
   9d059121b792b7fd062dd5f32e2b1614e61c9331ae019c331150f1fdeca7c490.
+
+- 2026-09-16T21:41:53+00:00: Post-merge verification: PR #205 merged at
+  ebfa37023e56269b8299254b535be60f3cf1d186 with parents 0a808a635d85fdc4a43b575e3711ef23b38089e3 and
+  0acbc1d1a8bf43a226fda503fbd76f8afd48eb07. Feature head and all 12 exact-head hosted checks were
+  green. Protected-main merge commit is GitHub-authored and has no Signed-off-by trailer; git show
+  --show-signature reports RSA B5690EEEBB952194 but local key unavailable. AR remains not done
+  pending signed forward-only recovery and exact-main policy/post-merge gates.
