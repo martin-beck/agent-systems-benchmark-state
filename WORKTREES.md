@@ -162,6 +162,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-opendesk-strict-replay-http-compatibility` | `feature/opendesk-strict-replay-http-compatibility` | `f26216bde125` | 0 | behind 584, ahead 0 |
 | `agent-systems-benchmark-openjiuwen-adapter` | `feature/openjiuwen-adapter` | `43ceb0f1bf8b` | 0 | behind 390, ahead 0 |
 | `agent-systems-benchmark-openjiuwen-live` | `feature/openjiuwen-live` | `230084ef1ea8` | 0 | behind 78, ahead 0 |
+| `agent-systems-benchmark-openjiuwen-parity` | `feature/openjiuwen-parity` | `3e8d58994eb2` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-openjiuwen-provenance` | `feature/openjiuwen-provenance` | `addcfab39e48` | 0 | behind 414, ahead 0 |
 | `agent-systems-benchmark-openjiuwen-replay` | `feature/openjiuwen-replay` | `c894a341183d` | 0 | behind 63, ahead 0 |
 | `agent-systems-benchmark-openjiuwen-runtime-closure` | `fix/openjiuwen-runtime-closure` | `b7559931ef79` | 0 | behind 366, ahead 0 |

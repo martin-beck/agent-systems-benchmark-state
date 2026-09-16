@@ -8,15 +8,18 @@
   ],
   "id": "AR-0861",
   "next_action": "Extend exact provider parity and the platform support matrix only for executable-qualified OpenJiuwen combinations under a serialized shared-path fence.",
+  "observed_branch": "feature/openjiuwen-parity",
+  "observed_dirty": 0,
+  "observed_head": "3e8d58994eb2b3faeda9449e4186498cf86eeb86",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-0861.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add OpenJiuwen provider parity and support matrix evidence.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Add OpenJiuwen provider parity and support matrix evidence",
-  "updated_at": "2026-09-16T12:20:19+00:00",
+  "updated_at": "2026-09-16T12:20:27+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-parity"
 }
 ---
