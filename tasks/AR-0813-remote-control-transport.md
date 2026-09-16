@@ -11,7 +11,7 @@
   "id": "AR-0813",
   "next_action": "Implement actual idle/keepalive/rate-limit/drain enforcement in listener/session dispatch and add reviewed runner-continuation plus network fault evidence; repair unrelated asb-metrics mismatch, rerun full workspace gates, then request publication review.",
   "observed_branch": "feature/remote-control-transport",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "fb2061aaeeefbb19e280793ea125b01afcb23750",
   "owner": "asb_ar0813_remote_transport",
   "plan": "../plans/AR-0813.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 157,
+  "task_revision": 158,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T15:10:02+00:00",
+  "updated_at": "2026-09-16T15:10:12+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
