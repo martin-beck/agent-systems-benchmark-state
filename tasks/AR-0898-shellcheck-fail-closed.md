@@ -2,7 +2,7 @@
 {
   "branch": "fix/shellcheck-fail-closed",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T10:56:10+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003",
     "AR-0897",
@@ -13,15 +13,15 @@
   "observed_branch": "fix/shellcheck-fail-closed",
   "observed_dirty": 0,
   "observed_head": "760eded801d3daa07011ea2a744bded7da27a159",
-  "owner": "asb_ar0898_shellcheck",
+  "owner": "",
   "plan": "../plans/AR-0898.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Make ShellCheck fail closed",
-  "updated_at": "2026-09-16T09:01:23+00:00",
+  "updated_at": "2026-09-16T09:01:26+00:00",
   "worktree_key": "agent-systems-benchmark-shellcheck-fail-closed"
 }
 ---
@@ -185,3 +185,7 @@ Implementation has not started. Read the linked plan before claiming.
   command without --base exited 1 due incomplete invocation; corrected protected-main command with
   base 606375f passed. All post-merge workflows green. Unrelated merge-integrity follow-up remains
   AR-1242.
+
+- 2026-09-16T09:01:26+00:00: AR-0898 complete: signed+DCO ShellCheck fail-closed implementation
+  merged as eb0ad13; all PR and post-merge required checks green, exact-main policy/signature/DCO
+  verified, no source or gate regressions.
