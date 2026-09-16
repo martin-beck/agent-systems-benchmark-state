@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Implement durable certificate/pairing persistence and threat-matrix tests; retain explicit fail-closed SecretBackend boundary.",
+  "next_action": "Implement durable identity-store write/pairing completion and threat-matrix tests; retain fail-closed SecretBackend.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "1e5508e850c7c7d96d041a3ffbca64e2702f1b77",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 254,
+  "task_revision": 255,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:29:31+00:00",
+  "updated_at": "2026-09-16T19:29:43+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -693,3 +693,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T19:29:24+00:00: Recorded command exit 0; command argv SHA-256
   883de0761b33b241dd4af8ffbbf7ab22491eb0849bbceeb9956685f4d3af2ace.
+
+- 2026-09-16T19:29:43+00:00: Signed+DCO 1e5508e adds EnrollmentPairingV1::confirmed_identity,
+  exposing certificate identity only after successful one-time pairing confirmation for safe
+  persistence. Pending pairing now fails closed; confirmed identity fingerprint is asserted in auth
+  tests. Focused pairing test passes with all filtered suites clean; worktree clean.
