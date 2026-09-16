@@ -195,8 +195,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-recovery-models` | `feature/recovery-models` | `a288bb3485aa` | 0 | behind 573, ahead 0 |
 | `agent-systems-benchmark-redacted-request-pointer-replay` | `feature/redacted-request-pointer-replay` | `d7492ef5e9ad` | 0 | behind 602, ahead 0 |
 | `agent-systems-benchmark-reliability-fairness` | `feature/reliability-fairness` | `eb28ca7aeae5` | 0 | behind 648, ahead 0 |
-| `agent-systems-benchmark-remote-control-transport` | `feature/remote-control-transport` | `badd246f50a8` | 13 | behind 0, ahead 24 |
-| changed files | - | - | - | `Cargo.lock`, `crates/asb-agents/Cargo.toml`, `crates/asb-analysis/Cargo.toml`, `crates/asb-bundle/Cargo.toml`, `crates/asb-cli/Cargo.toml`, `crates/asb-config/Cargo.toml`, `crates/asb-control/Cargo.toml`, `crates/asb-control/src/transport.rs`, `crates/asb-csb-runner/Cargo.toml`, `crates/asb-protocol/Cargo.toml`, `crates/asb-replay/Cargo.toml`, `crates/asb-store/Cargo.toml`, `crates/asb-workloads/Cargo.toml` |
+| `agent-systems-benchmark-remote-control-transport` | `feature/remote-control-transport` | `efa9ab496a71` | 0 | behind 0, ahead 25 |
 | `agent-systems-benchmark-replay-aider` | `feature/replay-aider` | `ec0a2930690c` | 0 | behind 610, ahead 0 |
 | `agent-systems-benchmark-replay-cassettes` | `feature/replay-cassettes` | `cd88f5703fb3` | 0 | behind 730, ahead 0 |
 | `agent-systems-benchmark-replay-codex` | `feature/replay-codex` | `d086fec11f59` | 0 | behind 600, ahead 0 |
