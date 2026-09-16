@@ -10,16 +10,16 @@
   "next_action": "PR #206 refreshed to signed head 539a92980620; wait for fresh exact-head hosted checks and independent review, then merge via merge_pr.py refs/pull/206/head with full OIDs and verify exact-main policy.",
   "observed_branch": "repair/ar-1264-pr205-merge-integrity",
   "observed_dirty": 0,
-  "observed_head": "539a9298062027902288aa46244ba060d63d5637",
+  "observed_head": "ebfa37023e56269b8299254b535be60f3cf1d186",
   "owner": "asb_ar1264_merge_integrity",
   "plan": "../plans/AR-1264.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover signed protected-main integration after PR #205.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Recover signed integration after PR #205",
-  "updated_at": "2026-09-16T21:58:17+00:00",
+  "updated_at": "2026-09-16T21:58:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1264-merge-integrity"
 }
 ---

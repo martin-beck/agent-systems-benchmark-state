@@ -61,7 +61,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1261-runtime-cli` | `feature/ar-1261-runtime-to-cli-replay-entrypoint` | `d91520f0d8ff` | 0 | behind 2, ahead 5 |
 | `agent-systems-benchmark-ar-1262-runtime-authority` | `feature/ar-1262-runtime-owned-launch-authority` | `ad0bc024d74b` | 0 | behind 2, ahead 9 |
 | `agent-systems-benchmark-ar-1263-sandbox-stability` | `fix/ar-1263-sandbox-scope-classification` | `0acbc1d1a8bf` | 0 | behind 1, ahead 0 |
-| `agent-systems-benchmark-ar-1264-merge-integrity` | `repair/ar-1264-pr205-merge-integrity` | `539a92980620` | 0 | behind 0, ahead 1 |
+| `agent-systems-benchmark-ar-1264-merge-integrity` | `repair/ar-1264-pr205-merge-integrity` | `ebfa37023e56` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 507, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 610, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 504, ahead 0 |
