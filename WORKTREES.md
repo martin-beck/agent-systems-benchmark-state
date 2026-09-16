@@ -24,7 +24,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1120` | `feature/ar-1120` | `f64985ad3502` | 0 | behind 65, ahead 0 |
 | `agent-systems-benchmark-ar-1130` | `feature/ar-1130` | `603eb8eb86dd` | 0 | behind 47, ahead 0 |
 | `agent-systems-benchmark-ar-1140` | `feature/ar-1140` | `c7eddaf183f6` | 3 | behind 0, ahead 6 |
-| changed files | - | - | - | `contracts/v1/catalog.json`, `docs/CONTRACT_CATALOG.md`, `crates/asb-cli/fixtures/v1/` |
+| changed files | - | - | - | `contracts/v1/catalog.json`, `crates/asb-cli/fixtures/v1/setup-output.json`, `docs/CONTRACT_CATALOG.md` |
 | `agent-systems-benchmark-ar-1150` | `feature/ar-1150` | `d2498a7372ed` | 0 | behind 41, ahead 0 |
 | `agent-systems-benchmark-ar-1151` | `feature/ar-1151` | `baf119c55844` | 1 | behind 40, ahead 3 |
 | changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
