@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1252-approved-isolated-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T13:47:57+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1252-approved-isolated-runner",
   "observed_dirty": 0,
   "observed_head": "f0f3d670cbc90b90364623353b966aa87fce97e7",
-  "owner": "asb_ar1252_isolated_runner",
+  "owner": "",
   "plan": "../plans/AR-1252.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 86,
+  "task_revision": 87,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:58:22+00:00",
+  "updated_at": "2026-09-16T11:58:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -255,3 +255,11 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
 
 - 2026-09-16T11:58:15+00:00: Recorded command exit 0; command argv SHA-256
   cad6690e76a32bd640aa452bc6f3fa2c75328705583e1ad1bedca740e1959d05.
+
+- 2026-09-16T11:58:41+00:00: Released blocked/ownerless after independent review. Signed+DCO f0f3d67
+  adds artifact digest-mismatch rejection; focused runner tests 5/5 and prior full 13/13 pass.
+  Reviewer blockers remain: no actual outbound endpoint-denial proof (route-table probe is
+  insufficient), no real AR-1251 transport consumer invocation, no full cancellation/backpressure
+  cleanup or descendant-process evidence, and executable identity is version-only rather than
+  independently pinned runtime identity. AR-1251 is the existing successor/consumer task and must
+  implement the transport sandbox fixture; do not weaken gates or claim AR-1252 complete.
