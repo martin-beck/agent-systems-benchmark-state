@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T14:36:52+00:00",
+  "updated_at": "2026-09-16T14:37:07+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -148,3 +148,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T14:36:39+00:00: Recorded command exit 0; command argv SHA-256
   69557e29bd1adadbad97a99240b5886a01d521d5e6067b6c2bc59e1ae5449c3f.
+
+- 2026-09-16T14:37:07+00:00: Committed 0cb96d2 (SSH-signed+DCO): added ephemeral certificate-backed
+  mTLS fixtures and TLS stream integration tests. Server requires WebPkiClientVerifier;
+  authenticated client round-trips bytes over TLS with ASB ALPN, unauthenticated client is rejected.
+  Focused cargo test -p asb-control tls_ passed 2/2; product tree clean. Next: bind TLS stream to
+  existing bounded frame read/write and add malformed/oversized/slow-peer tests.
