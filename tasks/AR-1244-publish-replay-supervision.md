@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish strict-replay supervision integration.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Publish AR-1232 strict-replay supervision",
-  "updated_at": "2026-09-16T09:44:07+00:00",
+  "updated_at": "2026-09-16T09:44:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1244-publish"
 }
 ---
@@ -55,3 +55,6 @@ mutation.
   commits retain SSH signatures and matching DCO.
 
 - 2026-09-16T09:44:07+00:00: Heartbeat by asb_ar1244_publish_1232.
+
+- 2026-09-16T09:44:14+00:00: Recorded command exit 0; command argv SHA-256
+  0562882ed86ff9b662188c37ce66411ce1d277266e22efada00bbc93e7c9bd6b.
