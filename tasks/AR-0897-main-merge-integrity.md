@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 108,
+  "task_revision": 109,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-16T05:07:59+00:00",
+  "updated_at": "2026-09-16T05:08:15+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -368,3 +368,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T05:07:59+00:00: Recorded command exit 0; command argv SHA-256
   bac23c0a21bcb53fd4c3c71072fd6ac38aaf90ebc3c25e60e1598062d2d58c24.
+
+- 2026-09-16T05:08:15+00:00: PR126 run 35058203094 failed only cargo fmt on workflow_transcript.rs;
+  gh log identified exact rustfmt wrapping. Ran cargo fmt via handoffctl, signed+DCO commit 44ca04d,
+  pushed with exact lease replacing 1ef6469. Worktree clean, diff-check and focused
+  workflow_transcript test previously pass. Fresh exact-head CI now required for 44ca04d; next
+  monitor and diagnose only exact-head failures, no merge until all checks green.
