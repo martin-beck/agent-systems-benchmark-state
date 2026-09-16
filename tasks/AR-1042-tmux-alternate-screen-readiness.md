@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-alternate-screen-readiness",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T08:04:21+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1042",
   "next_action": "Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification.",
-  "owner": "asb_ar1232_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1042.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Make tmux TUI readiness validate the displayed alternate screen deterministically.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Capture alternate-screen TUI readiness deterministically",
-  "updated_at": "2026-09-16T06:04:21+00:00",
+  "updated_at": "2026-09-16T06:04:59+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-alternate-screen-readiness"
 }
 ---
@@ -262,3 +262,8 @@ emit bounded diagnostics; do not change renderer or application semantics.
   recovery, merge and green trusted-main evidence; released to avoid dual ownership.
 
 - 2026-09-16T06:04:21+00:00: Claimed by asb_ar1232_lifecycle_router.
+
+- 2026-09-16T06:04:59+00:00: Released ownerless after plan audit. AR-1042 next action depends on
+  AR-1044 foreground-group recovery; AR-1044 is itself awaiting downstream tmux recovery and this
+  lane must avoid asb-tui source changes. No safe dependency-free implementation slice available
+  here.
