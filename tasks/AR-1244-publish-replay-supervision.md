@@ -7,7 +7,7 @@
     "AR-1232"
   ],
   "id": "AR-1244",
-  "next_action": "Rebase PR193 onto current protected main 5a2c151, rerun exact-head CI/review, then signed merge.",
+  "next_action": "Run fresh PR193 checks at rebased head 2f10f27/base 5a2c151; obtain independent review before signed merge.",
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "2543a4c213bc7a1f9b426cb8c0b95d815a0bf7e4",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish strict-replay supervision integration.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Publish AR-1232 strict-replay supervision",
-  "updated_at": "2026-09-16T10:08:14+00:00",
+  "updated_at": "2026-09-16T10:08:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1244-publish"
 }
 ---
@@ -137,3 +137,7 @@ mutation.
 
 - 2026-09-16T10:08:14+00:00: Recorded command exit 0; command argv SHA-256
   577bdbfd64e7baf75192fc6346db82ee9a2287d967b0d5de28b892abd695ac3a.
+
+- 2026-09-16T10:08:36+00:00: Rebased all 41 signed+DCO AR-1232 commits from prior head 7ceb522 onto
+  current protected main 5a2c151 after PR195 advanced main. New clean exact PR193 head 2f10f27
+  pushed with force-with-lease; fresh exact-head CI and review are required.
