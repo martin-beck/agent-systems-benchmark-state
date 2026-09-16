@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1266",
-  "next_action": "Implement runtime-issued opaque replay dispatch context and pass it into actual replay command; add fail-closed rejection tests.",
+  "next_action": "Fix runtime context dead-code gate, rerun focused tests, then bind context into replay dispatch with supervised cassette lifecycle.",
   "observed_branch": "feature/ar-1266-authenticated-replay-dispatch",
   "observed_dirty": 3,
   "observed_head": "69e8b064d3121a4bae1f672cdae9c0c8672000bc",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add authenticated runtime context to the actual strict-replay CLI dispatch path.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Authenticated replay dispatch context",
-  "updated_at": "2026-09-16T22:34:03+00:00",
+  "updated_at": "2026-09-16T22:34:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1266-authenticated-replay"
 }
 ---
@@ -48,3 +48,8 @@ Preserve all prior blocked evidence; no fabricated launch authority or weakened 
 
 - 2026-09-16T22:34:03+00:00: Recorded command exit 101; command argv SHA-256
   4d794e29b61dffc224f97f0280c573e3ed07695dad1bba348b4bd20627fb7998.
+
+- 2026-09-16T22:34:25+00:00: First focused compile failed exit 101 because new runtime
+  ReplayDispatchContext::issue is runtime-only and unused under -D warnings. This is compile
+  hygiene, not behavioral failure; add narrow dead_code allowance and rerun. Worktree intentionally
+  dirty with fresh AR-1266 runtime/CLI context files; no unmerged AR-1265 code reused.

@@ -1496,7 +1496,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md): Authenticated replay dispatch context | asb_ar1024_lifecycle_router | Add authenticated runtime context to the actual strict-replay CLI dispatch path. | Implement runtime-issued opaque replay dispatch context and pass it into actual replay command; add fail-closed rejection tests. |
+| P0 | [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md): Authenticated replay dispatch context | asb_ar1024_lifecycle_router | Add authenticated runtime context to the actual strict-replay CLI dispatch path. | Fix runtime context dead-code gate, rerun focused tests, then bind context into replay dispatch with supervised cassette lifecycle. |
 
 ### Open (6)
 
