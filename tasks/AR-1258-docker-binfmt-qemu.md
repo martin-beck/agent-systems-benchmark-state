@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1258.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provision and verify Docker binfmt/QEMU for multiarch qualification.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Provision Docker binfmt/QEMU capability",
-  "updated_at": "2026-09-16T14:15:04+00:00",
+  "updated_at": "2026-09-16T14:16:42+00:00",
   "worktree_key": "agent-systems-benchmark-docker-binfmt-qemu"
 }
 ---
@@ -139,3 +139,6 @@ Provide the independent Docker binfmt/QEMU capability required by multiarch qual
   docker ps shows an active container and systemd docker/systemd-binfmt are active, so disruptive
   reload/unregister is not safe or authorized. No handler change was made. Resume only during an
   approved maintenance window with rollback-safe registration, then validate pinned arm64 /bin/true.
+
+- 2026-09-16T14:16:42+00:00: Read-only maintenance-safety audit requested; no host mutation, service
+  reload, or handler unregister.
