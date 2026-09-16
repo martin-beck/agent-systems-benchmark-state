@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1258.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provision and verify Docker binfmt/QEMU for multiarch qualification.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Provision Docker binfmt/QEMU capability",
-  "updated_at": "2026-09-16T14:05:36+00:00",
+  "updated_at": "2026-09-16T14:06:13+00:00",
   "worktree_key": "agent-systems-benchmark-docker-binfmt-qemu"
 }
 ---
@@ -42,3 +42,6 @@ Provide the independent Docker binfmt/QEMU capability required by multiarch qual
   digest, signature/license/provenance, and QEMU execution could not be verified. Host QEMU is
   explicitly not a substitute. Preserve clean origin/main a0befc0 and resume with approved Docker
   daemon access and rollback-safe registration.
+
+- 2026-09-16T14:06:13+00:00: Correct prior user-socket blocker: coordinator confirms approved sudo
+  -n docker access. Resume mediated binfmt/QEMU audit.
