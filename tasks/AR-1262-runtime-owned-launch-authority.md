@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned authority for supervised strict-replay execution.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-16T21:07:50+00:00",
+  "updated_at": "2026-09-16T21:08:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1262-runtime-authority"
 }
 ---
@@ -96,3 +96,6 @@ ownership and bounded lifecycle evidence.
   generation/path and invokes StrictReplayLaunchBridge::spawn. Focused runtime authority test 1/1
   and CLI no-fallback test 1/1 pass; fmt passes. Prior exit-101 was diagnosed as tuple-vs-struct
   resolve_and_bind_runtime mismatch and fixed. Product worktree clean.
+
+- 2026-09-16T21:08:03+00:00: Recorded command exit 0; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
