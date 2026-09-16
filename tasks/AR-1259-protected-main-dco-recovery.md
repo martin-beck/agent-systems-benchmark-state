@@ -2,7 +2,7 @@
 {
   "branch": "repair/pr202-protected-main-dco",
   "checkpoint_commit": "14b604fec262575496f8838db1456679b1b14bbf",
-  "claim_expires": "2026-09-16T18:44:00+00:00",
+  "claim_expires": "2026-09-16T18:49:19+00:00",
   "depends_on": [
     "AR-1242"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover a signed protected-main DCO boundary after the unsigned PR202 web merge.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Protected-main DCO recovery for PR202",
-  "updated_at": "2026-09-16T16:47:37+00:00",
+  "updated_at": "2026-09-16T16:49:19+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-dco-1259"
 }
 ---
@@ -55,3 +55,5 @@ Create a signed, forward-only protected-main recovery for the unsigned PR202 mer
 - 2026-09-16T16:47:37+00:00: Created signed recovery merge b7d21e0839787a7c54561bdc0e65dc0b609b3d33
   with parents 14b604f and b7d9e14, exact tree preserved, SSH signature Good and matching
   Signed-off-by. Pushed branch and opened PR203 against base 14b604f; all required checks started.
+
+- 2026-09-16T16:49:19+00:00: Heartbeat by asb_ar1259_signed_recovery.
