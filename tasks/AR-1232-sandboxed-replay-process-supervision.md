@@ -9,7 +9,7 @@
     "AR-1230"
   ],
   "id": "AR-1232",
-  "next_action": "Add direct cross-crate launcher tests for command digest mismatch and runtime launch rejection; run full locked workspace gates, then prepare independent review/PR.",
+  "next_action": "Implement direct StrictReplaySandboxLaunch::spawn tests and bind record timeout/route environment into the launch contract; current integration compiles and full locked workspace tests pass.",
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "c5e1b3e7dfc251b137f3a962325643debea68bda",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 120,
+  "task_revision": 121,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T03:17:01+00:00",
+  "updated_at": "2026-09-16T03:17:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -331,3 +331,8 @@
 
 - 2026-09-16T03:17:01+00:00: Recorded command exit 0; command argv SHA-256
   a3cf4bf790c54f39868343c859fba60c08b1613dbbf63a14b28602ab2a3a33c6.
+
+- 2026-09-16T03:17:52+00:00: Full cargo test --locked --offline --workspace passed after c5e1b3e,
+  including all workspace unit/integration/doc tests. Worktree clean and branch pushed. Remaining
+  review blockers are direct spawn success/rejection tests, timeout/route environment binding, and
+  explicit lifecycle/no-fallback evidence.

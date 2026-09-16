@@ -1359,7 +1359,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md): Sandboxed replay process supervision | asb_ar1232_sandbox_supervision | Supervise strict replay adapters inside the approved network-denied sandbox. | Add direct cross-crate launcher tests for command digest mismatch and runtime launch rejection; run full locked workspace gates, then prepare independent review/PR. |
+| P0 | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md): Sandboxed replay process supervision | asb_ar1232_sandbox_supervision | Supervise strict replay adapters inside the approved network-denied sandbox. | Implement direct StrictReplaySandboxLaunch::spawn tests and bind record timeout/route environment into the launch contract; current integration compiles and full locked workspace tests pass. |
 
 ### Open (14)
 
