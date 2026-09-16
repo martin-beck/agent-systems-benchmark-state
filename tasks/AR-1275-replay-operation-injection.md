@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Inject runtime-owned operation handles into actual strict-replay dispatch.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Runtime operation injection into replay dispatcher",
-  "updated_at": "2026-09-16T23:52:46+00:00",
+  "updated_at": "2026-09-16T23:53:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1275-operation-injection"
 }
 ---
@@ -61,3 +61,6 @@ blocked evidence and do not accept metadata-only or caller-fabricated execution.
 
 - 2026-09-16T23:52:46+00:00: Recorded command exit 0; command argv SHA-256
   9b3d971b262b08d7aa6927fcfb61f2d24dd7c6480aed5a116a30ff1dd09270c5.
+
+- 2026-09-16T23:53:06+00:00: Recorded command exit 0; command argv SHA-256
+  749aa28ab02ba530afa628f17e3594f872428624ec1fcea0da1cf069bc0804a4.
