@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Implement certificate import/pairing identity-store ceremony and concrete break-glass operation; rerun full gates and review.",
+  "next_action": "Integrate certificate persistence and recovery ControlCall; run full gates and independent review.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "dcb7ae2c4d1efec7c22b02b7cd5b9585da1e785b",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 154,
+  "task_revision": 155,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T18:23:07+00:00",
+  "updated_at": "2026-09-16T18:23:28+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -424,3 +424,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T18:23:00+00:00: Recorded command exit 0; command argv SHA-256
   f47070c42af1e811fca22f543825d7154baecb1ef5ebe334b1f95d42a5747b28.
+
+- 2026-09-16T18:23:28+00:00: Signed+DCO dcb7ae2 adds executable negative coverage for an unqualified
+  SecretBackend: enrollment returns BackendFailure and secret is never persisted. Focused test
+  passed 1/1; worktree clean.
