@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1234",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T09:03:55+00:00",
+  "claim_expires": "2026-09-16T09:04:55+00:00",
   "depends_on": [
     "AR-1100",
     "AR-1231"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an approved runtime-owned loopback-only sandbox namespace capability.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Runtime-owned loopback namespace capability",
-  "updated_at": "2026-09-16T07:03:55+00:00",
+  "updated_at": "2026-09-16T07:04:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1234"
 }
 ---
@@ -165,3 +165,5 @@
   firewall mutation, ambient helpers, credentials, or external network.
 
 - 2026-09-16T07:03:55+00:00: Claimed by asb_loopback_plan_worker.
+
+- 2026-09-16T07:04:55+00:00: Heartbeat by asb_loopback_plan_worker.
