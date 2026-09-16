@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 193,
+  "task_revision": 194,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-16T08:03:18+00:00",
+  "updated_at": "2026-09-16T08:10:07+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -611,3 +611,6 @@ Implementation has not started. Read the linked plan before claiming.
   (PR186; parents 56a85de/1e3212b). Preserved that history and added four-line evidence in
   SSH-signed+DCO head ebaf0ce7912205ed544b865a6a3b795d9e9cfe21. Pushed recovery branch and opened
   PR188; no history rewrite or merge yet.
+
+- 2026-09-16T08:10:07+00:00: Recorded command exit 0; command argv SHA-256
+  23c24746f25f8361b4fe925b7771121b3c140f9050dcc16678c818a479879a22.
