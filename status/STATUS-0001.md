@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**301 ARs tracked** across 6 active status categories.
+**301 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 7 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 6 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 30 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -366,7 +366,7 @@ flowchart LR
         AR_1270["AR-1270 - Blocked"]:::status_blocked
         AR_1271["AR-1271 - Blocked"]:::status_blocked
         AR_1272["AR-1272 - Blocked"]:::status_blocked
-        AR_1273["AR-1273 - Open"]:::status_open
+        AR_1273["AR-1273 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1527,7 +1527,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (7)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1273](../tasks/AR-1273-complete-replay-context.md): Complete runtime-owned replay request context | asb_ar1024_lifecycle_router | Provide complete runtime-owned context for strict-replay execution. | Promote after dependency verification; implement the complete opaque runtime-issued replay request context and real supervised execution. |
+
+### Open (6)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1536,7 +1542,6 @@ flowchart LR
 | P0 | [AR-1042](../tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Unclaimed | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. |
 | P0 | [AR-1044](../tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Unclaimed | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. |
 | P0 | [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | Unclaimed | Define the strict-replay CLI consumer contract. | Await a runtime-owned successor that supplies independently attested namespace capability plus supervised SandboxLaunchInput/ResourceLease. Then wire replay_plan through StrictReplayLaunchBridge::spawn and add real request/response, egress-denial, cancellation/restart/cleanup and no-fallback tests. Preserve PR #197 head 7d9c2ee and its green CI; do not fabricate namespace readiness in CLI. |
-| P0 | [AR-1273](../tasks/AR-1273-complete-replay-context.md): Complete runtime-owned replay request context | Unclaimed | Provide complete runtime-owned context for strict-replay execution. | Promote after dependency verification; implement the complete opaque runtime-issued replay request context and real supervised execution. |
 | P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Unclaimed | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Coordinator must create and link the successor AR for certificate issuance/chain validation and trusted route/ancestor authority; preserve this exact clean head and do not publish/close as fully complete until successor scope and bounded acceptance are recorded. |
 
 ### Blocked (30)
@@ -1652,4 +1657,3 @@ flowchart LR
 | P0 | [AR-0317](../tasks/AR-0317-runtime-bundle-manifest.md): Define runtime bundle manifest and verifier | Unclaimed | Define common signed runtime bundle manifests and offline verification. | Completed; retain Linux/operator-owned acquisition limits. |
 | P0 | [AR-0506](../tasks/AR-0506-replay-opencode.md): Qualify OpenCode replay | Unclaimed | Qualify replay conformance for OpenCode. | Monitor rerun of exact-head x86 Rust job after investigated bounded ETXTBSY fixture flake; merge only after every workflow is green. |
 | P0 | [AR-0507](../tasks/AR-0507-replay-opendesk.md): Qualify OpenDesk replay | Unclaimed | Qualify replay conformance for OpenDesk. | Independently review immutable head 24a5519ef006c063f3a8d6e81d0928f2e9e986f9/tree 96f01bd39cd5e75a70d3618cec55e603b9643d38; publish only after approval, then require exact-head x86_64/aarch64 quality/formal/fault CI. |
-| P0 | [AR-0508](../tasks/AR-0508-replay-aider.md): Qualify aider replay | Unclaimed | Qualify replay conformance for aider. | Await independent immutable review of exact ec0a2930690c108987b4a867632316651282cc97; if approved, publish with an exact absent-ref lease, open focused PR, and require exact-head CI before integration. |

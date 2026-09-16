@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| P0 | [AR-0508](../tasks/AR-0508-replay-aider.md): Qualify aider replay | Unclaimed | Qualify replay conformance for aider. | Await independent immutable review of exact ec0a2930690c108987b4a867632316651282cc97; if approved, publish with an exact absent-ref lease, open focused PR, and require exact-head CI before integration. |
 | P0 | [AR-0509](../tasks/AR-0509-replay-codex.md): Qualify Codex replay | Unclaimed | Qualify replay conformance for Codex. | Monitor PR #45 exact d086fec checks; investigate any failure, then integrate only after every required workflow is green. |
 | P0 | [AR-0510](../tasks/AR-0510-replay-gemini.md): Qualify Gemini replay | Unclaimed | Qualify replay conformance for Gemini. | Independent immutable review of one-path timing repair 1366ad3bd03fe8806e80223a55989e34fd72245a before publication. |
 | P0 | [AR-0511](../tasks/AR-0511-replay-qwen.md): Qualify Qwen Code replay | Unclaimed | Qualify replay conformance for Qwen Code. | Release done after exact-main merge 1963364e75eec8cfcde0cfd0eaca672df12a2968 passed local post-merge gates and hosted runs 34156966254 quality, 34156966248 formal, 34156966219 Rust, and 34156966214 fault. |
