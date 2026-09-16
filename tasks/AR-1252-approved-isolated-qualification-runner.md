@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-1252",
-  "next_action": "Publish PR from exact signed head d5f21ce; monitor exact-head CI, then merge only after all required checks and independent approval.",
+  "next_action": "Rebase feature onto protected main 4e2820b, preserving runner changes and producing newly SSH-signed+DCO commits; push exact new head, rerun all PR gates including platform source identity.",
   "observed_branch": "feature/ar-1252-approved-isolated-runner",
   "observed_dirty": 0,
   "observed_head": "d5f21cebefbc0d532537fbdbdffc998d62e92255",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 99,
+  "task_revision": 100,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T12:54:14+00:00",
+  "updated_at": "2026-09-16T12:56:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -302,3 +302,10 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
 
 - 2026-09-16T12:54:14+00:00: Recorded command exit 0; command argv SHA-256
   156da97e1ffb252c0e803cfa31f17447daea50ee19eece8febee25fcafc2e33d.
+
+- 2026-09-16T12:56:17+00:00: PR #200 platform run 35098561126 failed before runner checks:
+  hosted_portability source identity is not immutable. Exact diagnosis: PR head d5f21ce has
+  merge-base 128ecdd with current protected main 4e2820b; workflow BASE_COMMIT is 4e2820b, so
+  source_identity correctly rejects stale ancestry. This is a branch synchronization blocker, not a
+  platform/runner defect. Do not merge d5f21ce; rebase onto 4e2820b, re-sign/DCO commits, push new
+  exact head and rerun CI.

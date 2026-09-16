@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1252](tasks/AR-1252-approved-isolated-qualification-runner.md): Provision approved isolated qualification runner | Provision an approved isolated qualification runner for ASB executable evidence. | Publish PR from exact signed head d5f21ce; monitor exact-head CI, then merge only after all required checks and independent approval. | asb_ar1252_isolated_runner |
+| P0 | [AR-1252](tasks/AR-1252-approved-isolated-qualification-runner.md): Provision approved isolated qualification runner | Provision an approved isolated qualification runner for ASB executable evidence. | Rebase feature onto protected main 4e2820b, preserving runner changes and producing newly SSH-signed+DCO commits; push exact new head, rerun all PR gates including platform source identity. | asb_ar1252_isolated_runner |
 
 ## Open
 
