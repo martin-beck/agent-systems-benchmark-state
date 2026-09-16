@@ -8,7 +8,7 @@
     "AR-0898"
   ],
   "id": "AR-0899",
-  "next_action": "Unify Gitleaks revision scoping and protect its configuration with executable negative tests.",
+  "next_action": "Initial wrapper commit 94def3b and config-policy changes are present; rerun focused failure suite with complete pinned analyzer bin directory, then add revision-range unrelated/introduction fixtures and run full gates.",
   "observed_branch": "fix/gitleaks-revision-config-integrity",
   "observed_dirty": 2,
   "observed_head": "94def3b9c1abf2acdd41ccab19bb71038fd99953",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve GitHub issue 118 by making local and CI Gitleaks scans deterministic and config changes fail closed.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Align and harden Gitleaks execution",
-  "updated_at": "2026-09-16T11:39:12+00:00",
+  "updated_at": "2026-09-16T11:39:47+00:00",
   "worktree_key": "agent-systems-benchmark-gitleaks-revision-config-integrity"
 }
 ---
@@ -69,3 +69,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T11:39:12+00:00: Recorded command exit 1; command argv SHA-256
   f191346f93c9d4a947b3847025ae859a1754fb13a4cc9e2ca921aadcd2caa40c.
+
+- 2026-09-16T11:39:47+00:00: Recorded failures: first failure suite invocation used nonexistent
+  quality-tools/actionlint path; second used incomplete quality-tools path missing shellcheck.
+  Correct complete analyzer directory is /srv/data/projects/asb-ar0898-tools/bin.
