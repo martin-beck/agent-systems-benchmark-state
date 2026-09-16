@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T10:47:43+00:00",
+  "updated_at": "2026-09-16T10:48:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -126,3 +126,6 @@ formal, privacy, signature, DCO, and exact-tree gates.
   fixed in signed 8896cad; focused workflow_transcript 3/3 passes. PR #197 updated from eac5232 to
   8896cad. Contract consistency, focused replay tests 2/2, clippy, and prior full workspace reached
   only this stale-fixture failure.
+
+- 2026-09-16T10:48:21+00:00: Recorded command exit 0; command argv SHA-256
+  e65704d0af497ff4f9db656cbcc2e1894e552f84bfbc5a531f0945a250925adf.
