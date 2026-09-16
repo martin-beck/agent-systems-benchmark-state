@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stabilize intermittent sandbox scope classification in the quality gate.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Stabilize sandbox scope classification gate",
-  "updated_at": "2026-09-16T21:31:30+00:00",
+  "updated_at": "2026-09-16T21:31:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1263-sandbox-stability"
 }
 ---
@@ -140,3 +140,6 @@ fail-closed test/runner behavior and preserve the original semantic assertions.
   failure-path harness requires approved --bin-dir. No PR or merge performed.
 
 - 2026-09-16T21:31:30+00:00: Claimed by asb_ar1263_sandbox_stability.
+
+- 2026-09-16T21:31:33+00:00: Recorded command exit 1; command argv SHA-256
+  63e7735b1cf93d516bd28a6de8c145f496982c358be7e0b8d55b3bca269bf77c.
