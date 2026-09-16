@@ -9,7 +9,7 @@
   "id": "AR-1235",
   "next_action": "Hosted-style AArch64 emulation rerun completed at exact fd7daa43549edd67b60076aa6b1eee333061b438 using rustc 1.93.0, aarch64-unknown-linux-gnu, qemu-aarch64, and Ubuntu arm64 sysroot /srv/data/projects/.asb-local/ar0909-arm64-root; diagnostic_and_symlink_fail_closed passed 1/1, exit 0. Original hosted run 35060286408 exit 127 remains unreproduced; no source change or assertion weakening is justified. Release blocked/ownerless with evidence.",
   "observed_branch": "feature/ar-1235-goose-fixture-portability",
-  "observed_dirty": 1,
+  "observed_dirty": 2,
   "observed_head": "fd7daa43549edd67b60076aa6b1eee333061b438",
   "owner": "asb_ar1235_goose_portability",
   "plan": "../plans/AR-1235.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair Goose diagnostic fixture portability under emulated AArch64.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Portable Goose diagnostic fixture",
-  "updated_at": "2026-09-16T06:07:21+00:00",
+  "updated_at": "2026-09-16T06:07:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1235"
 }
 ---

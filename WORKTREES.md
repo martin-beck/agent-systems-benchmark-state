@@ -34,8 +34,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1232` | `feature/ar-1232` | `994c6716904d` | 0 | behind 30, ahead 25 |
 | `agent-systems-benchmark-ar-1233` | `feature/ar-1233` | `143213c1d09c` | 0 | behind 9, ahead 1 |
 | `agent-systems-benchmark-ar-1234` | `feature/ar-1234` | `36a458020483` | 0 | behind 3, ahead 1 |
-| `agent-systems-benchmark-ar-1235` | `feature/ar-1235-goose-fixture-portability` | `fd7daa43549e` | 1 | behind 0, ahead 0 |
-| changed files | - | - | - | `target-hosted-aarch64/` |
+| `agent-systems-benchmark-ar-1235` | `feature/ar-1235-goose-fixture-portability` | `fd7daa43549e` | 2 | behind 0, ahead 0 |
+| changed files | - | - | - | `target-hosted-aarch64/`, `target-hosted-full-aarch64/` |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 366, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 469, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 363, ahead 0 |
