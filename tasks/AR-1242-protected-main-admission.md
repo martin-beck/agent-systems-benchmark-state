@@ -9,18 +9,18 @@
   ],
   "id": "AR-1242",
   "next_action": "Promote after dependency verification; audit protected-branch merge modes and add fail-closed admission controls for signed SSH+DCO merges.",
-  "observed_branch": "",
+  "observed_branch": "fix/protected-main-admission",
   "observed_dirty": 0,
-  "observed_head": "c261af069c5ce7ecb84b2acfc56f12d2a4cb116a",
+  "observed_head": "606375f613fc195f3e9ff697253f1cf20a3fec72",
   "owner": "asb_ar1242_merge_admission",
   "plan": "../plans/AR-1242.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent protected-main admission from creating unsigned GitHub merge commits.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Enforce signed protected-main admission",
-  "updated_at": "2026-09-16T08:46:07+00:00",
+  "updated_at": "2026-09-16T08:46:15+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-admission"
 }
 ---

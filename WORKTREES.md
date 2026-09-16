@@ -157,6 +157,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 656, ahead 0 |
 | `agent-systems-benchmark-portable-metrics` | `feature/portable-metrics` | `a0f67bea1ffe` | 0 | behind 630, ahead 0 |
 | `agent-systems-benchmark-process-runtime` | `feature/process-runtime` | `51daeb8608e5` | 0 | behind 649, ahead 0 |
+| `agent-systems-benchmark-protected-main-admission` | `fix/protected-main-admission` | `606375f613fc` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-protected-merge-signature-policy` | `fix/protected-merge-signature-policy` | `d6fa883ad1b2` | 0 | behind 242, ahead 0 |
 | `agent-systems-benchmark-protected-merge-tree-remediation` | `repair/protected-merge-tree-policy` | `fd7daa43549e` | 0 | behind 21, ahead 0 |
 | `agent-systems-benchmark-protected-topic-sync-topology` | `fix/protected-topic-sync-topology` | `40a84dda234f` | 0 | behind 230, ahead 0 |
