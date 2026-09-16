@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-1252",
-  "next_action": "Provision and qualify a digest-pinned Docker runner with network none, bounded resources, no host mounts, and deterministic cleanup for AR-1251.",
+  "next_action": "Add runner tests for digest/network-none/no-mount/cleanup and integrate with AR-1251; run full gates.",
   "observed_branch": "feature/ar-1252-approved-isolated-runner",
   "observed_dirty": 0,
   "observed_head": "8014ef7e6ba07b3e9da286fd0327b78f265e6d35",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:07:29+00:00",
+  "updated_at": "2026-09-16T11:08:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -53,3 +53,10 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
 
 - 2026-09-16T11:07:29+00:00: Recorded command exit 0; command argv SHA-256
   4698efe4e54ccfebe5af98ff99ea6d3b57a41c3c2c6643be9f0c0fb77fee4202.
+
+- 2026-09-16T11:08:02+00:00: Docker audit: unprivileged docker API denied; sudo -n docker available.
+  Cached immutable image
+  ubuntu@sha256:33ceb71981b602c1a7443a53469e4dba065f7503eab3078a2d7a57a2ab987517 verified via image
+  listing. Initial wrapper probe failed exit 125 because Docker rejects --pid private; fixed by
+  relying on Docker default private PID namespace. Signed+DCO commit 8014ef7 pushed. Wrapper
+  positive /bin/true run now exits 0; command output is sanitized to status/exit/elapsed.
