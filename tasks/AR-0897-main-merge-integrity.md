@@ -8,18 +8,18 @@
   ],
   "id": "AR-0897",
   "next_action": "Run PR187 exact-head CI/review, then create signed local recovery merge and rerun protected-main policy.",
-  "observed_branch": "fix/main-merge-integrity",
+  "observed_branch": "DETACHED",
   "observed_dirty": 0,
-  "observed_head": "bd4f28646e0f1d273fad1dadf3310e0e8338e244",
+  "observed_head": "1c07e907a6fdf270264a94bef4af6b8ac4e5cbaf",
   "owner": "asb_ar0897_merge_integrity",
   "plan": "../plans/AR-0897.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 180,
+  "task_revision": 181,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-16T07:58:02+00:00",
+  "updated_at": "2026-09-16T07:58:10+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
