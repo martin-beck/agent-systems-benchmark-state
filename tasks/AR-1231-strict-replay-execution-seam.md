@@ -9,7 +9,7 @@
     "AR-1230"
   ],
   "id": "AR-1231",
-  "next_action": "Publish narrowed typed strict-replay contract/executor PR from exact signed head 84fd574; runtime OS process supervision, descendant egress enforcement and lifecycle recovery are delegated to AR-1232. Run focused/full applicable gates, independent review, exact-head CI, merge and post-merge verification.",
+  "next_action": "Rerun exact-head CI for b622554 and obtain independent review; successful qualified cassette service construction, route identity mismatch coverage, and credential/ambient-field rejection tests are now present. Runtime child supervision remains AR-1232.",
   "observed_branch": "feature/ar-1231",
   "observed_dirty": 0,
   "observed_head": "b62255428989a1d2b7438e37905ac38f73208240",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents through strict replay without provider egress or live fallback.",
-  "task_revision": 155,
+  "task_revision": 156,
   "title": "Strict replay execution and egress-isolation seam",
-  "updated_at": "2026-09-16T02:33:53+00:00",
+  "updated_at": "2026-09-16T02:34:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1231"
 }
 ---
@@ -443,3 +443,9 @@
 
 - 2026-09-16T02:33:53+00:00: Recorded command exit 0; command argv SHA-256
   39cf5398131881d6bebfeb6940a170dba53287cbad205a984f34c80a6dbe58e7.
+
+- 2026-09-16T02:34:13+00:00: Added seam tests: qualified Gemini cassette successfully constructs
+  StrictReplayExecutor with verified isolation; route digest changes when attempt identity changes;
+  serde deny_unknown_fields rejects credential and ambient environment fields. Focused locked
+  offline asb-agents strict_replay suite passes 8 tests. Signed DCO commit b622554 pushed to PR
+  #183; worktree clean.
