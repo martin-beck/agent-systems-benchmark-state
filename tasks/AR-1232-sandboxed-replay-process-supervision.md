@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1232",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T06:06:31+00:00",
+  "claim_expires": "2026-09-16T06:25:05+00:00",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 301,
+  "task_revision": 302,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T04:22:18+00:00",
+  "updated_at": "2026-09-16T04:25:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -794,3 +794,5 @@
   ASB_TEST_ROOT passed 6/6; cargo test --locked --offline --workspace exited 0; repository_policy
   --base origin/main --head HEAD passed; signature policy unittest ran 16 tests OK. Exact product
   head abc031720e438e4a6dc8f2fa655c1343af7bbc3c, worktree clean.
+
+- 2026-09-16T04:25:05+00:00: Heartbeat by asb_ar1232_sandbox_supervision.
