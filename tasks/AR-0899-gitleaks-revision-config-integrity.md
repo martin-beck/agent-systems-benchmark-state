@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve GitHub issue 118 by making local and CI Gitleaks scans deterministic and config changes fail closed.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Align and harden Gitleaks execution",
-  "updated_at": "2026-09-16T11:45:21+00:00",
+  "updated_at": "2026-09-16T11:45:52+00:00",
   "worktree_key": "agent-systems-benchmark-gitleaks-revision-config-integrity"
 }
 ---
@@ -96,3 +96,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T11:45:21+00:00: Recorded command exit 2; command argv SHA-256
   c05d799e98557b0334870920c8e230313dc444edc5995ee2bc75f87eebc8b54d.
+
+- 2026-09-16T11:45:52+00:00: Recorded command exit 0; command argv SHA-256
+  6580c153ab9c508eb609cab52c8eb07e2ef0076c29ed86329b68b2c43d5df9e1.
