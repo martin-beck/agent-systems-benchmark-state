@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1244](tasks/AR-1244-publish-replay-supervision.md): Publish AR-1232 strict-replay supervision | Publish strict-replay supervision integration. | Review and publish signed AR-1232 head 2543a4c through protected-main gates; then verify exact-main post-merge workflows. | asb_ar1244_publish_1232 |
+| P0 | [AR-1244](tasks/AR-1244-publish-replay-supervision.md): Publish AR-1232 strict-replay supervision | Publish strict-replay supervision integration. | Review PR193 exact head 147acd6 and await all required CI before signed protected-main merge. | asb_ar1244_publish_1232 |
 
 ## Open
 
