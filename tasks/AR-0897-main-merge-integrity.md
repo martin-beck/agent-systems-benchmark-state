@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-0897",
-  "next_action": "Monitor exact-main CI for signed recovery 56a85de; then verify policy and close AR-0897.",
+  "next_action": "Run PR188 exact-head CI/review, then create signed recovery merge and verify protected-main policy.",
   "observed_branch": "DETACHED",
   "observed_dirty": 0,
   "observed_head": "ebaf0ce7912205ed544b865a6a3b795d9e9cfe21",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 192,
+  "task_revision": 193,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-16T08:03:15+00:00",
+  "updated_at": "2026-09-16T08:03:18+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -606,3 +606,8 @@ Implementation has not started. Read the linked plan before claiming.
   4ba5cc675ba738e1a18628c748c3a21720fa37f712369fa76fb41e45b28d30a5.
 
 - 2026-09-16T08:03:15+00:00: Heartbeat by asb_ar0897_merge_integrity.
+
+- 2026-09-16T08:03:18+00:00: Exact-main run 35071301009 rejected unsigned GitHub merge a7a64bcc
+  (PR186; parents 56a85de/1e3212b). Preserved that history and added four-line evidence in
+  SSH-signed+DCO head ebaf0ce7912205ed544b865a6a3b795d9e9cfe21. Pushed recovery branch and opened
+  PR188; no history rewrite or merge yet.

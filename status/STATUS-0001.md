@@ -1388,7 +1388,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0897](../tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | asb_ar0897_merge_integrity | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Monitor exact-main CI for signed recovery 56a85de; then verify policy and close AR-0897. |
+| P0 | [AR-0897](../tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | asb_ar0897_merge_integrity | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Run PR188 exact-head CI/review, then create signed recovery merge and verify protected-main policy. |
 | P0 | [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md): Runtime-owned loopback supervisor | asb_ar1238_bwrap_relay_worker | Provide the runtime-owned private-namespace supervisor for loopback replay. | Integrate the in-tree supervisor into SandboxBackend using bwrap --unshare-all --unshare-user --unshare-net with --tmpfs /tmp before a 0600 relay bind mount; prove private loopback readiness, cassette forwarding, egress denial, lifecycle teardown, and unrelated-process non-interference. |
 | P1 | [AR-0896](../tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | asb_ar0896_qualification | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun 34339927858 was launched via handoffctl and is actively watched by PID 736624/gh PID 736653; exact rerun head a4e1a9de985a4c9f22628c6d604a6e62f4f173e3, job 104684371738 currently running. Keep lease heartbeat, wait terminal, then capture failures or green result. |
 
