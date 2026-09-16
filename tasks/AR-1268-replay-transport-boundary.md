@@ -11,17 +11,17 @@
   "id": "AR-1268",
   "next_action": "Add malformed/no-fallback and supervised lifecycle/egress/cancel/restart/timeout/crash cleanup tests around run_with_transport; then full locked gates.",
   "observed_branch": "feature/ar-1268-replay-transport-boundary",
-  "observed_dirty": 1,
-  "observed_head": "1a85dfdbaa9225d37c22037e24a227f98cdc009c",
+  "observed_dirty": 0,
+  "observed_head": "f05288b65cbee91d74ef07105068be0d26cbf7d2",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1268.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Break the strict-replay runtime/CLI dependency cycle with a shared transport contract.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Break strict-replay runtime/CLI dependency cycle",
-  "updated_at": "2026-09-16T22:55:50+00:00",
+  "updated_at": "2026-09-16T22:55:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1268-replay-transport"
 }
 ---
