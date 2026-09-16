@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Wire BreakGlass through response/endpoint/CLI and regenerate v1.7 schemas; add admin dispatch tests. | asb_ar0814_enrollment_authz |
+| P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Add endpoint dispatch/admin context and regenerate v1.7 schemas/conformance fixtures; run full gates. | asb_ar0814_enrollment_authz |
 
 ## Open
 
