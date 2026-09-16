@@ -13,17 +13,17 @@
   "id": "AR-0909",
   "next_action": "Await exact-head CI for b0df3fb; inspect AArch64 and all required checks, independently review, merge only if all green.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
-  "observed_dirty": 1,
-  "observed_head": "b0df3fbc5d9f7dd13969903d250849efa56e3981",
+  "observed_dirty": 0,
+  "observed_head": "420dcbdf1a109129751e7f78895a43503f8abd71",
   "owner": "asb_ar0909_repair",
   "plan": "../plans/AR-0909.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 396,
+  "task_revision": 397,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-16T03:52:21+00:00",
+  "updated_at": "2026-09-16T03:52:28+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
