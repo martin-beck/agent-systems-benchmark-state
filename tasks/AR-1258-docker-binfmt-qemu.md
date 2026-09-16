@@ -2,22 +2,22 @@
 {
   "branch": "feature/docker-binfmt-qemu-capability",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T15:16:45+00:00",
   "depends_on": [],
   "id": "AR-1258",
   "next_action": "Inspect Docker/binfmt/QEMU capability and approved privilege workflow; add bounded verification and rollback-safe checks.",
   "observed_branch": "feature/docker-binfmt-qemu-capability",
   "observed_dirty": 0,
   "observed_head": "a0befc0ff247a42b8d796af161b58b1011de8377",
-  "owner": "",
+  "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1258.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provision and verify Docker binfmt/QEMU for multiarch qualification.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Provision Docker binfmt/QEMU capability",
-  "updated_at": "2026-09-16T14:16:42+00:00",
+  "updated_at": "2026-09-16T14:16:45+00:00",
   "worktree_key": "agent-systems-benchmark-docker-binfmt-qemu"
 }
 ---
@@ -142,3 +142,5 @@ Provide the independent Docker binfmt/QEMU capability required by multiarch qual
 
 - 2026-09-16T14:16:42+00:00: Read-only maintenance-safety audit requested; no host mutation, service
   reload, or handler unregister.
+
+- 2026-09-16T14:16:45+00:00: Claimed by asb_ar1024_lifecycle_router.
