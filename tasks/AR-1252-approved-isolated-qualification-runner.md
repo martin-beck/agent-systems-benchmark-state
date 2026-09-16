@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:46:02+00:00",
+  "updated_at": "2026-09-16T11:46:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -236,3 +236,6 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
   passes; bounded /bin/sleep timeout returns 124 and cleanup check passes. Earlier cleanup false
   result was diagnosed as an over-escaped Docker format template and corrected. AR-1251 remains
   pending real transport fixture invocation; no merge requested.
+
+- 2026-09-16T11:46:35+00:00: Recorded command exit 0; command argv SHA-256
+  b4b1e590df058031e8e5e9b40af9764a40d1bc3edfe9638181cceb5e4c9bc2fc.
