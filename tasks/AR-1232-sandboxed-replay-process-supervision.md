@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1232",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T08:29:12+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "994c6716904dc2f3d4b9fc186ea35490f236b869",
-  "owner": "asb_ar1232_loopback_worker",
+  "owner": "",
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 412,
+  "task_revision": 413,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T06:29:41+00:00",
+  "updated_at": "2026-09-16T06:29:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -1109,3 +1109,14 @@
 
 - 2026-09-16T06:29:41+00:00: Recorded command exit 0; command argv SHA-256
   0bcd3168fe9502928d4d9e76c8f35d8b7812c50b18d53d92bf605d337aa9c03b.
+
+- 2026-09-16T06:29:58+00:00: Scoped authorization remains limited to this AR and one disposable
+  validation. cgroup match support exists in iptables help, but applying or even inspecting firewall
+  state requires root; nft/iptables returned Operation not permitted for this unprivileged worker.
+  No persistent firewall/table/rule was installed. Private network namespaces are available (unshare
+  user+net probe passed), but the repository has no reviewed Unix-socket relay seam to connect a
+  child loopback TCP cassette route without broadening access; no ad hoc relay was introduced.
+  Host-network sharing therefore remains rejected. Next action: add and independently review a
+  private-net two-ended Unix relay transport, or run a separately authorized privileged disposable
+  firewall harness; prove unrelated-process isolation and transactional teardown before
+  implementation.
