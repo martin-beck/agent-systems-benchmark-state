@@ -9,17 +9,17 @@
   "id": "AR-0814",
   "next_action": "Repair detached AR-0814 worktree branch before running focused authz tests.",
   "observed_branch": "feature/remote-enrollment-authz",
-  "observed_dirty": 2,
-  "observed_head": "0a808a635d85fdc4a43b575e3711ef23b38089e3",
+  "observed_dirty": 0,
+  "observed_head": "2d60d70ab277800ca949a90ee684a617c9a72ce8",
   "owner": "asb_ar0814_enrollment_authz",
   "plan": "../plans/AR-0814.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T17:40:33+00:00",
+  "updated_at": "2026-09-16T17:40:41+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
