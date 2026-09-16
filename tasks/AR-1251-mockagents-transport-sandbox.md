@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1251-mockagents-transport-sandbox",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T19:10:32+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1251-mockagents-transport-sandbox",
   "observed_dirty": 0,
   "observed_head": "2a12068c2e1d0c6146fb41de785155b1d43f51ee",
-  "owner": "asb_ar1251_mockagents_transport",
+  "owner": "",
   "plan": "../plans/AR-1251.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Add a bounded transport and sandbox fixture for MockAgents qualification.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Add MockAgents transport sandbox fixture",
-  "updated_at": "2026-09-16T18:55:35+00:00",
+  "updated_at": "2026-09-16T18:55:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1251"
 }
 ---
@@ -100,3 +100,7 @@ preserve privacy, network-denial, signature, DCO, and exact-tree gates.
 
 - 2026-09-16T18:55:35+00:00: Corrected durable next action to the one-mount co-location blocker;
   signed head 2a12068 remains clean.
+
+- 2026-09-16T18:55:38+00:00: Released ownerless with clean signed 2a12068, 9/9 focused tests, and
+  network-none verification; real MockAgents transport/lifecycle/egress proof awaits approved
+  AR-1252 co-location integration.
