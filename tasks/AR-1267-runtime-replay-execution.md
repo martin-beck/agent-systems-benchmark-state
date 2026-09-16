@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement real runtime-owned strict-replay execution and lifecycle supervision.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Runtime strict-replay execution hook",
-  "updated_at": "2026-09-16T22:39:45+00:00",
+  "updated_at": "2026-09-16T22:40:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1267-runtime-replay-execution"
 }
 ---
@@ -42,3 +42,6 @@ context-boundary evidence and its blocker; do not accept metadata-only behavior 
   origin/main 69e8b06. Read complete AR-1267 plan/task and ASB development docs; AR-1266 evidence
   confirms metadata-only context is insufficient. Baseline product tree is clean. No predecessor
   branch/code reused.
+
+- 2026-09-16T22:40:12+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
