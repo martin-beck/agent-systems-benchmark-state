@@ -2,22 +2,22 @@
 {
   "branch": "docs/ar-1210-tutorial-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T06:06:28+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1210",
   "next_action": "Do not release AR-1210 yet: post-merge Repository quality run 35054743606 failed because protected merge commit 4d4a0c4 lacks Signed-off-by. Coordinate merge-integrity/DCO repair and rerun exact-main assurance; preserve merged main and all evidence.",
   "observed_branch": "docs/ar-1210-tutorial-contract",
   "observed_dirty": 0,
   "observed_head": "3e475bda8f44836a169bc8fc679b430f6c993961",
-  "owner": "asb_ar1210_tutorial_contract",
+  "owner": "",
   "plan": "../plans/AR-1210.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Define offline tutorial steps and validate them against the ASB CLI grammar.",
-  "task_revision": 88,
+  "task_revision": 89,
   "title": "Tutorial contract and syntax validator",
-  "updated_at": "2026-09-16T04:16:52+00:00",
+  "updated_at": "2026-09-16T04:17:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1210"
 }
 ---
@@ -254,3 +254,8 @@ be required.
   succeeded. The substantive terminal failure is Repository quality: merge commit 4d4a0c4 lacks
   matching DCO, with publication-interrupted downstream. This is integration policy evidence, not an
   AR-1210 product failure; AR remains in_progress pending post-merge green.
+
+- 2026-09-16T04:17:24+00:00: Implementation merged at protected main 4d4a0c4, but post-merge
+  Repository quality run 35054743606 failed because GitHub-generated merge commit lacks matching
+  Signed-off-by. Preserve history; resume only after AR-0897/main merge-integrity repair and fresh
+  exact-main post-merge assurance are green.
