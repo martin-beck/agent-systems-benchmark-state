@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1241-native-isolation-matrix",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T10:42:40+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1240"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1241-native-isolation-matrix",
   "observed_dirty": 0,
   "observed_head": "7523fde1d87edc0a22e40c79c866b12d4f11599b",
-  "owner": "asb_ar1241_matrix_worker",
+  "owner": "",
   "plan": "../plans/AR-1241.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Complete native signed-bundle isolation negative and lifecycle evidence.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Native isolation negative and lifecycle matrix",
-  "updated_at": "2026-09-16T08:47:50+00:00",
+  "updated_at": "2026-09-16T08:47:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1241"
 }
 ---
@@ -43,3 +43,9 @@ global network state.
 
 - 2026-09-16T08:47:43+00:00: Recorded command exit 0; command argv SHA-256
   6363ce9ae09b6744d6ae6ddb2ad58a4809bf91b65c77994d8ad22f5ab57c08e9.
+
+- 2026-09-16T08:47:58+00:00: Completed native isolation matrix in signed commit 7523fde. Added
+  provider/external/descendant egress denial, timeout descendant reaping, crash cleanup,
+  cancellation non-interference, and supervisor cassette lifecycle assertions. Sandbox boundary
+  17/17 passed; runtime package, locked workspace, fmt, clippy and rustdoc gates passed. No host
+  networking, firewall, ambient ip, credentials, or unrelated-process mutation.

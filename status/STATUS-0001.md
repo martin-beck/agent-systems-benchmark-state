@@ -11,12 +11,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 5 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 11 |
 | **Planned** | Defined work awaiting promotion or dependencies | 64 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 177 |
+| **Done** | Accepted, integrated, and durably verified | 178 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 9 |
 
@@ -334,7 +334,7 @@ flowchart LR
         AR_1238["AR-1238 - Done"]:::status_done
         AR_1239["AR-1239 - Done"]:::status_done
         AR_1240["AR-1240 - Done"]:::status_done
-        AR_1241["AR-1241 - In progress"]:::status_in_progress
+        AR_1241["AR-1241 - Done"]:::status_done
         AR_1242["AR-1242 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
@@ -1398,12 +1398,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md): Make ShellCheck fail closed | asb_ar0898_shellcheck | Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck. | PR #190 rebased onto current protected main 606375f and force-with-lease pushed; exact signed+DCO head 760eded801d3daa07011ea2a744bded7da27a159, tree 1ed40b42879b31d4e33a687494113f98ff94224d. All 12 required checks restarted; AWQ shadow and Huawei headers green. Monitor exact-head CI, independently review rebased diff, then signed local merge only after all green. |
-| P0 | [AR-1241](../tasks/AR-1241-native-isolation-matrix.md): Native isolation negative and lifecycle matrix | asb_ar1241_matrix_worker | Complete native signed-bundle isolation negative and lifecycle evidence. | Add provider/external/descendant egress denial and timeout/cancel/crash/non-interference tests for the signed native bundle. |
 | P0 | [AR-1242](../tasks/AR-1242-protected-main-admission.md): Enforce signed protected-main admission | asb_ar1242_merge_admission | Prevent protected-main admission from creating unsigned GitHub merge commits. | Resolve GitHub settings permission failure, then add and gate fail-closed protected-main admission fixtures. |
 
 ### Open (5)
@@ -1507,7 +1506,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (177)
+### Done (178)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
