@@ -8,15 +8,18 @@
   ],
   "id": "AR-0814",
   "next_action": "Implement ASB enrollment protocol, CLI ceremony, identity storage, scoped authorization, rotation, and revocation.",
+  "observed_branch": "DETACHED",
+  "observed_dirty": 0,
+  "observed_head": "0a808a635d85fdc4a43b575e3711ef23b38089e3",
   "owner": "asb_ar0814_enrollment_authz",
   "plan": "../plans/AR-0814.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T17:25:38+00:00",
+  "updated_at": "2026-09-16T17:25:45+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
