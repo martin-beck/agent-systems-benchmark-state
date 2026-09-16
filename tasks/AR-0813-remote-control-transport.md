@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 165,
+  "task_revision": 166,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T15:11:33+00:00",
+  "updated_at": "2026-09-16T15:11:46+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -490,3 +490,6 @@ Implementation has not started. Read the linked plan before claiming.
   reservation and fails closed. Focused remote tests pass 6/6; product tree clean. Full workspace
   locked suite is now reported green on current origin/main by coordinator. Remaining: rebase branch
   onto current main, rerun full workspace gate, then independent review.
+
+- 2026-09-16T15:11:46+00:00: Recorded command exit 0; command argv SHA-256
+  ed516f6f0da731f7f0c8670680dc0151dbd38c6637e417bb47b211eb4c8699ca.
