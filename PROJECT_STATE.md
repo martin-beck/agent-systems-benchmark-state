@@ -27,6 +27,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35062888126 | `fd7daa43549e` | workflow_dispatch | Emulated aarch64 portability | pending:- |
 | 35060286431 | `fd7daa43549e` | push | Hosted portability and native qualification | completed:success |
 | 35060286418 | `fd7daa43549e` | push | Rust verification | completed:success |
 | 35060286408 | `fd7daa43549e` | push | Emulated aarch64 portability | in_progress:- |
@@ -38,4 +39,3 @@ Generated from local Git and GitHub. Do not edit.
 | 35059756438 | `df5a519b8b76` | pull_request | Rust verification | completed:success |
 | 35059756431 | `df5a519b8b76` | pull_request | Hosted portability and native qualification | completed:success |
 | 35059756418 | `df5a519b8b76` | pull_request | Fault assurance | completed:success |
-| 35059756379 | `df5a519b8b76` | pull_request | Emulated aarch64 portability | completed:success |
