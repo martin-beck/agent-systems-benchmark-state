@@ -2,7 +2,7 @@
 {
   "branch": "feature/distributed-workers",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T14:30:42+00:00",
+  "claim_expires": "2026-09-16T14:40:03+00:00",
   "depends_on": [
     "AR-0204",
     "AR-0702",
@@ -16,9 +16,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Schedule trials across native-capability workers while preserving per-host capacity meaning.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Coordinate distributed experiment workers",
-  "updated_at": "2026-09-16T12:39:14+00:00",
+  "updated_at": "2026-09-16T12:40:03+00:00",
   "worktree_key": "agent-systems-benchmark-distributed-workers"
 }
 ---
@@ -109,3 +109,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T12:39:14+00:00: Recorded command exit 0; command argv SHA-256
   248c84ae0822f5936fdd9095aedf89d30cbce1041ad1a921409bc31f4bd84228.
+
+- 2026-09-16T12:40:03+00:00: Heartbeat by asb_ar1006_distributed_workers.
