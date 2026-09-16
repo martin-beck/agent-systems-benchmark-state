@@ -5,7 +5,8 @@
   "claim_expires": "",
   "depends_on": [
     "AR-1231",
-    "AR-1100"
+    "AR-1100",
+    "AR-1236"
   ],
   "id": "AR-1233",
   "next_action": "Typed LoopbackOnly policy slice 143213c passes full asb-runtime package tests; actual attested loopback namespace/listener binding remains required. Implement backend capability without weakening Deny, then add native child-service/provider-egress tests and full workspace gates.",
@@ -18,7 +19,7 @@
   "schema_version": 1,
   "status": "blocked",
   "summary": "Provide an authenticated loopback-only sandbox transport for strict replay services.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Approved loopback-only sandbox transport",
   "updated_at": "2026-09-16T06:59:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1233"

@@ -5,7 +5,8 @@
   "claim_expires": "",
   "depends_on": [
     "AR-1100",
-    "AR-1231"
+    "AR-1231",
+    "AR-1236"
   ],
   "id": "AR-1234",
   "next_action": "Capability audit complete: pinned tools exist but unshare -n fails Operation not permitted. Do not add ambient privileged setup or host sharing. Require approved runtime-owned loopback namespace/helper capability, then implement native service/egress tests.",
@@ -18,7 +19,7 @@
   "schema_version": 1,
   "status": "blocked",
   "summary": "Provide an approved runtime-owned loopback-only sandbox namespace capability.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Runtime-owned loopback namespace capability",
   "updated_at": "2026-09-16T07:05:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1234"
