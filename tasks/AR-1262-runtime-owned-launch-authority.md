@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned authority for supervised strict-replay execution.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-16T22:13:20+00:00",
+  "updated_at": "2026-09-16T22:13:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1262-runtime-authority"
 }
 ---
@@ -161,3 +161,6 @@ ownership and bounded lifecycle evidence.
   unchanged authority implementation.
 
 - 2026-09-16T22:13:20+00:00: Claimed by asb_ar1024_lifecycle_router.
+
+- 2026-09-16T22:13:29+00:00: Recorded command exit 0; command argv SHA-256
+  321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
