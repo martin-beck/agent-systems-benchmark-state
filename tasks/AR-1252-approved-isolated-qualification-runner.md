@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:12:41+00:00",
+  "updated_at": "2026-09-16T11:18:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -108,3 +108,6 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
   network none, read-only root, dropped caps, private IPC/default PID, bounded resources, and single
   read-only artifact bind remain enforced. Fixture-backed network-denial and AR-1251 integration
   remain.
+
+- 2026-09-16T11:18:30+00:00: Recorded command exit 0; command argv SHA-256
+  f782820ab730d62e1c2c064eb85993943adb7f3be571d96f9d3f0873126e85ce.
