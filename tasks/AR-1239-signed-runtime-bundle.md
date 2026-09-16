@@ -3,21 +3,23 @@
   "branch": "feature/ar-1239-signed-runtime-bundle",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1236"],
+  "depends_on": [
+    "AR-1236"
+  ],
   "id": "AR-1239",
   "next_action": "Implement asb-bundle-owned manifest/payload wiring for the supervisor and sidecar, then sign and verify the canonical bundle offline.",
   "observed_branch": "feature/ar-1239-signed-runtime-bundle",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "6836bb4010f55062ae3c3f6eac793c53c08495c8",
   "owner": "",
   "plan": "../plans/AR-1239.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "planned",
   "summary": "Package and sign the verified loopback supervisor and sidecar runtime payloads.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Signed supervisor and sidecar runtime bundle",
-  "updated_at": "2026-09-16T08:20:00+00:00",
+  "updated_at": "2026-09-16T08:21:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1239"
 }
 ---
