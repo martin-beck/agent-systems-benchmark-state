@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1233",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T10:33:10+00:00",
   "depends_on": [
     "AR-1231",
     "AR-1100",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1233",
   "observed_dirty": 0,
   "observed_head": "b8455b3fc5f5b88b00b9f5af13e21fe32756b1ae",
-  "owner": "",
+  "owner": "asb_ar1233_egress_negative_worker",
   "plan": "../plans/AR-1233.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide an authenticated loopback-only sandbox transport for strict replay services.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Approved loopback-only sandbox transport",
-  "updated_at": "2026-09-16T08:32:57+00:00",
+  "updated_at": "2026-09-16T08:33:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1233"
 }
 ---
@@ -140,3 +140,5 @@
 - 2026-09-16T08:32:57+00:00: Resume AR-1233 for explicitly scoped provider/descendant LoopbackOnly
   egress-negative tests against reviewed supervisor integration; preserve Deny and no host/global
   network changes.
+
+- 2026-09-16T08:33:10+00:00: Claimed by asb_ar1233_egress_negative_worker.
