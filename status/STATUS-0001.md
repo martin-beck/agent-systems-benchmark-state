@@ -11,12 +11,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 4 |
+| **In progress** | Claimed work with a live lease | 3 |
 | **Open** | Dependency-ready and available to claim | 7 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 10 |
 | **Planned** | Defined work awaiting promotion or dependencies | 67 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 165 |
+| **Done** | Accepted, integrated, and durably verified | 166 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 9 |
 
@@ -262,7 +262,7 @@ flowchart LR
         AR_1036["AR-1036 - Done"]:::status_done
         AR_1037["AR-1037 - Done"]:::status_done
         AR_1038["AR-1038 - Done"]:::status_done
-        AR_1039["AR-1039 - In progress"]:::status_in_progress
+        AR_1039["AR-1039 - Done"]:::status_done
         AR_1040["AR-1040 - Done"]:::status_done
         AR_1041["AR-1041 - Done"]:::status_done
         AR_1042["AR-1042 - Open"]:::status_open
@@ -1366,12 +1366,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0897](../tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | asb_ar0897_merge_integrity | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Hold PR 126 at bd6f450; after AR-0877 and AR-0909 integrate, rebase once and require fresh all-green exact-head CI before merge. |
-| P0 | [AR-1039](../tasks/AR-1039-measurement-catalog-merge-attestation.md): Attest the measurement catalog merge boundary | asb_ar1232_lifecycle_router | Recover the measurement catalog publication boundary without rewriting protected main. | Current exact head 7b3ef113 is clean and signed/DCO, with PR140 merge attestation artifacts. Independently review this successor against AR-1039 plan; do not mutate or rewrite historical PR131/PR134. |
 | P1 | [AR-0896](../tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | asb_ar0896_qualification | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun 34339927858 was launched via handoffctl and is actively watched by PID 736624/gh PID 736653; exact rerun head a4e1a9de985a4c9f22628c6d604a6e62f4f173e3, job 104684371738 currently running. Keep lease heartbeat, wait terminal, then capture failures or green result. |
 | P1 | [AR-0908](../tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | asb_ar0908_lock_isolation | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Hold PR #125 unchanged; shared formal asset and native-runner pin owners must repair their gates before a fresh exact-head run. |
 
@@ -1480,7 +1479,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (165)
+### Done (166)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1510,6 +1509,7 @@ flowchart LR
 | P0 | [AR-1036](../tasks/AR-1036-measurement-catalog-control.md): Publish the measurement catalog control contract | Unclaimed | Expose the versioned ASB measurement catalog to standalone frontends without UI code. | Catalog control v1.2 is merged and qualified; AR-1037 may now carry selected measurement IDs through validated ASB plans. |
 | P0 | [AR-1037](../tasks/AR-1037-measurement-selection-plan.md): Add measurement selection to validated run plans | Unclaimed | Carry catalog-backed measurement choices through ASB plan validation, collection and evidence. | After AR-1036, add canonical measurement IDs to validated ASB plans and make collection honor them without any UI code. |
 | P0 | [AR-1038](../tasks/AR-1038-capability-coverage-sink.md): Preserve coverage sinks in sanitized CLI child tests | Unclaimed | Prevent sanitized capability child tests from writing default profraw files into the source checkout. | Post-merge verified on protected main fd7daa4; retain PR132 merge/tree/signature evidence and continue coordinator monitoring. |
+| P0 | [AR-1039](../tasks/AR-1039-measurement-catalog-merge-attestation.md): Attest the measurement catalog merge boundary | Unclaimed | Recover the measurement catalog publication boundary without rewriting protected main. | Current exact head 7b3ef113 is clean and signed/DCO, with PR140 merge attestation artifacts. Independently review this successor against AR-1039 plan; do not mutate or rewrite historical PR131/PR134. |
 | P0 | [AR-1040](../tasks/AR-1040-protected-merge-signature-policy.md): Reconcile protected-merge signature verification | Unclaimed | Align offline signature policy with the repository-required GitHub merge path. | AR-1040 acceptance complete at protected main 6155d63bec04a5c76c4323843c26649b0c084f6e; release done. |
 | P0 | [AR-1041](../tasks/AR-1041-gemini-hook-readiness-race.md): Make Gemini hook readiness publication atomic | Unclaimed | Eliminate the load-sensitive Gemini hook readiness race without weakening validation. | Post-merge verified: PR136 exact head 55648d5 is present in protected main fd7daa4 with all PR checks green; current main AArch64 failure is unrelated Goose fixture AR-1235. |
 | P0 | [AR-1043](../tasks/AR-1043-protected-topic-sync-topology.md): Qualify exact topic-tip synchronization merges | Unclaimed | Accept one exact signed topic-tip sync merge without weakening protected-main policy. | Complete; no further action. |

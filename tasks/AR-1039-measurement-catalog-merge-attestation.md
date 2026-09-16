@@ -2,22 +2,22 @@
 {
   "branch": "docs/measurement-catalog-merge-attestation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T07:05:11+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1039",
   "next_action": "Current exact head 7b3ef113 is clean and signed/DCO, with PR140 merge attestation artifacts. Independently review this successor against AR-1039 plan; do not mutate or rewrite historical PR131/PR134.",
   "observed_branch": "docs/measurement-catalog-merge-attestation",
   "observed_dirty": 0,
   "observed_head": "7b3ef113d2b77c3982748f16c540d0e556252464",
-  "owner": "asb_ar1232_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1039.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Recover the measurement catalog publication boundary without rewriting protected main.",
-  "task_revision": 97,
+  "task_revision": 98,
   "title": "Attest the measurement catalog merge boundary",
-  "updated_at": "2026-09-16T06:05:21+00:00",
+  "updated_at": "2026-09-16T06:05:56+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-merge-attestation"
 }
 ---
@@ -319,3 +319,9 @@ the corrective merge commit uses an actual multiline DCO trailer. This AR owns n
 
 - 2026-09-16T06:05:21+00:00: Recorded command exit 1; command argv SHA-256
   1c4aafd2e66e0c5ef7f4527dab971ff1286ec76cabc073ce635539aaaa70e25a.
+
+- 2026-09-16T06:05:56+00:00: Post-merge audit: successor 7b3ef11 is ancestor of origin/main fd7daa4
+  (PR #185 merge), worktree clean. Repository policy correctly reports empty revision range because
+  feature is already in main; no source mutation or history rewrite required. Signature review
+  command hit coordinator LOCK_TIMEOUT, but signed commit evidence remains in prior durable audit.
+  Release claim done.
