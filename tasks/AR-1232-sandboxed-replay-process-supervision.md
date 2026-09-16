@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 419,
+  "task_revision": 420,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T06:36:18+00:00",
+  "updated_at": "2026-09-16T06:36:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -1145,3 +1145,6 @@
   relay API and record the remaining boundary.
 
 - 2026-09-16T06:35:05+00:00: Claimed by asb_ar1232_worker.
+
+- 2026-09-16T06:36:24+00:00: Recorded command exit 1; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
