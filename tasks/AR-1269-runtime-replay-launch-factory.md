@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1269-runtime-replay-launch-factory",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T00:57:53+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1269-runtime-replay-launch-factory",
   "observed_dirty": 0,
   "observed_head": "2220c899650d8fddaeffdc8450f7b0449cfa9327",
-  "owner": "asb_ar1024_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1269.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Create runtime-owned launch bundles for supervised strict replay.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Runtime-owned replay launch-bundle factory",
-  "updated_at": "2026-09-16T23:04:04+00:00",
+  "updated_at": "2026-09-16T23:05:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1269-runtime-launch-factory"
 }
 ---
@@ -111,3 +111,7 @@ AR-1268's blocked transport evidence and never move launch authority into the CL
   lifecycle/egress behavior without a runtime-issued cassette-service handle or shared transport
   extension. No caller-provided cassette/authority fabrication added; branch remains clean signed
   2220c89 and unpublished.
+
+- 2026-09-16T23:05:09+00:00: AR-1269 authority factory is preserved at clean signed 2220c89. Blocked
+  because runtime cannot carry asb-replay cassette/service types; successor AR-1270 owns
+  dependency-neutral cassette-service handle transport.
