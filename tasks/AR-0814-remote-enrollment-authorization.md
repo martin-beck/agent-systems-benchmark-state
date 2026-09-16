@@ -2,7 +2,7 @@
 {
   "branch": "feature/remote-enrollment-authz",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T21:43:27+00:00",
+  "claim_expires": "2026-09-16T21:44:13+00:00",
   "depends_on": [
     "AR-0813"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 281,
+  "task_revision": 282,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:43:41+00:00",
+  "updated_at": "2026-09-16T19:44:13+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -780,3 +780,5 @@ Implementation has not started. Read the linked plan before claiming.
   or only partial hostile evidence remains for stolen/expired/not-yet-valid/wrong-IP certificates,
   confused deputy beyond BreakGlass, audit tampering/append integrity, and real recovery lifecycle.
   Full gates do not by themselves close these acceptance gaps; do not authorize publication yet.
+
+- 2026-09-16T19:44:13+00:00: Heartbeat by asb_ar0814_enrollment_authz.
