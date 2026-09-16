@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1232",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T04:17:29+00:00",
+  "claim_expires": "2026-09-16T04:19:57+00:00",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T02:18:14+00:00",
+  "updated_at": "2026-09-16T02:19:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -63,3 +63,5 @@
   for strict replay capability bridging without caller-supplied claims. Focused locked offline
   sandbox tests passed (18 unit plus boundary tests). Signed DCO commit 28e7cc5 pushed; worktree
   clean. Full strict replay consumer remains dependent on AR-1231 merge.
+
+- 2026-09-16T02:19:57+00:00: Heartbeat by asb_ar1232_sandbox_supervision.
