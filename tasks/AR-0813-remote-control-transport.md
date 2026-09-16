@@ -2,7 +2,7 @@
 {
   "branch": "feature/remote-control-transport",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T16:43:22+00:00",
+  "claim_expires": "2026-09-16T16:55:50+00:00",
   "depends_on": [
     "AR-0702",
     "AR-0803",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 112,
+  "task_revision": 113,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T14:55:05+00:00",
+  "updated_at": "2026-09-16T14:55:50+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -328,3 +328,5 @@ Implementation has not started. Read the linked plan before claiming.
   ALPN-skew and EventWindow reconnect tests remain green. Address/partition faults are
   external-harness scope and not simulated. Next: independent exact-head review; workspace-wide test
   still has unrelated asb-metrics mismatch.
+
+- 2026-09-16T14:55:50+00:00: Heartbeat by asb_ar0813_remote_transport.
