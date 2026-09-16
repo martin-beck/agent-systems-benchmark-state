@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a real runtime-owned strict-replay CLI entrypoint.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Runtime-owned strict-replay CLI entrypoint",
-  "updated_at": "2026-09-16T22:25:16+00:00",
+  "updated_at": "2026-09-16T22:25:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1265-runtime-replay-entrypoint"
 }
 ---
@@ -73,3 +73,6 @@ unmerged implementation is not an input; preserve its review as the reason this 
   4d794e29b61dffc224f97f0280c573e3ed07695dad1bba348b4bd20627fb7998.
 
 - 2026-09-16T22:25:16+00:00: Heartbeat by asb_ar1024_lifecycle_router.
+
+- 2026-09-16T22:25:18+00:00: Recorded command exit 0; command argv SHA-256
+  b531c9b318472575743e64f2bad65d82351e4a903664641db806c5c64f5f4a0c.
