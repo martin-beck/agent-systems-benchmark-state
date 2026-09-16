@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate strict replay with runtime-owned attestation and supervised sandbox execution.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Runtime-owned strict-replay integration",
-  "updated_at": "2026-09-16T20:28:27+00:00",
+  "updated_at": "2026-09-16T20:29:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1260-runtime"
 }
 ---
@@ -45,3 +45,6 @@ missing, stale, duplicated, or mismatched.
 
 - 2026-09-16T20:28:20+00:00: Recorded command exit 0; command argv SHA-256
   df3f51288a439e254d63ec6692caf22033d5b5f9dbb9294e1c455f7eec83d16d.
+
+- 2026-09-16T20:29:35+00:00: Recorded command exit 0; command argv SHA-256
+  f489a19876782722ed16d09ca01ff72aa074415a2bb4183d7206b5819538e360.
