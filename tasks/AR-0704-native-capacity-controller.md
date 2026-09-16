@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0704",
-  "next_action": "Focused lifecycle/schema tests pass 25/25 on signed head 28f30ee. Remaining action is requalify PR #119 exact head for the fail-closed TLA provenance pin; inspect hosted failure and repair only if reproducible.",
+  "next_action": "Formal assurance owner AR-0877/AR-0907 must repair the pinned TLA artifact provenance mismatch (downloaded byte count/hash) before PR #119 can be requalified; AR-0704 native controller requires no source change.",
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "28f30eea80efef5a61ea438e77402f8640564cc9",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-16T06:48:44+00:00",
+  "updated_at": "2026-09-16T06:48:54+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -314,3 +314,8 @@ must not block this AR or its dependents.
   f3d3db5f6371551ecfcc32755923dcf3f4793c4ba3aab39bcf920e7b656285b7.
 
 - 2026-09-16T06:48:44+00:00: Heartbeat by asb_ar0704_formal_infra.
+
+- 2026-09-16T06:48:54+00:00: Investigation complete: PR #119 exact head 28f30ee fails only formal
+  run 34355869235 after the TLA v1.8.0 download; pinned TLA_BYTES/hash validation rejects the
+  downloaded 4385 KiB asset against expected 4490679 bytes and SHA a1fc0bfe... All other checks
+  passed. This is outside AR-0704 native-capacity scope. No product mutation or gate weakening.
