@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1260-runtime-owned-strict-replay-integration",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T22:33:25+00:00",
+  "claim_expires": "2026-09-16T22:35:56+00:00",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate strict replay with runtime-owned attestation and supervised sandbox execution.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Runtime-owned strict-replay integration",
-  "updated_at": "2026-09-16T20:35:47+00:00",
+  "updated_at": "2026-09-16T20:35:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1260-runtime"
 }
 ---
@@ -75,3 +75,5 @@ missing, stale, duplicated, or mismatched.
   retains sidecar ownership. Focused asb-cli lib tests pass 76/76; cargo fmt --all -- --check
   passes; cargo test --workspace --locked --offline passes (exit 0, including native sandbox 11/11
   and schema/policy fixtures). Worktree clean.
+
+- 2026-09-16T20:35:56+00:00: Heartbeat by asb_ar1024_lifecycle_router.
