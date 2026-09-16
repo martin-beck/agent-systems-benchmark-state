@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T14:23:18+00:00",
+  "updated_at": "2026-09-16T14:26:23+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -58,3 +58,6 @@ Implementation has not started. Read the linked plan before claiming.
   validation requires explicit opt-in, non-wildcard bind, bounded connections, and valid
   ControlLimits. Focused cargo test transport::tests::remote_ passed 2/2; cargo fmt applied. Next:
   implement authenticated TLS 1.3 listener/framing with explicit ALPN and bounded handshake.
+
+- 2026-09-16T14:26:23+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
