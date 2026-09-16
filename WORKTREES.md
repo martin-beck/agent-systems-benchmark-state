@@ -49,8 +49,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1245` | `fix/ar-1245-postmerge-dco-evidence` | `3e12d64e8e6e` | 0 | behind 108, ahead 0 |
 | `agent-systems-benchmark-ar-1246` | `fix/ar-1246-protected-main-dco-flow` | `903aef8f4e12` | 0 | behind 105, ahead 0 |
 | `agent-systems-benchmark-ar-1247` | `fix/ar-1247-protected-main-dco-workflow` | `53d018d69057` | 0 | behind 61, ahead 0 |
-| `agent-systems-benchmark-ar-1248` | `feature/ar-1248-strict-replay-cli-contract` | `cebe8efc19a1` | 2 | behind 60, ahead 8 |
-| changed files | - | - | - | `crates/asb-cli/tests/workflow_transcript.rs`, `docs/examples/asb-cli-workflow-v1.provenance.json` |
+| `agent-systems-benchmark-ar-1248` | `feature/ar-1248-strict-replay-cli-contract` | `cebe8efc19a1` | 1 | behind 60, ahead 8 |
+| changed files | - | - | - | `docs/examples/asb-cli-workflow-v1.provenance.json` |
 | `agent-systems-benchmark-ar-1249` | `feature/ar-1249-mockagents-qualification-evidence` | `128ecddbfdb7` | 0 | behind 60, ahead 0 |
 | `agent-systems-benchmark-ar-1250` | `feature/ar-1250-mockagents-harness-extension` | `0d42bca02b27` | 0 | behind 60, ahead 11 |
 | `agent-systems-benchmark-ar-1251` | `feature/ar-1251-mockagents-transport-sandbox` | `2a12068c2e1d` | 0 | behind 60, ahead 1 |
