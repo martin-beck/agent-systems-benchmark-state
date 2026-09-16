@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0813",
-  "next_action": "Publish PR from exact clean signed head 7b4168ff via handoffctl; monitor exact-head CI and obtain required independent approval before signed protected merge. Preserve bounded transport-level fault claims.",
+  "next_action": "Monitor PR202 exact head 7b4168ff checks to terminal; merge only after all required checks and independent approval.",
   "observed_branch": "feature/remote-control-transport",
   "observed_dirty": 0,
   "observed_head": "52ee2b13d809b0147f54f4f370face7fb14807b0",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 229,
+  "task_revision": 230,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T15:35:03+00:00",
+  "updated_at": "2026-09-16T15:35:28+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -708,3 +708,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T15:35:03+00:00: Recorded command exit 0; command argv SHA-256
   d24136fc08b190e34cee89d7b22f34f29e446bc2167ceb054f0de82a470abaa0.
+
+- 2026-09-16T15:35:28+00:00: PR202 opened through handoffctl:
+  https://github.com/martin-beck/agent-systems-benchmark/pull/202. Verified head
+  7b4168ff40ca5f134efb2acb50ef730240a48a99, base a0befc0ff247a42b8d796af161b58b1011de8377,
+  mergeable, SSH-signed+DCO. Twelve required checks started; two header/AWQ checks already
+  successful, remaining checks in progress.
