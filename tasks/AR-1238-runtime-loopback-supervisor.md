@@ -1,0 +1,34 @@
+---
+{
+  "branch": "feature/ar-1238-runtime-loopback-supervisor",
+  "checkpoint_commit": "",
+  "claim_expires": "",
+  "depends_on": ["AR-1100", "AR-1231"],
+  "id": "AR-1238",
+  "next_action": "Implement and qualify a pinned in-tree supervisor that composes a private user/network namespace, raises only its own loopback, mounts the per-launch Unix relay, and supervises sidecar plus adapter without host networking.",
+  "observed_branch": "feature/ar-1238-runtime-loopback-supervisor",
+  "observed_dirty": 0,
+  "observed_head": "11d37da2ec59fb5e2afe26c35d9c1bab1787f034",
+  "owner": "",
+  "plan": "../plans/AR-1238.md",
+  "priority": "P0",
+  "schema_version": 1,
+  "status": "planned",
+  "summary": "Provide the runtime-owned private-namespace supervisor for loopback replay.",
+  "task_revision": 1,
+  "title": "Runtime-owned loopback supervisor",
+  "updated_at": "2026-09-16T07:34:00+00:00",
+  "worktree_key": "agent-systems-benchmark-ar-1238"
+}
+---
+
+Own the missing runtime composition seam. A pinned in-tree supervisor must create a private user
+and network namespace, bring up only its own loopback interface, mount the authenticated Unix relay,
+start the sidecar and adapter together, and report readiness to the runtime. It must never share
+host networking, alter global firewall state, invoke ambient `ip`, expose credentials, or affect
+unrelated processes.
+
+Acceptance: immutable command identity and route/generation attestation; bounded forwarding and
+startup; fail-closed namespace setup; teardown/reaping on success, timeout, cancellation, crash,
+restart, duplicate, stale, and partial launch; provider/external egress denial; unrelated-process
+non-interference; focused/full locked, privacy, policy, native, signature/DCO, and exact-head gates.
