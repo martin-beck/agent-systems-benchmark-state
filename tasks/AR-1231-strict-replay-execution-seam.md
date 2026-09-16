@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1231",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T04:18:42+00:00",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1231",
   "observed_dirty": 0,
   "observed_head": "84fd5748962d0058308dbcbd9e433712418f518e",
-  "owner": "",
+  "owner": "asb_ar1231_publication",
   "plan": "../plans/AR-1231.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Execute real agents through strict replay without provider egress or live fallback.",
-  "task_revision": 120,
+  "task_revision": 121,
   "title": "Strict replay execution and egress-isolation seam",
-  "updated_at": "2026-09-16T02:12:44+00:00",
+  "updated_at": "2026-09-16T02:18:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1231"
 }
 ---
@@ -346,3 +346,5 @@
   process-supervision prerequisite (suggest AR-1232); handoffctl has no create command, so
   coordinator must create/promote that task through the documented state-task workflow before
   re-claiming.
+
+- 2026-09-16T02:18:42+00:00: Claimed by asb_ar1231_publication.
