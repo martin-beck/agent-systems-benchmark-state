@@ -11,17 +11,17 @@
   "id": "AR-1260",
   "next_action": "Add executable lifecycle/egress/no-fallback tests around the runtime launch wrapper; then run policy/privacy/signature gates and request exact-head review.",
   "observed_branch": "feature/ar-1260-runtime-owned-strict-replay-integration",
-  "observed_dirty": 1,
-  "observed_head": "317a756b3639c33aba89300bf9a77d5515e3d22d",
+  "observed_dirty": 0,
+  "observed_head": "9e4a1c095e1f736011699edb4ab216e876e77251",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1260.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate strict replay with runtime-owned attestation and supervised sandbox execution.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Runtime-owned strict-replay integration",
-  "updated_at": "2026-09-16T20:37:23+00:00",
+  "updated_at": "2026-09-16T20:37:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1260-runtime"
 }
 ---
