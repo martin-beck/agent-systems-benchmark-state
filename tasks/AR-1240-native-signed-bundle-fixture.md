@@ -8,7 +8,7 @@
     "AR-1239"
   ],
   "id": "AR-1240",
-  "next_action": "Materialize and verify a signed supervisor/sidecar bundle fixture, then run the native Bubblewrap isolation matrix.",
+  "next_action": "Materialize a signed bundle fixture containing both helper payloads and invoke SandboxBackend with VerifiedPayload paths; current dependency worktree is ready and bundle/runtime verification tests pass.",
   "observed_branch": "feature/ar-1240-native-signed-bundle-fixture",
   "observed_dirty": 0,
   "observed_head": "e4c2e56c076ad9648ded2dbdd79cb2431cc7d33f",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add native signed-bundle fixture and end-to-end supervisor isolation tests.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Native signed-bundle supervisor fixture",
-  "updated_at": "2026-09-16T08:31:52+00:00",
+  "updated_at": "2026-09-16T08:32:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1240"
 }
 ---
@@ -32,3 +32,8 @@ bundle. Preserve fail-closed behavior and all existing privacy and non-interfere
   and Bubblewrap isolation matrix.
 
 - 2026-09-16T08:31:09+00:00: Claimed by asb_ar1240_native_fixture_worker.
+
+- 2026-09-16T08:32:25+00:00: Created isolated /srv/data/projects/agent-systems-benchmark-ar-1240
+  from e4c2e56; AR-1239 6836bb4 was already included (c03ad36). asb-bundle tests 18 offline verifier
+  + 4 unit + 2 schema passed; sandbox native boundary 10 passed; bundle clippy passed. No native
+  signed supervisor cassette matrix yet.
