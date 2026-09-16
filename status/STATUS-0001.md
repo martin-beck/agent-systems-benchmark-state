@@ -1443,7 +1443,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P3 | [AR-1006](../tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | asb_ar1006_distributed_workers | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Publish PR from exact signed head 23c9ba4; monitor exact-head CI and merge only after all required checks plus independent approval. |
+| P3 | [AR-1006](../tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | asb_ar1006_distributed_workers | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Monitor post-merge workflows for main 4e2820b until terminal; verify exact tree/signature/DCO/policy, then release AR-1006 done. |
 
 ### Open (4)
 

@@ -9,16 +9,16 @@
     "AR-1001"
   ],
   "id": "AR-1006",
-  "next_action": "Publish PR from exact signed head 23c9ba4; monitor exact-head CI and merge only after all required checks plus independent approval.",
+  "next_action": "Monitor post-merge workflows for main 4e2820b until terminal; verify exact tree/signature/DCO/policy, then release AR-1006 done.",
   "owner": "asb_ar1006_distributed_workers",
   "plan": "../plans/AR-1006.md",
   "priority": "P3",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Schedule trials across native-capability workers while preserving per-host capacity meaning.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Coordinate distributed experiment workers",
-  "updated_at": "2026-09-16T12:40:03+00:00",
+  "updated_at": "2026-09-16T12:40:16+00:00",
   "worktree_key": "agent-systems-benchmark-distributed-workers"
 }
 ---
@@ -111,3 +111,11 @@ Implementation has not started. Read the linked plan before claiming.
   248c84ae0822f5936fdd9095aedf89d30cbce1041ad1a921409bc31f4bd84228.
 
 - 2026-09-16T12:40:03+00:00: Heartbeat by asb_ar1006_distributed_workers.
+
+- 2026-09-16T12:40:16+00:00: PR #199 merged via signed local integration as
+  4e2820bffe93234d02ca39b59067bf4442b08f95. Exact parents 3e8d58994eb2b3faeda9449e4186498cf86eeb86
+  and 23c9ba45c2bb602d273d3d7a002d5b05d533cac4; exact reviewed tree
+  5f2c06f795681bf502a02faadad23d1b2268d873; remote ref, SSH signature and DCO verified. Exact-head
+  PR checks all green after transient unrelated Loom ExecutableFileBusy rerun succeeded. Post-merge
+  runs started: 35097078851 fault, 35097078917 AArch64, 35097078871 repository quality, 35097079080
+  Rust, 35097078950 hosted portability, 35097078829 formal; headers 35097078983 green.
