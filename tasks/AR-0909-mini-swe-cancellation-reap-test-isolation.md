@@ -2,7 +2,7 @@
 {
   "branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T06:36:56+00:00",
+  "claim_expires": "2026-09-16T06:37:15+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 448,
+  "task_revision": 449,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-16T04:37:08+00:00",
+  "updated_at": "2026-09-16T04:37:15+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1509,3 +1509,5 @@ classified.
   list and strict process identities; post-cancel checks both authenticated process-group liveness
   and original PID identity, treating read errors, reuse, runnable, and changed ownership as
   failures. Focused native test passes 1/1. Fresh exact-head CI pending; no merge.
+
+- 2026-09-16T04:37:15+00:00: Heartbeat by asb_ar0909_repair.
