@@ -34,7 +34,7 @@ Generated from local Git and GitHub. Do not edit.
 | 35054743614 | `4d4a0c4f3bd7` | push | Rust verification | in_progress:- |
 | 35054743606 | `4d4a0c4f3bd7` | push | Repository quality | completed:failure |
 | 35054743596 | `4d4a0c4f3bd7` | push | Formal assurance | in_progress:- |
-| 35054743595 | `4d4a0c4f3bd7` | push | Hosted portability and native qualification | in_progress:- |
+| 35054743595 | `4d4a0c4f3bd7` | push | Hosted portability and native qualification | completed:success |
 | 35054743594 | `4d4a0c4f3bd7` | push | Huawei MIT source headers | completed:success |
 | 35054477399 | `a4dd0941d71f` | pull_request | Formal assurance | completed:success |
 | 35054477333 | `a4dd0941d71f` | pull_request | Hosted portability and native qualification | completed:success |
