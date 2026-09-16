@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:05:01+00:00",
+  "updated_at": "2026-09-16T11:05:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -32,3 +32,6 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
   available via sudo. Promote digest-pinned isolated runner prerequisite.
 
 - 2026-09-16T11:05:01+00:00: Claimed by asb_ar1252_isolated_runner.
+
+- 2026-09-16T11:05:33+00:00: Recorded command exit 0; command argv SHA-256
+  9a629caf66475420aed9c07df8c351e422dcf1776f37f894d6b6623e938fb0c9.
