@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-16T06:05:48+00:00",
+  "updated_at": "2026-09-16T06:09:40+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -162,3 +162,6 @@ synthetic fixture for black-box executable evidence.
 
 - 2026-09-16T06:05:48+00:00: 2026-09-16T06:06Z: Confirmed live gh run watch process and renewed
   lease through 08:05:29Z. Repository quality rerun is active; no product mutation yet.
+
+- 2026-09-16T06:09:40+00:00: Recorded command exit 0; command argv SHA-256
+  3acf4a09145255eece41bde2464fb41bc431adfc3cdaf89b144da51130a73d4c.
