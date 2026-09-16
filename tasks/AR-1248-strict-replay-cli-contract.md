@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1248-strict-replay-cli-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T20:56:24+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1231",
     "AR-1232"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1248-strict-replay-cli-contract",
   "observed_dirty": 0,
   "observed_head": "7d9c2ee2e08b9d61cb03837236918575405fb5c2",
-  "owner": "coordinator-successor-creation",
+  "owner": "",
   "plan": "../plans/AR-1248.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 144,
+  "task_revision": 145,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T20:26:32+00:00",
+  "updated_at": "2026-09-16T20:26:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -425,3 +425,7 @@ formal, privacy, signature, DCO, and exact-tree gates.
 
 - 2026-09-16T20:26:32+00:00: Recorded command exit 0; command argv SHA-256
   9f559a9ce801ac827cebd8cfb5690f76c26e68a992eb3343e484aceaa713ee96.
+
+- 2026-09-16T20:26:45+00:00: Created coordinator successor AR-1260 for runtime-owned attestation and
+  supervised strict-replay integration; preserve exact reviewed head 7d9c2ee and do not merge until
+  successor evidence passes.
