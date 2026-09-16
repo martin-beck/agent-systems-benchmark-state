@@ -9,7 +9,7 @@
     "AR-1008"
   ],
   "id": "AR-0898",
-  "next_action": "PR #190 merged as signed local merge eb0ad13f8b6e64b6ee46b92602a631ba0c96f9f4 (parents 606375f + 760eded8; tree verified; G signature and DCO). Protected-main post-merge workflows are running at exact head eb0ad13: Repository quality 35076116672, Rust 35076116617, hosted portability 35076116659, emulated AArch64 35076116592, fault 35076116738, formal 35076116608. Monitor all to terminal, diagnose failures, then release AR done.",
+  "next_action": "Post-merge exact-main commit eb0ad13 verification: Repository quality 35076116672 success, Rust 35076116617 success, Hosted portability 35076116659 success, Fault assurance 35076116738 success, Formal assurance 35076116608 success. Emulated AArch64 35076116592 remains in_progress; monitor to terminal, then verify exact main policy/signature/DCO and release AR done.",
   "observed_branch": "fix/shellcheck-fail-closed",
   "observed_dirty": 0,
   "observed_head": "760eded801d3daa07011ea2a744bded7da27a159",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Make ShellCheck fail closed",
-  "updated_at": "2026-09-16T08:56:10+00:00",
+  "updated_at": "2026-09-16T08:57:48+00:00",
   "worktree_key": "agent-systems-benchmark-shellcheck-fail-closed"
 }
 ---
@@ -160,3 +160,7 @@ Implementation has not started. Read the linked plan before claiming.
   8eddf255969a7b7c692a86d139b1d5e77013a3c47c9c69927072e9a2ddc9e071.
 
 - 2026-09-16T08:56:10+00:00: Heartbeat by asb_ar0898_shellcheck.
+
+- 2026-09-16T08:57:48+00:00: 2026-09-16T08:59Z: Four post-merge workflows terminal success; emulated
+  AArch64 is the sole remaining required gate. Lease heartbeat renewed; no action on unrelated
+  AR1242 merge-integrity issue.
