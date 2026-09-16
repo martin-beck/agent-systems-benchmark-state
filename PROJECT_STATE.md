@@ -13,7 +13,7 @@ Generated from local Git and GitHub. Do not edit.
 | #119 | `feature/native-capacity-controller@28f30eea80ef` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(capacity): add bounded native lifecycle controller |
 | #124 | `feature/openjiuwen-live@cceb76f436f8` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(agents): qualify pinned OpenJiuwen live execution |
 | #125 | `fix/control-state-lock-test-isolation@8b0f9fd07d5d` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(cli): isolate control state roots |
-| #126 | `fix/main-merge-integrity@bd6f450ab877` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | tools: harden signed merge publication |
+| #126 | `fix/main-merge-integrity@aceb1910b920` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | tools: harden signed merge publication |
 | #144 | `dependabot/github_actions/actions/setup-java-6.0.0@5885c200026e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump actions/setup-java from 5.0.0 to 6.0.0 |
 | #145 | `dependabot/cargo/toml-0.9.5@5f30c0c92f18` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 0.9.5 |
 | #146 | `dependabot/github_actions/taiki-e/install-action-2.87.7@51db8d79ad9f` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.7 |
@@ -28,15 +28,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35057669149 | `aceb1910b920` | pull_request | Repository quality | queued:- |
+| 35057669146 | `aceb1910b920` | pull_request | Emulated aarch64 portability | queued:- |
+| 35057669117 | `aceb1910b920` | pull_request | Rust verification | queued:- |
+| 35057669116 | `aceb1910b920` | pull_request | Huawei MIT source headers | queued:- |
+| 35057669115 | `aceb1910b920` | pull_request | Fault assurance | queued:- |
+| 35057669102 | `aceb1910b920` | pull_request | Hosted portability and native qualification | queued:- |
+| 35057669083 | `aceb1910b920` | pull_request | Formal assurance | queued:- |
+| 35057669012 | `aceb1910b920` | pull_request | Agent Workflow Quality shadow | queued:- |
 | 35056808051 | `00f37631e680` | push | Hosted portability and native qualification | completed:success |
 | 35056807979 | `00f37631e680` | push | Fault assurance | completed:success |
 | 35056807976 | `00f37631e680` | push | Huawei MIT source headers | completed:success |
 | 35056807972 | `00f37631e680` | push | Rust verification | completed:failure |
-| 35056807971 | `00f37631e680` | push | Repository quality | completed:failure |
-| 35056807969 | `00f37631e680` | push | Formal assurance | completed:success |
-| 35056807960 | `00f37631e680` | push | Emulated aarch64 portability | completed:success |
-| 35056260773 | `aba1f8cded47` | pull_request | Hosted portability and native qualification | completed:success |
-| 35056260736 | `aba1f8cded47` | pull_request | Repository quality | completed:success |
-| 35056260730 | `aba1f8cded47` | pull_request | Emulated aarch64 portability | completed:success |
-| 35056260723 | `aba1f8cded47` | pull_request | Formal assurance | completed:success |
-| 35056260715 | `aba1f8cded47` | pull_request | Fault assurance | completed:success |
