@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1232",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T06:43:41+00:00",
+  "claim_expires": "2026-09-16T06:46:50+00:00",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 353,
+  "task_revision": 354,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T04:45:51+00:00",
+  "updated_at": "2026-09-16T04:46:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -931,3 +931,5 @@
   endpoint and authenticated route environment; listener observes no connection under denied policy.
   Dedicated native gate passed 7/7. Worktree clean and pushed. Executor service
   lifecycle/recover_after_restart integration remains outstanding and blocks publication.
+
+- 2026-09-16T04:46:50+00:00: Heartbeat by asb_ar1232_sandbox_supervision.
