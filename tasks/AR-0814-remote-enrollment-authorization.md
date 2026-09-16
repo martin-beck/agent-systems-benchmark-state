@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Run full fmt, clippy, workspace, policy and privacy gates; prepare exact clean head for independent review.",
+  "next_action": "Run policy/privacy gates and request independent exact-head review for enrollment/authz.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "1f9c36aad338849bfdbbb9922bd2a2efa72e00fa",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T17:55:26+00:00",
+  "updated_at": "2026-09-16T17:55:53+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -198,3 +198,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T17:55:26+00:00: Recorded command exit 0; command argv SHA-256
   12938f82fbaa9857db28f5434d0af3e082e02e4471a57c1807c2e82d77a69772.
+
+- 2026-09-16T17:55:53+00:00: Full cargo test --workspace --locked passed after refreshing CLI
+  provenance digest in signed+DCO 1f9c36a; previous workflow_transcript provenance failure is fixed
+  and focused provenance test passed. Workspace clean. cargo clippy --workspace --all-targets
+  --locked -D warnings also passed.
