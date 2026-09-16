@@ -35,8 +35,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1232` | `feature/ar-1232` | `7613c678c718` | 0 | behind 53, ahead 27 |
 | `agent-systems-benchmark-ar-1233` | `feature/ar-1233` | `11575f6a96a1` | 0 | behind 32, ahead 11 |
 | `agent-systems-benchmark-ar-1233-positive` | `feature/ar-1233-positive-transport` | `36dd575d2b76` | 0 | behind 307, ahead 9 |
-| `agent-systems-benchmark-ar-1234` | `feature/ar-1234` | `fcfe149ad924` | 1 | behind 0, ahead 13 |
-| changed files | - | - | - | `crates/asb-runtime/src/supervisor.rs` |
+| `agent-systems-benchmark-ar-1234` | `feature/ar-1234` | `7afabe002d82` | 0 | behind 0, ahead 14 |
 | `agent-systems-benchmark-ar-1235` | `feature/ar-1235-goose-fixture-portability` | `fd7daa43549e` | 3 | behind 23, ahead 0 |
 | changed files | - | - | - | `target-hosted-aarch64/`, `target-hosted-full-aarch64/`, `target-repeat-aarch64/` |
 | `agent-systems-benchmark-ar-1236` | `feature/ar-1236-runtime-loopback-sidecar` | `42c3d1959b9a` | 0 | behind 307, ahead 4 |
