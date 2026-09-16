@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0813",
-  "next_action": "Address remaining strict plan gaps before publication: add/justify TCP keepalive and close the drain-vs-admit atomic race (drain can begin between post-accept check and permit acquisition), with regression tests. Then rerun full locked workspace gates and request publication.",
+  "next_action": "Enable and test TCP keepalive on both server and client streams (remove duplicate server call, add client call), then rerun focused/full gates and request publication review; retain bounded transport-level fault claims.",
   "observed_branch": "feature/remote-control-transport",
   "observed_dirty": 0,
   "observed_head": "52ee2b13d809b0147f54f4f370face7fb14807b0",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 215,
+  "task_revision": 216,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T15:28:19+00:00",
+  "updated_at": "2026-09-16T15:28:31+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -646,3 +646,13 @@ Implementation has not started. Read the linked plan before claiming.
   review/CI.
 
 - 2026-09-16T15:28:19+00:00: Heartbeat by asb_ar0813_remote_transport.
+
+- 2026-09-16T15:28:31+00:00: Independent exact-head review of
+  52ee2b13d809b0147f54f4f370face7fb14807b0: admission_lock now serializes post-accept permit
+  acquisition with begin_drain, eliminating the previously identified TOCTOU; cumulative transport
+  tests and signatures/DCO/diff are otherwise clean, with full workspace/clippy durably reported
+  green. However keepalive acceptance is not met: server accept calls set_socket_keepalive twice
+  (lines 433 and 436), while RemoteTlsClient::connect has no keepalive call at all (lines 493-496
+  only read/write timeouts), despite commit claiming both sides. Add client keepalive and regression
+  coverage; clean duplicate. Transport-level partition/drop/reorder abstraction remains acceptable
+  only with bounded non-netem claims. No publication approval.
