@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Run full locked gates and independently review certificate/pairing/audit threat coverage.",
+  "next_action": "Request independent exact-head review; do not publish until reviewer confirms remaining scope boundaries.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "a1ac8e18ce3d662e3e2ea6bd20d4798b4d3d6961",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 278,
+  "task_revision": 279,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:42:00+00:00",
+  "updated_at": "2026-09-16T19:42:39+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -754,3 +754,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T19:42:00+00:00: Recorded command exit 0; command argv SHA-256
   813f24d88e75640f649e97e91af1e4aad21661d778c627a9276dd64d4fac4b6e.
+
+- 2026-09-16T19:42:39+00:00: Final candidate gates pass at exact signed head a1ac8e1 plus prior
+  signed AR-0814 commits: cargo fmt --all --check, cargo test --workspace --locked (all suites pass;
+  capability-dependent tests remain documented ignored), cargo clippy --workspace --all-targets
+  --locked -D warnings, and cargo doc --workspace --no-deps --locked. Worktree clean. Candidate
+  includes v1.7 schema/endpoint, runner-owned BreakGlass context, pairing persistence/expiry/tamper
+  fences, and explicit fail-closed SecretBackend.
