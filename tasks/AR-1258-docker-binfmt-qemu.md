@@ -2,22 +2,22 @@
 {
   "branch": "feature/docker-binfmt-qemu-capability",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T16:13:56+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1258",
   "next_action": "Inspect Docker/binfmt/QEMU capability and approved privilege workflow; add bounded verification and rollback-safe checks.",
   "observed_branch": "feature/docker-binfmt-qemu-capability",
   "observed_dirty": 0,
   "observed_head": "a0befc0ff247a42b8d796af161b58b1011de8377",
-  "owner": "asb_ar1024_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1258.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provision and verify Docker binfmt/QEMU for multiarch qualification.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Provision Docker binfmt/QEMU capability",
-  "updated_at": "2026-09-16T14:14:46+00:00",
+  "updated_at": "2026-09-16T14:15:04+00:00",
   "worktree_key": "agent-systems-benchmark-docker-binfmt-qemu"
 }
 ---
@@ -131,3 +131,11 @@ Provide the independent Docker binfmt/QEMU capability required by multiarch qual
 
 - 2026-09-16T14:14:46+00:00: Recorded command exit 0; command argv SHA-256
   c2017f4be5c9fddf954e482505da2fe895056c49a2be421ab65331eb8c03fe5f.
+
+- 2026-09-16T14:15:04+00:00: Reopened investigation with approved mediated sudo. Pinned
+  tonistiigi/binfmt installer exposes only -install/-uninstall/-mount/-version and cannot add
+  fix-binary F. Authoritative /usr/lib/binfmt.d/qemu-aarch64.conf is qemu-aarch64 interpreter with
+  flags OP (missing F). Adding F requires unregister/re-register or systemd-binfmt reload; sudo
+  docker ps shows an active container and systemd docker/systemd-binfmt are active, so disruptive
+  reload/unregister is not safe or authorized. No handler change was made. Resume only during an
+  approved maintenance window with rollback-safe registration, then validate pinned arm64 /bin/true.
