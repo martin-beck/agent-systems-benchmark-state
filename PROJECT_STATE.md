@@ -22,20 +22,20 @@ Generated from local Git and GitHub. Do not edit.
 | #151 | `dependabot/cargo/serde-1.0.229@c926edfde377` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #197 | `feature/ar-1248-strict-replay-cli-contract@cebe8efc19a1` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): define strict offline replay consumer contract |
-| #202 | `feature/remote-control-transport@efa9ab496a71` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | asb-control: configure TLS keepalive on both peers |
+| #202 | `feature/remote-control-transport@efa9ab496a71` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:FAILURE, IN_PROGRESS: | asb-control: configure TLS keepalive on both peers |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35120454292 | `efa9ab496a71` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35120454292 | `efa9ab496a71` | pull_request | Hosted portability and native qualification | completed:success |
 | 35120454231 | `efa9ab496a71` | pull_request | Huawei MIT source headers | completed:success |
 | 35120454220 | `efa9ab496a71` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 35120454201 | `efa9ab496a71` | pull_request | Repository quality | in_progress:- |
 | 35120454193 | `efa9ab496a71` | pull_request | Fault assurance | in_progress:- |
 | 35120454181 | `efa9ab496a71` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35120454132 | `efa9ab496a71` | pull_request | Formal assurance | in_progress:- |
-| 35120454055 | `efa9ab496a71` | pull_request | Rust verification | in_progress:- |
+| 35120454055 | `efa9ab496a71` | pull_request | Rust verification | completed:failure |
 | 35116640211 | `badd246f50a8` | pull_request | Repository quality | completed:failure |
 | 35116640046 | `badd246f50a8` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35116640038 | `badd246f50a8` | pull_request | Emulated aarch64 portability | completed:success |
