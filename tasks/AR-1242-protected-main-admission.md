@@ -9,18 +9,18 @@
   ],
   "id": "AR-1242",
   "next_action": "Run fresh PR191 CI for rebased 9db468c and independently review; settings apply still needs admin authority.",
-  "observed_branch": "fix/protected-main-admission",
+  "observed_branch": "DETACHED",
   "observed_dirty": 0,
-  "observed_head": "9db468cad9fc69bb05100842b49469c8ca3e988c",
+  "observed_head": "eb0ad13f8b6e64b6ee46b92602a631ba0c96f9f4",
   "owner": "asb_ar1242_merge_admission",
   "plan": "../plans/AR-1242.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent protected-main admission from creating unsigned GitHub merge commits.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Enforce signed protected-main admission",
-  "updated_at": "2026-09-16T08:55:45+00:00",
+  "updated_at": "2026-09-16T09:07:58+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-admission"
 }
 ---
