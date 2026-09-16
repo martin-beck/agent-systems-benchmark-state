@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute bundled MockAgents transport in isolation.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Execute bundled MockAgents transport in isolation",
-  "updated_at": "2026-09-16T14:02:34+00:00",
+  "updated_at": "2026-09-16T14:02:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1256"
 }
 ---
@@ -51,3 +51,6 @@ Keep bundles, images, QEMU artifacts, caches, and evidence under `/srv/data/proj
 
 - 2026-09-16T14:02:34+00:00: Recorded command exit 0; command argv SHA-256
   6b9804ca2babfecd9141266220f496ee9eec131184efeda9e7bb225d452c63fe.
+
+- 2026-09-16T14:02:56+00:00: Recorded command exit 255; command argv SHA-256
+  fa0a4fdbc25ece7f62f890634d0af1222fd8aa578ff5bafb07439f441a1ad07f.
