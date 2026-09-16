@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**300 ARs tracked** across 6 active status categories.
+**300 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 7 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 6 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 29 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -365,7 +365,7 @@ flowchart LR
         AR_1269["AR-1269 - Blocked"]:::status_blocked
         AR_1270["AR-1270 - Blocked"]:::status_blocked
         AR_1271["AR-1271 - Blocked"]:::status_blocked
-        AR_1272["AR-1272 - Open"]:::status_open
+        AR_1272["AR-1272 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1522,7 +1522,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (7)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1272](../tasks/AR-1272-authenticated-cassette-backend.md): Authenticated immutable cassette backend | asb_ar1024_lifecycle_router | Bind immutable cassette content to a runtime-authenticated replay backend handle. | Promote after dependency verification; implement runtime-authenticated immutable cassette backend content binding and real supervised replay. |
+
+### Open (6)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1531,7 +1537,6 @@ flowchart LR
 | P0 | [AR-1042](../tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Unclaimed | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. |
 | P0 | [AR-1044](../tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Unclaimed | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. |
 | P0 | [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | Unclaimed | Define the strict-replay CLI consumer contract. | Await a runtime-owned successor that supplies independently attested namespace capability plus supervised SandboxLaunchInput/ResourceLease. Then wire replay_plan through StrictReplayLaunchBridge::spawn and add real request/response, egress-denial, cancellation/restart/cleanup and no-fallback tests. Preserve PR #197 head 7d9c2ee and its green CI; do not fabricate namespace readiness in CLI. |
-| P0 | [AR-1272](../tasks/AR-1272-authenticated-cassette-backend.md): Authenticated immutable cassette backend | Unclaimed | Bind immutable cassette content to a runtime-authenticated replay backend handle. | Promote after dependency verification; implement runtime-authenticated immutable cassette backend content binding and real supervised replay. |
 | P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Unclaimed | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Coordinator must create and link the successor AR for certificate issuance/chain validation and trusted route/ancestor authority; preserve this exact clean head and do not publish/close as fully complete until successor scope and bounded acceptance are recorded. |
 
 ### Blocked (29)
@@ -1649,4 +1654,3 @@ flowchart LR
 | P0 | [AR-0508](../tasks/AR-0508-replay-aider.md): Qualify aider replay | Unclaimed | Qualify replay conformance for aider. | Await independent immutable review of exact ec0a2930690c108987b4a867632316651282cc97; if approved, publish with an exact absent-ref lease, open focused PR, and require exact-head CI before integration. |
 | P0 | [AR-0509](../tasks/AR-0509-replay-codex.md): Qualify Codex replay | Unclaimed | Qualify replay conformance for Codex. | Monitor PR #45 exact d086fec checks; investigate any failure, then integrate only after every required workflow is green. |
 | P0 | [AR-0510](../tasks/AR-0510-replay-gemini.md): Qualify Gemini replay | Unclaimed | Qualify replay conformance for Gemini. | Independent immutable review of one-path timing repair 1366ad3bd03fe8806e80223a55989e34fd72245a before publication. |
-| P0 | [AR-0511](../tasks/AR-0511-replay-qwen.md): Qualify Qwen Code replay | Unclaimed | Qualify replay conformance for Qwen Code. | Release done after exact-main merge 1963364e75eec8cfcde0cfd0eaca672df12a2968 passed local post-merge gates and hosted runs 34156966254 quality, 34156966248 formal, 34156966219 Rust, and 34156966214 fault. |

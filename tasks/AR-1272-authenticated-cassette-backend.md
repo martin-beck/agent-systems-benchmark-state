@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1272-authenticated-cassette-backend",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T01:20:45+00:00",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1272-authenticated-cassette-backend",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1272.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Bind immutable cassette content to a runtime-authenticated replay backend handle.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Authenticated immutable cassette backend",
-  "updated_at": "2026-09-16T23:20:28+00:00",
+  "updated_at": "2026-09-16T23:20:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1272-cassette-backend"
 }
 ---
@@ -33,3 +33,5 @@ paths as authority.
 
 - 2026-09-16T23:20:28+00:00: Dependencies are done; AR-1271 proves immutable cassette content must
   be runtime-authenticated before real replay execution.
+
+- 2026-09-16T23:20:45+00:00: Claimed by asb_ar1024_lifecycle_router.
