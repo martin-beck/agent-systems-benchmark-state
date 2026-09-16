@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| P1 | [AR-0204](../tasks/AR-0204-capacity-sweeps.md): Implement capacity sweeps and arrival scheduling | Unclaimed | Run repeated closed-loop and open-loop experiments with bounded concurrency. | Await coordinator postmerge local validation/state doctor confirmation before releasing AR-0204. |
 | P1 | [AR-0301](../tasks/AR-0301-agent-opencode.md): Implement OpenCode client adapter | Unclaimed | Run pinned OpenCode through its structured supported interfaces. | Await exact PR #13 head dfb0d54 hosted CI and immutable independent review; integrate only if both are green. |
 | P1 | [AR-0302](../tasks/AR-0302-agent-opendesk.md): Implement OpenDesk client adapter | Unclaimed | Support the bitclub OpenDesk CLI with its own dialect and compatibility record. | Publish approved 8eb99d3, require exact-head CI and immutable review, integrate only signed+DCO green head, then run post-merge verification. |
 | P1 | [AR-0303](../tasks/AR-0303-agent-aider.md): Implement aider client adapter | Unclaimed | Support unattended aider editing with bounded input, output and repository changes. | Publish immutable da81ead6932c5d5469ca57fc981646fa980c2780, open focused PR, and require exact-head CI before integration. |

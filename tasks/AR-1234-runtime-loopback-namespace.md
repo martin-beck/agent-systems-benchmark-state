@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1234",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T07:24:24+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1100",
     "AR-1231"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1234",
   "observed_dirty": 0,
   "observed_head": "36a458020483c1b4aa204e491a936f00acd5706d",
-  "owner": "asb_ar1232_sandbox_supervision",
+  "owner": "",
   "plan": "../plans/AR-1234.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide an approved runtime-owned loopback-only sandbox namespace capability.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Runtime-owned loopback namespace capability",
-  "updated_at": "2026-09-16T05:27:47+00:00",
+  "updated_at": "2026-09-16T05:28:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1234"
 }
 ---
@@ -69,3 +69,9 @@
   Operation not permitted. Therefore this host cannot safely provision a loopback-only namespace.
   NetworkPolicy::Deny remains intact; LoopbackOnly is typed and fail-closed at signed head 36a4580.
   Required blocker is an approved runtime-owned privileged/helper seam, not a test waiver.
+
+- 2026-09-16T05:28:39+00:00: Released blocked and ownerless. Exact audit: pinned
+  bwrap/unshare/nsenter/systemd-run exist, but unshare -n true fails Operation not permitted. No
+  approved runtime-owned loopback helper exists in ASB; host sharing and ambient privileged setup
+  are prohibited. Preserve signed product head 36a4580 and typed LoopbackOnly fail-closed behavior.
+  Reassign only after an approved helper/capability is available.
