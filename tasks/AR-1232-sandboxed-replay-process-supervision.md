@@ -9,7 +9,7 @@
     "AR-1230"
   ],
   "id": "AR-1232",
-  "next_action": "Native executor-service attempt is blocked by runtime policy: SandboxSpec accepts only NetworkPolicy::Deny, so loopback cassette listener is unreachable (child curl exit 7). Keep strict replay native harness 7/7 and 15/15 executor unit gates green; require approved loopback-only sandbox transport seam before further implementation/re-review.",
+  "next_action": "Wait for approved, merged AR-1234 runtime-owned loopback namespace capability (and AR-1233 LoopbackOnly policy contract) before child HTTP cassette integration. Their current commits are feature-branch-only and both tasks remain blocked; do not reuse unmerged code. Then bind ReplayRelayHandoff into the reviewed launch contract and rerun child success, provider-egress denial, stale/duplicate, timeout/crash cleanup, and unrelated-process tests.",
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "7613c678c71806dd7f3aa3f7cc521dd9a8256e3e",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 444,
+  "task_revision": 445,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T06:46:12+00:00",
+  "updated_at": "2026-09-16T06:46:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -1233,3 +1233,8 @@
   Update AR-1232 next action to name the exact prerequisite; do not modify either dependency.
 
 - 2026-09-16T06:46:12+00:00: Claimed by asb_ar1232_worker.
+
+- 2026-09-16T06:46:30+00:00: Read-only audit confirms AR-1233 and AR-1234 are not merged or approved
+  for consumption: each task is blocked, and each observed capability commit exists only on its
+  feature branch. AR-1234 is the direct runtime prerequisite; AR-1233 supplies the policy contract.
+  AR-1232 product worktree remains clean; no dependency files were touched.
