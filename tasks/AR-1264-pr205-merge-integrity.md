@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover signed protected-main integration after PR #205.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Recover signed integration after PR #205",
-  "updated_at": "2026-09-16T21:49:01+00:00",
+  "updated_at": "2026-09-16T21:57:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1264-merge-integrity"
 }
 ---
@@ -72,3 +72,6 @@ main gates.
   539a9298062027902288aa46244ba060d63d5637 with actual newline DCO trailer, unchanged tree
   1d0a5577da8cd2d6199d20980d951c468205c934, and force-with-lease pushed. PR #206 now exact head
   539a929; prior checks invalidated and must rerun fresh.
+
+- 2026-09-16T21:57:50+00:00: Recorded command exit 1; command argv SHA-256
+  ab21c5c875a5808752333360d04a492df8552ed36f8c4f8de31b98e14c31b307.
