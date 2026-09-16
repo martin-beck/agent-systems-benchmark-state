@@ -3,7 +3,7 @@
   "branch": "feature/ar-1232",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1231"],
+  "depends_on": ["AR-0505", "AR-1100", "AR-1230"],
   "id": "AR-1232",
   "next_action": "Implement the approved SandboxBackend process-supervision seam for strict replay, including real child egress denial and bounded cancellation/restart/crash recovery tests.",
   "observed_branch": "",
