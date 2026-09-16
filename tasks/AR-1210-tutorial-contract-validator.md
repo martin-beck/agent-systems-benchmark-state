@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define offline tutorial steps and validate them against the ASB CLI grammar.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Tutorial contract and syntax validator",
-  "updated_at": "2026-09-16T03:43:08+00:00",
+  "updated_at": "2026-09-16T03:43:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1210"
 }
 ---
@@ -59,3 +59,6 @@ be required.
   7c730eec3ea71bd24ffc5a9255bf7f542481bf601dba6c72bed6e00f6c2fab3c.
 
 - 2026-09-16T03:43:08+00:00: Heartbeat by asb_ar1210_tutorial_contract.
+
+- 2026-09-16T03:43:10+00:00: Recorded command exit 0; command argv SHA-256
+  c8b16bd630d77ba4a5ae696c249062e263bfa336ea7a8960855f986dc78bfc63.
