@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1270",
-  "next_action": "Bind RuntimeCassetteService into CLI replay and add real cassette request/response plus egress/cancel/restart/timeout/crash cleanup/no-fallback fixtures.",
+  "next_action": "Expose a runtime-owned cassette operation/response handle and connect it to actual replay dispatch; add supervised lifecycle/egress/no-fallback fixtures before full gates.",
   "observed_branch": "feature/ar-1270-runtime-cassette-handle",
   "observed_dirty": 0,
   "observed_head": "4828b400eb8f8886ba47c56fcce7e56c677943f0",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-issued cassette-service handle for supervised strict replay.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Runtime-issued cassette-service handle",
-  "updated_at": "2026-09-16T23:10:58+00:00",
+  "updated_at": "2026-09-16T23:11:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1270-runtime-cassette-handle"
 }
 ---
@@ -91,3 +91,9 @@ the CLI.
 
 - 2026-09-16T23:10:51+00:00: Recorded command exit 0; command argv SHA-256
   ab40e65e9990c93dc04a373b8df38c8bcd34f53867990d956b6ccb82877d40d6.
+
+- 2026-09-16T23:11:13+00:00: Signed checkpoint 4828b40 adds CLI bind_runtime_service, consuming
+  RuntimeCassetteService once and matching runtime cassette/route identities before dispatch. CLI
+  suite passes 71/71; runtime suite 40/40; fmt pass; product tree clean. Remaining acceptance is
+  actual service request/response operation and supervised
+  lifecycle/egress/cancel/restart/timeout/crash cleanup/no-fallback fixtures.
