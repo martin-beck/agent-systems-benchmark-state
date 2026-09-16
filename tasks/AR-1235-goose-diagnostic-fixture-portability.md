@@ -9,7 +9,7 @@
   "id": "AR-1235",
   "next_action": "Cross-architecture reproduction completed under pinned-style qemu-aarch64 with Ubuntu arm64 sysroot: cargo +1.93.0 test --offline --locked --manifest-path /srv/data/projects/agent-systems-benchmark-ar-1235/Cargo.toml --target aarch64-unknown-linux-gnu -p asb-agents --lib goose::tests::diagnostic_and_symlink_fail_closed -- --exact --nocapture passed 1/1. The earlier exit 101 was a command setup error: cargo was run from state repo without --manifest-path and could not find Cargo.toml; corrected command passed. Compare against postmerge run 35060286408 remains necessary before any fixture change; no source fix justified by current reproduction.",
   "observed_branch": "feature/ar-1235-goose-fixture-portability",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "fd7daa43549edd67b60076aa6b1eee333061b438",
   "owner": "asb_ar1235_goose_portability",
   "plan": "../plans/AR-1235.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair Goose diagnostic fixture portability under emulated AArch64.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Portable Goose diagnostic fixture",
-  "updated_at": "2026-09-16T06:01:43+00:00",
+  "updated_at": "2026-09-16T06:01:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1235"
 }
 ---
