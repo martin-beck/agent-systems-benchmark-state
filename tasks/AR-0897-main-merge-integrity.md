@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 185,
+  "task_revision": 186,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-16T08:01:49+00:00",
+  "updated_at": "2026-09-16T08:02:00+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -592,3 +592,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T08:01:42+00:00: Recorded command exit 0; command argv SHA-256
   65d37b9a0d770a6f46da1076b1d706f388ad916a6048b60e2169adf79816a51b.
+
+- 2026-09-16T08:02:00+00:00: Recorded command exit 0; command argv SHA-256
+  30b36db37e24e3b070866e5aa57642196906e7a34a730c0ae51f0f0c4e4668e7.
