@@ -2,21 +2,21 @@
 {
   "branch": "feature/ar-1235-goose-fixture-portability",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T07:47:05+00:00",
   "depends_on": [
     "AR-0003"
   ],
   "id": "AR-1235",
   "next_action": "Planned from post-merge AArch64 run 35060286408. Reproduce exit 127 in diagnostic_and_symlink_fail_closed, classify fixture/runtime cause, then add a deterministic portable fixture without weakening fail-closed assertions.",
-  "owner": "",
+  "owner": "asb_ar1235_goose_portability",
   "plan": "../plans/AR-1235.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair Goose diagnostic fixture portability under emulated AArch64.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Portable Goose diagnostic fixture",
-  "updated_at": "2026-09-16T05:47:02+00:00",
+  "updated_at": "2026-09-16T05:47:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1235"
 }
 ---
@@ -29,3 +29,5 @@ its intended diagnostic error assertion. Preserve the failure and repair the fix
 
 - 2026-09-16T05:47:02+00:00: AR-0003 complete; post-merge AArch64 failure is isolated to Goose test
   fixture execution, with disjoint test-only scope
+
+- 2026-09-16T05:47:05+00:00: Claimed by asb_ar1235_goose_portability.
