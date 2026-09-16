@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate strict replay with runtime-owned attestation and supervised sandbox execution.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Runtime-owned strict-replay integration",
-  "updated_at": "2026-09-16T20:37:41+00:00",
+  "updated_at": "2026-09-16T20:38:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1260-runtime"
 }
 ---
@@ -96,3 +96,6 @@ missing, stale, duplicated, or mismatched.
 - 2026-09-16T20:37:41+00:00: Signed 9e4a1c0 adds a direct no-fallback test: spawn_runtime_replay
   rejects a missing authenticated relay before child creation, with deny policy and runtime launch
   inputs otherwise valid. Focused test passes 1/1; cargo fmt passes. Product worktree is clean.
+
+- 2026-09-16T20:38:02+00:00: Recorded command exit 0; command argv SHA-256
+  3a905289a80a52faed087e37b801aaabb8129ad2f3b123eb6c22d2468ff04e5d.
