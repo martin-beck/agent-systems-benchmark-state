@@ -9,7 +9,7 @@
     "AR-1230"
   ],
   "id": "AR-1232",
-  "next_action": "Add restart/partial/crash/stale/duplicate and descendant-egress harness evidence, then rerun full locked workspace gates.",
+  "next_action": "Full locked workspace gate passed on current branch; run independent exact-head review of lifecycle/replay changes and prepare PR after descendant egress evidence is confirmed or explicitly bounded.",
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "60a59ebb31381aca96735b3595627a8e82ed8193",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 249,
+  "task_revision": 250,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T03:55:52+00:00",
+  "updated_at": "2026-09-16T03:56:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -651,3 +651,9 @@
 
 - 2026-09-16T03:55:52+00:00: Recorded command exit 0; command argv SHA-256
   a3cf4bf790c54f39868343c859fba60c08b1613dbbf63a14b28602ab2a3a33c6.
+
+- 2026-09-16T03:56:09+00:00: Full cargo test --locked --offline --workspace passed: all workspace
+  unit, integration, and doc tests green (native capability-dependent tests remained explicit
+  skips). Direct strict replay sandbox harness currently passes 5/5 including loopback launch,
+  timeout, cancellation/reaping, command mismatch, and direct nonzero child exit. Product tree is
+  clean; no descendant provider egress was enabled by the denied-network sandbox.
