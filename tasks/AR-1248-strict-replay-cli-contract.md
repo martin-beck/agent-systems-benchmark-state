@@ -10,17 +10,17 @@
   "id": "AR-1248",
   "next_action": "Run contract consistency, focused CLI replay-contract/schema tests, full locked workspace, policy/privacy/signature gates; then exact-head review and PR.",
   "observed_branch": "feature/ar-1248-strict-replay-cli-contract",
-  "observed_dirty": 1,
-  "observed_head": "37a9c2b48765bcf20d74d2ea4cabbb749142c0eb",
+  "observed_dirty": 0,
+  "observed_head": "eac5232d94d61324ef03fa3a67b15ac9cccb57e2",
   "owner": "asb_ar1232_lifecycle_router",
   "plan": "../plans/AR-1248.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T10:44:01+00:00",
+  "updated_at": "2026-09-16T10:44:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
