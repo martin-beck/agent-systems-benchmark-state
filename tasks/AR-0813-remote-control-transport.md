@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 272,
+  "task_revision": 273,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T16:13:25+00:00",
+  "updated_at": "2026-09-16T16:13:56+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -840,3 +840,6 @@ Implementation has not started. Read the linked plan before claiming.
   duplicate), rcgen 0.14.7 aws_lc_rs, time 0.3.47, and serde 1.0.220 lock-compatible refresh;
   adapted rcgen signing-key API. Focused TLS and workspace clippy/tests pass. Local cargo-deny is
   unavailable (cargo reports no deny subcommand); CI remains authoritative for audit/deny.
+
+- 2026-09-16T16:13:56+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
