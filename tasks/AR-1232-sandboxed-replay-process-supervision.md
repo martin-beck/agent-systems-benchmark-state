@@ -9,7 +9,7 @@
     "AR-1230"
   ],
   "id": "AR-1232",
-  "next_action": "Review remediation committed and pushed at 3172028. Native strict replay 6/6 passes under explicit ASB_TEST_ROOT with --ignored; ordinary full locked offline workspace passes without native-root contamination; repository policy and signature policy pass. Request independent exact-head re-review.",
+  "next_action": "Review blocks curl nonzero as non-causal and lacks native StrictReplayExecutor authenticated child lifecycle. Add deterministic owned loopback listener/child request fixture and executor lifecycle integration; retain explicit native prerequisite gate.",
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "317202820c8be8fc1c970898e110baf5122bbb7b",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 332,
+  "task_revision": 333,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T04:37:18+00:00",
+  "updated_at": "2026-09-16T04:39:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -875,3 +875,9 @@
 - 2026-09-16T04:36:59+00:00: Heartbeat by asb_ar1232_sandbox_supervision.
 
 - 2026-09-16T04:37:18+00:00: Heartbeat by asb_ar1232_sandbox_supervision.
+
+- 2026-09-16T04:39:06+00:00: Independent re-review blocker acknowledged: current curl TEST-NET
+  nonzero cannot prove provider egress denial causally; native harness exercises
+  StrictReplaySandboxLaunch but not StrictReplayExecutor service lifecycle or owned endpoint
+  binding. Next implementation is a deterministic loopback listener fixture with authenticated
+  route/endpoint observation, followed by focused native tests.
