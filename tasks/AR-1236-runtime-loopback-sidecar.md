@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-owned private-namespace loopback sidecar capability.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Runtime-owned loopback sidecar capability",
-  "updated_at": "2026-09-16T07:27:33+00:00",
+  "updated_at": "2026-09-16T07:29:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1236"
 }
 ---
@@ -68,3 +68,6 @@ privacy, policy, native, signature, and exact-head gates.
   sidecar handoff contract.
 
 - 2026-09-16T07:27:33+00:00: Claimed by asb_ar1236_handoff_worker.
+
+- 2026-09-16T07:29:28+00:00: Recorded command exit 0; command argv SHA-256
+  b43816f0de85ffcf85a1cddd18363fcba7e4a2333901d6fb1fd1c9927b2df210.
