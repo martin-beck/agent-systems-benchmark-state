@@ -11,16 +11,16 @@
   "next_action": "Materialize and verify a signed supervisor/sidecar bundle fixture, then run the native Bubblewrap isolation matrix.",
   "observed_branch": "feature/ar-1240-native-signed-bundle-fixture",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "e4c2e56c076ad9648ded2dbdd79cb2431cc7d33f",
   "owner": "asb_ar1240_native_fixture_worker",
   "plan": "../plans/AR-1240.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add native signed-bundle fixture and end-to-end supervisor isolation tests.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Native signed-bundle supervisor fixture",
-  "updated_at": "2026-09-16T08:31:09+00:00",
+  "updated_at": "2026-09-16T08:31:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1240"
 }
 ---
