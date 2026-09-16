@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0813",
-  "next_action": "Implement actual idle/keepalive/rate-limit/drain enforcement in listener/session dispatch and add reviewed runner-continuation plus network fault evidence; repair unrelated asb-metrics mismatch, rerun full workspace gates, then request publication review.",
+  "next_action": "Fix RemoteListener::accept permit ordering: accept TcpStream before acquiring active connection permit (or otherwise ensure blocked accept cannot consume capacity/drain); add regression test for idle listener drain and concurrent accept capacity. Then rerun full locked workspace gates, independent review, and exact-head CI.",
   "observed_branch": "feature/remote-control-transport",
   "observed_dirty": 0,
   "observed_head": "f3153d75fec26f258d97f6d85a3496d9f507f899",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 187,
+  "task_revision": 188,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T15:18:56+00:00",
+  "updated_at": "2026-09-16T15:19:09+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -554,3 +554,17 @@ Implementation has not started. Read the linked plan before claiming.
   address/partition evidence remains transport-level abstraction, not netem.
 
 - 2026-09-16T15:18:56+00:00: Heartbeat by asb_ar0813_remote_transport.
+
+- 2026-09-16T15:19:09+00:00: Independent review of rebased cumulative signed/DCO head
+  f3153d75fec26f258d97f6d85a3496d9f507f899: plan coverage is substantially improved with listener
+  admission, request/rate bounds, idle socket timeouts, bounded drain_until, EventWindow resume,
+  deterministic drop/reorder/partition fixture, reconnect/address tests,
+  malformed/truncated/oversized/slow/ALPN tests. Full cargo test --locked --workspace and clippy are
+  durably reported green on this branch; tree clean. Concrete correctness blocker:
+  RemoteListener::accept acquires RemoteConnectionPermit at transport.rs:182-186 before blocking
+  TcpListener::accept at line 187. An idle accept call therefore consumes one active connection slot
+  indefinitely; a second accept is rejected at max capacity, and drain_until can time out despite no
+  accepted connection. Move permit acquisition after accept or add an admission design that cannot
+  hold capacity while blocked, with regression coverage. Additionally, network fault evidence
+  remains deterministic transport-level abstraction (not kernel/netem); this is acceptable only if
+  publication accurately limits claims. No PR/publication approval.
