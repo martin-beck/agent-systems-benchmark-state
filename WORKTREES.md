@@ -29,8 +29,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1228-auth-backends-probes` | `feature/ar-1228-auth-backends-probes` | `2d716c8cac94` | 0 | behind 52, ahead 0 |
 | `agent-systems-benchmark-ar-1229-auth-application-integration` | `feature/ar-1229-auth-application-integration` | `b33d6da59ba9` | 0 | behind 32, ahead 0 |
 | `agent-systems-benchmark-ar-1230-authenticated-provider-request-seam` | `feature/ar-1230-authenticated-provider-request-seam` | `3d0349af1a56` | 0 | behind 68, ahead 0 |
-| `agent-systems-benchmark-ar-1231` | `feature/ar-1231` | `a83ba8e278e4` | 2 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-agents/src/lib.rs`, `crates/asb-agents/src/strict_replay.rs` |
+| `agent-systems-benchmark-ar-1231` | `feature/ar-1231` | `a83ba8e278e4` | 3 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-agents/src/lib.rs`, `crates/asb-agents/schema/strict-replay-launch-v1.schema.json`, `crates/asb-agents/src/strict_replay.rs` |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 326, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 429, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 323, ahead 0 |
