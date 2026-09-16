@@ -22,20 +22,21 @@ Generated from local Git and GitHub. Do not edit.
 | #151 | `dependabot/cargo/serde-1.0.229@c926edfde377` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #197 | `feature/ar-1248-strict-replay-cli-contract@cebe8efc19a1` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): define strict offline replay consumer contract |
+| #202 | `feature/remote-control-transport@badd246f50a8` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | asb-control: configure TLS keepalive on both peers |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35102725105 | `a0befc0ff247` | push | Rust verification | completed:success |
-| 35102725050 | `a0befc0ff247` | push | Hosted portability and native qualification | completed:success |
-| 35102725038 | `a0befc0ff247` | push | Fault assurance | completed:success |
-| 35102725019 | `a0befc0ff247` | push | Formal assurance | completed:success |
-| 35102725004 | `a0befc0ff247` | push | Repository quality | completed:success |
-| 35102724977 | `a0befc0ff247` | push | Huawei MIT source headers | completed:success |
-| 35102724959 | `a0befc0ff247` | push | Emulated aarch64 portability | completed:success |
-| 35101828598 | `b7797d05c1a1` | pull_request | Fault assurance | completed:success |
-| 35101828550 | `b7797d05c1a1` | pull_request | Emulated aarch64 portability | completed:success |
-| 35101828439 | `b7797d05c1a1` | pull_request | Formal assurance | completed:success |
-| 35101828423 | `b7797d05c1a1` | pull_request | Rust verification | completed:success |
-| 35101828369 | `b7797d05c1a1` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 35116640211 | `badd246f50a8` | pull_request | Repository quality | completed:failure |
+| 35116640046 | `badd246f50a8` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 35116640038 | `badd246f50a8` | pull_request | Emulated aarch64 portability | completed:success |
+| 35116639985 | `badd246f50a8` | pull_request | Huawei MIT source headers | completed:success |
+| 35116639903 | `badd246f50a8` | pull_request | Hosted portability and native qualification | completed:success |
+| 35116639870 | `badd246f50a8` | pull_request | Fault assurance | completed:success |
+| 35116639866 | `badd246f50a8` | pull_request | Formal assurance | completed:success |
+| 35116639846 | `badd246f50a8` | pull_request | Rust verification | completed:success |
+| 35116327905 | `7b4168ff40ca` | pull_request | Formal assurance | completed:cancelled |
+| 35116327899 | `7b4168ff40ca` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 35116327865 | `7b4168ff40ca` | pull_request | Fault assurance | completed:success |
+| 35116327815 | `7b4168ff40ca` | pull_request | Emulated aarch64 portability | completed:cancelled |

@@ -11,17 +11,17 @@
   "id": "AR-0813",
   "next_action": "Await GitHub API recovery; local policy and contract gates pass, then rerun PR202 Policy job at exact badd246 and assess terminal checks.",
   "observed_branch": "feature/remote-control-transport",
-  "observed_dirty": 0,
-  "observed_head": "52ee2b13d809b0147f54f4f370face7fb14807b0",
+  "observed_dirty": 9,
+  "observed_head": "badd246f50a893db8fd285281119cd11108da328",
   "owner": "asb_ar0813_remote_transport",
   "plan": "../plans/AR-0813.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 252,
+  "task_revision": 253,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T16:06:04+00:00",
+  "updated_at": "2026-09-16T16:06:11+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
