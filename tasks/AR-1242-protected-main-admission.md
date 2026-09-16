@@ -2,7 +2,7 @@
 {
   "branch": "fix/protected-main-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T09:25:36+00:00",
+  "claim_expires": "2026-09-16T09:39:23+00:00",
   "depends_on": [
     "AR-0003",
     "AR-0897"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent protected-main admission from creating unsigned GitHub merge commits.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Enforce signed protected-main admission",
-  "updated_at": "2026-09-16T09:07:58+00:00",
+  "updated_at": "2026-09-16T09:09:23+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-admission"
 }
 ---
@@ -87,3 +87,5 @@ It must not weaken native, formal, privacy, signature, DCO, exact-tree, or post-
   exact signed+DCO control commit onto current main; new head
   9db468cad9fc69bb05100842b49469c8ca3e988c, clean and force-with-lease pushed. Failure classified as
   stale-base infrastructure, not fixture/product behavior.
+
+- 2026-09-16T09:09:23+00:00: Heartbeat by asb_ar1242_merge_admission.
