@@ -9,7 +9,7 @@
   "id": "AR-0814",
   "next_action": "Add endpoint dispatch/admin context and regenerate v1.7 schemas/conformance fixtures; run full gates.",
   "observed_branch": "feature/remote-enrollment-authz",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "f4e9fc1f08a2775545d9350ddf387b1d315dfe25",
   "owner": "asb_ar0814_enrollment_authz",
   "plan": "../plans/AR-0814.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 186,
+  "task_revision": 187,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T18:36:25+00:00",
+  "updated_at": "2026-09-16T18:36:33+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
