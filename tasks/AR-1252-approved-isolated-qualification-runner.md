@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1252.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 87,
+  "task_revision": 88,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:58:41+00:00",
+  "updated_at": "2026-09-16T12:51:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -263,3 +263,6 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
   cleanup or descendant-process evidence, and executable identity is version-only rather than
   independently pinned runtime identity. AR-1251 is the existing successor/consumer task and must
   implement the transport sandbox fixture; do not weaken gates or claim AR-1252 complete.
+
+- 2026-09-16T12:51:09+00:00: Cached Python runtime is an immutable local digest compatible with the
+  runner plan; add an explicit reviewed image allowlist without mutable tags.
