@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1150](tasks/AR-1150.md): Recording campaigns | Record response cassettes. | Signed-DCO commit 935c3dc pushed. Focused replay tests pass including restart reconciliation and privacy fixtures. Run full fmt, clippy, locked offline workspace tests and policy/privacy checks, then create PR. | asb_ar1150_recording |
+| P0 | [AR-1150](tasks/AR-1150.md): Recording campaigns | Record response cassettes. | Full local gates passed on clean signed-DCO head 935c3dc: fmt check, workspace clippy -D warnings, and locked offline workspace tests. Create PR from this pushed branch, request independent exact-head review, then monitor CI. | asb_ar1150_recording |
 
 ## Open
 
