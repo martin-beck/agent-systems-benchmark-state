@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1130](tasks/AR-1130.md): Configured provider launches | Launch agents with configured providers. | Exact clean head cf2903f is pushed. Run full fmt/clippy/locked offline workspace gates, then create PR and obtain independent exact-head review. Prior focused CLI failure was provenance fixture drift after formatting; refreshed cli_source_sha256 and workflow transcript now passes. | asb_ar1130_launch |
+| P0 | [AR-1130](tasks/AR-1130.md): Configured provider launches | Launch agents with configured providers. | Full local gates passed on clean exact head cf2903f: fmt check, workspace clippy -D warnings, and locked offline workspace tests. Create PR from this pushed signed-DCO head, request independent exact-head review, then monitor required CI. | asb_ar1130_launch |
 
 ## Open
 
