@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Integrate persisted identity into pairing and recovery ControlCall; implement safe non-argv code handling and remote audit binding. | asb_ar0814_enrollment_authz |
+| P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Wire BreakGlassParams into v1.7 ControlCall/endpoint/CLI, regenerate schemas, and add admin-generation-audit tests. | asb_ar0814_enrollment_authz |
 
 ## Open
 

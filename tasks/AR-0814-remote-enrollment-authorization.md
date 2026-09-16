@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Integrate persisted identity into pairing and recovery ControlCall; implement safe non-argv code handling and remote audit binding.",
+  "next_action": "Wire BreakGlassParams into v1.7 ControlCall/endpoint/CLI, regenerate schemas, and add admin-generation-audit tests.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "53eb37804229bee13bac614c792f89dbf35c99e8",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 168,
+  "task_revision": 169,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T18:28:33+00:00",
+  "updated_at": "2026-09-16T18:28:50+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -455,3 +455,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T18:28:26+00:00: Recorded command exit 0; command argv SHA-256
   8d9d40e34b1286b40be90866ab60082b4ba1c66250b262a05457dc5330f33a59.
+
+- 2026-09-16T18:28:50+00:00: Signed+DCO 53eb378 defines additive CONTROL_BREAK_GLASS_V1 (1.7) and
+  closed BreakGlassParams with principal/request digests, generation, idempotency. Existing
+  asb-control lib suite passes 54/54; no legacy wire enum changed yet.
