@@ -2,7 +2,7 @@
 {
   "branch": "test/mockagents-executable-qualification",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T08:04:12+00:00",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -12,15 +12,15 @@
   "observed_branch": "test/mockagents-executable-qualification",
   "observed_dirty": 0,
   "observed_head": "3f1de4106adf9ad6c34759638d70e9001709ab0a",
-  "owner": "",
+  "owner": "asb_ar0896_qualification",
   "plan": "../plans/AR-0896.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-16T06:04:07+00:00",
+  "updated_at": "2026-09-16T06:04:12+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -152,3 +152,5 @@ synthetic fixture for black-box executable evidence.
 
 - 2026-09-16T06:04:07+00:00: Resume dependency-ready qualification to rerun workflow 34339927858 on
   unchanged main and classify the prior test-isolation failure.
+
+- 2026-09-16T06:04:12+00:00: Claimed by asb_ar0896_qualification.

@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 10 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 9 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 10 |
 | **Planned** | Defined work awaiting promotion or dependencies | 67 |
 | **Future** | Deferred roadmap work | 1 |
@@ -206,7 +206,7 @@ flowchart LR
         AR_0893["AR-0893 - Planned"]:::status_planned
         AR_0894["AR-0894 - Planned"]:::status_planned
         AR_0895["AR-0895 - Done"]:::status_done
-        AR_0896["AR-0896 - Open"]:::status_open
+        AR_0896["AR-0896 - In progress"]:::status_in_progress
         AR_0897["AR-0897 - In progress"]:::status_in_progress
         AR_0898["AR-0898 - Planned"]:::status_planned
         AR_0899["AR-0899 - Planned"]:::status_planned
@@ -1366,13 +1366,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0897](../tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | asb_ar0897_merge_integrity | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Hold PR 126 at bd6f450; after AR-0877 and AR-0909 integrate, rebase once and require fresh all-green exact-head CI before merge. |
+| P1 | [AR-0896](../tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | asb_ar0896_qualification | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun failed Repository quality workflow 34339927858 on unchanged main; if failure repeats, isolate and repair test-state ownership before any feature work. |
 
-### Open (10)
+### Open (9)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1384,7 +1385,6 @@ flowchart LR
 | P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | Unclaimed | Replay strictly without providers. | Design and implement the missing executable strict-replay run-path seam: pass exact cassette route/service into agent adapter launch, deny provider egress at process boundary, and add campaign-level cancellation/restart/no-fallback tests. Current CLI replay only decodes/indexes/selects and emits metadata. |
 | P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | Repair/rebase the fail-closed TLA provenance pin, then rerun PR #119 exact-head CI; do not merge. |
 | P1 | [AR-0859](../tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Unclaimed | Qualify pinned OpenJiuwen live execution. | Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI. |
-| P1 | [AR-0896](../tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Unclaimed | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun failed Repository quality workflow 34339927858 on unchanged main; if failure repeats, isolate and repair test-state ownership before any feature work. |
 | P1 | [AR-0908](../tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | Unclaimed | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Hold PR #125 unchanged; shared formal asset and native-runner pin owners must repair their gates before a fresh exact-head run. |
 
 ### Blocked (10)
