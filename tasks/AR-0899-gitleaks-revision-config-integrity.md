@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve GitHub issue 118 by making local and CI Gitleaks scans deterministic and config changes fail closed.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Align and harden Gitleaks execution",
-  "updated_at": "2026-09-16T11:39:47+00:00",
+  "updated_at": "2026-09-16T11:40:39+00:00",
   "worktree_key": "agent-systems-benchmark-gitleaks-revision-config-integrity"
 }
 ---
@@ -73,3 +73,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-16T11:39:47+00:00: Recorded failures: first failure suite invocation used nonexistent
   quality-tools/actionlint path; second used incomplete quality-tools path missing shellcheck.
   Correct complete analyzer directory is /srv/data/projects/asb-ar0898-tools/bin.
+
+- 2026-09-16T11:40:39+00:00: Recorded command exit 0; command argv SHA-256
+  fece64c41093b54b8a83a0b87192a959b6a5ebf417974d306997d2d30b622582.
