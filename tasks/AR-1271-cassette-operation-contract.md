@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1271",
-  "next_action": "Implement runtime one-shot operation handle over CassetteRequestV1/ResponseV1 and CLI adapter; add real request/response plus mismatch/no-fallback fixtures.",
+  "next_action": "Add CLI adapter over RuntimeCassetteOperation with exact handle binding and real replay service request/response fixtures; then lifecycle/egress/no-fallback gates.",
   "observed_branch": "feature/ar-1271-cassette-operation-contract",
   "observed_dirty": 0,
   "observed_head": "af60454e00ba51ee384b85e2060b5957fbffa7e7",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define a dependency-neutral cassette request/response operation contract.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Dependency-neutral cassette operation contract",
-  "updated_at": "2026-09-16T23:17:02+00:00",
+  "updated_at": "2026-09-16T23:17:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1271-cassette-operation"
 }
 ---
@@ -74,3 +74,9 @@ Preserve AR-1270's blocked evidence and do not fabricate responses or authority.
 
 - 2026-09-16T23:16:55+00:00: Recorded command exit 0; command argv SHA-256
   82864b0b07ed4d1f69e9dbf1cf30537454e222b350e3cd53ac755b03f4930d21.
+
+- 2026-09-16T23:17:16+00:00: Signed checkpoint af60454 adds RuntimeCassetteOperation over shared
+  CassetteRequestV1/CassetteResponseV1 and ReplayServiceHandleV1. Runtime validates and
+  identity-binds generation/cassette/route, consumes each request once, and validates bounded
+  response envelopes without importing replay types. asb-core 18/18 and asb-runtime 39/39 pass; fmt
+  pass; clean tree. CLI adapter and actual service invocation remain next.

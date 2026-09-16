@@ -1521,7 +1521,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1271](../tasks/AR-1271-cassette-operation-contract.md): Dependency-neutral cassette operation contract | asb_ar1024_lifecycle_router | Define a dependency-neutral cassette request/response operation contract. | Implement runtime one-shot operation handle over CassetteRequestV1/ResponseV1 and CLI adapter; add real request/response plus mismatch/no-fallback fixtures. |
+| P0 | [AR-1271](../tasks/AR-1271-cassette-operation-contract.md): Dependency-neutral cassette operation contract | asb_ar1024_lifecycle_router | Define a dependency-neutral cassette request/response operation contract. | Add CLI adapter over RuntimeCassetteOperation with exact handle binding and real replay service request/response fixtures; then lifecycle/egress/no-fallback gates. |
 
 ### Open (6)
 
