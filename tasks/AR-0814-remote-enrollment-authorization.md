@@ -9,7 +9,7 @@
   "id": "AR-0814",
   "next_action": "Integrate certificate persistence and recovery ControlCall; run full gates and independent review.",
   "observed_branch": "feature/remote-enrollment-authz",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "dcb7ae2c4d1efec7c22b02b7cd5b9585da1e785b",
   "owner": "asb_ar0814_enrollment_authz",
   "plan": "../plans/AR-0814.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 156,
+  "task_revision": 157,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T18:24:25+00:00",
+  "updated_at": "2026-09-16T18:24:32+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
