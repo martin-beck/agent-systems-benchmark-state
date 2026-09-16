@@ -10,16 +10,16 @@
   "next_action": "Implement or explicitly split the still-owned certificate issuance/import and durable pairing identity-store ceremony, provide a qualified OS-protected SecretBackend, and add the missing hostile threat-matrix evidence/tests. Then rerun full gates and request publication review.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
-  "observed_head": "ddbe44c95fde95cb861d633b1dbc08d4a6d0ba21",
+  "observed_head": "677e8fd5ed7c7437bbfe9b5dafd375b773a115c1",
   "owner": "asb_ar0814_enrollment_authz",
   "plan": "../plans/AR-0814.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 250,
+  "task_revision": 251,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:27:33+00:00",
+  "updated_at": "2026-09-16T19:27:40+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
