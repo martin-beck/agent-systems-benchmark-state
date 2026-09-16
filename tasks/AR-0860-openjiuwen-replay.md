@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict OpenJiuwen replay.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Qualify strict OpenJiuwen replay",
-  "updated_at": "2026-09-16T08:27:45+00:00",
+  "updated_at": "2026-09-16T08:27:55+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-replay"
 }
 ---
@@ -62,3 +62,6 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-16T08:27:45+00:00: Recorded command exit 0; command argv SHA-256
   cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
+
+- 2026-09-16T08:27:55+00:00: Recorded command exit 0; command argv SHA-256
+  a373754c9f8ea2423f4df0abe09b93ff362f28c220dc1becb0897ec17b2e2b5e.
