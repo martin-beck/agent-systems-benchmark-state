@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1272",
-  "next_action": "Bind decode_runtime_cassette into actual replay dispatch and execute strict request/response; add egress/no-fallback/cancel/restart/timeout/crash cleanup fixtures.",
+  "next_action": "Wire execute_runtime_cassette into argument-level replay command and add real response parity plus egress/no-fallback/cancel/restart/timeout/crash cleanup fixtures.",
   "observed_branch": "feature/ar-1272-authenticated-cassette-backend",
   "observed_dirty": 0,
   "observed_head": "85c0f5bc558c90f0543424cdb37017a824c227bb",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind immutable cassette content to a runtime-authenticated replay backend handle.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Authenticated immutable cassette backend",
-  "updated_at": "2026-09-16T23:27:53+00:00",
+  "updated_at": "2026-09-16T23:28:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1272-cassette-backend"
 }
 ---
@@ -108,3 +108,9 @@ paths as authority.
 
 - 2026-09-16T23:27:45+00:00: Recorded command exit 0; command argv SHA-256
   90724391c841be317004d84721f118cb78b178031468ee250f722b20f6de64fd.
+
+- 2026-09-16T23:28:03+00:00: Signed checkpoint 85c0f5b adds execute_runtime_cassette: consumes
+  RuntimeCassetteContent, decodes and verifies exact cassette digest, constructs
+  StrictReplayExecutor, and executes one route/request with supplied verified isolation. CLI suite
+  passes 71/71 and fmt pass; product tree clean. Remaining work is argument-level invocation and
+  supervised lifecycle/egress evidence.

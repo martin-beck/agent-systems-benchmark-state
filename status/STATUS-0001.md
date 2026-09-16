@@ -1526,7 +1526,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1272](../tasks/AR-1272-authenticated-cassette-backend.md): Authenticated immutable cassette backend | asb_ar1024_lifecycle_router | Bind immutable cassette content to a runtime-authenticated replay backend handle. | Bind decode_runtime_cassette into actual replay dispatch and execute strict request/response; add egress/no-fallback/cancel/restart/timeout/crash cleanup fixtures. |
+| P0 | [AR-1272](../tasks/AR-1272-authenticated-cassette-backend.md): Authenticated immutable cassette backend | asb_ar1024_lifecycle_router | Bind immutable cassette content to a runtime-authenticated replay backend handle. | Wire execute_runtime_cassette into argument-level replay command and add real response parity plus egress/no-fallback/cancel/restart/timeout/crash cleanup fixtures. |
 
 ### Open (6)
 
