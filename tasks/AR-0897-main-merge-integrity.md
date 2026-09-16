@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 133,
+  "task_revision": 134,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-16T05:24:27+00:00",
+  "updated_at": "2026-09-16T05:24:52+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -441,3 +441,11 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-16T05:22:26+00:00: Heartbeat by asb_ar0897_merge_integrity.
 
 - 2026-09-16T05:24:27+00:00: Heartbeat by asb_ar0897_merge_integrity.
+
+- 2026-09-16T05:24:52+00:00: Lease renewed. Independent exact-head review of PR185 e559888 (base
+  7d43c1e) approves one-file policy repair: signed/DCO, diff-check clean, retains historical GitHub
+  Web Flow verification while accepting allowed SSH-signed local protected-main merges; local
+  protected-main policy and focused transcript test pass. PR185 checks: Loom, platform, retained
+  faults, fuzz, mutation, Kani, TLC/Alloy, AWQ, headers green; Rust, emulated AArch64, and
+  policy/coverage/supply chain still pending. Next: monitor exact-head checks; after all green,
+  merge PR185 using local signed merge_pr path and verify resulting exact-main/post-merge policy.
