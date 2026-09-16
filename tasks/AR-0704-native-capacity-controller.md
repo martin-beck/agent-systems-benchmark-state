@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-capacity-controller",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T08:29:20+00:00",
+  "claim_expires": "2026-09-16T08:48:44+00:00",
   "depends_on": [
     "AR-0701",
     "AR-0103"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-16T06:29:50+00:00",
+  "updated_at": "2026-09-16T06:48:44+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -312,3 +312,5 @@ must not block this AR or its dependents.
 
 - 2026-09-16T06:29:50+00:00: Recorded command exit 0; command argv SHA-256
   f3d3db5f6371551ecfcc32755923dcf3f4793c4ba3aab39bcf920e7b656285b7.
+
+- 2026-09-16T06:48:44+00:00: Heartbeat by asb_ar0704_formal_infra.
