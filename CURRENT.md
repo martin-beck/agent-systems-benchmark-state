@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1243](tasks/AR-1243-signed-bundle-assembly.md): Installable signed runtime bundle assembly | Build, sign, verify, and publish installable supervisor and sidecar runtime bundles. | Implement reproducible supervisor/sidecar bundle assembly and explicit SSH signing using the project release workflow. | asb_ar1232_lifecycle_router |
+| P0 | [AR-1243](tasks/AR-1243-signed-bundle-assembly.md): Installable signed runtime bundle assembly | Build, sign, verify, and publish installable supervisor and sidecar runtime bundles. | Run combined bundle/replay focused tests and full locked/policy/signature gates at 99c5cd2; then publish only after exact-head review. | asb_ar1232_lifecycle_router |
 
 ## Open
 

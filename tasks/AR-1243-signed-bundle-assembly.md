@@ -9,7 +9,7 @@
     "AR-1241"
   ],
   "id": "AR-1243",
-  "next_action": "Implement reproducible supervisor/sidecar bundle assembly and explicit SSH signing using the project release workflow.",
+  "next_action": "Run combined bundle/replay focused tests and full locked/policy/signature gates at 99c5cd2; then publish only after exact-head review.",
   "observed_branch": "feature/ar-1243",
   "observed_dirty": 0,
   "observed_head": "dc1fe1dcfa462d2953bb9033297c78a41633d559",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Build, sign, verify, and publish installable supervisor and sidecar runtime bundles.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Installable signed runtime bundle assembly",
-  "updated_at": "2026-09-16T09:20:09+00:00",
+  "updated_at": "2026-09-16T09:20:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1243"
 }
 ---
@@ -73,3 +73,7 @@ private material; do not alter host networking, firewall, credentials, or unrela
   46774ef4293c509236228f52601e54d97fba15b63d238b321294726278c7b7b7.
 
 - 2026-09-16T09:20:09+00:00: Heartbeat by asb_ar1232_lifecycle_router.
+
+- 2026-09-16T09:20:18+00:00: Bundle assembly commit dc1fe1d is SSH-signed/DCO and preserves prior
+  a14ea8b. Shared branch then received concurrent signed replay launch-bridge commit 99c5cd2;
+  preserved without rewriting. Current exact branch head is 99c5cd2; worktree clean.
