@@ -7,7 +7,7 @@
     "AR-1232"
   ],
   "id": "AR-1244",
-  "next_action": "Monitor fresh PR193 CI at 7ceb522; review exact head and merge only after all required checks green.",
+  "next_action": "Monitor policy rerun 35081579191 and remaining PR193 checks at exact head 7ceb522; merge only after all green.",
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "2543a4c213bc7a1f9b426cb8c0b95d815a0bf7e4",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish strict-replay supervision integration.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Publish AR-1232 strict-replay supervision",
-  "updated_at": "2026-09-16T09:59:08+00:00",
+  "updated_at": "2026-09-16T10:00:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1244-publish"
 }
 ---
@@ -109,3 +109,8 @@ mutation.
 
 - 2026-09-16T09:59:08+00:00: Recorded command exit 0; command argv SHA-256
   ad485839dfccd7d032bc04a8e43e8d5c292080019d667411ec25abfae080f0f0.
+
+- 2026-09-16T10:00:02+00:00: Investigated policy failure: five clean repeated runs of asb-metrics
+  lib test bounded_tool_boundary_covers_success_denial_timeout_and_cleanup passed (~1.2s each), so
+  ToolMismatch was not reproducible locally and no product change is justified. Reran failed policy
+  job through workflow; run 35081579191 is active again at 09:59Z for PR193 head 7ceb522.

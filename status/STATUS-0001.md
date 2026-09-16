@@ -1418,7 +1418,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1244](../tasks/AR-1244-publish-replay-supervision.md): Publish AR-1232 strict-replay supervision | asb_ar1244_publish_1232 | Publish strict-replay supervision integration. | Monitor fresh PR193 CI at 7ceb522; review exact head and merge only after all required checks green. |
+| P0 | [AR-1244](../tasks/AR-1244-publish-replay-supervision.md): Publish AR-1232 strict-replay supervision | asb_ar1244_publish_1232 | Publish strict-replay supervision integration. | Monitor policy rerun 35081579191 and remaining PR193 checks at exact head 7ceb522; merge only after all green. |
 | P0 | [AR-1246](../tasks/AR-1246-protected-main-dco-flow.md): Protected-main DCO flow | asb_ar1237_launch_bridge_worker | Durably admit authenticated GitHub protected-main merges without one-off DCO hash exceptions. | Monitor PR #195 required checks; after merge run post-merge protected-main verification and release done. |
 
 ### Open (4)
