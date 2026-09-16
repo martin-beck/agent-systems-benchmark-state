@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Make ShellCheck fail closed",
-  "updated_at": "2026-09-16T08:53:59+00:00",
+  "updated_at": "2026-09-16T08:54:05+00:00",
   "worktree_key": "agent-systems-benchmark-shellcheck-fail-closed"
 }
 ---
@@ -155,3 +155,6 @@ Implementation has not started. Read the linked plan before claiming.
   d3e7dc7eacaefc39c7e4c36f00431a531f7d0d7f11825157c853f69cfe0d56f3.
 
 - 2026-09-16T08:53:59+00:00: Heartbeat by asb_ar0898_shellcheck.
+
+- 2026-09-16T08:54:05+00:00: Recorded command exit 0; command argv SHA-256
+  8eddf255969a7b7c692a86d139b1d5e77013a3c47c9c69927072e9a2ddc9e071.
