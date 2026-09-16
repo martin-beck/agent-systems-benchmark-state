@@ -33,8 +33,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1231` | `feature/ar-1231` | `fd8eaef0c36d` | 0 | behind 28, ahead 0 |
 | `agent-systems-benchmark-ar-1232` | `feature/ar-1232` | `994c6716904d` | 0 | behind 27, ahead 25 |
 | `agent-systems-benchmark-ar-1233` | `feature/ar-1233` | `143213c1d09c` | 0 | behind 6, ahead 1 |
-| `agent-systems-benchmark-ar-1234` | `feature/ar-1234` | `7d43c1ec90fe` | 1 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-runtime/src/sandbox.rs` |
+| `agent-systems-benchmark-ar-1234` | `feature/ar-1234` | `36a458020483` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 363, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 466, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 360, ahead 0 |
