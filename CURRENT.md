@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1264](tasks/AR-1264-pr205-merge-integrity.md): Recover signed integration after PR #205 | Recover signed protected-main integration after PR #205. | PR #206 refreshed to signed head 539a92980620; wait for fresh exact-head hosted checks and independent review, then merge via merge_pr.py refs/pull/206/head with full OIDs and verify exact-main policy. | asb_ar1264_merge_integrity |
+| P0 | [AR-1264](tasks/AR-1264-pr205-merge-integrity.md): Recover signed integration after PR #205 | Recover signed protected-main integration after PR #205. | Monitor exact-main post-merge workflows for signed main 69e8b064d312; verify all terminal green, then record policy/tree/signature evidence and release AR-1264 done. | asb_ar1264_merge_integrity |
 
 ## Open
 

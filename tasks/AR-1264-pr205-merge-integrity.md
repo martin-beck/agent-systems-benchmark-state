@@ -7,7 +7,7 @@
     "AR-0897"
   ],
   "id": "AR-1264",
-  "next_action": "PR #206 refreshed to signed head 539a92980620; wait for fresh exact-head hosted checks and independent review, then merge via merge_pr.py refs/pull/206/head with full OIDs and verify exact-main policy.",
+  "next_action": "Monitor exact-main post-merge workflows for signed main 69e8b064d312; verify all terminal green, then record policy/tree/signature evidence and release AR-1264 done.",
   "observed_branch": "repair/ar-1264-pr205-merge-integrity",
   "observed_dirty": 0,
   "observed_head": "ebfa37023e56269b8299254b535be60f3cf1d186",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover signed protected-main integration after PR #205.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Recover signed integration after PR #205",
-  "updated_at": "2026-09-16T21:58:37+00:00",
+  "updated_at": "2026-09-16T21:59:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1264-merge-integrity"
 }
 ---
@@ -81,3 +81,11 @@ main gates.
 
 - 2026-09-16T21:58:37+00:00: Recorded command exit 0; command argv SHA-256
   ab21c5c875a5808752333360d04a492df8552ed36f8c4f8de31b98e14c31b307.
+
+- 2026-09-16T21:59:20+00:00: Signed merge_pr.py recovery published successfully: merge
+  69e8b064d3121a4bae1f672cdae9c0c8672000bc, parents ebfa37023e56269b8299254b535be60f3cf1d186 and
+  539a9298062027902288aa46244ba060d63d5637, tree 1d0a5577da8cd2d6199d20980d951c468205c934. Protected
+  main signature verifies Good SSH ED25519 for martin.beck2@gmx.de and merge DCO matches. Exact-main
+  workflows started: AArch64 35155265432, Repository quality 35155265340, Fault assurance
+  35155265435, Rust 35155265425, hosted portability 35155265446, Formal 35155265370; headers
+  35155265396 succeeded. Await terminal post-merge gates.
