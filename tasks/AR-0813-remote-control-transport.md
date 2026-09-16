@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 197,
+  "task_revision": 198,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T15:22:19+00:00",
+  "updated_at": "2026-09-16T15:23:10+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -593,3 +593,6 @@ Implementation has not started. Read the linked plan before claiming.
   begin_drain race. Added active-session drain-timeout regression. Focused listener tests 2/2 green;
   workspace clippy and full cargo test --locked --workspace green on current branch after refresh;
   product tree clean. Next: independent review/CI.
+
+- 2026-09-16T15:23:10+00:00: Recorded command exit 0; command argv SHA-256
+  548fd32ebd9d34514e4161699145d55e6cb9123ec2d14cafe1ac6e86bddce30e.
