@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0813](tasks/AR-0813-remote-control-transport.md): Add secure remote control transport | Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client. | Diagnose Policy, coverage, and supply chain failure on PR #202 exact head badd246f once GitHub API access recovers; keep all other checks running to terminal, then repair/rerun only if product-caused. Do not merge while Policy is red or required checks incomplete. | asb_ar0813_remote_transport |
+| P1 | [AR-0813](tasks/AR-0813-remote-control-transport.md): Add secure remote control transport | Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client. | Await GitHub API recovery; local policy and contract gates pass, then rerun PR202 Policy job at exact badd246 and assess terminal checks. | asb_ar0813_remote_transport |
 
 ## Open
 

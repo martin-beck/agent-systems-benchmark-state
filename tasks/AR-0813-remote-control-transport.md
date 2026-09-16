@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0813",
-  "next_action": "Diagnose Policy, coverage, and supply chain failure on PR #202 exact head badd246f once GitHub API access recovers; keep all other checks running to terminal, then repair/rerun only if product-caused. Do not merge while Policy is red or required checks incomplete.",
+  "next_action": "Await GitHub API recovery; local policy and contract gates pass, then rerun PR202 Policy job at exact badd246 and assess terminal checks.",
   "observed_branch": "feature/remote-control-transport",
   "observed_dirty": 0,
   "observed_head": "52ee2b13d809b0147f54f4f370face7fb14807b0",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 248,
+  "task_revision": 249,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T15:43:16+00:00",
+  "updated_at": "2026-09-16T15:43:31+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -779,3 +779,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T15:43:16+00:00: Recorded command exit 0; command argv SHA-256
   428457ea9cc6a21bd46c5be6651ba2faccb5b0b07ddc2fd6f96eca730dea5ab7.
+
+- 2026-09-16T15:43:31+00:00: Local reproduction: repository_policy ssh-only passed; contract
+  consistency unit and baseline checks passed; full formal/Loom suite passed. Hosted Policy job
+  104863627938 remains red, but logs/rerun are inaccessible due GitHub HTTP 403 API rate limit.
+  Attempted approved gh run rerun --failed, rejected by same rate limit. No product change
+  indicated; do not merge.
