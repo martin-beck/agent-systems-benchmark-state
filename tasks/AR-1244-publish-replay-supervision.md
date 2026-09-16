@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1232",
   "checkpoint_commit": "2543a4c213bc7a1f9b426cb8c0b95d815a0bf7e4",
-  "claim_expires": "2026-09-16T10:46:43+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1232"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "2543a4c213bc7a1f9b426cb8c0b95d815a0bf7e4",
-  "owner": "asb_ar1244_publish_1232",
+  "owner": "",
   "plan": "../plans/AR-1244.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Publish strict-replay supervision integration.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Publish AR-1232 strict-replay supervision",
-  "updated_at": "2026-09-16T10:16:43+00:00",
+  "updated_at": "2026-09-16T10:21:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1244-publish"
 }
 ---
@@ -152,3 +152,8 @@ mutation.
   35083989540, hosted 35083989534, formal 35083989561, fault 35083989628, Rust 35083989937.
 
 - 2026-09-16T10:16:43+00:00: Heartbeat by asb_ar1244_publish_1232.
+
+- 2026-09-16T10:21:55+00:00: Completed signed publication. PR193 exact head 2f10f27 passed all 12
+  required checks; signed protected merge 34243aac8193da348b8d736df05b622eafca8020 verified with
+  parents 5a2c151/2f10f27 and tree a557ff2. All six exact-main post-merge workflows terminal
+  success: 35083989542, 35083989540, 35083989534, 35083989561, 35083989628, 35083989937.

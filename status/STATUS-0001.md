@@ -11,12 +11,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 10 |
 | **Planned** | Defined work awaiting promotion or dependencies | 63 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 185 |
+| **Done** | Accepted, integrated, and durably verified | 186 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 9 |
 
@@ -337,7 +337,7 @@ flowchart LR
         AR_1241["AR-1241 - Done"]:::status_done
         AR_1242["AR-1242 - Done"]:::status_done
         AR_1243["AR-1243 - Done"]:::status_done
-        AR_1244["AR-1244 - In progress"]:::status_in_progress
+        AR_1244["AR-1244 - Done"]:::status_done
         AR_1245["AR-1245 - Done"]:::status_done
         AR_1246["AR-1246 - In progress"]:::status_in_progress
         AR_1247["AR-1247 - In progress"]:::status_in_progress
@@ -1417,11 +1417,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1244](../tasks/AR-1244-publish-replay-supervision.md): Publish AR-1232 strict-replay supervision | asb_ar1244_publish_1232 | Publish strict-replay supervision integration. | Monitor exact-main post-merge workflows for signed merge 34243aa; release done only after all terminal green. |
 | P0 | [AR-1246](../tasks/AR-1246-protected-main-dco-flow.md): Protected-main DCO flow | asb_ar1237_launch_bridge_worker | Durably admit authenticated GitHub protected-main merges without one-off DCO hash exceptions. | Wait for remaining required PR #195 checks; merge only when all are successful, then run post-merge verification. |
 | P0 | [AR-1247](../tasks/AR-1247-protected-main-dco-workflow.md): Protected-main DCO workflow binding | asb_ar1247_workflow_worker | Route the Rust verification workflow through durable protected-main DCO admission on generated merge commits. | Update verify.yml main-push DCO certification to use protected-main admission and add workflow regression coverage. |
 
@@ -1523,7 +1522,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (185)
+### Done (186)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
