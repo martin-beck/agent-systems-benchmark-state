@@ -1511,7 +1511,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1269](../tasks/AR-1269-runtime-replay-launch-factory.md): Runtime-owned replay launch-bundle factory | asb_ar1024_lifecycle_router | Create runtime-owned launch bundles for supervised strict replay. | Integrate ReplayLaunchBundle::spawn with CLI transport and add runtime-backed cassette/lifecycle/egress/no-fallback fixtures. |
+| P0 | [AR-1269](../tasks/AR-1269-runtime-replay-launch-factory.md): Runtime-owned replay launch-bundle factory | asb_ar1024_lifecycle_router | Create runtime-owned launch bundles for supervised strict replay. | Integrate runtime bundle with cassette service and add executable supervised lifecycle/egress/cancel/restart/timeout/crash/no-fallback fixtures; then full gates. |
 
 ### Open (6)
 

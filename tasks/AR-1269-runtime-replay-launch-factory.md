@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1269",
-  "next_action": "Integrate ReplayLaunchBundle::spawn with CLI transport and add runtime-backed cassette/lifecycle/egress/no-fallback fixtures.",
+  "next_action": "Integrate runtime bundle with cassette service and add executable supervised lifecycle/egress/cancel/restart/timeout/crash/no-fallback fixtures; then full gates.",
   "observed_branch": "feature/ar-1269-runtime-replay-launch-factory",
   "observed_dirty": 0,
   "observed_head": "2220c899650d8fddaeffdc8450f7b0449cfa9327",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create runtime-owned launch bundles for supervised strict replay.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Runtime-owned replay launch-bundle factory",
-  "updated_at": "2026-09-16T23:02:57+00:00",
+  "updated_at": "2026-09-16T23:03:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1269-runtime-launch-factory"
 }
 ---
@@ -97,3 +97,9 @@ AR-1268's blocked transport evidence and never move launch authority into the CL
 
 - 2026-09-16T23:02:57+00:00: Recorded command exit 1; command argv SHA-256
   bad450555acee5982c1fc523eca5ad47f2552e20787253498acdf915e1c3d511.
+
+- 2026-09-16T23:03:27+00:00: Signed checkpoint 2220c89 adds CLI spawn_runtime_replay consumer
+  accepting only opaque ReplayLaunchBundle and delegating to its runtime-owned spawn; no
+  lease/input/command parameters are exposed. CLI lib suite passes 71/71 and fmt pass; product tree
+  clean. Remaining acceptance is real cassette request/response and lifecycle/egress evidence
+  through this consumer.
