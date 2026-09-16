@@ -14,11 +14,11 @@
   "plan": "../plans/AR-1006.md",
   "priority": "P3",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Schedule trials across native-capability workers while preserving per-host capacity meaning.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Coordinate distributed experiment workers",
-  "updated_at": "2026-09-06T15:06:27+00:00",
+  "updated_at": "2026-09-16T12:24:16+00:00",
   "worktree_key": "agent-systems-benchmark-distributed-workers"
 }
 ---
@@ -27,3 +27,6 @@
 Schedule trials across native-capability workers while preserving per-host capacity meaning.
 
 Implementation has not started. Read the linked plan before claiming.
+
+- 2026-09-16T12:24:16+00:00: Dependencies AR-0204, AR-0702 and AR-1001 are complete; promote
+  distributed-worker coordination.
