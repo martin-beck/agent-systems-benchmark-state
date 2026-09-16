@@ -11,17 +11,17 @@
   "id": "AR-1231",
   "next_action": "Add process-launch enforcement using approved runtime sandbox seam plus cancellation/restart tests; current f1f4723 authenticates route and rejects non-loopback endpoints but does not yet enforce OS-level child egress.",
   "observed_branch": "feature/ar-1231",
-  "observed_dirty": 1,
-  "observed_head": "f1f472389dd6df4b3b3ee164fc1fc4666cf0d82b",
+  "observed_dirty": 0,
+  "observed_head": "f82a7ca859a4322e328eaea8db909d3aed15bf7e",
   "owner": "asb_ar1231_replay_seam",
   "plan": "../plans/AR-1231.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents through strict replay without provider egress or live fallback.",
-  "task_revision": 99,
+  "task_revision": 100,
   "title": "Strict replay execution and egress-isolation seam",
-  "updated_at": "2026-09-16T02:06:32+00:00",
+  "updated_at": "2026-09-16T02:06:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1231"
 }
 ---
