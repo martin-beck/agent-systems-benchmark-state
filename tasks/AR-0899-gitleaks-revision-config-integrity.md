@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve GitHub issue 118 by making local and CI Gitleaks scans deterministic and config changes fail closed.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "Align and harden Gitleaks execution",
-  "updated_at": "2026-09-16T11:56:58+00:00",
+  "updated_at": "2026-09-16T11:57:22+00:00",
   "worktree_key": "agent-systems-benchmark-gitleaks-revision-config-integrity"
 }
 ---
@@ -188,3 +188,6 @@ Implementation has not started. Read the linked plan before claiming.
   analyzer directory. Prior scan failure was caused by literal test secret in unpublished commit
   history; repaired by local rebase, not published history. Contract consistency and repository
   policy passed. Worktree clean; target build artifacts removed only to recover disk.
+
+- 2026-09-16T11:57:22+00:00: Recorded command exit 0; command argv SHA-256
+  2c8d6cbb1b6f6195bdaba6ecc677bd7446e82a97aecc3cdab10a1fd12fd91da5.
