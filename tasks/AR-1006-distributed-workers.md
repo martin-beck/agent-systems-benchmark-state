@@ -16,9 +16,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Schedule trials across native-capability workers while preserving per-host capacity meaning.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Coordinate distributed experiment workers",
-  "updated_at": "2026-09-16T12:31:48+00:00",
+  "updated_at": "2026-09-16T12:31:58+00:00",
   "worktree_key": "agent-systems-benchmark-distributed-workers"
 }
 ---
@@ -94,3 +94,6 @@ Implementation has not started. Read the linked plan before claiming.
   (expires_at_ns=0), and duplicate_completion_and_worker_loss_fail_closed re-registers the same
   WorkerId and rejects the old completion. Clean exact tree, diff check clean, SSH signature/DCO
   valid. Focused distributed tests 3/3 and asb-analysis clippy -D warnings pass.
+
+- 2026-09-16T12:31:58+00:00: Recorded command exit 0; command argv SHA-256
+  139a1df3ed6a2ced0f51b513a952ce50989c9af60be428bcb6c81e3107c91151.
