@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents through strict replay without provider egress or live fallback.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Strict replay execution and egress-isolation seam",
-  "updated_at": "2026-09-16T01:52:50+00:00",
+  "updated_at": "2026-09-16T01:53:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1231"
 }
 ---
@@ -139,3 +139,6 @@
   enforcing cassette and attempt identity, and mapping all service failures to fail-closed errors
   with no live fallback. Focused strict_replay tests and Clippy warnings-denied passed. Signed DCO
   commit 8754116 pushed; clean worktree.
+
+- 2026-09-16T01:53:10+00:00: Recorded command exit 1; command argv SHA-256
+  a4786969a66ebbe6413f9088f72f3145bac796602099f7faa3fd2d1a09736c10.
