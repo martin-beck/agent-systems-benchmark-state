@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 228,
+  "task_revision": 229,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T15:34:41+00:00",
+  "updated_at": "2026-09-16T15:35:03+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -705,3 +705,6 @@ Implementation has not started. Read the linked plan before claiming.
   fixtures are explicitly transport-level and must not be presented as kernel/netem or native
   network qualification. Publication is authorized to proceed from this exact head; merge still
   requires exact-head CI and independent approval.
+
+- 2026-09-16T15:35:03+00:00: Recorded command exit 0; command argv SHA-256
+  d24136fc08b190e34cee89d7b22f34f29e446bc2167ceb054f0de82a470abaa0.
