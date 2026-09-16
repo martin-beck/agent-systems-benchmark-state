@@ -8,7 +8,7 @@
     "AR-0898"
   ],
   "id": "AR-0899",
-  "next_action": "Review clean exact head 62d9f12; rerun applicable gates after disposable target cleanup, then publish PR only after independent review.",
+  "next_action": "Independent exact-head review of 6737552 complete diff; if approved, publish PR from clean tree and monitor exact-head CI.",
   "observed_branch": "fix/gitleaks-revision-config-integrity",
   "observed_dirty": 7,
   "observed_head": "67375520c60a31a2277c535c1ee1eb051c5f9f5d",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve GitHub issue 118 by making local and CI Gitleaks scans deterministic and config changes fail closed.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Align and harden Gitleaks execution",
-  "updated_at": "2026-09-16T11:56:49+00:00",
+  "updated_at": "2026-09-16T11:56:58+00:00",
   "worktree_key": "agent-systems-benchmark-gitleaks-revision-config-integrity"
 }
 ---
@@ -180,3 +180,11 @@ Implementation has not started. Read the linked plan before claiming.
   5f3133973e0a4f02b493a3d75a4b200c8f6d41d09adf04887cac9085f2c58d21.
 
 - 2026-09-16T11:56:49+00:00: Heartbeat by asb_ar0899_gitleaks.
+
+- 2026-09-16T11:56:58+00:00: Rebased unpublished branch onto origin/main to remove literal synthetic
+  secret from scanned history. Final signed+DCO commits are 94def3b wrapper, 1db02d0 config/revision
+  fixtures, 6737552 docs, with runtime-assembled fixture secret. Revision-scoped wrapper scan over
+  origin/main..HEAD: 3 commits scanned, no leaks. Failure-path suite passed with complete pinned
+  analyzer directory. Prior scan failure was caused by literal test secret in unpublished commit
+  history; repaired by local rebase, not published history. Contract consistency and repository
+  policy passed. Worktree clean; target build artifacts removed only to recover disk.
