@@ -1491,7 +1491,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md): Runtime-owned strict-replay CLI entrypoint | asb_ar1024_lifecycle_router | Provide a real runtime-owned strict-replay CLI entrypoint. | Wire replay-plan dispatch to the runtime issuer and cassette service; add end-to-end request/response plus egress, cancellation, restart, timeout/crash, stale/duplicate/no-fallback tests. |
+| P0 | [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md): Runtime-owned strict-replay CLI entrypoint | asb_ar1024_lifecycle_router | Provide a real runtime-owned strict-replay CLI entrypoint. | Runtime/CLI owner must add an authenticated context-bearing replay-plan dispatch entrypoint; then exercise cassette request/response and lifecycle/egress tests through it. |
 
 ### Open (6)
 

@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1265",
-  "next_action": "Wire replay-plan dispatch to the runtime issuer and cassette service; add end-to-end request/response plus egress, cancellation, restart, timeout/crash, stale/duplicate/no-fallback tests.",
+  "next_action": "Runtime/CLI owner must add an authenticated context-bearing replay-plan dispatch entrypoint; then exercise cassette request/response and lifecycle/egress tests through it.",
   "observed_branch": "feature/ar-1265-runtime-owned-replay-entrypoint",
   "observed_dirty": 0,
   "observed_head": "fcc3f49815d17f383e6c2d398c790b5b9203c78f",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a real runtime-owned strict-replay CLI entrypoint.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Runtime-owned strict-replay CLI entrypoint",
-  "updated_at": "2026-09-16T22:30:05+00:00",
+  "updated_at": "2026-09-16T22:30:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1265-runtime-replay-entrypoint"
 }
 ---
@@ -132,3 +132,14 @@ unmerged implementation is not an input; preserve its review as the reason this 
   end-to-end lifecycle/egress coverage remain next.
 
 - 2026-09-16T22:30:05+00:00: Heartbeat by asb_ar1024_lifecycle_router.
+
+- 2026-09-16T22:30:15+00:00: Architecture audit: existing asb-cli::dispatch/replay accepts only
+  cassette/profile/agent paths and has no runtime-issued ReplayLaunchAuthority or SidecarHandoff
+  input. It therefore cannot invoke spawn_runtime_replay safely; adding caller-created
+  authority/readiness would violate fail-closed acceptance. AR-1265 product branch remains clean at
+  fcc3f49. Implemented runtime API is ready: issue_launch is runtime-internal and take_launch is
+  opaque one-shot; CLI spawn_runtime_replay validates record and invokes
+  StrictReplayLaunchBridge::spawn while retaining sidecar. Focused offline evidence: asb-cli 71/71,
+  asb-runtime 40/40, fmt pass. Remaining end-to-end
+  cassette/egress/cancel/restart/timeout/crash/stale/duplicate/no-fallback tests are blocked on the
+  context-bearing command seam.
