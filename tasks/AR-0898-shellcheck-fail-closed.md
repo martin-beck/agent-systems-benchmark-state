@@ -11,17 +11,17 @@
   "id": "AR-0898",
   "next_action": "Pin ShellCheck and prove actionlint cannot silently disable its delegated shell analysis.",
   "observed_branch": "fix/shellcheck-fail-closed",
-  "observed_dirty": 11,
-  "observed_head": "c261af069c5ce7ecb84b2acfc56f12d2a4cb116a",
+  "observed_dirty": 7,
+  "observed_head": "8176605df747cca12010f8220e74509cca01539f",
   "owner": "asb_ar0898_shellcheck",
   "plan": "../plans/AR-0898.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Make ShellCheck fail closed",
-  "updated_at": "2026-09-16T08:27:18+00:00",
+  "updated_at": "2026-09-16T08:27:25+00:00",
   "worktree_key": "agent-systems-benchmark-shellcheck-fail-closed"
 }
 ---
