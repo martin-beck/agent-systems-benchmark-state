@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Await fresh exact-head CI for aba1f8c; inspect emulated AArch64 and all required checks, independently review, merge only if all green.",
+  "next_action": "Recover merge integrity for PR127 merge 00f3763: verify required main CI, signed merge/tree/DCO evidence, and repository merge-attestation procedure before closing AR.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "aba1f8cded472a6055d8a854c1627a20f7f5b0ac",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 455,
+  "task_revision": 456,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-16T04:45:12+00:00",
+  "updated_at": "2026-09-16T04:45:40+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1524,3 +1524,10 @@ classified.
 
 - 2026-09-16T04:45:12+00:00: Recorded command exit 0; command argv SHA-256
   d6ec9a77da798d8fcf33a1d07f0c3be82ec22da6413f69b61e5222b1e9194120.
+
+- 2026-09-16T04:45:40+00:00: PR127 merged at GitHub merge commit
+  00f37631e6805a0bd2034035da46589d43b0bfe5 from reviewed head aba1f8c; feature tree matches (diff
+  exit 0) and feature commit is SSH-signed/DCO. Local git verification reports merge commit
+  signature status E (not verifiable) and merge commit lacks DCO trailer; required post-merge main
+  checks are still in progress. Do not mark AR done or release until merge-integrity recovery is
+  resolved through documented workflow.
