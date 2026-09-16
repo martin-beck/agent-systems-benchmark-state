@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T10:54:55+00:00",
+  "updated_at": "2026-09-16T10:55:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -176,3 +176,6 @@ formal, privacy, signature, DCO, and exact-tree gates.
   dialect are not cassette-cross-validated; missing malformed cassette and executor
   lifecycle/egress/cancel/restart/no-fallback coverage. Do not merge until repaired or formally
   narrowed.
+
+- 2026-09-16T10:55:50+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
