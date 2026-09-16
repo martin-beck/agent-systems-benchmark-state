@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1249.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Complete missing evidence for the pinned MockAgents executable qualification.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Complete MockAgents executable qualification evidence",
-  "updated_at": "2026-09-16T10:44:21+00:00",
+  "updated_at": "2026-09-16T18:39:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1249"
 }
 ---
@@ -63,3 +63,6 @@ network denial, privacy, signature, DCO, and exact-tree gates.
   emulated-arm64 qualification cases. No product mutation or unsupported claim made. Next action:
   extend harness with explicit pinned platform/runner and required hostile cases, then rerun
   focused/full gates.
+
+- 2026-09-16T18:39:00+00:00: Dependencies AR-0888 and AR-0889 are complete; resume isolated
+  MockAgents qualification evidence implementation.
