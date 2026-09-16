@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1231-strict-replay-execution-seam",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T03:38:02+00:00",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -13,15 +13,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "asb_ar1231_replay_seam",
   "plan": "../plans/AR-1231.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Execute real agents through strict replay without provider egress or live fallback.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Strict replay execution and egress-isolation seam",
-  "updated_at": "2026-09-16T01:37:59+00:00",
+  "updated_at": "2026-09-16T01:38:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1231"
 }
 ---
@@ -33,3 +33,5 @@
 
 - 2026-09-16T01:37:59+00:00: Dependencies AR-0505, AR-1100 and AR-1230 are done; promote strict
   replay execution seam.
+
+- 2026-09-16T01:38:02+00:00: Claimed by asb_ar1231_replay_seam.
