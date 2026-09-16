@@ -7,7 +7,7 @@
     "AR-1242"
   ],
   "id": "AR-1259",
-  "next_action": "Monitor PR #204 exact head 7edda7d until AArch64, Policy, and Rust checks terminal SUCCESS; obtain independent approval, then run merge_pr.py local signed no-ff from current main and verify exact-main recovery.",
+  "next_action": "Monitor exact-main 0a808a6 post-merge workflows to terminal; release AR-1259 and hand off AR-0813 only after all required policies pass.",
   "observed_branch": "repair/pr202-protected-main-dco",
   "observed_dirty": 0,
   "observed_head": "8b81be45b1cf3e2f42540fae8c623074bbacaf88",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover a signed protected-main DCO boundary after the unsigned PR202 web merge.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Protected-main DCO recovery for PR202",
-  "updated_at": "2026-09-16T17:13:04+00:00",
+  "updated_at": "2026-09-16T17:13:36+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-dco-1259"
 }
 ---
@@ -117,3 +117,9 @@ Create a signed, forward-only protected-main recovery for the unsigned PR202 mer
 
 - 2026-09-16T17:13:04+00:00: Recorded command exit 0; command argv SHA-256
   e534b9e08b7574afd9b781d11903257a63d0723241cc6440771e0be62ce74d30.
+
+- 2026-09-16T17:13:36+00:00: Repository-owned merge_pr.py accepted and published signed merge
+  0a808a635d85fdc4a43b575e3711ef23b38089e3 with base 8b81be4, signed topic 7edda7d, exact tree
+  6a97f467. Remote main signature Good (ED25519) and matching Signed-off-by; parents preserved.
+  Post-merge workflows started: formal 35126795008, Rust 35126795006, hosted 35126794959, fault
+  35126794945, quality 35126794907, AArch64 35126794893; headers 35126794930 success.

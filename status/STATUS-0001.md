@@ -1465,7 +1465,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1259](../tasks/AR-1259-protected-main-dco-recovery.md): Protected-main DCO recovery for PR202 | asb_ar1259_signed_recovery | Recover a signed protected-main DCO boundary after the unsigned PR202 web merge. | Monitor PR #204 exact head 7edda7d until AArch64, Policy, and Rust checks terminal SUCCESS; obtain independent approval, then run merge_pr.py local signed no-ff from current main and verify exact-main recovery. |
+| P0 | [AR-1259](../tasks/AR-1259-protected-main-dco-recovery.md): Protected-main DCO recovery for PR202 | asb_ar1259_signed_recovery | Recover a signed protected-main DCO boundary after the unsigned PR202 web merge. | Monitor exact-main 0a808a6 post-merge workflows to terminal; release AR-1259 and hand off AR-0813 only after all required policies pass. |
 | P1 | [AR-0813](../tasks/AR-0813-remote-control-transport.md): Add secure remote control transport | asb_ar0813_remote_transport | Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client. | AR-1259 remains open after unsigned recovery merge 8b81be4; await repository-level signed protected-main recovery and exact-main policy before closing AR-0813. |
 
 ### Open (4)
