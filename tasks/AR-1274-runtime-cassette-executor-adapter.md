@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1274-runtime-cassette-executor-adapter",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T01:39:00+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1274-runtime-cassette-executor-adapter",
   "observed_dirty": 0,
   "observed_head": "7fecd58e2a81ade05e87229a76ee9defd26ba944",
-  "owner": "asb_ar1024_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1274.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide a runtime cassette operation executor callback boundary.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Runtime cassette operation executor adapter",
-  "updated_at": "2026-09-16T23:44:48+00:00",
+  "updated_at": "2026-09-16T23:45:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1274-cassette-executor"
 }
 ---
@@ -74,3 +74,13 @@ Preserve AR-1273's blocked evidence and never fabricate response or lifecycle re
   operation executor tests and all workspace tests; fmt/check and focused core/runtime suites green.
   Signed head remains 7fecd58 clean. Remaining acceptance is actual CLI/replay adapter invocation
   and supervised cassette response/egress/cancel/restart/timeout/crash cleanup evidence.
+
+- 2026-09-16T23:45:00+00:00: Released blocked/ownerless at clean signed 7fecd58. Added
+  dependency-neutral CassetteRequestV1/CassetteResponseV1 envelopes, object-safe
+  CassetteOperationExecutor, and runtime-owned one-shot RuntimeOperationHandle with strict
+  validation, duplicate/mismatch rejection, and no fallback. Focused core 3/3, runtime operation
+  2/2, offline check, fmt, and full locked cargo test --workspace all green. Exact blocker: existing
+  CLI replay dispatch has no runtime-issued operation-handle/cassette-service injection point; a
+  forwarding adapter would remain metadata-only and cannot establish actual cassette response,
+  supervised egress/no-fallback, cancellation/restart/timeout/crash cleanup evidence. Requires
+  follow-on CLI/runtime integration seam; preserve this checkpoint.
