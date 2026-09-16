@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 273,
+  "task_revision": 274,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:39:52+00:00",
+  "updated_at": "2026-09-16T19:40:38+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -742,3 +742,6 @@ Implementation has not started. Read the linked plan before claiming.
   authenticated generation succeeds, while a same-principal caller request at generation 2 is
   rejected despite valid digests, proving stale-generation/confused-deputy fencing. Endpoint suite
   passes 9/9; worktree clean.
+
+- 2026-09-16T19:40:38+00:00: Recorded command exit 0; command argv SHA-256
+  c6ee8fd062534033b8d24cc39d14311aaa9de49626fdc93c8f851d7f15bf7bc5.
