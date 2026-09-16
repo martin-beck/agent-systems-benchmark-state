@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1252](tasks/AR-1252-approved-isolated-qualification-runner.md): Provision approved isolated qualification runner | Provision an approved isolated qualification runner for ASB executable evidence. | Monitor post-merge workflows for main 85bcd1e until terminal; verify exact tree/signature/DCO/policy, then release AR-1252 done. | asb_ar1252_isolated_runner |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -187,6 +181,7 @@ Never edit this file directly.
 | P0 | [AR-1245](tasks/AR-1245-postmerge-dco-evidence.md): Post-merge DCO admission evidence | Repair DCO admission for the immutable PR-192 GitHub merge while preserving strict future checks. | Monitor PR #194 required checks; merge only after all protected checks pass. | - |
 | P0 | [AR-1246](tasks/AR-1246-protected-main-dco-flow.md): Protected-main DCO flow | Durably admit authenticated GitHub protected-main merges without one-off DCO hash exceptions. | Wait for remaining required PR #195 checks; merge only when all are successful, then run post-merge verification. | - |
 | P0 | [AR-1247](tasks/AR-1247-protected-main-dco-workflow.md): Protected-main DCO workflow binding | Route the Rust verification workflow through durable protected-main DCO admission on generated merge commits. | Update verify.yml main-push DCO certification to use protected-main admission and add workflow regression coverage. | - |
+| P0 | [AR-1252](tasks/AR-1252-approved-isolated-qualification-runner.md): Provision approved isolated qualification runner | Provision an approved isolated qualification runner for ASB executable evidence. | Monitor post-merge workflows for main 85bcd1e until terminal; verify exact tree/signature/DCO/policy, then release AR-1252 done. | - |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. | - |
 | P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. | - |
 | P1 | [AR-0004](tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. | - |

@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1252-approved-isolated-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T15:09:46+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1252-approved-isolated-runner",
   "observed_dirty": 0,
   "observed_head": "1d0c3cd017e8d486231dabbd1c590b654f74cc9c",
-  "owner": "asb_ar1252_isolated_runner",
+  "owner": "",
   "plan": "../plans/AR-1252.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T13:09:46+00:00",
+  "updated_at": "2026-09-16T13:15:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -349,3 +349,14 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
   f666e483c5a828c75e9e3b215d3b00b7684c45798aa2e15c1885be7b99093fe1.
 
 - 2026-09-16T13:09:46+00:00: Heartbeat by asb_ar1252_isolated_runner.
+
+- 2026-09-16T13:15:04+00:00: AR-1252 complete. PR #200 rebased exact head
+  1d0c3cd017e8d486231dabbd1c590b654f74cc9c merged via signed local integration as
+  85bcd1e423a6bd7da29a29cac4dbdcf9e4822837. Remote main exact, parents 4e2820b and 1d0c3cd, tree
+  c43eef8c950dc88ac6f545bc01f9e94896d4144e, SSH signature and DCO verified. Initial platform failure
+  was stale-base ancestry and was resolved by rebase. All PR checks and all seven post-merge
+  workflows terminal SUCCESS: AArch64 35098855882, formal 35098855958, hosted 35098855888,
+  repository quality 35099645736 rerun success, Rust 35098855858, fault assurance 35098855880,
+  headers 35098855898. Immutable Ubuntu/Python image allowlist, RepoDigest verification,
+  network-none/read-only bounded isolation, artifact digest/version checks, cleanup, live probes and
+  AR-1251 separation satisfied.
