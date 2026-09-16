@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1262",
-  "next_action": "Integrate ReplayLaunchAuthority into asb-cli typed consumer and add supervised lifecycle/egress/cancel/cleanup tests; then run full gates.",
+  "next_action": "Add direct consumer tests proving authority-backed bridge spawn rejects stale/duplicate/route-digest inputs and retains sidecar through terminal cleanup; then run full gates.",
   "observed_branch": "feature/ar-1262-runtime-owned-launch-authority",
   "observed_dirty": 0,
   "observed_head": "007d91dbd8449baea39893e5a5ec60291f7cece8",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned authority for supervised strict-replay execution.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-16T21:07:34+00:00",
+  "updated_at": "2026-09-16T21:07:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1262-runtime-authority"
 }
 ---
@@ -89,3 +89,10 @@ ownership and bounded lifecycle evidence.
 
 - 2026-09-16T21:07:27+00:00: Recorded command exit 0; command argv SHA-256
   76ca42ba2142d92f0e3c572e909ff46f0ceac6a3806bce9f43a75729c6442f54.
+
+- 2026-09-16T21:07:50+00:00: Signed 007d91d integrates ReplayLaunchAuthority into CLI
+  replay_contract: take_launch atomically transfers authenticated handoff, sidecar, backend, launch
+  input, lease, and pinned supervisor/sidecar commands; spawn_authorized_replay validates relay
+  generation/path and invokes StrictReplayLaunchBridge::spawn. Focused runtime authority test 1/1
+  and CLI no-fallback test 1/1 pass; fmt passes. Prior exit-101 was diagnosed as tuple-vs-struct
+  resolve_and_bind_runtime mismatch and fixed. Product worktree clean.

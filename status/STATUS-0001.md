@@ -1480,7 +1480,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md): Runtime-owned strict-replay launch authority | asb_ar1024_lifecycle_router | Issue runtime-owned authority for supervised strict-replay execution. | Integrate ReplayLaunchAuthority into asb-cli typed consumer and add supervised lifecycle/egress/cancel/cleanup tests; then run full gates. |
+| P0 | [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md): Runtime-owned strict-replay launch authority | asb_ar1024_lifecycle_router | Issue runtime-owned authority for supervised strict-replay execution. | Add direct consumer tests proving authority-backed bridge spawn rejects stale/duplicate/route-digest inputs and retains sidecar through terminal cleanup; then run full gates. |
 
 ### Open (6)
 
