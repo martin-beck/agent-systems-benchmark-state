@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 143,
+  "task_revision": 144,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T18:20:49+00:00",
+  "updated_at": "2026-09-16T18:21:19+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -402,3 +402,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-16T18:20:49+00:00: Signed+DCO ad2d9e2 removes hard-coded auth generation: auth CLI now
   requires and threads --generation into AuthorizationContext; tutorial metadata updated. Auth
   dispatch tests 2/2 pass. Worktree clean.
+
+- 2026-09-16T18:21:19+00:00: Recorded command exit 0; command argv SHA-256
+  4dba1d7316bc4e45be2af04a20ca8b450a0232831f34ad73344486b3aa5f5e2b.
