@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 243,
+  "task_revision": 244,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T15:41:02+00:00",
+  "updated_at": "2026-09-16T15:41:18+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -764,3 +764,6 @@ Implementation has not started. Read the linked plan before claiming.
   retrieval, but GitHub API returned HTTP 403 rate limit exceeded; failure cause is not yet
   classifiable. Merge authorization withheld pending Policy diagnosis, remaining checks, and
   independent approval.
+
+- 2026-09-16T15:41:18+00:00: Recorded command exit 0; command argv SHA-256
+  edc065e4b3e65c11d39b915c2afcd3c4e526a3767a0d2b59d06879a84ae18ee3.
