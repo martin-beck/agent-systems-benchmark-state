@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1268",
-  "next_action": "Wire CliReplayTransport into actual replay argument dispatch and add malformed/no-fallback/lifecycle integration; then run full locked gates.",
+  "next_action": "Add malformed/no-fallback and supervised lifecycle/egress/cancel/restart/timeout/crash cleanup tests around run_with_transport; then full locked gates.",
   "observed_branch": "feature/ar-1268-replay-transport-boundary",
   "observed_dirty": 0,
   "observed_head": "bc31f488193fea20ff2ba2d117cc578e2fd0c925",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Break the strict-replay runtime/CLI dependency cycle with a shared transport contract.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Break strict-replay runtime/CLI dependency cycle",
-  "updated_at": "2026-09-16T22:52:51+00:00",
+  "updated_at": "2026-09-16T22:53:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1268-replay-transport"
 }
 ---
@@ -114,3 +114,9 @@ Preserve AR-1267's blocked evidence; do not fabricate authority or weaken crate 
 
 - 2026-09-16T22:52:44+00:00: Recorded command exit 0; command argv SHA-256
   b71d564b86cfe0942bcd176dae230a017a85e9e99e617512300d5049794df159.
+
+- 2026-09-16T22:53:07+00:00: Signed checkpoint bc31f48 wires the shared CliReplayTransport into an
+  actual replay argument entrypoint run_with_transport. It rejects non-replay commands with exit 2,
+  binds/consumes runtime transport before dispatch, and returns bounded exit 3 for
+  stale/mismatched/duplicate context. Full asb-cli lib suite passes 73/73; fmt pass; product tree
+  clean. Remaining acceptance is supervised lifecycle and egress/no-fallback test evidence.
