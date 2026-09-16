@@ -1353,7 +1353,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md): Strict replay execution and egress-isolation seam | asb_ar1231_replay_seam | Execute real agents through strict replay without provider egress or live fallback. | Integrate ProcessIsolationCapability with approved runtime sandbox/process launcher and add cancellation/restart lifecycle tests. Current f82a7ca refuses construction without an explicit verified capability; endpoint policy and route/cassette/attempt binding remain fail-closed. |
+| P0 | [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md): Strict replay execution and egress-isolation seam | asb_ar1231_replay_seam | Execute real agents through strict replay without provider egress or live fallback. | Integrate ProcessIsolationCapability with approved runtime sandbox/process launcher and add executor cancellation/restart transition tests. Current 84fd574 attests only NetworkPolicy::Deny and refuses missing capability; endpoint/route/cassette/attempt checks remain fail-closed. |
 
 ### Open (14)
 

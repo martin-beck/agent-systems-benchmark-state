@@ -9,7 +9,7 @@
     "AR-1230"
   ],
   "id": "AR-1231",
-  "next_action": "Integrate ProcessIsolationCapability with approved runtime sandbox/process launcher and add cancellation/restart lifecycle tests. Current f82a7ca refuses construction without an explicit verified capability; endpoint policy and route/cassette/attempt binding remain fail-closed.",
+  "next_action": "Integrate ProcessIsolationCapability with approved runtime sandbox/process launcher and add executor cancellation/restart transition tests. Current 84fd574 attests only NetworkPolicy::Deny and refuses missing capability; endpoint/route/cassette/attempt checks remain fail-closed.",
   "observed_branch": "feature/ar-1231",
   "observed_dirty": 0,
   "observed_head": "84fd5748962d0058308dbcbd9e433712418f518e",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents through strict replay without provider egress or live fallback.",
-  "task_revision": 116,
+  "task_revision": 117,
   "title": "Strict replay execution and egress-isolation seam",
-  "updated_at": "2026-09-16T02:09:35+00:00",
+  "updated_at": "2026-09-16T02:09:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1231"
 }
 ---
@@ -326,3 +326,10 @@
 
 - 2026-09-16T02:09:35+00:00: Recorded command exit 0; command argv SHA-256
   39cf5398131881d6bebfeb6940a170dba53287cbad205a984f34c80a6dbe58e7.
+
+- 2026-09-16T02:09:59+00:00: Added runtime bridge ProcessIsolationCapability::from_network_policy:
+  only NetworkPolicy::Deny yields Verified; Host yields None. Executor construction requires
+  Some(Verified). Focused strict_replay tests pass (5) through handoffctl; Clippy had passed before
+  this test-only addition. Signed DCO commit 84fd574 pushed; worktree clean. Prior command timeout
+  occurred after tests while chained commit/push was still completing; reconciled refs confirm
+  remote exact head.
