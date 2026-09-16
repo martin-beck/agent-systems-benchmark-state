@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 100,
+  "task_revision": 101,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-16T05:06:29+00:00",
+  "updated_at": "2026-09-16T05:06:51+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -347,3 +347,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T05:06:29+00:00: Recorded command exit 0; command argv SHA-256
   0bbf2aeaa99361a9b7549f23a69da1a9b5765f4d48f8a693451147384f6a9ea7.
+
+- 2026-09-16T05:06:51+00:00: Fixed stale workflow_transcript contract assertion to require
+  documented local SSH-signed DCO merge path and reject obsolete gh pr merge --merge wording.
+  Focused test passes 1/1. Signed+DCO commit 1ef6469 pushed via exact force-with-lease replacing
+  remote aceb191; PR126 exact head is now 1ef6469 and fresh CI is required. Next: monitor all
+  exact-head checks, diagnose any failures, and do not merge until all required checks green plus
+  independent review.
