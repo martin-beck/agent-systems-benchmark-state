@@ -9,7 +9,7 @@
     "AR-0601"
   ],
   "id": "AR-0604",
-  "next_action": "Provision or authorize the exact CSB source root and immutable Python 3.12.3 interpreter bytes (sha256 1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118) under the approved native x86_64 runner/container, then rerun native_boundary qualification. Do not infer native evidence from the available Python binary or QEMU.",
+  "next_action": "Obtain coordinator-authorized native x86_64 runner/container and immutable CSB source root plus interpreter bytes matching Python 3.12.3 SHA-256 1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118. Docker is currently inaccessible; qemu cannot substitute native x86 evidence. Then rerun native_boundary and record A/B/overhead evidence.",
   "observed_branch": "feature/csb-native-qualification",
   "observed_dirty": 0,
   "observed_head": "4e2820bffe93234d02ca39b59067bf4442b08f95",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Qualify native CSB monitoring contention and overhead",
-  "updated_at": "2026-09-16T19:40:51+00:00",
+  "updated_at": "2026-09-16T19:41:08+00:00",
   "worktree_key": "agent-systems-benchmark-csb-native-qualification"
 }
 ---
@@ -81,3 +81,13 @@ Implementation has not started. Read the linked plan before claiming.
   availability.
 
 - 2026-09-16T19:40:51+00:00: Claimed by asb_ar0604_provenance_audit_20260916.
+
+- 2026-09-16T19:41:08+00:00: Follow-up provenance audit: searched state plans/tasks/docs and ASB
+  product/worktree paths for the exact interpreter digest and CSB source root. Only references are
+  historical contract text; no matching interpreter binary or CSB checkout exists under
+  /srv/data/projects. Host /usr/bin/python3.12 reports Python 3.12.3 but hashes
+  e50d468e8b0adfb05733f5b87b3cff34829c4a8c1aea50c865aa8bdfe4bb150f; project-local .uv-python
+  contains CPython 3.12.14 and is not the reviewed pin. qemu-x86_64/qemu-aarch64 are present, but
+  emulation cannot establish the plan required native x86_64 monitoring/overhead evidence. Docker
+  socket access fails with permission denied and no approved immutable image/setup recipe is
+  recorded. No product mutation or qualification claim made.

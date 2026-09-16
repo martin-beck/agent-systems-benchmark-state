@@ -1465,7 +1465,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0604](../tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | asb_ar0604_provenance_audit_20260916 | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Provision or authorize the exact CSB source root and immutable Python 3.12.3 interpreter bytes (sha256 1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118) under the approved native x86_64 runner/container, then rerun native_boundary qualification. Do not infer native evidence from the available Python binary or QEMU. |
+| P1 | [AR-0604](../tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | asb_ar0604_provenance_audit_20260916 | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain coordinator-authorized native x86_64 runner/container and immutable CSB source root plus interpreter bytes matching Python 3.12.3 SHA-256 1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118. Docker is currently inaccessible; qemu cannot substitute native x86 evidence. Then rerun native_boundary and record A/B/overhead evidence. |
 | P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | asb_ar0814_enrollment_authz | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Run full locked gates and independently review certificate/pairing/audit threat coverage. |
 
 ### Open (4)
