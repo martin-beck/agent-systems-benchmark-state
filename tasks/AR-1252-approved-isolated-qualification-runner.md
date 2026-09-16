@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T12:51:12+00:00",
+  "updated_at": "2026-09-16T12:51:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -268,3 +268,6 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
   runner plan; add an explicit reviewed image allowlist without mutable tags.
 
 - 2026-09-16T12:51:12+00:00: Claimed by asb_ar1252_isolated_runner.
+
+- 2026-09-16T12:51:43+00:00: Recorded command exit 0; command argv SHA-256
+  cc88fcf2bafcc53f3d7ceb947f39d0854240e1596cbadda9b2bd04256ae42c8a.
