@@ -9,7 +9,7 @@
     "AR-1008"
   ],
   "id": "AR-0898",
-  "next_action": "Post-merge exact-main commit eb0ad13 verification: Repository quality 35076116672 success, Rust 35076116617 success, Hosted portability 35076116659 success, Fault assurance 35076116738 success, Formal assurance 35076116608 success. Emulated AArch64 35076116592 remains in_progress; monitor to terminal, then verify exact main policy/signature/DCO and release AR done.",
+  "next_action": "Completed. PR #190 merged as signed+DCO eb0ad13f8b6e64b6ee46b92602a631ba0c96f9f4; all six protected-main workflows terminal success: Repository quality 35076116672, Rust 35076116617, hosted 35076116659, emulated AArch64 35076116592, fault 35076116738, formal 35076116608. Exact main policy verification passed with explicit base 606375f..eb0ad13. Release AR done/ownerless.",
   "observed_branch": "fix/shellcheck-fail-closed",
   "observed_dirty": 0,
   "observed_head": "760eded801d3daa07011ea2a744bded7da27a159",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Make ShellCheck fail closed",
-  "updated_at": "2026-09-16T09:00:54+00:00",
+  "updated_at": "2026-09-16T09:01:23+00:00",
   "worktree_key": "agent-systems-benchmark-shellcheck-fail-closed"
 }
 ---
@@ -179,3 +179,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T09:00:54+00:00: Recorded command exit 0; command argv SHA-256
   374f7a1f6e495a65cd64379d979d3f65b9a303770ee90363baf4eb941f35dc5d.
+
+- 2026-09-16T09:01:23+00:00: 2026-09-16T09:02Z: Final exact-main verification: eb0ad13 has parents
+  606375f and 760eded8, SSH signature G, Martin Beck identity and matching DCO. Initial policy
+  command without --base exited 1 due incomplete invocation; corrected protected-main command with
+  base 606375f passed. All post-merge workflows green. Unrelated merge-integrity follow-up remains
+  AR-1242.
