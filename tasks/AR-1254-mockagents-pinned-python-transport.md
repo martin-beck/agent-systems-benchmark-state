@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1254-mockagents-pinned-python-transport",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T15:55:14+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1252",
     "AR-1253"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1254-mockagents-pinned-python-transport",
   "observed_dirty": 0,
   "observed_head": "154a34549784bd3bba0a5fa47d046a237897980a",
-  "owner": "asb_ar1254_mockagents_transport",
+  "owner": "",
   "plan": "../plans/AR-1254.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Qualify MockAgents through the pinned Python sandbox.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Qualify MockAgents through pinned Python transport",
-  "updated_at": "2026-09-16T13:55:28+00:00",
+  "updated_at": "2026-09-16T13:56:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1254"
 }
 ---
@@ -125,3 +125,12 @@ Keep fixtures, runtimes, caches, and evidence under `/srv/data/projects`.
   absence; no backpressure terminal-state test. Lock fields/source/license/checksums are not
   validated as a closed reviewed provenance contract. Current unit tests 3/3 pass but do not
   establish AR acceptance. Head is signed/DCO and diff-clean; no PR/merge authorized.
+
+- 2026-09-16T13:56:39+00:00: Released blocked/ownerless after independent review. Signed head
+  154a345 provides loopback ordering, repeat, process-group cancellation, lock-based platform
+  digests, and runner network-none archive probe, but does not prove full acceptance: runner passes
+  only --version rather than transport requests; fixture server is outside the isolated container;
+  network probe is route-table based; arm64 QEMU execution absent; malformed/oversized HTTP parsing
+  and backpressure terminal semantics incomplete; lock source/tag/commit/license/checksum closure
+  not integrated. Successor AR-1255 created with dependencies AR-1254/1253 to provide bundled
+  in-container transport and digest-pinned QEMU evidence.
