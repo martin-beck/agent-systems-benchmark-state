@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide complete runtime-owned context for strict-replay execution.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Complete runtime-owned replay request context",
-  "updated_at": "2026-09-16T23:35:22+00:00",
+  "updated_at": "2026-09-16T23:35:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1273-complete-replay-context"
 }
 ---
@@ -54,3 +54,6 @@ AR-1272's blocked evidence; never accept caller-provided authority or fabricate 
 
 - 2026-09-16T23:35:22+00:00: Recorded command exit 0; command argv SHA-256
   8404fdad4c414d4bc5e93d60cffc9e69ccd4a8142cb1711c2e85463f7639cc99.
+
+- 2026-09-16T23:35:31+00:00: Recorded command exit 0; command argv SHA-256
+  f0aec178c6003b0a0be30ef2b3feda7a0f395cc2a64710171b5ca795937e4e15.
