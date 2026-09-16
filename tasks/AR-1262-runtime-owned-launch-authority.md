@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned authority for supervised strict-replay execution.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-16T21:05:42+00:00",
+  "updated_at": "2026-09-16T21:06:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1262-runtime-authority"
 }
 ---
@@ -68,3 +68,6 @@ ownership and bounded lifecycle evidence.
 
 - 2026-09-16T21:05:34+00:00: Recorded command exit 1; command argv SHA-256
   31d26d709d6bb7f1ba84e372fec371f5b93205ddebd7b8d513c9414718061c58.
+
+- 2026-09-16T21:06:03+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
