@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1248-strict-replay-cli-contract",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T20:56:24+00:00",
   "depends_on": [
     "AR-1231",
     "AR-1232"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1248-strict-replay-cli-contract",
   "observed_dirty": 0,
   "observed_head": "7d9c2ee2e08b9d61cb03837236918575405fb5c2",
-  "owner": "",
+  "owner": "coordinator-successor-creation",
   "plan": "../plans/AR-1248.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 142,
+  "task_revision": 143,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T20:22:27+00:00",
+  "updated_at": "2026-09-16T20:26:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -420,3 +420,5 @@ formal, privacy, signature, DCO, and exact-tree gates.
   repair remain clean with PR #197 exact head 7d9c2ee and green required CI; runtime-owned
   attestation/supervised child launch is explicitly delegated to the successor capability before
   further AR-1248 work.
+
+- 2026-09-16T20:26:24+00:00: Claimed by coordinator-successor-creation.
