@@ -10,16 +10,16 @@
   "next_action": "Before publication, bind pairing to an independently supplied route identity and add wrong-IP/route negatives; make confirmed identity persistence atomic and validate trusted parent/ancestry; add actual certificate import/issuance or explicitly split that owned scope. Provide remaining threat-matrix evidence and independent publication review.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
-  "observed_head": "a1ac8e18ce3d662e3e2ea6bd20d4798b4d3d6961",
+  "observed_head": "4d20476d5a8cb96aa4e8c289e57bf30b9f7c03a5",
   "owner": "asb_ar0814_enrollment_authz",
   "plan": "../plans/AR-0814.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 283,
+  "task_revision": 284,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:44:32+00:00",
+  "updated_at": "2026-09-16T19:44:40+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
