@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 179,
+  "task_revision": 180,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-16T07:51:20+00:00",
+  "updated_at": "2026-09-16T07:58:02+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -577,3 +577,6 @@ Implementation has not started. Read the linked plan before claiming.
   published merge 1c07e907 for missing DCO. Added bounded historical evidence to MERGE_INTEGRITY.md
   in signed DCO head bd4f286 rebased onto main 1c07e90, force-with-lease pushed, and opened PR187.
   No history rewritten.
+
+- 2026-09-16T07:58:02+00:00: Recorded command exit 0; command argv SHA-256
+  cc952528bfefe8b618fe3a4f0b946519520ce43252e820b4326e274d6c4b86c1.
