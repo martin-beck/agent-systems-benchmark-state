@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1252-approved-isolated-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T13:22:10+00:00",
+  "claim_expires": "2026-09-16T13:27:17+00:00",
   "depends_on": [
     "AR-0003"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:27:01+00:00",
+  "updated_at": "2026-09-16T11:27:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -170,3 +170,5 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
   llm-double-spike Python suite passes 12/12. Network-none probe and timeout evidence remain valid;
   descendant cleanup is container-owned via --rm. Remaining: independent review, AR-1251 consumer
   wiring, full policy gates.
+
+- 2026-09-16T11:27:17+00:00: Heartbeat by asb_ar1252_isolated_runner.
