@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1249.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Complete missing evidence for the pinned MockAgents executable qualification.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Complete MockAgents executable qualification evidence",
-  "updated_at": "2026-09-16T18:45:48+00:00",
+  "updated_at": "2026-09-16T18:46:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1249"
 }
 ---
@@ -133,3 +133,6 @@ network denial, privacy, signature, DCO, and exact-tree gates.
   truncate_after_chunks hostile case still emits terminal [DONE] (HTTP 200 SSE, bounded response),
   so no strict lifecycle/network qualification claim. Local unvalidated fixture edits were reverted;
   branch is clean and ownerless.
+
+- 2026-09-16T18:46:06+00:00: Correct stale next action to reflect the confirmed candidate fault and
+  clean ownerless branch.
