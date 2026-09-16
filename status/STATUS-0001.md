@@ -11,9 +11,9 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 12 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 9 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 10 |
 | **Planned** | Defined work awaiting promotion or dependencies | 67 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 163 |
@@ -328,7 +328,7 @@ flowchart LR
         AR_1232["AR-1232 - Blocked"]:::status_blocked
         AR_1233["AR-1233 - Blocked"]:::status_blocked
         AR_1234["AR-1234 - Blocked"]:::status_blocked
-        AR_1235["AR-1235 - In progress"]:::status_in_progress
+        AR_1235["AR-1235 - Blocked"]:::status_blocked
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1366,12 +1366,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0897](../tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | asb_ar0897_merge_integrity | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Hold PR 126 at bd6f450; after AR-0877 and AR-0909 integrate, rebase once and require fresh all-green exact-head CI before merge. |
-| P1 | [AR-1235](../tasks/AR-1235-goose-diagnostic-fixture-portability.md): Portable Goose diagnostic fixture | asb_ar1235_goose_portability | Repair Goose diagnostic fixture portability under emulated AArch64. | Cross-architecture reproduction completed under pinned-style qemu-aarch64 with Ubuntu arm64 sysroot: cargo +1.93.0 test --offline --locked --manifest-path /srv/data/projects/agent-systems-benchmark-ar-1235/Cargo.toml --target aarch64-unknown-linux-gnu -p asb-agents --lib goose::tests::diagnostic_and_symlink_fail_closed -- --exact --nocapture passed 1/1. The earlier exit 101 was a command setup error: cargo was run from state repo without --manifest-path and could not find Cargo.toml; corrected command passed. Compare against postmerge run 35060286408 remains necessary before any fixture change; no source fix justified by current reproduction. |
 
 ### Open (12)
 
@@ -1390,7 +1389,7 @@ flowchart LR
 | P1 | [AR-0859](../tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Unclaimed | Qualify pinned OpenJiuwen live execution. | Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI. |
 | P1 | [AR-0908](../tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | Unclaimed | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Hold PR #125 unchanged; shared formal asset and native-runner pin owners must repair their gates before a fresh exact-head run. |
 
-### Blocked (9)
+### Blocked (10)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1403,6 +1402,7 @@ flowchart LR
 | P1 | [AR-0863](../tasks/AR-0863-workbuddy-provenance.md): Pin WorkBuddy source, package, and license provenance | Unclaimed | Pin WorkBuddy source, package, and license provenance. | Pin official source, package, dependency closure, license, executable digest, protocol mode, and supported platform before any adapter claim. |
 | P1 | [AR-0890](../tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Unclaimed | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. |
 | P1 | [AR-0896](../tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Unclaimed | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun failed Repository quality workflow 34339927858 on unchanged main; if failure repeats, isolate and repair test-state ownership before any feature work. |
+| P1 | [AR-1235](../tasks/AR-1235-goose-diagnostic-fixture-portability.md): Portable Goose diagnostic fixture | Unclaimed | Repair Goose diagnostic fixture portability under emulated AArch64. | Cross-architecture reproduction completed under pinned-style qemu-aarch64 with Ubuntu arm64 sysroot: cargo +1.93.0 test --offline --locked --manifest-path /srv/data/projects/agent-systems-benchmark-ar-1235/Cargo.toml --target aarch64-unknown-linux-gnu -p asb-agents --lib goose::tests::diagnostic_and_symlink_fail_closed -- --exact --nocapture passed 1/1. The earlier exit 101 was a command setup error: cargo was run from state repo without --manifest-path and could not find Cargo.toml; corrected command passed. Compare against postmerge run 35060286408 remains necessary before any fixture change; no source fix justified by current reproduction. |
 
 ### Planned (67)
 

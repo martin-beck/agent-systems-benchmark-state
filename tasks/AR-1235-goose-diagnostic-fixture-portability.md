@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1235-goose-fixture-portability",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T07:49:51+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1235-goose-fixture-portability",
   "observed_dirty": 0,
   "observed_head": "fd7daa43549edd67b60076aa6b1eee333061b438",
-  "owner": "asb_ar1235_goose_portability",
+  "owner": "",
   "plan": "../plans/AR-1235.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Repair Goose diagnostic fixture portability under emulated AArch64.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Portable Goose diagnostic fixture",
-  "updated_at": "2026-09-16T05:51:40+00:00",
+  "updated_at": "2026-09-16T05:52:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1235"
 }
 ---
@@ -62,3 +62,11 @@ its intended diagnostic error assertion. Preserve the failure and repair the fix
   and /srv/data/projects/.asb-local/ar0909-arm64-root sysroot; test passed 1/1. This does not
   reproduce reported exit 127. Preserve red postmerge evidence and do not alter assertions without
   causal reproduction.
+
+- 2026-09-16T05:52:08+00:00: Released blocked 2026-09-16T05:53Z: focused Goose
+  diagnostic_and_symlink_fail_closed passes 1/1 on x86_64 and under pinned-style qemu-aarch64 using
+  /srv/data/projects/.asb-local/ar0909-arm64-root. Reported post-merge run 35060286408 exit 127 is
+  not reproducible; no safe fixture/process fix can be justified without causal reproduction.
+  Earlier exit 101 was corrected command setup error (missing --manifest-path). Preserve AR-0897
+  post-merge AArch64 red evidence; reopen/claim only with a new exact failing reproduction or runner
+  artifact.
