@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-1252",
-  "next_action": "Integrate runner with AR-1251; add no-mount assertion and run full policy gates.",
+  "next_action": "Integrate digest-verified runner with AR-1251; add descendant cleanup evidence and run full gates.",
   "observed_branch": "feature/ar-1252-approved-isolated-runner",
   "observed_dirty": 0,
   "observed_head": "d72c419e05e7f7e6a4de80022fab2986e66fa0be",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:21:43+00:00",
+  "updated_at": "2026-09-16T11:22:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -142,3 +142,10 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
 
 - 2026-09-16T11:21:43+00:00: Recorded command exit 0; command argv SHA-256
   39059b7c1cd82b6a868a9664b24fb3304554af65573f82cb7ce48f4ad80d3937.
+
+- 2026-09-16T11:22:03+00:00: Signed+DCO head d72c419 pushed. Added required --artifact-sha256 and
+  pre-bind digest verification, closing caller-self-consistency/TOCTOU gap for the input archive.
+  Consumer README documents the sole validated read-only artifact bind and direct-vector contract.
+  Network-none probe with pinned artifact digest returns network-none-verified; isolation tests 2/2
+  pass; timeout probe returns 124. Descendant cleanup evidence and AR-1251 integration remain
+  outstanding.
