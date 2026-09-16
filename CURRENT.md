@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1232](tasks/AR-1232-sandboxed-replay-process-supervision.md): Sandboxed replay process supervision | Supervise strict replay adapters inside the approved network-denied sandbox. | Bind authenticated record timeout and loopback route environment into the launch contract, then add cancellation/restart/partial cleanup tests and run full locked gates. | asb_ar1232_sandbox_supervision |
+| P0 | [AR-1232](tasks/AR-1232-sandboxed-replay-process-supervision.md): Sandboxed replay process supervision | Supervise strict replay adapters inside the approved network-denied sandbox. | Bind authenticated record timeout and loopback route environment into the launch contract, then add cancellation/restart/partial cleanup tests; focused harness and full locked workspace tests are green at 678e112. | asb_ar1232_sandbox_supervision |
 
 ## Open
 

@@ -9,7 +9,7 @@
     "AR-1230"
   ],
   "id": "AR-1232",
-  "next_action": "Bind authenticated record timeout and loopback route environment into the launch contract, then add cancellation/restart/partial cleanup tests and run full locked gates.",
+  "next_action": "Bind authenticated record timeout and loopback route environment into the launch contract, then add cancellation/restart/partial cleanup tests; focused harness and full locked workspace tests are green at 678e112.",
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "678e11263d89d47b549be92cf0a6125687ba02cc",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 146,
+  "task_revision": 147,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T03:26:27+00:00",
+  "updated_at": "2026-09-16T03:26:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -397,3 +397,7 @@
   a3cf4bf790c54f39868343c859fba60c08b1613dbbf63a14b28602ab2a3a33c6.
 
 - 2026-09-16T03:26:27+00:00: Heartbeat by asb_ar1232_sandbox_supervision.
+
+- 2026-09-16T03:26:47+00:00: Full locked offline workspace test gate passed at 03:26 under
+  handoffctl, including 2 native strict replay sandbox harness tests. Exact feature head remains
+  signed+DCO 678e112; no PR/CI publication yet.
