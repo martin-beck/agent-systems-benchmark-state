@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1270-runtime-cassette-handle",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T01:05:11+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1270-runtime-cassette-handle",
   "observed_dirty": 0,
   "observed_head": "4828b400eb8f8886ba47c56fcce7e56c677943f0",
-  "owner": "asb_ar1024_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1270.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide a runtime-issued cassette-service handle for supervised strict replay.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Runtime-issued cassette-service handle",
-  "updated_at": "2026-09-16T23:11:13+00:00",
+  "updated_at": "2026-09-16T23:11:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1270-runtime-cassette-handle"
 }
 ---
@@ -97,3 +97,10 @@ the CLI.
   suite passes 71/71; runtime suite 40/40; fmt pass; product tree clean. Remaining acceptance is
   actual service request/response operation and supervised
   lifecycle/egress/cancel/restart/timeout/crash cleanup/no-fallback fixtures.
+
+- 2026-09-16T23:11:45+00:00: Released blocked/ownerless at clean signed 4828b40.
+  RuntimeCassetteService and CLI identity binding are implemented and tested (CLI 71/71, runtime
+  40/40, fmt pass), but actual cassette request/response cannot be implemented honestly: runtime
+  handle contains identity only and runtime cannot import asb-replay or cassette backend. Adding an
+  echo/fake operation would not prove cassette behavior. Requires successor shared cassette-service
+  operation boundary, then real dispatch/lifecycle/egress/no-fallback tests.
