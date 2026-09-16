@@ -2,7 +2,7 @@
 {
   "branch": "test/capability-coverage-sink",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T07:55:48+00:00",
   "depends_on": [
     "AR-1023"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "test/capability-coverage-sink",
   "observed_dirty": 0,
   "observed_head": "297895dbdee6acfc2a7425c5a9ab254c6d2cce96",
-  "owner": "",
+  "owner": "asb_ar1038_followup",
   "plan": "../plans/AR-1038.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Prevent sanitized capability child tests from writing default profraw files into the source checkout.",
-  "task_revision": 129,
+  "task_revision": 130,
   "title": "Preserve coverage sinks in sanitized CLI child tests",
-  "updated_at": "2026-09-11T01:27:07+00:00",
+  "updated_at": "2026-09-16T05:55:48+00:00",
   "worktree_key": "agent-systems-benchmark-capability-coverage-sink"
 }
 ---
@@ -478,3 +478,5 @@ Fix the six `default_*.profraw` files discovered during AR-1013 full coverage wi
   lowercase DCO, but its postmerge Repository quality run failed on the nested topic synchronization
   topology. AR-1038 remains incomplete and unowned pending AR-1043 forward-only protected-main
   policy recovery and terminal-green latest-main evidence.
+
+- 2026-09-16T05:55:48+00:00: Claimed by asb_ar1038_followup.
