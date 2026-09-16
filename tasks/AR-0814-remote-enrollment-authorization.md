@@ -2,7 +2,7 @@
 {
   "branch": "feature/remote-enrollment-authz",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T21:44:13+00:00",
+  "claim_expires": "2026-09-16T21:46:17+00:00",
   "depends_on": [
     "AR-0813"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 288,
+  "task_revision": 289,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:45:54+00:00",
+  "updated_at": "2026-09-16T19:46:17+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -800,3 +800,5 @@ Implementation has not started. Read the linked plan before claiming.
   route_sha256. Added positive route-preservation and expiry-mismatch negative tests; auth group
   passes 18/18. Certificate issuance/chain and trusted IP/ancestor authority remain outside
   available implementation and should be split to successor.
+
+- 2026-09-16T19:46:17+00:00: Heartbeat by asb_ar0814_enrollment_authz.
