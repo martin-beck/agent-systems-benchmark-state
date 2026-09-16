@@ -11,17 +11,17 @@
   "id": "AR-1273",
   "next_action": "Promote after dependency verification; implement the complete opaque runtime-issued replay request context and real supervised execution.",
   "observed_branch": "feature/ar-1273-complete-replay-context",
-  "observed_dirty": 0,
-  "observed_head": "",
+  "observed_dirty": 2,
+  "observed_head": "69e8b064d3121a4bae1f672cdae9c0c8672000bc",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1273.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide complete runtime-owned context for strict-replay execution.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Complete runtime-owned replay request context",
-  "updated_at": "2026-09-16T23:33:58+00:00",
+  "updated_at": "2026-09-16T23:34:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1273-complete-replay-context"
 }
 ---
