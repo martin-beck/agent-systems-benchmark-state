@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1250-mockagents-harness-extension",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T20:40:24+00:00",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1250-mockagents-harness-extension",
   "observed_dirty": 0,
   "observed_head": "8a61b4672843c20be1b2d4fa81955abfa2bb7570",
-  "owner": "",
+  "owner": "asb_ar1250_mockagents_harness",
   "plan": "../plans/AR-1250.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Extend the pinned MockAgents executable qualification harness.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Extend MockAgents qualification harness",
-  "updated_at": "2026-09-16T18:39:42+00:00",
+  "updated_at": "2026-09-16T18:40:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1250"
 }
 ---
@@ -141,3 +141,5 @@ privacy, signature, DCO, and exact-tree gates; do not claim support from host in
 - 2026-09-16T18:39:42+00:00: Dependencies AR-0888 and AR-0889 are durably done; prior qualification
   gaps are implementation work, not an external blocker. Reopen for bounded harness implementation
   without weakening gates.
+
+- 2026-09-16T18:40:24+00:00: Claimed by asb_ar1250_mockagents_harness.
