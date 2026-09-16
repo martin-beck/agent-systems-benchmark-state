@@ -11,12 +11,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 6 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 12 |
 | **Planned** | Defined work awaiting promotion or dependencies | 66 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 171 |
+| **Done** | Accepted, integrated, and durably verified | 172 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 9 |
 
@@ -331,7 +331,7 @@ flowchart LR
         AR_1235["AR-1235 - Done"]:::status_done
         AR_1236["AR-1236 - Open"]:::status_open
         AR_1237["AR-1237 - Planned"]:::status_planned
-        AR_1238["AR-1238 - In progress"]:::status_in_progress
+        AR_1238["AR-1238 - Done"]:::status_done
         AR_1239["AR-1239 - Planned"]:::status_planned
         AR_1240["AR-1240 - Planned"]:::status_planned
     end
@@ -1391,12 +1391,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md): Make ShellCheck fail closed | asb_ar0898_shellcheck | Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck. | Pin ShellCheck and prove actionlint cannot silently disable its delegated shell analysis. |
-| P0 | [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md): Runtime-owned loopback supervisor | asb_ar1238_bwrap_relay_worker | Provide the runtime-owned private-namespace supervisor for loopback replay. | Run native bwrap end-to-end matrix using VerifiedBundle-provided supervisor/sidecar paths; current runtime API now confines paths and verifies content hashes. |
 | P1 | [AR-0860](../tasks/AR-0860-openjiuwen-replay.md): Qualify strict OpenJiuwen replay | asb_ar1232_lifecycle_router | Qualify strict OpenJiuwen replay. | Seal the sanitized live capture and prove strict offline replay, causal parity, malformed-record rejection, and zero external network. |
 
 ### Open (6)
@@ -1504,7 +1503,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (171)
+### Done (172)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1561,3 +1560,4 @@ flowchart LR
 | P0 | [AR-1196](../tasks/AR-1196-protected-main-dco-repair.md): Protected-main DCO history repair | Unclaimed | Restore a Signed-off-by-bearing protected-main history after the catalog merge. | Reconcile PR #170 merge commit 748c16ba against remote main; PR #172 is the topic re-publication candidate and PR #171 is a duplicate signed-merge candidate. Do not merge either until remote main ref and exact post-merge checks are reconciled; if main remains 817a40b, investigate the missing push event. |
 | P0 | [AR-1198](../tasks/AR-1198.md): Canonical authenticated agent-catalog digest | Unclaimed | Define and enforce the canonical authenticated ASB v1.4 agent-catalog digest. | Independently review PR #174 at exact head 3cc8fa1a27587642bda5100f45140c11f1fd0c6d, run cross-repository vector checks with asb-tui AR-1195, then merge only after all exact-head checks are green. |
 | P0 | [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md): Qualify provider authentication backends and probes | Unclaimed | Qualify provider authentication backends, probes and application integration. | PR #177 exact head 2d716c8 includes std-only polled connect/write, authenticated Gemini/Ollama wire fixtures, and stabilized malformed/redirect/oversized response fixtures. Await exact-head CI and independent review; investigate any architecture-runner failures. |
+| P0 | [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md): Provider authentication application integration | Unclaimed | Integrate provider authentication into ASB config, control and CLI surfaces. | AR complete: merged PR #179 at 2f96f211; retain post-merge verification and release evidence in durable history. |

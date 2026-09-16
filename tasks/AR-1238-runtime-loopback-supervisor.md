@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1238-runtime-loopback-supervisor",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T09:26:11+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1100",
     "AR-1231"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1238-runtime-loopback-supervisor",
   "observed_dirty": 0,
   "observed_head": "e4c2e56c076ad9648ded2dbdd79cb2431cc7d33f",
-  "owner": "asb_ar1238_bwrap_relay_worker",
+  "owner": "",
   "plan": "../plans/AR-1238.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Provide the runtime-owned private-namespace supervisor for loopback replay.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Runtime-owned loopback supervisor",
-  "updated_at": "2026-09-16T08:26:11+00:00",
+  "updated_at": "2026-09-16T08:27:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1238"
 }
 ---
@@ -163,3 +163,9 @@ remaining work is launcher integration and real sidecar forwarding, not a host c
   fixture matrix moved to follow-on AR-1240.
 
 - 2026-09-16T08:26:11+00:00: Claimed by asb_ar1238_bwrap_relay_worker.
+
+- 2026-09-16T08:27:06+00:00: Completed runtime-owned supervisor integration in signed e4c2e56:
+  canonical bundle-root confinement, content hash verification, read-only supervisor/sidecar mounts,
+  and no mutable /usr fallback. Runtime 29, sidecar 3, process 8, sandbox 10, scheduler 16 tests
+  plus locked workspace, clippy, rustdoc, and release build pass. Native signed fixture matrix is
+  delegated to AR-1240.
