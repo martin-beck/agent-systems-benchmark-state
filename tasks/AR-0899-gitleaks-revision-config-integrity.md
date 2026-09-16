@@ -8,7 +8,7 @@
     "AR-0898"
   ],
   "id": "AR-0899",
-  "next_action": "Initial wrapper commit 94def3b and config-policy changes are present; rerun focused failure suite with complete pinned analyzer bin directory, then add revision-range unrelated/introduction fixtures and run full gates.",
+  "next_action": "Review clean exact head 62d9f12; rerun applicable gates after disposable target cleanup, then publish PR only after independent review.",
   "observed_branch": "fix/gitleaks-revision-config-integrity",
   "observed_dirty": 0,
   "observed_head": "62d9f1286f4b2d020284a35ed4f32b7ca3388f29",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve GitHub issue 118 by making local and CI Gitleaks scans deterministic and config changes fail closed.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Align and harden Gitleaks execution",
-  "updated_at": "2026-09-16T11:51:42+00:00",
+  "updated_at": "2026-09-16T11:51:53+00:00",
   "worktree_key": "agent-systems-benchmark-gitleaks-revision-config-integrity"
 }
 ---
@@ -139,3 +139,12 @@ Implementation has not started. Read the linked plan before claiming.
   a04a9bf99d3b05370e70ab24843e2bc8b095b0244bbfe4ac7cff36d82dfa6d9e.
 
 - 2026-09-16T11:51:42+00:00: Heartbeat by asb_ar0899_gitleaks.
+
+- 2026-09-16T11:51:53+00:00: Signed+DCO commits 55a05ce (config integrity and revision-range
+  fixtures) and 62d9f12 (scoped Gitleaks ownership/false-positive documentation). Passed shell
+  syntax, Python compilation, repository policy, failure-path suite with
+  /srv/data/projects/asb-ar0898-tools/bin, signature policy, and contract consistency (12 capability
+  tests plus schema/registered artifact suites). First contract run failed solely because prior
+  generated crates/asb-cli/*.profraw files remained; removed only those generated files, rerun
+  passed. Removed only owned worktree target/ (7.2G disposable build artifacts) after disk reached 0
+  bytes free. Product tree is clean at 62d9f12; PR publication remains pending independent review.
