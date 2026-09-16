@@ -16,11 +16,11 @@
   "plan": "../plans/AR-0896.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-09T10:33:12+00:00",
+  "updated_at": "2026-09-16T06:04:07+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -149,3 +149,6 @@ synthetic fixture for black-box executable evidence.
   route, and cleanup, but required hostile fault/tool/tool-result, cancellation/backpressure,
   outbound-denial, repeated-clean-state, and arm64 evidence remain unavailable. Keep AR-0890
   blocked; do not claim candidate qualified.
+
+- 2026-09-16T06:04:07+00:00: Resume dependency-ready qualification to rerun workflow 34339927858 on
+  unchanged main and classify the prior test-isolation failure.
