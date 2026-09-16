@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1236-runtime-loopback-sidecar",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T10:27:38+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1100",
     "AR-1231",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1236-runtime-loopback-sidecar",
   "observed_dirty": 0,
   "observed_head": "42c3d1959b9a47e152492758d35fb1ca45dc8afc",
-  "owner": "asb_ar1236_sidecar_finish_worker",
+  "owner": "",
   "plan": "../plans/AR-1236.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Provide a runtime-owned private-namespace loopback sidecar capability.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Runtime-owned loopback sidecar capability",
-  "updated_at": "2026-09-16T08:27:38+00:00",
+  "updated_at": "2026-09-16T08:29:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1236"
 }
 ---
@@ -89,3 +89,11 @@ privacy, policy, native, signature, and exact-head gates.
   integration now present.
 
 - 2026-09-16T08:27:38+00:00: Claimed by asb_ar1236_sidecar_finish_worker.
+
+- 2026-09-16T08:29:09+00:00: AR-1236 verified at 42c3d19: runtime-issued authenticated
+  SidecarHandoff binds version, generation, route digest, private relay, loopback endpoint,
+  deadline, and sidecar/adapter command digests; attestation is fail-closed; private socket is mode
+  0600 and one-shot duplicate/stale forwarding is covered. Focused 32-test suite and full locked
+  workspace tests, fmt, clippy -D warnings, rustdoc, and locked release build pass. Native sandbox
+  isolation and cleanup tests pass; actual namespace TCP injection remains launcher-owned by
+  AR-1238/AR-1240.
