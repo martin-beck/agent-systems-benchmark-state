@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-1235",
-  "next_action": "Exact-SHA workflow_dispatch was attempted via gh workflow run 'Emulated aarch64 portability' --ref fd7daa43549edd67b60076aa6b1eee333061b438 and rejected HTTP 422: No ref found for SHA. GitHub dispatch requires branch/tag ref, so no new workflow-dispatch run exists. Prior rerun of 35060286408 remains exact-head hosted attempt; local QEMU exact/full and 10x tests pass. Release blocked/ownerless.",
+  "next_action": "Hosted Emulated aarch64 portability workflow 35062888126 succeeded at exact head fd7daa43549edd67b60076aa6b1eee333061b438; job 104686828496 terminal success. This closes the original Goose exit-127 evidence as runner-only/transient; no source diff was required. Release AR done/ownerless.",
   "observed_branch": "feature/ar-1235-goose-fixture-portability",
   "observed_dirty": 3,
   "observed_head": "fd7daa43549edd67b60076aa6b1eee333061b438",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair Goose diagnostic fixture portability under emulated AArch64.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Portable Goose diagnostic fixture",
-  "updated_at": "2026-09-16T06:22:00+00:00",
+  "updated_at": "2026-09-16T06:23:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1235"
 }
 ---
@@ -180,3 +180,7 @@ its intended diagnostic error assertion. Preserve the failure and repair the fix
 
 - 2026-09-16T06:22:00+00:00: Recorded command exit 0; command argv SHA-256
   60e6c69b5b6959d19420e24b9d207807707662a4963961fbb67210f44ea6ed87.
+
+- 2026-09-16T06:23:35+00:00: 2026-09-16T06:23Z: Fresh workflow_dispatch on protected main resolved
+  to exact fd7daa4 and completed green. All hosted AArch64 gates passed, including full asb-agents
+  test suite; no product mutation in AR-1235.
