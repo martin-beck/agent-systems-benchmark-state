@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Run and record the complete locked workspace/full applicable gates at exact ddbe44c; then obtain final independent review/publication authorization. Preserve runner-owned context binding and CLI fail-closed BreakGlass behavior.",
+  "next_action": "Resolve or explicitly delegate certificate/pairing/SecretBackend gaps; then obtain independent review for publication.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "ddbe44c95fde95cb861d633b1dbc08d4a6d0ba21",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 246,
+  "task_revision": 247,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:24:40+00:00",
+  "updated_at": "2026-09-16T19:25:14+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -659,3 +659,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T19:24:40+00:00: Recorded command exit 0; command argv SHA-256
   0a21ca4641a4f1dba7ddde27539ce174b3c8bfb86098b2119722aabb88b0622a.
+
+- 2026-09-16T19:25:14+00:00: Complete locked workspace gate at exact head ddbe44c: cargo fmt check
+  and cargo test --workspace --locked pass (all suites; native/real capability tests remain
+  documented ignored); no gate failure observed. BreakGlass endpoint/schema/CLI focused suites
+  remain green. Review still identifies certificate/pairing/SecretBackend and broader threat-matrix
+  gaps; these must be implemented or explicitly delegated before publication.

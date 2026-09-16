@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Run and record the complete locked workspace/full applicable gates at exact ddbe44c; then obtain final independent review/publication authorization. Preserve runner-owned context binding and CLI fail-closed BreakGlass behavior. | asb_ar0814_enrollment_authz |
+| P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Resolve or explicitly delegate certificate/pairing/SecretBackend gaps; then obtain independent review for publication. | asb_ar0814_enrollment_authz |
 
 ## Open
 
