@@ -9,17 +9,17 @@
   "id": "AR-0814",
   "next_action": "Add a real non-interactive pairing/identity-store CLI ceremony and certificate identity binding; enforce authorization for every remotely reachable call (including AgentStatus), canonical lowercase digests, clock-skew/revocation/rotation concurrency and compromised-store tests, then rerun policy/privacy/full gates before publication.",
   "observed_branch": "feature/remote-enrollment-authz",
-  "observed_dirty": 2,
-  "observed_head": "1f9c36aad338849bfdbbb9922bd2a2efa72e00fa",
+  "observed_dirty": 0,
+  "observed_head": "947abad81c4233625783552b1c890c1b62d1335c",
   "owner": "asb_ar0814_enrollment_authz",
   "plan": "../plans/AR-0814.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T17:59:41+00:00",
+  "updated_at": "2026-09-16T17:59:48+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---

@@ -197,8 +197,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-redacted-request-pointer-replay` | `feature/redacted-request-pointer-replay` | `d7492ef5e9ad` | 0 | behind 635, ahead 0 |
 | `agent-systems-benchmark-reliability-fairness` | `feature/reliability-fairness` | `eb28ca7aeae5` | 0 | behind 681, ahead 0 |
 | `agent-systems-benchmark-remote-control-transport` | `feature/remote-control-transport` | `b7d9e142d684` | 0 | behind 5, ahead 0 |
-| `agent-systems-benchmark-remote-enrollment-authz` | `feature/remote-enrollment-authz` | `1f9c36aad338` | 2 | behind 0, ahead 8 |
-| changed files | - | - | - | `crates/asb-agents/src/auth.rs`, `crates/asb-control/src/authorization.rs` |
+| `agent-systems-benchmark-remote-enrollment-authz` | `feature/remote-enrollment-authz` | `947abad81c42` | 0 | behind 0, ahead 9 |
 | `agent-systems-benchmark-replay-aider` | `feature/replay-aider` | `ec0a2930690c` | 0 | behind 643, ahead 0 |
 | `agent-systems-benchmark-replay-cassettes` | `feature/replay-cassettes` | `cd88f5703fb3` | 0 | behind 763, ahead 0 |
 | `agent-systems-benchmark-replay-codex` | `feature/replay-codex` | `d086fec11f59` | 0 | behind 633, ahead 0 |
