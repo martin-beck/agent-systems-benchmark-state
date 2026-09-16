@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1270",
-  "next_action": "Promote after dependency verification; define the runtime-issued cassette-service handle and integrate real supervised replay traffic.",
+  "next_action": "Implement runtime-owned handle issuance/one-shot consumption and bind CLI replay service; add real request/response and lifecycle/egress fixtures.",
   "observed_branch": "feature/ar-1270-runtime-cassette-handle",
   "observed_dirty": 0,
   "observed_head": "473d715aae490ec4c8a461cabf8bd8b00744090d",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-issued cassette-service handle for supervised strict replay.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Runtime-issued cassette-service handle",
-  "updated_at": "2026-09-16T23:07:01+00:00",
+  "updated_at": "2026-09-16T23:07:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1270-runtime-cassette-handle"
 }
 ---
@@ -50,3 +50,9 @@ the CLI.
 
 - 2026-09-16T23:06:54+00:00: Recorded command exit 0; command argv SHA-256
   b2f9e212755ac21a94c2e70304dae6e0ecd4a23b2b136fccacd3cc432713dcde.
+
+- 2026-09-16T23:07:19+00:00: Signed checkpoint 473d715 adds dependency-neutral asb-core
+  ReplayServiceHandleV1 with bounded generation/cassette/route identity validation and
+  positive/negative tests. asb-core suite passes 17/17 and fmt pass; product tree clean. Initial fmt
+  command failed due malformed one-line enum delimiter in fresh file; corrected syntax before green
+  rerun. Runtime issuance, CLI binding, and supervised cassette lifecycle remain next.

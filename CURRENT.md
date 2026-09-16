@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1270](tasks/AR-1270-runtime-cassette-handle.md): Runtime-issued cassette-service handle | Provide a runtime-issued cassette-service handle for supervised strict replay. | Promote after dependency verification; define the runtime-issued cassette-service handle and integrate real supervised replay traffic. | asb_ar1024_lifecycle_router |
+| P0 | [AR-1270](tasks/AR-1270-runtime-cassette-handle.md): Runtime-issued cassette-service handle | Provide a runtime-issued cassette-service handle for supervised strict replay. | Implement runtime-owned handle issuance/one-shot consumption and bind CLI replay service; add real request/response and lifecycle/egress fixtures. | asb_ar1024_lifecycle_router |
 
 ## Open
 
