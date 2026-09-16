@@ -9,7 +9,7 @@
     "AR-1230"
   ],
   "id": "AR-1232",
-  "next_action": "Native descendant-egress harness now passes 6/6 with explicit ASB_TEST_ROOT at abc0317; run full locked workspace and policy/privacy gates, then obtain independent exact-head review. Native capability must remain explicit in CI.",
+  "next_action": "abc0317 is clean, signed/DCO, pushed; native strict replay 6/6, full locked offline workspace, repository policy, and signature policy all pass. Request independent exact-head review focused on child egress denial and lifecycle cleanup; do not publish/merge before approval.",
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "abc031720e438e4a6dc8f2fa655c1343af7bbc3c",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 300,
+  "task_revision": 301,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T04:21:50+00:00",
+  "updated_at": "2026-09-16T04:22:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -789,3 +789,8 @@
 
 - 2026-09-16T04:21:50+00:00: Recorded command exit 0; command argv SHA-256
   f52d7117bff5b817c45898a43532d74fdecd3759af131fc1ad6a70475a1b3215.
+
+- 2026-09-16T04:22:18+00:00: Gate evidence complete: native strict_replay_sandbox with explicit
+  ASB_TEST_ROOT passed 6/6; cargo test --locked --offline --workspace exited 0; repository_policy
+  --base origin/main --head HEAD passed; signature policy unittest ran 16 tests OK. Exact product
+  head abc031720e438e4a6dc8f2fa655c1343af7bbc3c, worktree clean.

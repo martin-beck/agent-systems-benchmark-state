@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1232](tasks/AR-1232-sandboxed-replay-process-supervision.md): Sandboxed replay process supervision | Supervise strict replay adapters inside the approved network-denied sandbox. | Native descendant-egress harness now passes 6/6 with explicit ASB_TEST_ROOT at abc0317; run full locked workspace and policy/privacy gates, then obtain independent exact-head review. Native capability must remain explicit in CI. | asb_ar1232_sandbox_supervision |
+| P0 | [AR-1232](tasks/AR-1232-sandboxed-replay-process-supervision.md): Sandboxed replay process supervision | Supervise strict replay adapters inside the approved network-denied sandbox. | abc0317 is clean, signed/DCO, pushed; native strict replay 6/6, full locked offline workspace, repository policy, and signature policy all pass. Request independent exact-head review focused on child egress denial and lifecycle cleanup; do not publish/merge before approval. | asb_ar1232_sandbox_supervision |
 | P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Await exact-head CI for b0df3fb; inspect AArch64 and all required checks, independently review, merge only if all green. | asb_ar0909_repair |
 
 ## Open
