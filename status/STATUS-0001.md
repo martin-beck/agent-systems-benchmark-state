@@ -7,13 +7,13 @@
 
 ## Portfolio overview
 
-**287 ARs tracked** across 7 active status categories.
+**287 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 5 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 19 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 20 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 194 |
@@ -347,7 +347,7 @@ flowchart LR
         AR_1251["AR-1251 - Blocked"]:::status_blocked
         AR_1252["AR-1252 - Done"]:::status_done
         AR_1253["AR-1253 - Done"]:::status_done
-        AR_1254["AR-1254 - In progress"]:::status_in_progress
+        AR_1254["AR-1254 - Blocked"]:::status_blocked
         AR_1255["AR-1255 - Planned"]:::status_planned
         AR_1256["AR-1256 - Blocked"]:::status_blocked
         AR_1257["AR-1257 - Planned"]:::status_planned
@@ -1461,12 +1461,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md): Qualify MockAgents through pinned Python transport | asb_ar1254_dependency_audit_20260916 | Qualify MockAgents through the pinned Python sandbox. | Blocked: wait for AR-1258 to provide an approved digest-pinned arm64 QEMU runner with fix-binary support and for AR-1255 to provide bundled in-container transport/egress evidence. Then resume AR-1254 to qualify real executable protocol, malformed/oversized inputs, cancellation/descendant cleanup, network-none denial, closed provenance, and repeat-clean-state on amd64 and arm64. Do not promote or claim AR-1255 until AR-1254 completes. |
-
 ### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -1477,7 +1471,7 @@ flowchart LR
 | P0 | [AR-1044](../tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Unclaimed | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. |
 | P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Unclaimed | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Coordinator must create and link the successor AR for certificate issuance/chain validation and trusted route/ancestor authority; preserve this exact clean head and do not publish/close as fully complete until successor scope and bounded acceptance are recorded. |
 
-### Blocked (19)
+### Blocked (20)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1498,6 +1492,7 @@ flowchart LR
 | P1 | [AR-1249](../tasks/AR-1249-mockagents-qualification-evidence.md): Complete MockAgents executable qualification evidence | Unclaimed | Complete missing evidence for the pinned MockAgents executable qualification. | Investigate pinned MockAgents v0.5.0 streaming fault semantics or create a narrowly scoped candidate repair AR; rerun strict lifecycle/network qualification only after terminal-marker rejection is proven. |
 | P1 | [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md): Extend MockAgents qualification harness | Unclaimed | Extend the pinned MockAgents executable qualification harness. | Acquire approved pinned arm64 emulator runner; then run arm64 repeat qualification. |
 | P1 | [AR-1251](../tasks/AR-1251-mockagents-transport-sandbox.md): Add MockAgents transport sandbox fixture | Unclaimed | Add a bounded transport and sandbox fixture for MockAgents qualification. | Await reviewed AR-1252 integration allowing pinned MockAgents and Python client in one approved sandbox; then add real transport/lifecycle/egress tests. |
+| P1 | [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md): Qualify MockAgents through pinned Python transport | Unclaimed | Qualify MockAgents through the pinned Python sandbox. | Blocked: wait for AR-1258 to provide an approved digest-pinned arm64 QEMU runner with fix-binary support and for AR-1255 to provide bundled in-container transport/egress evidence. Then resume AR-1254 to qualify real executable protocol, malformed/oversized inputs, cancellation/descendant cleanup, network-none denial, closed provenance, and repeat-clean-state on amd64 and arm64. Do not promote or claim AR-1255 until AR-1254 completes. |
 | P1 | [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md): Execute bundled MockAgents transport in isolation | Unclaimed | Execute bundled MockAgents transport in isolation. | Implement bundled in-container MockAgents transport and digest-pinned arm64 QEMU evidence. |
 | P1 | [AR-1258](../tasks/AR-1258-docker-binfmt-qemu.md): Provision Docker binfmt/QEMU capability | Unclaimed | Provision and verify Docker binfmt/QEMU for multiarch qualification. | Inspect Docker/binfmt/QEMU capability and approved privilege workflow; add bounded verification and rollback-safe checks. |
 

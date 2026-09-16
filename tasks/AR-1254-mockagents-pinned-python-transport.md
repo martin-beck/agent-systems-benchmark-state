@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1254-mockagents-pinned-python-transport",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T20:24:38+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1252",
     "AR-1253"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1254-mockagents-pinned-python-transport",
   "observed_dirty": 0,
   "observed_head": "154a34549784bd3bba0a5fa47d046a237897980a",
-  "owner": "asb_ar1254_dependency_audit_20260916",
+  "owner": "",
   "plan": "../plans/AR-1254.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Qualify MockAgents through the pinned Python sandbox.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Qualify MockAgents through pinned Python transport",
-  "updated_at": "2026-09-16T19:55:04+00:00",
+  "updated_at": "2026-09-16T19:55:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1254"
 }
 ---
@@ -191,3 +191,10 @@ Keep fixtures, runtimes, caches, and evidence under `/srv/data/projects`.
 - 2026-09-16T19:55:04+00:00: Corrected next_action after dependency audit; AR-1252 is amd64-only and
   cannot satisfy arm64/QEMU or bundled in-container transport requirements. AR-1258 remains the
   external infrastructure blocker; no product mutation.
+
+- 2026-09-16T19:55:06+00:00: Released ownerless with corrected dependency-specific next action.
+  AR-1252 Docker 29.7.2 x86_64 approved runner is usable only for amd64. AR-1254 current 154a345
+  lacks real in-container transport, actual outbound-denial, arm64/QEMU, and closed provenance
+  evidence. AR-1255 remains planned behind AR-1254/1253. AR-1258 remains untouched and blocked by
+  missing qemu-aarch64 fix-binary F plus unavailable Docker bridge and unauthorized host
+  maintenance. No product mutation.
