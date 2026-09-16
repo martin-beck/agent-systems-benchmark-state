@@ -2,7 +2,7 @@
 {
   "branch": "docs/ar-1210-tutorial-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T05:50:16+00:00",
+  "claim_expires": "2026-09-16T06:06:28+00:00",
   "depends_on": [],
   "id": "AR-1210",
   "next_action": "PR #184 exact head 3e475bd after complete source-header repair; monitor fresh exact-head checks, diagnose failures, and do not merge before all required checks and coordinator approval.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define offline tutorial steps and validate them against the ASB CLI grammar.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Tutorial contract and syntax validator",
-  "updated_at": "2026-09-16T04:05:36+00:00",
+  "updated_at": "2026-09-16T04:06:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1210"
 }
 ---
@@ -214,3 +214,5 @@ be required.
 
 - 2026-09-16T04:05:36+00:00: Recorded command exit 8; command argv SHA-256
   d1789e00bf09d7462a2b402231054b4ee77ef67944bd160c1d1d4d9bc9fe4caf.
+
+- 2026-09-16T04:06:28+00:00: Heartbeat by asb_ar1210_tutorial_contract.
