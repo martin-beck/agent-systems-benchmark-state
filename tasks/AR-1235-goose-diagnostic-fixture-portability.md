@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair Goose diagnostic fixture portability under emulated AArch64.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Portable Goose diagnostic fixture",
-  "updated_at": "2026-09-16T05:50:19+00:00",
+  "updated_at": "2026-09-16T05:50:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1235"
 }
 ---
@@ -50,3 +50,6 @@ its intended diagnostic error assertion. Preserve the failure and repair the fix
   /srv/data/projects/agent-systems-benchmark-ar-1235 exited 0; test
   diagnostic_and_symlink_fail_closed passed 1/1 on x86_64. Durable command record was created;
   cross-architecture reproduction remains required. No source changes or gate weakening.
+
+- 2026-09-16T05:50:55+00:00: Recorded command exit 101; command argv SHA-256
+  2fbebf94168385900ca04864fc82cf8559285553de3b1507bddcf38dae3ef4f6.
