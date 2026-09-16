@@ -15,11 +15,11 @@
   "plan": "../plans/AR-0859.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 240,
+  "task_revision": 241,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-16T07:02:42+00:00",
+  "updated_at": "2026-09-16T07:05:43+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -824,3 +824,7 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 - 2026-09-16T07:02:42+00:00: Released blocked and ownerless. Reproducible runtime setup cannot
   proceed until complete hashed dependencies or an approved immutable container/VM image digest is
   supplied; preserve fail-closed live qualification.
+
+- 2026-09-16T07:05:43+00:00: User-authorized complete hashed runtime setup: acquire exact
+  170-package lock artifacts with project-local managed Python 3.11, verify hashes and interpreter
+  identity, then rerun offline/live qualification.
