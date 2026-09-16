@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair Goose diagnostic fixture portability under emulated AArch64.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Portable Goose diagnostic fixture",
-  "updated_at": "2026-09-16T06:08:21+00:00",
+  "updated_at": "2026-09-16T06:08:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1235"
 }
 ---
@@ -120,3 +120,6 @@ its intended diagnostic error assertion. Preserve the failure and repair the fix
   repository-style QEMU AArch64 to strengthen hosted-failure flakiness evidence.
 
 - 2026-09-16T06:08:21+00:00: Claimed by asb_ar1235_goose_portability.
+
+- 2026-09-16T06:08:46+00:00: Recorded command exit 0; command argv SHA-256
+  a9421f3fc3ed74fbc44fc0ee3825a44d059383d325c478bf9cd95d0a19374ea7.
