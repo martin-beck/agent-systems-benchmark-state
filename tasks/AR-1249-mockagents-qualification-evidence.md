@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1249-mockagents-qualification-evidence",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T20:39:12+00:00",
+  "claim_expires": "2026-09-16T20:43:27+00:00",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Complete missing evidence for the pinned MockAgents executable qualification.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Complete MockAgents executable qualification evidence",
-  "updated_at": "2026-09-16T18:43:25+00:00",
+  "updated_at": "2026-09-16T18:43:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1249"
 }
 ---
@@ -101,3 +101,5 @@ network denial, privacy, signature, DCO, and exact-tree gates.
 - 2026-09-16T18:43:25+00:00: Diagnosed repeated exit-1: MockAgents rate-limit chaos is
   agent-configured and produced statuses 200/429; the synthetic /v1/fault/rate-limit route
   assumption was invalid. No qualification claim made.
+
+- 2026-09-16T18:43:27+00:00: Heartbeat by asb_ar1249_mockagents_qualification.
