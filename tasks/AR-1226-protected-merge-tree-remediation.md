@@ -2,7 +2,7 @@
 {
   "branch": "repair/protected-merge-tree-policy",
   "checkpoint_commit": "ef82484fa78dd31c0d7b5ad48e2dc51a93ec1339",
-  "claim_expires": "2026-09-16T08:27:41+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1200"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "repair/protected-merge-tree-policy",
   "observed_dirty": 0,
   "observed_head": "fd7daa43549edd67b60076aa6b1eee333061b438",
-  "owner": "asb_ar1232_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1226.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Remediate the protected-main merge-tree mismatch from stale-base PR merging.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Protected merge-tree remediation",
-  "updated_at": "2026-09-16T06:28:40+00:00",
+  "updated_at": "2026-09-16T06:28:50+00:00",
   "worktree_key": "agent-systems-benchmark-protected-merge-tree-remediation"
 }
 ---
@@ -44,3 +44,9 @@ current-main requalification; it must not mark the merge usable until policy ass
   closed: ef82484 lacks an allowed SSH signature; log reports RSA key B5690EEEBB952194 unavailable.
   This is the protected merge-boundary failure, not a product test failure. Worktree
   repair/protected-merge-tree-policy is clean at origin/main fd7daa4.
+
+- 2026-09-16T06:28:50+00:00: Released blocked/ownerless after exact reproduction. repository_policy
+  on historical range d354a512..ef82484 fails before merge-tree comparison because ef82484 has an
+  unavailable RSA/GPG signature, not an allowed SSH signature. Protected history must not be
+  rewritten; requires coordinator-owned forward-only signed-DCO successor/attestation before
+  requalification.
