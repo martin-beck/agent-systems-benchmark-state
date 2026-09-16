@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-live",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T08:47:36+00:00",
   "depends_on": [
     "AR-0858"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "230084ef1ea88168eac2be9098cc3c71dd14c465",
-  "owner": "",
+  "owner": "asb_ar0859_postmerge_verify",
   "plan": "../plans/AR-0859.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 283,
+  "task_revision": 284,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-16T07:54:33+00:00",
+  "updated_at": "2026-09-16T08:17:36+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -960,3 +960,5 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   Lease expired at 2026-09-16T07:54:12Z with no worker heartbeat/process. Preserve PR124 merge
   1c07e907 and failed post-merge policy evidence; leave AR open for AR-0897 signed protected-main
   repair, then rerun policy and close.
+
+- 2026-09-16T08:17:36+00:00: Claimed by asb_ar0859_postmerge_verify.
