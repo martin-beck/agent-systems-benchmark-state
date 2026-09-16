@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1249.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Complete missing evidence for the pinned MockAgents executable qualification.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Complete MockAgents executable qualification evidence",
-  "updated_at": "2026-09-16T18:45:01+00:00",
+  "updated_at": "2026-09-16T18:45:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1249"
 }
 ---
@@ -117,3 +117,6 @@ network denial, privacy, signature, DCO, and exact-tree gates.
   because configured one-chunk truncation still produced a terminal marker (HTTP 200 SSE, bounded
   600-byte response). Candidate behavior blocks qualification; investigate supported fault surface
   or create follow-on repair. No qualification claim.
+
+- 2026-09-16T18:45:23+00:00: Resume briefly to clean unvalidated local fixture edits before
+  preserving the candidate behavior blocker.
