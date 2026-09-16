@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1248-strict-replay-cli-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T21:27:11+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1231",
     "AR-1232"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1248-strict-replay-cli-contract",
   "observed_dirty": 0,
   "observed_head": "7d9c2ee2e08b9d61cb03837236918575405fb5c2",
-  "owner": "coordinator-successor-creation",
+  "owner": "",
   "plan": "../plans/AR-1248.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 156,
+  "task_revision": 157,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T20:57:14+00:00",
+  "updated_at": "2026-09-16T20:57:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -458,3 +458,6 @@ formal, privacy, signature, DCO, and exact-tree gates.
 
 - 2026-09-16T20:57:14+00:00: Recorded command exit 0; command argv SHA-256
   5ad75035a2042edba60af0019e386fdd719c4dbcf61f8ddab2eed2d3b1fac0ce.
+
+- 2026-09-16T20:57:22+00:00: Added AR-1262 runtime-owned launch authority successor; preserve
+  AR-1261 blocked evidence.
