@@ -55,7 +55,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1251` | `feature/ar-1251-mockagents-transport-sandbox` | `128ecddbfdb7` | 0 | behind 27, ahead 0 |
 | `agent-systems-benchmark-ar-1252` | `feature/ar-1252-approved-isolated-runner` | `1d0c3cd017e8` | 0 | behind 4, ahead 0 |
 | `agent-systems-benchmark-ar-1253` | `feature/ar-1253-pinned-python-transport-runtime` | `b7797d05c1a1` | 0 | behind 1, ahead 0 |
-| `agent-systems-benchmark-ar-1254` | `feature/ar-1254-mockagents-pinned-python-transport` | `8b0742860c39` | 0 | behind 0, ahead 1 |
+| `agent-systems-benchmark-ar-1254` | `feature/ar-1254-mockagents-pinned-python-transport` | `8b0742860c39` | 2 | behind 0, ahead 1 |
+| changed files | - | - | - | `tools/llm-double-spike/test_transport_fixture.py`, `tools/llm-double-spike/transport_fixture.py` |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 472, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 575, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 469, ahead 0 |

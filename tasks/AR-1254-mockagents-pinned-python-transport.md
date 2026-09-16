@@ -10,7 +10,7 @@
   "id": "AR-1254",
   "next_action": "Replace synthetic-only fixture with real pinned MockAgents executable invocation through run_isolated.py; add bounded body/malformed input, ordered tool-result, cancellation/backpressure descendant cleanup, network-none denial classification, repeat-clean-state and amd64/arm64 evidence with immutable artifact provenance, then rerun gates.",
   "observed_branch": "feature/ar-1254-mockagents-pinned-python-transport",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "8b0742860c39a9a6ae499270272dcc1861305f89",
   "owner": "asb_ar1254_mockagents_transport",
   "plan": "../plans/AR-1254.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify MockAgents through the pinned Python sandbox.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Qualify MockAgents through pinned Python transport",
-  "updated_at": "2026-09-16T13:49:40+00:00",
+  "updated_at": "2026-09-16T13:49:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1254"
 }
 ---
