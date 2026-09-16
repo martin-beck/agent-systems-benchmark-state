@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend the pinned MockAgents executable qualification harness.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Extend MockAgents qualification harness",
-  "updated_at": "2026-09-16T10:58:29+00:00",
+  "updated_at": "2026-09-16T10:58:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1250"
 }
 ---
@@ -114,3 +114,6 @@ privacy, signature, DCO, and exact-tree gates; do not claim support from host in
   commit 94a3122 pushed; amd64 qualification including tool_call and repeat-clean-state passes.
   Remaining tool-result, cancellation/backpressure, outbound-denial, malformed/cleanup cases and
   arm64 rerun remain outstanding.
+
+- 2026-09-16T10:58:31+00:00: Recorded command exit 0; command argv SHA-256
+  90dce9120d406bab104931a229f8f74ac6f7f9d63c9a9413047905efe7cafdff.
