@@ -8,7 +8,7 @@
     "AR-1253"
   ],
   "id": "AR-1254",
-  "next_action": "Replace synthetic-only fixture with real pinned MockAgents executable invocation through run_isolated.py; add bounded body/malformed input, ordered tool-result, cancellation/backpressure descendant cleanup, network-none denial classification, repeat-clean-state and amd64/arm64 evidence with immutable artifact provenance, then rerun gates.",
+  "next_action": "Add arm64 artifact selection/provenance and runner-proven network-none denial; request independent review after full gates.",
   "observed_branch": "feature/ar-1254-mockagents-pinned-python-transport",
   "observed_dirty": 0,
   "observed_head": "ce5452c2104d6101f5bdfb35bb4d817e48a713cd",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify MockAgents through the pinned Python sandbox.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Qualify MockAgents through pinned Python transport",
-  "updated_at": "2026-09-16T13:50:36+00:00",
+  "updated_at": "2026-09-16T13:50:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1254"
 }
 ---
@@ -77,3 +77,11 @@ Keep fixtures, runtimes, caches, and evidence under `/srv/data/projects`.
 
 - 2026-09-16T13:50:26+00:00: Recorded command exit 0; command argv SHA-256
   6b7b34d3706b12235bfb3cf3735c327b3fd33382dce3f672e2d95e3f09aa7f34.
+
+- 2026-09-16T13:50:53+00:00: Signed+DCO commit ce5452c pushed. Transport fixture now invokes the
+  approved run_isolated.py with Python digest and pinned MockAgents executable artifact; live
+  invocation returned mockagents_runner=pinned-version-verified. Real loopback tool-result ordering,
+  repeated clean-state, process-group cancellation/cleanup and bounded body checks pass. Full
+  llm-double-spike suite 19/19, transport focused 2/2, py_compile/diff checks pass. Non-loopback
+  attempt remains explicitly unavailable-outside-isolation until network-none runner evidence; arm64
+  artifact selection/provenance remains.
