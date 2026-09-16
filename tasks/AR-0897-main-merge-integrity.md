@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-16T04:56:54+00:00",
+  "updated_at": "2026-09-16T04:57:03+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -289,3 +289,11 @@ Implementation has not started. Read the linked plan before claiming.
   d4e23f4ed421370a214c3acd542d3d16f5786dd2de203b0da4a3103f6e4de25b.
 
 - 2026-09-16T04:56:54+00:00: Heartbeat by asb_ar0897_merge_integrity.
+
+- 2026-09-16T04:57:03+00:00: Current clean signed/DCO head aceb191 is rebased onto origin/main
+  00f3763. Focused integration 9/9, repository policy, py_compile, cargo fmt, and asb-protocol lib
+  40/40 pass. Prior full workspace test failed only with ENOSPC after exhausting /srv/data; removed
+  this owned worktree target build artifact (491 MiB) through handoffctl. Next: run Python
+  policy/integration and any feasible remaining gates, perform independent exact-head review, then
+  publish updated PR126 only after clean exact-tree approval; preserve 00f3763 and do not use GitHub
+  web merge.
