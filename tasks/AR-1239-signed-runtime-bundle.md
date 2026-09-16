@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1239-signed-runtime-bundle",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T10:30:12+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1236"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1239-signed-runtime-bundle",
   "observed_dirty": 0,
   "observed_head": "6836bb4010f55062ae3c3f6eac793c53c08495c8",
-  "owner": "asb_ar1239_bundle_worker",
+  "owner": "",
   "plan": "../plans/AR-1239.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Package and sign the verified loopback supervisor and sidecar runtime payloads.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Signed supervisor and sidecar runtime bundle",
-  "updated_at": "2026-09-16T08:30:12+00:00",
+  "updated_at": "2026-09-16T08:30:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1239"
 }
 ---
@@ -33,3 +33,9 @@ verification, and unrelated-process safety.
   gates complete. Promote for release review.
 
 - 2026-09-16T08:30:12+00:00: Claimed by asb_ar1239_bundle_worker.
+
+- 2026-09-16T08:30:33+00:00: Implemented signed supervisor/sidecar manifest payload wiring in
+  6836bb4010f55062ae3c3f6eac793c53c08495c8. Verified exact ED25519 commit signature
+  (SHA256:a36V6yPvRZyxnQ2113tiA/MlHt7mPfJEXAGByBXVkuE), DCO, locked asb-bundle tests (18 offline
+  verifier + 2 schema; all unit/doc), workspace clippy -D warnings, and workspace rustdoc -D
+  warnings. Runtime launch/native Bubblewrap remains AR-1238 scope.
