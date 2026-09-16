@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**274 ARs tracked** across 7 active status categories.
+**275 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 4 |
+| **Open** | Dependency-ready and available to claim | 5 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 10 |
 | **Planned** | Defined work awaiting promotion or dependencies | 63 |
 | **Future** | Deferred roadmap work | 1 |
@@ -340,6 +340,7 @@ flowchart LR
         AR_1244["AR-1244 - In progress"]:::status_in_progress
         AR_1245["AR-1245 - Done"]:::status_done
         AR_1246["AR-1246 - In progress"]:::status_in_progress
+        AR_1247["AR-1247 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1123,6 +1124,7 @@ flowchart LR
     AR_1242 --> AR_1246
     AR_1243 --> AR_1245
     AR_1245 --> AR_1246
+    AR_1246 --> AR_1247
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1410,7 +1412,8 @@ flowchart LR
 | [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md) | [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md), [AR-1241](../tasks/AR-1241-native-isolation-matrix.md) | [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md) |
 | [AR-1244](../tasks/AR-1244-publish-replay-supervision.md) | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) | None |
 | [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md) | [AR-1242](../tasks/AR-1242-protected-main-admission.md), [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md) | [AR-1246](../tasks/AR-1246-protected-main-dco-flow.md) |
-| [AR-1246](../tasks/AR-1246-protected-main-dco-flow.md) | [AR-1242](../tasks/AR-1242-protected-main-admission.md), [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md) | None |
+| [AR-1246](../tasks/AR-1246-protected-main-dco-flow.md) | [AR-1242](../tasks/AR-1242-protected-main-admission.md), [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md) | [AR-1247](../tasks/AR-1247-protected-main-dco-workflow.md) |
+| [AR-1247](../tasks/AR-1247-protected-main-dco-workflow.md) | [AR-1246](../tasks/AR-1246-protected-main-dco-flow.md) | None |
 
 ## Complete AR inventory
 
@@ -1421,7 +1424,7 @@ flowchart LR
 | P0 | [AR-1244](../tasks/AR-1244-publish-replay-supervision.md): Publish AR-1232 strict-replay supervision | asb_ar1244_publish_1232 | Publish strict-replay supervision integration. | Run fresh PR193 checks at rebased head 2f10f27/base 5a2c151; obtain independent review before signed merge. |
 | P0 | [AR-1246](../tasks/AR-1246-protected-main-dco-flow.md): Protected-main DCO flow | asb_ar1237_launch_bridge_worker | Durably admit authenticated GitHub protected-main merges without one-off DCO hash exceptions. | Wait for remaining required PR #195 checks; merge only when all are successful, then run post-merge verification. |
 
-### Open (4)
+### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1429,6 +1432,7 @@ flowchart LR
 | P0 | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md): Implement &#96;asb tui&#96; lifecycle routing | Unclaimed | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. |
 | P0 | [AR-1042](../tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Unclaimed | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. |
 | P0 | [AR-1044](../tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Unclaimed | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. |
+| P0 | [AR-1247](../tasks/AR-1247-protected-main-dco-workflow.md): Protected-main DCO workflow binding | Unclaimed | Route the Rust verification workflow through durable protected-main DCO admission on generated merge commits. | Update verify.yml main-push DCO certification to use protected-main admission and add workflow regression coverage. |
 
 ### Blocked (10)
 
@@ -1578,4 +1582,3 @@ flowchart LR
 | P0 | [AR-1198](../tasks/AR-1198.md): Canonical authenticated agent-catalog digest | Unclaimed | Define and enforce the canonical authenticated ASB v1.4 agent-catalog digest. | Independently review PR #174 at exact head 3cc8fa1a27587642bda5100f45140c11f1fd0c6d, run cross-repository vector checks with asb-tui AR-1195, then merge only after all exact-head checks are green. |
 | P0 | [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md): Qualify provider authentication backends and probes | Unclaimed | Qualify provider authentication backends, probes and application integration. | PR #177 exact head 2d716c8 includes std-only polled connect/write, authenticated Gemini/Ollama wire fixtures, and stabilized malformed/redirect/oversized response fixtures. Await exact-head CI and independent review; investigate any architecture-runner failures. |
 | P0 | [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md): Provider authentication application integration | Unclaimed | Integrate provider authentication into ASB config, control and CLI surfaces. | AR complete: merged PR #179 at 2f96f211; retain post-merge verification and release evidence in durable history. |
-| P0 | [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md): Authenticated provider-request seam and secret injection contract | Unclaimed | Define the approved bounded provider authentication request and secret-injection seam. | PR #178 exact head 3d0349a requires independent re-review and CI rerun. inject now polls a current-generation callback before and after sink; synchronized AtomicU64 transition test proves concurrent rotation fails closed. Rollback/privacy tests remain green; delegated transport/application gates remain AR-1228/AR-1229. |
