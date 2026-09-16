@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1251-mockagents-transport-sandbox",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T20:52:09+00:00",
+  "claim_expires": "2026-09-16T20:52:45+00:00",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a bounded transport and sandbox fixture for MockAgents qualification.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Add MockAgents transport sandbox fixture",
-  "updated_at": "2026-09-16T18:52:09+00:00",
+  "updated_at": "2026-09-16T18:52:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1251"
 }
 ---
@@ -67,3 +67,5 @@ preserve privacy, network-denial, signature, DCO, and exact-tree gates.
   network or evidence gates.
 
 - 2026-09-16T18:52:09+00:00: Claimed by asb_ar1251_mockagents_transport.
+
+- 2026-09-16T18:52:45+00:00: Heartbeat by asb_ar1251_mockagents_transport.
