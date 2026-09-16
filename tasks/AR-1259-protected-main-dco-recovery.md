@@ -10,16 +10,16 @@
   "next_action": "Protected merge 8b81be4 lacks SSH/DCO identity; coordinate forward signed recovery or repository admission repair, then rerun exact-main policy before release.",
   "observed_branch": "repair/pr202-protected-main-dco",
   "observed_dirty": 0,
-  "observed_head": "7edda7d06df7a421e4cb92758bcb18cb78ce6590",
+  "observed_head": "8b81be45b1cf3e2f42540fae8c623074bbacaf88",
   "owner": "asb_ar1259_signed_recovery",
   "plan": "../plans/AR-1259.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover a signed protected-main DCO boundary after the unsigned PR202 web merge.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Protected-main DCO recovery for PR202",
-  "updated_at": "2026-09-16T17:03:22+00:00",
+  "updated_at": "2026-09-16T17:03:29+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-dco-1259"
 }
 ---
