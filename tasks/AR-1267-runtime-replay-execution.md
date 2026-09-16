@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement real runtime-owned strict-replay execution and lifecycle supervision.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Runtime strict-replay execution hook",
-  "updated_at": "2026-09-16T22:43:25+00:00",
+  "updated_at": "2026-09-16T22:43:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1267-runtime-replay-execution"
 }
 ---
@@ -77,3 +77,6 @@ context-boundary evidence and its blocker; do not accept metadata-only behavior 
 
 - 2026-09-16T22:43:25+00:00: Recorded command exit 0; command argv SHA-256
   9b4f5830cd9e0972b86097a59f842e4e6d248b33645a803f7240ec33d914badf.
+
+- 2026-09-16T22:43:33+00:00: Recorded command exit 0; command argv SHA-256
+  658fe4d9952ba495742359d9bfffd62d44e4bb5743cf835ab5f9269aa0491308.
