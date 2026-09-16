@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 231,
+  "task_revision": 232,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:09:25+00:00",
+  "updated_at": "2026-09-16T19:14:02+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -604,3 +604,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-16T19:09:25+00:00: Heartbeat refreshed. Focused locked endpoint 8/8, schema conformance
   5/5, and CLI workflow transcript 3/3 pass at signed heads 45310e6/47ba610; worktree clean. Full
   gate diagnosis and remaining runner-owned auth-context gap remain explicit.
+
+- 2026-09-16T19:14:02+00:00: Recorded command exit 0; command argv SHA-256
+  0d8cebbc69f8d169e050f730e3c611fe3ed17d38544f31b2e4d19c2c91dd2c25.
