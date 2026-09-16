@@ -50,7 +50,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1247` | `fix/ar-1247-protected-main-dco-workflow` | `53d018d69057` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-ar-1248` | `feature/ar-1248-strict-replay-cli-contract` | `8896cad357e3` | 0 | behind 0, ahead 3 |
 | `agent-systems-benchmark-ar-1249` | `feature/ar-1249-mockagents-qualification-evidence` | `128ecddbfdb7` | 0 | behind 0, ahead 0 |
-| `agent-systems-benchmark-ar-1250` | `feature/ar-1250-mockagents-harness-extension` | `16358c4c8992` | 0 | behind 0, ahead 4 |
+| `agent-systems-benchmark-ar-1250` | `feature/ar-1250-mockagents-harness-extension` | `8cb14399dd5c` | 0 | behind 0, ahead 5 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 445, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 548, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 442, ahead 0 |
