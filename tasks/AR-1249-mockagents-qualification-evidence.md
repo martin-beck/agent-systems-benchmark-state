@@ -8,7 +8,7 @@
     "AR-0889"
   ],
   "id": "AR-1249",
-  "next_action": "Fix qualification fixture: MockAgents rate limiter returns 200 then 429; replace unsupported /v1/fault route assumptions, then add deterministic hostile lifecycle cases.",
+  "next_action": "Investigate pinned MockAgents v0.5.0 streaming fault semantics or create a narrowly scoped candidate repair AR; rerun strict lifecycle/network qualification only after terminal-marker rejection is proven.",
   "observed_branch": "feature/ar-1249-mockagents-qualification-evidence",
   "observed_dirty": 0,
   "observed_head": "128ecddbfdb7fcfff6e257adf3237b5866aca481",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Complete missing evidence for the pinned MockAgents executable qualification.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Complete MockAgents executable qualification evidence",
-  "updated_at": "2026-09-16T18:46:09+00:00",
+  "updated_at": "2026-09-16T18:46:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1249"
 }
 ---
@@ -138,3 +138,6 @@ network denial, privacy, signature, DCO, and exact-tree gates.
   clean ownerless branch.
 
 - 2026-09-16T18:46:09+00:00: Claimed by asb_ar1249_mockagents_qualification.
+
+- 2026-09-16T18:46:11+00:00: Updated next action to the confirmed candidate behavior blocker; branch
+  remains clean and no qualification claim.
