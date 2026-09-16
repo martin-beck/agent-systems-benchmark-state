@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1231",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T04:00:07+00:00",
+  "claim_expires": "2026-09-16T04:02:01+00:00",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents through strict replay without provider egress or live fallback.",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "Strict replay execution and egress-isolation seam",
-  "updated_at": "2026-09-16T02:00:31+00:00",
+  "updated_at": "2026-09-16T02:02:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1231"
 }
 ---
@@ -244,3 +244,5 @@
   strict_replay tests pass. Signed DCO commit f1f4723 pushed; clean worktree. Prior exit-1 was an
   apply_patch context mismatch during test insertion and was corrected; no product gate remained
   failed.
+
+- 2026-09-16T02:02:01+00:00: Heartbeat by asb_ar1231_replay_seam.
