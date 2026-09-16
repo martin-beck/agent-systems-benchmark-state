@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 103,
+  "task_revision": 104,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T14:52:36+00:00",
+  "updated_at": "2026-09-16T14:52:57+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -300,3 +300,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T14:52:28+00:00: Recorded command exit 0; command argv SHA-256
   677217853e8ebd4123e43ce801e9ce4016f13747adc60641179f1d23418d9067.
+
+- 2026-09-16T14:52:57+00:00: Committed f5a0ef0 (SSH-signed+DCO): exposed
+  EventWindow::resume(last_acknowledged, limit) as strict reconnect API delegating
+  stale/future/gap-checked pagination, preserving no duplicates and contiguous revisions. cargo test
+  --locked -p asb-control passed 43 tests including existing event-window reconnect coverage;
+  product tree clean. Next: independent review of cumulative transport/reconnect scope and CI.
