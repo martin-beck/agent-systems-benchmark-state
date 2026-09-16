@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Add enrollment ceremony identity binding and scoped CLI authorization dispatch; test rotation/revocation audit privacy.",
+  "next_action": "Bind enrollment ceremony to principal fingerprint and CLI authorization context; add rotation/revocation integration tests.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "054b45783023de9a475df3710d33a30e9f9b565a",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T17:44:23+00:00",
+  "updated_at": "2026-09-16T17:44:31+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -98,3 +98,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T17:44:14+00:00: Recorded command exit 0; command argv SHA-256
   3529dc8001e1fa7ef6b9eb23dbab2ee88f8b3153dcc264f478290e7fae4eb23e.
+
+- 2026-09-16T17:44:31+00:00: Signed+DCO 054b457 adds AuthAuditEventV1 and AuthAuditOperation for
+  credential-free enroll/rotate/revoke records. Seven auth tests pass, including secret absence,
+  unknown-field rejection, malformed digest rejection, and rotation audit privacy.
