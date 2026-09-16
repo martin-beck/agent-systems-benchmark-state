@@ -11,7 +11,7 @@
     "AR-0902"
   ],
   "id": "AR-0909",
-  "next_action": "Recover merge integrity for PR127 merge 00f3763: verify required main CI, signed merge/tree/DCO evidence, and repository merge-attestation procedure before closing AR.",
+  "next_action": "Post-merge verified: PR127 change is present in signed protected main merge 7d43c1e; retain merge-attestation evidence and continue normal coordinator monitoring.",
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "aba1f8cded472a6055d8a854c1627a20f7f5b0ac",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 470,
+  "task_revision": 471,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-16T05:20:43+00:00",
+  "updated_at": "2026-09-16T05:21:42+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1559,3 +1559,10 @@ classified.
 - 2026-09-16T05:12:40+00:00: Heartbeat by asb_ar0909_repair.
 
 - 2026-09-16T05:20:43+00:00: Heartbeat by asb_ar0909_repair.
+
+- 2026-09-16T05:21:42+00:00: Post-merge verification complete: PR127 reviewed head aba1f8c is the
+  second parent of protected main merge 7d43c1e; main tree 7a81f23; merge commit is SSH-verifiable
+  (G) and carries DCO Signed-off-by. PR126 required post-merge checks are all green, including
+  AArch64, formal, policy, Rust, fault, platform, headers, AWQ, fuzz, Kani, matcher, and Loom. The
+  intermediate GitHub merge 00f3763 was unsigned, but AR-0897 restored signed/DCO integration in
+  7d43c1e without rewriting history.
