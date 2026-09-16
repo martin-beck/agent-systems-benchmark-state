@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1261-runtime-to-cli-replay-entrypoint",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T22:47:40+00:00",
+  "claim_expires": "2026-09-16T22:48:40+00:00",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-owned entrypoint for strict-replay CLI supervision.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime-to-CLI strict-replay handoff entrypoint",
-  "updated_at": "2026-09-16T20:47:40+00:00",
+  "updated_at": "2026-09-16T20:48:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1261-runtime-cli"
 }
 ---
@@ -38,3 +38,5 @@ preserving fail-closed ownership and bounded lifecycle evidence.
   avoiding AR-1260 dependency cycle.
 
 - 2026-09-16T20:47:40+00:00: Claimed by asb_ar1024_lifecycle_router.
+
+- 2026-09-16T20:48:40+00:00: Heartbeat by asb_ar1024_lifecycle_router.
