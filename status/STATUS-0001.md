@@ -1447,7 +1447,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md): Qualify MockAgents through pinned Python transport | asb_ar1254_mockagents_transport | Qualify MockAgents through the pinned Python sandbox. | Request independent review of exact head 154a345; then open PR and run exact-head CI. |
+| P1 | [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md): Qualify MockAgents through pinned Python transport | asb_ar1254_mockagents_transport | Qualify MockAgents through the pinned Python sandbox. | Implement real executable transport qualification before publication: invoke the pinned MockAgents artifact through run_isolated.py on amd64 and QEMU arm64; bind exact lock source/tag/commit/license/checksums and platform digests; add malformed/oversized body negatives, ordered tool-result/backpressure/cancellation terminal tests, descendant cleanup proof, actual outbound-denial probe inside network-none, and repeat-clean-state evidence. |
 
 ### Open (4)
 
@@ -1598,4 +1598,3 @@ flowchart LR
 | P0 | [AR-1064](../tasks/AR-1064-tmux-hosted-startup-readiness-recovery.md): Recover hosted tmux startup readiness | Unclaimed | Recover authenticated tmux startup observation on the hosted trusted runner without weakening authority or cleanup. | PR #26 is exact-head green but protected merge is blocked because GitHub reports the required context as pending; resolve policy/check-run propagation without admin bypass, then require post-merge Trusted main. |
 | P0 | [AR-1065](../tasks/AR-1065-asb-tui-branch-policy-context.md): Normalize asb-tui branch required-status policy | Unclaimed | Normalize asb-tui main branch protection so successful GitHub Actions checks can merge. | A repository maintainer must remove the stale legacy required-status context from asb-tui main while retaining the app-scoped GitHub Actions check, then re-evaluate PR #26. |
 | P0 | [AR-1100](../tasks/AR-1100.md): Configuration defaults | Unclaimed | Persist configuration defaults. | Post-merge verification complete at protected ASB main; retain merged evidence and monitor downstream wizard dependencies. |
-| P0 | [AR-1110](../tasks/AR-1110.md): Provider and model registry | Unclaimed | Manage providers and models. | Post-merge verification complete: PR #180 merged at 600d5a28; exact-main tree matches feature tree, focused asb-config tests and full offline workspace tests passed, worktree clean. Release AR-1110 as done. |

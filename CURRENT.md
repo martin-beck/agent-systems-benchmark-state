@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1254](tasks/AR-1254-mockagents-pinned-python-transport.md): Qualify MockAgents through pinned Python transport | Qualify MockAgents through the pinned Python sandbox. | Request independent review of exact head 154a345; then open PR and run exact-head CI. | asb_ar1254_mockagents_transport |
+| P1 | [AR-1254](tasks/AR-1254-mockagents-pinned-python-transport.md): Qualify MockAgents through pinned Python transport | Qualify MockAgents through the pinned Python sandbox. | Implement real executable transport qualification before publication: invoke the pinned MockAgents artifact through run_isolated.py on amd64 and QEMU arm64; bind exact lock source/tag/commit/license/checksums and platform digests; add malformed/oversized body negatives, ordered tool-result/backpressure/cancellation terminal tests, descendant cleanup proof, actual outbound-denial probe inside network-none, and repeat-clean-state evidence. | asb_ar1254_mockagents_transport |
 
 ## Open
 

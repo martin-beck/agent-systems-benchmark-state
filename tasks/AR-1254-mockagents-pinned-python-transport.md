@@ -8,7 +8,7 @@
     "AR-1253"
   ],
   "id": "AR-1254",
-  "next_action": "Request independent review of exact head 154a345; then open PR and run exact-head CI.",
+  "next_action": "Implement real executable transport qualification before publication: invoke the pinned MockAgents artifact through run_isolated.py on amd64 and QEMU arm64; bind exact lock source/tag/commit/license/checksums and platform digests; add malformed/oversized body negatives, ordered tool-result/backpressure/cancellation terminal tests, descendant cleanup proof, actual outbound-denial probe inside network-none, and repeat-clean-state evidence.",
   "observed_branch": "feature/ar-1254-mockagents-pinned-python-transport",
   "observed_dirty": 0,
   "observed_head": "154a34549784bd3bba0a5fa47d046a237897980a",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify MockAgents through the pinned Python sandbox.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Qualify MockAgents through pinned Python transport",
-  "updated_at": "2026-09-16T13:55:14+00:00",
+  "updated_at": "2026-09-16T13:55:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1254"
 }
 ---
@@ -111,3 +111,17 @@ Keep fixtures, runtimes, caches, and evidence under `/srv/data/projects`.
 - 2026-09-16T13:54:05+00:00: Heartbeat by asb_ar1254_mockagents_transport.
 
 - 2026-09-16T13:55:14+00:00: Heartbeat by asb_ar1254_mockagents_transport.
+
+- 2026-09-16T13:55:28+00:00: Independent review of signed exact head 154a345497 found prior gaps
+  only partially addressed. It adds lock digest selection, repeat loopback, a runner call, and
+  network-probe mode, but invoke_runner only asks run_isolated.py to execute /input/artifact
+  --version and does not prove the real MockAgents transport/event scenarios; --executable is merely
+  an is_file/executable-bit check and is not passed to the runner. The network probe checks
+  /proc/net/route rather than attempting an outbound connection inside the isolated container; host
+  outbound_attempt remains outside isolation. platform selection changes only lock key while
+  run_isolated always uses amd64 Python image and no QEMU/arm64 execution is performed. HTTP handler
+  accepts any body, does not parse/validate malformed input, and has no oversized/malformed negative
+  tests. cancellation_cleanup checks only direct parent termination and never asserts descendant
+  absence; no backpressure terminal-state test. Lock fields/source/license/checksums are not
+  validated as a closed reviewed provenance contract. Current unit tests 3/3 pass but do not
+  establish AR acceptance. Head is signed/DCO and diff-clean; no PR/merge authorized.
