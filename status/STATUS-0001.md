@@ -1353,7 +1353,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md): Strict replay execution and egress-isolation seam | asb_ar1231_replay_seam | Execute real agents through strict replay without provider egress or live fallback. | Add executable adapter-facing cancellation/restart/no-fallback tests around StrictReplayExecutor; then run full applicable asb-agents/replay gates and prepare review. |
+| P0 | [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md): Strict replay execution and egress-isolation seam | asb_ar1231_replay_seam | Execute real agents through strict replay without provider egress or live fallback. | Add process-policy enforcement seam and cancellation/restart tests around StrictReplayExecutor; run full applicable gates and independent review. |
 
 ### Open (14)
 

@@ -9,7 +9,7 @@
     "AR-1230"
   ],
   "id": "AR-1231",
-  "next_action": "Add executable adapter-facing cancellation/restart/no-fallback tests around StrictReplayExecutor; then run full applicable asb-agents/replay gates and prepare review.",
+  "next_action": "Add process-policy enforcement seam and cancellation/restart tests around StrictReplayExecutor; run full applicable gates and independent review.",
   "observed_branch": "feature/ar-1231",
   "observed_dirty": 0,
   "observed_head": "5e874bc52bd549e36ebc4b6bf333a7a678ad2cbd",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents through strict replay without provider egress or live fallback.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Strict replay execution and egress-isolation seam",
-  "updated_at": "2026-09-16T01:57:25+00:00",
+  "updated_at": "2026-09-16T01:57:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1231"
 }
 ---
@@ -203,3 +203,8 @@
 
 - 2026-09-16T01:57:25+00:00: Recorded command exit 0; command argv SHA-256
   39cf5398131881d6bebfeb6940a170dba53287cbad205a984f34c80a6dbe58e7.
+
+- 2026-09-16T01:57:45+00:00: StrictReplayExecutor now authenticates route identity using a versioned
+  route digest before serving requests, in addition to cassette and attempt binding. Invalid
+  cassette test proves constructor fails closed without fallback. Focused strict_replay tests and
+  Clippy -D warnings pass. Signed DCO commit 5e874bc pushed; worktree clean.
