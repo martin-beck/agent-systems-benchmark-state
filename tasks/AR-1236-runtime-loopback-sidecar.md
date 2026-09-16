@@ -10,7 +10,7 @@
   "id": "AR-1236",
   "next_action": "Implement the versioned runtime-issued sidecar handoff: same-private-namespace sidecar and adapter, authenticated route/generation/command metadata, listener readiness, bounded forwarding, teardown, and non-interference tests; preserve NetworkPolicy::Deny.",
   "observed_branch": "feature/ar-1236-runtime-loopback-sidecar",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "df4debddb24205fe2f6ab21e4dfe574cc8af44b1",
   "owner": "asb_ar1236_handoff_worker",
   "plan": "../plans/AR-1236.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-owned private-namespace loopback sidecar capability.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Runtime-owned loopback sidecar capability",
-  "updated_at": "2026-09-16T07:29:28+00:00",
+  "updated_at": "2026-09-16T07:29:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1236"
 }
 ---
