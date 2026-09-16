@@ -38,7 +38,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1235` | `feature/ar-1235-goose-fixture-portability` | `fd7daa43549e` | 3 | behind 17, ahead 0 |
 | changed files | - | - | - | `target-hosted-aarch64/`, `target-hosted-full-aarch64/`, `target-repeat-aarch64/` |
 | `agent-systems-benchmark-ar-1236` | `feature/ar-1236-runtime-loopback-sidecar` | `42c3d1959b9a` | 0 | behind 301, ahead 4 |
-| `agent-systems-benchmark-ar-1238` | `feature/ar-1238-runtime-loopback-supervisor` | `9d982fe87b77` | 0 | behind 301, ahead 3 |
+| `agent-systems-benchmark-ar-1238` | `feature/ar-1238-runtime-loopback-supervisor` | `9d982fe87b77` | 3 | behind 301, ahead 3 |
+| changed files | - | - | - | `crates/asb-runtime/src/lib.rs`, `crates/asb-runtime/src/sandbox.rs`, `crates/asb-runtime/src/supervisor.rs` |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 383, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 486, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 380, ahead 0 |
@@ -121,8 +122,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-local-inference-provider-profiles` | `feat/local-inference-provider-profiles` | `eed49592617a` | 0 | behind 297, ahead 0 |
 | `agent-systems-benchmark-local-llm-testing-recommendations` | `docs/local-llm-testing-recommendations` | `4a23069336be` | 0 | behind 310, ahead 0 |
 | `agent-systems-benchmark-main-forward` | `repair/github-dco-fix` | `1b821930cb50` | 0 | behind 165, ahead 0 |
-| `agent-systems-benchmark-main-merge-integrity` | `DETACHED` | `a7a64bcc86e9` | 1 | behind 0, ahead 0 |
-| changed files | - | - | - | `docs/MERGE_INTEGRITY.md` |
+| `agent-systems-benchmark-main-merge-integrity` | `DETACHED` | `ebaf0ce79122` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-main-repair` | `DETACHED` | `cc4df693964d` | 0 | behind 197, ahead 0 |
 | `agent-systems-benchmark-main-repair2` | `DETACHED` | `b9fb334b29f5` | 0 | behind 196, ahead 0 |
 | `agent-systems-benchmark-main-repair3` | `DETACHED` | `50345d56b9d9` | 0 | behind 193, ahead 0 |

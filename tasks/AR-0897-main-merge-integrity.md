@@ -9,17 +9,17 @@
   "id": "AR-0897",
   "next_action": "Monitor exact-main CI for signed recovery 56a85de; then verify policy and close AR-0897.",
   "observed_branch": "DETACHED",
-  "observed_dirty": 1,
-  "observed_head": "a7a64bcc86e9fa625547ed00a0be1c1e6dde3d73",
+  "observed_dirty": 0,
+  "observed_head": "ebaf0ce7912205ed544b865a6a3b795d9e9cfe21",
   "owner": "asb_ar0897_merge_integrity",
   "plan": "../plans/AR-0897.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 188,
+  "task_revision": 189,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-16T08:02:16+00:00",
+  "updated_at": "2026-09-16T08:02:23+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
