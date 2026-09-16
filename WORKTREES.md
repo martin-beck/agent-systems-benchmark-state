@@ -38,7 +38,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1235` | `feature/ar-1235-goose-fixture-portability` | `fd7daa43549e` | 3 | behind 19, ahead 0 |
 | changed files | - | - | - | `target-hosted-aarch64/`, `target-hosted-full-aarch64/`, `target-repeat-aarch64/` |
 | `agent-systems-benchmark-ar-1236` | `feature/ar-1236-runtime-loopback-sidecar` | `42c3d1959b9a` | 0 | behind 303, ahead 4 |
-| `agent-systems-benchmark-ar-1238` | `feature/ar-1238-runtime-loopback-supervisor` | `418f3930bb41` | 0 | behind 303, ahead 7 |
+| `agent-systems-benchmark-ar-1238` | `feature/ar-1238-runtime-loopback-supervisor` | `418f3930bb41` | 1 | behind 303, ahead 7 |
+| changed files | - | - | - | `crates/asb-runtime/src/supervisor.rs` |
 | `agent-systems-benchmark-ar-1239` | `feature/ar-1239-signed-runtime-bundle` | `6836bb4010f5` | 0 | behind 303, ahead 2 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 385, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 488, ahead 0 |
@@ -185,6 +186,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-runtime-bundle-manifest` | `feature/runtime-bundle-manifest` | `4b2805d870df` | 0 | behind 536, ahead 0 |
 | `agent-systems-benchmark-sandbox-runtime` | `feature/sandbox-runtime` | `ac4a23599649` | 0 | behind 613, ahead 0 |
 | `agent-systems-benchmark-sandbox-test-portability` | `fix/sandbox-test-portability` | `23035acde688` | 0 | behind 601, ahead 0 |
+| `agent-systems-benchmark-shellcheck-fail-closed` | `fix/shellcheck-fail-closed` | `c261af069c5c` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ssh-remote-bootstrap` | `feature/ssh-remote-bootstrap` | `980276dd2885` | 0 | behind 348, ahead 0 |
 | `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `3bcfd85dedd3` | 0 | behind 638, ahead 0 |
 | `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `410ecc95b80e` | 0 | behind 626, ahead 0 |

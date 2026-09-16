@@ -10,7 +10,7 @@
   "id": "AR-1238",
   "next_action": "Trusted bundle integration now requires asb-bundle-owned artifact manifest/payload wiring; then native bwrap must execute content-pinned supervisor+sidecar and prove cassette success, egress denial, teardown and non-interference.",
   "observed_branch": "feature/ar-1238-runtime-loopback-supervisor",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "418f3930bb4146c419e6b731dc59a015f997f55c",
   "owner": "asb_ar1238_bwrap_relay_worker",
   "plan": "../plans/AR-1238.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned private-namespace supervisor for loopback replay.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Runtime-owned loopback supervisor",
-  "updated_at": "2026-09-16T08:21:15+00:00",
+  "updated_at": "2026-09-16T08:21:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1238"
 }
 ---
