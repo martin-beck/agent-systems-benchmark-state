@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision and verify Docker binfmt/QEMU for multiarch qualification.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Provision Docker binfmt/QEMU capability",
-  "updated_at": "2026-09-16T14:07:04+00:00",
+  "updated_at": "2026-09-16T14:07:21+00:00",
   "worktree_key": "agent-systems-benchmark-docker-binfmt-qemu"
 }
 ---
@@ -59,3 +59,6 @@ Provide the independent Docker binfmt/QEMU capability required by multiarch qual
 
 - 2026-09-16T14:07:04+00:00: Recorded command exit 255; command argv SHA-256
   1b84743dc877c4fea51c38dcf7c76a1060746e1dd73c1736e8e1de136a3273b3.
+
+- 2026-09-16T14:07:21+00:00: Recorded command exit 0; command argv SHA-256
+  5980dadddc72a5d375aba0a14e792b768ba74a1692bc4ba8ae68eeb8bd4e60d1.
