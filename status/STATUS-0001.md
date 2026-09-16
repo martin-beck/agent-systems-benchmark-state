@@ -12,9 +12,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 4 |
+| **Open** | Dependency-ready and available to claim | 5 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 15 |
-| **Planned** | Defined work awaiting promotion or dependencies | 63 |
+| **Planned** | Defined work awaiting promotion or dependencies | 62 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 189 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -178,7 +178,7 @@ flowchart LR
         AR_0858["AR-0858 - Done"]:::status_done
         AR_0859["AR-0859 - Done"]:::status_done
         AR_0860["AR-0860 - Done"]:::status_done
-        AR_0861["AR-0861 - Planned"]:::status_planned
+        AR_0861["AR-0861 - Open"]:::status_open
         AR_0862["AR-0862 - Planned"]:::status_planned
         AR_0863["AR-0863 - Blocked"]:::status_blocked
         AR_0864["AR-0864 - Planned"]:::status_planned
@@ -1439,7 +1439,7 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (4)
+### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1447,6 +1447,7 @@ flowchart LR
 | P0 | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md): Implement &#96;asb tui&#96; lifecycle routing | Unclaimed | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. |
 | P0 | [AR-1042](../tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Unclaimed | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. |
 | P0 | [AR-1044](../tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Unclaimed | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. |
+| P1 | [AR-0861](../tasks/AR-0861-openjiuwen-parity.md): Add OpenJiuwen provider parity and support matrix evidence | Unclaimed | Add OpenJiuwen provider parity and support matrix evidence. | Extend exact provider parity and the platform support matrix only for executable-qualified OpenJiuwen combinations under a serialized shared-path fence. |
 
 ### Blocked (15)
 
@@ -1468,7 +1469,7 @@ flowchart LR
 | P1 | [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md): Extend MockAgents qualification harness | Unclaimed | Extend the pinned MockAgents executable qualification harness. | Implement tool-result, cancellation/backpressure, outbound-denial cases; rerun arm64 repeat and full gates. |
 | P1 | [AR-1251](../tasks/AR-1251-mockagents-transport-sandbox.md): Add MockAgents transport sandbox fixture | Unclaimed | Add a bounded transport and sandbox fixture for MockAgents qualification. | Design and implement bounded transport/sandbox fixture for MockAgents tool-result, cancellation/backpressure, network-denial, cleanup, and arm64 evidence. |
 
-### Planned (63)
+### Planned (62)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1512,7 +1513,6 @@ flowchart LR
 | P1 | [AR-0833](../tasks/AR-0833-aiws-runner-reboot-lifecycle.md): Qualify tokenless runner reboot lifecycle | Unclaimed | Qualify safe reboot and restart lifecycle for disposable development-host ASB runners. | Design and qualify a tokenless supervisor/orchestration path that can provision fresh ephemeral registrations after boot without storing reusable GitHub credentials. |
 | P1 | [AR-0846](../tasks/AR-0846-artifact-retention-cleanup.md): Add linked artifact retention and cleanup | Unclaimed | Manage ASB GitHub artifact retention and cleanup without deleting required evidence. | Implement dry-run inventory and explicitly authorized bounded cleanup for linked GitHub artifacts. |
 | P1 | [AR-0856](../tasks/AR-0856-agent-openjiuwen-workbuddy.md): Coordinate OpenJiuwen and WorkBuddy agent support | Unclaimed | Coordinate independently qualified OpenJiuwen and WorkBuddy support without merging their provenance or evidence boundaries. | Keep planned while both child series run independently; complete only after AR-0862 and AR-0868 are durably done with executable live/replay qualification. |
-| P1 | [AR-0861](../tasks/AR-0861-openjiuwen-parity.md): Add OpenJiuwen provider parity and support matrix evidence | Unclaimed | Add OpenJiuwen provider parity and support matrix evidence. | Extend exact provider parity and the platform support matrix only for executable-qualified OpenJiuwen combinations under a serialized shared-path fence. |
 | P1 | [AR-0862](../tasks/AR-0862-openjiuwen-qualification.md): Independently qualify and document OpenJiuwen support | Unclaimed | Independently qualify and document OpenJiuwen support. | Run independent exact-tree qualification with native x86_64 and required pinned QEMU AArch64 portability gates; document native ARM64 as optional future evidence. |
 | P1 | [AR-0864](../tasks/AR-0864-workbuddy-adapter.md): Implement the WorkBuddy contract and capability adapter | Unclaimed | Implement the WorkBuddy contract and capability adapter. | Implement the bounded agent contract, exact provider translation, and capability registration from the pinned protocol; keep live support unclaimed. |
 | P1 | [AR-0865](../tasks/AR-0865-workbuddy-live.md): Qualify pinned WorkBuddy live execution | Unclaimed | Qualify pinned WorkBuddy live execution. | Run the pinned executable against a credential-free loopback provider and prove editing, tools, usage, cancellation, cleanup, and network denial. |
