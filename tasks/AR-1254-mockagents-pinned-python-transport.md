@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1254-mockagents-pinned-python-transport",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T20:24:38+00:00",
   "depends_on": [
     "AR-1252",
     "AR-1253"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1254-mockagents-pinned-python-transport",
   "observed_dirty": 0,
   "observed_head": "154a34549784bd3bba0a5fa47d046a237897980a",
-  "owner": "",
+  "owner": "asb_ar1254_dependency_audit_20260916",
   "plan": "../plans/AR-1254.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify MockAgents through the pinned Python sandbox.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Qualify MockAgents through pinned Python transport",
-  "updated_at": "2026-09-16T19:54:35+00:00",
+  "updated_at": "2026-09-16T19:54:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1254"
 }
 ---
@@ -185,3 +185,5 @@ Keep fixtures, runtimes, caches, and evidence under `/srv/data/projects`.
 
 - 2026-09-16T19:54:35+00:00: Reopen briefly to replace stale next_action with the verified
   dependency blocker and successor path; no implementation work is authorized.
+
+- 2026-09-16T19:54:38+00:00: Claimed by asb_ar1254_dependency_audit_20260916.

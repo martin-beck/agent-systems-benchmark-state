@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**287 ARs tracked** across 6 active status categories.
+**287 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 6 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 5 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 19 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -347,7 +347,7 @@ flowchart LR
         AR_1251["AR-1251 - Blocked"]:::status_blocked
         AR_1252["AR-1252 - Done"]:::status_done
         AR_1253["AR-1253 - Done"]:::status_done
-        AR_1254["AR-1254 - Open"]:::status_open
+        AR_1254["AR-1254 - In progress"]:::status_in_progress
         AR_1255["AR-1255 - Planned"]:::status_planned
         AR_1256["AR-1256 - Blocked"]:::status_blocked
         AR_1257["AR-1257 - Planned"]:::status_planned
@@ -1461,7 +1461,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (6)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md): Qualify MockAgents through pinned Python transport | asb_ar1254_dependency_audit_20260916 | Qualify MockAgents through the pinned Python sandbox. | Implement real executable transport qualification before publication: invoke the pinned MockAgents artifact through run_isolated.py on amd64 and QEMU arm64; bind exact lock source/tag/commit/license/checksums and platform digests; add malformed/oversized body negatives, ordered tool-result/backpressure/cancellation terminal tests, descendant cleanup proof, actual outbound-denial probe inside network-none, and repeat-clean-state evidence. |
+
+### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1470,7 +1476,6 @@ flowchart LR
 | P0 | [AR-1042](../tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Unclaimed | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. |
 | P0 | [AR-1044](../tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Unclaimed | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. |
 | P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Unclaimed | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Coordinator must create and link the successor AR for certificate issuance/chain validation and trusted route/ancestor authority; preserve this exact clean head and do not publish/close as fully complete until successor scope and bounded acceptance are recorded. |
-| P1 | [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md): Qualify MockAgents through pinned Python transport | Unclaimed | Qualify MockAgents through the pinned Python sandbox. | Implement real executable transport qualification before publication: invoke the pinned MockAgents artifact through run_isolated.py on amd64 and QEMU arm64; bind exact lock source/tag/commit/license/checksums and platform digests; add malformed/oversized body negatives, ordered tool-result/backpressure/cancellation terminal tests, descendant cleanup proof, actual outbound-denial probe inside network-none, and repeat-clean-state evidence. |
 
 ### Blocked (19)
 
