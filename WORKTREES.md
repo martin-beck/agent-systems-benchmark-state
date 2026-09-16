@@ -189,7 +189,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-runtime-bundle-manifest` | `feature/runtime-bundle-manifest` | `4b2805d870df` | 0 | behind 538, ahead 0 |
 | `agent-systems-benchmark-sandbox-runtime` | `feature/sandbox-runtime` | `ac4a23599649` | 0 | behind 615, ahead 0 |
 | `agent-systems-benchmark-sandbox-test-portability` | `fix/sandbox-test-portability` | `23035acde688` | 0 | behind 603, ahead 0 |
-| `agent-systems-benchmark-shellcheck-fail-closed` | `fix/shellcheck-fail-closed` | `8176605df747` | 0 | behind 2, ahead 1 |
+| `agent-systems-benchmark-shellcheck-fail-closed` | `fix/shellcheck-fail-closed` | `760eded801d3` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-ssh-remote-bootstrap` | `feature/ssh-remote-bootstrap` | `980276dd2885` | 0 | behind 350, ahead 0 |
 | `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `3bcfd85dedd3` | 0 | behind 640, ahead 0 |
 | `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `410ecc95b80e` | 0 | behind 628, ahead 0 |

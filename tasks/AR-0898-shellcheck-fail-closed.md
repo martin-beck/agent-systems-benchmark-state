@@ -12,16 +12,16 @@
   "next_action": "PR #190 published from exact clean signed+DCO head 8176605df747cca12010f8220e74509cca01539f; base c261af069c5ce7ecb84b2acfc56f12d2a4cb116a. Twelve required checks are running; Huawei headers and AWQ shadow are green. Monitor exact-head CI, diagnose any failures, obtain independent review, and merge only after all required checks green.",
   "observed_branch": "fix/shellcheck-fail-closed",
   "observed_dirty": 0,
-  "observed_head": "8176605df747cca12010f8220e74509cca01539f",
+  "observed_head": "760eded801d3daa07011ea2a744bded7da27a159",
   "owner": "asb_ar0898_shellcheck",
   "plan": "../plans/AR-0898.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Make ShellCheck fail closed",
-  "updated_at": "2026-09-16T08:43:40+00:00",
+  "updated_at": "2026-09-16T08:43:47+00:00",
   "worktree_key": "agent-systems-benchmark-shellcheck-fail-closed"
 }
 ---
