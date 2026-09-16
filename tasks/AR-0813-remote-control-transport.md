@@ -11,17 +11,17 @@
   "id": "AR-0813",
   "next_action": "Specify and implement an explicitly enabled authenticated remote transport for the frontend control API.",
   "observed_branch": "feature/remote-control-transport",
-  "observed_dirty": 1,
-  "observed_head": "54752c116cfd70f2c7140fe56a918df0da1956e1",
+  "observed_dirty": 0,
+  "observed_head": "459867b0bd8b9ab97239fc11f9ee929f04f1c575",
   "owner": "asb_ar0813_remote_transport",
   "plan": "../plans/AR-0813.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T14:30:40+00:00",
+  "updated_at": "2026-09-16T14:30:48+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
