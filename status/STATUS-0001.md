@@ -1347,7 +1347,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1150](../tasks/AR-1150.md): Recording campaigns | asb_ar1150_recording | Record response cassettes. | Full local gates passed on clean signed-DCO head 935c3dc: fmt check, workspace clippy -D warnings, and locked offline workspace tests. Create PR from this pushed branch, request independent exact-head review, then monitor CI. |
+| P0 | [AR-1150](../tasks/AR-1150.md): Recording campaigns | asb_ar1150_recording | Record response cassettes. | Executable campaign coordinator committed and pushed at d2498a7. Focused replay tests pass (21 unit tests plus integration suites); run full fmt/clippy/workspace gates, then update PR #182 and request re-review. |
 
 ### Open (13)
 
