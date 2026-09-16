@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0813](tasks/AR-0813-remote-control-transport.md): Add secure remote control transport | Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client. | Monitor PR202 refreshed exact head badd246 checks to terminal; merge only after all required checks and independent approval. | asb_ar0813_remote_transport |
+| P1 | [AR-0813](tasks/AR-0813-remote-control-transport.md): Add secure remote control transport | Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client. | Monitor PR #202 exact head badd246f until every required check terminal SUCCESS; complete independent review and merge only after all green and approval, then post-merge verify. | asb_ar0813_remote_transport |
 
 ## Open
 

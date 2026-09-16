@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0813",
-  "next_action": "Monitor PR202 refreshed exact head badd246 checks to terminal; merge only after all required checks and independent approval.",
+  "next_action": "Monitor PR #202 exact head badd246f until every required check terminal SUCCESS; complete independent review and merge only after all green and approval, then post-merge verify.",
   "observed_branch": "feature/remote-control-transport",
   "observed_dirty": 0,
   "observed_head": "52ee2b13d809b0147f54f4f370face7fb14807b0",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 240,
+  "task_revision": 241,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T15:39:34+00:00",
+  "updated_at": "2026-09-16T15:39:44+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -744,3 +744,12 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-16T15:38:18+00:00: Heartbeat by asb_ar0813_remote_transport.
 
 - 2026-09-16T15:39:34+00:00: Heartbeat by asb_ar0813_remote_transport.
+
+- 2026-09-16T15:39:44+00:00: Independent review of PR #202 exact head
+  badd246f50a893db8fd285281119cd11108da328 confirms cumulative feature remains exactly the reviewed
+  7b4168ff transport implementation plus a single formal/Cargo.lock refresh (formal/Cargo.lock only,
+  162 insertions/5 deletions). Head is clean, SSH-signed, and DCO-bearing; no source, privacy, or
+  credential changes in refresh. At review time Platform, retained faults, AWQ shadow, headers were
+  SUCCESS; Rust, policy, fuzz, mutation, AArch64, TLC, Kani, and Loom were queued/in progress.
+  Formal gate evidence is therefore not yet terminal for this exact head. No merge authorization
+  until all required checks terminal green and independent approval recorded.
