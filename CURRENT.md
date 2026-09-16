@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0813](tasks/AR-0813-remote-control-transport.md): Add secure remote control transport | Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client. | Review signed keepalive fix 7b4168f; focused TLS passed, clippy passed, workspace had one transient sandbox test failure then focused rerun passed; push and request independent review. | asb_ar0813_remote_transport |
+| P1 | [AR-0813](tasks/AR-0813-remote-control-transport.md): Add secure remote control transport | Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client. | Request independent review of signed 7b4168f; monitor fresh exact-head CI. | asb_ar0813_remote_transport |
 
 ## Open
 
