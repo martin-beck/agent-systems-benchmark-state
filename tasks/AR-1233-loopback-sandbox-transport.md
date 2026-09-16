@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1233.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide an authenticated loopback-only sandbox transport for strict replay services.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Approved loopback-only sandbox transport",
-  "updated_at": "2026-09-16T06:51:54+00:00",
+  "updated_at": "2026-09-16T06:56:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1233"
 }
 ---
@@ -114,3 +114,6 @@
   LoopbackOnly. Remaining blocker is an attested per-launch bridge/relay that makes the owned
   cassette reachable inside this private namespace while preserving provider-egress denial; do not
   enable LoopbackOnly spawn until that contract is wired and tested.
+
+- 2026-09-16T06:56:21+00:00: Resuming exclusively for AR-1233 capability implementation and
+  deterministic testing; no other ARs.
