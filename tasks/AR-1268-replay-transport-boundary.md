@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1268-replay-transport-boundary",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T00:45:23+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1268-replay-transport-boundary",
   "observed_dirty": 0,
   "observed_head": "f05288b65cbee91d74ef07105068be0d26cbf7d2",
-  "owner": "asb_ar1024_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1268.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Break the strict-replay runtime/CLI dependency cycle with a shared transport contract.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Break strict-replay runtime/CLI dependency cycle",
-  "updated_at": "2026-09-16T22:56:41+00:00",
+  "updated_at": "2026-09-16T22:57:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1268-replay-transport"
 }
 ---
@@ -165,3 +165,8 @@ Preserve AR-1267's blocked evidence; do not fabricate authority or weaken crate 
   provider/descendant egress denial, cancel/restart, timeout/crash reaping, and cleanup tests are
   blocked on an approved runtime launch-bundle factory; branch remains clean at signed f05288b and
   unmerged.
+
+- 2026-09-16T22:57:51+00:00: AR-1268 remains blocked at clean signed f05288b: shared transport and
+  CLI adapter are complete, but runtime launch-bundle factory for
+  SandboxLaunchInput/ResourceLease/pinned commands is missing. AR-1269 is the successor owning that
+  factory and real supervised fixtures.
