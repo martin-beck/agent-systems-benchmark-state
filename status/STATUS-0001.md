@@ -11,9 +11,9 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 5 |
+| **In progress** | Claimed work with a live lease | 4 |
 | **Open** | Dependency-ready and available to claim | 6 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 9 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 10 |
 | **Planned** | Defined work awaiting promotion or dependencies | 65 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 168 |
@@ -325,7 +325,7 @@ flowchart LR
         AR_1229["AR-1229 - Done"]:::status_done
         AR_1230["AR-1230 - Done"]:::status_done
         AR_1231["AR-1231 - Done"]:::status_done
-        AR_1232["AR-1232 - In progress"]:::status_in_progress
+        AR_1232["AR-1232 - Blocked"]:::status_blocked
         AR_1233["AR-1233 - Blocked"]:::status_blocked
         AR_1234["AR-1234 - Blocked"]:::status_blocked
         AR_1235["AR-1235 - Done"]:::status_done
@@ -1366,13 +1366,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (5)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0897](../tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | asb_ar0897_merge_integrity | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Hold PR 126 at bd6f450; after AR-0877 and AR-0909 integrate, rebase once and require fresh all-green exact-head CI before merge. |
 | P0 | [AR-1140](../tasks/AR-1140.md): CLI setup wizard | asb_ar1232_lifecycle_router | Guide CLI setup and reconfiguration. | Extend setup preflight into transactional config/provider selection; add schema/docs and cancellation/no-persistence tests. Current head 63fd7f2. |
-| P0 | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md): Sandboxed replay process supervision | asb_ar1232_worker | Supervise strict replay adapters inside the approved network-denied sandbox. | Native executor-service attempt is blocked by runtime policy: SandboxSpec accepts only NetworkPolicy::Deny, so loopback cassette listener is unreachable (child curl exit 7). Keep strict replay native harness 7/7 and 15/15 executor unit gates green; require approved loopback-only sandbox transport seam before further implementation/re-review. |
 | P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | asb_ar0704_formal_infra | Control genuine native platform capacity lifecycle. | Focused lifecycle/schema tests pass 25/25 on signed head 28f30ee. Remaining action is requalify PR #119 exact head for the fail-closed TLA provenance pin; inspect hosted failure and repair only if reproducible. |
 | P1 | [AR-0896](../tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | asb_ar0896_qualification | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun 34339927858 was launched via handoffctl and is actively watched by PID 736624/gh PID 736653; exact rerun head a4e1a9de985a4c9f22628c6d604a6e62f4f173e3, job 104684371738 currently running. Keep lease heartbeat, wait terminal, then capture failures or green result. |
 
@@ -1387,7 +1386,7 @@ flowchart LR
 | P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | Unclaimed | Replay strictly without providers. | Design and implement the missing executable strict-replay run-path seam: pass exact cassette route/service into agent adapter launch, deny provider egress at process boundary, and add campaign-level cancellation/restart/no-fallback tests. Current CLI replay only decodes/indexes/selects and emits metadata. |
 | P1 | [AR-0859](../tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Unclaimed | Qualify pinned OpenJiuwen live execution. | Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI. |
 
-### Blocked (9)
+### Blocked (10)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1396,6 +1395,7 @@ flowchart LR
 | P0 | [AR-1181](../tasks/AR-1181.md): TLA admission | Unclaimed | Bound ASB TLC memory. | Correct AR-1181 repository/worktree metadata to a state-repository branch/worktree, then implement missing tools/tlc_runner.py with bounded admission; current declared path is an ASB product checkout and must not be mutated. |
 | P0 | [AR-1210](../tasks/AR-1210-tutorial-contract-validator.md): Tutorial contract and syntax validator | Unclaimed | Define offline tutorial steps and validate them against the ASB CLI grammar. | Do not release AR-1210 yet: post-merge Repository quality run 35054743606 failed because protected merge commit 4d4a0c4 lacks Signed-off-by. Coordinate merge-integrity/DCO repair and rerun exact-main assurance; preserve merged main and all evidence. |
 | P0 | [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md): Protected merge-tree remediation | Unclaimed | Remediate the protected-main merge-tree mismatch from stale-base PR merging. | Historical reproduction confirms policy rejects ef82484 before merge-tree comparison because its RSA/GPG signature is not in the allowed SSH trust set. Current clean branch is fd7daa4; create a signed-DCO current-main topic repair, then rerun policy and exact-head gates. |
+| P0 | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md): Sandboxed replay process supervision | Unclaimed | Supervise strict replay adapters inside the approved network-denied sandbox. | Native executor-service attempt is blocked by runtime policy: SandboxSpec accepts only NetworkPolicy::Deny, so loopback cassette listener is unreachable (child curl exit 7). Keep strict replay native harness 7/7 and 15/15 executor unit gates green; require approved loopback-only sandbox transport seam before further implementation/re-review. |
 | P0 | [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md): Approved loopback-only sandbox transport | Unclaimed | Provide an authenticated loopback-only sandbox transport for strict replay services. | Typed LoopbackOnly policy slice 143213c passes full asb-runtime package tests; actual attested loopback namespace/listener binding remains required. Implement backend capability without weakening Deny, then add native child-service/provider-egress tests and full workspace gates. |
 | P0 | [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md): Runtime-owned loopback namespace capability | Unclaimed | Provide an approved runtime-owned loopback-only sandbox namespace capability. | Capability audit complete: pinned tools exist but unshare -n fails Operation not permitted. Do not add ambient privileged setup or host sharing. Require approved runtime-owned loopback namespace/helper capability, then implement native service/egress tests. |
 | P1 | [AR-0863](../tasks/AR-0863-workbuddy-provenance.md): Pin WorkBuddy source, package, and license provenance | Unclaimed | Pin WorkBuddy source, package, and license provenance. | Pin official source, package, dependency closure, license, executable digest, protocol mode, and supported platform before any adapter claim. |

@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1232",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T08:41:18+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 2,
   "observed_head": "9f38e2e6db2d9650ae9419410c4e97aa792d4658",
-  "owner": "asb_ar1232_worker",
+  "owner": "",
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 434,
+  "task_revision": 435,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T06:41:32+00:00",
+  "updated_at": "2026-09-16T06:41:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -1190,3 +1190,13 @@
 
 - 2026-09-16T06:41:32+00:00: Recorded command exit 0; command argv SHA-256
   41e36411e09d334f9b1307abd10ff98e1679c524b79c63d8c04035e0722f5337.
+
+- 2026-09-16T06:41:55+00:00: AR-1232-only follow-up pushed as signed/DCO commit 7613c67. ReplayRelay
+  now exposes a validated ReplayRelayHandoff carrying private socket path, fenced generation, and
+  explicit absolute child endpoint metadata; SandboxLaunchInput accepts and validates the handoff
+  without changing NetworkPolicy::Deny. Handoff validation enforces private 0600 socket, expected
+  generation-bound filename, absolute child path without parent traversal, and rejects after relay
+  teardown. Four focused relay tests pass, including handoff fencing/cleanup; package locked offline
+  Clippy passes. No unrelated process or network behavior is changed. Remaining boundary is
+  unchanged: actual child HTTP/TCP cassette bridging requires a separately reviewed adapter/launch
+  contract mapping the Unix endpoint into the isolated child.
