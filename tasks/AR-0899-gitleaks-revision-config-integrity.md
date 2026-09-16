@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve GitHub issue 118 by making local and CI Gitleaks scans deterministic and config changes fail closed.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Align and harden Gitleaks execution",
-  "updated_at": "2026-09-16T12:13:13+00:00",
+  "updated_at": "2026-09-16T12:15:19+00:00",
   "worktree_key": "agent-systems-benchmark-gitleaks-revision-config-integrity"
 }
 ---
@@ -237,3 +237,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-16T12:10:07+00:00: Heartbeat by asb_ar0899_gitleaks.
 
 - 2026-09-16T12:13:13+00:00: Heartbeat by asb_ar0899_gitleaks.
+
+- 2026-09-16T12:15:19+00:00: Recorded command exit 0; command argv SHA-256
+  5fea57150cfbfbcf6e9aae4e2d5d2c12821b54edfd127532b977863723242757.
