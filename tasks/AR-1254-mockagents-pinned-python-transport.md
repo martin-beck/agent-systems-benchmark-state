@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1254-mockagents-pinned-python-transport",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T20:52:34+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1252",
     "AR-1253"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1254-mockagents-pinned-python-transport",
   "observed_dirty": 0,
   "observed_head": "154a34549784bd3bba0a5fa47d046a237897980a",
-  "owner": "asb_ar1254_dependency_audit_20260916",
+  "owner": "",
   "plan": "../plans/AR-1254.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Qualify MockAgents through the pinned Python sandbox.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Qualify MockAgents through pinned Python transport",
-  "updated_at": "2026-09-16T19:52:46+00:00",
+  "updated_at": "2026-09-16T19:53:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1254"
 }
 ---
@@ -170,3 +170,15 @@ Keep fixtures, runtimes, caches, and evidence under `/srv/data/projects`.
 
 - 2026-09-16T19:52:46+00:00: Recorded command exit 0; command argv SHA-256
   47907f45887314543d07318b3675282ed96943304e82ab80bddaec1fa8dffad3.
+
+- 2026-09-16T19:53:38+00:00: Dependency-chain audit complete. AR-1252 runner is available and
+  verified as Docker 29.7.2 x86_64 with approved immutable amd64 image, so it can support amd64
+  only. It cannot provide arm64/QEMU execution or bundled in-container transport. AR-1254 head
+  154a345 remains synthetic/outside isolation for transport and lacks the required real arm64 and
+  outbound-denial evidence. AR-1258 remains the infrastructure blocker: registered qemu-aarch64
+  lacks fix-binary F and Docker bridge/network capability is unavailable; host-wide binfmt/systemd
+  maintenance is not authorized. AR-1255 is planned and correctly remains unclaimable because
+  AR-1254 is not complete. Released ownerless; no product mutation. Next action: after AR-1258
+  supplies an approved digest-pinned arm64 QEMU runner and AR-1255 supplies bundled in-container
+  transport/egress evidence, resume AR-1254 for real executable protocol, malformed/oversized,
+  cancellation/descendant, network-none, provenance, and repeat-clean-state gates.
