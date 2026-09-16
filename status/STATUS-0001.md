@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**258 ARs tracked** across 7 active status categories.
+**259 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 13 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
-| **Planned** | Defined work awaiting promotion or dependencies | 68 |
+| **Planned** | Defined work awaiting promotion or dependencies | 69 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 161 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -324,6 +324,7 @@ flowchart LR
         AR_1228["AR-1228 - Done"]:::status_done
         AR_1229["AR-1229 - Done"]:::status_done
         AR_1230["AR-1230 - Done"]:::status_done
+        AR_1231["AR-1231 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -662,6 +663,7 @@ flowchart LR
     AR_0505 --> AR_0879
     AR_0505 --> AR_0903
     AR_0505 --> AR_1151
+    AR_0505 --> AR_1231
     AR_0506 --> AR_0515
     AR_0507 --> AR_0515
     AR_0508 --> AR_0515
@@ -1020,6 +1022,7 @@ flowchart LR
     AR_1100 --> AR_1120
     AR_1100 --> AR_1228
     AR_1100 --> AR_1230
+    AR_1100 --> AR_1231
     AR_1110 --> AR_1130
     AR_1120 --> AR_1110
     AR_1130 --> AR_1140
@@ -1068,6 +1071,7 @@ flowchart LR
     AR_1230 --> AR_1120
     AR_1230 --> AR_1228
     AR_1230 --> AR_1229
+    AR_1230 --> AR_1231
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1126,7 +1130,7 @@ flowchart LR
 | [AR-0502](../tasks/AR-0502-replay-cassettes.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0501](../tasks/AR-0501-replay-evaluation.md) | [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0516](../tasks/AR-0516-opendesk-strict-replay-http-compatibility.md), [AR-0517](../tasks/AR-0517-redacted-request-pointer-replay.md), [AR-0518](../tasks/AR-0518-gemini-generate-content-replay.md), [AR-0520](../tasks/AR-0520-interaction-aware-redaction.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0901](../tasks/AR-0901-formal-assurance.md), [AR-1005](../tasks/AR-1005-trace-interoperability.md) |
 | [AR-0503](../tasks/AR-0503-strict-replay.md) | [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md) | [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0504](../tasks/AR-0504-replay-pacing.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0506](../tasks/AR-0506-replay-opencode.md), [AR-0507](../tasks/AR-0507-replay-opendesk.md), [AR-0508](../tasks/AR-0508-replay-aider.md), [AR-0509](../tasks/AR-0509-replay-codex.md), [AR-0510](../tasks/AR-0510-replay-gemini.md), [AR-0511](../tasks/AR-0511-replay-qwen.md), [AR-0512](../tasks/AR-0512-replay-goose.md), [AR-0513](../tasks/AR-0513-replay-miniswe.md), [AR-0514](../tasks/AR-0514-replay-openhands.md), [AR-0516](../tasks/AR-0516-opendesk-strict-replay-http-compatibility.md), [AR-0517](../tasks/AR-0517-redacted-request-pointer-replay.md), [AR-0518](../tasks/AR-0518-gemini-generate-content-replay.md), [AR-0520](../tasks/AR-0520-interaction-aware-redaction.md), [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](../tasks/AR-0863-workbuddy-provenance.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0902](../tasks/AR-0902-fault-assurance.md), [AR-0905](../tasks/AR-0905-recovery-models.md) |
 | [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0201](../tasks/AR-0201-portable-metrics.md), [AR-0503](../tasks/AR-0503-strict-replay.md) | [AR-0314](../tasks/AR-0314-recording-source-choice.md), [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-0506](../tasks/AR-0506-replay-opencode.md), [AR-0507](../tasks/AR-0507-replay-opendesk.md), [AR-0508](../tasks/AR-0508-replay-aider.md), [AR-0509](../tasks/AR-0509-replay-codex.md), [AR-0510](../tasks/AR-0510-replay-gemini.md), [AR-0511](../tasks/AR-0511-replay-qwen.md), [AR-0512](../tasks/AR-0512-replay-goose.md), [AR-0513](../tasks/AR-0513-replay-miniswe.md), [AR-0514](../tasks/AR-0514-replay-openhands.md), [AR-0516](../tasks/AR-0516-opendesk-strict-replay-http-compatibility.md), [AR-0517](../tasks/AR-0517-redacted-request-pointer-replay.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md) |
-| [AR-0505](../tasks/AR-0505-agent-replay-conformance.md) | [AR-0301](../tasks/AR-0301-agent-opencode.md), [AR-0302](../tasks/AR-0302-agent-opendesk.md), [AR-0303](../tasks/AR-0303-agent-aider.md), [AR-0304](../tasks/AR-0304-agent-codex.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0802](../tasks/AR-0802-executable-guides.md), [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1151](../tasks/AR-1151.md) |
+| [AR-0505](../tasks/AR-0505-agent-replay-conformance.md) | [AR-0301](../tasks/AR-0301-agent-opencode.md), [AR-0302](../tasks/AR-0302-agent-opendesk.md), [AR-0303](../tasks/AR-0303-agent-aider.md), [AR-0304](../tasks/AR-0304-agent-codex.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-0802](../tasks/AR-0802-executable-guides.md), [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0871](../tasks/AR-0871-record-replay-user-workflows.md), [AR-0879](../tasks/AR-0879-local-llm-testing-recommendations.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1151](../tasks/AR-1151.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md) |
 | [AR-0506](../tasks/AR-0506-replay-opencode.md) | [AR-0301](../tasks/AR-0301-agent-opencode.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
 | [AR-0507](../tasks/AR-0507-replay-opendesk.md) | [AR-0302](../tasks/AR-0302-agent-opendesk.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md) |
 | [AR-0508](../tasks/AR-0508-replay-aider.md) | [AR-0303](../tasks/AR-0303-agent-aider.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0503](../tasks/AR-0503-strict-replay.md), [AR-0504](../tasks/AR-0504-replay-pacing.md) | [AR-0515](../tasks/AR-0515-replay-matrix.md), [AR-0850](../tasks/AR-0850-aider-deterministic-replay.md) |
@@ -1310,7 +1314,7 @@ flowchart LR
 | [AR-1062](../tasks/AR-1062-diagnose-nested-tmux-server-connect.md) | None | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md), [AR-1058](../tasks/AR-1058-tmux-startup-observation-diagnostics.md), [AR-1061](../tasks/AR-1061-isolate-concurrent-tmux-fixtures.md) |
 | [AR-1064](../tasks/AR-1064-tmux-hosted-startup-readiness-recovery.md) | None | None |
 | [AR-1065](../tasks/AR-1065-asb-tui-branch-policy-context.md) | None | None |
-| [AR-1100](../tasks/AR-1100.md) | [AR-0313](../tasks/AR-0313-all-agents-provider.md) | [AR-1120](../tasks/AR-1120.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) |
+| [AR-1100](../tasks/AR-1100.md) | [AR-0313](../tasks/AR-0313-all-agents-provider.md) | [AR-1120](../tasks/AR-1120.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md) |
 | [AR-1110](../tasks/AR-1110.md) | [AR-0315](../tasks/AR-0315-provider-parity-conformance.md), [AR-1120](../tasks/AR-1120.md) | [AR-1130](../tasks/AR-1130.md) |
 | [AR-1120](../tasks/AR-1120.md) | [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-1100](../tasks/AR-1100.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-1110](../tasks/AR-1110.md) |
 | [AR-1130](../tasks/AR-1130.md) | [AR-0876](../tasks/AR-0876-provider-aware-agent-launch.md), [AR-1110](../tasks/AR-1110.md) | [AR-1140](../tasks/AR-1140.md), [AR-1150](../tasks/AR-1150.md) |
@@ -1339,7 +1343,8 @@ flowchart LR
 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md) | [AR-1060](../tasks/AR-1060-authenticated-control-endpoint-handoff.md), [AR-1151](../tasks/AR-1151.md), [AR-1160](../tasks/AR-1160.md) | None |
 | [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md) | [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-1100](../tasks/AR-1100.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-1120](../tasks/AR-1120.md), [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md) |
 | [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md) | [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-1120](../tasks/AR-1120.md) |
-| [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-1100](../tasks/AR-1100.md) | [AR-1120](../tasks/AR-1120.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md) |
+| [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | [AR-0319](../tasks/AR-0319-credential-fd-helper-resolvers.md), [AR-0320](../tasks/AR-0320-provider-credential-integration.md), [AR-1100](../tasks/AR-1100.md) | [AR-1120](../tasks/AR-1120.md), [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md), [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md) |
+| [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md) | [AR-0505](../tasks/AR-0505-agent-replay-conformance.md), [AR-1100](../tasks/AR-1100.md), [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md) | None |
 
 ## Complete AR inventory
 
@@ -1377,7 +1382,7 @@ flowchart LR
 | P1 | [AR-0890](../tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Unclaimed | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. |
 | P1 | [AR-0896](../tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Unclaimed | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun failed Repository quality workflow 34339927858 on unchanged main; if failure repeats, isolate and repair test-state ownership before any feature work. |
 
-### Planned (68)
+### Planned (69)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1411,6 +1416,7 @@ flowchart LR
 | P0 | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md): ASB tutorial freshness CI and documentation qualification | Unclaimed | Continuously keep ASB tutorial commands and steps syntactically current. | Implement the repository-wide tutorial discovery and syntax-freshness CI gate after all tutorial contracts are defined. |
 | P0 | [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md): Protected merge-tree remediation | Unclaimed | Remediate the protected-main merge-tree mismatch from stale-base PR merging. | Reproduce the protected-main merge-tree mismatch and requalify a current-main topic tree without weakening policy. |
 | P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
+| P0 | [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md): Strict replay execution and egress-isolation seam | Unclaimed | Execute real agents through strict replay without provider egress or live fallback. | Planned prerequisite for AR-1151: implement the versioned strict-replay adapter/run-path seam, process egress denial, and bounded cancellation/restart recovery with complete positive and negative evidence. |
 | P1 | [AR-0604](../tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Build the CSB-to-ASB signal inventory and native x86_64 causal A/B matrix; run applicable pinned QEMU AArch64 portability checks and document native ARM64 as optional future evidence. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
@@ -1529,6 +1535,3 @@ flowchart LR
 | P1 | [AR-0306](../tasks/AR-0306-agent-qwen-code.md): Implement Qwen Code client adapter | Unclaimed | Run pinned Qwen Code through isolated headless stream-JSON. | Merge reviewed exact candidate 0be96c9 with a signed DCO merge commit, push exact main, run post-merge gates and require fresh exact-main CI. |
 | P1 | [AR-0307](../tasks/AR-0307-agent-goose.md): Implement goose client adapter | Unclaimed | Run pinned AAIF goose in no-session structured mode. | Inspect exact-main merge 61b5dd33ba04295a476e444d8bfd338ab972507a runs 34078486469 Rust/native x86_64+aarch64, 34078486478 quality, and 34078486470 formal; release only after all green and residual/state/live audit. |
 | P1 | [AR-0310](../tasks/AR-0310-provider-profile-contract.md): Define common provider profiles | Unclaimed | Normalize one provider configuration for safe translation across heterogeneous agent adapters. | Monitor exact-main hosted runs for signed merge d384c4c54a4576dadaae3a542cfc09a5e339a4fe, then run live state validation and await release authorization. |
-| P1 | [AR-0311](../tasks/AR-0311-provider-openai.md): Support a shared OpenAI provider | Unclaimed | Apply one default OpenAI provider profile consistently to all supported agents. | Monitor PR #73 exact head 1128595cd2f93988374be008fcecda07fef9fde4; do not merge until every required exact-head check is green and coordinator authorizes integration. |
-| P1 | [AR-0312](../tasks/AR-0312-provider-ollama.md): Support a shared local Ollama provider | Unclaimed | Apply one pinned local Ollama provider and model configuration to all supported agents. | Monitor fresh exact-head CI for PR #71 at rebased 8137f5baa0535e5d6e74d5a81e1dfbb0deaa2615; do not merge pending coordinator review. |
-| P1 | [AR-0313](../tasks/AR-0313-all-agents-provider.md): Configure one provider for all agents | Unclaimed | Let test plans select one provider profile for every chosen supported agent atomically. | Wait for PR #78 exact-head CI; independently review immutable diff, then merge serially only if every required check is green. |
