@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1237-strict-replay-launch-bridge",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T10:49:14+00:00",
   "depends_on": [
     "AR-1233",
     "AR-1236"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1237-strict-replay-launch-bridge",
   "observed_dirty": 0,
   "observed_head": "11d37da2ec59fb5e2afe26c35d9c1bab1787f034",
-  "owner": "",
+  "owner": "asb_ar1237_launch_bridge_worker",
   "plan": "../plans/AR-1237.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Map the authenticated relay into the strict-replay child launch contract.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Strict-replay child launch bridge",
-  "updated_at": "2026-09-16T08:48:43+00:00",
+  "updated_at": "2026-09-16T08:49:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1237"
 }
 ---
@@ -37,3 +37,5 @@ locked, privacy, policy, native, exact-head, and post-merge gates.
 
 - 2026-09-16T08:48:43+00:00: AR-1233 and AR-1236 complete; promote strict-replay launch bridge
   implementation.
+
+- 2026-09-16T08:49:14+00:00: Claimed by asb_ar1237_launch_bridge_worker.
