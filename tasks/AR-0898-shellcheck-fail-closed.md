@@ -9,7 +9,7 @@
     "AR-1008"
   ],
   "id": "AR-0898",
-  "next_action": "Signed+DCO implementation 8176605 is clean. Focused installer/actionlint/failure suite passed; combined fmt, repository policy, explicit ShellCheck/actionlint, and failure-path gates passed exit 0 (durable command 9f193f...). Disposable profraw artifacts were removed through handoffctl. Next independently review complete diff, run remaining cargo/doc/dependency/full gates, then publish PR from exact clean head.",
+  "next_action": "PR #190 published from exact clean signed+DCO head 8176605df747cca12010f8220e74509cca01539f; base c261af069c5ce7ecb84b2acfc56f12d2a4cb116a. Twelve required checks are running; Huawei headers and AWQ shadow are green. Monitor exact-head CI, diagnose any failures, obtain independent review, and merge only after all required checks green.",
   "observed_branch": "fix/shellcheck-fail-closed",
   "observed_dirty": 0,
   "observed_head": "8176605df747cca12010f8220e74509cca01539f",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Make ShellCheck fail closed",
-  "updated_at": "2026-09-16T08:31:57+00:00",
+  "updated_at": "2026-09-16T08:32:27+00:00",
   "worktree_key": "agent-systems-benchmark-shellcheck-fail-closed"
 }
 ---
@@ -98,3 +98,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T08:31:57+00:00: Recorded command exit 0; command argv SHA-256
   f08386cc03782cc9285f3ec52874f9328993b53bae0d1b3c2e3caa706f7bd4b0.
+
+- 2026-09-16T08:32:27+00:00: 2026-09-16T08:33Z: Published PR #190 via handoffctl after independent
+  diff review and local focused/full subset success. Exact tree clean; no unrelated files included.
