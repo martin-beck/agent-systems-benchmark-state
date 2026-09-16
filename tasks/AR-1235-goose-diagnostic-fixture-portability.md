@@ -9,7 +9,7 @@
   "id": "AR-1235",
   "next_action": "Authoritative hosted run 35060286408/job 104678968629 at exact fd7daa4 failed only during full asb-agents AArch64 suite: 164 passed, diagnostic_and_symlink_fail_closed returned Ok GooseOutcome with valid events and exit_code 127, so unwrap_err panicked. Setup/materialization/toolchain all passed. Reproduced neither in exact test nor full suite under local repository-style QEMU Ubuntu 24.04.4 sysroot; both pass 1/1 and 165/165. Classify as hosted runner/environment-only or transient; no product fix justified. Release blocked/ownerless with detailed evidence.",
   "observed_branch": "feature/ar-1235-goose-fixture-portability",
-  "observed_dirty": 2,
+  "observed_dirty": 3,
   "observed_head": "fd7daa43549edd67b60076aa6b1eee333061b438",
   "owner": "asb_ar1235_goose_portability",
   "plan": "../plans/AR-1235.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair Goose diagnostic fixture portability under emulated AArch64.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Portable Goose diagnostic fixture",
-  "updated_at": "2026-09-16T06:08:46+00:00",
+  "updated_at": "2026-09-16T06:08:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1235"
 }
 ---
