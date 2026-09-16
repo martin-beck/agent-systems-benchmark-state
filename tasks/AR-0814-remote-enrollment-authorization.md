@@ -9,7 +9,7 @@
   "id": "AR-0814",
   "next_action": "Add explicit enrollment fingerprint ceremony and rotation/revocation integration audit tests; regenerate contract docs.",
   "observed_branch": "feature/remote-enrollment-authz",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "19674fae15ac781f9a1f798e7d1b212c817e88f3",
   "owner": "asb_ar0814_enrollment_authz",
   "plan": "../plans/AR-0814.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T17:47:24+00:00",
+  "updated_at": "2026-09-16T17:47:31+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
