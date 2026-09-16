@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1234",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T10:48:59+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1100",
     "AR-1231",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1234",
   "observed_dirty": 0,
   "observed_head": "7afabe002d8296059934c6f231482182facf9ff4",
-  "owner": "asb_ar1234_namespace_finish_worker",
+  "owner": "",
   "plan": "../plans/AR-1234.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Provide an approved runtime-owned loopback-only sandbox namespace capability.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Runtime-owned loopback namespace capability",
-  "updated_at": "2026-09-16T08:54:17+00:00",
+  "updated_at": "2026-09-16T08:54:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1234"
 }
 ---
@@ -192,3 +192,14 @@
 
 - 2026-09-16T08:54:17+00:00: Recorded command exit 0; command argv SHA-256
   d848b2bcc805b30dce8fa6066e3ea8b9754511796c1374d7651d4bd6bec5a9c6.
+
+- 2026-09-16T08:54:55+00:00: Implemented runtime-owned LoopbackOnly launch seam at signed commits
+  fcfe149 and 7afabe0. LoopbackOnly now requires a supervisor plan with exactly one IPv4 loopback
+  listener; sandbox mounts content-pinned supervisor and sidecar read-only at private namespace
+  paths and rewrites both paths into the handoff. Host/ambient networking remains unrepresentable.
+  Verified exact diff is limited to Cargo.lock, asb-runtime manifest, runtime library,
+  supervisor/sidecar modules and binaries; no unrelated files. Evidence: handoffctl-wrapped cargo
+  test --locked -p asb-runtime --all-targets passed (37 unit, 3 sidecar binary, 8 process boundary,
+  10 sandbox boundary, 16 scheduler); clippy -D warnings and fmt passed. Published non-destructive
+  branch feature/ar-1234-namespace-finish because remote feature/ar-1234 had diverged; no force
+  push.
