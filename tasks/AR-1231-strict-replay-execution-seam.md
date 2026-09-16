@@ -9,7 +9,7 @@
     "AR-1230"
   ],
   "id": "AR-1231",
-  "next_action": "Planned prerequisite for AR-1151: implement the versioned strict-replay adapter/run-path seam, process egress denial, and bounded cancellation/restart recovery with complete positive and negative evidence.",
+  "next_action": "Integrate StrictReplayLaunchRecord with provider adapter launch seam; add executable loopback route binding, egress-denial/no-fallback and cancellation/restart tests. Current signed head ba68508 has typed versioned contract/schema and focused asb-agents strict_replay tests passing.",
   "observed_branch": "feature/ar-1231",
   "observed_dirty": 0,
   "observed_head": "ba6850839c3cab4d2b70ef13d3392b0cd4b3ff38",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents through strict replay without provider egress or live fallback.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Strict replay execution and egress-isolation seam",
-  "updated_at": "2026-09-16T01:49:16+00:00",
+  "updated_at": "2026-09-16T01:49:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1231"
 }
 ---
@@ -95,3 +95,9 @@
 
 - 2026-09-16T01:49:16+00:00: Recorded command exit 0; command argv SHA-256
   923ff3ffa4f6258d5217b9ce90e045e951dcae7538c5551fd3d0a2870b3cdec1.
+
+- 2026-09-16T01:49:44+00:00: Added strict_replay module with credential-free versioned launch input
+  binding cassette, route, dialect, adapter, run/attempt/workload identities, loopback-only egress
+  policy, bounded timeout, authenticated digest record, deny-unknown-fields serde, schema artifact,
+  and positive/negative validation tests. Focused locked offline cargo test -p asb-agents
+  strict_replay passed. Signed DCO commit ba68508 pushed; worktree clean.

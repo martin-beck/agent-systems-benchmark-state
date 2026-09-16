@@ -1353,7 +1353,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md): Strict replay execution and egress-isolation seam | asb_ar1231_replay_seam | Execute real agents through strict replay without provider egress or live fallback. | Planned prerequisite for AR-1151: implement the versioned strict-replay adapter/run-path seam, process egress denial, and bounded cancellation/restart recovery with complete positive and negative evidence. |
+| P0 | [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md): Strict replay execution and egress-isolation seam | asb_ar1231_replay_seam | Execute real agents through strict replay without provider egress or live fallback. | Integrate StrictReplayLaunchRecord with provider adapter launch seam; add executable loopback route binding, egress-denial/no-fallback and cancellation/restart tests. Current signed head ba68508 has typed versioned contract/schema and focused asb-agents strict_replay tests passing. |
 
 ### Open (14)
 
