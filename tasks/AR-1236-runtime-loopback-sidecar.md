@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1236-runtime-loopback-sidecar",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T09:12:07+00:00",
   "depends_on": [
     "AR-1100",
     "AR-1231"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1236-runtime-loopback-sidecar",
   "observed_dirty": 0,
   "observed_head": "11d37da2ec59fb5e2afe26c35d9c1bab1787f034",
-  "owner": "",
+  "owner": "asb_ar1236_worker",
   "plan": "../plans/AR-1236.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide a runtime-owned private-namespace loopback sidecar capability.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime-owned loopback sidecar capability",
-  "updated_at": "2026-09-16T07:11:44+00:00",
+  "updated_at": "2026-09-16T07:12:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1236"
 }
 ---
@@ -39,3 +39,5 @@ privacy, policy, native, signature, and exact-head gates.
 
 - 2026-09-16T07:11:44+00:00: Dependencies AR-1100 and AR-1231 verified complete; promote
   runtime-owned loopback sidecar capability.
+
+- 2026-09-16T07:12:07+00:00: Claimed by asb_ar1236_worker.
