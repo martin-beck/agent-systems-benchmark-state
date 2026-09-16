@@ -8,7 +8,7 @@
     "AR-1100"
   ],
   "id": "AR-1233",
-  "next_action": "Promote after AR-1232 is blocked and implement the approved loopback-only transport seam.",
+  "next_action": "143213c adds typed LoopbackOnly policy preservation and fail-closed backend rejection; focused runtime test passes 1/1. Next implement attested loopback namespace/listener binding without weakening Deny, then add native child-service and provider-egress tests.",
   "observed_branch": "feature/ar-1233",
   "observed_dirty": 0,
   "observed_head": "143213c1d09c5c22d9cd0dec0ca55c2adb29b201",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated loopback-only sandbox transport for strict replay services.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Approved loopback-only sandbox transport",
-  "updated_at": "2026-09-16T05:13:28+00:00",
+  "updated_at": "2026-09-16T05:13:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1233"
 }
 ---
@@ -61,3 +61,10 @@
 
 - 2026-09-16T05:13:28+00:00: Recorded command exit 0; command argv SHA-256
   269710c1c9962221b1de94c62dab2e843e9cf07a4778d00dc60a9772bdf4f680.
+
+- 2026-09-16T05:13:49+00:00: Signed/DCO product head 143213c pushed on feature/ar-1233. SandboxSpec
+  now stores and exposes requested NetworkPolicy; LoopbackOnly is distinct from Deny and Host.
+  Existing backend rejects LoopbackOnly with typed SandboxError::NetworkPolicy until an attested
+  loopback implementation is added, preventing host-network fallback. Focused cargo test --locked
+  --offline -p asb-runtime sandbox::tests::malformed_specs_fail_before_spawn passed 1/1; worktree
+  clean.

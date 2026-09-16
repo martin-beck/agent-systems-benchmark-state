@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0897](tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Hold PR 126 at bd6f450; after AR-0877 and AR-0909 integrate, rebase once and require fresh all-green exact-head CI before merge. | asb_ar0897_merge_integrity |
-| P0 | [AR-1233](tasks/AR-1233-loopback-sandbox-transport.md): Approved loopback-only sandbox transport | Provide an authenticated loopback-only sandbox transport for strict replay services. | Promote after AR-1232 is blocked and implement the approved loopback-only transport seam. | asb_ar1232_sandbox_supervision |
+| P0 | [AR-1233](tasks/AR-1233-loopback-sandbox-transport.md): Approved loopback-only sandbox transport | Provide an authenticated loopback-only sandbox transport for strict replay services. | 143213c adds typed LoopbackOnly policy preservation and fail-closed backend rejection; focused runtime test passes 1/1. Next implement attested loopback namespace/listener binding without weakening Deny, then add native child-service and provider-egress tests. | asb_ar1232_sandbox_supervision |
 | P1 | [AR-0909](tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Recover merge integrity for PR127 merge 00f3763: verify required main CI, signed merge/tree/DCO evidence, and repository merge-attestation procedure before closing AR. | asb_ar0909_repair |
 
 ## Open
