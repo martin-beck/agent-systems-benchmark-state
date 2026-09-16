@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1251-mockagents-transport-sandbox",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T13:59:43+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1251-mockagents-transport-sandbox",
   "observed_dirty": 0,
   "observed_head": "128ecddbfdb7fcfff6e257adf3237b5866aca481",
-  "owner": "asb_ar1251_transport_sandbox",
+  "owner": "",
   "plan": "../plans/AR-1251.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Add a bounded transport and sandbox fixture for MockAgents qualification.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Add MockAgents transport sandbox fixture",
-  "updated_at": "2026-09-16T11:59:43+00:00",
+  "updated_at": "2026-09-16T12:00:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1251"
 }
 ---
@@ -50,3 +50,14 @@ preserve privacy, network-denial, signature, DCO, and exact-tree gates.
   transport fixture implementation with real bounded network and lifecycle evidence.
 
 - 2026-09-16T11:59:43+00:00: Claimed by asb_ar1251_transport_sandbox.
+
+- 2026-09-16T12:00:48+00:00: Released blocked/ownerless with exact environment boundary. Approved
+  AR-1252 runner f0f3d67/249dac1 provides immutable
+  ubuntu@sha256:33ceb71981b602c1a7443a53469e4dba065f7503eab3078a2d7a57a2ab987517, --network none,
+  one read-only artifact bind, direct MockAgents version proof, timeout and named-container cleanup.
+  It cannot run the Python transport fixture because image has no python3; host unshare -n remains
+  Operation not permitted. Existing cached Python image is a different digest and not approved by
+  AR-1252. Adding a second fixture mount or host interpreter would violate reviewed
+  one-mount/provenance gates. No product mutation made; next action is to promote a reviewed runner
+  successor with a pinned fixture runtime/image, then implement actual transport, outbound-attempt,
+  cancellation/backpressure and descendant tests.
