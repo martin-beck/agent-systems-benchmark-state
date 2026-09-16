@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1232",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T06:39:37+00:00",
+  "claim_expires": "2026-09-16T06:41:17+00:00",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 334,
+  "task_revision": 335,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T04:39:37+00:00",
+  "updated_at": "2026-09-16T04:41:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -883,3 +883,5 @@
   route/endpoint observation, followed by focused native tests.
 
 - 2026-09-16T04:39:37+00:00: Heartbeat by asb_ar1232_sandbox_supervision.
+
+- 2026-09-16T04:41:17+00:00: Heartbeat by asb_ar1232_sandbox_supervision.
