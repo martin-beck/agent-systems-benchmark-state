@@ -12,16 +12,16 @@
   "next_action": "Promote after dependency verification; wire the primary replay command to runtime-issued operation execution and prove supervised lifecycle behavior.",
   "observed_branch": "feature/ar-1276-primary-replay-runtime",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "69e8b064d3121a4bae1f672cdae9c0c8672000bc",
   "owner": "",
   "plan": "../plans/AR-1276.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "blocked",
   "summary": "Integrate runtime-owned operation execution into the primary strict-replay command.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Primary replay runtime integration",
-  "updated_at": "2026-09-16T23:58:46+00:00",
+  "updated_at": "2026-09-16T23:58:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1276-primary-replay-runtime"
 }
 ---
