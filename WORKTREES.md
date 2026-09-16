@@ -186,8 +186,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-runtime-bundle-manifest` | `feature/runtime-bundle-manifest` | `4b2805d870df` | 0 | behind 536, ahead 0 |
 | `agent-systems-benchmark-sandbox-runtime` | `feature/sandbox-runtime` | `ac4a23599649` | 0 | behind 613, ahead 0 |
 | `agent-systems-benchmark-sandbox-test-portability` | `fix/sandbox-test-portability` | `23035acde688` | 0 | behind 601, ahead 0 |
-| `agent-systems-benchmark-shellcheck-fail-closed` | `fix/shellcheck-fail-closed` | `8176605df747` | 7 | behind 0, ahead 1 |
-| changed files | - | - | - | `crates/asb-cli/default_17620349906757407305_0_1871441.profraw`, `crates/asb-cli/default_17620349906757407305_0_1871446.profraw`, `crates/asb-cli/default_17620349906757407305_0_1871447.profraw`, `crates/asb-cli/default_17620349906757407305_0_1871449.profraw`, `crates/asb-cli/default_17620349906757407305_0_1871450.profraw`, `crates/asb-cli/default_17620349906757407305_0_1871471.profraw`, `crates/asb-cli/default_17620349906757407305_0_1871474.profraw` |
+| `agent-systems-benchmark-shellcheck-fail-closed` | `fix/shellcheck-fail-closed` | `8176605df747` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-ssh-remote-bootstrap` | `feature/ssh-remote-bootstrap` | `980276dd2885` | 0 | behind 348, ahead 0 |
 | `agent-systems-benchmark-statistical-analysis` | `feature/statistical-analysis` | `3bcfd85dedd3` | 0 | behind 638, ahead 0 |
 | `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `410ecc95b80e` | 0 | behind 626, ahead 0 |
