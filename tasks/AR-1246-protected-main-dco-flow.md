@@ -2,7 +2,7 @@
 {
   "branch": "fix/ar-1246-protected-main-dco-flow",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T12:04:15+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1242",
     "AR-1245"
@@ -12,15 +12,15 @@
   "observed_branch": "fix/ar-1246-protected-main-dco-flow",
   "observed_dirty": 0,
   "observed_head": "903aef8f4e12ab6e9b542105528ca513dcb90cd3",
-  "owner": "asb_ar1237_launch_bridge_worker",
+  "owner": "",
   "plan": "../plans/AR-1246.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Durably admit authenticated GitHub protected-main merges without one-off DCO hash exceptions.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Protected-main DCO flow",
-  "updated_at": "2026-09-16T10:06:37+00:00",
+  "updated_at": "2026-09-16T10:33:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1246"
 }
 ---
@@ -44,3 +44,7 @@ handoffctl. Preserve all published history and do not touch runtime, bundle, or 
   OPEN/MERGEABLE; passed fuzz, Kani, Loom, retained faults, matcher, AWQ, headers and platform
   checks. Still pending emulated aarch64, TLC/Alloy, Rust, and policy/coverage/supply-chain checks.
   No changes made.
+
+- 2026-09-16T10:33:33+00:00: Completed: durable protected-main DCO implementation signed as
+  35c69dc/903aef8; PR #195 merged as 5a2c1516a0727aba7fd8543599151eaf971d8372. Follow-on AR-1247
+  corrected verify.yml binding; all post-merge workflows for 128ecdd passed.
