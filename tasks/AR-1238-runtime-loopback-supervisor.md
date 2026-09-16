@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1238.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide the runtime-owned private-namespace supervisor for loopback replay.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Runtime-owned loopback supervisor",
-  "updated_at": "2026-09-16T08:11:14+00:00",
+  "updated_at": "2026-09-16T08:20:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1238"
 }
 ---
@@ -140,3 +140,7 @@ remaining work is launcher integration and real sidecar forwarding, not a host c
   (3/3). Remaining native test/bundle blocker: asb-bundle must supply signed manifest/payload paths
   for both binaries before SandboxBackend can run them in bwrap; this worker did not touch
   asb-bundle or other ARs. No host sharing/firewall/ambient ip/credentials.
+
+- 2026-09-16T08:20:58+00:00: AR-1239 verified bundle commit is available; user-approved continuation
+  integrates bundle supervisor/sidecar payload paths and native Bubblewrap matrix exclusively in
+  AR-1238.
