@@ -24,17 +24,17 @@ Generated from local Git and GitHub. Do not edit.
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
 | #151 | `dependabot/cargo/serde-1.0.229@43883609b8db` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
-| #183 | `feature/ar-1231@fd8eaef0c36d` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | feat(replay): add typed strict launch contract |
+| #183 | `feature/ar-1231@fd8eaef0c36d` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(replay): add typed strict launch contract |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35048737492 | `fd8eaef0c36d` | pull_request | Formal assurance | queued:- |
-| 35048737491 | `fd8eaef0c36d` | pull_request | Fault assurance | queued:- |
-| 35048737485 | `fd8eaef0c36d` | pull_request | Agent Workflow Quality shadow | queued:- |
+| 35048737492 | `fd8eaef0c36d` | pull_request | Formal assurance | in_progress:- |
+| 35048737491 | `fd8eaef0c36d` | pull_request | Fault assurance | in_progress:- |
+| 35048737485 | `fd8eaef0c36d` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35048737479 | `fd8eaef0c36d` | pull_request | Repository quality | pending:- |
-| 35048737477 | `fd8eaef0c36d` | pull_request | Huawei MIT source headers | queued:- |
+| 35048737477 | `fd8eaef0c36d` | pull_request | Huawei MIT source headers | completed:success |
 | 35048737472 | `fd8eaef0c36d` | pull_request | Emulated aarch64 portability | pending:- |
 | 35048737470 | `fd8eaef0c36d` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 35048737468 | `fd8eaef0c36d` | pull_request | Rust verification | pending:- |
