@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1232",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T07:16:12+00:00",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "7613c678c71806dd7f3aa3f7cc521dd9a8256e3e",
-  "owner": "",
+  "owner": "asb_ar1232_worker",
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 443,
+  "task_revision": 444,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T06:46:10+00:00",
+  "updated_at": "2026-09-16T06:46:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -1231,3 +1231,5 @@
 - 2026-09-16T06:46:10+00:00: Read-only dependency audit: AR-1233 and AR-1234 remain blocked and
   their capability commits exist only on feature branches, not main or an approved merged release.
   Update AR-1232 next action to name the exact prerequisite; do not modify either dependency.
+
+- 2026-09-16T06:46:12+00:00: Claimed by asb_ar1232_worker.
