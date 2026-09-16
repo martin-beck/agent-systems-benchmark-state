@@ -50,7 +50,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1246` | `fix/ar-1246-protected-main-dco-flow` | `903aef8f4e12` | 0 | behind 105, ahead 0 |
 | `agent-systems-benchmark-ar-1247` | `fix/ar-1247-protected-main-dco-workflow` | `53d018d69057` | 0 | behind 61, ahead 0 |
 | `agent-systems-benchmark-ar-1248` | `feature/ar-1248-strict-replay-cli-contract` | `cebe8efc19a1` | 0 | behind 60, ahead 8 |
-| `agent-systems-benchmark-ar-1249` | `feature/ar-1249-mockagents-qualification-evidence` | `128ecddbfdb7` | 0 | behind 60, ahead 0 |
+| `agent-systems-benchmark-ar-1249` | `feature/ar-1249-mockagents-qualification-evidence` | `128ecddbfdb7` | 1 | behind 60, ahead 0 |
+| changed files | - | - | - | `tools/llm-double-spike/qualify_mockagents.py` |
 | `agent-systems-benchmark-ar-1250` | `feature/ar-1250-mockagents-harness-extension` | `055e9dc253d4` | 0 | behind 60, ahead 9 |
 | `agent-systems-benchmark-ar-1251` | `feature/ar-1251-mockagents-transport-sandbox` | `128ecddbfdb7` | 0 | behind 60, ahead 0 |
 | `agent-systems-benchmark-ar-1252` | `feature/ar-1252-approved-isolated-runner` | `1d0c3cd017e8` | 0 | behind 37, ahead 0 |
