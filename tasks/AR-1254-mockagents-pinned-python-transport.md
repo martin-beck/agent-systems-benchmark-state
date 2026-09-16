@@ -10,17 +10,17 @@
   "id": "AR-1254",
   "next_action": "Implement real bounded MockAgents transport fixture through pinned Python runner.",
   "observed_branch": "feature/ar-1254-mockagents-pinned-python-transport",
-  "observed_dirty": 2,
-  "observed_head": "a0befc0ff247a42b8d796af161b58b1011de8377",
+  "observed_dirty": 0,
+  "observed_head": "8b0742860c39a9a6ae499270272dcc1861305f89",
   "owner": "asb_ar1254_mockagents_transport",
   "plan": "../plans/AR-1254.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify MockAgents through the pinned Python sandbox.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Qualify MockAgents through pinned Python transport",
-  "updated_at": "2026-09-16T13:47:06+00:00",
+  "updated_at": "2026-09-16T13:47:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1254"
 }
 ---
