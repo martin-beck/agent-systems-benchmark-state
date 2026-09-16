@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Add endpoint dispatch/admin context and regenerate v1.7 schemas/conformance fixtures; run full gates.",
+  "next_action": "Implement backend-owned BreakGlass admin authorization and v1.7 schemas/endpoint tests; preserve legacy schemas.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "75fbd5f1ae8c5265eba874dbbbda3862c2e2b15d",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 191,
+  "task_revision": 192,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T18:37:11+00:00",
+  "updated_at": "2026-09-16T18:37:25+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -506,3 +506,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T18:37:04+00:00: Recorded command exit 0; command argv SHA-256
   044e453505fb0cf04920ec691b1ec57715cb159cdabae1465bc2d7e430b845f8.
+
+- 2026-09-16T18:37:25+00:00: Signed+DCO 75fbd5f adds ControlBackend::authorize hook and privacy-safe
+  Unauthorized failure; endpoint invokes it before execute_versioned, preventing caller-only role
+  claims from authorizing mutations. cargo check -p asb-control passes.
