@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover signed protected-main integration after PR #205.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Recover signed integration after PR #205",
-  "updated_at": "2026-09-16T21:44:56+00:00",
+  "updated_at": "2026-09-16T21:45:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1264-merge-integrity"
 }
 ---
@@ -33,3 +33,6 @@ main gates.
   preserved as evidence and this independent forward-only repair is dependency-ready.
 
 - 2026-09-16T21:44:56+00:00: Claimed by asb_ar1264_merge_integrity.
+
+- 2026-09-16T21:45:06+00:00: Recorded command exit 0; command argv SHA-256
+  35c34309b0a3a1448fed41d456a0e2c20a3874f6231b7f23ebd8ea465d9243be.
