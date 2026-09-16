@@ -1368,7 +1368,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0897](../tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | asb_ar0897_merge_integrity | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Hold PR 126 at bd6f450; after AR-0877 and AR-0909 integrate, rebase once and require fresh all-green exact-head CI before merge. |
-| P0 | [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md): Runtime-owned loopback namespace capability | asb_ar1232_sandbox_supervision | Provide an approved runtime-owned loopback-only sandbox namespace capability. | Promote after review; implement runtime-owned loopback namespace capability with fail-closed fallback. |
+| P0 | [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md): Runtime-owned loopback namespace capability | asb_ar1232_sandbox_supervision | Provide an approved runtime-owned loopback-only sandbox namespace capability. | 36a4580 adds typed LoopbackOnly policy preservation and fail-closed backend rejection; focused runtime test passes 1/1. Next implement an approved runtime-owned loopback namespace/helper, then prove authenticated child cassette service and provider/descendant egress denial. |
 
 ### Open (12)
 
@@ -1543,4 +1543,3 @@ flowchart LR
 | P1 | [AR-0104](../tasks/AR-0104-durable-results.md): Implement durable run storage and recovery | Unclaimed | Persist manifests, event streams, artifact hashes and recoverable execution intentions. | Await exact-head PR 6 CI and independent immutable-head review; repair findings before coordinator integration. |
 | P1 | [AR-0201](../tasks/AR-0201-portable-metrics.md): Collect portable system and session metrics | Unclaimed | Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling. | Run final state reconcile/live doctor/full validation, then release AR-0201 done and explicitly return the Cargo workspace/lock fence. |
 | P1 | [AR-0203](../tasks/AR-0203-statistical-analysis.md): Implement statistical and SLO assessment | Unclaimed | Compute latency distributions, quality/throughput intervals and evidence-aware SLO results. | Create and push reviewed signed+DCO no-ff merge of exact head 3bcfd85; verify PR merge identity, then run exact-main local and hosted post-merge checks. |
-| P1 | [AR-0204](../tasks/AR-0204-capacity-sweeps.md): Implement capacity sweeps and arrival scheduling | Unclaimed | Run repeated closed-loop and open-loop experiments with bounded concurrency. | Await coordinator postmerge local validation/state doctor confirmation before releasing AR-0204. |

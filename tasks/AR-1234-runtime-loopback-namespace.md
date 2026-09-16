@@ -8,7 +8,7 @@
     "AR-1231"
   ],
   "id": "AR-1234",
-  "next_action": "Promote after review; implement runtime-owned loopback namespace capability with fail-closed fallback.",
+  "next_action": "36a4580 adds typed LoopbackOnly policy preservation and fail-closed backend rejection; focused runtime test passes 1/1. Next implement an approved runtime-owned loopback namespace/helper, then prove authenticated child cassette service and provider/descendant egress denial.",
   "observed_branch": "feature/ar-1234",
   "observed_dirty": 0,
   "observed_head": "36a458020483c1b4aa204e491a936f00acd5706d",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an approved runtime-owned loopback-only sandbox namespace capability.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Runtime-owned loopback namespace capability",
-  "updated_at": "2026-09-16T05:26:05+00:00",
+  "updated_at": "2026-09-16T05:26:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1234"
 }
 ---
@@ -51,3 +51,9 @@
 
 - 2026-09-16T05:26:05+00:00: Recorded command exit 0; command argv SHA-256
   3d73f578197c9e5e8fa300c0ee54f444867113bb40d3cbe7535303246f19895d.
+
+- 2026-09-16T05:26:28+00:00: Signed/DCO product head 36a4580 pushed on feature/ar-1234. SandboxSpec
+  now stores/exposes LoopbackOnly distinctly from Deny and Host; SandboxBackend rejects it with
+  typed NetworkPolicy until runtime attestation exists, preventing host-network fallback. Focused
+  cargo test --locked --offline -p asb-runtime sandbox::tests::malformed_specs_fail_before_spawn
+  passed 1/1; worktree clean.
