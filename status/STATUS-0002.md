@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| P0 | [AR-0511](../tasks/AR-0511-replay-qwen.md): Qualify Qwen Code replay | Unclaimed | Qualify replay conformance for Qwen Code. | Release done after exact-main merge 1963364e75eec8cfcde0cfd0eaca672df12a2968 passed local post-merge gates and hosted runs 34156966254 quality, 34156966248 formal, 34156966219 Rust, and 34156966214 fault. |
 | P0 | [AR-0512](../tasks/AR-0512-replay-goose.md): Qualify goose replay | Unclaimed | Qualify replay conformance for goose. | Hold immutable 6dfa688 for independent review; publish only after approval. |
 | P0 | [AR-0513](../tasks/AR-0513-replay-miniswe.md): Qualify mini-SWE replay | Unclaimed | Qualify replay conformance for mini-SWE-agent. | Run final coordination reconcile, snapshot, full state validation and live doctor; release AR-0513 done only if product/state refs and worktrees remain clean and synchronized. |
 | P0 | [AR-0516](../tasks/AR-0516-opendesk-strict-replay-http-compatibility.md): OpenDesk strict-replay HTTP compatibility | Unclaimed | Add narrowly scoped strict-replay compatibility for pinned OpenDesk traffic. | Monitor exact-main 8eff6f95 CI; release only after every run is green and final synchronized state/live validation passes. |

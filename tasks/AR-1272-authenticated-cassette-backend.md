@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1272-authenticated-cassette-backend",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T01:20:45+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1272-authenticated-cassette-backend",
   "observed_dirty": 0,
   "observed_head": "85c0f5bc558c90f0543424cdb37017a824c227bb",
-  "owner": "asb_ar1024_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1272.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Bind immutable cassette content to a runtime-authenticated replay backend handle.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Authenticated immutable cassette backend",
-  "updated_at": "2026-09-16T23:28:03+00:00",
+  "updated_at": "2026-09-16T23:28:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1272-cassette-backend"
 }
 ---
@@ -114,3 +114,11 @@ paths as authority.
   StrictReplayExecutor, and executes one route/request with supplied verified isolation. CLI suite
   passes 71/71 and fmt pass; product tree clean. Remaining work is argument-level invocation and
   supervised lifecycle/egress evidence.
+
+- 2026-09-16T23:28:23+00:00: Released blocked/ownerless at clean signed 85c0f5b. Runtime-owned
+  CassetteContent bytes and CLI decode/execute wrapper are implemented; focused CLI 71/71, runtime
+  39/39, core 18/18, fmt pass. Exact blocker: execute_runtime_cassette still receives caller-owned
+  StrictReplayLaunchRecord, isolation, route, and request; runtime content owns bytes only. Actual
+  argument-level dispatch with runtime-owned record/route/request/isolation and supervised
+  egress/cancel/restart/timeout/crash cleanup remains unimplemented. Do not claim wrapper-only
+  execution as acceptance.
