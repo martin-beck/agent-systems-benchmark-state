@@ -11,17 +11,17 @@
   "id": "AR-1274",
   "next_action": "Promote after dependency verification; implement the dependency-neutral runtime cassette operation executor boundary and real supervised execution.",
   "observed_branch": "feature/ar-1274-runtime-cassette-executor-adapter",
-  "observed_dirty": 0,
-  "observed_head": "",
+  "observed_dirty": 2,
+  "observed_head": "69e8b064d3121a4bae1f672cdae9c0c8672000bc",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1274.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime cassette operation executor callback boundary.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Runtime cassette operation executor adapter",
-  "updated_at": "2026-09-16T23:40:47+00:00",
+  "updated_at": "2026-09-16T23:40:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1274-cassette-executor"
 }
 ---
