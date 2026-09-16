@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1234.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide an approved runtime-owned loopback-only sandbox namespace capability.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Runtime-owned loopback namespace capability",
-  "updated_at": "2026-09-16T06:53:55+00:00",
+  "updated_at": "2026-09-16T06:56:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1234"
 }
 ---
@@ -132,3 +132,7 @@
   Operation not permitted. No host sharing, global firewall mutation, ambient privileged helper, or
   external network used. Preserve fail-closed behavior; next action requires approved runtime-owned
   loopback-only helper/capability.
+
+- 2026-09-16T06:56:35+00:00: Resume for one-worker AR-1234-only audit and implementation attempt;
+  rootless loopback-only mechanisms only; no host sharing, firewall mutation, ambient privileged
+  helper, or external network.
