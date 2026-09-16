@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1231",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T04:42:20+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1231",
   "observed_dirty": 0,
   "observed_head": "fd8eaef0c36de33ee5f091347f17f8a9cffea6e8",
-  "owner": "asb_ar1231_publication",
+  "owner": "",
   "plan": "../plans/AR-1231.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Execute real agents through strict replay without provider egress or live fallback.",
-  "task_revision": 189,
+  "task_revision": 190,
   "title": "Strict replay execution and egress-isolation seam",
-  "updated_at": "2026-09-16T02:49:25+00:00",
+  "updated_at": "2026-09-16T02:50:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1231"
 }
 ---
@@ -536,3 +536,8 @@
 
 - 2026-09-16T02:49:25+00:00: Recorded command exit 0; command argv SHA-256
   f50153f89853bbc64af7c4735dac2ce24360cf111284dd931f1089c3b1222550.
+
+- 2026-09-16T02:50:01+00:00: PR #183 merged as f218bac. All 12 exact-head checks green at fd8eaef.
+  Post-merge focused strict_replay suite passed 10 tests against origin/main f218bac. AR-1232 owns
+  OS-level process supervision and lifecycle duplicate/stale generation coverage. Continue AR-1232
+  and AR-1151.
