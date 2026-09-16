@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1260](tasks/AR-1260-runtime-owned-strict-replay-integration.md): Runtime-owned strict-replay integration | Integrate strict replay with runtime-owned attestation and supervised sandbox execution. | Request independent exact-head review of 9e4a1c0 and confirm runtime lifecycle/egress delegation boundaries; do not claim CLI end-to-end child execution without runtime-issued context. | asb_ar1024_lifecycle_router |
+| P0 | [AR-1260](tasks/AR-1260-runtime-owned-strict-replay-integration.md): Runtime-owned strict-replay integration | Integrate strict replay with runtime-owned attestation and supervised sandbox execution. | Blocked pending runtime-owned launch context injection: CLI dispatch has no safe source for SidecarHandoff, SandboxBackend, ResourceLease, or pinned supervisor/sidecar commands. Runtime API presence alone does not authorize CLI fabrication; create a narrow runtime-to-CLI entrypoint or successor AR. | asb_ar1024_lifecycle_router |
 
 ## Open
 

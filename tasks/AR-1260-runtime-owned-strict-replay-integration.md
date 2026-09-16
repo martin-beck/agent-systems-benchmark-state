@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1260",
-  "next_action": "Request independent exact-head review of 9e4a1c0 and confirm runtime lifecycle/egress delegation boundaries; do not claim CLI end-to-end child execution without runtime-issued context.",
+  "next_action": "Blocked pending runtime-owned launch context injection: CLI dispatch has no safe source for SidecarHandoff, SandboxBackend, ResourceLease, or pinned supervisor/sidecar commands. Runtime API presence alone does not authorize CLI fabrication; create a narrow runtime-to-CLI entrypoint or successor AR.",
   "observed_branch": "feature/ar-1260-runtime-owned-strict-replay-integration",
   "observed_dirty": 0,
   "observed_head": "9e4a1c095e1f736011699edb4ab216e876e77251",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate strict replay with runtime-owned attestation and supervised sandbox execution.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Runtime-owned strict-replay integration",
-  "updated_at": "2026-09-16T20:43:15+00:00",
+  "updated_at": "2026-09-16T20:43:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1260-runtime"
 }
 ---
@@ -122,3 +122,11 @@ missing, stale, duplicated, or mismatched.
   runtime-issued supervised launch context; preserve fail-closed authority boundaries.
 
 - 2026-09-16T20:43:15+00:00: Claimed by asb_ar1024_lifecycle_router.
+
+- 2026-09-16T20:43:54+00:00: Re-audit against protected main 0a808a6 after merged runtime API PR
+  34243aa: SidecarHandoff/LoopbackSidecar/StrictReplayLaunchBridge/SandboxBackend are present.
+  However SidecarHandoff is data-only and current LoopbackSidecar::handoff requires a
+  namespace_ready boolean; replay_plan dispatch receives only plan path and artifact root, so it
+  cannot obtain runtime-issued attestation, launch input, lease, or pinned commands. Existing
+  spawn_runtime_replay wrapper is safe but unreachable from CLI dispatch. No scope-widening mutation
+  made.
