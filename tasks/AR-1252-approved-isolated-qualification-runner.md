@@ -10,16 +10,16 @@
   "next_action": "Rebase feature onto protected main 4e2820b, preserving runner changes and producing newly SSH-signed+DCO commits; push exact new head, rerun all PR gates including platform source identity.",
   "observed_branch": "feature/ar-1252-approved-isolated-runner",
   "observed_dirty": 0,
-  "observed_head": "d5f21cebefbc0d532537fbdbdffc998d62e92255",
+  "observed_head": "1d0c3cd017e8d486231dabbd1c590b654f74cc9c",
   "owner": "asb_ar1252_isolated_runner",
   "plan": "../plans/AR-1252.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 101,
+  "task_revision": 102,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T12:56:46+00:00",
+  "updated_at": "2026-09-16T12:56:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
