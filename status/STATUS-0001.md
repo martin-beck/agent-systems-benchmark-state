@@ -940,6 +940,7 @@ flowchart LR
     AR_0897 --> AR_0898
     AR_0897 --> AR_0903
     AR_0897 --> AR_1242
+    AR_0897 --> AR_1264
     AR_0898 --> AR_0899
     AR_0898 --> AR_0903
     AR_0899 --> AR_0903
@@ -1172,7 +1173,6 @@ flowchart LR
     AR_1253 --> AR_1255
     AR_1253 --> AR_1256
     AR_1254 --> AR_1255
-    AR_1263 --> AR_1264
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1340,7 +1340,7 @@ flowchart LR
 | [AR-0894](../tasks/AR-0894-tui-local-llm-parity.md) | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0873](../tasks/AR-0873-ci-workflow-captures.md), [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md) | None |
 | [AR-0895](../tasks/AR-0895-verify-coordination-content.md) | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0003](../tasks/AR-0003-quality-gates.md) | None |
 | [AR-0896](../tasks/AR-0896-mockagents-executable-qualification.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md), [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md) | None |
-| [AR-0897](../tasks/AR-0897-main-merge-integrity.md) | [AR-0003](../tasks/AR-0003-quality-gates.md) | [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1242](../tasks/AR-1242-protected-main-admission.md) |
+| [AR-0897](../tasks/AR-0897-main-merge-integrity.md) | [AR-0003](../tasks/AR-0003-quality-gates.md) | [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1242](../tasks/AR-1242-protected-main-admission.md), [AR-1264](../tasks/AR-1264-pr205-merge-integrity.md) |
 | [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0897](../tasks/AR-0897-main-merge-integrity.md), [AR-1008](../tasks/AR-1008.md) | [AR-0899](../tasks/AR-0899-gitleaks-revision-config-integrity.md), [AR-0903](../tasks/AR-0903-release-qualification.md) |
 | [AR-0899](../tasks/AR-0899-gitleaks-revision-config-integrity.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md) | [AR-0903](../tasks/AR-0903-release-qualification.md) |
 | [AR-0901](../tasks/AR-0901-formal-assurance.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0203](../tasks/AR-0203-statistical-analysis.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md) | [AR-0877](../tasks/AR-0877-formal-tla-artifact-availability.md), [AR-0878](../tasks/AR-0878-tla-source-build-provenance.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md) |
@@ -1477,8 +1477,8 @@ flowchart LR
 | [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
 | [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
 | [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1263](../tasks/AR-1263-sandbox-scope-classification-stability.md) | [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md) | [AR-1264](../tasks/AR-1264-pr205-merge-integrity.md) |
-| [AR-1264](../tasks/AR-1264-pr205-merge-integrity.md) | [AR-1263](../tasks/AR-1263-sandbox-scope-classification-stability.md) | None |
+| [AR-1263](../tasks/AR-1263-sandbox-scope-classification-stability.md) | [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md) | None |
+| [AR-1264](../tasks/AR-1264-pr205-merge-integrity.md) | [AR-0897](../tasks/AR-0897-main-merge-integrity.md) | None |
 
 ## Complete AR inventory
 
