@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1235.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Repair Goose diagnostic fixture portability under emulated AArch64.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Portable Goose diagnostic fixture",
-  "updated_at": "2026-09-16T06:09:15+00:00",
+  "updated_at": "2026-09-16T06:12:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1235"
 }
 ---
@@ -132,3 +132,6 @@ its intended diagnostic error assertion. Preserve the failure and repair the fix
   QEMU AArch64 diagnostic runs all passed (10/10, zero flakes). Original hosted failure 35060286408
   remains runner-only/unreproduced; no assertion or product change made. Reopen only with a new
   authoritative failing runner artifact.
+
+- 2026-09-16T06:12:04+00:00: Resume to trigger original hosted Emulated aarch64 workflow rerun for
+  exact fd7daa43549edd67b60076aa6b1eee333061b438 and obtain terminal CI evidence.
