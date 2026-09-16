@@ -28,9 +28,9 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 35058879949 | `7d43c1ec90fe` | push | Hosted portability and native qualification | completed:success |
-| 35058879938 | `7d43c1ec90fe` | push | Rust verification | in_progress:- |
+| 35058879938 | `7d43c1ec90fe` | push | Rust verification | completed:success |
 | 35058879936 | `7d43c1ec90fe` | push | Fault assurance | completed:success |
-| 35058879909 | `7d43c1ec90fe` | push | Formal assurance | in_progress:- |
+| 35058879909 | `7d43c1ec90fe` | push | Formal assurance | completed:success |
 | 35058879904 | `7d43c1ec90fe` | push | Emulated aarch64 portability | in_progress:- |
 | 35058879901 | `7d43c1ec90fe` | push | Huawei MIT source headers | completed:success |
 | 35058879898 | `7d43c1ec90fe` | push | Repository quality | completed:failure |
