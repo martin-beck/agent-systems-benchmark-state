@@ -106,6 +106,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-development-host-runner-capacity` | `feature/development-host-runner-capacity` | `0d9b363538d2` | 0 | behind 639, ahead 0 |
 | `agent-systems-benchmark-development-host-runner-qualification` | `feature/development-host-runner-qualification` | `3e8d58994eb2` | 0 | behind 23, ahead 0 |
 | `agent-systems-benchmark-development-host-workflow-routing` | `feature/development-host-workflow-routing` | `f55f98cc79b7` | 0 | behind 637, ahead 0 |
+| `agent-systems-benchmark-docker-binfmt-qemu` | `feature/docker-binfmt-qemu-capability` | `a0befc0ff247` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-durable-results` | `feature/durable-results` | `6277512c9fc3` | 0 | behind 737, ahead 0 |
 | `agent-systems-benchmark-emulated-aarch64-agent-serialization` | `test/serialize-emulated-aarch64-agents` | `88f4fce68eab` | 0 | behind 318, ahead 1 |
 | `agent-systems-benchmark-emulated-aarch64-portability` | `feature/emulated-aarch64-portability` | `0e6d74d2cf9f` | 0 | behind 577, ahead 0 |
