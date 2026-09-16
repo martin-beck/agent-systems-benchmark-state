@@ -1347,7 +1347,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1110](../tasks/AR-1110.md): Provider and model registry | asb_ar1110_discovery | Manage providers and models. | PR #180 exact head d16d8d0 is open; obtain independent immutable-head review and monitor all required CI lanes to terminal green, then merge only after approval. |
+| P0 | [AR-1110](../tasks/AR-1110.md): Provider and model registry | asb_ar1110_discovery | Manage providers and models. | Post-merge verification complete: PR #180 merged at 600d5a28; exact-main tree matches feature tree, focused asb-config tests and full offline workspace tests passed, worktree clean. Release AR-1110 as done. |
 
 ### Open (13)
 
@@ -1534,4 +1534,3 @@ flowchart LR
 | P1 | [AR-0313](../tasks/AR-0313-all-agents-provider.md): Configure one provider for all agents | Unclaimed | Let test plans select one provider profile for every chosen supported agent atomically. | Wait for PR #78 exact-head CI; independently review immutable diff, then merge serially only if every required check is green. |
 | P1 | [AR-0314](../tasks/AR-0314-recording-source-choice.md): Choose matching replay or live provider execution | Unclaimed | Offer matching prior recordings or an actual provider connection without silently choosing either. | Durable release and post-merge verification are complete; no further AR-0314 action. |
 | P1 | [AR-0315](../tasks/AR-0315-provider-parity-conformance.md): Verify cross-agent provider parity | Unclaimed | Conformance-test identical OpenAI and Ollama profiles across the complete supported-agent matrix. | Complete; no further action. |
-| P1 | [AR-0316](../tasks/AR-0316-agent-runtime-bundles.md): Publish reproducible agent runtime bundles | Unclaimed | Make supported agent installations reproducible, license-audited, SBOM-backed, and independently verifiable. | No further action for the released fail-closed catalog; complete runtime closures remain future work and must not be inferred. |

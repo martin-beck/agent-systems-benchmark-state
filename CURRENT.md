@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1110](tasks/AR-1110.md): Provider and model registry | Manage providers and models. | PR #180 exact head d16d8d0 is open; obtain independent immutable-head review and monitor all required CI lanes to terminal green, then merge only after approval. | asb_ar1110_discovery |
+| P0 | [AR-1110](tasks/AR-1110.md): Provider and model registry | Manage providers and models. | Post-merge verification complete: PR #180 merged at 600d5a28; exact-main tree matches feature tree, focused asb-config tests and full offline workspace tests passed, worktree clean. Release AR-1110 as done. | asb_ar1110_discovery |
 
 ## Open
 
