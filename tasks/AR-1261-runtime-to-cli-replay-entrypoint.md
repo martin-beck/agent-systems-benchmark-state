@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-owned entrypoint for strict-replay CLI supervision.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Runtime-to-CLI strict-replay handoff entrypoint",
-  "updated_at": "2026-09-16T20:49:14+00:00",
+  "updated_at": "2026-09-16T20:49:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1261-runtime-cli"
 }
 ---
@@ -43,3 +43,6 @@ preserving fail-closed ownership and bounded lifecycle evidence.
 
 - 2026-09-16T20:49:07+00:00: Recorded command exit 1; command argv SHA-256
   71566be2fa7fa50c21ce8e300d6a7308ac0a0cf46a2ff59a6158b54ccb2e4f3a.
+
+- 2026-09-16T20:49:48+00:00: Recorded command exit 1; command argv SHA-256
+  3c56d3015f3989a488485c942f50060e3011fb38c4714628b88baf543e137642.
