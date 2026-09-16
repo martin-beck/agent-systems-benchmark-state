@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 140,
+  "task_revision": 141,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-16T05:30:22+00:00",
+  "updated_at": "2026-09-16T05:30:33+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -466,3 +466,11 @@ Implementation has not started. Read the linked plan before claiming.
   a50d0aa952e7d6ed5c9be79c5a6d15410e94779593ac9b7a0634d8f82402a618.
 
 - 2026-09-16T05:30:22+00:00: Heartbeat by asb_ar0897_merge_integrity.
+
+- 2026-09-16T05:30:33+00:00: PR185 policy failure diagnosed:
+  test_wrong_committer_and_dco_fail_closed used a GPG-signed disallowed-key fixture, so signature
+  validation preceded intended committer assertion. Repair df5a519 adds explicit authorized
+  LOCAL_COMMITTER check; unauthorized committer now fails with committer error, while separate
+  wrong-signer negatives remain. Full test_signature_policy passes 16/16; commit SSH-signed/DCO and
+  pushed via exact lease, PR185 exact head df5a519. Next monitor fresh exact-head CI; if all 12
+  green, independently review and merge locally signed, then verify post-merge main policy/DCO.
