@@ -51,7 +51,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1248` | `feature/ar-1248-strict-replay-cli-contract` | `8e575b3963a6` | 2 | behind 0, ahead 4 |
 | changed files | - | - | - | `crates/asb-cli/fixtures/v1/strict-replay-plan.json`, `crates/asb-cli/src/replay_contract.rs` |
 | `agent-systems-benchmark-ar-1249` | `feature/ar-1249-mockagents-qualification-evidence` | `128ecddbfdb7` | 0 | behind 0, ahead 0 |
-| `agent-systems-benchmark-ar-1250` | `feature/ar-1250-mockagents-harness-extension` | `94a31224a44b` | 0 | behind 0, ahead 7 |
+| `agent-systems-benchmark-ar-1250` | `feature/ar-1250-mockagents-harness-extension` | `8a61b4672843` | 0 | behind 0, ahead 8 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 445, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 548, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 442, ahead 0 |

@@ -11,16 +11,16 @@
   "next_action": "Add tool-result, cancellation/backpressure, and outbound-denial executable cases; then rerun arm64 repeat and full gates.",
   "observed_branch": "feature/ar-1250-mockagents-harness-extension",
   "observed_dirty": 0,
-  "observed_head": "94a31224a44bcf3dc0417abe2eefd67d2a81f8e9",
+  "observed_head": "8a61b4672843c20be1b2d4fa81955abfa2bb7570",
   "owner": "asb_ar1250_mockagents_harness",
   "plan": "../plans/AR-1250.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend the pinned MockAgents executable qualification harness.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Extend MockAgents qualification harness",
-  "updated_at": "2026-09-16T10:57:04+00:00",
+  "updated_at": "2026-09-16T10:58:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1250"
 }
 ---
