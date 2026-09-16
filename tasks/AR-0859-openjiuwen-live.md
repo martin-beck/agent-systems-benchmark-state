@@ -7,7 +7,7 @@
     "AR-0858"
   ],
   "id": "AR-0859",
-  "next_action": "Obtain and independently verify the pinned OpenJiuwen executable/runtime interpreter provenance, then run the ignored credential-free loopback qualification; current provenance directory has only wheel and lock.",
+  "next_action": "Provide an approved immutable container/VM image digest with Python 3.11 and the complete 170-package OpenJiuwen lock closure (including aiofiles 25.1.0), or place all hashed artifacts in the provenance directory; then rerun offline install and live qualification.",
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "cceb76f436f8918786f610afdf20ba99fbd87d34",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 238,
+  "task_revision": 239,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-16T07:02:17+00:00",
+  "updated_at": "2026-09-16T07:02:39+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -813,3 +813,10 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-16T07:02:17+00:00: Recorded command exit 0; command argv SHA-256
   2d31924687b4d6da40706c632afcde15645d7d77cb7bb889f8105205afb2a578.
+
+- 2026-09-16T07:02:39+00:00: User-authorized setup investigation completed. Offline uv 0.12.8 probe
+  using Python 3.12.14 and --offline --require-hashes --no-index --find-links
+  /srv/data/projects/.asb-openjiuwen-provenance failed closed: aiofiles==25.1.0 is absent, so the
+  170-package lock cannot resolve. Docker is installed but docker info fails with permission denied
+  on /var/run/docker.sock; podman is unavailable. No mutable image was pulled and no host Python was
+  used as qualification evidence.
