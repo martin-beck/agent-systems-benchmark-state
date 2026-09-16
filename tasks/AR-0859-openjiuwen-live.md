@@ -7,7 +7,7 @@
     "AR-0858"
   ],
   "id": "AR-0859",
-  "next_action": "Provide an approved immutable Python 3.11 runtime/container image digest, or a reviewed interpreter artifact matching the live qualification identity contract; wheel closure is now complete but live test rejects the managed interpreter identity.",
+  "next_action": "Run exact-head CI for fb6a572 and complete independent review of the provenance-bound managed CPython 3.11.16 live qualification.",
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "fb6a57217033b495d66d835c4b175899d9f4b0fb",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 274,
+  "task_revision": 275,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-16T07:22:26+00:00",
+  "updated_at": "2026-09-16T07:22:37+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -927,3 +927,10 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   a869144aad0b10d3bf9e033a4750d56126cd2d7c85bac309b4803c72361baf31.
 
 - 2026-09-16T07:22:26+00:00: Heartbeat by asb_ar0859_runtime_requal.
+
+- 2026-09-16T07:22:37+00:00: Repaired AR-owned real_openjiuwen attestation: runner manifest is
+  bounded, exact-schema, absolute non-symlink, digest-verified, and must match explicit interpreter
+  path+SHA; dynamic Python 3.11 site-packages is checked. Added mismatched-identity negative test.
+  Focused suite 4/4 passed, package asb-agents 138 passed/1 ignored, and live loopback
+  edit/tools/usage test passed 1/1 in 7.03s. Commit fb6a572 is SSH-signed with DCO and pushed to
+  feature/openjiuwen-live.
