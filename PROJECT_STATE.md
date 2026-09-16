@@ -26,10 +26,10 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35085015371 | `128ecddbfdb7` | push | Emulated aarch64 portability | in_progress:- |
+| 35085015371 | `128ecddbfdb7` | push | Emulated aarch64 portability | completed:success |
 | 35085015347 | `128ecddbfdb7` | push | Repository quality | in_progress:- |
 | 35085015339 | `128ecddbfdb7` | push | Formal assurance | completed:success |
-| 35085015331 | `128ecddbfdb7` | push | Rust verification | in_progress:- |
+| 35085015331 | `128ecddbfdb7` | push | Rust verification | completed:success |
 | 35085015320 | `128ecddbfdb7` | push | Fault assurance | completed:success |
 | 35085015279 | `128ecddbfdb7` | push | Hosted portability and native qualification | completed:success |
 | 35085015274 | `128ecddbfdb7` | push | Huawei MIT source headers | completed:success |
