@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend the pinned MockAgents executable qualification harness.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Extend MockAgents qualification harness",
-  "updated_at": "2026-09-16T10:51:03+00:00",
+  "updated_at": "2026-09-16T10:51:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1250"
 }
 ---
@@ -60,3 +60,6 @@ privacy, signature, DCO, and exact-tree gates; do not claim support from host in
   (runner SHA256 ff6813b88af9a1fc22d37d87f8f7192eacf7d5c62a5144d3412dceb5e72b07fe), report correctly
   identifies linux-arm64; existing five loopback cases passed. Signed+DCO commit cc7d32c pushed to
   feature/ar-1250-mockagents-harness-extension. Remaining hostile cases are not yet implemented.
+
+- 2026-09-16T10:51:19+00:00: Recorded command exit 0; command argv SHA-256
+  734751dd1a8572c540d82e764b40c56a2fc39a612c8a28b9a64625fc6560df9f.
