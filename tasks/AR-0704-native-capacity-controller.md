@@ -8,7 +8,7 @@
     "AR-0103"
   ],
   "id": "AR-0704",
-  "next_action": "Repair/rebase the fail-closed TLA provenance pin, then rerun PR #119 exact-head CI; do not merge.",
+  "next_action": "Focused lifecycle/schema tests pass 25/25 on signed head 28f30ee. Remaining action is requalify PR #119 exact head for the fail-closed TLA provenance pin; inspect hosted failure and repair only if reproducible.",
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "28f30eea80efef5a61ea438e77402f8640564cc9",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-16T06:09:31+00:00",
+  "updated_at": "2026-09-16T06:09:55+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -283,3 +283,9 @@ must not block this AR or its dependents.
 
 - 2026-09-16T06:09:31+00:00: Recorded command exit 0; command argv SHA-256
   a50ec52884b39a6263d3f4d81689c8edcda545ce93da7eaadf5d77a94476c492.
+
+- 2026-09-16T06:09:55+00:00: Focused gate via handoffctl: python3 -m unittest
+  tests.capacity.test_lifecycle tests.platforms.test_native_x86_capacity ran 25 tests, all OK.
+  Expected bounded ERROR lines were emitted by negative fixtures; no test failure. Worktree remains
+  clean at signed/DCO head 28f30ee. Next step is read-only exact PR #119/TLA provenance audit before
+  any mutation.
