@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Implement remaining durable pairing ceremony dispatch and certificate threat negatives; then rerun full locked gates.",
+  "next_action": "Add certificate ceremony stolen/expiry/wrong-route and audit tamper negatives; then rerun full locked gates.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "304e919dac2965e6ef0da08fcb93c8ffda4ac912",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 272,
+  "task_revision": 273,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:39:39+00:00",
+  "updated_at": "2026-09-16T19:39:52+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -737,3 +737,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T19:39:32+00:00: Recorded command exit 0; command argv SHA-256
   1a9a334cdcc4e6fc089125d11d7ef84d8a4803c2ba8a4a75ac274f4f840e2411.
+
+- 2026-09-16T19:39:52+00:00: Signed+DCO 304e919 extends endpoint admin dispatch coverage: exact
+  authenticated generation succeeds, while a same-principal caller request at generation 2 is
+  rejected despite valid digests, proving stale-generation/confused-deputy fencing. Endpoint suite
+  passes 9/9; worktree clean.
