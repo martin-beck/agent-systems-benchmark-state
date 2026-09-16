@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1238-runtime-loopback-supervisor",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T10:21:00+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1100",
     "AR-1231"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1238-runtime-loopback-supervisor",
   "observed_dirty": 1,
   "observed_head": "418f3930bb4146c419e6b731dc59a015f997f55c",
-  "owner": "asb_ar1238_bwrap_relay_worker",
+  "owner": "",
   "plan": "../plans/AR-1238.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide the runtime-owned private-namespace supervisor for loopback replay.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Runtime-owned loopback supervisor",
-  "updated_at": "2026-09-16T08:21:52+00:00",
+  "updated_at": "2026-09-16T08:21:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1238"
 }
 ---
@@ -151,3 +151,10 @@ remaining work is launcher integration and real sidecar forwarding, not a host c
   relative executable paths to canonical trusted bundle root and verifies SHA-256 before launch.
   Full runtime tests 29, sidecar 3, process 8, sandbox 10, scheduler 16; fmt/clippy/rustdoc pass.
   AR-1239 bundle API remains unmodified.
+
+- 2026-09-16T08:21:55+00:00: Bundle path integration complete in signed b994e03: runtime resolves
+  only canonical bundle-contained supervisor/sidecar paths and verifies SHA-256; all focused/full
+  runtime gates and rustdoc pass. Native end-to-end bwrap matrix remains pending because
+  VerifiedBundle currently exposes only metadata, not artifact paths; integrating its payload-path
+  API would cross AR-1239. No other AR state changed; no host networking/firewall/ambient
+  ip/credentials.
