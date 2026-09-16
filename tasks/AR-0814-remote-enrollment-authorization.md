@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Implement a real certificate import/pairing identity-store ceremony and bind authorize_call to current enrollment generation; add a concrete break-glass recovery operation and audit/store threat-matrix tests. Keep SecretBackend explicitly qualified until an OS-protected backend is supplied; rerun full gates and review.",
+  "next_action": "Implement certificate import/pairing identity-store ceremony and concrete break-glass operation; rerun full gates and review.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "ad2d9e28d3e458a933ad502921812314f83f7697",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 142,
+  "task_revision": 143,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T18:20:33+00:00",
+  "updated_at": "2026-09-16T18:20:49+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -398,3 +398,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T18:20:25+00:00: Recorded command exit 0; command argv SHA-256
   d307f29a47bf4ba0be587f9a991ddf1bcd5989ea0097e9b02413dba5c70a07fc.
+
+- 2026-09-16T18:20:49+00:00: Signed+DCO ad2d9e2 removes hard-coded auth generation: auth CLI now
+  requires and threads --generation into AuthorizationContext; tutorial metadata updated. Auth
+  dispatch tests 2/2 pass. Worktree clean.

@@ -1465,7 +1465,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | asb_ar0814_enrollment_authz | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Implement a real certificate import/pairing identity-store ceremony and bind authorize_call to current enrollment generation; add a concrete break-glass recovery operation and audit/store threat-matrix tests. Keep SecretBackend explicitly qualified until an OS-protected backend is supplied; rerun full gates and review. |
+| P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | asb_ar0814_enrollment_authz | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Implement certificate import/pairing identity-store ceremony and concrete break-glass operation; rerun full gates and review. |
 
 ### Open (4)
 
