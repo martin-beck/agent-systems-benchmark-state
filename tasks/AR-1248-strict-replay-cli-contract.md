@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 139,
+  "task_revision": 140,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T20:21:38+00:00",
+  "updated_at": "2026-09-16T20:21:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -404,3 +404,6 @@ formal, privacy, signature, DCO, and exact-tree gates.
   and no-fallback evidence.
 
 - 2026-09-16T20:21:38+00:00: Claimed by asb_ar1024_lifecycle_router.
+
+- 2026-09-16T20:21:48+00:00: Recorded command exit 0; command argv SHA-256
+  7ff9f66199d2a3b292f342dc948a1ca42fe8b8eaf5af3227964d3e7c23db0f27.
