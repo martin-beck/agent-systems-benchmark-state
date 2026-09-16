@@ -7,7 +7,7 @@
     "AR-1252"
   ],
   "id": "AR-1253",
-  "next_action": "Publish PR from exact signed head b7797d0; monitor exact-head CI and merge only after all required checks and independent approval.",
+  "next_action": "Complete independent exact-head review/approval for PR #201 at b7797d0, then perform signed local merge via handoffctl only; verify exact-main post-merge workflows before release.",
   "observed_branch": "feature/ar-1253-pinned-python-transport-runtime",
   "observed_dirty": 0,
   "observed_head": "b7797d05c1a12f4e5cdd8d7df2a7b26c72425052",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision pinned Python transport fixture runtime.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Provision pinned Python transport fixture runtime",
-  "updated_at": "2026-09-16T13:32:40+00:00",
+  "updated_at": "2026-09-16T13:32:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1253"
 }
 ---
@@ -97,3 +97,10 @@ Keep runtime images, caches, provenance, and all test activity under `/srv/data/
   1b6f70ccee89abea5eba48eee4129e58ca41233a862999196df1633e2210fc76.
 
 - 2026-09-16T13:32:40+00:00: Heartbeat by asb_ar1253_python_runtime.
+
+- 2026-09-16T13:32:50+00:00: Transient Loom failure on formal run 35101828439 at PR head b7797d05
+  was confirmed as existing runner race ExecutableFileBusy in tests/tla_artifact_acquisition.rs
+  bounded_online_acquisition_faults_do_not_promote. Reran only failed Loom job 104814960434 via
+  handoffctl; formal run 35101828439 terminal success. PR #201 exact-head status: all 12 required
+  checks SUCCESS, mergeable CLEAN, no GitHub review yet; independent review evidence remains
+  required before merge.
