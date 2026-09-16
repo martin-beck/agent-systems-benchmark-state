@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 278,
+  "task_revision": 279,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T16:14:51+00:00",
+  "updated_at": "2026-09-16T16:18:37+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -855,3 +855,6 @@ Implementation has not started. Read the linked plan before claiming.
   2f6eb5b98c46152e939e8af0b8dd0acb18dc9127, and pushed PR202. Dependency repair remains: rustls
   0.23.45/aws_lc_rs, rcgen 0.14.7, time 0.3.47, serde 1.0.220; duplicate windows-sys 0.52 no longer
   appears in cargo tree.
+
+- 2026-09-16T16:18:37+00:00: Recorded command exit 0; command argv SHA-256
+  c65143762730d559bccb0d7ef438d643772d65f3bd4d10a9c819b4f889726502.
