@@ -2,7 +2,7 @@
 {
   "branch": "feature/development-host-runner-qualification",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T14:21:33+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0830",
     "AR-0831"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/development-host-runner-qualification",
   "observed_dirty": 0,
   "observed_head": "3e8d58994eb2b3faeda9449e4186498cf86eeb86",
-  "owner": "asb_ar1024_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-0832.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Qualify development host ASB runner operations",
-  "updated_at": "2026-09-16T12:22:58+00:00",
+  "updated_at": "2026-09-16T12:23:18+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-qualification"
 }
 ---
@@ -46,3 +46,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T12:22:58+00:00: Recorded command exit 1; command argv SHA-256
   3c138fab657d710b4ba17a21020ce08a8772e587897143622fd1621d03ffde0c.
+
+- 2026-09-16T12:23:18+00:00: Qualification harnesses passed: tests/runners/test_runner_scripts.sh
+  passed isolation/security fixtures; tests/platforms unittest suite 57/57 passed. Live runner
+  qualification cannot start: tools/runners/health.sh fails closed with ASB_OPERATOR_UID must be a
+  numeric identity, and no declared development-host runner lease/label capacity is available in
+  this isolated environment. Plan requires repeated clean jobs, reset/recovery, routing and artifact
+  provenance on every declared host; fixtures cannot establish support. Preserve clean origin/main
+  3e8d589; resume with authorized runner capacity and numeric operator identity.

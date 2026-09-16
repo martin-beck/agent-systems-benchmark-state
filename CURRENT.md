@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0832](tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. | asb_ar1024_lifecycle_router |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -31,6 +25,7 @@ Never edit this file directly.
 | P0 | [AR-1248](tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | Define the strict-replay CLI consumer contract. | Rerun PR #197 exact-head policy/Rust/contract CI and request independent review at cebe8ef. Executable replay-plan now resolves the verified cassette and retains RuntimeBoundReplay.sidecar for the execution lifetime; runtime attestation is consumed before handoff creation; relay cleanup is asserted on drop. Focused CLI 76/76 and clippy pass. | - |
 | P0 | [AR-1252](tasks/AR-1252-approved-isolated-qualification-runner.md): Provision approved isolated qualification runner | Provision an approved isolated qualification runner for ASB executable evidence. | Request independent review of 249dac1; AR-1251 transport fixture invocation remains a separate dependency. | - |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | Formal assurance owner AR-0877/AR-0907 must repair the pinned TLA artifact provenance mismatch (downloaded byte count/hash) before PR #119 can be requalified; AR-0704 native controller requires no source change. | - |
+| P1 | [AR-0832](tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. | - |
 | P1 | [AR-0861](tasks/AR-0861-openjiuwen-parity.md): Add OpenJiuwen provider parity and support matrix evidence | Add OpenJiuwen provider parity and support matrix evidence. | Extend exact provider parity and the platform support matrix only for executable-qualified OpenJiuwen combinations under a serialized shared-path fence. | - |
 | P1 | [AR-0863](tasks/AR-0863-workbuddy-provenance.md): Pin WorkBuddy source, package, and license provenance | Pin WorkBuddy source, package, and license provenance. | Pin official source, package, dependency closure, license, executable digest, protocol mode, and supported platform before any adapter claim. | - |
 | P1 | [AR-0890](tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. | - |
