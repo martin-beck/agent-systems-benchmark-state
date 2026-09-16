@@ -11,17 +11,17 @@
   "id": "AR-1270",
   "next_action": "Implement runtime-owned handle issuance/one-shot consumption and bind CLI replay service; add real request/response and lifecycle/egress fixtures.",
   "observed_branch": "feature/ar-1270-runtime-cassette-handle",
-  "observed_dirty": 4,
-  "observed_head": "473d715aae490ec4c8a461cabf8bd8b00744090d",
+  "observed_dirty": 1,
+  "observed_head": "eca1a2cf810b9286e9a7c90dc910c3253b3d076c",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1270.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-issued cassette-service handle for supervised strict replay.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Runtime-issued cassette-service handle",
-  "updated_at": "2026-09-16T23:08:26+00:00",
+  "updated_at": "2026-09-16T23:08:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1270-runtime-cassette-handle"
 }
 ---
