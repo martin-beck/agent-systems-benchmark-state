@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define offline tutorial steps and validate them against the ASB CLI grammar.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Tutorial contract and syntax validator",
-  "updated_at": "2026-09-16T03:56:42+00:00",
+  "updated_at": "2026-09-16T03:59:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1210"
 }
 ---
@@ -166,3 +166,6 @@ be required.
   docs/ar-1210-tutorial-contract. The combined wrapper invocation exceeded the outer 30-second
   observation window before push completion; a separate handoffctl-wrapped push then succeeded
   (1490abd..c010553). No product or remote failure remains; remote exact head verified c010553.
+
+- 2026-09-16T03:59:49+00:00: Recorded command exit 0; command argv SHA-256
+  a151d0a9d6fd079ba73457c12c3bf11f8fbb55644c7a6ba0ffde86da40d32456.
