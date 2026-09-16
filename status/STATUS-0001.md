@@ -1347,7 +1347,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1150](../tasks/AR-1150.md): Recording campaigns | asb_ar1150_recording | Record response cassettes. | Signed-DCO commit 5479c2a pushed. Add explicit redacted buffered/stream capture fixtures and restart/cancellation idempotency coverage; then run full replay/CLI/workspace gates and open PR. |
+| P0 | [AR-1150](../tasks/AR-1150.md): Recording campaigns | asb_ar1150_recording | Record response cassettes. | Signed-DCO commit 9fabf69 pushed. Focused replay tests pass with campaign, coverage, and buffered/stream privacy fixtures. Add restart/cancellation idempotency intent handling, then run full workspace gates and open PR. |
 
 ### Open (13)
 
