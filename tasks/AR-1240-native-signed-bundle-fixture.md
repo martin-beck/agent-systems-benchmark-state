@@ -11,16 +11,16 @@
   "next_action": "Materialize a signed bundle fixture containing both helper payloads and invoke SandboxBackend with VerifiedPayload paths; bwrap capability probe passes but end-to-end cassette fixture remains absent.",
   "observed_branch": "feature/ar-1240-native-signed-bundle-fixture",
   "observed_dirty": 0,
-  "observed_head": "e4c2e56c076ad9648ded2dbdd79cb2431cc7d33f",
+  "observed_head": "5fa5ee2d8075f0873b25b96f0050ab43b5b6d03c",
   "owner": "asb_ar1240_native_fixture_worker",
   "plan": "../plans/AR-1240.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add native signed-bundle fixture and end-to-end supervisor isolation tests.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Native signed-bundle supervisor fixture",
-  "updated_at": "2026-09-16T08:32:48+00:00",
+  "updated_at": "2026-09-16T08:34:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1240"
 }
 ---
