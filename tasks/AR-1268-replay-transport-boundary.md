@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1268",
-  "next_action": "Adapt runtime and CLI replay context to shared ReplayTransportV1; add one-shot/stale/duplicate/mismatch/no-fallback integration tests, then full gates.",
+  "next_action": "Adapt CLI runtime context to consume ReplayTransportV1 and add cross-crate stale/duplicate/mismatch/no-fallback tests; then run full locked gates.",
   "observed_branch": "feature/ar-1268-replay-transport-boundary",
   "observed_dirty": 0,
   "observed_head": "35b97be4744a5ab31582292c119dbe610d55e499",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Break the strict-replay runtime/CLI dependency cycle with a shared transport contract.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Break strict-replay runtime/CLI dependency cycle",
-  "updated_at": "2026-09-16T22:49:25+00:00",
+  "updated_at": "2026-09-16T22:49:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1268-replay-transport"
 }
 ---
@@ -78,3 +78,9 @@ Preserve AR-1267's blocked evidence; do not fabricate authority or weaken crate 
 
 - 2026-09-16T22:49:18+00:00: Recorded command exit 0; command argv SHA-256
   ce51ab9d0d99acfe292cae2da2dccb021901a1f73955a5d1e610328643dd088f.
+
+- 2026-09-16T22:49:38+00:00: Signed commits 551f989 and 35b97be bind asb-runtime to shared
+  dependency-neutral asb-core ReplayTransportV1, add RuntimeReplayTransport one-shot validated
+  wrapper, and refresh Cargo.lock. Focused tests pass: asb-core 18/18 and asb-runtime 40/40; fmt
+  green; product tree clean at 35b97be. This removes the runtime-to-CLI dependency cycle at the
+  contract layer. CLI adapter and actual dispatch integration remain next.
