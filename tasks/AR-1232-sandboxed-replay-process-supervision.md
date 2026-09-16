@@ -9,7 +9,7 @@
     "AR-1230"
   ],
   "id": "AR-1232",
-  "next_action": "Owned loopback egress fixture committed and pushed at 048356b; native ignored gate passes 6/6 with explicit ASB_TEST_ROOT, including no-connection assertion against test-owned listener. Remaining blocker is native StrictReplayExecutor service lifecycle/recovery integration; add or document exact seam before re-review.",
+  "next_action": "Owned loopback control baseline and causal denial fixture are pushed at a3b6768. Native strict replay gate passes 7/7 with explicit ASB_TEST_ROOT and --ignored; remaining review gap is native StrictReplayExecutor authenticated cassette-service lifecycle/recovery and stale/duplicate generation integration.",
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "a3b6768e1e00bf8628b81b9a58687ea193439803",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 352,
+  "task_revision": 353,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T04:45:30+00:00",
+  "updated_at": "2026-09-16T04:45:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -925,3 +925,9 @@
 
 - 2026-09-16T04:45:30+00:00: Recorded command exit 0; command argv SHA-256
   39cf5398131881d6bebfeb6940a170dba53287cbad205a984f34c80a6dbe58e7.
+
+- 2026-09-16T04:45:51+00:00: a3b6768 signed/DCO adds an unsandboxed pinned curl control: test-owned
+  loopback listener receives request and returns bounded OK. The sandboxed child uses the same owned
+  endpoint and authenticated route environment; listener observes no connection under denied policy.
+  Dedicated native gate passed 7/7. Worktree clean and pushed. Executor service
+  lifecycle/recover_after_restart integration remains outstanding and blocks publication.

@@ -1359,7 +1359,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md): Sandboxed replay process supervision | asb_ar1232_sandbox_supervision | Supervise strict replay adapters inside the approved network-denied sandbox. | Owned loopback egress fixture committed and pushed at 048356b; native ignored gate passes 6/6 with explicit ASB_TEST_ROOT, including no-connection assertion against test-owned listener. Remaining blocker is native StrictReplayExecutor service lifecycle/recovery integration; add or document exact seam before re-review. |
+| P0 | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md): Sandboxed replay process supervision | asb_ar1232_sandbox_supervision | Supervise strict replay adapters inside the approved network-denied sandbox. | Owned loopback control baseline and causal denial fixture are pushed at a3b6768. Native strict replay gate passes 7/7 with explicit ASB_TEST_ROOT and --ignored; remaining review gap is native StrictReplayExecutor authenticated cassette-service lifecycle/recovery and stale/duplicate generation integration. |
 | P1 | [AR-0909](../tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md): Harden mini-SWE cancellation reap test isolation | asb_ar0909_repair | Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees. | Recover merge integrity for PR127 merge 00f3763: verify required main CI, signed merge/tree/DCO evidence, and repository merge-attestation procedure before closing AR. |
 
 ### Open (13)
