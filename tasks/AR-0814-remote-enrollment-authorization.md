@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 136,
+  "task_revision": 137,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T18:18:35+00:00",
+  "updated_at": "2026-09-16T18:19:50+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -386,3 +386,6 @@ Implementation has not started. Read the linked plan before claiming.
   recovery. SecretBackend remains an abstract caller-supplied trait with no qualified OS-protected
   reference backend. Existing focused auth/control records pass, but complete plan threat-matrix and
   full applicable gate evidence are not recorded at this head.
+
+- 2026-09-16T18:19:50+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
