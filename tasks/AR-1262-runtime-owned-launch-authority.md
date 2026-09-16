@@ -11,17 +11,17 @@
   "id": "AR-1262",
   "next_action": "Promote and claim after reconciliation; implement the runtime-owned one-shot launch authority and prove supervised strict-replay lifecycle.",
   "observed_branch": "feature/ar-1262-runtime-owned-launch-authority",
-  "observed_dirty": 0,
-  "observed_head": "0000000000000000000000000000000000000000",
+  "observed_dirty": 2,
+  "observed_head": "0a808a635d85fdc4a43b575e3711ef23b38089e3",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1262.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned authority for supervised strict-replay execution.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-16T20:58:45+00:00",
+  "updated_at": "2026-09-16T20:58:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1262-runtime-authority"
 }
 ---
