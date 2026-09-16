@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 285,
+  "task_revision": 286,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:44:53+00:00",
+  "updated_at": "2026-09-16T19:45:32+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -791,3 +791,6 @@ Implementation has not started. Read the linked plan before claiming.
   failure. Focused persistence/expiry test passes. Remaining reviewer gaps requiring qualified
   certificate authority/runtime evidence: certificate issuance/chain validation and trusted
   ancestor/route provenance; do not overclaim them in AR-0814.
+
+- 2026-09-16T19:45:32+00:00: Recorded command exit 0; command argv SHA-256
+  92d18493852826ae9f7edb6d76200db60bffa1986a72668884eafd5e81388be1.
