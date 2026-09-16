@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1232",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T08:14:55+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "994c6716904dc2f3d4b9fc186ea35490f236b869",
-  "owner": "asb_ar1232_worker",
+  "owner": "",
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 388,
+  "task_revision": 389,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T06:15:54+00:00",
+  "updated_at": "2026-09-16T06:16:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -1031,3 +1031,14 @@
 
 - 2026-09-16T06:15:54+00:00: Recorded command exit 7; command argv SHA-256
   571ae43ff9c4a50bacf80bb0a3610df0336c6e0c62a2a3c10f0d5696baa9c1aa.
+
+- 2026-09-16T06:16:21+00:00: AR-1232-only validation complete. User authorization for loopback-only
+  access was recorded at resume: no external/ambient network, provider endpoints, credentials, or
+  broad network access; any grant must be least-privilege and revoked. Actual mechanism granted:
+  none. The pinned SandboxBackend uses bubblewrap isolated networking and only NetworkPolicy::Deny;
+  a contained bwrap loopback probe confirmed the child cannot reach the host loopback listener (curl
+  exit 7). Sharing the host network would expose ambient networking and is not an acceptable
+  elevation, so it was not used. Existing native harness remains green 7/7 and strict-replay unit
+  suite 15/15. Next action: add/review an approved loopback-only transport seam that keeps
+  provider/ambient egress denied, then rerun the commented child-to-cassette integration and full
+  locked gates.
