@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1262](tasks/AR-1262-runtime-owned-launch-authority.md): Runtime-owned strict-replay launch authority | Issue runtime-owned authority for supervised strict-replay execution. | Run independent exact-head diff/signature/DCO/privacy review on clean c0091857, then prepare reviewed PR; do not merge before CI/review. | asb_ar1024_lifecycle_router |
+| P0 | [AR-1262](tasks/AR-1262-runtime-owned-launch-authority.md): Runtime-owned strict-replay launch authority | Issue runtime-owned authority for supervised strict-replay execution. | Monitor PR #207 exact head c0091857 through terminal required CI; retain merge block until independent review and all checks green. | asb_ar1024_lifecycle_router |
 
 ## Open
 
