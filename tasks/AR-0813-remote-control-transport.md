@@ -11,7 +11,7 @@
   "id": "AR-0813",
   "next_action": "Close remaining AR-0813 transport scope before publication: implement listener lifecycle with actual max-connection admission, bounded backpressure/keepalive/idle/rate/drain controls, reconnect revision/event replay without gaps or duplicate mutations, and fault tests for malformed/truncated/slow/half-open/reorder/packet-loss/reconnect/protocol-skew/IPv4/IPv6/partition cases; rerun full workspace gate after unrelated asb-metrics mismatch is repaired or explicitly qualified.",
   "observed_branch": "feature/remote-control-transport",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "969e0fe0d9b57311eb345c90bca7d68c9b70c0af",
   "owner": "asb_ar0813_remote_transport",
   "plan": "../plans/AR-0813.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 98,
+  "task_revision": 99,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T14:51:47+00:00",
+  "updated_at": "2026-09-16T14:51:55+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
