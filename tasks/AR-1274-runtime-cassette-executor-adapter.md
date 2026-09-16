@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime cassette operation executor callback boundary.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Runtime cassette operation executor adapter",
-  "updated_at": "2026-09-16T23:43:17+00:00",
+  "updated_at": "2026-09-16T23:44:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1274-cassette-executor"
 }
 ---
@@ -66,3 +66,6 @@ Preserve AR-1273's blocked evidence and never fabricate response or lifecycle re
   3/3, runtime operation 2/2, offline check and fmt pass; initial locked test correctly failed
   because Cargo.lock needed offline refresh, then lock refreshed and rerun passed. Actual CLI
   cassette adapter and supervised lifecycle evidence remain.
+
+- 2026-09-16T23:44:26+00:00: Recorded command exit 0; command argv SHA-256
+  534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
