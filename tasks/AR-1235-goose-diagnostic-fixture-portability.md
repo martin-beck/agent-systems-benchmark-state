@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-1235",
-  "next_action": "Hosted-style AArch64 emulation rerun completed at exact fd7daa43549edd67b60076aa6b1eee333061b438 using rustc 1.93.0, aarch64-unknown-linux-gnu, qemu-aarch64, and Ubuntu arm64 sysroot /srv/data/projects/.asb-local/ar0909-arm64-root; diagnostic_and_symlink_fail_closed passed 1/1, exit 0. Original hosted run 35060286408 exit 127 remains unreproduced; no source change or assertion weakening is justified. Release blocked/ownerless with evidence.",
+  "next_action": "Authoritative hosted run 35060286408/job 104678968629 at exact fd7daa4 failed only during full asb-agents AArch64 suite: 164 passed, diagnostic_and_symlink_fail_closed returned Ok GooseOutcome with valid events and exit_code 127, so unwrap_err panicked. Setup/materialization/toolchain all passed. Reproduced neither in exact test nor full suite under local repository-style QEMU Ubuntu 24.04.4 sysroot; both pass 1/1 and 165/165. Classify as hosted runner/environment-only or transient; no product fix justified. Release blocked/ownerless with detailed evidence.",
   "observed_branch": "feature/ar-1235-goose-fixture-portability",
   "observed_dirty": 2,
   "observed_head": "fd7daa43549edd67b60076aa6b1eee333061b438",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair Goose diagnostic fixture portability under emulated AArch64.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Portable Goose diagnostic fixture",
-  "updated_at": "2026-09-16T06:07:29+00:00",
+  "updated_at": "2026-09-16T06:07:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1235"
 }
 ---
@@ -103,3 +103,9 @@ its intended diagnostic error assertion. Preserve the failure and repair the fix
 
 - 2026-09-16T06:07:21+00:00: Recorded command exit 0; command argv SHA-256
   fa8bf514be80466313d03a0db00e36bbfbba0e9f9cb02d4e3668975f2765cb93.
+
+- 2026-09-16T06:07:52+00:00: 2026-09-16T06:08Z: Retrieved authoritative job/log via handoffctl.
+  Hosted command used immutable Ubuntu arm64 image
+  docker.io/library/ubuntu@sha256:95fa486768020359141f1318720f43e7982ef926c792891d984aef9aaf05e7ea,
+  Rust 1.93.0, qemu user lane, and full asb-agents lib test. Failure occurs only there; local exact
+  and full QEMU runs pass. No assertion weakening or source mutation.
