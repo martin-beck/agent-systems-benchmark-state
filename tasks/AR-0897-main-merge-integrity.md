@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 154,
+  "task_revision": 155,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-16T05:39:14+00:00",
+  "updated_at": "2026-09-16T05:39:25+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -505,3 +505,12 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-16T05:39:08+00:00: Heartbeat by asb_ar0897_merge_integrity.
 
 - 2026-09-16T05:39:14+00:00: Heartbeat by asb_ar0897_merge_integrity.
+
+- 2026-09-16T05:39:25+00:00: PR185 merged through local signed merge_pr path as protected-main
+  fd7daa43549edd67b60076aa6b1eee333061b438. Remote main verification: exact parents 7d43c1e and
+  df5a519, exact reviewed tree 5335d2d3, valid allowed SSH signature Martin Beck, matching DCO;
+  check_dco against 7d43c1e..fd7daa4 passes. Post-merge assurance for exact fd7daa4: headers and
+  hosted portability green; Formal, Rust, emulated AArch64, Fault, and Repository quality runs
+  35060286406/418/408/384/401 remain in progress. Earlier invalid DCO range using unfetched second
+  parent was diagnosed and corrected. Next monitor all post-merge workflows to terminal; do not
+  release AR until each passes.
