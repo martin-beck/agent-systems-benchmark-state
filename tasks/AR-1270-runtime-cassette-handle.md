@@ -11,7 +11,7 @@
   "id": "AR-1270",
   "next_action": "Bind RuntimeCassetteService into CLI replay and add real cassette request/response plus egress/cancel/restart/timeout/crash cleanup/no-fallback fixtures.",
   "observed_branch": "feature/ar-1270-runtime-cassette-handle",
-  "observed_dirty": 0,
+  "observed_dirty": 3,
   "observed_head": "46810b158b7f2b34040e10872692046450d58266",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1270.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-issued cassette-service handle for supervised strict replay.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Runtime-issued cassette-service handle",
-  "updated_at": "2026-09-16T23:09:55+00:00",
+  "updated_at": "2026-09-16T23:10:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1270-runtime-cassette-handle"
 }
 ---
