@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1235.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Repair Goose diagnostic fixture portability under emulated AArch64.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Portable Goose diagnostic fixture",
-  "updated_at": "2026-09-16T06:08:00+00:00",
+  "updated_at": "2026-09-16T06:08:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1235"
 }
 ---
@@ -115,3 +115,6 @@ its intended diagnostic error assertion. Preserve the failure and repair the fix
   local QEMU reproductions pass. Setup and immutable image materialization succeeded, but no
   product-level causal defect reproduced. Treat as hosted runner/environment-only or transient and
   rerun the original workflow externally before any code change.
+
+- 2026-09-16T06:08:18+00:00: Resume for ten-iteration exact Goose diagnostic test under
+  repository-style QEMU AArch64 to strengthen hosted-failure flakiness evidence.

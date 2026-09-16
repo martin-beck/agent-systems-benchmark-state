@@ -12,8 +12,8 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 7 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 10 |
+| **Open** | Dependency-ready and available to claim | 8 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 9 |
 | **Planned** | Defined work awaiting promotion or dependencies | 67 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 167 |
@@ -328,7 +328,7 @@ flowchart LR
         AR_1232["AR-1232 - Blocked"]:::status_blocked
         AR_1233["AR-1233 - Blocked"]:::status_blocked
         AR_1234["AR-1234 - Blocked"]:::status_blocked
-        AR_1235["AR-1235 - Blocked"]:::status_blocked
+        AR_1235["AR-1235 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1373,7 +1373,7 @@ flowchart LR
 | P0 | [AR-0897](../tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | asb_ar0897_merge_integrity | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Hold PR 126 at bd6f450; after AR-0877 and AR-0909 integrate, rebase once and require fresh all-green exact-head CI before merge. |
 | P1 | [AR-0896](../tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | asb_ar0896_qualification | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun 34339927858 was launched via handoffctl and is actively watched by PID 736624/gh PID 736653; exact rerun head a4e1a9de985a4c9f22628c6d604a6e62f4f173e3, job 104684371738 currently running. Keep lease heartbeat, wait terminal, then capture failures or green result. |
 
-### Open (7)
+### Open (8)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1384,8 +1384,9 @@ flowchart LR
 | P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | Unclaimed | Replay strictly without providers. | Design and implement the missing executable strict-replay run-path seam: pass exact cassette route/service into agent adapter launch, deny provider egress at process boundary, and add campaign-level cancellation/restart/no-fallback tests. Current CLI replay only decodes/indexes/selects and emits metadata. |
 | P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | Repair/rebase the fail-closed TLA provenance pin, then rerun PR #119 exact-head CI; do not merge. |
 | P1 | [AR-0859](../tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Unclaimed | Qualify pinned OpenJiuwen live execution. | Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI. |
+| P1 | [AR-1235](../tasks/AR-1235-goose-diagnostic-fixture-portability.md): Portable Goose diagnostic fixture | Unclaimed | Repair Goose diagnostic fixture portability under emulated AArch64. | Authoritative hosted run 35060286408/job 104678968629 at exact fd7daa4 failed only during full asb-agents AArch64 suite: 164 passed, diagnostic_and_symlink_fail_closed returned Ok GooseOutcome with valid events and exit_code 127, so unwrap_err panicked. Setup/materialization/toolchain all passed. Reproduced neither in exact test nor full suite under local repository-style QEMU Ubuntu 24.04.4 sysroot; both pass 1/1 and 165/165. Classify as hosted runner/environment-only or transient; no product fix justified. Release blocked/ownerless with detailed evidence. |
 
-### Blocked (10)
+### Blocked (9)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1398,7 +1399,6 @@ flowchart LR
 | P0 | [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md): Runtime-owned loopback namespace capability | Unclaimed | Provide an approved runtime-owned loopback-only sandbox namespace capability. | Capability audit complete: pinned tools exist but unshare -n fails Operation not permitted. Do not add ambient privileged setup or host sharing. Require approved runtime-owned loopback namespace/helper capability, then implement native service/egress tests. |
 | P1 | [AR-0863](../tasks/AR-0863-workbuddy-provenance.md): Pin WorkBuddy source, package, and license provenance | Unclaimed | Pin WorkBuddy source, package, and license provenance. | Pin official source, package, dependency closure, license, executable digest, protocol mode, and supported platform before any adapter claim. |
 | P1 | [AR-0890](../tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Unclaimed | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. |
-| P1 | [AR-1235](../tasks/AR-1235-goose-diagnostic-fixture-portability.md): Portable Goose diagnostic fixture | Unclaimed | Repair Goose diagnostic fixture portability under emulated AArch64. | Authoritative hosted run 35060286408/job 104678968629 at exact fd7daa4 failed only during full asb-agents AArch64 suite: 164 passed, diagnostic_and_symlink_fail_closed returned Ok GooseOutcome with valid events and exit_code 127, so unwrap_err panicked. Setup/materialization/toolchain all passed. Reproduced neither in exact test nor full suite under local repository-style QEMU Ubuntu 24.04.4 sysroot; both pass 1/1 and 165/165. Classify as hosted runner/environment-only or transient; no product fix justified. Release blocked/ownerless with detailed evidence. |
 
 ### Planned (67)
 
