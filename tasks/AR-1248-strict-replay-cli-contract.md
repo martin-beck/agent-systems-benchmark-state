@@ -10,17 +10,17 @@
   "id": "AR-1248",
   "next_action": "Define bounded cassette artifact resolution and authenticated CLI SidecarHandoff inputs; add schemas, docs, and fail-closed tests.",
   "observed_branch": "feature/ar-1248-strict-replay-cli-contract",
-  "observed_dirty": 9,
-  "observed_head": "128ecddbfdb7fcfff6e257adf3237b5866aca481",
+  "observed_dirty": 0,
+  "observed_head": "37a9c2b48765bcf20d74d2ea4cabbb749142c0eb",
   "owner": "asb_ar1232_lifecycle_router",
   "plan": "../plans/AR-1248.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T10:41:57+00:00",
+  "updated_at": "2026-09-16T10:42:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
