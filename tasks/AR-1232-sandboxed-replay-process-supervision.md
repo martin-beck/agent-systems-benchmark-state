@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 416,
+  "task_revision": 417,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T06:32:47+00:00",
+  "updated_at": "2026-09-16T06:35:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -1137,3 +1137,9 @@
   green. Next action: introduce the minimal reviewed relay lifecycle seam in AR-1232, then add
   deterministic denial, stale-generation, duplicate, unrelated-process, and teardown tests before
   reopening.
+
+- 2026-09-16T06:35:02+00:00: AR-1232-only implementation authorized. Add the safest minimal reviewed
+  loopback relay seam without weakening NetworkPolicy::Deny. User authorizes loopback-only
+  validation; no external or ambient networking, provider endpoints, credentials, or broad access.
+  If a complete child integration requires another contract, implement only a standalone runtime
+  relay API and record the remaining boundary.
