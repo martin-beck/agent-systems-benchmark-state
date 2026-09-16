@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 87,
+  "task_revision": 88,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-16T04:57:41+00:00",
+  "updated_at": "2026-09-16T04:58:03+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -303,3 +303,14 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T04:57:41+00:00: Recorded command exit 0; command argv SHA-256
   81c79b865b4351e74b51e79bfbe1538029dcc4db87124fcd8b8801233ab04720.
+
+- 2026-09-16T04:58:03+00:00: Independent exact-head review of aceb191: clean tree, three signed
+  SSH/DCO commits rebased onto 00f3763; merge_pr.py enforces exact full-OID base/head/tree, signed
+  DCO two-parent commit, signer identity, atomic remote recheck and force-with-lease;
+  repository_settings.py fail-closed audits all web merge/auto-merge modes; adversarial integration
+  tests cover stale/wrong identities, unsigned/non-DCO/GitHub-generated heads, signer spoof, races,
+  accepted push errors, privacy-bounded diagnostics, and settings mutations. Post-rebase repository
+  policy and integration tests 9/9 pass; py_compile and cargo fmt pass; asb-protocol lib 40/40 pass.
+  Full workspace test remains environment-blocked by ENOSPC, recorded. Next: obtain independent
+  coordinator approval, publish rebased PR126 via exact force-with-lease, await exact-head CI, then
+  use local signed merge path only; verify post-merge DCO/policy and reconcile AR.
