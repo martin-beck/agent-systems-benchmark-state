@@ -8,7 +8,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1248](tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | Define the strict-replay CLI consumer contract. | Runtime seam remains review blocker: add a CLI-facing constructor/integration that consumes runtime-issued SidecarHandoff/SandboxLaunchInput, or coordinator-approved narrow follow-up; add malformed cassette and executor lifecycle/egress/cancel/restart/no-fallback tests, then rerun all gates. | asb_ar1232_lifecycle_router |
-| P1 | [AR-1251](tasks/AR-1251-mockagents-transport-sandbox.md): Add MockAgents transport sandbox fixture | Add a bounded transport and sandbox fixture for MockAgents qualification. | Design and implement bounded transport/sandbox fixture for MockAgents tool-result, cancellation/backpressure, network-denial, cleanup, and arm64 evidence. | asb_ar1251_transport_sandbox |
 
 ## Open
 
@@ -35,6 +34,7 @@ Never edit this file directly.
 | P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun 34339927858 was launched via handoffctl and is actively watched by PID 736624/gh PID 736653; exact rerun head a4e1a9de985a4c9f22628c6d604a6e62f4f173e3, job 104684371738 currently running. Keep lease heartbeat, wait terminal, then capture failures or green result. | - |
 | P1 | [AR-1249](tasks/AR-1249-mockagents-qualification-evidence.md): Complete MockAgents executable qualification evidence | Complete missing evidence for the pinned MockAgents executable qualification. | Implement missing MockAgents hostile lifecycle, network-denial, repeat-clean-state, and emulated-AArch64 qualification evidence. | - |
 | P1 | [AR-1250](tasks/AR-1250-mockagents-harness-extension.md): Extend MockAgents qualification harness | Extend the pinned MockAgents executable qualification harness. | Implement tool-result, cancellation/backpressure, outbound-denial cases; rerun arm64 repeat and full gates. | - |
+| P1 | [AR-1251](tasks/AR-1251-mockagents-transport-sandbox.md): Add MockAgents transport sandbox fixture | Add a bounded transport and sandbox fixture for MockAgents qualification. | Design and implement bounded transport/sandbox fixture for MockAgents tool-result, cancellation/backpressure, network-denial, cleanup, and arm64 evidence. | - |
 
 ## Planned
 
