@@ -9,17 +9,17 @@
   "id": "AR-0814",
   "next_action": "Regenerate contract schemas/docs and add rotation/revocation CLI integration audit fixtures.",
   "observed_branch": "feature/remote-enrollment-authz",
-  "observed_dirty": 1,
-  "observed_head": "f8714ca4399c83f2bfe0ae21be8d22db27a13575",
+  "observed_dirty": 0,
+  "observed_head": "eb0adad2e34d1ca9f271366711a41d8d818d212a",
   "owner": "asb_ar0814_enrollment_authz",
   "plan": "../plans/AR-0814.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T17:50:41+00:00",
+  "updated_at": "2026-09-16T17:50:49+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
