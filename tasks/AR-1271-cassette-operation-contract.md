@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define a dependency-neutral cassette request/response operation contract.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Dependency-neutral cassette operation contract",
-  "updated_at": "2026-09-16T23:17:16+00:00",
+  "updated_at": "2026-09-16T23:17:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1271-cassette-operation"
 }
 ---
@@ -80,3 +80,6 @@ Preserve AR-1270's blocked evidence and do not fabricate responses or authority.
   identity-binds generation/cassette/route, consumes each request once, and validates bounded
   response envelopes without importing replay types. asb-core 18/18 and asb-runtime 39/39 pass; fmt
   pass; clean tree. CLI adapter and actual service invocation remain next.
+
+- 2026-09-16T23:17:51+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
