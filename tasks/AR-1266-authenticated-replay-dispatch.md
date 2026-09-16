@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add authenticated runtime context to the actual strict-replay CLI dispatch path.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Authenticated replay dispatch context",
-  "updated_at": "2026-09-16T22:31:53+00:00",
+  "updated_at": "2026-09-16T22:32:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1266-authenticated-replay"
 }
 ---
@@ -34,3 +34,6 @@ Preserve all prior blocked evidence; no fabricated launch authority or weakened 
   establishes this exact authenticated dispatch seam is required.
 
 - 2026-09-16T22:31:53+00:00: Claimed by asb_ar1024_lifecycle_router.
+
+- 2026-09-16T22:32:48+00:00: Recorded command exit 0; command argv SHA-256
+  d04aa803a9fcb854b247572f9b417fd1935a57ca978bb887d2e7c188e99db043.
