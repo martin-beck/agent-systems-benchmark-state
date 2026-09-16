@@ -9,17 +9,17 @@
   "id": "AR-0814",
   "next_action": "Run full locked workspace gates and obtain independent review of v1.7 endpoint/schema slice.",
   "observed_branch": "feature/remote-enrollment-authz",
-  "observed_dirty": 5,
-  "observed_head": "45310e625e1b3035984d65acd74ba62c00b13ada",
+  "observed_dirty": 0,
+  "observed_head": "40838db24e7097877bfcf006c407bdd2b0f1528b",
   "owner": "asb_ar0814_enrollment_authz",
   "plan": "../plans/AR-0814.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 216,
+  "task_revision": 217,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T18:59:49+00:00",
+  "updated_at": "2026-09-16T18:59:58+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
