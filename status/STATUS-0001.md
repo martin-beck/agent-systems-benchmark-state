@@ -1491,7 +1491,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md): Runtime-owned strict-replay CLI entrypoint | asb_ar1024_lifecycle_router | Provide a real runtime-owned strict-replay CLI entrypoint. | Promote after dependency verification; implement the runtime-owned authenticated replay entrypoint and real supervised lifecycle evidence described in the plan. |
+| P0 | [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md): Runtime-owned strict-replay CLI entrypoint | asb_ar1024_lifecycle_router | Provide a real runtime-owned strict-replay CLI entrypoint. | Integrate this opaque authority into the CLI consumer and prove supervised cassette request/response plus lifecycle/egress/cancellation cleanup; then run full gates. |
 
 ### Open (6)
 

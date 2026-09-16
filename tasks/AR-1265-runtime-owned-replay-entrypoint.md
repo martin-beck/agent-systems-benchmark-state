@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1265",
-  "next_action": "Promote after dependency verification; implement the runtime-owned authenticated replay entrypoint and real supervised lifecycle evidence described in the plan.",
+  "next_action": "Integrate this opaque authority into the CLI consumer and prove supervised cassette request/response plus lifecycle/egress/cancellation cleanup; then run full gates.",
   "observed_branch": "feature/ar-1265-runtime-owned-replay-entrypoint",
   "observed_dirty": 0,
   "observed_head": "c6794672fd8c4b1d774fc623d01eb7fb2fc3a6d7",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a real runtime-owned strict-replay CLI entrypoint.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Runtime-owned strict-replay CLI entrypoint",
-  "updated_at": "2026-09-16T22:21:43+00:00",
+  "updated_at": "2026-09-16T22:21:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1265-runtime-replay-entrypoint"
 }
 ---
@@ -52,3 +52,10 @@ unmerged implementation is not an input; preserve its review as the reason this 
 
 - 2026-09-16T22:21:36+00:00: Recorded command exit 0; command argv SHA-256
   69f7e3331e88a1cba83d2b08317550cd841ad28b2f6c710e70fd6edb6a577b87.
+
+- 2026-09-16T22:21:55+00:00: Signed c679467 adds fresh runtime replay_entrypoint module from current
+  main: RuntimeReplayAttestation has private readiness/digest fields, constructors are
+  runtime-internal, ReplayLaunchAuthority is one-shot and consumes authenticated handoff exactly
+  once. Focused authority test passes 1/1; cargo fmt passes. Initial test failure was dead-code
+  warnings on runtime-internal constructors/fields, fixed with narrow annotations. Product tree
+  clean.
