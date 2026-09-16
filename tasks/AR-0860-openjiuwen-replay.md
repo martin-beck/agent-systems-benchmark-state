@@ -7,7 +7,7 @@
     "AR-0859"
   ],
   "id": "AR-0860",
-  "next_action": "Seal the sanitized live capture and prove strict offline replay, causal parity, malformed-record rejection, and zero external network.",
+  "next_action": "Run full applicable ASB gates, publish exact signed head for review, and complete post-merge qualification. Current head c894a34.",
   "observed_branch": "feature/openjiuwen-replay",
   "observed_dirty": 0,
   "observed_head": "c894a341183d448d576e5f04bbe621d4887fe45b",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict OpenJiuwen replay.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Qualify strict OpenJiuwen replay",
-  "updated_at": "2026-09-16T08:29:14+00:00",
+  "updated_at": "2026-09-16T08:29:53+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-replay"
 }
 ---
@@ -77,3 +77,11 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-16T08:29:14+00:00: Recorded command exit 0; command argv SHA-256
   dbf5e43d2b3f4b81d08709d6ea8acf7a41a0bd509032d7bf922b3a2235beb8e2.
+
+- 2026-09-16T08:29:53+00:00: Live OpenJiuwen qualification executed with pinned wheel/runtime and
+  loopback fake provider: real_openjiuwen ignored suite 8/8 passed (artifact mismatch, success/tool
+  usage, parsed usage, malformed provider, corrupt tool/retry, cancellation, trickled output, child
+  containment). Added strict replay cassette fixture and tests; replay_openjiuwen 2/2 passed,
+  including response match, wrong-route rejection, and corruption rejection. Full asb-agents tests
+  passed; clippy was run with no reported diagnostics. Commit c894a34 is SSH-signed+DCO; worktree
+  clean.
