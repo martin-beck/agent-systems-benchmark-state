@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**260 ARs tracked** across 6 active status categories.
+**260 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 16 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 15 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 5 |
 | **Planned** | Defined work awaiting promotion or dependencies | 68 |
 | **Future** | Deferred roadmap work | 1 |
@@ -325,7 +325,7 @@ flowchart LR
         AR_1229["AR-1229 - Done"]:::status_done
         AR_1230["AR-1230 - Done"]:::status_done
         AR_1231["AR-1231 - Open"]:::status_open
-        AR_1232["AR-1232 - Open"]:::status_open
+        AR_1232["AR-1232 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1354,7 +1354,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (16)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md): Sandboxed replay process supervision | asb_ar1232_sandbox_supervision | Supervise strict replay adapters inside the approved network-denied sandbox. | Implement the approved SandboxBackend process-supervision seam for strict replay, including real child egress denial and bounded cancellation/restart/crash recovery tests. |
+
+### Open (15)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1369,7 +1375,6 @@ flowchart LR
 | P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | Unclaimed | Replay strictly without providers. | Design and implement the missing executable strict-replay run-path seam: pass exact cassette route/service into agent adapter launch, deny provider egress at process boundary, and add campaign-level cancellation/restart/no-fallback tests. Current CLI replay only decodes/indexes/selects and emits metadata. |
 | P0 | [AR-1181](../tasks/AR-1181.md): TLA admission | Unclaimed | Bound ASB TLC memory. | Implement bounded TLC admission. |
 | P0 | [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md): Strict replay execution and egress-isolation seam | Unclaimed | Execute real agents through strict replay without provider egress or live fallback. | Integrate ProcessIsolationCapability with approved runtime sandbox/process launcher and add executor cancellation/restart transition tests. Current 84fd574 attests only NetworkPolicy::Deny and refuses missing capability; endpoint/route/cassette/attempt checks remain fail-closed. |
-| P0 | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md): Sandboxed replay process supervision | Unclaimed | Supervise strict replay adapters inside the approved network-denied sandbox. | Implement the approved SandboxBackend process-supervision seam for strict replay, including real child egress denial and bounded cancellation/restart/crash recovery tests. |
 | P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | Repair/rebase the fail-closed TLA provenance pin, then rerun PR #119 exact-head CI; do not merge. |
 | P1 | [AR-0859](../tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Unclaimed | Qualify pinned OpenJiuwen live execution. | Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI. |
 | P1 | [AR-0908](../tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | Unclaimed | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Hold PR #125 unchanged; shared formal asset and native-runner pin owners must repair their gates before a fresh exact-head run. |
@@ -1534,4 +1539,3 @@ flowchart LR
 | P1 | [AR-0303](../tasks/AR-0303-agent-aider.md): Implement aider client adapter | Unclaimed | Support unattended aider editing with bounded input, output and repository changes. | Publish immutable da81ead6932c5d5469ca57fc981646fa980c2780, open focused PR, and require exact-head CI before integration. |
 | P1 | [AR-0304](../tasks/AR-0304-agent-codex.md): Implement Codex client adapter | Unclaimed | Use Codex noninteractive structured events or app-server with declared capability boundaries. | Monitor PR 24 exact head eb03bd9 x86_64/aarch64 Rust, quality/coverage/supply, and formal CI; investigate any failure and do not merge without coordinator authorization. |
 | P1 | [AR-0305](../tasks/AR-0305-agent-gemini.md): Implement Gemini CLI client adapter | Unclaimed | Run pinned Gemini CLI through noninteractive JSON events. | Await exact-main quality and Rust CI at signed merge e85548d; then reconcile/live doctor and release only if all green and clean. |
-| P1 | [AR-0306](../tasks/AR-0306-agent-qwen-code.md): Implement Qwen Code client adapter | Unclaimed | Run pinned Qwen Code through isolated headless stream-JSON. | Merge reviewed exact candidate 0be96c9 with a signed DCO merge commit, push exact main, run post-merge gates and require fresh exact-main CI. |

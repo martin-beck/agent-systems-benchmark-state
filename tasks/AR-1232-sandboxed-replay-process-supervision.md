@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1232",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T04:14:41+00:00",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -13,15 +13,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "asb_ar1232_sandbox_supervision",
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T02:14:38+00:00",
+  "updated_at": "2026-09-16T02:14:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -32,3 +32,5 @@
 
 - 2026-09-16T02:14:38+00:00: Dependencies AR-0505, AR-1100 and AR-1230 are done; promote runtime
   process supervision.
+
+- 2026-09-16T02:14:41+00:00: Claimed by asb_ar1232_sandbox_supervision.
