@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Before publication, bind pairing to an independently supplied route identity and add wrong-IP/route negatives; make confirmed identity persistence atomic and validate trusted parent/ancestry; add actual certificate import/issuance or explicitly split that owned scope. Provide remaining threat-matrix evidence and independent publication review.",
+  "next_action": "Split certificate issuance/chain validation and trusted-ancestor persistence into successor AR; retain atomic identity metadata write and threat tests.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "4d20476d5a8cb96aa4e8c289e57bf30b9f7c03a5",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 284,
+  "task_revision": 285,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:44:40+00:00",
+  "updated_at": "2026-09-16T19:44:53+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -785,3 +785,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T19:44:32+00:00: Recorded command exit 0; command argv SHA-256
   3547e7ea31320f61a3ddb371ffc44a358e29026be388f2b507767d3131d424bf.
+
+- 2026-09-16T19:44:53+00:00: Signed+DCO 4d20476 replaces direct truncating identity writes with
+  same-directory create_new temporary file, fsync, private mode, and atomic rename, with cleanup on
+  failure. Focused persistence/expiry test passes. Remaining reviewer gaps requiring qualified
+  certificate authority/runtime evidence: certificate issuance/chain validation and trusted
+  ancestor/route provenance; do not overclaim them in AR-0814.

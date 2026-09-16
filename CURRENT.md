@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Before publication, bind pairing to an independently supplied route identity and add wrong-IP/route negatives; make confirmed identity persistence atomic and validate trusted parent/ancestry; add actual certificate import/issuance or explicitly split that owned scope. Provide remaining threat-matrix evidence and independent publication review. | asb_ar0814_enrollment_authz |
+| P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Split certificate issuance/chain validation and trusted-ancestor persistence into successor AR; retain atomic identity metadata write and threat tests. | asb_ar0814_enrollment_authz |
 
 ## Open
 
