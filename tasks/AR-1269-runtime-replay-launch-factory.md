@@ -11,17 +11,17 @@
   "id": "AR-1269",
   "next_action": "Integrate ReplayLaunchBundle::spawn with CLI transport and add runtime-backed cassette/lifecycle/egress/no-fallback fixtures.",
   "observed_branch": "feature/ar-1269-runtime-replay-launch-factory",
-  "observed_dirty": 2,
-  "observed_head": "8dfafaa8378e38c25d3fc0eb566ad32e9c9d3fff",
+  "observed_dirty": 0,
+  "observed_head": "2220c899650d8fddaeffdc8450f7b0449cfa9327",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1269.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create runtime-owned launch bundles for supervised strict replay.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Runtime-owned replay launch-bundle factory",
-  "updated_at": "2026-09-16T23:02:47+00:00",
+  "updated_at": "2026-09-16T23:02:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1269-runtime-launch-factory"
 }
 ---
