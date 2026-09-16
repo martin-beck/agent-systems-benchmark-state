@@ -42,12 +42,14 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1238` | `feature/ar-1238-runtime-loopback-supervisor` | `e4c2e56c076a` | 0 | behind 305, ahead 10 |
 | `agent-systems-benchmark-ar-1239` | `feature/ar-1239-signed-runtime-bundle` | `6836bb4010f5` | 0 | behind 305, ahead 2 |
 | `agent-systems-benchmark-ar-1240` | `feature/ar-1240-native-signed-bundle-fixture` | `282eeffd78ea` | 0 | behind 305, ahead 13 |
+| `agent-systems-benchmark-ar-1241` | `feature/ar-1241-native-isolation-matrix` | `fd4192d2d767` | 0 | behind 305, ahead 14 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 387, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 490, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 384, ahead 0 |
 | `agent-systems-benchmark-ar0877-ar0906-integration` | `integration/ar0877-ar0906` | `1af28655c6e2` | 0 | behind 259, ahead 0 |
 | `agent-systems-benchmark-ar0878-integration` | `DETACHED` | `0fbec95d2154` | 0 | behind 321, ahead 0 |
 | `agent-systems-benchmark-ar0880-integration` | `integration/ar0880-b7559931` | `2a85872285e6` | 0 | behind 303, ahead 0 |
+| `agent-systems-benchmark-ar0898-integration` | `DETACHED` | `c261af069c5c` | 0 | behind 2, ahead 0 |
 | `agent-systems-benchmark-ar0906-merge-dco` | `repair/ar0906-merge-dco` | `66ca27afc2fb` | 0 | behind 257, ahead 0 |
 | `agent-systems-benchmark-ar1024-descriptor` | `DETACHED` | `9c164c6ed8fe` | 0 | behind 204, ahead 1 |
 | `agent-systems-benchmark-ar1024-router` | `DETACHED` | `f6968d924ad5` | 0 | behind 202, ahead 0 |
