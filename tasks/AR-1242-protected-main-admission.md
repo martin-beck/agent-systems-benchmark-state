@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent protected-main admission from creating unsigned GitHub merge commits.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Enforce signed protected-main admission",
-  "updated_at": "2026-09-16T08:51:43+00:00",
+  "updated_at": "2026-09-16T08:51:59+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-admission"
 }
 ---
@@ -64,3 +64,6 @@ It must not weaken native, formal, privacy, signature, DCO, exact-tree, or post-
 
 - 2026-09-16T08:51:36+00:00: Recorded command exit 0; command argv SHA-256
   65ea8354ea830981ae075ef72973e472eaa21ebbc54cf8954d90d23684a7904b.
+
+- 2026-09-16T08:51:59+00:00: Recorded command exit 0; command argv SHA-256
+  1c6b89f93320e08635f27ef8c5e49fba46e2658591901a1ee467d0c98003e38e.
