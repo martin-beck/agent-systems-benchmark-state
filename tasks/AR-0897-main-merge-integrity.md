@@ -2,14 +2,14 @@
 {
   "branch": "fix/main-merge-integrity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T06:59:49+00:00",
+  "claim_expires": "2026-09-16T07:03:37+00:00",
   "depends_on": [
     "AR-0003"
   ],
   "id": "AR-0897",
   "next_action": "Hold PR 126 at bd6f450; after AR-0877 and AR-0909 integrate, rebase once and require fresh all-green exact-head CI before merge.",
   "observed_branch": "fix/main-merge-integrity",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "aceb1910b9203572cb2d477d0f94ad92d07e47e1",
   "owner": "asb_ar0897_merge_integrity",
   "plan": "../plans/AR-0897.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 92,
+  "task_revision": 94,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-16T04:59:49+00:00",
+  "updated_at": "2026-09-16T05:03:37+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -332,3 +332,5 @@ Implementation has not started. Read the linked plan before claiming.
   authorized; next monitor exact-head CI and independently reconcile any failures.
 
 - 2026-09-16T04:59:49+00:00: Heartbeat by asb_ar0897_merge_integrity.
+
+- 2026-09-16T05:03:37+00:00: Heartbeat by asb_ar0897_merge_integrity.
