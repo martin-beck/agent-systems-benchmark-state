@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**269 ARs tracked** across 7 active status categories.
+**270 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 5 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 11 |
-| **Planned** | Defined work awaiting promotion or dependencies | 64 |
+| **Planned** | Defined work awaiting promotion or dependencies | 65 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 177 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -335,6 +335,7 @@ flowchart LR
         AR_1239["AR-1239 - Done"]:::status_done
         AR_1240["AR-1240 - Done"]:::status_done
         AR_1241["AR-1241 - In progress"]:::status_in_progress
+        AR_1242["AR-1242 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -360,6 +361,7 @@ flowchart LR
     AR_0003 --> AR_0903
     AR_0003 --> AR_0906
     AR_0003 --> AR_1235
+    AR_0003 --> AR_1242
     AR_0004 --> AR_0005
     AR_0004 --> AR_0849
     AR_0101 --> AR_0102
@@ -908,6 +910,7 @@ flowchart LR
     AR_0893 --> AR_0894
     AR_0897 --> AR_0898
     AR_0897 --> AR_0903
+    AR_0897 --> AR_1242
     AR_0898 --> AR_0899
     AR_0898 --> AR_0903
     AR_0899 --> AR_0903
@@ -1124,7 +1127,7 @@ flowchart LR
 | --- | --- | --- |
 | [AR-0001](../tasks/AR-0001-repository-bootstrap.md) | None | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0501](../tasks/AR-0501-replay-evaluation.md), [AR-0701](../tasks/AR-0701-platform-manifests.md) |
 | [AR-0002](../tasks/AR-0002-coordination-assurance.md) | [AR-0001](../tasks/AR-0001-repository-bootstrap.md) | [AR-0004](../tasks/AR-0004-ar-status-document.md), [AR-0005](../tasks/AR-0005-transactional-promotion.md), [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0834](../tasks/AR-0834-handoffctl-lint-regression.md), [AR-0895](../tasks/AR-0895-verify-coordination-content.md), [AR-0903](../tasks/AR-0903-release-qualification.md) |
-| [AR-0003](../tasks/AR-0003-quality-gates.md) | [AR-0001](../tasks/AR-0001-repository-bootstrap.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md), [AR-0845](../tasks/AR-0845-ci-artifact-quota-resilience.md), [AR-0855](../tasks/AR-0855-huawei-mit-license-headers.md), [AR-0877](../tasks/AR-0877-formal-tla-artifact-availability.md), [AR-0878](../tasks/AR-0878-tla-source-build-provenance.md), [AR-0895](../tasks/AR-0895-verify-coordination-content.md), [AR-0897](../tasks/AR-0897-main-merge-integrity.md), [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md), [AR-0899](../tasks/AR-0899-gitleaks-revision-config-integrity.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md), [AR-1235](../tasks/AR-1235-goose-diagnostic-fixture-portability.md) |
+| [AR-0003](../tasks/AR-0003-quality-gates.md) | [AR-0001](../tasks/AR-0001-repository-bootstrap.md) | [AR-0830](../tasks/AR-0830-aiws-runner-capacity.md), [AR-0831](../tasks/AR-0831-aiws-workflow-routing.md), [AR-0845](../tasks/AR-0845-ci-artifact-quota-resilience.md), [AR-0855](../tasks/AR-0855-huawei-mit-license-headers.md), [AR-0877](../tasks/AR-0877-formal-tla-artifact-availability.md), [AR-0878](../tasks/AR-0878-tla-source-build-provenance.md), [AR-0895](../tasks/AR-0895-verify-coordination-content.md), [AR-0897](../tasks/AR-0897-main-merge-integrity.md), [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md), [AR-0899](../tasks/AR-0899-gitleaks-revision-config-integrity.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md), [AR-1235](../tasks/AR-1235-goose-diagnostic-fixture-portability.md), [AR-1242](../tasks/AR-1242-protected-main-admission.md) |
 | [AR-0004](../tasks/AR-0004-ar-status-document.md) | [AR-0002](../tasks/AR-0002-coordination-assurance.md) | [AR-0005](../tasks/AR-0005-transactional-promotion.md), [AR-0849](../tasks/AR-0849-ar0801-documentation-repair.md) |
 | [AR-0005](../tasks/AR-0005-transactional-promotion.md) | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0004](../tasks/AR-0004-ar-status-document.md) | None |
 | [AR-0101](../tasks/AR-0101-extension-contracts.md) | [AR-0001](../tasks/AR-0001-repository-bootstrap.md) | [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0201](../tasks/AR-0201-portable-metrics.md), [AR-0203](../tasks/AR-0203-statistical-analysis.md), [AR-0301](../tasks/AR-0301-agent-opencode.md), [AR-0302](../tasks/AR-0302-agent-opendesk.md), [AR-0303](../tasks/AR-0303-agent-aider.md), [AR-0304](../tasks/AR-0304-agent-codex.md), [AR-0305](../tasks/AR-0305-agent-gemini.md), [AR-0306](../tasks/AR-0306-agent-qwen-code.md), [AR-0307](../tasks/AR-0307-agent-goose.md), [AR-0308](../tasks/AR-0308-agent-mini-swe.md), [AR-0309](../tasks/AR-0309-agent-openhands.md), [AR-0310](../tasks/AR-0310-provider-profile-contract.md), [AR-0317](../tasks/AR-0317-runtime-bundle-manifest.md), [AR-0401](../tasks/AR-0401-engineering-workloads.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md), [AR-0517](../tasks/AR-0517-redacted-request-pointer-replay.md), [AR-0601](../tasks/AR-0601-csb-integration.md), [AR-0603](../tasks/AR-0603-csb-execution-assurance.md), [AR-0801](../tasks/AR-0801-terminal-interface.md), [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0840](../tasks/AR-0840-frontend-protocol-contract.md), [AR-0847](../tasks/AR-0847-frontend-control-api-repair.md), [AR-0857](../tasks/AR-0857-openjiuwen-provenance.md), [AR-0863](../tasks/AR-0863-workbuddy-provenance.md), [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md), [AR-0901](../tasks/AR-0901-formal-assurance.md), [AR-0904](../tasks/AR-0904-contract-consistency.md), [AR-0908](../tasks/AR-0908-control-state-lock-test-isolation.md), [AR-0909](../tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md), [AR-1003](../tasks/AR-1003-execution-budgets.md), [AR-1005](../tasks/AR-1005-trace-interoperability.md), [AR-1013](../tasks/AR-1013-measurement-catalog-semantics.md) |
@@ -1275,7 +1278,7 @@ flowchart LR
 | [AR-0894](../tasks/AR-0894-tui-local-llm-parity.md) | [AR-0870](../tasks/AR-0870-tui-multi-agent-provider-selection.md), [AR-0873](../tasks/AR-0873-ci-workflow-captures.md), [AR-0893](../tasks/AR-0893-cli-local-llm-setup.md) | None |
 | [AR-0895](../tasks/AR-0895-verify-coordination-content.md) | [AR-0002](../tasks/AR-0002-coordination-assurance.md), [AR-0003](../tasks/AR-0003-quality-gates.md) | None |
 | [AR-0896](../tasks/AR-0896-mockagents-executable-qualification.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md), [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md) | None |
-| [AR-0897](../tasks/AR-0897-main-merge-integrity.md) | [AR-0003](../tasks/AR-0003-quality-gates.md) | [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md), [AR-0903](../tasks/AR-0903-release-qualification.md) |
+| [AR-0897](../tasks/AR-0897-main-merge-integrity.md) | [AR-0003](../tasks/AR-0003-quality-gates.md) | [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-1242](../tasks/AR-1242-protected-main-admission.md) |
 | [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0897](../tasks/AR-0897-main-merge-integrity.md), [AR-1008](../tasks/AR-1008.md) | [AR-0899](../tasks/AR-0899-gitleaks-revision-config-integrity.md), [AR-0903](../tasks/AR-0903-release-qualification.md) |
 | [AR-0899](../tasks/AR-0899-gitleaks-revision-config-integrity.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md) | [AR-0903](../tasks/AR-0903-release-qualification.md) |
 | [AR-0901](../tasks/AR-0901-formal-assurance.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0203](../tasks/AR-0203-statistical-analysis.md), [AR-0502](../tasks/AR-0502-replay-cassettes.md) | [AR-0877](../tasks/AR-0877-formal-tla-artifact-availability.md), [AR-0878](../tasks/AR-0878-tla-source-build-provenance.md), [AR-0903](../tasks/AR-0903-release-qualification.md), [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md) |
@@ -1391,6 +1394,7 @@ flowchart LR
 | [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md) | [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md) |
 | [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md) | [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | [AR-1241](../tasks/AR-1241-native-isolation-matrix.md) |
 | [AR-1241](../tasks/AR-1241-native-isolation-matrix.md) | [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md) | None |
+| [AR-1242](../tasks/AR-1242-protected-main-admission.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0897](../tasks/AR-0897-main-merge-integrity.md) | None |
 
 ## Complete AR inventory
 
@@ -1398,7 +1402,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md): Make ShellCheck fail closed | asb_ar0898_shellcheck | Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck. | PR #190 published from exact clean signed+DCO head 8176605df747cca12010f8220e74509cca01539f; base c261af069c5ce7ecb84b2acfc56f12d2a4cb116a. Twelve required checks are running; Huawei headers and AWQ shadow are green. Monitor exact-head CI, diagnose any failures, obtain independent review, and merge only after all required checks green. |
+| P0 | [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md): Make ShellCheck fail closed | asb_ar0898_shellcheck | Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck. | PR #190 rebased onto current protected main 606375f and force-with-lease pushed; exact signed+DCO head 760eded801d3daa07011ea2a744bded7da27a159, tree 1ed40b42879b31d4e33a687494113f98ff94224d. All 12 required checks restarted; AWQ shadow and Huawei headers green. Monitor exact-head CI, independently review rebased diff, then signed local merge only after all green. |
 | P0 | [AR-1241](../tasks/AR-1241-native-isolation-matrix.md): Native isolation negative and lifecycle matrix | asb_ar1241_matrix_worker | Complete native signed-bundle isolation negative and lifecycle evidence. | Add provider/external/descendant egress denial and timeout/cancel/crash/non-interference tests for the signed native bundle. |
 
 ### Open (5)
@@ -1427,7 +1431,7 @@ flowchart LR
 | P1 | [AR-0890](../tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Unclaimed | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. |
 | P1 | [AR-0896](../tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Unclaimed | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun 34339927858 was launched via handoffctl and is actively watched by PID 736624/gh PID 736653; exact rerun head a4e1a9de985a4c9f22628c6d604a6e62f4f173e3, job 104684371738 currently running. Keep lease heartbeat, wait terminal, then capture failures or green result. |
 
-### Planned (64)
+### Planned (65)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1458,6 +1462,7 @@ flowchart LR
 | P0 | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md): ASB tutorial freshness CI and documentation qualification | Unclaimed | Continuously keep ASB tutorial commands and steps syntactically current. | Implement the repository-wide tutorial discovery and syntax-freshness CI gate after all tutorial contracts are defined. |
 | P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
 | P0 | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md): Strict-replay child launch bridge | Unclaimed | Map the authenticated relay into the strict-replay child launch contract. | Extend the reviewed strict-replay launch contract to map ReplayRelayHandoff into the child-visible HTTP loopback endpoint, with authenticated route/generation metadata and bounded lifecycle ownership. |
+| P0 | [AR-1242](../tasks/AR-1242-protected-main-admission.md): Enforce signed protected-main admission | Unclaimed | Prevent protected-main admission from creating unsigned GitHub merge commits. | Promote after dependency verification; audit protected-branch merge modes and add fail-closed admission controls for signed SSH+DCO merges. |
 | P1 | [AR-0604](../tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Build the CSB-to-ASB signal inventory and native x86_64 causal A/B matrix; run applicable pinned QEMU AArch64 portability checks and document native ARM64 as optional future evidence. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
@@ -1561,4 +1566,3 @@ flowchart LR
 | P0 | [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md): Qualify provider authentication backends and probes | Unclaimed | Qualify provider authentication backends, probes and application integration. | PR #177 exact head 2d716c8 includes std-only polled connect/write, authenticated Gemini/Ollama wire fixtures, and stabilized malformed/redirect/oversized response fixtures. Await exact-head CI and independent review; investigate any architecture-runner failures. |
 | P0 | [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md): Provider authentication application integration | Unclaimed | Integrate provider authentication into ASB config, control and CLI surfaces. | AR complete: merged PR #179 at 2f96f211; retain post-merge verification and release evidence in durable history. |
 | P0 | [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md): Authenticated provider-request seam and secret injection contract | Unclaimed | Define the approved bounded provider authentication request and secret-injection seam. | PR #178 exact head 3d0349a requires independent re-review and CI rerun. inject now polls a current-generation callback before and after sink; synchronized AtomicU64 transition test proves concurrent rotation fails closed. Rollback/privacy tests remain green; delegated transport/application gates remain AR-1228/AR-1229. |
-| P0 | [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md): Strict replay execution and egress-isolation seam | Unclaimed | Execute real agents through strict replay without provider egress or live fallback. | Rerun exact-head CI for b622554 and obtain independent review; successful qualified cassette service construction, route identity mismatch coverage, and credential/ambient-field rejection tests are now present. Runtime child supervision remains AR-1232. |

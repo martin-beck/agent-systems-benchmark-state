@@ -9,7 +9,7 @@
     "AR-1008"
   ],
   "id": "AR-0898",
-  "next_action": "PR #190 published from exact clean signed+DCO head 8176605df747cca12010f8220e74509cca01539f; base c261af069c5ce7ecb84b2acfc56f12d2a4cb116a. Twelve required checks are running; Huawei headers and AWQ shadow are green. Monitor exact-head CI, diagnose any failures, obtain independent review, and merge only after all required checks green.",
+  "next_action": "PR #190 rebased onto current protected main 606375f and force-with-lease pushed; exact signed+DCO head 760eded801d3daa07011ea2a744bded7da27a159, tree 1ed40b42879b31d4e33a687494113f98ff94224d. All 12 required checks restarted; AWQ shadow and Huawei headers green. Monitor exact-head CI, independently review rebased diff, then signed local merge only after all green.",
   "observed_branch": "fix/shellcheck-fail-closed",
   "observed_dirty": 0,
   "observed_head": "760eded801d3daa07011ea2a744bded7da27a159",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Make ShellCheck fail closed",
-  "updated_at": "2026-09-16T08:43:59+00:00",
+  "updated_at": "2026-09-16T08:44:25+00:00",
   "worktree_key": "agent-systems-benchmark-shellcheck-fail-closed"
 }
 ---
@@ -121,3 +121,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T08:43:59+00:00: Recorded command exit 0; command argv SHA-256
   1da6dc87f05f31b12d79f7e84dd033854d1eac31e222e559def474261efe2b4c.
+
+- 2026-09-16T08:44:25+00:00: 2026-09-16T08:45Z: Initial merge correctly refused because main
+  advanced from c261af0 to 606375f. Rebased 8176605 onto 606375f, signature verified G and DCO
+  retained, force-with-lease updated PR #190. No source changes beyond rebase.
