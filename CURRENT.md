@@ -8,6 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1242](tasks/AR-1242-protected-main-admission.md): Enforce signed protected-main admission | Prevent protected-main admission from creating unsigned GitHub merge commits. | Run fresh PR191 CI for rebased 9db468c and independently review; settings apply still needs admin authority. | asb_ar1242_merge_admission |
+| P0 | [AR-1243](tasks/AR-1243-signed-bundle-assembly.md): Installable signed runtime bundle assembly | Build, sign, verify, and publish installable supervisor and sidecar runtime bundles. | Implement reproducible supervisor/sidecar bundle assembly and explicit SSH signing using the project release workflow. | asb_ar1232_lifecycle_router |
 
 ## Open
 
@@ -18,7 +19,6 @@ Never edit this file directly.
 | P0 | [AR-1042](tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. | - |
 | P0 | [AR-1044](tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. | - |
 | P0 | [AR-1151](tasks/AR-1151.md): Strict offline replay | Replay strictly without providers. | Design and implement the missing executable strict-replay run-path seam: pass exact cassette route/service into agent adapter launch, deny provider egress at process boundary, and add campaign-level cancellation/restart/no-fallback tests. Current CLI replay only decodes/indexes/selects and emits metadata. | - |
-| P0 | [AR-1243](tasks/AR-1243-signed-bundle-assembly.md): Installable signed runtime bundle assembly | Build, sign, verify, and publish installable supervisor and sidecar runtime bundles. | Implement reproducible supervisor/sidecar bundle assembly and explicit SSH signing using the project release workflow. | - |
 
 ## Blocked
 
