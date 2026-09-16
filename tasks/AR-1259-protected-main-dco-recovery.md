@@ -7,7 +7,7 @@
     "AR-1242"
   ],
   "id": "AR-1259",
-  "next_action": "Promote and claim; create signed protected-main recovery preserving PR202 tree and parents, then run exact-main policy and all post-merge gates.",
+  "next_action": "Monitor PR203 exact head b7d21e0 checks; merge only after all required checks and independent approval, then verify signed exact-main recovery.",
   "observed_branch": "repair/pr202-protected-main-dco",
   "observed_dirty": 0,
   "observed_head": "b7d21e0839787a7c54561bdc0e65dc0b609b3d33",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover a signed protected-main DCO boundary after the unsigned PR202 web merge.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Protected-main DCO recovery for PR202",
-  "updated_at": "2026-09-16T16:47:05+00:00",
+  "updated_at": "2026-09-16T16:47:37+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-dco-1259"
 }
 ---
@@ -51,3 +51,7 @@ Create a signed, forward-only protected-main recovery for the unsigned PR202 mer
 
 - 2026-09-16T16:47:05+00:00: Recorded command exit 0; command argv SHA-256
   de1b64939ed97b3d6c79ce0abd0eeb765fd2162d5e827b39b3195b8c005b3b98.
+
+- 2026-09-16T16:47:37+00:00: Created signed recovery merge b7d21e0839787a7c54561bdc0e65dc0b609b3d33
+  with parents 14b604f and b7d9e14, exact tree preserved, SSH signature Good and matching
+  Signed-off-by. Pushed branch and opened PR203 against base 14b604f; all required checks started.
