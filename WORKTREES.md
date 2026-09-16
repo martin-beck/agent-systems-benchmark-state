@@ -177,6 +177,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-strict-replay` | `feature/strict-replay` | `410ecc95b80e` | 0 | behind 577, ahead 0 |
 | `agent-systems-benchmark-terminal-interface` | `feature/terminal-interface` | `d2e7b66ff6af` | 0 | behind 522, ahead 0 |
 | `agent-systems-benchmark-terminal-workloads` | `feature/terminal-workloads` | `3e67bdfc3ce0` | 0 | behind 339, ahead 0 |
+| `agent-systems-benchmark-tla-admission-safety` | `feature/tla-admission-safety` | `f218bac93006` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-tla-source-build-provenance` | `feature/tla-source-build-provenance` | `7ae562dbb15a` | 0 | behind 272, ahead 0 |
 | `agent-systems-benchmark-trace-interoperability` | `feature/trace-interoperability` | `921cf004f8aa` | 0 | behind 394, ahead 0 |
 | `agent-systems-benchmark-tui-history-analysis` | `feature/tui-history-analysis` | `7fd21bbeddc5` | 0 | behind 294, ahead 0 |
