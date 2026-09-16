@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1234.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide an approved runtime-owned loopback-only sandbox namespace capability.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Runtime-owned loopback namespace capability",
-  "updated_at": "2026-09-16T05:28:39+00:00",
+  "updated_at": "2026-09-16T06:48:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1234"
 }
 ---
@@ -75,3 +75,7 @@
   approved runtime-owned loopback helper exists in ASB; host sharing and ambient privileged setup
   are prohibited. Preserve signed product head 36a4580 and typed LoopbackOnly fail-closed behavior.
   Reassign only after an approved helper/capability is available.
+
+- 2026-09-16T06:48:57+00:00: AR-1234 worker authorized to continue safe runtime-owned loopback
+  capability audit and implementation; preserve fail-closed behavior and use only loopback-scoped
+  mechanisms.
