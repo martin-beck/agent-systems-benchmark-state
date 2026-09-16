@@ -10,16 +10,16 @@
   "next_action": "Provision and qualify a digest-pinned Docker runner with network none, bounded resources, no host mounts, and deterministic cleanup for AR-1251.",
   "observed_branch": "feature/ar-1252-approved-isolated-runner",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "128ecddbfdb7fcfff6e257adf3237b5866aca481",
   "owner": "asb_ar1252_isolated_runner",
   "plan": "../plans/AR-1252.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:05:33+00:00",
+  "updated_at": "2026-09-16T11:05:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
