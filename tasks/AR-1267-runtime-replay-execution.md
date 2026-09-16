@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1267",
-  "next_action": "Promote after dependency verification; implement the runtime-owned cassette request/response execution hook and full lifecycle evidence.",
+  "next_action": "Implement runtime-owned cassette request/response hook consuming authenticated context; add actual replay command integration and bounded lifecycle/egress tests.",
   "observed_branch": "feature/ar-1267-runtime-replay-execution",
   "observed_dirty": 0,
   "observed_head": "69e8b064d3121a4bae1f672cdae9c0c8672000bc",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement real runtime-owned strict-replay execution and lifecycle supervision.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Runtime strict-replay execution hook",
-  "updated_at": "2026-09-16T22:39:32+00:00",
+  "updated_at": "2026-09-16T22:39:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1267-runtime-replay-execution"
 }
 ---
@@ -37,3 +37,8 @@ context-boundary evidence and its blocker; do not accept metadata-only behavior 
 
 - 2026-09-16T22:39:24+00:00: Recorded command exit 0; command argv SHA-256
   8af18f613db880f7e58ca3737a20a183ff080ba75ef54277eaaa8553713ad71e.
+
+- 2026-09-16T22:39:45+00:00: Claimed AR-1267 and provisioned declared isolated worktree from signed
+  origin/main 69e8b06. Read complete AR-1267 plan/task and ASB development docs; AR-1266 evidence
+  confirms metadata-only context is insufficient. Baseline product tree is clean. No predecessor
+  branch/code reused.
