@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1232",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T05:26:27+00:00",
+  "claim_expires": "2026-09-16T05:28:36+00:00",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 147,
+  "task_revision": 148,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T03:26:47+00:00",
+  "updated_at": "2026-09-16T03:28:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -401,3 +401,5 @@
 - 2026-09-16T03:26:47+00:00: Full locked offline workspace test gate passed at 03:26 under
   handoffctl, including 2 native strict replay sandbox harness tests. Exact feature head remains
   signed+DCO 678e112; no PR/CI publication yet.
+
+- 2026-09-16T03:28:36+00:00: Heartbeat by asb_ar1232_sandbox_supervision.
