@@ -1359,7 +1359,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md): Sandboxed replay process supervision | asb_ar1232_sandbox_supervision | Supervise strict replay adapters inside the approved network-denied sandbox. | Run focused and full runtime gates on 0a7a760; the earlier exit-101 was a compile failure because SandboxError lacked the new NetworkPolicy variant, corrected and sandbox unit tests now pass (18). Then add concrete spawn lifecycle tests through the existing sandbox harness. |
+| P0 | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md): Sandboxed replay process supervision | asb_ar1232_sandbox_supervision | Supervise strict replay adapters inside the approved network-denied sandbox. | Extend the launch-wrapper coverage to explicit timeout/crash/partial-launch and stale/duplicate lifecycle assertions, then run full locked runtime/workspace gates and prepare review. |
 
 ### Open (14)
 
@@ -1539,3 +1539,4 @@ flowchart LR
 | P1 | [AR-0302](../tasks/AR-0302-agent-opendesk.md): Implement OpenDesk client adapter | Unclaimed | Support the bitclub OpenDesk CLI with its own dialect and compatibility record. | Publish approved 8eb99d3, require exact-head CI and immutable review, integrate only signed+DCO green head, then run post-merge verification. |
 | P1 | [AR-0303](../tasks/AR-0303-agent-aider.md): Implement aider client adapter | Unclaimed | Support unattended aider editing with bounded input, output and repository changes. | Publish immutable da81ead6932c5d5469ca57fc981646fa980c2780, open focused PR, and require exact-head CI before integration. |
 | P1 | [AR-0304](../tasks/AR-0304-agent-codex.md): Implement Codex client adapter | Unclaimed | Use Codex noninteractive structured events or app-server with declared capability boundaries. | Monitor PR 24 exact head eb03bd9 x86_64/aarch64 Rust, quality/coverage/supply, and formal CI; investigate any failure and do not merge without coordinator authorization. |
+| P1 | [AR-0305](../tasks/AR-0305-agent-gemini.md): Implement Gemini CLI client adapter | Unclaimed | Run pinned Gemini CLI through noninteractive JSON events. | Await exact-main quality and Rust CI at signed merge e85548d; then reconcile/live doctor and release only if all green and clean. |

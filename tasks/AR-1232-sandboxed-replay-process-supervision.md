@@ -9,7 +9,7 @@
     "AR-1230"
   ],
   "id": "AR-1232",
-  "next_action": "Run focused and full runtime gates on 0a7a760; the earlier exit-101 was a compile failure because SandboxError lacked the new NetworkPolicy variant, corrected and sandbox unit tests now pass (18). Then add concrete spawn lifecycle tests through the existing sandbox harness.",
+  "next_action": "Extend the launch-wrapper coverage to explicit timeout/crash/partial-launch and stale/duplicate lifecycle assertions, then run full locked runtime/workspace gates and prepare review.",
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "d9a02c1e8d329644717ca5c6df38aa93c8c9003b",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T02:57:37+00:00",
+  "updated_at": "2026-09-16T02:57:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -185,3 +185,9 @@
 
 - 2026-09-16T02:57:37+00:00: Recorded command exit 0; command argv SHA-256
   39cf5398131881d6bebfeb6940a170dba53287cbad205a984f34c80a6dbe58e7.
+
+- 2026-09-16T02:57:54+00:00: Added SandboxLaunchInput usage to the native sandbox harness in
+  signed/DCO commit d9a02c1 and pushed feature/ar-1232. Valid launch and cancellation/cleanup paths
+  now exercise SandboxBackend::spawn_launch; sandbox_boundary integration suite passed 10/10 and
+  sandbox unit suite passed 18/18. The prior exit-101 was the missing NetworkPolicy error variant
+  and is fixed.

@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1232](tasks/AR-1232-sandboxed-replay-process-supervision.md): Sandboxed replay process supervision | Supervise strict replay adapters inside the approved network-denied sandbox. | Run focused and full runtime gates on 0a7a760; the earlier exit-101 was a compile failure because SandboxError lacked the new NetworkPolicy variant, corrected and sandbox unit tests now pass (18). Then add concrete spawn lifecycle tests through the existing sandbox harness. | asb_ar1232_sandbox_supervision |
+| P0 | [AR-1232](tasks/AR-1232-sandboxed-replay-process-supervision.md): Sandboxed replay process supervision | Supervise strict replay adapters inside the approved network-denied sandbox. | Extend the launch-wrapper coverage to explicit timeout/crash/partial-launch and stale/duplicate lifecycle assertions, then run full locked runtime/workspace gates and prepare review. | asb_ar1232_sandbox_supervision |
 
 ## Open
 
