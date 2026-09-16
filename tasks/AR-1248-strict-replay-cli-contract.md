@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1248-strict-replay-cli-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T13:10:23+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1231",
     "AR-1232"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1248-strict-replay-cli-contract",
   "observed_dirty": 0,
   "observed_head": "cebe8efc19a1665c87f0d354ea6584670792957b",
-  "owner": "asb_ar1232_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1248.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 116,
+  "task_revision": 117,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T11:21:30+00:00",
+  "updated_at": "2026-09-16T11:26:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -327,3 +327,13 @@ formal, privacy, signature, DCO, and exact-tree gates.
   handoff namespace_ready. Added lifetime/cleanup test plus executable dispatch positive/stale-route
   tests. Focused asb-cli lib 76/76, focused replay-plan 1/1, clippy -D warnings pass. Previous
   66e0fa2 PR policy/Rust failures require fresh exact-head CI; no product failure identified yet.
+
+- 2026-09-16T11:26:22+00:00: AR-1248 CLI contract implementation is complete through signed cebe8ef,
+  but independent review requires actual namespace attestation, cassette-serving adapter child
+  execution through StrictReplayLaunchBridge, and end-to-end request/response plus
+  egress/cancel/restart/no-fallback evidence. These require runtime-owned SandboxLaunchInput,
+  ResourceLease, SandboxBackend supervision, and an independently issued namespace capability absent
+  from the CLI plan/API; fabricating namespace_ready=true or executable paths would violate
+  fail-closed scope. Dependency/runtime follow-up is AR-1232 (currently blocked on approved sandbox
+  capability AR-1233/AR-1234). Preserve PR #197 and exact head cebe8ef; resume after runtime
+  capability lands.
