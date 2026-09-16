@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1236.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide a runtime-owned private-namespace loopback sidecar capability.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Runtime-owned loopback sidecar capability",
-  "updated_at": "2026-09-16T07:34:00+00:00",
+  "updated_at": "2026-09-16T08:25:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1236"
 }
 ---
@@ -84,3 +84,6 @@ privacy, policy, native, signature, and exact-head gates.
   --unshare-all and has no reviewed sidecar injection/namespace handoff; rootless host capability
   cannot configure child loopback. No host sharing, firewall, ambient ip, credentials, or unrelated
   AR changes.
+
+- 2026-09-16T08:25:00+00:00: Reopen for completion review: signed handoff commit 42c3d19 and runtime
+  integration now present.
