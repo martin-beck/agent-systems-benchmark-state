@@ -2,7 +2,7 @@
 {
   "branch": "fix/ar-1245-postmerge-dco-evidence",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T11:37:31+00:00",
   "depends_on": [
     "AR-1242",
     "AR-1243"
@@ -12,15 +12,15 @@
   "observed_branch": "fix/ar-1245-postmerge-dco-evidence",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "asb_ar1237_launch_bridge_worker",
   "plan": "../plans/AR-1245.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair protected-main post-merge DCO evidence without rewriting published history.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Post-merge DCO admission evidence",
-  "updated_at": "2026-09-16T09:36:28+00:00",
+  "updated_at": "2026-09-16T09:37:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1245"
 }
 ---
@@ -31,3 +31,5 @@ bundle, or TUI code.
 
 - 2026-09-16T09:36:28+00:00: PR #192 merged with unsigned GitHub merge commit; approved forward-only
   DCO evidence repair without history rewrite.
+
+- 2026-09-16T09:37:31+00:00: Claimed by asb_ar1237_launch_bridge_worker.

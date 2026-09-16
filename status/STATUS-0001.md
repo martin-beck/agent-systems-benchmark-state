@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 5 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 10 |
 | **Planned** | Defined work awaiting promotion or dependencies | 63 |
 | **Future** | Deferred roadmap work | 1 |
@@ -338,7 +338,7 @@ flowchart LR
         AR_1242["AR-1242 - Done"]:::status_done
         AR_1243["AR-1243 - Done"]:::status_done
         AR_1244["AR-1244 - In progress"]:::status_in_progress
-        AR_1245["AR-1245 - Open"]:::status_open
+        AR_1245["AR-1245 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1410,13 +1410,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1244](../tasks/AR-1244-publish-replay-supervision.md): Publish AR-1232 strict-replay supervision | asb_ar1244_publish_1232 | Publish strict-replay supervision integration. | Review PR193 exact head 147acd6 and await all required CI before signed protected-main merge. |
+| P0 | [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md): Post-merge DCO admission evidence | asb_ar1237_launch_bridge_worker | Repair protected-main post-merge DCO evidence without rewriting published history. | Implement a narrowly scoped forward-only repair for the known PR-192 merge DCO failure and verify protected-main quality. |
 
-### Open (5)
+### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1424,7 +1425,6 @@ flowchart LR
 | P0 | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md): Implement &#96;asb tui&#96; lifecycle routing | Unclaimed | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. |
 | P0 | [AR-1042](../tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Unclaimed | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. |
 | P0 | [AR-1044](../tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Unclaimed | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. |
-| P0 | [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md): Post-merge DCO admission evidence | Unclaimed | Repair protected-main post-merge DCO evidence without rewriting published history. | Implement a narrowly scoped forward-only repair for the known PR-192 merge DCO failure and verify protected-main quality. |
 
 ### Blocked (10)
 
