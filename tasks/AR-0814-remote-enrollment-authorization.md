@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Integrate certificate persistence and recovery ControlCall; run full gates and independent review.",
+  "next_action": "Integrate persisted identity into pairing and recovery ControlCall; implement safe non-argv code handling and remote audit binding.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "1cc337f7e03c0526a4087632131319ba10aa5511",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 161,
+  "task_revision": 162,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T18:25:08+00:00",
+  "updated_at": "2026-09-16T18:25:28+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -440,3 +440,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T18:25:00+00:00: Recorded command exit 0; command argv SHA-256
   830b3f77964613f8803f36c1d2b8cbf5d48476a5c717e6170b98b15ba8d856b8.
+
+- 2026-09-16T18:25:28+00:00: Signed+DCO 1cc337f adds bounded CertificateIdentityV1 to_json/from_json
+  with digest, validity, route validation; tampered route and round-trip tests pass. Worktree clean.
