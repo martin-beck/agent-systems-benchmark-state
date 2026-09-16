@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 229,
+  "task_revision": 230,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-16T06:50:14+00:00",
+  "updated_at": "2026-09-16T06:50:39+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -781,3 +781,6 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   Preserve state and unblock other valid claims.
 
 - 2026-09-16T06:50:14+00:00: Claimed by asb_ar0859_runtime_requal.
+
+- 2026-09-16T06:50:39+00:00: Recorded command exit 0; command argv SHA-256
+  0ff3ced18643a9a8578f4f2127010750a41ac52300f374f4e451c773e8d20f51.
