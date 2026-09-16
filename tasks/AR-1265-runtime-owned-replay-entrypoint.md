@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a real runtime-owned strict-replay CLI entrypoint.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime-owned strict-replay CLI entrypoint",
-  "updated_at": "2026-09-16T22:19:45+00:00",
+  "updated_at": "2026-09-16T22:20:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1265-runtime-replay-entrypoint"
 }
 ---
@@ -34,3 +34,6 @@ unmerged implementation is not an input; preserve its review as the reason this 
   proves a separate runtime-owned entrypoint is required.
 
 - 2026-09-16T22:19:45+00:00: Claimed by asb_ar1024_lifecycle_router.
+
+- 2026-09-16T22:20:30+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
