@@ -7,7 +7,7 @@
     "AR-1232"
   ],
   "id": "AR-1244",
-  "next_action": "Monitor exact-main post-merge workflows for signed merge 34243aa; release done only after all terminal green.",
+  "next_action": "No further action; signed publication and all exact-main post-merge gates are complete.",
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "2543a4c213bc7a1f9b426cb8c0b95d815a0bf7e4",
