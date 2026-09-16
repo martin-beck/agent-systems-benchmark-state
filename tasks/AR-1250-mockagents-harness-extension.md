@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1250-mockagents-harness-extension",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T20:22:47+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1250-mockagents-harness-extension",
   "observed_dirty": 0,
   "observed_head": "0d42bca02b276342606ae35bfaa30a5b5cd5247a",
-  "owner": "asb_ar1250_mockagents_harness",
+  "owner": "",
   "plan": "../plans/AR-1250.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Extend the pinned MockAgents executable qualification harness.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Extend MockAgents qualification harness",
-  "updated_at": "2026-09-16T19:24:03+00:00",
+  "updated_at": "2026-09-16T19:25:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1250"
 }
 ---
@@ -206,3 +206,7 @@ privacy, signature, DCO, and exact-tree gates; do not claim support from host in
   --platform linux-arm64 with the cached artifact exited 1 because no explicit pinned emulator
   runner was supplied. This is an artifact/runner availability blocker, not a product pass; amd64
   bounded suites remain 9/9 at clean 55be268.
+
+- 2026-09-16T19:25:00+00:00: Released ownerless: linux-arm64 qualification fails closed because no
+  approved explicit pinned emulator runner is available. Preserve signed 0d42bca and amd64 9/9
+  evidence; successor must provision and verify immutable arm64 runner before repeat qualification.
