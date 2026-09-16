@@ -8,15 +8,18 @@
   ],
   "id": "AR-1235",
   "next_action": "Planned from post-merge AArch64 run 35060286408. Reproduce exit 127 in diagnostic_and_symlink_fail_closed, classify fixture/runtime cause, then add a deterministic portable fixture without weakening fail-closed assertions.",
+  "observed_branch": "feature/ar-1235-goose-fixture-portability",
+  "observed_dirty": 0,
+  "observed_head": "fd7daa43549edd67b60076aa6b1eee333061b438",
   "owner": "asb_ar1235_goose_portability",
   "plan": "../plans/AR-1235.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair Goose diagnostic fixture portability under emulated AArch64.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Portable Goose diagnostic fixture",
-  "updated_at": "2026-09-16T05:47:24+00:00",
+  "updated_at": "2026-09-16T05:47:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1235"
 }
 ---
