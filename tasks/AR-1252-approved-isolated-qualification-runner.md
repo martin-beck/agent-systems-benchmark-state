@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:47:57+00:00",
+  "updated_at": "2026-09-16T11:58:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -252,3 +252,6 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
   work.
 
 - 2026-09-16T11:47:57+00:00: Heartbeat by asb_ar1252_isolated_runner.
+
+- 2026-09-16T11:58:15+00:00: Recorded command exit 0; command argv SHA-256
+  cad6690e76a32bd640aa452bc6f3fa2c75328705583e1ad1bedca740e1959d05.
