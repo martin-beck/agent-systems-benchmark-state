@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 249,
+  "task_revision": 250,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:25:52+00:00",
+  "updated_at": "2026-09-16T19:27:33+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -681,3 +681,6 @@ Implementation has not started. Read the linked plan before claiming.
   evidence remains incomplete for stolen/expired/not-yet-valid/wrong-IP identities, confused
   deputy/escalation, audit tampering, and real lost-controller recovery. Full local gates are
   necessary but insufficient for acceptance; do not publish/merge.
+
+- 2026-09-16T19:27:33+00:00: Recorded command exit 0; command argv SHA-256
+  4047a5a8981e7db7458e0ab9dfd79c9d8b03c7c22c68e6d5d384370aefd42f55.
