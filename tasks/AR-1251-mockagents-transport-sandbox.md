@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1251-mockagents-transport-sandbox",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T13:59:43+00:00",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1251-mockagents-transport-sandbox",
   "observed_dirty": 0,
   "observed_head": "128ecddbfdb7fcfff6e257adf3237b5866aca481",
-  "owner": "",
+  "owner": "asb_ar1251_transport_sandbox",
   "plan": "../plans/AR-1251.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add a bounded transport and sandbox fixture for MockAgents qualification.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Add MockAgents transport sandbox fixture",
-  "updated_at": "2026-09-16T11:59:40+00:00",
+  "updated_at": "2026-09-16T11:59:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1251"
 }
 ---
@@ -48,3 +48,5 @@ preserve privacy, network-denial, signature, DCO, and exact-tree gates.
 
 - 2026-09-16T11:59:40+00:00: AR-1252 approved isolated runner f0f3d67 is now available; resume
   transport fixture implementation with real bounded network and lifecycle evidence.
+
+- 2026-09-16T11:59:43+00:00: Claimed by asb_ar1251_transport_sandbox.
