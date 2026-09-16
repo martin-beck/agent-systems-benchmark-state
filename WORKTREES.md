@@ -126,8 +126,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-gemini-hook-readiness-race` | `fix/gemini-hook-readiness-race` | `55648d5a29f4` | 0 | behind 292, ahead 0 |
 | `agent-systems-benchmark-gemini-readiness-merge-attestation` | `docs/gemini-readiness-merge-attestation` | `d0ea32ce84f6` | 0 | behind 284, ahead 0 |
 | `agent-systems-benchmark-gemini-thinking-config-contract` | `feature/gemini-thinking-config-contract` | `0aff7023cacf` | 0 | behind 569, ahead 0 |
-| `agent-systems-benchmark-gitleaks-revision-config-integrity` | `fix/gitleaks-revision-config-integrity` | `62d9f1286f4b` | 7 | behind 0, ahead 3 |
-| changed files | - | - | - | `crates/asb-cli/default_11443700082376871557_0_3769998.profraw`, `crates/asb-cli/default_11443700082376871557_0_3770002.profraw`, `crates/asb-cli/default_11443700082376871557_0_3770003.profraw`, `crates/asb-cli/default_11443700082376871557_0_3770005.profraw`, `crates/asb-cli/default_11443700082376871557_0_3770006.profraw`, `crates/asb-cli/default_11443700082376871557_0_3770110.profraw`, `crates/asb-cli/default_11443700082376871557_0_3770113.profraw` |
+| `agent-systems-benchmark-gitleaks-revision-config-integrity` | `fix/gitleaks-revision-config-integrity` | `62d9f1286f4b` | 0 | behind 0, ahead 3 |
 | `agent-systems-benchmark-hosted-runner-evidence` | `fix/hosted-runner-evidence-classification` | `f0b7b46db271` | 0 | behind 324, ahead 0 |
 | `agent-systems-benchmark-huawei-mit-headers` | `fix/huawei-mit-license-headers` | `7add29f1d24c` | 0 | behind 453, ahead 0 |
 | `agent-systems-benchmark-install-artifacts` | `feature/verifiable-install-artifacts` | `310fdfe30f71` | 0 | behind 390, ahead 0 |
