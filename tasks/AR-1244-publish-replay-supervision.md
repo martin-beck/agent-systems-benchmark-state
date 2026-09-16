@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish strict-replay supervision integration.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Publish AR-1232 strict-replay supervision",
-  "updated_at": "2026-09-16T10:08:36+00:00",
+  "updated_at": "2026-09-16T10:15:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1244-publish"
 }
 ---
@@ -141,3 +141,6 @@ mutation.
 - 2026-09-16T10:08:36+00:00: Rebased all 41 signed+DCO AR-1232 commits from prior head 7ceb522 onto
   current protected main 5a2c151 after PR195 advanced main. New clean exact PR193 head 2f10f27
   pushed with force-with-lease; fresh exact-head CI and review are required.
+
+- 2026-09-16T10:15:26+00:00: Recorded command exit 0; command argv SHA-256
+  596812efe4bca2574d70685f51b2502b85e1014d45a14e51586c51364d50e248.
