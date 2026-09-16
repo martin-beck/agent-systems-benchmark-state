@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1266",
-  "next_action": "Fix runtime context dead-code gate, rerun focused tests, then bind context into replay dispatch with supervised cassette lifecycle.",
+  "next_action": "Rerun the flaky control test in isolation/repeat, then commit context dispatch fix and add supervised lifecycle tests.",
   "observed_branch": "feature/ar-1266-authenticated-replay-dispatch",
   "observed_dirty": 1,
   "observed_head": "b62ed5f12b4ca72d397bdce680332f20a0c8a9e5",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add authenticated runtime context to the actual strict-replay CLI dispatch path.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Authenticated replay dispatch context",
-  "updated_at": "2026-09-16T22:36:06+00:00",
+  "updated_at": "2026-09-16T22:36:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1266-authenticated-replay"
 }
 ---
@@ -71,3 +71,9 @@ Preserve all prior blocked evidence; no fabricated launch authority or weakened 
 
 - 2026-09-16T22:36:06+00:00: Recorded command exit 101; command argv SHA-256
   4d794e29b61dffc224f97f0280c573e3ed07695dad1bba348b4bd20627fb7998.
+
+- 2026-09-16T22:36:26+00:00: Focused CLI/runtime command hit one unrelated existing test failure:
+  control::tests::state_root_is_exclusive_and_uncertain_restart_fails_closed panicked at
+  crates/asb-cli/src/control.rs:2896 because its state root was already owned. This failure is
+  outside AR-1266 files and appears concurrent test-state contamination; do not weaken it. Context
+  dispatch change remains uncommitted until isolated rerun is green.
