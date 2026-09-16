@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1260",
-  "next_action": "Add executable lifecycle/egress/no-fallback tests around the runtime launch wrapper; then run policy/privacy/signature gates and request exact-head review.",
+  "next_action": "Run clippy -D warnings, rustdoc, policy/privacy/signature gates on exact head 9e4a1c0; then request independent review. Runtime native lifecycle/egress execution remains delegated to existing runtime tests and must not be claimed as CLI evidence.",
   "observed_branch": "feature/ar-1260-runtime-owned-strict-replay-integration",
   "observed_dirty": 0,
   "observed_head": "9e4a1c095e1f736011699edb4ab216e876e77251",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate strict replay with runtime-owned attestation and supervised sandbox execution.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Runtime-owned strict-replay integration",
-  "updated_at": "2026-09-16T20:37:30+00:00",
+  "updated_at": "2026-09-16T20:37:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1260-runtime"
 }
 ---
@@ -92,3 +92,7 @@ missing, stale, duplicated, or mismatched.
 
 - 2026-09-16T20:37:23+00:00: Recorded command exit 0; command argv SHA-256
   ab528c0548b21c47a8d72103202a48967d17e5c56e1156bc208322047859e6af.
+
+- 2026-09-16T20:37:41+00:00: Signed 9e4a1c0 adds a direct no-fallback test: spawn_runtime_replay
+  rejects a missing authenticated relay before child creation, with deny policy and runtime launch
+  inputs otherwise valid. Focused test passes 1/1; cargo fmt passes. Product worktree is clean.
