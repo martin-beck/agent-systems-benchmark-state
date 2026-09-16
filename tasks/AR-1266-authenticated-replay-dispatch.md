@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1266",
-  "next_action": "Promote after dependency verification; implement the authenticated runtime-to-CLI replay dispatch seam and real lifecycle evidence.",
+  "next_action": "Implement runtime-issued opaque replay dispatch context and pass it into actual replay command; add fail-closed rejection tests.",
   "observed_branch": "feature/ar-1266-authenticated-replay-dispatch",
   "observed_dirty": 0,
   "observed_head": "69e8b064d3121a4bae1f672cdae9c0c8672000bc",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add authenticated runtime context to the actual strict-replay CLI dispatch path.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Authenticated replay dispatch context",
-  "updated_at": "2026-09-16T22:32:55+00:00",
+  "updated_at": "2026-09-16T22:33:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1266-authenticated-replay"
 }
 ---
@@ -37,3 +37,8 @@ Preserve all prior blocked evidence; no fabricated launch authority or weakened 
 
 - 2026-09-16T22:32:48+00:00: Recorded command exit 0; command argv SHA-256
   d04aa803a9fcb854b247572f9b417fd1935a57ca978bb887d2e7c188e99db043.
+
+- 2026-09-16T22:33:09+00:00: Claimed AR-1266 and provisioned declared isolated worktree from signed
+  origin/main 69e8b06. Read complete plan/task plus ASB development docs. AR-1265 review confirms
+  existing replay command lacks context-bearing dispatch; this successor owns that seam. Product
+  tree is clean before implementation.
