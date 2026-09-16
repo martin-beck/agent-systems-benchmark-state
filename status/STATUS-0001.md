@@ -1433,7 +1433,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | asb_ar1232_lifecycle_router | Define the strict-replay CLI consumer contract. | Review blocks merge: integrate resolver with runtime-issued SidecarHandoff/SandboxLaunchInput seam or narrow acceptance with coordinator; cross-validate cassette route/dialect and add malformed/executor lifecycle tests before new signed head. |
+| P0 | [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | asb_ar1232_lifecycle_router | Define the strict-replay CLI consumer contract. | Runtime seam remains review blocker: add a CLI-facing constructor/integration that consumes runtime-issued SidecarHandoff/SandboxLaunchInput, or coordinator-approved narrow follow-up; add malformed cassette and executor lifecycle/egress/cancel/restart/no-fallback tests, then rerun all gates. |
 | P1 | [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md): Extend MockAgents qualification harness | asb_ar1250_mockagents_harness | Extend the pinned MockAgents executable qualification harness. | Add tool-result, cancellation/backpressure, and outbound-denial executable cases; then rerun arm64 repeat and full gates. |
 
 ### Open (4)

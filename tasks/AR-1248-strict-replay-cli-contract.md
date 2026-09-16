@@ -8,7 +8,7 @@
     "AR-1232"
   ],
   "id": "AR-1248",
-  "next_action": "Review blocks merge: integrate resolver with runtime-issued SidecarHandoff/SandboxLaunchInput seam or narrow acceptance with coordinator; cross-validate cassette route/dialect and add malformed/executor lifecycle tests before new signed head.",
+  "next_action": "Runtime seam remains review blocker: add a CLI-facing constructor/integration that consumes runtime-issued SidecarHandoff/SandboxLaunchInput, or coordinator-approved narrow follow-up; add malformed cassette and executor lifecycle/egress/cancel/restart/no-fallback tests, then rerun all gates.",
   "observed_branch": "feature/ar-1248-strict-replay-cli-contract",
   "observed_dirty": 0,
   "observed_head": "bc127a9d87fb893bbf8b52102d318507cc92d2c3",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T10:59:00+00:00",
+  "updated_at": "2026-09-16T10:59:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -206,3 +206,8 @@ formal, privacy, signature, DCO, and exact-tree gates.
 
 - 2026-09-16T10:59:00+00:00: Recorded command exit 0; command argv SHA-256
   109d36131c59cbd435b0b3a2033e7f16578455597393f5a2e79fc5e1917d7901.
+
+- 2026-09-16T10:59:27+00:00: Signed bc127a9 pushed to PR #197. Resolver now derives route identity
+  from cassette session/attempt/dialect and rejects mismatch; focused tests 2/2 green. Remaining
+  independent-review blocker is runtime-issued handoff/sandbox launch integration and lifecycle
+  coverage, which must not be claimed by record construction alone.
