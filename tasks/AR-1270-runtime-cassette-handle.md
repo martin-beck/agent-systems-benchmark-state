@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1270",
-  "next_action": "Implement runtime-owned handle issuance/one-shot consumption and bind CLI replay service; add real request/response and lifecycle/egress fixtures.",
+  "next_action": "Bind RuntimeCassetteService into CLI replay and add real cassette request/response plus egress/cancel/restart/timeout/crash cleanup/no-fallback fixtures.",
   "observed_branch": "feature/ar-1270-runtime-cassette-handle",
   "observed_dirty": 0,
   "observed_head": "46810b158b7f2b34040e10872692046450d58266",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-issued cassette-service handle for supervised strict replay.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Runtime-issued cassette-service handle",
-  "updated_at": "2026-09-16T23:09:04+00:00",
+  "updated_at": "2026-09-16T23:09:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1270-runtime-cassette-handle"
 }
 ---
@@ -74,3 +74,8 @@ the CLI.
 
 - 2026-09-16T23:08:57+00:00: Recorded command exit 0; command argv SHA-256
   ba8dcbbc83e5874c9b79d3a186ab6b6a0cfb8495d42d68888323d4d8ce870408.
+
+- 2026-09-16T23:09:19+00:00: Signed commits eca1a2c and 46810b1 add runtime-owned
+  RuntimeCassetteService around validated ReplayServiceHandleV1 with exact-once consumption, plus
+  lockfile refresh. Runtime focused suite passes 40/40 and fmt pass; product tree clean at 46810b1.
+  CLI binding and real supervised cassette/lifecycle fixtures remain next.
