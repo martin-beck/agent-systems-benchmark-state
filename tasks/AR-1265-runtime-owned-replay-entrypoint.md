@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1265",
-  "next_action": "Commit runtime-owned launch bundle after dead-code fix; then add executable replay dispatch and lifecycle tests.",
+  "next_action": "Wire replay-plan dispatch to runtime-issued issue_launch authority; add real cassette response and lifecycle/egress/no-fallback tests before full gates.",
   "observed_branch": "feature/ar-1265-runtime-owned-replay-entrypoint",
   "observed_dirty": 0,
   "observed_head": "321f2a9f2e95668918e75d70e46bc8b70feee471",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a real runtime-owned strict-replay CLI entrypoint.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Runtime-owned strict-replay CLI entrypoint",
-  "updated_at": "2026-09-16T22:27:38+00:00",
+  "updated_at": "2026-09-16T22:27:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1265-runtime-replay-entrypoint"
 }
 ---
@@ -100,3 +100,11 @@ unmerged implementation is not an input; preserve its review as the reason this 
 
 - 2026-09-16T22:27:32+00:00: Recorded command exit 0; command argv SHA-256
   25ed64071a1368ccee047775a536c3f41b1cb5b917c9c1699654066dbb35133a.
+
+- 2026-09-16T22:27:53+00:00: Signed checkpoint 321f2a9 adds fresh runtime-owned launch bundle:
+  ReplayLaunchAuthority::issue_launch retains SandboxBackend, SandboxLaunchInput, ResourceLease,
+  pinned supervisor/sidecar commands; take_launch is one-shot. CLI spawn_runtime_replay consumes
+  that opaque bundle, validates StrictReplayLaunchRecord via StrictReplayLaunchBridge, invokes
+  supervised spawn, and retains LoopbackSidecar for process lifetime. Focused offline tests pass:
+  asb-cli 71/71 and asb-runtime 40/40; fmt pass; product tree clean. Prior exit 101 diagnosed as
+  unused issue_launch under -D warnings and fixed with narrow dead_code allowance.
