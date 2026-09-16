@@ -1443,7 +1443,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md): Provision pinned Python transport fixture runtime | asb_ar1253_python_runtime | Provision pinned Python transport fixture runtime. | Provision and qualify an immutable Python fixture runtime through the approved isolated runner. |
+| P1 | [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md): Provision pinned Python transport fixture runtime | asb_ar1253_python_runtime | Provision pinned Python transport fixture runtime. | Request independent review of exact head edbbb8c, open PR, and run exact-head CI. |
 
 ### Open (4)
 

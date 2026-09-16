@@ -7,7 +7,7 @@
     "AR-1252"
   ],
   "id": "AR-1253",
-  "next_action": "Provision and qualify an immutable Python fixture runtime through the approved isolated runner.",
+  "next_action": "Request independent review of exact head edbbb8c, open PR, and run exact-head CI.",
   "observed_branch": "feature/ar-1253-pinned-python-transport-runtime",
   "observed_dirty": 0,
   "observed_head": "edbbb8cd822eb6258dc1ae1c18aabe831338be2a",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision pinned Python transport fixture runtime.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Provision pinned Python transport fixture runtime",
-  "updated_at": "2026-09-16T13:21:38+00:00",
+  "updated_at": "2026-09-16T13:21:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1253"
 }
 ---
@@ -46,3 +46,12 @@ Keep runtime images, caches, provenance, and all test activity under `/srv/data/
 
 - 2026-09-16T13:21:30+00:00: Recorded command exit 0; command argv SHA-256
   5b8c4fcdfcf12bee36d6fc6d1845f6648b4842ffda7ce0cdb34bfb28fb335255.
+
+- 2026-09-16T13:21:56+00:00: Signed+DCO commit edbbb8c pushed. Added closed python-runtime-v1.json
+  provenance contract binding Python 3.13.15 amd64 to immutable image
+  python@sha256:ed86c822...220c3e6e, network none, and site initialization disabled; validator
+  rejects unknown fields, mutable tags, digest drift, wrong version/architecture, and isolation
+  drift. Focused runtime tests 2/2 and full llm-double-spike suite 17/17 pass; source policy headers
+  and diff checks pass. Actual pinned Docker probe with read-only root, dropped caps, bounded
+  resources, private IPC, tmpfs and --network none reports Python 3.13.15. Prior combined probe exit
+  2 was shell quoting and was corrected with split commands.
