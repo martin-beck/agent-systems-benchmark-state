@@ -2,7 +2,7 @@
 {
   "branch": "test/mockagents-executable-qualification",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T08:50:03+00:00",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -12,15 +12,15 @@
   "observed_branch": "test/mockagents-executable-qualification",
   "observed_dirty": 0,
   "observed_head": "3f1de4106adf9ad6c34759638d70e9001709ab0a",
-  "owner": "",
+  "owner": "asb_ar0896_qualification",
   "plan": "../plans/AR-0896.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-16T08:19:48+00:00",
+  "updated_at": "2026-09-16T08:20:03+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -169,3 +169,5 @@ synthetic fixture for black-box executable evidence.
 - 2026-09-16T08:19:48+00:00: Recovered expired claim formerly owned by asb_ar0896_qualification.
   Lease expired at 08:05:29Z; no matching watch or worker process. Preserve rerun 34339927858/head
   a4e1a9de evidence and reassign terminal qualification audit.
+
+- 2026-09-16T08:20:03+00:00: Claimed by asb_ar0896_qualification.
