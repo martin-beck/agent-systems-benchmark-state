@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1238.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide the runtime-owned private-namespace supervisor for loopback replay.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Runtime-owned loopback supervisor",
-  "updated_at": "2026-09-16T07:49:15+00:00",
+  "updated_at": "2026-09-16T07:53:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1238"
 }
 ---
@@ -47,3 +47,7 @@ non-interference; focused/full locked, privacy, policy, native, signature/DCO, a
   user/network namespace, bring up loopback, mount relay, launch/reap sidecar+adapter, and attest
   readiness. Implementing only a plan would overclaim runtime isolation; no host networking,
   firewall, ambient ip, or privileged helper used.
+
+- 2026-09-16T07:53:08+00:00: User explicitly authorized actual rootless supervisor implementation;
+  proceed with fail-closed in-tree executable and launcher integration, no host networking or global
+  policy changes.
