@@ -8,7 +8,7 @@
     "AR-1232"
   ],
   "id": "AR-1248",
-  "next_action": "PR #197 updated to signed head 7d9c2ee; rerun exact-head Repository quality and Rust CI, then request independent review. Focused workflow transcript 3/3 and full locked offline workspace gate pass.",
+  "next_action": "CI is still running on 7d9c2ee; publication blocked by independent review. Replay-plan provenance repair is complete, but runtime-owned launch integration remains required: literal attestation/LoopbackSidecar path does not invoke StrictReplayLaunchBridge::spawn with SandboxBackend/ResourceLease or prove child egress, cancellation, cleanup, and no-fallback.",
   "observed_branch": "feature/ar-1248-strict-replay-cli-contract",
   "observed_dirty": 0,
   "observed_head": "7d9c2ee2e08b9d61cb03837236918575405fb5c2",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 135,
+  "task_revision": 136,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T20:10:12+00:00",
+  "updated_at": "2026-09-16T20:12:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -383,3 +383,10 @@ formal, privacy, signature, DCO, and exact-tree gates.
   merge requested.
 
 - 2026-09-16T20:10:12+00:00: Heartbeat by asb_ar1024_lifecycle_router.
+
+- 2026-09-16T20:12:20+00:00: Independent review blocker recorded: replay_plan creates
+  LoopbackSidecar with literal attestation and does not invoke StrictReplayLaunchBridge::spawn,
+  SandboxBackend, ResourceLease, or supervised child execution. Therefore end-to-end cassette
+  request/response, provider-egress denial, cancellation/cleanup, restart and no-fallback evidence
+  remain unproven. Do not merge; retain exact-head CI monitoring and route runtime integration to
+  the approved runtime capability successor if outside this CLI contract.

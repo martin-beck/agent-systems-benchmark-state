@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1248](tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | Define the strict-replay CLI consumer contract. | PR #197 updated to signed head 7d9c2ee; rerun exact-head Repository quality and Rust CI, then request independent review. Focused workflow transcript 3/3 and full locked offline workspace gate pass. | asb_ar1024_lifecycle_router |
+| P0 | [AR-1248](tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | Define the strict-replay CLI consumer contract. | CI is still running on 7d9c2ee; publication blocked by independent review. Replay-plan provenance repair is complete, but runtime-owned launch integration remains required: literal attestation/LoopbackSidecar path does not invoke StrictReplayLaunchBridge::spawn with SandboxBackend/ResourceLease or prove child egress, cancellation, cleanup, and no-fallback. | asb_ar1024_lifecycle_router |
 
 ## Open
 
