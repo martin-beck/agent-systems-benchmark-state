@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated loopback-only sandbox transport for strict replay services.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Approved loopback-only sandbox transport",
-  "updated_at": "2026-09-16T08:33:10+00:00",
+  "updated_at": "2026-09-16T08:34:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1233"
 }
 ---
@@ -142,3 +142,6 @@
   network changes.
 
 - 2026-09-16T08:33:10+00:00: Claimed by asb_ar1233_egress_negative_worker.
+
+- 2026-09-16T08:34:15+00:00: Recorded command exit 1; command argv SHA-256
+  8d5df17982e3723196e62027eb098681e5687d030a455ec8da89d7f2ed99e470.
