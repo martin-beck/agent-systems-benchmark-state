@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent protected-main admission from creating unsigned GitHub merge commits.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Enforce signed protected-main admission",
-  "updated_at": "2026-09-16T08:45:37+00:00",
+  "updated_at": "2026-09-16T08:46:07+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-admission"
 }
 ---
@@ -37,3 +37,6 @@ It must not weaken native, formal, privacy, signature, DCO, exact-tree, or post-
   protected-main merges require admission-control implementation.
 
 - 2026-09-16T08:45:37+00:00: Claimed by asb_ar1242_merge_admission.
+
+- 2026-09-16T08:46:07+00:00: Recorded command exit 0; command argv SHA-256
+  f8c171345af01d7c25f3eed9491639bef708a9401fadbe78c7c5814758dfbc37.
