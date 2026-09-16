@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1232",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T08:41:18+00:00",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "9f38e2e6db2d9650ae9419410c4e97aa792d4658",
-  "owner": "",
+  "owner": "asb_ar1232_worker",
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 430,
+  "task_revision": 431,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T06:41:16+00:00",
+  "updated_at": "2026-09-16T06:41:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -1182,3 +1182,5 @@
 
 - 2026-09-16T06:41:16+00:00: Continue AR-1232-only relay handoff descriptor and launch-input
   validation; preserve denied networking and stop at explicit child HTTP contract boundary.
+
+- 2026-09-16T06:41:18+00:00: Claimed by asb_ar1232_worker.
