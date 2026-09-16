@@ -8,7 +8,7 @@
     "AR-1232"
   ],
   "id": "AR-1248",
-  "next_action": "Run contract consistency, focused CLI replay-contract/schema tests, full locked workspace, policy/privacy/signature gates; then exact-head review and PR.",
+  "next_action": "Run full locked workspace, policy/privacy/signature gates at eac5232; push PR and request independent exact-head review.",
   "observed_branch": "feature/ar-1248-strict-replay-cli-contract",
   "observed_dirty": 0,
   "observed_head": "eac5232d94d61324ef03fa3a67b15ac9cccb57e2",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T10:44:08+00:00",
+  "updated_at": "2026-09-16T10:44:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -93,3 +93,7 @@ formal, privacy, signature, DCO, and exact-tree gates.
 
 - 2026-09-16T10:44:01+00:00: Recorded command exit 0; command argv SHA-256
   b0d4b6f53dc5fc9c746c248454e3bcceb4f4000c11ced3206a82309d83272144.
+
+- 2026-09-16T10:44:24+00:00: Independent review gap fixed in signed eac5232: explicit symlink,
+  unknown egress deserialization, and oversized artifact rejection tests. Focused replay-contract
+  tests remain 2/2 green; worktree clean.

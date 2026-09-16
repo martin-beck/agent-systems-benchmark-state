@@ -1429,7 +1429,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | asb_ar1232_lifecycle_router | Define the strict-replay CLI consumer contract. | Run contract consistency, focused CLI replay-contract/schema tests, full locked workspace, policy/privacy/signature gates; then exact-head review and PR. |
+| P0 | [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | asb_ar1232_lifecycle_router | Define the strict-replay CLI consumer contract. | Run full locked workspace, policy/privacy/signature gates at eac5232; push PR and request independent exact-head review. |
 
 ### Open (4)
 
