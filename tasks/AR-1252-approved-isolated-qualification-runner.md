@@ -10,16 +10,16 @@
   "next_action": "Integrate digest-verified runner with AR-1251; add descendant cleanup evidence and run full gates.",
   "observed_branch": "feature/ar-1252-approved-isolated-runner",
   "observed_dirty": 0,
-  "observed_head": "d72c419e05e7f7e6a4de80022fab2986e66fa0be",
+  "observed_head": "3f449a93df2ceb857ff2b2444ce3eea2f0286014",
   "owner": "asb_ar1252_isolated_runner",
   "plan": "../plans/AR-1252.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:26:03+00:00",
+  "updated_at": "2026-09-16T11:26:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
