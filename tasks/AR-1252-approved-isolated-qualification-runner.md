@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:10:36+00:00",
+  "updated_at": "2026-09-16T11:11:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -92,3 +92,6 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
   only validated non-symlink artifact bind under /srv/data/projects. Positive /bin/true run passes;
   symlink and shell vectors rejected. Initial exit-125 was invalid --pid private and is fixed.
   Remaining fixture-backed network denial/timeout/no-mount evidence and integration pending.
+
+- 2026-09-16T11:11:40+00:00: Recorded command exit 0; command argv SHA-256
+  3af53959683acc2074d8240d90bc92faf55fb1dc04ac4caa2f09e21460417b2d.
