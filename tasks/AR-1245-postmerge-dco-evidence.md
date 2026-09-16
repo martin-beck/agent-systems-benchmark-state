@@ -8,7 +8,7 @@
     "AR-1243"
   ],
   "id": "AR-1245",
-  "next_action": "Implement a narrowly scoped forward-only repair for the known PR-192 merge DCO failure and verify protected-main quality.",
+  "next_action": "Open/review commit 3e12d64; run protected-main CI and post-merge checks.",
   "observed_branch": "fix/ar-1245-postmerge-dco-evidence",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,10 +17,10 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
-  "summary": "Repair protected-main post-merge DCO evidence without rewriting published history.",
-  "task_revision": 3,
+  "summary": "Repair DCO admission for the immutable PR-192 GitHub merge while preserving strict future checks.",
+  "task_revision": 4,
   "title": "Post-merge DCO admission evidence",
-  "updated_at": "2026-09-16T09:37:31+00:00",
+  "updated_at": "2026-09-16T09:41:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1245"
 }
 ---
@@ -33,3 +33,9 @@ bundle, or TUI code.
   DCO evidence repair without history rewrite.
 
 - 2026-09-16T09:37:31+00:00: Claimed by asb_ar1237_launch_bridge_worker.
+
+- 2026-09-16T09:41:06+00:00: Implemented signed commit 3e12d64 in clean worktree. Exact hash
+  75248467... is accepted only after verifying two parents; unknown synthetic merge remains
+  rejected. cargo fmt, clippy, workspace tests (166 passed, 1 ignored) and targeted flaky test pass.
+  Full negative suite is blocked locally because the configured external-tools directory lacks
+  shellcheck.
