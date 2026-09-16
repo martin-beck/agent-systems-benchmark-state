@@ -10,16 +10,16 @@
   "next_action": "Promote after AR-1263 is repaired/released; preserve unsigned PR #205 merge and create a signed DCO-bearing forward-only recovery through handoffctl.",
   "observed_branch": "repair/ar-1264-pr205-merge-integrity",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "ebfa37023e56269b8299254b535be60f3cf1d186",
   "owner": "asb_ar1264_merge_integrity",
   "plan": "../plans/AR-1264.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover signed protected-main integration after PR #205.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Recover signed integration after PR #205",
-  "updated_at": "2026-09-16T21:45:06+00:00",
+  "updated_at": "2026-09-16T21:45:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1264-merge-integrity"
 }
 ---
