@@ -2,22 +2,22 @@
 {
   "branch": "feature/development-host-runner-qualification",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T14:21:33+00:00",
   "depends_on": [
     "AR-0830",
     "AR-0831"
   ],
   "id": "AR-0832",
   "next_action": "Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance.",
-  "owner": "",
+  "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-0832.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Qualify development host ASB runner operations",
-  "updated_at": "2026-09-16T12:21:31+00:00",
+  "updated_at": "2026-09-16T12:21:33+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-qualification"
 }
 ---
@@ -29,3 +29,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T12:21:31+00:00: AR-0830 and AR-0831 are complete; AR-0703 is optional future capacity
   and plan explicitly treats its absence as non-blocking. Promote runner qualification.
+
+- 2026-09-16T12:21:33+00:00: Claimed by asb_ar1024_lifecycle_router.

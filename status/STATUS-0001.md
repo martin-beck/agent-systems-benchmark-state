@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**281 ARs tracked** across 6 active status categories.
+**281 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 5 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 16 |
 | **Planned** | Defined work awaiting promotion or dependencies | 61 |
 | **Future** | Deferred roadmap work | 1 |
@@ -151,7 +151,7 @@ flowchart LR
         AR_0823["AR-0823 - Planned"]:::status_planned
         AR_0830["AR-0830 - Done"]:::status_done
         AR_0831["AR-0831 - Done"]:::status_done
-        AR_0832["AR-0832 - Open"]:::status_open
+        AR_0832["AR-0832 - In progress"]:::status_in_progress
         AR_0833["AR-0833 - Planned"]:::status_planned
         AR_0834["AR-0834 - Done"]:::status_done
         AR_0835["AR-0835 - Done"]:::status_done
@@ -1439,7 +1439,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (5)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | asb_ar1024_lifecycle_router | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. |
+
+### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1447,7 +1453,6 @@ flowchart LR
 | P0 | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md): Implement &#96;asb tui&#96; lifecycle routing | Unclaimed | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. |
 | P0 | [AR-1042](../tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Unclaimed | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. |
 | P0 | [AR-1044](../tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Unclaimed | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. |
-| P1 | [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Unclaimed | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. |
 
 ### Blocked (16)
 
@@ -1591,4 +1596,3 @@ flowchart LR
 | P0 | [AR-1064](../tasks/AR-1064-tmux-hosted-startup-readiness-recovery.md): Recover hosted tmux startup readiness | Unclaimed | Recover authenticated tmux startup observation on the hosted trusted runner without weakening authority or cleanup. | PR #26 is exact-head green but protected merge is blocked because GitHub reports the required context as pending; resolve policy/check-run propagation without admin bypass, then require post-merge Trusted main. |
 | P0 | [AR-1065](../tasks/AR-1065-asb-tui-branch-policy-context.md): Normalize asb-tui branch required-status policy | Unclaimed | Normalize asb-tui main branch protection so successful GitHub Actions checks can merge. | A repository maintainer must remove the stale legacy required-status context from asb-tui main while retaining the app-scoped GitHub Actions check, then re-evaluate PR #26. |
 | P0 | [AR-1100](../tasks/AR-1100.md): Configuration defaults | Unclaimed | Persist configuration defaults. | Post-merge verification complete at protected ASB main; retain merged evidence and monitor downstream wizard dependencies. |
-| P0 | [AR-1110](../tasks/AR-1110.md): Provider and model registry | Unclaimed | Manage providers and models. | Post-merge verification complete: PR #180 merged at 600d5a28; exact-main tree matches feature tree, focused asb-config tests and full offline workspace tests passed, worktree clean. Release AR-1110 as done. |

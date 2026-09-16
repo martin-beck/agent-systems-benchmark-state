@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0832](tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. | asb_ar1024_lifecycle_router |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -11,7 +17,6 @@ Never edit this file directly.
 | P0 | [AR-1024](tasks/AR-1024-asb-tui-lifecycle-router.md): Implement `asb tui` lifecycle routing | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. | - |
 | P0 | [AR-1042](tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. | - |
 | P0 | [AR-1044](tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. | - |
-| P1 | [AR-0832](tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. | - |
 
 ## Blocked
 
