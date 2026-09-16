@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Wire BreakGlassParams into v1.7 ControlCall/endpoint/CLI, regenerate schemas, and add admin-generation-audit tests.",
+  "next_action": "Wire BreakGlass through response/endpoint/CLI and regenerate v1.7 schemas; add admin dispatch tests.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "5134c2be0c9b2b1b94d8f0bd9e998930de4e5b22",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 177,
+  "task_revision": 178,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T18:31:05+00:00",
+  "updated_at": "2026-09-16T18:31:16+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -474,3 +474,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T18:30:57+00:00: Recorded command exit 0; command argv SHA-256
   032643678cd7f2ad8d9b0b16414f21cb6419077e784b3c1bb3b213ced81c527e.
+
+- 2026-09-16T18:31:16+00:00: Signed+DCO 5134c2b wires BreakGlass ControlCall minimum version 1.7,
+  advertises v1.7, and maps it to administrator-only BreakGlass permission. cargo check -p
+  asb-control passes; full endpoint/schema wiring remains.
