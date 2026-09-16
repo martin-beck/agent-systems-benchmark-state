@@ -1462,7 +1462,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0813](../tasks/AR-0813-remote-control-transport.md): Add secure remote control transport | asb_ar0813_remote_transport | Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client. | Fix RemoteListener::accept permit ordering: accept TcpStream before acquiring active connection permit (or otherwise ensure blocked accept cannot consume capacity/drain); add regression test for idle listener drain and concurrent accept capacity. Then rerun full locked workspace gates, independent review, and exact-head CI. |
+| P1 | [AR-0813](../tasks/AR-0813-remote-control-transport.md): Add secure remote control transport | asb_ar0813_remote_transport | Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client. | Address remaining strict plan gaps before publication: add/justify TCP keepalive and close the drain-vs-admit atomic race (drain can begin between post-accept check and permit acquisition), with regression tests. Then rerun full locked workspace gates and request publication. |
 
 ### Open (4)
 

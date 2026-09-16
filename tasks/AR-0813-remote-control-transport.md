@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0813",
-  "next_action": "Fix RemoteListener::accept permit ordering: accept TcpStream before acquiring active connection permit (or otherwise ensure blocked accept cannot consume capacity/drain); add regression test for idle listener drain and concurrent accept capacity. Then rerun full locked workspace gates, independent review, and exact-head CI.",
+  "next_action": "Address remaining strict plan gaps before publication: add/justify TCP keepalive and close the drain-vs-admit atomic race (drain can begin between post-accept check and permit acquisition), with regression tests. Then rerun full locked workspace gates and request publication.",
   "observed_branch": "feature/remote-control-transport",
   "observed_dirty": 0,
   "observed_head": "568257461ec6da9ea5b867b836b4c991b4fa66f2",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 199,
+  "task_revision": 200,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T15:23:34+00:00",
+  "updated_at": "2026-09-16T15:23:45+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -598,3 +598,16 @@ Implementation has not started. Read the linked plan before claiming.
   548fd32ebd9d34514e4161699145d55e6cb9123ec2d14cafe1ac6e86bddce30e.
 
 - 2026-09-16T15:23:34+00:00: Heartbeat by asb_ar0813_remote_transport.
+
+- 2026-09-16T15:23:45+00:00: Independent review of corrected exact signed/DCO head
+  568257461ec6da9ea5b867b836b4c991b4fa66f2 passed clean tree/diff-check and complete asb-control
+  suite: 51 unit tests, 22 control integration, 7 endpoint, 4 schema, 2 doc tests; durable full
+  workspace and clippy evidence reported green. The permit-ordering fix is correct for blocked
+  accept: permit is acquired only after TcpListener::accept and drain is rechecked; idle-listener
+  drain regression passes. Transport-level fault abstraction and bounded claims are acceptable for
+  packet/drop/reorder/partition evidence when explicitly not represented as kernel/netem results.
+  Publication remains blocked by two concrete strictness issues: no TCP keepalive configuration
+  despite AR plan requiring keepalive, and a residual TOCTOU race between the second drain check
+  (transport.rs:185) and permit acquisition (188): begin_drain can set draining in that window and a
+  newly accepted session can still be admitted. Add atomic admission/drain coordination or a
+  regression test proving the intended semantics. No PR/publication approval.
