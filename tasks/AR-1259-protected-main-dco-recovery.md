@@ -7,7 +7,7 @@
     "AR-1242"
   ],
   "id": "AR-1259",
-  "next_action": "Protected merge 8b81be4 lacks SSH/DCO identity; coordinate forward signed recovery or repository admission repair, then rerun exact-main policy before release.",
+  "next_action": "Monitor PR204 exact head 7edda7d checks; once green invoke merge_pr.py with base 8b81be4 and PR204 ref, then verify exact-main gates.",
   "observed_branch": "repair/pr202-protected-main-dco",
   "observed_dirty": 0,
   "observed_head": "8b81be45b1cf3e2f42540fae8c623074bbacaf88",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover a signed protected-main DCO boundary after the unsigned PR202 web merge.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Protected-main DCO recovery for PR202",
-  "updated_at": "2026-09-16T17:05:56+00:00",
+  "updated_at": "2026-09-16T17:06:14+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-dco-1259"
 }
 ---
@@ -98,3 +98,8 @@ Create a signed, forward-only protected-main recovery for the unsigned PR202 mer
   bdccf48273982a69c9179b4022caa6379cbfc302403bdfacfba582a328fac9c2.
 
 - 2026-09-16T17:05:56+00:00: Heartbeat by asb_ar1259_signed_recovery.
+
+- 2026-09-16T17:06:14+00:00: Failure classification: merge_pr.py exit 1 was deterministic remote
+  PR203 ref mismatch because merged PR203 pull ref remained frozen at b7d21e0 after branch force
+  update; not repository-settings failure. Created PR204 with base 8b81be4 and head 7edda7d signed
+  topic tip (unchanged main tree); all required checks are pending/running. Heartbeat renewed.
