@@ -2,7 +2,7 @@
 {
   "branch": "fix/protected-main-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T09:22:35+00:00",
+  "claim_expires": "2026-09-16T09:25:36+00:00",
   "depends_on": [
     "AR-0003",
     "AR-0897"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent protected-main admission from creating unsigned GitHub merge commits.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Enforce signed protected-main admission",
-  "updated_at": "2026-09-16T08:55:20+00:00",
+  "updated_at": "2026-09-16T08:55:36+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-admission"
 }
 ---
@@ -79,3 +79,5 @@ It must not weaken native, formal, privacy, signature, DCO, exact-tree, or post-
 
 - 2026-09-16T08:55:10+00:00: Recorded command exit 0; command argv SHA-256
   298ce8c511b182778d9435aa4140e68366bb336f96907714d1520b4b146e780b.
+
+- 2026-09-16T08:55:36+00:00: Heartbeat by asb_ar1242_merge_admission.
