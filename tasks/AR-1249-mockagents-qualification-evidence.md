@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1249-mockagents-qualification-evidence",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T20:44:51+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1249-mockagents-qualification-evidence",
   "observed_dirty": 1,
   "observed_head": "128ecddbfdb7fcfff6e257adf3237b5866aca481",
-  "owner": "asb_ar1249_mockagents_qualification",
+  "owner": "",
   "plan": "../plans/AR-1249.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Complete missing evidence for the pinned MockAgents executable qualification.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Complete MockAgents executable qualification evidence",
-  "updated_at": "2026-09-16T18:44:51+00:00",
+  "updated_at": "2026-09-16T18:45:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1249"
 }
 ---
@@ -111,3 +111,9 @@ network denial, privacy, signature, DCO, and exact-tree gates.
   2cf63fb6749ea671f2feacca745517354da1a4059e0f5a9e732adb1be0f1d4f1.
 
 - 2026-09-16T18:44:51+00:00: Heartbeat by asb_ar1249_mockagents_qualification.
+
+- 2026-09-16T18:45:01+00:00: Sanitized qualification diagnosis: artifact archive and executable
+  identity passed; tool-call and rate-limit cases passed. Truncated-stream hostile case failed
+  because configured one-chunk truncation still produced a terminal marker (HTTP 200 SSE, bounded
+  600-byte response). Candidate behavior blocks qualification; investigate supported fault surface
+  or create follow-on repair. No qualification claim.

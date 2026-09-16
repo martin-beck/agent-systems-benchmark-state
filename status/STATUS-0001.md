@@ -11,9 +11,9 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 4 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 18 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 19 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 194 |
@@ -342,7 +342,7 @@ flowchart LR
         AR_1246["AR-1246 - Done"]:::status_done
         AR_1247["AR-1247 - Done"]:::status_done
         AR_1248["AR-1248 - Blocked"]:::status_blocked
-        AR_1249["AR-1249 - In progress"]:::status_in_progress
+        AR_1249["AR-1249 - Blocked"]:::status_blocked
         AR_1250["AR-1250 - In progress"]:::status_in_progress
         AR_1251["AR-1251 - Blocked"]:::status_blocked
         AR_1252["AR-1252 - Done"]:::status_done
@@ -1461,12 +1461,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | asb_ar0814_enrollment_authz | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Implement backend-owned BreakGlass admin authorization and v1.7 schemas/endpoint tests; preserve legacy schemas. |
-| P1 | [AR-1249](../tasks/AR-1249-mockagents-qualification-evidence.md): Complete MockAgents executable qualification evidence | asb_ar1249_mockagents_qualification | Complete missing evidence for the pinned MockAgents executable qualification. | Fix qualification fixture: MockAgents rate limiter returns 200 then 429; replace unsupported /v1/fault route assumptions, then add deterministic hostile lifecycle cases. |
 | P1 | [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md): Extend MockAgents qualification harness | asb_ar1250_mockagents_harness | Extend the pinned MockAgents executable qualification harness. | Add actual cancellation/backpressure and outbound-denial probes; rerun arm64 repeat and full gates. |
 
 ### Open (4)
@@ -1478,7 +1477,7 @@ flowchart LR
 | P0 | [AR-1042](../tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Unclaimed | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. |
 | P0 | [AR-1044](../tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Unclaimed | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. |
 
-### Blocked (18)
+### Blocked (19)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1496,6 +1495,7 @@ flowchart LR
 | P1 | [AR-0863](../tasks/AR-0863-workbuddy-provenance.md): Pin WorkBuddy source, package, and license provenance | Unclaimed | Pin WorkBuddy source, package, and license provenance. | Pin official source, package, dependency closure, license, executable digest, protocol mode, and supported platform before any adapter claim. |
 | P1 | [AR-0890](../tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Unclaimed | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. |
 | P1 | [AR-0896](../tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Unclaimed | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Remain blocked until the complete pinned MockAgents hostile qualification is implemented and rerun: tool/tool-result, cancellation/backpressure, outbound-denial, repeated-clean-state, and executable arm64 QEMU cases with deterministic evidence. Do not select MockAgents or advance AR-0890. |
+| P1 | [AR-1249](../tasks/AR-1249-mockagents-qualification-evidence.md): Complete MockAgents executable qualification evidence | Unclaimed | Complete missing evidence for the pinned MockAgents executable qualification. | Fix qualification fixture: MockAgents rate limiter returns 200 then 429; replace unsupported /v1/fault route assumptions, then add deterministic hostile lifecycle cases. |
 | P1 | [AR-1251](../tasks/AR-1251-mockagents-transport-sandbox.md): Add MockAgents transport sandbox fixture | Unclaimed | Add a bounded transport and sandbox fixture for MockAgents qualification. | Design and implement bounded transport/sandbox fixture for MockAgents tool-result, cancellation/backpressure, network-denial, cleanup, and arm64 evidence. |
 | P1 | [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md): Qualify MockAgents through pinned Python transport | Unclaimed | Qualify MockAgents through the pinned Python sandbox. | Implement real executable transport qualification before publication: invoke the pinned MockAgents artifact through run_isolated.py on amd64 and QEMU arm64; bind exact lock source/tag/commit/license/checksums and platform digests; add malformed/oversized body negatives, ordered tool-result/backpressure/cancellation terminal tests, descendant cleanup proof, actual outbound-denial probe inside network-none, and repeat-clean-state evidence. |
 | P1 | [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md): Execute bundled MockAgents transport in isolation | Unclaimed | Execute bundled MockAgents transport in isolation. | Implement bundled in-container MockAgents transport and digest-pinned arm64 QEMU evidence. |
