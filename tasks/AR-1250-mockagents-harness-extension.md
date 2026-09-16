@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend the pinned MockAgents executable qualification harness.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Extend MockAgents qualification harness",
-  "updated_at": "2026-09-16T10:56:14+00:00",
+  "updated_at": "2026-09-16T10:56:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1250"
 }
 ---
@@ -99,3 +99,6 @@ privacy, signature, DCO, and exact-tree gates; do not claim support from host in
   cases are not yet implemented.
 
 - 2026-09-16T10:55:18+00:00: Heartbeat by asb_ar1250_mockagents_harness.
+
+- 2026-09-16T10:56:17+00:00: Recorded command exit 0; command argv SHA-256
+  09d62d6414301c5034477cceaeb815e282b5f9c3a54cfa4019bfdcb77bfb8567.
