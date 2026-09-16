@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1232",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T05:07:45+00:00",
+  "claim_expires": "2026-09-16T05:09:44+00:00",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 98,
+  "task_revision": 99,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T03:08:54+00:00",
+  "updated_at": "2026-09-16T03:09:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -277,3 +277,5 @@
   for runtime-attested NetworkPolicy::Deny. Runtime exposes validated program/arguments for command
   binding. Signed/DCO commit a2df254 pushed. Focused strict_replay 10/10, sandbox unit 18/18,
   sandbox_boundary 11/11, and clippy warnings-denied for asb-agents/asb-runtime passed.
+
+- 2026-09-16T03:09:44+00:00: Heartbeat by asb_ar1232_sandbox_supervision.
