@@ -2,7 +2,7 @@
 {
   "branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T05:35:16+00:00",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -15,15 +15,15 @@
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "b0df3fbc5d9f7dd13969903d250849efa56e3981",
-  "owner": "",
+  "owner": "asb_ar0909_repair",
   "plan": "../plans/AR-0909.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 381,
+  "task_revision": 382,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-15T19:08:56+00:00",
+  "updated_at": "2026-09-16T03:35:16+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1350,3 +1350,5 @@ classified.
 - 2026-09-15T19:08:56+00:00: Recovered expired claim formerly owned by asb_ar0909_lifecycle_repair.
   Recover expired claim so coordinator validation can proceed; preserve PR b0df3fb evidence and
   reopen for ownerless follow-up.
+
+- 2026-09-16T03:35:16+00:00: Claimed by asb_ar0909_repair.
