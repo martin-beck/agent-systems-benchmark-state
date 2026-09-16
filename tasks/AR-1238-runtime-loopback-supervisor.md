@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1238-runtime-loopback-supervisor",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T09:46:43+00:00",
   "depends_on": [
     "AR-1100",
     "AR-1231"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1238-runtime-loopback-supervisor",
   "observed_dirty": 0,
   "observed_head": "11d37da2ec59fb5e2afe26c35d9c1bab1787f034",
-  "owner": "",
+  "owner": "asb_ar1238_supervisor_worker",
   "plan": "../plans/AR-1238.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide the runtime-owned private-namespace supervisor for loopback replay.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime-owned loopback supervisor",
-  "updated_at": "2026-09-16T07:46:08+00:00",
+  "updated_at": "2026-09-16T07:46:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1238"
 }
 ---
@@ -38,3 +38,5 @@ non-interference; focused/full locked, privacy, policy, native, signature/DCO, a
 
 - 2026-09-16T07:46:08+00:00: Dependencies AR-1100 and AR-1231 verified complete; promote
   runtime-owned loopback supervisor prerequisite.
+
+- 2026-09-16T07:46:43+00:00: Claimed by asb_ar1238_supervisor_worker.
