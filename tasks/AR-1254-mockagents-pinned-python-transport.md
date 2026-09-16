@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1254-mockagents-pinned-python-transport",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T20:52:34+00:00",
   "depends_on": [
     "AR-1252",
     "AR-1253"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1254-mockagents-pinned-python-transport",
   "observed_dirty": 0,
   "observed_head": "154a34549784bd3bba0a5fa47d046a237897980a",
-  "owner": "",
+  "owner": "asb_ar1254_dependency_audit_20260916",
   "plan": "../plans/AR-1254.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify MockAgents through the pinned Python sandbox.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Qualify MockAgents through pinned Python transport",
-  "updated_at": "2026-09-16T19:52:26+00:00",
+  "updated_at": "2026-09-16T19:52:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1254"
 }
 ---
@@ -165,3 +165,5 @@ Keep fixtures, runtimes, caches, and evidence under `/srv/data/projects`.
   AR-1254 remains blocked because real in-container transport and outbound-denial evidence are
   absent, and arm64/QEMU evidence requires AR-1255 plus the blocked AR-1258 infrastructure. No
   implementation claim until those prerequisites are satisfied.
+
+- 2026-09-16T19:52:34+00:00: Claimed by asb_ar1254_dependency_audit_20260916.
