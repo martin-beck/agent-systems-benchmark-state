@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Wire runner-owned authenticated admin context and generation/audit into BreakGlass dispatch; then rerun full locked workspace gates.",
+  "next_action": "Add positive authenticated-admin BreakGlass recovery/audit dispatch test; then rerun full locked workspace gates.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "3e0f22895af98c3cd7265d9fea636aeffe8c0845",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 233,
+  "task_revision": 234,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:14:09+00:00",
+  "updated_at": "2026-09-16T19:14:24+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -607,3 +607,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T19:14:02+00:00: Recorded command exit 0; command argv SHA-256
   0d8cebbc69f8d169e050f730e3c611fe3ed17d38544f31b2e4d19c2c91dd2c25.
+
+- 2026-09-16T19:14:24+00:00: Signed+DCO 3e0f228 adds runner-owned AuthorizationContext hook:
+  BreakGlass now fails closed without context and binds principal, request digest, and enrollment
+  generation before authorization/dispatch; caller-supplied role cannot substitute. Endpoint suite
+  passes 8/8. Positive recovery/audit dispatch test remains next.
