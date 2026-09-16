@@ -8,7 +8,7 @@
     "AR-0889"
   ],
   "id": "AR-1250",
-  "next_action": "Add tool-result, cancellation/backpressure, and outbound-denial executable cases; then rerun arm64 repeat and full gates.",
+  "next_action": "Implement tool-result, cancellation/backpressure, outbound-denial cases; rerun arm64 repeat and full gates.",
   "observed_branch": "feature/ar-1250-mockagents-harness-extension",
   "observed_dirty": 0,
   "observed_head": "8a61b4672843c20be1b2d4fa81955abfa2bb7570",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend the pinned MockAgents executable qualification harness.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Extend MockAgents qualification harness",
-  "updated_at": "2026-09-16T10:59:19+00:00",
+  "updated_at": "2026-09-16T10:59:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1250"
 }
 ---
@@ -122,3 +122,9 @@ privacy, signature, DCO, and exact-tree gates; do not claim support from host in
   604fccf2843cbd58e161cf920f5abd21d120a769930689d833d54445a7a94e1d.
 
 - 2026-09-16T10:59:19+00:00: Heartbeat by asb_ar1250_mockagents_harness.
+
+- 2026-09-16T10:59:34+00:00: Concrete progress after prior checkpoint: added real malformed request
+  rejection (4xx) and child cleanup assertion; amd64 executable qualification now passes 8 cases
+  including tool_call, malformed_request, cleanup plus repeat stability. Signed+DCO commit 8a61b46
+  pushed. Tool-result, cancellation/backpressure, outbound-denial and arm64 repeat with new cases
+  remain outstanding.
