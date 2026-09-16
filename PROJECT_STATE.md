@@ -32,7 +32,7 @@ Generated from local Git and GitHub. Do not edit.
 | 35049581592 | `077c10feadd9` | pull_request | Repository quality | queued:- |
 | 35049581587 | `077c10feadd9` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35049581585 | `077c10feadd9` | pull_request | Formal assurance | queued:- |
-| 35049581583 | `077c10feadd9` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35049581583 | `077c10feadd9` | pull_request | Hosted portability and native qualification | completed:success |
 | 35049581569 | `077c10feadd9` | pull_request | Emulated aarch64 portability | queued:- |
 | 35049581566 | `077c10feadd9` | pull_request | Fault assurance | in_progress:- |
 | 35049581565 | `077c10feadd9` | pull_request | Rust verification | in_progress:- |
