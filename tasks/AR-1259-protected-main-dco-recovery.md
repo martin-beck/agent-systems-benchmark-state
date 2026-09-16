@@ -3,7 +3,7 @@
   "branch": "repair/pr202-protected-main-dco",
   "checkpoint_commit": "14b604fec262575496f8838db1456679b1b14bbf",
   "claim_expires": "",
-  "depends_on": ["AR-0813"],
+  "depends_on": ["AR-1242"],
   "id": "AR-1259",
   "next_action": "Promote and claim; create signed protected-main recovery preserving PR202 tree and parents, then run exact-main policy and all post-merge gates.",
   "observed_branch": "repair/pr202-protected-main-dco",
