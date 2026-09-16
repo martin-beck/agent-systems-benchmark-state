@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Create successor AR for certificate issuance/chain and trusted route authority; retain route-preserving pairing API and rerun full gates.",
+  "next_action": "Coordinator must create successor AR for certificate issuance/chain and trusted route authority; then request independent re-review of clean head.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "29cfa19323a0ceb124438854d73f664ae2b86dcc",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 290,
+  "task_revision": 291,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:47:12+00:00",
+  "updated_at": "2026-09-16T19:47:44+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -805,3 +805,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T19:47:12+00:00: Recorded command exit 0; command argv SHA-256
   813f24d88e75640f649e97e91af1e4aad21661d778c627a9276dd64d4fac4b6e.
+
+- 2026-09-16T19:47:44+00:00: Full locked gates at exact clean head 29cfa19 pass: fmt check,
+  workspace tests (all applicable suites), workspace clippy -D warnings, and workspace rustdoc. No
+  gate failures. The state handoffctl exposes no create-successor operation; certificate
+  issuance/chain and trusted route authority are explicitly recorded for coordinator-created
+  successor rather than fabricated metadata. AR-0814 remains in_progress pending independent
+  re-review.
