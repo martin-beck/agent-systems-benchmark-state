@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Route the Rust verification workflow through durable protected-main DCO admission on generated merge commits.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Protected-main DCO workflow binding",
-  "updated_at": "2026-09-16T10:16:21+00:00",
+  "updated_at": "2026-09-16T10:19:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1247"
 }
 ---
@@ -37,3 +37,6 @@ GitHub-generated merge. Do not modify runtime, bundle, or TUI behavior.
 
 - 2026-09-16T10:16:21+00:00: Recorded command exit 0; command argv SHA-256
   7e5cd8d24c4fb20763298390f8ecf25c6ceac188f2621f49f656dd652073396a.
+
+- 2026-09-16T10:19:43+00:00: Recorded command exit 0; command argv SHA-256
+  c33e476288d598be22be3bcb65a501181711544613ef906d4e0da44c7f951d86.
