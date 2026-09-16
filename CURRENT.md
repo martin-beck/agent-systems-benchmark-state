@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1254](tasks/AR-1254-mockagents-pinned-python-transport.md): Qualify MockAgents through pinned Python transport | Qualify MockAgents through the pinned Python sandbox. | Implement real executable transport qualification before publication: invoke the pinned MockAgents artifact through run_isolated.py on amd64 and QEMU arm64; bind exact lock source/tag/commit/license/checksums and platform digests; add malformed/oversized body negatives, ordered tool-result/backpressure/cancellation terminal tests, descendant cleanup proof, actual outbound-denial probe inside network-none, and repeat-clean-state evidence. | asb_ar1254_dependency_audit_20260916 |
+| P1 | [AR-1254](tasks/AR-1254-mockagents-pinned-python-transport.md): Qualify MockAgents through pinned Python transport | Qualify MockAgents through the pinned Python sandbox. | Blocked: wait for AR-1258 to provide an approved digest-pinned arm64 QEMU runner with fix-binary support and for AR-1255 to provide bundled in-container transport/egress evidence. Then resume AR-1254 to qualify real executable protocol, malformed/oversized inputs, cancellation/descendant cleanup, network-none denial, closed provenance, and repeat-clean-state on amd64 and arm64. Do not promote or claim AR-1255 until AR-1254 completes. | asb_ar1254_dependency_audit_20260916 |
 
 ## Open
 

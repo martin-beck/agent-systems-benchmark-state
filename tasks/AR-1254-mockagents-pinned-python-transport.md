@@ -8,7 +8,7 @@
     "AR-1253"
   ],
   "id": "AR-1254",
-  "next_action": "Implement real executable transport qualification before publication: invoke the pinned MockAgents artifact through run_isolated.py on amd64 and QEMU arm64; bind exact lock source/tag/commit/license/checksums and platform digests; add malformed/oversized body negatives, ordered tool-result/backpressure/cancellation terminal tests, descendant cleanup proof, actual outbound-denial probe inside network-none, and repeat-clean-state evidence.",
+  "next_action": "Blocked: wait for AR-1258 to provide an approved digest-pinned arm64 QEMU runner with fix-binary support and for AR-1255 to provide bundled in-container transport/egress evidence. Then resume AR-1254 to qualify real executable protocol, malformed/oversized inputs, cancellation/descendant cleanup, network-none denial, closed provenance, and repeat-clean-state on amd64 and arm64. Do not promote or claim AR-1255 until AR-1254 completes.",
   "observed_branch": "feature/ar-1254-mockagents-pinned-python-transport",
   "observed_dirty": 0,
   "observed_head": "154a34549784bd3bba0a5fa47d046a237897980a",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify MockAgents through the pinned Python sandbox.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Qualify MockAgents through pinned Python transport",
-  "updated_at": "2026-09-16T19:54:38+00:00",
+  "updated_at": "2026-09-16T19:55:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1254"
 }
 ---
@@ -187,3 +187,7 @@ Keep fixtures, runtimes, caches, and evidence under `/srv/data/projects`.
   dependency blocker and successor path; no implementation work is authorized.
 
 - 2026-09-16T19:54:38+00:00: Claimed by asb_ar1254_dependency_audit_20260916.
+
+- 2026-09-16T19:55:04+00:00: Corrected next_action after dependency audit; AR-1252 is amd64-only and
+  cannot satisfy arm64/QEMU or bundled in-container transport requirements. AR-1258 remains the
+  external infrastructure blocker; no product mutation.
