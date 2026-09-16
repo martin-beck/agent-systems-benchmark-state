@@ -10,7 +10,7 @@
     "AR-0875"
   ],
   "id": "AR-0908",
-  "next_action": "Hold PR #125 unchanged; shared formal asset and native-runner pin owners must repair their gates before a fresh exact-head run.",
+  "next_action": "Post-merge verification is complete; release AR-0908 done against the merged PR #173 implementation.",
   "observed_branch": "fix/control-state-lock-test-isolation",
   "observed_dirty": 0,
   "observed_head": "8b0f9fd07d5dfbedd83376c1380ab225dfba1213",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Harden asb-cli control-state lock test isolation and deterministic reopen coverage.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Harden control-state lock test isolation",
-  "updated_at": "2026-09-16T06:06:49+00:00",
+  "updated_at": "2026-09-16T06:07:32+00:00",
   "worktree_key": "agent-systems-benchmark-control-state-lock-test-isolation"
 }
 ---
@@ -226,3 +226,9 @@ non-deterministic isolation signal rather than claiming a production lock defect
 
 - 2026-09-16T06:06:08+00:00: Recorded command exit 1; command argv SHA-256
   b7c438686581cf292b6cd41497ceabb3af42dfed57e04dfd6cc89efed8e2d15b.
+
+- 2026-09-16T06:07:32+00:00: Independent reconciliation: PR #125 exact head 8b0f9fd is
+  stale/conflicting and must not be merged. Its control scratch-isolation changes are superseded by
+  PR #173 exact head 81a81cf, merged as 2117a40; current protected main contains the implementation.
+  Focused cargo test --locked -p asb-cli control --lib -- --nocapture passed 14/14 on the declared
+  clean worktree. No asb-tui changes.
