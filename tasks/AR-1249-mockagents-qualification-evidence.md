@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1249-mockagents-qualification-evidence",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T19:06:09+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1249-mockagents-qualification-evidence",
   "observed_dirty": 0,
   "observed_head": "128ecddbfdb7fcfff6e257adf3237b5866aca481",
-  "owner": "asb_ar1249_mockagents_qualification",
+  "owner": "",
   "plan": "../plans/AR-1249.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Complete missing evidence for the pinned MockAgents executable qualification.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Complete MockAgents executable qualification evidence",
-  "updated_at": "2026-09-16T18:46:11+00:00",
+  "updated_at": "2026-09-16T18:46:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1249"
 }
 ---
@@ -141,3 +141,7 @@ network denial, privacy, signature, DCO, and exact-tree gates.
 
 - 2026-09-16T18:46:11+00:00: Updated next action to the confirmed candidate behavior blocker; branch
   remains clean and no qualification claim.
+
+- 2026-09-16T18:46:14+00:00: Released ownerless with confirmed bounded evidence: tool-call and
+  rate-limit cases pass; configured truncated-stream case emits terminal [DONE], blocking strict
+  qualification. Clean branch; no claim.
