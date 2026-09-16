@@ -3,7 +3,7 @@
   "branch": "feature/ar-1261-runtime-to-cli-replay-entrypoint",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1237", "AR-1238", "AR-1239", "AR-1260"],
+  "depends_on": ["AR-1237", "AR-1238", "AR-1239"],
   "id": "AR-1261",
   "next_action": "Promote after AR-1260 is resolved or superseded; implement the typed runtime-to-CLI handoff entrypoint and prove supervised replay lifecycle.",
   "observed_branch": "feature/ar-1261-runtime-to-cli-replay-entrypoint",
