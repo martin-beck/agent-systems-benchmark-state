@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1238-runtime-loopback-supervisor",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T09:46:43+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1100",
     "AR-1231"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1238-runtime-loopback-supervisor",
   "observed_dirty": 0,
   "observed_head": "6fba189fd839a954d2e0724f696114b607242cb0",
-  "owner": "asb_ar1238_supervisor_worker",
+  "owner": "",
   "plan": "../plans/AR-1238.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide the runtime-owned private-namespace supervisor for loopback replay.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Runtime-owned loopback supervisor",
-  "updated_at": "2026-09-16T07:49:06+00:00",
+  "updated_at": "2026-09-16T07:49:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1238"
 }
 ---
@@ -40,3 +40,10 @@ non-interference; focused/full locked, privacy, policy, native, signature/DCO, a
   runtime-owned loopback supervisor prerequisite.
 
 - 2026-09-16T07:46:43+00:00: Claimed by asb_ar1238_supervisor_worker.
+
+- 2026-09-16T07:49:15+00:00: Implemented validated private supervisor handoff contract in signed
+  commit 6fba189; focused and full locked workspace tests, fmt and clippy pass. Blocked: current
+  SandboxBackend has no in-tree supervisor executable/process+FD lifecycle seam to create private
+  user/network namespace, bring up loopback, mount relay, launch/reap sidecar+adapter, and attest
+  readiness. Implementing only a plan would overclaim runtime isolation; no host networking,
+  firewall, ambient ip, or privileged helper used.
