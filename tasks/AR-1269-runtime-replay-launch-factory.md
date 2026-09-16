@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1269-runtime-replay-launch-factory",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T00:57:53+00:00",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1269-runtime-replay-launch-factory",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1269.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Create runtime-owned launch bundles for supervised strict replay.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime-owned replay launch-bundle factory",
-  "updated_at": "2026-09-16T22:57:30+00:00",
+  "updated_at": "2026-09-16T22:57:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1269-runtime-launch-factory"
 }
 ---
@@ -32,3 +32,5 @@ AR-1268's blocked transport evidence and never move launch authority into the CL
 
 - 2026-09-16T22:57:30+00:00: Dependencies are done; AR-1268 identifies the missing runtime-owned
   launch-bundle factory required for safe supervised replay.
+
+- 2026-09-16T22:57:53+00:00: Claimed by asb_ar1024_lifecycle_router.
