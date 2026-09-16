@@ -1,0 +1,28 @@
+---
+{
+  "branch": "repair/ar-1264-pr205-merge-integrity",
+  "checkpoint_commit": "",
+  "claim_expires": "",
+  "depends_on": ["AR-0897"],
+  "id": "AR-1264",
+  "next_action": "Promote after AR-1263 is repaired/released; preserve unsigned PR #205 merge and create a signed DCO-bearing forward-only recovery through handoffctl.",
+  "observed_branch": "repair/ar-1264-pr205-merge-integrity",
+  "observed_dirty": 0,
+  "observed_head": "",
+  "owner": "",
+  "plan": "../plans/AR-1264.md",
+  "priority": "P0",
+  "schema_version": 1,
+  "status": "planned",
+  "summary": "Recover signed protected-main integration after PR #205.",
+  "task_revision": 1,
+  "title": "Recover signed integration after PR #205",
+  "updated_at": "2026-09-16T21:45:00+00:00",
+  "worktree_key": "agent-systems-benchmark-ar-1264-merge-integrity"
+}
+---
+## AR-1264
+
+Repair the unsigned, non-DCO GitHub merge of PR #205 with a signed forward-only recovery. Preserve
+all historical commits and exact AR-1263 feature evidence; do not force-push or weaken protected
+main gates.
