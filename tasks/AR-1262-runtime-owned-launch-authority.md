@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1262-runtime-owned-launch-authority",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T23:04:53+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1262-runtime-owned-launch-authority",
   "observed_dirty": 0,
   "observed_head": "ad0bc024d74b0d8aff9d5504833eb7e0d3e0afa8",
-  "owner": "asb_ar1024_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1262.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Issue runtime-owned authority for supervised strict-replay execution.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-16T21:11:44+00:00",
+  "updated_at": "2026-09-16T21:17:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1262-runtime-authority"
 }
 ---
@@ -148,3 +148,10 @@ ownership and bounded lifecycle evidence.
   launch_wrapper_timeout_and_crash_are_terminal at line 474: expected Err(ScopeOwnership { .. }) but
   observed another result. All preceding packages/tests shown green, and focused workflow transcript
   3/3 remains green. No product dirty paths or uncommitted fixes were introduced.
+
+- 2026-09-16T21:17:08+00:00: Release AR-1262 ownerless/blocked pending AR-1263. Dedicated bounded
+  reproduction of sandbox_boundary::launch_wrapper_timeout_and_crash_are_terminal passes 13/20 and
+  fails 7/20 on the same baseline; failure is ScopeOwnership assertion at line 474, with no AR-1262
+  files touching sandbox implementation. Classify as pre-existing runner/timing repair owned by
+  AR-1263; do not weaken the test. Preserve signed ad0bc02 authority/CLI work and all focused
+  evidence.
