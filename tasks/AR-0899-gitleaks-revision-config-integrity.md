@@ -10,7 +10,7 @@
   "id": "AR-0899",
   "next_action": "Unify Gitleaks revision scoping and protect its configuration with executable negative tests.",
   "observed_branch": "fix/gitleaks-revision-config-integrity",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "94def3b9c1abf2acdd41ccab19bb71038fd99953",
   "owner": "asb_ar0899_gitleaks",
   "plan": "../plans/AR-0899.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve GitHub issue 118 by making local and CI Gitleaks scans deterministic and config changes fail closed.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Align and harden Gitleaks execution",
-  "updated_at": "2026-09-16T11:36:55+00:00",
+  "updated_at": "2026-09-16T11:37:38+00:00",
   "worktree_key": "agent-systems-benchmark-gitleaks-revision-config-integrity"
 }
 ---

@@ -10,16 +10,16 @@
   "next_action": "Independent review runner contract; then integrate AR-1251 consumer and run full policy gates.",
   "observed_branch": "feature/ar-1252-approved-isolated-runner",
   "observed_dirty": 0,
-  "observed_head": "16e5c3762eb4eb49c2c2b24e8c32f0d8bd380aea",
+  "observed_head": "d7ed22907ef0977fd7b0ff9b32f5504ca3f2b236",
   "owner": "asb_ar1252_isolated_runner",
   "plan": "../plans/AR-1252.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:37:31+00:00",
+  "updated_at": "2026-09-16T11:37:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---

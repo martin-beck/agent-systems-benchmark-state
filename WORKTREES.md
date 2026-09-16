@@ -52,7 +52,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1249` | `feature/ar-1249-mockagents-qualification-evidence` | `128ecddbfdb7` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar-1250` | `feature/ar-1250-mockagents-harness-extension` | `8a61b4672843` | 0 | behind 0, ahead 8 |
 | `agent-systems-benchmark-ar-1251` | `feature/ar-1251-mockagents-transport-sandbox` | `128ecddbfdb7` | 0 | behind 0, ahead 0 |
-| `agent-systems-benchmark-ar-1252` | `feature/ar-1252-approved-isolated-runner` | `16e5c3762eb4` | 0 | behind 0, ahead 12 |
+| `agent-systems-benchmark-ar-1252` | `feature/ar-1252-approved-isolated-runner` | `d7ed22907ef0` | 0 | behind 0, ahead 13 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 445, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 548, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 442, ahead 0 |
@@ -126,7 +126,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-gemini-hook-readiness-race` | `fix/gemini-hook-readiness-race` | `55648d5a29f4` | 0 | behind 292, ahead 0 |
 | `agent-systems-benchmark-gemini-readiness-merge-attestation` | `docs/gemini-readiness-merge-attestation` | `d0ea32ce84f6` | 0 | behind 284, ahead 0 |
 | `agent-systems-benchmark-gemini-thinking-config-contract` | `feature/gemini-thinking-config-contract` | `0aff7023cacf` | 0 | behind 569, ahead 0 |
-| `agent-systems-benchmark-gitleaks-revision-config-integrity` | `fix/gitleaks-revision-config-integrity` | `94def3b9c1ab` | 0 | behind 0, ahead 1 |
+| `agent-systems-benchmark-gitleaks-revision-config-integrity` | `fix/gitleaks-revision-config-integrity` | `94def3b9c1ab` | 2 | behind 0, ahead 1 |
+| changed files | - | - | - | `tools/quality/repository_policy.py`, `tools/quality/test_failure_paths.py` |
 | `agent-systems-benchmark-hosted-runner-evidence` | `fix/hosted-runner-evidence-classification` | `f0b7b46db271` | 0 | behind 324, ahead 0 |
 | `agent-systems-benchmark-huawei-mit-headers` | `fix/huawei-mit-license-headers` | `7add29f1d24c` | 0 | behind 453, ahead 0 |
 | `agent-systems-benchmark-install-artifacts` | `feature/verifiable-install-artifacts` | `310fdfe30f71` | 0 | behind 390, ahead 0 |
