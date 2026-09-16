@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover a signed protected-main DCO boundary after the unsigned PR202 web merge.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Protected-main DCO recovery for PR202",
-  "updated_at": "2026-09-16T17:03:40+00:00",
+  "updated_at": "2026-09-16T17:04:07+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-dco-1259"
 }
 ---
@@ -93,3 +93,6 @@ Create a signed, forward-only protected-main recovery for the unsigned PR202 mer
 
 - 2026-09-16T17:03:40+00:00: Recorded command exit 1; command argv SHA-256
   d2039d9990fed1959e38af3e10b810d4f0525065f772456f6a5df682703037a4.
+
+- 2026-09-16T17:04:07+00:00: Recorded command exit 0; command argv SHA-256
+  bdccf48273982a69c9179b4022caa6379cbfc302403bdfacfba582a328fac9c2.
