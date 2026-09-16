@@ -2,22 +2,22 @@
 {
   "branch": "docs/measurement-catalog-merge-attestation",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T07:57:42+00:00",
   "depends_on": [],
   "id": "AR-1039",
   "next_action": "Independently review draft PR #134 exact head 4a7eb724c601ab8fb2a6dd4552f54726ad3a0dd9 and tree 141362f96bd29c2694c5049d9d2010211fbaac99; do not merge before approval and use the exact lowercase GitHub-author DCO trailer.",
   "observed_branch": "docs/measurement-catalog-merge-attestation",
   "observed_dirty": 0,
   "observed_head": "7b3ef113d2b77c3982748f16c540d0e556252464",
-  "owner": "",
+  "owner": "asb_ar1232_sandbox_supervision",
   "plan": "../plans/AR-1039.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Recover the measurement catalog publication boundary without rewriting protected main.",
-  "task_revision": 92,
+  "task_revision": 93,
   "title": "Attest the measurement catalog merge boundary",
-  "updated_at": "2026-09-11T03:47:29+00:00",
+  "updated_at": "2026-09-16T05:57:42+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-merge-attestation"
 }
 ---
@@ -302,3 +302,5 @@ the corrective merge commit uses an actual multiline DCO trailer. This AR owns n
 - 2026-09-11T02:01:36+00:00: Recovered expired claim formerly owned by
   codex-ar1039-final-integration-20260911. Expired abandoned integration claim recovered after
   successor AR-1045 captured the remaining attestation work; release for truthful reconciliation.
+
+- 2026-09-16T05:57:42+00:00: Claimed by asb_ar1232_sandbox_supervision.
