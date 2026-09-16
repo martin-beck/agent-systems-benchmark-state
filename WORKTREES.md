@@ -44,6 +44,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1239` | `feature/ar-1239-signed-runtime-bundle` | `6836bb4010f5` | 0 | behind 309, ahead 2 |
 | `agent-systems-benchmark-ar-1240` | `feature/ar-1240-native-signed-bundle-fixture` | `282eeffd78ea` | 0 | behind 309, ahead 13 |
 | `agent-systems-benchmark-ar-1241` | `feature/ar-1241-native-isolation-matrix` | `7523fde1d87e` | 0 | behind 309, ahead 15 |
+| `agent-systems-benchmark-ar-1243` | `feature/ar-1243` | `1e1b0f3a2fca` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 391, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 494, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 388, ahead 0 |
