@@ -9,7 +9,7 @@
   "id": "AR-0814",
   "next_action": "Implement a real certificate import/pairing identity-store ceremony and bind authorize_call to current enrollment generation; add a concrete break-glass recovery operation and audit/store threat-matrix tests. Keep SecretBackend explicitly qualified until an OS-protected backend is supplied; rerun full gates and review.",
   "observed_branch": "feature/remote-enrollment-authz",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "aed0d0558932375eeaa8060a595930e544b40815",
   "owner": "asb_ar0814_enrollment_authz",
   "plan": "../plans/AR-0814.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 137,
+  "task_revision": 138,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T18:19:50+00:00",
+  "updated_at": "2026-09-16T18:19:57+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
