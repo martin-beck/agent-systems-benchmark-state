@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1238-runtime-loopback-supervisor",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T10:01:15+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1100",
     "AR-1231"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1238-runtime-loopback-supervisor",
   "observed_dirty": 0,
   "observed_head": "d9f42ecb2a205b86250233f4f4c75688a997c063",
-  "owner": "asb_ar1238_bwrap_relay_worker",
+  "owner": "",
   "plan": "../plans/AR-1238.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide the runtime-owned private-namespace supervisor for loopback replay.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Runtime-owned loopback supervisor",
-  "updated_at": "2026-09-16T08:03:55+00:00",
+  "updated_at": "2026-09-16T08:04:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1238"
 }
 ---
@@ -81,3 +81,12 @@ remaining work is launcher integration and real sidecar forwarding, not a host c
   relay socket, mounts it at /tmp/asb-replay-relay.sock after tmpfs, and launches runtime-owned
   supervisor with namespace-local relay args. Focused runtime tests and full workspace tests pass;
   clippy and rustdoc pass.
+
+- 2026-09-16T08:04:17+00:00: Implemented SandboxBackend composition in signed commit d9f42ec:
+  validates an existing private 0600 Unix relay socket, creates tmpfs /tmp before bind-mounting it
+  at /tmp/asb-replay-relay.sock, and launches the in-tree supervisor with namespace-local relay
+  arguments. Focused runtime 29 tests and full locked workspace tests pass; fmt, clippy, and rustdoc
+  pass. Remaining blocker is executable packaging/installation and a real cassette sidecar protocol:
+  /usr/bin/asb_loopback_supervisor must be supplied by the trusted runtime bundle, and the sidecar
+  must forward authenticated HTTP over the mounted relay with readiness attestation and lifecycle
+  tests. No host networking/firewall/ambient ip used.
