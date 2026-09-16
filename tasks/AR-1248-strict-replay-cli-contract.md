@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1248-strict-replay-cli-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T12:35:47+00:00",
+  "claim_expires": "2026-09-16T12:40:08+00:00",
   "depends_on": [
     "AR-1231",
     "AR-1232"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T10:39:45+00:00",
+  "updated_at": "2026-09-16T10:40:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -52,3 +52,5 @@ formal, privacy, signature, DCO, and exact-tree gates.
 
 - 2026-09-16T10:39:38+00:00: Recorded command exit 0; command argv SHA-256
   5cd7f7ecbd072b19f8bcf922677100f3be60e4ce8a4254b8d6fd3e991baa2b30.
+
+- 2026-09-16T10:40:08+00:00: Heartbeat by asb_ar1232_lifecycle_router.
