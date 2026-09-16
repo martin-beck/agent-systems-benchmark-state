@@ -8,7 +8,7 @@
     "AR-1231"
   ],
   "id": "AR-1236",
-  "next_action": "Design and implement an approved runtime-owned in-namespace loopback sidecar/relay capability; preserve NetworkPolicy::Deny, deny provider and ambient egress, and prove lifecycle cleanup and unrelated-process non-interference.",
+  "next_action": "Implement the versioned runtime-issued sidecar handoff: same-private-namespace sidecar and adapter, authenticated route/generation/command metadata, listener readiness, bounded forwarding, teardown, and non-interference tests; preserve NetworkPolicy::Deny.",
   "observed_branch": "feature/ar-1236-runtime-loopback-sidecar",
   "observed_dirty": 0,
   "observed_head": "df4debddb24205fe2f6ab21e4dfe574cc8af44b1",
