@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0813",
-  "next_action": "Monitor PR202 exact head 22abb6e fresh dependency/fuzz and remaining checks to terminal; merge only after all required checks and independent approval.",
+  "next_action": "Monitor PR202 exact head b7d9e14 fresh CI; verify formal/fuzz locks and all required checks terminal before merge.",
   "observed_branch": "feature/remote-control-transport",
   "observed_dirty": 0,
   "observed_head": "b7d9e142d684f1fa65fc3f52258ec46585194950",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 295,
+  "task_revision": 296,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T16:24:10+00:00",
+  "updated_at": "2026-09-16T16:24:30+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -891,3 +891,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T16:24:10+00:00: Recorded command exit 0; command argv SHA-256
   a1307a9406a3121af1acce68a8f4db7c8b42aa44316637af242257985143cbc3.
+
+- 2026-09-16T16:24:30+00:00: Regenerated formal/Cargo.lock offline after root dependency repair;
+  exact locked formal suite ran with all Loom/state tests passing. One existing TLA artifact test
+  transiently hit ExecutableFileBusy; exact focused rerun passed. Committed SSH-signed+DCO
+  b7d9e142d684f1fa65fc3f52258ec46585194950 and pushed PR202. Worktree clean.
