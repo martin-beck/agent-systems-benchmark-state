@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1243",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T11:20:09+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1239",
     "AR-1240",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1243",
   "observed_dirty": 0,
   "observed_head": "dc1fe1dcfa462d2953bb9033297c78a41633d559",
-  "owner": "asb_ar1232_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1243.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Build, sign, verify, and publish installable supervisor and sidecar runtime bundles.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Installable signed runtime bundle assembly",
-  "updated_at": "2026-09-16T09:20:50+00:00",
+  "updated_at": "2026-09-16T09:21:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1243"
 }
 ---
@@ -83,3 +83,9 @@ private material; do not alter host networking, firewall, credentials, or unrela
   launch bridge, schema and agent changes in addition to bundle tooling. AR-1243 plan permits only
   bundle packaging/signing tooling, release fixtures, and documentation; do not publish this mixed
   branch or rewrite unrelated history. Prior bundle commit dc1fe1d and tests remain preserved.
+
+- 2026-09-16T09:21:45+00:00: Blocked/ownerless: shared feature/ar-1243 advanced to mixed
+  runtime/replay head 881666d beyond AR-1243 bundle-only scope. Preserve signed bundle commit
+  dc1fe1d and all unrelated signed runtime history. Clean packaging work requires a fresh isolated
+  branch from origin/main cherry-picking only dc1fe1d or reconstructing its scoped diff; no
+  mixed-history publication.

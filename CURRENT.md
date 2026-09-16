@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1243](tasks/AR-1243-signed-bundle-assembly.md): Installable signed runtime bundle assembly | Build, sign, verify, and publish installable supervisor and sidecar runtime bundles. | Stop AR-1243 publication pending coordinator separation/reconciliation: branch c9fdcaf includes unrelated runtime/replay commits beyond bundle-only scope. Preserve all signed history; create a clean packaging branch or coordinator-approved split before gates/PR. | asb_ar1232_lifecycle_router |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -28,6 +22,7 @@ Never edit this file directly.
 | P0 | [AR-1181](tasks/AR-1181.md): TLA admission | Bound ASB TLC memory. | Correct AR-1181 repository/worktree metadata to a state-repository branch/worktree, then implement missing tools/tlc_runner.py with bounded admission; current declared path is an ASB product checkout and must not be mutated. | - |
 | P0 | [AR-1210](tasks/AR-1210-tutorial-contract-validator.md): Tutorial contract and syntax validator | Define offline tutorial steps and validate them against the ASB CLI grammar. | Do not release AR-1210 yet: post-merge Repository quality run 35054743606 failed because protected merge commit 4d4a0c4 lacks Signed-off-by. Coordinate merge-integrity/DCO repair and rerun exact-main assurance; preserve merged main and all evidence. | - |
 | P0 | [AR-1226](tasks/AR-1226-protected-merge-tree-remediation.md): Protected merge-tree remediation | Remediate the protected-main merge-tree mismatch from stale-base PR merging. | Historical reproduction confirms policy rejects ef82484 before merge-tree comparison because its RSA/GPG signature is not in the allowed SSH trust set. Current clean branch is fd7daa4; create a signed-DCO current-main topic repair, then rerun policy and exact-head gates. | - |
+| P0 | [AR-1243](tasks/AR-1243-signed-bundle-assembly.md): Installable signed runtime bundle assembly | Build, sign, verify, and publish installable supervisor and sidecar runtime bundles. | Stop AR-1243 publication pending coordinator separation/reconciliation: branch c9fdcaf includes unrelated runtime/replay commits beyond bundle-only scope. Preserve all signed history; create a clean packaging branch or coordinator-approved split before gates/PR. | - |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | Formal assurance owner AR-0877/AR-0907 must repair the pinned TLA artifact provenance mismatch (downloaded byte count/hash) before PR #119 can be requalified; AR-0704 native controller requires no source change. | - |
 | P1 | [AR-0863](tasks/AR-0863-workbuddy-provenance.md): Pin WorkBuddy source, package, and license provenance | Pin WorkBuddy source, package, and license provenance. | Pin official source, package, dependency closure, license, executable digest, protocol mode, and supported platform before any adapter claim. | - |
 | P1 | [AR-0890](tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. | - |
