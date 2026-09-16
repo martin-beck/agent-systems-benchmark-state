@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 101,
+  "task_revision": 102,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-16T05:06:51+00:00",
+  "updated_at": "2026-09-16T05:07:10+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -354,3 +354,6 @@ Implementation has not started. Read the linked plan before claiming.
   remote aceb191; PR126 exact head is now 1ef6469 and fresh CI is required. Next: monitor all
   exact-head checks, diagnose any failures, and do not merge until all required checks green plus
   independent review.
+
+- 2026-09-16T05:07:10+00:00: Recorded command exit 0; command argv SHA-256
+  166117133f6d109ce2b623bf811ff78f1c5e2554b53a4b1ef9c3e6ce37d4e76e.
