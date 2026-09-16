@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T17:52:59+00:00",
+  "updated_at": "2026-09-16T17:53:33+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -180,3 +180,6 @@ Implementation has not started. Read the linked plan before claiming.
   identity-store rules, and role/principal/request digest CLI ceremony; command metadata now
   requires scoped auth options. Tutorial validator passed and auth dispatch tests 2/2 passed.
   Worktree clean.
+
+- 2026-09-16T17:53:33+00:00: Recorded command exit 101; command argv SHA-256
+  12938f82fbaa9857db28f5434d0af3e082e02e4471a57c1807c2e82d77a69772.
