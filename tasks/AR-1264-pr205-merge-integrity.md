@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1264-pr205-merge-integrity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T23:44:56+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0897"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "repair/ar-1264-pr205-merge-integrity",
   "observed_dirty": 0,
   "observed_head": "ebfa37023e56269b8299254b535be60f3cf1d186",
-  "owner": "asb_ar1264_merge_integrity",
+  "owner": "",
   "plan": "../plans/AR-1264.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Recover signed protected-main integration after PR #205.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Recover signed integration after PR #205",
-  "updated_at": "2026-09-16T22:07:11+00:00",
+  "updated_at": "2026-09-16T22:07:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1264-merge-integrity"
 }
 ---
@@ -97,3 +97,9 @@ main gates.
   Repository quality 35155265340; emulated AArch64 35155265432; fault assurance 35155265435; Rust
   35155265425; hosted portability 35155265446; formal assurance 35155265370; Huawei headers
   35155265396. Recovery worktree is clean.
+
+- 2026-09-16T22:07:20+00:00: AR-1264 complete. Signed forward-only recovery
+  69e8b064d3121a4bae1f672cdae9c0c8672000bc preserves unsigned PR205 merge ebfa3702 and exact tree
+  via signed DCO tip 539a9298. SSH signature/DCO/parents/tree verified; all seven required
+  exact-main workflows succeeded: 35155265340, 35155265432, 35155265435, 35155265425, 35155265446,
+  35155265370, 35155265396. Clean recovery worktree and doctor validation confirmed.

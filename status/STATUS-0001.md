@@ -7,16 +7,16 @@
 
 ## Portfolio overview
 
-**292 ARs tracked** across 7 active status categories.
+**292 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 6 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 23 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 194 |
+| **Done** | Accepted, integrated, and durably verified | 195 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 9 |
 
@@ -357,7 +357,7 @@ flowchart LR
         AR_1261["AR-1261 - Blocked"]:::status_blocked
         AR_1262["AR-1262 - Blocked"]:::status_blocked
         AR_1263["AR-1263 - Blocked"]:::status_blocked
-        AR_1264["AR-1264 - In progress"]:::status_in_progress
+        AR_1264["AR-1264 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1482,12 +1482,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1264](../tasks/AR-1264-pr205-merge-integrity.md): Recover signed integration after PR #205 | asb_ar1264_merge_integrity | Recover signed protected-main integration after PR #205. | Complete: signed main 69e8b064 verified exact parents/tree/DCO; all seven post-merge workflows SUCCESS. Preserve AR-1263 traceability and recovery evidence. |
-
 ### Open (6)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -1596,7 +1590,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (194)
+### Done (195)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1626,3 +1620,4 @@ flowchart LR
 | P0 | [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md): Harden the asb-tui release lifecycle contract | Unclaimed | Turn the tested unverified asb-tui lifecycle boundary into a release-safe delegated contract. | Wait for AR-1030 PR 11 to merge, rebase signed+DCO AR-1022 PR 10 onto exact new asb-tui main, reconcile overlaps to source_only_unverified, rerun full gates and exact-head CI, then integrate by protected admin merge only when all requirements are green. |
 | P0 | [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md): Add the ASB frontend capabilities command | Unclaimed | Publish the ASB capability negotiation command required by the standalone frontend. | Monitor exact head d60d2351004479998608f2141730849366351373 on PR 128, repair any CI failure, obtain independent review, merge through policy, and run post-merge verification. |
 | P0 | [AR-1030](../tasks/AR-1030-ratatui-dependency-closure.md): Resolve the Ratatui dependency closure | Unclaimed | Make the maintained Ratatui release consumable by standalone asb-tui without hiding supply-chain exceptions. | Register/authorize a GitHub-recognized signing identity for exact head c0dfdd3114741f9415a124f4d4995dac354b4260, or explicitly approve a GitHub rebase/squash rewrite; then rerun exact-head gates and merge PR #11. |
+| P0 | [AR-1036](../tasks/AR-1036-measurement-catalog-control.md): Publish the measurement catalog control contract | Unclaimed | Expose the versioned ASB measurement catalog to standalone frontends without UI code. | Catalog control v1.2 is merged and qualified; AR-1037 may now carry selected measurement IDs through validated ASB plans. |
