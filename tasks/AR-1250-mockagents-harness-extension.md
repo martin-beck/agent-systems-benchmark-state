@@ -8,7 +8,7 @@
     "AR-0889"
   ],
   "id": "AR-1250",
-  "next_action": "Extend the MockAgents harness with explicit platform selection and hostile lifecycle, network-denial, repeat-clean-state, and emulated-AArch64 tests.",
+  "next_action": "Add hostile tool/result, cancellation/backpressure, outbound-denial, repeat-clean-state cases; then run full gates and open PR from cc7d32c.",
   "observed_branch": "feature/ar-1250-mockagents-harness-extension",
   "observed_dirty": 0,
   "observed_head": "cc7d32cb4cb53afa026f233f78b229aaab9de0d8",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend the pinned MockAgents executable qualification harness.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Extend MockAgents qualification harness",
-  "updated_at": "2026-09-16T10:50:40+00:00",
+  "updated_at": "2026-09-16T10:51:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1250"
 }
 ---
@@ -54,3 +54,9 @@ privacy, signature, DCO, and exact-tree gates; do not claim support from host in
 
 - 2026-09-16T10:50:40+00:00: Recorded command exit 0; command argv SHA-256
   f7d4ea330f90fae5012414d7cc42434d6a86ac33360ae1e3b5d274507ede920b.
+
+- 2026-09-16T10:51:03+00:00: Implemented explicit --platform linux-amd64/linux-arm64 and fail-closed
+  --runner plus runner-sha256 contract. Real pinned arm64 artifact executed under qemu-aarch64
+  (runner SHA256 ff6813b88af9a1fc22d37d87f8f7192eacf7d5c62a5144d3412dceb5e72b07fe), report correctly
+  identifies linux-arm64; existing five loopback cases passed. Signed+DCO commit cc7d32c pushed to
+  feature/ar-1250-mockagents-harness-extension. Remaining hostile cases are not yet implemented.

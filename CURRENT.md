@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1248](tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | Define the strict-replay CLI consumer contract. | Monitor PR #197 exact head 8896cad CI; independent exact-head review pending. Merge only all required checks green, then post-merge verify and release. | asb_ar1232_lifecycle_router |
-| P1 | [AR-1250](tasks/AR-1250-mockagents-harness-extension.md): Extend MockAgents qualification harness | Extend the pinned MockAgents executable qualification harness. | Extend the MockAgents harness with explicit platform selection and hostile lifecycle, network-denial, repeat-clean-state, and emulated-AArch64 tests. | asb_ar1250_mockagents_harness |
+| P1 | [AR-1250](tasks/AR-1250-mockagents-harness-extension.md): Extend MockAgents qualification harness | Extend the pinned MockAgents executable qualification harness. | Add hostile tool/result, cancellation/backpressure, outbound-denial, repeat-clean-state cases; then run full gates and open PR from cc7d32c. | asb_ar1250_mockagents_harness |
 
 ## Open
 
