@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 133,
+  "task_revision": 134,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T18:14:43+00:00",
+  "updated_at": "2026-09-16T18:14:58+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -362,3 +362,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T18:14:35+00:00: Recorded command exit 0; command argv SHA-256
   1c53d59a4abe978e9feb107ab0529ba120f0eed527a6e94dffb22b95f9a939fd.
+
+- 2026-09-16T18:14:58+00:00: Signed+DCO aed0d05 adds compromised identity-store negatives for
+  group/world-readable mode and wrong owner; focused persistence test passed. Worktree clean after
+  commit.
