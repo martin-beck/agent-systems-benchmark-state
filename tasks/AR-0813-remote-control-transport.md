@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 213,
+  "task_revision": 214,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T15:27:15+00:00",
+  "updated_at": "2026-09-16T15:27:33+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -638,3 +638,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T15:27:07+00:00: Recorded command exit 0; command argv SHA-256
   e8382552924690d568df5e867142f9f219578a4ee8fb4b0f74eb178b62c5b597.
+
+- 2026-09-16T15:27:33+00:00: Committed 52ee2b1 (SSH-signed+DCO): serialized begin_drain and
+  post-accept permit acquisition under admission_lock, eliminating drain/permit TOCTOU. Keepalive
+  enabled in prior signed afe9a26 on both client/server after handshake. Listener drain regressions
+  pass 2/2; workspace clippy/full test previously green; product tree clean. Next: independent
+  review/CI.
