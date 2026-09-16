@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T07:22:47+00:00",
+  "claim_expires": "2026-09-16T07:24:19+00:00",
   "depends_on": [
     "AR-1100",
     "AR-1231"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an approved runtime-owned loopback-only sandbox namespace capability.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime-owned loopback namespace capability",
-  "updated_at": "2026-09-16T05:22:47+00:00",
+  "updated_at": "2026-09-16T05:24:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1234"
 }
 ---
@@ -32,3 +32,5 @@
   dependencies AR-1100 and AR-1231 are complete.
 
 - 2026-09-16T05:22:47+00:00: Claimed by asb_ar1232_sandbox_supervision.
+
+- 2026-09-16T05:24:19+00:00: Heartbeat by asb_ar1232_sandbox_supervision.
