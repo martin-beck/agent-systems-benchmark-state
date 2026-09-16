@@ -11,7 +11,7 @@
   "id": "AR-1262",
   "next_action": "Monitor PR #207 exact head c0091857 through terminal required CI; retain merge block until independent review and all checks green.",
   "observed_branch": "feature/ar-1262-runtime-owned-launch-authority",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "c009185748a486b18ac90416ab78d9f19830740e",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1262.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned authority for supervised strict-replay execution.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-16T22:17:08+00:00",
+  "updated_at": "2026-09-16T22:17:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1262-runtime-authority"
 }
 ---
