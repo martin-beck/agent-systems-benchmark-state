@@ -68,6 +68,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar1060-history-repair` | `repair/ar1060-history-repair` | `48350ca1f158` | 0 | behind 224, ahead 0 |
 | `agent-systems-benchmark-ar1060-merge-attestation` | `recovery/ar-1060-merge-attestation` | `0164aea25afb` | 0 | behind 228, ahead 2 |
 | `agent-systems-benchmark-ar1060-verify` | `DETACHED` | `b74b9c1eaa8d` | 0 | behind 220, ahead 0 |
+| `agent-systems-benchmark-ar1244-merge` | `DETACHED` | `5a2c1516a072` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-asb-cli-workflow-captures` | `docs/asb-cli-workflow-captures-attestation` | `b18e38ad94f1` | 0 | behind 267, ahead 0 |
 | `agent-systems-benchmark-asb-tui-capabilities-command` | `feature/asb-tui-capabilities-command` | `d60d23510044` | 0 | behind 270, ahead 0 |
 | `agent-systems-benchmark-asb-tui-lifecycle-router` | `feature/asb-tui-lifecycle-router` | `c545c33c8bfe` | 0 | behind 266, ahead 1 |
