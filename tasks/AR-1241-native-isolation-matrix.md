@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1241-native-isolation-matrix",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T10:41:09+00:00",
   "depends_on": [
     "AR-1240"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1241-native-isolation-matrix",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "asb_ar1241_native_isolation_worker",
   "plan": "../plans/AR-1241.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Complete native signed-bundle isolation negative and lifecycle evidence.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Native isolation negative and lifecycle matrix",
-  "updated_at": "2026-09-16T08:40:58+00:00",
+  "updated_at": "2026-09-16T08:41:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1241"
 }
 ---
@@ -30,3 +30,5 @@ global network state.
 
 - 2026-09-16T08:40:58+00:00: AR-1240 complete with native signed cassette forwarding; begin
   remaining negative egress and lifecycle matrix.
+
+- 2026-09-16T08:41:09+00:00: Claimed by asb_ar1241_native_isolation_worker.
