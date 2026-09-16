@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1234",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T10:48:59+00:00",
   "depends_on": [
     "AR-1100",
     "AR-1231",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1234",
   "observed_dirty": 0,
   "observed_head": "04b3f728fc5ff2a7e883fc1dcf0458865ce96247",
-  "owner": "",
+  "owner": "asb_ar1234_namespace_finish_worker",
   "plan": "../plans/AR-1234.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide an approved runtime-owned loopback-only sandbox namespace capability.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Runtime-owned loopback namespace capability",
-  "updated_at": "2026-09-16T08:48:20+00:00",
+  "updated_at": "2026-09-16T08:48:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1234"
 }
 ---
@@ -181,3 +181,5 @@
 
 - 2026-09-16T08:48:20+00:00: AR-1236 and native supervisor capability are complete; resume namespace
   implementation.
+
+- 2026-09-16T08:48:59+00:00: Claimed by asb_ar1234_namespace_finish_worker.
