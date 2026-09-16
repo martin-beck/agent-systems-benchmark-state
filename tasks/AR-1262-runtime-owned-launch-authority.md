@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned authority for supervised strict-replay execution.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-16T21:09:24+00:00",
+  "updated_at": "2026-09-16T21:09:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1262-runtime-authority"
 }
 ---
@@ -120,3 +120,6 @@ ownership and bounded lifecycle evidence.
   authority constructor in signed 3723fb9; targeted runtime authority and CLI consumer tests remain
   green, product tree clean. Runtime authority now atomically transfers launch inputs to
   spawn_authorized_replay.
+
+- 2026-09-16T21:09:53+00:00: Recorded command exit 101; command argv SHA-256
+  e65704d0af497ff4f9db656cbcc2e1894e552f84bfbc5a531f0945a250925adf.
