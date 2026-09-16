@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1232",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T08:43:40+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "7613c678c71806dd7f3aa3f7cc521dd9a8256e3e",
-  "owner": "asb_ar1232_worker",
+  "owner": "",
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 441,
+  "task_revision": 442,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T06:44:13+00:00",
+  "updated_at": "2026-09-16T06:44:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -1215,3 +1215,15 @@
 
 - 2026-09-16T06:44:13+00:00: Recorded command exit 0; command argv SHA-256
   41e36411e09d334f9b1307abd10ff98e1679c524b79c63d8c04035e0722f5337.
+
+- 2026-09-16T06:44:31+00:00: AR-1232-only forwarding attempt completed without product mutation.
+  Pinned Bubblewrap confirms --unshare-net creates a new network namespace while --share-net retains
+  the host namespace; the latter would expose ambient/provider networking and is explicitly
+  disallowed. Existing SandboxBackend launches one command only, has no in-tree sidecar/relay
+  supervisor, and bind-mounting the Unix handoff alone cannot create the required child-visible HTTP
+  loopback endpoint. No global firewall, host-network sharing, unreviewed helper, or NetworkPolicy
+  change was used. ReplayRelayHandoff remains the minimal safe contract seam at signed/DCO commit
+  7613c67. Focused relay tests 4/4 and locked offline runtime Clippy pass; prior native strict
+  replay 7/7 and unit 15/15 remain evidence. Remaining blocker requires a separately reviewed
+  launch/adapter contract for an in-namespace pinned sidecar or equivalent loopback bridge,
+  including lifecycle supervision and HTTP protocol mapping.
