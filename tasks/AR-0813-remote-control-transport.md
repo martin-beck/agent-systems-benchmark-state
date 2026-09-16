@@ -2,7 +2,7 @@
 {
   "branch": "feature/remote-control-transport",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T16:55:50+00:00",
+  "claim_expires": "2026-09-16T17:08:55+00:00",
   "depends_on": [
     "AR-0702",
     "AR-0803",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 154,
+  "task_revision": 155,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T15:07:52+00:00",
+  "updated_at": "2026-09-16T15:08:55+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -450,3 +450,5 @@ Implementation has not started. Read the linked plan before claiming.
   Final lint fix fb2061a removes redundant must_use; workspace clippy now passes. cargo test
   --locked -p asb-control passes 43+doc tests. Remaining full workspace test blocker is unrelated
   asb-metrics kernel.rs:713 mismatch; network fault evidence remains transport-level.
+
+- 2026-09-16T15:08:55+00:00: Heartbeat by asb_ar0813_remote_transport.
