@@ -11,7 +11,7 @@
   "id": "AR-1232",
   "next_action": "Add direct cross-crate launcher tests for command digest mismatch and runtime launch rejection; run full locked workspace gates, then prepare independent review/PR.",
   "observed_branch": "feature/ar-1232",
-  "observed_dirty": 1,
+  "observed_dirty": 2,
   "observed_head": "a2df254fd2e685249eaa68f86ce457e80c6d6272",
   "owner": "asb_ar1232_sandbox_supervision",
   "plan": "../plans/AR-1232.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 105,
+  "task_revision": 106,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T03:13:38+00:00",
+  "updated_at": "2026-09-16T03:13:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
