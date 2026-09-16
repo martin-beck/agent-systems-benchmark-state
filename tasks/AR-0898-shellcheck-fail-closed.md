@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Make ShellCheck fail closed",
-  "updated_at": "2026-09-16T08:57:48+00:00",
+  "updated_at": "2026-09-16T08:59:53+00:00",
   "worktree_key": "agent-systems-benchmark-shellcheck-fail-closed"
 }
 ---
@@ -164,3 +164,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-16T08:57:48+00:00: 2026-09-16T08:59Z: Four post-merge workflows terminal success; emulated
   AArch64 is the sole remaining required gate. Lease heartbeat renewed; no action on unrelated
   AR1242 merge-integrity issue.
+
+- 2026-09-16T08:59:53+00:00: Recorded command exit 0; command argv SHA-256
+  69172ef13a419bf92b41573175bd516983cc2a72cbd6b9ec1d9014a17e1bdaf1.
