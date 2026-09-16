@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Map the authenticated relay into the strict-replay child launch contract.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Strict-replay child launch bridge",
-  "updated_at": "2026-09-16T08:57:22+00:00",
+  "updated_at": "2026-09-16T08:59:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1237"
 }
 ---
@@ -50,3 +50,6 @@ locked, privacy, policy, native, exact-head, and post-merge gates.
   integrate reviewed heads and run native launch-bridge tests.
 
 - 2026-09-16T08:57:22+00:00: Claimed by asb_ar1237_launch_bridge_worker.
+
+- 2026-09-16T08:59:30+00:00: Recorded command exit 0; command argv SHA-256
+  107d2c928b5e3277e5bc61a7ec649e03d54bf54174b822dccfd7c1804547689b.
