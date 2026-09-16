@@ -9,7 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0897](tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Hold PR 126 at bd6f450; after AR-0877 and AR-0909 integrate, rebase once and require fresh all-green exact-head CI before merge. | asb_ar0897_merge_integrity |
 | P0 | [AR-1140](tasks/AR-1140.md): CLI setup wizard | Guide CLI setup and reconfiguration. | Wait for PR #186 exact-head CI and independent review on d83be5b; do not merge. | asb_ar1232_lifecycle_router |
-| P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Qualify pinned OpenJiuwen live execution. | Run exact-head CI for fb6a572 and complete independent review of the provenance-bound managed CPython 3.11.16 live qualification. | asb_ar0859_runtime_requal |
+| P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Qualify pinned OpenJiuwen live execution. | Run fresh exact-head CI for 230084e and independently review the rebased OpenJiuwen qualification diff. | asb_ar0859_runtime_requal |
 | P1 | [AR-0896](tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun 34339927858 was launched via handoffctl and is actively watched by PID 736624/gh PID 736653; exact rerun head a4e1a9de985a4c9f22628c6d604a6e62f4f173e3, job 104684371738 currently running. Keep lease heartbeat, wait terminal, then capture failures or green result. | asb_ar0896_qualification |
 
 ## Open

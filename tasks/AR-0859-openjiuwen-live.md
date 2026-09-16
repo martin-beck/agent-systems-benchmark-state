@@ -7,7 +7,7 @@
     "AR-0858"
   ],
   "id": "AR-0859",
-  "next_action": "Run exact-head CI for fb6a572 and complete independent review of the provenance-bound managed CPython 3.11.16 live qualification.",
+  "next_action": "Run fresh exact-head CI for 230084e and independently review the rebased OpenJiuwen qualification diff.",
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "230084ef1ea88168eac2be9098cc3c71dd14c465",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 278,
+  "task_revision": 279,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-16T07:24:12+00:00",
+  "updated_at": "2026-09-16T07:24:22+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -939,3 +939,8 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   6ce49b9e947fd31861fb3ae03394d4e300e7acb3b93c256cb66e038b967f07f3.
 
 - 2026-09-16T07:24:12+00:00: Heartbeat by asb_ar0859_runtime_requal.
+
+- 2026-09-16T07:24:22+00:00: PR #124 platform evidence run 35068169917 failed before tests because
+  stale base 817a40bf lacked tools/platforms/hosted_portability.py. Rebased feature/openjiuwen-live
+  onto protected main fd7daa4; new exact signed head 230084ef1ea88168eac2be9098cc3c71dd14c465, clean
+  and force-with-lease pushed. This is a CI/base defect, not product evidence.
