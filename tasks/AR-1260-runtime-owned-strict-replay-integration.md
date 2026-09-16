@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate strict replay with runtime-owned attestation and supervised sandbox execution.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Runtime-owned strict-replay integration",
-  "updated_at": "2026-09-16T20:35:56+00:00",
+  "updated_at": "2026-09-16T20:36:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1260-runtime"
 }
 ---
@@ -77,3 +77,6 @@ missing, stale, duplicated, or mismatched.
   and schema/policy fixtures). Worktree clean.
 
 - 2026-09-16T20:35:56+00:00: Heartbeat by asb_ar1024_lifecycle_router.
+
+- 2026-09-16T20:36:36+00:00: Recorded command exit 1; command argv SHA-256
+  f7e20666638201d8567703a3d7bc028e04a5e8e4c6c509de13d4976b0c91a669.
