@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify MockAgents through the pinned Python sandbox.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Qualify MockAgents through pinned Python transport",
-  "updated_at": "2026-09-16T18:57:59+00:00",
+  "updated_at": "2026-09-16T18:58:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1254"
 }
 ---
@@ -142,3 +142,6 @@ Keep fixtures, runtimes, caches, and evidence under `/srv/data/projects`.
 - 2026-09-16T18:56:27+00:00: Claimed by asb_ar1254_mockagents_transport_qualification.
 
 - 2026-09-16T18:57:59+00:00: Heartbeat by asb_ar1254_mockagents_transport_qualification.
+
+- 2026-09-16T18:58:10+00:00: Recorded command exit 0; command argv SHA-256
+  4a6f83a79ece14a6d261e536dfe48ac35c6dfe6a78cd848c05b697682b7e1af4.
