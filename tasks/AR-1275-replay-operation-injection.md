@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1275-replay-operation-injection",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T01:48:01+00:00",
+  "claim_expires": "2026-09-17T01:56:01+00:00",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Inject runtime-owned operation handles into actual strict-replay dispatch.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Runtime operation injection into replay dispatcher",
-  "updated_at": "2026-09-16T23:55:51+00:00",
+  "updated_at": "2026-09-16T23:56:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1275-operation-injection"
 }
 ---
@@ -90,3 +90,5 @@ blocked evidence and do not accept metadata-only or caller-fabricated execution.
   by new lib.rs export (old digest b024... replaced with actual 430f...). Tree clean. Acceptance
   remains incomplete because primary argument-only replay dispatch still cannot obtain
   runtime-issued handle and no real supervised lifecycle/egress fixtures exist.
+
+- 2026-09-16T23:56:01+00:00: Heartbeat by asb_ar1024_lifecycle_router.
