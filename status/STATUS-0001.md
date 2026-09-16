@@ -1347,7 +1347,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | asb_ar1151_replay | Replay strictly without providers. | Open/update PR from c46f3d8 and request independent exact-head review. New shared RecordingCampaign::require_complete_coverage rejects missing, duplicate, stale, or non-complete tuples; replay CLI labels network denied and fresh_model_quality=false. Remaining: wire strict replay into run execution and campaign-level network-denial conformance. |
+| P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | asb_ar1151_replay | Replay strictly without providers. | Design and implement the missing executable strict-replay run-path seam: pass exact cassette route/service into agent adapter launch, deny provider egress at process boundary, and add campaign-level cancellation/restart/no-fallback tests. Current CLI replay only decodes/indexes/selects and emits metadata. |
 
 ### Open (13)
 
