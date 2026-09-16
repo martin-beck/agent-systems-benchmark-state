@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-owned entrypoint for strict-replay CLI supervision.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Runtime-to-CLI strict-replay handoff entrypoint",
-  "updated_at": "2026-09-16T20:48:40+00:00",
+  "updated_at": "2026-09-16T20:49:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1261-runtime-cli"
 }
 ---
@@ -40,3 +40,6 @@ preserving fail-closed ownership and bounded lifecycle evidence.
 - 2026-09-16T20:47:40+00:00: Claimed by asb_ar1024_lifecycle_router.
 
 - 2026-09-16T20:48:40+00:00: Heartbeat by asb_ar1024_lifecycle_router.
+
+- 2026-09-16T20:49:07+00:00: Recorded command exit 1; command argv SHA-256
+  71566be2fa7fa50c21ce8e300d6a7308ac0a0cf46a2ff59a6158b54ccb2e4f3a.
