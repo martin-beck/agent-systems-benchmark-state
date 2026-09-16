@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Make ShellCheck fail closed",
-  "updated_at": "2026-09-16T08:31:21+00:00",
+  "updated_at": "2026-09-16T08:31:44+00:00",
   "worktree_key": "agent-systems-benchmark-shellcheck-fail-closed"
 }
 ---
@@ -92,3 +92,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-16T08:31:21+00:00: 2026-09-16T08:32Z: Full applicable local quality subset completed
   successfully on 8176605; clean tree verified after removing only generated profraw artifacts under
   owned worktree. No external runtime dependency.
+
+- 2026-09-16T08:31:44+00:00: Recorded command exit 0; command argv SHA-256
+  8559ae21c28428b29770076c3074caf756e3be5d365c640cc1d1bf0af677d28f.
