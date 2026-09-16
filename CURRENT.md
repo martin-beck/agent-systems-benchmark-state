@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-1263](tasks/AR-1263-sandbox-scope-classification-stability.md): Stabilize sandbox scope classification gate | Stabilize intermittent sandbox scope classification in the quality gate. | Post-merge DCO recovery required: protected main ebfa37023e56 merged PR #205 but merge commit lacks Signed-off-by and GitHub RSA key is unverified locally. Preserve feature 0acbc1d and rerun exact-main policy after signed recovery. | asb_ar1263_sandbox_stability |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -46,6 +40,7 @@ Never edit this file directly.
 | P1 | [AR-1254](tasks/AR-1254-mockagents-pinned-python-transport.md): Qualify MockAgents through pinned Python transport | Qualify MockAgents through the pinned Python sandbox. | Blocked: wait for AR-1258 to provide an approved digest-pinned arm64 QEMU runner with fix-binary support and for AR-1255 to provide bundled in-container transport/egress evidence. Then resume AR-1254 to qualify real executable protocol, malformed/oversized inputs, cancellation/descendant cleanup, network-none denial, closed provenance, and repeat-clean-state on amd64 and arm64. Do not promote or claim AR-1255 until AR-1254 completes. | - |
 | P1 | [AR-1256](tasks/AR-1256-bundled-mockagents-isolation.md): Execute bundled MockAgents transport in isolation | Execute bundled MockAgents transport in isolation. | Implement bundled in-container MockAgents transport and digest-pinned arm64 QEMU evidence. | - |
 | P1 | [AR-1258](tasks/AR-1258-docker-binfmt-qemu.md): Provision Docker binfmt/QEMU capability | Provision and verify Docker binfmt/QEMU for multiarch qualification. | Inspect Docker/binfmt/QEMU capability and approved privilege workflow; add bounded verification and rollback-safe checks. | - |
+| P1 | [AR-1263](tasks/AR-1263-sandbox-scope-classification-stability.md): Stabilize sandbox scope classification gate | Stabilize intermittent sandbox scope classification in the quality gate. | Post-merge DCO recovery required: protected main ebfa37023e56 merged PR #205 but merge commit lacks Signed-off-by and GitHub RSA key is unverified locally. Preserve feature 0acbc1d and rerun exact-main policy after signed recovery. | - |
 
 ## Planned
 

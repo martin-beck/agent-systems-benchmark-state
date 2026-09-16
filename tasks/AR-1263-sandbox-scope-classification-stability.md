@@ -2,7 +2,7 @@
 {
   "branch": "fix/ar-1263-sandbox-scope-classification",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T23:40:52+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1238"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "fix/ar-1263-sandbox-scope-classification",
   "observed_dirty": 0,
   "observed_head": "0acbc1d1a8bf43a226fda503fbd76f8afd48eb07",
-  "owner": "asb_ar1263_sandbox_stability",
+  "owner": "",
   "plan": "../plans/AR-1263.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Stabilize intermittent sandbox scope classification in the quality gate.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Stabilize sandbox scope classification gate",
-  "updated_at": "2026-09-16T21:41:53+00:00",
+  "updated_at": "2026-09-16T21:42:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1263-sandbox-stability"
 }
 ---
@@ -180,3 +180,9 @@ fail-closed test/runner behavior and preserve the original semantic assertions.
   green. Protected-main merge commit is GitHub-authored and has no Signed-off-by trailer; git show
   --show-signature reports RSA B5690EEEBB952194 but local key unavailable. AR remains not done
   pending signed forward-only recovery and exact-main policy/post-merge gates.
+
+- 2026-09-16T21:42:01+00:00: Blocked after protected-main merge
+  ebfa37023e56269b8299254b535be60f3cf1d186: GitHub merge commit lacks Signed-off-by; local RSA
+  signature key unavailable. Feature commit 0acbc1d and all 12 exact-head checks are preserved
+  green. Requires signed forward-only protected-main recovery plus exact-main policy/post-merge
+  verification; AR is not complete.
