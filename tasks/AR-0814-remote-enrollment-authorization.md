@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Implement backend-owned BreakGlass admin authorization and v1.7 schemas/endpoint tests; preserve legacy schemas.",
+  "next_action": "Run full locked workspace gates and obtain independent review of v1.7 endpoint/schema slice.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "45310e625e1b3035984d65acd74ba62c00b13ada",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 210,
+  "task_revision": 211,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T18:57:55+00:00",
+  "updated_at": "2026-09-16T18:58:24+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -535,3 +535,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T18:57:47+00:00: Recorded command exit 0; command argv SHA-256
   70a59e8ac97fa9c1bacc61585d760c37911ff2bf69e3b6095cd37d5ae645534a.
+
+- 2026-09-16T18:58:24+00:00: Signed+DCO 45310e6 adds v1.7 BreakGlass request/response schemas and
+  checked-in generation; legacy v1-v1.6 schemas remain byte-identical via explicit variant pruning.
+  Added endpoint admin-context denial dispatch test and v1.7 positive/unknown-field plus v1.6
+  rejection conformance tests. Focused endpoint and schema suites pass 8/8 and 5/5; worktree clean.

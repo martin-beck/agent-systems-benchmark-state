@@ -1465,7 +1465,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | asb_ar0814_enrollment_authz | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Implement backend-owned BreakGlass admin authorization and v1.7 schemas/endpoint tests; preserve legacy schemas. |
+| P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | asb_ar0814_enrollment_authz | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Run full locked workspace gates and obtain independent review of v1.7 endpoint/schema slice. |
 | P1 | [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md): Extend MockAgents qualification harness | asb_ar1250_mockagents_harness | Extend the pinned MockAgents executable qualification harness. | Implement actual outbound-denial and arm64 repeat probes; run full locked gates. |
 | P1 | [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md): Qualify MockAgents through pinned Python transport | asb_ar1254_mockagents_transport_qualification | Qualify MockAgents through the pinned Python sandbox. | Implement real executable transport qualification before publication: invoke the pinned MockAgents artifact through run_isolated.py on amd64 and QEMU arm64; bind exact lock source/tag/commit/license/checksums and platform digests; add malformed/oversized body negatives, ordered tool-result/backpressure/cancellation terminal tests, descendant cleanup proof, actual outbound-denial probe inside network-none, and repeat-clean-state evidence. |
 
