@@ -7,7 +7,7 @@
   "id": "AR-1210",
   "next_action": "Independent exact-head review requested for pushed c010553; open PR only after approval. All product gates and focused tutorial tests pass.",
   "observed_branch": "docs/ar-1210-tutorial-contract",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "c010553b988bc0323fcfaf3741e0b00da5ab99a2",
   "owner": "asb_ar1210_tutorial_contract",
   "plan": "../plans/AR-1210.md",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define offline tutorial steps and validate them against the ASB CLI grammar.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Tutorial contract and syntax validator",
-  "updated_at": "2026-09-16T04:01:25+00:00",
+  "updated_at": "2026-09-16T04:01:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1210"
 }
 ---
