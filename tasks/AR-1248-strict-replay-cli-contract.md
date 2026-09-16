@@ -8,7 +8,7 @@
     "AR-1232"
   ],
   "id": "AR-1248",
-  "next_action": "Independent exact-head review requested for PR #197 at 8896cad; monitor four remaining required CI lanes, merge only after all green and reviewer approval.",
+  "next_action": "Review blocks merge: integrate resolver with runtime-issued SidecarHandoff/SandboxLaunchInput seam or narrow acceptance with coordinator; cross-validate cassette route/dialect and add malformed/executor lifecycle tests before new signed head.",
   "observed_branch": "feature/ar-1248-strict-replay-cli-contract",
   "observed_dirty": 0,
   "observed_head": "8896cad357e3677998d446e472aeec3cec8f3b7d",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T10:54:31+00:00",
+  "updated_at": "2026-09-16T10:54:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -169,3 +169,10 @@ formal, privacy, signature, DCO, and exact-tree gates.
 
 - 2026-09-16T10:54:31+00:00: Recorded command exit 0; command argv SHA-256
   457dad11b37c52ae4a46a832d7a082caacae43e9439a5c72cb55c17e0435bbed.
+
+- 2026-09-16T10:54:55+00:00: All 12 PR #197 CI checks are green at 8896cad, but independent review
+  correctly identifies implementation gaps: resolver emits StrictReplayLaunchRecord only, does not
+  construct runtime-issued SidecarHandoff/SandboxLaunchInput or supervised launch; route/provider
+  dialect are not cassette-cross-validated; missing malformed cassette and executor
+  lifecycle/egress/cancel/restart/no-fallback coverage. Do not merge until repaired or formally
+  narrowed.
