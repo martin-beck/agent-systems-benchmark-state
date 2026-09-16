@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1260.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Integrate strict replay with runtime-owned attestation and supervised sandbox execution.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Runtime-owned strict-replay integration",
-  "updated_at": "2026-09-16T20:41:01+00:00",
+  "updated_at": "2026-09-16T20:43:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1260-runtime"
 }
 ---
@@ -116,3 +116,7 @@ missing, stale, duplicated, or mismatched.
   Safe CLI slice is complete at signed 9e4a1c0 with focused/full/fmt/clippy/rustdoc gates green.
   Leave ownerless/open for a runtime-integrated successor that can issue attestation and wire
   supervised replay end to end; do not weaken fail-closed boundaries.
+
+- 2026-09-16T20:43:13+00:00: Dependency audit corrected: merged runtime APIs from PR #193/34243aa
+  are ancestors of protected main. Resume implementation to wire replay_plan dispatch through
+  runtime-issued supervised launch context; preserve fail-closed authority boundaries.

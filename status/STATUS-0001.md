@@ -12,8 +12,8 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 6 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 20 |
+| **Open** | Dependency-ready and available to claim | 7 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 19 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 194 |
@@ -353,7 +353,7 @@ flowchart LR
         AR_1257["AR-1257 - Planned"]:::status_planned
         AR_1258["AR-1258 - Blocked"]:::status_blocked
         AR_1259["AR-1259 - Done"]:::status_done
-        AR_1260["AR-1260 - Blocked"]:::status_blocked
+        AR_1260["AR-1260 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1466,7 +1466,7 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (6)
+### Open (7)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1475,9 +1475,10 @@ flowchart LR
 | P0 | [AR-1042](../tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Unclaimed | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. |
 | P0 | [AR-1044](../tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Unclaimed | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. |
 | P0 | [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | Unclaimed | Define the strict-replay CLI consumer contract. | Await a runtime-owned successor that supplies independently attested namespace capability plus supervised SandboxLaunchInput/ResourceLease. Then wire replay_plan through StrictReplayLaunchBridge::spawn and add real request/response, egress-denial, cancellation/restart/cleanup and no-fallback tests. Preserve PR #197 head 7d9c2ee and its green CI; do not fabricate namespace readiness in CLI. |
+| P0 | [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md): Runtime-owned strict-replay integration | Unclaimed | Integrate strict replay with runtime-owned attestation and supervised sandbox execution. | Request independent exact-head review of 9e4a1c0 and confirm runtime lifecycle/egress delegation boundaries; do not claim CLI end-to-end child execution without runtime-issued context. |
 | P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Unclaimed | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Coordinator must create and link the successor AR for certificate issuance/chain validation and trusted route/ancestor authority; preserve this exact clean head and do not publish/close as fully complete until successor scope and bounded acceptance are recorded. |
 
-### Blocked (20)
+### Blocked (19)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1487,7 +1488,6 @@ flowchart LR
 | P0 | [AR-1181](../tasks/AR-1181.md): TLA admission | Unclaimed | Bound ASB TLC memory. | Correct AR-1181 repository/worktree metadata to a state-repository branch/worktree, then implement missing tools/tlc_runner.py with bounded admission; current declared path is an ASB product checkout and must not be mutated. |
 | P0 | [AR-1210](../tasks/AR-1210-tutorial-contract-validator.md): Tutorial contract and syntax validator | Unclaimed | Define offline tutorial steps and validate them against the ASB CLI grammar. | Do not release AR-1210 yet: post-merge Repository quality run 35054743606 failed because protected merge commit 4d4a0c4 lacks Signed-off-by. Coordinate merge-integrity/DCO repair and rerun exact-main assurance; preserve merged main and all evidence. |
 | P0 | [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md): Protected merge-tree remediation | Unclaimed | Remediate the protected-main merge-tree mismatch from stale-base PR merging. | Historical reproduction confirms policy rejects ef82484 before merge-tree comparison because its RSA/GPG signature is not in the allowed SSH trust set. Current clean branch is fd7daa4; create a signed-DCO current-main topic repair, then rerun policy and exact-head gates. |
-| P0 | [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md): Runtime-owned strict-replay integration | Unclaimed | Integrate strict replay with runtime-owned attestation and supervised sandbox execution. | Request independent exact-head review of 9e4a1c0 and confirm runtime lifecycle/egress delegation boundaries; do not claim CLI end-to-end child execution without runtime-issued context. |
 | P1 | [AR-0604](../tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain coordinator-authorized native x86_64 runner/container and immutable CSB source root plus interpreter bytes matching Python 3.12.3 SHA-256 1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118. Docker is currently inaccessible; qemu cannot substitute native x86 evidence. Then rerun native_boundary and record A/B/overhead evidence. |
 | P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | Formal assurance owner AR-0877/AR-0907 must repair the pinned TLA artifact provenance mismatch (downloaded byte count/hash) before PR #119 can be requalified; AR-0704 native controller requires no source change. |
 | P1 | [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Unclaimed | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. |
