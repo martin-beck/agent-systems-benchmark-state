@@ -10,16 +10,16 @@
   "next_action": "Add certificate ceremony stolen/expiry/wrong-route and audit tamper negatives; then rerun full locked gates.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
-  "observed_head": "304e919dac2965e6ef0da08fcb93c8ffda4ac912",
+  "observed_head": "a1ac8e18ce3d662e3e2ea6bd20d4798b4d3d6961",
   "owner": "asb_ar0814_enrollment_authz",
   "plan": "../plans/AR-0814.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 274,
+  "task_revision": 275,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:40:38+00:00",
+  "updated_at": "2026-09-16T19:40:45+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
