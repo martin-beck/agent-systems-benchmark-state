@@ -2,7 +2,7 @@
 {
   "branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T07:20:43+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -15,15 +15,15 @@
   "observed_branch": "fix/mini-swe-cancellation-reap-test-isolation",
   "observed_dirty": 0,
   "observed_head": "aba1f8cded472a6055d8a854c1627a20f7f5b0ac",
-  "owner": "asb_ar0909_repair",
+  "owner": "",
   "plan": "../plans/AR-0909.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make mini-SWE cancellation/reaping tests deterministic without weakening production lifecycle guarantees.",
-  "task_revision": 471,
+  "task_revision": 472,
   "title": "Harden mini-SWE cancellation reap test isolation",
-  "updated_at": "2026-09-16T05:21:42+00:00",
+  "updated_at": "2026-09-16T05:21:51+00:00",
   "worktree_key": "agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation"
 }
 ---
@@ -1566,3 +1566,8 @@ classified.
   AArch64, formal, policy, Rust, fault, platform, headers, AWQ, fuzz, Kani, matcher, and Loom. The
   intermediate GitHub merge 00f3763 was unsigned, but AR-0897 restored signed/DCO integration in
   7d43c1e without rewriting history.
+
+- 2026-09-16T05:21:51+00:00: Completed and post-merge verified. PR127 aba1f8c is included as second
+  parent in signed/DCO protected main merge 7d43c1e; main tree 7a81f23 and all required post-merge
+  checks green. Intermediate unsigned 00f3763 is preserved as historical evidence; AR-0897 signed
+  integration restored protected main integrity.
