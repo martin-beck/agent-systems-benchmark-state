@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 185,
+  "task_revision": 186,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T18:32:55+00:00",
+  "updated_at": "2026-09-16T18:36:25+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -494,3 +494,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-16T18:32:55+00:00: Signed+DCO f4e9fc1 wires BreakGlass request validation, minimum-version
   result matching, and BreakGlassAcknowledged result variant; cargo check -p asb-control passes.
   Endpoint/CLI/schema generation remain.
+
+- 2026-09-16T18:36:25+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
