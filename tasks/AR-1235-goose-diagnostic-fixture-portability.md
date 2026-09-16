@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1235-goose-fixture-portability",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T08:13:10+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1235-goose-fixture-portability",
   "observed_dirty": 3,
   "observed_head": "fd7daa43549edd67b60076aa6b1eee333061b438",
-  "owner": "asb_ar1235_goose_portability",
+  "owner": "",
   "plan": "../plans/AR-1235.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Repair Goose diagnostic fixture portability under emulated AArch64.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Portable Goose diagnostic fixture",
-  "updated_at": "2026-09-16T06:14:15+00:00",
+  "updated_at": "2026-09-16T06:14:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1235"
 }
 ---
@@ -152,3 +152,9 @@ its intended diagnostic error assertion. Preserve the failure and repair the fix
 - 2026-09-16T06:14:15+00:00: 2026-09-16T06:14Z: handoffctl-run recorded workflow dispatch failure;
   raw GitHub API response was HTTP 422 No ref found for exact commit SHA. This is an external
   workflow API/ref limitation, not a product result. No source changes.
+
+- 2026-09-16T06:14:22+00:00: Released blocked/ownerless 2026-09-16T06:14Z. Exact-SHA workflow
+  dispatch is unavailable: GitHub rejects raw commit refs with HTTP 422 No ref found; dispatch
+  requires branch/tag. Prior exact-head rerun 35060286408 was monitored and local QEMU evidence is
+  10/10 green. Reopen only using a temporary reviewed branch/tag at fd7daa4 or a new authoritative
+  hosted artifact.
