@@ -22,7 +22,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1100` | `feature/ar-1100` | `38c039975077` | 0 | behind 143, ahead 2 |
 | `agent-systems-benchmark-ar-1110` | `feature/ar-1110` | `d16d8d08f5d5` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-ar-1120` | `feature/ar-1120` | `f64985ad3502` | 0 | behind 15, ahead 0 |
-| `agent-systems-benchmark-ar-1130` | `feature/ar-1130` | `eee2c41ba14a` | 0 | behind 0, ahead 1 |
+| `agent-systems-benchmark-ar-1130` | `feature/ar-1130` | `eee2c41ba14a` | 2 | behind 0, ahead 1 |
+| changed files | - | - | - | `crates/asb-cli/src/lib.rs`, `crates/asb-cli/src/provider_launch.rs` |
 | `agent-systems-benchmark-ar-1228-auth-backends-probes` | `feature/ar-1228-auth-backends-probes` | `2d716c8cac94` | 0 | behind 42, ahead 0 |
 | `agent-systems-benchmark-ar-1229-auth-application-integration` | `feature/ar-1229-auth-application-integration` | `b33d6da59ba9` | 0 | behind 22, ahead 0 |
 | `agent-systems-benchmark-ar-1230-authenticated-provider-request-seam` | `feature/ar-1230-authenticated-provider-request-seam` | `3d0349af1a56` | 0 | behind 58, ahead 0 |
