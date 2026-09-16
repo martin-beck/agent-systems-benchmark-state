@@ -124,8 +124,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-measurement-catalog-second-recovery` | `docs/measurement-catalog-second-recovery` | `4a7eb724c601` | 0 | behind 193, ahead 0 |
 | `agent-systems-benchmark-measurement-catalog-semantics` | `feature/measurement-catalog-semantics` | `78c63febc0ce` | 0 | behind 197, ahead 0 |
 | `agent-systems-benchmark-measurement-selection-plan` | `feature/measurement-selection-plan` | `819de6934a42` | 0 | behind 171, ahead 0 |
-| `agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation` | `fix/mini-swe-cancellation-reap-test-isolation` | `592b56f04b03` | 1 | behind 95, ahead 12 |
-| changed files | - | - | - | `crates/asb-agents/src/mini_swe.rs` |
+| `agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation` | `fix/mini-swe-cancellation-reap-test-isolation` | `0e8ee8d47529` | 0 | behind 95, ahead 13 |
 | `agent-systems-benchmark-mockagents-executable-qualification` | `test/mockagents-executable-qualification` | `3f1de4106adf` | 0 | behind 248, ahead 0 |
 | `agent-systems-benchmark-modern-terminal-rendering` | `feature/modern-terminal-rendering` | `fd1989a096a3` | 0 | behind 285, ahead 0 |
 | `agent-systems-benchmark-native-capacity-controller` | `feature/native-capacity-controller` | `28f30eea80ef` | 0 | behind 221, ahead 3 |
