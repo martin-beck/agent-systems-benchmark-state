@@ -10,16 +10,16 @@
   "next_action": "Implement remaining durable pairing ceremony dispatch and certificate threat negatives; then rerun full locked gates.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
-  "observed_head": "7f70cafb4d003886e933430c8971a080ada68ff0",
+  "observed_head": "304e919dac2965e6ef0da08fcb93c8ffda4ac912",
   "owner": "asb_ar0814_enrollment_authz",
   "plan": "../plans/AR-0814.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 271,
+  "task_revision": 272,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:39:32+00:00",
+  "updated_at": "2026-09-16T19:39:39+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
