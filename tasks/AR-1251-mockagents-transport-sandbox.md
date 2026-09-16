@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1251-mockagents-transport-sandbox",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T13:01:57+00:00",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1251-mockagents-transport-sandbox",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "asb_ar1251_transport_sandbox",
   "plan": "../plans/AR-1251.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add a bounded transport and sandbox fixture for MockAgents qualification.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Add MockAgents transport sandbox fixture",
-  "updated_at": "2026-09-16T11:01:38+00:00",
+  "updated_at": "2026-09-16T11:01:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1251"
 }
 ---
@@ -31,3 +31,5 @@ preserve privacy, network-denial, signature, DCO, and exact-tree gates.
 
 - 2026-09-16T11:01:38+00:00: AR-1250 established current HTTP harness cannot safely prove
   transport/sandbox lifecycle; promote bounded fixture successor.
+
+- 2026-09-16T11:01:57+00:00: Claimed by asb_ar1251_transport_sandbox.
