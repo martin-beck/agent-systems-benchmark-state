@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-issued cassette-service handle for supervised strict replay.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Runtime-issued cassette-service handle",
-  "updated_at": "2026-09-16T23:06:10+00:00",
+  "updated_at": "2026-09-16T23:06:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1270-runtime-cassette-handle"
 }
 ---
@@ -37,4 +37,7 @@ the CLI.
 - 2026-09-16T23:05:11+00:00: Claimed by asb_ar1024_lifecycle_router.
 
 - 2026-09-16T23:06:03+00:00: Recorded command exit 1; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
+
+- 2026-09-16T23:06:28+00:00: Recorded command exit 0; command argv SHA-256
   cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
