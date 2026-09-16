@@ -197,7 +197,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-redacted-request-pointer-replay` | `feature/redacted-request-pointer-replay` | `d7492ef5e9ad` | 0 | behind 635, ahead 0 |
 | `agent-systems-benchmark-reliability-fairness` | `feature/reliability-fairness` | `eb28ca7aeae5` | 0 | behind 681, ahead 0 |
 | `agent-systems-benchmark-remote-control-transport` | `feature/remote-control-transport` | `b7d9e142d684` | 0 | behind 5, ahead 0 |
-| `agent-systems-benchmark-remote-enrollment-authz` | `feature/remote-enrollment-authz` | `1f10fc402085` | 0 | behind 0, ahead 31 |
+| `agent-systems-benchmark-remote-enrollment-authz` | `feature/remote-enrollment-authz` | `0a5f47021bc5` | 0 | behind 0, ahead 32 |
 | `agent-systems-benchmark-replay-aider` | `feature/replay-aider` | `ec0a2930690c` | 0 | behind 643, ahead 0 |
 | `agent-systems-benchmark-replay-cassettes` | `feature/replay-cassettes` | `cd88f5703fb3` | 0 | behind 763, ahead 0 |
 | `agent-systems-benchmark-replay-codex` | `feature/replay-codex` | `d086fec11f59` | 0 | behind 633, ahead 0 |
