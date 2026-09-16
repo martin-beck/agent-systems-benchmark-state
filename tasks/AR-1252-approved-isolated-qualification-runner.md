@@ -9,7 +9,7 @@
   "id": "AR-1252",
   "next_action": "Add fixture-backed network-none/timeout/no-mount tests; run full gates and integrate with AR-1251.",
   "observed_branch": "feature/ar-1252-approved-isolated-runner",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "12000665dec462c3e8537ff1424dea7691011a92",
   "owner": "asb_ar1252_isolated_runner",
   "plan": "../plans/AR-1252.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:11:40+00:00",
+  "updated_at": "2026-09-16T11:11:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
