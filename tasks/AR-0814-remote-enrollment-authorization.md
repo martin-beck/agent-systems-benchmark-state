@@ -9,17 +9,17 @@
   "id": "AR-0814",
   "next_action": "Implement durable identity-store write/pairing completion and threat-matrix tests; retain fail-closed SecretBackend.",
   "observed_branch": "feature/remote-enrollment-authz",
-  "observed_dirty": 1,
-  "observed_head": "1e5508e850c7c7d96d041a3ffbca64e2702f1b77",
+  "observed_dirty": 0,
+  "observed_head": "1f10fc40208510725c25f695db0319fb6fa7f6c5",
   "owner": "asb_ar0814_enrollment_authz",
   "plan": "../plans/AR-0814.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 259,
+  "task_revision": 260,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:34:07+00:00",
+  "updated_at": "2026-09-16T19:34:15+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
