@@ -2,7 +2,7 @@
 {
   "branch": "fix/ar-1246-protected-main-dco-flow",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T11:50:36+00:00",
   "depends_on": [
     "AR-1242",
     "AR-1245"
@@ -12,15 +12,15 @@
   "observed_branch": "fix/ar-1246-protected-main-dco-flow",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "asb_ar1237_launch_bridge_worker",
   "plan": "../plans/AR-1246.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Durably admit authenticated GitHub protected-main merges without one-off DCO hash exceptions.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Protected-main DCO flow",
-  "updated_at": "2026-09-16T09:50:24+00:00",
+  "updated_at": "2026-09-16T09:50:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1246"
 }
 ---
@@ -30,3 +30,5 @@ handoffctl. Preserve all published history and do not touch runtime, bundle, or 
 
 - 2026-09-16T09:50:24+00:00: PR-194 repeated the GitHub merge DCO failure; approved durable
   protected-main web-flow validation instead of per-merge hash exceptions.
+
+- 2026-09-16T09:50:36+00:00: Claimed by asb_ar1237_launch_bridge_worker.

@@ -8,6 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1244](tasks/AR-1244-publish-replay-supervision.md): Publish AR-1232 strict-replay supervision | Publish strict-replay supervision integration. | Monitor fresh PR193 CI at 7ceb522; review exact head and merge only after all required checks green. | asb_ar1244_publish_1232 |
+| P0 | [AR-1246](tasks/AR-1246-protected-main-dco-flow.md): Protected-main DCO flow | Durably admit authenticated GitHub protected-main merges without one-off DCO hash exceptions. | Implement protected-main-aware DCO validation using the authenticated web-flow merge attestation; retain strict topic and PR checks. | asb_ar1237_launch_bridge_worker |
 
 ## Open
 
@@ -17,7 +18,6 @@ Never edit this file directly.
 | P0 | [AR-1024](tasks/AR-1024-asb-tui-lifecycle-router.md): Implement `asb tui` lifecycle routing | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. | - |
 | P0 | [AR-1042](tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. | - |
 | P0 | [AR-1044](tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. | - |
-| P0 | [AR-1246](tasks/AR-1246-protected-main-dco-flow.md): Protected-main DCO flow | Durably admit authenticated GitHub protected-main merges without one-off DCO hash exceptions. | Implement protected-main-aware DCO validation using the authenticated web-flow merge attestation; retain strict topic and PR checks. | - |
 
 ## Blocked
 
