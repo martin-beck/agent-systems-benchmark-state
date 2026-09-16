@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 255,
+  "task_revision": 256,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:29:43+00:00",
+  "updated_at": "2026-09-16T19:31:50+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -698,3 +698,6 @@ Implementation has not started. Read the linked plan before claiming.
   exposing certificate identity only after successful one-time pairing confirmation for safe
   persistence. Pending pairing now fails closed; confirmed identity fingerprint is asserted in auth
   tests. Focused pairing test passes with all filtered suites clean; worktree clean.
+
+- 2026-09-16T19:31:50+00:00: Recorded command exit 101; command argv SHA-256
+  321822d2b0f1354ded60ff8416cb370fc4d769662a9c50e0547b167c946ff208.
