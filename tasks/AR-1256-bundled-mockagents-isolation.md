@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1256.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Execute bundled MockAgents transport in isolation.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Execute bundled MockAgents transport in isolation",
-  "updated_at": "2026-09-16T13:59:39+00:00",
+  "updated_at": "2026-09-16T14:02:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1256"
 }
 ---
@@ -43,3 +43,6 @@ Keep bundles, images, QEMU artifacts, caches, and evidence under `/srv/data/proj
   qualify a digest-pinned multiarch/QEMU image, then bundle Python fixture plus MockAgents in one
   read-only input and prove actual parsed transport, outbound denial, cancellation/backpressure,
   descendant cleanup and arm64 repeats.
+
+- 2026-09-16T14:02:17+00:00: Official Python 3.13.15 slim arm64 digest ae8c3b6 is available;
+  provision and qualify both immutable platform images through Docker.
