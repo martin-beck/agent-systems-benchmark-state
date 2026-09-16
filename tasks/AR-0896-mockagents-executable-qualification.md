@@ -8,7 +8,7 @@
     "AR-0889"
   ],
   "id": "AR-0896",
-  "next_action": "Rerun 34339927858 was launched via handoffctl and is actively watched by PID 736624/gh PID 736653; exact rerun head a4e1a9de985a4c9f22628c6d604a6e62f4f173e3, job 104684371738 currently running. Keep lease heartbeat, wait terminal, then capture failures or green result.",
+  "next_action": "Remain blocked until the complete pinned MockAgents hostile qualification is implemented and rerun: tool/tool-result, cancellation/backpressure, outbound-denial, repeated-clean-state, and executable arm64 QEMU cases with deterministic evidence. Do not select MockAgents or advance AR-0890.",
   "observed_branch": "test/mockagents-executable-qualification",
   "observed_dirty": 0,
   "observed_head": "3f1de4106adf9ad6c34759638d70e9001709ab0a",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-16T18:37:29+00:00",
+  "updated_at": "2026-09-16T18:37:51+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -192,3 +192,13 @@ synthetic fixture for black-box executable evidence.
 
 - 2026-09-16T18:37:29+00:00: Recorded command exit 0; command argv SHA-256
   e609cfb1fc3433237ec8d5b05d300f7244fe2a2b3f5012538a16f884210a2a1a.
+
+- 2026-09-16T18:37:51+00:00: Recovery verification: no prior owner/watch process exists. Hosted
+  Repository quality rerun 34339927858 is terminal SUCCESS at exact
+  a4e1a9de985a4c9f22628c6d604a6e62f4f173e3 (job 104684371738), so the earlier test-isolation failure
+  is unreproduced. Through handoffctl, local pinned qualification command `python3
+  tools/llm-double-spike/test_qualify_mockagents.py -q` completed 3/3 OK on existing clean worktree
+  head 3f1de4106adf9ad6c34759638d70e9001709ab0a. This does not satisfy AR acceptance: durable prior
+  review explicitly records missing hostile tool/tool-result, cancellation/backpressure,
+  outbound-denial, repeated fresh-state determinism, and exact arm64 executable qualification. No
+  product mutation or support-catalog change made.
