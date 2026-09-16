@@ -2,7 +2,7 @@
 {
   "branch": "test/mockagents-executable-qualification",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T08:50:03+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -12,15 +12,15 @@
   "observed_branch": "test/mockagents-executable-qualification",
   "observed_dirty": 0,
   "observed_head": "3f1de4106adf9ad6c34759638d70e9001709ab0a",
-  "owner": "asb_ar0896_qualification",
+  "owner": "",
   "plan": "../plans/AR-0896.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-16T08:20:03+00:00",
+  "updated_at": "2026-09-16T08:20:31+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -171,3 +171,10 @@ synthetic fixture for black-box executable evidence.
   a4e1a9de evidence and reassign terminal qualification audit.
 
 - 2026-09-16T08:20:03+00:00: Claimed by asb_ar0896_qualification.
+
+- 2026-09-16T08:20:31+00:00: Terminal rerun 34339927858 succeeded at exact signed head a4e1a9de (job
+  104684371738), confirming prior test-isolation issue is not reproducible. However AR-0896
+  acceptance remains unmet: prior durable qualification evidence explicitly lacks hostile
+  tool/tool-result, cancellation/backpressure, outbound-denial, repeated-clean-state, and emulated
+  arm64 executable cases. Therefore MockAgents v0.5.0 remains unqualified and AR-0890 must remain
+  blocked; no product mutation or support claim made.
