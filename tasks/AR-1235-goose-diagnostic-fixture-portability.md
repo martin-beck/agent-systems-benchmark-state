@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-1235",
-  "next_action": "Focused x86 reproduction passed at fd7daa4: cargo test --locked --offline -p asb-agents goose::tests::diagnostic_and_symlink_fail_closed -- --exact --nocapture, 1 passed; this cannot reproduce AArch64 exit 127. Next run the same test under the repository AArch64 runner/emulation and inspect shell fixture process status before changing assertions.",
+  "next_action": "Cross-architecture reproduction completed under pinned-style qemu-aarch64 with Ubuntu arm64 sysroot: cargo +1.93.0 test --offline --locked --manifest-path /srv/data/projects/agent-systems-benchmark-ar-1235/Cargo.toml --target aarch64-unknown-linux-gnu -p asb-agents --lib goose::tests::diagnostic_and_symlink_fail_closed -- --exact --nocapture passed 1/1. The earlier exit 101 was a command setup error: cargo was run from state repo without --manifest-path and could not find Cargo.toml; corrected command passed. Compare against postmerge run 35060286408 remains necessary before any fixture change; no source fix justified by current reproduction.",
   "observed_branch": "feature/ar-1235-goose-fixture-portability",
   "observed_dirty": 0,
   "observed_head": "fd7daa43549edd67b60076aa6b1eee333061b438",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair Goose diagnostic fixture portability under emulated AArch64.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Portable Goose diagnostic fixture",
-  "updated_at": "2026-09-16T05:51:20+00:00",
+  "updated_at": "2026-09-16T05:51:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1235"
 }
 ---
@@ -56,3 +56,9 @@ its intended diagnostic error assertion. Preserve the failure and repair the fix
 
 - 2026-09-16T05:51:20+00:00: Recorded command exit 0; command argv SHA-256
   742b923da43da4e8966969dac25f17671b021fbce4e5d80df8d11fe6742d9582.
+
+- 2026-09-16T05:51:40+00:00: 2026-09-16T05:52Z: Diagnosed exit 101 as invocation error (state repo
+  has no Cargo.toml), not product/test failure. Corrected emulated AArch64 command with qemu-aarch64
+  and /srv/data/projects/.asb-local/ar0909-arm64-root sysroot; test passed 1/1. This does not
+  reproduce reported exit 127. Preserve red postmerge evidence and do not alter assertions without
+  causal reproduction.
