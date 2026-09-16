@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 224,
+  "task_revision": 225,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:01:31+00:00",
+  "updated_at": "2026-09-16T19:01:35+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -583,3 +583,6 @@ Implementation has not started. Read the linked plan before claiming.
   full locked workspace gate at 40838db, no complete threat-matrix evidence (wrong-IP/stolen/expiry,
   confused deputy, audit tamper, recovery). Do not publish from dirty tree; resolve
   capability/authorization semantics and rerun full gates.
+
+- 2026-09-16T19:01:35+00:00: Recorded command exit 0; command argv SHA-256
+  23c6be065f2e6f5332fcb69e029bffc7c03f6590ac00ee526e996409447dc6c5.
