@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T17:48:20+00:00",
+  "updated_at": "2026-09-16T17:49:28+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -135,3 +135,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-16T17:48:20+00:00: Signed+DCO f8714ca adds CertificateIdentityV1 and one-time
   EnrollmentPairingV1. Pairing requires exact out-of-band fingerprint and unexpired code, stores
   only code digest, rejects replay/expiry/malformed identities/unknown fields. Auth suite: 9 passed.
+
+- 2026-09-16T17:49:28+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
