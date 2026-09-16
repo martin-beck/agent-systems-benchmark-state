@@ -69,7 +69,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1269-runtime-launch-factory` | `feature/ar-1269-runtime-replay-launch-factory` | `2220c899650d` | 0 | behind 0, ahead 3 |
 | `agent-systems-benchmark-ar-1270-runtime-cassette-handle` | `feature/ar-1270-runtime-cassette-handle` | `4828b400eb8f` | 0 | behind 0, ahead 4 |
 | `agent-systems-benchmark-ar-1271-cassette-operation` | `feature/ar-1271-cassette-operation-contract` | `af60454e00ba` | 4 | behind 0, ahead 2 |
-| changed files | - | - | - | `Cargo.lock`, `crates/asb-cli/Cargo.toml`, `crates/asb-cli/src/lib.rs`, `crates/asb-cli/src/cassette_operation.rs` |
+| changed files | - | - | - | `Cargo.lock`, `crates/asb-cli/Cargo.toml`, `crates/asb-cli/src/cassette_operation.rs`, `crates/asb-cli/src/lib.rs` |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 509, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 612, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 506, ahead 0 |
