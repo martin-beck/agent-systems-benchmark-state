@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-0897",
-  "next_action": "Run PR188 exact-head CI/review, then create signed recovery merge and verify protected-main policy.",
+  "next_action": "Monitor exact-main CI for signed recovery c261af0, then verify policy and close AR-0897.",
   "observed_branch": "DETACHED",
   "observed_dirty": 0,
   "observed_head": "ebaf0ce7912205ed544b865a6a3b795d9e9cfe21",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 194,
+  "task_revision": 195,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-16T08:10:07+00:00",
+  "updated_at": "2026-09-16T08:10:39+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -614,3 +614,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T08:10:07+00:00: Recorded command exit 0; command argv SHA-256
   23c24746f25f8361b4fe925b7771121b3c140f9050dcc16678c818a479879a22.
+
+- 2026-09-16T08:10:39+00:00: PR188 exact head ebaf0ce was independently reviewed: base a7a64bcc, one
+  docs file, clean SSH-signed+DCO, all 12 required checks green. Signed merge_pr.py published
+  c261af0 with exact parents a7a64bcc/ebaf0ce and exact tree c7daf0c. Remote main matches and merge
+  signature/DCO verify. Exact-main workflows 35072310869, 35072310763, 35072310761, 35072310720,
+  35072310709, 35072310706 are running. State post-reconcile reported unrelated expired AR-0896; no
+  product merge failure.
