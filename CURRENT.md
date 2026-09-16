@@ -3,6 +3,12 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
+## In Progress
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1248](tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | Define the strict-replay CLI consumer contract. | Await a runtime-owned successor that supplies independently attested namespace capability plus supervised SandboxLaunchInput/ResourceLease. Then wire replay_plan through StrictReplayLaunchBridge::spawn and add real request/response, egress-denial, cancellation/restart/cleanup and no-fallback tests. Preserve PR #197 head 7d9c2ee and its green CI; do not fabricate namespace readiness in CLI. | coordinator-successor-creation |
+
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -11,7 +17,6 @@ Never edit this file directly.
 | P0 | [AR-1024](tasks/AR-1024-asb-tui-lifecycle-router.md): Implement `asb tui` lifecycle routing | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. | - |
 | P0 | [AR-1042](tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. | - |
 | P0 | [AR-1044](tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. | - |
-| P0 | [AR-1248](tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | Define the strict-replay CLI consumer contract. | Await a runtime-owned successor that supplies independently attested namespace capability plus supervised SandboxLaunchInput/ResourceLease. Then wire replay_plan through StrictReplayLaunchBridge::spawn and add real request/response, egress-denial, cancellation/restart/cleanup and no-fallback tests. Preserve PR #197 head 7d9c2ee and its green CI; do not fabricate namespace readiness in CLI. | - |
 | P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Coordinator must create and link the successor AR for certificate issuance/chain validation and trusted route/ancestor authority; preserve this exact clean head and do not publish/close as fully complete until successor scope and bounded acceptance are recorded. | - |
 
 ## Blocked
@@ -69,6 +74,7 @@ Never edit this file directly.
 | P0 | [AR-1215](tasks/AR-1215-result-comparison.md): Multi-agent result comparison tutorial | Teach conservative comparison of multiple agents from the same benchmark. | Implement the syntax-checked tutorial for comparing two or more agents on one benchmark definition. | - |
 | P0 | [AR-1216](tasks/AR-1216-tutorial-freshness-ci.md): ASB tutorial freshness CI and documentation qualification | Continuously keep ASB tutorial commands and steps syntactically current. | Implement the repository-wide tutorial discovery and syntax-freshness CI gate after all tutorial contracts are defined. | - |
 | P0 | [AR-1227](tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. | - |
+| P0 | [AR-1262](tasks/AR-1262-runtime-owned-launch-authority.md): Runtime-owned strict-replay launch authority | Issue runtime-owned authority for supervised strict-replay execution. | Promote and claim after reconciliation; implement the runtime-owned one-shot launch authority and prove supervised strict-replay lifecycle. | - |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. | - |
 | P1 | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. | - |
 | P1 | [AR-0810](tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project's GitHub Pages site. | - |

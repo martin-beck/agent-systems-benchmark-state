@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1248-strict-replay-cli-contract",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T21:27:11+00:00",
   "depends_on": [
     "AR-1231",
     "AR-1232"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1248-strict-replay-cli-contract",
   "observed_dirty": 0,
   "observed_head": "7d9c2ee2e08b9d61cb03837236918575405fb5c2",
-  "owner": "",
+  "owner": "coordinator-successor-creation",
   "plan": "../plans/AR-1248.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 154,
+  "task_revision": 155,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T20:46:57+00:00",
+  "updated_at": "2026-09-16T20:57:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -453,3 +453,5 @@ formal, privacy, signature, DCO, and exact-tree gates.
 
 - 2026-09-16T20:46:57+00:00: AR-1261 depends on integrated runtime APIs only; AR-1260 remains
   blocked predecessor, avoiding dependency cycle.
+
+- 2026-09-16T20:57:11+00:00: Claimed by coordinator-successor-creation.
