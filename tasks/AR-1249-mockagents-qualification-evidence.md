@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1249-mockagents-qualification-evidence",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T19:15:26+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1249-mockagents-qualification-evidence",
   "observed_dirty": 0,
   "observed_head": "128ecddbfdb7fcfff6e257adf3237b5866aca481",
-  "owner": "asb_ar1249_mockagents_qualification",
+  "owner": "",
   "plan": "../plans/AR-1249.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Complete missing evidence for the pinned MockAgents executable qualification.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Complete MockAgents executable qualification evidence",
-  "updated_at": "2026-09-16T18:45:39+00:00",
+  "updated_at": "2026-09-16T18:45:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1249"
 }
 ---
@@ -128,3 +128,8 @@ network denial, privacy, signature, DCO, and exact-tree gates.
 
 - 2026-09-16T18:45:39+00:00: Recorded command exit 0; command argv SHA-256
   d04aa803a9fcb854b247572f9b417fd1935a57ca978bb887d2e7c188e99db043.
+
+- 2026-09-16T18:45:48+00:00: Qualification remains blocked: pinned MockAgents v0.5.0 configured
+  truncate_after_chunks hostile case still emits terminal [DONE] (HTTP 200 SSE, bounded response),
+  so no strict lifecycle/network qualification claim. Local unvalidated fixture edits were reverted;
+  branch is clean and ownerless.
