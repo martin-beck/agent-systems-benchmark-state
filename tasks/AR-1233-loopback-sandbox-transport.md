@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1233",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T08:56:23+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1231",
     "AR-1100"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1233",
   "observed_dirty": 0,
   "observed_head": "143213c1d09c5c22d9cd0dec0ca55c2adb29b201",
-  "owner": "asb_ar1233_worker_next",
+  "owner": "",
   "plan": "../plans/AR-1233.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide an authenticated loopback-only sandbox transport for strict replay services.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Approved loopback-only sandbox transport",
-  "updated_at": "2026-09-16T06:57:00+00:00",
+  "updated_at": "2026-09-16T06:59:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1233"
 }
 ---
@@ -125,3 +125,13 @@
 
 - 2026-09-16T06:57:00+00:00: Recorded command exit 0; command argv SHA-256
   11ffcb963c42c8258c3750780d6aecbaebf4cb4599e7f9a569a11807e20da998.
+
+- 2026-09-16T06:59:19+00:00: AR-1233 pass completed without product changes. Existing LoopbackOnly
+  remains fail-closed at signed head 143213c: backend rejects spawn because rootless bubblewrap
+  private namespace cannot provision an attested listener/relay. Native isolation test passed (host
+  loopback unreachable); focused malformed policy test passed; full locked offline workspace tests
+  passed 166, 1 ignored, with initial bundle verifier path failure caused by target relocation and
+  rerun passing; fmt and clippy -D warnings passed. No host-network sharing, firewall mutation,
+  privileged helper, or other AR touched. Next action: integrate a reviewed runtime-owned per-launch
+  authenticated bridge/adapter from approved dependency, then run real cassette success plus
+  provider-egress denial, stale/duplicate, teardown, and non-interference tests.
