@@ -8,7 +8,7 @@
     "AR-0897"
   ],
   "id": "AR-1242",
-  "next_action": "Promote after dependency verification; audit protected-branch merge modes and add fail-closed admission controls for signed SSH+DCO merges.",
+  "next_action": "Resolve GitHub settings permission failure, then add and gate fail-closed protected-main admission fixtures.",
   "observed_branch": "fix/protected-main-admission",
   "observed_dirty": 0,
   "observed_head": "606375f613fc195f3e9ff697253f1cf20a3fec72",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent protected-main admission from creating unsigned GitHub merge commits.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Enforce signed protected-main admission",
-  "updated_at": "2026-09-16T08:46:33+00:00",
+  "updated_at": "2026-09-16T08:46:59+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-admission"
 }
 ---
@@ -43,3 +43,10 @@ It must not weaken native, formal, privacy, signature, DCO, exact-tree, or post-
 
 - 2026-09-16T08:46:33+00:00: Recorded command exit 1; command argv SHA-256
   f2fe03c5bf3191d2e20bb15f3b3efff082d6b7634c123fd09cf82850b33ace2e.
+
+- 2026-09-16T08:46:59+00:00: Created isolated worktree at main 606375f and audited repository
+  settings: allow_merge_commit is still enabled. Authorized repository_settings.py --apply failed
+  closed with generic GitHub settings update failure; no setting mutation can be claimed. Existing
+  integration tool and policy are present, but recurring GitHub web merges 1c07e90/a7a64bc/606375f
+  prove prevention remains incomplete. Preserve all history and obtain settings authority before
+  retry.
