@@ -1462,7 +1462,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0813](../tasks/AR-0813-remote-control-transport.md): Add secure remote control transport | asb_ar0813_remote_transport | Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client. | Request independent review of signed 7b4168f; monitor fresh exact-head CI. |
+| P1 | [AR-0813](../tasks/AR-0813-remote-control-transport.md): Add secure remote control transport | asb_ar0813_remote_transport | Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client. | Publish PR from exact clean signed head 7b4168ff via handoffctl; monitor exact-head CI and obtain required independent approval before signed protected merge. Preserve bounded transport-level fault claims. |
 
 ### Open (4)
 

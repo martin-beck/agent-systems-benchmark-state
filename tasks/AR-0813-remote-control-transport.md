@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0813",
-  "next_action": "Request independent review of signed 7b4168f; monitor fresh exact-head CI.",
+  "next_action": "Publish PR from exact clean signed head 7b4168ff via handoffctl; monitor exact-head CI and obtain required independent approval before signed protected merge. Preserve bounded transport-level fault claims.",
   "observed_branch": "feature/remote-control-transport",
   "observed_dirty": 0,
   "observed_head": "52ee2b13d809b0147f54f4f370face7fb14807b0",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 227,
+  "task_revision": 228,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T15:34:29+00:00",
+  "updated_at": "2026-09-16T15:34:41+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -692,3 +692,16 @@ Implementation has not started. Read the linked plan before claiming.
   transient workspace sandbox test passed on focused rerun.
 
 - 2026-09-16T15:34:29+00:00: Heartbeat by asb_ar0813_remote_transport.
+
+- 2026-09-16T15:34:41+00:00: Independent review APPROVED publication readiness for exact head
+  7b4168ff40ca5f134efb2acb50ef730240a48a99. Keepalive is now configured exactly once on both server
+  and client after ALPN; tests assert socket keepalive on both peers. Admission lock serializes
+  drain and permit acquisition; listener drain, idle timeout, rate/backpressure, reconnect resume,
+  bounded continuation, malformed/truncated/oversized/slow/ALPN/protocol, IPv4/IPv6/port,
+  reconnect-storm, and deterministic packet drop/reorder/partition transport fixtures are present.
+  Focused TLS/remote tests and full asb-control suite pass; durable worker evidence reports
+  workspace cargo test --locked and clippy green after transient asb-runtime sandbox rerun. Head is
+  clean, SSH-signed, and DCO-bearing; no private data/credentials/telemetry introduced. Fault
+  fixtures are explicitly transport-level and must not be presented as kernel/netem or native
+  network qualification. Publication is authorized to proceed from this exact head; merge still
+  requires exact-head CI and independent approval.
