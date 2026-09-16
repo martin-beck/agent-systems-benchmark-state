@@ -804,7 +804,6 @@ flowchart LR
     AR_0812 --> AR_1033
     AR_0813 --> AR_0814
     AR_0813 --> AR_0818
-    AR_0813 --> AR_1259
     AR_0814 --> AR_0815
     AR_0814 --> AR_0818
     AR_0815 --> AR_0816
@@ -1146,6 +1145,7 @@ flowchart LR
     AR_1242 --> AR_1245
     AR_1242 --> AR_1246
     AR_1242 --> AR_1247
+    AR_1242 --> AR_1259
     AR_1243 --> AR_1245
     AR_1245 --> AR_1246
     AR_1250 --> AR_1257
@@ -1255,7 +1255,7 @@ flowchart LR
 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md) | [AR-0811](../tasks/AR-0811-documentation-qualification.md) |
 | [AR-0811](../tasks/AR-0811-documentation-qualification.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0810](../tasks/AR-0810-github-pages-documentation.md) | [AR-0903](../tasks/AR-0903-release-qualification.md) |
 | [AR-0812](../tasks/AR-0812-modern-terminal-rendering.md) | [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0820](../tasks/AR-0820-verifiable-install-artifacts.md), [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md) |
-| [AR-0813](../tasks/AR-0813-remote-control-transport.md) | [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0902](../tasks/AR-0902-fault-assurance.md) | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md), [AR-1259](../tasks/AR-1259-protected-main-dco-recovery.md) |
+| [AR-0813](../tasks/AR-0813-remote-control-transport.md) | [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0902](../tasks/AR-0902-fault-assurance.md) | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md) |
 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md) | [AR-0813](../tasks/AR-0813-remote-control-transport.md) | [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md) |
 | [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md) | [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md), [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md) | [AR-0816](../tasks/AR-0816-cross-platform-remote-interoperability.md), [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md) |
 | [AR-0816](../tasks/AR-0816-cross-platform-remote-interoperability.md) | [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md), [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md) | [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md) |
@@ -1440,7 +1440,7 @@ flowchart LR
 | [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md) | [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md), [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md) |
 | [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md) | [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | [AR-1241](../tasks/AR-1241-native-isolation-matrix.md), [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md) |
 | [AR-1241](../tasks/AR-1241-native-isolation-matrix.md) | [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md) | [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md) |
-| [AR-1242](../tasks/AR-1242-protected-main-admission.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0897](../tasks/AR-0897-main-merge-integrity.md) | [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md), [AR-1246](../tasks/AR-1246-protected-main-dco-flow.md), [AR-1247](../tasks/AR-1247-protected-main-dco-workflow.md) |
+| [AR-1242](../tasks/AR-1242-protected-main-admission.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0897](../tasks/AR-0897-main-merge-integrity.md) | [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md), [AR-1246](../tasks/AR-1246-protected-main-dco-flow.md), [AR-1247](../tasks/AR-1247-protected-main-dco-workflow.md), [AR-1259](../tasks/AR-1259-protected-main-dco-recovery.md) |
 | [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md) | [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md), [AR-1241](../tasks/AR-1241-native-isolation-matrix.md) | [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md) |
 | [AR-1244](../tasks/AR-1244-publish-replay-supervision.md) | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) | None |
 | [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md) | [AR-1242](../tasks/AR-1242-protected-main-admission.md), [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md) | [AR-1246](../tasks/AR-1246-protected-main-dco-flow.md) |
@@ -1457,7 +1457,7 @@ flowchart LR
 | [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md) | [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md), [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md) | None |
 | [AR-1257](../tasks/AR-1257-mockagents-qemu-image.md) | [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md), [AR-1251](../tasks/AR-1251-mockagents-transport-sandbox.md) | None |
 | [AR-1258](../tasks/AR-1258-docker-binfmt-qemu.md) | None | None |
-| [AR-1259](../tasks/AR-1259-protected-main-dco-recovery.md) | [AR-0813](../tasks/AR-0813-remote-control-transport.md) | None |
+| [AR-1259](../tasks/AR-1259-protected-main-dco-recovery.md) | [AR-1242](../tasks/AR-1242-protected-main-admission.md) | None |
 
 ## Complete AR inventory
 
