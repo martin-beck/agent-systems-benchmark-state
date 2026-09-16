@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-1252",
-  "next_action": "Request independent review of 249dac1; AR-1251 transport fixture invocation remains a separate dependency.",
+  "next_action": "Request independent review of exact head d5f21ce; then rerun exact-head CI.",
   "observed_branch": "feature/ar-1252-approved-isolated-runner",
   "observed_dirty": 0,
   "observed_head": "d5f21cebefbc0d532537fbdbdffc998d62e92255",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T12:52:26+00:00",
+  "updated_at": "2026-09-16T12:52:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -277,3 +277,12 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
 
 - 2026-09-16T12:52:19+00:00: Recorded command exit 0; command argv SHA-256
   e00a9b68decf4b922bd4831bbb3b39f7fb51156600d020c0fb25002b3be655b0.
+
+- 2026-09-16T12:52:41+00:00: Resumed after AR-1253 runtime audit. Added explicit immutable image
+  allowlist for approved Ubuntu digest and cached Python digest ed86c822; mutable tags are rejected.
+  Both images undergo RepoDigest verification and retain network-none, read-only,
+  dropped-capability, bounded-resource, private-IPC, single read-only mount, shell rejection,
+  timeout and named cleanup controls. Focused runner tests 6/6 and full llm-double-spike suite 15/15
+  pass; source policy and diff checks pass. Live Python-image network-none and MockAgents
+  artifact-version probes pass. Signed+DCO head d5f21ce pushed. AR-1251 can now consume the pinned
+  Python image after independent review/CI.
