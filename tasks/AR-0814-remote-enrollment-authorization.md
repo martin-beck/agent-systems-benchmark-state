@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 234,
+  "task_revision": 235,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:14:24+00:00",
+  "updated_at": "2026-09-16T19:17:43+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -612,3 +612,6 @@ Implementation has not started. Read the linked plan before claiming.
   BreakGlass now fails closed without context and binds principal, request digest, and enrollment
   generation before authorization/dispatch; caller-supplied role cannot substitute. Endpoint suite
   passes 8/8. Positive recovery/audit dispatch test remains next.
+
+- 2026-09-16T19:17:43+00:00: Recorded command exit 101; command argv SHA-256
+  76e50fe0f8930d3f5b78a7239dcd705b2375610dcfb33a056b7ce70261408d5f.
