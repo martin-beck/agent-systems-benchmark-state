@@ -2,7 +2,7 @@
 {
   "branch": "fix/gitleaks-revision-config-integrity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T14:13:13+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003",
     "AR-0898"
@@ -12,15 +12,15 @@
   "observed_branch": "fix/gitleaks-revision-config-integrity",
   "observed_dirty": 0,
   "observed_head": "67375520c60a31a2277c535c1ee1eb051c5f9f5d",
-  "owner": "asb_ar0899_gitleaks",
+  "owner": "",
   "plan": "../plans/AR-0899.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Resolve GitHub issue 118 by making local and CI Gitleaks scans deterministic and config changes fail closed.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Align and harden Gitleaks execution",
-  "updated_at": "2026-09-16T12:15:19+00:00",
+  "updated_at": "2026-09-16T12:15:58+00:00",
   "worktree_key": "agent-systems-benchmark-gitleaks-revision-config-integrity"
 }
 ---
@@ -240,3 +240,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T12:15:19+00:00: Recorded command exit 0; command argv SHA-256
   5fea57150cfbfbcf6e9aae4e2d5d2c12821b54edfd127532b977863723242757.
+
+- 2026-09-16T12:15:58+00:00: AR-0899 complete. Exact main 3e8d58994eb2b3faeda9449e4186498cf86eeb86
+  verified remotely with parents 128ecdd and 6737552, exact reviewed tree b28cf36, valid SSH
+  signature and DCO. PR #198 exact-head checks all green; all seven post-merge workflows terminal
+  SUCCESS: AArch64 35093997162, formal 35093997092, hosted 35093997126, repository quality
+  35093997081 (all steps green), Rust 35093997041, fault assurance 35093997061, headers 35093997097.
+  Disk pressure handled by deleting only generated target artifacts in owned worktrees; handoffctl
+  doctor --live passed.
