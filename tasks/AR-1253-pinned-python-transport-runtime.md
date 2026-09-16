@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision pinned Python transport fixture runtime.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Provision pinned Python transport fixture runtime",
-  "updated_at": "2026-09-16T13:22:53+00:00",
+  "updated_at": "2026-09-16T13:23:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1253"
 }
 ---
@@ -63,3 +63,6 @@ Keep runtime images, caches, provenance, and all test activity under `/srv/data/
   settings but accepts arbitrary source and source_revision values. This violates AR-1253 plan
   requirement for pinned source/interpreter/package provenance. Add exact source/revision validation
   and negative tests; do not publish edbbb8c yet.
+
+- 2026-09-16T13:23:33+00:00: Recorded command exit 0; command argv SHA-256
+  321942e0f0153a2d8cbd19eedd393105a4c68944659dfc47ca8844b9bec09b94.
