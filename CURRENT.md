@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1248](tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | Define the strict-replay CLI consumer contract. | Runtime-supervision integration remains blocking: implement or route the approved StrictReplayLaunchBridge/SandboxBackend/ResourceLease child execution seam, with real cassette request/response, provider-egress denial, cancellation/restart/cleanup and no-fallback evidence. PR #197 exact head 7d9c2ee has all required CI green; do not merge until independent review clears this blocker. | asb_ar1024_lifecycle_router |
+| P0 | [AR-1248](tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | Define the strict-replay CLI consumer contract. | Await a runtime-owned successor that supplies independently attested namespace capability plus supervised SandboxLaunchInput/ResourceLease. Then wire replay_plan through StrictReplayLaunchBridge::spawn and add real request/response, egress-denial, cancellation/restart/cleanup and no-fallback tests. Preserve PR #197 head 7d9c2ee and its green CI; do not fabricate namespace readiness in CLI. | asb_ar1024_lifecycle_router |
 
 ## Open
 

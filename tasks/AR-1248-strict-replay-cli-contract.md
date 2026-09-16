@@ -8,7 +8,7 @@
     "AR-1232"
   ],
   "id": "AR-1248",
-  "next_action": "Runtime-supervision integration remains blocking: implement or route the approved StrictReplayLaunchBridge/SandboxBackend/ResourceLease child execution seam, with real cassette request/response, provider-egress denial, cancellation/restart/cleanup and no-fallback evidence. PR #197 exact head 7d9c2ee has all required CI green; do not merge until independent review clears this blocker.",
+  "next_action": "Await a runtime-owned successor that supplies independently attested namespace capability plus supervised SandboxLaunchInput/ResourceLease. Then wire replay_plan through StrictReplayLaunchBridge::spawn and add real request/response, egress-denial, cancellation/restart/cleanup and no-fallback tests. Preserve PR #197 head 7d9c2ee and its green CI; do not fabricate namespace readiness in CLI.",
   "observed_branch": "feature/ar-1248-strict-replay-cli-contract",
   "observed_dirty": 0,
   "observed_head": "7d9c2ee2e08b9d61cb03837236918575405fb5c2",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 140,
+  "task_revision": 141,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T20:21:48+00:00",
+  "updated_at": "2026-09-16T20:22:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -407,3 +407,11 @@ formal, privacy, signature, DCO, and exact-tree gates.
 
 - 2026-09-16T20:21:48+00:00: Recorded command exit 0; command argv SHA-256
   7ff9f66199d2a3b292f342dc948a1ca42fe8b8eaf5af3227964d3e7c23db0f27.
+
+- 2026-09-16T20:22:24+00:00: Scope audit complete: AR-1248 acceptance names SidecarHandoff/sandbox
+  launch input, but current runtime APIs require a runtime-issued namespace capability and
+  supervised launch context absent from the CLI. replay_contract.rs calls attest_with_commands(true,
+  ...) and only constructs/returns a bridge; replay_plan never invokes
+  StrictReplayLaunchBridge::spawn, SandboxBackend or ResourceLease. Implementing those in CLI would
+  duplicate/forge runtime authority. Required repair is a dependency-linked runtime successor; no
+  product mutation made.
