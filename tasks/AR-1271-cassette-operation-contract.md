@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define a dependency-neutral cassette request/response operation contract.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Dependency-neutral cassette operation contract",
-  "updated_at": "2026-09-16T23:14:51+00:00",
+  "updated_at": "2026-09-16T23:15:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1271-cassette-operation"
 }
 ---
@@ -56,3 +56,6 @@ Preserve AR-1270's blocked evidence and do not fabricate responses or authority.
   positive/negative validation tests. asb-core suite passes 18/18 and fmt pass; product tree clean.
   Initial fmt failed on malformed compact struct/enum delimiters in fresh file; corrected before
   green rerun. Runtime transport and actual CLI operation remain next.
+
+- 2026-09-16T23:15:33+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
