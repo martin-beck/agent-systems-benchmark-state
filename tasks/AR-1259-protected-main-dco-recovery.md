@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover a signed protected-main DCO boundary after the unsigned PR202 web merge.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Protected-main DCO recovery for PR202",
-  "updated_at": "2026-09-16T17:13:36+00:00",
+  "updated_at": "2026-09-16T17:22:40+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-dco-1259"
 }
 ---
@@ -123,3 +123,6 @@ Create a signed, forward-only protected-main recovery for the unsigned PR202 mer
   6a97f467. Remote main signature Good (ED25519) and matching Signed-off-by; parents preserved.
   Post-merge workflows started: formal 35126795008, Rust 35126795006, hosted 35126794959, fault
   35126794945, quality 35126794907, AArch64 35126794893; headers 35126794930 success.
+
+- 2026-09-16T17:22:40+00:00: Recorded command exit 0; command argv SHA-256
+  2e524472f591d89ea56dba5b65f7ce72944e872eac2e61a984ebcfca1e5eebf1.
