@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0813",
-  "next_action": "Monitor PR #202 exact head badd246f until every required check terminal SUCCESS; complete independent review and merge only after all green and approval, then post-merge verify.",
+  "next_action": "Diagnose Policy, coverage, and supply chain failure on PR #202 exact head badd246f once GitHub API access recovers; keep all other checks running to terminal, then repair/rerun only if product-caused. Do not merge while Policy is red or required checks incomplete.",
   "observed_branch": "feature/remote-control-transport",
   "observed_dirty": 0,
   "observed_head": "52ee2b13d809b0147f54f4f370face7fb14807b0",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 242,
+  "task_revision": 243,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T15:40:52+00:00",
+  "updated_at": "2026-09-16T15:41:02+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -755,3 +755,12 @@ Implementation has not started. Read the linked plan before claiming.
   until all required checks terminal green and independent approval recorded.
 
 - 2026-09-16T15:40:52+00:00: Heartbeat by asb_ar0813_remote_transport.
+
+- 2026-09-16T15:41:02+00:00: PR #202 exact head badd246f50a893db8fd285281119cd11108da328 is a
+  lockfile-only formal refresh atop reviewed 7b4168ff, clean SSH-signed/DCO with no privacy/source
+  changes. Current exact-head checks: Platform, retained faults, AWQ shadow, headers, fuzz,
+  mutation, Kani and Loom SUCCESS; Rust, TLC, AArch64 still IN_PROGRESS; Policy, coverage, and
+  supply chain FAILURE (run 35116640211, job 104863627938). Attempted authoritative failed-log
+  retrieval, but GitHub API returned HTTP 403 rate limit exceeded; failure cause is not yet
+  classifiable. Merge authorization withheld pending Policy diagnosis, remaining checks, and
+  independent approval.
