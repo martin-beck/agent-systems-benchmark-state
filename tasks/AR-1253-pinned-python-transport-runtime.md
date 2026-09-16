@@ -9,7 +9,7 @@
   "id": "AR-1253",
   "next_action": "Provision and qualify an immutable Python fixture runtime through the approved isolated runner.",
   "observed_branch": "feature/ar-1253-pinned-python-transport-runtime",
-  "observed_dirty": 0,
+  "observed_dirty": 4,
   "observed_head": "85bcd1e423a6bd7da29a29cac4dbdcf9e4822837",
   "owner": "asb_ar1253_python_runtime",
   "plan": "../plans/AR-1253.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision pinned Python transport fixture runtime.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Provision pinned Python transport fixture runtime",
-  "updated_at": "2026-09-16T13:20:35+00:00",
+  "updated_at": "2026-09-16T13:20:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1253"
 }
 ---
