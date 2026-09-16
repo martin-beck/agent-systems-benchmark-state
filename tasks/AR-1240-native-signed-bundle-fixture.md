@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1240-native-signed-bundle-fixture",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T10:38:28+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1238",
     "AR-1239"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1240-native-signed-bundle-fixture",
   "observed_dirty": 0,
   "observed_head": "282eeffd78eaadbf706c90cb56a7ee1be29e77dc",
-  "owner": "asb_ar1240_native_fixture_worker",
+  "owner": "",
   "plan": "../plans/AR-1240.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Add native signed-bundle fixture and end-to-end supervisor isolation tests.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Native signed-bundle supervisor fixture",
-  "updated_at": "2026-09-16T08:39:53+00:00",
+  "updated_at": "2026-09-16T08:40:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1240"
 }
 ---
@@ -56,3 +56,9 @@ bundle. Preserve fail-closed behavior and all existing privacy and non-interfere
   egress-denial, teardown and non-interference matrix.
 
 - 2026-09-16T08:38:28+00:00: Claimed by asb_ar1240_native_fixture_worker.
+
+- 2026-09-16T08:40:51+00:00: Completed signed native fixture and authenticated cassette forwarding
+  in 5fa5ee2 and 282eeff. Native SandboxBackend/Bubblewrap private namespace, SHA-256-pinned
+  supervisor/sidecar, Unix relay, generation handshake, real HTTP cassette response, and sidecar
+  teardown/reaping pass: native sandbox 12/12, cassette 1/1, bundle verifier 19/19, Clippy green.
+  Remaining negative egress/failure lifecycle cells are isolated in follow-on AR-1241.
