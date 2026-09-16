@@ -11,17 +11,17 @@
   "id": "AR-1275",
   "next_action": "Promote after dependency verification; add the required runtime operation-handle injection point to actual replay dispatch and test real supervised traffic.",
   "observed_branch": "feature/ar-1275-replay-operation-injection",
-  "observed_dirty": 1,
-  "observed_head": "d77c712e0186f34129952cf5784bcf217bd69411",
+  "observed_dirty": 0,
+  "observed_head": "2ff7b8df88f747afb08f36f15c224a2c4bdacca1",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1275.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Inject runtime-owned operation handles into actual strict-replay dispatch.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Runtime operation injection into replay dispatcher",
-  "updated_at": "2026-09-16T23:54:45+00:00",
+  "updated_at": "2026-09-16T23:54:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1275-operation-injection"
 }
 ---

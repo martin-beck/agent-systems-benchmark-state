@@ -72,8 +72,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1272-cassette-backend` | `feature/ar-1272-authenticated-cassette-backend` | `85c0f5bc558c` | 0 | behind 0, ahead 4 |
 | `agent-systems-benchmark-ar-1273-complete-replay-context` | `feature/ar-1273-complete-replay-context` | `6c47986cdc4c` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-ar-1274-cassette-executor` | `feature/ar-1274-runtime-cassette-executor-adapter` | `7fecd58e2a81` | 0 | behind 0, ahead 1 |
-| `agent-systems-benchmark-ar-1275-operation-injection` | `feature/ar-1275-replay-operation-injection` | `d77c712e0186` | 1 | behind 0, ahead 1 |
-| changed files | - | - | - | `docs/examples/asb-cli-workflow-v1.provenance.json` |
+| `agent-systems-benchmark-ar-1275-operation-injection` | `feature/ar-1275-replay-operation-injection` | `2ff7b8df88f7` | 0 | behind 0, ahead 2 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 509, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 612, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 506, ahead 0 |
