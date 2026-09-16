@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1268",
-  "next_action": "Add malformed/no-fallback and supervised lifecycle/egress/cancel/restart/timeout/crash cleanup tests around run_with_transport; then full locked gates.",
+  "next_action": "Coordinate runtime-backed lifecycle fixture for supervised replay; run full locked gates once egress/cancel/restart/timeout/crash cleanup are executable.",
   "observed_branch": "feature/ar-1268-replay-transport-boundary",
   "observed_dirty": 0,
   "observed_head": "f05288b65cbee91d74ef07105068be0d26cbf7d2",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Break the strict-replay runtime/CLI dependency cycle with a shared transport contract.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Break strict-replay runtime/CLI dependency cycle",
-  "updated_at": "2026-09-16T22:55:57+00:00",
+  "updated_at": "2026-09-16T22:56:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1268-replay-transport"
 }
 ---
@@ -150,3 +150,9 @@ Preserve AR-1267's blocked evidence; do not fabricate authority or weaken crate 
 
 - 2026-09-16T22:55:50+00:00: Recorded command exit 0; command argv SHA-256
   375ec779ce62fd27d3d39c656177cbc9eec65acbca1465190b4674fa1adae2f0.
+
+- 2026-09-16T22:56:12+00:00: Signed checkpoint f05288b adds malformed transport rejection with no
+  fallback; adapter/dispatch tests now 4/4. Existing runtime sandbox lifecycle suite remains
+  separate and host-dependent; no metadata-only assertions are being presented as end-to-end
+  supervision. Product tree clean. Full acceptance still requires a runtime-backed fixture
+  connecting this transport to supervised child lifecycle and egress denial.

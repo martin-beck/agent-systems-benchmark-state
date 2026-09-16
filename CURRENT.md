@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1268](tasks/AR-1268-replay-transport-boundary.md): Break strict-replay runtime/CLI dependency cycle | Break the strict-replay runtime/CLI dependency cycle with a shared transport contract. | Add malformed/no-fallback and supervised lifecycle/egress/cancel/restart/timeout/crash cleanup tests around run_with_transport; then full locked gates. | asb_ar1024_lifecycle_router |
+| P0 | [AR-1268](tasks/AR-1268-replay-transport-boundary.md): Break strict-replay runtime/CLI dependency cycle | Break the strict-replay runtime/CLI dependency cycle with a shared transport contract. | Coordinate runtime-backed lifecycle fixture for supervised replay; run full locked gates once egress/cancel/restart/timeout/crash cleanup are executable. | asb_ar1024_lifecycle_router |
 
 ## Open
 
