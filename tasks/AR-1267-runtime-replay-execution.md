@@ -11,7 +11,7 @@
   "id": "AR-1267",
   "next_action": "Implement runtime-owned cassette request/response hook consuming authenticated context; add actual replay command integration and bounded lifecycle/egress tests.",
   "observed_branch": "feature/ar-1267-runtime-replay-execution",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "69e8b064d3121a4bae1f672cdae9c0c8672000bc",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1267.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement real runtime-owned strict-replay execution and lifecycle supervision.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Runtime strict-replay execution hook",
-  "updated_at": "2026-09-16T22:40:12+00:00",
+  "updated_at": "2026-09-16T22:40:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1267-runtime-replay-execution"
 }
 ---
