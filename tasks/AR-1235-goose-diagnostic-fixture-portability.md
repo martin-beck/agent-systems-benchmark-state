@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1235-goose-fixture-portability",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T08:06:21+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1235-goose-fixture-portability",
   "observed_dirty": 2,
   "observed_head": "fd7daa43549edd67b60076aa6b1eee333061b438",
-  "owner": "asb_ar1235_goose_portability",
+  "owner": "",
   "plan": "../plans/AR-1235.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Repair Goose diagnostic fixture portability under emulated AArch64.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Portable Goose diagnostic fixture",
-  "updated_at": "2026-09-16T06:07:52+00:00",
+  "updated_at": "2026-09-16T06:08:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1235"
 }
 ---
@@ -109,3 +109,9 @@ its intended diagnostic error assertion. Preserve the failure and repair the fix
   docker.io/library/ubuntu@sha256:95fa486768020359141f1318720f43e7982ef926c792891d984aef9aaf05e7ea,
   Rust 1.93.0, qemu user lane, and full asb-agents lib test. Failure occurs only there; local exact
   and full QEMU runs pass. No assertion weakening or source mutation.
+
+- 2026-09-16T06:08:00+00:00: Released blocked/ownerless 2026-09-16T06:08Z. Authoritative hosted run
+  35060286408/job 104678968629 failed with one Goose test assertion after 164 passes; exact/full
+  local QEMU reproductions pass. Setup and immutable image materialization succeeded, but no
+  product-level causal defect reproduced. Treat as hosted runner/environment-only or transient and
+  rerun the original workflow externally before any code change.
