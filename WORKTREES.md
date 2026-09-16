@@ -46,6 +46,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1243` | `feature/ar-1243` | `054ff82dd584` | 0 | behind 3, ahead 0 |
 | `agent-systems-benchmark-ar-1243-packaging` | `feature/ar-1243-packaging` | `1e1b0f3a2fca` | 0 | behind 7, ahead 0 |
 | `agent-systems-benchmark-ar-1245` | `fix/ar-1245-postmerge-dco-evidence` | `3e12d64e8e6e` | 0 | behind 1, ahead 0 |
+| `agent-systems-benchmark-ar-1246` | `fix/ar-1246-protected-main-dco-flow` | `35c69dc9b285` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 398, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 501, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 395, ahead 0 |
