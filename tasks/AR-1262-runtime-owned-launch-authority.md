@@ -12,16 +12,16 @@
   "next_action": "Classify or rerun the pre-existing native sandbox fixture failure under its dedicated gate; do not weaken authority. After terminal green, run remaining policy/privacy/rustdoc and request independent review.",
   "observed_branch": "feature/ar-1262-runtime-owned-launch-authority",
   "observed_dirty": 0,
-  "observed_head": "ad0bc024d74b0d8aff9d5504833eb7e0d3e0afa8",
+  "observed_head": "c009185748a486b18ac90416ab78d9f19830740e",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1262.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned authority for supervised strict-replay execution.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-16T22:13:38+00:00",
+  "updated_at": "2026-09-16T22:13:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1262-runtime-authority"
 }
 ---
