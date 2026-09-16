@@ -2,7 +2,7 @@
 {
   "branch": "feature/native-capacity-controller",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T08:08:56+00:00",
   "depends_on": [
     "AR-0701",
     "AR-0103"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/native-capacity-controller",
   "observed_dirty": 0,
   "observed_head": "28f30eea80efef5a61ea438e77402f8640564cc9",
-  "owner": "",
+  "owner": "asb_ar1232_lifecycle_router",
   "plan": "../plans/AR-0704.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-09T15:16:11+00:00",
+  "updated_at": "2026-09-16T06:08:56+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -278,3 +278,5 @@ must not block this AR or its dependents.
 - 2026-09-09T15:16:11+00:00: Recovered expired claim formerly owned by contracts_20260906. Expired
   owner lease recovered after coordinator audit; preserve reviewed PR head and require fresh claim
   before further AR-0704 mutation.
+
+- 2026-09-16T06:08:56+00:00: Claimed by asb_ar1232_lifecycle_router.
