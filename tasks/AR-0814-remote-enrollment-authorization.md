@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 252,
+  "task_revision": 253,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:27:54+00:00",
+  "updated_at": "2026-09-16T19:29:24+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -690,3 +690,6 @@ Implementation has not started. Read the linked plan before claiming.
   material. Replaced ad-hoc test backend; focused auth test passes (1 selected, all filtered clean).
   This qualifies the SecretBackend gap as fail-closed but not OS-protected storage;
   certificate/pairing persistence and remaining threat tests are next.
+
+- 2026-09-16T19:29:24+00:00: Recorded command exit 0; command argv SHA-256
+  883de0761b33b241dd4af8ffbbf7ab22491eb0849bbceeb9956685f4d3af2ace.
