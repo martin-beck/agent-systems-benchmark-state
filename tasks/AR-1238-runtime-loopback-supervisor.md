@@ -10,7 +10,7 @@
   "id": "AR-1238",
   "next_action": "Integrate the in-tree supervisor into SandboxBackend using bwrap --unshare-all --unshare-user --unshare-net with --tmpfs /tmp before a 0600 relay bind mount; prove private loopback readiness, cassette forwarding, egress denial, lifecycle teardown, and unrelated-process non-interference.",
   "observed_branch": "feature/ar-1238-runtime-loopback-supervisor",
-  "observed_dirty": 3,
+  "observed_dirty": 2,
   "observed_head": "9d982fe87b77bcf5b674d72f1c8a0119bf657327",
   "owner": "asb_ar1238_bwrap_relay_worker",
   "plan": "../plans/AR-1238.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned private-namespace supervisor for loopback replay.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Runtime-owned loopback supervisor",
-  "updated_at": "2026-09-16T08:02:23+00:00",
+  "updated_at": "2026-09-16T08:02:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1238"
 }
 ---
