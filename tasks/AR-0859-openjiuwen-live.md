@@ -7,7 +7,7 @@
     "AR-0858"
   ],
   "id": "AR-0859",
-  "next_action": "Coordinate signed protected-main merge recovery for 1c07e90, then rerun post-merge policy before closing AR-0859.",
+  "next_action": "No further action; live qualification and protected-main recovery are complete.",
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "230084ef1ea88168eac2be9098cc3c71dd14c465",
