@@ -7,7 +7,7 @@
     "AR-0858"
   ],
   "id": "AR-0859",
-  "next_action": "Provide an approved immutable container/VM image digest with Python 3.11 and the complete 170-package OpenJiuwen lock closure (including aiofiles 25.1.0), or place all hashed artifacts in the provenance directory; then rerun offline install and live qualification.",
+  "next_action": "Provide an approved immutable Python 3.11 runtime/container image digest, or a reviewed interpreter artifact matching the live qualification identity contract; wheel closure is now complete but live test rejects the managed interpreter identity.",
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "cceb76f436f8918786f610afdf20ba99fbd87d34",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 252,
+  "task_revision": 253,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-16T07:10:34+00:00",
+  "updated_at": "2026-09-16T07:11:01+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -860,3 +860,13 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-16T07:10:34+00:00: Recorded command exit 0; command argv SHA-256
   d5fc13b923e350cbf37244fc9a1ba7e09fdcdb7bda0387c0310ae38cd3077136.
+
+- 2026-09-16T07:11:01+00:00: Authorized setup completed: managed CPython 3.11.16 acquired under
+  project-local tooling; exact lock resolved and pip downloaded 170 hashed wheels (143 MB) to
+  ignored /srv/data/projects/.asb-openjiuwen-provenance/wheelhouse; offline uv sync installed all
+  170 and imported OpenJiuwen 0.1.17.post1, prompt_toolkit and opentelemetry.sdk. Live test
+  pinned_openjiuwen_edits_tools_and_reports_usage failed closed at real_openjiuwen.rs:294: runtime
+  interpreter identity mismatch. Managed interpreter digest is bba9c526...; reviewed test requires
+  /usr/bin/python3.12 digest 1643...; host /usr/bin/python3.12 is e50d... Docker remains
+  inaccessible and no approved immutable image is available. No product source changes or gate
+  weakening.
