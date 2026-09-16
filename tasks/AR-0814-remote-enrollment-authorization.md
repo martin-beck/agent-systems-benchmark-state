@@ -9,17 +9,17 @@
   "id": "AR-0814",
   "next_action": "Implement certificate import/pairing identity-store ceremony and concrete break-glass operation; rerun full gates and review.",
   "observed_branch": "feature/remote-enrollment-authz",
-  "observed_dirty": 1,
-  "observed_head": "f5461184293e8b940c54dd62216e340e21e111aa",
+  "observed_dirty": 0,
+  "observed_head": "dcb7ae2c4d1efec7c22b02b7cd5b9585da1e785b",
   "owner": "asb_ar0814_enrollment_authz",
   "plan": "../plans/AR-0814.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 153,
+  "task_revision": 154,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T18:23:00+00:00",
+  "updated_at": "2026-09-16T18:23:07+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
