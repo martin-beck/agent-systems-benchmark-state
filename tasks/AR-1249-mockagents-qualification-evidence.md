@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1249-mockagents-qualification-evidence",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T12:42:08+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1249-mockagents-qualification-evidence",
   "observed_dirty": 0,
   "observed_head": "128ecddbfdb7fcfff6e257adf3237b5866aca481",
-  "owner": "asb_ar1249_mockagents_qualification",
+  "owner": "",
   "plan": "../plans/AR-1249.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Complete missing evidence for the pinned MockAgents executable qualification.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Complete MockAgents executable qualification evidence",
-  "updated_at": "2026-09-16T10:43:17+00:00",
+  "updated_at": "2026-09-16T10:44:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1249"
 }
 ---
@@ -51,3 +51,15 @@ network denial, privacy, signature, DCO, and exact-tree gates.
 
 - 2026-09-16T10:43:17+00:00: Recorded command exit 0; command argv SHA-256
   6212e6f6614d24b1ac699e9e9aa655eea062035c4a4a18316f9638c7201a9cfc.
+
+- 2026-09-16T10:44:21+00:00: Artifact audit complete but qualification remains blocked. Pinned amd64
+  archive matched 10,194,803 bytes and SHA256
+  1b2e6fb9d3bb96c680f9f9c819c2669939751baf45abb35b1370c97f1d291458; extracted MockAgents 0.5.0.
+  Pinned arm64 archive matched 9,390,255 bytes and SHA256
+  08662b32bb562b390ebfbba2fc48d23754055236de9fa13364890260f888e7d1; static executable reports
+  version 0.5.0 under qemu-aarch64. Current harness only host-selects amd64 and proves five basic
+  protocol cases; missing reviewed architecture override/runner contract plus hostile
+  tool/tool-result, cancellation/backpressure, outbound-denial, repeat-clean-state, and
+  emulated-arm64 qualification cases. No product mutation or unsupported claim made. Next action:
+  extend harness with explicit pinned platform/runner and required hostile cases, then rerun
+  focused/full gates.
