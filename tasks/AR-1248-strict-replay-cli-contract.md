@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1248-strict-replay-cli-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T22:10:12+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1231",
     "AR-1232"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1248-strict-replay-cli-contract",
   "observed_dirty": 0,
   "observed_head": "7d9c2ee2e08b9d61cb03837236918575405fb5c2",
-  "owner": "asb_ar1024_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1248.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 137,
+  "task_revision": 138,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T20:20:27+00:00",
+  "updated_at": "2026-09-16T20:20:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -397,3 +397,8 @@ formal, privacy, signature, DCO, and exact-tree gates.
   evidence 35144819659, and headers 35144819652 all concluded SUCCESS. Independent review still
   blocks publication because replay_plan does not invoke supervised runtime child launch or prove
   end-to-end transport lifecycle.
+
+- 2026-09-16T20:20:30+00:00: Released ownerless/open after terminal exact-head CI success.
+  Runtime-supervision integration remains the explicit next action; PR #197 must not merge until
+  independent review clears supervised child transport, egress denial, cancellation/restart/cleanup
+  and no-fallback evidence.
