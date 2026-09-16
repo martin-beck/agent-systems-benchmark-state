@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T14:42:29+00:00",
+  "updated_at": "2026-09-16T14:42:38+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -211,3 +211,6 @@ Implementation has not started. Read the linked plan before claiming.
   Full cargo test --locked --workspace is blocked by unrelated asb-metrics kernel.rs:713 expectation
   mismatch (expected MalformedEvidence, got ProbeRejected); no AR-0813 files implicated. Next: run
   applicable control/doc gates and request independent review with this explicit workspace blocker.
+
+- 2026-09-16T14:42:38+00:00: Recorded command exit 0; command argv SHA-256
+  c53c1de22e13046d6e4e8cb7c9f5f264243a690c4a690df1c9c57d9f383e8709.
