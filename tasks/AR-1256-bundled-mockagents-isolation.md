@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute bundled MockAgents transport in isolation.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Execute bundled MockAgents transport in isolation",
-  "updated_at": "2026-09-16T13:58:27+00:00",
+  "updated_at": "2026-09-16T13:58:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1256"
 }
 ---
@@ -32,3 +32,6 @@ Keep bundles, images, QEMU artifacts, caches, and evidence under `/srv/data/proj
   transport/QEMU successor.
 
 - 2026-09-16T13:58:27+00:00: Claimed by asb_ar1256_bundled_isolation.
+
+- 2026-09-16T13:58:34+00:00: Recorded command exit 0; command argv SHA-256
+  8ef4f54135dbcd9cec1285ca0db8990ced9e1cc33b7dd6249db6955c1ad8806c.
