@@ -9,7 +9,7 @@
     "AR-1230"
   ],
   "id": "AR-1232",
-  "next_action": "Integrate StrictReplayLaunchRecord and StrictReplayExecutor route identity into the sandbox launch boundary without creating a runtime dependency cycle; bind adapter command identity and runtime-denied capability, then run full locked gates.",
+  "next_action": "Add direct cross-crate launcher tests for command digest mismatch and runtime launch rejection; run full locked workspace gates, then prepare independent review/PR.",
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "a2df254fd2e685249eaa68f86ce457e80c6d6272",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 97,
+  "task_revision": 98,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T03:08:17+00:00",
+  "updated_at": "2026-09-16T03:08:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -271,3 +271,9 @@
 
 - 2026-09-16T03:08:17+00:00: Recorded command exit 0; command argv SHA-256
   39cf5398131881d6bebfeb6940a170dba53287cbad205a984f34c80a6dbe58e7.
+
+- 2026-09-16T03:08:54+00:00: Added StrictReplaySandboxLaunch in asb-agents, consuming validated
+  StrictReplayLaunchRecord plus pinned command digest and invoking SandboxBackend::spawn_launch only
+  for runtime-attested NetworkPolicy::Deny. Runtime exposes validated program/arguments for command
+  binding. Signed/DCO commit a2df254 pushed. Focused strict_replay 10/10, sandbox unit 18/18,
+  sandbox_boundary 11/11, and clippy warnings-denied for asb-agents/asb-runtime passed.
