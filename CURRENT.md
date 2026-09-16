@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0813](tasks/AR-0813-remote-control-transport.md): Add secure remote control transport | Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client. | Monitor PR202 exact head b7d9e14 fresh CI; verify formal/fuzz locks and all required checks terminal before merge. | asb_ar0813_remote_transport |
+| P1 | [AR-0813](tasks/AR-0813-remote-control-transport.md): Add secure remote control transport | Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client. | Post-merge 14b604f is GitHub-authored without Signed-off-by; coordinate signed protected-main recovery, then rerun exact-main policy and all post-merge gates before closing AR-0813. | asb_ar0813_remote_transport |
 
 ## Open
 

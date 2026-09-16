@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0813",
-  "next_action": "Monitor PR202 exact head b7d9e14 fresh CI; verify formal/fuzz locks and all required checks terminal before merge.",
+  "next_action": "Post-merge 14b604f is GitHub-authored without Signed-off-by; coordinate signed protected-main recovery, then rerun exact-main policy and all post-merge gates before closing AR-0813.",
   "observed_branch": "feature/remote-control-transport",
   "observed_dirty": 0,
   "observed_head": "b7d9e142d684f1fa65fc3f52258ec46585194950",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 299,
+  "task_revision": 300,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T16:33:58+00:00",
+  "updated_at": "2026-09-16T16:34:45+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -904,3 +904,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T16:33:58+00:00: Recorded command exit 0; command argv SHA-256
   321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
+
+- 2026-09-16T16:34:45+00:00: PR202 merged through handoffctl as
+  14b604fec262575496f8838db1456679b1b14bbf with parents a0befc0ff247a42b8d796af161b58b1011de8377 and
+  b7d9e142d684f1fa65fc3f52258ec46585194950. Merge commit author is GitHub and has no Signed-off-by
+  trailer, so merge-integrity acceptance is not met. Post-merge workflows started: Repository
+  quality 35122682670, hosted 35122682569, AArch64 35122682415, formal 35122682399, Rust
+  35122682366, fault 35122682278; do not close until signed recovery/policy green.
