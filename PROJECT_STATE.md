@@ -24,20 +24,20 @@ Generated from local Git and GitHub. Do not edit.
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
 | #151 | `dependabot/cargo/serde-1.0.229@c926edfde377` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
-| #184 | `docs/ar-1210-tutorial-contract@984b2f8417e2` | `main` | CLEAN | QUEUED:, QUEUED:, QUEUED:, QUEUED: | feat(tutorials): add offline tutorial contract validator |
+| #184 | `docs/ar-1210-tutorial-contract@984b2f8417e2` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS | feat(tutorials): add offline tutorial contract validator |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35054026014 | `984b2f8417e2` | pull_request | Huawei MIT source headers | queued:- |
+| 35054026014 | `984b2f8417e2` | pull_request | Huawei MIT source headers | completed:failure |
 | 35054026012 | `984b2f8417e2` | pull_request | Emulated aarch64 portability | pending:- |
 | 35054026002 | `984b2f8417e2` | pull_request | Fault assurance | pending:- |
 | 35054025987 | `984b2f8417e2` | pull_request | Rust verification | pending:- |
 | 35054025985 | `984b2f8417e2` | pull_request | Formal assurance | pending:- |
-| 35054025968 | `984b2f8417e2` | pull_request | Repository quality | queued:- |
-| 35054025955 | `984b2f8417e2` | pull_request | Hosted portability and native qualification | queued:- |
-| 35054025940 | `984b2f8417e2` | pull_request | Agent Workflow Quality shadow | queued:- |
+| 35054025968 | `984b2f8417e2` | pull_request | Repository quality | in_progress:- |
+| 35054025955 | `984b2f8417e2` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35054025940 | `984b2f8417e2` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35053887147 | `c010553b988b` | pull_request | Repository quality | completed:failure |
 | 35053887135 | `c010553b988b` | pull_request | Fault assurance | in_progress:- |
 | 35053887131 | `c010553b988b` | pull_request | Agent Workflow Quality shadow | completed:success |
