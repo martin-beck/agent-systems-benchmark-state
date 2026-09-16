@@ -8,7 +8,7 @@
     "AR-1253"
   ],
   "id": "AR-1254",
-  "next_action": "Add arm64 artifact selection/provenance and runner-proven network-none denial; request independent review after full gates.",
+  "next_action": "Request independent review of exact head 154a345; then open PR and run exact-head CI.",
   "observed_branch": "feature/ar-1254-mockagents-pinned-python-transport",
   "observed_dirty": 0,
   "observed_head": "154a34549784bd3bba0a5fa47d046a237897980a",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify MockAgents through the pinned Python sandbox.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Qualify MockAgents through pinned Python transport",
-  "updated_at": "2026-09-16T13:53:45+00:00",
+  "updated_at": "2026-09-16T13:54:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1254"
 }
 ---
@@ -99,3 +99,11 @@ Keep fixtures, runtimes, caches, and evidence under `/srv/data/projects`.
 
 - 2026-09-16T13:53:36+00:00: Recorded command exit 0; command argv SHA-256
   95204edb19267a70de0891d5f1bfdfda7e1009ecf544aa1e6f91661f054c22fe.
+
+- 2026-09-16T13:54:02+00:00: Signed+DCO commit 154a345 pushed. Added closed lock-based amd64/arm64
+  artifact digest selection and rejected digest drift; arm64 archive runner network probe now passes
+  with network=none-verified. Real fixture repeats loopback tool-result ordering, process-group
+  cancellation/descendant cleanup and bounded body checks; executable mode invokes pinned MockAgents
+  through run_isolated and returns pinned-version-verified. Full llm-double-spike suite 20/20,
+  py_compile and diff checks pass. Host outbound remains labeled unavailable-outside-isolation; only
+  runner network-none evidence is promoted.

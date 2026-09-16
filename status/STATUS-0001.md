@@ -1447,7 +1447,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md): Qualify MockAgents through pinned Python transport | asb_ar1254_mockagents_transport | Qualify MockAgents through the pinned Python sandbox. | Add arm64 artifact selection/provenance and runner-proven network-none denial; request independent review after full gates. |
+| P1 | [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md): Qualify MockAgents through pinned Python transport | asb_ar1254_mockagents_transport | Qualify MockAgents through the pinned Python sandbox. | Request independent review of exact head 154a345; then open PR and run exact-head CI. |
 
 ### Open (4)
 
