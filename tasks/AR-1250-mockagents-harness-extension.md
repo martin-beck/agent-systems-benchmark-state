@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1250-mockagents-harness-extension",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T12:59:19+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1250-mockagents-harness-extension",
   "observed_dirty": 0,
   "observed_head": "8a61b4672843c20be1b2d4fa81955abfa2bb7570",
-  "owner": "asb_ar1250_mockagents_harness",
+  "owner": "",
   "plan": "../plans/AR-1250.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Extend the pinned MockAgents executable qualification harness.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Extend MockAgents qualification harness",
-  "updated_at": "2026-09-16T10:59:34+00:00",
+  "updated_at": "2026-09-16T11:00:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1250"
 }
 ---
@@ -128,3 +128,12 @@ privacy, signature, DCO, and exact-tree gates; do not claim support from host in
   including tool_call, malformed_request, cleanup plus repeat stability. Signed+DCO commit 8a61b46
   pushed. Tool-result, cancellation/backpressure, outbound-denial and arm64 repeat with new cases
   remain outstanding.
+
+- 2026-09-16T11:00:35+00:00: Released blocked after substantive harness progress. Signed head
+  8a61b46 adds explicit amd64/arm64 runner selection with immutable emulator SHA, real arm64 QEMU
+  execution, repeat-clean-state normalization, executable tool-call assertion, malformed-request
+  rejection, and cleanup proof (8 cases pass on amd64). Remaining tool-result sequencing,
+  cancellation/backpressure, and outbound-denial require a reviewed transport/sandbox fixture and
+  cannot be safely represented by superficial assertions in the current HTTP harness; expanded arm64
+  repeat is also pending. Preserve branch/commits; next worker must design bounded credential-free
+  fixture and fail-closed network/cancellation evidence before publication.
