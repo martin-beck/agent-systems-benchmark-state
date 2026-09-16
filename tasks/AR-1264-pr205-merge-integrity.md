@@ -10,16 +10,16 @@
   "next_action": "Monitor PR #206 exact head ef56571f7274 against base ebfa37023e56; hosted checks are running. After all green and review, use merge_pr.py with refs/pull/206/head and exact OIDs; verify signed main and post-merge gates.",
   "observed_branch": "repair/ar-1264-pr205-merge-integrity",
   "observed_dirty": 0,
-  "observed_head": "ef56571f727416202df4dd6c4b34c01a2dd7ef75",
+  "observed_head": "539a9298062027902288aa46244ba060d63d5637",
   "owner": "asb_ar1264_merge_integrity",
   "plan": "../plans/AR-1264.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover signed protected-main integration after PR #205.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Recover signed integration after PR #205",
-  "updated_at": "2026-09-16T21:48:23+00:00",
+  "updated_at": "2026-09-16T21:48:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1264-merge-integrity"
 }
 ---
