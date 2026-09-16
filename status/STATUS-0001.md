@@ -11,12 +11,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 6 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 13 |
 | **Planned** | Defined work awaiting promotion or dependencies | 66 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 168 |
+| **Done** | Accepted, integrated, and durably verified | 169 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 9 |
 
@@ -295,7 +295,7 @@ flowchart LR
         AR_1110["AR-1110 - Done"]:::status_done
         AR_1120["AR-1120 - Done"]:::status_done
         AR_1130["AR-1130 - Done"]:::status_done
-        AR_1140["AR-1140 - In progress"]:::status_in_progress
+        AR_1140["AR-1140 - Done"]:::status_done
         AR_1150["AR-1150 - Done"]:::status_done
         AR_1151["AR-1151 - Open"]:::status_open
         AR_1160["AR-1160 - Planned"]:::status_planned
@@ -1384,12 +1384,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0897](../tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | asb_ar0897_merge_integrity | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Monitor exact-main CI for signed recovery 56a85de; then verify policy and close AR-0897. |
-| P0 | [AR-1140](../tasks/AR-1140.md): CLI setup wizard | asb_ar1232_lifecycle_router | Guide CLI setup and reconfiguration. | Wait for PR #186 exact-head CI and independent review on 1e3212b; do not merge. |
 | P1 | [AR-0896](../tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | asb_ar0896_qualification | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun 34339927858 was launched via handoffctl and is actively watched by PID 736624/gh PID 736653; exact rerun head a4e1a9de985a4c9f22628c6d604a6e62f4f173e3, job 104684371738 currently running. Keep lease heartbeat, wait terminal, then capture failures or green result. |
 
 ### Open (6)
@@ -1498,7 +1497,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (168)
+### Done (169)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1547,6 +1546,7 @@ flowchart LR
 | P0 | [AR-1110](../tasks/AR-1110.md): Provider and model registry | Unclaimed | Manage providers and models. | Post-merge verification complete: PR #180 merged at 600d5a28; exact-main tree matches feature tree, focused asb-config tests and full offline workspace tests passed, worktree clean. Release AR-1110 as done. |
 | P0 | [AR-1120](../tasks/AR-1120.md): Authentication enrollment | Unclaimed | Enroll provider authentication. | AR complete: merged PR #176 at bd9e153a; post-merge exact-main verification and full auth package gates passed; retain closure evidence in state. |
 | P0 | [AR-1130](../tasks/AR-1130.md): Configured provider launches | Unclaimed | Launch agents with configured providers. | Post-merge verification complete: PR #181 merged at 0443ebac; exact-main tree matches feature tree, focused provider-launch/workflow tests and full locked offline workspace tests passed, worktree clean. Release AR-1130 as done. |
+| P0 | [AR-1140](../tasks/AR-1140.md): CLI setup wizard | Unclaimed | Guide CLI setup and reconfiguration. | Wait for PR #186 exact-head CI and independent review on 1e3212b; do not merge. |
 | P0 | [AR-1150](../tasks/AR-1150.md): Recording campaigns | Unclaimed | Record response cassettes. | Post-merge verification complete: PR #182 merged at a83ba8e; exact-main tree matches feature tree, focused replay tests and full locked offline workspace tests passed, worktree clean. Release AR-1150 as done. |
 | P0 | [AR-1190](../tasks/AR-1190.md): Authenticated agent catalog control | Unclaimed | Expose a verified, capability-aware local-agent catalog to asb-tui. | Wait for exact-main post-merge assurance on 748c16ba67b9cff5a08558784dd183d020a1f2d4, then qualify ASB v1.4 fixtures against asb-tui PR #86. |
 | P0 | [AR-1191](../tasks/AR-1191.md): Verified local-agent lifecycle | Unclaimed | Install, activate, verify and recover supported local benchmark agents safely. | Run independent review on lifecycle PR #169 head 6d210836d4b45942aa6b9b2530c30a0afe30144a after hosted checks, then merge and qualify asb-tui. |
