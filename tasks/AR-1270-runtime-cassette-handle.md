@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-issued cassette-service handle for supervised strict replay.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Runtime-issued cassette-service handle",
-  "updated_at": "2026-09-16T23:09:19+00:00",
+  "updated_at": "2026-09-16T23:09:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1270-runtime-cassette-handle"
 }
 ---
@@ -79,3 +79,6 @@ the CLI.
   RuntimeCassetteService around validated ReplayServiceHandleV1 with exact-once consumption, plus
   lockfile refresh. Runtime focused suite passes 40/40 and fmt pass; product tree clean at 46810b1.
   CLI binding and real supervised cassette/lifecycle fixtures remain next.
+
+- 2026-09-16T23:09:55+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
