@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Add certificate threat-matrix negatives and audit/pairing integration tests; retain validated identity-store write boundary.",
+  "next_action": "Implement remaining durable pairing ceremony dispatch and certificate threat negatives; then rerun full locked gates.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "7f70cafb4d003886e933430c8971a080ada68ff0",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 268,
+  "task_revision": 269,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:38:39+00:00",
+  "updated_at": "2026-09-16T19:38:53+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -727,3 +727,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T19:38:31+00:00: Recorded command exit 0; command argv SHA-256
   b41c5e497af3284370ed41cd9a7c3f66b5953cd41b81369bc524d406aeadcec7.
+
+- 2026-09-16T19:38:53+00:00: Signed+DCO 7f70caf adds pairing-to-audit integration coverage:
+  confirmed pairing identity binds the certificate fingerprint into a generation-scoped
+  AuthAuditEvent, and expired confirmed identities fail closed. Full auth test group passes 16/16;
+  worktree clean.
