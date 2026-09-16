@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**294 ARs tracked** across 6 active status categories.
+**295 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 6 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 24 |
-| **Planned** | Defined work awaiting promotion or dependencies | 58 |
+| **Planned** | Defined work awaiting promotion or dependencies | 59 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 196 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -360,6 +360,7 @@ flowchart LR
         AR_1264["AR-1264 - Done"]:::status_done
         AR_1265["AR-1265 - Blocked"]:::status_blocked
         AR_1266["AR-1266 - Blocked"]:::status_blocked
+        AR_1267["AR-1267 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1148,6 +1149,7 @@ flowchart LR
     AR_1237 --> AR_1262
     AR_1237 --> AR_1265
     AR_1237 --> AR_1266
+    AR_1237 --> AR_1267
     AR_1238 --> AR_1236
     AR_1238 --> AR_1240
     AR_1238 --> AR_1260
@@ -1156,6 +1158,7 @@ flowchart LR
     AR_1238 --> AR_1263
     AR_1238 --> AR_1265
     AR_1238 --> AR_1266
+    AR_1238 --> AR_1267
     AR_1239 --> AR_1240
     AR_1239 --> AR_1243
     AR_1239 --> AR_1260
@@ -1163,6 +1166,7 @@ flowchart LR
     AR_1239 --> AR_1262
     AR_1239 --> AR_1265
     AR_1239 --> AR_1266
+    AR_1239 --> AR_1267
     AR_1240 --> AR_1241
     AR_1240 --> AR_1243
     AR_1241 --> AR_1243
@@ -1459,9 +1463,9 @@ flowchart LR
 | [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md) | [AR-1100](../tasks/AR-1100.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md) | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md) |
 | [AR-1235](../tasks/AR-1235-goose-diagnostic-fixture-portability.md) | [AR-0003](../tasks/AR-0003-quality-gates.md) | None |
 | [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md) | [AR-1100](../tasks/AR-1100.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md) | [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md), [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) |
-| [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md) | [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md) | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md), [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md), [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md), [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md), [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md), [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md) |
-| [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md) | [AR-1100](../tasks/AR-1100.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md) | [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md), [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md), [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md), [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md), [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md), [AR-1263](../tasks/AR-1263-sandbox-scope-classification-stability.md), [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md), [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md) |
-| [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md) | [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md), [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md), [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md), [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md), [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md), [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md), [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md) |
+| [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md) | [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md), [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md) | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md), [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md), [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md), [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md), [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md), [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md), [AR-1267](../tasks/AR-1267-runtime-replay-execution.md) |
+| [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md) | [AR-1100](../tasks/AR-1100.md), [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md) | [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md), [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md), [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md), [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md), [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md), [AR-1263](../tasks/AR-1263-sandbox-scope-classification-stability.md), [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md), [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md), [AR-1267](../tasks/AR-1267-runtime-replay-execution.md) |
+| [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md) | [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md), [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md), [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md), [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md), [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md), [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md), [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md), [AR-1267](../tasks/AR-1267-runtime-replay-execution.md) |
 | [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md) | [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | [AR-1241](../tasks/AR-1241-native-isolation-matrix.md), [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md) |
 | [AR-1241](../tasks/AR-1241-native-isolation-matrix.md) | [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md) | [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md) |
 | [AR-1242](../tasks/AR-1242-protected-main-admission.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0897](../tasks/AR-0897-main-merge-integrity.md) | [AR-1245](../tasks/AR-1245-postmerge-dco-evidence.md), [AR-1246](../tasks/AR-1246-protected-main-dco-flow.md), [AR-1247](../tasks/AR-1247-protected-main-dco-workflow.md), [AR-1259](../tasks/AR-1259-protected-main-dco-recovery.md) |
@@ -1489,6 +1493,7 @@ flowchart LR
 | [AR-1264](../tasks/AR-1264-pr205-merge-integrity.md) | [AR-0897](../tasks/AR-0897-main-merge-integrity.md) | None |
 | [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
 | [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
+| [AR-1267](../tasks/AR-1267-runtime-replay-execution.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
 
 ## Complete AR inventory
 
@@ -1532,7 +1537,7 @@ flowchart LR
 | P1 | [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md): Execute bundled MockAgents transport in isolation | Unclaimed | Execute bundled MockAgents transport in isolation. | Implement bundled in-container MockAgents transport and digest-pinned arm64 QEMU evidence. |
 | P1 | [AR-1258](../tasks/AR-1258-docker-binfmt-qemu.md): Provision Docker binfmt/QEMU capability | Unclaimed | Provision and verify Docker binfmt/QEMU for multiarch qualification. | Inspect Docker/binfmt/QEMU capability and approved privilege workflow; add bounded verification and rollback-safe checks. |
 
-### Planned (58)
+### Planned (59)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1561,6 +1566,7 @@ flowchart LR
 | P0 | [AR-1215](../tasks/AR-1215-result-comparison.md): Multi-agent result comparison tutorial | Unclaimed | Teach conservative comparison of multiple agents from the same benchmark. | Implement the syntax-checked tutorial for comparing two or more agents on one benchmark definition. |
 | P0 | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md): ASB tutorial freshness CI and documentation qualification | Unclaimed | Continuously keep ASB tutorial commands and steps syntactically current. | Implement the repository-wide tutorial discovery and syntax-freshness CI gate after all tutorial contracts are defined. |
 | P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
+| P0 | [AR-1267](../tasks/AR-1267-runtime-replay-execution.md): Runtime strict-replay execution hook | Unclaimed | Implement real runtime-owned strict-replay execution and lifecycle supervision. | Promote after dependency verification; implement the runtime-owned cassette request/response execution hook and full lifecycle evidence. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
@@ -1626,5 +1632,3 @@ flowchart LR
 | P0 | [AR-0853](../tasks/AR-0853-coordinator-merge-attestation.md): Repair coordinator merge attestation | Unclaimed | Repair the v0.1.4 coordinator merge attestation without rewriting published history. | Repair the attestation test to validate a closed fetch-free signed representation and installed manifest without requiring the unreachable historical merge object; document that limitation, rerun gates, and publish a signed successor by exact lease. |
 | P0 | [AR-0872](../tasks/AR-0872-beginner-workflow-documentation.md): Publish beginner workflow documentation | Unclaimed | Publish linked beginner workflows for setup, multi-agent runs, progress, comparison, recording, and replay with and without the TUI. | Create a signed no-ff integration merge for PR #95 from current main, run post-merge checks, fast-forward main, and release AR-0872. |
 | P0 | [AR-0897](../tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | Unclaimed | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Monitor exact-main CI for signed recovery c261af0, then verify policy and close AR-0897. |
-| P0 | [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md): Make ShellCheck fail closed | Unclaimed | Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck. | Completed. PR #190 merged as signed+DCO eb0ad13f8b6e64b6ee46b92602a631ba0c96f9f4; all six protected-main workflows terminal success: Repository quality 35076116672, Rust 35076116617, hosted 35076116659, emulated AArch64 35076116592, fault 35076116738, formal 35076116608. Exact main policy verification passed with explicit base 606375f..eb0ad13. Release AR done/ownerless. |
-| P0 | [AR-0899](../tasks/AR-0899-gitleaks-revision-config-integrity.md): Align and harden Gitleaks execution | Unclaimed | Resolve GitHub issue 118 by making local and CI Gitleaks scans deterministic and config changes fail closed. | Monitor post-merge workflows for main 3e8d589 until terminal; verify exact tree/signature/DCO/policy, then release AR-0899 done. |
