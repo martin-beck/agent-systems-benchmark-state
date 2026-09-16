@@ -2,21 +2,21 @@
 {
   "branch": "feature/remote-enrollment-authz",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T19:24:44+00:00",
   "depends_on": [
     "AR-0813"
   ],
   "id": "AR-0814",
   "next_action": "Implement ASB enrollment protocol, CLI ceremony, identity storage, scoped authorization, rotation, and revocation.",
-  "owner": "",
+  "owner": "asb_ar0814_enrollment_authz",
   "plan": "../plans/AR-0814.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T17:24:41+00:00",
+  "updated_at": "2026-09-16T17:24:44+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -31,3 +31,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T17:24:41+00:00: AR-0813 completed with signed transport and post-merge gates; promote
   enrollment/authz implementation.
+
+- 2026-09-16T17:24:44+00:00: Claimed by asb_ar0814_enrollment_authz.
