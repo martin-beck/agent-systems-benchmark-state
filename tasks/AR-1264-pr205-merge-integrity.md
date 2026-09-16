@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover signed protected-main integration after PR #205.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Recover signed integration after PR #205",
-  "updated_at": "2026-09-16T21:45:13+00:00",
+  "updated_at": "2026-09-16T21:45:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1264-merge-integrity"
 }
 ---
@@ -36,3 +36,6 @@ main gates.
 
 - 2026-09-16T21:45:06+00:00: Recorded command exit 0; command argv SHA-256
   35c34309b0a3a1448fed41d456a0e2c20a3874f6231b7f23ebd8ea465d9243be.
+
+- 2026-09-16T21:45:47+00:00: Recorded command exit 0; command argv SHA-256
+  0a24549e6e86271299c7a0ee40acff86f92ce1bd1f6f6d8c65871fcdb6eec4e6.
