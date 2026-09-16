@@ -7,6 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1151](tasks/AR-1151.md): Strict offline replay | Replay strictly without providers. | Preserved replay-mode fail-closed guard; current branch lacks the AR-1232 authenticated launch-bridge API needed for executable replay. Reconcile AR-1232 integration/base before implementing CLI route/service handoff; no unsafe deletion committed. | asb_ar1151_replay |
 | P0 | [AR-1246](tasks/AR-1246-protected-main-dco-flow.md): Protected-main DCO flow | Durably admit authenticated GitHub protected-main merges without one-off DCO hash exceptions. | Wait for remaining required PR #195 checks; merge only when all are successful, then run post-merge verification. | asb_ar1237_launch_bridge_worker |
 | P0 | [AR-1247](tasks/AR-1247-protected-main-dco-workflow.md): Protected-main DCO workflow binding | Route the Rust verification workflow through durable protected-main DCO admission on generated merge commits. | Update verify.yml main-push DCO certification to use protected-main admission and add workflow regression coverage. | asb_ar1247_workflow_worker |
 
@@ -18,7 +19,6 @@ Never edit this file directly.
 | P0 | [AR-1024](tasks/AR-1024-asb-tui-lifecycle-router.md): Implement `asb tui` lifecycle routing | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. | - |
 | P0 | [AR-1042](tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. | - |
 | P0 | [AR-1044](tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. | - |
-| P0 | [AR-1151](tasks/AR-1151.md): Strict offline replay | Replay strictly without providers. | Preserved replay-mode fail-closed guard; current branch lacks the AR-1232 authenticated launch-bridge API needed for executable replay. Reconcile AR-1232 integration/base before implementing CLI route/service handoff; no unsafe deletion committed. | - |
 
 ## Blocked
 
