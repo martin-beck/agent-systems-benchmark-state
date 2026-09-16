@@ -17,11 +17,11 @@
   "plan": "../plans/AR-0604.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Qualify native CSB monitoring contention and overhead",
-  "updated_at": "2026-09-16T12:49:04+00:00",
+  "updated_at": "2026-09-16T19:38:24+00:00",
   "worktree_key": "agent-systems-benchmark-csb-native-qualification"
 }
 ---
@@ -54,3 +54,6 @@ Implementation has not started. Read the linked plan before claiming.
   passed 57/57 and runner fixtures passed, but no native CSB A/B or overhead evidence may be
   claimed. Preserve clean origin/main 4e2820b; resume with exact pinned interpreter/runtime and
   authorized native host.
+
+- 2026-09-16T19:38:24+00:00: Audit confirms dependencies complete but exact pinned CSB interpreter
+  evidence is unavailable on this host; recover only to record precise external blocker.
