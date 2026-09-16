@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0813",
-  "next_action": "AR-1259 owns signed recovery of merge 14b604f; await exact-main policy/post-merge success, then close AR-0813 with preserved evidence.",
+  "next_action": "AR-1259 remains open after unsigned recovery merge 8b81be4; await repository-level signed protected-main recovery and exact-main policy before closing AR-0813.",
   "observed_branch": "feature/remote-control-transport",
   "observed_dirty": 0,
   "observed_head": "b7d9e142d684f1fa65fc3f52258ec46585194950",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 312,
+  "task_revision": 313,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T16:45:26+00:00",
+  "updated_at": "2026-09-16T16:55:26+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -952,3 +952,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T16:45:26+00:00: Recorded command exit 0; command argv SHA-256
   39ba4c103ba83ee5a2cd42e1d504604de39203b03ea5912b1d176b6b359db04a.
+
+- 2026-09-16T16:55:26+00:00: AR-1259 signed topic b7d21e0 was merged as GitHub-authored
+  8b81be45b1cf3e2f42540fae8c623074bbacaf88 without Signed-off-by; repository-quality post-merge
+  failed run 35124853761. Original transport PR202 checks remain green, but AR-0813 cannot close
+  until signed protected-main history and post-merge gates are restored.
