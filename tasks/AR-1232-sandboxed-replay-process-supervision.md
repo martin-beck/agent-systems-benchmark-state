@@ -9,7 +9,7 @@
     "AR-1230"
   ],
   "id": "AR-1232",
-  "next_action": "Bind authenticated record timeout and loopback route environment into the launch contract, then add cancellation/restart/partial cleanup tests; focused harness and full locked workspace tests are green at 678e112.",
+  "next_action": "Diagnose/re-run the full workspace gate failure; asb-cli production_backend_runs_without_frontend_and_recovers_idempotency failed because its temporary control state root was already owned, while all prior packages/tests in this run passed. Then continue direct launcher and route-environment tests.",
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "678e11263d89d47b549be92cf0a6125687ba02cc",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 149,
+  "task_revision": 150,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T03:29:11+00:00",
+  "updated_at": "2026-09-16T03:29:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -406,3 +406,9 @@
 
 - 2026-09-16T03:29:11+00:00: Recorded command exit 101; command argv SHA-256
   a3cf4bf790c54f39868343c859fba60c08b1613dbbf63a14b28602ab2a3a33c6.
+
+- 2026-09-16T03:29:32+00:00: Full locked offline workspace gate reached asb-cli and had one failure:
+  production_backend_runs_without_frontend_and_recovers_idempotency observed control state root
+  already owned (CliError operation), indicating test scratch ownership contention; no AR-1232 files
+  were implicated. Focused asb-agents strict replay and runtime sandbox suites remain green. Current
+  product branch includes command-authenticated launcher and timeout binding.
