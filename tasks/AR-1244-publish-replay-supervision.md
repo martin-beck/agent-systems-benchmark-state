@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1232",
   "checkpoint_commit": "2543a4c213bc7a1f9b426cb8c0b95d815a0bf7e4",
-  "claim_expires": "2026-09-16T10:21:16+00:00",
+  "claim_expires": "2026-09-16T10:30:42+00:00",
   "depends_on": [
     "AR-1232"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish strict-replay supervision integration.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Publish AR-1232 strict-replay supervision",
-  "updated_at": "2026-09-16T10:00:02+00:00",
+  "updated_at": "2026-09-16T10:00:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1244-publish"
 }
 ---
@@ -114,3 +114,5 @@ mutation.
   lib test bounded_tool_boundary_covers_success_denial_timeout_and_cleanup passed (~1.2s each), so
   ToolMismatch was not reproducible locally and no product change is justified. Reran failed policy
   job through workflow; run 35081579191 is active again at 09:59Z for PR193 head 7ceb522.
+
+- 2026-09-16T10:00:42+00:00: Heartbeat by asb_ar1244_publish_1232.
