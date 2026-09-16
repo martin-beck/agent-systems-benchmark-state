@@ -11,17 +11,17 @@
   "id": "AR-1268",
   "next_action": "Adapt runtime and CLI replay context to shared ReplayTransportV1; add one-shot/stale/duplicate/mismatch/no-fallback integration tests, then full gates.",
   "observed_branch": "feature/ar-1268-replay-transport-boundary",
-  "observed_dirty": 1,
-  "observed_head": "551f989635bb0c0de05a057632ce107566dc758f",
+  "observed_dirty": 0,
+  "observed_head": "35b97be4744a5ab31582292c119dbe610d55e499",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1268.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Break the strict-replay runtime/CLI dependency cycle with a shared transport contract.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Break strict-replay runtime/CLI dependency cycle",
-  "updated_at": "2026-09-16T22:49:18+00:00",
+  "updated_at": "2026-09-16T22:49:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1268-replay-transport"
 }
 ---
