@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Add positive authenticated-admin BreakGlass recovery/audit dispatch test; then rerun full locked workspace gates.",
+  "next_action": "Run full locked workspace gates and independent review of BreakGlass context-bound endpoint/schema migration.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "ddbe44c95fde95cb861d633b1dbc08d4a6d0ba21",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 241,
+  "task_revision": 242,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:21:03+00:00",
+  "updated_at": "2026-09-16T19:21:16+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -627,3 +627,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T19:20:56+00:00: Recorded command exit 0; command argv SHA-256
   76e50fe0f8930d3f5b78a7239dcd705b2375610dcfb33a056b7ce70261408d5f.
+
+- 2026-09-16T19:21:16+00:00: Signed+DCO ddbe44c adds positive authenticated-admin BreakGlass
+  endpoint dispatch and corrects the negative test to inspect the public error response. Endpoint
+  suite passes 9/9, including absent-context denial and runner-owned context binding of
+  principal/request/generation. Prior exit-101 root cause was test misuse: ControlClient returns an
+  error response as Ok(ControlResponse), so result.is_err was invalid; corrected and verified.
