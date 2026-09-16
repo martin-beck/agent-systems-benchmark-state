@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1250.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Extend the pinned MockAgents executable qualification harness.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Extend MockAgents qualification harness",
-  "updated_at": "2026-09-16T11:00:35+00:00",
+  "updated_at": "2026-09-16T18:39:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1250"
 }
 ---
@@ -137,3 +137,7 @@ privacy, signature, DCO, and exact-tree gates; do not claim support from host in
   cannot be safely represented by superficial assertions in the current HTTP harness; expanded arm64
   repeat is also pending. Preserve branch/commits; next worker must design bounded credential-free
   fixture and fail-closed network/cancellation evidence before publication.
+
+- 2026-09-16T18:39:42+00:00: Dependencies AR-0888 and AR-0889 are durably done; prior qualification
+  gaps are implementation work, not an external blocker. Reopen for bounded harness implementation
+  without weakening gates.
