@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Add certificate ceremony stolen/expiry/wrong-route and audit tamper negatives; then rerun full locked gates.",
+  "next_action": "Run full locked gates and independently review certificate/pairing/audit threat coverage.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "a1ac8e18ce3d662e3e2ea6bd20d4798b4d3d6961",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 275,
+  "task_revision": 276,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:40:45+00:00",
+  "updated_at": "2026-09-16T19:40:58+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -745,3 +745,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T19:40:38+00:00: Recorded command exit 0; command argv SHA-256
   c6ee8fd062534033b8d24cc39d14311aaa9de49626fdc93c8f851d7f15bf7bc5.
+
+- 2026-09-16T19:40:58+00:00: Signed+DCO a1ac8e1 hardens pairing confirmation: tampered
+  certificate/fingerprint/route metadata is validated before one-time confirmation, with an explicit
+  tampered certificate digest negative. Full auth group passes 17/17; worktree clean.
