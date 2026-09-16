@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1254-mockagents-pinned-python-transport",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T15:54:05+00:00",
+  "claim_expires": "2026-09-16T15:55:14+00:00",
   "depends_on": [
     "AR-1252",
     "AR-1253"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify MockAgents through the pinned Python sandbox.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Qualify MockAgents through pinned Python transport",
-  "updated_at": "2026-09-16T13:54:05+00:00",
+  "updated_at": "2026-09-16T13:55:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1254"
 }
 ---
@@ -109,3 +109,5 @@ Keep fixtures, runtimes, caches, and evidence under `/srv/data/projects`.
   runner network-none evidence is promoted.
 
 - 2026-09-16T13:54:05+00:00: Heartbeat by asb_ar1254_mockagents_transport.
+
+- 2026-09-16T13:55:14+00:00: Heartbeat by asb_ar1254_mockagents_transport.
