@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1271",
-  "next_action": "Promote after dependency verification; implement the shared bounded cassette request/response operation contract and runtime/CLI adapters.",
+  "next_action": "Implement runtime one-shot operation handle over CassetteRequestV1/ResponseV1 and CLI adapter; add real request/response plus mismatch/no-fallback fixtures.",
   "observed_branch": "feature/ar-1271-cassette-operation-contract",
   "observed_dirty": 0,
   "observed_head": "2a04d5123df8676d60aaff45e08817cdca2ccb2d",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define a dependency-neutral cassette request/response operation contract.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Dependency-neutral cassette operation contract",
-  "updated_at": "2026-09-16T23:14:35+00:00",
+  "updated_at": "2026-09-16T23:14:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1271-cassette-operation"
 }
 ---
@@ -49,3 +49,10 @@ Preserve AR-1270's blocked evidence and do not fabricate responses or authority.
 
 - 2026-09-16T23:14:28+00:00: Recorded command exit 0; command argv SHA-256
   d0958de777d136886944988d6dd52bebf6c24780633604e92f48bc2019752c3b.
+
+- 2026-09-16T23:14:51+00:00: Signed checkpoint 2a04d51 adds dependency-neutral
+  CassetteRequestV1/CassetteResponseV1 operation contract with version, generation, cassette/route
+  identities, uppercase method, bounded body, status and response body fields, plus
+  positive/negative validation tests. asb-core suite passes 18/18 and fmt pass; product tree clean.
+  Initial fmt failed on malformed compact struct/enum delimiters in fresh file; corrected before
+  green rerun. Runtime transport and actual CLI operation remain next.
