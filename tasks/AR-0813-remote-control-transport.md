@@ -11,7 +11,7 @@
   "id": "AR-0813",
   "next_action": "Monitor PR202 exact head 2f6eb5b fresh CI; verify dependency policy, formatting, and all required checks terminal before merge.",
   "observed_branch": "feature/remote-control-transport",
-  "observed_dirty": 1,
+  "observed_dirty": 0,
   "observed_head": "22abb6eb8859a127aee55f1e0a182b1adc1af2dc",
   "owner": "asb_ar0813_remote_transport",
   "plan": "../plans/AR-0813.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 286,
+  "task_revision": 287,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T16:19:54+00:00",
+  "updated_at": "2026-09-16T16:20:00+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
