@@ -3,7 +3,10 @@
   "branch": "feature/ar-1237-strict-replay-launch-bridge",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1233", "AR-1236"],
+  "depends_on": [
+    "AR-1233",
+    "AR-1236"
+  ],
   "id": "AR-1237",
   "next_action": "Extend the reviewed strict-replay launch contract to map ReplayRelayHandoff into the child-visible HTTP loopback endpoint, with authenticated route/generation metadata and bounded lifecycle ownership.",
   "observed_branch": "feature/ar-1237-strict-replay-launch-bridge",
@@ -13,11 +16,11 @@
   "plan": "../plans/AR-1237.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Map the authenticated relay into the strict-replay child launch contract.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Strict-replay child launch bridge",
-  "updated_at": "2026-09-16T07:08:39+00:00",
+  "updated_at": "2026-09-16T08:48:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1237"
 }
 ---
@@ -31,3 +34,6 @@ Acceptance: real child cassette success, provider and descendant egress denial, 
 timeout, cancellation, restart, crash, partial launch, stale route, duplicate attempt, privacy-safe
 bounded evidence, and unrelated-process non-interference. No TUI changes. Run signed-DCO focused/full
 locked, privacy, policy, native, exact-head, and post-merge gates.
+
+- 2026-09-16T08:48:43+00:00: AR-1233 and AR-1236 complete; promote strict-replay launch bridge
+  implementation.
