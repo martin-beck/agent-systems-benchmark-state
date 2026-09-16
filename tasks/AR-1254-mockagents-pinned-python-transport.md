@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify MockAgents through the pinned Python sandbox.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Qualify MockAgents through pinned Python transport",
-  "updated_at": "2026-09-16T13:50:02+00:00",
+  "updated_at": "2026-09-16T13:50:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1254"
 }
 ---
@@ -74,3 +74,6 @@ Keep fixtures, runtimes, caches, and evidence under `/srv/data/projects`.
 
 - 2026-09-16T13:50:02+00:00: Recorded command exit 0; command argv SHA-256
   1deadcda507b9205b77f7e96f074c3d0637c16dac9226b64769c51d3989bc634.
+
+- 2026-09-16T13:50:26+00:00: Recorded command exit 0; command argv SHA-256
+  6b7b34d3706b12235bfb3cf3735c327b3fd33382dce3f672e2d95e3f09aa7f34.
