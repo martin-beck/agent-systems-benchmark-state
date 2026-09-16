@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1260-runtime-owned-strict-replay-integration",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T22:27:18+00:00",
+  "claim_expires": "2026-09-16T22:33:25+00:00",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate strict replay with runtime-owned attestation and supervised sandbox execution.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Runtime-owned strict-replay integration",
-  "updated_at": "2026-09-16T20:30:00+00:00",
+  "updated_at": "2026-09-16T20:33:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1260-runtime"
 }
 ---
@@ -51,3 +51,5 @@ missing, stale, duplicated, or mismatched.
 
 - 2026-09-16T20:29:53+00:00: Recorded command exit 0; command argv SHA-256
   2fafaf13de7ad1f582cb78062779f8ef8b07c9c2aa001644a68701b7edb217cd.
+
+- 2026-09-16T20:33:25+00:00: Heartbeat by asb_ar1024_lifecycle_router.
