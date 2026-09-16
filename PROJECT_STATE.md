@@ -22,20 +22,20 @@ Generated from local Git and GitHub. Do not edit.
 | #148 | `dependabot/github_actions/actions/upload-artifact-7.0.1@7d45f4cadff2` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump actions/upload-artifact from 4.6.2 to 7.0.1 |
 | #149 | `dependabot/cargo/url-2.5.8@b41476d1358f` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump url from 2.5.7 to 2.5.8 |
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
-| #151 | `dependabot/cargo/serde-1.0.229@43883609b8db` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
+| #151 | `dependabot/cargo/serde-1.0.229@43883609b8db` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35039070390 | `43883609b8db` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 35039070390 | `43883609b8db` | pull_request | Emulated aarch64 portability | completed:success |
 | 35039070340 | `43883609b8db` | pull_request | Formal assurance | completed:failure |
 | 35039070338 | `43883609b8db` | pull_request | Huawei MIT source headers | completed:success |
 | 35039070325 | `43883609b8db` | pull_request | Repository quality | completed:failure |
 | 35039070320 | `43883609b8db` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35039070314 | `43883609b8db` | pull_request | Hosted portability and native qualification | completed:success |
-| 35039070311 | `43883609b8db` | pull_request | Rust verification | in_progress:- |
+| 35039070311 | `43883609b8db` | pull_request | Rust verification | completed:failure |
 | 35039070301 | `43883609b8db` | pull_request | Fault assurance | completed:failure |
 | 35039055169 | `41007c58f21b` | pull_request | Huawei MIT source headers | completed:success |
 | 35039055080 | `41007c58f21b` | pull_request | Repository quality | completed:failure |
