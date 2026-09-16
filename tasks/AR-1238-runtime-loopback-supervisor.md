@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1238-runtime-loopback-supervisor",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T10:07:14+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1100",
     "AR-1231"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1238-runtime-loopback-supervisor",
   "observed_dirty": 0,
   "observed_head": "d9f42ecb2a205b86250233f4f4c75688a997c063",
-  "owner": "asb_ar1238_bwrap_relay_worker",
+  "owner": "",
   "plan": "../plans/AR-1238.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide the runtime-owned private-namespace supervisor for loopback replay.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Runtime-owned loopback supervisor",
-  "updated_at": "2026-09-16T08:07:17+00:00",
+  "updated_at": "2026-09-16T08:07:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1238"
 }
 ---
@@ -117,3 +117,9 @@ remaining work is launcher integration and real sidecar forwarding, not a host c
 - 2026-09-16T08:07:17+00:00: Added signed commit 4a23b97 with authenticated generation handshake and
   end-to-end HTTP relay test (3/3 sidecar tests). Full runtime gates remain green. No host
   networking or global policy changes.
+
+- 2026-09-16T08:07:20+00:00: Added signed 4a23b97: authenticated generation handshake and end-to-end
+  HTTP forwarding test through Unix relay (3/3), plus bounded copy tests. Runtime composition
+  d9f42ec remains. Remaining blocker is trusted runtime bundle installation/immutable digest pinning
+  of both binaries and native bwrap cassette isolation matrix. No host network/firewall/ambient ip
+  used.
