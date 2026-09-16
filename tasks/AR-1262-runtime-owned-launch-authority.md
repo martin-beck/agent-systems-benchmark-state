@@ -12,16 +12,16 @@
   "next_action": "Integrate ReplayLaunchAuthority into asb-cli typed consumer and add supervised lifecycle/egress/cancel/cleanup tests; then run full gates.",
   "observed_branch": "feature/ar-1262-runtime-owned-launch-authority",
   "observed_dirty": 2,
-  "observed_head": "977fd851dbc3051a073af19bdcd49b789bf35423",
+  "observed_head": "cc110afc0e57d0ccbf0a0da2cd84a78d36bf1c22",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1262.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned authority for supervised strict-replay execution.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-16T21:06:03+00:00",
+  "updated_at": "2026-09-16T21:06:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1262-runtime-authority"
 }
 ---
