@@ -8,7 +8,7 @@
     "AR-1232"
   ],
   "id": "AR-1248",
-  "next_action": "Monitor PR #197 exact head 8896cad CI; independent exact-head review pending. Merge only all required checks green, then post-merge verify and release.",
+  "next_action": "Independent exact-head review requested for PR #197 at 8896cad; monitor four remaining required CI lanes, merge only after all green and reviewer approval.",
   "observed_branch": "feature/ar-1248-strict-replay-cli-contract",
   "observed_dirty": 0,
   "observed_head": "8896cad357e3677998d446e472aeec3cec8f3b7d",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T10:50:51+00:00",
+  "updated_at": "2026-09-16T10:51:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -146,3 +146,8 @@ formal, privacy, signature, DCO, and exact-tree gates.
   457dad11b37c52ae4a46a832d7a082caacae43e9439a5c72cb55c17e0435bbed.
 
 - 2026-09-16T10:50:51+00:00: Heartbeat by asb_ar1232_lifecycle_router.
+
+- 2026-09-16T10:51:14+00:00: Exact-head review rechecked: 10 scoped ASB files, no asb-tui changes,
+  all three feature commits SSH-signed/DCO, diff-check clean, repository policy passed. Full locked
+  offline workspace test passed after refreshing workflow provenance; PR #197 currently has 8
+  completed green checks and 4 required lanes in progress.
