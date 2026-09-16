@@ -22,18 +22,18 @@ Generated from local Git and GitHub. Do not edit.
 | #151 | `dependabot/cargo/serde-1.0.229@c926edfde377` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #197 | `feature/ar-1248-strict-replay-cli-contract@cebe8efc19a1` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): define strict offline replay consumer contract |
-| #198 | `fix/gitleaks-revision-config-integrity@67375520c60a` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(quality): scope and harden gitleaks scans |
+| #198 | `fix/gitleaks-revision-config-integrity@67375520c60a` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(quality): scope and harden gitleaks scans |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 35093312551 | `67375520c60a` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 35093312517 | `67375520c60a` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 35093312515 | `67375520c60a` | pull_request | Repository quality | in_progress:- |
+| 35093312517 | `67375520c60a` | pull_request | Emulated aarch64 portability | completed:success |
+| 35093312515 | `67375520c60a` | pull_request | Repository quality | completed:success |
 | 35093312513 | `67375520c60a` | pull_request | Huawei MIT source headers | completed:success |
 | 35093312481 | `67375520c60a` | pull_request | Rust verification | completed:success |
-| 35093312475 | `67375520c60a` | pull_request | Formal assurance | in_progress:- |
+| 35093312475 | `67375520c60a` | pull_request | Formal assurance | completed:success |
 | 35093312447 | `67375520c60a` | pull_request | Fault assurance | completed:success |
 | 35093312445 | `67375520c60a` | pull_request | Hosted portability and native qualification | completed:success |
 | 35089836815 | `cebe8efc19a1` | pull_request | Fault assurance | completed:success |
