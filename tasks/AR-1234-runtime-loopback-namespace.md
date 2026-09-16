@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1234",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T09:04:55+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1100",
     "AR-1231"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1234",
   "observed_dirty": 0,
   "observed_head": "04b3f728fc5ff2a7e883fc1dcf0458865ce96247",
-  "owner": "asb_loopback_plan_worker",
+  "owner": "",
   "plan": "../plans/AR-1234.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide an approved runtime-owned loopback-only sandbox namespace capability.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Runtime-owned loopback namespace capability",
-  "updated_at": "2026-09-16T07:04:55+00:00",
+  "updated_at": "2026-09-16T07:05:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1234"
 }
 ---
@@ -167,3 +167,13 @@
 - 2026-09-16T07:03:55+00:00: Claimed by asb_loopback_plan_worker.
 
 - 2026-09-16T07:04:55+00:00: Heartbeat by asb_loopback_plan_worker.
+
+- 2026-09-16T07:05:28+00:00: AR-1234-only implementation/testing complete for this attempt. Verified
+  rootless unshare -Urn creates private namespace with loopback only, and current bwrap
+  --unshare-all filesystem sandbox also creates isolated namespace. However ASB has no runtime-owned
+  in-namespace TCP-to-host-cassette relay/sidecar or launch contract, and composing one requires
+  product architecture not safely available in this AR. Existing LoopbackOnly remains fail-closed;
+  no host sharing, global firewall, ambient ip, privileged helper, credentials, or external network
+  used. Focused rejection test passed 1/1. Exact next action: approve and implement runtime-owned
+  sidecar/Unix relay launch seam, then add real cassette success, provider/descendant denial,
+  generation, lifecycle, cleanup, and unrelated-process tests.
