@@ -31,8 +31,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1229-auth-application-integration` | `feature/ar-1229-auth-application-integration` | `b33d6da59ba9` | 0 | behind 42, ahead 0 |
 | `agent-systems-benchmark-ar-1230-authenticated-provider-request-seam` | `feature/ar-1230-authenticated-provider-request-seam` | `3d0349af1a56` | 0 | behind 78, ahead 0 |
 | `agent-systems-benchmark-ar-1231` | `feature/ar-1231` | `fd8eaef0c36d` | 0 | behind 1, ahead 0 |
-| `agent-systems-benchmark-ar-1232` | `feature/ar-1232` | `a70cbdd4b31e` | 1 | behind 0, ahead 14 |
-| changed files | - | - | - | `crates/asb-agents/tests/strict_replay_sandbox.rs` |
+| `agent-systems-benchmark-ar-1232` | `feature/ar-1232` | `95f74ce5178a` | 0 | behind 0, ahead 15 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 336, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 439, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 333, ahead 0 |
