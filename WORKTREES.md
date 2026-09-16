@@ -23,8 +23,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1110` | `feature/ar-1110` | `d16d8d08f5d5` | 0 | behind 51, ahead 0 |
 | `agent-systems-benchmark-ar-1120` | `feature/ar-1120` | `f64985ad3502` | 0 | behind 65, ahead 0 |
 | `agent-systems-benchmark-ar-1130` | `feature/ar-1130` | `603eb8eb86dd` | 0 | behind 47, ahead 0 |
-| `agent-systems-benchmark-ar-1140` | `feature/ar-1140` | `58ebdc2de8e5` | 3 | behind 0, ahead 2 |
-| changed files | - | - | - | `crates/asb-cli/schema/v1/setup-output.schema.json`, `crates/asb-cli/tests/setup_contract.rs`, `docs/workflows/setup-preflight.md` |
+| `agent-systems-benchmark-ar-1140` | `feature/ar-1140` | `910b4e7bcffd` | 0 | behind 0, ahead 3 |
 | `agent-systems-benchmark-ar-1150` | `feature/ar-1150` | `d2498a7372ed` | 0 | behind 41, ahead 0 |
 | `agent-systems-benchmark-ar-1151` | `feature/ar-1151` | `baf119c55844` | 1 | behind 40, ahead 3 |
 | changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
