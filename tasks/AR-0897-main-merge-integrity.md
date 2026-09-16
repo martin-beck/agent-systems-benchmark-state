@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-16T04:52:25+00:00",
+  "updated_at": "2026-09-16T04:52:40+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -264,3 +264,6 @@ Implementation has not started. Read the linked plan before claiming.
   d6a0af5332c7364b53ac106c2f6a7b25d05c9e9a7caa9e1bcc71a37c5b633845.
 
 - 2026-09-16T04:52:25+00:00: Heartbeat by asb_ar0897_merge_integrity.
+
+- 2026-09-16T04:52:40+00:00: Recorded command exit 0; command argv SHA-256
+  d4e23f4ed421370a214c3acd542d3d16f5786dd2de203b0da4a3103f6e4de25b.
