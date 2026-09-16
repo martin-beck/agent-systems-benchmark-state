@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-live",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T07:54:12+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0858"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "230084ef1ea88168eac2be9098cc3c71dd14c465",
-  "owner": "asb_ar0859_runtime_requal",
+  "owner": "",
   "plan": "../plans/AR-0859.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 282,
+  "task_revision": 283,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-16T07:32:46+00:00",
+  "updated_at": "2026-09-16T07:54:33+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -955,3 +955,8 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   1c07e907. Post-merge policy run 35069013257 failed closed: merge commit lacks matching
   Signed-off-by trailer. Do not mark AR done or claim release; product head and pre-merge checks
   were green, but protected-main merge integrity is unresolved.
+
+- 2026-09-16T07:54:33+00:00: Recovered expired claim formerly owned by asb_ar0859_runtime_requal.
+  Lease expired at 2026-09-16T07:54:12Z with no worker heartbeat/process. Preserve PR124 merge
+  1c07e907 and failed post-merge policy evidence; leave AR open for AR-0897 signed protected-main
+  repair, then rerun policy and close.
