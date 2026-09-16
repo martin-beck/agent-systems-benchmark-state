@@ -8,7 +8,7 @@
     "AR-1231"
   ],
   "id": "AR-1238",
-  "next_action": "Trusted bundle integration now requires asb-bundle-owned artifact manifest/payload wiring; then native bwrap must execute content-pinned supervisor+sidecar and prove cassette success, egress denial, teardown and non-interference.",
+  "next_action": "Run native bwrap end-to-end matrix using VerifiedBundle-provided supervisor/sidecar paths; current runtime API now confines paths and verifies content hashes.",
   "observed_branch": "feature/ar-1238-runtime-loopback-supervisor",
   "observed_dirty": 1,
   "observed_head": "418f3930bb4146c419e6b731dc59a015f997f55c",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned private-namespace supervisor for loopback replay.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Runtime-owned loopback supervisor",
-  "updated_at": "2026-09-16T08:21:28+00:00",
+  "updated_at": "2026-09-16T08:21:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1238"
 }
 ---
@@ -146,3 +146,8 @@ remaining work is launcher integration and real sidecar forwarding, not a host c
   AR-1238.
 
 - 2026-09-16T08:21:00+00:00: Claimed by asb_ar1238_bwrap_relay_worker.
+
+- 2026-09-16T08:21:52+00:00: Added signed commit b994e03: PinnedCommand::from_bundle confines
+  relative executable paths to canonical trusted bundle root and verifies SHA-256 before launch.
+  Full runtime tests 29, sidecar 3, process 8, sandbox 10, scheduler 16; fmt/clippy/rustdoc pass.
+  AR-1239 bundle API remains unmodified.
