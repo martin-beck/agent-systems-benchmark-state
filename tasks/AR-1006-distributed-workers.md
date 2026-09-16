@@ -2,7 +2,7 @@
 {
   "branch": "feature/distributed-workers",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T14:24:19+00:00",
+  "claim_expires": "2026-09-16T14:28:01+00:00",
   "depends_on": [
     "AR-0204",
     "AR-0702",
@@ -16,9 +16,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Schedule trials across native-capability workers while preserving per-host capacity meaning.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Coordinate distributed experiment workers",
-  "updated_at": "2026-09-16T12:27:58+00:00",
+  "updated_at": "2026-09-16T12:28:01+00:00",
   "worktree_key": "agent-systems-benchmark-distributed-workers"
 }
 ---
@@ -58,3 +58,5 @@ Implementation has not started. Read the linked plan before claiming.
   host-local duration plus uncertainty (no cross-host subtraction). Focused distributed tests 3/3
   pass; full asb-analysis package 28 unit/integration + 5 doctests pass; clippy -D warnings passes;
   diff check clean. PR publication/review/CI remain.
+
+- 2026-09-16T12:28:01+00:00: Heartbeat by asb_ar1006_distributed_workers.
