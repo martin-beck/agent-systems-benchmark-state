@@ -7,7 +7,7 @@
     "AR-1232"
   ],
   "id": "AR-1244",
-  "next_action": "Run fresh PR193 checks at rebased head 2f10f27/base 5a2c151; obtain independent review before signed merge.",
+  "next_action": "Monitor exact-main post-merge workflows for signed merge 34243aa; release done only after all terminal green.",
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "2543a4c213bc7a1f9b426cb8c0b95d815a0bf7e4",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish strict-replay supervision integration.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Publish AR-1232 strict-replay supervision",
-  "updated_at": "2026-09-16T10:15:26+00:00",
+  "updated_at": "2026-09-16T10:15:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1244-publish"
 }
 ---
@@ -144,3 +144,9 @@ mutation.
 
 - 2026-09-16T10:15:26+00:00: Recorded command exit 0; command argv SHA-256
   596812efe4bca2574d70685f51b2502b85e1014d45a14e51586c51364d50e248.
+
+- 2026-09-16T10:15:49+00:00: PR193 independently reviewed and all 12 exact-head checks green at head
+  2f10f27/base 5a2c151. Signed protected merge published via merge_pr.py: merge OID
+  34243aac8193da348b8d736df05b622eafca8020, parents 5a2c151 and 2f10f27, tree a557ff2; remote main
+  signature and DCO verified. Exact-main workflows started: repository quality 35083989542, AArch64
+  35083989540, hosted 35083989534, formal 35083989561, fault 35083989628, Rust 35083989937.

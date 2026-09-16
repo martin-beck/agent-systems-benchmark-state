@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1244](tasks/AR-1244-publish-replay-supervision.md): Publish AR-1232 strict-replay supervision | Publish strict-replay supervision integration. | Run fresh PR193 checks at rebased head 2f10f27/base 5a2c151; obtain independent review before signed merge. | asb_ar1244_publish_1232 |
+| P0 | [AR-1244](tasks/AR-1244-publish-replay-supervision.md): Publish AR-1232 strict-replay supervision | Publish strict-replay supervision integration. | Monitor exact-main post-merge workflows for signed merge 34243aa; release done only after all terminal green. | asb_ar1244_publish_1232 |
 | P0 | [AR-1246](tasks/AR-1246-protected-main-dco-flow.md): Protected-main DCO flow | Durably admit authenticated GitHub protected-main merges without one-off DCO hash exceptions. | Wait for remaining required PR #195 checks; merge only when all are successful, then run post-merge verification. | asb_ar1237_launch_bridge_worker |
 | P0 | [AR-1247](tasks/AR-1247-protected-main-dco-workflow.md): Protected-main DCO workflow binding | Route the Rust verification workflow through durable protected-main DCO admission on generated merge commits. | Update verify.yml main-push DCO certification to use protected-main admission and add workflow regression coverage. | asb_ar1247_workflow_worker |
 
