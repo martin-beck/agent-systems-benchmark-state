@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1254](tasks/AR-1254-mockagents-pinned-python-transport.md): Qualify MockAgents through pinned Python transport | Qualify MockAgents through the pinned Python sandbox. | Implement real bounded MockAgents transport fixture through pinned Python runner. | asb_ar1254_mockagents_transport |
+| P1 | [AR-1254](tasks/AR-1254-mockagents-pinned-python-transport.md): Qualify MockAgents through pinned Python transport | Qualify MockAgents through the pinned Python sandbox. | Run transport fixture through pinned Python runner; add real MockAgents invocation and network-none denial evidence. | asb_ar1254_mockagents_transport |
 
 ## Open
 

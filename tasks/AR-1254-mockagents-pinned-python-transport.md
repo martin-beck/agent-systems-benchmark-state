@@ -8,7 +8,7 @@
     "AR-1253"
   ],
   "id": "AR-1254",
-  "next_action": "Implement real bounded MockAgents transport fixture through pinned Python runner.",
+  "next_action": "Run transport fixture through pinned Python runner; add real MockAgents invocation and network-none denial evidence.",
   "observed_branch": "feature/ar-1254-mockagents-pinned-python-transport",
   "observed_dirty": 0,
   "observed_head": "8b0742860c39a9a6ae499270272dcc1861305f89",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify MockAgents through the pinned Python sandbox.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Qualify MockAgents through pinned Python transport",
-  "updated_at": "2026-09-16T13:47:13+00:00",
+  "updated_at": "2026-09-16T13:47:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1254"
 }
 ---
@@ -44,3 +44,10 @@ Keep fixtures, runtimes, caches, and evidence under `/srv/data/projects`.
 
 - 2026-09-16T13:47:06+00:00: Recorded command exit 0; command argv SHA-256
   f2931e03b4545fe2406f19d24954795339f90a1317c7f1a62160f0a3fb5cd28f.
+
+- 2026-09-16T13:47:31+00:00: Signed+DCO commit 8b07428 pushed. Added bounded transport_fixture.py
+  with real authenticated loopback HTTP event ordering, bounded response body, cancellation and
+  process cleanup, plus explicit non-loopback connection attempt classified unavailable outside
+  isolation. Positive/negative tests pass; full llm-double-spike suite 19/19 and py_compile/diff
+  checks pass. This is a transport fixture foundation; actual MockAgents executable invocation and
+  runner-proven outbound denial remain required before completion.
