@@ -9,17 +9,17 @@
   "id": "AR-0814",
   "next_action": "Remove the uncommitted asb-cli control.rs change only after deciding/documenting break-glass capability semantics; implement runner-owned authenticated admin context and actual recovery or explicitly split a prerequisite AR. Then run full locked workspace gates on clean 40838db and obtain independent review.",
   "observed_branch": "feature/remote-enrollment-authz",
-  "observed_dirty": 1,
-  "observed_head": "40838db24e7097877bfcf006c407bdd2b0f1528b",
+  "observed_dirty": 0,
+  "observed_head": "47ba6109aba55c8eb89bebb0f73e7cb6a1f65b87",
   "owner": "asb_ar0814_enrollment_authz",
   "plan": "../plans/AR-0814.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 225,
+  "task_revision": 226,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:01:35+00:00",
+  "updated_at": "2026-09-16T19:01:43+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
