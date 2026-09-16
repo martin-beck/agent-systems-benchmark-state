@@ -11,7 +11,7 @@
   "id": "AR-1271",
   "next_action": "Implement runtime one-shot operation handle over CassetteRequestV1/ResponseV1 and CLI adapter; add real request/response plus mismatch/no-fallback fixtures.",
   "observed_branch": "feature/ar-1271-cassette-operation-contract",
-  "observed_dirty": 4,
+  "observed_dirty": 5,
   "observed_head": "2a04d5123df8676d60aaff45e08817cdca2ccb2d",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1271.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define a dependency-neutral cassette request/response operation contract.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Dependency-neutral cassette operation contract",
-  "updated_at": "2026-09-16T23:16:13+00:00",
+  "updated_at": "2026-09-16T23:16:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1271-cassette-operation"
 }
 ---
