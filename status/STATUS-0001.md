@@ -11,12 +11,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 10 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 10 |
 | **Planned** | Defined work awaiting promotion or dependencies | 67 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 164 |
+| **Done** | Accepted, integrated, and durably verified | 165 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 9 |
 
@@ -264,7 +264,7 @@ flowchart LR
         AR_1038["AR-1038 - Done"]:::status_done
         AR_1039["AR-1039 - Open"]:::status_open
         AR_1040["AR-1040 - Done"]:::status_done
-        AR_1041["AR-1041 - In progress"]:::status_in_progress
+        AR_1041["AR-1041 - Done"]:::status_done
         AR_1042["AR-1042 - Open"]:::status_open
         AR_1043["AR-1043 - Done"]:::status_done
         AR_1044["AR-1044 - Open"]:::status_open
@@ -1366,12 +1366,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0897](../tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | asb_ar0897_merge_integrity | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Hold PR 126 at bd6f450; after AR-0877 and AR-0909 integrate, rebase once and require fresh all-green exact-head CI before merge. |
-| P0 | [AR-1041](../tasks/AR-1041-gemini-hook-readiness-race.md): Make Gemini hook readiness publication atomic | asb_ar1041_postmerge | Eliminate the load-sensitive Gemini hook readiness race without weakening validation. | Post-merge verified: PR136 exact head 55648d5 is present in protected main fd7daa4 with all PR checks green; current main AArch64 failure is unrelated Goose fixture AR-1235. |
 
 ### Open (10)
 
@@ -1481,7 +1480,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (164)
+### Done (165)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1512,6 +1511,7 @@ flowchart LR
 | P0 | [AR-1037](../tasks/AR-1037-measurement-selection-plan.md): Add measurement selection to validated run plans | Unclaimed | Carry catalog-backed measurement choices through ASB plan validation, collection and evidence. | After AR-1036, add canonical measurement IDs to validated ASB plans and make collection honor them without any UI code. |
 | P0 | [AR-1038](../tasks/AR-1038-capability-coverage-sink.md): Preserve coverage sinks in sanitized CLI child tests | Unclaimed | Prevent sanitized capability child tests from writing default profraw files into the source checkout. | Post-merge verified on protected main fd7daa4; retain PR132 merge/tree/signature evidence and continue coordinator monitoring. |
 | P0 | [AR-1040](../tasks/AR-1040-protected-merge-signature-policy.md): Reconcile protected-merge signature verification | Unclaimed | Align offline signature policy with the repository-required GitHub merge path. | AR-1040 acceptance complete at protected main 6155d63bec04a5c76c4323843c26649b0c084f6e; release done. |
+| P0 | [AR-1041](../tasks/AR-1041-gemini-hook-readiness-race.md): Make Gemini hook readiness publication atomic | Unclaimed | Eliminate the load-sensitive Gemini hook readiness race without weakening validation. | Post-merge verified: PR136 exact head 55648d5 is present in protected main fd7daa4 with all PR checks green; current main AArch64 failure is unrelated Goose fixture AR-1235. |
 | P0 | [AR-1043](../tasks/AR-1043-protected-topic-sync-topology.md): Qualify exact topic-tip synchronization merges | Unclaimed | Accept one exact signed topic-tip sync merge without weakening protected-main policy. | Complete; no further action. |
 | P0 | [AR-1045](../tasks/AR-1045-gemini-readiness-merge-attestation.md): Attest the Gemini readiness merge boundary | Unclaimed | Recover the Gemini readiness publication boundary without rewriting protected main. | Await fresh immutable review of clean signed+DCO current-main successor d0ea32ce84f600e505899e2e3d2fdb885ee7ad76, tree d6f734bc270281957b1c2268fa0c12db2e2c6075, parent 252f746e903555c2dc626fadfa1a75bb76913144. Do not push before READY. |
 | P0 | [AR-1047](../tasks/AR-1047-gemini-hook-marker-appearance-race.md): Close the Gemini hook-marker appearance race | Unclaimed | Treat a regular marker published between absent open and fallback lstat as pending for descriptor validation on the next poll. | PR #139 exact 661d52c/tree 3931f7cb is independently approved and 12/12 exact-head green; await explicit root authorization and exact multiline protected merge recipe. |
@@ -1544,3 +1544,4 @@ flowchart LR
 | P1 | [AR-0101](../tasks/AR-0101-extension-contracts.md): Freeze versioned extension and result contracts | Unclaimed | Specify typed agent, workload, collector, runtime and result contracts before parallel implementations. | Await independent immutable-head delta review and coordinator integration of exact green PR #3 head 9e90c6a6; then run post-merge verification. |
 | P1 | [AR-0102](../tasks/AR-0102-process-runtime.md): Implement process execution and cancellation | Unclaimed | Run real client processes with bounded I/O, monotonic deadlines and process-tree ownership. | Release done after successful reviewed integration, exact-main local/hosted checks, synchronized refs and live state doctor. |
 | P1 | [AR-0103](../tasks/AR-0103-sandbox-runtime.md): Implement isolated execution and resource leases | Unclaimed | Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets. | Release AR-0103 done after exact-main local and hosted post-merge verification. |
+| P1 | [AR-0104](../tasks/AR-0104-durable-results.md): Implement durable run storage and recovery | Unclaimed | Persist manifests, event streams, artifact hashes and recoverable execution intentions. | Await exact-head PR 6 CI and independent immutable-head review; repair findings before coordinator integration. |

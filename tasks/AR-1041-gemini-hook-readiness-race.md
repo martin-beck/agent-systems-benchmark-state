@@ -2,22 +2,22 @@
 {
   "branch": "fix/gemini-hook-readiness-race",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T07:56:45+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1041",
   "next_action": "Post-merge verified: PR136 exact head 55648d5 is present in protected main fd7daa4 with all PR checks green; current main AArch64 failure is unrelated Goose fixture AR-1235.",
   "observed_branch": "fix/gemini-hook-readiness-race",
   "observed_dirty": 0,
   "observed_head": "55648d5a29f4c29e9525eb7f2a890ac5232d7b5a",
-  "owner": "asb_ar1041_postmerge",
+  "owner": "",
   "plan": "../plans/AR-1041.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Eliminate the load-sensitive Gemini hook readiness race without weakening validation.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Make Gemini hook readiness publication atomic",
-  "updated_at": "2026-09-16T05:57:05+00:00",
+  "updated_at": "2026-09-16T05:57:14+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-hook-readiness-race"
 }
 ---
@@ -228,3 +228,7 @@ any TUI code.
   post-merge runs at fd7daa4 are green for policy, formal, Rust, fault and platform except the
   isolated Goose diagnostic_and_symlink_fail_closed AArch64 failure already tracked by AR-1235; no
   AR-1041-owned paths are implicated.
+
+- 2026-09-16T05:57:14+00:00: Completed: PR136 exact reviewed head 55648d5 merged and present in
+  protected main fd7daa4; all 12 exact-head PR checks green. Current main AArch64 failure is
+  unrelated Goose diagnostic fixture AR-1235 and remains separately tracked.
