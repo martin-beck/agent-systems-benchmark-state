@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0813",
-  "next_action": "Monitor PR202 exact head 7b4168ff checks to terminal; merge only after all required checks and independent approval.",
+  "next_action": "Monitor PR202 refreshed exact head badd246 checks to terminal; merge only after all required checks and independent approval.",
   "observed_branch": "feature/remote-control-transport",
   "observed_dirty": 0,
   "observed_head": "52ee2b13d809b0147f54f4f370face7fb14807b0",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 237,
+  "task_revision": 238,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T15:37:52+00:00",
+  "updated_at": "2026-09-16T15:38:12+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -734,3 +734,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T15:37:52+00:00: Recorded command exit 0; command argv SHA-256
   a1307a9406a3121af1acce68a8f4db7c8b42aa44316637af242257985143cbc3.
+
+- 2026-09-16T15:38:12+00:00: Loom reproduction initially failed because formal/Cargo.lock was stale;
+  offline cargo generate-lockfile refreshed it in signed+DCO commit
+  badd246f50a893db8fd285281119cd11108da328. Exact formal locked suite then passed all tests,
+  including Loom and artifact acquisition. Pushed PR202 refresh; GitHub reports head badd246,
+  required checks restarted/in progress. Prior artifact race was transient and passed on rerun.
