@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 410,
+  "task_revision": 411,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T06:29:12+00:00",
+  "updated_at": "2026-09-16T06:29:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -1103,3 +1103,6 @@
   No persistent firewall mutation is authorized.
 
 - 2026-09-16T06:29:12+00:00: Claimed by asb_ar1232_loopback_worker.
+
+- 2026-09-16T06:29:23+00:00: Recorded command exit 1; command argv SHA-256
+  63dcab4f38d857e10aef15ce2a52326d1cc93687b1d15f317747bf7a5946f977.
