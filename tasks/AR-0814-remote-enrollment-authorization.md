@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T17:50:49+00:00",
+  "updated_at": "2026-09-16T17:51:02+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -156,3 +156,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T17:50:41+00:00: Recorded command exit 0; command argv SHA-256
   6aaddede6686d7f2e38723f277d388196babe55eb1d78ec9762715572fa98615.
+
+- 2026-09-16T17:51:02+00:00: Signed+DCO eb0adad adds bounded backup/restore preserving revoked state
+  and validate_identity_store: symlink-safe regular file, expected owner, private mode, size bound.
+  Auth suite 10/10 passes; initial mode-negative failure was corrected by setting fixture mode 0600.
