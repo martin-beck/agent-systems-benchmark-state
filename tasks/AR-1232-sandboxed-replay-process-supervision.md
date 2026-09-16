@@ -11,17 +11,17 @@
   "id": "AR-1232",
   "next_action": "Integrate StrictReplayLaunchRecord and StrictReplayExecutor route identity into the sandbox launch boundary without creating a runtime dependency cycle; bind adapter command identity and runtime-denied capability, then run full locked gates.",
   "observed_branch": "feature/ar-1232",
-  "observed_dirty": 2,
-  "observed_head": "1f8a4697f195fc738108e23a418deb812e7c1fdf",
+  "observed_dirty": 0,
+  "observed_head": "a2df254fd2e685249eaa68f86ce457e80c6d6272",
   "owner": "asb_ar1232_sandbox_supervision",
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T03:07:56+00:00",
+  "updated_at": "2026-09-16T03:08:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
