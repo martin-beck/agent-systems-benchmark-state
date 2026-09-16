@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1251-mockagents-transport-sandbox",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T19:10:32+00:00",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1251-mockagents-transport-sandbox",
   "observed_dirty": 0,
   "observed_head": "2a12068c2e1d0c6146fb41de785155b1d43f51ee",
-  "owner": "",
+  "owner": "asb_ar1251_mockagents_transport",
   "plan": "../plans/AR-1251.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add a bounded transport and sandbox fixture for MockAgents qualification.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Add MockAgents transport sandbox fixture",
-  "updated_at": "2026-09-16T18:55:29+00:00",
+  "updated_at": "2026-09-16T18:55:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1251"
 }
 ---
@@ -95,3 +95,5 @@ preserve privacy, network-denial, signature, DCO, and exact-tree gates.
   AR-1249 remains separate and blocked.
 
 - 2026-09-16T18:55:29+00:00: Correct stale next action after runner seam commit and release.
+
+- 2026-09-16T18:55:32+00:00: Claimed by asb_ar1251_mockagents_transport.
