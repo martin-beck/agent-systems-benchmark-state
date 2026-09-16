@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 408,
+  "task_revision": 409,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T06:25:20+00:00",
+  "updated_at": "2026-09-16T06:29:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -1097,3 +1097,7 @@
   probe on this host, so the required deny-by-default loopback-only guarantee is unverified and
   AR-1232 remains blocked. Do not broaden access. Next action: provide an enforceable, independently
   verified loopback-only transport wrapper or kernel policy before implementation/re-review.
+
+- 2026-09-16T06:29:09+00:00: User-authorized one-time host-network validation design audit: test
+  cgroup-scoped firewall policy capability first; if unavailable, use private namespace plus relay.
+  No persistent firewall mutation is authorized.
