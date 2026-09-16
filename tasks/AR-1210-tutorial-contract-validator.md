@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-16T05:50:16+00:00",
   "depends_on": [],
   "id": "AR-1210",
-  "next_action": "PR #184 exact head 984b2f8 after source-header repair; monitor all required checks and independently review resulting exact diff before any merge.",
+  "next_action": "PR #184 exact head 3e475bd after complete source-header repair; monitor fresh exact-head checks, diagnose failures, and do not merge before all required checks and coordinator approval.",
   "observed_branch": "docs/ar-1210-tutorial-contract",
   "observed_dirty": 0,
   "observed_head": "3e475bda8f44836a169bc8fc679b430f6c993961",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define offline tutorial steps and validate them against the ASB CLI grammar.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Tutorial contract and syntax validator",
-  "updated_at": "2026-09-16T04:04:12+00:00",
+  "updated_at": "2026-09-16T04:04:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1210"
 }
 ---
@@ -203,3 +203,8 @@ be required.
 
 - 2026-09-16T04:04:12+00:00: Recorded command exit 0; command argv SHA-256
   cd4b126355e951f8ad8bb9de9e1ecbd99bd95b6abb15dd1fc01491b05f493e14.
+
+- 2026-09-16T04:04:41+00:00: PR #184 header failure run 35054026014/job104660279038 identified
+  tools/tutorials/test_validate.py missing exact adjacent Huawei 2026/SPDX lines 1-2. Added required
+  headers to test_validate.py and validate.py in signed+DCO commit 3e475bd, pushed, and verified
+  clean tree.
