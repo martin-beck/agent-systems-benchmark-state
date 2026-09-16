@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-1235",
-  "next_action": "Authoritative hosted run 35060286408/job 104678968629 at exact fd7daa4 failed only during full asb-agents AArch64 suite: 164 passed, diagnostic_and_symlink_fail_closed returned Ok GooseOutcome with valid events and exit_code 127, so unwrap_err panicked. Setup/materialization/toolchain all passed. Reproduced neither in exact test nor full suite under local repository-style QEMU Ubuntu 24.04.4 sysroot; both pass 1/1 and 165/165. Classify as hosted runner/environment-only or transient; no product fix justified. Release blocked/ownerless with detailed evidence.",
+  "next_action": "Repeated exact diagnostic test completed 10/10 under repository-style QEMU AArch64 (rustc 1.93.0, target aarch64-unknown-linux-gnu, Ubuntu 24.04.4 arm64 sysroot, qemu-aarch64), aggregate pass=10 fail=0, every iteration exit 0. Combined with exact/full suite passes and authoritative hosted failure log, classify original exit 127 as hosted-only/transient or environment-specific; no product fix justified. Release blocked/ownerless.",
   "observed_branch": "feature/ar-1235-goose-fixture-portability",
   "observed_dirty": 3,
   "observed_head": "fd7daa43549edd67b60076aa6b1eee333061b438",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair Goose diagnostic fixture portability under emulated AArch64.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Portable Goose diagnostic fixture",
-  "updated_at": "2026-09-16T06:08:53+00:00",
+  "updated_at": "2026-09-16T06:09:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1235"
 }
 ---
@@ -123,3 +123,7 @@ its intended diagnostic error assertion. Preserve the failure and repair the fix
 
 - 2026-09-16T06:08:46+00:00: Recorded command exit 0; command argv SHA-256
   a9421f3fc3ed74fbc44fc0ee3825a44d059383d325c478bf9cd95d0a19374ea7.
+
+- 2026-09-16T06:09:08+00:00: 2026-09-16T06:09Z: handoffctl-run bash loop executed the exact Goose
+  test ten times with fresh test process each iteration; all ten passed (1 test each), aggregate
+  pass=10 fail=0. No source changes.
