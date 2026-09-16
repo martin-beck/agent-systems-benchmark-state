@@ -7,7 +7,7 @@
     "AR-1252"
   ],
   "id": "AR-1253",
-  "next_action": "Complete independent exact-head review/approval for PR #201 at b7797d0, then perform signed local merge via handoffctl only; verify exact-main post-merge workflows before release.",
+  "next_action": "Monitor post-merge workflows for exact main a0befc0 until all seven terminal SUCCESS; verify exact tree/signature/DCO/policy, then release AR-1253 done.",
   "observed_branch": "feature/ar-1253-pinned-python-transport-runtime",
   "observed_dirty": 0,
   "observed_head": "b7797d05c1a12f4e5cdd8d7df2a7b26c72425052",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision pinned Python transport fixture runtime.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Provision pinned Python transport fixture runtime",
-  "updated_at": "2026-09-16T13:36:22+00:00",
+  "updated_at": "2026-09-16T13:36:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1253"
 }
 ---
@@ -112,3 +112,14 @@ Keep runtime images, caches, provenance, and all test activity under `/srv/data/
   7d2bde4babd7dcec847cbb966dd538e28fe50aba34a04b6be902857a8d669df4.
 
 - 2026-09-16T13:36:22+00:00: Heartbeat by asb_ar1253_python_runtime.
+
+- 2026-09-16T13:36:33+00:00: Independent final review of complete AR-1253 diff passed: exact head
+  b7797d05 is clean, SSH-signed with matching DCO, validator binds closed manifest to
+  docker-library/python and python:3.13.15-slim-bookworm, immutable Python digest/version/amd64,
+  network none/site disabled; positive and tamper/unknown-field negatives present. PR #201
+  exact-head all 12 required checks SUCCESS. Signed local no-ff integration via
+  tools/integration/merge_pr.py published merge a0befc0ff247a42b8d796af161b58b1011de8377 with
+  parents 85bcd1e423a6bd7da29a29cac4dbdcf9e4822837 and b7797d05c1a12f4e5cdd8d7df2a7b26c72425052,
+  tree ed49266ea0a24423a4712894203f0a1472d4867e, signature G martin.beck2@gmx.de and DCO. Post-merge
+  exact-main workflows: hosted and Huawei headers SUCCESS; AArch64, repository quality, fault, Rust,
+  formal still in progress at update.

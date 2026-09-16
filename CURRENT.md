@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1253](tasks/AR-1253-pinned-python-transport-runtime.md): Provision pinned Python transport fixture runtime | Provision pinned Python transport fixture runtime. | Complete independent exact-head review/approval for PR #201 at b7797d0, then perform signed local merge via handoffctl only; verify exact-main post-merge workflows before release. | asb_ar1253_python_runtime |
+| P1 | [AR-1253](tasks/AR-1253-pinned-python-transport-runtime.md): Provision pinned Python transport fixture runtime | Provision pinned Python transport fixture runtime. | Monitor post-merge workflows for exact main a0befc0 until all seven terminal SUCCESS; verify exact tree/signature/DCO/policy, then release AR-1253 done. | asb_ar1253_python_runtime |
 
 ## Open
 
