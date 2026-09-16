@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1248-strict-replay-cli-contract",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T22:02:49+00:00",
   "depends_on": [
     "AR-1231",
     "AR-1232"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1248-strict-replay-cli-contract",
   "observed_dirty": 0,
   "observed_head": "cebe8efc19a1665c87f0d354ea6584670792957b",
-  "owner": "",
+  "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1248.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 118,
+  "task_revision": 119,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T20:02:47+00:00",
+  "updated_at": "2026-09-16T20:02:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -341,3 +341,5 @@ formal, privacy, signature, DCO, and exact-tree gates.
 - 2026-09-16T20:02:47+00:00: Coordinator authorized bounded failure-repair audit: dependencies are
   terminal done; inspect exact PR #197 Repository quality/Rust failures and repair only reproducible
   scoped coverage/provenance issues before publication.
+
+- 2026-09-16T20:02:49+00:00: Claimed by asb_ar1024_lifecycle_router.
