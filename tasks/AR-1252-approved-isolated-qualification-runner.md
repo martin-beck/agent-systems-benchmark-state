@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-1252",
-  "next_action": "Integrate runner with AR-1251 and add fixture-backed network-denial/no-mount evidence; run full gates.",
+  "next_action": "Integrate runner with AR-1251; add no-mount assertion and run full policy gates.",
   "observed_branch": "feature/ar-1252-approved-isolated-runner",
   "observed_dirty": 0,
   "observed_head": "61039767da31d4ab1734c86ee3951e8a54dd72e6",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:18:59+00:00",
+  "updated_at": "2026-09-16T11:19:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -117,3 +117,10 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
 
 - 2026-09-16T11:18:59+00:00: Recorded command exit 0; command argv SHA-256
   39059b7c1cd82b6a868a9664b24fb3304554af65573f82cb7ce48f4ad80d3937.
+
+- 2026-09-16T11:19:26+00:00: Signed+DCO commits bde4bf8 and 6103976 pushed. Added fixed
+  --verify-network-none probe executing /bin/cat /proc/net/route in the digest-pinned container;
+  initial assertion incorrectly rejected the standard empty-route header, corrected to require
+  exactly header-only output. Probe now returns network-none-verified. Existing 2/2 isolation
+  contract tests and timeout 124 test remain passing. One validated read-only artifact bind is the
+  sole host input; no other mounts are created. AR-1251 integration and no-mount evidence remain.
