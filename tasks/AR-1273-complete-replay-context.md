@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1273-complete-replay-context",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T01:30:31+00:00",
+  "claim_expires": "2026-09-17T01:32:42+00:00",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide complete runtime-owned context for strict-replay execution.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Complete runtime-owned replay request context",
-  "updated_at": "2026-09-16T23:30:31+00:00",
+  "updated_at": "2026-09-16T23:32:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1273-complete-replay-context"
 }
 ---
@@ -34,3 +34,5 @@ AR-1272's blocked evidence; never accept caller-provided authority or fabricate 
   is required for real supervised execution.
 
 - 2026-09-16T23:30:31+00:00: Claimed by asb_ar1024_lifecycle_router.
+
+- 2026-09-16T23:32:42+00:00: Heartbeat by asb_ar1024_lifecycle_router.
