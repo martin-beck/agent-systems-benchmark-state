@@ -2,22 +2,22 @@
 {
   "branch": "fix/gemini-hook-readiness-race",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T07:55:26+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1041",
   "next_action": "Monitor all 12 checks on draft PR #136 exact head 55648d5a29f4c29e9525eb7f2a890ac5232d7b5a; if terminal green, release OPEN for protected merge decision; do not self-merge.",
   "observed_branch": "fix/gemini-hook-readiness-race",
   "observed_dirty": 0,
   "observed_head": "55648d5a29f4c29e9525eb7f2a890ac5232d7b5a",
-  "owner": "asb_ar1232_sandbox_supervision",
+  "owner": "",
   "plan": "../plans/AR-1041.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Eliminate the load-sensitive Gemini hook readiness race without weakening validation.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Make Gemini hook readiness publication atomic",
-  "updated_at": "2026-09-16T05:55:26+00:00",
+  "updated_at": "2026-09-16T05:56:03+00:00",
   "worktree_key": "agent-systems-benchmark-gemini-hook-readiness-race"
 }
 ---
@@ -215,3 +215,7 @@ any TUI code.
   forward-only AR-1045 attestation/current-main recovery; reclaim only after AR-1045 completes.
 
 - 2026-09-16T05:55:26+00:00: Claimed by asb_ar1232_sandbox_supervision.
+
+- 2026-09-16T05:56:03+00:00: No new implementation required. Historical PR136 merge defect is
+  covered by completed forward-only AR-1045 attestation (d0ea32c successor, signed/DCO, clean).
+  Release this stale claim ownerless; do not rewrite protected history.
