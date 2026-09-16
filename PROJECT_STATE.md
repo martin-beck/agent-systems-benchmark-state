@@ -22,7 +22,7 @@ Generated from local Git and GitHub. Do not edit.
 | #151 | `dependabot/cargo/serde-1.0.229@c926edfde377` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #193 | `feature/ar1244-publish-1232@7ceb522b71eb` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): publish strict replay supervision |
-| #195 | `fix/ar-1246-protected-main-dco-flow@35c69dc9b285` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(quality): validate DCO by protected merge flow |
+| #195 | `fix/ar-1246-protected-main-dco-flow@35c69dc9b285` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(quality): validate DCO by protected merge flow |
 
 ## Recent workflows
 
@@ -30,8 +30,8 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 35081879115 | `35c69dc9b285` | pull_request | Huawei MIT source headers | completed:success |
 | 35081879030 | `35c69dc9b285` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 35081878887 | `35c69dc9b285` | pull_request | Formal assurance | in_progress:- |
-| 35081878788 | `35c69dc9b285` | pull_request | Rust verification | in_progress:- |
+| 35081878887 | `35c69dc9b285` | pull_request | Formal assurance | completed:success |
+| 35081878788 | `35c69dc9b285` | pull_request | Rust verification | completed:success |
 | 35081878762 | `35c69dc9b285` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 35081878750 | `35c69dc9b285` | pull_request | Fault assurance | completed:success |
 | 35081878748 | `35c69dc9b285` | pull_request | Repository quality | completed:failure |
