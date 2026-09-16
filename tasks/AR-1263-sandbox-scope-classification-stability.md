@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1263.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Stabilize intermittent sandbox scope classification in the quality gate.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Stabilize sandbox scope classification gate",
-  "updated_at": "2026-09-16T21:42:01+00:00",
+  "updated_at": "2026-09-16T22:07:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1263-sandbox-stability"
 }
 ---
@@ -186,3 +186,7 @@ fail-closed test/runner behavior and preserve the original semantic assertions.
   signature key unavailable. Feature commit 0acbc1d and all 12 exact-head checks are preserved
   green. Requires signed forward-only protected-main recovery plus exact-main policy/post-merge
   verification; AR is not complete.
+
+- 2026-09-16T22:07:50+00:00: AR-1264 signed forward-only recovery 69e8b064 resolved the
+  protected-main DCO blocker; reopen AR-1263 for closure verification against exact signed main and
+  terminal post-merge evidence.
