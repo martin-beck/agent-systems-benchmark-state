@@ -2,7 +2,7 @@
 {
   "branch": "feature/remote-enrollment-authz",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T21:36:48+00:00",
+  "claim_expires": "2026-09-16T21:38:10+00:00",
   "depends_on": [
     "AR-0813"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 265,
+  "task_revision": 266,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:37:54+00:00",
+  "updated_at": "2026-09-16T19:38:10+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -722,3 +722,5 @@ Implementation has not started. Read the linked plan before claiming.
   certificate validity and existing private owner/mode/symlink-safe store before bounded metadata
   write. Round-trip persistence and expiry rejection test pass; worktree clean. No certificate bytes
   or secrets are stored.
+
+- 2026-09-16T19:38:10+00:00: Heartbeat by asb_ar0814_enrollment_authz.
