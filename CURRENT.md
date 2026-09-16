@@ -8,7 +8,6 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1244](tasks/AR-1244-publish-replay-supervision.md): Publish AR-1232 strict-replay supervision | Publish strict-replay supervision integration. | Monitor fresh PR193 CI at 7ceb522; review exact head and merge only after all required checks green. | asb_ar1244_publish_1232 |
-| P0 | [AR-1245](tasks/AR-1245-postmerge-dco-evidence.md): Post-merge DCO admission evidence | Repair DCO admission for the immutable PR-192 GitHub merge while preserving strict future checks. | Monitor PR #194 required checks; merge only after all protected checks pass. | asb_ar1237_launch_bridge_worker |
 
 ## Open
 
@@ -181,6 +180,7 @@ Never edit this file directly.
 | P0 | [AR-1241](tasks/AR-1241-native-isolation-matrix.md): Native isolation negative and lifecycle matrix | Complete native signed-bundle isolation negative and lifecycle evidence. | Add provider/external/descendant egress denial and timeout/cancel/crash/non-interference tests for the signed native bundle. | - |
 | P0 | [AR-1242](tasks/AR-1242-protected-main-admission.md): Enforce signed protected-main admission | Prevent protected-main admission from creating unsigned GitHub merge commits. | No further action; signed merge and all exact-main post-merge gates are complete. | - |
 | P0 | [AR-1243](tasks/AR-1243-signed-bundle-assembly.md): Installable signed runtime bundle assembly | Build, sign, verify, and publish installable supervisor and sidecar runtime bundles. | No further action; clean signed bundle assembly, verification, and deterministic build gates are complete. | - |
+| P0 | [AR-1245](tasks/AR-1245-postmerge-dco-evidence.md): Post-merge DCO admission evidence | Repair DCO admission for the immutable PR-192 GitHub merge while preserving strict future checks. | Monitor PR #194 required checks; merge only after all protected checks pass. | - |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. | - |
 | P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. | - |
 | P1 | [AR-0004](tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. | - |
