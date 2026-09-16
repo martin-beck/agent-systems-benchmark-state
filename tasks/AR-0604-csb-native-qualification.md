@@ -2,7 +2,7 @@
 {
   "branch": "feature/csb-native-qualification",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T21:40:51+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0201",
     "AR-0202",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/csb-native-qualification",
   "observed_dirty": 0,
   "observed_head": "4e2820bffe93234d02ca39b59067bf4442b08f95",
-  "owner": "asb_ar0604_provenance_audit_20260916",
+  "owner": "",
   "plan": "../plans/AR-0604.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Qualify native CSB monitoring contention and overhead",
-  "updated_at": "2026-09-16T19:41:08+00:00",
+  "updated_at": "2026-09-16T19:41:11+00:00",
   "worktree_key": "agent-systems-benchmark-csb-native-qualification"
 }
 ---
@@ -91,3 +91,6 @@ Implementation has not started. Read the linked plan before claiming.
   emulation cannot establish the plan required native x86_64 monitoring/overhead evidence. Docker
   socket access fails with permission denied and no approved immutable image/setup recipe is
   recorded. No product mutation or qualification claim made.
+
+- 2026-09-16T19:41:11+00:00: Released ownerless blocked after provenance audit: exact
+  interpreter/source and authorized container/native runner unavailable.
