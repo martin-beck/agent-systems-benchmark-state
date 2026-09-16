@@ -14,17 +14,17 @@
   "id": "AR-1232",
   "next_action": "Wait for approved, merged AR-1234 runtime-owned loopback namespace capability (and AR-1233 LoopbackOnly policy contract) before child HTTP cassette integration. Their current commits are feature-branch-only and both tasks remain blocked; do not reuse unmerged code. Then bind ReplayRelayHandoff into the reviewed launch contract and rerun child success, provider-egress denial, stale/duplicate, timeout/crash cleanup, and unrelated-process tests.",
   "observed_branch": "feature/ar-1232",
-  "observed_dirty": 0,
-  "observed_head": "7613c678c71806dd7f3aa3f7cc521dd9a8256e3e",
+  "observed_dirty": 2,
+  "observed_head": "ec25db8ec6bc0c0de1b07dece9f92f2e9ebda22c",
   "owner": "",
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "open",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 448,
+  "task_revision": 449,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T08:55:25+00:00",
+  "updated_at": "2026-09-16T08:59:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---

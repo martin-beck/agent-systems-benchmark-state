@@ -32,14 +32,15 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1229-auth-application-integration` | `feature/ar-1229-auth-application-integration` | `b33d6da59ba9` | 0 | behind 95, ahead 0 |
 | `agent-systems-benchmark-ar-1230-authenticated-provider-request-seam` | `feature/ar-1230-authenticated-provider-request-seam` | `3d0349af1a56` | 0 | behind 131, ahead 0 |
 | `agent-systems-benchmark-ar-1231` | `feature/ar-1231` | `fd8eaef0c36d` | 0 | behind 54, ahead 0 |
-| `agent-systems-benchmark-ar-1232` | `feature/ar-1232` | `7613c678c718` | 0 | behind 53, ahead 27 |
+| `agent-systems-benchmark-ar-1232` | `feature/ar-1232` | `ec25db8ec6bc` | 2 | behind 53, ahead 38 |
+| changed files | - | - | - | `crates/asb-agents/src/launch_bridge.rs`, `crates/asb-runtime/src/sandbox.rs` |
 | `agent-systems-benchmark-ar-1233` | `feature/ar-1233` | `11575f6a96a1` | 0 | behind 32, ahead 11 |
 | `agent-systems-benchmark-ar-1233-positive` | `feature/ar-1233-positive-transport` | `36dd575d2b76` | 0 | behind 307, ahead 9 |
 | `agent-systems-benchmark-ar-1234` | `feature/ar-1234` | `7afabe002d82` | 0 | behind 0, ahead 14 |
 | `agent-systems-benchmark-ar-1235` | `feature/ar-1235-goose-fixture-portability` | `fd7daa43549e` | 3 | behind 23, ahead 0 |
 | changed files | - | - | - | `target-hosted-aarch64/`, `target-hosted-full-aarch64/`, `target-repeat-aarch64/` |
 | `agent-systems-benchmark-ar-1236` | `feature/ar-1236-runtime-loopback-sidecar` | `42c3d1959b9a` | 0 | behind 307, ahead 4 |
-| `agent-systems-benchmark-ar-1237` | `feature/ar-1237-launch-bridge` | `74150c39e63b` | 0 | behind 0, ahead 1 |
+| `agent-systems-benchmark-ar-1237` | `feature/ar-1237-strict-replay-launch-bridge` | `fc2fa39e1107` | 0 | behind 0, ahead 14 |
 | `agent-systems-benchmark-ar-1238` | `feature/ar-1238-runtime-loopback-supervisor` | `e4c2e56c076a` | 0 | behind 307, ahead 10 |
 | `agent-systems-benchmark-ar-1239` | `feature/ar-1239-signed-runtime-bundle` | `6836bb4010f5` | 0 | behind 307, ahead 2 |
 | `agent-systems-benchmark-ar-1240` | `feature/ar-1240-native-signed-bundle-fixture` | `282eeffd78ea` | 0 | behind 307, ahead 13 |
