@@ -28,8 +28,8 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35056808051 | `00f37631e680` | push | Hosted portability and native qualification | in_progress:- |
-| 35056807979 | `00f37631e680` | push | Fault assurance | in_progress:- |
+| 35056808051 | `00f37631e680` | push | Hosted portability and native qualification | completed:success |
+| 35056807979 | `00f37631e680` | push | Fault assurance | completed:success |
 | 35056807976 | `00f37631e680` | push | Huawei MIT source headers | completed:success |
 | 35056807972 | `00f37631e680` | push | Rust verification | in_progress:- |
 | 35056807971 | `00f37631e680` | push | Repository quality | completed:failure |
