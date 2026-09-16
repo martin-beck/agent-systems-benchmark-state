@@ -8,15 +8,18 @@
   ],
   "id": "AR-1226",
   "next_action": "Reproduce the protected-main merge-tree mismatch and requalify a current-main topic tree without weakening policy.",
+  "observed_branch": "repair/protected-merge-tree-policy",
+  "observed_dirty": 0,
+  "observed_head": "fd7daa43549edd67b60076aa6b1eee333061b438",
   "owner": "asb_ar1232_lifecycle_router",
   "plan": "../plans/AR-1226.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remediate the protected-main merge-tree mismatch from stale-base PR merging.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Protected merge-tree remediation",
-  "updated_at": "2026-09-16T06:28:15+00:00",
+  "updated_at": "2026-09-16T06:28:23+00:00",
   "worktree_key": "agent-systems-benchmark-protected-merge-tree-remediation"
 }
 ---
