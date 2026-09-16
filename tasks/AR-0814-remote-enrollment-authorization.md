@@ -10,16 +10,16 @@
   "next_action": "Wire runner-owned authenticated admin context and generation/audit into BreakGlass dispatch; then rerun full locked workspace gates.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
-  "observed_head": "47ba6109aba55c8eb89bebb0f73e7cb6a1f65b87",
+  "observed_head": "3e0f22895af98c3cd7265d9fea636aeffe8c0845",
   "owner": "asb_ar0814_enrollment_authz",
   "plan": "../plans/AR-0814.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 232,
+  "task_revision": 233,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:14:02+00:00",
+  "updated_at": "2026-09-16T19:14:09+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
