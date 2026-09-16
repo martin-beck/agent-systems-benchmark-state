@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1269",
-  "next_action": "Integrate runtime bundle with cassette service and add executable supervised lifecycle/egress/cancel/restart/timeout/crash/no-fallback fixtures; then full gates.",
+  "next_action": "Await approved runtime-issued cassette-service handle/shared transport extension; then connect it to spawn_runtime_replay and run real request/response, egress, cancellation/restart, timeout/crash cleanup, no-fallback fixtures.",
   "observed_branch": "feature/ar-1269-runtime-replay-launch-factory",
   "observed_dirty": 0,
   "observed_head": "2220c899650d8fddaeffdc8450f7b0449cfa9327",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create runtime-owned launch bundles for supervised strict replay.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Runtime-owned replay launch-bundle factory",
-  "updated_at": "2026-09-16T23:03:27+00:00",
+  "updated_at": "2026-09-16T23:04:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1269-runtime-launch-factory"
 }
 ---
@@ -103,3 +103,11 @@ AR-1268's blocked transport evidence and never move launch authority into the CL
   lease/input/command parameters are exposed. CLI lib suite passes 71/71 and fmt pass; product tree
   clean. Remaining acceptance is real cassette request/response and lifecycle/egress evidence
   through this consumer.
+
+- 2026-09-16T23:04:04+00:00: Architecture blocker: ReplayLaunchBundle correctly owns
+  SandboxBackend/SandboxLaunchInput/ResourceLease/pinned commands, but cannot carry asb-replay
+  Cassette/StrictReplayService because asb-runtime must remain dependency-neutral and cannot import
+  asb-replay. CLI spawn_runtime_replay therefore cannot honestly prove cassette request/response or
+  lifecycle/egress behavior without a runtime-issued cassette-service handle or shared transport
+  extension. No caller-provided cassette/authority fabrication added; branch remains clean signed
+  2220c89 and unpublished.
