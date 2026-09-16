@@ -9,7 +9,7 @@
     "AR-1230"
   ],
   "id": "AR-1232",
-  "next_action": "d7ca82f adds executor recover_after_restart closure test and passes focused lifecycle test; remote is already at d7ca82f. Push exit 1 was stale expected-ref race, not product failure. Continue native stale/duplicate generation integration and rerun full gates.",
+  "next_action": "d7ca82f focused strict_replay module now passes 15/15, covering qualified cassette execution, duplicate-attempt rejection, stale route rejection, and recover_after_restart closure. Native child lifecycle/egress evidence remains 7/7 at a3b6768; native StrictReplayExecutor service integration is still the explicit blocker before re-review.",
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "d7ca82fba8885e0929fc7e3d0a43c28eb93ca342",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 370,
+  "task_revision": 371,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T04:56:07+00:00",
+  "updated_at": "2026-09-16T04:56:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -973,3 +973,10 @@
 
 - 2026-09-16T04:56:07+00:00: Recorded command exit 0; command argv SHA-256
   b2e6aab63f630114475a2e82a0b121f0fb51c00e61f7c247c72852f058b4d28a.
+
+- 2026-09-16T04:56:28+00:00: Current focused gate via handoffctl: cargo test --locked --offline -p
+  asb-agents strict_replay::tests passed 15/15. This includes real cassette service request,
+  no-fallback malformed cassette, stale route, duplicate attempt, and recovery closure. No product
+  mutation this turn; exact signed head remains d7ca82f clean/pushed. Remaining gap is wiring this
+  executor service to a native child process lifecycle, which requires a transport seam not present
+  in AR-1232.
