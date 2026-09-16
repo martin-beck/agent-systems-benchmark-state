@@ -2,7 +2,7 @@
 {
   "branch": "fix/ar-1263-sandbox-scope-classification",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T23:17:51+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1238"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "fix/ar-1263-sandbox-scope-classification",
   "observed_dirty": 0,
   "observed_head": "0acbc1d1a8bf43a226fda503fbd76f8afd48eb07",
-  "owner": "asb_ar1263_sandbox_stability",
+  "owner": "",
   "plan": "../plans/AR-1263.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Stabilize intermittent sandbox scope classification in the quality gate.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Stabilize sandbox scope classification gate",
-  "updated_at": "2026-09-16T21:28:30+00:00",
+  "updated_at": "2026-09-16T21:28:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1263-sandbox-stability"
 }
 ---
@@ -121,3 +121,9 @@ fail-closed test/runner behavior and preserve the original semantic assertions.
   this environment; failure-path harness invocation was usage-only because its required --bin-dir
   was not supplied. Focused terminal-crash test passed 20/20 after signed fix. Ready for independent
   review; no PR/merge performed.
+
+- 2026-09-16T21:28:43+00:00: Released ownerless for independent review. Exact clean product head
+  0acbc1d1a8bf43a226fda503fbd76f8afd48eb07; signed SSH commit with matching DCO. Focused
+  terminal-crash test passed 20/20; fmt, locked workspace tests, clippy -D warnings, rustdoc,
+  repository policy, and signature policy passed. cargo deny/audit unavailable; failure-path harness
+  requires approved --bin-dir. No PR or merge performed.
