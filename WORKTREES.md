@@ -25,8 +25,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1130` | `feature/ar-1130` | `603eb8eb86dd` | 0 | behind 72, ahead 0 |
 | `agent-systems-benchmark-ar-1140` | `feature/ar-1140` | `1e3212baf22c` | 0 | behind 17, ahead 0 |
 | `agent-systems-benchmark-ar-1150` | `feature/ar-1150` | `d2498a7372ed` | 0 | behind 66, ahead 0 |
-| `agent-systems-benchmark-ar-1151` | `feature/ar-1151` | `baf119c55844` | 1 | behind 65, ahead 3 |
-| changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
+| `agent-systems-benchmark-ar-1151` | `feature/ar-1151` | `baf119c55844` | 0 | behind 65, ahead 3 |
 | `agent-systems-benchmark-ar-1210` | `docs/ar-1210-tutorial-contract` | `3e475bda8f44` | 0 | behind 50, ahead 0 |
 | `agent-systems-benchmark-ar-1228-auth-backends-probes` | `feature/ar-1228-auth-backends-probes` | `2d716c8cac94` | 0 | behind 117, ahead 0 |
 | `agent-systems-benchmark-ar-1229-auth-application-integration` | `feature/ar-1229-auth-application-integration` | `b33d6da59ba9` | 0 | behind 97, ahead 0 |
@@ -44,7 +43,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1239` | `feature/ar-1239-signed-runtime-bundle` | `6836bb4010f5` | 0 | behind 309, ahead 2 |
 | `agent-systems-benchmark-ar-1240` | `feature/ar-1240-native-signed-bundle-fixture` | `282eeffd78ea` | 0 | behind 309, ahead 13 |
 | `agent-systems-benchmark-ar-1241` | `feature/ar-1241-native-isolation-matrix` | `7523fde1d87e` | 0 | behind 309, ahead 15 |
-| `agent-systems-benchmark-ar-1243` | `feature/ar-1243` | `7b7262ebc33f` | 0 | behind 0, ahead 3 |
+| `agent-systems-benchmark-ar-1243` | `feature/ar-1243` | `054ff82dd584` | 0 | behind 0, ahead 4 |
 | `agent-systems-benchmark-ar-1243-packaging` | `feature/ar-1243-packaging` | `1e1b0f3a2fca` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 391, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 494, ahead 0 |
