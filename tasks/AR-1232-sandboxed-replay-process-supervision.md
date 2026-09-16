@@ -9,7 +9,7 @@
     "AR-1230"
   ],
   "id": "AR-1232",
-  "next_action": "Implement direct StrictReplaySandboxLaunch::spawn tests and bind record timeout/route environment into the launch contract; current integration compiles and full locked workspace tests pass.",
+  "next_action": "Bind authenticated record timeout and loopback route environment into the launch contract, then add cancellation/restart/partial cleanup tests and run full locked gates.",
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "678e11263d89d47b549be92cf0a6125687ba02cc",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 143,
+  "task_revision": 144,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T03:25:15+00:00",
+  "updated_at": "2026-09-16T03:25:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -387,3 +387,8 @@
   222c85d9556f390ef97ca48f1edc97dc0dee6335a93c2b33a58e382fb4006af8.
 
 - 2026-09-16T03:25:15+00:00: Heartbeat by asb_ar1232_sandbox_supervision.
+
+- 2026-09-16T03:25:36+00:00: Added signed+DCO commit 678e112: native strict replay sandbox harness
+  passes 2/2 focused tests, covering successful /usr/bin/env launch with ASB_REPLAY_ENDPOINT and
+  pre-spawn command mismatch rejection. Runtime environment accessor added. Full gates and
+  end-to-end child replay remain outstanding.
