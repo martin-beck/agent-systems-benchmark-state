@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1238-runtime-loopback-supervisor",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T09:26:11+00:00",
   "depends_on": [
     "AR-1100",
     "AR-1231"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1238-runtime-loopback-supervisor",
   "observed_dirty": 0,
   "observed_head": "e4c2e56c076ad9648ded2dbdd79cb2431cc7d33f",
-  "owner": "",
+  "owner": "asb_ar1238_bwrap_relay_worker",
   "plan": "../plans/AR-1238.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide the runtime-owned private-namespace supervisor for loopback replay.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Runtime-owned loopback supervisor",
-  "updated_at": "2026-09-16T08:26:08+00:00",
+  "updated_at": "2026-09-16T08:26:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1238"
 }
 ---
@@ -161,3 +161,5 @@ remaining work is launcher integration and real sidecar forwarding, not a host c
 
 - 2026-09-16T08:26:08+00:00: Reopen completion review after e4c2e56 bundle-path integration; native
   fixture matrix moved to follow-on AR-1240.
+
+- 2026-09-16T08:26:11+00:00: Claimed by asb_ar1238_bwrap_relay_worker.

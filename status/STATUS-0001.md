@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 7 |
+| **In progress** | Claimed work with a live lease | 3 |
+| **Open** | Dependency-ready and available to claim | 6 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 12 |
 | **Planned** | Defined work awaiting promotion or dependencies | 66 |
 | **Future** | Deferred roadmap work | 1 |
@@ -331,7 +331,7 @@ flowchart LR
         AR_1235["AR-1235 - Done"]:::status_done
         AR_1236["AR-1236 - Open"]:::status_open
         AR_1237["AR-1237 - Planned"]:::status_planned
-        AR_1238["AR-1238 - Open"]:::status_open
+        AR_1238["AR-1238 - In progress"]:::status_in_progress
         AR_1239["AR-1239 - Planned"]:::status_planned
         AR_1240["AR-1240 - Planned"]:::status_planned
     end
@@ -1391,14 +1391,15 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md): Make ShellCheck fail closed | asb_ar0898_shellcheck | Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck. | Pin ShellCheck and prove actionlint cannot silently disable its delegated shell analysis. |
+| P0 | [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md): Runtime-owned loopback supervisor | asb_ar1238_bwrap_relay_worker | Provide the runtime-owned private-namespace supervisor for loopback replay. | Run native bwrap end-to-end matrix using VerifiedBundle-provided supervisor/sidecar paths; current runtime API now confines paths and verifies content hashes. |
 | P1 | [AR-0860](../tasks/AR-0860-openjiuwen-replay.md): Qualify strict OpenJiuwen replay | asb_ar1232_lifecycle_router | Qualify strict OpenJiuwen replay. | Seal the sanitized live capture and prove strict offline replay, causal parity, malformed-record rejection, and zero external network. |
 
-### Open (7)
+### Open (6)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1408,7 +1409,6 @@ flowchart LR
 | P0 | [AR-1044](../tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Unclaimed | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. |
 | P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | Unclaimed | Replay strictly without providers. | Design and implement the missing executable strict-replay run-path seam: pass exact cassette route/service into agent adapter launch, deny provider egress at process boundary, and add campaign-level cancellation/restart/no-fallback tests. Current CLI replay only decodes/indexes/selects and emits metadata. |
 | P0 | [AR-1236](../tasks/AR-1236-runtime-loopback-sidecar.md): Runtime-owned loopback sidecar capability | Unclaimed | Provide a runtime-owned private-namespace loopback sidecar capability. | Implement the versioned runtime-issued sidecar handoff: same-private-namespace sidecar and adapter, authenticated route/generation/command metadata, listener readiness, bounded forwarding, teardown, and non-interference tests; preserve NetworkPolicy::Deny. |
-| P0 | [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md): Runtime-owned loopback supervisor | Unclaimed | Provide the runtime-owned private-namespace supervisor for loopback replay. | Run native bwrap end-to-end matrix using VerifiedBundle-provided supervisor/sidecar paths; current runtime API now confines paths and verifies content hashes. |
 
 ### Blocked (12)
 
