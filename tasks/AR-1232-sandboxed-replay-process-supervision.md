@@ -9,7 +9,7 @@
     "AR-1230"
   ],
   "id": "AR-1232",
-  "next_action": "Extend the launch-wrapper coverage to explicit timeout/crash/partial-launch and stale/duplicate lifecycle assertions, then run full locked runtime/workspace gates and prepare review.",
+  "next_action": "Integrate StrictReplayLaunchRecord and StrictReplayExecutor route identity into the sandbox launch boundary without creating a runtime dependency cycle; bind adapter command identity and runtime-denied capability, then run full locked gates.",
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "1f8a4697f195fc738108e23a418deb812e7c1fdf",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T03:02:13+00:00",
+  "updated_at": "2026-09-16T03:02:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -225,3 +225,9 @@
 
 - 2026-09-16T03:02:13+00:00: Recorded command exit 0; command argv SHA-256
   39cf5398131881d6bebfeb6940a170dba53287cbad205a984f34c80a6dbe58e7.
+
+- 2026-09-16T03:02:26+00:00: Added signed/DCO commit 1f8a469 and pushed.
+  launch_wrapper_timeout_and_crash_are_terminal now exercises SandboxBackend::spawn_launch: timeout
+  reaches TimedOut and crash is rejected as ScopeOwnership partial launch; existing wrapper
+  cancellation/drop cleanup remains covered. sandbox_boundary suite passes 11/11. Remaining review
+  scope is strict launch-record/executor binding and non-tautological command/capability identity.
