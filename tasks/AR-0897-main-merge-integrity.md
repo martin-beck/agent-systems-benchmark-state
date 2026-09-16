@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 90,
+  "task_revision": 91,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-16T04:58:38+00:00",
+  "updated_at": "2026-09-16T04:59:16+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -320,3 +320,13 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T04:58:38+00:00: Recorded command exit 1; command argv SHA-256
   a4d87edb00007f72f6f090fc76b3d27add16a975af7ece8a07803f9814d03bed.
+
+- 2026-09-16T04:59:16+00:00: Independent exact-head review approves
+  aceb1910b9203572cb2d477d0f94ad92d07e47e1: clean, rebased onto current main 00f3763, all three
+  commits SSH-signed/DCO; complete merge_pr/settings/policy diff is scope-correct and adversarial
+  integration tests 9/9 plus repository policy, py_compile, cargo fmt, asb-protocol lib 40/40 pass.
+  Published PR #126 branch update via exact --force-with-lease against prior bd6f450; PR now exact
+  head aceb191/base 00f3763 and open. Exact-head CI run
+  35057669012/69115/69146/69149/69102/69117/69083/69116 is pending except AWQ shadow and headers
+  pass. Do not merge until every required check is green and protected local signed merge path is
+  authorized; next monitor exact-head CI and independently reconcile any failures.
