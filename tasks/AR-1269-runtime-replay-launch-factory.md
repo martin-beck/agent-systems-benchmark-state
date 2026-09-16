@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1269",
-  "next_action": "Promote after dependency verification; implement the runtime-owned authenticated launch-bundle factory and real supervised replay fixtures.",
+  "next_action": "Fix runtime launch bundle dead-code gate, rerun runtime tests, then add bundle consumption/lifecycle integration.",
   "observed_branch": "feature/ar-1269-runtime-replay-launch-factory",
   "observed_dirty": 2,
   "observed_head": "69e8b064d3121a4bae1f672cdae9c0c8672000bc",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create runtime-owned launch bundles for supervised strict replay.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Runtime-owned replay launch-bundle factory",
-  "updated_at": "2026-09-16T22:58:34+00:00",
+  "updated_at": "2026-09-16T22:58:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1269-runtime-launch-factory"
 }
 ---
@@ -40,3 +40,8 @@ AR-1268's blocked transport evidence and never move launch authority into the CL
 
 - 2026-09-16T22:58:34+00:00: Recorded command exit 101; command argv SHA-256
   176cab5b29a40fa8794f09725ed51520aae1b944c519cabbe22bf8591c02577a.
+
+- 2026-09-16T22:58:57+00:00: Initial runtime-focused command exited 101 because new
+  ReplayLaunchBundle::issue is intentionally runtime-only and unused under -D warnings. This is
+  compile hygiene, not behavior failure; add narrow dead_code allowance and rerun. Worktree has only
+  fresh AR-1269 factory files and is not based on predecessor branches.

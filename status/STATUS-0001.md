@@ -1511,7 +1511,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1269](../tasks/AR-1269-runtime-replay-launch-factory.md): Runtime-owned replay launch-bundle factory | asb_ar1024_lifecycle_router | Create runtime-owned launch bundles for supervised strict replay. | Promote after dependency verification; implement the runtime-owned authenticated launch-bundle factory and real supervised replay fixtures. |
+| P0 | [AR-1269](../tasks/AR-1269-runtime-replay-launch-factory.md): Runtime-owned replay launch-bundle factory | asb_ar1024_lifecycle_router | Create runtime-owned launch bundles for supervised strict replay. | Fix runtime launch bundle dead-code gate, rerun runtime tests, then add bundle consumption/lifecycle integration. |
 
 ### Open (6)
 
