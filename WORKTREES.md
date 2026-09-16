@@ -48,8 +48,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1245` | `fix/ar-1245-postmerge-dco-evidence` | `3e12d64e8e6e` | 0 | behind 48, ahead 0 |
 | `agent-systems-benchmark-ar-1246` | `fix/ar-1246-protected-main-dco-flow` | `903aef8f4e12` | 0 | behind 45, ahead 0 |
 | `agent-systems-benchmark-ar-1247` | `fix/ar-1247-protected-main-dco-workflow` | `53d018d69057` | 0 | behind 1, ahead 0 |
-| `agent-systems-benchmark-ar-1248` | `feature/ar-1248-strict-replay-cli-contract` | `eac5232d94d6` | 1 | behind 0, ahead 2 |
-| changed files | - | - | - | `docs/examples/asb-cli-workflow-v1.provenance.json` |
+| `agent-systems-benchmark-ar-1248` | `feature/ar-1248-strict-replay-cli-contract` | `8896cad357e3` | 0 | behind 0, ahead 3 |
 | `agent-systems-benchmark-ar-1249` | `feature/ar-1249-mockagents-qualification-evidence` | `128ecddbfdb7` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 445, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 548, ahead 0 |
