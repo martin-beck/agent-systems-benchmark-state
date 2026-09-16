@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1248-strict-replay-cli-contract",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T22:21:38+00:00",
   "depends_on": [
     "AR-1231",
     "AR-1232"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1248-strict-replay-cli-contract",
   "observed_dirty": 0,
   "observed_head": "7d9c2ee2e08b9d61cb03837236918575405fb5c2",
-  "owner": "",
+  "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1248.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 138,
+  "task_revision": 139,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T20:20:30+00:00",
+  "updated_at": "2026-09-16T20:21:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -402,3 +402,5 @@ formal, privacy, signature, DCO, and exact-tree gates.
   Runtime-supervision integration remains the explicit next action; PR #197 must not merge until
   independent review clears supervised child transport, egress denial, cancellation/restart/cleanup
   and no-fallback evidence.
+
+- 2026-09-16T20:21:38+00:00: Claimed by asb_ar1024_lifecycle_router.
