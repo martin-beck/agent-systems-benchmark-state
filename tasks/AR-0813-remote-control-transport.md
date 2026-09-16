@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 121,
+  "task_revision": 122,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T14:58:44+00:00",
+  "updated_at": "2026-09-16T14:59:23+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -361,3 +361,10 @@ Implementation has not started. Read the linked plan before claiming.
   passed 5/5. Product tree clean. Remaining reviewer-requested fault evidence (packet loss/reorder,
   reconnect storms, protocol/address/partition matrix) needs a deterministic network harness; no
   unsupported simulation claimed.
+
+- 2026-09-16T14:59:23+00:00: Implementation is clean at signed 4c2f051; focused remote tests 5/5 and
+  live doctor pass. Remaining packet loss/reorder, reconnect-storm, address/port, IPv4/IPv6,
+  partition, and runner-continuation evidence is blocked: TLS/listener APIs require concrete
+  TcpStream and approved Docker/netem maintenance is unsafe/unavailable. No superficial in-process
+  or route-table evidence added. Next: qualified harness owner must provide provenance-bound network
+  fault runner or generalize transport over an audited fault-injectable stream.
