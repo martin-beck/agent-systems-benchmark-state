@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0813",
-  "next_action": "Add missing plan-mandated network fault/address coverage or link reviewed external-harness evidence: IPv4/IPv6 bind/address changes, packet loss/reorder, network partitions, half-open/reconnect storms, protocol skew/downgrade, port reuse; also implement/verify keepalive, rate limiting and graceful drain. Repair unrelated asb-metrics mismatch, rerun full workspace gates, then seek publication review.",
+  "next_action": "Implement actual idle/keepalive/rate-limit/drain enforcement in listener/session dispatch and add reviewed runner-continuation plus network fault evidence; repair unrelated asb-metrics mismatch, rerun full workspace gates, then request publication review.",
   "observed_branch": "feature/remote-control-transport",
   "observed_dirty": 0,
   "observed_head": "fb2061aaeeefbb19e280793ea125b01afcb23750",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 155,
+  "task_revision": 156,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T15:08:55+00:00",
+  "updated_at": "2026-09-16T15:09:10+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -452,3 +452,17 @@ Implementation has not started. Read the linked plan before claiming.
   asb-metrics kernel.rs:713 mismatch; network fault evidence remains transport-level.
 
 - 2026-09-16T15:08:55+00:00: Heartbeat by asb_ar0813_remote_transport.
+
+- 2026-09-16T15:09:10+00:00: Independent review of cumulative exact signed/DCO head
+  fb2061aaeeefbb19e280793ea125b01afcb23750 (including 7a480ac) confirms new bounded listener
+  admission, request backpressure, drain flag, rate-limiter type, EventWindow resume, deterministic
+  partition/drop/reorder fixture, reconnect loop, IPv4/IPv6/port validation,
+  malformed/truncated/oversized/slow/ALPN tests, and disconnect permit release. Publication remains
+  blocked: RemoteRateLimiter is a standalone API and is not wired into RemoteListener/session
+  dispatch; idle_timeout_ms is validated but no socket idle/keepalive enforcement exists; drain only
+  makes accept return an error and lacks bounded graceful completion; runner continuation is
+  represented by an EventWindow unit test, not an actual runner lifecycle/disconnect integration.
+  Fault matrix is transport-level synthetic evidence only and explicitly does not cover kernel/netem
+  equivalence; required external reviewed evidence is absent for packet loss/reorder, partitions,
+  protocol downgrade/address changes under real sockets. Full workspace test remains blocked by
+  unrelated asb-metrics kernel.rs:713 mismatch. No PR/publication authorized.
