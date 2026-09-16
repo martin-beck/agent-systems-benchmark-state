@@ -1480,7 +1480,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md): Runtime-owned strict-replay launch authority | asb_ar1024_lifecycle_router | Issue runtime-owned authority for supervised strict-replay execution. | Run full locked workspace tests, fmt, clippy, rustdoc, and policy/privacy gates on exact signed 3723fb9; then request independent review of authority and lifecycle boundary. |
+| P0 | [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md): Runtime-owned strict-replay launch authority | asb_ar1024_lifecycle_router | Issue runtime-owned authority for supervised strict-replay execution. | Rerun full locked workspace tests, fmt, clippy, rustdoc, and policy/privacy gates on exact signed ad0bc02; then request independent review. |
 
 ### Open (6)
 

@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1262",
-  "next_action": "Run full locked workspace tests, fmt, clippy, rustdoc, and policy/privacy gates on exact signed 3723fb9; then request independent review of authority and lifecycle boundary.",
+  "next_action": "Rerun full locked workspace tests, fmt, clippy, rustdoc, and policy/privacy gates on exact signed ad0bc02; then request independent review.",
   "observed_branch": "feature/ar-1262-runtime-owned-launch-authority",
   "observed_dirty": 0,
   "observed_head": "ad0bc024d74b0d8aff9d5504833eb7e0d3e0afa8",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned authority for supervised strict-replay execution.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-16T21:10:43+00:00",
+  "updated_at": "2026-09-16T21:10:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1262-runtime-authority"
 }
 ---
@@ -132,3 +132,10 @@ ownership and bounded lifecycle evidence.
 
 - 2026-09-16T21:10:35+00:00: Recorded command exit 0; command argv SHA-256
   35f53cd5a9383ab8922d831e3d7f15f11d3a7d7d3d925cb7d39bef7c4929f738.
+
+- 2026-09-16T21:10:55+00:00: Full workspace test failure was a checked-in provenance mismatch, not
+  product behavior: workflow_transcript::provenance_binds_the_exact_cli_and_public_fixture_sources
+  reported actual crates/asb-cli/src/lib.rs SHA-256
+  25c393eaae8d72b1cd81407dea3521d0d9f777c2957b8e3d5d679bd22fdb8867 versus recorded b024d4....
+  Updated docs/examples/asb-cli-workflow-v1.provenance.json in signed ad0bc02. Focused
+  workflow_transcript now passes 3/3; product worktree clean.
