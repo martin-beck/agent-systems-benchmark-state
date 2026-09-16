@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Build, sign, verify, and publish installable supervisor and sidecar runtime bundles.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Installable signed runtime bundle assembly",
-  "updated_at": "2026-09-16T09:19:22+00:00",
+  "updated_at": "2026-09-16T09:19:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1243"
 }
 ---
@@ -68,3 +68,6 @@ private material; do not alter host networking, firewall, credentials, or unrela
 
 - 2026-09-16T09:19:22+00:00: Recorded command exit 0; command argv SHA-256
   7df4d822095c4c557675dbe65db2e5af3cbd2c4c666ed2b58b71df96a39bb275.
+
+- 2026-09-16T09:19:35+00:00: Recorded command exit 0; command argv SHA-256
+  46774ef4293c509236228f52601e54d97fba15b63d238b321294726278c7b7b7.
