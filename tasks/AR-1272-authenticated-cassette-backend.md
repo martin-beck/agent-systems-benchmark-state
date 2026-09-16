@@ -11,17 +11,17 @@
   "id": "AR-1272",
   "next_action": "Promote after dependency verification; implement runtime-authenticated immutable cassette backend content binding and real supervised replay.",
   "observed_branch": "feature/ar-1272-authenticated-cassette-backend",
-  "observed_dirty": 2,
-  "observed_head": "69e8b064d3121a4bae1f672cdae9c0c8672000bc",
+  "observed_dirty": 0,
+  "observed_head": "d7d17b78e8f1176f2e776e46707f7806f270b6f6",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1272.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind immutable cassette content to a runtime-authenticated replay backend handle.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Authenticated immutable cassette backend",
-  "updated_at": "2026-09-16T23:22:24+00:00",
+  "updated_at": "2026-09-16T23:22:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1272-cassette-backend"
 }
 ---
