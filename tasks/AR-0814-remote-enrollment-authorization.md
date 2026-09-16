@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Split certificate issuance/chain validation and trusted-ancestor persistence into successor AR; retain atomic identity metadata write and threat tests.",
+  "next_action": "Create successor AR for certificate issuance/chain and trusted route authority; retain route-preserving pairing API and rerun full gates.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "29cfa19323a0ceb124438854d73f664ae2b86dcc",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 287,
+  "task_revision": 288,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:45:39+00:00",
+  "updated_at": "2026-09-16T19:45:54+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -794,3 +794,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T19:45:32+00:00: Recorded command exit 0; command argv SHA-256
   92d18493852826ae9f7edb6d76200db60bffa1986a72668884eafd5e81388be1.
+
+- 2026-09-16T19:45:54+00:00: Signed+DCO 29cfa19 adds EnrollmentPairingV1::from_identity, requiring
+  validated certificate metadata and bounded ceremony expiry while preserving independently supplied
+  route_sha256. Added positive route-preservation and expiry-mismatch negative tests; auth group
+  passes 18/18. Certificate issuance/chain and trusted IP/ancestor authority remain outside
+  available implementation and should be split to successor.
