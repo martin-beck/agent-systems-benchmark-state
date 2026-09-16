@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1251.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Add a bounded transport and sandbox fixture for MockAgents qualification.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Add MockAgents transport sandbox fixture",
-  "updated_at": "2026-09-16T18:55:02+00:00",
+  "updated_at": "2026-09-16T18:55:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1251"
 }
 ---
@@ -93,3 +93,5 @@ preserve privacy, network-denial, signature, DCO, and exact-tree gates.
   transport/lifecycle/egress proof remains blocked because approved runner cannot co-locate pinned
   binary and Python client under current one-mount contract; await reviewed AR-1252 integration.
   AR-1249 remains separate and blocked.
+
+- 2026-09-16T18:55:29+00:00: Correct stale next action after runner seam commit and release.
