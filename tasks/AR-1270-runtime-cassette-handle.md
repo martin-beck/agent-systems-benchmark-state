@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-issued cassette-service handle for supervised strict replay.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Runtime-issued cassette-service handle",
-  "updated_at": "2026-09-16T23:06:37+00:00",
+  "updated_at": "2026-09-16T23:06:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1270-runtime-cassette-handle"
 }
 ---
@@ -44,3 +44,6 @@ the CLI.
 
 - 2026-09-16T23:06:37+00:00: Recorded command exit 0; command argv SHA-256
   474ef19f4556278dcc77a99527fc880d499f620aa0c31805226d7b3f058f0232.
+
+- 2026-09-16T23:06:45+00:00: Recorded command exit 0; command argv SHA-256
+  e2fb60616251de3c6a4e6e92438ad67c476f5e0b781bc63dfddfcae0764dadac.
