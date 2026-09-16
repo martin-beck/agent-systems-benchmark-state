@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-16T05:50:16+00:00",
   "depends_on": [],
   "id": "AR-1210",
-  "next_action": "Independent exact-head review requested for pushed c010553; open PR only after approval. All product gates and focused tutorial tests pass.",
+  "next_action": "PR #184 exact head 984b2f8 after source-header repair; monitor all required checks and independently review resulting exact diff before any merge.",
   "observed_branch": "docs/ar-1210-tutorial-contract",
   "observed_dirty": 0,
   "observed_head": "984b2f8417e25c4e1e58c8d5fa5df68d52b11422",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define offline tutorial steps and validate them against the ASB CLI grammar.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Tutorial contract and syntax validator",
-  "updated_at": "2026-09-16T04:01:47+00:00",
+  "updated_at": "2026-09-16T04:02:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1210"
 }
 ---
@@ -184,3 +184,7 @@ be required.
 
 - 2026-09-16T04:01:47+00:00: Recorded command exit 0; command argv SHA-256
   cd4b126355e951f8ad8bb9de9e1ecbd99bd95b6abb15dd1fc01491b05f493e14.
+
+- 2026-09-16T04:02:17+00:00: Header gate failure on PR #184 exact head c010553 was diagnosed from
+  job 104659874611: tools/tutorials/__init__.py lacked adjacent Huawei 2026 and SPDX MIT lines 1-2.
+  Added exact header in signed+DCO commit 984b2f8, pushed successfully, and verified worktree clean.
