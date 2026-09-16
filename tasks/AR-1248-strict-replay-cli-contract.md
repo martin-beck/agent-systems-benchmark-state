@@ -8,7 +8,7 @@
     "AR-1232"
   ],
   "id": "AR-1248",
-  "next_action": "Define bounded cassette artifact resolution and authenticated CLI SidecarHandoff inputs; add schemas, docs, and fail-closed tests.",
+  "next_action": "Run contract consistency, focused CLI replay-contract/schema tests, full locked workspace, policy/privacy/signature gates; then exact-head review and PR.",
   "observed_branch": "feature/ar-1248-strict-replay-cli-contract",
   "observed_dirty": 0,
   "observed_head": "37a9c2b48765bcf20d74d2ea4cabbb749142c0eb",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T10:42:05+00:00",
+  "updated_at": "2026-09-16T10:42:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -72,3 +72,9 @@ formal, privacy, signature, DCO, and exact-tree gates.
 
 - 2026-09-16T10:41:57+00:00: Recorded command exit 0; command argv SHA-256
   86b0d1dd71b4402f8180c78ddf5c60ead0d27e36ce1372707ea4c99ae0cb36e4.
+
+- 2026-09-16T10:42:30+00:00: Signed commit 37a9c2b adds StrictReplayPlanV1 resolver with explicit
+  bounded artifact root, symlink/traversal/size/digest/malformed rejection, authenticated
+  StrictReplayLaunchRecord construction, schema/fixture/catalog/docs, and positive/negative tests.
+  Focused unit tests 2/2 and clippy -D warnings pass; initial locked test failure was missing
+  Cargo.lock entries, fixed by offline cargo check and rerun green. Worktree clean.
