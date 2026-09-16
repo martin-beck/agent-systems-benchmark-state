@@ -9,8 +9,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 6 |
+| **In progress** | Claimed work with a live lease | 3 |
+| **Open** | Dependency-ready and available to claim | 5 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 12 |
 | **Planned** | Defined work awaiting promotion or dependencies | 66 |
 | **Future** | Deferred roadmap work | 1 |
