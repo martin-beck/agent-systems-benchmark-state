@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Request independent exact-head review; do not publish until reviewer confirms remaining scope boundaries.",
+  "next_action": "Before publication, bind pairing to an independently supplied route identity and add wrong-IP/route negatives; make confirmed identity persistence atomic and validate trusted parent/ancestry; add actual certificate import/issuance or explicitly split that owned scope. Provide remaining threat-matrix evidence and independent publication review.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "a1ac8e18ce3d662e3e2ea6bd20d4798b4d3d6961",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 280,
+  "task_revision": 281,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:43:27+00:00",
+  "updated_at": "2026-09-16T19:43:41+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -763,3 +763,20 @@ Implementation has not started. Read the linked plan before claiming.
   fences, and explicit fail-closed SecretBackend.
 
 - 2026-09-16T19:43:27+00:00: Heartbeat by asb_ar0814_enrollment_authz.
+
+- 2026-09-16T19:43:41+00:00: Independent review of exact signed candidate
+  a1ac8e18ce3d662e3e2ea6bd20d4798b4d3d6961: clean tree, SSH signature and DCO verified; cumulative
+  auth/control/CLI/schema changes remain privacy-safe; prior full fmt, locked workspace tests,
+  clippy and rustdoc evidence recorded. Pairing persistence/expiry/tamper and generation fencing are
+  improved, and BreakGlass dispatch binds runner-owned context. Remaining concrete plan gaps:
+  EnrollmentPairingV1::new has no route argument and synthesizes route_sha256 from fingerprint, so
+  route identity is not independently verified and wrong-IP/route rejection is unimplemented; CLI
+  pair likewise cannot express route binding. persist_confirmed_identity uses std::fs::write after
+  checking only the target with symlink_metadata, not an atomic durable replacement or trusted
+  parent/ancestor validation, leaving crash/ancestor replacement risks in the identity-store path.
+  CertificateIdentityV1 still imports metadata/digests rather than certificate bytes/chain
+  validation or issuance. FailClosedSecretBackend intentionally rejects all operations; no qualified
+  OS-protected SecretBackend implementation exists, so usable key storage remains delegated. Missing
+  or only partial hostile evidence remains for stolen/expired/not-yet-valid/wrong-IP certificates,
+  confused deputy beyond BreakGlass, audit tampering/append integrity, and real recovery lifecycle.
+  Full gates do not by themselves close these acceptance gaps; do not authorize publication yet.

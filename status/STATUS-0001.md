@@ -1465,7 +1465,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | asb_ar0814_enrollment_authz | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Request independent exact-head review; do not publish until reviewer confirms remaining scope boundaries. |
+| P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | asb_ar0814_enrollment_authz | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Before publication, bind pairing to an independently supplied route identity and add wrong-IP/route negatives; make confirmed identity persistence atomic and validate trusted parent/ancestry; add actual certificate import/issuance or explicitly split that owned scope. Provide remaining threat-matrix evidence and independent publication review. |
 
 ### Open (4)
 
