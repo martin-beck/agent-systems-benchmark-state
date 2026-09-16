@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an approved runtime-owned loopback-only sandbox namespace capability.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Runtime-owned loopback namespace capability",
-  "updated_at": "2026-09-16T05:26:28+00:00",
+  "updated_at": "2026-09-16T05:26:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1234"
 }
 ---
@@ -57,3 +57,6 @@
   typed NetworkPolicy until runtime attestation exists, preventing host-network fallback. Focused
   cargo test --locked --offline -p asb-runtime sandbox::tests::malformed_specs_fail_before_spawn
   passed 1/1; worktree clean.
+
+- 2026-09-16T05:26:54+00:00: Recorded command exit 0; command argv SHA-256
+  bdb52a3e1f546768e6501e64114331b8ed3b372209199c310e6c221352162749.
