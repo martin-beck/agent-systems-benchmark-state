@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1254.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Qualify MockAgents through the pinned Python sandbox.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Qualify MockAgents through pinned Python transport",
-  "updated_at": "2026-09-16T19:53:38+00:00",
+  "updated_at": "2026-09-16T19:54:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1254"
 }
 ---
@@ -182,3 +182,6 @@ Keep fixtures, runtimes, caches, and evidence under `/srv/data/projects`.
   supplies an approved digest-pinned arm64 QEMU runner and AR-1255 supplies bundled in-container
   transport/egress evidence, resume AR-1254 for real executable protocol, malformed/oversized,
   cancellation/descendant, network-none, provenance, and repeat-clean-state gates.
+
+- 2026-09-16T19:54:35+00:00: Reopen briefly to replace stale next_action with the verified
+  dependency blocker and successor path; no implementation work is authorized.
