@@ -11,7 +11,7 @@
   "id": "AR-1231",
   "next_action": "Publish narrowed typed strict-replay contract/executor PR from exact signed head 84fd574; runtime OS process supervision, descendant egress enforcement and lifecycle recovery are delegated to AR-1232. Run focused/full applicable gates, independent review, exact-head CI, merge and post-merge verification.",
   "observed_branch": "feature/ar-1231",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "84fd5748962d0058308dbcbd9e433712418f518e",
   "owner": "asb_ar1231_publication",
   "plan": "../plans/AR-1231.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents through strict replay without provider egress or live fallback.",
-  "task_revision": 144,
+  "task_revision": 145,
   "title": "Strict replay execution and egress-isolation seam",
-  "updated_at": "2026-09-16T02:31:48+00:00",
+  "updated_at": "2026-09-16T02:31:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1231"
 }
 ---
