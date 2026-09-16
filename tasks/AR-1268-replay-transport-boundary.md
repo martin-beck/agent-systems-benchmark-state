@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Break the strict-replay runtime/CLI dependency cycle with a shared transport contract.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Break strict-replay runtime/CLI dependency cycle",
-  "updated_at": "2026-09-16T22:53:07+00:00",
+  "updated_at": "2026-09-16T22:53:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1268-replay-transport"
 }
 ---
@@ -120,3 +120,6 @@ Preserve AR-1267's blocked evidence; do not fabricate authority or weaken crate 
   binds/consumes runtime transport before dispatch, and returns bounded exit 3 for
   stale/mismatched/duplicate context. Full asb-cli lib suite passes 73/73; fmt pass; product tree
   clean. Remaining acceptance is supervised lifecycle and egress/no-fallback test evidence.
+
+- 2026-09-16T22:53:59+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
