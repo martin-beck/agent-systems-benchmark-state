@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T14:48:32+00:00",
+  "updated_at": "2026-09-16T14:48:46+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -265,3 +265,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T14:48:24+00:00: Recorded command exit 0; command argv SHA-256
   85c51c093c84ea069b2d95d612096ce220bdcb95d4c4bf6f6c9544eb4cebc9b6.
+
+- 2026-09-16T14:48:46+00:00: Committed bc6a7bc (SSH-signed+DCO): added explicit idle_timeout_ms and
+  max_requests_per_connection config bounds plus atomic RAII RemoteRequestGate backpressure permits.
+  Focused remote tests passed 4/4; product tree clean. Next: wire gate into request dispatch and
+  implement reconnect event-revision semantics; keep TLS and connection bounds fail-closed.
