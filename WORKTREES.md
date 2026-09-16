@@ -48,7 +48,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1245` | `fix/ar-1245-postmerge-dco-evidence` | `3e12d64e8e6e` | 0 | behind 48, ahead 0 |
 | `agent-systems-benchmark-ar-1246` | `fix/ar-1246-protected-main-dco-flow` | `903aef8f4e12` | 0 | behind 45, ahead 0 |
 | `agent-systems-benchmark-ar-1247` | `fix/ar-1247-protected-main-dco-workflow` | `53d018d69057` | 0 | behind 1, ahead 0 |
-| `agent-systems-benchmark-ar-1248` | `feature/ar-1248-strict-replay-cli-contract` | `37a9c2b48765` | 0 | behind 0, ahead 1 |
+| `agent-systems-benchmark-ar-1248` | `feature/ar-1248-strict-replay-cli-contract` | `37a9c2b48765` | 1 | behind 0, ahead 1 |
+| changed files | - | - | - | `crates/asb-cli/src/replay_contract.rs` |
 | `agent-systems-benchmark-ar-1249` | `feature/ar-1249-mockagents-qualification-evidence` | `128ecddbfdb7` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 445, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 548, ahead 0 |
