@@ -2,7 +2,7 @@
 {
   "branch": "feature/remote-control-transport",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T15:07:23+00:00",
+  "claim_expires": "2026-09-16T16:43:22+00:00",
   "depends_on": [
     "AR-0702",
     "AR-0803",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T14:42:58+00:00",
+  "updated_at": "2026-09-16T14:43:22+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -221,3 +221,5 @@ Implementation has not started. Read the linked plan before claiming.
   clippy passed. Full workspace test reached unrelated pre-existing asb-metrics kernel.rs:713
   mismatch (expected MalformedEvidence, got ProbeRejected). Product tree clean. Next: independent
   exact-head review and PR/CI; full workspace gate remains blocked by that unrelated failure.
+
+- 2026-09-16T14:43:22+00:00: Heartbeat by asb_ar0813_remote_transport.
