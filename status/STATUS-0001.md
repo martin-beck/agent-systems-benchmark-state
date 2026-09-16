@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**267 ARs tracked** across 6 active status categories.
+**267 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 6 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 5 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 14 |
 | **Planned** | Defined work awaiting promotion or dependencies | 66 |
 | **Future** | Deferred roadmap work | 1 |
@@ -177,7 +177,7 @@ flowchart LR
         AR_0857["AR-0857 - Done"]:::status_done
         AR_0858["AR-0858 - Done"]:::status_done
         AR_0859["AR-0859 - Done"]:::status_done
-        AR_0860["AR-0860 - Open"]:::status_open
+        AR_0860["AR-0860 - In progress"]:::status_in_progress
         AR_0861["AR-0861 - Planned"]:::status_planned
         AR_0862["AR-0862 - Planned"]:::status_planned
         AR_0863["AR-0863 - Blocked"]:::status_blocked
@@ -1387,7 +1387,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (6)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P1 | [AR-0860](../tasks/AR-0860-openjiuwen-replay.md): Qualify strict OpenJiuwen replay | asb_ar1232_lifecycle_router | Qualify strict OpenJiuwen replay. | Seal the sanitized live capture and prove strict offline replay, causal parity, malformed-record rejection, and zero external network. |
+
+### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1396,7 +1402,6 @@ flowchart LR
 | P0 | [AR-1042](../tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Unclaimed | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. |
 | P0 | [AR-1044](../tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Unclaimed | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. |
 | P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | Unclaimed | Replay strictly without providers. | Design and implement the missing executable strict-replay run-path seam: pass exact cassette route/service into agent adapter launch, deny provider egress at process boundary, and add campaign-level cancellation/restart/no-fallback tests. Current CLI replay only decodes/indexes/selects and emits metadata. |
-| P1 | [AR-0860](../tasks/AR-0860-openjiuwen-replay.md): Qualify strict OpenJiuwen replay | Unclaimed | Qualify strict OpenJiuwen replay. | Seal the sanitized live capture and prove strict offline replay, causal parity, malformed-record rejection, and zero external network. |
 
 ### Blocked (14)
 

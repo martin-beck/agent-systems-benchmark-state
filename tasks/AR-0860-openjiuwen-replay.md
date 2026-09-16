@@ -2,21 +2,21 @@
 {
   "branch": "feature/openjiuwen-replay",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T10:20:47+00:00",
   "depends_on": [
     "AR-0859"
   ],
   "id": "AR-0860",
   "next_action": "Seal the sanitized live capture and prove strict offline replay, causal parity, malformed-record rejection, and zero external network.",
-  "owner": "",
+  "owner": "asb_ar1232_lifecycle_router",
   "plan": "../plans/AR-0860.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify strict OpenJiuwen replay.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Qualify strict OpenJiuwen replay",
-  "updated_at": "2026-09-16T08:20:45+00:00",
+  "updated_at": "2026-09-16T08:20:47+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-replay"
 }
 ---
@@ -28,3 +28,5 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-16T08:20:45+00:00: Dependency AR-0859 is complete; begin strict OpenJiuwen replay
   qualification.
+
+- 2026-09-16T08:20:47+00:00: Claimed by asb_ar1232_lifecycle_router.
