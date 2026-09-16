@@ -7,7 +7,7 @@
     "AR-1252"
   ],
   "id": "AR-1253",
-  "next_action": "Request independent re-review of exact head b7797d0, then open PR and run exact-head CI.",
+  "next_action": "Publish PR from exact signed head b7797d0; monitor exact-head CI and merge only after all required checks and independent approval.",
   "observed_branch": "feature/ar-1253-pinned-python-transport-runtime",
   "observed_dirty": 0,
   "observed_head": "b7797d05c1a12f4e5cdd8d7df2a7b26c72425052",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision pinned Python transport fixture runtime.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Provision pinned Python transport fixture runtime",
-  "updated_at": "2026-09-16T13:24:42+00:00",
+  "updated_at": "2026-09-16T13:25:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1253"
 }
 ---
@@ -77,3 +77,10 @@ Keep runtime images, caches, provenance, and all test activity under `/srv/data/
 
 - 2026-09-16T13:24:42+00:00: Recorded command exit 0; command argv SHA-256
   09c0fd24b5f3c21565837bc9d6383c8e561171ccc592152e59e8622819cb5b6d.
+
+- 2026-09-16T13:25:08+00:00: Independent re-review approved
+  b7797d05c1a12f4e5cdd8d7df2a7b26c72425052: validator now pins exact source docker-library/python
+  and source_revision python:3.13.15-slim-bookworm; negative tests cover source/revision tampering
+  plus unknown fields and digest drift. Worktree clean, diff check clean, all commits
+  SSH-signed+DCO. Focused runtime tests 2/2 and full llm-double-spike suite 17/17 pass;
+  privacy/isolation/image provenance evidence remains intact.

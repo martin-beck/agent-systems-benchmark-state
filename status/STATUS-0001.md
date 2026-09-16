@@ -1443,7 +1443,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md): Provision pinned Python transport fixture runtime | asb_ar1253_python_runtime | Provision pinned Python transport fixture runtime. | Request independent re-review of exact head b7797d0, then open PR and run exact-head CI. |
+| P1 | [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md): Provision pinned Python transport fixture runtime | asb_ar1253_python_runtime | Provision pinned Python transport fixture runtime. | Publish PR from exact signed head b7797d0; monitor exact-head CI and merge only after all required checks and independent approval. |
 
 ### Open (4)
 
