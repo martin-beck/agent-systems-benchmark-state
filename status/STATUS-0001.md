@@ -11,12 +11,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 6 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 9 |
 | **Planned** | Defined work awaiting promotion or dependencies | 63 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 179 |
+| **Done** | Accepted, integrated, and durably verified | 180 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 9 |
 
@@ -330,7 +330,7 @@ flowchart LR
         AR_1234["AR-1234 - Done"]:::status_done
         AR_1235["AR-1235 - Done"]:::status_done
         AR_1236["AR-1236 - Done"]:::status_done
-        AR_1237["AR-1237 - In progress"]:::status_in_progress
+        AR_1237["AR-1237 - Done"]:::status_done
         AR_1238["AR-1238 - Done"]:::status_done
         AR_1239["AR-1239 - Done"]:::status_done
         AR_1240["AR-1240 - Done"]:::status_done
@@ -1398,12 +1398,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md): Make ShellCheck fail closed | asb_ar0898_shellcheck | Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck. | Post-merge exact-main commit eb0ad13 verification: Repository quality 35076116672 success, Rust 35076116617 success, Hosted portability 35076116659 success, Fault assurance 35076116738 success, Formal assurance 35076116608 success. Emulated AArch64 35076116592 remains in_progress; monitor to terminal, then verify exact main policy/signature/DCO and release AR done. |
-| P0 | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md): Strict-replay child launch bridge | asb_ar1237_launch_bridge_worker | Map the authenticated relay into the strict-replay child launch contract. | Extend the reviewed strict-replay launch contract to map ReplayRelayHandoff into the child-visible HTTP loopback endpoint, with authenticated route/generation metadata and bounded lifecycle ownership. |
 | P0 | [AR-1242](../tasks/AR-1242-protected-main-admission.md): Enforce signed protected-main admission | asb_ar1242_merge_admission | Prevent protected-main admission from creating unsigned GitHub merge commits. | Run fresh PR191 CI for rebased 9db468c and independently review; settings apply still needs admin authority. |
 
 ### Open (6)
@@ -1505,7 +1504,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (179)
+### Done (180)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1565,3 +1564,4 @@ flowchart LR
 | P0 | [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md): Provider authentication application integration | Unclaimed | Integrate provider authentication into ASB config, control and CLI surfaces. | AR complete: merged PR #179 at 2f96f211; retain post-merge verification and release evidence in durable history. |
 | P0 | [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md): Authenticated provider-request seam and secret injection contract | Unclaimed | Define the approved bounded provider authentication request and secret-injection seam. | PR #178 exact head 3d0349a requires independent re-review and CI rerun. inject now polls a current-generation callback before and after sink; synchronized AtomicU64 transition test proves concurrent rotation fails closed. Rollback/privacy tests remain green; delegated transport/application gates remain AR-1228/AR-1229. |
 | P0 | [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md): Strict replay execution and egress-isolation seam | Unclaimed | Execute real agents through strict replay without provider egress or live fallback. | Rerun exact-head CI for b622554 and obtain independent review; successful qualified cassette service construction, route identity mismatch coverage, and credential/ambient-field rejection tests are now present. Runtime child supervision remains AR-1232. |
+| P0 | [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md): Approved loopback-only sandbox transport | Unclaimed | Provide an authenticated loopback-only sandbox transport for strict replay services. | Typed LoopbackOnly policy slice 143213c passes full asb-runtime package tests; actual attested loopback namespace/listener binding remains required. Implement backend capability without weakening Deny, then add native child-service/provider-egress tests and full workspace gates. |

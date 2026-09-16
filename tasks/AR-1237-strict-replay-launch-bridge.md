@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1237-strict-replay-launch-bridge",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T10:57:22+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1233",
     "AR-1236"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1237-strict-replay-launch-bridge",
   "observed_dirty": 0,
   "observed_head": "52cc952fbe4831b845679756e4ca050dd46fa953",
-  "owner": "asb_ar1237_launch_bridge_worker",
+  "owner": "",
   "plan": "../plans/AR-1237.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Map the authenticated relay into the strict-replay child launch contract.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Strict-replay child launch bridge",
-  "updated_at": "2026-09-16T09:00:25+00:00",
+  "updated_at": "2026-09-16T09:00:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1237"
 }
 ---
@@ -53,3 +53,10 @@ locked, privacy, policy, native, exact-head, and post-merge gates.
 
 - 2026-09-16T08:59:30+00:00: Recorded command exit 0; command argv SHA-256
   107d2c928b5e3277e5bc61a7ec649e03d54bf54174b822dccfd7c1804547689b.
+
+- 2026-09-16T09:00:40+00:00: Integrated exact reviewed AR-1233 runtime commits (11575f6, 36dd575)
+  and AR-1236 sidecar commits (1c6ab1d, df4debd, 42c3d19) onto clean origin/main. Launch bridge
+  commits 74150c3, fc2fa39, 52cc952 validate opaque runtime ReplayRelayHandoff, loopback endpoint,
+  route/generation/deadline and executable digests; native issued-handoff test passes. Native
+  runtime loopback cassette/reap test passes. Full cargo test --locked --workspace passes; clippy
+  workspace warnings denied, fmt and diff checks pass. All commits signed ED25519 and DCO.
