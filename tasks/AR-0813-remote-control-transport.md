@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 129,
+  "task_revision": 130,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T15:01:42+00:00",
+  "updated_at": "2026-09-16T15:02:23+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -386,3 +386,6 @@ Implementation has not started. Read the linked plan before claiming.
   exercises existing bounded framing and fails closed. Focused fault test passed 1/1; product tree
   clean. This is transport-level evidence only, not kernel/netem equivalence. Next: use qualified
   harness or extend fixture scenarios for reconnect storms/address families and runner continuation.
+
+- 2026-09-16T15:02:23+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
