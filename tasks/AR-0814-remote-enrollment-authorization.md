@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 147,
+  "task_revision": 148,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T18:21:36+00:00",
+  "updated_at": "2026-09-16T18:21:50+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -408,3 +408,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T18:21:29+00:00: Recorded command exit 0; command argv SHA-256
   91f0eefb29414a43720f22efb31a20524a70cb2abd894816d01dce5651cc9c4d.
+
+- 2026-09-16T18:21:50+00:00: Signed+DCO f546118 documents SecretBackend as explicitly
+  caller-supplied OS-protected implementation; no ambient/default backend or CLI secret fallback
+  exists, so unsupported storage fails closed. Worktree clean.
