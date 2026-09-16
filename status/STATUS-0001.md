@@ -1506,7 +1506,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1268](../tasks/AR-1268-replay-transport-boundary.md): Break strict-replay runtime/CLI dependency cycle | asb_ar1024_lifecycle_router | Break the strict-replay runtime/CLI dependency cycle with a shared transport contract. | Promote after dependency verification; define and implement the dependency-safe runtime/CLI replay transport boundary. |
+| P0 | [AR-1268](../tasks/AR-1268-replay-transport-boundary.md): Break strict-replay runtime/CLI dependency cycle | asb_ar1024_lifecycle_router | Break the strict-replay runtime/CLI dependency cycle with a shared transport contract. | Adapt runtime and CLI replay context to shared ReplayTransportV1; add one-shot/stale/duplicate/mismatch/no-fallback integration tests, then full gates. |
 
 ### Open (6)
 
