@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**281 ARs tracked** across 6 active status categories.
+**281 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 5 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 17 |
 | **Planned** | Defined work awaiting promotion or dependencies | 60 |
 | **Future** | Deferred roadmap work | 1 |
@@ -230,7 +230,7 @@ flowchart LR
         AR_1003["AR-1003 - Done"]:::status_done
         AR_1004["AR-1004 - Done"]:::status_done
         AR_1005["AR-1005 - Done"]:::status_done
-        AR_1006["AR-1006 - Open"]:::status_open
+        AR_1006["AR-1006 - In progress"]:::status_in_progress
         AR_1007["AR-1007 - Done"]:::status_done
         AR_1008["AR-1008 - Done"]:::status_done
         AR_1010["AR-1010 - Open"]:::status_open
@@ -1439,7 +1439,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (5)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P3 | [AR-1006](../tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | asb_ar1006_distributed_workers | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
+
+### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1447,7 +1453,6 @@ flowchart LR
 | P0 | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md): Implement &#96;asb tui&#96; lifecycle routing | Unclaimed | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. |
 | P0 | [AR-1042](../tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Unclaimed | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. |
 | P0 | [AR-1044](../tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Unclaimed | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. |
-| P3 | [AR-1006](../tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Unclaimed | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Specify distributed control semantics after single-host measurement is stable. |
 
 ### Blocked (17)
 
@@ -1591,4 +1596,3 @@ flowchart LR
 | P0 | [AR-1064](../tasks/AR-1064-tmux-hosted-startup-readiness-recovery.md): Recover hosted tmux startup readiness | Unclaimed | Recover authenticated tmux startup observation on the hosted trusted runner without weakening authority or cleanup. | PR #26 is exact-head green but protected merge is blocked because GitHub reports the required context as pending; resolve policy/check-run propagation without admin bypass, then require post-merge Trusted main. |
 | P0 | [AR-1065](../tasks/AR-1065-asb-tui-branch-policy-context.md): Normalize asb-tui branch required-status policy | Unclaimed | Normalize asb-tui main branch protection so successful GitHub Actions checks can merge. | A repository maintainer must remove the stale legacy required-status context from asb-tui main while retaining the app-scoped GitHub Actions check, then re-evaluate PR #26. |
 | P0 | [AR-1100](../tasks/AR-1100.md): Configuration defaults | Unclaimed | Persist configuration defaults. | Post-merge verification complete at protected ASB main; retain merged evidence and monitor downstream wizard dependencies. |
-| P0 | [AR-1110](../tasks/AR-1110.md): Provider and model registry | Unclaimed | Manage providers and models. | Post-merge verification complete: PR #180 merged at 600d5a28; exact-main tree matches feature tree, focused asb-config tests and full offline workspace tests passed, worktree clean. Release AR-1110 as done. |
