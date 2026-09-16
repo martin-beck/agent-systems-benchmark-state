@@ -11,7 +11,7 @@
   "id": "AR-1231",
   "next_action": "Integrate StrictReplayLaunchRecord with provider adapter launch seam; add executable loopback route binding, egress-denial/no-fallback and cancellation/restart tests. Current signed head ba68508 has typed versioned contract/schema and focused asb-agents strict_replay tests passing.",
   "observed_branch": "feature/ar-1231",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "ba6850839c3cab4d2b70ef13d3392b0cd4b3ff38",
   "owner": "asb_ar1231_replay_seam",
   "plan": "../plans/AR-1231.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents through strict replay without provider egress or live fallback.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Strict replay execution and egress-isolation seam",
-  "updated_at": "2026-09-16T01:50:43+00:00",
+  "updated_at": "2026-09-16T01:50:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1231"
 }
 ---
