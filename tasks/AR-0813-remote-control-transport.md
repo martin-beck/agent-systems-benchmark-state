@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0813",
-  "next_action": "Enable and test TCP keepalive on both server and client streams (remove duplicate server call, add client call), then rerun focused/full gates and request publication review; retain bounded transport-level fault claims.",
+  "next_action": "Review signed keepalive fix 7b4168f; focused TLS passed, clippy passed, workspace had one transient sandbox test failure then focused rerun passed; push and request independent review.",
   "observed_branch": "feature/remote-control-transport",
   "observed_dirty": 0,
   "observed_head": "52ee2b13d809b0147f54f4f370face7fb14807b0",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 223,
+  "task_revision": 224,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T15:32:53+00:00",
+  "updated_at": "2026-09-16T15:33:10+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -676,3 +676,9 @@ Implementation has not started. Read the linked plan before claiming.
   3a49a7312c80a5120f52cea619b899c7702d33d457b474a6e2771f27ddfc5dc3.
 
 - 2026-09-16T15:32:53+00:00: Heartbeat by asb_ar0813_remote_transport.
+
+- 2026-09-16T15:33:10+00:00: Committed SSH-signed+DCO 7b4168ff40ca5f134efb2acb50ef730240a48a99:
+  removed duplicate server TCP keepalive call, added exactly one client call after ALPN handshake,
+  and asserted keepalive on both TLS peers. Focused TLS test passed; workspace clippy passed. Full
+  workspace had one transient asb-runtime sandbox test failure, which passed on exact focused rerun.
+  Product tree clean.
