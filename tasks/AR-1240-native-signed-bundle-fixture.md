@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1240.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Add native signed-bundle fixture and end-to-end supervisor isolation tests.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Native signed-bundle supervisor fixture",
-  "updated_at": "2026-09-16T08:37:58+00:00",
+  "updated_at": "2026-09-16T08:38:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1240"
 }
 ---
@@ -51,3 +51,6 @@ bundle. Preserve fail-closed behavior and all existing privacy and non-interfere
 - 2026-09-16T08:37:58+00:00: Worker completed 42bd8ed helper lifecycle proof; remaining cassette
   HTTP, egress-denial, timeout/cancellation, and non-interference matrix cells require continued
   implementation.
+
+- 2026-09-16T08:38:25+00:00: User-approved continuation: add remaining native cassette HTTP,
+  egress-denial, teardown and non-interference matrix.
