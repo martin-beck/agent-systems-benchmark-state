@@ -11,7 +11,7 @@
   "id": "AR-1232",
   "next_action": "Owned loopback control baseline and causal denial fixture are pushed at a3b6768. Native strict replay gate passes 7/7 with explicit ASB_TEST_ROOT and --ignored; remaining review gap is native StrictReplayExecutor authenticated cassette-service lifecycle/recovery and stale/duplicate generation integration.",
   "observed_branch": "feature/ar-1232",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "a3b6768e1e00bf8628b81b9a58687ea193439803",
   "owner": "asb_ar1232_sandbox_supervision",
   "plan": "../plans/AR-1232.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 359,
+  "task_revision": 360,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T04:54:16+00:00",
+  "updated_at": "2026-09-16T04:54:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
