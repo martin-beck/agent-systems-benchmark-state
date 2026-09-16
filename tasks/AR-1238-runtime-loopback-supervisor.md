@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1238-runtime-loopback-supervisor",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T09:53:11+00:00",
   "depends_on": [
     "AR-1100",
     "AR-1231"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1238-runtime-loopback-supervisor",
   "observed_dirty": 0,
   "observed_head": "6fba189fd839a954d2e0724f696114b607242cb0",
-  "owner": "",
+  "owner": "asb_ar1238_supervisor_worker",
   "plan": "../plans/AR-1238.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide the runtime-owned private-namespace supervisor for loopback replay.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Runtime-owned loopback supervisor",
-  "updated_at": "2026-09-16T07:53:08+00:00",
+  "updated_at": "2026-09-16T07:53:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1238"
 }
 ---
@@ -51,3 +51,5 @@ non-interference; focused/full locked, privacy, policy, native, signature/DCO, a
 - 2026-09-16T07:53:08+00:00: User explicitly authorized actual rootless supervisor implementation;
   proceed with fail-closed in-tree executable and launcher integration, no host networking or global
   policy changes.
+
+- 2026-09-16T07:53:11+00:00: Claimed by asb_ar1238_supervisor_worker.
