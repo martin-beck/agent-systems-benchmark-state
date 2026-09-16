@@ -1486,7 +1486,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md): Runtime-owned strict-replay launch authority | asb_ar1024_lifecycle_router | Issue runtime-owned authority for supervised strict-replay execution. | Classify or rerun the pre-existing native sandbox fixture failure under its dedicated gate; do not weaken authority. After terminal green, run remaining policy/privacy/rustdoc and request independent review. |
+| P0 | [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md): Runtime-owned strict-replay launch authority | asb_ar1024_lifecycle_router | Issue runtime-owned authority for supervised strict-replay execution. | Run independent exact-head diff/signature/DCO/privacy review on clean c0091857, then prepare reviewed PR; do not merge before CI/review. |
 
 ### Open (6)
 

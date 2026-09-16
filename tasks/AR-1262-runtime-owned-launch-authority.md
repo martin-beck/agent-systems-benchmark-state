@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1262",
-  "next_action": "Classify or rerun the pre-existing native sandbox fixture failure under its dedicated gate; do not weaken authority. After terminal green, run remaining policy/privacy/rustdoc and request independent review.",
+  "next_action": "Run independent exact-head diff/signature/DCO/privacy review on clean c0091857, then prepare reviewed PR; do not merge before CI/review.",
   "observed_branch": "feature/ar-1262-runtime-owned-launch-authority",
   "observed_dirty": 0,
   "observed_head": "c009185748a486b18ac90416ab78d9f19830740e",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned authority for supervised strict-replay execution.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-16T22:14:58+00:00",
+  "updated_at": "2026-09-16T22:15:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1262-runtime-authority"
 }
 ---
@@ -179,3 +179,10 @@ ownership and bounded lifecycle evidence.
 
 - 2026-09-16T22:14:58+00:00: Recorded command exit 0; command argv SHA-256
   e65704d0af497ff4f9db656cbcc2e1894e552f84bfbc5a531f0945a250925adf.
+
+- 2026-09-16T22:15:13+00:00: Rebased exact implementation onto signed main 69e8b064; final clean
+  head c0091857 with all rebased product commits SSH-signed+DCO. Focused runtime authority 1/1 and
+  CLI no-fallback 1/1 pass; workflow transcript 3/3 passes; cargo fmt --all -- --check passes; full
+  cargo test --workspace --locked --offline passes, including native sandbox 11/11, process
+  boundary, schema and doc tests. The prior sandbox ScopeOwnership flake is resolved by AR-1263. No
+  product dirty paths.
