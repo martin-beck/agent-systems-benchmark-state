@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision pinned Python transport fixture runtime.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Provision pinned Python transport fixture runtime",
-  "updated_at": "2026-09-16T13:33:32+00:00",
+  "updated_at": "2026-09-16T13:33:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1253"
 }
 ---
@@ -107,3 +107,6 @@ Keep runtime images, caches, provenance, and all test activity under `/srv/data/
 
 - 2026-09-16T13:33:32+00:00: Recorded command exit 0; command argv SHA-256
   0d23c9b05ed7c5de18803505613035ed0784a46103170208024ab644ce3d39fa.
+
+- 2026-09-16T13:33:52+00:00: Recorded command exit 0; command argv SHA-256
+  7d2bde4babd7dcec847cbb966dd538e28fe50aba34a04b6be902857a8d669df4.
