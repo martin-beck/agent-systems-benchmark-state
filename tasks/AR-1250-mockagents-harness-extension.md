@@ -8,7 +8,7 @@
     "AR-0889"
   ],
   "id": "AR-1250",
-  "next_action": "Add actual cancellation/backpressure and outbound-denial probes; rerun arm64 repeat and full gates.",
+  "next_action": "Implement actual outbound-denial and arm64 repeat probes; run full locked gates.",
   "observed_branch": "feature/ar-1250-mockagents-harness-extension",
   "observed_dirty": 0,
   "observed_head": "55be26880282cc5ade473ee16cf2a7ad1248bb0d",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend the pinned MockAgents executable qualification harness.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Extend MockAgents qualification harness",
-  "updated_at": "2026-09-16T18:48:17+00:00",
+  "updated_at": "2026-09-16T18:48:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1250"
 }
 ---
@@ -168,3 +168,7 @@ privacy, signature, DCO, and exact-tree gates; do not claim support from host in
 
 - 2026-09-16T18:48:10+00:00: Recorded command exit 0; command argv SHA-256
   917fe1574e4730ca1dccd324c118cb0fa2231026409b54788b1607859dea82c8.
+
+- 2026-09-16T18:48:26+00:00: Signed+DCO 55be268 records repeat_clean_state and cancellation_cleanup
+  evidence explicitly after deterministic repeat and bounded process termination. Focused Python
+  suite 3/3 passes; worktree clean.

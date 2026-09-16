@@ -1466,7 +1466,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | asb_ar0814_enrollment_authz | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Implement backend-owned BreakGlass admin authorization and v1.7 schemas/endpoint tests; preserve legacy schemas. |
-| P1 | [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md): Extend MockAgents qualification harness | asb_ar1250_mockagents_harness | Extend the pinned MockAgents executable qualification harness. | Add actual cancellation/backpressure and outbound-denial probes; rerun arm64 repeat and full gates. |
+| P1 | [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md): Extend MockAgents qualification harness | asb_ar1250_mockagents_harness | Extend the pinned MockAgents executable qualification harness. | Implement actual outbound-denial and arm64 repeat probes; run full locked gates. |
 
 ### Open (4)
 
