@@ -8,7 +8,7 @@
     "AR-1253"
   ],
   "id": "AR-1254",
-  "next_action": "Run transport fixture through pinned Python runner; add real MockAgents invocation and network-none denial evidence.",
+  "next_action": "Replace synthetic-only fixture with real pinned MockAgents executable invocation through run_isolated.py; add bounded body/malformed input, ordered tool-result, cancellation/backpressure descendant cleanup, network-none denial classification, repeat-clean-state and amd64/arm64 evidence with immutable artifact provenance, then rerun gates.",
   "observed_branch": "feature/ar-1254-mockagents-pinned-python-transport",
   "observed_dirty": 0,
   "observed_head": "8b0742860c39a9a6ae499270272dcc1861305f89",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify MockAgents through the pinned Python sandbox.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Qualify MockAgents through pinned Python transport",
-  "updated_at": "2026-09-16T13:48:23+00:00",
+  "updated_at": "2026-09-16T13:48:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1254"
 }
 ---
@@ -55,3 +55,16 @@ Keep fixtures, runtimes, caches, and evidence under `/srv/data/projects`.
 - 2026-09-16T13:47:33+00:00: Heartbeat by asb_ar1254_mockagents_transport.
 
 - 2026-09-16T13:48:23+00:00: Heartbeat by asb_ar1254_mockagents_transport.
+
+- 2026-09-16T13:48:35+00:00: Independent review of exact signed head 8b074286 found publication
+  blockers against complete AR-1254 acceptance. transport_fixture.py only serves a synthetic
+  loopback HTTP response and never invokes the real pinned MockAgents executable or run_isolated.py;
+  README explicitly says network denial remains unpromoted. Outbound probe merely catches
+  OSError/timeout and labels unavailable-outside-isolation, so it is not actual network-none denial
+  evidence. Request body length is checked but body read/JSON/malformed input contract is not
+  validated. cancellation_cleanup terminates one direct Python child; no descendant process-tree
+  cleanup or bounded backpressure/cancellation terminal-state evidence. No repeat-clean-state,
+  amd64/arm64 artifact selection/digest provenance, pinned runtime/runner invocation, or malformed
+  input negatives. Existing tests cover only synthetic ordering/cleanup and non-executable README
+  rejection. Commit 8b074286 is SSH-signed/DCO and diff-clean, but head is not review-ready; no
+  PR/merge authorized.

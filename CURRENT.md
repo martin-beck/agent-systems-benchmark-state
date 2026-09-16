@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1254](tasks/AR-1254-mockagents-pinned-python-transport.md): Qualify MockAgents through pinned Python transport | Qualify MockAgents through the pinned Python sandbox. | Run transport fixture through pinned Python runner; add real MockAgents invocation and network-none denial evidence. | asb_ar1254_mockagents_transport |
+| P1 | [AR-1254](tasks/AR-1254-mockagents-pinned-python-transport.md): Qualify MockAgents through pinned Python transport | Qualify MockAgents through the pinned Python sandbox. | Replace synthetic-only fixture with real pinned MockAgents executable invocation through run_isolated.py; add bounded body/malformed input, ordered tool-result, cancellation/backpressure descendant cleanup, network-none denial classification, repeat-clean-state and amd64/arm64 evidence with immutable artifact provenance, then rerun gates. | asb_ar1254_mockagents_transport |
 
 ## Open
 

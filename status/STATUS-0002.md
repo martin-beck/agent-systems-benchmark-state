@@ -1,5 +1,6 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
+| P0 | [AR-1110](../tasks/AR-1110.md): Provider and model registry | Unclaimed | Manage providers and models. | Post-merge verification complete: PR #180 merged at 600d5a28; exact-main tree matches feature tree, focused asb-config tests and full offline workspace tests passed, worktree clean. Release AR-1110 as done. |
 | P0 | [AR-1120](../tasks/AR-1120.md): Authentication enrollment | Unclaimed | Enroll provider authentication. | AR complete: merged PR #176 at bd9e153a; post-merge exact-main verification and full auth package gates passed; retain closure evidence in state. |
 | P0 | [AR-1130](../tasks/AR-1130.md): Configured provider launches | Unclaimed | Launch agents with configured providers. | Post-merge verification complete: PR #181 merged at 0443ebac; exact-main tree matches feature tree, focused provider-launch/workflow tests and full locked offline workspace tests passed, worktree clean. Release AR-1130 as done. |
 | P0 | [AR-1140](../tasks/AR-1140.md): CLI setup wizard | Unclaimed | Guide CLI setup and reconfiguration. | Wait for PR #186 exact-head CI and independent review on 1e3212b; do not merge. |
