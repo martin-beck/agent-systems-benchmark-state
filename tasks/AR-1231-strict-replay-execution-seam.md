@@ -9,7 +9,7 @@
     "AR-1230"
   ],
   "id": "AR-1231",
-  "next_action": "Add process-policy enforcement seam and cancellation/restart tests around StrictReplayExecutor; run full applicable gates and independent review.",
+  "next_action": "Add process-launch enforcement using approved runtime sandbox seam plus cancellation/restart tests; current f1f4723 authenticates route and rejects non-loopback endpoints but does not yet enforce OS-level child egress.",
   "observed_branch": "feature/ar-1231",
   "observed_dirty": 0,
   "observed_head": "f1f472389dd6df4b3b3ee164fc1fc4666cf0d82b",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents through strict replay without provider egress or live fallback.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Strict replay execution and egress-isolation seam",
-  "updated_at": "2026-09-16T02:00:07+00:00",
+  "updated_at": "2026-09-16T02:00:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1231"
 }
 ---
@@ -237,3 +237,10 @@
   39cf5398131881d6bebfeb6940a170dba53287cbad205a984f34c80a6dbe58e7.
 
 - 2026-09-16T02:00:07+00:00: Heartbeat by asb_ar1231_replay_seam.
+
+- 2026-09-16T02:00:31+00:00: Added endpoint enforcement before replay launch: only an HTTP local
+  loopback route with explicit port and no credentials is accepted; HTTPS/provider hosts/userinfo
+  are rejected. Added negative provider-egress and positive local-loopback tests. Focused asb-agents
+  strict_replay tests pass. Signed DCO commit f1f4723 pushed; clean worktree. Prior exit-1 was an
+  apply_patch context mismatch during test insertion and was corrected; no product gate remained
+  failed.

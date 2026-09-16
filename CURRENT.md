@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1231](tasks/AR-1231-strict-replay-execution-seam.md): Strict replay execution and egress-isolation seam | Execute real agents through strict replay without provider egress or live fallback. | Add process-policy enforcement seam and cancellation/restart tests around StrictReplayExecutor; run full applicable gates and independent review. | asb_ar1231_replay_seam |
+| P0 | [AR-1231](tasks/AR-1231-strict-replay-execution-seam.md): Strict replay execution and egress-isolation seam | Execute real agents through strict replay without provider egress or live fallback. | Add process-launch enforcement using approved runtime sandbox seam plus cancellation/restart tests; current f1f4723 authenticates route and rejects non-loopback endpoints but does not yet enforce OS-level child egress. | asb_ar1231_replay_seam |
 
 ## Open
 
