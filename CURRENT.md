@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1150](tasks/AR-1150.md): Recording campaigns | Record response cassettes. | Signed-DCO commit 724ca81 pushed. Extend the bounded campaign with tuple cost/attempt identities and durable coverage states; then add redacted buffered/stream capture and restart/cancel idempotency tests before full gates. | asb_ar1150_recording |
+| P0 | [AR-1150](tasks/AR-1150.md): Recording campaigns | Record response cassettes. | Signed-DCO commit 5479c2a pushed. Add explicit redacted buffered/stream capture fixtures and restart/cancellation idempotency coverage; then run full replay/CLI/workspace gates and open PR. | asb_ar1150_recording |
 
 ## Open
 
