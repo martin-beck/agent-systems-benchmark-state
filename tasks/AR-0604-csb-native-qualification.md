@@ -9,7 +9,7 @@
     "AR-0601"
   ],
   "id": "AR-0604",
-  "next_action": "Build the CSB-to-ASB signal inventory and native x86_64 causal A/B matrix; run applicable pinned QEMU AArch64 portability checks and document native ARM64 as optional future evidence.",
+  "next_action": "Provision or authorize the exact CSB source root and immutable Python 3.12.3 interpreter bytes (sha256 1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118) under the approved native x86_64 runner/container, then rerun native_boundary qualification. Do not infer native evidence from the available Python binary or QEMU.",
   "observed_branch": "feature/csb-native-qualification",
   "observed_dirty": 0,
   "observed_head": "4e2820bffe93234d02ca39b59067bf4442b08f95",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Qualify native CSB monitoring contention and overhead",
-  "updated_at": "2026-09-16T19:38:42+00:00",
+  "updated_at": "2026-09-16T19:38:55+00:00",
   "worktree_key": "agent-systems-benchmark-csb-native-qualification"
 }
 ---
@@ -61,3 +61,13 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-16T19:38:26+00:00: Claimed by asb_ar0604_audit_20260916.
 
 - 2026-09-16T19:38:42+00:00: Heartbeat by asb_ar0604_audit_20260916.
+
+- 2026-09-16T19:38:55+00:00: AR-0604 audit: dependencies AR-0201, AR-0202 and AR-0601 are complete;
+  no live prior owner/process and clean worktree at 4e2820b. Existing exact native_boundary evidence
+  fails closed because /usr/bin/python3.12 is Python 3.12.3 but SHA-256
+  e50d468e8b0adfb05733f5b87b3cff34829c4a8c1aea50c865aa8bdfe4bb150f, not required immutable pin
+  1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118. The required CSB source root is
+  not available under /srv/data/projects, and no authorized native x86 runner/container with the
+  exact interpreter was found. Baseline platform/runner fixtures pass but do not constitute CSB
+  native A/B, overhead, or monitoring evidence. No product changes made; native ARM64 remains
+  optional per plan.
