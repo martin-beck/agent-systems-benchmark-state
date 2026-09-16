@@ -31,8 +31,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1229-auth-application-integration` | `feature/ar-1229-auth-application-integration` | `b33d6da59ba9` | 0 | behind 102, ahead 0 |
 | `agent-systems-benchmark-ar-1230-authenticated-provider-request-seam` | `feature/ar-1230-authenticated-provider-request-seam` | `3d0349af1a56` | 0 | behind 138, ahead 0 |
 | `agent-systems-benchmark-ar-1231` | `feature/ar-1231` | `fd8eaef0c36d` | 0 | behind 61, ahead 0 |
-| `agent-systems-benchmark-ar-1232` | `feature/ar-1232` | `147acd6bf008` | 1 | behind 0, ahead 40 |
-| changed files | - | - | - | `Cargo.lock` |
+| `agent-systems-benchmark-ar-1232` | `feature/ar-1232` | `147acd6bf008` | 0 | behind 0, ahead 40 |
 | `agent-systems-benchmark-ar-1233` | `feature/ar-1233` | `11575f6a96a1` | 0 | behind 39, ahead 11 |
 | `agent-systems-benchmark-ar-1233-positive` | `feature/ar-1233-positive-transport` | `36dd575d2b76` | 0 | behind 314, ahead 9 |
 | `agent-systems-benchmark-ar-1234` | `feature/ar-1234` | `7afabe002d82` | 0 | behind 7, ahead 14 |

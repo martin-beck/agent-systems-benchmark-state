@@ -22,7 +22,7 @@ Generated from local Git and GitHub. Do not edit.
 | #151 | `dependabot/cargo/serde-1.0.229@c926edfde377` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #193 | `feature/ar1244-publish-1232@147acd6bf008` | `main` | UNSTABLE | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | feat(runtime): publish strict replay supervision |
-| #194 | `fix/ar-1245-postmerge-dco-evidence@3e12d64e8e6e` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(quality): admit historical PR192 merge evidence |
+| #194 | `fix/ar-1245-postmerge-dco-evidence@3e12d64e8e6e` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(quality): admit historical PR192 merge evidence |
 
 ## Recent workflows
 
@@ -35,7 +35,7 @@ Generated from local Git and GitHub. Do not edit.
 | 35080824766 | `3e12d64e8e6e` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35080824750 | `3e12d64e8e6e` | pull_request | Huawei MIT source headers | completed:success |
 | 35080824740 | `3e12d64e8e6e` | pull_request | Repository quality | in_progress:- |
-| 35080824681 | `3e12d64e8e6e` | pull_request | Rust verification | in_progress:- |
+| 35080824681 | `3e12d64e8e6e` | pull_request | Rust verification | completed:success |
 | 35080396472 | `147acd6bf008` | pull_request | Formal assurance | completed:failure |
 | 35080396421 | `147acd6bf008` | pull_request | Emulated aarch64 portability | completed:success |
 | 35080396363 | `147acd6bf008` | pull_request | Fault assurance | completed:success |
