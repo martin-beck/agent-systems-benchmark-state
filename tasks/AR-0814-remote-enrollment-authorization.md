@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Bind enrollment ceremony to principal fingerprint and CLI authorization context; add rotation/revocation integration tests.",
+  "next_action": "Add explicit enrollment fingerprint ceremony and rotation/revocation integration audit tests; regenerate contract docs.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "19674fae15ac781f9a1f798e7d1b212c817e88f3",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T17:46:12+00:00",
+  "updated_at": "2026-09-16T17:46:24+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -114,3 +114,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T17:46:05+00:00: Recorded command exit 0; command argv SHA-256
   df5d7d2c5e4aa5a1a09fa45e85c56e18bdf2b98d5331bd923f380cda3a88d1b4.
+
+- 2026-09-16T17:46:24+00:00: Signed+DCO 19674fa requires auth CLI operations to provide role,
+  principal digest, and request digest; authorize_call rejects insufficient roles before socket
+  dispatch. Focused cargo test -p asb-cli auth_dispatch --lib: 2 passed. Worktree clean after
+  commit.
