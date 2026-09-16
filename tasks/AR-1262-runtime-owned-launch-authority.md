@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1262",
-  "next_action": "Promote and claim after reconciliation; implement the runtime-owned one-shot launch authority and prove supervised strict-replay lifecycle.",
+  "next_action": "Integrate ReplayLaunchAuthority into asb-cli typed consumer and add supervised lifecycle/egress/cancel/cleanup tests; then run full gates.",
   "observed_branch": "feature/ar-1262-runtime-owned-launch-authority",
   "observed_dirty": 0,
   "observed_head": "f691aade5643326dbdc58d4eb59a79f2fb56b63a",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned authority for supervised strict-replay execution.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-16T21:00:06+00:00",
+  "updated_at": "2026-09-16T21:00:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1262-runtime-authority"
 }
 ---
@@ -56,3 +56,10 @@ ownership and bounded lifecycle evidence.
 
 - 2026-09-16T20:59:58+00:00: Recorded command exit 0; command argv SHA-256
   1d12e96d0f184ea4c43f11299fda3d9ed2ea9f01b32dfe4cf8a4b02e517041b1.
+
+- 2026-09-16T21:00:16+00:00: Signed f691aad adds crates/asb-runtime/src/replay_entrypoint.rs and
+  export. ReplayLaunchAuthority issues a validated runtime SidecarHandoff only after namespace
+  attestation, retains LoopbackSidecar ownership, and take_once rejects duplicate consumption.
+  Focused runtime test passes 1/1; cargo fmt passes; product worktree clean. Initial focused test
+  failure was only missing tempfile dev dependency; replaced with bounded std temp root and reran
+  green.

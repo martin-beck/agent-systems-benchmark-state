@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1262](tasks/AR-1262-runtime-owned-launch-authority.md): Runtime-owned strict-replay launch authority | Issue runtime-owned authority for supervised strict-replay execution. | Promote and claim after reconciliation; implement the runtime-owned one-shot launch authority and prove supervised strict-replay lifecycle. | asb_ar1024_lifecycle_router |
+| P0 | [AR-1262](tasks/AR-1262-runtime-owned-launch-authority.md): Runtime-owned strict-replay launch authority | Issue runtime-owned authority for supervised strict-replay execution. | Integrate ReplayLaunchAuthority into asb-cli typed consumer and add supervised lifecycle/egress/cancel/cleanup tests; then run full gates. | asb_ar1024_lifecycle_router |
 
 ## Open
 
