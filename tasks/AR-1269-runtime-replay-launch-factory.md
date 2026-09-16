@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create runtime-owned launch bundles for supervised strict replay.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Runtime-owned replay launch-bundle factory",
-  "updated_at": "2026-09-16T23:01:00+00:00",
+  "updated_at": "2026-09-16T23:01:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1269-runtime-launch-factory"
 }
 ---
@@ -70,3 +70,6 @@ AR-1268's blocked transport evidence and never move launch authority into the CL
 
 - 2026-09-16T23:01:00+00:00: Recorded command exit 0; command argv SHA-256
   176cab5b29a40fa8794f09725ed51520aae1b944c519cabbe22bf8591c02577a.
+
+- 2026-09-16T23:01:09+00:00: Recorded command exit 0; command argv SHA-256
+  4a18e083893e7fc19d120c9b0ddd184e47428b0f5be03ee5d7ca84c288b88614.
