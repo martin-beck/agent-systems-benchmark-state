@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T14:39:31+00:00",
+  "updated_at": "2026-09-16T14:39:48+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -180,3 +180,6 @@ Implementation has not started. Read the linked plan before claiming.
   oversized-length rejection tests. Focused cargo test -p asb-control tls_frame_ --locked passed
   2/2; cargo fmt passed; product tree clean. Next: add slow-peer bounded-timeout coverage, run full
   applicable workspace gates, then request independent review.
+
+- 2026-09-16T14:39:48+00:00: Recorded command exit 0; command argv SHA-256
+  1024fc1e6cefa31b078f0b5d2ed85c7ea4586897b388bf1e308f62db58574461.
