@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1254-mockagents-pinned-python-transport",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T15:48:23+00:00",
+  "claim_expires": "2026-09-16T15:50:56+00:00",
   "depends_on": [
     "AR-1252",
     "AR-1253"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify MockAgents through the pinned Python sandbox.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Qualify MockAgents through pinned Python transport",
-  "updated_at": "2026-09-16T13:50:53+00:00",
+  "updated_at": "2026-09-16T13:50:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1254"
 }
 ---
@@ -85,3 +85,5 @@ Keep fixtures, runtimes, caches, and evidence under `/srv/data/projects`.
   llm-double-spike suite 19/19, transport focused 2/2, py_compile/diff checks pass. Non-loopback
   attempt remains explicitly unavailable-outside-isolation until network-none runner evidence; arm64
   artifact selection/provenance remains.
+
+- 2026-09-16T13:50:56+00:00: Heartbeat by asb_ar1254_mockagents_transport.
