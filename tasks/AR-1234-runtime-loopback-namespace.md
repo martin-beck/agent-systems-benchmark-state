@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1234",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T08:56:58+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1100",
     "AR-1231"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1234",
   "observed_dirty": 0,
   "observed_head": "04b3f728fc5ff2a7e883fc1dcf0458865ce96247",
-  "owner": "asb_ar1234_worker_next",
+  "owner": "",
   "plan": "../plans/AR-1234.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide an approved runtime-owned loopback-only sandbox namespace capability.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Runtime-owned loopback namespace capability",
-  "updated_at": "2026-09-16T07:00:08+00:00",
+  "updated_at": "2026-09-16T07:00:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1234"
 }
 ---
@@ -150,3 +150,12 @@
 
 - 2026-09-16T07:00:08+00:00: Recorded command exit 0; command argv SHA-256
   47953ff28c5c211fc9e32779b328d5e3a890448f83829b79d54344f6985244e7.
+
+- 2026-09-16T07:00:23+00:00: AR-1234-only pass complete. Rootless unshare -Urn can create private
+  loopback namespace and bring lo up; however current SandboxBackend contract cannot safely compose
+  this with its bwrap filesystem isolation because host policy rejects bwrap user namespaces and no
+  approved runtime-owned relay/helper is available. Existing fail-closed LoopbackOnly rejection
+  preserved. Focused rejection test passed 1/1; fmt check passed; locked offline runtime clippy -D
+  warnings passed. A direct probe bound on private loopback, but attempted egress probe command was
+  malformed and is not evidence. No product changes. No host sharing, firewall mutation, ambient
+  privileged helper, or external network. Require reviewed helper/launch seam before implementation.
