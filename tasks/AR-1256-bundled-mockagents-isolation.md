@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute bundled MockAgents transport in isolation.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Execute bundled MockAgents transport in isolation",
-  "updated_at": "2026-09-16T14:02:19+00:00",
+  "updated_at": "2026-09-16T14:02:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1256"
 }
 ---
@@ -48,3 +48,6 @@ Keep bundles, images, QEMU artifacts, caches, and evidence under `/srv/data/proj
   provision and qualify both immutable platform images through Docker.
 
 - 2026-09-16T14:02:19+00:00: Claimed by asb_ar1256_bundled_isolation.
+
+- 2026-09-16T14:02:34+00:00: Recorded command exit 0; command argv SHA-256
+  6b9804ca2babfecd9141266220f496ee9eec131184efeda9e7bb225d452c63fe.
