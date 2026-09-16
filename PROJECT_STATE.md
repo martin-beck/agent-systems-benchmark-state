@@ -22,21 +22,21 @@ Generated from local Git and GitHub. Do not edit.
 | #151 | `dependabot/cargo/serde-1.0.229@c926edfde377` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #197 | `feature/ar-1248-strict-replay-cli-contract@cebe8efc19a1` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): define strict offline replay consumer contract |
-| #200 | `feature/ar-1252-approved-isolated-runner@d5f21cebefbc` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runner): provide approved isolated qualification runner |
+| #200 | `feature/ar-1252-approved-isolated-runner@1d0c3cd017e8` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | feat(runner): provide approved isolated qualification runner |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35098855958 | `1d0c3cd017e8` | pull_request | Formal assurance | pending:- |
+| 35098855898 | `1d0c3cd017e8` | pull_request | Huawei MIT source headers | queued:- |
+| 35098855888 | `1d0c3cd017e8` | pull_request | Hosted portability and native qualification | queued:- |
+| 35098855882 | `1d0c3cd017e8` | pull_request | Emulated aarch64 portability | pending:- |
+| 35098855880 | `1d0c3cd017e8` | pull_request | Fault assurance | queued:- |
+| 35098855858 | `1d0c3cd017e8` | pull_request | Rust verification | pending:- |
+| 35098855850 | `1d0c3cd017e8` | pull_request | Agent Workflow Quality shadow | queued:- |
+| 35098855837 | `1d0c3cd017e8` | pull_request | Repository quality | queued:- |
 | 35098561182 | `d5f21cebefbc` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 35098561126 | `d5f21cebefbc` | pull_request | Hosted portability and native qualification | completed:failure |
 | 35098561107 | `d5f21cebefbc` | pull_request | Fault assurance | completed:success |
 | 35098561094 | `d5f21cebefbc` | pull_request | Formal assurance | in_progress:- |
-| 35098561068 | `d5f21cebefbc` | pull_request | Repository quality | completed:failure |
-| 35098561062 | `d5f21cebefbc` | pull_request | Huawei MIT source headers | completed:success |
-| 35098561044 | `d5f21cebefbc` | pull_request | Rust verification | in_progress:- |
-| 35098560944 | `d5f21cebefbc` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 35097079080 | `4e2820bffe93` | push | Rust verification | completed:success |
-| 35097078983 | `4e2820bffe93` | push | Huawei MIT source headers | completed:success |
-| 35097078950 | `4e2820bffe93` | push | Hosted portability and native qualification | completed:success |
-| 35097078917 | `4e2820bffe93` | push | Emulated aarch64 portability | completed:success |
