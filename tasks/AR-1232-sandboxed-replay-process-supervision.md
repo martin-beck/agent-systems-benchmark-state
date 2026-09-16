@@ -11,17 +11,17 @@
   "id": "AR-1232",
   "next_action": "d7ca82f focused strict_replay module now passes 15/15, covering qualified cassette execution, duplicate-attempt rejection, stale route rejection, and recover_after_restart closure. Native child lifecycle/egress evidence remains 7/7 at a3b6768; native StrictReplayExecutor service integration is still the explicit blocker before re-review.",
   "observed_branch": "feature/ar-1232",
-  "observed_dirty": 1,
-  "observed_head": "d7ca82fba8885e0929fc7e3d0a43c28eb93ca342",
+  "observed_dirty": 0,
+  "observed_head": "994c6716904dc2f3d4b9fc186ea35490f236b869",
   "owner": "asb_ar1232_sandbox_supervision",
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 380,
+  "task_revision": 381,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T05:00:53+00:00",
+  "updated_at": "2026-09-16T05:01:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
