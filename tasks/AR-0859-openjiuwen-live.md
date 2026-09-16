@@ -15,11 +15,11 @@
   "plan": "../plans/AR-0859.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 233,
+  "task_revision": 234,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-16T06:52:37+00:00",
+  "updated_at": "2026-09-16T06:57:52+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -798,3 +798,7 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 - 2026-09-16T06:52:37+00:00: Released blocked and ownerless. Live OpenJiuwen evidence requires the
   missing pinned executable/runtime closure; retain fail-closed qualification and do not substitute
   an unreviewed runtime.
+
+- 2026-09-16T06:57:52+00:00: User-authorized runtime setup investigation: establish reproducible
+  pinned container/VM evidence path under /srv/data/projects without mutable host Python or
+  unreviewed artifacts.
