@@ -7,7 +7,7 @@
   "id": "AR-1210",
   "next_action": "Promote after review; define the versioned offline tutorial-step schema and ASB syntax validator.",
   "observed_branch": "docs/ar-1210-tutorial-contract",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "1490abd9420b85a19af50cf5c07a55babc23c1e5",
   "owner": "asb_ar1210_tutorial_contract",
   "plan": "../plans/AR-1210.md",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define offline tutorial steps and validate them against the ASB CLI grammar.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Tutorial contract and syntax validator",
-  "updated_at": "2026-09-16T03:44:27+00:00",
+  "updated_at": "2026-09-16T03:45:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1210"
 }
 ---
