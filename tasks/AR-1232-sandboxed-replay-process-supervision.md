@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1232",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T04:55:54+00:00",
+  "claim_expires": "2026-09-16T04:58:19+00:00",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T02:57:54+00:00",
+  "updated_at": "2026-09-16T02:58:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -191,3 +191,5 @@
   now exercise SandboxBackend::spawn_launch; sandbox_boundary integration suite passed 10/10 and
   sandbox unit suite passed 18/18. The prior exit-101 was the missing NetworkPolicy error variant
   and is fixed.
+
+- 2026-09-16T02:58:19+00:00: Heartbeat by asb_ar1232_sandbox_supervision.
