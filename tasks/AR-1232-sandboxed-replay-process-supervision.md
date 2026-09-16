@@ -11,17 +11,17 @@
   "id": "AR-1232",
   "next_action": "Implement the approved SandboxBackend process-supervision seam for strict replay, including real child egress denial and bounded cancellation/restart/crash recovery tests.",
   "observed_branch": "feature/ar-1232",
-  "observed_dirty": 1,
-  "observed_head": "a83ba8e278e40b538160e87a2a40c0fb26418dae",
+  "observed_dirty": 0,
+  "observed_head": "28e7cc5b43cfc41c1915cb393c0643c13e840da6",
   "owner": "asb_ar1232_sandbox_supervision",
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T02:17:42+00:00",
+  "updated_at": "2026-09-16T02:17:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
