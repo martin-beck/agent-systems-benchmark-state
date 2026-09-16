@@ -52,8 +52,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1248` | `feature/ar-1248-strict-replay-cli-contract` | `cebe8efc19a1` | 0 | behind 60, ahead 8 |
 | `agent-systems-benchmark-ar-1249` | `feature/ar-1249-mockagents-qualification-evidence` | `128ecddbfdb7` | 0 | behind 60, ahead 0 |
 | `agent-systems-benchmark-ar-1250` | `feature/ar-1250-mockagents-harness-extension` | `55be26880282` | 0 | behind 60, ahead 10 |
-| `agent-systems-benchmark-ar-1251` | `feature/ar-1251-mockagents-transport-sandbox` | `128ecddbfdb7` | 1 | behind 60, ahead 0 |
-| changed files | - | - | - | `tools/llm-double-spike/run_isolated.py` |
+| `agent-systems-benchmark-ar-1251` | `feature/ar-1251-mockagents-transport-sandbox` | `128ecddbfdb7` | 2 | behind 60, ahead 0 |
+| changed files | - | - | - | `tools/llm-double-spike/run_isolated.py`, `tools/llm-double-spike/test_run_isolated.py` |
 | `agent-systems-benchmark-ar-1252` | `feature/ar-1252-approved-isolated-runner` | `1d0c3cd017e8` | 0 | behind 37, ahead 0 |
 | `agent-systems-benchmark-ar-1253` | `feature/ar-1253-pinned-python-transport-runtime` | `b7797d05c1a1` | 0 | behind 34, ahead 0 |
 | `agent-systems-benchmark-ar-1254` | `feature/ar-1254-mockagents-pinned-python-transport` | `154a34549784` | 0 | behind 33, ahead 3 |
@@ -198,8 +198,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-redacted-request-pointer-replay` | `feature/redacted-request-pointer-replay` | `d7492ef5e9ad` | 0 | behind 635, ahead 0 |
 | `agent-systems-benchmark-reliability-fairness` | `feature/reliability-fairness` | `eb28ca7aeae5` | 0 | behind 681, ahead 0 |
 | `agent-systems-benchmark-remote-control-transport` | `feature/remote-control-transport` | `b7d9e142d684` | 0 | behind 5, ahead 0 |
-| `agent-systems-benchmark-remote-enrollment-authz` | `feature/remote-enrollment-authz` | `75fbd5f1ae8c` | 2 | behind 0, ahead 23 |
-| changed files | - | - | - | `crates/asb-control/src/lib.rs`, `crates/asb-control/src/schema.rs` |
+| `agent-systems-benchmark-remote-enrollment-authz` | `feature/remote-enrollment-authz` | `75fbd5f1ae8c` | 3 | behind 0, ahead 23 |
+| changed files | - | - | - | `crates/asb-control/examples/generate_schema.rs`, `crates/asb-control/src/lib.rs`, `crates/asb-control/src/schema.rs` |
 | `agent-systems-benchmark-replay-aider` | `feature/replay-aider` | `ec0a2930690c` | 0 | behind 643, ahead 0 |
 | `agent-systems-benchmark-replay-cassettes` | `feature/replay-cassettes` | `cd88f5703fb3` | 0 | behind 763, ahead 0 |
 | `agent-systems-benchmark-replay-codex` | `feature/replay-codex` | `d086fec11f59` | 0 | behind 633, ahead 0 |

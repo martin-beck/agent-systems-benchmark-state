@@ -10,7 +10,7 @@
   "id": "AR-1251",
   "next_action": "Design and implement bounded transport/sandbox fixture for MockAgents tool-result, cancellation/backpressure, network-denial, cleanup, and arm64 evidence.",
   "observed_branch": "feature/ar-1251-mockagents-transport-sandbox",
-  "observed_dirty": 1,
+  "observed_dirty": 2,
   "observed_head": "128ecddbfdb7fcfff6e257adf3237b5866aca481",
   "owner": "asb_ar1251_mockagents_transport",
   "plan": "../plans/AR-1251.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a bounded transport and sandbox fixture for MockAgents qualification.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Add MockAgents transport sandbox fixture",
-  "updated_at": "2026-09-16T18:53:26+00:00",
+  "updated_at": "2026-09-16T18:53:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1251"
 }
 ---
