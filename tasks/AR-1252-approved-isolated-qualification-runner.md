@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 100,
+  "task_revision": 101,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T12:56:17+00:00",
+  "updated_at": "2026-09-16T12:56:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -309,3 +309,6 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
   source_identity correctly rejects stale ancestry. This is a branch synchronization blocker, not a
   platform/runner defect. Do not merge d5f21ce; rebase onto 4e2820b, re-sign/DCO commits, push new
   exact head and rerun CI.
+
+- 2026-09-16T12:56:46+00:00: Recorded command exit 0; command argv SHA-256
+  003c0b0bb467dc9c325a2a9ded7954aace0286b38518a7495ebeceac9d5b3693.
