@@ -11,17 +11,17 @@
   "id": "AR-1232",
   "next_action": "Integrate strict replay launch consumer after AR-1231 merge; add sandbox child launch/cancel/restart/crash tests using SandboxBackend::spawn. Current 28e7cc5 exposes validated SandboxSpec network attestation; no provider egress is enabled by constructor.",
   "observed_branch": "feature/ar-1232",
-  "observed_dirty": 1,
-  "observed_head": "e74dc332fceae17906239b6544b06400e05d947d",
+  "observed_dirty": 0,
+  "observed_head": "0a7a76011d34809beeffe348121bc290a3f8b4df",
   "owner": "asb_ar1232_sandbox_supervision",
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T02:53:42+00:00",
+  "updated_at": "2026-09-16T02:53:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
