@@ -2,7 +2,7 @@
 {
   "branch": "fix/ar-1247-protected-main-dco-workflow",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T12:14:45+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1242"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "fix/ar-1247-protected-main-dco-workflow",
   "observed_dirty": 0,
   "observed_head": "53d018d69057b99895b4555c7d71659bcef32cf5",
-  "owner": "asb_ar1247_workflow_worker",
+  "owner": "",
   "plan": "../plans/AR-1247.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Route the Rust verification workflow through durable protected-main DCO admission on generated merge commits.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Protected-main DCO workflow binding",
-  "updated_at": "2026-09-16T10:26:46+00:00",
+  "updated_at": "2026-09-16T10:33:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1247"
 }
 ---
@@ -52,3 +52,7 @@ GitHub-generated merge. Do not modify runtime, bundle, or TUI behavior.
 
 - 2026-09-16T10:26:46+00:00: Recorded command exit 1; command argv SHA-256
   e3ef2eade11735206e4dfbd4cfc1411397aaa11db783baa1b816b26c5d2c5fd6.
+
+- 2026-09-16T10:33:18+00:00: Completed: signed DCO commit 53d018d; PR #196 merged as
+  128ecddbfdb7fcfff6e257adf3237b5866aca481. All 12 required PR checks passed and all post-merge main
+  workflows, including Rust verification and repository quality, passed on the exact merge SHA.
