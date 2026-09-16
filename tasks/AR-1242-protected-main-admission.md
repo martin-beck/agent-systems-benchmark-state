@@ -8,7 +8,7 @@
     "AR-0897"
   ],
   "id": "AR-1242",
-  "next_action": "Run PR191 exact-head CI and independent review; external settings apply remains pending admin authority.",
+  "next_action": "Run fresh PR191 CI for rebased 9db468c and independently review; settings apply still needs admin authority.",
   "observed_branch": "fix/protected-main-admission",
   "observed_dirty": 0,
   "observed_head": "9db468cad9fc69bb05100842b49469c8ca3e988c",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent protected-main admission from creating unsigned GitHub merge commits.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Enforce signed protected-main admission",
-  "updated_at": "2026-09-16T08:55:36+00:00",
+  "updated_at": "2026-09-16T08:55:45+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-admission"
 }
 ---
@@ -81,3 +81,9 @@ It must not weaken native, formal, privacy, signature, DCO, exact-tree, or post-
   298ce8c511b182778d9435aa4140e68366bb336f96907714d1520b4b146e780b.
 
 - 2026-09-16T08:55:36+00:00: Heartbeat by asb_ar1242_merge_admission.
+
+- 2026-09-16T08:55:45+00:00: PR191 platform run 35076151220 failed closed with source identity not
+  immutable because concurrent main advanced to eb0ad13 while PR base remained stale. Rebased the
+  exact signed+DCO control commit onto current main; new head
+  9db468cad9fc69bb05100842b49469c8ca3e988c, clean and force-with-lease pushed. Failure classified as
+  stale-base infrastructure, not fixture/product behavior.

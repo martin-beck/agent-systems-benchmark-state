@@ -9,7 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0898](tasks/AR-0898-shellcheck-fail-closed.md): Make ShellCheck fail closed | Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck. | PR #190 merged as signed local merge eb0ad13f8b6e64b6ee46b92602a631ba0c96f9f4 (parents 606375f + 760eded8; tree verified; G signature and DCO). Protected-main post-merge workflows are running at exact head eb0ad13: Repository quality 35076116672, Rust 35076116617, hosted portability 35076116659, emulated AArch64 35076116592, fault 35076116738, formal 35076116608. Monitor all to terminal, diagnose failures, then release AR done. | asb_ar0898_shellcheck |
 | P0 | [AR-1237](tasks/AR-1237-strict-replay-launch-bridge.md): Strict-replay child launch bridge | Map the authenticated relay into the strict-replay child launch contract. | Extend the reviewed strict-replay launch contract to map ReplayRelayHandoff into the child-visible HTTP loopback endpoint, with authenticated route/generation metadata and bounded lifecycle ownership. | asb_ar1237_launch_bridge_worker |
-| P0 | [AR-1242](tasks/AR-1242-protected-main-admission.md): Enforce signed protected-main admission | Prevent protected-main admission from creating unsigned GitHub merge commits. | Run PR191 exact-head CI and independent review; external settings apply remains pending admin authority. | asb_ar1242_merge_admission |
+| P0 | [AR-1242](tasks/AR-1242-protected-main-admission.md): Enforce signed protected-main admission | Prevent protected-main admission from creating unsigned GitHub merge commits. | Run fresh PR191 CI for rebased 9db468c and independently review; settings apply still needs admin authority. | asb_ar1242_merge_admission |
 
 ## Open
 
