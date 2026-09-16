@@ -12,9 +12,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 4 |
+| **Open** | Dependency-ready and available to claim | 5 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 17 |
-| **Planned** | Defined work awaiting promotion or dependencies | 59 |
+| **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 192 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -347,7 +347,7 @@ flowchart LR
         AR_1251["AR-1251 - Blocked"]:::status_blocked
         AR_1252["AR-1252 - Done"]:::status_done
         AR_1253["AR-1253 - Done"]:::status_done
-        AR_1254["AR-1254 - Planned"]:::status_planned
+        AR_1254["AR-1254 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1443,7 +1443,7 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (4)
+### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1451,6 +1451,7 @@ flowchart LR
 | P0 | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md): Implement &#96;asb tui&#96; lifecycle routing | Unclaimed | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. |
 | P0 | [AR-1042](../tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Unclaimed | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. |
 | P0 | [AR-1044](../tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Unclaimed | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. |
+| P1 | [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md): Qualify MockAgents through pinned Python transport | Unclaimed | Qualify MockAgents through the pinned Python sandbox. | Implement real bounded MockAgents transport fixture through pinned Python runner. |
 
 ### Blocked (17)
 
@@ -1474,7 +1475,7 @@ flowchart LR
 | P1 | [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md): Extend MockAgents qualification harness | Unclaimed | Extend the pinned MockAgents executable qualification harness. | Implement tool-result, cancellation/backpressure, outbound-denial cases; rerun arm64 repeat and full gates. |
 | P1 | [AR-1251](../tasks/AR-1251-mockagents-transport-sandbox.md): Add MockAgents transport sandbox fixture | Unclaimed | Add a bounded transport and sandbox fixture for MockAgents qualification. | Design and implement bounded transport/sandbox fixture for MockAgents tool-result, cancellation/backpressure, network-denial, cleanup, and arm64 evidence. |
 
-### Planned (59)
+### Planned (58)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1531,7 +1532,6 @@ flowchart LR
 | P1 | [AR-1014](../tasks/AR-1014-tui-measurement-selection.md): Add grouped measurement selection to the TUI | Unclaimed | Let users select grouped measurements from the standalone ASB TUI. | After AR-1025, AR-1033 and ASB AR-1037 complete, implement the bounded selector with precise v1.3 validation UX, generic v1.2 fallback and canonical plan round trips only in standalone asb-tui. |
 | P1 | [AR-1015](../tasks/AR-1015-csb-measurement-adapter.md): Add a pinned, provenance-safe CSB measurement adapter | Unclaimed | Import qualified CSB resource, system-statistics, and contention measurements into ASB. | Inventory pinned CSB signals and implement only contract-compatible adapters after the catalog is accepted. |
 | P1 | [AR-1027](../tasks/AR-1027-asb-tui-verified-release.md): Publish the verified asb-tui release | Unclaimed | Create and independently promote the first installable signed asb-tui release channel. | Publish the first verified asb-tui release only after ASB release, complete UI/install qualification and exact cross-repository evidence are done. |
-| P1 | [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md): Qualify MockAgents through pinned Python transport | Unclaimed | Qualify MockAgents through the pinned Python sandbox. | Implement real bounded MockAgents transport fixture through pinned Python runner. |
 | P2 | [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Unclaimed | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit CSB monitoring using native x86_64 oracles and required pinned QEMU AArch64 portable mapping/lifecycle checks; keep native ARM64 counters and performance as optional future evidence. |
 | P2 | [AR-0705](../tasks/AR-0705-native-debian-capacity.md): Provide native Debian capacity | Unclaimed | Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 Debian and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
