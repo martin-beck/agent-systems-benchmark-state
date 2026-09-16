@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1273](tasks/AR-1273-complete-replay-context.md): Complete runtime-owned replay request context | Provide complete runtime-owned context for strict-replay execution. | Integrate ReplayRequestContext into actual argument-level replay dispatch and connect runtime cassette service; add real response parity and supervised egress/no-fallback/cancel/restart/timeout/crash cleanup tests. | asb_ar1024_lifecycle_router |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -41,6 +35,7 @@ Never edit this file directly.
 | P0 | [AR-1270](tasks/AR-1270-runtime-cassette-handle.md): Runtime-issued cassette-service handle | Provide a runtime-issued cassette-service handle for supervised strict replay. | Expose a runtime-owned cassette operation/response handle and connect it to actual replay dispatch; add supervised lifecycle/egress/no-fallback fixtures before full gates. | - |
 | P0 | [AR-1271](tasks/AR-1271-cassette-operation-contract.md): Dependency-neutral cassette operation contract | Define a dependency-neutral cassette request/response operation contract. | Connect CassetteResponseSink to actual replay service and add real request/response, egress/no-fallback, cancellation/restart, timeout/crash cleanup fixtures. | - |
 | P0 | [AR-1272](tasks/AR-1272-authenticated-cassette-backend.md): Authenticated immutable cassette backend | Bind immutable cassette content to a runtime-authenticated replay backend handle. | Wire execute_runtime_cassette into argument-level replay command and add real response parity plus egress/no-fallback/cancel/restart/timeout/crash cleanup fixtures. | - |
+| P0 | [AR-1273](tasks/AR-1273-complete-replay-context.md): Complete runtime-owned replay request context | Provide complete runtime-owned context for strict-replay execution. | Integrate ReplayRequestContext into actual argument-level replay dispatch and connect runtime cassette service; add real response parity and supervised egress/no-fallback/cancel/restart/timeout/crash cleanup tests. | - |
 | P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain coordinator-authorized native x86_64 runner/container and immutable CSB source root plus interpreter bytes matching Python 3.12.3 SHA-256 1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118. Docker is currently inaccessible; qemu cannot substitute native x86 evidence. Then rerun native_boundary and record A/B/overhead evidence. | - |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | Formal assurance owner AR-0877/AR-0907 must repair the pinned TLA artifact provenance mismatch (downloaded byte count/hash) before PR #119 can be requalified; AR-0704 native controller requires no source change. | - |
 | P1 | [AR-0832](tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. | - |

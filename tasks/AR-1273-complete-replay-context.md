@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1273-complete-replay-context",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T01:32:42+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1273-complete-replay-context",
   "observed_dirty": 0,
   "observed_head": "6c47986cdc4c5d3b6bf9a653c691bb30651b05d8",
-  "owner": "asb_ar1024_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1273.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide complete runtime-owned context for strict-replay execution.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Complete runtime-owned replay request context",
-  "updated_at": "2026-09-16T23:37:23+00:00",
+  "updated_at": "2026-09-16T23:37:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1273-complete-replay-context"
 }
 ---
@@ -72,3 +72,14 @@ AR-1272's blocked evidence; never accept caller-provided authority or fabricate 
   at signed 6c47986. Runtime context focused suite is 3/3 and cargo fmt passed. Acceptance is still
   open: current CLI replay command has no runtime-issued context/service execution path, so real
   cassette traffic and lifecycle/egress evidence are not yet established.
+
+- 2026-09-16T23:37:50+00:00: Released blocked/ownerless at clean signed 6c47986. Added opaque
+  single-use ReplayRequestContext with private runtime handoff, route/request identity, service
+  handle, enforced LoopbackOnly isolation and lifecycle owner; validates loopback handoff,
+  route/method/path/body bounds, rejects malformed/mismatch/duplicate use. Focused replay_context
+  3/3, full locked cargo test --workspace green, fmt green. Exact blocker: runtime context only
+  carries dependency-neutral service identity and cannot invoke asb-replay service without violating
+  crate graph; CLI replay dispatch still has no runtime-issued cassette service operation/context
+  entrypoint. Real cassette response parity, supervised
+  egress/no-fallback/cancel/restart/timeout/crash cleanup remain unimplemented and require a
+  follow-on runtime-to-replay transport seam.
