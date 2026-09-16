@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1248-strict-replay-cli-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T13:02:23+00:00",
+  "claim_expires": "2026-09-16T13:10:23+00:00",
   "depends_on": [
     "AR-1231",
     "AR-1232"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T11:10:13+00:00",
+  "updated_at": "2026-09-16T11:10:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -248,3 +248,5 @@ formal, privacy, signature, DCO, and exact-tree gates.
   --offline: 3/3 pass; clippy -D warnings pass; contract_consistency --run-tests pass (all
   registered artifacts); full cargo test --workspace --locked --offline pass. Clean tree and G/DCO
   verified.
+
+- 2026-09-16T11:10:23+00:00: Heartbeat by asb_ar1232_lifecycle_router.
