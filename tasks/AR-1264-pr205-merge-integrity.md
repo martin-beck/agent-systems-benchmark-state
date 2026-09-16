@@ -7,7 +7,7 @@
     "AR-0897"
   ],
   "id": "AR-1264",
-  "next_action": "Monitor PR #206 exact head ef56571f7274 against base ebfa37023e56; hosted checks are running. After all green and review, use merge_pr.py with refs/pull/206/head and exact OIDs; verify signed main and post-merge gates.",
+  "next_action": "PR #206 refreshed to signed head 539a92980620; wait for fresh exact-head hosted checks and independent review, then merge via merge_pr.py refs/pull/206/head with full OIDs and verify exact-main policy.",
   "observed_branch": "repair/ar-1264-pr205-merge-integrity",
   "observed_dirty": 0,
   "observed_head": "539a9298062027902288aa46244ba060d63d5637",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover signed protected-main integration after PR #205.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Recover signed integration after PR #205",
-  "updated_at": "2026-09-16T21:48:39+00:00",
+  "updated_at": "2026-09-16T21:49:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1264-merge-integrity"
 }
 ---
@@ -65,3 +65,10 @@ main gates.
 
 - 2026-09-16T21:48:39+00:00: Recorded command exit 0; command argv SHA-256
   93bfafca973a00bf0870eab32efd1e595619f8dc152c9dc94740d0d3ffd6a126.
+
+- 2026-09-16T21:49:01+00:00: Policy failure diagnosis: ef56571 had literal backslash-n characters
+  before Signed-off-by, so check_dco rejected it. Rebased unpublished topic back to preserved
+  unsigned merge ebfa37023e56269b8299254b535be60f3cf1d186, created corrected SSH-signed -s commit
+  539a9298062027902288aa46244ba060d63d5637 with actual newline DCO trailer, unchanged tree
+  1d0a5577da8cd2d6199d20980d951c468205c934, and force-with-lease pushed. PR #206 now exact head
+  539a929; prior checks invalidated and must rerun fresh.
