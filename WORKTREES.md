@@ -38,8 +38,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1235` | `feature/ar-1235-goose-fixture-portability` | `fd7daa43549e` | 3 | behind 17, ahead 0 |
 | changed files | - | - | - | `target-hosted-aarch64/`, `target-hosted-full-aarch64/`, `target-repeat-aarch64/` |
 | `agent-systems-benchmark-ar-1236` | `feature/ar-1236-runtime-loopback-sidecar` | `42c3d1959b9a` | 0 | behind 301, ahead 4 |
-| `agent-systems-benchmark-ar-1238` | `feature/ar-1238-runtime-loopback-supervisor` | `9d982fe87b77` | 2 | behind 301, ahead 3 |
-| changed files | - | - | - | `crates/asb-runtime/src/sandbox.rs`, `crates/asb-runtime/src/supervisor.rs` |
+| `agent-systems-benchmark-ar-1238` | `feature/ar-1238-runtime-loopback-supervisor` | `d9f42ecb2a20` | 0 | behind 301, ahead 4 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 383, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 486, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 380, ahead 0 |

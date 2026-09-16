@@ -10,17 +10,17 @@
   "id": "AR-1238",
   "next_action": "Run exact-head workspace gates, independently review SandboxBackend relay mount and supervisor composition, then release with signed commit d9f42ec; real cassette forwarding remains dependent on sidecar protocol implementation.",
   "observed_branch": "feature/ar-1238-runtime-loopback-supervisor",
-  "observed_dirty": 2,
-  "observed_head": "9d982fe87b77bcf5b674d72f1c8a0119bf657327",
+  "observed_dirty": 0,
+  "observed_head": "d9f42ecb2a205b86250233f4f4c75688a997c063",
   "owner": "asb_ar1238_bwrap_relay_worker",
   "plan": "../plans/AR-1238.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned private-namespace supervisor for loopback replay.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Runtime-owned loopback supervisor",
-  "updated_at": "2026-09-16T08:03:31+00:00",
+  "updated_at": "2026-09-16T08:03:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1238"
 }
 ---
