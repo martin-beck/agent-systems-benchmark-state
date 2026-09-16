@@ -69,7 +69,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-cli-multi-agent-provider-selection` | `feature/cli-multi-agent-provider-selection` | `0d9d317716d5` | 0 | behind 365, ahead 0 |
 | `agent-systems-benchmark-contract-consistency` | `feature/contract-consistency` | `289b2711774b` | 0 | behind 429, ahead 0 |
 | `agent-systems-benchmark-control-history-analysis-contract` | `feature/control-history-analysis-contract` | `73b4a76b9436` | 0 | behind 320, ahead 0 |
-| `agent-systems-benchmark-control-state-lock-test-isolation` | `fix/control-state-lock-test-isolation` | `8b0f9fd07d5d` | 0 | behind 251, ahead 2 |
+| `agent-systems-benchmark-control-state-lock-test-isolation` | `DETACHED` | `fd7daa43549e` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-cli/src/control.rs` |
 | `agent-systems-benchmark-coordination-docs` | `feature/coordination-docs` | `02be24b76239` | 0 | behind 642, ahead 0 |
 | `agent-systems-benchmark-credential-fd-helper-resolvers` | `feature/credential-fd-helper-resolvers` | `ef5c40762e27` | 0 | behind 370, ahead 0 |
 | `agent-systems-benchmark-credential-reference-boundary` | `feature/credential-reference-boundary` | `5d62546b5d56` | 0 | behind 390, ahead 0 |

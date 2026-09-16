@@ -11,18 +11,18 @@
   ],
   "id": "AR-0908",
   "next_action": "Hold PR #125 unchanged; shared formal asset and native-runner pin owners must repair their gates before a fresh exact-head run.",
-  "observed_branch": "fix/control-state-lock-test-isolation",
-  "observed_dirty": 0,
-  "observed_head": "8b0f9fd07d5dfbedd83376c1380ab225dfba1213",
+  "observed_branch": "DETACHED",
+  "observed_dirty": 1,
+  "observed_head": "fd7daa43549edd67b60076aa6b1eee333061b438",
   "owner": "asb_ar0908_lock_isolation",
   "plan": "../plans/AR-0908.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Harden asb-cli control-state lock test isolation and deterministic reopen coverage.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Harden control-state lock test isolation",
-  "updated_at": "2026-09-16T06:06:08+00:00",
+  "updated_at": "2026-09-16T06:06:16+00:00",
   "worktree_key": "agent-systems-benchmark-control-state-lock-test-isolation"
 }
 ---
