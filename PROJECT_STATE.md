@@ -31,7 +31,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 35053459186 | `420dcbdf1a10` | pull_request | Hosted portability and native qualification | completed:success |
 | 35053459182 | `420dcbdf1a10` | pull_request | Huawei MIT source headers | completed:success |
-| 35053459159 | `420dcbdf1a10` | pull_request | Fault assurance | in_progress:- |
+| 35053459159 | `420dcbdf1a10` | pull_request | Fault assurance | completed:success |
 | 35053459153 | `420dcbdf1a10` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35053459148 | `420dcbdf1a10` | pull_request | Repository quality | in_progress:- |
 | 35053459136 | `420dcbdf1a10` | pull_request | Formal assurance | in_progress:- |
