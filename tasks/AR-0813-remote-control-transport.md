@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 153,
+  "task_revision": 154,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T15:07:39+00:00",
+  "updated_at": "2026-09-16T15:07:52+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -443,3 +443,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T15:07:32+00:00: Recorded command exit 0; command argv SHA-256
   28973fe8209a0a39d2d8a7654cd083743a6b70234c474b058d2f9efc6f052220.
+
+- 2026-09-16T15:07:52+00:00: Committed 7a480ac (SSH-signed+DCO): disconnect drops connection permit
+  while EventWindow::resume returns only post-ack durable revision; deterministic continuation test
+  passes. Existing endpoint client-disconnect/no-cancel and protocol downgrade tests remain green.
+  Final lint fix fb2061a removes redundant must_use; workspace clippy now passes. cargo test
+  --locked -p asb-control passes 43+doc tests. Remaining full workspace test blocker is unrelated
+  asb-metrics kernel.rs:713 mismatch; network fault evidence remains transport-level.
