@@ -8,7 +8,7 @@
     "AR-1100"
   ],
   "id": "AR-1233",
-  "next_action": "143213c adds typed LoopbackOnly policy preservation and fail-closed backend rejection; focused runtime test passes 1/1. Next implement attested loopback namespace/listener binding without weakening Deny, then add native child-service and provider-egress tests.",
+  "next_action": "Typed LoopbackOnly policy slice 143213c passes full asb-runtime package tests; actual attested loopback namespace/listener binding remains required. Implement backend capability without weakening Deny, then add native child-service/provider-egress tests and full workspace gates.",
   "observed_branch": "feature/ar-1233",
   "observed_dirty": 0,
   "observed_head": "143213c1d09c5c22d9cd0dec0ca55c2adb29b201",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated loopback-only sandbox transport for strict replay services.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Approved loopback-only sandbox transport",
-  "updated_at": "2026-09-16T05:16:34+00:00",
+  "updated_at": "2026-09-16T05:16:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1233"
 }
 ---
@@ -71,3 +71,9 @@
 
 - 2026-09-16T05:16:34+00:00: Recorded command exit 0; command argv SHA-256
   dd64cc00d697c09654f1cab86d4f13a1d56e1cc54846d30ad53c12c02d6b725b.
+
+- 2026-09-16T05:16:55+00:00: Focused/full asb-runtime gate passed: 26 unit tests, 8 process-boundary
+  tests, sandbox/scheduler boundary suites, and 2 doc-tests all green. Product head remains
+  signed/DCO 143213c and clean/pushed. LoopbackOnly currently preserves policy identity and fails
+  closed at spawn via SandboxError::NetworkPolicy; no host-network fallback. Native child-service
+  test remains blocked until backend attestation exists.
