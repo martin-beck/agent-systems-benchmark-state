@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T10:42:30+00:00",
+  "updated_at": "2026-09-16T10:42:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -78,3 +78,6 @@ formal, privacy, signature, DCO, and exact-tree gates.
   StrictReplayLaunchRecord construction, schema/fixture/catalog/docs, and positive/negative tests.
   Focused unit tests 2/2 and clippy -D warnings pass; initial locked test failure was missing
   Cargo.lock entries, fixed by offline cargo check and rerun green. Worktree clean.
+
+- 2026-09-16T10:42:55+00:00: Recorded command exit 0; command argv SHA-256
+  4ae24a7384177fcaf78f7ffc43e6921296ffaf6f56ce9a884cfa52e0c3ef3a22.
