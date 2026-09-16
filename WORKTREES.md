@@ -63,6 +63,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar0898-integration` | `DETACHED` | `eb0ad13f8b6e` | 0 | behind 60, ahead 0 |
 | `agent-systems-benchmark-ar0899-merge` | `DETACHED` | `128ecddbfdb7` | 0 | behind 4, ahead 0 |
 | `agent-systems-benchmark-ar0906-merge-dco` | `repair/ar0906-merge-dco` | `66ca27afc2fb` | 0 | behind 319, ahead 0 |
+| `agent-systems-benchmark-ar1006-merge` | `DETACHED` | `3e8d58994eb2` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar1024-descriptor` | `DETACHED` | `9c164c6ed8fe` | 0 | behind 266, ahead 1 |
 | `agent-systems-benchmark-ar1024-router` | `DETACHED` | `f6968d924ad5` | 0 | behind 264, ahead 0 |
 | `agent-systems-benchmark-ar1024-wire` | `DETACHED` | `565e66043fff` | 0 | behind 268, ahead 3 |
