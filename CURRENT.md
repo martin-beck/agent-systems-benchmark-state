@@ -7,6 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1238](tasks/AR-1238-runtime-loopback-supervisor.md): Runtime-owned loopback supervisor | Provide the runtime-owned private-namespace supervisor for loopback replay. | Trusted bundle integration now requires asb-bundle-owned artifact manifest/payload wiring; then native bwrap must execute content-pinned supervisor+sidecar and prove cassette success, egress denial, teardown and non-interference. | asb_ar1238_bwrap_relay_worker |
 | P1 | [AR-0860](tasks/AR-0860-openjiuwen-replay.md): Qualify strict OpenJiuwen replay | Qualify strict OpenJiuwen replay. | Seal the sanitized live capture and prove strict offline replay, causal parity, malformed-record rejection, and zero external network. | asb_ar1232_lifecycle_router |
 
 ## Open
@@ -18,7 +19,6 @@ Never edit this file directly.
 | P0 | [AR-1042](tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. | - |
 | P0 | [AR-1044](tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. | - |
 | P0 | [AR-1151](tasks/AR-1151.md): Strict offline replay | Replay strictly without providers. | Design and implement the missing executable strict-replay run-path seam: pass exact cassette route/service into agent adapter launch, deny provider egress at process boundary, and add campaign-level cancellation/restart/no-fallback tests. Current CLI replay only decodes/indexes/selects and emits metadata. | - |
-| P0 | [AR-1238](tasks/AR-1238-runtime-loopback-supervisor.md): Runtime-owned loopback supervisor | Provide the runtime-owned private-namespace supervisor for loopback replay. | Trusted bundle integration now requires asb-bundle-owned artifact manifest/payload wiring; then native bwrap must execute content-pinned supervisor+sidecar and prove cassette success, egress denial, teardown and non-interference. | - |
 
 ## Blocked
 
