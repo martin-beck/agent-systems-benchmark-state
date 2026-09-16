@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Run full policy/privacy gates and independent review; document negotiation pre-auth boundary and secret backend scope.",
+  "next_action": "Run full policy/privacy gates and independent review; document negotiation pre-auth boundary and qualified secret backend scope.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "917350e357afb518699a0fd20942abcf6e0eb971",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 110,
+  "task_revision": 111,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T18:08:24+00:00",
+  "updated_at": "2026-09-16T18:08:34+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -308,3 +308,7 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T18:08:17+00:00: Recorded command exit 0; command argv SHA-256
   0aaff29bb158d58d2e0af8e69663a45871905e94087b1866a5cab1676b35a382.
+
+- 2026-09-16T18:08:34+00:00: Signed+DCO 917350e adds authorize_at generation fencing and
+  AuthAuditEventV1::validate; tampered generation audit records fail closed. Auth tests 11/11 and
+  control authorization 3/3 passed. Worktree clean.
