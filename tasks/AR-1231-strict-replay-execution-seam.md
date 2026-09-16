@@ -10,18 +10,18 @@
   ],
   "id": "AR-1231",
   "next_action": "Planned prerequisite for AR-1151: implement the versioned strict-replay adapter/run-path seam, process egress denial, and bounded cancellation/restart recovery with complete positive and negative evidence.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar-1231",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "a83ba8e278e40b538160e87a2a40c0fb26418dae",
   "owner": "asb_ar1231_replay_seam",
   "plan": "../plans/AR-1231.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents through strict replay without provider egress or live fallback.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Strict replay execution and egress-isolation seam",
-  "updated_at": "2026-09-16T01:38:13+00:00",
+  "updated_at": "2026-09-16T01:38:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1231"
 }
 ---
