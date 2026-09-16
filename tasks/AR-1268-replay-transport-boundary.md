@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1268",
-  "next_action": "Coordinate runtime-backed lifecycle fixture for supervised replay; run full locked gates once egress/cancel/restart/timeout/crash cleanup are executable.",
+  "next_action": "Await approved runtime-owned launch bundle/factory exposing SandboxLaunchInput, ResourceLease, pinned commands, and supervised lifecycle to the transport adapter; then add real child lifecycle/egress tests.",
   "observed_branch": "feature/ar-1268-replay-transport-boundary",
   "observed_dirty": 0,
   "observed_head": "f05288b65cbee91d74ef07105068be0d26cbf7d2",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Break the strict-replay runtime/CLI dependency cycle with a shared transport contract.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Break strict-replay runtime/CLI dependency cycle",
-  "updated_at": "2026-09-16T22:56:12+00:00",
+  "updated_at": "2026-09-16T22:56:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1268-replay-transport"
 }
 ---
@@ -156,3 +156,12 @@ Preserve AR-1267's blocked evidence; do not fabricate authority or weaken crate 
   separate and host-dependent; no metadata-only assertions are being presented as end-to-end
   supervision. Product tree clean. Full acceptance still requires a runtime-backed fixture
   connecting this transport to supervised child lifecycle and egress denial.
+
+- 2026-09-16T22:56:41+00:00: Runtime-backed fixture audit: SandboxBackend::spawn_launch cannot be
+  invoked from current shared transport because it requires runtime-owned SandboxLaunchInput,
+  ResourceLease, pinned supervisor/sidecar commands, and lifecycle handle. ReplayTransportV1
+  deliberately carries only identity and no authority-bearing launch values. Supplying these from
+  CLI would violate fail-closed ownership. Therefore real child request/response,
+  provider/descendant egress denial, cancel/restart, timeout/crash reaping, and cleanup tests are
+  blocked on an approved runtime launch-bundle factory; branch remains clean at signed f05288b and
+  unmerged.

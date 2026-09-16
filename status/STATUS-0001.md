@@ -1506,7 +1506,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1268](../tasks/AR-1268-replay-transport-boundary.md): Break strict-replay runtime/CLI dependency cycle | asb_ar1024_lifecycle_router | Break the strict-replay runtime/CLI dependency cycle with a shared transport contract. | Coordinate runtime-backed lifecycle fixture for supervised replay; run full locked gates once egress/cancel/restart/timeout/crash cleanup are executable. |
+| P0 | [AR-1268](../tasks/AR-1268-replay-transport-boundary.md): Break strict-replay runtime/CLI dependency cycle | asb_ar1024_lifecycle_router | Break the strict-replay runtime/CLI dependency cycle with a shared transport contract. | Await approved runtime-owned launch bundle/factory exposing SandboxLaunchInput, ResourceLease, pinned commands, and supervised lifecycle to the transport adapter; then add real child lifecycle/egress tests. |
 
 ### Open (6)
 
