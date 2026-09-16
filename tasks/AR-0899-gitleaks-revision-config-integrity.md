@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve GitHub issue 118 by making local and CI Gitleaks scans deterministic and config changes fail closed.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Align and harden Gitleaks execution",
-  "updated_at": "2026-09-16T11:51:53+00:00",
+  "updated_at": "2026-09-16T11:52:36+00:00",
   "worktree_key": "agent-systems-benchmark-gitleaks-revision-config-integrity"
 }
 ---
@@ -148,3 +148,6 @@ Implementation has not started. Read the linked plan before claiming.
   generated crates/asb-cli/*.profraw files remained; removed only those generated files, rerun
   passed. Removed only owned worktree target/ (7.2G disposable build artifacts) after disk reached 0
   bytes free. Product tree is clean at 62d9f12; PR publication remains pending independent review.
+
+- 2026-09-16T11:52:36+00:00: Recorded command exit 1; command argv SHA-256
+  ca175971816ca25109c5648d90fa81dae02097635fd244ae753de6746fc7a722.
