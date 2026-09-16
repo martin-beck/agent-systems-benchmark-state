@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T14:42:38+00:00",
+  "updated_at": "2026-09-16T14:42:58+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -214,3 +214,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T14:42:38+00:00: Recorded command exit 0; command argv SHA-256
   c53c1de22e13046d6e4e8cb7c9f5f264243a690c4a690df1c9c57d9f383e8709.
+
+- 2026-09-16T14:42:58+00:00: Final transport slice committed f971b4d (SSH-signed+DCO): slow-peer
+  100ms handshake deadline, existing bounded frame round-trip over TLS, and oversized-length
+  rejection. cargo test --locked -p asb-control passed 41 unit/integration/doc tests; workspace
+  clippy passed. Full workspace test reached unrelated pre-existing asb-metrics kernel.rs:713
+  mismatch (expected MalformedEvidence, got ProbeRejected). Product tree clean. Next: independent
+  exact-head review and PR/CI; full workspace gate remains blocked by that unrelated failure.
