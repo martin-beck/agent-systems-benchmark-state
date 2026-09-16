@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Route the Rust verification workflow through durable protected-main DCO admission on generated merge commits.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Protected-main DCO workflow binding",
-  "updated_at": "2026-09-16T10:15:34+00:00",
+  "updated_at": "2026-09-16T10:16:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1247"
 }
 ---
@@ -31,3 +31,6 @@ offline regression coverage that prevents workflows from reverting to strict ful
 GitHub-generated merge. Do not modify runtime, bundle, or TUI behavior.
 
 - 2026-09-16T10:14:45+00:00: Claimed by asb_ar1247_workflow_worker.
+
+- 2026-09-16T10:16:02+00:00: Recorded command exit 0; command argv SHA-256
+  f68e2dbd5fd8c4461e65d40bc39a81c4f45d80e6cfd9637298a192ee2bd4b38c.
