@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict OpenJiuwen replay.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Qualify strict OpenJiuwen replay",
-  "updated_at": "2026-09-16T08:23:28+00:00",
+  "updated_at": "2026-09-16T08:23:41+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-replay"
 }
 ---
@@ -38,3 +38,6 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   98ed352c91f8b0ba667315acdfee97f3d83fd431eb6ec7af3ce4d28014c6af87.
 
 - 2026-09-16T08:23:28+00:00: Heartbeat by asb_ar1232_lifecycle_router.
+
+- 2026-09-16T08:23:41+00:00: Recorded command exit 0; command argv SHA-256
+  bdca46b494f0fddb8ded41745d329fda98fbd63de6b3664848c3e6c04f0c524c.
