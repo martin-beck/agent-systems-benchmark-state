@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T18:03:23+00:00",
+  "updated_at": "2026-09-16T18:04:43+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -273,3 +273,6 @@ Implementation has not started. Read the linked plan before claiming.
   digest, validity-window, and route binding checks; AgentStatus now requires status authorization.
   Auth 11/11 and control authz 3/3 passed. One combined cargo command had invalid multiple TESTNAME
   syntax; corrected with separate runs.
+
+- 2026-09-16T18:04:43+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
