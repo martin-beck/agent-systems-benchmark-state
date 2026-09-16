@@ -9,7 +9,7 @@
     "AR-1230"
   ],
   "id": "AR-1232",
-  "next_action": "Full locked workspace gate passed on current branch; run independent exact-head review of lifecycle/replay changes and prepare PR after descendant egress evidence is confirmed or explicitly bounded.",
+  "next_action": "Native descendant-egress harness now passes 6/6 with explicit ASB_TEST_ROOT at abc0317; run full locked workspace and policy/privacy gates, then obtain independent exact-head review. Native capability must remain explicit in CI.",
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "abc031720e438e4a6dc8f2fa655c1343af7bbc3c",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 296,
+  "task_revision": 297,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T04:18:24+00:00",
+  "updated_at": "2026-09-16T04:20:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -775,3 +775,8 @@
 
 - 2026-09-16T04:18:24+00:00: Recorded command exit 0; command argv SHA-256
   39cf5398131881d6bebfeb6940a170dba53287cbad205a984f34c80a6dbe58e7.
+
+- 2026-09-16T04:20:21+00:00: abc0317 pushed signed+DCO. Focused native strict_replay_sandbox ran
+  with explicit ASB_TEST_ROOT and passed 6/6, including child provider-egress denial, authenticated
+  route environment, timeout, cancellation/reaping, command mismatch, and nonzero-child fail-closed
+  outcomes. Worktree clean; next action is full gates and independent review.
