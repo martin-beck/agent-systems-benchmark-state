@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1231](tasks/AR-1231-strict-replay-execution-seam.md): Strict replay execution and egress-isolation seam | Execute real agents through strict replay without provider egress or live fallback. | Integrate ProcessIsolationCapability with approved runtime sandbox/process launcher and add executor cancellation/restart transition tests. Current 84fd574 attests only NetworkPolicy::Deny and refuses missing capability; endpoint/route/cassette/attempt checks remain fail-closed. | asb_ar1231_publication |
+| P0 | [AR-1231](tasks/AR-1231-strict-replay-execution-seam.md): Strict replay execution and egress-isolation seam | Execute real agents through strict replay without provider egress or live fallback. | Publish narrowed typed strict-replay contract/executor PR from exact signed head 84fd574; runtime OS process supervision, descendant egress enforcement and lifecycle recovery are delegated to AR-1232. Run focused/full applicable gates, independent review, exact-head CI, merge and post-merge verification. | asb_ar1231_publication |
 | P0 | [AR-1232](tasks/AR-1232-sandboxed-replay-process-supervision.md): Sandboxed replay process supervision | Supervise strict replay adapters inside the approved network-denied sandbox. | Integrate strict replay launch consumer after AR-1231 merge; add sandbox child launch/cancel/restart/crash tests using SandboxBackend::spawn. Current 28e7cc5 exposes validated SandboxSpec network attestation; no provider egress is enabled by constructor. | asb_ar1232_sandbox_supervision |
 
 ## Open
