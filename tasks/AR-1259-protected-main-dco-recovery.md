@@ -10,16 +10,16 @@
   "next_action": "Promote and claim; create signed protected-main recovery preserving PR202 tree and parents, then run exact-main policy and all post-merge gates.",
   "observed_branch": "repair/pr202-protected-main-dco",
   "observed_dirty": 0,
-  "observed_head": "14b604fec262575496f8838db1456679b1b14bbf",
+  "observed_head": "b7d21e0839787a7c54561bdc0e65dc0b609b3d33",
   "owner": "asb_ar1259_signed_recovery",
   "plan": "../plans/AR-1259.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover a signed protected-main DCO boundary after the unsigned PR202 web merge.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Protected-main DCO recovery for PR202",
-  "updated_at": "2026-09-16T16:46:23+00:00",
+  "updated_at": "2026-09-16T16:46:31+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-dco-1259"
 }
 ---
