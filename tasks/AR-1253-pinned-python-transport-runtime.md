@@ -10,16 +10,16 @@
   "next_action": "Pin and validate exact source docker-library/python and source_revision python:3.13.15-slim-bookworm; add source/revision tamper negatives and rerun focused/full gates before review/publication.",
   "observed_branch": "feature/ar-1253-pinned-python-transport-runtime",
   "observed_dirty": 0,
-  "observed_head": "edbbb8cd822eb6258dc1ae1c18aabe831338be2a",
+  "observed_head": "b7797d05c1a12f4e5cdd8d7df2a7b26c72425052",
   "owner": "asb_ar1253_python_runtime",
   "plan": "../plans/AR-1253.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision pinned Python transport fixture runtime.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Provision pinned Python transport fixture runtime",
-  "updated_at": "2026-09-16T13:23:33+00:00",
+  "updated_at": "2026-09-16T13:23:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1253"
 }
 ---

@@ -54,7 +54,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1250` | `feature/ar-1250-mockagents-harness-extension` | `8a61b4672843` | 0 | behind 24, ahead 8 |
 | `agent-systems-benchmark-ar-1251` | `feature/ar-1251-mockagents-transport-sandbox` | `128ecddbfdb7` | 0 | behind 24, ahead 0 |
 | `agent-systems-benchmark-ar-1252` | `feature/ar-1252-approved-isolated-runner` | `1d0c3cd017e8` | 0 | behind 1, ahead 0 |
-| `agent-systems-benchmark-ar-1253` | `feature/ar-1253-pinned-python-transport-runtime` | `edbbb8cd822e` | 0 | behind 0, ahead 1 |
+| `agent-systems-benchmark-ar-1253` | `feature/ar-1253-pinned-python-transport-runtime` | `b7797d05c1a1` | 0 | behind 0, ahead 2 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 469, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 572, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 466, ahead 0 |
