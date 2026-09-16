@@ -24,20 +24,21 @@ Generated from local Git and GitHub. Do not edit.
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
 | #151 | `dependabot/cargo/serde-1.0.229@4cf44ffb2fba` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
+| #180 | `feature/ar-1110@d16d8d08f5d5` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(config): add provider-specific model catalog registry |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35038374423 | `d16d8d08f5d5` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 35038374400 | `d16d8d08f5d5` | pull_request | Huawei MIT source headers | in_progress:- |
+| 35038374393 | `d16d8d08f5d5` | pull_request | Formal assurance | in_progress:- |
+| 35038374390 | `d16d8d08f5d5` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35038374386 | `d16d8d08f5d5` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 35038374385 | `d16d8d08f5d5` | pull_request | Repository quality | in_progress:- |
+| 35038374377 | `d16d8d08f5d5` | pull_request | Rust verification | in_progress:- |
+| 35038374374 | `d16d8d08f5d5` | pull_request | Fault assurance | in_progress:- |
 | 35035953472 | `bd9e153a726c` | push | Hosted portability and native qualification | completed:success |
 | 35035953445 | `bd9e153a726c` | push | Emulated aarch64 portability | completed:success |
 | 35035953414 | `bd9e153a726c` | push | Fault assurance | completed:success |
 | 35035953410 | `bd9e153a726c` | push | Huawei MIT source headers | completed:success |
-| 35035953409 | `bd9e153a726c` | push | Formal assurance | completed:success |
-| 35035953408 | `bd9e153a726c` | push | Repository quality | completed:failure |
-| 35035953407 | `bd9e153a726c` | push | Rust verification | completed:failure |
-| 35035336578 | `f64985ad3502` | pull_request | Rust verification | completed:success |
-| 35035336489 | `f64985ad3502` | pull_request | Hosted portability and native qualification | completed:success |
-| 35035336360 | `f64985ad3502` | pull_request | Formal assurance | completed:success |
-| 35035336292 | `f64985ad3502` | pull_request | Huawei MIT source headers | completed:success |
-| 35035336203 | `f64985ad3502` | pull_request | Fault assurance | completed:success |
