@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision pinned Python transport fixture runtime.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Provision pinned Python transport fixture runtime",
-  "updated_at": "2026-09-16T13:36:33+00:00",
+  "updated_at": "2026-09-16T13:40:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1253"
 }
 ---
@@ -123,3 +123,6 @@ Keep runtime images, caches, provenance, and all test activity under `/srv/data/
   tree ed49266ea0a24423a4712894203f0a1472d4867e, signature G martin.beck2@gmx.de and DCO. Post-merge
   exact-main workflows: hosted and Huawei headers SUCCESS; AArch64, repository quality, fault, Rust,
   formal still in progress at update.
+
+- 2026-09-16T13:40:34+00:00: Recorded command exit 0; command argv SHA-256
+  7b1f359c884acec80a5995157f78141ba15a1f0a52d6a82f4f74102ba19240c2.
