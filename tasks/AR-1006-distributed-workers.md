@@ -9,16 +9,16 @@
     "AR-1001"
   ],
   "id": "AR-1006",
-  "next_action": "Repair worker-loss restart fencing: remove/revoke lease epoch or otherwise reject old completion after same-ID re-registration; add regression test, rerun gates, then request review before publication.",
+  "next_action": "Request independent review of exact head 23c9ba4, then open PR and run exact-head CI.",
   "owner": "asb_ar1006_distributed_workers",
   "plan": "../plans/AR-1006.md",
   "priority": "P3",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Schedule trials across native-capability workers while preserving per-host capacity meaning.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Coordinate distributed experiment workers",
-  "updated_at": "2026-09-16T12:30:18+00:00",
+  "updated_at": "2026-09-16T12:30:40+00:00",
   "worktree_key": "agent-systems-benchmark-distributed-workers"
 }
 ---
@@ -76,3 +76,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T12:30:18+00:00: Recorded command exit 0; command argv SHA-256
   df7082dea03bb6b76e1896a02121602a9c16d01240080b6c48a6d43940346120.
+
+- 2026-09-16T12:30:40+00:00: Review repair complete in signed+DCO commit 23c9ba4 pushed.
+  Coordinator::remove now expires every lease owned by the removed worker before allowing same-ID
+  registration; regression test proves an old completion remains StaleLease after re-registration.
+  Full asb-analysis package remains green: 28 tests, 5 doctests, clippy -D warnings, formatting and
+  diff checks. Prior review blocker is addressed; publication still awaits independent exact-head
+  review.

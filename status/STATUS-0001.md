@@ -1443,7 +1443,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P3 | [AR-1006](../tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | asb_ar1006_distributed_workers | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Repair worker-loss restart fencing: remove/revoke lease epoch or otherwise reject old completion after same-ID re-registration; add regression test, rerun gates, then request review before publication. |
+| P3 | [AR-1006](../tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | asb_ar1006_distributed_workers | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Request independent review of exact head 23c9ba4, then open PR and run exact-head CI. |
 
 ### Open (4)
 
