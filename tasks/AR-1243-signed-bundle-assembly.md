@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1243.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Build, sign, verify, and publish installable supervisor and sidecar runtime bundles.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Installable signed runtime bundle assembly",
-  "updated_at": "2026-09-16T09:21:45+00:00",
+  "updated_at": "2026-09-16T09:22:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1243"
 }
 ---
@@ -89,3 +89,6 @@ private material; do not alter host networking, firewall, credentials, or unrela
   dc1fe1d and all unrelated signed runtime history. Clean packaging work requires a fresh isolated
   branch from origin/main cherry-picking only dc1fe1d or reconstructing its scoped diff; no
   mixed-history publication.
+
+- 2026-09-16T09:22:28+00:00: Coordinator authorized resumption. Create isolated packaging worktree
+  from exact origin/main and preserve mixed historical branch; cherry-pick only scoped dc1fe1d.
