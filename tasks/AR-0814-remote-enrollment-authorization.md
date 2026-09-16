@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T17:42:26+00:00",
+  "updated_at": "2026-09-16T17:43:36+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -86,3 +86,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-16T17:42:26+00:00: Signed+DCO c5a8724 adds permission_for_call/authorize_call wiring for
   every ControlCall plus 3 focused authz tests passing. RemoteRole denies observer mutations and
   operator enrollment/revocation; invalid digests/generation and unknown fields fail closed.
+
+- 2026-09-16T17:43:36+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
