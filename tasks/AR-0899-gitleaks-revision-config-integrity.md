@@ -8,7 +8,7 @@
     "AR-0898"
   ],
   "id": "AR-0899",
-  "next_action": "Independent exact-head review of 6737552 complete diff; if approved, publish PR from clean tree and monitor exact-head CI.",
+  "next_action": "Monitor PR #198 exact head 6737552 until all required checks terminal; diagnose/fix any failure, then obtain independent approval before merge.",
   "observed_branch": "fix/gitleaks-revision-config-integrity",
   "observed_dirty": 0,
   "observed_head": "67375520c60a31a2277c535c1ee1eb051c5f9f5d",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve GitHub issue 118 by making local and CI Gitleaks scans deterministic and config changes fail closed.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "Align and harden Gitleaks execution",
-  "updated_at": "2026-09-16T12:00:11+00:00",
+  "updated_at": "2026-09-16T12:00:22+00:00",
   "worktree_key": "agent-systems-benchmark-gitleaks-revision-config-integrity"
 }
 ---
@@ -199,3 +199,9 @@ Implementation has not started. Read the linked plan before claiming.
   e026f08d40083c235fd2aa04ba57ab9c5b83e868609f40da901e0b6ec7734eeb.
 
 - 2026-09-16T12:00:11+00:00: Heartbeat by asb_ar0899_gitleaks.
+
+- 2026-09-16T12:00:22+00:00: Published PR #198 from clean exact head
+  67375520c60a31a2277c535c1ee1eb051c5f9f5d, base 128ecddbfdb7fcfff6e257adf3237b5866aca481. Required
+  checks started in runs 35093312517/12447/12475/12445/12515/12481; header and AWQ shadow checks
+  green. No merge authorized until all required exact-head checks and independent approval are
+  green.

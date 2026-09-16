@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0899](tasks/AR-0899-gitleaks-revision-config-integrity.md): Align and harden Gitleaks execution | Resolve GitHub issue 118 by making local and CI Gitleaks scans deterministic and config changes fail closed. | Independent exact-head review of 6737552 complete diff; if approved, publish PR from clean tree and monitor exact-head CI. | asb_ar0899_gitleaks |
+| P0 | [AR-0899](tasks/AR-0899-gitleaks-revision-config-integrity.md): Align and harden Gitleaks execution | Resolve GitHub issue 118 by making local and CI Gitleaks scans deterministic and config changes fail closed. | Monitor PR #198 exact head 6737552 until all required checks terminal; diagnose/fix any failure, then obtain independent approval before merge. | asb_ar0899_gitleaks |
 | P1 | [AR-1251](tasks/AR-1251-mockagents-transport-sandbox.md): Add MockAgents transport sandbox fixture | Add a bounded transport and sandbox fixture for MockAgents qualification. | Design and implement bounded transport/sandbox fixture for MockAgents tool-result, cancellation/backpressure, network-denial, cleanup, and arm64 evidence. | asb_ar1251_transport_sandbox |
 
 ## Open
