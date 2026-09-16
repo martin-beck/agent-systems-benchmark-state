@@ -7,7 +7,7 @@
     "AR-1232"
   ],
   "id": "AR-1244",
-  "next_action": "Monitor policy rerun 35081579191 and remaining PR193 checks at exact head 7ceb522; merge only after all green.",
+  "next_action": "Rebase PR193 onto current protected main 5a2c151, rerun exact-head CI/review, then signed merge.",
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "2543a4c213bc7a1f9b426cb8c0b95d815a0bf7e4",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish strict-replay supervision integration.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Publish AR-1232 strict-replay supervision",
-  "updated_at": "2026-09-16T10:07:09+00:00",
+  "updated_at": "2026-09-16T10:07:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1244-publish"
 }
 ---
@@ -125,3 +125,9 @@ mutation.
 
 - 2026-09-16T10:07:09+00:00: Recorded command exit 0; command argv SHA-256
   e3647890012e0a007588c0d7a82fb776c4e18aeaa5c11dc443aeee5420f39d42.
+
+- 2026-09-16T10:07:47+00:00: Independent review at 7ceb522: clean 16-file AR-1232 scope, diff check
+  clean, all commits SSH-signed with matching DCO, no unsigned commits. Two merge preflight failures
+  safely fail-closed: invalid pr-ref, then integration worktree not at approved base. Protected
+  origin/main advanced to 5a2c151 via PR195, making PR193 base c6db21e stale; rebase required before
+  merge.
