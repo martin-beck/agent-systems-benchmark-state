@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define offline tutorial steps and validate them against the ASB CLI grammar.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Tutorial contract and syntax validator",
-  "updated_at": "2026-09-16T04:02:17+00:00",
+  "updated_at": "2026-09-16T04:02:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1210"
 }
 ---
@@ -188,3 +188,6 @@ be required.
 - 2026-09-16T04:02:17+00:00: Header gate failure on PR #184 exact head c010553 was diagnosed from
   job 104659874611: tools/tutorials/__init__.py lacked adjacent Huawei 2026 and SPDX MIT lines 1-2.
   Added exact header in signed+DCO commit 984b2f8, pushed successfully, and verified worktree clean.
+
+- 2026-09-16T04:02:40+00:00: Recorded command exit 0; command argv SHA-256
+  9a72970976fd6993964f1b3eaefb353995cb549bf5a03287d85d10d2c8de97f2.
