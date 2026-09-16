@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T14:31:02+00:00",
+  "updated_at": "2026-09-16T14:31:24+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -110,3 +110,6 @@ Implementation has not started. Read the linked plan before claiming.
   server-name validation, fixed ASB ALPN, bounded TLS handshake, and fail-closed timeout/ALPN
   errors. Focused cargo test transport::tests::remote_ passed 2/2; clean product tree. Remaining:
   certificate-backed mTLS wire fixtures and TLS-to-frame integration tests.
+
+- 2026-09-16T14:31:24+00:00: Recorded command exit 0; command argv SHA-256
+  09d5f1e66350606b0cc270baba75b0b2729e3a0f32e4e96ebb228ef1c51bdd27.
