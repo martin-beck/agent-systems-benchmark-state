@@ -11,17 +11,17 @@
   "id": "AR-1268",
   "next_action": "Promote after dependency verification; define and implement the dependency-safe runtime/CLI replay transport boundary.",
   "observed_branch": "feature/ar-1268-replay-transport-boundary",
-  "observed_dirty": 2,
-  "observed_head": "69e8b064d3121a4bae1f672cdae9c0c8672000bc",
+  "observed_dirty": 0,
+  "observed_head": "bd2d95c5f4dd78facc429ed734b61d5f288355ef",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1268.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Break the strict-replay runtime/CLI dependency cycle with a shared transport contract.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Break strict-replay runtime/CLI dependency cycle",
-  "updated_at": "2026-09-16T22:47:04+00:00",
+  "updated_at": "2026-09-16T22:47:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1268-replay-transport"
 }
 ---
