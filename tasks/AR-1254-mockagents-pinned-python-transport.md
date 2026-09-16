@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify MockAgents through the pinned Python sandbox.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Qualify MockAgents through pinned Python transport",
-  "updated_at": "2026-09-16T13:48:35+00:00",
+  "updated_at": "2026-09-16T13:49:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1254"
 }
 ---
@@ -68,3 +68,6 @@ Keep fixtures, runtimes, caches, and evidence under `/srv/data/projects`.
   input negatives. Existing tests cover only synthetic ordering/cleanup and non-executable README
   rejection. Commit 8b074286 is SSH-signed/DCO and diff-clean, but head is not review-ready; no
   PR/merge authorized.
+
+- 2026-09-16T13:49:40+00:00: Recorded command exit 0; command argv SHA-256
+  124618df5c7d6d69866a1e2bdd93941abdab91e1f4701499547dba8bf0372494.
