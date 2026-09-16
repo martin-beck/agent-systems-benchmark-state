@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1252-approved-isolated-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T14:51:12+00:00",
+  "claim_expires": "2026-09-16T14:52:44+00:00",
   "depends_on": [
     "AR-0003"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T12:52:41+00:00",
+  "updated_at": "2026-09-16T12:52:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -286,3 +286,5 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
   pass; source policy and diff checks pass. Live Python-image network-none and MockAgents
   artifact-version probes pass. Signed+DCO head d5f21ce pushed. AR-1251 can now consume the pinned
   Python image after independent review/CI.
+
+- 2026-09-16T12:52:44+00:00: Heartbeat by asb_ar1252_isolated_runner.
