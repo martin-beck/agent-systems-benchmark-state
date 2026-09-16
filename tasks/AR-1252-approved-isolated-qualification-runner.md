@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:08:02+00:00",
+  "updated_at": "2026-09-16T11:08:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -60,3 +60,6 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
   listing. Initial wrapper probe failed exit 125 because Docker rejects --pid private; fixed by
   relying on Docker default private PID namespace. Signed+DCO commit 8014ef7 pushed. Wrapper
   positive /bin/true run now exits 0; command output is sanitized to status/exit/elapsed.
+
+- 2026-09-16T11:08:20+00:00: Recorded command exit 0; command argv SHA-256
+  065377320539a3ee25fafdf9cd8d154a4cd9cbeca95496fc25b5853eabf4db48.
