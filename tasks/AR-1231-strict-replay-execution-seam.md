@@ -9,7 +9,7 @@
     "AR-1230"
   ],
   "id": "AR-1231",
-  "next_action": "Add process-launch enforcement using approved runtime sandbox seam plus cancellation/restart tests; current f1f4723 authenticates route and rejects non-loopback endpoints but does not yet enforce OS-level child egress.",
+  "next_action": "Integrate ProcessIsolationCapability with approved runtime sandbox/process launcher and add cancellation/restart lifecycle tests. Current f82a7ca refuses construction without an explicit verified capability; endpoint policy and route/cassette/attempt binding remain fail-closed.",
   "observed_branch": "feature/ar-1231",
   "observed_dirty": 0,
   "observed_head": "f82a7ca859a4322e328eaea8db909d3aed15bf7e",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents through strict replay without provider egress or live fallback.",
-  "task_revision": 101,
+  "task_revision": 102,
   "title": "Strict replay execution and egress-isolation seam",
-  "updated_at": "2026-09-16T02:06:43+00:00",
+  "updated_at": "2026-09-16T02:07:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1231"
 }
 ---
@@ -284,3 +284,10 @@
 
 - 2026-09-16T02:06:43+00:00: Recorded command exit 0; command argv SHA-256
   39cf5398131881d6bebfeb6940a170dba53287cbad205a984f34c80a6dbe58e7.
+
+- 2026-09-16T02:07:04+00:00: Added explicit ProcessIsolationCapability gate: StrictReplayExecutor
+  now requires Some(Verified) before constructing StrictReplayService, so declarative endpoint
+  validation cannot be mistaken for OS-level egress enforcement. Added bounded ReplayLifecycle
+  states for future cancellation/restart integration; focused strict_replay tests and Clippy
+  warnings-denied pass. Signed DCO commit f82a7ca pushed; clean worktree. Prior exit-1 apply_patch
+  context mismatch was corrected and recorded.

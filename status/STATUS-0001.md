@@ -1353,7 +1353,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md): Strict replay execution and egress-isolation seam | asb_ar1231_replay_seam | Execute real agents through strict replay without provider egress or live fallback. | Add process-launch enforcement using approved runtime sandbox seam plus cancellation/restart tests; current f1f4723 authenticates route and rejects non-loopback endpoints but does not yet enforce OS-level child egress. |
+| P0 | [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md): Strict replay execution and egress-isolation seam | asb_ar1231_replay_seam | Execute real agents through strict replay without provider egress or live fallback. | Integrate ProcessIsolationCapability with approved runtime sandbox/process launcher and add cancellation/restart lifecycle tests. Current f82a7ca refuses construction without an explicit verified capability; endpoint policy and route/cassette/attempt binding remain fail-closed. |
 
 ### Open (14)
 
