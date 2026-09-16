@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Regenerate contract schemas/docs and add rotation/revocation CLI integration audit fixtures.",
+  "next_action": "Run full fmt, clippy, workspace, policy and privacy gates; prepare exact clean head for independent review.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "35cffababeacec79f8eed63b187ad1caaa528146",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T17:52:44+00:00",
+  "updated_at": "2026-09-16T17:52:59+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -175,3 +175,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T17:52:37+00:00: Recorded command exit 0; command argv SHA-256
   8f464360d3700127f84115ec98d050dcd332bf7727935758c8f17773267c2087.
+
+- 2026-09-16T17:52:59+00:00: Signed+DCO 35cffab documents explicit pairing, credential-free
+  identity-store rules, and role/principal/request digest CLI ceremony; command metadata now
+  requires scoped auth options. Tutorial validator passed and auth dispatch tests 2/2 passed.
+  Worktree clean.
