@@ -12,16 +12,16 @@
   "next_action": "Promote and claim after reconciliation; wire replay_plan through runtime-issued StrictReplayLaunchBridge spawn and prove bounded transport lifecycle, egress denial, cancellation, cleanup, and no-fallback.",
   "observed_branch": "feature/ar-1260-runtime-owned-strict-replay-integration",
   "observed_dirty": 0,
-  "observed_head": "0000000000000000000000000000000000000000",
+  "observed_head": "0a808a635d85fdc4a43b575e3711ef23b38089e3",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1260.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate strict replay with runtime-owned attestation and supervised sandbox execution.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Runtime-owned strict-replay integration",
-  "updated_at": "2026-09-16T20:27:37+00:00",
+  "updated_at": "2026-09-16T20:27:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1260-runtime"
 }
 ---
