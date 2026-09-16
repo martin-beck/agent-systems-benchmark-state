@@ -11,7 +11,7 @@
   "id": "AR-1265",
   "next_action": "Integrate this opaque authority into the CLI consumer and prove supervised cassette request/response plus lifecycle/egress/cancellation cleanup; then run full gates.",
   "observed_branch": "feature/ar-1265-runtime-owned-replay-entrypoint",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "c6794672fd8c4b1d774fc623d01eb7fb2fc3a6d7",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1265.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a real runtime-owned strict-replay CLI entrypoint.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Runtime-owned strict-replay CLI entrypoint",
-  "updated_at": "2026-09-16T22:22:34+00:00",
+  "updated_at": "2026-09-16T22:22:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1265-runtime-replay-entrypoint"
 }
 ---
