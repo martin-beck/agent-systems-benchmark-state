@@ -9,17 +9,17 @@
   "id": "AR-0859",
   "next_action": "Provide an approved immutable Python 3.11 runtime/container image digest, or a reviewed interpreter artifact matching the live qualification identity contract; wheel closure is now complete but live test rejects the managed interpreter identity.",
   "observed_branch": "feature/openjiuwen-live",
-  "observed_dirty": 1,
-  "observed_head": "cceb76f436f8918786f610afdf20ba99fbd87d34",
+  "observed_dirty": 0,
+  "observed_head": "fb6a57217033b495d66d835c4b175899d9f4b0fb",
   "owner": "asb_ar0859_runtime_requal",
   "plan": "../plans/AR-0859.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 271,
+  "task_revision": 272,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-16T07:21:47+00:00",
+  "updated_at": "2026-09-16T07:21:55+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
