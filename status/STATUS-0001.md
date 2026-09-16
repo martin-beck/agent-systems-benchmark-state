@@ -12,9 +12,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 12 |
+| **Open** | Dependency-ready and available to claim | 13 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 9 |
-| **Planned** | Defined work awaiting promotion or dependencies | 68 |
+| **Planned** | Defined work awaiting promotion or dependencies | 67 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 163 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -328,7 +328,7 @@ flowchart LR
         AR_1232["AR-1232 - Blocked"]:::status_blocked
         AR_1233["AR-1233 - Blocked"]:::status_blocked
         AR_1234["AR-1234 - Blocked"]:::status_blocked
-        AR_1235["AR-1235 - Planned"]:::status_planned
+        AR_1235["AR-1235 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1372,7 +1372,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0897](../tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | asb_ar0897_merge_integrity | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Hold PR 126 at bd6f450; after AR-0877 and AR-0909 integrate, rebase once and require fresh all-green exact-head CI before merge. |
 
-### Open (12)
+### Open (13)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1388,6 +1388,7 @@ flowchart LR
 | P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | Repair/rebase the fail-closed TLA provenance pin, then rerun PR #119 exact-head CI; do not merge. |
 | P1 | [AR-0859](../tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Unclaimed | Qualify pinned OpenJiuwen live execution. | Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI. |
 | P1 | [AR-0908](../tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | Unclaimed | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Hold PR #125 unchanged; shared formal asset and native-runner pin owners must repair their gates before a fresh exact-head run. |
+| P1 | [AR-1235](../tasks/AR-1235-goose-diagnostic-fixture-portability.md): Portable Goose diagnostic fixture | Unclaimed | Repair Goose diagnostic fixture portability under emulated AArch64. | Planned from post-merge AArch64 run 35060286408. Reproduce exit 127 in diagnostic_and_symlink_fail_closed, classify fixture/runtime cause, then add a deterministic portable fixture without weakening fail-closed assertions. |
 
 ### Blocked (9)
 
@@ -1403,7 +1404,7 @@ flowchart LR
 | P1 | [AR-0890](../tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Unclaimed | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. |
 | P1 | [AR-0896](../tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | Unclaimed | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun failed Repository quality workflow 34339927858 on unchanged main; if failure repeats, isolate and repair test-state ownership before any feature work. |
 
-### Planned (68)
+### Planned (67)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1468,7 +1469,6 @@ flowchart LR
 | P1 | [AR-1014](../tasks/AR-1014-tui-measurement-selection.md): Add grouped measurement selection to the TUI | Unclaimed | Let users select grouped measurements from the standalone ASB TUI. | After AR-1025, AR-1033 and ASB AR-1037 complete, implement the bounded selector with precise v1.3 validation UX, generic v1.2 fallback and canonical plan round trips only in standalone asb-tui. |
 | P1 | [AR-1015](../tasks/AR-1015-csb-measurement-adapter.md): Add a pinned, provenance-safe CSB measurement adapter | Unclaimed | Import qualified CSB resource, system-statistics, and contention measurements into ASB. | Inventory pinned CSB signals and implement only contract-compatible adapters after the catalog is accepted. |
 | P1 | [AR-1027](../tasks/AR-1027-asb-tui-verified-release.md): Publish the verified asb-tui release | Unclaimed | Create and independently promote the first installable signed asb-tui release channel. | Publish the first verified asb-tui release only after ASB release, complete UI/install qualification and exact cross-repository evidence are done. |
-| P1 | [AR-1235](../tasks/AR-1235-goose-diagnostic-fixture-portability.md): Portable Goose diagnostic fixture | Unclaimed | Repair Goose diagnostic fixture portability under emulated AArch64. | Planned from post-merge AArch64 run 35060286408. Reproduce exit 127 in diagnostic_and_symlink_fail_closed, classify fixture/runtime cause, then add a deterministic portable fixture without weakening fail-closed assertions. |
 | P2 | [AR-0602](../tasks/AR-0602-csb-monitoring-contention.md): Validate CSB monitoring and contention diagnostics | Unclaimed | Validate and integrate optional CSB resource monitoring and kernel-contention evidence without double counting or overstating support. | Audit CSB monitoring using native x86_64 oracles and required pinned QEMU AArch64 portable mapping/lifecycle checks; keep native ARM64 counters and performance as optional future evidence. |
 | P2 | [AR-0705](../tasks/AR-0705-native-debian-capacity.md): Provide native Debian capacity | Unclaimed | Qualify booted Debian on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 Debian and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
 | P2 | [AR-0706](../tasks/AR-0706-native-openeuler-capacity.md): Provide native openEuler capacity | Unclaimed | Qualify booted openEuler on native x86_64 and applicable QEMU AArch64; keep native ARM64 optional. | Qualify native x86_64 openEuler and required applicable pinned QEMU AArch64 behavior; document genuine native ARM64 as optional future evidence. |
@@ -1545,3 +1545,4 @@ flowchart LR
 | P1 | [AR-0102](../tasks/AR-0102-process-runtime.md): Implement process execution and cancellation | Unclaimed | Run real client processes with bounded I/O, monotonic deadlines and process-tree ownership. | Release done after successful reviewed integration, exact-main local/hosted checks, synchronized refs and live state doctor. |
 | P1 | [AR-0103](../tasks/AR-0103-sandbox-runtime.md): Implement isolated execution and resource leases | Unclaimed | Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets. | Release AR-0103 done after exact-main local and hosted post-merge verification. |
 | P1 | [AR-0104](../tasks/AR-0104-durable-results.md): Implement durable run storage and recovery | Unclaimed | Persist manifests, event streams, artifact hashes and recoverable execution intentions. | Await exact-head PR 6 CI and independent immutable-head review; repair findings before coordinator integration. |
+| P1 | [AR-0201](../tasks/AR-0201-portable-metrics.md): Collect portable system and session metrics | Unclaimed | Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling. | Run final state reconcile/live doctor/full validation, then release AR-0201 done and explicitly return the Cargo workspace/lock fence. |
