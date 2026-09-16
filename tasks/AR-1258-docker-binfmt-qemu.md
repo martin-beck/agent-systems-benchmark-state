@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1258.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provision and verify Docker binfmt/QEMU for multiarch qualification.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Provision Docker binfmt/QEMU capability",
-  "updated_at": "2026-09-16T14:07:54+00:00",
+  "updated_at": "2026-09-16T14:08:41+00:00",
   "worktree_key": "agent-systems-benchmark-docker-binfmt-qemu"
 }
 ---
@@ -74,3 +74,7 @@ Provide the independent Docker binfmt/QEMU capability required by multiarch qual
   docker0 veth: Device does not exist. No binfmt/QEMU capability or image qualification claim is
   made; resume requires repairing approved Docker binfmt registration and bridge/network
   prerequisites, then rerun immutable digest/signature/license checks.
+
+- 2026-09-16T14:08:41+00:00: Coordinator reports host qemu-aarch64 enabled; evaluate approved
+  digest-pinned tonistiigi/binfmt registration through mediated sudo Docker and validate arm64
+  execution.
