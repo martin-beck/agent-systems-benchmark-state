@@ -22,20 +22,20 @@ Generated from local Git and GitHub. Do not edit.
 | #151 | `dependabot/cargo/serde-1.0.229@c926edfde377` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #197 | `feature/ar-1248-strict-replay-cli-contract@cebe8efc19a1` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): define strict offline replay consumer contract |
-| #201 | `feature/ar-1253-pinned-python-transport-runtime@b7797d05c1a1` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(runner): pin Python transport runtime provenance |
+| #201 | `feature/ar-1253-pinned-python-transport-runtime@b7797d05c1a1` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | feat(runner): pin Python transport runtime provenance |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35101828598 | `b7797d05c1a1` | pull_request | Fault assurance | in_progress:- |
+| 35101828598 | `b7797d05c1a1` | pull_request | Fault assurance | completed:success |
 | 35101828550 | `b7797d05c1a1` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 35101828439 | `b7797d05c1a1` | pull_request | Formal assurance | in_progress:- |
-| 35101828423 | `b7797d05c1a1` | pull_request | Rust verification | in_progress:- |
-| 35101828369 | `b7797d05c1a1` | pull_request | Agent Workflow Quality shadow | in_progress:- |
-| 35101828337 | `b7797d05c1a1` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35101828423 | `b7797d05c1a1` | pull_request | Rust verification | completed:success |
+| 35101828369 | `b7797d05c1a1` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 35101828337 | `b7797d05c1a1` | pull_request | Hosted portability and native qualification | completed:success |
 | 35101828249 | `b7797d05c1a1` | pull_request | Repository quality | in_progress:- |
-| 35101828232 | `b7797d05c1a1` | pull_request | Huawei MIT source headers | in_progress:- |
+| 35101828232 | `b7797d05c1a1` | pull_request | Huawei MIT source headers | completed:success |
 | 35099645875 | `85bcd1e423a6` | push | Huawei MIT source headers | completed:success |
 | 35099645777 | `85bcd1e423a6` | push | Formal assurance | completed:success |
 | 35099645736 | `85bcd1e423a6` | push | Repository quality | completed:success |
