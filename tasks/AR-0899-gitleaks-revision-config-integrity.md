@@ -2,7 +2,7 @@
 {
   "branch": "fix/gitleaks-revision-config-integrity",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T13:36:55+00:00",
   "depends_on": [
     "AR-0003",
     "AR-0898"
@@ -12,15 +12,15 @@
   "observed_branch": "fix/gitleaks-revision-config-integrity",
   "observed_dirty": 0,
   "observed_head": "94def3b9c1abf2acdd41ccab19bb71038fd99953",
-  "owner": "",
+  "owner": "asb_ar0899_gitleaks",
   "plan": "../plans/AR-0899.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Resolve GitHub issue 118 by making local and CI Gitleaks scans deterministic and config changes fail closed.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Align and harden Gitleaks execution",
-  "updated_at": "2026-09-16T11:36:25+00:00",
+  "updated_at": "2026-09-16T11:36:55+00:00",
   "worktree_key": "agent-systems-benchmark-gitleaks-revision-config-integrity"
 }
 ---
@@ -52,3 +52,5 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-16T11:36:25+00:00: Worker process is no longer present; preserving signed head 94def3b and
   worktree evidence. Releasing claim for safe reassignment to continue tests, review, and
   publication.
+
+- 2026-09-16T11:36:55+00:00: Claimed by asb_ar0899_gitleaks.
