@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 161,
+  "task_revision": 162,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-16T05:45:53+00:00",
+  "updated_at": "2026-09-16T05:46:09+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -527,3 +527,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T05:45:53+00:00: Recorded command exit 0; command argv SHA-256
   dd082f3fa8aca86148d0676b4354ad2aa66d764382d03f1d7196d175f250751c.
+
+- 2026-09-16T05:46:09+00:00: Post-merge exact-main AArch64 run 35060286408 failed in existing
+  goose::tests::diagnostic_and_symlink_fail_closed: symlink diagnostic fixture returned Ok
+  GooseOutcome(status=Failed, exit_code=127) rather than expected diagnostic error, indicating
+  emulated-userspace fixture execution mismatch (likely /bin/sh/fixture launch), not a production
+  policy failure. No gate weakened or skipped. Created planned repair AR-1235 with scope limited to
+  deterministic Goose fixture portability; dependencies AR-0003, no owner/claim yet. AR-0897 remains
+  open pending AR-1235 repair and all post-merge workflows.
