@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 231,
+  "task_revision": 232,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T15:35:36+00:00",
+  "updated_at": "2026-09-16T15:36:22+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -716,3 +716,6 @@ Implementation has not started. Read the linked plan before claiming.
   successful, remaining checks in progress.
 
 - 2026-09-16T15:35:36+00:00: Heartbeat by asb_ar0813_remote_transport.
+
+- 2026-09-16T15:36:22+00:00: Recorded command exit 101; command argv SHA-256
+  5c8da9b34935360f7399b9d4b260d9a460b442f2f0ca08eddaee6e8f11776ef0.
