@@ -11,7 +11,7 @@
   "id": "AR-1232",
   "next_action": "Run full locked workspace gates on current clean head and extend strict replay sandbox harness with timeout/cancellation/restart/stale/duplicate child lifecycle evidence; preserve native capability skips as explicit.",
   "observed_branch": "feature/ar-1232",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "bc38cc343347350d232b4e0b885c8b7ecb4ecc44",
   "owner": "asb_ar1232_sandbox_supervision",
   "plan": "../plans/AR-1232.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 196,
+  "task_revision": 197,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T03:41:04+00:00",
+  "updated_at": "2026-09-16T03:41:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
