@@ -2,7 +2,7 @@
 {
   "branch": "fix/protected-main-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T09:39:23+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003",
     "AR-0897"
@@ -12,15 +12,15 @@
   "observed_branch": "DETACHED",
   "observed_dirty": 0,
   "observed_head": "eb0ad13f8b6e64b6ee46b92602a631ba0c96f9f4",
-  "owner": "asb_ar1242_merge_admission",
+  "owner": "",
   "plan": "../plans/AR-1242.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Prevent protected-main admission from creating unsigned GitHub merge commits.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Enforce signed protected-main admission",
-  "updated_at": "2026-09-16T09:09:23+00:00",
+  "updated_at": "2026-09-16T09:15:02+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-admission"
 }
 ---
@@ -89,3 +89,13 @@ It must not weaken native, formal, privacy, signature, DCO, exact-tree, or post-
   stale-base infrastructure, not fixture/product behavior.
 
 - 2026-09-16T09:09:23+00:00: Heartbeat by asb_ar1242_merge_admission.
+
+- 2026-09-16T09:15:02+00:00: AR-1242 complete. Added fail-closed protected merge settings fixtures
+  for every required field, actionable administrator guidance on settings-apply failure, and
+  documented forward-only signed recovery. Focused integration suite passed 9/9; signed+DCO commit
+  9db468cad9fc69bb05100842b49469c8ca3e988c published via PR191. Signed local merge
+  1e1b0f3a2fca87b4bf81e2c3bc4d8ea58a3d0bd0 has exact parents eb0ad13f/9db468c and exact tree
+  085c631; remote signature/DCO verified. All seven exact-main post-merge workflows succeeded:
+  35077565523, 35077565510, 35077565536, 35077565530, 35077565538, 35077565551, 35077565581.
+  Repository settings apply itself remains an external administrator operation and was not falsely
+  claimed changed.

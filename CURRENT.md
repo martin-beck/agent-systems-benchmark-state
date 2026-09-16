@@ -7,7 +7,6 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1242](tasks/AR-1242-protected-main-admission.md): Enforce signed protected-main admission | Prevent protected-main admission from creating unsigned GitHub merge commits. | Run fresh PR191 CI for rebased 9db468c and independently review; settings apply still needs admin authority. | asb_ar1242_merge_admission |
 | P0 | [AR-1243](tasks/AR-1243-signed-bundle-assembly.md): Installable signed runtime bundle assembly | Build, sign, verify, and publish installable supervisor and sidecar runtime bundles. | Implement reproducible supervisor/sidecar bundle assembly and explicit SSH signing using the project release workflow. | asb_ar1232_lifecycle_router |
 
 ## Open
@@ -178,6 +177,7 @@ Never edit this file directly.
 | P0 | [AR-1239](tasks/AR-1239-signed-runtime-bundle.md): Signed supervisor and sidecar runtime bundle | Package and sign the verified loopback supervisor and sidecar runtime payloads. | Implement asb-bundle-owned manifest/payload wiring for the supervisor and sidecar, then sign and verify the canonical bundle offline. | - |
 | P0 | [AR-1240](tasks/AR-1240-native-signed-bundle-fixture.md): Native signed-bundle supervisor fixture | Add native signed-bundle fixture and end-to-end supervisor isolation tests. | Extend native fixture invocation from helper lifecycle proof to authenticated cassette HTTP success plus provider/descendant denial and cleanup/non-interference matrix. | - |
 | P0 | [AR-1241](tasks/AR-1241-native-isolation-matrix.md): Native isolation negative and lifecycle matrix | Complete native signed-bundle isolation negative and lifecycle evidence. | Add provider/external/descendant egress denial and timeout/cancel/crash/non-interference tests for the signed native bundle. | - |
+| P0 | [AR-1242](tasks/AR-1242-protected-main-admission.md): Enforce signed protected-main admission | Prevent protected-main admission from creating unsigned GitHub merge commits. | Run fresh PR191 CI for rebased 9db468c and independently review; settings apply still needs admin authority. | - |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. | - |
 | P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. | - |
 | P1 | [AR-0004](tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. | - |
