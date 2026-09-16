@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0813](tasks/AR-0813-remote-control-transport.md): Add secure remote control transport | Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client. | Specify and implement an explicitly enabled authenticated remote transport for the frontend control API. | asb_ar0813_remote_transport |
+| P1 | [AR-0813](tasks/AR-0813-remote-control-transport.md): Add secure remote control transport | Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client. | Close remaining AR-0813 transport scope before publication: implement listener lifecycle with actual max-connection admission, bounded backpressure/keepalive/idle/rate/drain controls, reconnect revision/event replay without gaps or duplicate mutations, and fault tests for malformed/truncated/slow/half-open/reorder/packet-loss/reconnect/protocol-skew/IPv4/IPv6/partition cases; rerun full workspace gate after unrelated asb-metrics mismatch is repaired or explicitly qualified. | asb_ar0813_remote_transport |
 
 ## Open
 

@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0813",
-  "next_action": "Specify and implement an explicitly enabled authenticated remote transport for the frontend control API.",
+  "next_action": "Close remaining AR-0813 transport scope before publication: implement listener lifecycle with actual max-connection admission, bounded backpressure/keepalive/idle/rate/drain controls, reconnect revision/event replay without gaps or duplicate mutations, and fault tests for malformed/truncated/slow/half-open/reorder/packet-loss/reconnect/protocol-skew/IPv4/IPv6/partition cases; rerun full workspace gate after unrelated asb-metrics mismatch is repaired or explicitly qualified.",
   "observed_branch": "feature/remote-control-transport",
   "observed_dirty": 0,
   "observed_head": "f971b4dfe49bf6be6bbcd6b26b29e2634de5e747",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T14:43:22+00:00",
+  "updated_at": "2026-09-16T14:43:34+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -223,3 +223,15 @@ Implementation has not started. Read the linked plan before claiming.
   exact-head review and PR/CI; full workspace gate remains blocked by that unrelated failure.
 
 - 2026-09-16T14:43:22+00:00: Heartbeat by asb_ar0813_remote_transport.
+
+- 2026-09-16T14:43:34+00:00: Independent review of exact signed/DCO head f971b4d found TLS
+  1.3/rustls mTLS with ASB ALPN, explicit non-wildcard bind validation, bounded handshake, TLS frame
+  round-trip, oversized-frame and slow-peer tests. However complete AR-0813 plan remains unmet: only
+  config/accept/connect primitives exist, with no actual listener lifecycle, max_connections
+  admission, backpressure/keepalive/idle deadlines/rate limiting/graceful drain, reconnect durable
+  revision/event replay, runner continuation semantics, or fault coverage for malformed/truncated
+  frames, half-open/packet loss/reorder, reconnect storms, protocol skew/downgrade, port
+  reuse/address changes, IPv4/IPv6, and partitions. Full workspace cargo test is blocked by
+  unrelated pre-existing asb-metrics kernel.rs:713 expectation mismatch (expected MalformedEvidence,
+  got ProbeRejected); this is not an AR-0813 defect but means full-gate evidence is incomplete.
+  Focused asb-control 41 tests and clippy pass; tree is clean; no PR/publication authorized.
