@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-1252",
-  "next_action": "Request PR #200 refresh to exact head 1d0c3cd; monitor all exact-head checks to terminal.",
+  "next_action": "Monitor post-merge workflows for main 85bcd1e until terminal; verify exact tree/signature/DCO/policy, then release AR-1252 done.",
   "observed_branch": "feature/ar-1252-approved-isolated-runner",
   "observed_dirty": 0,
   "observed_head": "1d0c3cd017e8d486231dabbd1c590b654f74cc9c",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 110,
+  "task_revision": 111,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T13:05:32+00:00",
+  "updated_at": "2026-09-16T13:05:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -336,3 +336,11 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
   dba6cdbbb102ea853ecaa43ea3dcb3c60b8f0ca56b2e813e536013dc321ae814.
 
 - 2026-09-16T13:05:32+00:00: Heartbeat by asb_ar1252_isolated_runner.
+
+- 2026-09-16T13:05:43+00:00: PR #200 merged via signed local integration as
+  85bcd1e423a6bd7da29a29cac4dbdcf9e4822837. Exact parents 4e2820bffe93234d02ca39b59067bf4442b08f95
+  and 1d0c3cd017e8d486231dabbd1c590b654f74cc9c; exact reviewed tree
+  c43eef8c950dc88ac6f545bc01f9e94896d4144e; remote ref, SSH signature and DCO verified. All
+  refreshed PR checks green after rebasing stale base. Post-merge runs started: 35099645723 Rust,
+  35099645731 hosted portability, 35099645713 AArch64, 35099645777 formal, 35099645699 fault
+  assurance, 35099645736 repository quality; headers 35099645875 green.
