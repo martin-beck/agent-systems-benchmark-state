@@ -7,7 +7,7 @@
     "AR-1238"
   ],
   "id": "AR-1263",
-  "next_action": "Post-merge DCO recovery required: protected main ebfa37023e56 merged PR #205 but merge commit lacks Signed-off-by and GitHub RSA key is unverified locally. Preserve feature 0acbc1d and rerun exact-main policy after signed recovery.",
+  "next_action": "Complete: feature 0acbc1d tree equals signed protected main 69e8b064; AR-1264 recovery and all seven exact-main workflows SUCCESS. Preserve PR205 and recovery traceability.",
   "observed_branch": "fix/ar-1263-sandbox-scope-classification",
   "observed_dirty": 0,
   "observed_head": "0acbc1d1a8bf43a226fda503fbd76f8afd48eb07",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stabilize intermittent sandbox scope classification in the quality gate.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Stabilize sandbox scope classification gate",
-  "updated_at": "2026-09-16T22:07:52+00:00",
+  "updated_at": "2026-09-16T22:08:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1263-sandbox-stability"
 }
 ---
@@ -192,3 +192,12 @@ fail-closed test/runner behavior and preserve the original semantic assertions.
   terminal post-merge evidence.
 
 - 2026-09-16T22:07:52+00:00: Claimed by asb_ar1263_sandbox_stability.
+
+- 2026-09-16T22:08:19+00:00: Closure verification after AR-1264: feature ref
+  origin/fix/ar-1263-sandbox-scope-classification remains 0acbc1d1a8bf43a226fda503fbd76f8afd48eb07;
+  its tree 1d0a5577da8cd2d6199d20980d951c468205c934 exactly equals signed origin/main
+  69e8b064d3121a4bae1f672cdae9c0c8672000bc tree. Main recovery has parents
+  ebfa37023e56269b8299254b535be60f3cf1d186 and 539a9298062027902288aa46244ba060d63d5637, SSH
+  signature/DCO verified. PR #205 feature checks all green and all seven post-merge workflows for
+  signed recovery succeeded: 35155265340, 35155265432, 35155265435, 35155265425, 35155265446,
+  35155265370, 35155265396. Previous DCO blocker is resolved by AR-1264.
