@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1265-runtime-owned-replay-entrypoint",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T00:30:05+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1265-runtime-owned-replay-entrypoint",
   "observed_dirty": 0,
   "observed_head": "fcc3f49815d17f383e6c2d398c790b5b9203c78f",
-  "owner": "asb_ar1024_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1265.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide a real runtime-owned strict-replay CLI entrypoint.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Runtime-owned strict-replay CLI entrypoint",
-  "updated_at": "2026-09-16T22:30:15+00:00",
+  "updated_at": "2026-09-16T22:31:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1265-runtime-replay-entrypoint"
 }
 ---
@@ -143,3 +143,7 @@ unmerged implementation is not an input; preserve its review as the reason this 
   asb-runtime 40/40, fmt pass. Remaining end-to-end
   cassette/egress/cancel/restart/timeout/crash/stale/duplicate/no-fallback tests are blocked on the
   context-bearing command seam.
+
+- 2026-09-16T22:31:51+00:00: AR-1265 implementation seam is preserved in signed commits fcc3f49 and
+  remains blocked because existing CLI dispatch lacks runtime authority context. Successor AR-1266
+  owns the context-bearing command integration.
