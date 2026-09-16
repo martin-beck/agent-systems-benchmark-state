@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1264-pr205-merge-integrity",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T23:44:56+00:00",
   "depends_on": [
     "AR-0897"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "repair/ar-1264-pr205-merge-integrity",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "asb_ar1264_merge_integrity",
   "plan": "../plans/AR-1264.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Recover signed protected-main integration after PR #205.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Recover signed integration after PR #205",
-  "updated_at": "2026-09-16T21:44:42+00:00",
+  "updated_at": "2026-09-16T21:44:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1264-merge-integrity"
 }
 ---
@@ -31,3 +31,5 @@ main gates.
 
 - 2026-09-16T21:44:42+00:00: AR-0897 signed recovery is done; AR-1263 merge integrity incident
   preserved as evidence and this independent forward-only repair is dependency-ready.
+
+- 2026-09-16T21:44:56+00:00: Claimed by asb_ar1264_merge_integrity.
