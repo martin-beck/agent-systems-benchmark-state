@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add a bounded transport and sandbox fixture for MockAgents qualification.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Add MockAgents transport sandbox fixture",
-  "updated_at": "2026-09-16T18:53:22+00:00",
+  "updated_at": "2026-09-16T18:53:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1251"
 }
 ---
@@ -78,3 +78,6 @@ preserve privacy, network-denial, signature, DCO, and exact-tree gates.
 
 - 2026-09-16T18:53:15+00:00: Recorded command exit 0; command argv SHA-256
   5890d7a951ec5c90bdec05cd043cd2403d00e0d12a5208d4465547ace0902071.
+
+- 2026-09-16T18:53:26+00:00: Recorded command exit 0; command argv SHA-256
+  51478256e272a6222c916609bb46b2cf62c0bdfe69ca7d6220b4f35f65d2e8c8.
