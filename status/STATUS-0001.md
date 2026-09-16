@@ -1491,7 +1491,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md): Runtime-owned strict-replay CLI entrypoint | asb_ar1024_lifecycle_router | Provide a real runtime-owned strict-replay CLI entrypoint. | Integrate this opaque authority into the CLI consumer and prove supervised cassette request/response plus lifecycle/egress/cancellation cleanup; then run full gates. |
+| P0 | [AR-1265](../tasks/AR-1265-runtime-owned-replay-entrypoint.md): Runtime-owned strict-replay CLI entrypoint | asb_ar1024_lifecycle_router | Provide a real runtime-owned strict-replay CLI entrypoint. | Commit runtime-owned launch bundle after dead-code fix; then add executable replay dispatch and lifecycle tests. |
 
 ### Open (6)
 
@@ -1629,3 +1629,4 @@ flowchart LR
 | P0 | [AR-0899](../tasks/AR-0899-gitleaks-revision-config-integrity.md): Align and harden Gitleaks execution | Unclaimed | Resolve GitHub issue 118 by making local and CI Gitleaks scans deterministic and config changes fail closed. | Monitor post-merge workflows for main 3e8d589 until terminal; verify exact tree/signature/DCO/policy, then release AR-0899 done. |
 | P0 | [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md): Harden the asb-tui release lifecycle contract | Unclaimed | Turn the tested unverified asb-tui lifecycle boundary into a release-safe delegated contract. | Wait for AR-1030 PR 11 to merge, rebase signed+DCO AR-1022 PR 10 onto exact new asb-tui main, reconcile overlaps to source_only_unverified, rerun full gates and exact-head CI, then integrate by protected admin merge only when all requirements are green. |
 | P0 | [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md): Add the ASB frontend capabilities command | Unclaimed | Publish the ASB capability negotiation command required by the standalone frontend. | Monitor exact head d60d2351004479998608f2141730849366351373 on PR 128, repair any CI failure, obtain independent review, merge through policy, and run post-merge verification. |
+| P0 | [AR-1030](../tasks/AR-1030-ratatui-dependency-closure.md): Resolve the Ratatui dependency closure | Unclaimed | Make the maintained Ratatui release consumable by standalone asb-tui without hiding supply-chain exceptions. | Register/authorize a GitHub-recognized signing identity for exact head c0dfdd3114741f9415a124f4d4995dac354b4260, or explicitly approve a GitHub rebase/squash rewrite; then rerun exact-head gates and merge PR #11. |

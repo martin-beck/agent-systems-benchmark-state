@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1265",
-  "next_action": "Integrate this opaque authority into the CLI consumer and prove supervised cassette request/response plus lifecycle/egress/cancellation cleanup; then run full gates.",
+  "next_action": "Commit runtime-owned launch bundle after dead-code fix; then add executable replay dispatch and lifecycle tests.",
   "observed_branch": "feature/ar-1265-runtime-owned-replay-entrypoint",
   "observed_dirty": 2,
   "observed_head": "301b9e1e8c1a522bd4ac53ddb0600b12928d90e8",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a real runtime-owned strict-replay CLI entrypoint.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Runtime-owned strict-replay CLI entrypoint",
-  "updated_at": "2026-09-16T22:26:28+00:00",
+  "updated_at": "2026-09-16T22:26:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1265-runtime-replay-entrypoint"
 }
 ---
@@ -85,3 +85,9 @@ unmerged implementation is not an input; preserve its review as the reason this 
 
 - 2026-09-16T22:26:28+00:00: Recorded command exit 101; command argv SHA-256
   4d794e29b61dffc224f97f0280c573e3ed07695dad1bba348b4bd20627fb7998.
+
+- 2026-09-16T22:26:54+00:00: Focused cargo test initially failed at runtime replay_entrypoint.rs:
+  issue_launch was unused under -D warnings (exit 101). This is a compile hygiene failure from the
+  new runtime seam, not a product behavior failure; added a narrow dead_code allowance because the
+  runtime-only issuer is intentionally consumed by a later CLI entrypoint integration. Rerun focused
+  tests now.
