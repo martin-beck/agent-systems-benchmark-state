@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1232",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T05:48:55+00:00",
+  "claim_expires": "2026-09-16T05:50:14+00:00",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 227,
+  "task_revision": 228,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T03:49:57+00:00",
+  "updated_at": "2026-09-16T03:50:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -602,3 +602,5 @@
 
 - 2026-09-16T03:49:57+00:00: Recorded command exit 0; command argv SHA-256
   a0c1894e1b7e88db8befa219b71247064183659f83047612c0490dfd28feb604.
+
+- 2026-09-16T03:50:14+00:00: Heartbeat by asb_ar1232_sandbox_supervision.
