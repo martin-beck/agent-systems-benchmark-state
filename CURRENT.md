@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1272](tasks/AR-1272-authenticated-cassette-backend.md): Authenticated immutable cassette backend | Bind immutable cassette content to a runtime-authenticated replay backend handle. | Promote after dependency verification; implement runtime-authenticated immutable cassette backend content binding and real supervised replay. | asb_ar1024_lifecycle_router |
+| P0 | [AR-1272](tasks/AR-1272-authenticated-cassette-backend.md): Authenticated immutable cassette backend | Bind immutable cassette content to a runtime-authenticated replay backend handle. | Issue runtime-owned cassette content handle and bind CLI actual replay service; add real request/response, egress/no-fallback, cancellation/restart/timeout/crash cleanup fixtures. | asb_ar1024_lifecycle_router |
 
 ## Open
 

@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1272",
-  "next_action": "Promote after dependency verification; implement runtime-authenticated immutable cassette backend content binding and real supervised replay.",
+  "next_action": "Issue runtime-owned cassette content handle and bind CLI actual replay service; add real request/response, egress/no-fallback, cancellation/restart/timeout/crash cleanup fixtures.",
   "observed_branch": "feature/ar-1272-authenticated-cassette-backend",
   "observed_dirty": 0,
   "observed_head": "d7d17b78e8f1176f2e776e46707f7806f270b6f6",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind immutable cassette content to a runtime-authenticated replay backend handle.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Authenticated immutable cassette backend",
-  "updated_at": "2026-09-16T23:22:31+00:00",
+  "updated_at": "2026-09-16T23:22:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1272-cassette-backend"
 }
 ---
@@ -53,3 +53,10 @@ paths as authority.
 
 - 2026-09-16T23:22:24+00:00: Recorded command exit 0; command argv SHA-256
   375ef5fde325e7d90fd05af238d4ed1e14366dbb1fe80d3479bc9e4725bee98e.
+
+- 2026-09-16T23:22:50+00:00: Signed checkpoint d7d17b7 adds dependency-neutral CassetteContentRefV1
+  with schema/generation/sha256/exact-size validation, path-free identities, 16 MiB bound, and
+  positive/negative tests. asb-core suite passes 18/18; fmt pass; product tree clean. Initial test
+  failure accepted /tmp-like generation because allowed-character validation was absent; fixed by
+  restricting generation to bounded alphanumeric/dot/underscore/dash and reran green. Runtime
+  content handle and real supervised CLI replay remain next.
