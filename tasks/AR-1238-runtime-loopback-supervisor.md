@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1238.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide the runtime-owned private-namespace supervisor for loopback replay.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Runtime-owned loopback supervisor",
-  "updated_at": "2026-09-16T08:07:20+00:00",
+  "updated_at": "2026-09-16T08:08:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1238"
 }
 ---
@@ -123,3 +123,6 @@ remaining work is launcher integration and real sidecar forwarding, not a host c
   d9f42ec remains. Remaining blocker is trusted runtime bundle installation/immutable digest pinning
   of both binaries and native bwrap cassette isolation matrix. No host network/firewall/ambient ip
   used.
+
+- 2026-09-16T08:08:49+00:00: User-approved continuation: implement trusted runtime-bundle pinning
+  and native Bubblewrap cassette/isolation tests exclusively for AR-1238.
