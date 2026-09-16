@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1232",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T08:29:12+00:00",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "994c6716904dc2f3d4b9fc186ea35490f236b869",
-  "owner": "",
+  "owner": "asb_ar1232_loopback_worker",
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 409,
+  "task_revision": 410,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T06:29:09+00:00",
+  "updated_at": "2026-09-16T06:29:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -1101,3 +1101,5 @@
 - 2026-09-16T06:29:09+00:00: User-authorized one-time host-network validation design audit: test
   cgroup-scoped firewall policy capability first; if unavailable, use private namespace plus relay.
   No persistent firewall mutation is authorized.
+
+- 2026-09-16T06:29:12+00:00: Claimed by asb_ar1232_loopback_worker.
