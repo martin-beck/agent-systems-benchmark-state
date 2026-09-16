@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1232",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T08:35:05+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "9f38e2e6db2d9650ae9419410c4e97aa792d4658",
-  "owner": "asb_ar1232_worker",
+  "owner": "",
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 428,
+  "task_revision": 429,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T06:38:15+00:00",
+  "updated_at": "2026-09-16T06:38:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -1169,3 +1169,13 @@
 
 - 2026-09-16T06:38:15+00:00: Recorded command exit 0; command argv SHA-256
   3a8e40cf9d37459162518b3331fa553ea82095f970203bcf981a4b1704a45a43.
+
+- 2026-09-16T06:38:35+00:00: Implemented and pushed signed/DCO product commit 9f38e2e: standalone
+  asb-runtime ReplayRelay Unix transport seam. It binds a 0600 socket below the launch-owned
+  directory, authenticates a bounded generation handshake, rejects stale/malformed peers, permits
+  one peer only, and removes the socket on teardown; it never changes NetworkPolicy::Deny or opens
+  networking. Three focused relay tests pass, package Clippy with warnings denied passes, and prior
+  strict replay native 7/7 plus unit 15/15 remain green. Full child HTTP cassette wiring remains
+  blocked because the existing launch contract only accepts an HTTP loopback endpoint and the
+  isolated child cannot reach a host network listener; mapping ReplayRelay into the child requires a
+  reviewed adapter/launch contract change outside this standalone seam.
