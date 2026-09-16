@@ -11,9 +11,9 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 4 |
+| **In progress** | Claimed work with a live lease | 3 |
 | **Open** | Dependency-ready and available to claim | 5 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 11 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 12 |
 | **Planned** | Defined work awaiting promotion or dependencies | 64 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 174 |
@@ -333,7 +333,7 @@ flowchart LR
         AR_1237["AR-1237 - Planned"]:::status_planned
         AR_1238["AR-1238 - Done"]:::status_done
         AR_1239["AR-1239 - Done"]:::status_done
-        AR_1240["AR-1240 - In progress"]:::status_in_progress
+        AR_1240["AR-1240 - Blocked"]:::status_blocked
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1391,13 +1391,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (4)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0898](../tasks/AR-0898-shellcheck-fail-closed.md): Make ShellCheck fail closed | asb_ar0898_shellcheck | Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck. | PR #190 published from exact clean signed+DCO head 8176605df747cca12010f8220e74509cca01539f; base c261af069c5ce7ecb84b2acfc56f12d2a4cb116a. Twelve required checks are running; Huawei headers and AWQ shadow are green. Monitor exact-head CI, diagnose any failures, obtain independent review, and merge only after all required checks green. |
 | P0 | [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md): Approved loopback-only sandbox transport | asb_ar1233_egress_negative_worker | Provide an authenticated loopback-only sandbox transport for strict replay services. | Typed LoopbackOnly policy slice 143213c passes full asb-runtime package tests; actual attested loopback namespace/listener binding remains required. Implement backend capability without weakening Deny, then add native child-service/provider-egress tests and full workspace gates. |
-| P0 | [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md): Native signed-bundle supervisor fixture | asb_ar1240_native_fixture_worker | Add native signed-bundle fixture and end-to-end supervisor isolation tests. | Extend native fixture invocation from helper lifecycle proof to authenticated cassette HTTP success plus provider/descendant denial and cleanup/non-interference matrix. |
 | P1 | [AR-0860](../tasks/AR-0860-openjiuwen-replay.md): Qualify strict OpenJiuwen replay | asb_ar1232_lifecycle_router | Qualify strict OpenJiuwen replay. | Monitor draft PR #189 exact-head CI and request independent review; do not merge until all gates/review green. Head c894a34. |
 
 ### Open (5)
@@ -1410,7 +1409,7 @@ flowchart LR
 | P0 | [AR-1044](../tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Unclaimed | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. |
 | P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | Unclaimed | Replay strictly without providers. | Design and implement the missing executable strict-replay run-path seam: pass exact cassette route/service into agent adapter launch, deny provider egress at process boundary, and add campaign-level cancellation/restart/no-fallback tests. Current CLI replay only decodes/indexes/selects and emits metadata. |
 
-### Blocked (11)
+### Blocked (12)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1421,6 +1420,7 @@ flowchart LR
 | P0 | [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md): Protected merge-tree remediation | Unclaimed | Remediate the protected-main merge-tree mismatch from stale-base PR merging. | Historical reproduction confirms policy rejects ef82484 before merge-tree comparison because its RSA/GPG signature is not in the allowed SSH trust set. Current clean branch is fd7daa4; create a signed-DCO current-main topic repair, then rerun policy and exact-head gates. |
 | P0 | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md): Sandboxed replay process supervision | Unclaimed | Supervise strict replay adapters inside the approved network-denied sandbox. | Wait for approved, merged AR-1234 runtime-owned loopback namespace capability (and AR-1233 LoopbackOnly policy contract) before child HTTP cassette integration. Their current commits are feature-branch-only and both tasks remain blocked; do not reuse unmerged code. Then bind ReplayRelayHandoff into the reviewed launch contract and rerun child success, provider-egress denial, stale/duplicate, timeout/crash cleanup, and unrelated-process tests. |
 | P0 | [AR-1234](../tasks/AR-1234-runtime-loopback-namespace.md): Runtime-owned loopback namespace capability | Unclaimed | Provide an approved runtime-owned loopback-only sandbox namespace capability. | Capability audit complete: pinned tools exist but unshare -n fails Operation not permitted. Do not add ambient privileged setup or host sharing. Require approved runtime-owned loopback namespace/helper capability, then implement native service/egress tests. |
+| P0 | [AR-1240](../tasks/AR-1240-native-signed-bundle-fixture.md): Native signed-bundle supervisor fixture | Unclaimed | Add native signed-bundle fixture and end-to-end supervisor isolation tests. | Extend native fixture invocation from helper lifecycle proof to authenticated cassette HTTP success plus provider/descendant denial and cleanup/non-interference matrix. |
 | P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | Formal assurance owner AR-0877/AR-0907 must repair the pinned TLA artifact provenance mismatch (downloaded byte count/hash) before PR #119 can be requalified; AR-0704 native controller requires no source change. |
 | P1 | [AR-0863](../tasks/AR-0863-workbuddy-provenance.md): Pin WorkBuddy source, package, and license provenance | Unclaimed | Pin WorkBuddy source, package, and license provenance. | Pin official source, package, dependency closure, license, executable digest, protocol mode, and supported platform before any adapter claim. |
 | P1 | [AR-0890](../tasks/AR-0890-deterministic-llm-double-ci.md): Integrate a deterministic LLM double in CI | Unclaimed | Add the independently selected deterministic protocol double as a pinned isolated CI test dependency. | Integrate only the selected exact mock artifact into credential-free CI with fail-closed startup, network denial, provenance, and hostile lifecycle tests. |
