@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1269",
-  "next_action": "Fix runtime launch bundle dead-code gate, rerun runtime tests, then add bundle consumption/lifecycle integration.",
+  "next_action": "Integrate ReplayLaunchBundle consumption into CLI transport and add real supervised cassette/lifecycle/egress/no-fallback fixtures.",
   "observed_branch": "feature/ar-1269-runtime-replay-launch-factory",
   "observed_dirty": 0,
   "observed_head": "83bc5e72edf0b3f96927f205c19e44a402d27dcf",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create runtime-owned launch bundles for supervised strict replay.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Runtime-owned replay launch-bundle factory",
-  "updated_at": "2026-09-16T22:59:44+00:00",
+  "updated_at": "2026-09-16T22:59:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1269-runtime-launch-factory"
 }
 ---
@@ -57,3 +57,10 @@ AR-1268's blocked transport evidence and never move launch authority into the CL
 
 - 2026-09-16T22:59:38+00:00: Recorded command exit 0; command argv SHA-256
   266e0812ef7b023ea146df7585a5b4ddaf541a7c2c597393d78e0dd3c70e58c5.
+
+- 2026-09-16T22:59:57+00:00: Signed checkpoint 83bc5e7 adds runtime-owned ReplayLaunchBundle
+  factory. issue validates namespace readiness, denied network policy, and benchmark lease class
+  before retaining SandboxBackend, SandboxLaunchInput, ResourceLease, pinned supervisor/sidecar
+  commands; consume moves the complete authority exactly once. Runtime focused suite passes 39/39
+  and fmt passes; product tree clean. Real CLI supervised cassette/lifecycle integration remains
+  next.
