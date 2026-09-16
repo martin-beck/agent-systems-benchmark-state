@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define offline tutorial steps and validate them against the ASB CLI grammar.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Tutorial contract and syntax validator",
-  "updated_at": "2026-09-16T04:04:41+00:00",
+  "updated_at": "2026-09-16T04:04:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1210"
 }
 ---
@@ -208,3 +208,6 @@ be required.
   tools/tutorials/test_validate.py missing exact adjacent Huawei 2026/SPDX lines 1-2. Added required
   headers to test_validate.py and validate.py in signed+DCO commit 3e475bd, pushed, and verified
   clean tree.
+
+- 2026-09-16T04:04:54+00:00: Recorded command exit 0; command argv SHA-256
+  3a855c46a10fb30b67d74c07a18077bf37270bfe5fce2798b43b2fea15f7f141.
