@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-alternate-screen-readiness",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T08:04:21+00:00",
   "depends_on": [],
   "id": "AR-1042",
   "next_action": "Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification.",
-  "owner": "",
+  "owner": "asb_ar1232_lifecycle_router",
   "plan": "../plans/AR-1042.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make tmux TUI readiness validate the displayed alternate screen deterministically.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Capture alternate-screen TUI readiness deterministically",
-  "updated_at": "2026-09-11T01:27:34+00:00",
+  "updated_at": "2026-09-16T06:04:21+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-alternate-screen-readiness"
 }
 ---
@@ -260,3 +260,5 @@ emit bounded diagnostics; do not change renderer or application semantics.
 - 2026-09-11T01:27:34+00:00: PR #13 is merged but trusted-main qualification failed on the
   pane_pid==foreground-PGID assumption. AR-1042 remains unaccepted and awaits AR-1044 exact tuple
   recovery, merge and green trusted-main evidence; released to avoid dual ownership.
+
+- 2026-09-16T06:04:21+00:00: Claimed by asb_ar1232_lifecycle_router.
