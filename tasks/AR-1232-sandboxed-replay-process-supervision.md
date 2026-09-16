@@ -11,7 +11,7 @@
   "id": "AR-1232",
   "next_action": "Run focused and full runtime gates on 0a7a760; the earlier exit-101 was a compile failure because SandboxError lacked the new NetworkPolicy variant, corrected and sandbox unit tests now pass (18). Then add concrete spawn lifecycle tests through the existing sandbox harness.",
   "observed_branch": "feature/ar-1232",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "0a7a76011d34809beeffe348121bc290a3f8b4df",
   "owner": "asb_ar1232_sandbox_supervision",
   "plan": "../plans/AR-1232.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T02:56:24+00:00",
+  "updated_at": "2026-09-16T02:56:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
