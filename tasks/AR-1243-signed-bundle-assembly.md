@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1243",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T11:22:40+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1239",
     "AR-1240",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1243",
   "observed_dirty": 0,
   "observed_head": "a816a7733ebf7a3e359bb1b1306b663b71f7c707",
-  "owner": "asb_ar1232_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1243.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Build, sign, verify, and publish installable supervisor and sidecar runtime bundles.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Installable signed runtime bundle assembly",
-  "updated_at": "2026-09-16T09:22:57+00:00",
+  "updated_at": "2026-09-16T09:23:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1243"
 }
 ---
@@ -97,3 +97,6 @@ private material; do not alter host networking, firewall, credentials, or unrela
 
 - 2026-09-16T09:22:49+00:00: Recorded command exit 0; command argv SHA-256
   321c534968b9c456a64caf5e6d09b63780c507f97548057d2bfe31edcfd73ff4.
+
+- 2026-09-16T09:23:02+00:00: Primary repaired branch and completed local archive verification; stale
+  worker lease cleared before final coordinator update.

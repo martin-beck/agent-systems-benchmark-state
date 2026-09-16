@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**271 ARs tracked** across 7 active status categories.
+**271 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 5 |
+| **In progress** | Claimed work with a live lease | 0 |
+| **Open** | Dependency-ready and available to claim | 6 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 9 |
 | **Planned** | Defined work awaiting promotion or dependencies | 63 |
 | **Future** | Deferred roadmap work | 1 |
@@ -336,7 +336,7 @@ flowchart LR
         AR_1240["AR-1240 - Done"]:::status_done
         AR_1241["AR-1241 - Done"]:::status_done
         AR_1242["AR-1242 - Done"]:::status_done
-        AR_1243["AR-1243 - In progress"]:::status_in_progress
+        AR_1243["AR-1243 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1403,13 +1403,7 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md): Installable signed runtime bundle assembly | asb_ar1232_lifecycle_router | Build, sign, verify, and publish installable supervisor and sidecar runtime bundles. | Stop AR-1243 publication pending coordinator separation/reconciliation: branch c9fdcaf includes unrelated runtime/replay commits beyond bundle-only scope. Preserve all signed history; create a clean packaging branch or coordinator-approved split before gates/PR. |
-
-### Open (5)
+### Open (6)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1418,6 +1412,7 @@ flowchart LR
 | P0 | [AR-1042](../tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Unclaimed | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. |
 | P0 | [AR-1044](../tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Unclaimed | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. |
 | P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | Unclaimed | Replay strictly without providers. | Design and implement the missing executable strict-replay run-path seam: pass exact cassette route/service into agent adapter launch, deny provider egress at process boundary, and add campaign-level cancellation/restart/no-fallback tests. Current CLI replay only decodes/indexes/selects and emits metadata. |
+| P0 | [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md): Installable signed runtime bundle assembly | Unclaimed | Build, sign, verify, and publish installable supervisor and sidecar runtime bundles. | Stop AR-1243 publication pending coordinator separation/reconciliation: branch c9fdcaf includes unrelated runtime/replay commits beyond bundle-only scope. Preserve all signed history; create a clean packaging branch or coordinator-approved split before gates/PR. |
 
 ### Blocked (9)
 
