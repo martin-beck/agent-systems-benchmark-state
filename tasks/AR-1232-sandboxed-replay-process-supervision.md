@@ -11,7 +11,7 @@
   "id": "AR-1232",
   "next_action": "Extend supervised child harness with cancellation/restart/partial/crash/stale/duplicate and descendant egress tests; run full locked workspace gates.",
   "observed_branch": "feature/ar-1232",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "49625d02c9ce7e2cb3be98641cb4ac04dee776c4",
   "owner": "asb_ar1232_sandbox_supervision",
   "plan": "../plans/AR-1232.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 209,
+  "task_revision": 210,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T03:44:35+00:00",
+  "updated_at": "2026-09-16T03:44:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
