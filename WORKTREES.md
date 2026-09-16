@@ -19,6 +19,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-agent-runtime-bundles` | `feature/agent-runtime-bundles` | `1249fd87d46d` | 0 | behind 509, ahead 0 |
 | `agent-systems-benchmark-aider-deterministic-replay` | `fix/aider-deterministic-replay` | `87a22654913a` | 0 | behind 542, ahead 0 |
 | `agent-systems-benchmark-all-agents-provider` | `feature/all-agents-provider` | `03962f28571e` | 0 | behind 505, ahead 0 |
+| `agent-systems-benchmark-ar-1006` | `feature/distributed-workers` | `3e8d58994eb2` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar-1100` | `feature/ar-1100` | `38c039975077` | 0 | behind 276, ahead 2 |
 | `agent-systems-benchmark-ar-1110` | `feature/ar-1110` | `d16d8d08f5d5` | 0 | behind 134, ahead 0 |
 | `agent-systems-benchmark-ar-1120` | `feature/ar-1120` | `f64985ad3502` | 0 | behind 148, ahead 0 |
