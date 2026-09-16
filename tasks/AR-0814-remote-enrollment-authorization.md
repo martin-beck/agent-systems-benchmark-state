@@ -9,17 +9,17 @@
   "id": "AR-0814",
   "next_action": "Wire BreakGlassParams into v1.7 ControlCall/endpoint/CLI, regenerate schemas, and add admin-generation-audit tests.",
   "observed_branch": "feature/remote-enrollment-authz",
-  "observed_dirty": 2,
-  "observed_head": "53eb37804229bee13bac614c792f89dbf35c99e8",
+  "observed_dirty": 0,
+  "observed_head": "5134c2be0c9b2b1b94d8f0bd9e998930de4e5b22",
   "owner": "asb_ar0814_enrollment_authz",
   "plan": "../plans/AR-0814.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 176,
+  "task_revision": 177,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T18:30:57+00:00",
+  "updated_at": "2026-09-16T18:31:05+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
