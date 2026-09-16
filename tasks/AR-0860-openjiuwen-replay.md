@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict OpenJiuwen replay.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Qualify strict OpenJiuwen replay",
-  "updated_at": "2026-09-16T08:30:51+00:00",
+  "updated_at": "2026-09-16T08:31:25+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-replay"
 }
 ---
@@ -97,3 +97,6 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   c894a341183d448d576e5f04bbe621d4887fe45b. Remote branch feature/openjiuwen-replay is exact head.
   Full asb-agents tests and clippy passed locally; live qualification and strict replay results
   recorded.
+
+- 2026-09-16T08:31:25+00:00: Recorded command exit 8; command argv SHA-256
+  b1fec21d25eb039adf60a9aa152e85dff800834741b6177c6aef2634d6b408db.
