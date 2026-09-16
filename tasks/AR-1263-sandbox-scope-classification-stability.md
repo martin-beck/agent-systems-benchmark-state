@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stabilize intermittent sandbox scope classification in the quality gate.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Stabilize sandbox scope classification gate",
-  "updated_at": "2026-09-16T21:19:56+00:00",
+  "updated_at": "2026-09-16T21:20:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1263-sandbox-stability"
 }
 ---
@@ -60,3 +60,6 @@ fail-closed test/runner behavior and preserve the original semantic assertions.
 
 - 2026-09-16T21:19:56+00:00: Recorded command exit 101; command argv SHA-256
   d8b0a364faaf567170fae33f136fd7e417f1bbbcb8b5cac31feee17ece23c8c1.
+
+- 2026-09-16T21:20:58+00:00: Recorded command exit 0; command argv SHA-256
+  07afeedbd3e1eac300bb221506be20582dfbea6d78f770917c4c73c7029bb4a6.
