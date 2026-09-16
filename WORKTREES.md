@@ -39,7 +39,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1235` | `feature/ar-1235-goose-fixture-portability` | `fd7daa43549e` | 3 | behind 21, ahead 0 |
 | changed files | - | - | - | `target-hosted-aarch64/`, `target-hosted-full-aarch64/`, `target-repeat-aarch64/` |
 | `agent-systems-benchmark-ar-1236` | `feature/ar-1236-runtime-loopback-sidecar` | `42c3d1959b9a` | 0 | behind 305, ahead 4 |
-| `agent-systems-benchmark-ar-1237` | `feature/ar-1237-launch-bridge` | `835c47027513` | 0 | behind 30, ahead 14 |
+| `agent-systems-benchmark-ar-1237` | `feature/ar-1237-launch-bridge` | `835c47027513` | 1 | behind 30, ahead 14 |
+| changed files | - | - | - | `crates/asb-runtime/src/loopback_sidecar.rs` |
 | `agent-systems-benchmark-ar-1238` | `feature/ar-1238-runtime-loopback-supervisor` | `e4c2e56c076a` | 0 | behind 305, ahead 10 |
 | `agent-systems-benchmark-ar-1239` | `feature/ar-1239-signed-runtime-bundle` | `6836bb4010f5` | 0 | behind 305, ahead 2 |
 | `agent-systems-benchmark-ar-1240` | `feature/ar-1240-native-signed-bundle-fixture` | `282eeffd78ea` | 0 | behind 305, ahead 13 |
