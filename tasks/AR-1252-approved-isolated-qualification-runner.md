@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-1252",
-  "next_action": "Add AR-1251 transport consumer and descendant cleanup evidence; run full gates.",
+  "next_action": "Request independent review of 249dac1; AR-1251 transport fixture invocation remains a separate dependency.",
   "observed_branch": "feature/ar-1252-approved-isolated-runner",
   "observed_dirty": 0,
   "observed_head": "249dac1183dfaf1c5b79cb1d51db1094d9b14fb6",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:47:03+00:00",
+  "updated_at": "2026-09-16T11:47:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -242,3 +242,11 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
 
 - 2026-09-16T11:47:03+00:00: Recorded command exit 0; command argv SHA-256
   302920456fc719a3886aac3147c18f66b18523f0261bec1755baf173550ea302.
+
+- 2026-09-16T11:47:25+00:00: Focused runner contract 4/4 and full llm-double-spike suite 13/13 pass.
+  Source policy headers and signature/failure-path tests pass (16/16); git diff --check clean. Live
+  digest-pinned Docker network-none preflight passes and bounded timeout returns 124 with
+  named-container cleanup verification. Signed+DCO commit 249dac1 pushed. The runner now proves no
+  matching container remains after each run, including timeout cleanup. Remaining AR-1251 transport
+  fixture/real descendant behavior is not falsely claimed complete; requires AR-1251-owned fixture
+  work.
