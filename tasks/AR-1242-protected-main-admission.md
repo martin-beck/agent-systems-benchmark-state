@@ -2,7 +2,7 @@
 {
   "branch": "fix/protected-main-admission",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T09:15:37+00:00",
   "depends_on": [
     "AR-0003",
     "AR-0897"
@@ -12,15 +12,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "c261af069c5ce7ecb84b2acfc56f12d2a4cb116a",
-  "owner": "",
+  "owner": "asb_ar1242_merge_admission",
   "plan": "../plans/AR-1242.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Prevent protected-main admission from creating unsigned GitHub merge commits.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Enforce signed protected-main admission",
-  "updated_at": "2026-09-16T08:45:19+00:00",
+  "updated_at": "2026-09-16T08:45:37+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-admission"
 }
 ---
@@ -35,3 +35,5 @@ It must not weaken native, formal, privacy, signature, DCO, exact-tree, or post-
 
 - 2026-09-16T08:45:19+00:00: Dependencies AR-0003 and AR-0897 verified done; recurring unsigned
   protected-main merges require admission-control implementation.
+
+- 2026-09-16T08:45:37+00:00: Claimed by asb_ar1242_merge_admission.

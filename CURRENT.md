@@ -9,6 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0898](tasks/AR-0898-shellcheck-fail-closed.md): Make ShellCheck fail closed | Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck. | PR #190 rebased onto current protected main 606375f and force-with-lease pushed; exact signed+DCO head 760eded801d3daa07011ea2a744bded7da27a159, tree 1ed40b42879b31d4e33a687494113f98ff94224d. All 12 required checks restarted; AWQ shadow and Huawei headers green. Monitor exact-head CI, independently review rebased diff, then signed local merge only after all green. | asb_ar0898_shellcheck |
 | P0 | [AR-1241](tasks/AR-1241-native-isolation-matrix.md): Native isolation negative and lifecycle matrix | Complete native signed-bundle isolation negative and lifecycle evidence. | Add provider/external/descendant egress denial and timeout/cancel/crash/non-interference tests for the signed native bundle. | asb_ar1241_matrix_worker |
+| P0 | [AR-1242](tasks/AR-1242-protected-main-admission.md): Enforce signed protected-main admission | Prevent protected-main admission from creating unsigned GitHub merge commits. | Promote after dependency verification; audit protected-branch merge modes and add fail-closed admission controls for signed SSH+DCO merges. | asb_ar1242_merge_admission |
 
 ## Open
 
@@ -19,7 +20,6 @@ Never edit this file directly.
 | P0 | [AR-1042](tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. | - |
 | P0 | [AR-1044](tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. | - |
 | P0 | [AR-1151](tasks/AR-1151.md): Strict offline replay | Replay strictly without providers. | Design and implement the missing executable strict-replay run-path seam: pass exact cassette route/service into agent adapter launch, deny provider egress at process boundary, and add campaign-level cancellation/restart/no-fallback tests. Current CLI replay only decodes/indexes/selects and emits metadata. | - |
-| P0 | [AR-1242](tasks/AR-1242-protected-main-admission.md): Enforce signed protected-main admission | Prevent protected-main admission from creating unsigned GitHub merge commits. | Promote after dependency verification; audit protected-branch merge modes and add fail-closed admission controls for signed SSH+DCO merges. | - |
 
 ## Blocked
 
