@@ -8,7 +8,7 @@
     "AR-1231"
   ],
   "id": "AR-1238",
-  "next_action": "Provide trusted runtime bundle installation and immutable digest pinning for supervisor and sidecar; then run native bwrap end-to-end cassette and isolation tests.",
+  "next_action": "Trusted bundle integration now requires asb-bundle-owned artifact manifest/payload wiring; then native bwrap must execute content-pinned supervisor+sidecar and prove cassette success, egress denial, teardown and non-interference.",
   "observed_branch": "feature/ar-1238-runtime-loopback-supervisor",
   "observed_dirty": 0,
   "observed_head": "d9f42ecb2a205b86250233f4f4c75688a997c063",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned private-namespace supervisor for loopback replay.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Runtime-owned loopback supervisor",
-  "updated_at": "2026-09-16T08:08:51+00:00",
+  "updated_at": "2026-09-16T08:11:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1238"
 }
 ---
@@ -128,3 +128,8 @@ remaining work is launcher integration and real sidecar forwarding, not a host c
   and native Bubblewrap cassette/isolation tests exclusively for AR-1238.
 
 - 2026-09-16T08:08:51+00:00: Claimed by asb_ar1238_bwrap_relay_worker.
+
+- 2026-09-16T08:11:11+00:00: User-approved implementation: commit 418f393 adds sha256-verified
+  PinnedCommand::new_verified and requires an explicit trusted supervisor pin; no mutable /usr
+  fallback. Full locked workspace tests, fmt, clippy, rustdoc, and release build pass. Sidecar HTTP
+  relay test is 3/3 in 4a23b97.
