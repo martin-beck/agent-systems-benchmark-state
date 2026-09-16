@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide complete runtime-owned context for strict-replay execution.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Complete runtime-owned replay request context",
-  "updated_at": "2026-09-16T23:35:55+00:00",
+  "updated_at": "2026-09-16T23:37:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1273-complete-replay-context"
 }
 ---
@@ -63,3 +63,6 @@ AR-1272's blocked evidence; never accept caller-provided authority or fabricate 
   enforcement, and single-use consumption. Focused runtime replay_context suite passes 3/3 after
   fixing initial PID-only parallel fixture collision (AddrInUse); fmt pass and clean tree. Remaining
   acceptance is actual CLI/runtime cassette dispatch and supervised lifecycle evidence.
+
+- 2026-09-16T23:37:01+00:00: Recorded command exit 0; command argv SHA-256
+  534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
