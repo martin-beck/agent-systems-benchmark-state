@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-0899](tasks/AR-0899-gitleaks-revision-config-integrity.md): Align and harden Gitleaks execution | Resolve GitHub issue 118 by making local and CI Gitleaks scans deterministic and config changes fail closed. | Monitor PR #198 exact head 6737552 until all required checks terminal; diagnose/fix any failure, then obtain independent approval before merge. | asb_ar0899_gitleaks |
+| P0 | [AR-0899](tasks/AR-0899-gitleaks-revision-config-integrity.md): Align and harden Gitleaks execution | Resolve GitHub issue 118 by making local and CI Gitleaks scans deterministic and config changes fail closed. | Merge PR #198 via signed local integration helper; then verify protected main signature/DCO/tree and all post-merge workflows. | asb_ar0899_gitleaks |
 
 ## Open
 
