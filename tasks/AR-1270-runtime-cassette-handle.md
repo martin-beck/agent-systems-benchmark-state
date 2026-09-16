@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-issued cassette-service handle for supervised strict replay.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Runtime-issued cassette-service handle",
-  "updated_at": "2026-09-16T23:07:19+00:00",
+  "updated_at": "2026-09-16T23:07:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1270-runtime-cassette-handle"
 }
 ---
@@ -56,3 +56,6 @@ the CLI.
   positive/negative tests. asb-core suite passes 17/17 and fmt pass; product tree clean. Initial fmt
   command failed due malformed one-line enum delimiter in fresh file; corrected syntax before green
   rerun. Runtime issuance, CLI binding, and supervised cassette lifecycle remain next.
+
+- 2026-09-16T23:07:54+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
