@@ -17,11 +17,11 @@
   "plan": "../plans/AR-0604.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Qualify native CSB monitoring contention and overhead",
-  "updated_at": "2026-09-16T19:38:58+00:00",
+  "updated_at": "2026-09-16T19:40:48+00:00",
   "worktree_key": "agent-systems-benchmark-csb-native-qualification"
 }
 ---
@@ -75,3 +75,7 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-16T19:38:58+00:00: Released ownerless blocked: exact pinned CSB source/interpreter
   evidence unavailable; provision approved runner/container and rerun native boundary before
   claiming qualification.
+
+- 2026-09-16T19:40:48+00:00: Follow-up provenance audit searched all ASB state/product paths and
+  approved runtime records; investigate exact interpreter/source and container capability
+  availability.
