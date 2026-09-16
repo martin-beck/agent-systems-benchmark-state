@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1235.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Repair Goose diagnostic fixture portability under emulated AArch64.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Portable Goose diagnostic fixture",
-  "updated_at": "2026-09-16T06:14:22+00:00",
+  "updated_at": "2026-09-16T06:15:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1235"
 }
 ---
@@ -158,3 +158,7 @@ its intended diagnostic error assertion. Preserve the failure and repair the fix
   requires branch/tag. Prior exact-head rerun 35060286408 was monitored and local QEMU evidence is
   10/10 green. Reopen only using a temporary reviewed branch/tag at fd7daa4 or a new authoritative
   hosted artifact.
+
+- 2026-09-16T06:15:08+00:00: Resume now that protected main is confirmed at
+  fd7daa43549edd67b60076aa6b1eee333061b438; dispatch hosted Emulated aarch64 portability workflow on
+  main and monitor terminal result.
