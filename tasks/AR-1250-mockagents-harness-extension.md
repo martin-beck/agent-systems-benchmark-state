@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend the pinned MockAgents executable qualification harness.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Extend MockAgents qualification harness",
-  "updated_at": "2026-09-16T19:08:44+00:00",
+  "updated_at": "2026-09-16T19:09:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1250"
 }
 ---
@@ -184,3 +184,7 @@ privacy, signature, DCO, and exact-tree gates; do not claim support from host in
 
 - 2026-09-16T19:08:44+00:00: Recorded command exit 0; command argv SHA-256
   a9144ab11957a59c9b2198db9ef2a4cf3db4b83857fdfcadd34e62e515b86727.
+
+- 2026-09-16T19:09:28+00:00: Heartbeat refreshed. Bounded MockAgents harness suites
+  test_qualify_mockagents, test_conformance, and test_scenario pass 9/9 at clean signed head
+  55be268. Remaining probes are unchanged and explicit; no unsupported qualification claim.
