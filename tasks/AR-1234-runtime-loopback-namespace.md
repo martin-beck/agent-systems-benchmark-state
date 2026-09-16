@@ -8,7 +8,7 @@
     "AR-1231"
   ],
   "id": "AR-1234",
-  "next_action": "36a4580 adds typed LoopbackOnly policy preservation and fail-closed backend rejection; focused runtime test passes 1/1. Next implement an approved runtime-owned loopback namespace/helper, then prove authenticated child cassette service and provider/descendant egress denial.",
+  "next_action": "Capability audit complete: pinned tools exist but unshare -n fails Operation not permitted. Do not add ambient privileged setup or host sharing. Require approved runtime-owned loopback namespace/helper capability, then implement native service/egress tests.",
   "observed_branch": "feature/ar-1234",
   "observed_dirty": 0,
   "observed_head": "36a458020483c1b4aa204e491a936f00acd5706d",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an approved runtime-owned loopback-only sandbox namespace capability.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Runtime-owned loopback namespace capability",
-  "updated_at": "2026-09-16T05:27:21+00:00",
+  "updated_at": "2026-09-16T05:27:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1234"
 }
 ---
@@ -63,3 +63,9 @@
 
 - 2026-09-16T05:27:21+00:00: Recorded command exit 1; command argv SHA-256
   073b736ee9fc09defe1d28fdc70c05047b6a4d026fafdfd250aa017ef3796b39.
+
+- 2026-09-16T05:27:47+00:00: Strongest safe audit via handoffctl: pinned bwrap 0.9.0, unshare
+  2.39.3, nsenter 2.39.3, and systemd-run 255 are present; attempting unshare -n true fails
+  Operation not permitted. Therefore this host cannot safely provision a loopback-only namespace.
+  NetworkPolicy::Deny remains intact; LoopbackOnly is typed and fail-closed at signed head 36a4580.
+  Required blocker is an approved runtime-owned privileged/helper seam, not a test waiver.

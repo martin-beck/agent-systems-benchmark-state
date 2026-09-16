@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0897](tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Hold PR 126 at bd6f450; after AR-0877 and AR-0909 integrate, rebase once and require fresh all-green exact-head CI before merge. | asb_ar0897_merge_integrity |
-| P0 | [AR-1234](tasks/AR-1234-runtime-loopback-namespace.md): Runtime-owned loopback namespace capability | Provide an approved runtime-owned loopback-only sandbox namespace capability. | 36a4580 adds typed LoopbackOnly policy preservation and fail-closed backend rejection; focused runtime test passes 1/1. Next implement an approved runtime-owned loopback namespace/helper, then prove authenticated child cassette service and provider/descendant egress denial. | asb_ar1232_sandbox_supervision |
+| P0 | [AR-1234](tasks/AR-1234-runtime-loopback-namespace.md): Runtime-owned loopback namespace capability | Provide an approved runtime-owned loopback-only sandbox namespace capability. | Capability audit complete: pinned tools exist but unshare -n fails Operation not permitted. Do not add ambient privileged setup or host sharing. Require approved runtime-owned loopback namespace/helper capability, then implement native service/egress tests. | asb_ar1232_sandbox_supervision |
 
 ## Open
 
