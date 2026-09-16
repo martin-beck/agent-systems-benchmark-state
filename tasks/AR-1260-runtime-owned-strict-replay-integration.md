@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1260-runtime-owned-strict-replay-integration",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T22:27:18+00:00",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1260-runtime-owned-strict-replay-integration",
   "observed_dirty": 0,
   "observed_head": "0000000000000000000000000000000000000000",
-  "owner": "",
+  "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1260.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Integrate strict replay with runtime-owned attestation and supervised sandbox execution.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime-owned strict-replay integration",
-  "updated_at": "2026-09-16T20:27:04+00:00",
+  "updated_at": "2026-09-16T20:27:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1260-runtime"
 }
 ---
@@ -37,3 +37,5 @@ missing, stale, duplicated, or mismatched.
 
 - 2026-09-16T20:27:04+00:00: Dependencies AR-1237, AR-1238, AR-1239 independently done; promote
   runtime-owned strict-replay integration.
+
+- 2026-09-16T20:27:18+00:00: Claimed by asb_ar1024_lifecycle_router.
