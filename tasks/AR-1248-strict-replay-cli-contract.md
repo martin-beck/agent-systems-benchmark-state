@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T10:57:06+00:00",
+  "updated_at": "2026-09-16T10:57:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -191,3 +191,6 @@ formal, privacy, signature, DCO, and exact-tree gates.
 
 - 2026-09-16T10:57:06+00:00: Recorded command exit 0; command argv SHA-256
   ff954a573a552b3113c874db1fdd5ac4e98fb8a3477c20c22e06af7b07ff82fc.
+
+- 2026-09-16T10:57:14+00:00: Recorded command exit 0; command argv SHA-256
+  a98bcb963e3e8f10830e5d2875a53ea5949d457cda1b9f4abdd68883832ad21b.
