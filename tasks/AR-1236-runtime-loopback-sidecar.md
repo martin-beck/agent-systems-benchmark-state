@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1236-runtime-loopback-sidecar",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T09:22:00+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1100",
     "AR-1231"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1236-runtime-loopback-sidecar",
   "observed_dirty": 0,
   "observed_head": "1c6ab1db1496250adb927a615e7751d376e8f1e9",
-  "owner": "asb_ar1236_worker",
+  "owner": "",
   "plan": "../plans/AR-1236.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide a runtime-owned private-namespace loopback sidecar capability.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Runtime-owned loopback sidecar capability",
-  "updated_at": "2026-09-16T07:22:00+00:00",
+  "updated_at": "2026-09-16T07:22:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1236"
 }
 ---
@@ -55,3 +55,11 @@ privacy, policy, native, signature, and exact-head gates.
   runtime-owned namespace bridge; preserve fail-closed isolation and NetworkPolicy::Deny.
 
 - 2026-09-16T07:22:00+00:00: Claimed by asb_ar1236_worker.
+
+- 2026-09-16T07:22:54+00:00: Extended AR-1236 at signed commits 1c6ab1d and df4debd. Added
+  SidecarAttestation requiring explicit private namespace handoff proof; false/unavailable handoff
+  fails closed. Added tests for attestation rejection/success; runtime suite 30 passed, process 8,
+  sandbox 10, scheduler 16; formatting and clippy pass; full workspace previously passed. Host
+  capability remains insufficient for actual in-namespace TCP bridge: rootless unshare -Urn has
+  loopback DOWN and no reviewed launcher handoff exists. No host-network sharing, firewall mutation,
+  ambient ip, privileged helper, credentials, or unrelated AR changed.
