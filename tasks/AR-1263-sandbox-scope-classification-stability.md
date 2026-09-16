@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stabilize intermittent sandbox scope classification in the quality gate.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Stabilize sandbox scope classification gate",
-  "updated_at": "2026-09-16T21:22:15+00:00",
+  "updated_at": "2026-09-16T21:22:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1263-sandbox-stability"
 }
 ---
@@ -77,3 +77,6 @@ fail-closed test/runner behavior and preserve the original semantic assertions.
   4/20 at sandbox_boundary.rs:474 because crash launch returned a non-ScopeOwnership result;
   accepted either ScopeOwnership rejection or a returned process that exits nonzero and reaches
   Terminal. Corrected focused test passes 20/20 bounded repeats; signed product commit 0acbc1d.
+
+- 2026-09-16T21:22:27+00:00: Recorded command exit 0; command argv SHA-256
+  22176a1ece3d3591a9b0b37f5f69d0634f08e971734b76eb6394adf265e28d09.
