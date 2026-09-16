@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-replay",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T10:32:40+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0859"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/openjiuwen-replay",
   "observed_dirty": 0,
   "observed_head": "c894a341183d448d576e5f04bbe621d4887fe45b",
-  "owner": "asb_ar1232_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-0860.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Qualify strict OpenJiuwen replay.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Qualify strict OpenJiuwen replay",
-  "updated_at": "2026-09-16T08:40:42+00:00",
+  "updated_at": "2026-09-16T08:41:04+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-replay"
 }
 ---
@@ -150,3 +150,8 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-16T08:40:42+00:00: Recorded command exit 0; command argv SHA-256
   3c9af923b74d9fd35cf47e7cdf21527d1130f042324248286992a6f03749fd7c.
+
+- 2026-09-16T08:41:04+00:00: PR #189 merged as 606375f613fc195f3e9ff697253f1cf20a3fec72. Protected
+  origin/main matches merge commit. Post-merge repository policy source-header check passed;
+  replay_openjiuwen focused 2/2 and asb-agents locked offline package tests passed. Worktree clean;
+  AR released done.
