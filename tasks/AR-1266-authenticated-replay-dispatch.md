@@ -11,17 +11,17 @@
   "id": "AR-1266",
   "next_action": "Rerun the flaky control test in isolation/repeat, then commit context dispatch fix and add supervised lifecycle tests.",
   "observed_branch": "feature/ar-1266-authenticated-replay-dispatch",
-  "observed_dirty": 1,
-  "observed_head": "b62ed5f12b4ca72d397bdce680332f20a0c8a9e5",
+  "observed_dirty": 0,
+  "observed_head": "0d3ef706de98b7df0a254fddb6c8e795aaf98ae5",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1266.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add authenticated runtime context to the actual strict-replay CLI dispatch path.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Authenticated replay dispatch context",
-  "updated_at": "2026-09-16T22:36:57+00:00",
+  "updated_at": "2026-09-16T22:37:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1266-authenticated-replay"
 }
 ---
