@@ -9,17 +9,17 @@
   "id": "AR-0814",
   "next_action": "Add enrollment ceremony identity binding and scoped CLI authorization dispatch; test rotation/revocation audit privacy.",
   "observed_branch": "feature/remote-enrollment-authz",
-  "observed_dirty": 1,
-  "observed_head": "c5a8724cdf2786265a9ee5eca144626c307a8991",
+  "observed_dirty": 0,
+  "observed_head": "054b45783023de9a475df3710d33a30e9f9b565a",
   "owner": "asb_ar0814_enrollment_authz",
   "plan": "../plans/AR-0814.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T17:44:14+00:00",
+  "updated_at": "2026-09-16T17:44:23+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
