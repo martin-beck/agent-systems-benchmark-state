@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1266-authenticated-replay-dispatch",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T00:31:53+00:00",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1266-authenticated-replay-dispatch",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1266.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add authenticated runtime context to the actual strict-replay CLI dispatch path.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Authenticated replay dispatch context",
-  "updated_at": "2026-09-16T22:31:10+00:00",
+  "updated_at": "2026-09-16T22:31:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1266-authenticated-replay"
 }
 ---
@@ -32,3 +32,5 @@ Preserve all prior blocked evidence; no fabricated launch authority or weakened 
 
 - 2026-09-16T22:31:10+00:00: Dependencies AR-1237, AR-1238, and AR-1239 are done; AR-1265 review
   establishes this exact authenticated dispatch seam is required.
+
+- 2026-09-16T22:31:53+00:00: Claimed by asb_ar1024_lifecycle_router.
