@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1265-runtime-owned-replay-entrypoint",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T00:25:16+00:00",
+  "claim_expires": "2026-09-17T00:28:40+00:00",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a real runtime-owned strict-replay CLI entrypoint.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Runtime-owned strict-replay CLI entrypoint",
-  "updated_at": "2026-09-16T22:27:53+00:00",
+  "updated_at": "2026-09-16T22:28:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1265-runtime-replay-entrypoint"
 }
 ---
@@ -108,3 +108,5 @@ unmerged implementation is not an input; preserve its review as the reason this 
   supervised spawn, and retains LoopbackSidecar for process lifetime. Focused offline tests pass:
   asb-cli 71/71 and asb-runtime 40/40; fmt pass; product tree clean. Prior exit 101 diagnosed as
   unused issue_launch under -D warnings and fixed with narrow dead_code allowance.
+
+- 2026-09-16T22:28:40+00:00: Heartbeat by asb_ar1024_lifecycle_router.
