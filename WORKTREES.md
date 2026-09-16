@@ -114,7 +114,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-local-inference-provider-profiles` | `feat/local-inference-provider-profiles` | `eed49592617a` | 0 | behind 271, ahead 0 |
 | `agent-systems-benchmark-local-llm-testing-recommendations` | `docs/local-llm-testing-recommendations` | `4a23069336be` | 0 | behind 284, ahead 0 |
 | `agent-systems-benchmark-main-forward` | `repair/github-dco-fix` | `1b821930cb50` | 0 | behind 139, ahead 0 |
-| `agent-systems-benchmark-main-merge-integrity` | `fix/main-merge-integrity` | `1ef6469ac3e0` | 0 | behind 0, ahead 4 |
+| `agent-systems-benchmark-main-merge-integrity` | `fix/main-merge-integrity` | `1ef6469ac3e0` | 1 | behind 0, ahead 4 |
+| changed files | - | - | - | `crates/asb-cli/tests/workflow_transcript.rs` |
 | `agent-systems-benchmark-main-repair` | `DETACHED` | `cc4df693964d` | 0 | behind 171, ahead 0 |
 | `agent-systems-benchmark-main-repair2` | `DETACHED` | `b9fb334b29f5` | 0 | behind 170, ahead 0 |
 | `agent-systems-benchmark-main-repair3` | `DETACHED` | `50345d56b9d9` | 0 | behind 167, ahead 0 |

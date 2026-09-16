@@ -13,7 +13,7 @@ Generated from local Git and GitHub. Do not edit.
 | #119 | `feature/native-capacity-controller@28f30eea80ef` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(capacity): add bounded native lifecycle controller |
 | #124 | `feature/openjiuwen-live@cceb76f436f8` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(agents): qualify pinned OpenJiuwen live execution |
 | #125 | `fix/control-state-lock-test-isolation@8b0f9fd07d5d` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(cli): isolate control state roots |
-| #126 | `fix/main-merge-integrity@1ef6469ac3e0` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | tools: harden signed merge publication |
+| #126 | `fix/main-merge-integrity@1ef6469ac3e0` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | tools: harden signed merge publication |
 | #144 | `dependabot/github_actions/actions/setup-java-6.0.0@5885c200026e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump actions/setup-java from 5.0.0 to 6.0.0 |
 | #145 | `dependabot/cargo/toml-0.9.5@5f30c0c92f18` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 0.9.5 |
 | #146 | `dependabot/github_actions/taiki-e/install-action-2.87.7@51db8d79ad9f` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.7 |
@@ -28,14 +28,14 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35058203110 | `1ef6469ac3e0` | pull_request | Agent Workflow Quality shadow | queued:- |
-| 35058203094 | `1ef6469ac3e0` | pull_request | Rust verification | queued:- |
-| 35058203079 | `1ef6469ac3e0` | pull_request | Formal assurance | queued:- |
-| 35058203064 | `1ef6469ac3e0` | pull_request | Emulated aarch64 portability | queued:- |
-| 35058203037 | `1ef6469ac3e0` | pull_request | Hosted portability and native qualification | queued:- |
-| 35058203021 | `1ef6469ac3e0` | pull_request | Huawei MIT source headers | queued:- |
-| 35058203018 | `1ef6469ac3e0` | pull_request | Fault assurance | queued:- |
-| 35058203011 | `1ef6469ac3e0` | pull_request | Repository quality | queued:- |
+| 35058203110 | `1ef6469ac3e0` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 35058203094 | `1ef6469ac3e0` | pull_request | Rust verification | completed:failure |
+| 35058203079 | `1ef6469ac3e0` | pull_request | Formal assurance | in_progress:- |
+| 35058203064 | `1ef6469ac3e0` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 35058203037 | `1ef6469ac3e0` | pull_request | Hosted portability and native qualification | completed:success |
+| 35058203021 | `1ef6469ac3e0` | pull_request | Huawei MIT source headers | completed:success |
+| 35058203018 | `1ef6469ac3e0` | pull_request | Fault assurance | in_progress:- |
+| 35058203011 | `1ef6469ac3e0` | pull_request | Repository quality | in_progress:- |
 | 35057669149 | `aceb1910b920` | pull_request | Repository quality | completed:failure |
 | 35057669146 | `aceb1910b920` | pull_request | Emulated aarch64 portability | completed:success |
 | 35057669117 | `aceb1910b920` | pull_request | Rust verification | completed:failure |
