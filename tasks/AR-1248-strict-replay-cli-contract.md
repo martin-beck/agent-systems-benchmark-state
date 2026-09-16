@@ -10,7 +10,7 @@
   "id": "AR-1248",
   "next_action": "Request fresh independent review of executable strict replay dispatch at exact head 66e0fa2 and rerun PR #197 exact-head CI. replay-plan dispatch now reads bounded versioned plan, invokes resolve_and_bind_runtime, binds runtime-issued SidecarHandoff through StrictReplayLaunchBridge, emits denied/non-fresh metadata, and rejects stale route with validation exit 3. Runtime bridge owns SandboxLaunchInput supervision.",
   "observed_branch": "feature/ar-1248-strict-replay-cli-contract",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "66e0fa2021110d07d3eda3e5a2bdc3915b7f9553",
   "owner": "asb_ar1232_lifecycle_router",
   "plan": "../plans/AR-1248.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 105,
+  "task_revision": 106,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T11:14:37+00:00",
+  "updated_at": "2026-09-16T11:19:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
