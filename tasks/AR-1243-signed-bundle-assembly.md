@@ -11,17 +11,17 @@
   "id": "AR-1243",
   "next_action": "Implement reproducible supervisor/sidecar bundle assembly and explicit SSH signing using the project release workflow.",
   "observed_branch": "feature/ar-1243",
-  "observed_dirty": 3,
-  "observed_head": "a14ea8ba8e27f86d41d5bb2873575ab3ca9d6c5a",
+  "observed_dirty": 0,
+  "observed_head": "dc1fe1dcfa462d2953bb9033297c78a41633d559",
   "owner": "asb_ar1232_lifecycle_router",
   "plan": "../plans/AR-1243.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Build, sign, verify, and publish installable supervisor and sidecar runtime bundles.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Installable signed runtime bundle assembly",
-  "updated_at": "2026-09-16T09:19:35+00:00",
+  "updated_at": "2026-09-16T09:19:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1243"
 }
 ---
