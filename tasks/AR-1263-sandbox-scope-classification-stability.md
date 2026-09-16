@@ -2,7 +2,7 @@
 {
   "branch": "fix/ar-1263-sandbox-scope-classification",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T00:07:52+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1238"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "fix/ar-1263-sandbox-scope-classification",
   "observed_dirty": 0,
   "observed_head": "0acbc1d1a8bf43a226fda503fbd76f8afd48eb07",
-  "owner": "asb_ar1263_sandbox_stability",
+  "owner": "",
   "plan": "../plans/AR-1263.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Stabilize intermittent sandbox scope classification in the quality gate.",
-  "task_revision": 53,
+  "task_revision": 54,
   "title": "Stabilize sandbox scope classification gate",
-  "updated_at": "2026-09-16T22:08:19+00:00",
+  "updated_at": "2026-09-16T22:08:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1263-sandbox-stability"
 }
 ---
@@ -201,3 +201,11 @@ fail-closed test/runner behavior and preserve the original semantic assertions.
   signature/DCO verified. PR #205 feature checks all green and all seven post-merge workflows for
   signed recovery succeeded: 35155265340, 35155265432, 35155265435, 35155265425, 35155265446,
   35155265370, 35155265396. Previous DCO blocker is resolved by AR-1264.
+
+- 2026-09-16T22:08:29+00:00: AR-1263 complete after AR-1264 signed recovery. Feature commit
+  0acbc1d1a8bf43a226fda503fbd76f8afd48eb07 remains traceable to PR #205 and exact tree
+  1d0a5577da8cd2d6199d20980d951c468205c934, equal to signed protected main
+  69e8b064d3121a4bae1f672cdae9c0c8672000bc. All required feature-head checks and seven exact-main
+  post-merge workflows succeeded: 35155265340, 35155265432, 35155265435, 35155265425, 35155265446,
+  35155265370, 35155265396. AR-1264 supplied signed DCO recovery; no history rewrite or gate
+  weakening.
