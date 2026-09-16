@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add authenticated runtime context to the actual strict-replay CLI dispatch path.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Authenticated replay dispatch context",
-  "updated_at": "2026-09-16T22:34:25+00:00",
+  "updated_at": "2026-09-16T22:34:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1266-authenticated-replay"
 }
 ---
@@ -53,3 +53,6 @@ Preserve all prior blocked evidence; no fabricated launch authority or weakened 
   ReplayDispatchContext::issue is runtime-only and unused under -D warnings. This is compile
   hygiene, not behavioral failure; add narrow dead_code allowance and rerun. Worktree intentionally
   dirty with fresh AR-1266 runtime/CLI context files; no unmerged AR-1265 code reused.
+
+- 2026-09-16T22:34:34+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
