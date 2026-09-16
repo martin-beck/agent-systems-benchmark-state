@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 185,
+  "task_revision": 186,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T15:17:43+00:00",
+  "updated_at": "2026-09-16T15:18:03+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -545,3 +545,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T15:17:43+00:00: Recorded command exit 101; command argv SHA-256
   534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
+
+- 2026-09-16T15:18:03+00:00: Committed f3153d7 (SSH-signed+DCO): added bounded
+  RemoteListener::drain_until absolute deadline; drain refuses new sessions and completes when
+  active permits reach zero, with explicit timeout error. Real listener lifecycle drain test passes.
+  Branch rebased onto current origin/main (up to date). Full cargo test --locked --workspace
+  completed green; product tree clean. Remaining: independent exact-head review and required CI;
+  address/partition evidence remains transport-level abstraction, not netem.
