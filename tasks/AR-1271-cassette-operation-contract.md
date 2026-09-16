@@ -11,17 +11,17 @@
   "id": "AR-1271",
   "next_action": "Promote after dependency verification; implement the shared bounded cassette request/response operation contract and runtime/CLI adapters.",
   "observed_branch": "feature/ar-1271-cassette-operation-contract",
-  "observed_dirty": 0,
-  "observed_head": "",
+  "observed_dirty": 2,
+  "observed_head": "69e8b064d3121a4bae1f672cdae9c0c8672000bc",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1271.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define a dependency-neutral cassette request/response operation contract.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Dependency-neutral cassette operation contract",
-  "updated_at": "2026-09-16T23:13:28+00:00",
+  "updated_at": "2026-09-16T23:13:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1271-cassette-operation"
 }
 ---
