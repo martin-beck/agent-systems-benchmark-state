@@ -11,7 +11,7 @@
   "id": "AR-1231",
   "next_action": "Add executable adapter-facing cancellation/restart/no-fallback tests around StrictReplayExecutor; then run full applicable asb-agents/replay gates and prepare review.",
   "observed_branch": "feature/ar-1231",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "b48e09a8f339dcfb2eeed4e17d2638df87af12ab",
   "owner": "asb_ar1231_replay_seam",
   "plan": "../plans/AR-1231.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents through strict replay without provider egress or live fallback.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Strict replay execution and egress-isolation seam",
-  "updated_at": "2026-09-16T01:56:27+00:00",
+  "updated_at": "2026-09-16T01:56:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1231"
 }
 ---
