@@ -10,16 +10,16 @@
   "next_action": "Request independent review of 249dac1; AR-1251 transport fixture invocation remains a separate dependency.",
   "observed_branch": "feature/ar-1252-approved-isolated-runner",
   "observed_dirty": 0,
-  "observed_head": "249dac1183dfaf1c5b79cb1d51db1094d9b14fb6",
+  "observed_head": "f0f3d670cbc90b90364623353b966aa87fce97e7",
   "owner": "asb_ar1252_isolated_runner",
   "plan": "../plans/AR-1252.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:58:15+00:00",
+  "updated_at": "2026-09-16T11:58:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
