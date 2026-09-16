@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1232",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T08:32:44+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "994c6716904dc2f3d4b9fc186ea35490f236b869",
-  "owner": "asb_ar1232_loopback_worker",
+  "owner": "",
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 415,
+  "task_revision": 416,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T06:32:44+00:00",
+  "updated_at": "2026-09-16T06:32:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -1125,3 +1125,15 @@
   relay without changing dependencies or NetworkPolicy::Deny.
 
 - 2026-09-16T06:32:44+00:00: Claimed by asb_ar1232_loopback_worker.
+
+- 2026-09-16T06:32:47+00:00: AR-1232-only architecture audit complete. A safe private-network relay
+  requires two independently supervised endpoints: a host-side cassette TCP-to-Unix bridge and a
+  child-namespace Unix-to-loopback TCP bridge, with authenticated per-launch socket path, generation
+  fencing, bounded forwarding, and teardown tied to SandboxProcess success/timeout/crash/cancel.
+  Current asb-runtime spawn API accepts only the child command and has no reviewed relay
+  lifecycle/FD handoff seam; adding an ad hoc helper would be unsafe and would cross the existing
+  AR-1231/consumer contract boundary. No product changes made, NetworkPolicy::Deny unchanged, no
+  host networking or firewall mutation. Existing native 7/7 and executor 15/15 evidence remains
+  green. Next action: introduce the minimal reviewed relay lifecycle seam in AR-1232, then add
+  deterministic denial, stale-generation, duplicate, unrelated-process, and teardown tests before
+  reopening.
