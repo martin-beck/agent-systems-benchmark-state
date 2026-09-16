@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1248](tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | Define the strict-replay CLI consumer contract. | Review runtime-handoff integration at exact head 7a0a7cc; request independent re-review and rerun PR CI. CLI now binds resolved StrictReplayLaunchRecord to runtime-issued SidecarHandoff via StrictReplayLaunchBridge; malformed cassette and route-drift negatives pass. Runtime SandboxLaunchInput supervision remains owned by existing asb-agents/asb-runtime bridge. | asb_ar1232_lifecycle_router |
-| P0 | [AR-1252](tasks/AR-1252-approved-isolated-qualification-runner.md): Provision approved isolated qualification runner | Provision an approved isolated qualification runner for ASB executable evidence. | Add runner tests for digest/network-none/no-mount/cleanup and integrate with AR-1251; run full gates. | asb_ar1252_isolated_runner |
+| P0 | [AR-1252](tasks/AR-1252-approved-isolated-qualification-runner.md): Provision approved isolated qualification runner | Provision an approved isolated qualification runner for ASB executable evidence. | Add fixture-backed network-none/timeout/no-mount tests; run full gates and integrate with AR-1251. | asb_ar1252_isolated_runner |
 
 ## Open
 

@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-1252",
-  "next_action": "Add runner tests for digest/network-none/no-mount/cleanup and integrate with AR-1251; run full gates.",
+  "next_action": "Add fixture-backed network-none/timeout/no-mount tests; run full gates and integrate with AR-1251.",
   "observed_branch": "feature/ar-1252-approved-isolated-runner",
   "observed_dirty": 0,
   "observed_head": "12000665dec462c3e8537ff1424dea7691011a92",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:10:06+00:00",
+  "updated_at": "2026-09-16T11:10:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -84,3 +84,11 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
 
 - 2026-09-16T11:10:06+00:00: Recorded command exit 0; command argv SHA-256
   39059b7c1cd82b6a868a9664b24fb3304554af65573f82cb7ce48f4ad80d3937.
+
+- 2026-09-16T11:10:36+00:00: Runner wrapper now at signed+DCO head 1200066, pushed cleanly. Uses
+  immutable ubuntu@sha256:33ceb71981b602c1a7443a53469e4dba065f7503eab3078a2d7a57a2ab987517, verifies
+  docker image RepoDigest before launch, --network none, --read-only, cap-drop ALL,
+  no-new-privileges, private IPC/default PID, bounded memory/CPU/PIDs, no shell command vectors, and
+  only validated non-symlink artifact bind under /srv/data/projects. Positive /bin/true run passes;
+  symlink and shell vectors rejected. Initial exit-125 was invalid --pid private and is fixed.
+  Remaining fixture-backed network denial/timeout/no-mount evidence and integration pending.
