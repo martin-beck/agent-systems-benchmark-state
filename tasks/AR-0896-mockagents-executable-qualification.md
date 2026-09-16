@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-16T18:37:14+00:00",
+  "updated_at": "2026-09-16T18:37:17+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -186,3 +186,6 @@ synthetic fixture for black-box executable evidence.
 - 2026-09-16T18:36:38+00:00: Claimed by asb_ar0896_recovery_20260916.
 
 - 2026-09-16T18:37:14+00:00: Heartbeat by asb_ar0896_recovery_20260916.
+
+- 2026-09-16T18:37:17+00:00: Recorded command exit 0; command argv SHA-256
+  88078362f643c60ec110610fb4e94fe029c1e9b596d576478668ad0b278643fb.
