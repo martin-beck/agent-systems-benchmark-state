@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish strict-replay supervision integration.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Publish AR-1232 strict-replay supervision",
-  "updated_at": "2026-09-16T10:07:47+00:00",
+  "updated_at": "2026-09-16T10:07:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1244-publish"
 }
 ---
@@ -131,3 +131,6 @@ mutation.
   safely fail-closed: invalid pr-ref, then integration worktree not at approved base. Protected
   origin/main advanced to 5a2c151 via PR195, making PR193 base c6db21e stale; rebase required before
   merge.
+
+- 2026-09-16T10:07:57+00:00: Recorded command exit 0; command argv SHA-256
+  49521d5b50f2c5fe83793008dad1f051636cf7a007a6aa517032562d3bf7c1ca.
