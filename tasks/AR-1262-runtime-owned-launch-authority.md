@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned authority for supervised strict-replay execution.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-16T22:15:13+00:00",
+  "updated_at": "2026-09-16T22:15:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1262-runtime-authority"
 }
 ---
@@ -186,3 +186,6 @@ ownership and bounded lifecycle evidence.
   cargo test --workspace --locked --offline passes, including native sandbox 11/11, process
   boundary, schema and doc tests. The prior sandbox ScopeOwnership flake is resolved by AR-1263. No
   product dirty paths.
+
+- 2026-09-16T22:15:45+00:00: Recorded command exit 0; command argv SHA-256
+  bbd5b417408210f5ffcfef26e2080cabb45f1d5581c2d0e07e4546c2bc00d99f.
