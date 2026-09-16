@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify MockAgents through the pinned Python sandbox.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Qualify MockAgents through pinned Python transport",
-  "updated_at": "2026-09-16T19:52:34+00:00",
+  "updated_at": "2026-09-16T19:52:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1254"
 }
 ---
@@ -167,3 +167,6 @@ Keep fixtures, runtimes, caches, and evidence under `/srv/data/projects`.
   implementation claim until those prerequisites are satisfied.
 
 - 2026-09-16T19:52:34+00:00: Claimed by asb_ar1254_dependency_audit_20260916.
+
+- 2026-09-16T19:52:46+00:00: Recorded command exit 0; command argv SHA-256
+  47907f45887314543d07318b3675282ed96943304e82ab80bddaec1fa8dffad3.
