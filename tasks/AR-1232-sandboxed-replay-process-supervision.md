@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1232",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T06:56:01+00:00",
+  "claim_expires": "2026-09-16T06:56:59+00:00",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 371,
+  "task_revision": 372,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T04:56:28+00:00",
+  "updated_at": "2026-09-16T04:56:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -980,3 +980,5 @@
   mutation this turn; exact signed head remains d7ca82f clean/pushed. Remaining gap is wiring this
   executor service to a native child process lifecycle, which requires a transport seam not present
   in AR-1232.
+
+- 2026-09-16T04:56:59+00:00: Heartbeat by asb_ar1232_sandbox_supervision.
