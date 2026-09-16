@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1232",
   "checkpoint_commit": "2543a4c213bc7a1f9b426cb8c0b95d815a0bf7e4",
-  "claim_expires": "2026-09-16T10:04:23+00:00",
+  "claim_expires": "2026-09-16T10:07:17+00:00",
   "depends_on": [
     "AR-1232"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish strict-replay supervision integration.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Publish AR-1232 strict-replay supervision",
-  "updated_at": "2026-09-16T09:36:48+00:00",
+  "updated_at": "2026-09-16T09:37:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1244-publish"
 }
 ---
@@ -44,3 +44,5 @@ mutation.
 
 - 2026-09-16T09:36:48+00:00: Recorded command exit 0; command argv SHA-256
   36d8d1da6c49683d9c8890ae05a0374afc1cb4a573e8fb16b0bfd8bd80dd90a8.
+
+- 2026-09-16T09:37:17+00:00: Heartbeat by asb_ar1244_publish_1232.
