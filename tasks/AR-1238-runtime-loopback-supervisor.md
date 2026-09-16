@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1238-runtime-loopback-supervisor",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T10:08:51+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1100",
     "AR-1231"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1238-runtime-loopback-supervisor",
   "observed_dirty": 0,
   "observed_head": "d9f42ecb2a205b86250233f4f4c75688a997c063",
-  "owner": "asb_ar1238_bwrap_relay_worker",
+  "owner": "",
   "plan": "../plans/AR-1238.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide the runtime-owned private-namespace supervisor for loopback replay.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Runtime-owned loopback supervisor",
-  "updated_at": "2026-09-16T08:11:11+00:00",
+  "updated_at": "2026-09-16T08:11:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1238"
 }
 ---
@@ -133,3 +133,10 @@ remaining work is launcher integration and real sidecar forwarding, not a host c
   PinnedCommand::new_verified and requires an explicit trusted supervisor pin; no mutable /usr
   fallback. Full locked workspace tests, fmt, clippy, rustdoc, and release build pass. Sidecar HTTP
   relay test is 3/3 in 4a23b97.
+
+- 2026-09-16T08:11:14+00:00: AR-1238 progress: 418f393 adds immutable SHA-256 executable
+  verification and refuses missing supervisor pin; full locked workspace tests, fmt, clippy, rustdoc
+  and release build pass. 4a23b97 proves authenticated generation handshake and HTTP forwarding
+  (3/3). Remaining native test/bundle blocker: asb-bundle must supply signed manifest/payload paths
+  for both binaries before SandboxBackend can run them in bwrap; this worker did not touch
+  asb-bundle or other ARs. No host sharing/firewall/ambient ip/credentials.
