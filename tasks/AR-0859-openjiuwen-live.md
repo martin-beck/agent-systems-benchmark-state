@@ -15,11 +15,11 @@
   "plan": "../plans/AR-0859.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 254,
+  "task_revision": 255,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-16T07:11:03+00:00",
+  "updated_at": "2026-09-16T07:12:27+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -874,3 +874,7 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 - 2026-09-16T07:11:03+00:00: Released blocked and ownerless. Complete hashed dependency closure is
   available, but live qualification requires an approved immutable interpreter/image matching the
   reviewed identity contract; preserve fail-closed behavior.
+
+- 2026-09-16T07:12:27+00:00: Implement reviewed live-test identity contract for explicit managed
+  CPython 3.11 path+digest and add positive/negative identity tests; preserve fail-closed site
+  isolation.
