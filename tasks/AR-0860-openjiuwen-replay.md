@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict OpenJiuwen replay.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Qualify strict OpenJiuwen replay",
-  "updated_at": "2026-09-16T08:20:47+00:00",
+  "updated_at": "2026-09-16T08:21:08+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-replay"
 }
 ---
@@ -30,3 +30,6 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   qualification.
 
 - 2026-09-16T08:20:47+00:00: Claimed by asb_ar1232_lifecycle_router.
+
+- 2026-09-16T08:21:08+00:00: Recorded command exit 0; command argv SHA-256
+  98ed352c91f8b0ba667315acdfee97f3d83fd431eb6ec7af3ce4d28014c6af87.
