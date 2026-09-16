@@ -9,7 +9,7 @@
   ],
   "id": "AR-0899",
   "next_action": "Review clean exact head 62d9f12; rerun applicable gates after disposable target cleanup, then publish PR only after independent review.",
-  "observed_branch": "DETACHED",
+  "observed_branch": "fix/gitleaks-revision-config-integrity",
   "observed_dirty": 0,
   "observed_head": "67375520c60a31a2277c535c1ee1eb051c5f9f5d",
   "owner": "asb_ar0899_gitleaks",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve GitHub issue 118 by making local and CI Gitleaks scans deterministic and config changes fail closed.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Align and harden Gitleaks execution",
-  "updated_at": "2026-09-16T11:55:09+00:00",
+  "updated_at": "2026-09-16T11:55:16+00:00",
   "worktree_key": "agent-systems-benchmark-gitleaks-revision-config-integrity"
 }
 ---
