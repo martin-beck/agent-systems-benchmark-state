@@ -11,17 +11,17 @@
   "id": "AR-0813",
   "next_action": "Add missing plan-mandated network fault/address coverage or link reviewed external-harness evidence: IPv4/IPv6 bind/address changes, packet loss/reorder, network partitions, half-open/reconnect storms, protocol skew/downgrade, port reuse; also implement/verify keepalive, rate limiting and graceful drain. Repair unrelated asb-metrics mismatch, rerun full workspace gates, then seek publication review.",
   "observed_branch": "feature/remote-control-transport",
-  "observed_dirty": 1,
-  "observed_head": "4c2f051eb88ef91eb2a1fd06fcd552404f776032",
+  "observed_dirty": 0,
+  "observed_head": "3d9e54f6b2ef77430917c0e8e30e30effcaca26d",
   "owner": "asb_ar0813_remote_transport",
   "plan": "../plans/AR-0813.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 127,
+  "task_revision": 128,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T15:01:13+00:00",
+  "updated_at": "2026-09-16T15:01:22+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
