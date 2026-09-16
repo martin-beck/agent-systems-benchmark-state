@@ -9,7 +9,7 @@
     "AR-1230"
   ],
   "id": "AR-1232",
-  "next_action": "d7ca82f focused strict_replay module now passes 15/15, covering qualified cassette execution, duplicate-attempt rejection, stale route rejection, and recover_after_restart closure. Native child lifecycle/egress evidence remains 7/7 at a3b6768; native StrictReplayExecutor service integration is still the explicit blocker before re-review.",
+  "next_action": "Native executor-service attempt is blocked by runtime policy: SandboxSpec accepts only NetworkPolicy::Deny, so loopback cassette listener is unreachable (child curl exit 7). Keep strict replay native harness 7/7 and 15/15 executor unit gates green; require approved loopback-only sandbox transport seam before further implementation/re-review.",
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "994c6716904dc2f3d4b9fc186ea35490f236b869",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 382,
+  "task_revision": 383,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T05:01:05+00:00",
+  "updated_at": "2026-09-16T05:01:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -1005,3 +1005,10 @@
 
 - 2026-09-16T05:01:05+00:00: Recorded command exit 0; command argv SHA-256
   39cf5398131881d6bebfeb6940a170dba53287cbad205a984f34c80a6dbe58e7.
+
+- 2026-09-16T05:01:34+00:00: Concrete failure captured: experimental native child-to-cassette
+  listener test compiled but child exited 7 and never connected because runtime SandboxSpec rejects
+  every policy except NetworkPolicy::Deny; no loopback-only policy exists. Unverified test was
+  reverted from behavior; focused native harness passes 7/7 and executor unit suite 15/15. Product
+  head 994c671 is signed/DCO, clean, pushed. This is an architecture/runtime capability blocker, not
+  a test waiver.
