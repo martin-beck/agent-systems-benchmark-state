@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1234",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T08:49:02+00:00",
   "depends_on": [
     "AR-1100",
     "AR-1231"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1234",
   "observed_dirty": 0,
   "observed_head": "36a458020483c1b4aa204e491a936f00acd5706d",
-  "owner": "",
+  "owner": "asb_ar1234_worker",
   "plan": "../plans/AR-1234.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide an approved runtime-owned loopback-only sandbox namespace capability.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Runtime-owned loopback namespace capability",
-  "updated_at": "2026-09-16T06:48:57+00:00",
+  "updated_at": "2026-09-16T06:49:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1234"
 }
 ---
@@ -79,3 +79,5 @@
 - 2026-09-16T06:48:57+00:00: AR-1234 worker authorized to continue safe runtime-owned loopback
   capability audit and implementation; preserve fail-closed behavior and use only loopback-scoped
   mechanisms.
+
+- 2026-09-16T06:49:02+00:00: Claimed by asb_ar1234_worker.
