@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1249-mockagents-qualification-evidence",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T12:39:55+00:00",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1249-mockagents-qualification-evidence",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "asb_ar1249_mockagents_qualification",
   "plan": "../plans/AR-1249.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Complete missing evidence for the pinned MockAgents executable qualification.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Complete MockAgents executable qualification evidence",
-  "updated_at": "2026-09-16T10:39:22+00:00",
+  "updated_at": "2026-09-16T10:39:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1249"
 }
 ---
@@ -32,3 +32,5 @@ network denial, privacy, signature, DCO, and exact-tree gates.
 
 - 2026-09-16T10:39:22+00:00: AR-0896 rerun succeeded but durable acceptance gaps remain; successor
   owns missing executable qualification evidence.
+
+- 2026-09-16T10:39:55+00:00: Claimed by asb_ar1249_mockagents_qualification.
