@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 222,
+  "task_revision": 223,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T03:49:03+00:00",
+  "updated_at": "2026-09-16T03:49:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -590,3 +590,6 @@
   harness passes 4/4, including real authenticated loopback launch, command mismatch pre-spawn
   rejection, authenticated timeout, and terminal cancellation/reaping. Product branch is clean and
   pushed. Prior state-lock timeout is resolved.
+
+- 2026-09-16T03:49:27+00:00: Recorded command exit 0; command argv SHA-256
+  b9ac734ca16163fd975a9b987b8e6eb797e697336a2a909b9939b9a03e689422.
