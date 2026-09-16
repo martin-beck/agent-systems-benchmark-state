@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1236.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide a runtime-owned private-namespace loopback sidecar capability.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Runtime-owned loopback sidecar capability",
-  "updated_at": "2026-09-16T07:23:24+00:00",
+  "updated_at": "2026-09-16T07:27:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1236"
 }
 ---
@@ -63,3 +63,6 @@ privacy, policy, native, signature, and exact-head gates.
   capability remains insufficient for actual in-namespace TCP bridge: rootless unshare -Urn has
   loopback DOWN and no reviewed launcher handoff exists. No host-network sharing, firewall mutation,
   ambient ip, privileged helper, credentials, or unrelated AR changed.
+
+- 2026-09-16T07:27:05+00:00: Authorized next implementation pass for the specified runtime-issued
+  sidecar handoff contract.
