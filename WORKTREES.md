@@ -4,8 +4,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 
 | Worktree | Branch | Head | Dirty | vs origin/main |
 | --- | --- | --- | ---: | --- |
-| `agent-systems-benchmark` | `main` | `bd7d10d4a760` | 1 | behind 314, ahead 1 |
-| changed files | - | - | - | `ProvisionedControlServer` |
+| `agent-systems-benchmark` | `main` | `bd7d10d4a760` | 4 | behind 314, ahead 1 |
+| changed files | - | - | - | `docs/QUALITY_GATES.md`, `tools/quality/check_dco.py`, `tools/quality/test_failure_paths.py`, `ProvisionedControlServer` |
 | `agent-systems-benchmark-agent-aider` | `feature/agent-aider` | `da81ead6932c` | 0 | behind 601, ahead 0 |
 | `agent-systems-benchmark-agent-codex` | `feature/agent-codex` | `eb03bd9d9ed5` | 0 | behind 589, ahead 0 |
 | `agent-systems-benchmark-agent-gemini` | `feature/agent-gemini` | `d381d340163e` | 0 | behind 585, ahead 0 |
@@ -45,6 +45,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1241` | `feature/ar-1241-native-isolation-matrix` | `7523fde1d87e` | 0 | behind 314, ahead 15 |
 | `agent-systems-benchmark-ar-1243` | `feature/ar-1243` | `054ff82dd584` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-ar-1243-packaging` | `feature/ar-1243-packaging` | `1e1b0f3a2fca` | 0 | behind 5, ahead 0 |
+| `agent-systems-benchmark-ar-1245` | `fix/ar-1245-postmerge-dco-evidence` | `3e12d64e8e6e` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 396, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 499, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 393, ahead 0 |

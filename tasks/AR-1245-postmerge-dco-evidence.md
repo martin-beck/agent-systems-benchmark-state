@@ -11,16 +11,16 @@
   "next_action": "Monitor PR #194 required checks; merge only after all protected checks pass.",
   "observed_branch": "fix/ar-1245-postmerge-dco-evidence",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "3e12d64e8e6e7ab11da25213d07e1c3512673e92",
   "owner": "asb_ar1237_launch_bridge_worker",
   "plan": "../plans/AR-1245.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair DCO admission for the immutable PR-192 GitHub merge while preserving strict future checks.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Post-merge DCO admission evidence",
-  "updated_at": "2026-09-16T09:41:38+00:00",
+  "updated_at": "2026-09-16T09:44:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1245"
 }
 ---
