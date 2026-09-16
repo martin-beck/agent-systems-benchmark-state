@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0813",
-  "next_action": "Post-merge 14b604f is GitHub-authored without Signed-off-by; coordinate signed protected-main recovery, then rerun exact-main policy and all post-merge gates before closing AR-0813.",
+  "next_action": "Create/promote successor for unsigned merge 14b604f; perform signed protected-main recovery and rerun exact-main policy before closing AR-0813.",
   "observed_branch": "feature/remote-control-transport",
   "observed_dirty": 0,
   "observed_head": "b7d9e142d684f1fa65fc3f52258ec46585194950",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 300,
+  "task_revision": 301,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T16:34:45+00:00",
+  "updated_at": "2026-09-16T16:37:27+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -911,3 +911,9 @@ Implementation has not started. Read the linked plan before claiming.
   trailer, so merge-integrity acceptance is not met. Post-merge workflows started: Repository
   quality 35122682670, hosted 35122682569, AArch64 35122682415, formal 35122682399, Rust
   35122682366, fault 35122682278; do not close until signed recovery/policy green.
+
+- 2026-09-16T16:37:27+00:00: No reusable ownerless repair AR matches this fresh PR202
+  merge-integrity incident: AR-1226 addresses historical stale-base merge-tree mismatch;
+  AR-1242/1246 are done. Existing post-merge merge commit 14b604f remains GitHub-authored without
+  Signed-off-by. Coordinator must create/promote narrowly scoped successor before signed recovery;
+  AR-0813 remains in progress.
