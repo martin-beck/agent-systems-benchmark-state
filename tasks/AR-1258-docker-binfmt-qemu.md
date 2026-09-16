@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision and verify Docker binfmt/QEMU for multiarch qualification.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Provision Docker binfmt/QEMU capability",
-  "updated_at": "2026-09-16T14:05:11+00:00",
+  "updated_at": "2026-09-16T14:05:14+00:00",
   "worktree_key": "agent-systems-benchmark-docker-binfmt-qemu"
 }
 ---
@@ -29,3 +29,6 @@ Provide the independent Docker binfmt/QEMU capability required by multiarch qual
 - 2026-09-16T14:04:54+00:00: Claimed by asb_ar1024_lifecycle_router.
 
 - 2026-09-16T14:05:11+00:00: Heartbeat by asb_ar1024_lifecycle_router.
+
+- 2026-09-16T14:05:14+00:00: Recorded command exit 1; command argv SHA-256
+  2121e856a852757334860c364f29bdbfaf6e15952283ab8634a47ae79e2e03ce.
