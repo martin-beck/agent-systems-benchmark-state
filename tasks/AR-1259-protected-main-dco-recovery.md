@@ -2,7 +2,7 @@
 {
   "branch": "repair/pr202-protected-main-dco",
   "checkpoint_commit": "14b604fec262575496f8838db1456679b1b14bbf",
-  "claim_expires": "2026-09-16T19:08:07+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1242"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "repair/pr202-protected-main-dco",
   "observed_dirty": 0,
   "observed_head": "8b81be45b1cf3e2f42540fae8c623074bbacaf88",
-  "owner": "asb_ar1259_signed_recovery",
+  "owner": "",
   "plan": "../plans/AR-1259.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Recover a signed protected-main DCO boundary after the unsigned PR202 web merge.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Protected-main DCO recovery for PR202",
-  "updated_at": "2026-09-16T17:22:40+00:00",
+  "updated_at": "2026-09-16T17:23:05+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-dco-1259"
 }
 ---
@@ -126,3 +126,9 @@ Create a signed, forward-only protected-main recovery for the unsigned PR202 mer
 
 - 2026-09-16T17:22:40+00:00: Recorded command exit 0; command argv SHA-256
   2e524472f591d89ea56dba5b65f7ce72944e872eac2e61a984ebcfca1e5eebf1.
+
+- 2026-09-16T17:23:05+00:00: Completed signed forward-only recovery: merge
+  0a808a635d85fdc4a43b575e3711ef23b38089e3, parents 8b81be4 and 7edda7d, exact tree 6a97f467, SSH
+  signature Good and matching DCO. Protected-main repository policy passed. All seven post-merge
+  workflows succeeded: formal 35126795008, Rust 35126795006, hosted 35126794959, fault 35126794945,
+  headers 35126794930, quality 35126794907, AArch64 35126794893.
