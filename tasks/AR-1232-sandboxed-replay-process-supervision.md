@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 389,
+  "task_revision": 390,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T06:16:21+00:00",
+  "updated_at": "2026-09-16T06:18:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -1042,3 +1042,8 @@
   suite 15/15. Next action: add/review an approved loopback-only transport seam that keeps
   provider/ambient egress denied, then rerun the commented child-to-cassette integration and full
   locked gates.
+
+- 2026-09-16T06:18:26+00:00: User-authorized one-time validation: host-network sharing may be used
+  only inside a deny-by-default wrapper that permits the intended loopback cassette endpoint/port,
+  blocks provider/external/ambient egress, uses no credentials, and records teardown/revocation
+  evidence. Reopen for this scoped implementation attempt.
