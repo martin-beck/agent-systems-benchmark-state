@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision pinned Python transport fixture runtime.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Provision pinned Python transport fixture runtime",
-  "updated_at": "2026-09-16T13:25:08+00:00",
+  "updated_at": "2026-09-16T13:25:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1253"
 }
 ---
@@ -84,3 +84,6 @@ Keep runtime images, caches, provenance, and all test activity under `/srv/data/
   plus unknown fields and digest drift. Worktree clean, diff check clean, all commits
   SSH-signed+DCO. Focused runtime tests 2/2 and full llm-double-spike suite 17/17 pass;
   privacy/isolation/image provenance evidence remains intact.
+
+- 2026-09-16T13:25:20+00:00: Recorded command exit 0; command argv SHA-256
+  54c495f1a23c489c31046d3ee4739bbe6780949274c8adc043ada570f35a7cab.
