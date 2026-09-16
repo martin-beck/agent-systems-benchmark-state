@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1256-bundled-mockagents-isolation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T16:02:19+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1252",
     "AR-1253"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1256-bundled-mockagents-isolation",
   "observed_dirty": 0,
   "observed_head": "a0befc0ff247a42b8d796af161b58b1011de8377",
-  "owner": "asb_ar1256_bundled_isolation",
+  "owner": "",
   "plan": "../plans/AR-1256.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Execute bundled MockAgents transport in isolation.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Execute bundled MockAgents transport in isolation",
-  "updated_at": "2026-09-16T14:02:56+00:00",
+  "updated_at": "2026-09-16T14:03:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1256"
 }
 ---
@@ -54,3 +54,12 @@ Keep bundles, images, QEMU artifacts, caches, and evidence under `/srv/data/proj
 
 - 2026-09-16T14:02:56+00:00: Recorded command exit 255; command argv SHA-256
   fa0a4fdbc25ece7f62f890634d0af1222fd8aa578ff5bafb07439f441a1ad07f.
+
+- 2026-09-16T14:03:21+00:00: Released blocked/ownerless. Official arm64 Python image pulled and
+  verified immutable:
+  python@sha256:ae8c3b6bb3d02ffffa2bee0bed8c7c99b9478bd042ff4d79a5bbd6eb10398864, architecture
+  arm64/linux. Docker --platform linux/arm64 --network none probe failed before test execution with
+  exec /usr/local/bin/python3: no such file or directory, proving the daemon lacks registered
+  binfmt/QEMU emulation. Host qemu-aarch64 exists but is explicitly not substituted because it would
+  violate container provenance. Need approved Docker binfmt/QEMU setup or a digest-pinned
+  QEMU-capable image before bundled transport evidence can proceed.
