@@ -11,16 +11,16 @@
   "next_action": "Run native bwrap end-to-end matrix using VerifiedBundle-provided supervisor/sidecar paths; current runtime API now confines paths and verifies content hashes.",
   "observed_branch": "feature/ar-1238-runtime-loopback-supervisor",
   "observed_dirty": 0,
-  "observed_head": "b994e03331feae6f7db9cb9fcaa991c5abf23dc0",
+  "observed_head": "c03ad36c4f55d04d2764b82179035681b7c94193",
   "owner": "",
   "plan": "../plans/AR-1238.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "blocked",
   "summary": "Provide the runtime-owned private-namespace supervisor for loopback replay.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Runtime-owned loopback supervisor",
-  "updated_at": "2026-09-16T08:22:12+00:00",
+  "updated_at": "2026-09-16T08:22:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1238"
 }
 ---
