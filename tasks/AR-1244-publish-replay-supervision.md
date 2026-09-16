@@ -7,7 +7,7 @@
     "AR-1232"
   ],
   "id": "AR-1244",
-  "next_action": "Review PR193 exact head 147acd6 and await all required CI before signed protected-main merge.",
+  "next_action": "Run fresh PR193 CI at ca5f7fa after formal lock repair; review exact head before merge.",
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "2543a4c213bc7a1f9b426cb8c0b95d815a0bf7e4",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish strict-replay supervision integration.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Publish AR-1232 strict-replay supervision",
-  "updated_at": "2026-09-16T09:48:18+00:00",
+  "updated_at": "2026-09-16T09:48:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1244-publish"
 }
 ---
@@ -79,3 +79,9 @@ mutation.
 
 - 2026-09-16T09:48:18+00:00: Recorded command exit 0; command argv SHA-256
   f4b42b17f0ea0dacd9de14655c5cbc0d51b03f8a64f9d1d6f4466f3152c8ea99.
+
+- 2026-09-16T09:48:41+00:00: PR193 exact head advanced 147acd6 -> ca5f7fa. Regenerated
+  formal/Cargo.lock offline: added asb-runtime sha2 dependency and refreshed bitflags 2.13.2 (3
+  insertions/2 deletions); signed SSH+DCO commit ca5f7fa pushed to feature/ar1244-publish-1232.
+  Prior full formal test had one transient ExecutableFileBusy in offline sentinel; isolated rerun
+  passed, so no product failure.
