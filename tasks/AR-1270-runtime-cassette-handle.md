@@ -11,17 +11,17 @@
   "id": "AR-1270",
   "next_action": "Promote after dependency verification; define the runtime-issued cassette-service handle and integrate real supervised replay traffic.",
   "observed_branch": "feature/ar-1270-runtime-cassette-handle",
-  "observed_dirty": 0,
-  "observed_head": "",
+  "observed_dirty": 2,
+  "observed_head": "69e8b064d3121a4bae1f672cdae9c0c8672000bc",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1270.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-issued cassette-service handle for supervised strict replay.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Runtime-issued cassette-service handle",
-  "updated_at": "2026-09-16T23:06:03+00:00",
+  "updated_at": "2026-09-16T23:06:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1270-runtime-cassette-handle"
 }
 ---
