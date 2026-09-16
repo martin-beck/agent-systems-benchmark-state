@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 111,
+  "task_revision": 112,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T13:05:43+00:00",
+  "updated_at": "2026-09-16T13:08:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -344,3 +344,6 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
   refreshed PR checks green after rebasing stale base. Post-merge runs started: 35099645723 Rust,
   35099645731 hosted portability, 35099645713 AArch64, 35099645777 formal, 35099645699 fault
   assurance, 35099645736 repository quality; headers 35099645875 green.
+
+- 2026-09-16T13:08:07+00:00: Recorded command exit 0; command argv SHA-256
+  f666e483c5a828c75e9e3b215d3b00b7684c45798aa2e15c1885be7b99093fe1.
