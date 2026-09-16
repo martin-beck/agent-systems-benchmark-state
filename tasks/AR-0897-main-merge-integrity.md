@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-16T04:53:01+00:00",
+  "updated_at": "2026-09-16T04:53:21+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -270,3 +270,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T04:53:01+00:00: Recorded command exit 0; command argv SHA-256
   4c88914415b7792072af57840949347e378ffe84688c078fd7b79f948e9fa324.
+
+- 2026-09-16T04:53:21+00:00: Rebased signed merge-integrity implementation onto current origin/main
+  00f3763; resolved docs/policy conflict, fixed malformed repository_policy block, and committed
+  signed/DCO repair aceb191. Focused integration tests 9/9, repository policy, py_compile, cargo
+  fmt, and asb-protocol lib 40/40 pass. Full workspace cargo test failed only because /srv/data
+  reached no-space-on-device; removed only this worktree target/ build artifact via handoffctl.
+  Next: run remaining applicable policy/integration gates, independently review exact clean head,
+  publish PR through handoffctl; do not use GitHub web merge.
