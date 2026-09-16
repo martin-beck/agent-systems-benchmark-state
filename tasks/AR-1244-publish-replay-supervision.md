@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish strict-replay supervision integration.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Publish AR-1232 strict-replay supervision",
-  "updated_at": "2026-09-16T10:06:29+00:00",
+  "updated_at": "2026-09-16T10:06:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1244-publish"
 }
 ---
@@ -119,3 +119,6 @@ mutation.
 
 - 2026-09-16T10:06:29+00:00: Recorded command exit 1; command argv SHA-256
   200be2d97d53c168aed2c485a4c8937218851d4e615b62f1d6dcdc875303c3dc.
+
+- 2026-09-16T10:06:40+00:00: Recorded command exit 1; command argv SHA-256
+  cac4af33f565d5904e4fc1afc9f22ad2c0cd8fa278ffd47aab634b141a02acf8.
