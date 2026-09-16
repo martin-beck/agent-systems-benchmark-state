@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 106,
+  "task_revision": 107,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T11:19:08+00:00",
+  "updated_at": "2026-09-16T11:19:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -296,3 +296,6 @@ formal, privacy, signature, DCO, and exact-tree gates.
   pass; prior contract consistency and full locked offline workspace pass remain valid. One
   intermediate test failure was expected exit code mismatch (asserted 2, project validation is 3);
   corrected and rerun green. Clean tree.
+
+- 2026-09-16T11:19:18+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
