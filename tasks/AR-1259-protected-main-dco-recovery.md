@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover a signed protected-main DCO boundary after the unsigned PR202 web merge.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Protected-main DCO recovery for PR202",
-  "updated_at": "2026-09-16T16:55:08+00:00",
+  "updated_at": "2026-09-16T17:01:55+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-dco-1259"
 }
 ---
@@ -75,3 +75,6 @@ Create a signed, forward-only protected-main recovery for the unsigned PR202 mer
   14b604f and b7d21e0. Remote commit is GitHub-authored; local SSH verification reports E and RSA
   key unavailable, and merge message has no Signed-off-by. Repository quality post-merge run
   35124853761 already failed; other post-merge workflows remain in progress. AR-1259 stays open.
+
+- 2026-09-16T17:01:55+00:00: Recorded command exit 0; command argv SHA-256
+  7f62bf4391bbe415c88a0484f2fba40b5e5ebeadfea926aeefeb2469dbf92193.
