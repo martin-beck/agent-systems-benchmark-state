@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1252-approved-isolated-runner",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T14:51:12+00:00",
   "depends_on": [
     "AR-0003"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1252-approved-isolated-runner",
   "observed_dirty": 0,
   "observed_head": "f0f3d670cbc90b90364623353b966aa87fce97e7",
-  "owner": "",
+  "owner": "asb_ar1252_isolated_runner",
   "plan": "../plans/AR-1252.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 88,
+  "task_revision": 89,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T12:51:09+00:00",
+  "updated_at": "2026-09-16T12:51:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -266,3 +266,5 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
 
 - 2026-09-16T12:51:09+00:00: Cached Python runtime is an immutable local digest compatible with the
   runner plan; add an explicit reviewed image allowlist without mutable tags.
+
+- 2026-09-16T12:51:12+00:00: Claimed by asb_ar1252_isolated_runner.
