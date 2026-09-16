@@ -11,7 +11,7 @@
   "id": "AR-0813",
   "next_action": "Address remaining strict plan gaps before publication: add/justify TCP keepalive and close the drain-vs-admit atomic race (drain can begin between post-accept check and permit acquisition), with regression tests. Then rerun full locked workspace gates and request publication.",
   "observed_branch": "feature/remote-control-transport",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "568257461ec6da9ea5b867b836b4c991b4fa66f2",
   "owner": "asb_ar0813_remote_transport",
   "plan": "../plans/AR-0813.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 201,
+  "task_revision": 202,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T15:24:55+00:00",
+  "updated_at": "2026-09-16T15:25:06+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
