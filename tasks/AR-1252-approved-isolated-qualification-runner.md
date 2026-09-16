@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1252-approved-isolated-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T13:05:01+00:00",
+  "claim_expires": "2026-09-16T13:22:10+00:00",
   "depends_on": [
     "AR-0003"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:22:03+00:00",
+  "updated_at": "2026-09-16T11:22:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -149,3 +149,5 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
   Network-none probe with pinned artifact digest returns network-none-verified; isolation tests 2/2
   pass; timeout probe returns 124. Descendant cleanup evidence and AR-1251 integration remain
   outstanding.
+
+- 2026-09-16T11:22:10+00:00: Heartbeat by asb_ar1252_isolated_runner.
