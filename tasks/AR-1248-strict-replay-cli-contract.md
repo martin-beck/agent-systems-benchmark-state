@@ -8,7 +8,7 @@
     "AR-1232"
   ],
   "id": "AR-1248",
-  "next_action": "Runtime seam remains review blocker: add a CLI-facing constructor/integration that consumes runtime-issued SidecarHandoff/SandboxLaunchInput, or coordinator-approved narrow follow-up; add malformed cassette and executor lifecycle/egress/cancel/restart/no-fallback tests, then rerun all gates.",
+  "next_action": "Review runtime-handoff integration at exact head 7a0a7cc; request independent re-review and rerun PR CI. CLI now binds resolved StrictReplayLaunchRecord to runtime-issued SidecarHandoff via StrictReplayLaunchBridge; malformed cassette and route-drift negatives pass. Runtime SandboxLaunchInput supervision remains owned by existing asb-agents/asb-runtime bridge.",
   "observed_branch": "feature/ar-1248-strict-replay-cli-contract",
   "observed_dirty": 0,
   "observed_head": "7a0a7cc5c14d596acd2477bf0a305823ddf2a48e",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 86,
+  "task_revision": 87,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T11:04:51+00:00",
+  "updated_at": "2026-09-16T11:05:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -240,3 +240,11 @@ formal, privacy, signature, DCO, and exact-tree gates.
 
 - 2026-09-16T11:04:51+00:00: Recorded command exit 0; command argv SHA-256
   109d36131c59cbd435b0b3a2033e7f16578455597393f5a2e79fc5e1917d7901.
+
+- 2026-09-16T11:05:15+00:00: Signed commit 7a0a7cc pushed to PR #197. Added
+  bind_runtime_handoff(StrictReplayLaunchRecord, SidecarHandoff), fail-closed HandoffMismatch, safe
+  empty-cassette handling, direct runtime-issued handoff success/route-drift test, and malformed
+  cassette digest-valid rejection. Focused cargo test -p asb-cli --lib replay_contract --locked
+  --offline: 3/3 pass; clippy -D warnings pass; contract_consistency --run-tests pass (all
+  registered artifacts); full cargo test --workspace --locked --offline pass. Clean tree and G/DCO
+  verified.
