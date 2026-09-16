@@ -11,17 +11,17 @@
   "id": "AR-1232",
   "next_action": "Full locked workspace gate passed on current branch; run independent exact-head review of lifecycle/replay changes and prepare PR after descendant egress evidence is confirmed or explicitly bounded.",
   "observed_branch": "feature/ar-1232",
-  "observed_dirty": 1,
-  "observed_head": "60a59ebb31381aca96735b3595627a8e82ed8193",
+  "observed_dirty": 0,
+  "observed_head": "6550eb47a0e204e534c9ecab76591af93554f5e8",
   "owner": "asb_ar1232_sandbox_supervision",
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 257,
+  "task_revision": 258,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T04:02:58+00:00",
+  "updated_at": "2026-09-16T04:03:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
