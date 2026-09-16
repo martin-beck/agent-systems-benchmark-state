@@ -8,7 +8,7 @@
     "AR-0898"
   ],
   "id": "AR-0899",
-  "next_action": "Merge PR #198 via signed local integration helper; then verify protected main signature/DCO/tree and all post-merge workflows.",
+  "next_action": "Monitor post-merge workflows for main 3e8d589 until terminal; verify exact tree/signature/DCO/policy, then release AR-0899 done.",
   "observed_branch": "fix/gitleaks-revision-config-integrity",
   "observed_dirty": 0,
   "observed_head": "67375520c60a31a2277c535c1ee1eb051c5f9f5d",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve GitHub issue 118 by making local and CI Gitleaks scans deterministic and config changes fail closed.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Align and harden Gitleaks execution",
-  "updated_at": "2026-09-16T12:07:42+00:00",
+  "updated_at": "2026-09-16T12:07:54+00:00",
   "worktree_key": "agent-systems-benchmark-gitleaks-revision-config-integrity"
 }
 ---
@@ -225,3 +225,11 @@ Implementation has not started. Read the linked plan before claiming.
   4ddea3a63c0d31471b625bc1b6afe97fd9cf4ed9e9ee80db684400de0848cd57.
 
 - 2026-09-16T12:07:42+00:00: Heartbeat by asb_ar0899_gitleaks.
+
+- 2026-09-16T12:07:54+00:00: Protected signed local merge published successfully: merge
+  3e8d58994eb2b3faeda9449e4186498cf86eeb86, parents 128ecddbfdb7fcfff6e257adf3237b5866aca481 and
+  67375520c60a31a2277c535c1ee1eb051c5f9f5d, tree b28cf36a6f4fabc003e5142f21b21b4b8da46a5d. Remote
+  refs verified; merge signature valid and DCO trailer exact. PR #198 was published from exact head;
+  post-merge runs: 35093997162 AArch64, 35093997092 formal, 35093997126 hosted portability,
+  35093997081 repository quality, 35093997041 Rust, 35093997061 fault assurance; all started,
+  headers 35093997097 green.
