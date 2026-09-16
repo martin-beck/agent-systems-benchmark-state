@@ -11,16 +11,16 @@
   "next_action": "Implement missing MockAgents hostile lifecycle, network-denial, repeat-clean-state, and emulated-AArch64 qualification evidence.",
   "observed_branch": "feature/ar-1249-mockagents-qualification-evidence",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "128ecddbfdb7fcfff6e257adf3237b5866aca481",
   "owner": "asb_ar1249_mockagents_qualification",
   "plan": "../plans/AR-1249.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Complete missing evidence for the pinned MockAgents executable qualification.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Complete MockAgents executable qualification evidence",
-  "updated_at": "2026-09-16T10:40:25+00:00",
+  "updated_at": "2026-09-16T10:40:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1249"
 }
 ---
