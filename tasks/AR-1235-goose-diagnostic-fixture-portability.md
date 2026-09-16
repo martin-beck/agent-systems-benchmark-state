@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-1235",
-  "next_action": "Cross-architecture reproduction completed under pinned-style qemu-aarch64 with Ubuntu arm64 sysroot: cargo +1.93.0 test --offline --locked --manifest-path /srv/data/projects/agent-systems-benchmark-ar-1235/Cargo.toml --target aarch64-unknown-linux-gnu -p asb-agents --lib goose::tests::diagnostic_and_symlink_fail_closed -- --exact --nocapture passed 1/1. The earlier exit 101 was a command setup error: cargo was run from state repo without --manifest-path and could not find Cargo.toml; corrected command passed. Compare against postmerge run 35060286408 remains necessary before any fixture change; no source fix justified by current reproduction.",
+  "next_action": "Hosted-style AArch64 emulation rerun completed at exact fd7daa43549edd67b60076aa6b1eee333061b438 using rustc 1.93.0, aarch64-unknown-linux-gnu, qemu-aarch64, and Ubuntu arm64 sysroot /srv/data/projects/.asb-local/ar0909-arm64-root; diagnostic_and_symlink_fail_closed passed 1/1, exit 0. Original hosted run 35060286408 exit 127 remains unreproduced; no source change or assertion weakening is justified. Release blocked/ownerless with evidence.",
   "observed_branch": "feature/ar-1235-goose-fixture-portability",
   "observed_dirty": 1,
   "observed_head": "fd7daa43549edd67b60076aa6b1eee333061b438",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair Goose diagnostic fixture portability under emulated AArch64.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Portable Goose diagnostic fixture",
-  "updated_at": "2026-09-16T06:01:50+00:00",
+  "updated_at": "2026-09-16T06:02:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1235"
 }
 ---
@@ -78,3 +78,8 @@ its intended diagnostic error assertion. Preserve the failure and repair the fix
 
 - 2026-09-16T06:01:43+00:00: Recorded command exit 0; command argv SHA-256
   9d571acc45d2fff5e3efd912979d64dda1e8185071ffa2e370ebacba245e1c54.
+
+- 2026-09-16T06:02:05+00:00: 2026-09-16T06:02Z: Exact hosted-style AArch64 command via handoffctl
+  exited 0; cross-compiled test passed 1/1 under qemu-aarch64. Environment: rustc 1.93.0, target
+  aarch64-unknown-linux-gnu, linker /usr/bin/aarch64-linux-gnu-gcc, Ubuntu arm64 sysroot. Build
+  target artifacts caused observed_dirty=1 only; product worktree source remains unchanged.
