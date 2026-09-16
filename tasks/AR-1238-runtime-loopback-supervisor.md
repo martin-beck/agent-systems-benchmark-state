@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1238.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide the runtime-owned private-namespace supervisor for loopback replay.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Runtime-owned loopback supervisor",
-  "updated_at": "2026-09-16T08:04:17+00:00",
+  "updated_at": "2026-09-16T08:05:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1238"
 }
 ---
@@ -90,3 +90,6 @@ remaining work is launcher integration and real sidecar forwarding, not a host c
   /usr/bin/asb_loopback_supervisor must be supplied by the trusted runtime bundle, and the sidecar
   must forward authenticated HTTP over the mounted relay with readiness attestation and lifecycle
   tests. No host networking/firewall/ambient ip used.
+
+- 2026-09-16T08:05:39+00:00: User-approved continuation: add and test the in-tree bounded loopback
+  sidecar and integrate its relay mount; no host networking or global policy changes.
