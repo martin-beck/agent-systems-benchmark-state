@@ -2,7 +2,7 @@
 {
   "branch": "feature/remote-control-transport",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T17:33:30+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0702",
     "AR-0803",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/remote-control-transport",
   "observed_dirty": 0,
   "observed_head": "b7d9e142d684f1fa65fc3f52258ec46585194950",
-  "owner": "asb_ar0813_remote_transport",
+  "owner": "",
   "plan": "../plans/AR-0813.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 313,
+  "task_revision": 314,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T16:55:26+00:00",
+  "updated_at": "2026-09-16T17:23:27+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -957,3 +957,14 @@ Implementation has not started. Read the linked plan before claiming.
   8b81be45b1cf3e2f42540fae8c623074bbacaf88 without Signed-off-by; repository-quality post-merge
   failed run 35124853761. Original transport PR202 checks remain green, but AR-0813 cannot close
   until signed protected-main history and post-merge gates are restored.
+
+- 2026-09-16T17:23:27+00:00: Completed secure remote control transport and protected-main recovery.
+  PR202 delivered exactly-once TLS TCP keepalive on client/server after ALPN, bounded mTLS/TLS
+  framing, admission/backpressure/rate/drain controls, reconnect revision semantics, and
+  deterministic transport fault coverage. PR202 exact signed head b7d9e14 had all 12 checks green;
+  dependency fixes finalized in efa9ab4 and formal/fuzz lock refreshes b7d9e14/22abb6e. Unsigned web
+  merges 14b604f and 8b81be4 were repaired by AR-1259 signed merge
+  0a808a635d85fdc4a43b575e3711ef23b38089e3 (parents 8b81be4, 7edda7d; tree 6a97f467; SSH Good +
+  DCO). Protected-main policy passed and all seven post-merge workflows succeeded: formal
+  35126795008, Rust 35126795006, hosted 35126794959, fault 35126794945, headers 35126794930, quality
+  35126794907, AArch64 35126794893.

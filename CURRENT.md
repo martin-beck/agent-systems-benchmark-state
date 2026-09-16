@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0813](tasks/AR-0813-remote-control-transport.md): Add secure remote control transport | Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client. | AR-1259 remains open after unsigned recovery merge 8b81be4; await repository-level signed protected-main recovery and exact-main policy before closing AR-0813. | asb_ar0813_remote_transport |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -236,6 +230,7 @@ Never edit this file directly.
 | P1 | [AR-0805](tasks/AR-0805-tui-run-control.md): Add terminal run control and status | Start validated runs and monitor current progress, health, metrics, failures, and cancellation from the TUI. | Complete; no further action. | - |
 | P1 | [AR-0806](tasks/AR-0806-tui-history-analysis.md): Add terminal history and analysis | Browse recent runs, repeat their validated plans, and analyse comparable results from the TUI. | Repair merge DCO trailer and add a signed normal ancestry commit; rerun exact-main gates. | - |
 | P1 | [AR-0812](tasks/AR-0812-modern-terminal-rendering.md): Deliver modern adaptive terminal rendering | Use modern terminal capabilities for polished visual fidelity with robust SSH/multiplexer fallbacks. | Implement capability-aware premium rendering, channel detection, and resize-safe responsive layouts. | - |
+| P1 | [AR-0813](tasks/AR-0813-remote-control-transport.md): Add secure remote control transport | Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client. | AR-1259 remains open after unsigned recovery merge 8b81be4; await repository-level signed protected-main recovery and exact-main policy before closing AR-0813. | - |
 | P1 | [AR-0819](tasks/AR-0819-ssh-remote-bootstrap.md): Add SSH remote discovery and bootstrap | Use configured SSH hosts as the safe default path to a remote runner and help establish dedicated key authentication. | Integrate signed no-ff PR #98 onto current main, then run and verify all exact-main post-merge workflows before release. | - |
 | P1 | [AR-0820](tasks/AR-0820-verifiable-install-artifacts.md): Publish verifiable installation artifacts | Publish verifiable native bundles and metadata that a small bootstrapper can select safely. | Build signed platform manifests and relocatable ASB plus asb-tui installation bundles. | - |
 | P1 | [AR-0821](tasks/AR-0821-one-line-local-install.md): Add guided one-line local installation | Turn a single documented command into a safe guided local ASB and TUI first run. | Monitor all required post-merge CI runs for exact main 513c1d926458f1cb6a26d3f7277dc7d9b1496df3; release only after every gate is green. | - |

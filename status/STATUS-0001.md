@@ -7,16 +7,16 @@
 
 ## Portfolio overview
 
-**287 ARs tracked** across 7 active status categories.
+**287 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 20 |
 | **Planned** | Defined work awaiting promotion or dependencies | 59 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 193 |
+| **Done** | Accepted, integrated, and durably verified | 194 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 9 |
 
@@ -138,7 +138,7 @@ flowchart LR
         AR_0810["AR-0810 - Planned"]:::status_planned
         AR_0811["AR-0811 - Planned"]:::status_planned
         AR_0812["AR-0812 - Done"]:::status_done
-        AR_0813["AR-0813 - In progress"]:::status_in_progress
+        AR_0813["AR-0813 - Done"]:::status_done
         AR_0814["AR-0814 - Planned"]:::status_planned
         AR_0815["AR-0815 - Planned"]:::status_planned
         AR_0816["AR-0816 - Planned"]:::status_planned
@@ -1461,12 +1461,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P1 | [AR-0813](../tasks/AR-0813-remote-control-transport.md): Add secure remote control transport | asb_ar0813_remote_transport | Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client. | AR-1259 remains open after unsigned recovery merge 8b81be4; await repository-level signed protected-main recovery and exact-main policy before closing AR-0813. |
-
 ### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -1571,7 +1565,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (193)
+### Done (194)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1612,3 +1606,4 @@ flowchart LR
 | P0 | [AR-1047](../tasks/AR-1047-gemini-hook-marker-appearance-race.md): Close the Gemini hook-marker appearance race | Unclaimed | Treat a regular marker published between absent open and fallback lstat as pending for descriptor validation on the next poll. | PR #139 exact 661d52c/tree 3931f7cb is independently approved and 12/12 exact-head green; await explicit root authorization and exact multiline protected merge recipe. |
 | P0 | [AR-1051](../tasks/AR-1051-measurement-catalog-merge-attestation.md): Attest the measurement catalog merge boundary | Unclaimed | Record the exact reviewed measurement-catalog merge and its non-compliant GitHub-authored DCO identity without rewriting history. | Push exact approved head 7b3ef113d2b77c3982748f16c540d0e556252464, open the protected-merge PR, and require all exact-head checks before merge. |
 | P0 | [AR-1053](../tasks/AR-1053-asb-tui-roadmap-hardening.md): Harden the standalone asb-tui roadmap | Unclaimed | Make the standalone asb-tui UX roadmap detailed, non-overlapping and dependency-executable. | Harden the audited standalone asb-tui task and plan records without changing either product repository or feature-task status. |
+| P0 | [AR-1055](../tasks/AR-1055-asb-tui-install-integration-readiness.md): Harden asb-tui install integration readiness | Unclaimed | Make the asb tui install and full interactive integration sequence dependency-executable. | Bind AR-1026 to the complete standalone UI and record the exact router, release and cross-repository qualification gaps without changing product code or feature-task status. |
