@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1234.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide an approved runtime-owned loopback-only sandbox namespace capability.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Runtime-owned loopback namespace capability",
-  "updated_at": "2026-09-16T07:00:23+00:00",
+  "updated_at": "2026-09-16T07:03:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1234"
 }
 ---
@@ -159,3 +159,7 @@
   warnings passed. A direct probe bound on private loopback, but attempted egress probe command was
   malformed and is not evidence. No product changes. No host sharing, firewall mutation, ambient
   privileged helper, or external network. Require reviewed helper/launch seam before implementation.
+
+- 2026-09-16T07:03:53+00:00: Beginning dependency-ordered implementation attempt: AR-1234 only. Use
+  rootless private namespace and runtime-owned relay; fail closed and do not use host sharing,
+  firewall mutation, ambient helpers, credentials, or external network.
