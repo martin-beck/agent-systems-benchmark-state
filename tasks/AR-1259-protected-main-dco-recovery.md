@@ -7,7 +7,7 @@
     "AR-1242"
   ],
   "id": "AR-1259",
-  "next_action": "Monitor PR #203 exact head b7d21e0 until all required checks terminal SUCCESS; obtain independent approval, then merge through signed protected recovery workflow and verify exact-main policy/post-merge.",
+  "next_action": "Protected merge 8b81be4 lacks SSH/DCO identity; coordinate forward signed recovery or repository admission repair, then rerun exact-main policy before release.",
   "observed_branch": "repair/pr202-protected-main-dco",
   "observed_dirty": 0,
   "observed_head": "b7d21e0839787a7c54561bdc0e65dc0b609b3d33",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover a signed protected-main DCO boundary after the unsigned PR202 web merge.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Protected-main DCO recovery for PR202",
-  "updated_at": "2026-09-16T16:54:27+00:00",
+  "updated_at": "2026-09-16T16:55:08+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-dco-1259"
 }
 ---
@@ -70,3 +70,8 @@ Create a signed, forward-only protected-main recovery for the unsigned PR202 mer
 
 - 2026-09-16T16:54:27+00:00: Recorded command exit 0; command argv SHA-256
   624613f188a9ea2b5864ff99df4fea839afcf4102f0e6d6c1a12028d839e23fc.
+
+- 2026-09-16T16:55:08+00:00: PR203 merged as 8b81be45b1cf3e2f42540fae8c623074bbacaf88 with parents
+  14b604f and b7d21e0. Remote commit is GitHub-authored; local SSH verification reports E and RSA
+  key unavailable, and merge message has no Signed-off-by. Repository quality post-merge run
+  35124853761 already failed; other post-merge workflows remain in progress. AR-1259 stays open.
