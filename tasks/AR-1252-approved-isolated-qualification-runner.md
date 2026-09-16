@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-1252",
-  "next_action": "Integrate AR-1251 to use runner preflight and direct executable mode; add descendant cleanup proof and run full gates.",
+  "next_action": "Add AR-1251 transport consumer and descendant cleanup evidence; run full gates.",
   "observed_branch": "feature/ar-1252-approved-isolated-runner",
   "observed_dirty": 0,
   "observed_head": "249dac1183dfaf1c5b79cb1d51db1094d9b14fb6",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:45:30+00:00",
+  "updated_at": "2026-09-16T11:46:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -229,3 +229,10 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
 
 - 2026-09-16T11:45:30+00:00: Recorded command exit 0; command argv SHA-256
   f795e0089112a2698a26146b18991137b5ef2ff2415aaf8e485402264735b262.
+
+- 2026-09-16T11:46:02+00:00: Signed+DCO head 249dac1 pushed. Runner now assigns an internal per-run
+  Docker name and verifies docker ps has no matching container after success or timeout, removing
+  unexpected residue before rechecking. Focused contract tests pass 4/4; live network-none probe
+  passes; bounded /bin/sleep timeout returns 124 and cleanup check passes. Earlier cleanup false
+  result was diagnosed as an over-escaped Docker format template and corrected. AR-1251 remains
+  pending real transport fixture invocation; no merge requested.
