@@ -11,17 +11,17 @@
   "id": "AR-1265",
   "next_action": "Promote after dependency verification; implement the runtime-owned authenticated replay entrypoint and real supervised lifecycle evidence described in the plan.",
   "observed_branch": "feature/ar-1265-runtime-owned-replay-entrypoint",
-  "observed_dirty": 0,
-  "observed_head": "",
+  "observed_dirty": 2,
+  "observed_head": "69e8b064d3121a4bae1f672cdae9c0c8672000bc",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1265.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a real runtime-owned strict-replay CLI entrypoint.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Runtime-owned strict-replay CLI entrypoint",
-  "updated_at": "2026-09-16T22:20:30+00:00",
+  "updated_at": "2026-09-16T22:20:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1265-runtime-replay-entrypoint"
 }
 ---
