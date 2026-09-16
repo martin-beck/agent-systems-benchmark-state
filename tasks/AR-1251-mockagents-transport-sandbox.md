@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1251-mockagents-transport-sandbox",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T20:52:45+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1251-mockagents-transport-sandbox",
   "observed_dirty": 0,
   "observed_head": "2a12068c2e1d0c6146fb41de785155b1d43f51ee",
-  "owner": "asb_ar1251_mockagents_transport",
+  "owner": "",
   "plan": "../plans/AR-1251.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Add a bounded transport and sandbox fixture for MockAgents qualification.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Add MockAgents transport sandbox fixture",
-  "updated_at": "2026-09-16T18:54:49+00:00",
+  "updated_at": "2026-09-16T18:55:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1251"
 }
 ---
@@ -87,3 +87,9 @@ preserve privacy, network-denial, signature, DCO, and exact-tree gates.
 
 - 2026-09-16T18:54:06+00:00: Recorded command exit 0; command argv SHA-256
   c52f0868a0b5cf6550165458ac6cd58ba375f928e86402b001f4cecfa48301fc.
+
+- 2026-09-16T18:55:02+00:00: Released ownerless. Clean signed head 2a12068 adds bounded isolated
+  runner seam and passing 9/9 focused tests plus network-none verification. Real MockAgents
+  transport/lifecycle/egress proof remains blocked because approved runner cannot co-locate pinned
+  binary and Python client under current one-mount contract; await reviewed AR-1252 integration.
+  AR-1249 remains separate and blocked.
