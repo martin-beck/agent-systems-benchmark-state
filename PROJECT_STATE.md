@@ -21,8 +21,8 @@ Generated from local Git and GitHub. Do not edit.
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
 | #151 | `dependabot/cargo/serde-1.0.229@c926edfde377` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
-| #189 | `feature/openjiuwen-replay@c894a341183d` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(replay): qualify OpenJiuwen strict replay |
-| #190 | `fix/shellcheck-fail-closed@8176605df747` | `main` | UNSTABLE | IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: enforce ShellCheck for workflow analysis |
+| #189 | `feature/openjiuwen-replay@c894a341183d` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(replay): qualify OpenJiuwen strict replay |
+| #190 | `fix/shellcheck-fail-closed@8176605df747` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | ci: enforce ShellCheck for workflow analysis |
 
 ## Recent workflows
 
@@ -34,9 +34,9 @@ Generated from local Git and GitHub. Do not edit.
 | 35074291293 | `8176605df747` | pull_request | Fault assurance | completed:success |
 | 35074291276 | `8176605df747` | pull_request | Huawei MIT source headers | completed:success |
 | 35074291271 | `8176605df747` | pull_request | Repository quality | completed:success |
-| 35074291263 | `8176605df747` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 35074291263 | `8176605df747` | pull_request | Emulated aarch64 portability | completed:success |
 | 35074291244 | `8176605df747` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35074148177 | `c894a341183d` | pull_request | Formal assurance | completed:success |
 | 35074148148 | `c894a341183d` | pull_request | Hosted portability and native qualification | completed:success |
 | 35074148124 | `c894a341183d` | pull_request | Huawei MIT source headers | completed:success |
-| 35074148088 | `c894a341183d` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 35074148088 | `c894a341183d` | pull_request | Emulated aarch64 portability | completed:success |
