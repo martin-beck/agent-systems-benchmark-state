@@ -11,16 +11,16 @@
   "next_action": "Run PR191 exact-head CI and independent review; external settings apply remains pending admin authority.",
   "observed_branch": "fix/protected-main-admission",
   "observed_dirty": 0,
-  "observed_head": "da8d736c8a9618b6e59b33c4df44467c695bbc0c",
+  "observed_head": "9db468cad9fc69bb05100842b49469c8ca3e988c",
   "owner": "asb_ar1242_merge_admission",
   "plan": "../plans/AR-1242.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent protected-main admission from creating unsigned GitHub merge commits.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Enforce signed protected-main admission",
-  "updated_at": "2026-09-16T08:55:10+00:00",
+  "updated_at": "2026-09-16T08:55:20+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-admission"
 }
 ---
