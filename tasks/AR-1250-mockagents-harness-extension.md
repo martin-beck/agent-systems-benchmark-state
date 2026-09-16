@@ -8,7 +8,7 @@
     "AR-0889"
   ],
   "id": "AR-1250",
-  "next_action": "Run qualification with approved pinned artifact; add arm64 repeat evidence using explicit runner.",
+  "next_action": "Acquire approved pinned arm64 emulator runner; then run arm64 repeat qualification.",
   "observed_branch": "feature/ar-1250-mockagents-harness-extension",
   "observed_dirty": 0,
   "observed_head": "0d42bca02b276342606ae35bfaa30a5b5cd5247a",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend the pinned MockAgents executable qualification harness.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Extend MockAgents qualification harness",
-  "updated_at": "2026-09-16T19:22:50+00:00",
+  "updated_at": "2026-09-16T19:24:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1250"
 }
 ---
@@ -201,3 +201,8 @@ privacy, signature, DCO, and exact-tree gates; do not claim support from host in
 
 - 2026-09-16T19:22:50+00:00: Recorded command exit 1; command argv SHA-256
   98881633ca0ed64f919599b8a9b59e2384c00d24d963f71aa14eeff5bd82b884.
+
+- 2026-09-16T19:24:03+00:00: Arm64 probe was intentionally fail-closed: qualify_mockagents.py
+  --platform linux-arm64 with the cached artifact exited 1 because no explicit pinned emulator
+  runner was supplied. This is an artifact/runner availability blocker, not a product pass; amd64
+  bounded suites remain 9/9 at clean 55be268.
