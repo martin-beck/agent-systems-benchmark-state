@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 144,
+  "task_revision": 145,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T03:25:36+00:00",
+  "updated_at": "2026-09-16T03:26:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -392,3 +392,6 @@
   passes 2/2 focused tests, covering successful /usr/bin/env launch with ASB_REPLAY_ENDPOINT and
   pre-spawn command mismatch rejection. Runtime environment accessor added. Full gates and
   end-to-end child replay remain outstanding.
+
+- 2026-09-16T03:26:19+00:00: Recorded command exit 0; command argv SHA-256
+  a3cf4bf790c54f39868343c859fba60c08b1613dbbf63a14b28602ab2a3a33c6.
