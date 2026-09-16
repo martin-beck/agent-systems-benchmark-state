@@ -11,7 +11,7 @@
   "id": "AR-1232",
   "next_action": "Implement direct StrictReplaySandboxLaunch::spawn tests and bind record timeout/route environment into the launch contract; current integration compiles and full locked workspace tests pass.",
   "observed_branch": "feature/ar-1232",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "9ac352e1ce2396b0a6a2b8e518811c553aa3c82e",
   "owner": "asb_ar1232_sandbox_supervision",
   "plan": "../plans/AR-1232.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 134,
+  "task_revision": 135,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T03:23:22+00:00",
+  "updated_at": "2026-09-16T03:23:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
