@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned authority for supervised strict-replay execution.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-16T21:10:55+00:00",
+  "updated_at": "2026-09-16T21:11:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1262-runtime-authority"
 }
 ---
@@ -139,3 +139,6 @@ ownership and bounded lifecycle evidence.
   25c393eaae8d72b1cd81407dea3521d0d9f777c2957b8e3d5d679bd22fdb8867 versus recorded b024d4....
   Updated docs/examples/asb-cli-workflow-v1.provenance.json in signed ad0bc02. Focused
   workflow_transcript now passes 3/3; product worktree clean.
+
+- 2026-09-16T21:11:29+00:00: Recorded command exit 101; command argv SHA-256
+  e65704d0af497ff4f9db656cbcc2e1894e552f84bfbc5a531f0945a250925adf.
