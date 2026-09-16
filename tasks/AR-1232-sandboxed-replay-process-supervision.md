@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1232",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T07:16:12+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "7613c678c71806dd7f3aa3f7cc521dd9a8256e3e",
-  "owner": "asb_ar1232_worker",
+  "owner": "",
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 445,
+  "task_revision": 446,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T06:46:30+00:00",
+  "updated_at": "2026-09-16T06:46:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -1238,3 +1238,7 @@
   for consumption: each task is blocked, and each observed capability commit exists only on its
   feature branch. AR-1234 is the direct runtime prerequisite; AR-1233 supplies the policy contract.
   AR-1232 product worktree remains clean; no dependency files were touched.
+
+- 2026-09-16T06:46:33+00:00: Released blocked after dependency audit. No approved merged capability
+  is available from AR-1233 or AR-1234. The exact prerequisite and test follow-up are recorded in
+  next_action; AR-1232 remains clean and no other AR was modified.
