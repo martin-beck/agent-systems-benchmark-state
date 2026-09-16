@@ -11,17 +11,17 @@
   "id": "AR-1272",
   "next_action": "Bind decode_runtime_cassette into actual replay dispatch and execute strict request/response; add egress/no-fallback/cancel/restart/timeout/crash cleanup fixtures.",
   "observed_branch": "feature/ar-1272-authenticated-cassette-backend",
-  "observed_dirty": 1,
-  "observed_head": "eabd3f4783d8fc82fad0b2d26175b1a9bf13dd22",
+  "observed_dirty": 0,
+  "observed_head": "85c0f5bc558c90f0543424cdb37017a824c227bb",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1272.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind immutable cassette content to a runtime-authenticated replay backend handle.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Authenticated immutable cassette backend",
-  "updated_at": "2026-09-16T23:27:45+00:00",
+  "updated_at": "2026-09-16T23:27:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1272-cassette-backend"
 }
 ---
