@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 442,
+  "task_revision": 443,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T06:44:31+00:00",
+  "updated_at": "2026-09-16T06:46:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -1227,3 +1227,7 @@
   replay 7/7 and unit 15/15 remain evidence. Remaining blocker requires a separately reviewed
   launch/adapter contract for an in-namespace pinned sidecar or equivalent loopback bridge,
   including lifecycle supervision and HTTP protocol mapping.
+
+- 2026-09-16T06:46:10+00:00: Read-only dependency audit: AR-1233 and AR-1234 remain blocked and
+  their capability commits exist only on feature branches, not main or an approved merged release.
+  Update AR-1232 next action to name the exact prerequisite; do not modify either dependency.
