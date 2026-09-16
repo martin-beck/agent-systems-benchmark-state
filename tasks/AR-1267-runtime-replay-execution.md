@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1267-runtime-replay-execution",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T00:39:06+00:00",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1267-runtime-replay-execution",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1267.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Implement real runtime-owned strict-replay execution and lifecycle supervision.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime strict-replay execution hook",
-  "updated_at": "2026-09-16T22:38:52+00:00",
+  "updated_at": "2026-09-16T22:39:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1267-runtime-replay-execution"
 }
 ---
@@ -32,3 +32,5 @@ context-boundary evidence and its blocker; do not accept metadata-only behavior 
 
 - 2026-09-16T22:38:52+00:00: Dependencies AR-1237/1238/1239 are done; AR-1266 review identified the
   missing runtime cassette execution hook.
+
+- 2026-09-16T22:39:06+00:00: Claimed by asb_ar1024_lifecycle_router.
