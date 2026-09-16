@@ -2,22 +2,22 @@
 {
   "branch": "feature/docker-binfmt-qemu-capability",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T16:08:44+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1258",
   "next_action": "Inspect Docker/binfmt/QEMU capability and approved privilege workflow; add bounded verification and rollback-safe checks.",
   "observed_branch": "feature/docker-binfmt-qemu-capability",
   "observed_dirty": 0,
   "observed_head": "a0befc0ff247a42b8d796af161b58b1011de8377",
-  "owner": "asb_ar1024_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1258.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provision and verify Docker binfmt/QEMU for multiarch qualification.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Provision Docker binfmt/QEMU capability",
-  "updated_at": "2026-09-16T14:10:54+00:00",
+  "updated_at": "2026-09-16T14:11:21+00:00",
   "worktree_key": "agent-systems-benchmark-docker-binfmt-qemu"
 }
 ---
@@ -104,3 +104,13 @@ Provide the independent Docker binfmt/QEMU capability required by multiarch qual
 
 - 2026-09-16T14:10:54+00:00: Recorded command exit 0; command argv SHA-256
   57b69a5fb8b9de4fc880cce21a3f9bd986ce8ef61538bb078cc67a4ad158917a.
+
+- 2026-09-16T14:11:21+00:00: Approved mediated setup was evaluated. Digest-pinned tonistiigi/binfmt
+  manifest sha256:2d2918e86e5327d0661f7083d67a95280b0f7be8f77ed79a8418f81d7d90ce6f was inspected:
+  MIT license, source revision b7877ff8329dbd8b2827f6fd0321048fff06a70c, version qemu-v8.1.5-45.
+  Privileged --network host registration reported qemu-aarch64 already registered; host entry is
+  enabled, interpreter /usr/libexec/qemu-binfmt/aarch64-binfmt-P, flags PO. Despite this, pinned
+  alpine arm64 digest sha256:28bd5fe8b56d1bd048e5babf5b10710ebe0bae67db86916198a6eec434943f8b with
+  --network none fails `/bin/true: no such file or directory` (exit 125), while network mode also
+  lacks docker0 veth. Docker daemon/containerd does not expose a working arm64 handler. No QEMU
+  capability claim; resume requires daemon handler repair and successful pinned arm64 execution.
