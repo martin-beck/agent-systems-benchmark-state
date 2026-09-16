@@ -11,12 +11,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 5 |
+| **In progress** | Claimed work with a live lease | 4 |
 | **Open** | Dependency-ready and available to claim | 6 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 8 |
 | **Planned** | Defined work awaiting promotion or dependencies | 67 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 167 |
+| **Done** | Accepted, integrated, and durably verified | 168 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 9 |
 
@@ -328,7 +328,7 @@ flowchart LR
         AR_1232["AR-1232 - In progress"]:::status_in_progress
         AR_1233["AR-1233 - Blocked"]:::status_blocked
         AR_1234["AR-1234 - Blocked"]:::status_blocked
-        AR_1235["AR-1235 - In progress"]:::status_in_progress
+        AR_1235["AR-1235 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1366,7 +1366,7 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (5)
+### In progress (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1374,7 +1374,6 @@ flowchart LR
 | P0 | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md): Sandboxed replay process supervision | asb_ar1232_loopback_worker | Supervise strict replay adapters inside the approved network-denied sandbox. | Native executor-service attempt is blocked by runtime policy: SandboxSpec accepts only NetworkPolicy::Deny, so loopback cassette listener is unreachable (child curl exit 7). Keep strict replay native harness 7/7 and 15/15 executor unit gates green; require approved loopback-only sandbox transport seam before further implementation/re-review. |
 | P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | asb_ar1232_lifecycle_router | Control genuine native platform capacity lifecycle. | Focused lifecycle/schema tests pass 25/25 on signed head 28f30ee. Remaining action is requalify PR #119 exact head for the fail-closed TLA provenance pin; inspect hosted failure and repair only if reproducible. |
 | P1 | [AR-0896](../tasks/AR-0896-mockagents-executable-qualification.md): Qualify the pinned MockAgents executable | asb_ar0896_qualification | Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change. | Rerun 34339927858 was launched via handoffctl and is actively watched by PID 736624/gh PID 736653; exact rerun head a4e1a9de985a4c9f22628c6d604a6e62f4f173e3, job 104684371738 currently running. Keep lease heartbeat, wait terminal, then capture failures or green result. |
-| P1 | [AR-1235](../tasks/AR-1235-goose-diagnostic-fixture-portability.md): Portable Goose diagnostic fixture | asb_ar1235_goose_portability | Repair Goose diagnostic fixture portability under emulated AArch64. | Hosted Emulated aarch64 portability workflow 35062888126 succeeded at exact head fd7daa43549edd67b60076aa6b1eee333061b438; job 104686828496 terminal success. This closes the original Goose exit-127 evidence as runner-only/transient; no source diff was required. Release AR done/ownerless. |
 
 ### Open (6)
 
@@ -1478,7 +1477,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (167)
+### Done (168)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1544,3 +1543,5 @@ flowchart LR
 | P1 | [AR-0102](../tasks/AR-0102-process-runtime.md): Implement process execution and cancellation | Unclaimed | Run real client processes with bounded I/O, monotonic deadlines and process-tree ownership. | Release done after successful reviewed integration, exact-main local/hosted checks, synchronized refs and live state doctor. |
 | P1 | [AR-0103](../tasks/AR-0103-sandbox-runtime.md): Implement isolated execution and resource leases | Unclaimed | Isolate untrusted generated code and allocate cgroup/CPU/memory/PID budgets. | Release AR-0103 done after exact-main local and hosted post-merge verification. |
 | P1 | [AR-0104](../tasks/AR-0104-durable-results.md): Implement durable run storage and recovery | Unclaimed | Persist manifests, event streams, artifact hashes and recoverable execution intentions. | Await exact-head PR 6 CI and independent immutable-head review; repair findings before coordinator integration. |
+| P1 | [AR-0201](../tasks/AR-0201-portable-metrics.md): Collect portable system and session metrics | Unclaimed | Collect procfs and cgroup v2 CPU, memory, I/O, faults, pressure and throttling. | Run final state reconcile/live doctor/full validation, then release AR-0201 done and explicitly return the Cargo workspace/lock fence. |
+| P1 | [AR-0203](../tasks/AR-0203-statistical-analysis.md): Implement statistical and SLO assessment | Unclaimed | Compute latency distributions, quality/throughput intervals and evidence-aware SLO results. | Create and push reviewed signed+DCO no-ff merge of exact head 3bcfd85; verify PR merge identity, then run exact-main local and hosted post-merge checks. |

@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1235-goose-fixture-portability",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T08:16:48+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1235-goose-fixture-portability",
   "observed_dirty": 3,
   "observed_head": "fd7daa43549edd67b60076aa6b1eee333061b438",
-  "owner": "asb_ar1235_goose_portability",
+  "owner": "",
   "plan": "../plans/AR-1235.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair Goose diagnostic fixture portability under emulated AArch64.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Portable Goose diagnostic fixture",
-  "updated_at": "2026-09-16T06:23:35+00:00",
+  "updated_at": "2026-09-16T06:23:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1235"
 }
 ---
@@ -184,3 +184,7 @@ its intended diagnostic error assertion. Preserve the failure and repair the fix
 - 2026-09-16T06:23:35+00:00: 2026-09-16T06:23Z: Fresh workflow_dispatch on protected main resolved
   to exact fd7daa4 and completed green. All hosted AArch64 gates passed, including full asb-agents
   test suite; no product mutation in AR-1235.
+
+- 2026-09-16T06:23:38+00:00: Completed: hosted run 35062888126/job 104686828496 terminal success at
+  exact fd7daa43549edd67b60076aa6b1eee333061b438. Original run 35060286408 failure was not
+  reproduced; classified runner-only/transient. No source diff or gate weakening.
