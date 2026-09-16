@@ -9,17 +9,17 @@
   "id": "AR-1247",
   "next_action": "Update verify.yml main-push DCO certification to use protected-main admission and add workflow regression coverage.",
   "observed_branch": "fix/ar-1247-protected-main-dco-workflow",
-  "observed_dirty": 0,
-  "observed_head": "0000000000000000000000000000000000000000",
+  "observed_dirty": 2,
+  "observed_head": "5a2c1516a0727aba7fd8543599151eaf971d8372",
   "owner": "asb_ar1247_workflow_worker",
   "plan": "../plans/AR-1247.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Route the Rust verification workflow through durable protected-main DCO admission on generated merge commits.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Protected-main DCO workflow binding",
-  "updated_at": "2026-09-16T10:14:45+00:00",
+  "updated_at": "2026-09-16T10:15:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1247"
 }
 ---
