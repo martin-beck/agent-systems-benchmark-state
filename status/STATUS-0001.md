@@ -1347,7 +1347,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1110](../tasks/AR-1110.md): Provider and model registry | asb_ar1110_discovery | Manage providers and models. | Add endpoint-safety/stale-cache fixtures and schema/docs for provider registry on 45624b7, then run full applicable gates and update PR exact head. |
+| P0 | [AR-1110](../tasks/AR-1110.md): Provider and model registry | asb_ar1110_discovery | Manage providers and models. | Create/update PR for exact head d16d8d0, request independent immutable-head review, then wait for all required CI lanes; do not merge before review and green checks. |
 
 ### Open (13)
 
