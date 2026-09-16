@@ -16,9 +16,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T14:20:05+00:00",
+  "updated_at": "2026-09-16T14:20:34+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -32,3 +32,6 @@ Implementation has not started. Read the linked plan before claiming.
   remote transport leaf selected while QEMU chain remains blocked
 
 - 2026-09-16T14:20:05+00:00: Claimed by asb_ar0813_remote_transport.
+
+- 2026-09-16T14:20:34+00:00: Recorded command exit 0; command argv SHA-256
+  450f7c154cd6c48726152ea81a82117c8f7ab840823b9d3699d91f915747d4b0.
