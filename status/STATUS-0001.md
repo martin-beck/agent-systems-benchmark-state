@@ -7,13 +7,13 @@
 
 ## Portfolio overview
 
-**304 ARs tracked** across 7 active status categories.
+**304 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 6 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 33 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 34 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 196 |
@@ -369,7 +369,7 @@ flowchart LR
         AR_1273["AR-1273 - Blocked"]:::status_blocked
         AR_1274["AR-1274 - Blocked"]:::status_blocked
         AR_1275["AR-1275 - Blocked"]:::status_blocked
-        AR_1276["AR-1276 - In progress"]:::status_in_progress
+        AR_1276["AR-1276 - Blocked"]:::status_blocked
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1542,12 +1542,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1276](../tasks/AR-1276-primary-replay-runtime.md): Primary replay runtime integration | asb_ar1024_lifecycle_router | Integrate runtime-owned operation execution into the primary strict-replay command. | Promote after dependency verification; wire the primary replay command to runtime-issued operation execution and prove supervised lifecycle behavior. |
-
 ### Open (6)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -1559,7 +1553,7 @@ flowchart LR
 | P0 | [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | Unclaimed | Define the strict-replay CLI consumer contract. | Await a runtime-owned successor that supplies independently attested namespace capability plus supervised SandboxLaunchInput/ResourceLease. Then wire replay_plan through StrictReplayLaunchBridge::spawn and add real request/response, egress-denial, cancellation/restart/cleanup and no-fallback tests. Preserve PR #197 head 7d9c2ee and its green CI; do not fabricate namespace readiness in CLI. |
 | P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Unclaimed | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Coordinator must create and link the successor AR for certificate issuance/chain validation and trusted route/ancestor authority; preserve this exact clean head and do not publish/close as fully complete until successor scope and bounded acceptance are recorded. |
 
-### Blocked (33)
+### Blocked (34)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1583,6 +1577,7 @@ flowchart LR
 | P0 | [AR-1273](../tasks/AR-1273-complete-replay-context.md): Complete runtime-owned replay request context | Unclaimed | Provide complete runtime-owned context for strict-replay execution. | Integrate ReplayRequestContext into actual argument-level replay dispatch and connect runtime cassette service; add real response parity and supervised egress/no-fallback/cancel/restart/timeout/crash cleanup tests. |
 | P0 | [AR-1274](../tasks/AR-1274-runtime-cassette-executor-adapter.md): Runtime cassette operation executor adapter | Unclaimed | Provide a runtime cassette operation executor callback boundary. | Provide CLI/replay adapter over RuntimeOperationHandle and bind actual replay command; add supervised lifecycle/egress/no-fallback fixtures. |
 | P0 | [AR-1275](../tasks/AR-1275-replay-operation-injection.md): Runtime operation injection into replay dispatcher | Unclaimed | Inject runtime-owned operation handles into actual strict-replay dispatch. | Bind runtime-issued operation handle into the primary argument-level replay command; add supervised cassette response/egress/cancel/restart/timeout/crash/cleanup evidence. |
+| P0 | [AR-1276](../tasks/AR-1276-primary-replay-runtime.md): Primary replay runtime integration | Unclaimed | Integrate runtime-owned operation execution into the primary strict-replay command. | Promote after dependency verification; wire the primary replay command to runtime-issued operation execution and prove supervised lifecycle behavior. |
 | P1 | [AR-0604](../tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain coordinator-authorized native x86_64 runner/container and immutable CSB source root plus interpreter bytes matching Python 3.12.3 SHA-256 1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118. Docker is currently inaccessible; qemu cannot substitute native x86 evidence. Then rerun native_boundary and record A/B/overhead evidence. |
 | P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | Formal assurance owner AR-0877/AR-0907 must repair the pinned TLA artifact provenance mismatch (downloaded byte count/hash) before PR #119 can be requalified; AR-0704 native controller requires no source change. |
 | P1 | [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Unclaimed | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. |

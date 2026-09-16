@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1276-primary-replay-runtime",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T01:58:43+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1276-primary-replay-runtime",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "asb_ar1024_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1276.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Integrate runtime-owned operation execution into the primary strict-replay command.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Primary replay runtime integration",
-  "updated_at": "2026-09-16T23:58:43+00:00",
+  "updated_at": "2026-09-16T23:58:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1276-primary-replay-runtime"
 }
 ---
@@ -37,3 +37,13 @@ blocked evidence and require real supervised cassette traffic and lifecycle test
 - 2026-09-16T23:57:46+00:00: Claimed by asb_ar1024_lifecycle_router.
 
 - 2026-09-16T23:58:43+00:00: Heartbeat by asb_ar1024_lifecycle_router.
+
+- 2026-09-16T23:58:46+00:00: Released blocked/ownerless without product mutation after exact
+  architecture audit. Primary replay dispatch in crates/asb-cli/src/lib.rs accepts only cassette
+  path, provider profile digest, agent ID, and stdout; no runtime context/service channel exists.
+  Existing runtime/sidecar APIs are not callable from this argument-only process entrypoint without
+  fabricating authority or adding a new runtime-to-CLI transport boundary. Exact blocker: cannot
+  safely implement runtime-issued operation injection or prove supervised cassette response,
+  provider/descendant egress denial, cancellation/restart/timeout/crash reaping, cleanup, and
+  no-fallback in AR-1276 scope without that missing boundary. Preserve AR-1275 and request a
+  follow-on transport-entrypoint AR.
