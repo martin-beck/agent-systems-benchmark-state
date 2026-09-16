@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1238-runtime-loopback-supervisor",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T10:05:42+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1100",
     "AR-1231"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1238-runtime-loopback-supervisor",
   "observed_dirty": 0,
   "observed_head": "d9f42ecb2a205b86250233f4f4c75688a997c063",
-  "owner": "asb_ar1238_bwrap_relay_worker",
+  "owner": "",
   "plan": "../plans/AR-1238.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide the runtime-owned private-namespace supervisor for loopback replay.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Runtime-owned loopback supervisor",
-  "updated_at": "2026-09-16T08:05:55+00:00",
+  "updated_at": "2026-09-16T08:06:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1238"
 }
 ---
@@ -100,3 +100,11 @@ remaining work is launcher integration and real sidecar forwarding, not a host c
   loopback TCP to per-launch Unix relay forwarding, generation handshake, 8 MiB bound, timeouts, and
   bounded-copy tests (2/2). Prior SandboxBackend composition remains d9f42ec; full workspace tests,
   fmt, clippy, and rustdoc pass.
+
+- 2026-09-16T08:06:04+00:00: Added signed commit 605535b: in-tree asb_loopback_sidecar forwards
+  bounded loopback TCP through authenticated generation handshake to mounted Unix relay; sidecar
+  focused tests 2/2, runtime full tests/fmt/clippy/rustdoc pass. SandboxBackend composition d9f42ec
+  mounts validated 0600 relay after tmpfs and invokes supervisor. Remaining blocker: trusted runtime
+  bundle must install/pin both binaries (supervisor currently fixed at
+  /usr/bin/asb_loopback_supervisor), and an end-to-end cassette listener test must validate
+  handshake, HTTP forwarding, egress denial, teardown and unrelated-process isolation.
