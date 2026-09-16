@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Coordinator must create successor AR for certificate issuance/chain and trusted route authority; then request independent re-review of clean head.",
+  "next_action": "Coordinator must create and link the successor AR for certificate issuance/chain validation and trusted route/ancestor authority; preserve this exact clean head and do not publish/close as fully complete until successor scope and bounded acceptance are recorded.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "29cfa19323a0ceb124438854d73f664ae2b86dcc",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 292,
+  "task_revision": 293,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:48:25+00:00",
+  "updated_at": "2026-09-16T19:48:38+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -814,3 +814,20 @@ Implementation has not started. Read the linked plan before claiming.
   re-review.
 
 - 2026-09-16T19:48:25+00:00: Heartbeat by asb_ar0814_enrollment_authz.
+
+- 2026-09-16T19:48:38+00:00: Independent re-review of exact signed head
+  29cfa19323a0ceb124438854d73f664ae2b86dcc: clean cumulative tree, SSH signature and matching DCO
+  verified; prior full fmt, workspace locked tests, clippy and rustdoc pass at this candidate; no
+  private values observed. 4d20476 makes confirmed identity persistence same-directory temporary
+  create, fsync, private mode and atomic rename. 29cfa19 adds from_identity requiring validated
+  certificate metadata and preserves an independently supplied route digest; auth 18/18 and prior
+  endpoint/schema gates remain recorded. The earlier route-synthesis and truncating-write blockers
+  are resolved. Remaining gaps are now cleanly successor-scoped but still outside AR-0814 acceptance
+  until delegated: actual certificate issuance/chain validation and trusted route/IP plus ancestor
+  authority. Current implementation validates certificate/route digests and persists public
+  metadata; it does not authenticate certificate bytes or enforce trusted route authority.
+  FailClosedSecretBackend remains intentionally unavailable rather than a usable OS backend.
+  Existing BreakGlass is context-bound and fail-closed but ordinary CLI remains unavailable without
+  runner-owned context. Verdict: implementation slice is publication-quality for its bounded
+  metadata/auth boundary, but do not close or publish as full AR-0814 until coordinator creates
+  successor AR with these explicit acceptance boundaries and links it durably.
