@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 130,
+  "task_revision": 131,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-16T05:21:32+00:00",
+  "updated_at": "2026-09-16T05:22:05+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -429,3 +429,11 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T05:21:32+00:00: Recorded command exit 0; command argv SHA-256
   faec54e70b826dc65f95ca9120eeaa0565c3e631b30fe02645cbed6b1310c418.
+
+- 2026-09-16T05:22:05+00:00: Post-merge run 35058879898 failed because protected-main policy still
+  required GitHub Web Flow committer, although local signed merge 7d43c1e is valid. Added signed+DCO
+  repair e559888 on top of 7d43c1e: protected-main now verifies allowed SSH signer for local merges
+  while retaining historical GitHub Web Flow verification; local policy and focused transcript test
+  pass. Published repair PR #185 (head e559888, base 7d43c1e) through handoffctl. PR185 exact-head
+  CI: AWQ shadow and source headers green; remaining required checks pending. Next monitor PR185,
+  diagnose failures, merge only through local signed path, then rerun post-merge assurance.
