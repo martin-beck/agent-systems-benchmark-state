@@ -24,7 +24,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1120` | `feature/ar-1120` | `f64985ad3502` | 0 | behind 25, ahead 0 |
 | `agent-systems-benchmark-ar-1130` | `feature/ar-1130` | `603eb8eb86dd` | 0 | behind 7, ahead 0 |
 | `agent-systems-benchmark-ar-1150` | `feature/ar-1150` | `d2498a7372ed` | 0 | behind 1, ahead 0 |
-| `agent-systems-benchmark-ar-1151` | `feature/ar-1151` | `baf119c55844` | 0 | behind 0, ahead 3 |
+| `agent-systems-benchmark-ar-1151` | `feature/ar-1151` | `baf119c55844` | 1 | behind 0, ahead 3 |
+| changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
 | `agent-systems-benchmark-ar-1228-auth-backends-probes` | `feature/ar-1228-auth-backends-probes` | `2d716c8cac94` | 0 | behind 52, ahead 0 |
 | `agent-systems-benchmark-ar-1229-auth-application-integration` | `feature/ar-1229-auth-application-integration` | `b33d6da59ba9` | 0 | behind 32, ahead 0 |
 | `agent-systems-benchmark-ar-1230-authenticated-provider-request-seam` | `feature/ar-1230-authenticated-provider-request-seam` | `3d0349af1a56` | 0 | behind 68, ahead 0 |
