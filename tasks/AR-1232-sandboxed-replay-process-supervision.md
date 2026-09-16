@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 121,
+  "task_revision": 122,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T03:17:52+00:00",
+  "updated_at": "2026-09-16T03:18:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -336,3 +336,6 @@
   including all workspace unit/integration/doc tests. Worktree clean and branch pushed. Remaining
   review blockers are direct spawn success/rejection tests, timeout/route environment binding, and
   explicit lifecycle/no-fallback evidence.
+
+- 2026-09-16T03:18:32+00:00: Recorded command exit 0; command argv SHA-256
+  63b4ad0ffb7ad87ab471b0fb02a931aa21623faafb4517da57e943d9cc0ff62a.
