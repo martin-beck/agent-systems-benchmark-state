@@ -2,7 +2,7 @@
 {
   "branch": "feature/csb-native-qualification",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T21:38:42+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0201",
     "AR-0202",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/csb-native-qualification",
   "observed_dirty": 0,
   "observed_head": "4e2820bffe93234d02ca39b59067bf4442b08f95",
-  "owner": "asb_ar0604_audit_20260916",
+  "owner": "",
   "plan": "../plans/AR-0604.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Qualify native CSB monitoring contention and overhead",
-  "updated_at": "2026-09-16T19:38:55+00:00",
+  "updated_at": "2026-09-16T19:38:58+00:00",
   "worktree_key": "agent-systems-benchmark-csb-native-qualification"
 }
 ---
@@ -71,3 +71,7 @@ Implementation has not started. Read the linked plan before claiming.
   exact interpreter was found. Baseline platform/runner fixtures pass but do not constitute CSB
   native A/B, overhead, or monitoring evidence. No product changes made; native ARM64 remains
   optional per plan.
+
+- 2026-09-16T19:38:58+00:00: Released ownerless blocked: exact pinned CSB source/interpreter
+  evidence unavailable; provision approved runner/container and rerun native boundary before
+  claiming qualification.
