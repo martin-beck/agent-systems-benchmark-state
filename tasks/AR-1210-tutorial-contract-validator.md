@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-16T06:06:28+00:00",
   "depends_on": [],
   "id": "AR-1210",
-  "next_action": "Final exact-tree review complete; PR #184 exact head 3e475bd approved and all required checks green. Merge through protected path, then verify resulting main and post-merge assurance.",
+  "next_action": "Post-merge assurance is blocked: Repository quality run 35054743606 rejects protected GitHub merge commit 4d4a0c4 because it lacks matching Signed-off-by trailer. Preserve merged main; coordinate a protected merge/DCO policy repair (likely existing coordinator merge-integrity AR), then rerun exact-main assurance before releasing AR-1210.",
   "observed_branch": "docs/ar-1210-tutorial-contract",
   "observed_dirty": 0,
   "observed_head": "3e475bda8f44836a169bc8fc679b430f6c993961",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define offline tutorial steps and validate them against the ASB CLI grammar.",
-  "task_revision": 86,
+  "task_revision": 87,
   "title": "Tutorial contract and syntax validator",
-  "updated_at": "2026-09-16T04:15:11+00:00",
+  "updated_at": "2026-09-16T04:15:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1210"
 }
 ---
@@ -242,3 +242,9 @@ be required.
 
 - 2026-09-16T04:15:11+00:00: Recorded command exit 0; command argv SHA-256
   54108ab9bf6a97678fbbf08c04b7750d0eed9a3a1e9295278e90cc03b195ceb5.
+
+- 2026-09-16T04:15:48+00:00: PR #184 merged cleanly at protected merge commit
+  4d4a0c4f3bd71f9884c9cc06649ba6722fa03bff from reviewed 3e475bda8f44836a169bc8fc679b430f6c993961.
+  Main ref matches. Post-merge Repository quality failed solely at commit policy: merge commit lacks
+  Signed-off-by; optional publication-interrupted is downstream. Other post-merge workflows remain
+  in progress. No product defect or gate weakening.
