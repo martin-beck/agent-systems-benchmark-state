@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1274",
-  "next_action": "Promote after dependency verification; implement the dependency-neutral runtime cassette operation executor boundary and real supervised execution.",
+  "next_action": "Integrate RuntimeOperationHandle with CLI/replay cassette adapter and runtime-owned lifecycle; add actual response, egress/no-fallback, cancellation/restart/timeout/crash cleanup tests.",
   "observed_branch": "feature/ar-1274-runtime-cassette-executor-adapter",
   "observed_dirty": 0,
   "observed_head": "7fecd58e2a81ade05e87229a76ee9defd26ba944",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime cassette operation executor callback boundary.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Runtime cassette operation executor adapter",
-  "updated_at": "2026-09-16T23:43:02+00:00",
+  "updated_at": "2026-09-16T23:43:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1274-cassette-executor"
 }
 ---
@@ -58,3 +58,11 @@ Preserve AR-1273's blocked evidence and never fabricate response or lifecycle re
 
 - 2026-09-16T23:42:54+00:00: Recorded command exit 0; command argv SHA-256
   71f95e5c2babfe74bfe55a34c1bea7585d9746adeb35dfb436d9284a36abc7a4.
+
+- 2026-09-16T23:43:17+00:00: Signed checkpoint 7fecd58 adds dependency-neutral
+  CassetteRequestV1/CassetteResponseV1 envelopes and object-safe CassetteOperationExecutor in
+  asb-core, plus runtime-owned one-shot RuntimeOperationHandle callback registration/execution with
+  request/response validation, operation mismatch and duplicate/no-fallback rejection. Focused core
+  3/3, runtime operation 2/2, offline check and fmt pass; initial locked test correctly failed
+  because Cargo.lock needed offline refresh, then lock refreshed and rerun passed. Actual CLI
+  cassette adapter and supervised lifecycle evidence remain.
