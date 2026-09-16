@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1234",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T08:49:02+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1100",
     "AR-1231"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1234",
   "observed_dirty": 0,
   "observed_head": "04b3f728fc5ff2a7e883fc1dcf0458865ce96247",
-  "owner": "asb_ar1234_worker",
+  "owner": "",
   "plan": "../plans/AR-1234.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide an approved runtime-owned loopback-only sandbox namespace capability.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Runtime-owned loopback namespace capability",
-  "updated_at": "2026-09-16T06:53:38+00:00",
+  "updated_at": "2026-09-16T06:53:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1234"
 }
 ---
@@ -123,3 +123,12 @@
 
 - 2026-09-16T06:53:38+00:00: Recorded command exit 1; command argv SHA-256
   be6234e98e596bafec2ff39ec15fda306e688d19aae956440f514228ea13122b.
+
+- 2026-09-16T06:53:55+00:00: AR-1234 audit and deterministic fail-closed coverage complete. Added
+  signed/DCO commit 04b3f72 with a regression test proving LoopbackOnly is rejected before backend
+  probe/spawn and benchmark lease is rolled back. Focused test passed 1/1; full asb-runtime suite
+  passed 27 unit + 8 process + 10 sandbox + 16 scheduler + 2 doctests; runtime Clippy -D warnings
+  and fmt passed. Pinned bwrap 0.9.0 and unshare 2.39.3 are present, but unshare -n true fails
+  Operation not permitted. No host sharing, global firewall mutation, ambient privileged helper, or
+  external network used. Preserve fail-closed behavior; next action requires approved runtime-owned
+  loopback-only helper/capability.
