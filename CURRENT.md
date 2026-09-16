@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1150](tasks/AR-1150.md): Recording campaigns | Record response cassettes. | Full fmt, clippy -D warnings, and locked offline workspace tests passed on d2498a7. PR #182 is updated at d2498a7; request independent exact-head re-review of executable campaign/cost/cancellation/restart coverage and monitor CI. | asb_ar1150_recording |
+| P0 | [AR-1150](tasks/AR-1150.md): Recording campaigns | Record response cassettes. | Post-merge verification complete: PR #182 merged at a83ba8e; exact-main tree matches feature tree, focused replay tests and full locked offline workspace tests passed, worktree clean. Release AR-1150 as done. | asb_ar1150_recording |
 
 ## Open
 
