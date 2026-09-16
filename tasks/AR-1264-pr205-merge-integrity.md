@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover signed protected-main integration after PR #205.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Recover signed integration after PR #205",
-  "updated_at": "2026-09-16T21:47:23+00:00",
+  "updated_at": "2026-09-16T21:48:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1264-merge-integrity"
 }
 ---
@@ -59,3 +59,6 @@ main gates.
   ef56571f727416202df4dd6c4b34c01a2dd7ef75, tree 1d0a5577da8cd2d6199d20980d951c468205c934; hosted
   checks started (AWQ/header passed, remaining required checks in progress). Signed recovery topic
   tip is clean and DCO-bearing.
+
+- 2026-09-16T21:48:23+00:00: Recorded command exit 0; command argv SHA-256
+  798fa23c4b5ee07ff4c4c9a272f4e0a929468cbaab40f65e3252ddde7115add4.
