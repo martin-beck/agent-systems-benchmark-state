@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1151](tasks/AR-1151.md): Strict offline replay | Replay strictly without providers. | Read the plan. | asb_ar1151_replay |
+| P0 | [AR-1151](tasks/AR-1151.md): Strict offline replay | Replay strictly without providers. | Existing strict replay primitives pass focused replay suite (21 unit/integration tests plus doc-tests). Audit and wire strict offline defaults into CLI execution: require complete tuple coverage before run, deny provider egress on every path, and label replay as non-fresh evidence; then add campaign-level conformance tests. | asb_ar1151_replay |
 
 ## Open
 

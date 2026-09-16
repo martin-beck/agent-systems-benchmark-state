@@ -1347,7 +1347,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | asb_ar1151_replay | Replay strictly without providers. | Read the plan. |
+| P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | asb_ar1151_replay | Replay strictly without providers. | Existing strict replay primitives pass focused replay suite (21 unit/integration tests plus doc-tests). Audit and wire strict offline defaults into CLI execution: require complete tuple coverage before run, deny provider egress on every path, and label replay as non-fresh evidence; then add campaign-level conformance tests. |
 
 ### Open (13)
 
@@ -1532,4 +1532,3 @@ flowchart LR
 | P1 | [AR-0311](../tasks/AR-0311-provider-openai.md): Support a shared OpenAI provider | Unclaimed | Apply one default OpenAI provider profile consistently to all supported agents. | Monitor PR #73 exact head 1128595cd2f93988374be008fcecda07fef9fde4; do not merge until every required exact-head check is green and coordinator authorizes integration. |
 | P1 | [AR-0312](../tasks/AR-0312-provider-ollama.md): Support a shared local Ollama provider | Unclaimed | Apply one pinned local Ollama provider and model configuration to all supported agents. | Monitor fresh exact-head CI for PR #71 at rebased 8137f5baa0535e5d6e74d5a81e1dfbb0deaa2615; do not merge pending coordinator review. |
 | P1 | [AR-0313](../tasks/AR-0313-all-agents-provider.md): Configure one provider for all agents | Unclaimed | Let test plans select one provider profile for every chosen supported agent atomically. | Wait for PR #78 exact-head CI; independently review immutable diff, then merge serially only if every required check is green. |
-| P1 | [AR-0314](../tasks/AR-0314-recording-source-choice.md): Choose matching replay or live provider execution | Unclaimed | Offer matching prior recordings or an actual provider connection without silently choosing either. | Durable release and post-merge verification are complete; no further AR-0314 action. |
