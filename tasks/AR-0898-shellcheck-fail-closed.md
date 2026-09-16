@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Make ShellCheck fail closed",
-  "updated_at": "2026-09-16T08:30:40+00:00",
+  "updated_at": "2026-09-16T08:30:58+00:00",
   "worktree_key": "agent-systems-benchmark-shellcheck-fail-closed"
 }
 ---
@@ -85,3 +85,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T08:30:40+00:00: Recorded command exit 0; command argv SHA-256
   9f193f75bcfa79636cff878f350f37b5f62e87bd10702370647ed5262cdd457d.
+
+- 2026-09-16T08:30:58+00:00: Recorded command exit 0; command argv SHA-256
+  fe19ea92c8422d9d09982408b9ca2c5e3597900fcae184b802c5d74c58aa3a9a.
