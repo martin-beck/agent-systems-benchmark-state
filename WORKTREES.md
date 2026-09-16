@@ -32,8 +32,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1229-auth-application-integration` | `feature/ar-1229-auth-application-integration` | `b33d6da59ba9` | 0 | behind 95, ahead 0 |
 | `agent-systems-benchmark-ar-1230-authenticated-provider-request-seam` | `feature/ar-1230-authenticated-provider-request-seam` | `3d0349af1a56` | 0 | behind 131, ahead 0 |
 | `agent-systems-benchmark-ar-1231` | `feature/ar-1231` | `fd8eaef0c36d` | 0 | behind 54, ahead 0 |
-| `agent-systems-benchmark-ar-1232` | `feature/ar-1232` | `ec25db8ec6bc` | 3 | behind 53, ahead 38 |
-| changed files | - | - | - | `crates/asb-agents/src/launch_bridge.rs`, `crates/asb-runtime/src/loopback_sidecar.rs`, `crates/asb-runtime/src/sandbox.rs` |
+| `agent-systems-benchmark-ar-1232` | `feature/ar-1232` | `b00339bd6104` | 1 | behind 53, ahead 39 |
+| changed files | - | - | - | `crates/asb-runtime/src/lib.rs` |
 | `agent-systems-benchmark-ar-1233` | `feature/ar-1233` | `11575f6a96a1` | 0 | behind 32, ahead 11 |
 | `agent-systems-benchmark-ar-1233-positive` | `feature/ar-1233-positive-transport` | `36dd575d2b76` | 0 | behind 307, ahead 9 |
 | `agent-systems-benchmark-ar-1234` | `feature/ar-1234` | `7afabe002d82` | 0 | behind 0, ahead 14 |
