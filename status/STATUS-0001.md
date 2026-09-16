@@ -1496,7 +1496,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md): Authenticated replay dispatch context | asb_ar1024_lifecycle_router | Add authenticated runtime context to the actual strict-replay CLI dispatch path. | Rerun the flaky control test in isolation/repeat, then commit context dispatch fix and add supervised lifecycle tests. |
+| P0 | [AR-1266](../tasks/AR-1266-authenticated-replay-dispatch.md): Authenticated replay dispatch context | asb_ar1024_lifecycle_router | Add authenticated runtime context to the actual strict-replay CLI dispatch path. | Connect runtime context to supervised cassette execution rather than merely offline replay; add request/response, egress denial, cancellation/restart/timeout/crash cleanup and no-fallback tests. |
 
 ### Open (6)
 

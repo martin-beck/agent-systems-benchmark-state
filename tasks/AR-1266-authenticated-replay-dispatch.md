@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1266",
-  "next_action": "Rerun the flaky control test in isolation/repeat, then commit context dispatch fix and add supervised lifecycle tests.",
+  "next_action": "Connect runtime context to supervised cassette execution rather than merely offline replay; add request/response, egress denial, cancellation/restart/timeout/crash cleanup and no-fallback tests.",
   "observed_branch": "feature/ar-1266-authenticated-replay-dispatch",
   "observed_dirty": 0,
   "observed_head": "0d3ef706de98b7df0a254fddb6c8e795aaf98ae5",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add authenticated runtime context to the actual strict-replay CLI dispatch path.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Authenticated replay dispatch context",
-  "updated_at": "2026-09-16T22:37:04+00:00",
+  "updated_at": "2026-09-16T22:37:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1266-authenticated-replay"
 }
 ---
@@ -86,3 +86,10 @@ Preserve all prior blocked evidence; no fabricated launch authority or weakened 
 
 - 2026-09-16T22:36:57+00:00: Recorded command exit 0; command argv SHA-256
   188a154c72aaebbc12feb2c44d8fb5256ca0c515033d9be46ebb930915b12dae.
+
+- 2026-09-16T22:37:18+00:00: Signed checkpoint 0d3ef70 tightens run_with_replay_context to accept
+  only the replay command and reject other commands before consuming context. Isolated rerun of
+  prior control failure passed 1/1; prior full-suite failure is classified as concurrent state-root
+  ownership contamination, unrelated to AR-1266 files. Product tree clean. Focused suite had 70/71
+  before isolation; rerun of failing test is green. Remaining acceptance is real supervised cassette
+  lifecycle, not yet complete.
