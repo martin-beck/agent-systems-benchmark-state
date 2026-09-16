@@ -2,7 +2,7 @@
 {
   "branch": "feature/remote-enrollment-authz",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T20:56:09+00:00",
+  "claim_expires": "2026-09-16T21:01:18+00:00",
   "depends_on": [
     "AR-0813"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 222,
+  "task_revision": 223,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:01:07+00:00",
+  "updated_at": "2026-09-16T19:01:18+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -564,3 +564,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T19:01:07+00:00: Recorded command exit 101; command argv SHA-256
   23bb04bdef2db5d2a56a3f98a7b30c34cb40a6a8d6062f311ecc34153c8c5f21.
+
+- 2026-09-16T19:01:18+00:00: Heartbeat by asb_ar0814_enrollment_authz.
