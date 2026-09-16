@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1235.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Repair Goose diagnostic fixture portability under emulated AArch64.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Portable Goose diagnostic fixture",
-  "updated_at": "2026-09-16T05:52:08+00:00",
+  "updated_at": "2026-09-16T06:01:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1235"
 }
 ---
@@ -70,3 +70,6 @@ its intended diagnostic error assertion. Preserve the failure and repair the fix
   Earlier exit 101 was corrected command setup error (missing --manifest-path). Preserve AR-0897
   post-merge AArch64 red evidence; reopen/claim only with a new exact failing reproduction or runner
   artifact.
+
+- 2026-09-16T06:01:19+00:00: Resume for hosted-style AArch64 workflow/emulation rerun of exact Goose
+  diagnostic test; preserve prior blocked evidence and do not alter assertions.
