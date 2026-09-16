@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Implement noninteractive pairing/identity-store CLI and certificate import; add concurrency/clock-skew/compromised-store tests.",
+  "next_action": "Run full policy/privacy gates and independent review; document negotiation pre-auth boundary and secret backend scope.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "241a033504212b0e4071ee1b112b4a2541cbf4c9",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 102,
+  "task_revision": 103,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T18:06:02+00:00",
+  "updated_at": "2026-09-16T18:06:20+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -288,3 +288,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T18:05:54+00:00: Recorded command exit 0; command argv SHA-256
   7eb14af60f8782fc1dae5451a945897532ce99d980d3ec61838b9663d6fd9166.
+
+- 2026-09-16T18:06:20+00:00: Signed+DCO 241a033 adds noninteractive asb auth pair requiring
+  fingerprint/certificate/code/expiry and emitting only digest metadata; command metadata updated
+  and pairing CLI test passed. Full workspace previously passed; latest auth/control focused suites
+  passed. One combined cargo invocation failed from multiple TESTNAME syntax and was corrected.
