@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T14:39:17+00:00",
+  "updated_at": "2026-09-16T14:39:31+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -174,3 +174,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T14:39:10+00:00: Recorded command exit 0; command argv SHA-256
   0a3105b31870b56694ed96b37f81437e20b19310ec36a361895d71e3634ded02.
+
+- 2026-09-16T14:39:31+00:00: Committed c46a3a6 (SSH-signed+DCO): routed existing
+  read_frame/write_frame over authenticated TLS StreamOwned; added TLS frame round-trip and
+  oversized-length rejection tests. Focused cargo test -p asb-control tls_frame_ --locked passed
+  2/2; cargo fmt passed; product tree clean. Next: add slow-peer bounded-timeout coverage, run full
+  applicable workspace gates, then request independent review.
