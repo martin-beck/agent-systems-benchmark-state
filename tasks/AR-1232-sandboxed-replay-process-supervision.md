@@ -9,7 +9,7 @@
     "AR-1230"
   ],
   "id": "AR-1232",
-  "next_action": "Extend supervised child harness with cancellation/restart/partial/crash/stale/duplicate and descendant egress tests; run full locked workspace gates.",
+  "next_action": "Add restart/partial/crash/stale/duplicate and descendant-egress harness evidence, then rerun full locked workspace gates.",
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "1019fdea517d19f3025b98451177f9ebdcec69c8",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 221,
+  "task_revision": 222,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T03:48:55+00:00",
+  "updated_at": "2026-09-16T03:49:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -585,3 +585,8 @@
 - 2026-09-16T03:46:26+00:00: Heartbeat by asb_ar1232_sandbox_supervision.
 
 - 2026-09-16T03:48:55+00:00: Heartbeat by asb_ar1232_sandbox_supervision.
+
+- 2026-09-16T03:49:03+00:00: Durable reconciliation of 1019fde: dedicated strict_replay_sandbox
+  harness passes 4/4, including real authenticated loopback launch, command mismatch pre-spawn
+  rejection, authenticated timeout, and terminal cancellation/reaping. Product branch is clean and
+  pushed. Prior state-lock timeout is resolved.
