@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-16T06:06:28+00:00",
   "depends_on": [],
   "id": "AR-1210",
-  "next_action": "Post-merge assurance is blocked: Repository quality run 35054743606 rejects protected GitHub merge commit 4d4a0c4 because it lacks matching Signed-off-by trailer. Preserve merged main; coordinate a protected merge/DCO policy repair (likely existing coordinator merge-integrity AR), then rerun exact-main assurance before releasing AR-1210.",
+  "next_action": "Do not release AR-1210 yet: post-merge Repository quality run 35054743606 failed because protected merge commit 4d4a0c4 lacks Signed-off-by. Coordinate merge-integrity/DCO repair and rerun exact-main assurance; preserve merged main and all evidence.",
   "observed_branch": "docs/ar-1210-tutorial-contract",
   "observed_dirty": 0,
   "observed_head": "3e475bda8f44836a169bc8fc679b430f6c993961",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define offline tutorial steps and validate them against the ASB CLI grammar.",
-  "task_revision": 87,
+  "task_revision": 88,
   "title": "Tutorial contract and syntax validator",
-  "updated_at": "2026-09-16T04:15:48+00:00",
+  "updated_at": "2026-09-16T04:16:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1210"
 }
 ---
@@ -248,3 +248,9 @@ be required.
   Main ref matches. Post-merge Repository quality failed solely at commit policy: merge commit lacks
   Signed-off-by; optional publication-interrupted is downstream. Other post-merge workflows remain
   in progress. No product defect or gate weakening.
+
+- 2026-09-16T04:16:52+00:00: Mapped 04:13:57 exit-1 record 8db5419a to the post-merge gh
+  run-list/polling sequence while assurance was incomplete; subsequent exact-main run inspection
+  succeeded. The substantive terminal failure is Repository quality: merge commit 4d4a0c4 lacks
+  matching DCO, with publication-interrupted downstream. This is integration policy evidence, not an
+  AR-1210 product failure; AR remains in_progress pending post-merge green.
