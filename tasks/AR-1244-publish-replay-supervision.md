@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish strict-replay supervision integration.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Publish AR-1232 strict-replay supervision",
-  "updated_at": "2026-09-16T09:48:41+00:00",
+  "updated_at": "2026-09-16T09:49:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1244-publish"
 }
 ---
@@ -85,3 +85,6 @@ mutation.
   insertions/2 deletions); signed SSH+DCO commit ca5f7fa pushed to feature/ar1244-publish-1232.
   Prior full formal test had one transient ExecutableFileBusy in offline sentinel; isolated rerun
   passed, so no product failure.
+
+- 2026-09-16T09:49:04+00:00: Recorded command exit 0; command argv SHA-256
+  e06556f86d479e2052e206ac30a0489a5e20fddfca5ab1e38164625e7099a944.
