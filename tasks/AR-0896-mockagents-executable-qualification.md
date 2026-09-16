@@ -2,7 +2,7 @@
 {
   "branch": "test/mockagents-executable-qualification",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T20:36:38+00:00",
+  "claim_expires": "2026-09-16T20:37:14+00:00",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-16T18:36:38+00:00",
+  "updated_at": "2026-09-16T18:37:14+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -184,3 +184,5 @@ synthetic fixture for black-box executable evidence.
   closure and exact-main evidence.
 
 - 2026-09-16T18:36:38+00:00: Claimed by asb_ar0896_recovery_20260916.
+
+- 2026-09-16T18:37:14+00:00: Heartbeat by asb_ar0896_recovery_20260916.
