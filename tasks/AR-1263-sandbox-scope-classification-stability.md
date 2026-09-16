@@ -2,7 +2,7 @@
 {
   "branch": "fix/ar-1263-sandbox-scope-classification",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T23:30:40+00:00",
   "depends_on": [
     "AR-1238"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "fix/ar-1263-sandbox-scope-classification",
   "observed_dirty": 0,
   "observed_head": "0acbc1d1a8bf43a226fda503fbd76f8afd48eb07",
-  "owner": "",
+  "owner": "asb_ar1263_sandbox_stability",
   "plan": "../plans/AR-1263.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Stabilize intermittent sandbox scope classification in the quality gate.",
-  "task_revision": 35,
+  "task_revision": 36,
   "title": "Stabilize sandbox scope classification gate",
-  "updated_at": "2026-09-16T21:28:43+00:00",
+  "updated_at": "2026-09-16T21:30:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1263-sandbox-stability"
 }
 ---
@@ -127,3 +127,5 @@ fail-closed test/runner behavior and preserve the original semantic assertions.
   terminal-crash test passed 20/20; fmt, locked workspace tests, clippy -D warnings, rustdoc,
   repository policy, and signature policy passed. cargo deny/audit unavailable; failure-path harness
   requires approved --bin-dir. No PR or merge performed.
+
+- 2026-09-16T21:30:40+00:00: Claimed by asb_ar1263_sandbox_stability.
