@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1248-strict-replay-cli-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T22:21:38+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1231",
     "AR-1232"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1248-strict-replay-cli-contract",
   "observed_dirty": 0,
   "observed_head": "7d9c2ee2e08b9d61cb03837236918575405fb5c2",
-  "owner": "asb_ar1024_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1248.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 141,
+  "task_revision": 142,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T20:22:24+00:00",
+  "updated_at": "2026-09-16T20:22:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -415,3 +415,8 @@ formal, privacy, signature, DCO, and exact-tree gates.
   StrictReplayLaunchBridge::spawn, SandboxBackend or ResourceLease. Implementing those in CLI would
   duplicate/forge runtime authority. Required repair is a dependency-linked runtime successor; no
   product mutation made.
+
+- 2026-09-16T20:22:27+00:00: Released ownerless/open after scope audit. CLI contract and provenance
+  repair remain clean with PR #197 exact head 7d9c2ee and green required CI; runtime-owned
+  attestation/supervised child launch is explicitly delegated to the successor capability before
+  further AR-1248 work.
