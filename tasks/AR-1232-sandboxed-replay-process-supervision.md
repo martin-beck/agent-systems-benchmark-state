@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 429,
+  "task_revision": 430,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T06:38:35+00:00",
+  "updated_at": "2026-09-16T06:41:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -1179,3 +1179,6 @@
   blocked because the existing launch contract only accepts an HTTP loopback endpoint and the
   isolated child cannot reach a host network listener; mapping ReplayRelay into the child requires a
   reviewed adapter/launch contract change outside this standalone seam.
+
+- 2026-09-16T06:41:16+00:00: Continue AR-1232-only relay handoff descriptor and launch-input
+  validation; preserve denied networking and stop at explicit child HTTP contract boundary.
