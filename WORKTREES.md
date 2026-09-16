@@ -32,8 +32,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1230-authenticated-provider-request-seam` | `feature/ar-1230-authenticated-provider-request-seam` | `3d0349af1a56` | 0 | behind 99, ahead 0 |
 | `agent-systems-benchmark-ar-1231` | `feature/ar-1231` | `fd8eaef0c36d` | 0 | behind 22, ahead 0 |
 | `agent-systems-benchmark-ar-1232` | `feature/ar-1232` | `994c6716904d` | 0 | behind 21, ahead 25 |
-| `agent-systems-benchmark-ar-1233` | `feature/ar-1233` | `00f37631e680` | 1 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-runtime/src/sandbox.rs` |
+| `agent-systems-benchmark-ar-1233` | `feature/ar-1233` | `143213c1d09c` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 357, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 460, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 354, ahead 0 |
