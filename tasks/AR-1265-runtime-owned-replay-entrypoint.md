@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1265-runtime-owned-replay-entrypoint",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T00:19:45+00:00",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1265-runtime-owned-replay-entrypoint",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1265.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide a real runtime-owned strict-replay CLI entrypoint.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime-owned strict-replay CLI entrypoint",
-  "updated_at": "2026-09-16T22:19:31+00:00",
+  "updated_at": "2026-09-16T22:19:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1265-runtime-replay-entrypoint"
 }
 ---
@@ -32,3 +32,5 @@ unmerged implementation is not an input; preserve its review as the reason this 
 
 - 2026-09-16T22:19:31+00:00: Dependencies AR-1237, AR-1238, and AR-1239 are done; AR-1262 review
   proves a separate runtime-owned entrypoint is required.
+
+- 2026-09-16T22:19:45+00:00: Claimed by asb_ar1024_lifecycle_router.
