@@ -11,17 +11,17 @@
   "id": "AR-0813",
   "next_action": "Fix RemoteListener::accept permit ordering: accept TcpStream before acquiring active connection permit (or otherwise ensure blocked accept cannot consume capacity/drain); add regression test for idle listener drain and concurrent accept capacity. Then rerun full locked workspace gates, independent review, and exact-head CI.",
   "observed_branch": "feature/remote-control-transport",
-  "observed_dirty": 1,
-  "observed_head": "f3153d75fec26f258d97f6d85a3496d9f507f899",
+  "observed_dirty": 0,
+  "observed_head": "568257461ec6da9ea5b867b836b4c991b4fa66f2",
   "owner": "asb_ar0813_remote_transport",
   "plan": "../plans/AR-0813.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 193,
+  "task_revision": 194,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T15:20:54+00:00",
+  "updated_at": "2026-09-16T15:21:02+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
