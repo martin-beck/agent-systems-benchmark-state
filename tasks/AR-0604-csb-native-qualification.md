@@ -10,15 +10,18 @@
   ],
   "id": "AR-0604",
   "next_action": "Build the CSB-to-ASB signal inventory and native x86_64 causal A/B matrix; run applicable pinned QEMU AArch64 portability checks and document native ARM64 as optional future evidence.",
+  "observed_branch": "feature/csb-native-qualification",
+  "observed_dirty": 0,
+  "observed_head": "4e2820bffe93234d02ca39b59067bf4442b08f95",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-0604.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Qualify native CSB monitoring contention and overhead",
-  "updated_at": "2026-09-16T12:47:56+00:00",
+  "updated_at": "2026-09-16T12:48:03+00:00",
   "worktree_key": "agent-systems-benchmark-csb-native-qualification"
 }
 ---
