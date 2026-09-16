@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0813",
-  "next_action": "Await GitHub API recovery; local policy and contract gates pass, then rerun PR202 Policy job at exact badd246 and assess terminal checks.",
+  "next_action": "Monitor PR202 refreshed exact head efa9ab4; verify policy/audit and all required CI checks terminal before review/merge.",
   "observed_branch": "feature/remote-control-transport",
   "observed_dirty": 0,
   "observed_head": "efa9ab496a714afbd96e74846638093b300e723b",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 271,
+  "task_revision": 272,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T16:13:05+00:00",
+  "updated_at": "2026-09-16T16:13:25+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -834,3 +834,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T16:13:05+00:00: Recorded command exit 0; command argv SHA-256
   a1307a9406a3121af1acce68a8f4db7c8b42aa44316637af242257985143cbc3.
+
+- 2026-09-16T16:13:25+00:00: Dependency repair committed and pushed as SSH-signed+DCO
+  efa9ab496a714afbd96e74846638093b300e723b: rustls 0.23.45 with aws_lc_rs (removes ring/windows-sys
+  duplicate), rcgen 0.14.7 aws_lc_rs, time 0.3.47, and serde 1.0.220 lock-compatible refresh;
+  adapted rcgen signing-key API. Focused TLS and workspace clippy/tests pass. Local cargo-deny is
+  unavailable (cargo reports no deny subcommand); CI remains authoritative for audit/deny.

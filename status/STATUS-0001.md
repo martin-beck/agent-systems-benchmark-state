@@ -1462,7 +1462,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0813](../tasks/AR-0813-remote-control-transport.md): Add secure remote control transport | asb_ar0813_remote_transport | Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client. | Await GitHub API recovery; local policy and contract gates pass, then rerun PR202 Policy job at exact badd246 and assess terminal checks. |
+| P1 | [AR-0813](../tasks/AR-0813-remote-control-transport.md): Add secure remote control transport | asb_ar0813_remote_transport | Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client. | Monitor PR202 refreshed exact head efa9ab4; verify policy/audit and all required CI checks terminal before review/merge. |
 
 ### Open (4)
 
