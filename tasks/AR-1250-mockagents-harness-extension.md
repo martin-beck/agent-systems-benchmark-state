@@ -8,7 +8,7 @@
     "AR-0889"
   ],
   "id": "AR-1250",
-  "next_action": "Add hostile tool/result, cancellation/backpressure, outbound-denial, repeat-clean-state cases; then run full gates and open PR from cc7d32c.",
+  "next_action": "Implement hostile tool/result, cancellation/backpressure, outbound-denial cases; then run arm64 repeat and full gates.",
   "observed_branch": "feature/ar-1250-mockagents-harness-extension",
   "observed_dirty": 0,
   "observed_head": "0d8e9ac304101f7a5625481065306a02fe71ecfe",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend the pinned MockAgents executable qualification harness.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Extend MockAgents qualification harness",
-  "updated_at": "2026-09-16T10:54:41+00:00",
+  "updated_at": "2026-09-16T10:55:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1250"
 }
 ---
@@ -90,3 +90,10 @@ privacy, signature, DCO, and exact-tree gates; do not claim support from host in
 
 - 2026-09-16T10:54:41+00:00: Recorded command exit 0; command argv SHA-256
   f7d4ea330f90fae5012414d7cc42434d6a86ac33360ae1e3b5d274507ede920b.
+
+- 2026-09-16T10:55:02+00:00: Signed+DCO commits 248debb, 16358c4, 8cb1439, 0d8e9ac pushed; exact
+  head 0d8e9ac clean. Added explicit platform and immutable runner SHA contract; arm64 real qemu run
+  passed five existing cases. Repeat gate initially caught unstable anthropic_sse and
+  openai_responses hashes; normalized SSE event identity and nested response id/timestamps.
+  Five-repeat amd64 qualification now passes with stable case inventory/hashes. Remaining hostile
+  cases are not yet implemented.
