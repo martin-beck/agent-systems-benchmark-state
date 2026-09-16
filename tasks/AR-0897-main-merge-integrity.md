@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 85,
+  "task_revision": 86,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-16T04:57:03+00:00",
+  "updated_at": "2026-09-16T04:57:33+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -297,3 +297,6 @@ Implementation has not started. Read the linked plan before claiming.
   policy/integration and any feasible remaining gates, perform independent exact-head review, then
   publish updated PR126 only after clean exact-tree approval; preserve 00f3763 and do not use GitHub
   web merge.
+
+- 2026-09-16T04:57:33+00:00: Recorded command exit 0; command argv SHA-256
+  3d8fe1620bda5e98a41432841c9a4893745c2315f3b3d4792f6421374a34c15c.
