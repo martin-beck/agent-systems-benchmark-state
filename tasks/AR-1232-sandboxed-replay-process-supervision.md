@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1232",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T08:18:33+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 3,
   "observed_head": "994c6716904dc2f3d4b9fc186ea35490f236b869",
-  "owner": "asb_ar1232_loopback_worker",
+  "owner": "",
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 406,
+  "task_revision": 407,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T06:23:53+00:00",
+  "updated_at": "2026-09-16T06:25:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -1088,3 +1088,12 @@
 
 - 2026-09-16T06:23:53+00:00: Recorded command exit 101; command argv SHA-256
   97b904396eadf24461e2127b81f30f699ea7973d81d7435eccb7d8bb24efa929.
+
+- 2026-09-16T06:25:02+00:00: Scoped loopback authorization was exercised and recorded: host-network
+  sharing was attempted only behind a wrapper using deny-by-default address filtering, with the
+  cassette listener as the sole permitted loopback destination and all provider/external/ambient
+  egress denied; teardown completed and no credentials or external endpoints were used. The wrapper
+  reached the host loopback cassette listener, but the host-network filter did not deny an external
+  probe on this host, so the required deny-by-default loopback-only guarantee is unverified and
+  AR-1232 remains blocked. Do not broaden access. Next action: provide an enforceable, independently
+  verified loopback-only transport wrapper or kernel policy before implementation/re-review.
