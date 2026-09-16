@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an approved runtime-owned loopback-only sandbox namespace capability.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Runtime-owned loopback namespace capability",
-  "updated_at": "2026-09-16T08:53:16+00:00",
+  "updated_at": "2026-09-16T08:53:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1234"
 }
 ---
@@ -183,3 +183,6 @@
   implementation.
 
 - 2026-09-16T08:48:59+00:00: Claimed by asb_ar1234_namespace_finish_worker.
+
+- 2026-09-16T08:53:32+00:00: Recorded command exit 0; command argv SHA-256
+  08d57388abeac3a1c095ff93186ee24351040d12d34ebf7d4f49c95980a5621f.
