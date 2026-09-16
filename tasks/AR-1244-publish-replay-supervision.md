@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1232",
   "checkpoint_commit": "2543a4c213bc7a1f9b426cb8c0b95d815a0bf7e4",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T10:04:23+00:00",
   "depends_on": [
     "AR-1232"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "2543a4c213bc7a1f9b426cb8c0b95d815a0bf7e4",
-  "owner": "",
+  "owner": "asb_ar1244_publish_1232",
   "plan": "../plans/AR-1244.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Publish strict-replay supervision integration.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Publish AR-1232 strict-replay supervision",
-  "updated_at": "2026-09-16T09:33:46+00:00",
+  "updated_at": "2026-09-16T09:34:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1244-publish"
 }
 ---
@@ -30,3 +30,5 @@ mutation.
 
 - 2026-09-16T09:33:46+00:00: Promoted for exact-head publication of completed AR-1232
   implementation.
+
+- 2026-09-16T09:34:23+00:00: Claimed by asb_ar1244_publish_1232.
