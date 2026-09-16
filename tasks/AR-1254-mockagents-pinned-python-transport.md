@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1254-mockagents-pinned-python-transport",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T20:57:59+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1252",
     "AR-1253"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1254-mockagents-pinned-python-transport",
   "observed_dirty": 0,
   "observed_head": "154a34549784bd3bba0a5fa47d046a237897980a",
-  "owner": "asb_ar1254_mockagents_transport_qualification",
+  "owner": "",
   "plan": "../plans/AR-1254.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Qualify MockAgents through the pinned Python sandbox.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Qualify MockAgents through pinned Python transport",
-  "updated_at": "2026-09-16T18:58:56+00:00",
+  "updated_at": "2026-09-16T19:00:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1254"
 }
 ---
@@ -151,3 +151,12 @@ Keep fixtures, runtimes, caches, and evidence under `/srv/data/projects`.
 
 - 2026-09-16T18:58:56+00:00: Recorded command exit 126; command argv SHA-256
   6a62237f3dd786b1cf8b0a40adda442d49d6ab79ebd3b028cb0c61e9152851eb.
+
+- 2026-09-16T19:00:21+00:00: Released ownerless blocked after exact qualification attempt. Focused
+  unittest discovery passed 20/20 and network-none route probe passed, but approved run_isolated.py
+  mounts one read-only file and executes it directly; invoking pinned MockAgents tar archive
+  returned exit 126 because archive is non-executable. Existing transport fixture is
+  synthetic/outside isolation, arm64 selection does not perform QEMU, and no in-container
+  transport/egress/malformed/descendant evidence exists. AR-1255 already owns the required bundled
+  fixture and QEMU-capable runner; keep this AR blocked until that dependency provides real
+  evidence.
