@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Break the strict-replay runtime/CLI dependency cycle with a shared transport contract.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Break strict-replay runtime/CLI dependency cycle",
-  "updated_at": "2026-09-16T22:54:34+00:00",
+  "updated_at": "2026-09-16T22:54:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1268-replay-transport"
 }
 ---
@@ -132,3 +132,9 @@ Preserve AR-1267's blocked evidence; do not fabricate authority or weaken crate 
 
 - 2026-09-16T22:54:27+00:00: Recorded command exit 0; command argv SHA-256
   f0b3f9ed3c0d5be170cf2716c39254f0205cc5a39146e6631a6060bdbaf5fa9d.
+
+- 2026-09-16T22:54:45+00:00: Signed checkpoint 1a85dfd adds argument-level negative coverage:
+  run_with_transport rejects non-replay commands before consuming the shared transport, and the
+  context remains bindable afterward. CLI adapter/dispatch tests now 3/3; prior full CLI suite
+  73/73; asb-core 18/18 and asb-runtime 40/40; fmt pass. Product tree clean. Supervised
+  lifecycle/egress matrix remains next.
