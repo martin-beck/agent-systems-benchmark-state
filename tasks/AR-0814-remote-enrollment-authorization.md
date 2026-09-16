@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 169,
+  "task_revision": 170,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T18:28:50+00:00",
+  "updated_at": "2026-09-16T18:29:58+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -459,3 +459,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-16T18:28:50+00:00: Signed+DCO 53eb378 defines additive CONTROL_BREAK_GLASS_V1 (1.7) and
   closed BreakGlassParams with principal/request digests, generation, idempotency. Existing
   asb-control lib suite passes 54/54; no legacy wire enum changed yet.
+
+- 2026-09-16T18:29:58+00:00: Recorded command exit 101; command argv SHA-256
+  cc8b245bd0b3ea9c27bfc29a391b2bc4dbd36e40167f7232654e427a9e81c2ea.
