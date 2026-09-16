@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 431,
+  "task_revision": 432,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T06:41:18+00:00",
+  "updated_at": "2026-09-16T06:41:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -1184,3 +1184,6 @@
   validation; preserve denied networking and stop at explicit child HTTP contract boundary.
 
 - 2026-09-16T06:41:18+00:00: Claimed by asb_ar1232_worker.
+
+- 2026-09-16T06:41:21+00:00: Recorded command exit 0; command argv SHA-256
+  3ee89880a9bfc03c7d44bd29a4803b8167cb71e275a72527c78be2b48890507a.
