@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1236-runtime-loopback-sidecar",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T09:27:33+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1100",
     "AR-1231"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1236-runtime-loopback-sidecar",
   "observed_dirty": 0,
   "observed_head": "42c3d1959b9a47e152492758d35fb1ca45dc8afc",
-  "owner": "asb_ar1236_handoff_worker",
+  "owner": "",
   "plan": "../plans/AR-1236.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide a runtime-owned private-namespace loopback sidecar capability.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Runtime-owned loopback sidecar capability",
-  "updated_at": "2026-09-16T07:29:46+00:00",
+  "updated_at": "2026-09-16T07:30:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1236"
 }
 ---
@@ -74,3 +74,12 @@ privacy, policy, native, signature, and exact-head gates.
 
 - 2026-09-16T07:29:39+00:00: Recorded command exit 0; command argv SHA-256
   814ebc2e9d23ad5a7a3d8bea4905e9f4ce65256be1e97182db17570204cf0b57.
+
+- 2026-09-16T07:30:21+00:00: Implemented signed 42c3d19: versioned SidecarHandoff binds generation,
+  route digest, private relay, loopback endpoint, deadline, and sidecar/adapter command digests;
+  added fail-closed validation and 2 tests. Focused runtime 32 tests, full workspace locked tests,
+  clippy -D warnings, fmt, and rustdoc passed. Actual same-private-namespace TCP bridge and
+  provider/descendant denial remain blocked because SandboxBackend launches one command under bwrap
+  --unshare-all and has no reviewed sidecar injection/namespace handoff; rootless host capability
+  cannot configure child loopback. No host sharing, firewall, ambient ip, credentials, or unrelated
+  AR changes.
