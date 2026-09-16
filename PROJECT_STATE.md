@@ -30,7 +30,7 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 35054743630 | `4d4a0c4f3bd7` | push | Emulated aarch64 portability | in_progress:- |
-| 35054743617 | `4d4a0c4f3bd7` | push | Fault assurance | in_progress:- |
+| 35054743617 | `4d4a0c4f3bd7` | push | Fault assurance | completed:success |
 | 35054743614 | `4d4a0c4f3bd7` | push | Rust verification | in_progress:- |
 | 35054743606 | `4d4a0c4f3bd7` | push | Repository quality | completed:failure |
 | 35054743596 | `4d4a0c4f3bd7` | push | Formal assurance | in_progress:- |
