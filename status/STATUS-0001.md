@@ -1441,7 +1441,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0899](../tasks/AR-0899-gitleaks-revision-config-integrity.md): Align and harden Gitleaks execution | asb_ar0899_gitleaks | Resolve GitHub issue 118 by making local and CI Gitleaks scans deterministic and config changes fail closed. | Unify Gitleaks revision scoping and protect its configuration with executable negative tests. |
-| P0 | [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md): Provision approved isolated qualification runner | asb_ar1252_isolated_runner | Provision an approved isolated qualification runner for ASB executable evidence. | Independent review runner contract; then integrate AR-1251 consumer and run full policy gates. |
+| P0 | [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md): Provision approved isolated qualification runner | asb_ar1252_isolated_runner | Provision an approved isolated qualification runner for ASB executable evidence. | Integrate AR-1251 to use runner preflight and direct executable mode; add descendant cleanup proof and run full gates. |
 
 ### Open (4)
 

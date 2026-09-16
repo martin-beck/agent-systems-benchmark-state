@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-1252",
-  "next_action": "Independent review runner contract; then integrate AR-1251 consumer and run full policy gates.",
+  "next_action": "Integrate AR-1251 to use runner preflight and direct executable mode; add descendant cleanup proof and run full gates.",
   "observed_branch": "feature/ar-1252-approved-isolated-runner",
   "observed_dirty": 0,
   "observed_head": "d7ed22907ef0977fd7b0ff9b32f5504ca3f2b236",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 65,
+  "task_revision": 66,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:37:57+00:00",
+  "updated_at": "2026-09-16T11:38:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -190,3 +190,10 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
 
 - 2026-09-16T11:37:57+00:00: Recorded command exit 0; command argv SHA-256
   39059b7c1cd82b6a868a9664b24fb3304554af65573f82cb7ce48f4ad80d3937.
+
+- 2026-09-16T11:38:18+00:00: Signed+DCO head d7ed229 pushed. Direct consumer integration slice
+  added: --verify-artifact-version executes the pinned MockAgents binary itself inside the
+  digest-pinned container and verifies 0.5.0, avoiding absent/ambient host Python (Ubuntu image has
+  no python3). With executable digest d62c55e4..., mode returned artifact-version-verified. Existing
+  network-none, timeout, no-mount, shell rejection and cleanup contract tests remain passing. Full
+  AR-1251 harness invocation and descendant-process cleanup proof remain.
