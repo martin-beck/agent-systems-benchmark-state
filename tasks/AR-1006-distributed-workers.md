@@ -16,9 +16,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Schedule trials across native-capability workers while preserving per-host capacity meaning.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Coordinate distributed experiment workers",
-  "updated_at": "2026-09-16T12:32:09+00:00",
+  "updated_at": "2026-09-16T12:36:34+00:00",
   "worktree_key": "agent-systems-benchmark-distributed-workers"
 }
 ---
@@ -100,3 +100,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T12:32:09+00:00: Recorded command exit 0; command argv SHA-256
   89c98605324b102512c2c98249d3d4a2309c852df010a30d60ab387693e48bd1.
+
+- 2026-09-16T12:36:34+00:00: Recorded command exit 0; command argv SHA-256
+  8ee7e6e2c4199aecb827abfc3ae43ea11d1e30108580bcfb52304851af74c307.
