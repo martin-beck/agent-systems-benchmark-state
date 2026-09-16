@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T07:06:24+00:00",
   "depends_on": [
     "AR-1231",
     "AR-1100"
@@ -12,15 +12,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "asb_ar1232_sandbox_supervision",
   "plan": "../plans/AR-1233.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide an authenticated loopback-only sandbox transport for strict replay services.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Approved loopback-only sandbox transport",
-  "updated_at": "2026-09-16T05:06:10+00:00",
+  "updated_at": "2026-09-16T05:06:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1233"
 }
 ---
@@ -31,3 +31,5 @@
 
 - 2026-09-16T05:06:10+00:00: Promote approved loopback-only sandbox transport prerequisite;
   dependencies AR-1231 and AR-1100 are complete.
+
+- 2026-09-16T05:06:24+00:00: Claimed by asb_ar1232_sandbox_supervision.
