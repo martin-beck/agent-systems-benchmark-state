@@ -11,17 +11,17 @@
   "id": "AR-1271",
   "next_action": "Add CLI adapter over RuntimeCassetteOperation with exact handle binding and real replay service request/response fixtures; then lifecycle/egress/no-fallback gates.",
   "observed_branch": "feature/ar-1271-cassette-operation-contract",
-  "observed_dirty": 4,
-  "observed_head": "af60454e00ba51ee384b85e2060b5957fbffa7e7",
+  "observed_dirty": 0,
+  "observed_head": "c41b423c0536fe30fd2b6c5a6a33e46c9102ec5e",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1271.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define a dependency-neutral cassette request/response operation contract.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Dependency-neutral cassette operation contract",
-  "updated_at": "2026-09-16T23:18:48+00:00",
+  "updated_at": "2026-09-16T23:18:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1271-cassette-operation"
 }
 ---
