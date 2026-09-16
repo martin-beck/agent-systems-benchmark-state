@@ -1443,7 +1443,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md): Provision approved isolated qualification runner | asb_ar1252_isolated_runner | Provision an approved isolated qualification runner for ASB executable evidence. | Request independent review of exact head d5f21ce; then rerun exact-head CI. |
+| P0 | [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md): Provision approved isolated qualification runner | asb_ar1252_isolated_runner | Provision an approved isolated qualification runner for ASB executable evidence. | Publish PR from exact signed head d5f21ce; monitor exact-head CI, then merge only after all required checks and independent approval. |
 
 ### Open (4)
 
@@ -1596,4 +1596,3 @@ flowchart LR
 | P0 | [AR-1065](../tasks/AR-1065-asb-tui-branch-policy-context.md): Normalize asb-tui branch required-status policy | Unclaimed | Normalize asb-tui main branch protection so successful GitHub Actions checks can merge. | A repository maintainer must remove the stale legacy required-status context from asb-tui main while retaining the app-scoped GitHub Actions check, then re-evaluate PR #26. |
 | P0 | [AR-1100](../tasks/AR-1100.md): Configuration defaults | Unclaimed | Persist configuration defaults. | Post-merge verification complete at protected ASB main; retain merged evidence and monitor downstream wizard dependencies. |
 | P0 | [AR-1110](../tasks/AR-1110.md): Provider and model registry | Unclaimed | Manage providers and models. | Post-merge verification complete: PR #180 merged at 600d5a28; exact-main tree matches feature tree, focused asb-config tests and full offline workspace tests passed, worktree clean. Release AR-1110 as done. |
-| P0 | [AR-1120](../tasks/AR-1120.md): Authentication enrollment | Unclaimed | Enroll provider authentication. | AR complete: merged PR #176 at bd9e153a; post-merge exact-main verification and full auth package gates passed; retain closure evidence in state. |

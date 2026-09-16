@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-1252",
-  "next_action": "Request independent review of exact head d5f21ce; then rerun exact-head CI.",
+  "next_action": "Publish PR from exact signed head d5f21ce; monitor exact-head CI, then merge only after all required checks and independent approval.",
   "observed_branch": "feature/ar-1252-approved-isolated-runner",
   "observed_dirty": 0,
   "observed_head": "d5f21cebefbc0d532537fbdbdffc998d62e92255",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 96,
+  "task_revision": 97,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T12:52:44+00:00",
+  "updated_at": "2026-09-16T12:53:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -288,3 +288,11 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
   Python image after independent review/CI.
 
 - 2026-09-16T12:52:44+00:00: Heartbeat by asb_ar1252_isolated_runner.
+
+- 2026-09-16T12:53:51+00:00: Independent exact-head review approved
+  d5f21cebefbc0d532537fbdbdffc998d62e92255: complete diff adds explicit Ubuntu/Python immutable
+  image allowlist with RepoDigest verification, preserves
+  network-none/read-only/cap-drop/private-IPC/bounded resources/single read-only bind/shell
+  rejection/named cleanup, adds artifact digest/version verification and live probes. Focused 6/6
+  and full llm-double-spike 15/15 pass; source policy/diff checks pass; all commits SSH-signed+DCO.
+  AR-1251 invocation remains correctly separate. No PR currently exists; publication authorized.
