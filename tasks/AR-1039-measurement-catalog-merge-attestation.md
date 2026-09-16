@@ -2,22 +2,22 @@
 {
   "branch": "docs/measurement-catalog-merge-attestation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T07:57:42+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1039",
   "next_action": "Current exact head 7b3ef113 is clean and signed/DCO, with PR140 merge attestation artifacts. Independently review this successor against AR-1039 plan; do not mutate or rewrite historical PR131/PR134.",
   "observed_branch": "docs/measurement-catalog-merge-attestation",
   "observed_dirty": 0,
   "observed_head": "7b3ef113d2b77c3982748f16c540d0e556252464",
-  "owner": "asb_ar1232_sandbox_supervision",
+  "owner": "",
   "plan": "../plans/AR-1039.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Recover the measurement catalog publication boundary without rewriting protected main.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Attest the measurement catalog merge boundary",
-  "updated_at": "2026-09-16T05:58:21+00:00",
+  "updated_at": "2026-09-16T06:04:10+00:00",
   "worktree_key": "agent-systems-benchmark-measurement-catalog-merge-attestation"
 }
 ---
@@ -310,3 +310,7 @@ the corrective merge commit uses an actual multiline DCO trailer. This AR owns n
   7b3ef113d2b77c3982748f16c540d0e556252464. Current commit is docs: attest measurement catalog PR140
   merge and includes bounded attestation/docs/quality-gate updates. Prior PR134 metadata is stale;
   preserve history and review current successor exact head.
+
+- 2026-09-16T06:04:10+00:00: Released after exact worktree audit; current successor head 7b3ef11 is
+  clean signed attestation work and requires independent review by coordinator. No source mutation
+  needed.
