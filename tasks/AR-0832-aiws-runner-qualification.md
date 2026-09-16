@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Qualify development host ASB runner operations",
-  "updated_at": "2026-09-16T12:22:04+00:00",
+  "updated_at": "2026-09-16T12:22:14+00:00",
   "worktree_key": "agent-systems-benchmark-development-host-runner-qualification"
 }
 ---
@@ -37,3 +37,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T12:21:57+00:00: Recorded command exit 0; command argv SHA-256
   dde2a22d691f497a428606f2d193376b6a6c7982ddefa6fe0a7c7c4faa708ccb.
+
+- 2026-09-16T12:22:14+00:00: Recorded command exit 5; command argv SHA-256
+  88182a365eedc2365361028a3d2eb47b38bd4f11e2e5d0612a69f408ef94fc81.
