@@ -2,7 +2,7 @@
 {
   "branch": "fix/main-merge-integrity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T07:45:49+00:00",
+  "claim_expires": "2026-09-16T07:47:11+00:00",
   "depends_on": [
     "AR-0003"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 164,
+  "task_revision": 165,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-16T05:46:54+00:00",
+  "updated_at": "2026-09-16T05:47:11+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -541,3 +541,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T05:46:54+00:00: Recorded command exit 0; command argv SHA-256
   b3429a8fc9d44e7e10ae361fc06719551bafb33fdbb7de5e9736743b33161347.
+
+- 2026-09-16T05:47:11+00:00: Heartbeat by asb_ar0897_merge_integrity.
