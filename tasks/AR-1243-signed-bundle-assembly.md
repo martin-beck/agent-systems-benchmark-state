@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1243",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T11:23:16+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1239",
     "AR-1240",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1243",
   "observed_dirty": 0,
   "observed_head": "a816a7733ebf7a3e359bb1b1306b663b71f7c707",
-  "owner": "asb_ar1232_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1243.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Build, sign, verify, and publish installable supervisor and sidecar runtime bundles.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Installable signed runtime bundle assembly",
-  "updated_at": "2026-09-16T09:23:24+00:00",
+  "updated_at": "2026-09-16T09:23:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1243"
 }
 ---
@@ -105,3 +105,11 @@ private material; do not alter host networking, firewall, credentials, or unrela
 
 - 2026-09-16T09:23:24+00:00: Recorded command exit 0; command argv SHA-256
   2f3be5bcb1b24f00b594d315ef53ecdb70bf82a898f0b3fc09f30671d045a1bb.
+
+- 2026-09-16T09:23:34+00:00: Completed clean bundle assembly. feature/ar-1243 is based on
+  origin/main and contains only signed role-aware verifier/assembly/docs commits ab882b1 and
+  a816a77. Built reviewed supervisor/sidecar inputs, signed manifest with ED25519 SSHSIG namespace
+  asb-runtime-bundle-v1, offline verification passed; deterministic archive SHA-256 matched across
+  two builds (3f97d5e9e6293f3f265808b9b4d7a95991edd9b2ddf99efb57b1106bf07590db). Python assembly
+  tests 2/2 and asb-bundle/runtime locked tests passed. Mixed history preserved as
+  backup/ar-1243-mixed; no host/global network or credential changes.

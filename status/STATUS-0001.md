@@ -7,16 +7,16 @@
 
 ## Portfolio overview
 
-**271 ARs tracked** across 7 active status categories.
+**271 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 5 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 9 |
 | **Planned** | Defined work awaiting promotion or dependencies | 63 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 183 |
+| **Done** | Accepted, integrated, and durably verified | 184 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 9 |
 
@@ -336,7 +336,7 @@ flowchart LR
         AR_1240["AR-1240 - Done"]:::status_done
         AR_1241["AR-1241 - Done"]:::status_done
         AR_1242["AR-1242 - Done"]:::status_done
-        AR_1243["AR-1243 - In progress"]:::status_in_progress
+        AR_1243["AR-1243 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1403,12 +1403,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1243](../tasks/AR-1243-signed-bundle-assembly.md): Installable signed runtime bundle assembly | asb_ar1232_lifecycle_router | Build, sign, verify, and publish installable supervisor and sidecar runtime bundles. | Stop AR-1243 publication pending coordinator separation/reconciliation: branch c9fdcaf includes unrelated runtime/replay commits beyond bundle-only scope. Preserve all signed history; create a clean packaging branch or coordinator-approved split before gates/PR. |
-
 ### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -1507,7 +1501,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (183)
+### Done (184)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1569,3 +1563,4 @@ flowchart LR
 | P0 | [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md): Authenticated provider-request seam and secret injection contract | Unclaimed | Define the approved bounded provider authentication request and secret-injection seam. | PR #178 exact head 3d0349a requires independent re-review and CI rerun. inject now polls a current-generation callback before and after sink; synchronized AtomicU64 transition test proves concurrent rotation fails closed. Rollback/privacy tests remain green; delegated transport/application gates remain AR-1228/AR-1229. |
 | P0 | [AR-1231](../tasks/AR-1231-strict-replay-execution-seam.md): Strict replay execution and egress-isolation seam | Unclaimed | Execute real agents through strict replay without provider egress or live fallback. | Rerun exact-head CI for b622554 and obtain independent review; successful qualified cassette service construction, route identity mismatch coverage, and credential/ambient-field rejection tests are now present. Runtime child supervision remains AR-1232. |
 | P0 | [AR-1232](../tasks/AR-1232-sandboxed-replay-process-supervision.md): Sandboxed replay process supervision | Unclaimed | Supervise strict replay adapters inside the approved network-denied sandbox. | Wait for approved, merged AR-1234 runtime-owned loopback namespace capability (and AR-1233 LoopbackOnly policy contract) before child HTTP cassette integration. Their current commits are feature-branch-only and both tasks remain blocked; do not reuse unmerged code. Then bind ReplayRelayHandoff into the reviewed launch contract and rerun child success, provider-egress denial, stale/duplicate, timeout/crash cleanup, and unrelated-process tests. |
+| P0 | [AR-1233](../tasks/AR-1233-loopback-sandbox-transport.md): Approved loopback-only sandbox transport | Unclaimed | Provide an authenticated loopback-only sandbox transport for strict replay services. | Typed LoopbackOnly policy slice 143213c passes full asb-runtime package tests; actual attested loopback namespace/listener binding remains required. Implement backend capability without weakening Deny, then add native child-service/provider-egress tests and full workspace gates. |
