@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1236-runtime-loopback-sidecar",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T09:22:00+00:00",
   "depends_on": [
     "AR-1100",
     "AR-1231"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1236-runtime-loopback-sidecar",
   "observed_dirty": 0,
   "observed_head": "1c6ab1db1496250adb927a615e7751d376e8f1e9",
-  "owner": "",
+  "owner": "asb_ar1236_worker",
   "plan": "../plans/AR-1236.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide a runtime-owned private-namespace loopback sidecar capability.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Runtime-owned loopback sidecar capability",
-  "updated_at": "2026-09-16T07:21:58+00:00",
+  "updated_at": "2026-09-16T07:22:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1236"
 }
 ---
@@ -53,3 +53,5 @@ privacy, policy, native, signature, and exact-head gates.
 
 - 2026-09-16T07:21:58+00:00: Resuming AR-1236 exclusively to implement and test the missing
   runtime-owned namespace bridge; preserve fail-closed isolation and NetworkPolicy::Deny.
+
+- 2026-09-16T07:22:00+00:00: Claimed by asb_ar1236_worker.
