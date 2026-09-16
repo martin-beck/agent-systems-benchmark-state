@@ -9,7 +9,7 @@
     "AR-1230"
   ],
   "id": "AR-1232",
-  "next_action": "Owned loopback control baseline and causal denial fixture are pushed at a3b6768. Native strict replay gate passes 7/7 with explicit ASB_TEST_ROOT and --ignored; remaining review gap is native StrictReplayExecutor authenticated cassette-service lifecycle/recovery and stale/duplicate generation integration.",
+  "next_action": "d7ca82f adds executor recover_after_restart closure test and passes focused lifecycle test; remote is already at d7ca82f. Push exit 1 was stale expected-ref race, not product failure. Continue native stale/duplicate generation integration and rerun full gates.",
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "d7ca82fba8885e0929fc7e3d0a43c28eb93ca342",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 367,
+  "task_revision": 368,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T04:55:24+00:00",
+  "updated_at": "2026-09-16T04:55:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -961,3 +961,10 @@
   39cf5398131881d6bebfeb6940a170dba53287cbad205a984f34c80a6dbe58e7.
 
 - 2026-09-16T04:55:24+00:00: Heartbeat by asb_ar1232_sandbox_supervision.
+
+- 2026-09-16T04:55:37+00:00: Focused cargo test for
+  executor_recovery_closes_stale_attempt_without_fallback passed 1/1. Test proves a qualified
+  cassette executor transitions to closed after recovery, rejects subsequent execute, and rejects
+  second recovery (no fallback/reuse). Product head d7ca82f is signed/DCO, clean, and
+  remote-advanced despite wrapper push reporting expected-ref lock race. Remaining review scope:
+  native executor service lifecycle plus stale/duplicate generation integration.
