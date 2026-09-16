@@ -2,7 +2,7 @@
 {
   "branch": "fix/main-merge-integrity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T07:47:11+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "fix/main-merge-integrity",
   "observed_dirty": 0,
   "observed_head": "7106b274c484bb956290084e58c31e991e30f24d",
-  "owner": "asb_ar0897_merge_integrity",
+  "owner": "",
   "plan": "../plans/AR-0897.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 165,
+  "task_revision": 166,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-16T05:47:11+00:00",
+  "updated_at": "2026-09-16T07:47:34+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -543,3 +543,8 @@ Implementation has not started. Read the linked plan before claiming.
   b3429a8fc9d44e7e10ae361fc06719551bafb33fdbb7de5e9736743b33161347.
 
 - 2026-09-16T05:47:11+00:00: Heartbeat by asb_ar0897_merge_integrity.
+
+- 2026-09-16T07:47:34+00:00: Recovered expired claim formerly owned by asb_ar0897_merge_integrity.
+  Lease expired at 2026-09-16T07:47:11Z; no matching worker process or heartbeat since 05:47:11Z.
+  Preserve PR126 and merge 1c07e907 evidence; reassign signed-DCO protected-main repair for AR-0859
+  post-merge policy recovery.
