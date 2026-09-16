@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Make ShellCheck fail closed",
-  "updated_at": "2026-09-16T08:52:57+00:00",
+  "updated_at": "2026-09-16T08:53:09+00:00",
   "worktree_key": "agent-systems-benchmark-shellcheck-fail-closed"
 }
 ---
@@ -150,3 +150,6 @@ Implementation has not started. Read the linked plan before claiming.
   signed local merge helper published eb0ad13. PR #190 API reports MERGED at 08:51:38Z. Post-merge
   exact-main verification confirms two parents, SSH signature G, Martin Beck DCO; all six required
   post-merge workflows are active.
+
+- 2026-09-16T08:53:09+00:00: Recorded command exit 0; command argv SHA-256
+  d3e7dc7eacaefc39c7e4c36f00431a531f7d0d7f11825157c853f69cfe0d56f3.
