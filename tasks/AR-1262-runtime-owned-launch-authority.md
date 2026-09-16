@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1262-runtime-owned-launch-authority",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T00:13:20+00:00",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1262-runtime-owned-launch-authority",
   "observed_dirty": 0,
   "observed_head": "ad0bc024d74b0d8aff9d5504833eb7e0d3e0afa8",
-  "owner": "",
+  "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1262.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Issue runtime-owned authority for supervised strict-replay execution.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-16T22:13:06+00:00",
+  "updated_at": "2026-09-16T22:13:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1262-runtime-authority"
 }
 ---
@@ -159,3 +159,5 @@ ownership and bounded lifecycle evidence.
 - 2026-09-16T22:13:06+00:00: AR-1263 fixed and merged the exact sandbox scope-classification flake;
   signed main 69e8b064 and all post-merge gates are green. Resume AR-1262 to rebase and requalify
   unchanged authority implementation.
+
+- 2026-09-16T22:13:20+00:00: Claimed by asb_ar1024_lifecycle_router.
