@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict OpenJiuwen replay.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Qualify strict OpenJiuwen replay",
-  "updated_at": "2026-09-16T08:29:53+00:00",
+  "updated_at": "2026-09-16T08:30:02+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-replay"
 }
 ---
@@ -85,3 +85,6 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   including response match, wrong-route rejection, and corruption rejection. Full asb-agents tests
   passed; clippy was run with no reported diagnostics. Commit c894a34 is SSH-signed+DCO; worktree
   clean.
+
+- 2026-09-16T08:30:02+00:00: Recorded command exit 0; command argv SHA-256
+  9a93be2e35350c595155bd95541752d5ba83c7d086ed1e5193bfec8d3112067c.
