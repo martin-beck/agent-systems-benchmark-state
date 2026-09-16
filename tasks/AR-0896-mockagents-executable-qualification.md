@@ -2,7 +2,7 @@
 {
   "branch": "test/mockagents-executable-qualification",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T20:37:14+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0888",
     "AR-0889"
@@ -12,15 +12,15 @@
   "observed_branch": "test/mockagents-executable-qualification",
   "observed_dirty": 0,
   "observed_head": "3f1de4106adf9ad6c34759638d70e9001709ab0a",
-  "owner": "asb_ar0896_recovery_20260916",
+  "owner": "",
   "plan": "../plans/AR-0896.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-16T18:37:51+00:00",
+  "updated_at": "2026-09-16T18:37:54+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -202,3 +202,6 @@ synthetic fixture for black-box executable evidence.
   review explicitly records missing hostile tool/tool-result, cancellation/backpressure,
   outbound-denial, repeated fresh-state determinism, and exact arm64 executable qualification. No
   product mutation or support-catalog change made.
+
+- 2026-09-16T18:37:54+00:00: Released ownerless blocked after terminal rerun success and local 3/3
+  smoke qualification; complete hostile cases and arm64 executable evidence remain required.
