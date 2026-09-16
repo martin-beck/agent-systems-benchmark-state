@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1232",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T11:01:12+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -16,15 +16,15 @@
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 1,
   "observed_head": "b00339bd610422f716ccd5c87a37a0d0ec9b70cb",
-  "owner": "asb_ar1232_supervision_finish_worker",
+  "owner": "",
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 452,
+  "task_revision": 453,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T09:01:38+00:00",
+  "updated_at": "2026-09-16T09:03:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -1250,3 +1250,10 @@
   supervision.
 
 - 2026-09-16T09:01:12+00:00: Claimed by asb_ar1232_supervision_finish_worker.
+
+- 2026-09-16T09:03:49+00:00: Completed strict-replay supervision integration at signed
+  b00339b/2543a4c. Child launch binds authenticated ReplayRelayHandoff to SupervisorPlan, preserves
+  provider/descendant egress denial, and enforces timeout/crash/cancellation cleanup and reaping.
+  Runtime+agents tests passed (39 runtime unit, 3 sidecar, 8 process, 11 sandbox, 16 scheduler; 172
+  agents), fmt, clippy and docs passed. Native and locked gates rerun after freeing isolated target
+  artifacts; no host/global network changes.
