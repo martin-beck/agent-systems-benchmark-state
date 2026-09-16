@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated loopback-only sandbox transport for strict replay services.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Approved loopback-only sandbox transport",
-  "updated_at": "2026-09-16T06:51:24+00:00",
+  "updated_at": "2026-09-16T06:51:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1233"
 }
 ---
@@ -103,3 +103,6 @@
 
 - 2026-09-16T06:50:47+00:00: Recorded command exit 1; command argv SHA-256
   13cb335a9efca70fe1c5b3a30ea563d8ff1181feae7527cc9cc0e85403196c41.
+
+- 2026-09-16T06:51:41+00:00: Recorded command exit 0; command argv SHA-256
+  272211ee066de81c64609903b55376063469307863315ca2e5531c6db5c5b763.
