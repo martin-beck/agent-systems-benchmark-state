@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-16T06:09:55+00:00",
+  "updated_at": "2026-09-16T06:26:10+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -289,3 +289,6 @@ must not block this AR or its dependents.
   Expected bounded ERROR lines were emitted by negative fixtures; no test failure. Worktree remains
   clean at signed/DCO head 28f30ee. Next step is read-only exact PR #119/TLA provenance audit before
   any mutation.
+
+- 2026-09-16T06:26:10+00:00: Recorded command exit 0; command argv SHA-256
+  5926ed8425472b68624f5b2db4d7791bf802735f0228108e33149883e0f0f34d.
