@@ -10,7 +10,7 @@
   "id": "AR-1246",
   "next_action": "Monitor PR #195 required checks; after merge run post-merge protected-main verification and release done.",
   "observed_branch": "fix/ar-1246-protected-main-dco-flow",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "35c69dc9b2856c6950ffb96ea30443e2e67e2ecf",
   "owner": "asb_ar1237_launch_bridge_worker",
   "plan": "../plans/AR-1246.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Durably admit authenticated GitHub protected-main merges without one-off DCO hash exceptions.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Protected-main DCO flow",
-  "updated_at": "2026-09-16T09:57:24+00:00",
+  "updated_at": "2026-09-16T09:59:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1246"
 }
 ---
