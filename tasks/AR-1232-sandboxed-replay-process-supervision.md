@@ -11,7 +11,7 @@
   "id": "AR-1232",
   "next_action": "Native executor-service attempt is blocked by runtime policy: SandboxSpec accepts only NetworkPolicy::Deny, so loopback cassette listener is unreachable (child curl exit 7). Keep strict replay native harness 7/7 and 15/15 executor unit gates green; require approved loopback-only sandbox transport seam before further implementation/re-review.",
   "observed_branch": "feature/ar-1232",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "9f38e2e6db2d9650ae9419410c4e97aa792d4658",
   "owner": "asb_ar1232_worker",
   "plan": "../plans/AR-1232.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 432,
+  "task_revision": 433,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T06:41:21+00:00",
+  "updated_at": "2026-09-16T06:41:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
