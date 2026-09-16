@@ -9,7 +9,7 @@
     "AR-1008"
   ],
   "id": "AR-0898",
-  "next_action": "Pin ShellCheck and prove actionlint cannot silently disable its delegated shell analysis.",
+  "next_action": "Implementation committed as signed+DCO 8176605df747cca12010f8220e74509cca01539f. Focused gates pass: ShellCheck 0.11.0 x86_64/aarch64 pins install and verify, actionlint runs with explicit absolute -shellcheck, and test_failure_paths rejects SC2086 plus existing defects. Worktree clean after removing only owned profraw test artifacts. Next independently review complete diff, run full applicable local gates, then publish exact clean head.",
   "observed_branch": "fix/shellcheck-fail-closed",
   "observed_dirty": 0,
   "observed_head": "8176605df747cca12010f8220e74509cca01539f",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Make ShellCheck fail closed",
-  "updated_at": "2026-09-16T08:28:41+00:00",
+  "updated_at": "2026-09-16T08:29:06+00:00",
   "worktree_key": "agent-systems-benchmark-shellcheck-fail-closed"
 }
 ---
@@ -77,3 +77,8 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T08:28:34+00:00: Recorded command exit 0; command argv SHA-256
   fe19ea92c8422d9d09982408b9ca2c5e3597900fcae184b802c5d74c58aa3a9a.
+
+- 2026-09-16T08:29:06+00:00: 2026-09-16T08:29Z: Added ShellCheck v0.11.0 x86_64 digest 8c3be12b...
+  and AArch64 digest 12b331c1..., format-neutral extraction, executable/version assertion, explicit
+  actionlint delegation, and SC2086 negative fixture. Signed commit 8176605;
+  installer/actionlint/failure suite completed exit 0. No runtime dependency added.
