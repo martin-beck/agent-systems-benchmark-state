@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1262-runtime-owned-launch-authority",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T22:57:58+00:00",
+  "claim_expires": "2026-09-16T23:04:53+00:00",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned authority for supervised strict-replay execution.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-16T21:00:16+00:00",
+  "updated_at": "2026-09-16T21:04:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1262-runtime-authority"
 }
 ---
@@ -63,3 +63,5 @@ ownership and bounded lifecycle evidence.
   Focused runtime test passes 1/1; cargo fmt passes; product worktree clean. Initial focused test
   failure was only missing tempfile dev dependency; replaced with bounded std temp root and reran
   green.
+
+- 2026-09-16T21:04:53+00:00: Heartbeat by asb_ar1024_lifecycle_router.
