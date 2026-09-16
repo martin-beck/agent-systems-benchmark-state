@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define offline tutorial steps and validate them against the ASB CLI grammar.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Tutorial contract and syntax validator",
-  "updated_at": "2026-09-16T03:42:49+00:00",
+  "updated_at": "2026-09-16T03:42:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1210"
 }
 ---
@@ -54,3 +54,6 @@ be required.
 
 - 2026-09-16T03:42:49+00:00: Recorded command exit 0; command argv SHA-256
   f397688459a38e4f80675ba6c15f49c359643953df5bb55f9276889f9b20cea0.
+
+- 2026-09-16T03:42:57+00:00: Recorded command exit 0; command argv SHA-256
+  7c730eec3ea71bd24ffc5a9255bf7f542481bf601dba6c72bed6e00f6c2fab3c.
