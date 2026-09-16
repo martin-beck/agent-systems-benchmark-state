@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-parity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T14:18:43+00:00",
+  "claim_expires": "2026-09-16T14:20:04+00:00",
   "depends_on": [
     "AR-0860"
   ],
@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add OpenJiuwen provider parity and support matrix evidence.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Add OpenJiuwen provider parity and support matrix evidence",
-  "updated_at": "2026-09-16T12:18:43+00:00",
+  "updated_at": "2026-09-16T12:20:04+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-parity"
 }
 ---
@@ -30,3 +30,5 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   matrix child for implementation.
 
 - 2026-09-16T12:18:43+00:00: Claimed by asb_ar1024_lifecycle_router.
+
+- 2026-09-16T12:20:04+00:00: Heartbeat by asb_ar1024_lifecycle_router.
