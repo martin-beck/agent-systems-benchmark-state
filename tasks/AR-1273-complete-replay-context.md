@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1273",
-  "next_action": "Promote after dependency verification; implement the complete opaque runtime-issued replay request context and real supervised execution.",
+  "next_action": "Adapt CLI replay dispatch to consume ReplayRequestContext exactly once and bind cassette/service execution; add real supervised response, egress, cancellation, restart, timeout, crash, cleanup, and no-fallback tests.",
   "observed_branch": "feature/ar-1273-complete-replay-context",
   "observed_dirty": 0,
   "observed_head": "6c47986cdc4c5d3b6bf9a653c691bb30651b05d8",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide complete runtime-owned context for strict-replay execution.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Complete runtime-owned replay request context",
-  "updated_at": "2026-09-16T23:35:38+00:00",
+  "updated_at": "2026-09-16T23:35:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1273-complete-replay-context"
 }
 ---
@@ -57,3 +57,9 @@ AR-1272's blocked evidence; never accept caller-provided authority or fabricate 
 
 - 2026-09-16T23:35:31+00:00: Recorded command exit 0; command argv SHA-256
   f0aec178c6003b0a0be30ef2b3feda7a0f395cc2a64710171b5ca795937e4e15.
+
+- 2026-09-16T23:35:55+00:00: Signed checkpoint 6c47986 adds runtime ReplayRequestContext with
+  private handoff/request/service/isolation/lifecycle fields, strict validation, loopback-only
+  enforcement, and single-use consumption. Focused runtime replay_context suite passes 3/3 after
+  fixing initial PID-only parallel fixture collision (AddrInUse); fmt pass and clean tree. Remaining
+  acceptance is actual CLI/runtime cassette dispatch and supervised lifecycle evidence.
