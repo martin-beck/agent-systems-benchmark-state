@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1233.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide an authenticated loopback-only sandbox transport for strict replay services.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Approved loopback-only sandbox transport",
-  "updated_at": "2026-09-16T08:21:15+00:00",
+  "updated_at": "2026-09-16T08:32:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1233"
 }
 ---
@@ -136,3 +136,7 @@
   privileged helper, or other AR touched. Next action: integrate a reviewed runtime-owned per-launch
   authenticated bridge/adapter from approved dependency, then run real cassette success plus
   provider-egress denial, stale/duplicate, teardown, and non-interference tests.
+
+- 2026-09-16T08:32:57+00:00: Resume AR-1233 for explicitly scoped provider/descendant LoopbackOnly
+  egress-negative tests against reviewed supervisor integration; preserve Deny and no host/global
+  network changes.
