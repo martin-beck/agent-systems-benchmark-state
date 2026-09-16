@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1260-runtime-owned-strict-replay-integration",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T22:35:56+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1260-runtime-owned-strict-replay-integration",
   "observed_dirty": 0,
   "observed_head": "9e4a1c095e1f736011699edb4ab216e876e77251",
-  "owner": "asb_ar1024_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1260.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Integrate strict replay with runtime-owned attestation and supervised sandbox execution.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Runtime-owned strict-replay integration",
-  "updated_at": "2026-09-16T20:38:32+00:00",
+  "updated_at": "2026-09-16T20:41:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1260-runtime"
 }
 ---
@@ -108,3 +108,11 @@ missing, stale, duplicated, or mismatched.
   --offline passed; prior cargo fmt check, focused asb-cli 76/76, focused no-fallback 1/1, and full
   locked offline workspace tests passed. All latest product commits are SSH-signed with DCO; no
   product dirty paths.
+
+- 2026-09-16T20:41:01+00:00: Independent review blocker preserved: replay_plan still creates
+  LoopbackSidecar/fresh_relay_path and passes literal namespace_ready=true; CLI dispatch does not
+  invoke spawn_runtime_replay or provide runtime-issued SandboxBackend, SandboxLaunchInput,
+  ResourceLease, authenticated handoff, supervised child, or cassette request/response lifecycle.
+  Safe CLI slice is complete at signed 9e4a1c0 with focused/full/fmt/clippy/rustdoc gates green.
+  Leave ownerless/open for a runtime-integrated successor that can issue attestation and wire
+  supervised replay end to end; do not weaken fail-closed boundaries.

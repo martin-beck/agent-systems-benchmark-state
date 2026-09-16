@@ -7,13 +7,13 @@
 
 ## Portfolio overview
 
-**288 ARs tracked** across 7 active status categories.
+**288 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 6 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 19 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 20 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 194 |
@@ -353,7 +353,7 @@ flowchart LR
         AR_1257["AR-1257 - Planned"]:::status_planned
         AR_1258["AR-1258 - Blocked"]:::status_blocked
         AR_1259["AR-1259 - Done"]:::status_done
-        AR_1260["AR-1260 - In progress"]:::status_in_progress
+        AR_1260["AR-1260 - Blocked"]:::status_blocked
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1466,12 +1466,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md): Runtime-owned strict-replay integration | asb_ar1024_lifecycle_router | Integrate strict replay with runtime-owned attestation and supervised sandbox execution. | Request independent exact-head review of 9e4a1c0 and confirm runtime lifecycle/egress delegation boundaries; do not claim CLI end-to-end child execution without runtime-issued context. |
-
 ### Open (6)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -1483,7 +1477,7 @@ flowchart LR
 | P0 | [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | Unclaimed | Define the strict-replay CLI consumer contract. | Await a runtime-owned successor that supplies independently attested namespace capability plus supervised SandboxLaunchInput/ResourceLease. Then wire replay_plan through StrictReplayLaunchBridge::spawn and add real request/response, egress-denial, cancellation/restart/cleanup and no-fallback tests. Preserve PR #197 head 7d9c2ee and its green CI; do not fabricate namespace readiness in CLI. |
 | P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Unclaimed | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Coordinator must create and link the successor AR for certificate issuance/chain validation and trusted route/ancestor authority; preserve this exact clean head and do not publish/close as fully complete until successor scope and bounded acceptance are recorded. |
 
-### Blocked (19)
+### Blocked (20)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1493,6 +1487,7 @@ flowchart LR
 | P0 | [AR-1181](../tasks/AR-1181.md): TLA admission | Unclaimed | Bound ASB TLC memory. | Correct AR-1181 repository/worktree metadata to a state-repository branch/worktree, then implement missing tools/tlc_runner.py with bounded admission; current declared path is an ASB product checkout and must not be mutated. |
 | P0 | [AR-1210](../tasks/AR-1210-tutorial-contract-validator.md): Tutorial contract and syntax validator | Unclaimed | Define offline tutorial steps and validate them against the ASB CLI grammar. | Do not release AR-1210 yet: post-merge Repository quality run 35054743606 failed because protected merge commit 4d4a0c4 lacks Signed-off-by. Coordinate merge-integrity/DCO repair and rerun exact-main assurance; preserve merged main and all evidence. |
 | P0 | [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md): Protected merge-tree remediation | Unclaimed | Remediate the protected-main merge-tree mismatch from stale-base PR merging. | Historical reproduction confirms policy rejects ef82484 before merge-tree comparison because its RSA/GPG signature is not in the allowed SSH trust set. Current clean branch is fd7daa4; create a signed-DCO current-main topic repair, then rerun policy and exact-head gates. |
+| P0 | [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md): Runtime-owned strict-replay integration | Unclaimed | Integrate strict replay with runtime-owned attestation and supervised sandbox execution. | Request independent exact-head review of 9e4a1c0 and confirm runtime lifecycle/egress delegation boundaries; do not claim CLI end-to-end child execution without runtime-issued context. |
 | P1 | [AR-0604](../tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain coordinator-authorized native x86_64 runner/container and immutable CSB source root plus interpreter bytes matching Python 3.12.3 SHA-256 1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118. Docker is currently inaccessible; qemu cannot substitute native x86 evidence. Then rerun native_boundary and record A/B/overhead evidence. |
 | P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | Formal assurance owner AR-0877/AR-0907 must repair the pinned TLA artifact provenance mismatch (downloaded byte count/hash) before PR #119 can be requalified; AR-0704 native controller requires no source change. |
 | P1 | [AR-0832](../tasks/AR-0832-aiws-runner-qualification.md): Qualify development host ASB runner operations | Unclaimed | Qualify development host ASB runners, workflow routing, reproducibility, isolation, and operational recovery. | Run repeated clean ASB jobs on every declared development host label and audit reset, isolation, architecture, and artifact provenance. |
@@ -1614,3 +1609,4 @@ flowchart LR
 | P0 | [AR-1041](../tasks/AR-1041-gemini-hook-readiness-race.md): Make Gemini hook readiness publication atomic | Unclaimed | Eliminate the load-sensitive Gemini hook readiness race without weakening validation. | Post-merge verified: PR136 exact head 55648d5 is present in protected main fd7daa4 with all PR checks green; current main AArch64 failure is unrelated Goose fixture AR-1235. |
 | P0 | [AR-1043](../tasks/AR-1043-protected-topic-sync-topology.md): Qualify exact topic-tip synchronization merges | Unclaimed | Accept one exact signed topic-tip sync merge without weakening protected-main policy. | Complete; no further action. |
 | P0 | [AR-1045](../tasks/AR-1045-gemini-readiness-merge-attestation.md): Attest the Gemini readiness merge boundary | Unclaimed | Recover the Gemini readiness publication boundary without rewriting protected main. | Await fresh immutable review of clean signed+DCO current-main successor d0ea32ce84f600e505899e2e3d2fdb885ee7ad76, tree d6f734bc270281957b1c2268fa0c12db2e2c6075, parent 252f746e903555c2dc626fadfa1a75bb76913144. Do not push before READY. |
+| P0 | [AR-1047](../tasks/AR-1047-gemini-hook-marker-appearance-race.md): Close the Gemini hook-marker appearance race | Unclaimed | Treat a regular marker published between absent open and fallback lstat as pending for descriptor validation on the next poll. | PR #139 exact 661d52c/tree 3931f7cb is independently approved and 12/12 exact-head green; await explicit root authorization and exact multiline protected merge recipe. |
