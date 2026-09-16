@@ -8,7 +8,7 @@
     "AR-0889"
   ],
   "id": "AR-1249",
-  "next_action": "Implement missing MockAgents hostile lifecycle, network-denial, repeat-clean-state, and emulated-AArch64 qualification evidence.",
+  "next_action": "Fix qualification fixture: MockAgents rate limiter returns 200 then 429; replace unsupported /v1/fault route assumptions, then add deterministic hostile lifecycle cases.",
   "observed_branch": "feature/ar-1249-mockagents-qualification-evidence",
   "observed_dirty": 1,
   "observed_head": "128ecddbfdb7fcfff6e257adf3237b5866aca481",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Complete missing evidence for the pinned MockAgents executable qualification.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Complete MockAgents executable qualification evidence",
-  "updated_at": "2026-09-16T18:42:55+00:00",
+  "updated_at": "2026-09-16T18:43:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1249"
 }
 ---
@@ -97,3 +97,7 @@ network denial, privacy, signature, DCO, and exact-tree gates.
 
 - 2026-09-16T18:42:55+00:00: Recorded command exit 1; command argv SHA-256
   2cf63fb6749ea671f2feacca745517354da1a4059e0f5a9e732adb1be0f1d4f1.
+
+- 2026-09-16T18:43:25+00:00: Diagnosed repeated exit-1: MockAgents rate-limit chaos is
+  agent-configured and produced statuses 200/429; the synthetic /v1/fault/rate-limit route
+  assumption was invalid. No qualification claim made.
