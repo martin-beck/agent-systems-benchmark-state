@@ -30,7 +30,7 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 35041040705 | `0443ebac643a` | push | Huawei MIT source headers | completed:success |
-| 35041040703 | `0443ebac643a` | push | Emulated aarch64 portability | in_progress:- |
+| 35041040703 | `0443ebac643a` | push | Emulated aarch64 portability | completed:success |
 | 35041040687 | `0443ebac643a` | push | Formal assurance | completed:success |
 | 35041040674 | `0443ebac643a` | push | Fault assurance | completed:success |
 | 35041040671 | `0443ebac643a` | push | Repository quality | completed:failure |
