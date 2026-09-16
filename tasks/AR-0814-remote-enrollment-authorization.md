@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 258,
+  "task_revision": 259,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:32:12+00:00",
+  "updated_at": "2026-09-16T19:34:07+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -703,4 +703,7 @@ Implementation has not started. Read the linked plan before claiming.
   321822d2b0f1354ded60ff8416cb370fc4d769662a9c50e0547b167c946ff208.
 
 - 2026-09-16T19:32:12+00:00: Recorded command exit 101; command argv SHA-256
+  321822d2b0f1354ded60ff8416cb370fc4d769662a9c50e0547b167c946ff208.
+
+- 2026-09-16T19:34:07+00:00: Recorded command exit 0; command argv SHA-256
   321822d2b0f1354ded60ff8416cb370fc4d769662a9c50e0547b167c946ff208.
