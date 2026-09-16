@@ -1483,7 +1483,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1263](../tasks/AR-1263-sandbox-scope-classification-stability.md): Stabilize sandbox scope classification gate | asb_ar1263_sandbox_stability | Stabilize intermittent sandbox scope classification in the quality gate. | Independent review of signed 0acbc1d; focused flake test 20/20 and locked workspace fmt/test/clippy/doc/policy/signature gates pass. cargo deny/audit unavailable; failure-path harness needs approved --bin-dir. |
+| P1 | [AR-1263](../tasks/AR-1263-sandbox-scope-classification-stability.md): Stabilize sandbox scope classification gate | asb_ar1263_sandbox_stability | Stabilize intermittent sandbox scope classification in the quality gate. | Monitor PR #205 exact head 0acbc1d1a8b against base 0a808a635d85; all required hosted checks are in progress. Do not merge until terminal green and independent review remains recorded. |
 
 ### Open (6)
 

@@ -7,7 +7,7 @@
     "AR-1238"
   ],
   "id": "AR-1263",
-  "next_action": "Independent review of signed 0acbc1d; focused flake test 20/20 and locked workspace fmt/test/clippy/doc/policy/signature gates pass. cargo deny/audit unavailable; failure-path harness needs approved --bin-dir.",
+  "next_action": "Monitor PR #205 exact head 0acbc1d1a8b against base 0a808a635d85; all required hosted checks are in progress. Do not merge until terminal green and independent review remains recorded.",
   "observed_branch": "fix/ar-1263-sandbox-scope-classification",
   "observed_dirty": 0,
   "observed_head": "0acbc1d1a8bf43a226fda503fbd76f8afd48eb07",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stabilize intermittent sandbox scope classification in the quality gate.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Stabilize sandbox scope classification gate",
-  "updated_at": "2026-09-16T21:32:30+00:00",
+  "updated_at": "2026-09-16T21:32:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1263-sandbox-stability"
 }
 ---
@@ -152,3 +152,10 @@ fail-closed test/runner behavior and preserve the original semantic assertions.
 
 - 2026-09-16T21:32:30+00:00: Recorded command exit 0; command argv SHA-256
   3900bb0b3b5cf41df797659940ce9737a74182cea680ebe0e42c37e1e2d587b0.
+
+- 2026-09-16T21:32:58+00:00: Publication corrected by running gh from the declared product worktree:
+  PR #205 opened at https://github.com/martin-beck/agent-systems-benchmark/pull/205. Exact base
+  0a808a635d85fdc4a43b575e3711ef23b38089e3, head 0acbc1d1a8bf43a226fda503fbd76f8afd48eb07,
+  mergeable. Hosted checks run 35152955071 (AArch64), 35152955085 (fault/fuzz), 35152955083
+  (formal), 35152955236 (platform), 35152955119 (policy), 35152955173 (Rust); header and AWQ checks
+  already passed. Keep PR open pending all required terminal success.
