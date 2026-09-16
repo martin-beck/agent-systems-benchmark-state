@@ -8,7 +8,7 @@
     "AR-1239"
   ],
   "id": "AR-1240",
-  "next_action": "Materialize a signed bundle fixture containing both helper payloads and invoke SandboxBackend with VerifiedPayload paths; bwrap capability probe passes but end-to-end cassette fixture remains absent.",
+  "next_action": "Extend native fixture invocation from helper lifecycle proof to authenticated cassette HTTP success plus provider/descendant denial and cleanup/non-interference matrix.",
   "observed_branch": "feature/ar-1240-native-signed-bundle-fixture",
   "observed_dirty": 1,
   "observed_head": "5fa5ee2d8075f0873b25b96f0050ab43b5b6d03c",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add native signed-bundle fixture and end-to-end supervisor isolation tests.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Native signed-bundle supervisor fixture",
-  "updated_at": "2026-09-16T08:36:18+00:00",
+  "updated_at": "2026-09-16T08:36:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1240"
 }
 ---
@@ -42,3 +42,8 @@ bundle. Preserve fail-closed behavior and all existing privacy and non-interfere
   --unshare-net --disable-userns --cap-drop ALL --tmpfs /tmp --proc /proc passed: private route
   state and external 198.51.100.1 curl denial. Existing sandbox native boundary 10/10 passes. No
   host networking/firewall/ambient ip.
+
+- 2026-09-16T08:36:44+00:00: Added signed commit 42bd8ed: native SandboxBackend invocation builds
+  SHA-256 pins for supervisor/sidecar, binds a private Unix relay, and launches the supervisor under
+  Bubblewrap; test passes. Sandbox boundary suite 11/11 plus helper invocation pass; Clippy green.
+  Remaining matrix is real cassette forwarding and denial/cleanup assertions.
