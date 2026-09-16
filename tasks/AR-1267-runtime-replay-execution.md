@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1267",
-  "next_action": "Implement runtime-owned cassette request/response hook consuming authenticated context; add actual replay command integration and bounded lifecycle/egress tests.",
+  "next_action": "Bind execute_cassette_request to actual replay command context and add malformed/mismatch/egress/cancel/restart/timeout/crash/no-fallback tests; then full gates.",
   "observed_branch": "feature/ar-1267-runtime-replay-execution",
   "observed_dirty": 0,
   "observed_head": "4ad0b90777f3f79f15e6005db340e4f3609ea81b",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement real runtime-owned strict-replay execution and lifecycle supervision.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Runtime strict-replay execution hook",
-  "updated_at": "2026-09-16T22:41:11+00:00",
+  "updated_at": "2026-09-16T22:41:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1267-runtime-replay-execution"
 }
 ---
@@ -54,3 +54,11 @@ context-boundary evidence and its blocker; do not accept metadata-only behavior 
 
 - 2026-09-16T22:41:04+00:00: Recorded command exit 0; command argv SHA-256
   1026ea69620695fccabacb1fd4b2b44f3e697ff10aa947f423512424fbf9d91d.
+
+- 2026-09-16T22:41:26+00:00: Signed checkpoint 4ad0b90 adds the runtime-owned CLI cassette execution
+  hook. execute_cassette_request constructs StrictReplayExecutor only with the authenticated launch
+  record, immutable cassette, and verified isolation capability, then serves one route/request;
+  caller endpoints and live fallback are not accepted. Focused offline CLI tests pass 71/71; fmt
+  green; product tree clean. Existing asb-agents executor fixtures already prove qualified response,
+  stale route rejection, recovery closure, and invalid cassette/identity behavior. Actual
+  argument-level replay dispatch and supervised lifecycle matrix remain next.

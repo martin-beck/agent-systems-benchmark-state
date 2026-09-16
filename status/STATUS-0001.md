@@ -1501,7 +1501,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1267](../tasks/AR-1267-runtime-replay-execution.md): Runtime strict-replay execution hook | asb_ar1024_lifecycle_router | Implement real runtime-owned strict-replay execution and lifecycle supervision. | Implement runtime-owned cassette request/response hook consuming authenticated context; add actual replay command integration and bounded lifecycle/egress tests. |
+| P0 | [AR-1267](../tasks/AR-1267-runtime-replay-execution.md): Runtime strict-replay execution hook | asb_ar1024_lifecycle_router | Implement real runtime-owned strict-replay execution and lifecycle supervision. | Bind execute_cassette_request to actual replay command context and add malformed/mismatch/egress/cancel/restart/timeout/crash/no-fallback tests; then full gates. |
 
 ### Open (6)
 
