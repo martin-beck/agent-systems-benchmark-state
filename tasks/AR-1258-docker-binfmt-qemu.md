@@ -2,22 +2,22 @@
 {
   "branch": "feature/docker-binfmt-qemu-capability",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T16:06:16+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1258",
   "next_action": "Inspect Docker/binfmt/QEMU capability and approved privilege workflow; add bounded verification and rollback-safe checks.",
   "observed_branch": "feature/docker-binfmt-qemu-capability",
   "observed_dirty": 0,
   "observed_head": "a0befc0ff247a42b8d796af161b58b1011de8377",
-  "owner": "asb_ar1024_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1258.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provision and verify Docker binfmt/QEMU for multiarch qualification.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Provision Docker binfmt/QEMU capability",
-  "updated_at": "2026-09-16T14:07:30+00:00",
+  "updated_at": "2026-09-16T14:07:54+00:00",
   "worktree_key": "agent-systems-benchmark-docker-binfmt-qemu"
 }
 ---
@@ -65,3 +65,12 @@ Provide the independent Docker binfmt/QEMU capability required by multiarch qual
 
 - 2026-09-16T14:07:30+00:00: Recorded command exit 255; command argv SHA-256
   cc474b1364ceec72aac9bf5da16df25088aa577f8e75766319f4918d56c6b631.
+
+- 2026-09-16T14:07:54+00:00: Corrected probe used approved sudo -n docker. Docker daemon/buildx
+  access succeeded: Docker 29.7.2 x86_64, buildx v0.36.1. Pinned
+  alpine@sha256:28bd5fe8b56d1bd048e5babf5b10710ebe0bae67db86916198a6eec434943f8b arm64 execution
+  with --network none failed closed twice: exec /bin/uname and exec /bin/echo returned no such file
+  or directory, so no QEMU execution evidence. Networked pinned run additionally failed creating
+  docker0 veth: Device does not exist. No binfmt/QEMU capability or image qualification claim is
+  made; resume requires repairing approved Docker binfmt registration and bridge/network
+  prerequisites, then rerun immutable digest/signature/license checks.
