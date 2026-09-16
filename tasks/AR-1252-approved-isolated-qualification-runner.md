@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1252-approved-isolated-runner",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T13:05:01+00:00",
   "depends_on": [
     "AR-0003"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1252-approved-isolated-runner",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "asb_ar1252_isolated_runner",
   "plan": "../plans/AR-1252.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:04:39+00:00",
+  "updated_at": "2026-09-16T11:05:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -30,3 +30,5 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
 
 - 2026-09-16T11:04:39+00:00: AR-1251 confirmed host namespace restriction; Docker service is
   available via sudo. Promote digest-pinned isolated runner prerequisite.
+
+- 2026-09-16T11:05:01+00:00: Claimed by asb_ar1252_isolated_runner.
