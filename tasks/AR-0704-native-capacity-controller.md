@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Control genuine native platform capacity lifecycle.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Control native capacity lifecycle",
-  "updated_at": "2026-09-16T06:29:20+00:00",
+  "updated_at": "2026-09-16T06:29:32+00:00",
   "worktree_key": "agent-systems-benchmark-native-capacity-controller"
 }
 ---
@@ -306,3 +306,6 @@ must not block this AR or its dependents.
   hosted TLC/Alloy artifact download/provenance failure without weakening gates.
 
 - 2026-09-16T06:29:20+00:00: Claimed by asb_ar0704_formal_infra.
+
+- 2026-09-16T06:29:32+00:00: Recorded command exit 0; command argv SHA-256
+  e9db925db84dc3f183024ebb8977cf3c736f4d07b232ad284f18bfff4f967ece.
