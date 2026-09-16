@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1252-approved-isolated-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T13:38:30+00:00",
+  "claim_expires": "2026-09-16T13:47:57+00:00",
   "depends_on": [
     "AR-0003"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 83,
+  "task_revision": 84,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:47:25+00:00",
+  "updated_at": "2026-09-16T11:47:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -250,3 +250,5 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
   matching container remains after each run, including timeout cleanup. Remaining AR-1251 transport
   fixture/real descendant behavior is not falsely claimed complete; requires AR-1251-owned fixture
   work.
+
+- 2026-09-16T11:47:57+00:00: Heartbeat by asb_ar1252_isolated_runner.
