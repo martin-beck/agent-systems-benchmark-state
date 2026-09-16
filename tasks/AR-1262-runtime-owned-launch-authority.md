@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1262",
-  "next_action": "Rerun full locked workspace tests, fmt, clippy, rustdoc, and policy/privacy gates on exact signed ad0bc02; then request independent review.",
+  "next_action": "Classify or rerun the pre-existing native sandbox fixture failure under its dedicated gate; do not weaken authority. After terminal green, run remaining policy/privacy/rustdoc and request independent review.",
   "observed_branch": "feature/ar-1262-runtime-owned-launch-authority",
   "observed_dirty": 0,
   "observed_head": "ad0bc024d74b0d8aff9d5504833eb7e0d3e0afa8",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned authority for supervised strict-replay execution.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-16T21:11:29+00:00",
+  "updated_at": "2026-09-16T21:11:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1262-runtime-authority"
 }
 ---
@@ -142,3 +142,9 @@ ownership and bounded lifecycle evidence.
 
 - 2026-09-16T21:11:29+00:00: Recorded command exit 101; command argv SHA-256
   e65704d0af497ff4f9db656cbcc2e1894e552f84bfbc5a531f0945a250925adf.
+
+- 2026-09-16T21:11:44+00:00: Full locked workspace rerun on signed ad0bc02 failed only in
+  pre-existing crates/asb-runtime/tests/sandbox_boundary.rs
+  launch_wrapper_timeout_and_crash_are_terminal at line 474: expected Err(ScopeOwnership { .. }) but
+  observed another result. All preceding packages/tests shown green, and focused workflow transcript
+  3/3 remains green. No product dirty paths or uncommitted fixes were introduced.
