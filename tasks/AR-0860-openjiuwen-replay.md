@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-replay",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T10:20:47+00:00",
+  "claim_expires": "2026-09-16T10:23:28+00:00",
   "depends_on": [
     "AR-0859"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict OpenJiuwen replay.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Qualify strict OpenJiuwen replay",
-  "updated_at": "2026-09-16T08:21:15+00:00",
+  "updated_at": "2026-09-16T08:23:28+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-replay"
 }
 ---
@@ -36,3 +36,5 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-16T08:21:08+00:00: Recorded command exit 0; command argv SHA-256
   98ed352c91f8b0ba667315acdfee97f3d83fd431eb6ec7af3ce4d28014c6af87.
+
+- 2026-09-16T08:23:28+00:00: Heartbeat by asb_ar1232_lifecycle_router.
