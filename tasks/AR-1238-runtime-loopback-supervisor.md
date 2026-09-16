@@ -8,7 +8,7 @@
     "AR-1231"
   ],
   "id": "AR-1238",
-  "next_action": "Implement and qualify a pinned in-tree supervisor that composes a private user/network namespace, raises only its own loopback, mounts the per-launch Unix relay, and supervises sidecar plus adapter without host networking.",
+  "next_action": "Integrate the in-tree supervisor into SandboxBackend using bwrap --unshare-all --unshare-user --unshare-net with --tmpfs /tmp before a 0600 relay bind mount; prove private loopback readiness, cassette forwarding, egress denial, lifecycle teardown, and unrelated-process non-interference.",
   "observed_branch": "feature/ar-1238-runtime-loopback-supervisor",
   "observed_dirty": 0,
   "observed_head": "9d982fe87b77bcf5b674d72f1c8a0119bf657327",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "blocked",
   "summary": "Provide the runtime-owned private-namespace supervisor for loopback replay.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Runtime-owned loopback supervisor",
-  "updated_at": "2026-09-16T07:55:30+00:00",
+  "updated_at": "2026-09-16T07:58:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1238"
 }
 ---
@@ -35,6 +35,13 @@ Acceptance: immutable command identity and route/generation attestation; bounded
 startup; fail-closed namespace setup; teardown/reaping on success, timeout, cancellation, crash,
 restart, duplicate, stale, and partial launch; provider/external egress denial; unrelated-process
 non-interference; focused/full locked, privacy, policy, native, signature/DCO, and exact-head gates.
+
+Live capability evidence (2026-09-16): pinned Bubblewrap 0.9.0 with the existing isolated flags
+creates a private network namespace whose loopback is already UP; external curl egress fails with
+exit 7. Creating `/tmp` as a tmpfs before bind-mounting a per-launch 0600 Unix socket works, and a
+host Unix listener was reached from inside the sandbox through that mount. No host-network sharing,
+firewall mutation, CAP_NET_ADMIN, ambient `ip`, or unrelated-process changes are required. The
+remaining work is launcher integration and real sidecar forwarding, not a host capability blocker.
 
 - 2026-09-16T07:46:08+00:00: Dependencies AR-1100 and AR-1231 verified complete; promote
   runtime-owned loopback supervisor prerequisite.
