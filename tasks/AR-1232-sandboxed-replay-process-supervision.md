@@ -9,7 +9,7 @@
     "AR-1230"
   ],
   "id": "AR-1232",
-  "next_action": "Run full locked workspace gates on current clean head and extend strict replay sandbox harness with timeout/cancellation/restart/stale/duplicate child lifecycle evidence; preserve native capability skips as explicit.",
+  "next_action": "Extend supervised child harness with cancellation/restart/partial/crash/stale/duplicate and descendant egress tests; run full locked workspace gates.",
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "49625d02c9ce7e2cb3be98641cb4ac04dee776c4",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 205,
+  "task_revision": 206,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T03:42:16+00:00",
+  "updated_at": "2026-09-16T03:42:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -543,3 +543,9 @@
 
 - 2026-09-16T03:42:16+00:00: Recorded command exit 0; command argv SHA-256
   39cf5398131881d6bebfeb6940a170dba53287cbad205a984f34c80a6dbe58e7.
+
+- 2026-09-16T03:42:29+00:00: Added real supervised child timeout test through
+  StrictReplaySandboxLaunch: /usr/bin/sleep is launched under the authenticated loopback environment
+  and terminates with Termination::TimedOut. Dedicated strict_replay_sandbox suite passes 3/3.
+  Signed/DCO commit 49625d0 pushed; worktree clean. Native sandbox capability is probed and skipped
+  explicitly when unavailable.
