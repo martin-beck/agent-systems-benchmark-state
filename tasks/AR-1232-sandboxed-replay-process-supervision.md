@@ -11,7 +11,7 @@
   "id": "AR-1232",
   "next_action": "Diagnose/re-run the full workspace gate failure; asb-cli production_backend_runs_without_frontend_and_recovers_idempotency failed because its temporary control state root was already owned, while all prior packages/tests in this run passed. Then continue direct launcher and route-environment tests.",
   "observed_branch": "feature/ar-1232",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "44613264904090cf5b0b18bfe71e36acde68bf17",
   "owner": "asb_ar1232_sandbox_supervision",
   "plan": "../plans/AR-1232.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 161,
+  "task_revision": 162,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T03:32:19+00:00",
+  "updated_at": "2026-09-16T03:32:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
