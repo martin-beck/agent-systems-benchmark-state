@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1238.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide the runtime-owned private-namespace supervisor for loopback replay.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Runtime-owned loopback supervisor",
-  "updated_at": "2026-09-16T08:06:04+00:00",
+  "updated_at": "2026-09-16T08:07:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1238"
 }
 ---
@@ -108,3 +108,6 @@ remaining work is launcher integration and real sidecar forwarding, not a host c
   bundle must install/pin both binaries (supervisor currently fixed at
   /usr/bin/asb_loopback_supervisor), and an end-to-end cassette listener test must validate
   handshake, HTTP forwarding, egress denial, teardown and unrelated-process isolation.
+
+- 2026-09-16T08:07:12+00:00: User-approved continuation: add authenticated relay forwarding
+  qualification test and retain fail-closed packaging boundary.
