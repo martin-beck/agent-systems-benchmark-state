@@ -7,7 +7,7 @@
     "AR-0858"
   ],
   "id": "AR-0859",
-  "next_action": "Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI.",
+  "next_action": "Obtain and independently verify the pinned OpenJiuwen executable/runtime interpreter provenance, then run the ignored credential-free loopback qualification; current provenance directory has only wheel and lock.",
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "cceb76f436f8918786f610afdf20ba99fbd87d34",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 231,
+  "task_revision": 232,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-16T06:51:27+00:00",
+  "updated_at": "2026-09-16T06:51:57+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -787,3 +787,10 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-16T06:51:27+00:00: Recorded command exit 0; command argv SHA-256
   d984116eb2c8c356cb8387c8455a6f6f467eea7bcc7d51b68dc9f5ac40a5babf.
+
+- 2026-09-16T06:51:57+00:00: Focused verification via handoffctl: openjiuwen_runtime_closure passed
+  4/4 (one fresh-install test intentionally ignored); openjiuwen_boundary passed 4/4. Live
+  qualification remains blocked because /srv/data/projects/.asb-openjiuwen-provenance contains only
+  openjiuwen-0.1.17.post1-py3-none-any.whl and openjiuwen-runtime.lock, with no pinned
+  executable/runtime interpreter required by real_openjiuwen.rs. No compatible substitute or live
+  claim used.
