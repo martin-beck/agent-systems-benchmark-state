@@ -2,7 +2,7 @@
 {
   "branch": "feature/remote-enrollment-authz",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T21:39:17+00:00",
+  "claim_expires": "2026-09-16T21:41:19+00:00",
   "depends_on": [
     "AR-0813"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 276,
+  "task_revision": 277,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:40:58+00:00",
+  "updated_at": "2026-09-16T19:41:19+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -749,3 +749,5 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-16T19:40:58+00:00: Signed+DCO a1ac8e1 hardens pairing confirmation: tampered
   certificate/fingerprint/route metadata is validated before one-time confirmation, with an explicit
   tampered certificate digest negative. Full auth group passes 17/17; worktree clean.
+
+- 2026-09-16T19:41:19+00:00: Heartbeat by asb_ar0814_enrollment_authz.
