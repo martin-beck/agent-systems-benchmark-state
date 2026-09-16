@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Complete missing evidence for the pinned MockAgents executable qualification.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Complete MockAgents executable qualification evidence",
-  "updated_at": "2026-09-16T18:45:26+00:00",
+  "updated_at": "2026-09-16T18:45:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1249"
 }
 ---
@@ -122,3 +122,6 @@ network denial, privacy, signature, DCO, and exact-tree gates.
   preserving the candidate behavior blocker.
 
 - 2026-09-16T18:45:26+00:00: Claimed by asb_ar1249_mockagents_qualification.
+
+- 2026-09-16T18:45:29+00:00: Recorded command exit 0; command argv SHA-256
+  1ef208ba007e5fe0a0877b6c6b82aa599f78a4f0c6a144386b3419da2d427860.
