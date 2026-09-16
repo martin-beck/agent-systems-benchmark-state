@@ -9,7 +9,7 @@
     "AR-1230"
   ],
   "id": "AR-1232",
-  "next_action": "abc0317 is clean, signed/DCO, pushed; native strict replay 6/6, full locked offline workspace, repository policy, and signature policy all pass. Request independent exact-head review focused on child egress denial and lifecycle cleanup; do not publish/merge before approval.",
+  "next_action": "Review remediation committed and pushed at 3172028. Native strict replay 6/6 passes under explicit ASB_TEST_ROOT with --ignored; ordinary full locked offline workspace passes without native-root contamination; repository policy and signature policy pass. Request independent exact-head re-review.",
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "317202820c8be8fc1c970898e110baf5122bbb7b",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 329,
+  "task_revision": 330,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T04:36:12+00:00",
+  "updated_at": "2026-09-16T04:36:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -862,3 +862,12 @@
 
 - 2026-09-16T04:36:12+00:00: Recorded command exit 0; command argv SHA-256
   f52d7117bff5b817c45898a43532d74fdecd3759af131fc1ad6a70475a1b3215.
+
+- 2026-09-16T04:36:40+00:00: Closed harness review gap: native integration tests now have explicit
+  ignore reason and fail-closed required_backend/required_root when directly invoked, eliminating
+  silent skips. Dedicated native invocation passed 6/6 including authenticated loopback,
+  command/route rejection, timeout, cancellation/reaping, nonzero crash, and descendant
+  provider-egress denial. Full cargo test --locked --offline --workspace passed with native tests
+  explicitly ignored; repository policy passed; signature policy 16/16 passed. Raw full-gate failure
+  without ASB_TEST_ROOT was classified as intentional prerequisite failure. Product head
+  317202820c8be8fc1c970898e110baf5122bbb7b, clean and pushed.
