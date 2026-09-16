@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 196,
+  "task_revision": 197,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T15:21:54+00:00",
+  "updated_at": "2026-09-16T15:22:19+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -586,3 +586,10 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T15:21:54+00:00: Recorded command exit 0; command argv SHA-256
   534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
+
+- 2026-09-16T15:22:19+00:00: Fixed concrete drain bug in signed commit 5682574 (SSH-signed+DCO):
+  accept no longer acquires active permit before blocking TcpListener::accept; it rechecks drain
+  after accept before admission, preventing idle listeners from consuming capacity and closing
+  begin_drain race. Added active-session drain-timeout regression. Focused listener tests 2/2 green;
+  workspace clippy and full cargo test --locked --workspace green on current branch after refresh;
+  product tree clean. Next: independent review/CI.
