@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-live",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T09:12:30+00:00",
+  "claim_expires": "2026-09-16T07:52:26+00:00",
   "depends_on": [
     "AR-0858"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 273,
+  "task_revision": 274,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-16T07:22:05+00:00",
+  "updated_at": "2026-09-16T07:22:26+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -925,3 +925,5 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-16T07:22:05+00:00: Recorded command exit 0; command argv SHA-256
   a869144aad0b10d3bf9e033a4750d56126cd2d7c85bac309b4803c72361baf31.
+
+- 2026-09-16T07:22:26+00:00: Heartbeat by asb_ar0859_runtime_requal.
