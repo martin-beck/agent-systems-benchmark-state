@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-0813](tasks/AR-0813-remote-control-transport.md): Add secure remote control transport | Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client. | Monitor PR202 refreshed exact head efa9ab4; verify policy/audit and all required CI checks terminal before review/merge. | asb_ar0813_remote_transport |
+| P1 | [AR-0813](tasks/AR-0813-remote-control-transport.md): Add secure remote control transport | Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client. | Monitor PR202 exact head 2f6eb5b fresh CI; verify dependency policy, formatting, and all required checks terminal before merge. | asb_ar0813_remote_transport |
 
 ## Open
 

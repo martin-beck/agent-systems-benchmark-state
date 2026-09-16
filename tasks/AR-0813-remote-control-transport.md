@@ -9,7 +9,7 @@
     "AR-0902"
   ],
   "id": "AR-0813",
-  "next_action": "Monitor PR202 refreshed exact head efa9ab4; verify policy/audit and all required CI checks terminal before review/merge.",
+  "next_action": "Monitor PR202 exact head 2f6eb5b fresh CI; verify dependency policy, formatting, and all required checks terminal before merge.",
   "observed_branch": "feature/remote-control-transport",
   "observed_dirty": 0,
   "observed_head": "2f6eb5b98c46152e939e8af0b8dd0acb18dc9127",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 277,
+  "task_revision": 278,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T16:14:28+00:00",
+  "updated_at": "2026-09-16T16:14:51+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -849,3 +849,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T16:14:28+00:00: Recorded command exit 0; command argv SHA-256
   a1307a9406a3121af1acce68a8f4db7c8b42aa44316637af242257985143cbc3.
+
+- 2026-09-16T16:14:51+00:00: Hosted Rust failure diagnosed from job logs: cargo fmt check rejected
+  rcgen 0.14.7 signing-key line wrapping in efa9ab4. Ran cargo fmt, committed SSH-signed+DCO
+  2f6eb5b98c46152e939e8af0b8dd0acb18dc9127, and pushed PR202. Dependency repair remains: rustls
+  0.23.45/aws_lc_rs, rcgen 0.14.7, time 0.3.47, serde 1.0.220; duplicate windows-sys 0.52 no longer
+  appears in cargo tree.
