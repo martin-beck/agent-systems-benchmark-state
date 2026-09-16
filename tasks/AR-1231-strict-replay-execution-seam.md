@@ -11,17 +11,17 @@
   "id": "AR-1231",
   "next_action": "Add process-policy enforcement seam and cancellation/restart tests around StrictReplayExecutor; run full applicable gates and independent review.",
   "observed_branch": "feature/ar-1231",
-  "observed_dirty": 1,
-  "observed_head": "5e874bc52bd549e36ebc4b6bf333a7a678ad2cbd",
+  "observed_dirty": 0,
+  "observed_head": "f1f472389dd6df4b3b3ee164fc1fc4666cf0d82b",
   "owner": "asb_ar1231_replay_seam",
   "plan": "../plans/AR-1231.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents through strict replay without provider egress or live fallback.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Strict replay execution and egress-isolation seam",
-  "updated_at": "2026-09-16T01:59:46+00:00",
+  "updated_at": "2026-09-16T01:59:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1231"
 }
 ---
