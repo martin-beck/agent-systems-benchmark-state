@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**291 ARs tracked** across 6 active status categories.
+**292 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 6 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 23 |
-| **Planned** | Defined work awaiting promotion or dependencies | 58 |
+| **Planned** | Defined work awaiting promotion or dependencies | 59 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 194 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -357,6 +357,7 @@ flowchart LR
         AR_1261["AR-1261 - Blocked"]:::status_blocked
         AR_1262["AR-1262 - Blocked"]:::status_blocked
         AR_1263["AR-1263 - Blocked"]:::status_blocked
+        AR_1264["AR-1264 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1171,6 +1172,7 @@ flowchart LR
     AR_1253 --> AR_1255
     AR_1253 --> AR_1256
     AR_1254 --> AR_1255
+    AR_1263 --> AR_1264
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1475,7 +1477,8 @@ flowchart LR
 | [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
 | [AR-1261](../tasks/AR-1261-runtime-to-cli-replay-entrypoint.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
 | [AR-1262](../tasks/AR-1262-runtime-owned-launch-authority.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md) | None |
-| [AR-1263](../tasks/AR-1263-sandbox-scope-classification-stability.md) | [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md) | None |
+| [AR-1263](../tasks/AR-1263-sandbox-scope-classification-stability.md) | [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md) | [AR-1264](../tasks/AR-1264-pr205-merge-integrity.md) |
+| [AR-1264](../tasks/AR-1264-pr205-merge-integrity.md) | [AR-1263](../tasks/AR-1263-sandbox-scope-classification-stability.md) | None |
 
 ## Complete AR inventory
 
@@ -1518,7 +1521,7 @@ flowchart LR
 | P1 | [AR-1258](../tasks/AR-1258-docker-binfmt-qemu.md): Provision Docker binfmt/QEMU capability | Unclaimed | Provision and verify Docker binfmt/QEMU for multiarch qualification. | Inspect Docker/binfmt/QEMU capability and approved privilege workflow; add bounded verification and rollback-safe checks. |
 | P1 | [AR-1263](../tasks/AR-1263-sandbox-scope-classification-stability.md): Stabilize sandbox scope classification gate | Unclaimed | Stabilize intermittent sandbox scope classification in the quality gate. | Post-merge DCO recovery required: protected main ebfa37023e56 merged PR #205 but merge commit lacks Signed-off-by and GitHub RSA key is unverified locally. Preserve feature 0acbc1d and rerun exact-main policy after signed recovery. |
 
-### Planned (58)
+### Planned (59)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1547,6 +1550,7 @@ flowchart LR
 | P0 | [AR-1215](../tasks/AR-1215-result-comparison.md): Multi-agent result comparison tutorial | Unclaimed | Teach conservative comparison of multiple agents from the same benchmark. | Implement the syntax-checked tutorial for comparing two or more agents on one benchmark definition. |
 | P0 | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md): ASB tutorial freshness CI and documentation qualification | Unclaimed | Continuously keep ASB tutorial commands and steps syntactically current. | Implement the repository-wide tutorial discovery and syntax-freshness CI gate after all tutorial contracts are defined. |
 | P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
+| P0 | [AR-1264](../tasks/AR-1264-pr205-merge-integrity.md): Recover signed integration after PR #205 | Unclaimed | Recover signed protected-main integration after PR #205. | Promote after AR-1263 is repaired/released; preserve unsigned PR #205 merge and create a signed DCO-bearing forward-only recovery through handoffctl. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
@@ -1617,5 +1621,3 @@ flowchart LR
 | P0 | [AR-1022](../tasks/AR-1022-asb-tui-release-contract-hardening.md): Harden the asb-tui release lifecycle contract | Unclaimed | Turn the tested unverified asb-tui lifecycle boundary into a release-safe delegated contract. | Wait for AR-1030 PR 11 to merge, rebase signed+DCO AR-1022 PR 10 onto exact new asb-tui main, reconcile overlaps to source_only_unverified, rerun full gates and exact-head CI, then integrate by protected admin merge only when all requirements are green. |
 | P0 | [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md): Add the ASB frontend capabilities command | Unclaimed | Publish the ASB capability negotiation command required by the standalone frontend. | Monitor exact head d60d2351004479998608f2141730849366351373 on PR 128, repair any CI failure, obtain independent review, merge through policy, and run post-merge verification. |
 | P0 | [AR-1030](../tasks/AR-1030-ratatui-dependency-closure.md): Resolve the Ratatui dependency closure | Unclaimed | Make the maintained Ratatui release consumable by standalone asb-tui without hiding supply-chain exceptions. | Register/authorize a GitHub-recognized signing identity for exact head c0dfdd3114741f9415a124f4d4995dac354b4260, or explicitly approve a GitHub rebase/squash rewrite; then rerun exact-head gates and merge PR #11. |
-| P0 | [AR-1036](../tasks/AR-1036-measurement-catalog-control.md): Publish the measurement catalog control contract | Unclaimed | Expose the versioned ASB measurement catalog to standalone frontends without UI code. | Catalog control v1.2 is merged and qualified; AR-1037 may now carry selected measurement IDs through validated ASB plans. |
-| P0 | [AR-1037](../tasks/AR-1037-measurement-selection-plan.md): Add measurement selection to validated run plans | Unclaimed | Carry catalog-backed measurement choices through ASB plan validation, collection and evidence. | After AR-1036, add canonical measurement IDs to validated ASB plans and make collection honor them without any UI code. |

@@ -32,7 +32,7 @@ Generated from local Git and GitHub. Do not edit.
 | 35153745419 | `ebfa37023e56` | push | Rust verification | in_progress:- |
 | 35153745413 | `ebfa37023e56` | push | Hosted portability and native qualification | completed:success |
 | 35153745400 | `ebfa37023e56` | push | Formal assurance | in_progress:- |
-| 35153745384 | `ebfa37023e56` | push | Fault assurance | in_progress:- |
+| 35153745384 | `ebfa37023e56` | push | Fault assurance | completed:success |
 | 35153745383 | `ebfa37023e56` | push | Emulated aarch64 portability | in_progress:- |
 | 35152955605 | `0acbc1d1a8bf` | pull_request | Rust verification | completed:success |
 | 35152955320 | `0acbc1d1a8bf` | pull_request | Huawei MIT source headers | completed:success |
