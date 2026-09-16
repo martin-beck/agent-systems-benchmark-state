@@ -2,7 +2,7 @@
 {
   "branch": "feature/distributed-workers",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T14:40:03+00:00",
+  "claim_expires": "2026-09-16T14:43:40+00:00",
   "depends_on": [
     "AR-0204",
     "AR-0702",
@@ -16,9 +16,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Schedule trials across native-capability workers while preserving per-host capacity meaning.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Coordinate distributed experiment workers",
-  "updated_at": "2026-09-16T12:40:16+00:00",
+  "updated_at": "2026-09-16T12:43:40+00:00",
   "worktree_key": "agent-systems-benchmark-distributed-workers"
 }
 ---
@@ -119,3 +119,5 @@ Implementation has not started. Read the linked plan before claiming.
   PR checks all green after transient unrelated Loom ExecutableFileBusy rerun succeeded. Post-merge
   runs started: 35097078851 fault, 35097078917 AArch64, 35097078871 repository quality, 35097079080
   Rust, 35097078950 hosted portability, 35097078829 formal; headers 35097078983 green.
+
+- 2026-09-16T12:43:40+00:00: Heartbeat by asb_ar1006_distributed_workers.
