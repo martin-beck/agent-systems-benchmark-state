@@ -10,17 +10,17 @@
   "id": "AR-1248",
   "next_action": "Review runtime-handoff integration at exact head 7a0a7cc; request independent re-review and rerun PR CI. CLI now binds resolved StrictReplayLaunchRecord to runtime-issued SidecarHandoff via StrictReplayLaunchBridge; malformed cassette and route-drift negatives pass. Runtime SandboxLaunchInput supervision remains owned by existing asb-agents/asb-runtime bridge.",
   "observed_branch": "feature/ar-1248-strict-replay-cli-contract",
-  "observed_dirty": 2,
-  "observed_head": "7a0a7cc5c14d596acd2477bf0a305823ddf2a48e",
+  "observed_dirty": 0,
+  "observed_head": "66e0fa2021110d07d3eda3e5a2bdc3915b7f9553",
   "owner": "asb_ar1232_lifecycle_router",
   "plan": "../plans/AR-1248.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 102,
+  "task_revision": 103,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T11:13:52+00:00",
+  "updated_at": "2026-09-16T11:13:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
