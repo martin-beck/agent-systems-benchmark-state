@@ -28,12 +28,12 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 35060286431 | `fd7daa43549e` | push | Hosted portability and native qualification | completed:success |
-| 35060286418 | `fd7daa43549e` | push | Rust verification | in_progress:- |
-| 35060286408 | `fd7daa43549e` | push | Emulated aarch64 portability | in_progress:- |
+| 35060286418 | `fd7daa43549e` | push | Rust verification | completed:success |
+| 35060286408 | `fd7daa43549e` | push | Emulated aarch64 portability | completed:failure |
 | 35060286407 | `fd7daa43549e` | push | Huawei MIT source headers | completed:success |
-| 35060286406 | `fd7daa43549e` | push | Formal assurance | in_progress:- |
-| 35060286401 | `fd7daa43549e` | push | Repository quality | in_progress:- |
-| 35060286384 | `fd7daa43549e` | push | Fault assurance | in_progress:- |
+| 35060286406 | `fd7daa43549e` | push | Formal assurance | completed:success |
+| 35060286401 | `fd7daa43549e` | push | Repository quality | completed:success |
+| 35060286384 | `fd7daa43549e` | push | Fault assurance | completed:success |
 | 35059756710 | `df5a519b8b76` | pull_request | Huawei MIT source headers | completed:success |
 | 35059756438 | `df5a519b8b76` | pull_request | Rust verification | completed:success |
 | 35059756431 | `df5a519b8b76` | pull_request | Hosted portability and native qualification | completed:success |
