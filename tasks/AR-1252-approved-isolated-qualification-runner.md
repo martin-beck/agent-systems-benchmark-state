@@ -10,16 +10,16 @@
   "next_action": "Integrate runner with AR-1251 and add fixture-backed network-denial/no-mount evidence; run full gates.",
   "observed_branch": "feature/ar-1252-approved-isolated-runner",
   "observed_dirty": 0,
-  "observed_head": "8513a90365269db76a1830d6f78b74cdac7d7c62",
+  "observed_head": "bde4bf836a8b879127b6ffd40b3b6a2e06ef6466",
   "owner": "asb_ar1252_isolated_runner",
   "plan": "../plans/AR-1252.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:18:30+00:00",
+  "updated_at": "2026-09-16T11:18:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
