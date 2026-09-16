@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Implement or explicitly split the still-owned certificate issuance/import and durable pairing identity-store ceremony, provide a qualified OS-protected SecretBackend, and add the missing hostile threat-matrix evidence/tests. Then rerun full gates and request publication review.",
+  "next_action": "Implement durable certificate/pairing persistence and threat-matrix tests; retain explicit fail-closed SecretBackend boundary.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "677e8fd5ed7c7437bbfe9b5dafd375b773a115c1",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 251,
+  "task_revision": 252,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:27:40+00:00",
+  "updated_at": "2026-09-16T19:27:54+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -684,3 +684,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T19:27:33+00:00: Recorded command exit 0; command argv SHA-256
   4047a5a8981e7db7458e0ab9dfd79c9d8b03c7c22c68e6d5d384370aefd42f55.
+
+- 2026-09-16T19:27:54+00:00: Signed+DCO 677e8fd exposes FailClosedSecretBackend as an explicit
+  public boundary: enroll/revoke/probe always return BackendFailure and never retain secret
+  material. Replaced ad-hoc test backend; focused auth test passes (1 selected, all filtered clean).
+  This qualifies the SecretBackend gap as fail-closed but not OS-protected storage;
+  certificate/pairing persistence and remaining threat tests are next.
