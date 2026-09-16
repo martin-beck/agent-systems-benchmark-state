@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1267",
-  "next_action": "Bind execute_cassette_request to actual replay command context and add malformed/mismatch/egress/cancel/restart/timeout/crash/no-fallback tests; then full gates.",
+  "next_action": "Add actual replay CLI argument wiring and bounded lifecycle/egress/no-fallback tests around authenticated execution hook; then run full gates.",
   "observed_branch": "feature/ar-1267-runtime-replay-execution",
   "observed_dirty": 0,
   "observed_head": "8ed8ce1f83e52f0ea35499e7260f7ae9474de054",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement real runtime-owned strict-replay execution and lifecycle supervision.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Runtime strict-replay execution hook",
-  "updated_at": "2026-09-16T22:43:41+00:00",
+  "updated_at": "2026-09-16T22:43:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1267-runtime-replay-execution"
 }
 ---
@@ -80,3 +80,11 @@ context-boundary evidence and its blocker; do not accept metadata-only behavior 
 
 - 2026-09-16T22:43:33+00:00: Recorded command exit 0; command argv SHA-256
   658fe4d9952ba495742359d9bfffd62d44e4bb5743cf835ab5f9269aa0491308.
+
+- 2026-09-16T22:43:55+00:00: Signed checkpoint 8ed8ce1 adds runtime ReplayDispatchContext (opaque,
+  one-shot, runtime-issued) and execute_authenticated_request. The CLI now consumes context exactly
+  once, verifies handoff route digest and loopback endpoint against StrictReplayLaunchRecord,
+  constructs StrictReplayExecutor, and returns response plus retained sidecar; caller-provided
+  record/isolation wrapper remains only as lower-level primitive. Focused offline CLI tests pass
+  71/71 and fmt pass; product tree clean. Remaining work is argument-level replay dispatch and
+  supervised lifecycle/egress/cancellation/cleanup evidence.
