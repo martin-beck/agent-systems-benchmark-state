@@ -2,7 +2,7 @@
 {
   "branch": "feature/distributed-workers",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T14:43:40+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0204",
     "AR-0702",
@@ -10,15 +10,15 @@
   ],
   "id": "AR-1006",
   "next_action": "Monitor post-merge workflows for main 4e2820b until terminal; verify exact tree/signature/DCO/policy, then release AR-1006 done.",
-  "owner": "asb_ar1006_distributed_workers",
+  "owner": "",
   "plan": "../plans/AR-1006.md",
   "priority": "P3",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Schedule trials across native-capability workers while preserving per-host capacity meaning.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Coordinate distributed experiment workers",
-  "updated_at": "2026-09-16T12:43:40+00:00",
+  "updated_at": "2026-09-16T12:44:53+00:00",
   "worktree_key": "agent-systems-benchmark-distributed-workers"
 }
 ---
@@ -121,3 +121,13 @@ Implementation has not started. Read the linked plan before claiming.
   Rust, 35097078950 hosted portability, 35097078829 formal; headers 35097078983 green.
 
 - 2026-09-16T12:43:40+00:00: Heartbeat by asb_ar1006_distributed_workers.
+
+- 2026-09-16T12:44:53+00:00: AR-1006 complete. PR #199 exact signed head
+  23c9ba45c2bb602d273d3d7a002d5b05d533cac4 merged via signed local integration as
+  4e2820bffe93234d02ca39b59067bf4442b08f95. Remote main verified exact with parents 3e8d589 and
+  23c9ba4, tree 5f2c06f795681bf502a02faadad23d1b2268d873, valid SSH signature and DCO. All PR checks
+  green after unrelated Loom ExecutableFileBusy rerun. All seven post-merge workflows terminal
+  SUCCESS: AArch64 35097078917, formal 35097078829, hosted 35097078950, repository quality
+  35097078871, Rust 35097079080, fault assurance 35097078851, headers 35097078983. Worker
+  capability/capacity leases, fencing, worker-loss invalidation, duplicate/stale completion
+  rejection, bounded digests and host-local timing acceptance satisfied.
