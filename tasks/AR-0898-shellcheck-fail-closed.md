@@ -11,7 +11,7 @@
   "id": "AR-0898",
   "next_action": "Implementation committed as signed+DCO 8176605df747cca12010f8220e74509cca01539f. Focused gates pass: ShellCheck 0.11.0 x86_64/aarch64 pins install and verify, actionlint runs with explicit absolute -shellcheck, and test_failure_paths rejects SC2086 plus existing defects. Worktree clean after removing only owned profraw test artifacts. Next independently review complete diff, run full applicable local gates, then publish exact clean head.",
   "observed_branch": "fix/shellcheck-fail-closed",
-  "observed_dirty": 0,
+  "observed_dirty": 7,
   "observed_head": "8176605df747cca12010f8220e74509cca01539f",
   "owner": "asb_ar0898_shellcheck",
   "plan": "../plans/AR-0898.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Make ShellCheck fail closed",
-  "updated_at": "2026-09-16T08:29:06+00:00",
+  "updated_at": "2026-09-16T08:30:30+00:00",
   "worktree_key": "agent-systems-benchmark-shellcheck-fail-closed"
 }
 ---
