@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1254.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Qualify MockAgents through the pinned Python sandbox.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Qualify MockAgents through pinned Python transport",
-  "updated_at": "2026-09-16T13:56:39+00:00",
+  "updated_at": "2026-09-16T18:56:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1254"
 }
 ---
@@ -134,3 +134,7 @@ Keep fixtures, runtimes, caches, and evidence under `/srv/data/projects`.
   and backpressure terminal semantics incomplete; lock source/tag/commit/license/checksum closure
   not integrated. Successor AR-1255 created with dependencies AR-1254/1253 to provide bundled
   in-container transport and digest-pinned QEMU evidence.
+
+- 2026-09-16T18:56:13+00:00: AR-1252 and AR-1253 are durably done. The real pinned Python transport
+  qualification is now actionable; reopen for implementation without weakening isolation,
+  provenance, or arm64 gates.
