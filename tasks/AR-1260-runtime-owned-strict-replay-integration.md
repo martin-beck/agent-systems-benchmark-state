@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1260",
-  "next_action": "Run clippy -D warnings, rustdoc, policy/privacy/signature gates on exact head 9e4a1c0; then request independent review. Runtime native lifecycle/egress execution remains delegated to existing runtime tests and must not be claimed as CLI evidence.",
+  "next_action": "Request independent exact-head review of 9e4a1c0 and confirm runtime lifecycle/egress delegation boundaries; do not claim CLI end-to-end child execution without runtime-issued context.",
   "observed_branch": "feature/ar-1260-runtime-owned-strict-replay-integration",
   "observed_dirty": 0,
   "observed_head": "9e4a1c095e1f736011699edb4ab216e876e77251",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate strict replay with runtime-owned attestation and supervised sandbox execution.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Runtime-owned strict-replay integration",
-  "updated_at": "2026-09-16T20:38:16+00:00",
+  "updated_at": "2026-09-16T20:38:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1260-runtime"
 }
 ---
@@ -102,3 +102,9 @@ missing, stale, duplicated, or mismatched.
 
 - 2026-09-16T20:38:16+00:00: Recorded command exit 0; command argv SHA-256
   18cec38b42d6e43b6e981b42922efbce90bf7310f4808a75e4ea5cbe51434dba.
+
+- 2026-09-16T20:38:32+00:00: Gate evidence on exact clean head 9e4a1c0: cargo clippy --workspace
+  --all-targets --locked --offline -- -D warnings passed; cargo doc --workspace --no-deps --locked
+  --offline passed; prior cargo fmt check, focused asb-cli 76/76, focused no-fallback 1/1, and full
+  locked offline workspace tests passed. All latest product commits are SSH-signed with DCO; no
+  product dirty paths.
