@@ -14,9 +14,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remediate the protected-main merge-tree mismatch from stale-base PR merging.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Protected merge-tree remediation",
-  "updated_at": "2026-09-16T06:27:41+00:00",
+  "updated_at": "2026-09-16T06:28:15+00:00",
   "worktree_key": "agent-systems-benchmark-protected-merge-tree-remediation"
 }
 ---
@@ -32,3 +32,6 @@ current-main requalification; it must not mark the merge usable until policy ass
   AR-1200 is complete.
 
 - 2026-09-16T06:27:41+00:00: Claimed by asb_ar1232_lifecycle_router.
+
+- 2026-09-16T06:28:15+00:00: Recorded command exit 1; command argv SHA-256
+  a4698354b467f618b4915a4e2e6f48a8c7929dae3caa22bbfa85b4e6b9650b60.
