@@ -9,7 +9,7 @@
     "AR-1230"
   ],
   "id": "AR-1232",
-  "next_action": "Review blocks curl nonzero as non-causal and lacks native StrictReplayExecutor authenticated child lifecycle. Add deterministic owned loopback listener/child request fixture and executor lifecycle integration; retain explicit native prerequisite gate.",
+  "next_action": "Owned loopback egress fixture committed and pushed at 048356b; native ignored gate passes 6/6 with explicit ASB_TEST_ROOT, including no-connection assertion against test-owned listener. Remaining blocker is native StrictReplayExecutor service lifecycle/recovery integration; add or document exact seam before re-review.",
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "048356b8d93134507ab1967b17102cc68e4b9880",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 342,
+  "task_revision": 343,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T04:42:32+00:00",
+  "updated_at": "2026-09-16T04:42:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -900,3 +900,9 @@
 
 - 2026-09-16T04:42:32+00:00: Recorded command exit 0; command argv SHA-256
   39cf5398131881d6bebfeb6940a170dba53287cbad205a984f34c80a6dbe58e7.
+
+- 2026-09-16T04:42:54+00:00: 048356b signed/DCO replaces non-causal TEST-NET curl evidence with a
+  deterministic owned TcpListener fixture. Child targets the listener endpoint with authenticated
+  route/endpoint environment; listener observes no accepted connection while child exits nonzero
+  under denied network policy. Native strict_replay_sandbox --ignored passed 6/6. Worktree clean and
+  pushed. StrictReplayExecutor lifecycle integration remains outstanding review scope.
