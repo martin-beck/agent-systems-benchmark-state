@@ -33,7 +33,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1230-authenticated-provider-request-seam` | `feature/ar-1230-authenticated-provider-request-seam` | `3d0349af1a56` | 0 | behind 127, ahead 0 |
 | `agent-systems-benchmark-ar-1231` | `feature/ar-1231` | `fd8eaef0c36d` | 0 | behind 50, ahead 0 |
 | `agent-systems-benchmark-ar-1232` | `feature/ar-1232` | `7613c678c718` | 0 | behind 49, ahead 27 |
-| `agent-systems-benchmark-ar-1233` | `feature/ar-1233` | `b8455b3fc5f5` | 0 | behind 28, ahead 2 |
+| `agent-systems-benchmark-ar-1233` | `feature/ar-1233` | `cd55e005246f` | 2 | behind 28, ahead 5 |
+| changed files | - | - | - | `crates/asb-runtime/src/sandbox.rs`, `crates/asb-runtime/src/supervisor.rs` |
 | `agent-systems-benchmark-ar-1233-positive` | `feature/ar-1233-positive-transport` | `36dd575d2b76` | 0 | behind 303, ahead 9 |
 | `agent-systems-benchmark-ar-1234` | `feature/ar-1234` | `04b3f728fc5f` | 0 | behind 22, ahead 2 |
 | `agent-systems-benchmark-ar-1235` | `feature/ar-1235-goose-fixture-portability` | `fd7daa43549e` | 3 | behind 19, ahead 0 |
