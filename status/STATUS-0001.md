@@ -1470,7 +1470,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md): Runtime-owned strict-replay integration | asb_ar1024_lifecycle_router | Integrate strict replay with runtime-owned attestation and supervised sandbox execution. | Promote and claim after reconciliation; wire replay_plan through runtime-issued StrictReplayLaunchBridge spawn and prove bounded transport lifecycle, egress denial, cancellation, cleanup, and no-fallback. |
+| P0 | [AR-1260](../tasks/AR-1260-runtime-owned-strict-replay-integration.md): Runtime-owned strict-replay integration | asb_ar1024_lifecycle_router | Integrate strict replay with runtime-owned attestation and supervised sandbox execution. | Add executable lifecycle/egress/no-fallback tests around the runtime launch wrapper; then run policy/privacy/signature gates and request exact-head review. |
 
 ### Open (6)
 

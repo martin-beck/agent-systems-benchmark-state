@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1260",
-  "next_action": "Promote and claim after reconciliation; wire replay_plan through runtime-issued StrictReplayLaunchBridge spawn and prove bounded transport lifecycle, egress denial, cancellation, cleanup, and no-fallback.",
+  "next_action": "Add executable lifecycle/egress/no-fallback tests around the runtime launch wrapper; then run policy/privacy/signature gates and request exact-head review.",
   "observed_branch": "feature/ar-1260-runtime-owned-strict-replay-integration",
   "observed_dirty": 0,
   "observed_head": "317a756b3639c33aba89300bf9a77d5515e3d22d",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate strict replay with runtime-owned attestation and supervised sandbox execution.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Runtime-owned strict-replay integration",
-  "updated_at": "2026-09-16T20:35:19+00:00",
+  "updated_at": "2026-09-16T20:35:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1260-runtime"
 }
 ---
@@ -68,3 +68,10 @@ missing, stale, duplicated, or mismatched.
 
 - 2026-09-16T20:35:19+00:00: Recorded command exit 0; command argv SHA-256
   e65704d0af497ff4f9db656cbcc2e1894e552f84bfbc5a531f0945a250925adf.
+
+- 2026-09-16T20:35:47+00:00: Signed 317a756 adds spawn_runtime_replay: runtime SandboxBackend,
+  SandboxLaunchInput, ResourceLease, pinned supervisor/sidecar are required; deny policy, relay
+  generation/path are checked before StrictReplayLaunchBridge::spawn, and RunningRuntimeReplay
+  retains sidecar ownership. Focused asb-cli lib tests pass 76/76; cargo fmt --all -- --check
+  passes; cargo test --workspace --locked --offline passes (exit 0, including native sandbox 11/11
+  and schema/policy fixtures). Worktree clean.
