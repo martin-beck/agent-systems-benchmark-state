@@ -9,17 +9,17 @@
   "id": "AR-0814",
   "next_action": "Integrate authorization context into enrollment and CLI mutation dispatch; add rotation/revocation audit tests.",
   "observed_branch": "feature/remote-enrollment-authz",
-  "observed_dirty": 1,
-  "observed_head": "2d60d70ab277800ca949a90ee684a617c9a72ce8",
+  "observed_dirty": 0,
+  "observed_head": "c5a8724cdf2786265a9ee5eca144626c307a8991",
   "owner": "asb_ar0814_enrollment_authz",
   "plan": "../plans/AR-0814.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T17:42:09+00:00",
+  "updated_at": "2026-09-16T17:42:16+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
