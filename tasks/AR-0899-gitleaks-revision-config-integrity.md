@@ -11,16 +11,16 @@
   "next_action": "Initial wrapper commit 94def3b and config-policy changes are present; rerun focused failure suite with complete pinned analyzer bin directory, then add revision-range unrelated/introduction fixtures and run full gates.",
   "observed_branch": "fix/gitleaks-revision-config-integrity",
   "observed_dirty": 0,
-  "observed_head": "55a05ce31b6cd38d77d47de621fd000167d3086d",
+  "observed_head": "62d9f1286f4b2d020284a35ed4f32b7ca3388f29",
   "owner": "asb_ar0899_gitleaks",
   "plan": "../plans/AR-0899.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve GitHub issue 118 by making local and CI Gitleaks scans deterministic and config changes fail closed.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Align and harden Gitleaks execution",
-  "updated_at": "2026-09-16T11:45:52+00:00",
+  "updated_at": "2026-09-16T11:45:59+00:00",
   "worktree_key": "agent-systems-benchmark-gitleaks-revision-config-integrity"
 }
 ---
