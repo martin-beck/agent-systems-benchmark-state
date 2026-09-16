@@ -7,7 +7,7 @@
     "AR-1242"
   ],
   "id": "AR-1259",
-  "next_action": "Monitor PR204 exact head 7edda7d checks; once green invoke merge_pr.py with base 8b81be4 and PR204 ref, then verify exact-main gates.",
+  "next_action": "Monitor PR #204 exact head 7edda7d until AArch64, Policy, and Rust checks terminal SUCCESS; obtain independent approval, then run merge_pr.py local signed no-ff from current main and verify exact-main recovery.",
   "observed_branch": "repair/pr202-protected-main-dco",
   "observed_dirty": 0,
   "observed_head": "8b81be45b1cf3e2f42540fae8c623074bbacaf88",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover a signed protected-main DCO boundary after the unsigned PR202 web merge.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Protected-main DCO recovery for PR202",
-  "updated_at": "2026-09-16T17:08:07+00:00",
+  "updated_at": "2026-09-16T17:08:19+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-dco-1259"
 }
 ---
@@ -105,3 +105,12 @@ Create a signed, forward-only protected-main recovery for the unsigned PR202 mer
   topic tip (unchanged main tree); all required checks are pending/running. Heartbeat renewed.
 
 - 2026-09-16T17:08:07+00:00: Heartbeat by asb_ar1259_signed_recovery.
+
+- 2026-09-16T17:08:19+00:00: Independent review PR #204 exact head
+  7edda7d06df7a421e4cb92758bcb18cb78ce6590: signed linear topic tip with one parent
+  8b81be45b1cf3e2f42540fae8c623074bbacaf88, exact tree 6a97f46753534cd14c9cb08ced10295375a31f31
+  preserved from prior recovery tree, SSH Good for martin.beck2@gmx.de, matching Signed-off-by, no
+  product/privacy/credential changes. This is the intended clean topic for subsequent local
+  merge_pr.py integration; GitHub web merge remains unauthorized. PR204 exact-head checks currently
+  green: retained faults, TLC, platform, headers, fuzz, Kani, mutation, Loom; AArch64, Policy, Rust
+  remain IN_PROGRESS. No merge authorization until terminal green and independent approval.
