@@ -29,13 +29,13 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35042936330 | `a83ba8e278e4` | push | Rust verification | in_progress:- |
+| 35042936330 | `a83ba8e278e4` | push | Rust verification | completed:failure |
 | 35042936326 | `a83ba8e278e4` | push | Hosted portability and native qualification | completed:success |
 | 35042936320 | `a83ba8e278e4` | push | Huawei MIT source headers | completed:success |
 | 35042936310 | `a83ba8e278e4` | push | Emulated aarch64 portability | in_progress:- |
 | 35042936303 | `a83ba8e278e4` | push | Repository quality | completed:failure |
-| 35042936302 | `a83ba8e278e4` | push | Fault assurance | in_progress:- |
-| 35042936264 | `a83ba8e278e4` | push | Formal assurance | in_progress:- |
+| 35042936302 | `a83ba8e278e4` | push | Fault assurance | completed:success |
+| 35042936264 | `a83ba8e278e4` | push | Formal assurance | completed:success |
 | 35042449272 | `d2498a7372ed` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35042449269 | `d2498a7372ed` | pull_request | Emulated aarch64 portability | completed:success |
 | 35042449254 | `d2498a7372ed` | pull_request | Rust verification | completed:success |
