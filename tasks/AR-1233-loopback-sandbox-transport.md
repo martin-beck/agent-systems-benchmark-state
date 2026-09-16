@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1233",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T07:08:55+00:00",
+  "claim_expires": "2026-09-16T07:12:43+00:00",
   "depends_on": [
     "AR-1231",
     "AR-1100"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated loopback-only sandbox transport for strict replay services.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Approved loopback-only sandbox transport",
-  "updated_at": "2026-09-16T05:12:32+00:00",
+  "updated_at": "2026-09-16T05:12:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1233"
 }
 ---
@@ -44,3 +44,5 @@
 
 - 2026-09-16T05:12:32+00:00: Recorded command exit 0; command argv SHA-256
   cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
+
+- 2026-09-16T05:12:43+00:00: Heartbeat by asb_ar1232_sandbox_supervision.
