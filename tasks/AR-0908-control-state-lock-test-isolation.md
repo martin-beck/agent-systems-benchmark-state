@@ -2,7 +2,7 @@
 {
   "branch": "fix/control-state-lock-test-isolation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T08:04:55+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0101",
     "AR-0102",
@@ -14,15 +14,15 @@
   "observed_branch": "fix/control-state-lock-test-isolation",
   "observed_dirty": 0,
   "observed_head": "8b0f9fd07d5dfbedd83376c1380ab225dfba1213",
-  "owner": "asb_ar0908_lock_isolation",
+  "owner": "",
   "plan": "../plans/AR-0908.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Harden asb-cli control-state lock test isolation and deterministic reopen coverage.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Harden control-state lock test isolation",
-  "updated_at": "2026-09-16T06:07:32+00:00",
+  "updated_at": "2026-09-16T06:07:34+00:00",
   "worktree_key": "agent-systems-benchmark-control-state-lock-test-isolation"
 }
 ---
@@ -232,3 +232,7 @@ non-deterministic isolation signal rather than claiming a production lock defect
   PR #173 exact head 81a81cf, merged as 2117a40; current protected main contains the implementation.
   Focused cargo test --locked -p asb-cli control --lib -- --nocapture passed 14/14 on the declared
   clean worktree. No asb-tui changes.
+
+- 2026-09-16T06:07:34+00:00: AR-0908 outcome is durably present on protected main via PR #173 merge
+  2117a40; stale PR #125 remains unmerged/conflicting and was not touched. Focused 14/14
+  verification passed; state evidence and next action reconciled.
