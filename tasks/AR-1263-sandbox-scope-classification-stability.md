@@ -2,7 +2,7 @@
 {
   "branch": "fix/ar-1263-sandbox-scope-classification",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T23:31:30+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1238"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "fix/ar-1263-sandbox-scope-classification",
   "observed_dirty": 0,
   "observed_head": "0acbc1d1a8bf43a226fda503fbd76f8afd48eb07",
-  "owner": "asb_ar1263_sandbox_stability",
+  "owner": "",
   "plan": "../plans/AR-1263.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Stabilize intermittent sandbox scope classification in the quality gate.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Stabilize sandbox scope classification gate",
-  "updated_at": "2026-09-16T21:32:58+00:00",
+  "updated_at": "2026-09-16T21:33:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1263-sandbox-stability"
 }
 ---
@@ -159,3 +159,9 @@ fail-closed test/runner behavior and preserve the original semantic assertions.
   mergeable. Hosted checks run 35152955071 (AArch64), 35152955085 (fault/fuzz), 35152955083
   (formal), 35152955236 (platform), 35152955119 (policy), 35152955173 (Rust); header and AWQ checks
   already passed. Keep PR open pending all required terminal success.
+
+- 2026-09-16T21:33:08+00:00: Released ownerless while PR #205 hosted checks run. Exact head
+  0acbc1d1a8bf43a226fda503fbd76f8afd48eb07/base 0a808a635d85fdc4a43b575e3711ef23b38089e3, PR
+  https://github.com/martin-beck/agent-systems-benchmark/pull/205. Header/AWQ checks passed;
+  AArch64, fault/fuzz, formal, platform, policy, and Rust checks were in progress at release.
+  Independent review approved publication. No merge performed.
