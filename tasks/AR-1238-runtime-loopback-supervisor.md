@@ -11,16 +11,16 @@
   "next_action": "Implement and qualify a pinned in-tree supervisor that composes a private user/network namespace, raises only its own loopback, mounts the per-launch Unix relay, and supervises sidecar plus adapter without host networking.",
   "observed_branch": "feature/ar-1238-runtime-loopback-supervisor",
   "observed_dirty": 0,
-  "observed_head": "11d37da2ec59fb5e2afe26c35d9c1bab1787f034",
+  "observed_head": "6fba189fd839a954d2e0724f696114b607242cb0",
   "owner": "asb_ar1238_supervisor_worker",
   "plan": "../plans/AR-1238.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the runtime-owned private-namespace supervisor for loopback replay.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime-owned loopback supervisor",
-  "updated_at": "2026-09-16T07:46:43+00:00",
+  "updated_at": "2026-09-16T07:49:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1238"
 }
 ---
