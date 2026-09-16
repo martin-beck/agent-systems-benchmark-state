@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned authority for supervised strict-replay execution.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-16T21:04:53+00:00",
+  "updated_at": "2026-09-16T21:05:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1262-runtime-authority"
 }
 ---
@@ -65,3 +65,6 @@ ownership and bounded lifecycle evidence.
   green.
 
 - 2026-09-16T21:04:53+00:00: Heartbeat by asb_ar1024_lifecycle_router.
+
+- 2026-09-16T21:05:34+00:00: Recorded command exit 1; command argv SHA-256
+  31d26d709d6bb7f1ba84e372fec371f5b93205ddebd7b8d513c9414718061c58.
