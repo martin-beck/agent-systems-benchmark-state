@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Break the strict-replay runtime/CLI dependency cycle with a shared transport contract.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Break strict-replay runtime/CLI dependency cycle",
-  "updated_at": "2026-09-16T22:46:56+00:00",
+  "updated_at": "2026-09-16T22:47:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1268-replay-transport"
 }
 ---
@@ -49,3 +49,6 @@ Preserve AR-1267's blocked evidence; do not fabricate authority or weaken crate 
 
 - 2026-09-16T22:46:56+00:00: Recorded command exit 0; command argv SHA-256
   e2fb60616251de3c6a4e6e92438ad67c476f5e0b781bc63dfddfcae0764dadac.
+
+- 2026-09-16T22:47:04+00:00: Recorded command exit 0; command argv SHA-256
+  8c64230835cafec9cf70b367423893834394f62eb5d05a01f55fc4636c2821e0.
