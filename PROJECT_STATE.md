@@ -18,26 +18,26 @@ Generated from local Git and GitHub. Do not edit.
 | #144 | `dependabot/github_actions/actions/setup-java-6.0.0@5885c200026e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump actions/setup-java from 5.0.0 to 6.0.0 |
 | #145 | `dependabot/cargo/toml-0.9.5@5f30c0c92f18` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 0.9.5 |
 | #146 | `dependabot/github_actions/taiki-e/install-action-2.87.7@51db8d79ad9f` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.7 |
-| #147 | `dependabot/cargo/sha2-0.11.0@c2f0683fbd85` | `main` | UNKNOWN | - | chore(deps): bump sha2 from 0.10.9 to 0.11.0 |
+| #147 | `dependabot/cargo/sha2-0.11.0@c2f0683fbd85` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS: | chore(deps): bump sha2 from 0.10.9 to 0.11.0 |
 | #148 | `dependabot/github_actions/actions/upload-artifact-7.0.1@7d45f4cadff2` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump actions/upload-artifact from 4.6.2 to 7.0.1 |
-| #149 | `dependabot/cargo/url-2.5.8@b41476d1358f` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump url from 2.5.7 to 2.5.8 |
+| #149 | `dependabot/cargo/url-2.5.8@077c10feadd9` | `main` | UNSTABLE | QUEUED:, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, IN_PROGRESS: | chore(deps): bump url from 2.5.7 to 2.5.8 |
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
-| #151 | `dependabot/cargo/serde-1.0.229@43883609b8db` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
+| #151 | `dependabot/cargo/serde-1.0.229@c926edfde377` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:FAILURE, IN_PROGRESS: | chore(deps): bump serde from 1.0.219 to 1.0.229 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35049504868 | `f218bac93006` | dynamic | Dependabot Updates | in_progress:- |
-| 35049503121 | `f218bac93006` | dynamic | Dependabot Updates | in_progress:- |
-| 35049500164 | `f218bac93006` | dynamic | Dependabot Updates | completed:success |
-| 35049433882 | `f218bac93006` | push | Formal assurance | in_progress:- |
-| 35049433817 | `f218bac93006` | push | Repository quality | completed:failure |
-| 35049433738 | `f218bac93006` | push | Huawei MIT source headers | completed:success |
-| 35049433726 | `f218bac93006` | push | Fault assurance | in_progress:- |
-| 35049433669 | `f218bac93006` | push | Rust verification | in_progress:- |
-| 35049433656 | `f218bac93006` | push | Hosted portability and native qualification | completed:success |
-| 35049433592 | `f218bac93006` | push | Emulated aarch64 portability | in_progress:- |
-| 35048737492 | `fd8eaef0c36d` | pull_request | Formal assurance | completed:success |
-| 35048737491 | `fd8eaef0c36d` | pull_request | Fault assurance | completed:success |
+| 35049581592 | `077c10feadd9` | pull_request | Repository quality | queued:- |
+| 35049581587 | `077c10feadd9` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 35049581585 | `077c10feadd9` | pull_request | Formal assurance | queued:- |
+| 35049581583 | `077c10feadd9` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35049581569 | `077c10feadd9` | pull_request | Emulated aarch64 portability | queued:- |
+| 35049581566 | `077c10feadd9` | pull_request | Fault assurance | in_progress:- |
+| 35049581565 | `077c10feadd9` | pull_request | Rust verification | in_progress:- |
+| 35049581564 | `077c10feadd9` | pull_request | Huawei MIT source headers | completed:success |
+| 35049565089 | `c926edfde377` | pull_request | Fault assurance | in_progress:- |
+| 35049565058 | `c926edfde377` | pull_request | Formal assurance | in_progress:- |
+| 35049565057 | `c926edfde377` | pull_request | Huawei MIT source headers | completed:success |
+| 35049565051 | `c926edfde377` | pull_request | Repository quality | completed:failure |
