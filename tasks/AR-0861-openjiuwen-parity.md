@@ -2,21 +2,21 @@
 {
   "branch": "feature/openjiuwen-parity",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T14:18:43+00:00",
   "depends_on": [
     "AR-0860"
   ],
   "id": "AR-0861",
   "next_action": "Extend exact provider parity and the platform support matrix only for executable-qualified OpenJiuwen combinations under a serialized shared-path fence.",
-  "owner": "",
+  "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-0861.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add OpenJiuwen provider parity and support matrix evidence.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Add OpenJiuwen provider parity and support matrix evidence",
-  "updated_at": "2026-09-16T12:18:40+00:00",
+  "updated_at": "2026-09-16T12:18:43+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-parity"
 }
 ---
@@ -28,3 +28,5 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 
 - 2026-09-16T12:18:40+00:00: Dependency AR-0860 is complete; promote OpenJiuwen parity/support
   matrix child for implementation.
+
+- 2026-09-16T12:18:43+00:00: Claimed by asb_ar1024_lifecycle_router.
