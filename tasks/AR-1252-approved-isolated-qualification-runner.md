@@ -9,17 +9,17 @@
   "id": "AR-1252",
   "next_action": "Integrate AR-1251 to use runner preflight and direct executable mode; add descendant cleanup proof and run full gates.",
   "observed_branch": "feature/ar-1252-approved-isolated-runner",
-  "observed_dirty": 2,
-  "observed_head": "d7ed22907ef0977fd7b0ff9b32f5504ca3f2b236",
+  "observed_dirty": 0,
+  "observed_head": "249dac1183dfaf1c5b79cb1d51db1094d9b14fb6",
   "owner": "asb_ar1252_isolated_runner",
   "plan": "../plans/AR-1252.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:44:44+00:00",
+  "updated_at": "2026-09-16T11:44:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
