@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Publish strict-replay supervision integration.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Publish AR-1232 strict-replay supervision",
-  "updated_at": "2026-09-16T10:00:42+00:00",
+  "updated_at": "2026-09-16T10:06:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1244-publish"
 }
 ---
@@ -116,3 +116,6 @@ mutation.
   job through workflow; run 35081579191 is active again at 09:59Z for PR193 head 7ceb522.
 
 - 2026-09-16T10:00:42+00:00: Heartbeat by asb_ar1244_publish_1232.
+
+- 2026-09-16T10:06:29+00:00: Recorded command exit 1; command argv SHA-256
+  200be2d97d53c168aed2c485a4c8937218851d4e615b62f1d6dcdc875303c3dc.
