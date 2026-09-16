@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover a signed protected-main DCO boundary after the unsigned PR202 web merge.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Protected-main DCO recovery for PR202",
-  "updated_at": "2026-09-16T16:49:34+00:00",
+  "updated_at": "2026-09-16T16:54:27+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-dco-1259"
 }
 ---
@@ -67,3 +67,6 @@ Create a signed, forward-only protected-main recovery for the unsigned PR202 mer
   faults, AWQ shadow, platform, headers, fuzz, Kani, Loom; AArch64, TLC, Policy, Rust and mutation
   checks remain in progress. No merge authorization until all terminal green and independent
   approval.
+
+- 2026-09-16T16:54:27+00:00: Recorded command exit 0; command argv SHA-256
+  624613f188a9ea2b5864ff99df4fea839afcf4102f0e6d6c1a12028d839e23fc.
