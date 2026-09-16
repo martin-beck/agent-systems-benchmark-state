@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1233",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T08:48:41+00:00",
   "depends_on": [
     "AR-1231",
     "AR-1100"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1233",
   "observed_dirty": 0,
   "observed_head": "143213c1d09c5c22d9cd0dec0ca55c2adb29b201",
-  "owner": "",
+  "owner": "asb_ar1233_worker",
   "plan": "../plans/AR-1233.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide an authenticated loopback-only sandbox transport for strict replay services.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Approved loopback-only sandbox transport",
-  "updated_at": "2026-09-16T06:48:39+00:00",
+  "updated_at": "2026-09-16T06:48:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1233"
 }
 ---
@@ -89,3 +89,5 @@
 
 - 2026-09-16T06:48:39+00:00: Resuming exclusively for capability assessment and fail-closed
   LoopbackOnly implementation; no host-network sharing or ambient egress.
+
+- 2026-09-16T06:48:41+00:00: Claimed by asb_ar1233_worker.
