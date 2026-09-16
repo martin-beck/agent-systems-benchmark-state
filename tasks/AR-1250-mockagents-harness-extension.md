@@ -10,17 +10,17 @@
   "id": "AR-1250",
   "next_action": "Extend the MockAgents harness with explicit platform selection and hostile lifecycle, network-denial, repeat-clean-state, and emulated-AArch64 tests.",
   "observed_branch": "feature/ar-1250-mockagents-harness-extension",
-  "observed_dirty": 1,
-  "observed_head": "128ecddbfdb7fcfff6e257adf3237b5866aca481",
+  "observed_dirty": 0,
+  "observed_head": "df1b6994999bbd286f540ae1513a448cb5080664",
   "owner": "asb_ar1250_mockagents_harness",
   "plan": "../plans/AR-1250.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend the pinned MockAgents executable qualification harness.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Extend MockAgents qualification harness",
-  "updated_at": "2026-09-16T10:48:43+00:00",
+  "updated_at": "2026-09-16T10:48:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1250"
 }
 ---
