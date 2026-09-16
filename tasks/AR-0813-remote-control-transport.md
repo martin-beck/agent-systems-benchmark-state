@@ -2,7 +2,7 @@
 {
   "branch": "feature/remote-control-transport",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T16:20:05+00:00",
   "depends_on": [
     "AR-0702",
     "AR-0803",
@@ -10,15 +10,15 @@
   ],
   "id": "AR-0813",
   "next_action": "Specify and implement an explicitly enabled authenticated remote transport for the frontend control API.",
-  "owner": "",
+  "owner": "asb_ar0813_remote_transport",
   "plan": "../plans/AR-0813.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T14:19:58+00:00",
+  "updated_at": "2026-09-16T14:20:05+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -30,3 +30,5 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T14:19:58+00:00: Dependencies AR-0702, AR-0803, and AR-0902 verified done; ASB-only
   remote transport leaf selected while QEMU chain remains blocked
+
+- 2026-09-16T14:20:05+00:00: Claimed by asb_ar0813_remote_transport.
