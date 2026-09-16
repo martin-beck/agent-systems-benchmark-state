@@ -1347,7 +1347,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | asb_ar1151_replay | Replay strictly without providers. | Existing strict replay primitives pass focused replay suite (21 unit/integration tests plus doc-tests). Audit and wire strict offline defaults into CLI execution: require complete tuple coverage before run, deny provider egress on every path, and label replay as non-fresh evidence; then add campaign-level conformance tests. |
+| P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | asb_ar1151_replay | Replay strictly without providers. | Publish PR from eeeb744 and request independent exact-head review; then run full applicable gates. Remaining AR slice: wire replay command into run execution and add complete tuple/network-denial conformance coverage. |
 
 ### Open (13)
 
