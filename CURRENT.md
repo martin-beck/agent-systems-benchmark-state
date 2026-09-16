@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1130](tasks/AR-1130.md): Configured provider launches | Launch agents with configured providers. | Read the plan. | asb_ar1130_launch |
+| P0 | [AR-1130](tasks/AR-1130.md): Configured provider launches | Launch agents with configured providers. | Implement provider launch credential-target wiring: expose adapter-owned credential target in the launch projection, pass it as bounded launch metadata, and add positive/negative tests before integrating resolver-backed secret injection. | asb_ar1130_launch |
 
 ## Open
 
