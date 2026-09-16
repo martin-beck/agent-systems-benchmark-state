@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Inject runtime-owned operation handles into actual strict-replay dispatch.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime operation injection into replay dispatcher",
-  "updated_at": "2026-09-16T23:48:01+00:00",
+  "updated_at": "2026-09-16T23:49:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1275-operation-injection"
 }
 ---
@@ -34,3 +34,6 @@ blocked evidence and do not accept metadata-only or caller-fabricated execution.
   actual replay dispatcher still lacks a runtime-issued operation-handle injection point.
 
 - 2026-09-16T23:48:01+00:00: Claimed by asb_ar1024_lifecycle_router.
+
+- 2026-09-16T23:49:22+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
