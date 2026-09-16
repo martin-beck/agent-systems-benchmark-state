@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 128,
+  "task_revision": 129,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T15:01:22+00:00",
+  "updated_at": "2026-09-16T15:01:42+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -380,3 +380,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T15:01:13+00:00: Recorded command exit 0; command argv SHA-256
   c5029dcba2200340be67a2359c2dd45d5a0dbd5af40281733eaf764813a3047a.
+
+- 2026-09-16T15:01:42+00:00: Committed 3d9e54f (SSH-signed+DCO): added generic RemoteIo boundary and
+  deterministic FaultInjectingIo fixture with partition/drop and read-reorder behavior; fault test
+  exercises existing bounded framing and fails closed. Focused fault test passed 1/1; product tree
+  clean. This is transport-level evidence only, not kernel/netem equivalence. Next: use qualified
+  harness or extend fixture scenarios for reconnect storms/address families and runner continuation.
