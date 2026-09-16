@@ -20,11 +20,11 @@
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 447,
+  "task_revision": 448,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T06:46:33+00:00",
+  "updated_at": "2026-09-16T08:55:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -1245,3 +1245,6 @@
 - 2026-09-16T06:46:33+00:00: Released blocked after dependency audit. No approved merged capability
   is available from AR-1233 or AR-1234. The exact prerequisite and test follow-up are recorded in
   next_action; AR-1232 remains clean and no other AR was modified.
+
+- 2026-09-16T08:55:25+00:00: AR-1233 and AR-1234 are now complete; resume strict replay process
+  supervision.
