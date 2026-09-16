@@ -10,17 +10,17 @@
   "id": "AR-1248",
   "next_action": "Rerun PR #197 exact-head policy/Rust/contract CI and request independent review at cebe8ef. Executable replay-plan now resolves the verified cassette and retains RuntimeBoundReplay.sidecar for the execution lifetime; runtime attestation is consumed before handoff creation; relay cleanup is asserted on drop. Focused CLI 76/76 and clippy pass.",
   "observed_branch": "feature/ar-1248-strict-replay-cli-contract",
-  "observed_dirty": 1,
-  "observed_head": "cebe8efc19a1665c87f0d354ea6584670792957b",
+  "observed_dirty": 0,
+  "observed_head": "7d9c2ee2e08b9d61cb03837236918575405fb5c2",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1248.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 130,
+  "task_revision": 131,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T20:08:16+00:00",
+  "updated_at": "2026-09-16T20:08:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
