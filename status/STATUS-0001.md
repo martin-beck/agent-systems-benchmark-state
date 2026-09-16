@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 5 |
+| **In progress** | Claimed work with a live lease | 3 |
+| **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 10 |
 | **Planned** | Defined work awaiting promotion or dependencies | 63 |
 | **Future** | Deferred roadmap work | 1 |
@@ -340,7 +340,7 @@ flowchart LR
         AR_1244["AR-1244 - In progress"]:::status_in_progress
         AR_1245["AR-1245 - Done"]:::status_done
         AR_1246["AR-1246 - In progress"]:::status_in_progress
-        AR_1247["AR-1247 - Open"]:::status_open
+        AR_1247["AR-1247 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1417,14 +1417,15 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1244](../tasks/AR-1244-publish-replay-supervision.md): Publish AR-1232 strict-replay supervision | asb_ar1244_publish_1232 | Publish strict-replay supervision integration. | Run fresh PR193 checks at rebased head 2f10f27/base 5a2c151; obtain independent review before signed merge. |
 | P0 | [AR-1246](../tasks/AR-1246-protected-main-dco-flow.md): Protected-main DCO flow | asb_ar1237_launch_bridge_worker | Durably admit authenticated GitHub protected-main merges without one-off DCO hash exceptions. | Wait for remaining required PR #195 checks; merge only when all are successful, then run post-merge verification. |
+| P0 | [AR-1247](../tasks/AR-1247-protected-main-dco-workflow.md): Protected-main DCO workflow binding | asb_ar1247_workflow_worker | Route the Rust verification workflow through durable protected-main DCO admission on generated merge commits. | Update verify.yml main-push DCO certification to use protected-main admission and add workflow regression coverage. |
 
-### Open (5)
+### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1432,7 +1433,6 @@ flowchart LR
 | P0 | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md): Implement &#96;asb tui&#96; lifecycle routing | Unclaimed | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. |
 | P0 | [AR-1042](../tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Unclaimed | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. |
 | P0 | [AR-1044](../tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Unclaimed | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. |
-| P0 | [AR-1247](../tasks/AR-1247-protected-main-dco-workflow.md): Protected-main DCO workflow binding | Unclaimed | Route the Rust verification workflow through durable protected-main DCO admission on generated merge commits. | Update verify.yml main-push DCO certification to use protected-main admission and add workflow regression coverage. |
 
 ### Blocked (10)
 
