@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-live",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T09:12:30+00:00",
   "depends_on": [
     "AR-0858"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "cceb76f436f8918786f610afdf20ba99fbd87d34",
-  "owner": "",
+  "owner": "asb_ar0859_runtime_requal",
   "plan": "../plans/AR-0859.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 255,
+  "task_revision": 256,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-16T07:12:27+00:00",
+  "updated_at": "2026-09-16T07:12:30+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -878,3 +878,5 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 - 2026-09-16T07:12:27+00:00: Implement reviewed live-test identity contract for explicit managed
   CPython 3.11 path+digest and add positive/negative identity tests; preserve fail-closed site
   isolation.
+
+- 2026-09-16T07:12:30+00:00: Claimed by asb_ar0859_runtime_requal.
