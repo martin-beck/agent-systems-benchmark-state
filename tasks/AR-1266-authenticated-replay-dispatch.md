@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add authenticated runtime context to the actual strict-replay CLI dispatch path.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Authenticated replay dispatch context",
-  "updated_at": "2026-09-16T22:33:09+00:00",
+  "updated_at": "2026-09-16T22:33:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1266-authenticated-replay"
 }
 ---
@@ -42,3 +42,6 @@ Preserve all prior blocked evidence; no fabricated launch authority or weakened 
   origin/main 69e8b06. Read complete plan/task plus ASB development docs. AR-1265 review confirms
   existing replay command lacks context-bearing dispatch; this successor owns that seam. Product
   tree is clean before implementation.
+
+- 2026-09-16T22:33:46+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
