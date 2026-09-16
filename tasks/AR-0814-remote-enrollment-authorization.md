@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 211,
+  "task_revision": 212,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T18:58:24+00:00",
+  "updated_at": "2026-09-16T18:58:46+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -540,3 +540,6 @@ Implementation has not started. Read the linked plan before claiming.
   checked-in generation; legacy v1-v1.6 schemas remain byte-identical via explicit variant pruning.
   Added endpoint admin-context denial dispatch test and v1.7 positive/unknown-field plus v1.6
   rejection conformance tests. Focused endpoint and schema suites pass 8/8 and 5/5; worktree clean.
+
+- 2026-09-16T18:58:46+00:00: Recorded command exit 0; command argv SHA-256
+  4ac5a39cc92f1c2072295b47dbf9ef71e2da8e38527a59b4fbcadb7d771a3a83.
