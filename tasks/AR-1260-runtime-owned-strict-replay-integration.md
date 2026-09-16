@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Integrate strict replay with runtime-owned attestation and supervised sandbox execution.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime-owned strict-replay integration",
-  "updated_at": "2026-09-16T20:27:18+00:00",
+  "updated_at": "2026-09-16T20:27:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1260-runtime"
 }
 ---
@@ -39,3 +39,6 @@ missing, stale, duplicated, or mismatched.
   runtime-owned strict-replay integration.
 
 - 2026-09-16T20:27:18+00:00: Claimed by asb_ar1024_lifecycle_router.
+
+- 2026-09-16T20:27:37+00:00: Recorded command exit 0; command argv SHA-256
+  463a2b3478e4c4c507ddcb3a04a8ee990994c543356db5c621784f31dd43d354.
