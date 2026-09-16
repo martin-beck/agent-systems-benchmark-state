@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-1235",
-  "next_action": "Repeated exact diagnostic test completed 10/10 under repository-style QEMU AArch64 (rustc 1.93.0, target aarch64-unknown-linux-gnu, Ubuntu 24.04.4 arm64 sysroot, qemu-aarch64), aggregate pass=10 fail=0, every iteration exit 0. Combined with exact/full suite passes and authoritative hosted failure log, classify original exit 127 as hosted-only/transient or environment-specific; no product fix justified. Release blocked/ownerless.",
+  "next_action": "Exact-SHA workflow_dispatch was attempted via gh workflow run 'Emulated aarch64 portability' --ref fd7daa43549edd67b60076aa6b1eee333061b438 and rejected HTTP 422: No ref found for SHA. GitHub dispatch requires branch/tag ref, so no new workflow-dispatch run exists. Prior rerun of 35060286408 remains exact-head hosted attempt; local QEMU exact/full and 10x tests pass. Release blocked/ownerless.",
   "observed_branch": "feature/ar-1235-goose-fixture-portability",
   "observed_dirty": 3,
   "observed_head": "fd7daa43549edd67b60076aa6b1eee333061b438",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair Goose diagnostic fixture portability under emulated AArch64.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Portable Goose diagnostic fixture",
-  "updated_at": "2026-09-16T06:13:56+00:00",
+  "updated_at": "2026-09-16T06:14:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1235"
 }
 ---
@@ -148,3 +148,7 @@ its intended diagnostic error assertion. Preserve the failure and repair the fix
 
 - 2026-09-16T06:13:56+00:00: Recorded command exit 1; command argv SHA-256
   543a9200a6b81a151b3d00556e79c714ec1640381ef3632de88a65f72f771e0b.
+
+- 2026-09-16T06:14:15+00:00: 2026-09-16T06:14Z: handoffctl-run recorded workflow dispatch failure;
+  raw GitHub API response was HTTP 422 No ref found for exact commit SHA. This is an external
+  workflow API/ref limitation, not a product result. No source changes.
