@@ -8,7 +8,7 @@
     "AR-1232"
   ],
   "id": "AR-1248",
-  "next_action": "Request fresh independent review of executable strict replay dispatch at exact head 66e0fa2 and rerun PR #197 exact-head CI. replay-plan dispatch now reads bounded versioned plan, invokes resolve_and_bind_runtime, binds runtime-issued SidecarHandoff through StrictReplayLaunchBridge, emits denied/non-fresh metadata, and rejects stale route with validation exit 3. Runtime bridge owns SandboxLaunchInput supervision.",
+  "next_action": "Rerun PR #197 exact-head policy/Rust/contract CI and request independent review at cebe8ef. Executable replay-plan now resolves the verified cassette and retains RuntimeBoundReplay.sidecar for the execution lifetime; runtime attestation is consumed before handoff creation; relay cleanup is asserted on drop. Focused CLI 76/76 and clippy pass.",
   "observed_branch": "feature/ar-1248-strict-replay-cli-contract",
   "observed_dirty": 0,
   "observed_head": "cebe8efc19a1665c87f0d354ea6584670792957b",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 115,
+  "task_revision": 116,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T11:21:10+00:00",
+  "updated_at": "2026-09-16T11:21:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -320,3 +320,10 @@ formal, privacy, signature, DCO, and exact-tree gates.
 
 - 2026-09-16T11:21:10+00:00: Recorded command exit 0; command argv SHA-256
   109d36131c59cbd435b0b3a2033e7f16578455597393f5a2e79fc5e1917d7901.
+
+- 2026-09-16T11:21:30+00:00: Signed+DCO cebe8ef pushed. RuntimeBoundReplay owns
+  ResolvedStrictReplay, StrictReplayLaunchBridge, and LoopbackSidecar so relay is not dropped before
+  execution; sidecar attestation is materialized and passed into handoff instead of hardcoding
+  handoff namespace_ready. Added lifetime/cleanup test plus executable dispatch positive/stale-route
+  tests. Focused asb-cli lib 76/76, focused replay-plan 1/1, clippy -D warnings pass. Previous
+  66e0fa2 PR policy/Rust failures require fresh exact-head CI; no product failure identified yet.

@@ -1440,7 +1440,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | asb_ar1232_lifecycle_router | Define the strict-replay CLI consumer contract. | Request fresh independent review of executable strict replay dispatch at exact head 66e0fa2 and rerun PR #197 exact-head CI. replay-plan dispatch now reads bounded versioned plan, invokes resolve_and_bind_runtime, binds runtime-issued SidecarHandoff through StrictReplayLaunchBridge, emits denied/non-fresh metadata, and rejects stale route with validation exit 3. Runtime bridge owns SandboxLaunchInput supervision. |
+| P0 | [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | asb_ar1232_lifecycle_router | Define the strict-replay CLI consumer contract. | Rerun PR #197 exact-head policy/Rust/contract CI and request independent review at cebe8ef. Executable replay-plan now resolves the verified cassette and retains RuntimeBoundReplay.sidecar for the execution lifetime; runtime attestation is consumed before handoff creation; relay cleanup is asserted on drop. Focused CLI 76/76 and clippy pass. |
 | P0 | [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md): Provision approved isolated qualification runner | asb_ar1252_isolated_runner | Provision an approved isolated qualification runner for ASB executable evidence. | Integrate runner with AR-1251; add no-mount assertion and run full policy gates. |
 
 ### Open (4)
