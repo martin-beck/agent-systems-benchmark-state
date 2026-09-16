@@ -7,6 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Provision or authorize the exact CSB source root and immutable Python 3.12.3 interpreter bytes (sha256 1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118) under the approved native x86_64 runner/container, then rerun native_boundary qualification. Do not infer native evidence from the available Python binary or QEMU. | asb_ar0604_provenance_audit_20260916 |
 | P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Add certificate ceremony stolen/expiry/wrong-route and audit tamper negatives; then rerun full locked gates. | asb_ar0814_enrollment_authz |
 
 ## Open
@@ -17,7 +18,6 @@ Never edit this file directly.
 | P0 | [AR-1024](tasks/AR-1024-asb-tui-lifecycle-router.md): Implement `asb tui` lifecycle routing | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. | - |
 | P0 | [AR-1042](tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. | - |
 | P0 | [AR-1044](tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. | - |
-| P1 | [AR-0604](tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Provision or authorize the exact CSB source root and immutable Python 3.12.3 interpreter bytes (sha256 1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118) under the approved native x86_64 runner/container, then rerun native_boundary qualification. Do not infer native evidence from the available Python binary or QEMU. | - |
 
 ## Blocked
 

@@ -2,7 +2,7 @@
 {
   "branch": "feature/csb-native-qualification",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T21:40:51+00:00",
   "depends_on": [
     "AR-0201",
     "AR-0202",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/csb-native-qualification",
   "observed_dirty": 0,
   "observed_head": "4e2820bffe93234d02ca39b59067bf4442b08f95",
-  "owner": "",
+  "owner": "asb_ar0604_provenance_audit_20260916",
   "plan": "../plans/AR-0604.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Qualify native CSB monitoring contention and overhead",
-  "updated_at": "2026-09-16T19:40:48+00:00",
+  "updated_at": "2026-09-16T19:40:51+00:00",
   "worktree_key": "agent-systems-benchmark-csb-native-qualification"
 }
 ---
@@ -79,3 +79,5 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-16T19:40:48+00:00: Follow-up provenance audit searched all ASB state/product paths and
   approved runtime records; investigate exact interpreter/source and container capability
   availability.
+
+- 2026-09-16T19:40:51+00:00: Claimed by asb_ar0604_provenance_audit_20260916.

@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 5 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 19 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -112,7 +112,7 @@ flowchart LR
         AR_0601["AR-0601 - Done"]:::status_done
         AR_0602["AR-0602 - Planned"]:::status_planned
         AR_0603["AR-0603 - Done"]:::status_done
-        AR_0604["AR-0604 - Open"]:::status_open
+        AR_0604["AR-0604 - In progress"]:::status_in_progress
     end
     subgraph series_07["07 - Platforms"]
         direction TB
@@ -1461,13 +1461,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P1 | [AR-0604](../tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | asb_ar0604_provenance_audit_20260916 | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Provision or authorize the exact CSB source root and immutable Python 3.12.3 interpreter bytes (sha256 1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118) under the approved native x86_64 runner/container, then rerun native_boundary qualification. Do not infer native evidence from the available Python binary or QEMU. |
 | P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | asb_ar0814_enrollment_authz | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Add certificate ceremony stolen/expiry/wrong-route and audit tamper negatives; then rerun full locked gates. |
 
-### Open (5)
+### Open (4)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1475,7 +1476,6 @@ flowchart LR
 | P0 | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md): Implement &#96;asb tui&#96; lifecycle routing | Unclaimed | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. |
 | P0 | [AR-1042](../tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Unclaimed | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. |
 | P0 | [AR-1044](../tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Unclaimed | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. |
-| P1 | [AR-0604](../tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Provision or authorize the exact CSB source root and immutable Python 3.12.3 interpreter bytes (sha256 1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118) under the approved native x86_64 runner/container, then rerun native_boundary qualification. Do not infer native evidence from the available Python binary or QEMU. |
 
 ### Blocked (19)
 
@@ -1611,4 +1611,3 @@ flowchart LR
 | P0 | [AR-1047](../tasks/AR-1047-gemini-hook-marker-appearance-race.md): Close the Gemini hook-marker appearance race | Unclaimed | Treat a regular marker published between absent open and fallback lstat as pending for descriptor validation on the next poll. | PR #139 exact 661d52c/tree 3931f7cb is independently approved and 12/12 exact-head green; await explicit root authorization and exact multiline protected merge recipe. |
 | P0 | [AR-1051](../tasks/AR-1051-measurement-catalog-merge-attestation.md): Attest the measurement catalog merge boundary | Unclaimed | Record the exact reviewed measurement-catalog merge and its non-compliant GitHub-authored DCO identity without rewriting history. | Push exact approved head 7b3ef113d2b77c3982748f16c540d0e556252464, open the protected-merge PR, and require all exact-head checks before merge. |
 | P0 | [AR-1053](../tasks/AR-1053-asb-tui-roadmap-hardening.md): Harden the standalone asb-tui roadmap | Unclaimed | Make the standalone asb-tui UX roadmap detailed, non-overlapping and dependency-executable. | Harden the audited standalone asb-tui task and plan records without changing either product repository or feature-task status. |
-| P0 | [AR-1055](../tasks/AR-1055-asb-tui-install-integration-readiness.md): Harden asb-tui install integration readiness | Unclaimed | Make the asb tui install and full interactive integration sequence dependency-executable. | Bind AR-1026 to the complete standalone UI and record the exact router, release and cross-repository qualification gaps without changing product code or feature-task status. |
