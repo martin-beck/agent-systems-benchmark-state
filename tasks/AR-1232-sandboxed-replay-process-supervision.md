@@ -9,7 +9,7 @@
     "AR-1230"
   ],
   "id": "AR-1232",
-  "next_action": "Implement the approved SandboxBackend process-supervision seam for strict replay, including real child egress denial and bounded cancellation/restart/crash recovery tests.",
+  "next_action": "Integrate strict replay launch consumer after AR-1231 merge; add sandbox child launch/cancel/restart/crash tests using SandboxBackend::spawn. Current 28e7cc5 exposes validated SandboxSpec network attestation; no provider egress is enabled by constructor.",
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "28e7cc5b43cfc41c1915cb393c0643c13e840da6",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T02:17:53+00:00",
+  "updated_at": "2026-09-16T02:18:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -57,3 +57,9 @@
 
 - 2026-09-16T02:17:53+00:00: Recorded command exit 0; command argv SHA-256
   3af82bce4b0a2a259733bc27c1a15db7527cc114904de418ce744ea70027add1.
+
+- 2026-09-16T02:18:14+00:00: Added SandboxSpec::network_policy accessor returning the only policy
+  admitted by SandboxSpec::new: NetworkPolicy::Deny. This provides a runtime-owned attestation seam
+  for strict replay capability bridging without caller-supplied claims. Focused locked offline
+  sandbox tests passed (18 unit plus boundary tests). Signed DCO commit 28e7cc5 pushed; worktree
+  clean. Full strict replay consumer remains dependent on AR-1231 merge.

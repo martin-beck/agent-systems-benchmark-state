@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1232](tasks/AR-1232-sandboxed-replay-process-supervision.md): Sandboxed replay process supervision | Supervise strict replay adapters inside the approved network-denied sandbox. | Implement the approved SandboxBackend process-supervision seam for strict replay, including real child egress denial and bounded cancellation/restart/crash recovery tests. | asb_ar1232_sandbox_supervision |
+| P0 | [AR-1232](tasks/AR-1232-sandboxed-replay-process-supervision.md): Sandboxed replay process supervision | Supervise strict replay adapters inside the approved network-denied sandbox. | Integrate strict replay launch consumer after AR-1231 merge; add sandbox child launch/cancel/restart/crash tests using SandboxBackend::spawn. Current 28e7cc5 exposes validated SandboxSpec network attestation; no provider egress is enabled by constructor. | asb_ar1232_sandbox_supervision |
 
 ## Open
 
