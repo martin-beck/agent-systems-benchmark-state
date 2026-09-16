@@ -9,7 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0897](tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Hold PR 126 at bd6f450; after AR-0877 and AR-0909 integrate, rebase once and require fresh all-green exact-head CI before merge. | asb_ar0897_merge_integrity |
 | P0 | [AR-1039](tasks/AR-1039-measurement-catalog-merge-attestation.md): Attest the measurement catalog merge boundary | Recover the measurement catalog publication boundary without rewriting protected main. | Current exact head 7b3ef113 is clean and signed/DCO, with PR140 merge attestation artifacts. Independently review this successor against AR-1039 plan; do not mutate or rewrite historical PR131/PR134. | asb_ar1232_sandbox_supervision |
-| P0 | [AR-1181](tasks/AR-1181.md): TLA admission | Bound ASB TLC memory. | Implement bounded TLC admission. | asb_ar1181_tlc_admission |
+| P0 | [AR-1181](tasks/AR-1181.md): TLA admission | Bound ASB TLC memory. | Correct AR-1181 repository/worktree metadata to a state-repository branch/worktree, then implement missing tools/tlc_runner.py with bounded admission; current declared path is an ASB product checkout and must not be mutated. | asb_ar1181_tlc_admission |
 
 ## Open
 
