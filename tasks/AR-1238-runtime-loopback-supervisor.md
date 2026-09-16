@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1238.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide the runtime-owned private-namespace supervisor for loopback replay.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Runtime-owned loopback supervisor",
-  "updated_at": "2026-09-16T07:58:00+00:00",
+  "updated_at": "2026-09-16T08:00:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1238"
 }
 ---
@@ -70,3 +70,7 @@ remaining work is launcher integration and real sidecar forwarding, not a host c
   relay FD/socket mount and actual sidecar forwarding/namespace attestation; binary intentionally
   fails closed when loopback unavailable. No host network, firewall, ambient ip, credentials, or
   unrelated AR changes.
+
+- 2026-09-16T08:00:36+00:00: Live Bubblewrap qualification confirms rootless private loopback and
+  bind-mounted 0600 Unix relay are viable; authorize implementation of SandboxBackend integration
+  and real sidecar forwarding with no host-network sharing.
