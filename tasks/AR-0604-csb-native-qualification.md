@@ -16,9 +16,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Qualify native CSB monitoring contention and overhead",
-  "updated_at": "2026-09-16T12:47:29+00:00",
+  "updated_at": "2026-09-16T12:47:56+00:00",
   "worktree_key": "agent-systems-benchmark-csb-native-qualification"
 }
 ---
@@ -35,3 +35,6 @@ Implementation has not started. Read the linked plan before claiming.
   native qualification.
 
 - 2026-09-16T12:47:29+00:00: Claimed by asb_ar1024_lifecycle_router.
+
+- 2026-09-16T12:47:56+00:00: Recorded command exit 0; command argv SHA-256
+  7d5e31b33cbc7d542a8f8c70a09681c43a07a224135cfa14d57c52596eab5576.
