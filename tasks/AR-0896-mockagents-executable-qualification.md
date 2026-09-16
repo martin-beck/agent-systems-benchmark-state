@@ -16,11 +16,11 @@
   "plan": "../plans/AR-0896.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Repository quality exposed a likely test-isolation flake; focused source audit found no AR-caused change.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Qualify the pinned MockAgents executable",
-  "updated_at": "2026-09-16T08:20:31+00:00",
+  "updated_at": "2026-09-16T18:36:35+00:00",
   "worktree_key": "agent-systems-benchmark-mockagents-executable-qualification"
 }
 ---
@@ -178,3 +178,7 @@ synthetic fixture for black-box executable evidence.
   tool/tool-result, cancellation/backpressure, outbound-denial, repeated-clean-state, and emulated
   arm64 executable cases. Therefore MockAgents v0.5.0 remains unqualified and AR-0890 must remain
   blocked; no product mutation or support claim made.
+
+- 2026-09-16T18:36:35+00:00: Verified prior owner/process absent; pinned rerun 34339927858 is
+  terminal success at exact head a4e1a9de, job 104684371738. Resume for durable qualification
+  closure and exact-main evidence.
