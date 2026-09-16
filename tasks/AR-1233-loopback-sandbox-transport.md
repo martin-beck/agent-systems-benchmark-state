@@ -2,7 +2,7 @@
 {
   "branch": "",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T07:06:24+00:00",
+  "claim_expires": "2026-09-16T07:08:55+00:00",
   "depends_on": [
     "AR-1231",
     "AR-1100"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated loopback-only sandbox transport for strict replay services.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Approved loopback-only sandbox transport",
-  "updated_at": "2026-09-16T05:06:24+00:00",
+  "updated_at": "2026-09-16T05:08:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1233"
 }
 ---
@@ -33,3 +33,5 @@
   dependencies AR-1231 and AR-1100 are complete.
 
 - 2026-09-16T05:06:24+00:00: Claimed by asb_ar1232_sandbox_supervision.
+
+- 2026-09-16T05:08:55+00:00: Heartbeat by asb_ar1232_sandbox_supervision.
