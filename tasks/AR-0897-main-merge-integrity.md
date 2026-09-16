@@ -2,7 +2,7 @@
 {
   "branch": "fix/main-merge-integrity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T08:45:18+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "DETACHED",
   "observed_dirty": 0,
   "observed_head": "ebaf0ce7912205ed544b865a6a3b795d9e9cfe21",
-  "owner": "asb_ar0897_merge_integrity",
+  "owner": "",
   "plan": "../plans/AR-0897.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 196,
+  "task_revision": 197,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-16T08:15:18+00:00",
+  "updated_at": "2026-09-16T08:17:26+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -623,3 +623,9 @@ Implementation has not started. Read the linked plan before claiming.
   product merge failure.
 
 - 2026-09-16T08:15:18+00:00: Heartbeat by asb_ar0897_merge_integrity.
+
+- 2026-09-16T08:17:26+00:00: AR-0897 complete: signed recovery merge
+  c261af069c5ce7ecb84b2acfc56f12d2a4cb116a is remote main with exact parents a7a64bcc/ebaf0ce and
+  exact tree c7daf0c; SSH signature and DCO verify. Exact-main workflows 35072310706, 35072310869,
+  35072310763, 35072310761, 35072310720, 35072310709, 35072310718 all succeeded. Historical unsigned
+  merges preserved and documented.
