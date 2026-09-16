@@ -11,17 +11,17 @@
   "id": "AR-1262",
   "next_action": "Run full locked workspace tests, fmt, clippy, rustdoc, and policy/privacy gates on exact signed 3723fb9; then request independent review of authority and lifecycle boundary.",
   "observed_branch": "feature/ar-1262-runtime-owned-launch-authority",
-  "observed_dirty": 1,
-  "observed_head": "3723fb9b9666bf67139e292c16891e96b3dc2f97",
+  "observed_dirty": 0,
+  "observed_head": "ad0bc024d74b0d8aff9d5504833eb7e0d3e0afa8",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1262.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned authority for supervised strict-replay execution.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-16T21:10:35+00:00",
+  "updated_at": "2026-09-16T21:10:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1262-runtime-authority"
 }
 ---
