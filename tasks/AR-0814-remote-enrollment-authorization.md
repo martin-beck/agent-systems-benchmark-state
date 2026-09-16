@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Run policy/privacy gates and request independent exact-head review for enrollment/authz.",
+  "next_action": "Add a real non-interactive pairing/identity-store CLI ceremony and certificate identity binding; enforce authorization for every remotely reachable call (including AgentStatus), canonical lowercase digests, clock-skew/revocation/rotation concurrency and compromised-store tests, then rerun policy/privacy/full gates before publication.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "1f9c36aad338849bfdbbb9922bd2a2efa72e00fa",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T17:57:22+00:00",
+  "updated_at": "2026-09-16T17:57:38+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -205,3 +205,19 @@ Implementation has not started. Read the linked plan before claiming.
   --locked -D warnings also passed.
 
 - 2026-09-16T17:57:22+00:00: Heartbeat by asb_ar0814_enrollment_authz.
+
+- 2026-09-16T17:57:38+00:00: Independent review of exact signed/DCO head
+  1f9c36aad338849bfdbbb9922bd2a2efa72e00fa found useful metadata-only enrollment, explicit pairing
+  state, role matrix, generation-fenced probes, rotate rollback, backup/restore revocation,
+  mode/owner/symlink checks, audit schema, docs and CLI auth request changes. Publication remains
+  blocked against complete AR-0814 plan: no actual certificate issuance/import or non-interactive
+  pairing/identity-store CLI ceremony is implemented; CLI only emits typed auth control requests.
+  Authorization mapping returns None for AgentStatus (and Negotiate), so AgentStatus bypasses
+  context validation/role binding if dispatched remotely. No concrete concurrent rotation,
+  stolen/expired/not-yet-valid/wrong-IP certificate, role-escalation/confused-deputy, clock-skew,
+  audit-tamper, compromised-permission, lost-controller or break-glass recovery tests/evidence.
+  is_sha256 accepts uppercase hex rather than canonical lowercase digest format. SecretBackend is
+  only an abstract caller contract; no qualified OS secret reference implementation is present.
+  Existing focused auth tests cover basic positive/negative metadata/pairing/rollback, but not the
+  full threat matrix. Head clean SSH-signed/DCO and no private values observed; no PR/publication
+  authorization.
