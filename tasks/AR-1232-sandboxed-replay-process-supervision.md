@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 413,
+  "task_revision": 414,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T06:29:58+00:00",
+  "updated_at": "2026-09-16T06:32:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -1120,3 +1120,6 @@
   private-net two-ended Unix relay transport, or run a separately authorized privileged disposable
   firewall harness; prove unrelated-process isolation and transactional teardown before
   implementation.
+
+- 2026-09-16T06:32:41+00:00: Scoped implementation audit: evaluate a private-network two-ended Unix
+  relay without changing dependencies or NetworkPolicy::Deny.
