@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 279,
+  "task_revision": 280,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-16T07:24:22+00:00",
+  "updated_at": "2026-09-16T07:31:44+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -944,3 +944,6 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   stale base 817a40bf lacked tools/platforms/hosted_portability.py. Rebased feature/openjiuwen-live
   onto protected main fd7daa4; new exact signed head 230084ef1ea88168eac2be9098cc3c71dd14c465, clean
   and force-with-lease pushed. This is a CI/base defect, not product evidence.
+
+- 2026-09-16T07:31:44+00:00: Recorded command exit 1; command argv SHA-256
+  e21375ec0736b2c7c2f32620eba4d6ea92425b37eb9e9cefbb0094f3301899aa.
