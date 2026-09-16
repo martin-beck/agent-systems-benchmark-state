@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 158,
+  "task_revision": 159,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T21:15:47+00:00",
+  "updated_at": "2026-09-16T21:15:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -463,3 +463,6 @@ formal, privacy, signature, DCO, and exact-tree gates.
   AR-1261 blocked evidence.
 
 - 2026-09-16T21:15:47+00:00: Claimed by coordinator-successor-creation.
+
+- 2026-09-16T21:15:50+00:00: Recorded command exit 0; command argv SHA-256
+  93de9b5b6aed05bdf0799908c3be66574dccd32c78c99cee76856bd84515df97.
