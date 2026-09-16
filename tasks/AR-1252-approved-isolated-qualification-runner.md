@@ -10,16 +10,16 @@
   "next_action": "Add runner tests for digest/network-none/no-mount/cleanup and integrate with AR-1251; run full gates.",
   "observed_branch": "feature/ar-1252-approved-isolated-runner",
   "observed_dirty": 0,
-  "observed_head": "1f8ad2202f349cb88754342b9326489ebe405bc1",
+  "observed_head": "12000665dec462c3e8537ff1424dea7691011a92",
   "owner": "asb_ar1252_isolated_runner",
   "plan": "../plans/AR-1252.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 23,
+  "task_revision": 24,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:09:54+00:00",
+  "updated_at": "2026-09-16T11:10:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
