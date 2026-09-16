@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1234.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide an approved runtime-owned loopback-only sandbox namespace capability.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Runtime-owned loopback namespace capability",
-  "updated_at": "2026-09-16T07:05:28+00:00",
+  "updated_at": "2026-09-16T08:48:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1234"
 }
 ---
@@ -178,3 +178,6 @@
   used. Focused rejection test passed 1/1. Exact next action: approve and implement runtime-owned
   sidecar/Unix relay launch seam, then add real cassette success, provider/descendant denial,
   generation, lifecycle, cleanup, and unrelated-process tests.
+
+- 2026-09-16T08:48:20+00:00: AR-1236 and native supervisor capability are complete; resume namespace
+  implementation.
