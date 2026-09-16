@@ -2,7 +2,7 @@
 {
   "branch": "feature/openjiuwen-live",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T08:50:14+00:00",
   "depends_on": [
     "AR-0858"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/openjiuwen-live",
   "observed_dirty": 0,
   "observed_head": "cceb76f436f8918786f610afdf20ba99fbd87d34",
-  "owner": "",
+  "owner": "asb_ar0859_runtime_requal",
   "plan": "../plans/AR-0859.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 228,
+  "task_revision": 229,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-10T07:31:04+00:00",
+  "updated_at": "2026-09-16T06:50:14+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -779,3 +779,5 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
 - 2026-09-10T07:31:04+00:00: Recovered expired claim formerly owned by contracts_20260906. Recover
   stale global lease; worker has no active transition and PR remains held on shared blockers.
   Preserve state and unblock other valid claims.
+
+- 2026-09-16T06:50:14+00:00: Claimed by asb_ar0859_runtime_requal.
