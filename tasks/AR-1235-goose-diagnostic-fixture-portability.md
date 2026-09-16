@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1235-goose-fixture-portability",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T08:01:21+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0003"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1235-goose-fixture-portability",
   "observed_dirty": 1,
   "observed_head": "fd7daa43549edd67b60076aa6b1eee333061b438",
-  "owner": "asb_ar1235_goose_portability",
+  "owner": "",
   "plan": "../plans/AR-1235.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Repair Goose diagnostic fixture portability under emulated AArch64.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Portable Goose diagnostic fixture",
-  "updated_at": "2026-09-16T06:02:05+00:00",
+  "updated_at": "2026-09-16T06:02:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1235"
 }
 ---
@@ -83,3 +83,9 @@ its intended diagnostic error assertion. Preserve the failure and repair the fix
   exited 0; cross-compiled test passed 1/1 under qemu-aarch64. Environment: rustc 1.93.0, target
   aarch64-unknown-linux-gnu, linker /usr/bin/aarch64-linux-gnu-gcc, Ubuntu arm64 sysroot. Build
   target artifacts caused observed_dirty=1 only; product worktree source remains unchanged.
+
+- 2026-09-16T06:02:13+00:00: Released blocked/ownerless 2026-09-16T06:02Z after hosted-style
+  exact-head AArch64 rerun passed 1/1. Original run 35060286408 exit 127 is unreproduced on x86 and
+  QEMU AArch64 with repository-style toolchain/sysroot. No safe code fix can be made without causal
+  reproduction; preserve AR-0897 red evidence and reopen only with new exact failing runner
+  artifact.
