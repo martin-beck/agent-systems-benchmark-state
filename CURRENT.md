@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1274](tasks/AR-1274-runtime-cassette-executor-adapter.md): Runtime cassette operation executor adapter | Provide a runtime cassette operation executor callback boundary. | Integrate RuntimeOperationHandle with CLI/replay cassette adapter and runtime-owned lifecycle; add actual response, egress/no-fallback, cancellation/restart/timeout/crash cleanup tests. | asb_ar1024_lifecycle_router |
+| P0 | [AR-1274](tasks/AR-1274-runtime-cassette-executor-adapter.md): Runtime cassette operation executor adapter | Provide a runtime cassette operation executor callback boundary. | Provide CLI/replay adapter over RuntimeOperationHandle and bind actual replay command; add supervised lifecycle/egress/no-fallback fixtures. | asb_ar1024_lifecycle_router |
 
 ## Open
 

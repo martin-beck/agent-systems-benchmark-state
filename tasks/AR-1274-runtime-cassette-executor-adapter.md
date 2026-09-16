@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1274",
-  "next_action": "Integrate RuntimeOperationHandle with CLI/replay cassette adapter and runtime-owned lifecycle; add actual response, egress/no-fallback, cancellation/restart/timeout/crash cleanup tests.",
+  "next_action": "Provide CLI/replay adapter over RuntimeOperationHandle and bind actual replay command; add supervised lifecycle/egress/no-fallback fixtures.",
   "observed_branch": "feature/ar-1274-runtime-cassette-executor-adapter",
   "observed_dirty": 0,
   "observed_head": "7fecd58e2a81ade05e87229a76ee9defd26ba944",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime cassette operation executor callback boundary.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Runtime cassette operation executor adapter",
-  "updated_at": "2026-09-16T23:44:26+00:00",
+  "updated_at": "2026-09-16T23:44:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1274-cassette-executor"
 }
 ---
@@ -69,3 +69,8 @@ Preserve AR-1273's blocked evidence and never fabricate response or lifecycle re
 
 - 2026-09-16T23:44:26+00:00: Recorded command exit 0; command argv SHA-256
   534f8613e1c316db8f0f46dd989e44e14a8ca74304a94791b4e4a1c59b2fbb1d.
+
+- 2026-09-16T23:44:48+00:00: Full locked cargo test --workspace completed green, including runtime
+  operation executor tests and all workspace tests; fmt/check and focused core/runtime suites green.
+  Signed head remains 7fecd58 clean. Remaining acceptance is actual CLI/replay adapter invocation
+  and supervised cassette response/egress/cancel/restart/timeout/crash cleanup evidence.
