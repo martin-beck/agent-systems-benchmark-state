@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 288,
+  "task_revision": 289,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T16:20:21+00:00",
+  "updated_at": "2026-09-16T16:23:02+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -876,3 +876,6 @@ Implementation has not started. Read the linked plan before claiming.
   passed; fuzz target artifacts cleaned. PR202 now reports exact head 22abb6e with checks restarted,
   including Bounded fuzz and Loom in progress. Local cargo-deny unavailable; CI remains
   authoritative.
+
+- 2026-09-16T16:23:02+00:00: Recorded command exit 0; command argv SHA-256
+  8366ecb6572dfd378b041f959f232fea1f705340110e9d3aaac2c17ad108de9a.
