@@ -148,8 +148,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-openjiuwen-adapter` | `feature/openjiuwen-adapter` | `43ceb0f1bf8b` | 0 | behind 326, ahead 0 |
 | `agent-systems-benchmark-openjiuwen-live` | `feature/openjiuwen-live` | `230084ef1ea8` | 0 | behind 14, ahead 0 |
 | `agent-systems-benchmark-openjiuwen-provenance` | `feature/openjiuwen-provenance` | `addcfab39e48` | 0 | behind 350, ahead 0 |
-| `agent-systems-benchmark-openjiuwen-replay` | `feature/openjiuwen-replay` | `c261af069c5c` | 1 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-agents/tests/fixtures/openjiuwen-cassette.json` |
+| `agent-systems-benchmark-openjiuwen-replay` | `feature/openjiuwen-replay` | `c261af069c5c` | 2 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-agents/tests/fixtures/openjiuwen-cassette.json`, `crates/asb-agents/tests/replay_openjiuwen.rs` |
 | `agent-systems-benchmark-openjiuwen-runtime-closure` | `fix/openjiuwen-runtime-closure` | `b7559931ef79` | 0 | behind 302, ahead 0 |
 | `agent-systems-benchmark-performance-workloads` | `feature/performance-workloads` | `0f303b3ec179` | 0 | behind 352, ahead 0 |
 | `agent-systems-benchmark-platform-manifests` | `feature/platform-manifests` | `a800ca3b9169` | 0 | behind 654, ahead 0 |
