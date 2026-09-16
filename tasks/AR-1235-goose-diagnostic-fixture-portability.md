@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-1235",
-  "next_action": "Planned from post-merge AArch64 run 35060286408. Reproduce exit 127 in diagnostic_and_symlink_fail_closed, classify fixture/runtime cause, then add a deterministic portable fixture without weakening fail-closed assertions.",
+  "next_action": "Focused x86 reproduction passed at fd7daa4: cargo test --locked --offline -p asb-agents goose::tests::diagnostic_and_symlink_fail_closed -- --exact --nocapture, 1 passed; this cannot reproduce AArch64 exit 127. Next run the same test under the repository AArch64 runner/emulation and inspect shell fixture process status before changing assertions.",
   "observed_branch": "feature/ar-1235-goose-fixture-portability",
   "observed_dirty": 0,
   "observed_head": "fd7daa43549edd67b60076aa6b1eee333061b438",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair Goose diagnostic fixture portability under emulated AArch64.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Portable Goose diagnostic fixture",
-  "updated_at": "2026-09-16T05:49:59+00:00",
+  "updated_at": "2026-09-16T05:50:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1235"
 }
 ---
@@ -45,3 +45,8 @@ its intended diagnostic error assertion. Preserve the failure and repair the fix
 
 - 2026-09-16T05:49:59+00:00: Recorded command exit 0; command argv SHA-256
   df2589402f59e24b5ab2d5f0450432bcc84f697daa959738bfdb9825944eda77.
+
+- 2026-09-16T05:50:19+00:00: 2026-09-16T05:50Z: handoffctl-run focused reproduction in
+  /srv/data/projects/agent-systems-benchmark-ar-1235 exited 0; test
+  diagnostic_and_symlink_fail_closed passed 1/1 on x86_64. Durable command record was created;
+  cross-architecture reproduction remains required. No source changes or gate weakening.

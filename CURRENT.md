@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-0897](tasks/AR-0897-main-merge-integrity.md): Restore main merge integrity | Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path. | Hold PR 126 at bd6f450; after AR-0877 and AR-0909 integrate, rebase once and require fresh all-green exact-head CI before merge. | asb_ar0897_merge_integrity |
-| P1 | [AR-1235](tasks/AR-1235-goose-diagnostic-fixture-portability.md): Portable Goose diagnostic fixture | Repair Goose diagnostic fixture portability under emulated AArch64. | Planned from post-merge AArch64 run 35060286408. Reproduce exit 127 in diagnostic_and_symlink_fail_closed, classify fixture/runtime cause, then add a deterministic portable fixture without weakening fail-closed assertions. | asb_ar1235_goose_portability |
+| P1 | [AR-1235](tasks/AR-1235-goose-diagnostic-fixture-portability.md): Portable Goose diagnostic fixture | Repair Goose diagnostic fixture portability under emulated AArch64. | Focused x86 reproduction passed at fd7daa4: cargo test --locked --offline -p asb-agents goose::tests::diagnostic_and_symlink_fail_closed -- --exact --nocapture, 1 passed; this cannot reproduce AArch64 exit 127. Next run the same test under the repository AArch64 runner/emulation and inspect shell fixture process status before changing assertions. | asb_ar1235_goose_portability |
 
 ## Open
 
