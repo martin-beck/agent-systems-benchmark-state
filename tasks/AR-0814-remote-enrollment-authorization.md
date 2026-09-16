@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Run full policy/privacy gates and independent review; document negotiation pre-auth boundary and qualified secret backend scope.",
+  "next_action": "Implement a real certificate import/pairing identity-store ceremony and bind authorize_call to current enrollment generation; add a concrete break-glass recovery operation and audit/store threat-matrix tests. Keep SecretBackend explicitly qualified until an OS-protected backend is supplied; rerun full gates and review.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "aed0d0558932375eeaa8060a595930e544b40815",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 135,
+  "task_revision": 136,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T18:18:11+00:00",
+  "updated_at": "2026-09-16T18:18:35+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -368,3 +368,21 @@ Implementation has not started. Read the linked plan before claiming.
   commit.
 
 - 2026-09-16T18:18:11+00:00: Heartbeat by asb_ar0814_enrollment_authz.
+
+- 2026-09-16T18:18:35+00:00: Independent exact-head review of
+  aed0d0558932375eeaa8060a595930e544b40815: clean SSH-signed commit with matching Signed-off-by; no
+  private values observed. Positive coverage exists for pairing metadata/one-time confirmation,
+  lowercase digest and certificate validity/route metadata, CAS rotation, audit validation,
+  owner/mode/symlink store checks, and administrator-only BreakGlass permission enum. Publication
+  remains blocked. Concrete gaps: CertificateIdentityV1::import validates caller-supplied digests
+  only and no certificate import/identity-store pairing ceremony persists or binds an actual
+  certificate; auth pair accepts the one-time code in argv and only emits unconfirmed JSON.
+  authorize_at is not used by authorize_call and the CLI hard-codes generation=1, so remote dispatch
+  does not enforce current-generation fencing. ControlCall has no BreakGlass/recovery operation, so
+  lost-controller recovery is only an uninvokable permission enum. No implementation/evidence binds
+  principal/role/request/generation and AuthAuditEventV1 to actual remote mutation dispatch; audit
+  is construct/validate only. No tests/evidence for stolen/expired/not-yet-valid/wrong-IP certs,
+  role escalation/confused deputy, audit tamper beyond field validation, or actual lost-controller
+  recovery. SecretBackend remains an abstract caller-supplied trait with no qualified OS-protected
+  reference backend. Existing focused auth/control records pass, but complete plan threat-matrix and
+  full applicable gate evidence are not recorded at this head.
