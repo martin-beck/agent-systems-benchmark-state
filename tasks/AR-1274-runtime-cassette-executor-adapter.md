@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime cassette operation executor callback boundary.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Runtime cassette operation executor adapter",
-  "updated_at": "2026-09-16T23:41:54+00:00",
+  "updated_at": "2026-09-16T23:41:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1274-cassette-executor"
 }
 ---
@@ -43,3 +43,6 @@ Preserve AR-1273's blocked evidence and never fabricate response or lifecycle re
 
 - 2026-09-16T23:41:46+00:00: Recorded command exit 0; command argv SHA-256
   cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
+
+- 2026-09-16T23:41:57+00:00: Recorded command exit 101; command argv SHA-256
+  2a282aa878465394960adb176461a31bbed6ff8765d72a2b9c75d4c2d922d287.
