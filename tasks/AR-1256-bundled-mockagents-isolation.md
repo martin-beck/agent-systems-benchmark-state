@@ -9,18 +9,18 @@
   ],
   "id": "AR-1256",
   "next_action": "Implement bundled in-container MockAgents transport and digest-pinned arm64 QEMU evidence.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar-1256-bundled-mockagents-isolation",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "a0befc0ff247a42b8d796af161b58b1011de8377",
   "owner": "asb_ar1256_bundled_isolation",
   "plan": "../plans/AR-1256.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute bundled MockAgents transport in isolation.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Execute bundled MockAgents transport in isolation",
-  "updated_at": "2026-09-16T13:58:34+00:00",
+  "updated_at": "2026-09-16T13:58:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1256"
 }
 ---
