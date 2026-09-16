@@ -8,7 +8,7 @@
     "AR-0889"
   ],
   "id": "AR-1250",
-  "next_action": "Implement tool-result, cancellation/backpressure, outbound-denial cases; rerun arm64 repeat and full gates.",
+  "next_action": "Add actual cancellation/backpressure and outbound-denial probes; rerun arm64 repeat and full gates.",
   "observed_branch": "feature/ar-1250-mockagents-harness-extension",
   "observed_dirty": 0,
   "observed_head": "055e9dc253d4df90cf4f9f125346db1e5b898410",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend the pinned MockAgents executable qualification harness.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Extend MockAgents qualification harness",
-  "updated_at": "2026-09-16T18:41:36+00:00",
+  "updated_at": "2026-09-16T18:41:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1250"
 }
 ---
@@ -155,3 +155,7 @@ privacy, signature, DCO, and exact-tree gates; do not claim support from host in
 
 - 2026-09-16T18:41:29+00:00: Recorded command exit 0; command argv SHA-256
   08f78e1057122e93faf68fe7a4f0e2f3e9cc51d9403987537e16702a38f8cfe4.
+
+- 2026-09-16T18:41:55+00:00: Signed+DCO 055e9dc extends qualify_mockagents with executable oversized
+  request rejection case. Python unittest via PYTHONPATH=tools/llm-double-spike: 3 passed. Worktree
+  clean.
