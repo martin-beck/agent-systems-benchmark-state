@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve GitHub issue 118 by making local and CI Gitleaks scans deterministic and config changes fail closed.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Align and harden Gitleaks execution",
-  "updated_at": "2026-09-16T12:06:14+00:00",
+  "updated_at": "2026-09-16T12:06:23+00:00",
   "worktree_key": "agent-systems-benchmark-gitleaks-revision-config-integrity"
 }
 ---
@@ -214,3 +214,6 @@ Implementation has not started. Read the linked plan before claiming.
   DCO-valid, privacy-safe wrapper/config/docs/tests. PR #198 exact-head required checks all 12
   terminal SUCCESS; no GitHub review object present, approval is recorded as coordinator independent
   review. Proceeding with protected signed local merge only.
+
+- 2026-09-16T12:06:23+00:00: Recorded command exit 1; command argv SHA-256
+  031d0d297f86e0c17ab25fa5859de3ad2c51a701f2b86ce1cde2ebda2527acd1.
