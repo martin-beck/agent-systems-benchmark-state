@@ -11,16 +11,16 @@
   "next_action": "Add hostile tool/result, cancellation/backpressure, outbound-denial, repeat-clean-state cases; then run full gates and open PR from cc7d32c.",
   "observed_branch": "feature/ar-1250-mockagents-harness-extension",
   "observed_dirty": 0,
-  "observed_head": "248debbbc18676946867d286a3a7b51313947bf6",
+  "observed_head": "16358c4c8992d297fe8647b919f106296bc373bc",
   "owner": "asb_ar1250_mockagents_harness",
   "plan": "../plans/AR-1250.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Extend the pinned MockAgents executable qualification harness.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Extend MockAgents qualification harness",
-  "updated_at": "2026-09-16T10:52:00+00:00",
+  "updated_at": "2026-09-16T10:52:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1250"
 }
 ---
