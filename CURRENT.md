@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1231](tasks/AR-1231-strict-replay-execution-seam.md): Strict replay execution and egress-isolation seam | Execute real agents through strict replay without provider egress or live fallback. | Integrate ProcessIsolationCapability with approved runtime sandbox/process launcher and add executor cancellation/restart transition tests. Current 84fd574 attests only NetworkPolicy::Deny and refuses missing capability; endpoint/route/cassette/attempt checks remain fail-closed. | asb_ar1231_replay_seam |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -23,6 +17,7 @@ Never edit this file directly.
 | P0 | [AR-1044](tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. | - |
 | P0 | [AR-1151](tasks/AR-1151.md): Strict offline replay | Replay strictly without providers. | Design and implement the missing executable strict-replay run-path seam: pass exact cassette route/service into agent adapter launch, deny provider egress at process boundary, and add campaign-level cancellation/restart/no-fallback tests. Current CLI replay only decodes/indexes/selects and emits metadata. | - |
 | P0 | [AR-1181](tasks/AR-1181.md): TLA admission | Bound ASB TLC memory. | Implement bounded TLC admission. | - |
+| P0 | [AR-1231](tasks/AR-1231-strict-replay-execution-seam.md): Strict replay execution and egress-isolation seam | Execute real agents through strict replay without provider egress or live fallback. | Integrate ProcessIsolationCapability with approved runtime sandbox/process launcher and add executor cancellation/restart transition tests. Current 84fd574 attests only NetworkPolicy::Deny and refuses missing capability; endpoint/route/cassette/attempt checks remain fail-closed. | - |
 | P1 | [AR-0704](tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Control genuine native platform capacity lifecycle. | Repair/rebase the fail-closed TLA provenance pin, then rerun PR #119 exact-head CI; do not merge. | - |
 | P1 | [AR-0859](tasks/AR-0859-openjiuwen-live.md): Qualify pinned OpenJiuwen live execution | Qualify pinned OpenJiuwen live execution. | Hold PR 124 at cceb76f; await shared AR-0877, AR-0907, and AR-0908 repairs, then rebase once and require fresh exact-head CI. | - |
 | P1 | [AR-0908](tasks/AR-0908-control-state-lock-test-isolation.md): Harden control-state lock test isolation | Harden asb-cli control-state lock test isolation and deterministic reopen coverage. | Hold PR #125 unchanged; shared formal asset and native-runner pin owners must repair their gates before a fresh exact-head run. | - |

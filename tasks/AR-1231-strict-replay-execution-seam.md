@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1231",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T04:11:54+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1231",
   "observed_dirty": 0,
   "observed_head": "84fd5748962d0058308dbcbd9e433712418f518e",
-  "owner": "asb_ar1231_replay_seam",
+  "owner": "",
   "plan": "../plans/AR-1231.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Execute real agents through strict replay without provider egress or live fallback.",
-  "task_revision": 119,
+  "task_revision": 120,
   "title": "Strict replay execution and egress-isolation seam",
-  "updated_at": "2026-09-16T02:11:54+00:00",
+  "updated_at": "2026-09-16T02:12:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1231"
 }
 ---
@@ -337,3 +337,12 @@
 - 2026-09-16T02:10:24+00:00: Heartbeat by asb_ar1231_replay_seam.
 
 - 2026-09-16T02:11:54+00:00: Heartbeat by asb_ar1231_replay_seam.
+
+- 2026-09-16T02:12:44+00:00: Implementation slice complete at 84fd574: typed strict replay launch,
+  cassette/service binding, route digest, endpoint validation, and explicit NetworkPolicy::Deny
+  capability gate with focused tests. Remaining acceptance requires actual SandboxBackend::spawn
+  ownership, child process supervision, cancellation/restart/crash recovery and egress-denial tests.
+  This cannot be safely completed in the current typed in-process seam without a dedicated
+  process-supervision prerequisite (suggest AR-1232); handoffctl has no create command, so
+  coordinator must create/promote that task through the documented state-task workflow before
+  re-claiming.
