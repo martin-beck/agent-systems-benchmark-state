@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 250,
+  "task_revision": 251,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T03:56:09+00:00",
+  "updated_at": "2026-09-16T04:01:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -657,3 +657,6 @@
   skips). Direct strict replay sandbox harness currently passes 5/5 including loopback launch,
   timeout, cancellation/reaping, command mismatch, and direct nonzero child exit. Product tree is
   clean; no descendant provider egress was enabled by the denied-network sandbox.
+
+- 2026-09-16T04:01:56+00:00: Recorded command exit 0; command argv SHA-256
+  173380b68c0efc452797fbda975ab67cd5c19ddaae5cf797145d7d36d86212d0.
