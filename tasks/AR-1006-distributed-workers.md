@@ -9,16 +9,16 @@
     "AR-1001"
   ],
   "id": "AR-1006",
-  "next_action": "Request independent review of exact head 23c9ba4, then open PR and run exact-head CI.",
+  "next_action": "Publish PR from exact signed head 23c9ba4; monitor exact-head CI and merge only after all required checks plus independent approval.",
   "owner": "asb_ar1006_distributed_workers",
   "plan": "../plans/AR-1006.md",
   "priority": "P3",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Schedule trials across native-capability workers while preserving per-host capacity meaning.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Coordinate distributed experiment workers",
-  "updated_at": "2026-09-16T12:31:21+00:00",
+  "updated_at": "2026-09-16T12:31:48+00:00",
   "worktree_key": "agent-systems-benchmark-distributed-workers"
 }
 ---
@@ -88,3 +88,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T12:31:21+00:00: Recorded command exit 0; command argv SHA-256
   864a5487a7178e431a5dfce37e47acd5c0752d5c5a52a4125137acc2aedcdac8.
+
+- 2026-09-16T12:31:48+00:00: Independent re-review approved signed head
+  23c9ba45c2bb602d273d3d7a002d5b05d533cac4: remove() now revokes all worker leases
+  (expires_at_ns=0), and duplicate_completion_and_worker_loss_fail_closed re-registers the same
+  WorkerId and rejects the old completion. Clean exact tree, diff check clean, SSH signature/DCO
+  valid. Focused distributed tests 3/3 and asb-analysis clippy -D warnings pass.

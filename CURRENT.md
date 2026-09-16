@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Request independent review of exact head 23c9ba4, then open PR and run exact-head CI. | asb_ar1006_distributed_workers |
+| P3 | [AR-1006](tasks/AR-1006-distributed-workers.md): Coordinate distributed experiment workers | Schedule trials across native-capability workers while preserving per-host capacity meaning. | Publish PR from exact signed head 23c9ba4; monitor exact-head CI and merge only after all required checks plus independent approval. | asb_ar1006_distributed_workers |
 
 ## Open
 
