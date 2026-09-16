@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Complete missing evidence for the pinned MockAgents executable qualification.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Complete MockAgents executable qualification evidence",
-  "updated_at": "2026-09-16T10:42:08+00:00",
+  "updated_at": "2026-09-16T10:42:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1249"
 }
 ---
@@ -42,3 +42,6 @@ network denial, privacy, signature, DCO, and exact-tree gates.
   6ab25dd8d608fabb0d868f468b7a1413d57ef62395ca103cda3d903e979d3fab.
 
 - 2026-09-16T10:42:08+00:00: Heartbeat by asb_ar1249_mockagents_qualification.
+
+- 2026-09-16T10:42:21+00:00: Recorded command exit 0; command argv SHA-256
+  537c3f644107bbab0d4d9f0c852f98bfc44e881bdbad14da611dafc119f9e967.
