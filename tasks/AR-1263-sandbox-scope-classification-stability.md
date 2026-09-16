@@ -9,7 +9,7 @@
   "id": "AR-1263",
   "next_action": "Run full locked workspace gates and review signed 0acbc1d; preserve terminal crash assertion and 20-run evidence.",
   "observed_branch": "fix/ar-1263-sandbox-scope-classification",
-  "observed_dirty": 0,
+  "observed_dirty": 7,
   "observed_head": "0acbc1d1a8bf43a226fda503fbd76f8afd48eb07",
   "owner": "asb_ar1263_sandbox_stability",
   "plan": "../plans/AR-1263.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stabilize intermittent sandbox scope classification in the quality gate.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Stabilize sandbox scope classification gate",
-  "updated_at": "2026-09-16T21:25:08+00:00",
+  "updated_at": "2026-09-16T21:25:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1263-sandbox-stability"
 }
 ---
