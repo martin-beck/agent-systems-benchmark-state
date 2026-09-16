@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1262",
-  "next_action": "Add direct consumer tests proving authority-backed bridge spawn rejects stale/duplicate/route-digest inputs and retains sidecar through terminal cleanup; then run full gates.",
+  "next_action": "Run full locked workspace tests, fmt, clippy, rustdoc, and policy/privacy gates on exact signed 3723fb9; then request independent review of authority and lifecycle boundary.",
   "observed_branch": "feature/ar-1262-runtime-owned-launch-authority",
   "observed_dirty": 0,
   "observed_head": "3723fb9b9666bf67139e292c16891e96b3dc2f97",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned authority for supervised strict-replay execution.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-16T21:09:12+00:00",
+  "updated_at": "2026-09-16T21:09:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1262-runtime-authority"
 }
 ---
@@ -114,3 +114,9 @@ ownership and bounded lifecycle evidence.
 
 - 2026-09-16T21:09:05+00:00: Recorded command exit 0; command argv SHA-256
   5a172d7709e43af3a1577586c584d2ae883a46d7b5cedc3b8fefc0cd45a16faf.
+
+- 2026-09-16T21:09:24+00:00: Failure classified: full clippy gate rejected issue_launch for
+  clippy::too_many_arguments (10/7), not a product behavior failure. Added a narrow allow on the
+  authority constructor in signed 3723fb9; targeted runtime authority and CLI consumer tests remain
+  green, product tree clean. Runtime authority now atomically transfers launch inputs to
+  spawn_authorized_replay.
