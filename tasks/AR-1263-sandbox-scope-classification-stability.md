@@ -7,9 +7,9 @@
     "AR-1238"
   ],
   "id": "AR-1263",
-  "next_action": "Run full locked workspace gates and review signed 0acbc1d; preserve terminal crash assertion and 20-run evidence.",
+  "next_action": "Independent review of signed 0acbc1d; focused flake test 20/20 and locked workspace fmt/test/clippy/doc/policy/signature gates pass. cargo deny/audit unavailable; failure-path harness needs approved --bin-dir.",
   "observed_branch": "fix/ar-1263-sandbox-scope-classification",
-  "observed_dirty": 7,
+  "observed_dirty": 0,
   "observed_head": "0acbc1d1a8bf43a226fda503fbd76f8afd48eb07",
   "owner": "asb_ar1263_sandbox_stability",
   "plan": "../plans/AR-1263.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Stabilize intermittent sandbox scope classification in the quality gate.",
-  "task_revision": 32,
+  "task_revision": 34,
   "title": "Stabilize sandbox scope classification gate",
-  "updated_at": "2026-09-16T21:26:21+00:00",
+  "updated_at": "2026-09-16T21:28:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1263-sandbox-stability"
 }
 ---
@@ -113,3 +113,11 @@ fail-closed test/runner behavior and preserve the original semantic assertions.
 
 - 2026-09-16T21:26:21+00:00: Recorded command exit 0; command argv SHA-256
   69cdb5fcb8d75943a26e80217c25076d4461c85ad8a6eba769335b717e81ae81.
+
+- 2026-09-16T21:28:30+00:00: Reconciled generated profraw cleanup: product worktree has no profraw
+  files, git status is clean, observed_dirty=0, exact head 0acbc1d1a8bf43a226fda503fbd76f8afd48eb07.
+  Full applicable gates: fmt, locked workspace tests, clippy -D warnings, rustdoc, repository
+  policy, and signature policy passed. cargo deny and cargo audit are unavailable subcommands in
+  this environment; failure-path harness invocation was usage-only because its required --bin-dir
+  was not supplied. Focused terminal-crash test passed 20/20 after signed fix. Ready for independent
+  review; no PR/merge performed.

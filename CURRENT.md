@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1263](tasks/AR-1263-sandbox-scope-classification-stability.md): Stabilize sandbox scope classification gate | Stabilize intermittent sandbox scope classification in the quality gate. | Run full locked workspace gates and review signed 0acbc1d; preserve terminal crash assertion and 20-run evidence. | asb_ar1263_sandbox_stability |
+| P1 | [AR-1263](tasks/AR-1263-sandbox-scope-classification-stability.md): Stabilize sandbox scope classification gate | Stabilize intermittent sandbox scope classification in the quality gate. | Independent review of signed 0acbc1d; focused flake test 20/20 and locked workspace fmt/test/clippy/doc/policy/signature gates pass. cargo deny/audit unavailable; failure-path harness needs approved --bin-dir. | asb_ar1263_sandbox_stability |
 
 ## Open
 
