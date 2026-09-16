@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1251.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Add a bounded transport and sandbox fixture for MockAgents qualification.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Add MockAgents transport sandbox fixture",
-  "updated_at": "2026-09-16T12:00:48+00:00",
+  "updated_at": "2026-09-16T18:51:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1251"
 }
 ---
@@ -61,3 +61,7 @@ preserve privacy, network-denial, signature, DCO, and exact-tree gates.
   one-mount/provenance gates. No product mutation made; next action is to promote a reviewed runner
   successor with a pinned fixture runtime/image, then implement actual transport, outbound-attempt,
   cancellation/backpressure and descendant tests.
+
+- 2026-09-16T18:51:47+00:00: Dependencies AR-0888 and AR-0889 are durably done; transport/sandbox
+  fixture implementation is now the actionable gap for ASB qualification. Reopen without weakening
+  network or evidence gates.
