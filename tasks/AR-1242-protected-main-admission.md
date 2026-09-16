@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Prevent protected-main admission from creating unsigned GitHub merge commits.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Enforce signed protected-main admission",
-  "updated_at": "2026-09-16T08:52:38+00:00",
+  "updated_at": "2026-09-16T08:55:10+00:00",
   "worktree_key": "agent-systems-benchmark-protected-main-admission"
 }
 ---
@@ -76,3 +76,6 @@ It must not weaken native, formal, privacy, signature, DCO, exact-tree, or post-
   integration suite passed 9/9. Signed+DCO commit da8d736c8a9618b6e59b33c4df44467c695bbc0c pushed;
   PR191 opened. GitHub settings apply remains blocked by repository-admin authority and was not
   claimed changed.
+
+- 2026-09-16T08:55:10+00:00: Recorded command exit 0; command argv SHA-256
+  298ce8c511b182778d9435aa4140e68366bb336f96907714d1520b4b146e780b.
