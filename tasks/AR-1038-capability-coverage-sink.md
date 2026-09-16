@@ -2,7 +2,7 @@
 {
   "branch": "test/capability-coverage-sink",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T07:55:48+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1023"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "test/capability-coverage-sink",
   "observed_dirty": 0,
   "observed_head": "297895dbdee6acfc2a7425c5a9ab254c6d2cce96",
-  "owner": "asb_ar1038_followup",
+  "owner": "",
   "plan": "../plans/AR-1038.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Prevent sanitized capability child tests from writing default profraw files into the source checkout.",
-  "task_revision": 131,
+  "task_revision": 132,
   "title": "Preserve coverage sinks in sanitized CLI child tests",
-  "updated_at": "2026-09-16T05:56:23+00:00",
+  "updated_at": "2026-09-16T05:56:31+00:00",
   "worktree_key": "agent-systems-benchmark-capability-coverage-sink"
 }
 ---
@@ -486,3 +486,8 @@ Fix the six `default_*.profraw` files discovered during AR-1013 full coverage wi
   main fd7daa4 Repository quality run 35060286401 is green after AR-0897 signed policy repair, with
   hosted portability, formal, Rust, fault and headers checks green. No additional product mutation
   is needed.
+
+- 2026-09-16T05:56:31+00:00: Completed and post-merge verified. PR132 capability coverage sink
+  implementation is included in protected main fd7daa4; Repository quality and all applicable
+  post-merge assurance gates are green. Historical policy failure was resolved by AR-0897 signed
+  policy repair; no duplicate source work required.
