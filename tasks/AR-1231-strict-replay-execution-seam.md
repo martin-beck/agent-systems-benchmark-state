@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents through strict replay without provider egress or live fallback.",
-  "task_revision": 174,
+  "task_revision": 175,
   "title": "Strict replay execution and egress-isolation seam",
-  "updated_at": "2026-09-16T02:39:20+00:00",
+  "updated_at": "2026-09-16T02:39:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1231"
 }
 ---
@@ -492,4 +492,7 @@
 - 2026-09-16T02:38:28+00:00: Heartbeat by asb_ar1231_publication.
 
 - 2026-09-16T02:39:20+00:00: Recorded command exit 8; command argv SHA-256
+  023e59aff8ceb0d4ad95ebc38722ea129bea1857d07786c746712288d2d3d7ce.
+
+- 2026-09-16T02:39:31+00:00: Recorded command exit 8; command argv SHA-256
   023e59aff8ceb0d4ad95ebc38722ea129bea1857d07786c746712288d2d3d7ce.
