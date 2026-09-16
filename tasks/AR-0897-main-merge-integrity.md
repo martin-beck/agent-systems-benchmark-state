@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-0897",
-  "next_action": "Hold PR 126 at bd6f450; after AR-0877 and AR-0909 integrate, rebase once and require fresh all-green exact-head CI before merge.",
+  "next_action": "Run PR187 exact-head CI/review, then create signed local recovery merge and rerun protected-main policy.",
   "observed_branch": "fix/main-merge-integrity",
   "observed_dirty": 0,
   "observed_head": "bd4f28646e0f1d273fad1dadf3310e0e8338e244",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 178,
+  "task_revision": 179,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-16T07:51:12+00:00",
+  "updated_at": "2026-09-16T07:51:20+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -572,3 +572,8 @@ Implementation has not started. Read the linked plan before claiming.
   a09512083acb4e4c8848e2c251757e5ddd3b734969f4a835acd7645d7175a586.
 
 - 2026-09-16T07:51:12+00:00: Heartbeat by asb_ar0897_merge_integrity.
+
+- 2026-09-16T07:51:20+00:00: Recovered AR-0897 after expiry. Protected-main run 35069013257 rejected
+  published merge 1c07e907 for missing DCO. Added bounded historical evidence to MERGE_INTEGRITY.md
+  in signed DCO head bd4f286 rebased onto main 1c07e90, force-with-lease pushed, and opened PR187.
+  No history rewritten.
