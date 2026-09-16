@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-1252",
-  "next_action": "Add fixture-backed network-none/timeout/no-mount tests; run full gates and integrate with AR-1251.",
+  "next_action": "Integrate runner with AR-1251 and add fixture-backed network-denial/no-mount evidence; run full gates.",
   "observed_branch": "feature/ar-1252-approved-isolated-runner",
   "observed_dirty": 0,
   "observed_head": "8513a90365269db76a1830d6f78b74cdac7d7c62",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:12:23+00:00",
+  "updated_at": "2026-09-16T11:12:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -101,3 +101,10 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
 
 - 2026-09-16T11:12:16+00:00: Recorded command exit 0; command argv SHA-256
   2babd8e5ca6b8deda709518540df712ba9bb1aa025a15947d23cb710bb983539.
+
+- 2026-09-16T11:12:41+00:00: Signed+DCO head 8513a90 pushed. Added test_run_isolated.py: isolation
+  command flags and shell-vector rejection pass (2/2). Actual Docker timeout probe with --timeout 1
+  and /bin/sleep 2 returned sanitized status timeout and exited 124. Image digest verification,
+  network none, read-only root, dropped caps, private IPC/default PID, bounded resources, and single
+  read-only artifact bind remain enforced. Fixture-backed network-denial and AR-1251 integration
+  remain.
