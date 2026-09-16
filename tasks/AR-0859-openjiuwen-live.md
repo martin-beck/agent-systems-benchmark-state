@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify pinned OpenJiuwen live execution.",
-  "task_revision": 275,
+  "task_revision": 276,
   "title": "Qualify pinned OpenJiuwen live execution",
-  "updated_at": "2026-09-16T07:22:37+00:00",
+  "updated_at": "2026-09-16T07:23:49+00:00",
   "worktree_key": "agent-systems-benchmark-openjiuwen-live"
 }
 ---
@@ -934,3 +934,6 @@ This phase cannot claim support from mocks, parser fixtures, source inspection, 
   Focused suite 4/4 passed, package asb-agents 138 passed/1 ignored, and live loopback
   edit/tools/usage test passed 1/1 in 7.03s. Commit fb6a572 is SSH-signed with DCO and pushed to
   feature/openjiuwen-live.
+
+- 2026-09-16T07:23:49+00:00: Recorded command exit 0; command argv SHA-256
+  6ce49b9e947fd31861fb3ae03394d4e300e7acb3b93c256cb66e038b967f07f3.
