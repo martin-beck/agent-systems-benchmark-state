@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 134,
+  "task_revision": 135,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-16T05:24:52+00:00",
+  "updated_at": "2026-09-16T05:28:59+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -449,3 +449,6 @@ Implementation has not started. Read the linked plan before claiming.
   faults, fuzz, mutation, Kani, TLC/Alloy, AWQ, headers green; Rust, emulated AArch64, and
   policy/coverage/supply chain still pending. Next: monitor exact-head checks; after all green,
   merge PR185 using local signed merge_pr path and verify resulting exact-main/post-merge policy.
+
+- 2026-09-16T05:28:59+00:00: Recorded command exit 1; command argv SHA-256
+  d7e4e5212ee834d96a9c32dec1456a48e2eb919f5379f5a421383c36d18dc6d6.
