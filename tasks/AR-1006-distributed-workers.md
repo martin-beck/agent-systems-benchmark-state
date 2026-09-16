@@ -16,9 +16,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Schedule trials across native-capability workers while preserving per-host capacity meaning.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Coordinate distributed experiment workers",
-  "updated_at": "2026-09-16T12:28:55+00:00",
+  "updated_at": "2026-09-16T12:29:35+00:00",
   "worktree_key": "agent-systems-benchmark-distributed-workers"
 }
 ---
@@ -67,3 +67,6 @@ Implementation has not started. Read the linked plan before claiming.
   (worker/fence still match), violating worker-loss/restart invalidation acceptance. Existing
   negative test removes worker but does not re-register same ID. PR publication paused pending
   fail-closed repair.
+
+- 2026-09-16T12:29:35+00:00: Recorded command exit 101; command argv SHA-256
+  9e1ba97415b81e1412ed9031c9d7e42233f6ac9f6b496aecf84eae4ae2deb85e.
