@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1272",
-  "next_action": "Bind RuntimeCassetteContent into CLI decoding and actual replay command; prove response parity, egress/no-fallback, cancellation/restart, timeout/crash cleanup.",
+  "next_action": "Bind decode_runtime_cassette into actual replay dispatch and execute strict request/response; add egress/no-fallback/cancel/restart/timeout/crash cleanup fixtures.",
   "observed_branch": "feature/ar-1272-authenticated-cassette-backend",
   "observed_dirty": 0,
   "observed_head": "eabd3f4783d8fc82fad0b2d26175b1a9bf13dd22",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind immutable cassette content to a runtime-authenticated replay backend handle.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Authenticated immutable cassette backend",
-  "updated_at": "2026-09-16T23:26:20+00:00",
+  "updated_at": "2026-09-16T23:26:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1272-cassette-backend"
 }
 ---
@@ -90,3 +90,9 @@ paths as authority.
 
 - 2026-09-16T23:26:12+00:00: Recorded command exit 0; command argv SHA-256
   9773706dd4c02d9664e6541e78240c8db48adf7237a46f08c9656e92292e9211.
+
+- 2026-09-16T23:26:34+00:00: Signed checkpoint eabd3f4 adds CLI decode_runtime_cassette: consumes
+  RuntimeCassetteContent exactly once, decodes bounded cassette bytes, and verifies decoded
+  integrity digest against runtime content reference before replay use. CLI suite passes 71/71 and
+  fmt pass; product tree clean. Actual replay dispatch invocation and supervised lifecycle/egress
+  evidence remain next.
