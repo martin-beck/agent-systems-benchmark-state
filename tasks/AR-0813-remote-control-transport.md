@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 169,
+  "task_revision": 170,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T15:13:28+00:00",
+  "updated_at": "2026-09-16T15:14:01+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -506,3 +506,6 @@ Implementation has not started. Read the linked plan before claiming.
   suites/doc tests passing); workspace clippy green. Network fault fixture remains explicitly
   transport-level. Next: independent review; any stronger idle/keepalive/runner lifecycle claim
   requires integration consumer beyond current RemoteListener API.
+
+- 2026-09-16T15:14:01+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
