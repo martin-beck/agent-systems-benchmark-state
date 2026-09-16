@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1232",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T08:35:05+00:00",
   "depends_on": [
     "AR-0505",
     "AR-1100",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "994c6716904dc2f3d4b9fc186ea35490f236b869",
-  "owner": "",
+  "owner": "asb_ar1232_worker",
   "plan": "../plans/AR-1232.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Supervise strict replay adapters inside the approved network-denied sandbox.",
-  "task_revision": 417,
+  "task_revision": 418,
   "title": "Sandboxed replay process supervision",
-  "updated_at": "2026-09-16T06:35:02+00:00",
+  "updated_at": "2026-09-16T06:35:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1232"
 }
 ---
@@ -1143,3 +1143,5 @@
   validation; no external or ambient networking, provider endpoints, credentials, or broad access.
   If a complete child integration requires another contract, implement only a standalone runtime
   relay API and record the remaining boundary.
+
+- 2026-09-16T06:35:05+00:00: Claimed by asb_ar1232_worker.
