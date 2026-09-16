@@ -3,7 +3,10 @@
   "branch": "feature/ar-1236-runtime-loopback-sidecar",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1100", "AR-1231"],
+  "depends_on": [
+    "AR-1100",
+    "AR-1231"
+  ],
   "id": "AR-1236",
   "next_action": "Design and implement an approved runtime-owned in-namespace loopback sidecar/relay capability; preserve NetworkPolicy::Deny, deny provider and ambient egress, and prove lifecycle cleanup and unrelated-process non-interference.",
   "observed_branch": "feature/ar-1236-runtime-loopback-sidecar",
@@ -13,11 +16,11 @@
   "plan": "../plans/AR-1236.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Provide a runtime-owned private-namespace loopback sidecar capability.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Runtime-owned loopback sidecar capability",
-  "updated_at": "2026-09-16T07:08:39+00:00",
+  "updated_at": "2026-09-16T07:11:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1236"
 }
 ---
@@ -33,3 +36,6 @@ success, timeout, cancellation, crash, restart, stale generation, duplicate atte
 launch. Prove provider/external egress denial and unrelated-process non-interference. Preserve
 NetworkPolicy::Deny and fail closed when the capability is unavailable. Run focused/full locked,
 privacy, policy, native, signature, and exact-head gates.
+
+- 2026-09-16T07:11:44+00:00: Dependencies AR-1100 and AR-1231 verified complete; promote
+  runtime-owned loopback sidecar capability.
