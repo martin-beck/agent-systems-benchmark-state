@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a real runtime-owned strict-replay CLI entrypoint.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Runtime-owned strict-replay CLI entrypoint",
-  "updated_at": "2026-09-16T22:22:41+00:00",
+  "updated_at": "2026-09-16T22:22:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1265-runtime-replay-entrypoint"
 }
 ---
@@ -62,3 +62,6 @@ unmerged implementation is not an input; preserve its review as the reason this 
 
 - 2026-09-16T22:22:34+00:00: Recorded command exit 0; command argv SHA-256
   cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
+
+- 2026-09-16T22:22:57+00:00: Recorded command exit 101; command argv SHA-256
+  4d794e29b61dffc224f97f0280c573e3ed07695dad1bba348b4bd20627fb7998.
