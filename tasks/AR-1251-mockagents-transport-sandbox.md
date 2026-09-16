@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1251.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Add a bounded transport and sandbox fixture for MockAgents qualification.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Add MockAgents transport sandbox fixture",
-  "updated_at": "2026-09-16T11:02:48+00:00",
+  "updated_at": "2026-09-16T11:59:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1251"
 }
 ---
@@ -45,3 +45,6 @@ preserve privacy, network-denial, signature, DCO, and exact-tree gates.
   are prohibited. Next action: provision an immutable bounded runner with network namespace/egress
   denial and process supervision, then implement tool-result ordering, cancellation/backpressure,
   outbound-denial, cleanup, repeat, and arm64 evidence.
+
+- 2026-09-16T11:59:40+00:00: AR-1252 approved isolated runner f0f3d67 is now available; resume
+  transport fixture implementation with real bounded network and lifecycle evidence.
