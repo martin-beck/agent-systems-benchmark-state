@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1269",
-  "next_action": "Integrate ReplayLaunchBundle consumption into CLI transport and add real supervised cassette/lifecycle/egress/no-fallback fixtures.",
+  "next_action": "Integrate ReplayLaunchBundle::spawn with CLI transport and add runtime-backed cassette/lifecycle/egress/no-fallback fixtures.",
   "observed_branch": "feature/ar-1269-runtime-replay-launch-factory",
   "observed_dirty": 0,
   "observed_head": "8dfafaa8378e38c25d3fc0eb566ad32e9c9d3fff",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create runtime-owned launch bundles for supervised strict replay.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Runtime-owned replay launch-bundle factory",
-  "updated_at": "2026-09-16T23:01:25+00:00",
+  "updated_at": "2026-09-16T23:01:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1269-runtime-launch-factory"
 }
 ---
@@ -76,3 +76,9 @@ AR-1268's blocked transport evidence and never move launch authority into the CL
 
 - 2026-09-16T23:01:18+00:00: Recorded command exit 0; command argv SHA-256
   a6c7608736904d1aba80c0d9e003930e4f16d9c33670f4205b362d43e433a142.
+
+- 2026-09-16T23:01:36+00:00: Signed checkpoint 8dfafaa adds ReplayLaunchBundle::spawn, which
+  consumes its retained runtime-owned SandboxBackend/SandboxLaunchInput/ResourceLease and invokes
+  spawn_launch without caller substitution. Runtime focused suite passes 39/39 and fmt pass; product
+  tree clean. CLI bundle consumption, cassette request/response, egress, cancellation/restart,
+  timeout/crash cleanup, and no-fallback fixtures remain next.
