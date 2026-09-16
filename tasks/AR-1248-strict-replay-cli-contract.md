@@ -10,7 +10,7 @@
   "id": "AR-1248",
   "next_action": "Runtime seam remains review blocker: add a CLI-facing constructor/integration that consumes runtime-issued SidecarHandoff/SandboxLaunchInput, or coordinator-approved narrow follow-up; add malformed cassette and executor lifecycle/egress/cancel/restart/no-fallback tests, then rerun all gates.",
   "observed_branch": "feature/ar-1248-strict-replay-cli-contract",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "bc127a9d87fb893bbf8b52102d318507cc92d2c3",
   "owner": "asb_ar1232_lifecycle_router",
   "plan": "../plans/AR-1248.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 74,
+  "task_revision": 75,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-16T10:59:27+00:00",
+  "updated_at": "2026-09-16T11:02:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
