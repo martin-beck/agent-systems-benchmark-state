@@ -11,17 +11,17 @@
   "id": "AR-1231",
   "next_action": "Rerun exact-head CI for b622554 and obtain independent review; successful qualified cassette service construction, route identity mismatch coverage, and credential/ambient-field rejection tests are now present. Runtime child supervision remains AR-1232.",
   "observed_branch": "feature/ar-1231",
-  "observed_dirty": 1,
-  "observed_head": "b62255428989a1d2b7438e37905ac38f73208240",
+  "observed_dirty": 0,
+  "observed_head": "fd8eaef0c36de33ee5f091347f17f8a9cffea6e8",
   "owner": "asb_ar1231_publication",
   "plan": "../plans/AR-1231.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents through strict replay without provider egress or live fallback.",
-  "task_revision": 169,
+  "task_revision": 170,
   "title": "Strict replay execution and egress-isolation seam",
-  "updated_at": "2026-09-16T02:37:50+00:00",
+  "updated_at": "2026-09-16T02:37:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1231"
 }
 ---
