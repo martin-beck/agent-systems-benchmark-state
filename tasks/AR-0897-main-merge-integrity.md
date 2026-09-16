@@ -2,7 +2,7 @@
 {
   "branch": "fix/main-merge-integrity",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T08:33:15+00:00",
+  "claim_expires": "2026-09-16T08:45:18+00:00",
   "depends_on": [
     "AR-0003"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the current main merge-boundary failure and enforce a signed DCO-bearing integration path.",
-  "task_revision": 195,
+  "task_revision": 196,
   "title": "Restore main merge integrity",
-  "updated_at": "2026-09-16T08:10:39+00:00",
+  "updated_at": "2026-09-16T08:15:18+00:00",
   "worktree_key": "agent-systems-benchmark-main-merge-integrity"
 }
 ---
@@ -621,3 +621,5 @@ Implementation has not started. Read the linked plan before claiming.
   signature/DCO verify. Exact-main workflows 35072310869, 35072310763, 35072310761, 35072310720,
   35072310709, 35072310706 are running. State post-reconcile reported unrelated expired AR-0896; no
   product merge failure.
+
+- 2026-09-16T08:15:18+00:00: Heartbeat by asb_ar0897_merge_integrity.
