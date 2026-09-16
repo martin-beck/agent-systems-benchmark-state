@@ -2,7 +2,7 @@
 {
   "branch": "feature/remote-control-transport",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T16:26:53+00:00",
+  "claim_expires": "2026-09-16T17:33:30+00:00",
   "depends_on": [
     "AR-0702",
     "AR-0803",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 296,
+  "task_revision": 297,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T16:24:30+00:00",
+  "updated_at": "2026-09-16T16:33:30+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -896,3 +896,5 @@ Implementation has not started. Read the linked plan before claiming.
   exact locked formal suite ran with all Loom/state tests passing. One existing TLA artifact test
   transiently hit ExecutableFileBusy; exact focused rerun passed. Committed SSH-signed+DCO
   b7d9e142d684f1fa65fc3f52258ec46585194950 and pushed PR202. Worktree clean.
+
+- 2026-09-16T16:33:30+00:00: Heartbeat by asb_ar0813_remote_transport.
