@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1271",
-  "next_action": "Add CLI adapter over RuntimeCassetteOperation with exact handle binding and real replay service request/response fixtures; then lifecycle/egress/no-fallback gates.",
+  "next_action": "Connect CassetteResponseSink to actual replay service and add real request/response, egress/no-fallback, cancellation/restart, timeout/crash cleanup fixtures.",
   "observed_branch": "feature/ar-1271-cassette-operation-contract",
   "observed_dirty": 0,
   "observed_head": "c41b423c0536fe30fd2b6c5a6a33e46c9102ec5e",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Define a dependency-neutral cassette request/response operation contract.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Dependency-neutral cassette operation contract",
-  "updated_at": "2026-09-16T23:18:55+00:00",
+  "updated_at": "2026-09-16T23:19:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1271-cassette-operation"
 }
 ---
@@ -92,3 +92,9 @@ Preserve AR-1270's blocked evidence and do not fabricate responses or authority.
 
 - 2026-09-16T23:18:48+00:00: Recorded command exit 0; command argv SHA-256
   77c158f0b7238837f032acf60e1201284dcfb3b1364fc5f0faeec83241dd6617.
+
+- 2026-09-16T23:19:09+00:00: Signed checkpoint c41b423 adds CLI cassette_operation adapter.
+  take_request consumes RuntimeCassetteOperation exactly once and returns a bounded request plus
+  CassetteResponseSink; finish validates the shared response envelope. CLI suite passes 71/71 and
+  fmt pass; product tree clean. Actual replay service invocation and supervised
+  lifecycle/egress/no-fallback fixtures remain next.
