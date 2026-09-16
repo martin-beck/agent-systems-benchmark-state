@@ -16,9 +16,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Schedule trials across native-capability workers while preserving per-host capacity meaning.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Coordinate distributed experiment workers",
-  "updated_at": "2026-09-16T12:30:42+00:00",
+  "updated_at": "2026-09-16T12:31:21+00:00",
   "worktree_key": "agent-systems-benchmark-distributed-workers"
 }
 ---
@@ -85,3 +85,6 @@ Implementation has not started. Read the linked plan before claiming.
   review.
 
 - 2026-09-16T12:30:42+00:00: Heartbeat by asb_ar1006_distributed_workers.
+
+- 2026-09-16T12:31:21+00:00: Recorded command exit 0; command argv SHA-256
+  864a5487a7178e431a5dfce37e47acd5c0752d5c5a52a4125137acc2aedcdac8.
