@@ -11,17 +11,17 @@
   "id": "AR-1272",
   "next_action": "Bind RuntimeCassetteContent into CLI decoding and actual replay command; prove response parity, egress/no-fallback, cancellation/restart, timeout/crash cleanup.",
   "observed_branch": "feature/ar-1272-authenticated-cassette-backend",
-  "observed_dirty": 2,
-  "observed_head": "9328e4fa906b919d0dbca6c5b557bf1d00ed6f8a",
+  "observed_dirty": 0,
+  "observed_head": "eabd3f4783d8fc82fad0b2d26175b1a9bf13dd22",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1272.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind immutable cassette content to a runtime-authenticated replay backend handle.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Authenticated immutable cassette backend",
-  "updated_at": "2026-09-16T23:26:12+00:00",
+  "updated_at": "2026-09-16T23:26:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1272-cassette-backend"
 }
 ---
