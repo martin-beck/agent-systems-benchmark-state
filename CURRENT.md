@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1130](tasks/AR-1130.md): Configured provider launches | Launch agents with configured providers. | Full local gates passed on clean exact head cf2903f: fmt check, workspace clippy -D warnings, and locked offline workspace tests. Create PR from this pushed signed-DCO head, request independent exact-head review, then monitor required CI. | asb_ar1130_launch |
+| P0 | [AR-1130](tasks/AR-1130.md): Configured provider launches | Launch agents with configured providers. | DCO history repaired and force-with-lease pushed at exact head 603eb8e. Re-run focused launch/provenance tests, then rerun full gates and monitor PR #181 CI. Loom failures are ETXTBSY in shared TLA artifact acquisition fixtures; classify as reproducible infrastructure/product fixture contention and coordinate rerun. | asb_ar1130_launch |
 
 ## Open
 
