@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Complete native signed-bundle isolation negative and lifecycle evidence.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Native isolation negative and lifecycle matrix",
-  "updated_at": "2026-09-16T08:45:21+00:00",
+  "updated_at": "2026-09-16T08:47:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1241"
 }
 ---
@@ -39,4 +39,7 @@ global network state.
 - 2026-09-16T08:42:40+00:00: Claimed by asb_ar1241_matrix_worker.
 
 - 2026-09-16T08:45:21+00:00: Recorded command exit 101; command argv SHA-256
+  6363ce9ae09b6744d6ae6ddb2ad58a4809bf91b65c77994d8ad22f5ab57c08e9.
+
+- 2026-09-16T08:47:43+00:00: Recorded command exit 0; command argv SHA-256
   6363ce9ae09b6744d6ae6ddb2ad58a4809bf91b65c77994d8ad22f5ab57c08e9.
