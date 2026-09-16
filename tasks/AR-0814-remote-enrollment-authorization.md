@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 178,
+  "task_revision": 179,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T18:31:16+00:00",
+  "updated_at": "2026-09-16T18:32:05+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -478,3 +478,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-16T18:31:16+00:00: Signed+DCO 5134c2b wires BreakGlass ControlCall minimum version 1.7,
   advertises v1.7, and maps it to administrator-only BreakGlass permission. cargo check -p
   asb-control passes; full endpoint/schema wiring remains.
+
+- 2026-09-16T18:32:05+00:00: Recorded command exit 0; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
