@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T14:28:35+00:00",
+  "updated_at": "2026-09-16T14:28:49+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -87,3 +87,9 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T14:28:28+00:00: Recorded command exit 0; command argv SHA-256
   81f9952a5ac7e4e8c210caf8839b21dc37c7d0e81fce3832843b6289eefeecb1.
+
+- 2026-09-16T14:28:49+00:00: Committed 54752c1 (SSH-signed+DCO): pinned rustls 0.23.34, added
+  RemoteTlsConfig with ASB ALPN asb-control/1, absolute ControlLimits handshake deadline, and
+  fail-closed ALPN/configuration errors. Focused cargo test transport::tests::remote_ passed 2/2;
+  locked dependency refresh succeeded. Next: add authenticated client/mTLS certificate validation
+  and TLS framing integration tests.
