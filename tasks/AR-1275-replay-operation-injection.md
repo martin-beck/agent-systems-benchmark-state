@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1275-replay-operation-injection",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T01:48:01+00:00",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1275-replay-operation-injection",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1275.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Inject runtime-owned operation handles into actual strict-replay dispatch.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime operation injection into replay dispatcher",
-  "updated_at": "2026-09-16T23:47:42+00:00",
+  "updated_at": "2026-09-16T23:48:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1275-operation-injection"
 }
 ---
@@ -32,3 +32,5 @@ blocked evidence and do not accept metadata-only or caller-fabricated execution.
 
 - 2026-09-16T23:47:42+00:00: Dependencies AR-1237, AR-1238, and AR-1239 are done; AR-1274 proves the
   actual replay dispatcher still lacks a runtime-issued operation-handle injection point.
+
+- 2026-09-16T23:48:01+00:00: Claimed by asb_ar1024_lifecycle_router.
