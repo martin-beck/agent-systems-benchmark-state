@@ -9,18 +9,18 @@
   ],
   "id": "AR-1233",
   "next_action": "Promote after AR-1232 is blocked and implement the approved loopback-only transport seam.",
-  "observed_branch": "",
-  "observed_dirty": 0,
-  "observed_head": "",
+  "observed_branch": "feature/ar-1233",
+  "observed_dirty": 1,
+  "observed_head": "00f37631e6805a0bd2034035da46589d43b0bfe5",
   "owner": "asb_ar1232_sandbox_supervision",
   "plan": "../plans/AR-1233.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an authenticated loopback-only sandbox transport for strict replay services.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Approved loopback-only sandbox transport",
-  "updated_at": "2026-09-16T05:12:12+00:00",
+  "updated_at": "2026-09-16T05:12:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1233"
 }
 ---
