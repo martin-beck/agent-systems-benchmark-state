@@ -126,7 +126,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-measurement-catalog-semantics` | `feature/measurement-catalog-semantics` | `78c63febc0ce` | 0 | behind 224, ahead 0 |
 | `agent-systems-benchmark-measurement-selection-plan` | `feature/measurement-selection-plan` | `819de6934a42` | 0 | behind 198, ahead 0 |
 | `agent-systems-benchmark-merge-0897` | `DETACHED` | `00f37631e680` | 0 | behind 6, ahead 0 |
-| `agent-systems-benchmark-merge-integrity-repair` | `fix/main-merge-integrity-postmerge` | `7d43c1ec90fe` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-merge-integrity-repair` | `fix/main-merge-integrity-postmerge` | `760d7cc127da` | 0 | behind 0, ahead 1 |
 | `agent-systems-benchmark-mini-swe-cancellation-reap-test-isolation` | `fix/mini-swe-cancellation-reap-test-isolation` | `aba1f8cded47` | 0 | behind 108, ahead 0 |
 | `agent-systems-benchmark-mockagents-executable-qualification` | `test/mockagents-executable-qualification` | `3f1de4106adf` | 0 | behind 275, ahead 0 |
 | `agent-systems-benchmark-modern-terminal-rendering` | `feature/modern-terminal-rendering` | `fd1989a096a3` | 0 | behind 312, ahead 0 |
