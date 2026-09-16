@@ -14,7 +14,7 @@ Generated from local Git and GitHub. Do not edit.
 | #124 | `feature/openjiuwen-live@cceb76f436f8` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(agents): qualify pinned OpenJiuwen live execution |
 | #125 | `fix/control-state-lock-test-isolation@8b0f9fd07d5d` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(cli): isolate control state roots |
 | #126 | `fix/main-merge-integrity@bd6f450ab877` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | tools: harden signed merge publication |
-| #127 | `fix/mini-swe-cancellation-reap-test-isolation@a4dd0941d71f` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | test(agents): harden mini-swe cancellation isolation |
+| #127 | `fix/mini-swe-cancellation-reap-test-isolation@a4dd0941d71f` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | test(agents): harden mini-swe cancellation isolation |
 | #144 | `dependabot/github_actions/actions/setup-java-6.0.0@5885c200026e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump actions/setup-java from 5.0.0 to 6.0.0 |
 | #145 | `dependabot/cargo/toml-0.9.5@5f30c0c92f18` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 0.9.5 |
 | #146 | `dependabot/github_actions/taiki-e/install-action-2.87.7@51db8d79ad9f` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.7 |
@@ -24,21 +24,21 @@ Generated from local Git and GitHub. Do not edit.
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
 | #151 | `dependabot/cargo/serde-1.0.229@c926edfde377` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump serde from 1.0.219 to 1.0.229 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
-| #184 | `docs/ar-1210-tutorial-contract@3e475bda8f44` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(tutorials): add offline tutorial contract validator |
+| #184 | `docs/ar-1210-tutorial-contract@3e475bda8f44` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(tutorials): add offline tutorial contract validator |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35054477399 | `a4dd0941d71f` | pull_request | Formal assurance | queued:- |
-| 35054477333 | `a4dd0941d71f` | pull_request | Hosted portability and native qualification | queued:- |
-| 35054477325 | `a4dd0941d71f` | pull_request | Agent Workflow Quality shadow | queued:- |
-| 35054477315 | `a4dd0941d71f` | pull_request | Huawei MIT source headers | queued:- |
-| 35054477311 | `a4dd0941d71f` | pull_request | Rust verification | queued:- |
-| 35054477310 | `a4dd0941d71f` | pull_request | Fault assurance | queued:- |
-| 35054477301 | `a4dd0941d71f` | pull_request | Repository quality | queued:- |
-| 35054477296 | `a4dd0941d71f` | pull_request | Emulated aarch64 portability | queued:- |
+| 35054477399 | `a4dd0941d71f` | pull_request | Formal assurance | in_progress:- |
+| 35054477333 | `a4dd0941d71f` | pull_request | Hosted portability and native qualification | completed:success |
+| 35054477325 | `a4dd0941d71f` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 35054477315 | `a4dd0941d71f` | pull_request | Huawei MIT source headers | completed:success |
+| 35054477311 | `a4dd0941d71f` | pull_request | Rust verification | in_progress:- |
+| 35054477310 | `a4dd0941d71f` | pull_request | Fault assurance | in_progress:- |
+| 35054477301 | `a4dd0941d71f` | pull_request | Repository quality | in_progress:- |
+| 35054477296 | `a4dd0941d71f` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 35054178078 | `3e475bda8f44` | pull_request | Huawei MIT source headers | completed:success |
-| 35054178063 | `3e475bda8f44` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 35054178063 | `3e475bda8f44` | pull_request | Emulated aarch64 portability | completed:success |
 | 35054177987 | `3e475bda8f44` | pull_request | Fault assurance | completed:success |
-| 35054177951 | `3e475bda8f44` | pull_request | Rust verification | in_progress:- |
+| 35054177951 | `3e475bda8f44` | pull_request | Rust verification | completed:success |
