@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide an approved runtime-owned loopback-only sandbox namespace capability.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Runtime-owned loopback namespace capability",
-  "updated_at": "2026-09-16T06:56:58+00:00",
+  "updated_at": "2026-09-16T06:59:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1234"
 }
 ---
@@ -138,3 +138,6 @@
   helper, or external network.
 
 - 2026-09-16T06:56:58+00:00: Claimed by asb_ar1234_worker_next.
+
+- 2026-09-16T06:59:23+00:00: Recorded command exit 0; command argv SHA-256
+  55e74a70bb1959128fd8e9fc1bd67a0eb98e55728346b7f82d3d3739c3644257.
