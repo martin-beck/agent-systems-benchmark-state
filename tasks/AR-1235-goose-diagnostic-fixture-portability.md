@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1235-goose-fixture-portability",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T08:12:07+00:00",
   "depends_on": [
     "AR-0003"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1235-goose-fixture-portability",
   "observed_dirty": 3,
   "observed_head": "fd7daa43549edd67b60076aa6b1eee333061b438",
-  "owner": "",
+  "owner": "asb_ar1235_goose_portability",
   "plan": "../plans/AR-1235.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair Goose diagnostic fixture portability under emulated AArch64.",
-  "task_revision": 34,
+  "task_revision": 35,
   "title": "Portable Goose diagnostic fixture",
-  "updated_at": "2026-09-16T06:12:04+00:00",
+  "updated_at": "2026-09-16T06:12:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1235"
 }
 ---
@@ -135,3 +135,5 @@ its intended diagnostic error assertion. Preserve the failure and repair the fix
 
 - 2026-09-16T06:12:04+00:00: Resume to trigger original hosted Emulated aarch64 workflow rerun for
   exact fd7daa43549edd67b60076aa6b1eee333061b438 and obtain terminal CI evidence.
+
+- 2026-09-16T06:12:07+00:00: Claimed by asb_ar1235_goose_portability.
