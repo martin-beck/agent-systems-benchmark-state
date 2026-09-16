@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:37:03+00:00",
+  "updated_at": "2026-09-16T11:37:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -181,3 +181,6 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
 
 - 2026-09-16T11:37:03+00:00: Recorded command exit 127; command argv SHA-256
   0d81043765432a4e70cb5fb657ea348619f14574a9fabcd10e715ae89ca6c946.
+
+- 2026-09-16T11:37:31+00:00: Recorded command exit 0; command argv SHA-256
+  f4bfa8116ab2a8a815126497cf3a77fb0d28663ac1aa04fc979d7807d89b57b9.
