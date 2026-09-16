@@ -9,7 +9,7 @@
     "AR-1230"
   ],
   "id": "AR-1231",
-  "next_action": "Integrate StrictReplayLaunchRecord with provider adapter launch seam; add executable loopback route binding, egress-denial/no-fallback and cancellation/restart tests. Current signed head ba68508 has typed versioned contract/schema and focused asb-agents strict_replay tests passing.",
+  "next_action": "Add executable adapter-facing cancellation/restart/no-fallback tests around StrictReplayExecutor; then run full applicable asb-agents/replay gates and prepare review.",
   "observed_branch": "feature/ar-1231",
   "observed_dirty": 0,
   "observed_head": "875411684a66d853cc34b0881bdd57c1254026dc",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents through strict replay without provider egress or live fallback.",
-  "task_revision": 44,
+  "task_revision": 45,
   "title": "Strict replay execution and egress-isolation seam",
-  "updated_at": "2026-09-16T01:52:28+00:00",
+  "updated_at": "2026-09-16T01:52:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1231"
 }
 ---
@@ -133,3 +133,9 @@
 
 - 2026-09-16T01:52:28+00:00: Recorded command exit 0; command argv SHA-256
   39cf5398131881d6bebfeb6940a170dba53287cbad205a984f34c80a6dbe58e7.
+
+- 2026-09-16T01:52:50+00:00: Added StrictReplayExecutor consuming authenticated
+  StrictReplayLaunchRecord and Cassette, constructing StrictReplayService with bounded ReplayLimits,
+  enforcing cassette and attempt identity, and mapping all service failures to fail-closed errors
+  with no live fallback. Focused strict_replay tests and Clippy warnings-denied passed. Signed DCO
+  commit 8754116 pushed; clean worktree.
