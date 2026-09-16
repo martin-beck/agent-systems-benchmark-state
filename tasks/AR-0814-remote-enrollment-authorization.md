@@ -2,7 +2,7 @@
 {
   "branch": "feature/remote-enrollment-authz",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T21:08:59+00:00",
+  "claim_expires": "2026-09-16T21:22:07+00:00",
   "depends_on": [
     "AR-0813"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 242,
+  "task_revision": 243,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:21:16+00:00",
+  "updated_at": "2026-09-16T19:22:07+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -633,3 +633,5 @@ Implementation has not started. Read the linked plan before claiming.
   suite passes 9/9, including absent-context denial and runner-owned context binding of
   principal/request/generation. Prior exit-101 root cause was test misuse: ControlClient returns an
   error response as Ok(ControlResponse), so result.is_err was invalid; corrected and verified.
+
+- 2026-09-16T19:22:07+00:00: Heartbeat by asb_ar0814_enrollment_authz.
