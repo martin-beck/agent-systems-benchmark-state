@@ -9,7 +9,7 @@
   "id": "AR-0814",
   "next_action": "Integrate persisted identity into pairing and recovery ControlCall; implement safe non-argv code handling and remote audit binding.",
   "observed_branch": "feature/remote-enrollment-authz",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "1cc337f7e03c0526a4087632131319ba10aa5511",
   "owner": "asb_ar0814_enrollment_authz",
   "plan": "../plans/AR-0814.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 163,
+  "task_revision": 164,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T18:27:50+00:00",
+  "updated_at": "2026-09-16T18:27:57+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
