@@ -10,16 +10,16 @@
   "next_action": "Add certificate threat-matrix negatives and audit/pairing integration tests; retain validated identity-store write boundary.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
-  "observed_head": "0a5f47021bc576dd8a47a491a76c127f174fa221",
+  "observed_head": "7f70cafb4d003886e933430c8971a080ada68ff0",
   "owner": "asb_ar0814_enrollment_authz",
   "plan": "../plans/AR-0814.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 267,
+  "task_revision": 268,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-16T19:38:31+00:00",
+  "updated_at": "2026-09-16T19:38:39+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
