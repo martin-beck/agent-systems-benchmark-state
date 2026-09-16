@@ -1407,7 +1407,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | asb_ar1151_replay | Replay strictly without providers. | Design and implement the missing executable strict-replay run-path seam: pass exact cassette route/service into agent adapter launch, deny provider egress at process boundary, and add campaign-level cancellation/restart/no-fallback tests. Current CLI replay only decodes/indexes/selects and emits metadata. |
+| P0 | [AR-1151](../tasks/AR-1151.md): Strict offline replay | asb_ar1151_replay | Replay strictly without providers. | Preserved replay-mode fail-closed guard; current branch lacks the AR-1232 authenticated launch-bridge API needed for executable replay. Reconcile AR-1232 integration/base before implementing CLI route/service handoff; no unsafe deletion committed. |
 
 ### Open (4)
 
