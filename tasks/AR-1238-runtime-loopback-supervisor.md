@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1238-runtime-loopback-supervisor",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-16T09:53:11+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1100",
     "AR-1231"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1238-runtime-loopback-supervisor",
   "observed_dirty": 0,
   "observed_head": "6fba189fd839a954d2e0724f696114b607242cb0",
-  "owner": "asb_ar1238_supervisor_worker",
+  "owner": "",
   "plan": "../plans/AR-1238.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide the runtime-owned private-namespace supervisor for loopback replay.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Runtime-owned loopback supervisor",
-  "updated_at": "2026-09-16T07:53:11+00:00",
+  "updated_at": "2026-09-16T07:55:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1238"
 }
 ---
@@ -53,3 +53,13 @@ non-interference; focused/full locked, privacy, policy, native, signature/DCO, a
   policy changes.
 
 - 2026-09-16T07:53:11+00:00: Claimed by asb_ar1238_supervisor_worker.
+
+- 2026-09-16T07:55:22+00:00: User-authorized follow-up implemented signed commit 9d982fe: in-tree
+  asb_loopback_supervisor executable now requires explicit --unshare-net, rejects host-network
+  flags, validates bounded relay/generation/route handoff, binds loopback before starting pinned
+  sidecar+adapter, emits readiness, enforces deadline, and reaps both children. Focused runtime
+  tests, fmt and clippy pass; full workspace tests previously passed. Remaining blocker:
+  SandboxBackend still does not inject this executable into Bubblewrap or provide authenticated Unix
+  relay FD/socket mount and actual sidecar forwarding/namespace attestation; binary intentionally
+  fails closed when loopback unavailable. No host network, firewall, ambient ip, credentials, or
+  unrelated AR changes.
