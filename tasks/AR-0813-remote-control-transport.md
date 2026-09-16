@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Carry the versioned frontend control API securely over IP without coupling runner lifetime to a client.",
-  "task_revision": 259,
+  "task_revision": 260,
   "title": "Add secure remote control transport",
-  "updated_at": "2026-09-16T16:08:13+00:00",
+  "updated_at": "2026-09-16T16:09:33+00:00",
   "worktree_key": "agent-systems-benchmark-remote-control-transport"
 }
 ---
@@ -807,3 +807,6 @@ Implementation has not started. Read the linked plan before claiming.
 
 - 2026-09-16T16:08:13+00:00: Recorded command exit 0; command argv SHA-256
   e6e5c15b74386ee6d8b45e31504da1470568a58d165469d7de285bfc6af5c0ae.
+
+- 2026-09-16T16:09:33+00:00: Recorded command exit 101; command argv SHA-256
+  29f045f348e38fc0314abab90a89bf9bfef216297c3aab696089f053aaefa230.
