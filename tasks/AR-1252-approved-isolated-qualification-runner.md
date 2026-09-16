@@ -7,7 +7,7 @@
     "AR-0003"
   ],
   "id": "AR-1252",
-  "next_action": "Integrate digest-verified runner with AR-1251; add descendant cleanup evidence and run full gates.",
+  "next_action": "Independent review runner contract; then integrate AR-1251 consumer and run full policy gates.",
   "observed_branch": "feature/ar-1252-approved-isolated-runner",
   "observed_dirty": 0,
   "observed_head": "16e5c3762eb4eb49c2c2b24e8c32f0d8bd380aea",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision an approved isolated qualification runner for ASB executable evidence.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Provision approved isolated qualification runner",
-  "updated_at": "2026-09-16T11:26:46+00:00",
+  "updated_at": "2026-09-16T11:27:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1252"
 }
 ---
@@ -163,3 +163,10 @@ privacy, credential isolation, network denial, bounded execution, signatures, DC
 
 - 2026-09-16T11:26:46+00:00: Recorded command exit 0; command argv SHA-256
   e19c8db1391ce1c573bdb3d0378ad71ee591aeabcd22d2e7464b361aac7f73f6.
+
+- 2026-09-16T11:27:01+00:00: Signed+DCO head 16e5c37 pushed. Added explicit no-mount regression:
+  exactly one bind matching the validated read-only artifact and no --volume; cleanup --rm assertion
+  passes. Documented AR-1251 invocation with artifact digest and network preflight. Full
+  llm-double-spike Python suite passes 12/12. Network-none probe and timeout evidence remain valid;
+  descendant cleanup is container-owned via --rm. Remaining: independent review, AR-1251 consumer
+  wiring, full policy gates.
