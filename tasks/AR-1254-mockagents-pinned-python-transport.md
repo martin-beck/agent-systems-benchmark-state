@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1254-mockagents-pinned-python-transport",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-16T20:56:27+00:00",
   "depends_on": [
     "AR-1252",
     "AR-1253"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1254-mockagents-pinned-python-transport",
   "observed_dirty": 0,
   "observed_head": "154a34549784bd3bba0a5fa47d046a237897980a",
-  "owner": "",
+  "owner": "asb_ar1254_mockagents_transport_qualification",
   "plan": "../plans/AR-1254.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify MockAgents through the pinned Python sandbox.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Qualify MockAgents through pinned Python transport",
-  "updated_at": "2026-09-16T18:56:13+00:00",
+  "updated_at": "2026-09-16T18:56:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1254"
 }
 ---
@@ -138,3 +138,5 @@ Keep fixtures, runtimes, caches, and evidence under `/srv/data/projects`.
 - 2026-09-16T18:56:13+00:00: AR-1252 and AR-1253 are durably done. The real pinned Python transport
   qualification is now actionable; reopen for implementation without weakening isolation,
   provenance, or arm64 gates.
+
+- 2026-09-16T18:56:27+00:00: Claimed by asb_ar1254_mockagents_transport_qualification.
