@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute real agents through strict replay without provider egress or live fallback.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Strict replay execution and egress-isolation seam",
-  "updated_at": "2026-09-16T01:57:45+00:00",
+  "updated_at": "2026-09-16T01:58:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1231"
 }
 ---
@@ -208,3 +208,6 @@
   route digest before serving requests, in addition to cassette and attempt binding. Invalid
   cassette test proves constructor fails closed without fallback. Focused strict_replay tests and
   Clippy -D warnings pass. Signed DCO commit 5e874bc pushed; worktree clean.
+
+- 2026-09-16T01:58:06+00:00: Recorded command exit 0; command argv SHA-256
+  085b2f14e7def6400925e810d07d4aaffe1330e558cc61f6cefc2e6a5fe92daa.
