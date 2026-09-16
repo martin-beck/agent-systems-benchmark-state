@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Resolve GitHub issue 117 by installing and explicitly enforcing a digest-pinned ShellCheck.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Make ShellCheck fail closed",
-  "updated_at": "2026-09-16T08:30:30+00:00",
+  "updated_at": "2026-09-16T08:30:40+00:00",
   "worktree_key": "agent-systems-benchmark-shellcheck-fail-closed"
 }
 ---
@@ -82,3 +82,6 @@ Implementation has not started. Read the linked plan before claiming.
   and AArch64 digest 12b331c1..., format-neutral extraction, executable/version assertion, explicit
   actionlint delegation, and SC2086 negative fixture. Signed commit 8176605;
   installer/actionlint/failure suite completed exit 0. No runtime dependency added.
+
+- 2026-09-16T08:30:40+00:00: Recorded command exit 0; command argv SHA-256
+  9f193f75bcfa79636cff878f350f37b5f62e87bd10702370647ed5262cdd457d.
