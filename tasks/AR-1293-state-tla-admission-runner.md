@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T07:28:02+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Run portable-smoke with TLC_CGROUP_MODE=portable on a runner with enough thread capacity, then run pr-publication/full-exhaustive with required containment; publish only after all exact-head gates and independent review are green.",
+  "next_action": "Provide a clean CI/VM runner with portable timeout/prlimit capacity and adequate swap, then rerun portable-smoke; otherwise resume AR-1293 only when that infrastructure is available. Candidate f16d2cb41 remains the reviewed code checkpoint.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T06:58:02+00:00",
+  "updated_at": "2026-09-17T06:59:25+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -212,3 +212,12 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   admission, not a model failure; CI must supply the tier-specific containment environment.
 
 - 2026-09-17T06:58:02+00:00: Heartbeat by codex-ar1293-recovery-20260917.
+
+- 2026-09-17T06:59:25+00:00: Infrastructure probe complete: Docker socket is inaccessible to the
+  worker; unprivileged bwrap lacks a usable filesystem setup; systemd-run --user works. Running
+  portable-smoke as martin fails before TLC with EAGAIN Cannot create VM thread because portable
+  prlimit nproc=64 conflicts with the already high per-user thread count. Running as the dedicated
+  gha-asb-state user avoids EAGAIN but fails JVM native allocation because host swap is exhausted
+  (only 76 KiB free) while other workloads consume resources. No safe container/VM runner is
+  available to this worker without changing unrelated host workloads or weakening portable
+  attestation. Candidate remains unpublished.
