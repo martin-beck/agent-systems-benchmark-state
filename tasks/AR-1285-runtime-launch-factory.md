@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-owned launch factory for authenticated strict-replay CLI execution.",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "Runtime-owned strict-replay launch factory",
-  "updated_at": "2026-09-17T02:00:43+00:00",
+  "updated_at": "2026-09-17T02:00:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1285-runtime-launch-factory"
 }
 ---
@@ -325,3 +325,6 @@ separate successor rather than claiming strict-replay execution.
   busy race in private_build_snapshot_resists_original_archive_replacement (Os code 26); isolated
   rerun passed 1/1. Worktree remains clean at signed 0f876c7; PR #209 force-with-lease updated and
   exact-head hosted checks restarted.
+
+- 2026-09-17T02:00:50+00:00: Recorded command exit 8; command argv SHA-256
+  0411f6689e8268e2353c70a06bf4b5f3d5f41ee1f40df388df9b9d68ae069adb.
