@@ -8,7 +8,7 @@
     "AR-1300"
   ],
   "id": "AR-1301",
-  "next_action": "PR #219 is published at exact head e98293a; monitor every required exact-head workflow, then perform signed protected merge and post-merge verification only after terminal green.",
+  "next_action": "PR #219 is updated to exact signed head d960dfc; monitor all required exact-head CI checks, diagnose failures from artifacts, merge only after terminal green, then post-merge verify and release AR-1301.",
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "observed_dirty": 0,
   "observed_head": "d960dfcbaa69457418a2d5a4886ef3f53a107498",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 216,
+  "task_revision": 217,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:48:16+00:00",
+  "updated_at": "2026-09-17T11:48:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -606,3 +606,10 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
 
 - 2026-09-17T11:48:16+00:00: Recorded command exit 0; command argv SHA-256
   c76ae63e9333e356c653faefa5419804301344cc46dcb7a3cb69f02120b56356.
+
+- 2026-09-17T11:48:36+00:00: Hosted platform failure runs 35217105883 and earlier was classified as
+  hosted portability executing the new supervised matrix without native qualification. The matrix
+  now skips unless ASB_REQUIRE_NATIVE_SANDBOX=1; required-native focused test passed 1/1,
+  hosted-safe sandbox suite passed 15/15, fmt/clippy/full locked serialized workspace gates passed.
+  Commit d960dfc is SSH-signed and carries matching DCO. Pushed to PR #219; new exact-head CI run
+  set 352176096xx is in progress.
