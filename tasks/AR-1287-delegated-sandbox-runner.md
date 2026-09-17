@@ -3,7 +3,7 @@
   "branch": "feature/ar-1287-delegated-sandbox-runner",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1286"],
+  "depends_on": [],
   "id": "AR-1287",
   "next_action": "Promote only after confirming AR-1286 blocked evidence; provision a pinned container/VM runner under /srv/data/projects and prove qualified namespace/systemd/egress capability.",
   "observed_branch": "",
