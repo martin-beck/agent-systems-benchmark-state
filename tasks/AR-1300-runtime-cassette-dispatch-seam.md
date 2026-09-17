@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect runtime-issued cassette operations to the real strict-replay dispatch path.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Runtime-to-replay cassette dispatch seam",
-  "updated_at": "2026-09-17T07:20:36+00:00",
+  "updated_at": "2026-09-17T07:20:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1300-runtime-cassette-dispatch-seam"
 }
 ---
@@ -184,3 +184,6 @@ fixtures/tests. Do not modify asb-tui or coordinator implementation.
   mutation occurred. PR #217 remains open/mergeable at signed head 405f68f; hosted required checks
   are still running, with headers/AWQ already successful. Implementation and local locked gates
   remain green.
+
+- 2026-09-17T07:20:56+00:00: Recorded command exit 0; command argv SHA-256
+  160f95d053759a37dbc6ad4a7b0c0ae82909498c93fabcfb2ef148ec0837ff21.
