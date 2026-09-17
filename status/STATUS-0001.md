@@ -12,9 +12,9 @@
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 4 |
+| **Open** | Dependency-ready and available to claim | 5 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 44 |
-| **Planned** | Defined work awaiting promotion or dependencies | 59 |
+| **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 200 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -383,7 +383,7 @@ flowchart LR
         AR_1287["AR-1287 - Blocked"]:::status_blocked
         AR_1288["AR-1288 - In progress"]:::status_in_progress
         AR_1289["AR-1289 - Done"]:::status_done
-        AR_1290["AR-1290 - Planned"]:::status_planned
+        AR_1290["AR-1290 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1609,13 +1609,14 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P1 | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md): Runtime certificate issuance and chain validation | asb_ar0909_lifecycle_repair | Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814. | AR-1288 feature merge is complete at signed main 2de393a05cc3c65f3495238abb19408e8218e483, but closure is blocked by protected-main integrity evidence. Post-merge Repository quality run 35178551451 reports Dependabot commit 07d4b62ad5c10444e5d0ba5f014613cd7c34c0f5 lacks a matching Signed-off-by trailer. Preserve AR-1288 done code and exact merge evidence; coordinator must create/use a dependency-safe protected-main remediation AR, repair forward-only, then rerun all exact-main gates before AR-1288 release. |
 
-### Open (4)
+### Open (5)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1010](../tasks/AR-1010-ratatui-crossterm-foundation.md): Adopt Ratatui/Crossterm TUI foundation | Unclaimed | Adopt Ratatui and Crossterm as the supported professional TUI foundation. | Remain open pending a supported AR-1062 signed publication/repair successor, green exact-main Repository quality and Trusted main, and recovered AR-1060 control-publication provenance. Do not repeat merged foundation work or add UI code to ASB. |
 | P0 | [AR-1024](../tasks/AR-1024-asb-tui-lifecycle-router.md): Implement &#96;asb tui&#96; lifecycle routing | Unclaimed | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. |
 | P0 | [AR-1044](../tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Unclaimed | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. |
+| P0 | [AR-1290](../tasks/AR-1290-dependabot-dco-boundary-recovery.md): Dependabot DCO boundary recovery | Unclaimed | Recover protected-main DCO assurance for the immutable Dependabot serde commit without weakening broad policy. | Audit whether 07d4b62 is an ancestor of protected main. Prefer closing/superseding the unmerged Dependabot PR and recreating its exact dependency diff in a signed+DCO topic; use a narrowly hash-bound immutable-history attestation only if ancestry proves unavoidable. |
 | P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Unclaimed | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Coordinator must create and link the successor AR for certificate issuance/chain validation and trusted route/ancestor authority; preserve this exact clean head and do not publish/close as fully complete until successor scope and bounded acceptance are recorded. |
 
 ### Blocked (44)
@@ -1667,7 +1668,7 @@ flowchart LR
 | P1 | [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md): Execute bundled MockAgents transport in isolation | Unclaimed | Execute bundled MockAgents transport in isolation. | Implement bundled in-container MockAgents transport and digest-pinned arm64 QEMU evidence. |
 | P1 | [AR-1258](../tasks/AR-1258-docker-binfmt-qemu.md): Provision Docker binfmt/QEMU capability | Unclaimed | Provision and verify Docker binfmt/QEMU for multiarch qualification. | Inspect Docker/binfmt/QEMU capability and approved privilege workflow; add bounded verification and rollback-safe checks. |
 
-### Planned (59)
+### Planned (58)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1696,4 +1697,3 @@ flowchart LR
 | P0 | [AR-1215](../tasks/AR-1215-result-comparison.md): Multi-agent result comparison tutorial | Unclaimed | Teach conservative comparison of multiple agents from the same benchmark. | Implement the syntax-checked tutorial for comparing two or more agents on one benchmark definition. |
 | P0 | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md): ASB tutorial freshness CI and documentation qualification | Unclaimed | Continuously keep ASB tutorial commands and steps syntactically current. | Implement the repository-wide tutorial discovery and syntax-freshness CI gate after all tutorial contracts are defined. |
 | P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
-| P0 | [AR-1290](../tasks/AR-1290-dependabot-dco-boundary-recovery.md): Dependabot DCO boundary recovery | Unclaimed | Recover protected-main DCO assurance for the immutable Dependabot serde commit without weakening broad policy. | Audit whether 07d4b62 is an ancestor of protected main. Prefer closing/superseding the unmerged Dependabot PR and recreating its exact dependency diff in a signed+DCO topic; use a narrowly hash-bound immutable-history attestation only if ancestry proves unavoidable. |

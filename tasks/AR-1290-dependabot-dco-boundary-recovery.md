@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1290.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Recover protected-main DCO assurance for the immutable Dependabot serde commit without weakening broad policy.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Dependabot DCO boundary recovery",
-  "updated_at": "2026-09-17T03:44:00+00:00",
+  "updated_at": "2026-09-17T03:38:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1290-dependabot-dco"
 }
 ---
@@ -36,3 +36,6 @@ change certificate/runtime behavior, touch asb-tui, or weaken broad policy.
   feature context but is intentionally not a blocking dependency: its closure must wait for
   this remediation, so adding it here would deadlock the state graph. No AR-1288 paths are
   modified here.
+
+- 2026-09-17T03:38:58+00:00: Promote independent P0 repair: PR #151 is unmerged; recreate its exact
+  dependency diff from protected main in a fresh signed+DCO topic, with no historical exception.
