@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 117,
+  "task_revision": 118,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T08:25:42+00:00",
+  "updated_at": "2026-09-17T09:50:54+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -385,3 +385,6 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T08:25:42+00:00: Released ownerless after correcting next_action; no implementation or
   gate change.
+
+- 2026-09-17T09:50:54+00:00: Provisioned runner receipt b1457b809 is now available; reclaiming to
+  run required full-exhaustive gate and finish exact evidence.
