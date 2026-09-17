@@ -2,22 +2,22 @@
 {
   "branch": "repair/ar-1295-vendor-fixtures",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T07:11:59+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1295",
   "next_action": "Update stale coordinator vendor test fixtures from v0.3.5 to verified immutable v0.3.7 and rerun the complete state test suite without changing vendor or handoffctl code.",
   "observed_branch": "repair/ar-1295-vendor-fixtures",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "asb-ar1295-vendor-tests",
+  "owner": "",
   "plan": "../plans/AR-1295.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Align stale coordinator vendor tests with the verified immutable v0.3.7 pin.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Coordinator vendor v0.3.7 fixture alignment",
-  "updated_at": "2026-09-17T05:16:46+00:00",
+  "updated_at": "2026-09-17T05:17:05+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1295-vendor-fixtures"
 }
 ---
@@ -78,3 +78,11 @@ handoffctl, formal runner behavior, ASB product, or asb-tui.
 
 - 2026-09-17T05:16:46+00:00: Recorded command exit 0; command argv SHA-256
   d44e83ddb263e3c08341617b78eb268a9e3355cb7a9b6285ddc0b3befa9fe56c.
+
+- 2026-09-17T05:17:05+00:00: Updated only tests/test_handoffctl_vendor.py from superseded v0.3.5
+  fixture to verified immutable v0.3.7 commit 550c014c440cc9bc45727fea71d90a9025c554c3 and manifest
+  SHA-256 bbde3b173f9e1904de583a6f686b71647942a4bb4e0062343ca99e5575c49512. Commit 53fd66118 is
+  SSH-signed with DCO; focused vendor suite passes 8/8, Ruff format/check passes, and
+  handoffctl_vendor verify passes. Full required state gates remain blocked by pre-existing mypy
+  import/package errors and coverage report 84% below 95%; no vendor implementation, handoffctl,
+  formal runner, product, asb-tui, or host-capacity changes.
