@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1300.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Connect runtime-issued cassette operations to the real strict-replay dispatch path.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Runtime-to-replay cassette dispatch seam",
-  "updated_at": "2026-09-17T06:53:53Z",
+  "updated_at": "2026-09-17T07:00:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1300-runtime-cassette-dispatch-seam"
 }
 ---
@@ -40,3 +40,6 @@ factory; both are required dependencies. The scope is ASB only: `crates/asb-core
 `crates/asb-runtime`, `crates/asb-replay`, `crates/asb-cli`, their schemas/docs and credential-free
 fixtures/tests. Do not modify asb-tui or coordinator implementation.
 
+
+- 2026-09-17T07:00:52+00:00: Dependencies AR-1282 and AR-1285 verified done; promote ASB-only
+  runtime-to-replay dispatch seam
