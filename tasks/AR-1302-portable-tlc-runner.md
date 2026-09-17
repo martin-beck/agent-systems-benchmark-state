@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T11:50:56+00:00",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Provision or attach a clean x86_64 CI/VM runner with an effective cgroup memory limit of at least 32 GiB, then rerun signed runner commit 5bd411e19 at full-exhaustive; portable-smoke and pr-publication pass on the 20 GiB profile.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "",
+  "owner": "codex-ar1302-runner-20260917-vm",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 118,
+  "task_revision": 119,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T09:50:54+00:00",
+  "updated_at": "2026-09-17T09:50:56+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -388,3 +388,5 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T09:50:54+00:00: Provisioned runner receipt b1457b809 is now available; reclaiming to
   run required full-exhaustive gate and finish exact evidence.
+
+- 2026-09-17T09:50:56+00:00: Claimed by codex-ar1302-runner-20260917-vm.

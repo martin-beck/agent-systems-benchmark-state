@@ -9,12 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Portable-smoke passed on clean isolated VM for candidate f16d2cb41721bf8f17aa5aa75ab01520aeb91eb8; proceed with the planned focused/full state gates and independent review, preserving portable non-exhaustive attestation limits. | codex-ar1293-clean-vm-20260917 |
 | P0 | [AR-1301](tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | Promote only after AR-1287 and AR-1300 are done; implement the executable supervised replay lifecycle fault matrix and qualify it on the approved runner. | coordinator-ar1301-lifecycle-20260917 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1302](tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | Provision a clean portable TLC CI/VM runner for state formal admission. | Provision or attach a clean x86_64 CI/VM runner with an effective cgroup memory limit of at least 32 GiB, then rerun signed runner commit 5bd411e19 at full-exhaustive; portable-smoke and pr-publication pass on the 20 GiB profile. | - |
+| P0 | [AR-1302](tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | Provision a clean portable TLC CI/VM runner for state formal admission. | Provision or attach a clean x86_64 CI/VM runner with an effective cgroup memory limit of at least 32 GiB, then rerun signed runner commit 5bd411e19 at full-exhaustive; portable-smoke and pr-publication pass on the 20 GiB profile. | codex-ar1302-runner-20260917-vm |
 
 ## Blocked
 
