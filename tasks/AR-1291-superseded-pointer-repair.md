@@ -2,22 +2,22 @@
 {
   "branch": "repair/ar-1291-superseded-pointers",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T06:14:20+00:00",
   "depends_on": [],
   "id": "AR-1291",
   "next_action": "Claim the state-repair AR, add the verified successor pointers to AR-1052/1054/1056/1058/1061, reconcile and validate AR-1010 dependency readiness.",
   "observed_branch": "repair/ar-1291-superseded-pointers",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "asb_state_repair_coordinator",
   "plan": "../plans/AR-1291.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair missing successor pointers on superseded dependency tasks.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Repair superseded dependency pointers",
-  "updated_at": "2026-09-17T04:14:10+00:00",
+  "updated_at": "2026-09-17T04:14:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1291-superseded-pointers"
 }
 ---
@@ -28,3 +28,5 @@ records the successor chain already documented in each task's next action. It mu
 product or handoffctl code.
 
 - 2026-09-17T04:14:10+00:00: state-only repair for documented superseded successor chain
+
+- 2026-09-17T04:14:20+00:00: Claimed by asb_state_repair_coordinator.
