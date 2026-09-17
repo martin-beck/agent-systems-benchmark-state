@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute primary strict replay through a supervised runtime cassette lifecycle.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Supervised cassette lifecycle execution",
-  "updated_at": "2026-09-17T00:20:12+00:00",
+  "updated_at": "2026-09-17T00:20:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1281-supervised-cassette-lifecycle"
 }
 ---
@@ -36,3 +36,6 @@ blocked evidence while requiring real process invocation and fault-matrix proof.
   execution from protected main.
 
 - 2026-09-17T00:20:12+00:00: Claimed by asb_ar1024_lifecycle_router.
+
+- 2026-09-17T00:20:27+00:00: Recorded command exit 0; command argv SHA-256
+  def3ba970665af59e194426813d56cfc98aa56216908781bdf51494a1e3d3d31.
