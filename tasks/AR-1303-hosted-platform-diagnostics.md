@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add privacy-safe fixed diagnostics for hosted platform evidence failures.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Privacy-safe hosted platform failure diagnostics",
-  "updated_at": "2026-09-17T12:29:03+00:00",
+  "updated_at": "2026-09-17T12:29:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1303-hosted-platform-diagnostics"
 }
 ---
@@ -136,3 +136,6 @@ native qualification route. This AR must not modify runtime behavior or asb-tui.
   platform tests 12/12 and Ruff green. CI monitoring is now the active action.
 
 - 2026-09-17T12:29:03+00:00: Heartbeat by ar1303_ci_diagnostics.
+
+- 2026-09-17T12:29:07+00:00: Recorded command exit 8; command argv SHA-256
+  43e7e3b98eba305d7edfece7dde3df8ba38a915e2d8da917a37fbcf86ec39b67.
