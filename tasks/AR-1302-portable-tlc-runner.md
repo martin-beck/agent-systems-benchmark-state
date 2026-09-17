@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T14:50:23+00:00",
   "depends_on": [],
   "id": "AR-1302",
-  "next_action": "Data-disk UUID wiring is repaired and proven. Do not run required-pr/full-exhaustive until bounded portable containment capacity prevents native JVM allocation failure; preserve 32 GiB RAM/16 GiB swap/no network/no host mounts and require successful portable-smoke terminal evidence first.",
+  "next_action": "Repair the runner contract explicitly, not by bypass: add a reviewed bounded virtual-address-space limit separate from the 3G physical/swap attested bounds, or use a portable cgroup-backed launcher that preserves 3G memory/swap while allowing JVM native mappings. Add positive/negative tests and update formal evidence before rerunning portable-smoke. Do not launch required-pr/full until smoke has terminal success.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 358,
+  "task_revision": 359,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:50:23+00:00",
+  "updated_at": "2026-09-17T12:50:58+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1190,3 +1190,9 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   required/full tier.
 
 - 2026-09-17T12:50:23+00:00: Claimed by codex-ar1302-capacity-repair.
+
+- 2026-09-17T12:50:58+00:00: Capacity diagnosis: portable runner invokes prlimit --as equal to the
+  attested 3G memory_max. On the clean 32 GiB/16 GiB-swap UUID-wired VM, TLC portable-smoke verified
+  the pinned JAR then failed JVM native allocation (AllocateHeap 16 bytes) under AS=3G. Increasing
+  AS ad hoc would decouple enforcement from the attested contract and weaken the gate; increasing
+  guest RAM does not fix RLIMIT_AS. No rerun performed.

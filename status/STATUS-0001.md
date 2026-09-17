@@ -1643,7 +1643,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | codex-ar1302-capacity-repair | Provision a clean portable TLC CI/VM runner for state formal admission. | Data-disk UUID wiring is repaired and proven. Do not run required-pr/full-exhaustive until bounded portable containment capacity prevents native JVM allocation failure; preserve 32 GiB RAM/16 GiB swap/no network/no host mounts and require successful portable-smoke terminal evidence first. |
+| P0 | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | codex-ar1302-capacity-repair | Provision a clean portable TLC CI/VM runner for state formal admission. | Repair the runner contract explicitly, not by bypass: add a reviewed bounded virtual-address-space limit separate from the 3G physical/swap attested bounds, or use a portable cgroup-backed launcher that preserves 3G memory/swap while allowing JVM native mappings. Add positive/negative tests and update formal evidence before rerunning portable-smoke. Do not launch required-pr/full until smoke has terminal success. |
 
 ### Blocked (50)
 
