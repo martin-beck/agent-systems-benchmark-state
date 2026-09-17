@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T15:45:38+00:00",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Run owner-authorized portable requalification using /srv/data/projects/asb-state-tlc-vm-32g receipt: verify exact f1931686c data image and attestation hashes, then build a fresh image for 39c8933f5 before required/full gates.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "",
+  "owner": "codex-ar1293-requalify-fresh2",
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 154,
+  "task_revision": 155,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T14:15:35+00:00",
+  "updated_at": "2026-09-17T14:15:38+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -555,3 +555,5 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T14:15:35+00:00: Resume authorized to provision a fresh candidate-specific data image
   from exact signed 39c8933f5; preserve fail-closed portable-before-required/full ordering.
+
+- 2026-09-17T14:15:38+00:00: Claimed by codex-ar1293-requalify-fresh2.
