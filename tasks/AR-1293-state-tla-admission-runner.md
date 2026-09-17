@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T11:21:03+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Provide a clean CI/VM runner with portable timeout/prlimit capacity and adequate swap, then rerun portable-smoke; otherwise resume AR-1293 only when that infrastructure is available. Candidate f16d2cb41 remains the reviewed code checkpoint.",
+  "next_action": "Portable-smoke passed on clean isolated VM for candidate f16d2cb41721bf8f17aa5aa75ab01520aeb91eb8; proceed with the planned focused/full state gates and independent review, preserving portable non-exhaustive attestation limits.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T09:40:48+00:00",
+  "updated_at": "2026-09-17T09:41:37+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -255,3 +255,13 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T09:40:48+00:00: Recorded command exit 0; command argv SHA-256
   2b571841f680fd0f7816506372771c7e709a76ffe241dfca1dfaf77bb1fcabd9.
+
+- 2026-09-17T09:41:37+00:00: Clean VM evidence: /srv/data/projects/asb-state-tlc-vm, Ubuntu 24.04.5
+  guest kernel 6.8.0-139-generic x86_64, QEMU 8.2.2, 4 vCPU, 16 GiB RAM, 16 GiB guest swap, no
+  network/no host mounts. Through handoffctl run, formal/handoffctl/verify.sh --tier portable-smoke
+  completed exit 0 at 2026-09-17T09:40:42Z using pinned TLA JAR SHA-256
+  936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88; TLC generated 9 states, 4
+  distinct, no error. Attestation status success, commit f16d2cb41721bf8f17aa5aa75ab01520aeb91eb8,
+  profile portable-smoke, tree b1707846a525b845cf9cf118ef4566df1c6cc355, model outcome
+  HandoffctlBinding success, resource bounds heap 2048m/memory 3G/swap 3G/workers 2. This is
+  non-exhaustive and does not prove implementation correspondence or full claims.
