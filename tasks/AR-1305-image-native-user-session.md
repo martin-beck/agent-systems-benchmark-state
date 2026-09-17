@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1305-image-native-user-session",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T15:40:53+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "codex-ar1305-image-session-20260917",
+  "owner": "",
   "plan": "../plans/AR-1305.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Qualify image-native D-Bus user-session support for required TLC containment.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-17T15:13:03+00:00",
+  "updated_at": "2026-09-17T15:13:21+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -91,3 +91,11 @@ limits and fail-closed behavior remain unchanged.
 
 - 2026-09-17T15:13:03+00:00: Recorded command exit 1; command argv SHA-256
   97d4ce142e20c933433fd5827845597f1b490978a0c7c4b28add66f4d7c4e8e4.
+
+- 2026-09-17T15:13:21+00:00: libguestfs-tools installation completed (1:1.52.0-5ubuntu3), and a
+  fresh root copy ar1305-root-fresh.qcow2 was created without mutating stale input. virt-customize
+  failed before modification: /usr/bin/supermin exited status 1; no fresh image package injection or
+  transient qualification occurred. The retry command also confirmed this tool version lacks the
+  attempted inspection option. Next action: repair/qualify libguestfs supermin appliance (capture
+  full LIBGUESTFS_DEBUG/TRACE privately), then rerun virt-customize on the fresh copy and record
+  resulting image hash/provenance.
