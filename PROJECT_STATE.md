@@ -33,7 +33,7 @@ Generated from local Git and GitHub. Do not edit.
 | 35197133528 | `6c694f8b26ba` | push | Hosted portability and native qualification | completed:success |
 | 35197133520 | `6c694f8b26ba` | push | Huawei MIT source headers | completed:success |
 | 35197133491 | `6c694f8b26ba` | push | Formal assurance | completed:success |
-| 35197133486 | `6c694f8b26ba` | push | Rust verification | in_progress:- |
+| 35197133486 | `6c694f8b26ba` | push | Rust verification | completed:failure |
 | 35197133474 | `6c694f8b26ba` | push | Emulated aarch64 portability | completed:success |
 | 35195616656 | `9263f8310cbf` | push | Huawei MIT source headers | completed:success |
 | 35195616652 | `9263f8310cbf` | push | Fault assurance | completed:success |
