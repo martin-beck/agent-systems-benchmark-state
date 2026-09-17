@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T05:17:44+00:00",
   "depends_on": [],
   "id": "AR-1289",
-  "next_action": "PR #211 is open at exact clean head 53981d6; monitor all required checks to terminal, retain merge block, and request independent review. Do not merge until green.",
+  "next_action": "Policy check 35177646319 failed only on pre-existing Gemini timing assertion; exact targeted test passed 3/3 locally. Failed hosted job rerun requested once; monitor rerun plus remaining required checks, merge only if all terminal-success.",
   "observed_branch": "fix/ar-1289-formal-lock-gate",
   "observed_dirty": 0,
   "observed_head": "53981d651645594a65aa7e69c9faa28e0770b6a6",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the stale formal Cargo.lock required by hosted exact-head gates.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Repair formal lock gate",
-  "updated_at": "2026-09-17T03:23:54+00:00",
+  "updated_at": "2026-09-17T03:24:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1289-formal-lock-gate"
 }
 ---
@@ -110,3 +110,10 @@ be used with `--locked`. Repair and verify this gate independently of feature AR
 
 - 2026-09-17T03:23:54+00:00: Recorded command exit 0; command argv SHA-256
   fecdbd7127c878562df77c452fc1e5086eb738a97698d06c1491030241f35951.
+
+- 2026-09-17T03:24:17+00:00: Diagnosed hosted Repository quality failure: coverage test ran 172
+  passed/1 ignored and failed gemini::tests::malformed_ready_marker_fails_fast_and_cleans_run_root
+  at assertion started.elapsed() < 1s. The lock-only diff does not touch Gemini. Exact targeted
+  cargo test on clean 53981d6 passed 3/3 consecutive runs (0.04s, 0.04s, 0.03s); classify as runner
+  timing flake under coverage instrumentation. Requested one controlled rerun of failed workflow
+  35177646319 via gh run rerun --failed; no product changes.

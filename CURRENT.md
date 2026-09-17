@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1289](tasks/AR-1289-formal-lock-gate.md): Repair formal lock gate | Repair the stale formal Cargo.lock required by hosted exact-head gates. | PR #211 is open at exact clean head 53981d6; monitor all required checks to terminal, retain merge block, and request independent review. Do not merge until green. | asb_ar1024_lifecycle_router |
+| P0 | [AR-1289](tasks/AR-1289-formal-lock-gate.md): Repair formal lock gate | Repair the stale formal Cargo.lock required by hosted exact-head gates. | Policy check 35177646319 failed only on pre-existing Gemini timing assertion; exact targeted test passed 3/3 locally. Failed hosted job rerun requested once; monitor rerun plus remaining required checks, merge only if all terminal-success. | asb_ar1024_lifecycle_router |
 | P1 | [AR-1288](tasks/AR-1288-certificate-chain-authz.md): Runtime certificate issuance and chain validation | Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814. | PR #210 exact head 7b3ff1d3a87436c2a7299d452bb4220dd7847a4c remains under hosted validation. Green: Loom/state, TLC/Alloy, Kani, fuzz, mutation, platform, retained-faults, headers, AWQ. Pending: emulated aarch64, Policy/coverage/supply-chain, and Rust checks. Formal lock repair is pushed and separately tracked by PR #211; keep AR-1288 open and do not merge until all PR #210 checks plus final independent review are green. | asb_ar0909_lifecycle_repair |
 
 ## Open
