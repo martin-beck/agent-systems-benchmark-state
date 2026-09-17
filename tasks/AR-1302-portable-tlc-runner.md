@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T15:36:56+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Use run_lifecycle from signed commit 1fd5e31cf to create a fresh overlay, boot the UUID-serial data disk, run guest UUID/mount preflight, then execute f1931686c portable-smoke and capture sanitized terminal attestation. Do not claim qualification from container evidence.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "codex-ar1302-prepared-root",
+  "owner": "",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 431,
+  "task_revision": 432,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T13:36:56+00:00",
+  "updated_at": "2026-09-17T13:37:31+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1439,3 +1439,11 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   preflight and exact f1931686c portable-smoke with bounded cleanup.
 
 - 2026-09-17T13:36:56+00:00: Claimed by codex-ar1302-prepared-root.
+
+- 2026-09-17T13:37:31+00:00: Prepared-root repair could not safely proceed. Receipt SHA256SUMS
+  authorizes only the base Ubuntu image digest 612b2c0c...; the prepared root overlay
+  /srv/data/projects/asb-state-tlc-vm-32g/asb-state-tlc-32g.qcow2 has observed SHA256 49d5d97c...
+  but no matching receipt provenance. Existing exact-preflight and qemu scripts are private
+  historical artifacts and cannot be reused as the reviewed launcher/seed. No VM UUID/mount evidence
+  or f1931686c portable-smoke attestation was produced. Next action: create a reviewed seed/receipt
+  that records the prepared root hash and offline mount service, then rerun with -net none.
