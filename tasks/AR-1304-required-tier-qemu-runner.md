@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1304-required-tier-qemu-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T15:33:36+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "codex-ar1304-required-runner-20260917",
+  "owner": "",
   "plan": "../plans/AR-1304.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Create a clean required-containment QEMU runner for formal publication evidence.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Required-tier QEMU user-bus runner",
-  "updated_at": "2026-09-17T15:05:12+00:00",
+  "updated_at": "2026-09-17T15:05:51+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner"
 }
 ---
@@ -258,3 +258,11 @@ logs, or claim full-exhaustive evidence before required attestation is green.
 
 - 2026-09-17T15:05:12+00:00: Recorded command exit 0; command argv SHA-256
   893cab2f5ec1c60a54bc5b18799281e8449e086bbc7e297b8ab146e79a804240.
+
+- 2026-09-17T15:05:51+00:00: Fresh retry with signed systemd-activation/native-user-bus seed
+  completed and powered down cleanly. user@1000 and asb-session-bus.service started, but exact
+  required transient still failed: Failed to start transient service unit: Transport endpoint is not
+  connected; /run/user/1000 unmount also failed during shutdown. No required pr-publication
+  attestation exists. Next action: repair image-native user manager transport (not standalone dbus
+  socket) or provision a supported dbus-user-session image; preserve six resource properties and
+  fail closed.
