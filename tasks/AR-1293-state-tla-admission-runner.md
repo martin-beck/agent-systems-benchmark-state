@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T19:06:13+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Run fresh required-tier launcher against this clean image, verify direct debugfs attestation commit equals 519ba3dd4, receipt/image digest and serial; do not run full until required evidence is green.",
+  "next_action": "Run required launcher using the fresh 6a1249fc8 image; inspect mountpoint marker, PR result, direct debugfs attestation commit equality, receipt and serial before any full run.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 386,
+  "task_revision": 387,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T18:36:30+00:00",
+  "updated_at": "2026-09-17T18:37:02+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1299,3 +1299,10 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T18:36:30+00:00: Recorded command exit 0; command argv SHA-256
   515d32542237e1dd81aad8ca5da313004967d9b9c16b40d027a2a04c0aad45c7.
+
+- 2026-09-17T18:37:02+00:00: Fresh direct-ext4 image rebuilt from scratch at private runner path for
+  exact candidate 6a1249fc8. Populated top-level state/git/jvm/jar, bare git HEAD resolves
+  6a1249fc8, unmounted before checks. e2fsck -fy followed by e2fsck -fn both complete clean with no
+  reported errors. Final image SHA256
+  8e45429efd5e1ea3d22dbfe63a99e9210f4a214f66a1cd3fe17bd3146554566d. Earlier 519 image/run is
+  rejected and not reused for qualification.
