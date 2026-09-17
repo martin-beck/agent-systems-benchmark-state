@@ -10,7 +10,7 @@
     "AR-1239"
   ],
   "id": "AR-1284",
-  "next_action": "Inspect merged AR-1282 transport and implement the smallest runtime-issued primary replay lifecycle entrypoint; then focused tests.",
+  "next_action": "Split a runtime-owned launch-factory/CLI entrypoint successor: current protected main has only caller-constructible ReplayTransportIssuer and SandboxBackend APIs, so AR-1284 cannot safely wire primary replay without fabricating authority.",
   "observed_branch": "feature/ar-1284-strict-replay-lifecycle",
   "observed_dirty": 0,
   "observed_head": "f9ddf7ef6b3b2a96dd7faee04906f4e5cb3aa8e1",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect authenticated replay transport to the runtime-owned primary strict-replay lifecycle.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Runtime-owned strict-replay lifecycle execution",
-  "updated_at": "2026-09-17T01:26:28+00:00",
+  "updated_at": "2026-09-17T01:26:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1284-strict-replay-lifecycle"
 }
 ---
@@ -83,3 +83,12 @@ record the exact blocker and split a further dependency-safe successor instead o
   36c571ad891aa3f703a376cee9ea11d1c6f71c532e6ba09b743b20cfa7d4d72e.
 
 - 2026-09-17T01:26:28+00:00: Heartbeat by asb_ar1024_lifecycle_router.
+
+- 2026-09-17T01:26:31+00:00: Implementation audit blocker: protected origin/main f9ddf7ef includes
+  AR-1282 transport and its focused runtime transport suite passes 6/6. The primary CLI replay() at
+  crates/asb-cli/src/lib.rs:399 only decodes/indexes a cassette and emits metadata; it does not
+  invoke runtime supervision. ReplayTransportIssuer::bind and SandboxBackend::new/spawn_launch are
+  caller-constructible APIs; no runtime-owned factory supplies authenticated SandboxLaunchInput,
+  ResourceLease, pinned supervisor/sidecar commands, or a cassette service callback. Adding a
+  CLI-side constructor would violate AR acceptance and prior review boundaries. AR-1284 worktree is
+  clean at f9ddf7ef; no product mutation and no asb-tui paths touched.

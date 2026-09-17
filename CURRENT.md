@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1284](tasks/AR-1284-runtime-strict-replay-lifecycle.md): Runtime-owned strict-replay lifecycle execution | Connect authenticated replay transport to the runtime-owned primary strict-replay lifecycle. | Inspect merged AR-1282 transport and implement the smallest runtime-issued primary replay lifecycle entrypoint; then focused tests. | asb_ar1024_lifecycle_router |
+| P0 | [AR-1284](tasks/AR-1284-runtime-strict-replay-lifecycle.md): Runtime-owned strict-replay lifecycle execution | Connect authenticated replay transport to the runtime-owned primary strict-replay lifecycle. | Split a runtime-owned launch-factory/CLI entrypoint successor: current protected main has only caller-constructible ReplayTransportIssuer and SandboxBackend APIs, so AR-1284 cannot safely wire primary replay without fabricating authority. | asb_ar1024_lifecycle_router |
 
 ## Open
 
