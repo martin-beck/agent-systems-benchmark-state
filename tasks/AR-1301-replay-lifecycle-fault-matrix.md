@@ -8,7 +8,7 @@
     "AR-1300"
   ],
   "id": "AR-1301",
-  "next_action": "PR #219 is updated to exact signed head d960dfc; monitor all required exact-head CI checks, diagnose failures from artifacts, merge only after terminal green, then post-merge verify and release AR-1301.",
+  "next_action": "PR #219 is updated to exact signed head ba2b20d; monitor all required exact-head CI checks, diagnose failures from artifacts, merge only after terminal green, then post-merge verify and release AR-1301.",
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "observed_dirty": 0,
   "observed_head": "ba2b20dd8a6ff7e2dc60bfa90a6c36906c878834",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 235,
+  "task_revision": 236,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:53:38+00:00",
+  "updated_at": "2026-09-17T11:53:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -659,3 +659,9 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
 
 - 2026-09-17T11:53:38+00:00: Recorded command exit 0; command argv SHA-256
   e064f1d4f27086c055979cb53e3dd8089126ab6469fb20b01927e41713771b5c.
+
+- 2026-09-17T11:53:59+00:00: Hosted subchecks independently pass locally: process_boundary 8/8,
+  asb-metrics native_linux 6/6, sandbox_boundary 15/15. Required-native sandbox_boundary with
+  ASB_REQUIRE_NATIVE_SANDBOX=1 passes 15/15. Full locked serialized workspace gate passes exit 0;
+  fmt, clippy, diff-check and signature/DCO pass. ba2b20d pushes the remaining two native supervisor
+  hosted-skip guards and is now the exact PR head.
