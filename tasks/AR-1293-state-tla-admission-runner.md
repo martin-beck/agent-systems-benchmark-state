@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 389,
+  "task_revision": 390,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T18:38:02+00:00",
+  "updated_at": "2026-09-17T18:38:16+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1316,3 +1316,6 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   result/attestation. The clean image itself remains fsck-verified and exact candidate-populated. Do
   not kill unrelated holder; next action is isolate a copy/new image path, verify no holder, then
   rerun.
+
+- 2026-09-17T18:38:16+00:00: Recorded command exit 0; command argv SHA-256
+  3bd8ccb328402eb54ef757b462a10a96a0f1ee44f718ca9f2d5637cdc1e23f7b.
