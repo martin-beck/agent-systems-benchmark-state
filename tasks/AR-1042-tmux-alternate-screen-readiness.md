@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-alternate-screen-readiness",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T05:27:28+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1042",
   "next_action": "Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification.",
-  "owner": "asb_ar1042_tui_readiness",
+  "owner": "",
   "plan": "../plans/AR-1042.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Make tmux TUI readiness validate the displayed alternate screen deterministically.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Capture alternate-screen TUI readiness deterministically",
-  "updated_at": "2026-09-17T03:27:28+00:00",
+  "updated_at": "2026-09-17T03:27:30+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-alternate-screen-readiness"
 }
 ---
@@ -271,3 +271,11 @@ emit bounded diagnostics; do not change renderer or application semantics.
 - 2026-09-17T03:26:41+00:00: Claimed by asb_ar1042_tui_readiness.
 
 - 2026-09-17T03:27:28+00:00: Heartbeat by asb_ar1042_tui_readiness.
+
+- 2026-09-17T03:27:30+00:00: Verified downstream recovery chain: AR-1042 implementation PR #13
+  merged as eb4960e816f2fe7cf0f01456655662d33618feb7; follow-on tmux
+  authority/startup/socket/foreground-group diagnostics were merged through the authorized successor
+  chain. Current asb-tui protected main c492a7856da48d7eb3ca9e8df82ae3ce3c9d491a has the
+  alternate_on=1 bracketed capture-pane -p contract, exact pane PID/TTY/tpgid revalidation, bounded
+  diagnostics and negative tests. Trusted main verification run 35099638590 at exact
+  c492a7856da48d7eb3ca9e8df82ae3ce3c9d491a is SUCCESS; no ASB source change required.
