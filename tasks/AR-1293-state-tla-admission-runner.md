@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 488,
+  "task_revision": 489,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T19:14:43+00:00",
+  "updated_at": "2026-09-17T19:14:59+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1633,3 +1633,6 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   evidence. Candidate 903a87844 now attempts direct debugfs extraction first and keeps guestfish
   only as a partitioned-image fallback. Focused Ruff, format, mypy, and 23 tests pass; commit is
   SSH-signed with DCO.
+
+- 2026-09-17T19:14:59+00:00: Recorded command exit 0; command argv SHA-256
+  de390041ff22a74ea368bf1ec15b274244c1841cae1bbb18e635f3746dead0e3.
