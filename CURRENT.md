@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1304](tasks/AR-1304-required-tier-qemu-runner.md): Required-tier QEMU user-bus runner | Create a clean required-containment QEMU runner for formal publication evidence. | Independent exact-head review of signed commits 56001d6e2, 151bd0f99, de489eac9, and current seed/receipt chain; then hand required pr-publication evidence to AR-1293. Do not run full-exhaustive until coordinator accepts the attestation. | codex-ar1304-required-runner-20260917 |
-
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -230,6 +224,7 @@ Never edit this file directly.
 | P0 | [AR-1299](tasks/AR-1299.md): Complete authenticated agent catalog identity metadata | Complete authenticated agent catalog signer, provenance, SBOM and license metadata. | No further action; protected merge 7ea3e001dffa13eca5ff0f05444c2b3b9d4df928, all seven exact-main workflows, signature/DCO, and merge-tree policy are verified. | - |
 | P0 | [AR-1300](tasks/AR-1300-runtime-cassette-dispatch-seam.md): Runtime-to-replay cassette dispatch seam | Connect runtime-issued cassette operations to the real strict-replay dispatch path. | No further action; merged commit 9263f8310cbf4d222d09d0d1eaef4b4bdfb72e05 and exact-main post-merge gates are green. | - |
 | P0 | [AR-1302](tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | Provision a clean portable TLC CI/VM runner for state formal admission. | Use run_lifecycle from signed commit 1fd5e31cf to create a fresh overlay, boot the UUID-serial data disk, run guest UUID/mount preflight, then execute f1931686c portable-smoke and capture sanitized terminal attestation. Do not claim qualification from container evidence. | - |
+| P0 | [AR-1304](tasks/AR-1304-required-tier-qemu-runner.md): Required-tier QEMU user-bus runner | Create a clean required-containment QEMU runner for formal publication evidence. | Independent exact-head review of signed commits 56001d6e2, 151bd0f99, de489eac9, and current seed/receipt chain; then hand required pr-publication evidence to AR-1293. Do not run full-exhaustive until coordinator accepts the attestation. | - |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. | - |
 | P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. | - |
 | P1 | [AR-0004](tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. | - |

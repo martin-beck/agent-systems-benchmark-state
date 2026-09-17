@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1304-required-tier-qemu-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T17:17:24+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "codex-ar1304-required-runner-20260917",
+  "owner": "",
   "plan": "../plans/AR-1304.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Create a clean required-containment QEMU runner for formal publication evidence.",
-  "task_revision": 273,
+  "task_revision": 274,
   "title": "Required-tier QEMU user-bus runner",
-  "updated_at": "2026-09-17T16:47:24+00:00",
+  "updated_at": "2026-09-17T16:48:46+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner"
 }
 ---
@@ -893,3 +893,9 @@ logs, or claim full-exhaustive evidence before required attestation is green.
   fallback or gate weakening.
 
 - 2026-09-17T16:47:24+00:00: Heartbeat by codex-ar1304-required-runner-20260917.
+
+- 2026-09-17T16:48:46+00:00: Coordinator accepted independent exact-head review at 56001d6e2. Clean
+  PR8 required QEMU evidence verified: receipt
+  ca9c4d9368f8c137d65354fd22c54c118d33d7e1a9af5ef4e5af99b3466c1c11, exact newline markers, direct
+  /usr/bin/systemd-run, required containment and pinned inputs. Handoff ready for AR-1293;
+  full-exhaustive remains gated until AR-1293 accepts this evidence.
