@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-17T06:03:46+00:00",
+  "updated_at": "2026-09-17T06:04:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
@@ -205,4 +205,7 @@ do not touch or claim asb-tui behavior.
   51888447bab426a09bd9dcc70f3db6853b48759ee8cee15a872aad15ae263f85.
 
 - 2026-09-17T06:03:46+00:00: Recorded command exit 1; command argv SHA-256
+  608b70d9876c923b6f8c0acc28d2bc72c2755d4d5f11c0eacee171a2eb81f791.
+
+- 2026-09-17T06:04:09+00:00: Recorded command exit 0; command argv SHA-256
   608b70d9876c923b6f8c0acc28d2bc72c2755d4d5f11c0eacee171a2eb81f791.
