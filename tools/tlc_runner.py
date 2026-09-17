@@ -263,6 +263,7 @@ def build_command(
         raise AdmissionError("JVM heap must be below the cgroup memory limit")
     java = [
         "java",
+        "-Djava.io.tmpdir=" + str(Path(os.environ.get("TMPDIR", "/tmp"))),
         f"-Xmx{heap}",
         "-XX:+UseSerialGC",
         "-XX:MaxMetaspaceSize=256m",

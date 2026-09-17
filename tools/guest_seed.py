@@ -21,6 +21,8 @@ def build_user_data(tier: str) -> str:
     mode = env["TLC_CGROUP_MODE"]
     result_name = tier.upper().replace("-", "_")
     return f'''#cloud-config
+package_update: false
+package_upgrade: false
 bootcmd:
   - [mkdir, -p, /usr/local/libexec/asb-offline]
   - [systemctl, mask, systemd-networkd-wait-online.service]
@@ -35,7 +37,7 @@ write_files:
         if [ "$1" = "--output" ]; then out="$2"; shift 2; else shift; fi
       done
       [ -n "$out" ]
-      printf '%s  %s\n' 936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88 /mnt/asb-data/tla2tools.jar | sha256sum --check --strict
+      printf '%s  %s\\n' 936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88 /mnt/asb-data/tla2tools.jar | sha256sum --check --strict
       cp /mnt/asb-data/tla2tools.jar "$out"
   - path: /run/asb-validate.py
     permissions: "0755"
@@ -53,6 +55,7 @@ runcmd:
   - [mkdir, -p, /mnt/asb-data]
   - [mount, UUID={DATA_UUID}, /mnt/asb-data]
   - [chown, 1000:1000, /mnt/asb-data]
+  - [chown, -R, 1000:1000, /mnt/asb-data/state]
   - [mkdir, -p, /mnt/asb-data/tmp, /mnt/asb-data/evidence]
   - [chmod, "1777", /mnt/asb-data/tmp]
   - [systemctl, start, user-runtime-dir@1000.service]
@@ -61,7 +64,7 @@ runcmd:
   - [runuser, -u, asb, --, env, XDG_RUNTIME_DIR=/run/user/1000, DBUS_SESSION_BUS_ADDRESS=unix:path={BUS}, systemctl, --user, is-system-running]
   - [test, -S, {BUS}]
   - [runuser, -u, asb, --preserve-environment, --, /bin/bash, -c, 'XDG_RUNTIME_DIR=/run/user/1000 DBUS_SESSION_BUS_ADDRESS=unix:path={BUS} /usr/bin/systemd-run --user --quiet --wait --collect --pipe --service-type=exec --property=MemoryMax=3G --property=MemorySwapMax=3G --property=CPUQuota=200% --property=TasksMax=64 --property=KillMode=control-group --property=RuntimeMaxSec={timeout} -- /bin/true; rc=$?; printf "{result_name}_TRANSIENT_RC=%s\\n" "$rc" | tee /tmp/{tier}-transient.result; test "$rc" = 0']
-  - [runuser, -u, asb, --preserve-environment, --, /bin/bash, -c, 'set -eu; export XDG_RUNTIME_DIR=/run/user/1000 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus PATH=/usr/local/libexec/asb-offline:/mnt/asb-data/jvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin TLC_CGROUP_MODE={mode} TLC_TIMEOUT_SECONDS={timeout} TLC_ADDRESS_SPACE_MAX=8G TLC_MEMORY_MAX=3G TLC_JAR_PATH=/mnt/asb-data/tla2tools.jar TLC_JAR_SHA256=936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88 GIT_DIR=/mnt/asb-data/git GIT_WORK_TREE=/mnt/asb-data/state TMPDIR=/mnt/asb-data/tmp TLC_ATTESTATION_PATH=/mnt/asb-data/evidence/{tier}-attestation.json; cd /mnt/asb-data/state/formal/handoffctl; hash -r; test -x /usr/local/libexec/asb-offline/curl; command -v curl; curl --output /tmp/tla2tools.probe; ./verify.sh --tier {tier}; rc=$?; printf "{result_name}_RC=%s\\n" "$rc" | tee /tmp/{tier}.result /mnt/asb-data/evidence/{tier}.result; test "$rc" = 0']
+  - [runuser, -u, asb, --preserve-environment, --, /bin/bash, -c, 'set -eu; export XDG_RUNTIME_DIR=/run/user/1000 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus PATH=/usr/local/libexec/asb-offline:/mnt/asb-data/jvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin TLC_CGROUP_MODE={mode} TLC_TIMEOUT_SECONDS={timeout} TLC_ADDRESS_SPACE_MAX=8G TLC_MEMORY_MAX=3G TLC_JAR_PATH=/mnt/asb-data/tla2tools.jar TLC_JAR_SHA256=936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88 TMPDIR=/mnt/asb-data/tmp TLC_ATTESTATION_PATH=/mnt/asb-data/evidence/{tier}-attestation.json; cd /mnt/asb-data/state/formal/handoffctl; hash -r; test -x /usr/local/libexec/asb-offline/curl; command -v curl; curl --output /tmp/tla2tools.probe; ./verify.sh --tier {tier}; rc=$?; printf "{result_name}_RC=%s\\n" "$rc" | tee /tmp/{tier}.result /mnt/asb-data/evidence/{tier}.result; test "$rc" = 0']
   - [runuser, -u, asb, --preserve-environment, --, /usr/bin/python3, /run/asb-validate.py]
   - [systemctl, poweroff]
 '''

@@ -347,7 +347,6 @@ class TlcRunnerTests(unittest.TestCase):
             "user@1000.service",
             "DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus",
             "test, -S, /run/user/1000/bus",
-            "GIT_DIR=/mnt/asb-data/git",
             "TMPDIR=/mnt/asb-data/tmp",
             "TLC_ATTESTATION_PATH=/mnt/asb-data/evidence/full-exhaustive-attestation.json",
             "/run/asb-validate.py",
