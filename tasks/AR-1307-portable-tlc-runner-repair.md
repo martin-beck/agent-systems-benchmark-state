@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Dispatch exact a69b29c1c formal workflow and inspect diagnostic. If it identifies canonical-lock/user-bus capacity, preserve as infrastructure blocker and run only on approved clean QEMU/CI lane; never substitute private lock or host run for publication evidence.",
+  "next_action": "Provision/use a disposable digest-pinned QEMU/CI runner with a booted user@1000 systemd/D-Bus bus, no NIC or host mounts, staged pinned TLA JAR, and current exact b8db467ee source; run repeated portable-smoke then required pr-publication/full tiers and validate schema receipts.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 114,
+  "task_revision": 115,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T23:05:22+00:00",
+  "updated_at": "2026-09-17T23:05:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -387,3 +387,10 @@ and protected publication sequence.
 - 2026-09-17T23:05:13+00:00: Heartbeat by codex-ar1307-runner-repair-20260918.
 
 - 2026-09-17T23:05:22+00:00: Heartbeat by codex-ar1307-runner-repair-20260918.
+
+- 2026-09-17T23:05:33+00:00: Exact-head workflow 35285103922 at b8db467ee now emits the real
+  failure: TLC child diagnostic: Failed to connect to bus: No medium found; required full-exhaustive
+  exits 1 and correctly emits no attestation. This proves the hosted state runner has no usable
+  per-user systemd bus; it is an infrastructure capacity/runner-property failure, not a model/input
+  result. Signed+DCO code b8db467ee adds bounded sanitized child diagnostics and is pushed to PR
+  #24. Do not substitute portable mode/private lock for required evidence.
