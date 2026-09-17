@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1304.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Create a clean required-containment QEMU runner for formal publication evidence.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Required-tier QEMU user-bus runner",
-  "updated_at": "2026-09-17T15:05:51+00:00",
+  "updated_at": "2026-09-17T15:25:56+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner"
 }
 ---
@@ -266,3 +266,6 @@ logs, or claim full-exhaustive evidence before required attestation is green.
   attestation exists. Next action: repair image-native user manager transport (not standalone dbus
   socket) or provision a supported dbus-user-session image; preserve six resource properties and
   fail closed.
+
+- 2026-09-17T15:25:56+00:00: Fix seed to run required transient as user asb, matching historical
+  exact-preflight success; retry fresh image
