@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1287.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide a delegated runner for real strict-replay child lifecycle qualification.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Delegated sandbox runner capability",
-  "updated_at": "2026-09-17T07:04:04+00:00",
+  "updated_at": "2026-09-17T07:51:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1287-delegated-sandbox-runner"
 }
 ---
@@ -63,3 +63,9 @@ lifecycle completion until the actual child and fault fixtures run in the qualif
   locally; AR-1286 positive lifecycle remains blocked and must not be claimed. Next action:
   coordinator provision an approved signed/pinned delegated runner or successor AR; preserve AR-1286
   fail-closed.
+
+- 2026-09-17T07:51:33+00:00: Created disposable KVM Ubuntu 24.04 VM under
+  /srv/data/projects/asb-replay-vm with checksum-verified cloud image; installed pinned QEMU 8.2.2.
+  Guest-only AppArmor userns setting enabled. As user asb, unshare -Ur, bwrap --unshare-net, user
+  systemd-run scope, and denied-egress probes pass; qualified AR-1286 runtime test passes. Continue
+  full lifecycle qualification and record bounded evidence.
