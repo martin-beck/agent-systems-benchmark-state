@@ -29,7 +29,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35178483402 | `2de393a05cc3` | dynamic | Dependabot Updates | queued:- |
+| 35178483402 | `2de393a05cc3` | dynamic | Dependabot Updates | in_progress:- |
 | 35178479939 | `2de393a05cc3` | dynamic | Dependabot Updates | in_progress:- |
 | 35178407894 | `2de393a05cc3` | push | Formal assurance | in_progress:- |
 | 35178407868 | `2de393a05cc3` | push | Emulated aarch64 portability | in_progress:- |
