@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Land the authenticated runtime-to-CLI replay transport foundation.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Authenticated replay transport foundation",
-  "updated_at": "2026-09-17T00:35:07+00:00",
+  "updated_at": "2026-09-17T00:36:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1282-authenticated-replay-transport"
 }
 ---
@@ -165,3 +165,6 @@ claim primary command execution.
   suite; all workspace suites green), fmt --check, clippy -D warnings, rustdoc, and
   repository_policy all pass. Earlier exit-101 was missing-docs lint and is fixed. Request
   independent re-review; do not claim primary CLI execution.
+
+- 2026-09-17T00:36:04+00:00: Recorded command exit 0; command argv SHA-256
+  8046e99cc57708ed2e3912e81e79cd970c8790256e9d70cf33b78c8d53a97f69.
