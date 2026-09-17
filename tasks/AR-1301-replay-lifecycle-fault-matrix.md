@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 150,
+  "task_revision": 151,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:28:48+00:00",
+  "updated_at": "2026-09-17T11:28:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -426,3 +426,6 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
 - 2026-09-17T11:28:48+00:00: Gate failure at 11:28:32Z: cargo clippy exited 101 on test-only useless
   conversion mode.clone().into() in the new supervised negative matrix. This is a strict-lint setup
   failure, not a runtime/product behavior failure. Replace with mode.clone(), rerun all gates.
+
+- 2026-09-17T11:28:55+00:00: Recorded command exit 0; command argv SHA-256
+  aae76b2c1f4c961d89ea16c16414a707e5fda3e0ce22d8d19bd228a493333b46.
