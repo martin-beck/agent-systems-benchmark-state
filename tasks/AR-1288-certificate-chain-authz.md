@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1288-certificate-chain-authz",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T04:44:31+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0813"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1288-certificate-chain-authz",
   "observed_dirty": 0,
   "observed_head": "7b3ff1d3a87436c2a7299d452bb4220dd7847a4c",
-  "owner": "asb_ar0909_lifecycle_repair",
+  "owner": "",
   "plan": "../plans/AR-1288.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 151,
+  "task_revision": 152,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T03:35:15+00:00",
+  "updated_at": "2026-09-17T03:39:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
@@ -469,3 +469,10 @@ must not reuse unmerged strict-replay or asb-tui branches.
 
 - 2026-09-17T03:35:15+00:00: Recorded command exit 0; command argv SHA-256
   aaa930b9f54412e86bfb11b24e6f819978f00165409dff9a67995ebd72237ce6.
+
+- 2026-09-17T03:39:36+00:00: Completed and merged through protected signed workflow. Main is
+  2de393a05cc3c65f3495238abb19408e8218e483 with verified SSH signature/DCO, parents
+  2fd90557a4e7be32fab590f47bc501462127c1c1 and 7b3ff1d3a87436c2a7299d452bb4220dd7847a4c, preserved
+  tree 093c44e3ad55a9b3c4b02b89aee54364c9121c7a. Exact-main workflows 35178407808, 35178407818,
+  35178407832, 35178407868, 35178407894 all terminal SUCCESS. PR151/Dependabot run 35178551451 is
+  separate AR-1290 scope and does not block AR-1288.
