@@ -12,17 +12,17 @@
   "id": "AR-1285",
   "next_action": "Promote after dependency verification; implement an opaque runtime-owned launch factory and CLI entrypoint boundary.",
   "observed_branch": "feature/ar-1285-runtime-launch-factory",
-  "observed_dirty": 3,
-  "observed_head": "20bedf21015207905087a37036a7a20bc4e73020",
+  "observed_dirty": 0,
+  "observed_head": "daba285cdc61b0f2c23be89ef1254b180e58c350",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1285.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-owned launch factory for authenticated strict-replay CLI execution.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Runtime-owned strict-replay launch factory",
-  "updated_at": "2026-09-17T01:40:45+00:00",
+  "updated_at": "2026-09-17T01:40:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1285-runtime-launch-factory"
 }
 ---
