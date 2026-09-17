@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T22:14:27+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Monitor active full-exhaustive QEMU for candidate ada383cea until terminal result; validate attestation, overlay-bound receipt, and all exact serial markers before acceptance.",
+  "next_action": "Wait for old ada383cea VM termination; then rebuild exact-head fa57625d9 image/seed, run required and independently re-reviewed full gates, validating overlay digest and exact serial markers.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 637,
+  "task_revision": 638,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T21:14:34+00:00",
+  "updated_at": "2026-09-17T21:15:12+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1990,3 +1990,9 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T21:14:34+00:00: Recorded command exit 0; command argv SHA-256
   271c04f5e3cb3cebf52220eb5393ea43ae02845b387509b6f9b46be423802fa1.
+
+- 2026-09-17T21:15:12+00:00: Independent review found formal/handoffctl/attest.py duplicated tier
+  timeout constants and the formal Ruff formatting gate failed. Candidate fa57625d9 imports shared
+  timeout_for_tier(), and formal Ruff check/format plus tools/tests mypy and 23 focused tests pass.
+  The currently active ada383cea VM predates this commit and its evidence cannot qualify fa57625d9;
+  it remains unmodified until terminal exit.
