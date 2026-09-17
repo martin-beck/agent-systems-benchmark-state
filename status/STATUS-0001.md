@@ -1639,7 +1639,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md): Protected merge-tree remediation | codex-ar1226-merge-remediation-20260917 | Remediate the protected-main merge-tree mismatch from stale-base PR merging. | Monitor PR #218 exact head f66194bbf01cb2aa861a45d8c10b0ee08df1d73c until all required checks and independent review are green; merge only through authorized signed integration, then verify exact-main post-merge workflows and reconcile AR-1299/AR-1287 evidence. |
+| P0 | [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md): Protected merge-tree remediation | codex-ar1226-merge-remediation-20260917 | Remediate the protected-main merge-tree mismatch from stale-base PR merging. | No further action; AR-1226 is complete. Preserve PR #218 and merge 7ea3e001 evidence. |
 | P0 | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | coordinator-ar1301-lifecycle-20260917 | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | Promote only after AR-1287 and AR-1300 are done; implement the executable supervised replay lifecycle fault matrix and qualify it on the approved runner. |
 
 ### Blocked (49)
@@ -1724,3 +1724,4 @@ flowchart LR
 | P0 | [AR-1214](../tasks/AR-1214-record-replay.md): LLM response record/replay tutorial | Unclaimed | Teach privacy-safe LLM response recording and strict offline replay. | Implement the syntax-checked record/replay tutorial with synthetic cassette fixtures and no-network CI. |
 | P0 | [AR-1215](../tasks/AR-1215-result-comparison.md): Multi-agent result comparison tutorial | Unclaimed | Teach conservative comparison of multiple agents from the same benchmark. | Implement the syntax-checked tutorial for comparing two or more agents on one benchmark definition. |
 | P0 | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md): ASB tutorial freshness CI and documentation qualification | Unclaimed | Continuously keep ASB tutorial commands and steps syntactically current. | Implement the repository-wide tutorial discovery and syntax-freshness CI gate after all tutorial contracts are defined. |
+| P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |

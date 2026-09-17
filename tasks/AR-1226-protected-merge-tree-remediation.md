@@ -7,7 +7,7 @@
     "AR-1200"
   ],
   "id": "AR-1226",
-  "next_action": "Monitor PR #218 exact head f66194bbf01cb2aa861a45d8c10b0ee08df1d73c until all required checks and independent review are green; merge only through authorized signed integration, then verify exact-main post-merge workflows and reconcile AR-1299/AR-1287 evidence.",
+  "next_action": "No further action; AR-1226 is complete. Preserve PR #218 and merge 7ea3e001 evidence.",
   "observed_branch": "repair/ar1226-current-base",
   "observed_dirty": 0,
   "observed_head": "f66194bbf01cb2aa861a45d8c10b0ee08df1d73c",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remediate the protected-main merge-tree mismatch from stale-base PR merging.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Protected merge-tree remediation",
-  "updated_at": "2026-09-17T09:07:03+00:00",
+  "updated_at": "2026-09-17T09:07:47+00:00",
   "worktree_key": "agent-systems-benchmark-protected-merge-tree-remediation"
 }
 ---
@@ -153,3 +153,11 @@ current-main requalification; it must not mark the merge usable until policy ass
 
 - 2026-09-17T09:07:03+00:00: Recorded command exit 0; command argv SHA-256
   3b06455b388825cae5b2d07da4099dbec440aa383139a2cb189a23ee27d7ccbe.
+
+- 2026-09-17T09:07:47+00:00: Final verification complete: PR #218 merged as
+  7ea3e001dffa13eca5ff0f05444c2b3b9d4df928 with parents 8737bbed4b9ad8b9d3c40a8bf5b71277303db7cf and
+  f66194bbf01cb2aa861a45d8c10b0ee08df1d73c; tree bf98c6a6a56b658ffc946f19609e6ae092d2b1af.
+  Protected-main repository policy passed locally, topic DCO passed, and all seven exact-main
+  workflows succeeded: 35202285905, 35202285881, 35202285955, 35202285873, 35202285930, 35202285902,
+  35202285917. Historical AR-1299/AR-1287 stale merges remain unchanged; this forward admission
+  repair is their requalification path.
