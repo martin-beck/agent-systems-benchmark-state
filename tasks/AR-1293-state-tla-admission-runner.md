@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T22:02:26+00:00",
+  "claim_expires": "2026-09-17T21:48:29+00:00",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Add receipt overlay digest binding and exact serial-marker validation; run all code gates; then provision a larger clean bounded runner and rerun full-exhaustive.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 612,
+  "task_revision": 613,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T21:02:37+00:00",
+  "updated_at": "2026-09-17T21:03:29+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1917,3 +1917,5 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   out-of-memory during TLC liveness checking. No full attestation or receipt was produced and the
   run is not accepted. Required-tier evidence remains green. Next action is the independently
   reviewed receipt/serial integrity hardening followed by a larger isolated runner.
+
+- 2026-09-17T21:03:29+00:00: Heartbeat by codex-ar1293-timeout-repair-20260917.
