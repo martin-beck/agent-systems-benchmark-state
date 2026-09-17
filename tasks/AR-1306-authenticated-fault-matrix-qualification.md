@@ -10,7 +10,7 @@
   "id": "AR-1306",
   "next_action": "PR #222 exact head 910af9a3c380ecf035f839460f3304ccb8159e50 has all 12 CI checks green, but independent review blocks acceptance: run_supervised_fault now allocates authenticated ReplayRelay yet never starts/accepts a StrictReplayService connection, and provider/descendant egress cases assert only nonzero exit rather than cause-specific denial. Add executable matrix-level authenticated positive/parity and distinct cause assertions, then publish a new signed head and rerun CI.",
   "observed_branch": "feature/ar-1306-authenticated-fault-matrix-qualification",
-  "observed_dirty": 1,
+  "observed_dirty": 0,
   "observed_head": "1ab79c1faaff483bd419ca4d2d184201b8335566",
   "owner": "codex-ar1306-auth-listener-20260917",
   "plan": "../plans/AR-1306.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T22:12:38+00:00",
+  "updated_at": "2026-09-17T22:16:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
