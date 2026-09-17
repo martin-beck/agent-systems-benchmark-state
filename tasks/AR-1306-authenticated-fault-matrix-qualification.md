@@ -8,7 +8,7 @@
     "AR-1287"
   ],
   "id": "AR-1306",
-  "next_action": "Parity repair commit a6c0a039ed8a9c362c0c9ca2a3bc1cbb38c89f95 is signed/DCO and pushed to PR #222. Authenticated positive path now asserts cassette-derived status and every bounded response segment is present in captured output; provider/descendant denial markers remain asserted. Focused qualified native tests, full workspace tests, fmt, clippy pass. Await refreshed exact-head CI and independent approval.",
+  "next_action": "CI repair commit 5425bc3891dc9325c4fe455953637e708b851527 is signed/DCO and pushed to PR #222. It selects the first reviewed bubblewrap 0.9.0 package version advertised by apt (allowlist 0.9.0-1ubuntu0.1/0.9.0-1build1), installs the exact version, and verifies dpkg version equality. Local qualified native tests and workspace gates pass. Await refreshed exact-head CI; prior gh checks exit 8 was pending-check status, not a product failure.",
   "observed_branch": "feature/ar-1306-authenticated-fault-matrix-qualification",
   "observed_dirty": 0,
   "observed_head": "5425bc3891dc9325c4fe455953637e708b851527",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 123,
+  "task_revision": 124,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T22:36:06+00:00",
+  "updated_at": "2026-09-17T22:36:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
@@ -384,3 +384,8 @@ publication, independent review, green exact-head CI, protected merge and post-m
 
 - 2026-09-17T22:36:06+00:00: Recorded command exit 0; command argv SHA-256
   518a4780082fdca5a8bec45d401a548a8ac7fb8bb46f5c129a80fea618cfd017.
+
+- 2026-09-17T22:36:32+00:00: Recorded hosted platform prerequisite failure: ubuntu-24.04 apt could
+  not locate pinned bubblewrap 0.9.0-1ubuntu0.1 (apt exit 100). Repaired workflow with reviewed
+  0.9.0 allowlist/candidate selection and post-install exact version check; no network/host
+  isolation changes. Signed commit 5425bc3 pushed to PR #222.
