@@ -8,7 +8,7 @@
     "AR-1287"
   ],
   "id": "AR-1306",
-  "next_action": "Repair implementation paused after two failed patch commands: exit 2 because apply_patch received no stdin through handoffctl; exit 1 because attempted Python wrapper preserved literal newline escapes and was invalid syntax. No product files changed. Use bounded, reviewed handoffctl mutation method, then rerun focused tests before commit.",
+  "next_action": "Repair diff is 40 lines on top of 910af9a: fault matrix invokes the real runtime-owned StrictReplayService parity test before fault cases, and provider/descendant cases assert curl exit 7 markers with bounded timeout. Focused matrix test now passes. Run full locked workspace gates, inspect diff, commit signed+DCO, force-with-lease update PR #222, and rerun exact-head CI.",
   "observed_branch": "feature/ar-1306-authenticated-fault-matrix-qualification",
   "observed_dirty": 1,
   "observed_head": "910af9a3c380ecf035f839460f3304ccb8159e50",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 60,
+  "task_revision": 61,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T22:02:42+00:00",
+  "updated_at": "2026-09-17T22:03:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
@@ -211,3 +211,8 @@ publication, independent review, green exact-head CI, protected merge and post-m
 
 - 2026-09-17T22:02:42+00:00: Recorded command exit 0; command argv SHA-256
   264fcedabcf0d93cdabd2200bdda093ee9401500fb70f47a7ef269009f979713.
+
+- 2026-09-17T22:03:08+00:00: Repair progress: initial inserted call was accidentally added to every
+  native-test fallback branch, causing exit 101 in the full native prefix run; inspected with rg,
+  removed all unintended insertions, retained the call only inside the fault-matrix test. Focused
+  fault-matrix test then passed 1/1. Diff check clean.
