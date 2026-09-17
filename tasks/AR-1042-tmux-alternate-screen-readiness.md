@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-alternate-screen-readiness",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T05:26:41+00:00",
   "depends_on": [],
   "id": "AR-1042",
   "next_action": "Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification.",
-  "owner": "",
+  "owner": "asb_ar1042_tui_readiness",
   "plan": "../plans/AR-1042.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Make tmux TUI readiness validate the displayed alternate screen deterministically.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Capture alternate-screen TUI readiness deterministically",
-  "updated_at": "2026-09-16T06:04:59+00:00",
+  "updated_at": "2026-09-17T03:26:41+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-alternate-screen-readiness"
 }
 ---
@@ -267,3 +267,5 @@ emit bounded diagnostics; do not change renderer or application semantics.
   AR-1044 foreground-group recovery; AR-1044 is itself awaiting downstream tmux recovery and this
   lane must avoid asb-tui source changes. No safe dependency-free implementation slice available
   here.
+
+- 2026-09-17T03:26:41+00:00: Claimed by asb_ar1042_tui_readiness.
