@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T08:35:14+00:00",
   "depends_on": [],
   "id": "AR-1302",
-  "next_action": "Promote and provision a digest-pinned x86_64 container/VM runner with portable cgroup containment, bounded thread/memory/swap capacity, and owner-private evidence paths for AR-1293.",
+  "next_action": "Provision or attach a clean x86_64 CI/VM runner with an effective cgroup memory limit of at least 32 GiB, then rerun signed runner commit 5bd411e19 at full-exhaustive; portable-smoke and pr-publication pass on the 20 GiB profile.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 115,
+  "task_revision": 116,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T08:25:14+00:00",
+  "updated_at": "2026-09-17T08:25:39+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -379,3 +379,6 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   capacity-block release.
 
 - 2026-09-17T08:25:14+00:00: Claimed by coordinator-ar1302-statefix-20260917.
+
+- 2026-09-17T08:25:39+00:00: Corrected stale next_action after release. Full-tier capacity blocker
+  and passing lower-tier evidence remain durable.
