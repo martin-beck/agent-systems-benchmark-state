@@ -1639,7 +1639,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | ar1301_negative_matrix | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | Rerun fmt/clippy/full locked tests after fixing the supervised negative test useless-conversion lint; then independently review final signed head 37ce99b and publication remains prohibited until green exact-head CI. |
+| P0 | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | ar1301_negative_matrix | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | Rerun full locked workspace tests on final signed head e98293a after handling expected ScopeOwnership errors from supervised negative launches; then independently review complete diff and exact-head CI. |
 | P0 | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | codex-ar1302-runner-20260917-final | Provision a clean portable TLC CI/VM runner for state formal admission. | Run a fresh disposable v10 guest as user asb with XDG_RUNTIME_DIR and DBUS_SESSION_BUS_ADDRESS set, TLC_CGROUP_MODE=required, pinned offline JDK/JAR, and capture terminal attestation; then stop stale generic VM 1928184 through handoffctl and record cleanup. |
 
 ### Blocked (48)

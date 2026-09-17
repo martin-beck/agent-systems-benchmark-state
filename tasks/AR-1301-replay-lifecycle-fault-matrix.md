@@ -8,7 +8,7 @@
     "AR-1300"
   ],
   "id": "AR-1301",
-  "next_action": "Rerun fmt/clippy/full locked tests after fixing the supervised negative test useless-conversion lint; then independently review final signed head 37ce99b and publication remains prohibited until green exact-head CI.",
+  "next_action": "Rerun full locked workspace tests on final signed head e98293a after handling expected ScopeOwnership errors from supervised negative launches; then independently review complete diff and exact-head CI.",
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "observed_dirty": 0,
   "observed_head": "e98293ab022d3ce7dcf09f6b4f3a1d5a0500fa07",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 164,
+  "task_revision": 165,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:32:06+00:00",
+  "updated_at": "2026-09-17T11:32:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -455,3 +455,10 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
 
 - 2026-09-17T11:31:59+00:00: Recorded command exit 0; command argv SHA-256
   777ef0cc36220b27fe8dee2ad0f24efda1ea6e1b8860fc09bb9f3f22d4d42ca8.
+
+- 2026-09-17T11:32:20+00:00: Full workspace test at 11:30:29Z exited 101 because the new negative
+  test unwrapped expected SandboxError::ScopeOwnership { exit_code: Some(1), stderr: "Error:
+  \\"adapter failed\\"" } for intentionally rejected stale/malformed/duplicate/mismatch launches.
+  Focused supervised negative test now passes in 1.72s after matching this expected terminal
+  failure. This was test-harness handling, not a product runtime failure; full workspace must be
+  rerun.
