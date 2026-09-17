@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1304](tasks/AR-1304-required-tier-qemu-runner.md): Required-tier QEMU user-bus runner | Create a clean required-containment QEMU runner for formal publication evidence. | Integrate signed seed 99904f3c4 into a fresh immutable QEMU image, launch user@1000 and session bus, invoke 48da6f92b required launcher, and produce exact AR-1293 pr-publication attestation. Full-exhaustive remains gated. | codex-ar1304-required-runner-20260917 |
+| P0 | [AR-1304](tasks/AR-1304-required-tier-qemu-runner.md): Required-tier QEMU user-bus runner | Create a clean required-containment QEMU runner for formal publication evidence. | Independent exact-head review of signed 9111d2f2a and 8a815690c; then hand required pr-publication evidence to AR-1293. Do not run full-exhaustive until coordinator accepts the attestation. | codex-ar1304-required-runner-20260917 |
 
 ## Blocked
 

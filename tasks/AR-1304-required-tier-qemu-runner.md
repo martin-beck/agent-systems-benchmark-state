@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1304",
-  "next_action": "Integrate signed seed 99904f3c4 into a fresh immutable QEMU image, launch user@1000 and session bus, invoke 48da6f92b required launcher, and produce exact AR-1293 pr-publication attestation. Full-exhaustive remains gated.",
+  "next_action": "Independent exact-head review of signed 9111d2f2a and 8a815690c; then hand required pr-publication evidence to AR-1293. Do not run full-exhaustive until coordinator accepts the attestation.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create a clean required-containment QEMU runner for formal publication evidence.",
-  "task_revision": 145,
+  "task_revision": 146,
   "title": "Required-tier QEMU user-bus runner",
-  "updated_at": "2026-09-17T15:52:21+00:00",
+  "updated_at": "2026-09-17T15:52:56+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner"
 }
 ---
@@ -487,3 +487,13 @@ logs, or claim full-exhaustive evidence before required attestation is green.
   6ac305e2a47adeb2919edaa0648e2db964a778fd64e37aaa8651a47e967c9df6.
 
 - 2026-09-17T15:52:21+00:00: Heartbeat by codex-ar1304-required-runner-20260917.
+
+- 2026-09-17T15:52:56+00:00: Qualified fresh offline QEMU required publication: PR4 serial emitted
+  REQUIRED_TRANSIENT_RC=0 and PR_PUBLICATION_RC=0. Attestation was extracted from the UUID-mounted
+  data image at evidence/pr-publication-attestation.json: status success, profile pr-publication,
+  containment_mode required, candidate 39c8933f5, six outcomes all success, memory_max 3G, swap_max
+  3G, address_space_max 8G, workers 2, timeout 1800, tool JAR SHA256 936a262...050e88. Fresh VM used
+  -net none, no host mounts, reviewed data filesystem UUID, 32G RAM and 8 vCPU; QEMU exited cleanly.
+  Full applicable pytest passed, focused seed tests 2 passed, Ruff check/format and mypy passed. PR3
+  RC1 was repaired by exporting separated GIT_DIR/GIT_WORK_TREE; no gate was weakened. Full
+  attestation JSON remains in the private runner evidence path for review.
