@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 432,
+  "task_revision": 433,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T13:37:31+00:00",
+  "updated_at": "2026-09-17T13:37:49+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1447,3 +1447,7 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   historical artifacts and cannot be reused as the reviewed launcher/seed. No VM UUID/mount evidence
   or f1931686c portable-smoke attestation was produced. Next action: create a reviewed seed/receipt
   that records the prepared root hash and offline mount service, then rerun with -net none.
+
+- 2026-09-17T13:37:49+00:00: Create reviewed state-owned receipt for the prepared root only after
+  qemu-img backing-chain and hash verification; record exact hash/provenance and offline mount
+  service, then run fresh -net none UUID preflight and f1931686c smoke.
