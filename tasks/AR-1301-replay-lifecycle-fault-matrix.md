@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T22:07:31+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1287",
     "AR-1300"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "observed_dirty": 0,
   "observed_head": "dd5bfb8dfea08331bb5ee62ddbdee07ad6fb8e7c",
-  "owner": "codex-ar1301-pr221-reconcile-20260917",
+  "owner": "",
   "plan": "../plans/AR-1301.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 298,
+  "task_revision": 299,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T21:26:32+00:00",
+  "updated_at": "2026-09-17T21:26:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -843,3 +843,8 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
   do not establish AR-1301 acceptance. Hosted portability is non-qualification, the fault helper
   lacks a real StrictReplayService/relay listener, and positive parity plus cause-specific egress
   denial remain unproven. Preserve PR and do not merge.
+
+- 2026-09-17T21:26:53+00:00: Released claim after recording independent PR #221 qualification
+  blocker. PR remains unmerged; next worker must implement real StrictReplayService/relay listener,
+  positive identity/response parity, and cause-specific egress-denial evidence, then rerun approved
+  full matrix and exact-head gates.
