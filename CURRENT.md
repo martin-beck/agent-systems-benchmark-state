@@ -10,6 +10,12 @@ Never edit this file directly.
 | P0 | [AR-1287](tasks/AR-1287-delegated-sandbox-runner.md): Delegated sandbox runner capability | Provide a delegated runner for real strict-replay child lifecycle qualification. | Exact-main commit 8737bbed4b9ad8b9d3c40a8bf5b71277303db7cf has Repository quality merge-tree failure; coordinate AR-1226 merge-tree remediation and rerun exact-main assurance. After all post-merge checks are green, release AR-1287 and only then promote AR-1301. | root |
 | P0 | [AR-1299](tasks/AR-1299.md): Complete authenticated agent catalog identity metadata | Complete authenticated agent catalog signer, provenance, SBOM and license metadata. | Monitor exact-main post-merge workflows for 6c694f8b26ba98166ab72349875641d5d55806d5 until every required run is terminal green; then verify main signature/DCO and release AR-1299 done. | coordinator-ar1299-review-20260917 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1226](tasks/AR-1226-protected-merge-tree-remediation.md): Protected merge-tree remediation | Remediate the protected-main merge-tree mismatch from stale-base PR merging. | Historical reproduction confirms policy rejects ef82484 before merge-tree comparison because its RSA/GPG signature is not in the allowed SSH trust set. Current clean branch is fd7daa4; create a signed-DCO current-main topic repair, then rerun policy and exact-head gates. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -20,7 +26,6 @@ Never edit this file directly.
 | P0 | [AR-1151](tasks/AR-1151.md): Strict offline replay | Replay strictly without providers. | Await reviewed CLI consumer contract for cassette artifact resolution and runtime handoff; do not fabricate paths or authority. | - |
 | P0 | [AR-1181](tasks/AR-1181.md): TLA admission | Bound ASB TLC memory. | Correct AR-1181 repository/worktree metadata to a state-repository branch/worktree, then implement missing tools/tlc_runner.py with bounded admission; current declared path is an ASB product checkout and must not be mutated. | - |
 | P0 | [AR-1210](tasks/AR-1210-tutorial-contract-validator.md): Tutorial contract and syntax validator | Define offline tutorial steps and validate them against the ASB CLI grammar. | Do not release AR-1210 yet: post-merge Repository quality run 35054743606 failed because protected merge commit 4d4a0c4 lacks Signed-off-by. Coordinate merge-integrity/DCO repair and rerun exact-main assurance; preserve merged main and all evidence. | - |
-| P0 | [AR-1226](tasks/AR-1226-protected-merge-tree-remediation.md): Protected merge-tree remediation | Remediate the protected-main merge-tree mismatch from stale-base PR merging. | Historical reproduction confirms policy rejects ef82484 before merge-tree comparison because its RSA/GPG signature is not in the allowed SSH trust set. Current clean branch is fd7daa4; create a signed-DCO current-main topic repair, then rerun policy and exact-head gates. | - |
 | P0 | [AR-1248](tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | Define the strict-replay CLI consumer contract. | Await runtime-owned launch authority, then wire replay through supervised context and add lifecycle/no-fallback tests. | - |
 | P0 | [AR-1260](tasks/AR-1260-runtime-owned-strict-replay-integration.md): Runtime-owned strict-replay integration | Integrate strict replay with runtime-owned attestation and supervised sandbox execution. | Blocked pending runtime-owned launch context injection: CLI dispatch has no safe source for SidecarHandoff, SandboxBackend, ResourceLease, or pinned supervisor/sidecar commands. Runtime API presence alone does not authorize CLI fabrication; create a narrow runtime-to-CLI entrypoint or successor AR. | - |
 | P0 | [AR-1261](tasks/AR-1261-runtime-to-cli-replay-entrypoint.md): Runtime-to-CLI strict-replay handoff entrypoint | Provide a runtime-owned entrypoint for strict-replay CLI supervision. | Reconcile coordinator view against declared runtime-cli worktree; then run focused/full gates and review exact signed head d91520f. | - |

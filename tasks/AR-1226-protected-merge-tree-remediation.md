@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1226.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Remediate the protected-main merge-tree mismatch from stale-base PR merging.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Protected merge-tree remediation",
-  "updated_at": "2026-09-16T06:28:50+00:00",
+  "updated_at": "2026-09-17T08:31:48+00:00",
   "worktree_key": "agent-systems-benchmark-protected-merge-tree-remediation"
 }
 ---
@@ -50,3 +50,6 @@ current-main requalification; it must not mark the merge usable until policy ass
   unavailable RSA/GPG signature, not an allowed SSH signature. Protected history must not be
   rewritten; requires coordinator-owned forward-only signed-DCO successor/attestation before
   requalification.
+
+- 2026-09-17T08:31:48+00:00: Resume for forward-only current-main protected-merge admission
+  remediation; historical merges remain unchanged.
