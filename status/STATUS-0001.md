@@ -1603,7 +1603,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md): Runtime certificate issuance and chain validation | asb_ar0909_lifecycle_repair | Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814. | Baseline asb-control library passes 51/51 on clean protected-main worktree. Map existing auth identity/pairing APIs, then implement certificate issuance/chain validation with focused positive/negative tests; maintain signed checkpoints. |
+| P1 | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md): Runtime certificate issuance and chain validation | asb_ar0909_lifecycle_repair | Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814. | Signed checkpoint 871d2f7 implements pinned DER trust-anchor construction and offline rustls/webpki chain validation via issue_der; leaf digest, pairing, generation, validity, role, issuer, anchor and bounded chain checks fail closed. Focused asb-control --lib passes 56/56. Next: push exact signed head, run applicable workspace gates, inspect generated schema/public docs, then independent review; do not publish before exact-head gates. |
 
 ### Open (6)
 
@@ -1694,4 +1694,3 @@ flowchart LR
 | P0 | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md): ASB tutorial freshness CI and documentation qualification | Unclaimed | Continuously keep ASB tutorial commands and steps syntactically current. | Implement the repository-wide tutorial discovery and syntax-freshness CI gate after all tutorial contracts are defined. |
 | P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
-| P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |

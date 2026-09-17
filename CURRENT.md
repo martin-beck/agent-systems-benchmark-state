@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1288](tasks/AR-1288-certificate-chain-authz.md): Runtime certificate issuance and chain validation | Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814. | Baseline asb-control library passes 51/51 on clean protected-main worktree. Map existing auth identity/pairing APIs, then implement certificate issuance/chain validation with focused positive/negative tests; maintain signed checkpoints. | asb_ar0909_lifecycle_repair |
+| P1 | [AR-1288](tasks/AR-1288-certificate-chain-authz.md): Runtime certificate issuance and chain validation | Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814. | Signed checkpoint 871d2f7 implements pinned DER trust-anchor construction and offline rustls/webpki chain validation via issue_der; leaf digest, pairing, generation, validity, role, issuer, anchor and bounded chain checks fail closed. Focused asb-control --lib passes 56/56. Next: push exact signed head, run applicable workspace gates, inspect generated schema/public docs, then independent review; do not publish before exact-head gates. | asb_ar0909_lifecycle_repair |
 
 ## Open
 

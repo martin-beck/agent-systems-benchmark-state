@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-1288",
-  "next_action": "Baseline asb-control library passes 51/51 on clean protected-main worktree. Map existing auth identity/pairing APIs, then implement certificate issuance/chain validation with focused positive/negative tests; maintain signed checkpoints.",
+  "next_action": "Signed checkpoint 871d2f7 implements pinned DER trust-anchor construction and offline rustls/webpki chain validation via issue_der; leaf digest, pairing, generation, validity, role, issuer, anchor and bounded chain checks fail closed. Focused asb-control --lib passes 56/56. Next: push exact signed head, run applicable workspace gates, inspect generated schema/public docs, then independent review; do not publish before exact-head gates.",
   "observed_branch": "feature/ar-1288-certificate-chain-authz",
   "observed_dirty": 0,
   "observed_head": "871d2f7ee4ae13108510c9bf2c7baa45627473f2",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T02:52:14+00:00",
+  "updated_at": "2026-09-17T02:52:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
@@ -118,3 +118,11 @@ must not reuse unmerged strict-replay or asb-tui branches.
 
 - 2026-09-17T02:52:07+00:00: Recorded command exit 0; command argv SHA-256
   d88888b0dc3c5116c983f4e605fd0d86de2d7fa9e5a28273ef0be9db78a563be.
+
+- 2026-09-17T02:52:50+00:00: 2026-09-17T02:54:00+00:00: Reconciled inherited dirty
+  certificate.rs/lib.rs slice without reset. Added CertificateAuthorityV1::with_trust_anchor and
+  issue_der using pinned RootCertStore/WebPkiClientVerifier; added positive actual DER root/leaf
+  validation and negatives for missing anchor, digest mismatch, schema/generation/role/issuer/chain
+  bounds; documented offline no-fallback certificate boundary in docs/AUTH_ENROLLMENT.md. Product
+  commit 871d2f7ee4ae13108510c9bf2c7baa45627473f2 is SSH-signed by Martin Beck and has matching
+  Signed-off-by. cargo test --locked -p asb-control --lib: 56/56 passed.
