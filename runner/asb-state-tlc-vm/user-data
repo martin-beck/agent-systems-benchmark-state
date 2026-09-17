@@ -1,0 +1,33 @@
+#cloud-config
+users:
+  - name: asb
+    uid: 1000
+    groups: [adm, sudo]
+    sudo: ["ALL=(ALL) NOPASSWD:ALL"]
+    shell: /bin/bash
+    ssh_authorized_keys:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIABQM0/1qkLvPlnPOD3G5FXWxCmf280WY8cW6TqJKZ8I martin@A2302940388
+package_update: true
+packages:
+  - openssh-server
+  - ca-certificates
+  - openjdk-17-jre-headless
+write_files:
+  - path: /usr/local/sbin/asb-vm-ready
+    permissions: '0755'
+    content: |
+      #!/bin/sh
+      set -eu
+      if [ ! -f /swapfile ]; then
+        fallocate -l 16G /swapfile
+        chmod 600 /swapfile
+        mkswap /swapfile
+        swapon /swapfile
+      fi
+      swapon --show
+      printf 'asb-state-tlc-vm-ready\n' > /var/lib/asb-state-tlc-vm-ready
+runcmd:
+  - [systemctl, enable, --now, ssh]
+  - [sh, -c, "printf 'asb-state-tlc-vm-ready\n' > /var/lib/asb-state-tlc-vm-ready"]
+  - [sh, -c, "fallocate -l 16G /swapfile && chmod 600 /swapfile && mkswap /swapfile && swapon /swapfile"]
+final_message: ASB state TLC VM provisioning complete

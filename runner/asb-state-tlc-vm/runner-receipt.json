@@ -1,0 +1,17 @@
+{
+  "runner_id": "asb-state-tlc-vm-v1",
+  "image": {
+    "path": "/srv/data/projects/asb-state-tlc-vm/noble-server-cloudimg-amd64.img",
+    "sha256": "612b2c0cc1bc413a6cb8c38fd611794caf0f2b436c50013d8b3794db12ad7354"
+  },
+  "hypervisor": "qemu-system-x86_64 8.2.2",
+  "architecture": "x86_64",
+  "memory_bytes": 17179869184,
+  "vcpus": 4,
+  "guest_swap_bytes": 17179869184,
+  "network": "none",
+  "host_mounts": false,
+  "root_overlay": "/srv/data/projects/asb-state-tlc-vm/asb-state-tlc-runner.qcow2",
+  "disposable": true,
+  "purpose": "ASB state portable TLC admission runner"
+}
