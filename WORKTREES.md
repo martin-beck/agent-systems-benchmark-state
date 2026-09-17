@@ -268,6 +268,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-ar1191-lifecycle` | `DETACHED` | `6d210836d4b4` | 0 | behind 298, ahead 0 |
 | `asb-ar1253-merge` | `DETACHED` | `85bcd1e423a6` | 0 | behind 60, ahead 0 |
 | `asb-ar1285-merge` | `DETACHED` | `2fd90557a4e7` | 0 | behind 7, ahead 0 |
+| `asb-ar1289-main-verify` | `DETACHED` | `2de393a05cc3` | 0 | behind 0, ahead 0 |
 | `asb-boundary-hardening` | `DETACHED` | `d32748d0795e` | 0 | behind 310, ahead 0 |
 | `asb-catalog-digest` | `feature/ar1195-catalog-digest` | `0a39815de52c` | 0 | behind 295, ahead 0 |
 | `asb-current-audit-20260914` | `DETACHED` | `817a40bfbd7c` | 0 | behind 307, ahead 0 |
