@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect runtime-issued cassette operations to the real strict-replay dispatch path.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Runtime-to-replay cassette dispatch seam",
-  "updated_at": "2026-09-17T07:12:02+00:00",
+  "updated_at": "2026-09-17T07:12:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1300-runtime-cassette-dispatch-seam"
 }
 ---
@@ -116,3 +116,6 @@ fixtures/tests. Do not modify asb-tui or coordinator implementation.
   compiled and tests ran. The later workflow-transcript failure was the expected existing provenance
   fixture drift caused by the intentional CLI source change; updated only its checked-in digest and
   the focused transcript suite is green.
+
+- 2026-09-17T07:12:39+00:00: Recorded command exit 0; command argv SHA-256
+  dbebc8471cba02b09e566b4d54e6af0038cb179b04e6a3ed264b258e2b7da72d.
