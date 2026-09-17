@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1304](tasks/AR-1304-required-tier-qemu-runner.md): Required-tier QEMU user-bus runner | Create a clean required-containment QEMU runner for formal publication evidence. | Promote after review; build a fresh QEMU guest with a verified user D-Bus bus and run required pr-publication for the exact AR-1293 candidate. | - |
+| P0 | [AR-1304](tasks/AR-1304-required-tier-qemu-runner.md): Required-tier QEMU user-bus runner | Create a clean required-containment QEMU runner for formal publication evidence. | Promote after review; build a fresh QEMU guest with a verified user D-Bus bus and run required pr-publication for the exact AR-1293 candidate. | codex-ar1304-required-runner-20260917 |
 
 ## Blocked
 

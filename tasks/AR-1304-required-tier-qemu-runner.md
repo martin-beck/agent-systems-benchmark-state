@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1304-required-tier-qemu-runner",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T15:15:02+00:00",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "codex-ar1304-required-runner-20260917",
   "plan": "../plans/AR-1304.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Create a clean required-containment QEMU runner for formal publication evidence.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Required-tier QEMU user-bus runner",
-  "updated_at": "2026-09-17T14:44:47+00:00",
+  "updated_at": "2026-09-17T14:45:02+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner"
 }
 ---
@@ -37,3 +37,5 @@ logs, or claim full-exhaustive evidence before required attestation is green.
   AR-1302 portable runner remains qualified and unchanged.
 
 - 2026-09-17T14:44:47+00:00: AR-1302 is done; required-tier runner is dependency-ready
+
+- 2026-09-17T14:45:02+00:00: Claimed by codex-ar1304-required-runner-20260917.

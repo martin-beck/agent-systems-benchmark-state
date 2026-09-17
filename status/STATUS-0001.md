@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 50 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -400,7 +400,7 @@ flowchart LR
         AR_1301["AR-1301 - Blocked"]:::status_blocked
         AR_1302["AR-1302 - Done"]:::status_done
         AR_1303["AR-1303 - Blocked"]:::status_blocked
-        AR_1304["AR-1304 - Open"]:::status_open
+        AR_1304["AR-1304 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1642,11 +1642,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md): Required-tier QEMU user-bus runner | Unclaimed | Create a clean required-containment QEMU runner for formal publication evidence. | Promote after review; build a fresh QEMU guest with a verified user D-Bus bus and run required pr-publication for the exact AR-1293 candidate. |
+| P0 | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md): Required-tier QEMU user-bus runner | codex-ar1304-required-runner-20260917 | Create a clean required-containment QEMU runner for formal publication evidence. | Promote after review; build a fresh QEMU guest with a verified user D-Bus bus and run required pr-publication for the exact AR-1293 candidate. |
 
 ### Blocked (50)
 
@@ -1729,4 +1729,3 @@ flowchart LR
 | P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |
 | P0 | [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md): Benchmark run and shared-agent configuration tutorials | Unclaimed | Teach benchmark execution and extending agents with one shared configuration. | Implement syntax-checked tutorials for one benchmark run and atomic shared configuration across selected agents. |
 | P0 | [AR-1214](../tasks/AR-1214-record-replay.md): LLM response record/replay tutorial | Unclaimed | Teach privacy-safe LLM response recording and strict offline replay. | Implement the syntax-checked record/replay tutorial with synthetic cassette fixtures and no-network CI. |
-| P0 | [AR-1215](../tasks/AR-1215-result-comparison.md): Multi-agent result comparison tutorial | Unclaimed | Teach conservative comparison of multiple agents from the same benchmark. | Implement the syntax-checked tutorial for comparing two or more agents on one benchmark definition. |
