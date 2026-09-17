@@ -10,17 +10,17 @@
   "id": "AR-1301",
   "next_action": "Promote only after AR-1287 and AR-1300 are done; implement the executable supervised replay lifecycle fault matrix and qualify it on the approved runner.",
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
-  "observed_dirty": 3,
-  "observed_head": "7ea3e001dffa13eca5ff0f05444c2b3b9d4df928",
+  "observed_dirty": 0,
+  "observed_head": "73ec6483cb1c42763ba4248addef49ac19912488",
   "owner": "coordinator-ar1301-lifecycle-20260917",
   "plan": "../plans/AR-1301.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T09:33:55+00:00",
+  "updated_at": "2026-09-17T09:34:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
