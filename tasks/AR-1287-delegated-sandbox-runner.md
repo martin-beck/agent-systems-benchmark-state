@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T09:37:23+00:00",
   "depends_on": [],
   "id": "AR-1287",
-  "next_action": "Monitor exact-main post-merge workflows for repair merge 7ea3e001dffa13eca5ff0f05444c2b3b9d4df928; release AR-1287 only after every required check is terminal green and the KVM runner evidence is reconciled, then promote AR-1301.",
+  "next_action": "Release AR-1287 done after final reconciliation: protected merge 7ea3e001 exact-main workflows 35202285902/85873/85881/85905/85917/85930/85955 all green; KVM guest passed 51 normal plus qualified backend test. Promote AR-1301 afterward.",
   "observed_branch": "feature/ar-1287-delegated-sandbox-runner",
   "observed_dirty": 0,
   "observed_head": "dba5f9bb6973cbb256695161e83f7a0eee860fb9",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a delegated runner for real strict-replay child lifecycle qualification.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Delegated sandbox runner capability",
-  "updated_at": "2026-09-17T08:57:30+00:00",
+  "updated_at": "2026-09-17T09:03:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1287-delegated-sandbox-runner"
 }
 ---
@@ -95,3 +95,8 @@ lifecycle completion until the actual child and fault fixtures run in the qualif
 
 - 2026-09-17T08:57:30+00:00: AR-1226 repair PR #218 merged protected as 7ea3e001; prior 8737bbed
   policy failure is superseded. Await exact-main assurance before release.
+
+- 2026-09-17T09:03:55+00:00: Final exact-main evidence is terminal green for all required workflows,
+  including policy, Rust, formal, fault, hosted portability, headers, repository quality, and
+  emulated AArch64. Runner PR #216 merged as 8737bbed; repair PR #218 merged as 7ea3e001. KVM
+  evidence remains under /srv/data/projects/asb-replay-vm.
