@@ -8,7 +8,7 @@
     "AR-1300"
   ],
   "id": "AR-1301",
-  "next_action": "PR #219 is updated to exact signed head ba2b20d; monitor all required exact-head CI checks, diagnose failures from artifacts, merge only after terminal green, then post-merge verify and release AR-1301.",
+  "next_action": "PR #219 is updated to exact signed head 6221b89; monitor all required exact-head CI checks, diagnose failures from artifacts, merge only after terminal green, then post-merge verify and release AR-1301.",
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "observed_dirty": 0,
   "observed_head": "6221b894c438292ff50b21d2d0c27a875d0bcc1b",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 251,
+  "task_revision": 252,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:56:59+00:00",
+  "updated_at": "2026-09-17T11:57:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -699,3 +699,9 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
   0428d3b797d1d74e1ffd2838db60e5c0f6db276fa936738a70f1bc37b6af1089.
 
 - 2026-09-17T11:56:59+00:00: Heartbeat by ar1301_negative_matrix.
+
+- 2026-09-17T11:57:08+00:00: Shared native_backend now returns None unless
+  ASB_REQUIRE_NATIVE_SANDBOX is explicitly set, preventing hosted portability from executing
+  native-only probes while preserving strict required-native qualification. Signed+DCO 6221b89 fixes
+  clippy question-mark lint. Hosted-safe and required-native sandbox suites both pass 15/15; fmt,
+  clippy and full locked serialized workspace gate pass; pushed exact PR head.

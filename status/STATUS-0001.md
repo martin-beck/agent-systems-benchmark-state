@@ -1639,7 +1639,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | ar1301_negative_matrix | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | PR #219 is updated to exact signed head ba2b20d; monitor all required exact-head CI checks, diagnose failures from artifacts, merge only after terminal green, then post-merge verify and release AR-1301. |
+| P0 | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | ar1301_negative_matrix | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | PR #219 is updated to exact signed head 6221b89; monitor all required exact-head CI checks, diagnose failures from artifacts, merge only after terminal green, then post-merge verify and release AR-1301. |
 
 ### Blocked (49)
 
