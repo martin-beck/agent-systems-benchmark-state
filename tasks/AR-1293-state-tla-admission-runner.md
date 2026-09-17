@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T20:33:05+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Independent exact-head review of signed commits 5d0f8deb3 and bcf65ad29; regenerate/use guest seed from tracked seed_profile environment contract and rerun full-exhaustive only after review.",
+  "next_action": "Independent exact-head review of signed timeout commits 5d0f8deb3, bcf65ad29, 0190d6678, 2b7ed3732, and 8be1d2f83; only then regenerate and run full seed.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 250,
+  "task_revision": 251,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T17:44:29+00:00",
+  "updated_at": "2026-09-17T17:44:55+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -856,3 +856,11 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T17:44:29+00:00: Recorded command exit 0; command argv SHA-256
   60d2d80b0cba297a69f2adba73c8e11d0e64d60630b75518e205205bc96dd8ef.
+
+- 2026-09-17T17:44:55+00:00: Guest integration is now tracked, not private-only: AR-1304 seed commit
+  2b7ed3732 imports tools/seed_profile.py, build_user_data(tier) exports TLC_TIMEOUT_SECONDS and
+  sets matching RuntimeMaxSec, with generated-seed positive/negative tests (4/4 green); v2 commit
+  8be1d2f83 adds guest_seed.py rendering the same execution contract and tests (18/18 green). README
+  bound correction is signed in 0190d6678. Earlier 17:42 failures were test invocation/import
+  errors: unittest module path was invalid, then PYTHONPATH omitted so tools package was
+  unavailable; corrected with PYTHONPATH=. discover. No VM rerun.
