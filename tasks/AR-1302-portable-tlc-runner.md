@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T07:55:51+00:00",
+  "updated_at": "2026-09-17T07:58:08+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -267,3 +267,6 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   expired AR-1299 claim. Next action: repair AR-1299 lease/state, rerun full-exhaustive once on
   clean exact head, record evidence, then resume AR-1302 for independent review/publication and
   update AR-1293.
+
+- 2026-09-17T07:58:08+00:00: AR-1299 stale claim recovered and PR #213 merged as 6c694f8; resume
+  exact full-tier requalification of signed runner 01a3433bb.
