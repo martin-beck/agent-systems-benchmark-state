@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1304.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Create a clean required-containment QEMU runner for formal publication evidence.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Required-tier QEMU user-bus runner",
-  "updated_at": "2026-09-17T15:00:01+00:00",
+  "updated_at": "2026-09-17T15:00:19+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner"
 }
 ---
@@ -192,3 +192,6 @@ logs, or claim full-exhaustive evidence before required attestation is green.
   transport readiness after asb-session-bus.service, not missing bus socket. Next action: start a
   system-managed user manager/session bus using the image-supported mechanism and verify systemd-run
   --user transient success before running TLC; preserve all six limits.
+
+- 2026-09-17T15:00:19+00:00: Native user bus socket is insufficient; use the image-supported
+  system-managed user bus and prove transient success before TLC
