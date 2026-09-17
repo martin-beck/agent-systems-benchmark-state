@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create a clean required-containment QEMU runner for formal publication evidence.",
-  "task_revision": 178,
+  "task_revision": 179,
   "title": "Required-tier QEMU user-bus runner",
-  "updated_at": "2026-09-17T16:09:58+00:00",
+  "updated_at": "2026-09-17T16:10:14+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner"
 }
 ---
@@ -596,3 +596,6 @@ logs, or claim full-exhaustive evidence before required attestation is green.
 
 - 2026-09-17T16:09:58+00:00: Recorded command exit 1; command argv SHA-256
   38d402f6569c14ec0aa36f87748a96b7355fa10b41ac8c24611a9be0bbbd39c6.
+
+- 2026-09-17T16:10:14+00:00: Recorded command exit 0; command argv SHA-256
+  f4a6f5627f36c423bdd45ed34c17b9c22e03a390b5a22c722da4630c1e0f804d.
