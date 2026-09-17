@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1305.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Qualify image-native D-Bus user-session support for required TLC containment.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-17T15:16:52+00:00",
+  "updated_at": "2026-09-17T15:17:11+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -131,3 +131,6 @@ limits and fail-closed behavior remain unchanged.
   user-manager transport. No required attestation. Next action: build a seed using the image-native
   dbus-user-session socket/user-manager activation (not standalone custom dbus service), then retry
   AR-1304.
+
+- 2026-09-17T15:17:11+00:00: Fresh root image with dbus-user-session is built; now qualify
+  image-native user-session activation path
