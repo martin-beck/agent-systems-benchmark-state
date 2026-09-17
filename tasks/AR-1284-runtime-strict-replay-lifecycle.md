@@ -11,18 +11,18 @@
   ],
   "id": "AR-1284",
   "next_action": "Promote after dependency verification; implement runtime-issued primary replay lifecycle and bounded supervised fixtures.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar-1284-strict-replay-lifecycle",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "f9ddf7ef6b3b2a96dd7faee04906f4e5cb3aa8e1",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1284.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect authenticated replay transport to the runtime-owned primary strict-replay lifecycle.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Runtime-owned strict-replay lifecycle execution",
-  "updated_at": "2026-09-17T01:23:52+00:00",
+  "updated_at": "2026-09-17T01:24:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1284-strict-replay-lifecycle"
 }
 ---

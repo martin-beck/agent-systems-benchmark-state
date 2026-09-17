@@ -82,6 +82,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1282-authenticated-replay-transport` | `feature/ar-1282-authenticated-replay-transport` | `b1fb83711048` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-ar-1282-authenticated-replay-transport-integration` | `DETACHED` | `69e8b064d312` | 0 | behind 8, ahead 0 |
 | `agent-systems-benchmark-ar-1283-formal-lockfile` | `feature/ar-1283-formal-lockfile` | `69e8b064d312` | 0 | behind 8, ahead 0 |
+| `agent-systems-benchmark-ar-1284-strict-replay-lifecycle` | `feature/ar-1284-strict-replay-lifecycle` | `f9ddf7ef6b3b` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 517, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 620, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 514, ahead 0 |
