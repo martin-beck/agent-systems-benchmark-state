@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T20:30:31+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Implement and qualify a distinct full-exhaustive 7200s timeout profile; required PR8 remains 1800s and green. Add schema/attestation/tests/receipt binding, then fresh-run full.",
+  "next_action": "Retry fresh full-exhaustive with corrected private QEMU import path; timeout-profile commit 5d0f8deb3 is signed/DCO and focused-green.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 234,
+  "task_revision": 235,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T17:30:33+00:00",
+  "updated_at": "2026-09-17T17:31:01+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -798,3 +798,9 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T17:30:33+00:00: Recorded command exit 1; command argv SHA-256
   bfed98255c8f3ca4af77d55b79d2b072f237a0a555c1140c7d16bf5c45388cc9.
+
+- 2026-09-17T17:31:01+00:00: Fresh full-run invocation first failed before QEMU: private helper
+  imported qemu_runner while AR-1304 tools package shadowed AR-1302 qemu_seed, causing
+  ModuleNotFoundError tools.qemu_seed. This is a helper import-path defect only; no image/VM
+  mutation occurred. Corrected by placing the AR-1302 package path first and using its qemu_runner
+  module.
