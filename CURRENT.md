@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1287](tasks/AR-1287-delegated-sandbox-runner.md): Delegated sandbox runner capability | Provide a delegated runner for real strict-replay child lifecycle qualification. | Run AR-1301 lifecycle/fault matrix in the verified KVM guest; then complete AR-1287 runner review/publication and reconcile. | root |
-| P0 | [AR-1299](tasks/AR-1299.md): Complete authenticated agent catalog identity metadata | Complete authenticated agent catalog signer, provenance, SBOM and license metadata. | Await independent exact-head review and all hosted PR #213 checks at b9edf44; do not merge or close issue #164 until both pass. | coordinator-ar1299-review-20260917 |
+| P0 | [AR-1299](tasks/AR-1299.md): Complete authenticated agent catalog identity metadata | Complete authenticated agent catalog signer, provenance, SBOM and license metadata. | Monitor exact-main post-merge workflows for 6c694f8b26ba98166ab72349875641d5d55806d5 until every required run is terminal green; then verify main signature/DCO and release AR-1299 done. | coordinator-ar1299-review-20260917 |
 
 ## Blocked
 
