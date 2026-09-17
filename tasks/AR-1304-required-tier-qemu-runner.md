@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1304.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Create a clean required-containment QEMU runner for formal publication evidence.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Required-tier QEMU user-bus runner",
-  "updated_at": "2026-09-17T14:56:36+00:00",
+  "updated_at": "2026-09-17T14:56:51+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner"
 }
 ---
@@ -155,3 +155,6 @@ logs, or claim full-exhaustive evidence before required attestation is green.
   immediately after bus socket setup and does not invoke the exact required launcher, so no
   pr-publication attestation exists. Next action: add the required launcher invocation after bus
   readiness, capture transient unit result and sanitized attestation, then rerun.
+
+- 2026-09-17T14:56:51+00:00: Native guest bus repair is green; invoke exact required launcher and
+  capture pr-publication attestation before shutdown
