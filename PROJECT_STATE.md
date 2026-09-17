@@ -27,6 +27,8 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35180183984 | `c1b1860786e8` | dynamic | Dependabot Updates | in_progress:- |
+| 35180183659 | `c1b1860786e8` | dynamic | Dependabot Updates | in_progress:- |
 | 35180122301 | `c1b1860786e8` | push | Rust verification | in_progress:- |
 | 35180122135 | `c1b1860786e8` | push | Emulated aarch64 portability | in_progress:- |
 | 35180122102 | `c1b1860786e8` | push | Repository quality | in_progress:- |
@@ -37,5 +39,3 @@ Generated from local Git and GitHub. Do not edit.
 | 35179405322 | `418960215134` | pull_request | Fault assurance | completed:success |
 | 35179405317 | `418960215134` | pull_request | Huawei MIT source headers | completed:success |
 | 35179405257 | `418960215134` | pull_request | Hosted portability and native qualification | completed:success |
-| 35179405256 | `418960215134` | pull_request | Emulated aarch64 portability | completed:success |
-| 35179405252 | `418960215134` | pull_request | Formal assurance | completed:success |
