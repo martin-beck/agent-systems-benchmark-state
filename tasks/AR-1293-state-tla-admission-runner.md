@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T18:21:26+00:00",
+  "claim_expires": "2026-09-17T18:22:29+00:00",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Independent exact-head review of f434b4a49 and AR-1304 2b7ed3732/receipt bindings; after green review, run fresh required then full QEMU qualification with complete seed and record attestation.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 268,
+  "task_revision": 269,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T17:51:40+00:00",
+  "updated_at": "2026-09-17T17:52:29+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -931,3 +931,5 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   directly calls build_user_data(tier) via commit 2b7ed3732 and runner receipt binds helper/image
   hashes; no private helper or VM run started after this fix. Latest 17:50:16 exit-1 was the initial
   mypy invocation environment error, now resolved.
+
+- 2026-09-17T17:52:29+00:00: Heartbeat by codex-ar1293-timeout-repair-20260917.
