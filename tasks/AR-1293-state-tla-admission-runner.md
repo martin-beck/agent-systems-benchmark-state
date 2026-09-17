@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T19:09:14+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Use an unheld copy of the clean exact-6a data image (same verified digest/provenance), verify no process holds it, then rerun required launcher and inspect mountpoint/PR result/debugfs attestation.",
+  "next_action": "Rebuild seed/data pairing from exact 5f3f647b, verify clean image is unheld, rerun required tier; inspect mountpoint marker, PR result, UUID check, debugfs attestation commit and receipt.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 394,
+  "task_revision": 395,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T18:39:27+00:00",
+  "updated_at": "2026-09-17T18:40:02+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1330,3 +1330,10 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T18:39:27+00:00: Recorded command exit 0; command argv SHA-256
   a46c4bd8f34ea2f192b727420aae2f15032e6f4a166c49af6417ae92d7a52f59.
+
+- 2026-09-17T18:40:02+00:00: Fresh exact-6a image run reached guest but mount failed because virtio
+  by-id path was absent; serial showed cd /mnt/asb-data/state missing and no formal RC. QEMU image
+  layout and fsck were clean. Root/data/seed device order is fixed root=vda, data=vdb, seed=vdc;
+  signed commit 5f3f647b1 switches guest seed to /dev/vdb, asserts mountpoint and verifies pinned
+  filesystem UUID with bounded shell check, with tests green 23/23. Prior 6a run receipt was
+  rejected for missing/stale attestation and is not accepted.
