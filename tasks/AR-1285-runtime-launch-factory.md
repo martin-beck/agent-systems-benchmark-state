@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1285-runtime-launch-factory",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T03:28:19+00:00",
   "depends_on": [
     "AR-1282",
     "AR-1237",
@@ -14,15 +14,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1285.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provide a runtime-owned launch factory for authenticated strict-replay CLI execution.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime-owned strict-replay launch factory",
-  "updated_at": "2026-09-17T01:28:07+00:00",
+  "updated_at": "2026-09-17T01:28:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1285-runtime-launch-factory"
 }
 ---
@@ -57,3 +57,5 @@ separate successor rather than claiming strict-replay execution.
 
 - 2026-09-17T01:28:07+00:00: AR-1284 identified missing runtime-owned launch factory; promote narrow
   successor
+
+- 2026-09-17T01:28:19+00:00: Claimed by asb_ar1024_lifecycle_router.
