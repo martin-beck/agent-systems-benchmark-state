@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1301](tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | Publish exact clean e98293a as PR; wait all exact-head required CI green; perform protected signed merge and post-merge verification before releasing AR. | ar1301_negative_matrix |
+| P0 | [AR-1301](tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | PR #219 is published at exact head e98293a; monitor every required exact-head workflow, then perform signed protected merge and post-merge verification only after terminal green. | ar1301_negative_matrix |
 
 ## Blocked
 

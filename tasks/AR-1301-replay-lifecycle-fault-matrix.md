@@ -8,7 +8,7 @@
     "AR-1300"
   ],
   "id": "AR-1301",
-  "next_action": "Publish exact clean e98293a as PR; wait all exact-head required CI green; perform protected signed merge and post-merge verification before releasing AR.",
+  "next_action": "PR #219 is published at exact head e98293a; monitor every required exact-head workflow, then perform signed protected merge and post-merge verification only after terminal green.",
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "observed_dirty": 0,
   "observed_head": "e98293ab022d3ce7dcf09f6b4f3a1d5a0500fa07",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 176,
+  "task_revision": 177,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:37:21+00:00",
+  "updated_at": "2026-09-17T11:37:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -502,3 +502,7 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
 
 - 2026-09-17T11:37:21+00:00: Recorded command exit 0; command argv SHA-256
   6d8a443c550c1617d2c97259eac21c9bab4a62a6640f774d1c64ab0da15b5a6e.
+
+- 2026-09-17T11:37:36+00:00: Published PR #219 from clean exact e98293a after independent review.
+  Remote branch push and PR creation were performed through handoffctl. Awaiting exact-head CI; no
+  merge yet.
