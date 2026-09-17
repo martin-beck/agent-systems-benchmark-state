@@ -9,12 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Requalify AR-1302 portable-smoke with exact 8G portable address-space bound and 3G physical/swap limits; require success attestation before required/full. | coordinator-ar1293-as-limit-repair |
 | P0 | [AR-1301](tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | PR #219 exact head dd5bfb8: Platform evidence is green after hosted probe classification fix. Wait for remaining exact-head checks; then complete independent review, protected signed merge, post-merge verification and reconcile. | root |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1302](tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | Provision a clean portable TLC CI/VM runner for state formal admission. | Use run_lifecycle from signed commit 1fd5e31cf to create a fresh overlay, boot the UUID-serial data disk, run guest UUID/mount preflight, then execute f1931686c portable-smoke and capture sanitized terminal attestation. Do not claim qualification from container evidence. | - |
+| P0 | [AR-1302](tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | Provision a clean portable TLC CI/VM runner for state formal admission. | Use run_lifecycle from signed commit 1fd5e31cf to create a fresh overlay, boot the UUID-serial data disk, run guest UUID/mount preflight, then execute f1931686c portable-smoke and capture sanitized terminal attestation. Do not claim qualification from container evidence. | codex-ar1302-f193-data-image |
 
 ## Blocked
 
