@@ -1,0 +1,31 @@
+---
+{
+  "branch": "repair/ar-1292-tla-provenance",
+  "checkpoint_commit": "",
+  "claim_expires": "",
+  "depends_on": [],
+  "id": "AR-1292",
+  "next_action": "Audit the pinned TLA+ v1.8.0 asset provenance and decide whether a minimal hash-bound fixture update is independently justified; otherwise retain the fail-closed blocker.",
+  "observed_branch": "repair/ar-1292-tla-provenance",
+  "observed_dirty": 0,
+  "observed_head": "",
+  "owner": "",
+  "plan": "../plans/AR-1292.md",
+  "priority": "P0",
+  "schema_version": 1,
+  "status": "planned",
+  "summary": "Repair or formally retain the pinned TLA+ artifact provenance mismatch blocking formal assurance.",
+  "task_revision": 1,
+  "title": "Pinned TLA+ artifact provenance repair",
+  "updated_at": "2026-09-17T00:00:00+00:00",
+  "worktree_key": "agent-systems-benchmark-ar-1292-tla-provenance"
+}
+---
+
+## AR-1292
+
+PR #119 / AR-0704 is blocked before model execution because the downloaded
+official TLA+ v1.8.0 asset has the expected size but does not match the pinned
+SHA-256. This AR owns only evidence-led provenance repair or confirmation that
+the external release remains unverifiable. It must not weaken or bypass formal
+verification, alter native-capacity behavior, or touch asb-tui.
