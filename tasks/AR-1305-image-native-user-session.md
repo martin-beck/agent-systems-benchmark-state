@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1305-image-native-user-session",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T15:38:51+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "codex-ar1305-image-session-20260917",
+  "owner": "",
   "plan": "../plans/AR-1305.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Qualify image-native D-Bus user-session support for required TLC containment.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-17T15:09:45+00:00",
+  "updated_at": "2026-09-17T15:10:02+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -63,3 +63,11 @@ limits and fail-closed behavior remain unchanged.
 
 - 2026-09-17T15:09:45+00:00: Recorded command exit 0; command argv SHA-256
   98abdcf4266ae0e961d5c00015bd88e1919a117724f7fcfad5684b7bf14a846a.
+
+- 2026-09-17T15:10:02+00:00: Successfully staged dbus-user-session 1.14.10-4ubuntu4.1 under project
+  storage; SHA256 e585b1694b854c3b75bfb39cc4022cafe7b14e44fd435433b613b8fb9919cb41. Fresh immutable
+  image construction remains blocked: only qemu-img is available; guestfish, virt-customize, and
+  debootstrap are unavailable, so the stale qcow2 cannot be safely modified. No image-native
+  transient qualification produced. Next action: provide an approved offline root-image
+  customization tool or prebuilt immutable image pipeline, then install this exact package and rerun
+  required transient qualification.
