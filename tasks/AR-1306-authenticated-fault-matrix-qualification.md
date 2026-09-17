@@ -8,7 +8,7 @@
     "AR-1287"
   ],
   "id": "AR-1306",
-  "next_action": "PR #222 is open at exact signed head 910af9a3c380ecf035f839460f3304ccb8159e50. Exact-head CI is running; independently review the one-file diff and wait for all required checks/review before merge. Prior doc command exit 127 was a malformed shell wrapper warning token; corrected terminal doc gate exited 0.",
+  "next_action": "PR #222 exact head 910af9a3c380ecf035f839460f3304ccb8159e50 remains open. Hosted checks: headers/platform/AWQ/retained-faults/Kani/Loom pass; emulated-aarch64, quality/supply, Rust, formal TLC, fuzz, mutation sentinels still pending. Await terminal green checks and independent review; do not merge yet.",
   "observed_branch": "feature/ar-1306-authenticated-fault-matrix-qualification",
   "observed_dirty": 0,
   "observed_head": "910af9a3c380ecf035f839460f3304ccb8159e50",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T21:43:54+00:00",
+  "updated_at": "2026-09-17T21:44:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
@@ -131,3 +131,6 @@ publication, independent review, green exact-head CI, protected merge and post-m
 
 - 2026-09-17T21:43:54+00:00: Recorded command exit 8; command argv SHA-256
   70f9830c04f328234bb27442bd2464edd9e1aa80f655ba60d4c71b02409306eb.
+
+- 2026-09-17T21:44:05+00:00: Exact-head CI monitored: 6 checks passed, 6 remain pending, no
+  failures. PR is clean and unchanged at signed candidate head.

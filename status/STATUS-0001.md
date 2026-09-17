@@ -1654,7 +1654,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | codex-ar1293-timeout-repair-20260917 | Repair the state-repository TLA admission runner and truthful worktree metadata. | Wait for old ada383cea VM termination; then rebuild exact-head fa57625d9 image/seed, run required and independently re-reviewed full gates, validating overlay digest and exact serial markers. |
-| P0 | [AR-1306](../tasks/AR-1306-authenticated-fault-matrix-qualification.md): Authenticated strict-replay fault-matrix qualification | codex-ar1306-auth-listener-20260917 | Qualify the real authenticated strict-replay service and fault matrix missing from PR #221. | PR #222 is open at exact signed head 910af9a3c380ecf035f839460f3304ccb8159e50. Exact-head CI is running; independently review the one-file diff and wait for all required checks/review before merge. Prior doc command exit 127 was a malformed shell wrapper warning token; corrected terminal doc gate exited 0. |
+| P0 | [AR-1306](../tasks/AR-1306-authenticated-fault-matrix-qualification.md): Authenticated strict-replay fault-matrix qualification | codex-ar1306-auth-listener-20260917 | Qualify the real authenticated strict-replay service and fault matrix missing from PR #221. | PR #222 exact head 910af9a3c380ecf035f839460f3304ccb8159e50 remains open. Hosted checks: headers/platform/AWQ/retained-faults/Kani/Loom pass; emulated-aarch64, quality/supply, Rust, formal TLC, fuzz, mutation sentinels still pending. Await terminal green checks and independent review; do not merge yet. |
 
 ### Blocked (50)
 
