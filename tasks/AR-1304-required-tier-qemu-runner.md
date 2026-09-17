@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1304-required-tier-qemu-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T15:18:20+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "codex-ar1304-required-runner-20260917",
+  "owner": "",
   "plan": "../plans/AR-1304.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Create a clean required-containment QEMU runner for formal publication evidence.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Required-tier QEMU user-bus runner",
-  "updated_at": "2026-09-17T14:50:53+00:00",
+  "updated_at": "2026-09-17T14:53:07+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner"
 }
 ---
@@ -110,3 +110,10 @@ logs, or claim full-exhaustive evidence before required attestation is green.
 
 - 2026-09-17T14:50:53+00:00: Recorded command exit 0; command argv SHA-256
   5fa3be599c71d5c1571eb26658793efcbcbf0c8ac5e8396a1deb07c634de677a.
+
+- 2026-09-17T14:53:07+00:00: Fresh QEMU integration attempted with signed seed 99904f3c4, receipt
+  root/data, -net none, bounded 120s. Guest boot masked wait-online, but bootcmd loginctl failed
+  with Failed to connect to bus: No such file or directory before user@1000/session bus startup; no
+  bus-ready marker and no required pr-publication attestation. Next action: use a systemd-native
+  guest unit ordered after user@1000.service to start the session bus, rather than invoking loginctl
+  from cloud-init bootcmd; then rerun required launcher with all six resource properties.
