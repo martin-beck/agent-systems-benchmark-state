@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1303-hosted-platform-diagnostics",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T14:45:36+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0907",
     "AR-1252"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1303-hosted-platform-diagnostics",
   "observed_dirty": 0,
   "observed_head": "d85889d5066c26dc69279594a7c91f4f140a23e3",
-  "owner": "ar1303_formal_runner_repair",
+  "owner": "",
   "plan": "../plans/AR-1303.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Add privacy-safe fixed diagnostics for hosted platform evidence failures.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Privacy-safe hosted platform failure diagnostics",
-  "updated_at": "2026-09-17T12:48:23+00:00",
+  "updated_at": "2026-09-17T12:49:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1303-hosted-platform-diagnostics"
 }
 ---
@@ -213,3 +213,15 @@ native qualification route. This AR must not modify runtime behavior or asb-tui.
 
 - 2026-09-17T12:48:23+00:00: Recorded command exit 101; command argv SHA-256
   6f31bd8a1ca41ceb8941a8e86942f8a1d9e6d552af0b859ad71ed101f7d19856.
+
+- 2026-09-17T12:49:13+00:00: Infrastructure diagnosis 2026-09-17: GitHub formal job 105201914173
+  (run 35221321074) and controlled failed-job rerun 105203375737 both failed in unchanged
+  formal/tests/tla_artifact_acquisition.rs with errno 26 ExecutableFileBusy/Text file busy. Failures
+  occurred across unrelated offline, online, and concurrent acquisition tests, so not an AR-1303
+  diagnostics behavior failure. Local exact suite under the same worktree: serialized
+  --test-threads=1 passed 9/9; default parallel run reproduced one ETXTBSY failure (8/9), while
+  three isolated reruns of the failing test passed. This classifies as concurrency-sensitive hosted
+  runner/filesystem executable lifecycle contention, not a deterministic product defect. Safe repair
+  is external CI/runner isolation or deterministic per-test executable/temp lifecycle diagnostics;
+  no blind retries, automatic pass, gate weakening, or product edits. PR #220 remains unmergeable
+  pending fresh exact-head all-green formal CI.
