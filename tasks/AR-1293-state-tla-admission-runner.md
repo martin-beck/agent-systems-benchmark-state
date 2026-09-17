@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T18:21:26+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Run privacy/diff review, commit complete guest seed and tests signed+DCO, verify signature/DCO, then request independent exact-head review before any VM.",
+  "next_action": "Independent exact-head review of f434b4a49 and AR-1304 2b7ed3732/receipt bindings; after green review, run fresh required then full QEMU qualification with complete seed and record attestation.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 267,
+  "task_revision": 268,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T17:51:26+00:00",
+  "updated_at": "2026-09-17T17:51:40+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -920,3 +920,14 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   4a6a4005422e21500c43cfe11895291db512131e63e07305cea964b4badad2a9.
 
 - 2026-09-17T17:51:26+00:00: Heartbeat by codex-ar1293-timeout-repair-20260917.
+
+- 2026-09-17T17:51:40+00:00: Implementation committed in candidate as signed+DCO
+  f434b4a49b78a5f1e2681b13a82c4d0df25f95e0 (Good SSH signature
+  SHA256:a36V6yPvRZyxnQ2113tiA/MlHt7mPfJEXAGByBXVkuE; matching Signed-off-by). Complete guest seed
+  now includes UUID/data mount, offline curl, user runtime/user bus, bounded systemd transient, tier
+  timeout/profile, GIT/TMPDIR/attestation, validator, cleanup and poweroff. Tests 20/20 passed;
+  headers/Ruff passed; mypy first exited 1 due missing local tier_profiles import path, corrected
+  with MYPYPATH and passed. Candidate clean. AR-1304 durable launcher required_seed.py already
+  directly calls build_user_data(tier) via commit 2b7ed3732 and runner receipt binds helper/image
+  hashes; no private helper or VM run started after this fix. Latest 17:50:16 exit-1 was the initial
+  mypy invocation environment error, now resolved.
