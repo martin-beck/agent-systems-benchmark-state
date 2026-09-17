@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1301.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T06:53:53Z",
+  "updated_at": "2026-09-17T09:04:13+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -40,3 +40,7 @@ gates or revive old PR branches. Scope is ASB only: lifecycle runner integration
 schemas/docs and bounded evidence under `crates/asb-runtime`, `crates/asb-replay`, `crates/asb-cli`
 and repository test infrastructure. Do not modify asb-tui or coordinator implementation.
 
+
+- 2026-09-17T09:04:13+00:00: Dependencies AR-1287 and AR-1300 are now durably done; AR-1287
+  runner/KVM qualification and repaired exact-main gates are green. Promote for implementation of
+  the real supervised replay lifecycle fault matrix.
