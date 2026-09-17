@@ -11,16 +11,16 @@
   "next_action": "PR #219 exact head 6221b89 is fully green except hosted Platform evidence. Do not merge. Blocked on repeated hosted portability sandbox failure: initial job 105192558571 and final controlled rerun job 105195340454 both fail generically, while exact local collector passes and all other CI checks are green. Propose/track CI-infrastructure repair; resume exact-head merge only after Platform evidence green.",
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "observed_dirty": 0,
-  "observed_head": "6221b894c438292ff50b21d2d0c27a875d0bcc1b",
+  "observed_head": "c55da0ec4de33adc3041623520c19bf994c229dc",
   "owner": "",
   "plan": "../plans/AR-1301.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "blocked",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 287,
+  "task_revision": 288,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T12:10:02+00:00",
+  "updated_at": "2026-09-17T13:11:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
