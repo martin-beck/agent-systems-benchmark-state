@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 116,
+  "task_revision": 117,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T03:16:26+00:00",
+  "updated_at": "2026-09-17T03:16:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
@@ -355,3 +355,6 @@ must not reuse unmerged strict-replay or asb-tui branches.
   passed all suites except concurrent_acquisition_converges_on_one_verified_output, which failed at
   start_first_acquisition with Os code 26 ExecutableFileBusy (Text file busy), not certificate code.
   Worktree intentionally dirty only formal/Cargo.lock pending signed commit.
+
+- 2026-09-17T03:16:34+00:00: Recorded command exit 0; command argv SHA-256
+  18bd4aff9a09c3fb87a532f0a7fcc2d0fe00607e496aacf84775e9e758436f78.
