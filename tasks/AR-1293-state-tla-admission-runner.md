@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 151,
+  "task_revision": 152,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T14:13:20+00:00",
+  "updated_at": "2026-09-17T14:13:32+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -540,3 +540,6 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   formal/handoffctl/verify.sh --tier portable-smoke with attestation 0993b7c3... and data image
   488655f4.... Candidate repair is signed 39c8933f5; no required/full gate is authorized for it
   until portable evidence matches this candidate.
+
+- 2026-09-17T14:13:32+00:00: Recorded command exit 1; command argv SHA-256
+  93fa831e262a4bbc89ef1374fd632e82a946fd2f31121ca0ea6d9743678b1d85.
