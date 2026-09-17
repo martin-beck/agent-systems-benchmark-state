@@ -22,21 +22,21 @@ Generated from local Git and GitHub. Do not edit.
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #214 | `feature/ar-1286-supervised-replay-lifecycle@eaf7fcbf42ae` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(replay): integrate runtime-owned supervised replay lifecycle |
 | #215 | `feature/ar-1286-replay-lifecycle-rebased@03b1ddc7c9d2` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(replay): integrate signed runtime replay lifecycle |
-| #219 | `feature/ar-1301-replay-lifecycle-fault-matrix@ba2b20dd8a6f` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | test(runtime): qualify supervised replay lifecycle fault matrix |
+| #219 | `feature/ar-1301-replay-lifecycle-fault-matrix@ba2b20dd8a6f` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | test(runtime): qualify supervised replay lifecycle fault matrix |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35218019893 | `ba2b20dd8a6f` | pull_request | Fault assurance | queued:- |
-| 35218019878 | `ba2b20dd8a6f` | pull_request | Rust verification | queued:- |
-| 35218019872 | `ba2b20dd8a6f` | pull_request | Agent Workflow Quality shadow | queued:- |
-| 35218019849 | `ba2b20dd8a6f` | pull_request | Huawei MIT source headers | queued:- |
-| 35218019820 | `ba2b20dd8a6f` | pull_request | Hosted portability and native qualification | queued:- |
-| 35218019801 | `ba2b20dd8a6f` | pull_request | Emulated aarch64 portability | pending:- |
-| 35218019776 | `ba2b20dd8a6f` | pull_request | Repository quality | pending:- |
-| 35218019710 | `ba2b20dd8a6f` | pull_request | Formal assurance | pending:- |
+| 35218019893 | `ba2b20dd8a6f` | pull_request | Fault assurance | in_progress:- |
+| 35218019878 | `ba2b20dd8a6f` | pull_request | Rust verification | in_progress:- |
+| 35218019872 | `ba2b20dd8a6f` | pull_request | Agent Workflow Quality shadow | completed:success |
+| 35218019849 | `ba2b20dd8a6f` | pull_request | Huawei MIT source headers | completed:success |
+| 35218019820 | `ba2b20dd8a6f` | pull_request | Hosted portability and native qualification | completed:failure |
+| 35218019801 | `ba2b20dd8a6f` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 35218019776 | `ba2b20dd8a6f` | pull_request | Repository quality | in_progress:- |
+| 35218019710 | `ba2b20dd8a6f` | pull_request | Formal assurance | in_progress:- |
 | 35217609723 | `d960dfcbaa69` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35217609716 | `d960dfcbaa69` | pull_request | Huawei MIT source headers | completed:success |
 | 35217609708 | `d960dfcbaa69` | pull_request | Hosted portability and native qualification | completed:failure |
-| 35217609688 | `d960dfcbaa69` | pull_request | Formal assurance | in_progress:- |
+| 35217609688 | `d960dfcbaa69` | pull_request | Formal assurance | completed:cancelled |
