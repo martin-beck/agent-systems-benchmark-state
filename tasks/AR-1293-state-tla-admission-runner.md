@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 153,
+  "task_revision": 154,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T14:13:59+00:00",
+  "updated_at": "2026-09-17T14:15:35+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -552,3 +552,6 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   required/pr/full gate was run. Next action: provision a fresh immutable data image containing
   39c8933f5, verify its digest and exact 8G/3G attestation, then run portable-smoke before
   required/full.
+
+- 2026-09-17T14:15:35+00:00: Resume authorized to provision a fresh candidate-specific data image
+  from exact signed 39c8933f5; preserve fail-closed portable-before-required/full ordering.
