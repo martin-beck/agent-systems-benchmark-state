@@ -1649,7 +1649,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | codex-ar1293-timeout-repair-20260917 | Repair the state-repository TLA admission runner and truthful worktree metadata. | Add receipt overlay digest binding and exact serial-marker validation; run all code gates; then provision a larger clean bounded runner and rerun full-exhaustive. |
+| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | codex-ar1293-timeout-repair-20260917 | Repair the state-repository TLA admission runner and truthful worktree metadata. | Provision a fresh 32GiB data image from signed candidate ada383cea, fsck-clean with exact ref/security fixture; run full-exhaustive with unchanged 7200s and containment bounds, then validate overlay digest and serial markers. |
 
 ### Blocked (50)
 

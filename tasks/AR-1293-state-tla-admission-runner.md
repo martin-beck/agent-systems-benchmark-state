@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T21:48:29+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Add receipt overlay digest binding and exact serial-marker validation; run all code gates; then provision a larger clean bounded runner and rerun full-exhaustive.",
+  "next_action": "Provision a fresh 32GiB data image from signed candidate ada383cea, fsck-clean with exact ref/security fixture; run full-exhaustive with unchanged 7200s and containment bounds, then validate overlay digest and serial markers.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 614,
+  "task_revision": 615,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T21:03:32+00:00",
+  "updated_at": "2026-09-17T21:04:18+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1922,3 +1922,10 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T21:03:32+00:00: Recorded command exit 0; command argv SHA-256
   69feb50eb32a6f6530084dd77fce73c4e13463cfcb6c2f1bd331148a2d019f6c.
+
+- 2026-09-17T21:04:18+00:00: Full 16GiB run terminated with Java out-of-memory during TLC liveness;
+  no attestation/receipt accepted. Candidate ada383cea adds mandatory overlay image SHA-256 to the
+  receipt and requires all three exact success markers in serial for result=0; focused Ruff, format,
+  mypy, and 23 tests pass, signed+DCO. The active failed VM is stopped. Next runner remains
+  offline/no-NIC/q35 KVM-or-TCG, 32GiB guest memory, 8 vCPUs, 3G memory+swap cgroup, 8G AS bound, 2
+  TLC workers.
