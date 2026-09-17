@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1305-image-native-user-session",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T15:43:50+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "codex-ar1305-image-session-20260917",
+  "owner": "",
   "plan": "../plans/AR-1305.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Qualify image-native D-Bus user-session support for required TLC containment.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-17T15:16:22+00:00",
+  "updated_at": "2026-09-17T15:16:52+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -122,3 +122,12 @@ limits and fail-closed behavior remain unchanged.
 
 - 2026-09-17T15:16:22+00:00: Recorded command exit 0; command argv SHA-256
   0b0da33192399030b53c5df92c3ce304ba522e5a6cc5a2684898c5f11d7636e2.
+
+- 2026-09-17T15:16:52+00:00: Fresh root image successfully built without mutating stale input:
+  ar1305-root-fresh.qcow2 SHA256 1a5db8d846d71588bbebdcaa0fffc708cde5a7aaf6feaca269bafc37aac13cce,
+  injected dbus-user-session 1.14.10-4ubuntu4.1 from pinned package SHA e585b169... using sudo
+  virt-customize. Fresh QEMU boot still fails required transient with Transport endpoint is not
+  connected under the existing seed; package presence alone does not repair image-native
+  user-manager transport. No required attestation. Next action: build a seed using the image-native
+  dbus-user-session socket/user-manager activation (not standalone custom dbus service), then retry
+  AR-1304.
