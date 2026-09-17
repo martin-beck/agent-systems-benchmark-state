@@ -12,16 +12,16 @@
   "next_action": "Promote after dependency verification; hand the runtime-issued replay client into primary argument dispatch and prove supervised lifecycle behavior.",
   "observed_branch": "feature/ar-1278-primary-runtime-client",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "69e8b064d3121a4bae1f672cdae9c0c8672000bc",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1278.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect the primary replay command to the runtime-issued transport client.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Primary replay runtime client handoff",
-  "updated_at": "2026-09-17T00:09:10+00:00",
+  "updated_at": "2026-09-17T00:09:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1278-primary-runtime-client"
 }
 ---
