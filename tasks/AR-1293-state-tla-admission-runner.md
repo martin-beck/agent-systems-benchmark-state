@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T18:43:58+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Independent exact-head review of 658424efc; if green, invoke launcher on pinned clean images and inspect command/receipt/serial/attestation before required/full qualification.",
+  "next_action": "Independent review of afb9e7da8+bc49937f6; then run only fresh required-tier qualification with pinned images, inspect receipt/serial/attestation, and retain full tier blocked until required evidence passes.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 320,
+  "task_revision": 321,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T18:14:15+00:00",
+  "updated_at": "2026-09-17T18:14:30+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1092,3 +1092,9 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T18:14:15+00:00: Recorded command exit 0; command argv SHA-256
   57e763c838bdc1458bd57b118836ca749e1207780e025bdfa4f7c472d9dbeccc.
+
+- 2026-09-17T18:14:30+00:00: Runtime review fixes committed as signed+DCO afb9e7da8 (real
+  cloud-localds seed image, disposable qemu-img writable overlay, guestfish post-run attestation
+  extraction) and bc49937f6 (overlay no longer readonly; extraction failures create failed
+  attestation/result receipt). Exact uv offline Ruff check/format, mypy tools tests, and focused
+  suite all pass (23/23). Candidate clean. No VM launched.

@@ -1649,7 +1649,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | codex-ar1293-timeout-repair-20260917 | Repair the state-repository TLA admission runner and truthful worktree metadata. | Independent exact-head review of 658424efc; if green, invoke launcher on pinned clean images and inspect command/receipt/serial/attestation before required/full qualification. |
+| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | codex-ar1293-timeout-repair-20260917 | Repair the state-repository TLA admission runner and truthful worktree metadata. | Independent review of afb9e7da8+bc49937f6; then run only fresh required-tier qualification with pinned images, inspect receipt/serial/attestation, and retain full tier blocked until required evidence passes. |
 
 ### Blocked (50)
 
