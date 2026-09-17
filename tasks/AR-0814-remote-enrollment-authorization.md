@@ -2,7 +2,7 @@
 {
   "branch": "feature/remote-enrollment-authz",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T04:33:23+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0813"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "29cfa19323a0ceb124438854d73f664ae2b86dcc",
-  "owner": "asb_ar0814_enrollment_authz",
+  "owner": "",
   "plan": "../plans/AR-0814.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 311,
+  "task_revision": 312,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-17T04:03:25+00:00",
+  "updated_at": "2026-09-17T04:03:28+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -882,3 +882,6 @@ Implementation has not started. Read the linked plan before claiming.
 - 2026-09-17T04:03:25+00:00: Corrected stale next action: AR-1288 is no longer pending. Combined
   acceptance remains blocked only by trusted route/IP and ancestor authority, which is not supplied
   by AR-1288 endpoint digest binding.
+
+- 2026-09-17T04:03:28+00:00: Ownerless blocked after correcting successor linkage. AR-1288 is
+  complete; only trusted route/IP and ancestor authority remains.
