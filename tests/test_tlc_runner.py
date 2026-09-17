@@ -18,6 +18,13 @@ if SPEC is None or SPEC.loader is None:
     raise RuntimeError("cannot load TLC runner")
 RUNNER = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(RUNNER)
+ATTEST_SPEC = importlib.util.spec_from_file_location(
+    "attest", ROOT / "formal" / "handoffctl" / "attest.py"
+)
+if ATTEST_SPEC is None or ATTEST_SPEC.loader is None:
+    raise RuntimeError("cannot load attestation helper")
+ATTEST = importlib.util.module_from_spec(ATTEST_SPEC)
+ATTEST_SPEC.loader.exec_module(ATTEST)
 
 
 class TlcRunnerTests(unittest.TestCase):
@@ -124,6 +131,25 @@ class TlcRunnerTests(unittest.TestCase):
             outcomes = list(queue.glob("*.outcome.json"))
             self.assertEqual(len(outcomes), 1)
             self.assertEqual(json.loads(outcomes[0].read_text())["state"], "canceled")
+
+    def test_manifest_rejects_malformed_and_duplicate_entries(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            manifest = Path(directory) / "manifest"
+            manifest.write_text("HandoffctlBinding\n", encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "malformed"):
+                ATTEST.read_manifest(manifest)
+            manifest.write_text(
+                "HandoffctlBinding success\nHandoffctlBinding success\n", encoding="utf-8"
+            )
+            with self.assertRaisesRegex(ValueError, "duplicate"):
+                ATTEST.read_manifest(manifest)
+
+    def test_tier_evidence_rejects_wrong_schema(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            evidence = Path(directory) / "tier.json"
+            evidence.write_text(json.dumps({"schema_version": 1, "tiers": {}}), encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "exactly the supported tiers"):
+                ATTEST.read_tier_evidence(evidence)
 
 
 if __name__ == "__main__":

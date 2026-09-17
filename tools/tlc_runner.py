@@ -12,6 +12,7 @@ import os
 import shutil
 import subprocess
 import sys
+import tempfile
 import time
 import uuid
 from pathlib import Path
@@ -20,7 +21,11 @@ DEFAULT_WORKERS = 2
 DEFAULT_HEAP = "2048m"
 DEFAULT_MEMORY_MAX = "3G"
 DEFAULT_SWAP_MAX = "3G"
-DEFAULT_ADMISSION_LOCK = "/tmp/agent-workflow-coordinator-tlc-admission.lock"  # noqa: S108
+_WORKER_ROOT = Path(tempfile.gettempdir()) / (
+    f"agent-workflow-coordinator-tlc-{getattr(os, 'getuid', lambda: 0)()}"
+)
+DEFAULT_QUEUE = str(_WORKER_ROOT / "queue")
+DEFAULT_ADMISSION_LOCK = str(_WORKER_ROOT / "admission.lock")
 
 
 class AdmissionError(RuntimeError):
@@ -223,7 +228,7 @@ def run(args: argparse.Namespace) -> int:
         "memory_max": args.memory_max,
         "swap_max": args.swap_max,
     }
-    job.write_text(json.dumps(record, sort_keys=True) + "\n")
+    job.write_text(json.dumps(record, sort_keys=True) + "\n", encoding="utf-8")
     try:
         command = build_command(
             jar=Path(args.jar),
@@ -242,18 +247,18 @@ def run(args: argparse.Namespace) -> int:
         with lock_path.open("a+", encoding="utf-8") as lock:
             fcntl.flock(lock, fcntl.LOCK_EX)
             record["state"] = "running"
-            job.write_text(json.dumps(record, sort_keys=True) + "\n")
+            job.write_text(json.dumps(record, sort_keys=True) + "\n", encoding="utf-8")
             exit_code = subprocess.run(command, check=False).returncode  # noqa: S603
             record.update({"ended": time.time(), "state": "completed", "exit_code": exit_code})
-            outcome.write_text(json.dumps(record, sort_keys=True) + "\n")
+            outcome.write_text(json.dumps(record, sort_keys=True) + "\n", encoding="utf-8")
             return exit_code
     except KeyboardInterrupt:
         record.update({"ended": time.time(), "state": "canceled", "exit_code": 130})
-        outcome.write_text(json.dumps(record, sort_keys=True) + "\n")
+        outcome.write_text(json.dumps(record, sort_keys=True) + "\n", encoding="utf-8")
         raise
     except (AdmissionError, OSError) as error:
         record.update({"ended": time.time(), "state": "failed", "error": str(error)})
-        outcome.write_text(json.dumps(record, sort_keys=True) + "\n")
+        outcome.write_text(json.dumps(record, sort_keys=True) + "\n", encoding="utf-8")
         print(f"TLC admission failed closed: {error}", file=sys.stderr)
         return 2
     finally:
@@ -269,7 +274,7 @@ def parser() -> argparse.ArgumentParser:
     result.add_argument("--metadir", required=True)
     result.add_argument(
         "--queue",
-        default=os.environ.get("TLC_ADMISSION_QUEUE", "/tmp/agent-workflow-coordinator-tlc"),  # noqa: S108
+        default=DEFAULT_QUEUE,
     )
     result.add_argument("--admission-lock", default=DEFAULT_ADMISSION_LOCK)
     result.add_argument(

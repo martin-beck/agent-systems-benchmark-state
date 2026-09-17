@@ -32,13 +32,76 @@ EXPECTED_MODELS = {
     },
 }
 MODEL_SOURCE = {"HandoffctlPR": "Handoffctl"}
+TIER_KEYS = {
+    "models", "exhaustive", "workers", "heap", "memory_max",
+    "swap_max", "timeout_seconds", "containment",
+}
 
 
 def digest(path: Path) -> str:
+    if not path.is_file():
+        raise ValueError(f"required evidence file is missing: {path}")
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def main() -> int:
+def read_manifest(path: Path) -> dict[str, str]:
+    outcomes: dict[str, str] = {}
+    try:
+        lines = path.read_text(encoding="utf-8").splitlines()
+    except OSError as error:
+        raise ValueError(f"cannot read outcome manifest: {error}") from error
+    for number, line in enumerate(lines, 1):
+        fields = line.split()
+        if len(fields) != 2 or fields[1] not in {"success", "failed"}:
+            raise ValueError(f"malformed outcome manifest line {number}: expected MODEL success")
+        model, result = fields
+        if model in outcomes:
+            raise ValueError(f"duplicate outcome manifest entry for {model}")
+        outcomes[model] = result
+    if not outcomes:
+        raise ValueError("outcome manifest is empty")
+    return outcomes
+
+
+def read_tier_evidence(path: Path) -> dict[str, dict[str, object]]:  # noqa: C901
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as error:
+        raise ValueError(f"tier evidence is unreadable or malformed: {error}") from error
+    if not isinstance(payload, dict) or set(payload) != {"schema_version", "tiers"}:
+        raise ValueError("tier evidence must contain only schema_version and tiers")
+    if payload["schema_version"] != 1 or not isinstance(payload["tiers"], dict):
+        raise ValueError("tier evidence has an unsupported schema")
+    tiers = payload["tiers"]
+    if set(tiers) != set(EXPECTED_MODELS):
+        raise ValueError("tier evidence does not describe exactly the supported tiers")
+    for tier, entry in tiers.items():
+        if not isinstance(entry, dict) or set(entry) != TIER_KEYS:
+            raise ValueError(f"tier evidence for {tier} has unknown or missing fields")
+        models = entry["models"]
+        if not isinstance(models, list) or len(models) != len(set(models)):
+            raise ValueError(f"tier evidence for {tier} has duplicate or invalid models")
+        if set(models) != EXPECTED_MODELS[tier]:
+            raise ValueError(f"tier evidence for {tier} has an unexpected model set")
+        if entry["workers"] != 2:
+            raise ValueError(f"tier evidence for {tier} has unsupported bounds")
+        if entry["heap"] != "2048m" or entry["memory_max"] != "3G" or entry["swap_max"] != "3G":
+            raise ValueError(f"tier evidence for {tier} has unsupported memory bounds")
+        if entry["timeout_seconds"] != 1800:
+            raise ValueError(f"tier evidence for {tier} has unsupported timeout")
+        expected_containment = (
+            "portable-timeout-prlimit"
+            if tier == "portable-smoke"
+            else "systemd-run-user-cgroup"
+        )
+        if entry["containment"] != expected_containment:
+            raise ValueError(f"tier evidence for {tier} has unsupported containment")
+        if entry["exhaustive"] != (tier == "full-exhaustive"):
+            raise ValueError(f"tier evidence for {tier} has incorrect exhaustive flag")
+    return tiers
+
+
+def main() -> int:  # noqa: C901
     parser = argparse.ArgumentParser()
     parser.add_argument("--tier", choices=tuple(EXPECTED_MODELS), required=True)
     parser.add_argument("--output", type=Path, required=True)
@@ -58,10 +121,10 @@ def main() -> int:
         parser.error(f"{args.tier} attestation requires TLC_CGROUP_MODE=required")
     if not args.manifest.exists():
         parser.error("attestation requires the runner-produced outcome manifest")
-    outcomes = {}
-    for line in args.manifest.read_text(encoding="utf-8").splitlines():
-        model, result = line.split(" ", 1)
-        outcomes[model] = result
+    try:
+        outcomes = read_manifest(args.manifest)
+    except ValueError as error:
+        parser.error(str(error))
     if set(outcomes) != set(args.models) or any(
         result != "success" for result in outcomes.values()
     ):
@@ -71,6 +134,15 @@ def main() -> int:
     ):
         parser.error(f"{args.tier} attestation has an unexpected model set")
     root = Path(__file__).resolve().parents[2]
+    try:
+        tiers = read_tier_evidence(root / "formal" / "tier-evidence.json")
+    except ValueError as error:
+        parser.error(str(error))
+    evidence = tiers[args.tier]
+    if boundary == "portable" and evidence["containment"] != "portable-timeout-prlimit":
+        parser.error("portable execution does not match this tier's containment evidence")
+    if boundary == "required" and evidence["containment"] != "systemd-run-user-cgroup":
+        parser.error("required execution does not match this tier's containment evidence")
     configs = {
         model: digest(root / "formal" / "handoffctl" / f"{model}.cfg") for model in args.models
     }
@@ -113,11 +185,11 @@ def main() -> int:
         "tool_jar_sha256": digest(args.jar),
         "containment_mode": boundary,
         "resource_bounds": {
-            "workers": 2,
-            "heap": os.environ.get("TLC_HEAP", "2048m"),
-            "memory_max": "3G",
-            "swap_max": "3G",
-            "timeout_seconds": int(os.environ.get("TLC_TIMEOUT_SECONDS", "1800")),
+            "workers": evidence["workers"],
+            "heap": evidence["heap"],
+            "memory_max": evidence["memory_max"],
+            "swap_max": evidence["swap_max"],
+            "timeout_seconds": evidence["timeout_seconds"],
             "admission": (
                 "systemd-run-user-cgroup" if boundary == "required" else "portable-timeout-prlimit"
             ),
