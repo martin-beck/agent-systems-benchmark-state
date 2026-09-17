@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T04:33:14+00:00",
   "depends_on": [],
   "id": "AR-1287",
-  "next_action": "Promote only after confirming AR-1286 blocked evidence; provision a pinned container/VM runner under /srv/data/projects and prove qualified namespace/systemd/egress capability.",
+  "next_action": "Read-only runner audit: Docker daemon at /srv/data/projects/docker-awq-run/docker.sock runs rootless-seccomp/cgroupv2 with local amd64 awq-runner image ID e9edc4a58d865bb8de5e1ec29df920d37721204e31b6d31a969d37ac16c028ae. Network-none/read-only/no-mount bounded probe passes, but image has no RepoDigest/signature provenance and no arm64 variant; bwrap namespace capability still needs qualification.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a delegated runner for real strict-replay child lifecycle qualification.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Delegated sandbox runner capability",
-  "updated_at": "2026-09-17T02:33:14+00:00",
+  "updated_at": "2026-09-17T02:34:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1287-delegated-sandbox-runner"
 }
 ---
@@ -31,3 +31,12 @@ lifecycle completion until the actual child and fault fixtures run in the qualif
   capability blocker.
 
 - 2026-09-17T02:33:14+00:00: Claimed by asb_ar1287_namespace_runner.
+
+- 2026-09-17T02:34:29+00:00: Initial capability checkpoint: Docker 29.7.2 overlay2 cgroupv2 is
+  available through the project-local socket. Pinned invocation candidate
+  awq-runner-v1:python3.13.15 image ID
+  sha256:e9edc4a58d865bb8de5e1ec29df920d37721204e31b6d31a969d37ac16c028ae, Architecture amd64, no
+  RepoDigests. Bounded --network none --read-only --cap-drop ALL --pids-limit 32 --memory 128m
+  --cpus 1 run succeeded; outbound socket failed with OSError, write failed read-only, and Docker
+  reported no mounts. This is capability evidence only, not approved provenance. binfmt qemu-aarch64
+  is enabled; no pinned arm64 image is locally available. No product/asb-tui mutation.
