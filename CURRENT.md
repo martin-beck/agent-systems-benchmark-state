@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Rebuild the clean data image from signed candidate 0ce2726e2 with pinned JDK security files, generate required-tier seed, rerun bounded required launcher, and inspect PR result, attestation, and receipt. | codex-ar1293-timeout-repair-20260917 |
+| P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Rebuild the clean data image from signed candidate ac971b996, generate required-tier seed, rerun bounded required launcher, and inspect PR result, attestation, and receipt. | codex-ar1293-timeout-repair-20260917 |
 
 ## Blocked
 

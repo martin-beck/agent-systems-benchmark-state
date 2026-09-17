@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T19:35:16+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Rebuild the clean data image from signed candidate 0ce2726e2 with pinned JDK security files, generate required-tier seed, rerun bounded required launcher, and inspect PR result, attestation, and receipt.",
+  "next_action": "Rebuild the clean data image from signed candidate ac971b996, generate required-tier seed, rerun bounded required launcher, and inspect PR result, attestation, and receipt.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 478,
+  "task_revision": 479,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T19:10:13+00:00",
+  "updated_at": "2026-09-17T19:10:41+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1596,3 +1596,10 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T19:10:13+00:00: Recorded command exit 0; command argv SHA-256
   69feb50eb32a6f6530084dd77fce73c4e13463cfcb6c2f1bd331148a2d019f6c.
+
+- 2026-09-17T19:10:41+00:00: Required VM for candidate 0ce2726e2 reached PR_PUBLICATION_RC=0 and
+  PR_PUBLICATION_EVIDENCE_OK after the JDK and evidence ownership fixes. Runner rejected the result
+  because extraction invoked guestfish list-partitions without launching the appliance; direct
+  evidence was present but extraction failed. Candidate ac971b996 replaces this with a launched
+  list-filesystems probe (direct /dev/sda, partition fallback /dev/sda1) and adds a regression
+  assertion. Focused Ruff, format, mypy, and 23 tests pass; commit is SSH-signed with DCO.
