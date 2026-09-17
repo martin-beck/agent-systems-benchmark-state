@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1280-cross-crate-replay-entrypoint",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T02:13:29+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1280-cross-crate-replay-entrypoint",
   "observed_dirty": 0,
   "observed_head": "f92a86b126e36e467bccb769ce6ead9a70cf639c",
-  "owner": "asb_ar1280_runtime_cli_entrypoint",
+  "owner": "",
   "plan": "../plans/AR-1280.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Implement the cross-crate runtime process entrypoint for primary strict replay.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Cross-crate replay process entrypoint",
-  "updated_at": "2026-09-17T00:16:55+00:00",
+  "updated_at": "2026-09-17T00:19:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1280-cross-crate-replay-entrypoint"
 }
 ---
@@ -53,3 +53,7 @@ prior blocked evidence, but do not substitute another audit-only result.
   502 after command recording; product changes remain local and signed. Remaining acceptance is
   actual argument-level replay process invocation plus supervised cassette traffic and lifecycle
   fault matrix.
+
+- 2026-09-17T00:19:15+00:00: Worker completed implementation checkpoint f92a86b and stopped;
+  acceptance remains incomplete pending actual argument-level replay process invocation and
+  lifecycle fault matrix. Preserve signed branch and evidence for a successor; no product merge.
