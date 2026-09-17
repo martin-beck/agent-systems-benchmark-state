@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1044](tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. | codex-ar1044-recovery-20260917 |
+| P0 | [AR-1044](tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | No further action: AR-1044 safety repair is accepted by the later trusted-main run 34872879697 at main 78bf72d; AR-1048 and all downstream tmux recoveries are superseded or completed. Preserve merged evidence; do not touch asb-tui source from ASB. | codex-ar1044-recovery-20260917 |
 
 ## Open
 

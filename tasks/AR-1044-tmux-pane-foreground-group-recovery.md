@@ -5,16 +5,16 @@
   "claim_expires": "2026-09-17T04:39:02+00:00",
   "depends_on": [],
   "id": "AR-1044",
-  "next_action": "Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge.",
+  "next_action": "No further action: AR-1044 safety repair is accepted by the later trusted-main run 34872879697 at main 78bf72d; AR-1048 and all downstream tmux recoveries are superseded or completed. Preserve merged evidence; do not touch asb-tui source from ASB.",
   "owner": "codex-ar1044-recovery-20260917",
   "plan": "../plans/AR-1044.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Recover tmux foreground-group qualification",
-  "updated_at": "2026-09-17T04:09:02+00:00",
+  "updated_at": "2026-09-17T04:09:18+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-pane-foreground-group-recovery"
 }
 ---
@@ -298,3 +298,10 @@ absent or changes. Do not change renderer or application behavior.
   34553880557 failed on tmux window-option portability; recovery is AR-1048.
 
 - 2026-09-17T04:09:02+00:00: Claimed by codex-ar1044-recovery-20260917.
+
+- 2026-09-17T04:09:18+00:00: Audit complete: AR-1048 is superseded by AR-1049, which is superseded
+  through the downstream tmux recovery chain. PRs #14, #15, #16, #17, #19, #20, #21, #22, #23 and
+  the hosted recovery path are recorded in successor tasks. Trusted-main run 34872879697 at main
+  78bf72d111953f5da476a3c49f9d2d66f952638b completed successfully with all 31 terminal tests plus
+  coverage, supply-chain, privacy and provenance gates. AR-1044 implementation remains merged safety
+  code; no ASB or asb-tui source changes are made here. Release ownerless after this durable audit.
