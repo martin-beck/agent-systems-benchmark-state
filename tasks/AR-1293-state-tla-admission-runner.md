@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T10:54:31+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Portable-smoke passed on clean isolated VM for candidate f16d2cb41721bf8f17aa5aa75ab01520aeb91eb8; proceed with the planned focused/full state gates and independent review, preserving portable non-exhaustive attestation limits.",
+  "next_action": "Rerun pr-publication on the approved VM through a non-interactive, history-expansion-safe console command; the prior attempt never entered verify.sh and produced no attestation. Then run full-exhaustive and record terminal attestation.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 88,
+  "task_revision": 89,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T10:32:23+00:00",
+  "updated_at": "2026-09-17T10:32:54+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -316,3 +316,13 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T10:32:23+00:00: Recorded command exit 0; command argv SHA-256
   d97a032d7a609231e0d675cc94bd9275de3b963b7b721ff7df06204155d09725.
+
+- 2026-09-17T10:32:54+00:00: Gate evidence: focused test_tlc_runner suite passed 10/10; vendor
+  verify, Ruff and mypy passed. The 10:31:33Z exit-1 pr-publication attempt was a console-injection
+  failure, not a TLC/formal gate result:
+  /srv/data/projects/asb-state-tlc-vm-32g/private/pr-publication-pr2.serial.log ends with bash
+  history-expansion error `-bash: !/bin/sh: event not found` immediately after the injected command.
+  It contains no __ASB_RC marker, no attestation begin/end, and no model completion/failure, so no
+  formal claim is made. Remediation is to use a history-safe noninteractive command (disable history
+  expansion before injection or avoid `#!` text entirely) on the approved VM; do not classify this
+  as product/model failure.
