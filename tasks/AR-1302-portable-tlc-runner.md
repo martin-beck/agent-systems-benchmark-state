@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T15:14:08+00:00",
+  "claim_expires": "2026-09-17T15:16:14+00:00",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Run the exact reviewed f1931686c portable-smoke through the fresh UUID-wired 32G VM/data image and capture terminal attestation; container evidence portable-smoke-address-space.json passed, but VM qualification is still required before pr-publication/full.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 367,
+  "task_revision": 368,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T13:15:39+00:00",
+  "updated_at": "2026-09-17T13:16:14+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1230,3 +1230,5 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   digest c0d1549d1e0f5fa5b83622ec0033b00456107e0b1d0cfcce4c1d831532ce621e, no network or host
   mounts, read-only root, dropped capabilities, no-new-privileges, 2 CPUs, 20 GiB memory/swap, 64
   PIDs; HandoffctlBinding exit 0 in 0.818s. This does not qualify the requested UUID-wired VM yet.
+
+- 2026-09-17T13:16:14+00:00: Heartbeat by codex-ar1302-requalify-address-space.
