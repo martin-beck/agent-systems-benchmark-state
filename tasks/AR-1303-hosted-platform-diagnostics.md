@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add privacy-safe fixed diagnostics for hosted platform evidence failures.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "Privacy-safe hosted platform failure diagnostics",
-  "updated_at": "2026-09-17T12:31:19+00:00",
+  "updated_at": "2026-09-17T12:32:23+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1303-hosted-platform-diagnostics"
 }
 ---
@@ -152,4 +152,7 @@ native qualification route. This AR must not modify runtime behavior or asb-tui.
   b5175418c3dd10204f8942857d7411a289142734592c0106cbc549a7d9f7ee8d.
 
 - 2026-09-17T12:31:19+00:00: Recorded command exit 0; command argv SHA-256
+  8b65408f542d1d36c27bf75fbb8b3e94ba6ef042aebc2300f61b3f61efe2068d.
+
+- 2026-09-17T12:32:23+00:00: Recorded command exit 0; command argv SHA-256
   8b65408f542d1d36c27bf75fbb8b3e94ba6ef042aebc2300f61b3f61efe2068d.
