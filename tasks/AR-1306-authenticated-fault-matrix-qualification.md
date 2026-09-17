@@ -8,7 +8,7 @@
     "AR-1287"
   ],
   "id": "AR-1306",
-  "next_action": "PR #222 exact head 910af9a3c380ecf035f839460f3304ccb8159e50 has all 12 CI checks green, but independent review blocks acceptance: run_supervised_fault now allocates authenticated ReplayRelay yet never starts/accepts a StrictReplayService connection, and provider/descendant egress cases assert only nonzero exit rather than cause-specific denial. Add executable matrix-level authenticated positive/parity and distinct cause assertions, then publish a new signed head and rerun CI.",
+  "next_action": "Repair implementation paused after two failed patch commands: exit 2 because apply_patch received no stdin through handoffctl; exit 1 because attempted Python wrapper preserved literal newline escapes and was invalid syntax. No product files changed. Use bounded, reviewed handoffctl mutation method, then rerun focused tests before commit.",
   "observed_branch": "feature/ar-1306-authenticated-fault-matrix-qualification",
   "observed_dirty": 0,
   "observed_head": "910af9a3c380ecf035f839460f3304ccb8159e50",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T21:56:54+00:00",
+  "updated_at": "2026-09-17T21:57:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
@@ -158,3 +158,7 @@ publication, independent review, green exact-head CI, protected merge and post-m
 
 - 2026-09-17T21:56:54+00:00: Recorded command exit 1; command argv SHA-256
   413d8cfd8985157151fc7fe5325e3a83caa44052436e65b6a51ca5cecf1bec69.
+
+- 2026-09-17T21:57:20+00:00: Recorded exact repair-tool failures: apply_patch invocation via
+  handoffctl had no stdin (exit 2); Python subprocess wrapper had syntax error from escaped newlines
+  (exit 1). Working tree remains at signed 910af9a; no source mutation occurred.
