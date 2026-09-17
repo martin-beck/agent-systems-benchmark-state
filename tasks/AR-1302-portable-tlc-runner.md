@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T07:07:00+00:00",
+  "updated_at": "2026-09-17T07:09:22+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -29,3 +29,6 @@ VMs, caches, queues, locks and evidence under `/srv/data/projects`; use immutabl
 offline-after-install behavior, no network or host-mount access, bounded execution and sanitized
 evidence. Native ARM64 is optional and must not be a gate. Do not modify ASB product code,
 asb-tui, handoffctl, or unrelated root-owned admission locks.
+
+- 2026-09-17T07:09:22+00:00: Create clean portable TLC runner to unblock AR-1293; no product or
+  asb-tui dependency
