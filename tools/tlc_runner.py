@@ -21,6 +21,10 @@ DEFAULT_WORKERS = 2
 DEFAULT_HEAP = "2048m"
 DEFAULT_MEMORY_MAX = "3G"
 DEFAULT_SWAP_MAX = "3G"
+# RLIMIT_AS bounds virtual address space, not physical/swap admission.  Keep it
+# distinct from the attested 3G cgroup envelope so JVM native mappings do not
+# consume the physical-memory contract by accident.
+DEFAULT_ADDRESS_SPACE_MAX = "8G"
 _WORKER_ROOT = Path(tempfile.gettempdir()) / (
     f"agent-workflow-coordinator-tlc-{getattr(os, 'getuid', lambda: 0)()}"
 )
@@ -123,6 +127,7 @@ def build_command(
     heap: str = DEFAULT_HEAP,
     memory_max: str = DEFAULT_MEMORY_MAX,
     swap_max: str = DEFAULT_SWAP_MAX,
+    address_space_max: str = DEFAULT_ADDRESS_SPACE_MAX,
     cpu_quota: str = "200%",
     tasks_max: int = 64,
     timeout_seconds: int = 1800,
@@ -135,6 +140,9 @@ def build_command(
     heap_bytes = _heap_bytes(heap)
     if memory_max == "0" or swap_max == "0":
         raise AdmissionError("memory and swap limits must be non-zero")
+    address_space_bytes = _memory_bytes(address_space_max)
+    if address_space_bytes <= heap_bytes:
+        raise AdmissionError("address-space limit must exceed JVM heap")
     if heap_bytes >= _memory_bytes(memory_max):
         raise AdmissionError("JVM heap must be below the cgroup memory limit")
     java = [
@@ -173,7 +181,7 @@ def build_command(
             "--kill-after=5s",
             str(timeout),
             prlimit_bin,
-            f"--as={_memory_bytes(memory_max)}:{_memory_bytes(memory_max)}",
+            f"--as={address_space_bytes}:{address_space_bytes}",
             f"--nproc={host_processes + process_limit}:{host_processes + process_limit}",
             f"--cpu={cpu_seconds}:{cpu_seconds}",
             "--",
@@ -227,6 +235,7 @@ def run(args: argparse.Namespace) -> int:
         "heap": args.heap,
         "memory_max": args.memory_max,
         "swap_max": args.swap_max,
+        "address_space_max": args.address_space_max,
     }
     job.write_text(json.dumps(record, sort_keys=True) + "\n", encoding="utf-8")
     try:
@@ -239,6 +248,7 @@ def run(args: argparse.Namespace) -> int:
             heap=args.heap,
             memory_max=args.memory_max,
             swap_max=args.swap_max,
+            address_space_max=args.address_space_max,
             cpu_quota=args.cpu_quota,
             tasks_max=args.tasks_max,
             timeout_seconds=args.timeout_seconds,
@@ -285,6 +295,10 @@ def parser() -> argparse.ArgumentParser:
         "--memory-max", default=os.environ.get("TLC_MEMORY_MAX", DEFAULT_MEMORY_MAX)
     )
     result.add_argument("--swap-max", default=os.environ.get("TLC_SWAP_MAX", DEFAULT_SWAP_MAX))
+    result.add_argument(
+        "--address-space-max",
+        default=os.environ.get("TLC_ADDRESS_SPACE_MAX", DEFAULT_ADDRESS_SPACE_MAX),
+    )
     result.add_argument("--cpu-quota", default=os.environ.get("TLC_CPU_QUOTA", "200%"))
     result.add_argument("--tasks-max", type=int, default=int(os.environ.get("TLC_TASKS_MAX", "64")))
     result.add_argument(

@@ -34,7 +34,7 @@ EXPECTED_MODELS = {
 MODEL_SOURCE = {"HandoffctlPR": "Handoffctl"}
 TIER_KEYS = {
     "models", "exhaustive", "workers", "heap", "memory_max",
-    "swap_max", "timeout_seconds", "containment",
+    "swap_max", "address_space_max", "timeout_seconds", "containment",
 }
 
 
@@ -85,7 +85,12 @@ def read_tier_evidence(path: Path) -> dict[str, dict[str, object]]:  # noqa: C90
             raise ValueError(f"tier evidence for {tier} has an unexpected model set")
         if entry["workers"] != 2:
             raise ValueError(f"tier evidence for {tier} has unsupported bounds")
-        if entry["heap"] != "2048m" or entry["memory_max"] != "3G" or entry["swap_max"] != "3G":
+        if (
+            entry["heap"] != "2048m"
+            or entry["memory_max"] != "3G"
+            or entry["swap_max"] != "3G"
+            or entry["address_space_max"] != "8G"
+        ):
             raise ValueError(f"tier evidence for {tier} has unsupported memory bounds")
         if entry["timeout_seconds"] != 1800:
             raise ValueError(f"tier evidence for {tier} has unsupported timeout")
@@ -189,6 +194,7 @@ def main() -> int:  # noqa: C901
             "heap": evidence["heap"],
             "memory_max": evidence["memory_max"],
             "swap_max": evidence["swap_max"],
+            "address_space_max": evidence["address_space_max"],
             "timeout_seconds": evidence["timeout_seconds"],
             "admission": (
                 "systemd-run-user-cgroup" if boundary == "required" else "portable-timeout-prlimit"

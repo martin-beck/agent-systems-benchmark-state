@@ -91,6 +91,32 @@ class TlcRunnerTests(unittest.TestCase):
                 cgroup_mode="portable",
             )
 
+    def test_portable_mode_separates_virtual_address_space_from_attested_memory(self) -> None:
+        command = RUNNER.build_command(
+            jar=Path("jar"),
+            model=Path("model"),
+            config=Path("config"),
+            metadir=Path("meta"),
+            memory_max="3G",
+            swap_max="3G",
+            address_space_max="8G",
+            cgroup_mode="portable",
+        )
+        self.assertIn(f"--as={8 * 1024**3}:{8 * 1024**3}", command)
+        self.assertNotIn(f"--as={3 * 1024**3}:{3 * 1024**3}", command)
+
+    def test_address_space_cannot_be_smaller_than_heap(self) -> None:
+        with self.assertRaisesRegex(RUNNER.AdmissionError, "address-space limit"):
+            RUNNER.build_command(
+                jar=Path("jar"),
+                model=Path("model"),
+                config=Path("config"),
+                metadir=Path("meta"),
+                heap="2G",
+                address_space_max="2G",
+                cgroup_mode="portable",
+            )
+
     def test_stale_queued_record_is_reconciled(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             queue = Path(directory)
@@ -129,6 +155,7 @@ class TlcRunnerTests(unittest.TestCase):
                 heap="2048m",
                 memory_max="3G",
                 swap_max="3G",
+                address_space_max="8G",
                 cpu_quota="200%",
                 tasks_max=64,
                 timeout_seconds=10,
@@ -164,6 +191,13 @@ class TlcRunnerTests(unittest.TestCase):
             evidence.write_text(json.dumps({"schema_version": 1, "tiers": {}}), encoding="utf-8")
             with self.assertRaisesRegex(ValueError, "exactly the supported tiers"):
                 ATTEST.read_tier_evidence(evidence)
+
+    def test_tier_evidence_records_separate_address_space_bound(self) -> None:
+        tiers = ATTEST.read_tier_evidence(ROOT / "formal" / "tier-evidence.json")
+        for tier in tiers.values():
+            self.assertEqual(tier["memory_max"], "3G")
+            self.assertEqual(tier["swap_max"], "3G")
+            self.assertEqual(tier["address_space_max"], "8G")
 
 
 if __name__ == "__main__":
