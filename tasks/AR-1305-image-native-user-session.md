@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify image-native D-Bus user-session support for required TLC containment.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-17T15:10:53+00:00",
+  "updated_at": "2026-09-17T15:11:47+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -76,3 +76,6 @@ limits and fail-closed behavior remain unchanged.
   staged dbus-user-session package
 
 - 2026-09-17T15:10:53+00:00: Claimed by codex-ar1305-image-session-20260917.
+
+- 2026-09-17T15:11:47+00:00: Recorded command exit 2; command argv SHA-256
+  5165bde12ea5cf2469cd57dbc3066886bf408a467adcfb7c7311180f73990d4c.
