@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1303-hosted-platform-diagnostics",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T14:17:33+00:00",
+  "claim_expires": "2026-09-17T13:29:03+00:00",
   "depends_on": [
     "AR-0907",
     "AR-1252"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add privacy-safe fixed diagnostics for hosted platform evidence failures.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Privacy-safe hosted platform failure diagnostics",
-  "updated_at": "2026-09-17T12:28:56+00:00",
+  "updated_at": "2026-09-17T12:29:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1303-hosted-platform-diagnostics"
 }
 ---
@@ -134,3 +134,5 @@ native qualification route. This AR must not modify runtime behavior or asb-tui.
 - 2026-09-17T12:28:56+00:00: PR #220 published from clean exact signed head d85889d. Independent
   review verified SSH signature/DCO, no schema changes, fixed privacy-safe diagnostics only, focused
   platform tests 12/12 and Ruff green. CI monitoring is now the active action.
+
+- 2026-09-17T12:29:03+00:00: Heartbeat by ar1303_ci_diagnostics.
