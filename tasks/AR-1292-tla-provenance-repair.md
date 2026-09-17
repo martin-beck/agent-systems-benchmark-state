@@ -8,16 +8,16 @@
   "next_action": "Audit the pinned TLA+ v1.8.0 asset provenance and decide whether a minimal hash-bound fixture update is independently justified; otherwise retain the fail-closed blocker.",
   "observed_branch": "repair/ar-1292-tla-provenance",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "c1b1860786e844adb69b8f74e39af290592a89c8",
   "owner": "asb_ar1292_tla_provenance",
   "plan": "../plans/AR-1292.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair or formally retain the pinned TLA+ artifact provenance mismatch blocking formal assurance.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Pinned TLA+ artifact provenance repair",
-  "updated_at": "2026-09-17T04:37:37+00:00",
+  "updated_at": "2026-09-17T04:37:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1292-tla-provenance"
 }
 ---
