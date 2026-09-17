@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Run full state tests, Ruff/format/mypy/vendor/privacy/schema checks; review diff and commit signed+DCO, then refresh PR #24 and execute clean exact-head portable/required tiers.",
+  "next_action": "Run full applicable state suite plus Ruff/format/mypy/privacy/schema checks against exact 7fc6a246b; independently review complete diff; monitor PR #24 exact-head CI/review, then run clean exact-head portable and required tiers with sanitized receipts.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T22:44:39+00:00",
+  "updated_at": "2026-09-17T22:44:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -192,3 +192,13 @@ and protected publication sequence.
   cdc3e69a35a66c17946919bac65af40b79f9254903fdd24d82486de403001ca1.
 
 - 2026-09-17T22:44:39+00:00: Heartbeat by codex-ar1307-runner-repair-20260918.
+
+- 2026-09-17T22:44:42+00:00: Repair commit 7fc6a246b signed+DCO and pushed to PR #24. Correctly
+  restored immutable verify.sh/vendor boundary after the first offline-fetch attempt caused vendor
+  mismatch. Offline guest seed now validates the pinned JAR digest before using its no-network curl
+  shim; runner defaults to exact canonical shared coordinator fence
+  /tmp/agent-workflow-coordinator-tlc-admission.lock and does not chmod its /tmp parent;
+  private-directory symlink rejection and explicit lock tests added. Focused runner/launcher 29/29
+  and vendor verify v0.3.7 pass; earlier exit 127 was missing PR-worktree .venv and earlier exit-1s
+  were focused seed expectation plus intentional vendor mismatch from immutable verify.sh edit, all
+  corrected. Full suite and fresh formal tiers still pending.
