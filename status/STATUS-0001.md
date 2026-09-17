@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**330 ARs tracked** across 7 active status categories.
+**330 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 48 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -397,7 +397,7 @@ flowchart LR
     subgraph series_13["13 - Additional work"]
         direction TB
         AR_1300["AR-1300 - Done"]:::status_done
-        AR_1301["AR-1301 - Open"]:::status_open
+        AR_1301["AR-1301 - In progress"]:::status_in_progress
         AR_1302["AR-1302 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
@@ -1635,17 +1635,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | ar1301_negative_matrix | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | Candidate a57d111 has full locked workspace/runtime gates and five consecutive native authenticated-cassette runs. Independent review must still add supervised stale/malformed/duplicate/mismatch no-fallback cases and genuine crash-restart evidence before PR publication. |
 | P0 | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | codex-ar1302-runner-20260917-imagebus | Provision a clean portable TLC CI/VM runner for state formal admission. | Run a fresh disposable v10 guest as user asb with XDG_RUNTIME_DIR and DBUS_SESSION_BUS_ADDRESS set, TLC_CGROUP_MODE=required, pinned offline JDK/JAR, and capture terminal attestation; then stop stale generic VM 1928184 through handoffctl and record cleanup. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | Unclaimed | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | Candidate a57d111 has full locked workspace/runtime gates and five consecutive native authenticated-cassette runs. Independent review must still add supervised stale/malformed/duplicate/mismatch no-fallback cases and genuine crash-restart evidence before PR publication. |
 
 ### Blocked (48)
 

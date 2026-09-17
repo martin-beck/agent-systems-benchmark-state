@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T11:42:54+00:00",
   "depends_on": [
     "AR-1287",
     "AR-1300"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "observed_dirty": 0,
   "observed_head": "a57d11140b98a0fe29ca13553a5c272f3dc70d0b",
-  "owner": "",
+  "owner": "ar1301_negative_matrix",
   "plan": "../plans/AR-1301.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 102,
+  "task_revision": 103,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:12:33+00:00",
+  "updated_at": "2026-09-17T11:12:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -299,3 +299,5 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
   coordinator-ar1301-lifecycle-20260917. Lease expired at 2026-09-17T11:12:18Z; no worker process,
   heartbeat, or durable update since 10:11:32Z; worktree is clean at a57d111. Recovered ownerless
   for safe reassignment; preserve candidate and review blockers.
+
+- 2026-09-17T11:12:54+00:00: Claimed by ar1301_negative_matrix.
