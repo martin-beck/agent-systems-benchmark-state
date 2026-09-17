@@ -10,7 +10,7 @@
     "AR-1239"
   ],
   "id": "AR-1284",
-  "next_action": "Promote after dependency verification; implement runtime-issued primary replay lifecycle and bounded supervised fixtures.",
+  "next_action": "Inspect merged AR-1282 transport and implement the smallest runtime-issued primary replay lifecycle entrypoint; then focused tests.",
   "observed_branch": "feature/ar-1284-strict-replay-lifecycle",
   "observed_dirty": 0,
   "observed_head": "f9ddf7ef6b3b2a96dd7faee04906f4e5cb3aa8e1",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect authenticated replay transport to the runtime-owned primary strict-replay lifecycle.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Runtime-owned strict-replay lifecycle execution",
-  "updated_at": "2026-09-17T01:24:20+00:00",
+  "updated_at": "2026-09-17T01:24:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1284-strict-replay-lifecycle"
 }
 ---
@@ -64,3 +64,8 @@ record the exact blocker and split a further dependency-safe successor instead o
   successor
 
 - 2026-09-17T01:23:52+00:00: Claimed by asb_ar1024_lifecycle_router.
+
+- 2026-09-17T01:24:30+00:00: Setup complete: declared worktree
+  agent-systems-benchmark-ar-1284-strict-replay-lifecycle created from protected origin/main
+  f9ddf7ef6b3b2a96dd7faee04906f4e5cb3aa8e1, which includes merged AR-1282 PR #208. Worktree is
+  isolated and clean; no asb-tui paths touched.

@@ -1585,7 +1585,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1284](../tasks/AR-1284-runtime-strict-replay-lifecycle.md): Runtime-owned strict-replay lifecycle execution | asb_ar1024_lifecycle_router | Connect authenticated replay transport to the runtime-owned primary strict-replay lifecycle. | Promote after dependency verification; implement runtime-issued primary replay lifecycle and bounded supervised fixtures. |
+| P0 | [AR-1284](../tasks/AR-1284-runtime-strict-replay-lifecycle.md): Runtime-owned strict-replay lifecycle execution | asb_ar1024_lifecycle_router | Connect authenticated replay transport to the runtime-owned primary strict-replay lifecycle. | Inspect merged AR-1282 transport and implement the smallest runtime-issued primary replay lifecycle entrypoint; then focused tests. |
 
 ### Open (6)
 
