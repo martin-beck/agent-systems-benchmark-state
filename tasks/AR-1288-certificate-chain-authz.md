@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1288-certificate-chain-authz",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T04:38:57+00:00",
+  "claim_expires": "2026-09-17T04:39:29+00:00",
   "depends_on": [
     "AR-0813"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T02:39:24+00:00",
+  "updated_at": "2026-09-17T02:39:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
@@ -44,3 +44,5 @@ must not reuse unmerged strict-replay or asb-tui branches.
 
 - 2026-09-17T02:39:17+00:00: Recorded command exit 0; command argv SHA-256
   6c4940135c92371beee28615245f86edc4d7dae2dad156fadbeaa902b8a810a7.
+
+- 2026-09-17T02:39:29+00:00: Heartbeat by asb_ar1024_lifecycle_router.
