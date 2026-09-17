@@ -8,7 +8,7 @@
     "AR-1287"
   ],
   "id": "AR-1306",
-  "next_action": "PR #222 exact head 910af9a3c380ecf035f839460f3304ccb8159e50 has all 12 hosted checks terminal pass, including emulated-aarch64 (7m47s). Await independent approval/review and coordinator merge authorization; do not merge solely on green CI.",
+  "next_action": "PR #222 exact head 910af9a3c380ecf035f839460f3304ccb8159e50 has all 12 CI checks green, but independent review blocks acceptance: run_supervised_fault now allocates authenticated ReplayRelay yet never starts/accepts a StrictReplayService connection, and provider/descendant egress cases assert only nonzero exit rather than cause-specific denial. Add executable matrix-level authenticated positive/parity and distinct cause assertions, then publish a new signed head and rerun CI.",
   "observed_branch": "feature/ar-1306-authenticated-fault-matrix-qualification",
   "observed_dirty": 0,
   "observed_head": "910af9a3c380ecf035f839460f3304ccb8159e50",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 37,
+  "task_revision": 38,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T21:50:07+00:00",
+  "updated_at": "2026-09-17T21:54:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
@@ -144,3 +144,9 @@ publication, independent review, green exact-head CI, protected merge and post-m
 - 2026-09-17T21:50:07+00:00: Monitored PR #222 exact-head checks to terminal: all 12 passed,
   including emulated-aarch64. No reviewer approval yet; merge remains blocked pending independent
   review.
+
+- 2026-09-17T21:54:32+00:00: Independent acceptance review: BLOCK. The one-file diff removes raw
+  UnixListener, but the fault matrix still does not exercise a service/listener positive path;
+  existing separate positive test does not bind matrix cases. Provider/descendant egress cases only
+  assert nonzero exit, so unrelated failure could satisfy them. All 12 hosted checks are green, but
+  this is a substantive acceptance gap; do not merge.
