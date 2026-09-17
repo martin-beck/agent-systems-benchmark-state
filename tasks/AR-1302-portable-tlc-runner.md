@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T12:12:26+00:00",
+  "claim_expires": "2026-09-17T12:13:30+00:00",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Use the provisioned 32 GiB QEMU/KVM runner receipt b1457b809 with the pinned TLC 1.7.4 JAR pre-staged on its offline data disk; then run the signed AR-1293 candidate f16d2cb41 full-exhaustive tier and record exact attestation. Do not overlap the active AR-1293 VM worker.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 149,
+  "task_revision": 150,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T10:12:26+00:00",
+  "updated_at": "2026-09-17T10:13:30+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -480,3 +480,5 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   95aa305bd5c8118360ec4549859c1606fe943659dd4f263c36c9fb6c5d124c31.
 
 - 2026-09-17T10:12:26+00:00: Heartbeat by codex-ar1302-runner-20260917-vm.
+
+- 2026-09-17T10:13:30+00:00: Heartbeat by codex-ar1302-runner-20260917-vm.
