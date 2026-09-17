@@ -29,7 +29,7 @@ Generated from local Git and GitHub. Do not edit.
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 35173271516 | `2fd90557a4e7` | push | Repository quality | in_progress:- |
-| 35173271506 | `2fd90557a4e7` | push | Hosted portability and native qualification | in_progress:- |
+| 35173271506 | `2fd90557a4e7` | push | Hosted portability and native qualification | completed:success |
 | 35173271497 | `2fd90557a4e7` | push | Emulated aarch64 portability | in_progress:- |
 | 35173271494 | `2fd90557a4e7` | push | Huawei MIT source headers | completed:success |
 | 35173271491 | `2fd90557a4e7` | push | Fault assurance | in_progress:- |
