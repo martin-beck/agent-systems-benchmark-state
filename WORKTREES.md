@@ -96,7 +96,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix` | `feature/ar-1301-replay-lifecycle-fault-matrix` | `dd5bfb8dfea0` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-ar-1301-runtime-fault-authority` | `fix/ar-1301-runtime-fault-authority` | `64eb03e5bf05` | 0 | behind 0, ahead 2 |
 | `agent-systems-benchmark-ar-1303-hosted-platform-diagnostics` | `feature/ar-1303-hosted-platform-diagnostics` | `d85889d5066c` | 0 | behind 16, ahead 1 |
-| `agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification` | `feature/ar-1306-authenticated-fault-matrix-qualification` | `18698e48ce86` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification` | `feature/ar-1306-authenticated-fault-matrix-qualification` | `18698e48ce86` | 1 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-runtime/tests/sandbox_boundary.rs` |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 559, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 662, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 556, ahead 0 |
