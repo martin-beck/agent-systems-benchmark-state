@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover protected-main DCO assurance for the immutable Dependabot serde commit without weakening broad policy.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Dependabot DCO boundary recovery",
-  "updated_at": "2026-09-17T03:43:18+00:00",
+  "updated_at": "2026-09-17T03:43:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1290-dependabot-dco"
 }
 ---
@@ -78,3 +78,6 @@ change certificate/runtime behavior, touch asb-tui, or weaken broad policy.
   cargo test --locked --workspace pass (all observed suites green;
   provider/replay/sandbox/fault/formal tests pass). Independent review approved exact 04ce4ac before
   lockfile refresh; re-review required for exact 1cff949 before publication.
+
+- 2026-09-17T03:43:46+00:00: Recorded command exit 0; command argv SHA-256
+  338c173d7b437eec8dcacee53eebffbaabf2c448dc8d8fb649977426d8ab81d3.
