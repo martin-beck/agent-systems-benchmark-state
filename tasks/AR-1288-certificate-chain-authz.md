@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-1288",
-  "next_action": "PR #210 is pushed at exact signed head ddcd51b8a4add9d24e1738c771ead956348e4071. Hosted policy failure on prior 0e8d7e2 was fixed by registering control.certificate-identity, adding its bounded fixture, and regenerating docs/CONTRACT_CATALOG.md. Local contract_consistency --run-tests, fmt, locked offline workspace tests, and locked clippy pass; fresh hosted exact-head checks are pending. Do not merge until all required checks and independent review are green.",
+  "next_action": "Formal lockfile is regenerated locally for the x509-parser dependency and formal locked tests compile; one formal artifact-acquisition test failed with environment-level Os code 26 ExecutableFileBusy at tests/tla_artifact_acquisition.rs:488. Commit the lockfile as signed/DCO, then run bounded reruns to classify that unrelated flake before pushing and restarting hosted exact-head checks.",
   "observed_branch": "feature/ar-1288-certificate-chain-authz",
   "observed_dirty": 1,
   "observed_head": "ddcd51b8a4add9d24e1738c771ead956348e4071",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 115,
+  "task_revision": 116,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T03:16:03+00:00",
+  "updated_at": "2026-09-17T03:16:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
@@ -348,3 +348,10 @@ must not reuse unmerged strict-replay or asb-tui branches.
 
 - 2026-09-17T03:16:03+00:00: Recorded command exit 101; command argv SHA-256
   2454f3f6af3945b054005131066740ddd2a9a140a723ea4d684fd0538c3cf4bb.
+
+- 2026-09-17T03:16:26+00:00: Diagnosis: hosted Loom job 105061425019 failed because
+  formal/Cargo.lock was stale and cargo --locked attempted to update it. Offline cargo
+  generate-lockfile added x509-parser transitive entries. The exact locked formal run compiled and
+  passed all suites except concurrent_acquisition_converges_on_one_verified_output, which failed at
+  start_first_acquisition with Os code 26 ExecutableFileBusy (Text file busy), not certificate code.
+  Worktree intentionally dirty only formal/Cargo.lock pending signed commit.
