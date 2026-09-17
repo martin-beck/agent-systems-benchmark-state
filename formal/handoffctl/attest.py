@@ -92,7 +92,8 @@ def read_tier_evidence(path: Path) -> dict[str, dict[str, object]]:  # noqa: C90
             or entry["address_space_max"] != "8G"
         ):
             raise ValueError(f"tier evidence for {tier} has unsupported memory bounds")
-        if entry["timeout_seconds"] != 1800:
+        expected_timeout = 7200 if tier == "full-exhaustive" else 1800
+        if entry["timeout_seconds"] != expected_timeout:
             raise ValueError(f"tier evidence for {tier} has unsupported timeout")
         expected_containment = (
             "portable-timeout-prlimit"

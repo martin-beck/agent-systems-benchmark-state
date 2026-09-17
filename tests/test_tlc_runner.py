@@ -28,6 +28,13 @@ if ATTEST_SPEC is None or ATTEST_SPEC.loader is None:
     raise RuntimeError("cannot load attestation helper")
 ATTEST = importlib.util.module_from_spec(ATTEST_SPEC)
 ATTEST_SPEC.loader.exec_module(ATTEST)
+PROFILE_SPEC = importlib.util.spec_from_file_location(
+    "tier_profiles", ROOT / "formal" / "handoffctl" / "tier_profiles.py"
+)
+if PROFILE_SPEC is None or PROFILE_SPEC.loader is None:
+    raise RuntimeError("cannot load tier profiles")
+PROFILES = importlib.util.module_from_spec(PROFILE_SPEC)
+PROFILE_SPEC.loader.exec_module(PROFILES)
 
 
 class TlcRunnerTests(unittest.TestCase):
@@ -198,6 +205,26 @@ class TlcRunnerTests(unittest.TestCase):
             self.assertEqual(tier["memory_max"], "3G")
             self.assertEqual(tier["swap_max"], "3G")
             self.assertEqual(tier["address_space_max"], "8G")
+
+    def test_full_exhaustive_uses_distinct_timeout_profile(self) -> None:
+        tiers = ATTEST.read_tier_evidence(ROOT / "formal" / "tier-evidence.json")
+        self.assertEqual(tiers["pr-publication"]["timeout_seconds"], 1800)
+        self.assertEqual(tiers["full-exhaustive"]["timeout_seconds"], 7200)
+
+    def test_full_exhaustive_rejects_required_timeout(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            evidence = json.loads((ROOT / "formal" / "tier-evidence.json").read_text())
+            evidence["tiers"]["full-exhaustive"]["timeout_seconds"] = 1800
+            path = Path(directory) / "tier.json"
+            path.write_text(json.dumps(evidence), encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "unsupported timeout"):
+                ATTEST.read_tier_evidence(path)
+
+    def test_tier_profile_rejects_unknown_and_preserves_required_bound(self) -> None:
+        self.assertEqual(PROFILES.timeout_for_tier("pr-publication"), 1800)
+        self.assertEqual(PROFILES.timeout_for_tier("full-exhaustive"), 7200)
+        with self.assertRaisesRegex(ValueError, "unknown formal tier"):
+            PROFILES.timeout_for_tier("unknown")
 
 
 if __name__ == "__main__":

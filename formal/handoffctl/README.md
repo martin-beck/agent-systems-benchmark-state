@@ -168,6 +168,9 @@ two-process lifecycle cross-product and cannot produce full release evidence.
 `verify.sh --tier full-exhaustive` runs all six full configurations on the
 scheduled weekly or manually dispatched gate. A release claim requires its
 fresh exact-head full attestation; neither smaller tier substitutes for it.
+The required publication tier remains bounded at 1800 seconds per model; the
+full-exhaustive tier uses its separately attested 7200-second per-model bound
+because the complete lifecycle state space is materially larger.
 
 Each model is executed through `tools/tlc_runner.py`, never directly through
 TLC. The runner uses finite workers (`2`), a `2048m` heap for cgroup-contained
