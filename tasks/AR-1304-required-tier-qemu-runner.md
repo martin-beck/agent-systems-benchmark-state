@@ -1,0 +1,35 @@
+---
+{
+  "branch": "feature/ar-1304-required-tier-qemu-runner",
+  "checkpoint_commit": "",
+  "claim_expires": "",
+  "depends_on": ["AR-1302"],
+  "id": "AR-1304",
+  "next_action": "Promote after review; build a fresh QEMU guest with a verified user D-Bus bus and run required pr-publication for the exact AR-1293 candidate.",
+  "observed_branch": "",
+  "observed_dirty": 0,
+  "observed_head": "",
+  "owner": "",
+  "plan": "../plans/AR-1304.md",
+  "priority": "P0",
+  "schema_version": 1,
+  "status": "planned",
+  "summary": "Create a clean required-containment QEMU runner for formal publication evidence.",
+  "task_revision": 1,
+  "title": "Required-tier QEMU user-bus runner",
+  "updated_at": "2026-09-17T14:45:00+00:00",
+  "worktree_key": "agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner"
+}
+---
+
+## AR-1304
+
+AR-1293 has a green portable-smoke result, but the required `pr-publication`
+tier cannot yet attest because the guest `systemd-run --user` transient launch
+returns `No medium` even when the user manager and bus socket appear healthy.
+This AR owns only the clean guest launcher/runner needed to repair that path.
+It must not weaken required cgroup containment, reuse stale images, expose raw
+logs, or claim full-exhaustive evidence before required attestation is green.
+
+- 2026-09-17T14:45:00+00:00: Created after AR-1293 required-tier diagnosis;
+  AR-1302 portable runner remains qualified and unchanged.
