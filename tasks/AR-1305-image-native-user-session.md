@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify image-native D-Bus user-session support for required TLC containment.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-17T15:08:51+00:00",
+  "updated_at": "2026-09-17T15:09:06+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -54,3 +54,6 @@ limits and fail-closed behavior remain unchanged.
   fresh offline image; do not mutate stale qcow2
 
 - 2026-09-17T15:08:51+00:00: Claimed by codex-ar1305-image-session-20260917.
+
+- 2026-09-17T15:09:06+00:00: Recorded command exit 0; command argv SHA-256
+  4e9ac7800433cc02a5ed096741f0ac7325028183abd54dcd1d023c3b8b4eef81.
