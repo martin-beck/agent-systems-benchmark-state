@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T06:46:48+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Create a truthful state-repository worktree, audit formal/handoffctl/verify.sh callers, and implement or prove the missing bounded tools/tlc_runner.py interface without touching handoffctl or product code.",
+  "next_action": "Candidate 885d14159 adds the state runner, attestation helper, and bounded admission tests, but release is blocked: full state unittest baseline fails pre-existing coordinator vendor lock/runtime mismatch (runtime 0.3.7 vs vendor lock 0.3.5 and manifest digest mismatch), and canonical formal smoke cannot acquire the existing root/group-owned /tmp/agent-workflow-coordinator-tlc-admission.lock (permission denied). Reconcile the vendor release boundary and runner admission ownership, then review candidate and rerun all state gates; do not touch product or handoffctl.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T04:50:19+00:00",
+  "updated_at": "2026-09-17T04:50:52+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -66,3 +66,6 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T04:50:19+00:00: Recorded command exit 0; command argv SHA-256
   fe077bc6af7fdeb53fa1d9e53d61813e9d84bc2160640f395cf543fb741fe18f.
+
+- 2026-09-17T04:50:52+00:00: Recorded implementation candidate and exact gate blockers; no
+  handoffctl/product changes.
