@@ -8,7 +8,7 @@
     "AR-1287"
   ],
   "id": "AR-1306",
-  "next_action": "CI repair commit 5425bc3891dc9325c4fe455953637e708b851527 is signed/DCO and pushed to PR #222. It selects the first reviewed bubblewrap 0.9.0 package version advertised by apt (allowlist 0.9.0-1ubuntu0.1/0.9.0-1build1), installs the exact version, and verifies dpkg version equality. Local qualified native tests and workspace gates pass. Await refreshed exact-head CI; prior gh checks exit 8 was pending-check status, not a product failure.",
+  "next_action": "Independent exact-head native review BLOCKED: ASB_REQUIRE_NATIVE_SANDBOX=1 sandbox_boundary ran 15 tests with 14 passed but native_supervisor_forwards_cassette_http_and_reaps_children failed: authenticated service returned local replay transport failed, supervisor timed out after 10s, child exited 1. Reproduce and repair response path, then rerun complete native matrix and exact-head CI; do not merge. Also replace dynamic bubblewrap selection with an explicit reviewed-version allowlist if not already enforced.",
   "observed_branch": "feature/ar-1306-authenticated-fault-matrix-qualification",
   "observed_dirty": 0,
   "observed_head": "5425bc3891dc9325c4fe455953637e708b851527",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 137,
+  "task_revision": 138,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T22:47:05+00:00",
+  "updated_at": "2026-09-17T22:47:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
@@ -421,3 +421,8 @@ publication, independent review, green exact-head CI, protected merge and post-m
   d286566ec4bf38b19d00fd25f77e4353ca2513fb79374202364a39f059afdbed.
 
 - 2026-09-17T22:47:05+00:00: Heartbeat by codex-ar1306-auth-listener-20260917.
+
+- 2026-09-17T22:47:31+00:00: Independent review BLOCK: exact pushed head 5425bc3 is signed/DCO and
+  hosted CI is green, but fresh native execution is not terminal green (1/15 failure) in the
+  required authenticated service/listener response-parity path. Failure is durable via handoffctl
+  run; no approval.
