@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T17:19:09+00:00",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Repair the authorized QEMU guest required-containment path: provide a working systemd user bus/transient unit launcher for the exact candidate image; portable-smoke already passed. Do not run full-exhaustive until pr-publication attestation is green.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "",
+  "owner": "codex-ar1293-recovery-20260917",
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 198,
+  "task_revision": 199,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T16:49:06+00:00",
+  "updated_at": "2026-09-17T16:49:09+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -702,3 +702,5 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   ca9c4d9368f8c137d65354fd22c54c118d33d7e1a9af5ef4e5af99b3466c1c11, direct systemd-run, exact
   markers, six successful models. Resume to rerun required/pr-publication and then full-exhaustive
   only after required gate passes.
+
+- 2026-09-17T16:49:09+00:00: Claimed by codex-ar1293-recovery-20260917.
