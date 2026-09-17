@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T14:45:09+00:00",
   "depends_on": [],
   "id": "AR-1302",
-  "next_action": "Repair the disposable VM data-disk wiring before any further TLC: required-pr run failed because /mnt/asb-data mount point/device was absent in that boot. Reprovision a fresh seed/fstab with the virtio data disk UUID and a boot-time mount preflight; then rerun exact 3G/3G/200%/Tasks64 transient preflight and portable-smoke through handoffctl. Full-exhaustive was manually interrupted and is not qualified.",
+  "next_action": "Data-disk UUID wiring is repaired and proven. Do not run required-pr/full-exhaustive until bounded portable containment capacity prevents native JVM allocation failure; preserve 32 GiB RAM/16 GiB swap/no network/no host mounts and require successful portable-smoke terminal evidence first.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 353,
+  "task_revision": 354,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:48:53+00:00",
+  "updated_at": "2026-09-17T12:49:18+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1168,3 +1168,10 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T12:48:53+00:00: Recorded command exit 1; command argv SHA-256
   c14b5f828f87cb214fecae8cc1ae7b034e3708cc335400f2d9687eab84164fb7.
+
+- 2026-09-17T12:49:18+00:00: 2026-09-17T12:49:20Z: Fresh UUID-wired VM/data run completed mount
+  preflight successfully. The guest mounted the recorded ext4 data-disk UUID at /mnt/asb-data,
+  verified the pinned JAR SHA-256, and started TLC portable-smoke. TLC failed before model
+  completion with native JVM allocation failure under portable prlimit AS=3G (AllocateHeap 16
+  bytes), ASB_RC=1; no attestation. Required-pr was correctly not launched because smoke did not
+  pass. Runner powered off and data fsck completed.
