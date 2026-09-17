@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the stale formal Cargo.lock required by hosted exact-head gates.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "Repair formal lock gate",
-  "updated_at": "2026-09-17T03:24:17+00:00",
+  "updated_at": "2026-09-17T03:24:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1289-formal-lock-gate"
 }
 ---
@@ -117,3 +117,6 @@ be used with `--locked`. Repair and verify this gate independently of feature AR
   cargo test on clean 53981d6 passed 3/3 consecutive runs (0.04s, 0.04s, 0.03s); classify as runner
   timing flake under coverage instrumentation. Requested one controlled rerun of failed workflow
   35177646319 via gh run rerun --failed; no product changes.
+
+- 2026-09-17T03:24:24+00:00: Recorded command exit 8; command argv SHA-256
+  59ca2401805672391e4e7b342b7a52f01024b9e3280136bf92a85c6f1e5222dc.
