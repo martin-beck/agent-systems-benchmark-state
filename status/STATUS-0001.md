@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**314 ARs tracked** across 6 active status categories.
+**314 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 7 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 6 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 41 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -379,7 +379,7 @@ flowchart LR
         AR_1283["AR-1283 - Blocked"]:::status_blocked
         AR_1284["AR-1284 - Blocked"]:::status_blocked
         AR_1285["AR-1285 - Done"]:::status_done
-        AR_1286["AR-1286 - Open"]:::status_open
+        AR_1286["AR-1286 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1594,7 +1594,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (7)
+### In progress (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md): Supervised strict-replay cassette lifecycle | asb_ar1286_supervised_replay_lifecycle | Execute strict-replay cassettes through the runtime-owned supervised lifecycle. | Promote after dependency verification; create the declared isolated worktree from protected main and implement real supervised cassette execution with egress denial, lifecycle cleanup, and no-fallback evidence. |
+
+### Open (6)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1603,7 +1609,6 @@ flowchart LR
 | P0 | [AR-1042](../tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Unclaimed | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. |
 | P0 | [AR-1044](../tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Unclaimed | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. |
 | P0 | [AR-1248](../tasks/AR-1248-strict-replay-cli-contract.md): Bounded strict-replay CLI consumer contract | Unclaimed | Define the strict-replay CLI consumer contract. | Await a runtime-owned successor that supplies independently attested namespace capability plus supervised SandboxLaunchInput/ResourceLease. Then wire replay_plan through StrictReplayLaunchBridge::spawn and add real request/response, egress-denial, cancellation/restart/cleanup and no-fallback tests. Preserve PR #197 head 7d9c2ee and its green CI; do not fabricate namespace readiness in CLI. |
-| P0 | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md): Supervised strict-replay cassette lifecycle | Unclaimed | Execute strict-replay cassettes through the runtime-owned supervised lifecycle. | Promote after dependency verification; create the declared isolated worktree from protected main and implement real supervised cassette execution with egress denial, lifecycle cleanup, and no-fallback evidence. |
 | P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Unclaimed | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Coordinator must create and link the successor AR for certificate issuance/chain validation and trusted route/ancestor authority; preserve this exact clean head and do not publish/close as fully complete until successor scope and bounded acceptance are recorded. |
 
 ### Blocked (41)
@@ -1687,4 +1692,3 @@ flowchart LR
 | P1 | [AR-0811](../tasks/AR-0811-documentation-qualification.md): Audit workflow documentation and publication | Unclaimed | Qualify documentation completeness, executability, accessibility, privacy, provenance, and release accuracy. | Independently audit every published workflow against released programs and deployed Pages output. |
 | P1 | [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md): Manage remote benchmark run lifecycles | Unclaimed | Manage durable benchmark runs from another machine without making the frontend their owner. | Implement remote validation, launch, detach, reconnect, status, cancellation, and recovery workflows. |
 | P1 | [AR-0816](../tasks/AR-0816-cross-platform-remote-interoperability.md): Qualify cross-platform remote control | Unclaimed | Validate remote TUI interoperability with native x86_64 and required emulated AArch64 coverage; keep native ARM64 optional. | Prove native x86_64 and pinned QEMU AArch64 controller-runner protocol workflows across available distributions; document native ARM64 cross-host testing as optional future evidence. |
-| P1 | [AR-0818](../tasks/AR-0818-remote-control-security-audit.md): Audit remote benchmark control | Unclaimed | Attack and qualify remote benchmark control before any release enables it. | Independently audit remote protocol, trust, authorization, lifecycle, interoperability, privacy, and operational safety. |
