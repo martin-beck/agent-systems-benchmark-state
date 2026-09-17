@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 199,
+  "task_revision": 200,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T23:19:35+00:00",
+  "updated_at": "2026-09-17T23:20:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
@@ -580,3 +580,6 @@ publication, independent review, green exact-head CI, protected merge and post-m
   native_supervisor_forwards_cassette_http_and_reaps_children passed twice (0.47s, 0.49s),
   confirming authenticated StrictReplayService response parity. Explicit reviewed bubblewrap
   allowlist was verified in the repair. No blocker remains for protected merge.
+
+- 2026-09-17T23:20:03+00:00: Recorded command exit 0; command argv SHA-256
+  ef167fd86bc479071ef751767c7829c667212696ae54b6289d9c2dc7c21d2a46.
