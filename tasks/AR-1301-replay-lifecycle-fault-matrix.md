@@ -8,7 +8,7 @@
     "AR-1300"
   ],
   "id": "AR-1301",
-  "next_action": "Candidate a57d111 has full locked workspace/runtime gates and five consecutive native authenticated-cassette runs. Independent review must still add supervised stale/malformed/duplicate/mismatch no-fallback cases and genuine crash-restart evidence before PR publication.",
+  "next_action": "Run focused sandbox_boundary target and full locked fmt/clippy/test gates on signed head cf2a7b0; prior clippy exit 101 was fixed by allowing the existing 8-argument test helper under strict clippy.",
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "observed_dirty": 0,
   "observed_head": "cf2a7b0315bc7d596dbab9956e8e18a003a381a2",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 124,
+  "task_revision": 125,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:19:07+00:00",
+  "updated_at": "2026-09-17T11:19:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -348,3 +348,9 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
 
 - 2026-09-17T11:18:59+00:00: Recorded command exit 0; command argv SHA-256
   b01c6a4b4a5a92399ca52535a46d150a39b9c9b5bcc71f499d0a83a6deda9c3b.
+
+- 2026-09-17T11:19:22+00:00: Gate failure recorded at 11:18:33Z: cargo clippy --locked --workspace
+  --all-targets -- -D warnings exited 101 because existing test helper run_supervised_fault had 8
+  arguments and clippy::too_many_arguments was denied. This was a test-lint/setup failure, not a
+  product/runtime failure. Added narrowly scoped #[allow(clippy::too_many_arguments)] in signed
+  commit cf2a7b0; rerun gates.
