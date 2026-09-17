@@ -10,7 +10,7 @@
     "AR-1239"
   ],
   "id": "AR-1285",
-  "next_action": "Run full locked workspace, rustdoc, policy/privacy/formal/portability gates on signed 9fde4d8; then push exact head and request independent review.",
+  "next_action": "PR #209 is published at exact head 9fde4d8; obtain independent review and monitor exact-head CI. Do not claim lifecycle completion or merge before review.",
   "observed_branch": "feature/ar-1285-runtime-launch-factory",
   "observed_dirty": 0,
   "observed_head": "9fde4d8a6ff1c820fbfa4fc0214c1e36ea7f86d5",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-owned launch factory for authenticated strict-replay CLI execution.",
-  "task_revision": 68,
+  "task_revision": 69,
   "title": "Runtime-owned strict-replay launch factory",
-  "updated_at": "2026-09-17T01:49:21+00:00",
+  "updated_at": "2026-09-17T01:49:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1285-runtime-launch-factory"
 }
 ---
@@ -227,3 +227,13 @@ separate successor rather than claiming strict-replay execution.
 
 - 2026-09-17T01:49:21+00:00: Recorded command exit 0; command argv SHA-256
   da580d8d7b6e5b449a7500f33db0bf140ac6f80c8e70d2b73004f2d27241c2d0.
+
+- 2026-09-17T01:49:44+00:00: Published PR #209:
+  https://github.com/martin-beck/agent-systems-benchmark/pull/209, base main, exact head
+  9fde4d8a6ff1c820fbfa4fc0214c1e36ea7f86d5. Signed commits 20bedf2, daba285, 9fde4d8. Authority
+  boundary binds runtime attestation token, validated SandboxLaunchInput/benchmark ResourceLease,
+  relay generation/route and pinned sidecar/adapter/supervisor digests; CLI replay rejects missing
+  or cassette-mismatched authority. Focused runtime 4/4 and CLI authority-required test pass. fmt,
+  workspace clippy, rustdoc, full locked workspace tests pass; formal locked tests pass after one
+  isolated Text file busy race (rerun passed); repository policy/signature tests and portability
+  manifest validation pass. PR scope excludes supervised cassette lifecycle and asb-tui.
