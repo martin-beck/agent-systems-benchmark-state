@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 312,
+  "task_revision": 313,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:12:45+00:00",
+  "updated_at": "2026-09-17T12:13:19+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1018,3 +1018,6 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   bounded readiness, then one clean full-exhaustive attempt.
 
 - 2026-09-17T12:12:45+00:00: Claimed by ar1302_image_repair.
+
+- 2026-09-17T12:13:19+00:00: Recorded command exit 0; command argv SHA-256
+  f8833dfcb418801003825c960c32ab88cad1d7fd94dc4b1a312bad75374aa59f.
