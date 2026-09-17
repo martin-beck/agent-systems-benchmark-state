@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T09:37:23+00:00",
   "depends_on": [],
   "id": "AR-1287",
-  "next_action": "Exact-main commit 8737bbed4b9ad8b9d3c40a8bf5b71277303db7cf has Repository quality merge-tree failure; coordinate AR-1226 merge-tree remediation and rerun exact-main assurance. After all post-merge checks are green, release AR-1287 and only then promote AR-1301.",
+  "next_action": "Monitor exact-main post-merge workflows for repair merge 7ea3e001dffa13eca5ff0f05444c2b3b9d4df928; release AR-1287 only after every required check is terminal green and the KVM runner evidence is reconciled, then promote AR-1301.",
   "observed_branch": "feature/ar-1287-delegated-sandbox-runner",
   "observed_dirty": 0,
   "observed_head": "dba5f9bb6973cbb256695161e83f7a0eee860fb9",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a delegated runner for real strict-replay child lifecycle qualification.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Delegated sandbox runner capability",
-  "updated_at": "2026-09-17T08:37:23+00:00",
+  "updated_at": "2026-09-17T08:57:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1287-delegated-sandbox-runner"
 }
 ---
@@ -92,3 +92,6 @@ lifecycle completion until the actual child and fault fixtures run in the qualif
   ordering.
 
 - 2026-09-17T08:37:23+00:00: Heartbeat by root.
+
+- 2026-09-17T08:57:30+00:00: AR-1226 repair PR #218 merged protected as 7ea3e001; prior 8737bbed
+  policy failure is superseded. Await exact-main assurance before release.

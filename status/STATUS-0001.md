@@ -1640,7 +1640,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md): Protected merge-tree remediation | codex-ar1226-merge-remediation-20260917 | Remediate the protected-main merge-tree mismatch from stale-base PR merging. | Monitor PR #218 exact head f66194bbf01cb2aa861a45d8c10b0ee08df1d73c until all required checks and independent review are green; merge only through authorized signed integration, then verify exact-main post-merge workflows and reconcile AR-1299/AR-1287 evidence. |
-| P0 | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md): Delegated sandbox runner capability | root | Provide a delegated runner for real strict-replay child lifecycle qualification. | Exact-main commit 8737bbed4b9ad8b9d3c40a8bf5b71277303db7cf has Repository quality merge-tree failure; coordinate AR-1226 merge-tree remediation and rerun exact-main assurance. After all post-merge checks are green, release AR-1287 and only then promote AR-1301. |
+| P0 | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md): Delegated sandbox runner capability | root | Provide a delegated runner for real strict-replay child lifecycle qualification. | Monitor exact-main post-merge workflows for repair merge 7ea3e001dffa13eca5ff0f05444c2b3b9d4df928; release AR-1287 only after every required check is terminal green and the KVM runner evidence is reconciled, then promote AR-1301. |
 
 ### Open (1)
 
