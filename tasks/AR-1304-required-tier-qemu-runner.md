@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1304-required-tier-qemu-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T16:54:00+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "codex-ar1304-required-runner-20260917",
+  "owner": "",
   "plan": "../plans/AR-1304.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Create a clean required-containment QEMU runner for formal publication evidence.",
-  "task_revision": 36,
+  "task_revision": 37,
   "title": "Required-tier QEMU user-bus runner",
-  "updated_at": "2026-09-17T14:55:57+00:00",
+  "updated_at": "2026-09-17T14:56:36+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner"
 }
 ---
@@ -148,3 +148,10 @@ logs, or claim full-exhaustive evidence before required attestation is green.
 
 - 2026-09-17T14:55:57+00:00: Recorded command exit 0; command argv SHA-256
   d7fc4e94de6400889416bc7f714a8d1e3ed1b92f7b2193025433308cdc1604a6.
+
+- 2026-09-17T14:56:36+00:00: Fresh QEMU run with native systemd seed succeeded through bus setup:
+  guest started user@1000.service and asb-session-bus.service, with no network, and powered down
+  cleanly. Serial evidence confirms the native unit started; however the seed still powers off
+  immediately after bus socket setup and does not invoke the exact required launcher, so no
+  pr-publication attestation exists. Next action: add the required launcher invocation after bus
+  readiness, capture transient unit result and sanitized attestation, then rerun.
