@@ -9,17 +9,17 @@
   "id": "AR-1288",
   "next_action": "Baseline asb-control library passes 51/51 on clean protected-main worktree. Map existing auth identity/pairing APIs, then implement certificate issuance/chain validation with focused positive/negative tests; maintain signed checkpoints.",
   "observed_branch": "feature/ar-1288-certificate-chain-authz",
-  "observed_dirty": 3,
-  "observed_head": "2fd90557a4e7be32fab590f47bc501462127c1c1",
+  "observed_dirty": 0,
+  "observed_head": "871d2f7ee4ae13108510c9bf2c7baa45627473f2",
   "owner": "asb_ar0909_lifecycle_repair",
   "plan": "../plans/AR-1288.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T02:52:07+00:00",
+  "updated_at": "2026-09-17T02:52:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
