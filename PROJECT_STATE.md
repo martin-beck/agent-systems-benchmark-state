@@ -23,14 +23,14 @@ Generated from local Git and GitHub. Do not edit.
 | #207 | `feature/ar-1262-runtime-owned-launch-authority@c009185748a4` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): issue strict-replay launch authority |
 | #213 | `feature/ar1299-agent-catalog-metadata@b9edf44edcbc` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(control): complete authenticated agent catalog metadata |
 | #214 | `feature/ar-1286-supervised-replay-lifecycle@eaf7fcbf42ae` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(replay): integrate runtime-owned supervised replay lifecycle |
-| #215 | `feature/ar-1286-replay-lifecycle-rebased@e438ae80a7a7` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(replay): integrate signed runtime replay lifecycle |
+| #215 | `feature/ar-1286-replay-lifecycle-rebased@e438ae80a7a7` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(replay): integrate signed runtime replay lifecycle |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 35188527840 | `e438ae80a7a7` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 35188527822 | `e438ae80a7a7` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35188527822 | `e438ae80a7a7` | pull_request | Hosted portability and native qualification | completed:success |
 | 35188527802 | `e438ae80a7a7` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 35188527790 | `e438ae80a7a7` | pull_request | Fault assurance | in_progress:- |
 | 35188527724 | `e438ae80a7a7` | pull_request | Formal assurance | in_progress:- |
