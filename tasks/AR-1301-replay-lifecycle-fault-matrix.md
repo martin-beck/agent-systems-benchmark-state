@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 217,
+  "task_revision": 218,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:48:36+00:00",
+  "updated_at": "2026-09-17T11:49:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -613,3 +613,6 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
   hosted-safe sandbox suite passed 15/15, fmt/clippy/full locked serialized workspace gates passed.
   Commit d960dfc is SSH-signed and carries matching DCO. Pushed to PR #219; new exact-head CI run
   set 352176096xx is in progress.
+
+- 2026-09-17T11:49:09+00:00: Recorded command exit 1; command argv SHA-256
+  692eb759baea7146573fa037797ec9330bdc03edccdf287567e9debb3b6e3027.
