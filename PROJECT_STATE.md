@@ -29,7 +29,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 35202285955 | `7ea3e001dffa` | push | Fault assurance | completed:success |
 | 35202285930 | `7ea3e001dffa` | push | Repository quality | completed:success |
-| 35202285917 | `7ea3e001dffa` | push | Emulated aarch64 portability | in_progress:- |
+| 35202285917 | `7ea3e001dffa` | push | Emulated aarch64 portability | completed:success |
 | 35202285905 | `7ea3e001dffa` | push | Huawei MIT source headers | completed:success |
 | 35202285902 | `7ea3e001dffa` | push | Rust verification | completed:success |
 | 35202285881 | `7ea3e001dffa` | push | Hosted portability and native qualification | completed:success |
