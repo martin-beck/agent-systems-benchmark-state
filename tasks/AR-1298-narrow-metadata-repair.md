@@ -2,22 +2,22 @@
 {
   "branch": "repair/ar-1298-narrow-metadata-repair",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T07:35:28+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1298",
   "next_action": "Restore unrelated task files to pre-AR-1297 bytes, retain only evidence-backed schema-failure repairs, regenerate views, and rerun all gates.",
   "observed_branch": "repair/ar-1298-narrow-metadata-repair",
   "observed_dirty": 0,
   "observed_head": "9adb1a2d57435549dec57e49b6f0d24c9ed9ad6b",
-  "owner": "asb-ar1298-scope-cleanup",
+  "owner": "",
   "plan": "../plans/AR-1298.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Narrow AR-1297 metadata changes to the exact evidence-backed schema repairs.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Narrow task metadata repair scope",
-  "updated_at": "2026-09-17T05:38:30+00:00",
+  "updated_at": "2026-09-17T05:39:22+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1298-metadata-cleanup"
 }
 ---
@@ -54,3 +54,11 @@ or touch product, asb-tui, handoffctl, or formal implementation.
 
 - 2026-09-17T05:38:30+00:00: Recorded command exit 0; command argv SHA-256
   473575217d7393e87d5a0b0e05cfab1b47a6fb421fe5709e6969aa3237b0fb35.
+
+- 2026-09-17T05:39:22+00:00: Narrowed AR-1297 metadata repair to the evidence-backed failure set.
+  Restored 86 unrelated task files byte-for-byte to the pre-repair baseline; retained only schema,
+  superseded-chain, observed-head, bounded next-action and AR-1298 records. Regenerated views
+  through handoffctl. Signed+DCO cleanup commit b03a018bc independently verified. validate_schema,
+  render-status, full state tests/coverage at 95%, strict mypy, Ruff, vendor verification, source
+  headers, lizard, diff-check and live doctor all pass. No product, asb-tui, handoffctl
+  implementation, formal or history rewrite.
