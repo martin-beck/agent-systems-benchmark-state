@@ -8,7 +8,7 @@
     "AR-1285"
   ],
   "id": "AR-1300",
-  "next_action": "Wait for GitHub API cooldown, then perform one bounded PR #217 status fetch; do not merge until every required check is terminal green and independent review is recorded.",
+  "next_action": "Wait for new exact-head CI on 0190383; perform independent review and merge only when every required check is green.",
   "observed_branch": "feature/ar-1300-runtime-cassette-dispatch-seam",
   "observed_dirty": 0,
   "observed_head": "019038378726405eaf05a77269b8541d9a81d912",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect runtime-issued cassette operations to the real strict-replay dispatch path.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Runtime-to-replay cassette dispatch seam",
-  "updated_at": "2026-09-17T07:29:29+00:00",
+  "updated_at": "2026-09-17T07:29:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1300-runtime-cassette-dispatch-seam"
 }
 ---
@@ -235,3 +235,8 @@ fixtures/tests. Do not modify asb-tui or coordinator implementation.
   2bee46e5b0f44dd0d4b42ff3e382fd4a1e30bca68b2130f7e45c3d02e173a3cd.
 
 - 2026-09-17T07:29:29+00:00: Heartbeat by ar1300_dispatch.
+
+- 2026-09-17T07:29:31+00:00: Added signed/DCO test commit 0190383 to prove a consumed runtime launch
+  context can issue exactly one operation; focused runtime/replay/CLI libraries pass after the
+  addition. Pushed PR #217 head 0190383, so the previously green 405f68f checks are intentionally
+  stale and must be rerun at the new exact head. No source or worktree dirt remains.
