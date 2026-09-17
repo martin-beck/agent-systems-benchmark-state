@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 357,
+  "task_revision": 358,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T18:30:18+00:00",
+  "updated_at": "2026-09-17T18:31:14+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1217,3 +1217,6 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   519ba3dd4e0298ec443e290b007f6cd7e36152b8. Unmounted and e2fsck -fy then e2fsck -fn both clean.
   Image SHA256 b593012b198396f58d1cc00c5034610783c544cdbc948eac389e3c927f42b027. Previous image/run
   was rejected for stale 39c attestation and corrupt/recovery-needed filesystem; no reuse.
+
+- 2026-09-17T18:31:14+00:00: Recorded command exit 1; command argv SHA-256
+  bfccc7569e6ef27d190d12ed7fc1814cce7ce0fa73d4f7377720653332dda7b9.
