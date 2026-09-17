@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1290-dependabot-dco",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T05:49:29+00:00",
+  "claim_expires": "2026-09-17T05:52:53+00:00",
   "depends_on": [],
   "id": "AR-1290",
   "next_action": "Monitor updated PR #212 exact head 418960215134b89710e5549351c5bf30ad17d3b7 until all required checks terminal-success; independent exact-head re-review is required after fuzz policy fix. Do not merge until every check passes.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover protected-main DCO assurance for the immutable Dependabot serde commit without weakening broad policy.",
-  "task_revision": 45,
+  "task_revision": 46,
   "title": "Dependabot DCO boundary recovery",
-  "updated_at": "2026-09-17T03:52:40+00:00",
+  "updated_at": "2026-09-17T03:52:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1290-dependabot-dco"
 }
 ---
@@ -162,3 +162,5 @@ change certificate/runtime behavior, touch asb-tui, or weaken broad policy.
 
 - 2026-09-17T03:52:40+00:00: Recorded command exit 0; command argv SHA-256
   f31934d19c2b1ae6b945e7166652808c7cdde0f4a73f3b6a4940f0a66e4dc9ba.
+
+- 2026-09-17T03:52:53+00:00: Heartbeat by asb_ar1024_lifecycle_router.
