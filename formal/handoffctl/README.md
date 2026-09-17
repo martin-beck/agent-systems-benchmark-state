@@ -175,8 +175,8 @@ because the complete lifecycle state space is materially larger.
 Each model is executed through `tools/tlc_runner.py`, never directly through
 TLC. The runner uses finite workers (`2`), a `2048m` heap for cgroup-contained
 publication runs, a `512m` heap for hosted smoke, CPU quota (`200%`), process
-limit (`64`), a 1200-second PR or 6000-second weekly per-model deadline, and
-cgroup memory/swap limits (`3G`/`3G`). A canonical host-wide admission lock prevents
+limit (`64`), an 1800-second required/publication or 7200-second full-exhaustive per-model
+deadline, and cgroup memory/swap limits (`3G`/`3G`). A canonical host-wide admission lock prevents
 multiple formal jobs from competing for memory while leaving coordinator worker
 processes and leases untouched. A durable per-job queue record survives caller
 death for stale-job recovery; completed, failed, and canceled outcomes retain
