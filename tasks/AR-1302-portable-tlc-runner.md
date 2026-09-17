@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T08:58:11+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Promote and provision a digest-pinned x86_64 container/VM runner with portable cgroup containment, bounded thread/memory/swap capacity, and owner-private evidence paths for AR-1293.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "coordinator-ar1302-full-20260917",
+  "owner": "",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 112,
+  "task_revision": 113,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T08:24:13+00:00",
+  "updated_at": "2026-09-17T08:24:29+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -365,3 +365,12 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T08:24:13+00:00: Recorded command exit 0; command argv SHA-256
   930afbed057f4360dfb918d9cef255ab072d9b395683f4e85411af68656e1acf.
+
+- 2026-09-17T08:24:29+00:00: Portable runner implementation is clean, signed, and passes
+  portable-smoke plus pr-publication using digest-pinned linux/amd64 Docker image, no network/host
+  mounts, read-only rootfs, ALL capabilities dropped, no-new-privileges, 2 CPUs, 64 PIDs, ephemeral
+  Docker state volume, and an explicit 20 GiB/20 GiB memory profile matching the host cgroup.
+  Full-exhaustive Handoffctl repeatedly reaches about 9 million states and is OOM-killed (exit 137);
+  host memory.max is 25769803776 bytes (24 GiB), so further full-tier execution requires a clean
+  runner/VM with at least 32 GiB effective cgroup memory. No gate was weakened; AR-1293 remains
+  blocked pending that capacity.
