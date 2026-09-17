@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1292.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Repair or formally retain the pinned TLA+ artifact provenance mismatch blocking formal assurance.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Pinned TLA+ artifact provenance repair",
-  "updated_at": "2026-09-17T00:00:00+00:00",
+  "updated_at": "2026-09-17T04:34:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1292-tla-provenance"
 }
 ---
@@ -29,3 +29,6 @@ official TLA+ v1.8.0 asset has the expected size but does not match the pinned
 SHA-256. This AR owns only evidence-led provenance repair or confirmation that
 the external release remains unverifiable. It must not weaken or bypass formal
 verification, alter native-capacity behavior, or touch asb-tui.
+
+- 2026-09-17T04:34:39+00:00: Dependencies are external-provenance scoped; promote independent audit
+  without weakening AR-0704 formal gate.
