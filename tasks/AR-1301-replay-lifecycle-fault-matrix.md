@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T12:56:59+00:00",
+  "claim_expires": "2026-09-17T12:57:41+00:00",
   "depends_on": [
     "AR-1287",
     "AR-1300"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 252,
+  "task_revision": 253,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:57:08+00:00",
+  "updated_at": "2026-09-17T11:57:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -705,3 +705,5 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
   native-only probes while preserving strict required-native qualification. Signed+DCO 6221b89 fixes
   clippy question-mark lint. Hosted-safe and required-native sandbox suites both pass 15/15; fmt,
   clippy and full locked serialized workspace gate pass; pushed exact PR head.
+
+- 2026-09-17T11:57:41+00:00: Heartbeat by ar1301_negative_matrix.
