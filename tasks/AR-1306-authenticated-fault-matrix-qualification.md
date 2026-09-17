@@ -9,18 +9,18 @@
   ],
   "id": "AR-1306",
   "next_action": "Promote after verifying AR-1300 and AR-1287 remain done; implement a real runtime-owned StrictReplayService/relay listener and authenticated positive parity fixture, then add cause-specific provider/descendant egress-denial and lifecycle fault evidence on the approved KVM runner. Reconcile AR-1301 only after exact signed-head CI, independent review, protected merge and post-merge verification.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar-1306-authenticated-fault-matrix-qualification",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "18698e48ce86229a387740fdd690dd79866e1755",
   "owner": "codex-ar1306-auth-listener-20260917",
   "plan": "../plans/AR-1306.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T21:34:45+00:00",
+  "updated_at": "2026-09-17T21:34:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
