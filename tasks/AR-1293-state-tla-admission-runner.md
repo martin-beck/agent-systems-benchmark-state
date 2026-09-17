@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 259,
+  "task_revision": 260,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T17:49:41+00:00",
+  "updated_at": "2026-09-17T17:49:50+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -894,3 +894,6 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   invocations (tests.test_tlc_runner from state cwd and unittest discover from wrong cwd), not
   product failures; corrected absolute candidate script command passed. Next run source/quality
   gates, commit signed+DCO, request independent review.
+
+- 2026-09-17T17:49:50+00:00: Recorded command exit 0; command argv SHA-256
+  a6b25844d54f6cb4811a906c872b80312bd069c61a2c19e5a17651b13e2a95b0.
