@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Land the authenticated runtime-to-CLI replay transport foundation.",
-  "task_revision": 90,
+  "task_revision": 91,
   "title": "Authenticated replay transport foundation",
-  "updated_at": "2026-09-17T01:02:06+00:00",
+  "updated_at": "2026-09-17T01:08:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1282-authenticated-replay-transport"
 }
 ---
@@ -279,3 +279,6 @@ claim primary command execution.
   malformed-frame, missing-endpoint, duplicate-request, and private-parent tests in b1fb837; package
   llvm-cov reports replay_transport 100% lines and 97.53% regions, TOTAL asb-core 99.61% lines.
   Exact PR head pushed, worktree clean; fresh hosted checks required.
+
+- 2026-09-17T01:08:57+00:00: Recorded command exit 0; command argv SHA-256
+  d634955d39a3948aae341d37973f447180859a35523b2f5a5791cd862430f50a.
