@@ -86,7 +86,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1285-runtime-launch-factory` | `feature/ar-1285-runtime-launch-factory` | `0f876c7ae7fd` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-ar-1286-supervised-replay-lifecycle` | `feature/ar-1286-supervised-replay-lifecycle` | `d8064117cdeb` | 0 | behind 0, ahead 4 |
 | `agent-systems-benchmark-ar-1288-certificate-chain-authz` | `feature/ar-1288-certificate-chain-authz` | `0e8d7e2b23bd` | 3 | behind 0, ahead 4 |
-| changed files | - | - | - | `contracts/v1/catalog.json`, `docs/CONTRACT_CATALOG.md`, `crates/asb-control/fixtures/v1/certificate-identity.json` |
+| changed files | - | - | - | `contracts/v1/catalog.json`, `crates/asb-control/fixtures/v1/certificate-identity.json`, `docs/CONTRACT_CATALOG.md` |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 522, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 625, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 519, ahead 0 |
