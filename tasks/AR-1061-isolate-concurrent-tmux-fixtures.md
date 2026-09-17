@@ -13,6 +13,7 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "superseded",
+  "superseded_by": "AR-1062",
   "summary": "Diagnose and isolate concurrent trusted tmux fixture contention.",
   "task_revision": 34,
   "title": "Isolate concurrent trusted tmux fixtures",

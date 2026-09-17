@@ -11,6 +11,7 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "superseded",
+  "superseded_by": "AR-1056",
   "summary": "Repair trusted tmux socket connection completion without weakening authenticated cleanup authority.",
   "task_revision": 53,
   "title": "Repair tmux socket connection completion",

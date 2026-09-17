@@ -11,6 +11,7 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "superseded",
+  "superseded_by": "AR-1054",
   "summary": "Diagnose and repair the trusted-runner tmux server-authority portability gap without weakening cleanup authentication.",
   "task_revision": 62,
   "title": "Diagnose trusted tmux server authority",

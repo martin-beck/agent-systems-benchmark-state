@@ -13,6 +13,7 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "superseded",
+  "superseded_by": "AR-1061",
   "summary": "Diagnose and repair the remaining trusted tmux stable-startup observation failure.",
   "task_revision": 48,
   "title": "Diagnose tmux startup observation",

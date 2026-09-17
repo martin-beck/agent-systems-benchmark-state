@@ -11,6 +11,7 @@
   "priority": "P0",
   "schema_version": 1,
   "status": "superseded",
+  "superseded_by": "AR-1058",
   "summary": "Diagnose and repair the remaining trusted tmux socket connection-stage failure.",
   "task_revision": 35,
   "title": "Diagnose tmux socket connection stage",
