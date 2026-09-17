@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Restore strict state-repository mypy and coverage quality gates without weakening thresholds.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "State quality-gate baseline",
-  "updated_at": "2026-09-17T05:18:15+00:00",
+  "updated_at": "2026-09-17T05:19:26+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1296-quality"
 }
 ---
@@ -34,3 +34,6 @@ alter handoffctl semantics without tests.
   quality gaps; promote independent repair.
 
 - 2026-09-17T05:18:15+00:00: Claimed by asb-ar1296-state-tests.
+
+- 2026-09-17T05:19:26+00:00: Recorded command exit 0; command argv SHA-256
+  0a015ae222644fc411de1328a1186a5b8bad292832f058e7c53b2bbe97c837d7.
