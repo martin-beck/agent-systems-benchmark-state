@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 48 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -387,7 +387,7 @@ flowchart LR
         AR_1291["AR-1291 - Done"]:::status_done
         AR_1292["AR-1292 - Blocked"]:::status_blocked
         AR_1293["AR-1293 - Blocked"]:::status_blocked
-        AR_1294["AR-1294 - Open"]:::status_open
+        AR_1294["AR-1294 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1611,11 +1611,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1294](../tasks/AR-1294-state-gate-baseline.md): State formal-gate baseline integrity | Unclaimed | Restore vendor and formal admission baseline integrity needed to qualify AR-1293. | Audit the vendor lock/digest mismatch and root-owned TLC admission lock; repair only through immutable provenance and owner-safe lock handling, then rerun full state/formal gates. |
+| P0 | [AR-1294](../tasks/AR-1294-state-gate-baseline.md): State formal-gate baseline integrity | asb-ar1294-vendor-lock | Restore vendor and formal admission baseline integrity needed to qualify AR-1293. | Audit the vendor lock/digest mismatch and root-owned TLC admission lock; repair only through immutable provenance and owner-safe lock handling, then rerun full state/formal gates. |
 
 ### Blocked (48)
 
@@ -1697,4 +1697,3 @@ flowchart LR
 | P0 | [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md): Benchmark run and shared-agent configuration tutorials | Unclaimed | Teach benchmark execution and extending agents with one shared configuration. | Implement syntax-checked tutorials for one benchmark run and atomic shared configuration across selected agents. |
 | P0 | [AR-1214](../tasks/AR-1214-record-replay.md): LLM response record/replay tutorial | Unclaimed | Teach privacy-safe LLM response recording and strict offline replay. | Implement the syntax-checked record/replay tutorial with synthetic cassette fixtures and no-network CI. |
 | P0 | [AR-1215](../tasks/AR-1215-result-comparison.md): Multi-agent result comparison tutorial | Unclaimed | Teach conservative comparison of multiple agents from the same benchmark. | Implement the syntax-checked tutorial for comparing two or more agents on one benchmark definition. |
-| P0 | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md): ASB tutorial freshness CI and documentation qualification | Unclaimed | Continuously keep ASB tutorial commands and steps syntactically current. | Implement the repository-wide tutorial discovery and syntax-freshness CI gate after all tutorial contracts are defined. |

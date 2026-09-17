@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1294](tasks/AR-1294-state-gate-baseline.md): State formal-gate baseline integrity | Restore vendor and formal admission baseline integrity needed to qualify AR-1293. | Audit the vendor lock/digest mismatch and root-owned TLC admission lock; repair only through immutable provenance and owner-safe lock handling, then rerun full state/formal gates. | - |
+| P0 | [AR-1294](tasks/AR-1294-state-gate-baseline.md): State formal-gate baseline integrity | Restore vendor and formal admission baseline integrity needed to qualify AR-1293. | Audit the vendor lock/digest mismatch and root-owned TLC admission lock; repair only through immutable provenance and owner-safe lock handling, then rerun full state/formal gates. | asb-ar1294-vendor-lock |
 
 ## Blocked
 
