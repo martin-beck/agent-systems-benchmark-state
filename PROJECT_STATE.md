@@ -24,17 +24,17 @@ Generated from local Git and GitHub. Do not edit.
 | #215 | `feature/ar-1286-replay-lifecycle-rebased@03b1ddc7c9d2` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(replay): integrate signed runtime replay lifecycle |
 | #220 | `feature/ar-1303-hosted-platform-diagnostics@d85889d5066c` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | ci(platforms): add privacy-safe hosted failure diagnostics |
 | #221 | `fix/ar-1301-runtime-fault-authority@64eb03e5bf05` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(runtime): route AR-1301 fault matrix through replay authority |
-| #222 | `feature/ar-1306-authenticated-fault-matrix-qualification@af44d473a3ba` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(runtime): authenticate fault matrix relay |
+| #222 | `feature/ar-1306-authenticated-fault-matrix-qualification@af44d473a3ba` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(runtime): authenticate fault matrix relay |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35285595522 | `af44d473a3ba` | pull_request | Repository quality | in_progress:- |
+| 35285595522 | `af44d473a3ba` | pull_request | Repository quality | completed:success |
 | 35285595497 | `af44d473a3ba` | pull_request | Hosted portability and native qualification | completed:success |
-| 35285595470 | `af44d473a3ba` | pull_request | Rust verification | in_progress:- |
+| 35285595470 | `af44d473a3ba` | pull_request | Rust verification | completed:success |
 | 35285595439 | `af44d473a3ba` | pull_request | Fault assurance | completed:success |
-| 35285595430 | `af44d473a3ba` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 35285595430 | `af44d473a3ba` | pull_request | Emulated aarch64 portability | completed:success |
 | 35285595387 | `af44d473a3ba` | pull_request | Formal assurance | completed:success |
 | 35285595378 | `af44d473a3ba` | pull_request | Huawei MIT source headers | completed:success |
 | 35285595370 | `af44d473a3ba` | pull_request | Agent Workflow Quality shadow | completed:success |
