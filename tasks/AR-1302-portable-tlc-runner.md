@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 464,
+  "task_revision": 465,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T13:45:41+00:00",
+  "updated_at": "2026-09-17T13:49:26+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1559,3 +1559,6 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   wrote PRELIGHT marker confirmed in data/serial evidence. Cleanup completed. Exact f1931686c
   portable-smoke was not launched because the seed currently powers off after preflight; no
   attestation exists. Extend seed to run portable-smoke after preflight before poweroff.
+
+- 2026-09-17T13:49:26+00:00: Resume to run the reviewed portable-smoke command from the offline seed
+  after successful UUID mount preflight.
