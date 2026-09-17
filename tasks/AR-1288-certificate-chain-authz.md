@@ -9,7 +9,7 @@
   "id": "AR-1288",
   "next_action": "Signed exact head 35c49a9 closes schema parity: certificate identity digest fields require lowercase 64-hex, role enum/length, schema_version const 1, generation/validity minimums; generated artifact and schema assertions are updated. Cryptographic issue_der remains mandatory with DER chain/order/subject/endpoint/revocation checks. Focused certificate tests 7/7, offline locked workspace tests, and workspace Clippy -D warnings pass. Next: push exact head and request independent re-review.",
   "observed_branch": "feature/ar-1288-certificate-chain-authz",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "35c49a90e0f6d034becdce88551622407fe0ed6f",
   "owner": "asb_ar0909_lifecycle_repair",
   "plan": "../plans/AR-1288.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T03:04:48+00:00",
+  "updated_at": "2026-09-17T03:04:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
