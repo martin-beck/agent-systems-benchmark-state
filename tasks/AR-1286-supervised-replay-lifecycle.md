@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1286-supervised-replay-lifecycle",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T08:05:37+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1282",
     "AR-1285",
@@ -15,15 +15,15 @@
   "observed_branch": "feature/ar-1286-supervised-replay-lifecycle",
   "observed_dirty": 0,
   "observed_head": "eaf7fcbf42aee720a208d9d356a163d42ce30fab",
-  "owner": "codex-ar1286-repair",
+  "owner": "",
   "plan": "../plans/AR-1286.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-17T06:09:25+00:00",
+  "updated_at": "2026-09-17T06:13:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
@@ -254,3 +254,9 @@ do not touch or claim asb-tui behavior.
 
 - 2026-09-17T06:09:25+00:00: Recorded command exit 0; command argv SHA-256
   cb0565d43faad1d624134be9c6bf812f959c8cd06332066aa6006c8de17bae71.
+
+- 2026-09-17T06:13:24+00:00: Integrated signed/DCO successor PR #215 published from current main;
+  stale PRs #197 and #207 closed as superseded. Local CLI/runtime tests, fmt and Clippy pass. Hosted
+  required workflows are still in progress. Real supervised cassette lifecycle remains unqualified
+  because delegated bwrap namespace creation fails Resource temporarily unavailable on this host; no
+  merge until exact-head CI and qualified lifecycle evidence complete.
