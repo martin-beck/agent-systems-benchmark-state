@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Align stale coordinator vendor tests with the verified immutable v0.3.7 pin.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Coordinator vendor v0.3.7 fixture alignment",
-  "updated_at": "2026-09-17T05:12:20+00:00",
+  "updated_at": "2026-09-17T05:12:29+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1295-vendor-fixtures"
 }
 ---
@@ -39,3 +39,6 @@ handoffctl, formal runner behavior, ASB product, or asb-tui.
 
 - 2026-09-17T05:12:20+00:00: Recorded command exit 0; command argv SHA-256
   40bc78a21c6c5e34ef380e3b19d623f398ed92864ee20f7cc2366b00757f0698.
+
+- 2026-09-17T05:12:29+00:00: Recorded command exit 0; command argv SHA-256
+  11d3f9c064e83a5d45aed5f15205e4f08eac2a902eef5ec5bcc5829abb782c3c.
