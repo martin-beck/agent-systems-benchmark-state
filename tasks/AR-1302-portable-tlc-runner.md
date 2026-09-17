@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T08:35:14+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Provision or attach a clean x86_64 CI/VM runner with an effective cgroup memory limit of at least 32 GiB, then rerun signed runner commit 5bd411e19 at full-exhaustive; portable-smoke and pr-publication pass on the 20 GiB profile.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "coordinator-ar1302-statefix-20260917",
+  "owner": "",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 116,
+  "task_revision": 117,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T08:25:39+00:00",
+  "updated_at": "2026-09-17T08:25:42+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -382,3 +382,6 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T08:25:39+00:00: Corrected stale next_action after release. Full-tier capacity blocker
   and passing lower-tier evidence remain durable.
+
+- 2026-09-17T08:25:42+00:00: Released ownerless after correcting next_action; no implementation or
+  gate change.
