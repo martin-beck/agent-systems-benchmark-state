@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**330 ARs tracked** across 6 active status categories.
+**331 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
-| **Planned** | Defined work awaiting promotion or dependencies | 58 |
+| **Planned** | Defined work awaiting promotion or dependencies | 59 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 212 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -399,6 +399,7 @@ flowchart LR
         AR_1300["AR-1300 - Done"]:::status_done
         AR_1301["AR-1301 - Blocked"]:::status_blocked
         AR_1302["AR-1302 - In progress"]:::status_in_progress
+        AR_1303["AR-1303 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1002,6 +1003,7 @@ flowchart LR
     AR_0904 --> AR_1023
     AR_0906 --> AR_0877
     AR_0906 --> AR_1021
+    AR_0907 --> AR_1303
     AR_1001 --> AR_0310
     AR_1001 --> AR_0806
     AR_1001 --> AR_0875
@@ -1276,6 +1278,7 @@ flowchart LR
     AR_1252 --> AR_1253
     AR_1252 --> AR_1254
     AR_1252 --> AR_1256
+    AR_1252 --> AR_1303
     AR_1253 --> AR_1254
     AR_1253 --> AR_1255
     AR_1253 --> AR_1256
@@ -1464,7 +1467,7 @@ flowchart LR
 | [AR-0904](../tasks/AR-0904-contract-consistency.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-1001](../tasks/AR-1001-experiment-comparability.md) | [AR-1023](../tasks/AR-1023-asb-tui-capabilities-command.md) |
 | [AR-0905](../tasks/AR-0905-recovery-models.md) | [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0104](../tasks/AR-0104-durable-results.md), [AR-0204](../tasks/AR-0204-capacity-sweeps.md), [AR-0503](../tasks/AR-0503-strict-replay.md) | None |
 | [AR-0906](../tasks/AR-0906-portable-oci-build-image-identity.md) | [AR-0003](../tasks/AR-0003-quality-gates.md), [AR-0878](../tasks/AR-0878-tla-source-build-provenance.md), [AR-0901](../tasks/AR-0901-formal-assurance.md), [AR-0902](../tasks/AR-0902-fault-assurance.md) | [AR-0877](../tasks/AR-0877-formal-tla-artifact-availability.md), [AR-1021](../tasks/AR-1021-asb-tui-release-promotion.md) |
-| [AR-0907](../tasks/AR-0907-hosted-runner-evidence-classification.md) | [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0848](../tasks/AR-0848-native-x86-capacity.md) | None |
+| [AR-0907](../tasks/AR-0907-hosted-runner-evidence-classification.md) | [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0848](../tasks/AR-0848-native-x86-capacity.md) | [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md) |
 | [AR-0908](../tasks/AR-0908-control-state-lock-test-isolation.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md) | None |
 | [AR-0909](../tasks/AR-0909-mini-swe-cancellation-reap-test-isolation.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0102](../tasks/AR-0102-process-runtime.md), [AR-0103](../tasks/AR-0103-sandbox-runtime.md), [AR-0308](../tasks/AR-0308-agent-mini-swe.md), [AR-0902](../tasks/AR-0902-fault-assurance.md) | None |
 | [AR-1001](../tasks/AR-1001-experiment-comparability.md) | [AR-0101](../tasks/AR-0101-extension-contracts.md), [AR-0203](../tasks/AR-0203-statistical-analysis.md) | [AR-0310](../tasks/AR-0310-provider-profile-contract.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md), [AR-0875](../tasks/AR-0875-control-history-analysis-contract.md), [AR-0904](../tasks/AR-0904-contract-consistency.md), [AR-1006](../tasks/AR-1006-distributed-workers.md), [AR-1007](../tasks/AR-1007-benchmark-validity.md), [AR-1013](../tasks/AR-1013-measurement-catalog-semantics.md) |
@@ -1581,7 +1584,7 @@ flowchart LR
 | [AR-1249](../tasks/AR-1249-mockagents-qualification-evidence.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md), [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md) | None |
 | [AR-1250](../tasks/AR-1250-mockagents-harness-extension.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md), [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md) | [AR-1257](../tasks/AR-1257-mockagents-qemu-image.md) |
 | [AR-1251](../tasks/AR-1251-mockagents-transport-sandbox.md) | [AR-0888](../tasks/AR-0888-llm-double-conformance-spike.md), [AR-0889](../tasks/AR-0889-llm-fixture-scenario-contract.md) | [AR-1257](../tasks/AR-1257-mockagents-qemu-image.md) |
-| [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md) | [AR-0003](../tasks/AR-0003-quality-gates.md) | [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md), [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md), [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md) |
+| [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md) | [AR-0003](../tasks/AR-0003-quality-gates.md) | [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md), [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md), [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md), [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md) |
 | [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md) | [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md) | [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md), [AR-1255](../tasks/AR-1255-bundled-mockagents-qemu-runner.md), [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md) |
 | [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md) | [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md), [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md) | [AR-1255](../tasks/AR-1255-bundled-mockagents-qemu-runner.md) |
 | [AR-1255](../tasks/AR-1255-bundled-mockagents-qemu-runner.md) | [AR-1253](../tasks/AR-1253-pinned-python-transport-runtime.md), [AR-1254](../tasks/AR-1254-mockagents-pinned-python-transport.md) | None |
@@ -1632,6 +1635,7 @@ flowchart LR
 | [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) | [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md) | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md) |
 | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md) | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md), [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md) | None |
 | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md) | None | None |
+| [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md) | [AR-0907](../tasks/AR-0907-hosted-runner-evidence-classification.md), [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md) | None |
 
 ## Complete AR inventory
 
@@ -1695,7 +1699,7 @@ flowchart LR
 | P1 | [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md): Execute bundled MockAgents transport in isolation | Unclaimed | Execute bundled MockAgents transport in isolation. | Implement bundled in-container MockAgents transport and digest-pinned arm64 QEMU evidence. |
 | P1 | [AR-1258](../tasks/AR-1258-docker-binfmt-qemu.md): Provision Docker binfmt/QEMU capability | Unclaimed | Provision and verify Docker binfmt/QEMU for multiarch qualification. | Inspect Docker/binfmt/QEMU capability and approved privilege workflow; add bounded verification and rollback-safe checks. |
 
-### Planned (58)
+### Planned (59)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1722,4 +1726,3 @@ flowchart LR
 | P0 | [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md): Benchmark run and shared-agent configuration tutorials | Unclaimed | Teach benchmark execution and extending agents with one shared configuration. | Implement syntax-checked tutorials for one benchmark run and atomic shared configuration across selected agents. |
 | P0 | [AR-1214](../tasks/AR-1214-record-replay.md): LLM response record/replay tutorial | Unclaimed | Teach privacy-safe LLM response recording and strict offline replay. | Implement the syntax-checked record/replay tutorial with synthetic cassette fixtures and no-network CI. |
 | P0 | [AR-1215](../tasks/AR-1215-result-comparison.md): Multi-agent result comparison tutorial | Unclaimed | Teach conservative comparison of multiple agents from the same benchmark. | Implement the syntax-checked tutorial for comparing two or more agents on one benchmark definition. |
-| P0 | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md): ASB tutorial freshness CI and documentation qualification | Unclaimed | Continuously keep ASB tutorial commands and steps syntactically current. | Implement the repository-wide tutorial discovery and syntax-freshness CI gate after all tutorial contracts are defined. |
