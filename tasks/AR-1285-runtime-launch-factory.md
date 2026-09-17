@@ -10,7 +10,7 @@
     "AR-1239"
   ],
   "id": "AR-1285",
-  "next_action": "PR #209 exact head 0f876c7 is pushed; hosted checks run 35172629691/29771/29692/29746 in progress, independent re-review requested. Keep merge blocked until terminal green/review.",
+  "next_action": "Merged as signed local protected merge 2fd9055 (parents f9ddf7e and 0f876c7). Monitor exact-main post-merge workflows 35173271478/71480/71491/71497/71506/71516 to terminal; release done only after all success and verify main signature/DCO.",
   "observed_branch": "feature/ar-1285-runtime-launch-factory",
   "observed_dirty": 0,
   "observed_head": "0f876c7ae7fdfdff240a9fd3ad51e79cddaa4ffe",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-owned launch factory for authenticated strict-replay CLI execution.",
-  "task_revision": 111,
+  "task_revision": 112,
   "title": "Runtime-owned strict-replay launch factory",
-  "updated_at": "2026-09-17T02:13:41+00:00",
+  "updated_at": "2026-09-17T02:14:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1285-runtime-launch-factory"
 }
 ---
@@ -373,3 +373,11 @@ separate successor rather than claiming strict-replay execution.
 
 - 2026-09-17T02:13:41+00:00: Recorded command exit 0; command argv SHA-256
   d008f33688ba736b4ef6be1e8c0aa974a30744316ec295e65e659d8e6c06ad25.
+
+- 2026-09-17T02:14:03+00:00: Protected merge completed through isolated clean merge worktree:
+  SSH-signed+DCO no-ff merge 2fd90557a4e7be32fab590f47bc501462127c1c1, exact parents
+  f9ddf7ef6b3b2a96dd7faee04906f4e5cb3aa8e1 and 0f876c7ae7fdfdff240a9fd3ad51e79cddaa4ffe. PR #209 API
+  now reports MERGED at 02:08:37Z. Main was pushed with force-with-lease from expected f9ddf7e.
+  Post-merge workflows: headers 35173271494 SUCCESS; hosted 35173271506 SUCCESS; fault 35173271491,
+  formal 35173271480, quality 35173271516, Rust 35173271478, AArch64 35173271497 currently
+  IN_PROGRESS.

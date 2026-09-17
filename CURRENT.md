@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1285](tasks/AR-1285-runtime-launch-factory.md): Runtime-owned strict-replay launch factory | Provide a runtime-owned launch factory for authenticated strict-replay CLI execution. | PR #209 exact head 0f876c7 is pushed; hosted checks run 35172629691/29771/29692/29746 in progress, independent re-review requested. Keep merge blocked until terminal green/review. | asb_ar1024_lifecycle_router |
+| P0 | [AR-1285](tasks/AR-1285-runtime-launch-factory.md): Runtime-owned strict-replay launch factory | Provide a runtime-owned launch factory for authenticated strict-replay CLI execution. | Merged as signed local protected merge 2fd9055 (parents f9ddf7e and 0f876c7). Monitor exact-main post-merge workflows 35173271478/71480/71491/71497/71506/71516 to terminal; release done only after all success and verify main signature/DCO. | asb_ar1024_lifecycle_router |
 
 ## Open
 
