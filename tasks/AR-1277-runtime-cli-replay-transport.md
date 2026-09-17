@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-issued transport channel for primary strict replay.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Runtime-to-CLI replay transport boundary",
-  "updated_at": "2026-09-17T00:04:06+00:00",
+  "updated_at": "2026-09-17T00:04:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1277-runtime-cli-replay-transport"
 }
 ---
@@ -65,3 +65,6 @@ Preserve AR-1276's blocked evidence and require actual supervised execution.
 
 - 2026-09-17T00:04:06+00:00: Recorded command exit 0; command argv SHA-256
   cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
+
+- 2026-09-17T00:04:15+00:00: Recorded command exit 0; command argv SHA-256
+  f843caa71de8b211397f529ece11336ea85dfbb545ef1e655893fa4fccd4f17c.
