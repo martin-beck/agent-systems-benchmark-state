@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T07:19:00+00:00",
+  "claim_expires": "2026-09-17T07:20:59+00:00",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Reconcile the still-failing vendor fixture contract to coordinator v0.3.7 and provide a host with enough thread capacity for the portable TLC VM; then rerun full state and formal gates. Candidate 53dd96389 is signed and focused-green but is not publishable while 133-test vendor failures and TLC EAGAIN remain.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T06:49:00+00:00",
+  "updated_at": "2026-09-17T06:50:59+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -189,3 +189,5 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   UTC lease expired and prior owner process absent; recovered without impersonation
 
 - 2026-09-17T06:49:00+00:00: Claimed by codex-ar1293-recovery-20260917.
+
+- 2026-09-17T06:50:59+00:00: Heartbeat by codex-ar1293-recovery-20260917.
