@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1303-hosted-platform-diagnostics",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T14:45:36+00:00",
   "depends_on": [
     "AR-0907",
     "AR-1252"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1303-hosted-platform-diagnostics",
   "observed_dirty": 0,
   "observed_head": "d85889d5066c26dc69279594a7c91f4f140a23e3",
-  "owner": "",
+  "owner": "ar1303_formal_runner_repair",
   "plan": "../plans/AR-1303.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add privacy-safe fixed diagnostics for hosted platform evidence failures.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Privacy-safe hosted platform failure diagnostics",
-  "updated_at": "2026-09-17T12:45:33+00:00",
+  "updated_at": "2026-09-17T12:45:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1303-hosted-platform-diagnostics"
 }
 ---
@@ -199,3 +199,5 @@ native qualification route. This AR must not modify runtime behavior or asb-tui.
 - 2026-09-17T12:45:33+00:00: Resume infrastructure-only follow-up: diagnose repeated hosted ETXTBSY
   formal-runner failures without changing product behavior or gates; publish exact sanitized
   evidence and retry only after repair.
+
+- 2026-09-17T12:45:36+00:00: Claimed by ar1303_formal_runner_repair.
