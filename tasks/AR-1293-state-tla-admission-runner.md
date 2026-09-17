@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T18:28:54+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Independent exact-head review of f434b4a49 and AR-1304 2b7ed3732/receipt bindings; after green review, run fresh required then full QEMU qualification with complete seed and record attestation.",
+  "next_action": "Independent exact-head review of candidate 36440a1e1 and AR-1304 923378246; after green review run launcher on clean pinned images, verify receipt digests, then required and full QEMU gates.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 290,
+  "task_revision": 291,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T17:58:56+00:00",
+  "updated_at": "2026-09-17T17:59:14+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -990,3 +990,14 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T17:58:56+00:00: Recorded command exit 0; command argv SHA-256
   e6fd8b2713b69eebdee1435223f71e91d60090a9e7919a35490bd7dbb582e4bd.
+
+- 2026-09-17T17:59:14+00:00: Implementation now complete and clean in candidate: signed commits
+  f434b4a49 (complete guest seed), b8f1caff1 (normal tier-profile import fallback), 2c7fab4d4
+  (tracked offline QEMU argv launcher), 36440a1e1 (digest-only tiered receipt). Candidate launcher
+  writes the complete tier seed, emits networkless QEMU argv (32768 MiB guest, 4 vCPU, no NIC/host
+  mounts), and writes receipt binding candidate/seed source commit, root/data/seed hashes, QEMU
+  version, 3G memory+swap, 8G AS, 200% CPU, TasksMax 64, workers 2, and tier timeout 1800/7200.
+  Focused candidate suite passes 23/23; normal import rendering passes. AR-1304 companion commit
+  923378246 also records tiered receipt binding. Earlier AR-1304 test exit-1 was an assertion typo (
+  missing ), corrected and both suites pass (5/5 and 4/4). No VM run started pending independent
+  review.

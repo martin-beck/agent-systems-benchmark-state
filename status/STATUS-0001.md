@@ -1649,7 +1649,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | codex-ar1293-timeout-repair-20260917 | Repair the state-repository TLA admission runner and truthful worktree metadata. | Independent exact-head review of f434b4a49 and AR-1304 2b7ed3732/receipt bindings; after green review, run fresh required then full QEMU qualification with complete seed and record attestation. |
+| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | codex-ar1293-timeout-repair-20260917 | Repair the state-repository TLA admission runner and truthful worktree metadata. | Independent exact-head review of candidate 36440a1e1 and AR-1304 923378246; after green review run launcher on clean pinned images, verify receipt digests, then required and full QEMU gates. |
 
 ### Blocked (50)
 
