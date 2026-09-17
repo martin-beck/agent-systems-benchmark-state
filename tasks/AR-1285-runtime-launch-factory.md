@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1285-runtime-launch-factory",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T03:53:36+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1282",
     "AR-1237",
@@ -14,15 +14,15 @@
   "observed_branch": "feature/ar-1285-runtime-launch-factory",
   "observed_dirty": 0,
   "observed_head": "0f876c7ae7fdfdff240a9fd3ad51e79cddaa4ffe",
-  "owner": "asb_ar1024_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1285.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Provide a runtime-owned launch factory for authenticated strict-replay CLI execution.",
-  "task_revision": 120,
+  "task_revision": 121,
   "title": "Runtime-owned strict-replay launch factory",
-  "updated_at": "2026-09-17T02:16:31+00:00",
+  "updated_at": "2026-09-17T02:16:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1285-runtime-launch-factory"
 }
 ---
@@ -405,3 +405,12 @@ separate successor rather than claiming strict-replay execution.
 
 - 2026-09-17T02:16:31+00:00: Recorded command exit 0; command argv SHA-256
   9c91eafaae450c887ee4c0d5e0e22091a532e40caeaf96d603da4ae4e35d3313.
+
+- 2026-09-17T02:16:52+00:00: Completed and merged. Signed+DCO topic 0f876c7 was independently
+  approved and PR #209 merged as protected SSH-signed+DCO no-ff commit
+  2fd90557a4e7be32fab590f47bc501462127c1c1 with exact parents
+  f9ddf7ef6b3b2a96dd7faee04906f4e5cb3aa8e1 and 0f876c7ae7fdfdff240a9fd3ad51e79cddaa4ffe. Remote
+  origin/main equals 2fd9055; merge signature verified Good ED25519 and Signed-off-by trailer; merge
+  tree equals reviewed topic tree. All seven exact-main post-merge workflows terminal SUCCESS: Rust
+  35173271478, formal 35173271480, fault 35173271491, AArch64 35173271497, hosted 35173271506,
+  quality 35173271516, headers 35173271494. No further AR-1285 action.
