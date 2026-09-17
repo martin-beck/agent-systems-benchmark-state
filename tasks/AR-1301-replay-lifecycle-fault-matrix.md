@@ -8,7 +8,7 @@
     "AR-1300"
   ],
   "id": "AR-1301",
-  "next_action": "Rerun full locked workspace tests on final signed head e98293a after handling expected ScopeOwnership errors from supervised negative launches; then independently review complete diff and exact-head CI.",
+  "next_action": "Full workspace default-parallel test had native-only resource contention; rerun sandbox_boundary serially and full locked workspace with native tests serialized, then independent exact-head review.",
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "observed_dirty": 0,
   "observed_head": "e98293ab022d3ce7dcf09f6b4f3a1d5a0500fa07",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 167,
+  "task_revision": 168,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:33:06+00:00",
+  "updated_at": "2026-09-17T11:33:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -467,3 +467,10 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
 
 - 2026-09-17T11:33:06+00:00: Recorded command exit 101; command argv SHA-256
   d888f2e6850a7d8882bedec6a4341952034e9089887e9f27e504cc05f8da70b7.
+
+- 2026-09-17T11:33:21+00:00: Full cargo test --locked --workspace at 11:33:06Z reached 13/15 sandbox
+  tests but exited 101 from environment/resource contention:
+  launch_wrapper_timeout_and_crash_are_terminal saw unexpected ScopeIdentity, while authenticated
+  cassette supervisor hit its 10s deadline and local replay transport failure. The new supervised
+  negative matrix itself passed. No product defect inferred; rerun serial native tests to
+  distinguish contention and record terminal result.
