@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 236,
+  "task_revision": 237,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:53:59+00:00",
+  "updated_at": "2026-09-17T11:54:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -665,3 +665,6 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
   ASB_REQUIRE_NATIVE_SANDBOX=1 passes 15/15. Full locked serialized workspace gate passes exit 0;
   fmt, clippy, diff-check and signature/DCO pass. ba2b20d pushes the remaining two native supervisor
   hosted-skip guards and is now the exact PR head.
+
+- 2026-09-17T11:54:06+00:00: Recorded command exit 0; command argv SHA-256
+  c76ae63e9333e356c653faefa5419804301344cc46dcb7a3cb69f02120b56356.
