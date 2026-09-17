@@ -8,7 +8,7 @@
     "AR-1287"
   ],
   "id": "AR-1306",
-  "next_action": "Repair commit 1ab79c1 is signed/DCO and pushed to PR #222. Local focused/full tests, fmt, clippy, docs, and release build pass. Refreshed exact-head CI has 9/12 pass; policy/supply, Rust, and emulated-aarch64 remain pending, with no failures. Await all terminal green checks and independent approval.",
+  "next_action": "Repair commit 1ab79c1 remains the exact pushed PR head; source tree is clean after removing the temporary mandatory-env assertion. Qualified native-platform workflow explicitly invokes the full sandbox_boundary test binary with ASB_REQUIRE_NATIVE_SANDBOX=1 (native-platforms.yml lines 57/71), so authenticated matrix executes there and native capability fails closed. Local focused native matrix was green under env; rerun after coordinator lock clears, then retain PR CI monitoring.",
   "observed_branch": "feature/ar-1306-authenticated-fault-matrix-qualification",
   "observed_dirty": 0,
   "observed_head": "1ab79c1faaff483bd419ca4d2d184201b8335566",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 93,
+  "task_revision": 94,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T22:16:34+00:00",
+  "updated_at": "2026-09-17T22:16:54+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
@@ -306,3 +306,9 @@ publication, independent review, green exact-head CI, protected merge and post-m
 
 - 2026-09-17T22:16:34+00:00: Recorded command exit 0; command argv SHA-256
   1d1b84ff4348c506aa5e3fa945f0fe275510b866ce4a87ea318a354e34d52cbe.
+
+- 2026-09-17T22:16:54+00:00: Independent review follow-up: generic tests intentionally skip
+  native-only fixtures, but approved native-platform workflow binds ASB_REQUIRE_NATIVE_SANDBOX=1 in
+  its sandbox command, executing the full matrix and failing closed if capability is unavailable.
+  Temporary local assertion was removed to avoid breaking non-native hosted jobs. Multiple handoff
+  commands hit transient coordinator LOCK_TIMEOUT; no product diff remains.
