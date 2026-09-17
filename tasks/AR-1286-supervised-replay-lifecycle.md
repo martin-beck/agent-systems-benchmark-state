@@ -11,7 +11,7 @@
     "AR-1239"
   ],
   "id": "AR-1286",
-  "next_action": "Promote after dependency verification; create the declared isolated worktree from protected main and implement real supervised cassette execution with egress denial, lifecycle cleanup, and no-fallback evidence.",
+  "next_action": "Worktree created at /srv/data/projects/agent-systems-benchmark-ar-1286-supervised-replay-lifecycle from origin/main 2fd9055. Inspect ReplayLaunchContext, SandboxBackend::spawn_launch, and CLI replay authority seam; implement bounded child lifecycle without asb-tui.",
   "observed_branch": "feature/ar-1286-supervised-replay-lifecycle",
   "observed_dirty": 0,
   "observed_head": "65b6aa19aa0236051b85862aa4b35293841794ca",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-17T02:19:17+00:00",
+  "updated_at": "2026-09-17T02:20:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
@@ -42,3 +42,8 @@ do not touch or claim asb-tui behavior.
   promote this ASB-only lifecycle successor.
 
 - 2026-09-17T02:19:17+00:00: Claimed by asb_ar1286_supervised_replay_lifecycle.
+
+- 2026-09-17T02:20:12+00:00: Setup checkpoint: declared isolated worktree is clean at exact
+  protected main 2fd9055. Initial handoffctl bootstrap from canonical checkout was rejected because
+  invocation worktree did not yet match the declared AR worktree; created the declared worktree from
+  origin/main, and all subsequent product commands will run there through handoffctl.
