@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T11:46:18+00:00",
+  "claim_expires": "2026-09-17T11:46:40+00:00",
   "depends_on": [
     "AR-1287",
     "AR-1300"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 112,
+  "task_revision": 113,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:16:21+00:00",
+  "updated_at": "2026-09-17T11:16:40+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -323,3 +323,5 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
 
 - 2026-09-17T11:16:21+00:00: Recorded command exit 0; command argv SHA-256
   66ce6aba5bf1f3440b88d5f6cedb634d8a78e2be96bced965f2ec37c9344b3d5.
+
+- 2026-09-17T11:16:40+00:00: Heartbeat by ar1301_negative_matrix.
