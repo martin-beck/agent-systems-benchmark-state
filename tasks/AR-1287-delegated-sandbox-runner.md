@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T09:28:20+00:00",
   "depends_on": [],
   "id": "AR-1287",
-  "next_action": "Run AR-1301 lifecycle/fault matrix in the verified KVM guest; then complete AR-1287 runner review/publication and reconcile.",
+  "next_action": "Exact-main commit 8737bbed4b9ad8b9d3c40a8bf5b71277303db7cf has Repository quality merge-tree failure; coordinate AR-1226 merge-tree remediation and rerun exact-main assurance. After all post-merge checks are green, release AR-1287 and only then promote AR-1301.",
   "observed_branch": "feature/ar-1287-delegated-sandbox-runner",
   "observed_dirty": 0,
   "observed_head": "dba5f9bb6973cbb256695161e83f7a0eee860fb9",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a delegated runner for real strict-replay child lifecycle qualification.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Delegated sandbox runner capability",
-  "updated_at": "2026-09-17T08:28:20+00:00",
+  "updated_at": "2026-09-17T08:30:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1287-delegated-sandbox-runner"
 }
 ---
@@ -86,3 +86,7 @@ lifecycle completion until the actual child and fault fixtures run in the qualif
   denied-egress probes remain green.
 
 - 2026-09-17T08:28:20+00:00: Heartbeat by root.
+
+- 2026-09-17T08:30:27+00:00: PR #216 merged protected; runner/KVM evidence is complete, but
+  exact-main policy failed on protected-main merge-tree mismatch. Preserve AR-1301 dependency
+  ordering.
