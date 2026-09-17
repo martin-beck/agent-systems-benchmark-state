@@ -12,16 +12,16 @@
   "next_action": "Promote after dependency verification; implement the cross-crate authenticated replay process entrypoint from protected main.",
   "observed_branch": "feature/ar-1280-cross-crate-replay-entrypoint",
   "observed_dirty": 0,
-  "observed_head": "69e8b064d3121a4bae1f672cdae9c0c8672000bc",
+  "observed_head": "f92a86b126e36e467bccb769ce6ead9a70cf639c",
   "owner": "asb_ar1280_runtime_cli_entrypoint",
   "plan": "../plans/AR-1280.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the cross-crate runtime process entrypoint for primary strict replay.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Cross-crate replay process entrypoint",
-  "updated_at": "2026-09-17T00:15:26+00:00",
+  "updated_at": "2026-09-17T00:15:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1280-cross-crate-replay-entrypoint"
 }
 ---
