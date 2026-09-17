@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1262.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Issue runtime-owned authority for supervised strict-replay execution.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-16T22:18:26+00:00",
+  "updated_at": "2026-09-17T04:28:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1262-runtime-authority"
 }
 ---
@@ -227,3 +227,6 @@ ownership and bounded lifecycle evidence.
   ad0bc02; (2) clippy too_many_arguments and dead_code after authority visibility tightening, fixed
   in 5351499. Product tree clean at 5351499, but PR #207 must not merge; leave ownerless blocked
   with successor/runtime-entrypoint next action.
+
+- 2026-09-17T04:28:39+00:00: Coordinator audit resumed after AR-1263 exact-main repair; PR #207 is
+  still open and must be requalified before completion.
