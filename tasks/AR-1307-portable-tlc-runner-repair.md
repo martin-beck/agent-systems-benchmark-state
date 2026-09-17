@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Get independent complete-diff review of 1fd1432eb and trigger/monitor PR #24 required CI; provision or reuse a reviewed clean QEMU lifecycle from /srv/data/projects with digest-pinned image/JAR, no NIC/host mounts, and execute repeated fresh exact-head portable-smoke before required tiers.",
+  "next_action": "Run full local suite and vendor/privacy/schema gates at 2f814b1fd; dispatch exact-head workflow again, inspect terminal result; then provision fresh QEMU only if hosted runner cannot supply formal capacity.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T22:51:22+00:00",
+  "updated_at": "2026-09-17T22:51:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -265,3 +265,10 @@ and protected publication sequence.
   fb7bd7a3bb1a8a0c2281289f995d0634f0d228877662a80143922c9d6b47642b.
 
 - 2026-09-17T22:51:22+00:00: Heartbeat by codex-ar1307-runner-repair-20260918.
+
+- 2026-09-17T22:51:55+00:00: Fresh dispatched exact-head formal workflow 35283911252 failed
+  immediately because run_formal_tier hardcoded /srv/data/projects/.asb-tlc, which the hosted CI
+  runner cannot create (PermissionError). This was an environment portability defect, not a formal
+  result. Repair commit 2f814b1fd derives runner/attestation roots from the checked-out source root,
+  preserving local second-disk placement while making disposable CI checkout roots writable. Focused
+  29/29, Ruff, format, and mypy pass; pushed to PR #24.
