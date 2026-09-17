@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 264,
+  "task_revision": 265,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T17:50:39+00:00",
+  "updated_at": "2026-09-17T17:50:52+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -912,3 +912,6 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   tier_profiles import (missing import tier_profiles), then corrected MYPYPATH=.../formal/handoffctl
   and mypy passed with no issues. This is an invocation/environment correction, not a product
   defect. Focused guest-seed tests remain 20/20.
+
+- 2026-09-17T17:50:52+00:00: Recorded command exit 0; command argv SHA-256
+  0d63815b6adb0e464af4d7b665ed77abc33abbc95e62748adb389e93ed45e91a.
