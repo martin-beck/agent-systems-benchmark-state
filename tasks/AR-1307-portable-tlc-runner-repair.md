@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Obtain independent complete-diff review for 1fd1432eb, monitor PR #24 exact-head CI; then run disposable digest-pinned no-network QEMU portable-smoke repeatedly and required tiers, retaining sanitized schema-valid receipts.",
+  "next_action": "Get independent complete-diff review of 1fd1432eb and trigger/monitor PR #24 required CI; provision or reuse a reviewed clean QEMU lifecycle from /srv/data/projects with digest-pinned image/JAR, no NIC/host mounts, and execute repeated fresh exact-head portable-smoke before required tiers.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T22:48:14+00:00",
+  "updated_at": "2026-09-17T22:48:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -230,3 +230,10 @@ and protected publication sequence.
   ddede10932c90a1e37c2ea38edc09848bcb67e22e857fc0e165252f5808464c8.
 
 - 2026-09-17T22:48:14+00:00: Heartbeat by codex-ar1307-runner-repair-20260918.
+
+- 2026-09-17T22:48:16+00:00: Exact PR head 1fd1432eb remains clean, signed/DCO, and pushed. Full
+  state unit suite passed 163/163; Ruff and format pass; source headers 32 files; vendor verify
+  v0.3.7; mypy tools/tests 20 files. Exit-1 at 22:45:19 was the Ruff S108 literal /tmp
+  canonical-lock diagnostic, corrected and rerun. The subsequent gate attempt stopped at an operator
+  error: check_source_headers.py has --root, not --check; rerun passed. PR #24 currently reports no
+  checks (workflow/path or dispatch state), so no CI green claim yet.
