@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Independent review f1b81fe23; then fresh required-tier QEMU run with direct ext4 data image and inspect receipt/serial/extracted attestation. | codex-ar1293-timeout-repair-20260917 |
+| P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Implement direct-ext4 debugfs extraction and stale commit rejection; build fresh data image from exact candidate, bind digest/provenance, rerun exact gates before required VM. | codex-ar1293-timeout-repair-20260917 |
 
 ## Blocked
 
