@@ -10,17 +10,17 @@
   "id": "AR-1301",
   "next_action": "PR #219 is published at exact head e98293a; monitor every required exact-head workflow, then perform signed protected merge and post-merge verification only after terminal green.",
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
-  "observed_dirty": 1,
-  "observed_head": "e98293ab022d3ce7dcf09f6b4f3a1d5a0500fa07",
+  "observed_dirty": 0,
+  "observed_head": "ee34e9778fa365ac166fe229a80e5e25665d7c3e",
   "owner": "ar1301_negative_matrix",
   "plan": "../plans/AR-1301.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 188,
+  "task_revision": 189,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:40:45+00:00",
+  "updated_at": "2026-09-17T11:40:53+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
