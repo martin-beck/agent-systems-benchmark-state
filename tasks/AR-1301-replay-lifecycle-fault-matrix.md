@@ -8,7 +8,7 @@
     "AR-1300"
   ],
   "id": "AR-1301",
-  "next_action": "Run focused sandbox_boundary target and full locked fmt/clippy/test gates on signed head cf2a7b0; prior clippy exit 101 was fixed by allowing the existing 8-argument test helper under strict clippy.",
+  "next_action": "Independent exact-head review of signed head cf2a7b0 plus new signed test commits 955a060 and cf2a7b0? Verify final product HEAD and review complete diff; then publication only if review and CI are green.",
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "observed_dirty": 0,
   "observed_head": "cf2a7b0315bc7d596dbab9956e8e18a003a381a2",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 129,
+  "task_revision": 130,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:20:19+00:00",
+  "updated_at": "2026-09-17T11:20:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -364,3 +364,11 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
 
 - 2026-09-17T11:20:19+00:00: Recorded command exit 0; command argv SHA-256
   d888f2e6850a7d8882bedec6a4341952034e9089887e9f27e504cc05f8da70b7.
+
+- 2026-09-17T11:20:38+00:00: Focused authenticated negative boundary passed: stale generation,
+  malformed handshake, duplicate one-shot, and strict route mismatch/no-fallback. Native supervised
+  fault matrix passed, including crash-before-fresh-generation followed by clean fresh-generation
+  restart and relay cleanup. Full locked cargo test --workspace passed; 173+1 ignored agents, all
+  workspace targets terminal green with documented environment-gated ignores. cargo fmt --all --
+  --check and cargo clippy --locked --workspace --all-targets -- -D warnings passed after fixing the
+  existing test-helper too_many_arguments lint. Product worktree was clean after signed DCO commits.

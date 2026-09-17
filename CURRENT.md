@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1301](tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | Run focused sandbox_boundary target and full locked fmt/clippy/test gates on signed head cf2a7b0; prior clippy exit 101 was fixed by allowing the existing 8-argument test helper under strict clippy. | ar1301_negative_matrix |
+| P0 | [AR-1301](tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | Independent exact-head review of signed head cf2a7b0 plus new signed test commits 955a060 and cf2a7b0? Verify final product HEAD and review complete diff; then publication only if review and CI are green. | ar1301_negative_matrix |
 
 ## Blocked
 
