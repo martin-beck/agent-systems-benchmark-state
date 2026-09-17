@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T18:39:59+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Independent exact-head review of 2bbf0b285; if green, invoke launcher on clean pinned images and inspect receipt/serial/attestation before accepting required/full qualification.",
+  "next_action": "Independent exact-head review of 658424efc; if green, invoke launcher on pinned clean images and inspect command/receipt/serial/attestation before required/full qualification.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 311,
+  "task_revision": 312,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T18:10:12+00:00",
+  "updated_at": "2026-09-17T18:10:27+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1062,3 +1062,13 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T18:10:12+00:00: Recorded command exit 0; command argv SHA-256
   480e45c358df52d0cce3ecc4b38df78f496574bd3f090376082371a28a58f30f.
+
+- 2026-09-17T18:10:27+00:00: Review fixes committed signed+DCO as
+  658424efced1472ab19124012c42d3b7be8f8c1e. Exact CI commands now pass without MYPYPATH: uv run
+  --frozen --offline ruff check tools tests; uv run --frozen --offline ruff format --check tools
+  tests; uv run --frozen --offline mypy tools tests (20 files); focused tests 23/23. Canonical
+  package import fixed by using formal.handoffctl.tier_profiles and updating verify.sh. Receipt now
+  derives timeout and vCPU from shared tier_profiles, requires JAR/JDK, hashes persisted command
+  JSON bytes, validates/binds guest attestation, and records failed timeout receipts. qemu_runner
+  returns result on TimeoutExpired (124), writes failed attestation/serial evidence, and receipt
+  remains durable. Candidate worktree clean.

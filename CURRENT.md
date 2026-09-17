@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Independent exact-head review of 2bbf0b285; if green, invoke launcher on clean pinned images and inspect receipt/serial/attestation before accepting required/full qualification. | codex-ar1293-timeout-repair-20260917 |
+| P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Independent exact-head review of 658424efc; if green, invoke launcher on pinned clean images and inspect command/receipt/serial/attestation before required/full qualification. | codex-ar1293-timeout-repair-20260917 |
 
 ## Blocked
 
