@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 365,
+  "task_revision": 366,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T13:14:08+00:00",
+  "updated_at": "2026-09-17T13:15:06+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1221,3 +1221,6 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   preflight and portable-smoke; no required/full until attestation succeeds.
 
 - 2026-09-17T13:14:08+00:00: Claimed by codex-ar1302-requalify-address-space.
+
+- 2026-09-17T13:15:06+00:00: Recorded command exit 0; command argv SHA-256
+  7ecf66fc70bcbbe8a6ba5ec2a3c095d2af57f61b8d0def97de5d8ae3d6a66c06.
