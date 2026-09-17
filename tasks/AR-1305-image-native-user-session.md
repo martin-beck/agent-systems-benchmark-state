@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify image-native D-Bus user-session support for required TLC containment.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-17T15:12:36+00:00",
+  "updated_at": "2026-09-17T15:12:48+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -85,3 +85,6 @@ limits and fail-closed behavior remain unchanged.
 
 - 2026-09-17T15:12:36+00:00: Recorded command exit 0; command argv SHA-256
   e383275f0f6b9a6486899ffac6ab3729eae7d19f23074bf2079305334d73aaab.
+
+- 2026-09-17T15:12:48+00:00: Recorded command exit 1; command argv SHA-256
+  89f4d6beee413945344b533e0ec7ff2385d4694117f259076fc5893eeb39a855.
