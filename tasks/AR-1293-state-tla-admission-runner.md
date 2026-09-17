@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T20:10:51+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Rebuild the clean data image from signed candidate ac971b996, generate required-tier seed, rerun bounded required launcher, and inspect PR result, attestation, and receipt.",
+  "next_action": "Rebuild the clean data image from signed candidate 903a87844, generate required-tier seed, rerun bounded required launcher, and inspect PR result, attestation, and receipt.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 487,
+  "task_revision": 488,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T19:14:18+00:00",
+  "updated_at": "2026-09-17T19:14:43+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1626,3 +1626,10 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T19:14:18+00:00: Recorded command exit 0; command argv SHA-256
   69feb50eb32a6f6530084dd77fce73c4e13463cfcb6c2f1bd331148a2d019f6c.
+
+- 2026-09-17T19:14:43+00:00: Candidate ac971b996 required VM again reached PR_PUBLICATION_RC=0 and
+  PR_PUBLICATION_EVIDENCE_OK. Host extraction failed because the guestfish supermin probe requires
+  unavailable privileged host access, despite the direct ext4 image already containing valid
+  evidence. Candidate 903a87844 now attempts direct debugfs extraction first and keeps guestfish
+  only as a partitioned-image fallback. Focused Ruff, format, mypy, and 23 tests pass; commit is
+  SSH-signed with DCO.

@@ -1649,7 +1649,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | codex-ar1293-timeout-repair-20260917 | Repair the state-repository TLA admission runner and truthful worktree metadata. | Rebuild the clean data image from signed candidate ac971b996, generate required-tier seed, rerun bounded required launcher, and inspect PR result, attestation, and receipt. |
+| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | codex-ar1293-timeout-repair-20260917 | Repair the state-repository TLA admission runner and truthful worktree metadata. | Rebuild the clean data image from signed candidate 903a87844, generate required-tier seed, rerun bounded required launcher, and inspect PR result, attestation, and receipt. |
 
 ### Blocked (50)
 
