@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T15:14:08+00:00",
   "depends_on": [],
   "id": "AR-1302",
-  "next_action": "Create a reviewed AR-1293/state runner change that separates a bounded virtual-address-space limit from the 3 GiB physical/swap attested bounds, with positive/negative tests and formal evidence update. Then run fresh VM preflight and portable-smoke; only after smoke terminal success may required-pr/full proceed.",
+  "next_action": "Run the exact reviewed f1931686c portable-smoke through the fresh UUID-wired 32G VM/data image and capture terminal attestation; container evidence portable-smoke-address-space.json passed, but VM qualification is still required before pr-publication/full.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 366,
+  "task_revision": 367,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T13:15:06+00:00",
+  "updated_at": "2026-09-17T13:15:39+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1224,3 +1224,9 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T13:15:06+00:00: Recorded command exit 0; command argv SHA-256
   7ecf66fc70bcbbe8a6ba5ec2a3c095d2af57f61b8d0def97de5d8ae3d6a66c06.
+
+- 2026-09-17T13:15:39+00:00: Container requalification passed at
+  /srv/data/projects/.asb-ar1302/evidence/portable-smoke-address-space.json: immutable linux/amd64
+  digest c0d1549d1e0f5fa5b83622ec0033b00456107e0b1d0cfcce4c1d831532ce621e, no network or host
+  mounts, read-only root, dropped capabilities, no-new-privileges, 2 CPUs, 20 GiB memory/swap, 64
+  PIDs; HandoffctlBinding exit 0 in 0.818s. This does not qualify the requested UUID-wired VM yet.
