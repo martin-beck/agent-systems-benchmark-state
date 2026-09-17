@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1305.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Qualify image-native D-Bus user-session support for required TLC containment.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-17T15:13:21+00:00",
+  "updated_at": "2026-09-17T15:13:47+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -99,3 +99,6 @@ limits and fail-closed behavior remain unchanged.
   attempted inspection option. Next action: repair/qualify libguestfs supermin appliance (capture
   full LIBGUESTFS_DEBUG/TRACE privately), then rerun virt-customize on the fresh copy and record
   resulting image hash/provenance.
+
+- 2026-09-17T15:13:47+00:00: Use qemu-nbd/manual offline image customization or repair supermin;
+  qualify fresh root image without mutating backing
