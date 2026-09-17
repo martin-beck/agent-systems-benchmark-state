@@ -1643,7 +1643,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | codex-ar1293-requalify-fresh2 | Repair the state-repository TLA admission runner and truthful worktree metadata. | Portable-smoke passed for exact 39c8933f5; run pr-publication on the same candidate-specific VM image, then full-exhaustive only if required tier attests green. |
+| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | codex-ar1293-requalify-fresh2 | Repair the state-repository TLA admission runner and truthful worktree metadata. | Repair the authorized QEMU guest required-containment path: provide a working systemd user bus/transient unit launcher for the exact candidate image; portable-smoke already passed. Do not run full-exhaustive until pr-publication attestation is green. |
 
 ### Blocked (49)
 

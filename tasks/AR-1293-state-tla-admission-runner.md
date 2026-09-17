@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T16:10:25+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Portable-smoke passed for exact 39c8933f5; run pr-publication on the same candidate-specific VM image, then full-exhaustive only if required tier attests green.",
+  "next_action": "Repair the authorized QEMU guest required-containment path: provide a working systemd user bus/transient unit launcher for the exact candidate image; portable-smoke already passed. Do not run full-exhaustive until pr-publication attestation is green.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 195,
+  "task_revision": 196,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T14:41:56+00:00",
+  "updated_at": "2026-09-17T14:42:27+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -681,3 +681,11 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T14:41:56+00:00: Recorded command exit 0; command argv SHA-256
   c08c66e7c13a9096086af1be3b2cb3cfd8ba22627c6d10db7de7f4940c7e9922.
+
+- 2026-09-17T14:42:27+00:00: Required/pr-publication gate is blocked after portable success. Exact
+  candidate guest reached all six TLC models with no model errors, then attest.py rejected portable
+  mode as expected; required attempts failed with Failed to connect to bus: No medium found. Guest
+  diagnostics showed user-runtime-dir@1000 active, user@1000 active, busctl --user status healthy,
+  but systemd-run transient invocation did not produce a result and wrapper interception was not
+  selected by the runner (no wrapper log). No pr-publication attestation exists; full-exhaustive was
+  not run.
