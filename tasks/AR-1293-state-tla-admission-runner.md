@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 96,
+  "task_revision": 97,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T10:36:36+00:00",
+  "updated_at": "2026-09-17T10:37:28+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -354,3 +354,6 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   multiple concurrent QEMU/worker workloads. This is runner capacity/JVM environment failure, not a
   model or product failure. Focused 10/10, vendor verify, Ruff, mypy remain green; full unittest was
   running separately and no product/asb-tui changes were made.
+
+- 2026-09-17T10:37:28+00:00: Recorded command exit 0; command argv SHA-256
+  943ccbd8d219e99d60ee4bfc40cca9ab173d1863e08b6522cd7744ae0c9fb186.
