@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 447,
+  "task_revision": 448,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T18:56:25+00:00",
+  "updated_at": "2026-09-17T18:56:34+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1497,4 +1497,7 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   ba7722eab20af0c63925e3d79b52a69a0cff044e4488024b7e3056284e68fe13.
 
 - 2026-09-17T18:56:25+00:00: Recorded command exit 0; command argv SHA-256
+  6cc5c72a03f7c81e141d738c5aa6eef54e1c38aeffb40aa824f48acc5dad4cc2.
+
+- 2026-09-17T18:56:34+00:00: Recorded command exit 32; command argv SHA-256
   6cc5c72a03f7c81e141d738c5aa6eef54e1c38aeffb40aa824f48acc5dad4cc2.
