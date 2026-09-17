@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T20:24:35+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Re-run full-exhaustive with a fresh larger data image copied from accepted PR8 clean image; required evidence is green. The first full attempt failed closed on No space left on device while Handoffctl model state writer persisted, so no full attestation exists.",
+  "next_action": "Implement and qualify a distinct full-exhaustive 7200s timeout profile; required PR8 remains 1800s and green. Add schema/attestation/tests/receipt binding, then fresh-run full.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 226,
+  "task_revision": 227,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T17:25:12+00:00",
+  "updated_at": "2026-09-17T17:26:57+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -771,3 +771,9 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T17:25:12+00:00: Recorded command exit 0; command argv SHA-256
   bfed98255c8f3ca4af77d55b79d2b072f237a0a555c1140c7d16bf5c45388cc9.
+
+- 2026-09-17T17:26:57+00:00: Second full-exhaustive run used the fresh 4GiB image and reached the
+  large Handoffctl model, but terminated at approximately 1812s with FULL_EXHAUSTIVE_RC=1 because
+  the seed hardcoded RuntimeMaxSec=1800; no full attestation was produced. Serial evidence shows TLC
+  itself progressing, not a model error. This is a timeout-profile defect; do not claim full
+  success.
