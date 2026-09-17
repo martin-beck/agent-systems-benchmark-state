@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T19:17:19+00:00",
+  "claim_expires": "2026-09-17T19:18:26+00:00",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Rebuild seed/data pairing from d57b495b9 exact candidate, rerun required tier, and require PR result plus attestation commit equality.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 415,
+  "task_revision": 416,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T18:47:55+00:00",
+  "updated_at": "2026-09-17T18:48:26+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1404,3 +1404,5 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   absent host /etc/java-17-openjdk. Signed fix d57b495b9 copies pinned guest JDK to jvm-fixed,
   replaces java.security/java.policy/nss.cfg from guest system security files, exports
   JAVA_HOME/PATH, and tests the contract. Exact offline Ruff/format/mypy and 23/23 tests pass.
+
+- 2026-09-17T18:48:26+00:00: Heartbeat by codex-ar1293-timeout-repair-20260917.
