@@ -11,12 +11,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 50 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 214 |
+| **Done** | Accepted, integrated, and durably verified | 215 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 9 |
 
@@ -402,7 +402,7 @@ flowchart LR
         AR_1303["AR-1303 - Blocked"]:::status_blocked
         AR_1304["AR-1304 - Done"]:::status_done
         AR_1305["AR-1305 - Blocked"]:::status_blocked
-        AR_1306["AR-1306 - In progress"]:::status_in_progress
+        AR_1306["AR-1306 - Done"]:::status_done
         AR_1307["AR-1307 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
@@ -1652,12 +1652,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | codex-ar1293-timeout-repair-20260917 | Repair the state-repository TLA admission runner and truthful worktree metadata. | AR-1293 remains blocked on AR-1307 PR #24 (eb0da360b6091d5a5f74decfff4da39202226eec) merge and fresh runner handoff. Old ada383cea full VM terminated with serial ending during liveness progress at 47,029,477 generated / 38,798,900 distinct states, with no FULL_EXHAUSTIVE_RC, success marker, attestation, or receipt; classify as interrupted/incomplete, not a model result. After AR-1307 is merged and handed off, rebuild fresh exact fa57625d9 image/seed and rerun required then independently reviewed full gates. |
-| P0 | [AR-1306](../tasks/AR-1306-authenticated-fault-matrix-qualification.md): Authenticated strict-replay fault-matrix qualification | codex-ar1306-auth-listener-20260917 | Qualify the real authenticated strict-replay service and fault matrix missing from PR #221. | Independent review approved at exact head af44d47: all 12 hosted checks terminal green, native sandbox_boundary exact-head run 15/15, response-parity focused reruns 2/2. Protected merge may proceed only after live head/clean tree recheck; then post-merge verification and AR close. |
 | P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-runner-repair-20260918 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Provision/use a disposable digest-pinned QEMU/CI runner with a booted user@1000 systemd/D-Bus bus, no NIC or host mounts, staged pinned TLA JAR, and current exact b8db467ee source; run repeated portable-smoke then required pr-publication/full tiers and validate schema receipts. |
 
 ### Blocked (50)
@@ -1731,3 +1730,6 @@ flowchart LR
 | P0 | [AR-1031](../tasks/AR-1031-asb-tui-landing-screen.md): Build the standalone TUI landing screen | Unclaimed | Add a state-aware landing screen with primary journeys and bounded recent activity. | Implement the landing screen after the shell, visual system and first-run wizard expose stable typed routes. |
 | P0 | [AR-1032](../tasks/AR-1032-asb-tui-contextual-help.md): Add contextual hotkeys and complete action help | Unclaimed | Provide a context-fitted hotkey window, global action search and mechanically complete help. | Add the contextual action registry, search field, fitted hotkey window and complete help coverage after the user-facing screens exist. |
 | P0 | [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md): Establish the professional TUI visual system | Unclaimed | Create a responsive, accessible and professional visual system for every TUI screen. | Create the standalone Ratatui visual system after the application shell is integrated. |
+| P0 | [AR-1034](../tasks/AR-1034-asb-tui-configuration-center.md): Add the standalone TUI configuration center | Unclaimed | Add a searchable configuration menu for frontend preferences and benchmark defaults. | Implement the non-secret configuration center foundation after the visual system and ASB wizard control API are stable; AR-1170 owns provider, authentication and default integration. |
+| P0 | [AR-1035](../tasks/AR-1035-asb-tui-reports-compare.md): Build recent-runs, report and comparison workspaces | Unclaimed | Add searchable recent runs, report inspection and evidence-qualified comparison workspaces. | Implement report and comparison screens after recording workflows publish stable live and strict-replay source labels. |
+| P0 | [AR-1160](../tasks/AR-1160.md): Wizard control API | Unclaimed | Expose wizard operations. | Read the plan. |

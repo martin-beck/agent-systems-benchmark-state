@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1306-authenticated-fault-matrix-qualification",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-18T01:24:15+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1300",
     "AR-1287"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1306-authenticated-fault-matrix-qualification",
   "observed_dirty": 0,
   "observed_head": "af44d473a3bab40a268986f360693c93e441c418",
-  "owner": "codex-ar1306-auth-listener-20260917",
+  "owner": "",
   "plan": "../plans/AR-1306.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 202,
+  "task_revision": 203,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T23:24:15+00:00",
+  "updated_at": "2026-09-17T23:28:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
@@ -587,3 +587,11 @@ publication, independent review, green exact-head CI, protected merge and post-m
 - 2026-09-17T23:20:33+00:00: Heartbeat by codex-ar1306-auth-listener-20260917.
 
 - 2026-09-17T23:24:15+00:00: Heartbeat by codex-ar1306-auth-listener-20260917.
+
+- 2026-09-17T23:28:33+00:00: AR complete. Protected merge of PR #222 from reviewed exact head
+  af44d473 produced merge commit 8b98b2037a2231878c084401c660b32362a4e0f7 at 2026-09-17T23:20:02Z.
+  Post-merge exact-main workflows all passed: Huawei MIT source headers 35286357698, Hosted
+  portability and native qualification 35286357706, Rust verification 35286357708, Repository
+  quality 35286357714, Fault assurance 35286357725, Formal assurance 35286357726, Emulated aarch64
+  portability 35286357727. Native exact-head matrix independently passed 15/15 and focused parity
+  2/2 before merge; signatures/DCO/privacy and explicit bubblewrap allowlist verified.
