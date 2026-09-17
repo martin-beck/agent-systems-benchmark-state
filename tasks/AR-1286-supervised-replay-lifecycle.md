@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1286-supervised-replay-lifecycle",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T07:56:08+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1282",
     "AR-1285",
@@ -15,15 +15,15 @@
   "observed_branch": "feature/ar-1286-supervised-replay-lifecycle",
   "observed_dirty": 0,
   "observed_head": "d8064117cdebd2d1fa84cd4e65469cc802e6d281",
-  "owner": "codex-ar1286-repair",
+  "owner": "",
   "plan": "../plans/AR-1286.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 46,
+  "task_revision": 47,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-17T05:56:44+00:00",
+  "updated_at": "2026-09-17T05:57:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
@@ -164,3 +164,10 @@ do not touch or claim asb-tui behavior.
 
 - 2026-09-17T05:56:44+00:00: Recorded command exit 101; command argv SHA-256
   790cc29a62b0eb3b1c38299222ccb01d7d052d6e03c2560bc09cfbdec9b48281.
+
+- 2026-09-17T05:57:05+00:00: Deep repair start performed safely. Existing branch has
+  runtime/factory/lifecycle commits, but the required delegated namespace qualification cannot run
+  on this host: ignored qualified_runtime_backend_executes_and_reaps_child reaches /usr/bin/bwrap
+  and fails before child creation with Resource temporarily unavailable. Do not merge PR #197 or
+  #207 or weaken lifecycle/egress evidence; resume on a host with qualified delegated bwrap/systemd
+  capability.
