@@ -8,7 +8,7 @@
     "AR-1285"
   ],
   "id": "AR-1300",
-  "next_action": "Continue bounded monitoring of post-merge exact-main workflows for 9263f8310cbf4d222d09d0d1eaef4b4bdfb72e05; release only after all terminal checks pass.",
+  "next_action": "No further action; merged commit 9263f8310cbf4d222d09d0d1eaef4b4bdfb72e05 and exact-main post-merge gates are green.",
   "observed_branch": "feature/ar-1300-runtime-cassette-dispatch-seam",
   "observed_dirty": 0,
   "observed_head": "019038378726405eaf05a77269b8541d9a81d912",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "done",
   "summary": "Connect runtime-issued cassette operations to the real strict-replay dispatch path.",
-  "task_revision": 102,
+  "task_revision": 103,
   "title": "Runtime-to-replay cassette dispatch seam",
-  "updated_at": "2026-09-17T07:48:38+00:00",
+  "updated_at": "2026-09-17T07:50:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1300-runtime-cassette-dispatch-seam"
 }
 ---
