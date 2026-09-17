@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Land the authenticated runtime-to-CLI replay transport foundation.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Authenticated replay transport foundation",
-  "updated_at": "2026-09-17T00:37:46+00:00",
+  "updated_at": "2026-09-17T00:39:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1282-authenticated-replay-transport"
 }
 ---
@@ -187,3 +187,6 @@ claim primary command execution.
   Explicit mismatch and duplicate tests pass. Full locked workspace test suite remains green after
   fix; prior fmt, clippy, rustdoc, and repository policy gates pass at this unchanged scoped
   foundation. Product worktree is clean and pushed. Request independent exact-head re-review.
+
+- 2026-09-17T00:39:52+00:00: Recorded command exit 0; command argv SHA-256
+  8046e99cc57708ed2e3912e81e79cd970c8790256e9d70cf33b78c8d53a97f69.
