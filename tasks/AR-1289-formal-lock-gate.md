@@ -7,17 +7,17 @@
   "id": "AR-1289",
   "next_action": "Promote and claim; reproduce formal/Cargo.lock failure on protected main, determine exact lock drift, and repair the smallest ASB formal gate scope.",
   "observed_branch": "fix/ar-1289-formal-lock-gate",
-  "observed_dirty": 1,
-  "observed_head": "2fd90557a4e7be32fab590f47bc501462127c1c1",
+  "observed_dirty": 0,
+  "observed_head": "53981d651645594a65aa7e69c9faa28e0770b6a6",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1289.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the stale formal Cargo.lock required by hosted exact-head gates.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Repair formal lock gate",
-  "updated_at": "2026-09-17T03:15:48+00:00",
+  "updated_at": "2026-09-17T03:15:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1289-formal-lock-gate"
 }
 ---
