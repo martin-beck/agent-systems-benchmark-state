@@ -23,20 +23,20 @@ Generated from local Git and GitHub. Do not edit.
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #197 | `feature/ar-1248-strict-replay-cli-contract@7d9c2ee2e08b` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): define strict offline replay consumer contract |
 | #207 | `feature/ar-1262-runtime-owned-launch-authority@c009185748a4` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): issue strict-replay launch authority |
-| #210 | `feature/ar-1288-certificate-chain-authz@ddcd51b8a4ad` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | feat(control): validate runtime certificate chains |
+| #210 | `feature/ar-1288-certificate-chain-authz@ddcd51b8a4ad` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS: | feat(control): validate runtime certificate chains |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35177186515 | `ddcd51b8a4ad` | pull_request | Repository quality | queued:- |
+| 35177186515 | `ddcd51b8a4ad` | pull_request | Repository quality | in_progress:- |
 | 35177186479 | `ddcd51b8a4ad` | pull_request | Rust verification | pending:- |
 | 35177186464 | `ddcd51b8a4ad` | pull_request | Formal assurance | pending:- |
 | 35177186442 | `ddcd51b8a4ad` | pull_request | Emulated aarch64 portability | pending:- |
-| 35177186441 | `ddcd51b8a4ad` | pull_request | Huawei MIT source headers | queued:- |
-| 35177186440 | `ddcd51b8a4ad` | pull_request | Fault assurance | queued:- |
-| 35177186422 | `ddcd51b8a4ad` | pull_request | Agent Workflow Quality shadow | queued:- |
-| 35177186414 | `ddcd51b8a4ad` | pull_request | Hosted portability and native qualification | queued:- |
+| 35177186441 | `ddcd51b8a4ad` | pull_request | Huawei MIT source headers | completed:success |
+| 35177186440 | `ddcd51b8a4ad` | pull_request | Fault assurance | in_progress:- |
+| 35177186422 | `ddcd51b8a4ad` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 35177186414 | `ddcd51b8a4ad` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 35177009419 | `0e8d7e2b23bd` | pull_request | Huawei MIT source headers | completed:success |
 | 35177009399 | `0e8d7e2b23bd` | pull_request | Rust verification | in_progress:- |
 | 35177009392 | `0e8d7e2b23bd` | pull_request | Fault assurance | completed:success |
