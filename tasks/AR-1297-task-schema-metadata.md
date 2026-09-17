@@ -2,22 +2,22 @@
 {
   "branch": "repair/ar-1297-task-schema-metadata",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T07:28:11+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1297",
   "next_action": "Repair every reported task schema/metadata error from durable evidence, add strict superseded_by schema coverage, regenerate views, and rerun all state gates.",
   "observed_branch": "repair/ar-1297-task-schema-metadata",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "asb-ar1297-metadata",
+  "owner": "",
   "plan": "../plans/AR-1297.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Repair task schema and metadata consistency without weakening coordinator validation.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Task schema and metadata consistency",
-  "updated_at": "2026-09-17T05:33:05+00:00",
+  "updated_at": "2026-09-17T05:33:33+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1297-task-schema"
 }
 ---
@@ -78,3 +78,12 @@ asb-tui source, modify handoffctl implementation, or alter formal gates.
 
 - 2026-09-17T05:33:05+00:00: Recorded command exit 0; command argv SHA-256
   b7c2984c8722b6f2b56d0c6a25131a8ca79ed6bdfddab0b1991edccc7c9aeab0.
+
+- 2026-09-17T05:33:33+00:00: Audited and repaired repository task metadata from durable evidence.
+  Added strict superseded_by schema property and recorded verified chain
+  AR-1052→1054→1056→1058→1061→1062. Filled previously invalid observed heads with documented product
+  commits or truthful current state checkout heads; shortened overlong next_action text without
+  dropping blockers. Regenerated views via handoffctl. Signed+DCO commit 400a718b5 independently
+  verified. validate_schema, render-status check, strict mypy, Ruff, full coverage 95%, vendor
+  verification, headers, lizard, diff-check and live doctor all pass. No product, asb-tui,
+  handoffctl implementation, or formal-gate changes.
