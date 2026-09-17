@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T14:50:23+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Create a reviewed AR-1293/state runner change that separates a bounded virtual-address-space limit from the 3 GiB physical/swap attested bounds, with positive/negative tests and formal evidence update. Then run fresh VM preflight and portable-smoke; only after smoke terminal success may required-pr/full proceed.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "codex-ar1302-capacity-repair",
+  "owner": "",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 362,
+  "task_revision": 363,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:52:03+00:00",
+  "updated_at": "2026-09-17T12:52:22+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1209,3 +1209,9 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T12:52:03+00:00: Recorded command exit 0; command argv SHA-256
   4e2a95a82c38486469748dbfc1df62aad08e49ea335a15c425bb128a75bd75d4.
+
+- 2026-09-17T12:52:22+00:00: No repair commit was made because the required change belongs to the
+  reviewed AR-1293/state TLC runner contract, not VM provisioning. UUID mount and portable-smoke
+  evidence are complete; the VM path fails native JVM allocation with RLIMIT_AS=3G. Raising that
+  limit ad hoc would violate attested containment. AR-1302 is released ownerless blocked pending a
+  reviewed separate virtual-address-space bound with tests/evidence.
