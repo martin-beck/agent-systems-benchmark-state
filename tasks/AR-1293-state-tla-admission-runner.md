@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T20:33:05+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Retry fresh full-exhaustive with corrected private QEMU import path; timeout-profile commit 5d0f8deb3 is signed/DCO and focused-green.",
+  "next_action": "Independently review and publish signed timeout-wiring commit; then regenerate the tracked full guest seed from seed_profile (TLC_TIMEOUT_SECONDS=7200) and rerun full only after exact-head review.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 240,
+  "task_revision": 241,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T17:39:35+00:00",
+  "updated_at": "2026-09-17T17:39:56+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -817,3 +817,11 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T17:39:35+00:00: Recorded command exit 0; command argv SHA-256
   3b2e23c40f9994a8d4767a3d81231659d2cc297169a084bce8e52a21eca0178a.
+
+- 2026-09-17T17:39:56+00:00: Execution wiring is now tracked in candidate worktree: verify.sh
+  derives TIMEOUT_SECONDS via tier_profiles.timeout_for_tier and passes --timeout-seconds to every
+  tlc_runner invocation; tier_profiles/seed_profile define required=1800 and full=7200 with bounded
+  memory/address limits; workflow timeout is 720 minutes; 17 focused tests, Ruff, and diff checks
+  pass. The 17:39:16 exit-1 was a test-loader import error: seed_profile.py could not import
+  tier_profiles when loaded standalone; fixed by explicit test module registration. No VM was
+  launched for that failed command.
