@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Dispatch exact-head workflow at 9051f1e8f; inspect model output. If clean CI now reaches formal execution, retain full result and fix only truthful failures; otherwise qualify disposable QEMU runner infrastructure under /srv/data/projects.",
+  "next_action": "Dispatch exact a69b29c1c formal workflow and inspect diagnostic. If it identifies canonical-lock/user-bus capacity, preserve as infrastructure blocker and run only on approved clean QEMU/CI lane; never substitute private lock or host run for publication evidence.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 101,
+  "task_revision": 102,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T23:01:55+00:00",
+  "updated_at": "2026-09-17T23:01:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -348,3 +348,10 @@ and protected publication sequence.
   8c7c93d886bd64154492054358eb676dd90dcca669cabd87d9dbb3d66677aa23.
 
 - 2026-09-17T23:01:55+00:00: Heartbeat by codex-ar1307-runner-repair-20260918.
+
+- 2026-09-17T23:01:57+00:00: Third exact-head formal dispatch 35284735524 reached launcher and
+  failed exit 1 with no diagnostic; logs showed `formal tier full-exhaustive failed (exit 1): no
+  diagnostic was emitted`. Root cause is required-tier child returning nonzero without reporting its
+  bounded classification (tlc_runner only recorded the outcome). Signed+DCO repair a69b29c1c now
+  emits a sanitized failure classification for every non-timeout nonzero TLC execution; focused
+  29/29, Ruff, format, and mypy pass; pushed PR #24. No formal success is claimed.
