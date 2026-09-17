@@ -13,7 +13,7 @@
   "id": "AR-1286",
   "next_action": "Signed checkpoint eef6894 binds an optional runtime-owned SandboxBackend into ReplayLaunchAuthority and transfers it through ReplayLaunchContext::spawn; focused locked runtime suite passes 50 unit, 3 binary, 8 process, 11 sandbox, 16 scheduler, and 2 doctests. Next add CLI replay consumption and real bounded child/lifecycle fixtures.",
   "observed_branch": "feature/ar-1286-supervised-replay-lifecycle",
-  "observed_dirty": 0,
+  "observed_dirty": 2,
   "observed_head": "eef68946cae5a67826f102eb88a6597619fd69f6",
   "owner": "asb_ar1286_supervised_replay_lifecycle",
   "plan": "../plans/AR-1286.md",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-17T02:24:17+00:00",
+  "updated_at": "2026-09-17T02:24:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
