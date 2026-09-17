@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**330 ARs tracked** across 6 active status categories.
+**330 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 47 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -386,7 +386,7 @@ flowchart LR
         AR_1290["AR-1290 - Done"]:::status_done
         AR_1291["AR-1291 - Done"]:::status_done
         AR_1292["AR-1292 - Blocked"]:::status_blocked
-        AR_1293["AR-1293 - In progress"]:::status_in_progress
+        AR_1293["AR-1293 - Open"]:::status_open
         AR_1294["AR-1294 - Blocked"]:::status_blocked
         AR_1295["AR-1295 - Blocked"]:::status_blocked
         AR_1296["AR-1296 - Done"]:::status_done
@@ -1635,13 +1635,18 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | codex-ar1293-clean-vm-20260917 | Repair the state-repository TLA admission runner and truthful worktree metadata. | Portable-smoke passed on clean isolated VM for candidate f16d2cb41721bf8f17aa5aa75ab01520aeb91eb8; proceed with the planned focused/full state gates and independent review, preserving portable non-exhaustive attestation limits. |
 | P0 | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | coordinator-ar1301-lifecycle-20260917 | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | Candidate a57d111 has full locked workspace/runtime gates and five consecutive native authenticated-cassette runs. Independent review must still add supervised stale/malformed/duplicate/mismatch no-fallback cases and genuine crash-restart evidence before PR publication. |
 | P0 | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | codex-ar1302-runner-20260917-vm | Provision a clean portable TLC CI/VM runner for state formal admission. | Wait for AR-1293 worker to release the 32 GiB VM; then offline-stage the pinned TLC JAR into a distinct runner data disk, boot without network or host mounts, and run signed candidate f16d2cb41 full-exhaustive with exact attestation. |
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Unclaimed | Repair the state-repository TLA admission runner and truthful worktree metadata. | Portable-smoke passed on clean isolated VM for candidate f16d2cb41721bf8f17aa5aa75ab01520aeb91eb8; proceed with the planned focused/full state gates and independent review, preserving portable non-exhaustive attestation limits. |
 
 ### Blocked (47)
 

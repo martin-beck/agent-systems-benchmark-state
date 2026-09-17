@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T11:07:42+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Portable-smoke passed on clean isolated VM for candidate f16d2cb41721bf8f17aa5aa75ab01520aeb91eb8; proceed with the planned focused/full state gates and independent review, preserving portable non-exhaustive attestation limits.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "codex-ar1293-clean-vm-20260917",
+  "owner": "",
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T10:22:42+00:00",
+  "updated_at": "2026-09-17T10:23:50+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -292,3 +292,7 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 - 2026-09-17T10:20:24+00:00: Heartbeat by codex-ar1293-clean-vm-20260917.
 
 - 2026-09-17T10:22:42+00:00: Heartbeat by codex-ar1293-clean-vm-20260917.
+
+- 2026-09-17T10:23:50+00:00: Worker was idle with only heartbeats after portable-smoke; coordinator
+  interrupted it and released the claim for reassignment. Portable-smoke evidence is retained;
+  focused/pr-publication gates remain outstanding.
