@@ -8,7 +8,7 @@
   ],
   "id": "AR-1288",
   "next_action": "Promote after schema and dependency validation; then claim the isolated worktree and implement the AR-0814 certificate issuance and chain-validation successor.",
-  "observed_branch": "",
+  "observed_branch": "feature/ar-1288-certificate-chain-authz",
   "observed_dirty": 0,
   "observed_head": "2fd90557a4e7be32fab590f47bc501462127c1c1",
   "owner": "asb_ar1024_lifecycle_router",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T02:39:17+00:00",
+  "updated_at": "2026-09-17T02:39:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
