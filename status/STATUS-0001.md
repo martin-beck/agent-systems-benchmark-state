@@ -1639,7 +1639,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | ar1301_negative_matrix | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | Full workspace default-parallel test had native-only resource contention; rerun sandbox_boundary serially and full locked workspace with native tests serialized, then independent exact-head review. |
+| P0 | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | ar1301_negative_matrix | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | Independent exact-head review of clean signed e98293a complete diff (including supervised authenticated negative matrix and crash-to-fresh-generation evidence); then PR/CI publication only after review. |
 
 ### Blocked (49)
 

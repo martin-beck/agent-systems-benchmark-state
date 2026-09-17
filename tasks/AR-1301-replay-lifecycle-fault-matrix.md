@@ -8,7 +8,7 @@
     "AR-1300"
   ],
   "id": "AR-1301",
-  "next_action": "Full workspace default-parallel test had native-only resource contention; rerun sandbox_boundary serially and full locked workspace with native tests serialized, then independent exact-head review.",
+  "next_action": "Independent exact-head review of clean signed e98293a complete diff (including supervised authenticated negative matrix and crash-to-fresh-generation evidence); then PR/CI publication only after review.",
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "observed_dirty": 0,
   "observed_head": "e98293ab022d3ce7dcf09f6b4f3a1d5a0500fa07",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 171,
+  "task_revision": 172,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:34:43+00:00",
+  "updated_at": "2026-09-17T11:35:05+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -482,3 +482,10 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
 
 - 2026-09-17T11:34:43+00:00: Recorded command exit 0; command argv SHA-256
   0752a3f51c9a63e666fd08e54515911bd4dbfa0381acb86327909b702e10e5de.
+
+- 2026-09-17T11:35:05+00:00: Focused sandbox_boundary serial gate passed: 15/15 tests, including
+  supervised stale, malformed, duplicate, strict mismatch/no-fallback and crash/restart cases. Full
+  locked workspace test with --test-threads=1 passed across all packages and doc-tests;
+  environment-gated tests remained explicitly ignored. fmt/clippy passed. Final product head e98293a
+  is clean, SSH-signed, DCO-signed. Default-parallel full failure was native resource contention and
+  is superseded by the serialized terminal-green evidence.
