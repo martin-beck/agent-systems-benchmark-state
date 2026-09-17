@@ -2,22 +2,22 @@
 {
   "branch": "repair/ar-1294-state-gate-baseline",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T07:00:15+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1294",
   "next_action": "Audit the vendor lock/digest mismatch and root-owned TLC admission lock; repair only through immutable provenance and owner-safe lock handling, then rerun full state/formal gates.",
   "observed_branch": "repair/ar-1294-state-gate-baseline",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "asb-ar1294-vendor-lock",
+  "owner": "",
   "plan": "../plans/AR-1294.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Restore vendor and formal admission baseline integrity needed to qualify AR-1293.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "State formal-gate baseline integrity",
-  "updated_at": "2026-09-17T05:00:15+00:00",
+  "updated_at": "2026-09-17T05:00:34+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1294-gate-baseline"
 }
 ---
@@ -71,3 +71,11 @@ formal checks, or manipulate another service's lock.
   8ad19f5dfe2e7b2007d75bc1202a25e517cd4cb6ca4e53a00b2a1c440331dbdf.
 
 - 2026-09-17T05:00:15+00:00: Heartbeat by asb-ar1294-vendor-lock.
+
+- 2026-09-17T05:00:34+00:00: Verified immutable coordinator pin v0.3.7 at
+  550c014c440cc9bc45727fea71d90a9025c554c3. Restored vendored docs digest and moved local
+  merge/post-merge policy into docs/COORDINATOR_LOCAL_POLICY.md; handoffctl_vendor verify passes.
+  Formal portable smoke reaches missing tools/tlc_runner.py on main; existing
+  /tmp/agent-workflow-coordinator-tlc-admission.lock and queue are external
+  gha-workflow-coordinator-owned and untouched. No product, asb-tui, or handoffctl source changes.
+  AR-1293 must supply an isolated owner-safe runner path, then rerun formal gates.
