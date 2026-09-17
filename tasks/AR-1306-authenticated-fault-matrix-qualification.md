@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 124,
+  "task_revision": 125,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T22:36:32+00:00",
+  "updated_at": "2026-09-17T22:36:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
@@ -389,3 +389,6 @@ publication, independent review, green exact-head CI, protected merge and post-m
   not locate pinned bubblewrap 0.9.0-1ubuntu0.1 (apt exit 100). Repaired workflow with reviewed
   0.9.0 allowlist/candidate selection and post-install exact version check; no network/host
   isolation changes. Signed commit 5425bc3 pushed to PR #222.
+
+- 2026-09-17T22:36:47+00:00: Recorded command exit 0; command argv SHA-256
+  82164eb7b9c75c42df4a72e4a85c068fc91bda8dbb22d5cf39f7bd21bbd034e6.
