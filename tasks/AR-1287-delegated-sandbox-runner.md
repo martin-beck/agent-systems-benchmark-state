@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T09:51:39+00:00",
   "depends_on": [],
   "id": "AR-1287",
-  "next_action": "Await approved signed multi-arch delegated runner; preserve AR-1286 fail-closed lifecycle blocker.",
+  "next_action": "Run AR-1286 qualified and AR-1301 lifecycle fixtures in the KVM guest; resolve any VM-specific fixture assumptions, then record bounded evidence.",
   "observed_branch": "feature/ar-1287-delegated-sandbox-runner",
   "observed_dirty": 0,
   "observed_head": "dba5f9bb6973cbb256695161e83f7a0eee860fb9",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a delegated runner for real strict-replay child lifecycle qualification.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Delegated sandbox runner capability",
-  "updated_at": "2026-09-17T07:51:39+00:00",
+  "updated_at": "2026-09-17T07:52:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1287-delegated-sandbox-runner"
 }
 ---
@@ -71,3 +71,10 @@ lifecycle completion until the actual child and fault fixtures run in the qualif
   full lifecycle qualification and record bounded evidence.
 
 - 2026-09-17T07:51:39+00:00: Claimed by root.
+
+- 2026-09-17T07:52:31+00:00: Provisioned /srv/data/projects/asb-replay-vm: checksum-verified Ubuntu
+  24.04 cloud image, qcow2 overlay, cloud-init, QEMU/KVM 8.2.2. Guest systemd manager is running;
+  guest-only AppArmor userns restriction was set to 0. As unprivileged user asb, unshare -Ur, bwrap
+  --unshare-net, user systemd-run TasksMax=16/MemoryMax=64M, and denied-egress probes pass. The
+  AR-1286 qualified runtime backend test passes as asb. Full copied test binary run found one VM
+  path-sensitive malformed-spec assertion failure; retain as follow-up, do not claim full suite.
