@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Vendor boundary is restored in the repair branch; run exact quality gates and formal launcher tests, then stage one signed repair commit and request independent review before publication.",
+  "next_action": "Exact local quality gates now pass on the repair branch; run launcher contract tests and source/privacy/schema checks, then commit the repair, independently review the complete diff, and only then publish.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T22:13:51+00:00",
+  "updated_at": "2026-09-17T22:15:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -78,3 +78,10 @@ and protected publication sequence.
   now restored in the AR-1307 worktree and vendor verification passes (agent-workflow-coordinator
   v0.3.7). Focused suite remains 24/24 and full state suite 158/158. Ruff repair is in progress
   after adding bounded launcher/provenance changes; no release or PR claim yet.
+
+- 2026-09-17T22:15:32+00:00: Durable checkpoint: vendor verification passes at v0.3.7; Ruff check
+  passes; Ruff format check passes for 22 files; uv-frozen .venv mypy tools/tests passes 19 files.
+  Focused runner tests remain 24/24 and full state suite 158/158. The exact launcher/provenance
+  implementation is still uncommitted in the feature worktree pending launcher tests and final diff
+  review; repeated handoffctl lock timeouts occurred after successful commands and were not
+  re-executed.
