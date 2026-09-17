@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Restore vendor and formal admission baseline integrity needed to qualify AR-1293.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "State formal-gate baseline integrity",
-  "updated_at": "2026-09-17T04:58:59+00:00",
+  "updated_at": "2026-09-17T04:59:07+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1294-gate-baseline"
 }
 ---
@@ -57,3 +57,6 @@ formal checks, or manipulate another service's lock.
 
 - 2026-09-17T04:58:59+00:00: Recorded command exit 0; command argv SHA-256
   7c730eec3ea71bd24ffc5a9255bf7f542481bf601dba6c72bed6e00f6c2fab3c.
+
+- 2026-09-17T04:59:07+00:00: Recorded command exit 0; command argv SHA-256
+  d04aa803a9fcb854b247572f9b417fd1935a57ca978bb887d2e7c188e99db043.
