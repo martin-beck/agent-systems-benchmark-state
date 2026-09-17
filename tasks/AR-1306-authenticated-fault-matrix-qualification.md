@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T21:38:18+00:00",
+  "updated_at": "2026-09-17T21:38:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
@@ -93,3 +93,6 @@ publication, independent review, green exact-head CI, protected merge and post-m
 - 2026-09-17T21:38:18+00:00: Implementation candidate 910af9a: fault matrix now uses ReplayRelay
   rather than an unauthenticated raw UnixListener. Focused 3/3, full asb-runtime tests, fmt and
   clippy pass. No asb-tui or handoffctl changes.
+
+- 2026-09-17T21:38:28+00:00: Recorded command exit 0; command argv SHA-256
+  19512d543cbca16558243694b400506ff05b53a567fdc394e8f00a631ebcc519.
