@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 147,
+  "task_revision": 148,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T13:13:32+00:00",
+  "updated_at": "2026-09-17T13:13:35+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -524,3 +524,6 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   schema restored unchanged. Focused tests 9/9, Ruff format/check, and mypy pass. Full state suite
   ran 134 tests with the known baseline vendor fixture mismatch (1 failure, 2 errors); vendor verify
   reports the pre-existing locked README digest mismatch. No VM rerun yet.
+
+- 2026-09-17T13:13:35+00:00: Recorded command exit 0; command argv SHA-256
+  0b9e4ac02598b939ffd52958ea8f41dbb99de90137430d0ec26332188bfc9dc8.
