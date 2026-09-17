@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T14:45:09+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Data-disk UUID wiring is repaired and proven. Do not run required-pr/full-exhaustive until bounded portable containment capacity prevents native JVM allocation failure; preserve 32 GiB RAM/16 GiB swap/no network/no host mounts and require successful portable-smoke terminal evidence first.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "codex-ar1302-data-mount-repair",
+  "owner": "",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 355,
+  "task_revision": 356,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:49:21+00:00",
+  "updated_at": "2026-09-17T12:49:38+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1178,3 +1178,9 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T12:49:21+00:00: Recorded command exit 0; command argv SHA-256
   d2d0ad76bf84a0d8480eae80cf11b1c9aadf63dd417c845be05fb83bb06c963c.
+
+- 2026-09-17T12:49:38+00:00: Mountrepair checkpoint complete: boot mount succeeded and UUID-wired
+  data path was usable; portable-smoke reached TLC but failed native JVM allocation under AS=3G
+  prlimit, with no attestation. Required-pr/full-exhaustive was not launched. Runner is stopped;
+  next action is a capacity-safe portable containment repair followed by successful portable-smoke
+  evidence.
