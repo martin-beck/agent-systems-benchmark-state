@@ -19,11 +19,11 @@
   "plan": "../plans/AR-1286.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-17T00:00:00+00:00",
+  "updated_at": "2026-09-17T02:19:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
@@ -37,3 +37,6 @@ do not touch or claim asb-tui behavior.
 - Created as the dependency-safe successor for the supervised cassette lifecycle after AR-1282 and
   AR-1285 completed. Earlier blocked replay lifecycle records remain historical evidence and are
   not implementation inputs.
+
+- 2026-09-17T02:19:11+00:00: Dependencies AR-1282, AR-1285, AR-1237, AR-1238, and AR-1239 are done;
+  promote this ASB-only lifecycle successor.
