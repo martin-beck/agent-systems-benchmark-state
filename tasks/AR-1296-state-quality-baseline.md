@@ -2,22 +2,22 @@
 {
   "branch": "repair/ar-1296-state-quality-baseline",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T06:40:02+00:00",
   "depends_on": [],
   "id": "AR-1296",
   "next_action": "Repair explicit tools package identity and add bounded offline upgrade-command coverage until strict mypy and the unchanged 95% coverage gate pass.",
   "observed_branch": "repair/ar-1296-state-quality-baseline",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "",
+  "owner": "asb-ar1296-quality-review",
   "plan": "../plans/AR-1296.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Restore strict state-repository mypy and coverage quality gates without weakening thresholds.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "State quality-gate baseline",
-  "updated_at": "2026-09-17T05:34:22+00:00",
+  "updated_at": "2026-09-17T05:40:02+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1296-quality"
 }
 ---
@@ -129,3 +129,5 @@ alter handoffctl semantics without tests.
 
 - 2026-09-17T05:34:22+00:00: AR-1297 repaired schema/generated-state metadata; rerun AR-1296 full
   state quality gates and release if all green.
+
+- 2026-09-17T05:40:02+00:00: Claimed by asb-ar1296-quality-review.
