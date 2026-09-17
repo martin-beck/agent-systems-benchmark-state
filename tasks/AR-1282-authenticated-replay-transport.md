@@ -11,17 +11,17 @@
   "id": "AR-1282",
   "next_action": "Independent re-review requested for signed 0c4b9a4; response identity binding and one-shot completion negatives pass, full locked workspace gates pass. Scope remains bounded core/runtime transport only.",
   "observed_branch": "feature/ar-1282-authenticated-replay-transport",
-  "observed_dirty": 1,
-  "observed_head": "0c4b9a4581c32039513118781f504cf6c88d704d",
+  "observed_dirty": 0,
+  "observed_head": "a455d5ea09b23addf3e75def2d08d101cfa1ea96",
   "owner": "asb_ar1282_core_runtime_transport",
   "plan": "../plans/AR-1282.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Land the authenticated runtime-to-CLI replay transport foundation.",
-  "task_revision": 61,
+  "task_revision": 62,
   "title": "Authenticated replay transport foundation",
-  "updated_at": "2026-09-17T00:40:33+00:00",
+  "updated_at": "2026-09-17T00:40:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1282-authenticated-replay-transport"
 }
 ---
