@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T22:07:31+00:00",
   "depends_on": [
     "AR-1287",
     "AR-1300"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "observed_dirty": 0,
   "observed_head": "dd5bfb8dfea08331bb5ee62ddbdee07ad6fb8e7c",
-  "owner": "",
+  "owner": "codex-ar1301-pr221-reconcile-20260917",
   "plan": "../plans/AR-1301.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 295,
+  "task_revision": 296,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T21:22:26+00:00",
+  "updated_at": "2026-09-17T21:22:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -832,3 +832,5 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
 - 2026-09-17T21:22:26+00:00: PR #221 is the explicit AR-1301 follow-up on merged PR #219; resume
   only to reconcile exact head and perform independent review. Do not merge without approval and
   retained KVM evidence.
+
+- 2026-09-17T21:22:31+00:00: Claimed by codex-ar1301-pr221-reconcile-20260917.
