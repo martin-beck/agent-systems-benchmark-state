@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T05:39:04+00:00",
   "depends_on": [],
   "id": "AR-1290",
-  "next_action": "Monitor PR #212 exact head 1cff949293446d085787414c4405ac628670d868 until all required checks terminal-success; request independent exact-head review and merge only through protected signed workflow. PR #151 is closed as superseded.",
+  "next_action": "Monitor updated PR #212 exact head 418960215134b89710e5549351c5bf30ad17d3b7 until all required checks terminal-success; independent exact-head re-review is required after fuzz policy fix. Do not merge until every check passes.",
   "observed_branch": "repair/ar-1290-dependabot-dco",
   "observed_dirty": 0,
   "observed_head": "418960215134b89710e5549351c5bf30ad17d3b7",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover protected-main DCO assurance for the immutable Dependabot serde commit without weakening broad policy.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Dependabot DCO boundary recovery",
-  "updated_at": "2026-09-17T03:46:12+00:00",
+  "updated_at": "2026-09-17T03:46:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1290-dependabot-dco"
 }
 ---
@@ -110,3 +110,11 @@ change certificate/runtime behavior, touch asb-tui, or weaken broad policy.
 
 - 2026-09-17T03:46:12+00:00: Recorded command exit 0; command argv SHA-256
   6a7b8a9561df316593aef3f953d5bec19bc7e1349eab88c6aeb5ca389ed62ecb.
+
+- 2026-09-17T03:46:39+00:00: PR #212 initial head 1cff949 failed Bounded fuzz because cargo-deny
+  detected duplicate syn 3.0.6 while fuzz/deny.toml skipped syn@3.0.5; Loom/formal also failed
+  locked lockfile checks on the same head. Diagnosis is deterministic lock/policy alignment, not a
+  runtime defect. Added minimal signed+DCO 4189602 changing only fuzz/deny.toml syn skip to 3.0.6,
+  pushed cumulative exact head 4189602. Original PR151 remains closed; no historical exception or
+  force update used. Local cargo deny binary is unavailable (command not installed), so hosted
+  policy must validate the pin.
