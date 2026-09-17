@@ -8,16 +8,16 @@
   "next_action": "Restore unrelated task files to pre-AR-1297 bytes, retain only evidence-backed schema-failure repairs, regenerate views, and rerun all gates.",
   "observed_branch": "repair/ar-1298-narrow-metadata-repair",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "9adb1a2d57435549dec57e49b6f0d24c9ed9ad6b",
   "owner": "asb-ar1298-scope-cleanup",
   "plan": "../plans/AR-1298.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Narrow AR-1297 metadata changes to the exact evidence-backed schema repairs.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Narrow task metadata repair scope",
-  "updated_at": "2026-09-17T05:36:42+00:00",
+  "updated_at": "2026-09-17T05:37:05+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1298-metadata-cleanup"
 }
 ---
@@ -42,3 +42,6 @@ or touch product, asb-tui, handoffctl, or formal implementation.
 
 - 2026-09-17T05:36:42+00:00: Recorded command exit 0; command argv SHA-256
   34245c7206030d623f05de34f1c76f5df72cfdeb4b474007c35c354ef3f109f9.
+
+- 2026-09-17T05:37:05+00:00: Recorded command exit 0; command argv SHA-256
+  d2cdb60471c075e3acd8081631efe002ca9588c5c19e65d6b238477910a36f5e.
