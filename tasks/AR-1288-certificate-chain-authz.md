@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T03:03:22+00:00",
+  "updated_at": "2026-09-17T03:03:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
@@ -237,3 +237,6 @@ must not reuse unmerged strict-replay or asb-tui branches.
   --locked -p asb-control --lib -- -D warnings, full workspace tests and workspace Clippy had passed
   before this schema-only checkpoint. Product commit 35c49a90e0f6d034becdce88551622407fe0ed6f is
   SSH-signed with matching DCO and worktree clean.
+
+- 2026-09-17T03:03:30+00:00: Recorded command exit 0; command argv SHA-256
+  84b337450e1940a3484de7020a0103bfe0d26b27f5478cf84ea4798eeff1c8fe.
