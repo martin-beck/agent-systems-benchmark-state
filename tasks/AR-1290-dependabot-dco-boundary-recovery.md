@@ -2,22 +2,22 @@
 {
   "branch": "repair/ar-1290-dependabot-dco",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T06:02:52+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1290",
   "next_action": "Monitor exact-main post-merge workflows for c1b1860786e844adb69b8f74e39af290592a89c8 to terminal SUCCESS; verify protected main signature/DCO/tree and release AR-1290 done.",
   "observed_branch": "repair/ar-1290-dependabot-dco",
   "observed_dirty": 0,
   "observed_head": "418960215134b89710e5549351c5bf30ad17d3b7",
-  "owner": "asb_ar1024_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1290.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Recover protected-main DCO assurance for the immutable Dependabot serde commit without weakening broad policy.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Dependabot DCO boundary recovery",
-  "updated_at": "2026-09-17T04:05:50+00:00",
+  "updated_at": "2026-09-17T04:06:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1290-dependabot-dco"
 }
 ---
@@ -267,3 +267,15 @@ change certificate/runtime behavior, touch asb-tui, or weaken broad policy.
 
 - 2026-09-17T04:05:50+00:00: Recorded command exit 0; command argv SHA-256
   463da1aa6cbaff8e6e69beaaa83a8e7a01d7b2ae001b82d58850ba65c7287a2c.
+
+- 2026-09-17T04:06:11+00:00: Completed forward-only Dependabot DCO recovery. Closed unmerged PR151
+  head 07d4b62 (non-matching bot trailer) without exception or history rewrite; recreated exact
+  serde 1.0.229 dependency diff plus required formal/fuzz lock refreshes and deny pin in signed+DCO
+  commits 04ce4ac, 1cff949, 4189602. PR212 all 12 exact-head checks passed; protected signed merge
+  c1b1860786e844adb69b8f74e39af290592a89c8 has parents 2de393a05cc3c65f3495238abb19408e8218e483 and
+  418960215134b89710e5549351c5bf30ad17d3b7, tree 9e8d8744cf6229b9f4d39705be0dc59cb15b9574, Good SSH
+  signature and matching Martin DCO. Exact-main post-merge workflows all succeeded: Rust
+  35180122301, Repository quality 35180122102, AArch64 35180122135, Formal 35180122087, Fault
+  35180122065, Hosted portability 35180122083, Headers 35180122061; dependency advisory runs
+  35180183659 and 35180183984 also succeeded. AR-1288 linkage remains narrative only; no
+  certificate/runtime/TUI changes.
