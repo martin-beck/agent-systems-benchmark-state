@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T05:39:04+00:00",
   "depends_on": [],
   "id": "AR-1290",
-  "next_action": "Publish clean signed replacement PR from exact 1cff949; monitor required checks. Original PR #151 remains open and unsigned head 07d4b62 must not merge. Close #151 only after replacement is safely open or once replacement merges.",
+  "next_action": "Monitor PR #212 exact head 1cff949293446d085787414c4405ac628670d868 until all required checks terminal-success; request independent exact-head review and merge only through protected signed workflow. PR #151 is closed as superseded.",
   "observed_branch": "repair/ar-1290-dependabot-dco",
   "observed_dirty": 0,
   "observed_head": "1cff949293446d085787414c4405ac628670d868",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover protected-main DCO assurance for the immutable Dependabot serde commit without weakening broad policy.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Dependabot DCO boundary recovery",
-  "updated_at": "2026-09-17T03:44:02+00:00",
+  "updated_at": "2026-09-17T03:44:34+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1290-dependabot-dco"
 }
 ---
@@ -84,3 +84,11 @@ change certificate/runtime behavior, touch asb-tui, or weaken broad policy.
 
 - 2026-09-17T03:44:02+00:00: Recorded command exit 0; command argv SHA-256
   f6442e7ff280996c5efc7f32ab7709271647509badae702401a03593fe5d1b57.
+
+- 2026-09-17T03:44:34+00:00: Published replacement PR #212
+  https://github.com/martin-beck/agent-systems-benchmark/pull/212 from clean signed+DCO commits
+  04ce4ac and 1cff949. Scope is 12 original serde manifest/lock paths plus generated
+  formal/Cargo.lock and fuzz/Cargo.lock refreshes required by locked CI. Both commits verify Good
+  SSH signatures and matching Martin DCO; exact diff check passes. Closed original unmerged PR #151
+  after replacement became safely open; no history rewrite and no immutable exception. Local fmt and
+  cargo test --locked --workspace passed with provider/replay/sandbox/formal/fault suites green.

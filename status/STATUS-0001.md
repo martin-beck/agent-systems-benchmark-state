@@ -1607,7 +1607,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1290](../tasks/AR-1290-dependabot-dco-boundary-recovery.md): Dependabot DCO boundary recovery | asb_ar1024_lifecycle_router | Recover protected-main DCO assurance for the immutable Dependabot serde commit without weakening broad policy. | Publish clean signed replacement PR from exact 1cff949; monitor required checks. Original PR #151 remains open and unsigned head 07d4b62 must not merge. Close #151 only after replacement is safely open or once replacement merges. |
+| P0 | [AR-1290](../tasks/AR-1290-dependabot-dco-boundary-recovery.md): Dependabot DCO boundary recovery | asb_ar1024_lifecycle_router | Recover protected-main DCO assurance for the immutable Dependabot serde commit without weakening broad policy. | Monitor PR #212 exact head 1cff949293446d085787414c4405ac628670d868 until all required checks terminal-success; request independent exact-head review and merge only through protected signed workflow. PR #151 is closed as superseded. |
 
 ### Open (4)
 
