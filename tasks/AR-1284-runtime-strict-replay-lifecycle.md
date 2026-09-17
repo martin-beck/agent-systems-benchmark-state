@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect authenticated replay transport to the runtime-owned primary strict-replay lifecycle.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Runtime-owned strict-replay lifecycle execution",
-  "updated_at": "2026-09-17T01:24:30+00:00",
+  "updated_at": "2026-09-17T01:24:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1284-strict-replay-lifecycle"
 }
 ---
@@ -69,3 +69,6 @@ record the exact blocker and split a further dependency-safe successor instead o
   agent-systems-benchmark-ar-1284-strict-replay-lifecycle created from protected origin/main
   f9ddf7ef6b3b2a96dd7faee04906f4e5cb3aa8e1, which includes merged AR-1282 PR #208. Worktree is
   isolated and clean; no asb-tui paths touched.
+
+- 2026-09-17T01:24:36+00:00: Recorded command exit 0; command argv SHA-256
+  5e5d4bd1c068a67556bc6853653a8b06f2a1e0bcc663f81fe9ec267d4ade80ec.
