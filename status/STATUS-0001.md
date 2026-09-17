@@ -1649,7 +1649,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | codex-ar1293-timeout-repair-20260917 | Repair the state-repository TLA admission runner and truthful worktree metadata. | Provision a fresh larger data image with the exact signed candidate 903a87844, fsck-clean and sufficient formal scratch, then rerun full-exhaustive with unchanged 7200-second and containment limits. |
+| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | codex-ar1293-timeout-repair-20260917 | Repair the state-repository TLA admission runner and truthful worktree metadata. | Monitor the active full-exhaustive QEMU until terminal completion; validate full attestation and receipt against candidate 903a87844, then record final evidence. |
 
 ### Blocked (50)
 
