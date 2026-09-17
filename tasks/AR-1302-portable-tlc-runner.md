@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T09:48:22+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Promote and provision a digest-pinned x86_64 container/VM runner with portable cgroup containment, bounded thread/memory/swap capacity, and owner-private evidence paths for AR-1293.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "codex-ar1302-recovery-20260917",
+  "owner": "",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T07:55:18+00:00",
+  "updated_at": "2026-09-17T07:55:51+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -254,3 +254,16 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T07:55:18+00:00: Recorded command exit 0; command argv SHA-256
   4bc1dc24ab2df6877e93255b3bd9552f6f1dd55c34b661b47ccbc8727d3caeb5.
+
+- 2026-09-17T07:55:51+00:00: Preserved signed/DCO commit 01a3433bb adds the digest-pinned amd64
+  Docker portable TLC runner, HandoffctlPR one-process fixture, argv-only sudo wrapper, private
+  evidence enforcement, 3 GiB bounded tmpfs, and focused negative/positive tests. Source headers,
+  schema/render checks, 7 focused tests, Ruff, and mypy pass. Actual sudo -n docker portable-smoke
+  and pr-publication pass using image
+  eclipse-temurin@sha256:c0d1549d1e0f5fa5b83622ec0033b00456107e0b1d0cfcce4c1d831532ce621e and TLC
+  SHA-256 936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88. Initial full tier
+  reached 1,683,316 states then exhausted the old 256 MiB tmpfs; runner changed to bounded 3 GiB
+  tmpfs but exact post-fix full qualification is pending. Current doctor is blocked by unrelated
+  expired AR-1299 claim. Next action: repair AR-1299 lease/state, rerun full-exhaustive once on
+  clean exact head, record evidence, then resume AR-1302 for independent review/publication and
+  update AR-1293.
