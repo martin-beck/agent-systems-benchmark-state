@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 363,
+  "task_revision": 364,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:52:22+00:00",
+  "updated_at": "2026-09-17T13:14:05+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1215,3 +1215,7 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   evidence are complete; the VM path fails native JVM allocation with RLIMIT_AS=3G. Raising that
   limit ad hoc would violate attested containment. AR-1302 is released ownerless blocked pending a
   reviewed separate virtual-address-space bound with tests/evidence.
+
+- 2026-09-17T13:14:05+00:00: AR-1293 contract repair is reviewed at f1931686c: portable launcher now
+  separates bounded 8G address space from 3G physical/swap. Requalify fresh UUID-wired VM exact
+  preflight and portable-smoke; no required/full until attestation succeeds.
