@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1286-supervised-replay-lifecycle",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T08:16:45+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1282",
     "AR-1285",
@@ -15,15 +15,15 @@
   "observed_branch": "feature/ar-1286-supervised-replay-lifecycle",
   "observed_dirty": 0,
   "observed_head": "eaf7fcbf42aee720a208d9d356a163d42ce30fab",
-  "owner": "codex-ar1286-repair",
+  "owner": "",
   "plan": "../plans/AR-1286.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 93,
+  "task_revision": 94,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-17T06:28:41+00:00",
+  "updated_at": "2026-09-17T06:29:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
@@ -302,3 +302,10 @@ do not touch or claim asb-tui behavior.
 
 - 2026-09-17T06:28:41+00:00: Recorded command exit 0; command argv SHA-256
   86ecbcab0b06188cc8c4541b14a4c92afbb786af2049c1ac790fe76aef1ffd2d.
+
+- 2026-09-17T06:29:59+00:00: Bubblewrap blocker diagnosed and fixed: qualified fixture TasksMax=1
+  and 1 MiB caused EAGAIN; TasksMax=16 and 64 MiB plus supervisor argument propagation now pass the
+  ignored delegated child test locally. Signed/DCO integrated successor is PR #215 at exact head
+  03b1ddc. Required hosted checks remain pending. AR-1286 still cannot complete until the real
+  cassette request/response and lifecycle fault matrix (egress, cancellation, timeout, crash,
+  restart, cleanup, no-fallback) is implemented and qualified.
