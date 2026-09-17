@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 308,
+  "task_revision": 309,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:11:39+00:00",
+  "updated_at": "2026-09-17T12:11:42+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1002,3 +1002,6 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   race/activation design is the concrete likely failure. Offline mount inspection was unavailable
   because the boot-tested qcow2 remained dirty, so no additional image mutation was made. Stale
   ownerless AR-1293 QEMU cleanup was performed by coordinator.
+
+- 2026-09-17T12:11:42+00:00: Recorded command exit 0; command argv SHA-256
+  d37a24e5d17105ef564a0d77bc26084c9317d844667cab5290c38a64f6065b6a.
