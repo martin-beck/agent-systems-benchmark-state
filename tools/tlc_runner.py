@@ -30,7 +30,10 @@ _WORKER_ROOT = (
     Path("/srv/data/projects") / ".asb-tlc" / (f"worker-{getattr(os, 'getuid', lambda: 0)()}")
 )
 DEFAULT_QUEUE = str(_WORKER_ROOT / "queue")
-DEFAULT_ADMISSION_LOCK = str(_WORKER_ROOT / "admission.lock")
+# This exact path is the coordinator's canonical host-wide admission fence.
+# Do not replace it with a worker-private lock: that would permit concurrent
+# formal jobs to bypass memory admission.  Queues remain worker-private.
+DEFAULT_ADMISSION_LOCK = "/tmp/agent-workflow-coordinator-tlc-admission.lock"
 COMMAND_GRACE_SECONDS = 10
 GIT_PROVENANCE_TIMEOUT_SECONDS = 5
 
@@ -41,6 +44,8 @@ class AdmissionError(RuntimeError):
 
 def _private_directory(path: Path) -> None:
     """Create one owner-private directory and reject unsafe existing paths."""
+    if path.is_symlink():
+        raise AdmissionError(f"private path must not be a symbolic link: {path}")
     path.mkdir(mode=0o700, parents=True, exist_ok=True)
     path.chmod(0o700)
     if path.stat().st_uid != os.getuid() or path.stat().st_mode & 0o077:
@@ -330,7 +335,8 @@ def run(args: argparse.Namespace) -> int:
     job = queue / f"{os.getpid()}-{uuid.uuid4().hex}.job.json"
     outcome = job.with_name(job.name.replace(".job.json", ".outcome.json"))
     lock_path = Path(args.admission_lock).resolve()
-    _private_directory(lock_path.parent)
+    if str(lock_path) != DEFAULT_ADMISSION_LOCK:
+        _private_directory(lock_path.parent)
     model = _input_path(args.model, "model")
     config = _input_path(args.config, "config")
     jar = _input_path(args.jar, "TLC JAR")

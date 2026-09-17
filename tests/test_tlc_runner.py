@@ -136,9 +136,16 @@ class TlcRunnerTests(unittest.TestCase):
 
     def test_default_admission_paths_are_on_second_disk(self) -> None:
         self.assertTrue(Path(RUNNER.DEFAULT_QUEUE).is_relative_to(Path("/srv/data/projects")))
-        self.assertTrue(
-            Path(RUNNER.DEFAULT_ADMISSION_LOCK).is_relative_to(Path("/srv/data/projects"))
+        self.assertEqual(
+            RUNNER.DEFAULT_ADMISSION_LOCK,
+            "/tmp/agent-workflow-coordinator-tlc-admission.lock",
         )
+
+    def test_canonical_lock_is_shared_by_default(self) -> None:
+        args = RUNNER.parser().parse_args(
+            ["--jar", "j", "--model", "m", "--config", "c", "--metadir", "d"]
+        )
+        self.assertEqual(args.admission_lock, RUNNER.DEFAULT_ADMISSION_LOCK)
 
     def test_bounded_process_kills_the_process_group_after_deadline(self) -> None:
         process = mock.Mock(pid=1234)
@@ -334,8 +341,8 @@ class TlcRunnerTests(unittest.TestCase):
         seed = GUEST.build_user_data("full-exhaustive")
         for contract in (
             "mount, UUID=" + GUEST.DATA_UUID,
-            "/usr/local/libexec/asb-offline/curl",
-            "cp /mnt/asb-data/tla2tools.jar",
+            "TLC_JAR_PATH=/mnt/asb-data/tla2tools.jar",
+            "TLC_JAR_SHA256=936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
             "user-runtime-dir@1000.service",
             "user@1000.service",
             "DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus",

@@ -11,10 +11,12 @@ replacement for the physical/swap limits, and lowering or removing either
 bound is invalid. A requested address-space limit at or below the JVM heap is
 rejected before admission.
 
-The runner's default queue, admission lock, temporary model state and
-attestation roots are owner-private directories below
-`/srv/data/projects/.asb-tlc`; callers cannot redirect the runtime root or
-attestation outside that approved project root. Every TLC process is started
+The runner's default queue, temporary model state and attestation roots are
+owner-private directories below `/srv/data/projects/.asb-tlc`. Admission uses
+the exact coordinator-wide `/tmp/agent-workflow-coordinator-tlc-admission.lock`
+fence; replacing it with a private lock is diagnostic-only and cannot qualify
+publication evidence. Callers cannot redirect the runtime root or attestation
+outside that approved project root. Every TLC process is started
 without a shell, with output sent to bounded sinks rather than retained in
 evidence, and has a finite deadline plus process-group teardown. Each durable
 outcome binds the reviewed source commit/tree, runner and input digests,
