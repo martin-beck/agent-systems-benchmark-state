@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T12:29:45+00:00",
+  "claim_expires": "2026-09-17T12:32:27+00:00",
   "depends_on": [
     "AR-1287",
     "AR-1300"
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 165,
+  "task_revision": 166,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:32:20+00:00",
+  "updated_at": "2026-09-17T11:32:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -462,3 +462,5 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
   Focused supervised negative test now passes in 1.72s after matching this expected terminal
   failure. This was test-harness handling, not a product runtime failure; full workspace must be
   rerun.
+
+- 2026-09-17T11:32:27+00:00: Heartbeat by ar1301_negative_matrix.
