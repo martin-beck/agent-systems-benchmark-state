@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T14:56:52+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Run owner-authorized portable requalification using /srv/data/projects/asb-state-tlc-vm-32g receipt: verify exact f1931686c data image and attestation hashes, then build a fresh image for 39c8933f5 before required/full gates.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "codex-ar1293-requalify-fresh",
+  "owner": "",
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 152,
+  "task_revision": 153,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T14:13:32+00:00",
+  "updated_at": "2026-09-17T14:13:59+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -543,3 +543,12 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T14:13:32+00:00: Recorded command exit 1; command argv SHA-256
   93fa831e262a4bbc89ef1374fd632e82a946fd2f31121ca0ea6d9743678b1d85.
+
+- 2026-09-17T14:13:59+00:00: Blocked fail-closed: receipt verification found current
+  /srv/data/projects/asb-state-tlc-vm-32g/ar1302-integrated-data.raw SHA256
+  5b2bb2599d04d33a4cd3cfa84e6dbd8c832cf063adcf38ecb73b0116397bbd41, not the authorized
+  488655f4c9caf3aa7e56aab29bd19d09760f4cba15428f7215b519cf570a70c. The prior 0993b7c3... portable
+  attestation is tied to exact f1931686c and the old image, not candidate 39c8933f5. No
+  required/pr/full gate was run. Next action: provision a fresh immutable data image containing
+  39c8933f5, verify its digest and exact 8G/3G attestation, then run portable-smoke before
+  required/full.
