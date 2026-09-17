@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T21:57:20+00:00",
+  "updated_at": "2026-09-17T21:57:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
@@ -162,3 +162,6 @@ publication, independent review, green exact-head CI, protected merge and post-m
 - 2026-09-17T21:57:20+00:00: Recorded exact repair-tool failures: apply_patch invocation via
   handoffctl had no stdin (exit 2); Python subprocess wrapper had syntax error from escaped newlines
   (exit 1). Working tree remains at signed 910af9a; no source mutation occurred.
+
+- 2026-09-17T21:57:35+00:00: Recorded command exit 0; command argv SHA-256
+  7ffaca487c8c23bde2f0805b3e20381b5d056946fefa174c76d596424982dc27.
