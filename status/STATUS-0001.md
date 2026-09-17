@@ -11,9 +11,9 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 0 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 47 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 48 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 212 |
@@ -386,7 +386,7 @@ flowchart LR
         AR_1290["AR-1290 - Done"]:::status_done
         AR_1291["AR-1291 - Done"]:::status_done
         AR_1292["AR-1292 - Blocked"]:::status_blocked
-        AR_1293["AR-1293 - In progress"]:::status_in_progress
+        AR_1293["AR-1293 - Blocked"]:::status_blocked
         AR_1294["AR-1294 - Blocked"]:::status_blocked
         AR_1295["AR-1295 - Blocked"]:::status_blocked
         AR_1296["AR-1296 - Done"]:::status_done
@@ -1635,15 +1635,14 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | ar1293_gate_recovery | Repair the state-repository TLA admission runner and truthful worktree metadata. | Release ownerless blocked pending a clean approved 32G VM with available swap and fixed guest JVM; AR-1302 may use the clean runner. Preserve candidate f16d2cb41721bf8f17aa5aa75ab01520aeb91eb8 and all focused/full local evidence; do not claim pr-publication or full-exhaustive formal success. |
 | P0 | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | coordinator-ar1301-lifecycle-20260917 | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | Candidate a57d111 has full locked workspace/runtime gates and five consecutive native authenticated-cassette runs. Independent review must still add supervised stale/malformed/duplicate/mismatch no-fallback cases and genuine crash-restart evidence before PR publication. |
 | P0 | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | codex-ar1302-runner-20260917-vm | Provision a clean portable TLC CI/VM runner for state formal admission. | Wait for AR-1293 worker to release the 32 GiB VM; then offline-stage the pinned TLC JAR into a distinct runner data disk, boot without network or host mounts, and run signed candidate f16d2cb41 full-exhaustive with exact attestation. |
 
-### Blocked (47)
+### Blocked (48)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1678,6 +1677,7 @@ flowchart LR
 | P0 | [AR-1284](../tasks/AR-1284-runtime-strict-replay-lifecycle.md): Runtime-owned strict-replay lifecycle execution | Unclaimed | Connect authenticated replay transport to the runtime-owned primary strict-replay lifecycle. | Split a runtime-owned launch-factory/CLI entrypoint successor: current protected main has only caller-constructible ReplayTransportIssuer and SandboxBackend APIs, so AR-1284 cannot safely wire primary replay without fabricating authority. |
 | P0 | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md): Supervised strict-replay cassette lifecycle | Unclaimed | Execute strict-replay cassettes through the runtime-owned supervised lifecycle. | Await approved delegated namespace runner; then add cancellation, timeout, crash, restart and egress lifecycle fixtures. |
 | P0 | [AR-1292](../tasks/AR-1292-tla-provenance-repair.md): Pinned TLA+ artifact provenance repair | Unclaimed | Repair or formally retain the pinned TLA+ artifact provenance mismatch blocking formal assurance. | Await independently verifiable TLA+ provenance: a signed/attested immutable v1.8.0 asset bound to its source revision, or a deterministic source-build qualification for the current 142d0ba release. Do not update only hash/size or rerun PR #119 until that evidence exists. |
+| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Unclaimed | Repair the state-repository TLA admission runner and truthful worktree metadata. | Release ownerless blocked pending a clean approved 32G VM with available swap and fixed guest JVM; AR-1302 may use the clean runner. Preserve candidate f16d2cb41721bf8f17aa5aa75ab01520aeb91eb8 and all focused/full local evidence; do not claim pr-publication or full-exhaustive formal success. |
 | P0 | [AR-1294](../tasks/AR-1294-state-gate-baseline.md): State formal-gate baseline integrity | Unclaimed | Restore vendor and formal admission baseline integrity needed to qualify AR-1293. | Audit the vendor lock/digest mismatch and root-owned TLC admission lock; repair only through immutable provenance and owner-safe lock handling, then rerun full state/formal gates. |
 | P0 | [AR-1295](../tasks/AR-1295-vendor-fixture-v037.md): Coordinator vendor v0.3.7 fixture alignment | Unclaimed | Align stale coordinator vendor tests with the verified immutable v0.3.7 pin. | Update stale coordinator vendor test fixtures from v0.3.5 to verified immutable v0.3.7 and rerun the complete state test suite without changing vendor or handoffctl code. |
 | P1 | [AR-0604](../tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. |

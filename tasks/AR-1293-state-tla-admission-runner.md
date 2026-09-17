@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T10:54:31+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Release ownerless blocked pending a clean approved 32G VM with available swap and fixed guest JVM; AR-1302 may use the clean runner. Preserve candidate f16d2cb41721bf8f17aa5aa75ab01520aeb91eb8 and all focused/full local evidence; do not claim pr-publication or full-exhaustive formal success.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "ar1293_gate_recovery",
+  "owner": "",
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 98,
+  "task_revision": 99,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T10:37:51+00:00",
+  "updated_at": "2026-09-17T10:38:01+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -364,3 +364,12 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   JVM reached TLC but failed native malloc due host SwapFree=100 kB and concurrent VM load, with no
   attestation. No safe additional local formal action remains while the approved 32G runner is
   occupied; preserve evidence for AR-1302.
+
+- 2026-09-17T10:38:01+00:00: Released ownerless blocked for AR-1302 handoff. Candidate
+  f16d2cb41721bf8f17aa5aa75ab01520aeb91eb8 has complete focused and full local state evidence:
+  test_tlc_runner 10/10, full unittest 144/144 in 28.476s, vendor verify, Ruff, mypy. Portable-smoke
+  previously passed on the clean VM with valid attestation. PR-publication/full-exhaustive are not
+  passed: history-safe retry reached verify.sh but mounted JVM had java.security initialization
+  failure; fixed guest JVM then failed native memory malloc with host swap only 100 KiB free and
+  concurrent VM load, no attestation. This is infrastructure-only; AR-1302 should rerun formal tiers
+  on a clean 32G runner with available swap and fixed guest JVM. No product/asb-tui changes.
