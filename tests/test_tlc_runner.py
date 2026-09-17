@@ -138,7 +138,7 @@ class TlcRunnerTests(unittest.TestCase):
         self.assertTrue(Path(RUNNER.DEFAULT_QUEUE).is_relative_to(Path("/srv/data/projects")))
         self.assertEqual(
             RUNNER.DEFAULT_ADMISSION_LOCK,
-            "/tmp/agent-workflow-coordinator-tlc-admission.lock",
+            str(Path(os.sep) / "tmp" / "agent-workflow-coordinator-tlc-admission.lock"),
         )
 
     def test_canonical_lock_is_shared_by_default(self) -> None:

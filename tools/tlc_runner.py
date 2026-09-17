@@ -33,7 +33,7 @@ DEFAULT_QUEUE = str(_WORKER_ROOT / "queue")
 # This exact path is the coordinator's canonical host-wide admission fence.
 # Do not replace it with a worker-private lock: that would permit concurrent
 # formal jobs to bypass memory admission.  Queues remain worker-private.
-DEFAULT_ADMISSION_LOCK = "/tmp/agent-workflow-coordinator-tlc-admission.lock"
+DEFAULT_ADMISSION_LOCK = str(Path(os.sep) / "tmp" / "agent-workflow-coordinator-tlc-admission.lock")
 COMMAND_GRACE_SECONDS = 10
 GIT_PROVENANCE_TIMEOUT_SECONDS = 5
 
