@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 105,
+  "task_revision": 106,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T03:12:42+00:00",
+  "updated_at": "2026-09-17T03:12:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
@@ -321,3 +321,6 @@ must not reuse unmerged strict-replay or asb-tui branches.
   docs/CONTRACT_CATALOG.md. contract_consistency.py --run-tests passed all registered suites; exact
   signed/DCO tree clean and pushed. Prior failed baseline command used truncated OID 2fd90557; no
   product impact.
+
+- 2026-09-17T03:12:55+00:00: Recorded command exit 0; command argv SHA-256
+  bc2639e62cf73b8578695431ab4e66182e33ad3cdafce79b995f9d067a4c42da.
