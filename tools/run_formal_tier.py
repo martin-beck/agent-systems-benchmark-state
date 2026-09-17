@@ -10,6 +10,7 @@ import hashlib
 import importlib
 import importlib.util
 import os
+import re
 import signal
 import subprocess
 from collections.abc import Callable, Mapping
@@ -85,6 +86,15 @@ def _terminate(process: subprocess.Popen[bytes]) -> None:
             continue
 
 
+def _failure_detail(process: subprocess.Popen[bytes]) -> str:
+    """Read only a small, path-sanitized diagnostic from a failed tier."""
+    if process.stderr is None:
+        return "no diagnostic was emitted"
+    detail = process.stderr.read(4096).decode("utf-8", errors="replace").strip()
+    detail = re.sub(r"/(?:srv|tmp)/data/projects[^\s']*", "<approved-runtime-path>", detail)
+    return detail[-1000:] or "no diagnostic was emitted"
+
+
 def run(tier: str, *, environ: Mapping[str, str] | None = None) -> int:
     """Run the canonical verify script without shell or retained output."""
     if tier not in TIERS:
@@ -112,14 +122,18 @@ def run(tier: str, *, environ: Mapping[str, str] | None = None) -> int:
         command,
         stdin=subprocess.DEVNULL,
         stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL,
+        stderr=subprocess.PIPE,
         env=env,
         start_new_session=True,
     )
     try:
-        return process.wait(timeout=timeout)
+        result = process.wait(timeout=timeout)
+        if result != 0:
+            print(f"formal tier {tier} failed (exit {result}): {_failure_detail(process)}")
+        return result
     except subprocess.TimeoutExpired:
         _terminate(process)
+        print(f"formal tier {tier} failed: bounded timeout after {timeout}s")
         return 124
 
 

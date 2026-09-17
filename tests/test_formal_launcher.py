@@ -7,7 +7,7 @@ from __future__ import annotations
 
 import unittest
 from pathlib import Path
-from subprocess import DEVNULL
+from subprocess import DEVNULL, PIPE
 from unittest import mock
 
 from tools import run_formal_tier
@@ -44,7 +44,7 @@ class FormalLauncherTests(unittest.TestCase):
         self.assertEqual(command[-2:], ["--tier", "portable-smoke"])
         self.assertNotIn("shell", popen.call_args.kwargs)
         self.assertIs(popen.call_args.kwargs["stdout"], DEVNULL)
-        self.assertIs(popen.call_args.kwargs["stderr"], DEVNULL)
+        self.assertIs(popen.call_args.kwargs["stderr"], PIPE)
 
 
 if __name__ == "__main__":
