@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect runtime-issued cassette operations to the real strict-replay dispatch path.",
-  "task_revision": 81,
+  "task_revision": 82,
   "title": "Runtime-to-replay cassette dispatch seam",
-  "updated_at": "2026-09-17T07:37:46+00:00",
+  "updated_at": "2026-09-17T07:38:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1300-runtime-cassette-dispatch-seam"
 }
 ---
@@ -281,3 +281,6 @@ fixtures/tests. Do not modify asb-tui or coordinator implementation.
 
 - 2026-09-17T07:37:46+00:00: Recorded command exit 0; command argv SHA-256
   9f51a4f2c7fbf167ac1e03b024a9704622858850aa102f1e25bb78c9992eba9a.
+
+- 2026-09-17T07:38:01+00:00: Recorded command exit 0; command argv SHA-256
+  eef2bbfce3dc6fcc97911f75907a7543bb91c6c618b189c42029409d0e300c11.
