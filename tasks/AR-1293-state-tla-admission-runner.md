@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 331,
+  "task_revision": 332,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T18:20:51+00:00",
+  "updated_at": "2026-09-17T18:20:59+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1129,3 +1129,6 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   virtio-blk-pci device serial. No attestation was accepted. Product fix staged: explicit
   root/data/seed drive IDs and virtio-blk-pci devices, data UUID serial only on device, regression
   test forbids raw backend serial. Exact Ruff/format/mypy and 23/23 focused tests pass.
+
+- 2026-09-17T18:20:59+00:00: Recorded command exit 0; command argv SHA-256
+  5f794007cb863acb8dfa046d868ce5d5fcb788bce3592e30169942f0ab5058ed.
