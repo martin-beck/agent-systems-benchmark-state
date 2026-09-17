@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T20:28:00+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Independently review the green required receipt and commit, then run the documented full-exhaustive tier on a fresh image using the same seed/data provenance; accept only successful full attestation and receipt.",
+  "next_action": "Provision a fresh larger data image with the exact signed candidate 903a87844, fsck-clean and sufficient formal scratch, then rerun full-exhaustive with unchanged 7200-second and containment limits.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 505,
+  "task_revision": 506,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T19:45:20+00:00",
+  "updated_at": "2026-09-17T19:45:54+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1683,3 +1683,10 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T19:45:20+00:00: Recorded command exit 1; command argv SHA-256
   47bb7ef5819ed2f8b82379339d60ff223c3477925f05e08ffa608ee8366cf8d3.
+
+- 2026-09-17T19:45:54+00:00: The approved full-exhaustive run was terminated after a truthful guest
+  failure at approximately 39.2M generated states: TLC threw java.io.IOException while merging
+  Handoffctl state files, with No space left on device under /mnt/asb-data/tmp. This is disposable
+  data-image scratch exhaustion, not a model result. The failed QEMU was terminated through
+  handoffctl; no full attestation or receipt is accepted. Required-tier evidence remains green and
+  unchanged.

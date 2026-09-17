@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Independently review the green required receipt and commit, then run the documented full-exhaustive tier on a fresh image using the same seed/data provenance; accept only successful full attestation and receipt. | codex-ar1293-timeout-repair-20260917 |
+| P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Provision a fresh larger data image with the exact signed candidate 903a87844, fsck-clean and sufficient formal scratch, then rerun full-exhaustive with unchanged 7200-second and containment limits. | codex-ar1293-timeout-repair-20260917 |
 
 ## Blocked
 
