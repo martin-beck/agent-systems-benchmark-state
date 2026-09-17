@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-pane-foreground-group-recovery",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T04:39:02+00:00",
   "depends_on": [],
   "id": "AR-1044",
   "next_action": "Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge.",
-  "owner": "",
+  "owner": "codex-ar1044-recovery-20260917",
   "plan": "../plans/AR-1044.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Recover tmux foreground-group qualification",
-  "updated_at": "2026-09-11T02:19:19+00:00",
+  "updated_at": "2026-09-17T04:09:02+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-pane-foreground-group-recovery"
 }
 ---
@@ -296,3 +296,5 @@ absent or changes. Do not change renderer or application behavior.
 
 - 2026-09-11T02:19:19+00:00: Merged safety repair remains unaccepted because trusted-main run
   34553880557 failed on tmux window-option portability; recovery is AR-1048.
+
+- 2026-09-17T04:09:02+00:00: Claimed by codex-ar1044-recovery-20260917.
