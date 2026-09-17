@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 73,
+  "task_revision": 74,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T22:07:14+00:00",
+  "updated_at": "2026-09-17T22:07:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
@@ -251,3 +251,6 @@ publication, independent review, green exact-head CI, protected merge and post-m
 - 2026-09-17T22:07:14+00:00: Retry after coordinator lock cleared: cargo build --locked --workspace
   --release passed. All local applicable gates are now terminal green; candidate remains clean and
   exact pushed head 1ab79c1.
+
+- 2026-09-17T22:07:24+00:00: Recorded command exit 0; command argv SHA-256
+  2ecfdcc7e27414489284329df38d69ab14433a1d3d6b3c64d2c96238dc75e7bd.
