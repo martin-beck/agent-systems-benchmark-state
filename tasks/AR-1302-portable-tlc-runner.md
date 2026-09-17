@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T12:01:59+00:00",
+  "claim_expires": "2026-09-17T12:02:19+00:00",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Provision or attach a clean x86_64 CI/VM runner with an effective cgroup memory limit of at least 32 GiB, then rerun signed runner commit 5bd411e19 at full-exhaustive; portable-smoke and pr-publication pass on the 20 GiB profile.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 144,
+  "task_revision": 145,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T10:02:02+00:00",
+  "updated_at": "2026-09-17T10:02:19+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -464,3 +464,5 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T10:02:02+00:00: Recorded command exit 0; command argv SHA-256
   c1848c8a44a5478de9f7f37ccc0aa3ee0f72001cc1736ac7899a5cd94d976e63.
+
+- 2026-09-17T10:02:19+00:00: Heartbeat by codex-ar1302-runner-20260917-vm.
