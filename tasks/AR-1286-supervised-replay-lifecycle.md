@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1286-supervised-replay-lifecycle",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T04:28:21+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1282",
     "AR-1285",
@@ -15,15 +15,15 @@
   "observed_branch": "feature/ar-1286-supervised-replay-lifecycle",
   "observed_dirty": 0,
   "observed_head": "d8064117cdebd2d1fa84cd4e65469cc802e6d281",
-  "owner": "asb_ar1286_supervised_replay_lifecycle",
+  "owner": "",
   "plan": "../plans/AR-1286.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-17T02:30:44+00:00",
+  "updated_at": "2026-09-17T02:31:01+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
@@ -144,3 +144,11 @@ do not touch or claim asb-tui behavior.
   temporarily unavailable`. This is an environment capability blocker, not a product assertion; test
   is now explicitly ignored pending qualified delegated runner. Focused launch_factory tests pass
   6/6 with 1 capability probe ignored. Signed+DCO head d806411 clean.
+
+- 2026-09-17T02:31:01+00:00: Blocked by required delegated sandbox capability: controlled
+  runtime-issued child probe at signed head d806411 reaches bwrap but fails ScopeOwnership with
+  exact stderr `bwrap: Creating new namespace failed: Resource temporarily unavailable`. Existing
+  positive child test is explicitly ignored and does not qualify lifecycle. Transport/backend/CLI
+  wiring is signed and focused tests pass, but actual child execution, egress denial,
+  cancellation/timeout/crash/restart cleanup, and no-fallback fixtures require an approved
+  container/VM runner or a successor AR. No asb-tui changes; lease released ownerless.
