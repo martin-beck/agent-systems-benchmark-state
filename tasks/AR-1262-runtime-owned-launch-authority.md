@@ -17,11 +17,11 @@
   "plan": "../plans/AR-1262.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Issue runtime-owned authority for supervised strict-replay execution.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-17T04:29:09+00:00",
+  "updated_at": "2026-09-17T04:29:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1262-runtime-authority"
 }
 ---
@@ -247,3 +247,6 @@ ownership and bounded lifecycle evidence.
   request/response, provider/descendant egress denial, cancellation/restart/cleanup, timeout/crash
   or no-fallback lifecycle evidence exists. Requires a reviewed runtime-to-CLI entrypoint/successor
   that supplies authenticated launch authority before rework; preserve unrelated dirty product tree.
+
+- 2026-09-17T04:29:44+00:00: Reopen solely to replace stale next_action with the verified PR audit
+  blocker; no product change.
