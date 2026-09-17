@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T05:39:04+00:00",
   "depends_on": [],
   "id": "AR-1290",
-  "next_action": "Audit whether 07d4b62 is an ancestor of protected main. Prefer closing/superseding the unmerged Dependabot PR and recreating its exact dependency diff in a signed+DCO topic; use a narrowly hash-bound immutable-history attestation only if ancestry proves unavoidable.",
+  "next_action": "Publish clean signed replacement PR from exact 1cff949; monitor required checks. Original PR #151 remains open and unsigned head 07d4b62 must not merge. Close #151 only after replacement is safely open or once replacement merges.",
   "observed_branch": "repair/ar-1290-dependabot-dco",
   "observed_dirty": 0,
   "observed_head": "1cff949293446d085787414c4405ac628670d868",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover protected-main DCO assurance for the immutable Dependabot serde commit without weakening broad policy.",
-  "task_revision": 17,
+  "task_revision": 18,
   "title": "Dependabot DCO boundary recovery",
-  "updated_at": "2026-09-17T03:43:03+00:00",
+  "updated_at": "2026-09-17T03:43:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1290-dependabot-dco"
 }
 ---
@@ -68,3 +68,13 @@ change certificate/runtime behavior, touch asb-tui, or weaken broad policy.
 
 - 2026-09-17T03:42:56+00:00: Recorded command exit 0; command argv SHA-256
   eba0a6a3c3958248bd22f0486f47480bb384b299a7deedee99d61164183d8a11.
+
+- 2026-09-17T03:43:18+00:00: Audited PR #151 exact head 07d4b62: open Dependabot branch, parent
+  protected main 2de393a, not an ancestor of main; trailer support@github.com does not match
+  canonical author 49699333+dependabot[bot]@users.noreply.github.com, so no immutable-history
+  exception is warranted. Recreated identical 12-path serde 1.0.229 diff in signed+DCO 04ce4ac, then
+  fixed hosted locked-gate drift exposed by PR151: formal/Cargo.lock and fuzz/Cargo.lock required
+  refreshes. Signed+DCO 1cff949 adds only those two generated lockfiles. Local cargo fmt --check and
+  cargo test --locked --workspace pass (all observed suites green;
+  provider/replay/sandbox/fault/formal tests pass). Independent review approved exact 04ce4ac before
+  lockfile refresh; re-review required for exact 1cff949 before publication.
