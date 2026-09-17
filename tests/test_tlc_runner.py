@@ -260,6 +260,30 @@ class TlcRunnerTests(unittest.TestCase):
         self.assertIn("TLC_TIMEOUT_SECONDS=7200", full)
         self.assertIn("RuntimeMaxSec=7200", full)
 
+    def test_guest_seed_contains_complete_bounded_bootstrap(self) -> None:
+        seed = GUEST.build_user_data("full-exhaustive")
+        for contract in (
+            "mount, UUID=fecbb9dc-d835-4bd5-b8bc-a053d677bf21",
+            "/usr/local/libexec/asb-offline/curl",
+            "cp /mnt/asb-data/tla2tools.jar",
+            "user-runtime-dir@1000.service",
+            "user@1000.service",
+            "DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus",
+            "test, -S, /run/user/1000/bus",
+            "GIT_DIR=/mnt/asb-data/git",
+            "TMPDIR=/mnt/asb-data/tmp",
+            "TLC_ATTESTATION_PATH=/mnt/asb-data/evidence/full-exhaustive-attestation.json",
+            "/run/asb-validate.py",
+            "systemctl, poweroff",
+        ):
+            self.assertIn(contract, seed)
+        self.assertNotIn("network:", seed)
+        self.assertNotIn("\\n  - [", seed)
+
+    def test_guest_seed_rejects_unknown_tier(self) -> None:
+        with self.assertRaisesRegex(ValueError, "unknown formal tier"):
+            GUEST.build_user_data("unknown")
+
 
 if __name__ == "__main__":
     unittest.main()
