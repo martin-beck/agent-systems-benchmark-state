@@ -9,17 +9,17 @@
   "id": "AR-1288",
   "next_action": "Formal lockfile is regenerated locally for the x509-parser dependency and formal locked tests compile; one formal artifact-acquisition test failed with environment-level Os code 26 ExecutableFileBusy at tests/tla_artifact_acquisition.rs:488. Commit the lockfile as signed/DCO, then run bounded reruns to classify that unrelated flake before pushing and restarting hosted exact-head checks.",
   "observed_branch": "feature/ar-1288-certificate-chain-authz",
-  "observed_dirty": 1,
-  "observed_head": "ddcd51b8a4add9d24e1738c771ead956348e4071",
+  "observed_dirty": 0,
+  "observed_head": "7b3ff1d3a87436c2a7299d452bb4220dd7847a4c",
   "owner": "asb_ar0909_lifecycle_repair",
   "plan": "../plans/AR-1288.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 118,
+  "task_revision": 119,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T03:16:42+00:00",
+  "updated_at": "2026-09-17T03:16:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
