@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**323 ARs tracked** across 5 active status categories.
+**324 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 50 |
-| **Planned** | Defined work awaiting promotion or dependencies | 58 |
+| **Planned** | Defined work awaiting promotion or dependencies | 59 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 205 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -389,6 +389,7 @@ flowchart LR
         AR_1293["AR-1293 - Blocked"]:::status_blocked
         AR_1294["AR-1294 - Blocked"]:::status_blocked
         AR_1295["AR-1295 - Blocked"]:::status_blocked
+        AR_1296["AR-1296 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1610,6 +1611,7 @@ flowchart LR
 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md) | None | None |
 | [AR-1294](../tasks/AR-1294-state-gate-baseline.md) | None | None |
 | [AR-1295](../tasks/AR-1295-vendor-fixture-v037.md) | None | None |
+| [AR-1296](../tasks/AR-1296-state-quality-baseline.md) | None | None |
 
 ## Complete AR inventory
 
@@ -1668,7 +1670,7 @@ flowchart LR
 | P1 | [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md): Execute bundled MockAgents transport in isolation | Unclaimed | Execute bundled MockAgents transport in isolation. | Implement bundled in-container MockAgents transport and digest-pinned arm64 QEMU evidence. |
 | P1 | [AR-1258](../tasks/AR-1258-docker-binfmt-qemu.md): Provision Docker binfmt/QEMU capability | Unclaimed | Provision and verify Docker binfmt/QEMU for multiarch qualification. | Inspect Docker/binfmt/QEMU capability and approved privilege workflow; add bounded verification and rollback-safe checks. |
 
-### Planned (58)
+### Planned (59)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
