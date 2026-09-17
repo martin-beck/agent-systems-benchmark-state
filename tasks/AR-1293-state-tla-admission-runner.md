@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T07:28:02+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Provide a clean CI/VM runner with portable timeout/prlimit capacity and adequate swap, then rerun portable-smoke; otherwise resume AR-1293 only when that infrastructure is available. Candidate f16d2cb41 remains the reviewed code checkpoint.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "codex-ar1293-recovery-20260917",
+  "owner": "",
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 58,
+  "task_revision": 59,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T06:59:25+00:00",
+  "updated_at": "2026-09-17T06:59:36+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -221,3 +221,8 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   (only 76 KiB free) while other workloads consume resources. No safe container/VM runner is
   available to this worker without changing unrelated host workloads or weakening portable
   attestation. Candidate remains unpublished.
+
+- 2026-09-17T06:59:36+00:00: Released ownerless after infrastructure probe: no safe local portable
+  runner; Docker unavailable, bwrap unusable, host user portable mode hits EAGAIN under nproc=64,
+  dedicated CI user hits native allocation failure with swap exhausted. Preserve candidate f16d2cb41
+  and resume only on a clean CI/VM runner with portable containment capacity.
