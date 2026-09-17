@@ -7,7 +7,7 @@
     "AR-1200"
   ],
   "id": "AR-1226",
-  "next_action": "Historical reproduction confirms policy rejects ef82484 before merge-tree comparison because its RSA/GPG signature is not in the allowed SSH trust set. Current clean branch is fd7daa4; create a signed-DCO current-main topic repair, then rerun policy and exact-head gates.",
+  "next_action": "Monitor PR #218 exact head f66194bbf01cb2aa861a45d8c10b0ee08df1d73c until all required checks and independent review are green; merge only through authorized signed integration, then verify exact-main post-merge workflows and reconcile AR-1299/AR-1287 evidence.",
   "observed_branch": "repair/ar1226-current-base",
   "observed_dirty": 0,
   "observed_head": "f66194bbf01cb2aa861a45d8c10b0ee08df1d73c",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remediate the protected-main merge-tree mismatch from stale-base PR merging.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Protected merge-tree remediation",
-  "updated_at": "2026-09-17T08:46:50+00:00",
+  "updated_at": "2026-09-17T08:47:58+00:00",
   "worktree_key": "agent-systems-benchmark-protected-merge-tree-remediation"
 }
 ---
@@ -124,3 +124,11 @@ current-main requalification; it must not mark the merge usable until policy ass
   71c9a230ea2ee8b24d6cf5f92bd9a65040d64a4db5cb7cba690930afd6055235.
 
 - 2026-09-17T08:46:50+00:00: Heartbeat by codex-ar1226-merge-remediation-20260917.
+
+- 2026-09-17T08:47:58+00:00: Forward-only repair implemented on current origin/main 8737bbed: PR
+  admission now fails closed when topic does not contain current protected base. Added
+  tools/quality/check_current_topic_base.py, positive/negative tests, repository_policy pull_request
+  enforcement, Rust verification invocation, and QUALITY_GATES documentation. Signed+DCO commit
+  f66194bbf01cb2aa861a45d8c10b0ee08df1d73; local focused 18 tests, repository policy, Ruff,
+  actionlint and zizmor pass. PR #218 exact-head checks are still running; historical merges
+  unchanged.
