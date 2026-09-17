@@ -8,7 +8,7 @@
     "AR-1287"
   ],
   "id": "AR-1306",
-  "next_action": "PR #222 exact head af44d47 is signed/DCO with explicit reviewed bubblewrap allowlist and pushed clean. Await all refreshed exact-head CI; then inspect native 15/15 and repeated parity evidence for independent approval. Do not merge before all checks and review are green.",
+  "next_action": "Independent review approved at exact head af44d47: all 12 hosted checks terminal green, native sandbox_boundary exact-head run 15/15, response-parity focused reruns 2/2. Protected merge may proceed only after live head/clean tree recheck; then post-merge verification and AR close.",
   "observed_branch": "feature/ar-1306-authenticated-fault-matrix-qualification",
   "observed_dirty": 0,
   "observed_head": "af44d473a3bab40a268986f360693c93e441c418",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 198,
+  "task_revision": 199,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T23:19:07+00:00",
+  "updated_at": "2026-09-17T23:19:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
@@ -572,3 +572,11 @@ publication, independent review, green exact-head CI, protected merge and post-m
 
 - 2026-09-17T23:19:07+00:00: Recorded command exit 0; command argv SHA-256
   52c5e8e0b003f2e7b0d5d5b76f42396e0e3c3b41e931f557260eb65ee336cf69.
+
+- 2026-09-17T23:19:35+00:00: Independent exact-head review APPROVED. PR #222
+  af44d473a3bab40a268986f360693c93e441c418 is clean, all 12 required checks terminal SUCCESS
+  including emulated-aarch64, every introduced commit SSH-signed and matching DCO. Native exact-head
+  command through handoffctl passed 15/15 in 10.12s with ASB_REQUIRE_NATIVE_SANDBOX=1; focused
+  native_supervisor_forwards_cassette_http_and_reaps_children passed twice (0.47s, 0.49s),
+  confirming authenticated StrictReplayService response parity. Explicit reviewed bubblewrap
+  allowlist was verified in the repair. No blocker remains for protected merge.
