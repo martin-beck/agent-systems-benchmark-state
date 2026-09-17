@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Independently review and publish signed timeout-wiring commit; then regenerate the tracked full guest seed from seed_profile (TLC_TIMEOUT_SECONDS=7200) and rerun full only after exact-head review. | codex-ar1293-timeout-repair-20260917 |
+| P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Independent exact-head review of signed commits 5d0f8deb3 and bcf65ad29; regenerate/use guest seed from tracked seed_profile environment contract and rerun full-exhaustive only after review. | codex-ar1293-timeout-repair-20260917 |
 
 ## Blocked
 
