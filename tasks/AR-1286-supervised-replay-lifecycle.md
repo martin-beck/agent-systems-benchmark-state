@@ -11,7 +11,7 @@
     "AR-1239"
   ],
   "id": "AR-1286",
-  "next_action": "Signed checkpoint eef6894 binds an optional runtime-owned SandboxBackend into ReplayLaunchAuthority and transfers it through ReplayLaunchContext::spawn; focused locked runtime suite passes 50 unit, 3 binary, 8 process, 11 sandbox, 16 scheduler, and 2 doctests. Next add CLI replay consumption and real bounded child/lifecycle fixtures.",
+  "next_action": "Signed head 7830724 now makes CLI replay consume the runtime context and spawn the runtime-owned supervised child; missing backend remains fail-closed. Focused workflow provenance test passes after updating its exact source digest. Next add a runtime-backed positive child and cancellation/timeout/crash/cleanup fixtures.",
   "observed_branch": "feature/ar-1286-supervised-replay-lifecycle",
   "observed_dirty": 0,
   "observed_head": "78307246832bf0f316070a91fdaa7767f7e29e09",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 24,
+  "task_revision": 25,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-17T02:25:43+00:00",
+  "updated_at": "2026-09-17T02:26:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
@@ -89,3 +89,10 @@ do not touch or claim asb-tui behavior.
 
 - 2026-09-17T02:25:35+00:00: Recorded command exit 0; command argv SHA-256
   a6be2af828c99876502ac04b910cfcb245d6d2591532fa282a36ad820c017371.
+
+- 2026-09-17T02:26:00+00:00: Checkpoint 7830724: ReplayLaunchFactory::issue_with_backend retains the
+  runtime-owned SandboxBackend; ReplayLaunchContext::spawn transfers validated input+lease to
+  SandboxBackend::spawn_launch; CLI replay now waits for a supervised child and rejects
+  nonzero/failure. Focused workflow provenance test passes. Prior focused package command had one
+  expected provenance-drift failure because CLI source changed; refreshed only the checked-in exact
+  source digest and reran 1/1 success. Signed+DCO, clean tree, no asb-tui changes.

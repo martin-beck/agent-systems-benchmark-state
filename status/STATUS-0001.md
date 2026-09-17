@@ -1598,7 +1598,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md): Supervised strict-replay cassette lifecycle | asb_ar1286_supervised_replay_lifecycle | Execute strict-replay cassettes through the runtime-owned supervised lifecycle. | Signed checkpoint eef6894 binds an optional runtime-owned SandboxBackend into ReplayLaunchAuthority and transfers it through ReplayLaunchContext::spawn; focused locked runtime suite passes 50 unit, 3 binary, 8 process, 11 sandbox, 16 scheduler, and 2 doctests. Next add CLI replay consumption and real bounded child/lifecycle fixtures. |
+| P0 | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md): Supervised strict-replay cassette lifecycle | asb_ar1286_supervised_replay_lifecycle | Execute strict-replay cassettes through the runtime-owned supervised lifecycle. | Signed head 7830724 now makes CLI replay consume the runtime context and spawn the runtime-owned supervised child; missing backend remains fail-closed. Focused workflow provenance test passes after updating its exact source digest. Next add a runtime-backed positive child and cancellation/timeout/crash/cleanup fixtures. |
 
 ### Open (6)
 
