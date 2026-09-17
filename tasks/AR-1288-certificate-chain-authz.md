@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 86,
+  "task_revision": 87,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T03:06:17+00:00",
+  "updated_at": "2026-09-17T03:06:25+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
@@ -262,3 +262,6 @@ must not reuse unmerged strict-replay or asb-tui branches.
   -- -D warnings passed. Runtime now rejects not_before/not_after=0 to match generated schema
   minimum=1. Product commit 0e8d7e2b23bde802b7ce793654915e886d6432f is SSH-signed with matching DCO;
   worktree clean.
+
+- 2026-09-17T03:06:25+00:00: Recorded command exit 0; command argv SHA-256
+  84b337450e1940a3484de7020a0103bfe0d26b27f5478cf84ea4798eeff1c8fe.
