@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1303-hosted-platform-diagnostics",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T14:17:33+00:00",
   "depends_on": [
     "AR-0907",
     "AR-1252"
@@ -12,15 +12,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "ar1303_ci_diagnostics",
   "plan": "../plans/AR-1303.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add privacy-safe fixed diagnostics for hosted platform evidence failures.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Privacy-safe hosted platform failure diagnostics",
-  "updated_at": "2026-09-17T12:17:30+00:00",
+  "updated_at": "2026-09-17T12:17:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1303-hosted-platform-diagnostics"
 }
 ---
@@ -39,3 +39,5 @@ native qualification route. This AR must not modify runtime behavior or asb-tui.
 
 - 2026-09-17T12:17:30+00:00: Dependencies AR-0907 and AR-1252 are done; promote CI diagnostics
   follow-up for repeated AR-1301 hosted platform failures.
+
+- 2026-09-17T12:17:33+00:00: Claimed by ar1303_ci_diagnostics.
