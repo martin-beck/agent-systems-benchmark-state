@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1305-image-native-user-session",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T15:52:53+00:00",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "codex-ar1305-image-session-20260917",
   "plan": "../plans/AR-1305.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify image-native D-Bus user-session support for required TLC containment.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-17T15:22:50+00:00",
+  "updated_at": "2026-09-17T15:22:53+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -170,3 +170,5 @@ limits and fail-closed behavior remain unchanged.
 
 - 2026-09-17T15:22:50+00:00: Fresh image lacks global user dbus.socket activation; enable reviewed
   socket and retry transient qualification
+
+- 2026-09-17T15:22:53+00:00: Claimed by codex-ar1305-image-session-20260917.
