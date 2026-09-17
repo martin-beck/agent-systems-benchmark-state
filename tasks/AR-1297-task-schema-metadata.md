@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair task schema and metadata consistency without weakening coordinator validation.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Task schema and metadata consistency",
-  "updated_at": "2026-09-17T05:32:11+00:00",
+  "updated_at": "2026-09-17T05:32:56+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1297-task-schema"
 }
 ---
@@ -72,3 +72,6 @@ asb-tui source, modify handoffctl implementation, or alter formal gates.
 
 - 2026-09-17T05:32:11+00:00: Recorded command exit 0; command argv SHA-256
   cb32aba10be4d5137422b2b1511c1ca1522efbc213c74d3a3a2fa756678f4e3c.
+
+- 2026-09-17T05:32:56+00:00: Recorded command exit 0; command argv SHA-256
+  6a1251ccda4090eff34a63f3ea5e5418519e76d435752ea8b751486f1e90028e.
