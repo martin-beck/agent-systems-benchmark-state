@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Monitor the active full-exhaustive QEMU until terminal completion; validate full attestation and receipt against candidate 903a87844, then record final evidence. | codex-ar1293-timeout-repair-20260917 |
+| P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Add receipt overlay digest binding and exact serial-marker validation; run all code gates; then provision a larger clean bounded runner and rerun full-exhaustive. | codex-ar1293-timeout-repair-20260917 |
 
 ## Blocked
 
