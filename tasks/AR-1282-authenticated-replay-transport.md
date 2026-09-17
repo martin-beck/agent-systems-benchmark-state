@@ -11,7 +11,7 @@
   "id": "AR-1282",
   "next_action": "PR #208 now needs fresh checks at exact head b44be60fb9f1 after formal Cargo.lock refresh. Formal lock test itself hit unrelated Text file busy in TLA acquisition; preserve evidence and await hosted rerun.",
   "observed_branch": "feature/ar-1282-authenticated-replay-transport",
-  "observed_dirty": 7,
+  "observed_dirty": 0,
   "observed_head": "b1fb8371104839324c5736ebcd7d39b93c9d8bbc",
   "owner": "asb_ar1282_core_runtime_transport",
   "plan": "../plans/AR-1282.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Land the authenticated runtime-to-CLI replay transport foundation.",
-  "task_revision": 86,
+  "task_revision": 87,
   "title": "Authenticated replay transport foundation",
-  "updated_at": "2026-09-17T01:00:44+00:00",
+  "updated_at": "2026-09-17T01:00:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1282-authenticated-replay-transport"
 }
 ---
