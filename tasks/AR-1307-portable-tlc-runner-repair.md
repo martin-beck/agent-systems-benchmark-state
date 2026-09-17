@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 150,
+  "task_revision": 151,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T23:46:22+00:00",
+  "updated_at": "2026-09-17T23:46:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -512,3 +512,6 @@ and protected publication sequence.
   /mnt/asb-data/state absent and cd to /state/formal/handoffctl failed. This was caused by cloning
   the checkout directly into stage-head rather than nesting it under stage-head/state. No
   attestation accepted. Rebuilding the data image with the required layout now.
+
+- 2026-09-17T23:46:31+00:00: Recorded command exit 0; command argv SHA-256
+  31e47087583fed3b8df1d66d016592db467a274a42abfaf358a0fb1bf468842c.
