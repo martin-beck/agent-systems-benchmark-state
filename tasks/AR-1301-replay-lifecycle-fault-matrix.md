@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 103,
+  "task_revision": 104,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:12:54+00:00",
+  "updated_at": "2026-09-17T11:15:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -301,3 +301,6 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
   for safe reassignment; preserve candidate and review blockers.
 
 - 2026-09-17T11:12:54+00:00: Claimed by ar1301_negative_matrix.
+
+- 2026-09-17T11:15:02+00:00: Recorded command exit 0; command argv SHA-256
+  4931a5e7746eceb6a9be71471820906262e36f2e203bcbfc7a3956fe7128b3c8.
