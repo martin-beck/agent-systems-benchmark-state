@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 171,
+  "task_revision": 172,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T14:24:49+00:00",
+  "updated_at": "2026-09-17T14:25:45+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -610,3 +610,6 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   6fffdbbfa6daf877c69ed4fe869415841d187488405fed969f2bef5104890472; status success,
   portable-timeout-prlimit, address_space_max 8G, memory_max 3G, swap_max 3G, heap 2048m, workers 2.
   Prior RC=1 was seed/env and JDK symlink infrastructure, repaired fail-closed.
+
+- 2026-09-17T14:25:45+00:00: Recorded command exit 0; command argv SHA-256
+  072a574d65ec12d5656a81f67a03f56c43b9a424df127a070a84e3b6a9ca7463.
