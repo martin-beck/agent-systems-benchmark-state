@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 306,
+  "task_revision": 307,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:10:57+00:00",
+  "updated_at": "2026-09-17T12:11:12+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -991,3 +991,6 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   blocker; no rerun.
 
 - 2026-09-17T12:10:57+00:00: Claimed by codex-ar1302-diagnosis.
+
+- 2026-09-17T12:11:12+00:00: Recorded command exit 0; command argv SHA-256
+  4a558995c70694f9aa845fc2546212a09840f0125b3843a9ed68ebe53c517d07.
