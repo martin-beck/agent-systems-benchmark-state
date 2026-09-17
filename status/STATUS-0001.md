@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**335 ARs tracked** across 6 active status categories.
+**335 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 50 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -403,7 +403,7 @@ flowchart LR
         AR_1304["AR-1304 - Done"]:::status_done
         AR_1305["AR-1305 - Blocked"]:::status_blocked
         AR_1306["AR-1306 - In progress"]:::status_in_progress
-        AR_1307["AR-1307 - In progress"]:::status_in_progress
+        AR_1307["AR-1307 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1652,13 +1652,18 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | codex-ar1293-timeout-repair-20260917 | Repair the state-repository TLA admission runner and truthful worktree metadata. | Wait for old ada383cea VM termination; then rebuild exact-head fa57625d9 image/seed, run required and independently re-reviewed full gates, validating overlay digest and exact serial markers. |
 | P0 | [AR-1306](../tasks/AR-1306-authenticated-fault-matrix-qualification.md): Authenticated strict-replay fault-matrix qualification | codex-ar1306-auth-listener-20260917 | Qualify the real authenticated strict-replay service and fault matrix missing from PR #221. | PR #222 exact head 910af9a3c380ecf035f839460f3304ccb8159e50 has all 12 CI checks green, but independent review blocks acceptance: run_supervised_fault now allocates authenticated ReplayRelay yet never starts/accepts a StrictReplayService connection, and provider/descendant egress cases assert only nonzero exit rather than cause-specific denial. Add executable matrix-level authenticated positive/parity and distinct cause assertions, then publish a new signed head and rerun CI. |
-| P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | codex-ar1307-runner-20260917 | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Bounded canonical runner repair is implemented; run Ruff/format/mypy/full state suite, inspect remaining provenance/privacy gates, then qualify fresh exact-head portable and required tiers. |
+
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1307](../tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Unclaimed | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Bounded canonical runner repair is implemented; run Ruff/format/mypy/full state suite, inspect remaining provenance/privacy gates, then qualify fresh exact-head portable and required tiers. |
 
 ### Blocked (50)
 

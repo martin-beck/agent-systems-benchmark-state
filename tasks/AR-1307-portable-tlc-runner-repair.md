@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1307-portable-tlc-runner-repair",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T23:55:11+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "codex-ar1307-runner-20260917",
+  "owner": "",
   "plan": "../plans/AR-1307.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T22:28:55+00:00",
+  "updated_at": "2026-09-17T23:13:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -201,3 +201,6 @@ and protected publication sequence.
 
 - 2026-09-17T22:28:55+00:00: Recorded command exit 0; command argv SHA-256
   7e8d013647ff7a55e3142976e80beadb9b213994fc040b0a07eb27e5708731fd.
+
+- 2026-09-17T23:13:52+00:00: Coordinator recovery: prior owner is stale/interrupted; preserving
+  prior durable evidence and releasing claim for takeover.
