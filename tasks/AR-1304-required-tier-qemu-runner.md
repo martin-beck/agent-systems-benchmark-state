@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1304-required-tier-qemu-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T15:26:54+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "codex-ar1304-required-runner-20260917",
+  "owner": "",
   "plan": "../plans/AR-1304.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Create a clean required-containment QEMU runner for formal publication evidence.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Required-tier QEMU user-bus runner",
-  "updated_at": "2026-09-17T14:59:21+00:00",
+  "updated_at": "2026-09-17T15:00:01+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner"
 }
 ---
@@ -184,3 +184,11 @@ logs, or claim full-exhaustive evidence before required attestation is green.
 
 - 2026-09-17T14:59:21+00:00: Recorded command exit 0; command argv SHA-256
   a4162425616b55799b69815db7beca64ca5fb1943cbe813ed8565179071abe12.
+
+- 2026-09-17T15:00:01+00:00: Fresh native systemd seed run completed with bus service started, but
+  required transient probe failed closed: cloud-init serial reports Failed to start transient
+  service unit: Transport endpoint is not connected. The guest powered off cleanly; no required
+  pr-publication attestation was produced. This confirms the remaining defect is user-manager/D-Bus
+  transport readiness after asb-session-bus.service, not missing bus socket. Next action: start a
+  system-managed user manager/session bus using the image-supported mechanism and verify systemd-run
+  --user transient success before running TLC; preserve all six limits.
