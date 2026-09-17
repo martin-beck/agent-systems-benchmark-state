@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1248-strict-replay-cli-contract",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T05:21:30+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1231",
     "AR-1232"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1248-strict-replay-cli-contract",
   "observed_dirty": 0,
   "observed_head": "7d9c2ee2e08b9d61cb03837236918575405fb5c2",
-  "owner": "asb_ar1248_cli_contract",
+  "owner": "",
   "plan": "../plans/AR-1248.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Define the strict-replay CLI consumer contract.",
-  "task_revision": 166,
+  "task_revision": 167,
   "title": "Bounded strict-replay CLI consumer contract",
-  "updated_at": "2026-09-17T03:22:27+00:00",
+  "updated_at": "2026-09-17T03:23:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1248"
 }
 ---
@@ -484,3 +484,12 @@ formal, privacy, signature, DCO, and exact-tree gates.
 
 - 2026-09-17T03:22:27+00:00: Recorded command exit 0; command argv SHA-256
   e65704d0af497ff4f9db656cbcc2e1894e552f84bfbc5a531f0945a250925adf.
+
+- 2026-09-17T03:23:16+00:00: Independent exact-head audit completed at 7d9c2ee: all 8 feature
+  commits SSH-signed with matching DCO; PR #197 all 12 hosted checks green; focused replay_contract
+  4/4 and full workspace locked offline tests passed. Remaining acceptance is runtime-owned
+  authority and supervised child lifecycle, absent from CLI and tracked by successor ARs. The CLI
+  must not fabricate namespace_ready or construct supervision from caller inputs. Next dependency is
+  runtime-owned launch authority successor AR-1260/1261/1262 or equivalent reviewed entrypoint; then
+  add real request/response, egress-denial, cancellation/restart/timeout/crash cleanup, and
+  no-fallback tests before merging PR #197.
