@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T15:44:04+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Use run_lifecycle from signed commit 1fd5e31cf to create a fresh overlay, boot the UUID-serial data disk, run guest UUID/mount preflight, then execute f1931686c portable-smoke and capture sanitized terminal attestation. Do not claim qualification from container evidence.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "codex-ar1302-integrated-run",
+  "owner": "",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 460,
+  "task_revision": 461,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T13:45:04+00:00",
+  "updated_at": "2026-09-17T13:45:14+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1539,3 +1539,11 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T13:45:04+00:00: Recorded command exit 0; command argv SHA-256
   10384aa61f950be85284c0ba2d2fdd7b4f019cb7ca2a7e5d56f5383046c6f807.
+
+- 2026-09-17T13:45:14+00:00: Integrated lifecycle executed with cloud-localds seed and
+  receipt-approved prepared root/data. Guest boot completed offline under -net none; seed masked
+  systemd-networkd-wait-online, mounted the reviewed data disk by UUID, and wrote PRELIGHT marker
+  (confirmed in serial/data evidence). Lifecycle cleanup completed. The seed currently powers off
+  after preflight, so exact f1931686c TLC portable-smoke was not launched and no attestation exists.
+  Next action: extend the reviewed seed after successful preflight to invoke the exact
+  portable-smoke command and emit sanitized terminal attestation before poweroff.
