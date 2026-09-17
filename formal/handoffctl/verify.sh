@@ -9,23 +9,13 @@ if [[ "${1:-}" != "--tier" || ( "${2:-}" != "portable-smoke" && "${2:-}" != "pr-
 fi
 readonly TIER="$2"
 readonly ATTESTATION="${TLC_ATTESTATION_PATH:-${TMPDIR:-/tmp}/handoffctl-${TIER}-attestation.json}"
-if [[ "${TIER}" == "portable-smoke" ]]; then
-    export TLC_CGROUP_MODE=portable
-else
-    export TLC_CGROUP_MODE=required
-fi
 
 readonly TLA_VERSION=1.7.4
 readonly TLA_SHA256=936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88
 readonly SPEC_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 readonly TEMP_DIR="$(mktemp -d)"
 readonly MANIFEST="${TEMP_DIR}/outcomes.manifest"
-readonly WORKER_DIR="${TEMP_DIR}/admission"
-readonly QUEUE="${WORKER_DIR}/queue"
-readonly ADMISSION_LOCK="${WORKER_DIR}/admission.lock"
 : > "${MANIFEST}"
-mkdir -m 700 "${WORKER_DIR}"
-mkdir -m 700 "${QUEUE}"
 trap 'rm -rf -- "${TEMP_DIR}"' EXIT
 
 readonly JAR="${TEMP_DIR}/tla2tools.jar"
@@ -41,9 +31,7 @@ run_model() {
         --jar "${JAR}" \
         --model "${SPEC_DIR}/${source}.tla" \
         --config "${SPEC_DIR}/${model}.cfg" \
-        --metadir "${TEMP_DIR}/${model}-states" \
-        --queue "${QUEUE}" \
-        --admission-lock "${ADMISSION_LOCK}"
+        --metadir "${TEMP_DIR}/${model}-states"
     printf "%s success\n" "${model}" >> "${MANIFEST}"
 }
 

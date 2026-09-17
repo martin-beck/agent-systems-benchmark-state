@@ -1,3 +1,6 @@
+# Copyright (C) Huawei Technologies Co., Ltd. 2026. All rights reserved.
+# SPDX-License-Identifier: MIT
+
 """Bounded, fail-closed tests for the state TLC admission runner."""
 
 from __future__ import annotations
@@ -28,6 +31,17 @@ ATTEST_SPEC.loader.exec_module(ATTEST)
 
 
 class TlcRunnerTests(unittest.TestCase):
+    def test_formal_workflow_selects_explicit_supported_tier(self) -> None:
+        workflow = (ROOT / ".github" / "workflows" / "handoffctl-formal.yml").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("run: formal/handoffctl/verify.sh --tier full-exhaustive", workflow)
+
+    def test_pr_tier_has_one_process_contract_fixture(self) -> None:
+        config = (ROOT / "formal" / "handoffctl" / "HandoffctlPR.cfg").read_text(encoding="utf-8")
+        self.assertIn("Processes = {p1}", config)
+        self.assertIn("Tasks = {t1}", config)
+
     def test_command_has_bounded_jvm_and_process_group(self) -> None:
         command = RUNNER.build_command(
             jar=Path("tla.jar"),
