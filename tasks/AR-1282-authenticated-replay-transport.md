@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1282",
-  "next_action": "Run full locked workspace fmt/test/clippy/rustdoc/policy/privacy/formal/portability gates at signed 977a37d; request independent re-review of bounded core/runtime transport only after all pass.",
+  "next_action": "Independent exact-head re-review requested for signed 977a37d; focused transport and full locked workspace gates pass. Scope remains bounded core/runtime transport only; no primary CLI/lifecycle claim.",
   "observed_branch": "feature/ar-1282-authenticated-replay-transport",
   "observed_dirty": 0,
   "observed_head": "977a37d2628d2e397020ef404a9c8e7072c1838e",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Land the authenticated runtime-to-CLI replay transport foundation.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Authenticated replay transport foundation",
-  "updated_at": "2026-09-17T00:34:53+00:00",
+  "updated_at": "2026-09-17T00:35:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1282-authenticated-replay-transport"
 }
 ---
@@ -156,3 +156,12 @@ claim primary command execution.
 
 - 2026-09-17T00:34:53+00:00: Recorded command exit 0; command argv SHA-256
   7487006b3f49c1cd6ae28cc04367464561589c5a5bd1154c1e9a5e018cfd3413.
+
+- 2026-09-17T00:35:07+00:00: Review-fix and gate checkpoint: signed head
+  977a37d2628d2e397020ef404a9c8e7072c1838e is clean and pushed. Runtime issuer requires absolute
+  non-symlink parent mode 0700, socket mode 0600, opaque issuer-issued client generation, one-shot
+  request/response matching, and bounded 5-second read/write deadlines; invalid generation/path and
+  duplicate negatives pass. Full locked workspace tests pass (173 passed, 1 ignored in primary
+  suite; all workspace suites green), fmt --check, clippy -D warnings, rustdoc, and
+  repository_policy all pass. Earlier exit-101 was missing-docs lint and is fixed. Request
+  independent re-review; do not claim primary CLI execution.
