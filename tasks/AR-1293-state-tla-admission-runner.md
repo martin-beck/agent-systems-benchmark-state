@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T20:33:05+00:00",
+  "claim_expires": "2026-09-17T18:18:10+00:00",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Independent exact-head review of signed timeout commits 5d0f8deb3, bcf65ad29, 0190d6678, 2b7ed3732, and 8be1d2f83; only then regenerate and run full seed.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 251,
+  "task_revision": 252,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T17:44:55+00:00",
+  "updated_at": "2026-09-17T17:48:10+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -864,3 +864,5 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   bound correction is signed in 0190d6678. Earlier 17:42 failures were test invocation/import
   errors: unittest module path was invalid, then PYTHONPATH omitted so tools package was
   unavailable; corrected with PYTHONPATH=. discover. No VM rerun.
+
+- 2026-09-17T17:48:10+00:00: Heartbeat by codex-ar1293-timeout-repair-20260917.
