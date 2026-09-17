@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T15:18:39+00:00",
   "depends_on": [
     "AR-1287",
     "AR-1300"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "observed_dirty": 0,
   "observed_head": "dd5bfb8dfea08331bb5ee62ddbdee07ad6fb8e7c",
-  "owner": "",
+  "owner": "root",
   "plan": "../plans/AR-1301.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 291,
+  "task_revision": 292,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T13:18:13+00:00",
+  "updated_at": "2026-09-17T13:18:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -817,3 +817,5 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
 
 - 2026-09-17T13:18:13+00:00: Hosted platform evidence blocker resolved at exact PR #219 head
   dd5bfb8; Platform evidence is green. Resume for remaining exact-head checks and protected merge.
+
+- 2026-09-17T13:18:39+00:00: Claimed by root.
