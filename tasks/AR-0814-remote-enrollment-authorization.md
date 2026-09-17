@@ -8,18 +8,18 @@
   ],
   "id": "AR-0814",
   "next_action": "Coordinator must create and link the successor AR for certificate issuance/chain validation and trusted route/ancestor authority; preserve this exact clean head and do not publish/close as fully complete until successor scope and bounded acceptance are recorded.",
-  "observed_branch": "DETACHED",
-  "observed_dirty": 7,
-  "observed_head": "b68c1137bbaa0fcdcccbcfc9eb2bb222027637ed",
+  "observed_branch": "feature/remote-enrollment-authz",
+  "observed_dirty": 0,
+  "observed_head": "29cfa19323a0ceb124438854d73f664ae2b86dcc",
   "owner": "asb_ar0814_enrollment_authz",
   "plan": "../plans/AR-0814.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 303,
+  "task_revision": 304,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-17T04:01:18+00:00",
+  "updated_at": "2026-09-17T04:01:26+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
