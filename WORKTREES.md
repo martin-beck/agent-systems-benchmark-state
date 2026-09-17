@@ -80,6 +80,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1280-cross-crate-replay-entrypoint` | `feature/ar-1280-cross-crate-replay-entrypoint` | `f92a86b126e3` | 0 | behind 0, ahead 5 |
 | `agent-systems-benchmark-ar-1281-supervised-cassette-lifecycle` | `feature/ar-1281-supervised-cassette-lifecycle` | `69e8b064d312` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar-1282-authenticated-replay-transport` | `feature/ar-1282-authenticated-replay-transport` | `b1fb83711048` | 0 | behind 0, ahead 7 |
+| `agent-systems-benchmark-ar-1282-authenticated-replay-transport-integration` | `DETACHED` | `69e8b064d312` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar-1283-formal-lockfile` | `feature/ar-1283-formal-lockfile` | `69e8b064d312` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 509, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 612, ahead 0 |
