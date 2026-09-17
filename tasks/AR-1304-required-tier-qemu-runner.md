@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create a clean required-containment QEMU runner for formal publication evidence.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Required-tier QEMU user-bus runner",
-  "updated_at": "2026-09-17T14:48:20+00:00",
+  "updated_at": "2026-09-17T14:48:52+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner"
 }
 ---
@@ -81,3 +81,6 @@ logs, or claim full-exhaustive evidence before required attestation is green.
   user bus and produce required attestation
 
 - 2026-09-17T14:48:20+00:00: Claimed by codex-ar1304-required-runner-20260917.
+
+- 2026-09-17T14:48:52+00:00: Recorded command exit 0; command argv SHA-256
+  9d21774da9bf6357a7f1a021076f0f52abe1e34a4be35c0a531668986e6180dd.
