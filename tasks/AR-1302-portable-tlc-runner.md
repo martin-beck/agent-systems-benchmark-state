@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T12:02:19+00:00",
   "depends_on": [],
   "id": "AR-1302",
-  "next_action": "Provision or attach a clean x86_64 CI/VM runner with an effective cgroup memory limit of at least 32 GiB, then rerun signed runner commit 5bd411e19 at full-exhaustive; portable-smoke and pr-publication pass on the 20 GiB profile.",
+  "next_action": "Use the provisioned 32 GiB QEMU/KVM runner receipt b1457b809 with the pinned TLC 1.7.4 JAR pre-staged on its offline data disk; then run the signed AR-1293 candidate f16d2cb41 full-exhaustive tier and record exact attestation. Do not overlap the active AR-1293 VM worker.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 146,
+  "task_revision": 147,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T10:02:50+00:00",
+  "updated_at": "2026-09-17T10:03:20+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -469,3 +469,9 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T10:02:50+00:00: Recorded command exit 0; command argv SHA-256
   ed80f60aea6e69beefba503f542fc88d9dd487e2e44de61c3a03455aef2866bf.
+
+- 2026-09-17T10:03:20+00:00: Runner definition commit 7a6f7fd94 and focused 7-test/ruff/mypy/header
+  gates pass. VM receipt b1457b809 is available under /srv/data/projects/asb-state-tlc-vm-32g with
+  32 GiB RAM, 16 GiB guest swap, 8 vCPU, no network and no host mounts. Shared VM PR attempt
+  correctly failed closed at curl exit 6 because the pinned JAR was not yet staged; no formal pass
+  claimed.
