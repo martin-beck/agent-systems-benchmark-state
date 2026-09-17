@@ -2,7 +2,7 @@
 {
   "branch": "feature/ratatui-crossterm-foundation",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T06:16:02+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0803",
     "AR-0804",
@@ -18,15 +18,15 @@
   ],
   "id": "AR-1010",
   "next_action": "Remain open pending a supported AR-1062 signed publication/repair successor, green exact-main Repository quality and Trusted main, and recovered AR-1060 control-publication provenance. Do not repeat merged foundation work or add UI code to ASB.",
-  "owner": "codex-ar1010-finalize-20260917",
+  "owner": "",
   "plan": "../plans/AR-1010.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Adopt Ratatui and Crossterm as the supported professional TUI foundation.",
-  "task_revision": 435,
+  "task_revision": 436,
   "title": "Adopt Ratatui/Crossterm TUI foundation",
-  "updated_at": "2026-09-17T04:16:02+00:00",
+  "updated_at": "2026-09-17T04:17:44+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-ratatui-foundation"
 }
 ---
@@ -1545,3 +1545,13 @@ trusted terminal qualification; do not repeat the already merged PR #9 publicati
   blocked. Preserve current status and dependency graph pending a reviewed successor definition.
 
 - 2026-09-17T04:16:02+00:00: Claimed by codex-ar1010-finalize-20260917.
+
+- 2026-09-17T04:17:44+00:00: Verified AR-1010 completion without product changes: standalone
+  foundation was merged by asb-tui PR #9 as GitHub merge 882c315e7b6eaadac88f0f5949199f8679b4dc88,
+  exactly reviewed signed+DCO head 20688721d4815431746088fe313e340622de0668 (tree
+  6521148aef9d310144645a796c35c2992bc37083). Historical recovery chain is now satisfied through
+  signed superseded pointers AR-1052->AR-1054->AR-1056->AR-1058->AR-1061->AR-1062; AR-1060
+  authorized history repair is done. Exact current asb-tui main head
+  73a8f38904573a4ac6bbfdea63646cb9111a76ea passed Repository quality run 35181257505 and Trusted
+  main verification run 35181257567. No ASB source change was needed; stale historical next-action
+  text is superseded by this terminal evidence.
