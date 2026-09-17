@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement end-to-end runtime-owned execution for primary strict replay.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "End-to-end primary replay runtime handoff",
-  "updated_at": "2026-09-17T00:11:08+00:00",
+  "updated_at": "2026-09-17T00:11:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1279-end-to-end-replay-runtime"
 }
 ---
@@ -36,3 +36,6 @@ AR-1275 through AR-1278 blocked evidence and require real supervised cassette li
   from protected main.
 
 - 2026-09-17T00:11:08+00:00: Claimed by asb_ar1024_lifecycle_router.
+
+- 2026-09-17T00:11:38+00:00: Recorded command exit 0; command argv SHA-256
+  548854c3c7b1ea753090aa5cb6bc65d48cb545a055b82ef3a11123b697c41fcb.
