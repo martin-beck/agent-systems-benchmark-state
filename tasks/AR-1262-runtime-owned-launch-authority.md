@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1262",
-  "next_action": "Do not merge PR #207. Create a reviewed runtime-to-CLI entrypoint successor that supplies real runtime-issued ReplayRelayHandoff/SandboxLaunchInput/ResourceLease and verified command identities; then rebase the authority work, add real cassette request/response plus egress/cancellation/restart/timeout/crash/no-fallback lifecycle evidence, and rerun exact-head gates. Preserve c0091857 and its failed ToolPin fixture evidence.",
+  "next_action": "Do not merge PR #207; create runtime-to-CLI authority successor and rerun lifecycle, egress and no-fallback evidence.",
   "observed_branch": "feature/ar-1262-runtime-owned-launch-authority",
   "observed_dirty": 0,
   "observed_head": "535149950dc4b0ec1105093092689be146972b50",

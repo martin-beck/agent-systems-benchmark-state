@@ -6,6 +6,7 @@
   "depends_on": [],
   "id": "AR-0854",
   "next_action": "Promote and claim the upgrade, vendor signed v0.2.0 in an isolated worktree, and publish only after exact-head gates pass.",
+  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-0854.md",
   "priority": "P1",

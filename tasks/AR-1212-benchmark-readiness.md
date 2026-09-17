@@ -3,9 +3,12 @@
   "branch": "docs/ar-1212-benchmark-readiness",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1211"],
+  "depends_on": [
+    "AR-1211"
+  ],
   "id": "AR-1212",
   "next_action": "Implement the offline tutorial for checking agent benchmark readiness under the current configuration.",
+  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-1212.md",
   "priority": "P0",

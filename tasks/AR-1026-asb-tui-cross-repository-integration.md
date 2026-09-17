@@ -3,9 +3,16 @@
   "branch": "test/asb-tui-cross-repository-integration",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1011", "AR-1024", "AR-1025", "AR-1029", "AR-1170"],
+  "depends_on": [
+    "AR-1011",
+    "AR-1024",
+    "AR-1025",
+    "AR-1029",
+    "AR-1170"
+  ],
   "id": "AR-1026",
   "next_action": "Wait for AR-1024, AR-1025, AR-1029 and the complete standalone UI integration AR-1011, then qualify exact install, update, rollback, launch, remove and benchmark-continuity paths across both repositories.",
+  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-1026.md",
   "priority": "P0",

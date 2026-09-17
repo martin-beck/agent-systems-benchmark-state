@@ -10,6 +10,7 @@
   ],
   "id": "AR-0816",
   "next_action": "Prove native x86_64 and pinned QEMU AArch64 controller-runner protocol workflows across available distributions; document native ARM64 cross-host testing as optional future evidence.",
+  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-0816.md",
   "priority": "P1",

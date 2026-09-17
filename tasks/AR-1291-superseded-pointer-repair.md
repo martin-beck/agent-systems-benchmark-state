@@ -8,7 +8,7 @@
   "next_action": "Claim the state-repair AR, add the verified successor pointers to AR-1052/1054/1056/1058/1061, reconcile and validate AR-1010 dependency readiness.",
   "observed_branch": "repair/ar-1291-superseded-pointers",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-1291.md",
   "priority": "P0",

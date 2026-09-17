@@ -3,14 +3,25 @@
   "branch": "feature/replay-openhands-environment-pin",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-0309", "AR-0514"],
+  "depends_on": [
+    "AR-0309",
+    "AR-0514"
+  ],
   "id": "AR-0521",
   "next_action": "Define an immutable, reproducible OpenHands environment bundle and verifier.",
-  "observed_branch": "", "observed_dirty": 0, "observed_head": "0000000000000000000000000000000000000000", "owner": "",
-  "plan": "../plans/AR-0521.md", "priority": "P0", "schema_version": 1,
-  "status": "planned", "summary": "Repair OpenHands replay environment provenance and reproducibility.",
-  "task_revision": 2, "title": "Reproduce and pin the OpenHands replay environment",
-  "updated_at": "2026-09-08T10:50:00+00:00", "worktree_key": "agent-systems-benchmark-replay-openhands-environment-pin"
+  "observed_branch": "",
+  "observed_dirty": 0,
+  "observed_head": "0000000000000000000000000000000000000000",
+  "owner": "",
+  "plan": "../plans/AR-0521.md",
+  "priority": "P0",
+  "schema_version": 1,
+  "status": "planned",
+  "summary": "Repair OpenHands replay environment provenance and reproducibility.",
+  "task_revision": 2,
+  "title": "Reproduce and pin the OpenHands replay environment",
+  "updated_at": "2026-09-08T10:50:00+00:00",
+  "worktree_key": "agent-systems-benchmark-replay-openhands-environment-pin"
 }
 ---
 ## AR-0521

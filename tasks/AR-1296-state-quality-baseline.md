@@ -8,7 +8,7 @@
   "next_action": "Repair explicit tools package identity and add bounded offline upgrade-command coverage until strict mypy and the unchanged 95% coverage gate pass.",
   "observed_branch": "repair/ar-1296-state-quality-baseline",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-1296.md",
   "priority": "P0",

@@ -6,6 +6,7 @@
   "depends_on": [],
   "id": "AR-1055",
   "next_action": "Bind AR-1026 to the complete standalone UI and record the exact router, release and cross-repository qualification gaps without changing product code or feature-task status.",
+  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-1055.md",
   "priority": "P0",

@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-1288",
-  "next_action": "AR-1288 feature merge is complete at signed main 2de393a05cc3c65f3495238abb19408e8218e483, but closure is blocked by protected-main integrity evidence. Post-merge Repository quality run 35178551451 reports Dependabot commit 07d4b62ad5c10444e5d0ba5f014613cd7c34c0f5 lacks a matching Signed-off-by trailer. Preserve AR-1288 done code and exact merge evidence; coordinator must create/use a dependency-safe protected-main remediation AR, repair forward-only, then rerun all exact-main gates before AR-1288 release.",
+  "next_action": "Preserve merged code; repair protected-main DCO integrity forward-only, rerun exact-main gates, then release.",
   "observed_branch": "feature/ar-1288-certificate-chain-authz",
   "observed_dirty": 0,
   "observed_head": "7b3ff1d3a87436c2a7299d452bb4220dd7847a4c",

@@ -12,7 +12,7 @@
     "AR-1237"
   ],
   "id": "AR-1232",
-  "next_action": "Wait for approved, merged AR-1234 runtime-owned loopback namespace capability (and AR-1233 LoopbackOnly policy contract) before child HTTP cassette integration. Their current commits are feature-branch-only and both tasks remain blocked; do not reuse unmerged code. Then bind ReplayRelayHandoff into the reviewed launch contract and rerun child success, provider-egress denial, stale/duplicate, timeout/crash cleanup, and unrelated-process tests.",
+  "next_action": "Await merged AR-1233/1234 runtime namespace capability, then bind replay launch and rerun lifecycle/egress tests.",
   "observed_branch": "feature/ar-1232",
   "observed_dirty": 0,
   "observed_head": "2f10f2753c04dd3b25d07b39359e11b3c8495f48",

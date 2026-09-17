@@ -3,9 +3,14 @@
   "branch": "test/documentation-qualification",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-0808", "AR-0809", "AR-0810"],
+  "depends_on": [
+    "AR-0808",
+    "AR-0809",
+    "AR-0810"
+  ],
   "id": "AR-0811",
   "next_action": "Independently audit every published workflow against released programs and deployed Pages output.",
+  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-0811.md",
   "priority": "P1",

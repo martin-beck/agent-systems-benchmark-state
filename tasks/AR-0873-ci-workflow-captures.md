@@ -10,6 +10,7 @@
   ],
   "id": "AR-0873",
   "next_action": "Generate privacy-safe asb-tui workflow screenshots from real synthetic CI executions.",
+  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-0873.md",
   "priority": "P0",

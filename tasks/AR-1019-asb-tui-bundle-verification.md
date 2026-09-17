@@ -11,7 +11,7 @@
   "next_action": "Publish exact clean 67839598 after final privacy review; open focused PR and require exact-head hosted CI before merge.",
   "observed_branch": "",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "990517eda77d4d42ff51ca5d1da03b56e7b8cdda",
   "owner": "",
   "plan": "../plans/AR-1019.md",
   "priority": "P1",

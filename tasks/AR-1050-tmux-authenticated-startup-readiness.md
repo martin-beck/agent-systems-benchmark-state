@@ -6,6 +6,7 @@
   "depends_on": [],
   "id": "AR-1050",
   "next_action": "No further action: AR-1052 superseded this recovery after PR #17 merged and Trusted main exposed the unavailable server-authority observation.",
+  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-1050.md",
   "priority": "P0",

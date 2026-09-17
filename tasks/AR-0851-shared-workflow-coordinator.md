@@ -6,6 +6,7 @@
   "depends_on": [],
   "id": "AR-0851",
   "next_action": "Rebase the immutable v0.1.3 integration tree onto current state main under coordinator serialization, rerun exact-tree gates, and present a signed review candidate; do not publish or merge before review.",
+  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-0851.md",
   "priority": "P1",

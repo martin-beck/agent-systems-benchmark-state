@@ -3,9 +3,17 @@
   "branch": "ci/ar-1216-tutorial-freshness",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1210", "AR-1211", "AR-1212", "AR-1213", "AR-1214", "AR-1215"],
+  "depends_on": [
+    "AR-1210",
+    "AR-1211",
+    "AR-1212",
+    "AR-1213",
+    "AR-1214",
+    "AR-1215"
+  ],
   "id": "AR-1216",
   "next_action": "Implement the repository-wide tutorial discovery and syntax-freshness CI gate after all tutorial contracts are defined.",
+  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-1216.md",
   "priority": "P0",

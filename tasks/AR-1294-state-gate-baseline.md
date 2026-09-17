@@ -8,7 +8,7 @@
   "next_action": "Audit the vendor lock/digest mismatch and root-owned TLC admission lock; repair only through immutable provenance and owner-safe lock handling, then rerun full state/formal gates.",
   "observed_branch": "repair/ar-1294-state-gate-baseline",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-1294.md",
   "priority": "P0",

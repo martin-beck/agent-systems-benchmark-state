@@ -14,7 +14,7 @@
   "next_action": "Publication and exact-head verification complete; no further AR-1017 action.",
   "observed_branch": "",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "c2fcb7221db24c847ef81cde010735de15cb10f3",
   "owner": "",
   "plan": "../plans/AR-1017.md",
   "priority": "P1",

@@ -10,7 +10,7 @@
   "next_action": "Publish c5454fa through a protected pull request, verify exact-head hosted CI, merge with DCO and verified signature, then run hosted and trusted local post-merge CI.",
   "observed_branch": "",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "524f0f5871a87b34c08b63b679ce5b27fd30a8b9",
   "owner": "",
   "plan": "../plans/AR-1020.md",
   "priority": "P1",

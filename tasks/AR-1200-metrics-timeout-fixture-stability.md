@@ -6,6 +6,7 @@
   "depends_on": [],
   "id": "AR-1200",
   "next_action": "Review and merge the isolated test-fixture stabilization after exact-head CI passes; do not modify production timeout policy.",
+  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-1200.md",
   "priority": "P2",

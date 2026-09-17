@@ -9,6 +9,7 @@
   ],
   "id": "AR-0834",
   "next_action": "No further action; repair is integrated and verified.",
+  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-0834.md",
   "priority": "P1",

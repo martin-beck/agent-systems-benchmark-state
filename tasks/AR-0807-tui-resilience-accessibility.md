@@ -15,6 +15,7 @@
   ],
   "id": "AR-0807",
   "next_action": "Independently qualify terminal UX, accessibility, isolation, packaging and recovery after the complete standalone wizard passes focused assurance.",
+  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-0807.md",
   "priority": "P0",

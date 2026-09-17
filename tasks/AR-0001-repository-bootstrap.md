@@ -6,6 +6,7 @@
   "depends_on": [],
   "id": "AR-0001",
   "next_action": "No action; foundation verified. Begin AR-0002, AR-0003, AR-0101, AR-0501 or AR-0701 through the coordinator.",
+  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-0001.md",
   "priority": "P0",

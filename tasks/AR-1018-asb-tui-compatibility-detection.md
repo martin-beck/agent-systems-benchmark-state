@@ -10,7 +10,7 @@
   "next_action": "Await coordinator independent validation of exact-main attestation, post-merge CI, restored protections, and divergent local empty attestation; do not release.",
   "observed_branch": "",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "a7ca8e07f177fc6a647b3297df624137cfb85e86",
   "owner": "",
   "plan": "../plans/AR-1018.md",
   "priority": "P1",

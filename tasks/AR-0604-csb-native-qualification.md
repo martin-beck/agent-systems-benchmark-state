@@ -9,7 +9,7 @@
     "AR-0601"
   ],
   "id": "AR-0604",
-  "next_action": "Obtain coordinator-authorized native x86_64 runner/container and immutable CSB source root plus interpreter bytes matching Python 3.12.3 SHA-256 1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118. Docker is currently inaccessible; qemu cannot substitute native x86 evidence. Then rerun native_boundary and record A/B/overhead evidence.",
+  "next_action": "Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead.",
   "observed_branch": "feature/csb-native-qualification",
   "observed_dirty": 0,
   "observed_head": "4e2820bffe93234d02ca39b59067bf4442b08f95",

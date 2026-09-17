@@ -3,9 +3,14 @@
   "branch": "feature/mockagents-qemu-image-qualification",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1250", "AR-1251", "AR-1233"],
+  "depends_on": [
+    "AR-1250",
+    "AR-1251",
+    "AR-1233"
+  ],
   "id": "AR-1257",
   "next_action": "Read the complete plan and verify official digest-pinned multiarch image, signature, license, and QEMU capability before any support claim.",
+  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-1257.md",
   "priority": "P1",

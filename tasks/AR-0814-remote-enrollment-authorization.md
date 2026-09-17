@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Create and link a focused successor AR for trusted route/IP and ancestor authority: independently authenticate route/peer binding and ancestor provenance; test wrong-route rejection, route rotation/revocation, and local recovery. AR-1288 certificate issuance/chain validation is complete and merged at signed main 2de393a05cc3c65f3495238abb19408e8218e483. Preserve AR-0814 exact clean head 29cfa19323a0ceb124438854d73f664ae2b86dcc until that successor is complete.",
+  "next_action": "Create successor AR for authenticated route/ancestor authority; preserve AR-1288 evidence and AR-0814 head 29cfa193.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "29cfa19323a0ceb124438854d73f664ae2b86dcc",

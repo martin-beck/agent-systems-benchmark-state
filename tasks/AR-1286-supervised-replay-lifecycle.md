@@ -11,7 +11,7 @@
     "AR-1239"
   ],
   "id": "AR-1286",
-  "next_action": "Signed head d806411 adds a runtime-issued backend child probe and fail-closed missing-backend test. Qualified child probe is intentionally ignored pending delegated namespace capability: actual spawn reached bwrap and failed ScopeOwnership with bwrap namespace Resource temporarily unavailable. Do not claim positive lifecycle; next provide approved container/VM runner or record successor boundary, then add cancellation/timeout/crash/restart/egress fixtures.",
+  "next_action": "Await approved delegated namespace runner; then add cancellation, timeout, crash, restart and egress lifecycle fixtures.",
   "observed_branch": "feature/ar-1286-supervised-replay-lifecycle",
   "observed_dirty": 0,
   "observed_head": "d8064117cdebd2d1fa84cd4e65469cc802e6d281",

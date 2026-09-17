@@ -3,12 +3,15 @@
   "branch": "feature/ar-1255-bundled-mockagents-qemu-runner",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-1254", "AR-1253"],
+  "depends_on": [
+    "AR-1254",
+    "AR-1253"
+  ],
   "id": "AR-1255",
   "next_action": "Provision a digest-pinned bundled transport/QEMU runner and implement real in-container evidence.",
   "observed_branch": "",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-1255.md",
   "priority": "P1",

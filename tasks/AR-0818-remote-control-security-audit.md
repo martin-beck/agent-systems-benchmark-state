@@ -3,9 +3,17 @@
   "branch": "audit/remote-control",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-0813", "AR-0814", "AR-0815", "AR-0816", "AR-0817", "AR-0819"],
+  "depends_on": [
+    "AR-0813",
+    "AR-0814",
+    "AR-0815",
+    "AR-0816",
+    "AR-0817",
+    "AR-0819"
+  ],
   "id": "AR-0818",
   "next_action": "Independently audit remote protocol, trust, authorization, lifecycle, interoperability, privacy, and operational safety.",
+  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-0818.md",
   "priority": "P1",

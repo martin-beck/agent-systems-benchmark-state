@@ -6,6 +6,7 @@
   "depends_on": [],
   "id": "AR-1049",
   "next_action": "No further action: AR-1050 superseded this recovery after PR #16 merged and Trusted main exposed downstream startup readiness.",
+  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-1049.md",
   "priority": "P0",

@@ -6,6 +6,7 @@
   "depends_on": [],
   "id": "AR-1048",
   "next_action": "No further action: AR-1049 superseded this recovery after PR #15 merged and Trusted main falsified fixed session:0 targeting.",
+  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-1048.md",
   "priority": "P0",

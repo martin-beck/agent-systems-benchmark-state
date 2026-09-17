@@ -10,6 +10,7 @@
   ],
   "id": "AR-0894",
   "next_action": "After CLI and existing TUI CI-evidence dependencies complete, implement discoverable TUI parity for negotiated supported profiles and modes.",
+  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-0894.md",
   "priority": "P1",

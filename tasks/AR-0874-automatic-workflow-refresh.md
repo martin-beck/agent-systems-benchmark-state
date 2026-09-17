@@ -3,9 +3,12 @@
   "branch": "docs/automatic-workflow-refresh",
   "checkpoint_commit": "",
   "claim_expires": "",
-  "depends_on": ["AR-0873"],
+  "depends_on": [
+    "AR-0873"
+  ],
   "id": "AR-0874",
   "next_action": "Add essential-change detection, deterministic regeneration, and reviewed update automation for workflows and captures.",
+  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-0874.md",
   "priority": "P1",

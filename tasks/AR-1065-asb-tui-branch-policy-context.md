@@ -6,6 +6,7 @@
   "depends_on": [],
   "id": "AR-1065",
   "next_action": "A repository maintainer must remove the stale legacy required-status context from asb-tui main while retaining the app-scoped GitHub Actions check, then re-evaluate PR #26.",
+  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-1065.md",
   "priority": "P0",

@@ -9,6 +9,7 @@
   ],
   "id": "AR-0856",
   "next_action": "Keep planned while both child series run independently; complete only after AR-0862 and AR-0868 are durably done with executable live/replay qualification.",
+  "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
   "owner": "",
   "plan": "../plans/AR-0856.md",
   "priority": "P1",
