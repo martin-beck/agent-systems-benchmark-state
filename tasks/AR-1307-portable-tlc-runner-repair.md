@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Bounded canonical runner repair is implemented; run Ruff/format/mypy/full state suite, inspect remaining provenance/privacy gates, then qualify fresh exact-head portable and required tiers.",
+  "next_action": "Rebuild seed with cloud-init network config disabled before boot; prior QEMU serial stopped at systemd-networkd-wait-online despite late bootcmd mask. Then rerun exact b8db467ee portable-smoke and required/full tiers with schema-validated evidence.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T23:13:52+00:00",
+  "updated_at": "2026-09-17T23:14:15+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -206,3 +206,9 @@ and protected publication sequence.
   prior durable evidence and releasing claim for takeover.
 
 - 2026-09-17T23:13:52+00:00: Claimed by codex-ar1307-runner-repair-20260918.
+
+- 2026-09-17T23:14:15+00:00: Recovery checkpoint: old interrupted owner claim released and renewed.
+  QEMU attempt was infrastructure-startup failure: with -nic none, serial remained at
+  systemd-networkd-wait-online.service/start for ~37s and process exited; no formal result or
+  success attestation. The seed mask in bootcmd was too late. Next repair is an early cloud-init
+  network: config disabled seed, preserving no NIC/no host mounts and all formal gates.
