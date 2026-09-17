@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T15:17:30+00:00",
   "depends_on": [],
   "id": "AR-1302",
-  "next_action": "Run the exact reviewed f1931686c portable-smoke through the fresh UUID-wired 32G VM/data image and capture terminal attestation; container evidence portable-smoke-address-space.json passed, but VM qualification is still required before pr-publication/full.",
+  "next_action": "Use signed launcher commit 6907c558a to create a fresh overlay from the pinned root, boot the UUID-serial data disk, run guest UUID/mount preflight, then execute f1931686c portable-smoke and capture sanitized terminal attestation. Do not claim qualification from container evidence.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 393,
+  "task_revision": 394,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T13:25:03+00:00",
+  "updated_at": "2026-09-17T13:25:34+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1310,3 +1310,9 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T13:25:03+00:00: Recorded command exit 0; command argv SHA-256
   f87f3f65f41f03a11edf874320cbac3bf5973a0bae633d312af42950df2c3a97.
+
+- 2026-09-17T13:25:34+00:00: Launcher implementation is signed/DCO at 6907c558a. It validates
+  project-local non-symlink root/data/serial paths and reviewed qemu-system-x86_64, requires fresh
+  non-existing overlay, creates root-backed qcow2 overlays, assigns the reviewed data UUID as virtio
+  serial, uses -net none, 32G RAM, 8 vCPUs, bounded timeout, and cleanup. Five focused tests plus
+  Ruff pass. VM execution/guest preflight/attestation remain outstanding.
