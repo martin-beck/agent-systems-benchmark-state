@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T22:40:10+00:00",
+  "updated_at": "2026-09-17T22:40:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -163,3 +163,6 @@ and protected publication sequence.
   283ea296807f61d25a86cd8528f4863e1c7f1906cdc3341cb81a48f42d122c32.
 
 - 2026-09-17T22:40:10+00:00: Heartbeat by codex-ar1307-runner-repair-20260918.
+
+- 2026-09-17T22:40:20+00:00: Recorded command exit 1; command argv SHA-256
+  8de440b08dc960abe7f171b6fe8b051352470d1bb70805c3d482f73c16ac4e73.
