@@ -1628,7 +1628,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md): Supervised strict-replay cassette lifecycle | codex-ar1286-repair | Execute strict-replay cassettes through the runtime-owned supervised lifecycle. | Await approved delegated namespace runner; then add cancellation, timeout, crash, restart and egress lifecycle fixtures. |
 | P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | codex-ar1293-requalify-v2 | Repair the state-repository TLA admission runner and truthful worktree metadata. | Reconcile the still-failing vendor fixture contract to coordinator v0.3.7 and provide a host with enough thread capacity for the portable TLC VM; then rerun full state and formal gates. Candidate 53dd96389 is signed and focused-green but is not publishable while 133-test vendor failures and TLC EAGAIN remain. |
-| P0 | [AR-1299](../tasks/AR-1299.md): Complete authenticated agent catalog identity metadata | root-ar1299-catalog | Complete authenticated agent catalog signer, provenance, SBOM and license metadata. | Push b9edf44, open a PR, obtain independent exact-head review and hosted CI, then merge and observe post-merge assurance before releasing this AR and closing issue #164. |
+| P0 | [AR-1299](../tasks/AR-1299.md): Complete authenticated agent catalog identity metadata | root-ar1299-catalog | Complete authenticated agent catalog signer, provenance, SBOM and license metadata. | Await independent exact-head review and all hosted PR #213 checks at b9edf44; do not merge or close issue #164 until both pass. |
 
 ### Blocked (48)
 
