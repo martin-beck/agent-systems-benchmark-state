@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Repair commit 9e2341f35 is clean, signed+DCO, vendor-valid, and local quality-gate green; independently review exact diff, then publish PR and await exact-head CI before merge. Fresh formal tiers remain required.",
+  "next_action": "PR #24 is open at eb0da360b6091d5a5f74decfff4da39202226eec; local quality gates pass, but exact-head CI and fresh portable/required formal evidence remain before merge.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T22:30:28+00:00",
+  "updated_at": "2026-09-17T22:30:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -110,3 +110,8 @@ and protected publication sequence.
 - 2026-09-17T22:27:31+00:00: Heartbeat by codex-ar1307-runner-20260917.
 
 - 2026-09-17T22:30:28+00:00: Heartbeat by codex-ar1307-runner-20260917.
+
+- 2026-09-17T22:30:46+00:00: Independent review found signed repair commit
+  eda17a733a56855b851f79e73b65dea4a5879452 clean; PR #24 published. Schema validator still reports
+  pre-existing metadata defects, including empty checkpoints; no fresh formal/VM evidence is
+  claimed.
