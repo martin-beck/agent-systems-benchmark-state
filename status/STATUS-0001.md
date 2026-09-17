@@ -1646,7 +1646,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md): Required-tier QEMU user-bus runner | codex-ar1304-required-runner-20260917 | Create a clean required-containment QEMU runner for formal publication evidence. | Promote after review; build a fresh QEMU guest with a verified user D-Bus bus and run required pr-publication for the exact AR-1293 candidate. |
+| P0 | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md): Required-tier QEMU user-bus runner | codex-ar1304-required-runner-20260917 | Create a clean required-containment QEMU runner for formal publication evidence. | Integrate the required launcher into a fresh immutable guest, establish /run/user/1000/bus before systemd-run, and run exact AR-1293 pr-publication. The signed launcher contract 48da6f92b has positive/negative tests and preserves all six required resource properties; no attestation exists yet. |
 
 ### Blocked (50)
 

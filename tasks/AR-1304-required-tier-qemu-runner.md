@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1304",
-  "next_action": "Promote after review; build a fresh QEMU guest with a verified user D-Bus bus and run required pr-publication for the exact AR-1293 candidate.",
+  "next_action": "Integrate the required launcher into a fresh immutable guest, establish /run/user/1000/bus before systemd-run, and run exact AR-1293 pr-publication. The signed launcher contract 48da6f92b has positive/negative tests and preserves all six required resource properties; no attestation exists yet.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create a clean required-containment QEMU runner for formal publication evidence.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Required-tier QEMU user-bus runner",
-  "updated_at": "2026-09-17T14:47:02+00:00",
+  "updated_at": "2026-09-17T14:47:25+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner"
 }
 ---
@@ -60,3 +60,9 @@ logs, or claim full-exhaustive evidence before required attestation is green.
 
 - 2026-09-17T14:47:02+00:00: Recorded command exit 0; command argv SHA-256
   4cc91cb7f2aa23e229d8127eb337c1557cf921f6f19e4f66276414f23cedc6bb.
+
+- 2026-09-17T14:47:25+00:00: Implemented signed/DCO required user-bus launcher contract at
+  48da6f92b. It fails closed on any bus other than /run/user/1000/bus and emits systemd-run --user
+  with MemoryMax=3G, MemorySwapMax=3G, CPUQuota=200%, TasksMax=64, KillMode=control-group,
+  RuntimeMaxSec=1800. Focused tests 2/2 and Ruff pass. Guest integration and required pr-publication
+  attestation remain outstanding; full-exhaustive is still gated.
