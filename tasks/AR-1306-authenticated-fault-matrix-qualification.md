@@ -8,7 +8,7 @@
     "AR-1287"
   ],
   "id": "AR-1306",
-  "next_action": "Refactor the authenticated relay/service fixture into the complete fault matrix: retain ReplayRelay generation authentication, route positive cases through StrictReplayService::serve_authenticated_connection, and add cause-specific provider/descendant denial assertions with bounded cleanup. Then run repeated focused matrix and full locked ASB gates before signed review/publication.",
+  "next_action": "Candidate 910af9a is signed+DCO and replaces the fault matrix raw UnixListener with runtime-owned generation-authenticated ReplayRelay; focused native supervisor/replay tests 3/3 and full asb-runtime tests pass. Run complete locked ASB workspace gates and independent review; full acceptance still requires matrix-level real StrictReplayService positive parity and cause-specific egress evidence.",
   "observed_branch": "feature/ar-1306-authenticated-fault-matrix-qualification",
   "observed_dirty": 0,
   "observed_head": "910af9a3c380ecf035f839460f3304ccb8159e50",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 19,
+  "task_revision": 20,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T21:38:00+00:00",
+  "updated_at": "2026-09-17T21:38:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
@@ -89,3 +89,7 @@ publication, independent review, green exact-head CI, protected merge and post-m
 
 - 2026-09-17T21:37:52+00:00: Recorded command exit 0; command argv SHA-256
   9ceeabdfd43099b6aecf1259deea68d9d6514939a9b2b2cf5cf11f2969189b6f.
+
+- 2026-09-17T21:38:18+00:00: Implementation candidate 910af9a: fault matrix now uses ReplayRelay
+  rather than an unauthenticated raw UnixListener. Focused 3/3, full asb-runtime tests, fmt and
+  clippy pass. No asb-tui or handoffctl changes.
