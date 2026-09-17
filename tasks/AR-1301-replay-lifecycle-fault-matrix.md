@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 248,
+  "task_revision": 249,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:56:11+00:00",
+  "updated_at": "2026-09-17T11:56:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -691,3 +691,6 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
 
 - 2026-09-17T11:56:03+00:00: Recorded command exit 0; command argv SHA-256
   82b7c98e8bd401d5261e3e2f7f47965b87814759f0ef9a1cc6bb2d5d3e1a02be.
+
+- 2026-09-17T11:56:30+00:00: Recorded command exit 0; command argv SHA-256
+  8207e028517c8cd9abbee82184195b0d9ec91e000044784791b5f7d25a9ca9a3.
