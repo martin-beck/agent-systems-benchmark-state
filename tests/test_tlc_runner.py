@@ -8,6 +8,7 @@ from __future__ import annotations
 import importlib.util
 import json
 import os
+import sys
 import tempfile
 import unittest
 from argparse import Namespace
@@ -35,6 +36,14 @@ if PROFILE_SPEC is None or PROFILE_SPEC.loader is None:
     raise RuntimeError("cannot load tier profiles")
 PROFILES = importlib.util.module_from_spec(PROFILE_SPEC)
 PROFILE_SPEC.loader.exec_module(PROFILES)
+sys.modules["tier_profiles"] = PROFILES
+SEED_SPEC = importlib.util.spec_from_file_location(
+    "seed_profile", ROOT / "formal" / "handoffctl" / "seed_profile.py"
+)
+if SEED_SPEC is None or SEED_SPEC.loader is None:
+    raise RuntimeError("cannot load seed profile")
+SEED = importlib.util.module_from_spec(SEED_SPEC)
+SEED_SPEC.loader.exec_module(SEED)
 
 
 class TlcRunnerTests(unittest.TestCase):
@@ -43,6 +52,9 @@ class TlcRunnerTests(unittest.TestCase):
             encoding="utf-8"
         )
         self.assertIn("run: formal/handoffctl/verify.sh --tier full-exhaustive", workflow)
+        verify = (ROOT / "formal" / "handoffctl" / "verify.sh").read_text(encoding="utf-8")
+        self.assertIn("--timeout-seconds", verify)
+        self.assertIn("timeout_for_tier", verify)
 
     def test_pr_tier_has_one_process_contract_fixture(self) -> None:
         config = (ROOT / "formal" / "handoffctl" / "HandoffctlPR.cfg").read_text(encoding="utf-8")
@@ -225,6 +237,15 @@ class TlcRunnerTests(unittest.TestCase):
         self.assertEqual(PROFILES.timeout_for_tier("full-exhaustive"), 7200)
         with self.assertRaisesRegex(ValueError, "unknown formal tier"):
             PROFILES.timeout_for_tier("unknown")
+
+    def test_guest_seed_exports_tier_timeout_and_bounds(self) -> None:
+        required = SEED.environment_for_tier("pr-publication")
+        full = SEED.environment_for_tier("full-exhaustive")
+        self.assertEqual(required["TLC_TIMEOUT_SECONDS"], "1800")
+        self.assertEqual(full["TLC_TIMEOUT_SECONDS"], "7200")
+        self.assertEqual(full["TLC_MEMORY_MAX"], required["TLC_MEMORY_MAX"])
+        with self.assertRaisesRegex(ValueError, "unknown formal tier"):
+            SEED.environment_for_tier("unknown")
 
 
 if __name__ == "__main__":
