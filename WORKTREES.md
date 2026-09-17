@@ -92,8 +92,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1289-formal-lock-gate` | `fix/ar-1289-formal-lock-gate` | `53981d651645` | 0 | behind 11, ahead 1 |
 | `agent-systems-benchmark-ar-1290-dependabot-dco` | `repair/ar-1290-dependabot-dco` | `418960215134` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-ar-1292-tla-provenance` | `repair/ar-1292-tla-provenance` | `c1b1860786e8` | 0 | behind 0, ahead 0 |
-| `agent-systems-benchmark-ar-1300-runtime-cassette-dispatch-seam` | `feature/ar-1300-runtime-cassette-dispatch-seam` | `c1b1860786e8` | 6 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-cli/src/lib.rs`, `crates/asb-replay/src/lib.rs`, `crates/asb-replay/src/service.rs`, `crates/asb-runtime/src/launch_factory.rs`, `crates/asb-runtime/src/lib.rs`, `crates/asb-runtime/src/transport.rs` |
+| `agent-systems-benchmark-ar-1300-runtime-cassette-dispatch-seam` | `feature/ar-1300-runtime-cassette-dispatch-seam` | `c1b1860786e8` | 7 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-cli/src/lib.rs`, `crates/asb-replay/src/lib.rs`, `crates/asb-replay/src/service.rs`, `crates/asb-runtime/src/launch_factory.rs`, `crates/asb-runtime/src/lib.rs`, `crates/asb-runtime/src/transport.rs`, `docs/examples/asb-cli-workflow-v1.provenance.json` |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 533, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 636, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 530, ahead 0 |
