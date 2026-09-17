@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1300-runtime-cassette-dispatch-seam",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T09:01:32+00:00",
   "depends_on": [
     "AR-1282",
     "AR-1285"
@@ -12,15 +12,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "",
+  "owner": "ar1300_dispatch",
   "plan": "../plans/AR-1300.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Connect runtime-issued cassette operations to the real strict-replay dispatch path.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime-to-replay cassette dispatch seam",
-  "updated_at": "2026-09-17T07:00:52+00:00",
+  "updated_at": "2026-09-17T07:01:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1300-runtime-cassette-dispatch-seam"
 }
 ---
@@ -43,3 +43,5 @@ fixtures/tests. Do not modify asb-tui or coordinator implementation.
 
 - 2026-09-17T07:00:52+00:00: Dependencies AR-1282 and AR-1285 verified done; promote ASB-only
   runtime-to-replay dispatch seam
+
+- 2026-09-17T07:01:32+00:00: Claimed by ar1300_dispatch.
