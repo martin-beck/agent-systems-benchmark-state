@@ -10,7 +10,7 @@
     "AR-1239"
   ],
   "id": "AR-1285",
-  "next_action": "Promote after dependency verification; implement an opaque runtime-owned launch factory and CLI entrypoint boundary.",
+  "next_action": "Run full locked workspace, rustdoc, policy/privacy/formal/portability gates on signed 9fde4d8; then push exact head and request independent review.",
   "observed_branch": "feature/ar-1285-runtime-launch-factory",
   "observed_dirty": 0,
   "observed_head": "9fde4d8a6ff1c820fbfa4fc0214c1e36ea7f86d5",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-owned launch factory for authenticated strict-replay CLI execution.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "Runtime-owned strict-replay launch factory",
-  "updated_at": "2026-09-17T01:44:51+00:00",
+  "updated_at": "2026-09-17T01:45:07+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1285-runtime-launch-factory"
 }
 ---
@@ -182,3 +182,9 @@ separate successor rather than claiming strict-replay execution.
 
 - 2026-09-17T01:44:43+00:00: Recorded command exit 0; command argv SHA-256
   7067713b5315d9cb13b94f48b3d2235baf7c77114f76462704596774d465e7c9.
+
+- 2026-09-17T01:45:07+00:00: Signed checkpoints: 20bedf2 initial opaque authority, daba285 added
+  runtime attestation token and cassette digest binding, 9fde4d8 updated the offline CLI workflow
+  transcript/provenance to record argument-only replay rejection. Focused runtime launch_factory
+  tests pass 4/4; CLI authority-required replay boundary test passes; clippy and fmt checks pass.
+  Worktree clean at 9fde4d8.

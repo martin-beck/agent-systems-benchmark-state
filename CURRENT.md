@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1285](tasks/AR-1285-runtime-launch-factory.md): Runtime-owned strict-replay launch factory | Provide a runtime-owned launch factory for authenticated strict-replay CLI execution. | Promote after dependency verification; implement an opaque runtime-owned launch factory and CLI entrypoint boundary. | asb_ar1024_lifecycle_router |
+| P0 | [AR-1285](tasks/AR-1285-runtime-launch-factory.md): Runtime-owned strict-replay launch factory | Provide a runtime-owned launch factory for authenticated strict-replay CLI execution. | Run full locked workspace, rustdoc, policy/privacy/formal/portability gates on signed 9fde4d8; then push exact head and request independent review. | asb_ar1024_lifecycle_router |
 
 ## Open
 
