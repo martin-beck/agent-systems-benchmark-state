@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Wait for old ada383cea VM termination; then rebuild exact-head fa57625d9 image/seed, run required and independently re-reviewed full gates, validating overlay digest and exact serial markers. | codex-ar1293-timeout-repair-20260917 |
-| P0 | [AR-1306](tasks/AR-1306-authenticated-fault-matrix-qualification.md): Authenticated strict-replay fault-matrix qualification | Qualify the real authenticated strict-replay service and fault matrix missing from PR #221. | PR #222 exact head 910af9a3c380ecf035f839460f3304ccb8159e50 remains open. Hosted checks: headers/platform/AWQ/retained-faults/Kani/Loom pass; emulated-aarch64, quality/supply, Rust, formal TLC, fuzz, mutation sentinels still pending. Await terminal green checks and independent review; do not merge yet. | codex-ar1306-auth-listener-20260917 |
+| P0 | [AR-1306](tasks/AR-1306-authenticated-fault-matrix-qualification.md): Authenticated strict-replay fault-matrix qualification | Qualify the real authenticated strict-replay service and fault matrix missing from PR #221. | PR #222 exact head 910af9a3c380ecf035f839460f3304ccb8159e50 has all 12 hosted checks terminal pass, including emulated-aarch64 (7m47s). Await independent approval/review and coordinator merge authorization; do not merge solely on green CI. | codex-ar1306-auth-listener-20260917 |
 
 ## Blocked
 
