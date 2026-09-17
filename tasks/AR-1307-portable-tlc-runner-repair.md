@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 90,
+  "task_revision": 91,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T23:25:46+00:00",
+  "updated_at": "2026-09-17T23:25:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -317,3 +317,6 @@ and protected publication sequence.
   installed; this is a tooling limitation, not YAML evidence. Source escaping and explicit
   package_update/package_upgrade false plus packages empty were patched; next gate is project
   offline YAML validation and clean boot.
+
+- 2026-09-17T23:25:57+00:00: Recorded command exit 0; command argv SHA-256
+  a665430ffafff42db935fd497dea83f66a4b4e50765a4214ec56cd80b321c7a2.
