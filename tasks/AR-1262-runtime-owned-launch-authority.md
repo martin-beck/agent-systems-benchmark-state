@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1262",
-  "next_action": "Monitor PR #207 exact head c0091857 through terminal required CI; retain merge block until independent review and all checks green.",
+  "next_action": "Do not merge PR #207. Create a reviewed runtime-to-CLI entrypoint successor that supplies real runtime-issued ReplayRelayHandoff/SandboxLaunchInput/ResourceLease and verified command identities; then rebase the authority work, add real cassette request/response plus egress/cancellation/restart/timeout/crash/no-fallback lifecycle evidence, and rerun exact-head gates. Preserve c0091857 and its failed ToolPin fixture evidence.",
   "observed_branch": "feature/ar-1262-runtime-owned-launch-authority",
   "observed_dirty": 0,
   "observed_head": "535149950dc4b0ec1105093092689be146972b50",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Issue runtime-owned authority for supervised strict-replay execution.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-17T04:29:46+00:00",
+  "updated_at": "2026-09-17T04:29:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1262-runtime-authority"
 }
 ---
@@ -252,3 +252,5 @@ ownership and bounded lifecycle evidence.
   blocker; no product change.
 
 - 2026-09-17T04:29:46+00:00: Claimed by codex-ar1262-pr-audit-20260917b.
+
+- 2026-09-17T04:29:49+00:00: Corrected stale operational next action after exact-head audit.

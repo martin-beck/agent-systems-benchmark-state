@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1262](tasks/AR-1262-runtime-owned-launch-authority.md): Runtime-owned strict-replay launch authority | Issue runtime-owned authority for supervised strict-replay execution. | Monitor PR #207 exact head c0091857 through terminal required CI; retain merge block until independent review and all checks green. | codex-ar1262-pr-audit-20260917b |
+| P0 | [AR-1262](tasks/AR-1262-runtime-owned-launch-authority.md): Runtime-owned strict-replay launch authority | Issue runtime-owned authority for supervised strict-replay execution. | Do not merge PR #207. Create a reviewed runtime-to-CLI entrypoint successor that supplies real runtime-issued ReplayRelayHandoff/SandboxLaunchInput/ResourceLease and verified command identities; then rebase the authority work, add real cassette request/response plus egress/cancellation/restart/timeout/crash/no-fallback lifecycle evidence, and rerun exact-head gates. Preserve c0091857 and its failed ToolPin fixture evidence. | codex-ar1262-pr-audit-20260917b |
 
 ## Blocked
 
