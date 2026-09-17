@@ -7,13 +7,13 @@
 
 ## Portfolio overview
 
-**325 ARs tracked** across 5 active status categories.
+**325 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 0 |
-| **Blocked** | Cannot proceed until its recorded blocker clears | 51 |
+| **Open** | Dependency-ready and available to claim | 1 |
+| **Blocked** | Cannot proceed until its recorded blocker clears | 50 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 206 |
@@ -389,7 +389,7 @@ flowchart LR
         AR_1293["AR-1293 - Blocked"]:::status_blocked
         AR_1294["AR-1294 - Blocked"]:::status_blocked
         AR_1295["AR-1295 - Blocked"]:::status_blocked
-        AR_1296["AR-1296 - Blocked"]:::status_blocked
+        AR_1296["AR-1296 - Open"]:::status_open
         AR_1297["AR-1297 - Done"]:::status_done
     end
     AR_0001 --> AR_0002
@@ -1617,7 +1617,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Blocked (51)
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1296](../tasks/AR-1296-state-quality-baseline.md): State quality-gate baseline | Unclaimed | Restore strict state-repository mypy and coverage quality gates without weakening thresholds. | Repair explicit tools package identity and add bounded offline upgrade-command coverage until strict mypy and the unchanged 95&#37; coverage gate pass. |
+
+### Blocked (50)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1657,7 +1663,6 @@ flowchart LR
 | P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Unclaimed | Repair the state-repository TLA admission runner and truthful worktree metadata. | Re-run state/formal gates after v0.3.7 fixture repair and owner-safe TLC runner integration; do not publish while red. |
 | P0 | [AR-1294](../tasks/AR-1294-state-gate-baseline.md): State formal-gate baseline integrity | Unclaimed | Restore vendor and formal admission baseline integrity needed to qualify AR-1293. | Audit the vendor lock/digest mismatch and root-owned TLC admission lock; repair only through immutable provenance and owner-safe lock handling, then rerun full state/formal gates. |
 | P0 | [AR-1295](../tasks/AR-1295-vendor-fixture-v037.md): Coordinator vendor v0.3.7 fixture alignment | Unclaimed | Align stale coordinator vendor tests with the verified immutable v0.3.7 pin. | Update stale coordinator vendor test fixtures from v0.3.5 to verified immutable v0.3.7 and rerun the complete state test suite without changing vendor or handoffctl code. |
-| P0 | [AR-1296](../tasks/AR-1296-state-quality-baseline.md): State quality-gate baseline | Unclaimed | Restore strict state-repository mypy and coverage quality gates without weakening thresholds. | Repair explicit tools package identity and add bounded offline upgrade-command coverage until strict mypy and the unchanged 95&#37; coverage gate pass. |
 | P1 | [AR-0604](../tasks/AR-0604-csb-native-qualification.md): Qualify native CSB monitoring contention and overhead | Unclaimed | Qualify native x86_64 CSB monitoring and required emulated-AArch64 portability without blocking on native ARM64. | Obtain authorized native x86 runner and immutable CSB/Python evidence; rerun native_boundary and record A/B overhead. |
 | P1 | [AR-0704](../tasks/AR-0704-native-capacity-controller.md): Control native capacity lifecycle | Unclaimed | Control genuine native platform capacity lifecycle. | Formal assurance owner AR-0877/AR-0907 must repair the pinned TLA artifact provenance mismatch (downloaded byte count/hash) before PR #119 can be requalified; AR-0704 native controller requires no source change. |
 | P1 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Unclaimed | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Create successor AR for authenticated route/ancestor authority; preserve AR-1288 evidence and AR-0814 head 29cfa193. |

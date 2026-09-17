@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1296.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Restore strict state-repository mypy and coverage quality gates without weakening thresholds.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "State quality-gate baseline",
-  "updated_at": "2026-09-17T05:26:47+00:00",
+  "updated_at": "2026-09-17T05:34:22+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1296-quality"
 }
 ---
@@ -126,3 +126,6 @@ alter handoffctl semantics without tests.
   remains blocked by pre-existing task metadata/schema errors across many ARs (stale missing
   observed_head and unsupported superseded_by fields) and existing long next_action values. No
   handoffctl semantics, product, asb-tui, formal, or TLC changes.
+
+- 2026-09-17T05:34:22+00:00: AR-1297 repaired schema/generated-state metadata; rerun AR-1296 full
+  state quality gates and release if all green.
