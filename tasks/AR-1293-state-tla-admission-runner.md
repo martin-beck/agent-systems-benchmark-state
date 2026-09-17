@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 460,
+  "task_revision": 461,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T19:01:55+00:00",
+  "updated_at": "2026-09-17T19:02:04+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1539,3 +1539,6 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   candidate ref and security fixture but its guest run failed because dangling JDK security symlinks
   rejected cp; the tracked seed now removes those links before copying pinned files. Disposable
   image was repaired with e2fsck; rebuild is required for the new seed/candidate.
+
+- 2026-09-17T19:02:04+00:00: Recorded command exit 0; command argv SHA-256
+  ccb5bf770069b206646e67f644984c7d0dc70bd1f728facf1508878cca74b718.
