@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 32,
+  "task_revision": 33,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T05:10:28+00:00",
+  "updated_at": "2026-09-17T05:44:21+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -125,3 +125,7 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 - 2026-09-17T05:10:28+00:00: Blocked ownerless pending vendor baseline reconciliation and host
   capacity for TLC VM; candidate repair commit 53dd96389 remains unpublished until exact full gates
   are green.
+
+- 2026-09-17T05:44:21+00:00: AR-1295 v0.3.7 fixtures, AR-1296 quality gates, and AR-1298 metadata
+  cleanup are complete; requalify signed runner candidate 53dd96389 with owner-safe formal paths and
+  host-capacity evidence.
