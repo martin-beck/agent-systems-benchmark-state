@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover protected-main DCO assurance for the immutable Dependabot serde commit without weakening broad policy.",
-  "task_revision": 51,
+  "task_revision": 52,
   "title": "Dependabot DCO boundary recovery",
-  "updated_at": "2026-09-17T03:55:34+00:00",
+  "updated_at": "2026-09-17T03:55:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1290-dependabot-dco"
 }
 ---
@@ -182,3 +182,6 @@ change certificate/runtime behavior, touch asb-tui, or weaken broad policy.
   35179405203, Formal 35179405252, TLC/Loom/Kani, fuzz/fault/mutation, headers, platform and AWQ.
   Cumulative commits 04ce4ac, 1cff949, 4189602 all have Good SSH signatures and matching Martin DCO.
   No review is recorded yet; merge is intentionally held.
+
+- 2026-09-17T03:55:56+00:00: Recorded command exit 0; command argv SHA-256
+  d46d9fc222aeecfa3fb44cb15a2ce177fea922f8b650427430cd10c3e75eb8b6.
