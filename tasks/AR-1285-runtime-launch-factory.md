@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-owned launch factory for authenticated strict-replay CLI execution.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Runtime-owned strict-replay launch factory",
-  "updated_at": "2026-09-17T01:53:36+00:00",
+  "updated_at": "2026-09-17T01:54:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1285-runtime-launch-factory"
 }
 ---
@@ -248,3 +248,6 @@ separate successor rather than claiming strict-replay execution.
   shadow checks already SUCCESS. No merge requested.
 
 - 2026-09-17T01:53:36+00:00: Heartbeat by asb_ar1024_lifecycle_router.
+
+- 2026-09-17T01:54:57+00:00: Recorded command exit 1; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
