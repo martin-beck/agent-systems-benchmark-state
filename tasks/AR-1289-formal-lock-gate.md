@@ -2,7 +2,7 @@
 {
   "branch": "fix/ar-1289-formal-lock-gate",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T05:13:06+00:00",
+  "claim_expires": "2026-09-17T05:13:50+00:00",
   "depends_on": [],
   "id": "AR-1289",
   "next_action": "Promote and claim; reproduce formal/Cargo.lock failure on protected main, determine exact lock drift, and repair the smallest ASB formal gate scope.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the stale formal Cargo.lock required by hosted exact-head gates.",
-  "task_revision": 6,
+  "task_revision": 7,
   "title": "Repair formal lock gate",
-  "updated_at": "2026-09-17T03:13:38+00:00",
+  "updated_at": "2026-09-17T03:13:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1289-formal-lock-gate"
 }
 ---
@@ -37,3 +37,5 @@ be used with `--locked`. Repair and verify this gate independently of feature AR
 
 - 2026-09-17T03:13:31+00:00: Recorded command exit 0; command argv SHA-256
   d0f0b52a0a5d46ebd4657c74ecbcbb904e0df02a72c4b192d4e9d74ecd6c4182.
+
+- 2026-09-17T03:13:50+00:00: Heartbeat by asb_ar1024_lifecycle_router.
