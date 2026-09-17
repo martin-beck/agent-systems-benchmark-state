@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T12:36:25+00:00",
   "depends_on": [],
   "id": "AR-1302",
-  "next_action": "Run v9 on the released distinct VM with the pinned offline JDK/JAR and explicit XDG_RUNTIME_DIR/DBUS_SESSION_BUS_ADDRESS for the guest user systemd manager; require terminal full-exhaustive attestation before completion.",
+  "next_action": "Run a fresh disposable v10 guest as user asb with XDG_RUNTIME_DIR and DBUS_SESSION_BUS_ADDRESS set, TLC_CGROUP_MODE=required, pinned offline JDK/JAR, and capture terminal attestation; then stop stale generic VM 1928184 through handoffctl and record cleanup.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 217,
+  "task_revision": 218,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T10:41:39+00:00",
+  "updated_at": "2026-09-17T10:42:51+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -692,3 +692,9 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T10:41:39+00:00: Recorded command exit 0; command argv SHA-256
   d39be40074558f4ac48a15b8acbb9b5210c94fa6421b162d12dc0d51cf556f71.
+
+- 2026-09-17T10:42:51+00:00: 2026-09-17T10:42:10Z: v9 retained required systemd containment and set
+  XDG_RUNTIME_DIR/DBUS_SESSION_BUS_ADDRESS, but root cloud-init invocation failed with Failed to
+  start transient service unit: Transport endpoint is not connected (ASB_RC=1), no attestation. The
+  runner/data/JAR remain isolated and no full gate success is claimed. Next fix is to invoke verify
+  as the guest asb UID through runuser so the active user manager owns the systemd transient unit.
