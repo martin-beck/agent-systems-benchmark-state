@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T21:21:39+00:00",
+  "claim_expires": "2026-09-17T21:22:47+00:00",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Monitor the active full-exhaustive QEMU until terminal completion; validate full attestation and receipt against candidate 903a87844, then record final evidence.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 527,
+  "task_revision": 528,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T20:37:35+00:00",
+  "updated_at": "2026-09-17T20:37:47+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1742,3 +1742,5 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   MemorySwapMax, 200% CPUQuota, TasksMax64, 8G address-space bound, 2 TLC workers, offline curl
   shim, and no host mounts. Receipt binds candidate/seed/image/JAR/JDK/command/serial/attestation
   digests. Full run is active; no missing clean-runner property found.
+
+- 2026-09-17T20:37:47+00:00: Heartbeat by codex-ar1293-timeout-repair-20260917.
