@@ -11,7 +11,7 @@
   "id": "AR-1277",
   "next_action": "Promote after dependency verification; implement the authenticated runtime-to-CLI replay transport boundary and executable lifecycle tests.",
   "observed_branch": "feature/ar-1277-runtime-cli-replay-transport",
-  "observed_dirty": 0,
+  "observed_dirty": 5,
   "observed_head": "69e8b064d3121a4bae1f672cdae9c0c8672000bc",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1277.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-issued transport channel for primary strict replay.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Runtime-to-CLI replay transport boundary",
-  "updated_at": "2026-09-17T00:01:10+00:00",
+  "updated_at": "2026-09-17T00:01:17+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1277-runtime-cli-replay-transport"
 }
 ---
