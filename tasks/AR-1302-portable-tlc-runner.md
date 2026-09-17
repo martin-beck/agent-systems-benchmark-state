@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T15:54:01+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Use run_lifecycle from signed commit 1fd5e31cf to create a fresh overlay, boot the UUID-serial data disk, run guest UUID/mount preflight, then execute f1931686c portable-smoke and capture sanitized terminal attestation. Do not claim qualification from container evidence.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "codex-ar1302-f193-data-image",
+  "owner": "",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 476,
+  "task_revision": 477,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T13:54:01+00:00",
+  "updated_at": "2026-09-17T13:54:04+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1598,3 +1598,11 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   f16d2cb41 image. Run fresh UUID VM portable-smoke and capture attestation.
 
 - 2026-09-17T13:54:01+00:00: Claimed by codex-ar1302-f193-data-image.
+
+- 2026-09-17T13:54:04+00:00: Verified exact source commit f1931686c, JDK path
+  /srv/data/projects/asb-state-tlc-data-f16d2cb41/jvm/bin/java, and pinned JAR SHA256 936a2620...
+  are locally available. However no fresh image assembly/mount/injection was completed in this turn;
+  the only prepared raw image is stale f16d2cb41 and is explicitly prohibited. No VM smoke or
+  attestation was claimed. Next action: create a new private ext4 data image, inject exact
+  source/JDK/JAR and offline shim through approved bounded provisioning, record its
+  digest/provenance, then rerun VM.
