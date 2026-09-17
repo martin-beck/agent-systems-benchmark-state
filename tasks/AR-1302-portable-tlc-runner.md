@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 341,
+  "task_revision": 342,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:45:09+00:00",
+  "updated_at": "2026-09-17T12:45:50+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1132,3 +1132,6 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   mount, then rerun exact containment and portable-smoke; full-exhaustive remains gated.
 
 - 2026-09-17T12:45:09+00:00: Claimed by codex-ar1302-data-mount-repair.
+
+- 2026-09-17T12:45:50+00:00: Recorded command exit 0; command argv SHA-256
+  d7a5f8493c5c52feaa2c04132e918a7b1e04b5fa3c56bd1c9fb690e6da2f6931.
