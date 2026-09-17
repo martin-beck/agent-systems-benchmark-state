@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1302](tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | Provision a clean portable TLC CI/VM runner for state formal admission. | Repair the runner contract explicitly, not by bypass: add a reviewed bounded virtual-address-space limit separate from the 3G physical/swap attested bounds, or use a portable cgroup-backed launcher that preserves 3G memory/swap while allowing JVM native mappings. Add positive/negative tests and update formal evidence before rerunning portable-smoke. Do not launch required-pr/full until smoke has terminal success. | codex-ar1302-capacity-repair |
+| P0 | [AR-1302](tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | Provision a clean portable TLC CI/VM runner for state formal admission. | Create a reviewed AR-1293/state runner change that separates a bounded virtual-address-space limit from the 3 GiB physical/swap attested bounds, with positive/negative tests and formal evidence update. Then run fresh VM preflight and portable-smoke; only after smoke terminal success may required-pr/full proceed. | codex-ar1302-capacity-repair |
 
 ## Blocked
 

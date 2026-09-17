@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T14:50:23+00:00",
   "depends_on": [],
   "id": "AR-1302",
-  "next_action": "Repair the runner contract explicitly, not by bypass: add a reviewed bounded virtual-address-space limit separate from the 3G physical/swap attested bounds, or use a portable cgroup-backed launcher that preserves 3G memory/swap while allowing JVM native mappings. Add positive/negative tests and update formal evidence before rerunning portable-smoke. Do not launch required-pr/full until smoke has terminal success.",
+  "next_action": "Create a reviewed AR-1293/state runner change that separates a bounded virtual-address-space limit from the 3 GiB physical/swap attested bounds, with positive/negative tests and formal evidence update. Then run fresh VM preflight and portable-smoke; only after smoke terminal success may required-pr/full proceed.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 360,
+  "task_revision": 361,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:51:01+00:00",
+  "updated_at": "2026-09-17T12:52:00+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1199,3 +1199,10 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T12:51:01+00:00: Recorded command exit 0; command argv SHA-256
   d709e5a449886c08660b0495f04fac85fef8ecde7d64346771b5f2dd8e74c358.
+
+- 2026-09-17T12:52:00+00:00: 2026-09-17T12:51:30Z: Capacity repair review complete. The portable
+  Docker helper already provides a 20 GiB address-space bound, but the VM portable-smoke path
+  executes the reviewed AR-1293 tools/tlc_runner.py, whose portable mode sets RLIMIT_AS equal to the
+  attested 3 GiB memory_max. The clean UUID-wired VM proved mount/JAR/TLC startup but failed native
+  JVM allocation under that ceiling. Raising AS ad hoc or changing tier evidence would
+  weaken/circumvent the reviewed contract; no source or gate change was made.
