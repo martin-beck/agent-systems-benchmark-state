@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T13:09:03+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Run a fresh disposable v10 guest as user asb with XDG_RUNTIME_DIR and DBUS_SESSION_BUS_ADDRESS set, TLC_CGROUP_MODE=required, pinned offline JDK/JAR, and capture terminal attestation; then stop stale generic VM 1928184 through handoffctl and record cleanup.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "codex-ar1302-runner-20260917-imagebus",
+  "owner": "",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 290,
+  "task_revision": 291,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T11:17:07+00:00",
+  "updated_at": "2026-09-17T11:17:33+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -931,3 +931,13 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T11:17:07+00:00: Recorded command exit 1; command argv SHA-256
   19a2bcbca5abbb2415c86a9185e9941f55bccc437b1852143fe4e079f6bad739.
+
+- 2026-09-17T11:17:33+00:00: 2026-09-17T11:18:00Z: Fresh image-level repair added a boot-enabled
+  asb-session-bus.service requiring user-runtime-dir@1000 and ordered before cloud-final; fresh 16
+  GiB data disk and 32 GiB/16 GiB VM were used with no network or host mounts. The bounded v22
+  attempt reached user@1000 and high QEMU CPU but was stopped before cloud-final produced runner
+  evidence; after offline fsck repair, the data disk contained no full-exhaustive.log or
+  attestation, so no verify terminal result can be claimed. The image-level bus path remains an
+  infrastructure blocker: one clean future attempt must capture systemd unit status/bus socket and
+  terminal attestation without cloud-init shell retries. Runner is stopped and AR is ownerless
+  blocked.
