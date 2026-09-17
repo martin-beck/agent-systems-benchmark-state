@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T03:00:43+00:00",
+  "updated_at": "2026-09-17T03:00:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
@@ -201,3 +201,6 @@ must not reuse unmerged strict-replay or asb-tui branches.
   --locked --workspace passed; cargo clippy --offline --locked --workspace --all-targets -- -D
   warnings passed; certificate-focused tests 7/7 passed. Product head
   01bf266e0d86e0f3bdb676aeb0fef32e9116f75d is clean, SSH-signed, with matching DCO.
+
+- 2026-09-17T03:00:52+00:00: Recorded command exit 0; command argv SHA-256
+  84b337450e1940a3484de7020a0103bfe0d26b27f5478cf84ea4798eeff1c8fe.
