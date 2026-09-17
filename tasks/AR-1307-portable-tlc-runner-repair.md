@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Exact local quality gates now pass on the repair branch; run launcher contract tests and source/privacy/schema checks, then commit the repair, independently review the complete diff, and only then publish.",
+  "next_action": "Repair commit 9e2341f35 is clean, signed+DCO, vendor-valid, and local quality-gate green; independently review exact diff, then publish PR and await exact-head CI before merge. Fresh formal tiers remain required.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T22:20:10+00:00",
+  "updated_at": "2026-09-17T22:21:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -89,3 +89,12 @@ and protected publication sequence.
 - 2026-09-17T22:20:01+00:00: Heartbeat by codex-ar1307-runner-20260917.
 
 - 2026-09-17T22:20:10+00:00: Heartbeat by codex-ar1307-runner-20260917.
+
+- 2026-09-17T22:21:48+00:00: Durable checkpoint: repair implementation committed at 9e2341f35
+  (signed+DCO). It restores immutable coordinator vendor files, adds bounded argv-only process-group
+  timeout/cleanup and DEVNULL output handling, second-disk private defaults,
+  source/input/runner/artifact provenance, root-confined attestation, canonical tier launcher, and 4
+  launcher tests. Gates: focused runner 24/24; launcher 4/4; full state suite 162/162; Ruff check
+  pass; Ruff format 22 files pass; uv-frozen offline mypy tools/tests 20 files pass; vendor verify
+  v0.3.7 pass; diff-check/privacy scan pass. No fresh TLC execution yet; host Docker/QEMU/formal
+  capacity must be qualified before claiming evidence.
