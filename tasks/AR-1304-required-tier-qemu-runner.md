@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1304.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Create a clean required-containment QEMU runner for formal publication evidence.",
-  "task_revision": 52,
+  "task_revision": 53,
   "title": "Required-tier QEMU user-bus runner",
-  "updated_at": "2026-09-17T15:00:43+00:00",
+  "updated_at": "2026-09-17T15:01:08+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner"
 }
 ---
@@ -205,3 +205,6 @@ logs, or claim full-exhaustive evidence before required attestation is green.
   --user returns Transport endpoint is not connected. The correct next repair must use the
   image-supported system-managed user@1000 manager/session bus ordering and environment; no wrapper,
   portable fallback, or gate weakening is acceptable. No required attestation exists.
+
+- 2026-09-17T15:01:08+00:00: Continue active repair; do not release before implementing and testing
+  system-managed user@1000 ordering
