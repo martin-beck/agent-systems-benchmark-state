@@ -79,7 +79,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1279-end-to-end-replay-runtime` | `feature/ar-1279-end-to-end-replay-runtime` | `69e8b064d312` | 0 | behind 0, ahead 0 |
 | `agent-systems-benchmark-ar-1280-cross-crate-replay-entrypoint` | `feature/ar-1280-cross-crate-replay-entrypoint` | `f92a86b126e3` | 0 | behind 0, ahead 5 |
 | `agent-systems-benchmark-ar-1281-supervised-cassette-lifecycle` | `feature/ar-1281-supervised-cassette-lifecycle` | `69e8b064d312` | 0 | behind 0, ahead 0 |
-| `agent-systems-benchmark-ar-1282-authenticated-replay-transport` | `feature/ar-1282-authenticated-replay-transport` | `69e8b064d312` | 0 | behind 0, ahead 0 |
+| `agent-systems-benchmark-ar-1282-authenticated-replay-transport` | `feature/ar-1282-authenticated-replay-transport` | `69e8b064d312` | 5 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-core/src/lib.rs`, `crates/asb-runtime/Cargo.toml`, `crates/asb-runtime/src/lib.rs`, `crates/asb-core/src/replay_transport.rs`, `crates/asb-runtime/src/transport.rs` |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 509, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 612, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 506, ahead 0 |
