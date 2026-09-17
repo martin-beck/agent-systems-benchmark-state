@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1262](tasks/AR-1262-runtime-owned-launch-authority.md): Runtime-owned strict-replay launch authority | Issue runtime-owned authority for supervised strict-replay execution. | Monitor PR #207 exact head c0091857 through terminal required CI; retain merge block until independent review and all checks green. | - |
+| P0 | [AR-1262](tasks/AR-1262-runtime-owned-launch-authority.md): Runtime-owned strict-replay launch authority | Issue runtime-owned authority for supervised strict-replay execution. | Monitor PR #207 exact head c0091857 through terminal required CI; retain merge block until independent review and all checks green. | codex-ar1262-pr-audit-20260917 |
 
 ## Blocked
 
