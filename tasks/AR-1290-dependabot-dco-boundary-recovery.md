@@ -2,22 +2,22 @@
 {
   "branch": "repair/ar-1290-dependabot-dco",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T05:39:04+00:00",
   "depends_on": [],
   "id": "AR-1290",
   "next_action": "Audit whether 07d4b62 is an ancestor of protected main. Prefer closing/superseding the unmerged Dependabot PR and recreating its exact dependency diff in a signed+DCO topic; use a narrowly hash-bound immutable-history attestation only if ancestry proves unavoidable.",
   "observed_branch": "repair/ar-1290-dependabot-dco",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1290.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Recover protected-main DCO assurance for the immutable Dependabot serde commit without weakening broad policy.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Dependabot DCO boundary recovery",
-  "updated_at": "2026-09-17T03:38:58+00:00",
+  "updated_at": "2026-09-17T03:39:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1290-dependabot-dco"
 }
 ---
@@ -39,3 +39,5 @@ change certificate/runtime behavior, touch asb-tui, or weaken broad policy.
 
 - 2026-09-17T03:38:58+00:00: Promote independent P0 repair: PR #151 is unmerged; recreate its exact
   dependency diff from protected main in a fresh signed+DCO topic, with no historical exception.
+
+- 2026-09-17T03:39:04+00:00: Claimed by asb_ar1024_lifecycle_router.
