@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1305-image-native-user-session",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T15:47:14+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "codex-ar1305-image-session-20260917",
+  "owner": "",
   "plan": "../plans/AR-1305.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Qualify image-native D-Bus user-session support for required TLC containment.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-17T15:19:40+00:00",
+  "updated_at": "2026-09-17T15:20:19+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -160,3 +160,10 @@ limits and fail-closed behavior remain unchanged.
 
 - 2026-09-17T15:19:40+00:00: Recorded command exit 0; command argv SHA-256
   f53eb1f5bed8d5534bf312bb9157e846ce3707f768494bbc2edcc4b85da36c49.
+
+- 2026-09-17T15:20:19+00:00: Fresh root with injected dbus-user-session and native seed (custom bus
+  removed) booted with -net none, but required systemd-run transient still fails Transport endpoint
+  is not connected. This proves package/native activation alone does not solve the image
+  user-manager transport. No required attestation. Image hash remains 1a5db8d8... and package
+  provenance e585b169...; next action is a supported systemd user-session image/service
+  configuration repair, not a portable fallback.
