@@ -19,11 +19,11 @@
   "plan": "../plans/AR-1286.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-17T06:00:15+00:00",
+  "updated_at": "2026-09-17T06:00:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
@@ -171,3 +171,6 @@ do not touch or claim asb-tui behavior.
   and fails before child creation with Resource temporarily unavailable. Do not merge PR #197 or
   #207 or weaken lifecycle/egress evidence; resume on a host with qualified delegated bwrap/systemd
   capability.
+
+- 2026-09-17T06:00:35+00:00: Resume for a narrow secure descriptor read fix in the owned CLI
+  boundary; delegated lifecycle remains separately blocked and will stay fail-closed.
