@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1226](tasks/AR-1226-protected-merge-tree-remediation.md): Protected merge-tree remediation | Remediate the protected-main merge-tree mismatch from stale-base PR merging. | Monitor PR #218 exact head f66194bbf01cb2aa861a45d8c10b0ee08df1d73c until all required checks and independent review are green; merge only through authorized signed integration, then verify exact-main post-merge workflows and reconcile AR-1299/AR-1287 evidence. | codex-ar1226-merge-remediation-20260917 |
-| P0 | [AR-1299](tasks/AR-1299.md): Complete authenticated agent catalog identity metadata | Complete authenticated agent catalog signer, provenance, SBOM and license metadata. | Monitor exact-main post-merge workflows for 7ea3e001dffa13eca5ff0f05444c2b3b9d4df928 until every required run is terminal green; then verify main signature/DCO and release AR-1299 done. | ar1299_dispatch |
+| P0 | [AR-1299](tasks/AR-1299.md): Complete authenticated agent catalog identity metadata | Complete authenticated agent catalog signer, provenance, SBOM and license metadata. | All required post-merge workflows for 7ea3e001dffa13eca5ff0f05444c2b3b9d4df928 are terminal green; verify recorded merge signature/DCO/tree policy and release AR-1299 done. | ar1299_dispatch |
 | P0 | [AR-1301](tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | Promote only after AR-1287 and AR-1300 are done; implement the executable supervised replay lifecycle fault matrix and qualify it on the approved runner. | coordinator-ar1301-lifecycle-20260917 |
 
 ## Blocked
