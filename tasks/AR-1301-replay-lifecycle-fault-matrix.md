@@ -8,7 +8,7 @@
     "AR-1300"
   ],
   "id": "AR-1301",
-  "next_action": "Acceptance blocker: direct relay/service negatives are insufficient. Add a supervised authenticated integration using pinned sidecar/supervisor + ReplayRelay + StrictReplayService/adapter for stale, malformed, duplicate, strict mismatch and no-fallback, retaining crash-to-fresh-generation evidence; rerun full locked gates before review/publication.",
+  "next_action": "Rerun fmt/clippy/full locked tests after fixing the supervised negative test useless-conversion lint; then independently review final signed head 37ce99b and publication remains prohibited until green exact-head CI.",
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "observed_dirty": 0,
   "observed_head": "37ce99b7f219ad04c1a20112cfdc329468641309",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 149,
+  "task_revision": 150,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:28:32+00:00",
+  "updated_at": "2026-09-17T11:28:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -422,3 +422,7 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
 
 - 2026-09-17T11:28:32+00:00: Recorded command exit 101; command argv SHA-256
   ef0b050d10a3a8bb6d6ac40bfe095b806c22824b02c6da1d1d62c7496841604d.
+
+- 2026-09-17T11:28:48+00:00: Gate failure at 11:28:32Z: cargo clippy exited 101 on test-only useless
+  conversion mode.clone().into() in the new supervised negative matrix. This is a strict-lint setup
+  failure, not a runtime/product behavior failure. Replace with mode.clone(), rerun all gates.
