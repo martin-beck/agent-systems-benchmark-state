@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 369,
+  "task_revision": 370,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T13:16:32+00:00",
+  "updated_at": "2026-09-17T13:17:27+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1238,3 +1238,7 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   UUID-wired VM launch helper exists; only historical private seeds/raw disks remain, so exact
   f1931686c source/JAR injection cannot safely proceed without stale-disk or overlap risk. No VM
   attestation, pr-publication, or full-exhaustive claim.
+
+- 2026-09-17T13:17:27+00:00: Create a reviewed reusable UUID-wired VM launcher under the state
+  runner worktree, with pinned image, 32G/8vCPU/16G swap, no network/host mounts, boot mount
+  preflight, and sanitized serial evidence. Then run f1931686c portable-smoke.
