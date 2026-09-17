@@ -23,20 +23,20 @@ Generated from local Git and GitHub. Do not edit.
 | #197 | `feature/ar-1248-strict-replay-cli-contract@7d9c2ee2e08b` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): define strict offline replay consumer contract |
 | #207 | `feature/ar-1262-runtime-owned-launch-authority@c009185748a4` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): issue strict-replay launch authority |
 | #213 | `feature/ar1299-agent-catalog-metadata@b9edf44edcbc` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(control): complete authenticated agent catalog metadata |
-| #214 | `feature/ar-1286-supervised-replay-lifecycle@08969ece9f3a` | `main` | UNSTABLE | QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(replay): integrate runtime-owned supervised replay lifecycle |
+| #214 | `feature/ar-1286-supervised-replay-lifecycle@08969ece9f3a` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(replay): integrate runtime-owned supervised replay lifecycle |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
 | 35188248812 | `08969ece9f3a` | pull_request | Hosted portability and native qualification | in_progress:- |
-| 35188248772 | `08969ece9f3a` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 35188248772 | `08969ece9f3a` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35188248734 | `08969ece9f3a` | pull_request | Fault assurance | in_progress:- |
 | 35188248729 | `08969ece9f3a` | pull_request | Rust verification | in_progress:- |
 | 35188248713 | `08969ece9f3a` | pull_request | Repository quality | in_progress:- |
-| 35188248682 | `08969ece9f3a` | pull_request | Formal assurance | queued:- |
+| 35188248682 | `08969ece9f3a` | pull_request | Formal assurance | in_progress:- |
 | 35188248657 | `08969ece9f3a` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 35188248631 | `08969ece9f3a` | pull_request | Huawei MIT source headers | in_progress:- |
+| 35188248631 | `08969ece9f3a` | pull_request | Huawei MIT source headers | completed:success |
 | 35187977613 | `b9edf44edcbc` | pull_request | Repository quality | in_progress:- |
 | 35187977570 | `b9edf44edcbc` | pull_request | Hosted portability and native qualification | completed:success |
 | 35187977540 | `b9edf44edcbc` | pull_request | Emulated aarch64 portability | in_progress:- |
