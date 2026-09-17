@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover protected-main DCO assurance for the immutable Dependabot serde commit without weakening broad policy.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Dependabot DCO boundary recovery",
-  "updated_at": "2026-09-17T03:39:04+00:00",
+  "updated_at": "2026-09-17T03:39:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1290-dependabot-dco"
 }
 ---
@@ -41,3 +41,6 @@ change certificate/runtime behavior, touch asb-tui, or weaken broad policy.
   dependency diff from protected main in a fresh signed+DCO topic, with no historical exception.
 
 - 2026-09-17T03:39:04+00:00: Claimed by asb_ar1024_lifecycle_router.
+
+- 2026-09-17T03:39:39+00:00: Recorded command exit 128; command argv SHA-256
+  de8294ffb66b2a42902c535c98fbd17388f69504fc431b2d99ecfceed16f9b69.
