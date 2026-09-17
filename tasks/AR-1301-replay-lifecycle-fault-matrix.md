@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T10:34:33+00:00",
   "depends_on": [
     "AR-1287",
     "AR-1300"
@@ -12,15 +12,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "",
+  "owner": "coordinator-ar1301-lifecycle-20260917",
   "plan": "../plans/AR-1301.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T09:04:13+00:00",
+  "updated_at": "2026-09-17T09:04:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -44,3 +44,5 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
 - 2026-09-17T09:04:13+00:00: Dependencies AR-1287 and AR-1300 are now durably done; AR-1287
   runner/KVM qualification and repaired exact-main gates are green. Promote for implementation of
   the real supervised replay lifecycle fault matrix.
+
+- 2026-09-17T09:04:33+00:00: Claimed by coordinator-ar1301-lifecycle-20260917.
