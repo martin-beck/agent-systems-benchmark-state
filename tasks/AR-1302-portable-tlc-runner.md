@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T12:59:55+00:00",
   "depends_on": [],
   "id": "AR-1302",
-  "next_action": "Image-level bus repair succeeded: user@1000.service and asb-session-bus.service both started before cloud-final. The one clean 32 GiB/8-vCPU/16 GiB-swap/16 GiB-data attempt then failed unchanged required transient containment: Process org.freedesktop.systemd1 exited with status 1; JAR verification passed but no attestation was emitted. Do not rerun until the required transient systemd containment path is repaired.",
+  "next_action": "Do not launch TLC yet. Provision/verify native dbus-user-session + user@1000 bus in a fresh immutable guest image, then require these bounded preflights to exit 0: systemctl --user is-system-running; systemd-run --user --wait --pipe --collect with 3G memory/swap, 200% CPU, TasksMax=64 running /usr/bin/true. Record exact exit/evidence; run full-exhaustive only if both pass.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 327,
+  "task_revision": 328,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:29:55+00:00",
+  "updated_at": "2026-09-17T12:30:24+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1074,3 +1074,14 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   transient-unit preflight before launching TLC.
 
 - 2026-09-17T12:29:55+00:00: Claimed by codex-ar1302-preflight-diagnosis.
+
+- 2026-09-17T12:30:24+00:00: Distinct safe repair proposed from completed evidence; no TLC rerun.
+  The bus service was standalone, not the native user-manager bus. Required guest image properties:
+  immutable offline image with dbus-user-session/libpam-systemd provenance, lingering asb user@1000,
+  32 GiB RAM, 8 vCPU, 16 GiB swap, separate >=16 GiB data disk, no network or host mounts. Before
+  any verify command, run as asb with XDG_RUNTIME_DIR=/run/user/1000 and
+  DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus: systemctl --user is-system-running; then
+  systemd-run --user --wait --pipe --collect --property=MemoryMax=3G --property=MemorySwapMax=3G
+  --property=CPUQuota=200% --property=TasksMax=64 /usr/bin/true. Both must exit 0 and bus ownership
+  must identify user@1000; otherwise fail closed without launching TLC. Only after positive
+  admission should exact f16d2cb41 full-exhaustive run.
