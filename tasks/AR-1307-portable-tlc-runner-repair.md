@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Use a clean 32 GiB virtual root overlay (repair-v1 or run) after verifying pinned digest/provenance; rebuild actual guest_seed user-data with apt/package update disabled or offline-safe, retain early wait-online mask, then rerun exact b8db467ee portable-smoke and required/full tiers.",
+  "next_action": "Validate rendered guest_seed YAML using the project offline dependency environment; regenerate final seed from corrected source, launch fresh 32 GiB early-mask overlay, and require user@1000/D-Bus plus validated portable-smoke attestation.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T23:25:39+00:00",
+  "updated_at": "2026-09-17T23:25:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -309,3 +309,11 @@ and protected publication sequence.
   536f4cf684165972eb5d7afac90f6761044c94b5cc4b36d4fa88e64645f2164d.
 
 - 2026-09-17T23:25:39+00:00: Heartbeat by codex-ar1307-runner-repair-20260918.
+
+- 2026-09-17T23:25:46+00:00: Failure classification: generated seed was malformed because
+  guest_seed.py emitted a literal newline in the offline curl printf scalar; cloud-init ignored
+  user-data and produced no receipt. Earlier fresh 3.5 GiB root also failed closed with Errno 28
+  ENOSPC during cloud-init. A direct host Python YAML check exited 1 because PyYAML is not
+  installed; this is a tooling limitation, not YAML evidence. Source escaping and explicit
+  package_update/package_upgrade false plus packages empty were patched; next gate is project
+  offline YAML validation and clean boot.
