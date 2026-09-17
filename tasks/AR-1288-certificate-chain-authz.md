@@ -9,7 +9,7 @@
   "id": "AR-1288",
   "next_action": "Signed checkpoint 871d2f7 implements pinned DER trust-anchor construction and offline rustls/webpki chain validation via issue_der; leaf digest, pairing, generation, validity, role, issuer, anchor and bounded chain checks fail closed. Focused asb-control --lib passes 56/56. Next: push exact signed head, run applicable workspace gates, inspect generated schema/public docs, then independent review; do not publish before exact-head gates.",
   "observed_branch": "feature/ar-1288-certificate-chain-authz",
-  "observed_dirty": 3,
+  "observed_dirty": 5,
   "observed_head": "871d2f7ee4ae13108510c9bf2c7baa45627473f2",
   "owner": "asb_ar0909_lifecycle_repair",
   "plan": "../plans/AR-1288.md",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T02:55:52+00:00",
+  "updated_at": "2026-09-17T02:55:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
