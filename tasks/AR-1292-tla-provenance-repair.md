@@ -2,22 +2,22 @@
 {
   "branch": "repair/ar-1292-tla-provenance",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T06:39:13+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1292",
   "next_action": "Await independently verifiable TLA+ provenance: a signed/attested immutable v1.8.0 asset bound to its source revision, or a deterministic source-build qualification for the current 142d0ba release. Do not update only hash/size or rerun PR #119 until that evidence exists.",
   "observed_branch": "repair/ar-1292-tla-provenance",
   "observed_dirty": 0,
   "observed_head": "c1b1860786e844adb69b8f74e39af290592a89c8",
-  "owner": "asb_ar1292_tla_provenance",
+  "owner": "",
   "plan": "../plans/AR-1292.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Repair or formally retain the pinned TLA+ artifact provenance mismatch blocking formal assurance.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Pinned TLA+ artifact provenance repair",
-  "updated_at": "2026-09-17T04:39:47+00:00",
+  "updated_at": "2026-09-17T04:39:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1292-tla-provenance"
 }
 ---
@@ -65,3 +65,10 @@ verification, alter native-capacity behavior, or touch asb-tui.
   attestation binding source to binary was found. Updating only hash/size would accept a different
   source build and weaken provenance. Retain fail-closed; no product mutation, no asb-tui change, no
   PR #119 requalification.
+
+- 2026-09-17T04:39:56+00:00: Blocked and released ownerless after independent provenance audit.
+  Current v1.8.0 asset 569359548/API SHA 9d36716f/4492966 bytes and manifest revision 142d0ba
+  execute the positive and deliberate-negative TLC model checks, but the mutable unsigned prerelease
+  has no source-to-binary signature/attestation; old asset 551753628 is gone and prior
+  source/artifact pins are inconsistent. Require signed/attested immutable provenance or
+  deterministic current-source rebuild before any hash update or PR #119 requalification.
