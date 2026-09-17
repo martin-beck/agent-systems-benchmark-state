@@ -1641,7 +1641,7 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md): Protected merge-tree remediation | codex-ar1226-merge-remediation-20260917 | Remediate the protected-main merge-tree mismatch from stale-base PR merging. | Monitor PR #218 exact head f66194bbf01cb2aa861a45d8c10b0ee08df1d73c until all required checks and independent review are green; merge only through authorized signed integration, then verify exact-main post-merge workflows and reconcile AR-1299/AR-1287 evidence. |
 | P0 | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md): Delegated sandbox runner capability | root | Provide a delegated runner for real strict-replay child lifecycle qualification. | Monitor exact-main post-merge workflows for repair merge 7ea3e001dffa13eca5ff0f05444c2b3b9d4df928; release AR-1287 only after every required check is terminal green and the KVM runner evidence is reconciled, then promote AR-1301. |
-| P0 | [AR-1299](../tasks/AR-1299.md): Complete authenticated agent catalog identity metadata | ar1299_dispatch | Complete authenticated agent catalog signer, provenance, SBOM and license metadata. | Monitor exact-main post-merge workflows for 6c694f8b26ba98166ab72349875641d5d55806d5 until every required run is terminal green; then verify main signature/DCO and release AR-1299 done. |
+| P0 | [AR-1299](../tasks/AR-1299.md): Complete authenticated agent catalog identity metadata | ar1299_dispatch | Complete authenticated agent catalog signer, provenance, SBOM and license metadata. | Monitor exact-main post-merge workflows for 7ea3e001dffa13eca5ff0f05444c2b3b9d4df928 until every required run is terminal green; then verify main signature/DCO and release AR-1299 done. |
 
 ### Blocked (49)
 
