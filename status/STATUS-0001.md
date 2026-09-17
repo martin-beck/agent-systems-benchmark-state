@@ -1591,7 +1591,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1285](../tasks/AR-1285-runtime-launch-factory.md): Runtime-owned strict-replay launch factory | asb_ar1024_lifecycle_router | Provide a runtime-owned launch factory for authenticated strict-replay CLI execution. | PR #209 exact head 0f876c7 was force-with-lease pushed; wait restarted hosted CI and independent re-review of exact launch-context token binding. Do not merge until all checks/review green. |
+| P0 | [AR-1285](../tasks/AR-1285-runtime-launch-factory.md): Runtime-owned strict-replay launch factory | asb_ar1024_lifecycle_router | Provide a runtime-owned launch factory for authenticated strict-replay CLI execution. | PR #209 exact head 0f876c7 is pushed; hosted checks run 35172629691/29771/29692/29746 in progress, independent re-review requested. Keep merge blocked until terminal green/review. |
 
 ### Open (6)
 

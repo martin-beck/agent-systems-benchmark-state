@@ -10,7 +10,7 @@
     "AR-1239"
   ],
   "id": "AR-1285",
-  "next_action": "PR #209 exact head 0f876c7 was force-with-lease pushed; wait restarted hosted CI and independent re-review of exact launch-context token binding. Do not merge until all checks/review green.",
+  "next_action": "PR #209 exact head 0f876c7 is pushed; hosted checks run 35172629691/29771/29692/29746 in progress, independent re-review requested. Keep merge blocked until terminal green/review.",
   "observed_branch": "feature/ar-1285-runtime-launch-factory",
   "observed_dirty": 0,
   "observed_head": "0f876c7ae7fdfdff240a9fd3ad51e79cddaa4ffe",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-owned launch factory for authenticated strict-replay CLI execution.",
-  "task_revision": 94,
+  "task_revision": 95,
   "title": "Runtime-owned strict-replay launch factory",
-  "updated_at": "2026-09-17T02:00:33+00:00",
+  "updated_at": "2026-09-17T02:00:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1285-runtime-launch-factory"
 }
 ---
@@ -318,3 +318,10 @@ separate successor rather than claiming strict-replay execution.
 
 - 2026-09-17T02:00:33+00:00: Recorded command exit 0; command argv SHA-256
   11659de9cee5aef7114a107c8299f01f55e7bfee52f558665765ee6843089f66.
+
+- 2026-09-17T02:00:43+00:00: Post-commit gates: workspace cargo test --locked --quiet passed all
+  suites; workspace clippy -D warnings passed; cargo doc --locked --workspace --no-deps passed;
+  focused launch_factory 5/5 passed. Formal locked suite initially hit the known transient Text file
+  busy race in private_build_snapshot_resists_original_archive_replacement (Os code 26); isolated
+  rerun passed 1/1. Worktree remains clean at signed 0f876c7; PR #209 force-with-lease updated and
+  exact-head hosted checks restarted.
