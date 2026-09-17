@@ -10,7 +10,7 @@
   "id": "AR-1306",
   "next_action": "PR #222 exact head 1a22bc6 is signed/DCO and fixes the malformed provider-egress tuple; local qualified native sandbox_boundary matrix completed 15/15 tests successfully after repair, focused parity repeated 15/15, fmt and clippy pass. Await refreshed exact-head CI and independent native review; do not merge until all checks/review green.",
   "observed_branch": "feature/ar-1306-authenticated-fault-matrix-qualification",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "1a22bc65dbd730cd019635d9bccdf6416ada1d3e",
   "owner": "codex-ar1306-auth-listener-20260917",
   "plan": "../plans/AR-1306.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 184,
+  "task_revision": 185,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T23:09:05+00:00",
+  "updated_at": "2026-09-17T23:09:12+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
