@@ -13,17 +13,17 @@
   "id": "AR-1286",
   "next_action": "Worktree created at /srv/data/projects/agent-systems-benchmark-ar-1286-supervised-replay-lifecycle from origin/main 2fd9055. Inspect ReplayLaunchContext, SandboxBackend::spawn_launch, and CLI replay authority seam; implement bounded child lifecycle without asb-tui.",
   "observed_branch": "feature/ar-1286-supervised-replay-lifecycle",
-  "observed_dirty": 1,
-  "observed_head": "2fd90557a4e7be32fab590f47bc501462127c1c1",
+  "observed_dirty": 0,
+  "observed_head": "08bb15738759dea12fe830ea54246370bffff2ff",
   "owner": "asb_ar1286_supervised_replay_lifecycle",
   "plan": "../plans/AR-1286.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-17T02:21:20+00:00",
+  "updated_at": "2026-09-17T02:21:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
