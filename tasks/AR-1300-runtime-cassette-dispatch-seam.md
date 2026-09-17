@@ -11,16 +11,16 @@
   "next_action": "Promote after AR-1282 and AR-1285 dependency verification; implement and test the runtime-to-replay cassette operation seam from protected main.",
   "observed_branch": "feature/ar-1300-runtime-cassette-dispatch-seam",
   "observed_dirty": 0,
-  "observed_head": "bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09",
+  "observed_head": "c1b1860786e844adb69b8f74e39af290592a89c8",
   "owner": "ar1300_dispatch",
   "plan": "../plans/AR-1300.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect runtime-issued cassette operations to the real strict-replay dispatch path.",
-  "task_revision": 13,
+  "task_revision": 14,
   "title": "Runtime-to-replay cassette dispatch seam",
-  "updated_at": "2026-09-17T07:04:42+00:00",
+  "updated_at": "2026-09-17T07:04:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1300-runtime-cassette-dispatch-seam"
 }
 ---
