@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1282",
-  "next_action": "Promote after dependency verification; implement and merge the bounded authenticated replay transport foundation only.",
+  "next_action": "Run full locked workspace fmt/test/clippy/rustdoc/policy/privacy/formal/portability gates at signed d3bcdeaf; then request independent review of bounded core/runtime transport only.",
   "observed_branch": "feature/ar-1282-authenticated-replay-transport",
   "observed_dirty": 0,
   "observed_head": "d3bcdeaf9428dfb55f63a15fa8ed1206c4a69507",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Land the authenticated runtime-to-CLI replay transport foundation.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Authenticated replay transport foundation",
-  "updated_at": "2026-09-17T00:28:20+00:00",
+  "updated_at": "2026-09-17T00:28:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1282-authenticated-replay-transport"
 }
 ---
@@ -89,3 +89,10 @@ claim primary command execution.
 
 - 2026-09-17T00:28:13+00:00: Recorded command exit 0; command argv SHA-256
   3a13060ce4a77424b9635f2a67327f2d1adc7c44de7e3c318453b987a9d7bd5a.
+
+- 2026-09-17T00:28:45+00:00: Signed implementation checkpoint complete:
+  d3bcdeaf9428dfb55f63a15fa8ed1206c4a69507 adds bounded asb-core ReplayRequest/ReplayResponse
+  envelopes with version/magic, generation/request IDs, payload caps, strict malformed/stale
+  validation, plus runtime-owned one-shot Unix issuer/client with duplicate and invalid-generation
+  rejection. Cargo.lock regenerated offline. Focused tests: asb-core replay_transport 2/2;
+  asb-runtime transport 2/2. Worktree clean; no primary CLI/lifecycle claims.
