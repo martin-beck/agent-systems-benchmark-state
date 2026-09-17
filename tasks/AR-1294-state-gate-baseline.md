@@ -2,7 +2,7 @@
 {
   "branch": "repair/ar-1294-state-gate-baseline",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T06:56:51+00:00",
+  "claim_expires": "2026-09-17T07:00:15+00:00",
   "depends_on": [],
   "id": "AR-1294",
   "next_action": "Audit the vendor lock/digest mismatch and root-owned TLC admission lock; repair only through immutable provenance and owner-safe lock handling, then rerun full state/formal gates.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Restore vendor and formal admission baseline integrity needed to qualify AR-1293.",
-  "task_revision": 15,
+  "task_revision": 16,
   "title": "State formal-gate baseline integrity",
-  "updated_at": "2026-09-17T04:59:50+00:00",
+  "updated_at": "2026-09-17T05:00:15+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1294-gate-baseline"
 }
 ---
@@ -69,3 +69,5 @@ formal checks, or manipulate another service's lock.
 
 - 2026-09-17T04:59:50+00:00: Recorded command exit 2; command argv SHA-256
   8ad19f5dfe2e7b2007d75bc1202a25e517cd4cb6ca4e53a00b2a1c440331dbdf.
+
+- 2026-09-17T05:00:15+00:00: Heartbeat by asb-ar1294-vendor-lock.
