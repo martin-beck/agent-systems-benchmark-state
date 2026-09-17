@@ -15,11 +15,11 @@
   "plan": "../plans/AR-0814.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 308,
+  "task_revision": 309,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-17T04:02:46+00:00",
+  "updated_at": "2026-09-17T04:03:20+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -873,3 +873,6 @@ Implementation has not started. Read the linked plan before claiming.
   route/IP and ancestor authority are not implemented. Create a focused successor for independently
   authenticated route/peer binding, ancestor provenance, wrong-route rejection, route
   rotation/revocation and recovery evidence; do not publish AR-0814 as done.
+
+- 2026-09-17T04:03:20+00:00: Resume only to correct stale successor wording: AR-1288 is now
+  complete; remaining route/IP and ancestor authority is the sole successor scope.
