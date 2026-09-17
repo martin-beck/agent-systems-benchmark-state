@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Create unique NoCloud metadata for a fresh exact-head overlay, regenerate schema-valid seed, boot with no NIC/host mounts and early wait-online mask, and verify runcmd executes through portable-smoke attestation/poweroff.",
+  "next_action": "Regenerate unique schema-valid seed after removing incorrect GIT_DIR/GIT_WORK_TREE overrides; launch a new clean 32 GiB overlay and require explicit TLC/PORTABLE_SMOKE_RC plus attestation on data disk. Then repeat required/full tiers.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 115,
+  "task_revision": 116,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T23:34:28+00:00",
+  "updated_at": "2026-09-17T23:34:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -395,3 +395,10 @@ and protected publication sequence.
   3da1afa129190a2823d9a274abfb609e928453e89250c9e6121ca53d8f5f866c.
 
 - 2026-09-17T23:34:28+00:00: Heartbeat by codex-ar1307-runner-repair-20260918.
+
+- 2026-09-17T23:34:35+00:00: Unique NoCloud run proved runcmd execution and owner-confinement:
+  state/.asb-tlc was created and transient D-Bus probe passed. Formal command failed closed at
+  provenance because seed exported GIT_DIR=/mnt/asb-data/git, which does not exist for the ordinary
+  state checkout (.git), so git rev-parse returned failure; no attestation was produced. This is a
+  truthful seed environment defect, now patched by removing those overrides. Earlier stale-root run
+  and malformed-seed/ENOSPC failures remain recorded.
