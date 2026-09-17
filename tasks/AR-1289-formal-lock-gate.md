@@ -2,7 +2,7 @@
 {
   "branch": "fix/ar-1289-formal-lock-gate",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T05:17:44+00:00",
+  "claim_expires": "2026-09-17T05:29:44+00:00",
   "depends_on": [],
   "id": "AR-1289",
   "next_action": "Policy check 35177646319 failed only on pre-existing Gemini timing assertion; exact targeted test passed 3/3 locally. Failed hosted job rerun requested once; monitor rerun plus remaining required checks, merge only if all terminal-success.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the stale formal Cargo.lock required by hosted exact-head gates.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "Repair formal lock gate",
-  "updated_at": "2026-09-17T03:28:44+00:00",
+  "updated_at": "2026-09-17T03:29:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1289-formal-lock-gate"
 }
 ---
@@ -150,3 +150,5 @@ be used with `--locked`. Repair and verify this gate independently of feature AR
 
 - 2026-09-17T03:28:44+00:00: Recorded command exit 0; command argv SHA-256
   b2c454d33583ff1147f100884ecb178c8e42908a3fc7d8c3272abebdf9b76162.
+
+- 2026-09-17T03:29:44+00:00: Heartbeat by asb_ar1024_lifecycle_router.
