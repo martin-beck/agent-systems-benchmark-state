@@ -8,7 +8,7 @@
     "AR-1300"
   ],
   "id": "AR-1301",
-  "next_action": "Independent exact-head review of clean signed e98293a complete diff (including supervised authenticated negative matrix and crash-to-fresh-generation evidence); then PR/CI publication only after review.",
+  "next_action": "Publish exact clean e98293a as PR; wait all exact-head required CI green; perform protected signed merge and post-merge verification before releasing AR.",
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "observed_dirty": 0,
   "observed_head": "e98293ab022d3ce7dcf09f6b4f3a1d5a0500fa07",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 173,
+  "task_revision": 174,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:36:29+00:00",
+  "updated_at": "2026-09-17T11:36:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -491,3 +491,8 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
   is superseded by the serialized terminal-green evidence.
 
 - 2026-09-17T11:36:29+00:00: Heartbeat by ar1301_negative_matrix.
+
+- 2026-09-17T11:36:32+00:00: Root independently reviewed complete exact-head e98293a diff:
+  supervised ReplayRelay/sidecar/supervisor/StrictReplayService/curl matrix, failure assertions,
+  cleanup, SSH signature and DCO all pass. Publication is now authorized through the documented
+  workflow.
