@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 241,
+  "task_revision": 242,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T17:39:56+00:00",
+  "updated_at": "2026-09-17T17:40:08+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -825,3 +825,6 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   pass. The 17:39:16 exit-1 was a test-loader import error: seed_profile.py could not import
   tier_profiles when loaded standalone; fixed by explicit test module registration. No VM was
   launched for that failed command.
+
+- 2026-09-17T17:40:08+00:00: Recorded command exit 0; command argv SHA-256
+  3e43456453757f7d1ae5cfa616f5d812fdde527ad90c811907829cf345bf4e30.
