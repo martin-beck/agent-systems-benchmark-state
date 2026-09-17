@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T07:20:59+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Restore immutable vendor verify.sh/README digests while retaining state-owned private admission runner through supported wrapper, then rerun vendor, full quality, and portable/pr/full formal tiers.",
+  "next_action": "Run exact candidate full quality and formal PR/full gates on a runner with sufficient thread capacity; preserve host EAGAIN as environment blocker if it recurs, then publish only after exact-head CI and independent review.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 54,
+  "task_revision": 55,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T06:55:38+00:00",
+  "updated_at": "2026-09-17T06:56:47+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -197,3 +197,10 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   source headers pass. Candidate formal vendor files still need restoration to the immutable v0.3.7
   digests after the worker-private runner changes; then rerun vendor and formal gates. No product,
   asb-tui, or external root-owned lock touched.
+
+- 2026-09-17T06:56:47+00:00: Progress checkpoint: restored formal/handoffctl vendor files to
+  immutable v0.3.7 digests; vendor verify, Ruff, mypy, headers, and diff checks pass. Added explicit
+  one-process HandoffctlPR.cfg fixture and changed CI workflow to invoke verify.sh --tier
+  full-exhaustive. Candidate signed/DCO commit f16d2cb41. Portable formal execution reached TLC but
+  host JVM failed with EAGAIN Cannot create VM thread; a prior unscoped portable attempt also failed
+  attestation because TLC_CGROUP_MODE was absent. No external root-owned lock touched.

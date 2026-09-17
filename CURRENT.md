@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Restore immutable vendor verify.sh/README digests while retaining state-owned private admission runner through supported wrapper, then rerun vendor, full quality, and portable/pr/full formal tiers. | codex-ar1293-recovery-20260917 |
+| P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Run exact candidate full quality and formal PR/full gates on a runner with sufficient thread capacity; preserve host EAGAIN as environment blocker if it recurs, then publish only after exact-head CI and independent review. | codex-ar1293-recovery-20260917 |
 | P0 | [AR-1299](tasks/AR-1299.md): Complete authenticated agent catalog identity metadata | Complete authenticated agent catalog signer, provenance, SBOM and license metadata. | Await independent exact-head review and all hosted PR #213 checks at b9edf44; do not merge or close issue #164 until both pass. | root-ar1299-catalog |
 
 ## Blocked
