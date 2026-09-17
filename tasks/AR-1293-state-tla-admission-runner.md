@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 135,
+  "task_revision": 136,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T13:08:36+00:00",
+  "updated_at": "2026-09-17T13:08:39+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -485,3 +485,6 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   separate bounded 8G RLIMIT_AS while retaining attested 3G physical/swap bounds; tier evidence and
   attestation schema record the bound; positive/negative tests added. Focused tests 9/9 and Ruff
   pass. Ready for independent review and fresh VM qualification.
+
+- 2026-09-17T13:08:39+00:00: Recorded command exit 0; command argv SHA-256
+  216282fcc01dc202d4397e193365784265c003a9ce8c9a69ec926da04cba90e3.
