@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T07:20:59+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Run exact candidate full quality and formal PR/full gates on a runner with sufficient thread capacity; preserve host EAGAIN as environment blocker if it recurs, then publish only after exact-head CI and independent review.",
+  "next_action": "Run portable-smoke with TLC_CGROUP_MODE=portable on a runner with enough thread capacity, then run pr-publication/full-exhaustive with required containment; publish only after all exact-head gates and independent review are green.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T06:56:47+00:00",
+  "updated_at": "2026-09-17T06:57:21+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -204,3 +204,9 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   full-exhaustive. Candidate signed/DCO commit f16d2cb41. Portable formal execution reached TLC but
   host JVM failed with EAGAIN Cannot create VM thread; a prior unscoped portable attempt also failed
   attestation because TLC_CGROUP_MODE was absent. No external root-owned lock touched.
+
+- 2026-09-17T06:57:21+00:00: Formal recheck: TLC portable-smoke model itself passes under required
+  systemd containment, but attestation correctly rejects the required mode for portable tier; under
+  TLC_CGROUP_MODE=portable the JVM fails before TLC with EAGAIN Cannot create VM thread. Candidate
+  checkpoint commit 11f53a0d0 records the run. This confirms the remaining blocker is host thread
+  admission, not a model failure; CI must supply the tier-specific containment environment.
