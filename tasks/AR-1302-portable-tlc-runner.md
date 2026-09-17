@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 240,
+  "task_revision": 241,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T10:53:04+00:00",
+  "updated_at": "2026-09-17T10:53:13+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -773,3 +773,6 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T10:53:04+00:00: Recorded command exit 0; command argv SHA-256
   5591fc8459119e1840f55a15fed5dae6666f34d9728c9243e44b36a12dfaca3a.
+
+- 2026-09-17T10:53:13+00:00: Recorded command exit 1; command argv SHA-256
+  2d20f180bec765419d20b7810b1745336bcd8fb1de360e06c1af68eebf954f52.
