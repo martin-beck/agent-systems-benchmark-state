@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T07:08:22+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Re-run the exact state and formal gates after the host has sufficient process/thread capacity and after the pre-existing vendor test baseline is reconciled to coordinator v0.3.7; candidate repair 53dd96389 is ready for independent review, but do not publish while unittest vendor failures or TLC VM resource errors remain.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "codex-ar1293-tlc-repair-20260917",
+  "owner": "",
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 31,
+  "task_revision": 32,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T05:10:26+00:00",
+  "updated_at": "2026-09-17T05:10:28+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -121,3 +121,7 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   vendor fixtures expecting v0.3.5/digest f91226... while coordinator.vendor.json is v0.3.7; formal
   portable-smoke downloaded the pinned JAR but TLC failed before model execution with JVM EAGAIN
   (Cannot create VM thread/host resource exhaustion). No PR or publication.
+
+- 2026-09-17T05:10:28+00:00: Blocked ownerless pending vendor baseline reconciliation and host
+  capacity for TLC VM; candidate repair commit 53dd96389 remains unpublished until exact full gates
+  are green.
