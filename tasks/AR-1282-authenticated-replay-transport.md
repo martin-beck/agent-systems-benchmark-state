@@ -11,7 +11,7 @@
   "id": "AR-1282",
   "next_action": "Independent exact-head re-review requested for signed 977a37d; focused transport and full locked workspace gates pass. Scope remains bounded core/runtime transport only; no primary CLI/lifecycle claim.",
   "observed_branch": "feature/ar-1282-authenticated-replay-transport",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "977a37d2628d2e397020ef404a9c8e7072c1838e",
   "owner": "asb_ar1282_core_runtime_transport",
   "plan": "../plans/AR-1282.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Land the authenticated runtime-to-CLI replay transport foundation.",
-  "task_revision": 50,
+  "task_revision": 51,
   "title": "Authenticated replay transport foundation",
-  "updated_at": "2026-09-17T00:36:04+00:00",
+  "updated_at": "2026-09-17T00:36:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1282-authenticated-replay-transport"
 }
 ---
