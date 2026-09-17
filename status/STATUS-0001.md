@@ -1649,7 +1649,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md): Required-tier QEMU user-bus runner | codex-ar1304-required-runner-20260917 | Create a clean required-containment QEMU runner for formal publication evidence. | Independent exact-head review of signed 920356c60, 9111d2f2a, and 8a815690c; then hand required pr-publication evidence to AR-1293. Do not run full-exhaustive until coordinator accepts the attestation. |
+| P0 | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md): Required-tier QEMU user-bus runner | codex-ar1304-required-runner-20260917 | Create a clean required-containment QEMU runner for formal publication evidence. | Independent exact-head review of signed commits 4bc1e4102, 247c7e770, 151bd0f99, de489eac9, and current seed/receipt chain; then hand required pr-publication evidence to AR-1293. Do not run full-exhaustive until coordinator accepts the attestation. |
 
 ### Blocked (51)
 

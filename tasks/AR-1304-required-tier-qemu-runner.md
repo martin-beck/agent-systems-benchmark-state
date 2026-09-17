@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1304",
-  "next_action": "Independent exact-head review of signed 920356c60, 9111d2f2a, and 8a815690c; then hand required pr-publication evidence to AR-1293. Do not run full-exhaustive until coordinator accepts the attestation.",
+  "next_action": "Independent exact-head review of signed commits 4bc1e4102, 247c7e770, 151bd0f99, de489eac9, and current seed/receipt chain; then hand required pr-publication evidence to AR-1293. Do not run full-exhaustive until coordinator accepts the attestation.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create a clean required-containment QEMU runner for formal publication evidence.",
-  "task_revision": 254,
+  "task_revision": 255,
   "title": "Required-tier QEMU user-bus runner",
-  "updated_at": "2026-09-17T16:34:41+00:00",
+  "updated_at": "2026-09-17T16:35:23+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner"
 }
 ---
@@ -822,3 +822,14 @@ logs, or claim full-exhaustive evidence before required attestation is green.
 
 - 2026-09-17T16:34:41+00:00: Recorded command exit 0; command argv SHA-256
   82c149b86c240d763fd2a9191e06dc9a758b00b6f8b90c5d231f3c2a1d0bd755.
+
+- 2026-09-17T16:35:23+00:00: Independent-review repairs complete. Fresh wrapper-free clean-data QEMU
+  PR7 emitted REQUIRED_TRANSIENT_RC=0, /usr/local/libexec/asb-offline/curl, PR_PUBLICATION_RC=0, and
+  PR_PUBLICATION_EVIDENCE_OK. debugfs confirms /bin/systemd-run is absent from the clean data image.
+  Fresh attestation is success/required/pr-publication for candidate 39c8933f5 with all six models
+  successful, JAR SHA256 936a262...050e88 and required 3G memory, 3G swap, 8G address-space, 2
+  workers, 1800s. Receipt /srv/data/projects/asb-state-tlc-vm-32g/ar1304-runner-receipt.json SHA256
+  cb2ff824...67239f binds root/data/seed/JDK/JAR/helper digests, QEMU 8.2.2 x86_64, user-bus
+  readiness and limits; final data image digest is e2264d51...295a07b. Full pytest passed 138 tests
+  plus 85 subtests; focused seed/runner tests 4 passed; Ruff and mypy passed. No network fallback,
+  stale markers are removed before execution, and no gate was weakened.
