@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T04:50:54+00:00",
+  "updated_at": "2026-09-17T05:00:54+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -73,3 +73,7 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 - 2026-09-17T04:50:54+00:00: Blocked ownerless after candidate 885d14159. Focused runner tests, Ruff
   and mypy pass; full state suite and canonical formal smoke remain blocked by the baseline vendor
   mismatch and host admission-lock ownership above. Preserve the signed candidate for follow-up.
+
+- 2026-09-17T05:00:54+00:00: AR-1294 restored immutable coordinator vendor integrity; reopen to
+  repair candidate private lock/queue paths, attestation fixtures and malformed-input gates.
+  External root-owned lock remains untouched.
