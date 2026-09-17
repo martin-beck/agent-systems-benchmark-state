@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Rebuild fresh data disk with /state checkout, /jvm, and pinned tla2tools.jar (current exact head 0ed457003); regenerate unique schema-valid seed, launch no-NIC 32 GiB overlay, and verify portable-smoke attestation.",
+  "next_action": "Refresh stage/data from remote 55b6ca3c4, regenerate schema-valid seed including bounded stat/java.io.tmpdir preflight, launch fresh 32 GiB no-NIC VM, capture effective temp properties and first/last TLC diagnostic. Do not accept attestation or run higher tiers until portable passes.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 186,
+  "task_revision": 187,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T23:56:07+00:00",
+  "updated_at": "2026-09-17T23:56:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -617,3 +617,10 @@ and protected publication sequence.
   adbfd17bd5a46378d72f07219f1688bced64b1502623c7575151571fe8da7dcf.
 
 - 2026-09-17T23:56:07+00:00: Heartbeat by codex-ar1307-runner-repair-20260918.
+
+- 2026-09-17T23:56:14+00:00: Stage2 fresh-layout run now executed runcmd and reached TLC but
+  retained the JFR startup failure; no attestation. Added explicit
+  JAVA_TOOL_OPTIONS=-Djava.io.tmpdir=/mnt/asb-data/tmp, /tmp 1777 setup, and bounded preflight
+  stat/java property commands to the signed pushed candidate. Focused tests 25/25 pass. Remote PR
+  branch is 55b6ca3c4. Remaining work is a fresh exact-head diagnostic run to prove effective JVM
+  temp path and classify/repair the JFR fixture without weakening TLC/JFR.
