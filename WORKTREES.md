@@ -87,7 +87,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1286-supervised-replay-lifecycle` | `feature/ar-1286-supervised-replay-lifecycle` | `d8064117cdeb` | 0 | behind 7, ahead 4 |
 | `agent-systems-benchmark-ar-1288-certificate-chain-authz` | `feature/ar-1288-certificate-chain-authz` | `7b3ff1d3a874` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-ar-1289-formal-lock-gate` | `fix/ar-1289-formal-lock-gate` | `53981d651645` | 0 | behind 7, ahead 1 |
-| `agent-systems-benchmark-ar-1290-dependabot-dco` | `repair/ar-1290-dependabot-dco` | `1cff94929344` | 0 | behind 0, ahead 2 |
+| `agent-systems-benchmark-ar-1290-dependabot-dco` | `repair/ar-1290-dependabot-dco` | `1cff94929344` | 1 | behind 0, ahead 2 |
+| changed files | - | - | - | `fuzz/deny.toml` |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 529, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 632, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 526, ahead 0 |

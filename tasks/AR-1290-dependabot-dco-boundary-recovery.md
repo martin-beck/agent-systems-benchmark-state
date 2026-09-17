@@ -7,7 +7,7 @@
   "id": "AR-1290",
   "next_action": "Monitor PR #212 exact head 1cff949293446d085787414c4405ac628670d868 until all required checks terminal-success; request independent exact-head review and merge only through protected signed workflow. PR #151 is closed as superseded.",
   "observed_branch": "repair/ar-1290-dependabot-dco",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "1cff949293446d085787414c4405ac628670d868",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1290.md",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover protected-main DCO assurance for the immutable Dependabot serde commit without weakening broad policy.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Dependabot DCO boundary recovery",
-  "updated_at": "2026-09-17T03:45:45+00:00",
+  "updated_at": "2026-09-17T03:45:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1290-dependabot-dco"
 }
 ---
