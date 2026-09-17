@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1304.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Create a clean required-containment QEMU runner for formal publication evidence.",
-  "task_revision": 25,
+  "task_revision": 26,
   "title": "Required-tier QEMU user-bus runner",
-  "updated_at": "2026-09-17T14:53:07+00:00",
+  "updated_at": "2026-09-17T14:53:25+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner"
 }
 ---
@@ -117,3 +117,6 @@ logs, or claim full-exhaustive evidence before required attestation is green.
   bus-ready marker and no required pr-publication attestation. Next action: use a systemd-native
   guest unit ordered after user@1000.service to start the session bus, rather than invoking loginctl
   from cloud-init bootcmd; then rerun required launcher with all six resource properties.
+
+- 2026-09-17T14:53:25+00:00: Replace cloud-init loginctl bootstrap with a systemd-native guest unit
+  ordered after user@1000; retry required attestation
