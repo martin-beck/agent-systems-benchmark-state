@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 310,
+  "task_revision": 311,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:12:03+00:00",
+  "updated_at": "2026-09-17T12:12:43+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1011,3 +1011,8 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   Current exact next_action records the image-level repair: order After/Requires user@1000, use
   non-forking Type=simple dbus daemon, bounded readiness check, then one terminal-attested run. No
   further rerun or gate weakening performed.
+
+- 2026-09-17T12:12:43+00:00: A concrete image-level repair is now identified: the final serial log
+  shows user-runtime-dir@1000 finished, then asb-session-bus.service raced user@1000 and failed.
+  Resume for one bounded image repair only: order after user@1000, use Type=simple bus daemon with
+  bounded readiness, then one clean full-exhaustive attempt.
