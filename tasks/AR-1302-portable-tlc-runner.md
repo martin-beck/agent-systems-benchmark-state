@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 440,
+  "task_revision": 441,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T13:39:28+00:00",
+  "updated_at": "2026-09-17T13:39:48+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1475,3 +1475,7 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   present in the state runner, and historical private seed scripts cannot be reused. Therefore no
   guest UUID/mount preflight or f1931686c portable-smoke attestation was produced. Next action:
   implement a reviewed offline seed/mount service, then launch with -net none.
+
+- 2026-09-17T13:39:48+00:00: Implement reviewed offline seed/mount service in state runner for
+  pinned prepared root; no network enablement, no host mounts, bounded boot/preflight, then rerun
+  UUID mount and f1931686c smoke.
