@@ -7,16 +7,16 @@
 
 ## Portfolio overview
 
-**311 ARs tracked** across 7 active status categories.
+**311 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
+| **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 6 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 40 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 196 |
+| **Done** | Accepted, integrated, and durably verified | 197 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 9 |
 
@@ -375,7 +375,7 @@ flowchart LR
         AR_1279["AR-1279 - Blocked"]:::status_blocked
         AR_1280["AR-1280 - Blocked"]:::status_blocked
         AR_1281["AR-1281 - Blocked"]:::status_blocked
-        AR_1282["AR-1282 - In progress"]:::status_in_progress
+        AR_1282["AR-1282 - Done"]:::status_done
         AR_1283["AR-1283 - Blocked"]:::status_blocked
     end
     AR_0001 --> AR_0002
@@ -1575,12 +1575,6 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md): Authenticated replay transport foundation | asb_ar1282_core_runtime_transport | Land the authenticated runtime-to-CLI replay transport foundation. | Coverage repaired at signed head b1fb837: asb-core replay_transport 98.24&#37; lines and 97.53&#37; regions, above unchanged 95&#37; floor; focused core 4/4 and runtime 6/6 pass. Fmt, workspace locked tests, and clippy pass; push exact head and await fresh PR #208 checks. |
-
 ### Open (6)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -1680,3 +1674,5 @@ flowchart LR
 | P1 | [AR-0862](../tasks/AR-0862-openjiuwen-qualification.md): Independently qualify and document OpenJiuwen support | Unclaimed | Independently qualify and document OpenJiuwen support. | Run independent exact-tree qualification with native x86_64 and required pinned QEMU AArch64 portability gates; document native ARM64 as optional future evidence. |
 | P1 | [AR-0864](../tasks/AR-0864-workbuddy-adapter.md): Implement the WorkBuddy contract and capability adapter | Unclaimed | Implement the WorkBuddy contract and capability adapter. | Implement the bounded agent contract, exact provider translation, and capability registration from the pinned protocol; keep live support unclaimed. |
 | P1 | [AR-0865](../tasks/AR-0865-workbuddy-live.md): Qualify pinned WorkBuddy live execution | Unclaimed | Qualify pinned WorkBuddy live execution. | Run the pinned executable against a credential-free loopback provider and prove editing, tools, usage, cancellation, cleanup, and network denial. |
+| P1 | [AR-0866](../tasks/AR-0866-workbuddy-replay.md): Qualify strict WorkBuddy replay | Unclaimed | Qualify strict WorkBuddy replay. | Seal the sanitized live capture and prove strict offline replay, causal parity, malformed-record rejection, and zero external network. |
+| P1 | [AR-0867](../tasks/AR-0867-workbuddy-parity.md): Add WorkBuddy provider parity and support matrix evidence | Unclaimed | Add WorkBuddy provider parity and support matrix evidence. | Extend exact provider parity and the platform support matrix only for executable-qualified WorkBuddy combinations under a serialized shared-path fence. |

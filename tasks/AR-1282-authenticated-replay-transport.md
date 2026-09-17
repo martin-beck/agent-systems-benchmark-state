@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1282-authenticated-replay-transport",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T02:22:15+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1282-authenticated-replay-transport",
   "observed_dirty": 0,
   "observed_head": "b1fb8371104839324c5736ebcd7d39b93c9d8bbc",
-  "owner": "asb_ar1282_core_runtime_transport",
+  "owner": "",
   "plan": "../plans/AR-1282.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Land the authenticated runtime-to-CLI replay transport foundation.",
-  "task_revision": 109,
+  "task_revision": 110,
   "title": "Authenticated replay transport foundation",
-  "updated_at": "2026-09-17T01:17:44+00:00",
+  "updated_at": "2026-09-17T01:18:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1282-authenticated-replay-transport"
 }
 ---
@@ -336,3 +336,9 @@ claim primary command execution.
 
 - 2026-09-17T01:17:44+00:00: Recorded command exit 0; command argv SHA-256
   c44fb7aa88ec3ff9ce1d5fe3956a8585c110ac5e313c00dcbc168cc94c5079c5.
+
+- 2026-09-17T01:18:18+00:00: Complete: signed PR #208 head b1fb837 merged forward-only as
+  f9ddf7ef6b3b2a96dd7faee04906f4e5cb3aa8e1 with tree 1dd026bfef09b7cb225ba67f6665982e075c629b. Main
+  signature/DCO/tree verified. Post-merge workflows all SUCCESS: AArch64 35169496710, hosted
+  35169496730, Rust 35169496694, repository quality 35169496683, faults 35169496759, formal
+  35169496721, headers 35169496718. Coverage/local locked gates passed; clean worktree.

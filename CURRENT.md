@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1282](tasks/AR-1282-authenticated-replay-transport.md): Authenticated replay transport foundation | Land the authenticated runtime-to-CLI replay transport foundation. | Coverage repaired at signed head b1fb837: asb-core replay_transport 98.24% lines and 97.53% regions, above unchanged 95% floor; focused core 4/4 and runtime 6/6 pass. Fmt, workspace locked tests, and clippy pass; push exact head and await fresh PR #208 checks. | asb_ar1282_core_runtime_transport |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -214,6 +208,7 @@ Never edit this file directly.
 | P0 | [AR-1252](tasks/AR-1252-approved-isolated-qualification-runner.md): Provision approved isolated qualification runner | Provision an approved isolated qualification runner for ASB executable evidence. | Monitor post-merge workflows for main 85bcd1e until terminal; verify exact tree/signature/DCO/policy, then release AR-1252 done. | - |
 | P0 | [AR-1259](tasks/AR-1259-protected-main-dco-recovery.md): Protected-main DCO recovery for PR202 | Recover a signed protected-main DCO boundary after the unsigned PR202 web merge. | Monitor exact-main 0a808a6 post-merge workflows to terminal; release AR-1259 and hand off AR-0813 only after all required policies pass. | - |
 | P0 | [AR-1264](tasks/AR-1264-pr205-merge-integrity.md): Recover signed integration after PR #205 | Recover signed protected-main integration after PR #205. | Complete: signed main 69e8b064 verified exact parents/tree/DCO; all seven post-merge workflows SUCCESS. Preserve AR-1263 traceability and recovery evidence. | - |
+| P0 | [AR-1282](tasks/AR-1282-authenticated-replay-transport.md): Authenticated replay transport foundation | Land the authenticated runtime-to-CLI replay transport foundation. | Coverage repaired at signed head b1fb837: asb-core replay_transport 98.24% lines and 97.53% regions, above unchanged 95% floor; focused core 4/4 and runtime 6/6 pass. Fmt, workspace locked tests, and clippy pass; push exact head and await fresh PR #208 checks. | - |
 | P1 | [AR-0002](tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. | - |
 | P1 | [AR-0003](tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. | - |
 | P1 | [AR-0004](tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. | - |

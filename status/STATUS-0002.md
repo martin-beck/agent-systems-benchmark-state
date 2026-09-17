@@ -1,7 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| P1 | [AR-0866](../tasks/AR-0866-workbuddy-replay.md): Qualify strict WorkBuddy replay | Unclaimed | Qualify strict WorkBuddy replay. | Seal the sanitized live capture and prove strict offline replay, causal parity, malformed-record rejection, and zero external network. |
-| P1 | [AR-0867](../tasks/AR-0867-workbuddy-parity.md): Add WorkBuddy provider parity and support matrix evidence | Unclaimed | Add WorkBuddy provider parity and support matrix evidence. | Extend exact provider parity and the platform support matrix only for executable-qualified WorkBuddy combinations under a serialized shared-path fence. |
 | P1 | [AR-0868](../tasks/AR-0868-workbuddy-qualification.md): Independently qualify and document WorkBuddy support | Unclaimed | Independently qualify and document WorkBuddy support. | Run independent exact-tree qualification with native x86_64 and required pinned QEMU AArch64 portability gates; document native ARM64 as optional future evidence. |
 | P1 | [AR-0874](../tasks/AR-0874-automatic-workflow-refresh.md): Automate workflow documentation refresh | Unclaimed | Automatically refresh or reject stale workflow documentation and CI captures when essential user-visible behavior changes. | Add essential-change detection, deterministic regeneration, and reviewed update automation for workflows and captures. |
 | P1 | [AR-0892](../tasks/AR-0892-llm-mode-comparative-evidence.md): Compare LLM test and inference evidence modes | Unclaimed | Quantify what each LLM execution mode proves without pooling unlike evidence or hiding harness saturation. | Execute balanced synthetic, strict replay, local inference, and remote live comparisons and publish bounded claims and capacity evidence. |
@@ -26,7 +24,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (196)
+### Done (197)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -106,6 +104,7 @@
 | P0 | [AR-1252](../tasks/AR-1252-approved-isolated-qualification-runner.md): Provision approved isolated qualification runner | Unclaimed | Provision an approved isolated qualification runner for ASB executable evidence. | Monitor post-merge workflows for main 85bcd1e until terminal; verify exact tree/signature/DCO/policy, then release AR-1252 done. |
 | P0 | [AR-1259](../tasks/AR-1259-protected-main-dco-recovery.md): Protected-main DCO recovery for PR202 | Unclaimed | Recover a signed protected-main DCO boundary after the unsigned PR202 web merge. | Monitor exact-main 0a808a6 post-merge workflows to terminal; release AR-1259 and hand off AR-0813 only after all required policies pass. |
 | P0 | [AR-1264](../tasks/AR-1264-pr205-merge-integrity.md): Recover signed integration after PR #205 | Unclaimed | Recover signed protected-main integration after PR #205. | Complete: signed main 69e8b064 verified exact parents/tree/DCO; all seven post-merge workflows SUCCESS. Preserve AR-1263 traceability and recovery evidence. |
+| P0 | [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md): Authenticated replay transport foundation | Unclaimed | Land the authenticated runtime-to-CLI replay transport foundation. | Coverage repaired at signed head b1fb837: asb-core replay_transport 98.24&#37; lines and 97.53&#37; regions, above unchanged 95&#37; floor; focused core 4/4 and runtime 6/6 pass. Fmt, workspace locked tests, and clippy pass; push exact head and await fresh PR #208 checks. |
 | P1 | [AR-0002](../tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Unclaimed | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. |
 | P1 | [AR-0003](../tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Unclaimed | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. |
 | P1 | [AR-0004](../tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Unclaimed | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. |
