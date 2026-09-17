@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1277-runtime-cli-replay-transport",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T01:59:50+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1277-runtime-cli-replay-transport",
   "observed_dirty": 0,
   "observed_head": "c88a34c86a67c51e1a74dc8cdb403fbeb3f74879",
-  "owner": "asb_ar1024_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1277.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide a runtime-issued transport channel for primary strict replay.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Runtime-to-CLI replay transport boundary",
-  "updated_at": "2026-09-17T00:07:22+00:00",
+  "updated_at": "2026-09-17T00:07:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1277-runtime-cli-replay-transport"
 }
 ---
@@ -100,3 +100,10 @@ Preserve AR-1276's blocked evidence and require actual supervised execution.
   syntax delimiter, serve_once API test mismatch, and missing asb-core CLI dependency; all fixed and
   rerun green. Primary argument-level replay still has no construction/injection path and supervised
   cassette/egress/cancel/restart/timeout/crash cleanup remains.
+
+- 2026-09-17T00:07:32+00:00: Released blocked/ownerless at clean signed c88a34c. Transport
+  contract/runtime channel/CLI adapter implemented and focused tests pass; exact remaining blocker
+  is primary argument-level replay dispatch does not construct or receive the runtime-owned client,
+  so actual supervised cassette traffic and required provider/descendant egress denial, no-fallback,
+  cancellation/restart, timeout/crash reaping, and cleanup evidence cannot be established. Preserve
+  c88a34c for follow-on primary dispatch wiring.
