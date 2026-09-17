@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 149,
+  "task_revision": 150,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T03:34:51+00:00",
+  "updated_at": "2026-09-17T03:35:00+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
@@ -463,3 +463,6 @@ must not reuse unmerged strict-replay or asb-tui branches.
   07d4b62ad5c10444e5d0ba5f014613cd7c34c0f5 lacks a matching Signed-off-by trailer. Run 35178551451
   failed exit 1; no gate weakening or history rewrite. Merge 2de393a remains signed/DCO with AR-1288
   tree unchanged.
+
+- 2026-09-17T03:35:00+00:00: Recorded command exit 0; command argv SHA-256
+  f30a20faa0afe5352721d991ff91e5132f35f0cd36b0f915aedb06531237d64e.
