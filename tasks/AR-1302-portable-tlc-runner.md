@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 227,
+  "task_revision": 228,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T10:46:46+00:00",
+  "updated_at": "2026-09-17T10:47:46+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -735,3 +735,6 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   approved runner launcher with a documented system-scope cgroup path while preserving
   TLC_CGROUP_MODE=required; rerun from fresh exact candidate f16d2cb41 and capture attestation.
   Implementation branch remains clean at signed commit 7a6f7fd94 plus prior runner commits.
+
+- 2026-09-17T10:47:46+00:00: Reclaiming AR-1302 to repair guest user-systemd transient-unit
+  admission and rerun required full-exhaustive.
