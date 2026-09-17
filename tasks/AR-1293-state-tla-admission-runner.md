@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 227,
+  "task_revision": 228,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T17:26:57+00:00",
+  "updated_at": "2026-09-17T17:27:48+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -777,3 +777,6 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   the seed hardcoded RuntimeMaxSec=1800; no full attestation was produced. Serial evidence shows TLC
   itself progressing, not a model error. This is a timeout-profile defect; do not claim full
   success.
+
+- 2026-09-17T17:27:48+00:00: Recorded command exit 0; command argv SHA-256
+  1c392fb0778612383246ebed9af16ed19327880a119d30b4e17464f003c938c1.
