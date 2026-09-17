@@ -15,18 +15,18 @@
   ],
   "id": "AR-1024",
   "next_action": "After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning.",
-  "observed_branch": "feature/asb-tui-lifecycle-router",
-  "observed_dirty": 0,
-  "observed_head": "c545c33c8bfedd33fb234ec7f2526447dfe56534",
+  "observed_branch": "DETACHED",
+  "observed_dirty": 5,
+  "observed_head": "c1b1860786e844adb69b8f74e39af290592a89c8",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1024.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend.",
-  "task_revision": 272,
+  "task_revision": 273,
   "title": "Implement `asb tui` lifecycle routing",
-  "updated_at": "2026-09-17T04:21:36+00:00",
+  "updated_at": "2026-09-17T04:21:44+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-lifecycle-router"
 }
 ---

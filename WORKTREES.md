@@ -115,7 +115,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar1252-merge` | `DETACHED` | `4e2820bffe93` | 0 | behind 81, ahead 0 |
 | `agent-systems-benchmark-asb-cli-workflow-captures` | `docs/asb-cli-workflow-captures-attestation` | `b18e38ad94f1` | 0 | behind 399, ahead 0 |
 | `agent-systems-benchmark-asb-tui-capabilities-command` | `feature/asb-tui-capabilities-command` | `d60d23510044` | 0 | behind 402, ahead 0 |
-| `agent-systems-benchmark-asb-tui-lifecycle-router` | `feature/asb-tui-lifecycle-router` | `c545c33c8bfe` | 0 | behind 398, ahead 1 |
+| `agent-systems-benchmark-asb-tui-lifecycle-router` | `DETACHED` | `c1b1860786e8` | 5 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-cli/src/lib.rs`, `crates/asb-cli/src/tui.rs`, `crates/asb-cli/tests/tui_lifecycle.rs`, `docs/ASB_TUI_LIFECYCLE.md`, `docs/examples/asb-cli-workflow-v1.provenance.json` |
 | `agent-systems-benchmark-asb-tui-lifecycle-router-rebased-candidate` | `DETACHED` | `869b1d086261` | 0 | behind 351, ahead 1 |
 | `agent-systems-benchmark-authenticated-control-endpoint-handoff` | `feature/authenticated-control-endpoint-handoff` | `f34e4f57e141` | 0 | behind 360, ahead 0 |
 | `agent-systems-benchmark-beginner-workflows` | `docs/beginner-workflows` | `328de90ef1ed` | 0 | behind 504, ahead 0 |
