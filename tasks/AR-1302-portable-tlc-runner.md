@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 213,
+  "task_revision": 214,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T10:40:45+00:00",
+  "updated_at": "2026-09-17T10:40:48+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -680,3 +680,6 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   allocation under portable prlimit AS=3G (ASB_RC=1), no attestation. v8 correctly used
   TLC_CGROUP_MODE=required but systemd-run --user failed with Failed to connect to bus: No medium
   found (ASB_RC=1), no attestation. No gate was weakened or success claimed.
+
+- 2026-09-17T10:40:48+00:00: Recorded command exit 0; command argv SHA-256
+  a82f0a38438752ac4bc778c60f2794fc9d262db1da45b6546bffacc2cecbe15c.
