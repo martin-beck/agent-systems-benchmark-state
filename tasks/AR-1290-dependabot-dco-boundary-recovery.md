@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Recover protected-main DCO assurance for the immutable Dependabot serde commit without weakening broad policy.",
-  "task_revision": 21,
+  "task_revision": 22,
   "title": "Dependabot DCO boundary recovery",
-  "updated_at": "2026-09-17T03:44:34+00:00",
+  "updated_at": "2026-09-17T03:44:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1290-dependabot-dco"
 }
 ---
@@ -92,3 +92,6 @@ change certificate/runtime behavior, touch asb-tui, or weaken broad policy.
   SSH signatures and matching Martin DCO; exact diff check passes. Closed original unmerged PR #151
   after replacement became safely open; no history rewrite and no immutable exception. Local fmt and
   cargo test --locked --workspace passed with provider/replay/sandbox/formal/fault suites green.
+
+- 2026-09-17T03:44:55+00:00: Recorded command exit 1; command argv SHA-256
+  6cc1b2c2d7205567e61024af63495487d0243850d4eac25508415b686a38ad2a.
