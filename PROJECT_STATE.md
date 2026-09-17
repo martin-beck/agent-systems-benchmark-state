@@ -22,21 +22,21 @@ Generated from local Git and GitHub. Do not edit.
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #213 | `feature/ar1299-agent-catalog-metadata@b9edf44edcbc` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(control): complete authenticated agent catalog metadata |
 | #214 | `feature/ar-1286-supervised-replay-lifecycle@eaf7fcbf42ae` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(replay): integrate runtime-owned supervised replay lifecycle |
-| #215 | `feature/ar-1286-replay-lifecycle-rebased@ed7b2a79de6b` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(replay): integrate signed runtime replay lifecycle |
+| #215 | `feature/ar-1286-replay-lifecycle-rebased@03b1ddc7c9d2` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, IN_PROGRESS:, QUEUED:, IN_PROGRESS:, QUEUED:, IN_PROGRESS: | feat(replay): integrate signed runtime replay lifecycle |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35189996063 | `03b1ddc7c9d2` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 35189996061 | `03b1ddc7c9d2` | pull_request | Rust verification | pending:- |
+| 35189996059 | `03b1ddc7c9d2` | pull_request | Repository quality | pending:- |
+| 35189996032 | `03b1ddc7c9d2` | pull_request | Huawei MIT source headers | queued:- |
+| 35189996021 | `03b1ddc7c9d2` | pull_request | Formal assurance | in_progress:- |
+| 35189996001 | `03b1ddc7c9d2` | pull_request | Emulated aarch64 portability | pending:- |
+| 35189995992 | `03b1ddc7c9d2` | pull_request | Fault assurance | in_progress:- |
+| 35189995988 | `03b1ddc7c9d2` | pull_request | Hosted portability and native qualification | queued:- |
 | 35189611127 | `ed7b2a79de6b` | pull_request | Repository quality | in_progress:- |
 | 35189611086 | `ed7b2a79de6b` | pull_request | Hosted portability and native qualification | completed:success |
 | 35189611001 | `ed7b2a79de6b` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 35189610968 | `ed7b2a79de6b` | pull_request | Formal assurance | completed:success |
-| 35189610900 | `ed7b2a79de6b` | pull_request | Huawei MIT source headers | completed:success |
-| 35189610871 | `ed7b2a79de6b` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 35189610856 | `ed7b2a79de6b` | pull_request | Rust verification | in_progress:- |
-| 35189610826 | `ed7b2a79de6b` | pull_request | Fault assurance | completed:success |
-| 35188527840 | `e438ae80a7a7` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 35188527822 | `e438ae80a7a7` | pull_request | Hosted portability and native qualification | completed:success |
-| 35188527802 | `e438ae80a7a7` | pull_request | Emulated aarch64 portability | completed:success |
-| 35188527790 | `e438ae80a7a7` | pull_request | Fault assurance | completed:success |
