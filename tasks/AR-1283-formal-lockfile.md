@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair formal workspace lockfile drift that fails the locked CI gate.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Formal lockfile CI drift repair",
-  "updated_at": "2026-09-17T00:47:11+00:00",
+  "updated_at": "2026-09-17T00:47:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1283-formal-lockfile"
 }
 ---
@@ -32,3 +32,6 @@ Repair formal lockfile drift without weakening locked CI or changing formal beha
   under cargo test --locked; repair the lockfile without weakening the gate.
 
 - 2026-09-17T00:47:11+00:00: Claimed by asb_ar1024_lifecycle_router.
+
+- 2026-09-17T00:47:43+00:00: Recorded command exit 0; command argv SHA-256
+  5c8da9b34935360f7399b9d4b260d9a460b442f2f0ca08eddaee6e8f11776ef0.
