@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1288](tasks/AR-1288-certificate-chain-authz.md): Runtime certificate issuance and chain validation | Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814. | PR #210 is CLEAN at exact signed head 7b3ff1d3a87436c2a7299d452bb4220dd7847a4c, base 2fd90557a4e7be32fab590f47bc501462127c1c1. All 12 required hosted checks are terminal SUCCESS, including formal Loom/state after formal/Cargo.lock repair, policy, Rust, and emulated aarch64. Await/record final independent review; merge only through protected signed workflow, then verify exact-main post-merge gates. | asb_ar0909_lifecycle_repair |
+| P1 | [AR-1288](tasks/AR-1288-certificate-chain-authz.md): Runtime certificate issuance and chain validation | Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814. | AR-1288 feature merge is complete at signed main 2de393a05cc3c65f3495238abb19408e8218e483, but closure is blocked by protected-main integrity evidence. Post-merge Repository quality run 35178551451 reports Dependabot commit 07d4b62ad5c10444e5d0ba5f014613cd7c34c0f5 lacks a matching Signed-off-by trailer. Preserve AR-1288 done code and exact merge evidence; coordinator must create/use a dependency-safe protected-main remediation AR, repair forward-only, then rerun all exact-main gates before AR-1288 release. | asb_ar0909_lifecycle_repair |
 
 ## Open
 

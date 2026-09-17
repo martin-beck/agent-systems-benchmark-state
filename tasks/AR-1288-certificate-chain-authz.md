@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-1288",
-  "next_action": "PR #210 is CLEAN at exact signed head 7b3ff1d3a87436c2a7299d452bb4220dd7847a4c, base 2fd90557a4e7be32fab590f47bc501462127c1c1. All 12 required hosted checks are terminal SUCCESS, including formal Loom/state after formal/Cargo.lock repair, policy, Rust, and emulated aarch64. Await/record final independent review; merge only through protected signed workflow, then verify exact-main post-merge gates.",
+  "next_action": "AR-1288 feature merge is complete at signed main 2de393a05cc3c65f3495238abb19408e8218e483, but closure is blocked by protected-main integrity evidence. Post-merge Repository quality run 35178551451 reports Dependabot commit 07d4b62ad5c10444e5d0ba5f014613cd7c34c0f5 lacks a matching Signed-off-by trailer. Preserve AR-1288 done code and exact merge evidence; coordinator must create/use a dependency-safe protected-main remediation AR, repair forward-only, then rerun all exact-main gates before AR-1288 release.",
   "observed_branch": "feature/ar-1288-certificate-chain-authz",
   "observed_dirty": 0,
   "observed_head": "7b3ff1d3a87436c2a7299d452bb4220dd7847a4c",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 148,
+  "task_revision": 149,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T03:34:27+00:00",
+  "updated_at": "2026-09-17T03:34:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
@@ -456,3 +456,10 @@ must not reuse unmerged strict-replay or asb-tui branches.
 
 - 2026-09-17T03:34:27+00:00: Recorded command exit 0; command argv SHA-256
   c9a19304a96240cd619624af973bbbab38c721829bd687bb8aa5bc694ed9f8f3.
+
+- 2026-09-17T03:34:51+00:00: Post-merge blocker captured verbatim: repository_policy.py
+  RANGE_BASE=2de393a05cc3c65f3495238abb19408e8218e483
+  RANGE_HEAD=07d4b62ad5c10444e5d0ba5f014613cd7c34c0f5; repository policy:
+  07d4b62ad5c10444e5d0ba5f014613cd7c34c0f5 lacks a matching Signed-off-by trailer. Run 35178551451
+  failed exit 1; no gate weakening or history rewrite. Merge 2de393a remains signed/DCO with AR-1288
+  tree unchanged.
