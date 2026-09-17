@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**334 ARs tracked** across 6 active status categories.
+**334 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 0 |
+| **Open** | Dependency-ready and available to claim | 1 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 50 |
-| **Planned** | Defined work awaiting promotion or dependencies | 59 |
+| **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 214 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -402,7 +402,7 @@ flowchart LR
         AR_1303["AR-1303 - Blocked"]:::status_blocked
         AR_1304["AR-1304 - Done"]:::status_done
         AR_1305["AR-1305 - Blocked"]:::status_blocked
-        AR_1306["AR-1306 - Planned"]:::status_planned
+        AR_1306["AR-1306 - Open"]:::status_open
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1655,6 +1655,12 @@ flowchart LR
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | codex-ar1293-timeout-repair-20260917 | Repair the state-repository TLA admission runner and truthful worktree metadata. | Wait for old ada383cea VM termination; then rebuild exact-head fa57625d9 image/seed, run required and independently re-reviewed full gates, validating overlay digest and exact serial markers. |
 
+### Open (1)
+
+| Priority | AR | Owner | Summary | Next action |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1306](../tasks/AR-1306-authenticated-fault-matrix-qualification.md): Authenticated strict-replay fault-matrix qualification | Unclaimed | Qualify the real authenticated strict-replay service and fault matrix missing from PR #221. | Promote after verifying AR-1300 and AR-1287 remain done; implement a real runtime-owned StrictReplayService/relay listener and authenticated positive parity fixture, then add cause-specific provider/descendant egress-denial and lifecycle fault evidence on the approved KVM runner. Reconcile AR-1301 only after exact signed-head CI, independent review, protected merge and post-merge verification. |
+
 ### Blocked (50)
 
 | Priority | AR | Owner | Summary | Next action |
@@ -1710,7 +1716,7 @@ flowchart LR
 | P1 | [AR-1258](../tasks/AR-1258-docker-binfmt-qemu.md): Provision Docker binfmt/QEMU capability | Unclaimed | Provision and verify Docker binfmt/QEMU for multiarch qualification. | Inspect Docker/binfmt/QEMU capability and approved privilege workflow; add bounded verification and rollback-safe checks. |
 | P1 | [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md): Privacy-safe hosted platform failure diagnostics | Unclaimed | Add privacy-safe fixed diagnostics for hosted platform evidence failures. | PR #220 exact head d85889d is blocked only by unrelated hosted formal-runner ETXTBSY failures. Repair/retry CI infrastructure; then require fresh all-green exact-head CI before merge. Do not alter AR-1303 gates or product behavior. |
 
-### Planned (59)
+### Planned (58)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1731,5 +1737,3 @@ flowchart LR
 | P0 | [AR-1160](../tasks/AR-1160.md): Wizard control API | Unclaimed | Expose wizard operations. | Read the plan. |
 | P0 | [AR-1170](../tasks/AR-1170.md): Standalone TUI wizard | Unclaimed | Guide TUI setup through analysis. | Read the plan. |
 | P0 | [AR-1180](../tasks/AR-1180.md): Cross-project wizard qualification | Unclaimed | Qualify the complete wizard. | Read the plan. |
-| P0 | [AR-1199](../tasks/AR-1199-authenticated-tui-install-router.md): Authenticated TUI install router | Unclaimed | Expose an authenticated renderer-neutral ASB router for asb tui install and lifecycle operations. | Promote only after dependencies are independently complete; implement the renderer-neutral authenticated CLI/control route and full integration tests. |
-| P0 | [AR-1211](../tasks/AR-1211-initial-setup-first-agent.md): Initial setup and first agent connection tutorial | Unclaimed | Teach first-time users to initialize ASB and add the first agent connection. | Implement the syntax-checked tutorial for ASB initialization, first-agent registration, and agent connection setup. |

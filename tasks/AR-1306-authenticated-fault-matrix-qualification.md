@@ -16,11 +16,11 @@
   "plan": "../plans/AR-1306.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T21:30:00+00:00",
+  "updated_at": "2026-09-17T21:31:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
@@ -42,3 +42,6 @@ Completion requires a real runtime-owned service/listener positive path, exact a
 cassette identity and response parity, distinct provider/descendant egress-denial causes, all
 remaining lifecycle faults, bounded cleanup, sanitized provenance-bound evidence, signed+DCO
 publication, independent review, green exact-head CI, protected merge and post-merge verification.
+
+- 2026-09-17T21:31:46+00:00: Dependencies AR-1300 and AR-1287 are done; promote the real
+  authenticated fault-matrix successor.
