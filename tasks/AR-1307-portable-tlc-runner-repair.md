@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 116,
+  "task_revision": 117,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T23:34:35+00:00",
+  "updated_at": "2026-09-17T23:34:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -402,3 +402,6 @@ and protected publication sequence.
   state checkout (.git), so git rev-parse returned failure; no attestation was produced. This is a
   truthful seed environment defect, now patched by removing those overrides. Earlier stale-root run
   and malformed-seed/ENOSPC failures remain recorded.
+
+- 2026-09-17T23:34:44+00:00: Recorded command exit 1; command argv SHA-256
+  5149a2d7424ac8c39d5fd7e60fc1598faab7174808ed7653845729de009f5dd1.
