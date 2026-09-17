@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-1288",
-  "next_action": "Signed checkpoint 871d2f7 implements pinned DER trust-anchor construction and offline rustls/webpki chain validation via issue_der; leaf digest, pairing, generation, validity, role, issuer, anchor and bounded chain checks fail closed. Focused asb-control --lib passes 56/56. Next: push exact signed head, run applicable workspace gates, inspect generated schema/public docs, then independent review; do not publish before exact-head gates.",
+  "next_action": "Signed exact head 01bf266 enforces cryptographic issue_der only: pinned DER trust anchor, offline rustls/webpki validation, intermediate DER digest/order binding, parsed DER subject-to-pairing binding, enrolled endpoint binding, generation revocation, strict identity schema and generated certificate-identity schema. Full offline locked workspace tests and workspace Clippy -D warnings pass; focused certificate tests 7/7 pass. Next: push exact head and request independent re-review; do not publish until review approves.",
   "observed_branch": "feature/ar-1288-certificate-chain-authz",
   "observed_dirty": 0,
   "observed_head": "01bf266e0d86e0f3bdb676aeb0fef32e9116f75d",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 62,
+  "task_revision": 63,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T03:00:24+00:00",
+  "updated_at": "2026-09-17T03:00:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
@@ -192,3 +192,12 @@ must not reuse unmerged strict-replay or asb-tui branches.
 
 - 2026-09-17T03:00:24+00:00: Recorded command exit 0; command argv SHA-256
   6bfc5d45a7fb31ac26de9cb54b5ebeb67a6d9d6dee784b5fb6096c25e78b6989.
+
+- 2026-09-17T03:00:43+00:00: 2026-09-17T03:01:00+00:00: Addressed review blockers. Removed public
+  metadata-only issue path; metadata validation is private and authorization requires issue_der.
+  Added x509-parser DER subject binding, exact intermediate digest/order checks, endpoint authority
+  binding, race-safe generation revocation, unknown-field negative, generated schema artifact, and
+  Cargo.lock dependency pin. Gate evidence: cargo fmt --all -- --check passed; cargo test --offline
+  --locked --workspace passed; cargo clippy --offline --locked --workspace --all-targets -- -D
+  warnings passed; certificate-focused tests 7/7 passed. Product head
+  01bf266e0d86e0f3bdb676aeb0fef32e9116f75d is clean, SSH-signed, with matching DCO.

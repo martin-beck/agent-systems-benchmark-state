@@ -1603,7 +1603,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md): Runtime certificate issuance and chain validation | asb_ar0909_lifecycle_repair | Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814. | Signed checkpoint 871d2f7 implements pinned DER trust-anchor construction and offline rustls/webpki chain validation via issue_der; leaf digest, pairing, generation, validity, role, issuer, anchor and bounded chain checks fail closed. Focused asb-control --lib passes 56/56. Next: push exact signed head, run applicable workspace gates, inspect generated schema/public docs, then independent review; do not publish before exact-head gates. |
+| P1 | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md): Runtime certificate issuance and chain validation | asb_ar0909_lifecycle_repair | Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814. | Signed exact head 01bf266 enforces cryptographic issue_der only: pinned DER trust anchor, offline rustls/webpki validation, intermediate DER digest/order binding, parsed DER subject-to-pairing binding, enrolled endpoint binding, generation revocation, strict identity schema and generated certificate-identity schema. Full offline locked workspace tests and workspace Clippy -D warnings pass; focused certificate tests 7/7 pass. Next: push exact head and request independent re-review; do not publish until review approves. |
 
 ### Open (6)
 
