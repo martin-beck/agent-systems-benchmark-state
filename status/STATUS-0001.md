@@ -1598,7 +1598,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md): Supervised strict-replay cassette lifecycle | asb_ar1286_supervised_replay_lifecycle | Execute strict-replay cassettes through the runtime-owned supervised lifecycle. | Worktree created at /srv/data/projects/agent-systems-benchmark-ar-1286-supervised-replay-lifecycle from origin/main 2fd9055. Inspect ReplayLaunchContext, SandboxBackend::spawn_launch, and CLI replay authority seam; implement bounded child lifecycle without asb-tui. |
+| P0 | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md): Supervised strict-replay cassette lifecycle | asb_ar1286_supervised_replay_lifecycle | Execute strict-replay cassettes through the runtime-owned supervised lifecycle. | Signed checkpoint 08bb157 adds ReplayLaunchContext::spawn, consuming opaque launch input and benchmark lease through SandboxBackend::spawn_launch. Runtime package locked tests 50 unit/integration plus 2 doctests pass. Next wire actual CLI cassette execution and bounded lifecycle fault fixtures. |
 
 ### Open (6)
 

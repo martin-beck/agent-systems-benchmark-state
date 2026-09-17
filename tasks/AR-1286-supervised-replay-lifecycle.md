@@ -11,7 +11,7 @@
     "AR-1239"
   ],
   "id": "AR-1286",
-  "next_action": "Worktree created at /srv/data/projects/agent-systems-benchmark-ar-1286-supervised-replay-lifecycle from origin/main 2fd9055. Inspect ReplayLaunchContext, SandboxBackend::spawn_launch, and CLI replay authority seam; implement bounded child lifecycle without asb-tui.",
+  "next_action": "Signed checkpoint 08bb157 adds ReplayLaunchContext::spawn, consuming opaque launch input and benchmark lease through SandboxBackend::spawn_launch. Runtime package locked tests 50 unit/integration plus 2 doctests pass. Next wire actual CLI cassette execution and bounded lifecycle fault fixtures.",
   "observed_branch": "feature/ar-1286-supervised-replay-lifecycle",
   "observed_dirty": 0,
   "observed_head": "08bb15738759dea12fe830ea54246370bffff2ff",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-17T02:21:28+00:00",
+  "updated_at": "2026-09-17T02:21:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
@@ -56,3 +56,7 @@ do not touch or claim asb-tui behavior.
 
 - 2026-09-17T02:21:20+00:00: Recorded command exit 0; command argv SHA-256
   b56a340314485ff8f50e5f6d74979c76e51d72077e6eaa02dd388001d918fb1c.
+
+- 2026-09-17T02:21:41+00:00: Implementation checkpoint: 08bb157 is SSH-signed+DCO and clean. Focused
+  cargo test -p asb-runtime --locked passed 50 tests, 3 binary tests, 8 process-boundary, 11
+  sandbox-boundary, 16 scheduler-boundary, and 2 doctests. No asb-tui paths touched.
