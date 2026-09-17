@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T22:08:13+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Provision a fresh 32GiB data image from signed candidate ada383cea, fsck-clean with exact ref/security fixture; run full-exhaustive with unchanged 7200s and containment bounds, then validate overlay digest and serial markers.",
+  "next_action": "Monitor active full-exhaustive QEMU for candidate ada383cea until terminal result; validate attestation, overlay-bound receipt, and all exact serial markers before acceptance.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 627,
+  "task_revision": 628,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T21:08:13+00:00",
+  "updated_at": "2026-09-17T21:08:59+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1962,3 +1962,10 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 - 2026-09-17T21:08:00+00:00: Heartbeat by codex-ar1293-timeout-repair-20260917.
 
 - 2026-09-17T21:08:13+00:00: Heartbeat by codex-ar1293-timeout-repair-20260917.
+
+- 2026-09-17T21:08:59+00:00: Provisioned and validated fresh 32GiB direct-ext4 data image for signed
+  candidate ada383cea: SHA-256 735afc1e1ad89648f9bc18932f9576e3cbe5ae577d89a829d680bafde4707153,
+  fsck-clean, exact bare ref, pinned JDK security files present. Started fresh full-exhaustive QEMU
+  with no NIC/host mounts, 32GiB guest memory, 8 vCPUs, tier timeout 7200s, and unchanged required
+  containment bounds. Receipt now requires overlay digest and exact transient/result/evidence
+  markers.
