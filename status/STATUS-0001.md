@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**315 ARs tracked** across 6 active status categories.
+**316 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 6 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 43 |
-| **Planned** | Defined work awaiting promotion or dependencies | 58 |
+| **Planned** | Defined work awaiting promotion or dependencies | 59 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 198 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -381,6 +381,7 @@ flowchart LR
         AR_1285["AR-1285 - Done"]:::status_done
         AR_1286["AR-1286 - Blocked"]:::status_blocked
         AR_1287["AR-1287 - Blocked"]:::status_blocked
+        AR_1288["AR-1288 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -833,6 +834,7 @@ flowchart LR
     AR_0812 --> AR_1033
     AR_0813 --> AR_0814
     AR_0813 --> AR_0818
+    AR_0813 --> AR_1288
     AR_0814 --> AR_0815
     AR_0814 --> AR_0818
     AR_0815 --> AR_0816
@@ -1362,7 +1364,7 @@ flowchart LR
 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md) | [AR-0811](../tasks/AR-0811-documentation-qualification.md) |
 | [AR-0811](../tasks/AR-0811-documentation-qualification.md) | [AR-0808](../tasks/AR-0808-core-workflow-guides.md), [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md), [AR-0810](../tasks/AR-0810-github-pages-documentation.md) | [AR-0903](../tasks/AR-0903-release-qualification.md) |
 | [AR-0812](../tasks/AR-0812-modern-terminal-rendering.md) | [AR-0804](../tasks/AR-0804-tui-settings-wizard.md), [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0806](../tasks/AR-0806-tui-history-analysis.md) | [AR-0807](../tasks/AR-0807-tui-resilience-accessibility.md), [AR-0820](../tasks/AR-0820-verifiable-install-artifacts.md), [AR-1033](../tasks/AR-1033-asb-tui-visual-system.md) |
-| [AR-0813](../tasks/AR-0813-remote-control-transport.md) | [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0902](../tasks/AR-0902-fault-assurance.md) | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md) |
+| [AR-0813](../tasks/AR-0813-remote-control-transport.md) | [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0803](../tasks/AR-0803-frontend-control-api.md), [AR-0902](../tasks/AR-0902-fault-assurance.md) | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md), [AR-1288](../tasks/AR-1288-certificate-chain-authz.md) |
 | [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md) | [AR-0813](../tasks/AR-0813-remote-control-transport.md) | [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md) |
 | [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md) | [AR-0805](../tasks/AR-0805-tui-run-control.md), [AR-0814](../tasks/AR-0814-remote-enrollment-authorization.md), [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md) | [AR-0816](../tasks/AR-0816-cross-platform-remote-interoperability.md), [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md) |
 | [AR-0816](../tasks/AR-0816-cross-platform-remote-interoperability.md) | [AR-0702](../tasks/AR-0702-native-platforms.md), [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md), [AR-0819](../tasks/AR-0819-ssh-remote-bootstrap.md) | [AR-0817](../tasks/AR-0817-remote-tui-workflows.md), [AR-0818](../tasks/AR-0818-remote-control-security-audit.md) |
@@ -1593,6 +1595,7 @@ flowchart LR
 | [AR-1285](../tasks/AR-1285-runtime-launch-factory.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md) | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md) |
 | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md) | None |
 | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md) | None | None |
+| [AR-1288](../tasks/AR-1288-certificate-chain-authz.md) | [AR-0813](../tasks/AR-0813-remote-control-transport.md) | None |
 
 ## Complete AR inventory
 
@@ -1655,7 +1658,7 @@ flowchart LR
 | P1 | [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md): Execute bundled MockAgents transport in isolation | Unclaimed | Execute bundled MockAgents transport in isolation. | Implement bundled in-container MockAgents transport and digest-pinned arm64 QEMU evidence. |
 | P1 | [AR-1258](../tasks/AR-1258-docker-binfmt-qemu.md): Provision Docker binfmt/QEMU capability | Unclaimed | Provision and verify Docker binfmt/QEMU for multiarch qualification. | Inspect Docker/binfmt/QEMU capability and approved privilege workflow; add bounded verification and rollback-safe checks. |
 
-### Planned (58)
+### Planned (59)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1687,4 +1690,3 @@ flowchart LR
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
-| P1 | [AR-0811](../tasks/AR-0811-documentation-qualification.md): Audit workflow documentation and publication | Unclaimed | Qualify documentation completeness, executability, accessibility, privacy, provenance, and release accuracy. | Independently audit every published workflow against released programs and deployed Pages output. |
