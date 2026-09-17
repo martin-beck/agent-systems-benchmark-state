@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1287.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Provide a delegated runner for real strict-replay child lifecycle qualification.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Delegated sandbox runner capability",
-  "updated_at": "2026-09-17T00:00:00+00:00",
+  "updated_at": "2026-09-17T02:33:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1287-delegated-sandbox-runner"
 }
 ---
@@ -26,3 +26,6 @@
 
 Set up the approved container/VM execution boundary required by AR-1286. Do not claim product
 lifecycle completion until the actual child and fault fixtures run in the qualified boundary.
+
+- 2026-09-17T02:33:02+00:00: Runner setup is independent remediation for AR-1286 namespace
+  capability blocker.
