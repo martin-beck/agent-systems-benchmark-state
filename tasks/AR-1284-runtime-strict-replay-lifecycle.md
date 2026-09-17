@@ -18,11 +18,11 @@
   "plan": "../plans/AR-1284.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Connect authenticated replay transport to the runtime-owned primary strict-replay lifecycle.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Runtime-owned strict-replay lifecycle execution",
-  "updated_at": "2026-09-17T01:21:57Z",
+  "updated_at": "2026-09-17T01:23:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1284-strict-replay-lifecycle"
 }
 ---
@@ -59,3 +59,6 @@ renderer, terminal, or frontend paths are in scope.
 Do not claim completion from transport-only tests, mock-only lifecycle evidence, or a CLI path that
 constructs its own relay. If runtime-owned attestation or sandbox capability is still missing,
 record the exact blocker and split a further dependency-safe successor instead of weakening gates.
+
+- 2026-09-17T01:23:41+00:00: AR-1282 merged; dependencies verified; promote runtime-owned lifecycle
+  successor
