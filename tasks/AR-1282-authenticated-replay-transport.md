@@ -11,17 +11,17 @@
   "id": "AR-1282",
   "next_action": "Run full locked workspace fmt/test/clippy/rustdoc/policy/privacy/formal/portability gates at signed d3bcdeaf; then request independent review of bounded core/runtime transport only.",
   "observed_branch": "feature/ar-1282-authenticated-replay-transport",
-  "observed_dirty": 1,
-  "observed_head": "d3bcdeaf9428dfb55f63a15fa8ed1206c4a69507",
+  "observed_dirty": 0,
+  "observed_head": "977a37d2628d2e397020ef404a9c8e7072c1838e",
   "owner": "asb_ar1282_core_runtime_transport",
   "plan": "../plans/AR-1282.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Land the authenticated runtime-to-CLI replay transport foundation.",
-  "task_revision": 40,
+  "task_revision": 41,
   "title": "Authenticated replay transport foundation",
-  "updated_at": "2026-09-17T00:32:41+00:00",
+  "updated_at": "2026-09-17T00:32:48+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1282-authenticated-replay-transport"
 }
 ---
