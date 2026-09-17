@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 128,
+  "task_revision": 129,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T23:38:48+00:00",
+  "updated_at": "2026-09-17T23:38:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -446,3 +446,6 @@ and protected publication sequence.
   + TLC 2.19 / tla2tools SHA 936a...; likely JFR cannot create temp files because Java defaults to
   root-owned /tmp while TMPDIR alone does not change java.io.tmpdir. Treat as runner environment
   failure, not formal success; next patch adds explicit -Djava.io.tmpdir owner-private.
+
+- 2026-09-17T23:38:58+00:00: Recorded command exit 0; command argv SHA-256
+  5149a2d7424ac8c39d5fd7e60fc1598faab7174808ed7653845729de009f5dd1.
