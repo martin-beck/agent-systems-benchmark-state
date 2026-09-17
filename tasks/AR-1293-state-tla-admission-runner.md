@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T06:44:40+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Reconcile the still-failing vendor fixture contract to coordinator v0.3.7 and provide a host with enough thread capacity for the portable TLC VM; then rerun full state and formal gates. Candidate 53dd96389 is signed and focused-green but is not publishable while 133-test vendor failures and TLC EAGAIN remain.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "codex-ar1293-requalify",
+  "owner": "",
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 42,
+  "task_revision": 43,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T05:47:12+00:00",
+  "updated_at": "2026-09-17T05:47:14+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -160,3 +160,6 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   while coordinator vendor is v0.3.7. Private-path portable-smoke downloaded the pinned JAR but JVM
   failed before TLC with EAGAIN Cannot create VM thread; bounded host probe recorded 32 CPUs, 216
   processes, load 8.06/7.94/6.02. External root lock was not touched.
+
+- 2026-09-17T05:47:14+00:00: Blocked ownerless: exact full state and formal gates are red for the
+  recorded vendor fixture mismatch and host JVM thread-capacity failure. No publication or merge.
