@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T19:51:10+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Repair the authorized QEMU guest required-containment path: provide a working systemd user bus/transient unit launcher for the exact candidate image; portable-smoke already passed. Do not run full-exhaustive until pr-publication attestation is green.",
+  "next_action": "Re-run full-exhaustive with a fresh larger data image copied from accepted PR8 clean image; required evidence is green. The first full attempt failed closed on No space left on device while Handoffctl model state writer persisted, so no full attestation exists.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 207,
+  "task_revision": 208,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T16:53:18+00:00",
+  "updated_at": "2026-09-17T16:54:00+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -726,3 +726,9 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T16:53:18+00:00: Recorded command exit 0; command argv SHA-256
   10c16b95251b90bac1da701d208da802618e2e07128663571b01befef36b7c21.
+
+- 2026-09-17T16:54:00+00:00: Full-exhaustive attempt reached TLC and several models completed, but
+  failed at Handoffctl model state persistence with OSError Errno 28 No space left on device on the
+  512M data image; FULL_EXHAUSTIVE_RC=1 and no full attestation. Required PR8 evidence remains
+  independently validated green. Next action is an explicit larger fresh data image, not an
+  unchanged rerun.

@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Repair the authorized QEMU guest required-containment path: provide a working systemd user bus/transient unit launcher for the exact candidate image; portable-smoke already passed. Do not run full-exhaustive until pr-publication attestation is green. | codex-ar1293-recovery-20260917 |
+| P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Re-run full-exhaustive with a fresh larger data image copied from accepted PR8 clean image; required evidence is green. The first full attempt failed closed on No space left on device while Handoffctl model state writer persisted, so no full attestation exists. | codex-ar1293-recovery-20260917 |
 
 ## Blocked
 
