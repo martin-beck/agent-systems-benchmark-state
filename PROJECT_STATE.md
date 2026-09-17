@@ -23,7 +23,7 @@ Generated from local Git and GitHub. Do not edit.
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #197 | `feature/ar-1248-strict-replay-cli-contract@7d9c2ee2e08b` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): define strict offline replay consumer contract |
 | #207 | `feature/ar-1262-runtime-owned-launch-authority@c009185748a4` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): issue strict-replay launch authority |
-| #210 | `feature/ar-1288-certificate-chain-authz@0e8d7e2b23bd` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:FAILURE, IN_PROGRESS: | feat(control): validate runtime certificate chains |
+| #210 | `feature/ar-1288-certificate-chain-authz@0e8d7e2b23bd` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:FAILURE, IN_PROGRESS: | feat(control): validate runtime certificate chains |
 
 ## Recent workflows
 
@@ -34,8 +34,8 @@ Generated from local Git and GitHub. Do not edit.
 | 35177009392 | `0e8d7e2b23bd` | pull_request | Fault assurance | in_progress:- |
 | 35177009297 | `0e8d7e2b23bd` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35177009279 | `0e8d7e2b23bd` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 35177009258 | `0e8d7e2b23bd` | pull_request | Repository quality | in_progress:- |
-| 35177009255 | `0e8d7e2b23bd` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35177009258 | `0e8d7e2b23bd` | pull_request | Repository quality | completed:failure |
+| 35177009255 | `0e8d7e2b23bd` | pull_request | Hosted portability and native qualification | completed:success |
 | 35177009226 | `0e8d7e2b23bd` | pull_request | Formal assurance | in_progress:- |
 | 35173271516 | `2fd90557a4e7` | push | Repository quality | completed:success |
 | 35173271506 | `2fd90557a4e7` | push | Hosted portability and native qualification | completed:success |
