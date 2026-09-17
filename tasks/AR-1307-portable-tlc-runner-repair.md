@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Run full local suite and vendor/privacy/schema gates at 2f814b1fd; dispatch exact-head workflow again, inspect terminal result; then provision fresh QEMU only if hosted runner cannot supply formal capacity.",
+  "next_action": "Dispatch exact-head workflow at 9051f1e8f; inspect model output. If clean CI now reaches formal execution, retain full result and fix only truthful failures; otherwise qualify disposable QEMU runner infrastructure under /srv/data/projects.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 84,
+  "task_revision": 85,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T22:55:27+00:00",
+  "updated_at": "2026-09-17T22:55:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -297,3 +297,10 @@ and protected publication sequence.
 - 2026-09-17T22:55:18+00:00: Heartbeat by codex-ar1307-runner-repair-20260918.
 
 - 2026-09-17T22:55:27+00:00: Heartbeat by codex-ar1307-runner-repair-20260918.
+
+- 2026-09-17T22:55:42+00:00: Second exact-head CI dispatch 35284150750 failed at profile import:
+  clean CI checkout could not import namespace package formal.handoffctl (ModuleNotFoundError:
+  formal). This was a launcher portability defect, not a formal model result. Signed+DCO repair
+  9051f1e8f adds an absolute sibling-file fallback for tier_profiles; focused runner/launcher 29/29,
+  Ruff, format, and mypy pass; pushed to PR #24. Wrapper lock-timeout during one test invocation was
+  retried safely without repeating external effects.
