@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**331 ARs tracked** across 7 active status categories.
+**331 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 3 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 48 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -398,7 +398,7 @@ flowchart LR
         direction TB
         AR_1300["AR-1300 - Done"]:::status_done
         AR_1301["AR-1301 - In progress"]:::status_in_progress
-        AR_1302["AR-1302 - Open"]:::status_open
+        AR_1302["AR-1302 - In progress"]:::status_in_progress
         AR_1303["AR-1303 - Blocked"]:::status_blocked
     end
     AR_0001 --> AR_0002
@@ -1639,18 +1639,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | coordinator-ar1293-as-limit-repair | Repair the state-repository TLA admission runner and truthful worktree metadata. | Requalify AR-1302 portable-smoke with exact 8G portable address-space bound and 3G physical/swap limits; require success attestation before required/full. |
 | P0 | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | root | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | PR #219 exact head dd5bfb8: Platform evidence is green after hosted probe classification fix. Wait for remaining exact-head checks; then complete independent review, protected signed merge, post-merge verification and reconcile. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | Unclaimed | Provision a clean portable TLC CI/VM runner for state formal admission. | Use run_lifecycle from signed commit 1fd5e31cf to create a fresh overlay, boot the UUID-serial data disk, run guest UUID/mount preflight, then execute f1931686c portable-smoke and capture sanitized terminal attestation. Do not claim qualification from container evidence. |
+| P0 | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | codex-ar1302-receipt | Provision a clean portable TLC CI/VM runner for state formal admission. | Use run_lifecycle from signed commit 1fd5e31cf to create a fresh overlay, boot the UUID-serial data disk, run guest UUID/mount preflight, then execute f1931686c portable-smoke and capture sanitized terminal attestation. Do not claim qualification from container evidence. |
 
 ### Blocked (48)
 
