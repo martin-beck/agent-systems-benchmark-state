@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1304-required-tier-qemu-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T15:15:02+00:00",
+  "claim_expires": "2026-09-17T16:47:46+00:00",
   "depends_on": [
     "AR-1302"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create a clean required-containment QEMU runner for formal publication evidence.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Required-tier QEMU user-bus runner",
-  "updated_at": "2026-09-17T14:47:25+00:00",
+  "updated_at": "2026-09-17T14:47:46+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner"
 }
 ---
@@ -66,3 +66,5 @@ logs, or claim full-exhaustive evidence before required attestation is green.
   with MemoryMax=3G, MemorySwapMax=3G, CPUQuota=200%, TasksMax=64, KillMode=control-group,
   RuntimeMaxSec=1800. Focused tests 2/2 and Ruff pass. Guest integration and required pr-publication
   attestation remain outstanding; full-exhaustive is still gated.
+
+- 2026-09-17T14:47:46+00:00: Heartbeat by codex-ar1304-required-runner-20260917.
