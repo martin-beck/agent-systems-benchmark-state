@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-18T00:36:29+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Wait for old ada383cea VM termination; then rebuild exact-head fa57625d9 image/seed, run required and independently re-reviewed full gates, validating overlay digest and exact serial markers.",
+  "next_action": "AR-1293 remains blocked on AR-1307 PR #24 (eb0da360b6091d5a5f74decfff4da39202226eec) merge and fresh runner handoff. Old ada383cea full VM terminated with serial ending during liveness progress at 47,029,477 generated / 38,798,900 distinct states, with no FULL_EXHAUSTIVE_RC, success marker, attestation, or receipt; classify as interrupted/incomplete, not a model result. After AR-1307 is merged and handed off, rebuild fresh exact fa57625d9 image/seed and rerun required then independently reviewed full gates.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 721,
+  "task_revision": 722,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T22:36:49+00:00",
+  "updated_at": "2026-09-17T22:37:17+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -2169,3 +2169,10 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T22:36:49+00:00: Recorded command exit 0; command argv SHA-256
   28ab38ab9a72014b7e692218f941ee2fdad466080cba7841091e77df31b289b4.
+
+- 2026-09-17T22:37:17+00:00: 2026-09-17T22:37Z: Inspected terminated ada383cea full VM through
+  handoffctl. QEMU is absent; serial ends at 22:27:34 during liveness progress (47,029,477
+  generated; 38,798,900 distinct; 10,713,755 queued). No terminal FULL_EXHAUSTIVE_RC, EVIDENCE_OK,
+  attestation, or receipt exists. This run is rejected as interrupted/incomplete; no model
+  success/failure is inferred. AR-1307 is still in_progress with PR #24 open, so exact fa57625d9
+  rerun must wait for runner repair/handoff.
