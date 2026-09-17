@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1287-delegated-sandbox-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T09:51:39+00:00",
+  "claim_expires": "2026-09-17T09:28:20+00:00",
   "depends_on": [],
   "id": "AR-1287",
   "next_action": "Run AR-1301 lifecycle/fault matrix in the verified KVM guest; then complete AR-1287 runner review/publication and reconcile.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a delegated runner for real strict-replay child lifecycle qualification.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Delegated sandbox runner capability",
-  "updated_at": "2026-09-17T07:55:07+00:00",
+  "updated_at": "2026-09-17T08:28:20+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1287-delegated-sandbox-runner"
 }
 ---
@@ -84,3 +84,5 @@ lifecycle completion until the actual child and fault fixtures run in the qualif
   51 normal asb-runtime tests pass (1 qualified test intentionally ignored in normal suite), and
   explicit ignored qualified_runtime_backend_executes_and_reaps_child passes. Capability and
   denied-egress probes remain green.
+
+- 2026-09-17T08:28:20+00:00: Heartbeat by root.
