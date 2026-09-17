@@ -29,7 +29,7 @@ Generated from local Git and GitHub. Do not edit.
 | --- | --- | --- | --- | --- |
 | 35199911171 | `8737bbed4b9a` | push | Rust verification | completed:failure |
 | 35199911170 | `8737bbed4b9a` | push | Formal assurance | completed:success |
-| 35199911163 | `8737bbed4b9a` | push | Emulated aarch64 portability | in_progress:- |
+| 35199911163 | `8737bbed4b9a` | push | Emulated aarch64 portability | completed:success |
 | 35199911145 | `8737bbed4b9a` | push | Huawei MIT source headers | completed:success |
 | 35199911132 | `8737bbed4b9a` | push | Fault assurance | completed:success |
 | 35199911120 | `8737bbed4b9a` | push | Hosted portability and native qualification | completed:success |
