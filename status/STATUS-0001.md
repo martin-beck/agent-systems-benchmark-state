@@ -1649,7 +1649,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | codex-ar1293-timeout-repair-20260917 | Repair the state-repository TLA admission runner and truthful worktree metadata. | Copy exact 5f fsck-clean image to a new run path, verify no holder, then rerun required launcher with /dev/vdb seed and inspect serial/attestation. |
+| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | codex-ar1293-timeout-repair-20260917 | Repair the state-repository TLA admission runner and truthful worktree metadata. | Rebuild seed/data pairing from d57b495b9 exact candidate, rerun required tier, and require PR result plus attestation commit equality. |
 
 ### Blocked (50)
 

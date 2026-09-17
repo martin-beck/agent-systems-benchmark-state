@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T19:17:19+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Copy exact 5f fsck-clean image to a new run path, verify no holder, then rerun required launcher with /dev/vdb seed and inspect serial/attestation.",
+  "next_action": "Rebuild seed/data pairing from d57b495b9 exact candidate, rerun required tier, and require PR result plus attestation commit equality.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 414,
+  "task_revision": 415,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T18:47:31+00:00",
+  "updated_at": "2026-09-17T18:47:55+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1397,3 +1397,10 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T18:47:31+00:00: Recorded command exit 0; command argv SHA-256
   307a56be74c30871ee440a144ce1dfc6614e6691ca49aca6c731ebc05661e146.
+
+- 2026-09-17T18:47:55+00:00: Actual exact-5f guest run evidence recorded: /dev/vdb mounted and PR
+  transient preflight passed, but TLC failed before PR result/attestation with Java InternalError:
+  Error loading java.security file. Root cause is JDK conf/security absolute symlinks targeting
+  absent host /etc/java-17-openjdk. Signed fix d57b495b9 copies pinned guest JDK to jvm-fixed,
+  replaces java.security/java.policy/nss.cfg from guest system security files, exports
+  JAVA_HOME/PATH, and tests the contract. Exact offline Ruff/format/mypy and 23/23 tests pass.
