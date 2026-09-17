@@ -10,7 +10,7 @@
   "id": "AR-1306",
   "next_action": "Repair commit 1ab79c1 is signed/DCO and pushed to PR #222. Local focused/full tests, fmt, clippy, docs, and release build pass. Refreshed exact-head CI has 9/12 pass; policy/supply, Rust, and emulated-aarch64 remain pending, with no failures. Await all terminal green checks and independent approval.",
   "observed_branch": "feature/ar-1306-authenticated-fault-matrix-qualification",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "1ab79c1faaff483bd419ca4d2d184201b8335566",
   "owner": "codex-ar1306-auth-listener-20260917",
   "plan": "../plans/AR-1306.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T22:12:08+00:00",
+  "updated_at": "2026-09-17T22:12:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
