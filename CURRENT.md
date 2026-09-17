@@ -9,12 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Wait for old ada383cea VM termination; then rebuild exact-head fa57625d9 image/seed, run required and independently re-reviewed full gates, validating overlay digest and exact serial markers. | codex-ar1293-timeout-repair-20260917 |
 | P0 | [AR-1306](tasks/AR-1306-authenticated-fault-matrix-qualification.md): Authenticated strict-replay fault-matrix qualification | Qualify the real authenticated strict-replay service and fault matrix missing from PR #221. | Parity repair commit a6c0a039ed8a9c362c0c9ca2a3bc1cbb38c89f95 is signed/DCO and pushed to PR #222. Authenticated positive path now asserts cassette-derived status and every bounded response segment is present in captured output; provider/descendant denial markers remain asserted. Focused qualified native tests, full workspace tests, fmt, clippy pass. Await refreshed exact-head CI and independent approval. | codex-ar1306-auth-listener-20260917 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | PR #24 is open at eb0da360b6091d5a5f74decfff4da39202226eec; local quality gates pass, but exact-head CI and fresh portable/required formal evidence remain before merge. | - |
+| P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | PR #24 is open at eb0da360b6091d5a5f74decfff4da39202226eec; local quality gates pass, but exact-head CI and fresh portable/required formal evidence remain before merge. | codex-ar1307-runner-repair-20260918 |
 
 ## Blocked
 
