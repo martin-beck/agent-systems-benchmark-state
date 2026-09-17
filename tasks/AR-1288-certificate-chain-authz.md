@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1288-certificate-chain-authz",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T04:38:57+00:00",
   "depends_on": [
     "AR-0813"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "2fd90557a4e7be32fab590f47bc501462127c1c1",
-  "owner": "",
+  "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1288.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T02:38:44+00:00",
+  "updated_at": "2026-09-17T02:38:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
@@ -36,3 +36,5 @@ must not reuse unmerged strict-replay or asb-tui branches.
 
 - 2026-09-17T02:38:44+00:00: Successor for AR-0814 certificate issuance/chain validation gap;
   depends only on completed AR-0813.
+
+- 2026-09-17T02:38:57+00:00: Claimed by asb_ar1024_lifecycle_router.
