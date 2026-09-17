@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 57,
+  "task_revision": 58,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T23:14:15+00:00",
+  "updated_at": "2026-09-17T23:14:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -212,3 +212,6 @@ and protected publication sequence.
   systemd-networkd-wait-online.service/start for ~37s and process exited; no formal result or
   success attestation. The seed mask in bootcmd was too late. Next repair is an early cloud-init
   network: config disabled seed, preserving no NIC/no host mounts and all formal gates.
+
+- 2026-09-17T23:14:19+00:00: Recorded command exit 0; command argv SHA-256
+  fac9bda16627df4fec2db22cac028da8f7d6859fffabc855a52f0008a8ec2ec4.
