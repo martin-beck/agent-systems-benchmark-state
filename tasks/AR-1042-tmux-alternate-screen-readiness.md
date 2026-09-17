@@ -2,7 +2,7 @@
 {
   "branch": "fix/tmux-alternate-screen-readiness",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T05:26:41+00:00",
+  "claim_expires": "2026-09-17T05:27:28+00:00",
   "depends_on": [],
   "id": "AR-1042",
   "next_action": "Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification.",
@@ -12,9 +12,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Make tmux TUI readiness validate the displayed alternate screen deterministically.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Capture alternate-screen TUI readiness deterministically",
-  "updated_at": "2026-09-17T03:26:41+00:00",
+  "updated_at": "2026-09-17T03:27:28+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-alternate-screen-readiness"
 }
 ---
@@ -269,3 +269,5 @@ emit bounded diagnostics; do not change renderer or application semantics.
   here.
 
 - 2026-09-17T03:26:41+00:00: Claimed by asb_ar1042_tui_readiness.
+
+- 2026-09-17T03:27:28+00:00: Heartbeat by asb_ar1042_tui_readiness.
