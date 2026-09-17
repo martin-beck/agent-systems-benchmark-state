@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1305-image-native-user-session",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T15:37:01+00:00",
+  "claim_expires": "2026-09-17T17:07:43+00:00",
   "depends_on": [
     "AR-1302"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify image-native D-Bus user-session support for required TLC containment.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-17T15:07:01+00:00",
+  "updated_at": "2026-09-17T15:07:43+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -37,3 +37,5 @@ limits and fail-closed behavior remain unchanged.
 - 2026-09-17T15:06:59+00:00: AR-1302 done; image repair unblocks AR-1304
 
 - 2026-09-17T15:07:01+00:00: Claimed by codex-ar1305-image-session-20260917.
+
+- 2026-09-17T15:07:43+00:00: Heartbeat by codex-ar1305-image-session-20260917.
