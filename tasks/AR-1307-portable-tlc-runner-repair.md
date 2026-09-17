@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Independently repair and requalify the portable TLC runner through canonical tlc_runner/verify.sh admission and attestation, with exact AR-1293 tier limits and fresh sanitized evidence.",
+  "next_action": "Bounded canonical runner repair is implemented; run Ruff/format/mypy/full state suite, inspect remaining provenance/privacy gates, then qualify fresh exact-head portable and required tiers.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 9,
+  "task_revision": 10,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T22:01:59+00:00",
+  "updated_at": "2026-09-17T22:02:41+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -63,3 +63,9 @@ and protected publication sequence.
 
 - 2026-09-17T22:01:59+00:00: Recorded command exit 0; command argv SHA-256
   ceeaba81699fff9952c2220fe54bc01c6111a06d65ee6be972c52bc35a7881a9.
+
+- 2026-09-17T22:02:41+00:00: Repair progress: imported the reviewed canonical runner/profile chain,
+  moved default runtime paths under /srv/data/projects, added bounded argv-only process-group
+  execution with output sinks and timeout classification, bound source/input/runner/artifact
+  provenance, restricted attestation paths, and removed UUID privacy findings. Focused tlc runner
+  suite 24/24 passes.
