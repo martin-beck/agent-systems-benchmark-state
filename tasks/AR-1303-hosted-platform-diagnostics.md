@@ -8,7 +8,7 @@
     "AR-1252"
   ],
   "id": "AR-1303",
-  "next_action": "Promote only after confirming AR-1301 remains blocked and no worker owns the hosted platform tooling; then implement fixed privacy-safe failure classifications and tests without weakening the fail-closed gate.",
+  "next_action": "Independent exact-head review of signed d85889d, then publish PR from clean tree. Wait exact-head CI; merge only if all required checks green. Mypy remains blocked by 11 pre-existing errors in native_evidence.py and unchanged hosted release_route lines; do not broaden AR-1303.",
   "observed_branch": "feature/ar-1303-hosted-platform-diagnostics",
   "observed_dirty": 0,
   "observed_head": "d85889d5066c26dc69279594a7c91f4f140a23e3",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add privacy-safe fixed diagnostics for hosted platform evidence failures.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Privacy-safe hosted platform failure diagnostics",
-  "updated_at": "2026-09-17T12:27:06+00:00",
+  "updated_at": "2026-09-17T12:27:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1303-hosted-platform-diagnostics"
 }
 ---
@@ -107,3 +107,11 @@ native qualification route. This AR must not modify runtime behavior or asb-tui.
 
 - 2026-09-17T12:26:58+00:00: Recorded command exit 0; command argv SHA-256
   bf155296742e39256a03994c392ab14b4e97f691b527c467e489203b53423f96.
+
+- 2026-09-17T12:27:32+00:00: Implemented fixed opt-in diagnostics in d85889d (SSH-signed, DCO).
+  Workflow enables ASB_HOSTED_PORTABILITY_DIAGNOSTICS=1; default CLI errors and evidence schemas
+  remain unchanged. Diagnostics classify
+  spawn/nonzero/timeout/output_limit/source_race/unavailable/evidence/unknown using only fixed
+  check/class fields. Focused platform suite 12/12 and Ruff pass; privacy scan passes on
+  production/workflow files. Full pytest collection is environment-blocked because jsonschema is
+  unavailable; mypy reports 11 baseline errors outside the new diagnostics behavior.

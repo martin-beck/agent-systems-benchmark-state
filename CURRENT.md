@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1303](tasks/AR-1303-hosted-platform-diagnostics.md): Privacy-safe hosted platform failure diagnostics | Add privacy-safe fixed diagnostics for hosted platform evidence failures. | Promote only after confirming AR-1301 remains blocked and no worker owns the hosted platform tooling; then implement fixed privacy-safe failure classifications and tests without weakening the fail-closed gate. | ar1303_ci_diagnostics |
+| P1 | [AR-1303](tasks/AR-1303-hosted-platform-diagnostics.md): Privacy-safe hosted platform failure diagnostics | Add privacy-safe fixed diagnostics for hosted platform evidence failures. | Independent exact-head review of signed d85889d, then publish PR from clean tree. Wait exact-head CI; merge only if all required checks green. Mypy remains blocked by 11 pre-existing errors in native_evidence.py and unchanged hosted release_route lines; do not broaden AR-1303. | ar1303_ci_diagnostics |
 
 ## Blocked
 
