@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T12:59:55+00:00",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Image-level bus repair succeeded: user@1000.service and asb-session-bus.service both started before cloud-final. The one clean 32 GiB/8-vCPU/16 GiB-swap/16 GiB-data attempt then failed unchanged required transient containment: Process org.freedesktop.systemd1 exited with status 1; JAR verification passed but no attestation was emitted. Do not rerun until the required transient systemd containment path is repaired.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "",
+  "owner": "codex-ar1302-preflight-diagnosis",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 326,
+  "task_revision": 327,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:29:52+00:00",
+  "updated_at": "2026-09-17T12:29:55+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1072,3 +1072,5 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   systemd-run --user then exits status 1. A distinct repair must provision the native user-manager
   bus (dbus-user-session/libpam-systemd and linger in the immutable guest image) and pass a bounded
   transient-unit preflight before launching TLC.
+
+- 2026-09-17T12:29:55+00:00: Claimed by codex-ar1302-preflight-diagnosis.

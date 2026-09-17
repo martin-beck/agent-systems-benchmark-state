@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**331 ARs tracked** across 7 active status categories.
+**331 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -398,7 +398,7 @@ flowchart LR
         direction TB
         AR_1300["AR-1300 - Done"]:::status_done
         AR_1301["AR-1301 - Blocked"]:::status_blocked
-        AR_1302["AR-1302 - Open"]:::status_open
+        AR_1302["AR-1302 - In progress"]:::status_in_progress
         AR_1303["AR-1303 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
@@ -1639,17 +1639,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | codex-ar1302-preflight-diagnosis | Provision a clean portable TLC CI/VM runner for state formal admission. | Image-level bus repair succeeded: user@1000.service and asb-session-bus.service both started before cloud-final. The one clean 32 GiB/8-vCPU/16 GiB-swap/16 GiB-data attempt then failed unchanged required transient containment: Process org.freedesktop.systemd1 exited with status 1; JAR verification passed but no attestation was emitted. Do not rerun until the required transient systemd containment path is repaired. |
 | P1 | [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md): Privacy-safe hosted platform failure diagnostics | ar1303_ci_diagnostics | Add privacy-safe fixed diagnostics for hosted platform evidence failures. | PR #220 exact head d85889d is published. Monitor all required exact-head CI; diagnose failures without weakening gates. Merge only after every required check is green, then perform post-merge verification and release AR-1303. Mypy baseline and missing jsonschema environment remain documented. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | Unclaimed | Provision a clean portable TLC CI/VM runner for state formal admission. | Image-level bus repair succeeded: user@1000.service and asb-session-bus.service both started before cloud-final. The one clean 32 GiB/8-vCPU/16 GiB-swap/16 GiB-data attempt then failed unchanged required transient containment: Process org.freedesktop.systemd1 exited with status 1; JAR verification passed but no attestation was emitted. Do not rerun until the required transient systemd containment path is repaired. |
 
 ### Blocked (49)
 
