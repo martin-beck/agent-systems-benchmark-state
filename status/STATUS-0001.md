@@ -11,12 +11,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
+| **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 211 |
+| **Done** | Accepted, integrated, and durably verified | 212 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 9 |
 
@@ -319,7 +319,7 @@ flowchart LR
         AR_1214["AR-1214 - Planned"]:::status_planned
         AR_1215["AR-1215 - Planned"]:::status_planned
         AR_1216["AR-1216 - Planned"]:::status_planned
-        AR_1226["AR-1226 - In progress"]:::status_in_progress
+        AR_1226["AR-1226 - Done"]:::status_done
         AR_1227["AR-1227 - Planned"]:::status_planned
         AR_1228["AR-1228 - Done"]:::status_done
         AR_1229["AR-1229 - Done"]:::status_done
@@ -1635,11 +1635,10 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md): Protected merge-tree remediation | codex-ar1226-merge-remediation-20260917 | Remediate the protected-main merge-tree mismatch from stale-base PR merging. | No further action; AR-1226 is complete. Preserve PR #218 and merge 7ea3e001 evidence. |
 | P0 | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | coordinator-ar1301-lifecycle-20260917 | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | Promote only after AR-1287 and AR-1300 are done; implement the executable supervised replay lifecycle fault matrix and qualify it on the approved runner. |
 
 ### Blocked (49)
@@ -1725,3 +1724,4 @@ flowchart LR
 | P0 | [AR-1215](../tasks/AR-1215-result-comparison.md): Multi-agent result comparison tutorial | Unclaimed | Teach conservative comparison of multiple agents from the same benchmark. | Implement the syntax-checked tutorial for comparing two or more agents on one benchmark definition. |
 | P0 | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md): ASB tutorial freshness CI and documentation qualification | Unclaimed | Continuously keep ASB tutorial commands and steps syntactically current. | Implement the repository-wide tutorial discovery and syntax-freshness CI gate after all tutorial contracts are defined. |
 | P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
+| P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |

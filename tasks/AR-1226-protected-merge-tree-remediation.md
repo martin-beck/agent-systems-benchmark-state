@@ -2,7 +2,7 @@
 {
   "branch": "repair/protected-merge-tree-policy",
   "checkpoint_commit": "ef82484fa78dd31c0d7b5ad48e2dc51a93ec1339",
-  "claim_expires": "2026-09-17T11:01:10+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1200"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "repair/ar1226-current-base",
   "observed_dirty": 0,
   "observed_head": "f66194bbf01cb2aa861a45d8c10b0ee08df1d73c",
-  "owner": "codex-ar1226-merge-remediation-20260917",
+  "owner": "",
   "plan": "../plans/AR-1226.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Remediate the protected-main merge-tree mismatch from stale-base PR merging.",
-  "task_revision": 49,
+  "task_revision": 50,
   "title": "Protected merge-tree remediation",
-  "updated_at": "2026-09-17T09:07:47+00:00",
+  "updated_at": "2026-09-17T09:07:50+00:00",
   "worktree_key": "agent-systems-benchmark-protected-merge-tree-remediation"
 }
 ---
@@ -161,3 +161,6 @@ current-main requalification; it must not mark the merge usable until policy ass
   workflows succeeded: 35202285905, 35202285881, 35202285955, 35202285873, 35202285930, 35202285902,
   35202285917. Historical AR-1299/AR-1287 stale merges remain unchanged; this forward admission
   repair is their requalification path.
+
+- 2026-09-17T09:07:50+00:00: Released done/ownerless after signed/DCO/tree verification and all
+  seven terminal-green exact-main workflows for merge 7ea3e001. No further action.

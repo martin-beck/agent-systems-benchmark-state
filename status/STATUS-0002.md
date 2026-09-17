@@ -1,6 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
 | P1 | [AR-0811](../tasks/AR-0811-documentation-qualification.md): Audit workflow documentation and publication | Unclaimed | Qualify documentation completeness, executability, accessibility, privacy, provenance, and release accuracy. | Independently audit every published workflow against released programs and deployed Pages output. |
@@ -40,7 +39,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (211)
+### Done (212)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -101,6 +100,7 @@
 | P0 | [AR-1191](../tasks/AR-1191.md): Verified local-agent lifecycle | Unclaimed | Install, activate, verify and recover supported local benchmark agents safely. | Run independent review on lifecycle PR #169 head 6d210836d4b45942aa6b9b2530c30a0afe30144a after hosted checks, then merge and qualify asb-tui. |
 | P0 | [AR-1196](../tasks/AR-1196-protected-main-dco-repair.md): Protected-main DCO history repair | Unclaimed | Restore a Signed-off-by-bearing protected-main history after the catalog merge. | Reconcile PR #170 merge against main; do not merge duplicates until exact remote head and post-merge checks are verified. |
 | P0 | [AR-1198](../tasks/AR-1198.md): Canonical authenticated agent-catalog digest | Unclaimed | Define and enforce the canonical authenticated ASB v1.4 agent-catalog digest. | Independently review PR #174 at exact head 3cc8fa1a27587642bda5100f45140c11f1fd0c6d, run cross-repository vector checks with asb-tui AR-1195, then merge only after all exact-head checks are green. |
+| P0 | [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md): Protected merge-tree remediation | Unclaimed | Remediate the protected-main merge-tree mismatch from stale-base PR merging. | No further action; AR-1226 is complete. Preserve PR #218 and merge 7ea3e001 evidence. |
 | P0 | [AR-1228](../tasks/AR-1228-provider-auth-backends-probes.md): Qualify provider authentication backends and probes | Unclaimed | Qualify provider authentication backends, probes and application integration. | PR #177 exact head 2d716c8 includes std-only polled connect/write, authenticated Gemini/Ollama wire fixtures, and stabilized malformed/redirect/oversized response fixtures. Await exact-head CI and independent review; investigate any architecture-runner failures. |
 | P0 | [AR-1229](../tasks/AR-1229-provider-auth-application-integration.md): Provider authentication application integration | Unclaimed | Integrate provider authentication into ASB config, control and CLI surfaces. | AR complete: merged PR #179 at 2f96f211; retain post-merge verification and release evidence in durable history. |
 | P0 | [AR-1230](../tasks/AR-1230-authenticated-provider-request-seam.md): Authenticated provider-request seam and secret injection contract | Unclaimed | Define the approved bounded provider authentication request and secret-injection seam. | Re-review PR #178 exact head and rerun CI; preserve provider seam and delegated transport/application gates. |
