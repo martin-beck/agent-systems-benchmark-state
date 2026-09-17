@@ -15,9 +15,9 @@ Generated from local Git and GitHub. Do not edit.
 | #144 | `dependabot/github_actions/actions/setup-java-6.0.0@5885c200026e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:FAILURE, COMPLETED:SUCCESS | chore(deps): bump actions/setup-java from 5.0.0 to 6.0.0 |
 | #145 | `dependabot/cargo/toml-0.9.5@5f30c0c92f18` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump toml from 0.8.23 to 0.9.5 |
 | #146 | `dependabot/github_actions/taiki-e/install-action-2.87.7@51db8d79ad9f` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump taiki-e/install-action from 2.87.6 to 2.87.7 |
-| #147 | `dependabot/cargo/sha2-0.11.0@ca8cc141edb4` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | build(deps): Bump sha2 from 0.10.9 to 0.11.0 |
+| #147 | `dependabot/cargo/sha2-0.11.0@ca8cc141edb4` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | build(deps): Bump sha2 from 0.10.9 to 0.11.0 |
 | #148 | `dependabot/github_actions/actions/upload-artifact-7.0.1@7d45f4cadff2` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump actions/upload-artifact from 4.6.2 to 7.0.1 |
-| #149 | `dependabot/cargo/url-2.5.8@a24f049e2790` | `main` | UNKNOWN | - | build(deps): Bump url from 2.5.7 to 2.5.8 |
+| #149 | `dependabot/cargo/url-2.5.8@a24f049e2790` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | build(deps): Bump url from 2.5.7 to 2.5.8 |
 | #150 | `dependabot/cargo/tempfile-3.27.0@d4eb5ee4a62e` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | chore(deps): bump tempfile from 3.22.0 to 3.27.0 |
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #197 | `feature/ar-1248-strict-replay-cli-contract@7d9c2ee2e08b` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): define strict offline replay consumer contract |
@@ -27,15 +27,15 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35180241259 | `a24f049e2790` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 35180241252 | `a24f049e2790` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35180241244 | `a24f049e2790` | pull_request | Formal assurance | queued:- |
+| 35180241229 | `a24f049e2790` | pull_request | Emulated aarch64 portability | queued:- |
+| 35180241228 | `a24f049e2790` | pull_request | Huawei MIT source headers | queued:- |
+| 35180241214 | `a24f049e2790` | pull_request | Repository quality | in_progress:- |
+| 35180241211 | `a24f049e2790` | pull_request | Fault assurance | queued:- |
+| 35180241208 | `a24f049e2790` | pull_request | Rust verification | queued:- |
 | 35180236343 | `ca8cc141edb4` | pull_request | Fault assurance | in_progress:- |
 | 35180236302 | `ca8cc141edb4` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 35180236289 | `ca8cc141edb4` | pull_request | Rust verification | in_progress:- |
-| 35180236285 | `ca8cc141edb4` | pull_request | Huawei MIT source headers | in_progress:- |
-| 35180236281 | `ca8cc141edb4` | pull_request | Hosted portability and native qualification | in_progress:- |
-| 35180236263 | `ca8cc141edb4` | pull_request | Repository quality | in_progress:- |
-| 35180236261 | `ca8cc141edb4` | pull_request | Formal assurance | in_progress:- |
-| 35180236255 | `ca8cc141edb4` | pull_request | Agent Workflow Quality shadow | in_progress:- |
-| 35180183984 | `c1b1860786e8` | dynamic | Dependabot Updates | completed:success |
-| 35180183659 | `c1b1860786e8` | dynamic | Dependabot Updates | completed:success |
-| 35180122301 | `c1b1860786e8` | push | Rust verification | in_progress:- |
-| 35180122135 | `c1b1860786e8` | push | Emulated aarch64 portability | in_progress:- |
+| 35180236285 | `ca8cc141edb4` | pull_request | Huawei MIT source headers | completed:success |
