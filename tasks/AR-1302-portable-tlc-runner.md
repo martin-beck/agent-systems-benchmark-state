@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 113,
+  "task_revision": 114,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T08:24:29+00:00",
+  "updated_at": "2026-09-17T08:25:11+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -374,3 +374,6 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   host memory.max is 25769803776 bytes (24 GiB), so further full-tier execution requires a clean
   runner/VM with at least 32 GiB effective cgroup memory. No gate was weakened; AR-1293 remains
   blocked pending that capacity.
+
+- 2026-09-17T08:25:11+00:00: Temporarily reopen only to correct durable next_action after
+  capacity-block release.
