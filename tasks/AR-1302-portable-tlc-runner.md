@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T13:17:11+00:00",
+  "claim_expires": "2026-09-17T13:24:34+00:00",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Do not launch TLC yet. Provision/verify native dbus-user-session + user@1000 bus in a fresh immutable guest image, then require these bounded preflights to exit 0: systemctl --user is-system-running; systemd-run --user --wait --pipe --collect with 3G memory/swap, 200% CPU, TasksMax=64 running /usr/bin/true. Record exact exit/evidence; run full-exhaustive only if both pass.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 336,
+  "task_revision": 337,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:37:13+00:00",
+  "updated_at": "2026-09-17T12:39:34+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1108,3 +1108,5 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T12:37:13+00:00: Recorded command exit 0; command argv SHA-256
   fa3438aef1b80cd2498029fc2a46a2fb4a29282c67f0744f8a8b5bf936b8253e.
+
+- 2026-09-17T12:39:34+00:00: Heartbeat by codex-ar1302-preflight-diagnosis.
