@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T19:06:13+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Run required launcher using the fresh 6a1249fc8 image; inspect mountpoint marker, PR result, direct debugfs attestation commit equality, receipt and serial before any full run.",
+  "next_action": "Use an unheld copy of the clean exact-6a data image (same verified digest/provenance), verify no process holds it, then rerun required launcher and inspect mountpoint/PR result/debugfs attestation.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 388,
+  "task_revision": 389,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T18:37:20+00:00",
+  "updated_at": "2026-09-17T18:38:02+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1309,3 +1309,10 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T18:37:20+00:00: Recorded command exit 1; command argv SHA-256
   ae0b636ce67abc5bd46cea0535db9735f2ad036af390f71c47f193ba92954d26.
+
+- 2026-09-17T18:38:02+00:00: Fresh exact-6a required invocation was attempted but QEMU failed before
+  boot with raw data image write-lock error: another process already holds
+  ar1293-6a1249fc8-data.raw. Serial contains only the QEMU lock diagnostic; no guest mount/PR
+  result/attestation. The clean image itself remains fsck-verified and exact candidate-populated. Do
+  not kill unrelated holder; next action is isolate a copy/new image path, verify no holder, then
+  rerun.
