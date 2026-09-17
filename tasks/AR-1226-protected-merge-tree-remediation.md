@@ -8,18 +8,18 @@
   ],
   "id": "AR-1226",
   "next_action": "Historical reproduction confirms policy rejects ef82484 before merge-tree comparison because its RSA/GPG signature is not in the allowed SSH trust set. Current clean branch is fd7daa4; create a signed-DCO current-main topic repair, then rerun policy and exact-head gates.",
-  "observed_branch": "repair/protected-merge-tree-policy",
+  "observed_branch": "DETACHED",
   "observed_dirty": 0,
-  "observed_head": "fd7daa43549edd67b60076aa6b1eee333061b438",
+  "observed_head": "8737bbed4b9ad8b9d3c40a8bf5b71277303db7cf",
   "owner": "codex-ar1226-merge-remediation-20260917",
   "plan": "../plans/AR-1226.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remediate the protected-main merge-tree mismatch from stale-base PR merging.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Protected merge-tree remediation",
-  "updated_at": "2026-09-17T08:33:23+00:00",
+  "updated_at": "2026-09-17T08:33:31+00:00",
   "worktree_key": "agent-systems-benchmark-protected-merge-tree-remediation"
 }
 ---
