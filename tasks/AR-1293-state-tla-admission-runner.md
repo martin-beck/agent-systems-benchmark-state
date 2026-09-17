@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 471,
+  "task_revision": 472,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T19:06:21+00:00",
+  "updated_at": "2026-09-17T19:06:31+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1575,3 +1575,6 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   correctly rejected missing attestation. Candidate 0ce2726e2 adds explicit ownership for
   temporary/evidence directories and a focused regression assertion. Focused Ruff, format, mypy, and
   23-test gates pass; commit is SSH-signed with DCO.
+
+- 2026-09-17T19:06:31+00:00: Recorded command exit 0; command argv SHA-256
+  00ac73f10b77b0cc62bedfa7e082c6cdef28622d39d2bf2cb954e9bad6da384f.
