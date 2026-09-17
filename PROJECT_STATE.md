@@ -23,8 +23,8 @@ Generated from local Git and GitHub. Do not edit.
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #197 | `feature/ar-1248-strict-replay-cli-contract@7d9c2ee2e08b` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): define strict offline replay consumer contract |
 | #207 | `feature/ar-1262-runtime-owned-launch-authority@c009185748a4` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): issue strict-replay launch authority |
-| #210 | `feature/ar-1288-certificate-chain-authz@7b3ff1d3a874` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(control): validate runtime certificate chains |
-| #211 | `fix/ar-1289-formal-lock-gate@53981d651645` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, COMPLETED:SUCCESS | fix(formal): refresh locked dependency graph |
+| #210 | `feature/ar-1288-certificate-chain-authz@7b3ff1d3a874` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(control): validate runtime certificate chains |
+| #211 | `fix/ar-1289-formal-lock-gate@53981d651645` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(formal): refresh locked dependency graph |
 
 ## Recent workflows
 
@@ -34,11 +34,11 @@ Generated from local Git and GitHub. Do not edit.
 | 35177646365 | `53981d651645` | pull_request | Rust verification | in_progress:- |
 | 35177646355 | `53981d651645` | pull_request | Hosted portability and native qualification | completed:success |
 | 35177646353 | `53981d651645` | pull_request | Huawei MIT source headers | completed:success |
-| 35177646341 | `53981d651645` | pull_request | Fault assurance | in_progress:- |
-| 35177646338 | `53981d651645` | pull_request | Formal assurance | in_progress:- |
+| 35177646341 | `53981d651645` | pull_request | Fault assurance | completed:success |
+| 35177646338 | `53981d651645` | pull_request | Formal assurance | completed:success |
 | 35177646319 | `53981d651645` | pull_request | Repository quality | in_progress:- |
 | 35177646317 | `53981d651645` | pull_request | Emulated aarch64 portability | in_progress:- |
-| 35177620321 | `7b3ff1d3a874` | pull_request | Formal assurance | in_progress:- |
+| 35177620321 | `7b3ff1d3a874` | pull_request | Formal assurance | completed:success |
 | 35177620295 | `7b3ff1d3a874` | pull_request | Rust verification | in_progress:- |
 | 35177620286 | `7b3ff1d3a874` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35177620269 | `7b3ff1d3a874` | pull_request | Repository quality | in_progress:- |
