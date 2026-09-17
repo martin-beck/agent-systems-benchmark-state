@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1292](tasks/AR-1292-tla-provenance-repair.md): Pinned TLA+ artifact provenance repair | Repair or formally retain the pinned TLA+ artifact provenance mismatch blocking formal assurance. | Audit the pinned TLA+ v1.8.0 asset provenance and decide whether a minimal hash-bound fixture update is independently justified; otherwise retain the fail-closed blocker. | asb_ar1292_tla_provenance |
+| P0 | [AR-1292](tasks/AR-1292-tla-provenance-repair.md): Pinned TLA+ artifact provenance repair | Repair or formally retain the pinned TLA+ artifact provenance mismatch blocking formal assurance. | Await independently verifiable TLA+ provenance: a signed/attested immutable v1.8.0 asset bound to its source revision, or a deterministic source-build qualification for the current 142d0ba release. Do not update only hash/size or rerun PR #119 until that evidence exists. | asb_ar1292_tla_provenance |
 
 ## Blocked
 
