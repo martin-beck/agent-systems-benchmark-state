@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 339,
+  "task_revision": 340,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:43:40+00:00",
+  "updated_at": "2026-09-17T12:45:02+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1127,3 +1127,6 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   required-pr failed on missing /mnt/asb-data wiring, full-exhaustive was interrupted and has no
   qualification. Next action is fresh virtio data-disk UUID/fstab/boot-mount repair, then exact
   preflight and portable-smoke through handoffctl.
+
+- 2026-09-17T12:45:02+00:00: Resume distinct runner repair: fix virtio data-disk UUID/fstab boot
+  mount, then rerun exact containment and portable-smoke; full-exhaustive remains gated.
