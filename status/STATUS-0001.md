@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**330 ARs tracked** across 7 active status categories.
+**330 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 2 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 3 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
 | **Planned** | Defined work awaiting promotion or dependencies | 59 |
 | **Future** | Deferred roadmap work | 1 |
@@ -392,7 +392,7 @@ flowchart LR
         AR_1296["AR-1296 - Done"]:::status_done
         AR_1297["AR-1297 - Done"]:::status_done
         AR_1298["AR-1298 - Done"]:::status_done
-        AR_1299["AR-1299 - Open"]:::status_open
+        AR_1299["AR-1299 - In progress"]:::status_in_progress
     end
     subgraph series_13["13 - Additional work"]
         direction TB
@@ -1635,18 +1635,13 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (2)
+### In progress (3)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1226](../tasks/AR-1226-protected-merge-tree-remediation.md): Protected merge-tree remediation | codex-ar1226-merge-remediation-20260917 | Remediate the protected-main merge-tree mismatch from stale-base PR merging. | Monitor PR #218 exact head f66194bbf01cb2aa861a45d8c10b0ee08df1d73c until all required checks and independent review are green; merge only through authorized signed integration, then verify exact-main post-merge workflows and reconcile AR-1299/AR-1287 evidence. |
 | P0 | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md): Delegated sandbox runner capability | root | Provide a delegated runner for real strict-replay child lifecycle qualification. | Monitor exact-main post-merge workflows for repair merge 7ea3e001dffa13eca5ff0f05444c2b3b9d4df928; release AR-1287 only after every required check is terminal green and the KVM runner evidence is reconciled, then promote AR-1301. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1299](../tasks/AR-1299.md): Complete authenticated agent catalog identity metadata | Unclaimed | Complete authenticated agent catalog signer, provenance, SBOM and license metadata. | Monitor exact-main post-merge workflows for 6c694f8b26ba98166ab72349875641d5d55806d5 until every required run is terminal green; then verify main signature/DCO and release AR-1299 done. |
+| P0 | [AR-1299](../tasks/AR-1299.md): Complete authenticated agent catalog identity metadata | ar1299_dispatch | Complete authenticated agent catalog signer, provenance, SBOM and license metadata. | Monitor exact-main post-merge workflows for 6c694f8b26ba98166ab72349875641d5d55806d5 until every required run is terminal green; then verify main signature/DCO and release AR-1299 done. |
 
 ### Blocked (49)
 
