@@ -10,17 +10,17 @@
   "id": "AR-1306",
   "next_action": "Parity repair commit a6c0a039ed8a9c362c0c9ca2a3bc1cbb38c89f95 is signed/DCO and pushed to PR #222. Authenticated positive path now asserts cassette-derived status and every bounded response segment is present in captured output; provider/descendant denial markers remain asserted. Focused qualified native tests, full workspace tests, fmt, clippy pass. Await refreshed exact-head CI and independent approval.",
   "observed_branch": "feature/ar-1306-authenticated-fault-matrix-qualification",
-  "observed_dirty": 1,
-  "observed_head": "a6c0a039ed8a9c362c0c9ca2a3bc1cbb38c89f95",
+  "observed_dirty": 0,
+  "observed_head": "5425bc3891dc9325c4fe455953637e708b851527",
   "owner": "codex-ar1306-auth-listener-20260917",
   "plan": "../plans/AR-1306.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 121,
+  "task_revision": 122,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T22:35:48+00:00",
+  "updated_at": "2026-09-17T22:35:56+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
