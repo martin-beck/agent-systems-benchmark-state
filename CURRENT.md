@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1282](tasks/AR-1282-authenticated-replay-transport.md): Authenticated replay transport foundation | Land the authenticated runtime-to-CLI replay transport foundation. | Independent re-review requested for signed 0c4b9a4; response identity binding and one-shot completion negatives pass, full locked workspace gates pass. Scope remains bounded core/runtime transport only. | asb_ar1282_core_runtime_transport |
+| P0 | [AR-1282](tasks/AR-1282-authenticated-replay-transport.md): Authenticated replay transport foundation | Land the authenticated runtime-to-CLI replay transport foundation. | Independent exact-head re-review requested for signed a455d5e; public issuer-client path, arbitrary path/generation rejection, and stale-peer transport negatives pass. Full locked gates remain green; scope is bounded core/runtime transport only. | asb_ar1282_core_runtime_transport |
 
 ## Open
 

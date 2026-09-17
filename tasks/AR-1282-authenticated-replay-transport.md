@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1282",
-  "next_action": "Independent re-review requested for signed 0c4b9a4; response identity binding and one-shot completion negatives pass, full locked workspace gates pass. Scope remains bounded core/runtime transport only.",
+  "next_action": "Independent exact-head re-review requested for signed a455d5e; public issuer-client path, arbitrary path/generation rejection, and stale-peer transport negatives pass. Full locked gates remain green; scope is bounded core/runtime transport only.",
   "observed_branch": "feature/ar-1282-authenticated-replay-transport",
   "observed_dirty": 0,
   "observed_head": "a455d5ea09b23addf3e75def2d08d101cfa1ea96",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Land the authenticated runtime-to-CLI replay transport foundation.",
-  "task_revision": 64,
+  "task_revision": 65,
   "title": "Authenticated replay transport foundation",
-  "updated_at": "2026-09-17T00:40:54+00:00",
+  "updated_at": "2026-09-17T00:41:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1282-authenticated-replay-transport"
 }
 ---
@@ -202,3 +202,12 @@ claim primary command execution.
 
 - 2026-09-17T00:40:54+00:00: Recorded command exit 0; command argv SHA-256
   8a53d32e293ce6f2e3e30b7029145281f62b2c7ce9cf94cfb9dd0d9691686538.
+
+- 2026-09-17T00:41:18+00:00: Final review-test checkpoint: signed+DCO
+  a455d5ea09b23addf3e75def2d08d101cfa1ea96 is clean and pushed. Positive round-trip now uses public
+  ReplayTransportClient::issue(&issuer), proving client generation is runtime-issued rather than
+  caller-constructed. Insecure arbitrary socket path/generation construction is rejected, and stale
+  generation is exercised through a connected peer: issuer returns StaleGeneration and client fails
+  closed. Focused runtime transport tests pass 3/3; full locked workspace test suite, fmt, clippy -D
+  warnings, rustdoc, and repository policy gates are green at this change. Request independent
+  re-review; no primary CLI/lifecycle claim.
