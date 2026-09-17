@@ -1643,7 +1643,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | codex-ar1293-requalify-fresh | Repair the state-repository TLA admission runner and truthful worktree metadata. | Requalify AR-1302 portable-smoke with exact 8G portable address-space bound and 3G physical/swap limits; require success attestation before required/full. |
+| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | codex-ar1293-requalify-fresh | Repair the state-repository TLA admission runner and truthful worktree metadata. | Run owner-authorized portable requalification using /srv/data/projects/asb-state-tlc-vm-32g receipt: verify exact f1931686c data image and attestation hashes, then build a fresh image for 39c8933f5 before required/full gates. |
 | P0 | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | root | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | PR #219 exact head dd5bfb8: Platform evidence is green after hosted probe classification fix. Wait for remaining exact-head checks; then complete independent review, protected signed merge, post-merge verification and reconcile. |
 
 ### Blocked (48)

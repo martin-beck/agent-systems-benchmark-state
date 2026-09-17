@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T14:56:52+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Requalify AR-1302 portable-smoke with exact 8G portable address-space bound and 3G physical/swap limits; require success attestation before required/full.",
+  "next_action": "Run owner-authorized portable requalification using /srv/data/projects/asb-state-tlc-vm-32g receipt: verify exact f1931686c data image and attestation hashes, then build a fresh image for 39c8933f5 before required/full gates.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 150,
+  "task_revision": 151,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T14:11:52+00:00",
+  "updated_at": "2026-09-17T14:13:20+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -534,3 +534,9 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   contract before required/full.
 
 - 2026-09-17T14:11:52+00:00: Claimed by codex-ar1293-requalify-fresh.
+
+- 2026-09-17T14:13:20+00:00: Checkpoint: fresh runner evidence is
+  /srv/data/projects/asb-state-tlc-vm-32g; exact prior portable invocation was
+  formal/handoffctl/verify.sh --tier portable-smoke with attestation 0993b7c3... and data image
+  488655f4.... Candidate repair is signed 39c8933f5; no required/full gate is authorized for it
+  until portable evidence matches this candidate.
