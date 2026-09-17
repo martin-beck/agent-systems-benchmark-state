@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 120,
+  "task_revision": 121,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T23:35:31+00:00",
+  "updated_at": "2026-09-17T23:35:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -418,3 +418,6 @@ and protected publication sequence.
   GIT_DIR/GIT_WORK_TREE exports. Focused test initially caught the intentional contract update
   (obsolete GIT_DIR expectation); test was corrected. A fresh data disk and overlay are required to
   avoid stale state/evidence.
+
+- 2026-09-17T23:35:42+00:00: Recorded command exit 0; command argv SHA-256
+  195d0d2e82a167a925aeb813c219092d425f0d4cc725a4674a4838eab408af88.
