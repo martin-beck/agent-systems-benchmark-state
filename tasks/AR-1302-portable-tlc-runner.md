@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T07:15:14+00:00",
+  "updated_at": "2026-09-17T07:15:17+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -56,3 +56,6 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   2e4709a3c708405760e333d4bfc380cf00fcbbf909bfbc301dab89d1e04a3d98.
 
 - 2026-09-17T07:15:14+00:00: Heartbeat by codex-ar1302-runner-20260917.
+
+- 2026-09-17T07:15:17+00:00: Recorded command exit 0; command argv SHA-256
+  ad5f47b3effc3f08ed5739f48bc671ee6415b7f8560428c48d2ee12cf66f70c4.
