@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**330 ARs tracked** across 7 active status categories.
+**330 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 50 |
 | **Planned** | Defined work awaiting promotion or dependencies | 59 |
 | **Future** | Deferred roadmap work | 1 |
@@ -392,7 +392,7 @@ flowchart LR
         AR_1296["AR-1296 - Done"]:::status_done
         AR_1297["AR-1297 - Done"]:::status_done
         AR_1298["AR-1298 - Done"]:::status_done
-        AR_1299["AR-1299 - Open"]:::status_open
+        AR_1299["AR-1299 - In progress"]:::status_in_progress
     end
     subgraph series_13["13 - Additional work"]
         direction TB
@@ -1635,17 +1635,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md): Delegated sandbox runner capability | root | Provide a delegated runner for real strict-replay child lifecycle qualification. | Run AR-1301 lifecycle/fault matrix in the verified KVM guest; then complete AR-1287 runner review/publication and reconcile. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1299](../tasks/AR-1299.md): Complete authenticated agent catalog identity metadata | Unclaimed | Complete authenticated agent catalog signer, provenance, SBOM and license metadata. | Await independent exact-head review and all hosted PR #213 checks at b9edf44; do not merge or close issue #164 until both pass. |
+| P0 | [AR-1299](../tasks/AR-1299.md): Complete authenticated agent catalog identity metadata | coordinator-ar1299-review-20260917 | Complete authenticated agent catalog signer, provenance, SBOM and license metadata. | Await independent exact-head review and all hosted PR #213 checks at b9edf44; do not merge or close issue #164 until both pass. |
 
 ### Blocked (50)
 
@@ -1729,3 +1724,4 @@ flowchart LR
 | P0 | [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md): Benchmark run and shared-agent configuration tutorials | Unclaimed | Teach benchmark execution and extending agents with one shared configuration. | Implement syntax-checked tutorials for one benchmark run and atomic shared configuration across selected agents. |
 | P0 | [AR-1214](../tasks/AR-1214-record-replay.md): LLM response record/replay tutorial | Unclaimed | Teach privacy-safe LLM response recording and strict offline replay. | Implement the syntax-checked record/replay tutorial with synthetic cassette fixtures and no-network CI. |
 | P0 | [AR-1215](../tasks/AR-1215-result-comparison.md): Multi-agent result comparison tutorial | Unclaimed | Teach conservative comparison of multiple agents from the same benchmark. | Implement the syntax-checked tutorial for comparing two or more agents on one benchmark definition. |
+| P0 | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md): ASB tutorial freshness CI and documentation qualification | Unclaimed | Continuously keep ASB tutorial commands and steps syntactically current. | Implement the repository-wide tutorial discovery and syntax-freshness CI gate after all tutorial contracts are defined. |
