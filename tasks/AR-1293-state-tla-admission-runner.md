@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 99,
+  "task_revision": 100,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T10:38:01+00:00",
+  "updated_at": "2026-09-17T12:52:41+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -373,3 +373,7 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   failure; fixed guest JVM then failed native memory malloc with host swap only 100 KiB free and
   concurrent VM load, no attestation. This is infrastructure-only; AR-1302 should rerun formal tiers
   on a clean 32G runner with available swap and fixed guest JVM. No product/asb-tui changes.
+
+- 2026-09-17T12:52:41+00:00: Implement reviewed runner-contract repair required by AR-1302: separate
+  bounded virtual address space from 3 GiB physical/swap bounds, add positive/negative tests and
+  formal evidence updates.
