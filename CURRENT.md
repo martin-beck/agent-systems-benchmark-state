@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1302](tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | Provision a clean portable TLC CI/VM runner for state formal admission. | Do not launch TLC yet. Provision/verify native dbus-user-session + user@1000 bus in a fresh immutable guest image, then require these bounded preflights to exit 0: systemctl --user is-system-running; systemd-run --user --wait --pipe --collect with 3G memory/swap, 200% CPU, TasksMax=64 running /usr/bin/true. Record exact exit/evidence; run full-exhaustive only if both pass. | codex-ar1302-preflight-diagnosis |
-| P1 | [AR-1303](tasks/AR-1303-hosted-platform-diagnostics.md): Privacy-safe hosted platform failure diagnostics | Add privacy-safe fixed diagnostics for hosted platform evidence failures. | PR #220 exact head d85889d is published. Monitor all required exact-head CI; diagnose failures without weakening gates. Merge only after every required check is green, then perform post-merge verification and release AR-1303. Mypy baseline and missing jsonschema environment remain documented. | ar1303_ci_diagnostics |
+| P1 | [AR-1303](tasks/AR-1303-hosted-platform-diagnostics.md): Privacy-safe hosted platform failure diagnostics | Add privacy-safe fixed diagnostics for hosted platform evidence failures. | PR #220 exact head d85889d: await controlled rerun of formal job 105201914173 after unrelated Text file busy failure in tla_artifact_acquisition. Merge only after every exact-head check is green; then post-merge verify and release. | ar1303_ci_diagnostics |
 
 ## Blocked
 

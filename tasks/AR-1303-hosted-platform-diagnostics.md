@@ -8,7 +8,7 @@
     "AR-1252"
   ],
   "id": "AR-1303",
-  "next_action": "PR #220 exact head d85889d is published. Monitor all required exact-head CI; diagnose failures without weakening gates. Merge only after every required check is green, then perform post-merge verification and release AR-1303. Mypy baseline and missing jsonschema environment remain documented.",
+  "next_action": "PR #220 exact head d85889d: await controlled rerun of formal job 105201914173 after unrelated Text file busy failure in tla_artifact_acquisition. Merge only after every exact-head check is green; then post-merge verify and release.",
   "observed_branch": "feature/ar-1303-hosted-platform-diagnostics",
   "observed_dirty": 0,
   "observed_head": "d85889d5066c26dc69279594a7c91f4f140a23e3",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add privacy-safe fixed diagnostics for hosted platform evidence failures.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Privacy-safe hosted platform failure diagnostics",
-  "updated_at": "2026-09-17T12:33:12+00:00",
+  "updated_at": "2026-09-17T12:33:32+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1303-hosted-platform-diagnostics"
 }
 ---
@@ -165,3 +165,10 @@ native qualification route. This AR must not modify runtime behavior or asb-tui.
 
 - 2026-09-17T12:33:12+00:00: Recorded command exit 0; command argv SHA-256
   0045a3346e9a7f8a36c9b38da20373a2d78a0d0a2166f796a1fbabcd7552b098.
+
+- 2026-09-17T12:33:32+00:00: CI update: Platform evidence passed on PR #220. Kani, AWQ, headers
+  passed; TLC completed green. Loom/state workflow failed only in
+  tla_artifact_acquisition::bounded_online_build_and_verified_cache_reuse_succeed with ETXTBSY (Os
+  code 26, Text file busy) at tests/tla_artifact_acquisition.rs:332, unrelated to AR-1303 diff. One
+  controlled gh run rerun --failed was dispatched; no product change or merge authorized until
+  terminal green.
