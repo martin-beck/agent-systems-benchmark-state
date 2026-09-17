@@ -10,7 +10,7 @@
   "id": "AR-1301",
   "next_action": "Rerun fmt/clippy/full locked tests after fixing the supervised negative test useless-conversion lint; then independently review final signed head 37ce99b and publication remains prohibited until green exact-head CI.",
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "37ce99b7f219ad04c1a20112cfdc329468641309",
   "owner": "ar1301_negative_matrix",
   "plan": "../plans/AR-1301.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 151,
+  "task_revision": 152,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:28:55+00:00",
+  "updated_at": "2026-09-17T11:29:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
