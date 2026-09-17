@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-1288",
-  "next_action": "Formal lockfile is regenerated locally for the x509-parser dependency and formal locked tests compile; one formal artifact-acquisition test failed with environment-level Os code 26 ExecutableFileBusy at tests/tla_artifact_acquisition.rs:488. Commit the lockfile as signed/DCO, then run bounded reruns to classify that unrelated flake before pushing and restarting hosted exact-head checks.",
+  "next_action": "PR #210 now points to exact signed head 7b3ff1d3a87436c2a7299d452bb4220dd7847a4c after adding regenerated formal/Cargo.lock for x509-parser. The prior Loom failure was stale-lock-only; formal artifact-acquisition test had one Os 26 Text file busy environment race, then 3/3 bounded focused reruns passed. Fresh hosted exact-head checks are pending; do not merge until all required checks and final independent review are green.",
   "observed_branch": "feature/ar-1288-certificate-chain-authz",
   "observed_dirty": 0,
   "observed_head": "7b3ff1d3a87436c2a7299d452bb4220dd7847a4c",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 123,
+  "task_revision": 124,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T03:17:34+00:00",
+  "updated_at": "2026-09-17T03:17:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
@@ -373,3 +373,9 @@ must not reuse unmerged strict-replay or asb-tui branches.
 
 - 2026-09-17T03:17:34+00:00: Recorded command exit 0; command argv SHA-256
   84b337450e1940a3484de7020a0103bfe0d26b27f5478cf84ea4798eeff1c8fe.
+
+- 2026-09-17T03:17:58+00:00: Signed DCO commit 7b3ff1d refreshes formal/Cargo.lock offline (223
+  insertions, 19 deletions) so cargo test --locked formal can resolve x509-parser. Exact formal
+  suite compiled; only concurrent_acquisition_converges_on_one_verified_output hit Os code 26
+  ExecutableFileBusy once. Three sequential exact focused reruns passed 1/1 each. Product tree
+  clean, signature verified, force-with-lease push succeeded from ddcd51b to 7b3ff1d.
