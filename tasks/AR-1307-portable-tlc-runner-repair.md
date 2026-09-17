@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Independently repair and requalify the portable TLC runner through canonical tlc_runner/verify.sh admission and attestation, with exact AR-1293 tier limits and fresh sanitized evidence.",
+  "next_action": "Canonical runner repair is implemented on feature/ar-1307-portable-tlc-runner-repair; restore immutable vendor files, finish bounded/provenance gates, rerun full quality suite, then obtain independent review and fresh exact-head tier evidence.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T22:10:29+00:00",
+  "updated_at": "2026-09-17T22:10:39+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -62,3 +62,13 @@ and protected publication sequence.
 - 2026-09-17T22:02:30+00:00: Heartbeat by codex-ar1307-runner-20260917.
 
 - 2026-09-17T22:10:29+00:00: Heartbeat by codex-ar1307-runner-20260917.
+
+- 2026-09-17T22:10:39+00:00: Durable checkpoint: feature branch has imported canonical
+  tlc_runner/profile/attestation chain and added bounded argv-only process-group execution, private
+  /srv/data/projects runtime roots, source/input/runner/artifact provenance, restricted attestation
+  paths, UUID privacy fix, and 24/24 focused tests. Full state suite passed 158/158; Ruff check and
+  format pass; uv-frozen offline quality environment installed. Mypy tools/tests is blocked only by
+  the current branch vendor import context/environment before vendor restoration; vendor verify
+  currently fails because imported commits modify immutable formal/handoffctl/README.md and
+  verify.sh, which must be restored. Branch checkpoint 50a547dcd plus local repair changes remains
+  unpublished.
