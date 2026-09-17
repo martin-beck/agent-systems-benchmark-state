@@ -11,7 +11,7 @@
   "id": "AR-1282",
   "next_action": "Promote after dependency verification; implement and merge the bounded authenticated replay transport foundation only.",
   "observed_branch": "feature/ar-1282-authenticated-replay-transport",
-  "observed_dirty": 5,
+  "observed_dirty": 6,
   "observed_head": "69e8b064d3121a4bae1f672cdae9c0c8672000bc",
   "owner": "asb_ar1282_core_runtime_transport",
   "plan": "../plans/AR-1282.md",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Land the authenticated runtime-to-CLI replay transport foundation.",
-  "task_revision": 11,
+  "task_revision": 12,
   "title": "Authenticated replay transport foundation",
-  "updated_at": "2026-09-17T00:24:57+00:00",
+  "updated_at": "2026-09-17T00:25:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1282-authenticated-replay-transport"
 }
 ---
