@@ -2,8 +2,8 @@
 
 Generated from local Git and GitHub. Do not edit.
 
-- Product remote main: `6c694f8b26ba98166ab72349875641d5d55806d5`
-- Local origin/main: `6c694f8b26ba98166ab72349875641d5d55806d5`
+- Product remote main: `8737bbed4b9ad8b9d3c40a8bf5b71277303db7cf`
+- Local origin/main: `8737bbed4b9ad8b9d3c40a8bf5b71277303db7cf`
 - Primary worktree head: `bd7d10d4a760a84fa42de2b1fa9e97e8ea85ba09`
 
 ## Open pull requests
@@ -22,21 +22,20 @@ Generated from local Git and GitHub. Do not edit.
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #214 | `feature/ar-1286-supervised-replay-lifecycle@eaf7fcbf42ae` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(replay): integrate runtime-owned supervised replay lifecycle |
 | #215 | `feature/ar-1286-replay-lifecycle-rebased@03b1ddc7c9d2` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(replay): integrate signed runtime replay lifecycle |
-| #216 | `feature/ar-1287-delegated-sandbox-runner@dba5f9bb6973` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | tools: add fail-closed delegated replay runner payload |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35199911171 | `8737bbed4b9a` | push | Rust verification | in_progress:- |
+| 35199911170 | `8737bbed4b9a` | push | Formal assurance | in_progress:- |
+| 35199911163 | `8737bbed4b9a` | push | Emulated aarch64 portability | in_progress:- |
+| 35199911145 | `8737bbed4b9a` | push | Huawei MIT source headers | completed:success |
+| 35199911132 | `8737bbed4b9a` | push | Fault assurance | in_progress:- |
+| 35199911120 | `8737bbed4b9a` | push | Hosted portability and native qualification | completed:success |
+| 35199911099 | `8737bbed4b9a` | push | Repository quality | completed:failure |
 | 35197133561 | `6c694f8b26ba` | push | Fault assurance | completed:success |
 | 35197133532 | `6c694f8b26ba` | push | Repository quality | completed:failure |
 | 35197133528 | `6c694f8b26ba` | push | Hosted portability and native qualification | completed:success |
 | 35197133520 | `6c694f8b26ba` | push | Huawei MIT source headers | completed:success |
 | 35197133491 | `6c694f8b26ba` | push | Formal assurance | completed:success |
-| 35197133486 | `6c694f8b26ba` | push | Rust verification | completed:failure |
-| 35197133474 | `6c694f8b26ba` | push | Emulated aarch64 portability | completed:success |
-| 35195616656 | `9263f8310cbf` | push | Huawei MIT source headers | completed:success |
-| 35195616652 | `9263f8310cbf` | push | Fault assurance | completed:success |
-| 35195616650 | `9263f8310cbf` | push | Repository quality | completed:success |
-| 35195616648 | `9263f8310cbf` | push | Formal assurance | completed:success |
-| 35195616646 | `9263f8310cbf` | push | Rust verification | completed:success |
