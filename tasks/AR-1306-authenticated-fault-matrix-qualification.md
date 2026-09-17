@@ -8,7 +8,7 @@
     "AR-1287"
   ],
   "id": "AR-1306",
-  "next_action": "Independent exact-head native review BLOCKED: ASB_REQUIRE_NATIVE_SANDBOX=1 sandbox_boundary ran 15 tests with 14 passed but native_supervisor_forwards_cassette_http_and_reaps_children failed: authenticated service returned local replay transport failed, supervisor timed out after 10s, child exited 1. Reproduce and repair response path, then rerun complete native matrix and exact-head CI; do not merge. Also replace dynamic bubblewrap selection with an explicit reviewed-version allowlist if not already enforced.",
+  "next_action": "Relay lifecycle repair commit cf6c9e4dd9611f88252418b1e4e7effa4667aaa7 is signed/DCO and pushed to PR #222. Positive authenticated service test now uses bounded curl connect/max time and a 30s supervisor deadline; 15 repeated qualified native runs passed. Verify full native matrix and refreshed exact-head CI, then obtain independent review. Prior 22:54 exit 101 was malformed temporary quote syntax before correction; subsequent fmt and focused runs passed.",
   "observed_branch": "feature/ar-1306-authenticated-fault-matrix-qualification",
   "observed_dirty": 0,
   "observed_head": "cf6c9e4dd9611f88252418b1e4e7effa4667aaa7",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 164,
+  "task_revision": 165,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T22:55:48+00:00",
+  "updated_at": "2026-09-17T22:56:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
@@ -486,3 +486,9 @@ publication, independent review, green exact-head CI, protected merge and post-m
 
 - 2026-09-17T22:55:48+00:00: Recorded command exit 0; command argv SHA-256
   518a4780082fdca5a8bec45d401a548a8ac7fb8bb46f5c129a80fea618cfd017.
+
+- 2026-09-17T22:56:11+00:00: Reproduced native flake at run 9/15: StrictReplayService returned local
+  replay transport failed while supervisor hit its 10s deadline; captured sanitized child exit 1 and
+  ready marker. Repair bounds curl lifecycle (connect 3s/max 20s) and supervisor deadline 30s;
+  corrected temporary malformed quote patch (exit 101), then qualified 15/15 repeats passed. Signed
+  commit cf6c9e4 pushed.
