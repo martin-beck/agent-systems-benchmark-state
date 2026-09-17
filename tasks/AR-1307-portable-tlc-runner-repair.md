@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 96,
+  "task_revision": 97,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T23:28:03+00:00",
+  "updated_at": "2026-09-17T23:28:08+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -338,3 +338,6 @@ and protected publication sequence.
   owner-confinement setup defect. Patched guest_seed to recursively chown the mounted state checkout
   to uid 1000 before execution. The prior host YAML validator also exited 1 due missing PyYAML; use
   available project/schema validator or cloud-init parsing.
+
+- 2026-09-17T23:28:08+00:00: Recorded command exit 2; command argv SHA-256
+  8085271911441be71965fa4475a712ec89248818f09f9f5ce0b3252d2968140e.
