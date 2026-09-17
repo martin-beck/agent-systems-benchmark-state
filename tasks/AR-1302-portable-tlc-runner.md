@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 218,
+  "task_revision": 219,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T10:42:51+00:00",
+  "updated_at": "2026-09-17T10:42:53+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -698,3 +698,6 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   start transient service unit: Transport endpoint is not connected (ASB_RC=1), no attestation. The
   runner/data/JAR remain isolated and no full gate success is claimed. Next fix is to invoke verify
   as the guest asb UID through runuser so the active user manager owns the systemd transient unit.
+
+- 2026-09-17T10:42:53+00:00: Recorded command exit 0; command argv SHA-256
+  530902de1650337b7e9bea9464323481f1e0b6c8a94aa0392fc2691854f219a0.
