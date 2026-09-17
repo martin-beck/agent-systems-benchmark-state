@@ -1551,7 +1551,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1277](../tasks/AR-1277-runtime-cli-replay-transport.md): Runtime-to-CLI replay transport boundary | asb_ar1024_lifecycle_router | Provide a runtime-issued transport channel for primary strict replay. | Promote after dependency verification; implement the authenticated runtime-to-CLI replay transport boundary and executable lifecycle tests. |
+| P0 | [AR-1277](../tasks/AR-1277-runtime-cli-replay-transport.md): Runtime-to-CLI replay transport boundary | asb_ar1024_lifecycle_router | Provide a runtime-issued transport channel for primary strict replay. | Wire ReplayTransportClient into the primary replay dispatch and connect runtime-issued cassette service; add supervised egress/lifecycle evidence. |
 
 ### Open (6)
 

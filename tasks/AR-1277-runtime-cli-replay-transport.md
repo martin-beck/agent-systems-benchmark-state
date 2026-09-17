@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1277",
-  "next_action": "Promote after dependency verification; implement the authenticated runtime-to-CLI replay transport boundary and executable lifecycle tests.",
+  "next_action": "Wire ReplayTransportClient into the primary replay dispatch and connect runtime-issued cassette service; add supervised egress/lifecycle evidence.",
   "observed_branch": "feature/ar-1277-runtime-cli-replay-transport",
   "observed_dirty": 0,
   "observed_head": "c88a34c86a67c51e1a74dc8cdb403fbeb3f74879",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-issued transport channel for primary strict replay.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Runtime-to-CLI replay transport boundary",
-  "updated_at": "2026-09-17T00:07:02+00:00",
+  "updated_at": "2026-09-17T00:07:22+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1277-runtime-cli-replay-transport"
 }
 ---
@@ -92,3 +92,11 @@ Preserve AR-1276's blocked evidence and require actual supervised execution.
 
 - 2026-09-17T00:06:54+00:00: Recorded command exit 0; command argv SHA-256
   24514f59c9c1f6caa4f5c7e55bd2ee1dbb116204df8afc77ffd4822c6b27d470.
+
+- 2026-09-17T00:07:22+00:00: Signed checkpoint c88a34c adds dependency-neutral ReplayTransportV1
+  request/response envelopes, runtime-owned authenticated channel with retained callback and
+  one-shot closed/duplicate transitions, and CLI adapter emitting bounded response JSON. Focused
+  runtime transport 2/2, CLI adapter 1/1, offline check and fmt pass. Initial failures were exact
+  syntax delimiter, serve_once API test mismatch, and missing asb-core CLI dependency; all fixed and
+  rerun green. Primary argument-level replay still has no construction/injection path and supervised
+  cassette/egress/cancel/restart/timeout/crash cleanup remains.
