@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1304-required-tier-qemu-runner",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T15:23:28+00:00",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "codex-ar1304-required-runner-20260917",
   "plan": "../plans/AR-1304.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Create a clean required-containment QEMU runner for formal publication evidence.",
-  "task_revision": 26,
+  "task_revision": 27,
   "title": "Required-tier QEMU user-bus runner",
-  "updated_at": "2026-09-17T14:53:25+00:00",
+  "updated_at": "2026-09-17T14:53:28+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner"
 }
 ---
@@ -120,3 +120,5 @@ logs, or claim full-exhaustive evidence before required attestation is green.
 
 - 2026-09-17T14:53:25+00:00: Replace cloud-init loginctl bootstrap with a systemd-native guest unit
   ordered after user@1000; retry required attestation
+
+- 2026-09-17T14:53:28+00:00: Claimed by codex-ar1304-required-runner-20260917.
