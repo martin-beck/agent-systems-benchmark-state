@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 71,
+  "task_revision": 72,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T22:06:45+00:00",
+  "updated_at": "2026-09-17T22:06:51+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
@@ -244,3 +244,6 @@ publication, independent review, green exact-head CI, protected merge and post-m
 - 2026-09-17T22:06:45+00:00: Recorded final repair gates: focused fault matrix 1/1 and full
   workspace test pass; fmt/clippy/docs pass. Release build command reached coordinator lock timeout,
   not a product/build failure; concurrent AR-1293 handoff remains active.
+
+- 2026-09-17T22:06:51+00:00: Recorded command exit 0; command argv SHA-256
+  b49a90ee600c1023cee9ee9f9e8a4f9a06c53eef8c48d3932d88e482126c7c01.
