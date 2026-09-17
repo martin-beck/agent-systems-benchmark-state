@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair missing successor pointers on superseded dependency tasks.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Repair superseded dependency pointers",
-  "updated_at": "2026-09-17T04:14:33+00:00",
+  "updated_at": "2026-09-17T04:14:59+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1291-superseded-pointers"
 }
 ---
@@ -33,3 +33,6 @@ product or handoffctl code.
 
 - 2026-09-17T04:14:33+00:00: Recorded command exit 0; command argv SHA-256
   b81abf2246453cf8b195492e2eb388e1de663dbe1725037671b56ee7be751bc4.
+
+- 2026-09-17T04:14:59+00:00: Recorded command exit 0; command argv SHA-256
+  803bcddbe8771753b1caa1c8384c7f6750343dd01c509be847bb8f570fa535e7.
