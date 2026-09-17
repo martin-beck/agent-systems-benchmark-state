@@ -11,12 +11,12 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 3 |
+| **In progress** | Claimed work with a live lease | 2 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 50 |
 | **Planned** | Defined work awaiting promotion or dependencies | 59 |
 | **Future** | Deferred roadmap work | 1 |
-| **Done** | Accepted, integrated, and durably verified | 208 |
+| **Done** | Accepted, integrated, and durably verified | 209 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
 | **Superseded** | Replaced by another AR | 9 |
 
@@ -396,7 +396,7 @@ flowchart LR
     end
     subgraph series_13["13 - Additional work"]
         direction TB
-        AR_1300["AR-1300 - In progress"]:::status_in_progress
+        AR_1300["AR-1300 - Done"]:::status_done
         AR_1301["AR-1301 - Planned"]:::status_planned
         AR_1302["AR-1302 - In progress"]:::status_in_progress
     end
@@ -1635,12 +1635,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (3)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1299](../tasks/AR-1299.md): Complete authenticated agent catalog identity metadata | root-ar1299-catalog | Complete authenticated agent catalog signer, provenance, SBOM and license metadata. | Await independent exact-head review and all hosted PR #213 checks at b9edf44; do not merge or close issue #164 until both pass. |
-| P0 | [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md): Runtime-to-replay cassette dispatch seam | ar1300_dispatch | Connect runtime-issued cassette operations to the real strict-replay dispatch path. | Continue bounded monitoring of post-merge exact-main workflows for 9263f8310cbf4d222d09d0d1eaef4b4bdfb72e05; release only after all terminal checks pass. |
 | P0 | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | codex-ar1302-recovery-20260917 | Provision a clean portable TLC CI/VM runner for state formal admission. | Promote and provision a digest-pinned x86_64 container/VM runner with portable cgroup containment, bounded thread/memory/swap capacity, and owner-private evidence paths for AR-1293. |
 
 ### Blocked (50)
@@ -1724,3 +1723,5 @@ flowchart LR
 | P0 | [AR-1212](../tasks/AR-1212-benchmark-readiness.md): Agent benchmark-readiness tutorial | Unclaimed | Teach users to test configured-agent benchmark eligibility without running an agent. | Implement the offline tutorial for checking agent benchmark readiness under the current configuration. |
 | P0 | [AR-1213](../tasks/AR-1213-benchmark-and-shared-config.md): Benchmark run and shared-agent configuration tutorials | Unclaimed | Teach benchmark execution and extending agents with one shared configuration. | Implement syntax-checked tutorials for one benchmark run and atomic shared configuration across selected agents. |
 | P0 | [AR-1214](../tasks/AR-1214-record-replay.md): LLM response record/replay tutorial | Unclaimed | Teach privacy-safe LLM response recording and strict offline replay. | Implement the syntax-checked record/replay tutorial with synthetic cassette fixtures and no-network CI. |
+| P0 | [AR-1215](../tasks/AR-1215-result-comparison.md): Multi-agent result comparison tutorial | Unclaimed | Teach conservative comparison of multiple agents from the same benchmark. | Implement the syntax-checked tutorial for comparing two or more agents on one benchmark definition. |
+| P0 | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md): ASB tutorial freshness CI and documentation qualification | Unclaimed | Continuously keep ASB tutorial commands and steps syntactically current. | Implement the repository-wide tutorial discovery and syntax-freshness CI gate after all tutorial contracts are defined. |

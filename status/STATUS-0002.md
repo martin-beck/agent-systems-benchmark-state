@@ -1,7 +1,5 @@
 <!-- This page is generated; the root STATUS.md index links the complete view. -->
 
-| P0 | [AR-1215](../tasks/AR-1215-result-comparison.md): Multi-agent result comparison tutorial | Unclaimed | Teach conservative comparison of multiple agents from the same benchmark. | Implement the syntax-checked tutorial for comparing two or more agents on one benchmark definition. |
-| P0 | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md): ASB tutorial freshness CI and documentation qualification | Unclaimed | Continuously keep ASB tutorial commands and steps syntactically current. | Implement the repository-wide tutorial discovery and syntax-freshness CI gate after all tutorial contracts are defined. |
 | P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
 | P0 | [AR-1301](../tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | Unclaimed | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | Promote only after AR-1287 and AR-1300 are done; implement the executable supervised replay lifecycle fault matrix and qualify it on the approved runner. |
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
@@ -44,7 +42,7 @@
 | --- | --- | --- | --- | --- |
 | P4 | [AR-0703](../tasks/AR-0703-native-platform-lab.md): Provision native platform qualification capacity | Unclaimed | Optionally provide native ARM64 Debian/openEuler capacity for future claim-scoped evidence. | When separately authorized, provision genuine ARM64 Debian/openEuler capacity for optional future native evidence; absence must not block any AR. |
 
-### Done (208)
+### Done (209)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -135,6 +133,7 @@
 | P0 | [AR-1296](../tasks/AR-1296-state-quality-baseline.md): State quality-gate baseline | Unclaimed | Restore strict state-repository mypy and coverage quality gates without weakening thresholds. | Repair explicit tools package identity and add bounded offline upgrade-command coverage until strict mypy and the unchanged 95&#37; coverage gate pass. |
 | P0 | [AR-1297](../tasks/AR-1297-task-schema-metadata.md): Task schema and metadata consistency | Unclaimed | Repair task schema and metadata consistency without weakening coordinator validation. | Repair every reported task schema/metadata error from durable evidence, add strict superseded_by schema coverage, regenerate views, and rerun all state gates. |
 | P0 | [AR-1298](../tasks/AR-1298-narrow-metadata-repair.md): Narrow task metadata repair scope | Unclaimed | Narrow AR-1297 metadata changes to the exact evidence-backed schema repairs. | Restore unrelated task files to pre-AR-1297 bytes, retain only evidence-backed schema-failure repairs, regenerate views, and rerun all gates. |
+| P0 | [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md): Runtime-to-replay cassette dispatch seam | Unclaimed | Connect runtime-issued cassette operations to the real strict-replay dispatch path. | Continue bounded monitoring of post-merge exact-main workflows for 9263f8310cbf4d222d09d0d1eaef4b4bdfb72e05; release only after all terminal checks pass. |
 | P1 | [AR-0002](../tasks/AR-0002-coordination-assurance.md): Harden reusable coordination framework | Unclaimed | Adapt generic coordination tooling for public ASB workers without importing private state. | Wait for AR-0003 to repair product PR DCO merge-context checks; then revalidate and integrate documentation PR before final AR-0002 release. |
 | P1 | [AR-0003](../tasks/AR-0003-quality-gates.md): Enforce Rust and repository quality gates | Unclaimed | Install pinned analysis, coverage, workflow, documentation and supply-chain gates. | Await independent immutable-head review and coordinator integration of product PR #2; then run post-merge gates. |
 | P1 | [AR-0004](../tasks/AR-0004-ar-status-document.md): Generate the visual AR status document | Unclaimed | Render every AR, status, and dependency as an accessible visual state document. | Await independent immutable-head review of state PR 3 at eedd311; repair findings before coordinator integration. |

@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1300-runtime-cassette-dispatch-seam",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T08:13:15+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1282",
     "AR-1285"
@@ -12,15 +12,15 @@
   "observed_branch": "feature/ar-1300-runtime-cassette-dispatch-seam",
   "observed_dirty": 0,
   "observed_head": "019038378726405eaf05a77269b8541d9a81d912",
-  "owner": "ar1300_dispatch",
+  "owner": "",
   "plan": "../plans/AR-1300.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Connect runtime-issued cassette operations to the real strict-replay dispatch path.",
-  "task_revision": 101,
+  "task_revision": 102,
   "title": "Runtime-to-replay cassette dispatch seam",
-  "updated_at": "2026-09-17T07:48:12+00:00",
+  "updated_at": "2026-09-17T07:48:38+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1300-runtime-cassette-dispatch-seam"
 }
 ---
@@ -341,3 +341,11 @@ fixtures/tests. Do not modify asb-tui or coordinator implementation.
 
 - 2026-09-17T07:48:12+00:00: Recorded command exit 0; command argv SHA-256
   09452582d150e4a90308bc86e50cd99ba85e847ba6fc9951ed247f16348c9016.
+
+- 2026-09-17T07:48:38+00:00: Completed and merged PR #217. Protected signed merge
+  9263f8310cbf4d222d09d0d1eaef4b4bdfb72e05 has exact topic parent
+  019038378726405eaf05a77269b8541d9a81d912 and base parent c1b1860786e844adb69b8f74e39af290592a89c8.
+  Independent review, SSH signature, DCO, clean tree, focused/full local gates, and hosted
+  exact-main post-merge gates all passed: Repository quality 35195616650, Emulated AArch64
+  35195616644, Rust 35195616646, Formal 35195616648, Fault 35195616652, Hosted 35195616643, Headers
+  35195616656.
