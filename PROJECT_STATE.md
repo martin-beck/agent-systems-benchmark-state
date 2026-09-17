@@ -23,20 +23,21 @@ Generated from local Git and GitHub. Do not edit.
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #197 | `feature/ar-1248-strict-replay-cli-contract@7d9c2ee2e08b` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): define strict offline replay consumer contract |
 | #207 | `feature/ar-1262-runtime-owned-launch-authority@c009185748a4` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): issue strict-replay launch authority |
+| #209 | `feature/ar-1285-runtime-launch-factory@9fde4d8a6ff1` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, QUEUED:, IN_PROGRESS: | feat(runtime): issue authenticated replay launch authority |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35172023853 | `9fde4d8a6ff1` | pull_request | Repository quality | in_progress:- |
+| 35172023820 | `9fde4d8a6ff1` | pull_request | Fault assurance | in_progress:- |
+| 35172023818 | `9fde4d8a6ff1` | pull_request | Emulated aarch64 portability | in_progress:- |
+| 35172023817 | `9fde4d8a6ff1` | pull_request | Hosted portability and native qualification | in_progress:- |
+| 35172023811 | `9fde4d8a6ff1` | pull_request | Rust verification | in_progress:- |
+| 35172023804 | `9fde4d8a6ff1` | pull_request | Agent Workflow Quality shadow | in_progress:- |
+| 35172023796 | `9fde4d8a6ff1` | pull_request | Formal assurance | in_progress:- |
+| 35172023793 | `9fde4d8a6ff1` | pull_request | Huawei MIT source headers | in_progress:- |
 | 35169633775 | `30f8aff0914b` | pull_request | Fault assurance | completed:failure |
 | 35169633719 | `30f8aff0914b` | pull_request | Rust verification | completed:failure |
 | 35169633696 | `30f8aff0914b` | pull_request | Hosted portability and native qualification | completed:failure |
 | 35169633685 | `30f8aff0914b` | pull_request | Huawei MIT source headers | completed:success |
-| 35169633671 | `30f8aff0914b` | pull_request | Repository quality | completed:failure |
-| 35169633670 | `30f8aff0914b` | pull_request | Formal assurance | completed:failure |
-| 35169633654 | `30f8aff0914b` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 35169633638 | `30f8aff0914b` | pull_request | Emulated aarch64 portability | completed:failure |
-| 35169630080 | `6b6f75f9916e` | pull_request | Rust verification | completed:failure |
-| 35169629989 | `6b6f75f9916e` | pull_request | Fault assurance | completed:failure |
-| 35169629953 | `6b6f75f9916e` | pull_request | Repository quality | completed:failure |
-| 35169629935 | `6b6f75f9916e` | pull_request | Agent Workflow Quality shadow | completed:success |
