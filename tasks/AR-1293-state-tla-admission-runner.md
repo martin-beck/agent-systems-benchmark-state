@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T20:10:51+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Rebuild the clean data image from signed candidate 903a87844, generate required-tier seed, rerun bounded required launcher, and inspect PR result, attestation, and receipt.",
+  "next_action": "Independently review the green required receipt and commit, then run the documented full-exhaustive tier on a fresh image using the same seed/data provenance; accept only successful full attestation and receipt.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 494,
+  "task_revision": 495,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T19:17:00+00:00",
+  "updated_at": "2026-09-17T19:17:46+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1651,3 +1651,12 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T19:17:00+00:00: Recorded command exit 0; command argv SHA-256
   2dba5776fcb2d21f97c8fe5f1f9a1bae1c138e270650243c1ac9d3e94aea8c54.
+
+- 2026-09-17T19:17:46+00:00: Required-tier qualification is green at signed candidate
+  903a87844cfec56e9735112ef7749db792b98afd. Fresh fsck-clean data image SHA-256 is
+  0b30ea04552732fd7acfe0a118d8ad73056f98c9d22cae3c85322a93dab17cd9. Guest markers:
+  PR_PUBLICATION_TRANSIENT_RC=0, PR_PUBLICATION_RC=0, PR_PUBLICATION_EVIDENCE_OK. Attestation
+  status=success/profile=pr-publication/commit matches candidate/containment_mode=required. Receipt
+  result=0 records 1800s runtime, 3G memory+swap, 200% CPU, TasksMax64, 8G AS, 8 vCPUs, 2 workers.
+  Direct debugfs extraction succeeded without privileged guestfish. Full-exhaustive remains
+  outstanding.
