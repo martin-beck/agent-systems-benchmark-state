@@ -9,12 +9,7 @@ Never edit this file directly.
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1287](tasks/AR-1287-delegated-sandbox-runner.md): Delegated sandbox runner capability | Provide a delegated runner for real strict-replay child lifecycle qualification. | Run AR-1301 lifecycle/fault matrix in the verified KVM guest; then complete AR-1287 runner review/publication and reconcile. | root |
 | P0 | [AR-1299](tasks/AR-1299.md): Complete authenticated agent catalog identity metadata | Complete authenticated agent catalog signer, provenance, SBOM and license metadata. | Monitor exact-main post-merge workflows for 6c694f8b26ba98166ab72349875641d5d55806d5 until every required run is terminal green; then verify main signature/DCO and release AR-1299 done. | coordinator-ar1299-review-20260917 |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1302](tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | Provision a clean portable TLC CI/VM runner for state formal admission. | Promote and provision a digest-pinned x86_64 container/VM runner with portable cgroup containment, bounded thread/memory/swap capacity, and owner-private evidence paths for AR-1293. | - |
+| P0 | [AR-1302](tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | Provision a clean portable TLC CI/VM runner for state formal admission. | Promote and provision a digest-pinned x86_64 container/VM runner with portable cgroup containment, bounded thread/memory/swap capacity, and owner-private evidence paths for AR-1293. | coordinator-ar1302-statefix-20260917 |
 
 ## Blocked
 
