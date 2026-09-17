@@ -8,7 +8,7 @@
     "AR-1287"
   ],
   "id": "AR-1306",
-  "next_action": "Relay lifecycle repair commit cf6c9e4dd9611f88252418b1e4e7effa4667aaa7 is signed/DCO and pushed to PR #222. Positive authenticated service test now uses bounded curl connect/max time and a 30s supervisor deadline; 15 repeated qualified native runs passed. Verify full native matrix and refreshed exact-head CI, then obtain independent review. Prior 22:54 exit 101 was malformed temporary quote syntax before correction; subsequent fmt and focused runs passed.",
+  "next_action": "PR #222 exact head 1a22bc6 is signed/DCO and fixes the malformed provider-egress tuple; local qualified native sandbox_boundary matrix completed 15/15 tests successfully after repair, focused parity repeated 15/15, fmt and clippy pass. Await refreshed exact-head CI and independent native review; do not merge until all checks/review green.",
   "observed_branch": "feature/ar-1306-authenticated-fault-matrix-qualification",
   "observed_dirty": 0,
   "observed_head": "1a22bc65dbd730cd019635d9bccdf6416ada1d3e",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 174,
+  "task_revision": 175,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T22:58:36+00:00",
+  "updated_at": "2026-09-17T22:58:46+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
@@ -513,3 +513,8 @@ publication, independent review, green exact-head CI, protected merge and post-m
 
 - 2026-09-17T22:58:36+00:00: Recorded command exit 0; command argv SHA-256
   518a4780082fdca5a8bec45d401a548a8ac7fb8bb46f5c129a80fea618cfd017.
+
+- 2026-09-17T22:58:46+00:00: Reproduced and classified PR Rust failure: prior malformed
+  provider-egress curl patch omitted sidecar executable and produced a 2-element tuple instead of
+  required 4-element fixture (Rust E0308). Restored tuple/args, qualified full native
+  sandbox_boundary run passed 15/15. Signed commit 1a22bc6 pushed to PR #222.
