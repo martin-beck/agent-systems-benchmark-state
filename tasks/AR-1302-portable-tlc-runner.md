@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T12:13:30+00:00",
+  "claim_expires": "2026-09-17T12:36:25+00:00",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Wait for AR-1293 worker to release the 32 GiB VM; then offline-stage the pinned TLC JAR into a distinct runner data disk, boot without network or host mounts, and run signed candidate f16d2cb41 full-exhaustive with exact attestation.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 205,
+  "task_revision": 206,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T10:34:17+00:00",
+  "updated_at": "2026-09-17T10:36:25+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -653,3 +653,5 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T10:34:17+00:00: Recorded command exit 0; command argv SHA-256
   23196033275888b8386b330db30943eb50c35aaf938263d624e54428b3c207bd.
+
+- 2026-09-17T10:36:25+00:00: Heartbeat by codex-ar1302-runner-20260917-vm.
