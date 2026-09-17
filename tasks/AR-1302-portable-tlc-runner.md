@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 429,
+  "task_revision": 430,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T13:36:36+00:00",
+  "updated_at": "2026-09-17T13:36:41+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1433,3 +1433,7 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   proof or f1931686c portable-smoke attestation. Next action: use the receipt-approved prepared root
   overlay image (not the base cloud image), add a boot-time offline seed/service that disables only
   the guest wait-online dependency without enabling networking, then rerun preflight and smoke.
+
+- 2026-09-17T13:36:41+00:00: Use receipt-approved prepared bootable root_overlay, verify provenance,
+  and add offline guest seed/service only if state-owned and preserves -net none; rerun UUID mount
+  preflight and exact f1931686c portable-smoke with bounded cleanup.
