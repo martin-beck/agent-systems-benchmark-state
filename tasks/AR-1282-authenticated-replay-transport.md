@@ -11,17 +11,17 @@
   "id": "AR-1282",
   "next_action": "Monitor PR #208 exact head a455d5ea09b2 against base 69e8b064d312; all required hosted checks are running. Do not merge until terminal green and independent approval remains recorded.",
   "observed_branch": "feature/ar-1282-authenticated-replay-transport",
-  "observed_dirty": 1,
-  "observed_head": "a455d5ea09b23addf3e75def2d08d101cfa1ea96",
+  "observed_dirty": 0,
+  "observed_head": "b44be60fb9f127920f360ef86db482a85c3d7bae",
   "owner": "asb_ar1282_core_runtime_transport",
   "plan": "../plans/AR-1282.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Land the authenticated runtime-to-CLI replay transport foundation.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Authenticated replay transport foundation",
-  "updated_at": "2026-09-17T00:49:03+00:00",
+  "updated_at": "2026-09-17T00:49:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1282-authenticated-replay-transport"
 }
 ---
