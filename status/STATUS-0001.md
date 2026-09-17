@@ -1623,7 +1623,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | codex-ar1293-requalify | Repair the state-repository TLA admission runner and truthful worktree metadata. | Re-run state/formal gates after v0.3.7 fixture repair and owner-safe TLC runner integration; do not publish while red. |
+| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | codex-ar1293-requalify | Repair the state-repository TLA admission runner and truthful worktree metadata. | Reconcile the still-failing vendor fixture contract to coordinator v0.3.7 and provide a host with enough thread capacity for the portable TLC VM; then rerun full state and formal gates. Candidate 53dd96389 is signed and focused-green but is not publishable while 133-test vendor failures and TLC EAGAIN remain. |
 
 ### Blocked (49)
 
@@ -1712,4 +1712,3 @@ flowchart LR
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
 | P1 | [AR-0811](../tasks/AR-0811-documentation-qualification.md): Audit workflow documentation and publication | Unclaimed | Qualify documentation completeness, executability, accessibility, privacy, provenance, and release accuracy. | Independently audit every published workflow against released programs and deployed Pages output. |
-| P1 | [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md): Manage remote benchmark run lifecycles | Unclaimed | Manage durable benchmark runs from another machine without making the frontend their owner. | Implement remote validation, launch, detach, reconnect, status, cancellation, and recovery workflows. |

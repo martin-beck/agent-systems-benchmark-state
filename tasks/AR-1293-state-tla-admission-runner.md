@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T06:44:40+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Re-run state/formal gates after v0.3.7 fixture repair and owner-safe TLC runner integration; do not publish while red.",
+  "next_action": "Reconcile the still-failing vendor fixture contract to coordinator v0.3.7 and provide a host with enough thread capacity for the portable TLC VM; then rerun full state and formal gates. Candidate 53dd96389 is signed and focused-green but is not publishable while 133-test vendor failures and TLC EAGAIN remain.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 41,
+  "task_revision": 42,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T05:46:57+00:00",
+  "updated_at": "2026-09-17T05:47:12+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -152,3 +152,11 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T05:46:57+00:00: Recorded command exit 1; command argv SHA-256
   446387fae377a2b2d9117793c36555d90f1bdb3fb13f898b032c8e13d790e74e.
+
+- 2026-09-17T05:47:12+00:00: Requalification evidence: main contains signed state-quality repair
+  8aa9e0c4c and candidate 53dd96389 is independently signature/DCO-valid on
+  feature/ar-1293-state-tla-admission. Focused runner suite (8), Ruff, and mypy pass. Full candidate
+  suite ran 133 tests with 1 failure and 2 errors: vendor fixtures still expect v0.3.5/digest f91226
+  while coordinator vendor is v0.3.7. Private-path portable-smoke downloaded the pinned JAR but JVM
+  failed before TLC with EAGAIN Cannot create VM thread; bounded host probe recorded 32 CPUs, 216
+  processes, load 8.06/7.94/6.02. External root lock was not touched.
