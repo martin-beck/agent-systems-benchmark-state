@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 51 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -401,7 +401,7 @@ flowchart LR
         AR_1302["AR-1302 - Done"]:::status_done
         AR_1303["AR-1303 - Blocked"]:::status_blocked
         AR_1304["AR-1304 - Blocked"]:::status_blocked
-        AR_1305["AR-1305 - Open"]:::status_open
+        AR_1305["AR-1305 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1645,11 +1645,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1305](../tasks/AR-1305-image-native-user-session.md): Image-native user-session support | Unclaimed | Qualify image-native D-Bus user-session support for required TLC containment. | Promote after review; qualify dbus-user-session and systemd user-manager support in a fresh offline guest image, then hand the immutable image to AR-1304. |
+| P0 | [AR-1305](../tasks/AR-1305-image-native-user-session.md): Image-native user-session support | codex-ar1305-image-session-20260917 | Qualify image-native D-Bus user-session support for required TLC containment. | Promote after review; qualify dbus-user-session and systemd user-manager support in a fresh offline guest image, then hand the immutable image to AR-1304. |
 
 ### Blocked (51)
 
