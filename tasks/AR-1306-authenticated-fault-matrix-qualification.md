@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 143,
+  "task_revision": 144,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T22:51:25+00:00",
+  "updated_at": "2026-09-17T22:51:27+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
@@ -437,3 +437,6 @@ publication, independent review, green exact-head CI, protected merge and post-m
   83c08c1ca11113ad1bd928c4f75c14769ef05086088f51c9fe6eb5596bd5db7a.
 
 - 2026-09-17T22:51:25+00:00: Heartbeat by codex-ar1306-auth-listener-20260917.
+
+- 2026-09-17T22:51:27+00:00: Recorded command exit 0; command argv SHA-256
+  1b8d95eb69915778fc98027ba3a90c15882930789eb22aca0394fca854673ef2.
