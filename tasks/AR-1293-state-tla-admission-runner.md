@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 233,
+  "task_revision": 234,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T17:30:31+00:00",
+  "updated_at": "2026-09-17T17:30:33+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -795,3 +795,6 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 - 2026-09-17T17:29:37+00:00: Claimed by codex-ar1293-timeout-repair-20260917.
 
 - 2026-09-17T17:30:31+00:00: Heartbeat by codex-ar1293-timeout-repair-20260917.
+
+- 2026-09-17T17:30:33+00:00: Recorded command exit 1; command argv SHA-256
+  bfed98255c8f3ca4af77d55b79d2b072f237a0a555c1140c7d16bf5c45388cc9.
