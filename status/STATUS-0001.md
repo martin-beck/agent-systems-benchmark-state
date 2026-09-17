@@ -1264,7 +1264,6 @@ flowchart LR
     AR_1282 --> AR_1285
     AR_1282 --> AR_1286
     AR_1285 --> AR_1286
-    AR_1286 --> AR_1287
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1592,8 +1591,8 @@ flowchart LR
 | [AR-1283](../tasks/AR-1283-formal-lockfile.md) | [AR-0003](../tasks/AR-0003-quality-gates.md) | None |
 | [AR-1284](../tasks/AR-1284-runtime-strict-replay-lifecycle.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md) | None |
 | [AR-1285](../tasks/AR-1285-runtime-launch-factory.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md) | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md) |
-| [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md) | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md) |
-| [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md) | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md) | None |
+| [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md) | None |
+| [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md) | None | None |
 
 ## Complete AR inventory
 
@@ -1689,3 +1688,4 @@ flowchart LR
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
 | P1 | [AR-0811](../tasks/AR-0811-documentation-qualification.md): Audit workflow documentation and publication | Unclaimed | Qualify documentation completeness, executability, accessibility, privacy, provenance, and release accuracy. | Independently audit every published workflow against released programs and deployed Pages output. |
+| P1 | [AR-0815](../tasks/AR-0815-remote-run-lifecycle.md): Manage remote benchmark run lifecycles | Unclaimed | Manage durable benchmark runs from another machine without making the frontend their owner. | Implement remote validation, launch, detach, reconnect, status, cancellation, and recovery workflows. |
