@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 128,
+  "task_revision": 129,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:19:46+00:00",
+  "updated_at": "2026-09-17T11:20:19+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -361,3 +361,6 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
   ef0b050d10a3a8bb6d6ac40bfe095b806c22824b02c6da1d1d62c7496841604d.
 
 - 2026-09-17T11:19:46+00:00: Heartbeat by ar1301_negative_matrix.
+
+- 2026-09-17T11:20:19+00:00: Recorded command exit 0; command argv SHA-256
+  d888f2e6850a7d8882bedec6a4341952034e9089887e9f27e504cc05f8da70b7.
