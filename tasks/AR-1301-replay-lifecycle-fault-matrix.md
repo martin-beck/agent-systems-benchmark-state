@@ -8,7 +8,7 @@
     "AR-1300"
   ],
   "id": "AR-1301",
-  "next_action": "Independent exact-head review of signed head cf2a7b0 plus new signed test commits 955a060 and cf2a7b0? Verify final product HEAD and review complete diff; then publication only if review and CI are green.",
+  "next_action": "Independent exact-head review of final signed head cf2a7b0 and complete diff (including 955a060 negative matrix and cf2a7b0 strict-lint fix); publish only after review and exact-head CI are green.",
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "observed_dirty": 0,
   "observed_head": "cf2a7b0315bc7d596dbab9956e8e18a003a381a2",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 130,
+  "task_revision": 131,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:20:38+00:00",
+  "updated_at": "2026-09-17T11:21:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -372,3 +372,6 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
   workspace targets terminal green with documented environment-gated ignores. cargo fmt --all --
   --check and cargo clippy --locked --workspace --all-targets -- -D warnings passed after fixing the
   existing test-helper too_many_arguments lint. Product worktree was clean after signed DCO commits.
+
+- 2026-09-17T11:21:06+00:00: Corrected next action to identify the final product head and signed
+  commits precisely.
