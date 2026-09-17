@@ -10,7 +10,7 @@
   "id": "AR-1301",
   "next_action": "Candidate a57d111 has full locked workspace/runtime gates and five consecutive native authenticated-cassette runs. Independent review must still add supervised stale/malformed/duplicate/mismatch no-fallback cases and genuine crash-restart evidence before PR publication.",
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "a57d11140b98a0fe29ca13553a5c272f3dc70d0b",
   "owner": "ar1301_negative_matrix",
   "plan": "../plans/AR-1301.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 104,
+  "task_revision": 105,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:15:02+00:00",
+  "updated_at": "2026-09-17T11:15:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
