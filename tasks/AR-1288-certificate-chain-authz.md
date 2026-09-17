@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-1288",
-  "next_action": "Signed exact head 0e8d7e2 aligns runtime validity with schema by rejecting epoch-zero not_before/not_after. Fresh exact-head cargo fmt check, offline locked workspace tests, workspace Clippy -D warnings, and certificate-focused tests all pass. Schema artifact parity is verified. Next: push exact head and request final independent review; do not publish before approval.",
+  "next_action": "Signed exact head 0e8d7e2 aligns runtime validity with generated schema by rejecting epoch-zero not_before/not_after. Fresh exact-head gates all pass: cargo fmt check, cargo test --offline --locked --workspace, cargo clippy --offline --locked --workspace --all-targets -- -D warnings; certificate tests 7/7 and schema conformance pass. Branch pushed; request final independent review now, then publish only after approval.",
   "observed_branch": "feature/ar-1288-certificate-chain-authz",
   "observed_dirty": 0,
   "observed_head": "0e8d7e2b23bde802b7ce793654915e886d6432f4",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 90,
+  "task_revision": 91,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T03:07:27+00:00",
+  "updated_at": "2026-09-17T03:07:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
@@ -274,3 +274,10 @@ must not reuse unmerged strict-replay or asb-tui branches.
 
 - 2026-09-17T03:07:27+00:00: Recorded command exit 0; command argv SHA-256
   6bfc5d45a7fb31ac26de9cb54b5ebeb67a6d9d6dee784b5fb6096c25e78b6989.
+
+- 2026-09-17T03:07:42+00:00: 2026-09-17T03:09:00+00:00: Re-ran fresh gates after validity commit at
+  exact source head 0e8d7e2: cargo fmt --all -- --check passed; cargo test --offline --locked
+  --workspace passed; cargo clippy --offline --locked --workspace --all-targets -- -D warnings
+  passed. Existing generated schema parity and certificate-focused 7/7 remain green. Product
+  worktree clean; branch origin/feature/ar-1288-certificate-chain-authz is at
+  0e8d7e2b23bde802b7ce793654915e886d6432f4, SSH-signed with matching DCO.
