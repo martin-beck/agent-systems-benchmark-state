@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement the cross-crate runtime process entrypoint for primary strict replay.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Cross-crate replay process entrypoint",
-  "updated_at": "2026-09-17T00:13:51+00:00",
+  "updated_at": "2026-09-17T00:15:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1280-cross-crate-replay-entrypoint"
 }
 ---
@@ -38,3 +38,6 @@ prior blocked evidence, but do not substitute another audit-only result.
 
 - 2026-09-17T00:13:44+00:00: Recorded command exit 0; command argv SHA-256
   3e33781563a4510d2b29ef626cb1a320e5d8447887a3ad016f11857cb6ea7563.
+
+- 2026-09-17T00:15:26+00:00: Recorded command exit 0; command argv SHA-256
+  fef085b0d28dbc6b18c7b98ffd05ceee7c8825b95c169924ce62220ed98ee824.
