@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-1288",
-  "next_action": "Promote after schema and dependency validation; then claim the isolated worktree and implement the AR-0814 certificate issuance and chain-validation successor.",
+  "next_action": "Baseline asb-control library passes 51/51 on clean protected-main worktree. Map existing auth identity/pairing APIs, then implement certificate issuance/chain validation with focused positive/negative tests; maintain signed checkpoints.",
   "observed_branch": "feature/ar-1288-certificate-chain-authz",
   "observed_dirty": 0,
   "observed_head": "2fd90557a4e7be32fab590f47bc501462127c1c1",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T02:39:55+00:00",
+  "updated_at": "2026-09-17T02:40:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
@@ -49,3 +49,10 @@ must not reuse unmerged strict-replay or asb-tui branches.
 
 - 2026-09-17T02:39:55+00:00: Recorded command exit 0; command argv SHA-256
   23dc22c9358e3e2c16429023094116bc45a8280a9071b7bcf9ba8d34828cccb8.
+
+- 2026-09-17T02:40:11+00:00: Claimed AR-1288 after durable plan/task commit 111154ede and
+  promotion/open transition. Isolated worktree created from origin/main 2fd90557. Read complete
+  AR-0814/plan and product DEVELOPMENT, ARCHITECTURE, QUALITY docs. Baseline cargo test --locked -p
+  asb-control --lib passes 51/51. Existing asb-control has mTLS frame transport,
+  AuthEnroll/rotate/revoke and pairing identity contracts but no certificate
+  issuance/chain-validation module, confirming successor scope.

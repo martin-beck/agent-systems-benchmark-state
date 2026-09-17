@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P1 | [AR-1288](tasks/AR-1288-certificate-chain-authz.md): Runtime certificate issuance and chain validation | Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814. | Promote after schema and dependency validation; then claim the isolated worktree and implement the AR-0814 certificate issuance and chain-validation successor. | asb_ar1024_lifecycle_router |
+| P1 | [AR-1288](tasks/AR-1288-certificate-chain-authz.md): Runtime certificate issuance and chain validation | Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814. | Baseline asb-control library passes 51/51 on clean protected-main worktree. Map existing auth identity/pairing APIs, then implement certificate issuance/chain validation with focused positive/negative tests; maintain signed checkpoints. | asb_ar1024_lifecycle_router |
 
 ## Open
 
