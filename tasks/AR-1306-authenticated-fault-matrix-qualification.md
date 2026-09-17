@@ -8,7 +8,7 @@
     "AR-1287"
   ],
   "id": "AR-1306",
-  "next_action": "Repair diff is 40 lines on top of 910af9a: fault matrix invokes the real runtime-owned StrictReplayService parity test before fault cases, and provider/descendant cases assert curl exit 7 markers with bounded timeout. Focused matrix test now passes. Run full locked workspace gates, inspect diff, commit signed+DCO, force-with-lease update PR #222, and rerun exact-head CI.",
+  "next_action": "Repair commit 1ab79c1 is signed/DCO and pushed to PR #222. Focused matrix, full locked workspace tests, fmt, clippy and docs pass. Release build handoff failed only with coordinator LOCK_TIMEOUT after 10s due concurrent AR-1293 reconciliation; retry build after lock clears, then monitor refreshed exact-head CI.",
   "observed_branch": "feature/ar-1306-authenticated-fault-matrix-qualification",
   "observed_dirty": 0,
   "observed_head": "1ab79c1faaff483bd419ca4d2d184201b8335566",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T22:06:04+00:00",
+  "updated_at": "2026-09-17T22:06:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
@@ -240,3 +240,7 @@ publication, independent review, green exact-head CI, protected merge and post-m
 
 - 2026-09-17T22:06:04+00:00: Recorded command exit 0; command argv SHA-256
   1024fc1e6cefa31b078f0b5d2ed85c7ea4586897b388bf1e308f62db58574461.
+
+- 2026-09-17T22:06:45+00:00: Recorded final repair gates: focused fault matrix 1/1 and full
+  workspace test pass; fmt/clippy/docs pass. Release build command reached coordinator lock timeout,
+  not a product/build failure; concurrent AR-1293 handoff remains active.
