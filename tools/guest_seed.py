@@ -58,6 +58,7 @@ runcmd:
   - [chown, -R, 1000:1000, /mnt/asb-data/state]
   - [mkdir, -p, /mnt/asb-data/tmp, /mnt/asb-data/evidence]
   - [chmod, "1777", /mnt/asb-data/tmp]
+  - [chmod, "1777", /tmp]
   - [systemctl, start, user-runtime-dir@1000.service]
   - [systemctl, start, user@1000.service]
   - [runuser, -u, asb, --, env, XDG_RUNTIME_DIR=/run/user/1000, DBUS_SESSION_BUS_ADDRESS=unix:path={BUS}, systemctl, --user, start, dbus.service]
