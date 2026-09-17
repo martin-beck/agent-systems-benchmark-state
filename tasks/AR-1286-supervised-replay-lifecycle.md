@@ -13,17 +13,17 @@
   "id": "AR-1286",
   "next_action": "Signed clean head 7830724 wires runtime-owned backend/context consumption into CLI replay; cargo test -p asb-runtime and -p asb-cli --locked pass (runtime 50 unit, 3 binary, 8 process, 11 sandbox, 16 scheduler, 2 doctests; CLI 71 unit, 12 capability, 3 e2e, 4 guides, 2 setup, 4 TUI, 3 workflow). Next add qualified positive child plus cancellation/timeout/crash/restart/cleanup and egress fixtures.",
   "observed_branch": "feature/ar-1286-supervised-replay-lifecycle",
-  "observed_dirty": 1,
-  "observed_head": "78307246832bf0f316070a91fdaa7767f7e29e09",
+  "observed_dirty": 0,
+  "observed_head": "d8064117cdebd2d1fa84cd4e65469cc802e6d281",
   "owner": "asb_ar1286_supervised_replay_lifecycle",
   "plan": "../plans/AR-1286.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 39,
+  "task_revision": 40,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-17T02:30:23+00:00",
+  "updated_at": "2026-09-17T02:30:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
