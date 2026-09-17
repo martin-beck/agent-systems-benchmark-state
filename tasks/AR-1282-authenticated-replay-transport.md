@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Land the authenticated runtime-to-CLI replay transport foundation.",
-  "task_revision": 8,
+  "task_revision": 9,
   "title": "Authenticated replay transport foundation",
-  "updated_at": "2026-09-17T00:24:13+00:00",
+  "updated_at": "2026-09-17T00:24:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1282-authenticated-replay-transport"
 }
 ---
@@ -44,3 +44,6 @@ claim primary command execution.
 
 - 2026-09-17T00:24:13+00:00: Recorded command exit 1; command argv SHA-256
   3a2e809ed301010af75e5e60bb01f99af1b936d6f90af77edcf77144fdda7570.
+
+- 2026-09-17T00:24:28+00:00: Recorded command exit 101; command argv SHA-256
+  4f2a426711f0499ee5d88bf80c2248980af4457800c4dd6d0d513b7de0e42361.
