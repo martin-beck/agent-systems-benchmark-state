@@ -9,7 +9,7 @@
     "AR-1239"
   ],
   "id": "AR-1282",
-  "next_action": "Independent exact-head re-review requested for signed a455d5e; public issuer-client path, arbitrary path/generation rejection, and stale-peer transport negatives pass. Full locked gates remain green; scope is bounded core/runtime transport only.",
+  "next_action": "Monitor PR #208 exact head a455d5ea09b2 against base 69e8b064d312; all required hosted checks are running. Do not merge until terminal green and independent approval remains recorded.",
   "observed_branch": "feature/ar-1282-authenticated-replay-transport",
   "observed_dirty": 0,
   "observed_head": "a455d5ea09b23addf3e75def2d08d101cfa1ea96",
@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Land the authenticated runtime-to-CLI replay transport foundation.",
-  "task_revision": 66,
+  "task_revision": 67,
   "title": "Authenticated replay transport foundation",
-  "updated_at": "2026-09-17T00:42:45+00:00",
+  "updated_at": "2026-09-17T00:43:11+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1282-authenticated-replay-transport"
 }
 ---
@@ -214,3 +214,10 @@ claim primary command execution.
 
 - 2026-09-17T00:42:45+00:00: Recorded command exit 0; command argv SHA-256
   206250bc2dffe4e94692fc3432ba0e6dd1688b336b14fa57e9701bfe0e0de999.
+
+- 2026-09-17T00:43:11+00:00: Published PR #208 from the exact clean product worktree via handoffctl.
+  Immutable PR identity: base 69e8b064d3121a4bae1f672cdae9c0c8672000bc, head
+  a455d5ea09b23addf3e75def2d08d101cfa1ea96, mergeable. Hosted runs started: AArch64 35167664458;
+  fault/fuzz 35167664410; formal 35167664432; platform 35167664407; policy 35167664409; Rust
+  35167664404. AWQ 35167664406 and headers 35167664413 already succeeded. Scope remains transport
+  foundation only; no CLI/lifecycle claim.

@@ -1576,7 +1576,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md): Authenticated replay transport foundation | asb_ar1282_core_runtime_transport | Land the authenticated runtime-to-CLI replay transport foundation. | Independent exact-head re-review requested for signed a455d5e; public issuer-client path, arbitrary path/generation rejection, and stale-peer transport negatives pass. Full locked gates remain green; scope is bounded core/runtime transport only. |
+| P0 | [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md): Authenticated replay transport foundation | asb_ar1282_core_runtime_transport | Land the authenticated runtime-to-CLI replay transport foundation. | Monitor PR #208 exact head a455d5ea09b2 against base 69e8b064d312; all required hosted checks are running. Do not merge until terminal green and independent approval remains recorded. |
 
 ### Open (6)
 
@@ -1677,3 +1677,4 @@ flowchart LR
 | P1 | [AR-0864](../tasks/AR-0864-workbuddy-adapter.md): Implement the WorkBuddy contract and capability adapter | Unclaimed | Implement the WorkBuddy contract and capability adapter. | Implement the bounded agent contract, exact provider translation, and capability registration from the pinned protocol; keep live support unclaimed. |
 | P1 | [AR-0865](../tasks/AR-0865-workbuddy-live.md): Qualify pinned WorkBuddy live execution | Unclaimed | Qualify pinned WorkBuddy live execution. | Run the pinned executable against a credential-free loopback provider and prove editing, tools, usage, cancellation, cleanup, and network denial. |
 | P1 | [AR-0866](../tasks/AR-0866-workbuddy-replay.md): Qualify strict WorkBuddy replay | Unclaimed | Qualify strict WorkBuddy replay. | Seal the sanitized live capture and prove strict offline replay, causal parity, malformed-record rejection, and zero external network. |
+| P1 | [AR-0867](../tasks/AR-0867-workbuddy-parity.md): Add WorkBuddy provider parity and support matrix evidence | Unclaimed | Add WorkBuddy provider parity and support matrix evidence. | Extend exact provider parity and the platform support matrix only for executable-qualified WorkBuddy combinations under a serialized shared-path fence. |
