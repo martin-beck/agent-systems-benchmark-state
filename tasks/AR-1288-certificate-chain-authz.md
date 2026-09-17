@@ -9,17 +9,17 @@
   "id": "AR-1288",
   "next_action": "Signed exact head 0e8d7e2 aligns runtime validity with generated schema by rejecting epoch-zero not_before/not_after. Fresh exact-head gates all pass: cargo fmt check, cargo test --offline --locked --workspace, cargo clippy --offline --locked --workspace --all-targets -- -D warnings; certificate tests 7/7 and schema conformance pass. Branch pushed; request final independent review now, then publish only after approval.",
   "observed_branch": "feature/ar-1288-certificate-chain-authz",
-  "observed_dirty": 3,
-  "observed_head": "0e8d7e2b23bde802b7ce793654915e886d6432f4",
+  "observed_dirty": 0,
+  "observed_head": "ddcd51b8a4add9d24e1738c771ead956348e4071",
   "owner": "asb_ar0909_lifecycle_repair",
   "plan": "../plans/AR-1288.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 100,
+  "task_revision": 101,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T03:10:22+00:00",
+  "updated_at": "2026-09-17T03:10:29+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
