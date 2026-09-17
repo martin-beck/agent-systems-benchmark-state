@@ -10,16 +10,16 @@
   "next_action": "Promote after dependency verification; regenerate and verify formal/Cargo.lock so hosted --locked formal tests do not attempt updates.",
   "observed_branch": "feature/ar-1283-formal-lockfile",
   "observed_dirty": 0,
-  "observed_head": "",
+  "observed_head": "69e8b064d3121a4bae1f672cdae9c0c8672000bc",
   "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1283.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair formal workspace lockfile drift that fails the locked CI gate.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Formal lockfile CI drift repair",
-  "updated_at": "2026-09-17T00:47:43+00:00",
+  "updated_at": "2026-09-17T00:47:50+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1283-formal-lockfile"
 }
 ---
