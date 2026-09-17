@@ -85,8 +85,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1283-formal-lockfile` | `feature/ar-1283-formal-lockfile` | `69e8b064d312` | 0 | behind 24, ahead 0 |
 | `agent-systems-benchmark-ar-1284-strict-replay-lifecycle` | `feature/ar-1284-strict-replay-lifecycle` | `f9ddf7ef6b3b` | 0 | behind 16, ahead 0 |
 | `agent-systems-benchmark-ar-1285-runtime-launch-factory` | `feature/ar-1285-runtime-launch-factory` | `0f876c7ae7fd` | 0 | behind 12, ahead 0 |
-| `agent-systems-benchmark-ar-1286-supervised-replay-lifecycle` | `feature/ar-1286-supervised-replay-lifecycle` | `d8064117cdeb` | 1 | behind 11, ahead 4 |
-| changed files | - | - | - | `crates/asb-cli/src/lib.rs` |
+| `agent-systems-benchmark-ar-1286-supervised-replay-lifecycle` | `feature/ar-1286-supervised-replay-lifecycle` | `d8064117cdeb` | 2 | behind 11, ahead 4 |
+| changed files | - | - | - | `crates/asb-cli/src/lib.rs`, `docs/examples/asb-cli-workflow-v1.provenance.json` |
 | `agent-systems-benchmark-ar-1288-certificate-chain-authz` | `feature/ar-1288-certificate-chain-authz` | `7b3ff1d3a874` | 0 | behind 5, ahead 0 |
 | `agent-systems-benchmark-ar-1289-formal-lock-gate` | `fix/ar-1289-formal-lock-gate` | `53981d651645` | 0 | behind 11, ahead 1 |
 | `agent-systems-benchmark-ar-1290-dependabot-dco` | `repair/ar-1290-dependabot-dco` | `418960215134` | 0 | behind 1, ahead 0 |
