@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1286-supervised-replay-lifecycle",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T04:19:17+00:00",
+  "claim_expires": "2026-09-17T04:28:21+00:00",
   "depends_on": [
     "AR-1282",
     "AR-1285",
@@ -13,7 +13,7 @@
   "id": "AR-1286",
   "next_action": "Signed clean head 7830724 wires runtime-owned backend/context consumption into CLI replay; cargo test -p asb-runtime and -p asb-cli --locked pass (runtime 50 unit, 3 binary, 8 process, 11 sandbox, 16 scheduler, 2 doctests; CLI 71 unit, 12 capability, 3 e2e, 4 guides, 2 setup, 4 TUI, 3 workflow). Next add qualified positive child plus cancellation/timeout/crash/restart/cleanup and egress fixtures.",
   "observed_branch": "feature/ar-1286-supervised-replay-lifecycle",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "78307246832bf0f316070a91fdaa7767f7e29e09",
   "owner": "asb_ar1286_supervised_replay_lifecycle",
   "plan": "../plans/AR-1286.md",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 28,
+  "task_revision": 30,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-17T02:27:10+00:00",
+  "updated_at": "2026-09-17T02:28:21+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
@@ -108,3 +108,5 @@ do not touch or claim asb-tui behavior.
   provenance hash mismatch caused by the intentional lib.rs edit; exact source digest was updated in
   docs/examples/asb-cli-workflow-v1.provenance.json and rerun passed. Worktree clean, signed+DCO, no
   asb-tui changes.
+
+- 2026-09-17T02:28:21+00:00: Heartbeat by asb_ar1286_supervised_replay_lifecycle.
