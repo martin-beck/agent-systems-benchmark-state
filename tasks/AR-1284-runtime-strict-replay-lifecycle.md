@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1284-strict-replay-lifecycle",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T03:23:52+00:00",
   "depends_on": [
     "AR-1282",
     "AR-1237",
@@ -14,15 +14,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1284.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Connect authenticated replay transport to the runtime-owned primary strict-replay lifecycle.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Runtime-owned strict-replay lifecycle execution",
-  "updated_at": "2026-09-17T01:23:41+00:00",
+  "updated_at": "2026-09-17T01:23:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1284-strict-replay-lifecycle"
 }
 ---
@@ -62,3 +62,5 @@ record the exact blocker and split a further dependency-safe successor instead o
 
 - 2026-09-17T01:23:41+00:00: AR-1282 merged; dependencies verified; promote runtime-owned lifecycle
   successor
+
+- 2026-09-17T01:23:52+00:00: Claimed by asb_ar1024_lifecycle_router.
