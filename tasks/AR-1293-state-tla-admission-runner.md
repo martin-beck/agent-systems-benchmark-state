@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T10:54:31+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Approved VM console path is fixed, but pr-publication now fails at JVM startup with native memory allocation error because host swap is exhausted (100 KiB free) and concurrent VM/worker load remains active. Rerun pr-publication/full-exhaustive only on a clean runner with available swap and the known-good guest JVM; do not alter unrelated workloads.",
+  "next_action": "Release ownerless blocked pending a clean approved 32G VM with available swap and fixed guest JVM; AR-1302 may use the clean runner. Preserve candidate f16d2cb41721bf8f17aa5aa75ab01520aeb91eb8 and all focused/full local evidence; do not claim pr-publication or full-exhaustive formal success.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 97,
+  "task_revision": 98,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T10:37:28+00:00",
+  "updated_at": "2026-09-17T10:37:51+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -357,3 +357,10 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T10:37:28+00:00: Recorded command exit 0; command argv SHA-256
   943ccbd8d219e99d60ee4bfc40cca9ab173d1863e08b6522cd7744ae0c9fb186.
+
+- 2026-09-17T10:37:51+00:00: Full state unittest suite completed 144 tests in 28.476s with OK on
+  candidate worktree. Focused 10/10, vendor verification, Ruff, and mypy also passed. Formal
+  pr-publication remains unqualified: mounted JVM failed java.security initialization; guest fixed
+  JVM reached TLC but failed native malloc due host SwapFree=100 kB and concurrent VM load, with no
+  attestation. No safe additional local formal action remains while the approved 32G runner is
+  occupied; preserve evidence for AR-1302.
