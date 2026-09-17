@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**317 ARs tracked** across 7 active status categories.
+**318 ARs tracked** across 7 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 1 |
 | **Open** | Dependency-ready and available to claim | 4 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 44 |
-| **Planned** | Defined work awaiting promotion or dependencies | 58 |
+| **Planned** | Defined work awaiting promotion or dependencies | 59 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 200 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -383,6 +383,7 @@ flowchart LR
         AR_1287["AR-1287 - Blocked"]:::status_blocked
         AR_1288["AR-1288 - In progress"]:::status_in_progress
         AR_1289["AR-1289 - Done"]:::status_done
+        AR_1290["AR-1290 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1267,6 +1268,7 @@ flowchart LR
     AR_1282 --> AR_1285
     AR_1282 --> AR_1286
     AR_1285 --> AR_1286
+    AR_1288 --> AR_1290
     classDef status_in_progress fill:#1565c0,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_open fill:#2e7d32,color:#ffffff,stroke:#263238,stroke-width:2px
     classDef status_blocked fill:#c62828,color:#ffffff,stroke:#263238,stroke-width:2px
@@ -1596,8 +1598,9 @@ flowchart LR
 | [AR-1285](../tasks/AR-1285-runtime-launch-factory.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md) | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md) |
 | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md) | [AR-1237](../tasks/AR-1237-strict-replay-launch-bridge.md), [AR-1238](../tasks/AR-1238-runtime-loopback-supervisor.md), [AR-1239](../tasks/AR-1239-signed-runtime-bundle.md), [AR-1282](../tasks/AR-1282-authenticated-replay-transport.md), [AR-1285](../tasks/AR-1285-runtime-launch-factory.md) | None |
 | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md) | None | None |
-| [AR-1288](../tasks/AR-1288-certificate-chain-authz.md) | [AR-0813](../tasks/AR-0813-remote-control-transport.md) | None |
+| [AR-1288](../tasks/AR-1288-certificate-chain-authz.md) | [AR-0813](../tasks/AR-0813-remote-control-transport.md) | [AR-1290](../tasks/AR-1290-dependabot-dco-boundary-recovery.md) |
 | [AR-1289](../tasks/AR-1289-formal-lock-gate.md) | None | None |
+| [AR-1290](../tasks/AR-1290-dependabot-dco-boundary-recovery.md) | [AR-1288](../tasks/AR-1288-certificate-chain-authz.md) | None |
 
 ## Complete AR inventory
 
@@ -1665,7 +1668,7 @@ flowchart LR
 | P1 | [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md): Execute bundled MockAgents transport in isolation | Unclaimed | Execute bundled MockAgents transport in isolation. | Implement bundled in-container MockAgents transport and digest-pinned arm64 QEMU evidence. |
 | P1 | [AR-1258](../tasks/AR-1258-docker-binfmt-qemu.md): Provision Docker binfmt/QEMU capability | Unclaimed | Provision and verify Docker binfmt/QEMU for multiarch qualification. | Inspect Docker/binfmt/QEMU capability and approved privilege workflow; add bounded verification and rollback-safe checks. |
 
-### Planned (58)
+### Planned (59)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1694,5 +1697,3 @@ flowchart LR
 | P0 | [AR-1215](../tasks/AR-1215-result-comparison.md): Multi-agent result comparison tutorial | Unclaimed | Teach conservative comparison of multiple agents from the same benchmark. | Implement the syntax-checked tutorial for comparing two or more agents on one benchmark definition. |
 | P0 | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md): ASB tutorial freshness CI and documentation qualification | Unclaimed | Continuously keep ASB tutorial commands and steps syntactically current. | Implement the repository-wide tutorial discovery and syntax-freshness CI gate after all tutorial contracts are defined. |
 | P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
-| P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
-| P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
