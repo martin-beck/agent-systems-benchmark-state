@@ -2,7 +2,7 @@
 {
   "branch": "repair/protected-merge-tree-policy",
   "checkpoint_commit": "ef82484fa78dd31c0d7b5ad48e2dc51a93ec1339",
-  "claim_expires": "2026-09-17T10:40:43+00:00",
+  "claim_expires": "2026-09-17T10:44:46+00:00",
   "depends_on": [
     "AR-1200"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Remediate the protected-main merge-tree mismatch from stale-base PR merging.",
-  "task_revision": 33,
+  "task_revision": 34,
   "title": "Protected merge-tree remediation",
-  "updated_at": "2026-09-17T08:40:43+00:00",
+  "updated_at": "2026-09-17T08:44:46+00:00",
   "worktree_key": "agent-systems-benchmark-protected-merge-tree-remediation"
 }
 ---
@@ -114,3 +114,5 @@ current-main requalification; it must not mark the merge usable until policy ass
   404fd802617059c348cce3f213bdaae5324017864914c2fa6175425835f6a81c.
 
 - 2026-09-17T08:40:43+00:00: Heartbeat by codex-ar1226-merge-remediation-20260917.
+
+- 2026-09-17T08:44:46+00:00: Heartbeat by codex-ar1226-merge-remediation-20260917.
