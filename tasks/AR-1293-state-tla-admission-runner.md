@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T20:24:35+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Implement and qualify a distinct full-exhaustive 7200s timeout profile; required PR8 remains 1800s and green. Add schema/attestation/tests/receipt binding, then fresh-run full.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "codex-ar1293-recovery-20260917",
+  "owner": "",
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "open",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 230,
+  "task_revision": 231,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T17:29:21+00:00",
+  "updated_at": "2026-09-17T17:29:31+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -786,3 +786,8 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T17:29:21+00:00: Recorded command exit 0; command argv SHA-256
   c091fc8436a2aab95ae5218a338a64e767d3ab3d8d9b991f7c336cadb2bb1b79.
+
+- 2026-09-17T17:29:31+00:00: Recovered idle worker after timeout-profile diagnosis; private scripts
+  were untracked and no signed implementation had been produced. Preserve required/pr evidence and
+  timeout failure record. Reclaim for active implementation with explicit full-profile timeout,
+  tests, receipt binding, signed commit, review, and fresh run.
