@@ -28,7 +28,7 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35217105959 | `ee34e9778fa3` | pull_request | Repository quality | in_progress:- |
+| 35217105959 | `ee34e9778fa3` | pull_request | Repository quality | completed:failure |
 | 35217105914 | `ee34e9778fa3` | pull_request | Huawei MIT source headers | completed:success |
 | 35217105909 | `ee34e9778fa3` | pull_request | Rust verification | completed:failure |
 | 35217105883 | `ee34e9778fa3` | pull_request | Hosted portability and native qualification | completed:failure |
