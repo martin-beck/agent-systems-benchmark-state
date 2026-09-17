@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1298.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Narrow AR-1297 metadata changes to the exact evidence-backed schema repairs.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Narrow task metadata repair scope",
-  "updated_at": "2026-09-17T00:00:00+00:00",
+  "updated_at": "2026-09-17T05:35:13+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1298-metadata-cleanup"
 }
 ---
@@ -28,3 +28,6 @@ AR-1297 passed all validators but its commit normalized unrelated task files.
 This cleanup owns only restoration of incidental changes and preservation of
 the exact reported schema repairs. It must not rewrite history, weaken schema,
 or touch product, asb-tui, handoffctl, or formal implementation.
+
+- 2026-09-17T05:35:13+00:00: Independent review found incidental task rewrites in AR-1297; narrow
+  scope before finalizing metadata publication.
