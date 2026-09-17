@@ -8,7 +8,7 @@
     "AR-1287"
   ],
   "id": "AR-1306",
-  "next_action": "Repair commit 1ab79c1 is signed/DCO and pushed to PR #222. Focused matrix, full locked workspace tests, fmt, clippy, docs, and release build all pass. Refresh PR #222 exact-head CI for 1ab79c1 and obtain independent approval; do not merge until all checks/review green.",
+  "next_action": "Repair commit 1ab79c1 is signed/DCO and pushed to PR #222. Local focused/full tests, fmt, clippy, docs, and release build pass. Refreshed exact-head CI has 9/12 pass; policy/supply, Rust, and emulated-aarch64 remain pending, with no failures. Await all terminal green checks and independent approval.",
   "observed_branch": "feature/ar-1306-authenticated-fault-matrix-qualification",
   "observed_dirty": 0,
   "observed_head": "1ab79c1faaff483bd419ca4d2d184201b8335566",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 76,
+  "task_revision": 77,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T22:08:30+00:00",
+  "updated_at": "2026-09-17T22:08:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
@@ -260,3 +260,7 @@ publication, independent review, green exact-head CI, protected merge and post-m
 
 - 2026-09-17T22:08:30+00:00: Recorded command exit 8; command argv SHA-256
   70f9830c04f328234bb27442bd2464edd9e1aa80f655ba60d4c71b02409306eb.
+
+- 2026-09-17T22:08:49+00:00: Refreshed PR #222 after repair: exact head 1ab79c1; AWQ, fault, formal
+  Kani/Loom/TLC, headers, platform, fuzz and mutation checks pass. Policy/supply, Rust, and
+  emulated-aarch64 are still running. Merge remains blocked.
