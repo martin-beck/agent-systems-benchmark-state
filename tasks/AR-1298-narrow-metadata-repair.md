@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Narrow AR-1297 metadata changes to the exact evidence-backed schema repairs.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Narrow task metadata repair scope",
-  "updated_at": "2026-09-17T05:36:02+00:00",
+  "updated_at": "2026-09-17T05:36:33+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1298-metadata-cleanup"
 }
 ---
@@ -36,3 +36,6 @@ or touch product, asb-tui, handoffctl, or formal implementation.
 
 - 2026-09-17T05:36:02+00:00: Recorded command exit 0; command argv SHA-256
   4755b81c79c8c3fa0ba3f6c859150436a42939b626baebc3076c10ca774040b4.
+
+- 2026-09-17T05:36:33+00:00: Recorded command exit 0; command argv SHA-256
+  c0e0742c558335d140db75756ca0b79832921d337396da85ba2a5660214e9851.
