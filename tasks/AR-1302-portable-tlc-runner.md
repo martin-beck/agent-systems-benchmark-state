@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 275,
+  "task_revision": 276,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T11:07:57+00:00",
+  "updated_at": "2026-09-17T11:09:00+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -886,3 +886,7 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   user@1000 ready before cloud-final) or an approved system-scope cgroup launcher accepted by the
   unchanged required attestation; then run exact candidate f16d2cb41 once on a clean 16 GiB+ data
   disk and capture all model outcomes plus attestation. No gate was weakened.
+
+- 2026-09-17T11:09:00+00:00: Concrete image repair: add a boot-enabled systemd unit requiring
+  user-runtime-dir@1000 and starting the asb session bus before cloud-final; then make one clean
+  required full-exhaustive attempt.
