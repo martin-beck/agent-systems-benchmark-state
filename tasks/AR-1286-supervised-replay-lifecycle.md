@@ -14,16 +14,16 @@
   "next_action": "Await approved delegated namespace runner; then add cancellation, timeout, crash, restart and egress lifecycle fixtures.",
   "observed_branch": "feature/ar-1286-supervised-replay-lifecycle",
   "observed_dirty": 0,
-  "observed_head": "08969ece9f3a26d0fd8f7e20c739c025befd986e",
+  "observed_head": "eaf7fcbf42aee720a208d9d356a163d42ce30fab",
   "owner": "codex-ar1286-repair",
   "plan": "../plans/AR-1286.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 67,
+  "task_revision": 68,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-17T06:05:39+00:00",
+  "updated_at": "2026-09-17T06:05:47+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
