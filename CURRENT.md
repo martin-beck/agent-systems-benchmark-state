@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1302](tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | Provision a clean portable TLC CI/VM runner for state formal admission. | Run a fresh disposable v10 guest as user asb with XDG_RUNTIME_DIR and DBUS_SESSION_BUS_ADDRESS set, TLC_CGROUP_MODE=required, pinned offline JDK/JAR, and capture terminal attestation; then stop stale generic VM 1928184 through handoffctl and record cleanup. | - |
+| P0 | [AR-1302](tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | Provision a clean portable TLC CI/VM runner for state formal admission. | Run a fresh disposable v10 guest as user asb with XDG_RUNTIME_DIR and DBUS_SESSION_BUS_ADDRESS set, TLC_CGROUP_MODE=required, pinned offline JDK/JAR, and capture terminal attestation; then stop stale generic VM 1928184 through handoffctl and record cleanup. | codex-ar1302-diagnosis |
 
 ## Blocked
 

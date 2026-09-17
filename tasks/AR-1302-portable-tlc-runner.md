@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T12:40:57+00:00",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Run a fresh disposable v10 guest as user asb with XDG_RUNTIME_DIR and DBUS_SESSION_BUS_ADDRESS set, TLC_CGROUP_MODE=required, pinned offline JDK/JAR, and capture terminal attestation; then stop stale generic VM 1928184 through handoffctl and record cleanup.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "",
+  "owner": "codex-ar1302-diagnosis",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 305,
+  "task_revision": 306,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:10:54+00:00",
+  "updated_at": "2026-09-17T12:10:57+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -989,3 +989,5 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T12:10:54+00:00: Refreshing stale next_action to the final image-level bus activation
   blocker; no rerun.
+
+- 2026-09-17T12:10:57+00:00: Claimed by codex-ar1302-diagnosis.
