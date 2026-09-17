@@ -1640,7 +1640,7 @@ flowchart LR
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1299](../tasks/AR-1299.md): Complete authenticated agent catalog identity metadata | root-ar1299-catalog | Complete authenticated agent catalog signer, provenance, SBOM and license metadata. | Await independent exact-head review and all hosted PR #213 checks at b9edf44; do not merge or close issue #164 until both pass. |
-| P0 | [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md): Runtime-to-replay cassette dispatch seam | ar1300_dispatch | Connect runtime-issued cassette operations to the real strict-replay dispatch path. | Wait for new exact-head CI on 0190383; perform independent review and merge only when every required check is green. |
+| P0 | [AR-1300](../tasks/AR-1300-runtime-cassette-dispatch-seam.md): Runtime-to-replay cassette dispatch seam | ar1300_dispatch | Connect runtime-issued cassette operations to the real strict-replay dispatch path. | Continue bounded monitoring of the four pending exact-head checks; if all pass, perform protected merge and post-merge exact-main verification. |
 
 ### Open (1)
 

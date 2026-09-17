@@ -8,7 +8,7 @@
     "AR-1285"
   ],
   "id": "AR-1300",
-  "next_action": "Wait for new exact-head CI on 0190383; perform independent review and merge only when every required check is green.",
+  "next_action": "Continue bounded monitoring of the four pending exact-head checks; if all pass, perform protected merge and post-merge exact-main verification.",
   "observed_branch": "feature/ar-1300-runtime-cassette-dispatch-seam",
   "observed_dirty": 0,
   "observed_head": "019038378726405eaf05a77269b8541d9a81d912",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect runtime-issued cassette operations to the real strict-replay dispatch path.",
-  "task_revision": 72,
+  "task_revision": 73,
   "title": "Runtime-to-replay cassette dispatch seam",
-  "updated_at": "2026-09-17T07:32:34+00:00",
+  "updated_at": "2026-09-17T07:32:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1300-runtime-cassette-dispatch-seam"
 }
 ---
@@ -251,3 +251,9 @@ fixtures/tests. Do not modify asb-tui or coordinator implementation.
   8d51c1a8224c0865fa00e2b7ce60899a553f9c37ff5586fb52271da60170496c.
 
 - 2026-09-17T07:32:34+00:00: Heartbeat by ar1300_dispatch.
+
+- 2026-09-17T07:32:37+00:00: Exact-head PR #217 at 0190383 now has headers, AWQ, fuzz, Kani,
+  mutation, platform, retained faults, and Loom checks SUCCESS. Rust, formal aggregate,
+  emulated-aarch64, and policy/coverage/supply checks remain pending. Independent local review
+  confirms both topic commits are SSH-signed+DCO, repository policy passes, worktree is clean, and
+  the branch is based on protected origin/main c1b1860.
