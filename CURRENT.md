@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1292](tasks/AR-1292-tla-provenance-repair.md): Pinned TLA+ artifact provenance repair | Repair or formally retain the pinned TLA+ artifact provenance mismatch blocking formal assurance. | Audit the pinned TLA+ v1.8.0 asset provenance and decide whether a minimal hash-bound fixture update is independently justified; otherwise retain the fail-closed blocker. | - |
+| P0 | [AR-1292](tasks/AR-1292-tla-provenance-repair.md): Pinned TLA+ artifact provenance repair | Repair or formally retain the pinned TLA+ artifact provenance mismatch blocking formal assurance. | Audit the pinned TLA+ v1.8.0 asset provenance and decide whether a minimal hash-bound fixture update is independently justified; otherwise retain the fail-closed blocker. | asb_ar1292_tla_provenance |
 
 ## Blocked
 

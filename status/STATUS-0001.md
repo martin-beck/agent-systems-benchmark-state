@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 46 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -385,7 +385,7 @@ flowchart LR
         AR_1289["AR-1289 - Done"]:::status_done
         AR_1290["AR-1290 - Done"]:::status_done
         AR_1291["AR-1291 - Done"]:::status_done
-        AR_1292["AR-1292 - Open"]:::status_open
+        AR_1292["AR-1292 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1607,11 +1607,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1292](../tasks/AR-1292-tla-provenance-repair.md): Pinned TLA+ artifact provenance repair | Unclaimed | Repair or formally retain the pinned TLA+ artifact provenance mismatch blocking formal assurance. | Audit the pinned TLA+ v1.8.0 asset provenance and decide whether a minimal hash-bound fixture update is independently justified; otherwise retain the fail-closed blocker. |
+| P0 | [AR-1292](../tasks/AR-1292-tla-provenance-repair.md): Pinned TLA+ artifact provenance repair | asb_ar1292_tla_provenance | Repair or formally retain the pinned TLA+ artifact provenance mismatch blocking formal assurance. | Audit the pinned TLA+ v1.8.0 asset provenance and decide whether a minimal hash-bound fixture update is independently justified; otherwise retain the fail-closed blocker. |
 
 ### Blocked (46)
 

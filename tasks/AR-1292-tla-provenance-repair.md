@@ -2,22 +2,22 @@
 {
   "branch": "repair/ar-1292-tla-provenance",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T06:35:18+00:00",
   "depends_on": [],
   "id": "AR-1292",
   "next_action": "Audit the pinned TLA+ v1.8.0 asset provenance and decide whether a minimal hash-bound fixture update is independently justified; otherwise retain the fail-closed blocker.",
   "observed_branch": "repair/ar-1292-tla-provenance",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "asb_ar1292_tla_provenance",
   "plan": "../plans/AR-1292.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair or formally retain the pinned TLA+ artifact provenance mismatch blocking formal assurance.",
-  "task_revision": 2,
+  "task_revision": 3,
   "title": "Pinned TLA+ artifact provenance repair",
-  "updated_at": "2026-09-17T04:34:39+00:00",
+  "updated_at": "2026-09-17T04:35:18+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1292-tla-provenance"
 }
 ---
@@ -32,3 +32,5 @@ verification, alter native-capacity behavior, or touch asb-tui.
 
 - 2026-09-17T04:34:39+00:00: Dependencies are external-provenance scoped; promote independent audit
   without weakening AR-0704 formal gate.
+
+- 2026-09-17T04:35:18+00:00: Claimed by asb_ar1292_tla_provenance.
