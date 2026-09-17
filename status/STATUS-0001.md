@@ -7,14 +7,14 @@
 
 ## Portfolio overview
 
-**322 ARs tracked** across 5 active status categories.
+**323 ARs tracked** across 5 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
 | **In progress** | Claimed work with a live lease | 0 |
 | **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
-| **Planned** | Defined work awaiting promotion or dependencies | 58 |
+| **Planned** | Defined work awaiting promotion or dependencies | 59 |
 | **Future** | Deferred roadmap work | 1 |
 | **Done** | Accepted, integrated, and durably verified | 205 |
 | **Cancelled** | Stopped with a recorded rationale | 0 |
@@ -388,6 +388,7 @@ flowchart LR
         AR_1292["AR-1292 - Blocked"]:::status_blocked
         AR_1293["AR-1293 - Blocked"]:::status_blocked
         AR_1294["AR-1294 - Blocked"]:::status_blocked
+        AR_1295["AR-1295 - Planned"]:::status_planned
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1608,6 +1609,7 @@ flowchart LR
 | [AR-1292](../tasks/AR-1292-tla-provenance-repair.md) | None | None |
 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md) | None | None |
 | [AR-1294](../tasks/AR-1294-state-gate-baseline.md) | None | None |
+| [AR-1295](../tasks/AR-1295-vendor-fixture-v037.md) | None | None |
 
 ## Complete AR inventory
 
@@ -1665,7 +1667,7 @@ flowchart LR
 | P1 | [AR-1256](../tasks/AR-1256-bundled-mockagents-isolation.md): Execute bundled MockAgents transport in isolation | Unclaimed | Execute bundled MockAgents transport in isolation. | Implement bundled in-container MockAgents transport and digest-pinned arm64 QEMU evidence. |
 | P1 | [AR-1258](../tasks/AR-1258-docker-binfmt-qemu.md): Provision Docker binfmt/QEMU capability | Unclaimed | Provision and verify Docker binfmt/QEMU for multiarch qualification. | Inspect Docker/binfmt/QEMU capability and approved privilege workflow; add bounded verification and rollback-safe checks. |
 
-### Planned (58)
+### Planned (59)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
@@ -1693,4 +1695,3 @@ flowchart LR
 | P0 | [AR-1214](../tasks/AR-1214-record-replay.md): LLM response record/replay tutorial | Unclaimed | Teach privacy-safe LLM response recording and strict offline replay. | Implement the syntax-checked record/replay tutorial with synthetic cassette fixtures and no-network CI. |
 | P0 | [AR-1215](../tasks/AR-1215-result-comparison.md): Multi-agent result comparison tutorial | Unclaimed | Teach conservative comparison of multiple agents from the same benchmark. | Implement the syntax-checked tutorial for comparing two or more agents on one benchmark definition. |
 | P0 | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md): ASB tutorial freshness CI and documentation qualification | Unclaimed | Continuously keep ASB tutorial commands and steps syntactically current. | Implement the repository-wide tutorial discovery and syntax-freshness CI gate after all tutorial contracts are defined. |
-| P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |
