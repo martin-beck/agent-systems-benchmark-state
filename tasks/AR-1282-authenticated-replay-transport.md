@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Land the authenticated runtime-to-CLI replay transport foundation.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Authenticated replay transport foundation",
-  "updated_at": "2026-09-17T00:22:15+00:00",
+  "updated_at": "2026-09-17T00:22:24+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1282-authenticated-replay-transport"
 }
 ---
@@ -35,3 +35,6 @@ claim primary command execution.
   bounded authenticated transport foundation as an independently mergeable boundary.
 
 - 2026-09-17T00:22:15+00:00: Claimed by asb_ar1282_core_runtime_transport.
+
+- 2026-09-17T00:22:24+00:00: Recorded command exit 0; command argv SHA-256
+  b4f30c631b9b18d5803d94f0db3eeebf6cfdacefc1f9f23b598838850f9e3bd3.
