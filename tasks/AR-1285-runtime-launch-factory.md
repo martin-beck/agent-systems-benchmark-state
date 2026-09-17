@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-owned launch factory for authenticated strict-replay CLI execution.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Runtime-owned strict-replay launch factory",
-  "updated_at": "2026-09-17T01:49:44+00:00",
+  "updated_at": "2026-09-17T01:49:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1285-runtime-launch-factory"
 }
 ---
@@ -237,3 +237,6 @@ separate successor rather than claiming strict-replay execution.
   workspace clippy, rustdoc, full locked workspace tests pass; formal locked tests pass after one
   isolated Text file busy race (rerun passed); repository policy/signature tests and portability
   manifest validation pass. PR scope excludes supervised cassette lifecycle and asb-tui.
+
+- 2026-09-17T01:49:52+00:00: Recorded command exit 0; command argv SHA-256
+  981c8a0ac8bee9b43044f995879acca58b2f6df2f19507aec8117225dc104ad7.
