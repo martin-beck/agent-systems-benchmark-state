@@ -168,15 +168,12 @@ two-process lifecycle cross-product and cannot produce full release evidence.
 `verify.sh --tier full-exhaustive` runs all six full configurations on the
 scheduled weekly or manually dispatched gate. A release claim requires its
 fresh exact-head full attestation; neither smaller tier substitutes for it.
-The required publication tier remains bounded at 1800 seconds per model; the
-full-exhaustive tier uses its separately attested 7200-second per-model bound
-because the complete lifecycle state space is materially larger.
 
 Each model is executed through `tools/tlc_runner.py`, never directly through
 TLC. The runner uses finite workers (`2`), a `2048m` heap for cgroup-contained
 publication runs, a `512m` heap for hosted smoke, CPU quota (`200%`), process
-limit (`64`), an 1800-second required/publication or 7200-second full-exhaustive per-model
-deadline, and cgroup memory/swap limits (`3G`/`3G`). A canonical host-wide admission lock prevents
+limit (`64`), a 1200-second PR or 6000-second weekly per-model deadline, and
+cgroup memory/swap limits (`3G`/`3G`). A canonical host-wide admission lock prevents
 multiple formal jobs from competing for memory while leaving coordinator worker
 processes and leases untouched. A durable per-job queue record survives caller
 death for stale-job recovery; completed, failed, and canceled outcomes retain

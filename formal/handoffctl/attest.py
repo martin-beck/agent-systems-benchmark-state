@@ -33,15 +33,51 @@ EXPECTED_MODELS = {
 }
 MODEL_SOURCE = {"HandoffctlPR": "Handoffctl"}
 TIER_KEYS = {
-    "models", "exhaustive", "workers", "heap", "memory_max",
-    "swap_max", "address_space_max", "timeout_seconds", "containment",
+    "models",
+    "exhaustive",
+    "workers",
+    "heap",
+    "memory_max",
+    "swap_max",
+    "address_space_max",
+    "timeout_seconds",
+    "containment",
 }
+PROJECT_ROOT = Path("/srv/data/projects")
 
 
 def digest(path: Path) -> str:
     if not path.is_file():
         raise ValueError(f"required evidence file is missing: {path}")
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def git_value(root: Path, *args: str) -> str:
+    """Read one bounded Git identity value without retaining command output."""
+    try:
+        result = subprocess.run(  # noqa: S603
+            ["git", "-C", str(root), *args],  # noqa: S607
+            check=False,
+            stdin=subprocess.DEVNULL,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.DEVNULL,
+            text=True,
+            timeout=5,
+        )
+    except (OSError, subprocess.TimeoutExpired) as error:
+        raise ValueError(f"Git provenance unavailable: {error}") from error
+    value = result.stdout.strip()
+    if result.returncode != 0 or len(value) > 128:
+        raise ValueError("Git provenance command failed or returned oversized output")
+    return value
+
+
+def root_relative(path: Path) -> str:
+    """Return an approved-root-relative path and reject host leakage."""
+    try:
+        return str(path.resolve().relative_to(PROJECT_ROOT))
+    except ValueError as error:
+        raise ValueError("attestation path is outside /srv/data/projects") from error
 
 
 def read_manifest(path: Path) -> dict[str, str]:
@@ -96,9 +132,7 @@ def read_tier_evidence(path: Path) -> dict[str, dict[str, object]]:  # noqa: C90
         if entry["timeout_seconds"] != expected_timeout:
             raise ValueError(f"tier evidence for {tier} has unsupported timeout")
         expected_containment = (
-            "portable-timeout-prlimit"
-            if tier == "portable-smoke"
-            else "systemd-run-user-cgroup"
+            "portable-timeout-prlimit" if tier == "portable-smoke" else "systemd-run-user-cgroup"
         )
         if entry["containment"] != expected_containment:
             raise ValueError(f"tier evidence for {tier} has unsupported containment")
@@ -142,6 +176,11 @@ def main() -> int:  # noqa: C901
     root = Path(__file__).resolve().parents[2]
     try:
         tiers = read_tier_evidence(root / "formal" / "tier-evidence.json")
+        for path in (args.output, args.jar):
+            root_relative(path)
+        output_parent = args.output.resolve().parent
+        output_parent.mkdir(mode=0o700, parents=True, exist_ok=True)
+        output_parent.chmod(0o700)
     except ValueError as error:
         parser.error(str(error))
     evidence = tiers[args.tier]
@@ -163,18 +202,18 @@ def main() -> int:  # noqa: C901
             "tools/tlc_runner.py",
             "formal/handoffctl/attest.py",
             "formal/tier-evidence.json",
+            "formal/handoffctl/tier_profiles.py",
+            "formal/handoffctl/seed_profile.py",
         )
     }
-    commit = subprocess.check_output(
-        ["git", "rev-parse", "HEAD"],  # noqa: S607
-        cwd=root,
-        text=True,
-    ).strip()
-    tree = subprocess.check_output(
-        ["git", "rev-parse", "HEAD^{tree}"],  # noqa: S607
-        cwd=root,
-        text=True,
-    ).strip()
+    try:
+        commit = git_value(root, "rev-parse", "HEAD")
+        tree = git_value(root, "rev-parse", "HEAD^{tree}")
+        runtime_root = root_relative(
+            Path(os.environ.get("TLC_RUNTIME_ROOT", str(PROJECT_ROOT / ".asb-tlc")))
+        )
+    except ValueError as error:
+        parser.error(str(error))
     formal_hash = hashlib.sha256(
         json.dumps({"models": models, "configs": configs}, sort_keys=True).encode()
     ).hexdigest()
@@ -186,6 +225,22 @@ def main() -> int:  # noqa: C901
         "tree": tree,
         "formal_input_sha256": formal_hash,
         "formal_inputs": inputs,
+        "runner_provenance": {
+            "runner_sha256": inputs["tools/tlc_runner.py"],
+            "attest_sha256": inputs["formal/handoffctl/attest.py"],
+            "launcher_sha256": os.environ.get("TLC_LAUNCHER_SHA256", ""),
+            "runtime_root": runtime_root,
+            "command_contract_sha256": hashlib.sha256(
+                json.dumps(
+                    {
+                        "models": sorted(args.models),
+                        "tier": args.tier,
+                        "resource_bounds": evidence,
+                    },
+                    sort_keys=True,
+                ).encode()
+            ).hexdigest(),
+        },
         "models": models,
         "configs": configs,
         "tool_jar_sha256": digest(args.jar),

@@ -9,7 +9,6 @@ if [[ "${1:-}" != "--tier" || ( "${2:-}" != "portable-smoke" && "${2:-}" != "pr-
 fi
 readonly TIER="$2"
 readonly ATTESTATION="${TLC_ATTESTATION_PATH:-${TMPDIR:-/tmp}/handoffctl-${TIER}-attestation.json}"
-readonly TIMEOUT_SECONDS="$(python3 -c 'import sys; sys.path.insert(0, sys.argv[1]); from tier_profiles import timeout_for_tier; print(timeout_for_tier(sys.argv[2]))' "$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)" "${TIER}")"
 
 readonly TLA_VERSION=1.7.4
 readonly TLA_SHA256=936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88
@@ -32,8 +31,7 @@ run_model() {
         --jar "${JAR}" \
         --model "${SPEC_DIR}/${source}.tla" \
         --config "${SPEC_DIR}/${model}.cfg" \
-        --metadir "${TEMP_DIR}/${model}-states" \
-        --timeout-seconds "${TIMEOUT_SECONDS}"
+        --metadir "${TEMP_DIR}/${model}-states"
     printf "%s success\n" "${model}" >> "${MANIFEST}"
 }
 

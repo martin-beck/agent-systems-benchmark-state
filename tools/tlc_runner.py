@@ -7,12 +7,13 @@ from __future__ import annotations
 
 import argparse
 import fcntl
+import hashlib
 import json
 import os
 import shutil
+import signal
 import subprocess
 import sys
-import tempfile
 import time
 import uuid
 from pathlib import Path
@@ -25,15 +26,108 @@ DEFAULT_SWAP_MAX = "3G"
 # distinct from the attested 3G cgroup envelope so JVM native mappings do not
 # consume the physical-memory contract by accident.
 DEFAULT_ADDRESS_SPACE_MAX = "8G"
-_WORKER_ROOT = Path(tempfile.gettempdir()) / (
-    f"agent-workflow-coordinator-tlc-{getattr(os, 'getuid', lambda: 0)()}"
+_WORKER_ROOT = (
+    Path("/srv/data/projects") / ".asb-tlc" / (f"worker-{getattr(os, 'getuid', lambda: 0)()}")
 )
 DEFAULT_QUEUE = str(_WORKER_ROOT / "queue")
 DEFAULT_ADMISSION_LOCK = str(_WORKER_ROOT / "admission.lock")
+COMMAND_GRACE_SECONDS = 10
+GIT_PROVENANCE_TIMEOUT_SECONDS = 5
 
 
 class AdmissionError(RuntimeError):
     """Raised when a TLC job cannot be admitted safely."""
+
+
+def _private_directory(path: Path) -> None:
+    """Create one owner-private directory and reject unsafe existing paths."""
+    path.mkdir(mode=0o700, parents=True, exist_ok=True)
+    path.chmod(0o700)
+    if path.stat().st_uid != os.getuid() or path.stat().st_mode & 0o077:
+        raise AdmissionError(f"private path is not owner-only: {path}")
+
+
+def _digest(path: Path) -> str | None:
+    """Return a bounded-input digest, rejecting links and non-files."""
+    try:
+        if path.is_symlink() or not path.is_file():
+            return None
+        digest = hashlib.sha256()
+        with path.open("rb") as stream:
+            for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+                digest.update(chunk)
+        return digest.hexdigest()
+    except OSError:
+        return None
+
+
+def _git_value(root: Path, *args: str) -> str:
+    """Read one small Git identity value with a finite deadline."""
+    try:
+        result = subprocess.run(  # noqa: S603
+            ["git", "-C", str(root), *args],  # noqa: S607
+            check=False,
+            stdin=subprocess.DEVNULL,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.DEVNULL,
+            text=True,
+            timeout=GIT_PROVENANCE_TIMEOUT_SECONDS,
+        )
+    except (OSError, subprocess.TimeoutExpired) as error:
+        raise AdmissionError(f"Git provenance unavailable: {error}") from error
+    value = result.stdout.strip()
+    if result.returncode != 0 or len(value) > 128:
+        raise AdmissionError("Git provenance command failed or returned oversized output")
+    return value
+
+
+def _provenance(model: Path, jar: Path, config: Path, metadir: Path) -> dict[str, object]:
+    """Build sanitized source, input, runner and artifact provenance."""
+    root = Path(__file__).resolve().parents[1]
+    values: dict[str, object] = {
+        "source_commit": _git_value(root, "rev-parse", "HEAD"),
+        "source_tree": _git_value(root, "rev-parse", "HEAD^{tree}"),
+        "runner_sha256": _digest(Path(__file__)),
+        "model_sha256": _digest(model),
+        "config_sha256": _digest(config),
+        "jar_sha256": _digest(jar),
+        "artifact_path": str(metadir),
+        "model_path": str(model),
+        "config_path": str(config),
+        "jar_path": str(jar),
+    }
+    required = ("runner_sha256", "model_sha256", "config_sha256", "jar_sha256")
+    if any(values[name] is None for name in required):
+        raise AdmissionError("formal input is missing, unreadable, or a symbolic link")
+    return values
+
+
+def _bounded_process(command: list[str], timeout_seconds: int) -> tuple[int, bool]:
+    """Run one argv-only command with bounded output and process-group cleanup."""
+    try:
+        process = subprocess.Popen(  # noqa: S603
+            command,
+            stdin=subprocess.DEVNULL,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            start_new_session=True,
+        )
+    except OSError:
+        raise
+    try:
+        return process.wait(timeout=timeout_seconds), False
+    except subprocess.TimeoutExpired:
+        for sig in (signal.SIGTERM, signal.SIGKILL):
+            try:
+                os.killpg(process.pid, sig)
+            except ProcessLookupError:
+                break
+            try:
+                process.wait(timeout=5 if sig == signal.SIGTERM else 1)
+                break
+            except subprocess.TimeoutExpired:
+                continue
+        return 124, True
 
 
 def _positive_int(value: str, name: str) -> int:
@@ -220,14 +314,21 @@ def _memory_bytes(value: str) -> int:
 def run(args: argparse.Namespace) -> int:
     """Queue, admit, execute, and durably classify one TLC model."""
     queue = Path(args.queue).resolve()
-    queue.mkdir(mode=0o700, parents=True, exist_ok=True)
+    _private_directory(queue)
     _prune_stale(queue)
     job = queue / f"{os.getpid()}-{uuid.uuid4().hex}.job.json"
     outcome = job.with_name(job.name.replace(".job.json", ".outcome.json"))
     lock_path = Path(args.admission_lock).resolve()
-    lock_path.parent.mkdir(mode=0o700, parents=True, exist_ok=True)
-    record = {
-        "model": str(args.model),
+    _private_directory(lock_path.parent)
+    model = Path(args.model).resolve()
+    config = Path(args.config).resolve()
+    jar = Path(args.jar).resolve()
+    metadir = Path(args.metadir).resolve()
+    _private_directory(metadir)
+    provenance = _provenance(model, jar, config, metadir)
+    record: dict[str, object] = {
+        "schema_version": 1,
+        "model": str(model),
         "pid": os.getpid(),
         "state": "queued",
         "created": time.time(),
@@ -236,6 +337,11 @@ def run(args: argparse.Namespace) -> int:
         "memory_max": args.memory_max,
         "swap_max": args.swap_max,
         "address_space_max": args.address_space_max,
+        "queue_path": str(queue),
+        "admission_lock": str(lock_path),
+        "timeout_seconds": args.timeout_seconds,
+        "containment": args.cgroup_mode,
+        "provenance": provenance,
     }
     job.write_text(json.dumps(record, sort_keys=True) + "\n", encoding="utf-8")
     try:
@@ -258,8 +364,17 @@ def run(args: argparse.Namespace) -> int:
             fcntl.flock(lock, fcntl.LOCK_EX)
             record["state"] = "running"
             job.write_text(json.dumps(record, sort_keys=True) + "\n", encoding="utf-8")
-            exit_code = subprocess.run(command, check=False).returncode  # noqa: S603
-            record.update({"ended": time.time(), "state": "completed", "exit_code": exit_code})
+            exit_code, timed_out = _bounded_process(
+                command, args.timeout_seconds + COMMAND_GRACE_SECONDS
+            )
+            record.update(
+                {
+                    "ended": time.time(),
+                    "state": "timed_out" if timed_out else "completed",
+                    "exit_code": exit_code,
+                    "classification": "timeout" if timed_out else "exit",
+                }
+            )
             outcome.write_text(json.dumps(record, sort_keys=True) + "\n", encoding="utf-8")
             return exit_code
     except KeyboardInterrupt:

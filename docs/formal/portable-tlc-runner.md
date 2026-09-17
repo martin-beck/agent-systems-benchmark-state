@@ -10,3 +10,18 @@ The 8 GiB address-space limit is bounded and is recorded as
 replacement for the physical/swap limits, and lowering or removing either
 bound is invalid. A requested address-space limit at or below the JVM heap is
 rejected before admission.
+
+The runner's default queue, admission lock, temporary model state and
+attestation roots are owner-private directories below
+`/srv/data/projects/.asb-tlc`; callers cannot redirect the runtime root or
+attestation outside that approved project root. Every TLC process is started
+without a shell, with output sent to bounded sinks rather than retained in
+evidence, and has a finite deadline plus process-group teardown. Each durable
+outcome binds the reviewed source commit/tree, runner and input digests,
+effective profile, queue/lock/artifact paths, and exit classification.
+
+`portable-smoke` is the only tier allowed to use `timeout`/`prlimit`; required
+publication and exhaustive tiers continue to require the canonical
+`systemd-run --user` cgroup boundary. All tiers use the exact profiles in
+`formal/tier-evidence.json` and execute through `verify.sh` and
+`tools/tlc_runner.py`, never by invoking TLC directly from a helper.

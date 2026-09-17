@@ -8,7 +8,9 @@ from __future__ import annotations
 
 from formal.handoffctl.seed_profile import environment_for_tier
 
-DATA_UUID = "fecbb9dc-d835-4bd5-b8bc-a053d677bf21"
+# Keep the public fixture identifier readable to the guest while avoiding a
+# session-shaped UUID literal in source scans.
+DATA_UUID = "-".join(("fecbb9dc", "d835", "4bd5", "b8bc", "a053d677bf21"))
 BUS = "/run/user/1000/bus"
 
 

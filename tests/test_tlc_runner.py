@@ -8,9 +8,9 @@ from __future__ import annotations
 import importlib.util
 import json
 import os
+import subprocess
 import sys
 import tempfile
-import subprocess
 import unittest
 from argparse import Namespace
 from pathlib import Path
@@ -57,10 +57,12 @@ class TlcRunnerTests(unittest.TestCase):
         workflow = (ROOT / ".github" / "workflows" / "handoffctl-formal.yml").read_text(
             encoding="utf-8"
         )
-        self.assertIn("run: formal/handoffctl/verify.sh --tier full-exhaustive", workflow)
+        self.assertIn("run: uv run python tools/run_formal_tier.py --tier full-exhaustive", workflow)
         verify = (ROOT / "formal" / "handoffctl" / "verify.sh").read_text(encoding="utf-8")
-        self.assertIn("--timeout-seconds", verify)
-        self.assertIn("timeout_for_tier", verify)
+        launcher = (ROOT / "tools" / "run_formal_tier.py").read_text(encoding="utf-8")
+        self.assertIn("TLC_TIMEOUT_SECONDS", launcher)
+        self.assertIn("timeout_for_tier", launcher)
+        self.assertNotIn("--timeout-seconds", verify)
 
     def test_pr_tier_has_one_process_contract_fixture(self) -> None:
         config = (ROOT / "formal" / "handoffctl" / "HandoffctlPR.cfg").read_text(encoding="utf-8")
@@ -130,6 +132,66 @@ class TlcRunnerTests(unittest.TestCase):
         self.assertIn(f"--as={8 * 1024**3}:{8 * 1024**3}", command)
         self.assertNotIn(f"--as={3 * 1024**3}:{3 * 1024**3}", command)
 
+    def test_default_admission_paths_are_on_second_disk(self) -> None:
+        self.assertTrue(Path(RUNNER.DEFAULT_QUEUE).is_relative_to(Path("/srv/data/projects")))
+        self.assertTrue(
+            Path(RUNNER.DEFAULT_ADMISSION_LOCK).is_relative_to(Path("/srv/data/projects"))
+        )
+
+    def test_bounded_process_kills_the_process_group_after_deadline(self) -> None:
+        process = mock.Mock(pid=1234)
+        process.wait.side_effect = [subprocess.TimeoutExpired(["fixture"], 1), None]
+        with (
+            mock.patch.object(RUNNER.subprocess, "Popen", return_value=process),
+            mock.patch.object(RUNNER.os, "killpg") as killpg,
+        ):
+            result = RUNNER._bounded_process(["fixture"], 1)
+        self.assertEqual(result, (124, True))
+        killpg.assert_called_once_with(1234, RUNNER.signal.SIGTERM)
+
+    def test_run_outcome_binds_inputs_and_artifact_paths(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            queue = root / "queue"
+            jar = root / "jar"
+            model = root / "model"
+            config = root / "config"
+            for path in (jar, model, config):
+                path.write_text("fixture\n", encoding="utf-8")
+            args = Namespace(
+                queue=str(queue),
+                jar=str(jar),
+                model=str(model),
+                config=str(config),
+                metadir=str(root / "meta"),
+                workers=2,
+                heap="2048m",
+                memory_max="3G",
+                swap_max="3G",
+                address_space_max="8G",
+                cpu_quota="200%",
+                tasks_max=64,
+                timeout_seconds=10,
+                cgroup_mode="off",
+                admission_lock=str(root / "admission.lock"),
+            )
+            with (
+                mock.patch.object(RUNNER, "build_command", return_value=["java"]),
+                mock.patch.object(RUNNER, "_bounded_process", return_value=(0, False)),
+            ):
+                self.assertEqual(RUNNER.run(args), 0)
+            outcomes = list(queue.glob("*.outcome.json"))
+            self.assertEqual(len(outcomes), 1)
+            record = json.loads(outcomes[0].read_text(encoding="utf-8"))
+            self.assertEqual(record["schema_version"], 1)
+            source_root = SOURCE.resolve().parents[1]
+            self.assertEqual(
+                record["provenance"]["source_commit"],
+                RUNNER._git_value(source_root, "rev-parse", "HEAD"),
+            )
+            self.assertTrue(record["provenance"]["runner_sha256"])
+            self.assertEqual(record["classification"], "exit")
+
     def test_address_space_cannot_be_smaller_than_heap(self) -> None:
         with self.assertRaisesRegex(RUNNER.AdmissionError, "address-space limit"):
             RUNNER.build_command(
@@ -170,11 +232,16 @@ class TlcRunnerTests(unittest.TestCase):
     def test_run_records_cancellation_and_removes_queue_entry(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             queue = Path(directory) / "queue"
+            jar = Path(directory) / "jar"
+            model = Path(directory) / "model"
+            config = Path(directory) / "config"
+            for path in (jar, model, config):
+                path.write_text("fixture\n", encoding="utf-8")
             args = Namespace(
                 queue=str(queue),
-                jar="jar",
-                model="model",
-                config="config",
+                jar=str(jar),
+                model=str(model),
+                config=str(config),
                 metadir=str(Path(directory) / "meta"),
                 workers=2,
                 heap="2048m",
@@ -189,7 +256,7 @@ class TlcRunnerTests(unittest.TestCase):
             )
             with (
                 mock.patch.object(RUNNER, "build_command", return_value=["java"]),
-                mock.patch.object(RUNNER.subprocess, "run", side_effect=KeyboardInterrupt),
+                mock.patch.object(RUNNER, "_bounded_process", side_effect=KeyboardInterrupt),
                 self.assertRaises(KeyboardInterrupt),
             ):
                 RUNNER.run(args)
@@ -264,7 +331,7 @@ class TlcRunnerTests(unittest.TestCase):
     def test_guest_seed_contains_complete_bounded_bootstrap(self) -> None:
         seed = GUEST.build_user_data("full-exhaustive")
         for contract in (
-            "mount, UUID=fecbb9dc-d835-4bd5-b8bc-a053d677bf21",
+            "mount, UUID=" + GUEST.DATA_UUID,
             "/usr/local/libexec/asb-offline/curl",
             "cp /mnt/asb-data/tla2tools.jar",
             "user-runtime-dir@1000.service",
@@ -287,7 +354,12 @@ class TlcRunnerTests(unittest.TestCase):
 
     def test_guest_seed_normal_import_renders(self) -> None:
         completed = subprocess.run(
-            [sys.executable, "-c", "from tools.guest_seed import build_user_data; print(build_user_data('full-exhaustive'))"],
+            [
+                sys.executable,
+                "-c",
+                "from tools.guest_seed import build_user_data; "
+                "print(build_user_data('full-exhaustive'))",
+            ],
             cwd=ROOT,
             check=True,
             capture_output=True,

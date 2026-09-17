@@ -68,7 +68,7 @@ jobs:
         run: uv sync --locked --only-group quality
 
       - name: Check exhaustive concurrent-state model
-        run: formal/handoffctl/verify.sh --tier full-exhaustive
+        run: uv run python tools/run_formal_tier.py --tier full-exhaustive
 
       - name: Check implementation refinement and fault behavior
         run: uv run python -m unittest discover -s tests -p 'test_*.py'
