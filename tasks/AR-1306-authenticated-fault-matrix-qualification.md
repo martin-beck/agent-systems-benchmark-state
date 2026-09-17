@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 38,
+  "task_revision": 39,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T21:54:32+00:00",
+  "updated_at": "2026-09-17T21:55:58+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
@@ -150,3 +150,6 @@ publication, independent review, green exact-head CI, protected merge and post-m
   existing separate positive test does not bind matrix cases. Provider/descendant egress cases only
   assert nonzero exit, so unrelated failure could satisfy them. All 12 hosted checks are green, but
   this is a substantive acceptance gap; do not merge.
+
+- 2026-09-17T21:55:58+00:00: Recorded command exit 2; command argv SHA-256
+  48458d4adcbc2714c4ae60f17ec39d916357031118af6e75d9a5cd826c73f20e.
