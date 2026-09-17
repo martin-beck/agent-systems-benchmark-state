@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 147,
+  "task_revision": 148,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T10:03:20+00:00",
+  "updated_at": "2026-09-17T10:04:14+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -475,3 +475,6 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   32 GiB RAM, 16 GiB guest swap, 8 vCPU, no network and no host mounts. Shared VM PR attempt
   correctly failed closed at curl exit 6 because the pinned JAR was not yet staged; no formal pass
   claimed.
+
+- 2026-09-17T10:04:14+00:00: Recorded command exit 0; command argv SHA-256
+  95aa305bd5c8118360ec4549859c1606fe943659dd4f263c36c9fb6c5d124c31.
