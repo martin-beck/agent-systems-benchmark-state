@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 59,
+  "task_revision": 60,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T22:47:13+00:00",
+  "updated_at": "2026-09-17T22:47:45+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -225,3 +225,6 @@ and protected publication sequence.
   passed 29/29. Exit-1 at 22:45:19 was Ruff S108 on the literal canonical /tmp path and is fixed by
   constructed constant; the next exit-2 was an operator-invoked unsupported --check option for
   check_source_headers.py, rerun correctly with --root and passed. No formal VM tier evidence yet.
+
+- 2026-09-17T22:47:45+00:00: Recorded command exit 1; command argv SHA-256
+  ddede10932c90a1e37c2ea38edc09848bcb67e22e857fc0e165252f5808464c8.
