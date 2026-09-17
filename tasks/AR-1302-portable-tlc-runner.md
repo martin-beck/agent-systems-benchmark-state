@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T15:16:14+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Run the exact reviewed f1931686c portable-smoke through the fresh UUID-wired 32G VM/data image and capture terminal attestation; container evidence portable-smoke-address-space.json passed, but VM qualification is still required before pr-publication/full.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "codex-ar1302-requalify-address-space",
+  "owner": "",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 368,
+  "task_revision": 369,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T13:16:14+00:00",
+  "updated_at": "2026-09-17T13:16:32+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1232,3 +1232,9 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   PIDs; HandoffctlBinding exit 0 in 0.818s. This does not qualify the requested UUID-wired VM yet.
 
 - 2026-09-17T13:16:14+00:00: Heartbeat by codex-ar1302-requalify-address-space.
+
+- 2026-09-17T13:16:32+00:00: Container portable-smoke passed in portable-smoke-address-space.json
+  under pinned amd64 Docker containment. VM qualification is blocked: no reusable reviewed
+  UUID-wired VM launch helper exists; only historical private seeds/raw disks remain, so exact
+  f1931686c source/JAR injection cannot safely proceed without stale-disk or overlap risk. No VM
+  attestation, pr-publication, or full-exhaustive claim.
