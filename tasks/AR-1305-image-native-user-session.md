@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1305-image-native-user-session",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T15:52:53+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "codex-ar1305-image-session-20260917",
+  "owner": "",
   "plan": "../plans/AR-1305.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Qualify image-native D-Bus user-session support for required TLC containment.",
-  "task_revision": 47,
+  "task_revision": 48,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-17T15:24:46+00:00",
+  "updated_at": "2026-09-17T15:25:14+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -187,3 +187,10 @@ limits and fail-closed behavior remain unchanged.
 
 - 2026-09-17T15:24:46+00:00: Recorded command exit 0; command argv SHA-256
   e605b43582661bed7222bf274b6708595307dde32ec373d3e7a065b947b7aa42.
+
+- 2026-09-17T15:25:14+00:00: Fresh root copy with global dbus.socket user symlink was built: SHA256
+  00a47726683609b7fef8ea5738fed5a3692fac29377aea99fd9bb57e007aa0eb. QEMU native seed booted and
+  system dbus socket/service were present, but required systemd-run transient still failed Transport
+  endpoint is not connected. No required attestation. This rules out missing dbus.socket symlink as
+  sufficient; next action is image-native user-manager/session environment diagnosis with systemctl
+  --user status and supported dbus-user-session activation.
