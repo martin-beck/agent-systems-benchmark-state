@@ -2,7 +2,7 @@
 {
   "branch": "feature/asb-tui-lifecycle-router",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T06:21:33+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-0820",
     "AR-0821",
@@ -18,15 +18,15 @@
   "observed_branch": "feature/asb-tui-lifecycle-router",
   "observed_dirty": 0,
   "observed_head": "c545c33c8bfedd33fb234ec7f2526447dfe56534",
-  "owner": "asb_ar1024_lifecycle_router",
+  "owner": "",
   "plan": "../plans/AR-1024.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend.",
-  "task_revision": 280,
+  "task_revision": 281,
   "title": "Implement `asb tui` lifecycle routing",
-  "updated_at": "2026-09-17T04:24:21+00:00",
+  "updated_at": "2026-09-17T04:24:41+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-lifecycle-router"
 }
 ---
@@ -808,3 +808,16 @@ complete gates, exact-head CI and post-merge verification.
 
 - 2026-09-17T04:24:14+00:00: Recorded command exit 0; command argv SHA-256
   444e193d1ad53b5330a9fb3d063e317a7d3684a53f5ac652c56db8a79b4bb080.
+
+- 2026-09-17T04:24:41+00:00: Blocked/released ownerless after controlled rebase audit. Declared
+  branch remains clean at signed c545c33 (feat(cli): add trusted TUI lifecycle router), preserved
+  unchanged. Current protected ASB origin/main is c1b1860786e844adb69b8f74e39af290592a89c; c545 is
+  not an ancestor and is 398 commits behind. Rebase stopped with UU lib.rs/provenance and AA
+  tui.rs/lifecycle tests/docs; diff against current main spans 197 paths with broad runtime/API
+  removals and incompatible CLI surfaces, so no safe cherry-pick/rebase exists without
+  reconstructing scope from current main. Latest trusted asb-tui pin is independently available
+  (main 73a8f38904573a4ac6bbfdea63646cb9111a76ea, PR9 merge
+  882c315e7b6eaadac88f0f5949199f8679b4dc88, trusted-main run 35181257567). Required next action:
+  create a fresh ASB-only successor from current protected main, re-audit lifecycle provisioning
+  against current APIs, and regenerate provenance/contract evidence before any PR. No asb-tui source
+  was modified.
