@@ -8,7 +8,7 @@
     "AR-1285"
   ],
   "id": "AR-1300",
-  "next_action": "Run exact-head independent review and hosted PR #217 checks; fix any failures, then merge only after all required checks are green.",
+  "next_action": "Wait for the shared lock, run repository policy with its supported arguments, and continue exact-head review/CI monitoring.",
   "observed_branch": "feature/ar-1300-runtime-cassette-dispatch-seam",
   "observed_dirty": 0,
   "observed_head": "405f68f0a957cf338a7efd958f6162f39729443d",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect runtime-issued cassette operations to the real strict-replay dispatch path.",
-  "task_revision": 48,
+  "task_revision": 49,
   "title": "Runtime-to-replay cassette dispatch seam",
-  "updated_at": "2026-09-17T07:19:57+00:00",
+  "updated_at": "2026-09-17T07:20:36+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1300-runtime-cassette-dispatch-seam"
 }
 ---
@@ -175,3 +175,12 @@ fixtures/tests. Do not modify asb-tui or coordinator implementation.
 
 - 2026-09-17T07:19:57+00:00: Recorded command exit 2; command argv SHA-256
   5097e49ecce8aa5f23d3477a5b7da63377cab7e7a830cbbf760e7e0e11e73e5e.
+
+- 2026-09-17T07:20:36+00:00: 2026-09-17T07:21:00Z checkpoint: two exit-2 records came from
+  coordinator command setup, not product gates. First invoked repository_policy.py relative to the
+  state checkout, so the script was unavailable; second supplied an unsupported --repo option after
+  switching to the absolute product script. No product test failed. A corrected absolute invocation
+  then hit the shared coordinator lock timeout while another state transaction was active; no source
+  mutation occurred. PR #217 remains open/mergeable at signed head 405f68f; hosted required checks
+  are still running, with headers/AWQ already successful. Implementation and local locked gates
+  remain green.
