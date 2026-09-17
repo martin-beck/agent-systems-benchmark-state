@@ -7,7 +7,7 @@
     "AR-0813"
   ],
   "id": "AR-0814",
-  "next_action": "Coordinator must create and link the successor AR for certificate issuance/chain validation and trusted route/ancestor authority; preserve this exact clean head and do not publish/close as fully complete until successor scope and bounded acceptance are recorded.",
+  "next_action": "Create and link a focused successor AR for trusted route/IP and ancestor authority: independently authenticate route/peer binding and ancestor provenance; test wrong-route rejection, route rotation/revocation, and local recovery. AR-1288 certificate issuance/chain validation is complete and merged at signed main 2de393a05cc3c65f3495238abb19408e8218e483. Preserve AR-0814 exact clean head 29cfa19323a0ceb124438854d73f664ae2b86dcc until that successor is complete.",
   "observed_branch": "feature/remote-enrollment-authz",
   "observed_dirty": 0,
   "observed_head": "29cfa19323a0ceb124438854d73f664ae2b86dcc",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles.",
-  "task_revision": 310,
+  "task_revision": 311,
   "title": "Secure remote enrollment and authorization",
-  "updated_at": "2026-09-17T04:03:23+00:00",
+  "updated_at": "2026-09-17T04:03:25+00:00",
   "worktree_key": "agent-systems-benchmark-remote-enrollment-authz"
 }
 ---
@@ -878,3 +878,7 @@ Implementation has not started. Read the linked plan before claiming.
   complete; remaining route/IP and ancestor authority is the sole successor scope.
 
 - 2026-09-17T04:03:23+00:00: Claimed by asb_ar0814_enrollment_authz.
+
+- 2026-09-17T04:03:25+00:00: Corrected stale next action: AR-1288 is no longer pending. Combined
+  acceptance remains blocked only by trusted route/IP and ancestor authority, which is not supplied
+  by AR-1288 endpoint digest binding.

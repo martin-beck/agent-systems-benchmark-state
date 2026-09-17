@@ -8,7 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1290](tasks/AR-1290-dependabot-dco-boundary-recovery.md): Dependabot DCO boundary recovery | Recover protected-main DCO assurance for the immutable Dependabot serde commit without weakening broad policy. | Monitor exact-main post-merge workflows for c1b1860786e844adb69b8f74e39af290592a89c8 to terminal SUCCESS; verify protected main signature/DCO/tree and release AR-1290 done. | asb_ar1024_lifecycle_router |
-| P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Coordinator must create and link the successor AR for certificate issuance/chain validation and trusted route/ancestor authority; preserve this exact clean head and do not publish/close as fully complete until successor scope and bounded acceptance are recorded. | asb_ar0814_enrollment_authz |
+| P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Create and link a focused successor AR for trusted route/IP and ancestor authority: independently authenticate route/peer binding and ancestor provenance; test wrong-route rejection, route rotation/revocation, and local recovery. AR-1288 certificate issuance/chain validation is complete and merged at signed main 2de393a05cc3c65f3495238abb19408e8218e483. Preserve AR-0814 exact clean head 29cfa19323a0ceb124438854d73f664ae2b86dcc until that successor is complete. | asb_ar0814_enrollment_authz |
 
 ## Open
 
