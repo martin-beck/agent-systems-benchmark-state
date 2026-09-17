@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1286-supervised-replay-lifecycle",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T08:00:38+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1282",
     "AR-1285",
@@ -15,15 +15,15 @@
   "observed_branch": "feature/ar-1286-supervised-replay-lifecycle",
   "observed_dirty": 0,
   "observed_head": "08969ece9f3a26d0fd8f7e20c739c025befd986e",
-  "owner": "codex-ar1286-repair",
+  "owner": "",
   "plan": "../plans/AR-1286.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 63,
+  "task_revision": 64,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-17T06:04:09+00:00",
+  "updated_at": "2026-09-17T06:04:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
@@ -209,3 +209,9 @@ do not touch or claim asb-tui behavior.
 
 - 2026-09-17T06:04:09+00:00: Recorded command exit 0; command argv SHA-256
   608b70d9876c923b6f8c0acc28d2bc72c2755d4d5f11c0eacee171a2eb81f791.
+
+- 2026-09-17T06:04:28+00:00: Published successor PR #214 from current main with runtime-owned
+  lifecycle integration and descriptor-backed O_NOFOLLOW replay artifact reads. CLI tests, runtime
+  tests, and clippy pass locally except delegated lifecycle remains unqualified: host bwrap
+  namespace creation fails Resource temporarily unavailable. PR #197/#207 remain open stale
+  predecessors and must not merge independently; requalify #214 on a capable delegated runner.
