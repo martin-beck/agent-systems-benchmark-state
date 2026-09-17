@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 78,
+  "task_revision": 79,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T23:21:30+00:00",
+  "updated_at": "2026-09-17T23:22:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -277,3 +277,6 @@ and protected publication sequence.
   ~52s while package_update/apt and cloud-init logs wrote to the 3.5 GiB root. No formal result or
   attestation. This is runner capacity/input setup, not a model success; next action is fresh 32 GiB
   root plus offline-safe seed.
+
+- 2026-09-17T23:22:03+00:00: Recorded command exit 0; command argv SHA-256
+  8e9817d35b8e2b2da2d0e5af492eb28b1df1fdbd30bc546c8c1070f3cb12868b.
