@@ -10,7 +10,7 @@
     "AR-1239"
   ],
   "id": "AR-1285",
-  "next_action": "Token binding fix is implemented in launch_factory.rs and sandbox.rs; focused launch_factory tests pass 5/5 including mismatched-context rejection. Commit signed/DCO, run locked full gates, force-with-lease push PR #209, then request re-review.",
+  "next_action": "PR #209 exact head 0f876c7 was force-with-lease pushed; wait restarted hosted CI and independent re-review of exact launch-context token binding. Do not merge until all checks/review green.",
   "observed_branch": "feature/ar-1285-runtime-launch-factory",
   "observed_dirty": 0,
   "observed_head": "0f876c7ae7fdfdff240a9fd3ad51e79cddaa4ffe",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-owned launch factory for authenticated strict-replay CLI execution.",
-  "task_revision": 88,
+  "task_revision": 89,
   "title": "Runtime-owned strict-replay launch factory",
-  "updated_at": "2026-09-17T01:58:54+00:00",
+  "updated_at": "2026-09-17T01:59:26+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1285-runtime-launch-factory"
 }
 ---
@@ -294,3 +294,12 @@ separate successor rather than claiming strict-replay execution.
 
 - 2026-09-17T01:58:54+00:00: Recorded command exit 0; command argv SHA-256
   946a0ddc9541d09a6542dc2d0af41ae702775ce7a6d2ebff382f71e73a22f4d0.
+
+- 2026-09-17T01:59:26+00:00: Signed commit 0f876c7 (SSH signature and DCO) binds RuntimeLaunchToken
+  to SHA-256 of full launch context: cassette, full SandboxSpec/debug identity, ProcessLimits,
+  command/args/env, lease class/CPUs, relay handoff, supervisor generation/relay/route and pinned
+  sidecar/adapter/supervisor digests. SandboxBackend attestation now derives the digest from
+  input/lease/cassette. Added issuance_rejects_token_bound_to_another_launch_context; launch_factory
+  focused suite 5/5. Full locked workspace tests pass (all suites; 173/173 primary plus listed
+  integration suites), workspace clippy -D warnings passes. Force-with-lease push updated PR #209
+  from 9fde4d8 to 0f876c7; observed_dirty=0.

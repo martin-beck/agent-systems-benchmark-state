@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1285](tasks/AR-1285-runtime-launch-factory.md): Runtime-owned strict-replay launch factory | Provide a runtime-owned launch factory for authenticated strict-replay CLI execution. | Token binding fix is implemented in launch_factory.rs and sandbox.rs; focused launch_factory tests pass 5/5 including mismatched-context rejection. Commit signed/DCO, run locked full gates, force-with-lease push PR #209, then request re-review. | asb_ar1024_lifecycle_router |
+| P0 | [AR-1285](tasks/AR-1285-runtime-launch-factory.md): Runtime-owned strict-replay launch factory | Provide a runtime-owned launch factory for authenticated strict-replay CLI execution. | PR #209 exact head 0f876c7 was force-with-lease pushed; wait restarted hosted CI and independent re-review of exact launch-context token binding. Do not merge until all checks/review green. | asb_ar1024_lifecycle_router |
 
 ## Open
 
