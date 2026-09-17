@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 82,
+  "task_revision": 83,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T10:24:31+00:00",
+  "updated_at": "2026-09-17T10:25:07+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -298,3 +298,6 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   focused/pr-publication gates remain outstanding.
 
 - 2026-09-17T10:24:31+00:00: Claimed by ar1293_gate_recovery.
+
+- 2026-09-17T10:25:07+00:00: Recorded command exit 0; command argv SHA-256
+  72ef98f03916cc7bdc0191a01b358d681133ffc1a60fd9243117fd17fea58d2b.
