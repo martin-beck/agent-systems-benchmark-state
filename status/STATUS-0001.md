@@ -7,12 +7,12 @@
 
 ## Portfolio overview
 
-**331 ARs tracked** across 7 active status categories.
+**331 ARs tracked** across 6 active status categories.
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 1 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 2 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -398,7 +398,7 @@ flowchart LR
         direction TB
         AR_1300["AR-1300 - Done"]:::status_done
         AR_1301["AR-1301 - Blocked"]:::status_blocked
-        AR_1302["AR-1302 - Open"]:::status_open
+        AR_1302["AR-1302 - In progress"]:::status_in_progress
         AR_1303["AR-1303 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
@@ -1639,17 +1639,12 @@ flowchart LR
 
 ## Complete AR inventory
 
-### In progress (1)
+### In progress (2)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | coordinator_state_cleanup | Provision a clean portable TLC CI/VM runner for state formal admission. | Repair the image unit ordering/activation: require and order After=user@1000.service, use a non-forking Type=simple dbus session daemon with a bounded readiness check on /run/user/1000/bus before cloud-final; then run exactly one clean required full-exhaustive attempt and capture terminal attestation. Do not reuse the stale v10 action or rerun blindly. |
 | P1 | [AR-1303](../tasks/AR-1303-hosted-platform-diagnostics.md): Privacy-safe hosted platform failure diagnostics | ar1303_ci_diagnostics | Add privacy-safe fixed diagnostics for hosted platform evidence failures. | Promote only after confirming AR-1301 remains blocked and no worker owns the hosted platform tooling; then implement fixed privacy-safe failure classifications and tests without weakening the fail-closed gate. |
-
-### Open (1)
-
-| Priority | AR | Owner | Summary | Next action |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | Unclaimed | Provision a clean portable TLC CI/VM runner for state formal admission. | Repair the image unit ordering/activation: require and order After=user@1000.service, use a non-forking Type=simple dbus session daemon with a bounded readiness check on /run/user/1000/bus before cloud-final; then run exactly one clean required full-exhaustive attempt and capture terminal attestation. Do not reuse the stale v10 action or rerun blindly. |
 
 ### Blocked (49)
 

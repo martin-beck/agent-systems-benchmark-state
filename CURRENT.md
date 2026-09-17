@@ -7,13 +7,8 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
+| P0 | [AR-1302](tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | Provision a clean portable TLC CI/VM runner for state formal admission. | Repair the image unit ordering/activation: require and order After=user@1000.service, use a non-forking Type=simple dbus session daemon with a bounded readiness check on /run/user/1000/bus before cloud-final; then run exactly one clean required full-exhaustive attempt and capture terminal attestation. Do not reuse the stale v10 action or rerun blindly. | coordinator_state_cleanup |
 | P1 | [AR-1303](tasks/AR-1303-hosted-platform-diagnostics.md): Privacy-safe hosted platform failure diagnostics | Add privacy-safe fixed diagnostics for hosted platform evidence failures. | Promote only after confirming AR-1301 remains blocked and no worker owns the hosted platform tooling; then implement fixed privacy-safe failure classifications and tests without weakening the fail-closed gate. | ar1303_ci_diagnostics |
-
-## Open
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1302](tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | Provision a clean portable TLC CI/VM runner for state formal admission. | Repair the image unit ordering/activation: require and order After=user@1000.service, use a non-forking Type=simple dbus session daemon with a bounded readiness check on /run/user/1000/bus before cloud-final; then run exactly one clean required full-exhaustive attempt and capture terminal attestation. Do not reuse the stale v10 action or rerun blindly. | - |
 
 ## Blocked
 
