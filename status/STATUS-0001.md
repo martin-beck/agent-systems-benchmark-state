@@ -1649,7 +1649,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | codex-ar1293-timeout-repair-20260917 | Repair the state-repository TLA admission runner and truthful worktree metadata. | Independent exact-head review of signed timeout commits 5d0f8deb3, bcf65ad29, 0190d6678, 2b7ed3732, and 8be1d2f83; only then regenerate and run full seed. |
+| P0 | [AR-1293](../tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | codex-ar1293-timeout-repair-20260917 | Repair the state-repository TLA admission runner and truthful worktree metadata. | Add complete guest-seed contract tests and a tracked launcher invoking build_user_data(tier) directly; commit signed+DCO and request independent exact-head review before fresh full run. |
 
 ### Blocked (50)
 
