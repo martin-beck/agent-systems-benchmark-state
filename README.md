@@ -4,6 +4,8 @@ Public tasks, plans and durable worker state for
 [Agent Systems Benchmark](https://github.com/martin-beck/agent-systems-benchmark).
 
 Read the product's [canonical development process](https://github.com/martin-beck/agent-systems-benchmark/blob/main/docs/DEVELOPMENT.md).
+Project-local merge and post-merge assurance policy is in
+[`docs/COORDINATOR_LOCAL_POLICY.md`](docs/COORDINATOR_LOCAL_POLICY.md).
 Start with the polished [STATUS.md](STATUS.md) portfolio and dependency graph. Use
 [CURRENT.md](CURRENT.md) for the compact operational queue, then read the selected AR and its plan.
 The AR identifier format is retained for compatibility with the reused coordinator.

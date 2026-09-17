@@ -67,17 +67,7 @@ tracked binding.
 3. Run every state-changing product, Git, review or publication command through `run`.
 4. Record each material result immediately; heartbeat before lease expiry.
 5. After interruption, inspect revisions, commits, refs, processes and CI before retrying.
-6. Before merging, require exact-head tests, privacy checks, SSH signature/DCO validation and
-   independent review. Confirm the topic is based on current `main` and that the protected-main
-   merge tree equals the reviewed topic tree; rebase and requalify stale PRs before merging.
-   Merge a ready PR only through the repository's protected merge path; a green PR is not complete
-   until its immutable merge commit is identified.
-7. Immediately after merging, watch every required post-merge assurance workflow for the exact
-   resulting main SHA until each reaches a terminal result. Record workflow names, run IDs,
-   conclusions, and failures or cancellations in the owning task; do not classify a merge as
-   released or usable while post-merge assurance is pending or failed.
-8. Release to `done`, `open`, or `blocked` with the merge and post-merge evidence; reconcile and
-   run the live doctor.
+6. Release to `done`, `open`, or `blocked`; reconcile and run the live doctor.
 
 ```sh
 tools/handoffctl snapshot
