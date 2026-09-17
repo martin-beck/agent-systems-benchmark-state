@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T02:39:29+00:00",
+  "updated_at": "2026-09-17T02:39:55+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
@@ -46,3 +46,6 @@ must not reuse unmerged strict-replay or asb-tui branches.
   6c4940135c92371beee28615245f86edc4d7dae2dad156fadbeaa902b8a810a7.
 
 - 2026-09-17T02:39:29+00:00: Heartbeat by asb_ar1024_lifecycle_router.
+
+- 2026-09-17T02:39:55+00:00: Recorded command exit 0; command argv SHA-256
+  23dc22c9358e3e2c16429023094116bc45a8280a9071b7bcf9ba8d34828cccb8.
