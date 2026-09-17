@@ -7,8 +7,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark` | `main` | `bd7d10d4a760` | 4 | behind 451, ahead 1 |
 | changed files | - | - | - | `docs/QUALITY_GATES.md`, `tools/quality/check_dco.py`, `tools/quality/test_failure_paths.py`, `ProvisionedControlServer` |
 | `agent-systems-benchmark-agent-aider` | `feature/agent-aider` | `da81ead6932c` | 0 | behind 738, ahead 0 |
-| `agent-systems-benchmark-agent-catalog-metadata` | `feature/ar1299-agent-catalog-metadata` | `c1b1860786e8` | 2 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-control/fixtures/v1.4/agent-catalog-response.json`, `crates/asb-control/src/catalog.rs` |
+| `agent-systems-benchmark-agent-catalog-metadata` | `feature/ar1299-agent-catalog-metadata` | `c1b1860786e8` | 5 | behind 0, ahead 0 |
+| changed files | - | - | - | `crates/asb-control/fixtures/v1.4/agent-catalog-response.json`, `crates/asb-control/schema/v1.4/response.schema.json`, `crates/asb-control/schema/v1.5/response.schema.json`, `crates/asb-control/schema/v1.6/response.schema.json`, `crates/asb-control/src/catalog.rs` |
 | `agent-systems-benchmark-agent-codex` | `feature/agent-codex` | `eb03bd9d9ed5` | 0 | behind 726, ahead 0 |
 | `agent-systems-benchmark-agent-gemini` | `feature/agent-gemini` | `d381d340163e` | 0 | behind 722, ahead 0 |
 | `agent-systems-benchmark-agent-goose` | `feature/agent-goose` | `95b3ef8c7830` | 0 | behind 718, ahead 0 |
