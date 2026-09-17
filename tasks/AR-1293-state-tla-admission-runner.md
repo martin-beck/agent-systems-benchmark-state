@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T19:12:14+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Generate fresh seed from 5f3f647b1 and run required launcher against this unheld clean image; inspect /dev/vdb mount/UUID marker, PR result, debugfs attestation commit and receipt.",
+  "next_action": "Copy exact 5f fsck-clean image to a new run path, verify no holder, then rerun required launcher with /dev/vdb seed and inspect serial/attestation.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 408,
+  "task_revision": 409,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T18:43:15+00:00",
+  "updated_at": "2026-09-17T18:44:16+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1378,3 +1378,9 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T18:43:15+00:00: Recorded command exit 1; command argv SHA-256
   6d67283d4b5659108adc55be869d539bdf0bbdc3f8d0d07ea1ccc9fdc0b7c30c.
+
+- 2026-09-17T18:44:16+00:00: Required invocation against exact 5f image did not boot: QEMU reported
+  data image write-lock contention before guest start; serial contains only Failed to get write lock
+  and no mount/PR/attestation. fuser now shows no holder, but image path is treated as contaminated
+  for this attempt. Receipt rejected due failed attestation. Next use a new unheld copy of the
+  fsck-clean exact 5f image and rerun.
