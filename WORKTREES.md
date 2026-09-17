@@ -228,7 +228,8 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-redacted-request-pointer-replay` | `feature/redacted-request-pointer-replay` | `d7492ef5e9ad` | 0 | behind 663, ahead 0 |
 | `agent-systems-benchmark-reliability-fairness` | `feature/reliability-fairness` | `eb28ca7aeae5` | 0 | behind 709, ahead 0 |
 | `agent-systems-benchmark-remote-control-transport` | `feature/remote-control-transport` | `b7d9e142d684` | 0 | behind 33, ahead 0 |
-| `agent-systems-benchmark-remote-enrollment-authz` | `feature/remote-enrollment-authz` | `29cfa19323a0` | 0 | behind 28, ahead 37 |
+| `agent-systems-benchmark-remote-enrollment-authz` | `DETACHED` | `cac258f3e5d2` | 1 | behind 0, ahead 7 |
+| changed files | - | - | - | `docs/examples/asb-cli-workflow-v1.provenance.json` |
 | `agent-systems-benchmark-replay-aider` | `feature/replay-aider` | `ec0a2930690c` | 0 | behind 671, ahead 0 |
 | `agent-systems-benchmark-replay-cassettes` | `feature/replay-cassettes` | `cd88f5703fb3` | 0 | behind 791, ahead 0 |
 | `agent-systems-benchmark-replay-codex` | `feature/replay-codex` | `d086fec11f59` | 0 | behind 661, ahead 0 |
