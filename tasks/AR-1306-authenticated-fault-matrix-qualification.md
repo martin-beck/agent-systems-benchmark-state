@@ -10,7 +10,7 @@
   "id": "AR-1306",
   "next_action": "Independent exact-head native review BLOCKED: ASB_REQUIRE_NATIVE_SANDBOX=1 sandbox_boundary ran 15 tests with 14 passed but native_supervisor_forwards_cassette_http_and_reaps_children failed: authenticated service returned local replay transport failed, supervisor timed out after 10s, child exited 1. Reproduce and repair response path, then rerun complete native matrix and exact-head CI; do not merge. Also replace dynamic bubblewrap selection with an explicit reviewed-version allowlist if not already enforced.",
   "observed_branch": "feature/ar-1306-authenticated-fault-matrix-qualification",
-  "observed_dirty": 0,
+  "observed_dirty": 1,
   "observed_head": "5425bc3891dc9325c4fe455953637e708b851527",
   "owner": "codex-ar1306-auth-listener-20260917",
   "plan": "../plans/AR-1306.md",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 144,
+  "task_revision": 145,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T22:51:27+00:00",
+  "updated_at": "2026-09-17T22:51:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
