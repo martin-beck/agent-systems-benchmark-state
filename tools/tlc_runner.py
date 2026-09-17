@@ -10,6 +10,7 @@ import fcntl
 import hashlib
 import json
 import os
+import re
 import shutil
 import signal
 import subprocess
@@ -124,13 +125,19 @@ def _bounded_process(command: list[str], timeout_seconds: int) -> tuple[int, boo
             command,
             stdin=subprocess.DEVNULL,
             stdout=subprocess.DEVNULL,
-            stderr=subprocess.DEVNULL,
+            stderr=subprocess.PIPE,
             start_new_session=True,
         )
     except OSError:
         raise
     try:
-        return process.wait(timeout=timeout_seconds), False
+        exit_code = process.wait(timeout=timeout_seconds)
+        if exit_code != 0 and process.stderr is not None:
+            detail = process.stderr.read(4096).decode("utf-8", errors="replace").strip()
+            detail = re.sub(r"/(?:srv|tmp)/data/projects[^\s']*", "<approved-runtime-path>", detail)
+            if detail:
+                print(f"TLC child diagnostic: {detail[-1000:]}", file=sys.stderr)
+        return exit_code, False
     except subprocess.TimeoutExpired:
         for sig in (signal.SIGTERM, signal.SIGKILL):
             try:
