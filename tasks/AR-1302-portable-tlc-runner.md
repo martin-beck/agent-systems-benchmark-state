@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 401,
+  "task_revision": 402,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T13:27:29+00:00",
+  "updated_at": "2026-09-17T13:28:01+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1339,3 +1339,6 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   the overlay, builds the bounded offline QEMU argv, runs with a strict timeout, and always cleans
   the run overlay and serial artifact. Six focused tests pass. VM execution and guest
   preflight/attestation remain outstanding.
+
+- 2026-09-17T13:28:01+00:00: Recorded command exit 1; command argv SHA-256
+  94b99e667bf18d7639c2e7952be5b6fdf7c870b6aae811e3b47c1c2709d35950.
