@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1262-runtime-owned-launch-authority",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T06:28:42+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1237",
     "AR-1238",
@@ -13,15 +13,15 @@
   "observed_branch": "feature/ar-1262-runtime-owned-launch-authority",
   "observed_dirty": 0,
   "observed_head": "535149950dc4b0ec1105093092689be146972b50",
-  "owner": "codex-ar1262-pr-audit-20260917",
+  "owner": "",
   "plan": "../plans/AR-1262.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Issue runtime-owned authority for supervised strict-replay execution.",
-  "task_revision": 69,
+  "task_revision": 70,
   "title": "Runtime-owned strict-replay launch authority",
-  "updated_at": "2026-09-17T04:28:42+00:00",
+  "updated_at": "2026-09-17T04:29:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1262-runtime-authority"
 }
 ---
@@ -232,3 +232,18 @@ ownership and bounded lifecycle evidence.
   still open and must be requalified before completion.
 
 - 2026-09-17T04:28:42+00:00: Claimed by codex-ar1262-pr-audit-20260917.
+
+- 2026-09-17T04:29:09+00:00: Audit complete; preserve PR #207 exact head
+  c009185748a486b18ac90416ab78d9f19830740e and do not merge. GitHub commit verification is valid SSH
+  signature with matching Signed-off-by. PR #207 is OPEN, CONFLICTING against current main 69e8b064,
+  has no submitted review approval, and required Policy/Coverage run 35156798177 plus Rust run
+  35156798192 fail at
+  replay_contract::tests::runtime_spawn_rejects_missing_relay_before_child_creation: fixture setup
+  unwraps ToolPin before exercising missing-relay rejection. Other required checks (AWQ shadow,
+  emulated aarch64, retained faults, TLC/Alloy, platform, headers, fuzz, Kani, mutation, Loom)
+  passed. Independent review also finds a substantive acceptance gap not safely repairable inside
+  this AR: replay_plan still fabricates LoopbackSidecar/fresh relay and literal readiness, CLI does
+  not invoke spawn_authorized_replay with a real runtime-issued authority, and no real cassette
+  request/response, provider/descendant egress denial, cancellation/restart/cleanup, timeout/crash
+  or no-fallback lifecycle evidence exists. Requires a reviewed runtime-to-CLI entrypoint/successor
+  that supplies authenticated launch authority before rework; preserve unrelated dirty product tree.
