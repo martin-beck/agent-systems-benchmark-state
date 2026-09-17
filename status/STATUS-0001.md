@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 49 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -398,7 +398,7 @@ flowchart LR
         direction TB
         AR_1300["AR-1300 - Done"]:::status_done
         AR_1301["AR-1301 - Blocked"]:::status_blocked
-        AR_1302["AR-1302 - Open"]:::status_open
+        AR_1302["AR-1302 - In progress"]:::status_in_progress
     end
     AR_0001 --> AR_0002
     AR_0001 --> AR_0003
@@ -1635,11 +1635,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | Unclaimed | Provision a clean portable TLC CI/VM runner for state formal admission. | Repair the image unit ordering/activation: require and order After=user@1000.service, use a non-forking Type=simple dbus session daemon with a bounded readiness check on /run/user/1000/bus before cloud-final; then run exactly one clean required full-exhaustive attempt and capture terminal attestation. Do not reuse the stale v10 action or rerun blindly. |
+| P0 | [AR-1302](../tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | ar1302_image_repair | Provision a clean portable TLC CI/VM runner for state formal admission. | Repair the image unit ordering/activation: require and order After=user@1000.service, use a non-forking Type=simple dbus session daemon with a bounded readiness check on /run/user/1000/bus before cloud-final; then run exactly one clean required full-exhaustive attempt and capture terminal attestation. Do not reuse the stale v10 action or rerun blindly. |
 
 ### Blocked (49)
 
@@ -1723,4 +1723,3 @@ flowchart LR
 | P0 | [AR-1214](../tasks/AR-1214-record-replay.md): LLM response record/replay tutorial | Unclaimed | Teach privacy-safe LLM response recording and strict offline replay. | Implement the syntax-checked record/replay tutorial with synthetic cassette fixtures and no-network CI. |
 | P0 | [AR-1215](../tasks/AR-1215-result-comparison.md): Multi-agent result comparison tutorial | Unclaimed | Teach conservative comparison of multiple agents from the same benchmark. | Implement the syntax-checked tutorial for comparing two or more agents on one benchmark definition. |
 | P0 | [AR-1216](../tasks/AR-1216-tutorial-freshness-ci.md): ASB tutorial freshness CI and documentation qualification | Unclaimed | Continuously keep ASB tutorial commands and steps syntactically current. | Implement the repository-wide tutorial discovery and syntax-freshness CI gate after all tutorial contracts are defined. |
-| P0 | [AR-1227](../tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Unclaimed | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. |

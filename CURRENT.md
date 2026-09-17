@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1302](tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | Provision a clean portable TLC CI/VM runner for state formal admission. | Repair the image unit ordering/activation: require and order After=user@1000.service, use a non-forking Type=simple dbus session daemon with a bounded readiness check on /run/user/1000/bus before cloud-final; then run exactly one clean required full-exhaustive attempt and capture terminal attestation. Do not reuse the stale v10 action or rerun blindly. | - |
+| P0 | [AR-1302](tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | Provision a clean portable TLC CI/VM runner for state formal admission. | Repair the image unit ordering/activation: require and order After=user@1000.service, use a non-forking Type=simple dbus session daemon with a bounded readiness check on /run/user/1000/bus before cloud-final; then run exactly one clean required full-exhaustive attempt and capture terminal attestation. Do not reuse the stale v10 action or rerun blindly. | ar1302_image_repair |
 
 ## Blocked
 

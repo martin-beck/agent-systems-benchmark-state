@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T13:42:45+00:00",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Repair the image unit ordering/activation: require and order After=user@1000.service, use a non-forking Type=simple dbus session daemon with a bounded readiness check on /run/user/1000/bus before cloud-final; then run exactly one clean required full-exhaustive attempt and capture terminal attestation. Do not reuse the stale v10 action or rerun blindly.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "",
+  "owner": "ar1302_image_repair",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 311,
+  "task_revision": 312,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:12:43+00:00",
+  "updated_at": "2026-09-17T12:12:45+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1016,3 +1016,5 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   shows user-runtime-dir@1000 finished, then asb-session-bus.service raced user@1000 and failed.
   Resume for one bounded image repair only: order after user@1000, use Type=simple bus daemon with
   bounded readiness, then one clean full-exhaustive attempt.
+
+- 2026-09-17T12:12:45+00:00: Claimed by ar1302_image_repair.
