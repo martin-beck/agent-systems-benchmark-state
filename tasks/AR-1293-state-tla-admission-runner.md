@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T18:19:32+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Add complete guest-seed contract tests and a tracked launcher invoking build_user_data(tier) directly; commit signed+DCO and request independent exact-head review before fresh full run.",
+  "next_action": "Run source headers/Ruff/mypy/privacy and independent diff review; commit complete guest seed and tests signed+DCO, then request exact-head review before VM.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 258,
+  "task_revision": 259,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T17:49:32+00:00",
+  "updated_at": "2026-09-17T17:49:41+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -885,3 +885,12 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   810f29485e39ca46cfd61b7069906075ec1058aacb2efcbb32502b447a0a26f3.
 
 - 2026-09-17T17:49:32+00:00: Heartbeat by codex-ar1293-timeout-repair-20260917.
+
+- 2026-09-17T17:49:41+00:00: Focused contract work complete in candidate (uncommitted): guest seed
+  now covers pinned UUID mount, offline curl shim, user-runtime/user bus startup and socket
+  assertion, bounded transient properties, tier timeout/profile env, GIT/TMPDIR/attestation paths,
+  evidence validation, cleanup and poweroff. Added positive/negative tests; direct candidate
+  invocation via handoffctl: 20/20 passed. Earlier exit-1/5 records were invalid module/path
+  invocations (tests.test_tlc_runner from state cwd and unittest discover from wrong cwd), not
+  product failures; corrected absolute candidate script command passed. Next run source/quality
+  gates, commit signed+DCO, request independent review.
