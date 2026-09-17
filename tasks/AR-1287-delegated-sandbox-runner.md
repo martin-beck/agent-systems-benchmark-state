@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T04:33:14+00:00",
   "depends_on": [],
   "id": "AR-1287",
-  "next_action": "Read-only runner audit: Docker daemon at /srv/data/projects/docker-awq-run/docker.sock runs rootless-seccomp/cgroupv2 with local amd64 awq-runner image ID e9edc4a58d865bb8de5e1ec29df920d37721204e31b6d31a969d37ac16c028ae. Network-none/read-only/no-mount bounded probe passes, but image has no RepoDigest/signature provenance and no arm64 variant; bwrap namespace capability still needs qualification.",
+  "next_action": "Blocked pending an approved immutable multi-arch runner: local Docker candidate e9edc4a58 has no RepoDigest, labels, source/revision, signature, or arm64 variant; container has no bwrap/systemd-run and no systemd scope. Record exact blocker and release ownerless; do not claim AR-1286 positive lifecycle.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a delegated runner for real strict-replay child lifecycle qualification.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Delegated sandbox runner capability",
-  "updated_at": "2026-09-17T02:34:29+00:00",
+  "updated_at": "2026-09-17T02:36:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1287-delegated-sandbox-runner"
 }
 ---
@@ -40,3 +40,15 @@ lifecycle completion until the actual child and fault fixtures run in the qualif
   --cpus 1 run succeeded; outbound socket failed with OSError, write failed read-only, and Docker
   reported no mounts. This is capability evidence only, not approved provenance. binfmt qemu-aarch64
   is enabled; no pinned arm64 image is locally available. No product/asb-tui mutation.
+
+- 2026-09-17T02:36:35+00:00: 2026-09-17T02:36:00+00:00: Qualification follow-up: docker image
+  inspect awq-runner-v1:python3.13.15 reports Id
+  sha256:e9edc4a58d865bb8de5e1ec29df920d37721204e31b6d31a969d37ac16c028ae, RepoTags only,
+  RepoDigests=[], Config.Labels=null, no User/Entrypoint/Cmd metadata, Architecture amd64, six local
+  rootfs layers, and no source/revision/signature/license provenance. Bounded Docker daemon remains
+  29.7.2 overlay2 cgroupv2 with AppArmor/seccomp/cgroupns security options. In-container probe as
+  uid 0 found bwrap=None, systemd-run=None, /run/systemd/system=false; therefore this image cannot
+  host the required AR-1286 bwrap/systemd-scope contract. Local command inventory found no podman,
+  systemd-nspawn, firecracker, qemu-system-x86_64, or virt-install; user systemd reports degraded.
+  Network-none/read-only/no-mount probe remains only generic Docker evidence, not qualified runner
+  evidence. No product/asb-tui mutation.

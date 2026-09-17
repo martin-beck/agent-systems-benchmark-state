@@ -1600,7 +1600,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md): Delegated sandbox runner capability | asb_ar1287_namespace_runner | Provide a delegated runner for real strict-replay child lifecycle qualification. | Read-only runner audit: Docker daemon at /srv/data/projects/docker-awq-run/docker.sock runs rootless-seccomp/cgroupv2 with local amd64 awq-runner image ID e9edc4a58d865bb8de5e1ec29df920d37721204e31b6d31a969d37ac16c028ae. Network-none/read-only/no-mount bounded probe passes, but image has no RepoDigest/signature provenance and no arm64 variant; bwrap namespace capability still needs qualification. |
+| P0 | [AR-1287](../tasks/AR-1287-delegated-sandbox-runner.md): Delegated sandbox runner capability | asb_ar1287_namespace_runner | Provide a delegated runner for real strict-replay child lifecycle qualification. | Blocked pending an approved immutable multi-arch runner: local Docker candidate e9edc4a58 has no RepoDigest, labels, source/revision, signature, or arm64 variant; container has no bwrap/systemd-run and no systemd scope. Record exact blocker and release ownerless; do not claim AR-1286 positive lifecycle. |
 
 ### Open (6)
 
@@ -1692,3 +1692,4 @@ flowchart LR
 | P1 | [AR-0808](../tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Unclaimed | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. |
 | P1 | [AR-0809](../tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Unclaimed | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. |
 | P1 | [AR-0810](../tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Unclaimed | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project&#x27;s GitHub Pages site. |
+| P1 | [AR-0811](../tasks/AR-0811-documentation-qualification.md): Audit workflow documentation and publication | Unclaimed | Qualify documentation completeness, executability, accessibility, privacy, provenance, and release accuracy. | Independently audit every published workflow against released programs and deployed Pages output. |

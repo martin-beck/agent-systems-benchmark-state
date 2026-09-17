@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1287](tasks/AR-1287-delegated-sandbox-runner.md): Delegated sandbox runner capability | Provide a delegated runner for real strict-replay child lifecycle qualification. | Read-only runner audit: Docker daemon at /srv/data/projects/docker-awq-run/docker.sock runs rootless-seccomp/cgroupv2 with local amd64 awq-runner image ID e9edc4a58d865bb8de5e1ec29df920d37721204e31b6d31a969d37ac16c028ae. Network-none/read-only/no-mount bounded probe passes, but image has no RepoDigest/signature provenance and no arm64 variant; bwrap namespace capability still needs qualification. | asb_ar1287_namespace_runner |
+| P0 | [AR-1287](tasks/AR-1287-delegated-sandbox-runner.md): Delegated sandbox runner capability | Provide a delegated runner for real strict-replay child lifecycle qualification. | Blocked pending an approved immutable multi-arch runner: local Docker candidate e9edc4a58 has no RepoDigest, labels, source/revision, signature, or arm64 variant; container has no bwrap/systemd-run and no systemd scope. Record exact blocker and release ownerless; do not claim AR-1286 positive lifecycle. | asb_ar1287_namespace_runner |
 
 ## Open
 
