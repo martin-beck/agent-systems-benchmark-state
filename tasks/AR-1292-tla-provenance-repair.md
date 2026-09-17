@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair or formally retain the pinned TLA+ artifact provenance mismatch blocking formal assurance.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Pinned TLA+ artifact provenance repair",
-  "updated_at": "2026-09-17T04:36:32+00:00",
+  "updated_at": "2026-09-17T04:36:35+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1292-tla-provenance"
 }
 ---
@@ -36,3 +36,6 @@ verification, alter native-capacity behavior, or touch asb-tui.
 - 2026-09-17T04:35:18+00:00: Claimed by asb_ar1292_tla_provenance.
 
 - 2026-09-17T04:36:32+00:00: Heartbeat by asb_ar1292_tla_provenance.
+
+- 2026-09-17T04:36:35+00:00: Recorded command exit 0; command argv SHA-256
+  146cc60c9b79021ba3ecc84c5e1163b9db4328738be7e71ebdf4f275ec94bb8e.
