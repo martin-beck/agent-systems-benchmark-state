@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1287-delegated-sandbox-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T04:33:14+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1287",
   "next_action": "Blocked pending an approved immutable multi-arch runner: local Docker candidate e9edc4a58 has no RepoDigest, labels, source/revision, signature, or arm64 variant; container has no bwrap/systemd-run and no systemd scope. Record exact blocker and release ownerless; do not claim AR-1286 positive lifecycle.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "asb_ar1287_namespace_runner",
+  "owner": "",
   "plan": "../plans/AR-1287.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provide a delegated runner for real strict-replay child lifecycle qualification.",
-  "task_revision": 5,
+  "task_revision": 6,
   "title": "Delegated sandbox runner capability",
-  "updated_at": "2026-09-17T02:36:35+00:00",
+  "updated_at": "2026-09-17T02:36:49+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1287-delegated-sandbox-runner"
 }
 ---
@@ -52,3 +52,14 @@ lifecycle completion until the actual child and fault fixtures run in the qualif
   systemd-nspawn, firecracker, qemu-system-x86_64, or virt-install; user systemd reports degraded.
   Network-none/read-only/no-mount probe remains only generic Docker evidence, not qualified runner
   evidence. No product/asb-tui mutation.
+
+- 2026-09-17T02:36:49+00:00: 2026-09-17T02:37:00+00:00: Released ownerless blocked after read-only
+  qualification. Exact evidence: local Docker 29.7.2 candidate awq-runner-v1:python3.13.15 Id
+  sha256:e9edc4a58d865bb8de5e1ec29df920d37721204e31b6d31a969d37ac16c028ae is amd64 only,
+  RepoDigests=[] and Config.Labels=null with no source/revision/signature/license provenance;
+  in-container probe has bwrap=None, systemd-run=None, /run/systemd/system=false. Docker
+  network-none/read-only/no-mount and outbound denial are generic capability only. No approved
+  immutable multi-arch image or VM/systemd-nspawn/firecracker/qemu-system runtime is available
+  locally; AR-1286 positive lifecycle remains blocked and must not be claimed. Next action:
+  coordinator provision an approved signed/pinned delegated runner or successor AR; preserve AR-1286
+  fail-closed.
