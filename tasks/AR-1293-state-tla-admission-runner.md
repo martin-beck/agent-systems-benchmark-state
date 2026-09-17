@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T19:58:14+00:00",
+  "claim_expires": "2026-09-17T19:59:27+00:00",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Re-run full-exhaustive with a fresh larger data image copied from accepted PR8 clean image; required evidence is green. The first full attempt failed closed on No space left on device while Handoffctl model state writer persisted, so no full attestation exists.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 214,
+  "task_revision": 215,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T16:58:14+00:00",
+  "updated_at": "2026-09-17T16:59:27+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -746,3 +746,5 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 - 2026-09-17T16:56:53+00:00: Heartbeat by codex-ar1293-recovery-20260917.
 
 - 2026-09-17T16:58:14+00:00: Heartbeat by codex-ar1293-recovery-20260917.
+
+- 2026-09-17T16:59:27+00:00: Heartbeat by codex-ar1293-recovery-20260917.
