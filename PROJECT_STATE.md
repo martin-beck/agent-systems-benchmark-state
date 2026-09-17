@@ -34,7 +34,7 @@ Generated from local Git and GitHub. Do not edit.
 | 35180241228 | `a24f049e2790` | pull_request | Huawei MIT source headers | completed:success |
 | 35180241214 | `a24f049e2790` | pull_request | Repository quality | completed:failure |
 | 35180241211 | `a24f049e2790` | pull_request | Fault assurance | completed:failure |
-| 35180241208 | `a24f049e2790` | pull_request | Rust verification | in_progress:- |
+| 35180241208 | `a24f049e2790` | pull_request | Rust verification | completed:failure |
 | 35180236343 | `ca8cc141edb4` | pull_request | Fault assurance | completed:failure |
 | 35180236302 | `ca8cc141edb4` | pull_request | Emulated aarch64 portability | completed:failure |
 | 35180236289 | `ca8cc141edb4` | pull_request | Rust verification | completed:failure |
