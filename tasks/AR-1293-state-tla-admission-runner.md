@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 89,
+  "task_revision": 90,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T10:32:54+00:00",
+  "updated_at": "2026-09-17T10:33:45+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -326,3 +326,6 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   formal claim is made. Remediation is to use a history-safe noninteractive command (disable history
   expansion before injection or avoid `#!` text entirely) on the approved VM; do not classify this
   as product/model failure.
+
+- 2026-09-17T10:33:45+00:00: Recorded command exit 0; command argv SHA-256
+  780c22a2b0ed7da203ed3b8f44dea500934ec764028fab108351f75816cb3339.
