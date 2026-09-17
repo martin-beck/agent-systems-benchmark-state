@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T17:59:37+00:00",
+  "claim_expires": "2026-09-17T20:30:31+00:00",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Implement and qualify a distinct full-exhaustive 7200s timeout profile; required PR8 remains 1800s and green. Add schema/attestation/tests/receipt binding, then fresh-run full.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 232,
+  "task_revision": 233,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T17:29:37+00:00",
+  "updated_at": "2026-09-17T17:30:31+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -793,3 +793,5 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   tests, receipt binding, signed commit, review, and fresh run.
 
 - 2026-09-17T17:29:37+00:00: Claimed by codex-ar1293-timeout-repair-20260917.
+
+- 2026-09-17T17:30:31+00:00: Heartbeat by codex-ar1293-timeout-repair-20260917.
