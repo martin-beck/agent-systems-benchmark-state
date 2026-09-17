@@ -2,7 +2,7 @@
 {
   "branch": "feature/asb-tui-lifecycle-router",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T06:19:12+00:00",
   "depends_on": [
     "AR-0820",
     "AR-0821",
@@ -18,15 +18,15 @@
   "observed_branch": "feature/asb-tui-lifecycle-router",
   "observed_dirty": 0,
   "observed_head": "c545c33c8bfedd33fb234ec7f2526447dfe56534",
-  "owner": "",
+  "owner": "asb_ar1024_lifecycle_router",
   "plan": "../plans/AR-1024.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend.",
-  "task_revision": 263,
+  "task_revision": 264,
   "title": "Implement `asb tui` lifecycle routing",
-  "updated_at": "2026-09-11T05:28:38+00:00",
+  "updated_at": "2026-09-17T04:19:12+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-lifecycle-router"
 }
 ---
@@ -765,3 +765,5 @@ complete gates, exact-head CI and post-merge verification.
   cleanup, fail-closed setsid/double-fork/no-daemon ownership, regenerated lock/provenance and a
   final asb-tui pin only after exact protected-main trusted-green evidence. Status and owner remain
   unchanged; ASB owns no renderer or frontend application work.
+
+- 2026-09-17T04:19:12+00:00: Claimed by asb_ar1024_lifecycle_router.
