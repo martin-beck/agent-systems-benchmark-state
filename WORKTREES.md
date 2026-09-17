@@ -87,12 +87,11 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `agent-systems-benchmark-ar-1285-runtime-launch-factory` | `feature/ar-1285-runtime-launch-factory` | `0f876c7ae7fd` | 0 | behind 12, ahead 0 |
 | `agent-systems-benchmark-ar-1286-replay-lifecycle-rebased` | `feature/ar-1286-replay-lifecycle-rebased` | `03b1ddc7c9d2` | 0 | behind 0, ahead 7 |
 | `agent-systems-benchmark-ar-1286-supervised-replay-lifecycle` | `feature/ar-1286-supervised-replay-lifecycle` | `eaf7fcbf42ae` | 0 | behind 0, ahead 6 |
-| `agent-systems-benchmark-ar-1287-delegated-sandbox-runner` | `feature/ar-1287-delegated-sandbox-runner` | `afa36923d9cc` | 0 | behind 0, ahead 1 |
+| `agent-systems-benchmark-ar-1287-delegated-sandbox-runner` | `feature/ar-1287-delegated-sandbox-runner` | `dba5f9bb6973` | 0 | behind 0, ahead 2 |
 | `agent-systems-benchmark-ar-1288-certificate-chain-authz` | `feature/ar-1288-certificate-chain-authz` | `7b3ff1d3a874` | 0 | behind 5, ahead 0 |
 | `agent-systems-benchmark-ar-1289-formal-lock-gate` | `fix/ar-1289-formal-lock-gate` | `53981d651645` | 0 | behind 11, ahead 1 |
 | `agent-systems-benchmark-ar-1290-dependabot-dco` | `repair/ar-1290-dependabot-dco` | `418960215134` | 0 | behind 1, ahead 0 |
 | `agent-systems-benchmark-ar-1292-tla-provenance` | `repair/ar-1292-tla-provenance` | `c1b1860786e8` | 0 | behind 0, ahead 0 |
-| `agent-systems-benchmark-ar-1300-runtime-cassette-dispatch-seam` | `feature/ar-1300-runtime-cassette-dispatch-seam` | `bd7d10d4a760` | 0 | behind 451, ahead 1 |
 | `agent-systems-benchmark-ar0319-integration` | `DETACHED` | `559fbcc82523` | 0 | behind 533, ahead 0 |
 | `agent-systems-benchmark-ar0801-documentation-repair` | `fix/ar0801-documentation` | `c0b9e0baf5f4` | 0 | behind 636, ahead 0 |
 | `agent-systems-benchmark-ar0869-merge-repair` | `DETACHED` | `4cad7460065e` | 0 | behind 530, ahead 0 |

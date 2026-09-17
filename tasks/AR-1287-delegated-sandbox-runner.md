@@ -8,16 +8,16 @@
   "next_action": "Await approved signed multi-arch delegated runner; preserve AR-1286 fail-closed lifecycle blocker.",
   "observed_branch": "feature/ar-1287-delegated-sandbox-runner",
   "observed_dirty": 0,
-  "observed_head": "afa36923d9cc3a76313898f91daeadd9b9057d8e",
+  "observed_head": "dba5f9bb6973cbb256695161e83f7a0eee860fb9",
   "owner": "",
   "plan": "../plans/AR-1287.md",
   "priority": "P0",
   "schema_version": 1,
   "status": "blocked",
   "summary": "Provide a delegated runner for real strict-replay child lifecycle qualification.",
-  "task_revision": 7,
+  "task_revision": 8,
   "title": "Delegated sandbox runner capability",
-  "updated_at": "2026-09-17T07:02:29+00:00",
+  "updated_at": "2026-09-17T07:04:04+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1287-delegated-sandbox-runner"
 }
 ---
