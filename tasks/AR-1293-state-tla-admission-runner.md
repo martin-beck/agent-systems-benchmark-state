@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T07:20:59+00:00",
+  "claim_expires": "2026-09-17T07:28:02+00:00",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Run portable-smoke with TLC_CGROUP_MODE=portable on a runner with enough thread capacity, then run pr-publication/full-exhaustive with required containment; publish only after all exact-head gates and independent review are green.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 56,
+  "task_revision": 57,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T06:57:21+00:00",
+  "updated_at": "2026-09-17T06:58:02+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -210,3 +210,5 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   TLC_CGROUP_MODE=portable the JVM fails before TLC with EAGAIN Cannot create VM thread. Candidate
   checkpoint commit 11f53a0d0 records the run. This confirms the remaining blocker is host thread
   admission, not a model failure; CI must supply the tier-specific containment environment.
+
+- 2026-09-17T06:58:02+00:00: Heartbeat by codex-ar1293-recovery-20260917.
