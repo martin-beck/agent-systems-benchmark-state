@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1288-certificate-chain-authz",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T04:44:31+00:00",
   "depends_on": [
     "AR-0813"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "feature/ar-1288-certificate-chain-authz",
   "observed_dirty": 0,
   "observed_head": "2fd90557a4e7be32fab590f47bc501462127c1c1",
-  "owner": "",
+  "owner": "asb_ar0909_lifecycle_repair",
   "plan": "../plans/AR-1288.md",
   "priority": "P1",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 10,
+  "task_revision": 11,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T02:44:08+00:00",
+  "updated_at": "2026-09-17T02:44:31+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
@@ -59,3 +59,5 @@ must not reuse unmerged strict-replay or asb-tui branches.
 
 - 2026-09-17T02:44:08+00:00: Worker stopped after baseline setup without implementation; preserve
   baseline evidence and reopen ownerless for reassignment.
+
+- 2026-09-17T02:44:31+00:00: Claimed by asb_ar0909_lifecycle_repair.
