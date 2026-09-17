@@ -276,8 +276,7 @@ Generated from live Git. Paths are privacy-safe worktree keys.
 | `asb-ar1285-merge` | `DETACHED` | `2fd90557a4e7` | 0 | behind 11, ahead 0 |
 | `asb-ar1289-main-verify` | `DETACHED` | `2de393a05cc3` | 0 | behind 4, ahead 0 |
 | `asb-ar1290-merge` | `DETACHED` | `2de393a05cc3` | 0 | behind 4, ahead 0 |
-| `asb-ar1300-merge` | `DETACHED` | `c1b1860786e8` | 7 | behind 0, ahead 0 |
-| changed files | - | - | - | `crates/asb-cli/src/lib.rs`, `crates/asb-replay/src/lib.rs`, `crates/asb-replay/src/service.rs`, `crates/asb-runtime/src/launch_factory.rs`, `crates/asb-runtime/src/lib.rs`, `crates/asb-runtime/src/transport.rs`, `docs/examples/asb-cli-workflow-v1.provenance.json` |
+| `asb-ar1300-merge` | `DETACHED` | `9263f8310cbf` | 0 | behind 0, ahead 3 |
 | `asb-boundary-hardening` | `DETACHED` | `d32748d0795e` | 0 | behind 314, ahead 0 |
 | `asb-catalog-digest` | `feature/ar1195-catalog-digest` | `0a39815de52c` | 0 | behind 299, ahead 0 |
 | `asb-current-audit-20260914` | `DETACHED` | `817a40bfbd7c` | 0 | behind 311, ahead 0 |
