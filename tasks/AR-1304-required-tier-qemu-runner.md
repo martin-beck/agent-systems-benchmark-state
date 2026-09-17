@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1304-required-tier-qemu-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T16:47:46+00:00",
+  "claim_expires": "",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,15 +11,15 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "codex-ar1304-required-runner-20260917",
+  "owner": "",
   "plan": "../plans/AR-1304.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Create a clean required-containment QEMU runner for formal publication evidence.",
-  "task_revision": 12,
+  "task_revision": 13,
   "title": "Required-tier QEMU user-bus runner",
-  "updated_at": "2026-09-17T14:47:46+00:00",
+  "updated_at": "2026-09-17T14:47:56+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner"
 }
 ---
@@ -68,3 +68,11 @@ logs, or claim full-exhaustive evidence before required attestation is green.
   attestation remain outstanding; full-exhaustive is still gated.
 
 - 2026-09-17T14:47:46+00:00: Heartbeat by codex-ar1304-required-runner-20260917.
+
+- 2026-09-17T14:47:56+00:00: Required launcher contract 48da6f92b is signed and focused-green. A
+  candidate data image ar1293-39c8933f5-data.raw exists, but no reviewed fresh QEMU seed integrates
+  the launcher with a deterministic user D-Bus before cloud-init; existing seed is
+  portable/preflight-only. No required pr-publication attestation or negative guest-bus evidence was
+  produced. Next action: create a fresh seed/service that starts user@1000 and a session bus, run
+  the exact required launcher with all six resource properties, and capture sanitized bus/transient
+  results before retry.
