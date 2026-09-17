@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify image-native D-Bus user-session support for required TLC containment.",
-  "task_revision": 4,
+  "task_revision": 5,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-17T15:07:43+00:00",
+  "updated_at": "2026-09-17T15:07:48+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -39,3 +39,6 @@ limits and fail-closed behavior remain unchanged.
 - 2026-09-17T15:07:01+00:00: Claimed by codex-ar1305-image-session-20260917.
 
 - 2026-09-17T15:07:43+00:00: Heartbeat by codex-ar1305-image-session-20260917.
+
+- 2026-09-17T15:07:48+00:00: Recorded command exit 0; command argv SHA-256
+  ad1ed7ff263a54de81425f1be1569bf15d2356c5b428c57abc1f01328929e8b7.
