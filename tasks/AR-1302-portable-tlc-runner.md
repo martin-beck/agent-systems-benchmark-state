@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T15:45:38+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Use run_lifecycle from signed commit 1fd5e31cf to create a fresh overlay, boot the UUID-serial data disk, run guest UUID/mount preflight, then execute f1931686c portable-smoke and capture sanitized terminal attestation. Do not claim qualification from container evidence.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "codex-ar1302-integrated-run",
+  "owner": "",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 463,
+  "task_revision": 464,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T13:45:38+00:00",
+  "updated_at": "2026-09-17T13:45:41+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1553,3 +1553,9 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   fresh lifecycle.
 
 - 2026-09-17T13:45:38+00:00: Claimed by codex-ar1302-integrated-run.
+
+- 2026-09-17T13:45:41+00:00: Integrated cloud-localds lifecycle booted the receipt-approved prepared
+  root/data under -net none. Guest seed masked wait-online, mounted the reviewed UUID data disk, and
+  wrote PRELIGHT marker confirmed in data/serial evidence. Cleanup completed. Exact f1931686c
+  portable-smoke was not launched because the seed currently powers off after preflight; no
+  attestation exists. Extend seed to run portable-smoke after preflight before poweroff.
