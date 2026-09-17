@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Regenerate seed from corrected guest_seed with recursive state checkout ownership; run project YAML/schema validation, then fresh 32 GiB early-mask QEMU portable-smoke and inspect attestation.",
+  "next_action": "Create unique NoCloud metadata for a fresh exact-head overlay, regenerate schema-valid seed, boot with no NIC/host mounts and early wait-online mask, and verify runcmd executes through portable-smoke attestation/poweroff.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 103,
+  "task_revision": 104,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T23:31:10+00:00",
+  "updated_at": "2026-09-17T23:31:16+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -358,3 +358,8 @@ and protected publication sequence.
   a70f5b6c4b3cd59857b6c2a6f2fda40710f43289be3036848361008be8a4e8c0.
 
 - 2026-09-17T23:31:10+00:00: Heartbeat by codex-ar1307-runner-repair-20260918.
+
+- 2026-09-17T23:31:16+00:00: Classification: schema-valid seed on a fresh 32 GiB overlay reached
+  user@1000 but cloud-init final emitted no runcmd and no receipt; root cause is inherited
+  cloud-init semaphores in the prepared run base. Do not accept this as qualification. Next run uses
+  a unique deterministic instance-id/local-hostname plus a newly created overlay.
