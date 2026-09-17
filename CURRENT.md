@@ -10,6 +10,12 @@ Never edit this file directly.
 | P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Wait for old ada383cea VM termination; then rebuild exact-head fa57625d9 image/seed, run required and independently re-reviewed full gates, validating overlay digest and exact serial markers. | codex-ar1293-timeout-repair-20260917 |
 | P0 | [AR-1306](tasks/AR-1306-authenticated-fault-matrix-qualification.md): Authenticated strict-replay fault-matrix qualification | Qualify the real authenticated strict-replay service and fault matrix missing from PR #221. | PR #222 exact head 910af9a3c380ecf035f839460f3304ccb8159e50 has all 12 hosted checks terminal pass, including emulated-aarch64 (7m47s). Await independent approval/review and coordinator merge authorization; do not merge solely on green CI. | codex-ar1306-auth-listener-20260917 |
 
+## Open
+
+| Priority | Task | Summary | Next action | Owner |
+| --- | --- | --- | --- | --- |
+| P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Independently repair and requalify the portable TLC runner through canonical tlc_runner/verify.sh admission and attestation, with exact AR-1293 tier limits and fresh sanitized evidence. | - |
+
 ## Blocked
 
 | Priority | Task | Summary | Next action | Owner |
@@ -94,7 +100,6 @@ Never edit this file directly.
 | P0 | [AR-1215](tasks/AR-1215-result-comparison.md): Multi-agent result comparison tutorial | Teach conservative comparison of multiple agents from the same benchmark. | Implement the syntax-checked tutorial for comparing two or more agents on one benchmark definition. | - |
 | P0 | [AR-1216](tasks/AR-1216-tutorial-freshness-ci.md): ASB tutorial freshness CI and documentation qualification | Continuously keep ASB tutorial commands and steps syntactically current. | Implement the repository-wide tutorial discovery and syntax-freshness CI gate after all tutorial contracts are defined. | - |
 | P0 | [AR-1227](tasks/AR-1227-authenticated-startup-readiness.md): Authenticated startup-readiness contract | Publish an authenticated, privacy-safe ASB startup-readiness contract for asb-tui. | Complete dependencies, then implement and publish the bounded authenticated readiness schema, producer, fixtures, and compatibility tests. | - |
-| P0 | [AR-1307](tasks/AR-1307-portable-tlc-runner-repair.md): Portable TLC runner repair and qualification | Repair and publish a canonical, bounded portable TLC runner for AR-1293. | Independently repair and requalify the portable TLC runner through canonical tlc_runner/verify.sh admission and attestation, with exact AR-1293 tier limits and fresh sanitized evidence. | - |
 | P1 | [AR-0808](tasks/AR-0808-core-workflow-guides.md): Publish core program workflow guides | Document tested workflows for installing, configuring, running, replaying, comparing, and operating ASB. | Document and execute the qualified CLI setup, reconfiguration, recording, strict-offline and analysis workflows. | - |
 | P1 | [AR-0809](tasks/AR-0809-frontend-workflow-guides.md): Publish terminal frontend workflow guides | Document guided configuration, launch, monitoring, history, repeat, and analysis in the TUI. | Document the exact standalone first-run, provider/auth/model, defaults, recording, offline run and analysis journeys after cross-repository parity passes. | - |
 | P1 | [AR-0810](tasks/AR-0810-github-pages-documentation.md): Publish workflow documentation to GitHub Pages | Publish core and frontend workflows as a searchable, accessible, versioned GitHub Pages site. | Build and publish the versioned workflow documentation on the project's GitHub Pages site. | - |

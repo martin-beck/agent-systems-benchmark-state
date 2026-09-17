@@ -15,11 +15,11 @@
   "plan": "../plans/AR-1307.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "planned",
+  "status": "open",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 1,
+  "task_revision": 2,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T23:55:00+00:00",
+  "updated_at": "2026-09-17T21:53:43+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -42,3 +42,6 @@ and protected publication sequence.
   found AR-1302's runner bypassed canonical admission/attestation and lacked required bounded
   execution, profile alignment, provenance, and clean publication evidence. Depends only on done
   AR-1302 so it can unblock blocked AR-1293 without a dependency cycle.
+
+- 2026-09-17T21:53:43+00:00: Predecessor AR-1302 done; successor repair required by independent
+  audit; dependencies verified.
