@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Narrow AR-1297 metadata changes to the exact evidence-backed schema repairs.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Narrow task metadata repair scope",
-  "updated_at": "2026-09-17T05:35:28+00:00",
+  "updated_at": "2026-09-17T05:36:02+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1298-metadata-cleanup"
 }
 ---
@@ -33,3 +33,6 @@ or touch product, asb-tui, handoffctl, or formal implementation.
   scope before finalizing metadata publication.
 
 - 2026-09-17T05:35:28+00:00: Claimed by asb-ar1298-scope-cleanup.
+
+- 2026-09-17T05:36:02+00:00: Recorded command exit 0; command argv SHA-256
+  4755b81c79c8c3fa0ba3f6c859150436a42939b626baebc3076c10ca774040b4.
