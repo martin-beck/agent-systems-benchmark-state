@@ -1598,7 +1598,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md): Supervised strict-replay cassette lifecycle | asb_ar1286_supervised_replay_lifecycle | Execute strict-replay cassettes through the runtime-owned supervised lifecycle. | Signed head 7830724 now makes CLI replay consume the runtime context and spawn the runtime-owned supervised child; missing backend remains fail-closed. Focused workflow provenance test passes after updating its exact source digest. Next add a runtime-backed positive child and cancellation/timeout/crash/cleanup fixtures. |
+| P0 | [AR-1286](../tasks/AR-1286-supervised-replay-lifecycle.md): Supervised strict-replay cassette lifecycle | asb_ar1286_supervised_replay_lifecycle | Execute strict-replay cassettes through the runtime-owned supervised lifecycle. | Signed clean head 7830724 wires runtime-owned backend/context consumption into CLI replay; cargo test -p asb-runtime and -p asb-cli --locked pass (runtime 50 unit, 3 binary, 8 process, 11 sandbox, 16 scheduler, 2 doctests; CLI 71 unit, 12 capability, 3 e2e, 4 guides, 2 setup, 4 TUI, 3 workflow). Next add qualified positive child plus cancellation/timeout/crash/restart/cleanup and egress fixtures. |
 
 ### Open (6)
 

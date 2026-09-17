@@ -11,7 +11,7 @@
     "AR-1239"
   ],
   "id": "AR-1286",
-  "next_action": "Signed head 7830724 now makes CLI replay consume the runtime context and spawn the runtime-owned supervised child; missing backend remains fail-closed. Focused workflow provenance test passes after updating its exact source digest. Next add a runtime-backed positive child and cancellation/timeout/crash/cleanup fixtures.",
+  "next_action": "Signed clean head 7830724 wires runtime-owned backend/context consumption into CLI replay; cargo test -p asb-runtime and -p asb-cli --locked pass (runtime 50 unit, 3 binary, 8 process, 11 sandbox, 16 scheduler, 2 doctests; CLI 71 unit, 12 capability, 3 e2e, 4 guides, 2 setup, 4 TUI, 3 workflow). Next add qualified positive child plus cancellation/timeout/crash/restart/cleanup and egress fixtures.",
   "observed_branch": "feature/ar-1286-supervised-replay-lifecycle",
   "observed_dirty": 0,
   "observed_head": "78307246832bf0f316070a91fdaa7767f7e29e09",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 27,
+  "task_revision": 28,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-17T02:26:46+00:00",
+  "updated_at": "2026-09-17T02:27:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
@@ -102,3 +102,9 @@ do not touch or claim asb-tui behavior.
 
 - 2026-09-17T02:26:46+00:00: Recorded command exit 0; command argv SHA-256
   2ddd222d5ab3dbbc5824e8367ff0d1151a6168041a569b52fb97c11e3c8515c1.
+
+- 2026-09-17T02:27:10+00:00: Full focused package evidence is green at 7830724; sandbox boundary
+  11/11 and CLI workflow transcript 3/3 pass. The earlier CLI package failure was a deterministic
+  provenance hash mismatch caused by the intentional lib.rs edit; exact source digest was updated in
+  docs/examples/asb-cli-workflow-v1.provenance.json and rerun passed. Worktree clean, signed+DCO, no
+  asb-tui changes.
