@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T18:28:00+00:00",
+  "claim_expires": "2026-09-17T18:28:54+00:00",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Independent exact-head review of f434b4a49 and AR-1304 2b7ed3732/receipt bindings; after green review, run fresh required then full QEMU qualification with complete seed and record attestation.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 288,
+  "task_revision": 289,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T17:58:45+00:00",
+  "updated_at": "2026-09-17T17:58:54+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -985,3 +985,5 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T17:58:45+00:00: Recorded command exit 0; command argv SHA-256
   62d63b577407da3e292eef32fcb031c230bc7a8af67d178ccfc53ed019bc654a.
+
+- 2026-09-17T17:58:54+00:00: Heartbeat by codex-ar1293-timeout-repair-20260917.
