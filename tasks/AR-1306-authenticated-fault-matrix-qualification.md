@@ -8,7 +8,7 @@
     "AR-1287"
   ],
   "id": "AR-1306",
-  "next_action": "Candidate 910af9a is signed+DCO and replaces the fault matrix raw UnixListener with runtime-owned generation-authenticated ReplayRelay; focused native supervisor/replay tests 3/3 and full asb-runtime tests pass. Run complete locked ASB workspace gates and independent review; full acceptance still requires matrix-level real StrictReplayService positive parity and cause-specific egress evidence.",
+  "next_action": "PR #222 is open at exact signed head 910af9a3c380ecf035f839460f3304ccb8159e50. Exact-head CI is running; independently review the one-file diff and wait for all required checks/review before merge. Prior doc command exit 127 was a malformed shell wrapper warning token; corrected terminal doc gate exited 0.",
   "observed_branch": "feature/ar-1306-authenticated-fault-matrix-qualification",
   "observed_dirty": 0,
   "observed_head": "910af9a3c380ecf035f839460f3304ccb8159e50",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify the real authenticated strict-replay service and fault matrix missing from PR #221.",
-  "task_revision": 29,
+  "task_revision": 30,
   "title": "Authenticated strict-replay fault-matrix qualification",
-  "updated_at": "2026-09-17T21:42:24+00:00",
+  "updated_at": "2026-09-17T21:42:37+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1306-authenticated-fault-matrix-qualification"
 }
 ---
@@ -119,3 +119,6 @@ publication, independent review, green exact-head CI, protected merge and post-m
   345de5b2da25e9b37d7563eb7df85bd1a31e8c9322cf708237be1d5a076b3001.
 
 - 2026-09-17T21:42:24+00:00: Heartbeat by codex-ar1306-auth-listener-20260917.
+
+- 2026-09-17T21:42:37+00:00: Published PR #222 after clean exact-head review; signed/DCO candidate
+  and all local workspace gates passed. Exact-head hosted checks now running.
