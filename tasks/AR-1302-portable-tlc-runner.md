@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T12:36:25+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Run a fresh disposable v10 guest as user asb with XDG_RUNTIME_DIR and DBUS_SESSION_BUS_ADDRESS set, TLC_CGROUP_MODE=required, pinned offline JDK/JAR, and capture terminal attestation; then stop stale generic VM 1928184 through handoffctl and record cleanup.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "codex-ar1302-runner-20260917-vm",
+  "owner": "",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 226,
+  "task_revision": 227,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T10:45:36+00:00",
+  "updated_at": "2026-09-17T10:46:46+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -722,3 +722,16 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T10:45:36+00:00: Recorded command exit 0; command argv SHA-256
   4648c3693953ab7fcefc97153e91ca925ea793f70b122fb5d3b902bd43d20ab8.
+
+- 2026-09-17T10:46:46+00:00: 2026-09-17T10:46:20Z: Released ownerless blocked after bounded v11
+  attempt. Distinct 32 GiB QEMU/KVM runner, offline pinned JAR, private data disk, no network/host
+  mounts, and cloud-init execution all functioned. Terminal full-exhaustive results: v7 reached TLC
+  but native allocation failed under portable prlimit AS=3G; v8 required mode failed systemd-run
+  --user with No medium; v9 failed Transport endpoint is not connected; v10 failed same plus asb
+  evidence permission; v11 fixed evidence ownership and started a guest session bus, but systemd-run
+  required containment failed with Process org.freedesktop.systemd1 exited with status 1. No
+  terminal attestation was emitted, so no full-exhaustive success is claimed. Exact next action:
+  provision/repair a guest user systemd manager that accepts transient units for asb, or extend the
+  approved runner launcher with a documented system-scope cgroup path while preserving
+  TLC_CGROUP_MODE=required; rerun from fresh exact candidate f16d2cb41 and capture attestation.
+  Implementation branch remains clean at signed commit 7a6f7fd94 plus prior runner commits.
