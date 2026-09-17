@@ -19,11 +19,11 @@
   "plan": "../plans/AR-1286.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 79,
+  "task_revision": 80,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-17T06:13:24+00:00",
+  "updated_at": "2026-09-17T06:16:42+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
@@ -260,3 +260,7 @@ do not touch or claim asb-tui behavior.
   required workflows are still in progress. Real supervised cassette lifecycle remains unqualified
   because delegated bwrap namespace creation fails Resource temporarily unavailable on this host; no
   merge until exact-head CI and qualified lifecycle evidence complete.
+
+- 2026-09-17T06:16:42+00:00: Direct Bubblewrap and exact systemd-run/taskset/bwrap probe now pass;
+  resume to rerun qualified ASB sandbox test and distinguish transient resource exhaustion from
+  product defect.
