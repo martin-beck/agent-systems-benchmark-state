@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T18:28:54+00:00",
+  "claim_expires": "2026-09-17T18:29:33+00:00",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Independent exact-head review of candidate 36440a1e1 and AR-1304 923378246; after green review run launcher on clean pinned images, verify receipt digests, then required and full QEMU gates.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 292,
+  "task_revision": 293,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T17:59:25+00:00",
+  "updated_at": "2026-09-17T17:59:33+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1007,3 +1007,5 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   still committed. The corrected AR-1304 assertion was the missing name=opt/formal prefix, and
   AR-1304 tests then passed 5/5 and 4/4. Candidate remains clean at signed 36440a1e1; 23/23 focused
   tests pass. No VM started pending independent review.
+
+- 2026-09-17T17:59:33+00:00: Heartbeat by codex-ar1293-timeout-repair-20260917.
