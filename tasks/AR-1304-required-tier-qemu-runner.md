@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1304",
-  "next_action": "Integrate the required launcher into a fresh immutable guest, establish /run/user/1000/bus before systemd-run, and run exact AR-1293 pr-publication. The signed launcher contract 48da6f92b has positive/negative tests and preserves all six required resource properties; no attestation exists yet.",
+  "next_action": "Integrate signed seed 99904f3c4 into a fresh immutable QEMU image, launch user@1000 and session bus, invoke 48da6f92b required launcher, and produce exact AR-1293 pr-publication attestation. Full-exhaustive remains gated.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create a clean required-containment QEMU runner for formal publication evidence.",
-  "task_revision": 20,
+  "task_revision": 21,
   "title": "Required-tier QEMU user-bus runner",
-  "updated_at": "2026-09-17T14:49:41+00:00",
+  "updated_at": "2026-09-17T14:50:09+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner"
 }
 ---
@@ -96,3 +96,8 @@ logs, or claim full-exhaustive evidence before required attestation is green.
 
 - 2026-09-17T14:49:41+00:00: Recorded command exit 1; command argv SHA-256
   a24edafe9bdcb635aeb063ea9238c0d7593ceb936055f219960736c3bd73f80e.
+
+- 2026-09-17T14:50:09+00:00: Added signed/DCO required guest seed 99904f3c4: masks only wait-online,
+  starts user@1000, starts a non-forking D-Bus session at /run/user/1000/bus, and tests socket
+  readiness without networking. Seed tests plus required launcher tests pass and Ruff is green.
+  Fresh guest integration and required attestation remain outstanding.
