@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Restore strict state-repository mypy and coverage quality gates without weakening thresholds.",
-  "task_revision": 14,
+  "task_revision": 15,
   "title": "State quality-gate baseline",
-  "updated_at": "2026-09-17T05:23:09+00:00",
+  "updated_at": "2026-09-17T05:23:18+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1296-quality"
 }
 ---
@@ -67,3 +67,6 @@ alter handoffctl semantics without tests.
 
 - 2026-09-17T05:23:09+00:00: Recorded command exit 0; command argv SHA-256
   d11f1d9ac6ec55e5ba0787ce985ae6997f1123e4bfd5e9ecdaaa2bb3d10f8a6d.
+
+- 2026-09-17T05:23:18+00:00: Recorded command exit 1; command argv SHA-256
+  b39a86595fdff2d53bb611c0b0ba124d1b7628a3cd61c31f0af8283fc7e6cce7.
