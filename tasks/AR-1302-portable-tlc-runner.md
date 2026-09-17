@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T14:01:29+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Use run_lifecycle from signed commit 1fd5e31cf to create a fresh overlay, boot the UUID-serial data disk, run guest UUID/mount preflight, then execute f1931686c portable-smoke and capture sanitized terminal attestation. Do not claim qualification from container evidence.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "codex-ar1302-vm-launcher",
+  "owner": "",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 416,
+  "task_revision": 417,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T13:32:02+00:00",
+  "updated_at": "2026-09-17T13:32:18+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1383,3 +1383,12 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T13:32:02+00:00: Recorded command exit 0; command argv SHA-256
   e8ae288056e98090654cc08b718b5a4536da3fd442af5d8e3b07f5434cd8a6e4.
+
+- 2026-09-17T13:32:18+00:00: Signed launcher commits 1fd5e31cf, 37dbbee0b, and 973ea8a67 provide
+  bounded lifecycle, root-backed overlay creation, virtio UUID serial, no-network argv, timeout
+  cleanup, and 6/6 focused tests with Ruff green. Actual fresh VM boot failed closed: SeaBIOS
+  reported Boot failed: not a bootable disk / No bootable device using the pinned Ubuntu root path
+  with the current -nodefaults/virtio launch. The VM was terminated and disposable overlay/serial
+  cleanup completed. Next action: repair boot-device/image wiring in a reviewed launcher change,
+  then rerun guest UUID/mount preflight and f1931686c portable-smoke; no VM attestation or
+  qualification claimed.
