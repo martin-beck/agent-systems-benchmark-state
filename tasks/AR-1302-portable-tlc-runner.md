@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 474,
+  "task_revision": 475,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T13:52:38+00:00",
+  "updated_at": "2026-09-17T13:53:30+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1592,3 +1592,7 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   network-bound verify.sh with the reviewed offline local Java/TLC invocation using pinned JAR, 8G
   RLIMIT_AS, 3G physical/swap attestation, 64 processes, then generate local sanitized
   manifest/attestation and rerun.
+
+- 2026-09-17T13:53:30+00:00: Build a fresh state-owned data image at exact f1931686c with pinned
+  JDK/JAR, offline curl shim, JAVA_HOME/PATH/GIT_DIR, writable evidence; do not reuse stale
+  f16d2cb41 image. Run fresh UUID VM portable-smoke and capture attestation.
