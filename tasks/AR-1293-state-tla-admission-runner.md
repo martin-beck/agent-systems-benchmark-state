@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T10:56:26+00:00",
+  "claim_expires": "2026-09-17T11:02:07+00:00",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Portable-smoke passed on clean isolated VM for candidate f16d2cb41721bf8f17aa5aa75ab01520aeb91eb8; proceed with the planned focused/full state gates and independent review, preserving portable non-exhaustive attestation limits.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T10:11:26+00:00",
+  "updated_at": "2026-09-17T10:17:07+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -286,3 +286,5 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   b0f5a8f25d7d55a12057e572a7d1d63091f58b4216eebd78fa48c963829001a9.
 
 - 2026-09-17T10:11:26+00:00: Heartbeat by codex-ar1293-clean-vm-20260917.
+
+- 2026-09-17T10:17:07+00:00: Heartbeat by codex-ar1293-clean-vm-20260917.
