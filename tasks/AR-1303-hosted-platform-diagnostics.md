@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Add privacy-safe fixed diagnostics for hosted platform evidence failures.",
-  "task_revision": 30,
+  "task_revision": 31,
   "title": "Privacy-safe hosted platform failure diagnostics",
-  "updated_at": "2026-09-17T12:27:32+00:00",
+  "updated_at": "2026-09-17T12:27:44+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1303-hosted-platform-diagnostics"
 }
 ---
@@ -115,3 +115,6 @@ native qualification route. This AR must not modify runtime behavior or asb-tui.
   check/class fields. Focused platform suite 12/12 and Ruff pass; privacy scan passes on
   production/workflow files. Full pytest collection is environment-blocked because jsonschema is
   unavailable; mypy reports 11 baseline errors outside the new diagnostics behavior.
+
+- 2026-09-17T12:27:44+00:00: Recorded command exit 0; command argv SHA-256
+  96fb5f471083dc5fb21899810b78e77f13e7e2e92b9b17acd5f1283cca300199.
