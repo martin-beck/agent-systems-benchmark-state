@@ -8,7 +8,7 @@
     "AR-1285"
   ],
   "id": "AR-1300",
-  "next_action": "Inspect protected origin/main worktree and implement the runtime-to-replay cassette dispatch seam; record focused results.",
+  "next_action": "Add direct positive/negative operation and wire tests, then rerun focused and full locked gates.",
   "observed_branch": "feature/ar-1300-runtime-cassette-dispatch-seam",
   "observed_dirty": 7,
   "observed_head": "c1b1860786e844adb69b8f74e39af290592a89c8",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect runtime-issued cassette operations to the real strict-replay dispatch path.",
-  "task_revision": 28,
+  "task_revision": 29,
   "title": "Runtime-to-replay cassette dispatch seam",
-  "updated_at": "2026-09-17T07:11:28+00:00",
+  "updated_at": "2026-09-17T07:12:02+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1300-runtime-cassette-dispatch-seam"
 }
 ---
@@ -108,3 +108,11 @@ fixtures/tests. Do not modify asb-tui or coordinator implementation.
 
 - 2026-09-17T07:11:20+00:00: Recorded command exit 0; command argv SHA-256
   cb861617f98feffcac764026b553d29deb67d8ff4bd7b0c37941fdf231742440.
+
+- 2026-09-17T07:12:02+00:00: 2026-09-17T07:12:00Z checkpoint: the first locked focused compile
+  reached product compilation and failed because the new response digest formatted a Sha256 hasher
+  instead of its finalized digest (E0277 LowerHex). This was a product compile defect in the new
+  code, not an environment failure. Fixed by finalizing the digest; subsequent focused crates
+  compiled and tests ran. The later workflow-transcript failure was the expected existing provenance
+  fixture drift caused by the intentional CLI source change; updated only its checked-in digest and
+  the focused transcript suite is green.
