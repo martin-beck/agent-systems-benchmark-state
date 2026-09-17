@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1293-state-tla-admission",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T19:09:14+00:00",
+  "claim_expires": "2026-09-17T19:10:17+00:00",
   "depends_on": [],
   "id": "AR-1293",
   "next_action": "Rebuild seed/data pairing from exact 5f3f647b, verify clean image is unheld, rerun required tier; inspect mountpoint marker, PR result, UUID check, debugfs attestation commit and receipt.",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 395,
+  "task_revision": 396,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T18:40:02+00:00",
+  "updated_at": "2026-09-17T18:40:17+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1337,3 +1337,5 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
   signed commit 5f3f647b1 switches guest seed to /dev/vdb, asserts mountpoint and verifies pinned
   filesystem UUID with bounded shell check, with tests green 23/23. Prior 6a run receipt was
   rejected for missing/stale attestation and is not accepted.
+
+- 2026-09-17T18:40:17+00:00: Heartbeat by codex-ar1293-timeout-repair-20260917.
