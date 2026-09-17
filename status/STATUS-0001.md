@@ -11,8 +11,8 @@
 
 | Status | Meaning | Count |
 | --- | --- | ---: |
-| **In progress** | Claimed work with a live lease | 0 |
-| **Open** | Dependency-ready and available to claim | 1 |
+| **In progress** | Claimed work with a live lease | 1 |
+| **Open** | Dependency-ready and available to claim | 0 |
 | **Blocked** | Cannot proceed until its recorded blocker clears | 51 |
 | **Planned** | Defined work awaiting promotion or dependencies | 58 |
 | **Future** | Deferred roadmap work | 1 |
@@ -400,7 +400,7 @@ flowchart LR
         AR_1301["AR-1301 - Blocked"]:::status_blocked
         AR_1302["AR-1302 - Done"]:::status_done
         AR_1303["AR-1303 - Blocked"]:::status_blocked
-        AR_1304["AR-1304 - Open"]:::status_open
+        AR_1304["AR-1304 - In progress"]:::status_in_progress
         AR_1305["AR-1305 - Blocked"]:::status_blocked
     end
     AR_0001 --> AR_0002
@@ -1645,11 +1645,11 @@ flowchart LR
 
 ## Complete AR inventory
 
-### Open (1)
+### In progress (1)
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md): Required-tier QEMU user-bus runner | Unclaimed | Create a clean required-containment QEMU runner for formal publication evidence. | Integrate signed seed 99904f3c4 into a fresh immutable QEMU image, launch user@1000 and session bus, invoke 48da6f92b required launcher, and produce exact AR-1293 pr-publication attestation. Full-exhaustive remains gated. |
+| P0 | [AR-1304](../tasks/AR-1304-required-tier-qemu-runner.md): Required-tier QEMU user-bus runner | codex-ar1304-required-runner-20260917 | Create a clean required-containment QEMU runner for formal publication evidence. | Integrate signed seed 99904f3c4 into a fresh immutable QEMU image, launch user@1000 and session bus, invoke 48da6f92b required launcher, and produce exact AR-1293 pr-publication attestation. Full-exhaustive remains gated. |
 
 ### Blocked (51)
 
