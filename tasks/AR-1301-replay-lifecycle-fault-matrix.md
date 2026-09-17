@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 174,
+  "task_revision": 175,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T11:36:32+00:00",
+  "updated_at": "2026-09-17T11:37:06+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -496,3 +496,6 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
   supervised ReplayRelay/sidecar/supervisor/StrictReplayService/curl matrix, failure assertions,
   cleanup, SSH signature and DCO all pass. Publication is now authorized through the documented
   workflow.
+
+- 2026-09-17T11:37:06+00:00: Recorded command exit 0; command argv SHA-256
+  742a2b07155ce85f26c6a67818a7c335010cc0db0acc511bda7b6c92b214a362.
