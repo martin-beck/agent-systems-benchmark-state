@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1293.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 43,
+  "task_revision": 44,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T05:47:14+00:00",
+  "updated_at": "2026-09-17T05:48:15+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -163,3 +163,7 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T05:47:14+00:00: Blocked ownerless: exact full state and formal gates are red for the
   recorded vendor fixture mismatch and host JVM thread-capacity failure. No publication or merge.
+
+- 2026-09-17T05:48:15+00:00: AR-1295 fixture repair is on current main; prior candidate branch still
+  carries stale v0.3.5 tests. Rebase candidate onto current signed main, rerun full suite, and
+  classify remaining TLC EAGAIN separately.
