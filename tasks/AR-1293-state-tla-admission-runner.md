@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T18:55:51+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Implement direct-ext4 debugfs extraction and stale commit rejection; build fresh data image from exact candidate, bind digest/provenance, rerun exact gates before required VM.",
+  "next_action": "Build fresh direct-ext4 data image populated from exact reviewed candidate, record digest/provenance, then rerun fresh required tier and validate extracted attestation commit.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 340,
+  "task_revision": 341,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T18:26:04+00:00",
+  "updated_at": "2026-09-17T18:26:19+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1159,3 +1159,11 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T18:26:04+00:00: Recorded command exit 0; command argv SHA-256
   51971ccbd2c1ab4b77a8dac6624e0fb0af2703f087889c2f117eb71f9a4d025f.
+
+- 2026-09-17T18:26:19+00:00: Direct ext4 evidence repair committed signed+DCO 519ba3dd4. Extraction
+  now probes partition layout, uses argv-only /usr/sbin/debugfs dump from /evidence/... for direct
+  ext4, preserves guestfish for partitioned images, unlinks stale output, and fails closed on
+  missing/unsupported evidence. Receipt validates attestation profile and commit equality to
+  candidate/seed source. Exact offline Ruff/format/mypy and 23/23 focused tests pass. Existing f1
+  required guest evidence remains PR_PUBLICATION_RC=0/EVIDENCE_OK but stale 39c image is rejected;
+  no acceptance yet.
