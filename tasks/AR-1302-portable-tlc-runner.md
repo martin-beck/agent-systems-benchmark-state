@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 325,
+  "task_revision": 326,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:18:28+00:00",
+  "updated_at": "2026-09-17T12:29:52+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1066,3 +1066,9 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T12:18:28+00:00: Released after reconciling final image repair and transient containment
   blocker; ownerless blocked.
+
+- 2026-09-17T12:29:52+00:00: Evidence review only; no rerun. The image-level dbus service starts,
+  but it creates a standalone session bus that is not the bus owned by user@1000; required
+  systemd-run --user then exits status 1. A distinct repair must provision the native user-manager
+  bus (dbus-user-session/libpam-systemd and linger in the immutable guest image) and pass a bounded
+  transient-unit preflight before launching TLC.
