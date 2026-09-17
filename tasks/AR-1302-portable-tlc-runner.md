@@ -13,11 +13,11 @@
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "blocked",
+  "status": "open",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 417,
+  "task_revision": 418,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T13:32:18+00:00",
+  "updated_at": "2026-09-17T13:32:59+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1392,3 +1392,7 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   cleanup completed. Next action: repair boot-device/image wiring in a reviewed launcher change,
   then rerun guest UUID/mount preflight and f1931686c portable-smoke; no VM attestation or
   qualification claimed.
+
+- 2026-09-17T13:32:59+00:00: Repair reviewed boot-device/image wiring after pinned Ubuntu SeaBIOS
+  no-boot failure; preserve no-network/no-host-mount/bounded UUID runner properties, then rerun
+  fresh VM preflight and exact f1931686c portable-smoke.
