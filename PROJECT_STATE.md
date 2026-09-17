@@ -23,16 +23,16 @@ Generated from local Git and GitHub. Do not edit.
 | #213 | `feature/ar1299-agent-catalog-metadata@b9edf44edcbc` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | fix(control): complete authenticated agent catalog metadata |
 | #214 | `feature/ar-1286-supervised-replay-lifecycle@eaf7fcbf42ae` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(replay): integrate runtime-owned supervised replay lifecycle |
 | #215 | `feature/ar-1286-replay-lifecycle-rebased@03b1ddc7c9d2` | `main` | CLEAN | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(replay): integrate signed runtime replay lifecycle |
-| #216 | `feature/ar-1287-delegated-sandbox-runner@dba5f9bb6973` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | tools: add fail-closed delegated replay runner payload |
+| #216 | `feature/ar-1287-delegated-sandbox-runner@dba5f9bb6973` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | tools: add fail-closed delegated replay runner payload |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35192668363 | `dba5f9bb6973` | pull_request | Formal assurance | in_progress:- |
+| 35192668363 | `dba5f9bb6973` | pull_request | Formal assurance | completed:success |
 | 35192668332 | `dba5f9bb6973` | pull_request | Rust verification | in_progress:- |
 | 35192668331 | `dba5f9bb6973` | pull_request | Agent Workflow Quality shadow | completed:success |
-| 35192668310 | `dba5f9bb6973` | pull_request | Repository quality | in_progress:- |
+| 35192668310 | `dba5f9bb6973` | pull_request | Repository quality | completed:success |
 | 35192668266 | `dba5f9bb6973` | pull_request | Huawei MIT source headers | completed:success |
 | 35192668255 | `dba5f9bb6973` | pull_request | Fault assurance | completed:success |
 | 35192668252 | `dba5f9bb6973` | pull_request | Hosted portability and native qualification | completed:success |
