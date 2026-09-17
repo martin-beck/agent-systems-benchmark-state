@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1307-portable-tlc-runner-repair",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-18T01:13:52+00:00",
   "depends_on": [
     "AR-1302"
   ],
@@ -11,13 +11,13 @@
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
-  "owner": "",
+  "owner": "codex-ar1307-runner-repair-20260918",
   "plan": "../plans/AR-1307.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 55,
+  "task_revision": 56,
   "title": "Portable TLC runner repair and qualification",
   "updated_at": "2026-09-17T23:13:52+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
@@ -204,3 +204,5 @@ and protected publication sequence.
 
 - 2026-09-17T23:13:52+00:00: Coordinator recovery: prior owner is stale/interrupted; preserving
   prior durable evidence and releasing claim for takeover.
+
+- 2026-09-17T23:13:52+00:00: Claimed by codex-ar1307-runner-repair-20260918.
