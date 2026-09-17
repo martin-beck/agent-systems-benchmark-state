@@ -28,8 +28,10 @@ Generated from local Git and GitHub. Do not edit.
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
+| 35169571311 | `f9ddf7ef6b3b` | dynamic | Dependabot Updates | in_progress:- |
+| 35169571007 | `f9ddf7ef6b3b` | dynamic | Dependabot Updates | in_progress:- |
 | 35169496759 | `f9ddf7ef6b3b` | push | Fault assurance | in_progress:- |
-| 35169496730 | `f9ddf7ef6b3b` | push | Hosted portability and native qualification | in_progress:- |
+| 35169496730 | `f9ddf7ef6b3b` | push | Hosted portability and native qualification | completed:success |
 | 35169496721 | `f9ddf7ef6b3b` | push | Formal assurance | in_progress:- |
 | 35169496718 | `f9ddf7ef6b3b` | push | Huawei MIT source headers | completed:success |
 | 35169496710 | `f9ddf7ef6b3b` | push | Emulated aarch64 portability | in_progress:- |
@@ -38,5 +40,3 @@ Generated from local Git and GitHub. Do not edit.
 | 35168829670 | `b1fb83711048` | pull_request | Hosted portability and native qualification | completed:success |
 | 35168829600 | `b1fb83711048` | pull_request | Huawei MIT source headers | completed:success |
 | 35168829599 | `b1fb83711048` | pull_request | Rust verification | completed:success |
-| 35168829597 | `b1fb83711048` | pull_request | Fault assurance | completed:success |
-| 35168829592 | `b1fb83711048` | pull_request | Emulated aarch64 portability | completed:success |
