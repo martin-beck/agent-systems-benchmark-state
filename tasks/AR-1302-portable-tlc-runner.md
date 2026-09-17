@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 359,
+  "task_revision": 360,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:50:58+00:00",
+  "updated_at": "2026-09-17T12:51:01+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1196,3 +1196,6 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
   the pinned JAR then failed JVM native allocation (AllocateHeap 16 bytes) under AS=3G. Increasing
   AS ad hoc would decouple enforcement from the attested contract and weaken the gate; increasing
   guest RAM does not fix RLIMIT_AS. No rerun performed.
+
+- 2026-09-17T12:51:01+00:00: Recorded command exit 0; command argv SHA-256
+  d709e5a449886c08660b0495f04fac85fef8ecde7d64346771b5f2dd8e74c358.
