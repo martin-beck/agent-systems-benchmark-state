@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T19:27:09+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Generate d57 seed and run required launcher against this exact clean image; inspect JDK repair markers, PR result, attestation commit and receipt.",
+  "next_action": "Rebuild the clean data image from signed candidate 9b9491d08 with pinned JDK security files, generate required-tier seed, run the bounded required launcher, and inspect PR result, attestation, and receipt.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 459,
+  "task_revision": 460,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T19:01:00+00:00",
+  "updated_at": "2026-09-17T19:01:55+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1533,3 +1533,9 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T19:01:00+00:00: Recorded command exit 0; command argv SHA-256
   69feb50eb32a6f6530084dd77fce73c4e13463cfcb6c2f1bd331148a2d019f6c.
+
+- 2026-09-17T19:01:55+00:00: Candidate 9b9491d08 is signed and DCO-compliant. Focused gates pass:
+  Ruff check, Ruff format, mypy, and 23 focused tests. The exact 922 image was validated with the
+  candidate ref and security fixture but its guest run failed because dangling JDK security symlinks
+  rejected cp; the tracked seed now removes those links before copying pinned files. Disposable
+  image was repaired with e2fsck; rebuild is required for the new seed/candidate.
