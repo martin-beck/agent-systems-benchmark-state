@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify image-native D-Bus user-session support for required TLC containment.",
-  "task_revision": 22,
+  "task_revision": 23,
   "title": "Image-native user-session support",
-  "updated_at": "2026-09-17T15:13:50+00:00",
+  "updated_at": "2026-09-17T15:14:04+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1305-image-native-user-session"
 }
 ---
@@ -104,3 +104,6 @@ limits and fail-closed behavior remain unchanged.
   qualify fresh root image without mutating backing
 
 - 2026-09-17T15:13:50+00:00: Claimed by codex-ar1305-image-session-20260917.
+
+- 2026-09-17T15:14:04+00:00: Recorded command exit 1; command argv SHA-256
+  fd708b4f451ba3a1b3ebfea9e97a1367d0ec95c2bfc0c82b74510405f02b505f.
