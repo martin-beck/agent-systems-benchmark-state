@@ -23,19 +23,19 @@ Generated from local Git and GitHub. Do not edit.
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #197 | `feature/ar-1248-strict-replay-cli-contract@7d9c2ee2e08b` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(cli): define strict offline replay consumer contract |
 | #207 | `feature/ar-1262-runtime-owned-launch-authority@c009185748a4` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(runtime): issue strict-replay launch authority |
-| #210 | `feature/ar-1288-certificate-chain-authz@7b3ff1d3a874` | `main` | UNSTABLE | QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED:, QUEUED: | feat(control): validate runtime certificate chains |
+| #210 | `feature/ar-1288-certificate-chain-authz@7b3ff1d3a874` | `main` | UNSTABLE | IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS: | feat(control): validate runtime certificate chains |
 
 ## Recent workflows
 
 | Run | SHA | Event | Workflow | State |
 | --- | --- | --- | --- | --- |
-| 35177620321 | `7b3ff1d3a874` | pull_request | Formal assurance | queued:- |
+| 35177620321 | `7b3ff1d3a874` | pull_request | Formal assurance | in_progress:- |
 | 35177620295 | `7b3ff1d3a874` | pull_request | Rust verification | pending:- |
-| 35177620286 | `7b3ff1d3a874` | pull_request | Agent Workflow Quality shadow | queued:- |
+| 35177620286 | `7b3ff1d3a874` | pull_request | Agent Workflow Quality shadow | completed:success |
 | 35177620269 | `7b3ff1d3a874` | pull_request | Repository quality | in_progress:- |
 | 35177620261 | `7b3ff1d3a874` | pull_request | Emulated aarch64 portability | pending:- |
-| 35177620260 | `7b3ff1d3a874` | pull_request | Fault assurance | queued:- |
-| 35177620250 | `7b3ff1d3a874` | pull_request | Huawei MIT source headers | in_progress:- |
+| 35177620260 | `7b3ff1d3a874` | pull_request | Fault assurance | in_progress:- |
+| 35177620250 | `7b3ff1d3a874` | pull_request | Huawei MIT source headers | completed:success |
 | 35177620249 | `7b3ff1d3a874` | pull_request | Hosted portability and native qualification | in_progress:- |
 | 35177186515 | `ddcd51b8a4ad` | pull_request | Repository quality | completed:success |
 | 35177186479 | `ddcd51b8a4ad` | pull_request | Rust verification | in_progress:- |
