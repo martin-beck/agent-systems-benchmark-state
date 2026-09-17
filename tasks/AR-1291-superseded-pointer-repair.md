@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair missing successor pointers on superseded dependency tasks.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Repair superseded dependency pointers",
-  "updated_at": "2026-09-17T04:14:20+00:00",
+  "updated_at": "2026-09-17T04:14:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1291-superseded-pointers"
 }
 ---
@@ -30,3 +30,6 @@ product or handoffctl code.
 - 2026-09-17T04:14:10+00:00: state-only repair for documented superseded successor chain
 
 - 2026-09-17T04:14:20+00:00: Claimed by asb_state_repair_coordinator.
+
+- 2026-09-17T04:14:33+00:00: Recorded command exit 0; command argv SHA-256
+  b81abf2246453cf8b195492e2eb388e1de663dbe1725037671b56ee7be751bc4.
