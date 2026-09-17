@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "",
+  "claim_expires": "2026-09-17T14:45:09+00:00",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Repair the disposable VM data-disk wiring before any further TLC: required-pr run failed because /mnt/asb-data mount point/device was absent in that boot. Reprovision a fresh seed/fstab with the virtio data disk UUID and a boot-time mount preflight; then rerun exact 3G/3G/200%/Tasks64 transient preflight and portable-smoke through handoffctl. Full-exhaustive was manually interrupted and is not qualified.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "",
+  "owner": "codex-ar1302-data-mount-repair",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "open",
+  "status": "in_progress",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 340,
+  "task_revision": 341,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:45:02+00:00",
+  "updated_at": "2026-09-17T12:45:09+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1130,3 +1130,5 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 
 - 2026-09-17T12:45:02+00:00: Resume distinct runner repair: fix virtio data-disk UUID/fstab boot
   mount, then rerun exact containment and portable-smoke; full-exhaustive remains gated.
+
+- 2026-09-17T12:45:09+00:00: Claimed by codex-ar1302-data-mount-repair.

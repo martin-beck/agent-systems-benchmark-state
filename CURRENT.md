@@ -3,11 +3,11 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## Open
+## In Progress
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1302](tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | Provision a clean portable TLC CI/VM runner for state formal admission. | Repair the disposable VM data-disk wiring before any further TLC: required-pr run failed because /mnt/asb-data mount point/device was absent in that boot. Reprovision a fresh seed/fstab with the virtio data disk UUID and a boot-time mount preflight; then rerun exact 3G/3G/200%/Tasks64 transient preflight and portable-smoke through handoffctl. Full-exhaustive was manually interrupted and is not qualified. | - |
+| P0 | [AR-1302](tasks/AR-1302-portable-tlc-runner.md): Portable TLC CI/VM runner | Provision a clean portable TLC CI/VM runner for state formal admission. | Repair the disposable VM data-disk wiring before any further TLC: required-pr run failed because /mnt/asb-data mount point/device was absent in that boot. Reprovision a fresh seed/fstab with the virtio data disk UUID and a boot-time mount preflight; then rerun exact 3G/3G/200%/Tasks64 transient preflight and portable-smoke through handoffctl. Full-exhaustive was manually interrupted and is not qualified. | codex-ar1302-data-mount-repair |
 
 ## Blocked
 
