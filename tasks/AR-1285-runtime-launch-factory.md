@@ -10,7 +10,7 @@
     "AR-1239"
   ],
   "id": "AR-1285",
-  "next_action": "PR #209 is published at exact head 9fde4d8; obtain independent review and monitor exact-head CI. Do not claim lifecycle completion or merge before review.",
+  "next_action": "PR #209 is visible OPEN at exact head 9fde4d8; independent review requested and hosted checks are running. Keep merge blocked until all required checks and review are green.",
   "observed_branch": "feature/ar-1285-runtime-launch-factory",
   "observed_dirty": 0,
   "observed_head": "9fde4d8a6ff1c820fbfa4fc0214c1e36ea7f86d5",
@@ -20,9 +20,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Provide a runtime-owned launch factory for authenticated strict-replay CLI execution.",
-  "task_revision": 70,
+  "task_revision": 71,
   "title": "Runtime-owned strict-replay launch factory",
-  "updated_at": "2026-09-17T01:49:52+00:00",
+  "updated_at": "2026-09-17T01:50:14+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1285-runtime-launch-factory"
 }
 ---
@@ -240,3 +240,9 @@ separate successor rather than claiming strict-replay execution.
 
 - 2026-09-17T01:49:52+00:00: Recorded command exit 0; command argv SHA-256
   981c8a0ac8bee9b43044f995879acca58b2f6df2f19507aec8117225dc104ad7.
+
+- 2026-09-17T01:50:14+00:00: Verified hosted publication through gh via handoffctl: PR #209 OPEN,
+  base main, head feature/ar-1285-runtime-launch-factory, head OID
+  9fde4d8a6ff1c820fbfa4fc0214c1e36ea7f86d5. Required checks started at 01:49:25Z: Rust, Repository
+  quality, Formal assurance, Fault assurance, Emulated AArch64, Platform evidence; header and AWQ
+  shadow checks already SUCCESS. No merge requested.

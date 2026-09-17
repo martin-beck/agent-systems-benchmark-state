@@ -1591,7 +1591,7 @@ flowchart LR
 
 | Priority | AR | Owner | Summary | Next action |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1285](../tasks/AR-1285-runtime-launch-factory.md): Runtime-owned strict-replay launch factory | asb_ar1024_lifecycle_router | Provide a runtime-owned launch factory for authenticated strict-replay CLI execution. | PR #209 is published at exact head 9fde4d8; obtain independent review and monitor exact-head CI. Do not claim lifecycle completion or merge before review. |
+| P0 | [AR-1285](../tasks/AR-1285-runtime-launch-factory.md): Runtime-owned strict-replay launch factory | asb_ar1024_lifecycle_router | Provide a runtime-owned launch factory for authenticated strict-replay CLI execution. | PR #209 is visible OPEN at exact head 9fde4d8; independent review requested and hosted checks are running. Keep merge blocked until all required checks and review are green. |
 
 ### Open (6)
 
