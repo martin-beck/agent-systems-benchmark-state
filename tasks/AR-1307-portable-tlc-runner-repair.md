@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Rebuild seed with cloud-init network config disabled before boot; prior QEMU serial stopped at systemd-networkd-wait-online despite late bootcmd mask. Then rerun exact b8db467ee portable-smoke and required/full tiers with schema-validated evidence.",
+  "next_action": "Use a clean 32 GiB virtual root overlay (repair-v1 or run) after verifying pinned digest/provenance; rebuild actual guest_seed user-data with apt/package update disabled or offline-safe, retain early wait-online mask, then rerun exact b8db467ee portable-smoke and required/full tiers.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,7 +17,7 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 77,
+  "task_revision": 78,
   "title": "Portable TLC runner repair and qualification",
   "updated_at": "2026-09-17T23:21:30+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
@@ -271,3 +271,9 @@ and protected publication sequence.
   6d8536b6866701469f5977c2ac9c397c140ea400fca92755ea9a47f47f997976.
 
 - 2026-09-17T23:21:30+00:00: Heartbeat by codex-ar1307-runner-repair-20260918.
+
+- 2026-09-17T23:21:30+00:00: Classification: early-mask QEMU boot bypassed wait-online and reached
+  cloud-init, but cloud-init failed closed with repeated OSError Errno 28 No space left on device at
+  ~52s while package_update/apt and cloud-init logs wrote to the 3.5 GiB root. No formal result or
+  attestation. This is runner capacity/input setup, not a model success; next action is fresh 32 GiB
+  root plus offline-safe seed.
