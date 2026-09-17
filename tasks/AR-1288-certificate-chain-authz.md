@@ -9,17 +9,17 @@
   "id": "AR-1288",
   "next_action": "Signed exact head 01bf266 enforces cryptographic issue_der only: pinned DER trust anchor, offline rustls/webpki validation, intermediate DER digest/order binding, parsed DER subject-to-pairing binding, enrolled endpoint binding, generation revocation, strict identity schema and generated certificate-identity schema. Full offline locked workspace tests and workspace Clippy -D warnings pass; focused certificate tests 7/7 pass. Next: push exact head and request independent re-review; do not publish until review approves.",
   "observed_branch": "feature/ar-1288-certificate-chain-authz",
-  "observed_dirty": 3,
-  "observed_head": "01bf266e0d86e0f3bdb676aeb0fef32e9116f75d",
+  "observed_dirty": 0,
+  "observed_head": "35c49a90e0f6d034becdce88551622407fe0ed6f",
   "owner": "asb_ar0909_lifecycle_repair",
   "plan": "../plans/AR-1288.md",
   "priority": "P1",
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Implement runtime-owned certificate issuance and trust-chain validation required by AR-0814.",
-  "task_revision": 75,
+  "task_revision": 76,
   "title": "Runtime certificate issuance and chain validation",
-  "updated_at": "2026-09-17T03:03:02+00:00",
+  "updated_at": "2026-09-17T03:03:09+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1288-certificate-chain-authz"
 }
 ---
