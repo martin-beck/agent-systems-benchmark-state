@@ -2,22 +2,22 @@
 {
   "branch": "feature/ar-1302-portable-tlc-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T12:27:49+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1302",
   "next_action": "Image-level bus repair succeeded: user@1000.service and asb-session-bus.service both started before cloud-final. The one clean 32 GiB/8-vCPU/16 GiB-swap/16 GiB-data attempt then failed unchanged required transient containment: Process org.freedesktop.systemd1 exited with status 1; JAR verification passed but no attestation was emitted. Do not rerun until the required transient systemd containment path is repaired.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
-  "owner": "coordinator_state_cleanup",
+  "owner": "",
   "plan": "../plans/AR-1302.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "blocked",
   "summary": "Provision a clean portable TLC CI/VM runner for state formal admission.",
-  "task_revision": 324,
+  "task_revision": 325,
   "title": "Portable TLC CI/VM runner",
-  "updated_at": "2026-09-17T12:18:26+00:00",
+  "updated_at": "2026-09-17T12:18:28+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1302-portable-tlc-runner"
 }
 ---
@@ -1063,3 +1063,6 @@ asb-tui, handoffctl, or unrelated root-owned admission locks.
 - 2026-09-17T12:18:26+00:00: Final AR-1302 evidence is durable in 64a9f6dc7: session-bus activation
   race repaired, but required transient systemd containment still fails. Runner powered off, fsck
   completed, no QEMU remains; keep blocked.
+
+- 2026-09-17T12:18:28+00:00: Released after reconciling final image repair and transient containment
+  blocker; ownerless blocked.
