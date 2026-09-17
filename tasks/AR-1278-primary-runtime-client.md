@@ -19,9 +19,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect the primary replay command to the runtime-issued transport client.",
-  "task_revision": 3,
+  "task_revision": 4,
   "title": "Primary replay runtime client handoff",
-  "updated_at": "2026-09-17T00:08:53+00:00",
+  "updated_at": "2026-09-17T00:09:10+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1278-primary-runtime-client"
 }
 ---
@@ -35,3 +35,6 @@ AR-1277's blocked evidence and require actual supervised execution and lifecycle
   primary dispatcher still does not receive a runtime-issued client.
 
 - 2026-09-17T00:08:53+00:00: Claimed by asb_ar1024_lifecycle_router.
+
+- 2026-09-17T00:09:10+00:00: Recorded command exit 0; command argv SHA-256
+  9232d01513397d9430c82af844fc9d297aeb87686c350d1879473604dfae2c2e.
