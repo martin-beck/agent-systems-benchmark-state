@@ -2,19 +2,19 @@
 {
   "branch": "fix/tmux-pane-foreground-group-recovery",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T04:39:02+00:00",
+  "claim_expires": "",
   "depends_on": [],
   "id": "AR-1044",
   "next_action": "No further action: AR-1044 safety repair is accepted by the later trusted-main run 34872879697 at main 78bf72d; AR-1048 and all downstream tmux recoveries are superseded or completed. Preserve merged evidence; do not touch asb-tui source from ASB.",
-  "owner": "codex-ar1044-recovery-20260917",
+  "owner": "",
   "plan": "../plans/AR-1044.md",
   "priority": "P0",
   "schema_version": 1,
-  "status": "in_progress",
+  "status": "done",
   "summary": "Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Recover tmux foreground-group qualification",
-  "updated_at": "2026-09-17T04:09:18+00:00",
+  "updated_at": "2026-09-17T04:09:25+00:00",
   "worktree_key": "agent-systems-benchmark-asb-tui-tmux-pane-foreground-group-recovery"
 }
 ---
@@ -305,3 +305,8 @@ absent or changes. Do not change renderer or application behavior.
   78bf72d111953f5da476a3c49f9d2d66f952638b completed successfully with all 31 terminal tests plus
   coverage, supply-chain, privacy and provenance gates. AR-1044 implementation remains merged safety
   code; no ASB or asb-tui source changes are made here. Release ownerless after this durable audit.
+
+- 2026-09-17T04:09:25+00:00: AR-1044 accepted and released ownerless: merged foreground-PGID safety
+  repair is covered by the later trusted-main success 34872879697 at main
+  78bf72d111953f5da476a3c49f9d2d66f952638b; AR-1048 and downstream portability recoveries are
+  superseded/completed. No source changes made in ASB.

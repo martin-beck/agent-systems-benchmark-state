@@ -3,12 +3,6 @@
 This file is generated. Read `README.md`, then use `tools/handoffctl snapshot`.
 Never edit this file directly.
 
-## In Progress
-
-| Priority | Task | Summary | Next action | Owner |
-| --- | --- | --- | --- | --- |
-| P0 | [AR-1044](tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | No further action: AR-1044 safety repair is accepted by the later trusted-main run 34872879697 at main 78bf72d; AR-1048 and all downstream tmux recoveries are superseded or completed. Preserve merged evidence; do not touch asb-tui source from ASB. | codex-ar1044-recovery-20260917 |
-
 ## Open
 
 | Priority | Task | Summary | Next action | Owner |
@@ -173,6 +167,7 @@ Never edit this file directly.
 | P0 | [AR-1041](tasks/AR-1041-gemini-hook-readiness-race.md): Make Gemini hook readiness publication atomic | Eliminate the load-sensitive Gemini hook readiness race without weakening validation. | Post-merge verified: PR136 exact head 55648d5 is present in protected main fd7daa4 with all PR checks green; current main AArch64 failure is unrelated Goose fixture AR-1235. | - |
 | P0 | [AR-1042](tasks/AR-1042-tmux-alternate-screen-readiness.md): Capture alternate-screen TUI readiness deterministically | Make tmux TUI readiness validate the displayed alternate screen deterministically. | Create and claim AR-1044 recovery; replace pane_pid==PGID with exact pane PID/TTY/foreground-PGID tuple acquisition and revalidation, then restore trusted-main qualification. | - |
 | P0 | [AR-1043](tasks/AR-1043-protected-topic-sync-topology.md): Qualify exact topic-tip synchronization merges | Accept one exact signed topic-tip sync merge without weakening protected-main policy. | Complete; no further action. | - |
+| P0 | [AR-1044](tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | No further action: AR-1044 safety repair is accepted by the later trusted-main run 34872879697 at main 78bf72d; AR-1048 and all downstream tmux recoveries are superseded or completed. Preserve merged evidence; do not touch asb-tui source from ASB. | - |
 | P0 | [AR-1045](tasks/AR-1045-gemini-readiness-merge-attestation.md): Attest the Gemini readiness merge boundary | Recover the Gemini readiness publication boundary without rewriting protected main. | Await fresh immutable review of clean signed+DCO current-main successor d0ea32ce84f600e505899e2e3d2fdb885ee7ad76, tree d6f734bc270281957b1c2268fa0c12db2e2c6075, parent 252f746e903555c2dc626fadfa1a75bb76913144. Do not push before READY. | - |
 | P0 | [AR-1047](tasks/AR-1047-gemini-hook-marker-appearance-race.md): Close the Gemini hook-marker appearance race | Treat a regular marker published between absent open and fallback lstat as pending for descriptor validation on the next poll. | PR #139 exact 661d52c/tree 3931f7cb is independently approved and 12/12 exact-head green; await explicit root authorization and exact multiline protected merge recipe. | - |
 | P0 | [AR-1051](tasks/AR-1051-measurement-catalog-merge-attestation.md): Attest the measurement catalog merge boundary | Record the exact reviewed measurement-catalog merge and its non-compliant GitHub-authored DCO identity without rewriting history. | Push exact approved head 7b3ef113d2b77c3982748f16c540d0e556252464, open the protected-merge PR, and require all exact-head checks before merge. | - |
