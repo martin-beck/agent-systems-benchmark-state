@@ -8,6 +8,7 @@ Never edit this file directly.
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
 | P0 | [AR-1290](tasks/AR-1290-dependabot-dco-boundary-recovery.md): Dependabot DCO boundary recovery | Recover protected-main DCO assurance for the immutable Dependabot serde commit without weakening broad policy. | Monitor exact-main post-merge workflows for c1b1860786e844adb69b8f74e39af290592a89c8 to terminal SUCCESS; verify protected main signature/DCO/tree and release AR-1290 done. | asb_ar1024_lifecycle_router |
+| P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Coordinator must create and link the successor AR for certificate issuance/chain validation and trusted route/ancestor authority; preserve this exact clean head and do not publish/close as fully complete until successor scope and bounded acceptance are recorded. | asb_ar0814_enrollment_authz |
 
 ## Open
 
@@ -16,7 +17,6 @@ Never edit this file directly.
 | P0 | [AR-1010](tasks/AR-1010-ratatui-crossterm-foundation.md): Adopt Ratatui/Crossterm TUI foundation | Adopt Ratatui and Crossterm as the supported professional TUI foundation. | Remain open pending a supported AR-1062 signed publication/repair successor, green exact-main Repository quality and Trusted main, and recovered AR-1060 control-publication provenance. Do not repeat merged foundation work or add UI code to ASB. | - |
 | P0 | [AR-1024](tasks/AR-1024-asb-tui-lifecycle-router.md): Implement `asb tui` lifecycle routing | Add the trusted ASB-side bootstrap and lifecycle router for the optional frontend. | After AR-1010, AR-1037 and AR-1060 are done, rebase c545c33 onto protected ASB main and implement only the ASB provisioning half before regenerated evidence and trusted asb-tui pinning. | - |
 | P0 | [AR-1044](tasks/AR-1044-tmux-pane-foreground-group-recovery.md): Recover tmux foreground-group qualification | Bind tmux cleanup to the exact pane TTY foreground process group across acquisition and signalling. | Remain OPEN pending AR-1048 tmux window-option portability recovery and a green trusted-main rerun at the repaired exact merge. | - |
-| P1 | [AR-0814](tasks/AR-0814-remote-enrollment-authorization.md): Secure remote enrollment and authorization | Provide the ASB protocol and CLI for explicit remote trust and least-privilege roles. | Coordinator must create and link the successor AR for certificate issuance/chain validation and trusted route/ancestor authority; preserve this exact clean head and do not publish/close as fully complete until successor scope and bounded acceptance are recorded. | - |
 
 ## Blocked
 
