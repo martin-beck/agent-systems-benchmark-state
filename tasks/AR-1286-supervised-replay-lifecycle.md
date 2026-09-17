@@ -11,7 +11,7 @@
     "AR-1239"
   ],
   "id": "AR-1286",
-  "next_action": "Signed checkpoint 08bb157 adds ReplayLaunchContext::spawn, consuming opaque launch input and benchmark lease through SandboxBackend::spawn_launch. Runtime package locked tests 50 unit/integration plus 2 doctests pass. Next wire actual CLI cassette execution and bounded lifecycle fault fixtures.",
+  "next_action": "Signed checkpoint eef6894 binds an optional runtime-owned SandboxBackend into ReplayLaunchAuthority and transfers it through ReplayLaunchContext::spawn; focused locked runtime suite passes 50 unit, 3 binary, 8 process, 11 sandbox, 16 scheduler, and 2 doctests. Next add CLI replay consumption and real bounded child/lifecycle fixtures.",
   "observed_branch": "feature/ar-1286-supervised-replay-lifecycle",
   "observed_dirty": 0,
   "observed_head": "eef68946cae5a67826f102eb88a6597619fd69f6",
@@ -21,9 +21,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Execute strict-replay cassettes through the runtime-owned supervised lifecycle.",
-  "task_revision": 16,
+  "task_revision": 17,
   "title": "Supervised strict-replay cassette lifecycle",
-  "updated_at": "2026-09-17T02:23:42+00:00",
+  "updated_at": "2026-09-17T02:23:57+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1286-supervised-replay-lifecycle"
 }
 ---
@@ -72,3 +72,8 @@ do not touch or claim asb-tui behavior.
 
 - 2026-09-17T02:23:34+00:00: Recorded command exit 0; command argv SHA-256
   2b10510dfbe93741e7b318fe5404f5634a8f4e4ab2c63f35f91a00054fec6c6d.
+
+- 2026-09-17T02:23:57+00:00: Diagnosis: first fmt-check command exited 1 only because launch_factory
+  import ordering differed from rustfmt; cargo fmt --all corrected it. The subsequent locked
+  asb-runtime suite passed all 50 unit, 3 binary, 8 process-boundary, 11 sandbox-boundary, 16
+  scheduler-boundary, and 2 doctest checks. Signed+DCO product head eef6894 is clean.
