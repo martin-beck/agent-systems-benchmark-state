@@ -22,7 +22,7 @@ Generated from local Git and GitHub. Do not edit.
 | #171 | `repair/protected-main-dco-history@200edbbbc3f0` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | repair: preserve signed DCO catalog integration boundary |
 | #214 | `feature/ar-1286-supervised-replay-lifecycle@eaf7fcbf42ae` | `main` | DIRTY | COMPLETED:FAILURE, COMPLETED:FAILURE, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(replay): integrate runtime-owned supervised replay lifecycle |
 | #215 | `feature/ar-1286-replay-lifecycle-rebased@03b1ddc7c9d2` | `main` | DIRTY | COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | feat(replay): integrate signed runtime replay lifecycle |
-| #219 | `feature/ar-1301-replay-lifecycle-fault-matrix@d960dfcbaa69` | `main` | UNSTABLE | COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(runtime): qualify supervised replay lifecycle fault matrix |
+| #219 | `feature/ar-1301-replay-lifecycle-fault-matrix@d960dfcbaa69` | `main` | UNSTABLE | COMPLETED:FAILURE, COMPLETED:FAILURE, IN_PROGRESS:, IN_PROGRESS:, IN_PROGRESS:, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS, COMPLETED:SUCCESS | test(runtime): qualify supervised replay lifecycle fault matrix |
 
 ## Recent workflows
 
@@ -33,7 +33,7 @@ Generated from local Git and GitHub. Do not edit.
 | 35217609708 | `d960dfcbaa69` | pull_request | Hosted portability and native qualification | completed:failure |
 | 35217609688 | `d960dfcbaa69` | pull_request | Formal assurance | in_progress:- |
 | 35217609687 | `d960dfcbaa69` | pull_request | Repository quality | in_progress:- |
-| 35217609663 | `d960dfcbaa69` | pull_request | Rust verification | in_progress:- |
+| 35217609663 | `d960dfcbaa69` | pull_request | Rust verification | completed:failure |
 | 35217609654 | `d960dfcbaa69` | pull_request | Emulated aarch64 portability | in_progress:- |
 | 35217609646 | `d960dfcbaa69` | pull_request | Fault assurance | completed:success |
 | 35217105959 | `ee34e9778fa3` | pull_request | Repository quality | completed:failure |
