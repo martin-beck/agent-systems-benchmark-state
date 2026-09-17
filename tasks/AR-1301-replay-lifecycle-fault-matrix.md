@@ -8,7 +8,7 @@
     "AR-1300"
   ],
   "id": "AR-1301",
-  "next_action": "PR #219 exact head 6221b89: await terminal Rust rerun 35218373715 attempt job 105193339347 and retain hosted platform blocker from controlled rerun 35218373699; do not merge until every required check is green. Then perform exact-head review/merge and post-merge verification.",
+  "next_action": "PR #219 exact head 6221b89 is fully green except hosted Platform evidence. Do not merge. Blocked on repeated hosted portability sandbox failure: initial job 105192558571 and final controlled rerun job 105195340454 both fail generically, while exact local collector passes and all other CI checks are green. Propose/track CI-infrastructure repair; resume exact-head merge only after Platform evidence green.",
   "observed_branch": "feature/ar-1301-replay-lifecycle-fault-matrix",
   "observed_dirty": 0,
   "observed_head": "6221b894c438292ff50b21d2d0c27a875d0bcc1b",
@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end.",
-  "task_revision": 285,
+  "task_revision": 286,
   "title": "Supervised replay lifecycle fault matrix",
-  "updated_at": "2026-09-17T12:09:25+00:00",
+  "updated_at": "2026-09-17T12:09:28+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1301-replay-lifecycle-fault-matrix"
 }
 ---
@@ -798,3 +798,11 @@ and repository test infrastructure. Do not modify asb-tui or coordinator impleme
   692eb759baea7146573fa037797ec9330bdc03edccdf287567e9debb3b6e3027.
 
 - 2026-09-17T12:09:25+00:00: Heartbeat by ar1301_negative_matrix.
+
+- 2026-09-17T12:09:28+00:00: Final CI status: PR #219 exact head 6221b89 has Rust rerun green (job
+  105193339347; tests, native Goose, docs, build, DCO all pass),
+  AArch64/formal/policy/fault/AWQ/header checks green. Hosted platform evidence failed again in
+  final controlled rerun job 105195340454 after initial job 105192558571 and one prior retry; hosted
+  helper suppresses child output. Exact local hosted collector with CI args passes process=712
+  bytes, metrics=903 bytes, sandbox=1384 bytes. This is a repeated hosted-runner/platform
+  infrastructure blocker, not an AR product failure. No more blind reruns, merge, or release.

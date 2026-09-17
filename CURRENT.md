@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1301](tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | PR #219 exact head 6221b89: await terminal Rust rerun 35218373715 attempt job 105193339347 and retain hosted platform blocker from controlled rerun 35218373699; do not merge until every required check is green. Then perform exact-head review/merge and post-merge verification. | ar1301_negative_matrix |
+| P0 | [AR-1301](tasks/AR-1301-replay-lifecycle-fault-matrix.md): Supervised replay lifecycle fault matrix | Qualify strict-replay supervised lifecycle faults, isolation and cleanup end to end. | PR #219 exact head 6221b89 is fully green except hosted Platform evidence. Do not merge. Blocked on repeated hosted portability sandbox failure: initial job 105192558571 and final controlled rerun job 105195340454 both fail generically, while exact local collector passes and all other CI checks are green. Propose/track CI-infrastructure repair; resume exact-head merge only after Platform evidence green. | ar1301_negative_matrix |
 
 ## Blocked
 
