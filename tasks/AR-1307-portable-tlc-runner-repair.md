@@ -7,7 +7,7 @@
     "AR-1302"
   ],
   "id": "AR-1307",
-  "next_action": "Validate rendered guest_seed YAML using the project offline dependency environment; regenerate final seed from corrected source, launch fresh 32 GiB early-mask overlay, and require user@1000/D-Bus plus validated portable-smoke attestation.",
+  "next_action": "Regenerate seed from corrected guest_seed with recursive state checkout ownership; run project YAML/schema validation, then fresh 32 GiB early-mask QEMU portable-smoke and inspect attestation.",
   "observed_branch": "",
   "observed_dirty": 0,
   "observed_head": "",
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair and publish a canonical, bounded portable TLC runner for AR-1293.",
-  "task_revision": 95,
+  "task_revision": 96,
   "title": "Portable TLC runner repair and qualification",
-  "updated_at": "2026-09-17T23:27:56+00:00",
+  "updated_at": "2026-09-17T23:28:03+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1307-portable-tlc-runner-repair"
 }
 ---
@@ -331,3 +331,10 @@ and protected publication sequence.
   dbb76b70454db80d538786b17db804fb846fdab99c81e1efc7ff56fe58933434.
 
 - 2026-09-17T23:27:56+00:00: Heartbeat by codex-ar1307-runner-repair-20260918.
+
+- 2026-09-17T23:28:03+00:00: Fresh 32 GiB early-mask boot reached user@1000 and D-Bus and executed
+  cloud-init. Formal launch then failed closed because /mnt/asb-data/state/.asb-tlc was root-owned,
+  yielding PermissionError; validator consequently found no attestation. This is an
+  owner-confinement setup defect. Patched guest_seed to recursively chown the mounted state checkout
+  to uid 1000 before execution. The prior host YAML validator also exited 1 due missing PyYAML; use
+  available project/schema validator or cloud-init parsing.
