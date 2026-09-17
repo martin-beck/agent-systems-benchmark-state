@@ -18,9 +18,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Connect runtime-issued cassette operations to the real strict-replay dispatch path.",
-  "task_revision": 18,
+  "task_revision": 19,
   "title": "Runtime-to-replay cassette dispatch seam",
-  "updated_at": "2026-09-17T07:08:30+00:00",
+  "updated_at": "2026-09-17T07:08:33+00:00",
   "worktree_key": "agent-systems-benchmark-ar-1300-runtime-cassette-dispatch-seam"
 }
 ---
@@ -81,3 +81,6 @@ fixtures/tests. Do not modify asb-tui or coordinator implementation.
   was removed, the stale product branch was deleted through handoffctl, and the protected
   origin/main product worktree was then created successfully at c1b1860. No source mutation or
   external project state was damaged.
+
+- 2026-09-17T07:08:33+00:00: Recorded command exit 1; command argv SHA-256
+  cfddfc1b8766f37e6aede838c174f3c1396c0e28ea1eae79d472cf1b97a74f13.
