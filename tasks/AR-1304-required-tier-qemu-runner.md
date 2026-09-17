@@ -2,7 +2,7 @@
 {
   "branch": "feature/ar-1304-required-tier-qemu-runner",
   "checkpoint_commit": "",
-  "claim_expires": "2026-09-17T15:55:59+00:00",
+  "claim_expires": "2026-09-17T15:59:15+00:00",
   "depends_on": [
     "AR-1302"
   ],
@@ -17,9 +17,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Create a clean required-containment QEMU runner for formal publication evidence.",
-  "task_revision": 80,
+  "task_revision": 81,
   "title": "Required-tier QEMU user-bus runner",
-  "updated_at": "2026-09-17T15:27:57+00:00",
+  "updated_at": "2026-09-17T15:29:15+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1304-required-tier-qemu-runner"
 }
 ---
@@ -295,3 +295,5 @@ logs, or claim full-exhaustive evidence before required attestation is green.
 
 - 2026-09-17T15:27:57+00:00: Recorded command exit 0; command argv SHA-256
   5062758589519f37eb83518d30cfda9686ecbf306dc5688bc4e97234bf25e91b.
+
+- 2026-09-17T15:29:15+00:00: Heartbeat by codex-ar1304-required-runner-20260917.
