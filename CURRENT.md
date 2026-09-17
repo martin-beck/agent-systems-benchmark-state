@@ -7,7 +7,7 @@ Never edit this file directly.
 
 | Priority | Task | Summary | Next action | Owner |
 | --- | --- | --- | --- | --- |
-| P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Rebuild seed/data pairing from exact 5f3f647b, verify clean image is unheld, rerun required tier; inspect mountpoint marker, PR result, UUID check, debugfs attestation commit and receipt. | codex-ar1293-timeout-repair-20260917 |
+| P0 | [AR-1293](tasks/AR-1293-state-tla-admission-runner.md): State-scoped TLA admission runner | Repair the state-repository TLA admission runner and truthful worktree metadata. | Generate fresh seed from 5f3f647b1 and run required launcher against this unheld clean image; inspect /dev/vdb mount/UUID marker, PR result, debugfs attestation commit and receipt. | codex-ar1293-timeout-repair-20260917 |
 
 ## Blocked
 

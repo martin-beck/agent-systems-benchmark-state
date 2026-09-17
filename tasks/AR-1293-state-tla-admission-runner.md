@@ -5,7 +5,7 @@
   "claim_expires": "2026-09-17T19:12:14+00:00",
   "depends_on": [],
   "id": "AR-1293",
-  "next_action": "Rebuild seed/data pairing from exact 5f3f647b, verify clean image is unheld, rerun required tier; inspect mountpoint marker, PR result, UUID check, debugfs attestation commit and receipt.",
+  "next_action": "Generate fresh seed from 5f3f647b1 and run required launcher against this unheld clean image; inspect /dev/vdb mount/UUID marker, PR result, debugfs attestation commit and receipt.",
   "observed_branch": "feature/ar-1293-state-tla-admission",
   "observed_dirty": 0,
   "observed_head": "98acd6d5f5a206b351a54689e7817dd43af406ca",
@@ -15,9 +15,9 @@
   "schema_version": 1,
   "status": "in_progress",
   "summary": "Repair the state-repository TLA admission runner and truthful worktree metadata.",
-  "task_revision": 406,
+  "task_revision": 407,
   "title": "State-scoped TLA admission runner",
-  "updated_at": "2026-09-17T18:42:16+00:00",
+  "updated_at": "2026-09-17T18:42:56+00:00",
   "worktree_key": "agent-systems-benchmark-state-ar-1293-tla-admission"
 }
 ---
@@ -1368,3 +1368,10 @@ modify or extract handoffctl, weaken formal verification, or touch asb-tui.
 
 - 2026-09-17T18:42:16+00:00: Recorded command exit 0; command argv SHA-256
   bb0f0aab22432dad31f825bd8305d7a0aa0470002f30c01dfe29d227e9b072bb.
+
+- 2026-09-17T18:42:56+00:00: Final fresh 5f3f647b1 data image now rebuilt and corrected: initial
+  copied bare ref mismatch was observed and not run; state was recopied and bare clone recreated.
+  debugfs packed-refs now binds feature/ar-1293-state-tla-admission-v2 to exact
+  5f3f647b15f69fc75670897d6739c239fadda120. Image unmounted, e2fsck -fn clean, SHA256
+  1f83e49b9f117f464c163b16f9cb0c9f3944b1e46c6cff23cc187c4c74c917c4. Candidate/state and image
+  provenance are now aligned.
